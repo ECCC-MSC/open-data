@@ -1,4 +1,5 @@
-_[Français ici](readme_fr.md)_
+![ECCC logo](img_eccc-logo.png)
+[Français ici](readme_fr.md)
 
 
 # Meteorological Service of Canada public data documentation
