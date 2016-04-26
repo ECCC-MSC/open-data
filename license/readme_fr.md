@@ -1,0 +1,14 @@
+![ECCC logo](img_eccc-logo.png)
+
+[In English](readme.md)
+
+[TdM](../readme_fr.md)>License
+
+
+MSC Public Data License... en français :-)
+=======================
+
+THIS IS INCOMPLETE, TESTING STUFF HERE
+
+* Link to the full license
+* Highlights: The main requirement is to clearly acknowledge Environment and Climate Change Canada as data source

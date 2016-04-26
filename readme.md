@@ -1,14 +1,17 @@
 ![ECCC logo](img_eccc-logo.png)
-[Français ici](readme_fr.md)
 
+[En français](readme_fr.md)
 
-# Meteorological Service of Canada public data documentation
+Meteorological Service of Canada public data documentation
+==========================================================
 
 Short description: access MSC public data, free of charge, with the license 
 
-## Table of Content
-1. License
+Table of Content
+----------------
+1. [License](license)
     * The main requirement is to clearly acknowledge Environment and Climate Change Canada as data source
+
 2. Metadata and data discovery
     * link to GoC Open data portal... 
 
@@ -21,6 +24,7 @@ Short description: access MSC public data, free of charge, with the license
       * Pattern matching and triggers (on part, on file, on message)
       * Working examples of retrieving MSC data with AMQP
     * dd_info
+    
 5. MSC GeoMet
     * PRIORITY // Short description: MSC GeoMet, Interactively accessing MSC data via geospatial web services
     * PRIORITY // Table of Layer groups (list of first level, e.g. GDPS, GIOPS, radar, AQHI, Citypage, etc) with description, formats available (e.g. WMS: styles, WFS: formats, WCS: formats) as columns... NOT ON A PER LAYER BASIS
@@ -39,6 +43,7 @@ Short description: access MSC public data, free of charge, with the license
 		    - Time series
 	    - KML (Google Earth examples)
     * PRIORITY // GeoMet-Info
+    
 6. How to: documented examples for frequent use cases 
     * short description + disclaimer that we don't endorse any software
     * I want to download specific weather data over an area
@@ -50,6 +55,7 @@ Short description: access MSC public data, free of charge, with the license
 	    - in GoC OpenMaps (Federal Government only)
 	    - In a desktop software, such as QGIS and Google Earth
 	    - On a mobile phone
+	    
 7. Links
     - [CMC Product Guide](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html)
 	-  Reference documentation for Canadian Meteorological Centre (CMC) products
