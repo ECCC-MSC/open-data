@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](../readme_fr.md)>License
+[TdM](../readme_fr.md)>Licence
 
 
 MSC Public Data License... en français :-)

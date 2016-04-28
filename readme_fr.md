@@ -2,9 +2,14 @@
 
 ![ECCC logo](img_eccc-logo.png)
 
-# Meteorological Service of Canada public data documentation
+Meteorological Service of Canada public data documentation
+==========================================================
 
-Short description: access MSC public data, free of charge, with the license 
+Short description en français: access MSC public data, free of charge, with the license 
 
-## Table of Content
-1. License
+Table des matières
+------------------
+
+À VENIR, voir version anglaise 
+
+1. Licence
