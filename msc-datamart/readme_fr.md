@@ -2,10 +2,10 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > GeoMet
+[TdM](../readme_fr.md) > Datamart du SMC
 
-Les services GéoMet du SMC
-============================
+Datamart du SMC
+===============
 
 Courte description
 

@@ -1,8 +1,8 @@
 [En français](readme_fr.md)
 
-![ECCC logo](img_eccc-logo.png)
+![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme.md)>MSC GeoMet
+[TOC](../readme.md) > MSC GeoMet
 
 
 MSC GeoMet

@@ -2,10 +2,11 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > GeoMet
+[TdM](../readme_fr.md) > Métadonnées
 
-Les services GéoMet du SMC
-============================
+
+Métadonnées
+===========
 
 Courte description
 
