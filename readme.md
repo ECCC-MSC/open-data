@@ -15,7 +15,7 @@ Table of Content
 2. [Metadata and data discovery](metadata)
     * link to GoC Open data portal... 
 
-3. MSC meteorological data
+3. [MSC meteorological data](msc-data)
     * stuff from wxo here, such as GRIB and model description,  - LOW PRIORITY
     
 4. [MSC Datamart](msc-datamart)
