@@ -58,8 +58,13 @@ Table of Content
 		* link to list of WCS accessible layers 
 		* Time series
 		* ASCII
-	    
-7. Links
+
+7. [FAQ](faq)
+    * Access to archived data
+    * Access to other dataset
+        * Lightning data
+
+8. Links
     * [CMC Product Guide](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html)
 		- Reference documentation for Canadian Meteorological Centre (CMC) products
     * [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
