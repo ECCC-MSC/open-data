@@ -1,16 +1,16 @@
-[En français](readme_fr.md)
+[In English](readme.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme.md) > FAQ
+[TdM](../readme_fr.md) > FAQ
 
-MSC Public Data FAQ
+FAQ des données publiques du SMC
 ==========================================================
 
-Short description: placeholder for the FAQ
+Description courte: placeholder for the FAQ
 
 
-Table of Content
+Table des matières
 ----------------
 
 * FAQ item #1
@@ -20,17 +20,18 @@ Table of Content
 
 ## FAQ item #1
 
-Details...
+Détails...
 
 ## FAQ item #2
 
-Details...
+Détails...
 
 ## FAQ item #3
 
-Details...
+Détails...
 
 
 # TODO
 
+* utiliser qqchose en français au lieu de 'FAQ' ?
 * add internal links from ToC to FAQ items
