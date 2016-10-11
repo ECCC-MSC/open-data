@@ -16,7 +16,7 @@ Table of Content
 * [What data can I find?](#what-data-can-i-find)
 * [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time)
 * [How can I download data?](#how-can-i-download-data)
-* [Could I be aware of any change in the bulletins or model format/content?](#could-i-be-aware-of-any-change-in-the-bulletins-or-model-format&/content)
+* [Could I be aware of any change in the bulletins or model format and or content?](#could-i-be-aware-of-any-change-in-the-bulletins-or-model-format-and-or-content)
 * [Can I have radar data?](#can-i-have-radar-data)
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
 
@@ -71,7 +71,7 @@ However, we should migrate shortly to "sr_subscribe" which runs only with Python
 http://metpx.sourceforge.net/sr_subscribe.1.html
 http://metpx.sourceforge.net/Install.html
 
-## Could I be aware of any change in the bulletins or model format/content? 
+## Could I be aware of any change in the bulletins or model format and or content? 
 
 For Canadian stations bulletins, any change in the heading and station name is announced by what we call a GENOT (GEneral NOTification) message. 
 We have a mailing list to distribute the GENOT for the station and the header change. If you are interested in this e-mail notificaiton, please send us your e-mail and we will add it to this mailing list. 
