@@ -13,15 +13,15 @@ This section contains the most frequently asked questions about the MSC open dat
 Table of Content
 ----------------
 
-* What data can I find ?
-* Do you provide an API through which we can access weather data for a given area and time? 
-* How can I download the data ?
-* Could I be aware of any change in the bulletins or model format/content? 
-* Can I have radar data ?
-* Can I have archived radar data ?
+* [What data can I find?](#what-data-can-i-find?)
+* [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time?)
+* [How can I download data?](#how-can-i-download-data?)
+* [Could I be aware of any change in the bulletins or model format/content?](#could-i-be-aware-of-any-change-in-the-bulletins-or-model-format/content?)
+* [Can I have radar data?](#can-i-have-radar-data?)
+* [Can I have archived radar data?](#can-i-have-archived-radar-data?)
 
 
-## What data can I find ?
+## What data can I find?
 
 A lot of our data is accessible through our open data server named the Meteorological Service of Canada (MSC) Datamart. You will find a short description of every product available, as well as a link to a more detailed documentation for each of them, in this README:
 http://dd.meteo.gc.ca/about_dd_apropos.txt
@@ -57,7 +57,7 @@ GeoMet serves well over 1 million requests daily and is free to use as long as t
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
 
-## How can I download the data ?
+## How can I download data?
 
 The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol. Not only does this 
 enable the user to be notified of available products as they're published, but also to receive them automatically.
@@ -86,7 +86,7 @@ http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
 Please use the following address to contact us for any comments or questions:
 ec.dps-client.ec@canada.ca
 
-## Can I have radar data ?
+## Can I have radar data?
 
 The weather radar data we freely provide to the public are the GIFs on the MSC Open data server. You will find the documentation about this service here:
 http://dd.meteo.gc.ca/radar/doc/README_radar.txt 
@@ -122,7 +122,7 @@ For information about file sizes:
     - 1 hour of volume scan for 1 radar without precipitation: ~ 4.5 Mb
     - 1 hour of volume scan for 1 radar with precipitation: ~ 13 Mb 
 
-## Can I have archived radar data ?
+## Can I have archived radar data?
 
 Environment and Climate Change Canada does not have on online service to retrieve archived data.
 The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
