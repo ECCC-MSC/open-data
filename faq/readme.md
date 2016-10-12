@@ -77,7 +77,7 @@ http://metpx.sourceforge.net/Install.html
 Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net).  
 The broker has a limited ability to queue products up when a user has an unintended outage,  this can be anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer, 
 so queues cannot be allowed to accumulate indefinitely.  
-We keep queues alive as long as we can reasonably do so, but this practice is just meant to give clients time to restart their consumers in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued.   Generally when there is a queue of more than 50,000 products, and no consumer, the queue will get purged.   
+We keep queues alive as long as we can reasonably do so, but this practice is just meant to give clients time to restart their consumers in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued.   Generally when there is a queue of more than 25,000 products, and no consumer, the queue will get purged.   
 
 In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. 
 Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
