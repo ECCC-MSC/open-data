@@ -20,7 +20,9 @@ Table of Content
 * [Could I be aware of any change in the bulletins or model format and or content?](#could-i-be-aware-of-any-change-in-the-bulletins-or-model-format-and-or-content)
 * [Can I have radar data?](#can-i-have-radar-data)
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
-
+* [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
+* [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
+* [Why not making just one big GRIB file with all the variables?](#why-not-making-just-one-big-grib-file-with-all-the-variables)
 
 ## What data can I find?
 
@@ -158,6 +160,50 @@ If interested, please provide us the completed form:
 |Other information |       |
 |Billing name and coordinates |       |
 
-# TODO
+## Are past forecasts from your model available? 
 
-* add internal links from ToC to FAQ items
+Environment and Climate Change Canada does not have on online service to retrieve archived data.
+
+The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
+
+If users give us specifications for the data we can extract it to GRIB format and send it to them. Depending on the nature of the request this is usually in the low hundreds. We can provide users with an estimate once we know more about their requirements.
+If interested, please provide us the completed form:
+
+
+| Information | Value |
+|-------------|:-----:|
+|Model (e.g. GDPS, RDPS, HRDPS, NAEFS) |       |       
+|Data type (forecast, analysis or map)  |       |
+|Weather variables (e.g. WIND_TGL_40m) |       |
+|Dates (e.g. 2006-01-01 to 2008-12-31 )  |       |
+|Run hours (e.g. 00Z, 12Z) |     |
+|Forecast hours (e.g. 000, 003, 006) |       |
+|Data domain (user defined lat-lon box, existing Datamart domain)  |       |
+|Horizontal spatial resolution (e.g. 10km/0.24 degrees)  |       |
+|Levels (surface, isobaric levels, meters above ground) |        |
+|Delivery mode 	FTP |       |
+|Contact name and billing coordinates |         |
+
+Notes: 
+- Request such as "all variables at all levels" is not accepted. Be specific
+- Data are archived 5 years back, depending of their availability 
+
+## Could I have a GRIB data feed?
+
+Environment and Climate Change Canada offers a push feed for its NWP data in GRIB format. This service is 24/7 supported and the cost is function of the amount of data: it starts at $500/month + $500 set-up fee from 0 to 1 Gb/day. Add 500$/month for each daily Gb.
+
+Contact us if you are insterested by this service. 
+
+## Why not making just one big GRIB file with all the variables?
+
+Environment and Climate Change Canada opted to put one variable per file because we estimated that most of our users would not used all the variables. 
+Moreover, would have we made packages with many variables, users would have made requests to have their choice of variables in the packages.
+
+This is why we still believe that is the right strategy to disseminate GRIB data.
+
+That being said, to streamline their download process users could write all the download file paths in one text file and use it as an argument to the command "wget -i list.txt". 
+By proceeding like this, one socket will be open for all your requests and the web server will send you the files as fast at it is configured, without being queued for each file. 
+Users will then reach the same download speed as if all the GRIB files were in a single zip file.
+
+
+
