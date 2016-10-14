@@ -30,6 +30,7 @@ Table of Content
 * [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
 * [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
 * [Can I have rainfall depth data?](#can-i-have-rainfall-depth-data)
+* [Can I have satellite images?](#can-i-have-satellite-images)
 
 ## What data can I find?
 
@@ -300,3 +301,9 @@ Finally, one could mention our geospatial services, and more specifically the Ge
 You can find RDPA-CaPA layers and in a near future you will be able to download directly CSV or other formats of data directly through the GRIB files. 
 If you wish to be advise of any update, I recommend you to subscribe to the mailing list trough : http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info 
 
+## Can I have satellite images?
+
+Environment and Climate Change Canada does not provide satellite images or product to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html),  because we are not the data producer. 
+There is a good site at the University of Washington if you want to retrieve images for free: http://www.atmos.washington.edu/~ovens/loops/
+
+If you want a data feed for satellite images, we suggest users to contact our US counterpart at NOAA or to seek a provider in the private sector. 
