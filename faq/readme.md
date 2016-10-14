@@ -23,6 +23,8 @@ Table of Content
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
 * [Why not making just one big GRIB file with all the variables?](#why-not-making-just-one-big-grib-file-with-all-the-variables)
+* [Can I have access to warnings?](#can-i-have-access-to-warnings)
+* [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
 
 ## What data can I find?
 
@@ -205,5 +207,32 @@ That being said, to streamline their download process users could write all the 
 By proceeding like this, one socket will be open for all your requests and the web server will send you the files as fast at it is configured, without being queued for each file. 
 Users will then reach the same download speed as if all the GRIB files were in a single zip file.
 
+## Can I have access to warnings?
 
+You can find the information about Environment and Climate Change Canada's warning at many places.
+
+You can access it through the RSS feed. See this page for more information:
+http://weather.gc.ca/business/index_e.html#rss 
+
+You can also find the warning in CAP-XML format on our open data server. You can find the documentation of this service here: http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
+
+You can find documentation about our Warning here:
+http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=D9553AB5-1 
+
+ECCC also has an experimental service to send the warning for regions by email. See the service here:
+https://ecalertme.weather.gc.ca/ 
+
+Pelmorex also has a service to send EC Warnings. You can find the information here:
+https://alerts.pelmorex.com/ 
+
+## Can I have a shapefile of the warning regions?
+
+You can find the shapefiles of the public forecast regions here (pick the latest version):
+http://dd.meteo.gc.ca/meteocode/geodata/
+
+Please, note that there is no shapefile including all the possible regions for a warning. Each warning can cover a different region and sub-region, depending of the nature and extend of the warning. This is why the polygon is included in each of the CAP file, has described in the README file here:
+http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
+
+
+[modifier] 
 
