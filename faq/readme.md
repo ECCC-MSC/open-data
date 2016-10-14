@@ -28,6 +28,8 @@ Table of Content
 * [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
 * [Can I have access and use to the icons displayed in the Citypage XML product?](#can-i-have-access-and-use-to-the-icons-displayed-in-the-citypage-xml-product)
 * [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
+* [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
+* [Can I have rainfall depth data?](#can-i-have-rainfall-depth-data)
 
 ## What data can I find?
 
@@ -266,5 +268,35 @@ http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
 The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
 http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
-[modifier] 
+## Can I have CSV minimum and maximum forecast temperature?
+
+To obtain extreme forecast temperature data in CSV format, you can consult either:
+
+- FMCN31 to FMCN38 forecast bulletins (CSV format), based on the Global Environmental Multiscale model in global configuration. 
+  0000 UTC forecasts contain the maximum of the current day, the minimum and maximum of day two and the minimum of day three. 
+  1200 UTC forecasts contain the minima and maxima of day two and day three.
+
+- FMCN41 to FMCN48 forecast bulletins (CSV format), based on the Global Environmental Multiscale model in regional configuration. 
+  1200 UTC forecasts contain the minimum and maximum of day two and the minimum of day three. 
+  Forecasts based on 0000 UTC data contain the maximum of the current day and the minimum and maximum of day two.
+    
+These bulletins are available on the Datamart at this address: http://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/ 
+
+## Can I have rainfall depth data?
+
+Regarding QPF forecasts in CSV format, you may be interested by FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct model output of the Global Environmental Multiscale (GEM) model regional run. 
+Each of these bulletins are produced specifically for individual Canadian forecast centres. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others. 
+Forecast weather elements may also differ from message to message.
+
+These bulletins are available on the Datamart at this address: http://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/ 
+    
+You can find some documentation about alphanumeric bulletins on the Datamart at the adress: http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt, 
+and on the product guide here : http://iweb.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/bulletins_e.html.
+
+A bulletin search interface for the Meteorological Service of Canada http data server is available at: http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl , 
+and the associated documentation can be found here: http://dd.meteo.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf
+    
+Finally, one could mention our geospatial services, and more specifically the GeoMet-Beta services. See: http://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html. 
+You can find RDPA-CaPA layers and in a near future you will be able to download directly CSV or other formats of data directly through the GRIB files. 
+If you wish to be advise of any update, I recommend you to subscribe to the mailing list trough : http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info 
 
