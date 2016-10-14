@@ -25,6 +25,9 @@ Table of Content
 * [Why not making just one big GRIB file with all the variables?](#why-not-making-just-one-big-grib-file-with-all-the-variables)
 * [Can I have access to warnings?](#can-i-have-access-to-warnings)
 * [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
+* [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
+* [Can I have access and use to the icons displayed in the Citypage XML product?](#can-i-have-access-and-use-to-the-icons-displayed-in-the-citypage-xml-product)
+* [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
 
 ## What data can I find?
 
@@ -233,6 +236,35 @@ http://dd.meteo.gc.ca/meteocode/geodata/
 Please, note that there is no shapefile including all the possible regions for a warning. Each warning can cover a different region and sub-region, depending of the nature and extend of the warning. This is why the polygon is included in each of the CAP file, has described in the README file here:
 http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
 
+## I do not see a condition under the corresponding element of the Citypage XML file
+
+Some weather stations are automatic and do not report the current condition. 
+If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
+http://weather.gc.ca/city/pages/ab-50_metric_e.html
+
+This is why there is no icon or condition reported in the corresponding Citypage XML file.
+
+## Can I have access and use to the icons displayed in the Citypage XML product? 
+
+These icons are covered by the standard Environment Canada Terms and Conditions: https://www.canada.ca/en/transparency/terms.html
+If you want to make a commercial usage of these icons, you can not use it without explicit consent.
+
+You can download all the EC weather icons by using the following URL: http://meteo.gc.ca/weathericons/NN.gif
+
+where NN is a number included between 00 and 45.
+
+You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address:
+https://github.com/OGCMetOceanDWG/WorldWeatherSymbols 
+
+## Can I have the current weather observation?
+
+We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
+
+One is on a station basis, one file per station. All the stations are distributed in this product. The documentation can be found here:
+http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
+
+The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
+http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
 [modifier] 
 
