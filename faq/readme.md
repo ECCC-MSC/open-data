@@ -125,6 +125,9 @@ As part of this service, we push data to your FTP server and provide 24/7 suppor
 Documentation about radar formats can be found at the following location:
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
 
+Documentation about radar products can be found at the following location:
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
+
 For data feeds, available formats goes like this:
 
     - NUMERICA (ASCII)
