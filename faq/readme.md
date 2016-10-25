@@ -23,6 +23,9 @@ Table of Content
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
 * [Why not making just one big GRIB file with all the variables?](#why-not-making-just-one-big-grib-file-with-all-the-variables)
+* [What is the datum of the model X?](#what-is-the-datum-of-the-model-x)
+* [Can I have the topography of the model X?](#can-i-have-the-topography-of-the-model-x)
+* [Can I have the land sea mask of the model X?](#can-i-have-the-land-sea-mask-of-the-model-x)
 * [Can I have access to warnings?](#can-i-have-access-to-warnings)
 * [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
 * [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
@@ -215,6 +218,24 @@ This is why we still believe that is the right strategy to disseminate GRIB data
 That being said, to streamline their download process users could write all the download file paths in one text file and use it as an argument to the command "wget -i list.txt". 
 By proceeding like this, one socket will be open for all your requests and the web server will send you the files as fast at it is configured, without being queued for each file. 
 Users will then reach the same download speed as if all the GRIB files were in a single zip file.
+
+## What is the datum of the model X?
+
+You can use the free GDAL tool to retrieve datum and projection information for our GRIB2 files. 
+The following command will provide the datum and projection of the file:
+
+gdalinfo file.grib2
+
+In the output, information starts with "Coordinate System is:".
+
+## Can I have the topography of the model X?
+
+The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
+
+## Can I have the land sea mask of the model X?
+
+You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask. 
+Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
 
 ## Can I have access to warnings?
 
