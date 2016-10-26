@@ -13,7 +13,7 @@ This section contains the most frequently asked questions about the MSC open dat
 Table of Content
 ----------------
 
-* [What data can I find?](#what-data-can-i-find)
+* [What data can I find on the MSC Datamart?](#what-data-can-i-find-on-the-msc-datamart)
 * [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time)
 * [How can I download data?](#how-can-i-download-data)
 * [Why message queues when using AMQP are being terminated after several hours of inactivity?](#why-message-queues-when-using-amqp-are-being-terminated-after-several-hours-of-inactivity)
@@ -34,19 +34,24 @@ Table of Content
 * [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
 * [Can I have rainfall depth data?](#can-i-have-rainfall-depth-data)
 * [Can I have satellite images?](#can-i-have-satellite-images)
+* [Contact us](#contact-us)
 
-## What data can I find?
+## What data can I find on the MSC Datamart?
 
 A lot of our data is accessible through our open data server named the Meteorological Service of Canada (MSC) Datamart. You will find a short description of every product available, as well as a link to a more detailed documentation for each of them, in this README:
+
 http://dd.meteo.gc.ca/about_dd_apropos.txt
 
 The terms and conditions of use of Meteorological Data from Environment and Climate Change Canada can be found here:
+
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 We also offer geospatial web services named MSC GeoMet. The documentation is available here:
+
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
 Another source of product description can be found on the CMC Product Guide publicly available on our Collaboration web site:
+
 http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/table_of_contents_e.html
 
 If you need more information about our services or products, do not hesitate to contact us, using the e-mail address: ec.dps-client.ec@canada.ca
@@ -55,19 +60,23 @@ If you need more information about our services or products, do not hesitate to 
 
 Environment and Climate Change Canada offers an API to access Canadian weather data via geospatial web services named MSC GeoMet, through the recognized WMS international standard. 
 The documentation is available here: 
+
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
 Data available in the WMS can easily be integrated into iOS applications and we're aware of several clients successfully doing so.
 
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD). 
 See the announcing GeoMet-Beta version: 
+
 http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html
 
 Changes to the GeoMet-Beta Geospatial Web Services will be announced on the GeoMet-Info list: 
+
 http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
 
 Finally, please note that because GeoMet is leveraging open standards, users are not affected when the underlying data is modified: methods to access the data remain stable and reliable. 
 GeoMet serves well over 1 million requests daily and is free to use as long as the source is attributed, see licence below for details: 
+
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
 
@@ -78,11 +87,14 @@ enable the user to be notified of available products as they're published, but a
 The service may apply to a specific set of files (weather warnings, observations, model data, etc.) and thus may concern only those products of interest to the user.
 
 The documentation about this service can be found here:
+
 http://dd.weather.gc.ca/doc/README_AMQP.txt
 
 Please, note that the current documentation mentions the script "dd_subscribe" which runs with both Python2 and Python3.
 However, we should migrate shortly to "sr_subscribe" which runs only with Python3. Some documentation is available here:
+
 http://metpx.sourceforge.net/sr_subscribe.1.html
+
 http://metpx.sourceforge.net/Install.html
 
 ## Why message queues when using AMQP are being terminated after several hours of inactivity?
@@ -102,10 +114,13 @@ For Canadian stations bulletins, any change in the heading and station name is a
 We have a mailing list to distribute the GENOT for the station and the header change. If you are interested in this e-mail notificaiton, please send us your e-mail and we will add it to this mailing list. 
 
 To be advised of major changed, like model resolution, you can subscribe to the GENOT 03 mailing list.
-You can find an example of a GENOT 03 bulletin here: http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117 
+You can find an example of a GENOT 03 bulletin here: 
 
-Finally, we strongly recommand to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. 
+http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117 
+
+Finally, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. 
 You can subscribe here:
+
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
 
 Please use the following address to contact us for any comments or questions:
@@ -114,21 +129,26 @@ ec.dps-client.ec@canada.ca
 ## Can I have radar data?
 
 The weather radar data we freely provide to the public are the GIFs on the MSC Open data server. You will find the documentation about this service here:
+
 http://dd.meteo.gc.ca/radar/doc/README_radar.txt 
 
 We also provide the North-American weather radar mosaic as WMS geospatial web services:
+
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1 
 
 The license terms for these products can be read here:
+
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
 In both case, it does not include raw radar data. Other radar data products are provided as a cost-recovered service. 
 As part of this service, we push data to your FTP server and provide 24/7 support. The terms under which these products are provided are similar to those described in the license above.
 
 Documentation about radar formats can be found at the following location:
+
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
 
 Documentation about radar products can be found at the following location:
+
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
 For data feeds, available formats goes like this:
@@ -144,6 +164,8 @@ Regarding pricing, here are the details:
     - 6-10 (any whole region): $1,800/month
     - 11+: $2,000/month
     - Plus a one-time setup fee of $2,000 
+    
+Please, note that these rates are indicative only and may change.
 
 For information about file sizes:
 
@@ -155,10 +177,15 @@ For information about file sizes:
 Environment and Climate Change Canada does not have on online service to retrieve archived data.
 The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
 
-It is available in both raw format (IRIS) or products in ASCII format. You will find more information about our products and formats at the address: (<em>to come</em>)
+It is available in both raw format (IRIS) or products in ASCII format. You will find more information about our formats and products at the addresses: 
+
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
 Typical archived data retrieval requests required between 2-4 hours to process. 
-If interested, please provide us the completed form:
+If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
 
 | Information | Value |
@@ -181,7 +208,7 @@ Environment and Climate Change Canada does not have on online service to retriev
 The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
 
 If users give us specifications for the data we can extract it to GRIB format and send it to them. Depending on the nature of the request this is usually in the low hundreds. We can provide users with an estimate once we know more about their requirements.
-If interested, please provide us the completed form:
+If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
 
 | Information | Value |
@@ -221,7 +248,7 @@ Users will then reach the same download speed as if all the GRIB files were in a
 
 ## What is the datum of the model X?
 
-You can use the free GDAL tool to retrieve datum and projection information for our GRIB2 files. 
+You can use the free [GDAL](http://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files. 
 The following command will provide the datum and projection of the file:
 
 gdalinfo file.grib2
@@ -237,36 +264,45 @@ The model topography is the field HGT_SFC (Model topography - Smoothed) of the p
 You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask. 
 Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
 
-## Can I have access to warnings?
+## Can I have access to weather warnings?
 
 You can find the information about Environment and Climate Change Canada's warning at many places.
 
 You can access it through the RSS feed. See this page for more information:
+
 http://weather.gc.ca/business/index_e.html#rss 
 
-You can also find the warning in CAP-XML format on our open data server. You can find the documentation of this service here: http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
+You can also find the warning in CAP-XML format on our open data server. You can find the documentation of this service here: 
+
+http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
 
 You can find documentation about our Warning here:
+
 http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=D9553AB5-1 
 
 ECCC also has an experimental service to send the warning for regions by email. See the service here:
+
 https://ecalertme.weather.gc.ca/ 
 
 Pelmorex also has a service to send EC Warnings. You can find the information here:
+
 https://alerts.pelmorex.com/ 
 
 ## Can I have a shapefile of the warning regions?
 
 You can find the shapefiles of the public forecast regions here (pick the latest version):
+
 http://dd.meteo.gc.ca/meteocode/geodata/
 
 Please, note that there is no shapefile including all the possible regions for a warning. Each warning can cover a different region and sub-region, depending of the nature and extend of the warning. This is why the polygon is included in each of the CAP file, has described in the README file here:
+
 http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
 
 ## I do not see a condition under the corresponding element of the Citypage XML file
 
 Some weather stations are automatic and do not report the current condition. 
 If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
+
 http://weather.gc.ca/city/pages/ab-50_metric_e.html
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
@@ -281,6 +317,7 @@ You can download all the EC weather icons by using the following URL: http://met
 where NN is a number included between 00 and 45.
 
 You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address:
+
 https://github.com/OGCMetOceanDWG/WorldWeatherSymbols 
 
 ## Can I have the current weather observation?
@@ -288,9 +325,11 @@ https://github.com/OGCMetOceanDWG/WorldWeatherSymbols
 We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
 
 One is on a station basis, one file per station. All the stations are distributed in this product. The documentation can be found here:
+
 http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
 
 The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
+
 http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
 ## Can I have CSV minimum and maximum forecast temperature?
@@ -305,7 +344,13 @@ To obtain extreme forecast temperature data in CSV format, you can consult eithe
   1200 UTC forecasts contain the minimum and maximum of day two and the minimum of day three. 
   Forecasts based on 0000 UTC data contain the maximum of the current day and the minimum and maximum of day two.
     
-These bulletins are available on the Datamart at this address: http://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/ 
+These bulletins are available on the Datamart at this address: 
+
+http://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/ 
+
+The documentation can be found here:
+
+http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt
 
 ## Can I have rainfall depth data?
 
@@ -313,21 +358,45 @@ Regarding QPF forecasts in CSV format, you may be interested by FOCN03 bulletins
 Each of these bulletins are produced specifically for individual Canadian forecast centres. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others. 
 Forecast weather elements may also differ from message to message.
 
-These bulletins are available on the Datamart at this address: http://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/ 
-    
-You can find some documentation about alphanumeric bulletins on the Datamart at the adress: http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt, 
-and on the product guide here : http://iweb.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/bulletins_e.html.
+These bulletins are available on the Datamart at this address: 
 
-A bulletin search interface for the Meteorological Service of Canada http data server is available at: http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl , 
-and the associated documentation can be found here: http://dd.meteo.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf
+http://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/ 
+    
+You can find some documentation about alphanumeric bulletins on the Datamart at the adress: 
+
+http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt, 
+and on the product guide here : 
+
+http://iweb.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/bulletins_e.html.
+
+A bulletin search interface for the Meteorological Service of Canada http data server is available at: 
+
+http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl , 
+and the associated documentation can be found here: 
+
+http://dd.meteo.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf
     
 Finally, one could mention our geospatial services, and more specifically the GeoMet-Beta services. See: http://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html. 
 You can find RDPA-CaPA layers and in a near future you will be able to download directly CSV or other formats of data directly through the GRIB files. 
-If you wish to be advise of any update, I recommend you to subscribe to the mailing list trough : http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info 
+If you wish to be advise of any update, we recommend you to subscribe to the mailing list through : 
+
+http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info 
 
 ## Can I have satellite images?
 
 Environment and Climate Change Canada does not provide satellite images or product to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html),  because we are not the data producer. 
-There is a good site at the University of Washington if you want to retrieve images for free: http://www.atmos.washington.edu/~ovens/loops/
+There is a good site at the University of Washington if you want to retrieve images for free: 
+
+http://www.atmos.washington.edu/~ovens/loops/
 
 If you want a data feed for satellite images, we suggest users to contact our US counterpart at NOAA or to seek a provider in the private sector. 
+
+## Contact us
+
+If you use the data available on the datamart, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any
+updates or changes regarding the data available. You can subscribe here:
+
+http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
+
+Please use the following address to contact us for any comments or questions:
+ec.dps-client.ec@canada.ca
