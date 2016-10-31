@@ -61,9 +61,13 @@ If you need more information about our services or products, do not hesitate to 
 Environment and Climate Change Canada offers an API to access Canadian weather data via geospatial web services named MSC GeoMet, through the recognized WMS international standard. 
 The documentation is available here: 
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
+http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
 Data available in the WMS can easily be integrated into iOS applications and we're aware of several clients successfully doing so.
+
+For your informaiton, more than 400 layers are available in the WMS GetCapabilities:
+
+http://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
 
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD). 
 See the announcing GeoMet-Beta version: 
