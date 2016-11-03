@@ -16,8 +16,8 @@ Table of Content
 * [What data can I find on the MSC Datamart?](#what-data-can-i-find-on-the-msc-datamart)
 * [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time)
 * [How can I download data?](#how-can-i-download-data)
-* [Why message queues when using AMQP are being terminated after several hours of inactivity?](#why-message-queues-when-using-amqp-are-being-terminated-after-several-hours-of-inactivity)
-* [Could I be aware of any change in the bulletins or model format and or content?](#could-i-be-aware-of-any-change-in-the-bulletins-or-model-format-and-or-content)
+* [Why are message queues terminated after several hours of inactivity when using AMQP?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
+* [Could I be made aware of any change to bulletins or model format and or content?](#could-i-be-made-aware-of-any-change-to-bulletins-or-model-format-and-or-content)
 * [Can I have radar data?](#can-i-have-radar-data)
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
@@ -38,7 +38,7 @@ Table of Content
 
 ## What data can I find on the MSC Datamart?
 
-A lot of our data is accessible through our open data server named the Meteorological Service of Canada (MSC) Datamart. You will find a short description of every product available, as well as a link to a more detailed documentation for each of them, in this README:
+A lot of our data is accessible through our open data server named the Meteorological Service of Canada (MSC) Datamart. You will find a short description of all available products, as well as a link to a more detailed documentation for each of them, in this README:
 
 http://dd.meteo.gc.ca/about_dd_apropos.txt
 
@@ -63,14 +63,14 @@ The documentation is available here:
 
 http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
-Data available in the WMS can easily be integrated into iOS applications and we're aware of several clients successfully doing so.
+Data available through WMS can easily be integrated into iOS applications and we're aware of several clients successfully doing so.
 
-For your informaiton, more than 400 layers are available in the WMS GetCapabilities:
+For your information, more than 400 layers are available in the WMS GetCapabilities:
 
 http://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
 
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD). 
-See the announcing GeoMet-Beta version: 
+See the announcement of the GeoMet-Beta version: 
 
 http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html
 
@@ -79,45 +79,48 @@ Changes to the GeoMet-Beta Geospatial Web Services will be announced on the GeoM
 http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
 
 Finally, please note that because GeoMet is leveraging open standards, users are not affected when the underlying data is modified: methods to access the data remain stable and reliable. 
-GeoMet serves well over 1 million requests daily and is free to use as long as the source is attributed, see licence below for details: 
+GeoMet serves well over 1 million requests daily and is free to use as long as the source is attributed. See the licence below for details: 
 
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
 
 ## How can I download data?
 
-The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol. Not only does this 
-enable the user to be notified of available products as they're published, but also to receive them automatically.
-The service may apply to a specific set of files (weather warnings, observations, model data, etc.) and thus may concern only those products of interest to the user.
+The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP), an open
+protocol with free librairies in numerous programming languages. This enables the user not only to be notified of available products as they're published, but also to receive them automatically if
+he so chooses.
+The service may be configured by the user to apply to a specific set of files (weather warnings, observations, model data, etc.) and thus may concern only those products of interest to the user.
 
 The documentation about this service can be found here:
 
 http://dd.weather.gc.ca/doc/README_AMQP.txt
 
-Please, note that the current documentation mentions the script "dd_subscribe" which runs with both Python2 and Python3.
-However, we should migrate shortly to "sr_subscribe" which runs only with Python3. Some documentation is available here:
+Please, note that while the original documentation mentions the script "dd_subscribe" which runs with both Python2 and Python3, we will be migrating 
+to "sr_subscribe" which runs only with Python3. Some documentation is available here:
 
 http://metpx.sourceforge.net/sr_subscribe.1.html
 
 http://metpx.sourceforge.net/Install.html
 
-## Why message queues when using AMQP are being terminated after several hours of inactivity?
+## Why are message queues terminated after several hours of inactivity when using AMQP?
 
-Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net).  
-The broker has a limited ability to queue products up when a user has an unintended outage,  this can be anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer, 
+Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, 
+is a broker (see Glossaty section at the address: http://metpx.sourceforge.net/Install.html).   
+The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer, 
 so queues cannot be allowed to accumulate indefinitely.  
-We keep queues alive as long as we can reasonably do so, but this practice is just meant to give clients time to restart their consumers in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued.   Generally when there is a queue of more than 25,000 products, and no consumer, the queue will get purged.   
+We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. 
+Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
 
 In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. 
 Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
 
 
-## Could I be aware of any change in the bulletins or model format and or content? 
+## Could I be made aware of any change to bulletins or model format and or content? 
 
-For Canadian stations bulletins, any change in the heading and station name is announced by what we call a GENOT (GEneral NOTification) message. 
-We have a mailing list to distribute the GENOT for the station and the header change. If you are interested in this e-mail notificaiton, please send us your e-mail and we will add it to this mailing list. 
+For Canadian station bulletins, any change in the heading and station name is announced via what we call a GENOT (GEneral NOTification) message. 
+We have a mailing list to distribute GENOTs for station and header changes. If you are interested in this e-mail notification, please send us your e-mail and we will add it to this mailing list. 
 
-To be advised of major changed, like model resolution, you can subscribe to the GENOT 03 mailing list.
+To be advised of major changes, such as model resolution, you can subscribe to the GENOT 03 mailing list.
 You can find an example of a GENOT 03 bulletin here: 
 
 http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117 
@@ -132,7 +135,7 @@ ec.dps-client.ec@canada.ca
 
 ## Can I have radar data?
 
-The weather radar data we freely provide to the public are the GIFs on the MSC Open data server. You will find the documentation about this service here:
+The weather radar data we freely provide to the public are the GIF images on the MSC Open data server. You will find the documentation about this service here:
 
 http://dd.meteo.gc.ca/radar/doc/README_radar.txt 
 
@@ -144,7 +147,7 @@ The license terms for these products can be read here:
 
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
-In both case, it does not include raw radar data. Other radar data products are provided as a cost-recovered service. 
+Neither of the above cases includes raw radar data. This and other radar data products are provided as a cost-recovered service. 
 As part of this service, we push data to your FTP server and provide 24/7 support. The terms under which these products are provided are similar to those described in the license above.
 
 Documentation about radar formats can be found at the following location:
@@ -155,14 +158,14 @@ Documentation about radar products can be found at the following location:
 
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
-For data feeds, available formats goes like this:
+For data feeds, available formats are as follows:
 
     - NUMERICA (ASCII)
     - GIF format (recent GIFs available for free on the MSC Datamart)
     - IRIS (raw) format
         Specifications: http://www.vaisala.com/en/hydrology/offering/weatherradars/Pages/IRIS.aspx 
 
-Regarding pricing, here are the details:
+Details regards pricing are as follows:
 
     - 1-5 radars (QC, Atl or Pac region) : $1,600/month
     - 6-10 (any whole region): $1,800/month
@@ -171,24 +174,25 @@ Regarding pricing, here are the details:
     
 Please, note that these rates are indicative only and may change.
 
-For information about file sizes:
+Regarding file sizes:
 
     - 1 hour of volume scan for 1 radar without precipitation: ~ 4.5 Mb
     - 1 hour of volume scan for 1 radar with precipitation: ~ 13 Mb 
+    
+Please, note that the estimate above depends on meteorological conditions and is for reference purposes only. 
 
 ## Can I have archived radar data?
 
 Environment and Climate Change Canada does not have on online service to retrieve archived data.
-The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
+The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour, with a minimum charge of 99$, to retrieve/recreate the requested data. The data itself is free.
 
-It is available in both raw format (IRIS) or products in ASCII format. You will find more information about our formats and products at the addresses: 
-
+It is available in either raw format (IRIS) or products in ASCII format. You will find more information about our formats and products at the addresses: 
 
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
 
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
-Typical archived data retrieval requests required between 2-4 hours to process. 
+Typical archived data retrieval requests require between 2-4 hours to process. 
 If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
 
