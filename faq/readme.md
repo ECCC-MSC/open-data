@@ -16,24 +16,24 @@ Table of Content
 * [What data can I find on the MSC Datamart?](#what-data-can-i-find-on-the-msc-datamart)
 * [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time)
 * [How can I download data?](#how-can-i-download-data)
-* [Why are message queues terminated after several hours of inactivity when using AMQP?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
-* [Could I be made aware of any change to bulletins or model format and or content?](#could-i-be-made-aware-of-any-change-to-bulletins-or-model-format-and-or-content)
 * [Can I have radar data?](#can-i-have-radar-data)
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
+* [Could I be made aware of any change to bulletins or model format and or content?](#could-i-be-made-aware-of-any-change-to-bulletins-or-model-format-and-or-content)
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
 * [Why not make just one big GRIB file with all the variables?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
+* [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
+* [Can I have access to warnings?](#can-i-have-access-to-warnings)
+* [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
+* [Can I have satellite images?](#can-i-have-satellite-images)
+* [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
+* [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
+* [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
 * [What is the datum of model X?](#what-is-the-datum-of-model-x)
 * [Can I have the topography of model X?](#can-i-have-the-topography-of-model-x)
 * [Can I have the land sea mask of model X?](#can-i-have-the-land-sea-mask-of-model-x)
-* [Can I have access to warnings?](#can-i-have-access-to-warnings)
-* [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
 * [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
-* [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
-* [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
-* [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
-* [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
-* [Can I have satellite images?](#can-i-have-satellite-images)
+* [Why are message queues terminated after several hours of inactivity when using AMQP?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
 * [Contact us](#contact-us)
 
 ## What data can I find on the MSC Datamart?
@@ -83,7 +83,6 @@ GeoMet serves well over 1 million requests daily and is free to use as long as t
 
 http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt 
 
-
 ## How can I download data?
 
 The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP), an open
@@ -101,37 +100,6 @@ to "sr_subscribe" which runs only with Python3. Some documentation is available 
 http://metpx.sourceforge.net/sr_subscribe.1.html
 
 http://metpx.sourceforge.net/Install.html
-
-## Why are message queues terminated after several hours of inactivity when using AMQP?
-
-Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, 
-is a broker (see Glossaty section at the address: http://metpx.sourceforge.net/Install.html).   
-The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer, 
-so queues cannot be allowed to accumulate indefinitely.  
-We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. 
-Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
-
-In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. 
-Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
-
-
-## Could I be made aware of any change to bulletins or model format and or content? 
-
-For Canadian station bulletins, any change in the heading and station name is announced via what we call a GENOT (GEneral NOTification) message. 
-We have a mailing list to distribute GENOTs for station and header changes. If you are interested in this e-mail notification, please send us your e-mail and we will add it to this mailing list. 
-
-To be advised of major changes, such as model resolution, you can subscribe to the GENOT 03 mailing list.
-You can find an example of a GENOT 03 bulletin here: 
-
-http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117 
-
-Finally, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. 
-You can subscribe here:
-
-http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
-
-Please use the following address to contact us for any comments or questions:
-ec.dps-client.ec@canada.ca
 
 ## Can I have radar data?
 
@@ -238,6 +206,24 @@ Notes:
 - Requests such as "all variables at all levels" cannot be accepted. Please, be specific.
 - Forecast data are archived for 5 years. Other types of data (analyses for example) may have longer retention periods.
 
+## Could I be made aware of any change to bulletins or model format and or content? 
+
+For Canadian station bulletins, any change in the heading and station name is announced via what we call a GENOT (GEneral NOTification) message. 
+We have a mailing list to distribute GENOTs for station and header changes. If you are interested in this e-mail notification, please send us your e-mail and we will add it to this mailing list. 
+
+To be advised of major changes, such as model resolution, you can subscribe to the GENOT 03 mailing list.
+You can find an example of a GENOT 03 bulletin here: 
+
+http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117 
+
+Finally, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. 
+You can subscribe here:
+
+http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
+
+Please use the following address to contact us for any comments or questions:
+ec.dps-client.ec@canada.ca
+
 ## Could I have a GRIB data feed?
 
 Environment and Climate Change Canada offers a push feed for its NWP data in GRIB format. This service is supported 24/7 and the cost is a function of the amount of data requested: at the starting price is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
@@ -256,23 +242,17 @@ By proceeding like this, a single socket will be open and the request for all th
 
 This will then reach the same download speed as if all the GRIB files were in a single zip file.
 
-## What is the datum of model X?
+## Can I have the current weather observation?
 
-You can use the free [GDAL](http://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files. 
-The following command will provide the datum and projection of the file:
+We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
 
-gdalinfo file.grib2
+One is on a station basis, one file per station. All Canadian stations are included in this product. The documentation can be found here:
 
-In the output, information starts with "Coordinate System is:".
+http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
 
-## Can I have the topography of model X?
+The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
 
-The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
-
-## Can I have the land sea mask of model X?
-
-You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask. 
-Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
+http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
 ## Can I have access to weather warnings?
 
@@ -308,14 +288,14 @@ Please, note that there is no shapefile which includes all the possible regions 
 
 http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
 
-## I do not see a condition under the corresponding element of the Citypage XML file
+## Can I have satellite images?
 
-Some weather stations are automatic (unmanned) and do not report the current condition. 
-If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
+Environment and Climate Change Canada does not provide satellite images or products to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html), as we are not the data producer. 
+A recommended site for freely available satellite images is from the University of Washington: 
 
-http://weather.gc.ca/city/pages/ab-50_metric_e.html
+http://www.atmos.washington.edu/~ovens/loops/
 
-This is why there is no icon or condition reported in the corresponding Citypage XML file.
+If you require a data feed of satellite images, we suggest users contact our U.S. counterparts at NOAA or to seek a provider in the private sector. 
 
 ## Can I have access and use of icons displayed in the Citypage XML product? 
 
@@ -329,18 +309,6 @@ where NN is a number between 00 and 45.
 You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address:
 
 https://github.com/OGCMetOceanDWG/WorldWeatherSymbols 
-
-## Can I have the current weather observation?
-
-We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
-
-One is on a station basis, one file per station. All Canadian stations are included in this product. The documentation can be found here:
-
-http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
-
-The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
-
-http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
 ## Can I have CSV minimum and maximum forecast temperature?
 
@@ -389,14 +357,44 @@ If you wish to be advise of any update, we recommend you to subscribe to the mai
 
 http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info 
 
-## Can I have satellite images?
+## What is the datum of model X?
 
-Environment and Climate Change Canada does not provide satellite images or products to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html), as we are not the data producer. 
-A recommended site for freely available satellite images is from the University of Washington: 
+You can use the free [GDAL](http://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files. 
+The following command will provide the datum and projection of the file:
 
-http://www.atmos.washington.edu/~ovens/loops/
+gdalinfo file.grib2
 
-If you require a data feed of satellite images, we suggest users contact our U.S. counterparts at NOAA or to seek a provider in the private sector. 
+In the output, information starts with "Coordinate System is:".
+
+## Can I have the topography of model X?
+
+The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
+
+## Can I have the land sea mask of model X?
+
+You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask. 
+Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
+
+## I do not see a condition under the corresponding element of the Citypage XML file
+
+Some weather stations are automatic (unmanned) and do not report the current condition. 
+If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
+
+http://weather.gc.ca/city/pages/ab-50_metric_e.html
+
+This is why there is no icon or condition reported in the corresponding Citypage XML file.
+
+## Why are message queues terminated after several hours of inactivity when using AMQP?
+
+Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, 
+is a broker (see Glossaty section at the address: http://metpx.sourceforge.net/Install.html).   
+The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer, 
+so queues cannot be allowed to accumulate indefinitely.  
+We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. 
+Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
+
+In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. 
+Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
 
 ## Contact us
 
