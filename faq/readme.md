@@ -22,17 +22,17 @@ Table of Content
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
-* [Why not making just one big GRIB file with all the variables?](#why-not-making-just-one-big-grib-file-with-all-the-variables)
-* [What is the datum of the model X?](#what-is-the-datum-of-the-model-x)
-* [Can I have the topography of the model X?](#can-i-have-the-topography-of-the-model-x)
-* [Can I have the land sea mask of the model X?](#can-i-have-the-land-sea-mask-of-the-model-x)
+* [Why not make just one big GRIB file with all the variables?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
+* [What is the datum of model X?](#what-is-the-datum-of-model-x)
+* [Can I have the topography of model X?](#can-i-have-the-topography-of-model-x)
+* [Can I have the land sea mask of model X?](#can-i-have-the-land-sea-mask-of-model-x)
 * [Can I have access to warnings?](#can-i-have-access-to-warnings)
 * [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
 * [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
-* [Can I have access and use to the icons displayed in the Citypage XML product?](#can-i-have-access-and-use-to-the-icons-displayed-in-the-citypage-xml-product)
+* [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
 * [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
 * [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
-* [Can I have rainfall depth data?](#can-i-have-rainfall-depth-data)
+* [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
 * [Can I have satellite images?](#can-i-have-satellite-images)
 * [Contact us](#contact-us)
 
@@ -213,9 +213,10 @@ If interested, please complete the order form below and send it via e-mail using
 
 Environment and Climate Change Canada does not have on online service to retrieve archived data.
 
-The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour it takes, with a minimum of 99$, to retrieve/recreate the requested data. The data by itself is free.
+The data retrieval service from our archive is under a cost recovery policy. We charge 99$/hour, with a minimum of 99$, to retrieve/recreate the requested data. The data itself is free.
 
-If users give us specifications for the data we can extract it to GRIB format and send it to them. Depending on the nature of the request this is usually in the low hundreds. We can provide users with an estimate once we know more about their requirements.
+Once users provide specifications for the required data, we can extract it to GRIB format and send it to them. An estimate can be provided once requierements are known.
+Depending on the nature of the request this is usually in the low hundreds. 
 If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
 
@@ -234,27 +235,28 @@ If interested, please complete the order form below and send it via e-mail using
 |Contact name and billing coordinates |         |
 
 Notes: 
-- Request such as "all variables at all levels" is not accepted. Be specific
-- Data are archived 5 years back, depending of their availability 
+- Requests such as "all variables at all levels" cannot be accepted. Please, be specific.
+- Forecast data are archived for 5 years. Other types of data (analyses for example) may have longer retention periods.
 
 ## Could I have a GRIB data feed?
 
-Environment and Climate Change Canada offers a push feed for its NWP data in GRIB format. This service is 24/7 supported and the cost is function of the amount of data: it starts at $500/month + $500 set-up fee from 0 to 1 Gb/day. Add 500$/month for each daily Gb.
+Environment and Climate Change Canada offers a push feed for its NWP data in GRIB format. This service is supported 24/7 and the cost is a function of the amount of data requested: at the starting price is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
 
-Contact us if you are insterested by this service. 
+Please, contact us if you are interested in this service. 
 
-## Why not making just one big GRIB file with all the variables?
+## Why not make just one big GRIB file with all the variables?
 
-Environment and Climate Change Canada opted to put one variable per file because we estimated that most of our users would not used all the variables. 
+Environment and Climate Change Canada opted to put one variable per file because we presumed that most users would not require all the variables. 
 Moreover, would have we made packages with many variables, users would have made requests to have their choice of variables in the packages.
 
 This is why we still believe that is the right strategy to disseminate GRIB data.
 
-That being said, to streamline their download process users could write all the download file paths in one text file and use it as an argument to the command "wget -i list.txt". 
-By proceeding like this, one socket will be open for all your requests and the web server will send you the files as fast at it is configured, without being queued for each file. 
-Users will then reach the same download speed as if all the GRIB files were in a single zip file.
+That being said, the web utility [wget](https://www.gnu.org/software/wget/wget) possesses features that aim to optimize the download process. For instance, users could write all the download file paths in one text file and use it as an argument to the command "wget -i list.txt". 
+By proceeding like this, a single socket will be open and the request for all the listed files is treated as a single download, without opening and closing sockets for each file. 
 
-## What is the datum of the model X?
+This will then reach the same download speed as if all the GRIB files were in a single zip file.
+
+## What is the datum of model X?
 
 You can use the free [GDAL](http://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files. 
 The following command will provide the datum and projection of the file:
@@ -263,36 +265,36 @@ gdalinfo file.grib2
 
 In the output, information starts with "Coordinate System is:".
 
-## Can I have the topography of the model X?
+## Can I have the topography of model X?
 
 The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
 
-## Can I have the land sea mask of the model X?
+## Can I have the land sea mask of model X?
 
 You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask. 
 Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
 
 ## Can I have access to weather warnings?
 
-You can find the information about Environment and Climate Change Canada's warning at many places.
+You can find information about Environment and Climate Change Canada's warning in several places.
 
-You can access it through the RSS feed. See this page for more information:
-
-http://weather.gc.ca/business/index_e.html#rss 
-
-You can also find the warning in CAP-XML format on our open data server. You can find the documentation of this service here: 
-
-http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
-
-You can find documentation about our Warning here:
+Firstly, you can find documentation about our warnings here: 
 
 http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=D9553AB5-1 
 
-ECCC also has an experimental service to send the warning for regions by email. See the service here:
+You can access warnings through the RSS feed. See this page for more information:
+
+http://weather.gc.ca/business/index_e.html#rss 
+
+You can also find warnings in CAP-XML format on our open data server. Documentation of this service can be found here: 
+
+http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
+
+ECCC also has an experimental service to send warnings or regions by email. See documentation on this service here:
 
 https://ecalertme.weather.gc.ca/ 
 
-Pelmorex also has a service to send EC Warnings. You can find the information here:
+Pelmorex Media Inc. also has a service for sending ECCC Warnings. You can find the information here:
 
 https://alerts.pelmorex.com/ 
 
@@ -302,27 +304,27 @@ You can find the shapefiles of the public forecast regions here (pick the latest
 
 http://dd.meteo.gc.ca/meteocode/geodata/
 
-Please, note that there is no shapefile including all the possible regions for a warning. Each warning can cover a different region and sub-region, depending of the nature and extend of the warning. This is why the polygon is included in each of the CAP file, has described in the README file here:
+Please, note that there is no shapefile which includes all the possible regions for a given warning. Any warning can cover multiple regions and sub-regions, depending of the nature and extent of the warning. This is why the polygon is included in each of the CAP files, as described in the README file here:
 
 http://dd.meteo.gc.ca/alerts/doc/README_CAP.txt
 
 ## I do not see a condition under the corresponding element of the Citypage XML file
 
-Some weather stations are automatic and do not report the current condition. 
+Some weather stations are automatic (unmanned) and do not report the current condition. 
 If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
 
 http://weather.gc.ca/city/pages/ab-50_metric_e.html
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
 
-## Can I have access and use to the icons displayed in the Citypage XML product? 
+## Can I have access and use of icons displayed in the Citypage XML product? 
 
 These icons are covered by the standard Environment Canada Terms and Conditions: https://www.canada.ca/en/transparency/terms.html
-If you want to make a commercial usage of these icons, you can not use it without explicit consent.
+To make a commercial usage of these icons, you must obtain prior explicit consent.
 
-You can download all the EC weather icons by using the following URL: http://meteo.gc.ca/weathericons/NN.gif
+You can download all ECCC weather icons from the following URL: http://meteo.gc.ca/weathericons/NN.gif
 
-where NN is a number included between 00 and 45.
+where NN is a number between 00 and 45.
 
 You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address:
 
@@ -332,7 +334,7 @@ https://github.com/OGCMetOceanDWG/WorldWeatherSymbols
 
 We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
 
-One is on a station basis, one file per station. All the stations are distributed in this product. The documentation can be found here:
+One is on a station basis, one file per station. All Canadian stations are included in this product. The documentation can be found here:
 
 http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
 
@@ -344,11 +346,11 @@ http://dd.meteo.gc.ca/observations/doc/README_observations.txt
 
 To obtain extreme forecast temperature data in CSV format, you can consult either:
 
-- FMCN31 to FMCN38 forecast bulletins (CSV format), based on the Global Environmental Multiscale model in global configuration. 
+- FMCN31 to FMCN38 forecast bulletins (CSV format), based on the Global Deterministic Prediction System (GDPS). 
   0000 UTC forecasts contain the maximum of the current day, the minimum and maximum of day two and the minimum of day three. 
   1200 UTC forecasts contain the minima and maxima of day two and day three.
 
-- FMCN41 to FMCN48 forecast bulletins (CSV format), based on the Global Environmental Multiscale model in regional configuration. 
+- FMCN41 to FMCN48 forecast bulletins (CSV format), based on the Regional Deterministic Prediction System (RDPS). . 
   1200 UTC forecasts contain the minimum and maximum of day two and the minimum of day three. 
   Forecasts based on 0000 UTC data contain the maximum of the current day and the minimum and maximum of day two.
     
@@ -360,22 +362,19 @@ The documentation can be found here:
 
 http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt
 
-## Can I have rainfall depth data?
+## Can I have rainfall amount data?
 
-Regarding QPF forecasts in CSV format, you may be interested by FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct model output of the Global Environmental Multiscale (GEM) model regional run. 
-Each of these bulletins are produced specifically for individual Canadian forecast centres. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others. 
+Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may be interested in the FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct RDPS (Regional Deterministic rediction System) output . 
+Each of these bulletins are produced specifically for individual Canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others. 
 Forecast weather elements may also differ from message to message.
 
 These bulletins are available on the Datamart at this address: 
 
 http://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/ 
     
-You can find some documentation about alphanumeric bulletins on the Datamart at the adress: 
+You can find documentation about alphanumeric bulletins on the Datamart at the adress: 
 
 http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt, 
-and on the product guide here : 
-
-http://iweb.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/bulletins_e.html.
 
 A bulletin search interface for the Meteorological Service of Canada http data server is available at: 
 
@@ -392,12 +391,12 @@ http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
 
 ## Can I have satellite images?
 
-Environment and Climate Change Canada does not provide satellite images or product to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html),  because we are not the data producer. 
-There is a good site at the University of Washington if you want to retrieve images for free: 
+Environment and Climate Change Canada does not provide satellite images or products to external users, apart those from our web site (http://weather.gc.ca/satellite/index_e.html), as we are not the data producer. 
+A recommended site for freely available satellite images is from the University of Washington: 
 
 http://www.atmos.washington.edu/~ovens/loops/
 
-If you want a data feed for satellite images, we suggest users to contact our US counterpart at NOAA or to seek a provider in the private sector. 
+If you require a data feed of satellite images, we suggest users contact our U.S. counterparts at NOAA or to seek a provider in the private sector. 
 
 ## Contact us
 
