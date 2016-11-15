@@ -156,7 +156,7 @@ The data retrieval service from our archive is under a cost recovery policy. We 
 
 It is available in either raw format (IRIS) or products in ASCII format. You will find more information about our formats and products at the addresses: 
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
 
 http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
