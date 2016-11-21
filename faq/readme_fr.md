@@ -65,11 +65,43 @@ travers le standard international reconnu WMS. La documentation se trouve ici:
 
 http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
-Les données disponibles via WMS peuvent facilement être intégrées à des applications iOS, nous connaissons d'ailleurs plusieurs utilisations reconnues de ce genre.
+Les données disponibles via WMS peuvent facilement être intégrées à des applications iOS, nous connaissons d'ailleurs plusieurs utilisations à succès de ce genre.
 
+Pour information, plus de 400 couches sont rassemblées dans le WMS GetCapabilities:
 
+http://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
+
+Nous sommes également en train de rendre disponibles davantage de données météo dans la famille de standards OGC (i.e, WMS, WCS, WFS, SLD). Voir l'annonce de la 
+version GeoMet-Beta:
+
+http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html
+
+Les changements aux services web géospatiaux GeoMet-Beta seront annoncés via la liste de diffusion GeoMet-Info:
+
+http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
+
+Finallement, puisque GeoMet représente des couches en standards ouverts, les usagers ne sont pas affectés lorsque les données sous-jacentes sont modifiées: les méthodes 
+pour accéder aux données demeurent stables et fiables. GeoMet répond à plus d'1 million de requêtes quotidiennement et peut être utilisé librement en autant que la 
+source des données soit attribuée. Voir la licence ci-dessous pour les détails: 
+
+http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 ## Comment peut-on télécharger les données ?
+
+Le Service météorologique du Canada (SMC) a mis en place un fil de données annonçant les fichiers disponibles sur le Datamart. Ce fil de données
+utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). Il devient ainsi possible non seulement d'être avisé de la disponibilité des 
+produits sur le Datamart lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. Le service peut s'appliquer à une série spécifique de 
+fichiers (alertes météorologiques, observations, données de modèle, etc.) et ainsi viser seulement les produits d'intérêt pour l'usager.
+
+La documentation de ce service est disponible ici:
+http://dd.weather.gc.ca/doc/README_AMQP.txt
+
+Notez que la documentation originale mentionne le script "dd_subscribe" qui fonctionne à la fois avec Python2 et Python3, cependant nous allons migrer vers "sr_subscribe" 
+qui ne fonctionne qu'avec Python3. La documentation associée se trouve ici:
+
+http://metpx.sourceforge.net/sr_subscribe.1.html
+
+http://metpx.sourceforge.net/Install.html
 
 ## Peut-on avoir accès aux données radar ?
 
