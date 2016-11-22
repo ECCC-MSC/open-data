@@ -210,9 +210,30 @@ Notes:
 
 ## Comment être informé des changements aux bulletins ainsi qu'aux contenu et format de modèles ?
 
+Pour les bulletins de stations canadiennes, tout changement dans l'en-tête et le nom des stations est annoncé via ce que nous appelons les GENOT (GEneral NOTification) message.
+Nous avons une liste de diffusion pour distribuer les GENOTs, si cela vous intéresse, envoyez-nous votre adresse courriel et nous vous ajouterons à la liste de diffusion.
 
+Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez vous inscrire à la liste des GENOT 03. Vous pouvez trouver un exemple 
+d'un tel bulletin à l'adresse:
+
+http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
+
+Finalement, nous vous recommandons fortement de vous inscrire à la list de diffusion du Datamart afin d'être averti de toute mise à jour ou changement concernant la 
+disponibilité des données. Vous pouvez vous abonner ici:
+
+http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
+
+Merci d'utiliser l'adresse courriel ci-dessous pour toute question ou commentaire:
+
+ec.dps-client.ec@canada.ca
 
 ## Peut-on avoir un fil de données GRIB ?
+
+Environnement et changement climatique Canada offre un fil de données pour pousser chez le client les données PNT en format GRIB. Ce service est supporté 24/7 et le coût 
+dépend de la quantité de données demandées: le tarif de départ est de 500$ par mois + 500$ pour l'installation du fil de données jusqu'à 1G par jour.
+Ajouter 500$ par mois pour chaque Gb de données supplémentaires par jour.
+
+Merci de nous contacter si vous êtes intéressés par ce service.
 
 ## Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?
 
