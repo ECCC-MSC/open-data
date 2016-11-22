@@ -105,11 +105,112 @@ http://metpx.sourceforge.net/Install.html
 
 ## Peut-on avoir accès aux données radar ?
 
+Les données radar disponibles gratuitement sur le serveur de données ouvertes du SMC sont les images GIF. Les informations au sujet de ce service sont disponibles ici:
+
+http://dd.meteo.gc.ca/radar/doc/README_radar.txt
+
+Nous offrons également la mosaique radar nord-américaine via les services web géospatiaux WMS:
+
+http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
+
+La licence des termes d'utilisation pour ces produits se trouve ici:
+
+http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
+
+Aucun des points ci-dessus ne comprend les données brutes. Ceux-ci, ainsi que divers autres produits, sont fournis par un service à recouvrement de coûts. Dans le cadre 
+de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. Les termes sous lesquels ces produits sont fournis sont les mêmes
+que ceux décrits dans la licence ci-dessus.
+
+La documentation concernant les formats de données radar peut être consultée ici:
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf
+
+La documentation concernant les produits radar se trouve à l'adresse:
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
+
+Concernant les fils de données, les formats disponibles sont les suivants:
+
+    - NUMERICA (ASCII)
+    - Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart))
+    - Format brut IRIS 
+        Spécifications: http://www.vaisala.com/en/hydrology/offering/weatherradars/Pages/IRIS.aspx 
+
+Les détails concernant les frais sont les suivants:
+
+    - 1-5 radars (QC, Atl ou Pac région) : $1,600/mois
+    - 6-10 (toute région): $1,800/mois
+    - 11+: $2,000/mois
+    - Plus des frais fixes d'installation du fil de données de $2,000 
+    
+Ces tarifs sont donnés à titre indicatif seulement et sont sujets à changement.
+
+Concernant les tailles des fichiers:
+
+    - 1 heure de volume scan pour 1 radar sans précipitation représente environ 4.5 Mb
+    - 1 heure de volume scan pour 1 radar avec précipitation représente environ 13 Mb
+    
+Les chiffres ci-dessus dépendent des conditions météo et sont donnés qu'à titre de référence seulement.
+
 ## Peut-on accéder aux données radar archivées ?
+
+Environnement et changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à recouvrement de coût, nous
+chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+
+Les archives sont disponibles en format brut (IRIS) ou en format ASCII. Les informations concernant les formats et produits peuvent être consultées aux adresses:
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
+
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
+
+Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire
+parvenir à l'adresse: ec.dps-client.ec@canada.ca
+
+
+| Information | Valeur |
+|-------------|:-----:|
+|Noms des radars |       |       
+|Type de produits (Raw, CAPPI, PRECIP, ECHOTOP, etc.) |       |
+|Unités (dBZ, mm/hr) |       |
+|Format (GIF, NumericA, IRIS/MRO) |       |
+|Periode de temps (UTC) |       |
+|Fréquence (default: 10 minutes) |       |
+|Format de livraison (zip, tar, autre) |       |
+|Date de livraison désirée (quand?) |       |
+|Autres informations |       |
+|Coordonnées de facturation |      |
 
 ## Est ce que les prévisions historiques des modèles numériques sont disponibles ?
 
+Environnement et changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à recouvrement de coût, nous
+chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+
+Dès que nous recevons les détails des données demandées, nous produisons les archives en format GRIB et les envoyons aux usagers. Un estimé peut être fourni, une fois 
+les informations reçues. Selon la nature des requêtes, il faut compter quelques centaines de dollars.
+
+Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: ec.dps-client.ec@canada.ca
+
+| Information | Valeur |
+|-------------|:-----:|
+|Modèle (SGPD, SRPD, SHRPD, SPENA, autre) |       |       
+|Type de données (prévisions, analyses or cartes)  |       |
+|Variables (ex: WIND_TGL_40m) |       |
+|Dates (ex: 2006-01-01 à 2008-12-31 )  |       |
+|Heures des passes (ex: 00Z, 12Z) |     |
+|Heures des prévisions (e.g. 000, 003, 006) |       |
+|Couverture géographique (domaine lat/lon défini par l'usager, domaine disponible sur le Datamart)  |       |
+|Résolution spatiale horizontale (ex: 10km/0.24 degrés)  |       |
+|Niveaux (surface, niveaux de pression, altitude en mètres au dessus du sol) |        |
+|Mode de livraison | FTP  |
+|Nom et coordonnées de personne à facturer |    |
+
+Notes:
+- Les requêtes telles que "toutes les variables à tous les niveaux" ne sont pas acceptées. Merci de spécifier
+- Les archives remontent aux 5 dernières années, selon la disponibilité des données 
+
 ## Comment être informé des changements aux bulletins ainsi qu'aux contenu et format de modèles ?
+
+
 
 ## Peut-on avoir un fil de données GRIB ?
 
