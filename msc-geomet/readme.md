@@ -17,9 +17,56 @@ Table of Content
 	* manually updated table content updates from GeoMet’s GetCapabilities [TO DO, NOT AN ITEM]
 	* full list of layers only in get capabilities?
 	* add layers by model, layers by type; e.g. wind layers = global, regional, maximum gust, probabilities, and so on
-* Services
-	* Short description of WMS, WCS, WFS, SLD (copy from WOUDC)
-	* Link to layer list, give examples of requests and explain query parameters 
+	
+* [Services](#Services)
+	* [WMS](#WMS)
+	* [WFS](#WFS)
+	* [WCS](#WCS)
+	* [WPS](#WPS)
+    * [SLD](#SLD)
+* Link to layer list, give examples of requests and explain query parameters 
 * GeoMet-Info
+* Geomet-beta
 
 Salvage content from current GeoMet doc: http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
+
+## Services
+
+In addition to traditional data access mechanisms, GeoMet has made the archive available using geospatial web services adhering to publically available international standards. Web services are systems designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
+
+The GeoMet web services adhere to open standards ratified by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), and the [International Organization for Standardization (ISO)](http://www.isotc211.org/) which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in [World Meteorological Organization interoperability](http://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) as part of the [WMO Information System](http://www.wmo.int/pages/prog/www/WIS/) and are supported by numerous off the shelf open source or commercial tools.
+
+### WMS
+The [OGC Web Map Service](http://www.opengeospatial.org/standards/wms) provides a common interface to visualize geospatial data layers. Typical use of WMS includes simple visualization in web or desktop GIS applications via web friendly image formats such as PNG or JPEG.
+
+* Ex. http://geo.weather.gc.ca/geomet?version=1.1.1&service=WMS&request=GetCapabilities
+
+Version 1.1.1 & 1.3.0 are supported.
+
+### WFS
+
+The [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) provides a common interface to access geospatial data. Typical use of WFS includes custom query / raw access to geospatial features. The WOUDC WFS provides archive data in numerous formats, including Extended CSV, KML, CSV, GML, ESRI Shapefile, MapInfo, and GeoJSON.
+
+* Ex. http://geo.weather.gc.ca/geomet-beta?version=1.1.0&service=WFS&request=GetCapabilities
+
+Version 1.0.0 & 1.1.0 are supported.
+
+### WCS
+
+The [OGC Web Coverage Service](http://www.opengeospatial.org/standards/wcs) provides access to coverage data (raw) that is detailed which may be processed (interpolation, resizing, reprojection, etc.). It allows to choose portions of a layer based on spatial constraints and other criteria just like WMS and WFS.
+
+* Ex. http://geo.weather.gc.ca/geomet-beta?version=1.0.0&service=WCS&request=GetCapabilities
+
+Version 1.0.0 and 2.0.1 are supported.
+
+### WPS
+
+The [OGC Web Processing Service](http://www.opengeospatial.org/standards/wps) provides a common interface to define rules, inputs, outputs for geospatial processing / calculations. Typical use of WPS includes custom processes (buffer, overlay). It is not implemented yet in GeoMet.
+
+### SLD
+
+The [OGC Styled Layer Descriptor](http://www.opengeospatial.org/standards/sld) defines an encoding that extends the WMS standard to allow user-defined symbolization and coloring of geographic feature and coverage data.
+
+* Ex. http://geo.weather.gc.ca/geomet-beta?version=1.1.1&service=WMS&request=GetMap&bbox=-180,-90,180,90&layers=GDPS.ETA_TT&srs=EPSG:4326&height=600&width=800&format=png
+
+Simply add this to a regular GetMap request : sld=link_to_sld
