@@ -39,7 +39,11 @@ The GeoMet web services adhere to open standards ratified by the [Open Geospatia
 ### WMS
 The [OGC Web Map Service](http://www.opengeospatial.org/standards/wms) provides a common interface to visualize geospatial data layers. Typical use of WMS includes simple visualization in web or desktop GIS applications via web friendly image formats such as PNG or JPEG.
 
-* Ex. http://geo.weather.gc.ca/geomet?version=1.1.1&service=WMS&request=GetCapabilities
+Type of request : 
+* [GetCapabilities](http://geo.weather.gc.ca/geomet/?version=1.3.0&service=WMS&request=GetCapabilities)
+* [GetMap](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT)
+* [GetFeatureInfo](http://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&X=1&Y=1&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=CRS:84&BBOX=-73.5,45.6,-73.6,45.4&WIDTH=1&HEIGHT=1)
+* [GetLegendGraphic](http://geo.weather.gc.ca/geomet//?LANG=E%26SERVICE=WMS%26VERSION=1.1.1%26REQUEST=GetLegendGraphic%26STYLE=TEMPERATURE%26LAYER=GDPS.ETA_TT%26format=image/png)
 
 Version 1.1.1 & 1.3.0 are supported.
 
@@ -47,7 +51,11 @@ Version 1.1.1 & 1.3.0 are supported.
 
 The [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) provides a common interface to access geospatial data. Typical use of WFS includes custom query / raw access to geospatial features. The WOUDC WFS provides archive data in numerous formats, including Extended CSV, KML, CSV, GML, ESRI Shapefile, MapInfo, and GeoJSON.
 
-* Ex. http://geo.weather.gc.ca/geomet-beta?version=1.1.0&service=WFS&request=GetCapabilities
+Type of request :
+
+* [GetCapabilities](http://geo.weather.gc.ca/geomet/?version=1.1.0&service=WFS&request=GetCapabilities)
+* [GetFeature](http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=GetFeature&typename=CURRENT_CONDITIONS&SRS=EPSG:4326&BBOX=-73.6,45.4,-73.5,45.6)
+* [DescribeFeatureType](http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=DescribeFeatureType)
 
 Version 1.0.0 & 1.1.0 are supported.
 
@@ -55,7 +63,12 @@ Version 1.0.0 & 1.1.0 are supported.
 
 The [OGC Web Coverage Service](http://www.opengeospatial.org/standards/wcs) provides access to coverage data (raw) that is detailed which may be processed (interpolation, resizing, reprojection, etc.). It allows to choose portions of a layer based on spatial constraints and other criteria just like WMS and WFS.
 
-* Ex. http://geo.weather.gc.ca/geomet-beta?version=1.0.0&service=WCS&request=GetCapabilities
+Type of request : 
+* [GetCapabilities](http://geo.weather.gc.ca/geomet-beta?version=1.0.0&service=WCS&request=GetCapabilities)
+* [GetCoverage](http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=GetCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600)
+* [DescribeCoverage](http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=DescribeCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600)
+
+
 
 Version 1.0.0 and 2.0.1 are supported.
 
