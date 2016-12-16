@@ -67,20 +67,25 @@ Downloading data
 
 ### WMS 
 
-#### GetMap
+#### Display static map (GetMap)
 
-http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT
+http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&format=PNG
 
-#### GetFeatureInfo
+In this example, we can see a map of the layer GPDS.ETA_TT which correspond to temperature in an extent of the whole world on a png of 800 x 600 pixels.
+
+#### Get raw data on a specific pixel (GetFeatureInfo)
 
 http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1
 
-#### GetLegendGraphic
+In this example, we can get raw data values of layer GDPS.ETA_TT which correspond to temperature on a specific area determined by the bounding box. In that area, we select pixels (x,y) based on their size (width, height). Note that pixel (0,0) is at the top left. 
+
+#### Display legend of a layer (GetLegendGraphic)
 
 GetLegendGraphic request can be found in [GetCapabilities](http://geo.weather.gc.ca/geomet/?version=1.3.0&service=WMS&request=GetCapabilities)
 
 http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetLegendGraphic&style=TEMPERATURE&layer=GDPS.ETA_TT&format=image/png
 
+In this example, we get the legend for a layer with the specified style, which can be customize using a SLD. If no style is specified, it's the default one. Otherwise, default style can be directly specified with style=DEFAULT
 
 ### WFS
 
@@ -88,22 +93,25 @@ http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetLegendGrap
 
 http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=GetFeature&typename=CURRENT_CONDITIONS&SRS=EPSG:4326&BBOX=-73.6,45.4,-73.5,45.6
 
-#### DescribeFeatureType
+#### Get description of features in vector layers (DescribeFeatureType)
 
 http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=DescribeFeatureType
 
 ### WCS
 
-#### GetCoverage
+#### Get raw data on a specific area (GetCoverage)
 
 http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=GetCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600
+
+In this example, we get raw data on a specified extent for the layer GDPS.ETA_TT which correspond to temperature. In GTiff format, values will be in RGB code, but if format is GEOTIFF_16, it will be the raw values.
 
 #### DescribeCoverage
 
 http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=DescribeCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600
 
+This example delivers XML-encoded descriptions of coverage such as their location, type of projection supported, interpolation, etc.
 
-### Time series
+### Use time series
 
 TIME parameter is use to get information on layer on a specific time, multiple time values or time range. In GetCapabilities, information on time can be retrieve on time enabled layers.
 
@@ -115,10 +123,10 @@ If an incorrect time is specified in a request, it will return an error message.
 
 **Multiple times** : http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT,GDPS.ETA_UU&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT,GDPS.ETA_UU&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1&time=2016-12-16T12:00:00Z,2016-12-15T16:00:00Z,2016-12-16T18:00:00Z
 
-**Range time** : http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT,GDPS.ETA_UU&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT,GDPS.ETA_UU&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1&time=2016-12-16T12:00:00Z/2016-12-17T12:00:00Z
+**Time range** : http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT,GDPS.ETA_UU&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT,GDPS.ETA_UU&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1&time=2016-12-16T12:00:00Z/2016-12-17T12:00:00Z
 
 
-### Desktop software
+### Use GeoMet with desktop software
 
 #### ArcGIS
 
@@ -139,10 +147,4 @@ It it the same steps for WFS and WCS.
 #### Google Earth
 
 Select Add then Image Overlay. Go in Refresh, then click on WMS parameters.Add URL (http://geoweather.gc.ca/geomet/).
-
-#### SPI
-
-Within the Data digging section, use the + button. Enter a name for the service and select the WMS type. You will then be able to enter the server URL (http://geo.weather.gc.ca/geomet/) which you want to access.
-Once added, the server will appear in the data tree where you will be able to parse it's available layers. Double click on to display it in SPI. You can select the style and timestep to display int the raster parameter if available. 
-
 
