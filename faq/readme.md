@@ -24,6 +24,7 @@ Table of Content
 * [Why not make just one big GRIB file with all the variables?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
 * [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
 * [Can I have access to warnings?](#can-i-have-access-to-warnings)
+* [Which are the main differences between RSS ATOM feeds and AMQP protocol to consume alerts?](#Which-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-consume-alerts)
 * [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
 * [Can I have satellite images?](#can-i-have-satellite-images)
 * [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
@@ -67,7 +68,7 @@ Data available through WMS can easily be integrated into iOS applications and we
 
 For your information, more than 400 layers are available in the WMS GetCapabilities:
 
-http://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
+http://geo.weather.gc.ca/geomet/?lang=F&service=WMS&request=GetCapabilities
 
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD). 
 See the announcement of the GeoMet-Beta version: 
@@ -278,6 +279,16 @@ Pelmorex Media Inc. also has a service for sending ECCC Warnings. You can find t
 
 https://alerts.pelmorex.com/ 
 
+## Which are the main differences between RSS ATOM feeds and AMQP protocol to consume alerts?
+
+The main difference between RSS feeds (ATOM) and AMQP is that in the case of the RSS feed, user needs to send a request to know if new files 
+are available, whereas with AMQP, user is advised without sending any request.
+
+If one wants to make an analogy, RSS feeds may be considering as a mailman who deposes letters in the mailbox, whereas AMQP may be considering as a deliver 
+who rings at the door to give the postal package.
+
+We recommend to use the AMQP protocol if it is important for users to receive the announcement and data once available, also AMQP is a longer-term solution.
+
 ## Can I have a shapefile of the warning regions?
 
 You can find the shapefiles of the public forecast regions here (pick the latest version):
@@ -332,7 +343,7 @@ http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt
 
 ## Can I have rainfall amount data?
 
-Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may be interested in the FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct RDPS (Regional Deterministic rediction System) output . 
+Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may be interested in the FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct RDPS (Regional Deterministic Prediction System) output . 
 Each of these bulletins are produced specifically for individual Canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others. 
 Forecast weather elements may also differ from message to message.
 
