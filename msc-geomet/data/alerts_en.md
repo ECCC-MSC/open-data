@@ -2,5 +2,5 @@
 
 Id | Name | Web Services | Styles | Notes
 ---|------|--------------|--------|------
-ALERTS | Weather Alerts | -WFS,-       | **-DEFAULT**: ALERTS,-ALERTE |      
+ALERTS | Weather Alerts | -WFS, -WMS   | DEFAULT: ALERTS |      
 

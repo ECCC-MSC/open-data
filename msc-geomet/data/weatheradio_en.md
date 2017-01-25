@@ -2,5 +2,5 @@
 
 Id | Name | Web Services | Styles | Notes
 ---|------|--------------|--------|------
-WEATHERADIO | Canadian Weatheradio network coverage | -WMS,-       | **-DEFAULT**: WEATHERADIO,-RADIOMETE |      
+WEATHERADIO | Canadian Weatheradio network coverage | -WMS, -WCS   | DEFAULT: WEATHERADIO |      
 
