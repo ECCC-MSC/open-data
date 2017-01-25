@@ -1,0 +1,9 @@
+# Radar Table
+
+Id | Name | Web Services | Styles | Notes
+---|------|--------------|--------|------
+RADAR_RRAI | RADAR - Radar precipitation rate (Rain) | -            | **-DEFAULT**: RADARURPPRECIPR8-LINEAR,-RADARURPPRECIPR,-RADARURPPRECIPR-LINEAR,-RADARURPPRECIPR |      
+RADAR_RSNO | RADAR - Radar precipitation rate (Snow) | -            | **-DEFAULT**: RADARURPPRECIPS8-LINEAR,-RADARURPPRECIPS,-RADARURPPRECIPS-LINEAR,-RADARURPPRECIPS |      
+RADAR_RDBR | RADAR - Radar reflectivity (Rain) | -            | **-DEFAULT**: RADAR,-RADARURPREFLECTR,-RADARURPREFLECTR-LINEAR,-RADARURPREFLECTR8,-RADARURPREFLECTR8-LINEA |      
+RADAR_RDBS | RADAR - Radar reflectivity (Snow) | -            | **-DEFAULT**: RADAR,-RADARURPREFLECTS,-RADARURPREFLECTS-LINEAR,-RADARURPREFLECTS8,-RADARURPREFLECTS8-LINEA |      
+
