@@ -1,6 +1,6 @@
 # Weather
 
-Id                 | Nom                  | Services web | Styles           | Notes
--------------------|----------------------|--------------|------------------|------
-CURRENT_CONDITIONS | Conditions actuelles | WFS, WMS     | DEFAULT: WEATHER |      
+Nom                  | Id                 | Services web | Styles           | Notes
+---------------------|--------------------|--------------|------------------|------
+Conditions actuelles | CURRENT_CONDITIONS | WFS, WMS     | DEFAULT: WEATHER |      
 

@@ -1,46 +1,46 @@
 # RDPS Table
 
-Id                | Name                                                 | Web Services | Styles                                                                                     | Notes
-------------------|------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------|------
-RDPS.ETA_NT       | RDPS.ETA - Total cloud cover (fraction)              | WMS, WCS     | DEFAULT: CLOUD                                                                             |      
-RDPS.ETA_ES       | RDPS.ETA - Dew point depression                      | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.ETA_TD       | RDPS.ETA - Dew point temperature                     | WMS, WCS     | DEFAULT: DEWPOINT                                                                          |      
-RDPS.ETA_RT       | RDPS.ETA - Instantaneous precipitation rate (m/s)    | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                                      |      
-RDPS.ETA_TT       | RDPS.ETA - Air temperature                           | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR        |      
-RDPS.ETA_GZ       | RDPS.ETA - Geopotential Height                       | WMS, WCS     | DEFAULT: GPHEIGHT                                                                          |      
-RDPS.ETA_HU       | RDPS.ETA - Specific Humidity                         | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
-RDPS.ETA_FR       | RDPS.ETA - Freezing rain accumulation                | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
-RDPS.ETA_P0       | RDPS.ETA - Surface pressure                          | WMS, WCS     | DEFAULT: PRESSURE                                                                          |      
-RDPS.ETA_PR       | RDPS.ETA - Precipitation accumulation                | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
-RDPS.ETA_RN       | RDPS.ETA - Rain accumulation                         | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
-RDPS.ETA_SN       | RDPS.ETA - Snow accumulation                         | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                                 |      
-RDPS.ETA_I0       | RDPS.ETA - Surface and soil temperatures (Deep/Mean) | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                                |      
-RDPS.ETA_PN       | RDPS.ETA - Sea level pressure (contour)              | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                    |      
-RDPS.ETA_PN-SLP   | RDPS.ETA - Sea level pressure                        | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                                      |      
-RDPS.ETA_UU       | RDPS.ETA - Winds                                     | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_UU.1000 | RDPS.PRES - Winds at 1000.0 mb                       | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_UU.925  | RDPS.PRES - Winds at 925.0 mb                        | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_UU.850  | RDPS.PRES - Winds at 850.0 mb                        | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_UU.700  | RDPS.PRES - Winds at 700.0 mb                        | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_UU.500  | RDPS.PRES - Winds at 500.0 mb                        | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
-RDPS.PRES_TT.1000 | RDPS.PRES - Air temperature at 1000.0 mb             | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
-RDPS.PRES_TT.925  | RDPS.PRES - Air temperature at 925.0 mb              | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
-RDPS.PRES_TT.850  | RDPS.PRES - Air temperature at 850.0 mb              | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
-RDPS.PRES_TT.700  | RDPS.PRES - Air temperature at 700.0 mb              | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
-RDPS.PRES_TT.500  | RDPS.PRES - Air temperature at 500.0 mb              | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
-RDPS.PRES_GZ.1000 | RDPS.PRES - Geopotential height at 1000.0 mb         | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-1000mb-NONLINEAR                                               |      
-RDPS.PRES_GZ.925  | RDPS.PRES - Geopotential height at 925.0 mb          | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-925mb-NONLINEAR                                                |      
-RDPS.PRES_GZ.850  | RDPS.PRES - Geopotential height at 850.0 mb          | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-850mb-NONLINEAR                                                |      
-RDPS.PRES_GZ.700  | RDPS.PRES - Geopotential height at 700.0 mb          | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-700mb-NONLINEAR                                                |      
-RDPS.PRES_GZ.500  | RDPS.PRES - Geopotential height at 500.0 mb          | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-500mb-NONLINEAR                                                |      
-RDPS.PRES_ES.1000 | RDPS.PRES - Dew point depression at 1000.0 mb        | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.PRES_ES.925  | RDPS.PRES - Dew point depression at 925.0 mb         | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.PRES_ES.850  | RDPS.PRES - Dew point depression at 850.0 mb         | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.PRES_ES.700  | RDPS.PRES - Dew point depression at 700.0 mb         | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.PRES_ES.500  | RDPS.PRES - Dew point depression at 500.0 mb         | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
-RDPS.PRES_HU.1000 | RDPS.PRES - Specific humidity at 1000.0 mb           | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
-RDPS.PRES_HU.925  | RDPS.PRES - Specific humidity at 925.0 mb            | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
-RDPS.PRES_HU.850  | RDPS.PRES - Specific humidity at 850.0 mb            | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
-RDPS.PRES_HU.700  | RDPS.PRES - Specific humidity at 700.0 mb            | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
-RDPS.PRES_HU.500  | RDPS.PRES - Specific humidity at 500.0 mb            | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+Name                                                 | Id                | Web Services | Styles                                                                                     | Notes
+-----------------------------------------------------|-------------------|--------------|--------------------------------------------------------------------------------------------|------
+RDPS.ETA - Total cloud cover (fraction)              | RDPS.ETA_NT       | WMS, WCS     | DEFAULT: CLOUD                                                                             |      
+RDPS.ETA - Dew point depression                      | RDPS.ETA_ES       | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.ETA - Dew point temperature                     | RDPS.ETA_TD       | WMS, WCS     | DEFAULT: DEWPOINT                                                                          |      
+RDPS.ETA - Instantaneous precipitation rate (m/s)    | RDPS.ETA_RT       | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                                      |      
+RDPS.ETA - Air temperature                           | RDPS.ETA_TT       | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR        |      
+RDPS.ETA - Geopotential Height                       | RDPS.ETA_GZ       | WMS, WCS     | DEFAULT: GPHEIGHT                                                                          |      
+RDPS.ETA - Specific Humidity                         | RDPS.ETA_HU       | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+RDPS.ETA - Freezing rain accumulation                | RDPS.ETA_FR       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
+RDPS.ETA - Surface pressure                          | RDPS.ETA_P0       | WMS, WCS     | DEFAULT: PRESSURE                                                                          |      
+RDPS.ETA - Precipitation accumulation                | RDPS.ETA_PR       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
+RDPS.ETA - Rain accumulation                         | RDPS.ETA_RN       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                          |      
+RDPS.ETA - Snow accumulation                         | RDPS.ETA_SN       | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                                 |      
+RDPS.ETA - Surface and soil temperatures (Deep/Mean) | RDPS.ETA_I0       | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                                |      
+RDPS.ETA - Sea level pressure (contour)              | RDPS.ETA_PN       | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                    |      
+RDPS.ETA - Sea level pressure                        | RDPS.ETA_PN-SLP   | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                                      |      
+RDPS.ETA - Winds                                     | RDPS.ETA_UU       | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Winds at 1000.0 mb                       | RDPS.PRES_UU.1000 | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Winds at 925.0 mb                        | RDPS.PRES_UU.925  | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Winds at 850.0 mb                        | RDPS.PRES_UU.850  | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Winds at 700.0 mb                        | RDPS.PRES_UU.700  | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Winds at 500.0 mb                        | RDPS.PRES_UU.500  | WFS, WMS     | DEFAULT: WINDARROW                                                                         |      
+RDPS.PRES - Air temperature at 1000.0 mb             | RDPS.PRES_TT.1000 | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
+RDPS.PRES - Air temperature at 925.0 mb              | RDPS.PRES_TT.925  | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
+RDPS.PRES - Air temperature at 850.0 mb              | RDPS.PRES_TT.850  | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
+RDPS.PRES - Air temperature at 700.0 mb              | RDPS.PRES_TT.700  | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
+RDPS.PRES - Air temperature at 500.0 mb              | RDPS.PRES_TT.500  | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR |      
+RDPS.PRES - Geopotential height at 1000.0 mb         | RDPS.PRES_GZ.1000 | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-1000mb-NONLINEAR                                               |      
+RDPS.PRES - Geopotential height at 925.0 mb          | RDPS.PRES_GZ.925  | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-925mb-NONLINEAR                                                |      
+RDPS.PRES - Geopotential height at 850.0 mb          | RDPS.PRES_GZ.850  | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-850mb-NONLINEAR                                                |      
+RDPS.PRES - Geopotential height at 700.0 mb          | RDPS.PRES_GZ.700  | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-700mb-NONLINEAR                                                |      
+RDPS.PRES - Geopotential height at 500.0 mb          | RDPS.PRES_GZ.500  | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-500mb-NONLINEAR                                                |      
+RDPS.PRES - Dew point depression at 1000.0 mb        | RDPS.PRES_ES.1000 | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.PRES - Dew point depression at 925.0 mb         | RDPS.PRES_ES.925  | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.PRES - Dew point depression at 850.0 mb         | RDPS.PRES_ES.850  | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.PRES - Dew point depression at 700.0 mb         | RDPS.PRES_ES.700  | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.PRES - Dew point depression at 500.0 mb         | RDPS.PRES_ES.500  | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                       |      
+RDPS.PRES - Specific humidity at 1000.0 mb           | RDPS.PRES_HU.1000 | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+RDPS.PRES - Specific humidity at 925.0 mb            | RDPS.PRES_HU.925  | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+RDPS.PRES - Specific humidity at 850.0 mb            | RDPS.PRES_HU.850  | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+RDPS.PRES - Specific humidity at 700.0 mb            | RDPS.PRES_HU.700  | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
+RDPS.PRES - Specific humidity at 500.0 mb            | RDPS.PRES_HU.500  | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                                      |      
 

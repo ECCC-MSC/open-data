@@ -1,6 +1,6 @@
 # Weatheradio
 
-Id          | Nom                                      | Services web | Styles               | Notes
-------------|------------------------------------------|--------------|----------------------|------
-WEATHERADIO | Couverture du réseau Radiométéo canadien | WMS, WCS     | DEFAULT: WEATHERADIO |      
+Nom                                      | Id          | Services web | Styles               | Notes
+-----------------------------------------|-------------|--------------|----------------------|------
+Couverture du réseau Radiométéo canadien | WEATHERADIO | WMS, WCS     | DEFAULT: WEATHERADIO |      
 

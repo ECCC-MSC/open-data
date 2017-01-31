@@ -1,6 +1,6 @@
 # Alerts Table
 
-Id     | Name           | Web Services | Styles          | Notes
--------|----------------|--------------|-----------------|------
-ALERTS | Weather Alerts | WFS, WMS     | DEFAULT: ALERTS |      
+Name           | Id     | Web Services | Styles          | Notes
+---------------|--------|--------------|-----------------|------
+Weather Alerts | ALERTS | WFS, WMS     | DEFAULT: ALERTS |      
 

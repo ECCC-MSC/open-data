@@ -1,10 +1,10 @@
 # GIOPS Table
 
-Id               | Name                                               | Web Services | Styles                | Notes
------------------|----------------------------------------------------|--------------|-----------------------|------
-OCEAN.GIOPS_UUI  | OCEAN.GIOPS - Ice velocity                         | WFS, WMS     | DEFAULT: SEA_ICEARROW |      
-OCEAN.GIOPS_UU2W | OCEAN.GIOPS - Ocean current                        | WFS, WMS     | DEFAULT: SEA_CURARROW |      
-OCEAN.GIOPS_GL   | OCEAN.GIOPS - Sea ice fraction                     | WMS, WCS     | DEFAULT: SEA_ICECONC  |      
-OCEAN.GIOPS_GE   | OCEAN.GIOPS - Volume of sea ice per unit grid cell | WMS, WCS     | DEFAULT: SEA_ICETHICK |      
-OCEAN.GIOPS_TM2  | OCEAN.GIOPS - Sea temperature                      | WMS, WCS     | DEFAULT: SEA_TEMPSURF |      
+Name                                               | Id               | Web Services | Styles                | Notes
+---------------------------------------------------|------------------|--------------|-----------------------|------
+OCEAN.GIOPS - Ice velocity                         | OCEAN.GIOPS_UUI  | WFS, WMS     | DEFAULT: SEA_ICEARROW |      
+OCEAN.GIOPS - Ocean current                        | OCEAN.GIOPS_UU2W | WFS, WMS     | DEFAULT: SEA_CURARROW |      
+OCEAN.GIOPS - Sea ice fraction                     | OCEAN.GIOPS_GL   | WMS, WCS     | DEFAULT: SEA_ICECONC  |      
+OCEAN.GIOPS - Volume of sea ice per unit grid cell | OCEAN.GIOPS_GE   | WMS, WCS     | DEFAULT: SEA_ICETHICK |      
+OCEAN.GIOPS - Sea temperature                      | OCEAN.GIOPS_TM2  | WMS, WCS     | DEFAULT: SEA_TEMPSURF |      
 

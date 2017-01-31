@@ -1,6 +1,6 @@
 # Alertes
 
-Id     | Nom           | Services web | Styles          | Notes
--------|---------------|--------------|-----------------|------
-ALERTS | Alertes météo | WFS, WMS     | DEFAULT: ALERTS |      
+Nom           | Id     | Services web | Styles          | Notes
+--------------|--------|--------------|-----------------|------
+Alertes météo | ALERTS | WFS, WMS     | DEFAULT: ALERTS |      
 

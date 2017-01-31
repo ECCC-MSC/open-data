@@ -1,38 +1,38 @@
 # HRDPS Table
 
-Id                       | Name                                                          | Web Services | Styles                                                                              | Notes
--------------------------|---------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------|------
-HRDPS.CONTINENTAL_GZ     | HRDPS.CONTINENTAL - Geopotential height                       | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-NONLINEAR                                               |      
-HRDPS.CONTINENTAL_UU     | HRDPS.CONTINENTAL - Winds                                     | WFS, WMS     | DEFAULT: WINDARROW                                                                  |      
-HRDPS.CONTINENTAL_NT     | HRDPS.CONTINENTAL - Total cloud cover (fraction)              | WMS, WCS     | DEFAULT: CLOUD                                                                      |      
-HRDPS.CONTINENTAL_TT     | HRDPS.CONTINENTAL - Air temperature                           | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR |      
-HRDPS.CONTINENTAL_TD     | HRDPS.CONTINENTAL - Dew point temperature                     | WMS, WCS     | DEFAULT: DEWPOINT                                                                   |      
-HRDPS.CONTINENTAL_HU     | HRDPS.CONTINENTAL - Specific Humidity                         | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                               |      
-HRDPS.CONTINENTAL_ES     | HRDPS.CONTINENTAL - Dew point depression                      | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                |      
-HRDPS.CONTINENTAL_P0     | HRDPS.CONTINENTAL - Surface pressure                          | WMS, WCS     | DEFAULT: PRESSURE                                                                   |      
-HRDPS.CONTINENTAL_PR     | HRDPS.CONTINENTAL - Precipitation accumulation                | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.CONTINENTAL_RT     | HRDPS.CONTINENTAL - Instantaneous precipitation rate (m/s)    | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                               |      
-HRDPS.CONTINENTAL_RN     | HRDPS.CONTINENTAL - Rain accumulation                         | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.CONTINENTAL_FR     | HRDPS.CONTINENTAL - Freezing rain accumulation                | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.CONTINENTAL_SN     | HRDPS.CONTINENTAL - Snow accumulation                         | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                          |      
-HRDPS.CONTINENTAL_I0     | HRDPS.CONTINENTAL - Surface and soil temperatures (Deep/Mean) | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                         |      
-HRDPS.CONTINENTAL_HR     | HRDPS.CONTINENTAL - Relative humidity                         | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR                                                         |      
-HRDPS.CONTINENTAL_PN     | HRDPS.CONTINENTAL - Sea level pressure (contour)              | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                             |      
-HRDPS.CONTINENTAL_PN-SLP | HRDPS.CONTINENTAL - Sea level pressure                        | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                               |      
-HRDPS.NORTH_UU           | HRDPS.NORTH - Winds                                           | WFS, WMS     | DEFAULT: WINDARROW                                                                  |      
-HRDPS.NORTH_NT           | HRDPS.NORTH - Total cloud cover (fraction)                    | WMS, WCS     | DEFAULT: CLOUD                                                                      |      
-HRDPS.NORTH_TT           | HRDPS.NORTH - Air temperature                                 | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR |      
-HRDPS.NORTH_TD           | HRDPS.NORTH - Dew point temperature                           | WMS, WCS     | DEFAULT: DEWPOINT                                                                   |      
-HRDPS.NORTH_HU           | HRDPS.NORTH - Specific Humidity                               | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                               |      
-HRDPS.NORTH_ES           | HRDPS.NORTH - Dew point depression                            | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                |      
-HRDPS.NORTH_P0           | HRDPS.NORTH - Surface pressure                                | WMS, WCS     | DEFAULT: PRESSURE                                                                   |      
-HRDPS.NORTH_PR           | HRDPS.NORTH - Precipitation accumulation                      | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.NORTH_RT           | HRDPS.NORTH - Instantaneous precipitation rate (m/s)          | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                               |      
-HRDPS.NORTH_RN           | HRDPS.NORTH - Rain accumulation                               | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.NORTH_FR           | HRDPS.NORTH - Freezing rain accumulation                      | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
-HRDPS.NORTH_SN           | HRDPS.NORTH - Snow accumulation                               | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                          |      
-HRDPS.NORTH_I0           | HRDPS.NORTH - Surface and soil temperatures (Deep/Mean)       | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                         |      
-HRDPS.NORTH_HR           | HRDPS.NORTH - Relative humidity                               | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR                                                         |      
-HRDPS.NORTH_PN           | HRDPS.NORTH - Sea level pressure (contour)                    | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                             |      
-HRDPS.NORTH_PN-SLP       | HRDPS.NORTH - Sea level pressure                              | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                               |      
+Name                                                          | Id                       | Web Services | Styles                                                                              | Notes
+--------------------------------------------------------------|--------------------------|--------------|-------------------------------------------------------------------------------------|------
+HRDPS.CONTINENTAL - Geopotential height                       | HRDPS.CONTINENTAL_GZ     | WMS, WCS     | DEFAULT: GEOPOTENTIELHEIGHT-NONLINEAR                                               |      
+HRDPS.CONTINENTAL - Winds                                     | HRDPS.CONTINENTAL_UU     | WFS, WMS     | DEFAULT: WINDARROW                                                                  |      
+HRDPS.CONTINENTAL - Total cloud cover (fraction)              | HRDPS.CONTINENTAL_NT     | WMS, WCS     | DEFAULT: CLOUD                                                                      |      
+HRDPS.CONTINENTAL - Air temperature                           | HRDPS.CONTINENTAL_TT     | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR |      
+HRDPS.CONTINENTAL - Dew point temperature                     | HRDPS.CONTINENTAL_TD     | WMS, WCS     | DEFAULT: DEWPOINT                                                                   |      
+HRDPS.CONTINENTAL - Specific Humidity                         | HRDPS.CONTINENTAL_HU     | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                               |      
+HRDPS.CONTINENTAL - Dew point depression                      | HRDPS.CONTINENTAL_ES     | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                |      
+HRDPS.CONTINENTAL - Surface pressure                          | HRDPS.CONTINENTAL_P0     | WMS, WCS     | DEFAULT: PRESSURE                                                                   |      
+HRDPS.CONTINENTAL - Precipitation accumulation                | HRDPS.CONTINENTAL_PR     | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.CONTINENTAL - Instantaneous precipitation rate (m/s)    | HRDPS.CONTINENTAL_RT     | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                               |      
+HRDPS.CONTINENTAL - Rain accumulation                         | HRDPS.CONTINENTAL_RN     | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.CONTINENTAL - Freezing rain accumulation                | HRDPS.CONTINENTAL_FR     | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.CONTINENTAL - Snow accumulation                         | HRDPS.CONTINENTAL_SN     | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                          |      
+HRDPS.CONTINENTAL - Surface and soil temperatures (Deep/Mean) | HRDPS.CONTINENTAL_I0     | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                         |      
+HRDPS.CONTINENTAL - Relative humidity                         | HRDPS.CONTINENTAL_HR     | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR                                                         |      
+HRDPS.CONTINENTAL - Sea level pressure (contour)              | HRDPS.CONTINENTAL_PN     | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                             |      
+HRDPS.CONTINENTAL - Sea level pressure                        | HRDPS.CONTINENTAL_PN-SLP | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                               |      
+HRDPS.NORTH - Winds                                           | HRDPS.NORTH_UU           | WFS, WMS     | DEFAULT: WINDARROW                                                                  |      
+HRDPS.NORTH - Total cloud cover (fraction)                    | HRDPS.NORTH_NT           | WMS, WCS     | DEFAULT: CLOUD                                                                      |      
+HRDPS.NORTH - Air temperature                                 | HRDPS.NORTH_TT           | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPSUMMER, TEMPWINTER, TEMPERATURE-LINEAR |      
+HRDPS.NORTH - Dew point temperature                           | HRDPS.NORTH_TD           | WMS, WCS     | DEFAULT: DEWPOINT                                                                   |      
+HRDPS.NORTH - Specific Humidity                               | HRDPS.NORTH_HU           | WMS, WCS     | DEFAULT: HUMIDITYSPEC                                                               |      
+HRDPS.NORTH - Dew point depression                            | HRDPS.NORTH_ES           | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                |      
+HRDPS.NORTH - Surface pressure                                | HRDPS.NORTH_P0           | WMS, WCS     | DEFAULT: PRESSURE                                                                   |      
+HRDPS.NORTH - Precipitation accumulation                      | HRDPS.NORTH_PR           | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.NORTH - Instantaneous precipitation rate (m/s)          | HRDPS.NORTH_RT           | WMS, WCS     | DEFAULT: PRECIPPRTMMH                                                               |      
+HRDPS.NORTH - Rain accumulation                               | HRDPS.NORTH_RN           | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.NORTH - Freezing rain accumulation                      | HRDPS.NORTH_FR           | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR                                   |      
+HRDPS.NORTH - Snow accumulation                               | HRDPS.NORTH_SN           | WMS, WCS     | DEFAULT: PRECIPSNOW-LINEAR                                                          |      
+HRDPS.NORTH - Surface and soil temperatures (Deep/Mean)       | HRDPS.NORTH_I0           | WMS, WCS     | DEFAULT: TEMPSOIL-NONLINEAR                                                         |      
+HRDPS.NORTH - Relative humidity                               | HRDPS.NORTH_HR           | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR                                                         |      
+HRDPS.NORTH - Sea level pressure (contour)                    | HRDPS.NORTH_PN           | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                             |      
+HRDPS.NORTH - Sea level pressure                              | HRDPS.NORTH_PN-SLP       | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH                               |      
 
