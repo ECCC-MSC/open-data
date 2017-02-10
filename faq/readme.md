@@ -68,7 +68,7 @@ Data available through WMS can easily be integrated into iOS applications and we
 
 For your information, more than 400 layers are available in the WMS GetCapabilities:
 
-http://geo.weather.gc.ca/geomet/?lang=F&service=WMS&request=GetCapabilities
+http://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities
 
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD). 
 See the announcement of the GeoMet-Beta version: 
@@ -121,7 +121,7 @@ As part of this service, we push data to your FTP server and provide 24/7 suppor
 
 Documentation about radar formats can be found at the following location:
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf 
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
 
 Documentation about radar products can be found at the following location:
 
