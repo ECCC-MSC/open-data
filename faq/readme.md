@@ -23,6 +23,7 @@ Table of Content
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
 * [Why not make just one big GRIB file with all the variables?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
 * [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
+* [Can I have buoys data?](#can-i-have-buoys-data)
 * [Can I have access to warnings?](#can-i-have-access-to-warnings)
 * [Which are the main differences between RSS ATOM feeds and AMQP protocol to consume alerts?](#Which-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-consume-alerts)
 * [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
@@ -254,6 +255,24 @@ http://dd.meteo.gc.ca/observations/doc/README_SWOB.txt
 The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
 
 http://dd.meteo.gc.ca/observations/doc/README_observations.txt
+
+## Can I have buoys data?
+
+The buoys observations are available on the Canadian Coast Guard web site here:
+
+http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/msc-smc/index-eng.html
+
+Informations regarding drifting buoys are available here: 
+
+http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/drib-bder/index-eng.htm
+
+You can also retrieve the buoys alphanumeric bulletin on the Datamart. The buoys header are SM/SN/SIVD17. They are available in the "bulletins" directory:
+
+http://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt
+
+Since there is a lot of bulletins there, you may want to use the bulletin search tool:
+
+http://dd.weather.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf
 
 ## Can I have access to weather warnings?
 
