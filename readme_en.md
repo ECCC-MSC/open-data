@@ -32,6 +32,7 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
         * ...
     * Other datasets
       * Forecast polygons
+      * Lightning strikes
       * Weatheradio
       * ...
 4. Data access
@@ -45,7 +46,6 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
           * AMQP: real-time data push notification and retrieval
         * Support
         * dd_info
-
     * [MSC GeoMet](msc-geomet)
         * Short description: MSC GeoMet, Interactively accessing MSC data via geospatial web services
         * Geospatial web services
@@ -55,7 +55,8 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
           * Table of Layer groups (list of first level, e.g. GDPS, GIOPS, radar, AQHI, Citypage, etc) with description, formats available (e.g. WMS: styles, WFS: formats, WCS: formats) as columns...
         * Support
         * GeoMet-Info
-
+    * Archived data
+    * Dedicated data feed
 6. [How to: documented examples for frequent use cases](how-to)
     * Short description + disclaimer that we don't endorse any software
     * Viewing data
@@ -81,8 +82,5 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
 		* ASCII
 
 7. [FAQ](faq)
-    * Access to archived data
-    * Access to other dataset
-        * Lightning data
 
 8. [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
