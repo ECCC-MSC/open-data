@@ -21,15 +21,17 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
     * Weather observations
       * Weather radar
       * Observations at stations
+      * ...
     * Numerical Weather Prediction
       * How it works
         * Weather variables, MR, FH, FHI, extent
-      * Deterministic
-        * GDPS
-        * ...
-      * Probabilistic
-        * GEPS
-        * ...
+        * Summary of systems (table with generic characteristics)
+          * Deterministic
+            * GDPS
+            * ...
+          * Probabilistic
+            * GEPS
+            * ...
     * Other datasets
       * Forecast polygons
       * Lightning strikes
@@ -57,30 +59,24 @@ Short description: access MSC public data, free of charge, acknowledge the sourc
         * GeoMet-Info
     * Archived data
     * Dedicated data feed
-6. [How to: documented examples for frequent use cases](how-to)
+5. [How to: documented examples for frequent use cases](how-to)
     * Short description + disclaimer that we don't endorse any software
     * Viewing data
-	    * Static
 		* Static maps over an area (habillées ou non)
 		* Time series
-	    * I want to interactively view the weather data
+	    * Interactively view the weather data
       * in ArcGIS Online
 		* On the web
 		* On your own web page
 			* in GoC OpenMaps (Federal Government only)
-			* In a desktop software, such as QGIS and Google Earth
-			* On a mobile phone
+		* In a desktop software, such as QGIS and Google Earth
+		* On a mobile phone
     * Downloading data
         * AMQP, wget
 			* Pattern matching and triggers (on part, on file, on message)
 			* Working examples of retrieving MSC data with AMQP
         * Vector data in WFS
-		      * link to list of WFS accessible layers
 		* Raster data in WCS
-		  * link to list of WCS accessible layers
 		* Time series
-		* ASCII
-
-7. [FAQ](faq)
-
-8. [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
+6. [FAQ](faq)
+7. [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
