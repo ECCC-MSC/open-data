@@ -2,15 +2,15 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme.md) > MSC Data
+[TOC](../readme_en.md) > Metadata
 
 
-MSC Data
+Metadata
 ========
 
-Short description...
+Short description
 
 Table of Content
 ----------------
 
-* GRIB2? etc
+later

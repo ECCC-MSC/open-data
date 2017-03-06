@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme.md) > License
+[TOC](../readme_en.md) > License
 
 
 MSC Public Data License
