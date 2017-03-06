@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme.md) > How to
+[TOC](../readme_en.md) > How to
 
 
 How to
@@ -13,32 +13,28 @@ Short description
 Table of Content
 ----------------
 
-Short description + disclaimer that we don't endorse any software
-Viewing data
+NEED TO CLEAN UP THIS TOC
 
-    Static
-    Static maps over an area (habillées ou non)
-    Time series
-    I want to interactively view the weather data
-    On the web
-    in ArcGIS Online
-    KML (Google Earth examples)
-    On your own web page
-        in GoC OpenMaps (Federal Government only)
-        In a desktop software, such as QGIS and Google Earth
-        On a mobile phone
-Downloading data
+* Short description + disclaimer that we don't endorse any software
+* Viewing data
+* Static maps over an area (habillées ou non)
+* Time series
+  * Interactively view the weather data
+  * in ArcGIS Online
+* On the web
+* On your own web page
+  * in GoC OpenMaps (Federal Government only)
+* In a desktop software, such as QGIS and Google Earth
+* On a mobile phone
+* Downloading data
+    * AMQP, wget
+  * Pattern matching and triggers (on part, on file, on message)
+  * Working examples of retrieving MSC data with AMQP
+    * Vector data in WFS
+* Raster data in WCS
+* Time series
 
-    AMQP
-        Pattern matching and triggers (on part, on file, on message)
-        Working examples of retrieving MSC data with AMQP
-    Vector data in WFS
-    link to list of WFS accessible layers
-    Raster data in WCS
-    link to list of WCS accessible layers
-    Time series
-    ASCII
-
+second group, to clean up as well:
 * [Viewing data](#Viewing data)
     * [WMS](#WMS)
         * [GetMap](#GetMap)
@@ -48,12 +44,12 @@ Downloading data
 	* [WFS](#WFS)
 	    * [GetFeature](#GetFeature)
 	    * [DescribeFeatureType](#DescribeFeatureType)
-	    
+
 	* [WCS](#WCS)
 	    * [GetCoverage](#GetCoverage)
 	    * [DescribeCoverage](#DescribeCoverage)
     * [Time series](#Time series)
-    
+
     * [Desktop software](#Desktop software)
         * [ArcGIS](#ArcGIS)
         * [QGIS](#QGIS)
@@ -61,11 +57,11 @@ Downloading data
         * [SPI](#SPI)
 
 
-    
+
 
 ## Viewing data
 
-### WMS 
+### WMS
 
 #### Display static map (GetMap)
 
@@ -77,7 +73,7 @@ In this example, we can see a map of the layer GPDS.ETA_TT which correspond to t
 
 http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1
 
-In this example, we can get raw data values of layer GDPS.ETA_TT which correspond to temperature on a specific area determined by the bounding box. In that area, we select pixels (x,y) based on their size (width, height). Note that pixel (0,0) is at the top left. 
+In this example, we can get raw data values of layer GDPS.ETA_TT which correspond to temperature on a specific area determined by the bounding box. In that area, we select pixels (x,y) based on their size (width, height). Note that pixel (0,0) is at the top left.
 
 #### Display legend of a layer (GetLegendGraphic)
 
@@ -136,15 +132,14 @@ It it the same steps for WFS and WCS.
 
 #### QGIS
 
-Select Layer/Add WMS. Create new WMS connection. Enter a name and URL. 
+Select Layer/Add WMS. Create new WMS connection. Enter a name and URL.
 
 Name : GeoMet
 
-URL : http://geo.weather.gc.ca/geomet/ 
+URL : http://geo.weather.gc.ca/geomet/
 
 It it the same steps for WFS and WCS.
 
 #### Google Earth
 
 Select Add then Image Overlay. Go in Refresh, then click on WMS parameters.Add URL (http://geoweather.gc.ca/geomet/).
-
