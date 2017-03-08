@@ -1,8 +1,0 @@
-# RDPA
-
-Nom                                   | Id          | Services web | Styles                                            | Notes
---------------------------------------|-------------|--------------|---------------------------------------------------|------
-RDPA.6P - Quantité de précipitations  | RDPA.6P_PR  | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR |      
-RDPA.6F - Quantité de précipitations  | RDPA.6F_PR  | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR |      
-RDPA.24F - Quantité de précipitations | RDPA.24F_PR | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR |      
-
