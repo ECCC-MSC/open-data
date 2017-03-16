@@ -6,7 +6,7 @@ public-data-documentation-src and convert it into a txt documentation.
 After, it adds data tables for msc-data.
 
 To Convert the script in txt format, it find all markdown links
-(example : [MY LINK](path to the link) ) and replace,remove or modify
+(example : \[MY LINK\](path to the link) ) and replace,remove or modify
 those link based on what types of links they are.
 
 To add the tables to the documentation,the script  search for all valid
