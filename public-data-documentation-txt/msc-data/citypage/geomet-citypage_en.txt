@@ -1,0 +1,4 @@
+Name               | Id                 | Web Services | Styles          
+-------------------|--------------------|--------------|-----------------
+Current Conditions | CURRENT_CONDITIONS | WFS, WMS     | DEFAULT: WEATHER
+

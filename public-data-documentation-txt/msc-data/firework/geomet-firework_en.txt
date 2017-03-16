@@ -1,0 +1,4 @@
+Name                                   | Id       | Web Services | Styles           
+---------------------------------------|----------|--------------|------------------
+Wildfire hotspots ingested by FireWork | HOTSPOTS | WFS, WMS     | DEFAULT: FIREWORK
+
