@@ -63,10 +63,12 @@ def clean_all_markdown(input_folder, output_folder):
     io_paths = [(md_file, path.join(output_folder, md_file.replace(input_folder + '/', '').replace('.md', '.txt')))
                 for md_file in file_list]
 
+
     # clean all markdown if it is one
     for input_md, output_md in io_paths:
         if '.md' in input_md:
-            clean_single_markdown(input_md, output_md)
+            if input_md != path.join(input_folder, 'readme.md'):
+                clean_single_markdown(input_md, output_md)
         else:
             dir_path = '/'.join(output_md.split('/')[:-1])
             if not path.exists(dir_path):

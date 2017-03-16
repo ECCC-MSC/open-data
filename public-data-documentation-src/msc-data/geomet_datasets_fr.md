@@ -1,4 +1,4 @@
 # Tableau Sommaire
 
 
-$README_EN$
+$README_FR$

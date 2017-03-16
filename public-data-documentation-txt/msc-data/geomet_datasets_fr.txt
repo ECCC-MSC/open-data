@@ -1,18 +1,18 @@
 # Tableau Sommaire
 
 
-Dataset                                                       | Id              | MR        | FH                  | FHI | N. 
---------------------------------------------------------------|-----------------|-----------|---------------------|-----|----
-Canadian Weather                                              | weather         | N/A       | N/A                 | N/A | 1  
-Canadian Weather                                              | alerts          | N/A       | N/A                 | N/A | 1  
-Regional Air Quality Deterministic Prediction System (RAQDPS) | firework        | N/A       | N/A                 | N/A | 1  
-Other Weather Data                                            | weatheradio     | N/A       | N/A                 | N/A | 1  
-Hurricane trajectories                                        | hurricanetracks | N/A       | N/A                 | N/A | 4  
-North American radar mosaic                                   | radar           | N/A       | N/A                 | N/A | 4  
-Global Deterministic Prediction System (GDPS)                 | gdps            | 0,12      | 240,240             | 3   | 41 
-Regional Ensemble Prediction System (REPS)                    | reps            | 0,12      | 72,72               | 3   | 428
-Regional Deterministic Precipitation Analysis (RDPA)          | rdpa            | 0,6,12,18 | -720,-720,-720,-720 | 6   | 3  
-Regional Deterministic Prediction System (RDPS)               | rdps            | 0,6,12,18 | 48,54,48,54         | 3   | 41 
-High Resolution Deterministic Prediction System (HRDPS)       | hrdps           | 0,6,12,18 | 48,48,48,48         | 1   | 33 
-Oceanography                                                  | giops           | 0         | 240                 | 3   | 16 
+Dataset                                                                    | Id              | MR        | FH                  | FHI | N. 
+---------------------------------------------------------------------------|-----------------|-----------|---------------------|-----|----
+La météo au Canada                                                         | weather         | N/A       | N/A                 | N/A | 1  
+La météo au Canada                                                         | alerts          | N/A       | N/A                 | N/A | 1  
+Système Régional de Prévision Déterministe de la Qualité de l'Air (SRPDQA) | firework        | N/A       | N/A                 | N/A | 1  
+Autres données météo                                                       | weatheradio     | N/A       | N/A                 | N/A | 1  
+Trajectoires d'ouragans                                                    | hurricanetracks | N/A       | N/A                 | N/A | 4  
+Mosaïque radar Nord-Américaine                                             | radar           | N/A       | N/A                 | N/A | 4  
+Système Global de Prévision Déterministe (SGPD)                            | gdps            | 0,12      | 240,240             | 3   | 41 
+Système Régional de Prévision d'Ensemble (SRPE)                            | reps            | 0,12      | 72,72               | 3   | 428
+Analyse Régionale Déterministe de Précipitation (ARDP)                     | rdpa            | 0,6,12,18 | -720,-720,-720,-720 | 6   | 3  
+Système Régional de Prévision Déterministe (SRPD)                          | rdps            | 0,6,12,18 | 48,54,48,54         | 3   | 41 
+Système à Haute Résolution de Prévision Déterministe (SHRPD)               | hrdps           | 0,6,12,18 | 48,48,48,48         | 1   | 33 
+Océanographie                                                              | giops           | 0         | 240                 | 3   | 16 
 
