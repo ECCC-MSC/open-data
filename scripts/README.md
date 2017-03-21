@@ -14,7 +14,7 @@ IDs (format = $ID$) and then replaces them with a table related to the ID.
 
 Requirements
 ------------------------------------------------------------------------
-* Python 2.7
+* Python 2.7 with pip and virtualenv installed
 * [ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml) (installed by setup.sh)
 
 
@@ -48,13 +48,13 @@ Workflow
 
 Run in a terminal in the scripts directory:
 
-    $ /bin/bash/ script/setup.sh`
+    $ /bin/bash scripts/setup.sh
 
 #### Execution:
 
 Run in a terminal in the scripts directory:
 
-    $ /bin/bash script/generate_documentation.sh <geomet_yaml>
+    $ /bin/bash scripts/generate_documentation.sh <geomet_yaml>
 
 where geomet_yaml is the current yaml for geomet
 you can also edit the generate_documentation.sh to change
