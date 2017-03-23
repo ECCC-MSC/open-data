@@ -10,6 +10,17 @@ MSC public data documentation which is published at the following locations:
 * [MSC Datamart](http://dd.weather.gc.ca/)
 * [ECCC-MSC on GitHub](https://github.com/ECCC-MSC)
 
+# Workflow overview
+
+Here's the Public data documentation update process workflow overview. Detailed procedures provided below.
+
+1. Retrieve a local copy of the current public data documentation repository
+2. Update the source documentation
+3. Run the script which generates the output versions of the documentation
+4. Validate the output documentation
+5. Request that these modifications are merged in the authoritative repository
+6. A Public data documentation steward publishes the new version to the MSC Datamart and GitHub
+
 # File structure
 
 Files are stored on GCcode, in the DPS repository: http://gitlab.ssc.etg.gc.ca/ec-msc/dps/tree/master/public-data-documentation/
@@ -64,9 +75,16 @@ INCOMPLETE
 4. Validate the resulting documentation
  * Both the [Markdown](public-data-documentation-md) and [raw text](public-data-documentation-txt) versions
  * Validate both languages
+ * Validate breadcrumbs
+ * Validate tables layout and content
 5. Submit merge requests
  * spécifier ici comment !
 
 # Deploying the documentation
 
 INCOMPLETE
+* Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
+* Management sign-off
+* Publication to MSC Datamart and GitHub
+* Announce the new version of the documentation to the appropriate channels
+ * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]

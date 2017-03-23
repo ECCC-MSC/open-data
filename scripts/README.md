@@ -12,14 +12,23 @@ To add the tables to the documentation, the script searches for all valid
 IDs (format = $ID$) and then replaces them with a table related to the ID.
 
 
-Requirements
-------------------------------------------------------------------------
+## What the script do
+
+The script does the following:
+* Create GeoMet tables of layers in Markdown and raw text
+* For raw text output:
+ * Removes images
+ * Removes breadcrumbs
+ * Removes the notice of authoritative version
+ * Change relative URLs to absolute paths
+
+## Requirements
+
 * Python 2.7 with pip and virtualenv installed
 * [ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml) (installed by setup.sh)
 
 
-Workflow
-------------------------------------------------------------------------
+## Workflow
 
 ### 1. edit the public-data-documentation-src
 * You can add any file from the public-data-documentation-src folder. However
