@@ -39,6 +39,15 @@ Files in this repository:
 * templates
  * Location of templates to be used for documenting MSC data
 
+# Monitoring changes
+
+How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
+1. [Log into GCcode](http://gitlab.ssc.etg.gc.ca/)
+2. [Goto the DPS repository project page](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
+3. Enable watch mode for the repository by selecting 'Watch' in the dropdown menu alongside the alarm bell icon
+
+This enables receiving modifications for the entire DPS repository.
+
 # Preliminary steps
 
 ## Requirements
