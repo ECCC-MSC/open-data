@@ -19,7 +19,7 @@ The script does the following:
 * For raw text output:
  * Removes images
  * Removes breadcrumbs
- * Removes the notice of authoritative version
+ * Removes the landing readme.md with the language toggle as well as the notice of authoritative version
  * Change relative URLs to absolute paths
 
 ## Requirements
