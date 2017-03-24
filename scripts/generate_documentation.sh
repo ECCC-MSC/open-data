@@ -35,16 +35,26 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # =================================================================
+
 if [ "$#" -lt 1 ]; then
-    echo "Usage: $0 <YAML>"
-    exit 1
+    YAML_URL='http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/raw/master/etc/geomet.yml'
+else
+    YAML_URL=$1
 fi
 
-YAML=$1
+YAML='geomet.yml'
 DOC_SRC='../public-data-documentation-src'
 DOC_TXT='../public-data-documentation-txt'
 DOC_MD='../public-data-documentation-md'
 DD_BASEPATH='http://dd.weather.gc.ca/doc/'
+
+
+echo 'Getting The yaml file from : ' ${YAML_URL}
+if [ -f ${YAML} ]; then
+    rm  ${YAML}
+fi
+wget ${YAML_URL} --quiet
+
 
 echo "Converting markdown into a txt format"
 python markdown_to_txt/markdown_to_txt.py ${DOC_SRC} ${DOC_TXT} ${DD_BASEPATH}
@@ -62,9 +72,12 @@ python generate-geomet-data-tables/main.py ${YAML} ${DOC_MD} ${DOC_MD} default
 echo "Adding tables into txt documentation"
 python generate-geomet-data-tables/main.py ${YAML} ${DOC_TXT} ${DOC_TXT} raw
 
-echo "Done"
-
+echo "Cleaning up"
+if [ -f ${YAML} ]; then
+    rm  ${YAML}
+fi
 deactivate
 
+echo "Done"
 
 
