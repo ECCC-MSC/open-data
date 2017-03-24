@@ -69,6 +69,9 @@ where geomet_git_repo is the URL where geomet version is currently.
 
 the default geomet_git_repo value is : http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
 
+NOTE:: before running the script, you can also modify the base dd URL in the 
+`generate_documentation.sh` file.
+
 ### 3. Push the modification
 
 Run these commands in a terminal. This assumes that you have a fork
