@@ -39,7 +39,7 @@
 if [ "$#" -lt 1 ]; then
     YAML_URL='http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/raw/master/etc/geomet.yml'
 else
-    YAML_URL=$1
+    YAML_URL=$1/raw/master/etc/geomet.yml
 fi
 
 YAML='geomet.yml'
@@ -48,15 +48,16 @@ DOC_TXT='../public-data-documentation-txt'
 DOC_MD='../public-data-documentation-md'
 DD_BASEPATH='http://dd.weather.gc.ca/doc/'
 
+echo -e '\nPUBLIC DATA DOCUMENTATION GENERATION SCRIPT \n '
 
-echo 'Getting The yaml file from : ' ${YAML_URL}
+echo -e '\t1/5 : Getting The yaml file from : ' ${YAML_URL}
 if [ -f ${YAML} ]; then
     rm  ${YAML}
 fi
 wget ${YAML_URL} --quiet
 
 
-echo "Converting markdown into a txt format"
+echo -e "\t2/5 : Converting markdown into a txt format"
 python markdown_to_txt/markdown_to_txt.py ${DOC_SRC} ${DOC_TXT} ${DD_BASEPATH}
 
 if [ "$(ls -A ${DOC_MD})" ]; then
@@ -66,18 +67,19 @@ cp -r ${DOC_SRC}/* ${DOC_MD}
 
 source python-package/bin/activate
 
-echo "Adding tables into markdown documentation"
+echo -e "\t3/5 : Adding tables into markdown documentation"
 python generate-geomet-data-tables/main.py ${YAML} ${DOC_MD} ${DOC_MD} default
 
-echo "Adding tables into txt documentation"
+echo -e "\t4/5 : Adding tables into txt documentation"
 python generate-geomet-data-tables/main.py ${YAML} ${DOC_TXT} ${DOC_TXT} raw
 
-echo "Cleaning up"
+echo -e "\t5/5 : Cleaning up"
+
 if [ -f ${YAML} ]; then
     rm  ${YAML}
 fi
 deactivate
 
-echo "Done"
+echo  "Done"
 
 

@@ -63,12 +63,11 @@ Run in a terminal in the scripts directory:
 
 Run in a terminal in the scripts directory:
 
-    $ /bin/bash scripts/generate_documentation.sh <geomet_yaml>
+    $ /bin/bash scripts/generate_documentation.sh <geomet_git_repo>
 
-where geomet_yaml is the current yaml for geomet
-you can also edit the generate_documentation.sh to change
-base DD url path for the txt version
+where geomet_git_repo is the URL where geomet version is currently.
 
+the default geomet_git_repo value is : http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
 
 ### 3. Push the modification
 
