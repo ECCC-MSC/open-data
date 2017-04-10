@@ -2,7 +2,17 @@
 
 Welcome! This documentation will tell you how to update and deploy new version of the MSC public data documentation.
 
-ADD TOC
+# Table of Contents
+
+1. [Scope](#scope)
+2. [Workflow overview](#workflow-overview)
+3. [File structure](#file-structure)
+4. [Monitoring changes](#monitoring-changes)
+5. [Preliminary steps](#preliminary-steps)
+ * [Requirements](#requirements)
+ * [Getting ready](#getting-ready)
+6. [Updating the documentation](#updating-the-documentation)
+7. [Deploying the documentation](#deploying-the-documentation)
 
 # Scope
 
