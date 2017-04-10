@@ -7,12 +7,12 @@ Welcome! This documentation will tell you how to update and deploy new version o
 1. [Scope](#scope)
 2. [Workflow overview](#workflow-overview)
 3. [File structure](#file-structure)
-4. [Monitoring changes](#monitoring-changes)
-5. [Preliminary steps](#preliminary-steps)
+4. [Monitoring documentation changes](#monitoring-documentation-changes)
+5. [Updating the documentation](#updating-the-documentation)
  * [Requirements](#requirements)
  * [Getting ready](#getting-ready)
-6. [Updating the documentation](#updating-the-documentation)
-7. [Deploying the documentation](#deploying-the-documentation)
+ * [Update workflow](#update-workflow)
+6. [Deploying the documentation](#deploying-the-documentation)
 
 # Scope
 
@@ -22,7 +22,7 @@ MSC public data documentation which is published at the following locations:
 
 # Workflow overview
 
-Here's the Public data documentation update process workflow overview. Detailed procedures provided below.
+Here's an overview of the Public data documentation update process. Detailed procedures provided below.
 
 1. Retrieve a local copy of the current public data documentation repository
 2. Update the source documentation
@@ -38,39 +38,39 @@ Files are stored on GCcode, in the DPS repository: http://gitlab.ssc.etg.gc.ca/e
 Files in this repository:
 * README.md
  * This readme file!
-* public-data-documentation-md
+* public-data-documentation-md/
  * The output Markdown documentation for publication on GitHub
-* public-data-documentation-src
+* public-data-documentation-src/
  * The source documentation in the Markdown format
-* public-data-documentation-txt
+* public-data-documentation-txt/
  * The output raw text documentation for publication on MSC Datamart
-* scripts
+* scripts/
  * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
-* templates
+* templates/
  * Location of templates to be used for documenting MSC data
 
-# Monitoring changes
+# Monitoring documentation changes
 
 How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
 1. [Log into GCcode](http://gitlab.ssc.etg.gc.ca/)
-2. [Goto the DPS repository project page](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
-3. Enable watch mode for the repository by selecting 'Watch' in the dropdown menu alongside the alarm bell icon
+2. [Go to the DPS repository project page](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
+3. Enable watch mode for the repository by selecting `Watch` in the dropdown menu alongside the alarm bell icon
 
 This enables receiving modifications for the entire DPS repository.
 
-# Preliminary steps
+# Updating the documentation
 
 ## Requirements
 
 Requirement to update the source documentation:
 * A GCcode account
 
-Requirements to create the output versions of the documentation:
+Requirements to create the publication-ready versions of the documentation:
 * Requirements associated with running [the scripts](scripts/)
  * Python 2.7 with virtualenv and pip installed
 
 Requirements to accept and publish modifications
-* Write permissions to the dps GCcode repository
+* Write permissions to [the dps GCcode repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
 * A GitHub account and being member of [the ECCC-MSC organisation on GitHub](https://github.com/orgs/ECCC-MSC/people)
 
 ## Getting ready
@@ -79,17 +79,15 @@ INCOMPLETE
 
 1. Fork this repository
  * Log on GCcode
- * Fork the dps rep
+ * Fork the `dps` repository
  * Clone your fork on your local filesystem
 
-# Updating the documentation
-
-INCOMPLETE
+## Update workflow
 
 1. Sync your Fork
  * spécifier ici comment !
-2. Make changes the public-data-documentation-src folder in your local fork
- * Changes must be made in the English and French versions of the documentation
+2. Make changes the `public-data-documentation-src` folder in your local fork
+ * Changes must include the English and French versions of the documentation
 3. Run [the documentation generation script](scripts/)
 4. Validate the resulting documentation
  * Both the [Markdown](public-data-documentation-md) and [raw text](public-data-documentation-txt) versions
