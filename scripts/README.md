@@ -1,26 +1,20 @@
 # Documentation Generation Script
 
-This script generates the [markdown](../public-data-documentation-md) and [text](../public-data-documentation-txt) documentation based on a
-[source markdown](../public-data-documentation-src). While generating this documentation, it take the public-data-documentation-src and convert it into a txt documentation.
-After, it adds data tables for msc-data.
-
-To convert the content to the txt format, it finds all markdown links
-(example: \[MY LINK\](path to the link) ) and replaces, removes or modify
-those links based on what types of links they are.
-
-To add the tables to the documentation, the script searches for all valid
-IDs (format = $ID$) and then replaces them with a table related to the ID.
+This script generates the [Markdown](../public-data-documentation-md) and [text](../public-data-documentation-txt) publication-ready versions of the documentation based on a
+[source Markdown](../public-data-documentation-src).
 
 
-## What the script do
+## What the script does
 
 The script does the following:
 * Create GeoMet tables of layers in Markdown and raw text
+ * The script finds all valid IDs (format: $ID$) and then replaces them with the corresponding table
 * For raw text output:
  * Removes images
  * Removes breadcrumbs
  * Removes the landing readme.md with the language toggle as well as the notice of authoritative version
- * Change relative URLs to absolute paths
+ * Change relative URLs to absolute paths URLs
+
 
 ## Requirements
 
@@ -32,13 +26,11 @@ The script does the following:
 
 ### 1. edit the public-data-documentation-src
 * You can add any file from the public-data-documentation-src folder. However
-  all the markdown files must have the .md extension at the end
-
-* It is not recommended to add squared bracket ( [ ] ) into the files
-  if it is not a link since the script might remove it in some weird cases
-
-* For msc-data, you can add an identifier (example : $ID$) so it replaces
-  it by a data tables related to the identifier.
+  all the Markdown files must end with the .md extension
+* It is not recommended to add square brackets ( [ ] ) into the files
+  if it is not a link given the script might remove it in some weird cases
+* For the msc-data folder, you can add an identifier (example: $ID$) so it replaces
+  it by the corresponding data table
 
   The valid Identifiers are:
     *  README_\<LANGUAGE\>.md :
@@ -55,21 +47,21 @@ The script does the following:
 
 #### Installation:
 
-Run in a terminal in the scripts directory:
+Run in a terminal in the public-data-documentation directory:
 
     $ /bin/bash scripts/setup.sh
 
 #### Execution:
 
-Run in a terminal in the scripts directory:
+Run in a terminal in the public-data-documentation directory:
 
     $ /bin/bash scripts/generate_documentation.sh <geomet_git_repo>
 
 where geomet_git_repo is the URL where geomet version is currently.
 
-the default geomet_git_repo value is : http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
+the default geomet_git_repo value is: http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
 
-NOTE:: before running the script, you can also modify the base dd URL in the 
+NOTE:: before running the script, you can also modify the base dd URL in the
 `generate_documentation.sh` file.
 
 ### 3. Push the modification
