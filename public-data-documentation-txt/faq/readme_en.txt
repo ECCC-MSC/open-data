@@ -124,24 +124,24 @@ http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Pr
 
 For data feeds, available formats are as follows:
 
-    - NUMERICA (ASCII)
-    - GIF format (recent GIFs available for free on the MSC Datamart)
-    - IRIS (raw) format
-        Specifications: http://www.vaisala.com/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
+* NUMERICA (ASCII)
+* GIF format (recent GIFs available for free on the MSC Datamart)
+* IRIS (raw) format
+ * Specifications: http://www.vaisala.com/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
 
 Details regards pricing are as follows:
 
-    - 1-5 radars (QC, Atl or Pac region) : $1,600/month
-    - 6-10 (any whole region): $1,800/month
-    - 11+: $2,000/month
-    - Plus a one-time setup fee of $2,000
+* 1-5 radars (QC, Atl or Pac region) : $1,600/month
+* 6-10 (any whole region): $1,800/month
+* 11+: $2,000/month
+* Plus a one-time setup fee of $2,000
 
 Please, note that these rates are indicative only and may change.
 
 Regarding file sizes:
 
-    - 1 hour of volume scan for 1 radar without precipitation: ~ 4.5 Mb
-    - 1 hour of volume scan for 1 radar with precipitation: ~ 13 Mb
+* 1 hour of volume scan for 1 radar without precipitation: ~ 4.5 Mb
+* 1 hour of volume scan for 1 radar with precipitation: ~ 13 Mb
 
 Please, note that the estimate above depends on meteorological conditions and is for reference purposes only.
 
@@ -213,8 +213,8 @@ You can find an example of a GENOT 03 bulletin here:
 http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
 
 Finally, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available.
-You can subscribe here:
 
+You can subscribe here:
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
 
 Please use the following address to contact us for any comments or questions:
@@ -410,20 +410,14 @@ This is why there is no icon or condition reported in the corresponding Citypage
 
 ## Why are message queues terminated after several hours of inactivity when using AMQP?
 
-Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia,
-is a broker (see Glossaty section at the address: http://metpx.sourceforge.net/Install.html).   
-The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
-so queues cannot be allowed to accumulate indefinitely.  
-We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued.
-Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
+Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia (http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, is a broker (see Glossary section at the address: http://metpx.sourceforge.net/Install.html). The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
+so queues cannot be allowed to accumulate indefinitely. We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
 
-In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server.
-Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
+In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
 
 ## Contact us
 
-If you use the data available on the datamart, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any
-updates or changes regarding the data available. You can subscribe here:
+If you use the data available on the datamart, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
 
