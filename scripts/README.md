@@ -47,35 +47,33 @@ The script does the following:
 
 #### Installation:
 
-Run in a terminal in the public-data-documentation directory:
+Run in a terminal in the public-data-documentation/scripts/ directory:
 
-    $ /bin/bash scripts/setup.sh
+    $ /bin/bash setup.sh
 
 #### Execution:
 
-Run in a terminal in the public-data-documentation directory:
+Run in a terminal in the public-data-documentation/scripts/ directory:
 
-    $ /bin/bash scripts/generate_documentation.sh <geomet_git_repo>
+    $ /bin/bash generate_documentation.sh
 
-where geomet_git_repo is the URL where geomet version is currently.
+Optionally, one can specify the GeoMet Git repos by running:
 
-the default geomet_git_repo value is: http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
+    $ /bin/bash generate_documentation.sh <geomet_git_repo>
 
-NOTE:: before running the script, you can also modify the base dd URL in the
-`generate_documentation.sh` file.
+where geomet_git_repo is the URL where geomet version is currently. The default geomet_git_repo value is: http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/
+
+NOTE: before running the script, you can also modify the base MSC Datamart URL for the documentation basepath in the
+`generate_documentation.sh` file. This value is used for absolute paths in the text version of the documentation.
 
 ### 3. Push the modification
 
-Run these commands in a terminal. This assumes that you have a fork
-and that you have pulled a local fork of the dps repos and that the version
-is in sync with his upstreamed master.
+Run these commands in a terminal. This assumes that you have a fork and that you have pulled a local fork of the DPS Git repos and that the version is in sync with his upstreamed master.
 
     $ git add .
-    $ git commit -m "message related to the commit"
+    $ git commit -m "Short summary of changes to the documentation"
     $ git push
 
-then add your account name and your related GCcode password.
+then provide your GCCode account name and your associated password.
 
 To complete the process, create a merge request with the upstream master.
-If you can have access to the master you do not have ask for a merge
-request.
