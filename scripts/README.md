@@ -10,7 +10,7 @@ The script does the following:
 * Create GeoMet tables of layers in Markdown and raw text
  * The script finds all valid IDs (format: $ID$) and then replaces them with the corresponding table
 * For raw text output:
- * Removes images
+ * Removes inline images references, does not delete actual image file
  * Removes breadcrumbs
  * Removes the landing readme.md with the language toggle as well as the notice of authoritative version
  * Change relative URLs to absolute paths URLs
@@ -69,6 +69,8 @@ NOTE: before running the script, you can also modify the base MSC Datamart URL f
 `generate_documentation.sh` file. This value is used for absolute paths in the text version of the documentation.
 
 ## 3. Push the modification
+
+MOVE THIS DOCUMENTATION TO THE PARENT README
 
 Run these commands in a terminal. This assumes that you have a fork and that you have pulled a local fork of the DPS Git repos and that the version is in sync with his upstreamed master.
 

@@ -19,7 +19,7 @@
 # those files. Users are asked to read the 3rd Party Licenses
 # referenced with those assets.
 #
-# Copyright (c) 2015 Government of Canada
+# Copyright (c) 2017 Government of Canada
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -100,11 +100,11 @@ def handle_line(line):
         # remove lang header
         line = '' if '[In English]' in line else line
         line = '' if '[En français]'.decode('utf-8') in line else line
-        # remove bread crumb line
+        # remove breadcrumb line
         line = '' if '[TdM]' in line else line
         line = '' if '[TOC]' in line else line
 
-        # replace image link pattern by nothing
+        # replace image link pattern with nothing
         img_pattern = re.findall('.*!\[.*\]\(\S*\)', line)
         line = line.replace(img_pattern[0], '') if img_pattern else line
 
