@@ -1,10 +1,10 @@
 Name                                                               | Id                  | Web Services | Styles                            
 -------------------------------------------------------------------|---------------------|--------------|-----------------------------------
-OCEAN.GIOPS.2D - Ice velocity                                      | OCEAN.GIOPS.2D_UUI  | WFS, WMS     | DEFAULT: SEA_ICEARROW             
+OCEAN.GIOPS.2D - Ice velocity                                      | OCEAN.GIOPS.2D_UUI  | WFS, WMS     | DEFAULT: SEA_CURARROW             
 OCEAN.GIOPS.2D - Ocean current                                     | OCEAN.GIOPS.2D_UU2W | WFS, WMS     | DEFAULT: SEA_CURARROW             
-OCEAN.GIOPS.2D - Sea ice fraction                                  | OCEAN.GIOPS.2D_GL   | WMS, WCS     | DEFAULT: SEA_ICECONC              
-OCEAN.GIOPS.2D - Volume of sea ice per unit grid cell              | OCEAN.GIOPS.2D_GE   | WMS, WCS     | DEFAULT: SEA_ICETHICK             
-OCEAN.GIOPS.2D - Sea temperature                                   | OCEAN.GIOPS.2D_TM2  | WMS, WCS     | DEFAULT: SEA_TEMPSURF             
+OCEAN.GIOPS.2D - Sea ice fraction                                  | OCEAN.GIOPS.2D_GL   | WMS, WCS     | DEFAULT: SEA_ICECONC-LINEAR       
+OCEAN.GIOPS.2D - Volume of sea ice per unit grid cell              | OCEAN.GIOPS.2D_GE   | WMS, WCS     | DEFAULT: SEA_ICETHICK-LINEAR      
+OCEAN.GIOPS.2D - Sea temperature                                   | OCEAN.GIOPS.2D_TM2  | WMS, WCS     | DEFAULT: SEA_TEMPSURF-LINEAR      
 OCEAN.GIOPS.2D - Sea Water Salinity                                | OCEAN.GIOPS.2D_SALW | WMS, WCS     | DEFAULT: SEA_SALT-LINEAR          
 OCEAN.GIOPS.2D - Sea surface height with respect to the geoid      | OCEAN.GIOPS.2D_SSH  | WMS, WCS     | DEFAULT: SEA_SURFACE_HEIGHT-LINEAR
 OCEAN.GIOPS.2D - Turbocline depth                                  | OCEAN.GIOPS.2D_MLTW | WMS, WCS     | DEFAULT: SEA_DEPTH-LINEAR         

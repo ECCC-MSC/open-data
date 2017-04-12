@@ -117,7 +117,7 @@ que ceux décrits dans la licence ci-dessus.
 
 La documentation concernant les formats de données radar peut être consultée ici:
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_in_URP.pdf
+http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
 
 La documentation concernant les produits radar se trouve à l'adresse:
 
