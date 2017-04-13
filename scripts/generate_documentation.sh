@@ -73,7 +73,7 @@ python generate-geomet-data-tables/main.py ${YAML} ${DOC_MD} ${DOC_MD} default
 echo -e "\t4/5: Adding tables into txt documentation"
 python generate-geomet-data-tables/main.py ${YAML} ${DOC_TXT} ${DOC_TXT} raw
 
-echo -e "\t5/5: Cleaning up"
+echo -e "\t5/5: Cleaning up\n"
 
 if [ -f ${YAML} ]; then
     rm  ${YAML}

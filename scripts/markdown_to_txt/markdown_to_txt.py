@@ -63,7 +63,6 @@ def clean_all_markdown(input_folder, output_folder):
     io_paths = [(md_file, path.join(output_folder, md_file.replace(input_folder + '/', '').replace('.md', '.txt')))
                 for md_file in file_list]
 
-
     # clean all markdown if it is one
     for input_md, output_md in io_paths:
         if '.md' in input_md:
@@ -106,7 +105,10 @@ def handle_line(line):
 
         # replace image link pattern with nothing
         img_pattern = re.findall('.*!\[.*\]\(\S*\)', line)
-        line = line.replace(img_pattern[0], '') if img_pattern else line
+        line = line.replace(img_pattern[0], '') if img_pattern and 'img_eccc-logo.png' in img_pattern[0] else line
+        line = re.sub('\[|\]', '', line.replace('](', '] (',)) \
+            if img_pattern and 'img_eccc-logo.png' not in img_pattern[0] else line
+
 
         # replace anchor link by only the references anchor
         hashtag_link_patterns = re.findall('.*\[.*\]\(#\S*\).*', line)
