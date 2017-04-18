@@ -75,17 +75,20 @@ Requirements to accept and publish modifications
 
 ## Getting ready
 
-INCOMPLETE
-
-1. Fork this repository
- * Log on GCcode
- * Fork the `dps` repository
- * Clone your fork on your local filesystem
+1. Log to GCcode
+ * Go to [the DPS repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps) and ensure you are logged to GCcode
+2. Fork the DPS repository
+ * Click on `Fork` to fork the `dps` repository
+ * At the desired location on your local filesystem, run: `git clone http://YOUR-GCCODE-USERNAME@gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
+3. Configure your fork by specifying the upstream reference
+ * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
-1. Sync your Fork
- * spécifier ici comment !
+1. Sync your fork
+ * In a Terminal, while in your fork directory, run:
+ * `git fetch upstream`
+ * `git merge upstream/master`
 2. Make changes the `public-data-documentation-src` folder in your local fork
  * Changes must include the English and French versions of the documentation
 3. Run [the documentation generation script](scripts/)
