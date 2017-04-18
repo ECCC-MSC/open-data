@@ -10,7 +10,7 @@ The script does the following:
 * Create GeoMet tables of layers in Markdown and raw text
  * The script finds all valid IDs (format: $ID$) and then replaces them with the corresponding table
 * For raw text output:
- * Removes inline images references, does not delete actual image file
+ * Inline images references become text links to image files, except for the ECCC logo references which are entirely removed
  * Removes breadcrumbs
  * Removes the landing readme.md with the language toggle as well as the notice of authoritative version
  * Change relative URLs to absolute paths URLs
@@ -25,12 +25,9 @@ The script does the following:
 # Using the script
 
 ## 1. Edit the public-data-documentation-src
-* You can add any file from the public-data-documentation-src folder. However
-  all the Markdown files must end with the .md extension
-* It is not recommended to add square brackets ( [ ] ) into the files
-  if it is not a link given the script might remove it in some weird cases
-* For the msc-data folder, you can add an identifier (example: $ID$) so it replaces
-  it by the corresponding data table
+* You can add any file from the public-data-documentation-src folder. However all the Markdown files must end with the .md extension
+* It is not recommended to add square brackets ( [ ] ) into the files: if it is not a link the script might remove it in some unexpected cases
+* For the msc-data folder, you can add an identifier (example: $ID$) so it replaces it by the corresponding data table
 
   The valid Identifiers are:
     *  README_\<LANGUAGE\>.md :
