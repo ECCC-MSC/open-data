@@ -5,7 +5,7 @@
 [TOC](../geomet-alerts_fr.md) > MSC Data
 
 
-Nom           | Id     | Services web | Styles         
---------------|--------|--------------|----------------
-Alertes météo | ALERTS | WFS, WMS     | DEFAULT: ALERTS
+Nom           | Id     | Services web | Styles                  
+--------------|--------|--------------|-------------------------
+Alertes météo | ALERTS | WFS, WMS     | DEFAULT: ALERTS, ALERTES
 

@@ -46,6 +46,6 @@ def _get_dataset_schedule(dic_dataset):
 
 def _get_dataset_label(dic_dataset):
     result_dic = dict()
-    result_dic['fr'] = dic_dataset['label_fr']
     result_dic['en'] = dic_dataset['label_en']
+    result_dic['fr'] = dic_dataset['label_fr']
     return result_dic

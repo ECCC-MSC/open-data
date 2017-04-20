@@ -5,7 +5,7 @@
 [TOC](../geomet-weatheradio_fr.md) > MSC Data
 
 
-Nom                                      | Id          | Services web | Styles              
------------------------------------------|-------------|--------------|---------------------
-Couverture du réseau Radiométéo canadien | WEATHERADIO | WMS, WCS     | DEFAULT: WEATHERADIO
+Nom                                      | Id          | Services web | Styles                          
+-----------------------------------------|-------------|--------------|---------------------------------
+Couverture du réseau Radiométéo canadien | WEATHERADIO | WMS, WCS     | DEFAULT: WEATHERADIO, RADIOMETEO
 

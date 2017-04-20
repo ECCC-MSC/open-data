@@ -29,7 +29,7 @@ class MarkdownDatasetTable(MarkdownTable):
 
     def data_to_row(self, data):
         row = [None] * 6
-        row[0] = '[' + data.name[self.lang].split('/')[0] + ']' + '(' + data.link + ')'
+        row[0] = '[' + data.name[self.lang].split('/')[0] + ']' + '(' + data.link + ')' if '/' in data.name else data.name
         row[1] = data.id
         row[2] = self.model_run_format(data.model_runs)
         row[3] = self.forecast_hours_format(data.forecast_hours)

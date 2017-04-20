@@ -37,7 +37,7 @@ class MarkDownLayerTable(MarkdownTable):
 
         formatted_styles = ''
         formatted_styles += 'DEFAULT: ' + data.styles[-1].rsplit('/', 1)[-1].replace('.inc', '') + ', '
-        for style in data.styles[:-2]:
+        for style in data.styles[:-1]:
             formatted_styles += style.rsplit('/', 1)[-1].replace('.inc', '') + ', '
         row[3] = formatted_styles[:-2]
 
