@@ -1,5 +1,5 @@
 # Tableau Sommaire
 
-À compléter vasé sur la version anglaise
+À compléter basé sur la version anglaise
 
 $README_FR$

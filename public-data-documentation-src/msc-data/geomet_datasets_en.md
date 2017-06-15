@@ -1,4 +1,4 @@
-[En français](readme_fr.md)
+[En français](geomet_datasets_fr.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 

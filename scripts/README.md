@@ -19,7 +19,7 @@ The script does the following:
 # Requirements
 
 * Python 2.7 with pip and virtualenv installed
-* [ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml) (installed by setup.sh)
+* [ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml) (automatically installed)
 
 
 # Using the script
@@ -65,16 +65,6 @@ where `geomet_git_repo` is the URL where GeoMet's code is currently. The script 
 NOTE: before running the script, you can also modify the base MSC Datamart URL for the documentation basepath in the
 `generate_documentation.sh` file. This value is used for absolute paths in the text version of the documentation.
 
-## 3. Push the modification
+## 3. Validate and push the modifications
 
-MOVE THIS DOCUMENTATION TO THE PARENT README
-
-Run these commands in a terminal. This assumes that you have a fork and that you have pulled a local fork of the DPS Git repos and that the version is in sync with his upstreamed master.
-
-    $ git add .
-    $ git commit -m "Short summary of changes to the documentation"
-    $ git push
-
-then provide your GCCode account name and your associated password.
-
-To complete the process, create a merge request with the upstream master.
+Once you're ready [go back to step 5 of the update workflow](../README.md#update-workflow) to validate the updated outputs and push the modification to the servers.

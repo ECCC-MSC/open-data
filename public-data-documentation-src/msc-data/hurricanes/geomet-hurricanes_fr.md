@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../geomet-hurricanes_fr.md) > MSC Data
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données d'ouragans sur GeoMet
 
 
 $HURRICANETRACKS_FR$

@@ -90,27 +90,29 @@ Requirements to accept and publish modifications
  * In a Terminal, while in your `dps` fork directory, run:
  * `git fetch upstream`
  * `git merge upstream/master`
-2. Make changes the `public-data-documentation-src` folder in your local fork
+2. Create and switch to a 'branch' where you'll make your changes
+ * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
+3. Make changes the `public-data-documentation-src` folder in your local fork
  * Changes must include the English and French versions of the documentation
-3. Run [the documentation generation script](scripts/)
-4. Validate the resulting documentation
+4. Run [the documentation generation script](scripts/)
+5. Validate the resulting documentation
  * Both the [Markdown](public-data-documentation-md) and [raw text](public-data-documentation-txt) versions
  * Validate both languages
  * Validate breadcrumbs
  * Validate tables layout and content
-5. Update the official repository
+6. Update the official repository
+ * Make certain you're still on the branch you created at step 2 with the `git status` command
  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
- * Push changes to your fork with `git push`
+ * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
    * Click on 'Merge Requests' on the top-level menu
    * Click on 'New merge request'
-   * Select the source branch from your fork and then 'Compare branches and continue'
+   * Select the appropriate branch from your fork and then 'Compare branches and continue'
    * Assign the merge request and click 'Submit merge request'
    
 Note: this workflow should be improved:
  * to use only pull and push (no merge)
- * to use branches for changes instead of working on master
 
 # Deploying the documentation
 
