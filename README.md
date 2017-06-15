@@ -100,6 +100,7 @@ Requirements to accept and publish modifications
  * Validate tables layout and content
 5. Update the official repository
  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
+ * Push changes to your fork with `git push`
  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
    * Click on 'Merge Requests' on the top-level menu
