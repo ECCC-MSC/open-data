@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../geomet-rdps_fr.md) > MSC Data
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données SRPD sur GeoMet
 
 
 $RDPS_FR$

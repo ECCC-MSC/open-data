@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > MSC Data
+[TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > CanSIPS data on GeoMet
 
 
 Dataset template

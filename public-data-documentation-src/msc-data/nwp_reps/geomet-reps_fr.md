@@ -1,8 +1,8 @@
-[En français](geomet-reps_fr.md)
+[In English](geomet-reps_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../geomet-reps_en.md) > MSC Data
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données SRPE sur GeoMet
 
 
-$REPS_EN$
+$REPS_FR$

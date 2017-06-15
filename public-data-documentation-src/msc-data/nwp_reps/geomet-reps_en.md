@@ -1,8 +1,8 @@
-[In English](geomet-reps_en.md)
+[En français](geomet-reps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../geomet-reps_fr.md) > MSC Data
+[TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > REPS data on GeoMet
 
 
-$REPS_FR$
+$REPS_EN$
