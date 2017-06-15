@@ -79,14 +79,15 @@ Requirements to accept and publish modifications
  * Go to [the DPS repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps) and ensure you are logged to GCcode
 2. Fork the DPS repository
  * Click on `Fork` to fork the `dps` repository
- * At the desired location on your local filesystem, run: `git clone http://YOUR-GCCODE-USERNAME@gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
+ * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 3. Configure your fork by specifying the upstream reference
+ * `cd dps`
  * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
 1. Sync your fork
- * In a Terminal, while in your fork directory, run:
+ * In a Terminal, while in your `dps` fork directory, run:
  * `git fetch upstream`
  * `git merge upstream/master`
 2. Make changes the `public-data-documentation-src` folder in your local fork
@@ -97,8 +98,19 @@ Requirements to accept and publish modifications
  * Validate both languages
  * Validate breadcrumbs
  * Validate tables layout and content
-5. Submit merge requests
- * spécifier ici comment !
+5. Update the official repository
+ * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
+ * Push changes to your fork with `git push`
+ * Submit a merge request to push new changes to your fork to the official repository. To proceed:
+   * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
+   * Click on 'Merge Requests' on the top-level menu
+   * Click on 'New merge request'
+   * Select the source branch from your fork and then 'Compare branches and continue'
+   * Assign the merge request and click 'Submit merge request'
+   
+Note: this workflow should be improved:
+ * to use only pull and push (no merge)
+ * to use branches for changes instead of working on master
 
 # Deploying the documentation
 
