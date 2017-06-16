@@ -87,7 +87,7 @@ Requirements to accept and publish modifications
 ## Update workflow
 
 1. Sync your fork
- * In a Terminal, while in your `dps` fork directory, update your local code with the source:
+ * In a Terminal, while in your `dps` fork directory, update your local code with the dps source:
  * `git pull upstream master`
 2. Create and switch to a 'branch' where you'll make your changes
  * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
@@ -109,9 +109,10 @@ Requirements to accept and publish modifications
    * Click on 'New merge request'
    * Select the appropriate branch from your fork and then 'Compare branches and continue'
    * Assign the merge request and click 'Submit merge request'
+   * If you're allowed to merge and are comfortable with the changes, you can `merge` right away. Otherwise, followup with the merge request's assignee
 7. Update your fork's master branch
  * Go to your fork master branch: `git checkout master`
- * Update local master with source code: `git pull upstream master`
+ * Update local master with dps source code: `git pull upstream master`
  * Push updated master to your fork: `git push`
    
 Tips:
