@@ -79,17 +79,16 @@ Requirements to accept and publish modifications
  * Go to [the DPS repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps) and ensure you are logged to GCcode
 2. Fork the DPS repository
  * Click on `Fork` to fork the `dps` repository
- * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
-3. Configure your fork by specifying the upstream reference
+ * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps.git`
+3. Configure your fork by specifying the upstream reference:
  * `cd dps`
  * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
 1. Sync your fork
- * In a Terminal, while in your `dps` fork directory, run:
- * `git fetch upstream`
- * `git merge upstream/master`
+ * In a Terminal, while in your `dps` fork directory, update your local code with the source:
+ * `git pull upstream master`
 2. Create and switch to a 'branch' where you'll make your changes
  * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
 3. Make changes the `public-data-documentation-src` folder in your local fork
@@ -104,6 +103,7 @@ Requirements to accept and publish modifications
  * Make certain you're still on the branch you created at step 2 with the `git status` command
  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
  * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
+   * Tip: use `git status` to learn on which branch you currently are and get additional status info
  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
    * Click on 'Merge Requests' on the top-level menu
