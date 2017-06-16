@@ -109,6 +109,10 @@ Requirements to accept and publish modifications
    * Click on 'New merge request'
    * Select the appropriate branch from your fork and then 'Compare branches and continue'
    * Assign the merge request and click 'Submit merge request'
+7. Update your fork's master branch
+ * Go to your fork master branch: `git checkout master`
+ * Update with source code: `git pull upstream master`
+ * Push updated master to your fork: `git push`
    
 Tips:
  * Use `git status` to learn on which branch you currently are and get additional status info
