@@ -94,8 +94,8 @@ Requirements to accept and publish modifications
 3. Make changes the `public-data-documentation-src` folder in your local fork
  * Changes must include the English and French versions of the documentation
 4. Run [the documentation generation script](scripts/)
-5. Validate the resulting documentation
- * Both the [Markdown](public-data-documentation-md) and [raw text](public-data-documentation-txt) versions
+5. Validate the resulting documentation in your fork
+ * Both the Markdown and raw text versions
  * Validate both languages
  * Validate breadcrumbs
  * Validate tables layout and content
@@ -103,7 +103,6 @@ Requirements to accept and publish modifications
  * Make certain you're still on the branch you created at step 2 with the `git status` command
  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
  * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
-   * Tip: use `git status` to learn on which branch you currently are and get additional status info
  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
    * Click on 'Merge Requests' on the top-level menu
@@ -111,8 +110,10 @@ Requirements to accept and publish modifications
    * Select the appropriate branch from your fork and then 'Compare branches and continue'
    * Assign the merge request and click 'Submit merge request'
    
-Note: this workflow should be improved:
- * to use only pull and push (no merge)
+Tips:
+ * Use `git status` to learn on which branch you currently are and get additional status info
+ * Use `git remote -v` to confirm `origin` and `upstream` are properly set
+ * Use `git checkout master` to go back to the master branch of your fork
 
 # Deploying the documentation
 
