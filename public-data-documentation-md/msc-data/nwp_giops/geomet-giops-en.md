@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../geomet-giops_en.md) > MSC Data
+[TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > GIOPS data on GeoMet
 
 
 Name                                                               | Id                  | Web Services | Styles                                                

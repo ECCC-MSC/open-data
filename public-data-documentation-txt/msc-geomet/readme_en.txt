@@ -88,3 +88,11 @@ The OGC Styled Layer Descriptor (http://www.opengeospatial.org/standards/sld) de
 * Ex. http://geo.weather.gc.ca/geomet-beta?version=1.1.1&service=WMS&request=GetMap&bbox=-180,-90,180,90&layers=GDPS.ETA_TT&srs=EPSG:4326&height=600&width=800&format=png
 
 Simply add this to a regular GetMap request : sld=link_to_sld
+
+### Time
+
+* mention TIME=
+* mention the best practices and REFERENCE_TIME for model runs
+* examples
+ * https://openlayers.org/en/latest/examples/wms-time.html
+ * http://leafletjs.com/examples/wms/wms.html
