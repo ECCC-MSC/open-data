@@ -63,13 +63,13 @@ This enables receiving modifications for the entire DPS repository.
 ## Requirements
 
 Requirement to update the source documentation:
-* A GCcode account
+* A [GCcode](http://gitlab.ssc.etg.gc.ca/) account
 
 Requirements to create the publication-ready versions of the documentation:
 * Requirements associated with running [the scripts](scripts/)
  * Python 2.7 with virtualenv and pip installed
 
-Requirements to accept and publish modifications
+Requirements to accept and publish modifications:
 * Write permissions to [the dps GCcode repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
 * A GitHub account and being member of [the ECCC-MSC organisation on GitHub](https://github.com/orgs/ECCC-MSC/people)
 
@@ -122,9 +122,19 @@ Tips:
 
 # Deploying the documentation
 
-INCOMPLETE
-* Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
-* Management sign-off
-* Publication to MSC Datamart and GitHub
-* Announce the new version of the documentation to the appropriate channels
- * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
+## Initial deployment
+
+* Update and validate [the list of URL redirections](MSC-Datamart_URL-redirections.md) to create on the MSC Datamart
+* Request SSC to publish the URL redirections
+
+## Regular releases
+
+TO VALIDATE
+
+1. Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
+2. Management sign-off
+3. Publication to MSC Datamart
+  * This requires a ticket assigned to SSC (add more info here)
+4. Publication to the [ECCC-MSC GitHub repository](https://github.com/ECCC-MSC) once the MSC Datamart version has been updated
+5. Announce the new version of the documentation through the appropriate channels
+  * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
