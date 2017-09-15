@@ -14,3 +14,12 @@ Le Centre canadien des ouragans fournit des fichiers en format shapefile dans le
 
 Les trajectoires d'ouragans émises par le Centre canadien de prévision des ouragans sont publiées sur le Datamart. Ces données sont rendues disponibles en mode expérimental afin d'offrir aux usagers une opportunité d'ingérer et de tester les données en temps réel. Le service sera fourni au mieux de nos possibilités mais veuillez noter qu'il existe une possibilité non négligeable d'interruptions occasionnelles non-annoncées et non-remédiées de ce service expérimental de données, et ce jusqu'à 
 nouvelle annonce.
+
+# Clause de non-responsabilité
+
+Les fichiers shapefiles ne sont pas un substitut officiel du texte et des produits de suivi des prévisions que l'on trouve à http://www.ouragans.ca/ . La disponibilité des fichiers n'est pas garantie mais tous les efforts
+seront faits afin de les fournir en temps opportun et afin qu'une vérification de qualité minimale soit faite par les spécialistes des prévisions des ouragans.
+
+# Licence  
+
+Pour les conditions d'utilisation et les conditions des données créées par Environnement Canada et dont il est le détenteur, consulter les [conditions générales d'utilisation des données SMC](../../licence/licence_fr.md) 
