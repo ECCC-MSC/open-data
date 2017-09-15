@@ -20,6 +20,10 @@ nouvelle annonce.
 Les fichiers shapefiles ne sont pas un substitut officiel du texte et des produits de suivi des prévisions que l'on trouve à http://www.ouragans.ca/ . La disponibilité des fichiers n'est pas garantie mais tous les efforts
 seront faits afin de les fournir en temps opportun et afin qu'une vérification de qualité minimale soit faite par les spécialistes des prévisions des ouragans.
 
+# Accès aux données
+    * [Téléchargement direct des données](../../msc-datamart/hurricane_fr.md)
+    * [Service web](../../msc-geomet/readme_fr.md)
+
 # Licence  
 
 Pour les conditions d'utilisation et les conditions des données créées par Environnement Canada et dont il est le détenteur, consulter les [conditions générales d'utilisation des données SMC](../../licence/licence_fr.md) 
