@@ -105,7 +105,7 @@ def handle_line(line):
 
         # replace image link pattern with nothing
         img_pattern = re.findall('.*!\[.*\]\(\S*\)', line)
-        line = line.replace(img_pattern[0], '') if img_pattern and 'img_eccc-logo.png' in img_pattern[0] else line
+        line = line.replace(img_pattern[0], '') if img_pattern and 'alt text](http' in img_pattern[0] or img_pattern and 'img_eccc-logo.png' in img_pattern[0] else line
         line = re.sub('\[|\]', '', line.replace('](', '] (',)) \
             if img_pattern and 'img_eccc-logo.png' not in img_pattern[0] else line
 

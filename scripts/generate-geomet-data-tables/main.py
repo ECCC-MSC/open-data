@@ -53,6 +53,11 @@ from markdown_layer_table import MarkDownLayerTable
 from markdown_dataset_table import MarkdownDatasetTable
 from markdown_dataset_dd_table import MarkdownDatasetDDTable
 
+#python 2.x
+import urllib2
+#python 3.x
+#import urllib.request
+
 
 # this section handle WHEN to parse and WHAT to input and WHERE to output
 def execute(input_yaml, input_folder, output_folder, is_raw):
@@ -104,12 +109,42 @@ def add_tables_to_file(table_dict, md_file):
     new_text = ''
     with codecs.open(md_file, 'r', 'utf-8') as input_md:
         for line in input_md:
-            ids = re.findall('\$([^$]*)\$', line)
-            for id_table in ids:
-                if id_table in table_dict:
-                    line = line.replace('$' + id_table + '$', table_dict[id_table])
+
+            if line.startswith('![alt text](htt'):
+                start = line.index('![alt text](') + len('![alt text](')
+                end = line.index(')')
+                link_collaboration = line[start:end]
+                link_datamart = link_collaboration.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
+                line_datamart = line.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
+                try:
+                    #python 2.x
+                    response = urllib2.urlopen(link_collaboration)
+
+                    #python 3.x
+                    #response = urllib.request.urlopen(link_collaboration)
+
+                except Exception as e:
+                    print (e)
+                    print(link_collaboration + ' in ' + md_file + 'for collaboration')
+                try:
+                    #python 2.x
+                    response = urllib2.urlopen(link_datamart)
+
+                    #python 3.x
+                    #response = urllib.request.urlopen(link_datamart)
+
+                except Exception as e:
+                    print (e)
+                    print(link_datamart + ' in ' + md_file + 'for Datamart')
+                new_text += line_datamart
+
             else:
-                new_text += line
+                ids = re.findall('\$([^$]*)\$', line)
+                for id_table in ids:
+                    if id_table in table_dict:
+                        line = line.replace('$' + id_table + '$', table_dict[id_table])
+                else:
+                    new_text += line
     os.remove(md_file)
     with codecs.open(md_file, 'w', 'utf-8') as output_md:
         output_md.write(new_text)
