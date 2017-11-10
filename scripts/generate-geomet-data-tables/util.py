@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# =================================================================
+#
+# Copyright (c) 2017 Government of Canada
+#
+# =================================================================
+
 from parser_dataset import *
 from os import path
 import codecs
