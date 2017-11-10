@@ -33,7 +33,7 @@ GDPS.ETA - Pression à la surface                                    | GDPS.ETA_
 GDPS.ETA - Précipitations accumulées                                | GDPS.ETA_PR       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 GDPS.ETA - Pluie accumulée                                          | GDPS.ETA_RN       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 GDPS.ETA - Neige accumulée                                          | GDPS.ETA_SN       | WMS, WCS     | DEFAULT: PRECIPSNOW, PRECIPSNOW-LINEAR                                                                
-GDPS.ETA - Température de la surface et du sol (Profondeur/moyenne) | GDPS.ETA_I0       | WMS, WCS     | DEFAULT: TEMPSOIL, TEMPSOIL                                                                           
+GDPS.ETA - Température de la surface et du sol (Profondeur/moyenne) | GDPS.ETA_I0       | WMS, WCS     | DEFAULT: TEMPSOIL                                                                                     
 GDPS.ETA - Pression au niveau de la mer (contour)                   | GDPS.ETA_PN       | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                               
 GDPS.ETA - Pression au niveau de la mer                             | GDPS.ETA_PN-SLP   | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH, PRESSURESEALOW                                 
 GDPS.ETA - Température de l'air                                     | GDPS.ETA_TT       | WMS, WCS     | DEFAULT: TEMPWINTER-LINEAR, TEMPERATURE, TEMPERATURE-LINEAR, TEMPSUMMER, TEMPSUMMER-LINEAR, TEMPWINTER

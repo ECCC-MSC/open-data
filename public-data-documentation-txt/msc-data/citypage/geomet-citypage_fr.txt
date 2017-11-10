@@ -1,4 +1,1 @@
-Nom                  | Id                 | Services web | Styles          
----------------------|--------------------|--------------|-----------------
-Conditions actuelles | CURRENT_CONDITIONS | WFS, WMS     | DEFAULT: WEATHER
-
+$WEATHER_FR$

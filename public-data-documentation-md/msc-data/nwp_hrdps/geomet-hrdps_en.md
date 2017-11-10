@@ -16,7 +16,7 @@ HRDPS.CONTINENTAL - Instantaneous precipitation rate (m/s)    | HRDPS.CONTINENTA
 HRDPS.CONTINENTAL - Rain accumulation                         | HRDPS.CONTINENTAL_RN     | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 HRDPS.CONTINENTAL - Freezing rain accumulation                | HRDPS.CONTINENTAL_FR     | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 HRDPS.CONTINENTAL - Snow accumulation                         | HRDPS.CONTINENTAL_SN     | WMS, WCS     | DEFAULT: PRECIPSNOW, PRECIPSNOW-LINEAR                                                                
-HRDPS.CONTINENTAL - Surface and soil temperatures (Deep/Mean) | HRDPS.CONTINENTAL_I0     | WMS, WCS     | DEFAULT: TEMPSOIL, TEMPSOIL                                                                           
+HRDPS.CONTINENTAL - Surface and soil temperatures (Deep/Mean) | HRDPS.CONTINENTAL_I0     | WMS, WCS     | DEFAULT: TEMPSOIL                                                                                     
 HRDPS.CONTINENTAL - Relative humidity                         | HRDPS.CONTINENTAL_HR     | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR, HUMIDITYREL                                                              
 HRDPS.CONTINENTAL - Sea level pressure (contour)              | HRDPS.CONTINENTAL_PN     | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                               
 HRDPS.CONTINENTAL - Sea level pressure                        | HRDPS.CONTINENTAL_PN-SLP | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH, PRESSURESEALOW                                 
@@ -32,7 +32,7 @@ HRDPS.NORTH - Instantaneous precipitation rate (m/s)          | HRDPS.NORTH_RT  
 HRDPS.NORTH - Rain accumulation                               | HRDPS.NORTH_RN           | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 HRDPS.NORTH - Freezing rain accumulation                      | HRDPS.NORTH_FR           | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 HRDPS.NORTH - Snow accumulation                               | HRDPS.NORTH_SN           | WMS, WCS     | DEFAULT: PRECIPSNOW, PRECIPSNOW-LINEAR                                                                
-HRDPS.NORTH - Surface and soil temperatures (Deep/Mean)       | HRDPS.NORTH_I0           | WMS, WCS     | DEFAULT: TEMPSOIL, TEMPSOIL                                                                           
+HRDPS.NORTH - Surface and soil temperatures (Deep/Mean)       | HRDPS.NORTH_I0           | WMS, WCS     | DEFAULT: TEMPSOIL                                                                                     
 HRDPS.NORTH - Relative humidity                               | HRDPS.NORTH_HR           | WMS, WCS     | DEFAULT: HUMIDITYREL-LINEAR, HUMIDITYREL                                                              
 HRDPS.NORTH - Sea level pressure (contour)                    | HRDPS.NORTH_PN           | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                               
 HRDPS.NORTH - Sea level pressure                              | HRDPS.NORTH_PN-SLP       | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH, PRESSURESEALOW                                 

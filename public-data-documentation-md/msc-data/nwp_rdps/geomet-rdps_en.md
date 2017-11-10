@@ -16,7 +16,7 @@ RDPS.ETA - Surface pressure                          | RDPS.ETA_P0       | WMS, 
 RDPS.ETA - Precipitation accumulation                | RDPS.ETA_PR       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 RDPS.ETA - Rain accumulation                         | RDPS.ETA_RN       | WMS, WCS     | DEFAULT: CAPA24-LINEAR, PRECIPMM, PRECIPMM-LINEAR, CAPA24                                             
 RDPS.ETA - Snow accumulation                         | RDPS.ETA_SN       | WMS, WCS     | DEFAULT: PRECIPSNOW, PRECIPSNOW-LINEAR                                                                
-RDPS.ETA - Surface and soil temperatures (Deep/Mean) | RDPS.ETA_I0       | WMS, WCS     | DEFAULT: TEMPSOIL, TEMPSOIL                                                                           
+RDPS.ETA - Surface and soil temperatures (Deep/Mean) | RDPS.ETA_I0       | WMS, WCS     | DEFAULT: TEMPSOIL                                                                                     
 RDPS.ETA - Sea level pressure (contour)              | RDPS.ETA_PN       | WFS, WMS     | DEFAULT: PRESSURE4_LINE                                                                               
 RDPS.ETA - Sea level pressure                        | RDPS.ETA_PN-SLP   | WMS, WCS     | DEFAULT: PRESSURE4-LINEAR, PRESSURE4, PRESSURESEAHIGH, PRESSURESEALOW                                 
 RDPS.ETA - Dew point depression                      | RDPS.ETA_ES       | WMS, WCS     | DEFAULT: DEWPOINTDEP                                                                                  

@@ -11,6 +11,7 @@ virtualenv -p python3 ${PYTHON}
 
 source ${PYTHON}/bin/activate
 
+pip install -U setuptools wheel
 pip install ruamel.yaml
 
 deactivate
