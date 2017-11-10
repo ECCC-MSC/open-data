@@ -67,7 +67,7 @@ Requirement to update the source documentation:
 
 Requirements to create the publication-ready versions of the documentation:
 * Requirements associated with running [the scripts](scripts/)
- * Python 3.4 with virtualenv and pip installed
+ * Python 2.7 with virtualenv and pip installed
 
 Requirements to accept and publish modifications:
 * Write permissions to [the dps GCcode repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
