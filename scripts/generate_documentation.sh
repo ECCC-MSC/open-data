@@ -6,7 +6,7 @@
 # =================================================================
 
 if [ "$#" -lt 1 ]; then
-    YAML_URL='http://gitlab.ssc.etg.gc.ca/ec-msc/geomet/raw/master/etc/geomet.yml'
+    YAML_URL='https://gccode.ssc-spc.gc.ca/ec-msc/geomet/raw/master/etc/geomet.yml'
 else
     YAML_URL=$1/raw/master/etc/geomet.yml
 fi
