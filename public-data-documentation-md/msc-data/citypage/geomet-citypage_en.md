@@ -5,7 +5,6 @@
 [TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > CityPage data on GeoMet
 
 
-Name               | Id                 | Web Services | Styles          
--------------------|--------------------|--------------|-----------------
-Current Conditions | CURRENT_CONDITIONS | WFS, WMS     | DEFAULT: WEATHER
+Name | Id | Web Services | Styles
+-----|----|--------------|-------
 

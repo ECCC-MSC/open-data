@@ -21,7 +21,6 @@ def parse_dataset_layer(code_input):
             dataset.name = _get_dataset_label(dic_dataset[dataset_name])
             dataset.extent = dic_dataset[dataset_name]['extent'].split()
             dataset.number_of_layer = 0
-
             dataset.model_runs, dataset.forecast_hours, dataset.forecast_hour_interval = \
                 _get_dataset_schedule(info)
 
@@ -46,7 +45,10 @@ def _get_dataset_schedule(dic_dataset):
         else:
             model_runs = None
         forecast_hours = dic_dataset['forecast_hours']
-        forecast_hour_interval = dic_dataset['forecast_hour_interval']
+        if 'forecast_hour_interval' in dic_dataset:
+            forecast_hour_interval = dic_dataset['forecast_hour_interval']
+        else:
+            forecast_hour_interval = None
 
         return model_runs, forecast_hours, forecast_hour_interval
 

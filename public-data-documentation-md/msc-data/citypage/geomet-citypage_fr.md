@@ -5,7 +5,6 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données CityPage sur GeoMet
 
 
-Nom                  | Id                 | Services web | Styles          
----------------------|--------------------|--------------|-----------------
-Conditions actuelles | CURRENT_CONDITIONS | WFS, WMS     | DEFAULT: WEATHER
+Nom | Id | Services web | Styles
+----|----|--------------|-------
 

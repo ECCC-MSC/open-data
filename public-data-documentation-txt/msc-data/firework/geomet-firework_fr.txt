@@ -1,1 +1,4 @@
-$FIREWORK_FR$
+Nom                                   | Id       | Services web | Styles           
+--------------------------------------|----------|--------------|------------------
+Points chauds considérés par FireWork | HOTSPOTS | WFS, WMS     | DEFAULT: FIREWORK
+

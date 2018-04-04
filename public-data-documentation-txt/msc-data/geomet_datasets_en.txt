@@ -1,0 +1,25 @@
+MSC GeoMet Summary Data Table
+===============
+
+Short description here
+
+# Summary Table
+Dataset                                                       | Id              | MR        | FH                  | FHI | N.  
+--------------------------------------------------------------|-----------------|-----------|---------------------|-----|-----
+Canadian Weather                                              | weather         | N/A       | N/A                 | N/A | 0   
+Canadian Weather                                              | alerts          | N/A       | N/A                 | N/A | 0   
+Regional Air Quality Deterministic Prediction System (RAQDPS) | firework        | N/A       | N/A                 | N/A | 1   
+Other Weather Data                                            | weatheradio     | N/A       | N/A                 | N/A | 1   
+Hurricane trajectories                                        | hurricanetracks | N/A       | N/A                 | N/A | 4   
+Weather radar                                                 | radar           | N/A       | N/A                 | N/A | 8   
+Global Deterministic Prediction System (GDPS)                 | gdps            | 0,12      | 240,240             | 3   | 205 
+Regional Ensemble Prediction System (REPS)                    | reps            | 0,12      | 72,72               | 3   | 1268
+Regional Deterministic Precipitation Analysis (RDPA)          | rdpa            | 0,6,12,18 | -720,-720,-720,-720 | 6   | 4   
+High Resolution Deterministic Precipitation Analysis (HRDPA)  | hrdpa           | 0,6,12,18 | -720,-720,-720,-720 | 6   | 4   
+Regional Deterministic Prediction System (RDPS)               | rdps            | 0,6,12,18 | 48,54,48,54         | 1   | 137 
+High Resolution Deterministic Prediction System (HRDPS)       | hrdps           | 0,6,12,18 | 48,48,48,48         | 1   | 331 
+Canadian Arctic Prediction System (CAPS)                      | caps            | 0,12      | 48,48               | 1   | 165 
+Regional Deterministic Wave Prediction System (RDWPS)         | rdwps           | 0,6,12,18 | 48,54,48,54         | 3   | 83  
+Oceanography                                                  | riops           | 0,12      | 48,48               | N/A | 163 
+Oceanography                                                  | giops           | 0,12      | 240,240             | N/A | 163 
+

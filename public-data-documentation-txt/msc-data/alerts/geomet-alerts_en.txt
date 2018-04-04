@@ -1,1 +1,3 @@
-$ALERTS_EN$
+Name | Id | Web Services | Styles
+-----|----|--------------|-------
+

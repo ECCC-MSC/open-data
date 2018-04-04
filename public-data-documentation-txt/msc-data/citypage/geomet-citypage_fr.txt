@@ -1,1 +1,3 @@
-$WEATHER_FR$
+Nom | Id | Services web | Styles
+----|----|--------------|-------
+
