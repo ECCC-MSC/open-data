@@ -10,7 +10,7 @@ What's missing in this page:
 
 GeoMet provides access to the Environment Canada's Meteorological Service of Canada (MSC) raw numerical weather prediction (NWP) model data layers and the weather radar mosaic via two Open Geospatial Consortium web service standards: [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) and Keyhole Markup Language (KML). Meteorological layers are dynamically served through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools and on interactive web maps, and served through KML standard for easy display in tools such as Google Earth™.
 
-We're readying the next version of these web services, please refer to the []MSC GeoMet 2 Migration Guide](http://lists.ec.gc.ca/pipermail/geomet-info/2017-March/000039.html) for a summary of improvements and breaking changes. The new version can be tested right away on GeoMet-Beta.
+We're readying the next version of these web services, please refer to the [MSC GeoMet 2 Migration Guide](http://lists.ec.gc.ca/pipermail/geomet-info/2017-March/000039.html) for a summary of improvements and breaking changes. The new version can be tested right away on GeoMet-Beta.
 
 ## Targeted Users
 
