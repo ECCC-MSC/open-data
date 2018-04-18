@@ -48,7 +48,9 @@ Files in this repository:
  * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * templates/
  * Location of templates to be used for documenting MSC data
-
+* canada.ca/
+ * DPS content currently published on Canada.ca
+ 
 # Monitoring documentation changes
 
 How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
