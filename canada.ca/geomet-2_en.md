@@ -24,8 +24,8 @@ This service is aimed at specialized users and developers with meteorological an
 MSC GeoMet serves meteorological layers at multiple time steps in the [WMS standard](http://www.opengeospatial.org/standards/wms) along with the associated metadata in the ISO 19115 standard.
 
 MSC GeoMet web services are found on:<br>
-WMS: http://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities
-WCS: http://geo.weather.gc.ca/geomet/?lang=en&service=WCS&request=GetCapabilities
+WMS: http://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities<br>
+WCS: http://geo.weather.gc.ca/geomet/?lang=en&service=WCS&request=GetCapabilities<br>
 WFS: http://geo.weather.gc.ca/geomet/?lang=en&service=WFS&request=GetCapabilities
 
 ### Changes to the MSC GeoMet Services
