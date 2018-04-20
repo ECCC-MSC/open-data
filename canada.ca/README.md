@@ -26,6 +26,7 @@ Main changes from GeoMet-1 to GeoMet-2 versions:
 * updated intro to focus on WMS, removed KML
 * added mobile app in intro
 * removed mention of the upcoming migration to GeoMet 2 in intro
+* added URLs to WCS and WFS services
 * completely removed the "Keyhole Markup Language (KML)" subsection given this feature has been deprecated
 * removed or updated the FAQ subsections that refer to the deprecated KML capability
 * removed the FAQ subsection about contours, which is not true anymore thanks to the support of the SLD standard in GeoMet 2
@@ -35,6 +36,5 @@ Main changes from GeoMet-1 to GeoMet-2 versions:
 * updated EC to ECCC references
 
 Notes regarding the new page:
-* this documentation voluntarily don't mention WCS and WFS at this point
 * this doc doesn't mention GeoMet-2's REFERENCE TIME support to access previous NWP model runs, we keep such detailed info for the renewed full-fledge doc
 * the doc doesn't mention GeoMet-Beta either, users will be informed about GeoMet-Beta in the GeoMet-Info list
