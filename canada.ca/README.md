@@ -3,7 +3,8 @@
 # MSC GeoMet
 
 MSC GeoMet page:
-* URL: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html
+* En URL: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html
+* Fr URL: https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/outils-donnees-specialisees/services-web-geospatiaux.html
  
 ## MSC GeoMet 2 switchover documentation update
 
