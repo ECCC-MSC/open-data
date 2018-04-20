@@ -8,13 +8,13 @@ What's missing in this page:
 # Geospatial web services
 
 
-GeoMet provides access to the Environment and Climate Change Canada's Meteorological Service of Canada (MSC) open data, including raw numerical weather prediction (NWP) model data layers and the weather radar mosaic, via Open Geospatial Consortium web service standards such as the [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms). Meteorological layers are dynamically served through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps.
+GeoMet provides access to the Environment and Climate Change Canada's Meteorological Service of Canada (MSC) open data, including raw numerical weather prediction (NWP) model data layers and the weather radar mosaic, via Open Geospatial Consortium (OGC) web service standards such as the [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms). Meteorological layers are served dynamically through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps.
 
 
 ## Targeted Users
 
 
-This service is aimed at specialized users and developers with good meteorological and information technology knowledge who want to visualize weather data such as raw NWP models and the weather radar mosaic layers in common geospatial tools; want to integrate meteorological layers into their own platforms, or; want to display meteorological layers on interactive web maps for the web or on mobile devices.
+This service is aimed at specialized users and developers with meteorological and geospatial information technology knowledge who want to visualize weather data such as raw NWP models and the weather radar mosaic layers in common geospatial tools; want to integrate meteorological layers into their own platforms, or; want to display meteorological layers on interactive web maps for the web or on mobile devices.
 
 Data provided through MSC GeoMet is not appropriate for meteorological data processing. Please consult the [Meteorological Service of Canada's Datamart](http://dd.meteo.gc.ca/about_dd_apropos.txt) for such uses.
 
@@ -26,7 +26,7 @@ Data provided through MSC GeoMet is not appropriate for meteorological data proc
 MSC GeoMet serves meteorological layers at multiple time steps in the [WMS standard](http://www.opengeospatial.org/standards/wms) along with the associated metadata in the ISO 19115 standard.
 
 MSC GeoMet WMS server is found on :<br>
-http://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities.
+http://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities
 
 
 ### Changes to the MSC GeoMet Services
