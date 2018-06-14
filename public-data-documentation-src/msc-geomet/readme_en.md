@@ -53,9 +53,9 @@ The [OGC Web Map Service](http://www.opengeospatial.org/standards/wms) provides 
 
 Type of request :
 * [GetCapabilities](http://geo.weather.gc.ca/geomet/?version=1.3.0&service=WMS&request=GetCapabilities)
-* [GetMap](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT)
-* [GetFeatureInfo](http://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&X=1&Y=1&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=CRS:84&BBOX=-73.5,45.6,-73.6,45.4&WIDTH=1&HEIGHT=1)
-* [GetLegendGraphic](http://geo.weather.gc.ca/geomet//?LANG=E%26SERVICE=WMS%26VERSION=1.1.1%26REQUEST=GetLegendGraphic%26STYLE=TEMPERATURE%26LAYER=GDPS.ETA_TT%26format=image/png)
+* [GetMap](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&FORMAT=image/png)
+* [GetFeatureInfo](http://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&X=1&Y=1&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&SRS=EPSG:4326&BBOX=-180,-90,180,90&WIDTH=600&HEIGHT=400)
+* [GetLegendGraphic](http://geo.weather.gc.ca/geomet/?LANG=EN&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetLegendGraphic&STYLE=TEMPERATURE&LAYER=GDPS.ETA_TT&format=image/png)
 
 Version 1.1.1 & 1.3.0 are supported.
 
