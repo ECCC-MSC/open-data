@@ -97,8 +97,11 @@ Simply add this to a regular GetMap request : sld=link_to_sld
 
 ### Time
 
-* mention TIME=
-* mention the best practices and REFERENCE_TIME for model runs
-* examples
+* [TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-06-15T12:00:00Z&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&FORMAT=image/png)
+* [REFERENCE_TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-05-15T12:00:00Z&REFERENCE_TIME=2018-05-16T00:00:00Z&width=800&height=600&layers=RDPA.6F_PR&style=DEFAULT&FORMAT=image/png)
+* Geomet supports the Best Pratices from Open Geospatial Consortium (OGC). Reference document: [https://portal.opengeospatial.org/files/75946]
+* The TIME and REFERENCE_TIME parameters should be in the form: &TIME=:YYYY-MM-DDThh:mm:ss.SSSZ
+* If no TIME parameter is specified, then the local time is used by default.
+* Examples
  * https://openlayers.org/en/latest/examples/wms-time.html
  * http://leafletjs.com/examples/wms/wms.html
