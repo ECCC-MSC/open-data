@@ -63,7 +63,7 @@ Si vous désirez davantage d'information sur nos services et produits, n'hésite
 Environnement et changement climatique Canada offre un API pour accéder aux données météorologiques via les services web géospatiaux du SMC appelés GeoMet, à 
 travers le standard international reconnu WMS. La documentation se trouve ici:
 
-http://ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
+https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/outils-donnees-specialisees/services-web-geospatiaux.html
 
 Les données disponibles via WMS peuvent facilement être intégrées à des applications iOS, nous connaissons d'ailleurs plusieurs utilisations à succès de ce genre.
 
