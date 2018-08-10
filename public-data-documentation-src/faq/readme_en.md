@@ -88,7 +88,7 @@ http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 ## How can I download data?
 
 The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP), an open
-protocol with free librairies in numerous programming languages. This enables the user not only to be notified of available products as they're published, but also to receive them automatically if
+protocol with free libraries in numerous programming languages. This enables the user not only to be notified of available products as they're published, but also to receive them automatically if
 he so chooses.
 The service may be configured by the user to apply to a specific set of files (weather warnings, observations, model data, etc.) and thus may concern only those products of interest to the user.
 
@@ -133,7 +133,7 @@ For data feeds, available formats are as follows:
 * NUMERICA (ASCII)
 * GIF format (recent GIFs available for free on the MSC Datamart)
 * IRIS (raw) format
- * Specifications: http://www.vaisala.com/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
+ * Specifications: https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
 
 Details regards pricing are as follows:
 
