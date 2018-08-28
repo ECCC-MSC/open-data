@@ -82,8 +82,8 @@ Type of request :
 * [DescribeCoverage for GDPS TT](http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=DescribeCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600)
 * [GetCoverage for GDPS TT](http://geo.weather.gc.ca/geomet-beta/?version=1.0.0&service=WCS&request=GetCoverage&coverage=GDPS.ETA_TT&format=GTiff&bbox=-180,-90,180,90&crs=EPSG:4326&width=800&height=600)
 * [GetCoverage for RDPS TT](geo.weather.gc.ca/geomet-beta/?SERVICE=wcs&VERSION=1.0.0&REQUEST=GetCoverage&coverage=RDPS.ETA_TT&CRS=EPSG:4326&BBOX=-100,0,-45,80&WIDTH=1300&HEIGHT=1300&FORMAT=GEOTIFF_16)
-* [GetCoverage for CanSIPS PN](geo.weather.gc.ca/geomet-beta/?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=CANSIPS.HIND.MEM.ETA_PN-SLP.01&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-91.58203125000001,-56.42578125000001)&SUBSET=y(30.751277776257812,55.7765730186677)&FORMAT=image/tiff&REFERENCE_TIME=1981-01-01T00:00:00.000Z&TIME=1981-02-01T00:00:00.000Z)
-* [GetCoverage for RDPA-ARC PR](geo.weather.gc.ca/geomet-beta/?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.ARC_15km.24F_PR&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-154,-49)&SUBSET=y(38,81)&FORMAT=image/tiff&TIME=2012-10-02T12:00:00Z)
+* [GetCoverage for CanSIPS PN](geo.weather.gc.ca/geomet-beta/?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=CANSIPS.HIND.MEM.ETA_PN-SLP.01&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-91.58203125000001,-56.42578125000001)&SUBSET=y(30.751277776257812,55.7765730186677)&FORMAT=image/tiff&TIME=2019-06-01T00:00:00Z&REFERENCE_TIME=2018-06-01T00:00:00Z)
+* [GetCoverage for RDPA-ARC PR](geo.weather.gc.ca/geomet-beta/?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.ARC_15km.24F_PR&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-154,-49)&SUBSET=y(38,81)&FORMAT=image/tiff&TIME=2018-07-02T18:00:00Z)
 
 Version 1.0.0 and 2.0.1 are supported.
 
