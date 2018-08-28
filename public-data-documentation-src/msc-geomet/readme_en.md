@@ -97,11 +97,15 @@ Simply add this to a regular GetMap request : sld=link_to_sld
 
 ### Time
 
-* [TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-06-15T12:00:00Z&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&FORMAT=image/png)
-* [REFERENCE_TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-05-15T12:00:00Z&REFERENCE_TIME=2018-05-16T00:00:00Z&width=800&height=600&layers=RDPA.6F_PR&style=DEFAULT&FORMAT=image/png)
 * MSC GeoMet supports the OGC Best Practice for using Web Map Services (WMS) with Time-Dependent or Elevation-Dependent Data. Reference document: [http://www.opengis.net/doc/bp/wms-tnz/1.0]
 * The TIME and REFERENCE_TIME parameters should be in the form: &TIME=:YYYY-MM-DDThh:mm:ss.SSSZ
+* Layer-specific GetCapabilities: 
+ * MSC GeoMet's WMS GetCapabilities response is large given the number of layers available. Users accessing information for a specific layer, such as its currently valid temporal dimensions, can use the "LAYERS=" parameter to access the GetCapabilities information specific to that layer. Note that this feature is an extension to the WMS specification.
+ * Example of such a request: http://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layers=RADAR_1KM_RRAI
+* Example of requests:
+ * [TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-06-15T12:00:00Z&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&FORMAT=image/png)
+ * [REFERENCE_TIME](http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&TIME=2018-05-15T12:00:00Z&REFERENCE_TIME=2018-05-16T00:00:00Z&width=800&height=600&layers=RDPA.6F_PR&style=DEFAULT&FORMAT=image/png)
 * If no TIME parameter is specified, then the local time is used by default.
-* Examples
+* Support of time in off-the-shelf tools:
  * https://openlayers.org/en/latest/examples/wms-time.html
  * http://leafletjs.com/examples/wms/wms.html
