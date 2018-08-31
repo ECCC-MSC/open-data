@@ -14,9 +14,17 @@ Table of Content
 ----------------
 
 1. Change log
-  * Changes to datasets and associated systems
+  * Link to global changelog / Changes to datasets and associated systems
+  * TBD: should we provide a global changelog in addition to data-specific changelog?
 
-2. MSC Datasets
+  
+2. For each dataset users are provided:
+* Description
+* raw data access
+* access via web services
+* detailed documentation
+
+3. MSC Datasets
     * [Weather alerts](alerts/geomet-alerts_en.md)
     * Weather observations
         * [Weather radar](obs_radar/geomet-radar_en.md)

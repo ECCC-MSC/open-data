@@ -8,7 +8,8 @@
 MSC Datamart
 ==========
 
-Short description: weather data files available on an http server
+* Short description: weather data files available on an http server
+* Goal and objectives
 
 Table of Content
 ----------------
@@ -19,4 +20,5 @@ Table of Content
   * Public keyring
 2. Data formats (e.g. GRIB2)
 3. dd_info
-4. Support
+4. Support / reliability
+5. Change management
