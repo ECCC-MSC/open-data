@@ -142,4 +142,4 @@ It it the same steps for WFS and WCS.
 
 #### Google Earth
 
-Select Add then Image Overlay. Go in Refresh, then click on WMS parameters.Add URL (http://geoweather.gc.ca/geomet/).
+Select Add then Image Overlay. Go in Refresh, then click on WMS parameters. Add URL (http://geoweather.gc.ca/geomet/).

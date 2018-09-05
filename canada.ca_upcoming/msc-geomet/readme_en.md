@@ -114,3 +114,10 @@ Simply add this to a regular GetMap request : sld=link_to_sld
 * Support of time in off-the-shelf tools:
  * https://openlayers.org/en/latest/examples/wms-time.html
  * http://leafletjs.com/examples/wms/wms.html
+ 
+### Software
+
+See also what's in the how-to and merge with this?
+Are provided as a starting point for MSC GeoMet users, we do not endorse nor provide support for any of those software.
+
+QGIS, OpenLayers, Leaflet, [R interface](https://github.com/bcgov/geometr), ArcGIS (time support).
