@@ -61,7 +61,17 @@ Type of request :
 
 Version 1.1.1 & 1.3.0 are supported.
 
+#### Styles
+
 Browsing existing styles for a layer: users can use QGIS (free & open source: qgis.org) to view the list and visualize the available "WMS styles" (aka colorramps). In QGIS, menu Layer => Add layer => Add WMS layer, then connect to GeoMet, browse to the radar layer, expand the layer by clicking on the triangle, tadam! Here's all the available styles. There's 6 styles per 1km radar layer at the moment. You can add them all to the map and then toggle them on/off at will to view the differences in the existing styles.
+
+For GetMap requests, simply specify the style by appending &STYLES=
+
+The default style: http://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=17,-150,70,-50&CRS=EPSG:4326&WIDTH=800&HEIGHT=607&LAYERS=RADAR_1KM_RRAI&STYLES=&FORMAT=image/png
+
+With &STYLE=RADARURPPRECIPR8 : http://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=17,-150,70,-50&CRS=EPSG:4326&WIDTH=800&HEIGHT=607&LAYERS=RADAR_1KM_RRAI&STYLES=&FORMAT=image/png&STYLES=RADARURPPRECIPR8
+
+Choosing amongst existing styles is done client-side.
 
 ### WFS
 
