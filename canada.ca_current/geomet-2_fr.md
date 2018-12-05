@@ -7,7 +7,7 @@ What's missing in this page:
 
 #  Services web géospatiaux
 
-GeoMet du SMC donne accès aux données du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada, notamment les données brutes de modèles de prévision numérique du temps et de la mosaïque des radars météo, par le biais de standards de l'Open Geospatial Consortium (OGC). Les couches météorologiques sont dynamiquement servies par le biais du [standard Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) afin de permettre aux utilisateurs d'afficher les données météorologiques dans leurs propres outils, sur des cartes interactives en ligne et dans les applications mobiles.
+GeoMet du SMC donne accès aux données du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada, notamment les données brutes de modèles de prévision numérique du temps et de la mosaïque des radars météo, par le biais de standards de l'Open Geospatial Consortium (OGC). Les couches météorologiques sont dynamiquement servies par le biais du [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) afin de permettre aux utilisateurs d'afficher les données météorologiques dans leurs propres outils, sur des cartes interactives en ligne et dans les applications mobiles.
 
 
 ## Utilisateurs ciblés
@@ -19,21 +19,21 @@ Ce service vise les utilisateurs spécialisés et les développeurs ayant une co
 
 ### Web Map Service
 
-GeoMet du SMC sert les couches météorologiques à de multiples pas de temps par le biais du [standard Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) accompagné des métadonnées associées fournies selon le standard ISO 19115.
+GeoMet du SMC sert les couches météorologiques à de multiples pas de temps par le biais du [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) accompagné des métadonnées associées fournies selon le standard ISO 19115.
 
 Les services web GeoMet du SMC sont accessibles sur :<br>
-WMS: http://geo.weather.gc.ca/geomet/?lang=fr&service=WMS&request=GetCapabilities<br>
-WCS: http://geo.weather.gc.ca/geomet/?lang=fr&service=WCS&request=GetCapabilities<br>
-WFS: http://geo.weather.gc.ca/geomet/?lang=fr&service=WFS&request=GetCapabilities
+WMS: https://geo.weather.gc.ca/geomet/?lang=fr&service=WMS&request=GetCapabilities<br>
+WCS: https://geo.weather.gc.ca/geomet/?lang=fr&service=WCS&request=GetCapabilities<br>
+WFS: https://geo.weather.gc.ca/geomet/?lang=fr&service=WFS&request=GetCapabilities
 
 ### Modifications aux services web GeoMet du SMC
 
-Le SMC se doit d'être flexible dans sa manière de fournir ses données spécialisées aux usagers intéressés. Pour ce faire, nous devons être en mesure de faire des mises à jour et des changements à nos formats ou nos données mêmes en temps opportun, c'est-à-dire avec les avancements continus de la technologie et des standards. Le SMC ne s'engage nullement à utiliser un format ou standard particulier pour une période de temps prolongé. Le SMC n'a aucune obligation d'aviser les usagers à l'avance de changements sur le serveur, mais fera tous les efforts pour le faire lorsque possible, en informant les usagers inscrits à notre liste de distribution. Muni de cette information, il est de la responsabilité des usagers de s'assurer qu'ils s'adaptent aux modifications des formats, le moment d'émission, le type de données, etc. Afin de vous abonner à notre liste d'usagers GeoMet-Information, allez à : [liste de distribution GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
+Le SMC se doit d'être flexible dans sa manière de fournir ses données spécialisées aux usagers intéressés. Pour ce faire, nous devons être en mesure de faire des mises à jour et des changements à nos formats ou nos données mêmes en temps opportun, c'est-à-dire avec les avancements continus de la technologie et des standards. Le SMC ne s'engage nullement à utiliser un format ou standard particulier pour une période de temps prolongé. Le SMC n'a aucune obligation d'aviser les usagers à l'avance de changements sur le serveur, mais fera tous les efforts pour le faire lorsque possible, en informant les usagers inscrits à notre liste de distribution. Muni de cette information, il est de la responsabilité des usagers de s'assurer qu'ils s'adaptent aux modifications des formats, le moment d'émission, le type de données, etc. Afin de vous abonner à notre liste d'usagers GeoMet-Information, allez à : [liste de distribution GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
 
 
 ### Licence
 
-Les conditions d'utilisation et les obligations d'attribution envers Environnement et Changement climatique Canada sont définies dans le [texte de licence d'utilisation](http://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
+Les conditions d'utilisation et les obligations d'attribution envers Environnement et Changement climatique Canada sont définies dans le [texte de licence d'utilisation](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
 
 
@@ -64,7 +64,7 @@ Les services web GeoMet vous offrent :
 
 ### Puis-je utiliser les services GeoMet dans des produits commerciaux ?
 
-Oui. Vous devez spécifier que les données proviennent d'Environnement et Changement climatique Canada, veuillez-vous référer aux [détails dans la licence d'utilisation](http://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
+Oui. Vous devez spécifier que les données proviennent d'Environnement et Changement climatique Canada, veuillez-vous référer aux [détails dans la licence d'utilisation](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
 
 ### Puis-je afficher la légende des couches ?
