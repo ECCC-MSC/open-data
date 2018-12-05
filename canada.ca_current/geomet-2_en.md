@@ -8,7 +8,7 @@ What's missing in this page:
 # Geospatial web services
 
 
-MSC GeoMet provides access to the Environment and Climate Change Canada's Meteorological Service of Canada (MSC) open data, including raw numerical weather prediction (NWP) model data layers and the weather radar mosaic, via Open Geospatial Consortium (OGC) standards such as the [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms). Meteorological layers are served dynamically through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps.
+MSC GeoMet provides access to the Environment and Climate Change Canada's Meteorological Service of Canada (MSC) open data, including raw numerical weather prediction (NWP) model data layers, the weather radar composite and hydrometric data, via Open Geospatial Consortium (OGC) standards such as the [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms). Meteorological and hydrological layers are served dynamically through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps.
 
 
 ## Targeted Users

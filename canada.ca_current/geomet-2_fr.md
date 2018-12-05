@@ -7,7 +7,7 @@ What's missing in this page:
 
 #  Services web géospatiaux
 
-GeoMet du SMC donne accès aux données du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada, notamment les données brutes de modèles de prévision numérique du temps et de la mosaïque des radars météo, par le biais de standards de l'Open Geospatial Consortium (OGC). Les couches météorologiques sont dynamiquement servies par le biais du [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) afin de permettre aux utilisateurs d'afficher les données météorologiques dans leurs propres outils, sur des cartes interactives en ligne et dans les applications mobiles.
+GeoMet du SMC donne accès aux données du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada, notamment les données brutes de modèles de prévision numérique du temps, les données hydrométriques et de la mosaïque des radars météo, par le biais de standards de l'Open Geospatial Consortium (OGC). Les couches météorologiques et hydrométriques sont dynamiquement servies par le biais du [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) afin de permettre aux utilisateurs d'afficher les données météorologiques dans leurs propres outils, sur des cartes interactives en ligne et dans les applications mobiles.
 
 
 ## Utilisateurs ciblés
