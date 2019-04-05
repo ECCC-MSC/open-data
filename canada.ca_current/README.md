@@ -7,6 +7,7 @@ This content will be replaced by the [new Public data user documentation](../can
 Current DPS content on Canada.ca:
 * 'Weather tools: specialized data' root page
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data.html
+  * Original content: [specialized-data-ori_en.md](specialized-data-ori_en.md) and [specialized-data-ori_fr.md](specialized-data-ori_fr.md) kept for reference only
 * MSC Datamart
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/free-service.html
   * Original content: [datamart-ori_en.md](datamart-ori_en.md) and [datamart-ori_fr.md](datamart-ori_fr.md) kept for reference only
