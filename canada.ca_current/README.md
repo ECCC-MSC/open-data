@@ -9,7 +9,8 @@ Current DPS content on Canada.ca:
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data.html
 * MSC Datamart
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/free-service.html
-  * Newer version:
+  * Original content: [datamart-ori_en.md](datamart-ori_en.md) and [datamart-ori_fr.md](datamart-ori_fr.md) kept for reference only
+  * Newer version: [datamart_en.md](datamart_en.md) and [datamart_fr.md](datamart_fr.md)
 * MSC GeoMet
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html
   * Original content for GeoMet-1: [geomet-1_en.md](geomet-1_en.md) and [geomet-1_fr.md](geomet-1_fr.md) kept for reference only
