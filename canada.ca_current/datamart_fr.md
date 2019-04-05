@@ -7,7 +7,7 @@ What's missing in this page:
 
 En plus des traditionnelles [observations](http://weather.gc.ca/provincialsummary_table/pages/pe_obs_metric_f.html) et [prévisions](http://weather.gc.ca/forecast/public_bulletins_f.html)) sous forme de textes, les données météorologiques sous d'autres formes peuvent être très utiles aux particuliers ou aux entreprises, là où la planification et la prise de décision des sont sensibles aux conditions météorologiques. C'est pourquoi le Service météorologique d'Environnement Canada offre un vaste choix de données sur l’Internet, ce qui permet aux utilisateurs de télécharger ce dont ils ont besoin.
 
-Grâce à [ce service](http://dd.meteo.gc.ca/about_dd_apropos.txt), une grande sélection de données est disponible comme suit :
+Grâce à [ce service](https://dd.meteo.gc.ca/about_dd_apropos.txt), une grande sélection de données est disponible comme suit :
 
 * Trois modèles météo numériques horaires pour l'Amérique du Nord ou le monde sous forme de  grille binaire (GRIB);
 * prévisions de probabilité à partir de la technique de « prévisions d'ensemble »;
