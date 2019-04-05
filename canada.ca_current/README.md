@@ -19,7 +19,3 @@ Current DPS content on Canada.ca:
 * Fee-based weather data service
   * Live page: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/fee-based-service.html
   * Original content: [fee-based-ori_en.md](fee-based-ori_en.md) and [fee-based-ori_fr.md](fee-based-ori_fr.md) kept for reference only
-
-# NOTES
-* Canada.ca's MSC Datamart page is missing a link to the MSC Datamart!
-* Breadcrumbs don't allow users to find DPS's Canada.ca's root page anymore
