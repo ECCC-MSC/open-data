@@ -19,7 +19,7 @@ Through [this http service](https://dd.weather.gc.ca/about_dd_apropos.txt), user
 * Varied national and international weather bulletins in text format;
 * Air quality data;
 * Wave model data;
-* Trajectores data (hurricanes, storms);
+* Trajectories data (hurricanes, storms);
 * Climate data.
 
 New data, information and formats are added as they become available.
