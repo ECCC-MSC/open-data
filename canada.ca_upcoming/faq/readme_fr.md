@@ -4,14 +4,12 @@
 
 [TdM](../readme_fr.md) > FAQ
 
-FAQ des données publiques du SMC
-==========================================================
+# FAQ des données publiques du SMC
 
-Cette section contient les questions les plus fréquemment posées au sujet des données ouvertes du SMC disponibles sur le Datamart.
+Cette section contient les questions les plus fréquemment posées au sujet des données ouvertes du SMC.
 
 
-Table des matières
-----------------
+## Table des matières
 
 * [Quelles données peut-on trouver sur le Datamart du SMC ?](#quelles-donnees-peut-on-trouver-sur-le-datamart-du-smc)
 * [Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques en un temps et un lieu donné ?](#fournissez-vous-un-api-à-travers-lequel-il-serait-possible-d-accéder-aux-données-météorologiques-en-un-temps-et-un-lieu-donné)

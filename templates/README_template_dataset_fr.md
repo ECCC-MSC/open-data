@@ -76,3 +76,5 @@ Liste et liens vers les produits disponibles pour ce jeu de données.
 Lien vers a page du journal des changements (actuellement dans le Guide des produits du CMC)
 
 >*Exemple pour le SRPD*: [*Chronologie des changements au SRPD*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
+
+Autre option : ajouter des liens vers les annonces de dd-info qui détaillent ces changements ?
