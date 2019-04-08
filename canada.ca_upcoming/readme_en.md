@@ -27,15 +27,15 @@ available to private sector, academics, and the general public. Access to this o
     * [Archived data](TBD.md)
     * [Dedicated data feed](TBD.md): Cost-recovered services
 
-3. [Data discovery and metadata](https://open.canada.ca/en/open-data)
-    * The Meteorological Service of Canada's metadata is available on the Canadian Open Government portal, enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country
-
-4. [Licence](licence/readme_en.md)
+3. [Licence](licence/readme_en.md)
     * The main requirement is to clearly acknowledge Environment and Climate Change Canada as data source
 
-5. [How to: documented examples for frequent use cases](how-to/readme_en.md)
+4. [How to: documented examples for frequent use cases](how-to/readme_en.md)
     * Short description
 
-6. [Frequently asked questions](faq/readme_en.md)
+5. [Frequently asked questions](faq/readme_en.md)
+
+6. [Data discovery and metadata](https://open.canada.ca/en/open-data)
+    * The Meteorological Service of Canada's metadata is available on the Canadian Open Government portal, enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country
 
 7. [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
