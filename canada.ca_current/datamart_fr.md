@@ -9,7 +9,7 @@ En plus des traditionnelles [observations](http://weather.gc.ca/provincialsummar
 
 Grâce à [ce service](https://dd.meteo.gc.ca/about_dd_apropos.txt), une grande sélection de données est disponible comme suit :
 
-* Prévisions de modèles numériques (différentes échéances horaires disponibles selon les modèles) pour l'Amérique du Nord ou le monde en format GRIB;
+* Prévisions de modèles numériques (différentes échéances horaires disponibles selon les modèles) pour l'Amérique du Nord ou le monde au format GRIB2;
 * Prévisions de probabilité à partir de la technique de « prévisions d'ensemble »;
 * Profils verticaux des températures observées et prévues; 
 * Prévisions horaires, officielles, sous diverses formes (XML, CSV);

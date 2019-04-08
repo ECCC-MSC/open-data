@@ -9,7 +9,7 @@ Apart from the traditional text-based [observations](http://weather.gc.ca/provin
 
 Through [this http service](https://dd.weather.gc.ca/about_dd_apropos.txt), users can find a variety of data such as:
 
-* Numerical weather predicition data from different models (several forcast hours available according to the models) for North America or the world offered in GRIB format;
+* Numerical weather prediction data from different models (several forecast hours available according to the models) for North America or the world offered in the GRIB2 format;
 * Probability forecasts derived using a technique called “ensemble forecasting;”
 * Observed and forecast vertical temperature profiles; 
 * Official forecasts with hourly values in different formats (XML, CSV);
