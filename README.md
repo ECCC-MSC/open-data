@@ -17,10 +17,10 @@ Welcome! This documentation will tell you how to update and deploy new version o
 # Scope and objective
 
 MSC public data documentation is currently published at the following locations:
-* [MSC Datamart](https://dd.weather.gc.ca/)
+* [MSC Datamart](https://dd.meteo.gc.ca/about_dd_apropos.txt)
 * [Canada.ca](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data.html): 1 root pages and 3 sub-pages
 * [weather.gc.ca](https://weather.gc.ca/mainmenu/modelling_menu_e.html), especially in the 'Analyses and Modelling' section
-* [Collaboration server](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html), where the CMC Product Guide is currently hosted, along with various other related documentation
+* [Collaboration server](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html), where the CMC Product Guide is currently hosted, along with various other related documentation
 
 The objective is to build a new 'MSC Public data documentation' that will encompasses current documentation hosted on (A) MSC Datamart, (B) canada.ca's DPS pages and (C) the CMC Product Guide. This new documentation will replace the current DPS documentation on Canada.ca
 

@@ -5,14 +5,13 @@ What's missing in this page:
 * The mouseover tooltip for WMS: "Web Map Service", in the section: FAQ / Can I display layers' legends...
 * The FAQ section has its subsections folded by default
 
-# Geospatial web services
 
+# Geospatial web services
 
 MSC GeoMet provides access to the Environment and Climate Change Canada's Meteorological Service of Canada (MSC) open data, including raw numerical weather prediction (NWP) model data layers, the weather radar composite and hydrometric data, via Open Geospatial Consortium (OGC) standards such as the [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms). Meteorological and hydrological layers are served dynamically through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools, on interactive web maps and in mobile apps.
 
 
 ## Targeted Users
-
 
 This service is intended for specialized users and developers with knowledge of meteorological and geospatial information technology. Users may visualize or process weather data with common geospatial tools; integrate meteorological layers with other data into their own platforms, or; display meteorological layers on interactive web maps on the web or on mobile devices.
 
@@ -39,7 +38,6 @@ The conditions of use and need for attribution to Environment and Climate Change
 
 ## Frequently Asked Questions
 
-
 ### How can I use this data?
 
 MSC GeoMet weather layers may be accessed through the Web Map Service (WMS) standard.
@@ -48,7 +46,6 @@ MSC GeoMet weather layers may be accessed through the Web Map Service (WMS) stan
 * The layers available in the WMS standard can be accessed with a variety of software going from proprietary programs such as Esri's ArcGIS to open source solutions like QGIS.
 
 It is anticipated that MSC GeoMet weather layers will reach consumers through the development of applications by third parties.
-
 
 ### What are the benefits of using the MSC GeoMet web services?
 
@@ -61,16 +58,13 @@ With the MSC GeoMet web services you get:
 * The data is always up to date.
 * Ability to view multiple layers or data fields simultaneously.
 
-
 ### Can I use the MSC GeoMet services in commercial products?
 
 Yes. You need to specify that the data comes from Environment and Climate Change Canada, see the details in the [license text](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
-
 ### Can I display the layers' legends?
 
 Yes. Access to legends are specified by the WMS GetCapabilities request.
-
 
 ### Do I need to be connected to the Internet to use MSC GeoMet?
 
