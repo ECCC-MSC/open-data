@@ -9,9 +9,9 @@ Welcome! This documentation will tell you how to update and deploy new version o
 3. [File structure](#file-structure)
 4. [Monitoring documentation changes](#monitoring-documentation-changes)
 5. [Updating the documentation](#updating-the-documentation)
- * [Requirements](#requirements)
- * [Getting ready](#getting-ready)
- * [Update workflow](#update-workflow)
+  * [Requirements](#requirements)
+  * [Getting ready](#getting-ready)
+  * [Update workflow](#update-workflow)
 6. [Deploying the documentation](#deploying-the-documentation)
 
 # Scope and objective
@@ -40,15 +40,15 @@ Files are stored on GCcode, in the DPS repository: http://gitlab.ssc.etg.gc.ca/e
 
 Files in this repository:
 * README.md
- * This readme file!
+  * This readme file!
 * canada.ca_current/
- * Documentation currently published on canada.ca
+  * Documentation currently published on canada.ca
 * canada.ca_upcoming/
- * The development version of the new 'MSC public data documentation'
+  * The development version of the new 'MSC public data documentation'
 * scripts/
- * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
+  * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * templates/
- * Location of templates to be used for documenting MSC data
+  * Location of templates to be used for documenting MSC data
  
 # Monitoring documentation changes
 
@@ -81,44 +81,44 @@ Requirements to accept and publish modifications:
  * Click on `Fork` to fork the `dps` repository
  * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps.git`
 3. Configure your fork by specifying the upstream reference:
- * `cd dps`
- * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
+  * `cd dps`
+  * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
 1. Sync your fork
- * In a Terminal, while in your `dps` fork directory, update your local code with the dps source:
- * `git pull upstream master`
+  * In a Terminal, while in your `dps` fork directory, update your local code with the dps source:
+  * `git pull upstream master`
 2. Create and switch to a 'branch' where you'll make your changes
- * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
+  * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
 3. Make changes the `canada.ca_upcoming` folder in your local fork
- * Changes must include the English and French versions of the documentation
+  * Changes must include the English and French versions of the documentation
 4. (optional) Run [the documentation generation script](scripts/)
 5. Validate the resulting documentation in your fork
- * Both the Markdown and raw text versions
- * Validate both languages
- * Validate breadcrumbs
- * Validate tables layout and content
+  * Both the Markdown and raw text versions
+  * Validate both languages
+  * Validate breadcrumbs
+  * Validate tables layout and content
 6. Update the official repository
- * Make certain you're still on the branch you created at step 2 with the `git status` command
- * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
- * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
- * Submit a merge request to push new changes to your fork to the official repository. To proceed:
-   * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
-   * Click on 'Merge Requests' on the top-level menu
-   * Click on 'New merge request'
-   * Select the appropriate branch from your fork and then 'Compare branches and continue'
-   * Assign the merge request and click 'Submit merge request'
-   * If you're allowed to merge and are comfortable with the changes, you can `merge` right away. Otherwise, followup with the merge request's assignee
+  * Make certain you're still on the branch you created at step 2 with the `git status` command
+  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
+  * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
+  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
+    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
+    * Click on 'Merge Requests' on the top-level menu
+    * Click on 'New merge request'
+    * Select the appropriate branch from your fork and then 'Compare branches and continue'
+    * Assign the merge request and click 'Submit merge request'
+    * If you're allowed to merge and are comfortable with the changes, you can `merge` right away. Otherwise, followup with the merge request's assignee
 7. Update your fork's master branch
- * Go to your fork master branch: `git checkout master`
- * Update local master with dps source code: `git pull upstream master`
- * (optional) Push updated master to your fork: `git push`
+  * Go to your fork master branch: `git checkout master`
+  * Update local master with dps source code: `git pull upstream master`
+  * (optional) Push updated master to your fork: `git push`
    
 Tips:
- * Use `git status` to learn on which branch you currently are and get additional status info
- * Use `git remote -v` to confirm `origin` and `upstream` are properly set
- * Use `git checkout master` to go back to the master branch of your fork
+  * Use `git status` to learn on which branch you currently are and get additional status info
+  * Use `git remote -v` to confirm `origin` and `upstream` are properly set
+  * Use `git checkout master` to go back to the master branch of your fork
 
 # Deploying the documentation
 
