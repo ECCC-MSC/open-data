@@ -29,7 +29,7 @@ Quelques lignes décrivant sommairement les données (pour les systèmes NWP, do
 
 ### Licence
 
-Rappel de la licence et lien vers celle-ci
+Lien vers la licence
 
 ### Métadonnées
 
