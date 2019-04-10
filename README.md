@@ -109,7 +109,7 @@ Requirements to accept and publish modifications:
     * Click on 'New merge request'
     * Select the appropriate branch from your fork and then 'Compare branches and continue'
     * Assign the merge request and click 'Submit merge request'
-    * If you're allowed to merge and are comfortable with the changes, you can `merge` right away. Otherwise, followup with the merge request's assignee
+    * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
 7. Update your fork's master branch
   * Go to your fork master branch: `git checkout master`
   * Update local master with dps source code: `git pull upstream master`
