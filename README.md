@@ -107,7 +107,7 @@ Requirements to accept and publish modifications:
     * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
     * Click on 'Merge Requests' on the top-level menu
     * Click on 'New merge request'
-    * Select the appropriate branch from your fork and then 'Compare branches and continue'
+    * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/dps), and then click 'Compare branches and continue'
     * Assign the merge request and click 'Submit merge request'
     * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
 7. Update your fork's master branch
