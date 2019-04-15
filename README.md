@@ -4,7 +4,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
 
 # Table of Contents
 
-1. [Scope](#scope)
+1. [Scope](#scope-and-objectives)
 2. [Workflow overview](#workflow-overview)
 3. [File structure](#file-structure)
 4. [Monitoring documentation changes](#monitoring-documentation-changes)
@@ -14,7 +14,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
   * [Update workflow](#update-workflow)
 6. [Deploying the documentation](#deploying-the-documentation)
 
-# Scope and objective
+# Scope and objectives
 
 MSC public data documentation is currently published at the following locations:
 * [MSC Datamart](https://dd.meteo.gc.ca/about_dd_apropos.txt)
@@ -22,7 +22,7 @@ MSC public data documentation is currently published at the following locations:
 * [weather.gc.ca](https://weather.gc.ca/mainmenu/modelling_menu_e.html), especially in the 'Analyses and Modelling' section
 * [Collaboration server](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html), where the CMC Product Guide is currently hosted, along with various other related documentation
 
-The objective is to build a new 'MSC Public data documentation' that will encompasses current documentation hosted on (A) MSC Datamart, (B) canada.ca's DPS pages and (C) the CMC Product Guide. This new documentation will replace the current DPS documentation on Canada.ca
+The main objective is to build a new 'MSC Public data documentation' that will encompasses current documentation hosted on (A) MSC Datamart, (B) canada.ca's DPS pages and (C) the CMC Product Guide. This new documentation will replace the current DPS documentation on Canada.ca
 
 The writing of the documentation must consider the [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html) ([French version](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)).
 
