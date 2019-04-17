@@ -23,8 +23,8 @@ The Meteorological Service of Canada makes weather, climate, water and environme
   * [MSC GeoMet](msc-geomet/readme_en.md)
     * Short description: MSC GeoMet, Interactively accessing MSC data via geospatial web services
   * [Cost-recovered services](cost-recovered/readme_en.md)
-    * Archived data retrieval is offered on a cost-recovered basis
-    * Dedicated data feeds with 24/7 support are available to specialized users and may include data not directly available to the public
+    * Archived data retrieval
+    * Dedicated data feeds with 24/7 support
 
 ## [Licence](licence/readme_en.md)
   * The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, please refer to the Licence for details
