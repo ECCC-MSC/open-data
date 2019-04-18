@@ -9,10 +9,11 @@ The Meteorological Service of Canada makes weather, climate, water and environme
 
 ## [Available open data](msc-data/readme_en.md)
 
-  * The Meteorological Service of Canada provides up-to-date information on past, present and future weather conditions, climate, water and environmental information over Canada and the world. The main categories of data available are:
+  * The Meteorological Service of Canada provides up-to-date information on past, present and future weather, water, climate, and environmental information over Canada and the world. The main categories of data available are:
     * Weather alerts and public forecasts
     * Weather and water observations 
       * *Alex's note: I don't like 'Weather and water'... but I don't want to use "hydrological and hydrometric", too long... Suggestions? Furthermore, 'Environmental data' isn't listed* 
+      * Alex note2: WMO uses 'weather, water, climate and environment'
     * Weather and water forecasts
     * Climate data
 
