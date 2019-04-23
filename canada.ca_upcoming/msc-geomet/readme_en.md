@@ -5,23 +5,52 @@
 [TOC](../readme_en.md) > MSC GeoMet
 
 
-MSC GeoMet Web Services
-=======================
+# MSC GeoMet
 
 Short description: MSC GeoMet, Interactively accessing MSC data via geospatial web services
 
-Table of Content
-----------------
+MSC Datamart's introtext: The Meteorological Service of Canada (MSC) HTTP data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.
 
-NEED TO CLEAN UP THIS TOC
+
+## Access
+
+OLD: The MSC Datamart is located at https://dd.meteo.gc.ca/ .
+
+... MSC GeoMet, GeoMet-Climate, MSC GeoMet WFS3, MSC GeoMet-Beta
+
+
+## Geospatial web services
+
+* WMS
+* WCS
+* WFS 2/3
+* SLD
+
+
+## Announcement mailing list
+
+We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+
+
+## Support
+
+The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html).
+
+
+## NOTE
+
+Provide details / how-to in the other page?
+
+
+## Table of Content
+
+Canada.ca usually DON'T have table of contents. This will need to be integrated into content either directly of on multiple pages.
 
 * Geospatial web services
 	* Short description of WMS, WCS, WFS, SLD (copy from WOUDC)
 * Available data
 	* Link to layer list, give examples of requests and explain query parameters
 	* Table of Layer groups (list of first level, e.g. GDPS, GIOPS, radar, AQHI, Citypage, etc) with description, formats available (e.g. WMS: styles, WFS: formats, WCS: formats) as columns...
-* Support
-* GeoMet-Info
 
 second group to clean up as well:
 
@@ -37,14 +66,14 @@ second group to clean up as well:
 	* [WPS](#WPS)
     * [SLD](#SLD)
 * Link to layer list, give examples of requests and explain query parameters
-* GeoMet-Info
-* Geomet-beta
 
 Salvage content from current GeoMet doc: http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
 
 ## Services
 
-In addition to traditional data access mechanisms, GeoMet has made the archive available using geospatial web services adhering to publically available international standards. Web services are systems designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
+_remove all this?_
+
+In addition to traditional data access mechanisms, GeoMet has made the archive (NOT TRUE) available using geospatial web services adhering to publicly available international standards. Web services are systems designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
 
 The GeoMet web services adhere to open standards ratified by the [Open Geospatial Consortium (OGC)](http://www.opengeospatial.org/), and the [International Organization for Standardization (ISO)](http://www.isotc211.org/) which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in [World Meteorological Organization interoperability](http://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) as part of the [WMO Information System](http://www.wmo.int/pages/prog/www/WIS/) and are supported by numerous off the shelf open source or commercial tools.
 
@@ -99,9 +128,6 @@ Type of request :
 
 Version 1.0.0 and 2.0.1 are supported.
 
-### WPS
-
-The [OGC Web Processing Service](http://www.opengeospatial.org/standards/wps) provides a common interface to define rules, inputs, outputs for geospatial processing / calculations. Typical use of WPS includes custom processes (buffer, overlay). It is not implemented yet in GeoMet.
 
 ### SLD
 
