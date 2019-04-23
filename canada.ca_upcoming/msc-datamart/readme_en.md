@@ -28,8 +28,6 @@ The documentation about this service is found on the [MSC Datamart AMQP document
 
 
 * wget ... reference: https://weather.gc.ca/grib/usage_tips_e.html
-* Public keyring
-  * I asked Sandrine and Miguel to find out where any related documentation is available...
 
 In case of issues with the , an [alternative server is available](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
 
