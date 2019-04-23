@@ -5,7 +5,7 @@
 [TOC](../readme_en.md) > MSC Data
 
 TODO:
-* I suggest starting with simply updating all links below to link to current documentation on Datamart / WeatherOffice
+* I suggest starting with simply updating all links below to link to current documentation on Datamart / WeatherOffice. In most cases, the data is available on MSC Datamart and MSC GeoMet
 * Content of the [CMC Product Guide](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html) will eventually be included in the dataset pages or subpages, based on the dataset_template created by Sandrine
 
 
@@ -13,10 +13,12 @@ TODO:
 
 The Meteorological Service of Canada provides up-to-date information on past, present and future weather conditions, climate, water and environmental information over Canada and the world.
 
+
 ## Weather alerts and public forecasts
 
-* [Weather alerts](alerts/geomet-alerts_en.md)
-* Citypage Weather XML
+* Weather alerts
+* Current conditions and 7-days forecast for Canadian cities
+* Marine alerts and forecasts
 
 
 ## Observations 
