@@ -50,7 +50,7 @@ Data on the MSC Datamart is available in open formats. It includes:
 
 ## Announcement mailing list
 
-We encourage users to subscribe to the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) MSC Datamart announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.
+We encourage users to subscribe to the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.
 
 
 ## Support
