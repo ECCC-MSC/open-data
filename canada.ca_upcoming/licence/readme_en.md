@@ -79,4 +79,4 @@ In this licence, the terms below have the following meanings:
 
 ## 9. Versioning
 
-This is version 2.0 of Environment and Climate Change Canada Data Server End-use Licence.  The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the Information.
+This is version 2.0 of Environment and Climate Change Canada Data Server End-use Licence. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the Information.
