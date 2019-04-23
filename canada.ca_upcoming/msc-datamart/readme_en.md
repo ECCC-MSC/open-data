@@ -7,7 +7,7 @@
 
 # MSC Datamart
 
-The Meteorological Service of Canada (MSC) HTTP data server is a source of raw meteorological, environmental, hydrometric and climate data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.
+The Meteorological Service of Canada (MSC) HTTP data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.
 
 
 ## Access
@@ -26,15 +26,16 @@ The documentation about this service is found on the [MSC Datamart AMQP document
   
 ### Additional access methods
 
+An alternative server to the MSC Datamart is available, please refer to [the announcement for details](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
 
-* wget ... reference: https://weather.gc.ca/grib/usage_tips_e.html
+Users requiring one-time data retrieval may use [wget to download data from the MSC Datamart](https://weather.gc.ca/grib/usage_tips_e.html).
 
-In case of issues with the , an [alternative server is available](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
 
 ### MSC Datamart-Alpha
 
-http://dd.alpha.weather.gc.ca/
+The MSC Datamart-Alpha provides access to experimental and other non-operational data. This service is not operational.
 
+The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ .
 
 
 ## Data formats
@@ -46,10 +47,6 @@ Data on the MSC Datamart is available in open formats. It includes:
 * csv
 * XML
 
-do we need to mention the following here?
-* SWOB-XML
-* CAP-XML
-* GIF (the radar GIFs)
 
 ## Announcement mailing list
 
