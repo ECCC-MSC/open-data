@@ -48,6 +48,11 @@ Data on the MSC Datamart is available in open formats. It includes:
 * XML
 
 
+## Usage
+
+Information on using these services and examples are available on the [how-to page](../how-to/readme_en.md).
+
+
 ## Announcement mailing list
 
 We encourage users to subscribe to the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.
