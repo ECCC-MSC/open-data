@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+# =================================================================
+#
+# Copyright (c) 2017 Government of Canada
+#
+# =================================================================
+
 # function returning a list of row about layers using the geomet yaml
 from markdown_layer_table import DataLayer
 

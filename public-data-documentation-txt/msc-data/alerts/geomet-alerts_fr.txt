@@ -1,4 +1,0 @@
-Nom           | Id     | Services web | Styles                  
---------------|--------|--------------|-------------------------
-Alertes météo | ALERTS | WFS, WMS     | DEFAULT: ALERTS, ALERTES
-

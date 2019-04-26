@@ -1,46 +1,7 @@
 # -*- coding: utf-8 -*-
 # =================================================================
 #
-# Terms and Conditions of Use
-#
-# Unless otherwise noted, computer program source code of this
-# distribution is covered under Crown Copyright, Government of
-# Canada, and is distributed under the MIT License.
-#
-# The Canada wordmark and related graphics associated with this
-# distribution are protected under trademark law and copyright law.
-# No permission is granted to use them outside the parameters of
-# the Government of Canada's corporate identity program. For
-# more information, see
-# http://www.tbs-sct.gc.ca/fip-pcim/index-eng.asp
-#
-# Copyright title to all 3rd party software distributed with this
-# software is held by the respective copyright holders as noted in
-# those files. Users are asked to read the 3rd Party Licenses
-# referenced with those assets.
-#
 # Copyright (c) 2017 Government of Canada
-#
-# Permission is hereby granted, free of charge, to any person
-# obtaining a copy of this software and associated documentation
-# files (the "Software"), to deal in the Software without
-# restriction, including without limitation the rights to use,
-# copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following
-# conditions:
-#
-# The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-# OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-# HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-# WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-# OTHER DEALINGS IN THE SOFTWARE.
 #
 # =================================================================
 import ruamel.yaml
@@ -53,6 +14,13 @@ from markdown_layer_table import MarkDownLayerTable
 from markdown_dataset_table import MarkdownDatasetTable
 from markdown_dataset_dd_table import MarkdownDatasetDDTable
 
+import fnmatch
+
+#python 2.x
+# import urllib2
+#python 3.x
+import urllib.request
+
 
 # this section handle WHEN to parse and WHAT to input and WHERE to output
 def execute(input_yaml, input_folder, output_folder, is_raw):
@@ -64,16 +32,32 @@ def execute(input_yaml, input_folder, output_folder, is_raw):
     layers_data_list = parse_layers_yaml(code)
     dataset_list = parse_dataset_layer(code)
 
-    # send the templates to output and make a file_list of those files at their output repository
+    # Send the templates in input folder to output folder
     if output_folder != input_folder:
+        # Remove the output folder if it already exists
         if os.path.exists(output_folder):
             shutil.rmtree(output_folder)
+        # Create a copy of the content in input folder in the output 
         shutil.copytree(input_folder, output_folder)
-
-    file_list = [map(lambda x:path.join(base, x), md_file) for (base, _, md_file) in os.walk(input_folder)]
-    file_list = [os.path.join(output_folder, item.replace(input_folder, ''))
-                 for sublist in file_list for item in sublist]
-    file_list = [f for f in file_list if '.md' in f or '.txt' in f]
+    
+    # make a file_list of template files at their output repository
+    ### py V >= 3.5 (for filename in glob.iglob('src/**/*.c', recursive=True):)
+    file_list = [] # This will contain the path to every .md and .txt
+                   # file in output folder.
+    for root, dirnames, filenames in os.walk(output_folder):
+        # os.walk recursively list every file and subfolder in a
+        # directory. root contains the path to the parent folder, 
+        # dirnames the names of the subfolders (if the element is a
+        # directory and filenames the names of the files.
+        for filename in fnmatch.filter(filenames, '*.md'):
+            # filename contain the name of a file that finishes by .md
+            # the file is added to file_list
+            file_list.append(os.path.join(root, filename))
+        for filename in fnmatch.filter(filenames, '*.txt'):
+            # filename contain the name of a file that finishes by .txt
+            # the file is added to file_list
+            file_list.append(os.path.join(root, filename))
+    
     # modify the data
 
     layer_dict = layers_to_dict(code, layers_data_list)
@@ -104,12 +88,42 @@ def add_tables_to_file(table_dict, md_file):
     new_text = ''
     with codecs.open(md_file, 'r', 'utf-8') as input_md:
         for line in input_md:
-            ids = re.findall('\$([^$]*)\$', line)
-            for id_table in ids:
-                if id_table in table_dict:
-                    line = line.replace('$' + id_table + '$', table_dict[id_table])
+
+            if line.startswith('![alt text](htt'):
+                start = line.index('![alt text](') + len('![alt text](')
+                end = line.index(')')
+                link_collaboration = line[start:end]
+                link_datamart = link_collaboration.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
+                line_datamart = line.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
+                try:
+                    #python 2.x
+                    #response = urllib2.urlopen(link_collaboration)
+
+                    #python 3.x
+                    response = urllib.request.urlopen(link_collaboration)
+
+                except Exception as e:
+                    print (e)
+                    print(link_collaboration + ' in ' + md_file + 'for collaboration')
+                try:
+                    #python 2.x
+                    #response = urllib2.urlopen(link_datamart)
+
+                    #python 3.x
+                    response = urllib.request.urlopen(link_datamart)
+
+                except Exception as e:
+                    print (e)
+                    print(link_datamart + ' in ' + md_file + 'for Datamart')
+                new_text += line_datamart
+
             else:
-                new_text += line
+                ids = re.findall('\$([^$]*)\$', line)
+                for id_table in ids:
+                    if id_table in table_dict:
+                        line = line.replace('$' + id_table + '$', table_dict[id_table])
+                else:
+                    new_text += line
     os.remove(md_file)
     with codecs.open(md_file, 'w', 'utf-8') as output_md:
         output_md.write(new_text)

@@ -4,21 +4,27 @@ Welcome! This documentation will tell you how to update and deploy new version o
 
 # Table of Contents
 
-1. [Scope](#scope)
+1. [Scope](#scope-and-objectives)
 2. [Workflow overview](#workflow-overview)
 3. [File structure](#file-structure)
 4. [Monitoring documentation changes](#monitoring-documentation-changes)
 5. [Updating the documentation](#updating-the-documentation)
- * [Requirements](#requirements)
- * [Getting ready](#getting-ready)
- * [Update workflow](#update-workflow)
+  * [Requirements](#requirements)
+  * [Getting ready](#getting-ready)
+  * [Update workflow](#update-workflow)
 6. [Deploying the documentation](#deploying-the-documentation)
 
-# Scope
+# Scope and objectives
 
-MSC public data documentation which is published at the following locations:
-* [MSC Datamart](http://dd.weather.gc.ca/)
-* [ECCC-MSC on GitHub](https://github.com/ECCC-MSC)
+MSC public data documentation is currently published at the following locations:
+* [MSC Datamart](https://dd.meteo.gc.ca/about_dd_apropos.txt)
+* [Canada.ca](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data.html): 1 root pages and 3 sub-pages
+* [weather.gc.ca](https://weather.gc.ca/mainmenu/modelling_menu_e.html), especially in the 'Analyses and Modelling' section
+* [Collaboration server](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html), where the CMC Product Guide is currently hosted, along with various other related documentation
+
+The main objective is to build a new 'MSC Public data documentation' that will encompasses current documentation hosted on (A) MSC Datamart, (B) canada.ca's DPS pages and (C) the CMC Product Guide. This new documentation will replace the current DPS documentation on Canada.ca
+
+The writing of the documentation must consider the [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html) ([French version](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)).
 
 # Workflow overview
 
@@ -26,10 +32,9 @@ Here's an overview of the Public data documentation update process. Detailed pro
 
 1. Retrieve a local copy of the current public data documentation repository
 2. Update the source documentation
-3. Run the script which generates the output versions of the documentation
+3. (likely not required / obsolete) Run the script which generates the output versions of the documentation
 4. Validate the output documentation
-5. Request that these modifications are merged in the authoritative repository
-6. A Public data documentation steward publishes the new version to the MSC Datamart and GitHub
+6. A 'MSC public data documentation' steward publishes the new version to canada.ca
 
 # File structure
 
@@ -37,18 +42,16 @@ Files are stored on GCcode, in the DPS repository: http://gitlab.ssc.etg.gc.ca/e
 
 Files in this repository:
 * README.md
- * This readme file!
-* public-data-documentation-md/
- * The output Markdown documentation for publication on GitHub
-* public-data-documentation-src/
- * The source documentation in the Markdown format
-* public-data-documentation-txt/
- * The output raw text documentation for publication on MSC Datamart
+  * This readme file!
+* canada.ca_current/
+  * Documentation currently published on canada.ca
+* canada.ca_upcoming/
+  * The development version of the new 'MSC public data documentation'
 * scripts/
- * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
+  * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * templates/
- * Location of templates to be used for documenting MSC data
-
+  * Location of templates to be used for documenting MSC data
+ 
 # Monitoring documentation changes
 
 How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
@@ -63,15 +66,14 @@ This enables receiving modifications for the entire DPS repository.
 ## Requirements
 
 Requirement to update the source documentation:
-* A GCcode account
+* A [GCcode](http://gitlab.ssc.etg.gc.ca/) account
 
-Requirements to create the publication-ready versions of the documentation:
-* Requirements associated with running [the scripts](scripts/)
- * Python 2.7 with virtualenv and pip installed
+Requirements to run the optional [scripts](scripts/):
+* Python 3.4 with virtualenv and pip installed
 
-Requirements to accept and publish modifications
+Requirements to accept and publish modifications:
 * Write permissions to [the dps GCcode repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
-* A GitHub account and being member of [the ECCC-MSC organisation on GitHub](https://github.com/orgs/ECCC-MSC/people)
+* Canada.ca Adobe Experience Manager (AEM) account with permission to sumbit changes. At the moment, Sandrine and Alexandre at DPS have the privileges to submit new versions to Canada.ca
 
 ## Getting ready
 
@@ -81,49 +83,58 @@ Requirements to accept and publish modifications
  * Click on `Fork` to fork the `dps` repository
  * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps.git`
 3. Configure your fork by specifying the upstream reference:
- * `cd dps`
- * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
+  * `cd dps`
+  * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
 1. Sync your fork
- * In a Terminal, while in your `dps` fork directory, update your local code with the source:
- * `git pull upstream master`
+  * In a Terminal, while in your `dps` fork directory, update your local code with the dps source:
+  * `git pull upstream master`
 2. Create and switch to a 'branch' where you'll make your changes
- * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
-3. Make changes the `public-data-documentation-src` folder in your local fork
- * Changes must include the English and French versions of the documentation
-4. Run [the documentation generation script](scripts/)
+  * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
+3. Make changes the `canada.ca_upcoming` folder in your local fork
+  * Changes must include the English and French versions of the documentation
+4. (optional) Run [the documentation generation script](scripts/)
 5. Validate the resulting documentation in your fork
- * Both the Markdown and raw text versions
- * Validate both languages
- * Validate breadcrumbs
- * Validate tables layout and content
+  * Both the Markdown and raw text versions
+  * Validate both languages
+  * Validate breadcrumbs
+  * Validate tables layout and content
 6. Update the official repository
- * Make certain you're still on the branch you created at step 2 with the `git status` command
- * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
- * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
- * Submit a merge request to push new changes to your fork to the official repository. To proceed:
-   * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
-   * Click on 'Merge Requests' on the top-level menu
-   * Click on 'New merge request'
-   * Select the appropriate branch from your fork and then 'Compare branches and continue'
-   * Assign the merge request and click 'Submit merge request'
+  * Make certain you're still on the branch you created at step 2 with the `git status` command
+  * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
+  * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
+  * Submit a merge request to push new changes to your fork to the official repository. To proceed:
+    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
+    * Click on 'Merge Requests' on the top-level menu
+    * Click on 'New merge request'
+    * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/dps), and then click 'Compare branches and continue'
+    * Assign the merge request and click 'Submit merge request'
+    * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
 7. Update your fork's master branch
- * Go to your fork master branch: `git checkout master`
- * Update local master with source code: `git pull upstream master`
- * Push updated master to your fork: `git push`
+  * Go to your fork master branch: `git checkout master`
+  * Update local master with dps source code: `git pull upstream master`
+  * (optional) Push updated master to your fork: `git push`
    
 Tips:
- * Use `git status` to learn on which branch you currently are and get additional status info
- * Use `git remote -v` to confirm `origin` and `upstream` are properly set
- * Use `git checkout master` to go back to the master branch of your fork
+  * Use `git status` to learn on which branch you currently are and get additional status info
+  * Use `git remote -v` to confirm `origin` and `upstream` are properly set
+  * Use `git checkout master` to go back to the master branch of your fork
 
 # Deploying the documentation
 
-INCOMPLETE
-* Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
-* Management sign-off
-* Publication to MSC Datamart and GitHub
-* Announce the new version of the documentation to the appropriate channels
- * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
+## Initial deployment
+
+* Update and validate [the list of URL redirections](MSC-Datamart_URL-redirections.md) to create on the MSC Datamart
+* Request SSC to publish the URL redirections
+
+## Regular releases
+
+TO VALIDATE
+
+1. Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
+2. Management sign-off
+3. Publication to canada.ca: TO COMPLETE
+4. Announce the new version of the documentation through the appropriate channels
+  * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
