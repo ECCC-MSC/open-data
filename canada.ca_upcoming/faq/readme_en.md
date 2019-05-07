@@ -31,6 +31,7 @@ Alex's note: ideally content in the FAQ should be included in the actual documen
 * [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
 * [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
 * [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
+* [Can I have snow water equivalent data?](#can-i-have-snow-water-equivalent-data)
 * [What is the datum of model X?](#what-is-the-datum-of-model-x)
 * [Can I have the topography of model X?](#can-i-have-the-topography-of-model-x)
 * [Can I have the land sea mask of model X?](#can-i-have-the-land-sea-mask-of-model-x)
@@ -386,6 +387,20 @@ You can find RDPA-CaPA layers and in a near future you will be able to download 
 If you wish to be advise of any update, we recommend you to subscribe to the mailing list through :
 
 http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
+
+## Can I have rainfall amount data?
+
+The estimate for snow mass is likely valid over soil only. SNOD is available as an aggregated value but SDEN is available only for the soil fraction. The product SNOD x SDEN x factor for units likely provides the best estimate currently available for SWE. Be aware that DN from the soil fraction may or may not be representative of DN for the other surface types. 
+
+Hence, the micro equation for the calculation of the SWE in mm (equivalent to kg/m2) from the absolute density SDEN and the thickness SNOD is:
+
+    If the thickness is given in "cm" and SDEN in "kg/m3", what we have at the operations then : 
+
+SWE = (SNOD * SDEN) / 100 -- SWE is in mm (or kg/m2, it is the equivalent for water) 
+
+    If the thickness is given in "m" and SDEN in "kg/m3": 
+
+SWE = SNOD * SDEN -- SWE is in mm (kg/2)
 
 ## What is the datum of model X?
 
