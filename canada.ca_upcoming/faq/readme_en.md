@@ -390,7 +390,7 @@ http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
 
 ## Can I have snow water equivalent data?
 
-The estimate for snow mass is likely valid over soil only. SNOD is available as an aggregated value but SDEN is available only for the soil fraction. The product SNOD x SDEN x factor for units likely provides the best estimate currently available for SWE. Be aware that DN from the soil fraction may or may not be representative of DN for the other surface types. 
+The estimate for snow mass is likely valid over soil only. SNOD is available as an aggregated value but SDEN is available only for the soil fraction. The product SNOD x SDEN x factor for units likely provides the best estimate currently available for SWE. Be aware that SDEN from the soil fraction may or may not be representative of SDEN for the other surface types. 
 
 Hence, the micro equation for the calculation of the SWE in mm (equivalent to kg/m2) from the absolute density SDEN and the thickness SNOD is:
 
