@@ -112,7 +112,7 @@ http://dd.meteo.gc.ca/radar/doc/README_radar.txt
 
 We also provide the North-American weather radar mosaic as WMS geospatial web services:
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
+https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html
 
 The license terms for these products can be read here:
 
@@ -133,8 +133,10 @@ For data feeds, available formats are as follows:
 
 * NUMERICA (ASCII)
 * GIF format (recent GIFs available for free on the MSC Datamart)
-* IRIS (raw) format
- * Specifications: https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
+* IRIS (raw) format for the old C-Band radars and ODIM_H5 format for the new S-band radars
+* Specifications: 
+     - https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx 
+     - https://support.hdfgroup.org/HDF5/users5.html
 
 Details regards pricing are as follows:
 
