@@ -388,7 +388,7 @@ If you wish to be advise of any update, we recommend you to subscribe to the mai
 
 http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info
 
-## Can I have rainfall amount data?
+## Can I have snow water equivalent data?
 
 The estimate for snow mass is likely valid over soil only. SNOD is available as an aggregated value but SDEN is available only for the soil fraction. The product SNOD x SDEN x factor for units likely provides the best estimate currently available for SWE. Be aware that DN from the soil fraction may or may not be representative of DN for the other surface types. 
 
