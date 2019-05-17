@@ -13,10 +13,13 @@ Information and examples on how to access and use Meteorological Service of Cana
 
 * [Learn about the available data](#learn-about-the-available-data)
 * [How to visualize the data](#how-to-visualize-the-data)
-** [Desktop software](#desktop-software)
-** [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
-** [Direct access](#direct-access)
-* [How to download raw data](#how-to-download-raw-data)
+  * [Desktop software](#desktop-software)
+  * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
+  * [On-the-fly images](#on-the-fly-images)
+* [How to access raw data](#how-to-access-raw-data)
+  * [Raw data download](#raw-data-download)
+  * [Raw data web services](#raw-data-web-services)
+
 
 ## Learn about the available data
 
@@ -37,15 +40,17 @@ include an leaflet map with the radar composite layer
 Example of animated WMS in mobile app: MeteoCAN app interactive radar animation. Add image from ahmed with the radar layer with whirling
 
 
-### Direct access
+### On-the-fly images
 
-THAT HEADER IS BAD
+![Global Deterministic Prediction System (GDPS) surface temperature](http://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&format=image/png)              
 
-embed a picture of temperature over the world?
+![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=OCEAN.GIOPS.2D_SALW&format=image/png)              
 
-![RDPS TD](http://geo.weather.gc.ca/geomet/?VERSION=1.1.1&LAYERS=RDPS.ETA_TD&FORMAT=image%2Fpng&SERVICE=WMS&REQUEST=GetMap&SRS=EPSG:4326&BBOX=-140,20,-60,70&WIDTH=800&HEIGHT=500)
-                          
-update this image for WMS 1.3.0
+* + embed corresponding Legend as well?
+* careful, the height is breaking aspect ratio!!!
+* there's also west part of Canada is missing... crazy! QGIS shows it properly
+
+on montre l'image qui est associé au code et ensuite on explique les paramètres, un par un, avec les détails dans une sous-pages de la section de geomet
 
 
 ### Handling time
@@ -56,17 +61,30 @@ The WMS GetCapability response for that layer
 
 Temporal by default is now, closest past for model data.
 
+Users can use &layer= in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up to date temporal dimensions
+* Example for the 1km radar snow layer: https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO
+
+### Legends
+
 ### Customizing colors
 
 SLD standard… which software supports SLD for WMS… and provide an SLD file in the doc that for display in a leaflet window… do something cool with using the live clouds layer with some funky colorscale.
 
-## How to download raw data
+
+### legend
+
+## How to access raw data
+
+### Raw data download
 
 Data feeds: the MSC offers its data ..AMQP
 
 Direct access from the web browser and from scripting commands such as LINK-WGET.
 
-WCS , WFS or WFS3, with links.
+
+### Raw data web services
+
+WMS GetFeatureInfo, WCS , WFS or WFS3, with links. 
 
 Get the list of available datasets and corresponding time range from the GetCapabilities (not correct name for wfs3)
 
@@ -76,66 +94,18 @@ Formats see getcapa.. including GeoTIFF and netCDF
 
 NEW handling time section above. Examples with all services above, nothing time enabled on WFS1/2, right?  Link to WFS3 nonetheless
 
+what about time series?
 
 
 # NOTES TO CLEAN UP
 
 The following content all need to be moved / integrated or deleted. 
 
-NEED TO CLEAN UP THIS TOC:
-* Short description + disclaimer that we don't endorse any software
-* Viewing data
-* Static maps over an area (habillées ou non)
-* Time series
-  * Interactively view the weather data
-  * in ArcGIS Online
-* On the web
-* On your own web page
-  * in GoC OpenMaps (Federal Government only)
-* In a desktop software, such as QGIS and Google Earth
-* On a mobile phone
-* Downloading data
-    * AMQP, wget
-  * Pattern matching and triggers (on part, on file, on message)
-  * Working examples of retrieving MSC data with AMQP
-    * Vector data in WFS
-* Raster data in WCS
-* Time series
-
-second group, to clean up as well:
-* [Viewing data](#Viewing data)
-    * [WMS](#WMS)
-        * [GetMap](#GetMap)
-        * [GetFeatureInfo](#GetFeatureInfo)
-        * [GetLegendGraphic](#GetLegendGraphic)
-
-	* [WFS](#WFS)
-	    * [GetFeature](#GetFeature)
-	    * [DescribeFeatureType](#DescribeFeatureType)
-
-	* [WCS](#WCS)
-	    * [GetCoverage](#GetCoverage)
-	    * [DescribeCoverage](#DescribeCoverage)
-    * [Time series](#Time series)
-
-    * [Desktop software](#Desktop software)
-        * [ArcGIS](#ArcGIS)
-        * [QGIS](#QGIS)
-        * [Google Earth](#Google Earth)
-        * [SPI](#SPI)
-
-
-
 
 ## Viewing data
 
 ### WMS
 
-#### Display static map (GetMap)
-
-http://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&style=DEFAULT&format=PNG
-
-In this example, we can see a map of the layer GPDS.ETA_TT which correspond to temperature in an extent of the whole world on a png of 800 x 600 pixels.
 
 #### Get raw data on a specific pixel (GetFeatureInfo)
 
@@ -190,34 +160,9 @@ If an incorrect time is specified in a request, it will return an error message.
 **Time range** : http://geo.weather.gc.ca/geomet/?service=WMS&version=1.1.1&request=GetFeatureInfo&query_layers=GDPS.ETA_TT,GDPS.ETA_UU&info_format=text/plain&x=1&y=1&exceptions=xml&layers=GDPS.ETA_TT,GDPS.ETA_UU&crs=CRS:84&bbox=-73.5,45.6,-73.6,45.4&width=1&height=1&time=2016-12-16T12:00:00Z/2016-12-17T12:00:00Z
 
 
-### Use GeoMet with desktop software
-
-#### ArcGIS
-
-Select Add data. Look in GIS Server. Then Add WMS Server. Simply enter URL (http://geoweather.gc.ca/geomet/) and Get Layers.
-
-It it the same steps for WFS and WCS.
-
-#### QGIS
-
-Select Layer/Add WMS. Create new WMS connection. Enter a name and URL.
-
-Name : GeoMet
-
-URL : http://geo.weather.gc.ca/geomet/
-
-It it the same steps for WFS and WCS.
-
-#### Google Earth
-
-Select Add then Image Overlay. Go in Refresh, then click on WMS parameters. Add URL (http://geoweather.gc.ca/geomet/).
-
 
 * Geospatial web services
 	* Short description of WMS, WCS, WFS 2/3, SLD (copy from WOUDC)
-* Available data
-	* Link to layer list, give examples of requests and explain query parameters
-	* Table of Layer groups (list of first level, e.g. GDPS, GIOPS, radar, AQHI, Citypage, etc) with description, formats available (e.g. WMS: styles, WFS: formats, WCS: formats) as columns...
 
 second group to clean up as well:
 
