@@ -32,7 +32,7 @@ The End-use Licence determines the conditions for using the data and information
 
 ## [How to: documented examples for frequent use cases](how-to/readme_en.md)
 
-Short description _// remove this section for initial release?_
+Short description
 
 ## [Frequently asked questions](faq/readme_en.md)
 
