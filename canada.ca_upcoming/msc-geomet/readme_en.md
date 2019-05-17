@@ -15,7 +15,8 @@ Access to the MSC GeoMet services is anonymous and free of charge. These service
 
 ### GeoMet-Weather
 
-GeoMet-Weather provides public access to the Meteorological Service of Canada (MSC) weather, water and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.
+GeoMet-Weather provides public access to the Meteorological Service of Canada (MSC) weather, 
+ and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.
 
 Service capabilities:
 * GeoMet-Weather WMS URL: https://geo.weather.gc.ca/geomet?lang=en&service=WMS&request=GetCapabilities

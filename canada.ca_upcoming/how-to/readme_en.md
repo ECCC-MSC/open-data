@@ -5,16 +5,84 @@
 [TOC](../readme_en.md) > How to
 
 
-How to
-========
+# How to
 
-Short description
+Information and examples on how to access and use Meteorological Service of Canada open data.
 
-Table of Content
-----------------
+## Table of content
 
-NEED TO CLEAN UP THIS TOC
+* [Learn about the available data](#learn-about-the-available-data)
+* [How to visualize the data](#how-to-visualize-the-data)
+** [Desktop software](#desktop-software)
+** [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
+** [Direct access](#direct-access)
+* [How to download raw data](#how-to-download-raw-data)
 
+## Learn about the available data
+
+The Meteorological Service of Canada provides up-to-date information on past, present and future weather conditions, climate, water and environmental information over Canada and the world. [Details  on the available data is provided here](../msc-data/readme_en.md).
+
+## How to visualize the data
+
+### Desktop software 
+
+MSC open data can be visualized in any software that supports the OGC Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org).
+
+### Interactive web maps and mobile apps
+
+Leaflet, OpenLayers. Libraries can display be used to live web maps browsers, leaflet, openlayers, amongst many others. 
+
+include an leaflet map with the radar composite layer
+
+Example of animated WMS in mobile app: MeteoCAN app interactive radar animation. Add image from ahmed with the radar layer with whirling
+
+
+### Direct access
+
+THAT HEADER IS BAD
+
+embed a picture of temperature over the world?
+
+![RDPS TD](http://geo.weather.gc.ca/geomet/?VERSION=1.1.1&LAYERS=RDPS.ETA_TD&FORMAT=image%2Fpng&SERVICE=WMS&REQUEST=GetMap&SRS=EPSG:4326&BBOX=-140,20,-60,70&WIDTH=800&HEIGHT=500)
+                          
+update this image for WMS 1.3.0
+
+
+### Handling time
+
+SHOULD THIS BE HERE or in a section in itself? given the parameters also applies to WCS (below)... maybe we can have a summary of parameters here, with [details in a GeoMet subpage?] - yes?
+
+The WMS GetCapability response for that layer
+
+Temporal by default is now, closest past for model data.
+
+### Customizing colors
+
+SLD standard… which software supports SLD for WMS… and provide an SLD file in the doc that for display in a leaflet window… do something cool with using the live clouds layer with some funky colorscale.
+
+## How to download raw data
+
+Data feeds: the MSC offers its data ..AMQP
+
+Direct access from the web browser and from scripting commands such as LINK-WGET.
+
+WCS , WFS or WFS3, with links.
+
+Get the list of available datasets and corresponding time range from the GetCapabilities (not correct name for wfs3)
+
+Make a query, give example of the CCCS QueryUI for building Regional Deterministic Precipitation Analysis (RDPA) raw data queries, including from 2010???? to today’s analysis.
+
+Formats see getcapa.. including GeoTIFF and netCDF
+
+NEW handling time section above. Examples with all services above, nothing time enabled on WFS1/2, right?  Link to WFS3 nonetheless
+
+
+
+# NOTES TO CLEAN UP
+
+The following content all need to be moved / integrated or deleted. 
+
+NEED TO CLEAN UP THIS TOC:
 * Short description + disclaimer that we don't endorse any software
 * Viewing data
 * Static maps over an area (habillées ou non)
