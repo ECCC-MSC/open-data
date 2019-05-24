@@ -22,7 +22,7 @@ The service can filter specific sets of files (weather warnings, observations, m
 
 This is the recommended method to retrieve data from the MSC Datamart.
 
-The documentation about this service is found on the [MSC Datamart AMQP documentation](https://dd.meteo.gc.ca/doc/README_AMQP.txt).
+The documentation for this service is found on the [MSC Datamart AMQP documentation](https://dd.meteo.gc.ca/doc/README_AMQP.txt).
   
 ### Additional access methods
 
@@ -44,6 +44,7 @@ Data on the MSC Datamart is available in open formats. It includes:
 
 * [GRIB2](https://weather.gc.ca/grib/index_e.html)
 * netCDF
+* GeoJSON
 * csv
 * XML
 

@@ -1,3 +1,10 @@
+[En français](readme_fr.md)
+
+![ECCC logo](../img_eccc-logo.png)
+
+[TOC](../readme_en.md) > Cost-recovered data services
+
+
 # Cost-recovered data services
 
 The Meteorological Service of Canada offers the following cost-recovered data services. Anyone interested in those services is invited to [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html).

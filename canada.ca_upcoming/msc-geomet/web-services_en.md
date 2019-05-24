@@ -8,9 +8,24 @@
 This page will provide details on the MSC GeoMet web services, especially the capabilities and parameters. These come in addition to the how-to page
 
 We need a link from the readme_en.md to here
-___
+____
 
 
+Get the list of available datasets and corresponding time range from the GetCapabilities (not correct name for wfs3)
+
+Make a query, give example of the CCCS QueryUI for building Regional Deterministic Precipitation Analysis (RDPA) raw data queries, including from 2010???? to today’s analysis.
+
+Formats see getcapa.. including GeoTIFF and netCDF
+
+NEW handling time section above. Examples with all services above, nothing time enabled on WFS1/2, right?  Link to WFS3 nonetheless
+
+what about time series?
+
+[R interface](https://github.com/bcgov/geometr) - this is for GeoMet-Features only, right?
+
+----
+
+list supported CRS / geographic projections
 
 ### Handling time
 
@@ -177,7 +192,7 @@ Type of request :
 
 * [GetCapabilities](http://geo.weather.gc.ca/geomet/?version=1.1.0&service=WFS&request=GetCapabilities)
 * [GetFeature](http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=GetFeature&typename=CURRENT_CONDITIONS&SRS=EPSG:4326&BBOX=-73.6,45.4,-73.5,45.6)
-* [DescribeFeatureType](http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=DescribeFeatureType)
+* [DescribeFeatureType](http://geo.weather.gc.ca/geomet-beta/?version=1.1.0&service=WFS&request=DescribeFeatureType) => this results in an Internal Server Error!
 
 Version 1.0.0 & 1.1.0 are supported.
 

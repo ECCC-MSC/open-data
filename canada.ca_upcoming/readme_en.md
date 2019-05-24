@@ -32,7 +32,7 @@ The End-use Licence determines the conditions for using the data and information
 
 ## [How to: documented examples for frequent use cases](how-to/readme_en.md)
 
-Short description
+Overview and examples on how to access and use Meteorological Service of Canada's open data.
 
 ## [Frequently asked questions](faq/readme_en.md)
 
@@ -43,5 +43,3 @@ _remove this section for initial release?_
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country
 
 ## [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
-
-_there's already a contact us link at the bottom of every canada.ca page_
