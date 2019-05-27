@@ -1,52 +1,41 @@
-Gabarit de documentation d'un jeu de données publiques
-==========================================================
+# Gabarit pour les pages de Sommaire d'un jeu de données publiques
+
+Ce gabarit est utilisé pour les pages sous `/msc-data/`
+
+
+# Nom du jeu de données
 
 Courte description. Exemple inspiré du HRDPA : "Documentation des données de l'Analyse à haute résolution déterministe de précipitation (AHRDP) produites par le Environnement et changement climatique Canada."
 
-## Table des matières
-
-* [Description](#Description)
-* Accès
-  * License
-  * Métadonnées
-  * [Accès aux données brutes](#acces-aux-donnees-brutes)
-  * Accès par service web
-* Produits
-* Documentation technique
-* Registre des changements
 
 ## Description
 
-Quelques lignes décrivant sommairement les données (pour les systèmes NWP, donner l'acronyme), inspirées de la section "A propos" des README sur le Datamart du SMC.
+Quelques lignes décrivant sommairement les données (pour les systèmes NWP, donner l'acronyme), inspirées de la section "A propos" des README sur le Datamart du SMC. Important : la description longue utilisée ici devrait être la même que celle utilisée dans les métadonnées : [source des descriptions](https://gccode.ssc-spc.gc.ca/ec-msc/discovery-metadata/tree/master/mcf)
 
 > *Exemple pour le SRPD*:
 
 > *Données du Système régional de prévision déterministe (SRPD). Le modèle de prévision numérique du temps tourne sur une grille de résolution de 10 km au cœur de la grille. Les champs du jeu de données GRIB2 à haute résolution sont disponibles 4 fois par jour, sur une grille polaire stéréographique de 935 x 824 points couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord.*
 
-* NOTE : la description utilisée ici devrait être la même que celle utilisée dans les métadonnées ? Oui ! [Source des descriptions](https://gccode.ssc-spc.gc.ca/ec-msc/discovery-metadata/tree/master/mcf)
 
 ## Accès
 
+### Comment accéder aux données
+
+Ces données sont disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md). Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../how-to/readme_fr.md) est disponible.
+
+La documentation technique suivante est disponible :
+* Lien vers la sous-page du jeu de données pour le Datamart [exemple](../msc-datamart/giops_fr.md), si la sous-page existe
+* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe
+
 ### Licence
 
-Lien vers la licence
+Lien vers [la licence](../licence/readme_fr.md)
 
 ### Métadonnées
 
-Lien vers les métadonnées de ce jeu de données sur open.canada.ca
+Lien vers les métadonnées de ce jeu de données sur open.canada.ca si elles existent
 
 > *Exemple pour le SRPD*: [*Métadonnées des Prévisions Numériques du Temps (PNT)*](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/fre/692e7cc2-e545-45bb-bf7e-e1b725250b7a)
-
-### Accès aux données brutes
-
-* Liens vers la page de doc du Datamart ../msc-datamart/readme.md
-* Lien vers une sous-page décrivant les fichiers (nomenclature, contenu, grilles et niveaux pour les systèmes NWP, descriptions des variables, format de données, période de rétention sur le Datamart, etc.). Reprendre les descriptions des README. Lien vers le Datamart du SMC. Accès AMQP et lien vers page AMQP ../msc-datamart/amqp_en.md
-
-### Service web GeoMet du SMC
-
-* Lien vers d'accueil de GeoMet du SMC ../msc-geomet/readme.md
-* Lien vers la sous-page de l'accès à ces données via GeoMet, incluant la liste des couches disponibles pour les données en question
-
 
 ## Produits
 
@@ -73,8 +62,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données.
 
 ## Registre des changements
 
-Lien vers a page du journal des changements (actuellement dans le Guide des produits du CMC)
+Lien vers a page du journal des changements (actuellement dans le Guide des produits du CMC), si la page existe. Autre option : ajouter des liens vers les annonces de dd-info qui détaillent ces changements ?
 
 >*Exemple pour le SRPD*: [*Chronologie des changements au SRPD*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
 
-Autre option : ajouter des liens vers les annonces de dd-info qui détaillent ces changements ?
