@@ -21,7 +21,6 @@ GeoMet-Weather provides public access to the Meteorological Service of Canada (M
 Service capabilities:
 * GeoMet-Weather WMS URL: https://geo.weather.gc.ca/geomet?lang=en&service=WMS&request=GetCapabilities
 * GeoMet-Weather WCS URL: https://geo.weather.gc.ca/geomet?lang=en&service=WCS&request=GetCapabilities
-* GeoMet-Weather WFS URL: https://geo.weather.gc.ca/geomet?lang=en&service=WFS&request=GetCapabilities
 
 ### GeoMet-Climate
 
@@ -40,7 +39,7 @@ The source code for GeoMet-Climate and the Climate Data Extraction Tool is publi
 GeoMet-Features provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging [Open Geospatial Consortium (OGC) Web Feature Service (WFS) 3.0 standard](https://github.com/opengeospatial/WFS_FES). It provides access to hydrometric and climate data.
 
 Service capabilities:
-* GeoMet-Features WFS3 URL: https://geo.weather.gc.ca/geomet/features/?f=html
+* GeoMet-Features WFS 3 URL: https://geo.weather.gc.ca/geomet/features/?f=html
 
 ### GeoMet-Beta
 
@@ -49,7 +48,6 @@ GeoMet-Beta provides access to experimental and other non-operational data. This
 Service capabilities:
 * GeoMet-Beta WMS URL: https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&request=GetCapabilities
 * GeoMet-Beta WCS URL: https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&request=GetCapabilities
-* GeoMet-Beta WFS URL: https://geo.weather.gc.ca/geomet-beta?lang=en&service=WFS&request=GetCapabilities
 
 
 ## Usage
