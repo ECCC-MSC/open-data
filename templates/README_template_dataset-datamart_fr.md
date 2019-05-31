@@ -2,14 +2,23 @@
 
 Ce gabarit est utilisé pour les pages des jeux de données sous `/msc-datamart/`
 
-NOTES:
-* manque une section pour la grille des données, lorsque applicable
 
+## Nom du jeu de données
 
-# Nom du jeu de données
+Les données du [`nom de jeu de données` sont décrites sur la page sommaire](../msc-data/NOM_fr.md). Cette page fournit la documentation technique de ces données disponibles sur le [Datamart du SMC](msc-datamart_fr.md). Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../how-to/readme_fr.md) est disponible.
 
-Les données du [`nom de jeu de données` sont décrites sur la page sommaire](../msc-data/NOM_fr.md). Cette page fournis la documentation technique de ces données disponibles sur le [Datamart du SMC](msc-datamart_fr.md). Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../how-to/readme_fr.md) est disponible.
+## Adresse des données 
 
+Les données sont disponibles à l'adresse : http://dd.meteo.gc.ca.../HH/hhh/  (pour les données de modèle)
+
+où :
+
+    HH : Heure UTC du début de la passe du modèle [00,]
+    hhh : Heure de prévision [000, ]
+
+## Grille(s) disponible(s)
+
+Si pertinent, donner les desciptions des grilles et au besoin des images des domaines 
 
 ## Nomenclature des noms de fichiers 
 
