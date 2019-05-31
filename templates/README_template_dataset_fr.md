@@ -21,11 +21,12 @@ Quelques lignes décrivant sommairement les données (pour les systèmes NWP, do
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md). Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../how-to/readme_fr.md) est disponible.
+Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md): 
 
-La documentation technique suivante est disponible :
-* Lien vers la sous-page du jeu de données pour le Datamart [exemple](../msc-datamart/giops_fr.md), si la sous-page existe
+* Lien vers la sous-page du jeu de données pour le Datamart [exemple](../msc-datamart/giops_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe
+
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../how-to/readme_fr.md) est disponible.
 
 ### Licence
 
@@ -39,7 +40,7 @@ Lien vers les métadonnées de ce jeu de données sur open.canada.ca si elles ex
 
 ## Produits
 
-Liste et liens vers les produits disponibles pour ce jeu de données.
+Liste et liens vers les produits disponibles pour ce jeu de données, que ce soit sur le Guide des produits ou WxO.
 
 >*Exemples pour le SRPD*:
 >- *Prévisions à l'aviation*
@@ -53,7 +54,8 @@ Liste et liens vers les produits disponibles pour ce jeu de données.
 
 ## Documentation technique
 
-- Liens vers les documents techniques des données
+- Lien vers les documents techniques des données (essentiellement pour les données de modèles, les fiches techniques actuellement sur Collaboration)
+- Lien vers la note technique actuelle (essentiellement pour les données de modèles, actuellement sur Collaboration)
 - Liens vers articles scientifiques
 
 >*Exemple pour le SRPD*:
