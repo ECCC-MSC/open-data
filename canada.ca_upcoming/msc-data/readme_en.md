@@ -40,7 +40,7 @@ Numerical weather prediction:
 * Deterministic NWP systems
   * _mettre ces noms au long..._
   * [GDPS](nwp_gdps/geomet-gdps_en.md)
-  * [RDPS](nwp_rdps/geomet-rdps_en.md)
+  * [RDPS](nwp_rdps/readme_en.md)
   * [HRDPS](nwp_hrdps/geomet-hrdps_en.md)
   * [CAPS](nwp_caps/geomet-caps_en.md)
   * [RDPA](nwp_rdpa/geomet-rdpa_en.md)
