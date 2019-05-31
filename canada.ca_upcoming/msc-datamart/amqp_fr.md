@@ -1,6 +1,11 @@
+[In English](amqp_en.md)
+
 ![ECCC logo](../img_eccc-logo.png)
 
-[English](amqp_en.md) | [Français](amqp_fr.md)
+[TdM](../readme_fr.md) > [MSC Datamart](readme_fr.md) > AMQP
+
+
+# Protocole avancé de mise en file d'attente des messages
 
 ## À propos
 
