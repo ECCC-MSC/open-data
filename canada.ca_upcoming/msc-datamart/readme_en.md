@@ -12,7 +12,7 @@ The Meteorological Service of Canada (MSC) HTTP data server is a source of raw w
 
 ## Access
 
-The MSC Datamart is located at https://dd.meteo.gc.ca/ .
+The MSC Datamart is located at https://dd.weather.gc.ca/ .
 
 ### Real-time push notifications and data retrieval
   
@@ -22,7 +22,7 @@ The service can filter specific sets of files (weather warnings, observations, m
 
 This is the recommended method to retrieve data from the MSC Datamart.
 
-The documentation for this service is found on the [MSC Datamart AMQP documentation](https://dd.meteo.gc.ca/doc/README_AMQP.txt).
+The documentation for this service is found on the [MSC Datamart AMQP documentation](https://dd.weather.gc.ca/doc/README_AMQP.txt).
   
 ### Additional access methods
 
@@ -43,9 +43,9 @@ The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ .
 Data on the MSC Datamart is available in open formats. It includes:
 
 * [GRIB2](https://weather.gc.ca/grib/index_e.html)
-* netCDF
+* NetCDF
 * GeoJSON
-* csv
+* CSV
 * XML
 
 
