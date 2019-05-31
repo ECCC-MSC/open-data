@@ -1,8 +1,11 @@
+[En Français](amqp_fr.md)
+
 ![ECCC logo](../img_eccc-logo.png)
 
+[TOC](../readme_en.md) > [MSC Datamart](readme_en.md) > AMQP
 
-[English](amqp_en.md) | [Français](amqp_fr.md)
 
+# Advanced Message Queuing Protocol (AMQP)
 
 ## About
 
