@@ -25,22 +25,37 @@ Lien vers [la licence](../../licence/readme_fr.md)
 
 Liste et liens vers les produits disponibles pour ce jeu de données:
 
-Prévisions à l'aviation
-* [Carte 4 panneaux](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_aviation-package_avn_f.html)
-* [Plafond nuageux](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_4-panel-ceilings_avn_f.html)
->  - *Etc.*
+### Cartes de prévision
 
-Temps violent
-* [Indices Showalter et SWEAT](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_showalter-sweat-indices_ssw_f.html)
-* [Aide à la prévision de précipitation verglaçante](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_low-level-thickness-msl-precip_wsw_f.html)
->  - *Etc.*
+* [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/index_f.html)
+* [Produits de prévision du temps violent](https://meteo.gc.ca/model_forecast/severe_weather_f.html)
+* [Documentation](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/rdps_f.html)
+
+### Cartes d'analyse aerologique
+
+* [250hPa: Hauteur géopotentielle, vitesse du vent](https://meteo.gc.ca/data/analysis/sah_100.gif)
+* [500 hPa: Hauteur géopotentielle, épaisseurs 1000-500hPa](https://meteo.gc.ca/data/analysis/sai_100.gif)
+* [700 hPa: Hauteur géopotentielle, température, écart du point de rosée](https://meteo.gc.ca/data/analysis/saj_100.gif)
+* [850 hPa: Hauteur géopotentielle, température ](https://meteo.gc.ca/data/analysis/saa_100.gif)
+* [Documentation](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/analyses_f.html)
+
+### Produits pour l'aviation
+
+* [Turbulence et givrage](https://meteo.gc.ca/model_forecast/turb_f.html)
+
+### Produits pour l'astronomie
+
+* [Prévision des nuages](https://meteo.gc.ca/astro/clds_vis_f.html)
+* [Prévision de la scintillation des étoiles](https://meteo.gc.ca/astro/seeing_f.html)
+* [Prévision de la transparence du ciel](https://meteo.gc.ca/astro/transparence_f.html)
+* [Prévison près de la surface](https://meteo.gc.ca/astro/meteo_f.html)
 
 ## Documentation technique
 
-* [Version 5.0.0 du Système régional de prévision déterministe du SMC](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
+* [Version actuelle du système régional de prévision déterministe du SMC](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
-## Registre des changements
+## Registre des changements au système
 
 * [Chronologie des changements au SRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
 
