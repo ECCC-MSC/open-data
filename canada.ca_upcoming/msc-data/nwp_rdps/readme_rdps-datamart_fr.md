@@ -15,7 +15,20 @@ où :
 
 ## Spécification technique de la grille
 
-*A compléter (image, tableau des spécifications de la grille et fichier des coordonnées géographiques de chaque point de grille*
+![Image de la grille du système régional de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
+
+Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 935 |
+| nj | 824 | 
+| résolution à 60° N | 10km |
+| coordonnées du premier point de grille | 18.1429° N ; 142.8968° W | 
+| coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
+| orientation de la grille (par rapport à l’axe des j) | -111,0° | 
+
+Il existe aussi un fichier ASCII préformaté contenant les [coordonnées géographiques](https://meteo.gc.ca/grib/10km_res.bz2) de chaque point de grille. Vous pouvez télécharger ce fichier et le conserver pour référence.
 
 ## Nomenclature des noms de fichiers 
 
