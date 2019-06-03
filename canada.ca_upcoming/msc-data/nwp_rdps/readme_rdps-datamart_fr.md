@@ -25,7 +25,7 @@ où :
 
 ## Spécification technique de la grille
 
-![Image de la grille du Système régional de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
+![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 

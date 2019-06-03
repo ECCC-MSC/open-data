@@ -12,4 +12,4 @@ Les produits offerts aux clients comprennent :
 
 Pour obtenir de plus amples renseignements sur ces services, un aperçu des services de données offerts est disponible.
 
-Pour toutes questions au sujet des services de données, veuillez [communiquer avec nous](http://www.meteo.gc.ca/mainmenu/contact_us_f.html), nous pourrons discuter de vos besoins et voir comment y répondre.
+Pour toutes questions au sujet des services de données, veuillez [communiquer avec nous](https://www.meteo.gc.ca/mainmenu/contact_us_f.html), nous pourrons discuter de vos besoins et voir comment y répondre.

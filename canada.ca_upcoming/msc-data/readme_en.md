@@ -7,7 +7,7 @@
 TODO:
 * I suggest starting with simply updating all links below to link to current documentation on Datamart / WeatherOffice. In most cases, the data is available on MSC Datamart and MSC GeoMet
 * The 5 proposed data categories needs validation / review
-* Content of the [CMC Product Guide](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html) will eventually be included in the dataset pages or subpages, based on the dataset_template created by Sandrine
+* Content of the [CMC Product Guide](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html) will eventually be included in the dataset pages or subpages, based on the dataset_template created by Sandrine
 
 
 # MSC Public Open Data

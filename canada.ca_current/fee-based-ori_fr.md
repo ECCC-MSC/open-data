@@ -20,4 +20,4 @@ Exemples de données disponibles :
 
 Le service de diffusion Internet SFTP est disponible à un coût mensuel y compris soutien en tout temps. Le CMC offre également un service de désarchivage pour les données des modèles passés.
 
-Si vous souhaitez obtenir des données du CMC, veuillez [communiquer avec nous](http://www.meteo.gc.ca/mainmenu/contact_us_f.html).
+Si vous souhaitez obtenir des données du CMC, veuillez [communiquer avec nous](https://www.meteo.gc.ca/mainmenu/contact_us_f.html).

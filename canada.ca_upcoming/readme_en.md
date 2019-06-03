@@ -42,4 +42,4 @@ _remove this section for initial release?_
 
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country
 
-## [Contact us](http://weather.gc.ca/mainmenu/contact_us_e.html)
+## [Contact us](https://weather.gc.ca/mainmenu/contact_us_e.html)

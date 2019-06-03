@@ -12,4 +12,4 @@ The products offered to clients include:
 
 For more details on these types of services, a data services outline is available.
 
-If you have further questions about these data services, please [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html) to discuss your needs and how we can help.
+If you have further questions about these data services, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) to discuss your needs and how we can help.

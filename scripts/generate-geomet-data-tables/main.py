@@ -93,8 +93,8 @@ def add_tables_to_file(table_dict, md_file):
                 start = line.index('![alt text](') + len('![alt text](')
                 end = line.index(')')
                 link_collaboration = line[start:end]
-                link_datamart = link_collaboration.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
-                line_datamart = line.replace('http://collaboration.cmc.ec.gc.ca/', 'http://dd.meteo.gc.ca/')
+                link_datamart = link_collaboration.replace('https://collaboration.cmc.ec.gc.ca/', 'https://dd.meteo.gc.ca/')
+                line_datamart = line.replace('https://collaboration.cmc.ec.gc.ca/', 'https://dd.meteo.gc.ca/')
                 try:
                     #python 2.x
                     #response = urllib2.urlopen(link_collaboration)

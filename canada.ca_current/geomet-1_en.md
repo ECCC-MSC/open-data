@@ -8,7 +8,7 @@ What's missing in this page:
 # Geospatial web services
 
 
-GeoMet provides access to the Environment Canada's Meteorological Service of Canada (MSC) raw numerical weather prediction (NWP) model data layers and the weather radar mosaic via two Open Geospatial Consortium web service standards: [Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms) and Keyhole Markup Language (KML). Meteorological layers are dynamically served through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools and on interactive web maps, and served through KML standard for easy display in tools such as Google Earth™.
+GeoMet provides access to the Environment Canada's Meteorological Service of Canada (MSC) raw numerical weather prediction (NWP) model data layers and the weather radar mosaic via two Open Geospatial Consortium web service standards: [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) and Keyhole Markup Language (KML). Meteorological layers are dynamically served through the Web Map Service (WMS) standard to enable end-users to display meteorological data within their own tools and on interactive web maps, and served through KML standard for easy display in tools such as Google Earth™.
 
 We're readying the next version of these web services, please refer to the [MSC GeoMet 2 Migration Guide](http://lists.ec.gc.ca/pipermail/geomet-info/2017-March/000039.html) for a summary of improvements and breaking changes. The new version can be tested right away on GeoMet-Beta.
 
@@ -17,16 +17,16 @@ We're readying the next version of these web services, please refer to the [MSC 
 
 This service is aimed at specialized users and developers with good meteorological and information technology knowledge who want to visualize raw NWP models and the weather radar mosaic layers in common geospatial tools; want to integrate meteorological layers into their own platforms, or; want to display meteorological layers on interactive web maps for the web or on mobile devices.
 
-Data provided through GeoMet is not appropriate for meteorological data processing. Please consult the [Meteorological Service of Canada's Datamart](http://dd.meteo.gc.ca/about_dd_apropos.txt) for such uses.
+Data provided through GeoMet is not appropriate for meteorological data processing. Please consult the [Meteorological Service of Canada's Datamart](https://dd.meteo.gc.ca/about_dd_apropos.txt) for such uses.
 
 ## How to use the service
 
 ### Web Map Service
 
-GeoMet serves meteorological layers at multiple time steps in the [WMS standard](http://www.opengeospatial.org/standards/wms) along with the associated metadata in the ISO 19115 standard.
+GeoMet serves meteorological layers at multiple time steps in the [WMS standard](https://www.opengeospatial.org/standards/wms) along with the associated metadata in the ISO 19115 standard.
 
 GeoMet WMS server is found on :<br>
-http://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities.
+https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities.
 
 ### Keyhole Markup Language (KML)
 
@@ -34,7 +34,7 @@ GeoMet data is available in .KMZ format for use with Google Earth™ and other s
 
 To use Google Earth™ to view the GeoMet layers:
 
-1. [Download Google Earth™](http://earth.google.com/intl/en/) (available at no charge from the Google Earth™ website) if it is not already installed on your computer.
+1. [Download Google Earth™](https://earth.google.com/intl/en/) (available at no charge from the Google Earth™ website) if it is not already installed on your computer.
 
 2. Download and open the [GeoMet KML: GeoMet-E.kmz](https://www.canada.ca/content/dam/eccc/migration/main/meteo-weather/c0d9b3d8-d256-407d-a68f-c606d703105e/geomet-e.kmz) layers.
 
@@ -44,7 +44,7 @@ The MSC needs to be flexible in the manner in which it offers specialized data t
 
 ### License
 
-The conditions of use and need for attribution to Environment Canada are contained in the [license text](http://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
+The conditions of use and need for attribution to Environment Canada are contained in the [license text](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
 ## Frequently Asked Questions
 
@@ -75,7 +75,7 @@ With the GeoMet web services you get:
 
 ### Can I use the GeoMet services in commercial products?
 
-Yes. You need to specify that the data comes from Environment Canada, see the details in the [license text](http://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
+Yes. You need to specify that the data comes from Environment Canada, see the details in the [license text](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
 ### Can I display the layers' legends?
 
@@ -95,7 +95,7 @@ No, not with the WMS standard. Users needing to generate contour maps not curren
 
 ### Can I Access Hurricane and Tropical Storm Track Forecasts in WMS?
 
-No, the [Canadian Hurricane Centre](http://www.ec.gc.ca/ouragans-hurricanes/)'s hurricane and tropical storm track forecasts are only available in the GeoMet KML file.
+No, the [Canadian Hurricane Centre](https://www.ec.gc.ca/ouragans-hurricanes/)'s hurricane and tropical storm track forecasts are only available in the GeoMet KML file.
 
 ### Do I need to be connected to the Internet to use GeoMet?
 

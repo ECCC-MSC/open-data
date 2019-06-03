@@ -36,7 +36,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 * [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/index_f.html)
 * [Produits de prévision du temps violent](https://meteo.gc.ca/model_forecast/severe_weather_f.html)
-* [Documentation](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/rdps_f.html)
+* [Documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/rdps_f.html)
 
 ### Cartes d'analyse aerologique
 
@@ -44,7 +44,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [500 hPa: Hauteur géopotentielle, épaisseurs 1000-500hPa](https://meteo.gc.ca/data/analysis/sai_100.gif)
 * [700 hPa: Hauteur géopotentielle, température, écart du point de rosée](https://meteo.gc.ca/data/analysis/saj_100.gif)
 * [850 hPa: Hauteur géopotentielle, température ](https://meteo.gc.ca/data/analysis/saa_100.gif)
-* [Documentation](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/analyses_f.html)
+* [Documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/analyses_f.html)
 
 ### Produits pour l'aviation
 
@@ -59,10 +59,10 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Documentation technique
 
-* [Version actuelle du Système régional de prévision déterministe du SMC](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
+* [Version actuelle du Système régional de prévision déterministe du SMC](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
 ## Registre des changements au système
 
-* [Chronologie des changements au SRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
+* [Chronologie des changements au SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
 

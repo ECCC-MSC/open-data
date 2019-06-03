@@ -15,7 +15,7 @@ YAML='geomet.yml'
 DOC_SRC='../public-data-documentation-src'
 DOC_TXT='../public-data-documentation-txt'
 DOC_MD='../public-data-documentation-md'
-DD_BASEPATH='http://dd.weather.gc.ca/doc/'
+DD_BASEPATH='https://dd.weather.gc.ca/doc/'
 
 echo -e '\nPUBLIC DATA DOCUMENTATION GENERATION SCRIPT \n '
 

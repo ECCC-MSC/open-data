@@ -20,4 +20,4 @@ Examples of available data include:
 
 The internet SFTP push delivery is available on a monthly basis for a fee, and includes 24/7 support. CMC also offers a de-archiving service for past model data.
 
-If you are interested in obtaining a data feed from CMC, please [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html).
+If you are interested in obtaining a data feed from CMC, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).

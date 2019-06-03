@@ -9,7 +9,7 @@ Les données du [`nom de jeu de données` sont décrites sur la page sommaire](.
 
 ## Adresse des données 
 
-Les données sont disponibles à l'adresse : http://dd.meteo.gc.ca.../HH/hhh/  (pour les données de modèle)
+Les données sont disponibles à l'adresse : https://dd.meteo.gc.ca.../HH/hhh/  (pour les données de modèle)
 
 où :
 
@@ -35,7 +35,7 @@ où:
 Exemple: 
 Donner un exemple de noms de fichier typique
 
-Au besoin, décrire la nomenclature des éventuels multiples répertoires dans lesquels les fichiers pourraient se trouver (ex: http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE)
+Au besoin, décrire la nomenclature des éventuels multiples répertoires dans lesquels les fichiers pourraient se trouver (ex: https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE)
 
 ## Niveaux  
 

@@ -15,7 +15,7 @@
 Fichier README pour les fichiers du Système global de prévision océan-glace (SGPOG) disponibles sur le Datamart du Service météorologique du Canada (SMC).
 
 Ce document décrit les  données SGPOG en format NetCDF disponibles sur le serveur de données HTTP du SMC dans le répertoire :
-http://dd.meteo.gc.ca/model_giops/netcdf
+https://dd.meteo.gc.ca/model_giops/netcdf
 
 Le Centre de prévision météorologique et environnementale du Canada (CPMEC) fournit des champs prévisionnels produits par son Système global 
 de prévision océan-glace (SGPOG) et interpolées sur deux grilles usagers : une grille régulière latitude-longitude de 0.2° de résolution (latlon0.2x0.2) et une grille en projection polaire stéréographique nord d'une résolution de 5 km à une latitude de 60°N (ps5km60N).  À 00Z, Les champs fournis à l'échéance 0-heure correspondent à l'analyse SGPOG et sont valides à 00Z.  À toutes les autres échéances les champs correspondent à la prévision et sont moyennés dans le temps.  Les fichiers des données sont en format NetCDF (NetCDF-4 modèle classique), conformes aux conventions CF liées au climat et aux prévisions (Climate and Forecast Conventions).
@@ -28,15 +28,15 @@ Le SGPOG utilise le modèle océan-glace NEMO-CICE et fournit des analyses et pr
 * Fichier README pour les fichiers du Système global de prévision océan-glace (SGPOG) disponibles sur le Datamart du Service météorologique du Canada (SMC).
 
 * Pour consulter ce fichier en ligne, allez à :
-  http://dd.meteo.gc.ca/model_giops/doc/README_GIOPS.txt
+  https://dd.meteo.gc.ca/model_giops/doc/README_GIOPS.txt
 
 * Les fichiers sont produits par Environnement et Changement climatique Canada :
-  http://ec.gc.ca/
+  https://ec.gc.ca/
 
 ## Licence
 
 * Pour les conditions d'utilisation des données SGPOG, veuillez consulter les conditions générales d'utilisation des données du Datamart du SMC :
-  http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
+  https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 ## Métadonnées
 
@@ -45,7 +45,7 @@ Le SGPOG utilise le modèle océan-glace NEMO-CICE et fournit des analyses et pr
 ## Accès aux données brutes
 
  * Les fichiers SGPOG  se trouvent à l'adresse suivante :
-   http://dd.meteo.gc.ca/model_giops/netcdf                    
+   https://dd.meteo.gc.ca/model_giops/netcdf                    
 
    Un historique de 5 jours de prévision est stocké dans ce répertoire. Liens vers la page de doc du Datamart ../msc-datamart/readme.md
 
@@ -54,7 +54,7 @@ Le SGPOG utilise le modèle océan-glace NEMO-CICE et fournit des analyses et pr
 - Afin d'accommoder les utilisateurs des données du Service météorologique du Canada (SMC), ces données sont également accessibles au standard Web Map Service (WMS) par le biais des services web GeoMet.  Ce standard est particulièrement approprié pour visualiser ces données sur des cartes interactives sur le web ainsi que sur des applications mobiles (ex: téléphone intelligents), ou tout logiciel qui supporte le standard WMS.  Les données sont affichées à la demande et pour la région d'intérêt déterminée par l'utilisateur, ceci sans aucun téléchargement de fichiers.
 
 * La documentation de ce service est disponible ici :
-  http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1
+  https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1
 
 
 # Produits
@@ -112,10 +112,10 @@ Exemple de nom de fichier analyse :
 CMC_giops_votemper_depth_all_latlon0.2x0.2_2016120700_Anal000.nc
 
 Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
-http://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/  
+https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/  
 
 Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
-http://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
+https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
 
 où :
 - n : Numéro de la dimension spatiale des champs de prévision [2 ou 3]
@@ -139,7 +139,7 @@ où :
 - Des informations sur le format de fichier NetCDF et sur les conventions CF liées au climat et aux prévisions peuvent être trouvées aux adresses ci-dessous :
 
 - Network Common Data Form (NetCDF) :
-    http://www.unidata.ucar.edu/software/netcdf/
+    https://www.unidata.ucar.edu/software/netcdf/
 
 - Les conventions CF liées au climat et aux prévisions :
     http://cfconventions.org/
@@ -147,22 +147,22 @@ où :
 ## Liens vers articles scientifiques
 
 - Network Common Data Form (NetCDF) :
-- http://www.unidata.ucar.edu/software/netcdf/
+- https://www.unidata.ucar.edu/software/netcdf/
 
 - Les conventions CF liées au climat et aux prévisions :
 - http://cfconventions.org/
 
 - Outil Integrated Data Viewer (IDV) pour l'analyse et la visualisation de données géoscientifiques :
-- http://www.unidata.ucar.edu/software/idv/
+- https://www.unidata.ucar.edu/software/idv/
 
 - Outil pour visualiser les sorties de modèles en format NetCDF
-- http://www.giss.nasa.gov/tools/panoply
-- http://www.geo.uni-bremen.de/Interdynamik/images/stories/pdf/visualizing_netcdf_panoply.pdf
+- https://www.giss.nasa.gov/tools/panoply
+- https://www.geo.uni-bremen.de/Interdynamik/images/stories/pdf/visualizing_netcdf_panoply.pdf
 
 # Registre des changements
 
 Lien vers a page du journal des changements (actuellement dans le Guide des produits du CMC)
 
-- [*Système global de prévision océean-glace *](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)
+- [*Système global de prévision océean-glace *](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)
 
 - [*Annonces dd info *](https://lists.ec.gc.ca/pipermail/dd_info/2019-March/subject.html#325)

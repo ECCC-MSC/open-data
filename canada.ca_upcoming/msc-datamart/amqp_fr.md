@@ -60,7 +60,7 @@ https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
 ## Liens externes
 
 Protocol AMQP sur Wikipédia:
-http://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol 
+https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol 
 
 Librairie python pour AMQP: 
 https://pypi.python.org/pypi/amqplib

@@ -62,4 +62,4 @@ We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-
 
 ## Support
 
-The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html).
+The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).

@@ -5,7 +5,7 @@ What's missing in this page:
 
 # Service de données météorologiques gratuit
 
-En plus des traditionnelles [observations](http://weather.gc.ca/provincialsummary_table/pages/pe_obs_metric_f.html) et [prévisions](http://weather.gc.ca/forecast/public_bulletins_f.html) sous forme de textes, les données météorologiques sous d'autres formes peuvent être très utiles aux particuliers ou aux entreprises, là où la planification et la prise de décision des sont sensibles aux conditions météorologiques. C'est pourquoi le Service météorologique d'Environnement et Changement climatique Canada offre un vaste choix de données sur l’Internet, ce qui permet aux utilisateurs de télécharger ce dont ils ont besoin.
+En plus des traditionnelles [observations](https://weather.gc.ca/provincialsummary_table/pages/pe_obs_metric_f.html) et [prévisions](https://weather.gc.ca/forecast/public_bulletins_f.html) sous forme de textes, les données météorologiques sous d'autres formes peuvent être très utiles aux particuliers ou aux entreprises, là où la planification et la prise de décision des sont sensibles aux conditions météorologiques. C'est pourquoi le Service météorologique d'Environnement et Changement climatique Canada offre un vaste choix de données sur l’Internet, ce qui permet aux utilisateurs de télécharger ce dont ils ont besoin.
 
 Grâce à [ce service](https://dd.meteo.gc.ca/about_dd_apropos.txt), une grande sélection de données est disponible comme suit :
 
@@ -24,4 +24,4 @@ Grâce à [ce service](https://dd.meteo.gc.ca/about_dd_apropos.txt), une grande 
 
 De nouvelles données, et de l’information sous formes diverses sont ajoutées en fonction de leur disponibilité.
 
-Pour en en savoir davantage sur ce service, y compris comment accéder à notre serveur de données, veuillez [communiquer avec nous](http://www.weather.gc.ca/mainmenu/contact_us_f.html).
+Pour en en savoir davantage sur ce service, y compris comment accéder à notre serveur de données, veuillez [communiquer avec nous](https://www.weather.gc.ca/mainmenu/contact_us_f.html).

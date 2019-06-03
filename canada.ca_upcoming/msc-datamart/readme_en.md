@@ -35,7 +35,7 @@ Users requiring one-time data retrieval may use [wget to download data from the 
 
 The MSC Datamart-Alpha provides access to experimental and other non-operational data. This service is not operational.
 
-The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ .
+The MSC Datamart-Alpha is located at https://dd.alpha.weather.gc.ca/ .
 
 
 ## Data formats
@@ -61,4 +61,4 @@ We encourage users to subscribe to the [dd_info](https://lists.ec.gc.ca/cgi-bin/
 
 ## Support
 
-The MSC Datamart service is operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](http://www.weather.gc.ca/mainmenu/contact_us_e.html).
+The MSC Datamart service is operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).

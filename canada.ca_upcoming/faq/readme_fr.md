@@ -40,19 +40,19 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 Beaucoup de nos données sont disponibles sur le serveur de données ouvertes du Service météorologique canadien (SMC), appelé Datamart. Vous trouverez une courte 
 description des produits disponibles ainsi qu'un lien vers une documentation détaillée de chacun d'entre eux dans ce README:
 
-http://dd.meteo.gc.ca/about_dd_apropos.txt
+https://dd.meteo.gc.ca/about_dd_apropos.txt
 
 Les termes et conditions d'utilisation des données météorologiques d'Environnement et changement climatique Canada peuvent être consultés ici:
 
-http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
+https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 Nous offrons aussi des services web géospatiaux appelés GeoMet du SMC, dont la documentation se trouve ici:
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
+https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1c
 
 Une autre source décrivant les produits peut être trouvée dans le Guide des produits du CMC, disponible sur le site web Collaboration à cette adresse:
 
-http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/table_of_contents_e.html
+https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/table_of_contents_e.html
 
 Si vous désirez davantage d'information sur nos services et produits, n'hésitez pas à nous contacter via l'adresse: ec.dps-client.ec@canada.ca
 
@@ -67,7 +67,7 @@ Les données disponibles via WMS peuvent facilement être intégrées à des app
 
 Pour information, plus de 400 couches sont rassemblées dans le WMS GetCapabilities:
 
-http://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
+https://ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=C0D9B3D8-1#wms
 
 Nous sommes également en train de rendre disponibles davantage de données météo dans la famille de standards OGC (i.e, WMS, WCS, WFS, SLD). Voir l'annonce de la 
 version GeoMet-Beta:
@@ -82,7 +82,7 @@ Finallement, puisque GeoMet représente des couches en standards ouverts, les us
 pour accéder aux données demeurent stables et fiables. GeoMet répond à plus d'1 million de requêtes quotidiennement et peut être utilisé librement en autant que la 
 source des données soit attribuée. Voir la licence ci-dessous pour les détails: 
 
-http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
+https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 ## Comment peut-on télécharger les données ?
 
@@ -92,7 +92,7 @@ produits sur le Datamart lorsque ceux-ci sont publiés, mais aussi de les recevo
 fichiers (alertes météorologiques, observations, données de modèle, etc.) et ainsi viser seulement les produits d'intérêt pour l'usager.
 
 La documentation de ce service est disponible ici:
-http://dd.weather.gc.ca/doc/README_AMQP.txt
+https://dd.weather.gc.ca/doc/README_AMQP.txt
 
 Notez que la documentation originale mentionne le script "dd_subscribe" qui fonctionne à la fois avec Python2 et Python3, cependant nous allons migrer vers "sr_subscribe" 
 qui ne fonctionne qu'avec Python3. La documentation associée se trouve ici:
@@ -105,15 +105,15 @@ http://metpx.sourceforge.net/Install.html
 
 Les données radar disponibles gratuitement sur le serveur de données ouvertes du SMC sont les images GIF. Les informations au sujet de ce service sont disponibles ici:
 
-http://dd.meteo.gc.ca/radar/doc/README_radar.txt
+https://dd.meteo.gc.ca/radar/doc/README_radar.txt
 
 Nous offrons également la mosaique radar nord-américaine via les services web géospatiaux WMS:
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
+https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=C0D9B3D8-1
 
 La licence des termes d'utilisation pour ces produits se trouve ici:
 
-http://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
+https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 Aucun des points ci-dessus ne comprend les données brutes. Ceux-ci, ainsi que divers autres produits, sont fournis par un service à recouvrement de coûts. Dans le cadre 
 de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. Les termes sous lesquels ces produits sont fournis sont les mêmes
@@ -121,11 +121,11 @@ que ceux décrits dans la licence ci-dessus.
 
 La documentation concernant les formats de données radar peut être consultée ici:
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
+https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
 
 La documentation concernant les produits radar se trouve à l'adresse:
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
+https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
 Concernant les fils de données, les formats disponibles sont les suivants:
 
@@ -157,9 +157,9 @@ chargeons 99$/heure de travail nécessaire pour produire les données avec un co
 
 Les archives sont disponibles en format brut (IRIS) ou en format ASCII. Les informations concernant les formats et produits peuvent être consultées aux adresses:
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
+https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf
 
-http://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
+https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf
 
 Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire
 parvenir à l'adresse: ec.dps-client.ec@canada.ca
@@ -214,7 +214,7 @@ Nous avons une liste de diffusion pour distribuer les GENOTs, si cela vous inté
 Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez vous inscrire à la liste des GENOT 03. Vous pouvez trouver un exemple 
 d'un tel bulletin à l'adresse:
 
-http://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
+https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
 
 Finalement, nous vous recommandons fortement de vous inscrire à la list de diffusion du Datamart afin d'être averti de toute mise à jour ou changement concernant la 
 disponibilité des données. Vous pouvez vous abonner ici:

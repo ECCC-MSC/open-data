@@ -44,12 +44,12 @@ Liste et liens vers les produits disponibles pour ce jeu de données, que ce soi
 
 >*Exemples pour le SRPD*:
 >- *Prévisions à l'aviation*
->  - [*Carte 4 panneaux*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_aviation-package_avn_f.html)
->  - [*Plafond nuageux*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_4-panel-ceilings_avn_f.html)
+>  - [*Carte 4 panneaux*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_aviation-package_avn_f.html)
+>  - [*Plafond nuageux*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_4-panel-ceilings_avn_f.html)
 >  - *Etc.*
 >- *Temps violent*
->  - [*Indices Showalter et SWEAT*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_showalter-sweat-indices_ssw_f.html)
->  - [*Aide à la prévision de précipitation verglaçante*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_low-level-thickness-msl-precip_wsw_f.html)
+>  - [*Indices Showalter et SWEAT*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_showalter-sweat-indices_ssw_f.html)
+>  - [*Aide à la prévision de précipitation verglaçante*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/difax_reg_prog_low-level-thickness-msl-precip_wsw_f.html)
 >  - *Etc.*
 
 ## Documentation technique
@@ -59,12 +59,12 @@ Liste et liens vers les produits disponibles pour ce jeu de données, que ce soi
 - Liens vers articles scientifiques
 
 >*Exemple pour le SRPD*:
->- [*Version 5.0.0 du Système régional de prévision déterministe du SMC*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
->- [*Note technique*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
+>- [*Version 5.0.0 du Système régional de prévision déterministe du SMC*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
+>- [*Note technique*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
 ## Registre des changements
 
 Lien vers a page du journal des changements (actuellement dans le Guide des produits du CMC), si la page existe. Autre option : ajouter des liens vers les annonces de dd-info qui détaillent ces changements ?
 
->*Exemple pour le SRPD*: [*Chronologie des changements au SRPD*](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
+>*Exemple pour le SRPD*: [*Chronologie des changements au SRPD*](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
 
