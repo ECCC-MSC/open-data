@@ -1,4 +1,10 @@
-# Données et produits du Système régional de prévision déterministe (SRPD)
+[In English](readme_rdps-datamart_en.md)
+
+![ECCC logo](../img_eccc-logo.png)
+
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPD
+
+# Données et produits du Système régional de prévision déterministe
 
 Le Système régional de prévision déterministe (SRPD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 48 heures dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique inclut le Canada et les États-Unis. La résolution spatiale horizontale des données est de 10 km. Les données sont offertes pour 80 niveaux verticaux. Les prévisions sont exécutées quatre fois par jour.
 
@@ -6,24 +12,25 @@ Le Système régional de prévision déterministe (SRPD) procède à des calculs
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md): 
+Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md) :
 
 * [Données GRIB disponibles sur le Datamart du SMC](./readme_rdps-datamart_fr.md) 
-* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe
+* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe 
+  * NOTE: n'existe pas pour le SRPD
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../how-to/readme_fr.md) est disponible.
 
 ### Licence
 
-Lien vers [la licence](../../licence/readme_fr.md)
+La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
-[Métadonnées du système régional de prévision déterministe sur open.canada.ca](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/fre/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
+Les [métadonnées du Système régional de prévision déterministe sont accessible sur open.canada.ca](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
 
 ## Produits
 
-Liste et liens vers les produits disponibles pour ce jeu de données:
+Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ### Cartes de prévision
 
@@ -52,7 +59,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 
 ## Documentation technique
 
-* [Version actuelle du système régional de prévision déterministe du SMC](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
+* [Version actuelle du Système régional de prévision déterministe du SMC](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
 ## Registre des changements au système

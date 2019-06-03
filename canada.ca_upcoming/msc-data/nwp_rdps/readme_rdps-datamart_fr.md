@@ -1,10 +1,20 @@
+[In English](readme_rdps-datamart_en.md)
+
+![ECCC logo](../img_eccc-logo.png)
+
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > SRPD sur le Datamart du SMC
+
+
 # Données GRIB du système régional de prévision déterministe (SRPD)
 
-Sous le Système régional de prévision déterministe (SRPD), le modèle de prévision numérique du temps tourne sur une grille de résolution de 10 km au cœur de la grille. Les champs du jeu de données GRIB2 à haute résolution sont disponibles sur une grille polaire stéréographique de 935 x 824 points couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord.
+Les champs du jeu de données GRIB2 du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles sur une grille polaire stéréographique de 935 x 824 points couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord.
+
 
 ## Adresse des données 
 
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../how-to/readme_fr.md) est également disponible.
+
+Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
 Les données sont accessibles à l’adresse suivante : https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
 
@@ -15,7 +25,7 @@ où :
 
 ## Spécification technique de la grille
 
-![Image de la grille du système régional de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
+![Image de la grille du Système régional de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -76,12 +86,12 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 
 ## Liste des variables
 
-Attention: les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
+Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
     
 * [Variables disponibles à 00h](https://meteo.gc.ca/grib/REG_HR/REGIONAL_ps10km_P000_deterministic_f.html)
 * [Variables disponibles pour les heures suivant 00h](https://meteo.gc.ca/grib/REG_HR/REGIONAL_ps10km_PNONZERO_deterministic_f.html) 
 
-**Notes** :
+Notes :
 
 * La direction des composantes u (UGRD) et v (VGRD) du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j. Veuillez vous référer à la table de code 7 du standard GRIB pour de plus amples informations.
 * Les paramètres NLWRS_SFC, DSWRF_NTAT, DLWRF_NTAT sont donnés en quantités accumulées. L’intervalle temporel d’accumulation est spécifié selon la valeur numéro 4 de la table de code 5 du standard GRIB. En raison de l’accumulation sur une période, les unités d’origine (watts par mètre carré) deviennent des joules par mètre carré.
@@ -93,8 +103,10 @@ Depuis le 7 septembre 2016, un masque pour mieux représenter les zones où les 
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse: ec.dps-client.ec@canada.ca
+@sandrine : "Support" est déjà couvert ailleurs et la voie officielle est NIRT... à discuter ?
+
+Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca
 
 ## Annonces de la liste de diffusion dd_info 
 
-Les annonces reliées à ce jeu de données sont disponibles via [ICI](https://www.google.ca/search?q=rdps%20site%3Alists.ec.gc.ca%2Fpipermail%2Fdd_info%2F&safe=active&gws_rd=ssl_) 
+Les annonces reliées à ce jeu de données sont disponibles la liste [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
