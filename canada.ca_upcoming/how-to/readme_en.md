@@ -66,7 +66,7 @@ on montre l'image qui est associé au code et ensuite on explique les paramètre
 
 ### Raw data download
 
-MSC data can be automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP) protocol. _TO-DO: move one of the examples from https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe in this doc repos_
+MSC data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
 
 The raw data can also be directly downloaded from the web on the MSC Datamart data repository.
 
