@@ -1,8 +1,8 @@
 [In English](readme_rdps-datamart_en.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPD
+[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPD
 
 # Données et produits du Système régional de prévision déterministe
 
@@ -14,7 +14,7 @@ Le Système régional de prévision déterministe (SRPD) procède à des calculs
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md) :
 
-* [Données GRIB disponibles sur le Datamart du SMC](./readme_rdps-datamart_fr.md) 
+* [Données GRIB disponibles sur le Datamart du SMC](readme_rdps-datamart_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe 
   * NOTE: n'existe pas pour le SRPD
 
@@ -26,7 +26,7 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-Les [métadonnées du Système régional de prévision déterministe sont accessible sur open.canada.ca](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
+Les [métadonnées du Système régional de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
 
 ## Produits
 
