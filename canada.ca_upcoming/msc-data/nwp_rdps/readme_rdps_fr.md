@@ -62,7 +62,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [Version actuelle du Système régional de prévision déterministe du SMC](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
-## Registre des changements au système
+## Registre des changements 
 
 * [Chronologie des changements au SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
 
