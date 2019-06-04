@@ -5,7 +5,7 @@
 [TOC](../readme_en.md) > [MSC Datamart](readme_en.md) > AMQP
 
 
-# Advanced Message Queuing Protocol (AMQP)
+# Advanced Message Queuing Protocol
 
 ## About
 
@@ -15,7 +15,7 @@ The exact time of publication of the data on the Datamart is more or less predic
 
 Attempts to obtain Datamart data as soon as they appear on the server generate numerous premature queries that are obviously unsuccessful. This motivates the use of a more elegant and convenient solution for users.    
 
-To facilitate the retrieval of timely data on the Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol, making it  possible not only to be notified of the availability of products on the Datamart as they are published, but also to receive them automatically. 
+To facilitate the retrieval of timely data on the MSC Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the MSC Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol, making it  possible not only to be notified of the availability of products on the Datamart as they are published, but also to receive them automatically. 
 
 The service permits targeting notifications for a specific set of files (weather warnings, observations, data model, etc.) and thus notification for only those products of interest to the user.
 

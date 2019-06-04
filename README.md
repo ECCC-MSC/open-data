@@ -122,6 +122,21 @@ Tips:
   * Use `git remote -v` to confirm `origin` and `upstream` are properly set
   * Use `git checkout master` to go back to the master branch of your fork
 
+## Images in the documentation
+
+Adding images to the documentation:
+* In the markdown documentation, images are referenced by using `![image alt text](path to image)`
+
+Hosting images for the documentation on GitHub:
+* Images must **not** be added to the GCcode repository
+* Images are instead copied to the Collaboration server at `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/` with the same corresponding directory structure as the path in this Git repository
+  * Example: an image associated to `https://gccode.ssc-spc.gc.ca/ec-msc/dps/tree/master/public-data-documentation/canada.ca_upcoming/msc-data/nwp_rdps` is hosted in `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp-rdps/`
+* Sandrine and other colleagues at [CMOA](https://wiki.cmc.ec.gc.ca/wiki/CMOA) have permissions to copy images in those Collaboration folders
+
+Hosting images for the documentation on Canada.ca:
+* Images are added to Canada.ca directly as part of the documentation update process
+
+
 # Deploying the documentation
 
 ## Initial deployment
@@ -136,5 +151,6 @@ TO VALIDATE
 1. Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
 2. Management sign-off
 3. Publication to canada.ca: TO COMPLETE
-4. Announce the new version of the documentation through the appropriate channels
+4. Add or update remote images on the Collaboration server, if needed
+5. Announce the new version of the documentation through the appropriate channels
   * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
