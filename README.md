@@ -125,14 +125,23 @@ Tips:
 
 ## Images in the documentation
 
-Adding images to the documentation:
-* In the markdown documentation, images are referenced by using `![image alt text](path to image)`
+Readying images for publication:
+* Images must be optimized for the web, the following tips can be leveraged to reduce the size of images without significantly reducing quality
+* Use [GIMP](https://gimp.org) to manipulate the images. GIMP is already installed on CCMEP Linux desktops and installed on many Windows machines
+* Resize the image to the desired size `menu: Image > Scale Image`. A maximum width of 800px is suggested
+* Export the image in either `jpg` or `png` depending on the image content, `menu: File > Export as`. In case of doubt, export to both formats and validate which one is smaller. 
+  * jpg: don't save the thumbnail, remove the 'Comment', and select a quality around 80% (while previewing the result)
+  * png: disable all image metadata ('Save ...') and try with a Compression level of 8 or so
 
 Hosting images for the documentation on GitHub:
 * Images must **not** be added to the GCcode repository
-* Images are instead copied to the Collaboration server at `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/` with the same corresponding directory structure as the path in this Git repository
+* Images are instead copied to the publicly accessible Collaboration server at `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/` with the same corresponding directory structure as the path in this Git repository
   * Example: an image associated to `https://gccode.ssc-spc.gc.ca/ec-msc/dps/tree/master/public-data-documentation/canada.ca_upcoming/msc-data/nwp_rdps` is hosted in `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp-rdps/`
 * Sandrine and other colleagues at [CMOA](https://wiki.cmc.ec.gc.ca/wiki/CMOA) have permissions to copy images in those Collaboration folders
+  * Send images by email to Sandrine along with the desired path
+
+Adding images to the documentation:
+* In the markdown documentation, images are referenced by using `![image alt text](path to image)`
 
 Hosting images for the documentation on Canada.ca:
 * Images are added to Canada.ca directly as part of the documentation update process
