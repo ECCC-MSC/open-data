@@ -12,6 +12,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
   * [Requirements](#requirements)
   * [Getting ready](#getting-ready)
   * [Update workflow](#update-workflow)
+  * [Images in the documentation](#images-in-the-documentation)
 6. [Deploying the documentation](#deploying-the-documentation)
 
 # Scope and objectives
