@@ -16,7 +16,7 @@ The MSC Datamart is located at https://dd.weather.gc.ca/ .
 
 ### Real-time push notifications and data retrieval
   
-To facilitate the retrieval of timely data on the Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol. Not only does this enable the user to be notified of available products as they're published, but also to receive them automatically.
+To facilitate the retrieval of timely data on the MSC Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the MSC Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP) protocol. Not only does this enable the user to be notified of available products as they're published, but also to receive them automatically.
 
 The service can filter specific sets of files (weather warnings, observations, model data, etc.), enabling notifications only for products of interest to the user.
 
