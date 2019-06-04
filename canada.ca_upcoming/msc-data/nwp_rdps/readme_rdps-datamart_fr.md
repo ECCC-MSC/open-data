@@ -1,8 +1,8 @@
 [In English](readme_rdps-datamart_en.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > SRPD sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPD sur le Datamart du SMC
 
 
 # Données GRIB du système régional de prévision déterministe (SRPD)
@@ -27,7 +27,7 @@ où :
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+Valeurs données aux paramètres de la grille polaire stéréographique.
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -38,7 +38,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 | coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
 | orientation de la grille (par rapport à l’axe des j) | -111,0° | 
 
-Il existe aussi un fichier ASCII préformaté contenant les [coordonnées géographiques](https://meteo.gc.ca/grib/10km_res.bz2) de chaque point de grille. Vous pouvez télécharger ce fichier et le conserver pour référence.
+Il existe aussi un fichier ASCII préformaté contenant les [coordonnées géographiques](https://meteo.gc.ca/grib/10km_res.bz2) de chaque point de grille. 
 
 ## Nomenclature des noms de fichiers 
 
@@ -102,8 +102,6 @@ Notes :
 Depuis le 7 septembre 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
 ## Support
-
-@sandrine : "Support" est déjà couvert ailleurs et la voie officielle est NIRT... à discuter ?
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca
 
