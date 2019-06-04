@@ -9,13 +9,13 @@
 
 ## À propos
 
-Le serveur de données ouvertes HTTP appelé le ''Datamart du SMC'' est un service de téléchargement en temps réel, sur demande. L'usager doit en effet agir pour demander une donnée particulière, et la demande n'aura de succès que si la donnée a été préalablement publiée sur le serveur. 
+Le serveur de données ouvertes HTTP appelé le "Datamart du SMC" est un service de téléchargement en temps réel, sur demande. L'usager doit en effet agir pour demander une donnée particulière, et la demande n'aura de succès que si la donnée a été préalablement publiée sur le serveur. 
 
-Le moment exact de l'apparition des données sur le Datamart est plus ou moins prévisible : un nouvel avertissement météorologique peut y apparaître à tout moment, alors que certaines autres données ont un horaire de production assez régulier (mais tout de même sujet à des perturbations occasionnelles). Or, il peut être important pour certaines applications d'obtenir des données dès leur publication. 
+Le moment exact de l'apparition des données sur le Datamart du SMC est plus ou moins prévisible : un nouvel avertissement météorologique peut y apparaître à tout moment, alors que certaines autres données ont un horaire de production assez régulier (mais tout de même sujet à des perturbations occasionnelles). Or, il peut être important pour certaines applications d'obtenir des données dès leur publication. 
 
-Les tentatives d'obtenir des données du Datamart dès leur apparition sur le serveur génèrent de nombreuses requêtes prématurées qui sont évidemment infructueuses. Ceci motive l'utilisation d'une solution plus élégante et plus commode pour les usagers.
+Les tentatives d'obtenir des données du Datamart du SMC dès leur apparition sur le serveur génèrent de nombreuses requêtes prématurées qui sont évidemment infructueuses. Ceci motive l'utilisation d'une solution plus élégante et plus commode pour les usagers.
 
-Afin de faciliter l'obtention en temps opportun des données du Datamart, le Service météorologique du Canada (SMC) a donc mis en place un fil de données annonçant les fichiers disponibles sur le Datamart. Ce fil de données utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). Il devient ainsi possible non seulement d'être avisé de la disponibilité des produits sur le Datamart lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. 
+Afin de faciliter l'obtention en temps opportun des données du Datamart du SMC, le Service météorologique du Canada (SMC) a donc mis en place un fil de données annonçant les fichiers disponibles sur le Datamart du SMC. Ce fil de données utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). Il devient ainsi possible non seulement d'être avisé de la disponibilité des produits sur le Datamart du SMC lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. 
 
 Le service permet de cibler les notifications pour une série spécifique de fichiers (alertes météorologiques, observations, données de modèle, etc.) et ainsi viser seulement les produits d'intérêt pour l'usager.
 
@@ -41,7 +41,7 @@ Ce sujet est  : REPERTOIRE.DU.PRODUIT.SUR.LE.DATAMART
 
 ### Script d'utilisation
 
-Le script permettant de récupérer les produits sur le Datamart et de les placer dans un répertoire local choisi par l'usager, utilise le client Sarracenia (Souscrire, annoncer, et récursivement ré-annoncer afin de communiquer instantanément et ad vitam aeternam). 
+Le script permettant de récupérer les produits sur le Datamart du SMC et de les placer dans un répertoire local choisi par l'usager, utilise le client Sarracenia (Souscrire, annoncer, et récursivement ré-annoncer afin de communiquer instantanément et ad vitam aeternam). 
 
 Ce client est élaboré pour accomplir des téléchargements d´une façon très fiable et est largement utilisé au sein du gouvernement du Canada :
 
@@ -68,7 +68,7 @@ https://pypi.python.org/pypi/amqplib
 
 ## Pour nous joindre
 
-Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommandons fortement de vous inscrire à la liste de diffusion du Datamart afin d'être averti de tout changement ou mise à jour des données disponibles.
+Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommandons fortement de vous inscrire à la liste de diffusion du Datamart du SMC afin d'être averti de tout changement ou mise à jour des données disponibles.
 
 Vous pouvez vous inscrire ici :
 
