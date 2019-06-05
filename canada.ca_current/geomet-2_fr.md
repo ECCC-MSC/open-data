@@ -19,12 +19,11 @@ Ce service vise les utilisateurs spécialisés et les développeurs ayant une co
 
 ### Web Map Service
 
-GeoMet du SMC sert les couches météorologiques à de multiples pas de temps par le biais du [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) accompagné des métadonnées associées fournies selon le standard ISO 19115.
+GeoMet du SMC sert les couches météorologiques, environnementales et hydrométriques à de multiples pas de temps par le biais des standards [Web Map Service (WMS) standard](https://www.opengeospatial.org/standards/wms) et [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs).
 
 Les services web GeoMet du SMC sont accessibles sur :<br>
 WMS: https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities<br>
 WCS: https://geo.weather.gc.ca/geomet?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities<br>
-WFS: https://geo.weather.gc.ca/geomet?lang=fr&service=WFS&version=2.0.0&request=GetCapabilities
 
 ### Modifications aux services web GeoMet du SMC
 
