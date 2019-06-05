@@ -26,7 +26,7 @@ Data provided through GeoMet is not appropriate for meteorological data processi
 GeoMet serves meteorological layers at multiple time steps in the [WMS standard](https://www.opengeospatial.org/standards/wms) along with the associated metadata in the ISO 19115 standard.
 
 GeoMet WMS server is found on :<br>
-https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities.
+https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities
 
 ### Keyhole Markup Language (KML)
 
