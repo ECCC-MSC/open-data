@@ -34,7 +34,7 @@ or, in the case where data comes from multiple originators:
 
 * If the Information Provider or the Third Party Information Contributor does not provide a specific attribution statement, or if you are using Information from several information providers and multiple attributions are not practical for your product or application, you must use the following attribution statement:
 
-Contains information licensed under the Data Server End-use Licence of Environment and Climate Change Canada.
+Contains information licenced under the Data Server End-use Licence of Environment and Climate Change Canada.
 
 The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.
 
@@ -43,7 +43,7 @@ The terms of this licence are important, and if you fail to comply with any of t
 This licence does not grant you any right to use:
 
 * Personal Information;
-* Third party rights that the Information Provider or the Third Party Information Contributor is not authorized to license;
+* Third party rights that the Information Provider or the Third Party Information Contributor is not authorized to licence;
 * The names, crests, logos, or other official symbols of the Information Provider or Third Party Information Contributor; and
 * Information subject to other intellectual property rights, including patents, trade-marks and official marks.
 
@@ -53,7 +53,7 @@ This licence does not grant you any right to use the Information in a way that s
 
 ## 6. No Warranty
 
-The Information is licensed “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
+The Information is licenced “as is”, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.
 
 The Information Provider or Third Party Information Contributor is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.
 
