@@ -59,7 +59,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 
 ## Registre des changements
 
-*Lien vers la page du journal des changements (actuellement dans le Guide des produits du CMC), si la page existe.*
+*Lien vers la page du journal des changements des systèmes opérationnels (actuellement dans le Guide des produits du CMC) A revoir plus tard si meilleure option.*
 
->Exemple pour le SRPD: [Chronologie des changements au SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
+La chronologie des changements apportés aux sytèmes opérationnels sont disponibles dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.
 
