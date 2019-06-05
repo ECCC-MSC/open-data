@@ -30,9 +30,9 @@ WCS: https://geo.weather.gc.ca/geomet?service=WCS&version=2.0.1request=GetCapabi
 
 The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology and standards do change continuously. The MSC does not guarantee using any specific formats for any prolonged period of time. We are under no obligation to notify the users in advance of any changes, but we will make every effort, when possible, to inform users subscribed to our mailing list. With that information available, it will be the responsibility of users to ensure they can adapt to upcoming changes in formats, times of issuance, types of data, etc. In order to subscribe to our GeoMet-Information mailing list, please go to: [GeoMet-Info Mailing List](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
 
-### License
+### Licence
 
-The conditions of use and need for attribution to Environment and Climate Change Canada are contained in the [license text](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
+The conditions of use and need for attribution to Environment and Climate Change Canada are contained in the [licence text](https://dd.weatheroffice.gc.ca/doc/LICENCE_GENERAL.txt).
 
 
 ## Frequently Asked Questions
