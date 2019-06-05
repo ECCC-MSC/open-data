@@ -64,5 +64,5 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Registre des changements 
 
-* [Chronologie des changements au SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/submenus/rdps_f.html#chronologychanges)
+La chronologie des changements apportés aux sytèmes opérationnels sont disponibles dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.
 
