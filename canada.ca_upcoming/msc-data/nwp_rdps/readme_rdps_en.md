@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > RDPS
 
-# Data and products of the Regional Deterministic Forecasting System
+# Data and products of the Regional Deterministic Prediction System
 
 The Regional Deterministic Prediction System (RDPS) performs physical calculations to produce deterministic forecasts of elements of the atmosphere from the present day to 48 hours in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. Geographic coverage includes Canada and the United States. The horizontal spatial resolution of the data is 10 km. Data is available for 80 vertical levels. Forecasts are performed four times a day.
 
@@ -14,19 +14,19 @@ The Regional Deterministic Prediction System (RDPS) performs physical calculatio
 
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
-* [GRIB data available on the MSC Datamart](readme_rdps-datamart_en.md) 
+* [GRIB2 data available on the MSC Datamart](readme_rdps-datamart_en.md) 
 * Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
   * NOTE: does not exist for the RDPS
   
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../how-to/readme_en.md) is available.
 
-### License
+### Licence
 
-The [End-User License for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
-The [metadata of the Regional Deterministic Forecasting System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
+The [metadata of the Regional Deterministic Prediction System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
 
 ## Products
 
