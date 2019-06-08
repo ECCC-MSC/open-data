@@ -18,7 +18,7 @@ To facilitate the retrieval of timely data on the MSC Datamart, the Meteorologic
 
 The service can filter specific sets of files (weather warnings, observations, model data, etc.), enabling notifications only for products of interest to the user.
 This is the recommended method to retrieve data from the MSC Datamart.
-The documentation for this service is found on the [MSC Datamart AMQP documentation](https://dd.weather.gc.ca/doc/README_AMQP.txt).
+The documentation for this service is found on the [MSC Datamart AMQP documentation](amqp_en.md).
   
 ### Additional access methods
 
@@ -41,13 +41,13 @@ Information on using these services and examples are available on the [how-to pa
 
 ## Change Management 
 
-The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology, standards and inovation do change continuously. 
+The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology, standards and inovation do change continuously. However, we will do our best to notify our users in advance of upcoming changes. 
 
-We will do our best to notify our users in advance of upcoming changes via our [mailing list](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info). Also, as often as possible, we will use the MSC Datamart-Alpha testing data server to deposit samples of the new modified data to help our users adapt their applications. 
+Also, as often as possible, we will use the MSC Datamart-Alpha, the MSC testing data repository, to deposit samples of the new modified data to help our users adapt their applications. 
 
-The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ .
+The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ . 
 
-This server provides also access to experimental or other non-operational data. This service is not operational.
+This server, which is not operational, provides also access to experimental or other non-operational data.
 
 ## Announcement mailing list
 
