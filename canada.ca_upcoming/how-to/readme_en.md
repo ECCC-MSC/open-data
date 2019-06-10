@@ -36,32 +36,63 @@ For downloading raw data, refer to the [How to access raw data](#how-to-access-r
 
 ### Interactive web maps and mobile apps
 
-INCOMPLETE
+MSC open data can also easily be integrated into interactive maps in browsers and mobile applications. 
 
-Leaflet, OpenLayers. Libraries can display be used to live web maps browsers, leaflet, openlayers, amongst many others. 
+#### In a web browser
+By using JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Openlayers](https://openlayers.org/) (among others), users can integrate data available via MSC Geomet into their own interactive web maps.
 
-include an leaflet map with the radar composite layer
+Below is an example of an OpenLayers web map configured to display a radar composite Web Map Service (WMS) layer served by MSC Geomet.
 
-Example of animated WMS in mobile app: MeteoCAN app interactive radar animation. Add image from ahmed with the radar layer with whirling
+<div id="map" style="height: 400px"></div>
 
-link to [details on using web services](../msc-geomet/web-services_en.md) : time / temporal, legends, accessing the other provided color scales and even customizing colors, 
+#### In a mobile application
+MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications. In fact, Environment Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses GeoMet to display high resolution radar data on a zoomable map background:
+
+![Example of radar imagery in WeatherCan](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/how-to/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
+
+#### Further information regarding web services
+For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [MSC GeoMet Web Services](../msc-geomet/web-services_en.md) documentation.
 
 ### On-the-fly images
 
-INCOMPLETE
+MSC Geomet can also serve images on-the-fly via a WMS GetMap request. See the examples below.
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=GDPS.ETA_TT&format=image/png)              
+#### Example 1 - Global Deterministic Prediction System (GDPS) Surface Temperature
 
-![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetMap&bbox=-180,-90,90,180&crs=EPSG:4326&width=800&height=600&layers=OCEAN.GIOPS.2D_SALW&format=image/png)              
+The following GetMap request returns an image of the Global Deterministic Predicition System (GDPS) surface temperature layer. The image is created "on-the-fly" at the time of the request.
 
-* careful, the height is breaking aspect ratio!!!
-* there's also west part of Canada is missing... crazy! QGIS shows it properly
+```
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT=&FORMAT=image/png
+```
+Returns:
 
-on montre l'image qui est associé au code et ensuite on explique les paramètres, un par un, avec les détails dans une sous-pages de la section de geomet
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)              
 
-/CP FROM ABOVE/ link to [details on using web services](../msc-geomet/web-services_en.md) : time / temporal, legends, accessing the other provided color scales and even customizing colors, 
+#### Example 2 - Global Ice Ocean Prediction System (GIOPS) Sea Water Salinity
 
+The following GetMap request returns an image of the Global Ice Ocean Prediction System (GIOPS) sea water salinity layer. The image is created "on-the-fly" at the time of the request.
+```
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
+```
+Returns:
 
+![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
+
+#### Short overview of GetMap Parameters used in the examples
+The examples above define a handful of parameters and send a GetMap request to MSC GeoMet. Below is a short explanation of each parameter in the request:
+* **SERVICE** - The name of the Open GeoSpatial Consortium Web Service to use in the request. In both examples, we are using the OGC Web Map Service (WMS).
+* **VERSION** - The service version, in this case `1.3.0`.
+* **REQUEST** - The specified request type. The WMS services specifies several different request types. In this case, we specify a GetMap request, which returns a map image.
+* **BBOX** - The bounding box of the requested image. In our case, we are making a request for an image that covers the entire surface of the Earth. Coordinates are provided in the units of the Coordinate Reference System defined in the following parameter.
+* **CRS** - The coordinate reference system (CRS) used to create the map image. In both examples, we set the CRS to `EPSG:4326` (e.g WGS 84), the coordinate reference system used for the Global Positioning System (GPS).
+* **WIDTH** - The width in pixels of the returned image.
+* **HEIGHT** - The height in pixels of the returned image.
+* **LAYERS** - The name of the layer used to create the image. The name of the layer can be retrieved using a WMS GetCapabilities request.
+* **FORMAT** - The format of the image returned by the GetMap request. In both cases case, the returned image will be in the PNG format. 
+
+For further information regarding these and other GetMap parameters, refer to the [MSC GeoMet Web Services](../msc-geomet/web-services_en.md) documentation.
 ## How to access raw data
 
 ### Raw data download
@@ -82,3 +113,27 @@ Raw data at specific geographic locations can be retrieved with a Web Map Servic
 Raw data for vector data can be retrieved with a Web Feature Service (WFS) request. Example of a [WFS 3 query for the Winnipeg River hydrometric station daily means](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049).
 
 Raw data for raster data can be retrieved with a Web Coverage Service (WCS) request. Example of a [WCS 2 query for the Regional Deterministic Precipitation Analysis (RDPA) model in the netCDF format for a specific time](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). A tip to build WCS queries is to use the [Canadian Centre for Climate Services WCS Query builder interface for an RDPA layer](https://climate-change.canada.ca/climate-data/#/regional-deterministic-precipitation-analysis) and replace the COVERAGEID value from RDPA.* to another available layer.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          }),
+          new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                format: 'image/png',
+                url: 'http://geo.weather.gc.ca/geomet/',
+                params: {'LAYERS': 'RADAR_1KM_RDBR', 'TILED': true},
+            })
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-97, 44]),
+          zoom: 3
+        })
+      });
+</script>
