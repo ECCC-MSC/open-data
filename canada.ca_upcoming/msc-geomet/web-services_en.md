@@ -3,8 +3,69 @@
 ![ECCC logo](../img_eccc-logo.png)
 
 [TOC](../readme_en.md) > MSC GeoMet web services
+## Services
+
+In addition to traditional data access mechanisms, GeoMet has made the archive (NOT TRUE) available using geospatial web services adhering to publicly available international standards. Web services are systems designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
+
+The GeoMet web services adhere to open standards ratified by the [Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/), and the [International Organization for Standardization (ISO)](https://www.isotc211.org/) which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in [World Meteorological Organization interoperability](https://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) as part of the [WMO Information System](https://www.wmo.int/pages/prog/www/WIS/) and are supported by numerous off the shelf open source or commercial tools.
+## Web Map Service (WMS)
+
+### GetCapabilities
+* SERVICE
+* VERSION
+* REQUEST
+* LAYERS (Vendor extension)
+
+### GetMap
+* SERVICE
+* VERSION
+* REQUEST
+* LAYERS
+* CRS (1.3.0) | SRS (1.1.1) (How to get them from GetCapabilities)
+* BBOX (1.3.0 vs 1.1.1)
+* FORMAT (jpeg vs png | transparent)
+* HEIGHT
+* WIDTH
+* TIME (ISO 8601)
+* DIM_REFERENCE_TIME (ISO 8601)
+### GetFeatureInfo
+* SERVICE
+* VERSION
+* REQUEST
+* LAYERS
+* CRS | SRS
+* BBOX
+* FORMAT
+* HEIGHT
+* WIDTH
+* I
+* J
+* TIME (ISO 8601)
+* DIM_REFERENCE_TIME (ISO 8601)
+### GetLegendGraphic
+### Handling Time
+time series (GetFeatureInfo)
+climate (YYYY | YYYY-MM) vs weather (YYYY-MM-DDTHH:mm:ssZ)
+### Handling Styles
+Mention support SLD
+### Usage example
 
 
+## Web Coverage Service (WCS)
+### GetCapabilities
+### DescribeCoverage
+### GetCoverage
+### Handling Time
+#### GeoMet-Climate
+#### GeoMet-Weather
+### Usage example
+Mention CCCS Query UI
+
+## OGC API - Features
+
+
+
+----------------------------------------------------------------
 This page will provide details on the MSC GeoMet web services, especially the capabilities and parameters. These come in addition to the how-to page
 
 We need a link from the readme_en.md to here
