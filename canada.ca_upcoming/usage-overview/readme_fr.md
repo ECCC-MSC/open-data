@@ -2,10 +2,10 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > Comment faire
+[TdM](../readme_fr.md) > Aperçu de l'utilisation
 
 
-Comment faire
+Aperçu de l'utilisation
 =============
 
 Courte description
