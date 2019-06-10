@@ -66,7 +66,7 @@ Mention CCCS Query UI
 
 
 ----------------------------------------------------------------
-This page will provide details on the MSC GeoMet web services, especially the capabilities and parameters. These come in addition to the how-to page
+This page will provide details on the MSC GeoMet web services, especially the capabilities and parameters. These come in addition to the usage-overview page
 
 We need a link from the readme_en.md to here
 ____

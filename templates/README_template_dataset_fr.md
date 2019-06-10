@@ -21,7 +21,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 * Données *indiquer le format* disponibles sur le Datamart du SMC [exemple](../msc-data/nwp_rdps/readme_rdps-datamart_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../msc-geomet/giops_fr.md), si la sous-page existe
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../canada.ca_upcoming/how-to/readme_fr.md) est disponible.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../canada.ca_upcoming/usage-overview/readme_fr.md) est disponible.
 
 ### Licence
 

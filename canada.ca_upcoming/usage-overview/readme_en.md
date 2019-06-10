@@ -2,11 +2,10 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > How to
+[TOC](../readme_en.md) > Usage Overview
 
 
-# How to
-
+# Usage Overview
 Overview and examples on how to access and use Meteorological Service of Canada open data.
 
 * [Learn about the available data](#learn-about-the-available-data)

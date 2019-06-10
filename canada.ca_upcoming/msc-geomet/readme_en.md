@@ -52,7 +52,7 @@ Service capabilities:
 
 ## Usage
 
-Information on using these services and examples are available on the [how-to page](../how-to/readme_en.md).
+Information on using these services and examples are available on the [usage overview page](../usage-overview/readme_en.md).
 
 
 ## Announcement mailing list

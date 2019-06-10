@@ -30,7 +30,7 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
 
 The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md)
 
-## [How to: documented examples for frequent use cases](how-to/readme_en.md)
+## [Usage Overview: documented examples for frequent use cases](usage-overview/readme_en.md)
 
 Overview and examples on how to access and use Meteorological Service of Canada's open data.
 
