@@ -24,7 +24,7 @@ _where_ :
 
 ## Technical specification of the grid
 
-![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/nwp_grid/grille_rdps-srpd.png)
+![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)
 
 Values given to the parameters of the stereographic polar grid.
 
