@@ -59,7 +59,7 @@ List and links to the products available for this dataset:
 
 ## Technical documentation
 
-* [Current version of the MSC Regional Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_e.pdf)
+* [Current version of the Regional Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_e.pdf)
 
 ## Change log 
