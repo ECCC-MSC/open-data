@@ -30,7 +30,7 @@ Les [métadonnées du Système à haute résolution de prévision déterministe 
 
 ## Documentation technique
 
-* [Version actuelle du système à haute résolution de prévision déterministe (SHRPD) - Version anglaise seulement](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-420_20160907_e.pdf)
+* [Version actuelle du Système à haute résolution de prévision déterministe - Version anglaise seulement](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-420_20160907_e.pdf)
 * [Note technique - Version anglaise seulement](https://wiki.cmc.ec.gc.ca/images/2/27/Info_hrdps4.2.0_e.docx)
 
 ## Registre des changements 
