@@ -16,43 +16,39 @@ The Meteorological Service of Canada provides up-to-date information on past, pr
 
 ## Weather alerts and public forecasts
 
-* Weather alerts
-* Current conditions and 7-days forecast for Canadian cities
-* Marine alerts and forecasts
-
+* [Weather and marine alerts](pub_forecast/readme_alerts_en)
+* [Current weather conditions and 7-days forecast for Canadian cities](pub-forecast/readme_currentweather-cond_en)
+* [Meteocode for Canadian forecast public reginons ](pub_forecast/readme_meteocode_en.md)
+* [Current marine conditions and 7-days forecast for marine regions](pub_forecast/readme_currentmarine-cond_en)
 
 ## Observations 
 
-* [Weather radar](obs_radar/geomet-radar_en.md)
-* [Observations at stations](obs_stations/geomet-stations_en.md)
-* [Hydrometric](obs_hydrometric/geomet-hydrometric_en.md)
-* [Vertical profiles](obs_vertical-profiles/geomet-vertical-profiles_en.md)
+* [Weather radar](obs_radar/readme_radar_en.md)
+* [In situ Observations](obs_station/readme_observation_en.md)
+* [Hydrometric](obs_hydrometric/readme_hydrometric_en.md)
+* [Vertical profiles](obs_vertical-profiles/readme_forecast-vertical-pfl_en.md)
 
 
-## Forecasts
+## Numerical weather prediction forecasts
 
-* Deterministic NWP systems
-  * [GDPS](nwp_gdps/geomet-gdps_en.md)
+* Deterministic systems
+  * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_en.md)
   * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
-  * [HRDPS](nwp_hrdps/geomet-hrdps_en.md)
-  * [CAPS](nwp_caps/geomet-caps_en.md)
-  * [RDPA](nwp_rdpa/geomet-rdpa_en.md)
-  * [HRDPA](nwp_hrdpa/geomet-hrdpa_en.md)
-  * [RAQDPS](nwp_raqdps/geomet-raqdps_en.md)
-  * [GIOPS](nwp_giops/geomet-giops_en.md)
-  * [RIOPS](nwp_riops/geomet-riops_en.md)
-  * [RDWPS](nwp_rdwps/geomet-rdwps_en.md)
-* Probabilistic NWP systems
-  * [GEPS](nwp_geps/geomet-geps_en.md)
-  * [NAEFS](nwp_naefs/geomet-naefs_en.md)
-  * [REPS](nwp_reps/geomet-reps_en.md)
-  * [CanSIPS](nwp_cansips/geomet-cansips_en.md)
+  * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
+  * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
+  * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
+  * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md))
+  * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdps_en.md)
+  * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme-hrdpa_en.md)
+  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation {HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md))
+* Probabilistic systems
+  * [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
+  * [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)
+  * [CANadian Seasonal to Inter-annual Prediction System (CanSIPS)](nwp_cansips/readme_cansips_en.md)
+  * [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
 
-* [Marine forecasts](marine-forecasts/geomet-marine-forecasts_en.md)
 * [Nowcasting](nowcasting/geomet-nowcasting_en.md)
 * [Hurricanes](hurricanes/geomet-hurricanes_en.md)
-* [Meteocode](meteocode/geomet-meteocode_en.md)
-
 
 ## Climate data
 
@@ -66,10 +62,9 @@ NOTES:
 * DCS
 * Historical observations
 
-
 ## Other data
 
-* [AQHI](aqhi/geomet-aqhi_en.md)
-* [Bulletins](bulletins/geomet-bulletins_en.md)
+* [AQHI](aqhi/readme_aqhi_en.md)
+* [Bulletins](bulletins/readme_bulletins_en.md)
 * Forecast polygons
 * [Weatheradio](weatheradio/geomet-weatheradio_en.md)
