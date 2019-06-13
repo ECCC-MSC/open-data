@@ -2,13 +2,9 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > Cost-recovered data services
-
-
 # Cost-recovered data services
 
 The Meteorological Service of Canada offers the following cost-recovered data services. Anyone interested in those services is invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
-
 
 ## Archived data retrieval
 
@@ -29,7 +25,7 @@ Available data include:
 * Text bulletins
 * Most of the data available on the free [MSC Datamart](../msc-datamart/readme_en.md) and [MSC GeoMet](../msc-geomet/readme_en.md) services
 
-Details regarding radar data pricing are as follows:
+Details regarding **radar data pricing** are as follows:
 
 * 1-5 radars (QC, Atl or Pac region) : $1,600/month
 * 6-10 (any whole region): $1,800/month
@@ -38,7 +34,5 @@ Details regarding radar data pricing are as follows:
 
 Please, note that these rates are indicative only and may change.
 
-Details regarding push feed for NWP data in GRIB format, or any other data are as follows:
-
-The cost is a function of the amount of data requested: at the starting price is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
+**Starting price regarding push feed for NWP data in GRIB format, or any other data** is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
 
