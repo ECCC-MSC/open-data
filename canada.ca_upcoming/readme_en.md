@@ -34,9 +34,9 @@ The End-use Licence determines the conditions for using the data and information
 
 Overview and examples on how to access and use Meteorological Service of Canada's open data.
 
-## [Frequently asked questions](faq/readme_en.md)
+## Frequently asked questions
 
-_remove this section for initial release?_
+To come
 
 ## Data discovery and metadata
 
