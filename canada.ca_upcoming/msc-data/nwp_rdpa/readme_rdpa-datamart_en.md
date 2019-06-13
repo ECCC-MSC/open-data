@@ -69,9 +69,8 @@ RDPA variables are only available for the surface level.
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
-__This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format__
+This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format
 
 |Number  |	                Variable 	                                       | Level      | 	Abbreviation    |	Units    	 | Description        |
 |--------|---------------------------------------------------------------------|------------|-------------------|----------------|--------------------|
