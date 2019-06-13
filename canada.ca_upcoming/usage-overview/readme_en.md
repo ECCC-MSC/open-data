@@ -58,11 +58,11 @@ MSC Geomet can also serve images on-the-fly via a WMS GetMap request. See the ex
 
 #### Example 1 - Global Deterministic Prediction System (GDPS) Surface Temperature
 
-The following GetMap request returns an image of the Global Deterministic Predicition System (GDPS) surface temperature layer. The image is created "on-the-fly" at the time of the request.
+The following GetMap request returns an image of the Global Deterministic Predicition System (GDPS) air temperature layer. The image is created "on-the-fly" at the time of the request.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT=&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 ```
 Returns:
 
