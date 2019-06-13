@@ -73,7 +73,12 @@ Les données sont disponibles pour la surface seulement (indiquée par SFC_0 dan
 
 Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à nous contacter pour plus d'information.
 
-* [analyse à 000h](https://meteo.gc.ca/grib/RDPA_ps10km/RDPA_ps10km_A000_analysis_f.html)
+__Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2__
+
+|Numéro  |	                  Variable                                |	Niveau      | 	Abbréviation    | 	Unités        | 	Encodage    |
+|--------|------------------------------------------------------------|-------------|-------------------|-----------------|-----------------|
+|   0 	 | Analyse de précipitations accumulées sur interval de 06hr ou 24hr|Surface|APCP-0[06,24]_SFC_0| kg m-2          | [Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)  |
+|   1 	 | Indice de confiance de l'analyse 	                      | Surface     |CFIA_SFC_0 	    |varie de 0 à 1, sans unité |[Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
 
 ## À propos du masque No-Data
 

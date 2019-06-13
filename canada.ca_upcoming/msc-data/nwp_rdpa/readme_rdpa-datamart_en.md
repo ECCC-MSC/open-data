@@ -71,7 +71,12 @@ RDPA variables are only available for the surface level.
 
 Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
-* [analysis at 000h](https://weather.gc.ca/grib/RDPA_ps10km/RDPA_ps10km_A000_analysis_e.html)
+__This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format__
+
+|Number  |	                Variable 	                                       | Level      | 	Abbreviation    |	Units    	 | Description        |
+|--------|---------------------------------------------------------------------|------------|-------------------|----------------|--------------------|
+| 0 	 | Analysis of Accumulated Precipitation on a 06hr or 24hr interval    | Surface 	| APCP-0[06,24]_SFC_0| 	kg m-2       |[Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)     |
+| 1      | Confidence Index for Analysis 	                                   | Surface 	| CFIA_SFC_0 |varies from 0 to 1, no units | [Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
 
 ## About the No-data mask
 
