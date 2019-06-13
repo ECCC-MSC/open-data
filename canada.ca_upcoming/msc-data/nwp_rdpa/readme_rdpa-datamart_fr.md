@@ -71,9 +71,7 @@ Les données sont disponibles pour la surface seulement (indiquée par SFC_0 dan
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à nous contacter pour plus d'information.
-
-__Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2__
+Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2
 
 |Numéro  |	                  Variable                                |	Niveau      | 	Abbréviation    | 	Unités        | 	Encodage    |
 |--------|------------------------------------------------------------|-------------|-------------------|-----------------|-----------------|
