@@ -26,8 +26,6 @@ Les données disponibles comprennent :
 * Bulletins en format texte
 * La plupart des données disponibles via les services gratuits du Datamart et GeoMet du SMC
 
-Le service de diffusion Internet SFTP est disponible à un **coût mensuel y compris soutien en tout temps**.
-
 Les **détails concernant la tarification des données radar** sont les suivants :
 
 * 1-5 radars (QC, région Atl ou Pac) : 1 600 $/mois
