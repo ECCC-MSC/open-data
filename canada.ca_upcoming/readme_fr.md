@@ -33,7 +33,7 @@ La licence d'utilisation finale détermine les conditions d'utilisation des donn
 
 Aperçu et exemples documentant la façon d'accéder aux données ouvertes du Service météorologique du Canada et de les utiliser.
 
-## [Foire aux questions](faq/readme_fr.md)
+## Foire aux questions
 
 A venir
 
