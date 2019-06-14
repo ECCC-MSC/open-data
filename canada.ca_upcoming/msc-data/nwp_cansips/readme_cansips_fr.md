@@ -32,9 +32,6 @@ SPISCan est composé de 20 membres, 10 membres du modèle CanCM3 et 10 membres d
 
 Lorsque la prévision de l'ensemble est terminée, on construit une moyenne saisonnière de l'anomalie, en soustrayant la moyenne climatologique de 30 ans de ces modèles. Ensuite, on calcule la moyenne d'ensemble pour une prévision déterministe, et les probabilités de chaque catégorie, calculées en calibrant le comptage des membres, pour une prévision probabiliste.
 
-Pour davantage d'information, voir :
-http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1
-
 ## Accès
 
 ### Comment accéder aux données
