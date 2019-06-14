@@ -30,8 +30,6 @@ __CanSIPS forecast configuration__ :
 
 Ensemble size for the forecast is 20 members (10 CanCM3 members + 10 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons.
 
-For more information please visit:
-http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1
 
 ## Access
 
