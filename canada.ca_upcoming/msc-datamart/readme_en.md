@@ -44,9 +44,9 @@ Information on using these services and examples are available on the [usage ove
 
 The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology, standards and inovation do change continuously. However, we will do our best to notify our users in advance of upcoming changes. 
 
-Also, as often as possible, we will use the MSC Datamart-Alpha, the MSC testing data repository, to deposit samples of the new modified data to help our users adapt their applications. 
+Also, as often as possible, we will use the MSC testing data repository, DD-Alpha, to deposit samples of the new modified data to help our users adapt their applications. 
 
-The MSC Datamart-Alpha is located at http://dd.alpha.weather.gc.ca/ . 
+The server DD-Alpha is located at http://dd.alpha.weather.gc.ca/ . 
 
 This server, which is not operational, provides also access to experimental or other non-operational data.
 
