@@ -2,6 +2,7 @@
 
 Welcome! This documentation will tell you how to update and deploy new version of the MSC public data documentation.
 
+
 # Table of Contents
 
 1. [Scope](#scope-and-objectives)
@@ -13,7 +14,9 @@ Welcome! This documentation will tell you how to update and deploy new version o
   * [Getting ready](#getting-ready)
   * [Update workflow](#update-workflow)
   * [Images in the documentation](#images-in-the-documentation)
+  * [Files in the documentation](#files-in-the-documentation)
 6. [Deploying the documentation](#deploying-the-documentation)
+
 
 # Scope and objectives
 
@@ -27,6 +30,7 @@ The main objective is to build a new 'MSC Public data documentation' that will e
 
 The writing of the documentation must consider the [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html) ([French version](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)).
 
+
 # Workflow overview
 
 Here's an overview of the Public data documentation update process. Detailed procedures provided below.
@@ -36,6 +40,7 @@ Here's an overview of the Public data documentation update process. Detailed pro
 3. (likely not required / obsolete) Run the script which generates the output versions of the documentation
 4. Validate the output documentation
 6. A 'MSC public data documentation' steward publishes the new version to canada.ca
+
 
 # File structure
 
@@ -61,6 +66,7 @@ How to monitor changes to this documentation by receiving emails when changes ar
 3. Enable watch mode for the repository by selecting `Watch` in the dropdown menu alongside the alarm bell icon
 
 This enables receiving modifications for the entire DPS repository.
+
 
 # Updating the documentation
 
@@ -145,6 +151,10 @@ Adding images to the documentation:
 
 Hosting images for the documentation on Canada.ca:
 * Images are added to Canada.ca directly as part of the documentation update process
+
+## Files in the documentation
+
+Just like [images](#images-in-the-documentation), any file including binary files in the `.pdf` and `.docx` formats need to be hosted on the Collaboration server in the corresponding directory and a link to those files is used in the actual documentation. 
 
 
 # Deploying the documentation
