@@ -20,7 +20,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Le système SPISCan calcule plusieurs indices climatiques de l'atmosphère et l'océan (ex. les indices de la mousson, du PNA, du NAO, de El Nino, etc.) qui peuvent être calculés à partir des prévisions saisonnières ainsi qu'à partir de l'observation de certaines variables à l'échelle saisonnière. 
 
-Une description plus détaillée des indices est disponible [ICI](indices_SPISCAN_f.pdf).
+Une ![description plus détaillée des indices](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_SPISCAN_f.pdf) est disponible.
 
 Pour accéder aux indices atmosphériques et océaniques calculés par le SPISCan veuillez suivre les liens ci-dessous :
 
