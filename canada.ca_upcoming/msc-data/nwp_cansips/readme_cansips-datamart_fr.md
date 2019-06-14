@@ -69,6 +69,15 @@ Exemple de nom de fichier : cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_201
 
 Ce fichier de format GRIB2 (.grib2) a été généré par la composante prévision système SPISCan sur une grille latitude-longitude à 2.5 x 2.5 degrés de résolution. La prévision a été produite pour le mois d’octobre 2012 (2012-10). Ce fichier contient les moyennes mensuelles de tous les membres du système (allmembers) pour la variable « hauteur géopotentielle (HGT) » au niveau isobarique 500hpa (ISBL_0500).
 
+## Structure interne des fichiers
+
+La structure interne des fichiers des prévisions et celle des prévisions rétrospectives (hindcast) est la suivante : 
+
+Chaque fichier contient 240 enregistrements temporels (12 mois fois 20 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.
+
+Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02 (ex. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2), les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.
+
+
 ## Niveaux
 
 Ces données sont disponibles pour la surface et pour certains niveaux isobariques.
@@ -79,6 +88,19 @@ Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines va
 
 * [Prévision pour l’échéance zéro](https://meteo.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-ZERO_hindcast_f.html)
 * [Prévision pour les autres échéances](https://meteo.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-NONZERO_hindcast_f.html)
+
+## Conseils pour calculer les prévisions d'anomalies 
+
+Il est recommandé d'utiliser directement les prévisions d'anomalies plutôt que les prévisions de données brutes. Les prévisions d'anomalies pour certains mois ou saisons peuvent être obtenues par la soustraction de la climatologie modélisée pour ce mois ou saison. La recette suivante peut être utilisée pour calculer la prévision d'anomalie :
+
+Pour la prévision d'un mois en particulier (ex. 2016-02) on commence par la création d'un fichier de moyenne d'ensemble, et pour cet exemple, on peut nommer ce fichier ensm_for_02_2016. Ce fichier contient maintenant 12 enregistrements temporels car la moyenne de 20 ensembles a été calculée. L'enregistrement temporel de ce fichier commence le mois 02 de l'année 2016 et va jusqu'au mois 01 de l'année 2017.
+ 
+Ensuite, la même procédure est répétée pour les prévisions rétrospectives mais séparément pour chaque année, commençant en 1981 et finissant l'année 2010. Chaque année de la période rétrospective aura donc sa moyenne d'ensemble, par exemple pour le mois 02, ce sera ensm_hin_02_YYYY (YYYY représente chaque année de la période-rétrospective). La moyenne des 30 fichiers de ensm_hin_02_YYYY permettra d'obtenir la climatologie de la moyenne d'ensemble pour les prévisions débutant en  février, qui pourra alors être nommée ensm_hinclim_02, dans cet exemple.
+
+La soustraction de ensm_hinclim_02 à ensm_for_02_2016, permet d'obtenir  la prévision d'anomalie pour le mois 02 de l'année 2016. Puisque cette prévision d'anomalie contient 12 enregistrements temporels, débutant en février 2016, on peut dire que la prévision d'anomalie pour le mois de février c'est une prévision à zéro mois de préavis, celle du mois de mars 2016, une prévision à un mois de préavis, et ainsi de suite jusqu'en janvier 2017 (la dernière de 12 enregistrements) où on a une prévision de 11 mois de préavis.
+
+Une approche très similaire peut être appliquée avec les prévisions saisonnières mais en utilisant les moyennes saisonnières (ex. DJF, JFM, MAM, etc.) qui sont construites avant que l'anomalie de moyenne saisonnière ait été calculée.
+
 
 ## Support
 

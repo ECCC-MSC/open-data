@@ -8,6 +8,33 @@
 
 Le Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan) procède à des calculs physiques afin de produire des prévisions probabilistes d'éléments de l'atmosphère du début d'un mois jusqu'à 12 mois dans le futur. Les éléments de l'atmosphère incluent notamment la température, la précipitation, la vitesse et direction des vents. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. Les données sont disponibles pour quelques niveaux verticaux choisis et sur une grille de résolution spatiale de 2.5 degrées. Ces prévisions ainsi que les rétro-prévision correspondantes sont disponibles mensuellement.
 
+## Description du système
+
+SPISCan est un système d'ensemble multi-modèle (Multi-Model Ensemble [MME]) utilisant deux modèles climatiques développés au Centre canadien de la modélisation et de l'analyse climatique (CCmaC). Ce système de prévision est entièrement couplé atmosphère-océan-glace-sol. SPISCan utilise l'infrastructure d'assimilation en place pour les autres systèmes de prévision afin d'obtenir les conditions initiales de l'atmosphère, de la température de la surface de la mer et de glace marine.
+
+Pour plus de détails sur ce système, consultez :
+http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_spiscan_20111220_f.pdf
+
+__Modèles__ :
+ 
+* CanCM3 and CanCM4 - les modèles couplés atmosphère-océan
+* CanAM3 and CanAM4 - les composantes atmosphériques 
+* CanOM4 - la composante océanique
+
+Les modèles atmosphériques, CanAM3 et CanAM4, sont couplés avec le modèle océanique CanOM4 et forment les modèles couplés du climat CanCM3 et CanCM4 respectivement.
+
+Pour une description plus détaillée de ces modèles svp voir le lien :  
+http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=Fr&n=4A642EDE-1
+
+__Configuration des prévisions SPISCan__ :
+ 
+SPISCan est composé de 20 membres, 10 membres du modèle CanCM3 et 10 membres du modèle CanCM4. Le dernier jour de chaque mois on exécute une prévision de 12 mois et chaque membre est initialisé avec des conditions initiales valides au même moment, mais légèrement différentes. Les conditions initiales sont produites par la méthode IAU (Incremental Analyses Update), où les valeurs provenantes des analyses atmosphériques du CMC sont incrémentées de six heures en utilisant les modèles CanCM3 et CanCM4.
+
+Lorsque la prévision de l'ensemble est terminée, on construit une moyenne saisonnière de l'anomalie, en soustrayant la moyenne climatologique de 30 ans de ces modèles. Ensuite, on calcule la moyenne d'ensemble pour une prévision déterministe, et les probabilités de chaque catégorie, calculées en calibrant le comptage des membres, pour une prévision probabiliste.
+
+Pour davantage d'information, voir :
+http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1
+
 ## Accès
 
 ### Comment accéder aux données
@@ -66,6 +93,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ## Documentation technique
 
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_spiscan_20111220_f.pdf)
+* [Arcticle scientifique - Version anglaise seulement](http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 
 ## Registre des changements 
 

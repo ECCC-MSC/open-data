@@ -8,6 +8,31 @@
 
 The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) carries out physics calculations to arrive at probabilistic predictions of atmospheric elements from the beginning of a month out to up to 12 months into the future. Atmospheric elements include temperature, precipitation, wind speed and direction and others. This product contains raw numerical results of these calculations. Geographical coverage is global. Data is available on a grid at a horizontal resolution of 2.5 degrees and for a few selected vertical levels. Predictions and corresponding hindcast are made available monthly.
 
+## System description
+
+CanSIPS is a multi-model ensemble (MME) system using two climate models developed by the Canadian Centre for Climate Modelling and Analysis (CCCma). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice.
+
+For more information on the system please see:  
+http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf
+
+__Models__ :
+
+* CanCM3 and CanCM4 - coupled climate models
+* CanAM3 and CanAM4 - atmospheric components
+* CanOM4 - ocean component
+
+Atmospheric models CanAM3 and CanAM4 are coupled to the oceanic model CanOM4 in CanCM3 and CanCM4, respectively. 
+
+For a more detailed description of the models please visit this link:
+http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1
+
+__CanSIPS forecast configuration__ :
+
+Ensemble size for the forecast is 20 members (10 CanCM3 members + 10 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons.
+
+For more information please visit:
+http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1
+
 ## Access
 
 ### How to access the data
@@ -65,6 +90,7 @@ List and links to the products available for this dataset:
 ## Technical documentation
 
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf)
+* [Scientific article](http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 
 ## Change log
 
