@@ -88,7 +88,7 @@ https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 ## How can I download data?
 
-The Meteorological Service of Canada has set up a data wire for announcing file availability on the Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP), an open
+The Meteorological Service of Canada has set up a data wire for announcing file availability on the MSC Datamart.  This data wire uses the 'Advanced Message Queuing Protocol' (AMQP), an open
 protocol with free libraries in numerous programming languages. This enables the user not only to be notified of available products as they're published, but also to receive them automatically if
 he so chooses.
 The service may be configured by the user to apply to a specific set of files (weather warnings, observations, model data, etc.) and thus may concern only those products of interest to the user.
@@ -201,7 +201,7 @@ If interested, please complete the order form below and send it via e-mail using
 |Dates (e.g. 2006-01-01 to 2008-12-31 )  |       |
 |Run hours (e.g. 00Z, 12Z) |     |
 |Forecast hours (e.g. 000, 003, 006) |       |
-|Data domain (user defined lat-lon box, existing Datamart domain)  |       |
+|Data domain (user defined lat-lon box, existing MSC Datamart domain)  |       |
 |Horizontal spatial resolution (e.g. 10km/0.24 degrees)  |       |
 |Levels (surface, isobaric levels, meters above ground) |        |
 |Delivery mode 	FTP |       |
@@ -221,7 +221,7 @@ You can find an example of a GENOT 03 bulletin here:
 
 https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
 
-Finally, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available.
+Finally, we strongly recommend to subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available.
 
 You can subscribe here:
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
@@ -269,7 +269,7 @@ Informations regarding drifting buoys are available here:
 
 http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/drib-bder/index-eng.htm
 
-You can also retrieve the buoys alphanumeric bulletin on the Datamart. The buoys header are SM/SN/SIVD17. They are available in the "bulletins" directory:
+You can also retrieve the buoys alphanumeric bulletin on the MSC Datamart. The buoys header are SM/SN/SIVD17. They are available in the "bulletins" directory:
 
 https://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt
 
@@ -355,7 +355,7 @@ To obtain extreme forecast temperature data in CSV format, you can consult eithe
   1200 UTC forecasts contain the minimum and maximum of day two and the minimum of day three.
   Forecasts based on 0000 UTC data contain the maximum of the current day and the minimum and maximum of day two.
 
-These bulletins are available on the Datamart at this address:
+These bulletins are available on the MSC Datamart at this address:
 
 https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
 
@@ -369,11 +369,11 @@ Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may 
 Each of these bulletins are produced specifically for individual Canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others.
 Forecast weather elements may also differ from message to message.
 
-These bulletins are available on the Datamart at this address:
+These bulletins are available on the MSC Datamart at this address:
 
 https://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/
 
-You can find documentation about alphanumeric bulletins on the Datamart at the adress:
+You can find documentation about alphanumeric bulletins on the MSC Datamart at the adress:
 
 https://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt,
 
@@ -440,7 +440,7 @@ In General, one should use continuous access, rather than periodic polling, as i
 
 ## Contact us
 
-If you use the data available on the datamart, we strongly recommend to subscribe to the datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
+If you use the data available on the MSC Datamart, we strongly recommend to subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
 

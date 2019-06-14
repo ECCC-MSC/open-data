@@ -37,7 +37,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 
 ## Quelles données peut-on trouver sur le Datamart du SMC ?
 
-Beaucoup de nos données sont disponibles sur le serveur de données ouvertes du Service météorologique canadien (SMC), appelé Datamart. Vous trouverez une courte 
+Beaucoup de nos données sont disponibles sur le serveur de données ouvertes du Service météorologique canadien (SMC), appelé Datamart du SMC. Vous trouverez une courte 
 description des produits disponibles ainsi qu'un lien vers une documentation détaillée de chacun d'entre eux dans ce README:
 
 https://dd.meteo.gc.ca/about_dd_apropos.txt
@@ -86,9 +86,9 @@ https://dd.meteo.gc.ca/doc/LICENCE_GENERAL.txt
 
 ## Comment peut-on télécharger les données ?
 
-Le Service météorologique du Canada (SMC) a mis en place un fil de données annonçant les fichiers disponibles sur le Datamart. Ce fil de données
+Le Service météorologique du Canada (SMC) a mis en place un fil de données annonçant les fichiers disponibles sur le Datamart du SMC. Ce fil de données
 utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). Il devient ainsi possible non seulement d'être avisé de la disponibilité des 
-produits sur le Datamart lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. Le service peut s'appliquer à une série spécifique de 
+produits sur le Datamart du SMC lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. Le service peut s'appliquer à une série spécifique de 
 fichiers (alertes météorologiques, observations, données de modèle, etc.) et ainsi viser seulement les produits d'intérêt pour l'usager.
 
 La documentation de ce service est disponible ici:
@@ -130,7 +130,7 @@ https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_P
 Concernant les fils de données, les formats disponibles sont les suivants:
 
     - NUMERICA (ASCII)
-    - Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart))
+    - Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC))
     - Format brut IRIS 
         Spécifications: https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
 
@@ -196,7 +196,7 @@ Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parv
 |Dates (ex: 2006-01-01 à 2008-12-31 )  |       |
 |Heures des passes (ex: 00Z, 12Z) |     |
 |Heures des prévisions (e.g. 000, 003, 006) |       |
-|Couverture géographique (domaine lat/lon défini par l'usager, domaine disponible sur le Datamart)  |       |
+|Couverture géographique (domaine lat/lon défini par l'usager, domaine disponible sur le Datamart du SMC)  |       |
 |Résolution spatiale horizontale (ex: 10km/0.24 degrés)  |       |
 |Niveaux (surface, niveaux de pression, altitude en mètres au dessus du sol) |        |
 |Mode de livraison | FTP  |
@@ -216,7 +216,7 @@ d'un tel bulletin à l'adresse:
 
 https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117
 
-Finalement, nous vous recommandons fortement de vous inscrire à la list de diffusion du Datamart afin d'être averti de toute mise à jour ou changement concernant la 
+Finalement, nous vous recommandons fortement de vous inscrire à la list de diffusion du Datamart du SMC afin d'être averti de toute mise à jour ou changement concernant la 
 disponibilité des données. Vous pouvez vous abonner ici:
 
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info
