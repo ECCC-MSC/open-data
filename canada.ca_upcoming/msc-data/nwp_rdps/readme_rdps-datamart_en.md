@@ -2,19 +2,19 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > RDPS
+[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > RDPS
 
 # Regional Deterministic Prediction System (RDPS) data in GRIB2 format
 
 Under the Regional Deterministic Prediction System (RDPS), the numerical weather prediction model is run on a variable-step grid with a 10 km central core resolution. The fields in the 10 km resolution regional GRIB2 dataset are made available on a 935 x 824 polar-stereographic grid covering North America and adjacent waters with a 10 km resolution at 60°N.
 
-## Data address 
+## Data location 
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs:http://dd.weather.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
+The data can be accessed at the following URLs: http://dd.weather.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
 
 _where_ :
 
@@ -26,7 +26,7 @@ _where_ :
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)
 
-Values given to the parameters of the stereographic polar grid.
+Values given to the parameters of the stereographic polar grid:
 
 | Parameter | Value |
 | ------ | ------ |
@@ -37,15 +37,15 @@ Values given to the parameters of the stereographic polar grid.
 | (i,j) coordinate of North Pole | (456.2; 732.4) |
 | grid orientation (with respect to j axis) | -111.0° |
 
-There is also a pre-formatted ASCII file containing the [geographical coordinates](https://meteo.gc.ca/grib/10km_res.bz2) of each grid point. 
+There is also a pre-formatted [ASCII file containing the geographical coordinates](https://meteo.gc.ca/grib/10km_res.bz2) of each grid point. 
 
-## File name nomenclature 
+## Filename nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+Note: all hours are in UTC.
 
 The files have the following nomenclature:
 
-The files have the following nomenclature:CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2
+CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2
 
 _where_:
 
@@ -96,7 +96,7 @@ Notes:
 * Radiation fluxes parameters NLWRS_SFC, DSWRF_NTAT, and DLWRF_NTAT are encoded as accumulated values, as per value 4 of the Time Range Indicator (Code Table 5 of the GRIB format standard). This changes the unit from Watts per square metre to Joules per square meter.
 * Specific Humidity (SPFH) is the model's native moisture variable. It should be used in all NWP applications. Dew point depression (DEPR) is a diagnostic parameter and is not meant for use in high-precision applications.
 
-## About the No-data mask
+## About the no-data mask
 
 Since September, 7th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
