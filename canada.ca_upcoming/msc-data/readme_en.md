@@ -5,7 +5,7 @@
 [TOC](../readme_en.md) > MSC Data
 
 
-# Meteorological Service of Canada Public Open Data
+# Meteorological Service of Canada open data
 
 The Meteorological Service of Canada (MSC) provides up-to-date information on past, present and future weather conditions, climate, water and environmental information over Canada and the world.
 
@@ -52,9 +52,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Climate data
 
-NOTES:
-- mention [Canadian Centre for Climate Services](https://canada.ca/climate-services)
-- content from https://dd.meteo.gc.ca/climate/
+Canadian climate data is a component of the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
 
 * AHCCD
 * CanGRD
