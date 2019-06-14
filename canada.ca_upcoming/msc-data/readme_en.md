@@ -23,7 +23,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Observations 
 
-* [Weather radar](obs_radar/readme_radar_en.md)
+* [Weather radar imagery](obs_radar/readme_radar_en.md)
 * [In situ Observations](obs_station/readme_observation_en.md)
 * [Hydrometric](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles](obs_vertical-profiles/readme_forecast-vertical-pfl_en.md)
@@ -40,7 +40,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
   * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md))
   * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdps_en.md)
   * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme-hrdpa_en.md)
-  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation {HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md))
+  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md))
 * Probabilistic systems
   * [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
   * [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)
@@ -54,15 +54,15 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 Canadian climate data is a component of the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
 
-* AHCCD
-* CanGRD
-* CMIP5
-* DCS
-* Historical observations
+* [Adjusted and homogenized Canadian climate (AHCCD)](climate/readme_ahccd_en.md)
+* [Canadian Gridded Data (CanGRD)](climate/readme_cangrd_en.md)
+* [Coupled Model Intercomparison Project Phase 5 (CMIP5) global climate model (GCM) scenarios (CMIP5)](climate/readme_cmip5_en.md)
+* [Statistically downscaled climate scenarios (DCS)](climate/readme_dcs_en.md)
+* [Historical observations](climate/readme_climate_en.md)
 
 ## Other data
 
-* [AQHI](aqhi/readme_aqhi_en.md)
+* [Air Quality Health Index (AQHI) observation and forecast](aqhi/readme_aqhi_en.md)
 * [Bulletins](bulletins/readme_bulletins_en.md)
 * Forecast polygons
 * [Weatheradio](weatheradio/geomet-weatheradio_en.md)
