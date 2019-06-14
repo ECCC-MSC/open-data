@@ -6,6 +6,8 @@
 
 # Données et Produits Système d’Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP)
 
+Le Système Canadien d'Analyse de Précipitation (CaPA) produit une estimation optimale de la précipitation sur des périodes de cumuls de 6 et 24 heures. Cet estimé objectif intègre des relevés pluviométriques provenant de capteurs de précipitation, de QPE radars et d'un champ d'essai généré par un système de prévision numérique du temps. CaPA produit quatre analyses de cumuls 6 heures valides aux heures synoptiques (00, 06, 12 et 18 UTC) et deux analyses 24 heures valide à 06 et 12 UTC. Une production préliminaire est démarrée 1 heure après l'heure de validité et une autre, dite finale, est lancée 6 heures plus tard, ce qui revient à un total de 12 analyses par jour. Actuellement, il existe deux configurations déterministes de l'analyse, soit l'Analyse Régionale Déterministe de Précipitation (ARDP) et l'Analyse à Haute Résolution Déterministe de Précipitation (AHRDP). CaPA-ARDP est branché sur le SRPD pour en tirer son champ d'essai alors que CaPA-AHRDP est branché sur le SHRPD national pour le sien. Le domaine de la configuration à 10 km est celui du SRPD tandis que pour celle à 2.5 km c'est celui du SHRPD national.
+
 ## Accès
 
 ### Comment accéder aux données
