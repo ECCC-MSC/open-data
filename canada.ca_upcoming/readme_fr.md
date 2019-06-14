@@ -2,7 +2,7 @@
 
 ![ECCC logo](img_eccc-logo.png)
 
-# Documentation publique des données du Service météorologique du Canada
+# Documentation des données ouvertes du Service météorologique du Canada
 
 Le Service météorologique du Canada met à la disposition du secteur privé, des universitaires et du grand public, les données météorologiques, climatiques, hydrologiques et environnementales.
 
