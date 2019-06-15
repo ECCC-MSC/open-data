@@ -5,6 +5,67 @@
 [TOC](../readme_fr.md) > Données du SMC
 
 
-MSC Public Data
-===============
-À compléter, basé sur la version anglaise
+# Données ouvertes du Service météorologique du Canada 
+
+Le Service météorologique du Canada (SMC) fournit des renseignements à jour sur les conditions météorologiques, le climat, l'eau et l'environnement passés, présents et futurs au Canada et dans le monde.
+
+* Le Service météorologique du Canada d'Environnement et Changement climatique  Canada est la source officielle d'information sur la météo, l'eau, la glace et le climat au pays et la source officielle d'avertissements de temps violent au Canada.
+* Le SMC fournit des prévisions et des avertissements météorologiques 24 heures par jour, 365 jours par année. Le SMC fournit également aux ministères fédéraux, aux organismes et aux autres ordres de gouvernement de l'information à l'appui de la préparation et de l'intervention d'urgence en cas d'événements tels que tempêtes, inondations, feux de forêt et autres urgences météorologiques.
+* Des renseignements exacts et opportuns sur les conditions météorologiques, hydriques, glacières et climatiques changeantes aident les Canadiens à prendre des décisions éclairées pour leur santé, leur sécurité et leur prospérité économique.
+* L'information météorologique, hydrique et climatique d'Environnementet Changement climatique Canada appuie la prise de décisions économiques judicieuses pour les secteurs d'activité clés du Canada. Ces secteurs comprennent la construction, la fabrication, la production d'énergie, l'agriculture, le transport, la foresterie, l'exploitation minière, la vente au détail, les finances et le tourisme.
+
+## Alertes météo et prévisions publiques
+
+* [Alertes météo et maritimes](pub_forecast/readme_alerts_fr)
+* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast/readme_currentweather-cond_en)
+* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast/readme_currentmarine-cond_en)
+* [Meteocode pour les régions publiques canadiennes](pub_forecast/readme_meteocode_en.md)
+* [Polygones des régions de prévision](pub_forecast/readme_polygon_fr.md)
+
+## Observations 
+
+* [Images radar météo](obs_radar/readme_radar_fr.md)
+* [Observations in situ](obs_station/readme_observation_en.md)
+* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_en.md)
+* [Profils verticaux](obs_vertical-profiles/readme_forecast-vertical-pfl_fr.md)
+
+
+## Prévisions météorologiques numériques
+
+* **Systèmes déterministes**
+
+  * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_fr.md)
+  * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
+  * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
+  * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_en.md)
+  * [Système régional de prévision déterminsite de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
+  * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_en.md)
+  * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdps_fr.md)
+  * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme-hrdpa_en.md)
+  * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
+  * [Matrices Scribe de prévision immédiates](matrices/readme_nowcasting_fr.md)
+  
+* **Systèmes probabilistes**
+
+  * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
+  * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_reps_fr.md)
+  * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)
+  * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
+
+## Données climatiques
+
+Les données climatiques canadiennes sont une composante du [Centre canadien des services climatologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
+
+* [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate/readme_ahccd_fr.md)
+* [Données climatiques historiques sur grille canadienne (CanGRD)](climate/readme_cangrd_en.md)
+* [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate/readme_cmip5_fr.md)
+* [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate/readme_dcs_fr.md)
+* [Observations historiques](climat/readme_climate_fr.md)
+
+## Autres données
+
+* [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_en.md)
+* [Bulletins](bulletins/readme_bulletins_en.md)
+* [Trajectoires d'ouragans](trajectory/readme_hurricanes_en.md)
+* [Radiométéo](girouette/readme_radio-météo_fr.md)
+
