@@ -16,17 +16,17 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Alertes météo et prévisions publiques
 
-* [Alertes météo et maritimes](pub_forecast/readme_alerts_fr)
-* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast/readme_currentweather-cond_en)
-* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast/readme_currentmarine-cond_en)
-* [Meteocode pour les régions publiques canadiennes](pub_forecast/readme_meteocode_en.md)
+* [Alertes météo et maritimes](pub_forecast/readme_alerts_fr.md)
+* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast/readme_currentweather-cond_fr.md)
+* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast/readme_currentmarine-cond_fr.md)
+* [Meteocode pour les régions publiques canadiennes](pub_forecast/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](pub_forecast/readme_polygon_fr.md)
 
 ## Observations 
 
 * [Images radar météo](obs_radar/readme_radar_fr.md)
-* [Observations in situ](obs_station/readme_observation_en.md)
-* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_en.md)
+* [Observations in situ](obs_station/readme_observation_fr.md)
+* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_forecast-vertical-pfl_fr.md)
 
 
@@ -37,9 +37,9 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
   * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_fr.md)
   * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
   * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
-  * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_en.md)
-  * [Système régional de prévision déterminsite de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
-  * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_en.md)
+  * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
+  * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
+  * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
   * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdps_fr.md)
   * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme-hrdpa_en.md)
   * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
@@ -57,15 +57,15 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 Les données climatiques canadiennes sont une composante du [Centre canadien des services climatologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
 
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate/readme_ahccd_fr.md)
-* [Données climatiques historiques sur grille canadienne (CanGRD)](climate/readme_cangrd_en.md)
+* [Données climatiques historiques sur grille canadienne (CanGRD)](climate/readme_cangrd_fr.md)
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate/readme_cmip5_fr.md)
 * [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate/readme_dcs_fr.md)
 * [Observations historiques](climat/readme_climate_fr.md)
 
 ## Autres données
 
-* [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_en.md)
-* [Bulletins](bulletins/readme_bulletins_en.md)
-* [Trajectoires d'ouragans](trajectory/readme_hurricanes_en.md)
+* [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
+* [Bulletins](bulletins/readme_bulletins_fr.md)
+* [Trajectoires d'ouragans](trajectory/readme_hurricanes_fr.md)
 * [Radiométéo](girouette/readme_radio-météo_fr.md)
 
