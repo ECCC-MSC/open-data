@@ -6,6 +6,8 @@
 
 # Données et Produits du Système de Prévisions d'Ensemble Nord-Américain (SPENA)
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_naefs/naefs.jpg)
+
 Le SPENA combine les prévisions d'ensemble à la fine pointe de la technologie développées par le SMC et le NWS. Lorsque ces prévisions d'ensemble sont combinées pour former un grand ensemble il devient possible de produire des guides de prévision météorologique pour les jours 1 à 14 qui sont de qualité supérieure à ce qui est présentement disponible à partir des systèmes d'ensemble individuels. Ceci permet la création de produits de prévision continus indifféremment des frontières entre le Canada, les États-Unis et le Mexique. Les coûts de recherche et développement et d'exploitation opérationnelle sont partagés entre les organisations (SMC, NWS et SMNM), ce qui résulte en une meilleure rentabilité et des produits de prévisions météorologiques plus complets et de meilleure qualité.
 Le Système de prévision d'ensemble Nord-Américain (SPENA) est un projet conjoint impliquant le Service météorologique du Canada (SMC), le Service météorologique national (NWS) des États-Unis et le Service météorologique national du Mexique (SMNM). Le SPENA a été lancé officiellement en novembre 2004 en présence des représentants des trois pays.
 
