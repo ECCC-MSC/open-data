@@ -102,9 +102,7 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont les suiv
 * __DLWRF_SFC_0__ :       Flux descendant de radiation d'ondes longues à la surface 
 * __DSWRF_SFC_0__ :       Flux descendant de radiation d'ondes courtes à la surface
 
-Vous trouverez une liste en format XML des variables qui contient l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais, ici :
-
-https://dd.meteo.gc.ca/ensemble/doc/reps/element.xml
+Une [liste en format XML](reps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
 
 ## Support
 
