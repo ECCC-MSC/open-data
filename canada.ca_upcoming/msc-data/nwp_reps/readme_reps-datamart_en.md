@@ -102,10 +102,9 @@ The GRIB2 files variables for individual members are the following. The variable
 * __DLWRF_SFC_0__ :      Downward long-wave radiation flux at surface 
 * __DSWRF_SFC_0__ :      Downward short-wave radiation flux at surface 
 
-You can find a list in XML format containing the information for all the variables. It contains the name of the associated directory and a description and the units in both French and English.
+You can find a list in XML format cont.
 
-The list can be found here:
-https://dd.meteo.gc.ca/ensemble/doc/reps/element.xml
+A [list in XML format](reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
 
 ## Support
 
