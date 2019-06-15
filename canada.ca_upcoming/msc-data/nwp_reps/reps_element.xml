@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<element_meteo_list>
+
+<forecast_element code="HEATX-Max-24h_TGL_2m" titre_francais="Humidex 2m au-dessus du sol - Maximum sur une période de 24h" unite_francaise="K"  title_english="Humidex 2m above ground - Maximum over 24h period" unit_english="K"/>
+
+<forecast_element code="HEATX_TGL_2m" titre_francais="Humidex 2m au-dessus du sol" unite_francaise="K"  title_english="Humidex 2m above ground" unit_english="K"/>
+
+<forecast_element code="TEMP-Max-24h_TGL_2m" titre_francais="Température 2m au-dessus du sol - Maximum sur une période de 24h" unite_francaise="K"  title_english="Temperature 2m above ground - Maximum over 24h period" unit_english="K"/>
+
+<forecast_element code="TEMP-Min-24h_TGL_2m" titre_francais="Température 2m au-dessus du sol - Minimum sur une période de 24h" unite_francaise="K"  title_english="Temperature 2m above ground - Minimum over 24h period" unit_english="K"/>
+
+<forecast_element code="TEMP_TGL_2m" titre_francais="Température 2m au-dessus du sol" unite_francaise="K"  title_english="Temperature 2m above ground" unit_english="K"/>
+
+<forecast_element code="WCF-Min-24h_TGL_2m" titre_francais="Facteur éolien 2m au-dessus du sol - Minimum sur une période de 24h" unite_francaise="K"  title_english="Wind chill factor 2m above ground - Minimum over 24h period" unit_english="K"/>
+
+<forecast_element code="WCF_TGL_2m" titre_francais="Facteur éolien 2m au-dessus du sol" unite_francaise="K"  title_english="Wind chill 2m above ground" unit_english="K"/>
+
+<forecast_element code="WIND-Max-12h_TGL_10m" titre_francais="Vitesse du vent 10m au-dessus du sol - Maximum sur une période de 12h" unite_francaise="m/s"  title_english="Wind speed 10m above ground - Maximum over 12h period" unit_english="m/s"/>
+
+<forecast_element code="WIND_TGL_10m" titre_francais="Vitesse du vent 10m au-dessus du sol" unite_francaise="m/s"  title_english="Wind speed 10m above ground" unit_english="m/s"/>
+
+<forecast_element code="FPRATE-Accum-6h_SFC_0" titre_francais="Pluie verglaçante accumulée sur une période de 6h" unite_francaise="mm"  title_english="Freezing rain accumulated over a 6h period" unit_english="mm"/>
+
+<forecast_element code="FPRATE-Accum-12h_SFC_0" titre_francais="Pluie verglaçante accumulée sur une période de 12h" unite_francaise="mm"  title_english="Freezing rain accumulated over a 12h period" unit_english="mm"/>
+
+<forecast_element code="FPRATE-Accum-24h_SFC_0" titre_francais="Pluie verglaçante accumulée sur une période de 24h" unite_francaise="mm"  title_english="Freezing rain accumulated over a 24h period" unit_english="mm"/>
+<forecast_element code="IPRATE-Accum-6h_SFC_0" titre_francais="Grésil (équivalent en eau) accumulé sur une période de 6h" unite_francaise="mm"  title_english="Ice pellets (water equivalent) accumulated over a 6h period" unit_english="mm"/>
+
+<forecast_element code="IPRATE-Accum-12h_SFC_0" titre_francais="Grésil (équivalent en eau) accumulé sur une période de 12h" unite_francaise="mm"  title_english="Ice pellets (water equivalent) accumulated over a 12h period" unit_english="mm"/>
+
+<forecast_element code="IPRATE-Accum-24h_SFC_0" titre_francais="Grésil (équivalent en eau) accumulé sur une période de 24h" unite_francaise="mm"  title_english="Ice pellets (water equivalent) accumulated over a 24h period" unit_english="mm"/>
+
+<forecast_element code="RPRATE-Accum-6h_SFC_0" titre_francais="Pluie accumulée sur une période de 6h" unite_francaise="mm"  title_english="Rain accumulated over a 6h period" unit_english="mm"/>
+
+<forecast_element code="RPRATE-Accum-12h_SFC_0" titre_francais="Pluie accumulée sur une période de 12h" unite_francaise="mm"  title_english="Rain accumulated over a 12h period" unit_english="mm"/>
+
+<forecast_element code="RPRATE-Accum-24h_SFC_0" titre_francais="Pluie accumulée sur une période de 24h" unite_francaise="mm"  title_english="Rain accumulated over a 24h period" unit_english="mm"/>
+<forecast_element code="SPRATE-Accum-6h_SFC_0" titre_francais="Neige (équivalent en eau) accumulée sur une période de 6h" unite_francaise="mm"  title_english="Snow (water equivalent) accumulated over a 6h period" unit_english="mm"/>
+
+<forecast_element code="SPRATE-Accum-12h_SFC_0" titre_francais="Neige (équivalent en eau) accumulée sur une période de 12h" unite_francaise="mm"  title_english="Snow (water equivalent) accumulated over a 12h period" unit_english="mm"/>
+
+<forecast_element code="SPRATE-Accum-24h_SFC_0" titre_francais="Neige (équivalent en eau) accumulée sur une période de 24h" unite_francaise="mm"  title_english="Snow (water equivalent) accumulated over a 24h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-12h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 12h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 12h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-24h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 24h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 24h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-3h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 3h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 3h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-48h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 48h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 48h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-6h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 6h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 6h period" unit_english="mm"/>
+
+<forecast_element code="TPRATE-Accum-72h_SFC_0" titre_francais="Précipitations totales accumulées sur une période de 72h" unite_francaise="mm"  title_english="Total precipitation accumulated over a 72h period" unit_english="mm"/>
+
+ <forecast_element code="AFRAIN_SFC_0" titre_francais="Précipitations accumulées sous forme de pluie verglaçante" unite_francaise="mm"  title_english="Accumulated precipitation in the form of freezing rain" unit_english="mm"/>
+ <forecast_element code="ARAIN_SFC_0" titre_francais="Précipitations accumulées sous forme de pluie" unite_francaise="mm"  title_english="Accumulated precipitation in the form of rain" unit_english="mm"/>
+ <forecast_element code="AICEP_SFC_0" titre_francais="Précipitations accumulées sous forme de grésil" unite_francaise="mm"  title_english="Accumulated precipitation in the form of ice pellets" unit_english="mm"/>
+ <forecast_element code="ASNOW_SFC_0" titre_francais="Précipitations accumulées sous forme de neige" unite_francaise="mm"  title_english="Accumulated precipitation in the form of snow" unit_english="mm"/>
+ <forecast_element code="APCP_SFC_0" titre_francais="Précipitations accumulées sous toutes les formes" unite_francaise="mm"  title_english="Accumulated precipitation, total of all forms" unit_english="mm"/> 
+ <forecast_element code="SNOD_SFC_0" titre_francais="Épaisseur de la neige au sol" unite_francaise="m"  title_english="Snow depth" unit_english="m"/> 
+ <forecast_element code="WEASD_SFC_0" titre_francais="Équivalent en eau de l'épaisseur de la neige au sol" unite_francaise="mm"  title_english="Water equivalent of accumulated Snow Depth" unit_english="mm"/>
+ <forecast_element code="HGT_ISBL_PPPP" titre_francais="Hauteur géopotentialle à différents niveaux, où PPPP est le niveau de pression en hPa" unite_francaise="gpm"  title_english="Geopotential height for different level pressure levels , where PPPP is the level in hPa" unit_english="gpm"/>
+ <forecast_element code="RH_ISBL_PPPP" titre_francais="Humidité relative à différents niveaux, où PPPP est le niveau de pression en hPa" unite_francaise="%"  title_english="Relative humidity at different pressure levels, where PPPP is the level in hPa" unit_english="%m"/>
+ <forecast_element code="UGRD_ISBL_PPPP" titre_francais="Composante U du vent à différents niveaux, où PPPP est le niveau de pression en hPa" unite_francaise="m/s"  title_english="Winds. U-component at different pressure level, where PPPP is the level in hPa" unit_english="m/s"/>
+ <forecast_element code="VGRD_ISBL_PPPP" titre_francais="Composante V du vent à différents niveaux, où PPPP est le niveau de pression en hPa" unite_francaise="m/s"  title_english="Winds. V-component at different pressure level, where PPPP is the level in hPa" unit_english="m/s"/>
+ <forecast_element code="TMP_ISBL_PPPP" titre_francais="Température à différents niveaux, où PPPP est le niveau de pression en hPa" unite_francaise="K"  title_english="Temperature at different pressure levels, where PPPP is the level in hPa" unit_english="K"/>
+ <forecast_element code="TMP_TGL_2m" titre_francais="Température à 2m au-dessus du sol" unite_francaise="K"  title_english="Temperature at 2m above the ground" unit_english="K"/>
+ <forecast_element code="RH_TGL_2m" titre_francais="Humidité relative à 2m" unite_francaise="%"  title_english="Relative humidity at 2m" unit_english="%"/>
+ <forecast_element code="PRES_SFC_0" titre_francais="Pression à la surface" unite_francaise="Pa"  title_english="Pressure at surface" unit_english="Pa"/>
+ <forecast_element code="MSL_0" titre_francais="Pression au niveau moyen de la mer" unite_francaise="Pa"  title_english="Mean sea level pressure at surface" unit_english="Pa"/>
+ <forecast_element code="TSOIL_DBLL_10cm" titre_francais="Température du sol. 10cm sous la surface" unite_francaise="K"  title_english="Soil temperature. 10cm below surface" unit_english="K"/>
+ <forecast_element code="VSOILM_DBLL_10cm" titre_francais="Humidité volumétrique du sol. 10cm sous la surface" unite_francaise="m3/m3"  title_english="Volumetric soil moisture. 10cm below the surface" unit_english="m3/m3"/>
+ <forecast_element code="LHTFL_SFC" titre_francais="Flux net de chaleur latente à la surface" unite_francaise="W/m2"  title_english="Latent heat net flux at surface" unit_english="W/m2"/>
+ <forecast_element code="SHTFL_SFC_0" titre_francais="Flux net de chaleur sensible à la surface" unite_francaise="W/m2"  title_english="Sensible heat net flux at surface" unit_english="W/m2"/> 
+  <forecast_element code="ULWRF_NTAT_0" titre_francais="Flux ascendant de radiation d'ondes longues au sommet nominal de l'atmosphère" unite_francaise="W/m2"  title_english="Upward long-wave radiation flux at the nominal top of the atmosphere" unit_english="W/m2"/>
+ <forecast_element code="DLWRF_SFC_0" titre_francais="Flux descendant de radiation d'ondes longues à la surface" unite_francaise="W/m2"  title_english="Downward long-wave radiation flux at surface" unit_english="W/m2"/>
+ <forecast_element code="DSWRF_SFC_0" titre_francais="Flux descendant de radiation d'ondes courtes à la surface" unite_francaise="W/m2"  title_english="Downward short-wave radiation flux at surface" unit_english="W/m2"/>
+</element_meteo_list>
