@@ -61,6 +61,18 @@ https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst
 Several examples of configuration files are also available to users, see:
 https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
 
+## Examples
+
+Here are some specific examples to receive alerts and citypage_weather data.
+
+* The available commands are :
+
+  * alerts : sr_subscribe [amqp_cap.xml.config](./amqp_cap-xml.config) start/stop/status
+  * citypage_weather : sr_subscribe [amqp_citypage.config](./amqp_citypage.config) start/stop/status
+
+* The logs are available under ~/.cache/sarra/log
+ 
+* To make a cleanup, use : sr_subscribe configname.conf cleanup
 
 ## External links
 
