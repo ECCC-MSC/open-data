@@ -24,7 +24,7 @@ In addition to the average precipitation, the average confidence index of the an
 
 This number can also be averaged so as to reflect the average weight given to observations in the computation of watershed precipitation. It can be interpreted as a confidence index for the precipitation amount reporter. Values close to one indicate that the HRDPA estimate comes essentially from observed precipitation data, whereas values close to zero indicate that the HRDPA estimate comes essentially from a short-term precipitation forecast.
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 

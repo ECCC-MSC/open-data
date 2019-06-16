@@ -18,7 +18,7 @@ The [Regional Deterministic Wave Prediction System (RDWPS)](readme_rdwps_en.md) 
 
 WAM (WAve Model) (WAMDI Group 1988, Komen et al. 1994) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WAM model has been operational in the international community since the early nineties after a long period of development under the WAMDIG (WAve Model Development and Implementation Group).
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 

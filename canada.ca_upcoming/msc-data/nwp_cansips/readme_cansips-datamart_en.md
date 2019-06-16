@@ -15,7 +15,7 @@ Principal components of CanSIPS
 * __Forecast mode__: The CanSIPS forecasts are based on a 10-member ensemble of forecasts produced with each of two CCCma climate models for a total ensemble size of 20. Monthly to multi-seasonal forecasts extending to 12 months are issued on the first day of each month.
 * __Hindcast mode__: CanSIPS climatology is based on series of historical forecasts covering the period 1981-2010. This climatology of the system is very useful for the interpretation of the forecast since the anomaly is generally used instead of the actual raw forecast.
 
-## Data address 
+## Data location 
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../how-to/readme_en.md) is also available.
 

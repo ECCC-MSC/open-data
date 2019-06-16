@@ -8,7 +8,7 @@
 
 The [Regional Deterministic Precipitation Analysis (RDPA)](readme_rdpa_en.md) based on the Canadian Precipitation Analysis (CaPA) system is on a domain that corresponds to that of the operational regional model, i.e. the Regional Deterministic Prediction System (RDPS-LAM3D) except for areas over the Pacific ocean where the western limit of the RDPA domain is slightly shifted eastward with respect to the regional model domain. The resolution of the RDPA analysis is identical to the resolution of the operational regional system RDPS LAM3D. The fields in the RDPA GRIB2 dataset are on a polar-stereographic (PS) grid covering North America and adjacent waters with a 10 km resolution at 60 degrees north. 
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../how-to/readme_en.md) is also available.
 

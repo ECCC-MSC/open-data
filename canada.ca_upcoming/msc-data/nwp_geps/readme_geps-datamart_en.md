@@ -8,7 +8,7 @@
 
 This page describes the [Global Ensemble Prediction System](readme_geps_en.md) data available in GRIB2 format.
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 

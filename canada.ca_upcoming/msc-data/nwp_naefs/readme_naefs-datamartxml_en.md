@@ -8,7 +8,7 @@
 
 This page describes the [North American ensemble forecast system](readme_naefs_en.md) data available in GRIB2 format.
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../how-to/readme_en.md) is also available.
 

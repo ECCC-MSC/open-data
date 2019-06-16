@@ -12,7 +12,7 @@ Users who will benefit most from using these new data are those for whom a detai
 
 The HRDPS not yet being equipped with its own data assimilation system, so its quality depends largely on the RDPS, which provides initial and boundary conditions, and on the global data assimilation system acting upstream. So if the forecast of the RDPS is questionable over the region of interest, it is likely that the higher resolution forecast will magnify the problems of the regional forecast. However, initial cloud and surface data are now provided by a coupled HRDPS-Caldas (Canadian Land Data Assimilation System) cycle, improving clouds, precipitation and surface fields. For forecast lead times of more than 24 hours the use of the regional or global forecasts might be required.
 
-## Data address 
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 
