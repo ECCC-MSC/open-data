@@ -26,10 +26,6 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
     * Archived data retrieval
     * Dedicated data feeds with 24/7 support
 
-## Licence
-
-The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
-
 ## [Usage Overview: documented examples for frequent use cases](usage-overview/readme_en.md)
 
 Overview and examples on how to access and use Meteorological Service of Canada's open data.
@@ -37,5 +33,9 @@ Overview and examples on how to access and use Meteorological Service of Canada'
 ## Data discovery and metadata
 
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country.
+
+## Licence
+
+The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
 
 ## [Contact us](https://weather.gc.ca/mainmenu/contact_us_e.html)
