@@ -35,16 +35,17 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * **Deterministic systems**
 
-  * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_en.md)
+  * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
   * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
   * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
   * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
   * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
   * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
-  * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdps_en.md)
-  * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme-hrdpa_en.md)
-  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md))
-  * [Scribe nowcasting matrices](matrices/readme_nowcasting_en.md)
+  * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
+  * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
+  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpawatershed/readme_hrdpawatershed_en.md)
+  * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
+  * [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS coupled to Gulf of St. Lawrence)](nwp_systGSL/readme_systGSL_en.md)
   
 * **Probabilistic systems**
 
