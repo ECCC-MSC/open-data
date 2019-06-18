@@ -27,7 +27,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Images radar météo](obs_radar/readme_radar_fr.md)
 * [Observations in situ](obs_station/readme_observation_fr.md)
 * [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_fr.md)
-* [Profils verticaux](obs_vertical-profiles/readme_forecast-vertical-pfl_fr.md)
+* [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
 
 
 ## Prévisions météorologiques numériques
@@ -45,6 +45,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
   * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpawatershed/readme_hrdpawatershed_fr.md))
   * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
   * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_systGSL/readme_systGSL_fr.md)
+  * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps-vertical-pfl_fr.md)
   
 * **Systèmes probabilistes**
 
@@ -68,5 +69,5 @@ Les données climatiques canadiennes sont une composante du [Centre canadien des
 * [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
 * [Trajectoires d'ouragans](trajectory/readme_hurricanes_fr.md)
-* [Radiométéo](girouette/readme_radio-météo_fr.md)
+
 
