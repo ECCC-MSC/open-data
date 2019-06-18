@@ -16,11 +16,11 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Alertes météo et prévisions publiques
 
-* [Alertes météo et maritimes](pub_forecast/readme_alerts_fr.md)
-* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast/readme_currentweather-cond_fr.md)
-* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast/readme_currentmarine-cond_fr.md)
-* [Meteocode pour les régions publiques canadiennes](pub_forecast/readme_meteocode_fr.md)
-* [Polygones des régions de prévision](pub_forecast/readme_polygon_fr.md)
+* [Alertes météo et maritimes](pub_forecast_alerts/readme_alerts_fr.md)
+* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast_weather/readme_currentweather-cond_fr.md)
+* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast_marine/readme_currentmarine-cond_fr.md)
+* [Meteocode pour les régions publiques canadiennes](pub_forecast_meteocode/readme_meteocode_fr.md)
+* [Polygones des régions de prévision](pub_forecast_polygons/readme_polygon_fr.md)
 
 ## Observations 
 
