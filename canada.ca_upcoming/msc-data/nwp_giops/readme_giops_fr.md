@@ -1,0 +1,37 @@
+[In English](readme_giops_en.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPOG
+
+# Données et Produits du Système global de prévision océan-glace (SGPOG)
+
+Le Système Global de Prévision Océan-Glace (SGPOG) produit quotidiennement des analyses et des prévisions quotidiennes des 10 prochains jours de la glace de mer et océanique à l'échelle globale. Ce produit contient une moyenne temporelle des prévisions de la glace de mer et océanique interpolées sur deux grilles. La première grille possède une résolution de 0.2° en longitude et latitude couvrant les océans à l'échelle globale (au nord de 80° S). La seconde grille possède une projection cartographique polaire stéréographique avec un espacement de 5 km au parallèle 60° N et couvre l'océan Arctique et les mers sub-polaires avoisinantes. Ces données sont disponibles pour 50 niveaux de profondeur. Les fichiers correspondant sont fournis au format netCDF et respectent les conventions CF (Climate and Forecast).
+
+## Accès
+
+### Comment accéder aux données
+
+Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_giops-datamart_fr.md) 
+* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
+	* NOTE: n'existe pas pour le SGPD
+
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est disponible.
+
+### Licence
+
+La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+
+### Métadonnées
+
+_À venir._
+
+## Documentation technique
+
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdps-600_20171101_f.pdf)
+
+## Registre des changements 
+
+La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
