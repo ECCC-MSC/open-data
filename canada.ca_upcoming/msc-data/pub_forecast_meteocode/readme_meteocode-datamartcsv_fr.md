@@ -222,7 +222,7 @@ où:
     * Vitesse du vent minimale, en km/h;
     * Vitesse du vent maximale, en km/h;
     * Chaîne de caractères pour la direction du vent. Peut prendre une des valeurs suivantes:
-        *east
+        * east
         * nil
         * north (nord)
         * northeast (nord-est)
