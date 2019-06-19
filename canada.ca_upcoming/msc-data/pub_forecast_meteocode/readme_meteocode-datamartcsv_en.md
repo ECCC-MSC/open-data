@@ -189,6 +189,7 @@ where:
     * Lower value of wind speed, in km/h.
     * Higher value of wind speed, in km/h.
     * String for wind direction. Can be one of these values:
+        
         *east
         * nil
         * north
