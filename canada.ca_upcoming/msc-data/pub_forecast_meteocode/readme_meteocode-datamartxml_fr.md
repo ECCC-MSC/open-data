@@ -6,17 +6,9 @@
 
 # Données de prévision meteocode en format XML
 
-Les fichiers des données meteocode en format CSV sont créés à partir des
-fichiers en format CMML grâce la technologie XSLT. Les fichiers CSV ne
-contiennent pas plus d'information que les fichiers CMML, ils sont
-simplement dans un format différent. De plus, chaque fichier CMML contient
-plusieurs régions alors que chaque fichier CSV n'est valide que pour une
-seule région.
-
-Vous pouvez vous-mêmes créer les fichiers CSV à l'aide du CMML en utilisant
-le même fichier XSLT que celui utilisé par ECCC. Il est disponible
-à cette adresse:
-https://dd.meteo.gc.ca/meteocode/doc/csv/cmml2csv.xsl
+Cette page décrit les fichiers de langage de balisage
+météorologique canadien (CMML) qui se trouvent sur le Datamart du SMC. Le CMML
+est un format XML contenant les prévisions officielles d'Environnement et Changement climatique Canada, interpollées aux heures.
 
 ## Adresse des données 
 
@@ -36,6 +28,15 @@ où 'REGION' peut prendre une des valeurs suivantes:
 * que  
 
 Un historique des données de 24 heures est conservé dans ces répertoires.
+
+Les [spécifications du format CMML](mettre un lien vers collab) sont disponibles.
+
+Les régions de prévisions publiques sont définies précisément
+et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.
+
+Ces fichiers se trouvent ici :
+
+https://dd.meteo.gc.ca/meteocode/geodata/
 
 ## Nomenclature des noms de fichiers 
 

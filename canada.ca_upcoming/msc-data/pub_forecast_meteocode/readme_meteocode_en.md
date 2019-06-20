@@ -4,9 +4,10 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Meteocode forecast data
 
-# Data and Products of the meteocode forecast data
+# Scribe matrix meteocode data
 
-This page describes meteocode products and forecast data.
+The meteocode is a standard used by the Scribe system to describe the elements of time.
+It allows to encode according to a specific standard the concepts representing the meteorological events resulting from the digital synthesis of the Scribe matrix content.
 
 ## Access
 
@@ -27,8 +28,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-The [metadata of the Global Deterministic Forecasting System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
-
+_Not applicable._
 ## Technical documentation
 
 * [Technical note](https://wiki.cmc.ec.gc.ca/images/e/ec/Meteocode38.doc)

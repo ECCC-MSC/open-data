@@ -4,9 +4,10 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Données de prévision meteocode
 
-# Données et produits de prévision meteocode
+# Données du meteocode des matrices Scribe
 
-Cette page décrit les produits et données de prévision meteocode.
+Le meteocode est un standard utilisé par le système Scribe pour décrire les éléments du temps.
+Il permet d'encoder selon une norme spécifique les concepts représentant les évènements météorologiques résultant de la synthèse numérique du contenu des matrices Scribe.
 
 ## Accès
 
@@ -27,7 +28,7 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_À venir._
+_Ne s'applique pas._
 
 ## Documentation technique
 
