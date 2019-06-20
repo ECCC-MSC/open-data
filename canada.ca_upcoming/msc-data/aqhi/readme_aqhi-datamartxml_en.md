@@ -6,8 +6,7 @@
 
 # Air Quality Health Index (AQHI) observation and forecast data in XML format
 
-The [Air Quality Health Index AQHI](readme_aqhi_en.md) is a scale designed to help quantify the quality of the air in a certain region on a scale from 1 to 10. When the amount of air pollution is very high, the number is reported as 10+. It also includes a category that describes the health risk associated with the index reading e.g. Low, Moderate, High, or Very High Health Risk . The AQHI is calculated based on the relative risks of a combination of common air pollutants that are known to harm human health, including ground-level ozone, particulate matter, and nitrogen dioxide. The AQHI formulation captures only the short term or acute health risk exposure of hour or days at a maximum .
-The formulation of the AQHI may change over time to reflect new understanding associated with air pollution health effects. The AQHI is calculated from data observed in real time, without being verified quality control.
+This page describes the the observation and forecast data available in XML format for the [Air Quality Health Index AQHI](readme_aqhi_en.md) that are also available on the [Environment and Climate Change Canada website](https://meteo.gc.ca/airquality/pages/index_e.html). 
 
 ## Data location
 
@@ -16,57 +15,62 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
 The data can be accessed at the following address:
-* https://dd.weather.gc.ca/air_quality/aqhi/
 
-where:
+* Observations:
+   https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/xml
+  
+* Public forecasts:
+  https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/realtime/xml
+  
+A file that makes it easier for automated systems to access [real-time updated data](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) is available. 
 
-![Description de la structure des répertoires](https://dd.meteo.gc.ca/air_quality/doc/aqhi_structure.png)
+A [complete list of cities](aqhi.geosjson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
 
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
-__1. XML Files :__
+* **Observations** (Note: monthly summary XML files are not yet available)
 
-    1.1  Observations (Note: monthly summary XML files are not yet available):
-       Hourly file:   AQ_OBS_CGNDBcode_YYYYMMDDhhmm.xml
-                      AQ_OBS_CGNDBcode_CURRENT.xml (copy of the most recent real-time observation file)
-       Location: https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/xml
+  * Hourly file: AQ_OBS_CGNDBcode_YYYYMMDDhhmm.xml
+  * Copy of the most recent real-time observation file: AQ_OBS_CGNDBcode_CURRENT.xml
 
 where:
 
-* **'AQ_OBS_'** : Filename prefix. Constant string.
-* __CGNDBcode__ : 5-letter CGNDB code which identifies each AQHI community. A list of CGNDB codes is given
-at the end of this README file.
-* __YYYY__ : Year of the observation, 4 digits;
-* __MM__ : Month of the observation, 2 digits (January = 01);
-* __DD__ : Day of the observation, 2 digits;
-* __hh__ : Hour of the observation, 2 digits;
-* __mm__ : Minute of the observation, 2 digits.
+* 'AQ_OBS': Filename prefix. Constant string.
+* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each AQHI community. 
+* YYYY: Year of the observation, 4 digits;
+* MM: Month of the observation, 2 digits (January = 01);
+* DD: Day of the observation, 2 digits;
+* hh: Hour of the observation, 2 digits;
+* mm: Minute of the observation, 2 digits.
 
-__1.2  Public forecasts (Note: monthly summary XML files are not yet available) :__
-
-       Regular issue:     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
-       Amended forecasts: AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
-                          AQ_FCST_CGNDBcode_CURRENT.xml (copy of the most recent real-time forecast file)
-       Location: https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/realtime/xml
-
+* **Public forecasts** (Note: monthly summary XML files are not yet available):
+  * Regular issue:     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
+  * Amended forecasts: AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
+  * Copy of the most recent real-time forecast file: AQ_FCST_CGNDBcode_CURRENT.xml
+   
 where:
-* **'AQ_FCST_'**:  Filename prefix. Constant string.
-* __CGNDBcode__ : 5-letter CGNDB code which identifies each AQHI communitiy. A list of CGNDB codes is given
-at the end of this README file.
-* __YYYY__ : Year of the forecast issue time, 4 digits;
-* __MM__ : Month of the forecast issue time, 2 digits (January = 01);
-* __DD__ : Day of the forecast issue time, 2 digits;
-* __hh__ : Hour of the forecast issue time, 2 digits;
-* __mm__ : Minute of the forecast issue time, 2 digits;
-* __'AMD'__ : the suffix appended to the filename to indicate that the file is
+
+* 'AQ_FCST':  Filename prefix. Constant string.
+* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each AQHI communitiy. 
+* YYYY: Year of the forecast issue time, 4 digits;
+* MM: Month of the forecast issue time, 2 digits (January = 01);
+* DD: Day of the forecast issue time, 2 digits;
+* hh: Hour of the forecast issue time, 2 digits;
+* mm: Minute of the forecast issue time, 2 digits;
+* 'AMD': the suffix appended to the filename to indicate that the file is
 an amendment.
 
-Note: The XML observation files are produced hourly, at approximately 40 minutes past the hour,
+## Notes
+
+* The XML observation files are produced hourly, at approximately 40 minutes past the hour,
 and are available on Datamart for a period of 48 hours. The XML public forecast files are issued
 twice per day at approximately 6am and 5pm local time and are available on Datamart for a
 period of 48 hours.
+
+* Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/. However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on the American AirNow portal:
+https://www.airnowtech.org/index.cfm?page=login 
 
 ## Support
 
