@@ -4,16 +4,11 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Weather forecast files by city
 
-# Data and products from XML weather forecast files by city
+# Data and products for official weather forecast by city
 
-This page describes the data and products of weather forecasts
-per city that are created for some cities in the provinces and
-Canadian territories and distributed on the Environment and Change website
-Climate Canada: http://www.meteo.gc.ca/
+This page describes the data and products of weather forecasts per city that are created for some cities in the provinces and Canadian territories and distributed on the Environment and Change website Climate Canada: 
 
-The https://dd.weather.gc.ca/citypage_weather/xml/ directory
-contains the same XML information used to generate each city and
-24h forecasts page on the Environment and Climate Change Canada web site http://www.weather.gc.ca/
+http://www.meteo.gc.ca/
 
 ## Access
 
@@ -33,22 +28,11 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Upcoming._
+The [metadata of the weather forecasts per city are available on the Open Government Portal](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/eng/1f864766-7f7f-4be7-8292-295065c65c78?)
 
 ## Technical documentation
 
-The XML files are updated hourly at a minimum, but can be updated earlier
-with issue of special weather warnings, watches and amendments.
-
-Environment and Climate Change Canada's guide to the public forecast can be accessed here:
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=4D51ECA8-1
-
-It includes information on the issuing time of forecasts,time period
-covered by forecast, determination of forecast regions, forecast time
-period terminology, information included in the forecast, and forecast
-revision.
-
-* [Weather Forecast Guide](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/guide.html)
+The [weather Forecast Guide](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/guide.html) includes information on the issuing time of forecasts,time period covered by forecast, determination of forecast regions, forecast time period terminology, information included in the forecast, and forecast revision.
 
 ## Change log
 

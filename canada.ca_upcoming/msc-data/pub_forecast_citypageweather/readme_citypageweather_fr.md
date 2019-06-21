@@ -4,17 +4,11 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions météorologiques par ville
 
-# Données et produits des fichiers XML de prévisions météorologiques en fonction de la ville
+# Données et produits des prévisions météorologiques officielles par ville
 
-Cette page décrit les données et produits des prévisions météorologiques
-par ville qui sont crées pour certaines villes des provinces et des
-territoires canadiens et distribuées sur le site d'Environnement et Changement
-climatique Canada : http://www.meteo.gc.ca/
+Cette page décrit les données et produits des prévisions météorologiques par ville qui sont crées pour certaines villes des provinces et des territoires canadiens et distribuées sur le site d'Environnement et Changement climatique Canada : 
 
-Le dossier https://dd.weather.gc.ca/citypage_weather/xml/ contient
-les renseignements, en format XML, qui sont utilisés pour créer les pages
-par ville et les prévisions 24 heures, du site d'Environnement et changement 
-climatique Canada http://www.meteo.gc.ca/
+http://www.meteo.gc.ca/
 
 ## Accès
 
@@ -34,24 +28,11 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_À venir._
+Les [métadonnées des prévisions météorologiques par ville sont disponibles sur le portail du gouvernement ouvert](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/fre/1f864766-7f7f-4be7-8292-295065c65c78)
 
 ## Documentation technique
 
-Les fichiers XML sont mis à jour au moins une fois par heure, ou plus
-souvent dans le cas d'avertissements, d'avis ou de modifications de veille
-météorologique.
-
-Vous pouvez consulter le guide des prévisions météorologiques
-d'Environnement et changement climatique Canada à l'adresse :
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=4D51ECA8-1
-
-Le guide fournit des renseignements sur les bulletins de prévisions :
-heure de publication, période couverte, régions, terminologie relative à
-la période de prévision, renseignements fournis et révision des
-prévisions.
-
-* [Guide des prévisions météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/guide.html)
+Le [Guide des prévisions météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/guide.html) fournit des renseignements sur les bulletins de prévisions: heure de publication, période couverte, régions, terminologie relative à la période de prévision, renseignements fournis et révision des prévisions.
 
 ## Registre des changements 
 
