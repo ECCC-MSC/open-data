@@ -28,11 +28,12 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Not applicable._
+Not available
+
 ## Technical documentation
 
-* [Technical note](https://wiki.cmc.ec.gc.ca/images/e/ec/Meteocode38.doc)
+* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/Meteocode_fr.pdf) _(only available in French)_
 
 ## Change log
 
-_Not available._
+Not applicable

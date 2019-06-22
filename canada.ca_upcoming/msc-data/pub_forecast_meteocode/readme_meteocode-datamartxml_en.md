@@ -6,9 +6,7 @@
 
 # Meteocode forecast data in XML format
 
-This page describes the markup language files
-Canadian Meteorological Service (CMML) on the MSC Datamart. The CMML
-is an XML format containing Environment and Climate Change Canada's official forecasts, interpolated by hour.
+This page describes the markup language files Canadian Meteorological Service (CMML) on the MSC Datamart. The CMML is an XML format containing Environment and Climate Change Canada's official forecasts, interpolated by hour.
 
 # Data address 
 
@@ -21,6 +19,7 @@ The data is available at the following address:
 https://dd.weather.gc.ca/meteocode/REGION/cmml/ 
 
 where 'REGION' is one of the following value:
+
 * atl
 * ont
 * pnr
@@ -29,9 +28,9 @@ where 'REGION' is one of the following value:
 
 A 24-hour data history is kept in these directories.
 
-The [CMML format specifications](insert a link to collab) are available.
-Public forecast regions are precisely defined
-and can be found in a geo-referenced file in Shapefile format.
+The [CMML format specifications](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/cmml_specification_en-v3.04.pdf) are available.
+
+Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.
 
 These files can be found here:
 
@@ -50,6 +49,7 @@ The forecast emitted for each provinces and territories is located in a specific
 
 
 The filenames follow the convention:
+
 TRANSMIT.FP[A-Z][A-Z][0-9][0-9].MM.DD.HHmmZ[.AMD].xml
 
 where:

@@ -8,12 +8,7 @@
 
 Ce document décrit le contenu des fichiers de [données meteocode](readme_meteocode_fr.md) en format CSV.
 
-Les fichiers des données meteocode en format CSV sont créés à partir des
-fichiers en format CMML grâce la technologie XSLT. Les fichiers CSV ne
-contiennent pas plus d'information que les fichiers CMML, ils sont
-simplement dans un format différent. De plus, chaque fichier CMML contient
-plusieurs régions alors que chaque fichier CSV n'est valide que pour une
-seule région.
+Les fichiers des données meteocode en format CSV sont créés à partir des fichiers en format CMML grâce la technologie XSLT. Les fichiers CSV ne contiennent pas plus d'information que les fichiers CMML, ils sont simplement dans un format différent. De plus, chaque fichier CMML contient plusieurs régions alors que chaque fichier CSV n'est valide que pour une seule région.
 
 ## Adresse des données 
 
@@ -21,8 +16,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV.
 
-Les données pour les différentes régions du pays sont disponibles aux 
-adresses suivantes:
+Les données pour les différentes régions du pays sont disponibles aux  adresses suivantes:
 
 * https://dd.meteo.gc.ca/meteocode/mtm/csv/
 * https://dd.meteo.gc.ca/meteocode/ont/csv/
@@ -41,17 +35,14 @@ Les noms de fichiers ont la forme:
 YYYY-MM-DDTHH-MM-SSZ_FPAANN_rRRRR_BB.csv
 
 où:
-* __YYYY-MM-DDTHH-MM-SSZ__ : date d'émission de la prévision. En format ISO 8601.
-* __FP__ : chaîne de caractères constante, signifiant prévision publique
+
+* YYYY-MM-DDTHH-MM-SSZ: date d'émission de la prévision. En format ISO 8601.
+* FP: chaîne de caractères constante, signifiant prévision publique
 (en anglais: Forecast Public).
-* __AANN__ : Voir la section 'Nom de fichier' dans le README du CMML à cette adresse http://dd.meteo.gc.ca/meteocode/doc/cmml/README_CMML.txt
-* __r__ : caractère constant indiquant le début du code de région.
-* __RRRR__ : code alphanumérique indiquant la région de prévision publique.
-Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). La liste
-complète des régions de prévisions ainsi que le code associé se trouvent à
-la fin de ce fichier dans la section "Correspondance des codes de région
-de prévision et des noms"
-* __BB__ : chaîne de caractères indiquant l'élément du temps. Peut prendre
+* AANN: Voir la section 'Nom de fichier' dans le README du CMML à cette adresse http://dd.meteo.gc.ca/meteocode/doc/cmml/README_CMML.txt
+* r: caractère constant indiquant le début du code de région.
+* RRRR: code alphanumérique indiquant la région de prévision publique. Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). 
+* BB: chaîne de caractères indiquant l'élément du temps. Peut prendre
 une de ces valeurs: TA (température de l'air), TD (point de rosée), PA (accumulation de précipitation), POP (probabilité de précipitation), WS (vitesse et direction du vent), 
 WG (rafale), CC (couverture nuageuse).
 
@@ -78,14 +69,13 @@ prévision créé le 17 novembre 2009 à 9:47 UTC (2009-11-17T09-47-00Z) émise
 par le bureau de prévision du Québec (FPXK) pour les jours 3 à 7 (55) pour la région de Chevery
 (r74.18).
 
+La [liste complète des régions de prévisions ainsi que le code associé]() est disponible.
+
 ## Contenu des fichiers
 
-* Pour chaque région de prévisions, 7 fichiers sont produits. Le contenu de chaque
-  fichier est décrit dans les sections ci-bas.
-* Les valeurs ''-9999.00'' indiquent une donnée invalide ou manquante pour la température de l'air ou 
-  le point de rosée. 
-* Si les rafales ne sont pas disponibles dans le fichier CMML à une heure de validité donnée, alors le
-  fichier CSV associé ne contient pas de données pour cette date spécifique. 
+* Pour chaque région de prévisions, 7 fichiers sont produits. Le contenu de chaque ichier est décrit dans les sections ci-bas.
+* Les valeurs ''-9999.00'' indiquent une donnée invalide ou manquante pour la température de l'air ou le point de rosée. 
+* Si les rafales ne sont pas disponibles dans le fichier CMML à une heure de validité donnée, alors le ichier CSV associé ne contient pas de données pour cette date spécifique. 
 * Toutes les dates sont dans le format ISO 8601.
 
 

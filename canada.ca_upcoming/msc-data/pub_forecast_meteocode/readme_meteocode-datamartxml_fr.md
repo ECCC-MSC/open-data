@@ -6,9 +6,7 @@
 
 # Données de prévision meteocode en format XML
 
-Cette page décrit les fichiers de langage de balisage
-météorologique canadien (CMML) qui se trouvent sur le Datamart du SMC. Le CMML
-est un format XML contenant les prévisions officielles d'Environnement et Changement climatique Canada, interpollées aux heures.
+Cette page décrit les fichiers de langage de balisage météorologique canadien (CMML) qui se trouvent sur le Datamart du SMC. Le CMML est un format XML contenant les prévisions officielles d'Environnement et Changement climatique Canada, interpollées aux heures.
 
 ## Adresse des données 
 
@@ -20,7 +18,8 @@ Les fichiers pour ces données se trouvent à l'adresse:
        
 https://dd.meteo.gc.ca/meteocode/REGION/cmml/ 
 
-où 'REGION' peut prendre une des valeurs suivantes:
+  où 'REGION' peut prendre une des valeurs suivantes:
+ 
 * atl
 * ont
 * pnr
@@ -29,10 +28,9 @@ où 'REGION' peut prendre une des valeurs suivantes:
 
 Un historique des données de 24 heures est conservé dans ces répertoires.
 
-Les [spécifications du format CMML](mettre un lien vers collab) sont disponibles.
+Les [spécifications du format CMML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
 
-Les régions de prévisions publiques sont définies précisément
-et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.
+Les régions de prévisions publiques sont définies précisément et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.
 
 Ces fichiers se trouvent ici :
 
@@ -50,6 +48,7 @@ Les prévisions émises pour chaque province se trouvent dans un répertoire sp�
 * que : Québec
 
 Les noms des fichiers CMML suivent cette nomenclature:
+
 TRANSMIT.FP[A-Z][A-Z][0-9][0-9].MM.DD.HHmmZ[.AMD].xml
 
 où:
@@ -163,10 +162,7 @@ Exemple de nom de fichier:
 
 https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml
 
-Ce fichier contient les prévisions émise par le bureau de Vancouver 
-(répertoire 'pyr' et 'VR' dans le nom de fichier) en langue anglaise pour
-les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC
-('10.30.2300Z') en format CMML ('.xml').
+Ce fichier contient les prévisions émise par le bureau de Vancouver (répertoire 'pyr' et 'VR' dans le nom de fichier) en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').
 
 ## Support
 
