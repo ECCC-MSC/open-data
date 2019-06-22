@@ -8,7 +8,7 @@
 
 This document describes the content of the [meteocode data](readme_meteocode_en.md) in CSV format.
 
-The files for meteocode data in CSV format are created from the CMML files using the [XSLT](cmml2csv.txt) technology. The CSV files does not contain more information than the CMML files, they are only in a different format. Moreover, each CMML files contains many regions while each CSV file contains only one region.
+The files for meteocode data in CSV format are created from the CMML files using the [XSLT](cmml2csv.xsl) technology. The CSV files does not contain more information than the CMML files, they are only in a different format. Moreover, each CMML files contains many regions while each CSV file contains only one region.
 
 ## Data address 
 
