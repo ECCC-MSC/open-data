@@ -17,7 +17,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ## Weather alerts and public forecasts
 
 * [Weather and marine alerts](pub_forecast_alerts/readme_alerts_en)
-* [Current weather conditions and 7-days forecast for Canadian cities](pub_forecast_weather/readme_weather_en)
+* [Current weather conditions and 7-days forecast for Canadian cities](pub_forecast_citypageweather/readme_citypageweather_en)
 * [Current marine conditions and 7-days forecast for marine regions](pub_forecast_marine/readme_marine_en)
 * [Meteocode for Canadian forecast public reginons ](pub_forecast_meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](pub_forecast_polygons/readme_polygon_en.md)
@@ -26,7 +26,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ## Observations 
 
 * [Weather radar imagery](obs_radar/readme_radar_en.md)
-* [In situ observations](obs_station/readme_observation_en.md)
+* [In situ observations](obs_station/readme_obs_station_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles](obs_vertical-profiles/readme_obs-vertical-pfl_en.md)
 
