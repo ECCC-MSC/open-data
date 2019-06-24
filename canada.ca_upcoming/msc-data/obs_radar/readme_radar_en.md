@@ -14,7 +14,7 @@ This page describes the data and products of the canadian radars of the Environm
 
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
-* [GIF radar imagery available on the MSC Datamart](readme_radar-datamart_en.md) 
+* [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
 * Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
 	* NOTE: does not exist for the GDPS
 
