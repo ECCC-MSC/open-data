@@ -6,7 +6,7 @@
 
 # Radar imagery
 
-This page describes the [radar](readme_radar_fr.md) imagery in GIF format, available on the MSC Datamart.
+This page describes the [radar](readme_radar_en.md) imagery in GIF format, available on the MSC Datamart.
 
 These images are used to feed the public forecast website:
 
