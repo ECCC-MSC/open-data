@@ -44,7 +44,7 @@ where:
 
 **Note**:
 
-The [region's code and name correspondence](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/table_region_code_name.txt) is available.
+The [region's code and name correspondence](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/table_region_code_name.xlsx) is available.
 
 The codes are separated by the forecast offices because the same code can be used by more than one region, as:
 
