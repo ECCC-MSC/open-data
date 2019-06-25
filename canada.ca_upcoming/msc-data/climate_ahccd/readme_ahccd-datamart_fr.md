@@ -6,6 +6,11 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > DCCAH sur le Datamart du SMC
 
+<<<<<<< HEAD
+# Données GeoJSON du système global de prévision déterministe (SGPD)
+
+Les données se composent de moyennes mensuelles, saisonnières et annuelles de température de l’air de surface quotidienne maximale, minimale et moyenne homogénéisée pour plus que 330 emplacements au Canada; de totaux mensuels, saisonniers et annuels de chute de pluie, de neige et de précipitation totale quotidienne ajustée pour plus que 460 emplacements; moyennes homogénéisées mensuelles, saisonnières et annuelles de la vitesse du vent horaire pour plus de 110 emplacements; moyennes mensuelles, saisonnières et annuelles de pression horaire au niveau de la station et au niveau de la mer ajustée pour plus que 630 emplacements. Les données sont fournies pour la période complète d’observation. Veuillez consulter les documents ci-dessous pour obtenir de l’information sur les procédures utilisées pour l’homogénéisation et les ajustements. 
+=======
 # Données Climatiques Canadiennes Ajustées et Homogénéisées (DCCAH) en format GeoJSON
 
 Les données DCCAH sont des ensembles de données de stations climatiques avec des ajustements (dérivés de procédures statistiques) aux données historiques originales aux stations pour tenir compte des discontinuités dues à des facteurs non climatiques, tels que les changements d'instruments ou le déplacement des stations.
@@ -13,6 +18,7 @@ Les données DCCAH sont des ensembles de données de stations climatiques avec d
 Cet ensemble de données a été élaboré pour la recherche sur le climat, y compris les études sur le changement climatique. Les enregistrements de données à long terme sont souvent influencés par des changements (p. ex. exposition au site, emplacement, instrumentation, observateur et procédures d'observation) qui ne sont pas liés au climat. Ces changements non climatiques ont été détectés et supprimés à l'aide de procédures statistiques.
 
 Au besoin, les données ont été corrigées pour certaines techniques de mesure dont on sait qu'elles peuvent entraîner des sous-estimations ou des surestimations. De plus, les données des stations voisines ont parfois été combinées pour créer des séries chronologiques plus longues.
+>>>>>>> e2648845510ef76a3eaef432476b82e03f36f4b6
 
 ## Adresse des données 
 
@@ -22,9 +28,17 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers AHCCD se trouvent à l'adresse suivante :
 
+<<<<<<< HEAD
+/climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+
+/climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+
+/climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+=======
 * /climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 * /climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 * /climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+>>>>>>> e2648845510ef76a3eaef432476b82e03f36f4b6
 
 Où :
 
@@ -72,7 +86,11 @@ Exemple: AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
 
+<<<<<<< HEAD
+La liste des variables AHCCD est :
+=======
 La liste des variables DCCAH est :
+>>>>>>> e2648845510ef76a3eaef432476b82e03f36f4b6
 
 * Température maximale (°C)
 * Température minimale (°C)
