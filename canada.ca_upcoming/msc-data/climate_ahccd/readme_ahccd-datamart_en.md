@@ -6,7 +6,15 @@
 
 # Adjusted and Homogenized Canadian Climate Data (AHCCD) in GeoJSON format
 
+<<<<<<< HEAD
 The data consist of monthly, seasonal and annual means of homogenized daily maximum, minimum and mean surface air temperatures for more than 330 locations in Canada; monthly, seasonal and annual totals of adjusted daily rainfall, snowfall and total precipitation for more than 460 locations; homogenized monthly, seasonal and annual means of hourly surface wind speed at more than 110 locations; monthly, seasonal and annual means of hourly station and sea level pressure adjusted for more than 630 locations. The data are given for the entire period of observation. Please refer to the papers below for detailed information regarding the procedures for homogenization and adjustment. 
+=======
+The AHCCD data are climate station datasets with adjustments (derived from statistical procedures) to the original historical station data to account for discontinuities from non-climatic factors, such as instrument changes or station relocation. 
+
+This dataset was developed for use in climate research, including climate change studies. Long-term data records are often impacted by changes (e.g. site exposure, location, instrumentation, observer, and observing procedures) that are not related to climate. These non-climatic changes were detected and removed using statistical procedures. 
+
+When necessary, data were corrected for some measurement techniques that are known to possibly lead to underestimations or overestimations. In addition, data from nearby stations were sometimes combined to create longer time series
+>>>>>>> e2648845510ef76a3eaef432476b82e03f36f4b6
 
 ## Data location
 
@@ -16,11 +24,17 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs:
 
+<<<<<<< HEAD
 /climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
 /climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
 /climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+=======
+* /climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* /climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* /climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+>>>>>>> e2648845510ef76a3eaef432476b82e03f36f4b6
 
 Where :
 
