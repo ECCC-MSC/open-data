@@ -31,6 +31,7 @@ Les [métadonnées des Données Climatiques Canadiennes Ajustées et Homogénéi
 ## Documentation technique
 
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ahccd/AHCCD_Technical_Documentation_fr.pdf)
+* Ces données sont aussi disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)
 
 ## Registre des changements 
 
