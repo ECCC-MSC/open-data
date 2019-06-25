@@ -17,7 +17,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Alertes météo et prévisions publiques
 
 * [Alertes météo et maritimes](pub_forecast_alerts/readme_alerts_fr.md)
-* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub-forecast_weather/readme_currentweather-cond_fr.md)
+* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub_forecast_citypageweather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast_marine/readme_currentmarine-cond_fr.md)
 * [Meteocode pour les régions publiques canadiennes](pub_forecast_meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](pub_forecast_polygons/readme_polygon_fr.md)
@@ -25,7 +25,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Observations 
 
 * [Images radar météo](obs_radar/readme_radar_fr.md)
-* [Observations in situ](obs_station/readme_observation_fr.md)
+* [Observations in situ](obs_station/readme_obs_station_fr.md)
 * [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
 

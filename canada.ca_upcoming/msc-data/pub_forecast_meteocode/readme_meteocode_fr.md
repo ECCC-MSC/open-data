@@ -28,12 +28,12 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_Ne s'applique pas._
+Non disponibles
 
 ## Documentation technique
 
-* [Note technique](https://wiki.cmc.ec.gc.ca/images/e/ec/Meteocode38.doc)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/Meteocode_fr.pdf)
 
 ## Registre des changements 
 
-_Non disponible._
+Ne s'applique pas
