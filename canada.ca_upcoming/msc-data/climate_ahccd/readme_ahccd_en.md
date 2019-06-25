@@ -32,6 +32,7 @@ The [metadata of the Adjusted and Homogenized Canadian Climate Data are availabl
 ## Technical documentation
 
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ahccd/AHCCD_Technical_Documentation_en.pdf)
+* These data are also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
 
 ## Change log
 
