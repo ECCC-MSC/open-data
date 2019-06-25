@@ -71,7 +71,7 @@ par le bureau de prévision du Québec (FPXK) pour les jours 3 à 7 (55) pour la
 
 **Note**:
 
-La [liste complète des régions de prévisions ainsi que le code associé](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/table_region_code_name.txt) est disponible.
+La [liste complète des régions de prévisions ainsi que le code associé](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/table_region_code_name.xlsx) est disponible.
 
 Les codes sont séparés par les bureaux de prévision car un même code peut être utilisé par dans plus d'une région, selon
 
