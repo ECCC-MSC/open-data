@@ -105,4 +105,4 @@ The [metadata of the real time hydrometric data tool are available on the Open G
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+_Not applicable._
