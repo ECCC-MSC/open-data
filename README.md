@@ -156,6 +156,14 @@ Hosting images for the documentation on Canada.ca:
 
 Just like [images](#images-in-the-documentation), any file including binary files in the `.pdf` and `.docx` formats need to be hosted on the Collaboration server in the corresponding directory and a link to those files is used in the actual documentation. 
 
+## Changes to the Licence
+
+Prior applying any change to the [licence accompanying the documentation](licence/), the following must be completed:
+* Get formal management approval for the change
+* Bump the Licence version number
+* Announce change to the Licence to users
+  * e.g. [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists
+
 
 # Deploying the documentation
 
