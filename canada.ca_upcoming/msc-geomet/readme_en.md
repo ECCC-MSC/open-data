@@ -15,7 +15,7 @@ Access to the MSC GeoMet services is anonymous and free of charge. These service
 
 ### GeoMet-Weather
 
-GeoMet-Weather provides public access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.
+GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.
 
 Service capabilities:
 * GeoMet-Weather WMS URL: https://geo.weather.gc.ca/geomet?lang=en&service=WMS&version=1.3.0&request=GetCapabilities
@@ -23,7 +23,7 @@ Service capabilities:
 
 ### GeoMet-Climate
 
-GeoMet-Climate provides public access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services. It provides access to historical climate datasets such daily observation data, monthly summaries and climate normals for climate stations across the country. The GeoMet-Climate services are a data source for the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
+GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services. It provides access to historical climate datasets such daily observation data, monthly summaries and climate normals for climate stations across the country. The GeoMet-Climate services are a data source for the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
 
 Service capabilities:
 * GeoMet-Climate WMS URL: https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities
@@ -35,14 +35,14 @@ The source code for GeoMet-Climate and the Climate Data Extraction Tool is publi
 
 ### GeoMet-OGC-Features
 
-GeoMet-OGC-Features provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging [Open Geospatial Consortium (OGC) Web Feature Service (WFS) 3.0 standard](https://github.com/opengeospatial/WFS_FES). It provides access to hydrometric and climate data.
+GeoMet-OGC-Features provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging [Open Geospatial Consortium (OGC) Web Feature Service (WFS) 3.0 standard](https://github.com/opengeospatial/WFS_FES). It currently provides access to hydrometric and climate data.
 
 Service capabilities:
 * GeoMet-OGC-Features URL: https://geo.weather.gc.ca/geomet/features/?f=html
 
 ### GeoMet-Beta
 
-GeoMet-Beta provides access to experimental and other non-operational data. This service is not operational.
+GeoMet-Beta provides access to experimental and other non-operational data. This service is not operationally supported.
 
 Service capabilities:
 * GeoMet-Beta WMS URL: https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0request=GetCapabilities
@@ -51,7 +51,9 @@ Service capabilities:
 
 ## Usage
 
-Information on using these services and examples are available on the [usage overview page](../usage-overview/readme_en.md).
+Documentation on using these services and examples are available at the following locations:
+* [Usage overview page](../usage-overview/readme_en.md)
+* [Technical information on geospatial web services](web-services_en.md)
 
 
 ## Announcement mailing list
