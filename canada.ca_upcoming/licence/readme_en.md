@@ -19,7 +19,7 @@ You are encouraged to use the Information that is available under this licence w
 
 * Copy, modify (see note), publish, translate, adapt (see note), distribute or otherwise use (see note) the Information in any medium, mode or format for any lawful purpose.
 
-Note: In the case of weather alerts (i.e. watches/warnings), any information shall be reproduced in such a way that there is not alteration of the content or intent of the alert.
+Note: In the case of weather alerts (i.e. watches/warnings), any information shall be reproduced in such a way that there is no alteration of the content or intent of the alert.
 
 ## 3. You must, where you do any of the above
 
