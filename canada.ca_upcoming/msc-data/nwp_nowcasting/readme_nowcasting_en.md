@@ -18,7 +18,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) op
 
 * [ASCII matrices available on the MSC Datamart](readme_nowcasting-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is available.
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
 ### Licence
 

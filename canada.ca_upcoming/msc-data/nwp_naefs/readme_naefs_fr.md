@@ -22,7 +22,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
   * NOTE: n'existe pas pour le SGPD
 
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../how-to/readme_fr.md) est disponible.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 

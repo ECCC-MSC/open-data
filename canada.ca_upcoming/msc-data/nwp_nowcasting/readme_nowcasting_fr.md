@@ -18,7 +18,7 @@ Ces données sont disponibles sur le serveur de données [Datamart du SMC](../..
 
 * [Matrices ASCII disponibles sur le Datamart du SMC](readme_nowcasting-datamart_fr.md) 
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est disponible.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 
