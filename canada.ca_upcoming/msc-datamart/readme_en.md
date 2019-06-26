@@ -40,7 +40,7 @@ Data on the MSC Datamart is available in open formats. It includes:
 
 Information on using these services and examples are available on the [usage overview page](../usage-overview/readme_en.md).
 
-## Change Management 
+## Change management 
 
 The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology, standards and inovation do change continuously. However, we will do our best to notify our users in advance of upcoming changes. 
 
