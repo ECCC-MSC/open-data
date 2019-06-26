@@ -15,6 +15,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
   * [Update workflow](#update-workflow)
   * [Images in the documentation](#images-in-the-documentation)
   * [Files in the documentation](#files-in-the-documentation)
+  * [Changes to the Licence](#changes-to-the-licence)
 6. [Deploying the documentation](#deploying-the-documentation)
 
 
