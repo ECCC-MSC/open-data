@@ -24,7 +24,7 @@ Les données sont accessibles à adresse suivante :
 
 Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
 
-Une [liste complète des villes](aqhi.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
+Une [liste complète des villes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
 
 ## Nomenclature des noms de fichiers 
 
@@ -38,7 +38,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 où:
 
 * 'AQ_OBS' : le préfixe du nom de fichier. Chaîne de caractères constante.
-* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque communauté CAS. 
+* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
 * AAAA: année de l'observation, 4 chiffres;
 * MM: mois de l'observation, 2 chiffres (janvier = 01);
 * JJ: jour de l'observation, 2 chiffres;
@@ -55,7 +55,7 @@ où:
 où:
 
 * 'AQ_FCST': le préfixe du nom de fichier. Chaîne de caractères constante.
-* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque communauté CAS. 
+* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
 * AAAA: année de l'émission, 4 chiffres;
 * MM: mois de l'émission, 2 chiffres (janvier = 01);
 * JJ: jour de l'émission, 2 chiffres;

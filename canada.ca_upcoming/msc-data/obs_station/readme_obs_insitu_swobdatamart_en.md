@@ -39,7 +39,7 @@ where:
 * YYYYMMDD: observation date in UTC
 * XXXXXXX: station code (WMO ID), could be 5 or 7 digits
 
-__Note__: A [list of marine observations](https://dd.meteo.gc.ca/observations/doc/swob-xml_marine_station_list.csv) is available.
+__Note__: A [list of marine observations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) is available.
 
 * __Partner observations :__
   
@@ -51,7 +51,7 @@ where :
 * YYYYMMDD: observation date in UTC
 * MSC-ID: partner’s unique MSC station id 
 
-__Note__: A [list of partners stations](https://dd.meteo.gc.ca/observations/doc/swob-xml_partner_station_list.csv) is available.
+__Note__: A [list of partners stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
 
 ## Nomenclature 
 

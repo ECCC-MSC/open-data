@@ -7,15 +7,11 @@
 
 # Matrices scribe de prévision immédiates
 
-Les fichiers de [matrices de prévisions immédiates](readme_nowcasting_fr.md) sont
-mise à jour à chaque heure et contiennent un ensemble cohérent d'éléments
-du temps observés et prévus à très court terme pour des points de prévision
-correspondant généralement à des sites de stations d'observation. Il y a plus de 450 
-points de prévision dans la matrice. Les observations horaires de surface
-(METAR-SPECI) et synoptiques sont traités ainsi que les observations de foudre.
-On utilise des modèles de prévision numérique du temps, 
-des modèles statistiques ainsi que des système de prévisions immédiates de pair avec
-les observations pour préparer les données prévues. 
+Les fichiers de [matrices de prévisions immédiates](readme_nowcasting_fr.md) sont mis à jour à chaque heure et contiennent un ensemble cohérent d'éléments du temps observés et prévus à très court terme pour des points de prévision correspondant généralement à des sites de stations d'observation. Il y a plus de 450 points de prévision dans la matrice.
+
+Les observations horaires de surface (METAR-SPECI) et synoptiques sont traités ainsi que les observations de foudre.
+
+On utilise des modèles de prévision numérique du temps, des modèles statistiques ainsi que des système de prévisions immédiates de pair avec les observations pour préparer les données prévues. 
 
 ## Adresse des données 
 
@@ -72,11 +68,7 @@ où :
 |20040122 2000|  9|999| -S  |100|     |  0|     |  0| 80| 0.2| SN| -7.3|-11.7|279| 40| 50|15.00|  |
 
 
-Dans cet exemple la séquence de données commence à 02Z puis est suivie par 6
-heures d'observations précédentes l'heure de la passe 08Z, puis se termine 12
-heures plus tard à 20Z, pour totaliser 19 heures de données (6 heures de
-données passées, plus l'heure courante d'observation (moment de la passe) et
-12 heures de données prévues)
+Dans cet exemple la séquence de données commence à 02Z puis est suivie par 6 heures d'observations précédentes l'heure de la passe 08Z, puis se termine 12 heures plus tard à 20Z, pour totaliser 19 heures de données (6 heures de données passées, plus l'heure courante d'observation (moment de la passe) et 12 heures de données prévues)
  
 ### Description des colonnes de gauche à droite.
 
@@ -119,11 +111,7 @@ __L'intensité des précipitations est donnée par:__
 * ( ) (pas de signe) modérée
 * (+) Forte
         
-Dans certaines circonstances, par exemple lorsque la température est proche de zéro, il est possible d'avoir 
-plus d'un type de précipitation à un moment donné, par exemple; neige mélangée avec de la pluie et 
-occasionnellement de la pluie verglaçante. Dans cette situation, la condition dominante (neige) serait rapportée
-dans le type 1 (PCPN1) tandis que les précipitations associées seraient de type 2 (PCPN2) pour la pluie
-et de type 3 (PCPN3) pour la pluie verglaçante.
+Dans certaines circonstances, par exemple lorsque la température est proche de zéro, il est possible d'avoir plus d'un type de précipitation à un moment donné, par exemple; neige mélangée avec de la pluie et occasionnellement de la pluie verglaçante. Dans cette situation, la condition dominante (neige) serait rapportée dans le type 1 (PCPN1) tandis que les précipitations associées seraient de type 2 (PCPN2) pour la pluie et de type 3 (PCPN3) pour la pluie verglaçante.
 
 __11__ :     la colonne 11, nommée "POP", représente la probabilité de précipitations de tous les types 
         ensemble. Dans la section des observations, à savoir de 02Z à 07Z la POP observées pourraient 
@@ -150,8 +138,7 @@ __19, 20__ : Les deux dernières colonnes donnent la visibilité (une distance d
         Un type d'obstacle à la visibilité accompagnera une visibilité inférieure à 6 miles, observés ou prévus
 
 
-Le code des types possibles de visibilité utilisés dans les
-matrices de prévisions immédiates sont:
+Le code des types possibles de visibilité utilisés dans les matrices de prévisions immédiates sont:
 
 |(P): prévue  |  (O): observée  |
 |-------------|-----------------|
@@ -169,11 +156,12 @@ matrices de prévisions immédiates sont:
 |        Non disponible      |    NA (F & O)  | 
 
 
-__NOTE__ : Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, 
-une prévision sera toujours produit même si les onservation de surface sont incomplètes, manquantes ou 
-non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, 
-le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques 
+### Notes
+
+* Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, une prévision sera toujours produit même si les observations de surface sont incomplètes, manquantes ou non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques 
 du Système Régional de Prévision Déterministe Canadien (SRPD PNT) seront utilisés.
+
+* Une [liste des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) est disponible en format GeoJSON.
 
 ## Support
 

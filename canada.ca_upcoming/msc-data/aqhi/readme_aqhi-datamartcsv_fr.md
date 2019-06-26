@@ -61,7 +61,7 @@ possibles sont les suivantes:
     * 'PYR'=Région du Pacifique et Yukon,
     * 'QC'= Région du Québec;
 * OBSTYPE: type d'observation dans le fichier. Les options possibles sont les suivants:
-    * 'SiteObs'=le fichier contient les observations de CAS pour les communautés,
+    * 'SiteObs'=le fichier contient les observations de CAS pour les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson),
     * 'StationObs'= le fichier contient les observations de CAS pour les stations d'observation associées
     aux communautés (non disponible au mois de janvier 2012).
     * 'BACKFILLED': symbole qui est présent lorsque le fichier contient des observations de CAS qui
@@ -77,8 +77,8 @@ où:
 * AAAA: année des prévisions, 4 chiffres;
 * MM: mois des prévisions, 2 chiffres (janvier = 01);
 * 'MONTHLY': symbole qui est présent lorsque le fichier contient des données pour le mois;
-* CGNDB_code: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque communauté de la CAS. 
-* 'SiteFcst': symbole qui est présent pour indiqué que le fichier contient prévisions de CAS pour une communauté.
+* CGNDB_code: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté de la CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+* 'SiteFcst': symbole qui est présent pour indiqué que le fichier contient prévisions de CAS pour une [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
 
 Une [liste complète des villes](aqhi.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
 
@@ -126,7 +126,7 @@ temps-réel** (pour les fichiers en format « real-time » et « MONTHLY »):
     
       * 'Date': étiquette statique
       * 'Hour': étiquette statique
-      * CGNDB_Site#: un code de 5-caractères qui identifie chaque communauté CAS. 
+      * CGNDB_Site#: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 
   * **Bloc de données**
   
@@ -142,7 +142,7 @@ temps-réel** (pour les fichiers en format « real-time » et « MONTHLY »):
       * MM: le mois de l'observation.
       * JJ: le jour de l'observation.
       * hh: L'heure de l'observation.
-      * CAS_Site#: Les observations de la CAS pour toutes les communautés dans la région.
+      * CAS_Site#: Les observations de la CAS pour toutes les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région.
 
     Note: Pour les fichiers "real-time", les observations de CAS couvrent les dernières
 sept jours avec l'observation le plus recente au première ligne. Ils sont disponibles
@@ -176,8 +176,8 @@ permettre l'arrivée des données manquantes et des corrections pour les polluan
 
    où:
    
-      * CGNDBcode: un code de 5-caractères qui identifie chaque communauté CAS. 
-      * CommunityName: le nom utilisé pour identifier la communauté associée au code CGNDB, et pour laquelle la prévision est valide,
+      * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+      * CommunityName: le nom utilisé pour identifier la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
       * IssueDate: le jour pour lequel la prévision a été émise (AAAA-MM-JJ),
       * IssueTime: le moment précis où la prévision a été émise (hh:mm:ss),
       * ForecastPeriod: entier avec une valeur de 1, 2, ou 3, qui répresente la période de prévision ("Aujourd'hui", "Ce soir et cette nuit", ou "Demain", respectivement),
@@ -205,7 +205,7 @@ cgndb,forecast date (hour0),forecast date (hour1), ... , forecast date (hour47),
     où:
     
       * "stationId" est un symbol qui déclare que les valeurs dans la première colonne identifient les stations dans la région d'intérêt;
-      * "cgndb" est un symbol qui déclare que les valeurs dans la première colonne identifient les communautés dans la région d'intérêt;
+      * "cgndb" est un symbol qui déclare que les valeurs dans la première colonne identifient les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région d'intérêt;
       * les 49 valeurs qui suivent le stationId sont les dates (format=AAAMMJJhh) qui définissent l'heure de prévision (de H+000 à H+048) du modèle et qui sont applicables à toutes les stations.
   
  * **Bloc de données**
@@ -223,7 +223,7 @@ StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
    où:
    
        * StationID: code de NAPS qui identifie la station d'observation à laquelle les données de modèle sont fournies.
-       * CGNDBcode: un code de 5-caractères qui identifie chaque communauté CAS. Une liste des codes CGNDB est données à la fin de ce fichier.
+       * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
        * Valeur (H+000 à H+048): valeur du modèle dérivée à la station d'observation (pour UMOSAQ) ou interpolées à la station d'observation (pour AQFM, UMOSAQMIST). 
   
 ## Notes

@@ -24,7 +24,7 @@ The data can be accessed at the following address:
   
 A file that makes it easier for automated systems to access [real-time updated data](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) is available. 
 
-A [complete list of cities](aqhi.geosjson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
+A [complete list of cities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
 
 ## File name nomenclature 
 
@@ -38,7 +38,7 @@ NOTE: ALL HOURS ARE IN UTC.
 where:
 
 * 'AQ_OBS': Filename prefix. Constant string.
-* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each AQHI community. 
+* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 * YYYY: Year of the observation, 4 digits;
 * MM: Month of the observation, 2 digits (January = 01);
 * DD: Day of the observation, 2 digits;
@@ -53,7 +53,7 @@ where:
 where:
 
 * 'AQ_FCST':  Filename prefix. Constant string.
-* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each AQHI communitiy. 
+* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 * YYYY: Year of the forecast issue time, 4 digits;
 * MM: Month of the forecast issue time, 2 digits (January = 01);
 * DD: Day of the forecast issue time, 2 digits;

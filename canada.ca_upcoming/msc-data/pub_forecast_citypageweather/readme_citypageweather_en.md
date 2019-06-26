@@ -36,4 +36,4 @@ The [weather Forecast Guide](https://www.canada.ca/en/environment-climate-change
 
 ## Change log
 
-_Does not apply._
+Does not apply.
