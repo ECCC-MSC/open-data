@@ -40,7 +40,7 @@ où:
 * AAAAMMJJ: date des observations, UTC
 * XXXXXXX: identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres
 
-__Note__: Une [liste des stations marines d'observation](https://dd.meteo.gc.ca/observations/doc/swob-xml_marine_station_list.csv) est disponible.
+__Note__: Une [liste des stations marines d'observation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) est disponible.
 
 * __Observations des partenaires__ :
   
@@ -52,7 +52,7 @@ où:
 * YYYYMMDD: date des observations, UTC
 * MSC-ID: identifiant unique des stations des partenaires
 
-__Note__: Une [liste des stations des partenaires](https://dd.meteo.gc.ca/observations/doc/swob-xml_partner_station_list.csv) est disponible
+__Note__: Une [liste des stations des partenaires](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
 
 ## Nomenclature
 

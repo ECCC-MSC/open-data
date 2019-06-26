@@ -36,7 +36,7 @@ Le [Guide des prévisions météorologiques](https://www.canada.ca/fr/environnem
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.
 
 
 

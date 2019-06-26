@@ -61,7 +61,7 @@ possible are as follows:
     * PYR' = Pacific and Yukon Region,
     *'QC' = Quebec Region;
 * OBSTYPE: type of observation in the file. The possible options are as follows:
-    * SiteObs' = the file contains AQHI observations for communities,
+    * SiteObs' = the file contains AQHI observations for [communities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson),
     * StationObs' = the file contains AQHI observations for the associated observation stations
     to communities (not available in January 2012).
 * BACKFILLED': symbol that is present when the file contains AQHI observations that
@@ -76,10 +76,10 @@ where:
 * YYYYY: year of forecast, 4 digits;
 * MM: month of forecast, 2 digits (January = 01);
 * MONTHLY': symbol that is present when the file contains data for the month;
-* CGNDB_code: a [5-character code](http://www4.rncan.gc.ca/search-place-names/unique) that identifies each community in the AQHI. 
+* CGNDB_code: a [5-character code](http://www4.rncan.gc.ca/search-place-names/unique) that identifies each [community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the AQHI. 
 * SiteFcst': symbol that is present to indicate that the file contains AQHI forecasts for a community.
 
-A [complete list of cities](aqhi.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canadian toponymic data maintained by Natural Resources Canada, is available in GeoJSON format.
+A [complete list of cities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canadian toponymic data maintained by Natural Resources Canada, is available in GeoJSON format.
 
 * **Data from numerical models**:
 
@@ -124,7 +124,7 @@ possible are as follows:
     
       * 'Date': fixed string
       * 'Hour': fixed string
-      * CGNDB_Site#: a 5-letter CGNDB code that identifies each AQHI community. 
+      * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 
   * **Data block**
   
@@ -140,7 +140,7 @@ possible are as follows:
       * MM: the month of observation.
       * DD: the day of observation.
       * hhh: hour for observation.
-      * AQHI_Site#: AQHI observations for all communities in the region.
+      * AQHI_Site#: AQHI observations for all [communities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
 
     Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.
 
@@ -168,8 +168,8 @@ allow the arrival of missing data and corrections for pollutants.
 
    where:
    
-      * CGNDBcode: a 5-character code that identifies each AQHI community. 
-      * CommunityName: the name used to identify the community associated with the CGNDB code, for which the forecast is valid,
+      * CGNDBcode: a 5-character code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+      * CommunityName: the name used to identify the [community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associated with the CGNDB code, for which the forecast is valid,
       * IssueDate: the day for which the forecast was issued (YYYY-MM-DD),
       * IssueTime: the exact time the forecast was issued (hh:mm:ss),
       * ForecastPeriod: integer with a value of 1, 2, or 3, which represents the forecast period ("Today", "Tonight and Night", or "Tomorrow", respectively),
@@ -197,7 +197,7 @@ of the month) in the last line. They are available on the MSC Datamart for a per
     where:
     
       * "stationId" is a symbol that states that the values in the first column identify stations in the region of interest;
-      * "cgndb" is a symbol that states that the values in the first column identify the communities in the region of interest;
+      * "cgndb" is a symbol that states that the values in the first column identify the [communities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region of interest;
       * The 49 values following stationId are the dates (format=YYYYYMMDDhh) that define the forecast time (H+000 to H+048) of the model and are applicable to all stations.
   
   * **Data block**
@@ -215,7 +215,7 @@ StationID, Value (H+000), Value (H+001), ... Value (H+047), Value (H+048)
    where:
    
        * StationID: NAPS ID that identifies the observation station to which the model data is provided.
-       * CGNDBcode: a 5-character code that identifies each AQHI community. A list of CGNDB codes is given at the end of this file.
+       * CGNDBcode: a 5-character code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). A list of CGNDB codes is given at the end of this file.
        * Value (H+000 to H+048): model value derived at the observation station (for UMOSAQ) or interpolated at the observation station (for AQFM, UMOSAQMIST). 
   
 ## Notes

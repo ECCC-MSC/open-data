@@ -60,7 +60,7 @@ Exemples de nom de fichier :
 * s0000001_e.xml - fichier XML de prévisions météorologiques pour Athabasca, en anglais
 * s0000001_f.xml - fichier XML de prévisions météorologiques pour Athabasca, en français
 
-Une [liste de noms d'emplacements et de codes de sites](site_list_fr.geojson), en format GeoJSON est disponible.
+Une [liste de noms d'emplacements et de codes de sites](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_citypageweather/site_list_fr.geojson), en format GeoJSON est disponible.
 
 ## Balises, schémas XML et icônes
 

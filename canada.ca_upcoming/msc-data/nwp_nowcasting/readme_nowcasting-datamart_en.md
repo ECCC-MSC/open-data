@@ -6,13 +6,11 @@
 
 # Scribe nowcasting matrices
 
-The [scribe nowcasting matrices](readme_nowcasting_en.md) are updated every hour and contain a consistent set of observed and
-forecasted weather elements for the short term and for a number of forecast points
-generally corresponding to observation stations. There are over 450
-forecast points in the file. Hourly surface observations (METAR, SPECI)
-and synoptic messages are processed as well as lightning observations.
-Numerical Weather Prediction models, Statistical models and Nowcasting systems
-are used in conjunction with the observations to produce a very short term forecast.
+The [scribe nowcasting matrices](readme_nowcasting_en.md) are updated every hour and contain a consistent set of observed and forecasted weather elements for the short term and for a number of forecast points generally corresponding to observation stations. 
+
+There are over 450 forecast points in the file. Hourly surface observations (METAR, SPECI) and synoptic messages are processed as well as lightning observations.
+
+Numerical Weather Prediction models, Statistical models and Nowcasting systems are used in conjunction with the observations to produce a very short term forecast.
 
 ## Data location
 
@@ -69,9 +67,7 @@ __Z__ : Unix compression file idenfication
 |20040122 2000|  9|999| -S  |100|     |  0|     |  0| 80| 0.2| SN| -7.3|-11.7|279| 40| 50|15.00|  |
 
 
-In this example the data sequence begins at 02Z with six hours of observations before the run time 08Z, and ends 12
-hours later at 20Z, for a total of 19 hours (6 hours of past observations,
-plus the current observation (run time) followed by 12 hours of forecast data.  
+In this example the data sequence begins at 02Z with six hours of observations before the run time 08Z, and ends 12 hours later at 20Z, for a total of 19 hours (6 hours of past observations, plus the current observation (run time) followed by 12 hours of forecast data.  
 
 ### Looking at columns from left to right.
 
@@ -114,10 +110,9 @@ __Intensity of precipitation given by :__
 * ( ) (no sign) moderate
 * (+) heavy
 
-In certain circumstances, for instance when temperatures are near zero, it is possible to have more than 
-one precipitation type at any given moment, for example: snow mixed with rain and occasional freezing rain.  
-In that situation the dominant condition (snow) would appear in type 1 (PCPN1) while the associated 
-precipitation would be type 2 (PCPN2) for rain and type 3 (PCPN3) for freezing rain.
+In certain circumstances, for instance when temperatures are near zero, it is possible to have more than one precipitation type at any given moment, for example: snow mixed with rain and occasional freezing rain.  
+
+In that situation the dominant condition (snow) would appear in type 1 (PCPN1) while the associated precipitation would be type 2 (PCPN2) for rain and type 3 (PCPN3) for freezing rain.
        
 __11__ :    Column 11 identified "POP" is the all types together probability of precipitation. In the observations 
        section, i.e. from 02Z to 07Z the POP observed could be les then 100%. In other words, 
@@ -159,11 +154,11 @@ The following visibility Scribe Nowcasting codes are possible :
 | Not Available  |   NA (F & O)    |
      
 
+### Notes
 
-__NOTE__ : Although the nowcasting weather elements are highly dependant and observations, 
-a forecast will always be produced even if surface observations are incomplete, missing or not available 
-at a specific location. Remote sensing observastions such as Radar, Satellite and Lightning detection will be used 
-and utimately the weather elements from the Canadian Regional Deterministic Prediction System (RDPS NWP) will be used.
+* Although the nowcasting weather elements are highly dependant and observations, a forecast will always be produced even if surface observations are incomplete, missing or not available at a specific location. Remote sensing observastions such as Radar, Satellite and Lightning detection will be used and utimately the weather elements from the Canadian Regional Deterministic Prediction System (RDPS NWP) will be used.
+
+* A [stations list](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) is avaiable in GeoJSON format.
 
 ## Support
 
