@@ -30,9 +30,13 @@ où:
 
 Un historique de 48 heures des données est conservé dans chaque répertoire.
 
-__Note__: Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse:
+__Notes__: 
+
+* Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse:
 
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
+
+* Une [liste des sites radar](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
 ## Nomenclature des noms de fichiers 
 

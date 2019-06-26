@@ -30,9 +30,13 @@ where:
 
 An history of 48 hours of data is kept in each directory.
 
-__Note__: Details about these products can be found on the Environment and Climate Change Canada web page at:
+__Notes__: 
+
+* Details about these products can be found on the Environment and Climate Change Canada web page at:
 
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1 
+
+* A [list of radar sites](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) is available. This list will be updated regularly.
 
 ## Filename nomenclature
 
