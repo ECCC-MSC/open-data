@@ -1,4 +1,4 @@
-[In English](readme_systGSL-datamart_en.md)
+[In English](readme_rdps-cgsl-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,7 @@
 
 # Données GRIB2 système régional de prévision déterministe couplé au Golfe du Saint-Laurent
 
-Cette page décrit les données [système régional de prévision déterministe couplé au Golfe du Saint-Laurent](readme_systGSL_fr.md) disponibles en format GRIB2.
+Cette page décrit les données [système régional de prévision déterministe couplé au Golfe du Saint-Laurent](readme_rdps-cgsl_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données 
 

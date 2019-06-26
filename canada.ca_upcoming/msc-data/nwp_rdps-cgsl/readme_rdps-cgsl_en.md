@@ -1,4 +1,4 @@
-[En Français](readme_systGSL_fr.md)
+[En Français](readme_rdps-cgsl_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -37,7 +37,7 @@ calculated (Saucier et al. [2003]).
 
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
-* [GRIB2 data available on the MSC Datamart](readme_systGSL-datamart_en.md) 
+* [GRIB2 data available on the MSC Datamart](readme_rdps-cgsl-datamart_en.md) 
 * Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
 	* NOTE: does not exist for the GDPS
 

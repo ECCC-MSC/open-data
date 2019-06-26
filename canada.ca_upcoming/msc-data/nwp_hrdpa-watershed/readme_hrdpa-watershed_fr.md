@@ -1,4 +1,4 @@
-[In English](readme_hrdpawatershed_en.md)
+[In English](readme_hrdpa-watershed_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -28,7 +28,7 @@ En combinant ces polygones avec l’AHRDP, il est possible d'obtenir des précip
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_hrdpawatershed-datamart_fr.md) 
+* [Données GRIB2 disponibles sur le Datamart du SMC](readme_hrdpa-watershed-datamart_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
 	* NOTE: n'existe pas pour le SGPD
 

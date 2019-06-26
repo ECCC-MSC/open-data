@@ -1,4 +1,4 @@
-[In English](readme_systGSL_en.md)
+[In English](readme_rdps-cgsl_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -39,7 +39,7 @@ climatologiques et les marées sont prescrites comme dans Saucier et al. (2003).
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_systGSL-datamart_fr.md) 
+* [Données GRIB2 disponibles sur le Datamart du SMC](readme_rdps-cgsl-datamart_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
 	* NOTE: n'existe pas pour le SGPD
 

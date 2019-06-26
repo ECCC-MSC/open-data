@@ -61,7 +61,7 @@ Examples of filenames:
 * s0000001_e.xml - English citypage weather XML for Athabasca
 * s0000001_f.xml - French citypage weather XML for Athabasca
 
-A [List with location names and SiteNameCodes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_citypageweather/site_list_en.geojson) is available in GeoJSON format.
+A [List with location names and SiteNameCodes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
 
 ## Tags, XML schemas and icons
 

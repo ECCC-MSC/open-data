@@ -16,10 +16,10 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Weather alerts and public forecasts
 
-* [Weather and marine alerts](pub_forecast_alerts/readme_alerts_en)
-* [Current weather conditions and 7-days forecast for Canadian cities](pub_forecast_citypageweather/readme_citypageweather_en)
+* [Weather and marine alerts](alerts/readme_alerts_en)
+* [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en)
 * [Current marine conditions and 7-days forecast for marine regions](pub_forecast_marine/readme_marine_en)
-* [Meteocode for Canadian forecast public reginons ](pub_forecast_meteocode/readme_meteocode_en.md)
+* [Meteocode for Canadian forecast public reginons ](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](pub_forecast_polygons/readme_polygon_en.md)
 
 
@@ -43,9 +43,9 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
   * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
   * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
   * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
-  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpawatershed/readme_hrdpawatershed_en.md)
+  * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)
   * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
-  * [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS coupled to Gulf of St. Lawrence)](nwp_systGSL/readme_systGSL_en.md)
+  * [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS coupled to Gulf of St. Lawrence)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
   * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps-vertical-pfl_en.md)
 
 * **Probabilistic systems**

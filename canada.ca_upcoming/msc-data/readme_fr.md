@@ -16,10 +16,10 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Alertes météo et prévisions publiques
 
-* [Alertes météo et maritimes](pub_forecast_alerts/readme_alerts_fr.md)
-* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](pub_forecast_citypageweather/readme_citypageweather_fr.md)
+* [Alertes météo et maritimes](alerts/readme_alerts_fr.md)
+* [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast_marine/readme_currentmarine-cond_fr.md)
-* [Meteocode pour les régions publiques canadiennes](pub_forecast_meteocode/readme_meteocode_fr.md)
+* [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](pub_forecast_polygons/readme_polygon_fr.md)
 
 ## Observations 
@@ -42,9 +42,9 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
   * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
   * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
   * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
-  * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpawatershed/readme_hrdpawatershed_fr.md))
+  * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
   * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
-  * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_systGSL/readme_systGSL_fr.md)
+  * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
   * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps-vertical-pfl_fr.md)
   
 * **Systèmes probabilistes**

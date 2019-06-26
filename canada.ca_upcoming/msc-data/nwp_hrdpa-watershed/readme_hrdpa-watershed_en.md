@@ -1,4 +1,4 @@
-[En Français](readme_hrdpawatershed_fr.md)
+[En Français](readme_hrdpa-watershed_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -30,7 +30,7 @@ The Shapefiles described here contain the result of this computation, in millime
 
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
-* [GRIB2 data available on the MSC Datamart](readme_hrdpawatershed-datamart_en.md) 
+* [GRIB2 data available on the MSC Datamart](readme_hrdpa-watershed-datamart_en.md) 
 * Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
 	* NOTE: does not exist for the GDPS
 

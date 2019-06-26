@@ -28,7 +28,7 @@ https://dd.meteo.gc.ca/meteocode/REGION/cmml/
 
 Un historique des données de 24 heures est conservé dans ces répertoires.
 
-Les [spécifications du format CMML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
+Les [spécifications du format CMML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
 
 Les régions de prévisions publiques sont définies précisément et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.
 

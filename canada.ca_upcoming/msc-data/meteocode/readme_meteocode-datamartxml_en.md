@@ -28,7 +28,7 @@ where 'REGION' is one of the following value:
 
 A 24-hour data history is kept in these directories.
 
-The [CMML format specifications](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/cmml_specification_en-v3.04.pdf) are available.
+The [CMML format specifications](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf) are available.
 
 Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.
 

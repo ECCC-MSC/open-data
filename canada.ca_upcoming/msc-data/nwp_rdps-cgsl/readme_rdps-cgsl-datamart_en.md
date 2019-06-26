@@ -1,4 +1,4 @@
-[En Français](readme_systGSL-datamart_fr.md)
+[En Français](readme_rdps-cgsl-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,7 @@
 
 # Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence data in GRIB2 format
 
-This page describes the [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence](readme_systGSL_en.md) data available in GRIB2 format.
+This page describes the [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence](readme_rdps-cgsl_en.md) data available in GRIB2 format.
 
 ## Data address 
 

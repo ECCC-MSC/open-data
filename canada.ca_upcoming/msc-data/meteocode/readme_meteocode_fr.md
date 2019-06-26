@@ -32,7 +32,7 @@ Non disponibles
 
 ## Documentation technique
 
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/pub_forecast_meteocode/Meteocode_fr.pdf)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/Meteocode_fr.pdf)
 
 ## Registre des changements 
 
