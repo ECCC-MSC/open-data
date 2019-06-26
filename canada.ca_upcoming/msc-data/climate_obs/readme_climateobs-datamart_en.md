@@ -83,25 +83,26 @@ The available variables and units for Climate data are documented here:
 
 ## File contents
 
-* Climate normals
+* __Climate normals__
 
 Averages and Extremes offered here are based on Canadian climate stations with at least 15 years of data between 1981 to 2010.
+
 "Climate averages", "climate means" or "climate normals" are all interchangeable terms. They refer to arithmetic calculations based on observed climate values for a given location over a specified time period. 
+
 The World Meteorological Organization (WMO) recommends that countries prepare climate normals for the official 30-year normals periods ending in 1930, 1960 and 1990, for which the WMO World Climate Normals are published. In addition, WMO recommends the updating of climate normals at the end of every decade as provided here for 1981 to 2010.
 
 See detailed documentation here :
 
 https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-climate-normals.html 
 
-* Climate daily
+* __Climate daily__
 
 Daily data is derived from two sources of data. The first are Daily Climate Stations producing one or two observations per day of temperature, precipitation. The second are hourly stations (see hourly data sets) that typically produce more weather elements e.g. wind or snow on ground. Data is available for stations that are currently operational with a long period of record.
 
 See detailed documentation here :
 
 https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html 
-
-* Climate monthly
+* __Climate monthly__
 
 A cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data.
 

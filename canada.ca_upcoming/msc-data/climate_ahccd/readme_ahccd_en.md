@@ -36,4 +36,4 @@ The [metadata of the Adjusted and Homogenized Canadian Climate Data are availabl
 
 ## Change log
 
-_Not applicable._
+Not applicable.

@@ -4,17 +4,15 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > CMIP5
 
-# Climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5) in netCDF format
+# Climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5) in NetCDF format
 
-Climate scenarios based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5) are provided. Multi-model ensembles of modelled output and projected change are available for historical simulations and three emission scenarios, RCP2.6, RCP4.5 and RCP8.5, at a 1x1 degree grid resolution. Projected changes are expressed as anomalies with respect to the reference period of 1986-2005.
-
-Projections among climate models can vary because of differences in their underlying representation of earth system processes. Thus, the use of a multi-model ensemble approach has been demonstrated in recent scientific literature to likely provide better projected climate change information.
+Multi-model ensembles of modelled output and projected change are available for historical simulations and three emission scenarios, RCP2.6, RCP4.5 and RCP8.5, at a 1x1 degree grid resolution. Projected changes are expressed as anomalies with respect to the reference period of 1986-2005. 
 
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a netCDF file.
+The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
 
 The data can be accessed at the following URLs:
 
@@ -38,8 +36,8 @@ Where :
 
 NOTE: ALL HOURS ARE IN UTC.
 
-CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
-CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 
 Where:
 
@@ -62,9 +60,7 @@ The file represents the 50th percentile of the CMIP5 multi-model ensemble of pro
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
-
-The available variables and units for the CMIP5 datasets on Datamart are:
+The available variables and units for the CMIP5 datasets on the MSC Datamart are:
 
 * CMIP5 multi-model ensembles of mean precipitation projections (mm/day)
 * CMIP5 multi-model ensembles of sea ice concentration projections (percentage, %, of grid cell area)

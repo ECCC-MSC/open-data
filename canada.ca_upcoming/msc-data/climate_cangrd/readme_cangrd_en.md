@@ -35,4 +35,4 @@ The [metadata of the Canadian Gridded Temperature and Precipitation Anomalies ar
 
 ## Change log
 
-_Not applicable._
+Not applicable.

@@ -35,4 +35,4 @@ Les [métadonnées des Données Climatiques Canadiennes Ajustées et Homogénéi
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.

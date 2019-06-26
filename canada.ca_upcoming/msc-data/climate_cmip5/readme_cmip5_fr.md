@@ -14,7 +14,7 @@ Des ensembles multimodèles de sorties de modèles et de changements projetés s
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données netCDF disponibles sur le Datamart du SMC](readme_cmip5-datamart_fr.md) 
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_cmip5-datamart_fr.md) 
 * Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
 	* NOTE: n'existe pas pour le SGPD
 
@@ -26,7 +26,12 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-[Scénarios basés sur des modèles climatiques globaux](https://changements-climatiques.canada.ca/donnees-climatiques/#/simulations-cmip5)
+* Les [métadonnées des changements de température projetés basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/1e86f4f7-da88-403e-bd44-92065c0fd568)
+* Les [métadonnées des changements de précipitation projetés basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/eddd6eaf-34d7-4452-a994-3d928115a68b)
+* Les [métadonnées des changements projetés dans l’épaisseur de la couche de neige basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/0933f0dc-3625-4583-828a-86d032e4b737)
+* Les [métadonnées des changements dans l’épaisseur de la glace de mer basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/b6a68b05-58f3-4d71-89d8-25b5a5277796)
+* Les [métadonnées des changements dans la concentration de glace de mer basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/78f9e3e0-3a12-4321-99dd-eed047c31e5e)
+* Les [métadonnées des changements projetés de la vitesse du vent de surface basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/e0c71149-db7a-4700-acfd-1c8f9d778354)
 
 ## Documentation technique
 
@@ -37,4 +42,4 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.

@@ -59,8 +59,6 @@ La grille CANGRD est une projection stéréographique polaire avec une résoluti
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
-
 Les variables et unités disponibles pour CANGRD sont :
 
 * Anomalie de température maximale (°C)

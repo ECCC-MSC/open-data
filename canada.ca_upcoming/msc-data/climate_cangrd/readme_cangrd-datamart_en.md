@@ -59,8 +59,6 @@ The CANGRD grid is in polar stereographic projection with a 50 km spatial resolu
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
-
 The available variables and units for CANGRD are:
 
 * Maximum temperature anomaly (°C)

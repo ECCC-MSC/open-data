@@ -49,6 +49,6 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.
 
 

@@ -4,19 +4,17 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Résultats statistiquement réduits à  l'échelle sur le Datamart du SMC
 
-# Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5) en format netCDF
+# Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5) en format NetCDF
 
-Ce document présente les scénarios climatiques à réduction d’échelle statistique basés sur les projections des modèles du climat mondial, d’après la phase 5 du Projet d’intercomparaison des modèles couplés (CMIP5). Des résultats et des changements projetés obtenus par des ensembles multimodèles à réduction d’échelle statistique sont disponibles pour les simulations historiques et trois scénarios d’émissions, RCP 2.6, RCP 4.5 et RCP 8.5, à une résolution de 10 km. Les changements projetés sont exprimés sous forme d’anomalies par rapport à la période de référence de 1986 à 2005. Une plage de centiles couvrant les ensembles multimodèles est disponible en téléchargement.
-
-Les projections peuvent varier d’un modèle climatique à l’autre, car ces modèles représentent de façon différente les processus du système terrestre. La littérature scientifique récente montre qu’il est probable que l’utilisation d’une approche s’appuyant sur des ensembles multimodèles permette de mieux décrire les changements climatiques projetés.
+Des ensembles multimodèles de sorties de modèles et de changements projetés sur grille sont disponibles pour les simulations historiques et trois scénarios d'émissions, RCP2.6, RCP4.5 et RCP8.5, à une résolution de de 1x1 degré. Les changements projetés sont exprimés sous forme d'anomalies par rapport à la période de référence 1986-2005. 
 
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF.
+Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les fichiers CMIP5 se trouvent à l'adresse suivante:
+Les fichiers se trouvent à l'adresse suivante:
 
 * /climate/dcs/netcdf/historical/annual/[anomaly,absolute]
 * /climate/dcs/netcdf/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute]
@@ -38,8 +36,8 @@ Où :
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
-DCS_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
-DCS_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* DCS_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* DCS_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 
 Avec :
 
@@ -61,9 +59,7 @@ Le fichier représente le 50e percentile de l'ensemble multimodèle statistiquem
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
-
-Les variables et unités disponibles pour les ensembles de données CMIP5 sur Datamart sont :
+Les variables et unités disponibles pour les ensembles de données sur le Datamart du SMC sont :
 
 * Projections des changements de température moyenne basées sur les multimodèles d'ensemble statistiquement réduits (°C)
 * Projections des changements de température minimale basées sur les multimodèles d'ensemble statistiquement réduits (°C)

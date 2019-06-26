@@ -82,26 +82,29 @@ La liste des variables disponibles et leurs unités sont disponibles ici :
 
 ## Contenu des fichiers
 
-* Normales climatiques
+* __Normales climatiques__
 
 Les normales climatiques, moyennes et extrêmes climatiques, offertes ici reposent sur les stations climatologiques canadiennes ayant au moins 15 années de données entre 1981 à 2010.
+
 Les expressions « moyennes climatiques » ou « normales climatiques » sont interchangeables. Elles désignent le résultat de calculs arithmétiques fondés sur les valeurs de paramètres climatiques observées à un endroit donné au cours d'une période spécifique.
+
 L'Organisation météorologique mondiale (OMM) recommande que les pays préparent des normales climatiques sur des périodes officielles de 30 ans se terminant en 1930, 1960 et 1990, pour lesquelles les normales climatiques mondiales de l'OMM sont publiées. En outre, l'OMM recommande une mise à jour des normales climatiques à la fin de chaque décennie, comme cela est fait ici pour la période de 1981 à 2010.
 
 Voir la documentation détaillée ici :
 
 https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/afficher-telecharger/documentation-technique-normales-climatiques.html 
 
-* Données quotidiennes
+* __Données quotidiennes__
 
 Les données quotidiennes proviennent de deux sources de données.  Les premières sont les stations climatiques quotidiennes produisant une ou deux observations par jour de température et de précipitations.  Les secondes sont les stations horaires (voir les séries de données horaires) qui produisent généralement plus d'éléments météorologiques, par ex. vent ou neige au sol.
+
 Les données sont disponibles pour le station actuellement opérationnelles avec de longues périodes d’enregistrement.
 
 Voir la documentation détaillée ici :
 
 https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/afficher-telecharger/documentation-technique-donnees-quotidiennes.html 
 
-* Données mensuelles
+* __Données mensuelles__
 
 Un sommaire transcanadien des moyennes et des extrêmes pour le mois, y compris les précipitations totales, les températures maximales et minimales et les degrés-jours.
 

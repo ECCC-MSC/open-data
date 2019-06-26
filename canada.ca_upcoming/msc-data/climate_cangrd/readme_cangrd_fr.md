@@ -35,4 +35,4 @@ Les [métadonnées des Anomalies de température et précipitation interpolées 
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.

@@ -48,4 +48,4 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ## Change log
 
-_Not applicable._
+Not applicable.
