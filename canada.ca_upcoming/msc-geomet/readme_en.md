@@ -52,7 +52,7 @@ Service capabilities:
 ## Usage
 
 Documentation on using these services and examples are available at the following locations:
-* [Usage overview page](../usage-overview/readme_en.md)
+* [Usage overview page](../usage/readme_en.md)
 * [Technical information on geospatial web services](web-services_en.md)
 
 

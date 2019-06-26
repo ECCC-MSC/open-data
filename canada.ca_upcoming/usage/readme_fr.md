@@ -1,13 +1,14 @@
-[En français](readme_fr.md)
+[In English](readme_en.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > Usage overview
+[TdM](../readme_fr.md) > Aperçu de l'utilisation
 
+# Aperçu de l'utilisation
 
-# Usage overview
+Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada.
 
-Overview and examples on how to access and use Meteorological Service of Canada open data.
+[ RENDU ICI ]
 
 * [Learn about the available data](#learn-about-the-available-data)
 * [How to visualize the data](#how-to-visualize-the-data)
@@ -50,7 +51,7 @@ Below is an example of an OpenLayers web map configured to display a radar compo
 
 MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications. In fact, Environment and Climate Change Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses GeoMet to display high resolution radar data on an interactive map:
 
-![Example of radar imagery in WeatherCan](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/how-to/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
+![Example of radar imagery in WeatherCan](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
 
 For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [MSC GeoMet web services](../msc-geomet/web-services_en.md) documentation.
 

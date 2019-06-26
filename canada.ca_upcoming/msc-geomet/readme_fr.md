@@ -54,7 +54,7 @@ Capacités de ce service :
 ## Utilisation
 
 La documentation au sujet de l'utilisation de ces services et des exemples sont disponibles aux endroits suivants :
-* La [page de survol de l'utilisation des données](../usage-overview/readme_fr.md)
+* La [page de survol de l'utilisation des données](../usage/readme_fr.md)
 * La [page d'information technique sur les services web géospatiaux](web-services_fr.md)
 
 

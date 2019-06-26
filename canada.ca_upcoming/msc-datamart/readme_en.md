@@ -38,7 +38,7 @@ Data on the MSC Datamart is available in open formats. It includes:
 
 ## Usage
 
-Information on using these services and examples are available on the [usage overview page](../usage-overview/readme_en.md).
+Information on using these services and examples are available on the [usage overview page](../usage/readme_en.md).
 
 ## Change management 
 
