@@ -14,11 +14,9 @@ Le Système intégré de prévision immédiate (SIPI) vise à prévoir le temps 
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Matrices ASCII disponibles sur le Datamart du SMC](readme_nowcasting-datamart_fr.md) 
-* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
-	* NOTE: n'existe pas pour le SGPD
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est disponible.
 
