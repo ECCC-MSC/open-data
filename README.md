@@ -45,7 +45,7 @@ Here's an overview of the Public data documentation update process. Detailed pro
 
 # File structure
 
-Files are stored on GCcode, in the DPS repository: http://gitlab.ssc.etg.gc.ca/ec-msc/dps/tree/master/public-data-documentation/
+Files are stored on GCcode, in the DPS repository: http://gccode.ssc-spc.gc.ca/ec-msc/dps/tree/master/public-data-documentation/
 
 Files in this repository:
 * README.md
@@ -62,8 +62,8 @@ Files in this repository:
 # Monitoring documentation changes
 
 How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
-1. [Log into GCcode](http://gitlab.ssc.etg.gc.ca/)
-2. [Go to the DPS repository project page](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
+1. [Log into GCcode](http://gccode.ssc-spc.gc.ca/)
+2. [Go to the DPS repository project page](http://gccode.ssc-spc.gc.ca/ec-msc/dps)
 3. Enable watch mode for the repository by selecting `Watch` in the dropdown menu alongside the alarm bell icon
 
 This enables receiving modifications for the entire DPS repository.
@@ -74,25 +74,25 @@ This enables receiving modifications for the entire DPS repository.
 ## Requirements
 
 Requirement to update the source documentation:
-* A [GCcode](http://gitlab.ssc.etg.gc.ca/) account
+* A [GCcode](http://gccode.ssc-spc.gc.ca/) account
 
 Requirements to run the optional [scripts](scripts/):
 * Python 3.4 with virtualenv and pip installed
 
 Requirements to accept and publish modifications:
-* Write permissions to [the dps GCcode repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps)
+* Write permissions to [the dps GCcode repository](http://gccode.ssc-spc.gc.ca/ec-msc/dps)
 * Canada.ca Adobe Experience Manager (AEM) account with permission to sumbit changes. At the moment, Sandrine and Alexandre at DPS have the privileges to submit new versions to Canada.ca
 
 ## Getting ready
 
 1. Log to GCcode
- * Go to [the DPS repository](http://gitlab.ssc.etg.gc.ca/ec-msc/dps) and ensure you are logged to GCcode
+ * Go to [the DPS repository](http://gccode.ssc-spc.gc.ca/ec-msc/dps) and ensure you are logged to GCcode
 2. Fork the DPS repository
  * Click on `Fork` to fork the `dps` repository
- * At the desired location on your local filesystem, run: `git clone http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps.git`
+ * At the desired location on your local filesystem, run: `git clone http://gccode.ssc-spc.gc.caYOUR-GITLAB-USERNAME/dps.git`
 3. Configure your fork by specifying the upstream reference:
   * `cd dps`
-  * `git remote add upstream http://gitlab.ssc.etg.gc.ca/ec-msc/dps.git`
+  * `git remote add upstream http://gccode.ssc-spc.gc.ca/ec-msc/dps.git`
 
 ## Update workflow
 
@@ -114,7 +114,7 @@ Requirements to accept and publish modifications:
   * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
   * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
   * Submit a merge request to push new changes to your fork to the official repository. To proceed:
-    * Go to your fork on GitLab: `http://gitlab.ssc.etg.gc.ca/YOUR-GITLAB-USERNAME/dps/`
+    * Go to your fork on GitLab: `http://gccode.ssc-spc.gc.ca/YOUR-GITLAB-USERNAME/dps/`
     * Click on 'Merge Requests' on the top-level menu
     * Click on 'New merge request'
     * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/dps), and then click 'Compare branches and continue'
@@ -177,7 +177,7 @@ Prior applying any change to the [licence accompanying the documentation](licenc
 
 TO VALIDATE
 
-1. Validate [status of open tickets](http://gitlab.ssc.etg.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
+1. Validate [status of open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
 2. Management sign-off
 3. Publication to canada.ca: TO COMPLETE
 4. Add or update remote images on the Collaboration server, if needed
