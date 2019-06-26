@@ -6,7 +6,7 @@
 
 # High Resolution Deterministic Precipitation Analysis (HRDPA) average watershed precipitation Data in GRIB2 Format
 
-Data for over 1900 watersheds is available. In order to reduce the number of files on the Datamart, it has been necessary to group these watersheds by drainage basin:
+Data for over 1900 watersheds is available. In order to reduce the number of files on the MSC Datamart, it has been necessary to group these watersheds by drainage basin:
 
  - Maritime Provinces
  - St. Lawrence
