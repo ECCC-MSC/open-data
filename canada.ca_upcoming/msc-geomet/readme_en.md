@@ -33,12 +33,12 @@ The source code for GeoMet-Climate and the Climate Data Extraction Tool is publi
 * https://github.com/ECCC-CCCS/geomet-climate
 * https://github.com/ECCC-CCCS/climate-data-extraction-tool
 
-### GeoMet-Features service
+### GeoMet-OGC-Features
 
-GeoMet-Features provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging [Open Geospatial Consortium (OGC) Web Feature Service (WFS) 3.0 standard](https://github.com/opengeospatial/WFS_FES). It provides access to hydrometric and climate data.
+GeoMet-OGC-Features provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging [Open Geospatial Consortium (OGC) Web Feature Service (WFS) 3.0 standard](https://github.com/opengeospatial/WFS_FES). It provides access to hydrometric and climate data.
 
 Service capabilities:
-* GeoMet-Features WFS 3 URL: https://geo.weather.gc.ca/geomet/features/?f=html
+* GeoMet-OGC-Features URL: https://geo.weather.gc.ca/geomet/features/?f=html
 
 ### GeoMet-Beta
 
