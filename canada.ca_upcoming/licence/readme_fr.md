@@ -15,24 +15,24 @@ Vous êtes encouragés à utiliser l’Information offerte en vertu de la prése
 * L’utilisation de l’Information indique que vous acceptez les modalités énoncées ci-dessous.
 * Le Fournisseur d’Information vous octroie une licence mondiale, libre de redevances, perpétuelle et non exclusive pour l’utilisation de l’Information, y compris à des fins commerciales, sous réserve des modalités énoncées ci-dessous.
 
-## 2. Vous êtes libre de:
+## 2. Vous êtes libre de :
 
 * Copier, modifier (voir note), publier, traduire, adapter (voir note), distribuer ou d’utiliser autrement (voir note) l’Information, quel que soit le support, mode ou format employé et à toutes fins légitimes. 
 
 Note: Dans le cas d'avertissements météorologiques (c’est-à-dire veilles et alertes), toute l’information doit être reproduite de telle sorte qu'il n'y ait pas de modification au contenu de l’avertissement ou de l'intention de celui-ci.
 
-## 3. Vous devez, lorsque vous exercez toutes activités susmentionnées:
+## 3. Vous devez, lorsque vous exercez toutes activités susmentionnées :
 
-* Reconnaître la source de l’Information en ajoutant tout énoncé d’attribution précisé par le Fournisseur d’Information et/ou le Contributeur externe d’Information conformément à ce qui est indiqué lorsque vous accédez au serveur de données HTTP d’Environnement et Changement climatique Canada (ECCC), et lorsque possible fournir un lien vers cette licence.
-* Indiquer la source des données, incluant les sources à l’extérieur d’Environnement et Changement climatique Canada. À titre d’exemple:
+* Reconnaître la source de l’Information en ajoutant tout énoncé d’attribution précisé par le Fournisseur d’Information et/ou le Contributeur externe d’Information conformément à ce qui est indiqué lorsque vous accédez aux serveurs de données d’Environnement et Changement climatique Canada (ECCC), et lorsque possible fournir un lien vers cette licence.
+* Indiquer la source des données, incluant les sources à l’extérieur d’Environnement et Changement climatique Canada. À titre d’exemple :
 
-“Source des données: Environnement et Changement climatique Canada”
+“Source des données : Environnement et Changement climatique Canada”
 
-ou, lorsque les données proviennent de plusieurs sources:
+ou, lorsque les données proviennent de plusieurs sources :
 
-“Sources des données: Environnement et Changement climatique Canada et (si possible indiquer le Contributeur externe de données)”
+“Sources des données : Environnement et Changement climatique Canada et (si possible indiquer le Contributeur externe de données)”
 
-* Si le Fournisseur d’Information ou le Contributeur externe d’Information ne fournit pas un énoncé d’attribution précis, ou si vous utilisez de l’information provenant de plusieurs fournisseurs d’information et que de multiples énoncés d’attribution ne se prêtent pas à votre produit ou application, vous devez utiliser l’énoncé d’attribution suivant:
+* Si le Fournisseur d’Information ou le Contributeur externe d’Information ne fournit pas un énoncé d’attribution précis, ou si vous utilisez de l’information provenant de plusieurs fournisseurs d’information et que de multiples énoncés d’attribution ne se prêtent pas à votre produit ou application, vous devez utiliser l’énoncé d’attribution suivant :
 
 Contient de l’Information sous la licence d’utilisation finale du serveur de données d’Environnement et Changement climatique Canada.
 
@@ -40,7 +40,7 @@ Les modalités de cette licence sont importantes, et si vous ne respectez pas l�
 
 ## 4. Exemptions
 
-La présente licence ne vous confère par le droit d’utiliser:
+La présente licence ne vous confère par le droit d’utiliser :
 
 * Des Renseignements personnels;
 * Des droits de tierces parties que le Fournisseur d’Information ou le Contributeur externe d’Information n’est pas autorisé à accorder;
@@ -65,7 +65,7 @@ Toute procédure judiciaire se rapportant à cette licence ne pourra être port�
 
 ## 8. Définitions
 
-Les termes employés dans la présente licence ont la signification suivante:
+Les termes employés dans la présente licence ont la signification suivante :
 
 "Information" désigne les renseignements protégés par le droit d’auteur ou toute autre renseignement offert pour utilisation aux termes de la présente licence.
 
@@ -79,4 +79,4 @@ Les termes employés dans la présente licence ont la signification suivante:
 
 ## 9. Contrôle des versions
 
-Il s’agit de la version 2.0 de la licence d’utilisation finale du serveur de données d’Environnement et Changement climatique Canada. Le Fournisseur d’Information peut apporter des modifications périodiques aux conditions de cette licence et produire une nouvelle version de celle-ci. Votre utilisation de l’Information sera régie par les conditions précisées dans la licence en vigueur à la date où vous avez accédé à l’Information.
+Il s’agit de la version 2.0 de la licence d’utilisation finale des serveurs de données d’Environnement et Changement climatique Canada. Le Fournisseur d’Information peut apporter des modifications périodiques aux conditions de cette licence et produire une nouvelle version de celle-ci. Votre utilisation de l’Information sera régie par les conditions précisées dans la licence en vigueur à la date où vous avez accédé à l’Information.

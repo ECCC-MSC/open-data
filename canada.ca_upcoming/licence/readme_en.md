@@ -23,8 +23,8 @@ Note: In the case of weather alerts (i.e. watches/warnings), any information sha
 
 ## 3. You must, where you do any of the above
 
-* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider and/or Third Party Information Contributor and as indicated when you access the Information from Environment and Climate Change Canada (ECCC) HTTP Data Server and, where possible, provide a link to this licence.
-* Attribute data to the originator, including sources outside Environment and Climate Change Canada.  For example;
+* Acknowledge the source of the Information by including any attribution statement specified by the Information Provider and/or Third Party Information Contributor and as indicated when you access the Information from Environment and Climate Change Canada (ECCC) data servers and, where possible, provide a link to this licence.
+* Attribute data to the originator, including sources outside Environment and Climate Change Canada. For example;
 
 “Data Source: Environment and Climate Change Canada”
 
@@ -79,4 +79,4 @@ In this licence, the terms below have the following meanings:
 
 ## 9. Versioning
 
-This is version 2.0 of Environment and Climate Change Canada Data Server End-use Licence. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the Information.
+This is version 2.0 of Environment and Climate Change Canada data servers End-use Licence. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the Information.
