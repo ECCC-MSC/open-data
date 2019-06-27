@@ -6,7 +6,7 @@
 
 # Données et produits d'observations des profils verticaux
 
-Cette page décrit les données et produits d'observations des profils verticaux.
+Cette page décrit les données observées (ObsTephi) contenant les données réelles à tous les niveaux mesurées par le ballon de sondage.
 
 ## Accès
 
@@ -26,12 +26,12 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_À venir._
+Non disponibles.
 
 ## Documentation technique
 
-_Non disponible._
+Non disponible.
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.

@@ -6,7 +6,7 @@
 
 # Data and Products of the vertical profiles' observation
 
-This page describes the data and products of the vertical profiles' observation.
+This page describes the observed data containing all levels received from actual sounding.
 
 ## Access
 
@@ -26,12 +26,12 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Upcoming._
+Not available.
 
 ## Technical documentation
 
-_Not available._
+Not available.
 
 ## Change log
 
-_Not applicable._
+Not applicable.
