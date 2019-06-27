@@ -8,22 +8,11 @@
 
 Cette page décrit les données des [trajectoires d'ouragans](readme_hurricane_fr.md).
 
-Le Centre canadien des ouragans fournit des fichiers en format shapefile  
-dans le cadre des prévisions régulières lors de la saison des ouragans.
-Les fichiers permettront aux utilisateurs de tracer l'itinéraire des
-tempêtes prévues dans un système de cartes géographiques de leur choix. Il
-y a quatre formats shapefiles (*.shp) qui sont produits et comportent
-chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes
-d'origine tropicale menace ou risque de menacer le territoire canadien.
+Le Centre canadien des ouragans fournit des fichiers en format shapefile dans le cadre des prévisions régulières lors de la saison des ouragans.
 
-Les trajectoires d'ouragans émises par le Centre canadien de prévision des
-ouragans sont publiées sur le Datamart. Ces données sont rendues 
-disponibles en mode expérimental afin d'offrir aux usagers une opportunité
-d'ingérer et de tester les données en temps réel. Le service sera fourni  
-au mieux de nos possibilités mais veuillez noter qu'il existe une 
-possibilité non négligeable d'interruptions occasionnelles non-annoncées  
-et non-remédiées de ce service expérimental de données, et ce jusqu'à 
-nouvelle annonce.
+Les fichiers permettront aux utilisateurs de tracer l'itinéraire des tempêtes prévues dans un système de cartes géographiques de leur choix. Il y a quatre formats shapefiles (*.shp) qui sont produits et comportent chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes d'origine tropicale menace ou risque de menacer le territoire canadien.
+
+Les trajectoires d'ouragans émises par le Centre canadien de prévision des ouragans sont publiées sur le Datamart du SMC. Ces données sont rendues disponibles en mode expérimental afin d'offrir aux usagers une opportunité d'ingérer et de tester les données en temps réel. Le service sera fourni au mieux de nos possibilités mais veuillez noter qu'il existe une possibilité non négligeable d'interruptions occasionnelles non-annoncées et non-remédiées de ce service expérimental de données, et ce jusqu'à nouvelle annonce.
 
 ## Adresse des données 
 
@@ -83,8 +72,7 @@ chaque colonne est donné comme suit :
 |VALIDTIME |	Temps pendant lequel la prévision à l'heure TAU est valide. En format DD/HHMM (UTC)|
 |TIMESTAMP |     Format ISO pour le paramètre VALIDTIME. Format:  YYYY-MM-DDTHH:MMZ|
 
-Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les
-éléments des fichiers 'pts'.
+Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les éléments des fichiers 'pts'.
 
 ## Support
 

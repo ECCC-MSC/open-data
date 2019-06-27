@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Hurricane trajectories
 
-# Data and products of the marine weather 
+# Data and products of hurricane tracks 
 
 Hurricane tracks issued by the [Canadian Hurricane Centre](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html) as part of the regular hurricane season forecast.
 
@@ -26,7 +26,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Upcoming._
+Upcoming.
 
 ## Products
 
@@ -39,7 +39,7 @@ _Upcoming._
 
 ## Change log
 
-_Not applicable._
+Not applicable.
 
 
 

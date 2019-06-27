@@ -8,21 +8,11 @@
 
 This page describes the data of the [hurricane trajectories](readme_hurricane_en.md).
 
-The Canadian Hurricane Centre provides files in shapefile format  
-as part of the regular hurricane season forecast.
-The files will allow users to plot the route of the
-storms forecast in a map system of their choice. There is four shapefiles (*.shp) formats that are produced and include
-each a 6-hour forecast bulletin when storms
-of tropical origin threatens or risks to threaten Canadian territory.
+The Canadian Hurricane Centre provides files in shapefile format as part of the regular hurricane season forecast.
 
-Hurricane tracks issued by the Canadian Hurricane Centre
-hurricanes are published on the Datamart. These data are rendered 
-available in experimental mode in order to offer users an opportunity
-to ingest and test the data in real time. The service will be provided  
-to the best of our ability but please note that there is a 
-significant possibility of occasional unannounced interruptions  
-and non-received from this experimental data service, up to 
-new announcement.
+The files will allow users to plot the route of the storms forecast in a map system of their choice. There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
+
+Hurricane tracks issued by the Canadian Hurricane Centre hurricanes are published on the MSC Datamart. These data are rendered available in experimental mode in order to offer users an opportunity to ingest and test the data in real time. The service will be provided to the best of our ability but please note that there is a significant possibility of occasional unannounced interruptions and non-received from this experimental data service, up to new announcement.
 
 ## Data location
 
@@ -80,8 +70,7 @@ as follows:
 |VALIDTIME |	Time that the forecast at TAU hours is valid for. DD/HHMM format (UTC) |
 |TIMESTAMP |     ISO format for the VALIDTIME. Format:  YYYY-MM-DDTHH:MMZ |
 
-When querying the 'lin' shapefile, the elements have the same definition  
-as in the 'pts' file.
+When querying the 'lin' shapefile, the elements have the same definition as in the 'pts' file.
 
 ## Support
 

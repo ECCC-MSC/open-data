@@ -26,7 +26,7 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_Non disponible._
+Non disponible.
 
 ## Produits
 
@@ -39,6 +39,6 @@ _Non disponible._
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+Ne s'applique pas.
 
 
