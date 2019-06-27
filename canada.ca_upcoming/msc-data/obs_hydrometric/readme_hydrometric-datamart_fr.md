@@ -11,12 +11,7 @@ Cette page décrit les données [hydrométriques en temps réel](readme_hydromet
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
-
-<<<<<<< HEAD
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
-=======
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 Les fichiers pour ces données se trouvent à l'adresse :
 * https://dd.meteo.gc.ca/hydrometric/[PROVTERR]/[MAJ]/
@@ -83,8 +78,6 @@ Exemple:
 "ON_daily_hydrometric.csv" pour les données d'observations mises à jour chaque 
 jour pour toutes les stations situées en Ontario (ON) en format CSV.
 
-<<<<<<< HEAD
-=======
 ## Description des données
 
 ### Fichier de données
@@ -150,7 +143,6 @@ où :
 
 * __Fuseau horaire__ : différence entre HNL et UTC
 
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca
