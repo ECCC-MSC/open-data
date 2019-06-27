@@ -72,7 +72,7 @@ Une [liste de noms d'emplacements et de codes de sites](http://collaboration.cmc
 
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements CODÉS sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
   * [Conditions météorologiques actuelles](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
-  * [Prévisions météorologiques](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csvhttp://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
+  * [Prévisions météorologiques](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
 
 ## Support
 
