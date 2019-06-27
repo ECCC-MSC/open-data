@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les profils verticaux sont disponibles à cette adresse:
 
-https://dd.weatheroffice.ec.gc.ca/verticale_profile/forecast/csv
+https://dd.weatheroffice.ec.gc.ca/vertical_profile/forecast/csv
 
 Les données sont disponibles à 00Z et 12Z, toutes les 3h de 00h à 48h.
 
