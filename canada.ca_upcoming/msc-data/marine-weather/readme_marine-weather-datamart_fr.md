@@ -24,25 +24,26 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-* __Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada :
+__Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada:
 
   https://dd.meteo.gc.ca/marine_weather/xml/REGION
 
 où :
 
  __REGION__ : nom de la région couverte par la prévision marine. Cette région peut prendre une de ces 8 valeurs:
-    * arctic
-    * atlantic
-    * great_lakes
-    * hudson
-    * mackenzie
-    * pacific
-    * prairies
-    * st_lawrence
+ 
+* arctic
+* atlantic
+* great_lakes
+* hudson
+* mackenzie
+* pacific
+* prairies
+* st_lawrence
 
-* Une [__description des balises et des attributs XML__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
+Une [__description des balises et des attributs XML__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
 
-* Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse:
+Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse:
 
 http://dd.meteo.gc.ca/marine_weather/schema/
 
