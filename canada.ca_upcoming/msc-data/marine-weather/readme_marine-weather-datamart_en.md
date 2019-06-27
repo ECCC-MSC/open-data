@@ -25,25 +25,26 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-* __The marine weather XML files__ are available according to Canadian marine regions, at the following address:
+__The marine weather XML files__ are available according to Canadian marine regions, at the following address:
 
   https://dd.weather.gc.ca/marine_weather/xml/REGION
 
 where:
 
  __REGION__ : name of the region covered by the forecast.The region name is one of the 8 following values:
-    * arctic
-    * atlantic
-    * great_lakes
-    * hudson
-    * mackenzie
-    * pacific
-    * prairies
-    * st_lawrence
+ 
+* arctic
+* atlantic
+* great_lakes
+* hudson
+* mackenzie
+* pacific
+* prairies
+* st_lawrence
 
-* [__Tables describing each of the marine weather XML element tags and their associated attributes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
+[__Tables describing each of the marine weather XML element tags and their associated attributes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
 
-* The __XML schemas__ for marine weather data are found in this directory:
+The __XML schemas__ for marine weather data are found in this directory:
 
 http://dd.weather.gc.ca/marine_weather/schema/
 
