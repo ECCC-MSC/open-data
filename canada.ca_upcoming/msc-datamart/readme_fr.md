@@ -33,7 +33,7 @@ Les utilisateurs qui ont besoin de récupérer des données une seule fois peuve
 
 ## Formats de données
 
-Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi eux:
+Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-ci :
 
 * [GRIB2](https://weather.gc.ca/grib/index_f.html)
 * [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
@@ -52,13 +52,13 @@ Le SMC doit faire preuve de souplesse dans la façon dont il offre des données 
 
 Ainsi, aussi souvent que possible, nous utiliserons le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, pour déposer des échantillons des nouvelles données modifiées afin d'aider nos utilisateurs à adapter leurs applications. 
 
-Le serveur DD-Alpha se trouve à l'adresse http://dd.alpha.weather.gc.ca/ . . 
+Le serveur DD-Alpha se trouve à l'adresse http://dd.alpha.weather.gc.ca/ .
 
 Ce serveur, qui n'est pas opérationnel, donne également accès à des données expérimentales ou non opérationnelles.
 
 ## Liste de diffusion des annonces
 
-Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'annonces[dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) pour être informés des améliorations et des changements apportés au Datamart du SMC.
+Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'annonces [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) pour être informés des améliorations et des changements apportés au Datamart du SMC.
 
 ## Soutien
 

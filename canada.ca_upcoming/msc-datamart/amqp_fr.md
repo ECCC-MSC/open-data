@@ -59,10 +59,10 @@ https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
 
 ## Liens externes
 
-Protocol AMQP sur Wikipédia:
+Protocol AMQP sur Wikipédia :
 https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol 
 
-Librairie python pour AMQP: 
+Librairie python pour AMQP :
 https://pypi.python.org/pypi/amqplib
 
 
@@ -74,4 +74,4 @@ Vous pouvez vous inscrire ici :
 
 http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info 
 
-Vous pouvez nous contacter à cette adresse pour toute question ou commentaire: ec.dps-client.ec@canada.ca 
+Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : ec.dps-client.ec@canada.ca 
