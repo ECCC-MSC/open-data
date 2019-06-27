@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions des profils verticaux
 
-# Données et produits des prévisions des profils verticaux
+# Données des profils verticaux de prévision produits par le Système régional de prévision déterministe
 
-Cette page décrit les données et produits des prévisions des profils verticaux.
+Cette page décrit les profils verticaux de prévision (ProgTephi) produits par le Système régional de prévision déterministe (SRPD) à 10km de résolution. 
 
 ## Accès
 
@@ -26,12 +26,13 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-_À venir._
+Les [métadonnées du Système régional de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
 
 ## Documentation technique
 
-_Non disponible._
+* [Version actuelle du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf)
 
 ## Registre des changements 
 
-_Ne s'applique pas._
+La chronologie des changements apportés aux sytèmes opérationnels sont disponibles dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.

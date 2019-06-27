@@ -4,9 +4,9 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Vertical profiles' forecast
 
-# Data and Products of the vertical profiles' forecast
+# Data of the Regional Deterministic Prediction System vertical profiles 
 
-This page describes the data and products of the vertical profiles' forecast.
+This page describes the vertical profiles (ProgTephi) produced by the Regional Deterministic Prediction System (RDPS) at 10km resolution.
 
 ## Access
 
@@ -26,12 +26,13 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Upcoming._
+The [metadata of the Regional Deterministic Prediction System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d).
 
 ## Technical documentation
 
-_Not available._
+* [Current version of the Regional Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_e.pdf)
 
 ## Change log
 
-_Not applicable._
+Changes to the operational systems are [available in the Product guide documentation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
