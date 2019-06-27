@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Hydrometric data
 
-# Data and products of the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence
+# Data and products of real time hydrometric data
 
 ## Description of the system
 
@@ -38,4 +38,4 @@ The [metadata of the real time hydrometric data tool are available on the Open G
 
 ## Change log
 
-_Not applicable._
+Not applicable.

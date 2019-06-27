@@ -103,16 +103,14 @@ UTC.
 
 ### Station List File
 
-The list of all the real-time hydrometric stations is available here:
+A list of the [real-time hydrometric stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson) in GeoJSON format is available.
 
-http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson
-
-The first line is a bilingual header, followed by station metadata. Below
-are the English column descriptors:
+The first line is a bilingual header, followed by station metadata. Below are the English column descriptors:
 
  ID,Name,Latitude,Longitude,Prov/Terr,Timezone
 
 where:
+
 *  __ID__ : station identifier
 
 * __Name__ : name of the station. The name is in English or French depending on the 

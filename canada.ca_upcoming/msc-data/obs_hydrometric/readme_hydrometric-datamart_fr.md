@@ -83,16 +83,11 @@ jour pour toutes les stations situées en Ontario (ON) en format CSV.
 
 ### Fichier de données
 
-Les données hydrométriques en temps réel sont présentées dans un format CSV 
-pour la distribution par Environnement et Changement climatique Canada.
+Les données hydrométriques en temps réel sont présentées dans un format CSV pour la distribution par Environnement et Changement climatique Canada.
 
-Les fichiers mis à jour sur une base horaire contiennent les 2 derniers jours 
-complets en plus du jour courant incomplet. Les fichiers mis à jour sur une 
-base quotidienne contiennent les 30 derniers jours complets en plus du jour 
-courant incomplet.
+Les fichiers mis à jour sur une base horaire contiennent les 2 derniers jours complets en plus du jour courant incomplet. Les fichiers mis à jour sur une base quotidienne contiennent les 30 derniers jours complets en plus du jour courant incomplet.
 
-La première ligne est une entête bilingue suivie des enregistrements. Voici la 
-description des titres français des colonnes : 
+La première ligne est une entête bilingue suivie des enregistrements. Voici la description des titres français des colonnes : 
 
 ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
 
@@ -124,18 +119,14 @@ où :
 * __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
           débit (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé)
 
-Veuillez prendre note que les dates des données sont toujours en HNL à chaque 
-station. Les dates affichent l'écart avec le temps universel coordonné (UTC).
+Veuillez prendre note que les dates des données sont toujours en HNL à chaque station. Les dates affichent l'écart avec le temps universel coordonné (UTC).
 
 
 ### Liste des stations
 
-La liste des stations hydrométriques en temps réel est disponible ici :
+Une [liste des stations hydrométriques en temps réel](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson), en format GeoJSON, est disponible.
 
-http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson
-
-La première ligne est une entête bilingue suivie des métadonnées des stations. 
-Voici la description des titres français des colonnes : 
+La première ligne est une entête bilingue suivie des métadonnées des stations. Voici la description des titres français des colonnes : 
 
 ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
 
