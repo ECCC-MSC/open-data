@@ -15,7 +15,6 @@ The [Environment and Climate Change Canada's guide to the marine forecast](https
 __Notes__:
 
 * The marine XML files do not include ice forecast information, but do include [ice alert information](https://www.canada.ca/en/environment-climate-change/services/ice-forecasts-observations/latest-conditions/products-guides/iceberg-bulletin-overview.html#warnings).
-http://www.ec.gc.ca/glaces-ice/default.asp?lang=En&n=E568E9D7-1#warnings
 
 * Ice forecast information can be found on the [Environment and Climate Change Canada web site](https://www.canada.ca/en/environment-climate-change/services/ice-forecasts-observations.html) and on the [Canadian Ice Service](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-observations-glaces/conditions-glaces-plus-recentes.html) web site.
 
