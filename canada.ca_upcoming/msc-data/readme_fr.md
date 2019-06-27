@@ -18,15 +18,15 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 * [Alertes météo et maritimes](alerts/readme_alerts_fr.md)
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
-* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](pub_forecast_marine/readme_currentmarine-cond_fr.md)
+* [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](pub_forecast_polygons/readme_polygon_fr.md)
 
 ## Observations 
 
 * [Images radar météo](obs_radar/readme_radar_fr.md)
-* [Observations in situ](obs_station/readme_obs_station_fr.md)
-* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_hydrometric_fr.md)
+* [Observations in situ](obs_station/readme_obs_insitu_fr.md)
+* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
 
 
@@ -45,7 +45,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
   * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
   * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
   * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
-  * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps-vertical-pfl_fr.md)
+  * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
   
 * **Systèmes probabilistes**
 
@@ -58,16 +58,16 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 Les données climatiques canadiennes sont une composante du [Centre canadien des services climatologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
 
-* [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate/readme_ahccd_fr.md)
-* [Données climatiques historiques sur grille canadienne (CanGRD)](climate/readme_cangrd_fr.md)
-* [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate/readme_cmip5_fr.md)
-* [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate/readme_dcs_fr.md)
-* [Observations historiques](climat/readme_climate_fr.md)
+* [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
+* [Données climatiques historiques sur grille canadienne (CanGRD)](climate_cangrd/readme_cangrd_fr.md)
+* [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
+* [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate_dcs/readme_dcs_fr.md)
+* [Observations historiques](climate_obs/readme_climateobs_fr.md)
 
 ## Autres données
 
 * [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
-* [Trajectoires d'ouragans](trajectory/readme_hurricanes_fr.md)
+* [Trajectoires d'ouragans](trajectories/readme_hurricane_fr.md)
 
 

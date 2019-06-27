@@ -16,9 +16,9 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Weather alerts and public forecasts
 
-* [Weather and marine alerts](alerts/readme_alerts_en)
-* [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en)
-* [Current marine conditions and 7-days forecast for marine regions](pub_forecast_marine/readme_marine_en)
+* [Weather and marine alerts](alerts/readme_alerts_en.md)
+* [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
+* [Current marine conditions and 7-days forecast for marine regions](marine_weather/readme_marine-weather_en.md)
 * [Meteocode for Canadian forecast public reginons ](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](pub_forecast_polygons/readme_polygon_en.md)
 
@@ -26,7 +26,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ## Observations 
 
 * [Weather radar imagery](obs_radar/readme_radar_en.md)
-* [In situ observations](obs_station/readme_obs_station_en.md)
+* [In situ observations](obs_station/readme_obs_insitu_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles](obs_vertical-profiles/readme_obs-vertical-pfl_en.md)
 
@@ -46,7 +46,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
   * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA_watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)
   * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
   * [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS coupled to Gulf of St. Lawrence)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
-  * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps-vertical-pfl_en.md)
+  * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
 
 * **Probabilistic systems**
 
@@ -59,15 +59,15 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 Canadian climate data is a component of the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
 
-* [Adjusted and homogenized Canadian climate (AHCCD)](climate/readme_ahccd_en.md)
-* [Canadian Gridded Data (CanGRD)](climate/readme_cangrd_en.md)
-* [Coupled Model Intercomparison Project Phase 5 (CMIP5) global climate model (GCM) scenarios (CMIP5)](climate/readme_cmip5_en.md)
-* [Statistically downscaled climate scenarios (DCS)](climate/readme_dcs_en.md)
-* [Historical observations](climate/readme_climate_en.md)
+* [Adjusted and homogenized Canadian climate (AHCCD)](climate_ahccd/readme_ahccd_en.md)
+* [Canadian Gridded Data (CanGRD)](climate_cangrd/readme_cangrd_en.md)
+* [Coupled Model Intercomparison Project Phase 5 (CMIP5) global climate model (GCM) scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
+* [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
+* [Historical observations](climate_obs/readme_climateobs_en.md)
 
 ## Other data
 
 * [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
 * [Bulletins](bulletins/readme_bulletins_en.md)
-* [Hurricanes trajectories](trajectory/readme_hurricanes_en.md)
+* [Hurricanes trajectories](trajectories/readme_hurricane_en.md)
 
