@@ -27,18 +27,22 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 ### Metadata
 
-_Upcoming._
+Upcoming.
 
 ## Technical documentation
 
-* [World Meteorological Organization Country Code](ftp://www.wmo.int/GTS_monitoring/AGM/From_WMO/200410/country_codes.pdf)
+* [The WMO Communication Header](https://www.weather.gov/tg/headef)
+
+* [Catalogue of meteorological bulletins(WMO)](http://www.wmo.int/pages/prog/www/ois/Operational_Information/VolC1_en.html)
+
+* [Manual of codes (WMO)](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/Publications/2014update/306_vol_I1_2014_en_track.pdf)
 
 * [Documentation about Automated Weather Observation System (AWOS)](http://www.navcanatm.ca/en/navcanmet/awos.aspx)
 
-* [Manual of Standard Operational Procedures for Issuing Public Weather Forecasts and Warnings (MANOBS)](http://www.ec.gc.ca/manobs/)
+* [Manual of Standard Operational Procedures for Issuing Public Weather Forecasts and Warnings (MANOBS)](https://www.canada.ca/fr/environnement-changement-climatique/services/manuels-documents-conditions-meteorologiques/manobs-observations-surface.html)
 
 * [METAR and TAF on NavCan website](http://www.flightplanning.navcanada.ca/cgi-bin/CreePage.pl?Langue=anglais&NoSession=NS_Inconnu&Page=Fore-obs%2Fmetar-taf-map&TypeDoc=html)
 
 ## Change log
 
-_Not applicable._
+Not applicable.

@@ -6,7 +6,7 @@
 
 # Data of the binary bulletins 
 
-This page describes the data of the [binary bulletins](readme_bulletins_en.md).
+This page describes the data of the binary [bulletins](readme_bulletins_en.md).
 
 ## Data location
 
@@ -26,7 +26,9 @@ __YYYYMMDD__ : Date of the BUFR bulletin emission in UTC
 
 As other alphanumeric bulletins, the retention period is 6 months.
 
-## Directory and file name nomenclature 
+__Note__: in the context of the migration from alphanumeric to BUFR format, binary bulletins are available in the same directory than alphanumeric ones.
+
+## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
@@ -71,8 +73,7 @@ https://answers.launchpad.net/libecbufr/+faqs
 To help you in your search, please refer to our bulletin search script which is available directly on the Datamart at:
 http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl
 
-Complete documentation with examples of use of the script can be found in the PDF document at this address:
-http://dd.weather.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf
+Complete documentation with examples of use of the script can be found in the [PDF document](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
 
 ## Support
 

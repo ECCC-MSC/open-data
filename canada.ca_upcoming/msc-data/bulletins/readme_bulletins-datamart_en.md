@@ -39,9 +39,7 @@ corresponds to the pages 103-108. The file is online here:
 http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_en.pdf
 See the following section for specific details about Warning bulletins. 
 * __BBBB__ : 4 letter identifier of the bulletin issuer. Usually an 
-International Civil Aviation Organization (ICAO) code, but not always. 
-A list of codes is available on the WMO site:
-ftp://www.wmo.int/GTS_monitoring/AGM/From_WMO/200410/country_codes.pdf
+
 The 2 letters after "CW" or "CY" in the directory name indicates the issuing office:
     * QX = Gander, (N.F.) 
     * HX = Halifax (now Dartmouth)  
@@ -64,9 +62,9 @@ Example :
 
 SOVD02_CWOW_250553___14352
 
-A complete listing of all bulletins posted on the datamart is not available. 
+A complete listing of all bulletins posted on the MSC Datamart is not available. 
 However, once you know which ones you are looking for after consulting the WMO documents, 
-then you can easily checked if they are on our http server using the bulletin search script.
+then you can easily checked if they are on our http server using the [bulletin search script](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
 
 ### Weather Warnings
 

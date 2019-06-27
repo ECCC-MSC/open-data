@@ -37,9 +37,7 @@ l'OMM, dans la section Supplément II-5, ce qui correspond aux pages
 103-108. Le fichier se trouve en ligne à cette adresse :
 http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf
 * __BBBB__ : 4 lettres représentant le code de l'émetteur du bulletin.
-Probablement un code de l'Organisation de l'Aviation Civile Internationale (OACI), mais pas toujours. 
-Une liste de codes est disponible sur le site de l'OMM :
-ftp://www.wmo.int/GTS_monitoring/AGM/From_WMO/200410/country_codes.pdf
+
 Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le 
 nom du bureau émetteur:
 
@@ -54,7 +52,7 @@ nom du bureau émetteur:
     * VR = Vancouver  
     * CN = Canada  
     * US = États-Unis 
-* HH: représente l'heure de réception du bulletin
+* __HH__ : représente l'heure de réception du bulletin
 
 Le nom de fichier suit cette nomenclature :
 
@@ -64,10 +62,10 @@ Exemple :
 
 SOVD02_CWOW_250553___14352
 
-Il n'y a pas de liste complète des bulletins publiés sur le datamart.
+Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC.
 Cependant, une fois le type de bulletin identifié dans le répertoire de
 l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à
-l'utilitaire de recherche de bulletins.
+l'[utilitaire de recherche de bulletins](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf).
 
 ### Avertissements météo
 

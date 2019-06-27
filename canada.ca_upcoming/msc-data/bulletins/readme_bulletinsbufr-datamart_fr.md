@@ -6,7 +6,7 @@
 
 # Données des bulletins en format binaire
 
-Cette page décrit les données des [bulletins en format binaire](readme_bulletins_fr.md).
+Cette page décrit les données des [bulletins](readme_bulletins_fr.md) en format binaire.
 
 ## Adresse des données 
 
@@ -27,7 +27,9 @@ __YYYYMMDD__ : Date de l’émission du bulletin BUFR en UTC.
 
 Tout comme les bulletins alphanumériques, les bulletins BUFR sont conservés pendant six mois.
 
-## Nomenclature des répertoires et noms de fichiers
+__Note__: Dans le contexte du passage des bulletins alphanumériques aux bulletins BUFR, les bulletins binaires sont distribués dans le même répertoire que les bulletins alphanumériques.
+	
+## Nomenclature des noms de fichiers
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
@@ -73,8 +75,7 @@ https://answers.launchpad.net/libecbufr/+faqs
 Pour faciliter la recherche de bulletins, veuillez utiliser notre utilitaire de recherche de bulletins qui se trouve sur le Datamart :
 http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl
 
-Des informations détaillées, avec des exemples d’utilisation de ce script se trouvent dans le document PDF à l’adresse :
-http://dd.weather.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_fr.pdf
+Des informations détaillées, avec des exemples d’utilisation de ce script se trouvent dans le [document PDF](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf). 
 
 ## Support
 
