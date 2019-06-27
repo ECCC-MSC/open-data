@@ -6,83 +6,7 @@
 
 # Données et produits hydrométriques en temps réel
 
-## Description du système
-
-<<<<<<< HEAD
-### Fichier de données
-
-Les données hydrométriques en temps réel sont présentées dans un format CSV 
-pour la distribution par Environnement et Changement climatique Canada.
-
-Les fichiers mis à jour sur une base horaire contiennent les 2 derniers jours 
-complets en plus du jour courant incomplet. Les fichiers mis à jour sur une 
-base quotidienne contiennent les 30 derniers jours complets en plus du jour 
-courant incomplet.
-
-La première ligne est une entête bilingue suivie des enregistrements. Voici la 
-description des titres français des colonnes : 
-
-ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
-
-où : 
-*  __ID__ : identifiant de la station. Les deux premiers chiffres indiquent le 
-        bassin hydrographique principal dans lequel se trouve la station. Les 
-        deux prochains caractères indiquent le sous-bassin et le 
-        sous-sous-bassin. Les trois derniers chiffres indiquent la station 
-        spécifique dans le sous-sous-bassin.
-
-* __Date__ : date de l'observation au format ISO 8601, heure normale locale (HNL)
-
-* __Niveau d'eau (m)__ : Niveau d'eau en mètres
-
-* __Grade__ : usage futur
-
-* __Symbole__ : usage futur
-
-* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
-          niveau d'eau (1 = préliminaire, 2 = révisé, 3 = vérifié, 
-          4 = approuvé)
-
-* __Débit (cms)__ : débit en mètres cube par seconde
-
-* __Grade__ : usage futur
-
-* __Symbol__ : usage futur
-
-* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
-          débit (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé)
-
-Veuillez prendre note que les dates des données sont toujours en HNL à chaque 
-station. Les dates affichent l'écart avec le temps universel coordonné (UTC).
-
-
-### Liste des stations
-
-La liste des stations hydrométriques en temps réel est disponible ici :
-
-https://dd.meteo.gc.ca/hydrometric/doc/hydrometric_StationList.csv
-
-La première ligne est une entête bilingue suivie des métadonnées des stations. 
-Voici la description des titres français des colonnes : 
-
-ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
-
-où :
-*  __ID__ : identifiant de la station
-
-* __Nom__ : nom de la station. Le nom est soit en anglais ou en français 
-       dépendamment de l'emplacement de la station
-
-* __Latitude__ : latitude en format décimal
-
-* __Longitude__ : longitude en format décimal
-
-* __Prov/Terr__ : code de la province ou du territoire à 2 lettres
-
-* __Fuseau horaire__ : différence entre HNL et UTC
-=======
 Données hydrométriques en temps réel contenant les données unitaires de niveau d'eau et de débit en temps réel pour les rivières et les lacs dans tout le Canada.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 ## Accès
 
@@ -111,11 +35,8 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-<<<<<<< HEAD
-_Ne s'applique pas._
-=======
 Ne s'applique pas.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
+
 
 
 
