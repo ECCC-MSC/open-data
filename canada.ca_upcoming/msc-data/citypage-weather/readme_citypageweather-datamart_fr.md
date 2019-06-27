@@ -64,15 +64,15 @@ Une [liste de noms d'emplacements et de codes de sites](http://collaboration.cmc
 
 ## Balises, schémas XML et icônes
 
-* Une [la description des balises et des attributs XML des pages de prévisions météorologiques par ville](tags_table_f.csv) est disponible.
+* Une [la description des balises et des attributs XML des pages de prévisions météorologiques par ville](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_f.csv) est disponible.
 
 * Les schémas XML des fichiers de données météorologiques par ville sont disponibles à l'adresse :
 
   https://dd.meteo.gc.ca/citypage_weather/schema/
 
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements CODÉS sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
-  * [Conditions météorologiques actuelles](current_conditions_icon_code_descriptions_f.csv)
-  * [Prévisions météorologiques](forecast_conditions_icon_code_descriptions_f.csv)
+  * [Conditions météorologiques actuelles](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
+  * [Prévisions météorologiques](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csvhttp://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
 
 ## Support
 
