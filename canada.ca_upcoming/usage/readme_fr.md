@@ -6,114 +6,113 @@
 
 # Aperçu de l'utilisation
 
-Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada.
+Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada (SMC).
 
-[ RENDU ICI ]
-
-* [Learn about the available data](#learn-about-the-available-data)
-* [How to visualize the data](#how-to-visualize-the-data)
-  * [Desktop software](#desktop-software)
-  * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
-  * [On-the-fly images](#on-the-fly-images)
-* [How to access raw data](#how-to-access-raw-data)
-  * [Raw data download](#raw-data-download)
-  * [Raw data web services](#raw-data-web-services)
+* [Connaître quelles sont les données disponibles](#connaitre-quelles-sont-les-donnees-disponibles)
+* [Comment visualiser les données](#comment-visualiser-les-donnees)
+  * [Logiciel de bureau](#logiciel-de-bureau)
+  * [Cartes interactives en-ligne et applications mobiles](#cartes-interactives-en-ligne-et-applications-mobiles)
+  * [Images à la volée](#images-a-la-volee)
+* [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes)
+  * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
+  * [Services web de données brutes](#services-web-de-donnees-brutes)
 
 
-## Learn about the available data
+## Connaître quelles sont les données disponibles
 
-The Meteorological Service of Canada provides up-to-date information on past, present and future weather conditions, climate, water and environmental information over Canada and the world. [Details  on the available data is provided here](../msc-data/readme_en.md).
+Le Service météorologique du Canada rend disponible de l'information sur les conditions météorologiques, hydriques et environnementales passées, présentes et futures pour le Canada et le monde. [La liste des données disponibles est disponible ici](../msc-data/readme_fr.md).
 
-## How to visualize the data
+## Comment visualiser les données
 
-### Desktop software 
+### Logiciel de bureau 
 
-MSC open data can be visualized in desktop software by either (A) connecting to MSC GeoMet Web Map Service (WMS) web services or (B) by downloading the raw data from MSC Datamart or MSC GeoMet Web Coverage Service (WCS) web services and loading the raw data in the application.
+Les données ouvertes du SMC dans des logiciel de bureau soit (A) en se connectant au service Web Map Service (WMS) de [GeoMet du SMC](../msc-geomet/readme_fr.md) ou (B) en téléchargeant les données brutes du [Datamart du SMC](../msc-datamart/readme_fr.md) ou via le service Web Coverage Service (WCS) ou OGC API - Features (WFS 3) de GeoMet du SMC et en chargeant les données brutes dans l'application.
 
-MSC open data can be interactively visualized in software that supports the OGC Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org) and in Esri ArcGIS software. Instructions for adding [MSC GeoMet WMS services](../msc-geomet/readme_en.md) to [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) and [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) are available. Desktop software may allow users to change the layer colors (WMS styles) and animate the layers amongst the available timesteps. Details on the available WMS parameters are available in the [web services section](../msc-geomet/web-services.md).
+Les données ouvertes du SMC peuvent être visualisées interactivement dans les logiciels qui supportent le standard Web Map Service (WMS) de l'Open Geospatial Consortium (OGC), tel que le logiciel libre [QGIS](https://qgis.org) ainsi que ArcGIS d'Esri. Les instructions pour ajouter les couches WMS de GeoMet du SMC dans [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) et [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) sont disponibles. Les logiciels de bureau peuvent permettre aux usagers de changer les couleurs des couches (styles WMS) ainsi qu'animer les couches pour les pas de temps disponibles. Les détails techniques sur les paramètres WMS disponibles sont documentés dans la [section sur les services web](../msc-geomet/web-services_fr.md).
 
-For downloading raw data, refer to the [How to access raw data](#how-to-access-raw-data) section.
+Pour télécharger des données brutes, veuillez vous référer à la section [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes).
 
+### Cartes interactives en-ligne et applications mobiles
 
-### Interactive web maps and mobile apps
+Les données ouvertes du SMC peuvent également être aisément intégrées dans des cartes interactives en-ligne ainsi que dans des applications mobiles.
 
-MSC open data can also easily be integrated into interactive maps in browsers and mobile applications. 
+#### Dans un fureteur web
 
-#### In a web browser
+En utilisant des librairies JavaScript telles que [Leaflet](https://leafletjs.com/) et [Openlayers](https://openlayers.org/), parmi d'autres, les utilisateurs peuvent intégrer les couches disponibles de GeoMet du SMC dans leurs propres cartes interactives en-ligne.
 
-By using JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Openlayers](https://openlayers.org/) (among others), users can integrate data available via MSC Geomet into their own interactive web maps.
-
-Below is an example of an OpenLayers web map configured to display a radar composite Web Map Service (WMS) layer served by MSC GeoMet.
+Ci-après est un exemple de carte interactive configurée avec OpenLayers et présentant la couche WMS de composite radar météo services par GeoMet du SMC.
 
 <div id="map" style="height: 400px"></div>
 
-#### In a mobile application
+#### Dans une application mobile
 
-MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications. In fact, Environment and Climate Change Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses GeoMet to display high resolution radar data on an interactive map:
+Les services WMS de GeoMet du SMC peuvent également être intégrées dans des applications mobiles. Ceci est démontré dans [l'application MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html) d'Environnement et Changement climatique Canada, disponible pour iOS et Android, qui utilise GeoMet du SMC pour afficher les données radar météo à haute résolution sur une carte interactive :
 
-![Example of radar imagery in WeatherCan](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
+![Exemple de couche radar dans MeteoCAN](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
 
-For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [MSC GeoMet web services](../msc-geomet/web-services_en.md) documentation.
+Pour de l'information additionnelle sur les capacités et les paramètres des services web WMS, WFS et WCS de GEoMet du SMC, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
 
-### On-the-fly images
+### Images à la volée
 
-MSC Geomet can also serve images on-the-fly via a WMS GetMap request. See the examples below.
+GeoMet du SMC peut également servir des images à la volée par le biais d'une requête WMS GetMap. Voici des exemples.
 
-#### Example 1 - Global Deterministic Prediction System (GDPS) Surface Temperature
+#### Exemple 1 - Température de surface du Système global de prévision déterministe (SGPD)
 
-The following GetMap request returns an image of the Global Deterministic Predicition System (GDPS) air temperature layer. The image is created "on-the-fly" at the time of the request.
+La requête WMS GetMap suivante retourne une image de la couche de température de l'air du Système global de prévision déterministe (SGPD). Cette image est générée à la volée au moment de la requête.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg
 ```
-Returns:
+Retourne :
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)              
+![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg)             
 
-#### Example 2 - Global Ice Ocean Prediction System (GIOPS) Sea Water Salinity
+#### Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)
 
-The following GetMap request returns an image of the Global Ice Ocean Prediction System (GIOPS) sea water salinity layer. The image is created "on-the-fly" at the time of the request.
+La requête WMS GetMap suivante retourne une image de la couche de salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG). Cette image est générée à la volée au moment de la requête.
+
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg
 ```
-Returns:
+Retourne :
 
-![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
+![Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg)
 
-#### Short overview of WMS GetMap parameters used in the examples
+#### Survol des paramètres WMS GetMap utilisés dans ces exemples
 
-The examples above define a handful of parameters and send a GetMap request to MSC GeoMet. Below is a short explanation of each parameter in the request:
-* **SERVICE** - The name of the Open GeoSpatial Consortium Web Service to use in the request. In both examples, we are using the OGC Web Map Service (WMS).
-* **VERSION** - The service version, in this case `1.3.0`.
-* **REQUEST** - The specified request type. The WMS services specifies several different request types. In this case, we specify a GetMap request, which returns a map image.
-* **BBOX** - The bounding box of the requested image. In our case, we are making a request for an image that covers the entire surface of the Earth. Coordinates are provided in the units of the Coordinate Reference System defined in the following parameter.
-* **CRS** - The coordinate reference system (CRS) used to create the map image. In both examples, we set the CRS to `EPSG:4326` (e.g WGS 84), the coordinate reference system used for the Global Positioning System (GPS).
-* **WIDTH** - The width in pixels of the returned image.
-* **HEIGHT** - The height in pixels of the returned image.
-* **LAYERS** - The name of the layer used to create the image. The name of the layer can be retrieved using a WMS GetCapabilities request.
-* **FORMAT** - The format of the image returned by the GetMap request. In both cases case, the returned image will be in the PNG format. 
+Les exemples ci-dessus précisent certains paramètres et envoient une requête WMS GetMap à GeoMet du SMC. Voici une courte explication de chacun de ces paramètres :
 
-For further information regarding these and other WMS GetMap parameters, refer to the [MSC GeoMet web services](../msc-geomet/web-services_en.md) documentation.
+* **SERVICE** - le nom du service web de l'Open Geospatial Consortium utilisé dans la requête. Dans les deux exemples, le standard Web Map Service (WMS) est utilisé
+* **VERSION** - la version du service, dans ce cas, `1.3.0`
+* **REQUEST** - le type de requête spécifié. Le service WMS rend disponible plusieurs types de requêtes. Dans le cas présent, une requête GetMap est spécifié, ce qui retourne une image
+* **BBOX** - l'étendue géographique associée à l'image désirée. Dans ce cas, la requête couvre l'ensemble de la surface de la planète. Les coordonnées sont fournies dans les unités du système de coordonnées cartographiques spécifié dans le paramètre qui suit
+* **CRS** - le système de coordonnées cartographiques utilisé pour créer l'image désirée. Dans les deux exemples, le CRS est `EPSG:4326` (i.e. WGS 84), le système de coordonnées cartographiques utilisé notamment par le Système mondial de positionnement (GPS)
+* **WIDTH** - la largeur en pixels de l'image retournée
+* **HEIGHT** - la hauteur en pixels de l'image retournée
+* **LAYERS** - le nom de la couche à utiliser pour la création de l'image. La liste et le nom des couches disponibles peut être récupérée via une requête WMS GetCapabilities
+* **FORMAT** - le format de l'image retournée par la requête WMS GetMap. Dans les deux exemples, l'image retournée est dans le format JPEG
 
-## How to access raw data
+Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
 
-### Raw data download
+## Comment accéder aux données brutes
 
-MSC data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
+### Téléchargement de données brutes
 
-The raw data can also be directly downloaded from the web on the MSC Datamart data repository.
+Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
 
-### Raw data web services
+Les données brutes peuvent également être téléchargées directement sur le web sur le serveur Datamart du SMC.
 
-Raw MSC data can be retrieved from the MSC GeoMet web services. These web services allow users to retrieve raw data by specifying the geographic coordinates, geographic projection, the temporal dimension and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section.
+### Services web de données brutes
 
-Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Les données brutes du SMC peuvent être récupérées par les services web GeoMet du SMC. Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section sur les [services web](../msc-geomet/web-services_fr.md).
 
-Raw data for vector data can be retrieved with a Web Feature Service (WFS) request. Example of a [WFS 3 query for the Winnipeg River hydrometric station daily means](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049).
+Les données brutes à des lieux géographiques spécifiques peuvent être récupérés par une requête Web Map Service (WMS) GetFeatureInfo. Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
-Raw data for raster data can be retrieved with a Web Coverage Service (WCS) request. Example of a [WCS 2 query for the Regional Deterministic Precipitation Analysis (RDPA) model in the netCDF format for a specific time](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). A tip to build WCS queries is to use the [Canadian Centre for Climate Services WCS Query builder interface for an RDPA layer](https://climate-change.canada.ca/climate-data/#/regional-deterministic-precipitation-analysis) and replace the COVERAGEID value from RDPA.* to another available layer.
+Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données moyennes quotidiennes hydrométriques à la station Winnipeg River](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049).
+
+Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une [requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). Une astuce pour construire des requêtes WCS est d'utiliser [l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD](https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation) et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
