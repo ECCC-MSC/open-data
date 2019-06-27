@@ -65,7 +65,7 @@ A [List with location names and SiteNameCodes](http://collaboration.cmc.ec.gc.ca
 
 ## Tags, XML schemas and icons
 
-* A table [describing each of the city page weather XML element tags and their associated attributes](tags_table_e.csv) is available.
+* A table [describing each of the city page weather XML element tags and their associated attributes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_e.csv) is available.
 
 * The XML schemas for citypage weather data are found in this directory:
 
@@ -73,8 +73,8 @@ A [List with location names and SiteNameCodes](http://collaboration.cmc.ec.gc.ca
 
 * City page weather XML files contain CODED current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at:
    
-   * [Current weather conditions](current_conditions_icon_code_descriptions_e.csv)
-   * [Forecast weather conditions](forecast_conditions_icon_code_descriptions_e.csv)
+   * [Current weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
+   * [Forecast weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
 ## Support
 

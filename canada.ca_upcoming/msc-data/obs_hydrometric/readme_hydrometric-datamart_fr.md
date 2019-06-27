@@ -12,7 +12,11 @@ Cette page décrit les données [hydrométriques en temps réel](readme_hydromet
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
+<<<<<<< HEAD
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
+=======
+Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 Les fichiers pour ces données se trouvent à l'adresse :
 * https://dd.meteo.gc.ca/hydrometric/[PROVTERR]/[MAJ]/
@@ -79,6 +83,74 @@ Exemple:
 "ON_daily_hydrometric.csv" pour les données d'observations mises à jour chaque 
 jour pour toutes les stations situées en Ontario (ON) en format CSV.
 
+<<<<<<< HEAD
+=======
+## Description des données
+
+### Fichier de données
+
+Les données hydrométriques en temps réel sont présentées dans un format CSV pour la distribution par Environnement et Changement climatique Canada.
+
+Les fichiers mis à jour sur une base horaire contiennent les 2 derniers jours complets en plus du jour courant incomplet. Les fichiers mis à jour sur une base quotidienne contiennent les 30 derniers jours complets en plus du jour courant incomplet.
+
+La première ligne est une entête bilingue suivie des enregistrements. Voici la description des titres français des colonnes : 
+
+ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
+
+où : 
+*  __ID__ : identifiant de la station. Les deux premiers chiffres indiquent le 
+        bassin hydrographique principal dans lequel se trouve la station. Les 
+        deux prochains caractères indiquent le sous-bassin et le 
+        sous-sous-bassin. Les trois derniers chiffres indiquent la station 
+        spécifique dans le sous-sous-bassin.
+
+* __Date__ : date de l'observation au format ISO 8601, heure normale locale (HNL)
+
+* __Niveau d'eau (m)__ : Niveau d'eau en mètres
+
+* __Grade__ : usage futur
+
+* __Symbole__ : usage futur
+
+* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
+          niveau d'eau (1 = préliminaire, 2 = révisé, 3 = vérifié, 
+          4 = approuvé)
+
+* __Débit (cms)__ : débit en mètres cube par seconde
+
+* __Grade__ : usage futur
+
+* __Symbol__ : usage futur
+
+* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
+          débit (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé)
+
+Veuillez prendre note que les dates des données sont toujours en HNL à chaque station. Les dates affichent l'écart avec le temps universel coordonné (UTC).
+
+
+### Liste des stations
+
+Une [liste des stations hydrométriques en temps réel](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson), en format GeoJSON, est disponible.
+
+La première ligne est une entête bilingue suivie des métadonnées des stations. Voici la description des titres français des colonnes : 
+
+ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
+
+où :
+*  __ID__ : identifiant de la station
+
+* __Nom__ : nom de la station. Le nom est soit en anglais ou en français 
+       dépendamment de l'emplacement de la station
+
+* __Latitude__ : latitude en format décimal
+
+* __Longitude__ : longitude en format décimal
+
+* __Prov/Terr__ : code de la province ou du territoire à 2 lettres
+
+* __Fuseau horaire__ : différence entre HNL et UTC
+
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca

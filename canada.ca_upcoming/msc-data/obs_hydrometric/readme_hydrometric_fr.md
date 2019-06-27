@@ -8,6 +8,7 @@
 
 ## Description du système
 
+<<<<<<< HEAD
 ### Fichier de données
 
 Les données hydrométriques en temps réel sont présentées dans un format CSV 
@@ -79,6 +80,9 @@ où :
 * __Prov/Terr__ : code de la province ou du territoire à 2 lettres
 
 * __Fuseau horaire__ : différence entre HNL et UTC
+=======
+Données hydrométriques en temps réel contenant les données unitaires de niveau d'eau et de débit en temps réel pour les rivières et les lacs dans tout le Canada.
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 ## Accès
 
@@ -107,7 +111,11 @@ La [Licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
+<<<<<<< HEAD
 _Ne s'applique pas._
+=======
+Ne s'applique pas.
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 
 

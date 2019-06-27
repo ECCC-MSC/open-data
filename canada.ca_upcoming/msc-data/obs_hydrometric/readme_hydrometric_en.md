@@ -4,6 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Hydrometric data
 
+<<<<<<< HEAD
 # Data and products of the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence
 
 ## Description of the system
@@ -76,6 +77,13 @@ where:
 * __Prov/Terr__ : 2-letter code for the province or territory
 
 * __Timezone__ : LST offset from UTC
+=======
+# Data and products of real time hydrometric 
+
+## Description of the system
+
+Real-time hydrometric data containing real-time unit water level and flow data for rivers and lakes across Canada.
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 ## Access
 
@@ -100,9 +108,17 @@ The [metadata of the real time hydrometric data tool are available on the Open G
 
 ## Technical documentation
 
+<<<<<<< HEAD
 * [Water Survey of Canada](http://www.ec.gc.ca/rhc-wsc/default.asp?lang=En)
+=======
+* [Water Survey of Canada](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey.html)
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 * [Real-time and historical water level and discharge data](http://wateroffice.ec.gc.ca/ )
 
 ## Change log
 
+<<<<<<< HEAD
 _Not applicable._
+=======
+Not applicable.
+>>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
