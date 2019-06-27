@@ -12,13 +12,10 @@ This page describes the [real time hydrometric](readme_hydrometric_en.md) data a
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 
-<<<<<<< HEAD
-The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
-=======
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable CSV file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 The data is available at the following address:
+
 * https://dd.weather.gc.ca/hydrometric/csv/[PROVTERR]/[FREQUENCY]/
 
 where :
@@ -59,8 +56,7 @@ where :
 * __Phhh__ : Forecast hour
 * __FileContent__ : can be all-products or allmbrs, indicating that all the members or all the probabilistic products for this variable are contain in the file 
 
-<<<<<<< HEAD
-=======
+
 ## Data description
 
 ### Data File
@@ -106,7 +102,6 @@ Please note that the timestamps of the data are always in LST at that
 particular station. The timestamps of the data records show the offset from 
 UTC.
 
-
 ### Station List File
 
 A list of the [real-time hydrometric stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson) in GeoJSON format is available.
@@ -130,7 +125,6 @@ where:
 
 * __Timezone__ : LST offset from UTC
 
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 ## Support
 
 If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
