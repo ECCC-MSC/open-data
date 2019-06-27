@@ -4,86 +4,11 @@
 
 [TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Hydrometric data
 
-<<<<<<< HEAD
-# Data and products of the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence
-
-## Description of the system
-
-### Data File
-
-The real-time hydrometric data is provided in a CSV format for the distribution 
-by Environment and Climate Change Canada.
-
-The files updated on an hourly basis contain the last 2 complete days of data 
-plus the current incomplete day. The files updated on a daily basis contain the 
-last 30 complete days of data plus the current incomplete day.
-
-The first line is a bilingual header, followed by data records. Below are the 
-English column descriptors:
-
- ID,Date,Water Level (m),Grade,Symbol,QA/QC,Discharge (cms),Grade,Symbol,QA/QC
-
-where:
-*  __ID__ : station identifier. The first two digits indicate the major drainage 
-       basin in which the station is located. The next two characters indicate 
-       the sub-basin and sub-sub-basin. The last three digits indicate the 
-       specific station within the sub-sub-basin.
-
-* __Date__ : data timestamp in ISO 8601 format, Local Standard Time (LST)
-
-* __Water Level (m)__ : water level in meters 
-
-* __Grade__ : future use
-
-* __Symbol__ : future use
-
-* __QA/QC__ : quality assurance/quality control flag for the water level 
-         (1 = preliminary, 2 = reviewed, 3 = checked, 4 = approved)
-
-* __Discharge (cms)__ : discharge in cubic meters per second
-
-* __Grade__ : future use
-
-* __Symbol__ : future use
-
-* __QA/QC__ : quality assurance/quality control flag for the discharge
-
-Please note that the timestamps of the data are always in LST at that 
-particular station. The timestamps of the data records show the offset from 
-UTC.
-
-
-### Station List File
-
-The list of all the real-time hydrometric stations is available here:
-
-https://dd.weather.gc.ca/hydrometric/doc/hydrometric_StationList.csv
-
-The first line is a bilingual header, followed by station metadata. Below
-are the English column descriptors:
-
- ID,Name,Latitude,Longitude,Prov/Terr,Timezone
-
-where:
-*  __ID__ : station identifier
-
-* __Name__ : name of the station. The name is in English or French depending on the 
-        location of the station
-
-* __Latitude__ : latitude in decimal format
-
-* __Longitude__ : longitude in decimal format
-
-* __Prov/Terr__ : 2-letter code for the province or territory
-
-* __Timezone__ : LST offset from UTC
-=======
 # Data and products of real time hydrometric 
 
 ## Description of the system
 
 Real-time hydrometric data containing real-time unit water level and flow data for rivers and lakes across Canada.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 
 ## Access
 
@@ -108,17 +33,10 @@ The [metadata of the real time hydrometric data tool are available on the Open G
 
 ## Technical documentation
 
-<<<<<<< HEAD
-* [Water Survey of Canada](http://www.ec.gc.ca/rhc-wsc/default.asp?lang=En)
-=======
 * [Water Survey of Canada](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey.html)
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
 * [Real-time and historical water level and discharge data](http://wateroffice.ec.gc.ca/ )
 
 ## Change log
 
-<<<<<<< HEAD
-_Not applicable._
-=======
 Not applicable.
->>>>>>> 1e842e370395b86ca9e7b4bbabf87cb319a1158a
+
