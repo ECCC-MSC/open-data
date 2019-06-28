@@ -6,7 +6,7 @@
 
 # Data and Products of the North American Ensemble Forecast System (NAEFS)
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_naefs/naefs.jpg)
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_naefs/naefs.png)
 
 NAEFS combines state of the art ensemble forecasts, developed at the MSC and the NWS. When combined, the grand ensemble can provide weather forecast guidance for the 1-14 day period that is of higher quality than the currently available operational guidance based on either set of ensembles alone. It allows the generation of a set of forecast products that are seamless across the national boundaries between Canada, the United States and Mexico. The research/development and operational costs of the NAEFS system are shared by the three organizations (MSC, NWS, and NMSM), which make it more cost effective and result in higher quality and more extensive weather forecast products.
 The North American Ensemble Forecast System (NAEFS) is a joint project involving the Meteorological Service of Canada (MSC), the United States National Weather Service (NWS) and the National Meteorological Service of Mexico (NMSM). NAEFS was officially launched in November 2004 in presence of representatives of the three countries.
