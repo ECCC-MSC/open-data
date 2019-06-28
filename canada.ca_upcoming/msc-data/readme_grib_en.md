@@ -29,7 +29,7 @@ The Meteorological Service of Canada does not distribute publicly any decoding o
 
 Decoding and processing:
 * [wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/)
-** [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
+* [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
 * [GDAL](https://gdal.org/drivers/raster/grib.html)
     
 Visualization and interpolation:
