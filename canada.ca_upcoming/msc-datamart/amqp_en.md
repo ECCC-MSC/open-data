@@ -63,12 +63,13 @@ https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
 
 ## Examples
 
-Here are some specific examples to receive alerts and citypage_weather data.
+Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters
 
 * The available commands are :
 
   * alerts : sr_subscribe [amqp_cap.xml.config](./amqp_cap-xml.config) start/stop/status
   * citypage_weather : sr_subscribe [amqp_citypage.config](./amqp_citypage.config) start/stop/status
+  * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
 
 * The logs are available under ~/.cache/sarra/log
  
