@@ -53,9 +53,21 @@ Le guide d’installation peut être trouvé à cette adresse :  https://github.
 
 Quant au guide d’utilisation, il est disponible ici :  https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst
 
-Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers:
-https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
+Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers:https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
 
+## Exemples
+
+Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD
+
+* Les commandes disponibles sont:
+
+  * alerts : sr_subscribe [amqp_cap.xml.config](./amqp_cap-xml.config) start/stop/status
+  * citypage_weather : sr_subscribe [amqp_citypage.config](./amqp_citypage.config) start/stop/status
+  * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
+
+* Les logs se retrouvent sous : ~/.cache/sarra/log
+ 
+* Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup
 
 ## Liens externes
 
