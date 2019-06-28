@@ -29,7 +29,7 @@ Users requiring one-time data retrieval may use [wget to download data from the 
 
 Data on the MSC Datamart is available in open formats. It includes:
 
-* [GRIB2](https://weather.gc.ca/grib/index_e.html)
+* [GRIB2](../msc-data/readme_grib_en.md)
 * [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
 * [GeoJSON](https://geojson.org/)
 * [shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)

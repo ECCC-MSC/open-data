@@ -35,7 +35,7 @@ Les utilisateurs qui ont besoin de récupérer des données une seule fois peuve
 
 Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-ci :
 
-* [GRIB2](https://weather.gc.ca/grib/index_f.html)
+* [GRIB2](../msc-data/readme_grib_fr.md)
 * [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
 * [GeoJSON](https://geojson.org/)
 * [shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
