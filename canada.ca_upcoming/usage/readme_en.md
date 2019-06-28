@@ -102,7 +102,7 @@ For further information regarding these and other WMS GetMap parameters, refer t
 
 MSC raw data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
 
-The raw data can also be directly downloaded from the web on the MSC Datamart data repository.
+The raw data can also be directly downloaded from the web on the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
 
 ### Raw data web services
 
