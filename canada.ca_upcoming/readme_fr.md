@@ -25,9 +25,9 @@ L'accès aux données ouvertes disponibles sur le Datamart du SMC et sur GeoMet 
     * Récupération de données archivées
     * Fils de données dédiés avec support 24/7
 
-## [Aperçu de l'utilisation : exemples documentés pour les cas d'utilisation fréquente](usage/readme_fr.md)
+## [Aperçu de l'utilisation](usage/readme_fr.md)
 
-Aperçu et exemples documentant la façon d'accéder aux données ouvertes du Service météorologique du Canada et de les utiliser.
+Aperçu et exemples documentant la façon d'accéder aux données ouvertes du Service météorologique du Canada et leur utilisation.
 
 ## Découverte des données et métadonnées
 
