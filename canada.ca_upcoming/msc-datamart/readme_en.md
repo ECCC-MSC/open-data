@@ -23,7 +23,7 @@ The documentation for this service is found on the [MSC Datamart AMQP documentat
 ### Additional access methods
 
 An alternative server to the MSC Datamart is available, please refer to [the announcement for details](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
-Users requiring one-time data retrieval may use [wget to download data from the MSC Datamart](https://weather.gc.ca/grib/usage_tips_e.html).
+Users requiring one-time data retrieval may use [wget to download data from the MSC Datamart](readme_wget-datamart_en.md).
 
 ## Data formats
 

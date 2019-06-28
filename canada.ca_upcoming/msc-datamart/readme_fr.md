@@ -29,7 +29,7 @@ La documentation de ce service se trouve sur la documentation [MSC Datamart AMQP
 
 Un serveur alternatif au Datamart du SMC est disponible, veuillez vous référer à [l'annonce pour plus de détails](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
 
-Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](https://weather.gc.ca/grib/usage_tips_f.html).
+Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
 
 ## Formats de données
 
