@@ -102,7 +102,7 @@ Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vou
 
 Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
 
-Les données brutes peuvent également être téléchargées directement sur le web sur le serveur Datamart du SMC.
+Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
 
 ### Services web de données brutes
 
