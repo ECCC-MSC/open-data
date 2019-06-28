@@ -2,6 +2,9 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
+[TOC](../readme_en.md) > [MSC Datamart](readme_en.md) > wget
+
+
 # Use of wget for the MSC Datamart data
 
 Here is a brief set of examples and usage notes, offered here to illustrate the possibilities for selective batch downloading from the MSC Datamart open data server. Please refer to the official [wget](https://www.gnu.org/software/wget/) manual for detailed usage. Examples shown here were tested under Linux and the Windows XP command line.

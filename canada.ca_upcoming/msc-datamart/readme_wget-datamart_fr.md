@@ -2,6 +2,8 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
+[TdM](../readme_fr.md) > [Datamart du SMC](readme_fr.md) > wget
+
 # Utilisation de wget pour les données du Datamart du SMC
 
 Cette brève page d’exemples et de notes d’utilisation illustre les possibilités de téléchargement de données en lots, sélectionnées dans la base de données ouvertes du Datamart du SMC. Veuillez vous référer au manuel officiel de [wget](https://www.gnu.org/software/wget/) (lien externe, en anglais seulement) pour de plus amples détails. Les exemples ci-dessous ont été testés sous Linux et sous l’invite de commande de Windows XP.
