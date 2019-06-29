@@ -4,7 +4,6 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > AHRDP sur le Datamart du SMC
 
-
 # Données GRIB2 de l'Analyse à haute résolution déterministe de précipitation (AHRDP)
 
 Cette page décrit les données de l'[Analyse à haute résolution déterministe de précipitation](./readme_hrdpa-datamart_fr.md) disponibles en format GRIB2.
@@ -25,6 +24,20 @@ où :
 * __HH__ :  Période d'accumulation en heures: 06 or 24 
 
 Un historique de 30 jours est conservé dans ce répertoire.
+
+## Spécification technique de la grille
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
+
+Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 2500 |
+| nj | 1222 | 
+| résolution à 60° N | 2.5 km |
+| coordonnées du premier point de grille | 42.2504° N ; 131.0928° W | 
+| orientation de la grille (par rapport à l’axe des j) | -115,0° | 
 
 ## Nomenclature des noms de fichiers 
 
@@ -56,9 +69,12 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient des do
 
 ## Liste des variables
 
-
 * __APCP__ : Analyse de la quantité totale de précipitation (mm)
 * __CFIA__ : Indice de Confiance de l'Analyse. Plage de valeurs de 0 à 1 (sans unité)
+
+## À propos du masque No-Data
+
+Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
 ## Support
 

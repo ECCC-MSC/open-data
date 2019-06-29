@@ -22,6 +22,20 @@ où :
 
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 
+## Spécification technique de la grille
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
+
+Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 935 |
+| nj | 824 | 
+| résolution à 60° N | 10km |
+| coordonnées du premier point de grille | 18.1429° N ; 142.8968° W | 
+| coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
+| orientation de la grille (par rapport à l’axe des j) | -111,0° | 
 
 ## Nomenclature des noms de fichiers 
 

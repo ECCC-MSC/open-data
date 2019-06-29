@@ -6,11 +6,22 @@
 
 # Regional Deterministic Wave Prediction System (RDWPS) Data in GRIB2 Format
 
+This page describes the data of the [Regional Deterministic Wave Prediction System](readme_rdwps_en.md).
+
 ## Great Lakes
 
 The [Regional Deterministic Wave Prediction System (RDWPS)](readme_rdwps_en.md) produces wave forecasts for the Great Lakes using the third generation spectral wave model WaveWatch III®. The model is forced by the 10 meters winds from the High Resolution Deterministic Prediction System (HRDPS). A sea ice analysis is used by the model to dampen or suppress wave growth in areas covered respectively with 25% to 75% and more than 75% ice.
 
 The WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centers over the last several years. 
+
+This system includes four domains:
+
+* Lake Superior
+* Lake Huron-Michigan
+* Lake Erie
+* Lake Ontario
+
+All four domains have a spatial resolution of 1 km (0.0090 deg x 0.0124 deg).
 
 ## Gulf of Saint Lawrence
 
@@ -38,6 +49,8 @@ where:
 
 ### Lake Superior
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
+
 Table lists the values of various parameters of the Lake Superior :
 
 | Parameter | Value |
@@ -48,6 +61,8 @@ Table lists the values of various parameters of the Lake Superior :
 | coordinate of first grid point | 46.2590° N  92.3116° O |
 
 ### Lake Huron and Michigan
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 Table lists the values of various parameters of the Lake Huron and Michigan :
 
@@ -60,6 +75,8 @@ Table lists the values of various parameters of the Lake Huron and Michigan :
 
 ### Lake Erie
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
+
 Table lists the values of various parameters of the Lake Erie :
 
 | Parameter | Value |
@@ -71,6 +88,8 @@ Table lists the values of various parameters of the Lake Erie :
 
 ### Lake Ontario
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
+
 Table lists the values of various parameters of the Lake Ontario :
 
 | Parameter | Value |
@@ -81,6 +100,8 @@ Table lists the values of various parameters of the Lake Ontario :
 | coordinate of first grid point | 43.0640° N  79.9736° O |
 
 ### Gulf of St Lawrence
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
 
 Table lists the values of various parameters of the Gulf of St Lawrence :
 

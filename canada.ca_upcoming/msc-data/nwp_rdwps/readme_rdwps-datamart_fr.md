@@ -4,14 +4,24 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPDV sur le Datamart du SMC
 
-
 # Données GRIB2 du Système Régional de Prévision Déterministe de Vague (SRPDV)
+
+Cette page décrit les données du [Système Régional de Prévision Déterministe de Vague](./readme_rdwps_fr.md). 
 
 ## Grands Lacs
 
 Le [Système Régional de Prévision Déterministe de Vague (SRPDV)](readme_rdwps_fr.md) produit les prévisions de vagues pour les Grands Lacs en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du Système à haute résolution de prévision déterministe (SHRPD). Une analyse de glace est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
 
 Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années. 
+
+Ce système comprend quatre domaines:
+
+* Lac Supérieur:      
+* Lac Huron-Michigan: 
+* Lac Érié:  
+* Lac Ontario: 
+
+Les quatre domaines ont une résolution spatiale de 1 km(0.0090 deg x 0.0124 deg).
 
 ## Golfe du Saint-Laurent
 
@@ -40,6 +50,8 @@ où :
 
 ### Lac Supérieur
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
+
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Supérieur :
 
 | Paramètre | Valeur |
@@ -50,6 +62,8 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Sup
 | coordonnées du premier point de grille | 46.2590° N  92.3116° O | 
 
 ### Lac Huron et Lac Michigan
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs Huron et Michigan :
 
@@ -62,6 +76,8 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs H
 
 ### Lac Érié
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
+
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Érié :
 
 | Paramètre | Valeur |
@@ -73,6 +89,8 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ér
 
 ### Lac Ontario
 
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
+
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ontario :
 
 | Paramètre | Valeur |
@@ -83,6 +101,8 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ont
 | coordonnées du premier point de grille | 43.0640° N  79.9736° O | 
 
 ### Golfe du Saint-Laurent
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille du Golfe du Saint-Laurent :
 

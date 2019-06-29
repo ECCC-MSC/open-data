@@ -10,19 +10,6 @@
 The Regional Deterministic Wave Prediction System (RDWPS) produces wave forecasts using the third generation spectral wave model WaveWatch III®. The model is forced by the 10 meters winds from the High Resolution Deterministic Prediction System (HRDPS). An ice forecast from the Water Cycle Prediction System of the Great Lakes (WCPS-GLS) is used by the model to dampen or suppress wave growth in areas covered respectively with 25% to 75% and more than 75% ice. 
 The WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years. 
 
-This system includes four domains:
-
-Lake Superior:       grid dimensions: 658 per 318
-coordinates of first grid point: 46.2590 N 92.3116 W
-Lake Huron-Michigan: grid dimensions: 698 per 573
-coordinates of first grid point: 41.4260 N 88.1452 W
-Lake Erie:           grid dimensions: 398 per 210
-coordinates of first grid point: 41.2190 N 83.6068 W
-Lake Ontario:        grid dimensions: 348 per 158
-coordinates of first grid point: 43.0640 N 79.9736 W
-					   
-All four domains have a spatial resolution of 1 km (0.0090 deg x 0.0124 deg).
-
 ## Access
 
 ### How to access the data

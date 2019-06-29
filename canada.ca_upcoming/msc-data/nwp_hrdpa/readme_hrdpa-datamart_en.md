@@ -25,6 +25,20 @@ where:
 
 A history of 30 days is maintained in this directory.
 
+## Grid specifications
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
+
+Table lists the values of parameters of the polar-stereographic grid.
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 2500 |
+| nj | 1222 | 
+| resolution at 60° N | 2.5 km |
+| coordinates of the first grid point | 42.2504° N  131.0928° W | 
+| grid orientation (with respect to j axis) | -115.0° |
+
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
@@ -55,9 +69,12 @@ Note that a second variable is also included in this file and it is the confiden
 
 ## List of variables
 
-
 * __APCP__ : Total precipitation amount analysis over a 6 or 24 hours period (mm)
 * __CFIA__ : Confidence Index of the Analysis. Range of values from 0 to 1 (no unit)  
+
+## About the No-data mask
+
+A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 

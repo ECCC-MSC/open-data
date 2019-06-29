@@ -23,9 +23,9 @@ __where__ :
 * __HH__ : model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : forecast hour [001, 002, 003, ..., 048]
 
-## Available Domains 
+## Technical specification of the grid
 
-### Technical lat-lon Grid Specifications used for GRIB2 product
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
 Table lists the values of various parameters of latitude-longtitude grid 
 
@@ -36,7 +36,7 @@ Table lists the values of various parameters of latitude-longtitude grid
 | resolution | 0.02° x 0.03° |
 | coordinate of first grid point | 45° 30' N  71° W |
 
-### GRIB data specifications 
+## Data specifications 
 
 The fields in the GRIB2 data set for the two components of the system are made available on a latitude-longitude grid of 500 x 325 (with 0.02 x 0.03 degrees of resolution). The list of fields made available in GRIB2 format are:
 

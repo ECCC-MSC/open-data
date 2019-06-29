@@ -22,6 +22,21 @@ where:
 
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 
+## Technical specification of the grid
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
+
+Values given to the parameters of the stereographic polar grid:
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 935 |
+| nj | 824 | 
+| resolution at 60° N | 10 km |
+| coordinates of the first grid point | 18.1429° N  142.8968° W | 
+| (i,j) coordinate of North Pole | (456.2; 732.4) |
+| grid orientation (with respect to j axis) | -111.0° |
+
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.

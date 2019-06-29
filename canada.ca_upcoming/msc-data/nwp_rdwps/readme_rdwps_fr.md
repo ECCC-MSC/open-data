@@ -8,18 +8,6 @@
 
 Le Système Régional de Prévision Déterministe de Vague (SRPDV) produit les prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du Système à haute résolution de prévision déterministe (SHRPD). Une prévision de glace du Système de Prévision du Cycle de l'Eau (SPCE-GLS) est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
 Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.
-Ce système comprend quatre domaines:
-
-Lac Supérieur:      dimensions de la grille: 658 par 318
-coordonnées du premier point: 46.2590 N 92.3116 O
-Lac Huron-Michigan: dimensions de la grille: 698 par 573
-coordonnées du premier point: 41.4260 N 88.1452 O
-Lac Érié:           dimensions de la grille: 398 par 210
-coordonnées du premier point: 41.2190 N 83.6068 O
-Lac Ontario:        dimensions de la grille: 348 par 158
-coordonnées du premier point: 43.0640 N 79.9736 O
-
-Les quatre domaines ont une résolution spatiale de 1 km(0.0090 deg x 0.0124 deg).
 
 ## Accès
 

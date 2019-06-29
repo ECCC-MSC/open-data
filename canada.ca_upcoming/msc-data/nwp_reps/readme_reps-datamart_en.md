@@ -23,6 +23,20 @@ where:
 * __HH__ : Forecast run hour in UTC
 * __hhh__ : Forecast time
 
+## Technical specification of the grid
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+
+Values given to the parameters of the stereographic polar grid:
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 600 |
+| nj | 610 | 
+| resolution at 60° N | 10 km |
+| coordinates of the first grid point | 19.3206° N  141.5411° W | 
+| grid orientation (with respect to j axis) | -110.0° |
+
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
@@ -43,7 +57,6 @@ where:
 * __FileContent__ : can be all-products or allmbrs, indicating that all the members or all the probabilistic products for this variable are contain in the file 
 
 ## List of variables
-
 
 The variables for the ensemble products available in the GRIB2 files are listed below. For each variable, the definition, period and frequency are mentioned.
 
@@ -105,6 +118,10 @@ The GRIB2 files variables for individual members are the following. The variable
 You can find a list in XML format cont.
 
 A [list in XML format](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
+
+# About the No-data mask
+
+A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 

@@ -23,9 +23,9 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
 
-## Domaines disponibles
+## Spécification technique de la grille
 
-### Spécifications techniques de la grille lat-lon utilisée dans GRIB2
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
 Valeurs données aux paramètres de la grille latitude-longitude
 
@@ -36,7 +36,7 @@ Valeurs données aux paramètres de la grille latitude-longitude
 | résolution | 0.02° x 0.03° |
 | coordonnées du premier point de grille | 45° 30' N  71° W |
 
-### Spécifications relatives aux données GRIB
+## Spécifications relatives aux données
 
 Les champs du jeu de données GRIB2 pour les deux composantes du système sont disponibles sur une grille latitude-longitude de 500 x 325, à 0,02 x 0,03 degrés de résolution. Ces données concernent les prévisions des variables répertoriées dans le tableau ci-dessous :
 

@@ -23,6 +23,20 @@ où :
 * __HH__ : Heure de la passe du modèle en TU
 * __hhh__ : Heure de la prévision
 
+## Spécification technique de la grille
+
+![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+
+Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 600 |
+| nj | 610 | 
+| résolution à 60° N | 10km |
+| coordonnées du premier point de grille | 19.3206° N ; 141.5411° W | 
+| orientation de la grille (par rapport à l’axe des j) | -110.0° | 
+
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
@@ -42,7 +56,6 @@ où :
 * __Contenu__ : Peut être "all-products" ou "allmbrs" pour indiquer que tous les membres ou tous les produits probabilistes pour cette variable sont regroupés dans ce fichier
 
 ## Liste des variables
-
 
 Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Pour chaque variable, la définition, la période et la fréquence de disponibilité sont mentionnées.
 
@@ -103,6 +116,10 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont les suiv
 * __DSWRF_SFC_0__ :       Flux descendant de radiation d'ondes courtes à la surface
 
 Une [liste en format XML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
+
+## À propos du masque No-Data
+
+Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
 ## Support
 
