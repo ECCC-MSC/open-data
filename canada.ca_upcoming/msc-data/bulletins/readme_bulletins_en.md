@@ -16,8 +16,6 @@ These data are available on the data server services [MSC Datamart](../../msc-da
 
 * [Alphanumerical data available on the MSC Datamart](readme_bulletins-datamart_en.md) 
 * [Binary data available on the MSC Datamart](readme_bulletinsbufr-datamart_en.md) 
-* Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
-	* NOTE: does not exist for the GDPS
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../how-to/readme_en.md) is available.
 

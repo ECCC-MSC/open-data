@@ -39,7 +39,7 @@ These data are available on the data server services [MSC Datamart](../../msc-da
 
 * [GRIB2 data available on the MSC Datamart](readme_cansips-datamart_en.md) 
 * [Indices in CSV format available on the MSC Datamart](readme_cansips-datamartcsv_en.md)
-* [CanSIPS data available via geospatial web services](../../msc-geomet/readme_en.md) 
+* [Data available via geospatial web services](../../msc-geomet/readme_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

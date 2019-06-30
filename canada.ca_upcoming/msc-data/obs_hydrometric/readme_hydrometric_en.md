@@ -17,8 +17,6 @@ Real-time hydrometric data containing real-time unit water level and flow data f
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [CSV data available on the MSC Datamart](readme_hydrometric-datamart_en.md) 
-* Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
-	* NOTE: does not exist for the GDPS
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is available.
 

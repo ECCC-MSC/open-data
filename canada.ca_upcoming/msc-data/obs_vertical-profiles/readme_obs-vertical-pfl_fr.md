@@ -15,8 +15,6 @@ Cette page décrit les données observées (ObsTephi) contenant les données ré
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données en format CSV disponibles sur le Datamart du SMC](readme_obs-vertical-pfl-datamart_fr.md) 
-* Lien vers la sous-page du jeu de données pour GeoMet [exemple](../../msc-geomet/giops_fr.md), si la sous-page existe. 
-	* NOTE: n'existe pas pour le SGPD
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

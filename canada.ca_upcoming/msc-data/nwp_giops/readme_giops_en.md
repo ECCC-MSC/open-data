@@ -15,8 +15,7 @@ The Global Ice-Ocean Prediction System (GIOPS) produces global sea ice and ocean
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [NetCDF data available on the MSC Datamart](readme_giops-datamart_en.md) 
-* Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
-	* NOTE: does not exist for the GDPS
+* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

@@ -16,8 +16,6 @@ These data are available on the data server services [MSC Datamart](../../msc-da
 
 * [Provincial and territory observation summaries in XML format, available on the MSC Datamart](readme_obs_insitu_xmldatamart_en.md) 
 * [Surface Weather Observation in Markup Language SWOB Met-ML, available on the MSC Datamart](readme_obs_insitu_swobdatamart_en.md)
-* Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
-	* NOTE: does not exist for the GDPS
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

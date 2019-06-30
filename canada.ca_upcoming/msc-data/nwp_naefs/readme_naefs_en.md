@@ -18,8 +18,6 @@ The North American Ensemble Forecast System (NAEFS) is a joint project involving
 These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [XML data available on the MSC Datamart](readme_naefs-datamart_en.md) 
-* Link to the subpage of the dataset for GeoMet [example](../../msc-geomet/giops_en.md), if the subpage exists 
-	* NOTE: does not exist for the GDPS
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
