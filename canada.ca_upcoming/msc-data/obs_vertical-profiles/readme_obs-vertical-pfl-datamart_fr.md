@@ -31,7 +31,7 @@ ObsTephi_HH_AAAA.csv
 où:
 
 * __HH__ : Heure  de la passe. Peut être "00" ou "12"
-* __AAAA__ : code de la station de 4 lettres. La [liste complète des stations](https://dd.ec.gc.ca/vertical_profile/doc/station_list_for_vertical_profile.txt) est disponible.
+* __AAAA__ : code de la station de 4 lettres. La [liste complète des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) est disponible.
 
 Exemple :
 
