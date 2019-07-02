@@ -10,11 +10,11 @@ This page describes the [surface weather and marine observation](readme_swob_en.
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable XML file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-Data are available at the following addresses:
+Data are available at the following addresses :
 
 * __Land-based observations :__
 
@@ -22,10 +22,10 @@ https://dd.weather.gc.ca/observations/swob-ml/YYYYMMDD/XXXX/
 
 where :
 
-* YYYYMMDD: observation date in UTC 
-* XXXX: station code (WMO ID)
+* __YYYYMMDD__ : Observation date in UTC. 
+* __XXXX__ : Station code (WMO ID).
 
-Moreover, there is a special directory containing the last observations received from each station:
+Moreover, there is a special directory containing the last observations received from each station :
 https://dd.weather.gc.ca/observations/swob-ml/latest/
 
 __Note__: A [dynamic list of observation stations](https://dd.meteo.gc.ca/observations/doc/swob-xml_station_list.csv) is available and updated daily.
@@ -34,10 +34,10 @@ __Note__: A [dynamic list of observation stations](https://dd.meteo.gc.ca/observ
 
 https://dd.weather.gc.ca/observations/swob-ml/marine/moored-buoys/YYYMMDD/XXXXXXX
 
-where:
+where :
 
-* YYYYMMDD: observation date in UTC
-* XXXXXXX: station code (WMO ID), could be 5 or 7 digits
+* __YYYYMMDD__ : Observation date in UTC.
+* __XXXXXXX__ : Station code (WMO ID), could be 5 or 7 digits.
 
 __Note__: A [list of marine observations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) is available.
 
@@ -47,9 +47,9 @@ https://dd.weather.gc.ca/observations/swob-ml/partners/NETWORK/YYYMMDD/MSC-ID
 
 where :
 
-* NETWORK: acronym of partner's network
-* YYYYMMDD: observation date in UTC
-* MSC-ID: partner’s unique MSC station id 
+* __NETWORK__ : Acronym of partner's network.
+* __YYYYMMDD__ : Observation date in UTC.
+* __MSC-ID__ : Partner’s unique MSC station id.
 
 __Note__: A [list of partners stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
 
@@ -61,26 +61,26 @@ NOTE: ALL HOURS ARE IN UTC.
 
 YYYY-MM-DD-hhmm-XXXX-TYPE-CCz-swob.xml
 
-where:
+where :
 
-* YYYY-MM-DD-hhmm: observation date in UTC
-* XXXX: station code (WMO ID)
-* TYPE: AUTO or MANNED station
-* CCz: optional. Cor stands for Correction and z is a letter indication the number of corrections ('A' stands for the first, 'B' for the second, etc.). By default, this field would not be there for the first observation.
-* swob.xml: constant string indicating the product and the format
+* **YYYY-MM-DD-hhmm** : Observation date in UTC.
+* __XXXX__ : Station code (WMO ID).
+* __TYPE__ : AUTO or MANNED station.
+* __CCz__ : Optional. Cor stands for Correction and z is a letter indication the number of corrections ('A' stands for the first, 'B' for the second, etc.). By default, this field would not be there for the first observation.
+* __swob.xml__: Constant string indicating the product and the format.
 
 In the 'latest' directory, the file names are static for each station and take the form of:
 
 latest_XXXX_TYPE_swob.xml
 
-where:
+where :
 
-* latest: constant string indicating that this is the latest observation received from this station
-* XXXX: Station code
-* TYPE: AUTO or MANNED station
-* swob.xml: constant string indicating the product and the format
+* __latest__ : Constant string indicating that this is the latest observation received from this station.
+* __XXXX__ : Station code.
+* __TYPE__ : AUTO or MANNED station.
+* __swob.xml__ : Constant string indicating the product and the format.
 
-Example:
+Example :
 
 2013-09-20-1300-CYAZ-MAN-swob.xml 
 
@@ -90,14 +90,14 @@ This file contains the manual observation of the September 20th 2013 at 13:00 UT
 
 YYYY-MM-DD-hhmm-XXXXXXX-TYPE-swob.xml
 
-where:
+where :
 
-* YYYY-MM-DD-hhmm: observation date and time in UTC
-* XXXXXXX: Station code (WMO ID). Could be either 5 or 7 digits.
-* TYPE: AUTO station
-* swob.xml: constant string indicating the product and the format
+* __YYYY-MM-DD-hhmm__ : Observation date and time in UTC.
+* __XXXXXXX__ : Station code (WMO ID). Could be either 5 or 7 digits.
+* __TYPE__ : AUTO station.
+* __swob.xml__ : Constant string indicating the product and the format.
 
-Example:
+Example :
 
 2019-01-27-0000-4400488-AUTO-swob.xml
 
@@ -105,14 +105,14 @@ Example:
   
 YYYY-MM-DD-hhmm-network-ID-AUTO-swob.xml
 
-where:
+where :
 
-* YYYY-MM-DD-hhmm: observation date in UTC
-* network: partner's network
-* ID: partner’s unique MSC station ID
-* swob.xml: constant string indicating the product and the format 
+* __YYYY-MM-DD-hhmm__ : Observation date in UTC.
+* __network__ : Partner's network.
+* __ID__ : Partner’s unique MSC station ID.
+* __swob.xml__ : constant string indicating the product and the format. 
   
-Example:
+Example :
 
 2018-01-06-1400-bc-env-aq-138-AUTO-swob.xml
 

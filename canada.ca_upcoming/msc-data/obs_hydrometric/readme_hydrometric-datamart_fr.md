@@ -10,7 +10,7 @@ Cette page décrit les données [hydrométriques en temps réel](readme_hydromet
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
 Les fichiers pour ces données se trouvent à l'adresse :
@@ -48,13 +48,13 @@ obéit aux règles suivantes :
 
 où :
 
-* __PROVTERR__ : code de la province ou du territoire à 2 lettres
+* __PROVTERR__ : Code de la province ou du territoire à 2 lettres.
 
-* __ID__ : identifiant de la station
+* __ID__ : Identifiant de la station.
 
-* __MAJ__ : "daily" ou "hourly" pour la fréquence de mise à jour
+* __MAJ__ : "daily" ou "hourly" pour la fréquence de mise à jour.
 
-Exemple: 
+Exemple : 
 
 "AB_05AA004_hourly_hydrometric.csv" pour les données d'observations mises à 
 jour chaque heure pour la station "05AA004" située en Alberta (AB) en format 
@@ -69,9 +69,9 @@ faciliter l'usage. Il a un nom statique qui obéit aux règle suivantes :
 
 où :
 
-* __PROVTERR__ : code de la province ou du territoire à 2 lettres
+* __PROVTERR__ : Code de la province ou du territoire à 2 lettres.
 
-* __MAJ__ : "daily" ou "hourly" pour la fréquence de mise à jour
+* __MAJ__ : "daily" ou "hourly" pour la fréquence de mise à jour.
 
 Exemple:
 
@@ -91,32 +91,32 @@ La première ligne est une entête bilingue suivie des enregistrements. Voici la
 ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
 
 où : 
-*  __ID__ : identifiant de la station. Les deux premiers chiffres indiquent le 
+*  __ID__ : Identifiant de la station. Les deux premiers chiffres indiquent le 
         bassin hydrographique principal dans lequel se trouve la station. Les 
         deux prochains caractères indiquent le sous-bassin et le 
         sous-sous-bassin. Les trois derniers chiffres indiquent la station 
         spécifique dans le sous-sous-bassin.
 
-* __Date__ : date de l'observation au format ISO 8601, heure normale locale (HNL)
+* __Date__ : Date de l'observation au format ISO 8601, heure normale locale (HNL).
 
-* __Niveau d'eau (m)__ : Niveau d'eau en mètres
+* __Niveau d'eau (m)__ : Niveau d'eau en mètres.
 
-* __Grade__ : usage futur
+* __Grade__ : Usage futur.
 
-* __Symbole__ : usage futur
+* __Symbole__ : Usage futur.
 
-* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
+* __QA/QC__ : Drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
           niveau d'eau (1 = préliminaire, 2 = révisé, 3 = vérifié, 
-          4 = approuvé)
+          4 = approuvé).
 
-* __Débit (cms)__ : débit en mètres cube par seconde
+* __Débit (cms)__ : Débit en mètres cube par seconde.
 
-* __Grade__ : usage futur
+* __Grade__ : Usage futur.
 
-* __Symbol__ : usage futur
+* __Symbol__ : Usage futur.
 
-* __QA/QC__ : drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
-          débit (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé)
+* __QA/QC__ : Drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
+          débit (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé).
 
 Veuillez prendre note que les dates des données sont toujours en HNL à chaque station. Les dates affichent l'écart avec le temps universel coordonné (UTC).
 
@@ -130,18 +130,18 @@ La première ligne est une entête bilingue suivie des métadonnées des station
 ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
 
 où :
-*  __ID__ : identifiant de la station
+*  __ID__ : Identifiant de la station.
 
-* __Nom__ : nom de la station. Le nom est soit en anglais ou en français 
-       dépendamment de l'emplacement de la station
+* __Nom__ : Nom de la station. Le nom est soit en anglais ou en français 
+       dépendamment de l'emplacement de la station.
 
-* __Latitude__ : latitude en format décimal
+* __Latitude__ : Latitude en format décimal.
 
-* __Longitude__ : longitude en format décimal
+* __Longitude__ : Longitude en format décimal.
 
-* __Prov/Terr__ : code de la province ou du territoire à 2 lettres
+* __Prov/Terr__ : Code de la province ou du territoire à 2 lettres.
 
-* __Fuseau horaire__ : différence entre HNL et UTC
+* __Fuseau horaire__ : Différence entre HNL et UTC.
 
 ## Support
 

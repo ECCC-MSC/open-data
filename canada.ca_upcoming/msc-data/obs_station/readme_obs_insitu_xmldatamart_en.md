@@ -12,29 +12,29 @@ The provincial and territory summary pages provide the observations of all avail
 
 The files are in XML format and follow an Environment and Climate Change Canada defined schema.
 
-Update frequency of XML files will be generated as follows:
+Update frequency of XML files will be generated as follows :
 * Hourly - every 5 minutes
 * Today - every 5 minutes
 * Yesterday - twice per day at 06:30 UTC and 08:00 UTC
 
-There are 6 XML files for each province/territory as follows:
+There are 6 XML files for each province/territory as follows :
 * English and French for Hourly Provincial Summary
 * English and French for Today's Provincial Summary
 * English and French for Yesterday's Provincial Summary
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable XML file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
 The provincial and territorial summary XML files are grouped in a directory tree that is based on the province/territory and the summary type.
 
-The provincial summary XML files are available at the following address:
+The provincial summary XML files are available at the following address :
 
 https://dd.weather.ec.gc.ca/observations/xml/PC/TYPE
 
-where:
+where :
 
 * __PC__ : indicates the 2 letter provincial code in lower case. Could be one of the 13 values below:
 
@@ -52,7 +52,7 @@ where:
     * SK (Saskatchewan)
     * YT (Yukon)
 
-* __TYPE__ : string indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.
+* __TYPE__ : String indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.
 
 A history of data (30 days) is kept in the directory.
 
@@ -64,16 +64,16 @@ The file names have the following nomenclature :
 
 TYPE_PC_YYYYMMDD_L.xml
 
-where:
+where :
 
-* TYPE: string indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.
-* PC: indicates the 2 letter provincial code in lower case. See above for the values.
-* YYYYMMDDHH: Observations date. HH is present only in 'hourly' product type.
-* L: 1 letter indicating the language of the file. Can be one of the values:
+* TYPE : String indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.
+* PC : Indicates the 2 letter provincial code in lower case. See above for the values.
+* YYYYMMDDHH : Observations date. HH is present only in 'hourly' product type.
+* L : 1 letter indicating the language of the file. Can be one of the values :
     * f (French)
     * e (English)
 
-Examples of file name:
+Examples of file name :
 
 * hourly_ab_2010030517_e.xml
 * today_mb_20100306_e.xml
@@ -91,10 +91,10 @@ If current data is missing, use the previous hour's data temporarily. Hourly obs
 
 These observations have QA/QC applied to them. Any values that do not pass QA/QC will be suppressed. This includes values that are flagged as doubtful.
 
-Parameters contained in each file for the selected province or territory are:
+Parameters contained in each file for the selected province or territory are :
 * This Hour's Hot and Cold spots for Canada
 * This Hour's Hot and Cold spots for the selected province/territory
-* The current hour observations for each station available. It contains:
+* The current hour observations for each station available. It contains :
     * Present Condition (string)
     * Mean sea level pressure (kPa)
     * Value of pressure tendency (kPa)
@@ -122,10 +122,10 @@ Today's component starts to accumulate the high/lows for each station at the sta
 
 Some stations only report during day time, so they don't have any value before the first hour of observation. 
 
-This file contains for the selected province or territory:
+This file contains for the selected province or territory :
 * Today so far Hot and Cold spots for Canada
 * Today so far Hot and Cold spots for the selected province/territory
-* The observations and records for each station available:
+* The observations and records for each station available :
     * Maximum air temperature for today (°C)
     * Minimum air temperature for today (°C)
     * Wind direction of the peak wind (code)
@@ -151,7 +151,7 @@ Some stations have observations but do not have a SYNO bulletins. These stations
 
 Yesterday's summary is generated at 8, 11, 14, 25, 35 and 50 minutes past each hour. The file is overwritten by every new version, until the last one created. The last one remaining on the server is the last created within the day indicated in the file name. For every day, a file is kept for 30 days on the server.   
 
-This file provides a list of all available stations for the selected province/territory displaying:
+This file provides a list of all available stations for the selected province/territory displaying :
 * Yesterday's Hot and Cold spots for Canada
 * Yesterday's Hot and Cold spots for the selected province/territory
 * Yesterday's record values for highest and lowest temperature, rain and snow amount for each station available
@@ -159,7 +159,7 @@ This file provides a list of all available stations for the selected province/te
 
 ### Stations
 
-For each station, the following information is provided:
+For each station, the following information is provided :
 * Station name
 * Latitude (decimal degree)
 * Longitude (decimal (degree)

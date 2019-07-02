@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Weather forecast files by city
+[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Radar imagery on the MSC Datamart
 
 # Radar imagery
 
@@ -18,21 +18,21 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GIF file.
 
-The radar images are available at the address:
+The radar images are available at the following address :
 
-http://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension
+https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension
 
-where:
+where :
 
 * PRODUCT  = [24_HR_ACCUM | CAPPI | PRECIPET]
 * FORMAT   = [GIF] (other formats may appear in the future)
-* RADAR    = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below)
+* RADAR    = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
 
 An history of 48 hours of data is kept in each directory.
 
 __Notes__: 
 
-* Details about these products can be found on the Environment and Climate Change Canada web page at:
+* Details about these products can be found on the Environment and Climate Change Canada web page at :
 
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1 
 
@@ -48,28 +48,28 @@ The files have the following nomenclature, with XXX, a 3 letter radar identifier
 
 Images for regional composites (5 regions of Canada) and individual radar are available. Two intensities scale (8 and 14 colors) are also available for each image. 
 
-Composites with 14 colors intensity scale:
+Composites with 14 colors intensity scale :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
-Composites with 8 colors intensity scale:
+Composites with 8 colors intensity scale :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
 
-Individual radar with 14 colors intensity scale:
+Individual radar with 14 colors intensity scale :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
 
    ex: 201409201400_XFT_PRECIPET_RAIN.gif
 
-Individual radar with 8 colors intensity scale:
+Individual radar with 8 colors intensity scale :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
@@ -95,7 +95,7 @@ http://weather.gc.ca/radar/how-to-use_e.html#display
 
 * __CAPPI__
 
-The CAPPI files have the following nomenclature:
+The CAPPI files have the following nomenclature :
 
 *  YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
 *  YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
@@ -114,23 +114,23 @@ Shows the rain accumulation, in mm, over the last 24hr period. The product is av
 
 ECCC is in the process of replacing its old C-Band radars with new dual-pol S-Band radars. This radar renewal project extends over several years and the installation of radar is done progressively (For more information, see the Products documentation section below).
 
-The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important:
+The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important :
 
-* Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality 
-* The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename)
-* The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA)
-* Some other new products will emerge in the future and be available externally 
+* Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality.
+* The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename).
+* The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA).
+* Some other new products will emerge in the future and be available externally.
 
 What will happen with the availability of these products and the impact on users?
 
-* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA). It help to manage the transition
-* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA )
-* Users will be informed as and when new radars are installed and their products are available following the same procedure described above
+* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA). It help to manage the transition.
+* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
+* Users will be informed as and when new radars are installed and their products are available following the same procedure described above.
 
-Example (The Radisson case):
+Example (The Radisson case) :
 
-* The 3-lettre ID product every 10 minutes (Temporary) : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/
-* The 5-letter ID products every 6 minutes (Permanently) : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA
+* __The 3-lettre ID product every 10 minutes (Temporary)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/
+* __The 5-letter ID products every 6 minutes (Permanently)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA
 
 ## Support
 

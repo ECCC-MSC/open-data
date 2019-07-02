@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Sommaires d'observations
+[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Sommaires d'observations par province ou territoire
 
 # Données et produits d'observations aux stations
 
@@ -12,7 +12,7 @@ Observations de surface mesurées aux stations automatiques et manuelles des ré
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Sommaires d'observations pour les provinces et territoires en format XML, disponibles sur le Datamart du SMC](readme_obs_insitu_xmldatamart_fr.md) 
 * [Langage de balisage des observations météorologiques au sol (SWOB-ML)](readme_obs_insitu_swobdatamart_fr.md)
@@ -21,7 +21,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
@@ -37,4 +37,4 @@ Les [métadonnées des sommaires d'observations pour les provinces et territoire
 
 ## Registre des changements 
 
-Ne s'applique oas.
+Ne s'applique pas.

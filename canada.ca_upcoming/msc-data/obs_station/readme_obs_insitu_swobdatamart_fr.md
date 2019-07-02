@@ -10,11 +10,11 @@ Cette page décrit les données des [observations](readme_obs_insitu_fr.md) mét
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
-Les données sont disponibles aux adresses suivantes:
+Les données sont disponibles aux adresses suivantes :
 
 * __Observations terrestres :__
 
@@ -22,8 +22,8 @@ https://dd.meteo.gc.ca/observations/swob-ml/AAAAMMJJ/XXXX/
 
 où :
 
-* AAAAMMJJ: date des observations, UTC
-* XXXX: identificateur de station (identifiant OMM)
+* __AAAAMMJJ__ : Date des observations, UTC.
+* __XXXX__ : Identificateur de station (identifiant OMM).
 
 De plus, un répertoire spécial contient les dernières observations reçues pour chaque station:
 
@@ -35,10 +35,10 @@ __Note__: Une [liste des stations d'observations](https://dd.meteo.gc.ca/observa
 
 https://dd.meteo.gc.ca/observations/swob-ml/marine/moored-buoys/YYYMMDD/XXXXXXX
 
-où: 
+où : 
 
-* AAAAMMJJ: date des observations, UTC
-* XXXXXXX: identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres
+* __AAAAMMJJ__ : Date des observations, UTC.
+* __XXXXXXX__ : Identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres.
 
 __Note__: Une [liste des stations marines d'observation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) est disponible.
 
@@ -46,11 +46,11 @@ __Note__: Une [liste des stations marines d'observation](http://collaboration.cm
   
 https://dd.meteo.gc.ca/observations/swob-ml/partners/NETWORK/YYYMMDD/MSC-ID
 
-où: 
+où : 
 
-* NETWORK: acronyme du réseau des partenaires
-* YYYYMMDD: date des observations, UTC
-* MSC-ID: identifiant unique des stations des partenaires
+* __NETWORK__ : Acronyme du réseau des partenaires.
+* __YYYYMMDD__ : Date des observations, UTC.
+* __MSC-ID__ : Identifiant unique des stations des partenaires.
 
 __Note__: Une [liste des stations des partenaires](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
 
@@ -62,26 +62,26 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 AAAA-MM-JJ-hhmm-XXXX-TYPE-CCz-swob.xml
 
-où:
+où :
 
-- AAAA-MM-JJ-hhmm: date d'observation (UTC)
-- XXXX: identificateur de station (identifiant OMM)
-- TYPE: AUTO ou MANNED (station automatique ou manuelle) 
-- CCz: optionnel. 'Cor' signifie Correction et z est une indication alphabétique du nombre de corrections ('A' signifiant la première, 'B' la seconde, etc.). Par défaut ce champ est absent pour la première observation.
-- swob.xml: chaîne de caractères constante indiquant le produit et le format
+* __AAAA-MM-JJ-hhmm__ : Date d'observation (UTC)
+* __XXXX__ : Identificateur de station (identifiant OMM).
+* __TYPE__ : AUTO ou MANNED (station automatique ou manuelle).
+* __CCz__ : Optionnel. 'Cor' signifie Correction et z est une indication alphabétique du nombre de corrections ('A' signifiant la première, 'B' la seconde, etc.). Par défaut ce champ est absent pour la première observation.
+* __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
 
 Dans le répertoire 'latest', les noms des fichiers sont statiques pour chaque station et prend la forme:
  
 latest_XXXX_TYPE_swob.xml
 
-où:
+où :
 
-- latest: chaîne de caractères constante indiquant que c'est la dernière observation
-- XXXX: identificateur de station 
-- TYPE:  AUTO ou MANNED (station automatique ou manuelle)
-- swob.xml: chaîne de caractères constante indiquant le produit et le format
+* __latest__ : Chaîne de caractères constante indiquant que c'est la dernière observation.
+* __XXXX__ : Identificateur de station.
+* __TYPE__ :  AUTO ou MANNED (station automatique ou manuelle).
+* __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
 
-Exemple:
+Exemple :
 
 2013-09-20-1300-CYAZ-MAN-swob.xml 
 
@@ -91,14 +91,14 @@ Ce fichier contient les observations manuelles pour le 20 septembre 2013 à 13:0
 
 YYYY-MM-DD-hhmm-XXXXX-TYPE-swob.xml
 
-où:
+où :
 
-- YYYY-MM-DD-hhmm: date d'observation (UTC)
-- XXXXX: identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres
-- TYPE: AUTO - station automatique 
-- swob.xml: chaîne de caractères constante indiquant le produit et le format
+* __YYYY-MM-DD-hhmm__ : Date d'observation (UTC).
+* __XXXXX__ : Identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres.
+* __TYPE__ : AUTO - station automatique.
+* __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
 
-Exemple:
+Exemple :
 
 2019-01-27-0000-4400488-AUTO-swob.xml
 
@@ -106,14 +106,14 @@ Exemple:
   
 YYYY-MM-DD-hhmm-network-ID-AUTO-swob.xml
 
-où:
+où :
 
-- YYYY-MM-DD-hhmm: date d'observation (UTC)
-- network: réseau du partenaire
-- ID: identifiant unique de station du partenaire 
-- swob.xml: chaîne de caractères constante indiquant le produit et le format
+* __YYYY-MM-DD-hhmm__ : Date d'observation (UTC).
+* __Network__ : Réseau du partenaire.
+* __ID__ : Identifiant unique de station du partenaire. 
+* __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
   
-Exemple:
+Exemple :
 
 2018-01-06-1400-bc-env-aq-138-AUTO-swob.xml  
 

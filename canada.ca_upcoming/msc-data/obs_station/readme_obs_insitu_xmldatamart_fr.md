@@ -12,26 +12,26 @@ Les fichiers des sommaires d'observations contiennent les observations de toutes
 
 Les fichiers sont dans le format XML et suivent un schéma défini par Environnement et Changement climatique Canada.
 
-Il y a 6 types de fichiers pour chaque province ou territoire:
+Il y a 6 types de fichiers pour chaque province ou territoire :
 
-* Sommaire horaire en anglais et en français;
-* Sommaire de la journée courante en anglais et en français;
+* Sommaire horaire en anglais et en français.
+* Sommaire de la journée courante en anglais et en français.
 * Sommaire d'hier en anglais et en français.
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
 Les fichiers XML du sommaire des observations des provinces ou des territoires sont regroupés dans une structure de répertoires basée sur la province/territoire et le type de sommaire.
 
-Les données sont disponibles à cette adresse:
+Les données sont disponibles à cette adresse :
 
 https://dd.weather.gc.ca/observations/xml/PC/TYPE
 
-où:
-* **PC**: code de 2 lettres pour la province ou le territoire couvert par ces observations. Ce code peut prendre une de ces 13 valeurs:
+où :
+* **PC** : Code de 2 lettres pour la province ou le territoire couvert par ces observations. Ce code peut prendre une de ces 13 valeurs:
 
     * AB (Alberta)
     * BC (Colombie-Britannique)
@@ -47,7 +47,7 @@ où:
     * SK (Saskatchewan)
     * YT (Yukon)
 
-* __TYPE__ : chaîne de caractères indiquant le type de sommaire. Peut prendre l'une de ces 3 valeurs [hourly | today | yesterday]. Voir ci-dessous pour une description de chaque type.
+* __TYPE__ : Chaîne de caractères indiquant le type de sommaire. Peut prendre l'une de ces 3 valeurs [hourly | today | yesterday]. Voir ci-dessous pour une description de chaque type.
 
 Un historique des données (30 jours) est conservé dans ce répertoire.
 
@@ -55,16 +55,16 @@ Un historique des données (30 jours) est conservé dans ce répertoire.
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
-Les noms de fichiers suivant cette nomenclature:
+Les noms de fichiers suivant cette nomenclature :
 
 TYPE_PC_YYYYMMDD_L.xml
 
-où:
+où :
 
-* TYPE:  chaîne de caractères indiquant le type de sommaire. Peut prendre l'une de ces 3 valeurs [hourly | today | yesterday]. Voir ci-dessous pour une description de chaque type.
-* PC: code de 2 lettres pour la indiquant la province ou le territoire couvert par ces observations. Voir ci-dessus pour les valeurs possibles.
-* YYYYMMDDHH: Date des observations. L'heure représentée par 'HH' n'est présente que dans le cas des fichiers horaires ('hourly').
-* L: 1 lettre indiquant la langue du fichier. Peut-être une de ces valeurs:
+* __TYPE__ :  Chaîne de caractères indiquant le type de sommaire. Peut prendre l'une de ces 3 valeurs [hourly | today | yesterday]. Voir ci-dessous pour une description de chaque type.
+* __PC__ : Code de 2 lettres pour la indiquant la province ou le territoire couvert par ces observations. Voir ci-dessus pour les valeurs possibles.
+* __YYYYMMDDHH__ : Date des observations. L'heure représentée par 'HH' n'est présente que dans le cas des fichiers horaires ('hourly').
+* __L__ : 1 lettre indiquant la langue du fichier. Peut-être une de ces valeurs :
     * f (français)
     * e (anglais)
 
@@ -85,13 +85,13 @@ Ce fichier est créé aux minutes 8, 11, 14, 25, 35 et 50, après 'heure. Le fic
 Lorsque les données sont manquantes, les observations de la dernière heure sont utilisées. Les champs horaires sont laissés vides s'il n'y a eu aucune mise à jour durant 2 heures 15 minutes.                                                                                                
 Ces données d'observations font l'objet d'un contrôle de qualité. Toute valeur qui ne passe pas pas le contrôle de qualité est supprimée.  Ceci inclus les valeurs qui sont catégorisées comme douteuses. 
 
-Ce fichier contient pour la province ou le territoire:
+Ce fichier contient pour la province ou le territoire :
 
-* L'endroit et la température la plus froide au Canada pour cette heure;
-* L'endroit et la température la plus chaude au Canada pour cette heure;
-* L'endroit et la température la plus froide dans la province ou le territoire pour cette heure;
-* L'endroit et la température la plus chaude dans la province pour le territoire pour cette heure;
-* Les observations et les records des stations disponibles dans cette province:
+* L'endroit et la température la plus froide au Canada pour cette heure.
+* L'endroit et la température la plus chaude au Canada pour cette heure.
+* L'endroit et la température la plus froide dans la province ou le territoire pour cette heure.
+* L'endroit et la température la plus chaude dans la province pour le territoire pour cette heure.
+* Les observations et les records des stations disponibles dans cette province :
     * Condition présente (expression)
     * Pression au niveau de la mer (kPa)
     * Valeur de la tendance de pression (kPa)
@@ -121,12 +121,12 @@ Le sommaire pour aujourd'hui commence à accumuler les max/min pour chaque stati
 
 Comme certaines stations ne rapportent que pendant certaines heures de la journée, les valeurs pour ces stations sont parfois vides au début de la journée climatique. 
 
-Ce fichier contient pour la province ou le territoire:
-* L'endroit et la température la plus froide au Canada jusqu'à maintenant pour ce jour climatique;
-* L'endroit et la température la plus chaude au Canada jusqu'à maintenant pour ce jour climatique;
-* L'endroit et la température la plus froide dans la province ou le territoire jusqu'à maintenant pour ce jour climatique;
-* L'endroit et la température la plus chaude dans la province ou le territoire le territoire jusqu'à maintenant pour ce jour climatique;
-* Les observations des stations disponibles dans cette province ou ce territoire. Les observations contiennent pour chaque station:
+Ce fichier contient pour la province ou le territoire :
+* L'endroit et la température la plus froide au Canada jusqu'à maintenant pour ce jour climatique.
+* L'endroit et la température la plus chaude au Canada jusqu'à maintenant pour ce jour climatique.
+* L'endroit et la température la plus froide dans la province ou le territoire jusqu'à maintenant pour ce jour climatique.
+* L'endroit et la température la plus chaude dans la province ou le territoire le territoire jusqu'à maintenant pour ce jour climatique.
+* Les observations des stations disponibles dans cette province ou ce territoire. Les observations contiennent pour chaque station :
     * Température de l'air maximale pour aujourd'hui (°C)
     * Température de l'air minimale pour aujourd'hui (°C)
     * Direction du vent (code)
@@ -154,11 +154,11 @@ Certaines stations ont des observations mais n'ont pas de bulletins SYNO. Ces st
 
 Le sommaire de la journée d'hier est produit aux minutes 8, 11, 14, 25, 35 et 50 après chaque heure. Le fichier est écrasé par la nouvelle version jusqu'à ce que le dernier fichier soir créé. Le dernier demeurant sur le serveur est le dernier créé pendant le jour inscrit dans le nom de fichier. Pour chaque jour, le dernier fichier créé est conservé pour les 30 prochains jours.
 
-* L'endroit et la température la plus froide au Canada pour la journée climatique d'hier; 
-* L'endroit et la température la plus chaude au Canada pour la journée climatique d'hier;
-* L'endroit et la température la plus froide dans la province ou le territoire pour la journée climatique d'hier;
-* L'endroit et la température la plus chaude dans la province ou dans le territoire pour la journée climatique d'hier;
-* Les observations des stations disponibles dans cette province ou ce territoire pour la journée climatique d'hier. Les observations contiennent pour chaque station:
+* L'endroit et la température la plus froide au Canada pour la journée climatique d'hier.
+* L'endroit et la température la plus chaude au Canada pour la journée climatique d'hier.
+* L'endroit et la température la plus froide dans la province ou le territoire pour la journée climatique d'hier.
+* L'endroit et la température la plus chaude dans la province ou dans le territoire pour la journée climatique d'hier.
+* Les observations des stations disponibles dans cette province ou ce territoire pour la journée climatique d'hier. Les observations contiennent pour chaque station :
     * Température de l'air maximale (°C)
     * Température de l'air minimale (°C)
     * Direction du vent maximal (code)
@@ -176,7 +176,7 @@ Le sommaire de la journée d'hier est produit aux minutes 8, 11, 14, 25, 35 et 5
 
 ### Stations
 
-Pour chaque station, les informations suivantes sont inscrites:
+Pour chaque station, les informations suivantes sont inscrites :
 
 * Nom de la station
 * Latitude (degré décimal)
@@ -191,7 +191,7 @@ Il y a plus de 500 stations d'observation au Canada. Cependant, ce nombre est en
 ## Notes
 
 * Une [documentation complète pour la description XML de point d'observation météorologique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/Met-ML-SchemaDescriptionV2_f.pdf) est disponible. 
-* Pour qu'un record soit affiché, il doit y avoir au moins 15 années de données dans la base de données des archives climatiques tel que  mentionné sur leur site: http://www.climate.weatheroffice.gc.ca/Welcome_f.html
+* Pour qu'un record soit affiché, il doit y avoir au moins 15 années de données dans la base de données des archives climatiques tel que  mentionné sur leur site : http://www.climate.weatheroffice.gc.ca/Welcome_f.html
 * Les métadonnées des stations sont fournies en anglais ou en français.
 * Toute valeur inférieure à 0,05 est arrondie à 0,0
 * Toute valeur entre 0,05 et 0,1 est arrondie à 0,1

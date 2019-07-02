@@ -2,13 +2,13 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions météorologiques par ville sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Observations radar sur le Datamart du SMC
 
 # Imagerie radar
 
 Cette page décrit les images [radar](readme_radar_fr.md) en format GIF disponibles sur le Datamart du SMC.
 
-Ces images servent à alimenter le site web des prévisions publiques:
+Ces images servent à alimenter le site web des prévisions publiques :
 
 https://meteo.gc.ca/radar/index_f.html
 
@@ -22,17 +22,17 @@ Les images radar se trouvent à l'adresse:
 
 https://dd.meteo.gc.ca/radar/PRODUIT/FORMAT/RADAR/nom_du_fichier.extension
 
-où:
+où :
 
 * PRODUIT = [24_HR_ACCUM | CAPPI | PRECIPET]
 * FORMAT  = [GIF] (d'autres formats peuvent apparaître dans le futur)
-* RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous)
+* RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous).
 
 Un historique de 48 heures des données est conservé dans chaque répertoire.
 
 __Notes__: 
 
-* Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse:
+* Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse suivante :
 
 http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
 
@@ -48,28 +48,28 @@ Les noms de fichiers ont le format suivant, avec XXX, code de 3 lettres du radar
      
 Des images pour des composites régionales (5 régions du Canada) et pour les radars individuels sont disponibles. Pour chaque image, deux échelles d'intensité sont disponibles. 
 
-Composites avec une échelle d'intensité de 14 couleurs: 
+Composites avec une échelle d'intensité de 14 couleurs : 
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
-Composites avec une échelle d'intensité de 8 couleurs:
+Composites avec une échelle d'intensité de 8 couleurs :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
  
    ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
 
-Radar individuel avec une échelle d'intensité de 14 couleurs:
+Radar individuel avec une échelle d'intensité de 14 couleurs :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
  
    ex: 201409201400_XFT_PRECIPET_RAIN.gif
 
-Radar individuel avec une échelle d'intensité de 14 couleurs:
+Radar individuel avec une échelle d'intensité de 14 couleurs :
 
 *  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 *  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
@@ -91,7 +91,7 @@ http://meteo.gc.ca/radar/how-to-use_f.html#display
 
 * __CAPPI__
   
-La nomenclature des fichiers CAPPI est la suivante:
+La nomenclature des fichiers CAPPI est la suivante :
 
 *  YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
 *  YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
@@ -110,7 +110,7 @@ Représente l'accumulation de précipitation en mm tel qu'observée par le radar
 
 ECCC est en cours de remplacement de ses anciens radars C-Band avec de nouveaux radars à double polarisation S-Band. Ce projet de renouvellement des radars s'étendra sur plusieurs années et l'installation des nouveaux radars se fera progressivement(pour davantage d'information, voir la section de documentation des produits ci-dessous).
 
-Le 1er radar a déjà été installé à Radisson (Saskatchewan) et quelques produits sont déjà disponibles. Plusieurs changements affectant les produits/usagers sont planifiés dans ce projet. Ci-dessous figurent les plus importants:
+Le 1er radar a déjà été installé à Radisson (Saskatchewan) et quelques produits sont déjà disponibles. Plusieurs changements affectant les produits/usagers sont planifiés dans ce projet. Ci-dessous figurent les plus importants :
 
 * Les produits actuels (PRECIPET, CAPPI, ...) restent les mêmes mais sont de meilleure qualité
 * la résolution temporelle a été augmentée et les produits sont disponibles toutes les 6 minutes au lieu de toutes les 10 minutes (impact sur les noms de fichiers)
@@ -123,10 +123,10 @@ Comment va se faire la transition et quels seront les impacts sur les usagers ?
 * En parallèle, les nouveaux produits avec le nouvel ID de 5 lettres seront disponibles aux 6 minutes dans les nouveaux répertoires respectifs (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
 * Les usagers seront informés lorsque les nouveaux radars seront installés et leurs produits disponibles selon le processus décrit ci-dessus.
 
-Exemple (cas du radar Radisson):
+Exemple (cas du radar Radisson) :
 
-* Produit avec l'ID de 3 lettres aux 10 minutes (temporaire): http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA
-* Produit avec l'ID de 5 lettres aux 6 minutes (permanent): http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA
+* __Produit avec l'ID de 3 lettres aux 10 minutes (temporaire)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA
+* __Produit avec l'ID de 5 lettres aux 6 minutes (permanent)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA
 
 ## Support
 

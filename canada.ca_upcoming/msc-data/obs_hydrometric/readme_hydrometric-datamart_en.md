@@ -10,11 +10,11 @@ This page describes the [real time hydrometric](readme_hydrometric_en.md) data a
 
 # Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable CSV file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data is available at the following address:
+The data is available at the following address :
 
 * https://dd.weather.gc.ca/hydrometric/csv/[PROVTERR]/[FREQUENCY]/
 
@@ -35,13 +35,13 @@ where :
     * SK (Saskatchewan)
     * YT (Yukon)
 
-* __FREQUENCY__ :  frequency of update, "hourly" or "daily"
+* __FREQUENCY__ :  Frequency of update, "hourly" or "daily".
 
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
 
@@ -73,30 +73,30 @@ English column descriptors:
 
  ID,Date,Water Level (m),Grade,Symbol,QA/QC,Discharge (cms),Grade,Symbol,QA/QC
 
-where:
-*  __ID__ : station identifier. The first two digits indicate the major drainage 
+where :
+*  __ID__ : Station identifier. The first two digits indicate the major drainage 
        basin in which the station is located. The next two characters indicate 
        the sub-basin and sub-sub-basin. The last three digits indicate the 
        specific station within the sub-sub-basin.
 
-* __Date__ : data timestamp in ISO 8601 format, Local Standard Time (LST)
+* __Date__ : Data timestamp in ISO 8601 format, Local Standard Time (LST).
 
-* __Water Level (m)__ : water level in meters 
+* __Water Level (m)__ : Water level in meters.
 
-* __Grade__ : future use
+* __Grade__ : Future use.
 
-* __Symbol__ : future use
+* __Symbol__ : Future use.
 
-* __QA/QC__ : quality assurance/quality control flag for the water level 
-         (1 = preliminary, 2 = reviewed, 3 = checked, 4 = approved)
+* __QA/QC__ : Quality assurance/quality control flag for the water level 
+         (1 = preliminary, 2 = reviewed, 3 = checked, 4 = approved).
 
-* __Discharge (cms)__ : discharge in cubic meters per second
+* __Discharge (cms)__ : Discharge in cubic meters per second.
 
-* __Grade__ : future use
+* __Grade__ : Future use.
 
-* __Symbol__ : future use
+* __Symbol__ : Future use.
 
-* __QA/QC__ : quality assurance/quality control flag for the discharge
+* __QA/QC__ : Quality assurance/quality control flag for the discharge.
 
 Please note that the timestamps of the data are always in LST at that 
 particular station. The timestamps of the data records show the offset from 
@@ -106,24 +106,24 @@ UTC.
 
 A list of the [real-time hydrometric stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson) in GeoJSON format is available.
 
-The first line is a bilingual header, followed by station metadata. Below are the English column descriptors:
+The first line is a bilingual header, followed by station metadata. Below are the English column descriptors :
 
  ID,Name,Latitude,Longitude,Prov/Terr,Timezone
 
-where:
+where :
 
-*  __ID__ : station identifier
+*  __ID__ : Station identifier.
 
-* __Name__ : name of the station. The name is in English or French depending on the 
-        location of the station
+* __Name__ : Name of the station. The name is in English or French depending on the 
+        location of the station.
 
-* __Latitude__ : latitude in decimal format
+* __Latitude__ : Latitude in decimal format.
 
-* __Longitude__ : longitude in decimal format
+* __Longitude__ : Longitude in decimal format.
 
-* __Prov/Terr__ : 2-letter code for the province or territory
+* __Prov/Terr__ : 2-letter code for the province or territory.
 
-* __Timezone__ : LST offset from UTC
+* __Timezone__ : LST offset from UTC.
 
 ## Support
 

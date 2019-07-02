@@ -12,7 +12,7 @@ Données hydrométriques en temps réel contenant les données unitaires de nive
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
 
@@ -20,7 +20,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
