@@ -44,7 +44,7 @@ Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-
 
 ## Utilisation
 
-Des informations sur l'utilisation de ces services et des exemples sont disponibles sur la[page d'aperçu de l'utilisation](.../usage/readme_fr.md).
+Des informations sur l'utilisation de ces services et des exemples sont disponibles sur la [page d'aperçu de l'utilisation](../usage/readme_fr.md).
 
 ## Gestion du changement 
 
