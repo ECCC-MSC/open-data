@@ -12,22 +12,24 @@ Les champs du jeu de données GRIB2 du [Système régional de prévision déterm
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à l’adresse suivante : https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
+Les données sont accessibles à l’adresse suivante : 
+
+https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
 
 où :
 
-* HH : Heure UTC du début de la passe du modèle [00, 12]
-* hhh : Heure de prévision [000, 001, 002, ..., 048]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
 ## Spécification technique de la grille
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique.
+Valeurs données aux paramètres de la grille polaire stéréographique :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -50,16 +52,16 @@ CMC_reg_Variable_TypedeNiveau_Niveau_ps10km_YYYYMMDDHH_Phhh.grib2
 
 où :
 
-* CMC : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
-* reg : Chaîne de caractères constante indiquant que les données proviennent du SRPD.
-* Variable : Type de variable contenue dans le fichier (ex : UGRD). Pour voir la liste complète, consultez la section « Liste des variables ».
-* TypedeNiveau : Type de niveau. Pour voir la liste complète, consultez la section « Liste des variables ».
-* Niveau : Valeur du niveau. Pour consulter la liste complète, consultez la section « Liste des variables ».
-* ps10km : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 10 km.
-* YYYYMMDD : Année, mois et jour du début de la prévision.
-* HH : Heure UTC de la passe [00, 12].
-* Phhh : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,048]
-* grib2 : Chaîne de caractères constante indiquant que le format est GRIB2.
+* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
+* __reg__ : Chaîne de caractères constante indiquant que les données proviennent du SRPD.
+* __Variable__ : Type de variable contenue dans le fichier (ex : UGRD). Pour voir la liste complète, consultez la section « Liste des variables ».
+* __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Liste des variables ».
+* __Niveau__ : Valeur du niveau. Pour consulter la liste complète, consultez la section « Liste des variables ».
+* __ps10km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 10 km.
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
+* __HH__ : Heure UTC de la passe [00, 12].
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,048]
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier : CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
 
@@ -77,12 +79,12 @@ Niveaux isobariques (couverture réduite, hPa) : 850, 700, 500, 250.
 
 Autres types de niveaux qui pourraient être applicables à certains champs :
 
-* surface
-* hauteur fixe au-dessus du sol
-* profondeur fixe sous le sol
-* épaisseur entre niveaux isobariques
-* sommet théorique de l’atmosphère
-* colonne atmosphérique entière
+* Surface
+* Hauteur fixe au-dessus du sol
+* Profondeur fixe sous le sol
+* Épaisseur entre niveaux isobariques
+* Sommet théorique de l’atmosphère
+* Colonne atmosphérique entière
 
 ## Liste des variables
 

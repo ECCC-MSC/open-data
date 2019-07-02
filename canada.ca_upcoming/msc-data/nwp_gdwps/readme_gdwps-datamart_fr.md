@@ -10,7 +10,7 @@ Cette page décrit les données [Système Global de Prévision Déterministe de 
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -18,15 +18,15 @@ Les données sont accessibles à adresse suivante :
 
 * https://dd.weather.gc.ca/model_wave/ocean/global/grib2/HH/
 
-where:
+where :
 
-* __HH__ : model run start, in UTC [00 or 12]
+* __HH__ : Model run start, in UTC [00 or 12]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
 
-Ce tableau répertorie les valeurs de divers paramètres de la grille globale SGPDV
+Ce tableau répertorie les valeurs de divers paramètres de la grille globale SGPDV :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -58,6 +58,7 @@ où :
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de fichier :
+
 CMC_gdwps_global_HTSGW_SFC_0_latlon0.25x0.25_2017092112_P096.grib2
 
 Le fichier a été créé par le CMC et contient une prévision du Système global de prévision déterministe des vagues. Il contient la hauteur significative des vagues (HTSGW) pour le monde au niveau de la surface sur une grille lat/long à une résolution de 0,25 degré par 0,25 degré. Il débute le 21 septembre 2017 à 12Z (2017092112). Il contient l’heure de prévision 96 (P096) en format GRIB2 (.grib2).
@@ -66,8 +67,8 @@ Le fichier a été créé par le CMC et contient une prévision du Système glob
 
 Niveaux qui pourraient être applicables à certains champs :
 
-* surface
-* hauteur fixe au-dessus du sol
+* Surface
+* Hauteur fixe au-dessus du sol
 
 Note : Les paramètres de houle ne réfèrent plus à la houle totale mais à la première houle. À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement. 
 
@@ -91,7 +92,7 @@ __Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descript
 |10/0/8 |	Hauteur significative de la première houle |	SWELL |	SFC_0 |	m |
 |10/0/9 |	Période pic de la première houle |	SWPER |	SFC_0 |	s |
 
-NOTES :
+Note :
 
 * La direction des composantes u et v du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j.
 

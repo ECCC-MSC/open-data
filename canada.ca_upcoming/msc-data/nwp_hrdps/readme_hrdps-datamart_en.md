@@ -14,11 +14,11 @@ The HRDPS not yet being equipped with its own data assimilation system, so its q
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
 * https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
@@ -27,13 +27,13 @@ The data can be accessed at the following URLs:
 * https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
 * https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
 
-where:
+where :
 
-* __HH__: model run start, in UTC [00, 06, 12, 18]
-* __hhh__: forecast hour [000, 001, 002, ..., 024] for Maritimes and East
-* __hhh__: forecast hour [000, 001, 002, ..., 042] for West
-* __hhh__: forecast hour [000, 001, 002, ..., 048] for Continental
-* __hhh__: forecast hour [000, 001, 002, ..., 048] for North at 00Z and 12Z
+* __HH__ : Model run start, in UTC [00, 06, 12, 18].
+* __hhh__ : Forecast hour [000, 001, 002, ..., 024] for Maritimes and East.
+* __hhh__ : Forecast hour [000, 001, 002, ..., 042] for West.
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for Continental.
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for North at 00Z and 12Z.
 
 ## Available Domains 
 
@@ -132,26 +132,27 @@ Table lists the values of various parameters of the Maritime polar-stereographic
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 CMC_hrdps_domain_Variable_LevelType_level_ps2.5km_YYYYMMDDHH_Phhh-mm.grib2
 
-where:
+where :
 
-* __CMC__: constant string indicating that the data is from the Canadian Meteorological Centre
-* __hrdps__: constant string indicating that the data is from the High Resolution Deterministic Prediction System
-* __domain__: constant string indicating which domain that the data is from
-* __Variable__: Variable type included in this file.
-* __LevelType__: Level type.
-* __Level__: Level value.
-* __ps2.5km__: constant string indicating that the projection used is polar-stereographic at 2.5 km resolution.
-* __YYYYMMDD__: Year, month and day of the beginning of the forecast.
-* __HH__: UTC run time [00, 06, 12, 18]
-* __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 024/030/042/048]
-* __mm__: mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available]
-* __grib2__: constant string indicating the GRIB2 format is used
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre.
+* __hrdps__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System.
+* __domain__ : Constant string indicating which domain that the data is from.
+* __Variable__ : Variable type included in this file.
+* __LevelType__ : Level type.
+* __Level__ : Level value.
+* __ps2.5km__ : Constant string indicating that the projection used is polar-stereographic at 2.5 km resolution.
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
+* __HH__ : UTC run time [00, 06, 12, 18].
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 024/030/042/048].
+* __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available].
+* __grib2__ : Constant string indicating the GRIB2 format is used.
 
-Example of file name:
+Example of file name :
+
 CMC_hrdps_east_DEPR_ISBL_0175_ps2.5km_2011092412_P003-00.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the High Resolution Deterministic Prediction System. The data in the file start on September 24th 2011 at 12Z (2011092412). It contains the dew point depression (DEPR) at the isobaric level 175 mb (ISBL_0175) on a polar-stereographic at 2.5 km resolution (ps2.5km) for the forecast hour 03 (P003) and 00 minutes (-00) in GRIB2 format (.grib2).
@@ -166,18 +167,18 @@ Some fields receive limited three-dimensional coverage of 4 levels in the vertic
 
 Isobaric levels (reduced coverage, hPa): 0850, 0700, 0500, 0250.
 
-Additional levels that may be applicable to a given parameter are:
+Additional levels that may be applicable to a given parameter are :
 
-* surface
-* fixed height above ground
-* fixed height below ground
-* thickness between two isobaric levels
-* nominal top of the atmosphere
-* entire atmospheric column
+* Surface
+* Fixed height above ground
+* Fixed height below ground
+* Thickness between two isobaric levels
+* Nominal top of the atmosphere
+* Entire atmospheric column
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
@@ -188,7 +189,7 @@ Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 en
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 
 ## Announcements from the dd_info mailing list 

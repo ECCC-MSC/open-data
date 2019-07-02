@@ -16,7 +16,7 @@ Le SHRPD n’étant pas équipé de son propre système d’assimilation de donn
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
@@ -31,11 +31,11 @@ Les données sont accessibles aux adresses suivantes :
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 024] de l’Est et des Maritimes
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 042] de l’Ouest
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Continental
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Nord à 00Z et 12Z
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18].
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 024] de l’Est et des Maritimes.
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 042] de l’Ouest.
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Continental.
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Nord à 00Z et 12Z.
 
 ## Domaines disponibles
 
@@ -173,12 +173,12 @@ Niveaux isobariques (couverture réduite, hPa) : 0850, 0700, 0500, 0250.
 
 Autres types de niveaux qui pourraient être applicables à certains champs :
 
-* surface
-* hauteur fixe au-dessus du sol
-* profondeur fixe sous le sol
-* épaisseur entre niveaux isobariques
-* sommet théorique de l’atmosphère
-* colonne atmosphérique entière
+* Surface
+* Hauteur fixe au-dessus du sol
+* Profondeur fixe sous le sol
+* Épaisseur entre niveaux isobariques
+* Sommet théorique de l’atmosphère
+* Colonne atmosphérique entière
 
 ## Liste des variables
 

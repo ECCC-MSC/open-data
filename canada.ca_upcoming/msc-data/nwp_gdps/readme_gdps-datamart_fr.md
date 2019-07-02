@@ -13,7 +13,7 @@ Les champs du jeu de données GRIB2 du [Système global de prévision détermini
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -76,12 +76,12 @@ Niveaux isobariques (couverture réduite, hPa): 850, 700, 500, 250.
 
 Autres types de niveaux qui pourraient être applicables à certains champs :
 
-* surface
-* hauteur fixe au-dessus du sol
-* profondeur fixe sous le sol
-* épaisseur entre niveaux isobariques
-* sommet théorique de l’atmosphère
-* colonne atmosphérique entière
+* Surface
+* Hauteur fixe au-dessus du sol
+* Profondeur fixe sous le sol
+* Épaisseur entre niveaux isobariques
+* Sommet théorique de l’atmosphère
+* Colonne atmosphérique entière
 
 ## Liste des variables
 
@@ -104,7 +104,6 @@ Notes :
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca
-
 
 ## Annonces de la liste de diffusion dd_info 
 

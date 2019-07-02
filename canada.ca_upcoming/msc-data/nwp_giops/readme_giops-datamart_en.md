@@ -24,29 +24,29 @@ The time in the file is encoded as the time in units of seconds elapsed since Ja
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable netCDF file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weather.gc.ca/model_giops/netcdf
 
 A history of 5 days of forecast is kept in this directory.
 
-* Files containing data on the latlon0.2x0.2 grid can be found at the following address:
+* Files containing data on the latlon0.2x0.2 grid can be found at the following address :
 
 http://dd.weather.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/
 
-* Files containing data on the ps5km60N grid can be found at the following address:
+* Files containing data on the ps5km60N grid can be found at the following address :
 
 http://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
 
-where:
+where :
 
-* __n__ : number of spatial dimensions of the forecast fields [2 or 3]
-* __HH__ : Start hour of model run in UTC [00,12]
-* __hhh__ : forecast hour: every 3 hours [000, 003, ..., 240] for N=2  and every 24 hours [000, 024, ..., 240] for N=3
+* __n__ : Number of spatial dimensions of the forecast fields [2 or 3].
+* __HH__ : Start hour of model run in UTC [00,12].
+* __hhh__ : Forecast hour: every 3 hours [000, 003, ..., 240] for N=2  and every 24 hours [000, 024, ..., 240] for N=3.
 
 Note that because the forecast hour 0 at 00Z files are based on the analysis rather than the forecast, a reduced set of
 variables is provided at this forecast hour compared to other forecast hours.
@@ -57,26 +57,26 @@ The files have the following nomenclature:
 
 * CMC_giops_Variable_LevelType_Level_ProjectionResolution_TimeMean_YYYYMMDDHH_FileTypehhh.nc
 
-where:
+where :
 
-* __CMC__ : constant string indicating the data source (Canadian Meteorological Centre)
-* __giops__ : constant string indicating the forecasting system that generated the data (GIOPS)
-* __Variable__ : name of forecast variable available in the file 
-* __LevelType__ : level type taking one of the values: sfc, depth
-* __Level__ : level value; 0 for the sfc (surface) level and either 0.5 (metres) or "all" (all model depths) for depth
-level type
-* __Projection__ : grid mapping (projection) taking one of the values: latlon, ps
-* __Resolution__ : resolution taking one of the values: 0.2x0.2, 5km60N; 0.2x0.2 stands for 0.2-degree resolution in both
-the latitudinal and longitudinal directions, whereas 5km60N stands for 5-km resolution at 60°N latitude
+* __CMC__ : Constant string indicating the data source (Canadian Meteorological Centre).
+* __giops__ : Constant string indicating the forecasting system that generated the data (GIOPS).
+* __Variable__ : Name of forecast variable available in the file.
+* __LevelType__ : Level type taking one of the values: sfc, depth.
+* __Level__ : Level value; 0 for the sfc (surface) level and either 0.5 (metres) or "all" (all model depths) for depth
+level type.
+* __Projection__ : Grid mapping (projection) taking one of the values: latlon, ps.
+* __Resolution__ : Resolution taking one of the values: 0.2x0.2, 5km60N; 0.2x0.2 stands for 0.2-degree resolution in both.
+the latitudinal and longitudinal directions, whereas 5km60N stands for 5-km resolution at 60°N latitude.
 * __TimeMean__ : For forecast hours greater than 0, this takes either the value 3h-mean or 24h-mean and indicates that
 the variable is a time mean calculated over the specified time interval (3 hours for 3h, 24 hours for 24h).  Note
 that the validity time of the forecast variable is set at the end of the time averaging period.  For forecast hour 0
 this string is null (i.e. the fields provided are not time-averaged and are said to be valid at 00Z).
-* __YYYYMMDD__ : year, month and day of the beginning of the forecast
-* __HH__ : Start hour of model run in UTC [00,12] 
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
+* __HH__ : Start hour of model run in UTC [00,12].
 * __FileTypehhh__ : For forecast hours greater than 0, FileType equals P and hhh is the forecast hour [003, 006, ..., 240].
 For forecast hour 0 at run 00Z, FileType equals Anal and hhh equals 000.
-* __nc__ : constant string indicating the NetCDF format
+* __nc__ : Constant string indicating the NetCDF format.
 
 Example of forecast file name:
 CMC_giops_votemper_depth_0.5_latlon0.2x0.2_3h-mean_2016020800_P036.nc
@@ -97,42 +97,42 @@ CF-aware tools: Panoply (version 4.2.2) and IDV (version 5.2).
 
 ## List of variables
 
-List of variables (forecast fields for forecast hours greater than 0) available in the 2D files:
+List of variables (forecast fields for forecast hours greater than 0) available in the 2D files :
 
-* __votemper__ : Potential temperature of sea water at the first model level
-* __vosaline__ : Sea water salinity at the first model level
-* __vozocrtx__ : X-component of water velocity at the first model level
-* __vomecrty__ : Y-component of water velocity at the first model level
-* __sossheig__ : Sea surface height with respect to the geoid
-* __somixhgt__ : Turbocline depth
-* __sokaraml__ : Mixed layer depth based on a density criterion
-* __iiceconc__ : Sea ice fraction
-* __iicevol__ : Volume of sea ice per unit grid cell area
-* __itzocrtx__ : X-component of sea ice velocity
-* __itmecrty__ : Y-component of sea ice velocity
-* __isnowvol__ : Volume of snow on sea ice per unit grid cell area
-* __iicesurftemp__ : Surface temperature of sea ice/snow
-* __iicepressure__ : Vertically integrated ice internal pressure
-* __iicestrength__ : Vertically integrated compressive ice strength
+* __votemper__ : Potential temperature of sea water at the first model level.
+* __vosaline__ : Sea water salinity at the first model level.
+* __vozocrtx__ : X-component of water velocity at the first model level.
+* __vomecrty__ : Y-component of water velocity at the first model level.
+* __sossheig__ : Sea surface height with respect to the geoid.
+* __somixhgt__ : Turbocline depth.
+* __sokaraml__ : Mixed layer depth based on a density criterion.
+* __iiceconc__ : Sea ice fraction.
+* __iicevol__ : Volume of sea ice per unit grid cell area.
+* __itzocrtx__ : X-component of sea ice velocity.
+* __itmecrty__ : Y-component of sea ice velocity.
+* __isnowvol__ : Volume of snow on sea ice per unit grid cell area.
+* __iicesurftemp__ : Surface temperature of sea ice/snow.
+* __iicepressure__ : Vertically integrated ice internal pressure.
+* __iicestrength__ : Vertically integrated compressive ice strength.
 
-List of variables (forecast fields for forecast hours greater than 0) available in the 3D files:
+List of variables (forecast fields for forecast hours greater than 0) available in the 3D files :
 
-* __votemper__ : Potential temperature of sea water
-* __vosaline__ : Sea water salinity
-* __vozocrtx__ : X-component of water velocity
-* __vomecrty__ : Y-component of water velocity
+* __votemper__ : Potential temperature of sea water.
+* __vosaline__ : Sea water salinity.
+* __vozocrtx__ : X-component of water velocity.
+* __vomecrty__ : Y-component of water velocity.
 
-List of variables (analysed fields for forecast hour 0) available in the 2D files:
+List of variables (analysed fields for forecast hour 0) available in the 2D files :
 
-* __sossheig__ : Sea surface height with respect to the geoid
-* __iiceconc__ : Sea ice fraction
+* __sossheig__ : Sea surface height with respect to the geoid.
+* __iiceconc__ : Sea ice fraction.
 
-List of variables (analysed fields for forecast hour 0) available in the 3D files:
+List of variables (analysed fields for forecast hour 0) available in the 3D files :
 
-* __votemper__ : Potential temperature of sea water at the first model level
-* __vosaline__ : Sea water salinity at the first model level
-* __vozocrtx__ : X-component of water velocity at the first model level
-* __vomecrty__ : Y-component of water velocity at the first model level
+* __votemper__ : Potential temperature of sea water at the first model level.
+* __vosaline__ : Sea water salinity at the first model level.
+* __vozocrtx__ : X-component of water velocity at the first model level.
+* __vomecrty__ : Y-component of water velocity at the first model level.
 
 Note that since forecast hour 0 fields at 00Z are not time-averaged, one can simply extract the surface
 level of votemper, vosaline, vozocrtx and vomecrty from the 3D files to obtain the corresponding

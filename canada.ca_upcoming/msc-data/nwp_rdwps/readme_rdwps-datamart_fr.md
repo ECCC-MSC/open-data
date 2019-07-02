@@ -14,12 +14,12 @@ Le [Système Régional de Prévision Déterministe de Vague (SRPDV)](readme_rdwp
 
 Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années. 
 
-Ce système comprend quatre domaines:
+Ce système comprend quatre domaines :
 
-* Lac Supérieur:      
-* Lac Huron-Michigan: 
-* Lac Érié:  
-* Lac Ontario: 
+* Lac Supérieur     
+* Lac Huron-Michigan 
+* Lac Érié
+* Lac Ontario 
 
 Les quatre domaines ont une résolution spatiale de 1 km(0.0090 deg x 0.0124 deg).
 
@@ -31,7 +31,7 @@ Le WAM (modèle de vague) (WAMDI Groupe 1988, Komen et al. 1994) est un modèle 
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -136,6 +136,7 @@ où :
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de fichier :
+
 CMC_rdwps_lake-ontario_HTSGW_SFC_0_latlon0.0090x0.0124_2017092606_P042.grib2
 
 Le fichier a été créé par le CMC et contient une prévision du Système régional de prévision déterministe de vague. Il contient la hauteur significative des vagues (HTSGW) du lac Ontario au niveau de la surface sur une grille lat/long à une résolution de 0,0090 degré par 0,0124 degré. Il débute le 26 septembre 2017 à 06Z (2017092606). Il contient l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
@@ -144,9 +145,9 @@ Le fichier a été créé par le CMC et contient une prévision du Système rég
 
 Niveaux qui pourraient être applicables à certains champs :
 
-* surface
-* hauteur fixe au-dessus du sol
-* niveau de la mer
+* Surface
+* Hauteur fixe au-dessus du sol
+* Niveau de la mer
 
 ## Liste des variables
 

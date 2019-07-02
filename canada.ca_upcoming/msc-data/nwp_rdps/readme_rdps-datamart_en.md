@@ -10,23 +10,23 @@ Under the Regional Deterministic Prediction System (RDPS), the numerical weather
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
 The data can be accessed at the following URLs: http://dd.weather.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
 
-_where_ :
+where :
 
-* __HH__: model run start, in UTC [00,12]
-* __hhh__: forecast hour [000,001,002,...,048]
+* __HH__: Model run start, in UTC [00,12]
+* __hhh__: Forecast hour [000,001,002,...,048]
 
 
 ## Technical specification of the grid
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)
 
-Values given to the parameters of the stereographic polar grid:
+Values given to the parameters of the stereographic polar grid :
 
 | Parameter | Value |
 | ------ | ------ |
@@ -41,26 +41,28 @@ There is also a pre-formatted [ASCII file containing the geographical coordinate
 
 ## Filename nomenclature 
 
-Note: all hours are in UTC.
+Note : all hours are in UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2
 
-_where_:
+where :
 
-* __CMC__: constant string indicating that the data is from the Canadian Meteorological Centre
-* __reg__: constant string indicating that the data is from the RDPS
-* __Variable__: Variable type included in this file. To consult a complete list, refer to the variables section.
-* __LevelType__: Level type. To consult a complete list, refer to the variables section.
-* __Level__: Level value. To consult a complete list, refer to the variables section.
-* __ps10km__: constant string indicating that the projection used is polar-stereographic at 10km resolution.
-* __YYYYMMDD__: Year, month and day of the beginning of the forecast.
-* __HH__: UTC run time [00,12]
-* __Phhh__: P is a constant character. hhh is the forecast hour [000,001,002,...,048]
-* __grib2__: constant string indicating the GRIB2 format is used
+* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
+* __reg__ : constant string indicating that the data is from the RDPS
+* __Variable__ : Variable type included in this file. To consult a complete list, refer to the variables section.
+* __LevelType__ : Level type. To consult a complete list, refer to the variables section.
+* __Level__ : Level value. To consult a complete list, refer to the variables section.
+* __ps10km__ : constant string indicating that the projection used is polar-stereographic at 10km resolution.
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
+* __HH__ : UTC run time [00,12]
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000,001,002,...,048]
+* __grib2__ : constant string indicating the GRIB2 format is used
 
-Example of file name: CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
+Example of file name : 
+
+CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the RDPS. The data in the file start on September 13th 2010 at 06Z (2010091306). It contains the dew point depression (DEPR) at the isobaric level 1015 mb (ISBL_1015) on a polar-stereographic at 10km resolution (ps10km) for the forecast hour 27 (P027) in GRIB2 format (.grib2).
 
@@ -74,23 +76,23 @@ Some fields receive limited three-dimensional coverage of 4 levels in the vertic
 
 Isobaric levels (reduced coverage, hPa): 850, 700, 500, 250.
 
-Additional levels that may be applicable to a given parameter are:
+Additional levels that may be applicable to a given parameter are :
 
-* surface
-* fixed height above ground
-* fixed height below ground
-* thickness between two isobaric levels
-* nominal top of the atmosphere
-* entire atmospheric column
+* Surface
+* Fixed height above ground
+* Fixed height below ground
+* Thickness between two isobaric levels
+* Nominal top of the atmosphere
+* Entire atmospheric column
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
 * [0h forecast](https://weather.gc.ca/grib/REG_HR/REGIONAL_ps10km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/REG_HR/REGIONAL_ps10km_PNONZERO_deterministic_e.html)
 
-Notes:
+Notes :
 
 * u (UGRD) and v (VGRD) components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates. Please refer to Code Table 7 of the GRIB standard for further details.
 * Radiation fluxes parameters NLWRS_SFC, DSWRF_NTAT, and DLWRF_NTAT are encoded as accumulated values, as per value 4 of the Time Range Indicator (Code Table 5 of the GRIB format standard). This changes the unit from Watts per square metre to Joules per square meter.

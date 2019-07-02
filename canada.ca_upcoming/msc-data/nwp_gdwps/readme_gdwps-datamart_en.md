@@ -10,18 +10,18 @@ This page describes the [Global Deterministic Wave Prediction System](readme_gdw
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
 
-The data can be accessed at the following address:
+The data can be accessed at the following address :
 
 * https://dd.weather.gc.ca/model_wave/ocean/global/grib2/HH/
 
-where:
+where :
 
-* __HH__ : model run start, in UTC [00 or 12]
+* __HH__ : Model run start, in UTC [00 or 12]
 
 A history of 24 hours is maintained in this directory.
 
@@ -31,33 +31,34 @@ NOTE: ALL HOURS ARE IN UTC.
 
 CMC_gdwps_domain_Variable_LevelType_level_latlondddxddd_YYYYMMDDHH_Phhh.grib2
 
-where:
+where :
 
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
-* __gdwps__ : constant string indicating that the data is from the Global Deterministic Wave Prediction System
-* __domain__ : constant string indicating which domain that the data is from
-* __Variable__ : Variable type included in this file.
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
+* __gdwps__ : Constant string indicating that the data is from the Global Deterministic Wave Prediction System
+* __domain__ : Constant string indicating which domain that the data is from
+* __Variable__ : Variable type included in this file
 * __LevelType__ : Level type.
 * __Level__ : Level value.
-* __latlon0.dx0.dd__ : constant string indicating that the projection used is lat/long at 0.dd x 0.dd degrees resolution
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
+* __latlon0.dx0.dd__ : Constant string indicating that the projection used is lat/long at 0.dd x 0.dd degrees resolution
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
 * __HH__ : UTC run time [00, 12]
 * __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048, 051, ..., 120]
-* __grib2__ : constant string indicating the GRIB2 format is used
+* __grib2__ : Constant string indicating the GRIB2 format is used
 
-Example of file name:
+Example of file name :
+
 CMC_gdwps_global_HTSGW_SFC_0_latlon0.25x0.25_2017092112_P096.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the Global Deterministic Wave Prediction System. The data in the file start on September 21th 2017 at 12Z (2017092112). It contains the significant wave height (HTSGW) for the world at the surface (SFC_0) on a lat/long grid at 0.25 degree x 0.25 degree resolution for the forecast hour 096 (P096) in GRIB2 format (.grib2).
 
 ## Levels
 
-Levels that may be applicable to a given parameter are:
+Levels that may be applicable to a given parameter are :
 
-* surface
-* fixed height above ground
+* Surface
+* Fixed height above ground
 
-Note: Swell parameters no longer refer to the total swell, they now refer to the primary swell. At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
+Note : Swell parameters no longer refer to the total swell, they now refer to the primary swell. At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
 
 ## Variable List
 
@@ -79,13 +80,13 @@ __This table provides, for each GRIB2 parameter number: a short description, an 
 |10/0/8 |	Significant height of primary swell |	SWELL |	SFC_0 |	m|
 |10/0/9 |	Peak period of primary swell 	|SWPER |	SFC_0 |	s|
 
-NOTES:
+Note :
 
 * u and v components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates.
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

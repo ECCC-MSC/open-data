@@ -31,19 +31,19 @@ WAM (WAve Model) (WAMDI Group 1988, Komen et al. 1994) is a third generation spe
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 * https://dd.weather.gc.ca/model_wave/great_lakes/erie/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/great_lakes/huron-michigan/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/great_lakes/ontario/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/great_lakes/superior/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2/HH/
 
-where:
-* __HH__ : model run start, in UTC [00, 06, 12, 18]
+where :
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
 ## Available Domains 
 
@@ -116,36 +116,37 @@ Table lists the values of various parameters of the Gulf of St Lawrence :
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 CMC_rdwps_domain_Variable_LevelType_level_latlondddxddd_YYYYMMDDHH_Phhh.grib2
 
-where:
+where :
 
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
-* __rdwps__ : constant string indicating that the data is from the Regional Deterministic Wave Prediction System
-* __domain__ : constant string indicating which domain that the data is from
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
+* __rdwps__ : Constant string indicating that the data is from the Regional Deterministic Wave Prediction System
+* __domain__ : Constant string indicating which domain that the data is from
 * __Variable__ : Variable type included in this file.
 * __LevelType__ : Level type.
 * __Level__ : Level value.
-* __latlondddxddd__ : constant string indicating that the projection used is lat/long at ddd x ddd degrees resolution
+* __latlondddxddd__ : Constant string indicating that the projection used is lat/long at ddd x ddd degrees resolution
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
 * __HH__ : UTC run time [00, 06, 12, 18]
 * __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048]
-* __grib2__ : constant string indicating the GRIB2 format is used
+* __grib2__ : Constant string indicating the GRIB2 format is used
 
-Example of file name:
+Example of file name :
+
 CMC_rdwps_lake-ontario_HTSGW_SFC_0_latlon0.0090x0.0124_2012032106_P042.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the Regional Deterministic Wave Prediction System. The data in the file start on March 21th 2012 at 06Z (2012032106). It contains the significant wave height (HTSGW) for Lake Ontario at the surface (SFC_0) on a lat/long grid at 0.0090 degree x 0.0124 degree resolution for the forecast hour 042 (P042) in GRIB2 format (.grib2).
 
 ## Levels
 
-Levels that may be applicable to a given parameter are:
+Levels that may be applicable to a given parameter are :
 
-* surface
-* fixed height above ground
-* mean sea level
+* Surface
+* Fixed height above ground
+* Mean sea level
 
 ## List of variables
 
@@ -166,7 +167,7 @@ Levels that may be applicable to a given parameter are:
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 
