@@ -62,5 +62,5 @@ Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'anno
 
 ## Soutien
 
-Le serveur Datamart du SMC est opérationnel 24/7. Le soutien aux utilisateurs est fourni dans la mesure du possible pendant les heures normales de bureau. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://www.weather.gc.ca/mainmenu/contact_us_f.html).
+Le serveur Datamart du SMC est opérationnel 24/7. Le soutien aux utilisateurs est fourni dans la mesure du possible pendant les heures normales de bureau. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 

@@ -65,4 +65,4 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
 
 ## Support
 
-Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à [communiquer avec nous](https://www.meteo.gc.ca/mainmenu/contact_us_f.html).
+Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
