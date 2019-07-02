@@ -4,13 +4,13 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > PAC sur le Datamart du SMC
 
-# Données d'avertissements météorologiques XML dans le format du Protocole d'alerte commun (PAC)
+# Données d'avertissements météorologiques XML dans le format du Protocole d'Alerte Commun (PAC)
 
 Cette page décrit les [données d'avertissements météorologiques dans le format du Protocole d'alerte commun (PAC)](readme_alerts_fr.md) disponibles en format XML.
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
@@ -18,13 +18,13 @@ Les __bulletins sont disponibles__ à cette adresse:
 
 https://dd.meteo.gc.ca/alerts/cap/EEEE/hh/
 
-avec:
+avec :
 
-* YYYYMMDD: jour de la transmission de l'avertissement.
+* __YYYYMMDD__ : jour de la transmission de l'avertissement.
 
-* EEEE: Code de 4 lettres du bureau responsable, excepté les désignations LAND ou WATR réservées aux alertes de tornade ou d'orage violent.
+* __EEEE__ : Code de 4 lettres du bureau responsable, excepté les désignations LAND ou WATR réservées aux alertes de tornade ou d'orage violent.
 
-* hh: heure de transmission de l'avertissement (UTC).
+* __hh__ : heure de transmission de l'avertissement (UTC).
 
 * Les fichiers sont regroupés dans une arborescence basée sur la date et le code du bureau responsable (voir note1) de l'alerte. Font exception les alertes de tornade et d'orage violent qui sont rassemblées, selon la désignation LAND ou WATR (voir note2) plutôt que selon le bureau responsable.
 
@@ -36,11 +36,11 @@ avec:
 
 Un historique des données de un mois est conservé dans ce répertoire.
 
-Un ensemble de __fichiers en format Shapefile contenant les informations géographiques des emplacement des prévisions__, pour tous les messages en format PAC, peut être trouvé dans ce répertoire:
+Un ensemble de __fichiers en format Shapefile contenant les informations géographiques des emplacement des prévisions__, pour tous les messages en format PAC, peut être trouvé dans ce répertoire :
 
 https://dd.meteo.gc.ca/meteocode/geodata/
 
-Les ensembles de fichiers Shapefile a cet endroit sont les mêmes qui sont utilisés dans l'environnement opérationnel où les avertissements d'ECCC sont créés. Les ensembles Shapefiles ont des numéros de version afin de suivre l'évolution des emplacements utilisés dans cet environnement.
+Les ensembles de fichiers Shapefile à cet endroit sont les mêmes qui sont utilisés dans l'environnement opérationnel où les avertissements d'ECCC sont créés. Les ensembles Shapefiles ont des numéros de version afin de suivre l'évolution des emplacements utilisés dans cet environnement.
 
 ## Nomenclature des noms de fichiers 
 
@@ -50,14 +50,14 @@ __Les fichiers suivent la nomenclature :__
 
 T_BBBBNN_C_EEEE_YYYYMMDDhh_##########.cap
 
-avec:
+avec :
     
-* T: caractère constant. Spécification littérale du manuel WMO-386 comme préfixe 
+* __T__ : caractère constant. Spécification littérale du manuel WMO-386 comme préfixe 
   pour un fichier suivant cette convention de nom.          
-* BBBBNN (pour les alertes de tornades et orages violents): 4 lettres et 2 chiffres représentant 2 lettres pour le code de province, de plan d'eau ou de territoire, 2 lettres pour le code de pays et 2 codes numériques digitaux fixés à 00 pour suivre le format de la structure de fichier. Ex: ABCN00.
-* BBBBNN (pour toutes les autres alertes): 4 lettres et 2 nombres représentant l'en-tête traditionnelle des bulletins WMO sur les circuits de transmission WMO. Ex: WWCN11.
+* __BBBBNN (pour les alertes de tornades et orages violents)__ :  4 lettres et 2 chiffres représentant 2 lettres pour le code de province, de plan d'eau ou de territoire, 2 lettres pour le code de pays et 2 codes numériques digitaux fixés à 00 pour suivre le format de la structure de fichier. Ex: ABCN00.
+* __BBBBNN (pour toutes les autres alertes)__ : 4 lettres et 2 nombres représentant l'en-tête traditionnelle des bulletins WMO sur les circuits de transmission WMO. Ex: WWCN11.
 
-  Dans le cas où les 2 lettres représentent un code de province ou de plan d'eau, la liste des codes de province ou de territoire comprend:
+  Dans le cas où les 2 lettres représentent un code de province ou de plan d'eau, la liste des codes de province ou de territoire comprend :
   
    * BC – Colombie-Britannique
    * AB - Alberta
@@ -77,23 +77,23 @@ avec:
    * AT - Eaux de l'Atlantique
    * AC - Eaux de l'Arctique
  
-* C: caractère constant. Spécifié par l'OMM comme préfixe pour CCCC.                                     
-* EEEE: code de 4 lettres du bureau responsable (CWAO, CWTO, etc.), excepté les désignations LAND ou WATR réservées aux alertes de tornade ou d'orage violent.
-* YYYYMMDDhhmm: date et heure de transmission de l'avertissement (UTC). 
-* '##########': les 10 chiffres numériques identifiant le message PAC, trouvés dans le fichier, permettant d'en assurer l'unicité
+* __C__ : caractère constant. Spécifié par l'OMM comme préfixe pour CCCC.                                     
+* __EEEE__ : code de 4 lettres du bureau responsable (CWAO, CWTO, etc.), excepté les désignations LAND ou WATR réservées aux alertes de tornade ou d'orage violent.
+* __YYYYMMDDhhmm__ : date et heure de transmission de l'avertissement (UTC). 
+* **'##########'** : les 10 chiffres numériques identifiant le message PAC, trouvés dans le fichier, permettant d'en assurer l'unicité
 
 **Exemples de nomenclature de fichiers** :
 
-* T_WWCN11_C_CWTO_201608041031_8263481729.cap: bulletin d'avertissement de type WWCN11 pour le 
+* **T_WWCN11_C_CWTO_201608041031_8263481729.cap** : bulletin d'avertissement de type WWCN11 pour le 
   bureau responsable CWTO (Centre de prévision des tempêtes de l'Ontario). 
   L'alerte a été transmise le 4 août 2016 à 1031 secondes UTC.
 
-* T_ABCN00_C_LAND_201608041521_0615296639.cap: bulletin d'avertissement de type LAND pour la 
+* **T_ABCN00_C_LAND_201608041521_0615296639.cap** : bulletin d'avertissement de type LAND pour la 
   province d'Alberta (AB). Cette alerte pouvait être soit un avertissement de tornade ou 
   d'orage violent. 
   L'alerte a été transmise le 4 août 2016 à 1521 secondes UTC.
 
-* T_QCCN00_C_WATR_201608041521_1920353215.cap: bulletin d'avertissement de type WATR pour la 
+* **T_QCCN00_C_WATR_201608041521_1920353215.cap** :  bulletin d'avertissement de type WATR pour la 
   province de Québec (QC). Cette alerte était un avertissement de tornade (les alertes 
   d'orage violent ne sont pas émises sur les plans d'eau).
   L'alerte a été transmise le 4 août 2016 à 1521 secondes UTC.

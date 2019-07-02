@@ -21,11 +21,11 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
-_Upcoming._
+Upcoming.
 
 ## Technical documentation
 

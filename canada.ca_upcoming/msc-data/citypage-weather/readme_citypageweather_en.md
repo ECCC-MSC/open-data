@@ -23,7 +23,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
@@ -31,7 +31,7 @@ The [metadata of the weather forecasts per city are available on the Open Govern
 
 ## Technical documentation
 
-The [weather Forecast Guide](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/guide.html) includes information on the issuing time of forecasts,time period covered by forecast, determination of forecast regions, forecast time period terminology, information included in the forecast, and forecast revision.
+The [weather forecast guide](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/guide.html) includes information on the issuing time of forecasts,time period covered by forecast, determination of forecast regions, forecast time period terminology, information included in the forecast, and forecast revision.
 
 ## Change log
 

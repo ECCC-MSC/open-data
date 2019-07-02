@@ -12,11 +12,11 @@ Les fichiers des données meteocode en format CSV sont créés à partir des fic
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV.
 
-Les données pour les différentes régions du pays sont disponibles aux  adresses suivantes:
+Les données pour les différentes régions du pays sont disponibles aux  adresses suivantes :
 
 * https://dd.meteo.gc.ca/meteocode/mtm/csv/
 * https://dd.meteo.gc.ca/meteocode/ont/csv/
@@ -30,37 +30,37 @@ Un historique des données de 24 heures est conservé dans ces répertoires.
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
-Les noms de fichiers ont la forme:
+Les noms de fichiers ont la forme suivante :
 
 YYYY-MM-DDTHH-MM-SSZ_FPAANN_rRRRR_BB.csv
 
-où:
+où :
 
-* YYYY-MM-DDTHH-MM-SSZ: date d'émission de la prévision. En format ISO 8601.
-* FP: chaîne de caractères constante, signifiant prévision publique
+* __YYYY-MM-DDTHH-MM-SSZ__ : Date d'émission de la prévision. En format ISO 8601.
+* __FP__ : Chaîne de caractères constante, signifiant prévision publique
 (en anglais: Forecast Public).
-* AANN: Voir la section 'Nom de fichier' dans la [documentation des fichiers CMML](readme_meteocode-datamartcsv_fr.md).
-* r: caractère constant indiquant le début du code de région.
-* RRRR: code alphanumérique indiquant la région de prévision publique. Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). 
-* BB: chaîne de caractères indiquant l'élément du temps. Peut prendre
+* __AANN__ : Voir la section 'Nom de fichier' dans la [documentation des fichiers CMML](readme_meteocode-datamartcsv_fr.md).
+* __r__ : Caractère constant indiquant le début du code de région.
+* __RRRR__ : Code alphanumérique indiquant la région de prévision publique. Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). 
+* __BB__ : Chaîne de caractères indiquant l'élément du temps. Peut prendre
 une de ces valeurs: TA (température de l'air), TD (point de rosée), PA (accumulation de précipitation), POP (probabilité de précipitation), WS (vitesse et direction du vent), 
 WG (rafale), CC (couverture nuageuse).
 
 Selon la valeur de AA, le fichier CSV est acheminé dans le répertoire
-selon cette liste:
+selon cette liste :
 
-* QX (Gander,N.F.) --> mtm
-* HX (Halifax,  now Dartmouth ) --> mtm
-* UL (Montréal) --> que
-* QB (Québec)  --> que
-* XK (Rimouski) --> que
-* CN (Canada) --> que
-* TO (Toronto) --> ont
-* WG (Winnipeg) --> pnr
-* NT (Northwest Territories) --> pnr
-* VR (Vancouver) --> pyr
+* QX (Gander,N.F.) - mtm
+* HX (Halifax,  now Dartmouth ) - mtm
+* UL (Montréal) - que
+* QB (Québec)  - que
+* XK (Rimouski) - que
+* CN (Canada) - que
+* TO (Toronto) - ont
+* WG (Winnipeg) - pnr
+* NT (Northwest Territories) - pnr
+* VR (Vancouver) - pyr
 
-Exemple:
+Exemple :
 
 2009-11-17T09-47-00Z_FPXK55_ r74.18_TD.csv
 
@@ -73,7 +73,7 @@ par le bureau de prévision du Québec (FPXK) pour les jours 3 à 7 (55) pour la
 
 La [liste complète des régions de prévisions ainsi que le code associé](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/table_region_code_name.xlsx) est disponible.
 
-Les codes sont séparés par les bureaux de prévision car un même code peut être utilisé par dans plus d'une région, selon
+Les codes sont séparés par les bureaux de prévision car un même code peut être utilisé par dans plus d'une région, selon :
 
     code bulletin, code région, nom_français, nom_anglais
 
@@ -90,16 +90,18 @@ __1. Température de l'air (TA)__
 
 Ce fichier contient les températures de l'air.
 
-La première ligne de ces fichiers contient:
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml'","Valid time | Heure de validité;Air temperature (° Celsius) | Température de l'air (° Celsius)"
+La première ligne de ces fichiers contient :
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
+|Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Air temperature (° Celsius) ; Température de l'air (° Celsius) |
+|-----------|-----------------|----------------|---------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : nom du fichier CMML d'où origine le fichier CSV.
 * Les 2 autres valeurs représentent le contenu des colonnes dans le
-fichier, à savoir:
+fichier, à savoir :
     * Heure de validité de la prévision;
     * Température de l'air en degré Celsius.
 
@@ -107,78 +109,86 @@ __2. Point de rosée (TD)__
 
 Ce fichier contient les valeurs du point de rosée.
 
-La première ligne de ces fichiers contient: 
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml'","Valid time | Heure de validité;Dew point (° Celsius) | Point de rosée (° Celsius)"
+La première ligne de ces fichiers contient : 
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les 2 autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de validité de la prévision;
+ |Region_en ; Region_fr| CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Dew point (° Celsius) ; Point de rosée (° Celsius)|
+ |----------|-----------------------------------------------------|-------------------------------------------|---------------------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : nom du fichier CMML d'où origine le fichier CSV.
+* Les 2 autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de validité de la prévision.
     * Température du point de rosée en degré Celsius.
 
 __3. Accumulation de précipitations (PA)__ 
 
 Ces fichiers contiennent les accumulations et le type de précipitation.
 
-La première ligne de ces fichiers contient: 
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml''","Start | Début;End | Fin;Total accumulation min (mm) | Accumulation totale min (mm);Total accumulation max (mm | Accumulation totale max (mm);Hourly accumulation min (mm) | Accumulation horaire min (mm);Hourly accumulation max (mm) | Accumulation horaire max (mm);Precipitation type | Type de précipitation","","","","",""
+La première ligne de ces fichiers contient : 
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de début de la période d'accumulation;
-    * Heure de fin de la période d'accumulation;
-    * Quantité cumulative inférieure du type de précipitations actuel en mm;
-    * Quantité cumulative supérieure du type de précipitations actuel en mm;
-    * Limite inférieure de la quantité de précipitations en mm;
-    * Limite supérieur de la quantité de précipitations en mm;
-    * Type de précipitations. Peut être parmi ces valeurs:
-        * rain (pluie)
-        * snow (neige)
-        * ice pellet (grésil)
-        * freezing rain (pluie verglaçante)
+ | Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Total accumulation min (mm) ; Accumulation totale min (mm) | Total accumulation max (mm) ; Accumulation totale max (mm) | Hourly accumulation min (mm) ; Accumulation horaire min (mm) | Hourly accumulation max (mm) ; Accumulation horaire max (mm) | Precipitation type ; Type de précipitation |
+ |-----------------------|----------------------------|---------------|-----------|------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : Nom du fichier CMML d'où origine le fichier CSV.
+* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de début de la période d'accumulation.
+    * Heure de fin de la période d'accumulation.
+    * Quantité cumulative inférieure du type de précipitations actuel en mm.
+    * Quantité cumulative supérieure du type de précipitations actuel en mm.
+    * Limite inférieure de la quantité de précipitations en mm.
+    * Limite supérieur de la quantité de précipitations en mm.
+    * Type de précipitations. Peut être parmi ces valeurs :
+        * Rain (pluie)
+        * Snow (neige)
+        * Ice pellet (grésil)
+        * Freezing rain (pluie verglaçante)
 
 __4. Probabilité de précipitation (POP)__ 
 
 Ce fichier contient les probabilités de précipitations.
 
-La première ligne des fichiers contenant les probabilités de précipitation contient:
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml''","Start | Début;End | Fin;Probability of precipitation (%) | Probabilité de précipitation (%)",""
+La première ligne des fichiers contenant les probabilités de précipitation contient :
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de début de la période de la probabilité de précipitation;
-    * Heure de fin de la période de la probabilité de précipitation;
+| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Probability of precipitation (%) ; Probabilité de précipitation (%) |
+|-------------------|---------------------|------------------------|-----------------|----------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : Nom du fichier CMML d'où origine le fichier CSV.
+* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de début de la période de la probabilité de précipitation.
+    * Heure de fin de la période de la probabilité de précipitation.
     * Probabilité de précipitation, en pourcentage.
 
 __5. Vent (WS)__  
 
 Ce fichier contient les valeurs pour la vitesse et la direction du vent.
 
-La première ligne de ces fichiers contient:
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml''","Start | Début;End | Fin; Wind speed min (km/h) | Vitesse du vent min (km/h);Wind speed max (km/h) | Vitesse du vent max (km/h);Wind direction | Direction du vent",""
+La première ligne de ces fichiers contient :
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de début de la période;
-    * Heure de fin de la période;
-    * Vitesse du vent minimale, en km/h;
-    * Vitesse du vent maximale, en km/h;
-    * Chaîne de caractères pour la direction du vent. Peut prendre une des valeurs suivantes:
+| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Wind speed min (km/h) ; Vitesse du vent min (km/h) | Wind speed max (km/h) ; Vitesse du vent max (km/h) | Wind direction ; Direction du vent |
+|----------------|----------------------|---------------------|------------------------|------------------|----------------------|----------------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : Nom du fichier CMML d'où origine le fichier CSV.
+* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de début de la période.
+    * Heure de fin de la période.
+    * Vitesse du vent minimale, en km/h.
+    * Vitesse du vent maximale, en km/h.
+    * Chaîne de caractères pour la direction du vent. Peut prendre une des valeurs suivantes :
         * east
         * nil
         * north (nord)
@@ -202,34 +212,38 @@ __6. Rafale (WG)__
 
 Ce fichier contient les valeurs pour la vitesse des rafales.
 
-La première ligne de ces fichiers contient:
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml''","Start | Début;End | Fin; Wind gust min (km/h) | Vitesse des rafales min (km/h);Wind gust max (km/h) | Vitesse des rafales max (km/h)"
+La première ligne de ces fichiers contient :
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de début de la période;
-    * Heure de fin de la période;
-    * Vitesse des rafales minimale, en km/h;
-    * Vitesse des rafales maximale, en km/h;
+| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Wind gust min (km/h) ; Vitesse des rafales min (km/h) | Wind gust max (km/h) ; Vitesse des rafales max (km/h) | 
+|------------|-----------------|--------------|--------------|--------------|-------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : Nom du fichier CMML d'où origine le fichier CSV.
+* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de début de la période.
+    * Heure de fin de la période.
+    * Vitesse des rafales minimale, en km/h.
+    * Vitesse des rafales maximale, en km/h.
 
 __7. Couverture nuageuse (CC)__
 
 Ce fichier contient la couverture nuageuse en format décimal.
 
-La première ligne de ces fichiers contient:
- " Region_en | Region_fr ; CMML : 'cmml_filename.xml''","Valid time | Heure de validité;Cloud cover (tenth) | Couverture nuageuse (dixième)"
+La première ligne de ces fichiers contient :
 
-où:
-* Region_en: nom anglais de la région de prévision;
-* Region_fr: nom français de la région de prévision;
-* CMML: chaîne de caractères constantes;
-* cmml_filename.xml: nom du fichier CMML d'où origine le fichier CSV;
-* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir:
-    * Heure de validité pour la couverture nuageuse;
+| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Cloud cover (tenth) ; Couverture nuageuse (dixième) |
+|------------|-------------|------------|--------------|
+
+où :
+* **Region_en** : Nom anglais de la région de prévision.
+* **Region_fr** : Nom français de la région de prévision.
+* **CMML** : Chaîne de caractères constantes.
+* **cmml_filename.xml** : Nom du fichier CMML d'où origine le fichier CSV.
+* Les autres valeurs représentent le contenu des colonnes dans le fichier, à savoir :
+    * Heure de validité pour la couverture nuageuse.
     * Couverture nuageuse, en dixième.
 
 ## Support

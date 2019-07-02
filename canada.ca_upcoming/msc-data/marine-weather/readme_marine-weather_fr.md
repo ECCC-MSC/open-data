@@ -12,7 +12,7 @@ Cette page décrit les données et produits des prévisions météorologiques ma
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données XML disponibles sur le Datamart du SMC](readme_marine-weather-datamart_fr.md) 
 
@@ -20,7 +20,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
@@ -28,7 +28,7 @@ Non disponibles.
 
 ## Documentation technique
 
-* [Guide des prévisions météorologiques marines d'Environnement et Changement Climatique Canada](http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2EC4EC51-1)
+* [Guide des prévisions météorologiques marines d'Environnement et Changement climatique Canada](http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2EC4EC51-1)
 * [Renseignements généraux sur les conditions maritimes](https://www.canada.ca/fr/environnement-changement-climatique/services/renseignements-generaux-conditions-maritimes.html)
 
 ## Registre des changements 

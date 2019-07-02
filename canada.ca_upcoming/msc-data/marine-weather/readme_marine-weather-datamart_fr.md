@@ -20,17 +20,17 @@ __Notes__:
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-__Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada:
+__Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada :
 
   https://dd.meteo.gc.ca/marine_weather/xml/REGION
 
 où :
 
- __REGION__ : nom de la région couverte par la prévision marine. Cette région peut prendre une de ces 8 valeurs:
+ __REGION__ : nom de la région couverte par la prévision marine. Cette région peut prendre une de ces 8 valeurs :
  
 * arctic
 * atlantic
@@ -43,28 +43,28 @@ où :
 
 Une [__description des balises et des attributs XML__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
 
-Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse:
+Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse suivante :
 
-http://dd.meteo.gc.ca/marine_weather/schema/
+https://dd.meteo.gc.ca/marine_weather/schema/
 
 ## Nomenclature des noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers XML de prévisions météorologiques marines suivent la nomenclature suivante:
 
 CodeDeSite_L.xml
 
-où:
+où :
 
 * __CodeDeSite__ : code du site pour la région marine ( voir l'URL plus bas )
 * __L__ : lettre indiquant la langue du fichier : f (français) ou e (anglais).
 
 Exemple de nom de fichier :
 
-* m0000001_e.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en anglais
+* m0000001_e.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en anglais.
 
-* m0000001_f.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en français
+* m0000001_f.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en français.
 
 Une [__liste de noms d'emplacements et de codes de sites__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
 

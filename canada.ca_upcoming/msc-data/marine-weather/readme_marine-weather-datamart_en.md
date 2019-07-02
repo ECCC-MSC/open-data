@@ -24,11 +24,11 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-__The marine weather XML files__ are available according to Canadian marine regions, at the following address:
+__The marine weather XML files__ are available according to Canadian marine regions, at the following address :
 
   https://dd.weather.gc.ca/marine_weather/xml/REGION
 
-where:
+where :
 
  __REGION__ : name of the region covered by the forecast.The region name is one of the 8 following values:
  
@@ -43,34 +43,34 @@ where:
 
 [__Tables describing each of the marine weather XML element tags and their associated attributes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
 
-The __XML schemas__ for marine weather data are found in this directory:
+The __XML schemas__ for marine weather data are found in this directory :
 
-http://dd.weather.gc.ca/marine_weather/schema/
+https://dd.weather.gc.ca/marine_weather/schema/
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-The file names have the following nomenclature:
+The file names have the following nomenclature :
 
 RegionNameCode_L.xml
 
-where:
+where :
 
-* __RegionNameCode__ : site code used in the marine region list (see URL below)
-* __L__ : single letter indicating the language of the file. Can be either : f (French) or e (English)
+* __RegionNameCode__ : Site code used in the marine region list (see URL below).
+* __L__ : Single letter indicating the language of the file. Can be either : f (French) or e (English)
 
-Examples of file name:
+Examples of file name :
 
-* m0000001_e.xml - English marine weather XML for area Tuktoyaktuk
+* m0000001_e.xml - English marine weather XML for area Tuktoyaktuk.
 
-* m0000001_f.xml - French marine weather XML for area Tuktoyaktuk
+* m0000001_f.xml - French marine weather XML for area Tuktoyaktuk.
 
 A [__list with location names and RegionNameCodes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

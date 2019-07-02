@@ -13,7 +13,7 @@ It allows to encode according to a specific standard the concepts representing t
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [CSV data available on the MSC Datamart](readme_meteocode-datamartcsv_en.md) 
 * [XML data available on the MSC Datamart](readme_meteocode-datamartxml_en.md) 
@@ -22,11 +22,11 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
-Not available
+Not available.
 
 ## Technical documentation
 
@@ -34,4 +34,4 @@ Not available
 
 ## Change log
 
-Not applicable
+Not applicable.

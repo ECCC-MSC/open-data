@@ -4,15 +4,15 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > PAC
 
-# Données et produits d'avertissements météorologiques dans le format du Protocole d'alerte commun (PAC)
+# Données et produits d'avertissements météorologiques dans le format du Protocole d'Alerte Commun (PAC)
 
-Environnement et Changement Climatique Canada publie des alertes météo lorsque le temps est menaçant pour informer les personnes se trouvant dans les zones touchées afin qu'elles puissent prendre des mesures pour se protéger et protéger leurs biens. Le type d'alerte utilisé dépend de la gravité et du moment de l'événement et inclut : les avertissements, les veilles, les avis et les bulletins. Les avertissements sont habituellement émis entre 6 et 24 heures à l'avance, même si certains phénomènes violents (par exemple les orages et les tornades) peuvent se produire rapidement, avec un avis de moins d'une demi-heure. 
+Environnement et Changement climatique Canada publie des alertes météo lorsque le temps est menaçant pour informer les personnes se trouvant dans les zones touchées afin qu'elles puissent prendre des mesures pour se protéger et protéger leurs biens. Le type d'alerte utilisé dépend de la gravité et du moment de l'événement. Ce qui inclut : les avertissements, les veilles, les avis et les bulletins. Les avertissements sont habituellement émis entre 6 et 24 heures à l'avance, même si certains phénomènes violents (par exemple les orages et les tornades) peuvent se produire rapidement, avec un avis de moins d'une demi-heure. 
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données XML disponibles sur le Datamart du SMC](readme_alerts-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Beta](../../msc-geomet/readme_fr.md)
@@ -21,11 +21,11 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
-_À venir._
+À venir.
 
 ## Documentation technique
 
