@@ -17,7 +17,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 * [Données shapefile disponibles sur le Datamart du SMC](readme_hurricane-datamart_fr.md) 
 * [Data available via geospatial web services GeoMet-Météo](../../msc-geomet/readme_en.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est disponible.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 
@@ -30,7 +30,7 @@ Non disponible.
 ## Produits
 
 * [Cartes des trajectoires d'ouragans](https://meteo.gc.ca/hurricane/track_f.html)
-* [Centre canadien de prévisions des ouragans : prévisions et produits](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html)
+* [Centre canadien de prévisions des ouragans : prévisions et produits](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-faits-ouragans/produits.html)
 
 ## Documentation technique
 
