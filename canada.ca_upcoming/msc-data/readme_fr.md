@@ -56,7 +56,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Données climatiques
 
-Les données climatiques canadiennes sont une composante du [Centre canadien des services climatologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
+Les données climatiques canadiennes sont une composante du [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
 
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
 * [Données climatiques historiques sur grille canadienne (CanGRD)](climate_cangrd/readme_cangrd_fr.md)
