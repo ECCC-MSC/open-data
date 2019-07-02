@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > PAC
 
-# Donnees et produits d'avertissements météorologiques dans le format du Protocole d'alerte commun (PAC)
+# Données et produits d'avertissements météorologiques dans le format du Protocole d'alerte commun (PAC)
 
 Environnement et Changement Climatique Canada publie des alertes météo lorsque le temps est menaçant pour informer les personnes se trouvant dans les zones touchées afin qu'elles puissent prendre des mesures pour se protéger et protéger leurs biens. Le type d'alerte utilisé dépend de la gravité et du moment de l'événement et inclut : les avertissements, les veilles, les avis et les bulletins. Les avertissements sont habituellement émis entre 6 et 24 heures à l'avance, même si certains phénomènes violents (par exemple les orages et les tornades) peuvent se produire rapidement, avec un avis de moins d'une demi-heure. 
 
