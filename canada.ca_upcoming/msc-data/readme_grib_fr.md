@@ -29,7 +29,7 @@ Le Service météorologique du Canada ne distribue pas publiquement de logiciel 
 
 Décodage et manipulation :
 * [wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/)
-** [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
+* [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
 * [GDAL](https://gdal.org/drivers/raster/grib.html)
     
 Visualisation et interpolation :
