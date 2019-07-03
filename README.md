@@ -188,27 +188,31 @@ TO VALIDATE
 The deployment of the MSC Open Data Documentation to GitHub requires a user to have write access to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
 
 ### Install Conda and create mkdocs virtual environment
+
 To install Conda, please choose a location in your work environment that has a sufficient amount of disk space. It is not recommended that you install Conda in your home directory due to limited diskspace allocated to this directory.
 
-1. Download [miniconda3](https://docs.conda.io/en/latest/miniconda.html) by clicking [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
-2. To install, navigate to the folder containing the downloaded file and run `bash Miniconda3-latest-Linux-x86_64.sh`.
-3. Follow the instructions, and install it somewhere where you have a lot of free disk space, not in your home!
-4. Start a new terminal session so you can access conda commands.
-5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default.
-6. Activate conda with `conda activate`.
-7. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`.
+1. Download [miniconda3](https://docs.conda.io/en/latest/miniconda.html) by clicking [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
+2. To install, navigate to the folder containing the downloaded file and run `bash Miniconda3-latest-Linux-x86_64.sh`
+3. Follow the instructions, and install it somewhere where you have a lot of free disk space, not in your home! When asked about running the `conda init`, set to `yes`
+4. Start a new terminal session so you can access conda commands
+5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
+6. Activate conda with `conda activate`
+7. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
 8. Use pip to install the mkdocs package: `pip install mkdocs`:
-9. You can deactivate the environment with `conda deactivate`.
+9. You can deactivate the environment with `conda deactivate`
  
 ### Clone GitLab ec-msc/open-data repository
+
 To prepare the documentation for deployment on GitHub, you will need to have a local copy of the repository on your computer. Navigate to the folder where you would like to keep this copy and and clone the GitLab open-data repository with: `git clone https://gccode.ssc-spc.gc.ca/ec-msc/open-data.git`. 
 
 Now that you have a local copy of the repository, we will set the repository's upstream location (the GitHub version of the documentation) Navigate into the newly created local repository with `cd open-data` and run `git remote add upstream https://github.com/ECCC-MSC/open-data.git`.
 
 ### Clone GitHub eccc-msc/open-data repository
-We will also need to clone the GitHub eccc-msc/open-data repository locally. This will allow us to retrieve the last tagged releases and create the GitHub pages branch with mkdocs. To clone the GitHub repository: `git clone https://github.com/ECCC-MSC/open-data.git`: 
+
+We will also need to clone the GitHub eccc-msc/open-data repository locally at another location. This will allow us to retrieve the last tagged releases and create the GitHub pages branch with mkdocs. To clone the GitHub repository: `git clone https://github.com/ECCC-MSC/open-data.git`. 
 
 ### Checkout deploy branch, update from master, squash commits and tag for release
+
 We use the deploy branch to prepare a branch that will only contain a single commit for all changes made since the previously published version on GitHub. 
 
 1. Navigate to your local GitLab ec-msc/open-data repository. Checkout the master branch (`git checkout master`) and pull all the lastest changes from the remote master branch (`git pull origin master`):
@@ -219,6 +223,7 @@ We use the deploy branch to prepare a branch that will only contain a single com
 6. Push the updated deploy branch and the new tag to the upstream repository (GitHub): `git push upstream deploy` and `git push upstream <tagname>`.
 
 ### Deploy documentation on GitHub with mkdocs
+
 Your new deploy branch should now be updated and available on the open-data GitHub repository. Create a pull request in GitHub to merge the deploy branch into the master branch. 
 
 1. Navigate to your local GitHub eccc-msc/open-data repository and pull the master branch that you finished merging: `git pull origin master`.

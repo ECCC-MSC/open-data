@@ -92,7 +92,7 @@ Une requête WMS GetFeatureInfo permet de récupếrer les données brutes pour 
 | VERSION         | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit `1.3.0`|
 | REQUEST         | Le type de requête, soit `GetFeatureInfo`|
 | LAYERS          | L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#getcapabilities)|
-| CRS (version 1.3.0) ou SRS (WMS version 1.1.0) | Le système de coordonnées cartographiques (CRS) à utiliser pour la requête. **Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé**|
+| CRS (version 1.3.0) ou SRS (WMS version 1.1.0) | Le système de coordonnées cartographiques (CRS) à utiliser pour la requête. **Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé** |
 | BBOX            | L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 *et avec la projection EPSG:4326*, l'ordre des coordonnées est `minY,minX,maxY,maxX`. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est `minX,minY,maxX,maxY`|
 | FORMAT          | Le format de données pour l'image désirée. Les valeurs possibles pour ce paramètre sont : `image/jpeg` ou `image/png`|
 | HEIGHT          | La hauteur en pixels de l'image associée|
