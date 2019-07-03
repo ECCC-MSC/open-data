@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_fr.md) > Données du SMC
+[TdM](../readme_fr.md) > Données du SMC
 
 
 # Données ouvertes du Service météorologique du Canada 
