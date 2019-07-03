@@ -142,18 +142,18 @@ CMC_hrdps_domain_Variable_TypedeNiveau_Niveau_ps2.5km_YYYYMMDDHH_Phhh-mm.grib2
 
 où :
 
-__CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
-__hrdps__ : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe.
-__domain__ : Chaîne de caractères constante indiquant le domaine.
-__Variable__ : Type de variable contenu dans le fichier (ex. : UGRD).
-__TypedeNiveau__ : Type de niveau.
-__Niveau__ : Valeur du niveau.
-__ps2.5km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 2.5 km.
-__YYYYMMDD__ : Année, mois et jour du début de la prévision.
-__HH__ : Heure UTC de la passe [00, 06, 12, 18].
-__Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 024/030/042/048].
-__mm__ : « mm » représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
-__grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
+* __hrdps__ : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe.
+* __domain__ : Chaîne de caractères constante indiquant le domaine.
+* __Variable__ : Type de variable contenu dans le fichier (ex. : UGRD).
+* __TypedeNiveau__ : Type de niveau.
+* __Niveau__ : Valeur du niveau.
+* __ps2.5km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 2.5 km.
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18].
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 024/030/042/048].
+* __mm__ : « mm » représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
 CMC_hrdps_east_DEPR_ISBL_0175_ps2.5km_2011092412_P003-00.grib2
