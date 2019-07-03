@@ -29,7 +29,7 @@ Des valeurs près de un indiquent que l'estimation provient essentiellement de d
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
@@ -37,51 +37,51 @@ Les données sont accessibles aux adresses suivantes :
 
 * https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/HH
 
-où:
+où  :
 
 * __HH__ : Période d’accumulation en heures: 06 ou 24 
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
 CMC_HRDPA_WATERSHED-HHH-CC00cutoff_SFC_0_ps2.5km_AAAAMMJJHH_000_ID.SUF
 
-où:
+où :
 
 * __HHH__ : Durée de la période d'accumulation en heures (006 or 024)
-* __CC__ : temps de coupure de l'analyse en heures (01 or 07) après la fin de la période d'accumulation
+* __CC__ : Temps de coupure de l'analyse en heures (01 or 07) après la fin de la période d'accumulation
 * __AAAAMMJJHH__ : Date et heure de validité de l’analyse (correspondant à la fin de la période d'accumulation)
-* __ID__ : Identificateur du bassin de drainage, de 01 à 11:
-	01 Provinces Maritimes
-	02 Saint-Laurent
-	03 Nord du Québec et Labrador
-	04 Sud-Ouest de la baie d'Hudson
-	05 Fleuve Nelson
-	06 Ouest de la baie d'Hudson
-	07 Grand lac des Esclaves
-	08 Pacifique
-	09 Fleuve Yukon
-	10 Arctique
-	11 Fleuve Mississipi
+* __ID__ : Identificateur du bassin de drainage, de 01 à 11 :
+	* 01 Provinces Maritimes
+	* 02 Saint-Laurent
+	* 03 Nord du Québec et Labrador
+	* 04 Sud-Ouest de la baie d'Hudson
+	* 05 Fleuve Nelson
+	* 06 Ouest de la baie d'Hudson
+	* 07 Grand lac des Esclaves
+	* 08 Pacifique
+	* 09 Fleuve Yukon
+	* 10 Arctique
+	* 11 Fleuve Mississipi
 
-* __SUF__: suffixe du fichier au format Shapefile:
-	"dbf" – attributs des éléments contenus dans le fichier au format Shapefile
-	"prj" – fichier texte décrivant la projection des données
-	"shp" – fichier binaire décrivant la géométrie des données
-	"shx" – fichier d'index pour la géométrie des données
+* __SUF__: suffixe du fichier au format Shapefile :
+    * "dbf" – attributs des éléments contenus dans le fichier au format Shapefile
+	* "prj" – fichier texte décrivant la projection des données
+	* "shp" – fichier binaire décrivant la géométrie des données
+	* "shx" – fichier d'index pour la géométrie des données
 
-Exemple: 
-CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.dbf
-CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.prj
-CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shp
-CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shx
+Exemple : 
+* CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.dbf
+* CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.prj
+* CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shp
+* CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shx
 
 Cet ensemble de fichiers contiendrait les prcipitations moyennes pour une période d'accumulation de 24h se terminant à 12 UTC le 16 février 2018 pour des bassins-versants du bassin arctique, et l'analyse aurait été produite sept heures après la fin de cette période d'accumulation.
 
-Chaque fichier au format Shapefile contient de l'information sur tous les bassins-versants se trouvant dans un bassin de drainage particulier. L'aire de drainage associée à chaque bassin-versant est définie par un seul polygone. Sept attributs sont proposés pour chaque bassin-versant:
+Chaque fichier au format Shapefile contient de l'information sur tous les bassins-versants se trouvant dans un bassin de drainage particulier. L'aire de drainage associée à chaque bassin-versant est définie par un seul polygone. Sept attributs sont proposés pour chaque bassin-versant :
 
 * __Station__    : Identification de la station
 * __StationNam__ : Nom de la station

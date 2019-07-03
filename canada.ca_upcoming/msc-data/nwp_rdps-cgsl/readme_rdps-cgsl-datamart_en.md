@@ -10,24 +10,24 @@ This page describes the [Atmosphere-Ocean-Ice forecast system for the Gulf of St
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weather.gc.ca/model_gem_regional/coupled/gulf_st-lawrence/grib2/HH/hhh
 
 __where__ :
 
-* __HH__ : model run start, in UTC [00, 06, 12, 18]
-* __hhh__ : forecast hour [001, 002, 003, ..., 048]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
+* __hhh__ : Forecast hour [001, 002, 003, ..., 048]
 
 ## Technical specification of the grid
 
 ![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
-Table lists the values of various parameters of latitude-longtitude grid 
+Table lists the values of various parameters of latitude-longtitude grid :
 
 | Parameter | Value |
 | ------ | ------ |
@@ -38,7 +38,7 @@ Table lists the values of various parameters of latitude-longtitude grid
 
 ## Data specifications 
 
-The fields in the GRIB2 data set for the two components of the system are made available on a latitude-longitude grid of 500 x 325 (with 0.02 x 0.03 degrees of resolution). The list of fields made available in GRIB2 format are:
+The fields in the GRIB2 data set for the two components of the system are made available on a latitude-longitude grid of 500 x 325 (with 0.02 x 0.03 degrees of resolution). The list of fields made available in GRIB2 format are :
 
 |Variable |  Description                                                     | System      |
 |---------|------------------------------------------------------------------|-------------|
@@ -58,24 +58,24 @@ The fields in the GRIB2 data set for the two components of the system are made a
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 * __File name for the atmospheric data__ : CMC_coupled-rdps-stlawrence-atmosphere_latlon0.02x0.03_AAAAMMJJHH_P0hh.grib2
 * __File name for the oceanic data__ : CMC_coupled-rdps-stlawrence-ocean_latlon0.02x0.03_AAAAMMJJHH_P0hh.grib2
 
-where:
+where :
 
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre.
-* __coupled-rdps-stlawrence-ocean__ : constant string indicating that the data is from the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence.
-* __latlon0.02x0.03__ : constant string indicating that the projection used is latitude-longitude grid of 500 x 325 (with 0.02 x 0.03 degrees of resolution).
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre.
+* __coupled-rdps-stlawrence-ocean__ : Constant string indicating that the data is from the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence.
+* __latlon0.02x0.03__ : Constant string indicating that the projection used is latitude-longitude grid of 500 x 325 (with 0.02 x 0.03 degrees of resolution).
 * __YYYYMMDD__ : Year (YYYY), month (MM) and day (DD) of the beginning of the forecast.
 * __HH__ : UTC run time [00, 06, 12, 18].
 * __Phhh__ : "P" is a constant character. "hhh" is the forecast hour [001, 002, 003, ..., 048].
-* __grib2__ : constant string indicating the GRIB2 format is used.
+* __grib2__ : Constant string indicating the GRIB2 format is used.
 
-Example of file name:
+Example of file name :
 
 * __Atmospheric data__ : CMC_coupled-rdps-stlawrence-atmosphere_latlon0.02x0.03_2015011200_P048.grib2
 * __Oceanic data__ : CMC_coupled-rdps-stlawrence-ocean_latlon0.02x0.03_2015011200_P048.grib2
@@ -95,7 +95,7 @@ Warning: the tables below are not up to date (to come), some variables are missi
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

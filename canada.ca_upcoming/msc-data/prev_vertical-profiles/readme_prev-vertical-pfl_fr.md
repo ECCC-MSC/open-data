@@ -21,7 +21,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 
@@ -34,4 +34,4 @@ Les [métadonnées du Système régional de prévision déterministe sont access
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux sytèmes opérationnels sont disponibles dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.
+La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).

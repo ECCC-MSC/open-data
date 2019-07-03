@@ -10,15 +10,15 @@ The [Regional Deterministic Precipitation Analysis (RDPA)](readme_rdpa_en.md) ba
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weatheroffice.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/hh
 
-where:
+where :
 
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 
@@ -41,31 +41,31 @@ Values given to the parameters of the stereographic polar grid:
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have one of the following nomenclature:
+The files have one of the following nomenclature :
 
 * CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
 * CMC_RDPA_APCP-006-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
 * CMC_RDPA_APCP-024-0100cutoff_SFC_0_ps10km_YYYYMMDDHH_000.grib2
 * CMC_RDPA_APCP-024-0700cutoff_SFC_0_ps10km_YYYYMMDDHH_000.grib2
 
-where:
+where :
 
-* __CMC__: constant string indicating the data is from the Canadian Meteorological Centre
-* __RDPA__: constant string indicating the data is from the regional deterministic precipitation analysis (RDPA)
-* __APCP__: constant string indicating the variable included in this file is in this case the accumulated precipitation which has been analyzed.
+* __CMC__: Constant string indicating the data is from the Canadian Meteorological Centre
+* __RDPA__: Constant string indicating the data is from the regional deterministic precipitation analysis (RDPA)
+* __APCP__: Constant string indicating the variable included in this file is in this case the accumulated precipitation which has been analyzed.
 * __006__: Precipitation accumulation interval is 006 hours
 * __024__: Precipitation accumulation interval is 024 hours
 * __0100cutoff__: Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected
 * __0700cutoff__: Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected
-* __SFC__: constant string indicating the type of level is at the surface.
-* __0__: elevation of the above level type where here 0 indicates the surface. For RDPA grib2 data this is the only level available.
-* __ps10km__: constant string indicating the projection used is polar-stereographic at 10km resolution.
+* __SFC__: Constant string indicating the type of level is at the surface.
+* __0__: Elevation of the above level type where here 0 indicates the surface. For RDPA grib2 data this is the only level available.
+* __ps10km__: Constant string indicating the projection used is polar-stereographic at 10km resolution.
 * __YYYYMMDDHH__: Year, month, day and hour of valid date of the analysis.
 * __HH__: UTC run time [00,06, 12, 18]
-* __000__: represents the number of hours after the YYYYMMDDHH time at which the analysis is valid.
-* __grib2__: constant string indicating the GRIB2 format is used
+* __000__: Represents the number of hours after the YYYYMMDDHH time at which the analysis is valid.
+* __grib2__: Constant string indicating the GRIB2 format is used
 
-Example of file name:
+Example of file name :
 
 CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
 
@@ -85,7 +85,7 @@ RDPA variables are only available for the surface level.
 ## List of variables
 
 
-This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format
+This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format.
 
 |Number  |	                Variable 	                                       | Level      | 	Abbreviation    |	Units    	 | Description        |
 |--------|---------------------------------------------------------------------|------------|-------------------|----------------|--------------------|
@@ -104,7 +104,7 @@ Since January, 13th 2016, a mask called "No-data" has been added to our GRIB2 en
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

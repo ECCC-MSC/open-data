@@ -15,7 +15,7 @@ On utilise des modèles de prévision numérique du temps, des modèles statisti
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -106,14 +106,14 @@ __5, 6, 7, 8, 9, 10__ : Ces six colonnes représentes les types de précipitatio
 |  Non disponible |    NA  (P & O) |
 
 
-__L'intensité des précipitations est donnée par:__
+__L'intensité des précipitations est donnée par :__
 * (-) très faible à faible
 * ( ) (pas de signe) modérée
 * (+) Forte
         
 Dans certaines circonstances, par exemple lorsque la température est proche de zéro, il est possible d'avoir plus d'un type de précipitation à un moment donné, par exemple; neige mélangée avec de la pluie et occasionnellement de la pluie verglaçante. Dans cette situation, la condition dominante (neige) serait rapportée dans le type 1 (PCPN1) tandis que les précipitations associées seraient de type 2 (PCPN2) pour la pluie et de type 3 (PCPN3) pour la pluie verglaçante.
 
-__11__ :     la colonne 11, nommée "POP", représente la probabilité de précipitations de tous les types 
+__11__ :     La colonne 11, nommée "POP", représente la probabilité de précipitations de tous les types 
         ensemble. Dans la section des observations, à savoir de 02Z à 07Z la POP observées pourraient 
         être inférieure à 100%. En d'autres termes, même s'il ne précipite pas à la station, un POP peut 
         exister si certaines informations existent dans les observations telles que
@@ -138,7 +138,7 @@ __19, 20__ : Les deux dernières colonnes donnent la visibilité (une distance d
         Un type d'obstacle à la visibilité accompagnera une visibilité inférieure à 6 miles, observés ou prévus
 
 
-Le code des types possibles de visibilité utilisés dans les matrices de prévisions immédiates sont:
+Le code des types possibles de visibilité utilisés dans les matrices de prévisions immédiates sont :
 
 |(P): prévue  |  (O): observée  |
 |-------------|-----------------|
@@ -158,7 +158,7 @@ Le code des types possibles de visibilité utilisés dans les matrices de prévi
 
 ### Notes
 
-* Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, une prévision sera toujours produit même si les observations de surface sont incomplètes, manquantes ou non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques 
+* Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, une prévision sera toujours produit même si les observations de surface sont incomplètes, manquantes ou non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques .
 du Système Régional de Prévision Déterministe Canadien (SRPD PNT) seront utilisés.
 
 * Une [liste des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) est disponible en format GeoJSON.

@@ -10,7 +10,7 @@ Cette page décrit les données [système régional de prévision déterministe 
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
@@ -27,7 +27,7 @@ où :
 
 ![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
-Valeurs données aux paramètres de la grille latitude-longitude
+Valeurs données aux paramètres de la grille latitude-longitude :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -58,7 +58,7 @@ Les champs du jeu de données GRIB2 pour les deux composantes du système sont d
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
@@ -75,7 +75,7 @@ où :
 * __Phhh__ : « P » est un caractère constant qui indique le mot  « Prévision » . « hhh » représente l’heure de prévision [001, 002, 003, ..., 048].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
-Exemple de nom de fichier:
+Exemple de nom de fichier :
 
 * __Données atmosphériques__ : CMC_coupled-rdps-stlawrence-atmosphere_latlon0.02x0.03_2015011200_P048.grib2
 * __Données océaniques__ : CMC_coupled-rdps-stlawrence-ocean_latlon0.02x0.03_2015011200_P048.grib2

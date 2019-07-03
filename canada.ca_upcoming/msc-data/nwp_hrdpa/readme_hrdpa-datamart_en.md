@@ -10,17 +10,17 @@ This page describes the [High Resolution Deterministic Precipitation Analysis](.
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/HH
 
-where:
+where :
 
-* __polar_stereographic__ :  grid projection
+* __polar_stereographic__ :  Grid projection
 * __HH__ :  Accumulation period in hours: 06 or 24 
 
 A history of 30 days is maintained in this directory.
@@ -41,13 +41,13 @@ Table lists the values of parameters of the polar-stereographic grid.
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
 CMC_HRDPA_APCP-TotalPrecipAmount-HHMMcutoff_SFC_0_ps2.5km_YYYYMMDDHH_000.grib2
 
-where:
+where :
 
 * __CMC__ : Data is produced by the Canadian Meteorological Centre (Constant string)
 * __HRDPA__ : High Resolution Deterministic Precipitation Analysis (Constant string)
@@ -59,7 +59,7 @@ where:
 * __YYYYMMDDHH__ : Analysis valid time in UTC. YYYY=Year, MM=Month, DD=Day, HH=Hour (ex: 2018020912)
 * __000__ : The projection time in number of hours. Always 000 for an analysis product (Constant string)
 
-Example:
+Example :
 
 CMC_HRDPA_APCP-006-0100cutoff_SFC_0_ps2.5km_2018020912_000.grib2
 

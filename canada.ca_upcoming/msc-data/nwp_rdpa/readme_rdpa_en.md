@@ -22,7 +22,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
@@ -30,7 +30,7 @@ The [metadata of the Regional Deterministic Precipitation Analysis are available
 
 ## Products
 
-List and links to the products available for this dataset:
+List and links to the products available for this dataset :
 
 ### Analysis charts 
 
@@ -38,7 +38,7 @@ List and links to the products available for this dataset:
 
 ## Technical documentation
 
-* Current version of the Regional Deterministic Precipitation Analysis - Upcoming
+* Current version of the Regional Deterministic Precipitation Analysis - _Upcoming_
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_rdpa-450_e.pdf)
 * [Information sheet describing the CaPA system](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 

@@ -10,11 +10,11 @@ This page describes the [vertical profiles of the Regional Deterministic Predict
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable CSV file.
 
-The vertical profiles files are available at the following address:
+The vertical profiles files are available at the following address :
 
 https://dd.weatheroffice.ec.gc.ca/vertical_profile/forecast/csv
 
@@ -24,9 +24,9 @@ An history of 24 hours of data is kept in the directory.
 
 ## Filename nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-The filenames have the following nomenclature:
+The filenames have the following nomenclature :
 
 ProgTephi_HH_AAAA.csv
 
@@ -41,7 +41,7 @@ ProgTephi_12_WASA.csv
  
 ## Data description 
 
-Data provided and units are as the following:
+Data provided and units are as the following :
 
 * __TT__ : Temperature  (deg C)
 * __ES__ : Dew point depression (deg C)
@@ -57,11 +57,11 @@ The data are available on the following pressure levels :
 * GZ, ES, UV, WD, HR and TT available at: SFC 1000 985 970 950 925 900 875 850 800 750 700 650 600 550 500 450 400 350 300 275 250 225 200175  150 100  70  50  30  20  10 mb
 * WW for 29 levels (Not at 70, 30 or 20 mb)
 
-Note: Some of the pressure levels may be below the elevation of the station. 
+__Note__ : Some of the pressure levels may be below the elevation of the station. 
 
 ## Note
 
-While Environment and Climate Change Canada does not provide a display software nor does not recommend any particular third party programs to display this data in graphical format some users have suggested:
+While Environment and Climate Change Canada does not provide a display software nor does not recommend any particular third party programs to display this data in graphical format some users have suggested :
 
 * [Buffkit](https://training.weather.gov/wdtd/tools/BUFKIT/index.php)
 * [RAOB de la compganie Environmental Research Services](http://www.raob.com/)

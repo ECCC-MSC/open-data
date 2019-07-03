@@ -10,7 +10,7 @@ L’[Analyse régionale déterministe de précipitation (ARDP)](readme_rdpa_fr.m
 
 # Adresse des données
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -26,7 +26,7 @@ où :
 
 ![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
+Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -85,7 +85,7 @@ Les données sont disponibles pour la surface seulement (indiquée par SFC_0 dan
 
 ## Liste des variables
 
-Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2
+Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2.
 
 |Numéro  |	                  Variable                                |	Niveau      | 	Abbréviation    | 	Unités        | 	Encodage    |
 |--------|------------------------------------------------------------|-------------|-------------------|-----------------|-----------------|

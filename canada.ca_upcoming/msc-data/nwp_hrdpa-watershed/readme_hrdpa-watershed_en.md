@@ -28,7 +28,7 @@ The Shapefiles described here contain the result of this computation, in millime
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [GRIB2 data available on the MSC Datamart](readme_hrdpa-watershed-datamart_en.md) 
 
@@ -36,12 +36,12 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 
 ### Metadata
 
-_Upcoming._
+Upcoming.
 
 ## Technical documentation
 

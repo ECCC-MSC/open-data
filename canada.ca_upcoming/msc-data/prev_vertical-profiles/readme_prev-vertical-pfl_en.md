@@ -12,7 +12,7 @@ This page describes the vertical profiles (ProgTephi) produced by the Regional D
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [CSV data available on the MSC Datamart](readme_prev-vertical-pfl-datamart_en.md) 
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
@@ -21,7 +21,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
@@ -34,4 +34,4 @@ The [metadata of the Regional Deterministic Prediction System are available on t
 
 ## Change log
 
-Changes to the operational systems are [available in the Product guide documentation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
