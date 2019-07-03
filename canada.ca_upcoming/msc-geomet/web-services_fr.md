@@ -4,6 +4,22 @@
 
 [TdM](../readme_fr.md) > GeoMet du SMC
 
+# Table des matières
+- [Web Map Service (WMS)](#web-map-service-wms)
+    * [WMS GetCapabilities](#wms-getcapabilities)
+    * [WMS GetMap](#wms-getmap)
+    * [WMS GetFeatureInfo](#wms-getfeatureinfo)
+    * [WMS GetLegendGraphic](#wms-getlegendgraphic)
+    * [Spécification du temps](#spécification-du-temps)
+    * [Spécification des styles](#spécification-des-styles)
+- [Web Coverage Service (WCS)](#web-coverage-service-wcs)
+    * [WCS GetCapabilities](#wcs-getcapabilities)
+    * [WCS DescribeCoverage](#wcs-describecoverage)
+    * [WCS GetCoverage](#wcs-getcoverage)
+    * [Spécification du temps](#wcs-specification-du-temps)
+    * [Exemple d'utilisation](#exemple-dutilisation)
+- [OGC API - Features (WFS 3)](#ogc-api-features)
+
 # Services web géospatiaux
 
 Les services web sont des protocols élaborés pour supporté des interactions machine-à-machine sur un réseau et sont typiquement utilisés via un accès programmatique et les outils et applications associées dans un environnement informatique de type client/serveur.
