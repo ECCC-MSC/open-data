@@ -10,7 +10,7 @@ Ce document décrit les trois jeux de données climatiques, normales climatiques
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données climatiques sont disponibles via le protocole HTTP. Il est possible de les télécharger avec un fureteur standard.
 
@@ -20,16 +20,16 @@ Les fichiers se trouvent à l'adresse suivante :
 * /climate/observations/daily/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 * /climate/observations/monthly/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
-Avec:
+avec :
 
 * __normals__ : Les normales et moyennes climatiques servent à résumer ou à décrire les conditions climatiques moyennes d'un endroit donné, basées sur au moins 15 années de données entre 1981 à 2010.
-* __daily__ : données quotidiennes provenant de stations climatiques quotidiennes et de stations horaires.
-* __monthly__ : sommaire transcanadien des moyennes et des extrêmes pour le mois, y compris les précipitations totales, les températures maximales et minimales et les degrés-jours. Ces données sont disponibles qui produisent des données quotidiennes.
+* __daily__ : Données quotidiennes provenant de stations climatiques quotidiennes et de stations horaires.
+* __monthly__ : Sommaire transcanadien des moyennes et des extrêmes pour le mois, y compris les précipitations totales, les températures maximales et minimales et les degrés-jours. Ces données sont disponibles qui produisent des données quotidiennes.
 * __(AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT)__ : liste des 13 provinces/territoires.
 
 ## Nomenclature des noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * climate_normals_PROVTERR_XXXXXXX_YYY1-YYY2.csv
 * climate_daily_PROVTERR_XXXXXXX_YYYY-MM_P1D.csv
@@ -37,11 +37,11 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 avec :
  
-* __climate__ : chaîne constante indiquant la source des données, soit les données climatiques
-* __normals__ : chaîne constante indiquant les données climatiques qui contribuent de façon critique à la caractérisation du climat de la Terre 
-* __daily__ : chaîne constante indiquant les données climatiques quotidiennes 
-* __monthly__ : chaîne constante indiquant les données climatiques mensuelles
-* __PROVTERR__ : code de 2 lettres pour les provinces et territoires et une chaîne de caractères pour la couverture nationale : 
+* __climate__ : Chaîne constante indiquant la source des données, soit les données climatiques
+* __normals__ : Chaîne constante indiquant les données climatiques qui contribuent de façon critique à la caractérisation du climat de la Terre 
+* __daily__ : Chaîne constante indiquant les données climatiques quotidiennes 
+* __monthly__ : Chaîne constante indiquant les données climatiques mensuelles
+* __PROVTERR__ : Code de 2 lettres pour les provinces et territoires et une chaîne de caractères pour la couverture nationale : 
           Le code prend l’une des 13 valeurs suivantes :
             * AB (Alberta)
             * BC (Colombie britannique)
@@ -56,17 +56,17 @@ avec :
             * QC (Québec)
             * SK (Saskatchewan)
             * YT (Yukon)
-* __XXXXXXX__ :  climate_ID (identifiants) des stations climatiques (voir note)
-* __YYY1__ :année du début de la période climatique d’intérêt : [1981]
-* __YYY2__ : année de la fin de la période climatique d’intérêt : [2010]
-* __YYYY__ : année des données climatiques quotidiennes/mensuelles 
-* __MM__ : mois des données climatiques quotidiennes 
-* __P1D__ : chaîne constante indiquant un pas de temps de 1 jour (standard ISO8601)
-* __P1M__ : chaîne constante indiquant un pas de temps de 1 mois (standard ISO8601)
-* __csv__ : chaîne constante indiquant le format CSV
+* __XXXXXXX__ :  Climate_ID (identifiants) des stations climatiques (voir note)
+* __YYY1__ : Année du début de la période climatique d’intérêt : [1981]
+* __YYY2__ : Année de la fin de la période climatique d’intérêt : [2010]
+* __YYYY__ : Année des données climatiques quotidiennes/mensuelles 
+* __MM__ : Mois des données climatiques quotidiennes 
+* __P1D__ : Chaîne constante indiquant un pas de temps de 1 jour (standard ISO8601)
+* __P1M__ : Chaîne constante indiquant un pas de temps de 1 mois (standard ISO8601)
+* __csv__ : Chaîne constante indiquant le format CSV
 
 
-Exemples:
+Exemples :
 
 * climate_normals_QC_7040446_1981-2010.csv 
 * climate_daily_QC_7025280_1993-03_P1D.csv 

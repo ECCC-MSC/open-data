@@ -14,7 +14,7 @@ Au besoin, les données ont été corrigées pour certaines techniques de mesure
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.
 
@@ -33,19 +33,19 @@ Où :
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
-Les noms des fichiers ont la forme: 
+Les noms des fichiers ont la forme : 
 
 AHCCD_hist_TemporalResolution_ProvTerr_XXXXXXX_Variable_TimeStep.json
 
-Où:
+Où :
 
-* __AHCCD__ : chaîne constante indiquant la source des données soit les données climatiques ajustées et homogénéisées pour de nombreuses stations climatologiques au Canada.
-* __hist__ : chaîne constante indiquant les données historiques. Varie selon la station et la variable, la disponibilité des données variant de 1840 à l'année précédente à l’année en cours
-* __TemporalResoltion__ : résolution temporelle, prenant l'une des valeurs : [annual, monthly, DJF, MAM, JJA, SON]
-* __ProvTerr__ : code de 2 lettres pour la province ou le territoire
-          Le code est l'une des 13 valeurs suivantes:
+* __AHCCD__ : Chaîne constante indiquant la source des données soit les données climatiques ajustées et homogénéisées pour de nombreuses stations climatologiques au Canada.
+* __hist__ : Chaîne constante indiquant les données historiques. Varie selon la station et la variable, la disponibilité des données variant de 1840 à l'année précédente à l’année en cours
+* __TemporalResoltion__ : Résolution temporelle, prenant l'une des valeurs : [annual, monthly, DJF, MAM, JJA, SON]
+* __ProvTerr__ : Code de 2 lettres pour la province ou le territoire
+          Le code est l'une des 13 valeurs suivantes :
             * AB (Alberta)
             * BC (Colombie-Britannique)
             * MB (Manitoba)
@@ -60,11 +60,11 @@ Où:
             * SK (Saskatchewan)
             * YT (Yukon)
 * __XXXXXXX__ : Cilmate_ID des stations climatiques
-* __Variable__ : nom de la variable disponible dans le fichier, prenant l’une des valeurs: [TMEAN,TMIN,TMAX,PCP,RA,SN,SLP,PSFC,SFCWND]; TMEAN représente la température moyenne, TMIN représente la température minimale, TMAX représente la température maximale, PCP représente les précipitations totales, RA représente la pluie ; SN représente la neige ; SLP représente la pression au niveau de la mer ; PSFC représente la pression de surface ; SFCWND représente la vitesse du vent en surface.
-* __TimeStep__ : pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
-* __json__ : chaîne constante indiquant le format GeoJSON.
+* __Variable__ : Nom de la variable disponible dans le fichier, prenant l’une des valeurs: [TMEAN,TMIN,TMAX,PCP,RA,SN,SLP,PSFC,SFCWND]; TMEAN représente la température moyenne, TMIN représente la température minimale, TMAX représente la température maximale, PCP représente les précipitations totales, RA représente la pluie ; SN représente la neige ; SLP représente la pression au niveau de la mer ; PSFC représente la pression de surface ; SFCWND représente la vitesse du vent en surface.
+* __TimeStep__ : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
+* __json__ : Chaîne constante indiquant le format GeoJSON.
 
-Exemple: AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
+Exemple : AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 ## Liste des variables
 

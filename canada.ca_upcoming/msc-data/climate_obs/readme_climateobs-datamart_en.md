@@ -10,7 +10,7 @@ This document describes three climate data sets, climate normal, daily climate o
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The  climate  data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser.
 
@@ -22,14 +22,14 @@ The data can be accessed at the following URLs :
 
 where :
 
-* __normals__ : climate normals and averages are used to summarize or describe the average climatic conditions of a particular location with at least 15 years of data between 1981-2010.
-* __daily__ : climate daily data from daily climate stations and hourly stations.
-* __monthly__ : a cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data. 
-* __(AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT)__ : list of the 13 provinces/territories.
+* __normals__ : Climate normals and averages are used to summarize or describe the average climatic conditions of a particular location with at least 15 years of data between 1981-2010.
+* __daily__ : Climate daily data from daily climate stations and hourly stations.
+* __monthly__ : A cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data. 
+* __(AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT)__ : List of the 13 provinces/territories.
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form :
 
@@ -39,10 +39,10 @@ File names have the form :
 
 where :
 
-* __climate__ : constant string indicating the data source, namely climate data 
-* __normals__ : constant string indicating climate data that critically contributes to the characterization of Earth’ s climate
-* __daily__ : constant string indicating daily climate data
-* __monthly__ : constant string indicating monthy climate data 
+* __climate__ : Constant string indicating the data source, namely climate data 
+* __normals__ : Constant string indicating climate data that critically contributes to the characterization of Earth’ s climate
+* __daily__ : Constant string indicating daily climate data
+* __monthly__ : Constant string indicating monthy climate data 
 * __PROVTERR__ : 2-letter code for the province or territory, and 1 string for National coverage. 
           The code is one of the 13 following values :
             * AB (Alberta)
@@ -59,13 +59,13 @@ where :
             * SK (Saskatchewan)
             * YT (Yukon)
 * __XXXXXXX__ : Climate_ID of the climate stations (see note)
-* __YYY1__ : year of the beginning of the climate period of interest : [1981]
-* __YYY2__  : year of the end of the climate period of interest : [2010]
-* __YYYY__ : year of the climate daily data
-* __MM__ :  month of the climate daily/monthly data
-* __P1D__ : constant string indicating 1 day time step (ISO8601 standard)
-* __P1M__ : constant string indicating 1 month time step (ISO8601 standard)
-* __csv__ : constant string indicating the CSV format
+* __YYY1__ : Year of the beginning of the climate period of interest : [1981]
+* __YYY2__  : Year of the end of the climate period of interest : [2010]
+* __YYYY__ : Year of the climate daily data
+* __MM__ :  Month of the climate daily/monthly data
+* __P1D__ : Constant string indicating 1 day time step (ISO8601 standard)
+* __P1M__ : Constant string indicating 1 month time step (ISO8601 standard)
+* __csv__ : Constant string indicating the CSV format
 
 Examples :
 
@@ -75,7 +75,7 @@ Examples :
 
 ## List of variables
 
-The available variables and units for Climate data are documented here:
+The available variables and units for Climate data are documented here :
 
 * [Climate normals](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-climate-normals.html#toc1)
 * [Climate daily](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html#toc0)
@@ -102,6 +102,7 @@ Daily data is derived from two sources of data. The first are Daily Climate Stat
 See detailed documentation here :
 
 https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html 
+
 * __Climate monthly__
 
 A cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data.
@@ -112,7 +113,7 @@ https://www.canada.ca/en/environment-climate-change/services/climate-change/cana
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

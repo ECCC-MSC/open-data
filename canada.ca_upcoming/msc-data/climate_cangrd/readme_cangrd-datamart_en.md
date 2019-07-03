@@ -10,45 +10,45 @@ The CANGRD is based on the Adjusted and Homogenized Canadian Climate Data (AHCCD
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoTIFF file.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * /climate/cangrd/geotiff/historical/annual/[anomaly, trend]
 * /climate/cangrd/geotiff/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly, trend]
 * /climate/cangrd/geotiff/historical/monthly_ens/anomaly
 
-Where :
+where :
 
-* __historical__ : historical simulations from 1948 for all of Canada, and from 1900 for southern Canada, until the end of the previous calendar year.
+* __historical__ : Historical simulations from 1948 for all of Canada, and from 1900 for southern Canada, until the end of the previous calendar year.
 * __monthly__ : January to December 
-* __seasonal__ : the standard meteorological seasons are used: (March to May (MAM, spring), June to August (JJA, summer),  September to November (SON, autumn/fall), and December to February (DJF, winter)]
-* __anomaly__ : anomalies are computed at each observing station and for each year by subtracting the relevant baseline average (defined as average over 1961-1990 reference period) from the relevant monthly, seasonal, and annual values (temperature and precipitation anomalies: 1948-2017)
-* __trend__ : trend data represents the change in temperature or relative precipitation departure over the period of record (mean temperature trend: 1948-2016; precipitation trend: 1948-2012)
+* __seasonal__ : The standard meteorological seasons are used: (March to May (MAM, spring), June to August (JJA, summer),  September to November (SON, autumn/fall), and December to February (DJF, winter)]
+* __anomaly__ : Anomalies are computed at each observing station and for each year by subtracting the relevant baseline average (defined as average over 1961-1990 reference period) from the relevant monthly, seasonal, and annual values (temperature and precipitation anomalies: 1948-2017)
+* __trend__ : Trend data represents the change in temperature or relative precipitation departure over the period of record (mean temperature trend: 1948-2016; precipitation trend: 1948-2012)
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-File names have the form:
+File names have the form :
 
 CANGRD_hist_TemporalResolution_Value_ProjectionResolution_Variable_TimePeriod.tif
 
-Where:
+where :
 
-* __CANGRD__ : constant string indicating the data source, namely the Canadian gridded annual, seasonal, and monthly temperature and precipitation anomalies, which were interpolated from stations in the Adjusted and Homogenized Canadian Climate Data AHCCD 
-* __hist__ : constant string indicating historical data
-* __TemporalResolution__ : temporal resolution, taking one of the values : [annual, monthly, DJF, MAM, JJA, SON]
-* __Value__ : values category, taking one of the values :  [ anom, trend]
-* __Projection__ : grid mapping (projection) taking the value : [ps]; ps stands for polar stereographic projection
-* __Resolution__ : grid resolution taking the value : [50km]
-* __Variable__ : name of forecast variable available in the file, taking one of the values : [PCP, TMIN, TMAX, TMEAN]; PCP stands for total precipitation, TMIN stands for minimum temperature, TMAX stands for maximum temperature, TMEAN stands for mean temperature.
-* __TimePeriod__ : time period, taking one of the values : [YYYY, YYYY-MM, YYY1-YYY2]; YYYY-MM  stands for year-month for the monthly anomalies, YYY1-YYY2 stands for the years interval used in the trends
-* __tif__ : constant string indicating the GeoTIFF format
+* __CANGRD__ : Constant string indicating the data source, namely the Canadian gridded annual, seasonal, and monthly temperature and precipitation anomalies, which were interpolated from stations in the Adjusted and Homogenized Canadian Climate Data AHCCD.
+* __hist__ : Constant string indicating historical data.
+* __TemporalResolution__ : Temporal resolution, taking one of the values : [annual, monthly, DJF, MAM, JJA, SON].
+* __Value__ : Values category, taking one of the values :  [ anom, trend].
+* __Projection__ : Grid mapping (projection) taking the value : [ps]; ps stands for polar stereographic projection.
+* __Resolution__ : Grid resolution taking the value : [50km].
+* __Variable__ : Name of forecast variable available in the file, taking one of the values : [PCP, TMIN, TMAX, TMEAN]; PCP stands for total precipitation, TMIN stands for minimum temperature, TMAX stands for maximum temperature, TMEAN stands for mean temperature.
+* __TimePeriod__ : Time period, taking one of the values : [YYYY, YYYY-MM, YYY1-YYY2]; YYYY-MM  stands for year-month for the monthly anomalies, YYY1-YYY2 stands for the years interval used in the trends.
+* __tif__ : Constant string indicating the GeoTIFF format.
 
-Examples:
+Examples :
 
 * CANGRD_hist_annual_anom_ps50km_TMEAN_1903.tiff
 * CANGRD_hist_DJF_trend_ps50km_PCP_1948-2012.tiff
@@ -59,7 +59,7 @@ The CANGRD grid is in polar stereographic projection with a 50 km spatial resolu
 
 ## List of variables
 
-The available variables and units for CANGRD are:
+The available variables and units for CANGRD are :
 
 * Maximum temperature anomaly (°C)
 * Minimum temperature anomaly (°C)
@@ -70,7 +70,7 @@ The available variables and units for CANGRD are:
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 
