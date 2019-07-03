@@ -18,9 +18,9 @@ Le Service météorologique du Canada fournit des renseignements à jour sur les
 L'accès aux données ouvertes disponibles sur le Datamart du SMC et sur GeoMet est anonyme et gratuit. Les services de données ouvertes disponibles sont :
 
   * [MSC Datamart](msc-datamart/readme_fr.md)
-    * Données brutes disponibles sur un serveur accessible sur le Web
+    * Données brutes et produits disponibles sur un serveur accessible sur le Web
   * [MSC GeoMet](msc-geomet/readme_fr.md)
-    * Données disponibles via les services web géospatiaux / APIs interopérables
+    * Données et produits disponibles via des services web géospatiaux / APIs interopérables
   * [Services à recouvrement de coûts](cost-recovered/readme_fr.md)
     * Récupération de données archivées
     * Fils de données dédiés avec support 24/7
