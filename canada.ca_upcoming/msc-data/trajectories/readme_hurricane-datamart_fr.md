@@ -16,7 +16,7 @@ Les trajectoires d'ouragans émises par le Centre canadien de prévision des our
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile.
 
@@ -30,17 +30,17 @@ où :
 
 ## Nomenclature des répertoires et noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 La convention régissant les noms de fichiers est la suivante :
 
 YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
 
-Où :
-* __YYYYMMDD__HHMM__ : date d'émission de la prévision (UTC)
-* __Z__ : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC)
-* __STORM-NAME__ : nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.)
-* __TYPE__ : type de fichier shapefile:
+où :
+* __YYYYMMDD__HHMM__ : Date d'émission de la prévision (UTC).
+* __Z__ : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC).
+* __STORM-NAME__ : Nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.).
+* __TYPE__ : Type de fichier shapefile :
     * « pts » pour points, qui contient majoritairement des données/attributs
     * « lin » pour les segments de ligne qui relient les points de suivi de la prévision
     * « rad » pour les informations des rayons de prévisions de vent (quadrants)

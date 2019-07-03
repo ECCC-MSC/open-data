@@ -10,7 +10,7 @@ Cette page décrit les données des [bulletins alphanumériques](readme_bulletin
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. 
 
@@ -22,15 +22,15 @@ Un historique des données est conservé dans ce répertoire.
 
 ## Nomenclature des répertoires et noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les bulletins sont regroupés dans des structures de répertoires basés sur la date et sur le type de bulletin.
 Les répertoires suivent la nomenclature suivante:
 
 YYYYMMDD/AA/BBBB/HH
 
-où:
-* __YYYYMMDD__ : date de réception du bulletin (pas la date d'émission!).
+où :
+* __YYYYMMDD__ : Date de réception du bulletin (pas la date d'émission!).
 * __AA__ : 2 lettres indiquant le type de bulletin. La référence complète
 peut être trouvée dans le Manual on the Global Telecommunication System de
 l'OMM, dans la section Supplément II-5, ce qui correspond aux pages
@@ -39,7 +39,7 @@ http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_3
 * __BBBB__ : 4 lettres représentant le code de l'émetteur du bulletin.
 
 Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le 
-nom du bureau émetteur:
+nom du bureau émetteur :
 
     * QX = Gander, (T.-N.) 
     * HX = Halifax (maintenant Dartmouth)  
@@ -52,7 +52,7 @@ nom du bureau émetteur:
     * VR = Vancouver  
     * CN = Canada  
     * US = États-Unis 
-* __HH__ : représente l'heure de réception du bulletin
+* __HH__ : Représente l'heure de réception du bulletin.
 
 Le nom de fichier suit cette nomenclature :
 

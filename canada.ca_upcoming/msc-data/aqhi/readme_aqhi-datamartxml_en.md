@@ -10,16 +10,18 @@ This page describes the the observation and forecast data available in XML forma
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-The data can be accessed at the following address:
+The data can be accessed at the following address :
 
-* Observations:
+* Observations :
+
    https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/xml
   
 * Public forecasts:
+
   https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/realtime/xml
   
 A file that makes it easier for automated systems to access [real-time updated data](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) is available. 
@@ -28,38 +30,38 @@ A [complete list of cities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_do
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 * **Observations** (Note: monthly summary XML files are not yet available)
 
   * Hourly file: AQ_OBS_CGNDBcode_YYYYMMDDhhmm.xml
   * Copy of the most recent real-time observation file: AQ_OBS_CGNDBcode_CURRENT.xml
 
-where:
+where :
 
-* 'AQ_OBS': Filename prefix. Constant string.
-* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-* YYYY: Year of the observation, 4 digits;
-* MM: Month of the observation, 2 digits (January = 01);
-* DD: Day of the observation, 2 digits;
-* hh: Hour of the observation, 2 digits;
-* mm: Minute of the observation, 2 digits.
+* __'AQ_OBS'__ : Filename prefix. Constant string.
+* __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+* __YYYY__ : Year of the observation, 4 digits.
+* __MM__ : Month of the observation, 2 digits (January = 01).
+* __DD__ : Day of the observation, 2 digits.
+* __hh__: Hour of the observation, 2 digits.
+* __mm__ : Minute of the observation, 2 digits.
 
-* **Public forecasts** (Note: monthly summary XML files are not yet available):
-  * Regular issue:     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
-  * Amended forecasts: AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
-  * Copy of the most recent real-time forecast file: AQ_FCST_CGNDBcode_CURRENT.xml
+* **Public forecasts** (Note: monthly summary XML files are not yet available) :
+  * __Regular issue__ :     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
+  * __Amended forecasts__ : AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
+  * __Copy of the most recent real-time forecast file__ : AQ_FCST_CGNDBcode_CURRENT.xml
    
-where:
+where :
 
-* 'AQ_FCST':  Filename prefix. Constant string.
-* CGNDBcode: 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-* YYYY: Year of the forecast issue time, 4 digits;
-* MM: Month of the forecast issue time, 2 digits (January = 01);
-* DD: Day of the forecast issue time, 2 digits;
-* hh: Hour of the forecast issue time, 2 digits;
-* mm: Minute of the forecast issue time, 2 digits;
-* 'AMD': the suffix appended to the filename to indicate that the file is
+* __'AQ_FCST'__ :  Filename prefix. Constant string.
+* __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+* __YYYY__ : Year of the forecast issue time, 4 digits.
+* __MM__ : Month of the forecast issue time, 2 digits (January = 01).
+* __DD__ : Day of the forecast issue time, 2 digits.
+* __hh__ : Hour of the forecast issue time, 2 digits.
+* __mm__ : Minute of the forecast issue time, 2 digits.
+* __'AMD'__ : The suffix appended to the filename to indicate that the file is
 an amendment.
 
 ## Notes

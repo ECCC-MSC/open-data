@@ -10,7 +10,7 @@ Cette page décrit les données des [bulletins](readme_bulletins_fr.md) en forma
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. 
 Les bulletins BUFR sont disponibles via le  protocole HTTP avec un fureteur standard. 
@@ -31,18 +31,18 @@ __Note__: Dans le contexte du passage des bulletins alphanumériques aux bulleti
 	
 ## Nomenclature des noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms des fichiers ont la forme :
 
 IUnB0x_Ciii_DDHHHH__BUFR
 
 où :
-* __n__ : type de bulletin 
-* __x__ : emplacement dans la matrice 
-* __iii__ : numéro d’identification de la station de Transport Canada
-* __DD__ : date du bulletin
-* __HHH__ : heure standard du bulletin
+* __n__ : Type de bulletin 
+* __x__ : Emplacement dans la matrice 
+* __iii__ : Numéro d’identification de la station de Transport Canada
+* __DD__ : Date du bulletin
+* __HHH__ : Heure standard du bulletin
 
 Exemple :
 

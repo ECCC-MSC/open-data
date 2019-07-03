@@ -10,11 +10,11 @@ This page describes the data of the binary [bulletins](readme_bulletins_en.md).
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. 
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/IO
 
@@ -26,24 +26,24 @@ __YYYYMMDD__ : Date of the BUFR bulletin emission in UTC
 
 As other alphanumeric bulletins, the retention period is 6 months.
 
-__Note__: in the context of the migration from alphanumeric to BUFR format, binary bulletins are available in the same directory than alphanumeric ones.
+__Note__: In the context of the migration from alphanumeric to BUFR format, binary bulletins are available in the same directory than alphanumeric ones.
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-File  names have the form:
+File  names have the form :
 
 IUnB0x_Ciii_DDHHHH__BUFR
 
-Where:
-* __n__ : bulletin type identifier. 
-* __x__ : location grid identifier 
+where :
+* __n__ : Bulletin type identifier. 
+* __x__ : Location grid identifier 
 * __iii__ : Transport Canada station ID
-* __DD__ : date of bulletin
-* __HHHH__ : standard hour of bulletin
+* __DD__ : Date of bulletin
+* __HHHH__ : Standard hour of bulletin
 
-Example:
+Example :
 
 IUKB02_CWLT_130000__BUFR
 
@@ -77,7 +77,7 @@ Complete documentation with examples of use of the script can be found in the [P
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

@@ -10,7 +10,7 @@ Cette page décrit les données d'observations et de prévisions disponibles en 
 
 ## Adresses des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV.
 
@@ -18,22 +18,25 @@ Les données sont accessibles aux adresses suivantes :
 
 * **Observations**: 
 
-  * Fichiers en temps réel: 
+  * Fichiers en temps réel :
+   
     https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
   
   * Fichiers mensuels :  
+  
     https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
 
 * **Prévisions publiques**:
 
-  * Fichiers mensuels:
+  * Fichiers mensuels :
+  
     https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
     
 * **Données des modèles numériques**:
 
   * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/model/csv
 
-Note: Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
+Note : Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
     
 ## Nomenclature des noms de fichiers 
 
@@ -45,26 +48,26 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
   * Fichiers mensuels: AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv
   * Fichiers mensuels avec données remblayées :  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
   
-où: 
+où : 
 
-* __AAAA__ : année de l'observation, 4 chiffres;
-* __MM__ : mois de l'observation, 2 chiffres (janvier = 01);
-* __JJ__ : jour de l'observation, 2 chiffres;
-* __hh__ : heure de l'observation, 2 chiffres;
-* __mm__ : minute de l'observation, 2 chiffres;
-* __'MONTHLY'__ : symbole présent lorsque le fichier contient des données mensuelles;
+* __AAAA__ : Année de l'observation, 4 chiffres.
+* __MM__ : Mois de l'observation, 2 chiffres (janvier = 01).
+* __JJ__ : Jour de l'observation, 2 chiffres.
+* __hh__ : Heure de l'observation, 2 chiffres.
+* __mm__ : Minute de l'observation, 2 chiffres.
+* __'MONTHLY'__ : Symbole présent lorsque le fichier contient des données mensuelles.
 * __REGION__ : Nom de la région d'Environnement et Changement climatique Canada  où les observations sont situées. Les valeurs
-possibles sont les suivantes:
-    * 'ATL'= Région de l'Atlantique,
-    * 'ON'= Région de l'Ontario,
-    * 'PNR'= Région des Prairies et du Nord,
-    * 'PYR'= Région du Pacifique et du Yukon,
-    * 'QC'= Région du Québec;
-* __OBSTYPE__ : type d'observation dans le fichier. Les options possibles sont les suivantes:
-    * 'SiteObs'=le fichier contient les observations de CAS pour les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson),
-    * 'StationObs'= le fichier contient les observations de CAS pour les stations d'observation associées
+possibles sont les suivantes :
+    * 'ATL'= Région de l'Atlantique
+    * 'ON'= Région de l'Ontario
+    * 'PNR'= Région des Prairies et du Nord
+    * 'PYR'= Région du Pacifique et du Yukon
+    * 'QC'= Région du Québec
+* __OBSTYPE__ : Type d'observation dans le fichier. Les options possibles sont les suivantes :
+    * 'SiteObs' = Le fichier contient les observations de CAS pour les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson),
+    * 'StationObs' = Le fichier contient les observations de CAS pour les stations d'observation associées
     aux communautés (non disponible au mois de janvier 2012).
-    * __'BACKFILLED'__ : symbole présent lorsque le fichier contient des observations de CAS qui
+    * __'BACKFILLED'__ : Symbole présent lorsque le fichier contient des observations de CAS qui
     ne sont pas calculées en temps-réel, mais qui sont calculées à partir des données remblayées ou
     corrigées (reçues dans les 48 heures suivant l'heure de validité).
 
@@ -72,13 +75,13 @@ possibles sont les suivantes:
 
   * AAAAMM_MONTHLY_AQHI_CGNDB_SiteFcst.csv
 
-où: 
+où : 
 
-* __AAAA__ : année des prévisions, 4 chiffres;
-* __MM__ : mois des prévisions, 2 chiffres (janvier = 01);
-* __'MONTHLY'__ : symbole présent lorsque le fichier contient des données pour le mois;
-* __CGNDB__ : un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) identifiant chaque [communauté de la CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-* __'SiteFcst'__ : symbole indiquant que le fichier contient des prévisions de CAS pour une [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
+* __AAAA__ : Année des prévisions, 4 chiffres.
+* __MM__ : Mois des prévisions, 2 chiffres (janvier = 01).
+* __'MONTHLY'__ : Symbole présent lorsque le fichier contient des données pour le mois.
+* __CGNDB__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) identifiant chaque [communauté de la CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+* __'SiteFcst'__ : Symbole indiquant que le fichier contient des prévisions de CAS pour une [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
 
 Une [liste complète des communautés](aqhi.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
 
@@ -86,29 +89,29 @@ Une [liste complète des communautés](aqhi.geojson), avec les codes de [CGNDB](
 
   * AAAAMMDDhh_SPECIE_REGION_MODELTYPE.csv
     
-où:
+où :
 
-* AAAA: année pour laquelle les données ont été générées, 4 chiffres;
-* MM: mois pour lequel les données ont été générées, 2 chiffres (Janvier = 01);
-* DD: jour pour lequel les données ont été générées, 2 chiffres;
-* hh: heure pour laquelle les données ont été générées, 2 chiffres (00 ou 12 UTC);
-* 'SPECIE': nom de l'espèce chimique. Les options possibles sont les suivantes:
-    * 'O3'= Ozone,
-    * 'NO2'= Dioxyde d'azote,
-    * 'PM2.5'= Particules d'un diamètre de moins de 2.5 um,
-    * 'PM10'= Particules d'un diamètre de moins de 10 um,
-    * 'AQHI'= Cote Air Santé,
-* REGION: Nom de la région d'Environnement et Changement climatique Canada  pour laquelle les données sont valides. Les valeurs
-possibles sont les suivantes:
-    * 'ATL'= Région de l'Atlantique,
-    * 'ON'= Région de l'Ontario,
-    * 'PNR'= Région des Prairies et du Nord,
-    * 'PYR'= Région du Pacifique et du Yukon,
-    * 'QC'= Région du Québec;
-* MODELTYPE: Système utilisé pour générer les données. Les options possibles sont les suivantes :
-    * 'AQFM'= Modèle de prévision de la qualité de l'air,
-    * 'UMOSAQ'= Le système de post-traitement "Updateable Model Output Statistics" appliqué aux sorties bruts de l'AQFM,
-    * 'UMOSAQMIST'= Données combinées des systèmes AQFM et UMOSAQ générées à fournir des informations additionelles
+* __AAAA__ : année pour laquelle les données ont été générées, 4 chiffres;
+* __MM__ : mois pour lequel les données ont été générées, 2 chiffres (Janvier = 01);
+* __DD__ : jour pour lequel les données ont été générées, 2 chiffres;
+* __hh__ : heure pour laquelle les données ont été générées, 2 chiffres (00 ou 12 UTC);
+* __'SPECIE'__ : nom de l'espèce chimique. Les options possibles sont les suivantes:
+    * 'O3' = Ozone
+    * 'NO2' = Dioxyde d'azote
+    * 'PM2.5' = Particules d'un diamètre de moins de 2.5 um
+    * 'PM10' = Particules d'un diamètre de moins de 10 um
+    * 'AQHI' = Cote Air Santé
+* __REGION__ : Nom de la région d'Environnement et Changement climatique Canada  pour laquelle les données sont valides. Les valeurs
+possibles sont les suivantes :
+    * 'ATL' = Région de l'Atlantique
+    * 'ON' = Région de l'Ontario
+    * 'PNR' = Région des Prairies et du Nord
+    * 'PYR' = Région du Pacifique et du Yukon
+    * 'QC' = Région du Québec
+* __MODELTYPE__ : Système utilisé pour générer les données. Les options possibles sont les suivantes :
+    * 'AQFM' = Modèle de prévision de la qualité de l'air,
+    * 'UMOSAQ' = Le système de post-traitement "Updateable Model Output Statistics" appliqué aux sorties bruts de l'AQFM,
+    * 'UMOSAQMIST' = Données combinées des systèmes AQFM et UMOSAQ générées à fournir des informations additionelles
     aux météorologues car les données d'UMOSAQ ne sont pas toujours disponibles directement aux points d'observation.
 
 ## Contenu des fichiers
@@ -118,7 +121,7 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
 
   * **En-tête**
   
-   L'en-tête présent sur la première ligne contient les informations suivantes:
+   L'en-tête présent sur la première ligne contient les informations suivantes :
    
    Date,Hour,CGNDB_Site1,CGNDB_Site2,...,CGNDB_SiteN
    
@@ -132,7 +135,7 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
   
    Les observations sont fournit avec une précision de deux décimales.
    
-   Chaque ligne d'un bloc de données contient les informations suivantes:
+   Chaque ligne d'un bloc de données contient les informations suivantes :
 
     AAAA-MM-JJ,hh,CAS_Site1,CAS_Site2,...,CAS_SiteN
 
@@ -150,12 +153,12 @@ Les fichiers mensuels sont également ordonnés en ordre décroissant avec les o
 Ceux-ci sont disponibles sur le Datamart du SMC pour une période de 12 mois.
 
 * **Fichiers CSV des observations de CAS calculées à partir des donnèes remblayées ou corrigées**
-(uniquement disponible dans les fichiers mensuels):
+(uniquement disponible dans les fichiers mensuels) :
 
 Ces fichiers ont la même structure que les fichiers mensuels décrits précédemment, mais son contenu en diffère. En effet, ce fichier présente les valeurs de la CAS calculées 
 48 heures suivant l’heure de validité à partir des données corrigées et remblayées. 
 
-* **Fichiers CSV des prévisions publiques de CAS** (uniquement disponible dans le fichiers mensuels):
+* **Fichiers CSV des prévisions publiques de CAS** (uniquement disponible dans le fichiers mensuels) :
 
   * **En-tête**
   
@@ -170,7 +173,7 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
    
    CGNDBcode,CommunityName,IssueDate,IssueTime,ForecastPeriod,Value,AmendmentFlag
 
-   où:
+   où :
    
       * CGNDBcode : Code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
       * CommunityName : Nom utilisé de la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
@@ -187,13 +190,13 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
 Note: Les fichiers mensuels de prévisions publiques de la CAS sont ordonnés en ordre décroissant avec les prévisions les plus récentes en premier. 
 Ceux-ci sont disponibles sur le Datamart du SMC pour une période de 12 mois.
   
-* **Fichiers CSV qui contiennent les données des modèles**:
+* **Fichiers CSV qui contiennent les données des modèles** :
  
   * **En-tête**
   
-   L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes:
+   L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes :
 
-    1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10):
+    1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10) :
 stationId,YYYYMMDDhh +0, YYYYMMDDhh+1, ... , YYYYMMDDhh+48
 
     où:
@@ -214,15 +217,15 @@ cgndb,forecast date (hour0),forecast date (hour1), ... , forecast date (hour47),
  
    Les données des modèles pour toutes les espèces sont fournit avec 2 décimales.
    
-   Chaque ligne d'un bloc de données contient les informations suivantes:
+   Chaque ligne d'un bloc de données contient les informations suivantes :
 
-   1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10):
+   1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10) :
 StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
 
-   2) Pour les fichiers qui contiennent des données de CAS:
+   2) Pour les fichiers qui contiennent des données de CAS :
 StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
 
-   où:
+   où :
    
        * StationID: Identifiant NAPS unique de la station d’observation.
        * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).

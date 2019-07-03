@@ -10,16 +10,18 @@ Cette page décrit les données d'observations et de prévisions disponibles en 
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
 Les données sont accessibles à adresse suivante :
 
-* Observations: 
+* Observations : 
+
   https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/xml
   
-* Prévisions publiques: 
+* Prévisions publiques : 
+  
   https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/realtime/xml
 
 Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
@@ -28,40 +30,40 @@ Une [liste complète des villes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/publ
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
-* **Observations** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore):
+* **Observations** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
        
-  * Fichier horaire: AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
-  * Copie du fichier d'observation le plus récent: AQ_OBS_CGNDBcode_CURRENT.xml
+  * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
+  * __Copie du fichier d'observation le plus récent__ : AQ_OBS_CGNDBcode_CURRENT.xml
 
-où:
+où :
 
-* 'AQ_OBS' : le préfixe du nom de fichier. Chaîne de caractères constante.
-* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-* AAAA: année de l'observation, 4 chiffres;
-* MM: mois de l'observation, 2 chiffres (janvier = 01);
-* JJ: jour de l'observation, 2 chiffres;
-* hh: heure de l'observation, 2 chiffres;
-* mm: minute de l'observation, 2 chiffres;
+* __'AQ_OBS'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
+* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+* __AAAA__ : Année de l'observation, 4 chiffres.
+* __MM__ : Mois de l'observation, 2 chiffres (janvier = 01).
+* __JJ__ : Jour de l'observation, 2 chiffres.
+* __hh__ : Heure de l'observation, 2 chiffres.
+* __mm__ : Minute de l'observation, 2 chiffres.
 
 
-* **Prévisions publiques** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore):
+* **Prévisions publiques** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
 
-  * Standard:        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
-  * Amendements:     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
+  * __Standard__:        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
+  * __Amendements__ :     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
   * Copie du fichier de prévision le plus récent: AQ_FCST_CGNDBcode_CURRENT.xml )
 
-où:
+où :
 
-* 'AQ_FCST': le préfixe du nom de fichier. Chaîne de caractères constante.
-* CGNDBcode: un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-* AAAA: année de l'émission, 4 chiffres;
-* MM: mois de l'émission, 2 chiffres (janvier = 01);
-* JJ: jour de l'émission, 2 chiffres;
-* hh: heure de l'émission, 2 chiffres;
-* mm: minute de l'émission, 2 chiffres;
-* 'AMD':  suffixe indiquant que le fichier est un amendement.
+* __'AQ_FCST'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
+* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+* __AAAA__ : Année de l'émission, 4 chiffres.
+* __MM__ : Mois de l'émission, 2 chiffres (janvier = 01).
+* __JJ__ : Jour de l'émission, 2 chiffres.
+* __hh__ : Heure de l'émission, 2 chiffres.
+* __mm__ : Minute de l'émission, 2 chiffres.
+* __'AMD'__ :  Suffixe indiquant que le fichier est un amendement.
 
 ## Notes
 

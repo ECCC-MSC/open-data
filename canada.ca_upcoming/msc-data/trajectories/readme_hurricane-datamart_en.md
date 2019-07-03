@@ -16,7 +16,7 @@ Hurricane tracks issued by the Canadian Hurricane Centre hurricanes are publishe
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a  shapefile.
 
@@ -24,32 +24,32 @@ You can find the shapefiles at :
 
 https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/storm-name/
 
-where:
+where :
 * storm-name is the storm name in uppercase (e.g. 'BERTHA' )
 
 ## Directory and file name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 File naming convention is :
 
 YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
 
-where:
+where :
 * __YYYYMMDD__ : Forecast issuance date
 * __HHMM__ : Time in UTC 
 * __Z__ : Constant string, indicating Zulu time (UTC code name)
-* __STORM-NAME__ : storm name (e.g. BERTHA - hurricane, post-tropical, etc)
-* __TYPE__ : type of shapefile:
-    * "pts" - the forecast locations (points) 
-    * "lin" - the line segments connecting forecast track points
-    * "rad" - contains forecast wind radii information (wind quadrants)
-    * "err" - contains information on track forecast error ("error cone")
+* __STORM-NAME__ : Storm name (e.g. BERTHA - hurricane, post-tropical, etc)
+* __TYPE__ : Type of shapefile:
+    * "pts" - The forecast locations (points) 
+    * "lin" - The line segments connecting forecast track points
+    * "rad" - Contains forecast wind radii information (wind quadrants)
+    * "err" - Contains information on track forecast error ("error cone")
 	
 ## File content
 
 When querying the points (pts) shapefile, the contents of each column are given
-as follows:
+as follows :
 
 | Element   |   Description    |
 |-----------|------------------|
@@ -74,7 +74,7 @@ When querying the 'lin' shapefile, the elements have the same definition as in t
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 
