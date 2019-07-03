@@ -4,6 +4,22 @@
 
 [TOC](../readme_en.md) > MSC GeoMet web services
 
+# Table of Contents
+- [Web Map Service (WMS)](#web-map-service-wms)
+    * [WMS GetCapabilities](#wms-getcapabilities)
+    * [WMS GetMap](#wms-getmap)
+    * [WMS GetFeatureInfo](#wms-getfeatureinfo)
+    * [WMS GetLegendGraphic](#wms-getlegendgraphic)
+    * [Handling Time](#handling-time)
+    * [Handling Styles](#handling-styles)
+- [Web Coverage Service (WCS)](#web-coverage-service-wcs)
+    * [WCS GetCapabilities](#wcs-getcapabilities)
+    * [WCS DescribeCoverage](#wcs-describecoverage)
+    * [WCS GetCoverage](#wcs-getcoverage)
+    * [Handling Time](#wcstime)
+    * [Usage Example](#usage-example)
+- [OGC API - Features (WFS 3)](#ogc-api-features)
+
 # Geospatial Web Services
 
 Web services are protocols designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
