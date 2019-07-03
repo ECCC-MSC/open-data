@@ -50,7 +50,7 @@ Les services WMS de GeoMet du SMC peuvent également être intégrées dans des 
 
 ![Exemple de couche radar dans MeteoCAN](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
 
-Pour de l'information additionnelle sur les capacités et les paramètres des services web WMS, WFS et WCS de GEoMet du SMC, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
+Pour de l'information additionnelle sur les capacités et les paramètres des services web WMS, WFS et WCS de GeoMet du SMC, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
 
 ### Images à la volée
 
@@ -86,7 +86,7 @@ Les exemples ci-dessus précisent certains paramètres et envoient une requête 
 
 * **SERVICE** - le nom du service web de l'Open Geospatial Consortium utilisé dans la requête. Dans les deux exemples, le standard Web Map Service (WMS) est utilisé
 * **VERSION** - la version du service, dans ce cas, `1.3.0`
-* **REQUEST** - le type de requête spécifié. Le service WMS rend disponible plusieurs types de requêtes. Dans le cas présent, une requête GetMap est spécifié, ce qui retourne une image
+* **REQUEST** - le type de requête spécifié. Le service WMS rend disponible plusieurs types de requêtes. Dans le cas présent, une requête GetMap est spécifiée, ce qui retourne une image
 * **BBOX** - l'étendue géographique associée à l'image désirée. Dans ce cas, la requête couvre l'ensemble de la surface de la planète. Les coordonnées sont fournies dans les unités du système de coordonnées cartographiques spécifié dans le paramètre qui suit
 * **CRS** - le système de coordonnées cartographiques utilisé pour créer l'image désirée. Dans les deux exemples, le CRS est `EPSG:4326` (i.e. WGS 84), le système de coordonnées cartographiques utilisé notamment par le Système mondial de positionnement (GPS)
 * **WIDTH** - la largeur en pixels de l'image retournée
@@ -108,7 +108,7 @@ Les données brutes peuvent également être téléchargées directement sur le 
 
 Les données brutes du SMC peuvent être récupérées par les services web GeoMet du SMC. Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section sur les [services web](../msc-geomet/web-services_fr.md).
 
-Les données brutes à des lieux géographiques spécifiques peuvent être récupérés par une requête Web Map Service (WMS) GetFeatureInfo. Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
 Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
 

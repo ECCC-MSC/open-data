@@ -17,7 +17,7 @@ L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent
 
 ### GeoMet-Météo
 
-GeoMet-Météo donne accès aux données météorologique, hydriques et environnementales du Service météorologique du Canada (SMC) par le biais de services web interopérables. Ce service donne accès aux données telles que les alertes météorologiques, les prévisions publiques, les observations ainsi que les données de modèles de prévision numérique du temps.
+GeoMet-Météo donne accès aux données météorologiques, hydriques et environnementales du Service météorologique du Canada (SMC) par le biais de services web interopérables. Ce service donne accès aux données telles que les alertes météorologiques, les prévisions publiques, les observations ainsi que les données de modèles de prévision numérique du temps.
 
 Capacités de ce service :
 * L'URL WMS de GeoMet-Météo : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities
@@ -37,7 +37,7 @@ Le code source de GeoMet-Climat et de l'Outil d'extraction de données climatiqu
 
 ### GeoMet-OGC-Features
 
-GeoMet-OGC-Features donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC)par le biais du standard émergeant [OGC-API-Features (WFS 3) de l'Open Geospatial Consortium (OGC)](https://github.com/opengeospatial/WFS_FES). Ce service donne présentement accès aux données hydrométriques et climatiques.
+GeoMet-OGC-Features donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC-API-Features (WFS 3) de l'Open Geospatial Consortium (OGC)](https://github.com/opengeospatial/WFS_FES). Ce service donne présentement accès aux données hydrométriques et climatiques.
 
 Capacités de ce service :
 * L'URL WFS 3 de GeoMet-OGC-Features : https://geo.weather.gc.ca/geomet/features/?f=html
