@@ -31,7 +31,7 @@ Aperçu et exemples documentant la façon d'accéder aux données ouvertes du Se
 
 ## Découverte des données et métadonnées
 
-Les métadonnées du Service météorologique du Canada sont disponibles sur le [portail du gouvernement ouvert du Canada](https://open.canada.ca/fr/open-data), qui permet aux utilisateurs de rechercher des données ouvertes pertinentes aux Canadiens et Canadiennes, apprendre comment travailler avec les jeux de données et voir ce que les citoyens ont fait avec les données ouvertes dans l'ensemble du pays.
+Les métadonnées du Service météorologique du Canada sont disponibles sur le [portail du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/donnees-ouvertes), qui permet aux utilisateurs de rechercher des données ouvertes pertinentes aux Canadiens et Canadiennes, apprendre comment travailler avec les jeux de données et voir ce que les citoyens ont fait avec les données ouvertes dans l'ensemble du pays.
 
 ## Licence
 

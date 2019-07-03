@@ -18,8 +18,8 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * [Weather and marine alerts](alerts/readme_alerts_en.md)
 * [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
-* [Current marine conditions and 7-days forecast for marine regions](marine_weather/readme_marine-weather_en.md)
-* [Meteocode for Canadian forecast public regions ](meteocode/readme_meteocode_en.md)
+* [Current marine conditions and 7-days forecast for marine regions](marine-weather/readme_marine-weather_en.md)
+* [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](https://dd.weather.gc.ca/meteocode/geodata/)
 
 
