@@ -57,7 +57,7 @@ Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, 
 | SERVICE         | Le service que l'utilisateur sollicite. Dans ce cas présent, `wms`|
 | VERSION         | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit `1.3.0`|
 | REQUEST         | Le type de requête, soit `GetMap`|
-| LAYERS          | L'identifiant des couches à être affichées sur l'image. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#getcapabilities)|
+| LAYERS          | L'identifiant des couches à être affichées sur l'image. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
 | STYLES          | Le style à utiliser pour l'affichage de la couche. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. 
 | CRS (version 1.3.0) ou SRS (version 1.1.0) | Le système de coordonnées cartographiques (CRS) à utiliser pour créer l'image. **Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé**|
 | BBOX            | L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 *et avec la projection EPSG:4326*, l'ordre des coordonnées est `minY,minX,maxY,maxX`. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est `minX,minY,maxX,maxY`|
@@ -67,8 +67,8 @@ Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, 
 
 | Paramètres optionnels | Définition |
 | ------------------------- | ---------- |
-| TIME            | La date et l'heure associées à l'image désirée. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#handling-time)|
-| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#handling-time)|
+| TIME            | La date et l'heure associées à l'image désirée. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
+| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
 
 La requête WMS GetMap suivante demande une image de la couche de température de l'air du Système global de prévision déterministe (SGPD) :
 
@@ -86,12 +86,13 @@ Et retourne :
 Une requête WMS GetFeatureInfo permet de récupếrer les données brutes pour un lieu géographique spécifique. Une requête WMS GetFeatureInfo ressemble à une requête WMS GetMap à laquelle s'ajoute les paramètres suivants : `I`, `J` et `QUERY_LAYERS`. Ces paramètres représentent la localisation horizontale et verticale du pixel ainsi que le nom des couches à interroger.
 
 <br>
+
 | Paramètres obligatoires | Définition |
 | ------------------------- | ---------- |
 | SERVICE         | Le service que l'utilisateur sollicite. Dans ce cas, `wms`|
 | VERSION         | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit `1.3.0`|
 | REQUEST         | Le type de requête, soit `GetFeatureInfo`|
-| LAYERS          | L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#getcapabilities)|
+| LAYERS          | L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
 | CRS (version 1.3.0) ou SRS (WMS version 1.1.0) | Le système de coordonnées cartographiques (CRS) à utiliser pour la requête. **Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé** |
 | BBOX            | L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 *et avec la projection EPSG:4326*, l'ordre des coordonnées est `minY,minX,maxY,maxX`. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est `minX,minY,maxX,maxY`|
 | FORMAT          | Le format de données pour l'image désirée. Les valeurs possibles pour ce paramètre sont : `image/jpeg` ou `image/png`|
@@ -105,9 +106,9 @@ Une requête WMS GetFeatureInfo permet de récupếrer les données brutes pour 
 | ------------------------- | ---------- |
 | INFO_FORMAT     | Le format des données retournées par la requête. Les valeurs acceptées pour ce paramètres sont : `text/plain` (valeur par défaut) ou `application/vnd.ogc.gml`|
 | FEATURE_COUNT   | Le nombre d'entités retourné par la requête|
-| TIME            | La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#handling-time)|
-| DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
-| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#handling-time)|
+| TIME            | La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
+| DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#spécification-du-temps) section.|
+| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
 
 Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dessus :
 
@@ -131,14 +132,14 @@ Par exemple, la couche de température de l'air du SGPD offre plusieurs styles d
 | SERVICE         | Le service que l'utilisateur sollicite. Dans ce cas, `wms`|
 | VERSION         | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit `1.3.0`|
 | REQUEST         | Le type de requête, soit `GetLegendGraphic`|
-| LAYER           | L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#getcapabilities)|
+| LAYER           | L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
 | FORMAT          | Le format de données pour la légende désirée. Les valeurs possibles pour ce paramètre sont : `image/jpeg` ou `image/png`|
 | SLD_VERSION     | La version du document SLD. Nous recommendons d'utiliser la version `1.1.0`|
 
 | Paramètres optionnels  | Définition |
 | ------------------------- | ---------- |
-| STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#getcapabilities)|
-| SLD             | Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section [Spécification des styles](#handling-styles) pour les explications détaillées|
+| STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
+| SLD             | Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section [Spécification des styles](#spécification-des-styles) pour les explications détaillées|
 | SLD_BODY        | Permet à l'usager d'inclure le document SLD directement dans la requête|
 
 Un exemple de requête GetLegendGraphic pour la couche de vent (GDWPS.UU.1h) du Système Global de Prévision Déterministe de Vague (SGPDV) va comme suit :
@@ -303,7 +304,7 @@ Une requête WCS GetCoverage est utilisée afin de récupérer les données brut
 | SERVICE      | Le service que l'utilisateur sollicite. Dans ce cas, `wcs`|
 | VERSION      | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version supportée, soit `2.0.1`|
 | REQUEST      | Le type de requête, soit `GetCoverage`|
-| COVERAGEID   | Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  [WCS GetCapabilities](#wcsgetcap)|
+| COVERAGEID   | Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  [WCS GetCapabilities](#wcs-getcapabilities)|
 | FORMAT       | Le format de données désiré pour les données brutes. Les valeurs possibles pour ce paramètre sont : `image/tiff` (GeoTIFF) ou `image/netcdf` (NetCDF)|
 
 
@@ -316,14 +317,14 @@ Une requête WCS GetCoverage est utilisée afin de récupérer les données brut
 |SIZE=axis()       | La grosseur d'un pixel de la donnée demandée pour un axe. Si aucune valeur n'est spécifiée, la grosseur de pixel de la donnée récupérée pourrait être différente de la donnée d'origine. Notez que les paramètres `RESOLUTION` et `SIZE` sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête|
 |INTERPOLATION     | La méthode d'interpolation utilisée si une mise à l'échelle est nécessaire. Les trois méthodes suivantes sont disponibles : `NEAREST`, `BILINEAR` et `AVERAGE`. Si aucune n'est spécifiée, la méthode par défaut est `NEAREST`|
 |RANGESUBSET       | Ce paramètre permet à l'usager de spécifier une bande de la donnée matricielle à récupérer. Le nom ou le numéro de la band doit être utilisé|
-|TIME              | La date et temps associés à la donnée demandée. LE format doit respecter le standard ISO8601. Pour davantage de détails au sujet de la composante temporelle, se référer à la section [Spécification du temps](#wcstime)|
-|DIM_REFERENCE_TIME| Le temps de la passe de modèle (model run), lorsque disponible, à récupérer par le biais de la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WCS](#wcstime)|
+|TIME              | La date et temps associés à la donnée demandée. LE format doit respecter le standard ISO8601. Pour davantage de détails au sujet de la composante temporelle, se référer à la section [Spécification du temps](#wcs-specification-du-temps)|
+|DIM_REFERENCE_TIME| Le temps de la passe de modèle (model run), lorsque disponible, à récupérer par le biais de la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WCS](#wcs-specification-du-temps)|
 
 Une requête WCS GetCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :
 
 [https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
 
-### <a name="wcstime"></a>Spécification du temps
+### <a name="wcs-specification-du-temps"></a>Spécification du temps
 
 Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre `TIME` ou `DIM_REFERENCE_TIME` n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches et dans le passé.
 
@@ -380,7 +381,7 @@ Notez que la limite pour une seule requête WCS GetCoverage est de 256 bandes à
 
 #### GeoMet-Météo
 
-Pour les requêtes temporelles WCS avec GeoMet-Météo, veuillez vous référer à section sur [la spécification du temps dans les requêtes WMS](#handling-time) puisque l'utilisation des paramètres `TIME` et `DIM_REFERENCE_TIME` demeure la même.
+Pour les requêtes temporelles WCS avec GeoMet-Météo, veuillez vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps) puisque l'utilisation des paramètres `TIME` et `DIM_REFERENCE_TIME` demeure la même.
 
 Les dimensions temporelles pour les requêtes WCS sur GeoMet-Météo ne sont pas fournies par les requêtes WCS GetCapabilities ou WCS DesbcribeCoverage. Les dimensions temporelles de ce service WCS ne sont accessibles que dans une requête WMS GetCapabilities.
 
