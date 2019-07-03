@@ -17,19 +17,19 @@ Principal components of CanSIPS
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 * https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/YYYY/MM/
 * https://dd.weather.gc.ca/ensemble/cansips/grib2/hindcast/raw/YYYY/MM/
 
-where:
+where :
 
-* __forecast__ : constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
-* __hindcast__ : constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
+* __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
+* __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [2012, 2013, ...]
 
@@ -46,33 +46,35 @@ Table lists the values of various parameters of the CanSIPS lat-lon grid.
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
-* Filename for the forecast: cansips_forecast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
-* Filename for the hindcast: cansips_hindcast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
+* Filename for the forecast : cansips_forecast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
+* Filename for the hindcast : cansips_hindcast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
 
-where:
+where :
 
-* __cansips__ : constant string indicating that the data is from the CanSIPS system.
-* __forecast__ : constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
-* __hindcast__ : constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
-* __raw__ : constant string indicating that the file contains raw data without bias correction
-* __latlon2.5x2.5__ : constant string indicating the latitude-longitude projection at a resolution of 2.5 x 2.5 degrees.
+* __cansips__ : Constant string indicating that the data is from the CanSIPS system.
+* __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
+* __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
+* __raw__ : Constant string indicating that the file contains raw data without bias correction
+* __latlon2.5x2.5__ : Constant string indicating the latitude-longitude projection at a resolution of 2.5 x 2.5 degrees.
 * __VAR__ : Variable type included in this file. To consult a complete list, refer to the variables section
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [2012, 2013, ...]
-* __allmembers__ : constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file.
-* __grib2__ : constant string indicating the GRIB2 format is used.
+* __allmembers__ : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file.
+* __grib2__ : Constant string indicating the GRIB2 format is used.
 
-Example of file name: cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
+Example of file name : 
+
+cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
 
 This GRIB2 file originates from CMC CanSIPS system. The data in the file have a start time on the first day of October 2012. The variable in the file is the monthly mean of the geopontential height at 500hpa, for all the members of the ensemble. The projection used is the latitude-longitude projection at a resolution of 2.5 x 2.5 degrees.
 
 ## Internal Structure of the Files
 
-The internal structure of the forecast and hindcast files is the following: 
+The internal structure of the forecast and hindcast files is the following : 
 
 Each file contains 240 temporal records (12 months times 20 ensemble members) and starts with the first ensemble member. Ensemble members are placed in an incremental order within the CanSIPS files.
 
@@ -86,7 +88,7 @@ The data are available at surface and for certain isobaric levels.
 
 ## List of variables
 
-Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
 * [Zero lead time forecast](https://weather.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-ZERO_hindcast_e.html)
 * [Non-zero lead time forecast](https://weather.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-NONZERO_hindcast_e.html)

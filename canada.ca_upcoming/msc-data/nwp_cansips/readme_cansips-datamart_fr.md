@@ -16,7 +16,7 @@ Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](rea
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
@@ -45,7 +45,7 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan.
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
@@ -65,7 +65,9 @@ où :
 * __allmembers__ : Chaîne de caractères constante indiquant que tous les membres [01, 02, 03, ..., 20] de l’ensemble sont regroupés dans ce fichier.
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
-Exemple de nom de fichier : cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
+Exemple de nom de fichier : 
+
+cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
 
 Ce fichier de format GRIB2 (.grib2) a été généré par la composante prévision système SPISCan sur une grille latitude-longitude à 2.5 x 2.5 degrés de résolution. La prévision a été produite pour le mois d’octobre 2012 (2012-10). Ce fichier contient les moyennes mensuelles de tous les membres du système (allmembers) pour la variable « hauteur géopotentielle (HGT) » au niveau isobarique 500hpa (ISBL_0500).
 

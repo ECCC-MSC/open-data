@@ -10,9 +10,9 @@ Cette page décrit les données [système de prévisions d'ensemble Nord-Améric
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les fichiers XML de SPENA se trouvent à l'adresse suivante:
+Les fichiers XML de SPENA se trouvent à l'adresse suivante :
 
 * https://dd.meteo.gc.ca/ensemble/naefs/xml
 
@@ -20,7 +20,7 @@ Un historique de 30 jours de prévisions est conservé dans ce répertoire.
 
 ## Nomenclature des répertoires des fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 La structure des répertoires est basée sur la date d'intégration et la
 variable contenu dans les fichiers XML. Ils suivent la nomenclature   
@@ -28,59 +28,60 @@ suivante:
 
 * https://dd.meteo.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE
 
-où:
+où :
 
-* __AAAAMMJJ__ : date du début d'intégration de la prévision
-* __ZZ__ : heure UTC d'intégration de la prévision. Peut être '00' ou '12'
-* __VARIABLE__ : élément du temps dans ce répertoire. Voir la section 'Liste
+* __AAAAMMJJ__ : Date du début d'intégration de la prévision
+* __ZZ__ : Heure UTC d'intégration de la prévision. Peut être '00' ou '12'
+* __VARIABLE__ : Élément du temps dans ce répertoire. Voir la section 'Liste
 des variables' plus bas pour la liste complète des variables.
-* __TYPE__ : type de données. Pour l'instant, seules les sorties directes de
+* __TYPE__ : Type de données. Pour l'instant, seules les sorties directes de
 modèles sont disponibles ('raw').
 
-Exemple: pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
+Exemple : pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
 pour la vitesse du vent à la surface de seront dans le répertoire:
 
 https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+NOTE : TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des fichiers est la suivante :
 
 AAAAMMJJHH_GEPS-NAEFS-TYPE_EMPLACEMENT_PROVETAT_PAYS_VAR_DEB-FIN.xml.bz2
 
-où:
+où :
 
-* __AAAA__ : année de la prévision, 4 chiffres;
-* __MM__ : mois de la prévision, 2 chiffres (janvier = 01);
-* __JJ__ : jour de prévision, 2 chiffres;
-* __HH__ : heure du début la prévision, 2 chiffres (00 ou 12 - représentant
-l'heure en UTC);
-* __GEPS-NAEFS__ : un chaîne de caractères constante qui indique le modèle GEM
+* __AAAA__ : Année de la prévision, 4 chiffres.
+* __MM__ : Mois de la prévision, 2 chiffres (janvier = 01).
+* __JJ__ : Jour de prévision, 2 chiffres.
+* __HH__ : Heure du début la prévision, 2 chiffres (00 ou 12 - représentant
+l'heure en UTC).
+* __GEPS-NAEFS__ : Un chaîne de caractères constante qui indique le modèle GEM
 pour les EPSgramme (GEPS) dans le cadre du projets SPENA (en anglais,
-l'acronyme est NAEFS)
+l'acronyme est NAEFS).
 * __TYPE__ : Peut prendre la valeur 'RAW' (brute) pour les données brutes du
 modèle ou 'BC' pour les données débiaisées. (présentement seul RAW est
-disponible)
+disponible).
 * __EMPLACEMENT__ : Nom de l'emplacement pour lequel la prévision est émise.
 * __PROVETAT__ : Province (Canada) ou État (États-Unis, Mexique) de
 l'emplacement pour lequel la prévision est émise. Code de 2 lettres.  Pour
 les autres pays le
 code 'XX' est utilisé. Vous pouvez télécharger la liste anglaise de
-correspondance des codes ici:
+correspondance des codes ici : 
 http://www.state.ia.us/tax/forms/84055.pdf
 * __PAYS__ : Pays de l'emplacement pour lequel la prévision est émise.
 CA=Canada,
 US=États-Unis, MX=Mexique, etc. Pour une liste complète des pays, voir la
 section « Liste des pays » à la fin de ce fichier.
-* __VAR__ : Variables (voir section suivante pour la liste)
+* __VAR__ : Variables (voir section suivante pour la liste).
 * __DEB__ : Début de l'intervalle (en heures après la date de prévision) pour
 lequel des prévisions sont émises.
 * __FIN__ : Fin de l'intervalle (en heures après la date de prévision) pour
 lequel des prévisions sont émises.
 
-Exemple:
+Exemple :
+
 2010051000_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
 
 Ce fichier représente les données des modèles pour la date du 10 mai 2010
@@ -90,7 +91,8 @@ la pression au niveau de la mer (MSLP) pour les 384 premières heures de
 prévisions (000-384). C'est un fichier XML (xml) compressé à l'aide de    
 l'algorithme bzip2 (bz2).
 
-Exemple d'URL pour un fichier sur internet:
+Exemple d'URL pour un fichier sur internet :
+
 http://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
 
 ## Contenu des fichiers
@@ -113,7 +115,7 @@ prévision (voir la liste des modèles dans la section précédente « Liste
 des modèles ».
 Note: Certains modèles n'ont pas de prévisions pour certaines heures.
 
-Le contenu des fichiers est sous la forme:
+Le contenu des fichiers est sous la forme :
 <?xml version='1.0' encoding='UTF-8'?>
    <naefs_spena_forecast>
       <header>
@@ -143,7 +145,7 @@ Le contenu des fichiers est sous la forme:
 
 ## Liste des variables
 
-Les fichiers XML sont produits pour 10 variables:
+Les fichiers XML sont produits pour 10 variables :
 * Pression moyenne au niveau de la mer (MSLP)
 * Accumulation totale de précipitation à la surface (APCP-SFC)
 * Couvert nuageux total (TCDC)
@@ -157,32 +159,35 @@ Les fichiers XML sont produits pour 10 variables:
 
 Vous trouverez une liste en format XML des variables qui contient le nom  
 du répertoire associé, les descriptions et les unités, en français et 
-anglais à cette adresse:
+anglais à cette adresse :
+
 https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml
 
 ## Emplacements disponibles
 
 Les sorties XML des prévisions d'ensemble SPENA sont des interpolations
 de points de grille des prévisions aux coordonnées latitude-longitude
-de 540 emplacements:
-* 273 au Canada;
-* 137 aux États-Unis;
-* 74 au Mexique;
-* 56 dans les tropiques et au Groenland.
+de 540 emplacements :
+* 273 au Canada
+* 137 aux États-Unis
+* 74 au Mexique
+* 56 dans les tropiques et au Groenland
 
-Vous trouverez une liste en format XML des emplacements qui contient:
-* Le nom de l'emplacement;
-* La province ou l'État;
-* Le pays;
-* Les codes, lorsque qu'applicables: NAEFS, WMO, IATA, ICAO;
+Vous trouverez une liste en format XML des emplacements qui contient :
+* Le nom de l'emplacement
+* La province ou l'État
+* Le pays
+* Les codes, lorsque qu'applicables: NAEFS, WMO, IATA, ICAO
 * La longitude, la latitude et l'altitude (notez que l'altitude est 
 manquante pour quelques emplacements)
 
-Cette liste se trouve dans le fichier suivant:
+Cette liste se trouve dans le fichier suivant :
+
 https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml
 
 La correspondance pour les codes de 2 lettres pour les provinces ou les
-États peut-être trouvée dans ce document PDF:
+États peut-être trouvée dans ce document PDF :
+
 http://www.state.ia.us/tax/forms/84055.pdf
 
 ## Support 

@@ -12,7 +12,8 @@ The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) carries out ph
 
 CanSIPS is a multi-model ensemble (MME) system using two climate models developed by the Canadian Centre for Climate Modelling and Analysis (CCCma). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice.
 
-For more information on the system please see:  
+For more information on the system please see :  
+
 http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf
 
 __Models__ :
@@ -23,19 +24,19 @@ __Models__ :
 
 Atmospheric models CanAM3 and CanAM4 are coupled to the oceanic model CanOM4 in CanCM3 and CanCM4, respectively. 
 
-For a more detailed description of the models please visit this link:
+For a more detailed description of the models please visit this link :
+
 http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1
 
 __CanSIPS forecast configuration__ :
 
 Ensemble size for the forecast is 20 members (10 CanCM3 members + 10 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons.
 
-
 ## Access
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [GRIB2 data available on the MSC Datamart](readme_cansips-datamart_en.md) 
 * [Indices in CSV format available on the MSC Datamart](readme_cansips-datamartcsv_en.md)
@@ -45,7 +46,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
@@ -53,7 +54,7 @@ The [metadata of the Canadian Seasonal to Inter-annual Prediction System are ava
 
 ## Products
 
-List and links to the products available for this dataset:
+List and links to the products available for this dataset :
 
 ### Deterministic forecast maps
 

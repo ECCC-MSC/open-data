@@ -15,7 +15,7 @@ The North American Ensemble Forecast System (NAEFS) is a joint project involving
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [XML data available on the MSC Datamart](readme_naefs-datamart_en.md) 
 
@@ -23,15 +23,15 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
 
 ### Metadata
 
-_Upcoming._
+Upcoming.
 
 ## Products
 
-List and links to the products available for this dataset:
+List and links to the products available for this dataset :
 
 * [Temperature Anomaly Forecast: Day 8 to 14 Outlooks](https://weather.gc.ca/ensemble/naefs/semaine2_combinee_e.html)
 * [EPSgrams for NAEFS Based on Ensemble and Deterministic Forecasts](https://weather.gc.ca/ensemble/naefs/EPSgrams_e.html)
@@ -40,7 +40,7 @@ List and links to the products available for this dataset:
 
 ## Technical documentation
 
-_Not available._
+Not available.
 
 ## Change log
 

@@ -17,13 +17,13 @@ Principal components of CanSIPS
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 CanSIPS calculates a suite of oceanic and atmospheric indices (e.g. monsoon indices, PNA, NAO, El NINO, etc.) which can be used for seasonal climate forecasting and monitoring. 
 
 A more ![detailed description of the indices](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_CANSIPS_e.pdf) is available.
 
-The files containing atmospheric and oceanic CanSIPS indices can be accessed at the following URLs:
+The files containing atmospheric and oceanic CanSIPS indices can be accessed at the following URLs :
 
 __Forecast files__ :
 
@@ -44,22 +44,22 @@ __Observations__ :
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The forecast and hindcast files have the following nomenclature:
+The forecast and hindcast files have the following nomenclature :
 
 * YYYYMMDD00_indices_month_YYYY1MM1-YYYY2MM2.csv
 * YYYYMMDD00_indices_season_YYYY1MM1-YYYY2MM2.csv
 
-where:
+where :
 * __YYYY__ : Year of the forecast initiation
 * __MMDD__ : Month and day of the forecast initiation
 * __YYYY1MM1__ : Year and month of the forecast start
 * __YYYY2MM2__ : Year and month of the forecast end 
 
-The observation files have the following nomenclature:
+The observation files have the following nomenclature :
 
 * observed_indices_month_YYYY1MM1-YYYY2MM2.csv
 
-where:
+where :
 * __YYYY1MM1__ : Year and month the index calculation starts
 * __YYYY2MM2__ : Year and month the index calculation ends
 
@@ -67,7 +67,7 @@ Observational indices based on the sea surface temperature anomalies are calcula
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

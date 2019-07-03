@@ -10,9 +10,9 @@ This page describes the [North American ensemble forecast system](readme_naefs_e
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The NAEFS XML files are available at the following address:
+The NAEFS XML files are available at the following address :
 
 * https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/
 
@@ -20,7 +20,7 @@ A history of 30 days of forecast is kept in this directory.
 
 ## Nomenclature of file directories 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 The files are grouped in a directory tree that is based on the date
 and the variable contained in the XML files. The directories have the 
@@ -29,44 +29,44 @@ following nomenclature:
 * https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE
 
 
-where:
-* __AAAAMMJJ__ : forecast integration date, year (YYYY), month (MM) and day (DD)
-* __ZZ__ : forecast integration time in UTC. Can be '00' or  '12'
-* __VARIABLE__ : variable in the XML files in the directory. Refer to the 'Variable List' section below for a complete list.
-* __TYPE__ : data type. Currently, only the direct model output ('raw') are
+where :
+* __AAAAMMJJ__ : Forecast integration date, year (YYYY), month (MM) and day (DD)
+* __ZZ__ : Forecast integration time in UTC. Can be '00' or  '12'
+* __VARIABLE__ : Variable in the XML files in the directory. Refer to the 'Variable List' section below for a complete list.
+* __TYPE__ : Data type. Currently, only the direct model output ('raw') are
 available.
 
-Example: for the 12Z forecast on May 7th 2010, the raw data for the
+Example : for the 12Z forecast on May 7th 2010, the raw data for the
 surface wind speed will be in this directory :
 
 https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/
 
 ## Nomenclature of file names :
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-The file name follows this nomenclature:
+The file name follows this nomenclature :
 
 * AAAAMMJJHH_GEPS-NAEFS-TYPE_LOCATION_PROVSTATE_COUNTRY_VAR_START-END.xml.bz2
 
-where:
+where :
 
-* __AAAA__ : forecast year, 4 digit;
-* __MM__ : forecast month, 2 digit (January = 01);
-* __JJ__ : forecast day, 2 digit;
-* __HH__ : integration time, 2 digit (00 or 12 - representing UTC time);
-* __GEPS-NAEFS__ : constant string indicating the GEM model (GEPS) for the
+* __AAAA__ : Forecast year, 4 digit.
+* __MM__ : Forecast month, 2 digit (January = 01).
+* __JJ__ : Forecast day, 2 digit.
+* __HH__ : Integration time, 2 digit (00 or 12 - representing UTC time).
+* __GEPS-NAEFS__ : Constant string indicating the GEM model (GEPS) for the
 EPSgrams in the scope of the NAEFS project.
 * __TYPE__ : Can take the value 'RAW' for raw data model or 'BC' for
-bias corrected data (currently only RAW is available)
+bias corrected data (currently only RAW is available).
 * __LOCATION__ : Location name for the given forecast.
 * __PROVSTATE__ : Location province (Canada) or State (USA, Mexico). 2
 characters code. For other countries, the code 'XX' is used. You can
-download the code correspondence list here:
+download the code correspondence list here : 
 http://www.state.ia.us/tax/forms/84055.pdf
 * __COUNTRY__ : Location country for the emitted forecast. CA=Canada,
 US=USA, MX=Mexico, etc. For a complete list, refer to the « Country list »
-section a the end of this file
+section a the end of this file.
 * __VAR__ : Variables. See the following section for a complete list.
 * __START__ : Interval start time (in hours after the forecast start time) for
 which the forecast is emitted.
@@ -74,7 +74,7 @@ which the forecast is emitted.
 which the forecast is emitted.
 
 
-Example:
+Example :
 
 2010051000_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
 
@@ -84,7 +84,7 @@ Ontario (ON), Canada (CA). The mean sea level pressure (MSLP) will be
 contained in this file for the first 384 hours of forecast (000-384). This
 is an XML files (xml) compressed using bzip algorithm (bz2).
 
-The complete URL would be:
+The complete URL would be :
 
 http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
 
@@ -103,9 +103,9 @@ Then follows the forecast blocks (<forecast>). Each forecast section
 corresponds to a specific forecast hour. Each forecast contains a series
 of models (<model>), containing the variable values for each model at this
 time (see the Models List in the last section).
-Note: Some models do not have a forecast at specific hours.
+Note : Some models do not have a forecast at specific hours.
 
-The file content looks like:
+The file content looks like :
 <?xml version='1.0' encoding='UTF-8'?>
    <naefs_spena_forecast>
       <header>
@@ -135,7 +135,7 @@ The file content looks like:
 
 ## Variable List
 
-The XML files are produced for 10 variables:
+The XML files are produced for 10 variables :
 * Mean Sea level Pressure (MSLP)
 * Accumulated Precipitation at the Surface (APCP-SFC)
 * Total Cloud Cover (TCDC)
@@ -158,30 +158,32 @@ https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml
 
 The XML output of the NAEFS ensemble forecasts are interpolated from grid
 points of the forecast at the latitude-longitude coordinates from 540 
-locations:
-* 273 in Canada;
-* 137 in United States;
-* 74 in Mexico;
-* 56 in the tropics and Greenland.
+locations :
+* 273 in Canada
+* 137 in United States
+* 74 in Mexico
+* 56 in the tropics and Greenland
 
-You can find locations list in XML format containing:
-* Location name;
-* State or province;
-* Country name;
-* Codes, when applicable: NAEFS, WMO, IATA, ICAO;
+You can find locations list in XML format containing :
+* Location name
+* State or province
+* Country name
+* Codes, when applicable: NAEFS, WMO, IATA, ICAO
 * Longitude, latitude and altitude (note that altitude is not available   
 for some locations)
 
-This list can be found at this address:
+This list can be found at this address :
+
 http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml
 
 The correspondence for the 2 letter codes between the Provinces or States
-can be found in this PDF document:
+can be found in this PDF document :
+
 http://www.state.ia.us/tax/forms/84055.pdf
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 

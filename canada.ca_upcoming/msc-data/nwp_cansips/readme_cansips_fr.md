@@ -13,6 +13,7 @@ Le Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan) proc�
 SPISCan est un système d'ensemble multi-modèle (Multi-Model Ensemble [MME]) utilisant deux modèles climatiques développés au Centre canadien de la modélisation et de l'analyse climatique (CCmaC). Ce système de prévision est entièrement couplé atmosphère-océan-glace-sol. SPISCan utilise l'infrastructure d'assimilation en place pour les autres systèmes de prévision afin d'obtenir les conditions initiales de l'atmosphère, de la température de la surface de la mer et de glace marine.
 
 Pour plus de détails sur ce système, consultez :
+
 http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_spiscan_20111220_f.pdf
 
 __Modèles__ :
@@ -24,6 +25,7 @@ __Modèles__ :
 Les modèles atmosphériques, CanAM3 et CanAM4, sont couplés avec le modèle océanique CanOM4 et forment les modèles couplés du climat CanCM3 et CanCM4 respectivement.
 
 Pour une description plus détaillée de ces modèles svp voir le lien :  
+
 http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=Fr&n=4A642EDE-1
 
 __Configuration des prévisions SPISCan__ :
@@ -46,7 +48,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 ### Licence
 
-La [Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Métadonnées
 

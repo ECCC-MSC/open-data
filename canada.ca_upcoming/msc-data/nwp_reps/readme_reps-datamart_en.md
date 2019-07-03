@@ -10,15 +10,15 @@ This page describes the [regional ensemble prediction system](readme_reps_en.md)
 
 # Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URLs :
 
 https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleDataType/HH/hhh
 
-where:
+where :
 * __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
 * __HH__ : Forecast run hour in UTC
 * __hhh__ : Forecast time
@@ -27,7 +27,7 @@ where:
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
 
-Values given to the parameters of the stereographic polar grid:
+Values given to the parameters of the stereographic polar grid :
 
 | Parameter | Value |
 | ------ | ------ |
@@ -39,13 +39,13 @@ Values given to the parameters of the stereographic polar grid:
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature:
+The files have the following nomenclature :
 
 CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
 
-where:
+where :
 
 * __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
 * __Variable__ : Variable name (ex: WIND) 
