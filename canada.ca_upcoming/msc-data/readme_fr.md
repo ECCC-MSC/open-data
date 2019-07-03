@@ -20,7 +20,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
-* [Polygones des régions de prévision](pub_forecast_polygons/readme_polygon_fr.md)
+* [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)
 
 ## Observations 
 
