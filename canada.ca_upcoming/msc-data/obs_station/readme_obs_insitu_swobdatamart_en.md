@@ -1,4 +1,4 @@
-[En Français](readme_swob-datamart_fr.md)
+[En Français](readme_obs_insitu_swobdatamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,7 @@
 
 # Surface Weather and Marine Observation Markup Language (SWOB Met-ML) by station in XML format
 
-This page describes the [surface weather and marine observation](readme_swob_en.md) data available in XML format.
+This page describes the [surface weather and marine observation](readme_obs_insitu_en.md) data available in XML format.
 
 ## Data location
 

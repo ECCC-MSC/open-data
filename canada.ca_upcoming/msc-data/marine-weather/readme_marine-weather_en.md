@@ -12,11 +12,11 @@ This page describes the data and products of the marine weather, issued by Envir
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [XML data available on the MSC Datamart](readme_marine-weather-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../how-to/readme_en.md) is available.
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
 ### Licence
 

@@ -17,7 +17,7 @@ These data are available on the data server services [MSC Datamart](../../msc-da
 * [Alphanumerical data available on the MSC Datamart](readme_bulletins-datamart_en.md) 
 * [Binary data available on the MSC Datamart](readme_bulletinsbufr-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../how-to/readme_en.md) is available.
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
 ### Licence
 

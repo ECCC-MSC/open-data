@@ -17,7 +17,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 * [Données alphanumériques disponibles sur le Datamart du SMC](readme_bulletins-datamart_fr.md) 
 * [Données binaires disponibles sur le Datamart du SMC](readme_bulletinsbufr-datamart_fr.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est disponible.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 

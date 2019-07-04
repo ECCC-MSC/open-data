@@ -38,7 +38,7 @@ Lorsque la prévision de l'ensemble est terminée, on construit une moyenne sais
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_cansips-datamart_fr.md) 
 * [Indices en format CSV disponibles sur le Datamart du SMC](readme_cansips-datamartcsv_fr.md)

@@ -1,4 +1,4 @@
-[En Français](readme_cangrd-datamart_fr.md)
+[En Français](readme_cmip5-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

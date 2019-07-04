@@ -15,9 +15,9 @@ Le Système de prévision d'ensemble Nord-Américain (SPENA) est un projet conjo
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données XML disponibles sur le Datamart du SMC](readme_naefs-datamart_fr.md) 
+* [Données XML disponibles sur le Datamart du SMC](readme_naefs-datamartxml_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
