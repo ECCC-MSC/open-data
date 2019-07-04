@@ -170,7 +170,7 @@ And returns:
 
 ### Handling Time
 
-Given the importance of temporal dimension for weather data, it is important for users to understand how MSC GeoMet handles time in WMS requests. By default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in the request, MSC GeoMet will return the closest elapsed time interval available for the nearest past model run.
+Given the importance of temporal dimension for weather data, it is important for users to understand how MSC GeoMet handles time in WMS requests. By default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in the request, MSC GeoMet will return the closest time interval available for the nearest past model run.
 
 If the client desires to make a request for another date and time, the `TIME` or `DIM_REFERENCE_TIME` can be used in both GetMap and GetFeatureInfo requests. Date and times must adhere to the ISO8601 standard and are always in UTC (Coordinate Universal Time).
 
@@ -351,7 +351,7 @@ Given the important temporal dimension of weather data, it is important
 for users to understand how MSC GeoMet handles time in WCS requests. By
 default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in
 the request, MSC GeoMet will, by default, return the closest
-elapsed time interval available for the current model run.
+time interval available for the latest model run.
 
 If the user wants to make a request for another date and time, the
 `TIME` or `DIM_REFERENCE_TIME` can be used in a WCS GetCoverage request. Date and times must adhere to the ISO8601 standard and are always in UTC (Coordinate Universal Time).
