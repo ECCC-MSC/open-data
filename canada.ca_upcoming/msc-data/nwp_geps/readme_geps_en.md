@@ -28,7 +28,7 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the system](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_e.pdf)
+* [Current version of the Global Ensemble Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_e.pdf)
 * [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-600_e.pdf)
 
 ## Change log
