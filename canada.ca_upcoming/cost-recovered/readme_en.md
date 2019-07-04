@@ -17,6 +17,7 @@ The processing rate for archived data retrieval is 99$/hour, with a minimum char
 Dedicated data feeds with 24/7 support are available to specialized users and may include data not directly available to the public. Pricing varies according to the desired data types and associated bandwidth requirements. Contracts typically span over a year or more, and payments are usually processed on a monthly basis.
 
 Available data include:
+
 * Numerical Weather Prediction model data in a GRIdded Binary (GRIB2) format for specific parameters and domains (down to hourly values), or at specific points
 * Unprocessed radar data for Canadian radars, such as:
     * Digital outputs of radar echoes or precipitation in ASCII format

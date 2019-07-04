@@ -84,6 +84,7 @@ Returns:
 #### Overview of WMS GetMap parameters used in the examples
 
 The examples above define a handful of parameters and send a GetMap request to MSC GeoMet. Below is a short explanation of each parameter in the request:
+
 * **SERVICE** - The name of the Open GeoSpatial Consortium Web Service to use in the request. In both examples, the OGC Web Map Service (WMS) is used
 * **VERSION** - The service version, in this case `1.3.0`
 * **REQUEST** - The specified request type. The WMS services specifies several different request types. In this case, a GetMap request is specified, which returns a map image
