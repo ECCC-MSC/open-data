@@ -94,6 +94,14 @@ Requirements to accept and publish modifications:
   * `cd dps`
   * `git remote add upstream http://gccode.ssc-spc.gc.ca/ec-msc/dps.git`
 
+## Markdown requirements
+
+Given we use mkdocs to style the documentation, extra care is required when creating the documentation in Markdown.
+
+* Links must be explicit, a direct link such as http://foo.bar won't work with mkdocs, it must be specifically set as a link with `[name or url](url)`
+* Lists must begin with an empty line before the initial bullet (`*`)
+* The second level of lists must begin with 4 spaces before the `*`
+
 ## Update workflow
 
 1. Sync your fork
