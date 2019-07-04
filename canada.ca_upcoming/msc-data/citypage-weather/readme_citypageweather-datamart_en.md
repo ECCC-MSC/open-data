@@ -24,19 +24,19 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
   The code is one of the 13 following values :
 
-  * AB (Alberta)
-  * BC (British Columbia)
-  * MB (Manitoba)
-  * NB (New Brunswick)
-  * NL (Newfoundland and Labrador)
-  * NS (Nova Scotia)
-  * NT (Northwest Territories)
-  * NU (Nunavut)
-  * ON (Ontario)
-  * PE (Prince Edward Island)
-  * QC (Québec)
-  * SK (Saskatchewan)
-  * YT (Yukon)
+    * AB (Alberta)
+    * BC (British Columbia)
+    * MB (Manitoba)
+    * NB (New Brunswick)
+    * NL (Newfoundland and Labrador)
+    * NS (Nova Scotia)
+    * NT (Northwest Territories)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Prince Edward Island)
+    * QC (Québec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
   
 * The high elevation forecasts, for seasonal text bulletin forecasts issued only for British Columbia, are available at the following address :
    
@@ -73,8 +73,9 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
 
 * City page weather XML files contain __coded__ current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at :
    
-   * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
-   * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
+
+     * [Current weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
+     * [Forecast weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
 ## Support
 

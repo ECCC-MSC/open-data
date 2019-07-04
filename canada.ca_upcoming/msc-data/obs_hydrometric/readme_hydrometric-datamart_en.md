@@ -19,8 +19,7 @@ The data is available at the following address :
 * https://dd.weather.gc.ca/hydrometric/csv/[PROVTERR]/[FREQUENCY]/
 
 where :
-* __PROVTERR__ : 2-letter code for the province or territory. The code is one of 
-            the 13 following values:
+* __PROVTERR__ : 2-letter code for the province or territory. The code is one of the 13 following values:
     * AB (Alberta)
     * BC (British Columbia)
     * MB (Manitoba)
@@ -35,7 +34,7 @@ where :
     * SK (Saskatchewan)
     * YT (Yukon)
 
-* __FREQUENCY__ :  Frequency of update, "hourly" or "daily".
+* __FREQUENCY__ : Frequency of update, "hourly" or "daily".
 
 ## File name nomenclature 
 
@@ -75,9 +74,9 @@ English column descriptors:
 
 where :
 *  __ID__ : Station identifier. The first two digits indicate the major drainage 
-       basin in which the station is located. The next two characters indicate 
-       the sub-basin and sub-sub-basin. The last three digits indicate the 
-       specific station within the sub-sub-basin.
+basin in which the station is located. The next two characters indicate 
+the sub-basin and sub-sub-basin. The last three digits indicate the 
+specific station within the sub-sub-basin.
 
 * __Date__ : Data timestamp in ISO 8601 format, Local Standard Time (LST).
 
@@ -108,7 +107,7 @@ A list of the [real-time hydrometric stations](https://collaboration.cmc.ec.gc.c
 
 The first line is a bilingual header, followed by station metadata. Below are the English column descriptors :
 
- ID,Name,Latitude,Longitude,Prov/Terr,Timezone
+ID,Name,Latitude,Longitude,Prov/Terr,Timezone
 
 where :
 

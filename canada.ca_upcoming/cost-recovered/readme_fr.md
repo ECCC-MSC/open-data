@@ -20,8 +20,8 @@ Les données disponibles comprennent :
 
 * Données du modèle de prévision numérique météorologique en format GRIdded Binary (GRIB2) pour des paramètres et des domaines spécifiques (jusqu'à des valeurs horaires), ou en des points spécifiques.
 * Données radar brutes pour les radars canadiens, par exemple :
-   * Sorties numériques d'échos radar ou de précipitations au format ASCII
-   * Balayages volumétriques de type Doppler en format IRIS ou ODIM_H5.
+    * Sorties numériques d'échos radar ou de précipitations au format ASCII
+    * Balayages volumétriques de type Doppler en format IRIS ou ODIM_H5.
 * Cartes météorologiques
 * Bulletins en format texte
 * La plupart des données disponibles via les services gratuits du Datamart et GeoMet du SMC

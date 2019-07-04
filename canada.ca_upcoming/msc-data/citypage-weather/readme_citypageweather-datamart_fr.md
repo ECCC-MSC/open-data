@@ -24,19 +24,19 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
   Ce code peut prendre une de ces 13 valeurs :
 
-  * AB (Alberta)
-  * BC (Colombie-Britannique)
-  * MB (Manitoba)
-  * NB (Nouveau-Brunswick)
-  * NL (Terre-Neuve-et-Labrador)
-  * NS (Nouvelle-Écosse)
-  * NT (Territoires du Nord-Ouest)
-  * NU (Nunavut)
-  * ON (Ontario)
-  * PE (Île-du-Prince-Édouard)
-  * QC (Québec)
-  * SK (Saskatchewan)
-  * YT (Yukon)
+    * AB (Alberta)
+    * BC (Colombie-Britannique)
+    * MB (Manitoba)
+    * NB (Nouveau-Brunswick)
+    * NL (Terre-Neuve-et-Labrador)
+    * NS (Nouvelle-Écosse)
+    * NT (Territoires du Nord-Ouest)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Île-du-Prince-Édouard)
+    * QC (Québec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
 
 * Les **données de haute altitude** alimentant des bulletins de **prévisions saisonnières publiés seulement pour la Colombie-Britannique**, sont disponibles à l'adresse suivante :
   
@@ -71,9 +71,8 @@ Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cm
   [https://dd.meteo.gc.ca/citypage_weather/schema/](https://dd.meteo.gc.ca/citypage_weather/schema/)
 
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements __codés__ sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
-  * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
-  * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
-
+    * [Conditions météorologiques actuelles](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
+    * [Prévisions météorologiques](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : ec.dps-client.ec@canada.ca

@@ -41,21 +41,20 @@ avec :
 * __normals__ : Chaîne constante indiquant les données climatiques qui contribuent de façon critique à la caractérisation du climat de la Terre 
 * __daily__ : Chaîne constante indiquant les données climatiques quotidiennes 
 * __monthly__ : Chaîne constante indiquant les données climatiques mensuelles
-* __PROVTERR__ : Code de 2 lettres pour les provinces et territoires et une chaîne de caractères pour la couverture nationale : 
-          Le code prend l’une des 13 valeurs suivantes :
-            * AB (Alberta)
-            * BC (Colombie britannique)
-            * MB (Manitoba)
-            * NB (Nouveau Brunswick)
-            * NL (Terre-Neuve et Labrador)
-            * NS (Nouvelle Ecosse)
-            * NT (Territoires du nord-ouest)
-            * NU (Nunavut)
-            * ON (Ontario)
-            * PE (Île-du-Prince-Édouard)
-            * QC (Québec)
-            * SK (Saskatchewan)
-            * YT (Yukon)
+* __PROVTERR__ : Code de 2 lettres pour les provinces et territoires et une chaîne de caractères pour la couverture nationale. Le code prend l’une des 13 valeurs suivantes :
+    * AB (Alberta)
+    * BC (Colombie britannique)
+    * MB (Manitoba)
+    * NB (Nouveau Brunswick)
+    * NL (Terre-Neuve et Labrador)
+    * NS (Nouvelle Ecosse)
+    * NT (Territoires du nord-ouest)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Île-du-Prince-Édouard)
+    * QC (Québec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
 * __XXXXXXX__ :  Climate_ID (identifiants) des stations climatiques (voir note)
 * __YYY1__ : Année du début de la période climatique d’intérêt : [1981]
 * __YYY2__ : Année de la fin de la période climatique d’intérêt : [2010]

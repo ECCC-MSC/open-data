@@ -61,23 +61,23 @@ where:
 
   In the case of the 2 letter province or water body codes, the list of provincial or territorial codes includes: 
 
-   * BC – British Columbia
-   * AB - Alberta
-   * SK - Saskatchewan
-   * MB - Manitoba
-   * ON – Ontario
-   * QC - Quebec
-   * YT - Yukon
-   * NU - Nunavut
-   * NT - Northwest Territories
-   * NS – Nova Scotia
-   * NB – New Brunswick
-   * PE – Prince Edward Island
-   * NL – Newfoundland and Labrador
-   * GL - Great Lakes
-   * PC - Pacific Waters
-   * AT - Atlantic Waters
-   * AC - Arctic Waters
+    * BC – British Columbia
+    * AB - Alberta
+    * SK - Saskatchewan
+    * MB - Manitoba
+    * ON – Ontario
+    * QC - Quebec
+    * YT - Yukon
+    * NU - Nunavut
+    * NT - Northwest Territories
+    * NS – Nova Scotia
+    * NB – New Brunswick
+    * PE – Prince Edward Island
+    * NL – Newfoundland and Labrador
+    * GL - Great Lakes
+    * PC - Pacific Waters
+    * AT - Atlantic Waters
+    * AC - Arctic Waters
  
 * C: constant string. Specified by the WMO, as a prefix for the CCCC group.                                      
 * EEEE: 4 letters for the responsible office code (CWAO, CWTO, etc.). The exception is for tornado warning and severe thunderstorm warning alerts where the 4 letters are either LAND or WATR rather than responsible office.                              

@@ -34,8 +34,8 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * **Observations** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
        
-  * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
-  * __Copie du fichier d'observation le plus récent__ : AQ_OBS_CGNDBcode_CURRENT.xml
+    * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
+    * __Copie du fichier d'observation le plus récent__ : AQ_OBS_CGNDBcode_CURRENT.xml
 
 où :
 
@@ -50,9 +50,9 @@ où :
 
 * **Prévisions publiques** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
 
-  * __Standard__:        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
-  * __Amendements__ :     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
-  * Copie du fichier de prévision le plus récent: AQ_FCST_CGNDBcode_CURRENT.xml )
+    * __Standard__:        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
+    * __Amendements__ :     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
+    * Copie du fichier de prévision le plus récent: AQ_FCST_CGNDBcode_CURRENT.xml )
 
 où :
 

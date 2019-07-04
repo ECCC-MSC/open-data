@@ -50,29 +50,29 @@ Des images pour des composites régionales (5 régions du Canada) et pour les ra
 
 Composites avec une échelle d'intensité de 14 couleurs : 
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
 Composites avec une échelle d'intensité de 8 couleurs :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
  
    ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
 
 Radar individuel avec une échelle d'intensité de 14 couleurs :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
  
    ex: 201409201400_XFT_PRECIPET_RAIN.gif
 
 Radar individuel avec une échelle d'intensité de 14 couleurs :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
  
    ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
 
@@ -93,8 +93,8 @@ Cette image composite peut être différenciée de celle du radar d'origine grâ
   
 La nomenclature des fichiers CAPPI est la suivante :
 
-*  YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
-*  YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
+* YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
+* YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
 
    ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
 
@@ -102,7 +102,7 @@ La nomenclature des fichiers CAPPI est la suivante :
 
 Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures.
   
-*  YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
+* YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
    ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 

@@ -74,7 +74,6 @@ where :
 * **cmml_filename.xml** : Name of the CMML file from which this CSV file originates.
 * The 2 other values describe the content of each column :
     * Forecast valid time.
-
     * Air temperature in degree Celsius.
 
 __2. Dew Point (TD)__

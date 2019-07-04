@@ -48,9 +48,9 @@ where :
 * __mm__ : Minute of the observation, 2 digits.
 
 * **Public forecasts** (Note: monthly summary XML files are not yet available) :
-  * __Regular issue__ :     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
-  * __Amended forecasts__ : AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
-  * __Copy of the most recent real-time forecast file__ : AQ_FCST_CGNDBcode_CURRENT.xml
+    * __Regular issue__ :     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
+    * __Amended forecasts__ : AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
+    * __Copy of the most recent real-time forecast file__ : AQ_FCST_CGNDBcode_CURRENT.xml
    
 where :
 

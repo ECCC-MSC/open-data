@@ -18,23 +18,23 @@ Les données sont accessibles aux adresses suivantes :
 
 * **Observations**: 
 
-  * Fichiers en temps réel :
+    * Fichiers en temps réel :
    
-    https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
+      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
   
-  * Fichiers mensuels :  
+    * Fichiers mensuels :  
   
-    https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
+      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
 
 * **Prévisions publiques**:
 
-  * Fichiers mensuels :
+    * Fichiers mensuels :
   
-    https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
+      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
     
 * **Données des modèles numériques**:
 
-  * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/model/csv
+    * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/model/csv
 
 Note : Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
     
@@ -44,9 +44,9 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 * **Observations**: 
   
-  * Fichiers en temps réel: AAAAMMJJhh_AQHI_REGION_OBSTYPE.csv
-  * Fichiers mensuels: AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv
-  * Fichiers mensuels avec données remblayées :  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
+    * Fichiers en temps réel: AAAAMMJJhh_AQHI_REGION_OBSTYPE.csv
+    * Fichiers mensuels: AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv
+    * Fichiers mensuels avec données remblayées :  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
   
 où : 
 
@@ -87,7 +87,7 @@ Une [liste complète des communautés](https://collaboration.cmc.ec.gc.ca/cmc/cm
 
 * **Données des modèles numériques**:
 
-  * AAAAMMDDhh_SPECIE_REGION_MODELTYPE.csv
+    * AAAAMMDDhh_SPECIE_REGION_MODELTYPE.csv
     
 où :
 
@@ -119,7 +119,7 @@ possibles sont les suivantes :
 * **Fichiers CSV des observations de CAS calculées à partir des donnèes sur les polluants reçus en 
 temps-réel** (pour les fichiers en temps réels et mensuels):
 
-  * **En-tête**
+    * **En-tête**
   
    L'en-tête présent sur la première ligne contient les informations suivantes :
    
@@ -127,11 +127,17 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
    
     où:
     
+<<<<<<< HEAD
       * 'Date': Étiquette statique
       * 'Hour': Étiquette statique
       * CGNDB_Site#: Code de 5 caractères identifiant chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+=======
+        * 'Date': Étiquette statique
+        * 'Hour': Étiquette statique
+        * CGNDB_Site#: Code de 5 caractères identifiant chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+>>>>>>> origin
 
-  * **Bloc de données**
+    * **Bloc de données**
   
    Les observations sont fournit avec une précision de deux décimales.
    
@@ -141,11 +147,19 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
 
     où:
     
+<<<<<<< HEAD
       * AAAA: Année de l'observation
       * MM: Mois de l'observation
       * JJ: Jour de l'observation
       * hh: L'heure de l'observation
       * CAS_Site#: Observations de la CAS pour toutes les [communautés](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région.
+=======
+        * AAAA: Année de l'observation
+        * MM: Mois de l'observation
+        * JJ: Jour de l'observation
+        * hh: L'heure de l'observation
+        * CAS_Site#: Observations de la CAS pour toutes les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région.
+>>>>>>> origin
 
 Note: Les fichiers en temps réels contiennent les 7 derniers jours d’observations de la CAS, avec les observations les plus récentes en premier. 
 Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures.
@@ -160,14 +174,14 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
 
 * **Fichiers CSV des prévisions publiques de CAS** (uniquement disponible dans le fichiers mensuels) :
 
-  * **En-tête**
+    * **En-tête**
   
    L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes :
 
    cgndb code,community name,issue date,issue time,period,value,amended
 
 
-  * **Bloc de données**
+        * **Bloc de données**
   
    Les prévisions publiques sont fournit en nombres entiers.
    
@@ -175,6 +189,7 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
 
    où :
    
+<<<<<<< HEAD
       * CGNDBcode : Code de 5-caractères qui identifie chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
       * CommunityName : Nom utilisé de la [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
       * IssueDate : Date d'émission de la prévision (AAAA-MM-JJ),
@@ -185,6 +200,18 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
       * Value: valeur de la prévision de CAS pour la période de prévision en question,
       * AmendmentFlag: Entier représentant le nombre d’amendements effectués à la prévision. La première émission de la prévision indique toujours une valeur de zéro, 
       puis celle-ci est incrémentée de 1 à chaque ammendement. 
+=======
+        * CGNDBcode : Code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+        * CommunityName : Nom utilisé de la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
+        * IssueDate : Date d'émission de la prévision (AAAA-MM-JJ),
+        * IssueTime : Heure d'émission de la prévision (hh:mm:ss),
+        * ForecastPeriod : Période de prévision représentée par un entier entre 1 et 3 ("Aujourd'hui", "Ce soir et cette nuit", ou "Demain", respectivement),
+            - pour les prévisions émises à 06h00 (heure locale): 1 = Aujourd'hui, 2 = Ce soir et cette nuit, 3 = Demain
+            - pour les prévisions émises à 17h00 (heure locale): 2 = Ce soir et cette nuit, 3 = Demain
+        * Value: valeur de la prévision de CAS pour la période de prévision en question,
+        * AmendmentFlag: Entier représentant le nombre d’amendements effectués à la prévision. La première émission de la prévision indique toujours une valeur de zéro, 
+          puis celle-ci est incrémentée de 1 à chaque ammendement. 
+>>>>>>> origin
 
 
 Note: Les fichiers mensuels de prévisions publiques de la CAS sont ordonnés en ordre décroissant avec les prévisions les plus récentes en premier. 
@@ -192,7 +219,7 @@ Ceux-ci sont disponibles sur le Datamart du SMC pour une période de 12 mois.
   
 * **Fichiers CSV qui contiennent les données des modèles** :
  
-  * **En-tête**
+    * **En-tête**
   
    L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes :
 
@@ -201,8 +228,8 @@ stationId,YYYYMMDDhh +0, YYYYMMDDhh+1, ... , YYYYMMDDhh+48
 
     où:
     
-      *  "stationId" identifiant NAPS unique de la station d’observation. 
-      * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
+    *  "stationId" identifiant NAPS unique de la station d’observation. 
+    * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
 
 
     2) Pour les fichiers qui contiennent des données de CAS:
@@ -210,8 +237,13 @@ cgndb,forecast date (hour0),forecast date (hour1), ... , forecast date (hour47),
 
     où:
     
+<<<<<<< HEAD
       * "cgndb" identifiant CGNDB de la [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) pour laquelle la prévision est effectuée. 
       * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
+=======
+    * "cgndb" identifiant CGNDB de la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) pour laquelle la prévision est effectuée. 
+    * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
+>>>>>>> origin
       
  * **Bloc de données**
  
@@ -227,9 +259,9 @@ StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
 
    où :
    
-       * StationID: Identifiant NAPS unique de la station d’observation.
-       * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
-       * Valeur (H+000 à H+048): valeur du modèle dérivée à la station d'observation (pour UMOSAQ) ou interpolées à la station d'observation (pour AQFM, UMOSAQMIST). 
+     * StationID: Identifiant NAPS unique de la station d’observation.
+     * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
+     * Valeur (H+000 à H+048): valeur du modèle dérivée à la station d'observation (pour UMOSAQ) ou interpolées à la station d'observation (pour AQFM, UMOSAQMIST). 
   
 ## Notes
 

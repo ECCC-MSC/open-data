@@ -12,16 +12,16 @@ The WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third gener
 
 This system includes four domains :
 
-* Lake Superior :       Grid dimensions - 658 per 318
+* Lake Superior: Grid dimensions - 658 per 318
     * Coordinates of first grid point : 46.2590 N 92.3116 W
 
 * Lake Huron-Michigan: Grid dimensions - 698 per 573
     * Coordinates of first grid point : 41.4260 N 88.1452 W
 
-* Lake Erie :           Grid dimensions - 398 per 210
+* Lake Erie: Grid dimensions - 398 per 210
     * Coordinates of first grid point : 41.2190 N 83.6068 W
 
-* Lake Ontario :        Grid dimensions - 348 per 158
+* Lake Ontario: Grid dimensions - 348 per 158
     * Coordinates of first grid point : 43.0640 N 79.9736 W
 
 ## Access
