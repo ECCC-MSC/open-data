@@ -187,7 +187,7 @@ nearestValue="0">2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H</Dimension>
 multipleValues="1" nearestValue="0">2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H</Dimension>
 ```
 
-La première balise `<Dimension>` représente l'interval de temps disponible pour cette couche. La valeur associée à `default` indique la valeur considérée si le paramètre `TIME` n'est pas spécifié dans la requête. La valeur de la balise, soit `2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H` dans l'exemple, indique à l'usager quelles sont les valeurs temporelles valides. Au moment où la requête WMS GetCapabilities a fourni cette réponse, les usagers étaient en mesure de récupérer des cartes (WMS GetMap) ou la donnée brute à un point (WMS GetFeatureInfo) pour n'importe quel moment entre 2019-06-12T00:00:00Z et 2019-06-22T00:00:00Z à un interval de 3 heures (PT3H).
+La première balise `<Dimension>` représente l'intervalle de temps disponible pour cette couche. La valeur associée à `default` indique la valeur considérée si le paramètre `TIME` n'est pas spécifié dans la requête. La valeur de la balise, soit `2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H` dans l'exemple, indique à l'usager quelles sont les valeurs temporelles valides. Au moment où la requête WMS GetCapabilities a fourni cette réponse, les usagers étaient en mesure de récupérer des cartes (WMS GetMap) ou la donnée brute à un point (WMS GetFeatureInfo) pour n'importe quel moment entre 2019-06-12T00:00:00Z et 2019-06-22T00:00:00Z à un intervalle de 3 heures (PT3H).
 
 La seconde balise `<Dimension>` représente les passes de modèles (model runs) disponibles pour la couche. La valeur indiqué à `default` est celle de la passe de modèle disponible la plus récente. La valeur de la balise, soit `2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H` dans cet exemple indique les passes de `2019-06-11T00:00:00Z` à `2019-06-12T00:00:00Z` à tous les 12 heures (PT12H) sont valides.
 
@@ -203,7 +203,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-
 
 Il est important de considérer les différences dans la spécification du temps entre GeoMet-Météo et GeoMet-Climat, différences issues de la nature différente des données en cause.
 
-Dans GeoMet-Climat, les intervals temporels sont soit annuels (YYYY) ou mensuels (YYYY-MM) selon la couche interrogée. Une requête WMS GetCapabilities sur les services GeoMet-Climat indique aux usagers quelles sont les dimensions temporelles disponibles pour un couche spécifique.
+Dans GeoMet-Climat, les intervalles temporels sont soit annuels (YYYY) ou mensuels (YYYY-MM) selon la couche interrogée. Une requête WMS GetCapabilities sur les services GeoMet-Climat indique aux usagers quelles sont les dimensions temporelles disponibles pour un couche spécifique.
 
 Par exemple, la balise `<Dimension>` de la couche [Ensembles mensuels CMIP5 pour la vitesse du vent près de la surface (5e percentile)](https://geo.weather.gc.ca/geomet-climate?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&Layer=CMIP5.SFCWIND.RCP26.ENS.ABS_PCTL5) indique :
 
@@ -386,7 +386,7 @@ https://geo.weather.gc.ca/geomet-climate?SERVICE=WCS&VERSION=2.0.1
 ...
 ```
 
-Dans cet exemple, la valeur `field` indique à l'usager le nom des bandes disponibles. Pour GeoMet-Climat, les bandes utilisent toujours la nomenclature suivante : `B` suivi de l'interval ISO8601 correspondant, soit `YYYY` pour un interval annuel et `YYYY-MM` pour un interval mensuel.
+Dans cet exemple, la valeur `field` indique à l'usager le nom des bandes disponibles. Pour GeoMet-Climat, les bandes utilisent toujours la nomenclature suivante : `B` suivi de l'intervalle ISO8601 correspondant, soit `YYYY` pour un intervalle annuel et `YYYY-MM` pour un intervalle mensuel.
 
 Pour GeoMet-Climat, les usagers pour demander un pas de temps unique ou une plage temporelle :
 * Pas de temps unique : `RANGESUBSET=B20015`
