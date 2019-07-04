@@ -24,7 +24,7 @@ A sample script using this protocol is made available by Environment and Climate
 
 ## Description
 
-The script uses the python language (https://www.python.org/) and must be installed on the system where it will be run.  Moreover, the python-amqp library must also be installed.  Please read the documentation specific to your operating system for instructions on installing the software and this library.
+The script uses the python language ([https://www.python.org/](https://www.python.org/)) and must be installed on the system where it will be run.  Moreover, the python-amqp library must also be installed.  Please read the documentation specific to your operating system for instructions on installing the software and this library.
 
 The SSL (Secure Sockets Layers) AMQP server is located at this address: dd.weather.gc.ca
 
@@ -50,16 +50,16 @@ This client is designed to perform downloads in a very reliable manner and is wi
 
 https://github.com/MetPX/Sarracenia 
 
-An overview is available here : https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst 
+An overview is available here: [https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst)
 
-The installation guide can be found at this address :  
-https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst
+The installation guide can be found at this address :
+[https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst](https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst)
 
 Regarding the user guide, please consult : 
-https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst
+[https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst](https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst)
 
 Several examples of configuration files are also available to users, see:
-https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
+[https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
 
 ## Examples
 
@@ -78,16 +78,16 @@ Here are some specific examples to receive alerts, citypage_weather data for one
 ## External links
 
 * AMQP protocol on Wikipedia:
-https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol
+[https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protoco](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
 
 * AMQP python library: 
-https://pypi.python.org/pypi/amqplib 
+[https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
 
 
 ## Contact Us
 
 If you use the data available on the MSC Datamart, it is strongly recommend that you subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
-http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info 
+[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
 
 Please use the following address to contact us for any comments or questions: ec.dps-client.ec@canada.ca 

@@ -25,7 +25,7 @@ où :
 
 ## Spécification technique de la grille
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
 Valeurs données aux paramètres de la grille latitude-longitude :
 

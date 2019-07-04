@@ -29,8 +29,8 @@ Les [métadonnées du Système à haute résolution de prévision déterministe 
 
 ## Documentation technique
 
-* [Version actuelle du Système à haute résolution de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_5.1.0_e.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-510_20190703_e.pdf)
+* [Version actuelle du Système à haute résolution de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_5.1.0_e.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-510_20190703_e.pdf)
 
 ## Registre des changements 
 

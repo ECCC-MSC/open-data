@@ -1,4 +1,4 @@
-[In English](readme_obs_insitu_swobdatamart_en.md)
+[In English](readme_swob-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -27,7 +27,7 @@ où :
 
 De plus, un répertoire spécial contient les dernières observations reçues pour chaque station:
 
-https://dd.meteo.gc.ca/observations/swob-ml/latest/
+[https://dd.meteo.gc.ca/observations/swob-ml/latest/](https://dd.meteo.gc.ca/observations/swob-ml/latest/)
 
 __Note__: Une [liste des stations d'observations](https://dd.meteo.gc.ca/observations/doc/swob-xml_station_list.csv) est disponible et mise à jour quotidiennement.
 
@@ -40,7 +40,7 @@ où :
 * __AAAAMMJJ__ : Date des observations, UTC.
 * __XXXXXXX__ : Identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres.
 
-__Note__: Une [liste des stations marines d'observation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) est disponible.
+__Note__: Une [liste des stations marines d'observation](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) est disponible.
 
 * __Observations des partenaires__ :
   
@@ -52,7 +52,7 @@ où :
 * __YYYYMMDD__ : Date des observations, UTC.
 * __MSC-ID__ : Identifiant unique des stations des partenaires.
 
-__Note__: Une [liste des stations des partenaires](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
+__Note__: Une [liste des stations des partenaires](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
 
 ## Nomenclature
 
@@ -119,7 +119,7 @@ Exemple :
 
 ## Note
 
-Une spécification du format de données est disponible dans le [guide des produits SWOB-ML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf).
+Une spécification du format de données est disponible dans le [guide des produits SWOB-ML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf).
 
 ## Support
 

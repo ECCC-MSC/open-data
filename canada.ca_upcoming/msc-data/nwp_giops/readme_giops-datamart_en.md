@@ -30,7 +30,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* https://dd.weather.gc.ca/model_giops/netcdf
+* [https://dd.weather.gc.ca/model_giops/netcdf](https://dd.weather.gc.ca/model_giops/netcdf)
 
 A history of 5 days of forecast is kept in this directory.
 

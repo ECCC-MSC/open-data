@@ -41,7 +41,7 @@ où :
 
 ### Spécification technique de la grille continentale
 
-![Image de la grille du domaine continental du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
+![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -56,7 +56,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ### Spécification technique de la grille nord (expérimental)
 
-![Image de la grille du domaine nord du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
+![Image de la grille du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -71,7 +71,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ### Spécification technique de la grille est
 
-![Image de la grille du domaine est du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_east.png)
+![Image de la grille du domaine est du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_east.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -87,7 +87,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ### Spécification technique de la grille prairies
 
-![Image de la grille du domaine Prairies du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_prairies.png)
+![Image de la grille du domaine Prairies du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_prairies.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -102,7 +102,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ### Spécification technique de la grille ouest
 
-![Image de la grille du domaine ouest du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_west.png)
+![Image de la grille du domaine ouest du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_west.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -118,7 +118,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ### Spécification technique de la grille maritimes
 
-![Image de la grille du domaine Maritimes du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_marit.png)
+![Image de la grille du domaine Maritimes du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_marit.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 

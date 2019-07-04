@@ -20,24 +20,24 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Le système SPISCan calcule plusieurs indices climatiques de l'atmosphère et l'océan (ex. les indices de la mousson, du PNA, du NAO, de El Nino, etc.) qui peuvent être calculés à partir des prévisions saisonnières ainsi qu'à partir de l'observation de certaines variables à l'échelle saisonnière. 
 
-Une ![description plus détaillée des indices](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_SPISCAN_f.pdf) est disponible.
+Une ![description plus détaillée des indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_SPISCAN_f.pdf) est disponible.
 
 Pour accéder aux indices atmosphériques et océaniques calculés par le SPISCan veuillez suivre les liens ci-dessous :
 
 __Prévisions__ :
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly)
 
 __Prévisions historiques__ : 
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly)
 
 __Observations__ : 
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly)
 
 ## Nomenclature des noms de fichiers 
 

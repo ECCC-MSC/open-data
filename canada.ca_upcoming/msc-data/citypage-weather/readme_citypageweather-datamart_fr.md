@@ -40,7 +40,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 * Les **données de haute altitude** alimentant des bulletins de **prévisions saisonnières publiés seulement pour la Colombie-Britannique**, sont disponibles à l'adresse suivante :
   
-  https://dd.meteo.gc.ca/citypage_weather/xml/HEF
+  [https://dd.meteo.gc.ca/citypage_weather/xml/HEF](https://dd.meteo.gc.ca/citypage_weather/xml/HEF)
 
 ## Nomenclature des noms de fichiers 
 
@@ -60,19 +60,19 @@ Exemples de nom de fichier :
 * s0000001_e.xml - fichier XML de prévisions météorologiques pour Athabasca, en anglais.
 * s0000001_f.xml - fichier XML de prévisions météorologiques pour Athabasca, en français.
 
-Une [liste de noms d'emplacements et de codes de sites](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson), en format GeoJSON est disponible.
+Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson), en format GeoJSON est disponible.
 
 ## Balises, schémas XML et icônes
 
-* Une [description des balises et des attributs XML des pages de prévisions météorologiques par ville](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_f.csv) est disponible.
+* Une [description des balises et des attributs XML des pages de prévisions météorologiques par ville](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_f.csv) est disponible.
 
 * Les schémas XML des fichiers de données météorologiques par ville sont disponibles à l'adresse suivante :
 
-  https://dd.meteo.gc.ca/citypage_weather/schema/
+  [https://dd.meteo.gc.ca/citypage_weather/schema/](https://dd.meteo.gc.ca/citypage_weather/schema/)
 
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements __codés__ sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
-  * [Conditions météorologiques actuelles](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
-  * [Prévisions météorologiques](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
+  * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
+  * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
 
 ## Support
 

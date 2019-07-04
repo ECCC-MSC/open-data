@@ -22,7 +22,7 @@ où :
 
 ## Spécification technique de la grille - *(pour les NWP seulement)*
 
-*Si pertinent, donner les desciptions des grilles sour forme de tableau, via WxO et au besoin des images des domaines. Les images devont être rassemblées sur [Collaboration](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc) et seulement référées ici via ![](adresse)*
+*Si pertinent, donner les desciptions des grilles sour forme de tableau, via WxO et au besoin des images des domaines. Les images devont être rassemblées sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc) et seulement référées ici via ![](adresse)*
 
 ## Nomenclature des noms de fichiers 
 

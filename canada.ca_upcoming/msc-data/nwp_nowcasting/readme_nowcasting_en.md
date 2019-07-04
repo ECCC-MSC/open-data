@@ -31,7 +31,7 @@ Upcoming.
 ## Technical documentation
 
 * [Scientific review](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/e_scribe3.pdf)
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_incs_20140502_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_incs_20140502_e.pdf)
 
 ## Change log
 

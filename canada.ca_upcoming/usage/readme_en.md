@@ -50,7 +50,7 @@ Below is an example of an OpenLayers web map configured to display a weather rad
 
 MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications. In fact, Environment and Climate Change Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses MSC GeoMet to display high resolution weather radar data on an interactive map:
 
-![Example of radar imagery in WeatherCan](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
+![Example of radar imagery in WeatherCan](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCAN_GeoMet_Radar_Hurricane_Michael_20181010_162830.png)
 
 For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
 

@@ -41,8 +41,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Cartes des statistiques météo en temps réel](http://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf)
+* [Cartes des statistiques météo en temps réel](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf)
 * [Site web du Climat](http://climat.meteo.gc.ca/historical_data/search_historic_data_f.html)
 * [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html)
 

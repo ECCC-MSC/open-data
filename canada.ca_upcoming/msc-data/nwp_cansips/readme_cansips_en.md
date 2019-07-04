@@ -14,7 +14,7 @@ CanSIPS is a multi-model ensemble (MME) system using two climate models develope
 
 For more information on the system please see :  
 
-http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf
+[https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf)
 
 __Models__ :
 
@@ -26,7 +26,7 @@ Atmospheric models CanAM3 and CanAM4 are coupled to the oceanic model CanOM4 in 
 
 For a more detailed description of the models please visit this link :
 
-http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1
+[http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1](http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1)
 
 __CanSIPS forecast configuration__ :
 
@@ -87,7 +87,7 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf)
 * [Scientific article](http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 
 ## Change log

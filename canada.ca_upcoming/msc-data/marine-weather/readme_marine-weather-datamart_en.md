@@ -20,7 +20,7 @@ __Notes__:
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage-overview/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
@@ -41,7 +41,7 @@ where :
 * prairies
 * st_lawrence
 
-[__Tables describing each of the marine weather XML element tags and their associated attributes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
+[__Tables describing each of the marine weather XML element tags and their associated attributes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
 
 The __XML schemas__ for marine weather data are found in this directory :
 
@@ -66,7 +66,7 @@ Examples of file name :
 
 * m0000001_f.xml - French marine weather XML for area Tuktoyaktuk.
 
-A [__list with location names and RegionNameCodes__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
+A [__list with location names and RegionNameCodes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
 
 ## Support
 

@@ -31,8 +31,8 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the Global Deterministic Wave Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.5.0_e.pdf)
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.3.1_e.pdf)
+* [Current version of the Global Deterministic Wave Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.5.0_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.3.1_e.pdf)
 
 ## Change log
 

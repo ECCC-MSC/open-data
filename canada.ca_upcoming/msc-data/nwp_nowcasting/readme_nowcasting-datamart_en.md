@@ -20,7 +20,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* https://dd.weatheroffice.gc.ca/nowcasting/matrices/
+* [https://dd.weatheroffice.gc.ca/nowcasting/matrices/](https://dd.weatheroffice.gc.ca/nowcasting/matrices/)
 
 ## File name nomenclature 
 
@@ -158,7 +158,7 @@ The following visibility Scribe Nowcasting codes are possible :
 
 * Although the nowcasting weather elements are highly dependant and observations, a forecast will always be produced even if surface observations are incomplete, missing or not available at a specific location. Remote sensing observastions such as Radar, Satellite and Lightning detection will be used and utimately the weather elements from the Canadian Regional Deterministic Prediction System (RDPS NWP) will be used.
 
-* A [stations list](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) is avaiable in GeoJSON format.
+* A [stations list](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) is avaiable in GeoJSON format.
 
 ## Support
 

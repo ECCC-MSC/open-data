@@ -21,7 +21,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à adresse suivante :
 
-* https://dd.meteo.gc.ca/nowcasting/matrices/
+* [https://dd.meteo.gc.ca/nowcasting/matrices/](https://dd.meteo.gc.ca/nowcasting/matrices/)
 
 ## Nomenclature des noms de fichiers 
 
@@ -161,7 +161,7 @@ Le code des types possibles de visibilité utilisés dans les matrices de prévi
 * Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, une prévision sera toujours produit même si les observations de surface sont incomplètes, manquantes ou non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques .
 du Système Régional de Prévision Déterministe Canadien (SRPD PNT) seront utilisés.
 
-* Une [liste des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) est disponible en format GeoJSON.
+* Une [liste des stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson) est disponible en format GeoJSON.
 
 ## Support
 

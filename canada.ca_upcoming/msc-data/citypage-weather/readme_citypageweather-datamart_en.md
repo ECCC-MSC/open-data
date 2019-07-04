@@ -12,7 +12,7 @@ The XML files are updated hourly at a minimum, but can be updated earlier with i
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](.../../usage/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
@@ -40,7 +40,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
   
 * The high elevation forecasts, for seasonal text bulletin forecasts issued only for British Columbia, are available at the following address :
    
-   https://dd.weather.gc.ca/citypage_weather/xml/HEF
+   [https://dd.weather.gc.ca/citypage_weather/xml/HEF](https://dd.weather.gc.ca/citypage_weather/xml/HEF)
    
 ## File name nomenclature 
 
@@ -61,20 +61,20 @@ Examples of filenames :
 * s0000001_e.xml - English citypage weather XML for Athabasca.
 * s0000001_f.xml - French citypage weather XML for Athabasca.
 
-A [list with location names and SiteNameCodes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
+A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
 
 ## Tags, XML schemas and icons
 
-* A table [describing each of the city page weather XML element tags and their associated attributes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_e.csv) is available.
+* A table [describing each of the city page weather XML element tags and their associated attributes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_e.csv) is available.
 
 * The XML schemas for citypage weather data are found in this directory :
 
-  https://dd.weather.gc.ca/citypage_weather/schema/
+  [https://dd.weather.gc.ca/citypage_weather/schema/](https://dd.weather.gc.ca/citypage_weather/schema/)
 
 * City page weather XML files contain __coded__ current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at :
    
-   * [Current weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
-   * [Forecast weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
+   * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
+   * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
 ## Support
 

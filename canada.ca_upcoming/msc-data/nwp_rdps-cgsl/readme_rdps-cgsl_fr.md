@@ -54,7 +54,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_f.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_f.pdf)
 
 ## Registre des changements 
 

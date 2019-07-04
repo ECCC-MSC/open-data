@@ -31,7 +31,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 ## Documentation technique
 
 * [Revue scientifique - version anglaise seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/e_scribe3.pdf)
-* [Note technique - version anglaise seulement](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_sipi_20140502_f.pdf)
+* [Note technique - version anglaise seulement](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_sipi_20140502_f.pdf)
 
 ## Registre des changements 
 

@@ -74,7 +74,7 @@ and Labrador.
 ## Technical documentation
 
 * [Guide to Air Quality Health Index forecasts](https://www.canada.ca/en/environment-climate-change/services/weather-health/publications/guide-air-quality-index-forecasts.html)
-* [Technical note of the Regional Air Quality Deterministic Prediction System (RAQDPS) and FireWork Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_e.pdf)
+* [Technical note of the Regional Air Quality Deterministic Prediction System (RAQDPS) and FireWork Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_e.pdf)
 
 ## Change log
 

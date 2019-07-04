@@ -8,7 +8,7 @@
 
 This document describes the content of the [meteocode data](readme_meteocode_en.md) in CSV format.
 
-The files for meteocode data in CSV format are created from the CMML files using the [XSLT](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml2csv.xsl) technology. The CSV files does not contain more information than the CMML files, they are only in a different format. Moreover, each CMML files contains many regions while each CSV file contains only one region.
+The files for meteocode data in CSV format are created from the CMML files using the [XSLT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml2csv.xsl) technology. The CSV files does not contain more information than the CMML files, they are only in a different format. Moreover, each CMML files contains many regions while each CSV file contains only one region.
 
 ## Data address 
 
@@ -18,11 +18,11 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The files are available at the following address :
 
-* https://dd.weather.gc.ca/meteocode/mtm/csv/
-* https://dd.weather.gc.ca/meteocode/ont/csv/
-* https://dd.weather.gc.ca/meteocode/pnr/csv/
-* https://dd.weather.gc.ca/meteocode/pyr/csv/
-* https://dd.weather.gc.ca/meteocode/que/csv/
+* [https://dd.weather.gc.ca/meteocode/mtm/csv/](https://dd.weather.gc.ca/meteocode/mtm/csv/)
+* [https://dd.weather.gc.ca/meteocode/mtm/csv/](https://dd.weather.gc.ca/meteocode/ont/csv/)
+* [https://dd.weather.gc.ca/meteocode/pnr/csv/](https://dd.weather.gc.ca/meteocode/pnr/csv/)
+* [https://dd.weather.gc.ca/meteocode/pyr/csv/](https://dd.weather.gc.ca/meteocode/pyr/csv/)
+* [https://dd.weather.gc.ca/meteocode/que/csv/](https://dd.weather.gc.ca/meteocode/que/csv/)
 
 An history of 24 hours is kept in these directories.
 
@@ -38,14 +38,14 @@ where :
 
 * **YYYY-MM-DDTHH-MM-SSZ** : Time of emission for the forecast. Date is in ISO 8601 format. 
 * **P** : Constant string meaning "Forecast Public".
-* **ANN** : See the section 'Filename' in the CMML README at http://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt
+* **ANN** : See the section 'Filename' in the CMML README at [http://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt](http://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt)
 * **r** : Constant string indicating the beginning of the region code.
 * **RRRR** : Alphanumerical code indicating the region of the public forecast. Can be of an arbitrary length (ex: 3pe, 10zf, 71.14). The complete list of forecast region and their associated code can be found at the end of this file in the section "Region's code and name".
 * **BB** : String indicating the weather elements. Can be one of the following values: TA (Air Temperature), TD (Dew Point), PA (Precipitation accumulation), POP (Probability Of Precipitation), WS (Wind Speed and Direction), WG (Wind Gust), CC (Cloud Cover).
 
 **Note**:
 
-The [region's code and name correspondence](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/table_region_code_name.xlsx) is available.
+The [region's code and name correspondence](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/table_region_code_name.xlsx) is available.
 
 The codes are separated by the forecast offices because the same code can be used by more than one region, as:
 

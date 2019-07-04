@@ -29,7 +29,7 @@ The [metadata of the XML provincial and territory summaries are available on the
 
 ## Products
 
-* [Real-Time Weather Statistics Maps](http://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
+* [Real-Time Weather Statistics Maps](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
 
 ## Technical documentation
 

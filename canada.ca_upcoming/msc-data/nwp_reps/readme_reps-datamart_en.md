@@ -117,7 +117,7 @@ The GRIB2 files variables for individual members are the following. The variable
 
 You can find a list in XML format cont.
 
-A [list in XML format](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
+A [list in XML format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
 
 # About the No-data mask
 

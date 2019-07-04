@@ -26,7 +26,7 @@ Les données sont accessibles à adresse suivante :
 
 Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
 
-Une [liste complète des villes](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
+Une [liste complète des villes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
 
 ## Nomenclature des noms de fichiers 
 
@@ -40,7 +40,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 où :
 
 * __'AQ_OBS'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
-* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
 * __AAAA__ : Année de l'observation, 4 chiffres.
 * __MM__ : Mois de l'observation, 2 chiffres (janvier = 01).
 * __JJ__ : Jour de l'observation, 2 chiffres.
@@ -57,7 +57,7 @@ où :
 où :
 
 * __'AQ_FCST'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
-* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
 * __AAAA__ : Année de l'émission, 4 chiffres.
 * __MM__ : Mois de l'émission, 2 chiffres (janvier = 01).
 * __JJ__ : Jour de l'émission, 2 chiffres.
@@ -72,7 +72,7 @@ Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures. Les 
 prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. Ils sont
 disponibles sur le Datamart du SMC pour une période de 48 heures.
 
-* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/ . Cependant, le Minsitère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: https://www.airnowtech.org/index.cfm?page=login.
+* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/ . Cependant, le Minsitère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
 

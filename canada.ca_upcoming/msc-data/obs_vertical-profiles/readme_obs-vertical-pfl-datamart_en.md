@@ -16,7 +16,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The vertical profiles files are available at the following address :
 
-https://dd.weatheroffice.ec.gc.ca/vertical_profile/observation/csv
+[https://dd.weatheroffice.ec.gc.ca/vertical_profile/observation/csv](https://dd.weatheroffice.ec.gc.ca/vertical_profile/observation/csv)
 
 An history of 24 hours of data is kept in the directory.
 
@@ -31,7 +31,7 @@ ObsTephi_HH_AAAA.csv
 where :
 
 * __HH__ : Run hour. Can be "00" or "12".
-* __AAAA__ : 4 letters station code. A [complete list of stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) is available.
+* __AAAA__ : 4 letters station code. A [complete list of stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) is available.
 
 Example : 
 

@@ -50,7 +50,7 @@ où :
 
 ### Lac Supérieur
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Supérieur :
 
@@ -63,7 +63,7 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Sup
 
 ### Lac Huron et Lac Michigan
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs Huron et Michigan :
 
@@ -76,7 +76,7 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs H
 
 ### Lac Érié
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Érié :
 
@@ -89,7 +89,7 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ér
 
 ### Lac Ontario
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ontario :
 
@@ -102,7 +102,7 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ont
 
 ### Golfe du Saint-Laurent
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille du Golfe du Saint-Laurent :
 

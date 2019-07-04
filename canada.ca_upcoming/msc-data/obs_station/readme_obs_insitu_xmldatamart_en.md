@@ -172,8 +172,8 @@ There are in excess of 500 observation stations in Canada. However this number i
 
 ## Notes
 
-* A [complete documentation of the Meteorological Point Observation Mark-up Language Schema Description](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/Met-ML-SchemaDescriptionV2_e.pdf) is available.
-* To be displayed, any record for an element must have a period of at least 15 years in the Climate Site database, as stated on the Climate Site : http://www.climate.weatheroffice.gc.ca/Welcome_e.html
+* A [complete documentation of the Meteorological Point Observation Mark-up Language Schema Description](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/Met-ML-SchemaDescriptionV2_e.pdf) is available.
+* To be displayed, any record for an element must have a period of at least 15 years in the Climate Site database, as stated on the Climate Site : [http://www.climate.weatheroffice.gc.ca/Welcome_e.html](http://www.climate.weatheroffice.gc.ca/Welcome_e.html).
 * Station Metadata is provided in English or French
 * Any floating values that are below 0.05 are rounded to 0.0
 * Any floating values that are 0.05 and above are rounded up to 0.1

@@ -39,7 +39,7 @@ where :
 * __YYYYMMDD__ : Observation date in UTC.
 * __XXXXXXX__ : Station code (WMO ID), could be 5 or 7 digits.
 
-__Note__: A [list of marine observations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) is available.
+__Note__: A [list of marine observations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) is available.
 
 * __Partner observations :__
   
@@ -51,7 +51,7 @@ where :
 * __YYYYMMDD__ : Observation date in UTC.
 * __MSC-ID__ : Partner’s unique MSC station id.
 
-__Note__: A [list of partners stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
+__Note__: A [list of partners stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
 
 ## Nomenclature 
 
@@ -118,7 +118,7 @@ Example :
 
 ## Note
 
-The specification of the data format is available in the [SWOB-ML product guide](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_e.pdf).
+The specification of the data format is available in the [SWOB-ML product guide](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_e.pdf).
 
 ## Support
 

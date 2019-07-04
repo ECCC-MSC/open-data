@@ -14,7 +14,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The NAEFS XML files are available at the following address :
 
-* https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/
+* [https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/)
 
 A history of 30 days of forecast is kept in this directory.
 
@@ -39,7 +39,7 @@ available.
 Example : for the 12Z forecast on May 7th 2010, the raw data for the
 surface wind speed will be in this directory :
 
-https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/
+[https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/)
 
 ## Nomenclature of file names :
 
@@ -63,7 +63,7 @@ bias corrected data (currently only RAW is available).
 * __PROVSTATE__ : Location province (Canada) or State (USA, Mexico). 2
 characters code. For other countries, the code 'XX' is used. You can
 download the code correspondence list here : 
-http://www.state.ia.us/tax/forms/84055.pdf
+[http://www.state.ia.us/tax/forms/84055.pdf](http://www.state.ia.us/tax/forms/84055.pdf)
 * __COUNTRY__ : Location country for the emitted forecast. CA=Canada,
 US=USA, MX=Mexico, etc. For a complete list, refer to the « Country list »
 section a the end of this file.
@@ -86,7 +86,7 @@ is an XML files (xml) compressed using bzip algorithm (bz2).
 
 The complete URL would be :
 
-http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
+[http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
 
 ## File contents
 
@@ -152,7 +152,7 @@ variables. It contains the name of the associated directory and a
 description and the units in both French and English.
 
 The list can be found here:
-https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml
+[https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml](https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml)
 
 ## Available Locations
 
@@ -174,12 +174,12 @@ for some locations)
 
 This list can be found at this address :
 
-http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml
+[http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml](http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml)
 
 The correspondence for the 2 letter codes between the Provinces or States
 can be found in this PDF document :
 
-http://www.state.ia.us/tax/forms/84055.pdf
+[http://www.state.ia.us/tax/forms/84055.pdf](http://www.state.ia.us/tax/forms/84055.pdf)
 
 ## Support
 

@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les profils verticaux sont disponibles à cette adresse :
 
-https://dd.weatheroffice.ec.gc.ca/vertical_profile/forecast/csv
+[https://dd.weatheroffice.ec.gc.ca/vertical_profile/forecast/csv](https://dd.weatheroffice.ec.gc.ca/vertical_profile/forecast/csv)
 
 Les données sont disponibles à 00Z et 12Z, toutes les 3h de 00h à 48h.
 
@@ -31,7 +31,7 @@ ProgTephi_HH_AAAA.csv
 où :
 
 * __HH__ : Heure  de la passe. Peut être "00" ou "12"
-* __AAAA__ : code de la station de 4 lettres. Une [liste complète des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) est disponible.
+* __AAAA__ : code de la station de 4 lettres. Une [liste complète des stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) est disponible.
 
 Exemple : 
 

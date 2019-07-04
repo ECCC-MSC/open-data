@@ -13,7 +13,7 @@ Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bo
 
 ## Accès
 
-Le Datamart du SMC se trouve à l'adresse https://dd.weather.gc.ca/.
+Le Datamart du SMC se trouve à l'adresse [https://dd.weather.gc.ca/](https://dd.weather.gc.ca/).
 
 ### Notifications en temps réel et récupération des données
   
@@ -52,7 +52,7 @@ Le SMC doit faire preuve de souplesse dans la façon dont il offre des données 
 
 Ainsi, aussi souvent que possible, nous utiliserons le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, pour déposer des échantillons des nouvelles données modifiées afin d'aider nos utilisateurs à adapter leurs applications. 
 
-Le serveur DD-Alpha se trouve à l'adresse http://dd.alpha.weather.gc.ca/ .
+Le serveur DD-Alpha se trouve à l'adresse [http://dd.alpha.weather.gc.ca/](http://dd.alpha.weather.gc.ca/).
 
 Ce serveur, qui n'est pas opérationnel, donne également accès à des données expérimentales ou non opérationnelles.
 

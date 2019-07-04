@@ -28,13 +28,13 @@ https://dd.meteo.gc.ca/meteocode/REGION/cmml/
 
 Un historique des données de 24 heures est conservé dans ces répertoires.
 
-Les [spécifications du format CMML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
+Les [spécifications du format CMML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
 
 Les régions de prévisions publiques sont définies précisément et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.
 
 Ces fichiers se trouvent ici :
 
-https://dd.meteo.gc.ca/meteocode/geodata/
+[https://dd.meteo.gc.ca/meteocode/geodata/](https://dd.meteo.gc.ca/meteocode/geodata/)
 
 ## Nomenclature des noms de fichiers 
 
@@ -161,7 +161,7 @@ __Note__ : L'année de la prévision n'est pas dans le nom de fichier.
 
 Exemple de nom de fichier :
 
-https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml
+[https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml](https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml)
 
 Ce fichier contient les prévisions émise par le bureau de Vancouver (répertoire 'pyr' et 'VR' dans le nom de fichier) en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').
 

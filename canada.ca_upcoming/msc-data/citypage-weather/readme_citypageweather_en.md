@@ -8,7 +8,7 @@
 
 This page describes the data and products of weather forecasts per city that are created for some cities in the provinces and Canadian territories and distributed on the Environment and Change website Climate Canada: 
 
-http://www.meteo.gc.ca/
+[http://www.meteo.gc.ca/](http://www.meteo.gc.ca/)
 
 ## Access
 

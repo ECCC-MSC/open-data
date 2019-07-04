@@ -20,7 +20,7 @@ __Notes__:
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
@@ -41,7 +41,7 @@ où :
 * prairies
 * st_lawrence
 
-Une [__description des balises et des attributs XML__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
+Une [__description des balises et des attributs XML__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
 
 Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse suivante :
 
@@ -66,7 +66,7 @@ Exemple de nom de fichier :
 
 * m0000001_f.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en français.
 
-Une [__liste de noms d'emplacements et de codes de sites__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
+Une [__liste de noms d'emplacements et de codes de sites__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
 
 ## Support
 

@@ -14,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les fichiers XML de SPENA se trouvent à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/ensemble/naefs/xml
+* [https://dd.meteo.gc.ca/ensemble/naefs/xml](https://dd.meteo.gc.ca/ensemble/naefs/xml)
 
 Un historique de 30 jours de prévisions est conservé dans ce répertoire.
 
@@ -40,7 +40,7 @@ modèles sont disponibles ('raw').
 Exemple : pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
 pour la vitesse du vent à la surface de seront dans le répertoire:
 
-https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw
+[https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw](https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw)
 
 ## Nomenclature des noms de fichiers 
 
@@ -69,7 +69,7 @@ l'emplacement pour lequel la prévision est émise. Code de 2 lettres.  Pour
 les autres pays le
 code 'XX' est utilisé. Vous pouvez télécharger la liste anglaise de
 correspondance des codes ici : 
-http://www.state.ia.us/tax/forms/84055.pdf
+[http://www.state.ia.us/tax/forms/84055.pdf](http://www.state.ia.us/tax/forms/84055.pdf)
 * __PAYS__ : Pays de l'emplacement pour lequel la prévision est émise.
 CA=Canada,
 US=États-Unis, MX=Mexique, etc. Pour une liste complète des pays, voir la
@@ -93,7 +93,7 @@ l'algorithme bzip2 (bz2).
 
 Exemple d'URL pour un fichier sur internet :
 
-http://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2
+[http://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](http://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
 
 ## Contenu des fichiers
 
@@ -161,7 +161,7 @@ Vous trouverez une liste en format XML des variables qui contient le nom
 du répertoire associé, les descriptions et les unités, en français et 
 anglais à cette adresse :
 
-https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml
+[https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml](https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml)
 
 ## Emplacements disponibles
 
@@ -183,12 +183,12 @@ manquante pour quelques emplacements)
 
 Cette liste se trouve dans le fichier suivant :
 
-https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml
+[https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml](https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml)
 
 La correspondance pour les codes de 2 lettres pour les provinces ou les
 États peut-être trouvée dans ce document PDF :
 
-http://www.state.ia.us/tax/forms/84055.pdf
+[http://www.state.ia.us/tax/forms/84055.pdf](http://www.state.ia.us/tax/forms/84055.pdf)
 
 ## Support 
 

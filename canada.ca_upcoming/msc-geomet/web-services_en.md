@@ -226,7 +226,7 @@ returned map.
 RDPA.24F_PR with CAPA24-LINEAR style:
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
 ```
 
@@ -235,7 +235,7 @@ http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=
 RDPA.24F_PR with RDPA-WXO style:
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
 ```
 
@@ -246,7 +246,7 @@ an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.openge
 or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be encoded using the URL encoding.
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
 &SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3C
 StyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2F
@@ -264,7 +264,7 @@ ColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry
 quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3A
 Rule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E
 ```
-![GDPS layer with a custom user-provided SLD style](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
+![GDPS layer with a custom user-provided SLD style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
 
 
 ## Web Coverage Service (WCS)
@@ -433,17 +433,17 @@ No HTTP authentication is required.
 
 ### Service Endpoints
 
-https://geo.weather.gc.ca/geomet/features
+[https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features)
 
 #### OpenAPI 3.0 Document
 
-https://geo.weather.gc.ca/geomet/features/api
+[https://geo.weather.gc.ca/geomet/features/api](https://geo.weather.gc.ca/geomet/features/api)
 
 ### Feature Collections
 
 List all feature collections available:
 
-https://geo.weather.gc.ca/geomet/features/collections
+[https://geo.weather.gc.ca/geomet/features/collections](https://geo.weather.gc.ca/geomet/features/collections)
 
 The response provides a list of feature collections with associated metadata (title, description, links, extent, CRS).
 
@@ -451,13 +451,13 @@ The response provides a list of feature collections with associated metadata (ti
 
 List a single feature collection:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations)
 
 ### Inspecting Feature Collection Schema
 
 Issue a query returning a single feature to inspect geometry and properties:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Querying
 
@@ -468,29 +468,29 @@ The examples that follow use the [hydrometric daily mean](https://geo.weather.gc
 
 Default query, no filters:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items)
 
 #### Spatial
 
 Query by bounding box (minx, miny, maxx, maxy)
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
 #### Temporal
 
 Query by a single time instant:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30)
 
 Query by a time extent:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31)
 
 #### Property
 
 Query by a feature collection property:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
 
 #### Paging
 
@@ -509,29 +509,29 @@ The `startindex` and `limit` parameters can be used in tandem to cycle through f
 
 Query and limit to features 1-2:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
 
 Query and limit to features 1-100:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
 
 Query and limit to features 101-200:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
 
 ##### Strategies for paging
 
 The paging strategy is commonly used in support of performance when returning large data extractions.  For example, a client could page by 1000 features to cycle through an entire station record:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
 The client can then simply cycle through all items until there no longer any records.  This would constitute the entire record.
 
 Another strategy that can be used is to query for all data without returning any records:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0)
 
 ...and then inspecting the response (see `numberMatched`) to assess the size of the entire record.  The client can then decide how or whether to page accordingly.
 
@@ -539,7 +539,7 @@ https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/ite
 
 Query all daily mean data from a single station between 2001 and 2010:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31)
 
 #### Exporting to CSV format
 
@@ -553,4 +553,4 @@ Any query can be sorted by adding `sortby=PROPERTY:X`, where `PROPERTY` is the s
 
 Fetch a single feature by identifier:
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv)

@@ -27,7 +27,7 @@ A history of 30 days is maintained in this directory.
 
 ## Grid specifications
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
+![HRDPA grid specification image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
 
 Table lists the values of parameters of the polar-stereographic grid.
 

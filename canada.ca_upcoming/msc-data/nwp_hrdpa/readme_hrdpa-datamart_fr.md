@@ -27,7 +27,7 @@ Un historique de 30 jours est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
+![image de la spécification technique de la grille AHRDP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 

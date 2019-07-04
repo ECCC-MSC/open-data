@@ -33,7 +33,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_dcs/DCS_Technical_Documentation_fr.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_dcs/DCS_Technical_Documentation_fr.pdf)
 * [Réduction d'échelle statistique](http://scenarios-climatiques.canada.ca/index.php?page=downscaling)
 * [Introduction aux scénarios climatiques](http://scenarios-climatiques.canada.ca/index.php?page=cmip5-intro)
 * Ces données sont aussi disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)

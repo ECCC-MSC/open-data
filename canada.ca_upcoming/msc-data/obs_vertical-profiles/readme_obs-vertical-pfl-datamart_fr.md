@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les profils verticaux observés sont disponibles à cette adresse :
 
-https://dd.meteo.gc.ca/vertical_profile/observation/csv/
+[https://dd.meteo.gc.ca/vertical_profile/observation/csv/](https://dd.meteo.gc.ca/vertical_profile/observation/csv/)
 
 Un historique de 24 heures des données est conservé dans ce répertoire.
 
@@ -31,7 +31,7 @@ ObsTephi_HH_AAAA.csv
 où :
 
 * __HH__ : Heure  de la passe. Peut être "00" ou "12".
-* __AAAA__ : Code de la station de 4 lettres. La [liste complète des stations](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) est disponible.
+* __AAAA__ : Code de la station de 4 lettres. La [liste complète des stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/prev_vertical-profiles/station_list_for_vertical_profile.geojson) est disponible.
 
 Exemple :
 

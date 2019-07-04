@@ -15,10 +15,10 @@ Le débit des rivières à un endroit précis évolue en fonction des précipita
 Afin de mieux interpréter les changements observés dans ces débits, il est utile de calculer les précipitations moyennes pour les bassins-versants définis par la position des stations de mesure du débit.
 
 En collaboration avec toutes les provinces et territoires, le SMC opère un réseau étendu de stations de jaugeage mesurant le débit des rivières. Des données historiques et temps réel sont disponibles ici:
-https://eau.ec.gc.ca/
+[https://eau.ec.gc.ca/](https://eau.ec.gc.ca/)
 
 De plus, Environnement et Changement climatique Canada a publié les Polygones des bassins du Réseau hydrométrique national, qui proposent des limites de bassins-versants à l'amont de stations hydrométriques actives et rapportant des observations de débit:
-https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375
+[https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375](https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375)
 
 En combinant ces polygones avec l’AHRDP, il est possible d'obtenir des précipitations moyennes par bassin-versant.
 
@@ -43,7 +43,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 ## Documentation technique
 
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa-450_f.pdf)
-* [Feuillet d'information décrivant le système CaPA](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_feuillet_information_f.pdf)
+* [Feuillet d'information décrivant le système CaPA](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_feuillet_information_f.pdf)
 
 ## Registre des changements 
 

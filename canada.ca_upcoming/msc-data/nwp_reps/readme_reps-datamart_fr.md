@@ -25,7 +25,7 @@ où :
 
 ## Spécification technique de la grille
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 
@@ -116,7 +116,7 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont les suiv
 * __DLWRF_SFC_0__ :       Flux descendant de radiation d'ondes longues à la surface 
 * __DSWRF_SFC_0__ :       Flux descendant de radiation d'ondes courtes à la surface
 
-Une [liste en format XML](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
+Une [liste en format XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
 
 ## À propos du masque No-Data
 

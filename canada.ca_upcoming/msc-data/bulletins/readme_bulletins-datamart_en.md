@@ -10,13 +10,13 @@ This page describes the data of the [alphanumerical bulletins](readme_bulletins_
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage-overview/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. 
 
 The bulletin files are available at the following address :
 
-* https://dd.weather.gc.ca/bulletins/alphanumeric/
+* [https://dd.weather.gc.ca/bulletins/alphanumeric/](https://dd.weather.gc.ca/bulletins/alphanumeric/)
 
 A short history of data is kept in the directory.
 
@@ -64,7 +64,7 @@ SOVD02_CWOW_250553___14352
 
 A complete listing of all bulletins posted on the MSC Datamart is not available. 
 However, once you know which ones you are looking for after consulting the WMO documents, 
-then you can easily checked if they are on our http server using the [bulletin search script](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
+then you can easily checked if they are on our http server using the [bulletin search script](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
 
 ### Weather Warnings
 
@@ -87,7 +87,7 @@ The specific 2 letter codes for the Warnings refer to :
 An example of Weather Warning received on June 9th 2010 at 07 UTC by the 
 Halifax office is :
 
-https://dd.weatheroffice.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416
+[https://dd.weatheroffice.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416](https://dd.weatheroffice.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416)
 
 ## Support
 

@@ -25,7 +25,7 @@ __where__ :
 
 ## Technical specification of the grid
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)
 
 Table lists the values of various parameters of latitude-longtitude grid :
 

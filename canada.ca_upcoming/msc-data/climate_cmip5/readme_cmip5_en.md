@@ -34,7 +34,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ## Technical documentation
 
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/CMIP5_Technical_Documentation_en.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/CMIP5_Technical_Documentation_en.pdf)
 * [Information on Representative Concentration Pathways](http://climate-scenarios.canada.ca/?page=scen-rcp )
 * [Introduction to climate scenarios](http://climate-scenarios.canada.ca/?page=cmip5-intro)
 * These data are also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)

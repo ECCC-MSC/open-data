@@ -29,8 +29,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Version actuelle du Système global de prévision océan-glace](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.0.0_f.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-300_f.pdf)
+* [Version actuelle du Système global de prévision océan-glace](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.0.0_f.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-300_f.pdf)
 
 ## Registre des changements 
 

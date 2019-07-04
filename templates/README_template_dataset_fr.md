@@ -39,7 +39,7 @@ Les [métadonnées du *nom du jeu de données* sont accessibles sur le portail d
 
 Liste et liens vers les produits disponibles pour ce jeu de données:
 
-*Liens vers les éventuels produits disponibles, que ce soit sur le [Guide des produits](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/table_of_contents_f.html)  ou [WxO](https://meteo.gc.ca/mainmenu/modelling_menu_f.html)*
+*Liens vers les éventuels produits disponibles, que ce soit sur le [Guide des produits](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/table_of_contents_f.html)  ou [WxO](https://meteo.gc.ca/mainmenu/modelling_menu_f.html)*
 
 >Exemples pour le SRPD:
 >Cartes de prévision
@@ -49,8 +49,8 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 
 ## Documentation technique
 
-- *Lien vers les documents techniques des données (essentiellement pour les données de modèles, les fiches techniques actuellement sur [Collaboration](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/)*
-- *Lien vers la note technique actuelle pour les NWP (actuellement sur le [Guide des produits](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
+- *Lien vers les documents techniques des données (essentiellement pour les données de modèles, les fiches techniques actuellement sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/)*
+- *Lien vers la note technique actuelle pour les NWP (actuellement sur le [Guide des produits](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
 - *Liens vers articles scientifiques éventuels*
 
 >Exemple pour le SRPD:

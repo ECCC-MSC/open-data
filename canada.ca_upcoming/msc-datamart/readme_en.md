@@ -32,7 +32,7 @@ Data on the MSC Datamart is available in open formats. It includes:
 * [GRIB2](../msc-data/readme_grib_en.md)
 * [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
 * [GeoJSON](https://geojson.org/)
-* [shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+* [shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 * CSV
 * XML
 

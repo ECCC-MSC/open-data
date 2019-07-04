@@ -29,7 +29,7 @@ The [metadata of the Canadian Gridded Temperature and Precipitation Anomalies ar
 
 ## Technical documentation
 
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cangrd/CANGRD_Technical_Documentation_en.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cangrd/CANGRD_Technical_Documentation_en.pdf)
 * These data are also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
 
 ## Change log

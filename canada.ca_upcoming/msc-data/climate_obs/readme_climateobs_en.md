@@ -40,8 +40,8 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ## Technical documentation
 
-* [Real-Time Weather Statistics Maps](http://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_e.pdf)
+* [Real-Time Weather Statistics Maps](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_e.pdf)
 * [Climate data web site](http://climat.meteo.gc.ca/historical_data/search_historic_data_e.html)
 * [Canadian Centre for Climate Services](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html)
 

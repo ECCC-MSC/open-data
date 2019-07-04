@@ -31,7 +31,7 @@ Upcoming.
 ## Technical documentation
 
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa-450_e.pdf)
-* [Information sheet describing the CaPA system](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
+* [Information sheet describing the CaPA system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 
 ## Change log
 

@@ -10,13 +10,13 @@ Cette page décrit les données des [bulletins alphanumériques](readme_bulletin
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage-overview/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. 
 
 Les données sont accessibles aux adresses suivantes :
 
-* https://dd.meteo.gc.ca/bulletins/alphanumeric/
+* [https://dd.meteo.gc.ca/bulletins/alphanumeric/](https://dd.meteo.gc.ca/bulletins/alphanumeric/)
 
 Un historique des données est conservé dans ce répertoire.
 
@@ -65,7 +65,7 @@ SOVD02_CWOW_250553___14352
 Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC.
 Cependant, une fois le type de bulletin identifié dans le répertoire de
 l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à
-l'[utilitaire de recherche de bulletins](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf).
+l'[utilitaire de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf).
 
 ### Avertissements météo
 
@@ -88,7 +88,7 @@ Les codes de 2 lettres pour les bulletins d'avertissements météo sont :
 Un exemple d'avertissement météo reçu le 9 juin 2010 à 07 UTC émit par le 
 bureau d'Halifax est :
 
-https://dd.meteo.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416
+[https://dd.meteo.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416](https://dd.meteo.gc.ca/bulletins/alphanumeric/20100609/WW/CWHX/07/WWCN14_CWHX_090744___64416)
 
 ## Support
 

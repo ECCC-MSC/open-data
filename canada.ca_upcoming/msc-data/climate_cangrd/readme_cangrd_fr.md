@@ -29,7 +29,7 @@ Les [métadonnées des Anomalies de température et précipitation interpolées 
 
 ## Documentation technique
 
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cangrd/CANGRD_Technical_Documentation_fr.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cangrd/CANGRD_Technical_Documentation_fr.pdf)
 * Ces données sont aussi disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)
 
 ## Registre des changements 

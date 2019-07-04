@@ -21,24 +21,24 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 CanSIPS calculates a suite of oceanic and atmospheric indices (e.g. monsoon indices, PNA, NAO, El NINO, etc.) which can be used for seasonal climate forecasting and monitoring. 
 
-A more ![detailed description of the indices](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_CANSIPS_e.pdf) is available.
+A more ![detailed description of the indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_CANSIPS_e.pdf) is available.
 
 The files containing atmospheric and oceanic CanSIPS indices can be accessed at the following URLs :
 
 __Forecast files__ :
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly)
 
 __Hindcast files__ :
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly)
 
 __Observations__ :
 
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal
-* https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal)
+* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly)
 
 ## File name nomenclature 
 

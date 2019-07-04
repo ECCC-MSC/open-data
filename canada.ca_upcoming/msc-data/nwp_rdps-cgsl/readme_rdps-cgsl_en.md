@@ -53,7 +53,7 @@ Upcoming.
 
 ## Technical documentation
 
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_e.pdf)
 
 ## Change log
 

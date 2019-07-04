@@ -10,7 +10,7 @@ This page describes the [radar](readme_radar_en.md) imagery in GIF format, avail
 
 These images are used to feed the public forecast website:
 
-https://meteo.gc.ca/radar/index_e.html
+[https://meteo.gc.ca/radar/index_e.html](https://meteo.gc.ca/radar/index_e.html)
 
 ## Data location
 
@@ -20,7 +20,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The radar images are available at the following address :
 
-https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension
+[https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension](https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension)
 
 where :
 
@@ -34,9 +34,9 @@ __Notes__:
 
 * Details about these products can be found on the Environment and Climate Change Canada web page at :
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1 
+[https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1)
 
-* A [list of radar sites](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) is available. This list will be updated regularly.
+* A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) is available. This list will be updated regularly.
 
 ## Filename nomenclature
 
@@ -91,7 +91,7 @@ This composite image can be differentiated from the original radar image, by the
 
 To learn more about how to use the composite images, you can read the documentation on line:
 
-http://weather.gc.ca/radar/how-to-use_e.html#display
+[http://weather.gc.ca/radar/how-to-use_e.html#display](http://weather.gc.ca/radar/how-to-use_e.html#display)
 
 * __CAPPI__
 
@@ -123,14 +123,14 @@ The first radar has already been installed in Radisson (Saskatchewan) and some p
 
 What will happen with the availability of these products and the impact on users?
 
-* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA). It help to manage the transition.
-* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
+* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). It help to manage the transition.
+* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)).
 * Users will be informed as and when new radars are installed and their products are available following the same procedure described above.
 
 Example (The Radisson case) :
 
-* __The 3-lettre ID product every 10 minutes (Temporary)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/
-* __The 5-letter ID products every 6 minutes (Permanently)__ : http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA
+* __The 3-lettre ID product every 10 minutes (Temporary)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
+* __The 5-letter ID products every 6 minutes (Permanently)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
 
 ## Support
 

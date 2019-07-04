@@ -22,7 +22,7 @@ Le service permet de cibler les notifications pour une série spécifique de fic
 
 ## Description
 
-Le script est en langage python (https://www.python.org/) et doit être installé sur le système où il sera requis. De plus, la librairie python-amqplib doit également être installée. Consulter la documentation spécifique à votre système d'exploitation pour savoir comment installer ce logiciel et cette librairie.
+Le script est en langage python [https://www.python.org/](https://www.python.org/) et doit être installé sur le système où il sera requis. De plus, la librairie python-amqplib doit également être installée. Consulter la documentation spécifique à votre système d'exploitation pour savoir comment installer ce logiciel et cette librairie.
 
 Le serveur AMQP sécurisé (SSL, couche de sockets sécurisée) se trouve à l'adresse: dd.meteo.gc.ca 
 
@@ -45,15 +45,15 @@ Le script permettant de récupérer les produits sur le Datamart du SMC et de le
 
 Ce client est élaboré pour accomplir des téléchargements d´une façon très fiable et est largement utilisé au sein du gouvernement du Canada :
 
-https://github.com/MetPX/Sarracenia 
+[https://github.com/MetPX/Sarracenia](https://github.com/MetPX/Sarracenia)
 
-Un survol est disponible ici : https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst 
+Un survol est disponible ici : [https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst](https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst)
 
-Le guide d’installation peut être trouvé à cette adresse :  https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst
+Le guide d’installation peut être trouvé à cette adresse :  [https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst)
 
-Quant au guide d’utilisation, il est disponible ici :  https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst
+Quant au guide d’utilisation, il est disponible ici :  [https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst](https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst)
 
-Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers:https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe
+Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers: [https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
 
 ## Exemples
 
@@ -72,10 +72,10 @@ Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une
 ## Liens externes
 
 Protocol AMQP sur Wikipédia :
-https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol 
+[https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol](https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
 
 Librairie python pour AMQP :
-https://pypi.python.org/pypi/amqplib
+[https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
 
 
 ## Pour nous joindre
@@ -83,7 +83,6 @@ https://pypi.python.org/pypi/amqplib
 Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommandons fortement de vous inscrire à la liste de diffusion du Datamart du SMC afin d'être averti de tout changement ou mise à jour des données disponibles.
 
 Vous pouvez vous inscrire ici :
-
-http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info 
+[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
 
 Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : ec.dps-client.ec@canada.ca 

@@ -32,7 +32,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ## Technical documentation
 
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_dcs/DCS_Technical_Documentation_en.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_dcs/DCS_Technical_Documentation_en.pdf)
 * [Statistically downscaled climate scenarios](http://climate-scenarios.canada.ca/?page=statistical-downscaling)
 * [Introduction to climate scenarios](http://climate-scenarios.canada.ca/index.php?page=cmip5-intro)
 * These data are also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)

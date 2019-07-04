@@ -30,7 +30,7 @@ Not available.
 
 ## Technical documentation
 
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/Meteocode_fr.pdf) _(only available in French)_
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/Meteocode_fr.pdf) _(only available in French)_
 
 ## Change log
 

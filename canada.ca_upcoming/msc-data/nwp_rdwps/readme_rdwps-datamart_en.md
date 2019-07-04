@@ -49,7 +49,7 @@ where :
 
 ### Lake Superior
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
 Table lists the values of various parameters of the Lake Superior :
 
@@ -62,7 +62,7 @@ Table lists the values of various parameters of the Lake Superior :
 
 ### Lake Huron and Michigan
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 Table lists the values of various parameters of the Lake Huron and Michigan :
 
@@ -75,7 +75,7 @@ Table lists the values of various parameters of the Lake Huron and Michigan :
 
 ### Lake Erie
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
 Table lists the values of various parameters of the Lake Erie :
 
@@ -88,7 +88,7 @@ Table lists the values of various parameters of the Lake Erie :
 
 ### Lake Ontario
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
 Table lists the values of various parameters of the Lake Ontario :
 
@@ -101,7 +101,7 @@ Table lists the values of various parameters of the Lake Ontario :
 
 ### Gulf of St Lawrence
 
-![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
 
 Table lists the values of various parameters of the Gulf of St Lawrence :
 

@@ -10,13 +10,13 @@ This page describes the markup language files Canadian Meteorological Service (C
 
 # Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
 The data is available at the following address : 
                                                                           
-https://dd.weather.gc.ca/meteocode/REGION/cmml/ 
+[https://dd.weather.gc.ca/meteocode/REGION/cmml/ ](https://dd.weather.gc.ca/meteocode/REGION/cmml/)
 
 where 'REGION' is one of the following value :
 
@@ -28,13 +28,13 @@ where 'REGION' is one of the following value :
 
 A 24-hour data history is kept in these directories.
 
-The [CMML format specifications](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf) are available.
+The [CMML format specifications](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf) are available.
 
 Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.
 
 These files can be found here :
 
-https://dd.weather.gc.ca/meteocode/geodata/
+[https://dd.weather.gc.ca/meteocode/geodata/](https://dd.weather.gc.ca/meteocode/geodata/)
 
 ## File name nomenclature 
 
@@ -169,7 +169,7 @@ __Note__ : The year of the forecast is not included in the file name.
 
 File name example :
 
-https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml
+[https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml](https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml)
 
 This file contains the forecast emitted by the Vancouver office (directory 'pyr' and 'VR' in the file name) in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').
 

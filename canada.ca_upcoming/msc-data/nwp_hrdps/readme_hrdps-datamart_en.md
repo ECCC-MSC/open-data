@@ -20,12 +20,12 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* https://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/east/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
+*s://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
+https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
+https://dd.weather.gc.ca/model_hrdps/east/grib2/HH/hhh/
+https://dd.weather.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
+https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
+https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
 
 where :
 
@@ -39,7 +39,7 @@ where :
 
 ### Continental grid specifications
 
-![Image de la grille du domaine continental du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
+![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
 Table lists the values of various parameters of the Continental polar-stereographic grid.
 
@@ -54,7 +54,7 @@ Table lists the values of various parameters of the Continental polar-stereograp
 
 ### North (experimental) grid specifications
 
-![Image de la grille du domaine nord du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
+![Image de la grille du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
 
 Table lists the values of various parameters of the North polar-stereographic grid.
 
@@ -69,7 +69,7 @@ Table lists the values of various parameters of the North polar-stereographic gr
 
 ### East grid specifications
 
-![Image de la grille du domaine est du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_east.png)
+![Image de la grille du domaine est du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_east.png)
 
 Table lists the values of various parameters of the East polar-stereographic grid.
 
@@ -84,7 +84,7 @@ Table lists the values of various parameters of the East polar-stereographic gri
 
 ### Prairies grid specifications
 
-![Image de la grille du domaine Prairies du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_prairies.png)
+![Image de la grille du domaine Prairies du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_prairies.png)
 
 Table lists the values of various parameters of the Prairie polar-stereographic grid.
 
@@ -99,7 +99,7 @@ Table lists the values of various parameters of the Prairie polar-stereographic 
 
 ### West grid specifications
 
-![Image de la grille du domaine ouest du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_west.png)
+![Image de la grille du domaine ouest du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_west.png)
 
 Table lists the values of various parameters of the West polar-stereographic grid.
 
@@ -115,7 +115,7 @@ Table lists the values of various parameters of the West polar-stereographic gri
 
 ### Maritimes grid specifications
 
-![Image de la grille du domaine Maritimes du SHRPD](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_marit.png)
+![Image de la grille du domaine Maritimes du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_marit.png)
 
 Table lists the values of various parameters of the Maritime polar-stereographic grid.
 

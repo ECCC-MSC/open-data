@@ -225,7 +225,7 @@ Voici deux exemples de requêtes WMS GetMap pour la couche de quantité de préc
 Couche RDPA.24F_PR avec le style CAPA24-LINEAR :
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
 ```
 
@@ -234,7 +234,7 @@ http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=
 Couche RDPA.24F_PR avec le style RDPA-WXO :
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
 ```
 
@@ -243,7 +243,7 @@ http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=
 Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être encodé tel un URL HTTP.
 
 ```
-http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
 &SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3C
 StyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2F
@@ -417,18 +417,18 @@ Aucune authentification HTTP n'est requise.
 
 ### Points de service
 
-https://geo.weather.gc.ca/geomet/features
+[https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features)
 
 ### Documentation OpenAPI 3.0
 
-https://geo.weather.gc.ca/geomet/features/api
+[https://geo.weather.gc.ca/geomet/features/api](https://geo.weather.gc.ca/geomet/features/api)
 
 
 ### Collections d'entités
 
 Répertoriez toutes les collections d’entités disponibles :
 
-https://geo.weather.gc.ca/geomet/features/collections
+[https://geo.weather.gc.ca/geomet/features/collections](https://geo.weather.gc.ca/geomet/features/collections)
 
 La réponse fournit une liste de collections de fonctionnalités avec leurs métadonnées associées (titre, description, liens, étendue, CRS).
 
@@ -436,13 +436,13 @@ La réponse fournit une liste de collections de fonctionnalités avec leurs mét
 
 Répertoriez une seule collection d'entités :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations)
 
 ### Inspection du schéma de collection d'entités
 
 Émettez une requête renvoyant une seule entité pour inspecter sa géométrie et ses propriétés :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Requête
 
@@ -452,30 +452,30 @@ Les exemples suivants utilisent la collection [hydrométrique de moyennes quotid
 
 Requête par défaut, pas de filtres :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items)
 
 #### Spatial
 
 Requête par zone de sélection (minx, miny, maxx, maxy) :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
 #### Temporel
 
 Requête pour une valeur instantannée :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30)
 
 Requête pour un intervalle de temps :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31)
 
 
 #### Propriété
 
 Requête par une propriété de collection d'entités :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
 
 #### Pagination
 
@@ -493,29 +493,29 @@ Les paramètres `startindex` et `limit` peuvent être utilisés en tandem pour p
 
 Requête et limite aux entités 1-2 :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
 
 Requête et limite aux entités 1 à 100 :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
 
 Requête et limite aux entités 101-200 :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
 
 ##### Stratégies de pagination
 
 La stratégie de pagination est couramment utilisée pour améliorer les performances lors du retour d'extractions de données volumineuses. Par exemple, un client peut faire défiler par 1 000 entités pour parcourir un enregistrement de station complet :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
 Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Cela constituerait le dossier complet.
 
 Une autre stratégie possible consiste à interroger toutes les données sans renvoyer aucun enregistrement :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0)
 
 ...puis en examinant la réponse (voir `numberMatched`) pour évaluer la taille de l'enregistrement complet. Le client peut alors décider comment ou s'il doit paginer en conséquence.
  
@@ -523,7 +523,7 @@ https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/ite
 
 Interrogez toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31)
 
 #### Exporter au format CSV
 
@@ -537,4 +537,4 @@ Toute requête peut être triée en ajoutant `sortby=PROPERTY:X`, où `PROPERTY`
 
 Récupérer une seule caractéristique par identifiant :
 
-https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv
+[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv)
