@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > GeoMet du SMC
+[TdM](../readme_fr.md) > [GeoMet du SMC](readme_fr.md) > Documentation technique
 
 # Table des matières
 - [Web Map Service (WMS)](#web-map-service-wms)

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > MSC GeoMet web services
+[TOC](../readme_en.md) > [MSC GeoMet](readme_en.md) > Technical documentation
 
 # Table of Contents
 - [Web Map Service (WMS)](#web-map-service-wms)
