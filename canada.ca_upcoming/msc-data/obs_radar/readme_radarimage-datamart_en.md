@@ -24,9 +24,9 @@ https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension
 
 where :
 
-* PRODUCT  = [24_HR_ACCUM | CAPPI | PRECIPET]
-* FORMAT   = [GIF] (other formats may appear in the future)
-* RADAR    = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
+* PRODUCT = [24_HR_ACCUM | CAPPI | PRECIPET]
+* FORMAT = [GIF] (other formats may appear in the future)
+* RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
 
 An history of 48 hours of data is kept in each directory.
 
@@ -50,29 +50,29 @@ Images for regional composites (5 regions of Canada) and individual radar are av
 
 Composites with 14 colors intensity scale :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
 Composites with 8 colors intensity scale :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
 
    ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
 
 Individual radar with 14 colors intensity scale :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
 
    ex: 201409201400_XFT_PRECIPET_RAIN.gif
 
 Individual radar with 8 colors intensity scale :
 
-*  YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-*  YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
+* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
 
    ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
 
@@ -97,8 +97,8 @@ http://weather.gc.ca/radar/how-to-use_e.html#display
 
 The CAPPI files have the following nomenclature :
 
-*  YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
-*  YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
+* YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
+* YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
 
    ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
 
@@ -106,7 +106,7 @@ The CAPPI files have the following nomenclature :
 
 Shows the rain accumulation, in mm, over the last 24hr period. The product is available every 10 minutes, and for the last 48 hr.
    
-*  YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
+* YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
    ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 

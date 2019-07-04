@@ -19,8 +19,8 @@ Dedicated data feeds with 24/7 support are available to specialized users and ma
 Available data include:
 * Numerical Weather Prediction model data in a GRIdded Binary (GRIB2) format for specific parameters and domains (down to hourly values), or at specific points
 * Unprocessed radar data for Canadian radars, such as:
-  * Digital outputs of radar echoes or precipitation in ASCII format
-  * Full doppler volume scans data in IRIS or ODIM_H5 formats
+    * Digital outputs of radar echoes or precipitation in ASCII format
+    * Full doppler volume scans data in IRIS or ODIM_H5 formats
 * Meteorological maps
 * Text bulletins
 * Most of the data available on the free [MSC Datamart](../msc-datamart/readme_en.md) and [MSC GeoMet](../msc-geomet/readme_en.md) services

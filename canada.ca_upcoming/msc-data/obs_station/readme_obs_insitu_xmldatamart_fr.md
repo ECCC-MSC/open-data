@@ -32,7 +32,6 @@ https://dd.weather.gc.ca/observations/xml/PC/TYPE
 
 où :
 * **PC** : Code de 2 lettres pour la province ou le territoire couvert par ces observations. Ce code peut prendre une de ces 13 valeurs:
-
     * AB (Alberta)
     * BC (Colombie-Britannique)
     * MB (Manitoba)

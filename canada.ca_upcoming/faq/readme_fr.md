@@ -129,24 +129,24 @@ https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_P
 
 Concernant les fils de données, les formats disponibles sont les suivants:
 
-    - NUMERICA (ASCII)
-    - Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC))
-    - Format brut IRIS 
-        Spécifications: https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
+    * NUMERICA (ASCII)
+    * Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC))
+    * Format brut IRIS : Spécifications: https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx
 
 Les détails concernant les frais sont les suivants:
 
-    - 1-5 radars (QC, Atl ou Pac région) : $1,600/mois
-    - 6-10 (toute région): $1,800/mois
-    - 11+: $2,000/mois
-    - Plus des frais fixes d'installation du fil de données de $2,000 
+    
+    * 1-5 radars (QC, Atl ou Pac région) : $1,600/mois
+    * 6-10 (toute région): $1,800/mois
+    * 11+: $2,000/mois
+    * Plus des frais fixes d'installation du fil de données de $2,000 
     
 Ces tarifs sont donnés à titre indicatif seulement et sont sujets à changement.
 
 Concernant les tailles des fichiers:
 
-    - 1 heure de volume scan pour 1 radar sans précipitation représente environ 4.5 Mb
-    - 1 heure de volume scan pour 1 radar avec précipitation représente environ 13 Mb
+    * 1 heure de volume scan pour 1 radar sans précipitation représente environ 4.5 Mb
+    * 1 heure de volume scan pour 1 radar avec précipitation représente environ 13 Mb
     
 Les chiffres ci-dessus dépendent des conditions météo et sont donnés qu'à titre de référence seulement.
 
@@ -203,8 +203,8 @@ Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parv
 |Nom et coordonnées de personne à facturer |    |
 
 Notes:
-- Les requêtes telles que "toutes les variables à tous les niveaux" ne sont pas acceptées. Merci de spécifier
-- Les archives remontent aux 5 dernières années, selon la disponibilité des données 
+* Les requêtes telles que "toutes les variables à tous les niveaux" ne sont pas acceptées. Merci de spécifier
+* Les archives remontent aux 5 dernières années, selon la disponibilité des données 
 
 ## Comment être informé des changements aux bulletins ainsi qu'aux contenu et format de modèles ?
 

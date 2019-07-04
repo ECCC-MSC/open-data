@@ -43,21 +43,20 @@ where :
 * __normals__ : Constant string indicating climate data that critically contributes to the characterization of Earth’ s climate
 * __daily__ : Constant string indicating daily climate data
 * __monthly__ : Constant string indicating monthy climate data 
-* __PROVTERR__ : 2-letter code for the province or territory, and 1 string for National coverage. 
-          The code is one of the 13 following values :
-            * AB (Alberta)
-            * BC (British Columbia)
-            * MB (Manitoba)
-            * NB (New Brunswick)
-            * NL (Newfoundland and Labrador)
-            * NS (Nova Scotia)
-            * NT (Northwest Territories)
-            * NU (Nunavut)
-            * ON (Ontario)
-            * PE (Prince Edward Island)
-            * QC (Quebec)
-            * SK (Saskatchewan)
-            * YT (Yukon)
+* __PROVTERR__ : 2-letter code for the province or territory, and 1 string for National coverage. The code is one of the 13 following values :
+    * AB (Alberta)
+    * BC (British Columbia)
+    * MB (Manitoba)
+    * NB (New Brunswick)
+    * NL (Newfoundland and Labrador)
+    * NS (Nova Scotia)
+    * NT (Northwest Territories)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Prince Edward Island)
+    * QC (Quebec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
 * __XXXXXXX__ : Climate_ID of the climate stations (see note)
 * __YYY1__ : Year of the beginning of the climate period of interest : [1981]
 * __YYY2__  : Year of the end of the climate period of interest : [2010]

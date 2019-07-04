@@ -106,6 +106,7 @@ time (see the Models List in the last section).
 Note : Some models do not have a forecast at specific hours.
 
 The file content looks like :
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
    <naefs_spena_forecast>
       <header>
@@ -132,6 +133,7 @@ The file content looks like :
    </forecast>
          ...
 </naefs_spena_forecast>
+```
 
 ## Variable List
 

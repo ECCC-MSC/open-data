@@ -44,21 +44,20 @@ where :
 * __AHCCD__ : Constant string indicating the data source, namely the adjusted and homogenized climate data for many climatological stations in Canada
 * __hist__ : Constant string indicating historical data. Varies per station, per variable with data availability ranging between 1840 to the year preceding current year
 * __TemporalResoltion__ : Time period, taking one of the values : [annual, monthly, DJF, MAM, JJA, SON]
-* __ProvTerr__ : 2-letter code for the province or territory 
-          The code is one of the 13 following values :
-            * AB (Alberta)
-            * BC (British Columbia)
-            * MB (Manitoba)
-            * NB (New Brunswick)
-            * NL (Newfoundland and Labrador)
-            * NS (Nova Scotia)
-            * NT (Northwest Territories)
-            * NU (Nunavut)
-            * ON (Ontario)
-            * PE (Prince Edward Island)
-            * QC (Quebec)
-            * SK (Saskatchewan)
-            * YT (Yukon)
+* __ProvTerr__ : 2-letter code for the province or territory. The code is one of the 13 following values :
+    * AB (Alberta)
+    * BC (British Columbia)
+    * MB (Manitoba)
+    * NB (New Brunswick)
+    * NL (Newfoundland and Labrador)
+    * NS (Nova Scotia)
+    * NT (Northwest Territories)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Prince Edward Island)
+    * QC (Quebec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
 * __XXXXXXX__ : Climate_ID of the climate stations
 * __Variable__ : Name of the variable available in the file, taking one of the values : [TMEAN,TMIN,TMAX,PCP,RA,SN,SLP,PSFC,SFCWND]; TMEAN stands for mean temperature, TMIN stands for minimum temperature, TMAX stands for maximum temperature, PCP stands for total precipitation, RA stands for rain; SN stands for snow; SLP stands for sea level pressure; PSFC stands for surface pressure; SFCWND stands for surface wind speed
 * __TimeStep__ : Time step, taking one of the values : [P1Y, P1M]; P1Y stand for 1 year time step and P1M stands for 1 month time step

@@ -8,17 +8,17 @@
 
 Data for over 1900 watersheds is available. In order to reduce the number of files on the MSC Datamart, it has been necessary to group these watersheds by drainage basin:
 
- * Maritime Provinces
- * St. Lawrence
- * Northern Quebec and Labrador
- * Southwest Hudson Bay
- * Nelson River
- * Western Hudson Bay
- * Great Slave Lake
- * Pacific
- * Yukon River
- * Arctic
- * Mississipi River
+* Maritime Provinces
+* St. Lawrence
+* Northern Quebec and Labrador
+* Southwest Hudson Bay
+* Nelson River
+* Western Hudson Bay
+* Great Slave Lake
+* Pacific
+* Yukon River
+* Arctic
+* Mississipi River
 
 In addition to the average precipitation, the average confidence index of the analysis is also provided. As explained in the documentation of the HRDPA, the analysis is a weighted average of a numerical weather prediction and of observations (both in-situ and radar). The total weight given to observations (from zero to one) in the final computation is reported alongside the precipitation amount in the gridded HRDPA data files. 
 

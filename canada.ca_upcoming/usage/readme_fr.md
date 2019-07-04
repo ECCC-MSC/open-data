@@ -10,12 +10,12 @@ Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouve
 
 * [Connaître quelles sont les données disponibles](#connaitre-quelles-sont-les-donnees-disponibles)
 * [Comment visualiser les données](#comment-visualiser-les-donnees)
-  * [Logiciel de bureau](#logiciel-de-bureau)
-  * [Cartes interactives en-ligne et applications mobiles](#cartes-interactives-en-ligne-et-applications-mobiles)
-  * [Images à la volée](#images-a-la-volee)
+    * [Logiciel de bureau](#logiciel-de-bureau)
+    * [Cartes interactives en-ligne et applications mobiles](#cartes-interactives-en-ligne-et-applications-mobiles)
+    * [Images à la volée](#images-a-la-volee)
 * [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes)
-  * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
-  * [Services web de données brutes](#services-web-de-donnees-brutes)
+    * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
+    * [Services web de données brutes](#services-web-de-donnees-brutes)
 
 
 ## Connaître quelles sont les données disponibles

@@ -33,26 +33,23 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Prévisions météorologiques numériques
 
 * **Systèmes déterministes**
-
-  * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
-  * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
-  * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
-  * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
-  * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
-  * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
-  * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
-  * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
-  * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
-  * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
-  * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
-  * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
-  
+    * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
+    * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
+    * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
+    * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
+    * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
+    * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
+    * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
+    * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
+    * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
+    * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
+    * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
+    * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
 * **Systèmes probabilistes**
-
-  * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
-  * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
-  * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)
-  * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
+    * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
+    * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
+    * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)
+    * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
 
 ## Données climatiques
 

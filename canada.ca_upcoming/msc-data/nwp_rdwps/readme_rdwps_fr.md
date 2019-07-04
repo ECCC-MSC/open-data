@@ -11,16 +11,16 @@ Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spec
 
 Ce système comprend quatre domaines :
 
-* Lac Supérieur :      Dimensions de la grille - 658 par 318
+* Lac Supérieur : Dimensions de la grille - 658 par 318
     * Coordonnées du premier point : 46.2590 N 92.3116 O
 
 * Lac Huron-Michigan : Dimensions de la grille - 698 par 573
     * Coordonnées du premier point : 41.4260 N 88.1452 O
 
-* Lac Érié :           Dimensions de la grille - 398 par 210
+* Lac Érié : Dimensions de la grille - 398 par 210
     * Coordonnées du premier point : 41.2190 N 83.6068 O
 
-* Lac Ontario :        Dimensions de la grille - 348 par 158
+* Lac Ontario : Dimensions de la grille - 348 par 158
     * Coordonnées du premier point : 43.0640 N 79.9736 O
 
 ## Accès

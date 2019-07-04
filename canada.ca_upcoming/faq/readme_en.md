@@ -135,8 +135,8 @@ For data feeds, available formats are as follows:
 * GIF format (recent GIFs available for free on the MSC Datamart)
 * IRIS (raw) format for the old C-Band radars and ODIM_H5 format for the new S-band radars
 * Specifications: 
-     - https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx 
-     - https://support.hdfgroup.org/HDF5/users5.html
+    * https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx 
+    * https://support.hdfgroup.org/HDF5/users5.html
 
 Details regards pricing are as follows:
 
@@ -347,11 +347,11 @@ https://github.com/OGCMetOceanDWG/WorldWeatherSymbols
 
 To obtain extreme forecast temperature data in CSV format, you can consult either:
 
-- FMCN31 to FMCN38 forecast bulletins (CSV format), based on the Global Deterministic Prediction System (GDPS).
+* FMCN31 to FMCN38 forecast bulletins (CSV format), based on the Global Deterministic Prediction System (GDPS).
   0000 UTC forecasts contain the maximum of the current day, the minimum and maximum of day two and the minimum of day three.
   1200 UTC forecasts contain the minima and maxima of day two and day three.
 
-- FMCN41 to FMCN48 forecast bulletins (CSV format), based on the Regional Deterministic Prediction System (RDPS). .
+* FMCN41 to FMCN48 forecast bulletins (CSV format), based on the Regional Deterministic Prediction System (RDPS). .
   1200 UTC forecasts contain the minimum and maximum of day two and the minimum of day three.
   Forecasts based on 0000 UTC data contain the maximum of the current day and the minimum and maximum of day two.
 
