@@ -43,4 +43,4 @@ Des [cartes d'analyses](https://meteo.gc.ca/analysis/index_f.html#APCP) de cumul
 
 ## Registre des changements
 
-La chronologie des changements apportés aux sytèmes opérationnels est disponible dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.
+La chronologie des changements apportés aux sytèmes opérationnels est disponible dans [cette](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.

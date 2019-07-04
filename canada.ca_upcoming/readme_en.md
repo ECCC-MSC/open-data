@@ -26,7 +26,7 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
     * Archived data retrieval
     * Dedicated data feeds with 24/7 support
 
-## [Usage Overview](usage/readme_en.md)
+## [Usage overview](usage/readme_en.md)
 
 Overview and examples on how to access and use Meteorological Service of Canada's open data.
 
