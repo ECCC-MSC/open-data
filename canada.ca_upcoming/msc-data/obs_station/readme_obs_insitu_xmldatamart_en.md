@@ -36,8 +36,7 @@ https://dd.weather.ec.gc.ca/observations/xml/PC/TYPE
 
 where :
 
-* __PC__ : indicates the 2 letter provincial code in lower case. Could be one of the 13 values below:
-
+* __PC__ : indicates the 2 letter provincial code in lower case. Could be one of the 13 values below:=
     * AB (Alberta)
     * BC (British Columbia)
     * MB (Manitoba)
@@ -91,10 +90,10 @@ If current data is missing, use the previous hour's data temporarily. Hourly obs
 
 These observations have QA/QC applied to them. Any values that do not pass QA/QC will be suppressed. This includes values that are flagged as doubtful.
 
-Parameters contained in each file for the selected province or territory are :
+Parameters contained in each file for the selected province or territory are:
 * This Hour's Hot and Cold spots for Canada
 * This Hour's Hot and Cold spots for the selected province/territory
-* The current hour observations for each station available. It contains :
+* The current hour observations for each station available. It contains:
     * Present Condition (string)
     * Mean sea level pressure (kPa)
     * Value of pressure tendency (kPa)

@@ -59,23 +59,23 @@ avec :
 
   Dans le cas où les 2 lettres représentent un code de province ou de plan d'eau, la liste des codes de province ou de territoire comprend :
   
-   * BC – Colombie-Britannique
-   * AB - Alberta
-   * SK - Saskatchewan
-   * MB - Manitoba
-   * ON – Ontario
-   * QC - Québec
-   * YT - Yukon
-   * NU - Nunavut
-   * NT - Territoires du Nord-Ouest
-   * NS – Nouvelle-Écosse
-   * NB – Nouveau-Brunswick
-   * PE – Île-du-Prince-Édouard
-   * NL – Terre-neuve-et-Labrador
-   * GL - Grands lacs
-   * PC - Eaux du Pacifique
-   * AT - Eaux de l'Atlantique
-   * AC - Eaux de l'Arctique
+    * BC – Colombie-Britannique
+    * AB - Alberta
+    * SK - Saskatchewan
+    * MB - Manitoba
+    * ON – Ontario
+    * QC - Québec
+    * YT - Yukon
+    * NU - Nunavut
+    * NT - Territoires du Nord-Ouest
+    * NS – Nouvelle-Écosse
+    * NB – Nouveau-Brunswick
+    * PE – Île-du-Prince-Édouard
+    * NL – Terre-neuve-et-Labrador
+    * GL - Grands lacs
+    * PC - Eaux du Pacifique
+    * AT - Eaux de l'Atlantique
+    * AC - Eaux de l'Arctique
  
 * __C__ : caractère constant. Spécifié par l'OMM comme préfixe pour CCCC.                                     
 * __EEEE__ : code de 4 lettres du bureau responsable (CWAO, CWTO, etc.), excepté les désignations LAND ou WATR réservées aux alertes de tornade ou d'orage violent.

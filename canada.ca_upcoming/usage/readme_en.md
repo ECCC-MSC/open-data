@@ -11,12 +11,12 @@ Overview and examples on how to access and use Meteorological Service of Canada 
 
 * [Learn about the available data](#learn-about-the-available-data)
 * [How to visualize the data](#how-to-visualize-the-data)
-  * [Desktop software](#desktop-software)
-  * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
-  * [On-the-fly images](#on-the-fly-images)
+    * [Desktop software](#desktop-software)
+    * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
+    * [On-the-fly images](#on-the-fly-images)
 * [How to access raw data](#how-to-access-raw-data)
-  * [Raw data download](#raw-data-download)
-  * [Raw data web services](#raw-data-web-services)
+    * [Raw data download](#raw-data-download)
+    * [Raw data web services](#raw-data-web-services)
 
 
 ## Learn about the available data

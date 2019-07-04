@@ -92,10 +92,10 @@ ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
 
 où : 
 *  __ID__ : Identifiant de la station. Les deux premiers chiffres indiquent le 
-        bassin hydrographique principal dans lequel se trouve la station. Les 
-        deux prochains caractères indiquent le sous-bassin et le 
-        sous-sous-bassin. Les trois derniers chiffres indiquent la station 
-        spécifique dans le sous-sous-bassin.
+bassin hydrographique principal dans lequel se trouve la station. Les 
+deux prochains caractères indiquent le sous-bassin et le 
+sous-sous-bassin. Les trois derniers chiffres indiquent la station 
+spécifique dans le sous-sous-bassin.
 
 * __Date__ : Date de l'observation au format ISO 8601, heure normale locale (HNL).
 
@@ -106,8 +106,7 @@ où :
 * __Symbole__ : Usage futur.
 
 * __QA/QC__ : Drapeau de l'assurance de la qualité/contrôle de la qualité pour le 
-          niveau d'eau (1 = préliminaire, 2 = révisé, 3 = vérifié, 
-          4 = approuvé).
+niveau d'eau (1 = préliminaire, 2 = révisé, 3 = vérifié, 4 = approuvé).
 
 * __Débit (cms)__ : Débit en mètres cube par seconde.
 
@@ -132,8 +131,7 @@ ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
 où :
 *  __ID__ : Identifiant de la station.
 
-* __Nom__ : Nom de la station. Le nom est soit en anglais ou en français 
-       dépendamment de l'emplacement de la station.
+* __Nom__ : Nom de la station. Le nom est soit en anglais ou en français dépendamment de l'emplacement de la station.
 
 * __Latitude__ : Latitude en format décimal.
 

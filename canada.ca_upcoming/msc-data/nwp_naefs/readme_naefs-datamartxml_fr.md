@@ -116,6 +116,7 @@ des modèles ».
 Note: Certains modèles n'ont pas de prévisions pour certaines heures.
 
 Le contenu des fichiers est sous la forme :
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
    <naefs_spena_forecast>
       <header>
@@ -142,6 +143,7 @@ Le contenu des fichiers est sous la forme :
    </forecast>
          ...
 </naefs_spena_forecast>
+```
 
 ## Liste des variables
 
