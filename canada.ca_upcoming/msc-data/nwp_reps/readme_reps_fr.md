@@ -28,7 +28,7 @@ Les [métadonnées du Système régional de prévision d'ensemble sont accessibl
 ## Documentation technique
 
 * [Version actuelle](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_f.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_geps-411_20151215_f.pdf)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-300_20190703_f.pdf)
 
 ## Registre des changements 
 

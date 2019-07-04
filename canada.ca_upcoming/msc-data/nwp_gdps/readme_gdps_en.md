@@ -51,7 +51,7 @@ List and links to the products available for this dataset :
 ## Technical documentation
 
 * [Current version of the Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_e.pdf)
-* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-500_20151215_e.pdf)
+* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf)
 
 
 ## Change log

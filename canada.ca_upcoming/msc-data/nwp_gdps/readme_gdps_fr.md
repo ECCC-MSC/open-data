@@ -49,7 +49,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ## Documentation technique
 
 * [Version actuelle du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-500_20151215_f.pdf)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf)
 
 ## Registre des changements 
 

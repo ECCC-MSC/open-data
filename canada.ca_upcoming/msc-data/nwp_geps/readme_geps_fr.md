@@ -29,7 +29,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 ## Documentation technique
 
 * [Version actuelle du système](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_f.pdf)
-* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_geps-411_20151215_f.pdf)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-600_e.pdf)
 
 ## Registre des changements 
 
