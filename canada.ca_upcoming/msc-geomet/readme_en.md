@@ -49,11 +49,11 @@ Service capabilities:
 * GeoMet-Beta WCS URL: https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1request=GetCapabilities
 
 
-## Usage
+## Usage and technical documentation
 
 Documentation on using these services and examples are available at the following locations:
 * [Usage overview page](../usage/readme_en.md)
-* [Technical information on geospatial web services](web-services_en.md)
+* [Technical documentation on geospatial web services](web-services_en.md)
 
 
 ## Announcement mailing list
