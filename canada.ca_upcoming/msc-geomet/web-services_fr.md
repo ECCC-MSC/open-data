@@ -22,7 +22,7 @@
 
 # Services web géospatiaux
 
-Les services web sont des protocols élaborés pour supporté des interactions machine-à-machine sur un réseau et sont typiquement utilisés via un accès programmatique et les outils et applications associées dans un environnement informatique de type client/serveur.
+Les services web sont des protocoles élaborés pour supporter des interactions machine-à-machine sur un réseau et sont typiquement utilisés via un accès programmatique et les outils et applications associées dans un environnement informatique de type client/serveur.
 
 Les services web GeoMet du SMC implémentent les standards ouverts ratifiés par [l'Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/) et [l'International Organization for Standardization (ISO)](https://www.isotc211.org/) qui rendent possible l'interopérabilité et ainsi simplifient la découverte, l'accès, la visualisation et l'intégration de données. Les standards de l'OGC et ISO jouent un rôle important pour [l'interopérabilité au sein de l'Organisation étéorologique mondiale (OMM)](https://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) et le [WMO Information System](https://www.wmo.int/pages/prog/www/WIS/). Ces standards sont supportés par de nombreux logiciels libres et logiciels commerciaux.
 
@@ -34,9 +34,9 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
 
 ## Web Map Service (WMS)
 
-Les requêtes effectuées avec le [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) de l'OGC permettent principalement aux usagers to récupérer des données géospatiales en tant que cartes. Les requêtes WMS sont effectuées via Internet (HTTP) et servent principalement à récupérer une image (e.g. JPEG, PNG) issues de données géospatiales pour une région d'intérêt donnée.
+Les requêtes effectuées avec le [standard Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) de l'OGC permettent principalement aux usagers to récupérer des données géospatiales en tant que cartes. Les requêtes WMS sont effectuées via Internet (HTTP) et servent principalement à récupérer une image (e.g. JPEG, PNG) issue de données géospatiales pour une région d'intérêt donnée.
 
-Plusieurs types de requêtes WMS peuvent être spécifiées et celles-ci sont décrites ci-après.
+Plusieurs types de requêtes WMS peuvent être spécifiés et celles-ci sont décrites ci-après.
 
 ### WMS GetCapabilities
 
@@ -99,7 +99,7 @@ Et retourne :
 
 ### WMS GetFeatureInfo
 
-Une requête WMS GetFeatureInfo permet de récupếrer les données brutes pour un lieu géographique spécifique. Une requête WMS GetFeatureInfo ressemble à une requête WMS GetMap à laquelle s'ajoute les paramètres suivants : `I`, `J` et `QUERY_LAYERS`. Ces paramètres représentent la localisation horizontale et verticale du pixel ainsi que le nom des couches à interroger.
+Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour un lieu géographique spécifique. Une requête WMS GetFeatureInfo ressemble à une requête WMS GetMap à laquelle s'ajoute les paramètres suivants : `I`, `J` et `QUERY_LAYERS`. Ces paramètres représentent la localisation horizontale et verticale du pixel ainsi que le nom des couches à interroger.
 
 <br>
 
@@ -122,9 +122,8 @@ Une requête WMS GetFeatureInfo permet de récupếrer les données brutes pour 
 | ------------------------- | ---------- |
 | INFO_FORMAT     | Le format des données retournées par la requête. Les valeurs acceptées pour ce paramètres sont : `text/plain` (valeur par défaut) ou `application/vnd.ogc.gml`|
 | FEATURE_COUNT   | Le nombre d'entités retourné par la requête|
-| TIME            | La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
-| DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#spécification-du-temps) section.|
-| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
+| TIME            | La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
+| DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
 
 Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dessus :
 
@@ -172,11 +171,11 @@ Et retourne :
 
 ### Spécification du temps
 
-Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre `TIME` ou `DIM_REFERENCE_TIME` n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches et dans le passé.
+Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre `TIME` ou `DIM_REFERENCE_TIME` n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches.
 
 Un utilisateur désirant effectuer une requête pour un moment spécifique pour les requêtes WMS GetMap et WMS GetFeatureInfo doit utiliser les paramètres `TIME` et/ou `DIM_REFERENCE_TIME`. La date et le moment doit être envoyé dans le format du standard ISO8601 et les temps sont toujours en UTC (Coordinate Universal Time).
 
-Afin de générer une requête pour un pas de temps spécifique ou une passe de modèle, l'utilisateur doit premièrement valider quelles sont les intervals de temps valides. Cette information est disponible dans la balise `<Dimension>` disponible dans le document WMS GetCapabilities.
+Afin de générer une requête pour un pas de temps spécifique ou une passe de modèle, l'utilisateur doit premièrement valider quels sont les intervalles de temps valides. Cette information est disponible dans la balise `<Dimension>` disponible dans le document WMS GetCapabilities.
 
 Par exemple, les dimensions temporelles pour la couche de température de l'air (GDPS.ETA_TT) du Système global de prévision déterministe (SGPD) ressemble à :
 
@@ -192,7 +191,7 @@ La première balise `<Dimension>` représente l'interval de temps disponible pou
 
 La seconde balise `<Dimension>` représente les passes de modèles (model runs) disponibles pour la couche. La valeur indiqué à `default` est celle de la passe de modèle disponible la plus récente. La valeur de la balise, soit `2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H` dans cet exemple indique les passes de `2019-06-11T00:00:00Z` à `2019-06-12T00:00:00Z` à tous les 12 heures (PT12H) sont valides.
 
-Avec cette information, un usager est en mesure d'effectuer une requête WMS GetMap pour la température de l'air du SGPD pour 12:00:00 UTC le 12 juin 2019 pour la passe de modèle la plus récente 2019-06-12T00:00:00Z. La requête serait celle-ci :
+Avec cette information, un usager est en mesure d'effectuer une requête WMS GetMap pour la température de l'air du SGPD pour 12:00:00 UTC le 21 juin 2019 pour la passe de modèle la plus récente 2019-06-12T00:00:00Z. La requête serait celle-ci :
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
@@ -217,7 +216,7 @@ Un requête WMS GetMap valide avec le paramètre `TIME` doit ainsi utiliser une 
 
 ### Spécification des styles
 
-La représentation graphique de l'information et des données peut avoir un impact significatif sur la manière que les données sont interprétées par les usagers. GeoMet du SMC offre fréquemment représentations graphiques possibles pour une même couche. L'usager doit identifier le style à utiliser qui est le plus approprié pour le cas d'utilisation.
+La représentation graphique de l'information et des données peut avoir un impact significatif sur la manière que les données sont interprétées par les usagers. GeoMet du SMC offre fréquemment plusieurs représentations graphiques possibles pour une même couche. L'usager doit identifier le style à utiliser qui est le plus approprié pour le cas d'utilisation.
 
 L'utilisateur utilise le paramètre `STYLE` dans les requêtes WMS GetMap et WMS GetFeatureInfo afin de spécifier la représentation graphique désirée. Les styles disponibles pour une couche sont énumérés dans le document WMS GetCapabilities.
 
@@ -268,7 +267,7 @@ Rule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3
 
 ## Web Coverage Service (WCS)
 
-Les requêtes de type [OGC Web Coverage Service](https://www.opengeospatial.org/standards/wcs) permettent aux usagers de télécharger les données géospatiales brutes pour une région d'intérêt spécifique. Les requêtes WCS sont effectuée via l'Internet et offrent davantage de flexibilité lorsque comparées au téléchargement de fichiers bruts. Le service WCS rendent possible plusieurs types de requêtes, qui sont décrites en détail ci-dessous.
+Les requêtes de type [OGC Web Coverage Service](https://www.opengeospatial.org/standards/wcs) permettent aux usagers de télécharger les données géospatiales brutes pour une région d'intérêt spécifique. Les requêtes WCS sont effectuée via l'Internet et offrent davantage de flexibilité lorsque comparées au téléchargement de fichiers bruts. Le service WCS rend possible plusieurs types de requêtes, qui sont décrites en détail ci-dessous.
 
 
 Notez que seule la version WCS 2.0.1 est présentement supportée par les services web GeoMet du SMC. Nous invitons les usagers à utiliser cette version du standard.
@@ -313,7 +312,7 @@ Une requête WCS DescribeCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo e
 
 ### WCS GetCoverage
 
-Une requête WCS GetCoverage est utilisée afin de récupérer les données brutes d'une couche en particulier. L'aspect pratique de ces requêtes est qu'elles permetted de récupérer un sous-domaine spatial dans le projection cartographique spécifiée ainsi que de récupérer les données dans un format de données et une résolution spatiale différente que les données d'origine.
+Une requête WCS GetCoverage est utilisée afin de récupérer les données brutes d'une couche en particulier. L'aspect pratique de ces requêtes est qu'elles permette de récupérer un sous-domaine spatial dans la projection cartographique spécifiée ainsi que de récupérer les données dans un format de données et une résolution spatiale différente que les données d'origine.
 
 | Paramètres obligatoires   | Définition |
 | ------------------------- | ---------- |
@@ -330,10 +329,10 @@ Une requête WCS GetCoverage est utilisée afin de récupérer les données brut
 |OUTPUTCRS         | Le système de coordonnées cartographiques (CRS) des données brutes téléchargées. Ce paramètre peut être différent de `SUBSETTINGCRS`|
 |SUBSET=axis()     | L'étendue géographique des données demandées, par axe. Les sous-paramètres supportées sont : `x`, `xaxis`, `x-axis`, `x_axis`, `long`, `long_axis`, `long-axis`, `lon`, `lon_axis`, `lon-axis`, `y`, `yaxis`, `y-axis`, `y_axis`, `lat`, `lat_axis` et `lat-axis`. Les coordonnées doivent utiliser les mêmes unités que SUBSETTINGCRS. L'étendue géographique demandée doit couvrir au moins une partie de l'étendue géographique de la donnée demandée|
 |RESOLUTION=axis() | La résolution spatiale pour chaque axe (pixel/unité) pour la donnée demandée. Si aucune valeur n'est spécifiée, la résolution spatiale de la donnée récupérée pourrait être différente de la donnée d'origine. Notez que les paramètres `RESOLUTION` et `SIZE` sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête|
-|SIZE=axis()       | La grosseur d'un pixel de la donnée demandée pour un axe. Si aucune valeur n'est spécifiée, la grosseur de pixel de la donnée récupérée pourrait être différente de la donnée d'origine. Notez que les paramètres `RESOLUTION` et `SIZE` sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête|
+|SIZE=axis()       | Le nombre de pixels voulus pour un axe donné. Si aucune valeur n'est spécifiée, la grosseur de pixel de la donnée récupérée pourrait être différente de la donnée d'origine. Notez que les paramètres `RESOLUTION` et `SIZE` sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête|
 |INTERPOLATION     | La méthode d'interpolation utilisée si une mise à l'échelle est nécessaire. Les trois méthodes suivantes sont disponibles : `NEAREST`, `BILINEAR` et `AVERAGE`. Si aucune n'est spécifiée, la méthode par défaut est `NEAREST`|
 |RANGESUBSET       | Ce paramètre permet à l'usager de spécifier une bande de la donnée matricielle à récupérer. Le nom ou le numéro de la band doit être utilisé|
-|TIME              | La date et temps associés à la donnée demandée. LE format doit respecter le standard ISO8601. Pour davantage de détails au sujet de la composante temporelle, se référer à la section [Spécification du temps](#wcs-specification-du-temps)|
+|TIME              | La date et temps associés à la donnée demandée. Le format doit respecter le standard ISO8601. Pour davantage de détails au sujet de la composante temporelle, se référer à la section [Spécification du temps dans les requêtes WCS](#wcs-specification-du-temps)|
 |DIM_REFERENCE_TIME| Le temps de la passe de modèle (model run), lorsque disponible, à récupérer par le biais de la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WCS](#wcs-specification-du-temps)|
 
 Une requête WCS GetCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :
@@ -342,7 +341,7 @@ Une requête WCS GetCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est co
 
 ### <a name="wcs-specification-du-temps"></a>Spécification du temps
 
-Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre `TIME` ou `DIM_REFERENCE_TIME` n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches et dans le passé.
+Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre `TIME` ou `DIM_REFERENCE_TIME` n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches.
 
 Un utilisateur désirant effectuer une requête pour un moment spécifique pour les requêtes WCS GetCoverage doit utiliser les paramètres `TIME` et/ou `DIM_REFERENCE_TIME`. La date et le moment doit être envoyé dans le format du standard ISO8601 et les temps sont toujours en UTC (Coordinate Universal Time).
 
@@ -405,7 +404,7 @@ Les dimensions temporelles pour les requêtes WCS sur GeoMet-Météo ne sont pas
 
 Le service WCS de GeoMet-Climat et GeoMet-Météo peut être accédé avec [l'Outil d'extraction de données climatiques](https://changements-climatiques.canada.ca/donnees-climatiques/) du [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
 
-Les utilisateurs peuvent choisir une variable métérologique ou climate, une région d'intérêt, l'information temporelle ainsi que de spécifier le format de récupération des données pour obtenir les données brutes correspondantes.
+Les utilisateurs peuvent choisir une variable métérologique ou climatique, une région d'intérêt, l'information temporelle ainsi que de spécifier le format de récupération des données pour obtenir les données brutes correspondantes.
 
 
 ## OGC API - Features
@@ -416,7 +415,7 @@ Le service fonctionne via HTTP et les requêtes sont effectuées via des requêt
 
 Aucune authentification HTTP n'est requise.
 
-## Points de service
+### Points de service
 
 https://geo.weather.gc.ca/geomet/features
 
@@ -425,7 +424,7 @@ https://geo.weather.gc.ca/geomet/features
 https://geo.weather.gc.ca/geomet/features/api
 
 
-## Collections d'entités
+### Collections d'entités
 
 Répertoriez toutes les collections d’entités disponibles :
 
@@ -433,19 +432,19 @@ https://geo.weather.gc.ca/geomet/features/collections
 
 La réponse fournit une liste de collections de fonctionnalités avec leurs métadonnées associées (titre, description, liens, étendue, CRS).
 
-## Collection d'entités
+### Collection d'entités
 
 Répertoriez une seule collection d'entités :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations
 
-## Inspection du schéma de collection d'entités
+### Inspection du schéma de collection d'entités
 
 Émettez une requête renvoyant une seule entité pour inspecter sa géométrie et ses propriétés :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1
 
-## Requête
+### Requête
 
 Les requêtes sur les collections d'entités permettent un filtrage spatial, temporel et sur des propriétés. Les paramètres de filtre peuvent être combinés pour formuler une recherche exclusive ('et').
 
@@ -455,13 +454,13 @@ Requête par défaut, pas de filtres :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items
 
-### Spatial
+#### Spatial
 
 Requête par zone de sélection (minx, miny, maxx, maxy) :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67
 
-### Temporel
+#### Temporel
 
 Requête pour une valeur instantannée :
 
@@ -472,23 +471,23 @@ Requête pour un intervalle de temps :
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31
 
 
-### Propriété
+#### Propriété
 
 Requête par une propriété de collection d'entités :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001
 
-### Pagination
+#### Pagination
 
-#### Startindex
+##### Startindex
 
 Le paramètre `startindex` peut être utilisé pour spécifier l’enregistrement à partir duquel extraire les entités. La valeur par défaut est 0 (première entité).
 
-#### Limite
+##### Limite
 
 Le paramètre `limit` permet de définir le nombre maximal d'enregistrements à renvoyer. La taille de réponse par défaut est de 500 entitées. Si vous définissez une `limit` de 0, seul le nombre d'entités trouvées sera retourné (sans les entités réelles retournées).
 
-#### Parcourir les résultats
+##### Parcourir les résultats
 
 Les paramètres `startindex` et `limit` peuvent être utilisés en tandem pour parcourir les collections d’entités. Les exemples ci-dessous montrent comment ajuster et parcourir les résultats d'une requête.
 
@@ -504,7 +503,7 @@ Requête et limite aux entités 101-200 :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100
 
-#### Stratégies de pagination
+##### Stratégies de pagination
 
 La stratégie de pagination est couramment utilisée pour améliorer les performances lors du retour d'extractions de données volumineuses. Par exemple, un client peut faire défiler par 1 000 entités pour parcourir un enregistrement de station complet :
 
@@ -520,21 +519,21 @@ https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/ite
 
 ...puis en examinant la réponse (voir `numberMatched`) pour évaluer la taille de l'enregistrement complet. Le client peut alors décider comment ou s'il doit paginer en conséquence.
  
-### Combinaison de paramètres de filtre
+#### Combinaison de paramètres de filtre
 
 Interrogez toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
 
 https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31
 
-### Exporter au format CSV
+#### Exporter au format CSV
 
 Toute requête peut être exportée au format CSV en ajoutant `f=csv` à la demande.
 
-### Tri
+#### Tri
 
 Toute requête peut être triée en ajoutant `sortby=PROPERTY:X`, où `PROPERTY` est la propriété de tri et `X`, l'ordre de tri (`A` est ascendant, `D` est descendant). L'ordre de tri est facultatif. Le tri en fonction de plusieurs propriétés est pris en charge en fournissant au paramètre `sortby` une liste séparée par des virgules.
 
-## Accès par identifiant
+### Accès par identifiant
 
 Récupérer une seule caractéristique par identifiant :
 
