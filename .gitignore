@@ -1,0 +1,6 @@
+##
+# Files matching the following patterns in the local clone will be ignored when committing
+##
+
+*~
+.idea/
