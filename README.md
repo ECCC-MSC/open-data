@@ -224,8 +224,9 @@ Your new deploy branch should now be updated and available on the open-data GitH
 1. Navigate to your local GCcode fork $USERNAME/open-data repository and pull the master branch that you finished merging: `git pull upstream master`
 2. Verify that the newest release tag is available with `git tag`:
 3. Create the new tag with `git tag $VERSION`
-4. Checkout the newest tag: `git checkout $VERSION` 
+4. Checkout the newest tag: `git checkout $VERSION`
 5. Activate your mkdocs environment: `conda activate mkdocs`
 6. Test and validate the documentation by running `mkdocs serve`, pay close attention to warnings (if any) and head to `http://127.0.0.1:8000`
-6. At the root of your fork $USERNAME/open-data repository (where mkdocs.yml is located) run: `mkdocs gh-deploy -m "Your commit message for mkdocs here"`. The message should indicate the current version of the documentation.
-7. Verify that the gh-pages branch was updated on GitHub and that the documentation is available at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data).
+7. At the root of your fork $USERNAME/open-data repository (where mkdocs.yml is located) run: `mkdocs gh-deploy -m "Your commit message for mkdocs here"`. The message should indicate the current version of the documentation such as `version 2.0`
+8. Desactivate your mkdocs environment: `conda desactivate`
+9. Verify that the gh-pages branch was updated on GitHub and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
