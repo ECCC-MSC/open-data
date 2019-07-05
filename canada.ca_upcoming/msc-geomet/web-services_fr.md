@@ -409,7 +409,7 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 ## OGC API - Features
 
-Le standard [OGC API - Features](https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
+Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
 
 Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Les réponses sont au format JSON/[GeoJSON](http://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `&f=html`.
 

@@ -424,7 +424,7 @@ to retrieve the raw coverage information.
 
 ## OGC API - Features
 
-The [OGC API - Features](https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html) provides
+The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) provides
 a specification to querying geospatial data on the web.
 
 The service operates over HTTP and requests are made via HTTP GET requests. Responses are JSON/[GeoJSON](http://geojson.org/) by default, but can be set to html using `&f=html`.
