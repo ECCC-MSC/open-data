@@ -129,8 +129,8 @@ Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour u
 Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dessus :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png&QUERY_LAYERS=GDPS.ETA_TT&I=300&J=150
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&FORMAT=image/png&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
 ### WMS GetLegendGraphic
