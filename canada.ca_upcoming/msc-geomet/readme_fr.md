@@ -12,8 +12,7 @@ Les services GeoMet du SMC rendent publiquement accessibles les données du Serv
 
 ## Accès
 
-L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux.
-
+L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service](https://www.opengeospatial.org/standards/wcs) et [OGC API - Features (WFS 3)](https://rawgit.com/opengeospatial/WFS_FES/master/docs/17-069.html).
 
 ### GeoMet-Météo
 
