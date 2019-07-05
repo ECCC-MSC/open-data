@@ -12,6 +12,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
 5. [Updating the documentation](#updating-the-documentation)
   * [Requirements](#requirements)
   * [Getting ready](#getting-ready)
+  * [Markdown requirements](#markdown-requirements)
   * [Update workflow](#update-workflow)
   * [Images in the documentation](#images-in-the-documentation)
   * [Files in the documentation](#files-in-the-documentation)
