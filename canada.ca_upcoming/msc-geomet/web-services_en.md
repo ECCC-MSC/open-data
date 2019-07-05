@@ -54,6 +54,7 @@ A WMS GetCapabilities request is comprised of the following parameters:
 | Optional parameter                | Definition |
 | ------------------------- | ---------- |
 | LAYER         | A vendor extension that allows a client to filter the GetCapabilities document for a single specific layer. This greatly reduces the size of the returned XML document|
+| LANG          | A vendor extension that allows a client to display the GetCapabilities document in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
 A WMS GetCapabilities request to GeoMet-Weather is then be constructed like this:
 
@@ -156,6 +157,7 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 | STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. If this parameter is not specified a request will return the layer's default style.|
 | SLD             | Specifies that the legend should be created with an external SLD document. See the [Handing Styles](#handling-styles) for further information.|
 | SLD_BODY        | Allows the user to include an SLD document directly in the request URL.|
+| LANG          | A vendor extension that allows a client to display the legend in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
 A sample GetLegendGraphic request for the Global Deterministic Wave Prediction System's winds layer (GDWPS.UU.1h) would look like this:
 
@@ -293,6 +295,8 @@ A GetCapabilities request is comprised of the following parameters:
 | Optional parameter        | Definition |
 | ------------------------- | ---------- |
 | COVERAGEID                | A vendor extension that allows a client to filter the GetCapabilities document for a single named layer. This greatly reduces the size of the returned XML document|
+| LANG          | A vendor extension that allows a client to display the GetCapabilities document in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
+
 
 A WCS GetCapabilities request to MSC GeoMet would then be constructed
 like this:

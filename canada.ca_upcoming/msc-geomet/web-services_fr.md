@@ -55,6 +55,7 @@ Une requête WMS GetCapabilities est composée des paramètres suivants :
 | Paramètres optionnels | Définition |
 | ------------------------- | ---------- |
 | LAYER         | Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant|
+| LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut|
 
 Une requête WMS GetCapabilities pour GeoMet-Météo est donc construite ainsi :
 
@@ -156,6 +157,7 @@ Par exemple, la couche de température de l'air du SGPD offre plusieurs styles d
 | STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
 | SLD             | Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section [Spécification des styles](#spécification-des-styles) pour les explications détaillées|
 | SLD_BODY        | Permet à l'usager d'inclure le document SLD directement dans la requête|
+| LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le légende. Si le paramètre n'est pas spécifié, la légende est retournée en anglais par défaut|
 
 Un exemple de requête GetLegendGraphic pour la couche de vent (GDWPS.UU.1h) du Système Global de Prévision Déterministe de Vague (SGPDV) va comme suit :
 
@@ -288,6 +290,7 @@ Une requête WCS GetCapabilities est composée des paramètres suivants :
 | Paramètre optionnel | Définition |
 | ------------------------- | ---------- |
 | COVERAGEID                | Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant|
+| LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut|
 
 Une requête WCS GetCapabilities peut ainsi être construite de cette manière :
 
