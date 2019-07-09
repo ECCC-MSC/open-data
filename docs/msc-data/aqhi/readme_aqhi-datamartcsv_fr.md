@@ -16,22 +16,11 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* **Observations**: 
-
-    * Fichiers en temps réel :
-   
-      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
-  
-    * Fichiers mensuels :  
-  
-      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
-
-* **Prévisions publiques**:
-
-    * Fichiers mensuels :
-  
-      https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
-    
+* **Observations** : 
+    * Fichiers en temps réel : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
+    * Fichiers mensuels : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
+* **Prévisions publiques** :
+    * Fichiers mensuels : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
 * **Données des modèles numériques**:
 
     * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/model/csv

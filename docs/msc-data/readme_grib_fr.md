@@ -28,11 +28,13 @@ Chaque enregistrement commence par un en-tête suivi de données binaires sommai
 Le Service météorologique du Canada ne distribue pas publiquement de logiciel de décodage ou de visualisation du format GRIB2. Voici une liste, non exhaustive, de liens (en anglais) vers des logiciels de traitement des données GRIB2.
 
 Décodage et manipulation :
+
 * [wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/)
 * [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
 * [GDAL](https://gdal.org/drivers/raster/grib.html)
     
 Visualisation et interpolation :
+
 * [INGRIDDS](http://winweather.org/)
 * [OpenGRADS Bundle pour GRIB2](http://opengrads.org/doc/bundle/grads/)
 * [GEMPAK](https://www.unidata.ucar.edu/software/gempak/)

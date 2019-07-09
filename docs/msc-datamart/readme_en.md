@@ -10,7 +10,7 @@ The Meteorological Service of Canada (MSC) HTTP data server is a source of raw w
 
 ## Access
 
-The MSC Datamart is located at https://dd.weather.gc.ca/.
+The MSC Datamart is located at [https://dd.weather.gc.ca/](https://dd.weather.gc.ca/).
 
 ### Real-time push notifications and data retrieval
   
