@@ -77,7 +77,7 @@ A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.)
 | STYLES          | Styles with which to display the layer. If this parameter is not specified, the default layer style will be used for rendering.
 | CRS (version 1.3.0) or SRS (version 1.1.0) | The coordinate reference system (CRS) used to create the map image. **Be careful, this parameter name differs depending on the WMS version specified in the VERSION parameter**.|
 | BBOX            | The bounding box of the requested image. Coordinates should be in the units of the CRS/SRS. If using the WMS 1.3.0 specification *and the EPSG:4326* these values are: `minY,minX,maxY,maxX`. In WMS 1.3.0, the axis order depends on the projection. If the request uses the WMS 1.1.1 specification, these values are: `minX,minY,maxX,maxY`.|
-| FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`.|
+| FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`. Images in the PNG format support transparency, while images in the JPEG format will be smaller in size|
 | HEIGHT          | The height in pixels of the returned image.|
 | WIDTH           | The width in pixels of the returned image.|
 
@@ -90,12 +90,12 @@ A GetMap request for the Global Deterministic Prediction System's air temperatur
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 ```
 
 And returns:
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg)              
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
 
 ### WMS GetFeatureInfo
 
@@ -111,7 +111,7 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 | LAYERS          | The name of the layer(s) used to query. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request.|
 | CRS (version 1.3.0) or SRS (WMS version 1.1.0) | The coordinate reference system (CRS) used to create the map image. **Be careful, this parameter name differs depending on the version specified in the VERSION parameter**.|
 | BBOX            | The bounding box of the requested image. Coordinates should be in the units of the CRS/SRS. If using the WMS 1.3.0 specification *and the EPSG:4326* these values are: `minY,minX,maxY,maxX`. If the request uses the WMS 1.1.1 specification or any other CRS, these values are: `minX,minY,maxX,maxY`. The request's bounding box must cover a part of the request layer's geographic extent.|
-| FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`|
+| FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`. Images in the PNG format support transparency, while images in the JPEG format are smaller in size|
 | HEIGHT          | The height in pixels of the associated image|
 | WIDTH           | The width in pixels of the associated image|
 | I (WMS version 1.3.0) or X (WMS version 1.1.0) | The horizontal coordinate of the pixel to query|
@@ -229,19 +229,19 @@ RDPA.24F_PR with CAPA24-LINEAR style:
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
-&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
+&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![RDPA.24F_PR with CAPA24-LINEAR style](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg)
+![RDPA.24F_PR with CAPA24-LINEAR style](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 RDPA.24F_PR with RDPA-WXO style:
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
-&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg
+&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![RDPA.24F_PR with CAPA24-LINEAR style](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/jpeg)
+![RDPA.24F_PR with CAPA24-LINEAR style](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Users can also choose to apply their own styles either by pointing to
 an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter 

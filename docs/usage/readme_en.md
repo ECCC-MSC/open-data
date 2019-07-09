@@ -60,26 +60,26 @@ MSC Geomet can also serve images on-the-fly via a WMS GetMap request. See the ex
 
 #### Example 1 - Global Deterministic Prediction System (GDPS) Surface Temperature
 
-The following WMS GetMap request returns an image of the Global Deterministic Predicition System (GDPS) air temperature layer. The image is created "on-the-fly" at the time of the request.
+The following WMS GetMap request returns an image of the Global Deterministic Prediction System (GDPS) air temperature layer. The image is created "on-the-fly" at the time of the request.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 ```
 Returns:
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg)              
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
 
 #### Example 2 - Global Ice Ocean Prediction System (GIOPS) Sea Water Salinity
 
 The following WMS GetMap request returns an image of the Global Ice Ocean Prediction System (GIOPS) sea water salinity layer. The image is created "on-the-fly" at the time of the request.
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
 ```
 Returns:
 
-![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg)
+![Sea Water Salinity from the Global Ice Ocean Prediction System (GIOPS) model](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
 
 #### Overview of WMS GetMap parameters used in the examples
 
@@ -93,7 +93,7 @@ The examples above define a handful of parameters and send a GetMap request to M
 * **WIDTH** - The width in pixels of the returned image
 * **HEIGHT** - The height in pixels of the returned image
 * **LAYERS** - The name of the layer used to create the image. The list and name of the available layers can be retrieved using a WMS GetCapabilities request
-* **FORMAT** - The format of the image returned by the WMS GetMap request. In both cases case, the returned image will be in the JPEG format
+* **FORMAT** - The format of the image returned by the WMS GetMap request. In both cases case, the returned image will be in the PNG format
 
 For further information regarding these and other WMS GetMap parameters, refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
 
