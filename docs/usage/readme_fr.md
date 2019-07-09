@@ -62,11 +62,11 @@ La requête WMS GetMap suivante retourne une image de la couche de température 
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 ```
 Retourne :
 
-![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/jpeg)             
+![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
 
 #### Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)
 
@@ -74,11 +74,11 @@ La requête WMS GetMap suivante retourne une image de la couche de salinité de 
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
 ```
 Retourne :
 
-![Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/jpeg)
+![Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
 
 #### Survol des paramètres WMS GetMap utilisés dans ces exemples
 
@@ -92,7 +92,7 @@ Les exemples ci-dessus précisent certains paramètres et envoient une requête 
 * **WIDTH** - la largeur en pixels de l'image retournée
 * **HEIGHT** - la hauteur en pixels de l'image retournée
 * **LAYERS** - le nom de la couche à utiliser pour la création de l'image. La liste et le nom des couches disponibles peut être récupérée via une requête WMS GetCapabilities
-* **FORMAT** - le format de l'image retournée par la requête WMS GetMap. Dans les deux exemples, l'image retournée est dans le format JPEG
+* **FORMAT** - le format de l'image retournée par la requête WMS GetMap. Dans les deux exemples, l'image retournée est dans le format PNG
 
 Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
 
