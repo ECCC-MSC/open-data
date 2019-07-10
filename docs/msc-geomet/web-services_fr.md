@@ -414,9 +414,9 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
 
-Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `&f=html`.
+Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Aucune authentification HTTP n'est requise. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `f=html`.
 
-Aucune authentification HTTP n'est requise.
+Le premier paramètre d'une requête doit être spécifiée avec `?` et les paramètres subséquents avec `&`.
 
 ### Points de service
 

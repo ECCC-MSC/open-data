@@ -428,12 +428,11 @@ to retrieve the raw coverage information.
 
 ## OGC API - Features
 
-The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) provides
-a specification to querying geospatial data on the web.
+The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) provides a specification to querying geospatial data on the web.
 
-The service operates over HTTP and requests are made via HTTP GET requests. Responses are JSON/[GeoJSON](https://geojson.org/) by default, but can be set to html using `&f=html`.
+The service operates over HTTP and requests are made via HTTP GET requests. No HTTP authentication is required. Responses are JSON/[GeoJSON](https://geojson.org/) by default, but can be set to html using `f=html`.
 
-No HTTP authentication is required.
+The first parameter in a query is specified with `?` and subsequent parameters with `&`.
 
 ### Service Endpoints
 
@@ -465,8 +464,7 @@ Issue a query returning a single feature to inspect geometry and properties:
 
 ### Querying
 
-Querying feature collections allows for spatial, temporal and property filtering.  Filter parameters
-can be combined to formulate an exclusive ('and') search.
+Querying feature collections allows for spatial, temporal and property filtering. Filter parameters can be combined to formulate an exclusive ('and') search.
 
 The examples that follow use the [hydrometric daily mean](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean) feature collection.
 
@@ -476,7 +474,7 @@ Default query, no filters:
 
 #### Spatial
 
-Query by bounding box (minx, miny, maxx, maxy)
+Query by bounding box (minx, miny, maxx, maxy):
 
 [https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
@@ -499,17 +497,19 @@ Query by a feature collection property:
 #### Paging
 
 ##### Startindex
+
 The `startindex` parameter can be used to specify the record to start at when extracting
-features.  The default value is 0 (first feature).
+features. The default value is 0 (first feature).
 
 ##### Limit
+
 The `limit` parameter is used to define the maximum records to return as part of querying
 for features.  The default response size is 500 features.  Setting a `limit` of 0 results
 in returning only the number of features found (without the actual features returned).
 
 ##### Paging through results
 
-The `startindex` and `limit` parameters can be used in tandem to cycle through feature collections.  The examples below demonstrate how to adjust and page through query results.
+The `startindex` and `limit` parameters can be used in tandem to cycle through feature collections. The examples below demonstrate how to adjust and page through query results.
 
 Query and limit to features 1-2:
 
@@ -525,13 +525,13 @@ Query and limit to features 101-200:
 
 ##### Strategies for paging
 
-The paging strategy is commonly used in support of performance when returning large data extractions.  For example, a client could page by 1000 features to cycle through an entire station record:
+The paging strategy is commonly used in support of performance when returning large data extraction. For example, a client could page by 1000 features to cycle through an entire station record:
 
 [https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
 
 [https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
-The client can then simply cycle through all items until there no longer any records.  This would constitute the entire record.
+The client can then simply cycle through all items until there no longer any records. This would constitute the entire record.
 
 Another strategy that can be used is to query for all data without returning any records:
 
