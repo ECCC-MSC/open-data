@@ -123,7 +123,7 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
 =======
         * 'Date': Étiquette statique
         * 'Hour': Étiquette statique
-        * CGNDB_Site#: Code de 5 caractères identifiant chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+        * CGNDB_Site#: Code de 5 caractères identifiant chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 >>>>>>> origin
 
     * **Bloc de données**
@@ -147,7 +147,7 @@ temps-réel** (pour les fichiers en temps réels et mensuels):
         * MM: Mois de l'observation
         * JJ: Jour de l'observation
         * hh: L'heure de l'observation
-        * CAS_Site#: Observations de la CAS pour toutes les [communautés](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région.
+        * CAS_Site#: Observations de la CAS pour toutes les [communautés](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) dans la région.
 >>>>>>> origin
 
 Note: Les fichiers en temps réels contiennent les 7 derniers jours d’observations de la CAS, avec les observations les plus récentes en premier. 
@@ -190,8 +190,8 @@ Ces fichiers ont la même structure que les fichiers mensuels décrits précéde
       * AmendmentFlag: Entier représentant le nombre d’amendements effectués à la prévision. La première émission de la prévision indique toujours une valeur de zéro, 
       puis celle-ci est incrémentée de 1 à chaque ammendement. 
 =======
-        * CGNDBcode : Code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-        * CommunityName : Nom utilisé de la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
+        * CGNDBcode : Code de 5-caractères qui identifie chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+        * CommunityName : Nom utilisé de la [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associée au code CGNDB, et pour laquelle la prévision est valide,
         * IssueDate : Date d'émission de la prévision (AAAA-MM-JJ),
         * IssueTime : Heure d'émission de la prévision (hh:mm:ss),
         * ForecastPeriod : Période de prévision représentée par un entier entre 1 et 3 ("Aujourd'hui", "Ce soir et cette nuit", ou "Demain", respectivement),
@@ -230,7 +230,7 @@ cgndb,forecast date (hour0),forecast date (hour1), ... , forecast date (hour47),
       * "cgndb" identifiant CGNDB de la [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) pour laquelle la prévision est effectuée. 
       * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
 =======
-    * "cgndb" identifiant CGNDB de la [communauté](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) pour laquelle la prévision est effectuée. 
+    * "cgndb" identifiant CGNDB de la [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) pour laquelle la prévision est effectuée. 
     * YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).
 >>>>>>> origin
       
@@ -249,7 +249,7 @@ StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
    où :
    
      * StationID: Identifiant NAPS unique de la station d’observation.
-     * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
+     * CGNDBcode: un code de 5-caractères qui identifie chaque [communauté CAS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson).
      * Valeur (H+000 à H+048): valeur du modèle dérivée à la station d'observation (pour UMOSAQ) ou interpolées à la station d'observation (pour AQFM, UMOSAQMIST). 
   
 ## Notes
@@ -260,7 +260,7 @@ StationID, Valeur (H+000), Valeur (H+001), ... , Valeur (H+047), Valeur (H+048)
 
 * Dans les fichiers CSV pour UMOSAQ, il est possible que certaines valeurs soient manquantes en raison de prévisions manquantes. La disponibilité des prévisions de UMOS pour une heure spécifique dépend de l'existence de données historiques suffisantes pour être en mesure de générer des équations statistiques/prédictifs qui sont fiables.
 
-* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/ . Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
+* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
 

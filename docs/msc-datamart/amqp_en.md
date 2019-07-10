@@ -85,6 +85,6 @@ Here are some specific examples to receive alerts, citypage_weather data for one
 
 If you use the data available on the MSC Datamart, it is strongly recommend that you subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
-[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
 Please use the following address to contact us for any comments or questions: ec.dps-client.ec@canada.ca 

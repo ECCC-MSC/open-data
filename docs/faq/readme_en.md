@@ -76,11 +76,11 @@ For your information, more than 400 layers are available in the WMS GetCapabilit
 We are also in the process of making a lot more of our weather data available in the OGC family of standards (e.g. WMS, WCS, WFS, SLD).
 See the announcement of the GeoMet-Beta version:
 
-[http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html](http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html)
+[https://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html](https://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html)
 
 Changes to the GeoMet-Beta Geospatial Web Services will be announced on the GeoMet-Info list:
 
-[http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
+[https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
 
 Finally, please note that because GeoMet is leveraging open standards, users are not affected when the underlying data is modified: methods to access the data remain stable and reliable.
 GeoMet serves well over 1 million requests daily and is free to use as long as the source is attributed. See the licence below for details:
@@ -226,7 +226,7 @@ You can find an example of a GENOT 03 bulletin here:
 Finally, we strongly recommend to subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available.
 
 You can subscribe here:
-[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
 Please use the following address to contact us for any comments or questions:
 ec.dps-client.ec@canada.ca
@@ -386,11 +386,11 @@ and the associated documentation can be found here:
 
 [https://dd.meteo.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf](https://dd.meteo.gc.ca/bulletins/doc/CMC_Bulletin_Search_Help_en.pdf)
 
-Finally, one could mention our geospatial services, and more specifically the GeoMet-Beta services. See: [http://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html](http://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html).
+Finally, one could mention our geospatial services, and more specifically the GeoMet-Beta services. See: [https://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html](https://lists.ec.gc.ca/pipermail/geomet-info/2016-July/000034.html).
 You can find RDPA-CaPA layers and in a near future you will be able to download directly CSV or other formats of data directly through the GRIB files.
 If you wish to be advise of any update, we recommend you to subscribe to the mailing list through :
 
-[http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
+[https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
 
 ## Can I have snow water equivalent data?
 
@@ -435,7 +435,7 @@ This is why there is no icon or condition reported in the corresponding Citypage
 
 ## Why are message queues terminated after several hours of inactivity when using AMQP?
 
-Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia ([http://metpx.sf.net]()http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, is a broker (see Glossary section at the address: [http://metpx.sourceforge.net/Install.html](ttp://metpx.sourceforge.net/Install.html)). The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
+Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia ([http://metpx.sf.net](http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, is a broker (see Glossary section at the address: [http://metpx.sourceforge.net/Install.html](ttp://metpx.sourceforge.net/Install.html)). The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
 so queues cannot be allowed to accumulate indefinitely. We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
 
 In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
@@ -444,7 +444,7 @@ In General, one should use continuous access, rather than periodic polling, as i
 
 If you use the data available on the MSC Datamart, we strongly recommend to subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
-[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
 Please use the following address to contact us for any comments or questions:
 ec.dps-client.ec@canada.ca

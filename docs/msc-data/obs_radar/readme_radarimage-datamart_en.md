@@ -91,7 +91,7 @@ This composite image can be differentiated from the original radar image, by the
 
 To learn more about how to use the composite images, you can read the documentation on line:
 
-[http://weather.gc.ca/radar/how-to-use_e.html#display](http://weather.gc.ca/radar/how-to-use_e.html#display)
+[https://weather.gc.ca/radar/how-to-use_e.html#display](https://weather.gc.ca/radar/how-to-use_e.html#display)
 
 * __CAPPI__
 

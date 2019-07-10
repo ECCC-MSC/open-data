@@ -72,11 +72,11 @@ Pour information, plus de 400 couches sont rassemblées dans le WMS GetCapabilit
 Nous sommes également en train de rendre disponibles davantage de données météo dans la famille de standards OGC (i.e, WMS, WCS, WFS, SLD). Voir l'annonce de la 
 version GeoMet-Beta:
 
-[http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html](http://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html)
+[https://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html](https://lists.ec.gc.ca/pipermail/geomet-info/2016-June/000033.html)
 
 Les changements aux services web géospatiaux GeoMet-Beta seront annoncés via la liste de diffusion GeoMet-Info:
 
-[http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
+[https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info)
 
 Finallement, puisque GeoMet représente des couches en standards ouverts, les usagers ne sont pas affectés lorsque les données sous-jacentes sont modifiées: les méthodes 
 pour accéder aux données demeurent stables et fiables. GeoMet répond à plus d'1 million de requêtes quotidiennement et peut être utilisé librement en autant que la 
@@ -219,7 +219,7 @@ d'un tel bulletin à l'adresse:
 Finalement, nous vous recommandons fortement de vous inscrire à la list de diffusion du Datamart du SMC afin d'être averti de toute mise à jour ou changement concernant la 
 disponibilité des données. Vous pouvez vous abonner ici:
 
-[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
 Merci d'utiliser l'adresse courriel ci-dessous pour toute question ou commentaire:
 

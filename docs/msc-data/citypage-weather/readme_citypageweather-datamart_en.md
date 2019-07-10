@@ -71,11 +71,9 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
 
   [https://dd.weather.gc.ca/citypage_weather/schema/](https://dd.weather.gc.ca/citypage_weather/schema/)
 
-* City page weather XML files contain __coded__ current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at :
-   
-
-     * [Current weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
-     * [Forecast weather conditions](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
+* City page weather XML files contain __coded__ current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at:
+    * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
+    * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
 ## Support
 

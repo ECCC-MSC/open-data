@@ -86,7 +86,7 @@ is an XML files (xml) compressed using bzip algorithm (bz2).
 
 The complete URL would be :
 
-[http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
+[https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
 
 ## File contents
 
@@ -176,7 +176,7 @@ for some locations)
 
 This list can be found at this address :
 
-[http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml](http://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml)
+[https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml](https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml)
 
 The correspondence for the 2 letter codes between the Provinces or States
 can be found in this PDF document :

@@ -71,7 +71,7 @@ and are available on Datamart for a period of 48 hours. The XML public forecast 
 twice per day at approximately 6am and 5pm local time and are available on Datamart for a
 period of 48 hours.
 
-* Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/. However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on the American AirNow portal:
+* Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on the American AirNow portal:
 [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login)
 
 ## Support

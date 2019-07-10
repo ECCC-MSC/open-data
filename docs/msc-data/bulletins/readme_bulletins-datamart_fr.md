@@ -34,8 +34,7 @@ où :
 * __AA__ : 2 lettres indiquant le type de bulletin. La référence complète
 peut être trouvée dans le Manual on the Global Telecommunication System de
 l'OMM, dans la section Supplément II-5, ce qui correspond aux pages
-103-108. Le fichier se trouve en ligne à cette adresse :
-http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf
+103-108. Le fichier se trouve en ligne à cette adresse : [https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf](https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf)
 * __BBBB__ : 4 lettres représentant le code de l'émetteur du bulletin.
 
 Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le 

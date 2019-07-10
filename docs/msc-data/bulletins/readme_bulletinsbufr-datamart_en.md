@@ -52,11 +52,11 @@ IUKB02_CWLT_130000__BUFR
 These bulletins are part of the world-wide exchange of radiosonde data undertaken under the auspices of the World Meteorological Organization (WMO).
 This radiosonde data is collected and formatted in accordance with standards managed by the WMO at the behest of its members. The data is formatted 
 using the BUFR Edition 4 code form (FM94), specified in the WMO Manual on Codes (WMO-No. 306), Volume I.2 
-[(http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html)](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html).
+[(http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html)](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html).
   
 The specific template and BUFR encoding rules used in the encoding of this data are detailed in the B/C25 regulations: 
-[http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf)
-[http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf)
+[https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf)
+[https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf)
 
 This data is in binary form and requires BUFR compliant software to be processed for viewing or decoding into ASCII or other formats. Several major 
 meteorological centers and meteorological research establishments make BUFR software available under free licenses. 
@@ -71,7 +71,7 @@ Much useful information on installing and running libECBUFR is available in the 
 ## Bulletin search script
 
 To help you in your search, please refer to our bulletin search script which is available directly on the Datamart at:
-[http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
+[https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
 
 Complete documentation with examples of use of the script can be found in the [PDF document](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
 

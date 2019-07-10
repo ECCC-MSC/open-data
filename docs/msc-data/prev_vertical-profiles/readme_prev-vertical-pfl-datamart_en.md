@@ -64,8 +64,8 @@ __Note__ : Some of the pressure levels may be below the elevation of the station
 While Environment and Climate Change Canada does not provide a display software nor does not recommend any particular third party programs to display this data in graphical format some users have suggested :
 
 * [Buffkit](https://training.weather.gov/wdtd/tools/BUFKIT/index.php)
-* [RAOB de la compganie Environmental Research Services](http://www.raob.com/)
-* [NCAR Command Language](http://www.ncl.ucar.edu/get_started.shtml)
+* [RAOB de la compganie Environmental Research Services](https://www.raob.com/)
+* [NCAR Command Language](https://www.ncl.ucar.edu/get_started.shtml)
 
 ## Support
 
