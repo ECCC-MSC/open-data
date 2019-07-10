@@ -90,7 +90,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ## Documentation technique
 
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf)
-* [Arcticle scientifique - Version anglaise seulement](http://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
+* [Arcticle scientifique - Version anglaise seulement](https://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 
 ## Registre des changements 
 

@@ -80,6 +80,6 @@ Librairie python pour AMQP :
 Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommandons fortement de vous inscrire à la liste de diffusion du Datamart du SMC afin d'être averti de tout changement ou mise à jour des données disponibles.
 
 Vous pouvez vous inscrire ici :
-[http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info](http://lists.cmc.ec.gc.ca/mailman/listinfo/dd_info)
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
 Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : ec.dps-client.ec@canada.ca 

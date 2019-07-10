@@ -126,7 +126,7 @@ Les données brutes pour des données matricielles peuvent être récupérées p
           new ol.layer.Tile({
             source: new ol.source.TileWMS({
                 format: 'image/png',
-                url: 'http://geo.weather.gc.ca/geomet/',
+                url: 'https://geo.weather.gc.ca/geomet/',
                 params: {'LAYERS': 'RADAR_1KM_RDBR', 'TILED': true},
             })
           })

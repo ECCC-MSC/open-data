@@ -52,12 +52,11 @@ IUKB02_CWLT_130000__BUFR
 
 Ces bulletins font partie d’un réseau mondial d’échange de données de radiosonde mené sous les auspices de l’Organisation météorologique mondiale (OMM). 
 Ces données de radiosonde sont recueillies et formatées selon les normes gérées par l’OMM au nom de ses membres. Les données sont formatées au moyen du 
-code BUFR (4e édition - FM94), que l’on trouve dans le guide sur les codes de l’OMM (OMM - No 306), volume I.2 
-[(http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html)](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html).  
+code BUFR (4e édition - FM94), que l’on trouve dans le guide sur les codes de l’OMM (OMM - No 306), volume I.2 : [https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/VolumeI.2.html).  
 
 Le modèle et les règles de codage du format BUFR pour ces données sont décrits dans le règlement B/C25 : 
-[http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf)
-[http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf](http://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf)
+[https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC25-TEMP.pdf)
+[https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI2/LatestVERSION/BC20-PILOT.pdf)
 
 Les documents binaires peuvent être consultés ou convertis en code ASCII, entre autres, au moyen d’un logiciel conforme au code BUFR. Plusieurs centres 
 météorologiques et établissements de recherche météorologiques importants donnent accès au logiciel BUFR, libre de redevances. 
@@ -73,7 +72,7 @@ Davantage d’information sont disponibles  quant à l’installation et à l’
 ## Utilitaire de recherche de bulletins
 
 Pour faciliter la recherche de bulletins, veuillez utiliser notre utilitaire de recherche de bulletins qui se trouve sur le Datamart :
-[http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](http://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
+[https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
 
 Des informations détaillées, avec des exemples d’utilisation de ce script se trouvent dans le [document PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf). 
 

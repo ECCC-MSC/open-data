@@ -28,7 +28,7 @@ Non disponibles.
 
 ## Documentation technique
 
-* [Guide des prévisions météorologiques marines d'Environnement et Changement climatique Canada](http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2EC4EC51-1)
+* [Guide des prévisions météorologiques marines d'Environnement et Changement climatique Canada](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2EC4EC51-1)
 * [Renseignements généraux sur les conditions maritimes](https://www.canada.ca/fr/environnement-changement-climatique/services/renseignements-generaux-conditions-maritimes.html)
 
 ## Registre des changements 

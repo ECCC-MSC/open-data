@@ -231,7 +231,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 &STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![Couche RDPA.24F_PR avec le style CAPA24-LINEAR](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
+![Couche RDPA.24F_PR avec le style CAPA24-LINEAR](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Couche RDPA.24F_PR avec le style RDPA-WXO :
 
@@ -240,7 +240,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 &STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![Couche RDPA.24F_PR avec le style RDPA-WXO](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
+![Couche RDPA.24F_PR avec le style RDPA-WXO](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être encodé tel un URL HTTP.
 
@@ -264,7 +264,7 @@ quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%
 Rule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E
 ```
 
-![Couche du SGPD avec un style SLD provenant de l'usager](http://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
+![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
 
 
 ## Web Coverage Service (WCS)
@@ -414,7 +414,7 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
 
-Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Les réponses sont au format JSON/[GeoJSON](http://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `&f=html`.
+Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `&f=html`.
 
 Aucune authentification HTTP n'est requise.
 

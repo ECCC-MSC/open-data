@@ -111,7 +111,7 @@ possible are as follows:
       * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
         * 'Date': fixed string
         * 'Hour': fixed string
-        * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+        * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 
     * **Data block**
   
@@ -132,7 +132,7 @@ possible are as follows:
         * MM: the month of observation.
         * DD: the day of observation.
         * hhh: hour for observation.
-        * AQHI_Site#: AQHI observations for all [communities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
+        * AQHI_Site#: AQHI observations for all [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
 
     Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.
 
@@ -167,8 +167,8 @@ possible are as follows:
         - for forecasts issued at 17:00 (local time): 2=This evening and tonight, 3=Tomorrow
       * Value: value of the AQHI forecast for the forecast period in question,
       * AmendmentFlag: integer with a value of 0 for the first emission of the forecast and which is incremented by +1 for each subsequent amendment.       
-        * CGNDBcode: a 5-character code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-        * CommunityName: the name used to identify the [community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associated with the CGNDB code, for which the forecast is valid,
+        * CGNDBcode: a 5-character code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+        * CommunityName: the name used to identify the [community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associated with the CGNDB code, for which the forecast is valid,
         * IssueDate: the day for which the forecast was issued (YYYY-MM-DD),
         * IssueTime: the exact time the forecast was issued (hh:mm:ss),
         * ForecastPeriod: integer with a value of 1, 2, or 3, which represents the forecast period ("Today", "Tonight and Night", or "Tomorrow", respectively),
@@ -198,7 +198,7 @@ possible are as follows:
       * "cgndb" is a symbol that states that the values in the first column identify the [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region of interest;
       * The 49 values following stationId are the dates (format=YYYYYMMDDhh) that define the forecast time (H+000 to H+048) of the model and are applicable to all stations.
         * "stationId" is a symbol that states that the values in the first column identify stations in the region of interest;
-        * "cgndb" is a symbol that states that the values in the first column identify the [communities](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region of interest;
+        * "cgndb" is a symbol that states that the values in the first column identify the [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region of interest;
         * The 49 values following stationId are the dates (format=YYYYYMMDDhh) that define the forecast time (H+000 to H+048) of the model and are applicable to all stations.
   
     * **Data block**
@@ -216,7 +216,7 @@ StationID, Value (H+000), Value (H+001), ... Value (H+047), Value (H+048)
    where :
    
         * StationID: NAPS ID that identifies the observation station to which the model data is provided.
-        * CGNDBcode: a 5-character code that identifies each [AQHI community](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). A list of CGNDB codes is given at the end of this file.
+        * CGNDBcode: a 5-character code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). A list of CGNDB codes is given at the end of this file.
         * Value (H+000 to H+048): model value derived at the observation station (for UMOSAQ) or interpolated at the observation station (for AQFM, UMOSAQMIST). 
   
 ## Notes
@@ -226,7 +226,7 @@ StationID, Value (H+000), Value (H+001), ... Value (H+047), Value (H+048)
 * In the CSV files for the AQHI, the value of the first hour is always missing because the AQHI formula requires a minimum of two hours in the last 3 hours to calculate moving averages.
 
 * In CSV files for UMOSAQ, it is possible that some values are missing since UMOS guidance may not be available for all hours. The availability of UMOS guidance for a specfic hour is dependent upon having sufficient historical data to be able to generate reliable predictive statistical equations.
-* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: http://dd.meteo.gc.ca/air_quality/aqhi/que/observation/ . However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
+* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
 

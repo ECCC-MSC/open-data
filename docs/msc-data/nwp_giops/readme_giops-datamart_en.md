@@ -36,11 +36,11 @@ A history of 5 days of forecast is kept in this directory.
 
 * Files containing data on the latlon0.2x0.2 grid can be found at the following address :
 
-http://dd.weather.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/
+https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/
 
 * Files containing data on the ps5km60N grid can be found at the following address :
 
-http://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
+https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
 
 where :
 

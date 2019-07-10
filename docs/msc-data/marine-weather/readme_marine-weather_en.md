@@ -28,7 +28,7 @@ Not available.
 
 ## Technical documentation
 
-* [Environment and Climate Change Canada's guide to the marine forecast](http://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2EC4EC51-1)
+* [Environment and Climate Change Canada's guide to the marine forecast](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2EC4EC51-1)
 * [General marine weather information](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information.html)
 
 ## Change log

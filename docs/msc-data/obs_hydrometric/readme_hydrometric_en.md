@@ -32,7 +32,7 @@ The [metadata of the real time hydrometric data tool are available on the Open G
 ## Technical documentation
 
 * [Water Survey of Canada](https://www.canada.ca/en/environment-climate-change/services/water-overview/quantity/monitoring/survey.html)
-* [Real-time and historical water level and discharge data](http://wateroffice.ec.gc.ca/ )
+* [Real-time and historical water level and discharge data](https://wateroffice.ec.gc.ca/)
 
 ## Change log
 
