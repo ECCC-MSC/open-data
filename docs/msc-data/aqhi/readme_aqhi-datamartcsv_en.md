@@ -17,14 +17,40 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 The data can be accessed at the following address:
 
 * **Observations**: 
-    * Files in real time: https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|ont|pnr|pyr|que]/observation/realtime/csv
-      * Monthly files: https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|ont|pnr|pyr|que]/observation/monthly/csv
 
+    * Files in real time:
+        * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/csv)
+        * Ontario region: [https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/csv](https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/csv)
+        * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv)
+        * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv)
+        * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/realtime/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/realtime/csv)
+     
+    * Monthly files: 
+        
+        * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/monthly/csv)
+        * Ontario region: [https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/monthly/csv)
+        * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv)
+        * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
+        * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
+  
 * **Public forecasts**:
-    * Monthly files: https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|ont|pnr|pyr|que]/forecast/monthly/csv
-* **Data from numerical models**:
-    * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|ont|pnr|pyr|que]/forecast/model/csv
 
+    * Monthly files: 
+    
+        * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv)
+        * Ontario region: [https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv)
+        * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv)
+        * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
+        * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
+  
+* **Data from numerical models**:
+
+    * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv)
+    * Ontario region: [https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/model/csv)
+    * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/model/csv)
+    * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv)
+    * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv)
+  
 Note: Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. MONTHLY" CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.
     
 ## File name nomenclature 
@@ -226,7 +252,7 @@ StationID, Value (H+000), Value (H+001), ... Value (H+047), Value (H+048)
 * In the CSV files for the AQHI, the value of the first hour is always missing because the AQHI formula requires a minimum of two hours in the last 3 hours to calculate moving averages.
 
 * In CSV files for UMOSAQ, it is possible that some values are missing since UMOS guidance may not be available for all hours. The availability of UMOS guidance for a specfic hour is dependent upon having sufficient historical data to be able to generate reliable predictive statistical equations.
-* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
+* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
 
@@ -235,3 +261,5 @@ If you have any questions about these data, please contact us at: ec.dps-client.
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available via the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) list
+
+
