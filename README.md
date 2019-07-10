@@ -113,9 +113,12 @@ Tips:
 
 Given we use mkdocs to style the documentation, extra care is required when creating the documentation in Markdown.
 
-* Links must be explicit, a direct link such as `https://foo.bar` won't work with mkdocs, it must be specifically set as a link with `[name or url](url)`
-* Lists must begin with an empty line before the initial bullet (`*`)
-* The second level of lists must begin with 4 spaces before the `*`
+* Links:
+    * Links must be explicit, a direct link such as `https://foo.bar` won't work with mkdocs, it must be specifically set as a link with `[name or url](url)`
+    * Ensure links always use `https://` instead of `http://` whenever available
+* Lists:
+    * Lists must begin with an empty line before the initial bullet `*`
+    * The second level of lists must begin with 4 spaces before the `*`
 
 ## Images in the documentation
 
