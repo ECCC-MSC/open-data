@@ -38,4 +38,8 @@ The Meteorological Service of Canada's [metadata is available on the Canadian Op
 
 The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
 
-## [Contact us](https://weather.gc.ca/mainmenu/contact_us_e.html)
+## Contact us
+
+User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
+
+For suggestions and improvements to the documentation itself, either contact us or [open an issue](https://github.com/ECCC-MSC/open-data/issues).

@@ -37,5 +37,8 @@ Les métadonnées du Service météorologique du Canada sont disponibles sur le 
 
 La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md)
 
+## Contactez-nous
 
-## [Contactez-nous](https://meteo.gc.ca/mainmenu/contact_us_f.html)
+Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
+
+Pour des suggestions et améliorations à la documentation elle-même, veuillez nous contacter ou [ouvrir un billet](https://github.com/ECCC-MSC/open-data/issues).
