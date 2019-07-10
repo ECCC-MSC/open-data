@@ -14,9 +14,11 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
 Les fichiers pour ces données se trouvent à l'adresse :
+
 * https://dd.meteo.gc.ca/hydrometric/[PROVTERR]/[MAJ]/
 
 où :
+
 * __[PROVTERR]__ : code de la province ou du territoire à 2 lettres. Le code est 
 l'une des 13 valeurs suivantes :
     * AB (Alberta)
@@ -73,7 +75,7 @@ où :
 
 * __MAJ__ : "daily" ou "hourly" pour la fréquence de mise à jour.
 
-Exemple:
+Exemple :
 
 "ON_daily_hydrometric.csv" pour les données d'observations mises à jour chaque 
 jour pour toutes les stations situées en Ontario (ON) en format CSV.
@@ -91,6 +93,7 @@ La première ligne est une entête bilingue suivie des enregistrements. Voici la
 ID,Date,Niveau d'eau (m),Grade,Symbole,QA/QC,Débit (cms),Grade,Symbole,QA/QC
 
 où : 
+
 *  __ID__ : Identifiant de la station. Les deux premiers chiffres indiquent le 
 bassin hydrographique principal dans lequel se trouve la station. Les 
 deux prochains caractères indiquent le sous-bassin et le 
@@ -129,6 +132,7 @@ La première ligne est une entête bilingue suivie des métadonnées des station
 ID,Nom,Latitude,Longitude,Prov/Terr,Timezone
 
 où :
+
 *  __ID__ : Identifiant de la station.
 
 * __Nom__ : Nom de la station. Le nom est soit en anglais ou en français dépendamment de l'emplacement de la station.

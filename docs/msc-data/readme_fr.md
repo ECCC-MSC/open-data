@@ -26,7 +26,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 * [Images radar météo](obs_radar/readme_radar_fr.md)
 * [Observations in situ](obs_station/readme_obs_insitu_fr.md)
-* [Observations Hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
+* [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
 
 
