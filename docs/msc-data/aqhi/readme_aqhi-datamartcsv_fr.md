@@ -17,14 +17,36 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 Les données sont accessibles aux adresses suivantes :
 
 * **Observations** : 
-    * Fichiers en temps réel : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/realtime/csv
-    * Fichiers mensuels : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/observation/monthly/csv
+    * Fichiers en temps réel : 
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv)
+    
+    * Fichiers mensuels :
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
+  
 * **Prévisions publiques** :
-    * Fichiers mensuels : https://dd.meteo.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/monthly/csv
+    * Fichiers mensuels : 
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
+  
 * **Données des modèles numériques**:
 
-    * https://dd.weather.gc.ca/air_quality/aqhi/[atl|ont|pnr|pyr|que]/forecast/model/csv
-
+    * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv)
+    * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv)
+    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv)
+    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv)
+    * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv)
+  
 Note : Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
     
 ## Nomenclature des noms de fichiers 
