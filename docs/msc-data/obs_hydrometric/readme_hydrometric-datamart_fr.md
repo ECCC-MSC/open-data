@@ -37,6 +37,8 @@ l'une des 13 valeurs suivantes :
 
 * __[MAJ]__ : "daily" ou "hourly" pour la fréquence de mise à jour
 
+Un historique de 30 jours est conservé dans ce répertoire.
+
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.

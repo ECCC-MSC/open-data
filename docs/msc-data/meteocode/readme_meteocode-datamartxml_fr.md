@@ -26,7 +26,7 @@ https://dd.meteo.gc.ca/meteocode/REGION/cmml/
 * pyr
 * que  
 
-Un historique des données de 24 heures est conservé dans ces répertoires.
+Un historique des données de un mois est conservé dans ces répertoires.
 
 Les [spécifications du format CMML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
 

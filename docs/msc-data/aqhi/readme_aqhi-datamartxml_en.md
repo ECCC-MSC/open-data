@@ -31,7 +31,9 @@ The data can be accessed at the following address :
     * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml](https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml)
     * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml)
     * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/realtime/xml](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/realtime/xml)
-      
+
+The real-time XML files are kept on the MSC Datamart for a period of 48 hours.
+
 A file that makes it easier for automated systems to access [real-time updated data](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) is available. 
 
 A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
@@ -76,7 +78,7 @@ an amendment.
 
 * The XML observation files are produced hourly, at approximately 40 minutes past the hour,
 and are available on Datamart for a period of 48 hours. The XML public forecast files are issued
-twice per day at approximately 6am and 5pm local time and are available on Datamart for a
+twice per day at approximately 6am and 5pm local time and are available on the MSC Datamart for a
 period of 48 hours.
 
 * Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/). However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on the American AirNow portal:

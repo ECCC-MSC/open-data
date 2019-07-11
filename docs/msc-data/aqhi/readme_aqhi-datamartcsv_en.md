@@ -32,7 +32,11 @@ The data can be accessed at the following address:
         * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv)
         * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
         * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
-  
+
+The real-time CSV files are kept on the MSC Datamart for a period of 8 days.
+
+The monthly summary files are kept on the MSC Datamart for a period of 12 months.
+
 * **Public forecasts**:
 
     * Monthly files: 
@@ -42,7 +46,9 @@ The data can be accessed at the following address:
         * Prairie and Northern Region: [https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv)
         * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
         * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
-  
+
+The monthly summary files are kept on the MSC Datamart for a period of 12 months.
+
 * **Data from numerical models**:
 
     * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv)

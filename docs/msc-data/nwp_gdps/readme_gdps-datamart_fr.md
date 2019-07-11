@@ -25,6 +25,8 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 240]
 
+Un historique de 20 heures est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 Valeurs données aux différents paramètres de la grille latitude-longitude à 25 km.

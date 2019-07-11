@@ -33,6 +33,8 @@ where :
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [2012, 2013, ...]
 
+A 2-month history is kept in this directory.
+
 ## Technical specification of the grid
 
 Table lists the values of various parameters of the CanSIPS lat-lon grid.

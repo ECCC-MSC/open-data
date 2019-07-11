@@ -23,6 +23,8 @@ __where__ :
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [001, 002, 003, ..., 048]
 
+A 24-hour history is stored in this directory.
+
 ## Technical specification of the grid
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)

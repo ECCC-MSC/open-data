@@ -23,6 +23,8 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
 
+Un historique de 24 heures est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps-cgsl/grille_rdwps-gsl.png)

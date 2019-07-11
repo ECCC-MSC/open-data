@@ -22,6 +22,8 @@ where :
 
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 
+A 30-day history is kept in this directory.
+
 ## Technical specification of the grid
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)

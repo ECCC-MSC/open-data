@@ -31,7 +31,9 @@ Les données sont accessibles à adresse suivante :
     * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml)
     * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml)
     * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/realtime/xml)
-    
+
+Les fichiers XML en temps réel sont conservés sur le Datamart du SMC pendant 48 heures.
+
 Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
 
 Une [liste complète des villes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.

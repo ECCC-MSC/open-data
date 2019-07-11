@@ -14,9 +14,11 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
-Les __bulletins sont disponibles__ à cette adresse:
+Les __bulletins sont disponibles__ à cette adresse :
 
 https://dd.meteo.gc.ca/alerts/cap/EEEE/hh/
+
+Un historique de 30 jours est conservé dans ce répertoire.
 
 avec :
 

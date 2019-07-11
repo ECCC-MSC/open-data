@@ -35,6 +35,8 @@ where :
 * __hhh__ : Forecast hour [000, 001, 002, ..., 048] for Continental.
 * __hhh__ : Forecast hour [000, 001, 002, ..., 048] for North at 00Z and 12Z.
 
+A 24-hour history is stored in this directory.
+
 ## Available Domains 
 
 ### Continental grid specifications

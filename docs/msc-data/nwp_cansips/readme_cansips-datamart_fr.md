@@ -32,6 +32,8 @@ où :
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
 * __YYYY__: L’année du début de la prévision [2012, 2013, ...]
 
+Un historique de 2 mois est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan.

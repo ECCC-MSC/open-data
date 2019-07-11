@@ -23,6 +23,8 @@ Les données sont accessibles à adresse suivante :
 
 * [https://dd.meteo.gc.ca/nowcasting/matrices/](https://dd.meteo.gc.ca/nowcasting/matrices/)
 
+Un historique de 24 heures est conservé dans ce répertoire.
+
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.

@@ -26,7 +26,7 @@ where 'REGION' is one of the following value :
 * pyr
 * que
 
-A 24-hour data history is kept in these directories.
+A data history of one month is kept in these directories.
 
 The [CMML format specifications](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf) are available.
 

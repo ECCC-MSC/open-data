@@ -53,6 +53,8 @@ where :
 
 __Note__: A [list of partners stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
 
+A 30-day history is kept in these directories.
+
 ## Nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.

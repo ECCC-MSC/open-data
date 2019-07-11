@@ -37,6 +37,8 @@ où :
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Continental.
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Nord à 00Z et 12Z.
 
+Un historique de 24 heures est conservé dans ce répertoire.
+
 ## Domaines disponibles
 
 ### Spécification technique de la grille continentale

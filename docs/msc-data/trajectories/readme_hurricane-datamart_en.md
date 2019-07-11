@@ -27,6 +27,8 @@ https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/storm-name/
 where :
 * storm-name is the storm name in uppercase (e.g. 'BERTHA' )
 
+April 30: the history is deleted
+
 ## Directory and file name nomenclature 
 
 NOTE : ALL HOURS ARE IN UTC.
