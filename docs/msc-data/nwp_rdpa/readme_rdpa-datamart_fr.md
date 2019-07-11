@@ -22,6 +22,8 @@ où :
 
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 
+Un historique de 30 jours est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)

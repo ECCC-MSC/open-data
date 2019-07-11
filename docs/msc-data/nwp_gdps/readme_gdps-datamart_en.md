@@ -24,6 +24,8 @@ where :
 * __HHH__ : UTC time of the beginning of the model run[00, 12]
 * __hhhh__ : Forecast time[000, 003, 006, ..., 240]
 
+A 20-hour history is kept in this directory.
+
 ## Technical specification of the grid
 
 Values given to the various parameters of the latitude-longitude grid at 25 km.

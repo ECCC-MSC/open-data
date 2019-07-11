@@ -46,6 +46,8 @@ où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18].
 
+Un historique de 24 heures est conservé dans ce répertoire.
+
 ## Spécification technique de chacune des grilles
 
 ### Lac Supérieur

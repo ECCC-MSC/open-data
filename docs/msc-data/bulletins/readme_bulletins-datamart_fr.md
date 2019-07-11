@@ -18,7 +18,7 @@ Les données sont accessibles aux adresses suivantes :
 
 * [https://dd.meteo.gc.ca/bulletins/alphanumeric/](https://dd.meteo.gc.ca/bulletins/alphanumeric/)
 
-Un historique des données est conservé dans ce répertoire.
+Un historique de 6 mois est conservé dans ce répertoire.
 
 ## Nomenclature des répertoires et noms de fichiers
 

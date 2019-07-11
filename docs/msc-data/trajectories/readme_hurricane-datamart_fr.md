@@ -27,6 +27,7 @@ https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/nom-tempête/
 où :
 * nom-tempête est le nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
 
+30 avril : l'historique est effacé
 
 ## Nomenclature des répertoires et noms de fichiers
 

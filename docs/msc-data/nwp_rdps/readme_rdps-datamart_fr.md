@@ -25,6 +25,8 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
+Un historique de 20 heures est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)

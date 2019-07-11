@@ -18,6 +18,8 @@ The __data can be accessed__ at the following URLs:
 
 https://dd.weather.gc.ca/alerts/cap/EEEE/hh/
 
+A 30-day history is kept in this directory.
+
 where:
 
 * YYYYMMDD: warning transmission day.

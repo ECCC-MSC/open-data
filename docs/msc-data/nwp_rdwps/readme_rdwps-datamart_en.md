@@ -45,6 +45,8 @@ The data can be accessed at the following URLs :
 where :
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
+A 24-hour history is stored in this directory.
+
 ## Available Domains 
 
 ### Lake Superior

@@ -30,7 +30,11 @@ Les données sont accessibles aux adresses suivantes :
         * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv)
         * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
         * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
-  
+
+Les fichiers CSV en temps réel sont conservés sur le Datamart du SMC pendant 8 jours.
+
+Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pendant une période de 12 mois.
+
 * **Prévisions publiques** :
     * Fichiers mensuels : 
         * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv)
@@ -38,7 +42,9 @@ Les données sont accessibles aux adresses suivantes :
         * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv)
         * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
         * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
-  
+
+Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pendant une période de 12 mois.
+
 * **Données des modèles numériques**:
 
     * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv)

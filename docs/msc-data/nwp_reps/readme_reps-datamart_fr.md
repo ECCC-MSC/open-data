@@ -23,6 +23,8 @@ où :
 * __HH__ : Heure de la passe du modèle en TU
 * __hhh__ : Heure de la prévision
 
+Un historique de 24 heures est conservé dans ce répertoire.
+
 ## Spécification technique de la grille
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)

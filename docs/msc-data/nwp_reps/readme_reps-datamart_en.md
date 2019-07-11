@@ -23,6 +23,8 @@ where :
 * __HH__ : Forecast run hour in UTC
 * __hhh__ : Forecast time
 
+A 24-hour history is stored in this directory.
+
 ## Technical specification of the grid
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
