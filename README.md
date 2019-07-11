@@ -41,6 +41,8 @@ Files are stored on GCcode, in the public-doc repository: http://gccode.ssc-spc.
 Files in this repository:
 * README.md
     * This readme file!
+* [CHANGELOG.md](CHANGELOG.md)
+    * User-oriented list of what's new and what's changed for new public documentation versions
 * docs/
     * The actual documentation
 * scripts/
@@ -48,8 +50,9 @@ Files in this repository:
 * templates/
     * Location of templates to be used for documenting MSC data
 * mkdocs.yml
-    * The mkdocs configuration file for publishing to GitHub
- 
+    * The mkdocs configuration file
+* custom_theme/
+    * Local copy of the mkdocs theme files, [required for the top menu](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues/8)
 
 # Monitoring documentation changes
 
@@ -88,7 +91,9 @@ This enables receiving modifications for the entire DPS repository.
     * Validate both languages
     * Validate breadcrumbs
     * Validate tables layout and content
-5. Update the `public-doc` repository
+5. Update the user-oriented changelog
+    * Update the [changelog](changelog.md) as needed
+6. Update the `public-doc` repository
     * Make certain you're still on the branch you created at step 2 with the `git status` command
     * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
     * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
@@ -99,7 +104,7 @@ This enables receiving modifications for the entire DPS repository.
         * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/public-doc), and then click 'Compare branches and continue'
         * Assign the merge request and click 'Submit merge request'
         * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
-6. Update your fork's master branch
+7. Update your fork's master branch
     * Go to your fork master branch: `git checkout master`
     * Update local master with `public-doc` source code: `git pull upstream master`
     * (optional) Push updated master to your fork: `git push`
@@ -205,3 +210,4 @@ Your new deploy branch should now be updated and available on the open-data GitH
 7. At the root of your fork $USERNAME/open-data repository (where mkdocs.yml is located) run: `mkdocs gh-deploy -m "Your commit message for mkdocs here"`. The message should indicate the current version of the documentation such as `version 2.0`
 8. Desactivate your mkdocs environment: `conda desactivate`
 9. Verify that the gh-pages branch was updated on GitHub and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
+10. Prepare and send announcement to users based on the [changelog](changelog.md)
