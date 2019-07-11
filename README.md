@@ -48,8 +48,9 @@ Files in this repository:
 * templates/
     * Location of templates to be used for documenting MSC data
 * mkdocs.yml
-    * The mkdocs configuration file for publishing to GitHub
- 
+    * The mkdocs configuration file
+* custom_theme/
+    * Local copy of the mkdocs theme files, [required for the top menu](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues/8)
 
 # Monitoring documentation changes
 
