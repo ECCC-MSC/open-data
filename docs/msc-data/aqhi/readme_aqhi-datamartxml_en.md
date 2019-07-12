@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > AQHI
+[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > AQHI
 
 # Air Quality Health Index (AQHI) observation and forecast data in XML format
 
@@ -14,9 +14,9 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-The data can be accessed at the following address :
+The data can be accessed at the following address:
 
-* Observations :
+* Observations:
 
     * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/xml](https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/xml)
     * Ontario region: [https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/xml](https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/xml)
