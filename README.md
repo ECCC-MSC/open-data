@@ -15,7 +15,6 @@ Welcome! This documentation will tell you how to update and deploy new version o
     * [Files in the documentation](#files-in-the-documentation)
     * [Changes to the Licence](#changes-to-the-licence)
 6. [Deploying the documentation](#deploying-the-documentation)
-    * [Regular releases](#regular-releases)
     * [Deployment to GitHub Pages with mkdocs](#deployment-to-github-pages-with-mkdocs)
 
 
@@ -58,10 +57,10 @@ Files in this repository:
 
 How to monitor changes to this documentation by receiving emails when changes are committed to the documentation:
 1. [Log into GCcode](http://gccode.ssc-spc.gc.ca/)
-2. [Go to the DPS repository project page](http://gccode.ssc-spc.gc.ca/ec-msc/dps)
+2. [Go to the `public-doc` repository project page](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc)
 3. Enable watch mode for the repository by selecting `Watch` in the dropdown menu alongside the alarm bell icon
 
-This enables receiving modifications for the entire DPS repository.
+This enables receiving modifications for the entire `public-doc` repository.
 
 
 # Updating the documentation
@@ -138,7 +137,7 @@ Readying images for publication:
 Hosting images for the documentation on GitHub:
 * Images must **not** be added to the GCcode repository
 * Images are instead copied to the publicly accessible Collaboration server at `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/` with the same corresponding directory structure as the path in this Git repository
-    * Example: an image associated to `https://gccode.ssc-spc.gc.ca/ec-msc/dps/tree/master/public-data-documentation/canada.ca_upcoming/msc-data/nwp_rdps` is hosted in `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp-rdps/`
+    * Example: an image associated to `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/tree/master/docs/msc-data/nwp_rdps` is hosted in `https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp-rdps/`
 * Sandrine and other colleagues at [CMOA](https://wiki.cmc.ec.gc.ca/wiki/CMOA) have permissions to copy images in those Collaboration folders
     * Send images by email to Sandrine along with the desired path
 
@@ -162,25 +161,18 @@ Prior applying any change to the [licence accompanying the documentation](licenc
 
 
 # Deploying the documentation
-
-## Regular releases
-
-_TO BE COMPLETED_
-
-1. Validate [status of open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/dps/issues?label_name%5B%5D=Public+documentation)
-2. Management sign-off
-3. Publication to canada.ca: TO COMPLETE
-4. Add or update remote images on the Collaboration server, if needed
-5. Announce the new version of the documentation through the appropriate channels
-    * Channels to consider, internally: TBD, externally: [dd-info] and [GeoMet-Info]
   
 ## Deployment to GitHub Pages with mkdocs
 
-The deployment of the MSC Open Data Documentation to GitHub requires a user to have write access to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
+The deployment of the MSC Open Data Documentation to GitHub requires the user to have write permissions to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). At the moment, the colleagues having write permissions are Alexandre Leroux, Sandrine Edouard and Tom Kralidis.
+
+In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
+
+Is is a best practice to [review existing open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues) before proceeding with a documentation deployment.
 
 ### Install Conda and create mkdocs virtual environment
 
-Validate if Conda is already installed on your computer. Type `conda --version`. If a Conda version is provided, Conda is installed and slip the installation steps. Otherwise, proceed with the Conda installation.
+Validate if Conda is already installed on your computer. Type `conda --version`. If a Conda version is provided, Conda is installed and skip the installation steps. Otherwise, proceed with the Conda installation.
 
 To install Conda, please choose a location in your work environment that has a sufficient amount of disk space. It is not recommended that you install Conda in your home directory due to limited disk space allocated to this directory.
 
@@ -188,7 +180,7 @@ To install Conda, please choose a location in your work environment that has a s
 2. To install, navigate to the folder containing the downloaded file and run `bash Miniconda3-latest-Linux-x86_64.sh`
 3. Follow the installation instructions and:
     * accept the License terms
-    * provide a location outside your Linux home directory
+    * indicate a location outside your Linux home directory for the conda installation directory
     * when asked about running the `conda init`, set to `yes`
 4. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
 5. Start a new terminal session so you can access conda commands
@@ -198,16 +190,26 @@ To install Conda, please choose a location in your work environment that has a s
  
 ### Deploy documentation on GitHub with mkdocs
 
-Your new deploy branch should now be updated and available on the open-data GitHub repository. Create a pull request in GitHub to merge the deploy branch into the master branch. 
+The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and published it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
 
-1. In your fork, ensure the `github` remote exists `git remote -v`, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
-1. Navigate to your local GCcode fork $USERNAME/open-data repository and pull the master branch that you finished merging: `git pull upstream master`
-2. Verify that the newest release tag is available with `git tag`:
-3. Create the new tag with `git tag $VERSION`
-4. Checkout the newest tag: `git checkout $VERSION`
-5. Activate your mkdocs environment: `conda activate mkdocs`
-6. Test and validate the documentation by running `mkdocs serve`, pay close attention to warnings (if any) and head to `http://127.0.0.1:8000`
-7. At the root of your fork $USERNAME/open-data repository (where mkdocs.yml is located) run: `mkdocs gh-deploy -m "Your commit message for mkdocs here"`. The message should indicate the current version of the documentation such as `version 2.0`
-8. Desactivate your mkdocs environment: `conda desactivate`
-9. Verify that the gh-pages branch was updated on GitHub and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
-10. Prepare and send announcement to users based on the [changelog](changelog.md)
+1. In a terminal window, `cd` to the root of your `public-doc` repository fork
+    1. Ensure the `github` remote exists `git remote -v`, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
+2. Pull the current version of the documentation you want to publish: `git pull upstream master`
+3. Tag the version:
+    1. Validate what is the version number to publish in the [changelog](CHANGELOG.md)
+    1. Verify that the version number ($VERSION) tag is available with `git tag`
+    2. Create the new tag with `git tag $VERSION`
+    3. Push the tag to upstream: `git push upstream $VERSION`
+    4. Checkout the newest tag: `git checkout $VERSION`
+4. Activate your mkdocs environment: `conda activate mkdocs`
+5. Test and validate the documentation:
+    1. Run `mkdocs serve`, pay close attention to warnings (if any)
+    2. Head to `http://127.0.0.1:8000` in a web browser
+    3. Once validated, exit with control-c
+6. Deploy the documentation on GitHub:
+    0. Careful here... we might want to test with the deploy of version 2.0.2 if pull the gh-pages branch first and publishing without the `--force` works. As for `--ignore-version`, this clearly seems a mkdocs bug
+    1. Run `mkdocs gh-deploy --force --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
+7. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
+8. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
+9. Prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
+10. Request the updated content to be updated on the corresponding canada.ca pages
