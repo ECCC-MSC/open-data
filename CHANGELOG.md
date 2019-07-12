@@ -8,6 +8,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+2.0.2
+* date: PLANNED FOR 2019-07-19
+* announcements:
+    * not announced to users
+* new content:
+    * none
+* improvements:
+    * none
+* bug fixes:
+    * fixed broken menu anchors in docs/msc-geomet/web-services_fr.md
+
 2.0.1
 * date: 2019-07-12
 * announcements:
