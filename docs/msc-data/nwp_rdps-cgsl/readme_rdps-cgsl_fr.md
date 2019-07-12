@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPD couplé au Golfe du Saint-Laurent
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPD couplé au Golfe du Saint-Laurent
 
 # Données et produits du Système Régional de Prévision Déterministe couplé au Golfe du Saint-Laurent
 

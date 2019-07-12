@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Données de prévision meteocode sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données de prévision meteocode](readme_meteocode_fr.md) > Données de prévision meteocode sur le Datamart du SMC
 
 # Données de prévision meteocode en format CSV
 

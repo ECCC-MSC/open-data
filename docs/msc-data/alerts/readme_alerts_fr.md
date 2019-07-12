@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > PAC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Alertes
 
 # Données et produits d'avertissements météorologiques dans le format du Protocole d'Alerte Commun (PAC)
 

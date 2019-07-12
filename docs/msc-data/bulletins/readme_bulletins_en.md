@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Alphanumerical and binary bulletins
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Alphanumerical and binary bulletins
 
 # Data and products of the alphanumerical and binary bulletins  
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > NAEFS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > NAEFS
 
 # Data and Products of the North American Ensemble Forecast System (NAEFS)
 

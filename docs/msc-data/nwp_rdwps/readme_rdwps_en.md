@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > RDWPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RDWPS
 
 
 # Data and Products of the Regional Deterministic Wave Prediction System (RDWPS)

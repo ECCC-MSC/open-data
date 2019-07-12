@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Climate  data (normals, daily, monthly)
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Climate  data (normals, daily, monthly)
 
 # Data and products of the climate data (normals, daily, monthly)  
 

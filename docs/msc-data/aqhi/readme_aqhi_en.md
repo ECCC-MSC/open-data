@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > AQHI
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > AQHI
 
 # Data and Products of the Air Quality Health Index (AQHI) observation and forecast
 

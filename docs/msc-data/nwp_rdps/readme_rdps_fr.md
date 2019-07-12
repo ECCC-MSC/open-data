@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPD
 
 # Données et produits du Système régional de prévision déterministe
 

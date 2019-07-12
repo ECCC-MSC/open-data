@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Weather forecast files by city
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Weather forecast files by city](readme_citypageweather_en.md) > Weather forecast files by city on MSC Datamart
 
 # Weather forecast data by city in XML format
 

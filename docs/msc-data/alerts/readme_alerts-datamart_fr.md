@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > PAC sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Alertes](readme_alerts_fr.md) > Alertes sur le Datamart du SMC
 
 # Données d'avertissements météorologiques XML dans le format du Protocole d'Alerte Commun (PAC)
 

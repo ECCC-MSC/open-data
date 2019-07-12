@@ -4,7 +4,7 @@
 ![ECCC logo](../../img_eccc-logo.png)
 
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPD sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD sur le Datamart du SMC
 
 
 # Données GRIB2 du système global de prévision déterministe (SGPD)

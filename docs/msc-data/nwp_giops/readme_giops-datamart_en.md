@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > GIOPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GIOPS](readme_giops_en.md) > GIOPS on MSC Datamart
 
 # Global Ice-Ocean Prediction System (GIOPS) Data in NetCDF Format
 

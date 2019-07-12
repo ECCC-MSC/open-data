@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Hydrometric data
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Hydrometric data
 
 # Data and products of real time hydrometric 
 

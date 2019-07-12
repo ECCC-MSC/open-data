@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Bulletins alphanumériques et binaires
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Bulletins alphanumériques et binaires
 
 # Données et Produits des bulletins alphanumériques et en format binaire
 

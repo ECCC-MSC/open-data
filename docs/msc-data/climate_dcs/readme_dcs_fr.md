@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Résultats statistiquement réduits à  l'échelle
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Résultats statistiquement réduits à  l'échelle
 
 # Données et produits des résultats statistiquement réduits à  l'échelle pour des modèles climatiques du CMIP5
 

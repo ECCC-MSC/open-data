@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SPISCan
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SPISCan
 
 # Données et Produits du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan)
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Observations summary by province or territory 
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Observations summary by province or territory 
 
 # Data and products of in situ observations
 

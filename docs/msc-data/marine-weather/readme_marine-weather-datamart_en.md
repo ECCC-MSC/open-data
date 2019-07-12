@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Marine weather
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Marine weather](readme_marine-weather_en.md) > Marine weather on MSC Datamart
 
 # Data of the marine weather forecasts
 

@@ -2,8 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SHRPD sur le Datamart du SMC
-
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > SHRPD sur le Datamart du SMC
 
 # Données GRIB2 du Système à Haute Résolution de Prévision Déterministe (SHRPD)
 

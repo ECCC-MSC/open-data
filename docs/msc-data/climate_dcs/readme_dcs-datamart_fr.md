@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Résultats statistiquement réduits à  l'échelle sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Résultats statistiquement réduits à  l'échelle](readme_dcs_fr.md) > Résultats statistiquement réduits à  l'échelle sur le Datamart du SMC
 
 # Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5) en format NetCDF
 

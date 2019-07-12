@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > REPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > REPS
 
 # Data and Products of the Regional Ensemble Prediction System (REPS)
 

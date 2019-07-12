@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPDV
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPDV
 
 # Données et Produits du Système Régional de Prévision Déterministe de Vague (SRPDV)
 

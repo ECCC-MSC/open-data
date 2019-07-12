@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > GEPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GEPS](readme_geps_en.md) > GEPS on MSC Datamart
 
 # Global Ensemble Prediction System (GEPS) Data in GRIB2 Format
 

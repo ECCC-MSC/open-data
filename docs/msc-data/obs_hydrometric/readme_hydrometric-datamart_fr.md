@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Données hydrométriques sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données hydrométriques](readme_hydrometric_fr.md) > Données hydrométriques sur le Datamart du SMC
 
 # Données hydrométriques en temps réel en format CSV
 

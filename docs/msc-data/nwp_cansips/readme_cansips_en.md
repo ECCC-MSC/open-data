@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > CanSIPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CanSIPS
 
 # Data and Products of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Observations by station
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Observations by station](readme_obs_insitu_en.md) > Observations by station on MSC Datamart
 
 # Surface Weather and Marine Observation Markup Language (SWOB Met-ML) by station in XML format
 

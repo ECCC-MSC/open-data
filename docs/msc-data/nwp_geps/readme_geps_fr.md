@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPE
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPE
 
 # Données et Produits du Système global de prévision d'ensemble (SGPE)
 

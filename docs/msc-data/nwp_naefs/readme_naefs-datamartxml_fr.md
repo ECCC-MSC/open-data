@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SPENA
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPENA](readme_naefs_fr.md) > SPENA sur le Datamart du SMC
 
 # Données XML du Système de Prévisions d'Ensemble Nord-Américain (SPENA)
 

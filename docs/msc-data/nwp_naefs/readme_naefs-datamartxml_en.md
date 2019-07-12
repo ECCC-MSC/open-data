@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > NAEFS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [NAEFS](readme_naefs_en.md) > NAEFS on MSC Datamart
 
 # North American Ensemble Forecast System (NAEFS) Data in XML Format
 

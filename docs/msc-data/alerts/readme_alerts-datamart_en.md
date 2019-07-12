@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > CAP
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Alerts](readme_alerts_en.md) > Alerts on MSC Datamart
 
 # Weather warning XML data in the format of the Common Alerting Protocol (CAP)
 

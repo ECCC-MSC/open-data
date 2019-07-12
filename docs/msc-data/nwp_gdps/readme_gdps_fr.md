@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPD
 
 
 # Données et produits du Système global de prévision déterministe
