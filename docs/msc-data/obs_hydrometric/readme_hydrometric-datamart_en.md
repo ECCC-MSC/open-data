@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Hydrometric data](readme_hydrometric_en.md) > Hydrometric data on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Hydrometric data
 
 # Hydrometric data in CSV format
 
@@ -14,11 +14,12 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable CSV file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data is available at the following address :
+The data is available at the following address:
 
 * https://dd.weather.gc.ca/hydrometric/csv/[PROVTERR]/[FREQUENCY]/
 
-where :
+where:
+
 * __PROVTERR__ : 2-letter code for the province or territory. The code is one of the 13 following values:
     * AB (Alberta)
     * BC (British Columbia)
@@ -42,7 +43,7 @@ A 30-day history is kept in this directory.
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature :
+The files have the following nomenclature:
 
 CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
 
@@ -75,6 +76,7 @@ English column descriptors:
  ID,Date,Water Level (m),Grade,Symbol,QA/QC,Discharge (cms),Grade,Symbol,QA/QC
 
 where :
+
 *  __ID__ : Station identifier. The first two digits indicate the major drainage 
 basin in which the station is located. The next two characters indicate 
 the sub-basin and sub-sub-basin. The last three digits indicate the 
@@ -107,7 +109,7 @@ UTC.
 
 A list of the [real-time hydrometric stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson) in GeoJSON format is available.
 
-The first line is a bilingual header, followed by station metadata. Below are the English column descriptors :
+The first line is a bilingual header, followed by station metadata. Below are the English column descriptors:
 
 ID,Name,Latitude,Longitude,Prov/Terr,Timezone
 

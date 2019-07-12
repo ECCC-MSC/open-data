@@ -14,7 +14,7 @@ Real-time hydrometric data containing real-time unit water level and flow data f
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [CSV data available on the MSC Datamart](readme_hydrometric-datamart_en.md) 
 
