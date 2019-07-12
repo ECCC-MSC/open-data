@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > CAS
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > CAS
 
-# Données et produits d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS). 
+# Données et produits d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS)
 
 * La **cote air santé CAS** est une échelle conçue pour quantifier la qualité de l'air dans une région donnée, sur une échelle de 1 à 10. La cote 10+ indique que la pollution de l'air est très élevée. La cote air santé comprend également une catégorie décrivant le risque pour la santé correspondant au nombre indiqué risque faible, modéré, élevé ou très élevé . La cote air santé est calculée en fonction des risques relatifs que représente une combinaison de polluants atmosphériques courants connus pour leurs effets néfastes sur la santé humaine, tels que l'ozone troposphérique, les matières particulaires et le dioxyde d'azote. La formulation de la cote air santé rend uniquement compte du risque pour la santé aigu ou à court terme contact en heures ou en jours au maximum .
 Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouvelle compréhension des effets de la pollution atmosphérique sur la santé. La cote air santé est calculée à partir de données observées en temps réel, sans vérification contrôle de la qualité.
@@ -19,7 +19,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 
 * [Données pour la CAS, disponibles en format CSV sur le Datamart du SMC](readme_aqhi-datamartcsv_fr.md), dont des données de prévisions d'espèces chimiques provenant de modèles numériques de qualité de l'air
 * [Données pour la CAS, disponibles en format XML sur le Datamart du SMC](readme_aqhi-datamartxml_fr.md)
-* [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)]
+* [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

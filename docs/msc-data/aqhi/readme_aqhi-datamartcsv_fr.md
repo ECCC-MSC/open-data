@@ -31,10 +31,6 @@ Les données sont accessibles aux adresses suivantes :
         * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
         * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
 
-Les fichiers CSV en temps réel sont conservés sur le Datamart du SMC pendant 8 jours.
-
-Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pendant une période de 12 mois.
-
 * **Prévisions publiques** :
     * Fichiers mensuels : 
         * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv)
@@ -43,7 +39,6 @@ Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pen
         * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
         * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
 
-Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pendant une période de 12 mois.
 
 * **Données des modèles numériques**:
 
@@ -53,7 +48,10 @@ Les fichiers récapitulatifs mensuels sont conservés sur le Datamart du SMC pen
     * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv)
     * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv)
   
-Note : Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
+
+## Rétention des données 
+
+Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
     
 ## Nomenclature des noms de fichiers 
 
