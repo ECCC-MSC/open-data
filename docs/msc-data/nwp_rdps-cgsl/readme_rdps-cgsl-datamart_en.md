@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence](readme_rdps-cgsl_en.md) > Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence on MSC Datamart
 
 # Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence data in GRIB2 format
 

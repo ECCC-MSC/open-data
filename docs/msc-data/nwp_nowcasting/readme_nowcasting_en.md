@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > Scribe Nowcasting Matrices
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Scribe Nowcasting Matrices
 
 # Data and Products of the scribe nowcasting matrices
 

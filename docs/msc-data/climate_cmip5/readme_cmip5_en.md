@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > CMIP5
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CMIP5
 
 # Data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5)  
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Données de précipitations moyennes par bassin-versant AHRDP sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données de précipitations moyennes par bassin-versant AHRDP](readme_hrdpa-watershed_fr.md) > Données de précipitations moyennes par bassin-versant AHRDP sur le Datamart du SMC
 
 
 # Données GRIB2 de précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)

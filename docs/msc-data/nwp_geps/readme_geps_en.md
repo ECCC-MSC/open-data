@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > GEPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > GEPS
 
 # Data and Products of the Global Ensemble Prediction System (GEPS)
 

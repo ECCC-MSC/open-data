@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Sommaires d'observations par province ou territoire
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Sommaires d'observations par province ou territoire
 
 # Données et produits d'observations aux stations
 

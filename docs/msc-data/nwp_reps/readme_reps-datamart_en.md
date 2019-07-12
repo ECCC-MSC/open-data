@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > REPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [REPS](readme_reps_en.md) > REPS on MSC Datamart
 
 # Regional Ensemble Prediction System (REPS) Data in GRIB2 Format
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SRPE sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPE](readme_reps_fr.md) > SRPE sur le Datamart du SMC
 
 # Données GRIB2 du Système régional de prévision d'ensemble (SRPE)
 

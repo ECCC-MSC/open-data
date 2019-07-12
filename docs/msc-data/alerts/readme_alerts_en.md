@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > CAP
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Alerts
 
 # Weather warning data and products in the Common Alerting Protocol (CAP) format
 

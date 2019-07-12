@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Observations par station
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations par station](readme_obs_insitu_fr.md) > Observations par station sur le Datamart du SMC
 
 # Données XML du langage de balisage des observations météorologiques au sol et marines (SWOB Met-ML) par station
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Climate  data (normals, daily, monthly)
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Climate  data (normals, daily, monthly)](readme_climateobs_en.md) > Climate  data (normals, daily, monthly) on MSC Datamart
 
 # Climate  data (normals, daily, monthly) in CSV format
 

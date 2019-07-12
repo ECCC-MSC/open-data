@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Sommaires d'observations
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Sommaires d'observations](readme_obs_insitu_fr.md) > Sommaires d'observations sur le Datamart du SMC
 
 # Données XML des sommaires d'observations par province ou territoire
 

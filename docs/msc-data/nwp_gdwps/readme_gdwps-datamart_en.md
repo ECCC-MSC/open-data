@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > GDWPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GDWPS](readme_gdwps_en.md) > GDWPS on MSC Datamart
 
 # Global Deterministic Wave Prediction System (GDWPS) data in GRIB2 format
 

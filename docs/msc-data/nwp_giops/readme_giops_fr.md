@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPOG
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPOG
 
 # Données et Produits du Système global de prévision océan-glace (SGPOG)
 

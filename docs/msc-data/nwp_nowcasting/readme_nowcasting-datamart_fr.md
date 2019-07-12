@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions immédiates sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévisions immédiates](readme_nowcasting_fr.md) > Prévisions immédiates sur le Datamart du SMC
 
 
 # Matrices scribe de prévision immédiates

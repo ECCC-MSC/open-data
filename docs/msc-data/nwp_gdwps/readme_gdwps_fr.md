@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > SGPDV
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPDV
 
 # Données et Produits du système global de prévision déterministe de vague (SGPDV)
 

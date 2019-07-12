@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > CanGRD
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CanGRD
 
 # Data and products of the Canadian Gridded Temperature and Precipitation Anomalies (CANGRD)  
 

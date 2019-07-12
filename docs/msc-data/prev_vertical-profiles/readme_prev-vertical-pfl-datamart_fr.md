@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions des profils verticaux
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévisions des profils verticaux](readme_prev-vertical-pfl_fr.md) > Prévisions des profils verticaux sur le Datamart du SMC
 
 # Données de prévisions des profils verticaux du Système régional de prévision déterministe 
 

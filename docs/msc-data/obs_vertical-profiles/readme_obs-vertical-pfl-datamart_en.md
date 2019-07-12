@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > Vertical profiles' observation
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Vertical profiles' observation](readme_obs-vertical-pfl_en.md) > Vertical profiles' observation on MSC Datamart
 
 # Vertical profiles observation data in CSV format
 

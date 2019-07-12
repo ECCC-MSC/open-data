@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Observations summary
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Observations summary](readme_obs_insitu_en.md) > Observations summary on MSC Datamart
 
 # Observations summary data in XML format by province or territory 
 

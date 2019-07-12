@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > RDPA
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPA](readme_rdpa_en.md) > RDPA on MSC Datamart
 
 # Regional Deterministic Precipitation Analysis (RDPA - CaPA) data in GRIB2 format
 

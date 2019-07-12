@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Observations des profils verticaux
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Observations des profils verticaux
 
 # Données et produits d'observations des profils verticaux
 

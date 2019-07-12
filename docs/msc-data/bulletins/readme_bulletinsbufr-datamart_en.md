@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public Data](../readme_en.md) > Binary bulletins
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Binary bulletins](readme_bulletins_en.md) > Binary bulletins on MSC Datamart
 
 # Data of the binary bulletins 
 

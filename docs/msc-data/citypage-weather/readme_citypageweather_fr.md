@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Prévisions météorologiques par ville
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Prévisions météorologiques par ville
 
 # Données et produits des prévisions météorologiques officielles par ville
 

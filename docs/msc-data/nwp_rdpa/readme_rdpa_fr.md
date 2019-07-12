@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > ARDP
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > ARDP
 
 # Données et produits de l'Analyse régionale déterministe de précipitation
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Public data](../readme_en.md) > HRDPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > HRDPS
 
 
 # Data and Products of the High Resolution Deterministic Prediction System

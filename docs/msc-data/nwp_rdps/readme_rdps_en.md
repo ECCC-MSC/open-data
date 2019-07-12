@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > RDPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RDPS
 
 # Data and products of the Regional Deterministic Prediction System
 

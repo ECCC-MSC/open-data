@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > Bulletins binaires sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Bulletins binaires](readme_bulletins_fr.md) > Bulletins binaires sur le Datamart du SMC
 
 # Données des bulletins en format binaire
 

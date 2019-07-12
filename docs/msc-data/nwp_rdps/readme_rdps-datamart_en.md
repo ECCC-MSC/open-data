@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > RDPS
+[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [RDPS](readme_rdps_en.md) > RDPS on MSC Datamart
 
 # Regional Deterministic Prediction System (RDPS) data in GRIB2 format
 

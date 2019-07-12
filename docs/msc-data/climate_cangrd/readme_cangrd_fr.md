@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données ouvertes publiques du SMC](../readme_fr.md) > CanGRD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > CanGRD
 
 # Données et produits des Anomalies de température et précipitation interpolées pour le Canada (CANGRD)  
 
