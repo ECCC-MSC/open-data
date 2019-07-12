@@ -33,9 +33,6 @@ The data can be accessed at the following address:
         * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
         * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
 
-The real-time CSV files are kept on the MSC Datamart for a period of 8 days.
-
-The monthly summary files are kept on the MSC Datamart for a period of 12 months.
 
 * **Public forecasts**:
 
@@ -47,8 +44,6 @@ The monthly summary files are kept on the MSC Datamart for a period of 12 months
         * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
         * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
 
-The monthly summary files are kept on the MSC Datamart for a period of 12 months.
-
 * **Data from numerical models**:
 
     * Atlantic region: [https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv)
@@ -57,7 +52,9 @@ The monthly summary files are kept on the MSC Datamart for a period of 12 months
     * Pacific and Yukon Region: [https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv)
     * Quebec region: [https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv](https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv)
   
-Note: Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. MONTHLY" CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.
+## Data retention
+
+Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. Monthly CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.
     
 ## File name nomenclature 
 
@@ -66,7 +63,7 @@ NOTE : ALL HOURS ARE IN UTC.
 * **Observations**:
     * Real-time files : YYYYYMMDDhh_AQHI_REGION_OBSTYPE.csv
     * Monthly files : AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv
-    * Monthly files with backfilled data :  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
+    * Monthly files with backfilled data:  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
   
 where: 
 
@@ -132,41 +129,38 @@ possible are as follows:
 * **CSV files with AQHI observations calculated from pollutant data received in real-time** (for files in "real-time" and "MONTHLY" format):
     * **Header**
   
-   The header is given on the first line and contains the following information :
+The header is given on the first line and contains the following information :
    
-   Date,Hour,CGNDB_Site1,CGNDB_Site2,...,CGNDB_SiteN
+Date,Hour,CGNDB_Site1,CGNDB_Site2,...,CGNDB_SiteN
    
-    where:
+where:
     
-      * 'Date': fixed string
-      * 'Hour': fixed string
-      * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-        * 'Date': fixed string
-        * 'Hour': fixed string
-        * CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+* 'Date': fixed string
+* 'Hour': fixed string
+* CGNDB_Site#: a 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson)
 
-    * **Data block**
+* **Data block**
   
-   Observations are provided with an accuracy of two decimal.
+Observations are provided with an accuracy of two decimal.
    
-   Each line of a data block contains the following information:
+Each line of a data block contains the following information:
 
-    YYYYY-MM-DD,hh,AQHI_Site1,AQHI_Site2,...,AQHI_SiteN
+YYYYY-MM-DD,hh,AQHI_Site1,AQHI_Site2,...,AQHI_SiteN
 
-    where:
+where:
 
-      * YYYYY: the year of observation.
-      * MM: the month of observation.
-      * DD: the day of observation.
-      * hhh: hour for observation.
-      * AQHI_Site#: AQHI observations for all [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
-        * YYYYY: the year of observation.
-        * MM: the month of observation.
-        * DD: the day of observation.
-        * hhh: hour for observation.
-        * AQHI_Site#: AQHI observations for all [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
+* YYYYY: the year of observation.
+* MM: the month of observation.
+* DD: the day of observation.
+* hhh: hour for observation.
+* AQHI_Site#: AQHI observations for all [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
+    * YYYYY: the year of observation.
+    * MM: the month of observation.
+    * DD: the day of observation.
+    * hhh: hour for observation.
+    * AQHI_Site#: AQHI observations for all [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region.
 
-    Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.
+Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.
 
 * **CSV files with AQHI observations calculated from backfilled or corrected data** (only files in "MONTHLY" format) :
 
