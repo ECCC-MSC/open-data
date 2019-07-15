@@ -61,11 +61,12 @@ Real-time CSV files are produced on an hourly basis and contain the data for the
 NOTE : ALL HOURS ARE IN UTC.
 
 * **Observations**:
+
     * Real-time files : YYYYYMMDDhh_AQHI_REGION_OBSTYPE.csv
     * Monthly files : AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv
     * Monthly files with backfilled data:  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv
   
-    where: 
+* where: 
     
     * __YYYYY__ : Year of observation, 4 digits.
     * __MM__ : Month of observation, 2 digits (January = 01).
@@ -78,17 +79,17 @@ NOTE : ALL HOURS ARE IN UTC.
         *'ON' = Ontario Region
         * NRP' = Prairie and Northern Region
         * PYR' = Pacific and Yukon Region
-        * 'QC' = Quebec Region;
-    * __OBSTYPE__ : Type of observation in the file. The possible options are as follows :
+        * 'QC' = Quebec Region
+    * __OBSTYPE__ : Type of observation in the file. The possible options are as follows:
         * 'SiteObs' = The file contains AQHI observations for [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson),
         * 'StationObs' = The file contains AQHI observations for the associated observation stations to communities (not available in January 2012).
-    * __'BACKFILLED'__ : Symbol that is present when the file contains AQHI observations that
-        are not calculated in real time, but are calculated from the backfilled data or corrected (received within 48 hours of the validity time).
+    * __'BACKFILLED'__ : Symbol that is present when the file contains AQHI observations that are not calculated in real time, but are calculated from the backfilled data or corrected (received within 48 hours of the validity time).
 
 * **Public forecasts**:
+
     * AAAAMM_MONTHLY_AQHI_CGNDBcode_SiteFcst.csv
 
-    where: 
+* where: 
     
     * __YYYYY__ : Year of forecast, 4 digits.
     * __MM__ : Month of forecast, 2 digits (January = 01).
@@ -101,7 +102,7 @@ A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_d
 * **Data from numerical models**:
     * AAAAMMDDhh_SPECIES_REGION_MODELTYPE.csv
     
-    where:
+* where:
     
     * __YYYYY__ : Year for which data were generated, 4 digits.
     * __MM__ : Month for which data were generated, 2 digits (January = 01).
@@ -129,29 +130,27 @@ A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_d
 
 * **CSV files with AQHI observations calculated from pollutant data received in real-time** (for files in "real-time" and "MONTHLY" format):
     
-    * **Header**
-  
-    The header is given on the first line and contains the following information:
+    * **Header** 
+    
+The header is given on the first line and contains the following information:
    
-    | Date | Hour | CGNDB_Site1 | CGNDB_Site2 | ... | CGNDB_SiteN |
-    |------|------|-------------|-------------|-----|-------------|
+| Date | Hour | CGNDB_Site1 | CGNDB_Site2 | ... | CGNDB_SiteN |
+|------|------|-------------|-------------|-----|-------------|
    
-    where:
+* where:
     
     * 'Date': Fixed string
     * 'Hour': Fixed string
     * CGNDB_Site#: A 5-letter CGNDB code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson)
 
-    * **Data block**
+* **Data block**
   
-    Observations are provided with an accuracy of two decimal.
-   
-    Each line of a data block contains the following information:
+Observations are provided with an accuracy of two decimal. Each line of a data block contains the following information:
 
-    | YYYYY-MM-DD | hh | AQHI_Site1 | AQHI_Site2 | ... | AQHI_SiteN |
-    |-------------|----|------------|------------|-----|------------|
+| YYYYY-MM-DD | hh | AQHI_Site1 | AQHI_Site2 | ... | AQHI_SiteN |
+|-------------|----|------------|------------|-----|------------|
 
-    where:
+* where:
 
     * YYYYY: The year of observation.
     * MM: The month of observation.
@@ -161,28 +160,29 @@ A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_d
     
 Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.
 
-* **CSV files with AQHI observations calculated from backfilled or corrected data** (only files in "MONTHLY" format) :
+* **CSV files with AQHI observations calculated from backfilled or corrected data** (only files in "MONTHLY" format):
 
-   These products have the same description as for the "MONTHLY" files provided in 2.1.1. However, the content is different in that the AQHI values are calculated 48 hours after the validity time for allow the arrival of missing data and corrections for pollutants. 
+These products have the same description as for the "MONTHLY" files provided in 2.1.1. However, the content is different in that the AQHI values are calculated 48 hours after the validity time for allow the arrival of missing data and corrections for pollutants. 
 
 * **CSV files with public AQHI forecasts** (only "MONTHLY" files) :
 
     * **Header**
   
-    The header is given on the first line and contains the following information:
+The header is given on the first line and contains the following information:
 
-    | cgndb code | community name | issue date | issue time | period | period | value | amended |
-    |------------|----------------|------------|------------|--------|--------|-------|---------|
+| cgndb code | community name | issue date | issue time | period | period | value | amended |
+|------------|----------------|------------|------------|--------|--------|-------|---------|
 
-    where the values are all the symbols that describe the content of the following lines.
+where the values are all the symbols that describe the content of the following lines.
 
-    * **Data block**
+* **Data block**
   
-    Public forecasts are provided in whole numbers.
+Public forecasts are provided in whole numbers.
    
-    | CGNDBcode | CommunityName | IssueDate | IssueTime | ForecastPeriod | Value | AmendmentFlag |
-    |-----------|---------------|-----------|-----------|----------------|-------|---------------|
-    where:
+| CGNDBcode | CommunityName | IssueDate | IssueTime | ForecastPeriod | Value | AmendmentFlag |
+|-----------|---------------|-----------|-----------|----------------|-------|---------------|
+
+* where:
    
     * CGNDBcode: a 5-character code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
     * CommunityName: the name used to identify the [community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) associated with the CGNDB code, for which the forecast is valid,
@@ -194,49 +194,48 @@ Note: For real-time files, AQHI observations cover the latest seven days with th
     * Value: value of the AQHI forecast for the forecast period in question,
     * AmendmentFlag: integer with a value of 0 for the first emission of the forecast and which is incremented by +1 for each subsequent amendment.       
 
-Note: In these "MONTHLY" files, AQHI public forecasts are written with the most recent issue
-(at the end of the month) in the first line and they proceed to move back in time to the first issue (at the beginning of the month) in the last line. They are available on the MSC Datamart for a period of 12 months.
+Note: In these "MONTHLY" files, AQHI public forecasts are written with the most recent issue (at the end of the month) in the first line and they proceed to move back in time to the first issue (at the beginning of the month) in the last line. They are available on the MSC Datamart for a period of 12 months.
 
-* **CSV files that contain model data** :
+* **CSV files that contain model data**:
  
     * **Header**
-  
-    The header is given on the first line and contains the following information :
 
-    1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):
+The header is given on the first line and contains the following information :
+
+1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):
     
-    | stationId | forecast date (time 0) | forecast date (time 1) | ... | forecast date (time48) |
-    |-----------|------------------------|------------------------|-----|------------------------|
+| stationId | forecast date (time 0) | forecast date (time 1) | ... | forecast date (time48) |
+|-----------|------------------------|------------------------|-----|------------------------|
 
-    2) For files that contain AQHI data:
+2) For files that contain AQHI data:
     
-    | cgndb | forecast date (hour0) | forecast date (hour1) | ... | forecast date (hour47) | forecast date (hour48) |
-    |-------|-----------------------|-----------------------|-----|------------------------|------------------------|
+| cgndb | forecast date (hour0) | forecast date (hour1) | ... | forecast date (hour47) | forecast date (hour48) |
+|-------|-----------------------|-----------------------|-----|------------------------|------------------------|
 
-    where:
+* where:
     
     * "stationId" is a symbol that states that the values in the first column identify stations in the region of interest;
     * "cgndb" is a symbol that states that the values in the first column identify the [communities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) in the region of interest;
     * The 49 values following stationId are the dates (format=YYYYYMMDDhh) that define the forecast time (H+000 to H+048) of the model and are applicable to all stations.
     
-    * **Data block**
+* **Data block**
  
-    Model data for all species are provided to 2 decimal.
+Model data for all species are provided to 2 decimal.
    
-    Each line of a data block contains the following information:
+Each line of a data block contains the following information:
 
-    1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):
+1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):
 
-    | StationID | Value (H+000) | Value (H+001) | ... | Value (H+047) | Value (H+048) |
-    |-----------|---------------|---------------|-----|---------------|---------------|
+| StationID | Value (H+000) | Value (H+001) | ... | Value (H+047) | Value (H+048) |
+|-----------|---------------|---------------|-----|---------------|---------------|
 
-    2) For files that contain AQHI data:
+2) For files that contain AQHI data:
    
-    | StationID | Value (H+000) | Value (H+001) | ... | Value (H+047) | Value (H+048) |
-    |-----------|---------------|---------------|-----|---------------|---------------|
+| StationID | Value (H+000) | Value (H+001) | ... | Value (H+047) | Value (H+048) |
+|-----------|---------------|---------------|-----|---------------|---------------|
 
-    where :
-   
+* where:
+
     * StationID: NAPS ID that identifies the observation station to which the model data is provided.
     * CGNDBcode: a 5-character code that identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). A list of CGNDB codes is given at the end of this file.
     * Value (H+000 to H+048): model value derived at the observation station (for UMOSAQ) or interpolated at the observation station (for AQFM, UMOSAQMIST). 
@@ -248,6 +247,7 @@ Note: In these "MONTHLY" files, AQHI public forecasts are written with the most 
 * In the CSV files for the AQHI, the value of the first hour is always missing because the AQHI formula requires a minimum of two hours in the last 3 hours to calculate moving averages.
 
 * In CSV files for UMOSAQ, it is possible that some values are missing since UMOS guidance may not be available for all hours. The availability of UMOS guidance for a specfic hour is dependent upon having sufficient historical data to be able to generate reliable predictive statistical equations.
+
 * Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.weather.gc.ca/air_quality/aqhi/que/observation/](https://dd.weather.gc.ca/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
@@ -257,5 +257,3 @@ If you have any questions about these data, please contact us at: ec.dps-client.
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available via the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) list
-
-

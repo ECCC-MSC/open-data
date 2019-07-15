@@ -39,38 +39,20 @@ Les [métadonnées d'observations et prévisions qui sont générés pour le pro
 
 ## Partenaires
 
-Le programme CAS est un partenariat conjoint d'Environnement et Changement climatique Canada , Santé Canada, et les agences
-agences provinciaux/municipaux/ONG suivants:
+Le programme CAS est un partenariat conjoint d'Environnement et Changement climatique Canada, Santé Canada, et les agences provinciaux/municipaux/ONG suivants :
 
-* Les ministères de l'Environnement et Ressources naturelles et de la Services sociaux du Gouvernement 
-des Territoires du Nord-Ouest.
+* Les ministères de l'Environnement et Ressources naturelles et de la Services sociaux du Gouvernement des Territoires du Nord-Ouest.
 * Le gouvernement du Nunavut.
-* The B.C. Ministry of Environment, the B.C. Ministry of Healthy Living and Sport, the B.C. Ministry
-of Health Services, Metro Vancouver, the B.C. Lung Association, the Fraser Valley Regional District,
-Interior Health Authority, Thompson Nicola Regional District, the City of Kamloops, Regional District
-of Okanagan-Similkameen, the City of Vernon, the City of Kelowna, the Capital Regional District,
-Resort Municipality of Whistler, and the Municipality of Williams Lake.
+* The B.C. Ministry of Environment, the B.C. Ministry of Healthy Living and Sport, the B.C. Ministry of Health Services, Metro Vancouver, the B.C. Lung Association, the Fraser Valley Regional District, Interior Health Authority, Thompson Nicola Regional District, the City of Kamloops, Regional District of Okanagan-Similkameen, the City of Vernon, the City of Kelowna, the Capital Regional District, Resort Municipality of Whistler, and the Municipality of Williams Lake.
 * Alberta Environment and Water and Alberta Health and Wellness.
 * Saskatchewan Ministry of the Environment et Saskatchewan Ministry of Health.
 * La Vie Saine Manitoba, Manitoba Conservation, the Lung Association, Manitoba.
-* Le ministère de l'Environnement de l'Ontario, le ministère de la Santé et des Soins de longue durée
-de l'Ontario, Peel Public Health, Halton Region Health Department, Hamilton Public Health Services,
-York Region's Community and Health Services Department, Durham Region Health Department, Santé publique
-Ottawa, Toronto Public Health et Clean Air Partnership.
-* Le ministère du Développement durable, de l'Environnement, de la Faune et des Parcs du Québec, le
-ministère de la Santé et des Services sociaux, l'Institut national de santé publique du Québec et la
-Direction de santé publique de la Capitale-Nationale, la Direction de la santé publique de l'Outaouais,
-la Direction de santé publique de l'Agence de la santé et des services sociaux de Montréal et la ville
-de Montréal.
-* Le ministère de la Santé et le ministère de l'Environnement du Nouveau-Brunswick, et l'Association pulmonaire
-du Nouveau-Brunswick.
-* Le ministère de l'Environnement, du travail et de la justice de l'Île-du-Prince-Édouard, et le ministère de la
-Santé et du Mieux-être de l'Île-du-Prince-Édouard en partenariat avec l'Association pulmonaire de l'Île-du-
-Prince-Édouard.
-* Le ministère de l'Environnement de la Nouvelle-Écosse, le ministére de la Santé et du Mieux-être de la
-Nouvelle-Écosse, l'Association pulmonaire de la Nouvelle-Écosse et Clean Nova Scotia.
-* Le ministère de l'Environnement et de la Conservation de Terre-Neuve-et-Labrador, et le ministère de la
-Santé et des Services communautaires de Terre-Neuve-et-Labrador.
+* Le ministère de l'Environnement de l'Ontario, le ministère de la Santé et des Soins de longue durée de l'Ontario, Peel Public Health, Halton Region Health Department, Hamilton Public Health Services, York Region's Community and Health Services Department, Durham Region Health Department, Santé publique Ottawa, Toronto Public Health et Clean Air Partnership.
+* Le ministère du Développement durable, de l'Environnement, de la Faune et des Parcs du Québec, le ministère de la Santé et des Services sociaux, l'Institut national de santé publique du Québec et la Direction de santé publique de la Capitale-Nationale, la Direction de la santé publique de l'Outaouais, la Direction de santé publique de l'Agence de la santé et des services sociaux de Montréal et la ville de Montréal.
+* Le ministère de la Santé et le ministère de l'Environnement du Nouveau-Brunswick, et l'Association pulmonaire du Nouveau-Brunswick.
+* Le ministère de l'Environnement, du travail et de la justice de l'Île-du-Prince-Édouard, et le ministère de la Santé et du Mieux-être de l'Île-du-Prince-Édouard en partenariat avec l'Association pulmonaire de l'Île-du-Prince-Édouard.
+* Le ministère de l'Environnement de la Nouvelle-Écosse, le ministére de la Santé et du Mieux-être de la Nouvelle-Écosse, l'Association pulmonaire de la Nouvelle-Écosse et Clean Nova Scotia.
+* Le ministère de l'Environnement et de la Conservation de Terre-Neuve-et-Labrador, et le ministère de la Santé et des Services communautaires de Terre-Neuve-et-Labrador.
 
 ## Documentation technique
 
@@ -80,5 +62,3 @@ Santé et des Services communautaires de Terre-Neuve-et-Labrador.
 ## Registre des changements 
 
 La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
-
-

@@ -15,7 +15,7 @@ The formulation of the AQHI may change over time to reflect new understanding as
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [CSV data for AQHI, available on the MSC Datamart](readme_aqhi-datamartcsv_en.md), including chemical species forecast data from numerical air quality models
 * [XML data for AQHI, available on the MSC Datamart](readme_aqhi-datamartxml_en.md) 
@@ -42,34 +42,20 @@ The [metadata of the Air Quality Health Index (AQHI) observation and forecast ar
 The national AQHI program is a joint partnership involving Environment and Climate Change Canada, Health Canada, and the
 following provincial/municipal/NGO agencies:
 
-* The Government of the Northwest Territories Departments of Environment and Natural Resources and 
-Health and Social Services.
+* The Government of the Northwest Territories Departments of Environment and Natural Resources and Health and Social Services.
 * The Government of Nunavut
-* The B.C. Ministry of Environment, the B.C. Ministry of Healthy Living and Sport, the B.C. Ministry
-of Health Services, Metro Vancouver, the B.C. Lung Association, the Fraser Valley Regional District,
-Interior Health Authority, Thompson Nicola Regional District, the City of Kamloops, Regional District
-of Okanagan-Similkameen, the City of Vernon, the City of Kelowna, the Capital Regional District,
-Resort Municipality of Whistler, and the Municipality of Williams Lake.
+* The B.C. Ministry of Environment, the B.C. Ministry of Healthy Living and Sport, the B.C. Ministry of Health Services, Metro Vancouver, the B.C. Lung Association, the Fraser Valley Regional District, Interior Health Authority, Thompson Nicola Regional District, the City of Kamloops, Regional District of Okanagan-Similkameen, the City of Vernon, the City of Kelowna, the Capital Regional District, Resort Municipality of Whistler, and the Municipality of Williams Lake.
 * Alberta Environment and Water and Alberta Health and Wellness.
 * The Saskatchewan Ministry of Environment and the Saskatchewan Ministry of Health.
 * Manitoba Health, Manitoba Healthy Living, Manitoba Conservation, and The Lung Association, Manitoba.
 * The Ontario Ministry of the Environment, the Ontario Ministry of Health and Long-Term Care, Peel Public
 Health, Halton Region Health Department, Hamilton Public Health Services, York Region's Community and
-Health Services Department, Durham Region Health Department, Ottawa Public Health, Toronto Public Health
-and the Clean Air Partnership.
-* The Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs du Québec, the
-Ministère de la Santé et des Services sociaux, the Institut national de santé publique du Québec and the
-Direction de santé publique de la Capitale-Nationale, la Direction de la santé publique de l'Outaouais,
-the Direction de santé publique de l'Agence de la santé et des services sociaux de Montréal and the City
-of Montréal.
-* The New Brunswick Department of Health and Department of Environment in partnership with the New
-Brunswick Lung Association.
-* The Prince Edward Island Department of Environment, Labour and Justice, and the Prince Edward Island
-Department of Health and Wellness in partnership with the Prince Edward Island Lung Association.
-* Nova Scotia Environment, and The Nova Scotia Department of Health and Wellness in partnership with the
-Lung Association of Nova Scotia and Clean Nova Scotia.
-* Environment and Conservation, Newfoundland and Labrador and Health and Community Services, Newfoundland
-and Labrador.
+Health Services Department, Durham Region Health Department, Ottawa Public Health, Toronto Public Health and the Clean Air Partnership.
+* The Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs du Québec, the Ministère de la Santé et des Services sociaux, the Institut national de santé publique du Québec and the Direction de santé publique de la Capitale-Nationale, la Direction de la santé publique de l'Outaouais, the Direction de santé publique de l'Agence de la santé et des services sociaux de Montréal and the City of Montréal.
+* The New Brunswick Department of Health and Department of Environment in partnership with the New Brunswick Lung Association.
+* The Prince Edward Island Department of Environment, Labour and Justice, and the Prince Edward Island Department of Health and Wellness in partnership with the Prince Edward Island Lung Association.
+* Nova Scotia Environment, and The Nova Scotia Department of Health and Wellness in partnership with the Lung Association of Nova Scotia and Clean Nova Scotia.
+* Environment and Conservation, Newfoundland and Labrador and Health and Community Services, Newfoundland and Labrador.
 
 ## Technical documentation
 

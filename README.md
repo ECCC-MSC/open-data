@@ -123,6 +123,8 @@ Given we use mkdocs to style the documentation, extra care is required when crea
 * Lists:
     * Lists must begin with an empty line before the initial bullet `*`
     * The second level of lists must begin with 4 spaces before the `*`
+* Spaces:
+    * Do not begin a line with spaces, otherwise this line will be interpreted as a text/code block
 
 ## Images in the documentation
 

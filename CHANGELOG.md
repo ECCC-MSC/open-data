@@ -9,7 +9,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 # Changelog
 
 2.0.2
-* date: PLANNED FOR 2019-07-19
+* date: 2019-07-15
 * announcements:
     * not announced to users
 * new content:

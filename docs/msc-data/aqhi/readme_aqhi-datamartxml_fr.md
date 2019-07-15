@@ -47,7 +47,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
     * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
     * __Copie du fichier d'observation le plus récent__ : AQ_OBS_CGNDBcode_CURRENT.xml
     
-    où :
+* où :
         
     * __'AQ_OBS'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
     * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
@@ -59,11 +59,11 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * **Prévisions publiques** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
 
-    * __Standard__:        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
+    * __Standard__ :        AQ_FCST_CGNDBcode_AAAAMMJJhhmm.xml
     * __Amendements__ :     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
     * Copie du fichier de prévision le plus récent: AQ_FCST_CGNDBcode_CURRENT.xml )
 
-    où :
+* où :
 
     * __'AQ_FCST'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
     * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
@@ -76,10 +76,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 ## Notes
 
-* Les fichiers XML pour observations sont produits aux heures, environ 40 minutes après l'heure.
-Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures. Les fichiers XML pour les
-prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. Ils sont
-disponibles sur le Datamart du SMC pour une période de 48 heures.
+* Les fichiers XML pour observations sont produits aux heures, environ 40 minutes après l'heure. Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures. Les fichiers XML pour les prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures.
 
 * Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/) . Cependant, le Minsitère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
