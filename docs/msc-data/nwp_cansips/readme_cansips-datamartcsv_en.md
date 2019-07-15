@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CanSIPS](readme_cansips_en.md) > CanSIPS on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CanSIPS](readme_cansips_en.md) > CanSIPS data in CSV on MSC Datamart
 
 # Canadian Seasonal to Inter-annual Prediction System (CanSIPS) Data in CSV Format
 
