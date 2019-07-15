@@ -15,10 +15,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * none
 * improvements:
-    * none
+    * several formatting fixes
 * bug fixes:
+    * fixed breadcrumbs for MSC Datamart subpages
     * fixed broken menu anchors in docs/msc-geomet/web-services_fr.md
-
+    * typos
+    
 2.0.1
 * date: 2019-07-12
 * announcements:
