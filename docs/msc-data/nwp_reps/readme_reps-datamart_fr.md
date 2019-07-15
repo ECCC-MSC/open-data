@@ -16,9 +16,10 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleTypeDonnee/HH/hhh
+[https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleTypeDonnee/HH/hhh](https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleTypeDonnee/HH/hhh)
 
 où :
+
 * __EnsembleTypeDonnee__ : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres
 * __HH__ : Heure de la passe du modèle en TU
 * __hhh__ : Heure de la prévision
@@ -27,7 +28,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+![Grille du SRPE](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
 

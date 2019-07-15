@@ -6,7 +6,7 @@
 
 # Regional Ensemble Prediction System (REPS) Data in GRIB2 Format
 
-This page describes the [regional ensemble prediction system](readme_reps_en.md) data available in GRIB2 format.
+This page describes the [Regional Ensemble Prediction System](readme_reps_en.md) data available in GRIB2 format.
 
 # Data location
 
@@ -14,11 +14,12 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs :
+The data can be accessed at the following URLs:
 
-https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleDataType/HH/hhh
+[https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleDataType/HH/hhh](https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/EnsembleDataType/HH/hhh)
 
 where :
+
 * __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
 * __HH__ : Forecast run hour in UTC
 * __hhh__ : Forecast time
@@ -27,9 +28,9 @@ A 24-hour history is stored in this directory.
 
 ## Technical specification of the grid
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+![REPS grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
 
-Values given to the parameters of the stereographic polar grid :
+Values given to the parameters of the stereographic polar grid:
 
 | Parameter | Value |
 | ------ | ------ |
@@ -41,13 +42,13 @@ Values given to the parameters of the stereographic polar grid :
 
 ## File name nomenclature 
 
-NOTE : ALL HOURS ARE IN UTC.
+NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature :
+The files have the following nomenclature:
 
 CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
 
-where :
+where:
 
 * __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
 * __Variable__ : Variable name (ex: WIND) 
@@ -90,7 +91,7 @@ The variables for the ensemble products available in the GRIB2 files are listed 
 * __WIND-Max-12h_TGL_10m__ :   Wind speed 10m above ground - Maximum over 12h period : 12-72h every 12h
 * __WIND_TGL_10m__ :           Wind speed 10m above ground : 3-72h every 3h
                                                                                   
-The GRIB2 files variables for individual members are the following. The variables are avialable from 0 to 72h every 3h:
+The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h every 3h:
 
 * __AFRAIN_SFC_0__ :     Accumulated precipitation in the form of freezing rain
 * __ARAIN_SFC_0__ :      Accumulated precipitation in the form of rain 
