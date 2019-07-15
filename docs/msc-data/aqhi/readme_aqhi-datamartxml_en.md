@@ -44,35 +44,35 @@ NOTE : ALL HOURS ARE IN UTC.
 
 * **Observations** (Note: monthly summary XML files are not yet available)
 
-  * Hourly file: AQ_OBS_CGNDBcode_YYYYMMDDhhmm.xml
-  * Copy of the most recent real-time observation file: AQ_OBS_CGNDBcode_CURRENT.xml
+    * Hourly file: AQ_OBS_CGNDBcode_YYYYMMDDhhmm.xml
+    * Copy of the most recent real-time observation file: AQ_OBS_CGNDBcode_CURRENT.xml
 
-where :
+    where :
 
-* __'AQ_OBS'__ : Filename prefix. Constant string.
-* __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-* __YYYY__ : Year of the observation, 4 digits.
-* __MM__ : Month of the observation, 2 digits (January = 01).
-* __DD__ : Day of the observation, 2 digits.
-* __hh__: Hour of the observation, 2 digits.
-* __mm__ : Minute of the observation, 2 digits.
+    * __'AQ_OBS'__ : Filename prefix. Constant string.
+    * __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+    * __YYYY__ : Year of the observation, 4 digits.
+    * __MM__ : Month of the observation, 2 digits (January = 01).
+    * __DD__ : Day of the observation, 2 digits.
+    * __hh__: Hour of the observation, 2 digits.
+    * __mm__ : Minute of the observation, 2 digits.
 
 * **Public forecasts** (Note: monthly summary XML files are not yet available) :
     * __Regular issue__ :     AQ_FCST_CGNDBcode_YYYYMMDDhhmm.xml
     * __Amended forecasts__ : AQ_FCST_CGNDBcode_YYYYMMDDhhmm_AMD.xml
     * __Copy of the most recent real-time forecast file__ : AQ_FCST_CGNDBcode_CURRENT.xml
    
-where :
-
-* __'AQ_FCST'__ :  Filename prefix. Constant string.
-* __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-* __YYYY__ : Year of the forecast issue time, 4 digits.
-* __MM__ : Month of the forecast issue time, 2 digits (January = 01).
-* __DD__ : Day of the forecast issue time, 2 digits.
-* __hh__ : Hour of the forecast issue time, 2 digits.
-* __mm__ : Minute of the forecast issue time, 2 digits.
-* __'AMD'__ : The suffix appended to the filename to indicate that the file is
-an amendment.
+    where :
+    
+    * __'AQ_FCST'__ :  Filename prefix. Constant string.
+    * __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+    * __YYYY__ : Year of the forecast issue time, 4 digits.
+    * __MM__ : Month of the forecast issue time, 2 digits (January = 01).
+    * __DD__ : Day of the forecast issue time, 2 digits.
+    * __hh__ : Hour of the forecast issue time, 2 digits.
+    * __mm__ : Minute of the forecast issue time, 2 digits.
+    * __'AMD'__ : The suffix appended to the filename to indicate that the file is
+    an amendment.
 
 ## Notes
 

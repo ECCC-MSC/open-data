@@ -18,11 +18,11 @@ Les données sont accessibles à adresse suivante :
 
 * Observations : 
 
-  * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml)
-  * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml)
-  * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml)
-  * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml)
-  * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml)
+    * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml)
+    * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml)
+    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml)
+    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml)
+    * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml)
     
 * Prévisions publiques : 
   
@@ -46,17 +46,16 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
        
     * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
     * __Copie du fichier d'observation le plus récent__ : AQ_OBS_CGNDBcode_CURRENT.xml
-
-où :
-
-* __'AQ_OBS'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
-* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-* __AAAA__ : Année de l'observation, 4 chiffres.
-* __MM__ : Mois de l'observation, 2 chiffres (janvier = 01).
-* __JJ__ : Jour de l'observation, 2 chiffres.
-* __hh__ : Heure de l'observation, 2 chiffres.
-* __mm__ : Minute de l'observation, 2 chiffres.
-
+    
+    où :
+        
+    * __'AQ_OBS'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
+    * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+    * __AAAA__ : Année de l'observation, 4 chiffres.
+    * __MM__ : Mois de l'observation, 2 chiffres (janvier = 01).
+    * __JJ__ : Jour de l'observation, 2 chiffres.
+    * __hh__ : Heure de l'observation, 2 chiffres.
+    * __mm__ : Minute de l'observation, 2 chiffres.
 
 * **Prévisions publiques** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
 
@@ -64,16 +63,16 @@ où :
     * __Amendements__ :     AQ_FCST_CGNDBcode_AAAAMMJJhhmm_AMD.xml
     * Copie du fichier de prévision le plus récent: AQ_FCST_CGNDBcode_CURRENT.xml )
 
-où :
+    où :
 
-* __'AQ_FCST'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
-* __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-* __AAAA__ : Année de l'émission, 4 chiffres.
-* __MM__ : Mois de l'émission, 2 chiffres (janvier = 01).
-* __JJ__ : Jour de l'émission, 2 chiffres.
-* __hh__ : Heure de l'émission, 2 chiffres.
-* __mm__ : Minute de l'émission, 2 chiffres.
-* __'AMD'__ :  Suffixe indiquant que le fichier est un amendement.
+    * __'AQ_FCST'__ : Le préfixe du nom de fichier. Chaîne de caractères constante.
+    * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+    * __AAAA__ : Année de l'émission, 4 chiffres.
+    * __MM__ : Mois de l'émission, 2 chiffres (janvier = 01).
+    * __JJ__ : Jour de l'émission, 2 chiffres.
+    * __hh__ : Heure de l'émission, 2 chiffres.
+    * __mm__ : Minute de l'émission, 2 chiffres.
+    * __'AMD'__ :  Suffixe indiquant que le fichier est un amendement.
 
 ## Notes
 
