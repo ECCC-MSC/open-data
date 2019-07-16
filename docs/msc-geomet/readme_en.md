@@ -50,8 +50,8 @@ GeoMet-Beta provides access to experimental and other non-operational data. This
 
 Service capabilities:
 
-* GeoMet-Beta WMS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0request=GetCapabilities)
-* GeoMet-Beta WCS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1request=GetCapabilities)
+* GeoMet-Beta WMS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
+* GeoMet-Beta WCS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities)
 
 
 ## Usage and technical documentation

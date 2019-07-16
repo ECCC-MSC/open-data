@@ -51,8 +51,8 @@ GeoMet-Beta donne accès à des données expérimentales et autres données non-
 
 Capacités de ce service :
 
-* L'URL WMS de GeoMet-Beta : [https://github.com/ECCC-CCCS/climate-data-extraction-tool](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0request=GetCapabilities)
-* L'URL WCS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1request=GetCapabilities)
+* L'URL WMS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
+* L'URL WCS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
 
 
 ## Utilisation et documentation technique
