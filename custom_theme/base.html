@@ -116,26 +116,12 @@
                         {%- if 'search' in config['plugins'] %}
                         <li>
                             <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
                             </a>
                         </li>
                         {%- endif %}
                       {%- endblock %}
 
-                      {%- block next_prev %}
-                        {%- if page and (page.next_page or page.previous_page) %}
-                            <li {% if not page.previous_page %}class="disabled"{% endif %}>
-                                <a rel="next" {% if page.previous_page %}href="{{ page.previous_page.url|url }}"{% endif %}>
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li {% if not page.next_page %}class="disabled"{% endif %}>
-                                <a rel="prev" {% if page.next_page %}href="{{ page.next_page.url|url }}"{% endif %}>
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                        {%- endif %}
-                      {%- endblock %}
 
                       {%- block repo %}
                         {%- if page and page.edit_url %}
