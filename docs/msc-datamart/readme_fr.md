@@ -41,8 +41,7 @@ Une conséquence directe de cette hiérarchie par date, concerne la période de 
 
 L'accès aux données via le protocole AMQP est évidemment fortement conseillé.
 
-Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur 
-alternatif de développer la capacité de retourner rapidement sur le serveur [https: //dd.meteo.gc.ca](https: //dd.meteo.gc.ca) , en cas de problèmes.
+Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur alternatif de développer la capacité de retourner rapidement sur le serveur [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca), en cas de problèmes.
 
 ## Formats de données
 
@@ -76,4 +75,3 @@ Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'anno
 ## Soutien
 
 Le serveur Datamart du SMC est opérationnel 24/7. Le soutien aux utilisateurs est fourni dans la mesure du possible pendant les heures normales de bureau. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
-
