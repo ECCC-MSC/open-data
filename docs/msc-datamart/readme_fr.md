@@ -17,7 +17,7 @@ Le Datamart du SMC se trouve à l'adresse [https://dd.weather.gc.ca/](https://dd
 
 ### Notifications en temps réel et récupération des données
   
-Afin de faciliter l'extraction de données à jour sur le Datamart du SMC, le Service météorologique du Canada (SMC) a mis en place un fil de données pour annoncer la disponibilité des fichiers sur le Datamart du SMC. Ce fil de données utilise le protocole AMQP (Advanced Message Queuing Protocol). Cela permet non seulement à l'utilisateur d'être informé des produits disponibles au fur et à mesure qu'ils sont publiés, mais aussi de les recevoir automatiquement.
+Afin de faciliter l'extraction de données à jour sur le Datamart du SMC, le Service météorologique du Canada (SMC) a mis en place un fil de données pour annoncer la disponibilité des fichiers sur le Datamart du SMC. Ce fil de données utilise le protocole __AMQP (Advanced Message Queuing Protocol)__. Cela permet non seulement à l'utilisateur d'être informé des produits disponibles au fur et à mesure qu'ils sont publiés, mais aussi de les recevoir automatiquement.
 
 Le service peut filtrer des ensembles spécifiques de fichiers (alertes météo, observations, données de modèles, etc.), permettant des notifications uniquement pour les produits d'intérêt pour l'utilisateur.
 
@@ -25,11 +25,11 @@ C'est la méthode recommandée pour récupérer les données du Datamart du SMC.
 
 La documentation de ce service se trouve sur la documentation [MSC Datamart AMQP documentation](amqp_fr.md).
   
-Note: Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
+__Note__: Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
 
-#### Méthode d'accès supplémentaire
+### Méthode d'accès supplémentaire
 
-Depuis le printemps 2019, un serveur alternatif HPFX d'accès aux données du Datamart du SMC est disponible pour contourner d'éventuels enjeux de bande passante. 
+Depuis le printemps 2019, un __serveur alternatif HPFX__ d'accès aux données du Datamart du SMC est disponible pour contourner d'éventuels enjeux de bande passante. 
 
 Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).
 
@@ -63,7 +63,7 @@ Des informations sur l'utilisation de ces services et des exemples sont disponib
 
 Le SMC doit faire preuve de souplesse dans la façon dont il offre des données spécialisées aux utilisateurs intéressés. Par conséquent, nous devons être en mesure de mettre à jour ou de modifier les formats ou les offres de données en temps opportun, car la technologie, les normes et les innovations changent continuellement. Cependant, nous ferons de notre mieux pour informer nos utilisateurs à l'avance des changements à venir. 
 
-Ainsi, aussi souvent que possible, nous utiliserons le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, pour déposer des échantillons des nouvelles données modifiées afin d'aider nos utilisateurs à adapter leurs applications. 
+Ainsi, aussi souvent que possible, nous utiliserons le __serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC__, pour déposer des échantillons des nouvelles données modifiées afin d'aider nos utilisateurs à adapter leurs applications. 
 
 Le serveur DD-Alpha se trouve à l'adresse [http://dd.alpha.weather.gc.ca/](http://dd.alpha.weather.gc.ca/).
 
