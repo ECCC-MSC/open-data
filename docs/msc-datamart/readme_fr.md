@@ -25,11 +25,24 @@ C'est la méthode recommandée pour récupérer les données du Datamart du SMC.
 
 La documentation de ce service se trouve sur la documentation [MSC Datamart AMQP documentation](amqp_fr.md).
   
-#### Méthodes d'accès supplémentaires
+Note: Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
 
-Un serveur alternatif au Datamart du SMC est disponible, veuillez vous référer à [l'annonce pour plus de détails](https://lists.ec.gc.ca/pipermail/dd_info/2019-April/000329.html).
+#### Méthode d'accès supplémentaire
 
-Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
+Depuis le printemps 2019, un serveur alternatif HPFX d'accès aux données du Datamart du SMC est disponible pour contourner d'éventuels enjeux de bande passante. 
+
+Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).
+
+L'adresse de ce serveur HTTP est la suivante : [http://hpfx.collab.science.gc.ca/](http://hpfx.collab.science.gc.ca/)
+
+Alimenté des divers sources de données via Sarracenia, l'arborescence des répertoires est modifiée par rapport à celle disponible sur le Datamart du SMC, avec présence de la date ce qui rend ces répertoires dynamiques et non plus statiques.
+
+Une conséquence directe de cette hiérarchie par date, concerne la période de rétention des données qui devient identique pour tous les jeux de données et fonction de l'espace disque disponible.
+
+L'accès aux données via le protocole AMQP est évidemment fortement conseillé.
+
+Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur 
+alternatif de développer la capacité de retourner rapidement sur le serveur [https: //dd.meteo.gc.ca](https: //dd.meteo.gc.ca) , en cas de problèmes.
 
 ## Formats de données
 
