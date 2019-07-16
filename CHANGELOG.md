@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+2.0.3
+* date: 2019-07-19
+* announcements:
+    * not announced to users
+* new content:
+    * none
+* improvements:
+    * several formatting fixes
+    * Search menu and modal now available in French as well
+* bug fixes:
+    * fixed GeoMet-Beta broken links
+    * typos
+
 2.0.2
 * date: 2019-07-15
 * announcements:
