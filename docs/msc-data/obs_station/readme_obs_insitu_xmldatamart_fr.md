@@ -31,6 +31,7 @@ Les données sont disponibles à cette adresse :
 https://dd.weather.gc.ca/observations/xml/PC/TYPE
 
 où :
+
 * **PC** : Code de 2 lettres pour la province ou le territoire couvert par ces observations. Ce code peut prendre une de ces 13 valeurs:
     * AB (Alberta)
     * BC (Colombie-Britannique)
@@ -121,6 +122,7 @@ Le sommaire pour aujourd'hui commence à accumuler les max/min pour chaque stati
 Comme certaines stations ne rapportent que pendant certaines heures de la journée, les valeurs pour ces stations sont parfois vides au début de la journée climatique. 
 
 Ce fichier contient pour la province ou le territoire :
+
 * L'endroit et la température la plus froide au Canada jusqu'à maintenant pour ce jour climatique.
 * L'endroit et la température la plus chaude au Canada jusqu'à maintenant pour ce jour climatique.
 * L'endroit et la température la plus froide dans la province ou le territoire jusqu'à maintenant pour ce jour climatique.
