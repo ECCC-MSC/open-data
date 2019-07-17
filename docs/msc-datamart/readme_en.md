@@ -36,7 +36,7 @@ A direct consequence of this date hierarchy is that the data retention period be
 
 Access to data via the AMQP protocol is of course strongly recommended.
 
-Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the [https://dd.meteo.gc.ca](http://hpfx.collab.science.gc.ca/) server in case of problems.
+Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca) server in case of problems.
 
 ## Data formats
 
