@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ### Metadata
 
-The [metadata of the weather forecasts per city are available on the Open Government Portal](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/eng/1f864766-7f7f-4be7-8292-295065c65c78?)
+The [metadata of the weather forecasts per city are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/1f864766-7f7f-4be7-8292-295065c65c78)
 
 ## Technical documentation
 

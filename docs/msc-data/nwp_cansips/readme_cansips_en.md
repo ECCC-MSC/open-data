@@ -26,7 +26,7 @@ Atmospheric models CanAM3 and CanAM4 are coupled to the oceanic model CanOM4 in 
 
 For a more detailed description of the models please visit this link :
 
-[http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1](http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=En&n=4A642EDE-1)
+[https://www.canada.ca/en/environment-climate-change/services/climate-change/science-research-data/modeling-projections-analysis/centre-modelling-analysis/models.html](https://www.canada.ca/en/environment-climate-change/services/climate-change/science-research-data/modeling-projections-analysis/centre-modelling-analysis/models.html)
 
 __CanSIPS forecast configuration__ :
 

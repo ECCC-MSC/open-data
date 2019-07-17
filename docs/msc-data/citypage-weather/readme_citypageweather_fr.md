@@ -27,7 +27,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-Les [métadonnées des prévisions météorologiques par ville sont disponibles sur le portail du gouvernement ouvert](http://donnees-data.intranet.ec.gc.ca/geonetwork/metadata/fre/1f864766-7f7f-4be7-8292-295065c65c78)
+Les [métadonnées des prévisions météorologiques par ville sont disponibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/1f864766-7f7f-4be7-8292-295065c65c78)
 
 ## Documentation technique
 

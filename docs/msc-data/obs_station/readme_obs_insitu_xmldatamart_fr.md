@@ -192,7 +192,7 @@ Il y a plus de 500 stations d'observation au Canada. Cependant, ce nombre est en
 ## Notes
 
 * Une [documentation complète pour la description XML de point d'observation météorologique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/Met-ML-SchemaDescriptionV2_f.pdf) est disponible. 
-* Pour qu'un record soit affiché, il doit y avoir au moins 15 années de données dans la base de données des archives climatiques tel que  mentionné sur leur site : [http://www.climate.weatheroffice.gc.ca/Welcome_f.html](http://www.climate.weatheroffice.gc.ca/Welcome_f.html)
+* Pour qu'un record soit affiché, il doit y avoir au moins 15 années de données dans la base de données des archives climatiques tel que  mentionné sur leur site : [http://climate.weather.gc.ca/historical_data/search_historic_data_f.html](http://climate.weather.gc.ca/historical_data/search_historic_data_f.html)
 * Les métadonnées des stations sont fournies en anglais ou en français.
 * Toute valeur inférieure à 0,05 est arrondie à 0,0
 * Toute valeur entre 0,05 et 0,1 est arrondie à 0,1

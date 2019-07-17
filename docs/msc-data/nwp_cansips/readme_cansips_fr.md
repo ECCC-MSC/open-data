@@ -26,7 +26,7 @@ Les modèles atmosphériques, CanAM3 et CanAM4, sont couplés avec le modèle oc
 
 Pour une description plus détaillée de ces modèles svp voir le lien :  
 
-http://www.ec.gc.ca/ccmac-cccma/default.asp?lang=Fr&n=4A642EDE-1
+[https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/recherche-donnees/modelisation-analyse-climatique/centre-modelisation-analyse/modeles.html](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/recherche-donnees/modelisation-analyse-climatique/centre-modelisation-analyse/modeles.html)
 
 __Configuration des prévisions SPISCan__ :
  
