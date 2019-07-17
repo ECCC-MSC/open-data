@@ -100,7 +100,7 @@ Since January, 13th 2016, a mask called "No-data" has been added to our GRIB2 en
 
 ## Online archives
 
-* An [ARDP data archive](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) since 6 April 2011 is available online in GRIB2 format. Note that contrary to what is indicated in the "About the No-Data mask" section above, the data available here were encoded with the mask over the entire period, not from 13 January 2016.
+* An [RDPA data archive](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) since 6 April 2011 is available online in GRIB2 format. Note that contrary to what is indicated in the "About the No-Data mask" section above, the data available here were encoded with the mask over the entire period, not from 13 January 2016.
 
 * An [archive of re-analyses](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/hindcast/), covering the period from January 2002 to June 2012, is available online in GRIB2 format.
 

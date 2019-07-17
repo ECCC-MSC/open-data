@@ -13,7 +13,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced to users
 * new content:
-    * none
+    * Direct mention of HPFX server in the MSC Datamart documentation
 * improvements:
     * several formatting fixes
     * Search menu and modal now available in French as well
