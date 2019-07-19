@@ -1,4 +1,4 @@
-[En Français](readme_geps-datamart_fr.md)
+[En français](readme_geps-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

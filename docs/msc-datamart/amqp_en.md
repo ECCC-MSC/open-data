@@ -1,4 +1,4 @@
-[En Français](amqp_fr.md)
+[En français](amqp_fr.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 

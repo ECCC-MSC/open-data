@@ -1,4 +1,4 @@
-[En Français](readme_alerts_fr.md)
+[En français](readme_alerts_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

@@ -1,4 +1,4 @@
-[En Français](readme_ahccd-datamart_fr.md)
+[En français](readme_ahccd-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

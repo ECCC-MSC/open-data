@@ -1,4 +1,4 @@
-[En Français](readme_obs_insitu_swobdatamart_fr.md)
+[En français](readme_obs_insitu_swobdatamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

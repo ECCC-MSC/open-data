@@ -1,4 +1,4 @@
-[En Français](readme_rdps-cgsl_fr.md)
+[En français](readme_rdps-cgsl_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

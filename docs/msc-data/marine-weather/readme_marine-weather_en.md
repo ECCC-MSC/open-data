@@ -1,4 +1,4 @@
-[En Français](readme_marine-weather_fr.md)
+[En français](readme_marine-weather_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

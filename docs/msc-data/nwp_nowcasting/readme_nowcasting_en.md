@@ -1,4 +1,4 @@
-[En Français](readme_nowcasting_fr.md)
+[En français](readme_nowcasting_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

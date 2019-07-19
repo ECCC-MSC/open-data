@@ -1,4 +1,4 @@
-[En Français](readme_meteocode-datamartcsv_fr.md)
+[En français](readme_meteocode-datamartcsv_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
