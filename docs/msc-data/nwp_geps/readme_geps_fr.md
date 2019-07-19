@@ -33,4 +33,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système global de prévision d'ensemble (SGPE) est disponible [ici](change-log_geps_fr.md).
