@@ -40,10 +40,12 @@ Files are stored on GCcode, in the public-doc repository: http://gccode.ssc-spc.
 Files in this repository:
 * README.md
     * This readme file!
-* [CHANGELOG.md](CHANGELOG.md)
-    * User-oriented list of what's new and what's changed for new public documentation versions
 * docs/
     * The actual documentation
+* docs-dev/
+    * Documentation pages in development and ignored during the deployment process
+* [CHANGELOG.md](CHANGELOG.md)
+    * User-oriented list of what's new and what's changed for new public documentation versions
 * scripts/
     * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * templates/
