@@ -1,4 +1,4 @@
-[En Français](readme_obs-vertical-pfl_fr.md)
+[En français](readme_obs-vertical-pfl_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

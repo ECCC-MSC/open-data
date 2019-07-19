@@ -1,4 +1,4 @@
-[En Français](readme_hrdpa-datamart_fr.md)
+[En français](readme_hrdpa-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

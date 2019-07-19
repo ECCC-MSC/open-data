@@ -1,4 +1,4 @@
-[En Français](readme_naefs-datamartxml_fr.md)
+[En français](readme_naefs-datamartxml_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

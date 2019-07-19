@@ -1,4 +1,4 @@
-[En Français](readme_geps_fr.md)
+[En français](readme_geps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

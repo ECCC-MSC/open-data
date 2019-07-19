@@ -1,4 +1,4 @@
-[En Français](readme_gdps_fr.md)
+[En français](readme_gdps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

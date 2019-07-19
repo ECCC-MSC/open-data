@@ -1,4 +1,4 @@
-[En Français](readme_cansips-datamartcsv_fr.md)
+[En français](readme_cansips-datamartcsv_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

@@ -1,4 +1,4 @@
-[En Français](readme_hydrometric_fr.md)
+[En français](readme_hydrometric_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

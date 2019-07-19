@@ -1,4 +1,4 @@
-[En Français](readme_nowcasting-datamart_fr.md)
+[En français](readme_nowcasting-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
