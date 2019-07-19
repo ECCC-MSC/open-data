@@ -33,4 +33,4 @@ Upcoming.
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [here](change-log_geps_en.md).
