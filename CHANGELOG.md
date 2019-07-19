@@ -8,7 +8,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-2.0.3
+## 2.0.4
+
+* date: PLANNED FOR 2019-07-19
+* announcements:
+    * not announced to users
+* new content:
+    * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * TBD
+
+## 2.0.3
+
 * date: 2019-07-19
 * announcements:
     * not announced to users
@@ -19,9 +32,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Search menu and modal now available in French as well
 * bug fixes:
     * fixed GeoMet-Beta broken links
+    * moved faq/ out of /docs given content showed up in search results
     * typos
 
-2.0.2
+## 2.0.2
+
 * date: 2019-07-15
 * announcements:
     * not announced to users
@@ -34,7 +49,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * fixed broken menu anchors in docs/msc-geomet/web-services_fr.md
     * typos
     
-2.0.1
+## 2.0.1
+
 * date: 2019-07-12
 * announcements:
     * not announced to users
@@ -46,7 +62,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * typos
 
-2.0
+## 2.0
+
 * date: 2019-07-05
 * announcements:
     * dd_info and GeoMet-Info lists
