@@ -211,8 +211,7 @@ The following instructions take the current documentation version from `https://
     2. Head to `http://127.0.0.1:8000` in a web browser
     3. Once validated, exit with control-c
 6. Deploy the documentation on GitHub:
-    1. Careful here... we might want to test with the deploy of version 2.0.3 if pull the gh-pages branch first and publishing without the `--force` works. As for `--ignore-version`, this clearly seems a mkdocs bug
-    2. Run `mkdocs gh-deploy --force --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
+    1. Run `mkdocs gh-deploy --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
 7. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
 8. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
 9. Prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
