@@ -15,59 +15,59 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont disponibles à l'adresse : https://dd.meteo.gc.ca.../HH/hhh/  (pour les données de modèle)
 
-où :
+* où :
 
-    HH : Heure UTC du début de la passe du modèle [00,]
-    hhh : Heure de prévision [000, ]
+    * HH : Heure UTC du début de la passe du modèle [00,]
+    * hhh : Heure de prévision [000, ]
 
 ## Spécification technique de la grille - *(pour les NWP seulement)*
 
-*Si pertinent, donner les desciptions des grilles sour forme de tableau, via WxO et au besoin des images des domaines. Les images devont être rassemblées sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc) et seulement référées ici via ![](adresse)*
+* Si pertinent, donner les desciptions des grilles sour forme de tableau, via WxO et au besoin des images des domaines. Les images devont être rassemblées sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc) et seulement référées ici via ![](adresse)
 
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
-Les noms des fichiers ont la forme: 
+Les noms des fichiers ont la forme : 
 YYYYYYYYYYYYYYYYYYYYYYYYYYY
 
-où:
+où :
 
 * ...
 * ...
 
-Exemple: 
+Exemple : 
+
 *Donner un exemple de noms de fichier typique*
 
 *Au besoin, décrire la nomenclature des éventuels multiples répertoires dans lesquels les fichiers pourraient se trouver (ex: https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE)*
 
 ## Niveaux  
 
-*Décrire la liste des niveaux disponibles, si pertinent (ne s’applique qu’aux jeux de données 3D)*
+* Décrire la liste des niveaux disponibles, si pertinent (ne s’applique qu’aux jeux de données 3D)*
 
 ## Contenu des fichiers - *vérifier si pertinent avec les README*
  
-*A confirmer si pertinent ou si l’info peut se retrouver egrainée ailleurs*
+* A confirmer si pertinent ou si l’info peut se retrouver egrainée ailleurs*
 
-*Décrire le contenu du fichier avec le plus de détails possible (ex: dans le cas des fichiers XML, décrire les en-têtes, les sections et les éléments).*
+* Décrire le contenu du fichier avec le plus de détails possible (ex: dans le cas des fichiers XML, décrire les en-têtes, les sections et les éléments).*
 
-*Lorsque s'applique, indiquer si les fichiers ont été compressés et avec quel utilitaire (ex: bzip2). Indiquer comment les décompresser.*
+* Lorsque s'applique, indiquer si les fichiers ont été compressés et avec quel utilitaire (ex: bzip2). Indiquer comment les décompresser.*
 
-*Lorsque s'applique, indiquer si les fichiers ont été encodés ou non, dans quel format et dans quel standard d'encodage (ex: UTF-8).*
+* Lorsque s'applique, indiquer si les fichiers ont été encodés ou non, dans quel format et dans quel standard d'encodage (ex: UTF-8).*
 
-*Au besoin, indiquer la précision des données.*
+* Au besoin, indiquer la précision des données.*
 
-*Inclure un lien vers la documentation du format si pertinent (ex: format GRIB).*
+* Inclure un lien vers la documentation du format si pertinent (ex: format GRIB).*
 
 ## Liste des variables
 
-Les variables disponibles de XXXXXX sont:
+Les variables disponibles de XXXXXX sont :
 
 * VAR_1 : Définition
 * VAR_2 : Définition
 * ...
 * ...
-*
 
 ## Support
 
@@ -76,4 +76,3 @@ Pour toute question relative à ces données, merci de nous contacter à l'adres
 ## Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
