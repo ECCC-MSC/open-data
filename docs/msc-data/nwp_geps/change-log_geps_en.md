@@ -8,7 +8,7 @@
 
 ## Wednesday July 3, 2019
 
-### Upgrade to Version 6.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+#### Upgrade to Version 6.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
 
 On Wednesday July 3rd 2019, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 6.0.0.
 
@@ -34,7 +34,7 @@ The technical specifications document of the GEPS 6.0.0 [is available at this li
 
 ## Tuesday September 18, 2018
 
-### Upgrade to Version 5.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+#### Upgrade to Version 5.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
 
 On Tuesday September 18th 2018, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 5.0.0.
 
@@ -66,7 +66,7 @@ The technical specifications document of the GEPS 5.0.0 [is available at this li
 
 ## Tuesday December 15, 2015
 
-### Upgrade to Version 4.1.1 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+#### Upgrade to Version 4.1.1 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
 
 On Tuesday December 15th 2015, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 4.1.1.
 
@@ -89,7 +89,7 @@ The technical specifications document of the GEPS 4.1.1 [is available at this li
 
 ## Tuesday November 18th 2014
 
-### Major Upgrade to the Global Ensemble Prediction System (GEPS) version 4.0.0 at the Canadian Meteorological Centre
+#### Major Upgrade to the Global Ensemble Prediction System (GEPS) version 4.0.0 at the Canadian Meteorological Centre
 
 On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 4.0.0.
 
@@ -111,7 +111,7 @@ A technical note on the improvements made to the reforecast system [is available
 
 ## Wednesday December 4th 2013
 
-### Major Upgrade to the Global Ensemble Prediction System (GEPS) version 3.1.0 at the Canadian Meteorological Centre
+#### Major Upgrade to the Global Ensemble Prediction System (GEPS) version 3.1.0 at the Canadian Meteorological Centre
 
 On Wednesday December 4th 2013, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 3.1.0.
 
@@ -132,7 +132,7 @@ A technical note with many more details on this change [is also available at thi
 
 ## Wednesday February 13, 2013
 
-### Major upgrade to the Global Ensemble Prediction System (GEPS) version 3.0.0 at the Canadian Meteorological Centre
+#### Major upgrade to the Global Ensemble Prediction System (GEPS) version 3.0.0 at the Canadian Meteorological Centre
 
 On Wednesday February 13th 2013, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 3.0.0.
 
