@@ -14,9 +14,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced to users
 * new content:
-    * Changelog integration for GEPS (and other datasets?)
+    * changelog integration for GEPS (and other datasets?)
 * improvements:
-    * TBD
+    * moved usage and tech doc higher in the main MSC GeoMet page
+    * shorten Search modal string to fit window
 * bug fixes:
     * formatting fixes
     * typos

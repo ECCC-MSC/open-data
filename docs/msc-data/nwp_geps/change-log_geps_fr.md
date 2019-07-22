@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPE](readme_geps_fr.md) > Changements au système opérationnel du Centre Météorologique Canadien (CMC) - SGPE
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPE](readme_geps_fr.md) > Changements au SGPE
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
@@ -10,18 +10,17 @@
 
 ### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 6.0.0) du Centre météorologique canadien (CMC)
 
-Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son système global de prévision d'ensemble (SGPE).
-Résumé des éléments majeurs que comporte cette mise à jour :
+Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :
 
 * Changements à la composante composante de prévision :
-    * Le modèle atmosphérique est mis à niveau vers la version GEM 4.8-LTS.16.
-    * Le modèle atmosphérique est couplé avec le modèle océanique NEMO 3.6.
+    * Le modèle atmosphérique est mis à niveau vers la version GEM 4.8-LTS.16
+    * Le modèle atmosphérique est couplé avec le modèle océanique NEMO 3.6
     * Les conditions initiales de l'océan et de la glace de mer proviennent de l'analyse du [SGPOG (mise à jour à la version 3.0.0 au même moment)](../nwp_giops/change-log_giops_fr.md) du CMC
-    * Conditions initiales de la surface terrestre proviennent d'une pseudo-analyse de surface qui est réalisée à une résolution de 25 km et avec des forçages de GEM 4.8.
+    * Conditions initiales de la surface terrestre proviennent d'une pseudo-analyse de surface qui est réalisée à une résolution de 25 km et avec des forçages de GEM 4.8
 * Changements à la composante d'assimilation :
     * La présente version intègre une configuration de gain hybride-cepmmt, qui recentre tous les membres d'ensemble autour de la moyenne des analyses FKEN et 4DENVAR
-    * On utilise une nouvelle analyse de la température de surface de la mer et de couverture de la glace de mer.
-    * Le nouveau FKEN assimile maintenant les données sur la dépression du point de rosée (t-td) obtenues par radiosonde jusqu'à 100 hpa au lieu de 200 hpa.
+    * On utilise une nouvelle analyse de la température de surface de la mer et de couverture de la glace de mer
+    * Le nouveau FKEN assimile maintenant les données sur la dépression du point de rosée (t-td) obtenues par radiosonde jusqu'à 100 hpa au lieu de 200 hpa
 
 
 Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281715___16589).
@@ -35,8 +34,7 @@ Le document des spécifications techniques du SGPE 6.0.0 [est disponible ici](ht
 
 ### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 5.0.0) du Centre météorologique canadien (CMC)
 
-Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système global de prévision d'ensemble (SGPE).
-Résumé des éléments majeurs que comporte cette mise à jour :
+Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :
 
 * Changements communs entre la composante d'assimilation et prévision
     * Mise à jour de la version du modèle GEM de la version 4.6.10 à 4.8.lts13:
@@ -90,13 +88,13 @@ Le document des spécifications techniques du GEPS 4.1.1 [est disponible ici](ht
 
 Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son système global de prévision d'ensemble (SGPE).
 
-Résumé des éléments majeurs que comporte cette mise à jour:
+Résumé des éléments majeurs que comporte cette mise à jour :
 
-* Couplage avec le 4D-EnVAR pour fournir les covariances d'erreur de prévisions.
-* La taille de l'ensemble du FKEn augmente de 192 à 256 membres.
-* La résolution horizontale du FKEn et de la prévision passe de 66km à 50 km.
-* Le pas de temps du modèle GEM passe de 20 à 15 minutes.
-* Le toit est plus haut à environ 1.45 hPa (1.78 hPa avant).
+* Couplage avec le 4D-EnVAR pour fournir les covariances d'erreur de prévisions
+* La taille de l'ensemble du FKEn augmente de 192 à 256 membres
+* La résolution horizontale du FKEn et de la prévision passe de 66km à 50 km
+* Le pas de temps du modèle GEM passe de 20 à 15 minutes
+* Le toit est plus haut à environ 1.45 hPa (1.78 hPa avant)
 * Changements à la correction de biais des observations et à l'opérateur RTTOV
 
 La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141746___01238).
@@ -119,6 +117,7 @@ Du coté de l’assimilation, les données de radiances ATOV et les vents polair
 Pour la prévision, le changement le plus important est dans le traitement de la température de surface de la mer (Tm). Dans le nouveau GEPS,  Tm  évoluera avec l’échéance temporelle de prévision en utilisant la méthode de la persistance de l’anomalie (écart avec la climatologie).  La valeur de Tm changera donc linéairement avec le temps (interpolation journalière) à partir de la valeur initiale de l’analyse du CMC vers la prochaine valeur de la climatologie de Tm à la moitié du mois, plus l'anomalie de Tm calculée initialement.
 
 Aussi, des prévisions mensuelles (32 jours) seront produites une fois par semaine chaque jeudi à 00z.  Bien que les données de ces prévisions seront disponibles avec cette mise en œuvre, l’introduction de produits spécifiques aux prévisions mensuelles n’est planifiée que pour plus tard en 2014.
+
 Un autre élément nouveau dans le SGPE 3.1.0 est l’ajout de prévisions d’ensemble historiques pour les derniers 18 ans qui seront produites à chaque semaine avec un ensemble réduit de 4 membres (au lieu de 20).  Les sorties de cette base de données de re-prévisions seront utilisées pour générer les statistiques du climat du modèle pour les prévisions mensuelles et,  éventuellement, pour calculer l’indice de prévision extrême (IPE, acronyme anglais EFI) ainsi que pour calibrer les prévisions probabilistes.
 
 La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2013/12/03/NOCN03_CWAO_032255___01160).
@@ -153,9 +152,3 @@ Grâace à des améliorations d'équipement ordinateur qui coincident avec cette
 La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/08/NOCN03_CWAO_081505___00885).
 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_geps300_20130213_f.pdf).
-
-
-
-
-
-
