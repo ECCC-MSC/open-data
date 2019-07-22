@@ -10,6 +10,14 @@
 Les services GeoMet du SMC rendent publiquement accessibles les données du Service météorologique du Canada (SMC) et d'Environnement et Changement climatique Canada (ECCC) via des services web interopérables et des interfaces de programme (API). Par le biais de standards ouverts, ces services donnent rapidement et gratuitement accès à des milliers de jeux de données et produits météorologiques qui peuvent être intégrés dans les applications spécifiques de l'usager et leurs systèmes d'aide à la décision. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que de visualiser et animer les données du SMC dans des logiciels de bureau. Les services GeoMet du SMC rendent également possible le découpage de données et la reprojection à la volée, tout autant que la conversion de formats et la visualisation personnalisée de couches de données.
 
 
+## Utilisation et documentation technique
+
+La documentation au sujet de l'utilisation de ces services et des exemples sont disponibles aux endroits suivants :
+
+* La [page de survol de l'utilisation des données](../usage/readme_fr.md)
+* La [documentation technique sur les services web géospatiaux](web-services_fr.md)
+
+
 ## Accès
 
 L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs) et [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES).
@@ -53,14 +61,6 @@ Capacités de ce service :
 
 * L'URL WMS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
 * L'URL WCS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
-
-
-## Utilisation et documentation technique
-
-La documentation au sujet de l'utilisation de ces services et des exemples sont disponibles aux endroits suivants :
-
-* La [page de survol de l'utilisation des données](../usage/readme_fr.md)
-* La [documentation technique sur les services web géospatiaux](web-services_fr.md)
 
 
 ## Liste d'information

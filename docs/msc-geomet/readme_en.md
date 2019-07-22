@@ -9,6 +9,15 @@
 
 The MSC GeoMet services provide public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of meteorological datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on-the-fly raw data clipping and reprojection, on-the-fly format conversion and custom visualization.
 
+
+## Usage and technical documentation
+
+Documentation on using these services and examples are available at the following locations:
+
+* [Usage overview page](../usage/readme_en.md)
+* [Technical documentation on geospatial web services](web-services_en.md)
+
+
 ## Access
 
 Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services. The supported geospatial web services are the following Open Geospatial Consortium (OGC) standards: [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs) and [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES).
@@ -52,14 +61,6 @@ Service capabilities:
 
 * GeoMet-Beta WMS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
 * GeoMet-Beta WCS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities)
-
-
-## Usage and technical documentation
-
-Documentation on using these services and examples are available at the following locations:
-
-* [Usage overview page](../usage/readme_en.md)
-* [Technical documentation on geospatial web services](web-services_en.md)
 
 
 ## Announcement mailing list
