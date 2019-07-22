@@ -10,15 +10,16 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.0.4
 
-* date: PLANNED FOR 2019-07-19
+* date: PLANNED FOR 2019-08-01
 * announcements:
     * not announced to users
 * new content:
-    * TBD
+    * Changelog integration for GEPS (and other datasets?)
 * improvements:
     * TBD
 * bug fixes:
-    * TBD
+    * formatting fixes
+    * typos
 
 ## 2.0.3
 
