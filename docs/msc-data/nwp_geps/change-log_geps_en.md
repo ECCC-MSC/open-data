@@ -1,8 +1,8 @@
-[En Français](change-log_geps_fr.md)
+[En français](change-log_geps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GEPS](readme_geps_en.md) > Changes to the Canadian Meteorological Centre (CMC) Operational System - GEPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GEPS](readme_geps_en.md) > GEPS Changelog
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
@@ -53,7 +53,7 @@ The changes included in this upgrade are summarized as follows:
 * Changes to the forecast component only:
     * The model has a higher top (from 2 hpa to 0.1 hpa) with 45 vertical levels instead of 41
     * New method to generate markov chains
-* Reforecats period updated from 1995-2014 to 1998-2017.
+* Reforecats period updated from 1995-2014 to 1998-2017
 * Products now available on a new user grid at a 25-km resolution
 
 
@@ -74,10 +74,10 @@ The changes included in this upgrade are summarized as follows:
 
 * Numerical diffusion of the potential temperature field is now applied for all ensemble members (rather than only half the members).
 * A damping gradient is applied to limit the diffusion of potential temperature near the poles.
-* New observation errors for radiance data and GPS Radio-Occultation (GPS-RO) observations.
-* Addition of radiance observations from the Advanced Microwave Sounding Unit (ATMS).
-* Addition of GPS-RO observations from the TanDEM and GRACE-B satellites.
-* The reforecast period is extended from 18 to 20 years.
+* New observation errors for radiance data and GPS Radio-Occultation (GPS-RO) observations
+* Addition of radiance observations from the Advanced Microwave Sounding Unit (ATMS)
+* Addition of GPS-RO observations from the TanDEM and GRACE-B satellites
+* The reforecast period is extended from 18 to 20 years
 
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142212___00073).
@@ -96,11 +96,10 @@ On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological
 Summary of the major changes included in this upgrade:
 
 * Coupling with 4D-EnVAR to provide background error covariances
-* Ensemble size of the EnKF increased from 192 to 256 members.
-* Reduction of the GEM model time step from 20 minutes to 15 minutes.
-* Model top raised from 1.78 hPa to 1.45 hPa.
-* Changes to observation bias correction and RTTOV operator.
-
+* Ensemble size of the EnKF increased from 192 to 256 members
+* Reduction of the GEM model time step from 20 minutes to 15 minutes
+* Model top raised from 1.78 hPa to 1.45 hPa
+* Changes to observation bias correction and RTTOV operator
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141745___01237).
 
@@ -157,8 +156,3 @@ Hardware improvements coinciding with this implementation will result in some pr
 A copy of the official note announcing the implementation of these changes along with information on verification work leading up to this implementation [is available at this link](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/08/NOCN03_CWAO_081500___00884).
 
 A technical note with many more details on this change [is also available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_geps300_20130213_e.pdf).
-
-
-
-
-
