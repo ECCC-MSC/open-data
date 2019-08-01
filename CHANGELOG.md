@@ -8,13 +8,25 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.0.4
+## 2.0.5
 
-* date: PLANNED FOR 2019-08-01
+* date: PLANNED FOR 2019-08-22
 * announcements:
     * not announced to users
 * new content:
-    * changelog integration for GEPS (and other datasets?)
+    * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * TBD
+
+## 2.0.4
+
+* date: 2019-08-01
+* announcements:
+    * not announced to users
+* new content:
+    * changelog integration for GEPS
 * improvements:
     * moved usage and tech doc higher in the main MSC GeoMet page
     * shorten Search modal string to fit window
