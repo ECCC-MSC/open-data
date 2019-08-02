@@ -57,4 +57,4 @@ Upcoming.
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS-CGSL) is available [here](changelog_rdps-cgsl_en.md).

@@ -34,4 +34,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système Canadien d'Analyse de Précipitation (CaPA) est disponible [ici](changelog_hrdpa_fr.md).

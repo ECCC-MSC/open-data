@@ -42,11 +42,3 @@ Information on CanSIPS and its products is also available [at the MSC public web
 
 Information is also avaialble in the CMC Product Guide at the following links: [Monthly forecasts page](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_monthly-temperature-anomalies_gen_e.html) and also on the [Multi-Season forecasts page](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_seasonal-forecasts_gen_e.html).
 
-
-
-
-
-
-
-
-

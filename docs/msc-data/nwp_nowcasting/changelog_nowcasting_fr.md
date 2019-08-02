@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Nowcasting](readme_nowcasting_fr.md) > Changements au système SIPI
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévision immédiate](readme_nowcasting_fr.md) > Changements au système SIPI
 
-# Chronologie des changements apportés au Système SIPI
+# Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)
 
 ## Le jeudi 09 juillet 2015
 

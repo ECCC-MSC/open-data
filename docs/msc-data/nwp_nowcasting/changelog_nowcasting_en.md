@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Nowcasting](readme_nowcasting_en.md) > Nowcasting Changelog
 
-# Chronology of changes to the Nowcast system
+# Chronology of changes to the Integrated Nowcasting System (INCS)
 
 ## Thursday July 09, 2015
 

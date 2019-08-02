@@ -34,4 +34,4 @@ The [metadata of the Regional Ensemble Prediction System are available on the Op
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Regional Ensemble Prediction System (REPS) is available [here](changelog_reps_en.md).
