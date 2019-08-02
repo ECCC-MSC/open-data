@@ -1,4 +1,4 @@
-[In English](change-log_geps_en.md)
+[In English](changelog_geps_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -15,7 +15,7 @@ Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre mété
 * Changements à la composante composante de prévision :
     * Le modèle atmosphérique est mis à niveau vers la version GEM 4.8-LTS.16
     * Le modèle atmosphérique est couplé avec le modèle océanique NEMO 3.6
-    * Les conditions initiales de l'océan et de la glace de mer proviennent de l'analyse du [SGPOG (mise à jour à la version 3.0.0 au même moment)](../nwp_giops/change-log_giops_fr.md) du CMC
+    * Les conditions initiales de l'océan et de la glace de mer proviennent de l'analyse du [SGPOG (mise à jour à la version 3.0.0 au même moment)](../nwp_giops/changelog_giops_fr.md) du CMC
     * Conditions initiales de la surface terrestre proviennent d'une pseudo-analyse de surface qui est réalisée à une résolution de 25 km et avec des forçages de GEM 4.8
 * Changements à la composante d'assimilation :
     * La présente version intègre une configuration de gain hybride-cepmmt, qui recentre tous les membres d'ensemble autour de la moyenne des analyses FKEN et 4DENVAR
@@ -135,7 +135,7 @@ Des changements majeurs sont faits tant à la portion d'assimilation de données
 
 Les changements communs aux composantes d'assimilation et de prévision incluent: nouvelle version du modèle GEM (soit la version version 4.4.1) avec une physique améliorée, réduction du pas de temps du modèle de 30 à 20 minutes, l'utilisation d'un filtre pour lisser le champ topographique, utilisation d'un seul schème de surface (ISBA) au lieu de deux.
 
-Les changements à la composante d'assimilation de données FKEn seulement incluent: augmentation avec l'altitude de la longueur de localisation horizontale au lieu d'etre une constante, la résolution horizontale a été accrue passant de 400x200 points (environ 100 km) vers 600x300 points (environ 66km), le nombre de niveaux verticaux est augmenté à 74 et le toit du modele demeure à 2 hPa, l'assimilation d'un plus grand volume d'observations de radiance AMSU: les données sont sélectionnées à chaque 150 km au lieu de chaque 250 km, amélioration de la correction de biais des observations, par le partage de celle venant de la nouvelle [version 3.0.0 du système global de prévision déterministe (SGPD), mise en œuvre simultanement](../nwp_gdps/change-log_gdps_fr.md).
+Les changements à la composante d'assimilation de données FKEn seulement incluent: augmentation avec l'altitude de la longueur de localisation horizontale au lieu d'etre une constante, la résolution horizontale a été accrue passant de 400x200 points (environ 100 km) vers 600x300 points (environ 66km), le nombre de niveaux verticaux est augmenté à 74 et le toit du modele demeure à 2 hPa, l'assimilation d'un plus grand volume d'observations de radiance AMSU: les données sont sélectionnées à chaque 150 km au lieu de chaque 250 km, amélioration de la correction de biais des observations, par le partage de celle venant de la nouvelle [version 3.0.0 du système global de prévision déterministe (SGPD), mise en œuvre simultanement](../nwp_gdps/changelog_gdps_fr.md).
 
 Les changements à la composante de prévisions seulement incluent: changement à la manière de perturber les tendances physiques pour les précipitations convectives, l'enveloppe latitudinale tropicale de limitation des perturbations est enlevée, les perturbations des tendances physiques sont appliquées à chaque niveau vertical sauf au dernier niveau près du sol, de la diffusion a été ajoutée dans le schème d'advection, une perturbation du coefficient de trainée du blocage orographique a été ajoutée, le facteur d'ajustement alpha du schème de rétroaction d'énergie cinétique stochastique est maintenant 0.8 pour mieux s'ajuster au nouveau pas de temps de 20 minutes.
 

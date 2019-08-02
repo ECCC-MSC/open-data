@@ -1,0 +1,154 @@
+[En français](changelog_hrdps_fr.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS Changelog
+
+# Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
+
+## Wednesday July 3, 2019
+
+### Major upgrade to Version 5.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
+
+On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.1.0.
+The changes included in this upgrade are summarized as follows:
+
+* Initial and boundary conditions are now provided by [RDPS v7.0.0](../nwp_rdps/changelog_rdps_en.md) instead of v6.0.0.
+* RDPS-CGSL v3.4.0 replaces v3.3.0 as a pilot system over the St. Lawrence region.
+* Upgrade from GEM v4.9.5 to GEM v4.9.8.
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281830___34641).
+
+The technical specifications document of the HRDPS 5.1.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_5.1.0_e.pdf).
+
+A technical note with more details on HRDPS 5.1.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-510_20190703_e.pdf).
+
+
+## Tuesday September 18, 2018
+
+### Major upgrade to Version 5.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
+
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.0.0.
+The changes included in this upgrade are summarized as follows:
+
+* Initial and boundery conditions comming from [RDPS v6.0.0](../nwp_rdps/changelog_rdps_en.md) instead of v5.1.0.
+* Update GEM model from v4.8-LTS.13 to v4.9.4.
+* New microphysics scheme "Predicted Particle Properties (P3)" replaces Milbrandt-Yau (MY2).
+* Inclusion of the Town Energy Balance (TEB) urban parameterization scheme
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171332___49260).
+
+A technical note with more details on HRDPS 5.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-500_20180918_e.pdf).
+
+
+## Thursday December 14, 2017
+
+### The High Resolution Deterministic Prediction System (HRDPS) is declared operational at the Canadian Meteorological Centre (CMC)
+
+Effective December 14, 2017, after several years running in experimental mode, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada declared operational the High Resolution Deterministic Prediction System (HRDPS v4.4.0).
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2017/12/13/NOCN03_CWAO_132058___00004).
+
+A technical note with more details on v4.2.0 of this system [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-420_20160907_e.pdf).
+
+
+## Wednesday September 7, 2016
+
+### Upgrade to Version 4.2.0 of the High Resolution Regional Deterministic Prediction System (HRDPS)
+
+On Wednesday, September 7th 2016, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Regional Deterministic Prediction System (HRDPS) to version 4.2.0.
+The changes included in this upgrade are summarized as follows:
+
+* Changes to the forecast model:
+    * The version of GEM is upgraded from version 4.7.3 to version 4.8.2.
+    * The introduction of a physically-based hysteresis effect in the turbulent mixing scheme that improves the forecast of precipitation types.
+    * Change to the horizontal diffusion for the momentum variables, (from a del-4 operator to a del-2) in order to reduce noise in the precipitation field
+    * Minor changes to the surface data assimilation system (CaLDAS).
+* Changes to the grid configuration:
+    * A new forecast domain has been added to the HRDPS which is called 'North' and covers the Canadian arctic region.
+    * As a result, forecasts for the domains known as 'Arctic' and 'Lancaster' will be discontinued.
+    * View [this image](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/hrdps/hrdps_4.2.0_grids_snapshot.png) which illustrates the changes.
+
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022055___00741).
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-420_20160907_e.pdf).
+
+
+## Tuesday December 15 2015
+
+### Upgrade to Version 4.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
+
+On Tuesday December 15th 2015, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Prediction System (HRDPS) to version 4.1.0.
+The changes included in this upgrade are summarized as follows:
+
+* The use of an implicit convection scheme Kain & Fritsch
+* Correction for freezing rain events that were largely under-estimated in the HRDPS-4.0.0
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142228___00074).
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-410_20151215_e.pdf).
+
+
+## Tuesday November 18th 2014
+
+### Major Upgrade to the High Resolution Deterministic Prediction System (HRDPS) version 4.0.0 at the Canadian Meteorological Centre
+
+On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the experimental High Resolution Deterministic Prediction System (HRDPS) to version 4.0.0.
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2014/11/17/NOCN03_CWAO_171911___00921).
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-400_20141118_e.pdf).
+
+
+## Friday July 12 2013
+
+### Adjustments to High Resolution Deterministic Prediction System (HRDPS) to version 3.0.1
+
+The Canadian Meteorological Centre adjusts the HRDPS system.
+
+On July 12 2013, the native grid of the HRDPS arctic domain was adjusted so that the native grid is shifted slightly westward and extended farther north and south.
+
+The [image at this link here](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/hrdps/20130710_HRDPSArcticGrid_BluePrevious_BlackNew.jpg) shows the original operational HRDPS arctic grid (blue box) and the newly installed HRDPS arctic domain grid (black box).
+
+This change follows requests by operational meteorologists for a HRDPS arctic domain that could provide forecast data for Ungava Bay and eastern portions of Hudson Bay, especially in the busy summer season.
+
+Users of the Ninjo workstation should be made aware that despite this change to the native HRDPS arctic grid, that Ninjo workstations will continue to receive the same configuration of HRDPS arctic grib2 files. This means that after July 12 2013, users of Ninjo HRDPS arctic grib2 data should not use lam arctic data east of longitude 60 west for decision making. These HRDPS arctic Ninjo grib2 files will only be updated at the next scheduled software update.
+
+On the other hand, the HRDPS grib2 files distributed via the datamart have been adjusted to present data on the new HRDPS arctic grid. The documentation associated with these grib2 files can only be updated however at a later date.
+
+Another adjustment to the HRDPS system was installed on June 18 2013 and this was a correction to the post processed calculations of the HRDPS summer severe weather parameters. This correction applies to the calculations performed on all HRDPS domains.
+
+A copy of the official note describing these changes [is available by clicking here](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/07/12/NOCN03_CWAO_122020___01071).
+
+
+## Wednesday October 3 2012
+
+### The Canadian Meteorological Centre Upgrades Its High Resolution Deterministic Prediction System (HRDPS) to version 3.0.0
+
+On Wednesday October 3 2012, starting with the implementation of a new 1800 UTC run of the west domain, the Canadian Meteorological Centre (CMC) will procede with an update to version 3.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at 2.5 km resolution.
+
+Modifications to all HRDPS domains involve the use of a newer version of the CMC GEM model and adjustments to the model dynamics and physics. For the west HRDPS only, the nesting configuration, the run frequency and the forecast lead times have been changed.
+
+Note that this HRDPS update is done in conjunction with the major upgrade to the CMC Regional Deterministic Prediction System (RDPS) which provides initial and lateral boundary conditions to the HRDPS. For details on the [RDPS upgrade please refer to the information at this link](../nwp_rdps/changelog_rdps_en.md).
+
+All forecast products presently available for HRDPS will continue to be available. For the west domain the previous datafiles labelled 12 UTC will now use earlier data from the RDPS and as a result will be labelled 06 UTC. There is also the addition of a second daily west domain run that will be labelled 18 UTC. It must be noted that for some time, in spite of the longer lead times extending to 42 hours for the west domain, meteorological fields will displayed in the NINJO visualization platform will only be visible up to the 24-hour lead time.
+
+With this implementation all HRPDS domains continue to maintain their status as experimental. The are plans to make the HRDPS west domain fully operational and this announcement should follow in the near future.
+
+A copy of the official note describing these changes [is available by clicking here](http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_021948___00154).
+
+A technical note with more details on these changes [will be made available at this link here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_hrdps_20121003_e.pdf).
+
+
+## Thursday December 22, 2011
+
+### The Canadian Meteorological Centre implements a correction to its HRDPS snow analysis
+
+A correction was made to grid of the High Resolution Deterministic Prediction System (HRDPS) snow analysis starting with the 06 UTC snow analysis of Dec 22 2011.
+
+With this correction the HRDPS is now version 2.2.1
+
+
+
+
