@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced to users
 * new content:
-    * TBD
+    * changelog integration for GDPS, GIOPS, RDPS, REPS, HRDPS, RDPA, HRDPA, CanSIPS, RDWPS, GDWPS, Nowcasting, RDPS-CGSL
 * improvements:
     * TBD
 * bug fixes:
