@@ -57,4 +57,4 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système Régional de Prévision Déterministe de Vague (SRPDV) est disponible [ici](changelog_rdwps_fr.md).

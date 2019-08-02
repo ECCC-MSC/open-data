@@ -63,4 +63,4 @@ List and links to the products available for this dataset :
 
 ## Change log 
 
-Changes to the operational systems are [available in the Product guide documentation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Regional Deterministic Prediction System (RDPS) is available [here](changelog_rdps_en.md).

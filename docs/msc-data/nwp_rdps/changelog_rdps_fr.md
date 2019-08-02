@@ -167,7 +167,3 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdps300_20121003_f.pdf).
 
 
-
-
-
-

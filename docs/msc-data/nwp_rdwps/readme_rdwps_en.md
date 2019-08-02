@@ -58,4 +58,4 @@ List and links to the products available for this dataset :
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Regional Deterministic Wave Prediction System (RDWPS) is available [here](changelog_rdwps_en.md).
