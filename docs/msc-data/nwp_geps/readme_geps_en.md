@@ -33,4 +33,4 @@ Upcoming.
 
 ## Change log
 
-The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [here](change-log_geps_en.md).
+The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [here](changelog_geps_en.md).
