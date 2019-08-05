@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Prévisions immédiates
 
-# Données et Produits des matrices scribe de prévision immédiates
+# Données et Produits des matrices scribe de prévisions immédiates
 
-Cette page décrit les données et produits des [matrices scribe de prévision immédiates](readme_nowcasting-datamart_fr.md).
+Cette page décrit les données et produits des [matrices scribe de prévisions immédiates](readme_nowcasting-datamart_fr.md).
 
 Le Système intégré de prévision immédiate (SIPI) vise à prévoir le temps à très court terme. Le système produit un ensemble cohérent d'éléments météorologiques observées et prévues, de l'heure d'observation jusqu'à 12 heures dans le futur et ce pour une sélection de plus de 500 points de prévision au Canada correspondant généralement à des stations d'observation. Ces prévisions sont mises à jour toutes les heures. Les observations de surface horaires (METAR, SPECI) et les observations synoptiques sont traitées ainsi que des observations des radars météorologiques, de la foudre et des satellites. Les modèles de prévision numérique, les modèles statistiques et des systèmes de prévision immédiate sont utilisés en conjonction avec les observations pour produire une prévision à très court terme au niveau de la surface.
 
@@ -35,4 +35,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système intégré de prévision immédiate (SIPI) est disponible [ici](changelog_nowcasting_fr.md).

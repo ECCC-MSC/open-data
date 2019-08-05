@@ -32,10 +32,10 @@ The [metadata of the High Resolution Deterministic Prediction System are availab
 
 ## Technical documentation
 
-* [Current version of the High Resolution Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_5.1.0_e.pdf)
+* [Current version of the High Resolution Deterministic Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-510_20190703_e.pdf)
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the High Resolution Deterministic Prediction System (HRDPS) is available [here](changelog_hrdps_en.md).
 

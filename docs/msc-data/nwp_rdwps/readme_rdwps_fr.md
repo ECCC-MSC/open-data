@@ -52,9 +52,9 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Documentation technique
 
-* [Version actuelle du Système régional de prévision déterministe de vague](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDWPS_3.2.0_f.pdf)
+* [Version actuelle du Système régional de prévision déterministe de vague](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdwps_20120524_f.pdf)
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système Régional de Prévision Déterministe de Vague (SRPDV) est disponible [ici](changelog_rdwps_fr.md).

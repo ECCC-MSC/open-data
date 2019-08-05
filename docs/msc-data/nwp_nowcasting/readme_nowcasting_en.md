@@ -35,7 +35,7 @@ Upcoming.
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Integrated Nowcasting System (INCS) is available [here](changelog_nowcasting_en.md).
 
 
 

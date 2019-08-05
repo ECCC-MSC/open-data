@@ -1,4 +1,4 @@
-[En français](change-log_geps_fr.md)
+[En français](changelog_geps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -17,7 +17,7 @@ The changes included in this upgrade are summarized as follows:
 * Changes to the forecast model:
     * The atmospheric model is upgraded from GEM v4.8-LTS.13 to v4.8-LTS.16.
     * The atmospheric model is now coupled with the NEMO ocean model and the CICE ice model.
-    * The ocean and sea-ice initial conditions come from the [GIOPS v3.0.0](../nwp_giops/change-log_giops_en.md) analysis.
+    * The ocean and sea-ice initial conditions come from the [GIOPS v3.0.0](../nwp_giops/changelog_giops_en.md) analysis.
     * Land surface initial conditions come from a surface pseudo-analysis using the GDPS 6.0.0 25 km grid and GEM v4.8.
 * Changes to the assimilation component:
     * An ECMWF-hybrid gain is introduced to recenter all ensemble members around the mean of the EnKF analyses and the 4D-EnVAR analysis.
@@ -139,7 +139,7 @@ In this upgrade, major changes are brought to both the assimilation (Ensemble Ka
 
 Changes common to both the assimilation and forecast components include: a newer version 4.4.1 of the GEM model with improved physics; reduction of the model time step from 30 minutes to 20 minutes; use of a filtered topography; and the use now of only one surface scheme (ISBA) (the previous scheme Force-Restore is no longer used).
 
-Changes installed uniquely into the data assimilation component ENKF include: horizontal localization length scale now increasing with height; higher horizontal resolution (now ~66km); higher vertical resolution increased from 58 to 74 levels with the model top remaining at 2 hPa; an increased volume of AMSU radiance observations; and improved observation bias correction coming from the [newer version 3.0.0 of the GDPS](../nwp_gdps/change-log_gdps_en.md).
+Changes installed uniquely into the data assimilation component ENKF include: horizontal localization length scale now increasing with height; higher horizontal resolution (now ~66km); higher vertical resolution increased from 58 to 74 levels with the model top remaining at 2 hPa; an increased volume of AMSU radiance observations; and improved observation bias correction coming from the [newer version 3.0.0 of the GDPS](../nwp_gdps/changelog_gdps_en.md).
 
 Changes installed uniquely into the forecast component include: adjustments to how physics tendencies are perturbed for convective precipitation; the physics tendencies perturbations are applied at every level except the very last one; addition of diffusion into the advection procedure; perturbation of the bulk drag coefficient in the orographic blocking scheme; and fine tuning of the adjustment factor alpha of the stochastic kinetic energy backscattering scheme.
 

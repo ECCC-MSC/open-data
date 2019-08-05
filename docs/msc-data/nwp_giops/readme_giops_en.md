@@ -29,11 +29,11 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the Global Ice-Ocean Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.0.0_e.pdf)
+* [Current version of the Global Ice-Ocean Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GIOPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-300_e.pdf)
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Global Ice-Ocean Prediction System (GIOPS) is available [here](changelog_giops_en.md).
 
 

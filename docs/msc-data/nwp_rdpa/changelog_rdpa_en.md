@@ -1,0 +1,90 @@
+[En français](changelog_rdpa_fr.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPA](readme_rdpa_en.md) > RDPA Changelog
+
+# Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)
+
+## Wednesday July 3, 2019
+
+### Upgrade to version 4.6.0 of the Regional Deterministic Precipitation Analysis system (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
+
+On Wednesday July 3rd 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Deterministic Precipication Analysis system (CaPA-RDPA) to version 4.6.0.
+
+Changes are summarized as follows:
+
+* [RDPS v7.0.0](../nwp_rdps/changelog_rdps_en.md) now provides the trial field instead of RDPS v6.0.0.
+* The lead times 6 and 12 hours for the total precipitation forecast (PR) will be used instead of 0 and 6 hours as in the previous version.
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031225___18175).
+
+
+## Wednesday November 9, 2016
+
+### Upgrade to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
+
+On Wednesday November 9th 2016, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) by replacing CaPA-RDPA 3.2.0 by version 4.0.0. This new version assimilates precipitation observations provided by two networks of stations newly available at CMC. Pseudo-observations of 0 mm inferred from the American METAR network are added to the dataset submitted to CaPA system. Finally, 33 American weather radars are added to the composite of quantitative precipitation estimates (QPE) which is also assimilated by the system. All these modifications allow producing a better precipitation analysis.
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2016/11/09/NOCN03_CWAO_091420___00557).
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa-400_20161109_e.pdf).
+
+
+## Tuesday December 15, 2015
+
+### Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.2.0 at the Canadian Meteorological Centre (CMC)
+
+On Tuesday December 15th 2015, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) by  replacing CaPA-RDPA 3.1.0 by version 3.2.0. This version will solve two minor problems: The first of which is related to the processing of precipitation reports and the second which affects the GRIB2 encoding procedure by adding a mask to represent well the No-Data regions.
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2015/12/10/NOCN03_CWAO_102100___00779).
+
+An information leaflet on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf).
+
+
+## Wednesday June 03, 2015
+
+### Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.1.0 at the Canadian Meteorological Centre (CMC)
+
+On Wednesday June 03th 2015, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) by  replacing CaPA-RDPA 3.0.0 by version 3.1.0. This version will lead mainly  to the assimilation of a higher number of solid precipitation observations.
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2015/06/03/NOCN03_CWAO_031900___00790).
+
+An information leaflet on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf).
+
+
+## Tuesday November 18th, 2014
+
+### Major Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.0.0 at the Canadian Meteorological Centre
+
+On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) to version 3.0.0. Here are the major changes:
+
+* This version will assimilate an additional source of important information, the quantitative precipitation estimates (QPE) provided by the Canadian weather radar.
+* The Regional Deterministic Prediction System (RDPS) which will provide the required trial field to the CaPA system is also updated to RDPS 4.0.0.
+* The the number of analysis produced daily is increased from 9 to 10.
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141831___01258).
+
+An information leaflet on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf).
+
+
+## August 20 2013
+
+### Version 2.4 of RDPA (CaPA) installed in operations
+
+
+## Wednesday October 3 2012
+
+### The Canadian Meteorological Centre Upgrades the RDPA (CaPA) system to version 2.3.0
+
+On Wednesday October 3 2012, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 2.3.0 of the regional deterministic precipitation analysis. This upgrade is done concurrently with the upgrade to the Regional Deterministic Prediction System version 3.0.0 which will now povide a higher resolution trial field to the precipitation analysis system. For details on the [RDPS upgrade please refer to the information at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html#20121003_rdps).
+
+In addition to the introduction of the higher resolution which is fairly influential on the analysis results, several significant improvements are made to the system and these changes are described in the announcement and technical note avaialble below.
+
+A copy of the official note describing these changes [is available by clicking here](http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_022152___00156).
+
+A technical note with more details of these changes [is available at this link here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdpa_20121018_e.pdf).
+
+
+
+
+
+
+

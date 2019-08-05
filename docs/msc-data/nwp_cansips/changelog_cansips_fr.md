@@ -1,0 +1,49 @@
+[In English](changelog_cansips_en.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPISCAN](readme_cansips_fr.md) > Changements au SPISCAN
+
+# Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)
+
+## Le mercredi 3 juillet 2019
+
+### Mise à jour vers la version 2 du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+
+En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) vers la version 2.
+
+Les modifications majeures du SPISCAN dans cette mise à jour sont dans la composante prévision
+
+* Remplacement du modèle CANCM3 par le nouveau modèle couplé GEM-NEMO.
+* Mise à jour du modèle CANCM4 par une version amélioré CANCM4I.
+
+Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf).
+
+
+## Le jeudi 1er décembre 2011
+
+### Le CMC introduit le système SPSICan de prévision mensuelle et saisonnière
+
+Le 1er décembre 2011, le Centre Météorologique Canadien a commencé à émettre des produits à avec son nouveau système coupplé de prévision multi-saison globale pour produire ses prévisions mensuelles et saisonnières de conditions climatiques.
+
+Ce nouveau système s'appelle SPISCan (Système de Prévision Interannuelle et Saisonnière Canadien).
+
+Avec SPISCan, Environnement Canada sera en mesure d'émettre des prévisions saisonnières couvrant une année complète grâce a un système de prévision dynamique unique; ceci représente un progrès notable par rapport aux systèmes antérieurs. spiscan peut prévoir correctement le phénomène ENSO (El Niño-La Niña / Oscillation Australe) et son influence sur le climat jusqu'a un an en avance.
+
+Le développement et l'implantation de ce système de prévision multi-saisons est le fruit de la collaboration étroite entre le CMC et le CCmaC (Centre canadien de la modélisation et d'analyse climatique)
+
+Des détails complets décrivant le fonctionnement de ce systeme, comment il a été évalué sont disponibles aux liens dessous.
+
+Même si aucun nouveau produit ne sera disponible sur le site des prévisions mensuelles et saisonnières du SMC la qualité des produits existants sera améliorée avec ce nouveau système. De nouveaux produits seront ultérieurement affiches dans une prochaine phase du projet.
+
+Les produits provenant des prévisions multi-saisons seront disponibles le premier jour de chaque mois au site web du SMC.
+
+Une copie de la note officielle annonçant l'utilisation opérationnelle de SPISCan [est disponible en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/28/NOCN03_CWAO_281935___35518).
+
+Une note technique sur SPISCan [est disponible en cliquant ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_spiscan_20111220_f.pdf).
+
+De l'information sur SPISCan et ses produits est aussi [disponible sur la page web publique de prévisions mensuelles et saisonnières du SMC en cliquant ici](https://meteo.gc.ca/saisons/index_f.html).
+
+De l'information est aussi disponible dans le guide de produits du CMC aux liens suivant: [page sur les prévisions mensuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_monthly-temperature-anomalies_gen_f.html) et aussi à la [page sur les prévisions saisonnières](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_seasonal-forecasts_gen_f.html).
+
+

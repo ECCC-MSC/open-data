@@ -31,11 +31,11 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the Global Deterministic Wave Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.5.0_e.pdf)
+* [Current version of the Global Deterministic Wave Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDWPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.3.1_e.pdf)
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Global Deterministic Wave Prediction System (GDWPS) is available [here](changelog_gdwps_en.md).
 
 

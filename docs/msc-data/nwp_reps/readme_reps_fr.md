@@ -32,5 +32,5 @@ Les [métadonnées du Système régional de prévision d'ensemble sont accessibl
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au Système régional de prévision d'ensemble (SRPE) est disponible [ici](changelog_reps_fr.md).
 
