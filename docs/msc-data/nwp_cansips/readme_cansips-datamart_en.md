@@ -6,14 +6,17 @@
 
 # Canadian Seasonal to Inter-annual Prediction System (CanSIPS) Data in GRIB2 Format
 
-The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansips_en.md) is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two climate models developed by the Canadian Centre for Climate Modelling and Analysis (CCCma). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operationnal data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.
-Principal components of CanSIPS
+The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two atmosphere-ocean-land coupled models developed by the Canadian Centre for Climate Modelling and Analysis (CCCma) and the Canadian Meteorological Centre (CMC). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.
 
 ## Principal components of CanSIPS
     
-* __Assimilation mode__: CanSIPS uses a continuous assimilation cycle for the following 3D atmospheric variables: temperature, wind and humidity. The oceanic variables: sea surface temperature and the sea ice are also assimilated by the system. The assimilated data are provided by the global atmospheric analysis available every 6 hours and the daily sea surface temperature and sea ice analysis. Also a 3D ocean temperature analysis is integrated to CanSIPS trial field before launching the integration.
-* __Forecast mode__: The CanSIPS forecasts are based on a 10-member ensemble of forecasts produced with each of two CCCma climate models for a total ensemble size of 20. Monthly to multi-seasonal forecasts extending to 12 months are issued on the first day of each month.
-* __Hindcast mode__: CanSIPS climatology is based on series of historical forecasts covering the period 1981-2010. This climatology of the system is very useful for the interpretation of the forecast since the anomaly is generally used instead of the actual raw forecast.
+* __Assimilation mode__: CanCM4 uses a continuous assimilation cycle for the following 3D atmospheric variables: temperature, wind and humidity. The oceanic variables: sea surface temperature and the sea ice are also assimilated by the system. The assimilated data are provided by the global atmospheric analysis available every 6 hours and the daily sea surface temperature and sea ice analysis. Also a 3D ocean temperature analysis is integrated to CanCM4 trial field before launching the integration. GEM-NEMO uses atmospheric initial condition of the Global Ensemble Prediction System (GEPS) which are generated from the Ensemble Kalman Filter (EnKF) with observations that are background-checked and bias-corrected by the Global Deterministic Prediction System (GDPS). The ocean and sea ice initial conditions come from the CMC GIOPS analysis. To initialize the land surface fields, the CMC Surface Prediction System (SPS) is run offline forced by the near-surface atmospheric and precipitation fields of the CMC analysis.
+* __Forecast mode__: The CanSIPS forecasts are based on a 10-member ensemble of forecasts produced with each of the two models for a total ensemble size of 20. Monthly to multi-seasonal forecasts extending to 12 months are issued on the first day of each month.
+* __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1981 to 2010. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
+
+## How is the CanSIPS forecast configured?
+
+Ensemble size for the forecast is 20 members (10 GEM-NEMO members + 10 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. 
 
 ## Data location 
 
@@ -37,7 +40,9 @@ A 2-month history is kept in this directory.
 
 ## Technical specification of the grid
 
-Table lists the values of various parameters of the CanSIPS lat-lon grid.
+Tables list the values of various parameters of the CanSIPS lat-lon grid, according to the resolution.
+
+## Data at 2.5x2.5 degrees resolution
 
 | Parameter | Value |
 | ------ | ------ |
@@ -46,14 +51,24 @@ Table lists the values of various parameters of the CanSIPS lat-lon grid.
 | resolution | 2.5° |
 | coordinates of the first grid point | 90° S  0° E | 
 
+## Data at 1.0x1.0 degree resolution
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 360 |
+| nj | 180 | 
+| resolution | 1.0° |
+| coordinates of the first grid point | 89.5° S  0.5° E | 
+
 ## File name nomenclature 
 
 NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
-* Filename for the forecast : cansips_forecast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
-* Filename for the hindcast : cansips_hindcast_raw_latlon2.5x2.5_VAR_YYYY-MM_allmembers.grib2
+* Filename for the forecast : cansips_forecast_raw_projection_VAR_YYYY-MM_allmembers.grib2
+* Filename for the hindcast : cansips_hindcast_raw_projection_VAR_YYYY-MM_allmembers.grib2
+* Filename for probabilities: cansips_forecast_prob-product_projection_VAR_PPP_YYYY-MM.grib2
 
 where :
 
@@ -61,18 +76,20 @@ where :
 * __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
 * __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
 * __raw__ : Constant string indicating that the file contains raw data without bias correction
-* __latlon2.5x2.5__ : Constant string indicating the latitude-longitude projection at a resolution of 2.5 x 2.5 degrees.
+* __projection__ : Constant string indicating the projection [latlon] and resolution [2.5x2.5, 1.0x1.0]
 * __VAR__ : Variable type included in this file. To consult a complete list, refer to the variables section
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [2012, 2013, ...]
 * __allmembers__ : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file.
 * __grib2__ : Constant string indicating the GRIB2 format is used.
+* __product__: product description (ex: near-normal, above-normal, below-normal)
+* __PPP__: forecast product time length ex: P3M is for a product with forecast a period of 3 months. 
 
-Example of file name : 
+Examples : 
 
 cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-
-This GRIB2 file originates from CMC CanSIPS system. The data in the file have a start time on the first day of October 2012. The variable in the file is the monthly mean of the geopontential height at 500hpa, for all the members of the ensemble. The projection used is the latitude-longitude projection at a resolution of 2.5 x 2.5 degrees.
+cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
+cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 
 ## Internal Structure of the Files
 
@@ -90,10 +107,23 @@ The data are available at surface and for certain isobaric levels.
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+The list of the CanSIPS available variables is the following:
 
-* [Zero lead time forecast](https://weather.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-ZERO_hindcast_e.html)
-* [Non-zero lead time forecast](https://weather.gc.ca/grib/CANSIPS/CANSIPS_latlon2.5x2.5_ALL_VAR_Lead-time-month-NONZERO_hindcast_e.html)
+* Water temperature (WTMP_SFC_0)
+* Precipitation rate (PRATE_SFC_0)
+* Temperature at 2m (TMP_TGL_2m)
+* Temperature at 850 hPa (TMP_ISBL_850)
+* Mean Sea Level Pressure (PRMSL_MSL_0)	
+* Geopotential Height at 500 hPa (HGT_ISBL_500)
+* U Wind Component at 200 hPa (UGRD_ISBL_200)
+* U Wind Component at 850 hPa (UGRD_ISBL_850)
+* V Wind Component at 200 hPa (VGRD_ISBL_200)
+* V Wind Component at 850 hPa (VGRD_ISBL_200)
+
+The list of the CanSIPS variables for probability above,near or below normals products is the following:
+
+* Temperature at 2m (TMP_TGL_2m)
+* Precipitation rate (PRATE_SFC_0)
 
 ## Tips for Computing Anomaly Forecasts
 

@@ -8,7 +8,7 @@
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 6.0.0) du Centre météorologique canadien (CMC)
+#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 6.0.0) du Centre météorologique canadien (CMC)
 
 Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :
 
@@ -32,7 +32,7 @@ Le document des spécifications techniques du SGPE 6.0.0 [est disponible ici](ht
 
 ## Le mardi 18 septembre 2018
 
-### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 5.0.0) du Centre météorologique canadien (CMC)
+#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 5.0.0) du Centre météorologique canadien (CMC)
 
 Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :
 
@@ -62,7 +62,7 @@ Le document des spécifications techniques du SGPE 5.0.0 [est disponible ici](ht
 
 ## Le mardi 15 décembre 2015
 
-### Mise à jour du système global de prévision d'ensemble (SGPE version 4.1.1) du Centre météorologique canadien (CMC)
+#### Mise à jour du système global de prévision d'ensemble (SGPE version 4.1.1) du Centre météorologique canadien (CMC)
 
 Le mardi 15 décembre 2015, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.1.1 de son système global de prévision d'ensemble (SGPE).
 
@@ -84,7 +84,7 @@ Le document des spécifications techniques du GEPS 4.1.1 [est disponible ici](ht
 
 ## Le mardi 18 novembre 2014
 
-### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 4.0.0) du Centre météorologique canadien (CMC)
+#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 4.0.0) du Centre météorologique canadien (CMC)
 
 Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son système global de prévision d'ensemble (SGPE).
 
@@ -106,7 +106,7 @@ Une note technique à propos des améliorations au système de re-prévisions [e
 
 ## Le mercredi 4 décembre 2013
 
-### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.1.0) du Centre météorologique canadien (CMC)
+#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.1.0) du Centre météorologique canadien (CMC)
 
 Le mercredi 4 décembre 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.1.0 de son système global de prévision d'ensemble (SGPE).
 
@@ -127,7 +127,7 @@ Une note technique à ce sujet [est disponible via ce lien](https://collaboratio
 
 ## Le mercredi, 13 février 2013
 
-### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.0.0) du Centre météorologique canadien (CMC)
+#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.0.0) du Centre météorologique canadien (CMC)
 
 Le mercredi 13 février 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son système global de prévision d'ensemble (SGPE).
 
