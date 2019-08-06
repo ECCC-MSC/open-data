@@ -8,7 +8,7 @@
 
 This page describes the [Regional Ensemble Prediction System](readme_reps_en.md) data available in GRIB2 format.
 
-# Data location
+## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
@@ -122,7 +122,7 @@ You can find a list in XML format cont.
 
 A [list in XML format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
 
-# About the No-data mask
+## About the No-data mask
 
 A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
