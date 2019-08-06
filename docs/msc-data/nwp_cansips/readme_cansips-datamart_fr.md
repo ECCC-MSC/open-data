@@ -85,11 +85,11 @@ où :
 * __produit__: Description du produit (ex: près,sous ou au-dessus des normales)
 * __PPP__: Durée du produit ex: P3M indique un produit pour une prévision d'une période de 3 mois
 
-Exemples de nom de fichier : 
+Exemples de noms de fichier : 
 
-cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
-cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
+* cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
+* cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
+* cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 
 ## Structure interne des fichiers
 
