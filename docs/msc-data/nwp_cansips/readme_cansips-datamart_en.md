@@ -14,7 +14,7 @@ The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) is a long-term
 * __Forecast mode__: The CanSIPS forecasts are based on a 10-member ensemble of forecasts produced with each of the two models for a total ensemble size of 20. Monthly to multi-seasonal forecasts extending to 12 months are issued on the first day of each month.
 * __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1981 to 2010. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
 
-## How is the CanSIPS forecast configured?
+## How is the CanSIPS forecast configured ?
 
 Ensemble size for the forecast is 20 members (10 GEM-NEMO members + 10 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. 
 
@@ -42,7 +42,7 @@ A 2-month history is kept in this directory.
 
 Tables list the values of various parameters of the CanSIPS lat-lon grid, according to the resolution.
 
-## Data at 2.5x2.5 degrees resolution
+### Data at 2.5x2.5 degrees resolution
 
 | Parameter | Value |
 | ------ | ------ |
@@ -51,7 +51,7 @@ Tables list the values of various parameters of the CanSIPS lat-lon grid, accord
 | resolution | 2.5° |
 | coordinates of the first grid point | 90° S  0° E | 
 
-## Data at 1.0x1.0 degree resolution
+### Data at 1.0x1.0 degree resolution
 
 | Parameter | Value |
 | ------ | ------ |
@@ -87,9 +87,9 @@ where :
 
 Examples : 
 
-cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
-cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
+* cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
+* cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
+* cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 
 ## Internal Structure of the Files
 
