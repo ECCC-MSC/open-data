@@ -6,6 +6,19 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le mardi 23 juillet 2019
+
+### Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le Système régional de prévision déterministe (SRPD)
+
+Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) a procédé à une mise à jour du Système régional de prévision déterministe (SRPD).
+
+Les composantes d'assimilation de données du SRPD ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.
+
+Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_f.pdf).
+
+* Le document des spécifications techniques pour le SRPD 7.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_f.pdf).
+
+
 ## Le mercredi 3 juillet 2019
 
 ### Mise à jour majeure du système régional de prévision déterministe (SRPD) 7.0.0 du Centre météorologique canadien (CMC)
@@ -127,9 +140,40 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-400_20141118_f.pdf).
 
-## Le mardi 3 juillet 2012
+
+## Le mardi 6 mai 2014
+
+### Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SRPD
+
+Le 6 mai 2014, à partir de la passe de prévision de 1200 UTC du système régional de prévisions déterministes(SRPD), le Centre meteorologique canadien (CMC) d'environnement Canada a ajouté les observations de radiances de l'instrument IASI du satellite METOP-B/1 au système d'assimilation de données opérationnel. Cet instrument (IASI) est le dernier du satellite METOP-B/1 à faire l'objet d'une mise en œuvre opérationnelle.
+
+Motivation pour l'incorporation des observations IASI de METOP-B/1 aux données opérationnelles du SRPD :
+Bien que les données du satellite METOP-A/2 continueront d'etre assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opéerationnel de l'agence EUMETSAT. les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. de plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.
+
+Suite à ces changements le numéro du système SRPD passe de 3.2.0 à 3.2.1.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
+
+
+## Le jeudi 7 novembre 2013
+
+### Ajout de données satellitaires additionnelles (CSR, ATOVS, vents polaires) au système d'assimilation du SRPD
+
+Le jeudi 7 novembre 2013 à partir de la prévision produite des données de 12Z, des données satellitaires additionnelles ont été ajoutées au Système régional de prévision déterministe (SRPD).
+
+Les changements incluent: l'ajout des radiances CSR (radiance en ciel clair) de MétéoSat10, l'ajout des radiances ATOVS de Metop-B et des vents polaires AVHRR de Metop-B.
+
+En même temps, d'autres ajustements ont aussi été installés. Nous avons fait une mise-à-jour des fichiers de coefficients spectroscopiques utilisés par le modèle de transfert radiatif RTTOV pour le calcul des observations simulés (la portion "P"révision de six heures des Observations-Prévisions (O-P) des instruments AMSUB et MHS de tous les satellites. Les nouveaux coefficients de type "Newstyle" ne séparent pas l'absorption de la vapeur d'eau en une contribution de raies et un continuum. Cela a un impact neutre sur les résultats.
+
+En ce qui concerne le SRPD, depuis l'implantation du [SRPD 3.1.0](../nwp_rdps/changelog_rdps_fr.md), le champ de couverture de neige (nommé NE à l'interne au CMC) manquait dans le contrôle de qualité des observations AIRS et IASI. Comme solution qui est maintenant installée, désormais le champ de profondeur de la neige (connu comme paramètre SD au CMC) sera utilisé au lieu de NE. Il n'y a aucun impact météorologique significatif. Un autre ajustement concerne l'interpolation incorrecte du champ albédo (connu comme AL au CMC) pendant le contrôle de qualité des observations AIRS et IASI. Pour corriger cette situation, le champs AL est maintenant interpolé correctement, en utilisant le logiciel EzScInt au CMC. Par conséquent, le nombre d'observations AIRS et IASI a augmenté jusqu'à 50% et 30%, respectivement, en fonction de la saison (c.à.d. en fonction de la distribution de la glace).
+
+Avec l'installation de tous ces changements, le SRPD opérationnel devient la version 3.2.0.
+
+
+## Le mardi 3 juillet 2013
 
 ### Mise à jour au binaire RDPS (pour la production de la variable PX)
+
 
 ## Mercredi le 13 février, 2013
 
@@ -166,4 +210,31 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdps300_20121003_f.pdf).
 
+
+## Le mercredi 16 novembre 2011
+
+### Améliorations apportées au système régional de prévision déterministe (SRPD) du Centre Météorologique Canadien.
+
+À partir du cycle d'assimilation de 06 UTC le 16 novembre 2011, le Centre Météorologique Canadien (CMC) implantera des changements au système d'assimilation régional en y ajoutant des données satellitaires et en introduisant une nouvelle analyse de température de la surface de la mer.
+
+Voici un sommaire des changements apportés aux systèmes d'assimilation déterministe régional :
+
+A. Nouvelles données satellitaires - les données satellitaires suivantes seront incorporées dans les systèmes d'assimilation global et régional:
+* 62 canaux infrarouges provenant de l'instrumentation IASI à bord du satellite METOP.
+* 7 canaux micro-ondes de l'instrumentation SSM/IS à bord du satellite DMSP F16.
+* 1 canal de vapeur d'eau provenant des deux satellites METEOSAT, de MTSAT-1R et de GOES-W.
+* Une restriction sur les canaux infrarouges de l'instrumentation AIRS dans les régions polaires sera enlevée.
+* L'écrémage horizontal de toutes les radiances satellitaires passera de 250 km (sauf 200 km pour SSM/I) présentement à 150 km, ajoutant beaucoup de données disponibles aux systèmes d'assimilation.
+
+B. Autres changements à l'assimilation:
+* Les observations d'humidité mesurées par les avions équipés de système AMDAR seront assimilées.
+* Un nouveau schéma de correction de biais des données satellitaires remplacera le schéma présent. L'impact principal sera de réduire la période sur laquelle se fait le calcul de la correction de biais de 15 à 7 jours. Le même code est utilisé pour toutes les données de radiance.
+* Une version modifiée du code de transfert radiatif (RTTOV) sera utilisée pour les données de radiance.
+* Une nouvelle analyse de la température de la surface de la mer sur grille de 0.20 degres de résolution sera dorénavant utilisée par le système régional.
+
+2. É: Tous les changements ci-dessus ont été combinés et ont fait l'objet de tests exhaustifs sur des cas d'été et d'hiver, incluant une passe parallèle. Pour le système régional, les changements à l'assimilation des données ont aussi été testeé sur des périodes comparables, incluant une passe parallèle.
+
+Une copie de la note officielle avec de l'information additionnelle sur l'évaluation des impacts de ces changements est disponible [en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041).
+
+Avec ces changements le système régional de prévision déterministe (SRPD) est maintenant la version 2.0.0
 

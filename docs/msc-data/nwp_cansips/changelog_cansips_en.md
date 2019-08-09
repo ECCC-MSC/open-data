@@ -20,6 +20,24 @@ The major changes of CanSIPS in this upgrade are in the forecast component:
 A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf).
 
 
+## Tuesday June 21st, 2016
+
+### Upgrade to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre
+
+On Tuesday June 21st, 2016, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS).
+
+In this upgrade the 3D ocean analyses used by the ocean model in CanSIPS will now come from the Global Ice Ocean Prediction System (GIOPS) 2.1 and will replace the NCEP GODAS ocean analyses previously used.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211910___00716).
+
+
+## Tuesday July 23 2013
+
+### Adjustments to the ocean temperature analysis (GODAS) feed for CanSIPS
+
+Between July 16 and July 23 the feed of the GODAS analysis into the CanSIPS model was interrupted. A number of actions were undertaken to restore this feed. As a result, access to the (correct) daily GODAS analysis was restored on 23 July, with importation of the correct analyses dated 17-21 July 2013. It was anticipated as of 23 July 2013 that the normal sequence for importing and assimilating GODAS data would resume on 24 July 2013.
+
+
 ## Thursday December 1, 2011
 
 ### The Canadian Meteorological Centre starts using CanSIPS: Canadian Seasonal to Inter-annual Prediction System

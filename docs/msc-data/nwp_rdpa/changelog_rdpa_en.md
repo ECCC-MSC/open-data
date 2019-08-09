@@ -20,6 +20,29 @@ Changes are summarized as follows:
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031225___18175).
 
 
+## Tuesday September 18, 2018
+
+### Upgrade to version 4.5.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
+
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 4.5.0.
+
+The changes included in this upgrade are summarized as follows :
+
+* The trial fields for these precipitaion analyses are generated from the new version of the system implemented on September 18, 2018:
+    * CaPA-RDPA now builds its trial fields from [RDPS v6.0.0](../nwp_rdps/changelog_rdps_en.md)
+* Assimilation of the observations from the CoCoRaHS network. (CaPA-RDPA)
+* New 24h analysis valid at 06h00 UTC in line with the climatological day. (CaPA-RDPA)
+* CaPA-RDPA v4.5.0 will be using the 0 and 6 hour lead times of the total precipitation field instead of the 6 and 12 hour. This is made possible because the RDPS v6.0.0 can now generate precipitation right from the beginning of the integration.
+
+A copy of the official note announcing this implementation is available at this location:
+
+* [CaPA-RDPA official announcement](http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171415___18584)
+
+Technical note with more details on these changes is available at this link:
+
+* [CaPA-RDPA technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-450_e.pdf)
+
+
 ## Wednesday November 9, 2016
 
 ### Upgrade to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)

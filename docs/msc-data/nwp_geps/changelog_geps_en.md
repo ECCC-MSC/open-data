@@ -6,6 +6,18 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday July 23, 2019
+
+### Additional observations data in the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+
+On Tuesday July 23rd 2019, starting with the 0600 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) proceeded with an update of its Global Ensemble Prediction System (GEPS).
+
+The data assimilation component of the GEPS system was modified to use additional observations in seven observations families. All these families were already used, this upgrade mainly increase the data assimilation systems robustness.
+
+The details of these changes can be consulted in the copy of the official note announcing the implementation [at this link](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
+
+* The technical specifications document of the GEPS 6.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_6.0.0_e.pdf).
+
 ## Wednesday July 3, 2019
 
 #### Upgrade to Version 6.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre

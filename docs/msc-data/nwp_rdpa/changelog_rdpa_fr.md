@@ -19,6 +19,30 @@ Résumé des changements :
 
 Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031225___18175).
 
+
+## Le mardi 18 septembre, 2018
+
+### Mise à jour vers la version 4.5.0 du système d'analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)
+
+Le mardi 18 septembre 2018,  à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'analyses régionales déterministes de précipitation (CaPA-ARDP) à la version 4.5.0.
+
+Les modifications incluses dans cette mise à jour sont résumées comme suit :
+
+* Les champs d'essai de ces analyses de précipitation sont issus de la nouvelle version du système implantée le 18 septembre 2018
+    * CaPA-ARDP construit maintenant ses champs d'essai à partir du [SRPD v6.0.0](../nwp_rdps/changelog_rdps_fr.md).
+* Assimilation des observations du réseau CoCoRaHS. (CaPA-ARDP)
+* Nouvelle analyse 24h valide à 06h00 UTC alignée avec la journée climatologique. (CaPA-ARDP)
+* CaPA-ARDP v4.5.0 utilisera les échéances de 0 et 6 heure de précipitation totale au lieu des 6 et 12 heures. Ceci est rendu possible parce que le SRPD 6.0.0 peut maintenant générer des précipitations dès le début de l'intégration.
+
+Une copie de la note officielle annoncant cette implantation est disponible en cliquant sur le lien :
+
+* [Annonce officielle de CaPA-ARDP 4.5.0](http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171415___18584)
+
+Une note technique avec plus de détails sur ces changements est disponible via le lien :
+
+* [Note technique du CaPA-ARDP 4.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-450_20180918_f.pdf)
+
+
 ## Le mercredi 9 novembre 2016
 
 ### Mise à jour du système d'analyse régionale déterministe de précipitation (CaPA-ARDP version 4.0.0) au Centre météorologique canadien (CMC)

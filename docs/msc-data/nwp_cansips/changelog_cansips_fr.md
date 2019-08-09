@@ -20,11 +20,29 @@ Les modifications majeures du SPISCAN dans cette mise à jour sont dans la compo
 Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf).
 
 
+## Le mardi 21 juin 2016
+
+### Mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+
+Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN).
+
+Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCAN proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisée auparavant.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211910___00716). 
+
+
+## Le mardi 23 juillet 2013
+
+### Adjustement à l'analyse de température de la mer (GODAS) utilisée par SPISCan
+
+Le mardi 23 juillet 2013 le CMC a apporté un ajustement à l'analyse GODAS de la temperature de la mer utilisée par SPISCan. Cela a été rendu nécessaire car le 16 juillet 2013, les données GODAS arrivant à SPISCan avaient été interrompues. Un certain nombre de mesures ont été prises pour rétablir ce flux de donnees GODAS. En conséquence, l'accès à l'analyse de GODAS quotidien a été corrigé et rétabli le 23 Juillet 2013, avec la mise en place des analyses corrigées du 17-21 Juillet 2013. Il était prévu qu'à partir du 23 Juillet 2013, que la séquence normale pour l'importation et l'assimilation des données GODAS sera de retour à la normal à partir du 24 Juillet 2013.
+
+
 ## Le jeudi 1er décembre 2011
 
 ### Le CMC introduit le système SPSICan de prévision mensuelle et saisonnière
 
-Le 1er décembre 2011, le Centre Météorologique Canadien a commencé à émettre des produits à avec son nouveau système coupplé de prévision multi-saison globale pour produire ses prévisions mensuelles et saisonnières de conditions climatiques.
+Le 1er décembre 2011, le Centre Météorologique Canadien a commencé à émettre des produits avec son nouveau système couplé de prévision multi-saison globale pour produire ses prévisions mensuelles et saisonnières de conditions climatiques.
 
 Ce nouveau système s'appelle SPISCan (Système de Prévision Interannuelle et Saisonnière Canadien).
 

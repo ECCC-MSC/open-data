@@ -19,6 +19,28 @@ Changes are summarized as follows:
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031240___43184).
 
 
+## Tuesday September 18, 2018
+
+### Upgrade to version 4.5.0 of the High Resolution Deterministic Precipitation Analysis System (CaPA-HRDPA) at the Canadian Meteorological Centre (CMC)
+
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-HRDPA (2.5km)) to version 4.5.0.
+
+The changes included in this upgrade are summarized as follows:
+
+* The trial fields for these precipitaion analyses are generated from the new version of the system implemented on September 18, 2018:
+    * CaPA-HRDPA now builds its trial fields from [HRDPS v5.0.0](../nwp_hrdps/changelog_hrdps_en.md)
+* Assimilation of the observations from the CoCoRaHS network. (CaPA-HRDPA)
+* New 24h analysis valid at 06h00 UTC in line with the climatological day. (CaPA-HRDPA)
+
+A copy of the official note announcing this implementation is available at this location:
+
+* [CaPA-HRDPA official announcement](http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171416___54417)
+
+Technical note with more details on these changes is available at this link:
+
+* [CaPA-HRDPA technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_hrdpa-450_e.pdf)
+
+
 ## Friday March 2, 2018
 
 ### Implementation of the High Resolution Deterministic Precipitation Analysis System (CaPA-HRDPA Version 4.1.0) at the Canadian Meteorological Centre (CMC)
