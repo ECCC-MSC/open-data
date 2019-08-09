@@ -6,6 +6,18 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mardi 23 juillet 2019
+
+### Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le système global de prévision d'ensemble (SGPE)
+
+Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) a procédé à une mise à jour du système global de prévision d'ensemble (SGPE).
+
+Les composantes d'assimilation de données du SGPE ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.
+
+Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement [via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
+
+* Le document des spécifications techniques pour le SGPE 6.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_6.0.0_f.pdf).
+
 ## Le mercredi 3 juillet 2019
 
 #### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 6.0.0) du Centre météorologique canadien (CMC)

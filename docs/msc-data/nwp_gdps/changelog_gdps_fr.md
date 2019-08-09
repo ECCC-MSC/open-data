@@ -6,6 +6,18 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mardi 23 juillet 2019
+
+### Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le système global de prévision déterministe (SGPD)
+
+Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) a procédé à une mise à jour du système global de prévision déterministe (SGPD).
+
+Les composantes d'assimilation de données du SGPD ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.
+
+Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement [via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
+
+* Le document des spécifications techniques pour le SGPD 7.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_7.0.0_f.pdf).
+
 ## Le mercredi 3 juillet 2019
 
 ### Mise à jour du Système global de prévision déterministe (SGPD) 7.0.0 du Centre météorologique canadien (CMC)
@@ -125,6 +137,33 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_f.pdf).
 
 
+## Le mercredi 30 avril 2014
+
+### Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SGPD
+
+Le 30 avril, à partir de la passe du champs d'essai de 0600 UTC du système global de prévisions déterministes (SGPD), le Centre meteorologique canadien (CMC) d'environnement Canada a ajouté les observations de radiances de l'instrument IASI du satellite METOP-B/1 au système d'assimilation de données opérationnel. Cet instrument (IASI) est le dernier du satellite METOP-B/1 à faire l'objet d'une mise en œuvre opérationnelle.
+
+Motivation pour l'incorporation des observations IASI de METOP-B/1 aux données opérationnelles du SGPD :
+Bien que les données du satellite METOP-A/2 continueront d'etre assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opéerationnel de l'agence EUMETSAT. Les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. de plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.
+
+Suite à ces changements le numéros de version du système SGPD passe de 3.1.0 à 3.1.1.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
+
+
+## Le jeudi 7 novembre 2013
+
+### Ajout de données satellitaires additionnelles (CSR, ATOVS, vents polaires) au système d'assimilation du SGPD
+
+Le jeudi 7 novembre 2013 à partir de la prévision produite des données de 12Z, des données satellitaires additionnelles ont été ajoutées au système d'assimilation de données du Système global de prévision déterministe (SGPD).
+
+Les changements incluent: l'ajout des radiances CSR (radiance en ciel clair) de MétéoSat10, l'ajout des radiances ATOVS de Metop-B et des vents polaires AVHRR de Metop-B.
+
+En même temps, d'autres ajustements ont aussi été installés. Nous avons fait une mise-à-jour des fichiers de coefficients spectroscopiques utilisés par le modèle de transfert radiatif RTTOV pour le calcul des observations simulés (la portion "P"révision de six heures des Observations-Prévisions (O-P) des instruments AMSUB et MHS de tous les satellites. Les nouveaux coefficients de type "Newstyle" ne séparent pas l'absorption de la vapeur d'eau en une contribution de raies et un continuum. Cela a un impact neutre sur les résultats.
+
+Avec l'installation de tous ces changements, le SGPD opérationnel devient donc version 3.1.0.
+
+
 ## Le mercredi, 13 février 2013
 
 ### Mise à jour majeure du système global de prévision déterministe (SGPD) version 3.0.0 du Centre météorologique canadien (CMC)
@@ -141,3 +180,32 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdps300_20130213_f.pdf).
 
+
+## Le mercredi 16 novembre 2011
+
+### Améliorations apportées au système global de prévision déterministe (SGPD v 2.2.0) du Centre Météorologique Canadien.
+
+À partir du cycle d'assimilation de 06 UTC le 16 novembre 2011, le Centre Météorologique Canadien (CMC) implantera des changements aux systèmes d'assimilation global et régional en y ajoutant des données satellitaires et en introduisant une nouvelle analyse de température de la surface de la mer.
+
+Voici un sommaire des changements apportés au système d'assimilation déterministe global
+
+A. Nouvelles données satellitaires - les données satellitaires suivantes seront incorporées dans les systèmes d'assimilation global et régional:
+* 62 canaux infrarouges provenant de l'instrumentation IASI à bord du satellite METOP.
+* 7 canaux micro-ondes de l'instrumentation SSM/IS à bord du satellite DMSP F16.
+* 1 canal de vapeur d'eau provenant des deux satellites METEOSAT, de MTSAT-1R et de GOES-W.
+* Une restriction sur les canaux infrarouges de l'instrumentation AIRS dans les régions polaires sera enlevée.
+* L'écrémage horizontal de toutes les radiances satellitaires passera de 250 km (sauf 200 km pour SSM/I) présentement à 150 km, ajoutant beaucoup de données disponibles aux systèmes d'assimilation.
+
+B. Autres changements à l'assimilation:
+* Les observations d'humidité mesurées par les avions équipés de système AMDAR seront assimilées.
+* Un nouveau schéma de correction de biais des données satellitaires remplacera le schéma présent. L'impact principal sera de réduire la période sur laquelle se fait le calcul de la correction de biais de 15 à 7 jours. Le même code est utilisé pour toutes les données de radiance.
+* Une version modifiée du code de transfert radiatif (RTTOV) sera utilisée pour les données de radiance.
+* Une nouvelle analyse de la température de la surface de la mer sur grille de 0.20 degres de résolution sera dorénavant utilisée par les systèmes régional et global.
+
+Suite à ces changements, la quantité de données d'observations assimilées dans le système global d'assimilation passera approximativement de 1.9 million à 4.2 millions de pièces d'information par jour.
+
+2. É: Tous les changements ci-dessus ont été combinés et ont fait l'objet de tests exhaustifs sur des cas d'été et d'hiver, incluant une passe parallèle. 
+
+Une copie de la note officielle avec de l'information additionnelle sur l'évaluation des impacts de ces changements est disponible [en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041).
+
+Avec ces changements le systeme global de prevision deterministe (SGPD) est maintenant la version 2.2.0.

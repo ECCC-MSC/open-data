@@ -6,6 +6,18 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday July 23, 2019
+
+### Additional observations data in the Global Deterministic Prediction System (GDPS) at the Canadian Meteorological Centre
+
+On Tuesday July 23rd 2019, starting with the 0600 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) proceeded with an update of its Global Deterministic Prediction System (GDPS).
+
+The data assimilation component of the GDPS system was modified to use additional observations in seven observations families. All these families were already used, this upgrade mainly increase the data assimilation systems robustness.
+
+The details of these changes can be consulted in the copy of the official note announcing the implementation at [this link](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
+
+* The technical specifications document of the GDPS 7.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_7.0.0_e.pdf).
+
 ## Wednesday July 3, 2019
 
 ### Upgrade to Version 7.0.0 of the Global Deterministic Prediction System (GDPS) at the Canadian Meteorological Centre
@@ -132,6 +144,32 @@ A copy of the official note announcing the implementation of these changes [is a
 A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_e.pdf).
 
 
+## Wednesday April 30th 2014
+
+### Addition of IASI observations from METOP-B/1 to the operational data of the GDPS
+
+On April 30th, 2014, starting with the 0600 UTC trial-field run of the Global Deterministic Prediction System (GDPS), the Canadian Meteorological Centre (CMC) of Environment Canada added radiance observations from the IASI instrument aboard the METOP-B/1 satellite to the operational data assimilation system. IASI is the last of the instruments on-board the METOP-B/1 satellite to be included in the operational data assimilation systems.
+
+Motivation for the incorporation of IASI observations from METOP-B/1 in the operational data of the GDPS:
+
+* Although IASI data from METOP-A/2 will continue to be assimilated into our forecast systems, METOP-B/1 is now the operational METOP satellite of the EUMETSAT agency. The two satellites METOP-A/2 and METOP-B/1 have similar trajectories, but offset by a half-orbit, so the addition of METOP-B/1 IASI data will almost double the number of IASI data assimilated. Furthermore, these new data add robustness to the data assimilation system in the event of a failure of the IASI instrument on-board either METOP-A/2 or METOP-B/1.
+
+Following this change, the version of the GDPS system is changed from 3.1.0 to 3.1.1.
+
+A copy of the official note announcing the implementation of this change along with information on verification work leading up to this implementation is available [at this link](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
+
+
+## Thursday November 7 2013
+
+### Additional satellite data (CSR, ATOVS, polar winds) added to the GDPS assimilation systems and various other adjustments
+
+On Thursday November 7 2013, additional satellite data was added to the operational data assimilation system of the Global Deterministic Prediction System (GDPS). Changes include the following: additional CSR (Clear Sky Radiance) radiances from MeteoSat10, additional ATOVS radiances from Metop-B and additional AVHRR polar winds from Metop-B.
+
+Along with the addition of satellite data, there were also other adjustments made to the systems. There was an update of the spectroscopic coefficient files used by the RTTOV radiative transfer model for computing the simulated observations (the 6-hour "P"rognosis portion of the Observations-Prognosis (O-P) of the AMSUB and MHS instruments onboard all satellites. These new coefficients labelled as "Newstyle" do not separate out water vapor transmittances into line absorption and continuum absorption. The impact on the results are neutral.
+
+As a result of all of the above changes installed in this implementation, the GDPS operational system becomes version 3.1.0.
+
+
 ## Wednesday February 13, 2013
 
 ### Major Upgrade to the Global Deterministic Prediction System (GDPS) version 3.0.0 at the Canadian Meteorological Centre
@@ -152,3 +190,32 @@ A copy of the official note describing these changes and the verification work l
 
 A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdps300_20130213_e.pdf).
 
+
+## Wednesday November 16, 2011
+
+### Improvements to the Global Deterministic Prediction System (GDPS v 2.2.0) of the Canadian Meteorological Centre
+
+Starting on November 16 2011 at 06 UTC, the Canadian Meteorological Centre (CMC) will implement changes to the global and regional data assimilation systems by incorporating additional satellite data and by introducing a higher quality analysis of the sea surface temperature.
+
+Here is an overview of changes involving global data assimilation system:
+
+A. New Satellite Data: The following satellite data will be incorporated in the global and regional data assimilation systems:
+- Sixty-two (62) infrared channels from the IASI instrument on board the METOP satellite.
+- Seven (7) microwave channels from the SSM/IS instrument on board the DMSP F16 satellite.
+- One (1) water vapor channel from the GOES-W, METSAT-1R and both METEOSAT satellites.
+- A restriction to the infrared channels of the AIRS instrument in the polar regions will be removed.
+- The horizontal thinning of all satellite radiance data, currently done at 250 km (except 200 km for SSM/I) will be reduced to 150 km, therefore adding much more satellite data to the systems.
+
+B. Other Assimilation Changes:
+- Moisture observations measured from properly equipped aircraft (AMDAR) will be assimilated.
+- A new satellite data bias correction scheme will replace the current one. The main impact is the reduction of the time period to compute the bias corrections from 15 to 7 days. the same code is used for all radiance data.
+- A modified version of the RTTOV radiative transfer code will be used for satellite radiance data.
+- Also, a new sea surface temperature analysis on a grid of 0.20 degrees resolution will be used now by both global and regional systems.
+
+As a consequence of these changes, the amount of observational data assimilated in the global data assimilation system will increase from about 1.9 million to 4.2 million pieces of information per day.
+
+All of the above changes were combined and tested extensively during winter and summer seasons, including a parallel run of the global system. 
+
+A copy of the text of the official note which includes additional information on the evaluation of these changes is available [by clicking here](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___05806).
+
+With these changes the GDPS system is now version 2.2.0.
