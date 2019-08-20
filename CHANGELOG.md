@@ -10,7 +10,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.0.6
 
-* date: PLANNED FOR 2019-08-22
+* date: PLANNED FOR 2019-08-30
 * announcements:
     * not announced to users
 * new content:
@@ -29,7 +29,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * CanSIPS documentation: new system and additional data at 1.0 deg 
     * changelog integration for several NWP systems 
 * improvements:
-    * NA
+    * none
 * bug fixes:
     * formatting fixes
     * typos

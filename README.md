@@ -199,20 +199,22 @@ The following instructions take the current documentation version from `https://
 1. In a terminal window, `cd` to the root of your `public-doc` repository fork
     1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
 2. Pull the current version of the documentation you want to publish: `git pull upstream master`
-3. Tag the version:
-    1. Validate what is the version number to publish in the [changelog](CHANGELOG.md)
-    1. Verify that the version number ($VERSION) tag is available with `git tag`
-    2. Create the new tag with `git tag $VERSION`
-    3. Push the tag to upstream: `git push upstream $VERSION`
-    4. Checkout the newest tag: `git checkout $VERSION`
-4. Activate your mkdocs environment: `conda activate mkdocs`
-5. Test and validate the documentation:
+3. Update the changelog:
+    1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
+    2. Verify that the version number ($VERSION) tag is available with `git tag`
+    3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
+4. Tag the version:
+    1. Create the new tag with `git tag $VERSION`
+    2. Push the tag to upstream: `git push upstream $VERSION`
+    3. Checkout the newest tag: `git checkout $VERSION`
+5. Activate your mkdocs environment: `conda activate mkdocs`
+6. Test and validate the documentation:
     1. Run `mkdocs serve`, pay close attention to warnings (if any)
     2. Head to `http://127.0.0.1:8000` in a web browser
     3. Once validated, exit with control-c
-6. Deploy the documentation on GitHub:
+7. Deploy the documentation on GitHub:
     1. Run `mkdocs gh-deploy --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
-7. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
-8. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
-9. Prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
-10. Request the updated content to be updated on the corresponding canada.ca pages
+8. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
+9. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
+10. Prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
+11. Request the updated content to be updated on the corresponding canada.ca pages
