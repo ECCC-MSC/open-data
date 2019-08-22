@@ -42,7 +42,7 @@ Un historique de 2 mois est conservé dans ce répertoire.
 
 Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, selon la résolution.
 
-### Données à 2.5 degrées de résolution
+### Données à 2.5 degrés de résolution
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -51,7 +51,7 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 | résolution | 2.5° |
 | coordonnées du premier point de grille | 90° S  0° E | 
 
-### Données à 1 degrée de résolution
+### Données à 1 degré de résolution
 
 | Paramètre | Valeur |
 | ------ | ------ |

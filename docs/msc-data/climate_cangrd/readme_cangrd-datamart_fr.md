@@ -16,9 +16,9 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers CANGRD se trouvent à l'adresse suivante :
 
-* /climate/cangrd/geotiff/historical /annual/[anomaly, trend].
-* /climate/cangrd/geotiff/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly, trend].
-* /climate/cangrd/geotiff/historical/monthly_ens/anomaly
+* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical /annual/[anomaly, trend].
+* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly, trend].
+* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly
 
 où :
 

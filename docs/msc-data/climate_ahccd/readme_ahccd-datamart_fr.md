@@ -20,9 +20,9 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers DCCAH  se trouvent à l'adresse suivante :
 
-* /climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
 Où :
 

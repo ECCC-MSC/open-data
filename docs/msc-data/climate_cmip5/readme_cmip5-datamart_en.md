@@ -16,12 +16,12 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs :
 
-* /climate/cmip5/netcdf/historical/annual/[anomaly,absolute]
-* /climate/cmip5/netcdf/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute]
-* /climate/cmip5/netcdf/historical/monthly_ens/absolute
-* /climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/annual/[anomaly,absolute,avg_20years]                                                                  
-* /climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute,avg_20years]                                                                             
-* /climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/annual/[anomaly,absolute]
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute]
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/annual/[anomaly,absolute,avg_20years]                                                                  
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute,avg_20years]                                                                             
+* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/monthly_ens/absolute
 
 where :
 
