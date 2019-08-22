@@ -20,12 +20,12 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-*s://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
-https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
-https://dd.weather.gc.ca/model_hrdps/east/grib2/HH/hhh/
-https://dd.weather.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
-https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
-https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/east/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
 
 where :
 
