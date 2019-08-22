@@ -132,6 +132,12 @@ Example (The Radisson case) :
 * __The 3-lettre ID product every 10 minutes (Temporary)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
 * __The 5-letter ID products every 6 minutes (Permanently)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
 
+## Historical radar images
+
+Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:
+
+http://climate.weather.gc.ca/radar/index_e.html
+
 ## Support
 
 If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca

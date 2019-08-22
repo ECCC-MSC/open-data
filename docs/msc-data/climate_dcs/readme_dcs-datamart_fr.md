@@ -16,11 +16,11 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* /climate/dcs/netcdf/historical/annual/[anomaly,absolute]
-* /climate/dcs/netcdf/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute]
-* /climate/dcs/netcdf/historical/monthly_ens/absolute
-* /climate/dcs/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/annual/[anomaly,absolute,avg_20years]   
-* /climate/dcs/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute,avg_20years]                                                                             
+* https://dd.meteo.gc.ca/climate/dcs/netcdf/historical/annual/[anomaly,absolute]
+* https://dd.meteo.gc.ca/climate/dcs/netcdf/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute]
+* https://dd.meteo.gc.ca/climate/dcs/netcdf/historical/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/dcs/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/annual/[anomaly,absolute,avg_20years]   
+* https://dd.meteo.gc.ca/climate/dcs/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/seasonal/[DJF,MAM,JJA,SON]/[anomaly,absolute,avg_20years]                                                                             
 * /climate/dcs/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/monthly_ens/absolute
 
 où :

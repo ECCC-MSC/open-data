@@ -20,9 +20,9 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs :
 
-* /climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/annual/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/seasonal/[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/monthly/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
 where :
 

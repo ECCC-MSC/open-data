@@ -16,9 +16,9 @@ The  climate  data is available using the HTTP protocol and resides in a directo
 
 The data can be accessed at the following URLs :
 
-* /climate/observations/normals/csv/1981-2010/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/observations/daily/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* /climate/observations/monthly/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/observations/normals/csv/1981-2010/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/observations/daily/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* https://dd.meteo.gc.ca/climate/observations/monthly/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
 
 where :
 
