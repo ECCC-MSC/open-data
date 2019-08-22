@@ -38,11 +38,11 @@ IUnB0x_Ciii_DDHHHH__BUFR
 
 where :
 
-    * __n__ : Bulletin type identifier. 
-    * __x__ : Location grid identifier 
-    * __iii__ : Transport Canada station ID
-    * __DD__ : Date of bulletin
-    * __HHHH__ : Standard hour of bulletin
+* __n__ : Bulletin type identifier. 
+* __x__ : Location grid identifier 
+* __iii__ : Transport Canada station ID
+* __DD__ : Date of bulletin
+* __HHHH__ : Standard hour of bulletin
 
 Example :
 
