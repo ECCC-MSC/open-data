@@ -46,3 +46,5 @@ Please, note that these rates are indicative only and may change.
 
 **Starting price regarding push feed for NWP data in GRIB format, or any other data** is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
 
+
+Please note that a $200 fee is required for any changes related to data feeds.

@@ -39,11 +39,11 @@ IUnB0x_Ciii_DDHHHH__BUFR
 
 où :
 
-    * __n__ : Type de bulletin 
-    * __x__ : Emplacement dans la matrice 
-    * __iii__ : Numéro d’identification de la station de Transport Canada
-    * __DD__ : Date du bulletin
-    * __HHH__ : Heure standard du bulletin
+* __n__ : Type de bulletin 
+* __x__ : Emplacement dans la matrice 
+* __iii__ : Numéro d’identification de la station de Transport Canada
+* __DD__ : Date du bulletin
+* __HHH__ : Heure standard du bulletin
 
 Exemple :
 

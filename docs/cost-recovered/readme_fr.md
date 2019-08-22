@@ -47,4 +47,5 @@ Veuillez noter que ces tarifs sont donnés à titre indicatif et peuvent changer
 Le **tarif de départ** concernant le service de "push" des **données NWP au format GRIB, ou toute autre donnée**, est de 500 $/mois + 500 $ de frais d'installation pour un maximum de 1 Go/jour. Ajoutez 500$/mois pour chaque Go supplémentaire par jour.
 
 
+À noter que des frais de 200$ sont requis pour tout changement relié aux fils de données.
 
