@@ -7,7 +7,7 @@ This is the user-oriented changelog for the MSC Open Data documentation. It trac
 MSC's public documentation uses [Semantic Versioning](https://semver.org/) for identifying version numbers. This is version naming scheme [recommended by GoC TBS](https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/government-canada-standards-apis.html).
 
 # Changelog
-
+    
 ## 2.0.6
 
 * date: PLANNED FOR 2019-08-30
@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced to users
 * new content:
     * changelog integration for GDPS, GIOPS, RDPS, REPS, HRDPS, RDPA, HRDPA, CanSIPS, RDWPS, GDWPS, Nowcasting, RDPS-CGSL
+    * Draft to add Experimental HRDPS (1km) on DD-Alpha
 * improvements:
     * TBD
 * bug fixes:

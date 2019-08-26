@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > Experimental HRDPS on DD-Alpha 
 
 # Experimental High Resolution Deterministic Prediction System (HRDPS) 1km West data in GRIB2 format
 
@@ -20,18 +20,18 @@ MSC testing data repository DD-Alpha data can be [automatically retrieved with t
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URL :
+The data can be accessed at the following URL:
 
 http://dd.alpha.meteo.gc.ca/model_hrdps/west/1km/grib2/HH/hhh/
 
-where :
+where:
 
-* __HH__ : Model run start, in UTC [00, 12].
-* __hhh__ : Forecast hour [000, 001, 002, ..., 036]
+* __HH__: Model run start, in UTC [00, 12].
+* __hhh__: Forecast hour [000, 001, 002, ..., 036]
 
 A 24-hour history is stored in this directory.
 
-## Available Domain
+## Available domain
 
 ![Image de la grille ouest du domaine 1km du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps1km_west.png)
 
@@ -50,26 +50,26 @@ Table lists the values of various parameters of the West polar-stereographic gri
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature :
+The files have the following nomenclature:
 
 CMC_hrdps_west_Variable_LevelType_level_ps1.0km_YYYYMMDDHH_Phhh-mm.grib2 
 
-where :
+where:
 
-* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre.
-* __hrdps__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System.
-* __west__ : Constant string indicating the West domain the data is from
-* __Variable__ : Variable type included in this file.
-* __LevelType__ : Level type.
-* __Level__ : Level value.
-* __ps1.0km__ : Constant string indicating that the projection used is polar-stereographic at 1.0 km resolution.
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
-* __HH__ : UTC run time [00, 12].
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 035, 036].
-* __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available].
-* __grib2__ : Constant string indicating the GRIB2 format is used.
+* __CMC__: Constant string indicating that the data is from the Canadian Meteorological Centre.
+* __hrdps__: Constant string indicating that the data is from the High Resolution Deterministic Prediction System.
+* __west__: Constant string indicating the West domain the data is from
+* __Variable__: Variable type included in this file.
+* __LevelType__: Level type.
+* __Level__: Level value.
+* __ps1.0km__: Constant string indicating that the projection used is polar-stereographic at 1.0 km resolution.
+* __YYYYMMDD__: Year, month and day of the beginning of the forecast.
+* __HH__: UTC run time [00, 12].
+* __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 035, 036].
+* __mm__: mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available].
+* __grib2__: Constant string indicating the GRIB2 format is used.
 
-Example of file name :
+Example of file name:
 
 CMC_hrdps_west_DEPR_ISBL_0175_ps1.0km_2019082512_P003-00.grib2
 
@@ -85,7 +85,7 @@ Some fields receive limited three-dimensional coverage of 4 levels in the vertic
 
 Isobaric levels (reduced coverage, hPa): 0850, 0700, 0500, 0250.
 
-Additional levels that may be applicable to a given parameter are :
+Additional levels that may be applicable to a given parameter are:
 
 * Surface
 * Fixed height above ground
@@ -96,35 +96,16 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
 
 ## Support
 
-If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
 
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available in the [dd_info list](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
