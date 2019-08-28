@@ -19,7 +19,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * moved links out of headers on root page
     * added mailto links to ec.dps-client.ec@canada.ca
+    * added feed change fees to cost-recovery page
+    * added link to radar image archives
 * bug fixes:
+    * fixes to HRDPA Watershed format
     * formatting fixes
     
 ## 2.0.5
