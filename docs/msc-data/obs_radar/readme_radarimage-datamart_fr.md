@@ -125,8 +125,8 @@ Comment va se faire la transition et quels seront les impacts sur les usagers ?
 
 Exemple (cas du radar Radisson) :
 
-* __Produit avec l'ID de 3 lettres aux 10 minutes (temporaire)__ : [http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)
-* __Produit avec l'ID de 5 lettres aux 6 minutes (permanent)__ : [http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA)
+* __Produit avec l'ID de 3 lettres aux 10 minutes (temporaire)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)
+* __Produit avec l'ID de 5 lettres aux 6 minutes (permanent)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA)
 
 ## Archive des images radar
 
