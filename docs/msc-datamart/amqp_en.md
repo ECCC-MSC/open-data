@@ -87,4 +87,4 @@ If you use the data available on the MSC Datamart, it is strongly recommend that
 
 [https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
-Please use the following address to contact us for any comments or questions: ec.dps-client.ec@canada.ca 
+Please use the following address to contact us for any comments or questions: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca) 
