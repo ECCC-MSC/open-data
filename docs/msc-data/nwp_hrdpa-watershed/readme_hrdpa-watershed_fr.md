@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données de précipitations moyennes par bassin-versant AHRDP
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Bassin-versant AHRDP
 
 # Données et Produits de précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)
 
@@ -14,11 +14,9 @@ Le débit des rivières à un endroit précis évolue en fonction des précipita
 
 Afin de mieux interpréter les changements observés dans ces débits, il est utile de calculer les précipitations moyennes pour les bassins-versants définis par la position des stations de mesure du débit.
 
-En collaboration avec toutes les provinces et territoires, le SMC opère un réseau étendu de stations de jaugeage mesurant le débit des rivières. Des données historiques et temps réel sont disponibles ici:
-[https://eau.ec.gc.ca/](https://eau.ec.gc.ca/)
+En collaboration avec toutes les provinces et territoires, le SMC opère un réseau étendu de stations de jaugeage mesurant le débit des rivières. Des données historiques et temps réel sont disponibles ici : [https://eau.ec.gc.ca/](https://eau.ec.gc.ca/)
 
-De plus, Environnement et Changement climatique Canada a publié les Polygones des bassins du Réseau hydrométrique national, qui proposent des limites de bassins-versants à l'amont de stations hydrométriques actives et rapportant des observations de débit:
-[https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375](https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375)
+De plus, Environnement et Changement climatique Canada a publié les Polygones des bassins du Réseau hydrométrique national, qui proposent des limites de bassins-versants à l'amont de stations hydrométriques actives et rapportant des observations de débit : [https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375](https://ouvert.canada.ca/data/fr/dataset/0c121878-ac23-46f5-95df-eb9960753375)
 
 En combinant ces polygones avec l’AHRDP, il est possible d'obtenir des précipitations moyennes par bassin-versant.
 
@@ -28,7 +26,8 @@ En combinant ces polygones avec l’AHRDP, il est possible d'obtenir des précip
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_hrdpa-watershed-datamart_fr.md) 
+* [Données Esri Shapefile disponibles sur le Datamart du SMC](readme_hrdpa-watershed-datamart_fr.md) 
+* [Données disponibles via les services web géospatiaux GeoMet GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

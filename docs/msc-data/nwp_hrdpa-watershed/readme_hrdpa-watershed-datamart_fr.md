@@ -2,12 +2,12 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données de précipitations moyennes par bassin-versant AHRDP](readme_hrdpa-watershed_fr.md) > Données de précipitations moyennes par bassin-versant AHRDP sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données de précipitations moyennes par bassin-versant AHRDP](readme_hrdpa-watershed_fr.md) > Bassin-versant AHRDP sur le Datamart du SMC
 
 
-# Données GRIB2 de précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)
+# Données Esri Shapefile de précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)
 
-Des données pour plus de 1900 bassins-versants sont disponibles. Afin de réduire le nombre de fichiers sur le Datamart, il a été nécessaire de regrouper les bassins-versants par bassin de drainage:
+Des données pour plus de 1900 bassins-versants sont disponibles. Afin de réduire le nombre de fichiers sur le Datamart, il a été nécessaire de regrouper les bassins-versants par bassin de drainage :
 
 * Provinces Maritimes
 * Saint-Laurent
@@ -31,7 +31,7 @@ Des valeurs près de un indiquent que l'estimation provient essentiellement de d
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
+Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès aux fichiers Esri Shapefile.
 
 Les données sont accessibles aux adresses suivantes :
 
@@ -76,6 +76,7 @@ où :
 	* "shx" – fichier d'index pour la géométrie des données
 
 Exemple : 
+
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.dbf
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.prj
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shp

@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPA Watershed](readme_hrdpa-watershed_en.md) > HRDPA Watershed on MSC Datamart
 
-# High Resolution Deterministic Precipitation Analysis (HRDPA) average watershed precipitation Data in GRIB2 Format
+# High Resolution Deterministic Precipitation Analysis (HRDPA) average watershed precipitation data in Esri Shapefile Format
 
 Data for over 1900 watersheds is available. In order to reduce the number of files on the MSC Datamart, it has been necessary to group these watersheds by drainage basin:
 
@@ -28,13 +28,13 @@ This number can also be averaged so as to reflect the average weight given to ob
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
+The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links of downloadable Esri Shapefile data.
 
-The data can be accessed at the following URLs :
+The data can be accessed at the following URLs:
 
 * https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/HH
 
-where :
+where:
 
 * __HH__ :  Accumulation period in hours: 06 or 24 
 
@@ -42,13 +42,13 @@ A 30-day history is kept in this directory.
 
 ## File name nomenclature 
 
-NOTE : ALL HOURS ARE IN UTC.
+NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature :
+The files have the following nomenclature:
 
 CMC_HRDPA_WATERSHED-HHH-CC00cutoff_SFC_0_ps2.5km_YYYYMMDDHH_000_ID.SUF
 
-where :
+where:
 
 * __HHH__ : Accumulation period in hours (006 or 024)
 * __CC__ : Cutoff time in hours (01 or 07) after the end of the accumulation period
@@ -66,13 +66,14 @@ where :
 	* 10 Arctic
 	* 11 Mississipi River
 
-* __SUF__ : suffix of Shapefile :
+* __SUF__ : suffix of Shapefile:
 	* "dbf" - attributes of the shapes found in the Shapefile
 	* "prj" - text file describing the projection of the data
 	* "shp" - binary file containing the geometry data
 	* "shx" - index file for the geometry data
 
-Example : 
+Example: 
+
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.dbf
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.prj
 * CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shp
@@ -82,7 +83,7 @@ This set of files would contain average precipitation for a 24h accumulation per
 
 The area associated with each watershed is defined by a single polygon.
 
-Seven attributes are provided for each watershed :
+Seven attributes are provided for each watershed:
 
 * __Station__    : Station ID
 * __StationNam__ : Station Name
@@ -94,7 +95,7 @@ Seven attributes are provided for each watershed :
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning: the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
 
 * __Station__    : Station ID
 * __StationNam__ : Station Name
