@@ -78,7 +78,7 @@ Complete documentation with examples of use of the script can be found in the [P
 
 ## Support
 
-If you have any questions about these data, please contact us at : ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 

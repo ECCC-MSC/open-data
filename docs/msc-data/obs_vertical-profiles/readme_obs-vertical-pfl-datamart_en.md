@@ -67,7 +67,7 @@ While Environment and Climate Change Canada does not provide a display software 
 
 ## Support
 
-If you have any questions about these data, please contact us at: ec.dps-client.ec@canada.ca
+If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 

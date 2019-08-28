@@ -17,9 +17,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * changelog integration for GDPS, GIOPS, RDPS, REPS, HRDPS, RDPA, HRDPA, CanSIPS, RDWPS, GDWPS, Nowcasting, RDPS-CGSL
     * Draft to add Experimental HRDPS (1km) on DD-Alpha
 * improvements:
-    * TBD
+    * moved links out of headers on root page
+    * added mailto links to ec.dps-client.ec@canada.ca
 * bug fixes:
-    * TBD
+    * formatting fixes
     
 ## 2.0.5
 

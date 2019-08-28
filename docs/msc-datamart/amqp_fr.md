@@ -82,4 +82,4 @@ Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommand
 Vous pouvez vous inscrire ici :
 [https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
-Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : ec.dps-client.ec@canada.ca 
+Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca) 
