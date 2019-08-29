@@ -38,17 +38,17 @@ where :
 
 The 2 letters after "CW" or "CY" in the directory name indicates the issuing office :
 
-* QX = Gander, (N.F.) 
-* HX = Halifax (now Dartmouth)  
-* UL = Montréal  
-* QB = Québec 
-    * XK = Rimouski  
-    * TO = Toronto  
-    * WG = Winnipeg  
-    * NT = North West Territory  
-    * VR = Vancouver  
-    * CN = Canada  
-    * US = United States 
+   * QX = Gander, (N.F.) 
+   * HX = Halifax (now Dartmouth)  
+   * UL = Montréal  
+   * QB = Québec 
+   * XK = Rimouski  
+   * TO = Toronto  
+   * WG = Winnipeg  
+   * NT = North West Territory  
+   * VR = Vancouver  
+   * CN = Canada  
+   * US = United States 
 * __HH__ : The hour of the reception of the bulletin
 
 The filenames have the following nomenclature :
