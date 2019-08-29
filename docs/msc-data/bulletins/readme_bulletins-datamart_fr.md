@@ -31,28 +31,25 @@ YYYYMMDD/AA/BBBB/HH
 
 où :
 
-    * __YYYYMMDD__ : Date de réception du bulletin (pas la date d'émission!)
+* __YYYYMMDD__ : Date de réception du bulletin (pas la date d'émission!)
+* __AA__ : 2 lettres indiquant le type de bulletin. La référence complète peut être trouvée dans le Manual on the Global Telecommunication System de l'OMM, dans la section Supplément II-5, ce qui correspond aux pages 103-108. Le fichier se trouve en ligne à cette adresse : [https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf](https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf)
+* __BBBB__ : 4 lettres représentant le code de l'émetteur du bulletin.
 
-    * __AA__ : 2 lettres indiquant le type de bulletin. La référence complète peut être trouvée dans le Manual on the Global Telecommunication System de l'OMM, dans la section Supplément II-5, ce qui correspond aux pages 103-108. Le fichier se trouve en ligne à cette adresse : [https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf](https://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_fr.pdf)
+Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le nom du bureau émetteur :
 
-    * __BBBB__ : 4 lettres représentant le code de l'émetteur du bulletin.
+* QX = Gander, (T.-N.) 
+* HX = Halifax (maintenant Dartmouth)  
+* UL = Montréal  
+* QB = Québec 
+* XK = Rimouski  
+* TO = Toronto  
+* WG = Winnipeg  
+* NT = Territoire du Nord-ouest  
+* VR = Vancouver  
+* CN = Canada  
+* US = États-Unis 
 
-Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le 
-nom du bureau émetteur :
-
-    * QX = Gander, (T.-N.) 
-    * HX = Halifax (maintenant Dartmouth)  
-    * UL = Montréal  
-    * QB = Québec 
-    * XK = Rimouski  
-    * TO = Toronto  
-    * WG = Winnipeg  
-    * NT = Territoire du Nord-ouest  
-    * VR = Vancouver  
-    * CN = Canada  
-    * US = États-Unis 
-
-    * __HH__ : Représente l'heure de réception du bulletin.
+* __HH__ : Représente l'heure de réception du bulletin.
 
 Le nom de fichier suit cette nomenclature :
 
@@ -68,20 +65,20 @@ Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC. C
 
 Les codes de 2 lettres pour les bulletins d'avertissements météo sont :
 
-    * __WA__ : Airmet
-    * __WC__ : Cyclone
-    * __WE__ : Tsunami
-    * __WF__ : Tornade
-    * __WH__ : Inondation
-    * __WL__ : Smog
-    * __WO__ : Spécial
-    * __WO__ : Ouragan
-    * __WP__ : Weather
-    * __WS__ : SIGMET
-    * __WT__ : Tropical
-    * __WU__ : Orage
-    * __WV__ : Volcanique
-    * __WW__ : Météorologique
+* __WA__ : Airmet
+* __WC__ : Cyclone
+* __WE__ : Tsunami
+* __WF__ : Tornade
+* __WH__ : Inondation
+* __WL__ : Smog
+* __WO__ : Spécial
+* __WO__ : Ouragan
+* __WP__ : Weather
+* __WS__ : SIGMET
+* __WT__ : Tropical
+* __WU__ : Orage
+* __WV__ : Volcanique
+* __WW__ : Météorologique
 
 ## Support
 
