@@ -37,18 +37,17 @@ où :
 
 Les 2 lettres suivant "CW" ou "CY" dans le nom du répertoire représente le nom du bureau émetteur :
 
-* QX = Gander, (T.-N.) 
-* HX = Halifax (maintenant Dartmouth)  
-* UL = Montréal  
-* QB = Québec 
-* XK = Rimouski  
-* TO = Toronto  
-* WG = Winnipeg  
-* NT = Territoire du Nord-ouest  
-* VR = Vancouver  
-* CN = Canada  
-* US = États-Unis 
-
+   * QX = Gander, (T.-N.) 
+   * HX = Halifax (maintenant Dartmouth)  
+   * UL = Montréal  
+   * QB = Québec 
+   * XK = Rimouski  
+   * TO = Toronto  
+   * WG = Winnipeg  
+   * NT = Territoire du Nord-ouest  
+   * VR = Vancouver  
+   * CN = Canada  
+   * US = États-Unis 
 * __HH__ : Représente l'heure de réception du bulletin.
 
 Le nom de fichier suit cette nomenclature :
