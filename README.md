@@ -40,12 +40,14 @@ Files are stored on GCcode, in the public-doc repository: http://gccode.ssc-spc.
 Files in this repository:
 * README.md
     * This readme file!
+* [CHANGELOG.md](CHANGELOG.md)
+    * User-oriented list of what's new and what's changed for new public documentation versions
 * docs/
     * The actual documentation
 * docs-dev/
     * Documentation pages in development and ignored during the deployment process
-* [CHANGELOG.md](CHANGELOG.md)
-    * User-oriented list of what's new and what's changed for new public documentation versions
+* docs/msc/
+    * Public documentation that is deployed but not linked to from the main documentation pages. It is used for *public* documentation of data that is not yet available as open data. Directory structure is the same as the main documentation
 * templates/
     * Location of templates to be used for documenting MSC data
 * comdoc/
