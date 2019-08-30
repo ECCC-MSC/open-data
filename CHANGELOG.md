@@ -10,11 +10,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     
 ## 2.0.6
 
-* date: PLANNED FOR 2019-08-30
+* date: 2019-08-30
 * announcements:
     * not announced to users
 * new content:
     * changelog integration for GDPS, GIOPS, RDPS, REPS, HRDPS, RDPA, HRDPA, CanSIPS, RDWPS, GDWPS, Nowcasting, RDPS-CGSL
+    * Add products to GEPS doc
     * Draft to add Experimental HRDPS (1km) on DD-Alpha
 * improvements:
     * moved links out of headers on root page
