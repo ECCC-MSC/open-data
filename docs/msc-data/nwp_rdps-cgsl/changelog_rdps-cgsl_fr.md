@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD-CGSL](readme_nowcasting_fr.md) > Changements au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD-CGSL](readme_rdps-cgsl_fr.md) > Changements au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent
 
 # Chronologie des changements apportés au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent (SRPD-CGSL)
 

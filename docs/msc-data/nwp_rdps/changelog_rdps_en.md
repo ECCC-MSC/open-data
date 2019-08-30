@@ -27,7 +27,7 @@ On Wednesday, July 3, 2019, starting with the 1200 UTC run, the Canadian Meteoro
 The changes included in this upgrade are summarized as follows:
 
 * Changes to the forecast model:
-    * [GDPS v7.0.0]((../nwp_gdps/changelog_gdps_en.md)) replaces v6.1.0 as the pilot system.
+    * [GDPS v7.0.0](../nwp_gdps/changelog_gdps_en.md) replaces v6.1.0 as the pilot system.
     * Upgrade from GEM v4.8-LTS.16 to GEM v5.0.0. For more informations on GEM-5, please consult this document.
     * Increase in the number of vertical levels from 80 to 84.
     * Improvements to the land surface scheme ISBA.
