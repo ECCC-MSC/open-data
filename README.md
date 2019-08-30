@@ -206,7 +206,7 @@ The following instructions take the current documentation version from `https://
     2. Verify that the version number ($VERSION) tag is available with `git tag`
     3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
 4. Tag the version:
-    1. Create the new tag with `git tag $VERSION`
+    1. Create the new tag: `git tag $VERSION`
     2. Push the tag to upstream: `git push upstream $VERSION`
     3. Checkout the newest tag: `git checkout $VERSION`
 5. Activate your mkdocs environment: `conda activate mkdocs`
@@ -214,6 +214,12 @@ The following instructions take the current documentation version from `https://
     1. Run `mkdocs serve`, pay close attention to warnings (if any)
     2. Head to `http://127.0.0.1:8000` in a web browser
     3. Once validated, exit with control-c
+    4. If changes are required, the tag will need to be deleted and recreated:
+        1. Leave conda: `conda deactivate`
+        2. Return to master: `git checkout master`
+        3. Delete the tag: `git tag -d 2.x.y` where `2.x.y` corresponds to the tag to replace
+        4. Make and commit the changes to upstream master
+        5. Return to step 4 to tag the new version
 7. Deploy the documentation on GitHub:
     1. Run `mkdocs gh-deploy --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
 8. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
