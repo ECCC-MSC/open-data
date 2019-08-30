@@ -9,7 +9,7 @@ The Meteorological Service of Canada makes weather, climate, water and environme
 
 ## Available open data
 
-The [available open data from the Meteorological Service of Canada](msc-data/readme_en.md) provides up-to-date information on past, present and future weather, water, climate and environmental conditions over Canada and the world. The main categories of data available are:
+The **[available open data from the Meteorological Service of Canada](msc-data/readme_en.md)** provides up-to-date information on past, present and future weather, water, climate and environmental conditions over Canada and the world. The main categories of data available are:
 
 * Weather alerts, current conditions and public forecasts
 * Weather, water and environmental observations and forecast data
@@ -29,7 +29,7 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
 
 ## Usage overview
 
-[Overview and examples on how to access and use](usage/readme_en.md) Meteorological Service of Canada's open data.
+**[Overview and examples on how to access and use](usage/readme_en.md)** Meteorological Service of Canada's open data.
 
 ## Data discovery and metadata
 
