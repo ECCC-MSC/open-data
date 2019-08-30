@@ -1,8 +1,8 @@
-[En français](changelog_nowcasting_fr.md)
+[En français](changelog_rdps-cgsl_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Nowcasting](readme_nowcasting_en.md) > Nowcasting Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [SRPD-CGSL](readme_rdps-cgsl_en.md) >  Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence Changelog
 
 # Chronology of changes to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence
 
