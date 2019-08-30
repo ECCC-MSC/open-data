@@ -1,6 +1,6 @@
 # MSC Open Data Documentation
 
-Welcome! This documentation will tell you how to update and deploy new version of the MSC public data documentation.
+Welcome! This documentation will tell you how to update and deploy new version of the MSC Open Data public documentation.
 
 # Table of Contents
 
@@ -20,6 +20,8 @@ Welcome! This documentation will tell you how to update and deploy new version o
 
 # Scope and objectives
 
+The main objective of the 'MSC Open Data documentation' is to consolidate public documentation at a single location with links, images and interactive content, and maintained up to date and iteratively improved over time. Improvements and actions pertaining to this documentation is coordinated by the [Comité de la documentation publique](comdoc/readme.md).
+
 The repository manages the documentation published on https://eccc-msc.github.io/open-data/ which will be eventually published on Canada.ca pages.
 
 Other MSC public data documentation is published at the following locations:
@@ -27,8 +29,6 @@ Other MSC public data documentation is published at the following locations:
 * [Canada.ca](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data.html): 1 root pages and 3 sub-pages
 * [weather.gc.ca](https://weather.gc.ca/mainmenu/modelling_menu_e.html), especially in the 'Analyses and Modelling' section
 * [Collaboration server](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/index_e.html), where the CMC Product Guide is currently hosted, along with various other related documentation
-
-The main objective of this 'MSC Open Data documentation' is to consolidate public documentation at a single location with links, images and interactive content, and maintained up to date and iteratively improved over time.
 
 The writing of the documentation must consider the [Canada.ca Content Style Guide](https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html) ([French version](https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html)).
 
@@ -46,10 +46,12 @@ Files in this repository:
     * Documentation pages in development and ignored during the deployment process
 * [CHANGELOG.md](CHANGELOG.md)
     * User-oriented list of what's new and what's changed for new public documentation versions
-* scripts/
-    * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * templates/
     * Location of templates to be used for documenting MSC data
+* comdoc/
+    * Pages of the 'Comité de la documentation publique'
+* scripts/
+    * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * mkdocs.yml
     * The mkdocs configuration file
 * custom_theme/
