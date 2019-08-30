@@ -14,7 +14,7 @@ The High Resolution Deterministic Prediction System (HRDPS) carries out physics 
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [GRIB2 data available on the MSC Datamart](readme_hrdps-datamart_en.md) 
 * [Experimental 1km GRIB2 data available on the MSC testing data repository DD-Alpha](readme_hrdps-datamart-alpha_en.md) 

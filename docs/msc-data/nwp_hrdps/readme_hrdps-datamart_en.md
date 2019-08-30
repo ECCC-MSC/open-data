@@ -18,7 +18,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs :
+The data can be accessed at the following URLs:
 
 * https://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
 * https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
@@ -191,7 +191,7 @@ Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 en
 
 ## Support
 
-If you have any questions about these data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 
 ## Announcements from the dd_info mailing list 
