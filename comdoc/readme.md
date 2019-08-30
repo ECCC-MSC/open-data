@@ -26,9 +26,12 @@ Le Comité de la documentation publique est présentement composé de (ordre alp
 * David Anselmo, section CMOI
 * Sandrine Édouard, section CMOA
 
+Invités :
+* Priscilla Busseau, section CMOA
+
 
 # Activités
 
-Le Comité se rencontre à interval régulier pour faire le suivi des changements, déploiements et communications.
+Le Comité se rencontre à intervalle régulier pour faire le suivi des changements, déploiements et communications.
 
 Voir également la [liste des billets ouverts dans la catégorie 'ComDoc'](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues?label_name%5B%5D=ComDoc).

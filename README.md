@@ -40,12 +40,14 @@ Files are stored on GCcode, in the public-doc repository: http://gccode.ssc-spc.
 Files in this repository:
 * README.md
     * This readme file!
+* [CHANGELOG.md](CHANGELOG.md)
+    * User-oriented list of what's new and what's changed for new public documentation versions
 * docs/
     * The actual documentation
 * docs-dev/
     * Documentation pages in development and ignored during the deployment process
-* [CHANGELOG.md](CHANGELOG.md)
-    * User-oriented list of what's new and what's changed for new public documentation versions
+* docs/msc/
+    * Public documentation that is deployed but not linked to from the main documentation pages. It is used for *public* documentation of data that is not yet available as open data. Directory structure is the same as the main documentation
 * templates/
     * Location of templates to be used for documenting MSC data
 * comdoc/
@@ -203,23 +205,23 @@ The following instructions take the current documentation version from `https://
 2. Pull the current version of the documentation you want to publish: `git pull upstream master`
 3. Update the changelog:
     1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
-    2. Verify that the version number ($VERSION) tag is available with `git tag`
+    2. Verify that the version number ($VERSION) tag is available with `git fetch tags` and then `git tag`
     3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
 4. Tag the version:
     1. Create the new tag: `git tag $VERSION`
-    2. Push the tag to upstream: `git push upstream $VERSION`
     3. Checkout the newest tag: `git checkout $VERSION`
 5. Activate your mkdocs environment: `conda activate mkdocs`
 6. Test and validate the documentation:
     1. Run `mkdocs serve`, pay close attention to warnings (if any)
-    2. Head to `http://127.0.0.1:8000` in a web browser
-    3. Once validated, exit with control-c
-    4. If changes are required, the tag will need to be deleted and recreated:
+    2. Head to http://127.0.0.1:8000 in a web browser, once validation completed, stop `mkdocs serve` with control-c
+    3. If validation succeeded:
+        1. Push the tag to upstream: `git push upstream $VERSION`
+    4. If validation failed:
         1. Leave conda: `conda deactivate`
         2. Return to master: `git checkout master`
         3. Delete the tag: `git tag -d 2.x.y` where `2.x.y` corresponds to the tag to replace
         4. Make and commit the changes to upstream master
-        5. Return to step 4 to tag the new version
+        5. Return to step 2
 7. Deploy the documentation on GitHub:
     1. Run `mkdocs gh-deploy --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
 8. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
