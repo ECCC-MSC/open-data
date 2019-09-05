@@ -201,6 +201,8 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-
 &TIME=2019-06-21T12:00:00Z&DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
 ```
 
+Notez que les requêtes avec des plages de temps ou des valeurs temporelles multiples ne sont pas actuellement prises en charge dans GeoMet pour les paramètres `TIME` ou `DIM_REFERENCE_TIME`. Seules les requêtes de temps ponctuelles sont supportées.
+
 #### Différences entre les dimensions temporelles de GeoMet-Météo et GeoMet-Climat
 
 Il est important de considérer les différences dans la spécification du temps entre GeoMet-Météo et GeoMet-Climat, différences issues de la nature différente des données en cause.

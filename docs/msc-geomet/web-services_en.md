@@ -200,6 +200,8 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-
 &TIME=2019-06-21T12:00:00Z&DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
 ```
 
+Note that queries with time ranges or multiple time values are not currently supported on GeoMet for both `TIME` or `DIM_REFERENCE_TIME` parameters. Only single time queries are supported.
+
 #### Time handling differences between GeoMet-Weather and GeoMet-Climate
 
 It is important to mention that time is not handled in the same manner between GeoMet-Weather and GeoMet-Climate due to the different nature of the underlying data.
