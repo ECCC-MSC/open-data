@@ -48,6 +48,8 @@ List and links to the products available for this dataset :
 ### Aviation products
 
 * [Turbulence and icing](https://meteo.gc.ca/model_forecast/turb_e.html)
+* [Documentation - 4-panel aviation package](../../GDP/aviation-package_en.md)
+* [Documentation - 4-panel ceiling forecasts](../../GDP/ceiling_en.md)
 
 ### Astronomy products
 

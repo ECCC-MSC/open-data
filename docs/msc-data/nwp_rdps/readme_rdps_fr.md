@@ -48,6 +48,8 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ### Produits pour l'aviation
 
 * [Turbulence et givrage](https://meteo.gc.ca/model_forecast/turb_f.html)
+* [Documentation - Prévision aéronautique en 4 panneaux](../../GDP/aviation-package_fr.md)
+* [Documentation - Prévisions de plafond en 4 paneaux](../../GDP/ceiling_fr.md)
 
 ### Produits pour l'astronomie
 
