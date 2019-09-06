@@ -1,8 +1,8 @@
 [In English](aviation-package_en.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > [Données du SMC](../msc-data/readme_fr.md) > Prévisions pour l'aviation en 4 panneaux
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Prévisions pour l'aviation en 4 panneaux
 
 
 # Prévisions pour l'aviation (4 panneaux)

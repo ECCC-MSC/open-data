@@ -1,8 +1,8 @@
 [En français](aviation-package_fr.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > [MSC data](../msc-data/readme_en.md) > Four Panel Aviation Package 
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Four Panel Aviation Package 
 
 
 # Aviation Package (4-panel)
