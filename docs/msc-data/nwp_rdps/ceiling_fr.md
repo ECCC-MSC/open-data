@@ -1,8 +1,8 @@
 [In English](ceiling_en.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../readme_fr.md) > [Données du SMC](../msc-data/readme_fr.md) > Plafonds
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Plafonds
 
 
 # Plafonds
