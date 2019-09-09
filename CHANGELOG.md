@@ -17,6 +17,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * improvements:
     * bolding of main links on root page
+    * GeoMet: clarified support multiple TIME parameters
+    * updated GeoMet-OGC-API references
 * bug fixes:
     * typos
     * formatting fixes
