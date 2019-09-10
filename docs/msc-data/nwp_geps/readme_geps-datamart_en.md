@@ -20,7 +20,7 @@ The data can be accessed at the following URLs :
 
 where :
 
-* __TYPE__ : String indicating individual members direct model outputs (not processed) or probabilistic products created from all members [raw,products]
+* __TYPE__ : String indicating individual members direct model outputs (not processed) or probabilistic products created from all members [raw, products]
 * __HH__ : Model run start, in UTC [00,12]
 * __hhh__ : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC
 
