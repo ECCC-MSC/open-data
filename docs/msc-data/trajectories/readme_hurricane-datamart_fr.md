@@ -38,10 +38,12 @@ La convention régissant les noms de fichiers est la suivante :
 YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
 
 où :
+
 * __YYYYMMDD__HHMM__ : Date d'émission de la prévision (UTC).
 * __Z__ : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC).
 * __STORM-NAME__ : Nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.).
 * __TYPE__ : Type de fichier shapefile :
+
     * « pts » pour points, qui contient majoritairement des données/attributs
     * « lin » pour les segments de ligne qui relient les points de suivi de la prévision
     * « rad » pour les informations des rayons de prévisions de vent (quadrants)

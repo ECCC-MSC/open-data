@@ -16,11 +16,11 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* https://dd.weather.gc.ca/ensemble/geps/grib2/raw/HH/hhh/
+* https://dd.weather.gc.ca/ensemble/geps/grib2/TYPE/HH/hhh/
 
 where :
 
-* __raw__ : Constant string indicating model data is raw (not processed)
+* __TYPE__ : String indicating individual members direct model outputs (not processed) or probabilistic products created from all members [raw,products]
 * __HH__ : Model run start, in UTC [00,12]
 * __hhh__ : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC
 

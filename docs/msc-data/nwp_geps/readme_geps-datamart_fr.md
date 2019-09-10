@@ -16,10 +16,11 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* https://dd.meteo.gc.ca/ensemble/geps/grib2/raw/HH/hhh/
+* https://dd.meteo.gc.ca/ensemble/geps/grib2/TYPE/HH/hhh/
 
 où :
 
+* __TYPE__ : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw,products]
 * __raw__ : Chaîne de caractères constante indiquant les sorties brutes du modèle
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC
