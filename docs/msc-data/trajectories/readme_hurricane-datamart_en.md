@@ -38,11 +38,13 @@ File naming convention is :
 YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
 
 where :
+
 * __YYYYMMDD__ : Forecast issuance date
 * __HHMM__ : Time in UTC 
 * __Z__ : Constant string, indicating Zulu time (UTC code name)
 * __STORM-NAME__ : Storm name (e.g. BERTHA - hurricane, post-tropical, etc)
 * __TYPE__ : Type of shapefile:
+
     * "pts" - The forecast locations (points) 
     * "lin" - The line segments connecting forecast track points
     * "rad" - Contains forecast wind radii information (wind quadrants)
