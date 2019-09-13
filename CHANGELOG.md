@@ -10,15 +10,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     
 ## 2.0.7
 
-* date: PLANNED FOR 2019-09-20
+* date: 2019-09-16
 * announcements:
     * not announced to users
 * new content:
-    * TBD
+    * none
 * improvements:
     * bolding of main links on root page
     * GeoMet: clarified support multiple TIME parameters
     * updated GeoMet-OGC-API references
+    * adjust the GEPS doc for products 
+    * correct the HRDPS forecast hour availability (00 to 48h for all domains)	
 * bug fixes:
     * typos
     * formatting fixes
@@ -30,7 +32,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced to users
 * new content:
     * changelog integration for GDPS, GIOPS, RDPS, REPS, HRDPS, RDPA, HRDPA, CanSIPS, RDWPS, GDWPS, Nowcasting, RDPS-CGSL
-    * Add products to GEPS doc
+    * add products to GEPS doc
     * Draft to add Experimental HRDPS (1km) on DD-Alpha
 * improvements:
     * moved links out of headers on root page

@@ -19,22 +19,15 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. Nous vous recommandons d’automatiser le téléchargement en le scriptant avec wget (lien externe, anglais) ou un programme équivalent. Pour plus d’information sur wget, consultez les notes d’utilisation.
 
-Les données sont accessibles aux adresses suivantes :
+Les données sont accessibles à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/model_hrdps/continental/grib2/HH/hhh/
-* https://dd.meteo.gc.ca/model_hrdps/north/grib2/HH/hhh/
-* https://dd.meteo.gc.ca/model_hrdps/east/grib2/HH/hhh/
-* https://dd.meteo.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
-* https://dd.meteo.gc.ca/model_hrdps/west/grib2/HH/hhh/
-* https://dd.meteo.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
+* https://dd.meteo.gc.ca/model_hrdps/domain/grib2/HH/hhh/
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18].
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 024] de l’Est et des Maritimes.
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 042] de l’Ouest.
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Continental.
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] du Nord à 00Z et 12Z.
+* __domain__ : Chaîne de ccaractères indiquant le domaine représenté [continental, north, east, prairies, west, maritimes]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18], pour tous les domaines sauf le domaine Nord [00, 12]
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -195,7 +188,6 @@ Depuis le 18 octobre 2016, un masque pour mieux représenter les zones où les d
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
-
 
 ## Annonces de la liste de diffusion dd_info 
 
