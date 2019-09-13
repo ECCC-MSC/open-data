@@ -18,22 +18,15 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
-The data can be accessed at the following URLs:
+The data can be accessed at the following URL:
 
-* https://dd.weather.gc.ca/model_hrdps/continental/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/north/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/east/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/prairies/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/west/grib2/HH/hhh/
-* https://dd.weather.gc.ca/model_hrdps/maritimes/grib2/HH/hhh/
+* https://dd.weather.gc.ca/model_hrdps/domain/grib2/HH/hhh/
 
 where :
 
-* __HH__ : Model run start, in UTC [00, 06, 12, 18].
-* __hhh__ : Forecast hour [000, 001, 002, ..., 024] for Maritimes and East.
-* __hhh__ : Forecast hour [000, 001, 002, ..., 042] for West.
-* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for Continental.
-* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for North at 00Z and 12Z.
+* __domain__ : Constant string indicating the available domain [continental, north, east, prairies, west, maritimes]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18], except the North domain [00, 12]
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048] 
 
 A 24-hour history is stored in this directory.
 
