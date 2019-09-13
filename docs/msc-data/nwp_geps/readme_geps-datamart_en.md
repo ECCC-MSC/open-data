@@ -42,7 +42,7 @@ NOTE : ALL HOURS ARE IN UTC.
 The files have the following nomenclature :
 
 * CMC_geps-raw_Variable_LevelType_Level_latlonResolution_YYYYMMDDHH_Phhh_allmbrs.grib2
-* CMC-geps-prob_Variable_LevelType_Level_latlonResolution_YYYYMMDDHH_Phhh_all-products.grib2
+* CMC_geps-prob_Variable_LevelType_Level_latlonResolution_YYYYMMDDHH_Phhh_all-products.grib2
 
 
 where :
