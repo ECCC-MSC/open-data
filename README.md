@@ -15,6 +15,7 @@ Welcome! This documentation will tell you how to update and deploy new version o
     * [Files in the documentation](#files-in-the-documentation)
     * [Changes to the Licence](#changes-to-the-licence)
 6. [Deploying the documentation](#deploying-the-documentation)
+    * [Permission requirements](#permission-requirements)
     * [Deployment to GitHub Pages with mkdocs](#deployment-to-github-pages-with-mkdocs)
 
 
