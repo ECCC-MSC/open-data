@@ -34,7 +34,7 @@ Vidéos:
 
 ### Sur le SMC, nos données, et domaines d'application (enjeux présents et futurs)
 
-[![Slide 1](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png](http://img.youtube.com/vi/IgNc3TxnrIA/0.jpg)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
 
 **Présentateur**: Bertrand Denis, responsable des systèmes de données météorologiques, géospatiales, et à données ouvertes au Service météorologique du Canada (SMC). 
 
@@ -42,40 +42,15 @@ Vidéos:
 
 ### Le Datamart du SMC et les services de données ouvertes
 
-[![](images/sandrine-edouard.png)](http://www.youtube.com/watch?v=RSGI0HqVB2s "Le Datamart du SMC et les services de données ouvertes")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/sandrine-edouard.png](http://img.youtube.com/vi/RSGI0HqVB2s/0.jpg)](http://www.youtube.com/watch?v=RSGI0HqVB2s "Le Datamart du SMC et les services de données ouvertes")
 
 Présentatrice: Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
 
 **Sujet**: Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
 
-
-### Données météorologiques sur le parquet d'Hydro-Québec
-
-[![](images/hydro-quebec.png)](http://www.youtube.com/watch?v=p8aAEz_WIkE "Données météorologiques sur le parquet d'Hydro-Québec")
-
-**Présentateur**: Pierre Dionne, Conseiller en transactions énergétiques à Hydro-Québec
-
-**Sujet**: Comment l'usage des données météorologiques du SMC sur le Datamart aide Hydro-Québec à planifier les opérations d'achats et de ventes d'énergie excédentaires. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/Presentation-DataMart%20-Pierre%20Dionne%20En.pptx).
-
-### WPred: Nos prévisions à votre service  
-
-[![](images/wpred.png)](http://www.youtube.com/watch?v=ufX4t2WNVts "WPred: Nos prévisions à votre service")
-
-**Présentateur**: Christophe Sibuet Watters, CEO de WPred
-
-**Sujet**: Présentation de la société WPred, comment utiliser les données du SMC pour générer des prévisions météorologiques spécialisées pour les parcs éoliens, les parcs solaires et les aéroports, et quelles sont les données importantes pour WPred. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/WPred_Presentation_EN_Hackaton.pptx).
-
-### Intact: Utilisation des données météorologiques dans le secteur des assurances 
-
-[![](images/intact.png)](http://www.youtube.com/watch?v=vlotXiwHwD8 "Utilisation des données météorologiques dans le secteur des assurances")
-
-**Présentateur**: Jonathan Gadoury, Intact DataLab
-
-**Sujet**: utilisation de Datamart du SMC dans le secteur des assurances, des projets actuels et futurs pour utiliser ces données, et sur les besoins en données météorologiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/2019-07-08%20-%20Weather%20Data%20in%20the%20Insurance%20Industry.pdf).
-
 ### Services Web géospatiaux: passé, présent et futur
 
-[![](images/tom-kralidis.png)](http://www.youtube.com/watch?v=R5rWE56D1U8 "Services Web géospatiaux: passé, présent et futur")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/tom-kralidis.png](http://img.youtube.com/vi/R5rWE56D1U8/0.jpg)](http://www.youtube.com/watch?v=R5rWE56D1U8 "Services Web géospatiaux: passé, présent et futur")
 
 **Présentateur**: Tom Kralidis, Spécialiste principal en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
 
@@ -83,7 +58,7 @@ Présentatrice: Sandrine Edouard,  coordonnatrice nationale de l'accès aux donn
 
 ### GeoMet du SMC - Données SMC et services web géospatiaux 
 
-[![](images/alexandre-leroux.png)](http://www.youtube.com/watch?v=LuiMPnkSyIM " GeoMet du SMC services web géospatiaux")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/alexandre-leroux.png](http://img.youtube.com/vi/LuiMPnkSyIM/0.jpg)](http://www.youtube.com/watch?v=LuiMPnkSyIM " GeoMet du SMC services web géospatiaux")
 
 **Présentateur**: Alexandre Leroux, Spécialiste principal en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
 
@@ -91,7 +66,7 @@ Présentatrice: Sandrine Edouard,  coordonnatrice nationale de l'accès aux donn
 
 ### Centre canadien des services climatiques 
 
-[![](images/emilia-diaconescu.png)](http://www.youtube.com/watch?v=QmsDfJ9W5m0 "Centre canadien des services climatologiques")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/emilia-diaconescu.png](http://img.youtube.com/vi/QmsDfJ9W5m0/0.jpg)](http://www.youtube.com/watch?v=QmsDfJ9W5m0 "Centre canadien des services climatologiques")
 
 **Présentateur**: Emilia Diaconescu, coordonnatrice de programmes environnementaux du [CCSC](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html)
 
@@ -99,7 +74,7 @@ Présentatrice: Sandrine Edouard,  coordonnatrice nationale de l'accès aux donn
 
 ### Démonstration sur l'accès aux données ouvertes via le Datamart du SMC et GeoMet, à l'aide de la nouvelle documentation
 
-[![](images/lp-rousseau-lambert.png)](http://www.youtube.com/watch?v=nCUSrFgwp8Q "Démonstration sur l'accès aux données ouvertes via MSC Datamart et GeoMet, à l'aide de la nouvelle documentation")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/lp-rousseau-lambert.png](http://img.youtube.com/vi/nCUSrFgwp8Q/0.jpg)](http://www.youtube.com/watch?v=nCUSrFgwp8Q "Démonstration sur l'accès aux données ouvertes via MSC Datamart et GeoMet, à l'aide de la nouvelle documentation")
 
 **Présentateur**: Louis-Philippe Rousseau-Lambert, spécialiste en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
 
@@ -107,15 +82,39 @@ Présentatrice: Sandrine Edouard,  coordonnatrice nationale de l'accès aux donn
 
 ### Séance de questions-réponses 
 
-[![](images/questions-and-answers.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/questions-and-answers.jpg](http://img.youtube.com/vi/ZhrZ824IOFc/0.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
 
 **Animateur**: Miguel Tremblay
 
 Séance de questions–réponses des participants au forum de données ouvertes couvrant les présentations offertes en matinée (présentations d'ordre générale et démonstration) 
 
+### Données météorologiques sur le parquet d'Hydro-Québec
+
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/hydro-quebec.png](http://img.youtube.com/vi/p8aAEz_WIkE/0.jpg)](http://www.youtube.com/watch?v=p8aAEz_WIkE "Données météorologiques sur le parquet d'Hydro-Québec")
+
+**Présentateur**: Pierre Dionne, Conseiller en transactions énergétiques à Hydro-Québec
+
+**Sujet**: Comment l'usage des données météorologiques du SMC sur le Datamart aide Hydro-Québec à planifier les opérations d'achats et de ventes d'énergie excédentaires. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/Presentation-DataMart%20-Pierre%20Dionne%20En.pptx).
+
+### WPred: Nos prévisions à votre service  
+
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/wpred.png](http://img.youtube.com/vi/ufX4t2WNVts/0.jpg)](http://www.youtube.com/watch?v=ufX4t2WNVts "WPred: Nos prévisions à votre service")
+
+**Présentateur**: Christophe Sibuet Watters, CEO de WPred
+
+**Sujet**: Présentation de la société WPred, comment utiliser les données du SMC pour générer des prévisions météorologiques spécialisées pour les parcs éoliens, les parcs solaires et les aéroports, et quelles sont les données importantes pour WPred. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/WPred_Presentation_EN_Hackaton.pptx).
+
+### Intact: Utilisation des données météorologiques dans le secteur des assurances 
+
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/intact.png](http://img.youtube.com/vi/vlotXiwHwD8/0.jpg)](http://www.youtube.com/watch?v=vlotXiwHwD8 "Utilisation des données météorologiques dans le secteur des assurances")
+
+**Présentateur**: Jonathan Gadoury, Intact DataLab
+
+**Sujet**: utilisation de Datamart du SMC dans le secteur des assurances, des projets actuels et futurs pour utiliser ces données, et sur les besoins en données météorologiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/2019-07-08%20-%20Weather%20Data%20in%20the%20Insurance%20Industry.pdf).
+
 ### Table ronde des usagers
 
-[![](images/table-ronde.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/table-ronde.jpg](http://img.youtube.com/vi/(http://img.youtube.com/vi/vlotXiwHwD8/0.jpg)]/0.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
 
 Animation: Miguel Tremblay
 
