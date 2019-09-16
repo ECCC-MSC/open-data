@@ -4,7 +4,7 @@
 
 # Forum de données ouvertes du SMC 2019
 
-Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](hackaton-METEOHACK-2019_fr.md)organisé du 8 au 11 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
+Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](hackaton-METEOHACK-2019_fr.md) organisé du 8 au 11 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
 
 Ce forum était composé de présentations d’ordre général sur l’ensemble des services de données ouvertes du SMC et du Centre canadien des services climatiques (CCCS). Une démonstration sur l’accès aux données (GeoMet du SMC, AMQP) a complété cette séance matinale.
 
@@ -116,7 +116,7 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/table-ronde.jpg](http://img.youtube.com/vi/ZhrZ824IOFc/0.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
 
-Animation: Miguel Tremblay
+**Animateur**: Miguel Tremblay
 
 **Sujet**: séance d'échange entre les usagers et réponses venant des experts en données du SMC, concernant les points à améliorer dans les services de données; tenue en après-midi lors du Forum le 8 juillet 2019, et animée par Miguel Tremblay du SMC. Citation vedette: ".. and you don't think JPEG2000 is cool?".
 
