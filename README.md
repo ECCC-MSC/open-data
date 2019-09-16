@@ -170,6 +170,10 @@ Prior applying any change to the [licence accompanying the documentation](licenc
 
 # Deploying the documentation
   
+## Permission requirements
+  
+The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex and Tom for GODS. 
+  
 ## Deployment to GitHub Pages with mkdocs
 
 The deployment of the MSC Open Data Documentation to GitHub requires the user to have write permissions to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). At the moment, the colleagues having write permissions are Alexandre Leroux, Sandrine Edouard and Tom Kralidis.
