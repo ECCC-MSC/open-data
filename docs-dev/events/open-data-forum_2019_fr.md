@@ -114,7 +114,7 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 
 ### Table ronde des usagers
 
-[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/table-ronde.jpg](http://img.youtube.com/vi/(http://img.youtube.com/vi/vlotXiwHwD8/0.jpg)]/0.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
+[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/table-ronde.jpg](http://img.youtube.com/vi/vlotXiwHwD8/0.jpg)](http://www.youtube.com/watch?v=ZhrZ824IOFc "Table ronde des usagers - Forum des données ouvertes")
 
 Animation: Miguel Tremblay
 
