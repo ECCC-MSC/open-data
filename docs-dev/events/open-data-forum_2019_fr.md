@@ -1,6 +1,6 @@
 [In English](open-data-forum-2019_en.md)
 
-![ECCC logo](../img_eccc-logo.png)
+![ECCC logo](../../../docs/img_eccc-logo.png)
 
 # Forum de données ouvertes du SMC 2019
 
@@ -34,7 +34,7 @@ Vidéos:
 
 ### Sur le SMC, nos données, et domaines d'application (enjeux présents et futurs)
 
-[![](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
+[![Slide 1](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
 
 **Présentateur**: Bertrand Denis, responsable des systèmes de données météorologiques, géospatiales, et à données ouvertes au Service météorologique du Canada (SMC). 
 
