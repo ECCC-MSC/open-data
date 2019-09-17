@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../../docs/img_eccc-logo.png)
 
-[TdM](../2019-07_open-data-forum_fr.md) > Forum de données ouvertes 201907
+[TdM](../2019-07_open-data-forum_fr.md) > Forum de données ouvertes 2019-07
 
 # Forum de données ouvertes du SMC 2019
 
@@ -20,19 +20,19 @@ Les vidéos du forum ainsi que les présentations offertes sont disponibles ci-d
 
 Les vidéos sont sur YouTube et en anglais seulement. En cliquant sur l'image vous serez amenés à la vidéo. Il existe également une [liste de lecture contenant toutes les vidéos du forum de données ouvertes du SMC](https://www.youtube.com/playlist?list=PLK5qFJYquwatnQNIlPEHfLLyhLYL3Q9b-).
 
-Liste des vidéos:
+Liste des vidéos :
 
-1. [Nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
+1. [Sur le SMC, nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
 2. [Le Datamart et les services de données ouvertes](#repository-file-structure)
-3. [Services Web géospatiaux: passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
+3. [Services Web géospatiaux : passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
 4. [GeoMet - Données et services web géospatiaux](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
 9. [Centre canadien des services climatologiques](#centre-canadien-des-services-climatologiques)
 5. [Démonstration sur l'accès aux données ouvertes via MSC Datamart et GeoMet à l'aide de la nouvelle documentation](#d%C3%A9monstration-sur-lacc%C3%A8s-aux-donn%C3%A9es-ouvertes-via-msc-datamart-et-geomet-%C3%A0-laide-de-la-nouvelle-documentation)
 6. [Séance de questions-réponses](#s%C3%A9ance-de-questions-r%C3%A9ponses)
 7. Présentations du secteur privé :
-    * [Hydro-Québec: Données météorologiques sur le parquet](#donn%C3%A9es-m%C3%A9t%C3%A9orologiques-sur-le-parquet-dhydro-qu%C3%A9bec)
-    * [WPred: Nos prévisions à votre service](#wpred-nos-pr%C3%A9visions-%C3%A0-votre-service)
-    * [Intact: Utilisation des données météorologiques dans le secteur des assurances](#utilisation-des-donn%C3%A9es-m%C3%A9t%C3%A9orologiques-dans-le-secteur-des-assurances)
+    * [Hydro-Québec : Données météorologiques sur le parquet](#donn%C3%A9es-m%C3%A9t%C3%A9orologiques-sur-le-parquet-dhydro-qu%C3%A9bec)
+    * [WPred : Nos prévisions à votre service](#wpred-nos-pr%C3%A9visions-%C3%A0-votre-service)
+    * [Intact : Utilisation des données météorologiques dans le secteur des assurances](#utilisation-des-donn%C3%A9es-m%C3%A9t%C3%A9orologiques-dans-le-secteur-des-assurances)
 8. [Table ronde des usagers](#table-ronde-des-usagers-forum-des-donn%C3%A9es-ouvertes)
 
 ### Sur le SMC, nos données, et domaines d'application (enjeux présents et futurs)
@@ -51,7 +51,7 @@ Présentatrice : Sandrine Edouard,  coordonnatrice nationale de l'accès aux don
 
 **Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
 
-### Services Web géospatiaux: passé, présent et futur
+### Services Web géospatiaux : passé, présent et futur
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/tom-kralidis.png](http://img.youtube.com/vi/R5rWE56D1U8/0.jpg)](http://www.youtube.com/watch?v=R5rWE56D1U8 "Services Web géospatiaux: passé, présent et futur")
 
