@@ -6,7 +6,7 @@
 
 # Forum de données ouvertes du SMC 2019
 
-Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](hackaton-METEOHACK-2019_fr.md) organisé du 8 au 11 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
+Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](2019-07_hackaton-METEOHACK_fr.md) organisé du 8 au 11 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
 
 Ce forum était composé de présentations d’ordre général sur l’ensemble des services de données ouvertes du SMC et du Centre canadien des services climatiques (CCCS). Une démonstration sur l’accès aux données (GeoMet du SMC, AMQP) a complété cette séance matinale.
 
@@ -23,7 +23,7 @@ Les vidéos sont sur YouTube et en anglais seulement. En cliquant sur l'image vo
 Liste des vidéos :
 
 1. [Sur le SMC, nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
-2. [Le Datamart et les services de données ouvertes](#repository-file-structure)
+2. [Le Datamart et les services de données ouvertes](#le-datamart-du-smc-et-les-services-de-donn%C3%A9es-ouvertes)
 3. [Services Web géospatiaux : passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
 4. [GeoMet - Données et services web géospatiaux](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
 9. [Centre canadien des services climatologiques](#centre-canadien-des-services-climatologiques)
@@ -122,5 +122,3 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 **Animateur** : Miguel Tremblay
 
 **Sujet** : séance d'échange entre les usagers et réponses venant des experts en données du SMC, concernant les points à améliorer dans les services de données; tenue en après-midi lors du Forum le 8 juillet 2019, et animée par Miguel Tremblay du SMC. Citation vedette: ".. and you don't think JPEG2000 is cool?".
-
-
