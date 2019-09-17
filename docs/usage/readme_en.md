@@ -92,7 +92,7 @@ The examples above define a handful of parameters and send a GetMap request to M
 * **CRS** - The coordinate reference system (CRS) used to create the map image. In both examples, we set the CRS to `EPSG:4326` (i.e. WGS 84), the coordinate reference system used for the Global Positioning System (GPS)
 * **WIDTH** - The width in pixels of the returned image
 * **HEIGHT** - The height in pixels of the returned image
-* **LAYERS** - The name of the layer used to create the image. The list and name of the available layers can be retrieved using a WMS GetCapabilities request
+* **LAYERS** - The name of the layer used to create the image. The list and name of the available layers can be retrieved using a WMS GetCapabilities request. For best performances, it is recommended to specify one layer per WMS GetMap request
 * **FORMAT** - The format of the image returned by the WMS GetMap request. In both cases case, the returned image will be in the PNG format
 
 For further information regarding these and other WMS GetMap parameters, refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
