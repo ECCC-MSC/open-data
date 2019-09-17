@@ -91,7 +91,7 @@ Les exemples ci-dessus précisent certains paramètres et envoient une requête 
 * **CRS** - le système de coordonnées cartographiques utilisé pour créer l'image désirée. Dans les deux exemples, le CRS est `EPSG:4326` (i.e. WGS 84), le système de coordonnées cartographiques utilisé notamment par le Système mondial de positionnement (GPS)
 * **WIDTH** - la largeur en pixels de l'image retournée
 * **HEIGHT** - la hauteur en pixels de l'image retournée
-* **LAYERS** - le nom de la couche à utiliser pour la création de l'image. La liste et le nom des couches disponibles peut être récupérée via une requête WMS GetCapabilities
+* **LAYERS** - le nom de la couche à utiliser pour la création de l'image. Pour de meilleures performances, il est recommandé de demander une couche par requête WMS. La liste et le nom des couches disponibles peut être récupérée via une requête WMS GetCapabilities
 * **FORMAT** - le format de l'image retournée par la requête WMS GetMap. Dans les deux exemples, l'image retournée est dans le format PNG
 
 Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
