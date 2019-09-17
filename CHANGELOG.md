@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * TBD
+    * GeoMet: added recommendation for a single layer per WMS request
 * bug fixes:
     * TBD
     

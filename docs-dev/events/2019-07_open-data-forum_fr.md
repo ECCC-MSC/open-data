@@ -22,8 +22,13 @@ Les vidéos sont sur YouTube et en anglais seulement. En cliquant sur l'image vo
 
 Liste des vidéos :
 
+<<<<<<< HEAD:docs-dev/events/open-data-forum_2019_fr.md
 1. [Le SMC, données et domaines d'application (enjeux présents et futurs)](#le-smc-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
 2. [Le Datamart et les services de données ouvertes](#le-datamart-du-smc-et-les-services-de-donn%C3%A9es-ouvertes)
+=======
+1. [Sur le SMC, nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
+2. [Le Datamart et les services de données ouvertes](#repository-file-structure)
+>>>>>>> 40305653cad895880663d80614be6aa9af6ad8ee:docs-dev/events/2019-07_open-data-forum_fr.md
 3. [Services Web géospatiaux : passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
 4. [GeoMet - Données et services web géospatiaux](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
 9. [Centre canadien des services climatologiques](#centre-canadien-des-services-climatologiques)
