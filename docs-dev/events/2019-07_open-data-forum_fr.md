@@ -22,13 +22,8 @@ Les vidéos sont sur YouTube et en anglais seulement. En cliquant sur l'image vo
 
 Liste des vidéos :
 
-<<<<<<< HEAD:docs-dev/events/open-data-forum_2019_fr.md
 1. [Le SMC, données et domaines d'application (enjeux présents et futurs)](#le-smc-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
 2. [Le Datamart et les services de données ouvertes](#le-datamart-du-smc-et-les-services-de-donn%C3%A9es-ouvertes)
-=======
-1. [Sur le SMC, nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
-2. [Le Datamart et les services de données ouvertes](#repository-file-structure)
->>>>>>> 40305653cad895880663d80614be6aa9af6ad8ee:docs-dev/events/2019-07_open-data-forum_fr.md
 3. [Services Web géospatiaux : passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
 4. [GeoMet - Données et services web géospatiaux](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
 9. [Centre canadien des services climatologiques](#centre-canadien-des-services-climatologiques)
@@ -52,7 +47,7 @@ Liste des vidéos :
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/sandrine-edouard.png](http://img.youtube.com/vi/RSGI0HqVB2s/0.jpg)](http://www.youtube.com/watch?v=RSGI0HqVB2s "Le Datamart du SMC et les services de données ouvertes")
 
-Présentatrice : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
+**Présentatrice** : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
 
 **Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
 
@@ -127,5 +122,3 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 **Animateur** : Miguel Tremblay
 
 **Sujet** : séance d'échange entre les usagers et réponses venant des experts en données du SMC, concernant les points à améliorer dans les services de données; tenue en après-midi lors du Forum le 8 juillet 2019, et animée par Miguel Tremblay du SMC. Citation vedette: ".. and you don't think JPEG2000 is cool?".
-
-

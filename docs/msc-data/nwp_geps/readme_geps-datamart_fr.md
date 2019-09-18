@@ -77,10 +77,10 @@ Pour les produits probabilistes:
 * __FPRATE-Accum-24h_SFC_0__    : Pluie verglaçante accumulée sur une période de 24h : 24h-384h à chaque 24h
 * __HEATX-Max-24h_TGL_2m__      : Humidex 2m au-dessus du sol - Maximum sur une période de 24h : 24h-384h à chaque 24h
 * __HEATX_TGL_2m__              : Humidex 2m au-dessus du sol : 3-384h à chaque 3h
-* __HGT_ISBL_0500__               : Hauteur du géopotentiel 500 hPa : 3-384h à chaque 3h
+* __HGT_ISBL_0500__               : Hauteur du géopotentiel 500 hPa : 3-384h à chaque 12h
 * __IPRATE-Accum-12h_SFC_0__    : Grésil accumulé sur une période de 12h : 12h-384h à chaque 12h
 * __IPRATE-Accum-24h_SFC_0__    : Grésil accumulé sur une période de 24h : 24h-384h à chaque 24h
-* __PRMSL_MSL_0__              : Pression au niveau de la mer : 3-384h à chaque 3h
+* __PRMSL_MSL_0__              : Pression au niveau de la mer : 3-384h à chaque 12h
 * __RATE-Accum-12h_SFC_0__    : Pluie accumulée sur une période de 12h : 12h-384h à chaque 12h
 * __RATE-Accum-24h_SFC_0__    : Pluie accumulée sur une période de 24h : 24h-384h à chaque 24h
 * __PRATE-Accum-12h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 12h : 12h-384h à chaque 12h

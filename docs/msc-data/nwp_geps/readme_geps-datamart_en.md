@@ -77,10 +77,10 @@ For ensemble products:
 * __FPRATE-Accum-24h_SFC_0__    : Freezing rain accumulated over a 24h period : 24h-384h every 24h
 * __HEATX-Max-24h_TGL_2m__      : Humidex 2m above ground - Maximum over a 24h period : 24h-384h every 24h
 * __HEATX_TGL_2m__              : Humidex 2m above ground : 3-384h every 3h
-* __HGT_ISBL_0500__               : Geopotential height 500 hPa : 3-384h every 3h
+* __HGT_ISBL_0500__               : Geopotential height 500 hPa : 3-384h every 12h
 * __IPRATE-Accum-12h_SFC_0__    : Ice pellet accumulated over a 12h period : 12h-384h every 12h
 * __IPRATE-Accum-24h_SFC_0__    : Ice pellet accumulated over a 24h period : 24h-384h every 24h
-* __PRMSL_MSL_0__               : Mean sea level pressure : 3-384h every 3h
+* __PRMSL_MSL_0__               : Mean sea level pressure : 3-384h every 12h
 * __RPRATE-Accum-12h_SFC_0__    : Rain accumulated over a 12h period : 12h-384h every 12h
 * __RPRATE-Accum-24h_SFC_0__    : Rain accumulated over a 24h period : 24h-384h every 24h
 * __SPRATE-Accum-12h_SFC_0__    : Snow (water equivalent) accumulated over a 12h period : 12h-384h every 12h
