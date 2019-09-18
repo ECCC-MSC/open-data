@@ -6,7 +6,7 @@
 
 # Forum de données ouvertes du SMC 2019
 
-Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](2019-07_hackaton-METEOHACK_fr.md) organisé du 8 au 11 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
+Cette page est consacrée au 1er forum de données ouvertes du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au [Centre Phi](https://phi-centre.com/), et en ligne partout au Canada, le 8 juillet 2019. Ce forum précédait le 1er [hackathon METEOHACK](2019-07_hackathon-METEOHACK_fr.md) organisé du 8 au 10 juillet 2019 par le Service météorologique du Canada, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.
 
 Ce forum était composé de présentations d’ordre général sur l’ensemble des services de données ouvertes du SMC et du Centre canadien des services climatiques (CCCS). Une démonstration sur l’accès aux données (GeoMet du SMC, AMQP) a complété cette séance matinale.
 
@@ -22,7 +22,7 @@ Les vidéos sont sur YouTube et en anglais seulement. En cliquant sur l'image vo
 
 Liste des vidéos :
 
-1. [Sur le SMC, nos données et domaines d'application (enjeux présents et futurs)](#sur-le-smc-nos-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
+1. [Le SMC, données et domaines d'application (enjeux présents et futurs)](#le-smc-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
 2. [Le Datamart et les services de données ouvertes](#le-datamart-du-smc-et-les-services-de-donn%C3%A9es-ouvertes)
 3. [Services Web géospatiaux : passé, présent et futur](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
 4. [GeoMet - Données et services web géospatiaux](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
@@ -35,7 +35,7 @@ Liste des vidéos :
     * [Intact : Utilisation des données météorologiques dans le secteur des assurances](#utilisation-des-donn%C3%A9es-m%C3%A9t%C3%A9orologiques-dans-le-secteur-des-assurances)
 8. [Table ronde des usagers](#table-ronde-des-usagers-forum-des-donn%C3%A9es-ouvertes)
 
-### Sur le SMC, nos données, et domaines d'application (enjeux présents et futurs)
+### Le SMC, données, et domaines d'application (enjeux présents et futurs)
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png](http://img.youtube.com/vi/IgNc3TxnrIA/0.jpg)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
 
@@ -47,7 +47,7 @@ Liste des vidéos :
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/sandrine-edouard.png](http://img.youtube.com/vi/RSGI0HqVB2s/0.jpg)](http://www.youtube.com/watch?v=RSGI0HqVB2s "Le Datamart du SMC et les services de données ouvertes")
 
-Présentatrice : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
+**Présentatrice** : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
 
 **Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
 
