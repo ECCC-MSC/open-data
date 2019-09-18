@@ -32,5 +32,6 @@ Le 11 juillet 2019, un __jury prestigieux__ composé de juges internes et extern
 
 Un [__rapport d'évènement__](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf) complet et détaillé est disponible rassemblant l'ensemble des soumissions et les détails sur les lauréats. 
 
-[![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/meteohack_2019/Red.Leaf_2019.jpg](http://img.youtube.com/vi/DNlTntWKTtA/0.jpg)](http://www.youtube.com/watch?v=DNlTntWKTtA "Lauréats de METEOHACK 2019").
+[![Read Leaf](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/meteohack_2019/Red.Leaf_2019.jpg)](http://www.youtube.com/watch?v=DNlTntWKTtA "Lauréats de METEOHACK 2019").
+
 
