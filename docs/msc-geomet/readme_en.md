@@ -31,6 +31,13 @@ Service capabilities:
 * GeoMet-Weather WMS URL: [https://geo.weather.gc.ca/geomet?lang=en&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
 * GeoMet-Weather WCS URL: [https://geo.weather.gc.ca/geomet?lang=en&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=en&service=WCS&version=2.0.1&request=GetCapabilities)
 
+Usage tip:
+
+* Users can use `&layer=` in WMS GetCapabilities requests to point to a
+specific layer and retrieve a smaller XML payload with up to date
+temporal dimensions
+    * Example for the 1km radar snow layer: https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO
+
 ### GeoMet-Climate
 
 GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services. It provides access to historical climate datasets such daily observation data, monthly summaries and climate normals for climate stations across the country. The GeoMet-Climate services are a data source for the [Canadian Centre for Climate Services](https://canada.ca/climate-services).

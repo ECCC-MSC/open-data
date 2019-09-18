@@ -16,7 +16,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * GeoMet: added recommendation for a single layer per WMS request
+    * GeoMet: added recommendation for a single layer per WMS request, including the single layer Usage tip for WMS GetCapabilities
+    * made map center closer to Canada on Usage overview
 * bug fixes:
     * TBD
     
