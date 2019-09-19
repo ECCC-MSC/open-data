@@ -10,23 +10,23 @@ Cette page est consacrée au 1er hackathon METEOHACK du Service métérologique 
 
 Cet hackathon a mis au défi 150 innovateurs regroupés en 21 équipes réparties à travers le pays et 4 équipes internes à Environnement et Changement climatique Canada (ECCC). Le but était de démontrer, en-dedans de 48 h, le potentiel des données ouvertes du SMC dans le domaine des sciences de la Terre, à travers **4 thèmes principaux** :
 
-* <u>La Terre et Nous</u>
+* __La Terre et Nous__
 
 *Combinez les données des sciences de la Terre et les données météorologiques avec des informations sociologiques et économiques pour générer de nouvelles compréhensions et perspectives sur les interactions humaines avec l’environnement.*
 
-* <u>Nouveaux publics</u>
+* __Nouveaux publics__
 
 *Trouvez de nouvelles applications touchant un public varié qui ne s’intéresse généralement pas aux données des sciences de la Terre et météorologiques : jeune public, étudiants, non- experts et diverses communautés socioculturelles.*
 
-* <u>Attention! Danger imminent!</u>
+* __Attention! Danger imminent!__
 
 *Analysez les données des sciences de la Terre et météorologiques pour faciliter la surveillance des catastrophes naturelles et des phénomènes associés aux risques sur la santé et évaluer leurs impacts sur la vie et les biens.*
 
-* <u>Une représentation artistique de la Terre</u>
+* __Une représentation artistique de la Terre__
 
 *Interprétez artistiquement les données des sciences de la Terre et les données météorologiques pour créer de belles visualisations de données, des expériences de réalité virtuelle, de la musique ou des œuvres d’art uniques*
 
-Au cours de cet évènenement, des invités de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation:
+Au cours de cet évènenement, des **présentateurs invités** de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation:
 
 * [Tornado data in Canada](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx) - David Sills de Western Engineering
 * [Observatoire global du Saint Laurent (OGSL)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/OGSL_MeteoHack.pptx) - Maxime Lévesque
@@ -34,7 +34,7 @@ Au cours de cet évènenement, des invités de divers horizons sont venus parler
 
 # Lauréats
 
-Le 11 juillet 2019, un [__jury prestigieux__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf) composé de juges internes et externes a choisi les lauréats dans chacune des huit catégories et a nommé Team Red Leaf le grand champion pour son application [Harnessing Weather Data to Correlate Product Sales and Inventory Management](https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1).
+Le 11 juillet 2019, un [__jury prestigieux__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf) composé de juges internes et externes a choisi les lauréats dans chacune catégories et a nommé l'équipe **Red Leaf, le grand champion** pour son application ["Harnessing Weather Data to Correlate Product Sales and Inventory Management"](https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1).
 
 Les lauréats de METEOHACK 2019 sont les suivants:
 
@@ -42,7 +42,6 @@ Les lauréats de METEOHACK 2019 sont les suivants:
 * Catégorie "Nouveaux publics" : [Red Leaf](https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1)
 * Catégorie "Attention! Danger imminent!" : [GEOHACK](https://www.youtube.com/watch?v=nYdaN7RUibE&feature=youtu.be)
 * Catégorie "Une représentation artistique de la Terre" : [Data-Quintet](https://www.youtube.com/watch?v=KWMnSSIYstY)
-
 * Catégorie "Étudiant" : [EnvironmentJusticeMap](https://www.youtube.com/watch?v=nYdaN7RUibE&feature=youtu.be)
 * Catégorie "Source ouverte (open source)" : [Twisty Wind](https://www.youtube.com/watch?v=rlS7Bt2pwnc&feature=youtu.be)
 
