@@ -19,8 +19,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Alertes météo et maritimes](alerts/readme_alerts_fr.md)
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
-* [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
-* [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)
 
 ## Observations 
 
@@ -28,7 +26,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Observations in situ](obs_station/readme_obs_insitu_fr.md)
 * [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
-
 
 ## Prévisions météorologiques numériques
 
@@ -53,8 +50,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Données climatiques
 
-Les données climatiques canadiennes sont une composante du [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html).
-
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
 * [Données climatiques historiques sur grille canadienne (CanGRD)](climate_cangrd/readme_cangrd_fr.md)
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
@@ -66,5 +61,5 @@ Les données climatiques canadiennes sont une composante du [Centre canadien des
 * [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
 * [Trajectoires d'ouragans](trajectories/readme_hurricane_fr.md)
-
-
+* [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
+* [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)

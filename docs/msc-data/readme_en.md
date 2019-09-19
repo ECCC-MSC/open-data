@@ -19,9 +19,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Weather and marine alerts](alerts/readme_alerts_en.md)
 * [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
 * [Current marine conditions and 7-days forecast for marine regions](marine-weather/readme_marine-weather_en.md)
-* [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
-* [Forecast regions polygons](https://dd.weather.gc.ca/meteocode/geodata/)
-
 
 ## Observations 
 
@@ -29,7 +26,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [In situ observations](obs_station/readme_obs_insitu_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles](obs_vertical-profiles/readme_obs-vertical-pfl_en.md)
-
 
 ## Numerical weather prediction forecasts
 
@@ -54,17 +50,17 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Climate data
 
-Canadian climate data is a component of the [Canadian Centre for Climate Services](https://canada.ca/climate-services).
-
 * [Adjusted and homogenized Canadian climate (AHCCD)](climate_ahccd/readme_ahccd_en.md)
 * [Canadian Gridded Data (CanGRD)](climate_cangrd/readme_cangrd_en.md)
 * [Coupled Model Intercomparison Project Phase 5 (CMIP5) global climate model (GCM) scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 
+
 ## Other data
 
 * [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
 * [Bulletins](bulletins/readme_bulletins_en.md)
 * [Hurricanes trajectories](trajectories/readme_hurricane_en.md)
-
+* [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
+* [Forecast regions polygons](https://dd.weather.gc.ca/meteocode/geodata/)
