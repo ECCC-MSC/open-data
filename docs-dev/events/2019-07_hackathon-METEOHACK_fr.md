@@ -1,8 +1,8 @@
 [In English](2019-07_hackaton-METEOHACK_en.md)
 
-![ECCC logo](../../../docs/img_eccc-logo.png)
+![ECCC logo](../../docs/img_eccc-logo.png)
 
-[TdM](../2019-07_hackaton-METEOHACK_fr.md) > Hackathon METEOHACK 2019-07
+[TdM](2019-07_hackaton-METEOHACK_fr.md) > Hackathon METEOHACK 2019-07
 
 # Hackathon METEOHACK 2019 du SMC
 
@@ -28,7 +28,7 @@ Cet hackathon a mis au défi 150 innovateurs regroupés en 21 équipes répartie
 
 Au cours de cet évènenement, des **présentateurs invités** de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation:
 
-* [Tornado data in Canada](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx) - David Sills de Western Engineering
+* [Tornado data in Canada - version anglaise seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx) - David Sills de Western Engineering
 * [Observatoire global du Saint Laurent (OGSL)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/OGSL_MeteoHack.pptx) - Maxime Lévesque
 * [Initiation à l'expérience utilisateur (UX)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/Meteohack_ExperienceUtilisateur101.pdf) - Catherine Dionne de Ergoweb 
 

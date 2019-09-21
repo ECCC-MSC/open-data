@@ -1,8 +1,8 @@
 [In English](2019-07_open-data-forum_en.md)
 
-![ECCC logo](../../../docs/img_eccc-logo.png)
+![ECCC logo](../../docs/img_eccc-logo.png)
 
-[TdM](../2019-07_open-data-forum_fr.md) > Forum de données ouvertes 2019-07
+[TdM](2019-07_open-data-forum_fr.md) > Forum de données ouvertes 2019-07
 
 # Forum de données ouvertes du SMC 2019
 
@@ -39,7 +39,7 @@ Liste des vidéos :
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png](http://img.youtube.com/vi/IgNc3TxnrIA/0.jpg)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
 
-**Présentateur** : Bertrand Denis, responsable des systèmes de données météorologiques, géospatiales, et à données ouvertes au Service météorologique du Canada (SMC). 
+**Présentateur** : Bertrand Denis, responsable des systèmes de données météorologiques, géospatiales, et à données ouvertes au Service météorologique du Canada (SMC)
 
 **Sujet** : Présentation du SMC, du cycle d'information sur la surveillance et les prévisions du SMC, les données du SMC, les domaines d'application, les enjeux et les nouvelles tendances. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC_challenges_BertrandDenis.pdf).
 
@@ -47,7 +47,7 @@ Liste des vidéos :
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/sandrine-edouard.png](http://img.youtube.com/vi/RSGI0HqVB2s/0.jpg)](http://www.youtube.com/watch?v=RSGI0HqVB2s "Le Datamart du SMC et les services de données ouvertes")
 
-**Présentatrice** : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC). 
+**Présentatrice** : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC) 
 
 **Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
 
@@ -57,7 +57,7 @@ Liste des vidéos :
 
 **Présentateur** : Tom Kralidis, Spécialiste principal en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
 
-**Sujet** : aperçu des normes géospatiales et internes, de même qu'un historique et une perspective sur l'avenir: pourquoi créer un API au SMC, nos motivations et ce que l'avenir nous réserve. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Geospatial_Web_services_overview_TomKralidis.pptx).
+**Sujet** : Aperçu des normes géospatiales et internes, de même qu'un historique et une perspective sur l'avenir: pourquoi créer un API au SMC, nos motivations et ce que l'avenir nous réserve. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Geospatial_Web_services_overview_TomKralidis.pptx).
 
 ### GeoMet du SMC - Données SMC et services web géospatiaux 
 
@@ -73,7 +73,7 @@ Liste des vidéos :
 
 **Présentateur** : Emilia Diaconescu, coordonnatrice de programmes environnementaux du [CCSC](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html)
 
-**Sujet** : présentation du Centre canadien des services climatiques, la nouvelle section d'ECCC créée pour aider les canadiens, et les canadiennes, à comprendre et à gérer les changements climatiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Intro_CCCS_EmiliaDiaconescu.pdf).
+**Sujet** : Présentation du Centre canadien des services climatiques, la nouvelle section d'ECCC créée pour aider les canadiens, et les canadiennes, à comprendre et à gérer les changements climatiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Intro_CCCS_EmiliaDiaconescu.pdf).
 
 ### Démonstration sur l'accès aux données ouvertes via le Datamart du SMC et GeoMet, à l'aide de la nouvelle documentation
 
@@ -81,7 +81,7 @@ Liste des vidéos :
 
 **Présentateur** : Louis-Philippe Rousseau-Lambert, spécialiste en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
 
-**Sujet** : comment naviguer dans la nouvelle documentation de données ouvertes du SMC, en particulier pour les services web géospatiaux. Il donne quelques exemples de service AMQP permettant de récupérer des données automatiquement via le Datamart du SMC et présente quelques exemples d'utilisation de cartes web et de scripts avec GeoMet du SMC. Vous pouvez [télécharger les fichiers de démonstration](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/demos/meteohack-demo.zip).
+**Sujet** : Comment naviguer dans la nouvelle documentation de données ouvertes du SMC, en particulier pour les services web géospatiaux. Il donne quelques exemples de service AMQP permettant de récupérer des données automatiquement via le Datamart du SMC et présente quelques exemples d'utilisation de cartes web et de scripts avec GeoMet du SMC. Vous pouvez [télécharger les fichiers de démonstration](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/demos/meteohack-demo.zip).
 
 ### Séance de questions-réponses 
 
@@ -89,7 +89,7 @@ Liste des vidéos :
 
 **Animateur** : Miguel Tremblay
 
-Séance de questions–réponses des participants au forum de données ouvertes couvrant les présentations offertes en matinée (présentations d'ordre générale et démonstration) 
+Séance de questions–réponses des participants au forum de données ouvertes couvrant les présentations offertes en matinée (présentations d'ordre générale et démonstration).
 
 ### Données météorologiques sur le parquet d'Hydro-Québec
 
@@ -113,7 +113,7 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 
 **Présentateur** : Jonathan Gadoury, Intact DataLab
 
-**Sujet** : utilisation de Datamart du SMC dans le secteur des assurances, des projets actuels et futurs pour utiliser ces données, et sur les besoins en données météorologiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/2019-07-08%20-%20Weather%20Data%20in%20the%20Insurance%20Industry.pdf).
+**Sujet** : Utilisation de Datamart du SMC dans le secteur des assurances, des projets actuels et futurs pour utiliser ces données, et sur les besoins en données météorologiques. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_external-users/2019-07-08%20-%20Weather%20Data%20in%20the%20Insurance%20Industry.pdf).
 
 ### Table ronde des usagers
 
@@ -121,4 +121,4 @@ Séance de questions–réponses des participants au forum de données ouvertes 
 
 **Animateur** : Miguel Tremblay
 
-**Sujet** : séance d'échange entre les usagers et réponses venant des experts en données du SMC, concernant les points à améliorer dans les services de données; tenue en après-midi lors du Forum le 8 juillet 2019, et animée par Miguel Tremblay du SMC. Citation vedette: ".. and you don't think JPEG2000 is cool?".
+**Sujet** : Séance d'échange entre les usagers et réponses venant des experts en données du SMC, concernant les points à améliorer dans les services de données; tenue en après-midi lors du Forum le 8 juillet 2019, et animée par Miguel Tremblay du SMC. Citation vedette: ".. and you don't think JPEG2000 is cool?".
