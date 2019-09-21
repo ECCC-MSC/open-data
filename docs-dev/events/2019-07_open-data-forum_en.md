@@ -4,7 +4,7 @@
 
 [TOC](2019-07_open-data-forum_en.md) > Open Data Forum 2019-07
 
-# SMC 2019 Open Data Forum
+# MSC 2019 Open Data Forum
 
 This page is dedicated to the 1st Canadian Meteorological Service (MSC) Open Data Forum held in Montreal, at the [Centre Phi](https://phi-centre.com/), and online across Canada on July 8, 2019. This forum preceded the 1st [METEOHACK Hackathon](2019-07_hackathon-METEOHACK_en.md) organized by the Meteorological Service of Canada, with the assistance of Corporate Services and Finance Branch and Shared Services Canada, from July 8 to 10, 2019.
 
@@ -12,7 +12,7 @@ This forum consisted of general presentations on all MSC and Canadian Climate Se
 
 The second part of this forum was dedicated to external users such as private companies and government agencies who came to present their use of the MSC Datamart.
 
-Finally, a round table closed the event allowing the community of users present to interact with the experts.
+Finally, a round table closed the event allowing the community of users to interact with the experts.
 
 The videos of the forum as well as the presentations offered are available below.
 
@@ -22,11 +22,11 @@ The videos are on YouTube. By clicking on the image you will be taken to the vid
 
 List of videos :
 
-1. [MSC, data and areas of application (current and future issues)](#le-smc-donn%C3%A9es-et-domaines-dapplication-enjeux-presents-et-futurs)
-2. [Datamart and open data services](#le-datamart-du-smc-et-les-services-de-donn%C3%A9es-ouvertes)
-3. [Geospatial Web Services: Past, Present and Future](#services-web-g%C3%A9ospatiaux-pass%C3%A9-pr%C3%A9sent-et-futur)
-4. [GeoMet - Geospatial web data and services](#geomet-du-smc-donn%C3%A9es-smc-et-services-web-g%C3%A9ospatiaux)
-5. [Canadian Climate Services Centre](#centre-canadien-des-services-climatologiques)
+1. [MSC, data and areas of application (current and future issues)](#msc-data-and-areas-of-application-current-and-future-issues)
+2. [Datamart and open data services](#msc-datamart-and-open-data-services)
+3. [Geospatial Web Services: Past, Present and Future](#geospatial-web-services-past-present-and-future)
+4. [GeoMet - Geospatial web data and services](#msc-geoMet-msc-data-and-geospatial-web-services)
+5. [Canadian Climate Services Centre](#canadian-climate-services-centre)
 6. [Demonstration on how to access open data via MSC Datamart and GeoMet using the new documentation](#d%C3%A9monstration-sur-lacc%C3%A8s-aux-donn%C3%A9es-ouvertes-via-msc-datamart-et-geomet-%C3%A0-laide-de-la-nouvelle-documentation)
 7. [Question and Answer Session](#s%C3%A9ance-de-questions-r%C3%A9ponses)
 8. Presentations from the private sector :
@@ -35,7 +35,7 @@ List of videos :
     * [Intact : Use of meteorological data in the insurance sector](#utilisation-des-donn%C3%A9es-m%C3%A9t%C3%A9orologiques-dans-le-secteur-des-assurances)
 9. [Users' Round Table](#table-ronde-des-usagers-forum-des-donn%C3%A9es-ouvertes)
 
-### MSC, data, and areas of application (current and future issues)
+### MSC, data and areas of application (current and future issues)
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/bertrand-denis.png](http://img.youtube.com/vi/IgNc3TxnrIA/0.jpg)](http://www.youtube.com/watch?v=IgNc3TxnrIA "SMC, données et domaines d'application")
 
