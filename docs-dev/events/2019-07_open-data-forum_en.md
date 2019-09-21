@@ -25,15 +25,15 @@ List of videos :
 1. [MSC, data and areas of application (current and future issues)](#msc-data-and-areas-of-application-current-and-future-issues)
 2. [Datamart and open data services](#msc-datamart-and-open-data-services)
 3. [Geospatial Web Services: Past, Present and Future](#geospatial-web-services-past-present-and-future)
-4. [GeoMet - Geospatial web data and services](#msc-geoMet-msc-data-and-geospatial-web-services)
+4. [MSC GeoMet - MSC Data and Geospatial Web Services](#msc-geomet-msc-data-and-geospatial-web-services)
 5. [Canadian Climate Services Centre](#canadian-climate-services-centre)
-6. [Demonstration on how to access open data via MSC Datamart and GeoMet using the new documentation](#d%C3%A9monstration-sur-lacc%C3%A8s-aux-donn%C3%A9es-ouvertes-via-msc-datamart-et-geomet-%C3%A0-laide-de-la-nouvelle-documentation)
-7. [Question and Answer Session](#s%C3%A9ance-de-questions-r%C3%A9ponses)
+6. [Demonstration on how to access open data via MSC Datamart and GeoMet using the new documentation](#demonstration-on-how-to-access-open-data-via-msc-datamart-and-geomet-using-the-new-documentation)
+7. [Question and Answer Session](#question-and-answer-session)
 8. Presentations from the private sector :
-    * [Hydro-Québec : Meteorological data on the floor](#donn%C3%A9es-m%C3%A9t%C3%A9orologiques-sur-le-parquet-dhydro-qu%C3%A9bec)
-    * [WPred : Our forecasts at your service](#wpred-nos-pr%C3%A9visions-%C3%A0-votre-service)
-    * [Intact : Use of meteorological data in the insurance sector](#utilisation-des-donn%C3%A9es-m%C3%A9t%C3%A9orologiques-dans-le-secteur-des-assurances)
-9. [Users' Round Table](#table-ronde-des-usagers-forum-des-donn%C3%A9es-ouvertes)
+    * [Hydro-Québec: MSC Datamart GRIB Data Usage in Operations of an Energy Selling and Trading Floor](#hydro-quebec-msc-datamart-grib-data-usage-in-operations-of-an-energy-selling-and-trading-floor)
+    * [WPred : Our forecasts at your service](#wpred-our-forecasts-at-your-service)
+    * [Intact : Use of meteorological data in the insurance sector](#intact-use-of-meteorological-data-in-the-insurance-sector)
+9. [Users' Round Table](#users-round-table)
 
 ### MSC, data and areas of application (current and future issues)
 
@@ -91,7 +91,7 @@ List of videos :
 
 Question and answer session for participants at the open data forum covering the presentations offered in the morning (general presentations and demonstration).
 
-### MSC Datamart GRIB Data Usage in Operations of an Energy Selling and Trading Floor 
+### Hydro-Québec: MSC Datamart GRIB Data Usage in Operations of an Energy Selling and Trading Floor 
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/hydro-quebec.png](http://img.youtube.com/vi/p8aAEz_WIkE/0.jpg)](http://www.youtube.com/watch?v=p8aAEz_WIkE "Données météorologiques sur le parquet d'Hydro-Québec")
 
