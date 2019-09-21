@@ -30,7 +30,7 @@ The [metadata of the Regional Ensemble Prediction System are available on the Op
 ## Technical documentation
 
 * [Actual version of the Regional Ensemble Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_e.pdf)
-* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-300_20190703_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps_e.pdf)
 
 ## Change log
 

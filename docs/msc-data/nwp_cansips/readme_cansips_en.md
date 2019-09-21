@@ -63,7 +63,7 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips_e.pdf)
 * [Scientific article](https://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 
 ## Change log

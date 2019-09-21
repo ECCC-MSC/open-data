@@ -57,7 +57,7 @@ Le programme CAS est un partenariat conjoint d'Environnement et Changement clima
 ## Documentation technique
 
 * [Guide des prévisions de la côte air santé ](https://www.canada.ca/fr/environnement-changement-climatique/services/meteo-sante/publications/guide-previsions-cote-air-sante.html)
-* [Note technique du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_f.pdf)
+* [Note technique du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_f.pdf)
 
 ## Registre des changements 
 
