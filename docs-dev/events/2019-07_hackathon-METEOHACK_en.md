@@ -5,9 +5,9 @@
 [TOC](2019-07_hackaton-METEOHACK_en.md) > Hackathon METEOHACK 2019-07
 
 
-# MSC METEOHACK 2019 Hackathon 2019
+# MSC METEOHACK Hackathon 2019
 
-This page is dedicated to the 1st METEOHACK hackathon of the Canadian Meteorological Service (MSC) held in Montreal, at the [Centre Phi](https://phi-centre.com/), and online across Canada, from July 8 to 10, 2019, with the assistance of the Corporate Services and Finance Branch, and Shared Services Canada.
+This page is dedicated to the 1st METEOHACK hackathon of the Meteorological Service of Canada (MSC) held in Montreal, at the [Phi Centre](https://phi-centre.com/), and online across Canada, from July 8 to 10, 2019, with the assistance of the Corporate Services and Finance Branch, and Shared Services Canada.
 
 This hackathon challenged 150 innovators in 21 teams across the country and 4 teams within Environment and Climate Change Canada (ECCC). The aim was to demonstrate, within 48 hours, the potential of MSC's open data in the Earth sciences, through **4 main themes** :
 
@@ -27,7 +27,7 @@ This hackathon challenged 150 innovators in 21 teams across the country and 4 te
 
 *Artistically interpret Earth science and weather data to create beautiful data visualizations, virtual reality experiences, music or unique works of art*
 
-During this event, **guest presenters** from various backgrounds came to talk about areas of activity surrounding the proposed themes and present information and open data sources that can be used as part of the programming marathon :
+During this event, **guest speakers** from various backgrounds came to talk about areas of activity surrounding the proposed themes and presented information and open data sources that could be used as part of the programming marathon :
 
 * [Tornado data in Canada](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx) - David Sills de Western Engineering
 * [St. Lawrence Global Observatory (SLGO)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/OGSL_MeteoHack.pptx) - Maxime Lévesque
