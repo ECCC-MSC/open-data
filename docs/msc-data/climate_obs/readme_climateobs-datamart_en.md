@@ -68,9 +68,11 @@ where :
 
 Examples :
 
-•	climate_normals_QC_7040446_1981-2010.csv 
-•	climate_daily_QC_7025280_1993-03_P1D.csv 
-•	climate_monthly_QC_7025280_2001_P1M.csv
+* climate_normals_QC_7040446_1981-2010.csv 
+* climate_daily_QC_7025280_1993-03_P1D.csv 
+* climate_monthly_QC_7025280_2001_P1M.csv
+
+Note: A list of station codes is available at the address: https://drive.google.com/drive/folders/1WJCDEU34c60IfOnG4rv5EPZ4IhhW9vZH
 
 ## List of variables
 
