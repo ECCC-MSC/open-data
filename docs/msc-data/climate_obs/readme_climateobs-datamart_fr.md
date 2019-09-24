@@ -71,6 +71,8 @@ Exemples :
 * climate_daily_QC_7025280_1993-03_P1D.csv 
 * Climate_monthly_QC_7025280_2001_P1M.csv
 
+Note : La liste des codes de stations est disponible à l'adresse https://drive.google.com/drive/folders/1WJCDEU34c60IfOnG4rv5EPZ4IhhW9vZH
+
 ## Liste des variables
 
 La liste des variables disponibles et leurs unités sont disponibles ici :
