@@ -39,10 +39,13 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 * Les [métadonnées des données quotidiennes  sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098)
 * Les [métadonnées des données mensuelles sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/b24efb37-11b6-5d03-ab19-5759f83db546)
 
-## Documentation technique
+## Produits 
 
 * [Cartes des statistiques météo en temps réel](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf)
+
+## Documentation technique
+
+* [Note technique](https://climat.meteo.gc.ca/doc/Documentation_technique.pdf)
 * [Site web du Climat](http://climat.meteo.gc.ca/historical_data/search_historic_data_f.html)
 * [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html)
 
