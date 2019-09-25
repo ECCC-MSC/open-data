@@ -39,10 +39,13 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 * The [metadata of the climate daily are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098).
 * The [metadata of the climate monthly are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/b24efb37-11b6-5d03-ab19-5759f83db546).
 
-## Technical documentation
+## Products 
 
 * [Real-Time Weather Statistics Maps](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_e.pdf)
+
+## Technical documentation
+
+* [Technical note](https://climate.weather.gc.ca/doc/Technical_Documentation.pdf)
 * [Climate data web site](http://climat.meteo.gc.ca/historical_data/search_historic_data_e.html)
 * [Canadian Centre for Climate Services](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html)
 
