@@ -28,7 +28,7 @@ Les données disponibles comprennent :
 
 Les **détails concernant la tarification des données radar** sont les suivants :
 
-** Données brutes**
+**Données brutes**
 
 * 1-5 radars (QC, région Atl ou Pac) : 1 600 $/mois
 * 6-10 (toute une région) : 1 800 $/mois
