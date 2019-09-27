@@ -25,8 +25,8 @@ where :
 * __historical__ : Historical simulations from 1948 for all of Canada, and from 1900 for southern Canada, until the end of the previous calendar year.
 * __monthly__ : January to December 
 * __seasonal__ : The standard meteorological seasons are used: (March to May (MAM, spring), June to August (JJA, summer),  September to November (SON, autumn/fall), and December to February (DJF, winter)]
-* __anomaly__ : Anomalies are computed at each observing station and for each year by subtracting the relevant baseline average (defined as average over 1961-1990 reference period) from the relevant monthly, seasonal, and annual values (temperature and precipitation anomalies: 1948-2017)
-* __trend__ : Trend data represents the change in temperature or relative precipitation departure over the period of record (mean temperature trend: 1948-2016; precipitation trend: 1948-2012)
+* __anomaly__ : Anomalies are computed at each observing station and for each year by subtracting the relevant baseline average (defined as average over 1961-1990 reference period) from the relevant monthly, seasonal, and annual values (temperature anomalies: 1948-2018 and precipitation anomalies: 1948-2014).
+* __trend__ : Trend data represents the change in temperature or relative precipitation departure over the period of record (mean temperature trend: 1948-2018; precipitation trend: 1948-2012)
 
 ## File name nomenclature 
 
