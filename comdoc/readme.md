@@ -1,5 +1,3 @@
-# DRAFT /  PROPOSAL
-
 # Comité de la documentation publique
 
 Le Comité de la documentation publique coordonne les activités associées à la documentation publique des Données ouvertes du Service météorologique du Canada.
@@ -13,6 +11,7 @@ Le role et les responsabilités du Comité de la documentation publique sont de 
 * Informer la gestion sur l'état de la documentation publique et considérer leur rétroaction s'il y a lieu
 
 Les tâches du Comité incluent :
+
 * Valider le contenu de la documentation avec les responsables des données (data stewards) appropriés
 * Déployer les nouvelles versions de la documentation publique, tant sur GitHub que sur Canada.ca
 
@@ -27,6 +26,7 @@ Le Comité de la documentation publique est présentement composé de (ordre alp
 * Sandrine Édouard, section CMOA
 
 Invités :
+
 * Priscilla Busseau, section CMOA
 
 
