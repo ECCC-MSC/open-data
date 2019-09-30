@@ -14,9 +14,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced to users
 * new content:
-    * TBD
+    * Added link to the events page on root page
 * improvements:
-    * TBD
+    * Minor deploy instruction improvements
+    * ComDoc ToR not draft anymore
 * bug fixes:
     * TBD
 
