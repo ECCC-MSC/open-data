@@ -34,6 +34,13 @@ L'accès aux données ouvertes disponibles sur le Datamart du SMC et sur GeoMet 
 
 Les métadonnées du Service météorologique du Canada sont disponibles sur le [portail du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/donnees-ouvertes), qui permet aux utilisateurs de rechercher des données ouvertes pertinentes aux Canadiens et Canadiennes, apprendre comment travailler avec les jeux de données et voir ce que les citoyens ont fait avec les données ouvertes dans l'ensemble du pays.
 
+## Évènements
+
+Série d'évènements organisés autour des données ouvertes du SMC.
+
+* [Forum de données ouvertes du SMC - 8 Juillet 2019](events/2019-07_open-data-forum_fr.md)
+* [Hackathon METEOHACK - 8 au 10 juillet 2019](events/2019-07_hackathon-METEOHACK_fr.md) 
+
 ## Licence
 
 La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md)
