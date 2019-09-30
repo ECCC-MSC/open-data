@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * TBD
+    * Moved Usage map center 5 degrees to the north
 * bug fixes:
     * TBD
 

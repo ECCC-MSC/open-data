@@ -132,7 +132,7 @@ Les données brutes pour des données matricielles peuvent être récupérées p
           })
         ],
         view: new ol.View({
-          center: ol.proj.fromLonLat([-97, 52]),
+          center: ol.proj.fromLonLat([-97, 57]),
           zoom: 3
         })
       });

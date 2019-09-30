@@ -133,7 +133,7 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
           })
         ],
         view: new ol.View({
-          center: ol.proj.fromLonLat([-97, 52]),
+          center: ol.proj.fromLonLat([-97, 57]),
           zoom: 3
         })
       });
