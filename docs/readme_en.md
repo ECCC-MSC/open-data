@@ -35,6 +35,13 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
 
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country.
 
+## Events
+
+Series of events organized around MSC open data.
+
+* MSC open data forum - July 8, 2019
+* METEOHACK hackathon - July 8-10, 2019
+
 ## Licence
 
 The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
