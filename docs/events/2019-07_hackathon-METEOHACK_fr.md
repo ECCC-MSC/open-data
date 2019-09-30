@@ -1,6 +1,6 @@
 [In English](2019-07_hackaton-METEOHACK_en.md)
 
-![ECCC logo](../../docs/img_eccc-logo.png)
+![ECCC logo](../img_eccc-logo.png)
 
 [TdM](2019-07_hackaton-METEOHACK_fr.md) > Hackathon METEOHACK 2019-07
 
@@ -26,7 +26,7 @@ Cet hackathon a mis au défi 150 innovateurs regroupés en 21 équipes répartie
 
 *Interprétez artistiquement les données des sciences de la Terre et les données météorologiques pour créer de belles visualisations de données, des expériences de réalité virtuelle, de la musique ou des œuvres d’art uniques*
 
-Au cours de cet évènenement, des **présentateurs invités** de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation:
+Au cours de cet évènenement, des **présentateurs invités** de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation :
 
 * [Tornado data in Canada - version anglaise seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx) - David Sills de Western Engineering
 * [Observatoire global du Saint Laurent (OGSL)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/OGSL_MeteoHack.pptx) - Maxime Lévesque
@@ -36,7 +36,7 @@ Au cours de cet évènenement, des **présentateurs invités** de divers horizon
 
 Le 11 juillet 2019, un [__jury prestigieux__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf) composé de juges internes et externes a choisi les lauréats dans chacune catégories et a nommé l'équipe **Red Leaf, le grand champion** pour son application ["Harnessing Weather Data to Correlate Product Sales and Inventory Management"](https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1).
 
-Les lauréats de METEOHACK 2019 sont les suivants:
+Les lauréats de METEOHACK 2019 sont les suivants :
 
 * Catégorie "La Terre et nous" : [Heat Crime](https://www.youtube.com/watch?v=k9SNqhikcmw&feature=youtu.be)
 * Catégorie "Nouveaux publics" : [Red Leaf](https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1)

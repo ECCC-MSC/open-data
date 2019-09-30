@@ -1,6 +1,6 @@
 [En français](2019-07_open-data-forum_fr.md)
 
-![ECCC logo](../../docs/img_eccc-logo.png)
+![ECCC logo](../img_eccc-logo.png)
 
 [TOC](2019-07_open-data-forum_en.md) > Open Data Forum 2019-07
 
@@ -20,7 +20,7 @@ The videos of the forum as well as the presentations offered are available below
 
 The videos are on YouTube. By clicking on the image you will be taken to the video. There is also a [playlist containing all videos from the MSC Open Data Forum](https://www.youtube.com/playlist?list=PLK5qFJYquwatnQNIlPEHfLLyhLYL3Q9b-).
 
-List of videos :
+List of videos:
 
 1. [MSC, data and areas of application (current and future issues)](#msc-data-and-areas-of-application-current-and-future-issues)
 2. [Datamart and open data services](#msc-datamart-and-open-data-services)
@@ -29,7 +29,7 @@ List of videos :
 5. [Canadian Climate Services Centre](#canadian-climate-services-centre)
 6. [Demonstration on how to access open data via MSC Datamart and GeoMet using the new documentation](#demonstration-on-how-to-access-open-data-via-msc-datamart-and-geomet-using-the-new-documentation)
 7. [Question and Answer Session](#question-and-answer-session)
-8. Presentations from the private sector :
+8. Presentations from the private sector:
     * [Hydro-Québec: MSC Datamart GRIB Data Usage in Operations of an Energy Selling and Trading Floor](#hydro-quebec-msc-datamart-grib-data-usage-in-operations-of-an-energy-selling-and-trading-floor)
     * [WPred : Our forecasts at your service](#wpred-our-forecasts-at-your-service)
     * [Intact : Use of meteorological data in the insurance sector](#intact-use-of-meteorological-data-in-the-insurance-sector)

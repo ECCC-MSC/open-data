@@ -1,6 +1,6 @@
 [In English](2019-07_open-data-forum_en.md)
 
-![ECCC logo](../../docs/img_eccc-logo.png)
+![ECCC logo](../img_eccc-logo.png)
 
 [TdM](2019-07_open-data-forum_fr.md) > Forum de données ouvertes 2019-07
 
