@@ -39,8 +39,8 @@ The Meteorological Service of Canada's [metadata is available on the Canadian Op
 
 Series of events organized around MSC open data.
 
-* MSC open data forum - July 8, 2019
-* METEOHACK hackathon - July 8-10, 2019
+* [MSC open data forum - July 8, 2019](events/2019-07_open-data-forum_en.md)
+* [METEOHACK hackathon - July 8-10, 2019](events/2019-07_hackathon-METEOHACK_en.md)
 
 ## Licence
 
