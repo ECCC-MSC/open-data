@@ -8,11 +8,24 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
     
-## 2.0.8
+## 2.1.1
 
-* date: 2019-09-25
+* date: 2019-10-XX
 * announcements:
     * not announced to users
+* new content:
+    * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * TBD
+
+## 2.1.0
+
+* date: 2019-09-30
+* announcements:
+    * New METEOHACK and Open Data Forum announced
+    * New Dataset changelog documentation announced
 * new content:
     * METEOHACK (forum and hackathon) pages under new repertory events
 * improvements:
@@ -21,6 +34,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * updates to datasets ordering on root msc-data page
     * Update changelog (generic links)
     * Improve GEPS products documentation 
+    * CCCS documentation update
 * bug fixes:
     * TBD
     
