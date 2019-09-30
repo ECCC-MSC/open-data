@@ -1,8 +1,8 @@
-[In English](2019-07_hackaton-METEOHACK_en.md)
+[In English](2019-07_hackathon-METEOHACK_en.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](2019-07_hackaton-METEOHACK_fr.md) > Hackathon METEOHACK 2019-07
+[TdM](2019-07_hackathon-METEOHACK_fr.md) > Hackathon METEOHACK 2019-07
 
 # Hackathon METEOHACK 2019 du SMC
 
