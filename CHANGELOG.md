@@ -8,18 +8,30 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
     
-## 2.1.1
+## 2.1.2
 
-* date: 2019-10-XX
+* date: 2019-10-17 ===== PLANNED
 * announcements:
     * not announced to users
 * new content:
-    * Added link to the events page on root page
+    * TBD
 * improvements:
-    * Minor deploy instruction improvements
-    * ComDoc ToR not draft anymore
+    * TBD
 * bug fixes:
     * TBD
+
+## 2.1.1
+
+* date: 2019-09-30
+* announcements:
+    * not announced to users
+* new content:
+    * Added links to the events page on root page
+* improvements:
+    * Various deploy instruction improvements
+    * ComDoc ToR not draft anymore
+* bug fixes:
+    * Fixed git fetch command in deploy instructions
 
 ## 2.1.0
 
