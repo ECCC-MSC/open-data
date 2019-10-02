@@ -39,7 +39,7 @@ Les métadonnées du Service météorologique du Canada sont disponibles sur le 
 Série d'évènements organisés autour des données ouvertes du SMC.
 
 * [Forum de données ouvertes du SMC - 8 Juillet 2019](events/2019-07_open-data-forum_fr.md)
-* [Hackathon METEOHACK - 8 au 10 juillet 2019](events/2019-07_hackathon-METEOHACK_fr.md) 
+* [Hackathon METEOHACK - 8 au 11 juillet 2019](events/2019-07_hackathon-METEOHACK_fr.md) 
 
 ## Licence
 
