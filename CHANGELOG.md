@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Moved Usage map center 5 degrees to the north
 * bug fixes:
-    * TBD
+    * Fixed broken link in RDPS changelog
 
 ## 2.1.1
 

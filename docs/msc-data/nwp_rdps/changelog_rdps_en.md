@@ -24,6 +24,7 @@ The details of these changes can be consulted in the copy of the official note a
 ### Major upgrade to Version 7.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
 On Wednesday, July 3, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the Regional Deterministic Prediction System (RDPS) to version 7.0.0.
+
 The changes included in this upgrade are summarized as follows:
 
 * Changes to the forecast model:
@@ -37,7 +38,7 @@ The changes included in this upgrade are summarized as follows:
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281748___44556).
 
-A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_20190703_e.pdfhttps://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_20190703_e.pdf).
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_20190703_e.pdf).
 
 The technical specifications document for RDPS 7.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_e.pdf).
 
@@ -47,6 +48,7 @@ The technical specifications document for RDPS 7.0.0 [is available at this link]
 ### Major upgrade to Version 6.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
 On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the Regional Deterministic Prediction System (RDPS) to version 6.0.0.
+
 The changes included in this upgrade are summarized as follows:
 
 * Changes to the forecast model:
@@ -74,6 +76,7 @@ The technical specifications document for RDPS 6.0.0 [is available at this link]
 ### Upgrade to Version 5.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
 On Wednesday, September 7th 2016, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 5.0.0.
+
 The changes included in this upgrade are summarized as follows:
 
 * Changes to the forecast model:
@@ -100,6 +103,7 @@ The technical specifications document for RDPS 5.0.0 [is available at this link]
 ### Upgrade to Version 4.1.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
 On Tuesday December 15th 2015, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 4.1.0.
+
 The changes included in this upgrade are summarized as follows:
 
 * Changes to the forecast model:
