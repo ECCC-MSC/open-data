@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * improvements:
     * Moved Usage map center 5 degrees to the north
+    * Changed radar web map to use Snow style (more vivid!)
 * bug fixes:
     * Fixed broken link in RDPS changelog
 
