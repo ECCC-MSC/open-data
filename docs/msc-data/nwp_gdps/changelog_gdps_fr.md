@@ -14,9 +14,9 @@ Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météor
 
 Les composantes d'assimilation de données du SGPD ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.
 
-Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement [via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
+Les détails de cette mise à jour sont disponibles dans la [note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255).
 
-* Le document des spécifications techniques pour le SGPD 7.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_7.0.0_f.pdf).
+* [Spécifications techniques pour le SGPD 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_7.0.0_f.pdf).
 
 ## Le mercredi 3 juillet 2019
 
@@ -26,7 +26,7 @@ Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre mété
 Résumé des éléments majeurs que comporte cette mise à jour :
 
 * Changements à la composante atmosphérique du modèle de prévision :
-    * Le SGPD-7.0.0 utilise la version 5.0.0 du modèle GEM. Pour plus d'informations sur GEM-5, [veuillez consulter ce document (en anglais)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf).
+    * Le SGPD-7.0.0 utilise la version 5.0.0 du modèle GEM. [Plus d'informations sur GEM-5](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf) (en anglais).
     * La résolution horizontale passe de 25 km à 15 km.
     * Le nombre de niveaux verticaux passe de 80 à 84.
     * Le schéma de surface ISBA est amélioré.
@@ -38,11 +38,10 @@ Résumé des éléments majeurs que comporte cette mise à jour :
     * La nouvelle analyse de température de surface de la mer et de glace marine a une plus haute résolution (0.10 degré).
 
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281732___16257).
-
-Une note technique à ce sujet [est disponible via ce lien (en anglais)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf). La version française sera disponible bientôt.
-
-Le document des spécifications techniques du SGPD 7.0.0 [est disponible ici en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
+Notes:
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281732___16257).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf) (en anglais, version française sera disponible bientôt).
+* [Spécifications techniques du SGPD 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
 
 ## Le mardi 18 septembre 2018
 
@@ -59,11 +58,10 @@ Résumé des éléments majeurs que comporte cette mise à jour :
     * Le modèle de transfert radiatif RTTOV servant d'opérateur d'observation des radiances a été mis à jour de la version 10 à la version 12.1.
     * Augmentation de la résolution de l'incrément d'analyse dans le 4D-EnVar (de 50 à 37 km).
 
-La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2018/09/14/NOCN03_CWAO_142116___45455).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-610_20180918_f.pdf).
-
-Le document des spécifications techniques du SGPD 6.1.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.1.0_f.pdf).
+Notes:
+* [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2018/09/14/NOCN03_CWAO_142116___45455).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-610_20180918_f.pdf).
+* [Spécifications techniques du SGPD 6.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.1.0_f.pdf).
 
 
 ## Le mercredi 1er novembre 2017
@@ -74,15 +72,14 @@ Le mercredi 1er novembre 2017, à compter de la passe de 1200 UTC, le Centre mé
 Résumé des éléments majeurs que comporte cette mise à jour :
 
 * Changements au modèle de prévision:
-    * Couplage bi-directionnel avec un modèle océan-glace. Avec le nouveau SGPD 6.0.0, les conditions de surface marine évolue dans le temps du au couplace avec la composante prévision du Système global de prévision océan-glace (SGPOG). [Cliquez ici pour les détails de SGPOG](../nwp_giops/changelog_giops_fr.md).
+    * Couplage bi-directionnel avec un modèle océan-glace. Avec le nouveau SGPD 6.0.0, les conditions de surface marine évolue dans le temps du au couplace avec la composante prévision du [Système global de prévision océan-glace (SGPOG)](../nwp_giops/changelog_giops_fr.md).
     * Utilisation de la version 4.8.2 du modèle GEM. Les changements principaux sont associés avec l’interface à la surface, avec seulement des changements mineurs à la physique et la dynamique du modèle.
 * Dans cette mise à jour, aucun changement n'a été fait au système d'assimilation, ni aux observations qui sont utilisés par le SGPD.
 
-La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2017/10/31/NOCN03_CWAO_311927___01741).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-600_20171101_f.pdf).
-
-Le document des spécifications techniques du SGPD 6.0.0 (en anglais) [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.0.0_e.pdf).
+Notes:
+* [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2017/10/31/NOCN03_CWAO_311927___01741).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-600_20171101_f.pdf).
+* [Spécifications techniques du SGPD 6.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.0.0_e.pdf) (en anglais).
 
 
 ## Le mardi 15 décembre 2015
@@ -106,11 +103,10 @@ Résumé des éléments majeurs que comporte cette mise à jour :
     * Ajout des observations de plus de 600 récepteurs GPS au sol - la plupart en Europe.
     * L'application des corrélations inter-canaux pour toutes les données de radiance infrarouge et micro-onde.
 
-La note officielle annonçant ce changement [est disponible en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142128___00043).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-500_20151215_f.pdf).
-
-Le document des spécifications techniques du SGPD 5.0.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_5.0.0_f.pdf).
+Notes:
+* [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142128___00043).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-500_20151215_f.pdf).
+* [Spécifications techniques du SGPD 5.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_5.0.0_f.pdf).
 
 
 ## Le mardi 18 novembre 2014
@@ -132,9 +128,9 @@ Résumé des éléments majeurs que comporte cette mise à jour :
     * Recyclage de plusieurs variables pronostiques.
 * Nouvelle analyse de la concentration de la glace de mer.
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141442___00930).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_f.pdf).
+Notes:
+* [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141442___00930).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_f.pdf).
 
 
 ## Le mercredi 30 avril 2014
@@ -148,7 +144,7 @@ Bien que les données du satellite METOP-A/2 continueront d'etre assimilées par
 
 Suite à ces changements le numéros de version du système SGPD passe de 3.1.0 à 3.1.1.
 
-La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
+[Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
 
 
 ## Le jeudi 7 novembre 2013
@@ -170,15 +166,15 @@ Avec l'installation de tous ces changements, le SGPD opérationnel devient donc 
 
 Le mercredi 13 février 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son système global de prévision déterministe (SGPD). Cette nouvelle version amène une augmentation de la résolution de 33 à 25 km, incorpore un système d'assimilation 4D-VAR. Ceci résulte en une amélioration notable des prévisions, notamment pour l'hiver.
 
-Dans cette version une coordonnée vertical hybride décalée est utilisée. De l'information au sujet de cette coordonnée [est disponible dans cette courte note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/HybridVerticalCoordinateDefinitions_20130213.pdf) ainsi que sur cette [image au lien suivant](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/VerticalCoordinatesDiagram_afsysed_20130213.jpg).
+Dans cette version une coordonnée vertical hybride décalée est utilisée. De l'[information au sujet de cette coordonnée est disponible dans cette courte note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/HybridVerticalCoordinateDefinitions_20130213.pdf) ainsi que sur [cette image](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/VerticalCoordinatesDiagram_afsysed_20130213.jpg).
 
 Notez aussi que lors de cette implantation le temps de coupure associé à la collecte d'observations a été réduit et est maintenant [00,12]Z+3:05
 
 La vérification objective des champs en altitude et en surface contre des données de radiosondage montre une amélioration significative à toutes les écheances de prévision.
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/07/NOCN03_CWAO_071820___00197).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdps300_20130213_f.pdf).
+Notes:
+* [Note officielle annonçant ce changement](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/07/NOCN03_CWAO_071820___00197).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdps300_20130213_f.pdf).
 
 
 ## Le mercredi 16 novembre 2011
@@ -206,6 +202,6 @@ Suite à ces changements, la quantité de données d'observations assimilées da
 
 2. É: Tous les changements ci-dessus ont été combinés et ont fait l'objet de tests exhaustifs sur des cas d'été et d'hiver, incluant une passe parallèle. 
 
-Une copie de la note officielle avec de l'information additionnelle sur l'évaluation des impacts de ces changements est disponible [en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041).
+[Note officielle avec information additionnelle sur l'évaluation des impacts de ces changements](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041).
 
 Avec ces changements le systeme global de prevision deterministe (SGPD) est maintenant la version 2.2.0.
