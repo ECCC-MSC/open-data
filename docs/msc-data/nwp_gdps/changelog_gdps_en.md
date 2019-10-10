@@ -40,6 +40,7 @@ The changes included in this upgrade are summarized as follows:
     * New sea-surface temperature and sea-ice analyses at 0.1 deg resolution (from 0.2 deg resolution).
 
 Notes:
+
 * [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281719___09158).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf).
 * [Technical specifications of the GDPS 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_7.0.0_e.pdf).
@@ -61,6 +62,7 @@ The changes included in this upgrade are summarized as follows:
     * Increased horizontal resolution of analysis increment in 4D-EnVar (from 50 to 37 km)
 
 Notes:
+
 * [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2018/09/14/NOCN03_CWAO_142110___13748).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-610_20180918_e.pdf).
 * [Technical specifications of the GDPS 6.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.1.0_e.pdf).
@@ -79,6 +81,7 @@ The changes included in this upgrade are summarized as follows:
 * No modifications were made to the assimilation component nor observations ingested in this upgrade of the GDPS.
 
 Notes:
+
 * [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2017/10/30/NOCN03_CWAO_301922___01740).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-600_20171101_e.pdf).
 * [Technical specifications of the GDPS 6.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_6.0.0_e.pdf).
@@ -106,6 +109,7 @@ The changes included in this upgrade are summarized as follows:
     * Introduction of inter-channel correlations for all infrared and microwave radiances.
 
 Notes:
+
 * [Official note announcing the implementation](http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142125___00050).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-500_20151215_e.pdf).
 * [Technical specifications of the GDPS 5.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_5.0.0_e.pdf).
@@ -132,6 +136,7 @@ Summary of the major changes included in this upgrade:
 
 
 Notes:
+
 * [Official note announcing the implementation](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141410___00630).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_e.pdf).
 
@@ -179,6 +184,7 @@ As part of this implementation the cutoff time for collecting observations has b
 Changes were also brought to the Regional Determnistic Prediction System (RDPS) to harmonize it with GDPS-3.0.0, and the RDPS forecasts are also improved. As a result of these RDPS adjustments, the version of RDPS is now 3.1.0
 
 Notes:
+
 * [Official note describing these changes and the verification work](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/07/NOCN03_CWAO_071810___00179).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdps300_20130213_e.pdf).
 
