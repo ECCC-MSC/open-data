@@ -36,6 +36,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
 Les données sont accessibles aux adresses suivantes :
+
 * https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2/HH/
 * https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2/HH/
 * https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2/HH/

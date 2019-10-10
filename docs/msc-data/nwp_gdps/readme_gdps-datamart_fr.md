@@ -9,7 +9,7 @@
 
 # Données GRIB2 du système global de prévision déterministe (SGPD)
 
-Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude de 1500 x 751 à 0,24 x 0,24 degré de résolution, ce qui correspond à une résolution effective d’environ 25 km.
+Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km et 25 km.
 
 ## Adresse des données 
 
@@ -18,18 +18,30 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
 Les données sont accessibles à adresse suivante :
-https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/HH/hhh/
+https://dd.meteo.gc.ca/model_gem_global/RES/grib2/lat_lon/HH/hhh/
 
 où :
 
+* __RES__ : Résolution horizontale [15km, 25km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 240]
 
 Un historique de 20 heures est conservé dans ce répertoire.
 
-## Spécification technique de la grille
+## Spécification technique des grilles
 
-Valeurs données aux différents paramètres de la grille latitude-longitude à 25 km.
+Valeurs données aux différents paramètres de la grille latitude-longitude selon la résolution.
+
+### Données à 15km de résolution
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 2400 |
+| nj | 1201 | 
+| résolution | 0.15° |
+| coordonnées du premier point de grille | 90° S  180° W | 
+
+### Données à 25km de résolution
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -38,14 +50,13 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 | résolution | 0.24° |
 | coordonnées du premier point de grille | 90° S  180° W | 
 
-
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-CMC_glb_Variable_TypedeNiveau_Niveau_projection_YYYYMMDDHH_Phhh.grib2
+CMC_glb_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
 
 où :
 
@@ -55,15 +66,16 @@ où :
 * __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
 * __Niveau__ : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
 * __Projection__ : Représente le type de projection utilisée pour les données. Peut prendre les valeurs [latlon, ps].
+* __Resolution__ : Chaîne de caractères constante indiquant la résolution des données [.15x.15, .24x.24].
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 12].
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 240].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
-CMC_glb_TMP_ISBL_925_latlon.24x.242010090800_P042.grib2
+CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
-Le fichier débute le 8 septembre 2010 à 00Z (2010090800). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
+Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
 
 
 ## Niveaux  
