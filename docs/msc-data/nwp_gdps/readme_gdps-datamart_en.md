@@ -6,7 +6,7 @@
 
 # Global Deterministic Prediction System (GDPS) data in GRIB2 format
 
-The fields in the GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid of 1500 x 751 at 0.24 x 0.24 degree resolution, corresponding to an effective resolution of about 25 km.
+The fields in the GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km and 25 km.
 
 ## Data location
 
@@ -17,18 +17,30 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following address :
 
-https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/HH/hhh/
+https://dd.meteo.gc.ca/model_gem_global/RES/grib2/lat_lon/HH/hhh/
 
 where :
 
+* __RES__ : Horizontal resolution [15km, 25km]
 * __HHH__ : UTC time of the beginning of the model run[00, 12]
 * __hhhh__ : Forecast time[000, 003, 006, ..., 240]
 
 A 20-hour history is kept in this directory.
 
-## Technical specification of the grid
+## Technical specification of the grids
 
-Values given to the various parameters of the latitude-longitude grid at 25 km.
+Values given to the various parameters of the latitude-longitude grid according to the resolution.
+
+### Data at 15 km resolution
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 2400 |
+| nj | 1201 | 
+| resolution | 0.15° |
+| coordinates of the first grid point | 90° S  180° W | 
+
+### Data at 25 km resolution
 
 | Parameter | Value |
 | ------ | ------ |
@@ -37,14 +49,13 @@ Values given to the various parameters of the latitude-longitude grid at 25 km.
 | resolution | 0.24° |
 | coordinates of the first grid point | 90° S  180° W | 
 
-
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
-CMC_glb_Variable_LevelType_Level_projection_YYYYMMDDHH_Phhh.grib2
+CMC_glb_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
 
 where :
 
@@ -54,6 +65,7 @@ where :
 * __LevelType__ : Level type. To consult a complete list, refer to the Data in GRIB2 format section.
 * __Level__ : Level value. To consult a complete list, refer to the Data in GRIB2 format section.
 * __Projection__ : projection used for the data. Can take the values [latlon, ps]
+* __Resolution__ : constant string indicating the data resolution [.15x.15, .24x.24].
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
 * __HH__ : UTC run time [00, 12]
 * __Phhh__ : P is a constant character. hhh is the forecast hour [000, 003, 006, ..., 240]
@@ -61,10 +73,9 @@ where :
 
 Example of file name :
 
-CMC_glb_TMP_ISBL_925_latlon.24x.24_2010090800_P042.grib2
+CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on September 8th 2010 at 00Z (2010090800). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).
-
+This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).
 
 ## Levels
 

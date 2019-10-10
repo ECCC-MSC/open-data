@@ -36,6 +36,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
 The data can be accessed at the following URLs :
+
 * https://dd.weather.gc.ca/model_wave/great_lakes/erie/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/great_lakes/huron-michigan/grib2/HH/
 * https://dd.weather.gc.ca/model_wave/great_lakes/ontario/grib2/HH/
@@ -43,6 +44,7 @@ The data can be accessed at the following URLs :
 * https://dd.weather.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2/HH/
 
 where :
+
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
 A 24-hour history is stored in this directory.
