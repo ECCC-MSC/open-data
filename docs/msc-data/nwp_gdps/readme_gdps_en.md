@@ -7,7 +7,7 @@
 
 # Data and Products of the Global Deterministic Prediction System
 
-The Global Deterministic Prediction System (GDPS) performs physical calculations to produce deterministic forecasts of atmospheric elements from the present day to 10 days in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. The geographical coverage is global. The horizontal spatial resolution of the data is 25 and 66 km. Data is available for 28 vertical levels. The forecasts are carried out twice a day.
+The Global Deterministic Prediction System (GDPS) performs physical calculations to produce deterministic forecasts of atmospheric elements from the present day to 10 days in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. The geographical coverage is global. The horizontal spatial resolution of the data is 25 and 15 km. Data is available for 28 vertical levels. The forecasts are carried out twice a day.
 
 ## Access
 
