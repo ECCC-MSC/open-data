@@ -7,8 +7,8 @@ This is the user-oriented changelog for the MSC Open Data documentation. It trac
 MSC's public documentation uses [Semantic Versioning](https://semver.org/) for identifying version numbers. This is version naming scheme [recommended by GoC TBS](https://www.canada.ca/en/government/system/digital-government/modern-emerging-technologies/government-canada-standards-apis.html).
 
 # Changelog
-    
-## 2.1.2
+
+## 2.1.3
 
 * date: 2019-10-17 ===== PLANNED
 * announcements:
@@ -16,8 +16,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
+    * TBD
+* bug fixes:
+    * TBD
+    
+## 2.1.2
+
+* date: 2019-10-11 
+* announcements:
+    * not announced to users
+* new content:
+    * GDPS 15km
+* improvements:
     * Moved Usage map center 5 degrees to the north
     * Changed radar web map to use Snow style (more vivid!)
+    * Update some hyperlinks (to be continued)
 * bug fixes:
     * Fixed broken link in RDPS changelog
 
