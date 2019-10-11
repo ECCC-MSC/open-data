@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * TBD
+    * Added recommandation for WCS GetCoverage request regarding the data resolution 
 * bug fixes:
     * TBD
     
