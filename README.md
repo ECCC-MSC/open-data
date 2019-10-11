@@ -210,7 +210,7 @@ The following instructions take the current documentation version from `https://
 2. Pull the current version of the documentation you want to publish: `git pull upstream master`
 3. Update the changelog:
     1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
-    2. Verify that the version number ($VERSION) tag is available with `git fetch --tags` and then `git tag`
+    2. Verify that the version number ($VERSION) tag is available on https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/tags
     3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
 4. Tag the version:
     1. Create the new tag: `git tag $VERSION`
