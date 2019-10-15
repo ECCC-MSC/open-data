@@ -27,6 +27,7 @@ Les services web sont des protocoles élaborés pour supporter des interactions 
 Les services web GeoMet du SMC implémentent les standards ouverts ratifiés par [l'Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/) et [l'International Organization for Standardization (ISO)](https://www.isotc211.org/) qui rendent possible l'interopérabilité et ainsi simplifient la découverte, l'accès, la visualisation et l'intégration de données. Les standards de l'OGC et ISO jouent un rôle important pour [l'interopérabilité au sein de l'Organisation étéorologique mondiale (OMM)](https://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) et le [WMO Information System](https://www.wmo.int/pages/prog/www/WIS/). Ces standards sont supportés par de nombreux logiciels libres et logiciels commerciaux.
 
 Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
+
 * Web Map Service (WMS)
 * Web Coverage Service (WCS)
 * OGC API - Features (WFS 3)
