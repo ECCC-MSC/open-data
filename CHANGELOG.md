@@ -16,9 +16,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * Added recommandation for WCS GetCoverage request regarding the data resolution 
+    * Added recommendation for WCS GetCoverage request regarding the data resolution 
 * bug fixes:
-    * TBD
+    * Fixed broken list in GeoMet technical documentation
     
 ## 2.1.2
 

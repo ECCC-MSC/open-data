@@ -27,6 +27,7 @@ Web services are protocols designed to support machine to machine interaction ov
 The MSC GeoMet web services adhere to open standards ratified by the [Open Geospatial Consortium (OGC)](https://www.opengeospatial.org/), and the [International Organization for Standardization (ISO)](https://www.isotc211.org/) which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in [World Meteorological Organization interoperability](https://www.wmo.int/pages/prog/www/WIS/documents/MOAWMO_OGC.pdf) as part of the [WMO Information System](https://www.wmo.int/pages/prog/www/WIS/) and are supported by numerous off the shelf open source or commercial tools.
 
 The following OGC web services are supported by MSC GeoMet:
+
 * Web Map Service (WMS)
 * Web Coverage Service (WCS)
 * OGC API - Features (WFS 3)
