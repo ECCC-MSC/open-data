@@ -27,7 +27,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles](obs_vertical-profiles/readme_obs-vertical-pfl_en.md)
 
-## Numerical weather prediction forecasts
+## Numerical weather and environmental prediction forecasts
 
 * **Deterministic systems**
     * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
