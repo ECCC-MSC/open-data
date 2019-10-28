@@ -27,7 +27,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
 * [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
 
-## Prévisions météorologiques numériques
+## Prévisions numériques météorologiques et environnementales
 
 * **Systèmes déterministes**
     * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
