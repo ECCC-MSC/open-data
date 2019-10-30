@@ -121,7 +121,7 @@ Exemple :
 
 ## Note
 
-Une spécification du format de données est disponible dans le [guide des produits SWOB-ML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.2_f.pdf).
+Une spécification du format de données est disponible dans le [guide des produits SWOB-ML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.3_f.pdf).
 
 ## Support
 
