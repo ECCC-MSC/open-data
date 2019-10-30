@@ -18,8 +18,8 @@ The data can be accessed at the following URLs: [https://dd.weather.gc.ca/model_
 
 where :
 
-* __HH__: Model run start, in UTC [00,12]
-* __hhh__: Forecast hour [000,001,002,...,048]
+* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __hhh__: Forecast hour [000, 001, 002,..., 048] at 00Z, 12Z and [000, 001, 002,..., 053, 054] at 06Z and 18Z 
 
 A 20-hour history is kept in this directory.
 
@@ -57,8 +57,8 @@ where :
 * __Level__ : Level value. To consult a complete list, refer to the variables section.
 * __ps10km__ : constant string indicating that the projection used is polar-stereographic at 10km resolution.
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
-* __HH__ : UTC run time [00,12]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000,001,002,...,048]
+* __HH__ : UTC run time [00, 06, 12, 18]
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000,001,002,...,048] at 00Z and 12Z and up to 54h at 06Z and 18Z
 * __grib2__ : constant string indicating the GRIB2 format is used
 
 Example of file name : 
