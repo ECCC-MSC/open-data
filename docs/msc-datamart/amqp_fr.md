@@ -55,14 +55,25 @@ Quant au guide d’utilisation, il est disponible ici :  [https://github.com/Met
 
 Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers: [https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
 
+__NOTE__:
+
+__Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration de sr_subscribe:
+
+* queue_name q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}  (option dynamique)
+* q_anonymous.sr_subscribe./nom_config/./nom_compagnie/ (option statique)
+
+Exemple : q_anonymous.sr_subscribe.citypage.compagnie
+
 ## Exemples
 
 Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD
 
 * Les commandes disponibles sont:
+
     * alerts : sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
     * citypage_weather : sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
     * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
+
 * Les logs se retrouvent sous : ~/.cache/sarra/log
 * Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup
 

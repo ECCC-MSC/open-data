@@ -41,12 +41,10 @@ Valeurs données aux paramètres de la grille polaire stéréographique ouest.
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
+| ni | 1330 |
+| nj | 1180 | 
 | résolution à 60° N | 1.0 km |
-| coordonnées du premier point de grille | ° N  ° W |
-| coordonnées (i; j) du Pôle Nord | (, ) |
-| orientation de la grille (par rapport à l’axe des j) | ° |
+| coordonnées du premier point de grille (rélatives à la grille utilisée) | 5°S  23°W |
 
 ## Nomenclature des noms de fichiers 
 
