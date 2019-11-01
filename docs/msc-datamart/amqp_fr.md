@@ -69,11 +69,9 @@ Exemple : q_anonymous.sr_subscribe.citypage.compagnie
 Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD
 
 * Les commandes disponibles sont:
-
     * alerts : sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
     * citypage_weather : sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
     * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
-
 * Les logs se retrouvent sous : ~/.cache/sarra/log
 * Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup
 
