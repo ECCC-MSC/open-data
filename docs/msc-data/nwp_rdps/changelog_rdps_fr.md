@@ -219,14 +219,16 @@ Une note technique à ce sujet [est disponible via ce lien](https://collaboratio
 
 Voici un sommaire des changements apportés aux systèmes d'assimilation déterministe régional :
 
-A. Nouvelles données satellitaires - les données satellitaires suivantes seront incorporées dans les systèmes d'assimilation global et régional:
+A. Nouvelles données satellitaires - les données satellitaires suivantes seront incorporées dans les systèmes d'assimilation global et régional :
+
 * 62 canaux infrarouges provenant de l'instrumentation IASI à bord du satellite METOP.
 * 7 canaux micro-ondes de l'instrumentation SSM/IS à bord du satellite DMSP F16.
 * 1 canal de vapeur d'eau provenant des deux satellites METEOSAT, de MTSAT-1R et de GOES-W.
 * Une restriction sur les canaux infrarouges de l'instrumentation AIRS dans les régions polaires sera enlevée.
 * L'écrémage horizontal de toutes les radiances satellitaires passera de 250 km (sauf 200 km pour SSM/I) présentement à 150 km, ajoutant beaucoup de données disponibles aux systèmes d'assimilation.
 
-B. Autres changements à l'assimilation:
+B. Autres changements à l'assimilation :
+
 * Les observations d'humidité mesurées par les avions équipés de système AMDAR seront assimilées.
 * Un nouveau schéma de correction de biais des données satellitaires remplacera le schéma présent. L'impact principal sera de réduire la période sur laquelle se fait le calcul de la correction de biais de 15 à 7 jours. Le même code est utilisé pour toutes les données de radiance.
 * Une version modifiée du code de transfert radiatif (RTTOV) sera utilisée pour les données de radiance.

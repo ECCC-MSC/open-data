@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.1.4
+
+* date: 2019-11-21
+* announcements:
+    * not announced to users
+* new content:
+    * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * Formatting fixes
+
 ## 2.1.3
 
 * date: 2019-11-01
@@ -22,7 +34,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add model runs for RDPS (06,18Z) and correct forecast hours availability
 * bug fixes:
     * Fixed broken list in GeoMet technical documentation
-    * Formatting fixes	
+    * Formatting fixes
     
 ## 2.1.2
 
