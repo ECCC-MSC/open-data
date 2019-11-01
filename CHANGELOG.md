@@ -10,15 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.1.3
 
-* date: 2019-10-17 ===== PLANNED
+* date: 2019-11-01
 * announcements:
     * not announced to users
 * new content:
-    * TBD
+    * HRDPS1km grid specifications
+    * Add note for AMQP (add compagny name in the sr_subscribe config : facilitate support) 
 * improvements:
-    * Added recommendation for WCS GetCoverage request regarding the data resolution 
+    * Added recommendation for WCS GetCoverage request regarding the data resolution
+    * Add Environemental mention for NWP data
+    * Add model runs for RDPS (06,18Z) and correct forecast hours availability
 * bug fixes:
     * Fixed broken list in GeoMet technical documentation
+    * Formatting fixes	
     
 ## 2.1.2
 

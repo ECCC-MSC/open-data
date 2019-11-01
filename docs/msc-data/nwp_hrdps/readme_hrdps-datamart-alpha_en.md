@@ -39,12 +39,10 @@ Table lists the values of various parameters of the West polar-stereographic gri
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
+| ni | 1330 |
+| nj | 1180 | 
 | resolution at 60° N | 1.0 km |
-| coordinate of first grid point | ° N  ° W |
-| (i,j) coordinate of North Pole | (,) |
-| grid orientation (with respect to j axis) | ° |
+| coordinate of first grid point (with respect to the used grid) | 5°S 23°W |
 
 ## File name nomenclature 
 
