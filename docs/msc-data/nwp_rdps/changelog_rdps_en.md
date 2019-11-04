@@ -218,6 +218,7 @@ Starting on November 16 2011 at 06 UTC, the Canadian Meteorological Centre (CMC)
 Here is an overview of changes involving the regional data assimilation system:
 
 A. New Satellite Data: The following satellite data will be incorporated in the global and regional data assimilation systems:
+
 * Sixty-two (62) infrared channels from the IASI instrument on board the METOP satellite.
 * Seven (7) microwave channels from the SSM/IS instrument on board the DMSP F16 satellite.
 * One (1) water vapor channel from the GOES-W, METSAT-1R and both METEOSAT satellites.
@@ -225,6 +226,7 @@ A. New Satellite Data: The following satellite data will be incorporated in the 
 * The horizontal thinning of all satellite radiance data, currently done at 250 km (except 200 km for SSM/I) will be reduced to 150 km, therefore adding much more satellite data to the systems.
 
 B. Other Assimilation Changes:
+
 * Moisture observations measured from properly equipped aircraft (AMDAR) will be assimilated.
 * A new satellite data bias correction scheme will replace the current one. The main impact is the reduction of the time period to compute the bias corrections from 15 to 7 days. the same code is used for all radiance data.
 * A modified version of the RTTOV radiative transfer code will be used for satellite radiance data.
