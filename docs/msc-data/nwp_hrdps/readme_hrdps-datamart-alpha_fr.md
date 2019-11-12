@@ -12,7 +12,7 @@ Ce système de prévision utilise le Modèle environnemental global multi-échel
 
 Le niveau de momentum le plus bas se situe à une altitude d'environ 40m. Ce système est piloté par le domaine continental [SHRPD à 2.5 km](readme_hrdps_fr.md), qui fournit les conditions initiales, latérales et aux limites supérieures des champs atmosphériques.  Les conditions de surface initiales sont fournies par le Système canadien d'assimilation des données à la surface (CaLDAS) à 2.5 km qui est couplé au SHRPD à 2.5 km. Les champs hydrométéorologiques initiaux sont "recyclés" à partir de la prévision de 6 heures de l'intégration à 2.5 km du SHRPD. 
 
-Depuis la mise en œuvre initiale du SHRPD 1km ouest, le système fonctionn 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 36 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1.0 km sur 62 niveaux verticaux.
+Depuis la mise en œuvre initiale du SHRPD 1km ouest, le système fonctionne 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 36 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1.0 km sur 62 niveaux verticaux.
 
 ## Adresse des données 
 
@@ -65,12 +65,12 @@ où :
 * __ps1.0km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 1.0km.
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 024/030/042/048].
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 035/036].
 * __mm__ : « mm » représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
-CMC_hrdps_west_DEPR_ISBL_0175_ps2.5km_2019082512_P003-00.grib2
+CMC_hrdps_west_DEPR_ISBL_0175_ps1.0km_2019082512_P003-00.grib2
 
 Le fichier a été créé par le CMC et contient une prévision du Système haute résolution de prévision déterministe expérimental sur le domaine ouest. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 175 mb (ISBL_0175), sur une grille polaire stéréographique à une résolution de 1.0 km (ps1.0km). Il débute le 25 août 2019 à 12Z (2019082512). Il contient l’heure de prévision 03 (P003) et les minutes de prévision (00) en format GRIB2 (.grib2).
 
