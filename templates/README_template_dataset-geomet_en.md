@@ -6,9 +6,10 @@
 
 # Available GDPS data on GeoMet-Weather
 
-## Access Services
+## Access services
 
 GDPS layers are available in the following geospatial web services:
+
 * GeoMet-Weather:
     * OGC Web Map Service (WMS)
     * OGC Web Coverage Service (WCS)
