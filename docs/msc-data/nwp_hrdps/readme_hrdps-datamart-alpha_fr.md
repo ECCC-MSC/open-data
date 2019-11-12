@@ -6,7 +6,7 @@
 
 # Données GRIB2 expérimentales à 1km du Système à Haute Résolution de Prévision Déterministe (SHRPD) sur la fenêtre ouest
 
-Au cours de l'été 2017, la Colombie-Britannique a connu de graves incendies de forêt.  Afin de fournir des informations météorologiques plus détaillées et de piloter les modèles de qualité de l'air, le domaine SHRPD 1km ouest a été implémenté en mode expériemtal le 31 juillet 2018. 
+Au cours de l'été 2017, la Colombie-Britannique a connu de graves incendies de forêt.  Afin de fournir des informations météorologiques plus détaillées et de piloter les modèles de qualité de l'air, le domaine SHRPD 1km ouest a été implémenté en **mode expérimental** le 31 juillet 2018. 
 
 Ce système de prévision utilise le Modèle environnemental global multi-échelle (GEM). La résolution horizontale de la grille est d'environ 1.0 km et possède 62 niveaux verticaux avec pilotage par le toit. 
 
