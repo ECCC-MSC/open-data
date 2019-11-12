@@ -64,3 +64,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Hurricanes trajectories](trajectories/readme_hurricane_en.md)
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](https://dd.weather.gc.ca/meteocode/geodata/)
+
+## Changes to operational data production systems
+
+Changes to operational data production systems are documented in the dataset subpages. A [chronological summary of changes is provided for Numerical Weather Prediction (NWP) systems](changelog_nwp_en.md).
