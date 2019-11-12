@@ -12,10 +12,10 @@ This page describes the data and products of the canadian radars of the Environm
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+This data is available on the data server [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
+* [North-American radar composite layers available via geospatial web services on GeoMet-Weather](readme_radar_geomet_en.md)
 * [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -25,7 +25,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ### Metadata
 
-Not available.
+Not yet available.
 
 ## Technical documentation
 
@@ -33,7 +33,3 @@ Not available.
 * [Weather radars : how to use](https://weather.gc.ca/radar/how-to-use_e.html)
 * [Canada's weather-radar network replacing](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/modernizing-network.html)
 * [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
-
-## Change log
-
-Does not apply.

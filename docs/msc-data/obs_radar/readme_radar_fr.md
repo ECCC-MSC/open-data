@@ -12,10 +12,10 @@ Cette page décrit les données et produits des radars canadiens du réseau de 3
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
+* [Couches disponibles pour la composite radar nord-américaine via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md)
 * [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md) 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -25,7 +25,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-Non disponibles.
+Non disponibles pour le moment.
 
 ## Documentation technique
 
@@ -33,15 +33,3 @@ Non disponibles.
 * [Radars météo: guide d'utilisation](https://meteo.gc.ca/radar/how-to-use_f.html)
 * [Remplacement du réseau canadien de radars météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/modernisation-reseau.html)
 * [Interruption et maintenance du service radar](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/interruption-maintenance-service.html)
-
-## Registre des changements 
-
-Ne s'applique pas.
-
-
-
-
-
-
-
-

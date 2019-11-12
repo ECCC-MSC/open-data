@@ -12,11 +12,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: 2019-11-26
 * announcements:
-    * not announced to users
+    * [Announced to GeoMet-Info](https://wiki.cmc.ec.gc.ca/wiki/GeoMet/Announcements/Public-documentation/2019-11:_2.1.4_with_GeoMet_Radar_layers_doc) for the new GeoMet radar layers documentation
 * new content:
-    * TBD
+    * New MSC GeoMet radar data documentation page
+    * New Changelog summary page for NWP
 * improvements:
-    * TBD
+    * Numerous improvements to the radar documentation pages
 * bug fixes:
     * Formatting fixes
 
