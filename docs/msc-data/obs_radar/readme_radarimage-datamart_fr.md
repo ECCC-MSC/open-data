@@ -18,7 +18,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GIF.
 
-Les images radar se trouvent à l'adresse:
+Les images radar se trouvent à l'adresse :
 
 https://dd.meteo.gc.ca/radar/PRODUIT/FORMAT/RADAR/nom_du_fichier.extension
 
@@ -34,7 +34,7 @@ __Notes__:
 
 * Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse suivante :
 
-http://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
+https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
 
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
@@ -53,28 +53,28 @@ Composites avec une échelle d'intensité de 14 couleurs :
 * YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
 * YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
 
-   ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
+ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
 Composites avec une échelle d'intensité de 8 couleurs :
 
 * YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 * YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
  
-   ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
+ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
 
 Radar individuel avec une échelle d'intensité de 14 couleurs :
 
 * YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
 * YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
- 
-   ex: 201409201400_XFT_PRECIPET_RAIN.gif
+
+ex: 201409201400_XFT_PRECIPET_RAIN.gif
 
 Radar individuel avec une échelle d'intensité de 14 couleurs :
 
 * YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
 * YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
  
-   ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
+ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
 
 * __Produits de contingence PRECIPET__ 
 
@@ -87,7 +87,7 @@ YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif
 ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif
 
 Cette image composite peut être différenciée de celle du radar d'origine grâce à l'inscription "Composite" dans la légende à droite de l'image. Pour savoir comment utiliser ces images composites, vous pouvez consulter la documentation en ligne:
-[http://meteo.gc.ca/radar/how-to-use_f.html#display](http://meteo.gc.ca/radar/how-to-use_f.html#display)
+[https://meteo.gc.ca/radar/how-to-use_f.html#display](https://meteo.gc.ca/radar/how-to-use_f.html#display)
 
 * __CAPPI__
   
@@ -96,7 +96,7 @@ La nomenclature des fichiers CAPPI est la suivante :
 * YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
 * YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
 
-   ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
+ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
 
 * __24_HR_ACCUM__ (basées sur le produit PRECIPET)
 
@@ -104,7 +104,7 @@ Représente l'accumulation de précipitation en mm tel qu'observée par le radar
   
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
-   ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
+ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 
 ## Au sujet des nouveaux radars à double polarisation S-Band
 
@@ -119,8 +119,8 @@ Le 1er radar a déjà été installé à Radisson (Saskatchewan) et quelques pro
 
 Comment va se faire la transition et quels seront les impacts sur les usagers ?
 
-* Pour une certaine période, les produits (PRECIPET, CAPPI, ...) seront générés avec le même ID de 3 lettres (mêmes noms de fichiers) et la même fréquence (aux 10 minutes). Durant cette période, les produits seront déposés dans les mêmes répertoires (ex: [http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](http://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). Cela facilitera la transition.
-* En parallèle, les nouveaux produits avec le nouvel ID de 5 lettres seront disponibles aux 6 minutes dans les nouveaux répertoires respectifs (ex: http://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
+* Pour une certaine période, les produits (PRECIPET, CAPPI, ...) seront générés avec le même ID de 3 lettres (mêmes noms de fichiers) et la même fréquence (aux 10 minutes). Durant cette période, les produits seront déposés dans les mêmes répertoires (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). Cela facilitera la transition.
+* En parallèle, les nouveaux produits avec le nouvel ID de 5 lettres seront disponibles aux 6 minutes dans les nouveaux répertoires respectifs (ex: https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
 * Les usagers seront informés lorsque les nouveaux radars seront installés et leurs produits disponibles selon le processus décrit ci-dessus.
 
 Exemple (cas du radar Radisson) :
@@ -130,9 +130,9 @@ Exemple (cas du radar Radisson) :
 
 ## Archive des images radar
 
-Les images radar historiques nationales, régionales et locales du réseau de stations radar à travers le Canada sont disponibles, sans frais, à travers le site web des données climatiques historiques, à cette adresse:
+Les images radar historiques nationales, régionales et locales du réseau de stations radar à travers le Canada sont disponibles, sans frais, à travers le site web des données climatiques historiques, à cette adresse :
 
-http://climate.weather.gc.ca/radar/index_f.html
+https://climate.weather.gc.ca/radar/index_f.html
 
 ## Support
 
@@ -141,9 +141,3 @@ Pour toute question relative à ces données, merci de nous contacter à l'adres
 ## Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
-
-
-
-
-
