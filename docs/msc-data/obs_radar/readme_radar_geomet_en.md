@@ -31,10 +31,8 @@ North-American weather radar composite at 1km:
 * Radar precipitation rate (Snow) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
 * Radar reflectivity (Rain) (1 km) [dBZ], ID: `RADAR_1KM_RDBR`
 * Corresponding dynamic radar coverage layers:
-    * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`
-    * Inverted coverage for Rain, ID: `RADAR_COVERAGE_RRAI.INV`
-    * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`
-    * Inverted coverage for Snow, ID: `RADAR_COVERAGE_RSNO.INV`
+    * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`. ID for inverted style: `RADAR_COVERAGE_RRAI.INV`
+    * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`. ID for inverted style: `RADAR_COVERAGE_RSNO.INV`
 
 North-American weather radar composite at 4km:
 
