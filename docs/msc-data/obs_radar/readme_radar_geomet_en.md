@@ -8,7 +8,7 @@
 
 MSC GeoMet provides access to several popular North-American weather radar composite layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
-## Access services
+## Access to the geospatial web services
 
 The weather radar layers are available on GeoMet-Weather in the Web Map Service (WMS) standard:
 
@@ -23,26 +23,25 @@ Everyone is invited to see MSC GeoMet's North-American weather radar composite l
 
 ## Available layers
 
-updated every 10 minutes, see get capa 
+Weather radar layers are updated every 10 minutes. The last 3 hours of data is available on MSC GeoMet. 
 
 North-American weather radar composite at 1km:
 
-* Radar precipitation rate (Rain) (1 km) [mm/hr], ID: RADAR_1KM_RRAI
-* Radar precipitation rate (Snow) (1 km) [cm/hr], ID: RADAR_1KM_RSNO
-* Radar reflectivity (Rain) (1 km) [dBZ], ID: RADAR_1KM_RDBR
+* Radar precipitation rate (Rain) (1 km) [mm/hr], ID: `RADAR_1KM_RRAI`
+* Radar precipitation rate (Snow) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
+* Radar reflectivity (Rain) (1 km) [dBZ], ID: `RADAR_1KM_RDBR`
 * Corresponding dynamic radar coverage layers:
-    * Coverage for Rain, ID: RADAR_COVERAGE_RRAI
-    * Inverted coverage for Rain, ID: RADAR_COVERAGE_RRAI.INV
-    * Coverage for Snow, ID: RADAR_COVERAGE_RSNO
-    * Inverted coverage for Snow, ID: RADAR_COVERAGE_RSNO.INV
+    * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`
+    * Inverted coverage for Rain, ID: `RADAR_COVERAGE_RRAI.INV`
+    * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`
+    * Inverted coverage for Snow, ID: `RADAR_COVERAGE_RSNO.INV`
 
 North-American weather radar composite at 4km:
 
-* Radar precipitation rate (Rain) (4 km) [mm/hr], ID: RADAR_RRAI
-* Radar precipitation rate (Snow) (4 km) [cm/hr], ID: RADAR_RSNO
-* Radar reflectivity (Rain) (4 km) [dBZ], ID: RADAR_RDBR
-* Radar reflectivity (Snow) (4 km) [dBZ], ID: RADAR_RDBS
-
+* Radar precipitation rate (Rain) (4 km) [mm/hr], ID: `RADAR_RRAI`
+* Radar precipitation rate (Snow) (4 km) [cm/hr], ID: `RADAR_RSNO`
+* Radar reflectivity (Rain) (4 km) [dBZ], ID: `RADAR_RDBR`
+* Radar reflectivity (Snow) (4 km) [dBZ], ID: `RADAR_RDBS`
 
 ## Usage
 
@@ -51,7 +50,7 @@ Please refer to the [technical documentation on MSC GeoMet geospatial web servic
 Retrieving the list of latest timesteps available:
 
 * Users can use `&layer=` in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up to date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
-* Additional info available in the [handling time with WMS section](../../msc-geomet/web-services_en/#handling-time)
+* Additional information is available in the [handling time with WMS section](../../msc-geomet/web-services_en/#handling-time)
 
 WMS styles:
 
