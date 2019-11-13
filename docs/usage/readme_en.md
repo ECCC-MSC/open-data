@@ -42,7 +42,7 @@ MSC open data can also easily be integrated into interactive maps in browsers an
 
 By using JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Openlayers](https://openlayers.org/), amongst others, users can integrate data available via MSC GeoMet into their own interactive web maps.
 
-Below is an example of an OpenLayers web map configured to display a weather radar composite Web Map Service (WMS) layer served by MSC GeoMet.
+Below is an example of an OpenLayers web map configured to display [weather radar composite Web Map Service (WMS) layers served by MSC GeoMet](../msc-data/obs_radar/readme_radar_geomet_en.md).
 
 <div id="map" style="height: 400px"></div>
 

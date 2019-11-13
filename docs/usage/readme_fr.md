@@ -40,7 +40,7 @@ Les données ouvertes du SMC peuvent également être aisément intégrées dans
 
 En utilisant des librairies JavaScript telles que [Leaflet](https://leafletjs.com/) et [Openlayers](https://openlayers.org/), parmi d'autres, les utilisateurs peuvent intégrer les couches disponibles de GeoMet du SMC dans leurs propres cartes interactives en-ligne.
 
-Ci-après est un exemple de carte interactive configurée avec OpenLayers et présentant la couche WMS de composite radar météo services par GeoMet du SMC.
+Ci-après est un exemple de carte interactive configurée avec OpenLayers et présentant des [couches WMS de la composite radar météo servies par GeoMet du SMC](../msc-data/obs_radar/readme_radar_geomet_fr.md).
 
 <div id="map" style="height: 400px"></div>
 

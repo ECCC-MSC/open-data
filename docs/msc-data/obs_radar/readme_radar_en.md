@@ -30,6 +30,6 @@ Not yet available.
 ## Technical documentation
 
 * [About radars](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/about.html)
-* [Weather radars : how to use](https://weather.gc.ca/radar/how-to-use_e.html)
+* [Weather radars: how to use](https://weather.gc.ca/radar/how-to-use_e.html)
 * [Canada's weather-radar network replacing](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/modernizing-network.html)
 * [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
