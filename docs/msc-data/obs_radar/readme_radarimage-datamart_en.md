@@ -136,7 +136,7 @@ Example (the Radisson case):
 
 Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:
 
-https://climate.weather.gc.ca/radar/index_e.html
+[https://climate.weather.gc.ca/radar/index_e.html](https://climate.weather.gc.ca/radar/index_e.html)
 
 ## Support
 

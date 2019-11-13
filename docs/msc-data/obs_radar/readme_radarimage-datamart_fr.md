@@ -132,7 +132,7 @@ Exemple (cas du radar Radisson) :
 
 Les images radar historiques nationales, régionales et locales du réseau de stations radar à travers le Canada sont disponibles, sans frais, à travers le site web des données climatiques historiques, à cette adresse :
 
-https://climate.weather.gc.ca/radar/index_f.html
+[https://climate.weather.gc.ca/radar/index_f.html](https://climate.weather.gc.ca/radar/index_f.html)
 
 ## Support
 
