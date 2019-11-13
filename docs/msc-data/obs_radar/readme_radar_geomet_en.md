@@ -6,7 +6,7 @@
 
 # Available weather radar data on MSC GeoMet
 
-MSC GeoMet provides access to several popular North-American weather radar composite layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to several popular North-American weather radar composite layers. Users can build mobile apps, create interactive web maps, display and animate weather radar layers in desktop software.
 
 ## Access to the geospatial web services
 
@@ -15,17 +15,17 @@ The weather radar layers are available on GeoMet-Weather in the Web Map Service 
 * [Access to GeoMet-Weather](../../msc-geomet/readme_en.md)
 * [Technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md)
 
-An example of an OpenLayers web map configured to display weather radar composite Web Map Service (WMS) layers served by MSC GeoMet:
+Example of OpenLayers web map configured to display weather radar composite using WMS layers served by MSC GeoMet:
 
 <div id="map" style="height: 400px"></div>
 
-Everyone is invited to see MSC GeoMet's North-American weather radar composite layers in action as part of the official ECCC mobile app, WeatherCAN: [https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html)
+MSC GeoMet's North-American weather radar composite layers can be seen in action in the WeatherCAN ECCC mobile app: [https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html)
 
 ## Available layers
 
 Weather radar layers are updated every 10 minutes. The last 3 hours of data is available on MSC GeoMet. 
 
-North-American weather radar composite at 1km:
+North-American weather radar composite at 1 km:
 
 * Radar precipitation rate (Rain) (1 km) [mm/hr], ID: `RADAR_1KM_RRAI`
 * Radar precipitation rate (Snow) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
@@ -34,7 +34,7 @@ North-American weather radar composite at 1km:
     * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`. ID for inverted style: `RADAR_COVERAGE_RRAI.INV`
     * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`. ID for inverted style: `RADAR_COVERAGE_RSNO.INV`
 
-North-American weather radar composite at 4km:
+North-American weather radar composite at 4 km:
 
 * Radar precipitation rate (Rain) (4 km) [mm/hr], ID: `RADAR_RRAI`
 * Radar precipitation rate (Snow) (4 km) [cm/hr], ID: `RADAR_RSNO`
@@ -53,11 +53,11 @@ Retrieving the list of latest timesteps available:
 WMS styles:
 
 * In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response
-* Users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [associated technical documentation](../../msc-geomet/web-services_en/#handling-styles)
+* Users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../msc-geomet/web-services_en/#handling-styles)
 
 Legends:
 
-* Legends are available for every WMS style. Details are provided in [the associated technical documentation](../../msc-geomet/web-services_en/#wms-getlegendgraphic)
+* Legends are available for every WMS style. Details are provided in [the WMS style technical documentation](../../msc-geomet/web-services_en/#wms-getlegendgraphic)
 * Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR`
 
 ![The RADARURPPRECIPR14-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR)
