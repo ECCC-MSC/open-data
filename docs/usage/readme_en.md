@@ -131,6 +131,12 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
                 params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
             })
           })
+          new ol.layer.Tile({
+            source: new ol.source.TileWMS({
+                format: 'image/png',
+                url: 'https://geo.weather.gc.ca/geomet/',
+                params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
+            })
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([-97, 57]),
