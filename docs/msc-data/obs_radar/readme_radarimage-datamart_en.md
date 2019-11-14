@@ -6,11 +6,9 @@
 
 # Radar imagery
 
-This page describes the [radar](readme_radar_en.md) imagery in GIF format, available on the MSC Datamart.
+This page describes the [weather radar](readme_radar_en.md) imagery available in GIF format via the MSC Datamart.
 
-These images are used to feed the public forecast website:
-
-[https://meteo.gc.ca/radar/index_e.html](https://meteo.gc.ca/radar/index_e.html)
+These images are used to feed the weather radar page on ECCC's [public forecast website](https://meteo.gc.ca/radar/index_e.html).
 
 ## Data location
 
@@ -20,7 +18,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The radar images are available at the following address:
 
-[https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension](https://dd.weather.gc.ca/radar/PRODUCT/FORMAT/RADAR/file name.extension)
+[https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}/{filename}.{file_extension}](https://dd.weather.gc.ca/radar/)
 
 where:
 
@@ -28,14 +26,11 @@ where:
 * FORMAT = [GIF] (other formats may appear in the future)
 * RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
 
-An history of 48 hours of data is kept in each directory.
+The past 48 hours of data is available in each directory.
 
 __Notes__: 
 
-* Details about these products can be found on the Environment and Climate Change Canada web page at:
-
-[https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1)
-
+* Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.
 * A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) is available. This list will be updated regularly.
 
 ## Filename nomenclature
@@ -140,7 +135,7 @@ Historical national, regional and local radar images from the network of radar s
 
 ## Support
 
-If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 

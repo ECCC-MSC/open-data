@@ -6,11 +6,11 @@
 
 # Available weather radar data on MSC GeoMet
 
-MSC GeoMet provides access to several popular North-American weather radar composite layers. Users can build mobile apps, create interactive web maps, display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, or display and animate weather radar layers in desktop GIS software.
 
 ## Access to the geospatial web services
 
-The weather radar layers are available on GeoMet-Weather in the Web Map Service (WMS) standard:
+The weather radar layers are available on GeoMet-Weather via the Web Map Service(WMS) standard:
 
 * [Access to GeoMet-Weather](../../msc-geomet/readme_en.md)
 * [Technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md)
@@ -19,7 +19,7 @@ Example of OpenLayers web map configured to display weather radar composite usin
 
 <div id="map" style="height: 400px"></div>
 
-MSC GeoMet's North-American weather radar composite layers can be seen in action in the WeatherCAN ECCC mobile app: [https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html)
+MSC GeoMet's North American weather radar composite layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
 
 ## Available layers
 
@@ -47,7 +47,7 @@ Please refer to the [technical documentation on MSC GeoMet geospatial web servic
 
 Retrieving the list of latest timesteps available:
 
-* Users can use `&layer=` in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up to date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
+* Users can use `&layer=` in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
 * Additional information is available in the [handling time with WMS section](../../msc-geomet/web-services_en/#handling-time)
 
 WMS styles:
@@ -64,7 +64,7 @@ Legends:
 
 ## Support
 
-The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
+The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 
 ## Announcement mailing list
