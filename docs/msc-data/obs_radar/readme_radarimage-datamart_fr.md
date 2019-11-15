@@ -20,7 +20,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les images radar se trouvent à l'adresse :
 
-https://dd.meteo.gc.ca/radar/PRODUIT/FORMAT/RADAR/nom_du_fichier.extension
+[https://dd.meteo.gc.ca/radar/{PRODUIT}/{FORMAT}/{STATION_RADAR}/{nom_du_fichier}.{extension}](https://dd.meteo.gc.ca/radar/)
 
 où :
 
