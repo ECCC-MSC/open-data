@@ -45,7 +45,7 @@
 
 ### April 4, 2018
 
-* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](nwp_rdwps/changelog_rdwps_en.md#wednesday-march-4-2019)
+* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](nwp_rdwps/changelog_rdwps_en.md#wednesday-march-4-2018)
 
 ### March 2, 2018
 
@@ -146,10 +146,6 @@
 
 * [Update to the RDPS binary (in support of the production of the variable PX)](nwp_rdps/changelog_rdps_en.md/#wednesday-july-3-2013)
 
-### June 18, 2013
-
-* [Adjustments to the High Resolution Deterministic Prediction System (HRDPS) 3.0.1](nwp_hrdps/changelog_hrdps_en.md/#tuesday-june-18-2013)
-
 ### February 13, 2013
 
 * [Global Deterministic Prediction System (GDPS) 3.0.0](nwp_gdps/changelog_gdps_en.md/#wednesday-february-13-2013)
@@ -164,7 +160,7 @@
 
 ### October 3, 2012
 
-* [RDPS 3.0.0](nwp_rdps/changelog_rdps_en.md)
+* [RDPS 3.0.0](nwp_rdps/changelog_rdps_en.md/#wednesday-october-3-2012)
 * [High Resolution Deterministic Prediction System (HRDPS) 3.0.0](nwp_hrdps/changelog_hrdps_en.md/#wednesday-october-3-2012)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 2.3.0](nwp_rdpa/changelog_rdpa_en.md/#wednesday-october-3-2012)
 * [Update to Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence](nwp_rdps-cgsl/changelog_rdps-cgsl_en.md/#wednesday-october-3-2012)
