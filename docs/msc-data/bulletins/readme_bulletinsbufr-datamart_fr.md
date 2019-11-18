@@ -17,9 +17,9 @@ Les bulletins BUFR sont disponibles via le  protocole HTTP avec un fureteur stan
 
 Les données sont accessibles à l’adresse suivante :
 
-* https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/IO
+* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.weather.gc.ca/bulletins/alphanumeric)
 
-* https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/IU
+* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.weather.gc.ca/bulletins/alphanumeric)
 
 où :
 

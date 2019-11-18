@@ -18,7 +18,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à l’adresse suivante : 
 
-https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/HH/hhh/
+[https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/10km/grib2)
 
 où :
 

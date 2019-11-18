@@ -16,7 +16,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data is available at the following address : 
                                                                           
-[https://dd.weather.gc.ca/meteocode/REGION/cmml/ ](https://dd.weather.gc.ca/meteocode/REGION/cmml/)
+[https://dd.weather.gc.ca/meteocode/{REGION}/cmml](https://dd.weather.gc.ca/meteocode)
 
 where 'REGION' is one of the following value :
 

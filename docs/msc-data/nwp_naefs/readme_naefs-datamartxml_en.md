@@ -14,7 +14,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The NAEFS XML files are available at the following address :
 
-* [https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/)
+* [https://dd.weather.gc.ca/ensemble/naefs/xml/](https://dd.weather.gc.ca/ensemble/naefs/xml/)
 
 A history of 30 days of forecast is kept in this directory.
 
@@ -26,7 +26,7 @@ The files are grouped in a directory tree that is based on the date
 and the variable contained in the XML files. The directories have the 
 following nomenclature:
 
-* https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE
+* [https://dd.weather.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml)
 
 
 where :

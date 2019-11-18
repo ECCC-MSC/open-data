@@ -18,7 +18,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 * Les **données de prévision météorologique par ville** sont disponibles suivant cette hiérarchie :
 
-  https://dd.meteo.gc.ca/citypage_weather/xml/XX
+  [https://dd.meteo.gc.ca/citypage_weather/xml/{XX}](https://dd.meteo.gc.ca/citypage_weather/xml)
 
   où, XX est un code de 2 lettres pour la province ou le territoire couvert par ces prévisions. 
 

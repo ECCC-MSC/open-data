@@ -16,9 +16,9 @@ Les données climatiques sont disponibles via le protocole HTTP. Il est possible
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/climate/observations/normals/csv/1981-2010/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* https://dd.meteo.gc.ca/climate/observations/daily/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
-* https://dd.meteo.gc.ca/climate/observations/monthly/csv/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]
+* [https://dd.meteo.gc.ca/climate/observations/normals/csv/1981-2010/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/observations/normals/csv/1981-2010)
+* [https://dd.meteo.gc.ca/climate/observations/daily/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/observations/daily/csv)
+* [https://dd.meteo.gc.ca/climate/observations/monthly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/observations/monthly/csv)
 
 avec :
 

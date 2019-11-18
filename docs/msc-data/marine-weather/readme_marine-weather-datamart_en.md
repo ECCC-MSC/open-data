@@ -26,7 +26,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 __The marine weather XML files__ are available according to Canadian marine regions, at the following address :
 
-  https://dd.weather.gc.ca/marine_weather/xml/REGION
+  [https://dd.weather.gc.ca/marine_weather/xml/{REGION}](https://dd.weather.gc.ca/marine_weather/xml)
 
 where :
 

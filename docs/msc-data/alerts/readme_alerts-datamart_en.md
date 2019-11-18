@@ -16,15 +16,15 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The __data can be accessed__ at the following URLs:
 
-https://dd.weather.gc.ca/alerts/cap/EEEE/hh/
+[https://dd.weather.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.weather.gc.ca/alerts/cap)
 
 A 30-day history is kept in this directory.
 
 where:
 
-* YYYYMMDD: warning transmission day.
-* EEEE: 4 letters for the responsible office code except LAND or WATR for tornado warning and severe thunderstorm warning alerts.
-* hh: warning transmission hour.
+* __YYYYMMDD__: warning transmission day.
+* __EEEE__: 4 letters for the responsible office code except LAND or WATR for tornado warning and severe thunderstorm warning alerts.
+* __hh__: warning transmission hour.
 
 * The CAP-XML are grouped in a directory tree that is based on the date and the responsible office (see note1) code for the alert. The exception is for tornado warning and severe thunderstorm warning alerts which are grouped based on a LAND or WATR (see note2) designation rather than responsible office. 
 
@@ -38,7 +38,7 @@ A history of 1 month is maintained in this directory.
 
 A __standardized package of GIS (Geographical Information System) based forecast location shapefiles__, for all the forecast locations used in ECCC CAP Messages, are available at the following address:
 
-https://dd.weather.gc.ca/meteocode/geodata/
+[https://dd.weather.gc.ca/meteocode/geodata/](https://dd.weather.gc.ca/meteocode/geodata/)
 
 Shapefile packages found there are the same Shapefiles that are used in the operational environment where ECCC warnings are initially generated. The Shapefile packages are versioned in order to track the available packages to the package used in the operational environment at any given time. Beginning with version 5.0.3 of the GIS package, usage dates for the package will be included in the documentation.
 

@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les __bulletins sont disponibles__ à cette adresse :
 
-https://dd.meteo.gc.ca/alerts/cap/EEEE/hh/
+[https://dd.meteo.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.meteo.gc.ca/alerts/cap)
 
 Un historique de 30 jours est conservé dans ce répertoire.
 
@@ -40,7 +40,7 @@ Un historique des données de un mois est conservé dans ce répertoire.
 
 Un ensemble de __fichiers en format Shapefile contenant les informations géographiques des emplacement des prévisions__, pour tous les messages en format PAC, peut être trouvé dans ce répertoire :
 
-https://dd.meteo.gc.ca/meteocode/geodata/
+[https://dd.meteo.gc.ca/meteocode/geodata/](https://dd.meteo.gc.ca/meteocode/geodata/)
 
 Les ensembles de fichiers Shapefile à cet endroit sont les mêmes qui sont utilisés dans l'environnement opérationnel où les avertissements d'ECCC sont créés. Les ensembles Shapefiles ont des numéros de version afin de suivre l'évolution des emplacements utilisés dans cet environnement.
 

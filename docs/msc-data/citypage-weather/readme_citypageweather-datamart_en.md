@@ -18,9 +18,9 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 * The weather forecast data by city are available according to this hierarchy :
 
-  https://dd.weather.gc.ca/citypage_weather/xml/XX
+  [https://dd.weather.gc.ca/citypage_weather/xml/{XX}](https://dd.weather.gc.ca/citypage_weather/xml)
   
-  where XX is a 2 letter provincial or territorial code indicating the area covered by the forecasts. 
+  where __XX__ is a 2 letter provincial or territorial code indicating the area covered by the forecasts. 
 
   The code is one of the 13 following values :
 

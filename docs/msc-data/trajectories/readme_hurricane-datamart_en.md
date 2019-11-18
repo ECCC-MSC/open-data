@@ -22,10 +22,10 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 You can find the shapefiles at :
 
-https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/storm-name/
+* [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{storm-name}/](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
 where :
-* storm-name is the storm name in uppercase (e.g. 'BERTHA' )
+* __storm-name__ is the storm name in uppercase (e.g. 'BERTHA' )
 
 April 30: the history is deleted
 

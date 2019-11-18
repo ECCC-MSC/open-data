@@ -16,9 +16,9 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs :
 
-* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/annual/[anomaly, trend]
-* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal/[DJF,MAM,JJA,SON]/[anomaly, trend]
-* https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly
+* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/annual)
+* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/seasonal)
+* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly)
 
 where :
 

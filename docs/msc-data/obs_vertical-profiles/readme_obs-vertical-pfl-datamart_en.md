@@ -16,7 +16,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The vertical profiles files are available at the following address :
 
-[https://dd.weatheroffice.ec.gc.ca/vertical_profile/observation/csv](https://dd.weatheroffice.ec.gc.ca/vertical_profile/observation/csv)
+[https://dd.weather.ec.gc.ca/vertical_profile/observation/csv](https://dd.weather.ec.gc.ca/vertical_profile/observation/csv)
 
 An history of 24 hours of data is kept in the directory.
 

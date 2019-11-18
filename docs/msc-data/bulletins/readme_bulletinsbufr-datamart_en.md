@@ -16,9 +16,9 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs :
 
-* https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/IO
+* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.weather.gc.ca/bulletins/alphanumeric)
 
-* https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/IU
+* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.weather.gc.ca/bulletins/alphanumeric)
 
 where :
 
