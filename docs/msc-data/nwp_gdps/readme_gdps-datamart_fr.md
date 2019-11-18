@@ -18,7 +18,8 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
 Les données sont accessibles à adresse suivante :
-https://dd.meteo.gc.ca/model_gem_global/RES/grib2/lat_lon/HH/hhh/
+
+[https://dd.meteo.gc.ca/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_global)
 
 où :
 

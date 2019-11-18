@@ -37,11 +37,11 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2/HH/
-* https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2/HH/
-* https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2/HH/
-* https://dd.meteo.gc.ca/model_wave/great_lakes/superior/grib2/HH/
-* https://dd.meteo.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2/HH/
+* [https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2)
+* [https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2)
+* [https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2)
+* [https://dd.meteo.gc.ca/model_wave/great_lakes/superior/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/superior/grib2)
+* [https://dd.meteo.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2)
 
 où :
 

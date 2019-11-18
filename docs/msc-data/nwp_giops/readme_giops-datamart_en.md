@@ -24,15 +24,15 @@ A history of 5 days of forecast is kept in this directory.
 
 * Files containing data on the latlon0.2x0.2 grid can be found at the following address:
 
-https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/
+https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/
 
 * Files containing data on the ps5km60N grid can be found at the following address:
 
-https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
+[https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic)
 
 where :
 
-* __n__ : Number of spatial dimensions of the forecast fields [2 or 3].
+* __nd__ : Number of spatial dimensions of the forecast fields [2d or 3d].
 * __HH__ : Start hour of model run in UTC [00,12].
 * __hhh__ : Forecast hour: every 3 hours [000, 003, ..., 240] for N=2  and every 24 hours [000, 024, ..., 240] for N=3.
 

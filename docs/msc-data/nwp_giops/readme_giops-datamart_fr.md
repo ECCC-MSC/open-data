@@ -24,15 +24,15 @@ Un historique de 5 jours de prévision est stocké dans ce répertoire.
 
 * Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
 
-https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/nd/HH/hhh/  
+https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/  
 
 * Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
 
-https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/nd/HH/hhh/
+[https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic)
 
 où :
 
-* __n__ : Numéro de la dimension spatiale des champs de prévision [2 ou 3]. 
+* __nd__ : Numéro de la dimension spatiale des champs de prévision [2d ou 3d]. 
 * __HH__ : Heure en UTC du début de la simulation [00,12].
 * __hhh__ : Heure de la prévision ; chaque 3 heures [000, 003, ..., 240] pour N=2 et chaque 24 heures
 [024, 048, ..., 240] pour N=3.

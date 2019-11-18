@@ -28,7 +28,7 @@ Les fichiers XML du sommaire des observations des provinces ou des territoires s
 
 Les données sont disponibles à cette adresse :
 
-https://dd.weather.gc.ca/observations/xml/PC/TYPE
+* [https://dd.weather.gc.ca/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/observations/xml)
 
 où :
 

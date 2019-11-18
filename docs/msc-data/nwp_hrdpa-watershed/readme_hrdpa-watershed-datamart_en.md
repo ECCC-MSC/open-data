@@ -32,7 +32,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs:
 
-* https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/HH
+* [https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/{HH}](https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile)
 
 where:
 

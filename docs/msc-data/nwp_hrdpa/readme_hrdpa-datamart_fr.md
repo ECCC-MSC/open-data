@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/HH
+* [https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{HH}](https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic)
 
 où :
 

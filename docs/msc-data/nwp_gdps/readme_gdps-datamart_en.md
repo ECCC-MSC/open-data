@@ -17,7 +17,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following address :
 
-https://dd.meteo.gc.ca/model_gem_global/RES/grib2/lat_lon/HH/hhh/
+[https://dd.weather.gc.ca/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_global)
 
 where :
 

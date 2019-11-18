@@ -16,7 +16,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* https://dd.weather.gc.ca/ensemble/geps/grib2/TYPE/HH/hhh/
+* [https://dd.weather.gc.ca/ensemble/geps/grib2/{TYPE}/{HH}/{hhh}/](https://dd.weather.gc.ca/ensemble/geps/grib2)
 
 where :
 

@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à adresse suivante :
 
-* https://dd.weather.gc.ca/model_wave/ocean/global/grib2/HH/
+* [https://dd.weather.gc.ca/model_wave/ocean/global/grib2/{HH}/](https://dd.weather.gc.ca/model_wave/ocean/global/grib2)
 
 where :
 

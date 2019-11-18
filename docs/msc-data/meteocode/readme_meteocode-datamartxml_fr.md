@@ -16,9 +16,9 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers pour ces données se trouvent à l'adresse suivante :  
        
-https://dd.meteo.gc.ca/meteocode/REGION/cmml/ 
+[https://dd.meteo.gc.ca/meteocode/{REGION}/cmml/](https://dd.meteo.gc.ca/meteocode)
 
-  où 'REGION' peut prendre une des valeurs suivantes :
+où 'REGION' peut prendre une des valeurs suivantes :
  
 * atl
 * ont

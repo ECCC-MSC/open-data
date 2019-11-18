@@ -26,7 +26,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 __Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada :
 
-  https://dd.meteo.gc.ca/marine_weather/xml/REGION
+  [https://dd.meteo.gc.ca/marine_weather/xml/{REGION}](https://dd.meteo.gc.ca/marine_weather/xml)
 
 où :
 

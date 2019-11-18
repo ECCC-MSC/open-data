@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers pour ces données se trouvent à l'adresse :
 
-* https://dd.meteo.gc.ca/hydrometric/[PROVTERR]/[MAJ]/
+* [https://dd.meteo.gc.ca/hydrometric/{PROVTERR}/{MAJ}/](https://dd.meteo.gc.ca/hydrometric)
 
 où :
 

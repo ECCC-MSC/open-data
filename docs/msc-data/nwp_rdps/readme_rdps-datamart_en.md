@@ -14,7 +14,9 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs: [https://dd.weather.gc.ca/model_gem_regional/10km/grib2/HH/hhh/](https://dd.weather.gc.ca/model_gem_regional/10km/grib2/HH/hhh/)
+The data can be accessed at the following URLs: 
+
+* [https://dd.weather.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional/10km/grib2)
 
 where :
 

@@ -26,7 +26,7 @@ La structure des répertoires est basée sur la date d'intégration et la
 variable contenu dans les fichiers XML. Ils suivent la nomenclature   
 suivante:
 
-* https://dd.meteo.gc.ca/ensemble/naefs/xml/AAAAMMJJ/ZZ/VARIABLE/TYPE
+* [https://dd.meteo.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.meteo.gc.ca/ensemble/naefs/xml)
 
 où :
 

@@ -21,7 +21,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/model_hrdps/domain/grib2/HH/hhh/
+* [https://dd.meteo.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps)
 
 où :
 
