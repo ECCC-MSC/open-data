@@ -8,6 +8,7 @@
 
 MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, or display and animate weather radar layers in desktop software.
 
+
 ## Access to the geospatial web services
 
 The weather radar layers are available on GeoMet-Weather via the Web Map Service (WMS) standard:
@@ -21,7 +22,12 @@ Example of OpenLayers web map configured to display weather radar composite usin
 
 MSC GeoMet's North American weather radar composite layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
 
-## Available layers
+
+## Usage
+
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar page](readme_radar_en.md) which links to additional information on weather radar.
+
+### Available layers
 
 Weather radar layers are updated every 10 minutes. The last 3 hours of data is available on MSC GeoMet. 
 
@@ -41,11 +47,9 @@ North-American weather radar composite at 4 km:
 * Radar reflectivity (Rain) (4 km) [dBZ], ID: `RADAR_RDBR`
 * Radar reflectivity (Snow) (4 km) [dBZ], ID: `RADAR_RDBS`
 
-## Usage
+### Usage tips
 
-Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information.
-
-Retrieving the list of latest timesteps available:
+Retrieving the list of latest radar layer timesteps available:
 
 * Users can use `&layer=` in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
 * Additional information is available in the [handling time with WMS section](../../msc-geomet/web-services_en/#handling-time)
@@ -53,7 +57,7 @@ Retrieving the list of latest timesteps available:
 WMS styles:
 
 * In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response
-* Users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../msc-geomet/web-services_en/#handling-styles)
+* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../msc-geomet/web-services_en/#handling-styles)
 
 Legends:
 
@@ -61,6 +65,7 @@ Legends:
 * Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR`
 
 ![The RADARURPPRECIPR14-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR)
+
 
 ## Support
 

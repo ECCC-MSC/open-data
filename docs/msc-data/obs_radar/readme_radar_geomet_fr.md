@@ -6,7 +6,7 @@
 
 # Données de radar météo disponibles sur GeoMet du SMC
 
-[ RENDU ICI ]
+[ RENDU ICI ... reupdate from source before translating]
 
 MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, or display and animate weather radar layers in desktop software.
 
