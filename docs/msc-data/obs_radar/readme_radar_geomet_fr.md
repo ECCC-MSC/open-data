@@ -21,7 +21,7 @@ Exemple de carte interactive présentant des couches WMS de la composite radar m
 <div id="map" style="height: 400px"></div>
 
 
-Voici une couche de la composite radar météo nord-américaine de GeoMet du SMC en action dans MétéoCAN, [l'application mobile officielle d'ECCC](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
+Les couches de la composite radar météo nord-américaine de GeoMet du SMC peuvent être vues en action dans MétéoCAN, [l'application mobile officielle d'ECCC](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
 
 
 ## Utilisation
