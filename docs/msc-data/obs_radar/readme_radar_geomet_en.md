@@ -16,7 +16,7 @@ The weather radar layers are available on GeoMet-Weather via the Web Map Service
 * [Access to GeoMet-Weather](../../msc-geomet/readme_en.md)
 * [Technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md)
 
-Example of OpenLayers web map configured to display weather radar composite using WMS layers served by MSC GeoMet:
+Example of a web map configured to display the weather radar composite using WMS layers served by MSC GeoMet:
 
 <div id="map" style="height: 400px"></div>
 
@@ -25,7 +25,7 @@ MSC GeoMet's North American weather radar composite layers can be seen in action
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar page](readme_radar_en.md) which links to additional information on weather radar.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
 
 ### Available layers
 
@@ -61,7 +61,7 @@ WMS styles:
 
 Legends:
 
-* Legends are available for every WMS style. Details are provided in [the WMS style technical documentation](../../msc-geomet/web-services_en/#wms-getlegendgraphic)
+* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../msc-geomet/web-services_en/#wms-getlegendgraphic)
 * Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR`
 
 ![The RADARURPPRECIPR14-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR)
