@@ -63,3 +63,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Trajectoires d'ouragans](trajectories/readme_hurricane_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)
+
+## Changements aux systèmes de production de données opérationnels
+
+Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le [journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) est disponible](changelog_nwp_fr.md).
