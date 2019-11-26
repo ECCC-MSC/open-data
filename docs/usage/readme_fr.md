@@ -129,7 +129,7 @@ Les données brutes pour des données matricielles peuvent être récupérées p
                 url: 'https://geo.weather.gc.ca/geomet/',
                 params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
             })
-          })
+          }),
           new ol.layer.Tile({
             source: new ol.source.TileWMS({
                 format: 'image/png',
