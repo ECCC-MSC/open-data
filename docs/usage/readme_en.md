@@ -137,6 +137,7 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
                 url: 'https://geo.weather.gc.ca/geomet/',
                 params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
             })
+          })
         ],
         view: new ol.View({
           center: ol.proj.fromLonLat([-97, 57]),
