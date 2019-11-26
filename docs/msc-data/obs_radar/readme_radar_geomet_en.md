@@ -1,4 +1,4 @@
-[En français](readme_radar-geomet_fr.md)
+[En français](readme_radar_geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
