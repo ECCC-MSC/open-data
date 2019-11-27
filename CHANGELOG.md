@@ -8,11 +8,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+
+## 2.1.7
+
+* date: 2019-11-27
+* announcements:
+    * Not announced to users
+* bug fixes:
+    * Links broken in the major change log (anchor issues), see the [readme](README.md) for explanations of the mkdocs bug workaround
+
 ## 2.1.6
 
 * date: 2019-11-26
 * announcements:
-    * Not announced to users
+    * [Announced to dd_info](https://lists.ec.gc.ca/pipermail/dd_info/2019-November/000382.html)
 * bug fixes:
     * Links broken in the major change log (anchor issues)
 
@@ -28,7 +37,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: 2019-11-26
 * announcements:
-    * [Announced to GeoMet-Info](https://wiki.cmc.ec.gc.ca/wiki/GeoMet/Announcements/Public-documentation/2019-11:_2.1.4_with_GeoMet_Radar_layers_doc) for the new GeoMet radar layers documentation
+    * [Announced to GeoMet-Info](https://lists.ec.gc.ca/pipermail/geomet-info/2019-November/000066.html) for the new GeoMet radar layers documentation
 * new content:
     * New MSC GeoMet radar data documentation page
     * New Changelog summary page for NWP (Fr + En) - Series of links, organized by date, pointing to details of systems that have changed.
