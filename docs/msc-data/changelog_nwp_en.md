@@ -11,7 +11,7 @@
 ### July 23, 2019
 
 * [Addition of various satellite observations in the GEPS](nwp_geps/changelog_geps_en#tuesday-july-23-2019)
-* [Addition of various satellite observations in the GDPS](nwp_gdps/changelog_gdps_en/#tuesday-july-23-2019)
+* [Addition of various satellite observations in the GDPS](nwp_gdps/changelog_gdps_en.md#tuesday-july-23-2019)
 * [Addition of various satellite observations in the RDPS](nwp_rdps/changelog_rdps_en/#tuesday-july-23-2019)
 
 ### July 3, 2019
