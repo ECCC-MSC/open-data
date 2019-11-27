@@ -127,6 +127,10 @@ Given we use mkdocs to style the documentation, extra care is required when crea
 * Links:
     * Links must be explicit, a direct link such as `https://foo.bar` won't work with mkdocs, it must be specifically set as a link with `[name or url](url)`
     * Ensure links always use `https://` instead of `http://` whenever available
+* Links with anchors:
+    * IMPORTANT: there is a [mkdocs bug](https://github.com/mkdocs/mkdocs/issues/1655), fixed in master but not in a mkdocs release, that impacts links with anchors. Anchors is the `#` symbol used to refer to a specific header within a page
+    * The solution for using links that include anchors is to add one level up `../` in the URL. See the [NWP changelog example](docs/msc-data/changelog_nwp_en.md) where an extra `../` is used for links with an `#`
+    * It is crucial to test links after publishing on GitHub
 * Lists:
     * Lists must begin with an empty line before the initial bullet `*`
     * The second level of lists must begin with 4 spaces before the `*`
