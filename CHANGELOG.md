@@ -8,13 +8,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.1.5
+## 2.1.6
 
 * date: 2019-11-26
 * announcements:
     * Not announced to users
 * bug fixes:
     * Links broken in the major change log (anchor issues)
+
+## 2.1.5
+
+* date: 2019-11-26
+* announcements:
+    * Not announced to users
+* bug fixes:
+    * Links broken in the major change log (anchor issues) 
 
 ## 2.1.4
 
