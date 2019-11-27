@@ -173,7 +173,7 @@ Prior applying any change to the [licence accompanying the documentation](licenc
   
 ## Permission requirements
   
-The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex and Tom for GODS. 
+The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex, Tom and Étienne for GODS. 
   
 ## Deployment to GitHub Pages with mkdocs
 
