@@ -9,6 +9,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 # Changelog
 
 
+## 2.1.8
+
+* date: TBD
+* announcements:
+    * Not announced to users
+* bug fixes:
+    * Minor cleanup of hydrometric doc
+
 ## 2.1.7
 
 * date: 2019-11-27
