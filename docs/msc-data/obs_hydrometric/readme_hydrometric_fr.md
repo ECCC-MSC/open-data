@@ -30,7 +30,3 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 * [Relevés hydrologiques du Canada](https://www.canada.ca/fr/environnement-changement-climatique/services/eau-apercu/volume/surveillance/releves.html)
 * [Données de niveau d'eau et de débit en temps réel et historiques](https://eau.ec.gc.ca/)
-
-## Registre des changements 
-
-Ne s'applique pas.
