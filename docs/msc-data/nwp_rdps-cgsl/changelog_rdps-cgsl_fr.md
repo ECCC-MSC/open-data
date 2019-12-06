@@ -20,8 +20,8 @@ Une copie de la note officielle annonçant ce changement [est disponible via ce 
 
 Une note technique à ce sujet est disponible pour les deux composantes :
 
-1) [La composante SRPM-GSL](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rmps-gsl-600_20141118_f.pdf)
-2) [La composante SRPD-CGSL](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_f.pdf)
+* 1) [La composante SRPM-GSL](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rmps-gsl-600_20141118_f.pdf)
+* 2) [La composante SRPD-CGSL](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-cgsl-300_20141118_f.pdf)
 
 
 ## Le mercredi, 3 octobre 2012
