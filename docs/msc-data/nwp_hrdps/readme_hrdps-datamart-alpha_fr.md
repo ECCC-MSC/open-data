@@ -22,7 +22,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à l'adresse suivante :
 
-* [http://dd.meteo.gc.ca/model_hrdps/west/1km/grib2/{HH}/{hhh}/](http://dd.meteo.gc.ca/model_hrdps/west/1km/grib2)
+* [https://dd.alpha.meteo.gc.ca/model_hrdps/west/1km/grib2/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_hrdps/west/1km/grib2)
 
 où :
 
