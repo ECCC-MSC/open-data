@@ -22,7 +22,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URL:
 
-* [http://dd.weather.gc.ca/model_hrdps/west/1km/grib2/{HH}/{hhh}/](http://dd.weather.gc.ca/model_hrdps/west/1km/grib2)
+* [https://dd.alpha.weather.gc.ca/model_hrdps/west/1km/grib2/{HH}/{hhh}/](https://dd.alpha.weather.gc.ca/model_hrdps/west/1km/grib2)
 
 where:
 
