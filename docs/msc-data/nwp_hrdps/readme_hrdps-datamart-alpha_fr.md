@@ -4,15 +4,15 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > SHRPD expérimental sur DD-Alpha
 
-# Données GRIB2 expérimentales à 1km du Système à Haute Résolution de Prévision Déterministe (SHRPD) sur la fenêtre ouest
+# Données GRIB2 expérimentales à 1 km du Système à Haute Résolution de Prévision Déterministe (SHRPD) sur la fenêtre ouest
 
-Au cours de l'été 2017, la Colombie-Britannique a connu de graves incendies de forêt.  Afin de fournir des informations météorologiques plus détaillées et de piloter les modèles de qualité de l'air, le domaine SHRPD 1km ouest a été implémenté en **mode expérimental** le 31 juillet 2018. 
+Au cours de l'été 2017, la Colombie-Britannique a connu de graves incendies de forêt.  Afin de fournir des informations météorologiques plus détaillées et de piloter les modèles de qualité de l'air, le domaine SHRPD 1 km ouest a été implémenté en **mode expérimental** le 31 juillet 2018. 
 
-Ce système de prévision utilise le Modèle environnemental global multi-échelle (GEM). La résolution horizontale de la grille est d'environ 1.0 km et possède 62 niveaux verticaux avec pilotage par le toit. 
+Ce système de prévision utilise le Modèle environnemental global multi-échelle (GEM). La résolution horizontale de la grille est d'environ 1 km et possède 62 niveaux verticaux avec pilotage par le toit. 
 
-Le niveau de momentum le plus bas se situe à une altitude d'environ 40m. Ce système est piloté par le domaine continental [SHRPD à 2.5 km](readme_hrdps_fr.md), qui fournit les conditions initiales, latérales et aux limites supérieures des champs atmosphériques.  Les conditions de surface initiales sont fournies par le Système canadien d'assimilation des données à la surface (CaLDAS) à 2.5 km qui est couplé au SHRPD à 2.5 km. Les champs hydrométéorologiques initiaux sont "recyclés" à partir de la prévision de 6 heures de l'intégration à 2.5 km du SHRPD. 
+Le niveau de momentum le plus bas se situe à une altitude d'environ 40 m. Ce système est piloté par le domaine continental [SHRPD à 2.5 km](readme_hrdps_fr.md), qui fournit les conditions initiales, latérales et aux limites supérieures des champs atmosphériques.  Les conditions de surface initiales sont fournies par le Système canadien d'assimilation des données à la surface (CaLDAS) à 2.5 km qui est couplé au SHRPD à 2.5 km. Les champs hydrométéorologiques initiaux sont "recyclés" à partir de la prévision de 6 heures de l'intégration à 2.5 km du SHRPD. 
 
-Depuis la mise en œuvre initiale du SHRPD 1km ouest, le système fonctionne 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 36 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1.0 km sur 62 niveaux verticaux.
+Depuis la mise en œuvre initiale du SHRPD 1 km ouest, le système fonctionne 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 36 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1 km sur 62 niveaux verticaux.
 
 ## Adresse des données 
 
@@ -35,7 +35,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Spécification technique de la grille ouest
 
-![Image de la grille du ouest 1km du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps1km_west.png)
+![Image de la grille du ouest 1 km du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps1km_west.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique ouest.
 
@@ -62,7 +62,7 @@ où :
 * __Variable__ : Type de variable contenu dans le fichier (ex. : UGRD).
 * __TypedeNiveau__ : Type de niveau.
 * __Niveau__ : Valeur du niveau.
-* __ps1.0km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 1.0km.
+* __ps1.0km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 1.0 km.
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18].
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 035/036].
