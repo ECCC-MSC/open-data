@@ -4,15 +4,15 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > Experimental HRDPS on DD-Alpha 
 
-# Experimental High Resolution Deterministic Prediction System (HRDPS) 1km West data in GRIB2 format
+# Experimental High Resolution Deterministic Prediction System (HRDPS) 1 km West data in GRIB2 format
 
-In the summer of 2017 British Columbia was experiencing severe wildfire.  To provide more detailed weather information and pilot the air quality models, HRDPS 1km west domain was implemented in operations in **experimental mode** on 31 July 2018. 
+In the summer of 2017 British Columbia was experiencing severe wildfire.  To provide more detailed weather information and pilot the air quality models, HRDPS 1 km west domain was implemented in operations in **experimental mode** on 31 July 2018. 
 
-This prediction system uses the Global Environmental Multi-scale Model (GEM). The horizontal grid spacing is approximately 1.0 km and there are 62 vertical levels with lid nesting. 
+This prediction system uses the Global Environmental Multi-scale Model (GEM). The horizontal grid spacing is approximately 1 km and there are 62 vertical levels with lid nesting. 
 
-The lowest momentum level is at an altitude of approximately 40 m. This system is “piloted” by [HRDPS 2.5-km](readme_hrdps_en.md) national domain, which provides initial, lateral and upper boundary conditions for the atmospheric fields.  The initial surface conditions are provided by the 2.5-km Canadian Land Data Assimilation System (CaLDAS) which is coupled to the HRDPS 2.5-km. The initial hydrometeor fields are “recycled” from the 6-h forecast of the HRDPS 2.5-km integration. 
+The lowest momentum level is at an altitude of approximately 40 m. This system is “piloted” by [HRDPS 2.5 km](readme_hrdps_en.md) national domain, which provides initial, lateral and upper boundary conditions for the atmospheric fields.  The initial surface conditions are provided by the 2.5 km Canadian Land Data Assimilation System (CaLDAS) which is coupled to the HRDPS 2.5 km. The initial hydrometeor fields are “recycled” from the 6-h forecast of the HRDPS 2.5 km integration. 
 
-Since the original implementation of the HRDPS 1-km west, the system has been running 2 times per day initialized at 00, and 12 UTC and integrated for 36-h. This product contains raw numerical results of the system. The Geographical coverage of the system is the most part of British Columbia and Western Alberta. Data are available at a horizontal resolution of 1.0 km with 62 vertical levels.
+Since the original implementation of the HRDPS 1 km west, the system has been running 2 times per day initialized at 00, and 12 UTC and integrated for 36h. This product contains raw numerical results of the system. The Geographical coverage of the system is the most part of British Columbia and Western Alberta. Data are available at a horizontal resolution of 1 km with 62 vertical levels.
 
 ## Data location
 
@@ -60,7 +60,7 @@ where:
 * __Variable__: Variable type included in this file.
 * __LevelType__: Level type.
 * __Level__: Level value.
-* __ps1.0km__: Constant string indicating that the projection used is polar-stereographic at 1.0 km resolution.
+* __ps1.0km__: Constant string indicating that the projection used is polar-stereographic at 1 km resolution.
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast.
 * __HH__: UTC run time [00, 12].
 * __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 035, 036].
@@ -71,7 +71,7 @@ Example of file name:
 
 CMC_hrdps_west_DEPR_ISBL_0175_ps1.0km_2019082512_P003-00.grib2
 
-This file originates from the Canadian Meteorological Center (CMC) and contains the experimental West data of the High Resolution Deterministic Prediction System. The data in the file start on August 25th 2019 at 12Z (2019082512). It contains the dew point depression (DEPR) at the isobaric level 175 mb (ISBL_0175) on a polar-stereographic at 1.0 km resolution (ps2.5km) for the forecast hour 03 (P003) and 00 minutes (-00) in GRIB2 format (.grib2).
+This file originates from the Canadian Meteorological Center (CMC) and contains the experimental West data of the High Resolution Deterministic Prediction System. The data in the file start on August 25th 2019 at 12Z (2019082512). It contains the dew point depression (DEPR) at the isobaric level 175 mb (ISBL_0175) on a polar-stereographic at 1 km resolution (ps1.0km) for the forecast hour 03 (P003) and 00 minutes (-00) in GRIB2 format (.grib2).
 
 ## Levels
 
