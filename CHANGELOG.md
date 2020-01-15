@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced to users
 * new content:
     * multi-system changelogs
+    * web maps can now be animated!
 * improvements:
     * updated GeoMet-OGC-API naming
 * bug fixes:
