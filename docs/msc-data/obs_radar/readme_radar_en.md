@@ -19,7 +19,12 @@ Weather radar data is available as georeferenced images on the [MSC GeoMet](../.
 
 An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite Web Map Service (WMS) layers served by MSC GeoMet:
 
-<div id="map" style="height: 400px"></div>
+<div id="map" style="height: 400px;"></div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
+  <span id="info" style="padding-left: 0.5rem;"></span>
+</div>
 
 ### Licence
 
@@ -37,32 +42,23 @@ Not yet available.
 * [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }),
-          new ol.layer.Tile({
-            source: new ol.source.TileWMS({
-                format: 'image/png',
-                url: 'https://geo.weather.gc.ca/geomet/',
-                params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
-            })
-          }),
-          new ol.layer.Tile({
-            source: new ol.source.TileWMS({
-                format: 'image/png',
-                url: 'https://geo.weather.gc.ca/geomet/',
-                params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
-            })
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([-97, 57]),
-          zoom: 3
-        })
-      });
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../../js/radar_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../../js/radar.js";
+    }
+    head.appendChild(js);
 </script>

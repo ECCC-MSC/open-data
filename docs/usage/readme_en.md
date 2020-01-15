@@ -44,7 +44,12 @@ By using JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Ope
 
 Below is an example of an OpenLayers web map configured to display [weather radar composite Web Map Service (WMS) layers served by MSC GeoMet](../msc-data/obs_radar/readme_radar_geomet_en.md).
 
-<div id="map" style="height: 400px"></div>
+<div id="map" style="height: 400px;"></div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
+  <span id="info" style="padding-left: 0.5rem;"></span>
+</div>
 
 #### In a mobile application
 
@@ -116,32 +121,23 @@ Raw data for vector data can be retrieved with a OGC API - Features (WFS 3) requ
 Raw data for raster data can be retrieved with a Web Coverage Service (WCS) request. Example of a [WCS 2 query for the Regional Deterministic Precipitation Analysis (RDPA) model in the netCDF format for a specific time](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). A tip to build WCS queries is to use the [Canadian Centre for Climate Services WCS Query builder interface for an RDPA layer](https://climate-change.canada.ca/climate-data/#/regional-deterministic-precipitation-analysis) and replace the COVERAGEID value from RDPA.* to another available layer.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          }),
-          new ol.layer.Tile({
-            source: new ol.source.TileWMS({
-                format: 'image/png',
-                url: 'https://geo.weather.gc.ca/geomet/',
-                params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
-            })
-          }),
-          new ol.layer.Tile({
-            source: new ol.source.TileWMS({
-                format: 'image/png',
-                url: 'https://geo.weather.gc.ca/geomet/',
-                params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
-            })
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([-97, 57]),
-          zoom: 3
-        })
-      });
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../js/radar_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../js/radar.js";
+    }
+    head.appendChild(js);
 </script>
