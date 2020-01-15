@@ -50,13 +50,13 @@ Le code source de GeoMet-Climat et de l'Outil d'extraction de données climatiqu
 * [https://github.com/ECCC-CCCS/geomet-climate](https://github.com/ECCC-CCCS/geomet-climate)
 * [https://github.com/ECCC-CCCS/climate-data-extraction-tool](https://github.com/ECCC-CCCS/climate-data-extraction-tool)
 
-### GeoMet-OGC API
+### GeoMet-OGC-API
 
-GeoMet - OGC API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES) de l'Open Geospatial Consortium (OGC). Ce service donne présentement accès aux données hydrométriques et climatiques.
+GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES) de l'Open Geospatial Consortium (OGC). Ce service donne présentement accès aux données hydrométriques et climatiques.
 
 Capacités de ce service :
 
-* L'URL de GeoMet - OGC API : [https://geo.weather.gc.ca/geomet/features/?f=html](https://geo.weather.gc.ca/geomet/features/?f=html)
+* L'URL de GeoMet-OGC-API : [https://geo.weather.gc.ca/geomet/features/?f=html](https://geo.weather.gc.ca/geomet/features/?f=html)
 
 ### GeoMet-Beta
 

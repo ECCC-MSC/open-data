@@ -14,6 +14,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * date: TBD
 * announcements:
     * Not announced to users
+* new content:
+    * multi-system changelogs
+* improvements:
+    * updated GeoMet-OGC-API naming
 * bug fixes:
     * Minor cleanup of hydrometric doc
     * typos
