@@ -1,6 +1,6 @@
 # MSC Open Data Documentation
 
-Welcome! This documentation will tell you how to update and deploy new version of the MSC Open Data public documentation.
+Welcome! This documentation will tell you how to update and deploy the MSC Open Data public documentation.
 
 # Table of Contents
 
