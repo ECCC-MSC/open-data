@@ -156,6 +156,7 @@ Motivation for the incorporation of IASI observations from METOP-B/1 in the oper
 Although IASI data from METOP-A/2 will continue to be assimilated into our forecast systems, METOP-B/1 is now the operational METOP satellite of the EUMETSAT agency. The two satellites METOP-A/2 and METOP-B/1 have similar trajectories, but offset by a half-orbit, so the addition of METOP-B/1 IASI data will almost double the number of IASI data assimilated. Furthermore, these new data add robustness to the data assimilation system in the event of a failure of the IASI instrument on-board either METOP-A/2 or METOP-B/1.
 
 Following this change, the version of the RDPS system is changed from 3.2.0 to 3.2.1.
+You can also access the RDPS products page by [clicking here](../msc-data/nwp_rdps/readme_rdps_en.md).
 
 A copy of the official note announcing the implementation of this change along with information on verification work leading up to this implementation is available [at this link](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
 
