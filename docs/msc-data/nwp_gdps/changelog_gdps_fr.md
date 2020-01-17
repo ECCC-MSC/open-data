@@ -143,6 +143,7 @@ Motivation pour l'incorporation des observations IASI de METOP-B/1 aux données 
 Bien que les données du satellite METOP-A/2 continueront d'etre assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opéerationnel de l'agence EUMETSAT. Les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. de plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.
 
 Suite à ces changements le numéros de version du système SGPD passe de 3.1.0 à 3.1.1.
+Vous pouvez accéder à la page du SGPD [en cliquant ici](../msc-data/nwp_gdps/readme_gdps_fr.md).
 
 [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
 

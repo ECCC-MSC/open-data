@@ -33,7 +33,7 @@ La note officielle annonçant ce changement est disponible [en cliquant ici](htt
 
 ## Le mardi 23 juillet 2013
 
-### Adjustement à l'analyse de température de la mer (GODAS) utilisée par SPISCan
+### Ajustement à l'analyse de température de la mer (GODAS) utilisée par SPISCan
 
 Le mardi 23 juillet 2013 le CMC a apporté un ajustement à l'analyse GODAS de la temperature de la mer utilisée par SPISCan. Cela a été rendu nécessaire car le 16 juillet 2013, les données GODAS arrivant à SPISCan avaient été interrompues. Un certain nombre de mesures ont été prises pour rétablir ce flux de donnees GODAS. En conséquence, l'accès à l'analyse de GODAS quotidien a été corrigé et rétabli le 23 Juillet 2013, avec la mise en place des analyses corrigées du 17-21 Juillet 2013. Il était prévu qu'à partir du 23 Juillet 2013, que la séquence normale pour l'importation et l'assimilation des données GODAS sera de retour à la normal à partir du 24 Juillet 2013.
 
