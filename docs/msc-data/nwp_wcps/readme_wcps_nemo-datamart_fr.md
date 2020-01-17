@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPOG](readme_wcps-nemo_fr.md) > SPCE-NEMO sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps-nemo_fr.md) > SPCE-NEMO sur le Datamart du SMC
 
 # Données couplées de prévision GEM-NEMO en format NetCDF du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE-NEMO)
 
@@ -16,27 +16,21 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à l'adresses suivante :
 
-* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf)                  
-
-Un historique de 30 jours de prévision est stocké dans ce répertoire.
-
-Les fichiers contenant les données sur la grille latlon0.009x0.009 (environ 1km) se trouvent à l'adresse suivante :
-
-https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/  
+* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/ ](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
 
 où :
 
-* __nd__ : Numéro de la dimension spatiale des champs de prévision [2d]. 
-* __HH__ : Heure en UTC du début de la simulation [00,12].
-* __hhh__ : Heure de la prévision ; aux heures [000, 001, ..., 084] 
+* __nd__ : Dimension spatiale des champs de prévision [2d]
+* __HH__ : Heure en UTC du début de la simulation [00,12]
+* __hhh__ : Heure de la prévision; aux heures [000, 001, ..., 084] 
 
-À noter que, puisque les fichiers à l'heure de prévision 0, à 00Z, sont basés sur l'analyse et non la prévision, un sous-ensemble de variables est fourni à cette échéance, contrairement aux autres échéances.
+Un historique de 30 jours de prévision est stocké dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
-La nomenclature des noms des fichiers suivante :
+La nomenclature des noms des fichiers est la suivante :
 
 CMC_wcps-nemo_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.nc
 
@@ -65,11 +59,9 @@ Liste des variables disponibles dans les fichiers contenant des champs 2D :
 * __tairsurf__ : Température de l'air à 40 mètres
 * __uwindsurf__ : Composante X de la vitesse du vent à 40 mètres
 * __vwindsurf__ : Composante Y de la vitesse du vent à 40 mètres
-
 * __vozocrtx__ : Composante X de la vitesse de l'eau au premier niveau du modèle 
 * __vomecrty__ : Composante Y de la vitesse de l'eau au premier niveau du modèle
 * __votemper__ : Température potentielle de l'eau de mer au premier niveau du modèle
-
 * __vosaline__ : Salinité de l'eau de mer 
 * __sossheig__ : Hauteur de la surface de la mer par rapport au géoïde
 * __sokaraml__ : Profondeur de la couche de mélange d'après le critère de densité
