@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps-nemo_fr.md) > SPCE-NEMO sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE-NEMO sur le Datamart du SMC
 
 # Données couplées de prévision GEM-NEMO en format NetCDF du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE-NEMO)
 
