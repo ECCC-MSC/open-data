@@ -9,11 +9,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 # Changelog
 
 
-## 2.1.8
+## 2.2.0
 
-* date: TBD
+* date: 2020-01-21
 * announcements:
     * Not announced to users
+    * This release coincides with the content freeze for the [CMC Product Guide](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/changes_e.html) hosted on the Collaboration server. The GitHub documentation is now the reference for all future documentation updates
 * new content:
     * multi-system changelogs
     * web maps can now be animated!
