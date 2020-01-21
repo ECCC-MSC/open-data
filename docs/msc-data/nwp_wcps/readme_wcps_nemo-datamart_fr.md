@@ -6,7 +6,7 @@
 
 # Données couplées de prévision GEM-NEMO en format NetCDF du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE-NEMO)
 
-** A COMPLÉTER **
+Les données du NEMO en netcdf du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE) sont disponibles sur une grlle de latitude et de longitude de 1681x3181 points comparable à une résolution de 1 km (0.009 x 0.009 degrés)
 
 ## Adresse des données 
 
@@ -22,9 +22,21 @@ où :
 
 * __nd__ : Dimension spatiale des champs de prévision [2d]
 * __HH__ : Heure en UTC du début de la simulation [00,12]
-* __hhh__ : Heure de la prévision; aux heures [000, 001, ..., 084] 
+* __hhh__ : Heure de la prévision; aux heures [001, ..., 084] 
 
 Un historique de 30 jours de prévision est stocké dans ce répertoire.
+
+## Spécification technique de la grille  
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_nemo.png)
+
+Dans le domaine complet indiqué par le rectangle noir, le domaine de données valide, qui couvre les lacs, est en couleur. 
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 1681 |
+| nj | 3181 | 
+| résolution à 45° N | 1km |
+
 
 ## Nomenclature des noms de fichiers 
 
