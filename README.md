@@ -5,19 +5,19 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
 # Table of Contents
 
 1. [Scope](#1-scope-and-objectives)
-2. [File structure](#2---repository-file-structure)
-3. [Monitoring documentation changes](#3---monitoring-documentation-changes)
-4. [Updating the documentation](#4--updating-the-documentation)
-    * [Getting ready](#getting-ready)
-    * [Editing the documentation](#editing-the-documentation)
-        * [Markdown requirements](#markdown-requirements)
-        * [Images in the documentation](#images-in-the-documentation)
-        * [Files in the documentation](#files-in-the-documentation)
-        * [Changes to the Licence](#changes-to-the-licence)
-    * [Update workflow](#update-workflow)
+2. [File structure](#2-repository-file-structure)
+3. [Monitoring documentation changes](#3-monitoring-documentation-changes)
+4. [Updating the documentation](#4-updating-the-documentation)
+    * [Getting ready](#4.1-getting-ready)
+    * [Editing the documentation](#4.2-editing-the-documentation)
+        * [Markdown requirements](#4.2.1-markdown-requirements)
+        * [Images in the documentation](#4.2.2-images-in-the-documentation)
+        * [Files in the documentation](#4.2.3-files-in-the-documentation)
+        * [Changes to the Licence](#4.2.4-changes-to-the-licence)
+    * [Update workflow](#4.3-update-workflow)
 5. [Deploying the documentation](#5-deploying-the-documentation)
-    * [Permission requirements](#permission-requirements)
-    * [Deployment to GitHub Pages with mkdocs](#deployment-to-github-pages-with-mkdocs)
+    * [Permission requirements](#5.1-permission-requirements)
+    * [Deployment to GitHub Pages with mkdocs](#5.2-deployment-to-github-pages-with-mkdocs)
 
 
 # 1 - Scope and objectives
