@@ -25,13 +25,14 @@ A GRIB2 file contains one or more data records, arranged as a sequential bit str
 
 ## Software supporting the GRIB2 format
 
-The Meteorological Service of Canada does not distribute publicly any decoding or visualization software for the GRIB2 format. Here is a non exhaustive list of links to find software to manipulate and display GRIB data:
+The Meteorological Service of Canada does not distribute publicly any decoding or visualization software for the GRIB2 format. Here is a non exhaustive list of links to find software to manipulate and display GRIB data.
+
+Wikipedia's [list of software supporting the GRIB2 format](https://en.wikipedia.org/wiki/GRIB#Software).
 
 Decoding and processing:
 
-* [wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/)
-* [Tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
 * [GDAL](https://gdal.org/drivers/raster/grib.html)
+* [wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/) and [tricks for wgrib2](https://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/tricks.wgrib2)
     
 Visualization and interpolation:
 
