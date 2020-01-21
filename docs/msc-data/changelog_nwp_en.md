@@ -6,6 +6,12 @@
 
 # Changes to the Canadian Meteorological Centre (CMC) Operational System
 
+## 2020
+
+### January 21, 2020
+
+* [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-january-21-2020)
+
 ## 2019
 
 ### July 23, 2019
