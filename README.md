@@ -4,10 +4,10 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
 
 # Table of Contents
 
-1. [Scope](#1---scope-and-objectives)
+1. [Scope](#1-scope-and-objectives)
 2. [File structure](#2---repository-file-structure)
 3. [Monitoring documentation changes](#3---monitoring-documentation-changes)
-4. [Updating the documentation](#4---updating-the-documentation)
+4. [Updating the documentation](#4--updating-the-documentation)
     * [Getting ready](#getting-ready)
     * [Editing the documentation](#editing-the-documentation)
         * [Markdown requirements](#markdown-requirements)
@@ -15,7 +15,7 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
         * [Files in the documentation](#files-in-the-documentation)
         * [Changes to the Licence](#changes-to-the-licence)
     * [Update workflow](#update-workflow)
-5. [Deploying the documentation](#5---deploying-the-documentation)
+5. [Deploying the documentation](#5-deploying-the-documentation)
     * [Permission requirements](#permission-requirements)
     * [Deployment to GitHub Pages with mkdocs](#deployment-to-github-pages-with-mkdocs)
 
