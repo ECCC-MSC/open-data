@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * web maps can now be animated!
 * improvements:
     * updated GeoMet-OGC-API naming
+    * updated GRIB2 format page with Wikipedia link
 * bug fixes:
     * Minor cleanup of hydrometric doc
     * typos
