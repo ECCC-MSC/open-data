@@ -4,19 +4,20 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
 
 # Table of Contents
 
-1. [Scope](#scope-and-objectives)
-3. [File structure](#repository-file-structure)
-4. [Monitoring documentation changes](#monitoring-documentation-changes)
-5. [Updating the documentation](#updating-the-documentation)
-    * [Getting ready](#getting-ready)
-    * [Update workflow](#update-workflow)
-    * [Markdown requirements](#markdown-requirements)
-    * [Images in the documentation](#images-in-the-documentation)
-    * [Files in the documentation](#files-in-the-documentation)
-    * [Changes to the Licence](#changes-to-the-licence)
-6. [Deploying the documentation](#deploying-the-documentation)
-    * [Permission requirements](#permission-requirements)
-    * [Deployment to GitHub Pages with mkdocs](#deployment-to-github-pages-with-mkdocs)
+1. [Scope](#1-scope-and-objectives)
+2. [File structure](#2-repository-file-structure)
+3. [Monitoring documentation changes](#3-monitoring-documentation-changes)
+4. [Updating the documentation](#4-updating-the-documentation)
+    * [Getting ready](#41-getting-ready)
+    * [Editing the documentation](#42-editing-the-documentation)
+        * [Markdown requirements](#421-markdown-requirements)
+        * [Images in the documentation](#422-images-in-the-documentation)
+        * [Files in the documentation](#423-files-in-the-documentation)
+        * [Changes to the Licence](#424-changes-to-the-licence)
+    * [Update workflow](#43-update-workflow)
+5. [Deploying the documentation](#5-deploying-the-documentation)
+    * [Permission requirements](#51-permission-requirements)
+    * [Deployment to GitHub Pages with mkdocs](#52-deployment-to-github-pages-with-mkdocs)
 
 
 # 1 - Scope and objectives
@@ -189,9 +190,9 @@ In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.
 
 Is is a best practice to [review existing open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues) before proceeding with a documentation deployment.
 
-### 5.2.1 - Install Conda and create mkdocs virtual environment
+### 5.2.1 - Install Conda and create a mkdocs virtual environment
 
-Validate if Conda is already installed on your computer. Type `conda --version`. If a Conda version is provided, Conda is installed and skip the installation steps. Otherwise, proceed with the Conda installation.
+Validate if Conda is already installed on your computer. Type `conda --version`. If a Conda version is provided, Conda is installed and skip the installation and go directly to deployment steps at 5.2.2 below. Otherwise, proceed with the Conda installation.
 
 To install Conda, please choose a location in your work environment that has a sufficient amount of disk space. It is not recommended that you install Conda in your home directory due to limited disk space allocated to this directory.
 
