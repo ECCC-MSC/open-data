@@ -8,15 +8,15 @@
 # Changements apportés aux services opérationnels du Centre Météorologique Canadien (CMC)
 
 
-## Le mercredi 6 septembre 2017
+## Le mardi 21 janvier 2020
 
 ### Nouvelle infrastructure de calcul haute performance
 
-Un projet majeur de migration vers une nouvelle infrastructure de superinformatique utilisée par le Service météorologique du Canada a été effectuée avec succès le 21 janvier 2020. Cette migration a été le résultat d'un effort conjoint et soutenu pendant plusieurs mois par des experts du Centre météorologique canadien, de la Direction des sciences et de la technologie et de Services partagés Canada.
+Un projet majeur de migration vers une nouvelle infrastructure de superinformatique utilisée par le Service météorologique du Canada a été effectué avec succès le 21 janvier 2020. Cette migration a été le résultat d'un effort conjoint et soutenu pendant plusieurs mois par des experts du Centre météorologique canadien, de la Direction des sciences et de la technologie et de Services partagés Canada.
 
 Au cours des prochaines années, cette mise à niveau importante permettra d'autres transferts technologiques de la recherche et du développement vers les opérations, ce qui favorisera l'amélioration continue des services de prévisions météorologiques et environnementales offerts aux Canadiens et aux autres organismes, utilisateurs et partenaires des gouvernements fédéral et provinciaux.
 
-La note officielle annonçant ce changement est disponible via [ce lien][https://dd.meteo.gc.ca/doc/genots/2020/01/17/NOCN03_CWAO_171911___36984].
+La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2020/01/17/NOCN03_CWAO_171911___36984).
 
 
 ## Le mercredi 6 septembre 2017
