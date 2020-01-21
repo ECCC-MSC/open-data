@@ -202,15 +202,15 @@ To install Conda, please choose a location in your work environment that has a s
     * accept the License terms
     * indicate a location outside your Linux home directory for the conda installation directory
     * when asked about running the `conda init`, set to `yes`
-4. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
-5. Start a new terminal session so you can access conda commands
+4. Start a new terminal session so you can access conda commands
+5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
 6. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
 7. Use pip to install the mkdocs package: `pip install mkdocs`
 8. You can deactivate the environment with `conda deactivate`
  
 ### 5.2.2 - Deploy documentation on GitHub with mkdocs
 
-The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and published it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
+The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
 
 1. In a terminal window, `cd` to the root of your `public-doc` repository fork
     1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
