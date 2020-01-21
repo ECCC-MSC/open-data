@@ -202,8 +202,8 @@ To install Conda, please choose a location in your work environment that has a s
     * accept the License terms
     * indicate a location outside your Linux home directory for the conda installation directory
     * when asked about running the `conda init`, set to `yes`
-4. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
-5. Start a new terminal session so you can access conda commands
+4. Start a new terminal session so you can access conda commands
+5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
 6. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
 7. Use pip to install the mkdocs package: `pip install mkdocs`
 8. You can deactivate the environment with `conda deactivate`
