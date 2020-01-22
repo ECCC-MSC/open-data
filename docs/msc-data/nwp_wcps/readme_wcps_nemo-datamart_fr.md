@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE-NEMO sur le Datamart du SMC
 
-# Données couplées de prévision GEM-NEMO en format NetCDF du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE-NEMO)
+# Système de prévision du cycle de l'eau (SPCE) NEMO données en format NetCDF des Grands Lacs et du Saint-Laurent 
 
-Les données du NEMO en netcdf du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE) sont disponibles sur une grlle de latitude et de longitude de 1681x3181 points comparable à une résolution de 1 km (0.009 x 0.009 degrés)
+Les données du NEMO en Netcdf du Système de prévision du cycle de l'eau des Grands Lacs et du Saint-laurent (SPCE) sont disponibles sur une grlle de latitude et de longitude de 1681x3181 points comparable à une résolution de 1 km (0.009 x 0.009 degrés)
 
 ## Adresse des données 
 
@@ -20,9 +20,9 @@ Les données sont accessibles à l'adresses suivante :
 
 où :
 
-* __nd__ : Dimension spatiale des champs de prévision [2d]
+* __nd__ : Dimension spatiale, latitude et longitude [2d]
 * __HH__ : Heure en UTC du début de la simulation [00,12]
-* __hhh__ : Heure de la prévision; aux heures [001, ..., 084] 
+* __hhh__ : Heure de la prévision [001, ..., 084] 
 
 Un historique de 30 jours de prévision est stocké dans ce répertoire.
 
@@ -48,17 +48,17 @@ CMC_wcps-nemo_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.
 
 où :
 
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
-* __wcps_nemo__ : Chaîne de caractères constante indiquant le système de prévision qui génère les données.
-* __Variable__ : Nom de la variable contenue dans le fichier.
+* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions
+* __wcps_nemo__ : Chaîne de caractères constante indiquant le système de prévision qui génère les données
+* __Variable__ : Nom de la variable contenue dans le fichier
 * __TypedeNiveau__ : Type de niveau [sfc, depth, tgl]
-* __Niveau__ : Valeur du niveau: 0 pour niveau sfc (surface), soit 0.5 (mètres, pour la profondeur), soit 40 (mètres, pour les paramètres en altitude)
+* __Niveau__ : Valeur du niveau, 0 pour sfc (surface), soit 0.5 pour la profondeur (profondeur des lacs en mètres), soit 40 pour l'altitude (l'altitude en mètres)
 * __Projection__ : Projection cartographique [latlon]
-* __Résolution__ : 0.009x0.009. Signifie une résolution de 0.009° (environ 1km) dans les directions longitudinale et latitudinale.
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __HH__ : Heure en UTC du début de la simulation [00,12].
-* __Phhh__ : P hhh est l'heure de prévision [000, 001, ..., 084]. 
-* __nc__ : Chaîne de caractères constante indiquant le format NetCDF.
+* __Résolution__ : 0.009x0.009. Signifie une résolution de 0.009°(environ 1km) dans les directions longitudinale et latitudinale
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __HH__ : Heure en UTC du début de la simulation [00,12]
+* __Phhh__ : P caractère constant, hhh l'heure de prévision [001, ..., 084] 
+* __nc__ : Chaîne de caractères constante indiquant le format NetCDF
 
 Exemple :
 
@@ -68,9 +68,9 @@ Exemple :
 
 Liste des variables disponibles dans les fichiers contenant des champs 2D :
 
-* __tairsurf__ : Température de l'air à 40 mètres
-* __uwindsurf__ : Composante X de la vitesse du vent à 40 mètres
-* __vwindsurf__ : Composante Y de la vitesse du vent à 40 mètres
+* __tairsurf__ : Température de l'air à environ 40 mètres en altitude
+* __uwindsurf__ : Composante X de la vitesse du vent à 40 mètres en altitude
+* __vwindsurf__ : Composante Y de la vitesse du vent à 40 mètres en altitude
 * __vozocrtx__ : Composante X de la vitesse de l'eau au premier niveau du modèle 
 * __vomecrty__ : Composante Y de la vitesse de l'eau au premier niveau du modèle
 * __votemper__ : Température potentielle de l'eau de mer au premier niveau du modèle
@@ -91,7 +91,4 @@ Pour toute question relative à ces données, merci de nous contacter à l'adres
 ## Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
-
-
 
