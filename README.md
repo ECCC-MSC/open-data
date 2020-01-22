@@ -141,31 +141,30 @@ Prior applying any change to the [licence accompanying the documentation](licenc
 ## 4.3 - Update workflow
 
 1. Sync your fork
-    * In a Terminal, while in your `public-doc` fork directory, update your local code with the public-doc source:
-    * `git pull upstream master`
+    * In a Terminal, while in your `public-doc` fork directory, update your local code with the public-doc source: `git pull upstream master`
 2. Create and switch to a 'branch' where you'll make your changes
-    * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix'
+    * `git checkout -b mybranchname` , where 'mybranchname' should be refer to the changes at stake, examples: 'fix for issue #123', 'gdps-doc-fix', 'new wcps pages'
 3. Make changes in the `docs/` folder in your local fork
     * Changes must include the English and French versions of the documentation
-4. Validate the resulting documentation in your fork
-    * Both the Markdown and raw text versions
-    * Validate both languages
-    * Validate breadcrumbs
-    * Validate tables layout and content
-5. Update the user-oriented changelog
-    * Update the [changelog](changelog.md) as needed
-6. Update the `public-doc` repository
+4. Update the repository changelog
+    * Update the [changelog](changelog.md) with a summary of your changes
+5. Update your `public-doc` fork
     * Make certain you're still on the branch you created at step 2 with the `git status` command
     * Commit changes made to your fork with `git commit -a -m "short log explaining changes"`
     * Push branch changes to your fork with `git push -u origin mybranchname` while using the `mybranchname` you created at step 2
-    * Submit a merge request to push new changes to your fork to the official repository. To proceed:
-        * Go to your fork on GitLab: `http://gccode.ssc-spc.gc.ca/YOUR-GCCODE-USERNAME/public-doc/`
-        * Click on 'Merge Requests' on the top-level menu
-        * Click on 'New merge request'
-        * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/public-doc), and then click 'Compare branches and continue'
-        * Assign the merge request and click 'Submit merge request'
-        * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
-7. Update your fork's master branch
+6. Validate the resulting documentation in your fork in a browser
+    * Go to `http://gccode.ssc-spc.gc.ca/YOUR-GCCODE-USERNAME/public-doc/blob/master/docs/index.md`
+    * Validate content in Markdown in both languages
+    * Validate breadcrumbs and links ([see 4.2.1](#421-markdown-requirements))
+    * Validate table and list layouts
+7. Submit a merge request to push the changes to the common repository
+    * Go to your fork on GitLab: `http://gccode.ssc-spc.gc.ca/YOUR-GCCODE-USERNAME/public-doc/`
+    * Click on 'Merge Requests' on the top-level menu
+    * Click on 'New merge request'
+    * Select the appropriate branch from your fork (the 'Source branch'), select `master` on the Target branch (ec-msc/public-doc), and then click 'Compare branches and continue'
+    * Assign the merge request and click 'Submit merge request'
+    * If you're allowed to merge and are confident with the changes, you can click `Merge` right away. Otherwise, followup with the merge request's assignee. Please understand the best practice is to have someone else validate the change before merging
+8. Update your fork's master branch
     * Go to your fork master branch: `git checkout master`
     * Update local master with `public-doc` source code: `git pull upstream master`
     * (optional) Push updated master to your fork: `git push`
