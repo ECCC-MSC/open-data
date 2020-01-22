@@ -41,23 +41,38 @@ A 30-day history is kept in this directory.
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+Each real-time hydrometric data file has a static filename which follows this naming convention:
 
-The files have the following nomenclature:
+[PROVTERR]_[ID]_[FREQUENCY]_hydrometric.csv 
 
-CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
+where:
 
-where :
+* __PROVTERR__ : 2-letter code for the province or territory
 
-* __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
-* __Variable__ : Variable name (ex: WIND) 
-* __LevelType__ : Level type (ex: TGL for above ground level)
-* __Level__ : Level value (ex: 10m for 10 meters)
-* __Resolution__ : Grid resolution (ex: ps15km)
-* __YYYYMMDDHH__ : Date of the model run in UTC
-* __Phhh__ : Forecast hour
-* __FileContent__ : can be all-products or allmbrs, indicating that all the members or all the probabilistic products for this variable are contain in the file 
+* __ID__ : station identifier
 
+* __FREQUENCY__ : frequency of update, "hourly" or "daily"
+
+Example: 
+
+"AB_05AA004_hourly_hydrometric.csv" means the hydrometric observations updated hourly for the station "05AA004" in Alberta (AB) in CSV format.
+
+__Province File__
+
+A file containing all stations in a province is also provided for convenience.
+It has a static filename which follows this naming convention:
+
+[PROVTERR]_[FREQUENCY]_hydrometric.csv 
+
+where:
+
+* __PROVTERR__ : 2-letter code for the province or territory
+
+* __FREQUENCY__ : frequency of update, "hourly" or "daily"
+
+Example:
+
+"ON_daily_hydrometric.csv" means the hydrometric observations updated daily for all stations in Ontario (ON) in CSV format.
 
 ## Data description
 
