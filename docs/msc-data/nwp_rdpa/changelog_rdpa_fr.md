@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours de CaPA-ARDP à la version 4.7.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le mercredi 3 juillet 2019
 
 ### Mise en œuvre de la version 4.6.0 du système d'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)

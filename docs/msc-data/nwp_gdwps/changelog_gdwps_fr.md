@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe des vagues (SGPDV)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SGPDV à la version 1.6.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le mercredi 1er novembre 2017
 
 ### Le Système global de prévision déterministe des vagues (SGPDV) est déclaré opérationnel au Centre météorologique canadien (CMC)

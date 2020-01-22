@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Integrated Nowcasting System (INCS)
 
+## Tuesday January 21, 2020
+
+### Upgrade to INCS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Thursday July 09, 2015
 
 ### The Canadian Meteorological Centre Upgrades the INCS (Nowcast system) to version 1.5

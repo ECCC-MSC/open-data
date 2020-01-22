@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Deterministic Wave Prediction System (GDWPS)
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 1.6.0 of the GDWPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Wednesday November 1, 2017
 
 ### The Global Deterministic Wave Prediction System (GDWPS) is declared operational at the Canadian Meteorological Centre (CMC)

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 5.2.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Wednesday July 3, 2019
 
 ### Major upgrade to Version 5.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre

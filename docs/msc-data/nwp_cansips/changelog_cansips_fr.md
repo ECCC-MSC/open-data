@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours de SPISCAN suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le mercredi 3 juillet 2019
 
 ### Mise à jour vers la version 2 du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)

@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent (SRPD-CGSL)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SRPD-CGSL à la version 3.5.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le mardi 18 novembre 2014
 
 ### Mise à jour majeure du système de prévision couplé atmosphère-océan-glace du golfe St-Laurent du Centre meteorologique canadien (CMC)

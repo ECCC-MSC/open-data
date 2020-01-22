@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Ensemble Prediction System (REPS)
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 3.1.0 of the REPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Wednesday July 3, 2019
 
 ### Upgrade to Version 3.0.0 of the Regional Ensemble Prediction System (REPS) at the Canadian Meteorological Centre

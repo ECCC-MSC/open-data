@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 6.1.0 of the GEPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Tuesday July 23, 2019
 
 ### Additional observations data in the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre

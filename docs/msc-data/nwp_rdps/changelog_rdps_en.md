@@ -6,6 +6,14 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+
+## Tuesday January 21, 2020
+
+### Upgrade to Version 7.1.0 of the RDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
+
 ## Tuesday July 23, 2019
 
 ### Additional observations data in the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre

@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SGPOG à la version 3.2.1 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Wednesday July 3, 2019
 
 ### Mise à jour du Système global de prévision océan-glace (SGPOG) 3.0.0 du Centre météorologique canadien (CMC)
