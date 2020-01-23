@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de vagues (SRPDV)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SRPDV à la version 3.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le lundi 4 mars 2019
 
 ### Mise à jour du Système régional de prévision déterministe des vagues (SRPDV) au Centre météorologique canadien (CMC)

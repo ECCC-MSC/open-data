@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.1
+## 2.2.2
 
 * date: TBD
 * announcements:
@@ -19,6 +19,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * bug fixes:
     * fixed broken links
+
+## 2.2.1
+
+* date: 2020-01-23
+* announcements:
+    * Not announced to users
+* new content:
+    * Add entries into individual NWP changelogs refering to HPC upgrade (2020-01-21)
+* improvements:
+    * TBD
+* bug fixes:
+    * TBD
 
 ## 2.2.0
 

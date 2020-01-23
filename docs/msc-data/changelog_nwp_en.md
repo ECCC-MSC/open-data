@@ -10,7 +10,7 @@
 
 ### January 21, 2020
 
-* [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-january-21-2020)
+* [New High Performance Computing Infrastructure](./changelog_multisystems_en#tuesday-january-21-2020)
 
 ## 2019
 

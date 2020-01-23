@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA)
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 4.7.0 of the CaPA-HRDPA adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Wednesday July 3, 2019
 
 ### Upgrade to version 4.6.0 of the High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA) at the Canadian Meteorological Centre (CMC)

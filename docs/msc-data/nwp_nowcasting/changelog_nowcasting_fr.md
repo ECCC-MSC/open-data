@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)
 
+## Le mardi 21 janvier 2020
+
+### Mise à jours de SIPI suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+
 ## Le jeudi 09 juillet 2015
 
 ### Le Centre Météorologique Canadien améliore son système SIPI à version 1.5

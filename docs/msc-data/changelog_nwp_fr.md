@@ -10,7 +10,7 @@
 
 ### 21 janvier 2020
 
-* [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-21-janvier-2020)
+* [Nouvelle infrastructure de calcul haute performance](changelog_multisystems_fr#le-mardi-21-janvier-2020)
 
 ## 2019
 

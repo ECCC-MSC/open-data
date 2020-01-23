@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence
 
+## Tuesday January 21, 2020
+
+### Upgrade to Version 3.5.0 of the RDPS-CGSL adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+
 ## Tuesday November 18th 2014
 
 ### Major Upgrade to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence  at the Canadian Meteorological Centre
