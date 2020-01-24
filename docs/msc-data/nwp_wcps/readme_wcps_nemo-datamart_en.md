@@ -1,4 +1,4 @@
-[In French](readme_wcps-nemo-datamart_fr.md)
+[In French](readme_wcps_nemo-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,9 @@
 
 # Water Cycle Prediction System (WCPS) NEMO data in NetCDF over the Great Lakes and St. Lawrence River 
 
-NEMO netCDF files from Water Cycle Prediction System (WCPS) are available with a latitude and longitude grid of 1681x3181 grid points, corresponding to a 1km resolution (0.009 x 0.009 degree).
+The ocean-ice model, NEMO-CICE configured on the Great Lakes is coupled to the WCPS to produce information on surface water temperature, ice cover, sensible and latent heat fluxes and momentum to feed the river routing model, WATROUTE. 
+
+These data in NetCDF format are available on a lat-lon grid, comparable to a resolution of 1 km (0.009 x 0.009 degrees).
 
 ## Data location 
 
@@ -16,20 +18,21 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/ ](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
+* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
 
 where :
 
-* __nd__ : Spatial dimension, latitude and longitude  [2d]
+* __nd__ : Spatial dimension, latitude and longitude [2d]
 * __HH__ : Model run start, in UTC [00,12]
 * __hhh__ : Forecast hour [001, ..., 084] 
 
 A 30 day history is kept in this directory.
 
 ## Technical specification of the grid
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_nemo.png)
 
-In the complete domain indicated by the black rectangle, the valide domain, which covers the lakes, is in color. 
+![Image of the WCPS-NEMO domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_nemo.png)
+
+In the white complete domain, the valid domain which covers the lakes, is in color. 
 
 | Parameter | Value |
 | ------ | ------ |
@@ -39,21 +42,21 @@ In the complete domain indicated by the black rectangle, the valide domain, whic
 
 ## Filename nomenclature
 
-Note : all hours are in UTC. 
+NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature : 
 
-CMC_wcps-nemo_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.nc
+CMC_wcps_nemo_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.nc
 
 where :
 
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre (CMC)
-* __wcps_nemo__ : constant string indicating that the data is from WCPS-NEMO component 
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC)
+* __wcps_nemo__ : Constant string indicating that the data is from WCPS-NEMO component 
 * __Variable__ : Variable type included in this file  
 * __LevelType__ : Level type [sfc, depth, tgl]
 * __Level__ : Level value: 0 for sfc (surface), 0.5 for depth (lake depth in meters), 40 for tgl (altitude in meter) 
-* __Projection__ : constant string indicating the latitude and longitude projection [latlon]
-* __Resolution__ : 0.009x0.009. resolution in degree (about 1km) in latitude and longitude directions 
+* __Projection__ : Constant string indicating the latitude and longitude projection [latlon]
+* __Resolution__ : Resolution in degreee 0.009x0.009 (about 1km) in latitude and longitude directions 
 * __YYYYMMDD__ : Year, month and days of the beginning of the forecast 
 * __HH__ : UTC run time [00,12]
 * __Phhh__ : P constant character, hhh the forecast hour [001,002, ..., 084] 
@@ -65,7 +68,7 @@ Example :
 
 ## List of variables 
 
-List of variables available in the files containing 2D variables : 
+List of 2D variables available in the files: 
 
 * __tairsurf__ : Air temperature at about 40 meters in height
 * __uwindsurf__ : Wind X velocity at about 40 meters in height 
