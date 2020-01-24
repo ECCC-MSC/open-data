@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE-NEMO sur le Datamart du SMC
 
-# Données du système de prévision du cycle de l'eau (SPCE) en fomat NetCDF couplées au modèle NEMO 
+# Données du système de prévision du cycle de l'eau (SPCE) en fomat NetCDF couplées au modèle NEMO sur les Grands Lacs et le Saint-Laurent
 
 Le modèle océan-glace, NEMO-CICE configuré sur les Grands Lacs est couplé au SPCE pour produire des informations sur la température des eaux de surface, de la couverture de glace, des flux de chaleur sensible et latente et de quantité de mouvement, afin d'alimenter le modèle de routage de rivière, WATROUTE. 
 
@@ -57,7 +57,7 @@ où :
 * __TypedeNiveau__ : Type de niveau [sfc, depth, tgl]
 * __Niveau__ : Valeur du niveau, soit 0 pour sfc (surface), 0.5 pour la profondeur (profondeur des lacs en mètres), 40 pour l'altitude (l'altitude en mètres)
 * __Projection__ : Projection cartographique [latlon]
-* __Résolution__ : 0.009x0.009. Signifie une résolution de 0.009°(environ 1km) dans les directions longitudinale et latitudinale
+* __Résolution__ : Résolution en degrés, 0.009x0.009 (environ 1km) dans les directions longitudinale et latitudinale
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __HH__ : Heure en UTC du début de la simulation [00,12]
 * __Phhh__ : P caractère constant, hhh l'heure de prévision [001, ..., 084] 

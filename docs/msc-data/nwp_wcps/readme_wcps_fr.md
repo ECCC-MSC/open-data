@@ -1,4 +1,4 @@
-[In English](readme_wcps-nemo_en.md)
+[In English](readme_wcps_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -19,7 +19,7 @@ Le Système Régional de Prévision Déterministe (SRPD) fournit les conditions 
 
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données couplées de prévision GEM-NEMO en format NetCDF, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md) 
+* [Données couplées de prévision WCPS-NEMO en format NetCDF, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
@@ -39,4 +39,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE) est disponible [ici](changelog_wcps_fr.md).
+A venir

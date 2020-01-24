@@ -1,4 +1,4 @@
-[In French](readme_wcps-nemo_fr.md)
+[In French](readme_wcps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -39,4 +39,4 @@ To come.
 
 ## Change log 
 
-The chronology of changes to the Water Cycle Prediction System (WCPS) is available [here](changelog_wcps_en.md).
+To come.
