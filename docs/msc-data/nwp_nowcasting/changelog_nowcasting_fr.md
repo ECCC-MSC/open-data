@@ -10,7 +10,7 @@
 
 ### Mise à jours de SIPI suite à la nouvelle infrastructure de calcul haute performance. 
 
-Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le jeudi 09 juillet 2015
 

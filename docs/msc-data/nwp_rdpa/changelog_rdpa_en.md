@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 4.7.0 of the CaPA-RDPA adapted to the New High Performance Computing Infrastructure.
 
-See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Wednesday July 3, 2019
 

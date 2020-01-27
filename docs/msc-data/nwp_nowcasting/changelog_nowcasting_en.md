@@ -10,7 +10,7 @@
 
 ### Upgrade to INCS adapted to the New High Performance Computing Infrastructure.
 
-See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Thursday July 09, 2015
 
