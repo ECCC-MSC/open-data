@@ -6,9 +6,7 @@
 
 # Données du système de prévision du cycle de l'eau (SPCE) en fomat NetCDF couplées au modèle NEMO 
 
-Le modèle océan-glace, NEMO-CICE configuré sur les Grands Lacs est couplé au SPCE pour produire des informations sur la température des eaux de surface, de la couverture de glace, des flux de chaleur sensible et latente et de quantité de mouvement, afin d'alimenter le modèle de routage de rivière, WATROUTE. 
-
-Ces données en format NetCDF sont disponibles sur une grille lat-lon, comparable à une résolution de 1 km (0.009 x 0.009 degrés).
+Le modèle océan-glace, NEMO-CICE, du SPCE, produit des prévisions horaires. Ces données sont disponibles au format NetCDF sur une grille lat-lon correspondant à une résolution de 1 km (0,009 x 0,009 degrés).
 
 ## Adresse des données 
 

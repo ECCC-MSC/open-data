@@ -30,11 +30,13 @@
 * [Système haute résolution de prévision déterministe (SHRPD) 5.1.0](../nwp_hrdps/changelog_hrdps_fr/log_cansips_fr#le-mercredi-3-juillet-2019)
 * [Analyse Régionale Déterministe de Précipitation (ARPD (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-9-juillet-2019)
 * [Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP) 4.6.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mercredi-9-juillet-2019)
+* [Système de prévision du cycle de l'eau (SPCE) 2.1.0](../nwp_wcps/changelog_wcps_fr#le-mercredi-9-juillet-2019)
 * [Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)](../nwp_cansips/changelog_cansips_fr#le-mercredi-9-juillet-2019)
 * 
 ### 4 mars 2019
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.2.0](../nwp_rdwps/changelog_rdwps_fr#le-lundi-4-mars-2019)
+* [Déclaration du statut opérationnel pour le Système de prévision du cycle de l'eau (SPCE) 2.0.0](../nwp_wcps/changelog_wcps_fr#le-lundi-4-mars-2019)
 
 ## 2018
 

@@ -39,4 +39,5 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-A venir
+La chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE) est disponible [ici](changelog_wcps_fr.md).
+
