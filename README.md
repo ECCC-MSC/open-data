@@ -234,8 +234,9 @@ The following instructions take the current documentation version from `https://
         4. Make and commit the changes to upstream master
         5. Return to step 2
 7. Deploy the documentation on GitHub:
-    1. Run `mkdocs gh-deploy --ignore-version -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish. See also [Permission requirements](#permission-requirements)
-    2. Note that using `--force` might be required in some cases
+    1. Run `mkdocs gh-deploy --ignore-version --force -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
+        * The user must have the [permissions to push to GitHub](#permission-requirements)
+        * Using `--force` is required if another user pushed the previous version to GitHub
 8. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
 9. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
 10. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
