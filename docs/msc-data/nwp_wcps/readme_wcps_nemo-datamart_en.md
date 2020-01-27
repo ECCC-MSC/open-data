@@ -6,9 +6,7 @@
 
 # Water Cycle Prediction System (WCPS) NEMO data in NetCDF over the Great Lakes and St. Lawrence River 
 
-The ocean-ice model, NEMO-CICE configured on the Great Lakes is coupled to the WCPS to produce information on surface water temperature, ice cover, sensible and latent heat fluxes and momentum to feed the river routing model, WATROUTE. 
-
-These data in NetCDF format are available on a lat-lon grid, comparable to a resolution of 1 km (0.009 x 0.009 degrees).
+The ocean-ice model, NEMO-CICE, from WCPS produces hourly forecast products. These data are available in NetCDF format with a latitude and longitude grid, corresponding to a 1km resolution (0.009 x 0.009 degree).
 
 ## Data location 
 
