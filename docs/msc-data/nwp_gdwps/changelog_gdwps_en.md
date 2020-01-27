@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 1.6.0 of the GDWPS adapted to the New High Performance Computing Infrastructure.
 
-See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Wednesday November 1, 2017
 

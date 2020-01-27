@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 7.1.0 of the GDPS adapted to the New High Performance Computing Infrastructure.
 
-See details [at this link](../../changelog_multisystems_en.md#tuesday-january-21-2020)
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Tuesday July 23, 2019
 

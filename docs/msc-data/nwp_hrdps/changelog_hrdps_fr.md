@@ -10,7 +10,7 @@
 
 ### Mise à jours du SHRPD à la version 5.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
-Voir les détails via [ce lien](../../changelog_multisystems_fr.md#le-mardi-21-janvier-2020).
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
