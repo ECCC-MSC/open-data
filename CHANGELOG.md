@@ -8,13 +8,25 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.2
+## 2.2.3
 
 * date: TBD
 * announcements:
     * Not announced to users
 * new content:
     * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * fixed broken links	
+
+## 2.2.2
+
+* date: 2020-01-28
+* announcements:
+    * Not announced to users
+* new content:
+    * Add WCPS documentation + changelog
 * improvements:
     * TBD
 * bug fixes:
