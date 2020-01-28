@@ -6,7 +6,7 @@
 
 # Données et Produits du Système de prévision du cycle de l'eau (SPCE)
 
-Le Système de prévision du cycle de l'eau (SPCE) simule le cycle complet de l’eau, suivant l’eau qui se déplace de l’atmosphère à la surface, par les réseaux fluviaux et vers les lacs, puis qui retourne dans l’atmosphère. Le SPCE couplé au Golfe du Saint-Laurent a été mis en place pour le bassin versant des Grands Lacs Laurentiens et du fleuve Saint-Laurent à l’appui des obligations du Canada en vertu du Traité relatif aux eaux limitrophes (Commission
+Le Système de prévision du cycle de l'eau (SPCE) simule le cycle complet de l’eau, suivant l’eau qui se déplace de l’atmosphère à la surface, par les réseaux fluviaux et vers les lacs, puis qui retourne dans l’atmosphère. Le SPCE a été mis en place pour le bassin versant des Grands Lacs Laurentiens et du fleuve Saint-Laurent à l’appui des obligations du Canada en vertu du Traité relatif aux eaux limitrophes (Commission
 Mixte Internationale, 2016).
 
 Le SPCE consiste en une chaîne de modèles inter-reliés. Les modèles représentent les processus dans l’atmosphère, à la surface du sol et dans le sol (à une résolution de 10 km), dans les vastes plans d’eau et la glace marine (à une résolution de 2 km) et dans les rivieres (à une résolution de 1 km). Le SPCE-GLS produit deux prévisions par jour pour les trois jours et demi suivants (84 heures). 
@@ -19,7 +19,7 @@ Le Système Régional de Prévision Déterministe (SRPD) fournit les conditions 
 
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données couplées de prévision WCPS-NEMO en format NetCDF, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md) 
+* [Données NEMO du système de prévision du cycle de l'eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
