@@ -46,11 +46,11 @@ The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as its GIS
 ## Tiles extents
 Each S-111 data file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
 
-## Grid mapping 
-The data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the  IHO S-111 format specification  is used because it allows to directly use RIOPS data, which itself use a a polar stereographic grid, without any interpolation.
+## Tiles Grid mapping 
+The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 format specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
 
-## Currents data objects
-S-111 currents data objects are expressed as a Speed(in knots) and a Direction(navigation angle 0-360) using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) to represent each RIOPS grid point data.
+## S-111 surface currents data objects
+S-111 surface currents data objects are expressed as a Speed(in knots) and a Direction(navigation angle 0°-360°) data object using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) to represent each RIOPS grid point data.
 
 Example of one currents data objects structure for one tile for one timestamp:
 
