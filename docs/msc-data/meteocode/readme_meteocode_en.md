@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Meteocode forecast data
 
-# Scribe matrix meteocode data
+# Terrestrial Scribe matrix meteocode data
 
 The meteocode is a standard used by the Scribe system to describe the elements of time.
 It allows to encode according to a specific standard the concepts representing the meteorological events resulting from the digital synthesis of the Scribe matrix content.
@@ -13,7 +13,7 @@ It allows to encode according to a specific standard the concepts representing t
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These terrestrial data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
 * [CSV data available on the MSC Datamart](readme_meteocode-datamartcsv_en.md) 
 * [XML data available on the MSC Datamart](readme_meteocode-datamartxml_en.md) 

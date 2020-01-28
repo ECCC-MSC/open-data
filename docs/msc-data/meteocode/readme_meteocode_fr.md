@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données de prévision meteocode
 
-# Données du meteocode des matrices Scribe
+# Données du meteocode des matrices Scribe terrestres
 
 Le meteocode est un standard utilisé par le système Scribe pour décrire les éléments du temps.
 Il permet d'encoder selon une norme spécifique les concepts représentant les évènements météorologiques résultant de la synthèse numérique du contenu des matrices Scribe.
@@ -13,7 +13,7 @@ Il permet d'encoder selon une norme spécifique les concepts représentant les �
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sur le domaine terrestre sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données CSV disponibles sur le Datamart du SMC](readme_meteocode-datamartcsv_fr.md) 
 * [Données XML disponibles sur le Datamart du SMC](readme_meteocode-datamartxml_fr.md) 
