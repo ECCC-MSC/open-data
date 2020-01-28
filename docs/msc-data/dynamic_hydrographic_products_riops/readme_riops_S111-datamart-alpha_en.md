@@ -4,7 +4,7 @@
 
 # S-111 Dynamic Hydrographic Products(DHP) in HDF5 format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
 
-The S-111 Dynamic Hydrographic Products(DHP) for oceanographic models currents is in an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int).
+The S-111 Dynamic Hydrographic Products(DHP) for oceanographic models currents is in an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). ECCC RIOPS model surface currents are used for this S-111 dataset.
 
 # Data location
 
@@ -51,6 +51,15 @@ The data coding format 3 (Ungeorectified gridded data or point set data at one o
 
 ## Currents data objects
 S-111 currents data objects are expressed as a Speed(in knots) and a Direction(navigation angle 0-360) using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) to represent each RIOPS grid point data.
+
+Example of one currents data objects structure for one tile for one timestamp:
+
+DATATYPE H5T_COMPOUND { H5T_IEEE_F32LE "Direction";  H5T_IEEE_F32LE "Speed"; }
+
+DATASPACE  SIMPLE { ( 228, 1 ) / ( 228, 1 ) }
+
+  DATA { (0,0): { 168.927,0.123022 }, (1,0): { 110.585,0.093676 }, ... (227,0): {248.724, 0.0136034 } }
+
 
 # Examples of canadian coastal waters tiled domains available
 
