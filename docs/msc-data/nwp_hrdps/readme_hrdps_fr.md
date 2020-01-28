@@ -15,7 +15,7 @@ Le Système à haute résolution de prévision déterministe (SHRPD) procède à
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_hrdps-datamart_fr.md) 
-* [Données GRIB2 expérimentales à 1km disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_hrdps-datamart-alpha_fr.md) 
+* [Données GRIB2 expérimentales à 1km disponibles sur le domaine ouest sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_hrdps-datamart-alpha_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
