@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE-NEMO sur le Datamart du SMC
 
-# Données du système de prévision du cycle de l'eau (SPCE) en fomat NetCDF couplées au modèle NEMO 
+# Données NEMO du système de prévision du cycle de l’eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent
 
 Le modèle océan-glace, NEMO-CICE, du SPCE, produit des prévisions horaires. Ces données sont disponibles au format NetCDF sur une grille lat-lon correspondant à une résolution de 1 km (0,009 x 0,009 degrés).
 
