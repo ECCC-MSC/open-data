@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.3
+## 2.2.4
 
 * date: TBD
 * announcements:
@@ -18,7 +18,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * TBD
 * bug fixes:
-    * fixed broken links	
+    * fixed broken links
+
+## 2.2.3
+
+* date: 2020-01-28
+* announcements:
+    * Not announced to users
+* new content:
+    * NA
+* improvements:
+    * Minor corrections to WCPS and HRDPS1km doc
+* bug fixes:
+    * NA
 
 ## 2.2.2
 
