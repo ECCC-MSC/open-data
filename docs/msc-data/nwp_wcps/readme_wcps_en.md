@@ -39,4 +39,5 @@ To come.
 
 ## Change log 
 
-To come.
+The chronology of changes to the Water Cycle Prediction System (WCPS) is available [here](changelog_wcps_en.md).
+
