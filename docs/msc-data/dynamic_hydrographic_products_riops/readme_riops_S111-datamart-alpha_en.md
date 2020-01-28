@@ -63,7 +63,7 @@ DATASPACE  SIMPLE { ( 228, 1 ) / ( 228, 1 ) }
 
 # Examples of canadian coastal waters tiled domains available
 
-## 1x1 degree tiles bounding boxes for the Scotian shelf
+## 1x1 degree tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
 
 ![PNG Scotian shelf L2 tiles](ScotianShelfL2_tiles.png)
 
