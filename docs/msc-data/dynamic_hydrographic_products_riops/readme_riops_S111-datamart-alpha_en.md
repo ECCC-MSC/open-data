@@ -8,7 +8,7 @@ The S-111 Dynamic Hydrographic Products(DHP) for oceanographic models currents i
 
 The data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the [ IHO S-111 format specification ](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=) is used because it allows to directly use RIOPS data, which itself use a a polar stereographic grid, without any interpolation.
 
-S-111 currents are expressed as a Speed(in knots) and a Direction(navigatioal angle) using the HDF5 H5T_COMPOUND data type.
+S-111 currents are expressed as a Speed(in knots) and a Direction(navigation angle 0-360) using the HDF5 H5T_COMPOUND data type.
 
 # Data location
 
@@ -41,7 +41,7 @@ CMC_riops_111CA0024200N06900W_20200128T12Z.h
 
 This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00 and longitude -69.00. The RIOPS surface currents were produced on January 28 2020 at 12UTC 
 
-# Examples of domains available
+# Examples of canadian coastal waters tiled domains available
 
 ## 1x1 degree tiles bounding boxes for the Scotian shelf
 
@@ -51,6 +51,6 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 ![PNG West-Coast L2 tiles](WCoastL2Tiles.png)
 
-# 1x1 degree tiles bounding boxes for the Gulf of St. Lawrence
+## 1x1 degree tiles bounding boxes for the Gulf of St. Lawrence
 
 ![PNG GStl L2 tiles](GSTLL2Tiles.png)
