@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Radar](readme_radar_en.md) > Radar data on MSC GeoMet
 
-# Available weather radar data on MSC GeoMet
+# Weather radar data available on MSC GeoMet
 
 MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, or display and animate weather radar layers in desktop software.
 

@@ -45,7 +45,7 @@ Une requête WMS GetCapabilities permet à l'usager de récupérer un document X
 
 Une requête WMS GetCapabilities est composée des paramètres suivants :
 
-<br>
+
 
 | Paramètres obligatoires | Définition |
 | ------------------------- | ---------- |
@@ -68,7 +68,6 @@ Chaque couche définie dans le document XML du WMS GetCapabilities contient l'in
 
 Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, PNG) d'une couche pour une région déterminée. Une requête WMS GetMap est constituée de plusieurs paramètres qui spécifie la couche désirée, son style, le système de coordonnées cartographiques, le pas de temps, en plus des propriétés additionnelles associées à l'image. Une [requête WMS GetCapabilities](#getcapabilities) supporte les usagers en guidant l'utilisateur sur les valeurs possibles pour ces paramètres.
 
-<br>
 
 | Paramètres obligatoires | Définition |
 | ------------------------- | ---------- |
@@ -103,7 +102,6 @@ Et retourne :
 
 Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour un lieu géographique spécifique. Une requête WMS GetFeatureInfo ressemble à une requête WMS GetMap à laquelle s'ajoute les paramètres suivants : `I`, `J` et `QUERY_LAYERS`. Ces paramètres représentent la localisation horizontale et verticale du pixel ainsi que le nom des couches à interroger.
 
-<br>
 
 | Paramètres obligatoires | Définition |
 | ------------------------- | ---------- |
@@ -395,6 +393,7 @@ https://geo.weather.gc.ca/geomet-climate?SERVICE=WCS&VERSION=2.0.1
 Dans cet exemple, la valeur `field` indique à l'usager le nom des bandes disponibles. Pour GeoMet-Climat, les bandes utilisent toujours la nomenclature suivante : `B` suivi de l'intervalle ISO8601 correspondant, soit `YYYY` pour un intervalle annuel et `YYYY-MM` pour un intervalle mensuel.
 
 Pour GeoMet-Climat, les usagers pour demander un pas de temps unique ou une plage temporelle :
+
 * Pas de temps unique : `RANGESUBSET=B20015`
 * Plage temporelle : `RANGESUBSET=B2015:B2019`
 

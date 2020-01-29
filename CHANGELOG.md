@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.4
+## 2.2.5
 
 * date: TBD
 * announcements:
@@ -18,6 +18,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * TBD
 * bug fixes:
+    * TBD
+
+## 2.2.4
+
+* date: 2020-01-29
+* announcements:
+    * Not announced to users
+* new content:
+    * TBD
+* improvements:
+    * updated WCPS to indicate the data's not available yet on GeoMet
+* bug fixes:
+    * typos
+    * fixed broken lists
     * fixed broken links
 
 ## 2.2.3
