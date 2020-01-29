@@ -16,10 +16,10 @@ The Reginal Deterministic Prediction System (RDPS) provides initial and boundary
 
 ### How to access the data 
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These datasets are available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server and from the [MSC GeoMet](../../msc-geomet/readme_en.md) web services:
 
 * [WCPS NEMO NetCDF data available on the MSC Datamart](readme_wcps_nemo-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
+* (upcoming) [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

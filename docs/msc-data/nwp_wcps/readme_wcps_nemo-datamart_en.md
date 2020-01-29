@@ -18,7 +18,7 @@ The data can be accessed at the following URLs:
 
 * [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
 
-where :
+where:
 
 * __nd__ : Spatial dimension, latitude and longitude [2d]
 * __HH__ : Model run start, in UTC [00,12]
@@ -42,11 +42,11 @@ In the white complete domain, the valid domain which covers the lakes, is in col
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature : 
+The files have the following nomenclature: 
 
 CMC_wcps_nemo_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.nc
 
-where :
+where:
 
 * __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC)
 * __wcps_nemo__ : Constant string indicating that the data is from WCPS-NEMO component 
@@ -60,7 +60,7 @@ where :
 * __Phhh__ : P constant character, hhh the forecast hour [001,002, ..., 084] 
 * __nc__ : constant string indicating the NetCDF format
 
-Example :
+Example:
 
 * CMC_wcps_nemo_vomecrty_depth_0.5_latlon0.009x0.009_2019011100_P036.nc
 
