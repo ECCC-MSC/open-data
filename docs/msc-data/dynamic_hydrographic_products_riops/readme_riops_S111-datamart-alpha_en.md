@@ -24,18 +24,21 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The S-111 DHP tiled files have the following nomenclature:
 
-CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{hh}Z.h
+CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{hh}Z.h5
 
-* __nnnn__: Tag of the decimal degrees latitude(Northern Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
-* __wwwww__: Tag of the decimal degrees longitude(Western Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
+* __nnnn__: Four characters tag of the decimal degrees latitude(Northern Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
+* __wwwww__: Five characters Tag of the decimal degrees longitude(Western Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
 * __YYYYYMMDD__: RIOPS model synoptic run start date, in UTC.
+* __T__: ISO8601 standard date-time separator.
 * __hh__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
-
+* __Z__: UTC(a.k.a ZULU) tag.
+* __.h5__: Official HDF5 file format extension.
+ 
 Example of a S-111 DHP tiled file name:
 
-CMC_riops_111CA0024200N06900W_20200128T12Z.h
+CMC_riops_111CA0024200N06900W_20200129T18Z.h
 
-This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00 and longitude -69.00. The RIOPS surface currents were produced on January 28 2020 at 12UTC 
+This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude -69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
 
 # S-111 tiled files data structure
 
@@ -49,17 +52,40 @@ Each S-111 data file is a 1x1 degrees regular bounding box tiled subset of RIOPS
 ## Tiles Grid mapping 
 The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 format specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
 
-## S-111 surface currents data objects
-S-111 surface currents data objects are expressed as a Speed(in knots) and a Direction(navigation angle 0°-360°) data object using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) to represent each RIOPS grid point data.
+## S-111 timestamped GROUP data structures
+Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects(see item surface currents objects below). Each S-111 contains the 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
 
-Example of one currents data objects structure for one tile for one timestamp:
+Example of timestamped data structures for a S-111 tiled file(ex. CMC_riops_111CA0024200N06900W_20200129T18Z.h5) having RIOPS surface currents data produced by the synoptic forecast run issued on January 29 2020 at 18UTC
 
-DATATYPE H5T_COMPOUND { H5T_IEEE_F32LE "Direction";  H5T_IEEE_F32LE "Speed"; }
+*  __GROUP "Group_001" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T120000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_002" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T130000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_003" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T140000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_004" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T150000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_005" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T160000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_006" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T170000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_007" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T180000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_008" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T190000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  ...
+*  __GROUP "Group_054" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200129T470000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
+*  __GROUP "Group_055" { ATTRIBUTE "timePoint" { DATATYPE  H5T_STRING ... } DATASPACE SCALAR DATA { (0): "20200131T480000Z" } } DATASET "values" { DATATYPE  H5T_COMPOUND { ... } } }__
 
-DATASPACE  SIMPLE { ( 228, 1 ) / ( 228, 1 ) }
 
-  DATA { (0,0): { 168.927,0.123022 }, (1,0): { 110.585,0.093676 }, ... (227,0): {248.724, 0.0136034 } }
+## S-111 surface currents objects
+Each RIOPS surface currents grid point data is represented by a __"Speed"__(in knots) and a __"Direction"__(navigation angle 0°-360°) data object using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html).
 
+Example of one surface currents data objects structure for one S-111 tiled file(Here a tile with 452 surface currents data objects) for one timestamped GROUP data stucture:
+
+* __DATATYPE H5T_COMPOUND { H5T_IEEE_F32LE "Direction";  H5T_IEEE_F32LE "Speed"; } DATASPACE  SIMPLE { (452,1)/(452,1) } DATA { (0,0): { 168.927, 0.123022 }, ... (227,0): {248.724, 0.0136034 } }__
+
+The number of such surface currents data objects is variable for each tile. 
+
+## S-111 surface currents objects coordinates data structure.
+
+The S-111 surface currents objects coordinates data are also using the [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html).
+
+Example of of one S-111 surface currents objects coordinates data structure for one tiled file having 452 RIOPS surface currents data objects
+
+* __GROUP "Positioning" {DATASET "geometryValues" {DATATYPE H5T_COMPOUND {H5T_IEEE_F32LE "longitude"; H5T_IEEE_F32LE "latitude";} DATASPACE SIMPLE {(452,1)/(452,1)} DATA {(0,0):{-68.0052, 42.37}, ... (451,0):{-68.9981,42.0176}__
 
 # Examples of canadian coastal waters tiled domains available
 
