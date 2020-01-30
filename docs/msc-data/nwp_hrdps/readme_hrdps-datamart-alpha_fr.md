@@ -37,7 +37,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ![Image de la grille du ouest 1 km du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps1km_west.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique ouest.
+Valeurs données aux paramètres de la grille lat-lon tournée sur le domaine ouest.
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -46,13 +46,15 @@ Valeurs données aux paramètres de la grille polaire stéréographique ouest.
 | résolution à 60° N | 1.0 km |
 | coordonnées du premier point de grille (rélatives à la grille utilisée) | 5°S  23°W |
 
+__Note__ : Les [versions les plus récentes de GDAL](https://gdal.org/) 3.0.3 et plus supportent ces grilles lat-lon tournées.
+
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-CMC_hrdps_west_Variable_TypedeNiveau_Niveau_ps1.0km_YYYYMMDDHH_Phhh-mm.grib2
+CMC_hrdps_west_Variable_TypedeNiveau_Niveau_GrilleResolution_YYYYMMDDTHHZ_Phhh-mm.grib2
 
 où :
 
@@ -62,17 +64,21 @@ où :
 * __Variable__ : Type de variable contenu dans le fichier (ex. : UGRD).
 * __TypedeNiveau__ : Type de niveau.
 * __Niveau__ : Valeur du niveau.
-* __ps1.0km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 1.0 km.
+* __Grille__ : Grille horizontale [rotated_latlon] 
+* __Resolution__ : 0.009x0.009. Signifie une résolution de 0.009°(environ 1km) dans les directions longitudinale et latitudinale
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
+* __T__ : Délimiteur temporel selon les normes ISO8601
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18].
+* __Z__ : Fuseau horaire (heure UTC)
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 035/036].
 * __mm__ : « mm » représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
-CMC_hrdps_west_DEPR_ISBL_0175_ps1.0km_2019082512_P003-00.grib2
 
-Le fichier a été créé par le CMC et contient une prévision du Système haute résolution de prévision déterministe expérimental sur le domaine ouest. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 175 mb (ISBL_0175), sur une grille polaire stéréographique à une résolution de 1.0 km (ps1.0km). Il débute le 25 août 2019 à 12Z (2019082512). Il contient l’heure de prévision 03 (P003) et les minutes de prévision (00) en format GRIB2 (.grib2).
+CMC_hrdps_west_DEPR_ISBL_0175_rotated_latlon0.009x0.009_20190825T12Z_P003-00.grib2
+
+Le fichier a été créé par le CMC et contient une prévision du Système haute résolution de prévision déterministe expérimental sur le domaine ouest. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 175 mb (ISBL_0175), sur une grille lat-lon tournée à une résolution d'environ 1 km (rotated_latlon_0.009x0.009). Il débute le 25 août 2019 à 12Z (20190825T12Z). Il contient l’heure de prévision 03 (P003) et les minutes de prévision (00) en format GRIB2 (.grib2).
 
 ## Niveaux
 
