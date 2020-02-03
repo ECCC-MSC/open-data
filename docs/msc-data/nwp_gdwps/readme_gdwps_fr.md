@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPDV
 
-# Données et Produits du système global de prévision déterministe de vague (SGPDV)
+# Données et Produits du Système global de prévision déterministe de vague (SGPDV)
 
 Le Système global de prévision déterministe de vague (SGPDV) produit les prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du Système global de prévision déterministe. En outre, la prévision de glace de mer du Système global de prévision océan-glace (SGPOG) est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
 
