@@ -62,12 +62,10 @@ __1. Air Temperature (TA)__
 
 This file contains the air temperature.
 
-The first line of these files contains :
-
-|Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Air temperature (° Celsius) ; Température de l'air (° Celsius) |
-|-----------|-----------------|----------------|---------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -80,12 +78,10 @@ __2. Dew Point (TD)__
 
 This file contains dew point temperature.
 
-The first line of these files contains :
-
- |Region_en ; Region_fr| CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Dew point (° Celsius) ; Point de rosée (° Celsius)|
- |----------|-----------------------------------------------------|-------------------------------------------|---------------------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -98,12 +94,10 @@ __3. Precipitation Accumulation (PA)__
 
 This file contains the precipitation accumulation and type.
 
-The first line of these files contains :
-
- | Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Total accumulation min (mm) ; Accumulation totale min (mm) | Total accumulation max (mm) ; Accumulation totale max (mm) | Hourly accumulation min (mm) ; Accumulation horaire min (mm) | Hourly accumulation max (mm) ; Accumulation horaire max (mm) | Precipitation type ; Type de précipitation |
- |-----------------------|----------------------------|---------------|-----------|------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -125,12 +119,10 @@ __4. Probability of precipitation (POP)__
 
 This file contains the probability of precipitation in percent.
 
-The first line of these files contains :
-
-| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Probability of precipitation (%) ; Probabilité de précipitation (%) |
-|-------------------|---------------------|------------------------|-----------------|----------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -144,12 +136,10 @@ __5. Wind (WS)__
 
 This file contains the values of wind speed and direction.
 
-The first line of these files contains :
-
-| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Wind speed min (km/h) ; Vitesse du vent min (km/h) | Wind speed max (km/h) ; Vitesse du vent max (km/h) | Wind direction ; Direction du vent |
-|----------------|----------------------|---------------------|------------------------|------------------|----------------------|----------------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -183,12 +173,10 @@ __6. Wind Gust (WG)__
 
 This file contains the values of wind gust.
 
-The first line of these files contains :
-
-| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Start ; Début | End ; Fin | Wind gust min (km/h) ; Vitesse des rafales min (km/h) | Wind gust max (km/h) ; Vitesse des rafales max (km/h) | 
-|------------|-----------------|--------------|--------------|--------------|-------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
@@ -201,12 +189,10 @@ where :
 
 __7. Cloud Cover (CC)__
 
-The first line of these files contains :
-
-| Region_en ; Region_fr | CMML : 'cmml_filename.xml' | Valid time ; Heure de validité | Cloud cover (tenth) ; Couverture nuageuse (dixième) |
-|------------|-------------|------------|--------------|
+The first line of these files contains the parameters:
 
 where :
+
 * **Region_en** : English name of the forecast region.
 * **Region_fr** : French name of the forecast region.
 * **CMML** : Constant string.
