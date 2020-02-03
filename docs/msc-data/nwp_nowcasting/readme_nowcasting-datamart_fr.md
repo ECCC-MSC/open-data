@@ -5,7 +5,7 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévisions immédiates](readme_nowcasting_fr.md) > Prévisions immédiates sur le Datamart du SMC
 
 
-# Matrices Scribe de prévision immédiates
+# Matrices Scribe de prévisions immédiates
 
 Les fichiers de [matrices de prévisions immédiates](readme_nowcasting_fr.md) sont mis à jour à chaque heure et contiennent un ensemble cohérent d'éléments du temps observés et prévus à très court terme pour des points de prévision correspondant généralement à des sites de stations d'observation. Il y a plus de 450 points de prévision dans la matrice.
 
