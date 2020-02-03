@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-# S-111 Dynamic Hydrographic Products(DHP) in HDF5 format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
+# S-111 Dynamic Hydrographic Products(DHP) in HDF5 file format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
 
-The S-111 Dynamic Hydrographic Products(DHP) for oceanographic models currents is in an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). ECCC RIOPS model surface currents are used for this S-111 dataset.
+This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the currents of the operational ECCC RIOPS oceanographic model. The S-111 tiled data use an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) file format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). All stakeholders that are interested by the georeferenced RIOPS surface oceanic currents of the canadian coastal waters can use this data for maritime navigation purposes. 
 
 # Data location
 
@@ -16,7 +16,7 @@ The data can be accessed at the following URL:
 
 * [https://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](https://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
-* __HH__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 
 # Files name nomenclature
 
