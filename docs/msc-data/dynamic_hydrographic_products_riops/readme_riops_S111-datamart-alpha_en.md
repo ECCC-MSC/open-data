@@ -6,11 +6,20 @@
 
 This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the currents of the operational ECCC RIOPS oceanographic model. The S-111 tiled data use an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) file format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). All stakeholders that are interested by the georeferenced RIOPS surface oceanic currents of the canadian coastal waters can use this data for maritime navigation purposes. 
 
-# Data location
+# List of variables used for the S-111 currents.
+
+* 1). __"Speed"__(in knots) for each RIOPS data grid point
+* 2). __"Direction"__(navigation angle 0°-360°) for each RIOPS data grid point
+
+Both variables are regrouped in a [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point (which can then be considered as an object, see item __S-111 surface currents objects__ below for more details)
+
+There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO)](https://iho.int) specification).
+
+# S-111 Data location
 
 MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable HDF5 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
+The data is available using the HTTP protocol and resides in a directory that is plainly accessible by a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable HDF5 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
 
 The data can be accessed at the following URL:
 
@@ -18,7 +27,7 @@ The data can be accessed at the following URL:
 
 * __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 
-# Files name nomenclature
+# S-111 Files datamart name nomenclature
 
 NOTE: ALL HOURS ARE IN UTC.
 
