@@ -30,7 +30,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{hh}Z.h5
 * __wwwww__: Five characters Tag of the decimal degrees longitude(Western Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
 * __YYYYYMMDD__: RIOPS model synoptic run start date, in UTC.
 * __T__: ISO8601 standard date-time separator.
-* __hh__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __hh__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 * __Z__: UTC(a.k.a ZULU) tag.
 * __.h5__: Official HDF5 file format extension.
  
