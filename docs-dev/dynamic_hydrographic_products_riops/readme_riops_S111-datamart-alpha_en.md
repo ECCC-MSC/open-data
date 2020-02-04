@@ -13,7 +13,7 @@ This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the surface curr
 
 Both variables are regrouped in a [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point (which can then be considered as an object, see item __S-111 surface currents objects__ below for more details)
 
-There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO)](https://iho.int) specification).
+There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=).
 
 # S-111 Data location
 
