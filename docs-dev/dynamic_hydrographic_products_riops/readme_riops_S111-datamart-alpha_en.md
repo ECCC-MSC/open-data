@@ -1,6 +1,6 @@
 [En français](readme_riops_S111-datamart-alpha_fr.md)
 
-![ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../docs/img_eccc-logo.png)
 
 # S-111 Dynamic Hydrographic Products(DHP) in HDF5 file format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
 
