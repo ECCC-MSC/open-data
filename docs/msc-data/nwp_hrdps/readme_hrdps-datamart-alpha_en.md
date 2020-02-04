@@ -44,7 +44,7 @@ Table lists the values of various parameters of the rotated lat-lon grid over th
 | resolution at 60° N | 1.0 km |
 | coordinate of first grid point (with respect to the used grid) | 5°S 23°W |
 
-__Note__ : The [most recent versions of GDAL](https://gdal.org/) 3.0.3 and other support these grids.
+__Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) support these rotated grids. An updated version of [GDAL](https://gdal.org/) will be available shortly with this new future.
 
 ## File name nomenclature 
 
