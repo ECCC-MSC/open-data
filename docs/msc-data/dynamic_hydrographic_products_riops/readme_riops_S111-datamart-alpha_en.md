@@ -4,7 +4,7 @@
 
 # S-111 Dynamic Hydrographic Products(DHP) in HDF5 file format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
 
-This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the currents of the operational ECCC RIOPS oceanographic model. The S-111 tiled data use an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) file format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). All stakeholders that are interested by the georeferenced RIOPS surface oceanic currents of the canadian coastal waters can use this data for maritime navigation purposes. 
+This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the surface currents of the operational ECCC RIOPS oceanographic model. The S-111 tiled data use an open standard [HDF5](https://www.hdfgroup.org/solutions/hdf5/) file format with a specification provided by the [International Hydrographic Organisation(IHO)](https://iho.int). All maritime navigation stakeholders that are interested by the RIOPS surface oceanic currents of the canadian coastal waters can use this [EPSG:4326](https://epsg.io/4326) georeferenced S-111 tiled data.
 
 # List of variables used for the S-111 currents.
 
@@ -25,7 +25,7 @@ The data can be accessed at the following URL:
 
 * [https://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](https://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
-* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png
 
 # S-111 Files datamart name nomenclature
 
@@ -58,7 +58,7 @@ The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as its GIS
 ## Tiles extents
 Each S-111 data file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
 
-## Tiles Grid mapping 
+## Tiles grid mapping 
 The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 format specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
 
 ## S-111 timestamped GROUP data structures
