@@ -4,11 +4,7 @@
 
 # S-111 Dynamic Hydrographic Products(DHP) in HDF5 file format using RIOPS(Regional Ice Ocean Prediction System) surface currents data. 
 
-<<<<<<< HEAD
 This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the surface currents of the operational ECCC RIOPS oceanographic model. The S-111 tiled data use an open standard [HDF5](https://www.hdfgroup.org/solutions/hdf5/) file format with a specification provided by the [International Hydrographic Organisation(IHO)](https://iho.int). All maritime navigation stakeholders that are interested by the RIOPS surface oceanic currents of the canadian coastal waters can use this [EPSG:4326](https://epsg.io/4326) georeferenced S-111 tiled data.
-=======
-The S-111 Dynamic Hydrographic Products(DHP) for oceanographic models currents is an open standard [ HDF5 ](https://www.hdfgroup.org/solutions/hdf5/) format with a specification provided by the [ International Hydrographic Organisation(IHO) ](https://iho.int). Each S-111 data file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data. The S-111 tiled files are using the EPSG:4326 as its GIS Common Reference System(CRS) to define all its geographical coordinates locations.
->>>>>>> 1671a51956b90b20b149f407ec67866fb0abea5d
 
 # List of variables used for the S-111 currents.
 
