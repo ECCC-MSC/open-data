@@ -100,12 +100,12 @@ Example of of one S-111 surface currents objects coordinates data structure for 
 
 ## 1x1 degree tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
 
-![PNG Scotian shelf L2 tiles](ScotianShelfL2_tiles.png)
+![PNG Scotian shelf L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/ScotianShelfL2_tiles.png)
 
 ## 1x1 degree tiles bounding boxes for the West-Coast
 
-![PNG West-Coast L2 tiles](WCoastL2Tiles.png)
+![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
 ## 1x1 degree tiles bounding boxes for the Gulf of St. Lawrence
 
-![PNG GStl L2 tiles](GSTLL2Tiles.png)
+![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
