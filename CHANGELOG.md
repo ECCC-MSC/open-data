@@ -10,15 +10,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.2.5
 
-* date: TBD
+* date: 2020-02-07
 * announcements:
     * Not announced to users
 * new content:
     * New mobile app screenshot in Usage page
 * improvements:
-    * TBD
+    * Update to DD-Alpha HRDPS1km documentation (lat-lon rotated grid and filenames update)
 * bug fixes:
-    * TBD
+    * NA
 
 ## 2.2.4
 
