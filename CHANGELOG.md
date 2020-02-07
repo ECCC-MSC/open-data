@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced to users
 * new content:
-    * TBD
+    * New mobile app screenshot in Usage page
 * improvements:
     * TBD
 * bug fixes:
