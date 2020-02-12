@@ -36,7 +36,7 @@ Usage tip:
 * Users can use `&layer=` in WMS GetCapabilities requests to point to a
 specific layer and retrieve a smaller XML payload with up to date
 temporal dimensions
-    * Example for the 1km radar snow layer: https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO
+    * Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
 
 ### GeoMet-Climate
 
