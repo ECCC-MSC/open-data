@@ -34,7 +34,7 @@ Capacités de ce service :
 Conseil d'utilisation :
 
 * Les usagers sont invités à utiliser `&layer=` dans leurs requêtes WMS GetCapabilities afin de pointer sur une couche spécifique et récupérer une réponse plus petite contenant les dimensions temporelles à jour
-    * Exemple pour la couche de la composite radar météo de neige à 1km : https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO
+    * Exemple pour la couche de la composite radar météo de neige à 1km : [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
 
 ### GeoMet-Climat
 
