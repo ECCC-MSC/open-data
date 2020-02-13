@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * implicit link in GeoMet page
 * bug fixes:
-    * TBD
+    * Typos
     
 ## 2.2.5
 
