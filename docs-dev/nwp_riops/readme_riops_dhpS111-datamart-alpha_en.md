@@ -32,13 +32,13 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __wwwww__: Five characters Tag of the decimal degrees longitude(Western Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
 * __YYYYYMMDD__: Year, month and day of the beginning of the forecast.
 * __T__: Time delimiter according to ISO8601 norms.
-* _HH_: Model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 * __Z__: Time zone (UTC hour).
-* __.h5__: Official HDF5 file format extension.
+* __h5__: Official HDF5 file format extension.
  
 Example of a S-111 DHP tiled file name:
 
-CMC_riops_111CA0024200N06900W_20200129T18Z.h
+CMC_riops_111CA0024200N06900W_20200129T18Z.h5
 
 This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
 
