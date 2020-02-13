@@ -8,7 +8,7 @@
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SPCE à la version 2.1.1 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jours du SPCE à la version 2.2.1 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
