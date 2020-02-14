@@ -6,7 +6,7 @@
 
 # Données climatiques de l’Indice de précipitations et d’évapotranspiration normalisé (IPEN) en format NetCDF
 
-Ce document décrit le contenu des fichiers de [données IPEN](readme_spei_fr.md) en format NetCDF, un indice climatique utilisé pour évaluer l'influence des changements climatiques sur la sécheresse.
+[Données IPEN](readme_spei_fr.md) en format NetCDF, un indice climatique utilisé pour évaluer l'influence des changements climatiques sur la sécheresse.
 
 ## Adresse des données 
 
