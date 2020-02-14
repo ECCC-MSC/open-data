@@ -12,8 +12,8 @@ L’Indice de précipitations et d’évapotranspiration normalisé (IPEN) se ca
 
 ### Comment accéder aux données
 
-* [Données NetCDF disponibles sur le Datamart du SMC](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/master/ec-msc/public-doc/blob/master/docs/msc-data/climate_spei/readme_spei-datamart_fr.md)
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/master/ec-msc/public-doc/blob/master/docs/msc-geomet/readme_fr.md)
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_spei-datamart_fr.md)
+* [Données disponibles via les services web géospatiaux GeoMet-Climat](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -28,7 +28,7 @@ Les [métadonnées IPEN sont accessibles sur le portail du gouvernement ouvert](
 ## Documentation technique
 
 * [Indice de précipitations et d’évapotranspiration normalisé](http://scenarios-climatiques.canada.ca/?page=spei-technical-notes)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/SPEI_Technical_Documentation_fr.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_spei/SPEI_Technical_Documentation_fr.pdf)
 
 ## Registre des changements 
 
