@@ -35,7 +35,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 * __Z__: Time zone (UTC hour).
 * __h5__: Official HDF5 file format extension.
- 
+ getDHPTiles.pygetDHPTiles.py
 Example of a S-111 DHP tiled file name:
 
 CMC_riops_111CA0024200N06900W_20200129T18Z.h5
@@ -47,9 +47,9 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 * __"Speed"__ : Wind speed (in knots) for each RIOPS data grid point
 * __"Direction"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
 
-Both variables are regrouped in a [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point (which can then be considered as an object, see item __S-111 surface currents objects__ below for more details)
+Both variables are regrouped in a [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point.
 
-There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=).
+There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=)).
 
 # Files data structure
 
