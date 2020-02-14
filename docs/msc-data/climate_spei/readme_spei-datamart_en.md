@@ -6,7 +6,7 @@
 
 # Climate Standardized Precipitation Evapotranspiration Index (SPEI) data in NetCDF format
 
-This document describes the content of the [SPEI data](readme_spei_en.md) in NetCDF format, a climate index used to assess the influence of climate change on drought.
+[SPEI data](readme_spei_en.md) in NetCDF format, a climate index used to assess the influence of climate change on drought.
 
 ## Data location
 
