@@ -28,7 +28,7 @@ Les [métadonnées IPEN sont accessibles sur le portail du gouvernement ouvert](
 ## Documentation technique
 
 * [Indice de précipitations et d’évapotranspiration normalisé](http://scenarios-climatiques.canada.ca/?page=spei-technical-notes)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/SPEI_Technical_Documentation_fr.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_spei/SPEI_Technical_Documentation_fr.pdf)
 
 ## Registre des changements 
 

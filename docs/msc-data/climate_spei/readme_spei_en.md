@@ -28,7 +28,7 @@ The [metadata SPEI are available on the Open Government Portal](https://open.can
 ## Technical documentation
 
 * [Standardized Precipitation Evapotranspiration Index](http://climate-scenarios.canada.ca/index.php?page=spei-technical-notes)
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/SPEI_Technical_Documentation_en.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_spei/SPEI_Technical_Documentation_en.pdf)
 
 ## Change log
 
