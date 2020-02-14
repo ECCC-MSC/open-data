@@ -21,9 +21,8 @@ Les fichiers IPEN se trouvent à l'adresse suivante :
 
 où :
 
-* __historical__ : Simulations historiques de 1900 à 2005.
+* __historical__ : Simulations historiques de 1900 à 2005 de l'Indice de précipitations et d’évapotranspiration normalisé. SPEI-1 correspond à IPEN d'un mois ; SPEI-3 correspond à IPEN d'un mois et des 2 mois précédents, et SPEI-12 correspond à IPEN d'un mois et des 11 mois précédents. 
 * __scenarios__ : Réfère à différents scénarios d'émissions [RCP2.6, RCP4.5, RCP8.5] pour la période de 2006-2100.
-* __SPEI__ : Fait référence à l'échelle de temps en mois pour laquelle IPEN a été calculé. SPEI-1 correspond à IPEN d'un mois ; SPEI-3 correspond à IPEN d'un mois et des 2 mois précédents, et SPEI-12 correspond à IPEN d'un mois et des 11 mois précédents. 
 
 ## Nomenclature des noms de fichiers
 

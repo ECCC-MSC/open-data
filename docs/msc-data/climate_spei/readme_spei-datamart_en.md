@@ -21,9 +21,8 @@ The data can be accessed at the following URLs :
 
 where :
 
-* __historical__ : Historical simulations from 1900 to 2005.
-* __scenarios__ : Refers to different emission scenarios [RCP2.6, RCP4.5,RCP8.5] from 2006 to 2100.
-* __SPEI__ : Refers to the time scale in months that SPEI was calculated for. SPEI-1 corresponds to SPEI of one month; SPEI-3 corresponds to SPEI of one month and the previous 2 months, and SPEI-12 corresponds to SPEI of one month and the previous 11 months. 
+* __historical__ : Historical simulations from 1900 to 2005 for the Standardized Precipitation Evapotranspiration Index. SPEI-1 corresponds to SPEI of one month; SPEI-3 corresponds to SPEI of one month and the previous 2 months, and SPEI-12 corresponds to SPEI of one month and the previous 11 months.   
+* __scenarios__ : Refers to different emission scenarios [RCP2.6, RCP4.5,RCP8.5] from 2006 to 2100. 
 
 ## File name nomenclature 
 
