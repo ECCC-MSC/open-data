@@ -12,8 +12,8 @@ Standardized Precipitation Evapotranspiration Index (SPEI) calculated using glob
 
 ### How to access the data
 
-* [NetCDF data available on the MSC Datamart](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/master/ec-msc/public-doc/blob/master/docs/msc-data/climate_spei/readme_spei-datamart_en.md)
-* [Data available via GeoMet-Climat geospatial web services](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/master/ec-msc/public-doc/blob/master/docs/msc-geomet/readme_en.md)
+* [NetCDF data available on the MSC Datamart](readme_spei-datamart_en.md)
+* [Data available via GeoMet-Climat geospatial web services](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
