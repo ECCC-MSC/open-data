@@ -127,7 +127,7 @@ A GetFeatureInfo request for the same image requested in the GetMap example abov
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&FORMAT=image/png&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
 ### WMS GetLegendGraphic
