@@ -20,7 +20,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * improved GeoMet description
 * bug fixes:
     * Typos
-    
+    * Fixed INFO_FORMAT in GetFeatureInfo request example
+
 ## 2.2.5
 
 * date: 2020-02-07
