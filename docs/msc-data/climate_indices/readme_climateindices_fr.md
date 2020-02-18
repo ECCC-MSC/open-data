@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Indices climatiques
 
-# Données et produits de l’Indice de précipitations et d’évapotranspiration normalisé (IPEN)
+# Données et produits d'indices climatiques mis à l'échelle de manière statistique
 
-L’Indice de précipitations et d’évapotranspiration normalisé (IPEN) se calcule au moyen de projections des modèles du climat mondial, d’après la phase 5 du Projet d’intercomparaison des modèles couplés (CMIP5). L’IPEN est un indice multiéchelle fréquemment utilisé pour quantifier la sécheresse et est basé sur le bilan hydrique climatique.
+Ensembles de données des indices climatiques mis à l'échelle de manière statistique fondés sur un ensemble de vingt-quatre projections mises à l'échelle de manière statistique du modèle climatique mondial provenant de la phase 5 du projet d'intercomparaison de modèles couplés (CMIP5). Les indices climatiques sont regroupés en catégories liées à la température, aux précipitations et à l’agroclimat. 
 
 ## Accès
 
@@ -23,11 +23,12 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées des indices climatiques mis à l'échelle de manière statistique sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/0a896af8-f2be-4cf5-a745-2e1792db04a1)
 
 ## Documentation technique
 
-* [Note technique](http://dd.weather.gc.ca/climate/doc/indices/INDICES_Technical_Documentation_fr.pdf)
+* [Indices climatiques mis à l’échelle de manière statistique] (http://scenarios-climatiques.canada.ca/?page=downscaled-indices-notes)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_indices/INDICES_Technical_Documentation_fr.pdf)
 
 ## Registre des changements 
 

@@ -6,7 +6,7 @@
 
 # Statistically downscaled climate indices in NetCDF format
 
-This document describes the content of the [climate indices data](readme_climateindices_en.md) in NetCDF format.
+Statistically downscaled [Climate indices data](readme_climateindices_en.md) in NetCDF format, for historical simulations and three emission scenarios, RCP2.6, RCP4.5 and RCP8.5 (2006-2100), available at a 10 x 10 km degree grid resolution. 
 
 ## Data location
 
@@ -23,7 +23,7 @@ where:
 
 * __historical__: Historical simulations from 1900-2005.
 * __scenarios__: Refers to different emission scenarios [RCP2.6, RCP4.5,RCP8.5] from 2006-2100.
-* __absolute__: Représente les projections des ensembles multimodélisés (valeur réelle)
+* __absolute__: Represents the multi-modelled ensemble projections (actual value)
 
 ## File name nomenclature 
 
@@ -31,16 +31,16 @@ NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-* INDICES_hist _Value_ProjectionResolution_Variable_pctlPP.nc
+* INDICES_hist_Value_ProjectionResolution_Variable_pctlPP.nc
 * INDICES_rcpx.y_Value_ProjectionResolution_Variable_pctlPP.nc
 
 
 where:
 
 * __INDICES__: Constant string indicating that the datasets are statistically downscaled climate indices 
-* __hist__: Constant string indicating historical data
-* __rcpx.y__: Version of the Representative Concentration Pathways (scenario experiments), taking one of the values : [RCP2.6, RCP4.5, RCP8.5]
-* __Value__: Values category, taking one of the two values : [ RCP, 2006-2100 | Historical = 1951-2005]
+* __hist__: Constant string indicating historical simulations
+* __rcpx.y__: Type of the Representative Concentration Pathways (scenario experiments), taking one of the values : [rcp2.6, rcp4.5, rcp8.5]
+* __Value__: Values category, taking one of the two values [2006-2100] for the scenarios and [1900-2005] for the historical sumulations
 * __Projection__: Grid mapping (projection) taking the value : [latlon]
 * __Resolution__: Grid resolution taking one of the values : [0.086x0.086]; 0.086 stands for 0.086-degree resolution in both the latitudinal and longitudinal directions
 * __Variable__: Name of variable available in the file, taking one of the values : [CDD, GSC, GSO, GSW, HDD, TX30, TN20, PREP1]; CDD stands for cooling degree days, GSC stands for length of growing season for cool season crops, GSO stands for length of growing season for overwintering crops, GSW stands for length of growing season for warm season crops, HDD stands for heating degree days, TX30 stands for hot days (number of days with maximum temperature above 30°C), TN20 stands for hot nights (number of days with minimum temperature above 20°C), PREP1 stands for number of days with precipitation greater than 1mm.
@@ -49,7 +49,7 @@ where:
 
 Examples :
 
-* CMIP5_RCP8.5_SPEI-12_2006-2100_latlon1x1_SPEI_pctl50.nc
+* INDICES_rcp4.5_2006-2100_latlon0.086x0.086_GSO_pctl50.nc
 
 ## Variable list
 
