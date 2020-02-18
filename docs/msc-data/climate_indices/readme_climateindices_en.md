@@ -6,8 +6,7 @@
 
 # Data and products of the statistically downscaled climate indices
 
-High-resolution statistically downscaled climate indices based on model projections from 24 global climate models (GCMs) that participated in the Coupled Model Intercomparison Project Phase 5 (CMIP5) are available.
-The climate indices are grouped into temperature-related, precipitation-related and agroclimatic categories.
+High-resolution statistically downscaled climate indices based on model projections from 24 global climate models (GCMs) that participated in the Coupled Model Intercomparison Project Phase 5 (CMIP5) are available. The climate indices are grouped into temperature-related, precipitation-related and agroclimatic categories.
 
 ## Access
 
@@ -24,11 +23,12 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the statistically downscaled climate indices are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/0a896af8-f2be-4cf5-a745-2e1792db04a1)
 
 ## Technical documentation
 
-* [Technical note](http://dd.weather.gc.ca/climate/doc/indices/INDICES_Technical_Documentation_en.pdf)
+* [Statistically downscaled climate indices](http://climate-scenarios.canada.ca/index.php?page=downscaled-indices-notes)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_indices/INDICES_Technical_Documentation_en.pdf)
 
 ## Change log
 

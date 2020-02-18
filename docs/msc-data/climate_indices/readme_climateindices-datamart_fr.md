@@ -6,7 +6,7 @@
 
 # Données des indices climatiques mis à l’échelle de manière statistique en format NetCDF
 
-Ce document décrit le contenu des fichiers de [données des indices climatiques](readme_climateindices_fr.md) en format NetCDF.
+Des [données d'indices climatiques](readme_climateindices_fr.md) en format NetCDF, mis à l’échelle de manière statistique pour des simulations historiques, ainsi que pour trois scénarios d’émissions, RCP 2.6, RCP 4.5 et RCP 8.5, sont disponibles sur une grille à une résolution de 10 km x 10 km.
 
 ## Adresse des données 
 
@@ -16,8 +16,8 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/indicies/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indicies/netcdf/historical/absolute/)
-* [https://dd.meteo.gc.ca/climate/indicies/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indicies/netcdf/scenarios/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
 
 où :
 
@@ -29,20 +29,20 @@ où :
 
 NOTE : TOUTES LES HEURES SONT EN UTC.
 
-* INDICES_hist _Value_ProjectionResolution_Variable_pctlPP.nc
+* INDICES_hist_Value_ProjectionResolution_Variable_pctlPP.nc
 * INDICES_rcpx.y_Value_ProjectionResolution_Variable_pctlPP.nc
 
 avec :
 
-* __INDICES__ : Chaîne constante indiquant que les ensembles de données sont des indices climatiques mis à l’échelle de manière statistique
-* __hist__ : Chaîne constante indiquant des données historiques
-* __rcpx.y__ : Version des profils représentatifs d’évolution de concentration (expériences au moyen de scénario), adoptant l’une des valeurs : [RCP2.6, RCP4.5, RCP8.5]
-* __Value__ : Catégorie de valeurs adoptant l’une de ces deux valeurs : [ RCP = 2006-2100 | Historique = 1951-2005]
-* __Projection__ : Quadrillage (projection) adoptant la valeur : [latlon]
-* __Resolution__ : Résolution de grille adoptant l’une des valeurs : [0.086x0.086]; 0,086 représente une résolution de 0,086 degré dans les sens latitudinal et longitudinal
-* __Variable__ : Nom de la variable disponible dans le fichier adoptant l’une des valeurs : [CDD, GSC, GSO, GSW, HDD, TX30, TN20, PREP1]; CDD signifie degrés-jours de refroidissement, GSC signifie durée de la saison de croissance des cultures de saison fraîche, GSO signifie durée de la saison de croissance des cultures d’hiver, GSW signifie durée de la saison de croissance des cultures de saison chaude, HDD signifie degrés-jours de chauffage, TX30 signifie journées chaudes (nombre de jours affichant des températures maximales supérieures à 30 °C), TN20 signifie nuits chaudes (nombre de nuits affichant des températures minimales supérieures à 20 °C), PREP1 signifie nombre de jours au cours desquels les précipitations ont été supérieures à 1 mm.
-* __PctlPP__ : Nombre de centiles de l’ensemble, adoptant l’une des valeurs : [pctl5, pctl25, pctl50, pctl75, pctl95]
-* __nc__ : Chaîne constante indiquant le format NetCDF
+* __INDICES__: Chaîne constante indiquant que les ensembles de données sont des indices climatiques mis à l’échelle de manière statistique
+* __hist__: Chaîne constante indiquant des données historiques
+* __rcpx.y__: Version des profils représentatifs d’évolution de concentration (expériences au moyen de scénario), adoptant l’une des valeurs : [rcp2.6, rcp4.5, rcp8.5]
+* __Value__: Catégorie de valeurs prenant l’une de ces deux valeurs: [2006-2100] pour les scénarios et [1900-2005] pour les simulations historiques
+* __Projection__: Projection de la grille (projection) prenant la valeur : [latlon]
+* __Resolution__: Résolution de grille prenant la valeurs: [0.086x0.086]; 0,086 représente une résolution de 0,086 degré dans les sens latitudinal et longitudinal (environ 10 km)
+* __Variable__: Nom de la variable disponible dans le fichier prenant l’une des valeurs : [CDD, GSC, GSO, GSW, HDD, TX30, TN20, PREP1]; CDD signifie degrés-jours de refroidissement, GSC signifie durée de la saison de croissance des cultures de saison fraîche, GSO signifie durée de la saison de croissance des cultures d’hiver, GSW signifie durée de la saison de croissance des cultures de saison chaude, HDD signifie degrés-jours de chauffage, TX30 signifie journées chaudes (nombre de jours affichant des températures maximales supérieures à 30 °C), TN20 signifie nuits chaudes (nombre de nuits affichant des températures minimales supérieures à 20 °C), PREP1 signifie nombre de jours au cours desquels les précipitations ont été supérieures à 1 mm.
+* __PctlPP__: Nombre de centiles de l’ensemble, adoptant l’une des valeurs : [pctl5, pctl25, pctl50, pctl75, pctl95]
+* __nc__: Chaîne constante indiquant le format NetCDF
 
 Exemples :
 
@@ -56,12 +56,12 @@ Les variables et unités disponibles pour les ensembles de données multimodèle
 
 * __CDD__ : Degrés-jours de refroidissement (°C-jour)
 * __HDD__ : Degrés-jours de chauffage (°C-jour)
-* __GSC__ : Durée de la saison de croissance des cultures de saison fraîche (jours)
+* __GSC__ : Durée de la saison de croissance des cultures de saison fraîche (jours)
 * __GSO__ : Durée de la saison de croissance des cultures d’hiver (jours)
-* __GSW__ : Durée de la saison de croissance des cultures de saison chaude (jours)
-* __PREP1__ : Nombre de jours au cours desquels les précipitations ont été > 1 mm (jours)
-* __TN20__ : Nuits chaudes (nombre de jours où la température minimale a dépassé 20°C) (jours)
-* __TX30__ : Journées chaudes (nombre de jours où la température maximale a dépassé 30°C) (jours)
+* __GSW__ : Durée de la saison de croissance des cultures de saison chaude (jours)
+* __PREP1__ : Nombre de jours au cours desquels les précipitations ont été > 1 mm (jours)
+* __TN20__ : Nuits chaudes (nombre de jours où la température minimale a dépassé 20°C) (jours)
+* __TX30__ : Journées chaudes (nombre de jours où la température maximale a dépassé 30°C) (jours)
 
 ## Support
 
