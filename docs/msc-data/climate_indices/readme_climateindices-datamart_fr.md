@@ -6,7 +6,7 @@
 
 # Données des indices climatiques mis à l’échelle de manière statistique en format NetCDF
 
-Ce document décrit le contenu des fichiers de [données des indices climatiques](readme_climateindices_fr.md) en format NetCDF, mis à l’échelle de manière statistique pour des simulations historiques, ainsi que pour trois scénarios d’émissions, RCP 2.6, RCP 4.5 et RCP 8.5, selon une grille à une résolution de 10 km x 10 km.
+Des [données d'indices climatiques](readme_climateindices_fr.md) en format NetCDF, mis à l’échelle de manière statistique pour des simulations historiques, ainsi que pour trois scénarios d’émissions, RCP 2.6, RCP 4.5 et RCP 8.5, sont disponibles sur une grille à une résolution de 10 km x 10 km.
 
 ## Adresse des données 
 
@@ -16,8 +16,8 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/indicies/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indicies/netcdf/historical/absolute/)
-* [https://dd.meteo.gc.ca/climate/indicies/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indicies/netcdf/scenarios/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
 
 où :
 

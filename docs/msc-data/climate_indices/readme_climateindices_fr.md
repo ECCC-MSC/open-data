@@ -27,7 +27,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Indices climatiques mis à l’échelle de manière statistique] (http://scenarios-climatiques.canada.ca/?page=downscaled-indices-notes)
+* [Indices climatiques mis à l’échelle de manière statistique](http://scenarios-climatiques.canada.ca/?page=downscaled-indices-notes)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_indices/INDICES_Technical_Documentation_fr.pdf)
 
 ## Registre des changements 

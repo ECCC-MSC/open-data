@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 ## Technical documentation
 
-* [Statistically downscaled climate indices] (http://climate-scenarios.canada.ca/index.php?page=downscaled-indices-notes)
+* [Statistically downscaled climate indices](http://climate-scenarios.canada.ca/index.php?page=downscaled-indices-notes)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_indices/INDICES_Technical_Documentation_en.pdf)
 
 ## Change log
