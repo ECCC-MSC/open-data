@@ -1,5 +1,7 @@
-----------------------------------------
 
+![ECCC logo](../../../docs/img_eccc-logo.png)
+
+----------------------------------------
 ENVIRONMENT AND CLIMATE CHANGE CANADA
 
 This README file describes data available on the Datamart of the Meteorological Service of Canada (MSC) from the Regional Deterministic storm Surge Prediction System (RDSPS) for the north-west Atlantic region.

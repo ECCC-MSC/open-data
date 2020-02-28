@@ -1,4 +1,6 @@
 
+![ECCC logo](../../../docs/img_eccc-logo.png)
+
 -------------------------------------------------------
 
 ENVIRONNEMENT ET CHANGEMENT CLIMATIQUE CANADA
