@@ -46,7 +46,7 @@ Exemple d'un fichier tuile réel PHD-DHP S-111:
 
 __CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
 
-Ce fichier provient du Centre Météorologique Canadien (CMC) et contient les courants de surface du modèle RIOPS à l'intérieur d'une tuile PHD-DHP S-111 d'étendue 1x1 degré dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle RIOPS provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
+Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sous-ensemble de courants de surface du modèle RIOPS délimité par une tuile PHD-DHP S-111 d'étendue 1x1 degré dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle RIOPS provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
 
 # Liste des variables utilisées pour les courants de surface S-111 .
 
