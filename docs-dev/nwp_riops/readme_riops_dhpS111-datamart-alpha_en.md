@@ -26,19 +26,24 @@ The S-111 DHP tiled files have the following nomenclature:
 
 CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 
+* __CMC__ : Canadian Meteorologic Centre (CMC) identifier.
+* __riops__: RIOPS model identifier.
+* __111__: S-111 DHP data identifier.
+* __CA__: Canada identifier.
+* __002__: DH 1x1 degrees tiles identifier.
 * __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
-* __YYYYYMMDD__: Year, month and day of the beginning of the forecast.
-* __T__: Time delimiter according to ISO8601 norms.
-* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
-* __Z__: Time zone (UTC hour).
+* __YYYYYMMDD__: Year, month and day forecast date.
+* __T__: Time character delimiter according to ISO8601 norms.
+* __HH__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __Z__: Time zone (UTC).
 * __h5__: Official HDF5 file format extension.
 
-Example of a S-111 DHP tiled file name:
+Example of a real S-111 DHP tiled file name:
 
-CMC_riops_111CA0024200N06900W_20200129T18Z.h5
+__CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
 
-This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
+This file originates from the Canadian Meteorological Center (CMC) and contains a subset of RIOPS surface currents bounded by a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
 
 # List of variables 
 
