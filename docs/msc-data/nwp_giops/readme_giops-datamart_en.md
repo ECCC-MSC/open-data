@@ -14,8 +14,6 @@ The data files are in NetCDF format (NetCDF-4 classic model) and comply with the
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable netCDF file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
-
 The data can be accessed at the following URLs:
 
 * [https://dd.weather.gc.ca/model_giops/netcdf](https://dd.weather.gc.ca/model_giops/netcdf)
@@ -24,13 +22,13 @@ A history of 5 days of forecast is kept in this directory.
 
 * Files containing data on the latlon0.2x0.2 grid can be found at the following address:
 
-https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/
+[https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/)
 
 * Files containing data on the ps5km60N grid can be found at the following address:
 
 [https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic)
 
-where :
+where:
 
 * __nd__ : Number of spatial dimensions of the forecast fields [2d or 3d].
 * __HH__ : Start hour of model run in UTC [00,12].
@@ -123,9 +121,3 @@ If you have any questions about these data, please contact us at: [ec.dps-client
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available in the [dd_info list](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
-
-
-
-
-

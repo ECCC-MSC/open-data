@@ -12,7 +12,7 @@ The Global Ice-Ocean Prediction System (GIOPS) produces global sea ice and ocean
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [NetCDF data available on the MSC Datamart](readme_giops-datamart_en.md) 
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
@@ -35,5 +35,3 @@ Upcoming.
 ## Change log
 
 The chronology of changes to the Global Ice-Ocean Prediction System (GIOPS) is available [here](changelog_giops_en.md).
-
-
