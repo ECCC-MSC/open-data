@@ -17,7 +17,7 @@ Les données sont également disponibles à l'aide du protocole HTTP de base et 
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 
-L'accès HTTP à ce répertoire avec un navigateur interactif Web produira une liste brute de liens, chaque lien étant un fichier HDF5 téléchargeable. En pratique, nous vous recommandons d'écrire votre propre script pour automatiser le téléchargement des données souhaitées (en utilisant wget ou curl). Si vous ne savez pas comment procéder, vous pouvez consulter notre bref guide d'utilisation de wget.
+L'accès HTTP à ce répertoire avec un navigateur interactif Web produira une liste brute de liens, chaque lien étant un fichier HDF5 téléchargeable. En pratique, nous vous recommandons d'écrire votre propre script pour automatiser le téléchargement des données souhaitées (en utilisant wget ou curl). Si vous ne savez pas comment procéder, vous pouvez consulter [notre guide succint d'utilisation de l'utilitaire wget](../../docs/msc-datamart/readme_wget-datamart_fr.md).
 
 À noter que ces données S-111 sont renouvelées quatre fois par jour à la fin de chaque exécution synoptique quotidienne du modèle opérationnel RIOPS.
 
