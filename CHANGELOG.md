@@ -8,13 +8,66 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.2
+## 2.2.6
 
 * date: TBD
 * announcements:
     * Not announced to users
 * new content:
     * TBD
+* improvements:
+    * Implicit link in GeoMet page
+    * Improved GeoMet description
+    * Radar coverage in embedded maps is now time-enabled (matching radar composite)
+* bug fixes:
+    * Typos
+    * Fixed INFO_FORMAT in GetFeatureInfo request example
+
+## 2.2.5
+
+* date: 2020-02-07
+* announcements:
+    * Not announced to users
+* new content:
+    * New mobile app screenshot in Usage page
+* improvements:
+    * Update to DD-Alpha HRDPS1km documentation (lat-lon rotated grid and filenames update)
+* bug fixes:
+    * NA
+
+## 2.2.4
+
+* date: 2020-01-29
+* announcements:
+    * Not announced to users
+* new content:
+    * TBD
+* improvements:
+    * updated WCPS to indicate the data's not available yet on GeoMet
+* bug fixes:
+    * typos
+    * fixed broken lists
+    * fixed broken links
+
+## 2.2.3
+
+* date: 2020-01-28
+* announcements:
+    * Not announced to users
+* new content:
+    * NA
+* improvements:
+    * Minor corrections to WCPS and HRDPS1km doc
+* bug fixes:
+    * NA
+
+## 2.2.2
+
+* date: 2020-01-28
+* announcements:
+    * Not announced to users
+* new content:
+    * Add WCPS documentation + changelog
 * improvements:
     * TBD
 * bug fixes:

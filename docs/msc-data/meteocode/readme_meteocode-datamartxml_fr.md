@@ -14,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-Les fichiers pour ces données se trouvent à l'adresse suivante :  
+Les fichiers pour ces données couvrant le domaine terrestre se trouvent à l'adresse suivante :  
        
 [https://dd.meteo.gc.ca/meteocode/{REGION}/cmml/](https://dd.meteo.gc.ca/meteocode)
 

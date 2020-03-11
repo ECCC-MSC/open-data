@@ -10,7 +10,7 @@
 
 ### January 21, 2020
 
-* [New High Performance Computing Infrastructure](./changelog_multisystems_en#tuesday-january-21-2020)
+* [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-january-21-2020)
 
 ## 2019
 
@@ -30,11 +30,13 @@
 * [High Resolution Deterministic Prediction system (HRDPS) 5.1.0](../nwp_hrdps/changelog_hrdps_en#wednesday-july-3-2019)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_en#wednesday-july-3-2019)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.6.0](../nwp_hrdpa/changelog_hrdpa_en#wednesday-july-3-2019)
+* [Water Cycle Prediction Sytem (WCPS) 2.1.0](../nwp_wcps/changelog_wcps_en#wednesday-july-3-2019)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) version 2](../nwp_cansips/changelog_cansips_en#wednesday-july-3-2019)
 
 ### March 4, 2019
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.2.0](../nwp_rdwps/changelog_rdwps_en#monday-march-4-2019)
+* [Operational declaration of the Water Cycle Prediction System (WCPS) 2.0.0](../nwp_wcps/changelog_wcps_en#moday-march-4-2019)
 
 ## 2018
 

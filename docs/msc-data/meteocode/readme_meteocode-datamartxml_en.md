@@ -14,7 +14,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-The data is available at the following address : 
+The terrestrial data is available at the following address : 
                                                                           
 [https://dd.weather.gc.ca/meteocode/{REGION}/cmml](https://dd.weather.gc.ca/meteocode)
 

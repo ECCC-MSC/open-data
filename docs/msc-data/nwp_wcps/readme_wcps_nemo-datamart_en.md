@@ -6,9 +6,7 @@
 
 # Water Cycle Prediction System (WCPS) NEMO data in NetCDF over the Great Lakes and St. Lawrence River 
 
-The ocean-ice model, NEMO-CICE configured on the Great Lakes is coupled to the WCPS to produce information on surface water temperature, ice cover, sensible and latent heat fluxes and momentum to feed the river routing model, WATROUTE. 
-
-These data in NetCDF format are available on a lat-lon grid, comparable to a resolution of 1 km (0.009 x 0.009 degrees).
+The ocean-ice model, NEMO-CICE, from WCPS produces hourly forecast products. These data are available in NetCDF format with a latitude and longitude grid, corresponding to a 1km resolution (0.009 x 0.009 degree).
 
 ## Data location 
 
@@ -20,7 +18,7 @@ The data can be accessed at the following URLs:
 
 * [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
 
-where :
+where:
 
 * __nd__ : Spatial dimension, latitude and longitude [2d]
 * __HH__ : Model run start, in UTC [00,12]
@@ -44,11 +42,11 @@ In the white complete domain, the valid domain which covers the lakes, is in col
 
 NOTE: ALL HOURS ARE IN UTC.
 
-The files have the following nomenclature : 
+The files have the following nomenclature: 
 
 CMC_wcps_nemo_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.nc
 
-where :
+where:
 
 * __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC)
 * __wcps_nemo__ : Constant string indicating that the data is from WCPS-NEMO component 
@@ -62,7 +60,7 @@ where :
 * __Phhh__ : P constant character, hhh the forecast hour [001,002, ..., 084] 
 * __nc__ : constant string indicating the NetCDF format
 
-Example :
+Example:
 
 * CMC_wcps_nemo_vomecrty_depth_0.5_latlon0.009x0.009_2019011100_P036.nc
 

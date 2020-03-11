@@ -23,7 +23,7 @@ Le service peut filtrer des ensembles spécifiques de fichiers (alertes météo,
 
 C'est la méthode recommandée pour récupérer les données du Datamart du SMC.
 
-La documentation de ce service se trouve sur la documentation [MSC Datamart AMQP documentation](amqp_fr.md).
+La documentation de ce service se trouve sur la [page consacrée au protocole AMQP](amqp_fr.md).
   
 __Note__: Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
 

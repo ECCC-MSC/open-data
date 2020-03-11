@@ -4,7 +4,7 @@
 
 [TOC](../readme_en.md) > [MSC GeoMet](readme_en.md) > Technical documentation
 
-# Table of Contents
+# Table of contents
 - [Web Map Service (WMS)](#web-map-service-wms)
     * [WMS GetCapabilities](#wms-getcapabilities)
     * [WMS GetMap](#wms-getmap)
@@ -20,7 +20,7 @@
     * [Usage Example](#usage-example)
 - [OGC API - Features (WFS 3)](#ogc-api-features)
 
-# Geospatial Web Services
+# Geospatial web services
 
 Web services are protocols designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.
 
@@ -44,7 +44,6 @@ A WMS GetCapabilities request allows the client to retrieve an XML document that
 
 A WMS GetCapabilities request is comprised of the following parameters:
 
-<br>
 
 | Required parameters                 | Definition |
 | ------------------------- | ---------- |
@@ -67,7 +66,6 @@ Each layer defined in the WMS GetCapabilities XML document has information relat
 
 A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.) for a given layer within a defined area. A GetMap request is composed of several parameters whose value determine the layer requested, its style, coordinate reference system, the timestep, in addition to the properties of the returned image. The [WMS GetCapabilities request](#getcapabilities) can assist the client in determining the values for several of these parameters.
 
-<br>
 
 | Required parameters                 | Definition |
 | ------------------------- | ---------- |
@@ -102,7 +100,6 @@ And returns:
 
 A WMS GetFeatureInfo request retrieves raw data for a given geographic location. The GetFeatureInfo request parameters resemble those of a GetMap request but also include three new required parameters: `I`, `J` and `QUERY_LAYERS`. These parameters represent the horizontal and vertical placement of the pixel to query in the map image and the name of the layers to query.
 
-<br>
 
 | Required parameters                 | Definition |
 | ------------------------- | ---------- |
@@ -127,9 +124,10 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 | DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
 
 A GetFeatureInfo request for the same image requested in the GetMap example above would look like this:
+
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&FORMAT=image/png&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
 ### WMS GetLegendGraphic
@@ -140,9 +138,6 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 
 ![TEMPERATURE-LINEAR GetLegendGraphic Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
 
-<br>
-
-<br>
 
 | Required parameters                 | Definition |
 | ------------------------- | ---------- |
@@ -171,7 +166,7 @@ And returns:
 
 ![GDWPS Wind Arrow Style Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW)
 
-### Handling Time
+### Handling time
 
 Given the importance of temporal dimension for weather data, it is important for users to understand how MSC GeoMet handles time in WMS requests. By default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in the request, MSC GeoMet will return the closest time interval available for the nearest past model run.
 
@@ -223,10 +218,7 @@ The graphical representation of information and data can have a significant impa
 
 Using the `STYLE` parameter in both WMS GetMap and WMS GetFeatureInfo requests, a client can specify the style they choose to apply to the underlying data. Available styles for any given layer are described in the WMS GetCapabilities document.
 
-Below are two examples of GetMap requests for the Regional Deterministic 
-Precipitation Analysis' quantity of precipitation layer (RDPA.24F_PR)
-that each specify a different `STYLE` parameter value to render the 
-returned map.
+Below are two examples of GetMap requests for the Regional Deterministic Precipitation Analysis' quantity of precipitation layer (RDPA.24F_PR) that each specify a different `STYLE` parameter value to render the returned map.
 
 RDPA.24F_PR with CAPA24-LINEAR style:
 
@@ -247,8 +239,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 ![RDPA.24F_PR with CAPA24-LINEAR style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Users can also choose to apply their own styles either by pointing to
-an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter 
-or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be encoded using the URL encoding.
+an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be encoded using the URL encoding.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
@@ -280,14 +271,9 @@ Note that only the WCS 2.0.1 version is currently supported by the GeoMet servic
  
 ### WCS GetCapabilities
 
-A WCS GetCapabilities request allows the client to retrieve an XML
-document that contains metadata describing the service. This document
-contains information relating to the supported request types, supported
-coordinate reference systems, and most importantly, the layers (data)
-for which clients can request raw data.
+A WCS GetCapabilities request allows the client to retrieve an XML document that contains metadata describing the service. This document contains information relating to the supported request types, supported coordinate reference systems, and most importantly, the layers (data) for which clients can request raw data.
 
 A GetCapabilities request is comprised of the following parameters:
-<br>
 
 | Required parameters       | Definition |
 | ------------------------- | ---------- |
@@ -352,16 +338,11 @@ A WCS GetCoverage request to MSC GeoMet for the GDPS.ETA_TT layer could then be 
 like this: 
 [https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
 
-### <a name="wcstime"></a>Handling Time
+### <a name="wcstime"></a>Handling time
 
-Given the important temporal dimension of weather data, it is important
-for users to understand how MSC GeoMet handles time in WCS requests. By
-default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in
-the request, MSC GeoMet will, by default, return the closest
-time interval available for the latest model run.
+Given the important temporal dimension of weather data, it is important for users to understand how MSC GeoMet handles time in WCS requests. By default, if no `TIME` or `DIM_REFERENCE_TIME` parameters are passed in the request, MSC GeoMet will, by default, return the closest time interval available for the latest model run.
 
-If the user wants to make a request for another date and time, the
-`TIME` or `DIM_REFERENCE_TIME` can be used in a WCS GetCoverage request. Date and times must adhere to the ISO8601 standard and are always in UTC (Coordinate Universal Time).
+If the user wants to make a request for another date and time, the `TIME` or `DIM_REFERENCE_TIME` can be used in a WCS GetCoverage request. Date and times must adhere to the ISO8601 standard and are always in UTC (Coordinate Universal Time).
 
 #### GeoMet-Climate
 
@@ -404,11 +385,10 @@ https://geo.weather.gc.ca/geomet-climate?SERVICE=WCS&VERSION=2.0.1
 ...
 ```
 
-In this example, the `field` keys give the user the available band names.
-In GeoMet-Climate, the bands will always use the same nomenclature which is: `B` followed by one of the two 
-ISO8601 time format supported: `YYYY` for annual time interval and `YYYY-MM` for monthly time interval.
+In this example, the `field` keys give the user the available band names. In GeoMet-Climate, the bands will always use the same nomenclature which is: `B` followed by one of the two ISO8601 time format supported: `YYYY` for annual time interval and `YYYY-MM` for monthly time interval.
 
 In GeoMet-Climate one can either request coverage for a single time step or for a time range:
+
 * Single time step: `RANGESUBSET=B20015`
 * Time range: `RANGESUBSET=B2015:B2019`
 
@@ -419,15 +399,13 @@ Note that a user cannot, in a single GetCoverage request, ask for more than 256 
 Please refer to the previous [WMS Handling Time](#handling-time) section, as for GeoMet-Weather,
 the `TIME` and `DIM_REFERENCE_TIME` usage is the same.
 
-Note that the layers time metadata are not available in the WCS GetCapabilities or the WCS DescribeCoverage. 
-The time metadata can only be access through the WMS GetCapabilities.
+Note that the layers time metadata are not available in the WCS GetCapabilities or the WCS DescribeCoverage. The time metadata can only be access through the WMS GetCapabilities.
 
 ### Usage example
-GeoMet-Climate and GeoMet-Weather WCS are used through the [Climate data extraction tool](https://climate-change.canada.ca/climate-data/#/) of the
-[Canadian Centre for Climate Services portal](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html)
 
-One can select a variable, region of interest, temporal information and output format on the extraction tool
-to retrieve the raw coverage information.
+GeoMet-Climate and GeoMet-Weather WCS are used through the [Climate data extraction tool](https://climate-change.canada.ca/climate-data/#/) of the [Canadian Centre for Climate Services portal](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html).
+
+One can select a variable, region of interest, temporal information and output format on the extraction tool to retrieve the raw coverage information.
 
 ## OGC API - Features
 
@@ -437,15 +415,15 @@ The service operates over HTTP and requests are made via HTTP GET requests. No H
 
 The first parameter in a query is specified with `?` and subsequent parameters with `&`.
 
-### Service Endpoints
+### Service endpoints
 
 [https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features)
 
-#### OpenAPI 3.0 Document
+#### OpenAPI 3.0 document
 
 [https://geo.weather.gc.ca/geomet/features/api](https://geo.weather.gc.ca/geomet/features/api)
 
-### Feature Collections
+### Feature collections
 
 List all feature collections available:
 
@@ -453,13 +431,13 @@ List all feature collections available:
 
 The response provides a list of feature collections with associated metadata (title, description, links, extent, CRS).
 
-### Feature Collection 
+### Feature collection 
 
 List a single feature collection:
 
 [https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations)
 
-### Inspecting Feature Collection Schema
+### Inspecting feature collection schema
 
 Issue a query returning a single feature to inspect geometry and properties:
 
@@ -542,7 +520,7 @@ Another strategy that can be used is to query for all data without returning any
 
 ...and then inspecting the response (see `numberMatched`) to assess the size of the entire record.  The client can then decide how or whether to page accordingly.
 
-#### Combining Filter Parameters
+#### Combining filter parameters
 
 Query all daily mean data from a single station between 2001 and 2010:
 

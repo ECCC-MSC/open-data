@@ -10,6 +10,8 @@ async function getRadarStartEndTime() {
 
 let frameRate = 1.0; // frames per second
 let animationId = null;
+let startTime = null
+let endTime = null
 let current_time = null;
 
 let layers = [
@@ -23,11 +25,12 @@ let layers = [
         params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
       })
     }),
-    new ol.layer.Tile({
-      source: new ol.source.TileWMS({
+    new ol.layer.Image({
+      source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
+        transition: 0
       })
     })
   ]
@@ -48,19 +51,24 @@ function updateInfo(current_time) {
 
 function setTime() {
   current_time = current_time
-  getRadarStartEndTime().then(data => {
     if (current_time === null) {
-      current_time = data[0];
-    } else if (current_time >= data[1]) {
-      current_time = data[0]
+      current_time = startTime;
+    } else if (current_time >= endTime) {
+      current_time = startTime
     } else {
       current_time = new Date(current_time.setMinutes(current_time.getMinutes() + 10));
     }
     layers[1].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
+    layers[2].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
     updateInfo(current_time)
-  })
 }
-setTime();
+
+getRadarStartEndTime().then(data => {
+    startTime = data[0]
+    endTime = data[1]
+    setTime();
+})
+
 
 let stop = function() {
   if (animationId !== null) {

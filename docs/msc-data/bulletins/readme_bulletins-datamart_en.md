@@ -33,7 +33,7 @@ YYYYMMDD/AA/BBBB/HH
 where :
 
 * __YYYYMMDD__ : Reception date of the bulletin (warning: not the date of issue!)
-* __AA__ : 2 letters indicating the type of bulletin. The complete reference of the different types can be found in the WMO's Manual on the Global Telecommunication System, in the section 'Attachment II-5' that corresponds to the pages 103-108. The file is online here: http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_en.pdf. See the following section for specific details about Warning bulletins. 
+* __AA__ : 2 letters indicating the type of bulletin. The complete reference of the different types can be found in the WMO's Manual on the Global Telecommunication System, in the section 'Attachment II-5' that corresponds to the pages 103-108. The file is online here: [http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_en.pdf](http://www.wmo.int/pages/prog/www/ois/Operational_Information/Publications/WMO_386/WMO_386_Vol_I_2009_en.pdf). See the following section for specific details about Warning bulletins.
 * __BBBB__ : 4 letter identifier of the bulletin issuer. 
 
 The 2 letters after "CW" or "CY" in the directory name indicates the issuing office :
