@@ -26,8 +26,8 @@ The S-111 DHP tiled files have the following nomenclature:
 
 CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 
-* __nnnn__: Four numeric characters tag to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
-* __wwwww__: Five numeric characters tag to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
+* __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
+* __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __YYYYYMMDD__: Year, month and day of the beginning of the forecast.
 * __T__: Time delimiter according to ISO8601 norms.
 * __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
