@@ -60,7 +60,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 * Each file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
 
-* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 format specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
+* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
 
 * Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects. Each S-111 contains the 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
 
