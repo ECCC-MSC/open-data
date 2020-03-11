@@ -22,7 +22,7 @@ Un historique de 5 jours de prévision est stocké dans ce répertoire.
 
 * Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
 
-https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/  
+[https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/)
 
 * Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
 
