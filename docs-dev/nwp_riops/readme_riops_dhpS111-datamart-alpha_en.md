@@ -35,7 +35,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
 * __Z__: Time zone (UTC hour).
 * __h5__: Official HDF5 file format extension.
- getDHPTiles.pygetDHPTiles.py
+
 Example of a S-111 DHP tiled file name:
 
 CMC_riops_111CA0024200N06900W_20200129T18Z.h5
