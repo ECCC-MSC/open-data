@@ -31,7 +31,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __riops__: Identifiant du modèle RIOPS.
 * __111__: Identifiant des données S-111.
 * __CA__: Identifiant représentant le Canada.
-* __002__: Identififiant pour les tuiles PHD-DHP de niveau 2 d'étendue 1x1 degrés(1x2 degrés au Nord de la latitude 69° N).
+* __002__: Identifiant pour les tuiles PHD-DHP de niveau 2 d'étendue régulière 1x1 degrés(1x2 degrés au Nord de la latitude 69° N).
 * __nnnn__: Balise de quatre caractères numériques pour représenter la latitude en degrés décimaux(Hémisphère Nord) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __wwwww__: Balise de cinq caractères numériques pour représenter la longitude en degrés décimaux(Hémisphère Ouest) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __YYYYYMMDD__: Année, Mois, Jour du début de la prévision du modèle RIOPS.
@@ -61,7 +61,7 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 # Structures internes de données des fichiers S-111
 
-* Chaque fichier S-111 est une tuile régulière 1x1 degrés (1x2 degrés au Nord de la latitude 69° N) qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
+* Chaque fichier S-111 est une tuile d'étendue régulière 1x1 degrés (1x2 degrés au Nord de la latitude 69° N) qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
  
 * L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3(équivalent à une grille non-structurée) de la specification PHD-DHP S-111(version 1.0.1) de l'OHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stéréographique à résolution de 5km resolution centrée à la latitude 60° N.
 
