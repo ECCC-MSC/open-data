@@ -54,9 +54,11 @@ Both variables are regrouped in a HDF5 data structure of type [H5T_COMPOUND type
 
 There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=) version 1.0.1.
 
-# S-111 files internal data structures
+# Common spatial Reference System(CRS) for GIS GUI applications
 
-* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as its GIS [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all its geographical coordinates locations.
+* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as their [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all the geographical coordinates locations of the RIOPS model grid points for GIS GUI applications.
+
+# S-111 files internal data structures
 
 * Each file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
 
