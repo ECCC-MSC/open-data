@@ -50,7 +50,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 * __"Speed"__ : Wind speed (in knots) for each RIOPS data grid point
 * __"Direction"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
 
-Both variables are regrouped in a HDF5 data structure of type [H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point and for each timestamp.
+Both variables are regrouped in a HDF5 data structure of type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point and for each timestamp.
 
 There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=) version 1.0.1.
 
@@ -64,7 +64,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 * The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
-* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects. Each S-111 contains the 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
+* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects of type HDF5 H5T_COMPOUND. The last 49 of those timestamped data structures groups contains the last RIOPS synoptic forecast run surface currents results and the first 6 timestamped data structures groups are taken from the previous RIOPS synoptic forecast run in order to have a data cushion in the past.
 
 # Examples of canadian coastal waters tiled domains available for RIOPS model results.
 
