@@ -56,7 +56,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 # Common spatial Reference System(CRS) for GIS GUI applications
 
-* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as their [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all the geographical coordinates locations of the RIOPS model grid points for GIS GUI applications.
+* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as their [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all the geographical coordinates locations of the RIOPS model grid points as a layer in GIS GUI applications.
 
 # S-111 files internal data structures
 
