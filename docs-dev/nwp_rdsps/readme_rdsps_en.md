@@ -1,6 +1,6 @@
 [En français](readme_rdsps_fr.md)
 
-![ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../docs/img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RDSPS
 

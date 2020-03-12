@@ -3,7 +3,7 @@
 
 ![ECCC logo](../../docs/img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDOT](readme_rdsps_fr.md) > SRPDOT sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > [SRPDOT](readme_rdsps_fr.md) > SRPDOT sur le Datamart du SMC
 
 # Données NetCDF du Système Régional de Prévision Déterministe d'Onde de Tempête (SRPDOT)
 
