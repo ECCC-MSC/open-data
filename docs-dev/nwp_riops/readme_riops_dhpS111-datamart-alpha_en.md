@@ -30,7 +30,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __riops__: RIOPS model identifier.
 * __111__: S-111 DHP data identifier.
 * __CA__: Canada identifier.
-* __002__: DH 1x1 degrees tiles identifier.
+* __002__: Level 2 DHP 1x1 degrees (1x2 degrees to the North of latitude 69° N) regular bounding box tiles identifier.
 * __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __YYYYYMMDD__: Year, month and day forecast date.
@@ -60,7 +60,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 # S-111 files internal data structures
 
-* Each file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
+* Each S-111 file is a 1x1 degrees(1x2 degrees to the North of latitude 69° N) regular bounding box tiled subset of RIOPS surface currents data.
 
 * The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
