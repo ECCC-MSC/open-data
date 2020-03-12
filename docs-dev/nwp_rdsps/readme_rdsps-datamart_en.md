@@ -3,7 +3,7 @@
 
 ![ECCC logo](../../docs/img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GDWPS](readme_rdsps_en.md) > RDSPS on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDSPS](readme_rdsps_en.md) > RDSPS on MSC Datamart
 
 
 # Global Deterministic Storm Surge Prediction System (RDSPS) data in NetCDF format
