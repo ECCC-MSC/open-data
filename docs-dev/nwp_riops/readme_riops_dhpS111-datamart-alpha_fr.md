@@ -54,3 +54,15 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sou
 Ces deux variables sont regroupées dans une structure de données du type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) et ce pour chaque point de grille du modèle RIOPS et pour chaque pas de temps.
 
 Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complète de métadonnées. Vous pouvez obtenir tous les détails de ces métadonnées en consultant le document offciel des PHD-DHP S-111(version 1.0.1) [sur le site web de l'OHI](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=).
+
+# Système de référence spatiale commune pour les applications SIG
+
+* Les fichiers HDF5 S-111 utilisent le [EPSG:4326](https://epsg.io/4326) en tant que système de référence commune(Common Reference System) [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) officiel pour localiser les points de grille du modèle RIOPS à partir d'une application SIG graphique.
+
+# Structures internes de données des fichiers S-111
+
+* Chaque fichier S-111 est une tuile régulière 1x1 degrés qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
+ 
+
+* L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3 de la specification PHDDHP S-111 de lOHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stereographique à résolution de 5km resolution centrée à la latitude 60° N.
+
