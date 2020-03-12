@@ -51,7 +51,7 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sou
 * 1). __"Speed"__(en noeuds) pour chacun des points de grille du modèle RIOPS.
 * 2). __"Direction"__(angle de navigation 0°-360°) pour chacun des points de grille du modèle RIOPS.
 
-Ces deux variables sont regroupées dans une structure de données du type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) et ce pour chaque point de grille du modèle RIOPS et pour chaque pas de temps.
+Ces deux variables sont regroupées dans une structure de données de type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) et ce pour chaque point de grille du modèle RIOPS et pour chaque pas de temps.
 
 Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complète de métadonnées. Vous pouvez obtenir tous les détails de ces métadonnées en consultant le document offciel des PHD-DHP S-111(version 1.0.1) [sur le site web de l'OHI](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=).
 
@@ -65,3 +65,4 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
  
 * L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3(équivalent à une grille non-structurée) de la specification PHD-DHP S-111(version 1.0.1) de l'OHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stéréographique à résolution de 5km resolution centrée à la latitude 60° N.
 
+* Chaque fichier S-111 tuilé contient 55 structures(HDF5 GROUP) de données à référence temporelle appelée "timePoint" qui elle même contient plusieurs données de courants de surface sous forme d'objets de type HDF5 H5T_COMPOUND. 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
