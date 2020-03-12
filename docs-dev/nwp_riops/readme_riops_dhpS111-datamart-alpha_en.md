@@ -45,7 +45,7 @@ __CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
 
 This file originates from the Canadian Meteorological Center (CMC) and contains a subset of RIOPS surface currents bounded by a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
 
-# List of variables 
+# List of S-111 variables 
 
 * __"Speed"__ : Wind speed (in knots) for each RIOPS data grid point
 * __"Direction"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
@@ -54,7 +54,7 @@ Both variables are regrouped in a HDF5 data structure of type [H5T_COMPOUND type
 
 There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=) version 1.0.1.
 
-# Files data structure
+# S-111 files internal data structures
 
 * The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as its GIS [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all its geographical coordinates locations.
 
