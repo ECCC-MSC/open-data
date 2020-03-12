@@ -31,7 +31,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __riops__: Identifiant du modèle RIOPS.
 * __111__: Identifiant des données S-111.
 * __CA__: Identifiant représentant le Canada.
-* __002__: Identififiant pour les tuiles PHD-DHP 1x1 degrés.
+* __002__: Identififiant pour les tuiles PHD-DHP de niveau 2 d'étendue 1x1 degrés(1x2 degrés au Nord de la latitude 69° N).
 * __nnnn__: Balise de quatre caractères numériques pour représenter la latitude en degrés décimaux(Hémisphère Nord) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __wwwww__: Balise de cinq caractères numériques pour représenter la longitude en degrés décimaux(Hémisphère Ouest) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __YYYYYMMDD__: Année, Mois, Jour du début de la prévision du modèle RIOPS.
@@ -44,7 +44,7 @@ Exemple d'un fichier tuile réel PHD-DHP S-111:
 
 __CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
 
-Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sous-ensemble de courants de surface du modèle RIOPS délimité par une tuile PHD-DHP S-111 d'étendue 1x1 degré dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle RIOPS provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
+Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sous-ensemble de courants de surface du modèle RIOPS délimité par une tuile PHD-DHP S-111 d'étendue 1x1 degrés dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle RIOPS provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
 
 # Liste des variables utilisées pour les courants de surface S-111 .
 
@@ -61,8 +61,7 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 # Structures internes de données des fichiers S-111
 
-* Chaque fichier S-111 est une tuile régulière 1x1 degrés qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
+* Chaque fichier S-111 est une tuile régulière 1x1 degrés (1x2 degrés au Nord de la latitude 69° N) qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
  
-
-* L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3 de la specification PHDDHP S-111 de lOHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stereographique à résolution de 5km resolution centrée à la latitude 60° N.
+* L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3(équivalent à une grille non-structurée) de la specification PHD-DHP S-111(version 1.0.1) de l'OHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stéréographique à résolution de 5km resolution centrée à la latitude 60° N.
 
