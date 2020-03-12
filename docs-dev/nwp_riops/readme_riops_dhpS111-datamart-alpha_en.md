@@ -66,7 +66,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 * Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects. Each S-111 contains the 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
 
-# Examples of canadian coastal waters tiled domains available
+# Examples of canadian coastal waters tiled domains available for RIOPS model results.
 
 ## 1x1 degree tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
 
