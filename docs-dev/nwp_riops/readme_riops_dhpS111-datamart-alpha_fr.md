@@ -77,11 +77,11 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
 
-## Tuiles 1x1 degrés: Côte-Ouest - secteur de Vancouver
+## Tuiles 1x1 degrés: Côte-Ouest (secteur Sud)
 
 ![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
-## Tuiles 1x1 degrés: Côte-Ouest - secteur des îles de la Reine Charlotte
+## Tuiles 1x1 degrés: Côte-Ouest (secteur Nord)
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
 
