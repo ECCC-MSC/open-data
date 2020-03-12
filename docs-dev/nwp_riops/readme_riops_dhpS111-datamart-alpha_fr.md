@@ -57,7 +57,7 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 # Système de référence spatiale commune pour les applications SIG
 
-* Les fichiers HDF5 S-111 utilisent le [EPSG:4326](https://epsg.io/4326) en tant que système de référence commune(Common Reference System) [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) officiel pour localiser les points de grille du modèle RIOPS à partir d'une application SIG graphique.
+* Les fichiers HDF5 S-111 utilisent le [EPSG:4326](https://epsg.io/4326) en tant que système de référence commune(Common Reference System) [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) officiel pour localiser les points de grille du modèle RIOPS en tant que couche dans une application SIG graphique.
 
 # Structures internes de données des fichiers S-111
 
@@ -66,3 +66,23 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 * L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3(équivalent à une grille non-structurée) de la specification PHD-DHP S-111(version 1.0.1) de l'OHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stéréographique à résolution de 5km resolution centrée à la latitude 60° N.
 
 * Chaque fichier S-111 tuilé contient 55 structures(HDF5 GROUP) de données à référence temporelle appelée __"timePoint"__ qui elles mêmes contiennent plusieurs données(points de grille) de courants de surface sous forme d'objets de type HDF5 H5T_COMPOUND. Les 6 premières de ces structures de données à référence temporelles __"timePoint"__ contiennent les données de courants de surface de l'avant dernière instance de prévision synoptique du modèle RIOPS et les 49 dernières de ces structures de données à référence temporelle __"timePoint"__ contiennent les données de courants de surface de la dernière instance de pévision synoptique du modèle RIOPS.
+
+# Exemples de domaines tuilés des eaux côtières canadiennes pour les courants de surface de RIOPS.
+ 
+## Tuiles 1x1 degrés: Baie de Fundy, plate-forme néo-écossaise et détroit de Northumberland.
+
+![PNG Scotian shelf L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/ScotianShelfL2_tiles.png)
+
+## Tuiles 1x1 degrés: Golfe du Saint-Laurent
+
+![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
+
+## Tuiles 1x1 degrés: Côte-Ouest - secteur de Vancouver
+
+![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
+
+## Tuiles 1x1 degrés: Côte-Ouest - secteur des îles de la Reine Charlotte
+
+![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
+
+
