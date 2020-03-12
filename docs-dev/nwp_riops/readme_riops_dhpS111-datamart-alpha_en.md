@@ -33,7 +33,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __002__: Level 2 DHP 1x1 degrees (1x2 degrees to the North of latitude 69° N) regular bounding box tiles identifier.
 * __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
-* __YYYYYMMDD__: Year, month and day forecast date.
+* __YYYYYMMDD__: Year, month and day of a RIOPS model synoptic forecast run starting date.
 * __T__: Time character delimiter according to ISO8601 norms.
 * __HH__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
 * __Z__: Time zone (UTC).
@@ -64,7 +64,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 * The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
-* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects of type HDF5 H5T_COMPOUND. The last 49 of those timestamped data structures groups contains the last RIOPS synoptic forecast run surface currents results and the first 6 timestamped data structures groups are taken from the previous RIOPS synoptic forecast run in order to have a data cushion in the past.
+* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects of type HDF5 H5T_COMPOUND. The first 6 of those timestamped data structures __"timePoint"__ groups contain the surface currents data of the previous RIOPS synoptic forecast run and the last 49 of those timestamped data structures __"timePoint"__ groups contain the surface current data of the last RIOPS synoptic forecast run.
 
 # Examples of canadian coastal waters tiled domains available for RIOPS model results.
 
