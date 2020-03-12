@@ -76,10 +76,10 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (Vancouver)
+## 1x1 degree tiles bounding boxes for the West-Coast (South sector)
 
 ![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (Haïda Gwaïi)
+## 1x1 degree tiles bounding boxes for the West-Coast (North sector)
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
