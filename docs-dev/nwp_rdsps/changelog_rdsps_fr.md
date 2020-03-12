@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDOT](readme_gdwps_fr.md) > Changements au SRPDOT
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDOT](readme_rdsps_fr.md) > Changements au SRPDOT
 
 # Chronologie des changements apportés au Système régional de prévision déterministe d'onde de tempête (SRPDOT)
 

@@ -1,7 +1,7 @@
 
 [In English](readme_rdsps-datamart_en.md)
 
-![ECCC logo](../../../docs/img_eccc-logo.png)
+![ECCC logo](../../docs/img_eccc-logo.png)
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDOT](readme_rdsps_fr.md) > SRPDOT sur le Datamart du SMC
 
