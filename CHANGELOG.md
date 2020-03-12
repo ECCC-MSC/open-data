@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Implicit link in GeoMet page
     * Improved GeoMet description
     * Radar coverage in embedded maps is now time-enabled (matching radar composite)
+    * Updated GIOPS doc to remove wget in favor of AMQP
 * bug fixes:
     * Typos
     * Fixed INFO_FORMAT in GetFeatureInfo request example
