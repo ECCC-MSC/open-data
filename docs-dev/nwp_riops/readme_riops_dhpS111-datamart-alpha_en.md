@@ -30,7 +30,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __riops__: RIOPS model identifier.
 * __111__: S-111 DHP data identifier.
 * __CA__: Canada identifier.
-* __002__: Level 2 DHP 1x1 degrees (1x2 degrees to the North of latitude 69° N) regular bounding box tiles identifier.
+* __002__: Level 2 DHP 1°x1° degrees (2°x1° degrees for latitudes North of 69° N) regular bounding box tiles identifier.
 * __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
 * __YYYYYMMDD__: Year, month and day of a RIOPS model synoptic forecast run starting date.
@@ -47,8 +47,8 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 # List of S-111 variables 
 
-* __"Speed"__ : Wind speed (in knots) for each RIOPS data grid point
-* __"Direction"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
+* __"surfaceCurrentSpeed"__ : Wind speed (in knots) for each RIOPS data grid point
+* __"surfaceCurrentDirection"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
 
 Both variables are regrouped in a HDF5 data structure of type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point and for each timestamp.
 
@@ -60,7 +60,7 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 # S-111 files internal data structures
 
-* Each S-111 file is a 1x1 degrees(1x2 degrees to the North of latitude 69° N) regular bounding box tiled subset of RIOPS surface currents data.
+* Each S-111 file is a 1°x1° degrees(2°x1° degrees for latitudes North of 69° N) regular bounding box tiled subset of RIOPS surface currents data.
 
 * The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
@@ -68,18 +68,18 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 # Examples of canadian coastal waters tiled domains available for RIOPS model results.
 
-## 1x1 degree tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
+## 1°x1° degrees tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
 
 ![PNG Scotian shelf L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/ScotianShelfL2_tiles.png)
 
-## 1x1 degree tiles bounding boxes for the Gulf of St. Lawrence
+## 1°x1° degrees tiles bounding boxes for the Gulf of St. Lawrence
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (South sector)
+## 1°x1° degrees tiles bounding boxes for the West-Coast (South sector)
 
 ![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (North sector)
+## 1°x1° degrees tiles bounding boxes for the West-Coast (North sector)
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
