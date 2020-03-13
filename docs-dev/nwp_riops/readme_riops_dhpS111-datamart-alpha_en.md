@@ -10,13 +10,13 @@ This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the surface curr
 
 MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../docs/msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../docs/usage/readme_en.md) is also available.
 
-The data is also available using the basic HTTP protocol and resides in a directory that is plainly accessible by a web browser at the following URL:
+The data can be accessed at the following URL:
 
 * [http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __HH__: RIOPS model synoptic forecast run start hour, in UTC [00, 06, 12, 18]
 
-Note that the S-111 data is updated four times a day following the end of each daily RIOPS operational model synoptic runs.
+Note that the S-111 data is updated four times a day following the end of each daily RIOPS model synoptic forecast runs instances.
 
 # Files name nomenclature
 
@@ -60,11 +60,11 @@ There is also a comprehensive metadata content in each S-111 tiled data file (fo
 
 # S-111 files internal data structures
 
-* Each S-111 file is a 1°x1° degrees(2°x1° degrees for latitudes North of 69° N) regular bounding box tiled subset of RIOPS surface currents data.
+* Each S-111 data file is a 1°x1° degrees(2°x1° degrees for latitudes North of 69° N) regular bounding box tiled subset of RIOPS surface currents data.
 
-* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO DHP S-111 specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
+* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 DHP data specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
-* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects of type HDF5 H5T_COMPOUND. The first 6 of those timestamped data structures __"timePoint"__ groups contain the surface currents data of the previous RIOPS synoptic forecast run and the last 49 of those timestamped data structures __"timePoint"__ groups contain the surface current data of the last RIOPS synoptic forecast run.
+* Each S-111 data file contains 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of a subset of RIOPS surface currents data objects of type HDF5 H5T_COMPOUND. The first 6 of those timestamped data structures __"timePoint"__ groups contain the first 6 timestamps of the surface currents data of the previous RIOPS synoptic forecast run and the last 49 of those timestamped data structures __"timePoint"__ groups contain the surface current data of the last RIOPS synoptic forecast run.
 
 # Examples of canadian coastal waters tiled domains available for RIOPS model results.
 
