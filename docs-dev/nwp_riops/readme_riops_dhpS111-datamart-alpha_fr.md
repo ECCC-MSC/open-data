@@ -15,7 +15,7 @@ On peut accéder aux données avec un navigateur Web interactif à l'adresse sui
 
 * [http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __HH__: Heure zéro du début d'une instance de prévision synoptique du modèle RIOPS, en TU(UTC) [00, 06, 12, 18]
 
 À noter que ces données S-111 sont renouvelées quatre fois par jour à la fin de chaque instance de prévision synoptique quotidienne du modèle opérationnel RIOPS.
 
@@ -31,7 +31,7 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __riops__: Identifiant du modèle RIOPS.
 * __111__: Identifiant des données S-111.
 * __CA__: Identifiant représentant le Canada.
-* __002__: Identifiant pour les tuiles PHD-DHP de niveau 2 d'étendue régulière 1x1 degrés(1x2 degrés au Nord de la latitude 69° N).
+* __002__: Identifiant pour les tuiles PHD-DHP de niveau 2 d'étendue régulière 1°x1° degrés(2°x1° degrés au Nord de la latitude 69° N).
 * __nnnn__: Balise de quatre caractères numériques pour représenter la latitude en degrés décimaux(Hémisphère Nord) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __wwwww__: Balise de cinq caractères numériques pour représenter la longitude en degrés décimaux(Hémisphère Ouest) du coin Sud-Ouest de la délimitation de chaque tuile de 1x1 degrés.
 * __YYYYYMMDD__: Année, Mois, Jour du début d'une instance de prévision synoptique du modèle RIOPS.
@@ -48,8 +48,8 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sou
 
 # Liste des variables utilisées pour les courants de surface S-111 .
 
-* 1). __"Speed"__(en noeuds) pour chacun des points de grille du modèle RIOPS.
-* 2). __"Direction"__(angle de navigation 0°-360°) pour chacun des points de grille du modèle RIOPS.
+* 1). __"surfaceCurrentSpeed"__(en noeuds) pour chacun des points de grille du modèle RIOPS.
+* 2). __"surfaceCurrentDirection"__(angle de navigation 0°-360°) pour chacun des points de grille du modèle RIOPS.
 
 Ces deux variables sont regroupées dans une structure de données de type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) et ce pour chaque point de grille du modèle RIOPS et pour chaque pas de temps.
 
@@ -61,7 +61,7 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 # Structures internes de données des fichiers S-111
 
-* Chaque fichier S-111 est une tuile d'étendue régulière 1x1 degrés (1x2 degrés au Nord de la latitude 69° N) qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
+* Chaque fichier S-111 est une tuile d'étendue régulière 1°x1° degrés (2°x1° degrés au Nord de la latitude 69° N) qui contient un sous-ensemble de données de courants de surface qui proviennent du modèle RIOPS.
  
 * L'utilisation du système de référence spatiale commune EPSG:4326 ainsi que du format de codage no.3(équivalent à une grille non-structurée) de la specification PHD-DHP S-111(version 1.0.1) de l'OHI permet l'utilisation directe, sans aucune interpolation, des données de courants de surface du modèle RIOPS qui lui-même utilise une grille polaire stéréographique à résolution de 5km resolution centrée à la latitude 60° N.
 
@@ -69,19 +69,19 @@ Chaque fichier PHD-DHP S-111 tuilé contient également une liste très complèt
 
 # Exemples de domaines tuilés des eaux côtières canadiennes pour les courants de surface de RIOPS.
  
-## Tuiles 1x1 degrés: Baie de Fundy, plate-forme néo-écossaise et détroit de Northumberland.
+## Tuiles 1°x1° degrés: Baie de Fundy, plate-forme néo-écossaise et détroit de Northumberland.
 
 ![PNG Scotian shelf L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/ScotianShelfL2_tiles.png)
 
-## Tuiles 1x1 degrés: Golfe du Saint-Laurent
+## Tuiles 1°x1° degrés: Golfe du Saint-Laurent
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
 
-## Tuiles 1x1 degrés: Côte-Ouest (secteur Sud)
+## Tuiles 1°x1° degrés: Côte-Ouest (secteur Sud)
 
 ![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
-## Tuiles 1x1 degrés: Côte-Ouest (secteur Nord)
+## Tuiles 1°x1° degrés: Côte-Ouest (secteur Nord)
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
 
