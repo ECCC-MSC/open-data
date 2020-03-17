@@ -8,17 +8,15 @@ This S-111 Dynamic Hydrographic Products(DHP) tiled dataset use the surface curr
 
 # Data location
 
-MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
-
-The data is available using the HTTP protocol and resides in a directory that is plainly accessible by a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable HDF5 file. In practice, we recommend writing your own script to automate the downloading of the desired data (using wget or equivalent). If you are unsure of how to proceed, you might like to take a look at our brief wget usage guide.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../docs/msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../docs/usage/readme_en.md) is also available.
 
 The data can be accessed at the following URL:
 
 * [http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __HH__: RIOPS model synoptic forecast run start hour, in UTC [00, 06, 12, 18]
 
-Note that the S-111 data is updated four times a day following the end of each daily RIOPS operational model synoptic runs.
+Note that the S-111 data is updated four times a day following the end of each daily RIOPS model synoptic forecast runs instances.
 
 # Files name nomenclature
 
@@ -28,53 +26,60 @@ The S-111 DHP tiled files have the following nomenclature:
 
 CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 
-* __nnnn__: Four characters tag of the decimal degrees latitude(Northern Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
-* __wwwww__: Five characters Tag of the decimal degrees longitude(Western Hemisphere) of the South-West corner of the 1x1 degree tiles bounding boxes used.
-* __YYYYYMMDD__: Year, month and day of the beginning of the forecast.
-* __T__: Time delimiter according to ISO8601 norms.
-* __HH__: Model synoptic run start hour, in UTC [00, 06, 12, 18].
-* __Z__: Time zone (UTC hour).
+* __CMC__ : Canadian Meteorologic Centre (CMC) identifier.
+* __riops__: RIOPS model identifier.
+* __111__: S-111 DHP data identifier.
+* __CA__: Canada identifier.
+* __002__: Level 2 DHP 1°x1° degrees (2°x1° degrees for latitudes North of 69° N) regular bounding box tiles identifier.
+* __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
+* __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
+* __YYYYYMMDD__: Year, month and day of a RIOPS model synoptic forecast run starting date.
+* __T__: Time character delimiter according to ISO8601 norms.
+* __HH__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
+* __Z__: Time zone (UTC).
 * __h5__: Official HDF5 file format extension.
- getDHPTiles.pygetDHPTiles.py
-Example of a S-111 DHP tiled file name:
 
-CMC_riops_111CA0024200N06900W_20200129T18Z.h5
+Example of a real S-111 DHP tiled file name:
 
-This file originates from the Canadian Meteorological Center (CMC) and contains RIOPS surface currents for the canadian coastal waters that were packaged as a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
+__CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
 
-# List of variables 
+This file originates from the Canadian Meteorological Center (CMC) and contains a subset of RIOPS surface currents bounded by a 1x1 degree S-111 DHP tile which have its South-West corner located at latitude 42.00N and longitude 69.00W. The S-111 tiled files were produced by post-processing of RIOPS data results coming from its synoptic forecast run issued on January 29 2020 at 18UTC. 
 
-* __"Speed"__ : Wind speed (in knots) for each RIOPS data grid point
-* __"Direction"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
+# List of S-111 variables 
 
-Both variables are regrouped in a [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point.
+* __"surfaceCurrentSpeed"__ : Wind speed (in knots) for each RIOPS data grid point
+* __"surfaceCurrentDirection"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
 
-There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=)).
+Both variables are regrouped in a HDF5 data structure of type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point and for each timestamp.
 
-# Files data structure
+There is also a comprehensive metadata content in each S-111 tiled data file (for more information on the S-111 metadata, see the official [International Hydrographic Organisation(IHO) specification](http://registry.iho.int/beta/productspec/view.do?idx=168&product_ID=S-111&statusS=5&domainS=ALL&category=product_ID&searchValue=) version 1.0.1.
 
-* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as its GIS [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all its geographical coordinates locations.
+# Common spatial Reference System(CRS) for GIS GUI applications
 
-* Each file is a 1x1 degrees regular bounding box tiled subset of RIOPS surface currents data.
+* The S-111 tiled files are using the [EPSG:4326](https://epsg.io/4326) as their [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) to define all the geographical coordinates locations of the RIOPS model grid points as a layer in GIS GUI applications.
 
-* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 format specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution at the standard parallel 60° N.
+# S-111 files internal data structures
 
-* Each S-111 tiled data files have 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of surface currents data objects. Each S-111 contains the 49 timestamps of the RIOPS synoptic forecast run results used for the tiled file names and the first 6 timestamps are taken from the previous RIOPS synoptic forecast run to have a data cushion in the past.
+* Each S-111 data file is a 1°x1° degrees(2°x1° degrees for latitudes North of 69° N) regular bounding box tiled subset of RIOPS surface currents data.
 
-# Examples of canadian coastal waters tiled domains available
+* The usage of the [EPSG:4326](https://epsg.io/4326) CRS and the data coding format 3 (Ungeorectified gridded data or point set data at one or more times) of the IHO S-111 DHP data specification allows the direct usage, without any interpolation, of RIOPS data which itself use a north-polar stereographic projection with 5km resolution centered at the standard parallel 60° N.
 
-## 1x1 degree tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
+* Each S-111 data file contains 55 timestamped data structures(HDF5 GROUP) called __"timePoint"__ of a subset of RIOPS surface currents data objects of type HDF5 H5T_COMPOUND. The first 6 of those timestamped data structures __"timePoint"__ groups contain the first 6 timestamps of the surface currents data of the previous RIOPS synoptic forecast run and the last 49 of those timestamped data structures __"timePoint"__ groups contain the surface current data of the last RIOPS synoptic forecast run.
+
+# Examples of canadian coastal waters tiled domains available for RIOPS model results.
+
+## 1°x1° degrees tiles bounding boxes for the Bay of Fundy, Scotian shelf and Northumberland Strait.
 
 ![PNG Scotian shelf L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/ScotianShelfL2_tiles.png)
 
-## 1x1 degree tiles bounding boxes for the Gulf of St. Lawrence
+## 1°x1° degrees tiles bounding boxes for the Gulf of St. Lawrence
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/GSTLL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (Vancouver)
+## 1°x1° degrees tiles bounding boxes for the West-Coast (South sector)
 
 ![PNG West-Coast L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastL2Tiles.png)
 
-## 1x1 degree tiles bounding boxes for the West-Coast (Queen Charlotte Islands)
+## 1°x1° degrees tiles bounding boxes for the West-Coast (North sector)
 
 ![PNG GStl L2 tiles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_riops/dynamic_hydrographic_products/WCoastNL2Tiles.png)
