@@ -48,8 +48,8 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sou
 
 # Liste des variables utilisées pour les courants de surface S-111
 
-* __"surfaceCurrentSpeed"__ : Velocité [noeuds]
-* __"surfaceCurrentDirection"__ : Angle de navigation [0°-360°]
+* __surfaceCurrentSpeed__ : Velocité [noeuds]
+* __surfaceCurrentDirection__ : Angle de navigation [degrés décimaux: 0°-360°]
 
 Ces deux variables sont regroupées dans une structure de données de type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) et ce pour chaque point de grille du modèle SRPOG et pour chaque pas de temps.
 
@@ -57,7 +57,7 @@ Chaque fichier PHD-DHP S-111 contient également une liste très complète de m�
 
 # Système de référence spatiale commune pour les applications SIG
 
-* Les fichiers HDF5 S-111 utilisent le [EPSG:4326](https://epsg.io/4326) en tant que système de référence commune(Coordinate Reference System) [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) officiel pour localiser les points de grille du modèle SRPOG en tant que couche dans une application SIG graphique.
+* Les fichiers HDF5 S-111 utilisent le [EPSG:4326](https://epsg.io/4326) en tant que système de référence spatiale(Coordinate Reference System) [CRS](https://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) officiel pour localiser les points de grille du modèle SRPOG en tant que couche dans une application SIG graphique.
 
 # Structures internes de données des fichiers S-111
 
