@@ -31,8 +31,8 @@ CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
 * __111__: S-111 DHP data identifier.
 * __CA__: Canada identifier.
 * __002__: Level 2 DHP 1°x1° degrees (2°x1° degrees for latitudes North of 69° N) regular bounding box tiles identifier.
-* __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
-* __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each 1x1 degree tiles bounding box of the dataset.
+* __nnnn__: Four numeric characters tag used to represent the decimal degrees latitude(Northern Hemisphere) of the South-West corner of each tile bounding box of the dataset.
+* __wwwww__: Five numeric characters tag used to represent the decimal degrees longitude(Western Hemisphere) of the South-West corner of each tile bounding box of the dataset.
 * __YYYYYMMDD__: Year, month and day of a RIOPS model synoptic forecast run starting date.
 * __T__: Time character delimiter according to ISO8601 norms.
 * __HH__: RIOPS model synoptic run start hour, in UTC [00, 06, 12, 18].
@@ -47,8 +47,8 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 # List of S-111 variables 
 
-* __"surfaceCurrentSpeed"__ : Wind speed (in knots) for each RIOPS data grid point
-* __"surfaceCurrentDirection"__ : Wind direction (navigation angle 0°-360°) for each RIOPS data grid point
+* __surfaceCurrentSpeed__ : Velocity [knots]
+* __surfaceCurrentDirection__ : Navigation angle [decimal degrees: 0°-360°]
 
 Both variables are regrouped in a HDF5 data structure of type [HDF5 H5T_COMPOUND type](https://bitbucket.hdfgroup.org/pages/HDFFV/hdf5doc/master/browse/html/cpplus_RM/class_h5_1_1_comp_type.html) for each RIOPS data grid point and for each timestamp.
 
