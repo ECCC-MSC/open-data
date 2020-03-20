@@ -92,6 +92,8 @@ List of variables (forecast fields for forecast hours greater than 0) available 
 * __iicesurftemp__ : Surface temperature of sea ice/snow.
 * __iicepressure__ : Vertically integrated ice internal pressure.
 * __iicestrength__ : Vertically integrated compressive ice strength.
+* __iicedivergence__ : sea ice divergence
+* __iiceshear__ : sea ice shear strain rate
 
 List of variables (forecast fields for forecast hours greater than 0) available in the 3D files:
 
