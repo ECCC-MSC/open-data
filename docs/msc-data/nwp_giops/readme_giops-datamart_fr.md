@@ -105,7 +105,7 @@ Liste des variables (champs de prévision au delà de 00h) disponibles dans les 
 * __iicepressure__ : Pression interne de la glace, intégrée verticalement
 * __iicestrength__ : Résistance à la compression de la glace, intégrée verticalement
 * __iicedivergence__ : Divergence de la glace de mer
-* __iiceshear__ : Taux de déformation du cisaillement de la glace de mer
+* __iiceshear__ : Taux de déformation dû au cisaillement dans la glace de mer 
 
 Liste des variables (champs de prévision au delà de 00h) disponibles dans les fichiers contenant des champs 3D :
 
