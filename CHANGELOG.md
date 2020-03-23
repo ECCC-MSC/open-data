@@ -20,9 +20,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Improved GeoMet description
     * Radar coverage in embedded maps is now time-enabled (matching radar composite)
     * Updated GIOPS doc to remove wget in favor of AMQP
+    * Add 2 variables in GIOPS doc 
+    * Adjust WCPS doc (grid shifting required in order to match the shorelines of the Great Lakes)
 * bug fixes:
     * Typos
     * Fixed INFO_FORMAT in GetFeatureInfo request example
+    * Fix French GIOPS documentation (not complete)
 
 ## 2.2.5
 
