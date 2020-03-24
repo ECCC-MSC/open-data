@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Trajectoires d'ouragans 
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Ouragans 
 
 # Données et produits des trajectoires d'ouragans 
 
-Trajectoires d'ouragans émises par le [Centre canadien de prévision des ouragans](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-faits-ouragans/produits.html), dans le cadre des prévisions régulières lors de la saison des ouragans.
+Les trajectoires d'ouragans et la zone de réaction aux ouragans sont émises par le [Centre canadien de prévision des ouragans](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-faits-ouragans/produits.html), dans le cadre des prévisions régulières lors de la saison des ouragans.
 
 ## Accès
 
@@ -16,6 +16,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 
 * [Données shapefile disponibles sur le Datamart du SMC](readme_hurricane-datamart_fr.md) 
 * [Data available via geospatial web services GeoMet-Météo](../../msc-geomet/readme_en.md)
+    * La Zone de réaction aux ouragans est disponible sur GeoMet-Meteo
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -39,5 +40,3 @@ Non disponible.
 ## Registre des changements 
 
 Ne s'applique pas.
-
-

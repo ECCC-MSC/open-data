@@ -22,6 +22,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Updated GIOPS doc to remove wget in favor of AMQP
     * Add 2 variables in GIOPS doc 
     * Adjust WCPS doc (grid shifting required in order to match the shorelines of the Great Lakes)
+    * Added response zone to hurricane doc and other fixes
 * bug fixes:
     * Typos
     * Fixed INFO_FORMAT in GetFeatureInfo request example

@@ -20,11 +20,11 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a  shapefile.
 
-You can find the shapefiles at :
+You can find the shapefiles at:
 
 * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{storm-name}/](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-where :
+where:
 * __storm-name__ is the storm name in uppercase (e.g. 'BERTHA' )
 
 April 30: the history is deleted
@@ -33,11 +33,11 @@ April 30: the history is deleted
 
 NOTE : ALL HOURS ARE IN UTC.
 
-File naming convention is :
+File naming convention is:
 
 YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
 
-where :
+where:
 
 * __YYYYMMDD__ : Forecast issuance date
 * __HHMM__ : Time in UTC 
@@ -53,7 +53,7 @@ where :
 ## File content
 
 When querying the points (pts) shapefile, the contents of each column are given
-as follows :
+as follows:
 
 | Element   |   Description    |
 |-----------|------------------|
@@ -78,9 +78,8 @@ When querying the 'lin' shapefile, the elements have the same definition as in t
 
 ## Support
 
-If you have any questions about these data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available in the [dd_info list](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
-
