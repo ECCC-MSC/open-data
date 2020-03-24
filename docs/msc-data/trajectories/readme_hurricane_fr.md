@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Ouragans 
 
-# Données et produits des trajectoires d'ouragans 
+# Données et produits de prévision des ouragans 
 
 Les trajectoires d'ouragans et la zone de réaction aux ouragans sont émises par le [Centre canadien de prévision des ouragans](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-faits-ouragans/produits.html), dans le cadre des prévisions régulières lors de la saison des ouragans.
 

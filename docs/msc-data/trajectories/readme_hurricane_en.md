@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Hurricanes
 
-# Data and products of hurricane tracks 
+# Data and products for hurricane prediction 
 
 Hurricane tracks and response zone are issued by the [Canadian Hurricane Centre](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html) as part of the regular hurricane season forecast.
 
