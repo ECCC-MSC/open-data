@@ -8,9 +8,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.6
+## 2.2.7
 
 * date: TBD
+* announcements:
+    * Not announced to users
+* new content:
+    * TBD
+* improvements:
+    * TBD
+* bug fixes:
+    * TBD
+    
+## 2.2.6
+
+* date: 2020-03-25
 * announcements:
     * Not announced to users
 * new content:
