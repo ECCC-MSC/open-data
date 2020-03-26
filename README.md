@@ -22,7 +22,7 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
 
 # 1 - Scope and objectives
 
-The main objective of the 'MSC Open Data documentation' is to consolidate public documentation at a single location with links, images and interactive content, and maintained up to date and iteratively improved over time. Improvements and actions pertaining to this documentation is coordinated by the [Comité de la documentation publique](comdoc/readme.md).
+The main objective of the 'MSC Open Data documentation' is to consolidate public documentation at a single location with links, images and interactive content, and maintained up to date and iteratively improved over time. Improvements and actions pertaining to this documentation is coordinated by the [Comité de la documentation publique (ComDoc)](https://wiki.cmc.ec.gc.ca/wiki/Comit%C3%A9_de_la_documentation_publique#Composition_du_comit.C3.A9).
 
 The repository manages the documentation published on https://eccc-msc.github.io/open-data/ which will be eventually published on Canada.ca pages.
 
@@ -52,8 +52,6 @@ Files in this repository:
     * Public documentation that is deployed but not linked to from the main documentation pages. It is used for *public* documentation of data that is not yet available as open data. Directory structure is the same as the main documentation
 * templates/
     * Location of templates to be used for documenting MSC data
-* comdoc/
-    * Pages of the 'Comité de la documentation publique'
 * scripts/
     * Location of scripts, such as the scripts that create tables and the raw text version of the documentation
 * mkdocs.yml
