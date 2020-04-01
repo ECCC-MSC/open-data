@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RIOPS](readme_riops_en.md) > RIOPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RIOPS Changelog
 
 # Chronology of changes to the Regional Ice and Ocean Prediction System (RIOPS)
 
@@ -29,8 +29,9 @@ A technical note with more details on this change is available at [this link](ht
 On Tuesday June 21st, 2016, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will implement the Regional Ice and Ocean Prediction System (RIOPS) to version 1.1 with an experimental status.
 
 The major changes in this implementation relative to the pre-existing and experimental Regional Ice Prediction System (RIPS) are summarized as follows:
-Addition of a 3D oceanic component (NEMO-CICE) with tides.
-Nudging at large spatial scales of the Global Ice-Ocean Prediction System (GIOPS) analyses during the pseudo-analysis step, prior to the forecast step at 00 UTC.
-The forecast starts at 00 UTC from the pseudo-analysis and inserts the last available ice concentration analysis.
-Addition of AVHRR data to the ice concentration analysis.
+* Addition of a 3D oceanic component (NEMO-CICE) with tides.
+    * Nudging at large spatial scales of the Global Ice-Ocean Prediction System (GIOPS) analyses during the pseudo-analysis step, prior to the forecast step at 00 UTC.
+    * The forecast starts at 00 UTC from the pseudo-analysis and inserts the last available ice concentration analysis.
+* Addition of AVHRR data to the ice concentration analysis.
+
 A technical note with more details on this change is available at [this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops-110_e.pdf).
