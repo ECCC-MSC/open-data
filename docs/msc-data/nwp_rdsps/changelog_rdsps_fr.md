@@ -8,7 +8,7 @@
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SRPDOT à la version 7.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jours du SRPDOT à la version 1.7.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
