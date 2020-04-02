@@ -8,7 +8,7 @@
 
 ## Tuesday January 21, 2020
 
-### Upgrade to Version 7.1.0 of the RIOPS adapted to the New High Performance Computing Infrastructure.
+### Upgrade to Version 2.1.0 of the RIOPS adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
 
