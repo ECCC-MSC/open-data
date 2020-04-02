@@ -2,9 +2,15 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPOG
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Changements au SRPOG
 
 # Chronologie des changements apportés au Système Régional de Prévision Océan-Glace (SRPOG)
+
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SRPOG à la version 7.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 

@@ -2,9 +2,15 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RIOPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RIOPS](readme_riops_fr.md) > RIOPS Changelog
 
 # Chronology of changes to the Regional Ice and Ocean Prediction System (RIOPS)
+
+## Tuesday January 21, 2020
+
+### Upgrade to Version 7.1.0 of the RIOPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Wednesday July 3, 2019
 
