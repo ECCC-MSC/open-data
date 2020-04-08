@@ -1,8 +1,8 @@
-[En français](changelog_firework_fr.md)
+[En français](changelog_raqdps-fw_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [FireWork](readme_firework_en.md) > FireWork Prediction System Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [FireWork](readme_raqdps-fw_en.md) > FireWork Prediction System Changelog
 
 # Chronology of changes to the FireWork Prediction System
 
