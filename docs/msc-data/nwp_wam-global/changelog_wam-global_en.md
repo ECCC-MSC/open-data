@@ -6,12 +6,6 @@
 
 # Chronology of changes to the WAM-Global wave prediction system
 
-## Tuesday January 21, 2020
-
-### Upgrade WAM-Global version adapted to the New High Performance Computing Infrastructure.
-
-See details [at this link](../changelog_multisystems_en.md)
-
 ## Tuesday September 18, 2018
 
 ### Retirement of the "WAM-Global" wave prediction system from the Canadian Meteorological Centre (CMC) set of production suites
