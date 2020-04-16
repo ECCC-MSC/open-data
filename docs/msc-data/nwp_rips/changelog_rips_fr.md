@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPG](readme_rips_fr.md) > Changements au SRPG
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPG
 
 # Chronologie des changements apportés au Système régional de prévision de glace (SRPG)
 
