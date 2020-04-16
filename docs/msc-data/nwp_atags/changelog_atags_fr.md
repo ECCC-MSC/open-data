@@ -6,12 +6,6 @@
 
 # Chronologie des changements apportés au Système automatisé de prévisions à l'aviation (aTAGS)
 
-## Le mardi 21 janvier 2020
-
-### Mise à jours de aTAGS suite à la nouvelle infrastructure de calcul haute performance. 
-
-Voir les détails via [ce lien](../changelog_multisystems_fr.md).
-
 ## Le mercredi 28 novembre 2018
 
 ### Mise à jour du Système automatisé de prévisions à l'aviation (aTAGS version 1.1.0) au Centre météorologique canadien (CMC)

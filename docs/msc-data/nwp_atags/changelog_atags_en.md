@@ -6,12 +6,6 @@
 
 # Chronology of changes to the autoTAF Automated Guidance System (aTAGS)
 
-## Tuesday January 21, 2020
-
-### Upgrade aTAGS version adapted to the New High Performance Computing Infrastructure.
-
-See details [at this link](../changelog_multisystems_en.md)
-
 ## Wednesday November 28, 2018
 
 ### Upgrade to Version 1.1.0 of the autoTAF Automated Guidance System (aTAGS) at the Canadian Meteorological Centre (CMC)
