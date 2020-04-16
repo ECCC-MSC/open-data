@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RESPS](readme_resps_en.md) > RESPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RESPS Changelog
 
 # Chronology of changes to the Regional Ensemble Storm-surge Prediction System (RESPS)
 

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPEOT](readme_resps_fr.md) > Changements au SRPEOT
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPEOT
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
