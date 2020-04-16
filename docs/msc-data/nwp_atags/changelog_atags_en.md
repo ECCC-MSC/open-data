@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [aTAGS](readme_atags_en.md) > aTAGS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > aTAGS Changelog
 
 # Chronology of changes to the autoTAF Automated Guidance System (aTAGS)
 

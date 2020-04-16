@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [aTAGS](readme_atags_fr.md) > Changements au aTAGS
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au aTAGS
 
 # Chronologie des changements apportés au Système automatisé de prévisions à l'aviation (aTAGS)
 
