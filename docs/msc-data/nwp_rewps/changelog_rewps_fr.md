@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPEV
 
-# Chronologie des changements apportés au Système régional de prévision d'ensemble de vagues (SRPEV)
+# Chronologie des changements apportés au Système régional de prévision d'ensemble des vagues (SRPEV)
 
 ## Le mardi 21 janvier 2020
 
