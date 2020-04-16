@@ -4,11 +4,11 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPEOT](readme_resps_fr.md) > Changements au SRPEOT
 
-# Chronologie des changements apportés au Système régional de prévision déterministe (SRPEOT)
+# Chronologie des changements apportés au Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SRPEOT à la version 1.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SRPEOT à la version 1.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
