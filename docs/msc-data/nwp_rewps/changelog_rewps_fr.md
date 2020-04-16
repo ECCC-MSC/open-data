@@ -4,11 +4,11 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPEV](readme_rewps_fr.md) > Changements au SRPEV
 
-# Chronologie des changements apportés au Système régional de prévision d'ensemble des vagues (SRPEV)
+# Chronologie des changements apportés au Système régional de prévision d'ensemble de vagues (SRPEV)
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SRPEV à la version 1.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SRPEV à la version 1.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
