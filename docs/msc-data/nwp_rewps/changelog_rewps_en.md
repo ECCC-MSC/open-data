@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [REWPS](readme_rewps_en.md) > REWPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > REWPS Changelog
 
 # Chronology of changes to the Regional Ensemble Wave Prediction System (REWPS)
 
