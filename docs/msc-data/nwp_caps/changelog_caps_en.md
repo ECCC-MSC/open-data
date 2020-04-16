@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CAPS](readme_caps_en.md) > CAPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CAPS Changelog
 
 # Chronology of changes to the Canadian Arctic Prediction System (CAPS)
 
