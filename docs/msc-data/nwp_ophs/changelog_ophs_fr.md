@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHOP](readme_ophs_fr.md) > Changements au SHOP
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SHOP
 
 # Chronologie des changements apportés au Système de simulation hydrodynamique opérationnel (SHOP)
 

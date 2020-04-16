@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [OPHS](readme_ophs_en.md) > OPHS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > OPHS Changelog
 
 # Chronology of changes to the OPerational Hydrodynamic Simulation system (OPHS)
 
