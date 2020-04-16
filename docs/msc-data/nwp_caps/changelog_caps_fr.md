@@ -2,13 +2,13 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Changements au SCPA
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCPA
 
 # Chronologie des changements apportés Système canadien de prévision de l'artique (SCPA)
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SCPA à la version 2.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SCPA à la version 2.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
@@ -33,4 +33,3 @@ En date du 24 janvier 2018, le Centre météorologique canadien (CMC) du Service
 La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2018/01/24/NOCN03_CWAO_241435___00012).
 
 Une courte documentation technique sur ce système (en anglais) est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf). (Version française à venir)
-
