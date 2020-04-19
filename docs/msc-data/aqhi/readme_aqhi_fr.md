@@ -6,10 +6,8 @@
 
 # Données et produits d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS)
 
-* La **cote air santé CAS** est une échelle conçue pour quantifier la qualité de l'air dans une région donnée, sur une échelle de 1 à 10. La cote 10+ indique que la pollution de l'air est très élevée. La cote air santé comprend également une catégorie décrivant le risque pour la santé correspondant au nombre indiqué risque faible, modéré, élevé ou très élevé . La cote air santé est calculée en fonction des risques relatifs que représente une combinaison de polluants atmosphériques courants connus pour leurs effets néfastes sur la santé humaine, tels que l'ozone troposphérique, les matières particulaires et le dioxyde d'azote. La formulation de la cote air santé rend uniquement compte du risque pour la santé aigu ou à court terme contact en heures ou en jours au maximum .
+La **cote air santé CAS** est une échelle conçue pour quantifier la qualité de l'air dans une région donnée, sur une échelle de 1 à 10. La cote 10+ indique que la pollution de l'air est très élevée. La cote air santé comprend également une catégorie décrivant le risque pour la santé correspondant au nombre indiqué risque faible, modéré, élevé ou très élevé . La cote air santé est calculée en fonction des risques relatifs que représente une combinaison de polluants atmosphériques courants connus pour leurs effets néfastes sur la santé humaine, tels que l'ozone troposphérique, les matières particulaires et le dioxyde d'azote. La formulation de la cote air santé rend uniquement compte du risque pour la santé aigu ou à court terme contact en heures ou en jours au maximum .
 Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouvelle compréhension des effets de la pollution atmosphérique sur la santé. La cote air santé est calculée à partir de données observées en temps réel, sans vérification contrôle de la qualité.
-
-* La **fumée des feux de forêt et de broussailles** peut constituer une source importante de pollution de l’air pour les Canadiens. Les particules fines présentes dans la fumée peuvent représenter un risque grave pour la santé, en particulier pour les enfants, les personnes âgées et les gens souffrant de maladies cardiaques ou pulmonaires. Comme la fumée peut être transportée par le vent sur des milliers de kilomètres, des endroits éloignés peuvent être presque aussi durement touchés que les régions près de l’incendie. Afin d’aider les Canadiens à mieux se préparer, des cartes de prévisions sur la fumée des feux de forêt sont accessibles par le biais du système FireWork du gouvernement du Canada. FireWork est un système de prévision de la qualité de l’air indiquant comment la fumée des feux de forêt devrait traverser l’Amérique du Nord pendant les 48 prochaines heures.
 
 ## Accès
 
@@ -19,7 +17,6 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 
 * [Données pour la CAS, disponibles en format CSV sur le Datamart du SMC](readme_aqhi-datamartcsv_fr.md), dont des données de prévisions d'espèces chimiques provenant de modèles numériques de qualité de l'air
 * [Données pour la CAS, disponibles en format XML sur le Datamart du SMC](readme_aqhi-datamartxml_fr.md)
-* [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -35,7 +32,6 @@ Les [métadonnées d'observations et prévisions qui sont générés pour le pro
 
 * [Sommaire des prévisions les plus récentes de la Cote air santé dans un grand nombre de villes au Canada](https://meteo.gc.ca/airquality/pages/index_f.html)
 * [Carte de prévisions de l'ozone, PM2.5, et PM10 près de la surface et à différentes altitudes](https://meteo.gc.ca/aqfm/index_f.html)
-* [Cartes des prévisions quotidiennes sur la fumée, disponibles du début avril jusqu’à la fin octobre](https://meteo.gc.ca/firework/index_f.html)
 
 ## Partenaires
 
@@ -57,7 +53,6 @@ Le programme CAS est un partenariat conjoint d'Environnement et Changement clima
 ## Documentation technique
 
 * [Guide des prévisions de la côte air santé ](https://www.canada.ca/fr/environnement-changement-climatique/services/meteo-sante/publications/guide-previsions-cote-air-sante.html)
-* [Note technique du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_f.pdf)
 
 ## Registre des changements 
 
