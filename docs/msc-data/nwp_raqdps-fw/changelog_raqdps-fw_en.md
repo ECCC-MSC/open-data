@@ -2,15 +2,31 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RAQDPS-FW](readme_raqdps-fw_en.md) > FireWork Prediction System Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RAQDPS-FW](readme_raqdps-fw_en.md) > Regional Air Quality Deterministic Prediction System Firework Changelog
 
-# Chronology of changes to the FireWork Prediction System
+# Chronology of changes to the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW)
 
 ## Tuesday January 21, 2020
 
 ### Upgrade FireWork version adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
+
+## Wednesday July 3, 2019
+
+### Upgrade to the Regional Air Quality Deterministic Prediction System FireWork (RAQSPS-FW) 
+
+On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) from version 20 to version 21.
+
+The changes included in this upgrade are summarized as follows:
+
+* The RAQDPS is now piloted by [RDPS v7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/changes_e.html#20190703_rdps_7.0.0), rather than RDPS v6.0.0.
+* Upgrade from GEM v4.8-LTS.16 to GEM v5.0.0. For more informations on GEM-5, please consult [this document](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf).
+* Improvements to chemistry processing.
+
+A copy of the official note announcing the implementation of these changes in FireWork is [available at this link](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
+
+A technical note for FireWork with more details on this change will be available soon.
 
 ## Monday April 15, 2019
 

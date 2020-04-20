@@ -28,10 +28,15 @@
 * [Regional Deterministic Prediction system (RDPS) 7.0.0](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2019)
 * [Regional Ensemble Prediction system (REPS) 3.0.0](../nwp_reps/changelog_reps_en#wednesday-july-3-2019)
 * [High Resolution Deterministic Prediction system (HRDPS) 5.1.0](../nwp_hrdps/changelog_hrdps_en#wednesday-july-3-2019)
+* [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) 21](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-july-3-2019)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_en#wednesday-july-3-2019)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.6.0](../nwp_hrdpa/changelog_hrdpa_en#wednesday-july-3-2019)
 * [Water Cycle Prediction Sytem (WCPS) 2.1.0](../nwp_wcps/changelog_wcps_en#wednesday-july-3-2019)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) version 2](../nwp_cansips/changelog_cansips_en#wednesday-july-3-2019)
+
+### April 15, 2019
+
+* [FireWork Summer 2019 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#monday-april-15-2019)
 
 ### March 4, 2019
 
@@ -54,6 +59,10 @@
 ### April 4, 2018
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-march-4-2018)
+
+### April 3, 2018
+
+* [FireWork Summer 2018 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-april-3-2018)
 
 ### March 2, 2018
 
@@ -81,11 +90,16 @@
 
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
+* [FireWork Summer 2016 - Upgrade](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 
 * [Global Ice and Ocean Prediction System (GIOPS) Version 2.1](../nwp_giops/changelog_giops_en#tuesday-june-21-2016)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) starts to use GIOPS 3D ocean analyses](../nwp_cansips/changelog_cansips_en#tuesday-june-21-2016)
+
+### April 14, 2016
+
+* [FireWork Summer 2016 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#thursday-april-14-2016)
 
 ## 2015
 
