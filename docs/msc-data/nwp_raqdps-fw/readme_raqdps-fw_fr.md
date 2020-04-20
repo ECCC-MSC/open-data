@@ -12,7 +12,7 @@ La fumée des feux de forêt et de broussailles peut constituer une source impor
 
 ### Comment accéder aux données
 
-Ces données sont actuellement disponibles seulement via les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont actuellement seulement disponibles via les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
