@@ -6,13 +6,13 @@
 
 # Data and Products of the FireWork Prediction System
 
-**Smoke from wildfires in forests and grasslands** can be a major source of air pollution for Canadians. The fine particles in the smoke can be a serious risk to health, particularly for children, seniors and those with heart or lung disease. Because smoke may be carried thousands of kilometres downwind, distant locations can be affected almost as severely as areas close to the fire. To help Canadians be better prepared, wildfire smoke forecast maps are available through the Government of Canada’s FireWork system. FireWork is an air quality prediction system that indicates how smoke from wildfires is expected to move across North America over the next 48 hours.
+Smoke from wildfires in forests and grasslands can be a major source of air pollution for Canadians. The fine particles in the smoke can be a serious risk to health, particularly for children, seniors and those with heart or lung disease. Because smoke may be carried thousands of kilometres downwind, distant locations can be affected almost as severely as areas close to the fire. To help Canadians be better prepared, wildfire smoke forecast maps are available through the Government of Canada’s FireWork system. FireWork is an air quality prediction system that indicates how smoke from wildfires is expected to move across North America over the next 48 hours.
 
 ## Access
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are currenlty only through the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [Firework data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
@@ -32,9 +32,9 @@ Upcoming.
 
 ## Technical documentation
 
-* [Technical note of the Regional Air Quality Deterministic Prediction System (RAQDPS) and FireWork Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_e.pdf)
+* [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pd)
 
 ## Change log
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to operational systems is available [here](changelog_raqdps-fw_en.md).
 
