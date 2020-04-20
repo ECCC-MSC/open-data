@@ -6,13 +6,13 @@
 
 # Données et Produits du Système de prévision FireWork
 
-La **fumée des feux de forêt et de broussailles** peut constituer une source importante de pollution de l’air pour les Canadiens. Les particules fines présentes dans la fumée peuvent représenter un risque grave pour la santé, en particulier pour les enfants, les personnes âgées et les gens souffrant de maladies cardiaques ou pulmonaires. Comme la fumée peut être transportée par le vent sur des milliers de kilomètres, des endroits éloignés peuvent être presque aussi durement touchés que les régions près de l’incendie. Afin d’aider les Canadiens à mieux se préparer, des cartes de prévisions sur la fumée des feux de forêt sont accessibles par le biais du système FireWork du gouvernement du Canada. FireWork est un système de prévision de la qualité de l’air indiquant comment la fumée des feux de forêt devrait traverser l’Amérique du Nord pendant les 48 prochaines heures.
+La fumée des feux de forêt et de broussailles peut constituer une source importante de pollution de l’air pour les Canadiens. Les particules fines présentes dans la fumée peuvent représenter un risque grave pour la santé, en particulier pour les enfants, les personnes âgées et les gens souffrant de maladies cardiaques ou pulmonaires. Comme la fumée peut être transportée par le vent sur des milliers de kilomètres, des endroits éloignés peuvent être presque aussi durement touchés que les régions près de l’incendie. Afin d’aider les Canadiens à mieux se préparer, des cartes de prévisions sur la fumée des feux de forêt sont accessibles par le biais du système FireWork du gouvernement du Canada. FireWork est un système de prévision de la qualité de l’air indiquant comment la fumée des feux de forêt devrait traverser l’Amérique du Nord pendant les 48 prochaines heures.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont actuellement seulement disponibles via les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
@@ -32,8 +32,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Note technique du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_f.pdf)
+* [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pdf) (anglais seulement) 
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](changelog_raqdps-fw_fr.md).
