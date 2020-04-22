@@ -14,9 +14,9 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork
+### Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
-Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) et le système complémentaire FireWork en remplaçant la version 020 par la version 021.
+Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) en remplaçant la version 020 par la version 021.
 
 Résumé des éléments que comporte cette mise à jour :
 
@@ -26,11 +26,7 @@ Résumé des éléments que comporte cette mise à jour :
 
 Une copie de la note officielle annonçant ce changement dans SRPDQA est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281933___34219).
 
-Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
-
 Une note technique pour SRPDQA avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-021_20190703_f.pdf).
-
-Une note technique pour FireWork avec plus de détails sur ces changements sera disponible bientôt.
 
 ## Le mardi 18 septembre, 2018
 

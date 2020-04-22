@@ -38,6 +38,23 @@ For further information, please consult the official note announcing the impleme
 
 A technical note with more details is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps020.2fw_20190415_e.pdf).
 
+## Tuesday September 18, 2018
+
+### Upgrade to the Regional Air Quality Deterministic Prediction System FireWork 
+
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System FireWork, from version 19 to version 20.
+
+The changes included in this upgrade are summarized as follows:
+
+* The meteorological analyses and pilot model are now linked to [RDPS v6.0.0](/../nwp_rdps/changelog_rdps_en.md#tuesday-september-18-2018) rather than RDPS v5.1.0.
+* Adoption of the RDPS v6.0.0 configuration, including recycling of key physics variables and the incremental analysis update (IAU) based meteorological initialization.
+* Implementation of a new version of the RAQDPS model code (v2.3.1), to improve processing speed and provide increased robustness, as well as improve chemistry (gas-phase dry deposition over snow-covered surfaces and sea-ice).
+* Introduction of a new set of input emissions files based on more recent national emissions inventories.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412).
+
+A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_e.pdf).
+
 ## Tuesday April 3, 2018
 
 ### Installation of the FireWork Prediction System for the Summer Wildfire Season of 2018

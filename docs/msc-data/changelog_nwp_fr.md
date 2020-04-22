@@ -53,6 +53,7 @@
 * [Système régional de prévision déterministe (SRPD) 6.0.0](../nwp_rdps/changelog_rdps_fr#le-mardi-18-septembre-2018)
 * [Système régional de prévision d'ensemble (SRPE) 2.4.0](../nwp_reps/changelog_reps_fr#le-mardi-18-septembre-2018)
 * [Système haute résolution de prévision déterministe (SHRPD) 5.0.0](../nwp_hrdps/changelog_hrdps_fr#le-mardi-18-septembre-2018)
+* [Système régional de prévision déterministe de la qualité de l'air FireWork version 20](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mardi-18-septembre-2018)
 * [Analyse régionale déterministe de précipitation (ARDP (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_fr#le-mardi-18-septembre-2018)
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
