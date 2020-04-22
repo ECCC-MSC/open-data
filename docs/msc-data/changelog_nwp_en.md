@@ -52,6 +52,7 @@
 * [Regional Deterministic Prediction system (RDPS) 6.0.0](../nwp_rdps/changelog_rdps_en#tuesday-september-18-2018)
 * [Regional Ensemble Prediction system (REPS) 2.4.0](../nwp_reps/changelog_reps_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Prediction system (HRDPS) 5.0.0](../nwp_hrdps/changelog_hrdps_en#tuesday-september-18-2018)
+* [Regional Air Quality Deterministic Prediction System FireWork version 20](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-september-18-2018)
