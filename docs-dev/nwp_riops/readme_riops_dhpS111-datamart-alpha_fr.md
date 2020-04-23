@@ -11,7 +11,7 @@ Cet ensemble de données tuilées de produits hydrographiques dynamiques (PHD-DH
 
 Toutes les données environnementales qui sont présentes sur le serveur DD-Alpha du Service Météorologique du Canada(SMC) d'ECCC peuvent être [récupérées automatiquement avec le Protocole avancé de mise en file d'attente des messages (AMQP: Advanced Message Queuing Protocol)](../../docs/msc-datamart/amqp_fr.md) dès qu'elles sont disponibles. Un aperçu et des [exemples d'accès et d'utilisation des données ouvertes du SMC](../../docs/usage/readme_fr.md)  sont également disponibles.
 
-On peut accéder aux données S-111 tuilées de courants de surface du modèle SRPOG avec un navigateur Web interactif à l'adresse suivante:
+On peut accéder aux données tuilées S-111 de courants de surface du modèle SRPOG avec un navigateur Web interactif à l'adresse suivante:
 
 * [http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
@@ -40,7 +40,7 @@ Les fichiers PHD-DHP S-111 tuilés utilsent la nomenclature suivante:
 * __wwwww__: Balise de cinq caractères numériques pour représenter la longitude en degrés décimaux(Hémisphère Ouest) du coin Sud-Ouest de la délimitation de chaque tuile.
 * __h5__: Extension officielle de nom de fichier pour le format HDF5.
 
-Exemple d'un fichier tuile réel PHD-DHP S-111 tuilé:
+Exemple d'un fichier PHD-DHP S-111 tuilé:
 
 20200129T18Z_MSC_RIOPS_111CA0024200N06900W.h5
 
