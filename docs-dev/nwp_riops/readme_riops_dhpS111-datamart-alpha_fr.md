@@ -32,7 +32,7 @@ Les fichiers PHD-DHP S-111 tuilés utilsent la nomenclature suivante:
 * __HH__: Heure zéro du début d'une instance de prévision synoptique du modèle SRPOG, en TU(UTC) [00, 06, 12, 18].
 * __Z__: Caractère identifiant le fuseau horaire TU(UTC).
 * __MSC__ : Identifiant pour le Service météorologique du Canada (Meteorological Service of Canada), le fournisseur de données.
-* __RIOPS_: Identifiant du modèle SRPOG.
+* __RIOPS__: Identifiant du modèle SRPOG.
 * __111__: Identifiant des données S-111.
 * __CA__: Identifiant représentant le Canada.
 * __002__: Identifiant pour les tuiles PHD-DHP de niveau 2 d'étendue régulière 1°x1° degrés(2°x1° degrés au Nord de la latitude 69° N).
