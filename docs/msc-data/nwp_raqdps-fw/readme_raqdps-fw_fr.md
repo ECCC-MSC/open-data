@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Système de prévision FireWork
 
-# Données et Produits du Système de prévision FireWork
+# Données et Produits du Système régional de prévision déterministe de la qualité de l'air FireWork
 
 La fumée des feux de forêt et de broussailles peut constituer une source importante de pollution de l’air pour les Canadiens. Les particules fines présentes dans la fumée peuvent représenter un risque grave pour la santé, en particulier pour les enfants, les personnes âgées et les gens souffrant de maladies cardiaques ou pulmonaires. Comme la fumée peut être transportée par le vent sur des milliers de kilomètres, des endroits éloignés peuvent être presque aussi durement touchés que les régions près de l’incendie. Afin d’aider les Canadiens à mieux se préparer, des cartes de prévisions sur la fumée des feux de forêt sont accessibles par le biais du système FireWork du gouvernement du Canada. FireWork est un système de prévision de la qualité de l’air indiquant comment la fumée des feux de forêt devrait traverser l’Amérique du Nord pendant les 48 prochaines heures.
 
@@ -14,7 +14,7 @@ La fumée des feux de forêt et de broussailles peut constituer une source impor
 
 Ces données sont actuellement seulement disponibles via les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données Firework disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
+* [Données FireWork (points chauds) disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
