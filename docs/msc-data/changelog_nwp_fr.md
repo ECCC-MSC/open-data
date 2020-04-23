@@ -163,6 +163,10 @@
 
 * [Analyse régionale déterministe de précipitations (ARDP (CaPA)) 3.1.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-3-juin-2015)
 
+### 16 avril 2015
+
+* [Analyse régionale déterministe de la qualité de l'air (ARDQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_fr#le-jeudi-16-avril-2015)
+
 ## 2014
 
 ### 18 novembre 2014
@@ -213,6 +217,10 @@
 ### 17 mai 2013
 
 * [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-vendredi-17-mai-2013)
+
+### 28 février 2013
+
+* [Analyse régionale déterministe de la qualité de l'air (ARDQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_fr#le-jeudi-28-fevrier-2013)
 
 ### 26 février 2013
 

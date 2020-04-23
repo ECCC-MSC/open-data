@@ -156,11 +156,15 @@
 
 ### June 11, 2015
 
-* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-june-11-2016)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-june-11-2015)
 
 ### June 3, 2015
 
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.1.0](../nwp_rdpa/changelog_rdpa_en#wednesday-june-3-2015)
+
+### April 16, 2015
+
+* [Regional Deterministic Air Quality Analysis (RDAQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_en#thursday-april-16-2015)
 
 ## 2014
 
@@ -211,6 +215,10 @@
 ### May 17, 2013
 
 * [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
+
+### February 28, 2013
+
+* [Regional Deterministic Air Quality Analysis (RDAQA)](../nwp_rdaqa/changelog_rdaqa_en#thursday-february-28-2013)
 
 ### February 26, 2013
 
