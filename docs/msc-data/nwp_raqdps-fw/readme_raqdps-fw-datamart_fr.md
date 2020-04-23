@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDQA-FW](readme_raqdps-fw_fr.md) > Système de prévision de qualité de l’air FireWork sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDQA-FW](readme_raqdps-fw_fr.md) > Système régional de prévision déterministe de la qualité de l’air FireWork sur le Datamart du SMC
 
 # Données GRIB2 du Système régional de prévision déterministe de la qualité de l’air FireWork (SRPDQA-FW)
 
@@ -53,7 +53,7 @@ où :
 * __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
-* __RAQDPS-FW__ : Chaîne de caractères constante indiquant que les données proviennent du Système de prévision déterministe de la qualité de l’air Firework
+* __RAQDPS-FW__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe de la qualité de l’air FireWork
 * __VAR__ : Type de variable contenu dans le fichier (ex. : DIFF-PM2.5)
 * __TYPENIVEAU__ : Type de niveau [SFC pour la surface , EATM pour l’intégrale de la colonne]
 * __grille__ : Grille horizontale [rotated-latlon] 
