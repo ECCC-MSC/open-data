@@ -44,6 +44,7 @@
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.2.0](../nwp_rdwps/changelog_rdwps_fr#le-lundi-4-mars-2019)
 * [Déclaration du statut opérationnel pour le Système de prévision du cycle de l'eau (SPCE) 2.0.0](../nwp_wcps/changelog_wcps_fr#le-lundi-4-mars-2019)
+* [Système régional de prévision d'ensemble des vagues (SRPEV) 1.2.0](../nwp_rewps/changelog_rewps_fr#le-lundi-4-mars-2019)
 
 ### 30 janvier 2019
 
@@ -64,7 +65,8 @@
 
 ### 4 avril 2018
 
-* [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-mars-2018)
+* [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-avril-2018)
+* [Système régional de prévision d'ensemble des vagues (SRPEV) 1.0.0](../nwp_rewps/changelog_rewps_fr#le-mercredi-4-avril-2018)
 
 ### 3 avril 2018
 

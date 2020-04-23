@@ -45,6 +45,7 @@
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.2.0](../nwp_rdwps/changelog_rdwps_en#monday-march-4-2019)
 * [Operational declaration of the Water Cycle Prediction System (WCPS) 2.0.0](../nwp_wcps/changelog_wcps_en#moday-march-4-2019)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.2.0](../nwp_rewps/changelog_rewps_en#monday-march-4-2019)
 
 ### January 30, 2019
 
@@ -65,7 +66,8 @@
 
 ### April 4, 2018
 
-* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-march-4-2018)
+* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-april-4-2018)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.0.0](../nwp_rewps/changelog_rewps_en#wednesday-april-4-2018)
 
 ### April 3, 2018
 
