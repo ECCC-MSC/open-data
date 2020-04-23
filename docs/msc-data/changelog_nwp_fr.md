@@ -63,6 +63,10 @@
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
 
+### 28 juin 2018
+
+* [Système de prévision de l'artique SCPA 1.1.0](../nwp_caps/changelog_caps_fr#le-jeudi-28-juin-2018)
+
 ### 4 avril 2018
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-avril-2018)
@@ -75,6 +79,10 @@
 ### 2 mars 2018
 
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_fr#le-vendredi-2-mars-2018)
+
+### 24 janvier 2018
+
+* [Système de prévision de l'artique SCPA](../nwp_caps/changelog_caps_fr#le-mercredi-24-janvier-2018)
 
 ## 2017
 

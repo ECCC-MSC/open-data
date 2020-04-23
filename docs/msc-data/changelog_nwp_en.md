@@ -64,6 +64,10 @@
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-september-18-2018)
 
+### June 28, 2018
+
+* [Canadian Arctic Prediction System (CAPS) 1.1.0](../nwp_caps/changelog_caps_en#thursday-june-28-2018)
+
 ### April 4, 2018
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-april-4-2018)
@@ -76,6 +80,10 @@
 ### March 2, 2018
 
 * [High Resolution Deterministic Precipitation Analysis System (HRDPA (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_en#friday-march-2-2018)
+
+### January 24, 2018
+
+* [Canadian Arctic Prediction System (CAPS)](../nwp_caps/changelog_caps_en#wednesday-january-24-2018)
 
 ## 2017
 
