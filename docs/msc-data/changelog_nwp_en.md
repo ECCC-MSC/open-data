@@ -32,11 +32,23 @@
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.6.0](../nwp_hrdpa/changelog_hrdpa_en#wednesday-july-3-2019)
 * [Water Cycle Prediction Sytem (WCPS) 2.1.0](../nwp_wcps/changelog_wcps_en#wednesday-july-3-2019)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) version 2](../nwp_cansips/changelog_cansips_en#wednesday-july-3-2019)
+* [Regional Ice and Ocean Prediction System (RIOPS) 2.0.0](../nwp_riops/changelog_riops_en#wednesday-july-3-2019)
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-july-3-2019)
+* [Regional Ensemble Storm-surge Prediction System (RESPS) 1.2.0](../nwp_resps/changelog_resps_en#wednesday-july-3-2019)
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-july-3-2019)
+
+### April 15, 2019
+
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#monday-april-15-2019)
 
 ### March 4, 2019
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.2.0](../nwp_rdwps/changelog_rdwps_en#monday-march-4-2019)
 * [Operational declaration of the Water Cycle Prediction System (WCPS) 2.0.0](../nwp_wcps/changelog_wcps_en#moday-march-4-2019)
+
+### January 30, 2019
+
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-january-30-2019)
 
 ## 2018
 
@@ -55,6 +67,10 @@
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-march-4-2018)
 
+### April 3, 2018
+
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#tuesday-april-3-2018)
+
 ### March 2, 2018
 
 * [High Resolution Deterministic Precipitation Analysis System (HRDPA (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_en#friday-march-2-2018)
@@ -70,6 +86,7 @@
 * [Global Deterministic Prediction system (GDPS) 6.0.0](../nwp_gdps/changelog_gdps_en#wednesday-november-1-2017)
 * [Global Ice Ocean Prediction System (GIOPS) 2.3.0](../nwp_giops/changelog_giops_en#wednesday-november-1-2017)
 * [Global Deterministic Wave Prediction System (GDWPS) 1.3.0](../nwp_gdwps/changelog_gdwps_en#wednesday-november-1-2017)
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-november-1-2017)
 
 ## 2016
 
@@ -81,11 +98,17 @@
 
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 
 * [Global Ice and Ocean Prediction System (GIOPS) Version 2.1](../nwp_giops/changelog_giops_en#tuesday-june-21-2016)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) starts to use GIOPS 3D ocean analyses](../nwp_cansips/changelog_cansips_en#tuesday-june-21-2016)
+* [Regional Ice and Ocean Prediction System (RIOPS) 2.0.0](../nwp_riops/changelog_riops_en#tuesday-june-21-2016)
+
+### April 14, 2016
+
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
 
 ## 2015
 

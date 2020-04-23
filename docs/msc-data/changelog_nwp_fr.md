@@ -32,11 +32,22 @@
 * [Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP) 4.6.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mercredi-9-juillet-2019)
 * [Système de prévision du cycle de l'eau (SPCE) 2.1.0](../nwp_wcps/changelog_wcps_fr#le-mercredi-9-juillet-2019)
 * [Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)](../nwp_cansips/changelog_cansips_fr#le-mercredi-9-juillet-2019)
-* 
+* [Système Régional de Prévision Océan-Glace (SRPOG) 2.0.0](../nwp_riops/changelog_riops_fr#le-mercredi-9-juillet-2019)
+* [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.6.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-9-juillet-2019)
+* [Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) 1.2.0](../nwp_resps/changelog_resps_fr#le-mercredi-9-juillet-2019)
+
+### 15 avril 2019
+
+* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-lundi-15-avril-2019)
+
 ### 4 mars 2019
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.2.0](../nwp_rdwps/changelog_rdwps_fr#le-lundi-4-mars-2019)
 * [Déclaration du statut opérationnel pour le Système de prévision du cycle de l'eau (SPCE) 2.0.0](../nwp_wcps/changelog_wcps_fr#le-lundi-4-mars-2019)
+
+### 30 janvier 2019
+
+* [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.5.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-30-janvier-2019)
 
 ## 2018
 
@@ -55,6 +66,10 @@
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-mars-2018)
 
+### 3 avril 2018
+
+* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mardi-3-avril-2018)
+
 ### 2 mars 2018
 
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_fr#le-vendredi-2-mars-2018)
@@ -70,6 +85,7 @@
 * [Système global de prévision déterministe (SGPD) 6.0.0](../nwp_gdps/changelog_gdps_fr#le-mercredi-1er-novembre-2017)
 * [Système global de prévision océan-glace (SGPOG) 2.3](../nwp_giops/changelog_giops_fr#le-mercredi-1er-novembre-2017)
 * [Système global de prévision déterministe des vagues (SGPDV) 1.3.0](../nwp_gdwps/changelog_gdwps_fr#le-mercredi-1er-novembre-2017)
+* [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.3.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-30-janvier-2017)
 
 ## 2016
 
@@ -81,11 +97,17 @@
 
 * [Système régional de prévision déterministe (SRPD) 5.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-7-septembre-2016)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
+* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
 
 ### 21 juin 2016
 
 * [Système Global de Prévision Océan-Glace (SGPOG) 2.1](../nwp_giops/changelog_giops_fr#le-mardi-21-juin-2016)
 * [Utilisation des analyses SGPOG par le Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)](../nwp_cansips/changelog_cansips_fr#le-mardi-21-juin-2016)
+* [Système Régional de Prévision Océan-Glace (SRPOG) 1.1.0](../nwp_riops/changelog_riops_fr#le-mardi-21-juin-2016)
+
+### 14 avril 2016
+
+* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-jeudi-14-avril-2016)
 
 ## 2015
 
