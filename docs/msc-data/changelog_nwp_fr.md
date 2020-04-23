@@ -55,7 +55,7 @@
 
 ### 28 novembre 2018
 
-* [Système automatisé de prévisions à l'aviation (aTAGS) 1.1.0](../nwp_rewps/changelog_rewps_fr#le-mercredi-28-novembre-2018)
+* [Système automatisé de prévisions à l'aviation (aTAGS) 1.1.0](../nwp_atags/changelog_atags_fr#le-mercredi-28-novembre-2018)
 
 
 ### 18 septembre 2018
@@ -116,7 +116,7 @@
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
 * [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
-* [Système automatisé de prévisions à l'aviation (aTAGS)](../nwp_rewps/changelog_rewps_fr#le-mercredi-7-septembre-2016)
+* [Système automatisé de prévisions à l'aviation (aTAGS)](../nwp_atags/changelog_atags_fr#le-mercredi-7-septembre-2016)
 
 ### 21 juin 2016
 
@@ -142,6 +142,10 @@
 * [Système régional de prévision d'ensemble (SRPE) 2.2.0](../nwp_reps/changelog_reps_fr#le-mardi-15-decembre-2015)
 * [Analyse régionale déterministe de précipitation (ARDP (CaPA)) 3.2.0](../nwp_rdpa/changelog_rdpa_fr#le-mardi-15-decembre-2015)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.1.0](../nwp_hrdps/changelog_hrdps_fr#le-mardi-15-decembre-2015)
+
+### 17 septembre 2015
+
+* [Système régional de prévision de glace (SRPG) 2.2.0](../nwp_rips/changelog_rips_fr#le-jeudi-17-septembre-2015)
 
 ### 20 août 2015
 
@@ -171,6 +175,7 @@
 * [Système haute résolution de prévision déterministe (SHRPD) 4.0.0](../nwp_hrdps/changelog_hrdps_fr#le-mardi-18-novembre-2014)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 1.5.3](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-novembre-2014)
 
+
 ### 6 mai 2014
 
 * [Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SGPD](../nwp_gdps/changelog_gdps_fr#le-mardi-6-mai-2014)
@@ -195,6 +200,7 @@
 ### 23 juillet 2013
 
 * [Adjustement à l'analyse de température de la mer (GODAS) pour SPISCan](../nwp_cansips/changelog_cansips_fr#le-mardi-23-juillet-2013)
+* [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-mardi-23-juillet-2013)
 
 ### 12 juillet 2013
 
@@ -203,6 +209,10 @@
 ### 3 juillet 2013
 
 * [Mise à jour au binaire RDPS (pour la production de la variable PX)](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2013)
+
+### 17 mai 2013
+
+* [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-vendredi-17-mai-2013)
 
 ### 26 février 2013
 

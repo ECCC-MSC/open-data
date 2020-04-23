@@ -55,7 +55,7 @@
 
 ### November 28, 2018
 
-* [autoTAF Automated Guidance System (aTAGS) 1.1.0](../nwp_rdsps/changelog_rdsps_en#wednesday-november-28-2018)
+* [autoTAF Automated Guidance System (aTAGS) 1.1.0](../nwp_atags/changelog_atags_en#wednesday-november-28-2018)
 
 ### September 18, 2018
 
@@ -115,7 +115,7 @@
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
 * [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
-* [autoTAF Automated Guidance System (aTAGS)](../nwp_rdsps/changelog_rdsps_en#wednesday-september-7-2016)
+* [autoTAF Automated Guidance System (aTAGS)](../nwp_atags/changelog_atags_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 
@@ -141,6 +141,10 @@
 * [Regional Ensemble Prediction System (REPS) 2.2.0](../nwp_reps/changelog_reps_en#tuesday-december-15-2015)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.2.0](../nwp_rdpa/changelog_rdpa_en#tuesday-december-15-2015)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.1.0](../nwp_hrdps/changelog_hrdps_en#tuesday-december-15-2015)
+
+### September 17, 2015
+
+* [Regional Ice Prediction System (RIPS) 2.2.0](../nwp_rips/changelog_rips_en#thursday-september-17-2015)
 
 ### August 20, 2015
 
@@ -194,6 +198,7 @@
 ### July 23, 2013
 
 * [Adjustment to ocean analysis (GODAS) feed for CanSIPS](../nwp_cansips/changelog_cansips_en#tuesday-july-23-2013)
+* [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#tuesday-july-23-2013)
 
 ### July 12, 2013
 
@@ -202,6 +207,10 @@
 ### July 3, 2013
 
 * [Update to the RDPS binary (in support of the production of the variable PX)](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2013)
+
+### May 17, 2013
+
+* [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
 
 ### February 26, 2013
 
