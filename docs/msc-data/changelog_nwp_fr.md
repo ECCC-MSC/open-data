@@ -35,6 +35,7 @@
 * [Système Régional de Prévision Océan-Glace (SRPOG) 2.0.0](../nwp_riops/changelog_riops_fr#le-mercredi-9-juillet-2019)
 * [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.6.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-9-juillet-2019)
 * [Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) 1.2.0](../nwp_resps/changelog_resps_fr#le-mercredi-9-juillet-2019)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 021](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-9-juillet-2019)
 
 ### 15 avril 2019
 
@@ -62,6 +63,7 @@
 * [Analyse régionale déterministe de précipitation (ARDP (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_fr#le-mardi-18-septembre-2018)
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 020](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-septembre-2018)
 
 ### 28 juin 2018
 
@@ -108,6 +110,7 @@
 * [Système régional de prévision déterministe (SRPD) 5.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-7-septembre-2016)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
 * [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
 
 ### 21 juin 2016
 
@@ -118,6 +121,10 @@
 ### 14 avril 2016
 
 * [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-jeudi-14-avril-2016)
+
+### 7 avril 2016
+
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 015](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-avril-2016)
 
 ## 2015
 
@@ -138,6 +145,10 @@
 
 * [Système global de prévision déterministe des vagues (SGPDV)](../nwp_gdwps/changelog_gdwps_fr#le-mardi-23-juin-2015)
 
+### 11 juin 2015
+
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](../nwp_raqdps/changelog_raqdps_fr#le-jeudi-11-juin-2015)
+
 ### 3 juin 2015
 
 * [Analyse régionale déterministe de précipitations (ARDP (CaPA)) 3.1.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-3-juin-2015)
@@ -152,6 +163,7 @@
 * [Système de prévision couplé atmosphère-océan-glace golfe St-Laurent](../nwp_rdps-cgsl/changelog_rdps-cgsl_fr#le-mardi-18-novembre-2014)
 * [Analyse régionale déterministe de précipitations (ARDP (CaPA)) 3.0.0](../nwp_rdpa/changelog_rdpa_fr#le-mardi-18-novembre-2014)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.0.0](../nwp_hrdps/changelog_hrdps_fr#le-mardi-18-novembre-2014)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 1.5.3](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-novembre-2014)
 
 ### 6 mai 2014
 
@@ -186,6 +198,10 @@
 
 * [Mise à jour au binaire RDPS (pour la production de la variable PX)](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2013)
 
+### 26 février 2013
+
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 1.5.1](../nwp_raqdps/changelog_raqdps_fr#le-mardi-26-fevrier-2013)
+
 ### 13 février 2013
 
 * [Système global de prévision déterministe (SGPD) 3.0.0](../nwp_gdps/changelog_gdps_fr#le-mercredi-13-fevrier-2013)
@@ -204,12 +220,14 @@
 * [Système haute résolution de prévision déterministe (SHRPD) 3.0.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-3-octobre-2012)
 * [Analyse régionale déterministe de précipitations (ARDP (CaPA)) 2.3.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-3-octobre-2012)
 * [Ajustement au système de prévision couplé atmosphère-océan-glace golfe St-Laurent](../nwp_rdps-cgsl/changelog_rdps-cgsl_fr#le-mercredi-3-octobre-2012)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 1.5.0](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-3-octobre-2012)
 
 ## 2011
 
 ### 22 décembre 2011
 
 * [Correction à l'analyse de neige du SHRPD 2.2.1](../nwp_hrdps/changelog_hrdps_fr#le-jeudi-22-decembre-2011)
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](../nwp_raqdps/changelog_raqdps_fr#le-jeudi-22-decembre-2011)
 
 ### 1er décembre 2011
 

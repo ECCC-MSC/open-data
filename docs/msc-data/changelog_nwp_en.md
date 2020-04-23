@@ -35,11 +35,11 @@
 * [Regional Ice and Ocean Prediction System (RIOPS) 2.0.0](../nwp_riops/changelog_riops_en#wednesday-july-3-2019)
 * [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-july-3-2019)
 * [Regional Ensemble Storm-surge Prediction System (RESPS) 1.2.0](../nwp_resps/changelog_resps_en#wednesday-july-3-2019)
-* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-july-3-2019)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 021](../nwp_raqdps/changelog_radps_en#wednesday-july-3-2019)
 
 ### April 15, 2019
 
-* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#monday-april-15-2019)
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_raqdps-fw_en#monday-april-15-2019)
 
 ### March 4, 2019
 
@@ -63,6 +63,7 @@
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-september-18-2018)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 020](../nwp_raqdps/changelog_radps_en#tuesday-september-18-2018)
 
 ### June 28, 2018
 
@@ -109,6 +110,7 @@
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
 * [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 
@@ -119,6 +121,10 @@
 ### April 14, 2016
 
 * [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
+
+### April 7, 2016
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 015](../nwp_raqdps/changelog_radps_en#thursday-april-7-2016)
 
 ## 2015
 
@@ -139,6 +145,10 @@
 
 * [Global Deterministic Wave Prediction System (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-june-23-2015)
 
+### June 11, 2015
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-june-11-2016)
+
 ### June 3, 2015
 
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.1.0](../nwp_rdpa/changelog_rdpa_en#wednesday-june-3-2015)
@@ -153,6 +163,7 @@
 * [Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence](../nwp_rdps-cgsl/changelog_rdps-cgsl_en#tuesday-november-18-2014)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.0.0](../nwp_rdpa/changelog_rdpa_en#tuesday-november-18-2014)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.0.0](../nwp_hrdps/changelog_hrdps_en#tuesday-november-18-2014)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.3](../nwp_raqdps/changelog_radps_en#tuesday-november-18-2014)
 
 ### May 6, 2014
 
@@ -187,6 +198,10 @@
 
 * [Update to the RDPS binary (in support of the production of the variable PX)](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2013)
 
+### February 26, 2013
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.1](../nwp_raqdps/changelog_radps_en#tuesday-frebruary-26-2013)
+
 ### February 13, 2013
 
 * [Global Deterministic Prediction System (GDPS) 3.0.0](../nwp_gdps/changelog_gdps_en#wednesday-february-13-2013)
@@ -205,12 +220,14 @@
 * [High Resolution Deterministic Prediction System (HRDPS) 3.0.0](../nwp_hrdps/changelog_hrdps_en#wednesday-october-3-2012)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 2.3.0](../nwp_rdpa/changelog_rdpa_en#wednesday-october-3-2012)
 * [Update to Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence](../nwp_rdps-cgsl/changelog_rdps-cgsl_en#wednesday-october-3-2012)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.0](../nwp_raqdps/changelog_radps_en#wednesday-october-3-2012)
 
 ## 2011
 
 ### December 22, 2011
 
 * [Correction snow analysis HRDPS 2.2.1](../nwp_hrdps/changelog_hrdps_en#thursday-december-22-2011)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-december-22-2011)
 
 ### December 1, 2011
 
