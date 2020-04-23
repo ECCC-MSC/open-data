@@ -53,6 +53,10 @@
 
 ## 2018
 
+### November 28, 2018
+
+* [autoTAF Automated Guidance System (aTAGS) 1.1.0](../nwp_rdsps/changelog_rdsps_en#wednesday-november-28-2018)
+
 ### September 18, 2018
 
 * [Global Ensemble Prediction system (GEPS) 5.0.0](../nwp_geps/changelog_geps_en#tuesday-september-18-2018)
@@ -111,6 +115,7 @@
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
 * [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
+* [autoTAF Automated Guidance System (aTAGS)](../nwp_rdsps/changelog_rdsps_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 

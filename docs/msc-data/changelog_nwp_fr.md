@@ -53,6 +53,11 @@
 
 ## 2018
 
+### 28 novembre 2018
+
+* [Système automatisé de prévisions à l'aviation (aTAGS) 1.1.0](../nwp_rewps/changelog_rewps_fr#le-mercredi-28-novembre-2018)
+
+
 ### 18 septembre 2018
 
 * [Système global de prévision d'ensemble (SGPE) 5.0.0](../nwp_geps/changelog_geps_fr#le-mardi-18-septembre-2018)
@@ -111,6 +116,7 @@
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
 * [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
+* [Système automatisé de prévisions à l'aviation (aTAGS)](../nwp_rewps/changelog_rewps_fr#le-mercredi-7-septembre-2016)
 
 ### 21 juin 2016
 
