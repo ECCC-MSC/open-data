@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > FireWork Prediction System
 
-# Data and Products of the FireWork Prediction System
+# Data and Products of the Regional Air Quality Deterministic Prediction System FireWork
 
 Smoke from wildfires in forests and grasslands can be a major source of air pollution for Canadians. The fine particles in the smoke can be a serious risk to health, particularly for children, seniors and those with heart or lung disease. Because smoke may be carried thousands of kilometres downwind, distant locations can be affected almost as severely as areas close to the fire. To help Canadians be better prepared, wildfire smoke forecast maps are available through the Government of Canada’s FireWork system. FireWork is an air quality prediction system that indicates how smoke from wildfires is expected to move across North America over the next 48 hours.
 
@@ -14,7 +14,7 @@ Smoke from wildfires in forests and grasslands can be a major source of air poll
 
 These data are currenlty only through the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
-* [Firework data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
+* [FireWork data (hot spots) available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
