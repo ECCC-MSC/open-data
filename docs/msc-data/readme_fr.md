@@ -31,7 +31,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 * **Systèmes déterministes**
     * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
-    * [Système régionalé de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
+    * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
     * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
     * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
     * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
@@ -42,7 +42,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
-    * [Système régional de prévision de qualité de l'air Firework](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
+    * [Système régional de prévision déterministe de la qualité de l'air FireWork](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
     * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
 * **Systèmes probabilistes**
     * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
