@@ -173,7 +173,7 @@ As a result of all of the above changes installed in this implementation, the GD
 
 ## Monday August 12 2013
 
-Adjustments made so that scribe global matrices now available about 30 minutes earlier.
+### Adjustments made so that scribe global matrices now available about 30 minutes earlier.
 
 ## Wednesday February 13, 2013
 

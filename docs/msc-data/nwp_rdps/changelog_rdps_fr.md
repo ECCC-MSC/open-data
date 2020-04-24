@@ -77,11 +77,13 @@ Une note technique avec plus de détails sur la version 6.0.0 de ce système [es
 Le document des spécifications techniques pour le SRPD 6.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_6.0.0_f.pdf).
 
 
-Le mercredi 7 septembre 2016
-Mise à jour du système régional de prévision déterministe (SRPD) 5.0.0 du Centre météorologique canadien (CMC)
+## Le mercredi 7 septembre 2016
+
+### Mise à jour du système régional de prévision déterministe (SRPD) 5.0.0 du Centre météorologique canadien (CMC)
 
 Le mercredi 7 septembre 2016, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système régional de prévision déterministe (SRPD).
-Résumé des éléments majeurs que comporte cette mise à jour:
+
+Résumé des éléments majeurs que comporte cette mise à jour :
 
 * Changements au modèle de prévision:
     * La version de GEM est mise à jour de v3.3.8.2-isba (niveaux verticales non décallés) à v4.8.2 (niveaux verticales décallés).
@@ -179,7 +181,7 @@ Avec l'installation de tous ces changements, le SRPD opérationnel devient la ve
 
 ## Le mardi 3 juillet 2013
 
-### Mise à jour au binaire RDPS (pour la production de la variable PX)
+### Mise à jour au binaire SRPD (pour la production de la variable PX)
 
 
 ## Mercredi le 13 février, 2013

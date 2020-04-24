@@ -225,6 +225,10 @@
 
 * [Mise en place de la version 2.4 de CaPA (ARPD)](../nwp_rdpa/changelog_rdpa_fr#le-mardi-20-aout-2013)
 
+### 12 août 2013
+
+* [Matrices globales Scribes maintenant disponibles environ 30 minutes plus tôt](../nwp_gdps/changelog_gdps_fr#le-lundi-12-aout-2013)
+
 ### 23 juillet 2013
 
 * [Ajustement à l'analyse de température de la mer (GODAS) pour SPISCan](../nwp_cansips/changelog_cansips_fr#le-mardi-23-juillet-2013)
@@ -236,7 +240,7 @@
 
 ### 3 juillet 2013
 
-* [Mise à jour au binaire RDPS (pour la production de la variable PX)](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2013)
+* [Mise à jour au binaire SRPD (pour la production de la variable PX)](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2013)
 
 ### 17 mai 2013
 

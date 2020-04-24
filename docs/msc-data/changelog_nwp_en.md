@@ -222,6 +222,10 @@
 
 * [Version 2.4 of RDPA (CaPA) installed in operations](../nwp_rdpa/changelog_rdpa_en#tuesday-august-20-2013)
 
+### August 12, 2013
+
+*[Adjustments made so that scribe global matrices now available about 30 minutes earlier](../nwp_gdps/changelog_gdps_en#monday-august-12-2013)
+
 ### July 23, 2013
 
 * [Adjustment to ocean analysis (GODAS) feed for CanSIPS](../nwp_cansips/changelog_cansips_en#tuesday-july-23-2013)
