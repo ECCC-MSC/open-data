@@ -183,7 +183,7 @@
 
 ### April 16, 2015
 
-* [Regional Deterministic Air Quality Analysis (RDAQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_en#thursday-april-16-2015)
+* [Regional Deterministic Air Quality Analysis (RDAQA) 1.1.0](../nwp_rdaqa/changelog_rdaqa_en#thursday-april-16-2015)
 
 ## 2014
 

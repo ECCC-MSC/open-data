@@ -185,7 +185,7 @@
 
 ### 16 avril 2015
 
-* [Analyse régionale déterministe de la qualité de l'air (ARDQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_fr#le-jeudi-16-avril-2015)
+* [Analyse régionale déterministe de la qualité de l'air (ARDQA) 1.1.0](../nwp_rdaqa/changelog_rdaqa_fr#le-jeudi-16-avril-2015)
 
 ## 2014
 
