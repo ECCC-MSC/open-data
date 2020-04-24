@@ -11,7 +11,7 @@ Cet ensemble de données tuilées de produits hydrographiques dynamiques (PHD-DH
 
 Toutes les données environnementales qui sont présentes sur le serveur DD-Alpha du Service Météorologique du Canada(SMC) d'ECCC peuvent être [récupérées automatiquement avec le Protocole avancé de mise en file d'attente des messages (AMQP: Advanced Message Queuing Protocol)](../../docs/msc-datamart/amqp_fr.md) dès qu'elles sont disponibles. Un aperçu et des [exemples d'accès et d'utilisation des données ouvertes du SMC](../../docs/usage/readme_fr.md)  sont également disponibles.
 
-On peut accéder aux données S-111 tuilées de courants de surface du modèle SRPOG avec un navigateur Web interactif à l'adresse suivante:
+On peut accéder aux données tuilées S-111 de courants de surface du modèle SRPOG avec un navigateur Web interactif à l'adresse suivante:
 
 * [http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/{HH}/](http://dd.alpha.weather.gc.ca/model_riops/dynamic_hydrographic_products/hdf5/)
 
@@ -25,26 +25,26 @@ NOTE: TOUTES LES HEURES SONT EN TEMPS UNIVERSEL(TU, UNIVERSAL TIME COORDINATE: U
 
 Les fichiers PHD-DHP S-111 tuilés utilsent la nomenclature suivante:
 
-CMC_riops_111CA002{nnnn}N{wwwww}W_{YYYYYMMDD}T{HH}Z.h5
+{YYYYYMMDD}T{HH}Z_MSC_RIOPS_111CA002{nnnn}N{wwwww}W.h5
 
-* __CMC__ : Identifiant du Centre Météorologique Canadien (CMC).
-* __riops__: Identifiant du modèle SRPOG.
+* __YYYYYMMDD__: Année, Mois, Jour du début d'une instance de prévision synoptique du modèle SRPOG.
+* __T__: Caractère de séparation temporel de la norme ISO8601 .
+* __HH__: Heure zéro du début d'une instance de prévision synoptique du modèle SRPOG, en TU(UTC) [00, 06, 12, 18].
+* __Z__: Caractère identifiant le fuseau horaire TU(UTC).
+* __MSC__ : Identifiant pour le Service météorologique du Canada (Meteorological Service of Canada), le fournisseur de données.
+* __RIOPS__: Identifiant du modèle SRPOG.
 * __111__: Identifiant des données S-111.
 * __CA__: Identifiant représentant le Canada.
 * __002__: Identifiant pour les tuiles PHD-DHP de niveau 2 d'étendue régulière 1°x1° degrés(2°x1° degrés au Nord de la latitude 69° N).
 * __nnnn__: Balise de quatre caractères numériques pour représenter la latitude en degrés décimaux(Hémisphère Nord) du coin Sud-Ouest de la délimitation de chaque tuile.
 * __wwwww__: Balise de cinq caractères numériques pour représenter la longitude en degrés décimaux(Hémisphère Ouest) du coin Sud-Ouest de la délimitation de chaque tuile.
-* __YYYYYMMDD__: Année, Mois, Jour du début d'une instance de prévision synoptique du modèle SRPOG.
-* __T__: Caractère de séparation temporel de la norme ISO8601 .
-* __HH__: Heure zéro du début d'une instance de prévision synoptique du modèle SRPOG, en TU(UTC) [00, 06, 12, 18].
-* __Z__: Caractère identifiant le fuseau horaire TU(UTC).
 * __h5__: Extension officielle de nom de fichier pour le format HDF5.
 
-Exemple d'un fichier tuile réel PHD-DHP S-111 tuilé:
+Exemple d'un fichier PHD-DHP S-111 tuilé:
 
-__CMC_riops_111CA0024200N06900W_20200129T18Z.h5__
+20200129T18Z_MSC_RIOPS_111CA0024200N06900W.h5
 
-Ce fichier provient du Centre Météorologique Canadien (CMC) et contient un sous-ensemble de courants de surface du modèle SRPOG délimité par une tuile PHD-DHP S-111 d'étendue 1°x1° degrés dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle SRPOG provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
+Ce fichier provient du Service météorologique du Canada (MSC) et contient un sous-ensemble de courants de surface du modèle SRPOG délimité par une tuile PHD-DHP S-111 d'étendue 1°x1° degrés dont le coin sud-ouest est situé à la latitude 42,00N  et à la longitude 69,00W. Ce fichier tuilé S-111 a été produit par le post-traitement des résultats du modèle SRPOG provenant de son cycle de prévision synoptique du 29 janvier 2020 à 18TU(UTC).
 
 # Liste des variables utilisées pour les courants de surface S-111
 
