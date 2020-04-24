@@ -256,6 +256,10 @@
 
 * [Addition of METOP-1 data to the GPS-ro family to the CMC data assimilation system](../changelog_multisystems_en#tuesday-may-7-2013)
 
+### April 15, 2013
+
+* [Addition of METOP-1 data to the GPS-ro family to the CMC data assimilation system](../changelog_multisystems_en#monday-april-15-2013)
+
 ### February 28, 2013
 
 * [Regional Deterministic Air Quality Analysis (RDAQA)](../nwp_rdaqa/changelog_rdaqa_en#thursday-february-28-2013)
