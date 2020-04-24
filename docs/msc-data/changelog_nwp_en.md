@@ -248,6 +248,10 @@
 
 * [Experimental Implementation of Version 2.0 of the Regional Ice Prediction System - Analysis Component (RIPS-A)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
 
+### May 13, 2013
+
+* [Implementation of the Operational Hydrodynamic System (OPHS) 1.0.0](../nwp_ophs/changelog_ophs_en#monday-may-13-2013)
+
 ### February 28, 2013
 
 * [Regional Deterministic Air Quality Analysis (RDAQA)](../nwp_rdaqa/changelog_rdaqa_en#thursday-february-28-2013)
