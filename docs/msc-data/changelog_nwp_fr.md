@@ -167,6 +167,10 @@
 
 * [Déclaration du statut opérationnel pour le Système Global de Prévision Océan-Glace (SGPOG) version 1.1.1](../nwp_giops/changelog_giops_fr#le-jeudi-20-aout-2015)
 
+### 9 juillet 2015
+
+* [Implantation de la version 1.5 du Système intégré de prévisions immédiates (SIPI 1.5)](../nwp_nowcasting/changelog_nowcasting_fr#le-jeudi-9-juillet-2015)
+
 ### 23 juin 2015
 
 * [Système global de prévision déterministe des vagues (SGPDV)](../nwp_gdwps/changelog_gdwps_fr#le-mardi-23-juin-2015)

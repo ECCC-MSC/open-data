@@ -165,6 +165,10 @@
 
 * [Operational declaration of the Global Ice Ocean Prediction System (GIOPS) version 1.1.1](../nwp_giops/changelog_giops_en#thursday-august-20-2015)
 
+### July 9, 2015
+
+* [Implementation of version 1.5 of the Integrated NowCasting System (INCS 1.5)](../nwp_nowcasting/changelog_nowcasting_en#thursday-july-9-2015)
+
 ### June 23, 2015
 
 * [Global Deterministic Wave Prediction System (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-june-23-2015)
