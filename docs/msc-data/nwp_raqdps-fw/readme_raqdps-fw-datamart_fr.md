@@ -19,9 +19,9 @@ Les données sont accessibles à l'adresses suivante :
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] 
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 072] 
 
-Un historique de XXX heures est conservé dans ce répertoire.
+Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille  
 
@@ -58,7 +58,7 @@ où :
 * __TYPENIVEAU__ : Type de niveau [SFC pour la surface , EATM pour l’intégrale de la colonne]
 * __grille__ : Grille horizontale [rotated-latlon] 
 * __resolution__ : 0.09x0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemples de noms de fichier :
