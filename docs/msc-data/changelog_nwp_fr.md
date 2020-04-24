@@ -202,8 +202,8 @@
 
 ### 6 mai 2014
 
-* [Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SGPD](../nwp_gdps/changelog_gdps_fr#le-mardi-6-mai-2014)
-* [Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SRPD](../nwp_rdps/changelog_rdps_fr#le-mardi-6-mai-2014)
+* [Incorporation des observations IASI de METOP-B/1 aux données operationnelles du système SGPD](../nwp_gdps/changelog_gdps_fr#le-mardi-6-mai-2014)
+* [Incorporation des observations IASI de METOP-B/1 aux données operationnelles du systèmes SRPD](../nwp_rdps/changelog_rdps_fr#le-mardi-6-mai-2014)
 
 ## 2013
 

@@ -140,8 +140,7 @@ Notes:
 * [Note officielle annonçant ce changement](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141442___00930).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_f.pdf).
 
-
-## Le mercredi 30 avril 2014
+## Le mardi 6 mai 2014
 
 ### Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SGPD
 
