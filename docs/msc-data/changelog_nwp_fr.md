@@ -227,7 +227,7 @@
 
 ### 23 juillet 2013
 
-* [Adjustement à l'analyse de température de la mer (GODAS) pour SPISCan](../nwp_cansips/changelog_cansips_fr#le-mardi-23-juillet-2013)
+* [Ajustement à l'analyse de température de la mer (GODAS) pour SPISCan](../nwp_cansips/changelog_cansips_fr#le-mardi-23-juillet-2013)
 * [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-mardi-23-juillet-2013)
 
 ### 12 juillet 2013
