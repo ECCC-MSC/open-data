@@ -73,7 +73,7 @@
 
 ### June 28, 2018
 
-* [Canadian Arctic Prediction System (CAPS) 1.1.0](../nwp_caps/changelog_caps_en#thursday-june-28-2018)
+* [Bi-directional coupling with an ocean-ice model in the CAPS system](../nwp_caps/changelog_caps_en#thursday-june-28-2018)
 
 ### April 4, 2018
 

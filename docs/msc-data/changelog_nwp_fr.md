@@ -74,7 +74,7 @@
 
 ### 28 juin 2018
 
-* [Système de prévision de l'artique SCPA 1.1.0](../nwp_caps/changelog_caps_fr#le-jeudi-28-juin-2018)
+* [Couplage bi-directionnel avec une modèle océan-glace dans le système SCPA](../nwp_caps/changelog_caps_fr#le-jeudi-28-juin-2018)
 
 ### 4 avril 2018
 
