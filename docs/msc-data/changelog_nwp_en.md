@@ -124,9 +124,9 @@
 
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
-* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
+* [FireWork summer 2016 - Update](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
-* [autoTAF Automated Guidance System (aTAGS)](../nwp_atags/changelog_atags_en#wednesday-september-7-2016)
+* [Automated Aviation Forecasting System (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_en#wednesday-september-7-2016)
 
 ### June 21, 2016
 

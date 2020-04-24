@@ -126,9 +126,9 @@
 
 * [Système régional de prévision déterministe (SRPD) 5.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-7-septembre-2016)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
-* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
+* [FireWork été 2016 - Mise à jour](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
-* [Système automatisé de prévisions à l'aviation (aTAGS)](../nwp_atags/changelog_atags_fr#le-mercredi-7-septembre-2016)
+* [Système automatisé de prévisions à l'aviation (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_fr#le-mercredi-7-septembre-2016)
 
 ### 21 juin 2016
 
