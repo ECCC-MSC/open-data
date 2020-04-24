@@ -95,7 +95,7 @@
 
 ### January 24, 2018
 
-* [Canadian Arctic Prediction System (CAPS)](../nwp_caps/changelog_caps_en#wednesday-january-24-2018)
+* [Canadian Arctic Prediction System (CAPS) 1.0.0](../nwp_caps/changelog_caps_en#wednesday-january-24-2018)
 
 ## 2017
 

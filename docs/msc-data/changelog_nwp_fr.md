@@ -97,7 +97,7 @@
 
 ### 24 janvier 2018
 
-* [Système de prévision de l'artique SCPA](../nwp_caps/changelog_caps_fr#le-mercredi-24-janvier-2018)
+* [Système canadien de prévision de l’Arctique (SCPA) 1.0.0](../nwp_caps/changelog_caps_fr#le-mercredi-24-janvier-2018)
 
 ## 2017
 
