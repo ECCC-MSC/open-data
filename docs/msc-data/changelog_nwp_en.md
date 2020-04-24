@@ -209,6 +209,10 @@
 * [Global Ensemble Prediction system (GEPS) 3.1.0](../nwp_geps/changelog_geps_en#tuesday-december-4-2013)
 * [RegionalEnsemble Prediction system (REPS) 2.0.1](../nwp_reps/changelog_reps_en#tuesday-december-4-2013)
 
+### November 20, 2013
+
+* [Implementation of version 1.4 of the Integrated NowCasting System (INCS 1.4)](../nwp_nowcasting/changelog_nowcasting_en#wednesday-november-20-2015)
+
 ### November 07, 2013
 
 * [Additional satellite data (CSR, ATOVS and polar winds) added to GDPS and various other adjustments](../nwp_gdps/changelog_gdps_en#thursday-november-7-2013)

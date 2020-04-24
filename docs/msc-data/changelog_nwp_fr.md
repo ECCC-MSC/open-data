@@ -212,6 +212,10 @@
 * [Système global de prévision d'ensemble (SGPE) 3.1.0](../nwp_geps/changelog_geps_fr#le-mardi-4-decembre-2013)
 * [Système régional de prévision d'ensemble (SRPE) 2.0.1](../nwp_reps/changelog_reps_fr#le-mardi-4-decembre-2013)
 
+### 20 novembre 2013
+
+* [Implantation de la version 1.4 du Système intégré de prévisions immédiates (SIPI 1.4)](../nwp_nowcasting/changelog_nowcasting_fr#le-mercredi-20-novembre-2013)
+
 ### 7 novembre 2013
 
 * [Ajout données satellitaires (CSR, ATOVS, vents polaires) dans le SGPD](../nwp_gdps/changelog_gdps_fr#le-jeudi-7-novembre-2013)

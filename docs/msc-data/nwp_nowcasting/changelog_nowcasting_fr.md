@@ -22,7 +22,7 @@ Une copie de la note officielle annoncant ce changement [est disponible en cliqu
 
 Une note technique à ce sujet sera disponible sous peu.
 
-## Le 20 novembre 2013
+## Le mercredi 20 novembre 2013
 
 ### Le Centre Météorologique Canadien améliore son système SIPI à version 1.4
 
