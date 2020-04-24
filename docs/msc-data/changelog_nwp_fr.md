@@ -236,7 +236,7 @@
 
 ### 12 juillet 2013
 
-* [Ajustements au cacul du temps violent d'été et au domaine arctique du système à haute résolution de prévision déterministe (SHRPD - version 3.0.1)](../nwp_hrdps/changelog_hrdps_fr#le-vendredi-12-juillet-2013)
+* [Ajustements au calcul du temps violent d'été et au domaine arctique du système à haute résolution de prévision déterministe (SHRPD - version 3.0.1)](../nwp_hrdps/changelog_hrdps_fr#le-vendredi-12-juillet-2013)
 
 ### 3 juillet 2013
 
