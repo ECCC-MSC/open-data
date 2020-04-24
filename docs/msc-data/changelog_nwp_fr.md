@@ -161,7 +161,7 @@
 
 ### 17 septembre 2015
 
-* [Système régional de prévision de glace (SRPG) 2.2.0](../nwp_rips/changelog_rips_fr#le-jeudi-17-septembre-2015)
+* [Implementation expérimentale de la version 2.2 du système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-jeudi-17-septembre-2015)
 
 ### 20 août 2015
 

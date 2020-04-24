@@ -159,7 +159,7 @@
 
 ### September 17, 2015
 
-* [Regional Ice Prediction System (RIPS) 2.2.0](../nwp_rips/changelog_rips_en#thursday-september-17-2015)
+* [Experimental implementation of version 2.2 of the Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#thursday-september-17-2015)
 
 ### August 20, 2015
 
