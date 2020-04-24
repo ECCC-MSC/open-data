@@ -255,6 +255,10 @@
 
 * [Implantation du Système hydrodynamique opérationnel (SHOP) 1.0.0](../nwp_ophs/changelog_ophs_fr#le-lundi-13-mai-2013)
 
+### 7 mai 2013
+
+* [Ajout de données METOP-1 à la famille GPS-ro au système d'assimilation de donées du CMC](../changelog_multisystems_fr#le-mardi-7-mai-2013)
+
 ### 28 février 2013
 
 * [Analyse régionale déterministe de la qualité de l'air (ARDQA) 1.0.0](../nwp_rdaqa/changelog_rdaqa_fr#le-jeudi-28-fevrier-2013)

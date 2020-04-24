@@ -60,3 +60,7 @@ Seulement la composante de l'assimilation des données a été modifiée afin d'
 * En ce qui concerne les observations CSR, l'algorithme d'écrémage des observations prises par satellites géostationnaires sera modifié.
 
 La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2016/03/15/NOCN03_CWAO_151730___00994).
+
+## Le mardi 7 mai 2013
+
+### CMC ajoute les données METOP-1 à la famille GPS-ro dans son système d'assimilation de données

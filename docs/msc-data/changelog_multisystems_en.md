@@ -59,3 +59,7 @@ Only the data assimilation component was modified to include the following obser
 * Regarding the CSR observations, the spatial thinning algorithm for geostationary satellite observations will be modified.
 
 A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2016/03/15/NOCN03_CWAO_151730___00994).
+
+## Tuesday May 7, 2013
+
+### The Canadian Meteorological Centre (CMC) adds METOP-1 data to the GPSRO dataset of its data assimilation system
