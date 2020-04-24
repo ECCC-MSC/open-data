@@ -171,6 +171,9 @@ Along with the addition of satellite data, there were also other adjustments mad
 
 As a result of all of the above changes installed in this implementation, the GDPS operational system becomes version 3.1.0.
 
+## Monday August 12 2013
+
+Adjustments made so that scribe global matrices now available about 30 minutes earlier.
 
 ## Wednesday February 13, 2013
 

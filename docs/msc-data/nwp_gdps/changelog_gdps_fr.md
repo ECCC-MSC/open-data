@@ -167,6 +167,9 @@ En même temps, d'autres ajustements ont aussi été installés. Nous avons fait
 
 Avec l'installation de tous ces changements, le SGPD opérationnel devient donc version 3.1.0.
 
+## Le lundi 12 août 2013
+
+Matrices globales Scribes maintenant disponibles environ 30 minutes plus tôt.
 
 ## Le mercredi, 13 février 2013
 
