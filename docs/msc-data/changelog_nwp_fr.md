@@ -144,6 +144,10 @@
 
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 015](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-avril-2016)
 
+### 16 mars 2016
+
+* [Remplacement du satellite MTSAT-2 par Himawari-8](../changelog_multisystems_fr#le-mercredi-16-mars-2016)
+
 ## 2015
 
 ### 15 décembre 2015

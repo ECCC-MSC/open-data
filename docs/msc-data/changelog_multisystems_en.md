@@ -44,3 +44,18 @@ Our high-performance computing capacity has now attained the petaflop scale (101
 The official note announcing the migration is available at [this link](https://dd.meteo.gc.ca/doc/genots/2017/08/31/NOCN03_CWAO_312003___11256).
 
 A document with technical details on this subject is available at [this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/HPC_Migration2017_tech_e.pdf).
+
+## Wednesday March 16, 2016
+
+### Replacement of MTSAT-2 by Himawari-8 plus addition of AMV from NPP and ISS-RapidScat
+
+On Wednesday March 16th 2016, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will proceed with an operational implementation of version 5.1.0 of the Global Deterministic Prediction System (GDPS), version 4.2.0 of the Global Ensemble Prediction System (GEPS) and version 4.2.0 of the Regional Deterministic Prediction System (RDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+* Replacement of AMV (Atmospheric Motion Vector) and CSR (Clear Sky Radiance) observations from the Japanese satellite MTSAT-2 by those from Himawari-8 in the GDPS and RDPS. Since CSR data are not assimilated in GEPS, only the AMV data were replaced in this system;
+* Addition of AMV data from the Visible Infrared Imaging Radiometer Suite (VIIRS) instrument on board the SUOMI National Polar-orbiting Partnership (NPP) satellite in the three systems GDPS, GEPS and RDPS;
+* Addition of marine winds from the RapidScat Scatterometer mounted on the International Space Station (ISS) in the three systems GDPS, GEPS and RDPS.
+* Regarding the CSR observations, the spatial thinning algorithm for geostationary satellite observations will be modified.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2016/03/15/NOCN03_CWAO_151730___00994).

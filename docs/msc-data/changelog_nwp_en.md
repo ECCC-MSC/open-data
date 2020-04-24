@@ -142,6 +142,10 @@
 
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 015](../nwp_raqdps/changelog_radps_en#thursday-april-7-2016)
 
+### March 16, 2016
+
+* [Replacement of MTSAT-2 by Himawari-8](../changelog_multisystems_en#wednesday-march-16-2016)
+
 ## 2015
 
 ### December 15, 2015

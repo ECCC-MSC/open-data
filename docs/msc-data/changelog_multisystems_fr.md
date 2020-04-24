@@ -45,3 +45,18 @@ Notre capacité de calcul haute performance atteint maintenant le pétaflop (101
 
 La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2017/08/31/NOCN03_CWAO_312003___11256).
 Un document avec des détails techniques à ce sujet est disponible via [ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/HPC_Migration2017_tech_f.pdf).
+
+## Le mercredi 16 mars 2016
+
+### Remplacement du satellite MTSAT-2 par Himawari-8 ainsi que l'ajout des données AMV (de NPP) et ISS-RapidScat
+
+Le mercredi 16 mars 2016, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) procèdera à la mise en œuvre oprérationnelle de la version 5.1.0 de son système global de prévision déterministe (SGPD), de la version 4.2.0 de son système global de prévision d'ensemble (SGPE) et de la version 4.2.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes :
+
+* Remplacement des observations AMV (Atmospheric Motion Vector) et CSR (Clear Sky Radiance) du satellite japonais MTSAT-2 par celles d'Himawari-8 dans les systèmes SGPD et SRPD. Comme les CSR ne sont pas assimilés dans le SGPE, seuls les AMV seront remplacés dans le SGPE;
+* Ajout d'AMV mesuré par l'instrument Visible Infrared Imaging Radiometer Suite (VIIRS) à bord du satellite SUOMI National Polar-orbiting Partnership (NPP) aux trois systèmes SGPD, SGPE et SRPD;
+* Ajout de vents marins provenant du diffusiomètre RapidScat monté sur la station spatiale internationale (ISS), aux trois systèmes SGPD, SGPE et SRPD.
+* En ce qui concerne les observations CSR, l'algorithme d'écrémage des observations prises par satellites géostationnaires sera modifié.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2016/03/15/NOCN03_CWAO_151730___00994).
