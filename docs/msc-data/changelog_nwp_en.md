@@ -86,7 +86,7 @@
 
 ### April 3, 2018
 
-* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#tuesday-april-3-2018)
+* [FireWork Summer 2018 - Beginning of the season](../nwp_raqdps-fw/changelog_radps-fw_en#tuesday-april-3-2018)
 
 ### March 2, 2018
 
