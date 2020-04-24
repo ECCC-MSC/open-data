@@ -225,7 +225,7 @@
 ### July 23, 2013
 
 * [Adjustment to ocean analysis (GODAS) feed for CanSIPS](../nwp_cansips/changelog_cansips_en#tuesday-july-23-2013)
-* [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#tuesday-july-23-2013)
+* [Experimental Implementation of Version 2.0 of the Regional Ice Prediction System - Forecast Component (RIPS-F)](../nwp_rips/changelog_rips_en#tuesday-july-23-2013)
 
 ### July 12, 2013
 
