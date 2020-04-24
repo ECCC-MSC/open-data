@@ -249,7 +249,7 @@
 
 ### 17 mai 2013
 
-* [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-vendredi-17-mai-2013)
+* [Implantation expérimentale de la version 2.0 du Système régional de prévision de glace - Composante analyse (RIPS-A)](../nwp_rips/changelog_rips_fr#le-vendredi-17-mai-2013)
 
 ### 28 février 2013
 

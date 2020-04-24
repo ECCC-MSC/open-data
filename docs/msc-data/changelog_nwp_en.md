@@ -246,7 +246,7 @@
 
 ### May 17, 2013
 
-* [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
+* [Experimental Implementation of Version 2.0 of the Regional Ice Prediction System - Analysis Component (RIPS-A)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
 
 ### February 28, 2013
 
