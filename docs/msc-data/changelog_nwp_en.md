@@ -136,7 +136,7 @@
 
 ### April 14, 2016
 
-* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
+* [FireWork Summer 2016 - Beginning of the season](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
 
 ### April 7, 2016
 
