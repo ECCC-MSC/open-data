@@ -78,6 +78,7 @@
 ### June 7, 2018
 
 * [Replacement of the GOES-13 satellite by GOES-16](../changelog_multisystems_en#thursday-june-7-2018)
+* [Replacement of the Meteosat-10 satellite by Meteosat-11](../changelog_multisystems_en#thursday-june-7-2018)
 
 ### April 4, 2018
 
