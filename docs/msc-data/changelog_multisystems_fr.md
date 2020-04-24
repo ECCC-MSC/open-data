@@ -18,6 +18,22 @@ Au cours des prochaines années, cette mise à niveau importante permettra d'aut
 
 La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2020/01/17/NOCN03_CWAO_171911___36984).
 
+## Le jeudi 7 juin 2018
+
+### Remplacement du satellite GOES-13 par GOES-16 et remplacement du satellite Meteosat-10 par Meteosat-11
+
+Le jeudi 7 juin 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système global de prévision déterministe (SGPD), de la version 4.3.0 de son système global de prévision d'ensemble (SGPE) et de la version 5.1.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes :
+
+* Remplacement des observations AMV (Atmospheric Motion Vector) du satellite GOES-13* par celles de GOES-16 dans les systèmes SGPD SGPE et SRPD.
+* Remplacement des observations CSR (Clear Sky Radiance) du satellite Meteosat-10** par celles du satellite Meteosat-11 dans les systèmes SGPD et SRPD.
+
+'* Les observations AMV de GOES-13 ont cessé de façon définitive d’être distribuées sur le GTS à partir du 8 janvier 2018.
+
+** Le satellite Meteosat-11 a remplacé Meteosat-10 le 20 février 2018, mais les observations CSR de Meteosat-11 n'ont pas été assimilées entre le 20 février 2018 et le 7 juin 2018.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/06/18/NOCN03_CWAO_181607___62703).
 
 ## Le mercredi 6 septembre 2017
 

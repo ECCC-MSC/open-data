@@ -75,6 +75,10 @@
 
 * [Bi-directional coupling with an ocean-ice model in the CAPS system](../nwp_caps/changelog_caps_en#thursday-june-28-2018)
 
+### June 7, 2018
+
+* [Replacement of the GOES-13 satellite by GOES-16](../changelog_multisystems_en#thursday-june-7-2018)
+
 ### April 4, 2018
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-april-4-2018)

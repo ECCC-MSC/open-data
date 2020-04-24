@@ -16,7 +16,22 @@ Over the coming years, this important upgrade will permit further technological 
 
 The official note announcing the migration is available at [this link](https://dd.meteo.gc.ca/doc/genots/2020/01/17/NOCN03_CWAO_171911___36984).
 
+## Thursday June 7, 2018
 
+### Replacement of the GOES-13 satellite by GOES-16 and Meteosat-10 satellite by Meteosat-11
+
+On Thursday June 7, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) implemented an update to version 6.0.0 of the Global Deterministic Prediction System (GDPS), version 4.3.0 of the Global Ensemble Prediction System (GEPS) and version 5.1.0 of the Regional Deterministic Prediction System (RDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+* Replacement of AMV (Atmospheric Motion Vector) observations from the GOES-13* satellite by those from GOES-16 in the three systems GDPS, GEPS and RDPS;
+* Replacement of CSR (Clear Sky Radiance) observations from the Meteosat-10** satellite by those from Meteosat-11 in the GDPS and RDPS systems;
+
+'* The distribution of AMV observations from GOES-13 ended permanently beginning January 8, 2018.
+
+** Meteosat-11 replaced Meteosat-10 on February 20 2018, but the CSR observations from Meteosat-11 were not assimilated between February 20 and June 7 2018.
+
+A copy of the official note announcing the implementation of these changes is available [at this link]().
 
 ## Wednesday September 6, 2017
 

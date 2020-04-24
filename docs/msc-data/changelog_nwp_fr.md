@@ -76,6 +76,10 @@
 
 * [Couplage bi-directionnel avec une modèle océan-glace dans le système SCPA](../nwp_caps/changelog_caps_fr#le-jeudi-28-juin-2018)
 
+### 7 juin 2018
+
+* [Remplacement du satellite GOES-13 par GOES-16](../changelog_multisystems_fr#le-jeudi-7-juin-2018)
+
 ### 4 avril 2018
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-avril-2018)
