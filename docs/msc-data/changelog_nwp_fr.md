@@ -242,6 +242,11 @@
 
 * [Mise à jour au binaire SRPD (pour la production de la variable PX)](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2013)
 
+### 18 juin 2013
+
+* Ajout Td UMOS dans les matrices Scribes.
+* Modernisation de la production des bulletins FPCN80, FPCN48-49, FPCN46-47
+
 ### 17 mai 2013
 
 * [Système régional de prévision de glace (SRPG)](../nwp_rips/changelog_rips_fr#le-vendredi-17-mai-2013)

@@ -239,6 +239,11 @@
 
 * [Update to the RDPS binary (in support of the production of the variable PX)](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2013)
 
+### June 18, 2013
+
+* Inclusion of Td from UMOS into the Scribe matrices.
+* Update to the production of the bulletins FPCN80, FPCN48-49, FPCN46-47.
+
 ### May 17, 2013
 
 * [Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
