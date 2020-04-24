@@ -132,7 +132,7 @@
 
 * [Global Ice and Ocean Prediction System (GIOPS) Version 2.1](../nwp_giops/changelog_giops_en#tuesday-june-21-2016)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) starts to use GIOPS 3D ocean analyses](../nwp_cansips/changelog_cansips_en#tuesday-june-21-2016)
-* [Regional Ice and Ocean Prediction System (RIOPS) 2.0.0](../nwp_riops/changelog_riops_en#tuesday-june-21-2016)
+* [Regional Ice and Ocean Prediction System (RIOPS) 1.1](../nwp_riops/changelog_riops_en#tuesday-june-21-2016)
 
 ### April 14, 2016
 

@@ -134,7 +134,7 @@
 
 * [Système Global de Prévision Océan-Glace (SGPOG) 2.1](../nwp_giops/changelog_giops_fr#le-mardi-21-juin-2016)
 * [Utilisation des analyses SGPOG par le Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)](../nwp_cansips/changelog_cansips_fr#le-mardi-21-juin-2016)
-* [Système Régional de Prévision Océan-Glace (SRPOG) 1.1.0](../nwp_riops/changelog_riops_fr#le-mardi-21-juin-2016)
+* [Système Régional de Prévision Océan-Glace (SRPOG) 1.1](../nwp_riops/changelog_riops_fr#le-mardi-21-juin-2016)
 
 ### 14 avril 2016
 
