@@ -112,6 +112,10 @@
 * [Système global de prévision déterministe des vagues (SGPDV) 1.3.0](../nwp_gdwps/changelog_gdwps_fr#le-mercredi-1er-novembre-2017)
 * [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.3.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-30-janvier-2017)
 
+### 6 septembre 2017
+
+* [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mercredi-6-septembre-2017)
+
 ## 2016
 
 ### 9 novembre 2016

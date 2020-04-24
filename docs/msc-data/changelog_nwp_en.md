@@ -110,6 +110,10 @@
 * [Global Deterministic Wave Prediction System (GDWPS) 1.3.0](../nwp_gdwps/changelog_gdwps_en#wednesday-november-1-2017)
 * [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-november-1-2017)
 
+### September 6, 2017
+
+* [New High Performance Computing Infrastructure](../changelog_multisystems_en#wednesday-september-6-2017)
+
 ## 2016
 
 ### November 9, 2016
