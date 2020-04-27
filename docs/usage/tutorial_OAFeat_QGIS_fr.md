@@ -17,7 +17,7 @@ Ajout de données OGC API - Features dans QGIS :
     * Cliquer sur `OK`
 3. Cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-connexion_fr.png" width=7%> pour obtenir la liste des couches disponibles
 4. Construire une requête (étape optionnelle)
-    * Cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-construire-requete_en.png" width=15%> pour construire une requête et filtrer les données à afficher
+    * Cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-construire-requete_fr.png" width=15%> pour construire une requête et filtrer les données à afficher
     * Construire une requête à l'aide des tableaux `Champs`, `Valeurs` et `Opérateurs`
     * Valider la requête en appuyant sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-test_fr.png" width=5%>
     * Cliquer sur `OK` 
