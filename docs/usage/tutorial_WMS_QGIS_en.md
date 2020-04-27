@@ -8,64 +8,60 @@
 
 Usage examples of [MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services in the [free and open source QGIS desktop software](https://qgis.org):
 
-RENDU ICI
+* [Adding WMS layers in QGIS](#adding-wms-layers-in-qgis)
+* [Possible interactions with WMS layers in QGIS](#possible-interactions-with-wms-layers-in-qgis)
+* [Manipulating the time component of the WMS layers](#manipulating-the-time-component-of-the-wms-layers)
 
-* [Ajout de données WMS dans QGIS](#ajout-de-données-wms-dans-qgis)
-* [Interaction possible avec les données WMS dans QGIS](#interactions-possibles-avec-les-donnéees-wms-dans-qgis)
-* [Manipulation de la composante de temps du WMS](#manipulation-de-la-composante-de-temps-du-wms)
+## Adding WMS layers in QGIS
 
-## Ajout de couches WMS dans QGIS
+The use of WMS (Web Map Service) layers makes it easy to add geospatial data to a QGIS project without having to download and create the layer styles yourself.
 
-L'utilisation de couches WMS (Web Map Service) permet de facilement ajouter des données géospatiales à un projet QGIS sans devoir télécharger et créer soi-même les styles des couches.
+In the following example, the air temperature layer of the MSC Global Deterministic Prediction System (GDPS) is displayed from [MSC GeoMet](../msc-geomet/readme_en.md)
 
-Dans l'exemple suivant, la couche de température de l'air du système de prévision global déterministe du SMC (SGPD) est affichée à partir de [GeoMet du SMC](../msc-geomet/readme_fr.md) :
+1. Open QGIS's browser panel
+    * Right-click in the toolbar
+    * Check <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_panneau-explorateur_en.png" width="20%">
+2. Add a WMS service 
+    * In the browser panel, right-click on `WMS/WMTS` : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-nouvelle-connection_en.png" width="20%">
+    * Choose a name for the service and write it in the `Name` box
+    * Enter the URL of the geospatial web service: [https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities) in the `URL` box
+    * Click on `OK`
+3. Add a WMS layer to the project
+    * Return to the browser panel under `WMS/WMTS` and navigate through the tree structure to reach the desired layer.
 
-https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_fr.jpg
+Animated example of the procedure:
 
-1. Ouvrir l'explorateur de QGIS
-    * Clic-droit dans la barre d'outil
-    * Cochez <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_panneau-explorateur_fr.png" width="20%">
-2. Ajouter un service WMS
-    * Dans l'explorateur, clic-droit sur `WMS/WMTS` : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-nouvelle-connection_fr.png" width="20%">
-    * Choisir un nom pour le service et l'écrire dans la case `Nom`
-    * Entrer l'URL du service web géospatial : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities) dans la case `URL`
-    * Cliquer sur `OK`
-3. Ajouter une couche WMS au projet
-    * Retourner dans l'explorateur sous `WMS/WMTS` et naviguer dans l'arborescence pour atteindre la couche désirée
+![Adding WMS layers in QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-wms_en.gif)
 
-Exemple animé de la procédure :
+## Possible interactions with WMS layers in QGIS
 
-![Ajout d'une couche WMS dans QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-wms_fr.gif)
+Here are the basic manipulations of a WMS layer:
 
-## Interactions possibles avec les données WMS dans QGIS
+* To move around the map: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-pan.png">
+* To zoom in on a location on the map: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-zoom-in.png">
+* To zoom out of a location on the map: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-zoom-out.png">
+* To make a "GetFeatureInfo" and get the raw value of a pixel or a geospatial feature of a WMS layer: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-getfeatureinfo.png">
 
-Voici les manipulations de base d'une couche WMS :
+Animated example of these manipulations:
 
-* Pour se déplacer sur la carte : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-pan.png">
-* Pour zoomer sur un endroit sur la carte : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-zoom-in.png">
-* Pour faire un zoom arrière sur la carte : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-zoom-out.png">
-* Pour faire un "GetFeatureInfo" et obtenir la valeur brute d'un pixel ou d'un élément géospatial d'une couche WMS : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-getfeatureinfo.png">
+![Example of possible interactions with WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-pan-zoom-gfi_en.gif)
 
-Exemple animé de ces manipulations :
+## Manipulating the time component of the WMS layers 
 
-![Exemple d'intéractions avec les données WMS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-pan-zoom-gfi_fr.gif)
+Manipulation example of the temporal dimension of a WMS layer:
 
-## Manipulation de la composante temporelle du WMS
+1. Add a WMS layer with at least one time dimension using the browser panel (refer to the section [adding WMS layers in QGIS](#adding-wms-layers-in-qgis))
+2. After adding a WMS layer, double-click on the small clock next to the layer name in the layer panel: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
+3. Make sure that the temporal properties of the layer are recognized
+    * "Temporal" must be checked
+    * "Specify time range" must be selected
+    * Make sure that "Start date" and "End date" correspond to the time values of the layer in the "GetCapabilities"
+    * Close the layer properties window
+4. Open the time control panel in the toolbar: click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
+    * Update the time values by clicking on: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal-refresh.png" width="5%">
+    * Adjust the time step according to the interval of the time dimension of the WMS layer. This information is available in the "GetCapabilities" of the layer.
+    * Use the animation tools to manipulate or animate the WMS layer
 
-Exemple de manipulation de la dimensions temporelle d'une couche WMS :
+Animated example of WMS layer temporal manipulation:
 
-1. Ajouter une couche WMS avec au moins une dimension temporelle en utilisant le panneau explorateur (se référer à la section [ajout de données WMS dans QGIS](#ajout-de-données-wms-dans-qgis))
-2. Après avoir ajouté une couche WMS, double-cliquer sur la petite horloge à côté du nom de la couche dans le panneau "couche" : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
-3. S'assurer que les propriétés temporelles de la couches sont reconnues
-    * "Temporal" doit être coché
-    * "Specify time range" doit être choisi
-    * Vérifier que "Start date" et que "End date" correspondent bien aux valeurs temporelles de la couches dans le "GetCapabilities"
-    * Fermer la fenêtre des propriétés de la couche
-4. Ouvrir le panneau de control temporel dans la barre d'outil : cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
-    * Mettre les valeurs temporelles à jour en cliquant sur le bouton : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal-refresh.png" width="5%">
-    * Ajuster le pas de temps ("Step") en fonction de l'interval de la dimension temporelle de la couche WMS. Cette information est disponible dans le "GetCapabilities" de la couche
-    * Utiliser les outils d'animation pour manipuler ou animer la couche WMS
-
-Exemple animé de manipulation temporelle de couche WMS :
-
-![Manipulation de la composante de temps du WMS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-temporal_fr.gif)
+![Manipulating the time component of the WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-temporal_en.gif)
