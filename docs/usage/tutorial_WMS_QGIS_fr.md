@@ -8,17 +8,15 @@
 
 Exemples de manipulation des données des services web géospatiaux [GeoMet du SMC](../msc-geomet/readme_fr.md) avec le [logiciel de bureau gratuit et libre QGIS](https://qgis.org) :
 
-* [Ajout de données WMS dans QGIS](#ajout-de-données-wms-dans-qgis)
-* [Interaction possible avec les données WMS dans QGIS](#interactions-possibles-avec-les-donnéees-wms-dans-qgis)
-* [Manipulation de la composante de temps du WMS](#manipulation-de-la-composante-de-temps-du-wms)
+* [Ajout de couches WMS dans QGIS](#ajout-de-couches-wms-dans-qgis)
+* [Interaction possible avec les données WMS dans QGIS](#interactions-possibles-avec-les-données-wms-dans-qgis)
+* [Manipulation de la composante de temporelle du WMS](#manipulation-de-la-composante-temporelle-du-wms)
 
 ## Ajout de couches WMS dans QGIS
 
 L'utilisation de couches WMS (Web Map Service) permet de facilement ajouter des données géospatiales à un projet QGIS sans devoir télécharger et créer soi-même les styles des couches.
 
 Dans l'exemple suivant, la couche de température de l'air du système de prévision global déterministe du SMC (SGPD) est affichée à partir de [GeoMet du SMC](../msc-geomet/readme_fr.md) :
-
-https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_fr.jpg
 
 1. Ouvrir l'explorateur de QGIS
     * Clic-droit dans la barre d'outil
@@ -52,7 +50,7 @@ Exemple animé de ces manipulations :
 
 Exemple de manipulation de la dimensions temporelle d'une couche WMS :
 
-1. Ajouter une couche WMS avec au moins une dimension temporelle en utilisant le panneau explorateur (se référer à la section [ajout de données WMS dans QGIS](#ajout-de-données-wms-dans-qgis))
+1. Ajouter une couche WMS avec au moins une dimension temporelle en utilisant le panneau explorateur (se référer à la section [ajout de données WMS dans QGIS](#ajout-de-couches-wms-dans-qgis))
 2. Après avoir ajouté une couche WMS, double-cliquer sur la petite horloge à côté du nom de la couche dans le panneau "couche" : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
 3. S'assurer que les propriétés temporelles de la couches sont reconnues
     * "Temporal" doit être coché
