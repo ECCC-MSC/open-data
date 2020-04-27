@@ -28,9 +28,13 @@ Le Service météorologique du Canada rend disponible de l'information sur les c
 
 Les données ouvertes du SMC dans des logiciel de bureau soit (A) en se connectant au service Web Map Service (WMS) de [GeoMet du SMC](../msc-geomet/readme_fr.md) ou (B) en téléchargeant les données brutes du [Datamart du SMC](../msc-datamart/readme_fr.md) ou via le service Web Coverage Service (WCS) ou OGC API - Features (WFS 3) de GeoMet du SMC et en chargeant les données brutes dans l'application.
 
-Les données ouvertes du SMC peuvent être visualisées interactivement dans les logiciels qui supportent le standard Web Map Service (WMS) de l'Open Geospatial Consortium (OGC), tel que le logiciel libre [QGIS](https://qgis.org) ainsi que ArcGIS d'Esri. Les instructions pour ajouter les couches WMS de GeoMet du SMC dans [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) et [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) sont disponibles. Les logiciels de bureau peuvent permettre aux usagers de changer les couleurs des couches (styles WMS) ainsi qu'animer les couches pour les pas de temps disponibles. Les détails techniques sur les paramètres WMS disponibles sont documentés dans la [section sur les services web](../msc-geomet/web-services_fr.md).
+Les données ouvertes du SMC peuvent être visualisées interactivement dans les logiciels qui supportent le standard Web Map Service (WMS) de l'Open Geospatial Consortium (OGC), tel que le logiciel libre [QGIS](https://qgis.org) ainsi que ArcGIS d'Esri. Les instructions pour ajouter les couches WMS de GeoMet du SMC dans [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) et [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) sont disponibles. Les logiciels de bureau peuvent permettre aux usagers de changer les couleurs des couches (styles WMS) ainsi qu'animer les couches pour les pas de temps disponibles. Les détails techniques sur les paramètres WMS disponibles sont documentés dans la [section sur les services web](../msc-geomet/web-services_fr.md). Pour télécharger des données brutes, veuillez vous référer à la section [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes).
 
-Pour télécharger des données brutes, veuillez vous référer à la section [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes).
+Tutoriels pour le logiciel de bureau QGIS :
+
+* [Ajouter, effectuer des requêtes et animer des couches WMS](tutorial_WMS_QGIS_fr.md)
+* [Ajouter et effectuer des requêtes aux couches OGC API Features](tutorial_OAFeat_QGIS_fr.md)
+* [Ajouter des données brutes](tutorial_raw-data_QGIS_fr.md)
 
 ### Cartes interactives en-ligne et applications mobiles
 
@@ -39,6 +43,12 @@ Les données ouvertes du SMC peuvent également être aisément intégrées dans
 #### Dans un fureteur web
 
 En utilisant des librairies JavaScript telles que [Leaflet](https://leafletjs.com/) et [Openlayers](https://openlayers.org/), parmi d'autres, les utilisateurs peuvent intégrer les couches disponibles de GeoMet du SMC dans leurs propres cartes interactives en-ligne.
+
+[Tutoriel de création de cartes interactives sur le web avec OpenLayers et Leaflet](tutorial_web-maps_fr.md) :
+
+* Ajouter des couches
+* Afficher des boîtes de dialogue
+* Animer des couches temporelles
 
 Ci-après est un exemple de carte interactive configurée avec OpenLayers et présentant des [couches WMS de la composite radar météo servies par GeoMet du SMC](../msc-data/obs_radar/readme_radar_geomet_fr.md).
 

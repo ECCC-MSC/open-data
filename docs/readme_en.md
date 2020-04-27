@@ -6,7 +6,6 @@
 
 The Meteorological Service of Canada makes weather, climate, water and environmental data available to private sector, academics, and the general public.
 
-
 ## Available open data
 
 The **[available open data from the Meteorological Service of Canada](msc-data/readme_en.md)** provides up-to-date information on past, present and future weather, water, climate and environmental conditions over Canada and the world. The main categories of data available are:
@@ -22,14 +21,31 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
 * **[MSC Datamart](msc-datamart/readme_en.md)**
     * Raw data and products available on a web accessible server
 * **[MSC GeoMet](msc-geomet/readme_en.md)**
-    * Data and products available via an geospatial web services / interoperable APIs
+    * Raw data and products available via an geospatial web services / interoperable APIs
 * **[Cost-recovered services](cost-recovered/readme_en.md)**
     * Archived data retrieval
     * Dedicated data feeds with 24/7 support
 
-## Usage overview
+## Usage and tutorials
 
-**[Overview and examples on how to access and use](usage/readme_en.md)** Meteorological Service of Canada's open data.
+Overview, examples and tutorials to access and use Meteorological Service of Canada's open data.
+
+* **[Usage overview](usage/readme_en.md)**
+
+Tutorials:
+
+* **Use data in the QGIS desktop software**:
+    * [Add, query and animate WMS layers](usage/tutorial_WMS_QGIS_en.md)
+    * [Add and query OGC API Features layers](usage/tutorial_OAFeat_QGIS_en.md)
+    * [Add raw data](usage/tutorial_raw-data_QGIS_en.md)
+* **[Create interactive web maps with OpenLayers and Leaflet](usage/tutorial_web-maps_en.md)**:
+    * Add layers
+    * Display popup dialog boxes
+    * Animate temporal layers
+
+Technical documentation:
+
+* **[API / geospatial web services technical documentation](msc-geomet/web-services_en.md)**
 
 ## Data discovery and metadata
 
@@ -37,7 +53,7 @@ The Meteorological Service of Canada's [metadata is available on the Canadian Op
 
 ## Events
 
-Series of events organized around MSC open data.
+Series of events organized around MSC open data:
 
 * [MSC open data forum - July 8, 2019](events/2019-07_open-data-forum_en.md)
 * [METEOHACK hackathon - July 8-11, 2019](events/2019-07_hackathon-METEOHACK_en.md)
