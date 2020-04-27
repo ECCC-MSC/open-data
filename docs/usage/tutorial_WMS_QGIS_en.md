@@ -16,18 +16,18 @@ Usage examples of [MSC GeoMet](../msc-geomet/readme_en.md) geospatial web servic
 
 The use of WMS (Web Map Service) layers makes it easy to add geospatial data to a QGIS project without having to download and create the layer styles yourself.
 
-In the following example, the air temperature layer of the MSC Global Deterministic Prediction System (GDPS) is displayed from [MSC GeoMet](../msc-geomet/readme_en.md)
+In the following example, the air temperature layer of the MSC Global Deterministic Prediction System (GDPS) is displayed from [MSC GeoMet](../msc-geomet/readme_en.md):
 
-1. Open QGIS's browser panel
+1. Open the QGIS browser panel
     * Right-click in the toolbar
     * Check <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_panneau-explorateur_en.png" width="20%">
 2. Add a WMS service 
-    * In the browser panel, right-click on `WMS/WMTS` : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-nouvelle-connection_en.png" width="20%">
+    * In the browser panel, right-click on `WMS/WMTS`: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-nouvelle-connection_en.png" width="20%">
     * Choose a name for the service and write it in the `Name` box
     * Enter the URL of the geospatial web service: [https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities) in the `URL` box
     * Click on `OK`
 3. Add a WMS layer to the project
-    * Return to the browser panel under `WMS/WMTS` and navigate through the tree structure to reach the desired layer.
+    * Return to the browser panel under `WMS/WMTS` and navigate through the tree structure to reach the desired layer
 
 Animated example of the procedure:
 
@@ -44,7 +44,7 @@ Here are the basic manipulations of a WMS layer:
 
 Animated example of these manipulations:
 
-![Example of possible interactions with WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-pan-zoom-gfi_en.gif)
+![Examples of interactions with WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-pan-zoom-gfi_en.gif)
 
 ## Manipulating the time component of the WMS layers 
 
@@ -59,9 +59,9 @@ Manipulation example of the temporal dimension of a WMS layer:
     * Close the layer properties window
 4. Open the time control panel in the toolbar: click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal.png">
     * Update the time values by clicking on: <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-temporal-refresh.png" width="5%">
-    * Adjust the time step according to the interval of the time dimension of the WMS layer. This information is available in the "GetCapabilities" of the layer.
+    * Adjust the time step according to the interval of the time dimension of the WMS layer. This information is available in the "GetCapabilities" of the layer
     * Use the animation tools to manipulate or animate the WMS layer
 
 Animated example of WMS layer temporal manipulation:
 
-![Manipulating the time component of the WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-temporal_en.gif)
+![Manipulating the time component of WMS layers](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-temporal_en.gif)
