@@ -6,7 +6,7 @@
 
 # Tutoriel : utilisation de données OGC API - Features dans QGIS
 
-Ajout de données OGC API - Features dans QGIS :
+Ajout de données OGC API - Features dans le [logiciel de bureau gratuit et libre QGIS](https://qgis.org) :
 
 1. Dans la barre de menu, choisir : <b>Couche - Ajouter une couche - Ajouter une couche WFS</b> <br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_ajouter-wfs_fr.png" width=60%> 
 2. Ajouter une nouvelle connexion
