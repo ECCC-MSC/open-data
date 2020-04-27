@@ -21,14 +21,31 @@ L'accès aux données ouvertes disponibles sur le Datamart du SMC et sur GeoMet 
 * **[Datamart du SMC](msc-datamart/readme_fr.md)**
     * Données brutes et produits disponibles sur un serveur accessible sur le Web
 * **[GeoMet du SMC](msc-geomet/readme_fr.md)**
-    * Données et produits disponibles via des services web géospatiaux / APIs interopérables
+    * Données brutes et produits disponibles via des services web géospatiaux / APIs interopérables
 * **[Services à recouvrement de coûts](cost-recovered/readme_fr.md)**
     * Récupération de données archivées
     * Fils de données dédiés avec support 24/7
 
-## Aperçu de l'utilisation
+## Utilisation et tutoriels
 
-**[Aperçu et exemples documentant la façon d'accéder aux données ouvertes](usage/readme_fr.md)** du Service météorologique du Canada et leur utilisation.
+Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service météorologique du Canada et leur utilisation.
+
+* **[Aperçu de l'utilisation](usage/readme_fr.md)**
+
+Tutoriels :
+
+* **Utiliser les données dans le logiciel de bureau QGIS** :
+    * [Ajouter, effectuer des requêtes et animer des couches WMS](usage/tutorial_WMS_QGIS_fr.md)
+    * [Ajouter et effectuer des requêtes aux couches OGC API Features](usage/tutorial_OAFeat_QGIS_fr.md)
+    * [Ajouter des données brutes](usage/tutorial_raw-data_QGIS_fr.md)
+* **[Créer des cartes interactives sur le web avec OpenLayers et Leaflet](usage/tutorial_web-maps_fr.md)** :
+    * Ajouter des couches
+    * Afficher des boîtes de dialogue
+    * Animer des couches temporelles
+
+Documentation technique :
+
+* **[Documentation technique des services web géospatiaux / API](msc-geomet/web-services_fr.md)**
 
 ## Découverte des données et métadonnées
 
@@ -36,14 +53,14 @@ Les métadonnées du Service météorologique du Canada sont disponibles sur le 
 
 ## Évènements
 
-Série d'évènements organisés autour des données ouvertes du SMC.
+Série d'évènements organisés autour des données ouvertes du SMC :
 
 * [Forum de données ouvertes du SMC - 8 Juillet 2019](events/2019-07_open-data-forum_fr.md)
 * [Hackathon METEOHACK - 8 au 11 juillet 2019](events/2019-07_hackathon-METEOHACK_fr.md) 
 
 ## Licence
 
-La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md)
+La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md).
 
 ## Contactez-nous
 
