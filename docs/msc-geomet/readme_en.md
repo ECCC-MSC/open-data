@@ -10,13 +10,21 @@
 The MSC GeoMet platform provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of real-time and archived weather, climate and water datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on-the-fly raw data clipping and reprojection, on-the-fly format conversion and custom visualization.
 
 
-## Usage and technical documentation
+## Usage, tutorials and technical documentation
 
-Documentation on using these services and examples are available at the following locations:
+Overview, examples and tutorials to access and use MSC GeoMet data:
 
-* [Usage overview page](../usage/readme_en.md)
-* [Technical documentation on geospatial web services](web-services_en.md)
-
+* [Usage overview](../usage/readme_en.md)
+* Tutorials:
+    * Use data in the QGIS desktop software:
+        * [Add, query and animate WMS layers](../usage/tutorial_WMS_QGIS_en.md)
+        * [Add and query OGC API Features layers](../usage/tutorial_OAFeat_QGIS_en.md)
+    * [Create interactive web maps with OpenLayers and Leaflet](../usage/tutorial_web-maps_en.md):
+        * Add layers
+        * Display popup dialog boxes
+        * Animate temporal layers
+* Technical documentation:
+    * [API / geospatial web services technical documentation](web-services_en.md)
 
 ## Access
 

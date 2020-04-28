@@ -6,7 +6,7 @@
 
 # Tutorial: adding raw geospatial file in QGIS
 
-[QGIS](https://qgis.org) is a Geographic Information System (GIS) software that allows the visualization and manipulation of vector (Shapefile, GeoJSON, GeoPackage, etc) or raster (GRIB2, GeoTIFF, NetCDF, etc) geospatial data. To add a raw geospatial file in QGIS:
+[QGIS](https://qgis.org) is a Geographic Information System (GIS) software that allows the visualization and manipulation of vector (Shapefile, GeoJSON, GeoPackage, etc) and raster (GRIB2, GeoTIFF, NetCDF, etc) geospatial data. To add a raw geospatial file in QGIS:
 
 1. In the menu bar, choose: <b>Layer - Add Layer - Add vector / raster layer</b><br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-layer_en.png" width=60%>
 2. Navigate to the geospatial file to be added
@@ -18,7 +18,7 @@ Animated example of adding a geospatial file in QGIS:
 
 It is possible to directly add geospatial files from the [MSC Datamart](../msc-datamart/readme_en.md) in QGIS by dragging and dropping a file into the QGIS map interface:
 
-1. Go to the [MSC Datamart website](https://dd.weather.gc.ca) and navigate to the file to be added
+1. Go to the [MSC Datamart server](https://dd.weather.gc.ca) and navigate to the file to be added
 2. Drag and drop the file into the QGIS map interface
 
 The following are examples of geospatial file formats available on the MSC Datamart that can be directly added to QGIS:

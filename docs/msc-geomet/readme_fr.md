@@ -12,11 +12,20 @@ La plateforme GeoMet du SMC rend publiquement accessible les données du Service
 
 ## Utilisation et documentation technique
 
-La documentation au sujet de l'utilisation de ces services et des exemples sont disponibles aux endroits suivants :
+Aperçu, exemples et tutoriels pour accéder et utiliser les données ouvertes de GeoMet du SMC :
 
-* La [page de survol de l'utilisation des données](../usage/readme_fr.md)
-* La [documentation technique sur les services web géospatiaux](web-services_fr.md)
-
+* [Aperçu de l'utilisation](../usage/readme_fr.md)
+* Tutoriels :
+    * Utiliser les données dans le logiciel de bureau QGIS :
+        * [Ajouter, effectuer des requêtes et animer des couches WMS](../usage/tutorial_WMS_QGIS_fr.md)
+        * [Ajouter et effectuer des requêtes aux couches OGC API Features](../usage/tutorial_OAFeat_QGIS_fr.md)
+        * [Ajouter des données brutes](../usage/tutorial_raw-data_QGIS_fr.md)
+    * [Créer des cartes interactives sur le web avec OpenLayers et Leaflet](../usage/tutorial_web-maps_fr.md) :
+        * Ajouter des couches
+        * Afficher des boîtes de dialogue
+        * Animer des couches temporelles
+* Documentation technique :
+    * [Documentation technique des services web géospatiaux / API](web-services_fr.md)
 
 ## Accès
 

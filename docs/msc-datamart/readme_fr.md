@@ -43,6 +43,15 @@ L'accès aux données via le protocole AMQP est évidemment fortement conseillé
 
 Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur alternatif de développer la capacité de retourner rapidement sur le serveur [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca), en cas de problèmes.
 
+## Utilisation et tutoriels
+
+Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Datamart du SMC :
+
+* [Aperçu de l'utilisation](../usage/readme_fr.md)
+* Tutoriels :
+    * Utiliser les données dans le logiciel de bureau QGIS :
+        * [Ajouter des données brutes](../usage/tutorial_raw-data_QGIS_fr.md)
+        
 ## Formats de données
 
 Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-ci :
@@ -53,10 +62,6 @@ Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-
 * [shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 * CSV
 * XML
-
-## Utilisation
-
-Des informations sur l'utilisation de ces services et des exemples sont disponibles sur la [page d'aperçu de l'utilisation](../usage/readme_fr.md).
 
 ## Gestion du changement 
 
