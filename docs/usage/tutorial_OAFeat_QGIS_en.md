@@ -6,7 +6,7 @@
 
 # Tutorial: using OGC API - Features data in QGIS
 
-Adding OGC API - Features data in the [free and open source QGIS desktop software](https://qgis.org):
+Adding OGC API - Features data from [MSC GeoMet](../msc-geomet/readme_en.md) to the [free and open source QGIS desktop software](https://qgis.org):
 
 1. In the menu bar, choose: <b>Layer - Add Layer - Add WFS Layer: </b> <br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_ajouter-wfs_en.png" width=60%> 
 2. Add a new connection
