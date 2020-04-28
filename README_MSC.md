@@ -183,7 +183,7 @@ The `eccc-msc` codepen.io account is managed by Étienne.
  
 ## 5.2 - Deployment to GitHub Pages with mkdocs
 
-The deployment of the MSC Open Data Documentation to GitHub requires the user to have write permissions to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). At the moment, the colleagues having write permissions are Alexandre Leroux, Sandrine Edouard and Tom Kralidis.
+The deployment of the MSC Open Data Documentation to GitHub requires the user to have write permissions to the [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data). At the moment, the colleagues having write permissions are Alexandre, Sandrine and Tom.
 
 In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
 
@@ -211,6 +211,7 @@ To install Conda, please choose a location in your work environment that has a s
 
 The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
 
+0. Ensure you have `mkdocs` version 1.1 or newer installed (instructions to be completed!)
 1. In a terminal window, `cd` to the root of your `public-doc` repository fork
     1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
 2. Pull the current version of the documentation you want to publish: `git pull upstream master`

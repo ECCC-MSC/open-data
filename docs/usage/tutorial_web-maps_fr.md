@@ -4,9 +4,9 @@
 
 [TdM](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Créer des cartes web interactives
 
-# Tutoriel: créer des cartes interactives sur le web avec OpenLayers et Leaflet
+# Tutoriel : créer des cartes interactives sur le web avec OpenLayers et Leaflet
 
-Les services web géospatiaux de [GeoMet du SMC](../msc-geomet/readme_fr.md) peuvent facilement être intégrés dans des bibliothèques de cartographie web libres et gratuites telles que [OpenLayers](https://openlayers.org/) et [Leaflet](https://leafletjs.com/) pour créer des cartes interactives pour les pages web et les applications mobiles. Ce tutoriel vous montrera comment travailler avec le WMS (Web Map Service) en utilisant ces deux bibliothèques. À la fin, vous serez en mesure d'afficher n'importe quelle couche WMS de GeoMet du SMC sur une carte interactive, d'interroger la couche pour obtenir des données et d'animer des couches selon une dimension temporelle.
+Les services web géospatiaux de [GeoMet du SMC](../msc-geomet/readme_fr.md) peuvent facilement être intégrés dans des bibliothèques de cartographie web libres et gratuites telles que [OpenLayers](https://openlayers.org/) et [Leaflet](https://leafletjs.com/) pour créer des cartes interactives pour pages web et applications mobiles. Ce tutoriel vous montrera comment travailler avec le standard WMS (Web Map Service) en utilisant ces deux bibliothèques. À la fin, vous serez en mesure d'afficher n'importe quelle couche WMS de GeoMet du SMC sur une carte interactive, d'interroger la couche pour obtenir des données et d'animer des couches selon une dimension temporelle.
 
 - [Afficher une couche WMS](#afficher-une-couche-wms)
     * [Exemple avec OpenLayers](#exemple-avec-openlayers)
@@ -16,7 +16,7 @@ Les services web géospatiaux de [GeoMet du SMC](../msc-geomet/readme_fr.md) peu
 
 ## Afficher une couche WMS
 
-Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du système global de prévision déterministe (SGPD) (`GPDS.ETA_TT`) sur un fond de carte de [OpenStreetMap](https://www.openstreetmap.org/). Un exemple est donné pour les deux librairies : OpenLayers et Leaflet.
+Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (`GPDS.ETA_TT`) sur un fond de carte de [OpenStreetMap](https://www.openstreetmap.org/). Un exemple est disponible pour les librairies OpenLayers et Leaflet.
 
 ### Exemple avec OpenLayers
 
@@ -48,7 +48,7 @@ Les étapes suivantes vous montreront comment créer une carte web simple avec O
 </html>
 ```
 
-Afin d'utiliser OpenLayers, nous devons importer les bibliothèques JS et CSS requises. Un élément `<div>` est ajouté dans le corps de notre document HTML et ass igné d'un attribut `id` avec une valeur de `map`. La valeur "id" sera référencée dans le code Javascript afin de spécifier où rendre la carte interactive dans le document HTML.
+Afin d'utiliser OpenLayers, nous devons importer les bibliothèques JS et CSS requises. Un élément `<div>` est ajouté dans le corps de notre document HTML et assigné d'un attribut `id` avec une valeur de `map`. La valeur "id" sera référencée dans le code Javascript afin de spécifier où placer la carte interactive dans le document HTML.
 
 Un peu de CSS est également ajouté dans la balise `<head>` afin de définir la largeur et la hauteur du conteneur de la carte.
 
@@ -82,11 +82,11 @@ let map = new ol.Map({
 
 ```
 
-Pour garder les choses en ordre, nous créons un tableau de "couches à ajouter" qui contient une liste de couches que nous voulons ajouter à notre carte. Chaque élément est une couche qui est liée à une source. Dans ce cas, deux couches sont ajoutées à la carte : (1) la couche OpenStreetMap pour notre carte de base et (2) la couche GeoMet-Weather WMS pour le système global de prévision déterministe (SGPD) de la température de l'air à la surface. La source de la couche de température de l'air à la surface du SGPD a également quelques propriétés supplémentaires :
+Pour garder les choses en ordre, nous créons un tableau de "couches à ajouter" qui contient une liste de couches que nous voulons ajouter à notre carte. Chaque élément est une couche qui est liée à une source. Dans ce cas, deux couches sont ajoutées à la carte : (1) la couche OpenStreetMap pour notre carte de base et (2) la couche WMS de GeoMet-Météo pour le Système global de prévision déterministe (SGPD) de la température de l'air à la surface. La source de la couche de température de l'air à la surface du SGPD a également quelques propriétés supplémentaires :
 
- * `url`: URL du service WMS
- * `params`: paramàtres de la requête WMS, le paramètre `LAYERS` est requis
- * `transition`: durée de la transition d'opacité pour le rendu. Nous désactivons cette option ici car nous définissons une opacité et nous voulons qu'elle soit appliquée avant l'affichage de chaque tuile
+ * `url` : URL du service WMS
+ * `params` : paramètres de la requête WMS, le paramètre `LAYERS` est requis
+ * `transition` : durée de la transition d'opacité pour le rendu. Nous désactivons cette option ici car nous définissons une opacité et nous voulons qu'elle soit appliquée avant l'affichage de chaque tuile
 
 Ensuite, nous créons une nouvelle variable appelée "map" et utilisons le constructeur "o.Map" pour définir la carte qui sera rendue dans notre document HTML. Dans l'objet passé au constructeur, définissez une "target" pour notre carte (par exemple la valeur "id" du conteneur HTML, dans ce cas "map"). Le tableau `layers_to_add` est ensuite passé à la propriété `layers` et le constructeur `ol.View` est utilisé pour définir la vue initiale de notre carte. Dans notre cas, nous définissons le niveau de zoom initial et nous centrons la vue sur une coordonnée lon/lat spécifique.
 
@@ -156,10 +156,9 @@ let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
 }).addTo(map);
 ```
 
-Le code ci-dessus initialise un [objet de carte] (https://leafletjs.com/reference-1.6.0.html#map) en utilisant l'API de Leaflet et définit la vue initiale de la carte avec la méthode [<code>setView</code>] (https://leafletjs.com/reference-1.6.0.html#map-setview).
+Le code ci-dessus initialise un [objet de carte](https://leafletjs.com/reference-1.6.0.html#map) en utilisant l'API de Leaflet et définit la vue initiale de la carte avec la méthode [<code>setView</code>](https://leafletjs.com/reference-1.6.0.html#map-setview).
 
 Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable `wmsLayer`, nous définissons l'opacité de la couche `GDPS.ETA_TT` et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.
-
 
 Voir l'exemple ci-dessous :
 
@@ -170,7 +169,7 @@ Voir l'exemple ci-dessous :
 
 ## Créer des popups interactifs avec OpenLayers
 
-Maintenant que la couche de température de l'air à la surface du SGPD est correctement affichée sur une carte interactive, essayons d'ajouter quelques fonctionnalités supplémentaires à la carte. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué et la température de l'air à la surface qui lui correspond. Cette implémentation s'inspire fortement des exemples [popup](https://open layers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
+Maintenant que la couche de température de l'air à la surface du SGPD est correctement affichée sur une carte interactive, essayons d'ajouter quelques fonctionnalités supplémentaires à la carte. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué et la température de l'air à la surface qui lui correspond. Cette implémentation s'inspire fortement des exemples [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
 
 ### HTML
 
@@ -249,7 +248,7 @@ Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre 
 </html>
 ```
 
-Pour créer le popup, un nouvel élément "div" est ajouté. Dans ce nouvel élément, une balise d'ancrage est ajoutée pour permettre la fermeture de lla fenêtre contextuelle lorsqu'elle est affichée sur la carte. Un "div" vide contiendra les résultats du GetFeatureInfo et les coordonnées du point cliqué sur la carte. Le CSS supplémentaire est utilisé pour définir l'aspect et la convivialité de la fenêtre contextuelle ainsi que pour afficher/masquer la fenêtre contextuelle lorsque l'utilisateur clique sur la carte.
+Pour créer le popup, un nouvel élément "div" est ajouté. Dans ce nouvel élément, une balise d'ancrage est ajoutée pour permettre la fermeture de la fenêtre contextuelle lorsqu'elle est affichée sur la carte. Un "div" vide contiendra les résultats du GetFeatureInfo et les coordonnées du point cliqué sur la carte. Le CSS supplémentaire est utilisé pour définir l'aspect et la convivialité de la fenêtre contextuelle ainsi que pour afficher/masquer la fenêtre contextuelle lorsque l'utilisateur clique sur la carte.
 
 ### Javascript
 
@@ -339,11 +338,11 @@ Un événement "onclick" est alors ajouté au `closer` (c'est-à-dire la balise 
 
 Finalement, notre carte profitera de la méthode [<code>ol.Map.on()</code>](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html#on) pour écouter les événements `singleclick` sur la carte. La fonction de rappel qui est déclenchée par l'événement fait ce qui suit :
 
-* Récupère les coordonnées du point de la carte cliqué, puis reprojette les coordonnées en EPSG:4326 (WSG 84). La méthode `ol.coordinate.toStringXY` transforme les coordonnées en une chaîne de charactères délimités par des virgules
+* Récupère les coordonnées du point de la carte cliqué, puis reprojette les coordonnées en EPSG:4326 (WSG 84). La méthode `ol.coordinate.toStringXY` transforme les coordonnées en une chaîne de caractères délimités par des virgules
 * Récupère la résolution de la vue de la carte
 * Récupère la source de la couche `GDPS.ETA_TT`
-* Utilise la méthode `ol.source.TileWMS.getFeatureInfoUrl()` pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (`INFO_FORMAT` doit au moins être fourni)
-* Si l'URL GetFeatureInfo est correctement construit, soumet la demande GetFeatureInfo en utilisant l'API Javascript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo
+* Utilise la méthode `ol.source.TileWMS.getFeatureInfoUrl()` pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (au moins `INFO_FORMAT` doit être fourni)
+* Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API Javascript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo
 * Fixe la position de la superposition aux coordonnées de l'événement de clic initial
 
 Voir l'exemple ci-dessous :
@@ -355,9 +354,9 @@ Voir l'exemple ci-dessous :
 
 ## Animation de couches WMS temporelles avec OpenLayers
 
-Une quantité importante de données servies par GeoMet du SMC a une ou plusieurs dimensions temporelles. La section suivante explique comment OpenLayers peut nous aider à visualiser et à animer les différentes tranches de temps de ces couches, dans ce cas-ci, les données des radars météorologiques, servies comme un WMS via GeoMet-Weather.Cet exemple est inspiré du [WMS Time example] (https://openlayers.org/en/latest/examples/wms-time.html) fourni par OpenLayers.
+Une quantité importante de données servies par GeoMet du SMC a une ou plusieurs dimensions temporelles. La section suivante explique comment OpenLayers peut nous aider à visualiser et à animer les différents pas de temps de ces couches, dans ce cas-ci, les données des radars météorologiques, servies comme un WMS via GeoMet-Météo. Cet exemple est inspiré du [WMS Time example](https://openlayers.org/en/latest/examples/wms-time.html) fourni par OpenLayers.
 
-Deux couches GeoMet-Weather sont utilisées pour créer cette animation : `RADAR_1KM_RRAI` et `RADAR_COVERAGE_RRAI.INV`. Ces couches sont disponibles sur une fenêtre mobile de 3 heures, toutes les 10 minutes.
+Deux couches GeoMet-Météo sont utilisées pour créer cette animation : `RADAR_1KM_RRAI` et `RADAR_COVERAGE_RRAI.INV`. Ces couches sont disponibles sur une fenêtre mobile de 3 heures, toutes les 10 minutes.
 
 ### HTML
 
@@ -523,13 +522,13 @@ Tout comme les autres exemples d'OpenLayers ci-dessus, un ensemble de couches es
 
 La fonction `SetTime()` est utilisée pour récupérer la date et l'heure actuelles affichées et définit le pas de temps à afficher. Si aucune heure n'est définie, la carte est paramétrée pour afficher l'heure de début récupérée. Si la date affichée est supérieure ou égale à l'heure de fin, l'heure est réinitialisée à l'heure de début, ce qui permet de boucler l'animation. Sinon, l'heure actuelle est récupérée et 10 minutes y sont ajoutées, afin de récupérer le pas de temps disponible suivant. Le `RADAR_1KM_RRAI` et le `RADAR_COVERAGE_RRAI` obtiennent alors leur paramètre `TIME` mis à jour et OpenLayers crée automatiquement de nouvelles requêtes pour ces images mises à jour.
 
-La fonction `getRadarStartEndTime()` est appelée une fois pour définir les variables `startTime` et `EndTime` et appelle la fonction `setTime(), définissant l'état initial de la carte.
+La fonction `getRadarStartEndTime()` est appelée une fois pour définir les variables `startTime` et `EndTime` et appelle la fonction `setTime()`, définissant l'état initial de la carte.
 
 Enfin, les fonctions `stop()` et `play()` sont définies. La fonction `play()` appellera la fonction `setTime()` à un intervalle donné, en augmentant le pas de temps du radar météo à chaque intervalle. La fonction `stop()` efface l'intervalle. Ces fonctions sont ensuite ajoutées comme fonction de rappel pour les auditeurs d'événements de clic assignés à leurs boutons respectifs dans le HTML.
 
 Voir l'exemple ci-dessous :
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Exemple de couche WMS avec composante temporelle et OpenLayers" src="https://codepen.io/eccc-msc/embed/NWGdVRp?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> par le SMC d'ECCC
-  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> par le SMC d'ECCC 
+(<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
