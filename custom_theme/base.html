@@ -13,11 +13,11 @@
       {%- endblock %}
 
       {%- block htmltitle %}
-        <title>{% if page and page.title and not page.is_homepage %}{{ page.title|striptags }} - {% endif %}{{ config.site_name|striptags }}</title>
+        <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
       {%- endblock %}
 
       {%- block styles %}
-        <link href="{{ 'css/bootstrap-custom.min.css'|url }}" rel="stylesheet">
+        <link href="{{ 'css/bootstrap.min.css'|url }}" rel="stylesheet">
         <link href="{{ 'css/font-awesome.min.css'|url }}" rel="stylesheet">
         <link href="{{ 'css/base.css'|url }}" rel="stylesheet">
         {%- if config.theme.highlightjs %}
@@ -29,14 +29,9 @@
       {%- endblock %}
 
       {%- block libs %}
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="{{ 'js/jquery-1.10.2.min.js'|url }}" defer></script>
-        <script src="{{ 'js/bootstrap-3.0.3.min.js'|url }}" defer></script>
+        <script src="{{ 'js/bootstrap.min.js'|url }}" defer></script>
         {%- if config.theme.highlightjs %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         {%- for lang in config.theme.hljs_languages %}
@@ -64,29 +59,22 @@
     </head>
 
     <body{% if page and page.is_homepage %} class="homepage"{% endif %}>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-{% if config.theme.nav_style == "light" %}light{% else %}dark{% endif %} bg-{{ config.theme.nav_style }}">
             <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    {%- if nav|length>1 or (page and (page.next_page or page.previous_page)) or config.repo_url %}
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    {%- endif %}
+                {%- block site_name %}
+                <a class="navbar-brand" href="{{ nav.homepage.url|url }}">{{ config.site_name }}</a>
+                {%- endblock %}
 
-                  {%- block site_name %}
-                    <a class="navbar-brand" href="{{ nav.homepage.url|url }}">{{ config.site_name }}</a>
-                  {%- endblock %}
-                </div>
+                {%- if nav|length>1 or (page and (page.next_page or page.previous_page)) or config.repo_url %}
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {%- endif %}
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                   {%- block site_nav %}
                     {%- if nav|length>1 %}
                         <!-- Main navigation -->
@@ -94,7 +82,7 @@
                         {%- for nav_item in nav %}
                         {%- if nav_item.children %}
                             <li class="dropdown{% if nav_item.active %} active{% endif %}">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ nav_item.title }} <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ nav_item.title }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                 {%- for nav_item in nav_item.children %}
                                     {% include "nav-sub.html" %}
@@ -102,8 +90,8 @@
                                 </ul>
                             </li>
                         {%- else %}
-                            <li {% if nav_item.active %}class="active"{% endif %}>
-                                <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                            <li class="navitem{% if nav_item.active %} active{% endif %}">
+                                <a href="{{ nav_item.url|url }}" class="nav-link">{{ nav_item.title }}</a>
                             </li>
                         {%- endif %}
                         {%- endfor %}
@@ -111,11 +99,11 @@
                     {%- endif %}
                   {%- endblock %}
 
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav ml-auto">
                       {%- block search_button %}
                         {%- if 'search' in config['plugins'] %}
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
                             </a>
                         </li>
@@ -124,13 +112,13 @@
 
                       {%- block next_prev %}
                         {%- if page and (page.next_page or page.previous_page) %}
-                            <li {% if not page.previous_page %}class="disabled"{% endif %}>
-                                <a rel="next" {% if page.previous_page %}href="{{ page.previous_page.url|url }}"{% endif %}>
+                            <li class="nav-item">
+                                <a rel="prev" {% if page.previous_page %}href="{{ page.previous_page.url|url }}" class="nav-link"{% else %}class="nav-link disabled"{% endif %}>
                                     <i class="fa fa-arrow-left"></i>
                                 </a>
                             </li>
-                            <li {% if not page.next_page %}class="disabled"{% endif %}>
-                                <a rel="prev" {% if page.next_page %}href="{{ page.next_page.url|url }}"{% endif %}>
+                            <li class="nav-item">
+                                <a rel="next" {% if page.next_page %}href="{{ page.next_page.url|url }}" class="nav-link"{% else %}class="nav-link disabled"{% endif %}>
                                     <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -139,8 +127,8 @@
 
                       {%- block repo %}
                         {%- if page and page.edit_url %}
-                            <li>
-                                <a href="{{ page.edit_url }}">
+                            <li class="nav-item">
+                                <a href="{{ page.edit_url }}" class="nav-link">
                                     {%- if config.repo_name == 'GitHub' -%}
                                         <i class="fa fa-github"></i> Edit on {{ config.repo_name }}
                                     {%- elif config.repo_name == 'Bitbucket' -%}
@@ -153,8 +141,8 @@
                                 </a>
                             </li>
                         {%- elif config.repo_url %}
-                            <li>
-                                <a href="{{ config.repo_url }}">
+                            <li class="nav-item">
+                                <a href="{{ config.repo_url }}" class="nav-link">
                                     {%- if config.repo_name == 'GitHub' -%}
                                         <i class="fa fa-github"></i> {{ config.repo_name }}
                                     {%- elif config.repo_name == 'Bitbucket' -%}
@@ -174,10 +162,12 @@
         </div>
 
         <div class="container">
-            {%- block content %}
-                <div class="col-md-3">{% include "toc.html" %}</div>
-                <div class="col-md-9" role="main">{% include "content.html" %}</div>
-            {%- endblock %}
+            <div class="row">
+                {%- block content %}
+                    <div class="col-md-3">{% include "toc.html" %}</div>
+                    <div class="col-md-9" role="main">{% include "content.html" %}</div>
+                {%- endblock %}
+            </div>
         </div>
 
         <footer class="col-md-12">

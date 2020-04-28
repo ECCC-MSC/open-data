@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Climate Indices](readme_spei_en.md) > Climate Indices on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Climate Indices](readme_climateindices_en.md) > Climate Indices on MSC Datamart
 
 # Statistically downscaled climate indices in NetCDF format
 

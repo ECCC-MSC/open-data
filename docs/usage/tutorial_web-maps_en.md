@@ -169,7 +169,7 @@ See the live example below:
 
 ## Building interactive popups with OpenLayers
 
-Now that the GDPS air surface temperature layer is properly displayed on an interactive map, let's try adding some additional functionality to the map. Web Map Services (WMS) allow a user to make a [GetFeatureInfo request](./web-services_en.md/#wms-getfeatureinfo) to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding air surface temperature. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
+Now that the GDPS air surface temperature layer is properly displayed on an interactive map, let's try adding some additional functionality to the map. Web Map Services (WMS) allow a user to make a GetFeatureInfo request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding air surface temperature. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
 
 ### HTML
 
