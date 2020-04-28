@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Couches WMS dans QGIS 
+[TdM](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Couches WMS dans QGIS 
 
 # Tutoriel : afficher, interagir et animer des couches WMS dans QGIS
 
