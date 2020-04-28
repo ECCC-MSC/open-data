@@ -1,12 +1,12 @@
-[En français](tutorial_web-maps_fr.md)
+[In English](tutorial_web-maps_en.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > [Usage overview](readme_en.md) > Create interactive web maps
+[TdM](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Créer des cartes web interactives
 
 # Tutorial: building interactive web maps with OpenLayers and Leaflet
 
-[MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with a Web Map Service (WMS) using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
+[MSC GeoMet](../msc-geomet/readme_fr.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with a Web Map Service (WMS) using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
 
 - [Displaying a WMS layer](#displaying-a-wms-layer)
     * [OpenLayer example](#openlayers-example)
@@ -169,7 +169,7 @@ See the live example below:
 
 ## Building interactive popups with OpenLayers
 
-Now that the GDPS air surface temperature layer is properly displayed on an interactive map, let's try adding some additional functionality to the map. Web Map Services (WMS) allow a user to make a [GetFeatureInfo request](./web-services_en.md/#wms-getfeatureinfo) to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding air surface temperature. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
+Now that the GDPS air surface temperature layer is properly displayed on an interactive map, let's try adding some additional functionality to the map. Web Map Services (WMS) allow a user to make a [GetFeatureInfo request](../msc-geomet/web-services_fr.md/#wms-getfeatureinfo) to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding air surface temperature. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
 
 ### HTML
 
