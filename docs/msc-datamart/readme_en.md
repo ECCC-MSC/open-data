@@ -38,6 +38,15 @@ Access to data via the AMQP protocol is of course strongly recommended.
 
 Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca) server in case of problems.
 
+## Usage and tutorials
+
+Overview, examples and tutorials to access and use MSC Datamart data:
+
+* [Usage overview](../usage/readme_en.md)
+* Tutorials:
+    * Use data in the QGIS desktop software:
+        * [Add raw data](../usage/tutorial_raw-data_QGIS_en.md)
+        
 ## Data formats
 
 Data on the MSC Datamart is available in open formats. It includes:
@@ -48,10 +57,6 @@ Data on the MSC Datamart is available in open formats. It includes:
 * [shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 * CSV
 * XML
-
-## Usage
-
-Information on using these services and examples are available on the [usage overview page](../usage/readme_en.md).
 
 ## Change management 
 

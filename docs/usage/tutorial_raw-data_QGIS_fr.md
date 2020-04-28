@@ -6,7 +6,7 @@
 
 # Tutoriel : ajout de fichier brut géospatial dans QGIS
 
-[QGIS](https://qgis.org) est un logiciel de système d'information géographique (SIG) et permet la visualisation et la manipulation des données géospatiales de type vectorielles (Shapefile, GeoJSON, GeoPackage, etc) ou matricielles (GRIB2, GeoTIFF, NetCDF, etc). Pour ajouter un fichier brut géospatial dans QGIS :
+[QGIS](https://qgis.org) est un logiciel de système d'information géographique (SIG) et permet la visualisation et la manipulation des données géospatiales vectorielles (Shapefile, GeoJSON, GeoPackage, etc) et matricielles (GRIB2, GeoTIFF, NetCDF, etc). Pour ajouter un fichier brut géospatial dans QGIS :
 
 1. Dans la barre de menu, choisir : <b>Couche - Ajouter une couche - Ajouter une couche vecteur / raster</b><br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-layer_fr.png" width=60%>
 2. Naviguer jusqu'au fichier géospatial à ajouter
@@ -18,16 +18,16 @@ Exemple animé d'ajout de fichier géospatial dans QGIS :
 
 Il est possible d'ajouter directement des fichiers géospatiaux du [Datamart du SMC](../msc-datamart/readme_fr.md) dans QGIS en glissant et déposant un fichier dans l'interface cartographique de QGIS :
 
-1. Aller sur le [site web du Datamart du SMC](https://dd.meteo.gc.ca) et naviguer jusqu'au fichier à ajouter
+1. Aller sur le [serveur du Datamart du SMC](https://dd.meteo.gc.ca) et naviguer jusqu'au fichier à ajouter
 2. Glisser et déposer le fichier dans l'interface cartographique de QGIS
 
 Voici des exemples de formats de fichiers géospatiaux disponibles sur le Datamart du SMC qui peuvent être directement ajoutés dans QGIS :
 
-* Donnée matricielle :
+* Données matricielles :
     * GRIB2 (.grib2)
     * NetCDF (.nc)
     * GeoTIFF (.tif)
-* Donnée vectorielle :
+* Données vectorielles :
     * GeoJSON (.geojson)
     * Shapefile (.shp) : notez que pour ajouter un fichier Shapefile dans QGIS, il faut également avoir téléchargé les autres extensions : .prj, .dbf et .shx et que ces fichiers se retrouvent dans le même répertoire
 
