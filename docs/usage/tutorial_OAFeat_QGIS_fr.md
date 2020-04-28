@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Couches OGC API - Features dans QGIS
+[TdM](../readme_fr.md) > [Aperçu de l'utilisation](readme_fr.md) > Couches OGC API - Features dans QGIS
 
 # Tutoriel : utilisation de données OGC API - Features dans QGIS
 
