@@ -6,7 +6,7 @@
 
 # Tutorial: building interactive web maps with OpenLayers and Leaflet
 
-[MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with a Web Map Service (WMS) using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
+[MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with the Web Map Service (WMS) standard using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
 
 - [Displaying a WMS layer](#displaying-a-wms-layer)
     * [OpenLayer example](#openlayers-example)
@@ -531,6 +531,6 @@ Finally, `stop()` and `play()` functions are defined. The `play()` function will
 See the live example below:
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet WMS Time Openlayers Example" src="https://codepen.io/eccc-msc/embed/NWGdVRp?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> by ECCC-MSC
-  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+See the Pen <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> by ECCC-MSC
+(<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
