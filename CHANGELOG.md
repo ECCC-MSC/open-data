@@ -8,17 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.2.7
+## 2.3.0
 
-* date: TBD
+* date: 2020-04-29 - To be confirmed
 * announcements:
-    * Not announced to users
+    * Announced to GeoMet-Info and dd_info
+    * Internal message sent
 * new content:
-    * TBD
+    * 4 tutorials with animated demonstrations and interactive code
+    * Adjustments to the root, usage, MSC GeoMet and MSC Datamart pages to link to the new tutorials 
 * improvements:
-    * TBD
+    * Several new changelog updates
 * bug fixes:
-    * TBD
+    * Typos
     
 ## 2.2.6
 

@@ -8,7 +8,7 @@
 
 [QGIS](https://qgis.org) is a Geographic Information System (GIS) software that allows the visualization and manipulation of vector (Shapefile, GeoJSON, GeoPackage, etc) or raster (GRIB2, GeoTIFF, NetCDF, etc) geospatial data. To add a raw geospatial file in QGIS:
 
-1. In the menu bar, choose: <b>Layer - Add Layer - Add vecteur | raster Layer</b> <br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-layer_en.png" width=60%>
+1. In the menu bar, choose: <b>Layer - Add Layer - Add vector / raster layer</b><br> <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-layer_en.png" width=60%>
 2. Navigate to the geospatial file to be added
 3. Click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-add_en.png" width=5%> to display the layer
 
@@ -23,14 +23,16 @@ It is possible to directly add geospatial files from the [MSC Datamart](../msc-d
 
 The following are examples of geospatial file formats available on the MSC Datamart that can be directly added to QGIS:
 
-* Raster data
+* Raster data:
     * GRIB2 (.grib2)
     * NetCDF (.nc)
     * GeoTIFF (.tif)
-* Vector data
+* Vector data:
     * GeoJSON (.geojson)
     * Shapefile (.shp): note that to add a Shapefile in QGIS, you also need to have downloaded the other extensions: .prj, .dbf and .shx and make sure that these files are in the same directory
 
-Animated example of adding the MSC Datamart geospatial file in QGIS via Firefox:
+The same approach also works for adding raw data retrieved from the WCS and OGC API - Features web services available on [MSC GeoMet](../msc-geomet/readme_en.md).
+
+Animated example of adding the MSC Datamart geospatial file to QGIS via Firefox:
 
 ![Adding a geospatial file from Datamart](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-raw-file-from-dd_en.gif)
