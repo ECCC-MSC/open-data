@@ -170,7 +170,7 @@ Voir l'exemple ci-dessous :
 
 ## Créer des popups interactifs avec OpenLayers
 
-Maintenant que la couche de température de l'air à la surface du SGPD est correctement affichée sur une carte interactive, essayons d'ajouter quelques fonctionnalités supplémentaires à la carte. Le WMS permet à un utilisateur de faire une [demande GetFeatureInfo](../msc-geomet/web-services_fr.md/#wms-getfeatureinfo) pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué et la température de l'air à la surface qui lui correspond. Cette implémentation s'inspire fortement des exemples [popup](https://open layers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
+Maintenant que la couche de température de l'air à la surface du SGPD est correctement affichée sur une carte interactive, essayons d'ajouter quelques fonctionnalités supplémentaires à la carte. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué et la température de l'air à la surface qui lui correspond. Cette implémentation s'inspire fortement des exemples [popup](https://open layers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
 
 ### HTML
 

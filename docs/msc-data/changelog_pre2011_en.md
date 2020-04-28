@@ -1,4 +1,4 @@
-[En français](changelog_nwp_pre2011_fr.md)
+[En français](changelog_pre2011_fr.md)
 
 ![ECCC logo](../img_eccc-logo.png)
 
