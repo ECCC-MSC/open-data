@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RAQDPS](readme_raqdps_en.md) > RAQDPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RAQDPS Changelog
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)
 
