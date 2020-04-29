@@ -12,7 +12,7 @@
 
 See details [at this link](../changelog_multisystems_en.md)
 
-## Thursday July 09, 2015
+## Thursday July 9, 2015
 
 ### The Canadian Meteorological Centre Upgrades the INCS (Nowcast system) to version 1.5
 
@@ -21,7 +21,6 @@ Starting on July 09, 2015 with the 1400 UTC run the Canadian Meteorological Cent
 A copy of the official note describing these changes [is available by clicking here](http://dd.weatheroffice.ec.gc.ca/doc/genots/2015/07/08/NOCN03_CWAO_081637___00169).
 
 A technical note with detailed information on this system will be provided shortly.
-
 
 ## Wednesday November 20 2013
 

@@ -30,7 +30,7 @@ Le 23 juillet 2013, le CMC a implanté, en mode expérimental, pour la première
 
 Pour plus d'informations sur ce système, une note technique (Anglais seulement, pour le moment) est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_ripsf_20140506_e.pdf).
 
-## Le lundi 17 mai, 2013
+## Le vendredi 17 mai, 2013
 
 ### Le Centre Météorologique Canadien (CMC) a mis à jour la composante analyse du Système régional de prévision de glace (SRPG-A) en passant à la version 2.0
 
