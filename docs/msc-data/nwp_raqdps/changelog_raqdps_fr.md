@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPDQA](readme_raqdps_fr.md) > Changements au SRPDQA
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPDQA
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
