@@ -93,7 +93,7 @@
 
 * [High Resolution Deterministic Precipitation Analysis System (HRDPA (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_en#friday-march-2-2018)
 
-### March 2, 2018
+### March 1, 2018
 
 * [Replacement of the AMV observations from Meteosat-10 by Meteosat-11](../changelog_multisystems_en#thursday-march-1-2018)
 
