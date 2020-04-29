@@ -74,8 +74,8 @@ A copy of the official note announcing the implementation of these changes is av
 
 ## Tuesday May 7, 2013
 
-### The Canadian Meteorological Centre (CMC) adds METOP-1 data to the GPSRO dataset of its data assimilation system
+The Canadian Meteorological Centre (CMC) adds METOP-1 data to the GPSRO dataset of its data assimilation system.
 
 ## Monday April 15, 2013
 
-### Satwinds from METEOSAT10 and ASCAT winds from METOP-1 are added to the Canadian Meteorological Centre's (CMC) data assimilation system
+Satwinds from METEOSAT10 and ASCAT winds from METOP-1 are added to the Canadian Meteorological Centre's (CMC) data assimilation system.
