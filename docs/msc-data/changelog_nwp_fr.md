@@ -97,7 +97,7 @@
 
 ### 1 mars 2018
 
-*[Remplacement des observations AMV du satellite Meteosat-10 par Meteosat-11](../changelog_multisystems_fr#le-jeudi-1er-mars-2018)
+*[Remplacement des observations AMV du satellite Meteosat-10 par Meteosat-11](../changelog_multisystems_fr#le-jeudi-1-mars-2018)
 
 ### 24 janvier 2018
 

@@ -35,7 +35,7 @@ Seulement la composante de l'assimilation des données a été modifiée afin d'
 
 La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/06/18/NOCN03_CWAO_181607___62703).
 
-## Le jeudi 1er mars 2018
+## Le jeudi 1 mars 2018
 
 ### Remplacement des observations AMV du satellite Meteosat-10 par Meteosat-11
 
