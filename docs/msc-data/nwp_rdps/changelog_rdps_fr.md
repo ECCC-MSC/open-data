@@ -151,12 +151,12 @@ Une note technique à ce sujet [est disponible via ce lien](https://collaboratio
 
 ## Le mardi 6 mai 2014
 
-### Incorporation des observations IASI de METOP-B/1 aux données operationnelles des systèmes SRPD
+### Incorporation des observations IASI de METOP-B/1 aux données operationnelles du système SRPD
 
 Le 6 mai 2014, à partir de la passe de prévision de 1200 UTC du système régional de prévisions déterministes(SRPD), le Centre meteorologique canadien (CMC) d'environnement Canada a ajouté les observations de radiances de l'instrument IASI du satellite METOP-B/1 au système d'assimilation de données opérationnel. Cet instrument (IASI) est le dernier du satellite METOP-B/1 à faire l'objet d'une mise en œuvre opérationnelle.
 
 Motivation pour l'incorporation des observations IASI de METOP-B/1 aux données opérationnelles du SRPD :
-Bien que les données du satellite METOP-A/2 continueront d'etre assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opéerationnel de l'agence EUMETSAT. les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. de plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.
+Bien que les données du satellite METOP-A/2 continueront d'être assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opérationnel de l'agence EUMETSAT. Les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. De plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.
 
 Suite à ces changements le numéro du système SRPD passe de 3.2.0 à 3.2.1.
 Vous pouvez accéder à la page du SRPD [en cliquant ici](readme_rdps_fr.md).
@@ -178,11 +178,9 @@ En ce qui concerne le SRPD, depuis l'implantation du [SRPD 3.1.0](../nwp_rdps/ch
 
 Avec l'installation de tous ces changements, le SRPD opérationnel devient la version 3.2.0.
 
-
 ## Le mardi 3 juillet 2013
 
 ### Mise à jour au binaire SRPD (pour la production de la variable PX)
-
 
 ## Mercredi le 13 février, 2013
 
@@ -195,7 +193,6 @@ Ce changement ce fait en conjonction avec la [mise en œuvre opérationnelle de 
 Grâce à ces changements, les prévisions du SRPD sont améliorées.
 
 Veuillez consulter la documentation [à ce lien pour plus d'information à ce sujet](../nwp_gdps/changelog_gdps_fr.md).
-
 
 ## Mercredi, le 19 octobre, 2012
 
@@ -218,7 +215,6 @@ D'autres systèmes de prévision qui sont alimentés par le SRPD-300 ont tous é
 Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_021702___00109).
 
 Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdps300_20121003_f.pdf).
-
 
 ## Le mercredi 16 novembre 2011
 
@@ -248,4 +244,3 @@ B. Autres changements à l'assimilation :
 Une copie de la note officielle avec de l'information additionnelle sur l'évaluation des impacts de ces changements est disponible [en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041).
 
 Avec ces changements le système régional de prévision déterministe (SRPD) est maintenant la version 2.0.0
-
