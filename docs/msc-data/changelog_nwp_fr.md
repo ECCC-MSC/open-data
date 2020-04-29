@@ -261,11 +261,11 @@
 
 ### 7 mai 2013
 
-* [Ajout de données METOP-1 à la famille GPS-ro au système d'assimilation de donées du CMC](../changelog_multisystems_fr#le-mardi-7-mai-2013)
+* [Ajout de données METOP-1 à la famille GPS-ro au système d'assimilation de données du CMC](../changelog_multisystems_fr#le-mardi-7-mai-2013)
 
 ### 15 avril 2013
 
-* [Ajout de données METOP-1 à la famille GPS-ro au système d'assimilation de donées du CMC](../changelog_multisystems_fr#le-lundi-15-avril-2013)
+* [Ajout de données METOP-1 à la famille GPS-ro au système d'assimilation de données du CMC](../changelog_multisystems_fr#le-lundi-15-avril-2013)
 
 ### 28 février 2013
 
