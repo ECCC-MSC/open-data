@@ -75,8 +75,8 @@ La note officielle annonçant ce changement est disponible [en cliquant ici](htt
 
 ## Le mardi 7 mai 2013
 
-### CMC ajoute les données METOP-1 à la famille GPS-ro dans son système d'assimilation de données
+CMC ajoute les données METOP-1 à la famille GPS-ro dans son système d'assimilation de données.
 
 ## Le lundi 15 avril 2013
 
-### CMC ajoute les satwinds de METEOSAT10 et ASCAT provenant du satellite METOP-1 à son système d'assimilation de données
+CMC ajoute les satwinds de METEOSAT10 et ASCAT provenant du satellite METOP-1 à son système d'assimilation de données.
