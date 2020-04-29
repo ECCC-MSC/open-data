@@ -6,7 +6,7 @@
 
 # Tutorial: building interactive web maps with OpenLayers and Leaflet
 
-[MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with the Web Map Service (WMS) standard using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
+[MSC GeoMet](../msc-geomet/readme_en.md) geospatial web services are easily integrated into free and open source web mapping libraries such as [OpenLayers](https://openlayers.org/) and [Leaflet](https://leafletjs.com/) to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with a Web Map Service (WMS) using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.
 
 - [Displaying a WMS layer](#displaying-a-wms-layer)
     * [OpenLayer example](#openlayers-example)
@@ -169,7 +169,7 @@ See the live example below:
 
 ## Building interactive popups with OpenLayers
 
-Now that the GDPS air surface temperature layer is properly displayed on an interactive map, let's try adding some additional functionality to the map. Web Map Services (WMS) allow a user to make a GetFeatureInfo request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding air surface temperature. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
+Let's now query a WMS layer to access the underlying date via a popup. Web Map Services (WMS) allow a user to make a [GetFeatureInfo](../msc-geomet/web-services_en.md#wms-getfeatureinfo) request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
 
 ### HTML
 
@@ -177,26 +177,29 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
 
 ```html
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <style>
     #map {
       width: 100%;
-      height: 400px;
+      height: 800px;
     }
-    /* Additional CSS for popup */
+
     .ol-popup {
       position: absolute;
       background-color: white;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
       padding: 15px;
       border-radius: 10px;
       border: 1px solid #cccccc;
       bottom: 12px;
       left: -50px;
-      min-width: 300px;
+      min-width: 400px;
     }
-    .ol-popup:after, .ol-popup:before {
+
+    .ol-popup:after,
+    .ol-popup:before {
       top: 100%;
       border: solid transparent;
       content: " ";
@@ -205,31 +208,35 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
       position: absolute;
       pointer-events: none;
     }
+
     .ol-popup:after {
       border-top-color: white;
       border-width: 10px;
       left: 48px;
       margin-left: -10px;
     }
+
     .ol-popup:before {
       border-top-color: #cccccc;
       border-width: 11px;
       left: 48px;
       margin-left: -11px;
     }
+
     .ol-popup-closer {
       text-decoration: none;
       position: absolute;
       top: 2px;
       right: 8px;
     }
+
     .ol-popup-closer:after {
       content: "✖";
     }
   </style>
 
-  <title>MSC GeoMet OpenLayers Example</title>
-  <meta name="description" content="MSC GeoMet OpenLayers Example">
+  <title>GeoMet OpenLayers Example</title>
+  <meta name="description" content="GeoMet OpenLayers Example">
   <meta name="author" content="CCMEP">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.0/css/ol.css" type="text/css">
@@ -239,12 +246,12 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
 <body>
   <div id="map">
   </div>
-  <!-- New div containing the HTML code for the popup -->
   <div id="popup" class="ol-popup">
     <a href="#" id="popup-closer" class="ol-popup-closer"></a>
     <div id="popup-content"></div>
   </div>
 </body>
+
 </html>
 ```
 
@@ -256,15 +263,14 @@ To create the popup, a new `div` element is added. Within this new element, an a
 /**
  * Elements that make up the popup.
  */
-var container = document.getElementById('popup');
-var content = document.getElementById('popup-content');
-var closer = document.getElementById('popup-closer');
-
+let container = document.getElementById("popup");
+let content = document.getElementById("popup-content");
+let closer = document.getElementById("popup-closer");
 
 /**
  * Create an overlay to anchor the popup to the map.
  */
-var overlay = new ol.Overlay({
+let overlay = new ol.Overlay({
   element: container,
   autoPan: true,
   autoPanAnimation: {
@@ -272,34 +278,33 @@ var overlay = new ol.Overlay({
   }
 });
 
-
 /**
  * Add a click handler to hide the popup.
  * @return {boolean} Don't follow the href.
  */
-closer.onclick = function() {
+closer.onclick = function () {
   overlay.setPosition(undefined);
   closer.blur();
   return false;
 };
 
 let layers = [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
-    }),
-    new ol.layer.Tile({
-      opacity: 0.4,
-      source: new ol.source.TileWMS({
-        // TODO: Change this to dev environment for JSON response
-        url: 'https://geo.wxod-dev.cmc.ec.gc.ca/geomet',
-        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
-        transition: 0
-      })
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+    opacity: 0.4,
+    source: new ol.source.TileWMS({
+      // TODO: Change this to dev environment for JSON response
+      url: "https://geo.weather.gc.ca/geomet-climate",
+      params: { LAYERS: "CMIP5.TT.RCP45.YEAR.2081-2100_PCTL50", TILED: true },
+      transition: 0
     })
-  ]
+  })
+];
 
 let map = new ol.Map({
-  target: 'map',
+  target: "map",
   layers: layers,
   overlays: [overlay],
   view: new ol.View({
@@ -308,24 +313,36 @@ let map = new ol.Map({
   })
 });
 
-
-map.on('singleclick', function(evt) {
+map.on("singleclick", function (evt) {
   var coordinate = evt.coordinate;
-  var xy_coordinates = ol.coordinate.toStringXY(ol.proj.toLonLat(coordinate), 4);
+  var xy_coordinates = ol.coordinate.toStringXY(
+    ol.proj.toLonLat(coordinate),
+    4
+  );
   var viewResolution = map.getView().getResolution();
   var wms_source = map.getLayers().item(1).getSource();
   var url = wms_source.getFeatureInfoUrl(
-    evt.coordinate, viewResolution, 'EPSG:3857',
-    {'INFO_FORMAT': 'application/json'});
+    evt.coordinate,
+    viewResolution,
+    "EPSG:3857",
+    { INFO_FORMAT: "application/json" }
+  );
   if (url) {
     fetch(url)
-      .then(function (response) { return response.json(); })
+      .then(function (response) {
+        return response.json();
+      })
       .then(function (json) {
-      content.innerHTML = `<b>Coordinates (Lon/Lat): </b> <code>${xy_coordinates}</code><br><b> Temperature: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
-      overlay.setPosition(coordinate);
+        content.innerHTML = `
+Avg change in air temperature for 2081-2100 (50th percentile)<br>
+Coordinates (Lon/Lat): </> <code>${xy_coordinates}</code><br>Value: </b><code>${Math.round(
+          json.features[0].properties.value
+        )} °C</code>`;
+        overlay.setPosition(coordinate);
       });
-    }
+  }
 });
+
 ```
 
 There are four main additions to the Javascript code.
@@ -531,6 +548,6 @@ Finally, `stop()` and `play()` functions are defined. The `play()` function will
 See the live example below:
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet WMS Time Openlayers Example" src="https://codepen.io/eccc-msc/embed/NWGdVRp?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-See the Pen <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> by ECCC-MSC
-(<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> by ECCC-MSC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

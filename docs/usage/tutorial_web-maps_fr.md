@@ -169,7 +169,7 @@ Voir l'exemple ci-dessous :
 
 ## Créer des popups interactifs avec OpenLayers
 
-Maintenant que la couche de température de l'air à la surface du SGPD est correctement affichée sur une carte interactive, essayons d'ajouter quelques fonctionnalités supplémentaires à la carte. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué et la température de l'air à la surface qui lui correspond. Cette implémentation s'inspire fortement des exemples [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
+Interrogeons maintenant une couche WMS pour accéder à la date sous-jacente via un popup. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué ainsi que la valeur de la donnée sous-jacente. Cette implémentation s'inspire fortement des exemples [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) et [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) fournis par OpenLayers.
 
 ### HTML
 
@@ -194,7 +194,7 @@ Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre 
       border: 1px solid #cccccc;
       bottom: 12px;
       left: -50px;
-      min-width: 300px;
+      min-width: 400px;
     }
     .ol-popup:after, .ol-popup:before {
       top: 100%;
@@ -256,15 +256,15 @@ Pour créer le popup, un nouvel élément "div" est ajouté. Dans ce nouvel él�
 /**
  * Éléments de la fenêtre contextuelle
  */
-var container = document.getElementById('popup');
-var content = document.getElementById('popup-content');
-var closer = document.getElementById('popup-closer');
+let container = document.getElementById("popup");
+let content = document.getElementById("popup-content");
+let closer = document.getElementById("popup-closer");
 
 
 /**
  * Créer un élément "Overlay" pour ancrer la fenêtre contextuelle sur la carte
  */
-var overlay = new ol.Overlay({
+let overlay = new ol.Overlay({
   element: container,
   autoPan: true,
   autoPanAnimation: {
@@ -277,29 +277,29 @@ var overlay = new ol.Overlay({
  * Ajoutez un gestionnaire de clic pour cacher la fenêtre contextuelle
  * @return {boolean} ne pas suivre le href
  */
-closer.onclick = function() {
+closer.onclick = function () {
   overlay.setPosition(undefined);
   closer.blur();
   return false;
 };
 
 let layers = [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
-    }),
-    new ol.layer.Tile({
-      opacity: 0.4,
-      source: new ol.source.TileWMS({
-        // TODO: Change this to dev environment for JSON response
-        url: 'https://geo.wxod-dev.cmc.ec.gc.ca/geomet',
-        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
-        transition: 0
-      })
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+    opacity: 0.4,
+    source: new ol.source.TileWMS({
+      // TODO: Change this to dev environment for JSON response
+      url: "https://geo.weather.gc.ca/geomet-climate",
+      params: { LAYERS: "CMIP5.TT.RCP45.YEAR.2081-2100_PCTL50", TILED: true },
+      transition: 0
     })
-  ]
+  })
+];
 
 let map = new ol.Map({
-  target: 'map',
+  target: "map",
   layers: layers,
   overlays: [overlay],
   view: new ol.View({
@@ -309,22 +309,33 @@ let map = new ol.Map({
 });
 
 
-map.on('singleclick', function(evt) {
+map.on("singleclick", function (evt) {
   var coordinate = evt.coordinate;
-  var xy_coordinates = ol.coordinate.toStringXY(ol.proj.toLonLat(coordinate), 4);
+  var xy_coordinates = ol.coordinate.toStringXY(
+    ol.proj.toLonLat(coordinate),
+    4
+  );
   var viewResolution = map.getView().getResolution();
   var wms_source = map.getLayers().item(1).getSource();
   var url = wms_source.getFeatureInfoUrl(
-    evt.coordinate, viewResolution, 'EPSG:3857',
-    {'INFO_FORMAT': 'application/json'});
+    evt.coordinate,
+    viewResolution,
+    "EPSG:3857",
+    { INFO_FORMAT: "application/json" }
+  );
   if (url) {
     fetch(url)
-      .then(function (response) { return response.json(); })
+      .then(function (response) {
+        return response.json();
+      })
       .then(function (json) {
-      content.innerHTML = `<b>Coordonnée (Lon/Lat): </b> <code>${xy_coordinates}</code><br><b> Température: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
-      overlay.setPosition(coordinate);
+        content.innerHTML = `
+Avg change in air temperature for 2081-2100 (50th percentile)<br>
+Coordinates (Lon/Lat): </> <code>${xy_coordinates}</code><br>
+Value: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
+        overlay.setPosition(coordinate);
       });
-    }
+  }
 });
 ```
 
