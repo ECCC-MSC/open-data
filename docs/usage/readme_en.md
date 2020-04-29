@@ -31,11 +31,7 @@ MSC open data can be visualized in desktop software by either (A) connecting to 
 
 MSC open data can be interactively visualized in software that supports the Open Geospatial Consortium (OGC) Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org) and in Esri ArcGIS software. Instructions for adding MSC GeoMet WMS services to [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) and [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) are available. Desktop software may allow users to change the layer colors (WMS styles) and animate the layers amongst the available timesteps. Details on the available WMS parameters are available in the [web services section](../msc-geomet/web-services_en.md). For downloading raw data, refer to the [How to access raw data](#how-to-access-raw-data) section.
 
-Tutorials for the QGIS desktop software:
-
-* [Add, query and animate WMS layers](tutorial_WMS_QGIS_en.md)
-* [Add and query OGC API Features layers](tutorial_OAFeat_QGIS_en.md)
-* [Add raw data](tutorial_raw-data_QGIS_en.md)
+The following tutorials are available for the QGIS desktop software: [add, query and animate WMS layers](tutorial_WMS_QGIS_en.md), [add and query OGC API Features layers](tutorial_OAFeat_QGIS_en.md) and [add raw data](tutorial_raw-data_QGIS_en.md).
 
 ### Interactive web maps and mobile apps
 
@@ -45,11 +41,7 @@ MSC open data can also easily be integrated into interactive maps in browsers an
 
 By using JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Openlayers](https://openlayers.org/), amongst others, users can integrate data available via MSC GeoMet into their own interactive web maps.
 
-[Tutorial for creating interactive web maps with OpenLayers and Leaflet](tutorial_web-maps_en.md):
-
-* Add layers
-* Display popup dialog boxes
-* Animate temporal layers
+The following [tutorial is available for creating interactive web maps with OpenLayers and Leaflet](tutorial_web-maps_en.md), demonstrating how to add layers, display popup dialog boxes and animate temporal layers.
 
 Below is an example of an OpenLayers web map configured to display [weather radar composite Web Map Service (WMS) layers served by MSC GeoMet](../msc-data/obs_radar/readme_radar_geomet_en.md).
 
