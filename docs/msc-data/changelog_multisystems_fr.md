@@ -35,6 +35,18 @@ Seulement la composante de l'assimilation des données a été modifiée afin d'
 
 La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/06/18/NOCN03_CWAO_181607___62703).
 
+## Le jeudi 1er mars 2018
+
+### Remplacement des observations AMV du satellite Meteosat-10 par Meteosat-11
+
+Le jeudi 1er mars 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système global de prévision déterministe (SGPD), de la version 4.3.0 de son système global de prévision d'ensemble (SGPE) et de la version 5.1.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes :
+
+* Remplacement des observations AMV (Atmospheric Motion Vector) du satellite Meteosat-10 par celles du satellite Meteosat-11 dans les systèmes SGPD SGPE et SRPD.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/06/18/NOCN03_CWAO_181205___20058).
+
 ## Le mercredi 6 septembre 2017
 
 ### Nouvelle infrastructure de calcul haute performance

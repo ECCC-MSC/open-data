@@ -95,6 +95,10 @@
 
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_fr#le-vendredi-2-mars-2018)
 
+### 1 mars 2018
+
+*[Remplacement des observations AMV du satellite Meteosat-10 par Meteosat-11](../changelog_multisystems_fr#le-jeudi-1er-mars-2018)
+
 ### 24 janvier 2018
 
 * [Système canadien de prévision de l’Arctique (SCPA) 1.0.0](../nwp_caps/changelog_caps_fr#le-mercredi-24-janvier-2018)

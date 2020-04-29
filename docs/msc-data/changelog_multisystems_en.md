@@ -33,6 +33,18 @@ Only the data assimilation component was modified to include the following obser
 
 A copy of the official note announcing the implementation of these changes is available [at this link]().
 
+## Thursday March 1, 2018
+
+### Replacement of the AMV observations from Meteosat-10 by Meteosat-11
+
+On Thursday March 1st, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) implemented an update to version 6.0.0 of the Global Deterministic Prediction System (GDPS), version 4.3.0 of the Global Ensemble Prediction System (GEPS) and version 5.1.0 of the Regional Deterministic Prediction System (RDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+* Replacement of AMV (Atmospheric Motion Vector) observations from the Meteosat-10 satellite by those from Meteosat-11 in the three systems GDPS, GEPS and RDPS.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2018/06/18/NOCN03_CWAO_181205___20058).
+
 ## Wednesday September 6, 2017
 
 ### New High Performance Computing Infrastructure
