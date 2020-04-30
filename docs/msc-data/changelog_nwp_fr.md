@@ -36,7 +36,7 @@
 * [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.6.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) 1.2.0](../nwp_resps/changelog_resps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 021](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-3-juillet-2019)
-* [Système de prévision FireWork 021](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-3-juillet-2019)
+* [Système régional de prévision déterministe de la qualité de l'air Firework (SRPDQA-FW) 21](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-3-juillet-2019)
 
 ### 15 avril 2019
 
