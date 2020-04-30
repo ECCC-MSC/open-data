@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [ARDP](readme_rdpa_fr.md) > Données du ARPD sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [ARDP](readme_rdpa_fr.md) > Données ARPD sur GeoMet du SMC
 
-# Données de l'analyse régionale déterministe de précipitation disponibles sur GeoMet du SMC
+# Données de l'Analyse régionale déterministe de précipitation disponibles sur GeoMet du SMC
 
 GeoMet du SMC donne accès à plusieurs couches de l'analyse régionale déterministe de précipitation (ARPD). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
 
@@ -13,7 +13,7 @@ GeoMet du SMC donne accès à plusieurs couches de l'analyse régionale détermi
 
 Les couches ARPD sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant une couche WMS de l'analyse régionale déterministe de précipitation provenant de GeoMet du SMC :
+Exemple de carte interactive présentant une couche WMS de l'Analyse régionale déterministe de précipitation provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
@@ -25,34 +25,34 @@ Exemple de carte interactive présentant une couche WMS de l'analyse régionale 
 
 ## Utilisation
 
-La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/web-services_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données de l'analyse régionale déterministe de précipitation](readme_rdpa_fr.md) qui pointe vers de l'information additionnelle sur l'ARDP.
+La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/web-services_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données de l'Analyse régionale déterministe de précipitation](readme_rdpa_fr.md) qui pointe vers de l'information additionnelle sur l'ARDP.
 
 ### Couches disponibles
 
-Quantité de précipitations qui se sont produites au cours des dernières périodes de 24 heures :
+Quantité de précipitation qui se sont produites au cours des dernières périodes de 24 heures :
 
 * Disponible à une résolution de 10 km du 2012-10-03 12:00 Temps universel coordonné (UTC) jusqu'à aujourd'hui :
-    * Quantité de précipitations [mm] : `RDPA.24F_PR`.
+    * Quantité de précipitations [mm] : `RDPA.24F_PR`
 * Disponible à une résolution de 15 km du 2011-04-06 12:00 UTC au 2012-10-02 12:00 UTC :
     * Quantité de précipitations [mm] : `RDPA.ARC_15km.24F_PR`
 * Disponible à une résolution de 10 km pour les 30 derniers jours :
-    * Quantité de précipitations (préliminaire) [mm] : `RDPA.24P_PR`.
+    * Quantité de précipitations (préliminaire) [mm] : `RDPA.24P_PR`
 
-Quantité de précipitations qui se sont produites au cours des 6 dernières heures :
+Quantité de précipitation qui se sont produites au cours des 6 dernières heures :
 
 * Disponible à une résolution de 10 km du 2012-10-03 06:00 Temps universel coordonné (UTC) jusqu'à aujourd'hui :
-    * Quantité de précipitations [mm] : `RDPA.6F_PR`.
+    * Quantité de précipitations [mm] : `RDPA.6F_PR`
 * Disponible à une résolution de 15 km du 2011-04-06 00:00 UTC au 2012-10-03 00:00 UTC :
     * Quantité de précipitations [mm] : `RDPA.ARC_15km.6F_PR`
 * Disponible à une résolution de 10 km pour les 30 derniers jours :
-    * Quantité de précipitations (préliminaire) [mm] : `RDPA.6P_PR`.
+    * Quantité de précipitations (préliminaire) [mm] : `RDPA.6P_PR`
 
 ### Conseils d'utilisation
 
 Récupération de la liste des derniers pas de temps disponibles :
 
 * Les utilisateurs peuvent ajouter `&layer=` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la couche RDPA.24F_PR - Quantité de précipitations [mm] : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
-* Davantage d'informations sont disponibles dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps)
+* Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps)
 
 Styles WMS :
 
