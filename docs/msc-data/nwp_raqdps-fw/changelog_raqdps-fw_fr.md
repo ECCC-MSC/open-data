@@ -14,7 +14,7 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour du système de prévision FireWork
+### Mise à jour du système régional de prévision déterministe de la qualité de l'air FireWork
 
 Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air complémentaire FireWork en remplaçant la version 020 par la version 021.
 
@@ -41,6 +41,23 @@ Une note technique avec plus de détails sera bientôt disponible en français.
 
 En attendant, une note technique en anglais de FireWork est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps020.2fw_20190415_e.pdf).
 
+## Le mardi 18 septembre, 2018
+
+### Mise à jour du système régional de prévision déterministe de la qualité de l'air FireWork
+
+Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air FireWork en remplaçant la version 019 par la version 020.
+
+Résumé des éléments que comporte cette mise à jour :
+
+* Les analyses météorologiques et le modèle pilote proviennent maintenant du [SRPD v6.0.0](/../nwp_rdps/changelog_rdps_fr.md#le-mardi-18-septembre-2018) plutôt que du SRPD v5.1.0.
+* Adoption de la configuration SRPD v6.0.0, comprenant le recyclage des principales variables physiques et l'approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).
+* L'implementation de la nouvelle version du code du modèle (v2.3.1), pour améliorer la vitesse de traitement et augmenter la robustesse, ainsi que l'amélioration de la chimie (dépôt sec en phase gazeuse sur les surfaces enneigées et la glace marine).
+* Introduction d’un nouvel ensemble d'émissions basé sur des inventaires nationaux d’émissions plus récents.
+
+La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412).
+
+Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_f.pdf).
+
 ## Le mardi 3 avril 2018
 
 ### Mise en œuvre du système de prévision FireWork pour la saison d'été 2018
@@ -50,21 +67,6 @@ Le mardi 3 avril 2018, à compter de la passe de 1200 UTC, le Centre météorolo
 Pour plus d'information, s'il vous plait consulter la note officielle annonçant l'implantation du FireWork pour l'été 2018 [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/04/03/NOCN03_CWAO_031838___00001).
 
 Une note technique avec plus de détails est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps015fw_20160428_f.pdf).
-
-## Le mardi 18 septembre, 2018
-
-### Mise à jour du  système de prévision FireWork
-
-Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) et le système complémentaire FireWork en remplaçant la version 019 par la version 020.
-
-Résumé des éléments que comporte cette mise à jour :
-
-* Les analyses météorologiques et le modèle pilote proviennent maintenant du SRPD v6.0.0 plutôt que du SRPD v5.1.0.
-* Adoption de la configuration SRPD v6.0.0, comprenant le recyclage des principales variables physiques et l'approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).
-* L'implementation de la nouvelle version du code du modèle (v2.3.1), pour améliorer la vitesse de traitement et augmenter la robustesse, ainsi que l'amélioration de la chimie (dépôt sec en phase gazeuse sur les surfaces enneigées et la glace marine).
-* Introduction d’un nouvel ensemble d'émissions basé sur des inventaires nationaux d’émissions plus récents.
-
-La note officielle annonçant ce changement est disponible [en cliquant ici](https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412).
 
 ## Le mercredi 7 septembre 2016
 
