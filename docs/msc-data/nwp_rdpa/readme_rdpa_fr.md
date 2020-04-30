@@ -12,10 +12,10 @@ L'Analyse régionale déterministe de précipitation (ARPD) produit une estimati
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données Datamart du SMC et les services web GeoMet du SMC :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_rdpa-datamart_fr.md) 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
+* [Données courantes et d'archives disponibles via les services web géospatiaux GeoMet-Météo](readme_rdpa-geomet_fr.md)
+* [Données courantes GRIB2 disponibles sur le Datamart du SMC](readme_rdpa-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
