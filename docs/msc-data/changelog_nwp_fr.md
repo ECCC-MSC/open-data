@@ -40,7 +40,7 @@
 
 ### 15 avril 2019
 
-* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-lundi-15-avril-2019)
+* [FireWork d'été 2019 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-lundi-15-avril-2019)
 
 ### 4 mars 2019
 
@@ -70,7 +70,6 @@
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 020](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-septembre-2018)
-* [Système de prévision FireWork 020](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mardi-18-septembre-2018)
 
 ### 28 juin 2018
 
