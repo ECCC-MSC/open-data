@@ -28,7 +28,6 @@ Une copie de la note officielle annonçant ce changement dans FireWork est dispo
 
 Une note technique pour FireWork avec plus de détails sur ces changements sera disponible bientôt.
 
-
 ## Le lundi 15 avril 2019
 
 ### Mise en œuvre du système de prévision FireWork pour la saison d'été 2019
