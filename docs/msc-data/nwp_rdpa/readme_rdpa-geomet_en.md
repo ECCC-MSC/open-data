@@ -5,17 +5,13 @@
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPA](readme_rdpa_en.md) > RDPA data on MSC GeoMet
 
 
-# Regional Deterministic Precipitation Analysis available on MSC GeoMet
+# Regional Deterministic Precipitation Analysis data available on MSC GeoMet
 
-MSC GeoMet provides access to several Regional Deterministic Precipitation Analysis (RDPA) layers. Users can build mobile apps, create interactive web maps, or display and animate RDPA layers in desktop software.
-
+MSC GeoMet provides access to several Regional Deterministic Precipitation Analysis (RDPA) layers. Users can build mobile apps, create interactive web maps, and display and animate RDPA layers in desktop software.
 
 ## Access to the geospatial web services
 
-The RDPA layers are available on GeoMet-Weather via the Web Map Service (WMS) standard:
-
-* [Access to GeoMet-Weather](../../msc-geomet/readme_en.md)
-* [Technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md)
+The RDPA layers are [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
 
 Example of a web map configured to display the quantity of precipitation (preliminary) [mm] over the past period of 24 hours using WMS layers served by MSC GeoMet:
 
@@ -29,7 +25,8 @@ Example of a web map configured to display the quantity of precipitation (prelim
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main RDPA data page](readme_rdpa_en.md) which links to additional information on RDPA.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on the MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main RDPA data page](readme_rdpa_en.md) which links to additional information on RDPA.
+
 
 ### Available layers
 

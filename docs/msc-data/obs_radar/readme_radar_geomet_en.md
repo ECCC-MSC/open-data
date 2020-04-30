@@ -11,10 +11,7 @@ MSC GeoMet provides access to several popular North American weather radar compo
 
 ## Access to the geospatial web services
 
-The weather radar layers are available on GeoMet-Weather via the Web Map Service (WMS) standard:
-
-* [Access to GeoMet-Weather](../../msc-geomet/readme_en.md)
-* [Technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md)
+The weather radar layers are [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
 Example of a web map configured to display the weather radar composite using WMS layers served by MSC GeoMet:
 
@@ -30,7 +27,7 @@ MSC GeoMet's North American weather radar composite layers can be seen in action
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
 
 ### Available layers
 
