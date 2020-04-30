@@ -14,8 +14,8 @@ nav:
         - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
     - Usage and tutorials / <br>Utilisation et tutoriels:
         - Usage overview /<br>Aperçu de l'utilisation: usage/readme_en.md
-        - Create interactive web maps /<br>Créer des cartes web interactives: usage/tutorial_web-maps_en.md
         - Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS: usage/tutorial_WMS_QGIS_en.md
+        - Create interactive web maps /<br>Créer des cartes web interactives: usage/tutorial_web-maps_en.md
         - Add raw data to QGIS /<br>Ajouter des données brutes à QGIS: usage/tutorial_raw-data_QGIS_en.md
         - Use OGC API Features in QGIS /<br>Utiliser OGC API Features dans QGIS: usage/tutorial_OAFeat_QGIS_en.md
         - API technical doc /<br>Doc technique de l'API: msc-geomet/web-services_en.md
