@@ -166,9 +166,9 @@ Prior applying any change to the [licence accompanying the documentation](licenc
    
 Tips:
 
-    * Use `git status` to learn on which branch you currently are and get additional status info
-    * Use `git remote -v` to confirm `origin` and `upstream` are properly set
-    * Use `git checkout master` to go back to the master branch of your fork
+* Use `git status` to learn on which branch you currently are and get additional status info
+* Use `git remote -v` to confirm `origin` and `upstream` are properly set
+* Use `git checkout master` to go back to the master branch of your fork
     
 ## 4.4 - GitHub content update
 
