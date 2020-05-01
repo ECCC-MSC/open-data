@@ -24,7 +24,7 @@ Résumé des éléments que comporte cette mise à jour :
 * Mise à jour de GEM de la version v4.8-LTS.16 à la version GEM v5.0.0. Pour plus d'informations sur GEM-5, veuillez consulter ce [document (en anglais)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf).
 * Amélioration dans le calcul de la chimie du modèle.
 
-Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
+Une copie de la note officielle annonçant ce changement dans FireWork [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
 
 Une note technique pour FireWork avec plus de détails sur ces changements sera disponible bientôt.
 
