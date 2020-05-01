@@ -8,12 +8,24 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.2
+## 2.3.3
 
 * date: 2020-05-01
 * announcements:
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
+* new content:
+    * Add Firework summer season debut - April 1st 2020
+* improvements: 
+    * none
+* bug fixes:
+    * Minor fixes
+
+## 2.3.2
+
+* date: 2020-05-01
+* announcements:
+    * Not announced
 * new content:
     * none
 * improvements: 
