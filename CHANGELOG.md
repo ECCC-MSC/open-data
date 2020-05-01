@@ -8,12 +8,25 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.1
+## 2.3.2
 
 * date: 2020-05-01
 * announcements:
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
+* new content:
+    * none
+* improvements: 
+    * none
+* bug fixes:
+    * Fixed broken hamburger menu
+    * Minor fixes
+    
+## 2.3.1
+
+* date: 2020-05-01
+* announcements:
+    * not announced
 * new content:
     * New RDPA doc for MSC GeoMet
     * Major improvements to many dataset changelogs
