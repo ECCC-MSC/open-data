@@ -6,6 +6,27 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air FireWork (SRPDQA-FW)
 
+## Le mercredi 1 avril 2020
+
+### Mise en œuvre du système de prévision FireWork pour la saison d'été 2020
+
+Le mercredi 1 avril 2020, à compter de la passe de 00 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) mettra en œuvre le système de prévision FireWork pour la saison d'été 2020. FireWork est un système de prévision saisonnier qui est basé sur le système régional de prévision déterministe de la qualité de l'air (SRPDQA) et qui incorpore des émissions provenant des feux de forêts en Amérique du Nord.
+
+Pour plus d'information, s'il vous plait consulter la note officielle annonçant l'implantation du FireWork pour l'été 2020 [en cliquant ici]( https://dd.meteo.gc.ca/doc/genots/2020/04/03/NOCN03_CWAO_031510___44016)).
+
+Une note technique est disponible [via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_f.pdf).
+## Le mercredi 1 avril 2020
+
+### Mise en œuvre du système de prévision FireWork pour la saison d'été 2020
+
+Le mercredi 1 avril 2020, à compter de la passe de 00 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) mettra en œuvre le système de prévision FireWork pour la saison d'été 2020. FireWork est un système de prévision saisonnier qui est basé sur le système régionale de prévision déterministe de la qualité de l'air (SRPDQA) et qui incorpore des émissions provenant des feux de forêts en Amérique du Nord.
+
+Pour plus d'information, s'il vous plait consulter la note officielle annonçant l'implantation du FireWork pour l'été 2020 [en cliquant ici]( https://dd.meteo.gc.ca/doc/genots/2020/04/03/NOCN03_CWAO_031510___44016)).
+
+Une note technique avec plus de détails sera bientôt disponible en français.
+
+En attendant, une note technique en anglais de FireWork est disponible [via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_f.pdf).
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jour de FireWork suite à la nouvelle infrastructure de calcul haute performance. 

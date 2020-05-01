@@ -8,6 +8,10 @@
 
 ## 2020
 
+### 1 avril 2020
+
+* [FireWork d'été 2020 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-1-avril-2020)
+
 ### 21 janvier 2020
 
 * [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-21-janvier-2020)
@@ -37,7 +41,6 @@
 * [Système Régional de Prévision Océan-Glace (SRPOG) 2.0.0](../nwp_riops/changelog_riops_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.6.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) 1.2.0](../nwp_resps/changelog_resps_fr#le-mercredi-3-juillet-2019)
-* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 021](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-3-juillet-2019)
 
 ### 15 avril 2019
 
@@ -72,7 +75,6 @@
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 020](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-septembre-2018)
-* [Système de prévision FireWork 020](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mardi-18-septembre-2018)
 
 ### 28 juin 2018
 
@@ -82,7 +84,6 @@
 
 * [Remplacement du satellite GOES-13 par GOES-16](../changelog_multisystems_fr#le-jeudi-7-juin-2018)
 * [Remplacement du satellite Meteosat-10 par Meteosat-11](../changelog_multisystems_fr#le-jeudi-7-juin-2018)
-
 
 ### 4 avril 2018
 
@@ -204,7 +205,6 @@
 * [Analyse régionale déterministe de précipitations (ARDP (CaPA)) 3.0.0](../nwp_rdpa/changelog_rdpa_fr#le-mardi-18-novembre-2014)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.0.0](../nwp_hrdps/changelog_hrdps_fr#le-mardi-18-novembre-2014)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 1.5.3](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-novembre-2014)
-
 
 ### 6 mai 2014
 

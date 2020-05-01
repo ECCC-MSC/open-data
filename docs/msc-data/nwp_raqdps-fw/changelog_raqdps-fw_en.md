@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW)
 
+## Wednesday April 1, 2020
+
+## Installation of the FireWork Prediction System for the Summer Wildfire Season of 2020
+
+On Wednesday April 1st, 2020, starting with the 00 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will reactivate the FireWork prediction system for the summer period of 2020. FireWork is a seasonal modelling system based on the Regional Air Quality Deterministic Prediction System (RAQDPS) which incorporates additional emissions from wildfire events over North America.
+
+For further information, please consult the official note announcing the implementation of FireWork for Summer 2020 [at this link](https://dd.meteo.gc.ca/doc/genots/2020/04/03/NOCN03_CWAO_031510___44016).
+
+A technical note with more details is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pdf).
+
 ## Tuesday January 21, 2020
 
 ### Upgrade FireWork version adapted to the New High Performance Computing Infrastructure.
