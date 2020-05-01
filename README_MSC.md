@@ -252,12 +252,13 @@ The following instructions take the current documentation version from `https://
         2. Return to master: `git checkout master`
         3. Delete the tag: `git tag -d 2.x.y` where `2.x.y` corresponds to the tag to replace
         4. Make and commit the changes to upstream master
-        5. Return to step 2
+        5. Return to step 3
 8. Deploy the documentation on GitHub:
     1. Run `mkdocs gh-deploy --ignore-version --force -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
         * The user must have the [permissions to push to GitHub](#permission-requirements)
         * Using `--force` is required if another user pushed the previous version to GitHub
 9. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
-10. Desactivate your mkdocs environment with `conda deactivate` and return to the master branch with `git checkout master`
-11. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
-12. If applicable, prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
+10. Desactivate your conda environment: `conda deactivate`
+11. Return to the master branch: `git checkout master`
+12. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
+13. If applicable, prepare and send announcement to [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement lists based on the [changelog](CHANGELOG.md)
