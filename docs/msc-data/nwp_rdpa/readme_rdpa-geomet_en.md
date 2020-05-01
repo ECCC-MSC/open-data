@@ -1,4 +1,4 @@
-[En français](readme_rdpa_geomet_fr.md)
+[En français](readme_rdpa-geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
