@@ -15,11 +15,11 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
         * [Files in the documentation](#423-files-in-the-documentation)
         * [Changes to the Licence](#424-changes-to-the-licence)
     * [Update workflow](#43-update-workflow)
+    * [GitHub content update](#44-github-content-update)
 5. [Deploying the documentation](#5-deploying-the-documentation)
     * [Permission requirements](#51-permission-requirements)
     * [Getting ready](#52-getting-ready)
-    * [Deployment to GitHub Pages with mkdocs](#53-deployment-to-github-pages-with-mkdocs)
-
+    * [Deployment to GitHub Pages with mkdocs](#53-deploy-documentation-on-github-with-mkdocs)
 
 # 1 - Scope and objectives
 
@@ -61,6 +61,7 @@ Files in this repository:
     * The mkdocs configuration file
 * custom_theme/
     * Local mkdocs theme files
+
 
 # 3 - Monitoring documentation changes
 
@@ -168,6 +169,18 @@ Tips:
     * Use `git remote -v` to confirm `origin` and `upstream` are properly set
     * Use `git checkout master` to go back to the master branch of your fork
     
+## 4.4 - GitHub content update
+
+To accommodate remote students, in the spirit of 'open by default' and to allow outside contributions, the `master` branch of this repository is available on GitHub in addition to the `gh-pages` branch required for GitHub Pages. Given the main repository remains the internal GCcode one, it is important to keep the `master` branch on GitHub in sync when changes are known to be made to it.
+
+1. Retrieve the latest GCcode version: `git pull upstream master`
+2. Update the GitHub version with the GCcode one: `git push github master`
+3. After changes are committed and merged on GitHub's `master` branch, push the changes to GCcode:
+    * `git pull github master`
+    * `git push upstream master`
+
+Pull current GCcode version before making changes and commit and merge changes often to avoid conflicts.
+
 
 # 5 - Deploying the documentation
   
