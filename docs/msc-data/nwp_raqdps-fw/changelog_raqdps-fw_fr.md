@@ -14,7 +14,6 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-<<<<<<< HEAD
 ### Mise à jour du système régional de prévision déterministe de la qualité de l'air FireWork
 
 Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air complémentaire FireWork en remplaçant la version 020 par la version 021.
@@ -29,23 +28,6 @@ Une copie de la note officielle annonçant ce changement dans FireWork [est disp
 
 Une note technique pour FireWork avec plus de détails sur ces changements sera disponible bientôt.
 
-=======
-### Mise à jour du système de prévision FireWork
-
-Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) et le système complémentaire FireWork en remplaçant la version 020 par la version 021.
-
-Résumé des éléments que comporte cette mise à jour :
-
-* Les analyses météorologiques et le modèle pilote proviennent maintenant du SRPD v7.0.0 plutôt que du SRPD v6.0.0.
-* Mise à jour de GEM de la version v4.8-LTS.16 à la version GEM v5.0.0. Pour plus d'informations sur GEM-5, veillez consulter ce document (en anglais).
-* Amélioration dans le calcul de la chimie du modèle.
-
-Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
-
-Une note technique pour FireWork avec plus de détails sur ces changements sera disponible bientôt.
-
-
->>>>>>> e151f468e890ffe66b487e95bfc2353f8e2745b8
 ## Le lundi 15 avril 2019
 
 ### Mise en œuvre du système de prévision FireWork pour la saison d'été 2019
