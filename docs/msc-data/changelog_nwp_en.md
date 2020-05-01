@@ -8,6 +8,10 @@
 
 ## 2020
 
+### April 1, 2020
+
+* [FireWork Summer 2020 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#Wednesday-april-1-2020)
+
 ### January 21, 2020
 
 * [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-january-21-2020)
@@ -37,7 +41,6 @@
 * [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-july-3-2019)
 * [Regional Ensemble Storm-surge Prediction System (RESPS) 1.2.0](../nwp_resps/changelog_resps_en#wednesday-july-3-2019)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 021](../nwp_raqdps/changelog_raqdps_en#wednesday-july-3-2019)
-* [FireWork Prediction System 021](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-july-3-2019)
 
 ### April 15, 2019
 
@@ -71,7 +74,6 @@
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_wam-global/changelog_wam-global_en#tuesday-september-18-2018)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 020](../nwp_raqdps/changelog_raqdps_en#tuesday-september-18-2018)
-* [FireWork Prediction System 020](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018)
 
 ### June 28, 2018
 
