@@ -29,7 +29,7 @@
 * [Système régional de prévision d'ensemble (SRPE) 3.0.0](../nwp_reps/changelog_reps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de Prévision Océan-Glace (SRPOG) 2.0.0](../nwp_riops/changelog_riops_fr#le-mercredi-3-juillet-2019)
 * [Système haute résolution de prévision déterministe (SHRPD) 5.1.0](../nwp_hrdps/changelog_hrdps_fr/log_cansips_fr#le-mercredi-3-juillet-2019)
-* [Système régional de prévision déterministe de la qualité de l'air Firework (SRPDQA-FW) 21](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-3-juillet-2019)
+* [Système régional de prévision déterministe de la qualité de l'air Firework (SRPDQA-FW) 21](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-3-juillet-2019)
 * [Analyse Régionale Déterministe de Précipitation (ARPD (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-3-juillet-2019)
 * [Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP) 4.6.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mercredi-3-juillet-2019)
 * [Système de prévision du cycle de l'eau (SPCE) 2.1.0](../nwp_wcps/changelog_wcps_fr#le-mercredi-3-juillet-2019)
@@ -72,7 +72,7 @@
 * [Analyse déterministe de précipitation à haute résolution (AHRDP (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mardi-18-septembre-2018)
 * [Fin du service pour le système de vague "WAM-Global"](../nwp_gdwps/changelog_gdwps_fr#le-mardi-18-septembre-2018)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 020](../nwp_raqdps/changelog_raqdps_fr#le-mardi-18-septembre-2018)
-* [Système de prévision FireWork 020](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mardi-18-septembre-2018)
+* [Système de prévision FireWork 020](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mardi-18-septembre-2018)
 
 ### 28 juin 2018
 
@@ -88,10 +88,6 @@
 
 * [Système régional de prévision déterministe des vagues (SRPDV) 3.0.0](../nwp_rdwps/changelog_rdwps_fr#le-mercredi-4-avril-2018)
 * [Système régional de prévision d'ensemble des vagues (SRPEV) 1.0.0](../nwp_rewps/changelog_rewps_fr#le-mercredi-4-avril-2018)
-
-### 3 avril 2018
-
-* [FireWork d'été 2018 - Début de la saison](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mardi-3-avril-2018)
 
 ### 3 avril 2018
 
@@ -136,7 +132,7 @@
 
 * [Système régional de prévision déterministe (SRPD) 5.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-7-septembre-2016)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
-* [FireWork été 2016 - Mise à jour](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
+* [FireWork été 2016 - Mise à jour](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-7-septembre-2016)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
 * [Système automatisé de prévisions à l'aviation (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_fr#le-mercredi-7-septembre-2016)
 
@@ -148,7 +144,7 @@
 
 ### 14 avril 2016
 
-* [FireWork d'été 2016 - Début de la saison](../nwp_raqdps-fw/changelog_radps-fw_fr#le-jeudi-14-avril-2016)
+* [FireWork d'été 2016 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-jeudi-14-avril-2016)
 
 ### 7 avril 2016
 
@@ -157,10 +153,6 @@
 ### 16 mars 2016
 
 * [Remplacement du satellite MTSAT-2 par Himawari-8](../changelog_multisystems_fr#le-mercredi-16-mars-2016)
-
-### 14 avril 2016
-
-* [FireWork d'été 2016 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-jeudi-14-avril-2016)
 
 ## 2015
 

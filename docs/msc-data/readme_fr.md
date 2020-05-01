@@ -38,7 +38,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
     * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
     * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
-    * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md))
+    * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md)
     * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
