@@ -10,13 +10,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.1
 
-* date: 2020-04-30
+* date: 2020-05-01
 * announcements:
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
 * new content:
     * New RDPA doc for MSC GeoMet
-* improvements:
+    * Major improvements to many dataset changelogs
+* improvements: 
     * Added mention of tutorials in radar doc
 * bug fixes:
     * Fix to tab titles
