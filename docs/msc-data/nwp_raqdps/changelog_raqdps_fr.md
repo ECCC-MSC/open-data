@@ -66,7 +66,7 @@ La note officielle annonçant ce changement est disponible [en cliquant ici](htt
 
 Une note technique avec plus de détails sur ces changements reste à venir sur cette page.
 
-## Le jeudi 17 avril 2016
+## Le jeudi 7 avril 2016
 
 ### Mise à jour majeure du système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 

@@ -65,6 +65,35 @@ For further information, please consult the official note announcing the impleme
 
 A technical note with more details on this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps015fw_20160428_e.pdf).
 
+## Wednesday July 3, 2019
+
+### Upgrade to the FireWork Prediction System
+
+On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS), and it's companion system, FireWork, from version 20 to version 21.
+
+The changes included in this upgrade are summarized as follows:
+* The RAQDPS is now piloted by RDPS v7.0.0, rather than RDPS v6.0.0.
+* Upgrade from GEM v4.8-LTS.16 to GEM v5.0.0. For more informations on GEM-5, please consult this document.
+* Improvements to chemistry processing.
+
+A copy of the official note announcing the implementation of these changes in FireWork is available [at this link](https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903).
+
+A technical note for FireWork with more details on this change will be available soon.
+
+## Tuesday September 18, 2018
+
+### Upgrade to the FireWork Prediction System
+
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS), and it's companion system, FireWork, from version 19 to version 20.
+
+The changes included in this upgrade are summarized as follows:
+* The meteorological analyses and pilot model are now linked to RDPS v6.0.0 rather than RDPS v5.1.0.
+* Adoption of the RDPS v6.0.0 configuration, including recycling of key physics variables and the incremental analysis update (IAU) based meteorological initialization.
+* Implementation of a new version of the RAQDPS model code (v2.3.1), to improve processing speed and provide increased robustness, as well as improve chemistry (gas-phase dry deposition over snow-covered surfaces and sea-ice).
+* Introduction of a new set of input emissions files based on more recent national emissions inventories.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412).
+
 ## Wednesday September 7, 2016
 
 ### Major Upgrade to the FireWork Prediction System
