@@ -27,20 +27,9 @@
 * [Système global de prévision océan-glace (SGPOG) 3.0.0](../nwp_giops/changelog_giops_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision déterministe (SRPD) 7.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision d'ensemble (SRPE) 3.0.0](../nwp_reps/changelog_reps_fr#le-mercredi-3-juillet-2019)
-<<<<<<< HEAD
 * [Système régional de Prévision Océan-Glace (SRPOG) 2.0.0](../nwp_riops/changelog_riops_fr#le-mercredi-3-juillet-2019)
-* [Système haute résolution de prévision déterministe (SHRPD) 5.1.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-3-juillet-2019)
-* [Système régional de prévision déterministe de la qualité de l'air Firework (SRPDQA-FW) 21](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-3-juillet-2019)
-* [Analyse Régionale Déterministe de Précipitation (ARPD (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-9-juillet-2019)
-* [Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP) 4.6.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mercredi-9-juillet-2019)
-* [Système de prévision du cycle de l'eau (SPCE) 2.1.0](../nwp_wcps/changelog_wcps_fr#le-mercredi-9-juillet-2019)
-* [Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)](../nwp_cansips/changelog_cansips_fr#le-mercredi-9-juillet-2019)
-
-### 15 avril 2019
-
-* [FireWork d'été 2019 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-lundi-15-avril-2019)
-=======
 * [Système haute résolution de prévision déterministe (SHRPD) 5.1.0](../nwp_hrdps/changelog_hrdps_fr/log_cansips_fr#le-mercredi-3-juillet-2019)
+* [Système régional de prévision déterministe de la qualité de l'air Firework (SRPDQA-FW) 21](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-3-juillet-2019)
 * [Analyse Régionale Déterministe de Précipitation (ARPD (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-3-juillet-2019)
 * [Analyse à Haute Résolution Déterministe de Précipitation (CaPA-AHRDP) 4.6.0](../nwp_hrdpa/changelog_hrdpa_fr#le-mercredi-3-juillet-2019)
 * [Système de prévision du cycle de l'eau (SPCE) 2.1.0](../nwp_wcps/changelog_wcps_fr#le-mercredi-3-juillet-2019)
@@ -49,12 +38,10 @@
 * [Système régional de prévision déterministe d’onde de tempête (SRPDOT) 1.6.0](../nwp_rdsps/changelog_rdsps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) 1.2.0](../nwp_resps/changelog_resps_fr#le-mercredi-3-juillet-2019)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 021](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-3-juillet-2019)
-* [Système de prévision FireWork 021](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-3-juillet-2019)
 
 ### 15 avril 2019
 
-* [Mise en oeuvre du Système de prévision FireWork](../nwp_raqdps-fw/changelog_radps-fw_fr#le-lundi-15-avril-2019)
->>>>>>> e151f468e890ffe66b487e95bfc2353f8e2745b8
+* [FireWork d'été 2019 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-lundi-15-avril-2019)
 
 ### 4 mars 2019
 
@@ -149,13 +136,9 @@
 
 * [Système régional de prévision déterministe (SRPD) 5.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-7-septembre-2016)
 * [Système haute résolution de prévision déterministe (SHRPD) 4.2.0](../nwp_hrdps/changelog_hrdps_fr#le-mercredi-7-septembre-2016)
-<<<<<<< HEAD
-* [FireWork été 2016 - Mise à jour](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-7-septembre-2016)
-=======
 * [FireWork été 2016 - Mise à jour](../nwp_raqdps-fw/changelog_radps-fw_fr#le-mercredi-7-septembre-2016)
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) 016](../nwp_raqdps/changelog_raqdps_fr#le-mercredi-7-septembre-2016)
 * [Système automatisé de prévisions à l'aviation (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_fr#le-mercredi-7-septembre-2016)
->>>>>>> e151f468e890ffe66b487e95bfc2353f8e2745b8
 
 ### 21 juin 2016
 
