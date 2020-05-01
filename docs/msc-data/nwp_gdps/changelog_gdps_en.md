@@ -146,8 +146,7 @@ Notes:
 * [Official note announcing the implementation](http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141410___00630).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_gdps-400_20141118_e.pdf).
 
-
-## Wednesday April 30th 2014
+## Tuesday May 6th 2014
 
 ### Addition of IASI observations from METOP-B/1 to the operational data of the GDPS
 
@@ -162,7 +161,6 @@ You can also access the GDPS products page by [clicking here](readme_gdps_en.md)
 
 [Official note of the implementation  with information on verification work](http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938).
 
-
 ## Thursday November 7 2013
 
 ### Additional satellite data (CSR, ATOVS, polar winds) added to the GDPS assimilation systems and various other adjustments
@@ -173,6 +171,9 @@ Along with the addition of satellite data, there were also other adjustments mad
 
 As a result of all of the above changes installed in this implementation, the GDPS operational system becomes version 3.1.0.
 
+## Monday August 12 2013
+
+### Adjustments made so that scribe global matrices now available about 30 minutes earlier.
 
 ## Wednesday February 13, 2013
 

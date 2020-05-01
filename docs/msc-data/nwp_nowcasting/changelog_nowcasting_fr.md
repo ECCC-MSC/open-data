@@ -12,7 +12,7 @@
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
-## Le jeudi 09 juillet 2015
+## Le jeudi 9 juillet 2015
 
 ### Le Centre Météorologique Canadien améliore son système SIPI à version 1.5
 
@@ -22,8 +22,7 @@ Une copie de la note officielle annoncant ce changement [est disponible en cliqu
 
 Une note technique à ce sujet sera disponible sous peu.
 
-
-## Le 20 novembre 2013
+## Le mercredi 20 novembre 2013
 
 ### Le Centre Météorologique Canadien améliore son système SIPI à version 1.4
 

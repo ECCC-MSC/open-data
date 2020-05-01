@@ -33,6 +33,15 @@
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.6.0](../nwp_hrdpa/changelog_hrdpa_en#wednesday-july-3-2019)
 * [Water Cycle Prediction Sytem (WCPS) 2.1.0](../nwp_wcps/changelog_wcps_en#wednesday-july-3-2019)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) version 2](../nwp_cansips/changelog_cansips_en#wednesday-july-3-2019)
+* [Regional Ice and Ocean Prediction System (RIOPS) 2.0.0](../nwp_riops/changelog_riops_en#wednesday-july-3-2019)
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-july-3-2019)
+* [Regional Ensemble Storm-surge Prediction System (RESPS) 1.2.0](../nwp_resps/changelog_resps_en#wednesday-july-3-2019)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 021](../nwp_raqdps/changelog_radps_en#wednesday-july-3-2019)
+* [FireWork Prediction System 021](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-july-3-2019)
+
+### April 15, 2019
+
+* [Installation of the FireWork Prediction System](../nwp_raqdps-fw/changelog_raqdps-fw_en#monday-april-15-2019)
 
 ### April 15, 2019
 
@@ -42,8 +51,17 @@
 
 * [Regional Deterministic Wave Prediction System (RDWPS) 3.2.0](../nwp_rdwps/changelog_rdwps_en#monday-march-4-2019)
 * [Operational declaration of the Water Cycle Prediction System (WCPS) 2.0.0](../nwp_wcps/changelog_wcps_en#moday-march-4-2019)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.2.0](../nwp_rewps/changelog_rewps_en#monday-march-4-2019)
+
+### January 30, 2019
+
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-january-30-2019)
 
 ## 2018
+
+### November 28, 2018
+
+* [autoTAF Automated Guidance System (aTAGS) 1.1.0](../nwp_atags/changelog_atags_en#wednesday-november-28-2018)
 
 ### September 18, 2018
 
@@ -56,10 +74,26 @@
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-september-18-2018)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 020](../nwp_raqdps/changelog_radps_en#tuesday-september-18-2018)
+* [FireWork Prediction System 020](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018)
+
+### June 28, 2018
+
+* [Bi-directional coupling with an ocean-ice model in the CAPS system](../nwp_caps/changelog_caps_en#thursday-june-28-2018)
+
+### June 7, 2018
+
+* [Replacement of the GOES-13 satellite by GOES-16](../changelog_multisystems_en#thursday-june-7-2018)
+* [Replacement of the Meteosat-10 satellite by Meteosat-11](../changelog_multisystems_en#thursday-june-7-2018)
 
 ### April 4, 2018
 
-* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-march-4-2018)
+* [Regional Deterministic Wave Prediction System (RDWPS) 3.0.0](../nwp_rdwps/changelog_rdwps_en#wednesday-april-4-2018)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.0.0](../nwp_rewps/changelog_rewps_en#wednesday-april-4-2018)
+
+### April 3, 2018
+
+* [FireWork Summer 2018 - Beginning of the season](../nwp_raqdps-fw/changelog_radps-fw_en#tuesday-april-3-2018)
 
 ### April 3, 2018
 
@@ -68,6 +102,14 @@
 ### March 2, 2018
 
 * [High Resolution Deterministic Precipitation Analysis System (HRDPA (CaPA)) 4.1.0](../nwp_hrdpa/changelog_hrdpa_en#friday-march-2-2018)
+
+### March 1, 2018
+
+* [Replacement of the AMV observations from Meteosat-10 by Meteosat-11](../changelog_multisystems_en#thursday-march-1-2018)
+
+### January 24, 2018
+
+* [Canadian Arctic Prediction System (CAPS) 1.0.0](../nwp_caps/changelog_caps_en#wednesday-january-24-2018)
 
 ## 2017
 
@@ -80,6 +122,11 @@
 * [Global Deterministic Prediction system (GDPS) 6.0.0](../nwp_gdps/changelog_gdps_en#wednesday-november-1-2017)
 * [Global Ice Ocean Prediction System (GIOPS) 2.3.0](../nwp_giops/changelog_giops_en#wednesday-november-1-2017)
 * [Global Deterministic Wave Prediction System (GDWPS) 1.3.0](../nwp_gdwps/changelog_gdwps_en#wednesday-november-1-2017)
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-november-1-2017)
+
+### September 6, 2017
+
+* [New High Performance Computing Infrastructure](../changelog_multisystems_en#wednesday-september-6-2017)
 
 ## 2016
 
@@ -91,12 +138,31 @@
 
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
+<<<<<<< HEAD
 * [FireWork Summer 2016 - Upgrade](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-september-7-2016)
+=======
+* [FireWork summer 2016 - Update](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
+* [Automated Aviation Forecasting System (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_en#wednesday-september-7-2016)
+>>>>>>> e151f468e890ffe66b487e95bfc2353f8e2745b8
 
 ### June 21, 2016
 
 * [Global Ice and Ocean Prediction System (GIOPS) Version 2.1](../nwp_giops/changelog_giops_en#tuesday-june-21-2016)
 * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) starts to use GIOPS 3D ocean analyses](../nwp_cansips/changelog_cansips_en#tuesday-june-21-2016)
+* [Regional Ice and Ocean Prediction System (RIOPS) 1.1](../nwp_riops/changelog_riops_en#tuesday-june-21-2016)
+
+### April 14, 2016
+
+* [FireWork Summer 2016 - Beginning of the season](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
+
+### April 7, 2016
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 015](../nwp_raqdps/changelog_radps_en#thursday-april-7-2016)
+
+### March 16, 2016
+
+* [Replacement of MTSAT-2 by Himawari-8](../changelog_multisystems_en#wednesday-march-16-2016)
 
 ### April 14, 2016
 
@@ -113,17 +179,33 @@
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.2.0](../nwp_rdpa/changelog_rdpa_en#tuesday-december-15-2015)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.1.0](../nwp_hrdps/changelog_hrdps_en#tuesday-december-15-2015)
 
+### September 17, 2015
+
+* [Experimental implementation of version 2.2 of the Regional Ice Prediction System (RIPS)](../nwp_rips/changelog_rips_en#thursday-september-17-2015)
+
 ### August 20, 2015
 
 * [Operational declaration of the Global Ice Ocean Prediction System (GIOPS) version 1.1.1](../nwp_giops/changelog_giops_en#thursday-august-20-2015)
+
+### July 9, 2015
+
+* [Implementation of version 1.5 of the Integrated NowCasting System (INCS 1.5)](../nwp_nowcasting/changelog_nowcasting_en#thursday-july-9-2015)
 
 ### June 23, 2015
 
 * [Global Deterministic Wave Prediction System (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-june-23-2015)
 
+### June 11, 2015
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-june-11-2015)
+
 ### June 3, 2015
 
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.1.0](../nwp_rdpa/changelog_rdpa_en#wednesday-june-3-2015)
+
+### April 16, 2015
+
+* [Regional Deterministic Air Quality Analysis (RDAQA) 1.1.0](../nwp_rdaqa/changelog_rdaqa_en#thursday-april-16-2015)
 
 ## 2014
 
@@ -135,6 +217,7 @@
 * [Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence](../nwp_rdps-cgsl/changelog_rdps-cgsl_en#tuesday-november-18-2014)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 3.0.0](../nwp_rdpa/changelog_rdpa_en#tuesday-november-18-2014)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.0.0](../nwp_hrdps/changelog_hrdps_en#tuesday-november-18-2014)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.3](../nwp_raqdps/changelog_radps_en#tuesday-november-18-2014)
 
 ### May 6, 2014
 
@@ -148,6 +231,10 @@
 * [Global Ensemble Prediction system (GEPS) 3.1.0](../nwp_geps/changelog_geps_en#tuesday-december-4-2013)
 * [RegionalEnsemble Prediction system (REPS) 2.0.1](../nwp_reps/changelog_reps_en#tuesday-december-4-2013)
 
+### November 20, 2013
+
+* [Implementation of version 1.4 of the Integrated NowCasting System (INCS 1.4)](../nwp_nowcasting/changelog_nowcasting_en#wednesday-november-20-2015)
+
 ### November 07, 2013
 
 * [Additional satellite data (CSR, ATOVS and polar winds) added to GDPS and various other adjustments](../nwp_gdps/changelog_gdps_en#thursday-november-7-2013)
@@ -157,9 +244,14 @@
 
 * [Version 2.4 of RDPA (CaPA) installed in operations](../nwp_rdpa/changelog_rdpa_en#tuesday-august-20-2013)
 
+### August 12, 2013
+
+*[Adjustments made so that scribe global matrices now available about 30 minutes earlier](../nwp_gdps/changelog_gdps_en#monday-august-12-2013)
+
 ### July 23, 2013
 
 * [Adjustment to ocean analysis (GODAS) feed for CanSIPS](../nwp_cansips/changelog_cansips_en#tuesday-july-23-2013)
+* [Experimental Implementation of Version 2.0 of the Regional Ice Prediction System - Forecast Component (RIPS-F)](../nwp_rips/changelog_rips_en#tuesday-july-23-2013)
 
 ### July 12, 2013
 
@@ -168,6 +260,35 @@
 ### July 3, 2013
 
 * [Update to the RDPS binary (in support of the production of the variable PX)](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2013)
+
+### June 18, 2013
+
+* Inclusion of Td from UMOS into the Scribe matrices.
+* Update to the production of the bulletins FPCN80, FPCN48-49, FPCN46-47.
+
+### May 17, 2013
+
+* [Experimental Implementation of Version 2.0 of the Regional Ice Prediction System - Analysis Component (RIPS-A)](../nwp_rips/changelog_rips_en#friday-may-17-2013)
+
+### May 13, 2013
+
+* [Implementation of the Operational Hydrodynamic System (OPHS) 1.0.0](../nwp_ophs/changelog_ophs_en#monday-may-13-2013)
+
+### May 7, 2013
+
+* [Addition of METOP-1 data to the GPS-ro family to the CMC data assimilation system](../changelog_multisystems_en#tuesday-may-7-2013)
+
+### April 15, 2013
+
+* [Addition of METOP-1 data to the GPS-ro family to the CMC data assimilation system](../changelog_multisystems_en#monday-april-15-2013)
+
+### February 28, 2013
+
+* [Regional Deterministic Air Quality Analysis (RDAQA)](../nwp_rdaqa/changelog_rdaqa_en#thursday-february-28-2013)
+
+### February 26, 2013
+
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.1](../nwp_raqdps/changelog_radps_en#tuesday-frebruary-26-2013)
 
 ### February 13, 2013
 
@@ -187,12 +308,14 @@
 * [High Resolution Deterministic Prediction System (HRDPS) 3.0.0](../nwp_hrdps/changelog_hrdps_en#wednesday-october-3-2012)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA)) 2.3.0](../nwp_rdpa/changelog_rdpa_en#wednesday-october-3-2012)
 * [Update to Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence](../nwp_rdps-cgsl/changelog_rdps-cgsl_en#wednesday-october-3-2012)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS) 1.5.0](../nwp_raqdps/changelog_radps_en#wednesday-october-3-2012)
 
 ## 2011
 
 ### December 22, 2011
 
 * [Correction snow analysis HRDPS 2.2.1](../nwp_hrdps/changelog_hrdps_en#thursday-december-22-2011)
+* [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/changelog_radps_en#thursday-december-22-2011)
 
 ### December 1, 2011
 
