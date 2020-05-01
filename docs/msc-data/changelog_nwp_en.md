@@ -28,6 +28,7 @@
 * [Regional Deterministic Prediction system (RDPS) 7.0.0](../nwp_rdps/changelog_rdps_en#wednesday-july-3-2019)
 * [Regional Ensemble Prediction system (REPS) 3.0.0](../nwp_reps/changelog_reps_en#wednesday-july-3-2019)
 * [High Resolution Deterministic Prediction system (HRDPS) 5.1.0](../nwp_hrdps/changelog_hrdps_en#wednesday-july-3-2019)
+* [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) 21](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-july-3-2019)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.6.0](../nwp_rdpa/changelog_rdpa_en#wednesday-july-3-2019)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.6.0](../nwp_hrdpa/changelog_hrdpa_en#wednesday-july-3-2019)
 * [Water Cycle Prediction Sytem (WCPS) 2.1.0](../nwp_wcps/changelog_wcps_en#wednesday-july-3-2019)
@@ -36,7 +37,6 @@
 * [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.6.0](../nwp_rdsps/changelog_rdsps_en#wednesday-july-3-2019)
 * [Regional Ensemble Storm-surge Prediction System (RESPS) 1.2.0](../nwp_resps/changelog_resps_en#wednesday-july-3-2019)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 021](../nwp_raqdps/changelog_radps_en#wednesday-july-3-2019)
-* [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) 21](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-july-3-2019)
 
 ### April 15, 2019
 
@@ -65,11 +65,11 @@
 * [Regional Deterministic Prediction system (RDPS) 6.0.0](../nwp_rdps/changelog_rdps_en#tuesday-september-18-2018)
 * [Regional Ensemble Prediction system (REPS) 2.4.0](../nwp_reps/changelog_reps_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Prediction system (HRDPS) 5.0.0](../nwp_hrdps/changelog_hrdps_en#tuesday-september-18-2018)
+* [Regional Air Quality Deterministic Prediction System FireWork version 20](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018)
 * [Regional Deterministic Precipitation Analysis (RDPA (CaPA-10km)) 4.5.0](../nwp_rdpa/changelog_rdpa_en#tuesday-september-18-2018)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA (CaPA-2.5km)) 4.5.0](../nwp_hrdpa/changelog_hrdpa_en#tuesday-september-18-2018)
 * [Retirement of the wave system "WAM-Global" (GDWPS)](../nwp_gdwps/changelog_gdwps_en#tuesday-september-18-2018)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 020](../nwp_raqdps/changelog_radps_en#tuesday-september-18-2018)
-* [Regional Air Quality Deterministic Prediction System FireWork version 20](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-september-18-2018)
 
 ### June 28, 2018
 
@@ -87,7 +87,7 @@
 
 ### April 3, 2018
 
-* [FireWork Summer 2018 - Season debut](../nwp_raqdps-fw/changelog_radps-fw_en#tuesday-april-3-2018)
+* [FireWork Summer 2018 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#tuesday-april-3-2018)
 
 ### March 2, 2018
 
@@ -128,7 +128,7 @@
 
 * [Regional Deterministic Prediction System (RDPS) 5.0.0](../nwp_rdps/changelog_rdps_en#wednesday-september-7-2016)
 * [High Resolution Deterministic Prediction System (HRDPS) 4.2.0](../nwp_hrdps/changelog_hrdps_en#wednesday-september-7-2016)
-* [FireWork Summer 2016 - Upgrade](../nwp_raqdps-fw/changelog_radps-fw_en#wednesday-september-7-2016)
+* [FireWork Summer 2016 - Upgrade](../nwp_raqdps-fw/changelog_raqdps-fw_en#wednesday-september-7-2016)
 * [Regional Air Quality Deterministic Prediction System (RAQDPS) 016](../nwp_raqdps/changelog_radps_en#wednesday-september-7-2016)
 * [Automated Aviation Forecasting System (aTAGS) version 1.0.0](../nwp_atags/changelog_atags_en#wednesday-september-7-2016)
 
@@ -140,7 +140,7 @@
 
 ### April 14, 2016
 
-* [FireWork Summer 2016 - Season debut](../nwp_raqdps-fw/changelog_radps-fw_en#thursday-april-14-2016)
+* [FireWork Summer 2016 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#thursday-april-14-2016)
 
 ### April 7, 2016
 
