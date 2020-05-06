@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.4
+
+* date: TBD
+* announcements:
+    * 
+    * 
+* new content:
+    * Add CAPS (DD-Alpha)
+* improvements: 
+    * 
+* bug fixes:
+    * Minor fixes
+    
 ## 2.3.3
 
 * date: 2020-05-01
