@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SCPA
 
-# Données et Produits du Système canadien de prévision de l'Arctique (SCPA)
+# Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
-Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision atmosphérique à haute résolution expérimental basé sur le système global de prévision déterministe (SGPD) qui fournit les conditions initiales et les conditions aux limites latérales des champs atmosphériques. Le système actuel, couplé au système de prévision glace-océan, contribue de façon importante à diverses expériences scientifiques qui font partie de l'année de la prévision polaire (YOPP) en fournissant des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien.
+Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision atmosphérique à haute résolution expérimental basé sur le système global de prévision déterministe (SGPD) qui fournit les conditions initiales et les conditions aux limites latérales des champs atmosphériques. Le système actuel, couplé au système de prévision glace-océan, contribue de façon importante à diverses expériences scientifiques qui font partie de l'[année de la prévision polaire (YOPP)](https://www.polarprediction.net/) en fournissant des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien.
 
 ## Accès
 
@@ -29,7 +29,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Spécifications techniques - Version anglaise seulement](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf)
+* [Spécifications techniques](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf) (version anglaise seulement)
 
 ## Registre des changements 
 

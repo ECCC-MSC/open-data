@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CAPS](readme_caps_en.md) > CAPS data in GRIB2 on MSC Datamart
 
-# Canadian Seasonal to the Regional Canadian Arctic Prediction System (CAPS) Data in GRIB2 Format
+# Canadian Seasonal to the experimental Regional Canadian Arctic Prediction System (CAPS) Data in GRIB2 Format
 
 This page describes the data of the [Regional Canadian Arctic Prediction System (CAPS)](readme_caps_en.md).
 

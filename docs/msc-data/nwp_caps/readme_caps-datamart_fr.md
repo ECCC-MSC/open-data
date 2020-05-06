@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Données GRIB2 de SCPA sur le Datamart du SMC
 
-# Données GRIB2 du Système canadien de prévision de l'Arctique (SCPA)
+# Données GRIB2 du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
 Cette page décrit les données du [Système canadien de prévision de l'Arctique (SCPA)](./readme_caps_fr.md). 
 
