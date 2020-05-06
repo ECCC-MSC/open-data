@@ -1,12 +1,12 @@
-[En français](readme_caps-datamart_fr.md)
+[En français](readme_caps-datamart-alpha_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CAPS](readme_caps_en.md) > CAPS data in GRIB2 on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CAPS](readme_caps_en.md) > CAPS data in GRIB2 on DD-Alpha
 
-# Canadian Seasonal to the experimental Regional Canadian Arctic Prediction System (CAPS) Data in GRIB2 Format
+# Experimental Canadian Arctic Prediction System (CAPS) Data in GRIB2 Format
 
-This page describes the data of the [Regional Canadian Arctic Prediction System (CAPS)](readme_caps_en.md).
+This page describes the data of the [Canadian Arctic Prediction System (CAPS)](readme_caps_en.md) available on the MSC testing data repository DD-Alpha.
 
 ## Data location 
 
