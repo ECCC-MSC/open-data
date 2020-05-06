@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Canadian Arctic Prediction System (CAPS)
 
-CAPS provides an important contribution to various scientific experiments that are part of the Year of polar prediction (YOPP) and provides km-scale NWP forecasts for the canadian Arctic.
+The Canadian Arctic Prediction System (CAPS) is an experimental high-resolution atmospheric prediction system based on the Global Deterministic Prediction System (GDPS) that provides initial and lateral boundary conditions for atmospheric fields. The current system, coupled with the ice-ocean forecasting system, is making an important contribution to various scientific experiments that are part of the Polar Forecast Year (YOPP) by providing kilometre-scale numerical weather forecasts in the Canadian Arctic.
 
 ## Access
 
@@ -29,7 +29,7 @@ Upcoming.
 
 ## Technical documentation
 
-Upcoming.
+* [Technical Specifications](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf)
 
 ## Change log
 
