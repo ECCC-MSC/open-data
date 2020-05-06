@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCPA
 
-# Chronologie des changements apportés Système canadien de prévision de l'artique (SCPA)
+# Chronologie des changements apportés au Système canadien de prévision de l'Artique (SCPA)
 
 ## Le mardi 21 janvier 2020
 
@@ -14,7 +14,7 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le jeudi 28 juin 2018
 
-### Mise à jour majeure du Système de prévision de l'artique SCPA version 1.1.0 (mode expérimental) du Centre météorologique canadien (CMC)
+### Mise à jour majeure du Système de prévision de l'Artique SCPA version 1.1.0 (mode expérimental) du Centre météorologique canadien (CMC)
 
 Le jeudi 28 juin 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour majeure de son système de prévision de l'artique SCPA (mode expérimental).
 
