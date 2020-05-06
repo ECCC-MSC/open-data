@@ -1,12 +1,12 @@
-[In English](readme_caps-datamart_en.md)
+[In English](readme_caps-datamart-alpha_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Données GRIB2 de SCPA sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Données GRIB2 de SCPA sur DD-Alpha
 
 # Données GRIB2 du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
-Cette page décrit les données du [Système canadien de prévision de l'Arctique (SCPA)](./readme_caps_fr.md). 
+Cette page décrit les données du [Système canadien de prévision de l'Arctique (SCPA)](./readme_caps_fr.md) disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC.
 
 ## Adresse des données 
 

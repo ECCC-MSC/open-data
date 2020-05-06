@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CAPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CAPS experimental
 
-# Data and Products of the experimental Regional Canadian Arctic Prediction System (CAPS)
+# Data and Products of the experimental Canadian Arctic Prediction System (CAPS)
 
 The Canadian Arctic Prediction System (CAPS) is an experimental high-resolution atmospheric prediction system based on the Global Deterministic Prediction System (GDPS) that provides initial and lateral boundary conditions for atmospheric fields. The current system, coupled with the ice-ocean forecasting system, is making an important contribution to various scientific experiments that are part of the [Polar Forecast Year (YOPP)](https://www.polarprediction.net/) by providing kilometre-scale numerical weather forecasts in the Canadian Arctic.
 
@@ -12,9 +12,9 @@ The Canadian Arctic Prediction System (CAPS) is an experimental high-resolution 
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+These data are available through the open data services as following:
 
-* [GRIB2 data available on the MSC Datamart](readme_caps-datamart_en.md) 
+* [Experimental GRIB2 data available on the MSC testing data repository DD-Alpha](readme_caps-datamart-alpha_en.md) 
 * [Data available via geospatial web services](../../msc-geomet/readme_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.

@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SCPA
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SCPA expérimental
 
 # Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
@@ -12,9 +12,9 @@ Le Système canadien de prévision de l'Arctique (SCPA) est un système de prév
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles via les services de données ouvertes selon:
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_caps-datamart_fr.md) 
+* [Données GRIB2 expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_caps-datamart-alpha_fr.md) 
 * [Données disponibles via les services web géospatiaux](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

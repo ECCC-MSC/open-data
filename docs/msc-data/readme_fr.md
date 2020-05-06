@@ -33,6 +33,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
     * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
     * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
+    * [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
     * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
     * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
     * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
