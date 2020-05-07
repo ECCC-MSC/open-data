@@ -49,7 +49,7 @@ Examples :
 * CMC_riops_iiceconc_sfc_0_ps5km60N_3h-mean_2016020312_P003.nc
 
 The files containing data on the ps5km60N grid can be found at the following address:
-* http://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/ 
+* [https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/](https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/) 
 
 where:
 
