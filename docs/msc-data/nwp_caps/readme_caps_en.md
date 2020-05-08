@@ -8,7 +8,7 @@
 
 The Canadian Arctic Prediction System (CAPS) is very similar to the High Resolution Deterministic Prediction System north domain (HRDPS-north) which will be replaced by CAPS.
 
-CAPS is downscaled from ECCC's Global Deterministic Prediction System, the GDPS, which provides initial conditions and lateral boundary conditions for the atmospheric fields.  In the current system, the atmospheric model is coupled with the ice-ocean model of the ice-ocean prediction system [RIOPS](../nwp_riops/readme_riops_en.md), all the other initial surface fields come from the global configuration of the land-data assimilation system, CaLDAS.
+CAPS is downscaled from ECCC's Global Deterministic Prediction System, the GDPS, which provides initial conditions and lateral boundary conditions for the atmospheric fields.  In the current system, the atmospheric model is coupled with the ice-ocean model of the ice-ocean prediction system (RIOPS), all the other initial surface fields come from the global configuration of the land-data assimilation system, CaLDAS.
 
 The system is running on a 3 km domain of 2250 x 1850 horizontal grid points (covering the entire Arctic basin and Hudson Bay) and 62 vertical levels. 
 

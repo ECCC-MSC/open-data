@@ -8,7 +8,7 @@
 
 Le Système canadien de prévision de l'Arctique (SCPA) est un système très similaire au Système à haute résolution de prévision déterministe (SHRPD), dont le domaine nord actuel sera remplacé par le SCPA.
 
-C'est un modèle à réduction d'échelle du Système global de prévision déterministe (SGPD) de ECCC qui lui fournit les conditions initiales et aux frontières pour les champs atmosphériques. Dans le système actuel, le modèle atmosphérique est couplé avec le modèle océan-glace du système de prévision océan-glace [SRPOG](../nwp_riops/readme_riops_fr.md), tous les autres champs de surface initiaux proviennent de la configuration globale du système d'assimilation de surface CaLDAS
+C'est un modèle à réduction d'échelle du Système global de prévision déterministe (SGPD) de ECCC qui lui fournit les conditions initiales et aux frontières pour les champs atmosphériques. Dans le système actuel, le modèle atmosphérique est couplé avec le modèle océan-glace du système de prévision océan-glace (SRPOG), tous les autres champs de surface initiaux proviennent de la configuration globale du système d'assimilation de surface CaLDAS.
 
 SCPA tourne sur une grille horizontale 2250 x 1850 , d'une résolution approximative de 3 km (couvrant le bassin arctique et la Baie d'Hudson).
 
