@@ -6,7 +6,15 @@
 
 # Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
-Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision atmosphérique à haute résolution expérimental basé sur le système global de prévision déterministe (SGPD) qui fournit les conditions initiales et les conditions aux limites latérales des champs atmosphériques. Le système actuel, couplé au système de prévision glace-océan, contribue de façon importante à diverses expériences scientifiques qui font partie de l'[année de la prévision polaire (YOPP)](https://www.polarprediction.net/) en fournissant des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien.
+Le Système canadien de prévision de l'Arctique (SCPA) est un système très similaire au Système à haute résolution de prévision déterministe (SHRPD), dont le domaine nord actuel sera remplacé par le SCPA.
+
+C'est un modèle à réduction d'échelle du Système global de prévision déterministe (SGPD) de ECCC qui lui fournit les conditions initiales et aux frontières pour les champs atmosphériques. Dans le système actuel, le modèle atmosphérique est couplé avec le modèle océan-glace du système de prévision océan-glace (SRPOG), tous les autres champs de surface initiaux proviennent de la configuration globale du système d'assimilation de surface CaLDAS.
+
+SCPA tourne sur une grille horizontale 2250 x 1850 , d'une résolution approximative de 3 km (couvrant le bassin arctique et la Baie d'Hudson).
+
+La différence majeure entre le SCPA et le SHRPD actuel est l'introduction de la nouvelle méthode de calcul pour la microphysique des nuages appelée prédiction des propriétés des particules (P3) qui est responsable du paramétrage des nuages et des précipitations.
+
+Le système actuel, couplé au système de prévision glace-océan, contribue de façon importante à diverses expériences scientifiques qui font partie de l'[année de la prévision polaire (YOPP)](https://www.polarprediction.net/) en fournissant des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien.
 
 ## Accès
 

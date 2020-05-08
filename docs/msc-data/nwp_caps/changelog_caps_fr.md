@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCPA
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Changements au SCPA
 
 # Chronologie des changements apportés au Système canadien de prévision de l'Artique (SCPA)
 
