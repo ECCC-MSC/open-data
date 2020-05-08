@@ -12,12 +12,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: TBD
 * announcements:
-    * 
-    * 
+    * Announced to GeoMet-Info and dd_info
+    * Internal message sent
 * new content:
     * Add CAPS (DD-Alpha)
 * improvements: 
-    * 
+    * tbd
 * bug fixes:
     * Minor fixes
     
@@ -25,8 +25,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: 2020-05-01
 * announcements:
-    * Announced to GeoMet-Info and dd_info
-    * Internal message sent
+    * Not announced
 * new content:
     * Add Firework summer season debut - April 1st 2020
 * improvements: 
