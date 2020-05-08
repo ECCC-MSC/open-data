@@ -6,7 +6,15 @@
 
 # Data and Products of the experimental Canadian Arctic Prediction System (CAPS)
 
-The Canadian Arctic Prediction System (CAPS) is an experimental high-resolution atmospheric prediction system based on the Global Deterministic Prediction System (GDPS) that provides initial and lateral boundary conditions for atmospheric fields. The current system, coupled with the ice-ocean forecasting system, is making an important contribution to various scientific experiments that are part of the [Polar Forecast Year (YOPP)](https://www.polarprediction.net/) by providing kilometre-scale numerical weather forecasts in the Canadian Arctic.
+The Canadian Arctic Prediction System (CAPS) is very similar to the High Resolution Deterministic Prediction System north domain (HRDPS-north) which will be replaced by CAPS.
+
+CAPS is downscaled from ECCC's Global Deterministic Prediction System, the GDPS, which provides initial conditions and lateral boundary conditions for the atmospheric fields.  In the current system, the atmospheric model is coupled with the ice-ocean model of the ice-ocean prediction system [RIOPS](../nwp_riops/readme_riops_en.md), all the other initial surface fields come from the global configuration of the land-data assimilation system, CaLDAS.
+
+The system is running on a 3 km domain of 2250 x 1850 horizontal grid points (covering the entire Arctic basin and Hudson Bay) and 62 vertical levels. 
+
+The major differences between CAPS and the current HRDPS is the introduction of the predicted particle properties (P3) cloud microphysics scheme, which is responsible for parameterizing the grid-scale clouds and precipitation.
+
+The current system, coupled with the ice-ocean forecasting system, is making an important contribution to various scientific experiments that are part of the [Polar Forecast Year (YOPP)](https://www.polarprediction.net/) by providing kilometre-scale numerical weather forecasts in the Canadian Arctic.
 
 ## Access
 
