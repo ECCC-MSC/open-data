@@ -34,7 +34,7 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 
 Tutorials:
 
-* **Use data in the QGIS desktop software**:
+* **Access and use data in the QGIS desktop software**:
     * [Add, query and animate WMS layers](usage/tutorial_WMS_QGIS_en.md)
     * [Add and query OGC API Features layers](usage/tutorial_OAFeat_QGIS_en.md)
     * [Add raw data](usage/tutorial_raw-data_QGIS_en.md)

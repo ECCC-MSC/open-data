@@ -34,7 +34,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 Tutoriels :
 
-* **Utiliser les données dans le logiciel de bureau QGIS** :
+* **Accéder et utiliser les données dans le logiciel de bureau QGIS** :
     * [Ajouter, effectuer des requêtes et animer des couches WMS](usage/tutorial_WMS_QGIS_fr.md)
     * [Ajouter et effectuer des requêtes aux couches OGC API Features](usage/tutorial_OAFeat_QGIS_fr.md)
     * [Ajouter des données brutes](usage/tutorial_raw-data_QGIS_fr.md)
