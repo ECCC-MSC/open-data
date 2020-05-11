@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Internal message sent
 * new content:
     * Add CAPS (DD-Alpha)
+    * Add RIOPS (DD-Alpha)
 * improvements: 
     * tbd
 * bug fixes:
