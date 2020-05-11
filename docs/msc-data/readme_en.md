@@ -35,6 +35,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
     * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md) 
     * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
+    * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
     * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
