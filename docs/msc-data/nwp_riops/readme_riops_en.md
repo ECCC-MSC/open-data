@@ -6,7 +6,7 @@
 
 # Data and Products of the experimental Regional Ice Ocean Prediction System (RIOPS)
 
-The Regional Ice Ocean Prediction System (RIOPS) is an experimental high-resolution atmospheric forecasting system based on the Global Deterministic Prediction System (GDPS) that provides initial and lateral boundary conditions for atmospheric fields. The current system is making an important contribution to various scientific experiments that are part of the [Year of Polar Outlooks (YOPP)](https://www.polarprediction.net/) by providing numerical weather forecasts at the kilometre scale in the Canadian Arctic.
+The Regional Ice Ocean Prediction System (RIOPS) provides 48 hr ice and ocean forecasts four times per day on a 1/12° resolution grid (3-8 km). RIOPS is initialized using analyses from the [Global Ice-Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md). Atmospheric fluxes for 48 hr forecasts are calculated using fields from the [Regional Deterministic Prediction System (RDPS)](../nwp_rdps/readme_rdps_en.md).
 
 ## Access
 
