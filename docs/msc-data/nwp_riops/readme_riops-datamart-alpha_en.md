@@ -6,7 +6,17 @@
 
 # Experimental Regional Ice Ocean Prediction System (RIOPS) Data in GRIB2 Format
 
-This page describes the data of the [Regional Ice Ocean Prediction System (RIOPS)](readme_riops_en.md) available on the MSC testing data repository DD-Alpha.
+The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides instantaneous sea ice and time-mean ocean forecast fields produced by its experimental Regional Ice-Ocean Prediction System (RIOPS) and interpolated to a grid in north-polar stereographic projection with 5km resolution at the standard parallel 60° N (ps5km60N). 
+
+The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions. 
+
+RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 2 day forecasts daily based at [00, 12] UTC on a subset of the 1/12° resolution global tri-polar grid (ORCA12). 
+
+RIOPS includes a 3DVar ice concentration analysis (assimilating sattelite remote sensing and Canadian Ice Service ice charts) while the large scales of the ocean analysis are constrained by spectrally nudging the temperature and salinity fields to those of the CCMEP Global Ice Ocean Prediction System (which itself includes a full multivariate assimilation system that combines satellite observations with in situ observations). 
+
+Surface air-sea fluxes for 2 day forecasts are calculated by coupling NEMO-CICE to the atmospheric model run in the Canadian Arctic Prediction System. As such, the present RIOPS forecasts are now produced inside [CAPS](../nwp_caps/readme_caps_en.md).
+
+This system makes an important contribution to various scientific experiments that are part of the [Year of the Polar Forecast (YOPP)](https://www.polarprediction.net/) by providing numerical weather forecasts at the kilometre scale in the Canadian Arctic.
 
 ## Data location 
 
