@@ -29,8 +29,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Version actuelle du Système Régional de Prévision Océan-Glace](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_f.pdf)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_e.pdf) (version anglaise seulement)
+* [Version actuelle du Système Régional de Prévision Océan-Glace](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_e.pdf) (version anglaise seulement)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_f.pdf)
 
 ## Registre des changements 
 

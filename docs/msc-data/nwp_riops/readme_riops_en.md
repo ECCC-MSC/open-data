@@ -29,8 +29,8 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the Regional Ice Ocean Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_e.pdf)
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_e.pdf)
+* [Current version of the Regional Ice Ocean Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_e.pdf)
 
 ## Change log
 
