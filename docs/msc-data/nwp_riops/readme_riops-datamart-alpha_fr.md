@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Données GRIB2 de SRPOG sur DD-Alpha
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Données GRIB2 du SRPOG sur DD-Alpha
 
 # Données GRIB2 du Système Régional de Prévision Océan-Glace (SRPOG) expérimental
 
