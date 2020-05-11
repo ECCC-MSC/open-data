@@ -64,17 +64,6 @@ Exemples de noms de fichier :
 
 * CMC_riops_iiceconc_sfc_0_ps5km60N_3h-mean_2016020312_P003.nc
 
-Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
-
-* [https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/](https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/)
-
-où :
-
-* __n__ : Numéro de la dimension spatiale des champs de prévision [2 ou 3]   
-* __HH__ : Heure en UTC du début de la simulation [00, 12]
-* __hhh__ : Heure de la prévision ; chaque 3 heures en commençant par l'heure 0 [000, 003, ..., 048] pour n=2 et l'heure 3 [003, 006, ..., 048] pour n=3
-
-
 ## Liste des variables
 
 Liste des variables (champs de prévision) disponibles dans les fichiers contenant des champs 2D :

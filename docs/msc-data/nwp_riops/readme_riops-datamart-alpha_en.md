@@ -65,15 +65,6 @@ Examples :
 
 * CMC_riops_iiceconc_sfc_0_ps5km60N_3h-mean_2016020312_P003.nc
 
-The files containing data on the ps5km60N grid can be found at the following address:
-* [https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/](https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/) 
-
-where:
-
-* __n__ : number of spatial dimensions of the forecast fields [2 or 3]
-* __HH__ : Start hour of model run in UTC [00, 12]
-* __hhh__ : forecast hour: every 3 hours starting from hour 0 [000, 003, ..., 048] for n=2 and from hour 3 [003, 006, ..., 048] for n=3
-
 ## List of variables
 
 List of variables (forecast fields) available in the files containing 2D fields:
