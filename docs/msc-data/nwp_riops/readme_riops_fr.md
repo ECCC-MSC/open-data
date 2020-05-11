@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPOG expérimental
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPOG
 
-# Données et Produits du Système Régional de Prévision Océan-Glace (SRPOG) expérimental
+# Données et Produits du Système Régional de Prévision Océan-Glace (SRPOG)
 
 Le Système régional de prévision océan-glace (SRPOG) fournit quatre fois par jour des prévisions de l'océan et de la glace à 48 heures sur une grille à 1/12° de résolution (de 3 à 8 km). Le SRPOG est initialisé avec l'utilisation d'analyses tirées du [Système global de prévision océan-glace (SGPOG)](../nwp_giops/readme_giops_fr.md). Les calculs des flux atmosphériques des prévisions à 48 heures utilisent des champs tirés du [Système régional de prévision déterministe (SRPD)](../nwp_rdps/readme_rdps_fr.md).
 

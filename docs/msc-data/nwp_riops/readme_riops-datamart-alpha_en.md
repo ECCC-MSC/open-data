@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RIOPS](readme_riops_en.md) > RIOPS data in GRIB2 on DD-Alpha
 
-# Experimental Regional Ice Ocean Prediction System (RIOPS) Data in GRIB2 Format
+# Regional Ice Ocean Prediction System (RIOPS) Data in GRIB2 Format
 
 The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides instantaneous sea ice and time-mean ocean forecast fields produced by its experimental Regional Ice-Ocean Prediction System (RIOPS) and interpolated to a grid in north-polar stereographic projection with 5km resolution at the standard parallel 60° N (ps5km60N). 
 
