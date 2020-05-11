@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPOG
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_en.md) > Changements au SRPOG
 
 # Chronologie des changements apportés au Système Régional de Prévision Océan-Glace (SRPOG)
 
