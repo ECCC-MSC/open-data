@@ -78,29 +78,29 @@ where:
 
 List of variables (forecast fields) available in the files containing 2D fields:
 
-* votemper :	Potential temperature of sea water at the first model level
-* vosaline :	Sea water salinity at the first model level
-* vozocrtx :	X-component of water velocity at the first model level
-* vomecrty :	Y-component of water velocity at the first model level
-* sossheig :	Sea surface height
-* somixhgt :	Turbocline depth
-* sokaraml :	Mixed layer depth based on a density criterion
-* iiceconc :	Sea ice  fraction	
-* iicevol :		Volume of sea ice per unit grid cell area
-* itzocrtx :	X-component of sea ice velocity	
-* itmecrty :	Y-component of sea ice velocity	
-* isnowvol :	Volume of snow on sea ice per unit grid cell area
-* iicesurftemp :	Surface temperature of sea ice/snow
-* iicepressure :	Vertically integrated ice internal pressure
-* iicestrength :	Vertically integrated compressive ice strength
+* __votemper__ :	Potential temperature of sea water at the first model level
+* __vosaline__ :	Sea water salinity at the first model level
+* __vozocrtx__ :	X-component of water velocity at the first model level
+* __vomecrty__ :	Y-component of water velocity at the first model level
+* __sossheig__ :	Sea surface height
+* __somixhgt__ :	Turbocline depth
+* __sokaraml__ :	Mixed layer depth based on a density criterion
+* __iiceconc__ :	Sea ice  fraction	
+* __iicevol__ :		Volume of sea ice per unit grid cell area
+* __itzocrtx__ :	X-component of sea ice velocity	
+* __itmecrty__ :	Y-component of sea ice velocity	
+* __isnowvol__ :	Volume of snow on sea ice per unit grid cell area
+* __iicesurftemp__ :	Surface temperature of sea ice/snow
+* __iicepressure__ :	Vertically integrated ice internal pressure
+* __iicestrength__ :	Vertically integrated compressive ice strength
 
 
 List of variables (forecast fields) available in the files containing 3D fields:
 
-* votemper :	Potential temperature of sea water
-* vosaline :	Sea water salinity
-* vozocrtx :	X-component of water velocity
-* vomecrty :	Y-component of water velocity
+* __votemper__ :	Potential temperature of sea water
+* __vosaline__ :	Sea water salinity
+* __vozocrtx__ :	X-component of water velocity
+* __vomecrty__ :	Y-component of water velocity
 
 ## Support
 
