@@ -26,7 +26,14 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The data can be accessed at the following URLs :
 
-* [https://dd.alpha.meteo.gc.ca/model_riops/netcdf](https://dd.alpha.meteo.gc.ca/model_riops/netcdf)
+* [https://dd.alpha.weather.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/](https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/)
+
+* __nd__ : Number of spatial dimensions of the forecast fields [2d or 3d].
+* __YYYY__ : Year of the forecast start [2018, 2019, ...].
+* __MM__ : Month of the forecast start [01, 02, 03, ..., 12].
+* __DD__ : Day of the forecast start.
+* __HH__ : Start hour of model run in UTC [00,12].
+* __hhh__ : Forecast hour.
 
 An on-line archive is available during the YOPP project
 

@@ -26,7 +26,14 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.alpha.meteo.gc.ca/model_riops/netcdf](https://dd.alpha.meteo.gc.ca/model_riops/netcdf)
+* [https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/nd/YYYY/MM/DD/HH/hhh/](https://dd.alpha.meteo.gc.ca/yopp/model_riops/netcdf/forecast/polar_stereographic/)
+
+* __nd__ : Numéro de la dimension spatiale des champs de prévision [2d ou 3d]. 
+* __YYYY__: L’année du début de la prévision [2012, 2013, ...].
+* __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12].
+* __DD__ : Jour du début de la prévision.
+* __HH__ : Heure en UTC du début de la simulation [00,12].
+* __hhh__ : Heure de la prévision.
 
 Une archive en ligne est disponible durant toute la durée du projet YOPP.
 
