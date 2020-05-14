@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add CAPS (DD-Alpha)
     * Add RIOPS (DD-Alpha)
 * improvements: 
-    * tbd
+    * Changed wording from 'on-the-fly' to 'on demand'
 * bug fixes:
     * Minor fixes
     
