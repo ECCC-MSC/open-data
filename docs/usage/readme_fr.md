@@ -30,7 +30,9 @@ Les données ouvertes du SMC dans des logiciel de bureau soit (A) en se connecta
 
 Les données ouvertes du SMC peuvent être visualisées interactivement dans les logiciels qui supportent le standard Web Map Service (WMS) de l'Open Geospatial Consortium (OGC), tel que le logiciel libre [QGIS](https://qgis.org) ainsi que ArcGIS d'Esri. Les instructions pour ajouter les couches WMS de GeoMet du SMC dans [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) et [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) sont disponibles. Les logiciels de bureau peuvent permettre aux usagers de changer les couleurs des couches (styles WMS) ainsi qu'animer les couches pour les pas de temps disponibles. Les détails techniques sur les paramètres WMS disponibles sont documentés dans la [section sur les services web](../msc-geomet/web-services_fr.md). Pour télécharger des données brutes, veuillez vous référer à la section [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes).
 
-Les tutoriels suivants sont disponibles pour le logiciel de bureau QGIS : [ajouter, effectuer des requêtes et animer des couches WMS](tutorial_WMS_QGIS_fr.md), [ajouter et effectuer des requêtes aux couches OGC API Features](tutorial_OAFeat_QGIS_fr.md) et [ajouter des données brutes](tutorial_raw-data_QGIS_fr.md).
+Les tutoriels suivants sont disponibles pour le logiciel de bureau QGIS : [ajouter, effectuer des requêtes et animer des couches WMS](tutorial_WMS_QGIS_fr.md), [ajouter et effectuer des requêtes aux couches OGC API Features](tutorial_OAFeat_QGIS_fr.md) et [ajouter des données brutes](tutorial_raw-data_QGIS_fr.md). L'image suivante présente la racine de l'arborescence des couches de GeoMet-Météo dans QGIS :
+
+![L'arborescence des couches de GeoMet-Météo dans QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/GeoMet-Weather_QGIS_Layer-tree_fr.jpg)
 
 ### Cartes interactives en-ligne et applications mobiles
 

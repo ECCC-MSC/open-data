@@ -15,8 +15,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
 * new content:
-    * Add CAPS (DD-Alpha)
-    * Add RIOPS (DD-Alpha)
+    * Added CAPS (DD-Alpha)
+    * Added RIOPS (DD-Alpha)
+    * Added GeoMet-Weather layer tree screenshot in usage overview
 * improvements: 
     * Changed wording from 'on-the-fly' to 'on demand'
 * bug fixes:
