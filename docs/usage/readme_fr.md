@@ -12,7 +12,7 @@ Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouve
 * [Comment visualiser les données](#comment-visualiser-les-donnees)
     * [Logiciel de bureau](#logiciel-de-bureau)
     * [Cartes interactives en-ligne et applications mobiles](#cartes-interactives-en-ligne-et-applications-mobiles)
-    * [Images à la volée](#images-a-la-volee)
+    * [Images sur demande](#images-sur-demande)
 * [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes)
     * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
     * [Services web de données brutes](#services-web-de-donnees-brutes)
@@ -59,13 +59,13 @@ Les services WMS de GeoMet du SMC peuvent également être intégrées dans des 
 
 Pour de l'information additionnelle sur les capacités et les paramètres des services web WMS, WFS et WCS de GeoMet du SMC, veuillez vous référer à la section sur la [documentation technique des services web GeoMet du SMC](../msc-geomet/web-services_fr.md).
 
-### Images à la volée
+### Images sur demande
 
-GeoMet du SMC peut également servir des images à la volée par le biais d'une requête WMS GetMap. Voici des exemples.
+GeoMet du SMC peut également servir des images sur demande par le biais d'une requête WMS GetMap. Voici des exemples.
 
 #### Exemple 1 - Température de surface du Système global de prévision déterministe (SGPD)
 
-La requête WMS GetMap suivante retourne une image de la couche de température de l'air du Système global de prévision déterministe (SGPD). Cette image est générée à la volée au moment de la requête.
+La requête WMS GetMap suivante retourne une image de la couche de température de l'air du Système global de prévision déterministe (SGPD). Cette image est générée sur demande au moment de la requête.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
@@ -77,7 +77,7 @@ Retourne :
 
 #### Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)
 
-La requête WMS GetMap suivante retourne une image de la couche de salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG). Cette image est générée à la volée au moment de la requête.
+La requête WMS GetMap suivante retourne une image de la couche de salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG). Cette image est générée sur demande au moment de la requête.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
