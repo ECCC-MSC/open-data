@@ -19,7 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added RIOPS (DD-Alpha)
     * Added GeoMet-Weather layer tree screenshot in usage overview
 * improvements: 
-    * Changed wording from 'on-the-fly' to 'on demand'
+    * Changed wording from 'on-the-fly' to 'on-demand'
 * bug fixes:
     * Minor fixes
     

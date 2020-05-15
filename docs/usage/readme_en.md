@@ -13,7 +13,7 @@ Overview and examples on how to access and use Meteorological Service of Canada 
 * [How to visualize the data](#how-to-visualize-the-data)
     * [Desktop software](#desktop-software)
     * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
-    * [On demand images](#on-demand-images)
+    * [On-demand images](#on-demand-images)
 * [How to access raw data](#how-to-access-raw-data)
     * [Raw data download](#raw-data-download)
     * [Raw data web services](#raw-data-web-services)
@@ -62,13 +62,13 @@ MSC Geomet Web Map Services (WMS) can also be integrated into mobile application
 
 For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
 
-### On demand images
+### On-demand images
 
-MSC Geomet can also serve images on demand via a WMS GetMap request. See the examples below.
+MSC Geomet can also serve images on-demand via a WMS GetMap request. See the examples below.
 
 #### Example 1 - Global Deterministic Prediction System (GDPS) Surface Temperature
 
-The following WMS GetMap request returns an image of the Global Deterministic Prediction System (GDPS) air temperature layer. The image is created on demand at the time of the request.
+The following WMS GetMap request returns an image of the Global Deterministic Prediction System (GDPS) air temperature layer. The image is created on-demand at the time of the request.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
@@ -80,7 +80,7 @@ Returns:
 
 #### Example 2 - Global Ice Ocean Prediction System (GIOPS) Sea Water Salinity
 
-The following WMS GetMap request returns an image of the Global Ice Ocean Prediction System (GIOPS) sea water salinity layer. The image is created on demand at the time of the request.
+The following WMS GetMap request returns an image of the Global Ice Ocean Prediction System (GIOPS) sea water salinity layer. The image is created on-demand at the time of the request.
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
 &CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
