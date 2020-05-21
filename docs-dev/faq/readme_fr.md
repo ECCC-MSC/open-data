@@ -22,7 +22,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Peut-on avoir un fil de données GRIB ?](#peut-on-avoir-un-fil-de-données-grib)
 * [Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?](#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables)
 * [Peut-on avoir accès aux observations en temps réel ?](#peut-on-avoir-accès-aux-observations-en-temps-réel)
-* [Peut-on avoir accès aux avertisssements ?](#peut-on-avoir-accès-aux-avertissements)
+* [Peut-on avoir accès aux avertissements ?](#peut-on-avoir-accès-aux-avertissements)
 * [Est-il possible d'obtenir un shapefile des régions d'avertissement ?](#est-il-possible-d-'-obtenir-un-shapefile-des-régions-d-'-avertissements)
 * [Les images satellitaires sont-elles dipsonibles ?](#les-images-satellitaires-sont-elles-disponibles)
 * [Peut-on avoir accès et utiliser les icônes du produit XML des Citypage ?](#peut-on-avoir-accès-et-utiliser-les-icônes-du-produit-xml-des-citypage)
