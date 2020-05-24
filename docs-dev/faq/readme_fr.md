@@ -60,7 +60,25 @@ partie afin de permettre à la communauté des usagers d'interagir plus facileme
 http://meteocentre.com/help/msc-open-data/
 
 Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'Environnement et Changement climatique Canada (ECCC) ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
- 
+
+## Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques en un temps et un lieu donné ?
+
+Environnement et Changement climatique Canada offre un API pour accéder aux données météorologiques canadiennes par le biais de [services Web géospatiaux appelés MSC GeoMet](../msc-geomet/readme_fr.md), grâce aux standards WMS.
+
+Les données disponibles via les services WMS peuvent facilement être intégrées dans les applications iOS et nous connaissons plusieurs clients qui le font avec succès.
+
+Pour votre information, plus de 6000 couches sont disponibles, voir le GetCapabilities :
+
+[https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities](https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities)
+
+Nous avons rassemblé plusieurs [cas d'utilisation et des tutoriels](../usage/readme_fr.md) afin d'aider nos usagers à exploiter nos services web. Aussi, un [exemple Python interactif d'utilisation des données ouvertes du SMC]() explique comment extraire et traiter des données météorologiques brutes à l'aide du langage de programmation Python afin de créer un outil qui permet de calculer les profits anticipés de la vente d'un produit dont la demande est affectée par les conditions météorologiques.
+
+Les changements apportés aux services Web géospatiaux GeoMet sont annoncés via la liste [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
+
+Enfin, veuillez noter que GeoMet s'appuyant sur des normes ouvertes, les utilisateurs ne sont pas affectés lorsque les données sous-jacentes sont modifiées : les méthodes d'accès aux données restent stables et fiables.
+
+GeoMet répond à plus d'un million de demandes par jour et est libre d'utilisation tant que la source est attribuée. Voir la [licence](../licence/redame_fr.md) pour plus de détails.
+
 ## Comment peut-on télécharger les données ?
 
 Le Service météorologique du Canada (SMC) a mis en place un [fil de données](../msc-datamart/amqp_fr.md) annonçant les fichiers disponibles sur le Datamart du SMC. Ce fil de données utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). 
