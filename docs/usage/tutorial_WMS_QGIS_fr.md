@@ -10,6 +10,7 @@ Exemples de manipulation des données des services web géospatiaux [GeoMet du S
 
 * [Ajout de couches WMS dans QGIS](#ajout-de-couches-wms-dans-qgis)
 * [Interaction possible avec les données WMS dans QGIS](#interactions-possibles-avec-les-données-wms-dans-qgis)
+* [Naviguer dans les styles de couches WMS disponibles](#naviguer-dans-les-styles-de-couches-wms-disponibles)
 * [Manipulation de la composante de temporelle du WMS](#manipulation-de-la-composante-temporelle-du-wms)
 
 ## Ajout de couches WMS dans QGIS
@@ -45,6 +46,18 @@ Voici les manipulations de base d'une couche WMS :
 Exemple animé de ces manipulations :
 
 ![Exemple d'intéractions avec les données WMS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-pan-zoom-gfi_fr.gif)
+
+## Naviguer dans les styles de couches WMS disponibles
+[GeoMet du SMC](../msc-geomet/readme_fr.md) fournit souvent plusieurs représentations graphiques différentes pour une même couche. Le client peut choisir d'afficher les données en utilisant le style le plus approprié à son cas d'utilisation. Pour plus d'informations sur les styles WMS, visitez la page [spécification des styles](https://eccc-msc.github.io/open-data/msc-geomet/web-services_en/#handling-styles).
+
+Il est possible d'utiliser QGIS pour parcourir les styles disponibles pour une couche WMS donnée et l'exemple suivant montre comment faire :
+
+1. Dans la barre de menu, choisissez : <b>Couche - Ajouter une couche - Ajouter une couche WMS/WMTS...</b><br>
+2. Sélectionnez le service WMS souhaité et cliquez sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-connexion_fr.png" width=7%>
+3. Naviguez dans l'arborescence pour atteindre la couche souhaitée, et développez le dernier niveau
+4. Choisissez parmi les styles disponibles, celui que vous souhaitez visualiser pour la couche WMS sélectionnée et cliquez sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-add_fr.png" width=5%> pour afficher la couche
+
+[Naviguer dans les styles WMS avec QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-styles_fr.png)
 
 ## Manipulation de la composante temporelle du WMS
 

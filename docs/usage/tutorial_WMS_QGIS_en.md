@@ -10,6 +10,7 @@ Usage examples of [MSC GeoMet](../msc-geomet/readme_en.md) geospatial web servic
 
 * [Adding WMS layers in QGIS](#adding-wms-layers-in-qgis)
 * [Possible interactions with WMS layers in QGIS](#possible-interactions-with-wms-layers-in-qgis)
+* [Browsing through available WMS layer styles](#browsing-through-available-wms-layer-styles)
 * [Manipulating the time component of the WMS layers](#manipulating-the-time-component-of-the-wms-layers)
 
 ## Adding WMS layers in QGIS
@@ -32,6 +33,18 @@ In the following example, the air temperature layer of the MSC Global Determinis
 Animated example of the procedure:
 
 ![Adding WMS layers in QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_add-wms_en.gif)
+
+## Browsing through available WMS layer styles
+[MSC GeoMet](../msc-geomet/readme_en.md) often provides several different graphical representations for a single layer. The client can choose to display the data using the style most appropriate for their use case. For more information on the WMS styles, visit the [handling styles](https://eccc-msc.github.io/open-data/msc-geomet/web-services_en/#handling-styles) page.
+
+It's possible to use QGIS to browse through available styles for a given WMS layer and the following example will show how to do so:
+
+1. In the menu bar, choose: <b>Layer - Add Layer - Add WMS/WMTS layer...</b><br>
+2. Select the desired WMS service and click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-connexion_en.png" width=7%>
+3. Navigate through the tree structure to reach the desired layer, and expand the last level
+4. Choose amongst the available styles, the one you want to visualize for the selected WMS layer and click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-add_en.png" width=5%> to display the layer
+
+![Browsing through WMS styles with QGIS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-styles_en.png)
 
 ## Possible interactions with WMS layers in QGIS
 
