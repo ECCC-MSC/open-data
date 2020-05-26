@@ -2,19 +2,20 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données hydrométriques
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Observations hydrométriques
 
-# Données et produits hydrométriques en temps réel
+# Données d'observations hydrométriques
 
-Données hydrométriques en temps réel contenant les données unitaires de niveau d'eau et de débit en temps réel pour les rivières et les lacs dans tout le Canada.
+Données hydrométriques en temps réel et historiques contenant les stations, les données de niveau d'eau et de débit pour les rivières et les lacs dans tout le Canada.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services du serveur de données Datamart du SMC et les services web GeoMet du SMC :
 
-* [Données CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
+* Observations hydrométriques en temps réel : [Données CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
+* Observations hydrométriques historiques : [API disponible via GeoMet-OGC-API](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

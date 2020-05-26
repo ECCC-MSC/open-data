@@ -20,6 +20,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added GeoMet-Weather layer tree screenshot in usage overview
 * improvements: 
     * Changed wording from 'on-the-fly' to 'on-demand'
+    * New QGIS WMS styles section in tutorials 
+    * Updated hydrometric data page to include historical hydrometric data 
 * bug fixes:
     * Minor fixes
     
