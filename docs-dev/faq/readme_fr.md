@@ -12,7 +12,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 ## Table des matières
 
 * [Quelles données peut-on trouver sur le Datamart du SMC ?](#quelles-donnees-peut-on-trouver-sur-le-datamart-du-smc)
-* [Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques en un temps et un lieu donné ?](#fournissez-vous-un-api-a-travers-lequel-il-serait-possible-d-acceder-aux-donnees-meteorologiques-en-un-temps-et-un-lieu-donne)
+* [Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques, climatiques et hydrologiques ?](#fournissez-vous-un-api-a-travers-lequel-il-serait-possible-d-acceder-aux-donnees-meteorologiques-climatiques-et-hydrologiques)
 * [Comment peut-on télécharger les données ?](#comment-peut-on-telecharger-les-donnees)
 * [Pourquoi les files d’attente de message AMQP cessent après plusieurs heures d'inactivité ?](#pourquoi-les-files-d-attente-de-message-amqp-cessent-apres-plusieurs-heures-d-inactivite)
 * [Comment utiliser AMQP sous Windows ?](#comment-utiliser-amqp-sous-windows)
@@ -73,15 +73,16 @@ partie afin de permettre à la communauté des usagers d'interagir plus facileme
 
 Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'Environnement et Changement climatique Canada (ECCC) ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
  
-## Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques en un temps et un lieu donné ?
+## Fournissez-vous un API à travers lequel il serait possible d'accéder aux données météorologiques, climatiques et hydrologiques ?
 
-Environnement et Changement climatique Canada offre un API pour accéder aux données météorologiques canadiennes par le biais de [services Web géospatiaux appelés MSC GeoMet](../msc-geomet/readme_fr.md), grâce aux standards WMS.
+Environnement et Changement climatique Canada offre un API pour accéder aux données météorologiques, climatiques cet hydrologiques anadiennes par le biais de l'API [GeoMet du SMC](../msc-geomet/readme_fr.md), grâce aux standards web géospatiaux WMS, WCS et OGC API - Features.
 
-Les données disponibles via les services WMS peuvent facilement être intégrées dans les applications iOS et nous connaissons plusieurs clients qui le font avec succès.
+Les données disponibles via ces services web géospatiaux peuvent facilement être intégrées dans les applications mobile et cartes interactives sur le web et nous connaissons plusieurs clients qui le font avec succès.
 
-Pour votre information, plus de 6000 couches sont disponibles, voir le GetCapabilities :
+Pour votre information, plus de 6000 couches sont disponibles via [GeoMet du SMC](../msc-geomet/readme_fr.md), voir le GetCapabilities :
 
-[https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities](https://geo.weather.gc.ca/geomet/?lang=E&service=WMS&request=GetCapabilities)
+* [https://geo.weather.gc.ca/geomet/?lang=fr&service=WMS&request=GetCapabilities](https://geo.weather.gc.ca/geomet/?lang=fr&service=WMS&request=GetCapabilities)
+* [https://geo.weather.gc.ca/geomet-climate/?lang=fr&service=WMS&request=GetCapabilities](https://geo.weather.gc.ca/geomet-climate/?lang=fr&service=WMS&request=GetCapabilities)
 
 Nous avons rassemblé plusieurs [cas d'utilisation et des tutoriels](../usage/readme_fr.md) afin d'aider nos usagers à exploiter nos services web. Aussi, un [exemple Python interactif d'utilisation des données ouvertes du SMC]() explique comment extraire et traiter des données météorologiques brutes à l'aide du langage de programmation Python afin de créer un outil qui permet de calculer les profits anticipés de la vente d'un produit dont la demande est affectée par les conditions météorologiques.
 
@@ -92,6 +93,8 @@ Enfin, veuillez noter que GeoMet s'appuyant sur des normes ouvertes, les utilisa
 GeoMet répond à plus d'un million de demandes par jour et est libre d'utilisation tant que la source est attribuée. Voir la [licence](../licence/redame_fr.md) pour plus de détails.
 
 ## Comment peut-on télécharger les données ?
+
+[GeoMet du SMC](../msc-geomet/readme_fr.md) permet grâce au standards [WCS](../msc-geomet/web-services_fr.md#web-coverage-service-wcs) et [OGC API - Features](../msc-geomet/web-services_fr.md#ogc-api-features) de récupérer les données brutes dans le format géospatial et la projection désiré par l'usager pour une région données.
 
 Le Service météorologique du Canada (SMC) a mis en place un [fil de données](../msc-datamart/amqp_fr.md) annonçant les fichiers disponibles sur le Datamart du SMC. Ce fil de données utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). 
 
@@ -123,7 +126,9 @@ Voir les détails ici : [https://github.com/MetPX/sarracenia/blob/master/doc/fr/
 
 ## Peut-on avoir accès aux données radar ?
 
-Les données radar disponibles gratuitement sur le serveur de données ouvertes du SMC sont les [images GIF]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md). 
+Nous offrons la [mosaique radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux WMS.
+
+Les données radar sont aussi disponibles gratuitement sur le serveur de données ouvertes du SMC en format [d'images GIF]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md). 
 
 Nous offrons également la [mosaique radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux WMS.
 
@@ -254,16 +259,18 @@ La vitesse de téléchargement sera alors la même que si tous les fichiers GRIB
 
 ## Les données disponibles pour un système X sont seulement en format NetCDF, comment faire pour manipuler les fichiers dans ce format ?
 
-Il existe une section concernant le [format des données](../msc-datamart/readme_fr#formats-de-donnees) où il est possible de retrouver des informations concernant le format de données NetCDF. De plus, la fonction __GDAL__ permet de manipuler ce format de données plus facilement en donnant des informations précises sur la matrice de données.
+Il existe une section concernant le [format des données](../msc-datamart/readme_fr#formats-de-donnees) où il est possible de retrouver des informations concernant le format de données NetCDF. De plus, la librairie [__GDAL__](https://gdal.org/) permet de manipuler ce format de données plus facilement en donnant des informations précises sur la matrice de données.
 
 ## Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle X ?
 
-Pour connaitre le système de coordonnées de référence d’un modèle et la projection utilisée pour produire nos fichiers de prévision numérique du temps, il suffit d’utiliser l'outil [GDAL]( https://www.gdal.org/GDAL) (gratuit).
+Pour connaitre le système de coordonnées de référence d’un modèle et la projection utilisée pour produire nos fichiers de prévision numérique du temps, il suffit d’utiliser les outils [GDAL]( https://www.gdal.org/GDAL) (logiciel libre).
 
 La commande suivante vous fournira le référentiel et la projection du fichier :
-gdalinfo file.grib2
+gdalinfo -proj4 file.grib2
 
 En sortie, l'information commence par "Le système de coordonnées est :".
+
+Cette commande donne aussi accès à la projections sous format Proj4 qui est courament utilisé dasn les outils géospatiaux.
 
 ## Comment peut-on obtenir la topographie d'un modèle X ?
 
@@ -277,7 +284,7 @@ Lorsque la valeur est 0, il s'agit de la mer, lorsque la valeur n'est pas 0, il 
 
 ## Est-ce possible de télécharger les données dans un autre format que celui disponible sur le Datamart du SMC ?
 
-Malheureusement, il n’est pas possible, à partir du Datamart du SMC, de télécharger les données dans un autre format que celui disponible. Par contre, la section concernant le [format des données](../msc-datamart/readme_fr#formats-de-donnees) peut vous aider à manipuler plus facilement ces données. Aussi, avec dans la section [Web Coverage Service (WCS)](../msc-geomet/ web-services_fr.md #web-coverage-service-wcs) de GeoMet, il est possible de convertir les formats matricielles GeoTIFF et NetCDF, bientôt il sera aussi possible de convertir les données GRIB2 avec GeoMet. À noter que, par exemple, il n’est pas possible de convertir un format GRIB2 vers un format CSV. Le GRIB2 est un format de données matricielle (avec pixels) alors que le CSV est pour les données vectorielles (point ligne polygone).
+Oui, GeoMet du SMC prend en charge le service de couverture Web ([WCS](../msc-geomet/web-services_fr.md#web-coverage-service-wcs)) pour récupérer des données matricielles brutes dans différents formats tels que GeoTIFF et NetCDF. GeoMet du SMC prend également en charge le standard [OGC API - Features](../msc-geomet/web-services_fr.md#ogc-api-features) (nouvelle génération de WFS) pour la récupération de données vectorielles brutes dans différents formats tels que GeoJSON ou CSV. 
 
 ## Est-il possible d’avoir accès à d’autres variables que celles qui sont disponibles sur le Datamart du SMC pour un système X ou la liste est exhaustive ?
 
