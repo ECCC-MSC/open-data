@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added CAPS (DD-Alpha)
     * Added RIOPS (DD-Alpha)
     * Added GeoMet-Weather layer tree screenshot in usage overview
+    * Added LICENSE.md, see GCcode ticket #25
 * improvements: 
     * Changed wording from 'on-the-fly' to 'on-demand'
     * New QGIS WMS styles section in tutorials 
