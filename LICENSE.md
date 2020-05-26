@@ -1,4 +1,4 @@
-'Le français suit'
+*Le français suit*
 
 # Ownership and usage of content provided on this site
 
@@ -24,6 +24,9 @@ Some of the content on this site may be subject to the copyright of another part
 
 The official symbols of the Government of Canada, including the Canada wordmark, the Arms of Canada, and the flag symbol may not be reproduced, whether for commercial or non-commercial purposes, without prior written authorization.
 
+___
+
+*French version / version française*
 
 # Propriété et utilisation du contenu offert dans ce site
 
