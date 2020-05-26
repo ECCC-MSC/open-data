@@ -195,7 +195,7 @@ The `eccc-msc` codepen.io account is managed by Étienne.
 
 In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
 
-Is is a best practice to [review existing open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues) before proceeding with a documentation deployment.
+It is a best practice to [review existing open tickets](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc/issues) before proceeding with a documentation deployment.
 
 ### 5.2.1 - Install Conda and create a mkdocs virtual environment
 
@@ -225,12 +225,18 @@ To update mkdocs:
 3. Remove current mkdocs from conda: `pip uninstall mkdocs`
 4. Install latest version: `pip install mkdocs`
 5. Deactivate the conda environment with `conda deactivate`
+
+### 5.2.3 Install mkdocs-jupyter
+
+The documentation requires the `mkdocs-jupyter` plugin to support the Jupyter Notebook examples included in the doc. Official [mkdocs-jupyter plugin repository](https://github.com/danielfrg/mkdocs-jupyter).
+ 
+INSERT installation instructions here!
  
 ## 5.3 - Deploy documentation on GitHub with mkdocs
 
 The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
 
-1. Ensure you have `mkdocs` version 1.1 or newer installed in your `conda` environment (see 5.2.2)
+1. Ensure you have `mkdocs` version 1.1.2 or newer installed in your `conda` environment (see 5.2.2)
 2. In a terminal window, `cd` to the root of your `public-doc` repository fork
     1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
 3. Pull the current version of the documentation you want to publish: `git pull upstream master`
