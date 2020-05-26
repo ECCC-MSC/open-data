@@ -8,9 +8,6 @@
 
 This section contains the most frequently asked questions about the MSC open data.
 
-Alex's note: ideally content in the FAQ should be included in the actual documentation whenever possible and removed from this FAQ section
-
-
 ## Table of Content
 
 * [What data can I find on the MSC Datamart?](#what-data-can-i-find-on-the-msc-datamart)
