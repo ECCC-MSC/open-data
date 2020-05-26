@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added RIOPS (DD-Alpha)
     * Added GeoMet-Weather layer tree screenshot in usage overview
     * Added LICENSE.md, see GCcode ticket #25
+    * Added the Arthur use case as a Jupiter Notebook, built by Marie-Eve
 * improvements: 
     * Changed wording from 'on-the-fly' to 'on-demand'
     * New QGIS WMS styles section in tutorials 
