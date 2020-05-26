@@ -16,27 +16,38 @@ Alex's note: ideally content in the FAQ should be included in the actual documen
 * [What data can I find on the MSC Datamart?](#what-data-can-i-find-on-the-msc-datamart)
 * [Do you provide an API through which we can access weather data for a given area and time?](#do-you-provide-an-api-through-which-we-can-access-weather-data-for-a-given-area-and-time)
 * [How can I download data?](#how-can-i-download-data)
+* [Why are message queues terminated after several hours of inactivity when using AMQP?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
+* [How to use AMQP under Windows?](#how-to-use-amqp-under-windows)
 * [Can I have radar data?](#can-i-have-radar-data)
 * [Can I have archived radar data?](#can-i-have-archived-radar-data)
 * [Are past forecasts from your model available?](#are-past-forecasts-from-your-model-available)
 * [Could I be made aware of any change to bulletins or model format and or content?](#could-i-be-made-aware-of-any-change-to-bulletins-or-model-format-and-or-content)
+* [How to be informed about problems with model data production?](#how-to-be-informed-about-problems-with-model-data-production)
 * [Could I have a GRIB data feed?](#could-i-have-a-grib-data-feed)
 * [Why not make just one big GRIB file with all the variables?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
-* [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
-* [Can I have buoys data?](#can-i-have-buoys-data)
-* [Can I have access to warnings?](#can-i-have-access-to-warnings)
-* [Which are the main differences between RSS ATOM feeds and AMQP protocol to consume alerts?](#Which-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-consume-alerts)
-* [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
-* [Can I have satellite images?](#can-i-have-satellite-images)
-* [Can I have access and use to of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
-* [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
-* [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
-* [Can I have snow water equivalent data?](#can-i-have-snow-water-equivalent-data)
+* [The data available for an X system is only in NetCDF format, how to manipulate files in this format?](#the-data-available-for-an-x-system-is-only-in-netcdf-format-how-to-manipulate-files-in-this-format)
 * [What is the datum of model X?](#what-is-the-datum-of-model-x)
 * [Can I have the topography of model X?](#can-i-have-the-topography-of-model-x)
 * [Can I have the land sea mask of model X?](#can-i-have-the-land-sea-mask-of-model-x)
-* [I don't see a condition under the corresponding element of the Citypage XML file](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file)
-* [Why are message queues terminated after several hours of inactivity when using AMQP?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
+* [Is it possible to download the data in another format than the one available on the MSC Datamart?](#is-it-possible-to-download-the-data-in-another-format-than-the-one-available-on-the-msc-datamart)
+* [Is it possible to access variables other than those available on the MSC Datamart for system X or is the list exhaustive?](#is-it-possible-to-access-variables-other-than-those-available-on-the-msc-datamart-for-system-x-or-is-the-list-exhaustive)
+* [Can I have the current weather observation?](#can-i-have-the-current-weather-observation)
+* [How often are the observational data collected by province and territory refreshed?](#how-often-are-the-observational-data-collected-by-province-and-territory-refreshed)
+* [Can I have buoys data?](#can-i-have-buoys-data)
+* [Can I have access to weather warnings?](#can-i-have-access-to-weather-warnings)
+* [Which are the main differences between RSS ATOM feeds and AMQP protocol to consume alerts?](#Which-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-consume-alerts)
+* [Can I have a shapefile of the warning regions?](#can-i-have-a-shapefile-of-the-warning-regions)
+* [Can I have satellite images?](#can-i-have-satellite-images)
+* [Can I have access and use of icons displayed in the Citypage XML product?](#can-i-have-access-and-use-of-icons-displayed-in-the-citypage-xml-product)
+* [Can I have CSV minimum and maximum forecast temperature?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
+* [Can I have rainfall depth data?](#can-i-have-rainfall-amount-data)
+* [Can I have snow water equivalent data?](#can-i-have-snow-water-equivalent-data)
+* [I do not see a condition under the corresponding element of the Citypage XML file, is this normal?](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal)
+* [In the NWP systems changelog, I see several systems (e.g. SRPEOT) not mentioned in the list of systems with available data, where can I find this data?](#in-the-nwp-systems-changelog-i-see-several-systems-e-g-SRPEOT-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data)
+* [I'd like to use your data for profit, am I allowed to do that?](#i-d-like-to-use-your-data-for-profit-am-I-allowed-to-do-that)
+* [What are the minimum requirements (processor, RAM) of my PC to be able to download data and/or use the GeoMet services?](#what-are-the-minimum-requirements-processor-ram-of-my-PC-to-be-able-to-download-data-and-or-use-the-geomet-services)
+* [In GeoMet, what styles are available for a WMS layer? Can I display a WMS layer in GeoMet with another style than the ones proposed?](#in-geomet-what-styles-are-available-for-a-wms-layer-can-i-display-a-wms-layer-in-geomet-with-another-style-than-the-ones-proposed)
+* [I see that you are using the QGIS (Geographic Information System) to visualize and manipulate the GeoMet layers and geospatial data in the Datamart, can I use other software to manipulate this data?](#i-see-that-you-are-using-the-qgis-geographic-information-system-to-visualize-and-manipulate-the-geomet-layers-and-geospatial-data-in-the-datamart-can-i-use-other-software-to-manipulate-this-data)
 * [Contact us](#contact-us)
 
 ## What data can I find on the MSC Datamart?
@@ -104,6 +115,23 @@ to "sr_subscribe" which runs only with Python3. Some documentation is available 
 [http://metpx.sourceforge.net/sr_subscribe.1.html](http://metpx.sourceforge.net/sr_subscribe.1.html)
 
 [http://metpx.sourceforge.net/Install.html](http://metpx.sourceforge.net/Install.html)
+
+## Why are message queues terminated after several hours of inactivity when using AMQP?
+
+Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia ([http://metpx.sf.net](http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, is a broker (see Glossary section at the address: [http://metpx.sourceforge.net/Install.html](http://metpx.sourceforge.net/Install.html)). The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
+so queues cannot be allowed to accumulate indefinitely. We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
+
+In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
+
+## How to use AMQP under Windows?
+
+If you are using the Windows environment, you need to download the latest version of Sarracenia at this address :
+
+[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
+
+This is an EXE file that can be used without having to install a Python environment.
+
+See details here: [https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst]( https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst)
 
 ## Can I have radar data?
 
@@ -231,6 +259,27 @@ You can subscribe here:
 Please use the following address to contact us for any comments or questions:
 ec.dps-client.ec@canada.ca
 
+## How to be informed about problems with model data production?
+
+Sometimes model data is late or even missing from our HTTPS data server.
+
+To find out if this delay or absence is due to a production problem, you can consult the AACN01 CWAO bulletins.  These are bulletins issued by the CCPAC as required to inform MSC offices and
+other customers of any problems that may disrupt or delay the issuance and/or distribution of operational products.
+
+To consult the latest AACN01 CWAO bulletins, you can use the script search utility provided by ECCC:
+
+[https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf)
+
+For example, to obtain the AACN01 bulletins of the day, you can click on the following URL :
+
+[http://dd.meteo.ec.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01]( http://dd.meteo.ec.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01)
+
+For a specific day, you can refine your search. For example, to have the information for May 19, 2020, you can use this link :
+
+[https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01&day=19&month=05&year=2020]( https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01&day=19&month=05&year=2020)
+
+There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at ec.dps-client.ec@canada.ca and we will add you to the mailing list.
+
 ## Could I have a GRIB data feed?
 
 Environment and Climate Change Canada offers a push feed for its NWP data in GRIB format. This service is supported 24/7 and the cost is a function of the amount of data requested: at the starting price is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
@@ -249,6 +298,36 @@ By proceeding like this, a single socket will be open and the request for all th
 
 This will then reach the same download speed as if all the GRIB files were in a single zip file.
 
+## The data available for an X system is only in NetCDF format, how to manipulate files in this format?
+
+There is a section on [data format](../msc-datamart/readme_en#data-formats) where information about the NetCDF data format can be found. In addition, the __GDAL__ function allows you to manipulate this data format more easily by giving precise information about the data matrix.
+
+## What is the datum of model X?
+
+You can use the free [GDAL](https://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files.
+The following command will provide the datum and projection of the file:
+
+gdalinfo file.grib2
+
+In the output, information starts with "Coordinate System is:".
+
+## Can I have the topography of model X?
+
+The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
+
+## Can I have the land sea mask of model X?
+
+You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask.
+Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
+
+## Is it possible to download the data in another format than the one available on the MSC Datamart?
+
+Unfortunately, it is not possible to download data from the MSC Datamart in any other format than the one available. However, the section on [data format](../msc-datamart/readme_en#data-formats) can help you manipulate the data more easily. Also, with the [Web Coverage Service (WCS)](../msc-geomet/ web-services_en.md #web-coverage-service-wcs) section of GeoMet, it is possible to convert the raster formats GeoTIFF and NetCDF. Soon, it will also be possible to convert GRIB2 data with GeoMet. Note that, for example, it is not possible to convert a GRIB2 format to a CSV format. GRIB2 is a raster data format (with pixels) while CSV is for vector data (point line polygon).
+
+## Is it possible to access variables other than those available on the MSC Datamart for system X or is the list exhaustive?
+
+The list is not exhaustive. We are always very open to receive feedback from users and to know their needs. It is possible to communicate with us via the email address: ec.dps-client.ec@canada.ca.
+
 ## Can I have the current weather observation?
 
 We have two XML products that contain the observations of the Environment and Climate Change Canada station network.
@@ -260,6 +339,16 @@ One is on a station basis, one file per station. All Canadian stations are inclu
 The other product is on a provincial/territorial basis. One file contains stations of only one province or territory. Not all the stations are included in this product. The documentation is here:
 
 [https://dd.meteo.gc.ca/observations/doc/README_observations.txt](https://dd.meteo.gc.ca/observations/doc/README_observations.txt)
+
+## How often are the observational data collected by province and territory refreshed?
+
+The provincial summary files are updated 6 times per hour, but the simple fact that we update them does not necessarily mean that any of the stations in the summary file have updated their data since the last run.
+   
+We update the observations on an hourly (not minute-by-minute) basis for each station at the beginning of the hour, but another update (called a "special obs" or "speci") within the hour is also possible if the observer feels that there has been a change large enough to warrant an update.
+
+It is possible, for example, that the 1614Z file may not contain observations different from those in 1611Z, so the user should not always expect changes in values for an individual station within the hour.
+
+We present only the data we obtain and, in this case, most stations report only once per hour.
 
 ## Can I have buoys data?
 
@@ -365,7 +454,7 @@ The documentation can be found here:
 
 [https://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt](https://dd.meteo.gc.ca/bulletins/doc/README_bulletins.txt)
 
-## Can I have rainfall amount data?
+## Can I have rainfall depth data?
 
 Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may be interested in the FOCN03 bulletins, namely spot forecasts of meteorological variables obtained from direct RDPS (Regional Deterministic Prediction System) output .
 Each of these bulletins are produced specifically for individual Canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and 12-hour intervals from 24 to 48 hours for some others.
@@ -406,25 +495,7 @@ SWE = (SNOD * SDEN) / 100 -- SWE is in mm (or kg/m2, it is the equivalent for wa
 
 SWE = SNOD * SDEN -- SWE is in mm (kg/2)
 
-## What is the datum of model X?
-
-You can use the free [GDAL](https://www.gdal.org/) tool to retrieve datum and projection information for our GRIB2 files.
-The following command will provide the datum and projection of the file:
-
-gdalinfo file.grib2
-
-In the output, information starts with "Coordinate System is:".
-
-## Can I have the topography of model X?
-
-The model topography is the field HGT_SFC (Model topography - Smoothed) of the prognostic hour 00.
-
-## Can I have the land sea mask of model X?
-
-You can use the variable LAND_SFC_0 (Land cover) of prognostic hour 00 to determine this mask.
-Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
-
-## I do not see a condition under the corresponding element of the Citypage XML file
+## I do not see a condition under the corresponding element of the Citypage XML file, is this normal?
 
 Some weather stations are automatic (unmanned) and do not report the current condition.
 If you look to the corresponding page on our web site, for example Edmonton, you will see that it is written <em>Not observed</em> for the condition, see:
@@ -433,12 +504,34 @@ If you look to the corresponding page on our web site, for example Edmonton, you
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
 
-## Why are message queues terminated after several hours of inactivity when using AMQP?
+## In the NWP systems changelog, I see several systems (e.g. SRPEOT) not mentioned in the list of systems with available data, where can I find this data?
 
-Users are expected to run a daemon that downloads data constantly, such as the one provided by Sarracenia ([http://metpx.sf.net](http://metpx.sf.net). In AMQP parlance, a pump, namely a host running Sarracenia, is a broker (see Glossary section at the address: [http://metpx.sourceforge.net/Install.html](http://metpx.sourceforge.net/Install.html)). The broker has a limited ability to queue products when a user has an unintended lengthy outage, say anywhere from a few hours to a few days. The performance of the entire service is adversely affected by the presence of large queues for any single consumer,
-so queues cannot be allowed to accumulate indefinitely. We keep queues alive as long as we can reasonably do so, but this practice is only meant to give clients time to restart their session in case of failure. The duration of disconnects that can be safely withstood depends on the number of products subscribed which in turn determines how many products get queued. Generally when there is a queue of more than 25,000 products, and no consumer, the queue will be purged.   
+These data are not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the dd-info mailing list.
 
-In General, one should use continuous access, rather than periodic polling, as it will remove peaks in download bandwidth and server load, and reduce the risk of queues being purged on the server. Judicious use of the 'subtopic' directive in configurations will minimize the size of queues, so they can last through longer outages.
+You can subscribe here:
+
+[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
+
+## I'd like to use your data for profit, am I allowed to do that?
+
+Yes, it is possible to use our data for profit-making purposes. You will find all the information you need to use our data [here](../licence/readme_en.md).
+
+## What are the minimum requirements (processor, RAM) of my PC to be able to download data and/or use the GeoMet services?
+
+There are no minimum specifications. However, internet access is required.
+
+## In GeoMet, what styles are available for a WMS layer? Can I display a WMS layer in GeoMet with another style than the ones proposed?
+
+To have a list of the styles available for a layer in GeoMet, you have to make a WMS request __GetCapabilities__ with the parameter __LAYERS__= which refers to the layer you want to display. For example, if you are looking for the list of available styles for the air temperature layer at 2 meters above the surface of the Global Deterministic Prediction System (GDPS.ETA_TT), here is the request that must be made: 
+
+[https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&LAYERS=GDPS.ETA_TT](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&LAYERS=GDPS.ETA_TT)
+
+It is then possible to navigate through the XML to find the different Style parameters within the __Layer__ block.
+Users can also specify their own styles by providing through the OGC Styled Layer Descriptor (SLD) standard, either by pointing to an external SLD document with the SLD parameter, or by specifying the SLD content directly in the SLD_BODY parameter. Note that the SLD_BODY content must be encoded as an HTTP URL.
+
+## I see that you are using the QGIS (Geographic Information System) to visualize and manipulate the GeoMet layers and geospatial data in the Datamart, can I use other software to manipulate this data?
+
+Yes, it is also possible to use the ArcGIS suite (ESRI's proprietary solution) which is also a GIS type software.
 
 ## Contact us
 
