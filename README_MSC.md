@@ -215,16 +215,14 @@ To install Conda, please choose a location in your work environment that has a s
 7. Within the root of the public documentation directory, use `pip` to install the Python libraries needed for our documentation: `pip install -r requirements.txt`
 8. You can deactivate the environment with `conda deactivate`
 
-### 5.2.1 - Removing an existing conda environment
-If you ever need to recreate your environment from scratch you may remove the environement.
+### 5.2.2 - Removing an existing conda environment
 
-1. Deactivate your current environment if it is the one you wish to delete.
+If you ever need to recreate your environment from scratch you may remove the environment.
+
+1. Deactivate your current environment if it is the one you wish to delete
 2. Remove the environment with `conda remove --name mkdocs --all`
-3. Follow the instructions above to recreate your mkdocs virtual environment.
+3. Follow the instructions above to recreate your mkdocs virtual environment
 
-
-
- 
 ## 5.3 - Deploy documentation on GitHub with mkdocs
 
 The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
