@@ -8,12 +8,24 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.4
+## 2.3.5
 
 * date: TBD
 * announcements:
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
+* new content:
+    * TBD
+* improvements: 
+    * TBD
+* bug fixes:
+    * TBD
+    
+## 2.3.4
+
+* date: 2020-05-27
+* announcements:
+    * Not announced
 * new content:
     * Added CAPS (DD-Alpha)
     * Added RIOPS (DD-Alpha)
