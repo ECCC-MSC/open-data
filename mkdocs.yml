@@ -28,4 +28,5 @@ theme:
 extra_css: [css/extra.css]
 
 plugins:
+  - search
   - mkdocs-jupyter

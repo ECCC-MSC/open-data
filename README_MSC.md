@@ -212,25 +212,18 @@ To install Conda, please choose a location in your work environment that has a s
 4. Start a new terminal session so you can access conda commands
 5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
 6. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
-7. Use pip to install the mkdocs package: `pip install mkdocs`
+7. Within the root of the public documentation directory, use `pip` to install the Python libraries needed for our documentation: `pip install -r requirements.txt`
 8. You can deactivate the environment with `conda deactivate`
 
-### 5.2.2 Update mkdocs
+### 5.2.1 - Removing an existing conda environment
+If you ever need to recreate your environment from scratch you may remove the environement.
 
-To update mkdocs:
+1. Deactivate your current environment if it is the one you wish to delete.
+2. Remove the environment with `conda remove --name mkdocs --all`
+3. Follow the instructions above to recreate your mkdocs virtual environment.
 
-1. Activate conda: `conda activate mkdocs`
-2. Validate current version: `mkdocs --version`
-    * Compare with [current official mkdocs version](https://github.com/mkdocs/mkdocs/releases)
-3. Remove current mkdocs from conda: `pip uninstall mkdocs`
-4. Install latest version: `pip install mkdocs`
-5. Deactivate the conda environment with `conda deactivate`
 
-### 5.2.3 Install mkdocs-jupyter
 
-The documentation requires the `mkdocs-jupyter` plugin to support the Jupyter Notebook examples included in the doc. Official [mkdocs-jupyter plugin repository](https://github.com/danielfrg/mkdocs-jupyter).
- 
-INSERT installation instructions here!
  
 ## 5.3 - Deploy documentation on GitHub with mkdocs
 
