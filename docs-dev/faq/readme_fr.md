@@ -23,9 +23,9 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Comment être informé des problèmes de production des données de modèles?](#comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles)
 * [Peut-on avoir un fil de données de modèles numériques?](#peut-on-avoir-un-fil-de-donnees-de-modeles-numeriques)
 * [Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables?](#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables)
-* [Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle X?](#qu-est-ce-que-le-systeme-de-coordonnees-de-reference-ou-datum-d-un-modele-x)
-* [Comment peut-on obtenir la topographie d'un modèle X?](#comment-peut-on-obtenir-la-topographie-d-un-modele-x)
-* [Est-il possible d'avoir le masque terre mer d'un modèle X?](#est-il-possible-d-avoir-le-masque-terre-mer-d-un-modèle-x)
+* [Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle ?](#qu-est-ce-que-le-systeme-de-coordonnees-de-reference-ou-datum-d-un-modele)
+* [Comment peut-on obtenir la topographie d'un modèle ?](#comment-peut-on-obtenir-la-topographie-d-un-modele)
+* [Est-il possible d'avoir le masque terre mer d'un modèle ?](#est-il-possible-d-avoir-le-masque-terre-mer-d-un-modèle)
 * [Est-ce possible de télécharger les données dans un autre format que celui disponible sur le Datamart du SMC?](#est-ce-possible-de-telecharger-les-donnees-dans-un-autre-format-que-celui-disponible-sur-le-datamart-du-SMC)
 * [Est-il possible d’avoir accès à d’autres paramètres de modèles que ceux disponibles actuellement ou la liste est-elle exhaustive?](#est-il-possible-d-avoir-acces-a-d-autres-parametres-que-ceux-disponibles-actuellement-ou-la-liste-est-elle-exhaustive)
 * [Puis-je obtenir les données d’équivalent en eau de la neige?](#puis-je-obtenir-les-donnees-d-equivalent-en-eau-de-la-neige)
@@ -45,7 +45,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Quelles doivent être les spécifications minimales (processeur, mémoire vive) de mon PC pour être en mesure de télécharger les données et/ou d’utiliser les services GeoMet?](#quelles-doivent-etre-les-specifications-minimales-processeur-mémoire-vive-de-mon-PC-pour-etre-en-mesure-de-telecharger-les-donnees-et-ou-d-utiliser-les-services-GeoMet)
 * [Dans GeoMet, quels styles sont disponibles pour une couche WMS? Puis-je afficher une couche WMS de GeoMet avec un autre style que ceux proposés?](#dans-geomet-quels-styles-sont-disponibles-pour-une-couche-wms-puis-je-afficher-une-couche-wms-de-geomet-avec-un-autre-style-que-ceux-proposes)
 * [Je vois que vous utilisez le système d’information géographique (SIG) QGIS pour visualiser et manipuler les couches de GeoMet et données géospatiales du Datamart, puis-je utiliser un autre logiciel pour manipuler ces données?](#je-vois-que-vous-utilisez-le-système-d-information-geographique-sig-qgis-pour-visualiser-et-manipuler-les-couches-de-geomet-et-donnees-geospatiales-du-datamart-puis-je-utiliser-un-autre-logiciel-pour-manipuler-ces-donnees)
-* [Contactez-nous](#contactez-nous)
+* [Comment obtenir de l'aide concernant vos services de données?](#comment-obtenir-de-l-aide-concernant-vos-services-de-donnees)
 
 ## Quelles données peut-on trouver parmi l'offre de données ouvertes du SMC?
 
@@ -255,7 +255,7 @@ La vitesse de téléchargement sera alors la même que si tous les fichiers GRIB
 
 Effectivement, GeoMet du SMC supporte les services Web ([WCS](../msc-geomet/web-services_fr.md#web-coverage-service-wcs)) pour récupérer des données matricielles brutes dans différents formats tels que GeoTIFF et NetCDF. GeoMet du SMC supporte également le standard [OGC API - Features](../msc-geomet/web-services_fr.md#ogc-api-features) (nouvelle génération de WFS) pour la récupération de données vectorielles brutes dans différents formats tels que GeoJSON ou CSV. 
 
-## Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle X?
+## Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle ?
 
 Pour connaitre le système de coordonnées de référence d’un modèle et la projection utilisée pour produire nos fichiers de prévision numérique du temps, il suffit d’utiliser les outils [GDAL]( https://www.gdal.org/GDAL) (logiciel libre).
 
@@ -266,11 +266,11 @@ En sortie, l'information commence par "Le système de coordonnées est :".
 
 Cette commande donne aussi accès à la projection sous format Proj4 qui est couramment utilisée dans les outils géospatiaux.
 
-## Comment peut-on obtenir la topographie d'un modèle X?
+## Comment peut-on obtenir la topographie d'un modèle ?
 
 La topographie d’un modèle dont les données sont disponibles en format GRIB2 peut être obtenue en utilisant le champ HGT_SFC (topographie lissée du modèle).
 
-## Puis-je avoir le masque terre-mer d’un modèle X?
+## Puis-je avoir le masque terre-mer d’un modèle ?
 
 Pour un modèle dont les données sont disponibles en format GRIB2, le paramètre LAND_SFC_0 (Couverture terrestre) de l'heure de prévision 00h pour être utilisé déterminer ce masque.
 
@@ -289,15 +289,9 @@ Sachez que le paramètre SDEN de la fraction de sol peut ou non être représent
 
 Par conséquent, la micro équation pour le calcul de l'équivalent en eau de la neige en mm (équivalent à kg/m2) à partir de la densité absolue SDEN et de l'épaisseur SNOD s'exprime selon :
 
-* Si l'épaisseur est donnée en "cm" et SDEN en "kg/m3", ce que nous avons aux opérations, alors : 
+* Si l'épaisseur est donnée en "cm" et SDEN en "kg/m3", ce que nous avons aux opérations, alors SWE = (SNOD * SDEN) / 100 ; SWE est en mm (ou kg/m2, c'est l'équivalent pour l'eau)
 
-** SWE = (SNOD * SDEN) / 100 
-** SWE est en mm (ou kg/m2, c'est l'équivalent pour l'eau)
-
-* Si l'épaisseur est donnée en "m" et le SDEN en "kg/m3" : 
-
-** SWE = SNOD * SDEN
-** SWE est en mm (kg/m2)
+* Si l'épaisseur est donnée en "m" et le SDEN en "kg/m3", alors SWE = SNOD * SDEN ; SWE est en mm (kg/m2)
 
 ## Dans le journal de chronologie des modifications des systèmes de PNT, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données ?
 
@@ -458,7 +452,7 @@ Les utilisateurs peuvent également spécifier leurs propres styles en fournissa
 
 Oui, il est aussi possible d’utiliser la suite ArcGIS (solution propriétaire d’ESRI) qui est aussi un logiciel de type SIG.
 
-## Contactez-nous
+## Comment obtenir de l'aide concernant vos services de données?
 
 Si vous utilisez nos données disponibles sur le Datamart du SMC et/ou nos services web géospatiaux, nous vous recommandons vivement de vous inscrire respectivement aux listes de diffusion [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [geomet-info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) afin d'être averti de toute mise à jour ou modification concernant nos services. 
 
