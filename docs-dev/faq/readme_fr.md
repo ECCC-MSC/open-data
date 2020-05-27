@@ -289,15 +289,9 @@ Sachez que le paramètre SDEN de la fraction de sol peut ou non être représent
 
 Par conséquent, la micro équation pour le calcul de l'équivalent en eau de la neige en mm (équivalent à kg/m2) à partir de la densité absolue SDEN et de l'épaisseur SNOD s'exprime selon :
 
-* Si l'épaisseur est donnée en "cm" et SDEN en "kg/m3", ce que nous avons aux opérations, alors : 
+* Si l'épaisseur est donnée en "cm" et SDEN en "kg/m3", ce que nous avons aux opérations, alors SWE = (SNOD * SDEN) / 100 ; SWE est en mm (ou kg/m2, c'est l'équivalent pour l'eau)
 
- SWE = (SNOD * SDEN) / 100 
- SWE est en mm (ou kg/m2, c'est l'équivalent pour l'eau)
-
-* Si l'épaisseur est donnée en "m" et le SDEN en "kg/m3" : 
-
- SWE = SNOD * SDEN
- SWE est en mm (kg/m2)
+* Si l'épaisseur est donnée en "m" et le SDEN en "kg/m3", alors SWE = SNOD * SDEN ; SWE est en mm (kg/m2)
 
 ## Dans le journal de chronologie des modifications des systèmes de PNT, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données ?
 
