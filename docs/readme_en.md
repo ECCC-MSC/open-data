@@ -18,10 +18,14 @@ The **[available open data from the Meteorological Service of Canada](msc-data/r
 
 Access to open data available on the MSC Datamart and MSC GeoMet services is anonymous and free of charge. The available open data services are:
 
+* **[MSC GeoMet](msc-geomet/readme_en.md)**
+    * API to access raw data and products
+    * Visualize and animate weather data
+    * Integrate data in web maps, mobile apps and desktop software
+    * Geospatial web services to clip, reproject, convert format and more
 * **[MSC Datamart](msc-datamart/readme_en.md)**
     * Raw data and products available on a web accessible server
-* **[MSC GeoMet](msc-geomet/readme_en.md)**
-    * Raw data and products available via an geospatial web services / interoperable APIs
+    * Real-time push notifications and data retrieval service
 * **[Cost-recovered services](cost-recovered/readme_en.md)**
     * Archived data retrieval
     * Dedicated data feeds with 24/7 support

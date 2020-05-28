@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.5
+## 2.3.6
 
 * date: TBD
 * announcements:
@@ -18,6 +18,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * improvements: 
     * TBD
+* bug fixes:
+    * TBD
+    
+## 2.3.5
+
+* date: 2020-05-28
+* announcements:
+    * Not announced
+* new content:
+    * TBD
+* improvements: 
+    * Deployment workflow changes to accommodate Jupyter Notebooks requirements
+    * Clarified API on root page and services order changes, as discussed with management
 * bug fixes:
     * TBD
     
