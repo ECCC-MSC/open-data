@@ -31,6 +31,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements: 
     * Deployment workflow changes to accommodate Jupyter Notebooks requirements
     * Clarified API on root page and services order changes, as discussed with management
+    * Updated Datamart radar list link
 * bug fixes:
     * TBD
     
