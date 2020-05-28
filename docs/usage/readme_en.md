@@ -115,7 +115,7 @@ The raw data can also be directly downloaded from the web on the [MSC Datamart](
 
 ### Raw data web services
 
-Raw MSC data can be retrieved from the MSC GeoMet web services. These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section.
+Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section of the technical documentation.
 
 Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
