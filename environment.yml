@@ -1,0 +1,13 @@
+# conda environment configuration for mybinder
+name: mybinder-env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip
+  - pip:
+    - matplotlib
+    - owslib
+    - pandas
+    - tabulate
