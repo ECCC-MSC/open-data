@@ -9,8 +9,8 @@ remote_name: github
 nav:
     - Available data /<br>Données disponibles: msc-data/readme_en.md
     - Data access /<br>Accès aux données:
-        - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
         - MSC GeoMet /<br>GeoMet du SMC: msc-geomet/readme_en.md
+        - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
         - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
     - Usage and tutorials / <br>Utilisation et tutoriels:
         - Usage overview /<br>Aperçu de l'utilisation: usage/readme_en.md
