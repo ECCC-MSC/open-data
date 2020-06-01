@@ -70,7 +70,7 @@ Dans l’environnement Windows, il suffit de télécharger la dernière version 
 
 [https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
 
-Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst](installer) d’environnement Python.
+Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [installer](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst) d’environnement Python.
 
 ## Exemples
 

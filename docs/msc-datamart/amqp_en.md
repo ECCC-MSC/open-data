@@ -21,7 +21,6 @@ The service permits targeting notifications for a specific set of files (weather
 
 A sample script using this protocol is made available by Environment and Climate Change Canada.  See "Script" section below.
 
-
 ## Description
 
 The script uses the python language ([https://www.python.org/](https://www.python.org/)) and must be installed on the system where it will be run.  Moreover, the python-amqp library must also be installed.  Please read the documentation specific to your operating system for instructions on installing the software and this library.
@@ -74,9 +73,9 @@ Example: q_anonymous.sr_subscribe.citypage.companyX
 
 Working with the Windows environment, simply download the latest version of Sarracenia at this address :
 
-[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/]
+[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
 
-This is an EXE file that can be used without having to [https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst](install) a Python environment.
+This is an EXE file that can be used without having to [install](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst) a Python environment.
 
 ## Examples
 
