@@ -26,7 +26,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Est-il possible d’avoir accès à d’autres paramètres de modèles de prévision numérique du temps que ceux disponibles actuellement ou la liste est-elle exhaustive?](#est-il-possible-d-avoir-acces-a-d-autres-parametres-de-modeles-de-prevision-numerique-du-temps-que-ceux-disponibles-actuellement-ou-la-liste-est-elle-exhaustive)
 * [Puis-je obtenir les données d’équivalent en eau de la neige?](#puis-je-obtenir-les-donnees-d-equivalent-en-eau-de-la-neige)
 * [Dans le journal de chronologie des modifications des modèles de prévision numérique du temps, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données?](#dans-le-journal-de-chronologie-des-modifications-des-modeles-de-prevision-numerique-du-temps-je-vois-plusieurs-systèmes-ex-srpeot-non-mentionnes-parmi-la-liste-des-systemes-dont-les-donnees-sont-disponibles-ou-puis-je-trouver-ces-donnees)
-* [Quelle est la différence entre les 2 jeux de données d'observations dipsonibles sur le Datamart du SMC?](#quelle-est-la-difference-entre-les-2-jeux-de-donnees-d-observations-dipsonibles-sur-le-Datamart-du-SMC?)
+* [Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC?](#quelle-est-la-difference-entre-les-deux-jeux-de-donnees-d-observations-disponibles-sur-le-Datamart-du-SMC?)
 * [À quelle fréquence les données d’observations rassemblées par province et territoire sont-elles rafraichies?](#a-quelle-frequence-les-donnees-d-observations-rassemblees-par-province-et-territoire-sont-elles-rafraichies)
 * [Où pourrais-je trouver les données de bouées?](#ou-pourrais-je-trouver-les-donnees-de-bouee)
 * [Comment faire pour accéder aux avertissements?](#comment-faire-pour-acceder-aux-avertissements)
@@ -245,7 +245,7 @@ Vous pouvez vous inscrire ici :
 
 [https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
-## Quelle est la différence entre les 2 jeux de données d'observations dipsonibles sur le Datamart du SMC?
+## Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC?
 
 Nous avons 2 produits qui contiennent des observations du réseau de stations de Environnement et Changement climatique Canada.
 
