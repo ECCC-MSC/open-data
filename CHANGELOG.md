@@ -15,9 +15,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
 * new content:
-    * TBD
+    * New doc section to edit Jupiter Notebooks
 * improvements: 
-    * TBD
+    * Updated Arthur use case with Miguel's feedback
 * bug fixes:
     * TBD
     
