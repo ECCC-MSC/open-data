@@ -13,7 +13,8 @@ Welcome! This documentation will tell you how to update and deploy the MSC Open 
         * [Markdown requirements](#421-markdown-requirements)
         * [Images in the documentation](#422-images-in-the-documentation)
         * [Files in the documentation](#423-files-in-the-documentation)
-        * [Changes to the Licence](#424-changes-to-the-licence)
+        * [Updates to Jupyter Notebooks](#424-updates-to-jupyter-notebooks)
+        * [Changes to the Licence](#425-changes-to-the-licence)
     * [Update workflow](#43-update-workflow)
     * [GitHub content update](#44-github-content-update)
 5. [Deploying the documentation](#5-deploying-the-documentation)
@@ -125,7 +126,17 @@ Adding images to the documentation:
 
 Just like [images](#images-in-the-documentation), any file including binary files in the `.pdf` and `.docx` formats need to be hosted on the Collaboration server in the corresponding directory and a link to those files is used in the actual documentation. 
 
-## 4.2.4 - Changes to the licence
+## 4.2.4 - Updates to Jupyter Notebooks
+
+To update the Jupyter Notebooks in the documentation:
+
+1. [Install Jupyter Notebook](https://jupyter.org)
+2. Launch Jupyter Notebook and edit the target notebook
+3. Commit and push changes as usual
+
+Note: if you need to move or rename the Jupyter Notebooks, the live examples in mybinder.org will need to the updated accordingly.
+
+## 4.2.5 - Changes to the licence
 
 Prior applying any change to the [licence accompanying the documentation](licence/), the following must be completed:
 * Get formal management approval for the change
@@ -176,9 +187,10 @@ To accommodate remote students, in the spirit of 'open by default' and to allow 
 
 1. Retrieve the latest GCcode version: `git pull upstream master`
 2. Update the GitHub version with the GCcode one: `git push github master`
-3. After changes are committed and merged on GitHub's `master` branch, push the changes to GCcode:
-    * `git pull github master`
-    * `git push upstream master`
+
+For changes committed and merged on GitHub's `master` branch, retrieve the version on GitHub and push the changes to GCcode:
+1. `git pull github master`
+2. `git push upstream master`
 
 Pull current GCcode version before making changes and commit and merge changes often to avoid conflicts.
 
