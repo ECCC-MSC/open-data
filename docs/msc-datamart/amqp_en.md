@@ -70,6 +70,14 @@ To __facilitate support__, our analysts suggest that users identify themselves, 
 
 Example: q_anonymous.sr_subscribe.citypage.companyX
 
+## Windows environment
+
+Working with the Windows environment, simply download the latest version of Sarracenia at this address :
+
+[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/]
+
+This is an EXE file that can be used without having to [https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst](install) a Python environment.
+
 ## Examples
 
 Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters
