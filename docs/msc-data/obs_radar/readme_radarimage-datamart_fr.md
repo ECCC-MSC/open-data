@@ -36,7 +36,7 @@ __Notes__:
 
 https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
 
-* Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/liste_radars_2019.pdf) est disponible. Cette liste sera mise à jour régulièrement.
+* Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
 ## Nomenclature des noms de fichiers 
 

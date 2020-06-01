@@ -64,6 +64,14 @@ __Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin
 
 Exemple : q_anonymous.sr_subscribe.citypage.compagnie
 
+## Environnement Windows
+
+Dans l’environnement Windows, il suffit de télécharger la dernière version de Sarracenia à cette adresse :
+
+[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
+
+Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [installer](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst) d’environnement Python.
+
 ## Exemples
 
 Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD

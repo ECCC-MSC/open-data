@@ -62,7 +62,7 @@ Exemples de nom de fichier :
 
 Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson), en format GeoJSON est disponible.
 
-## Balises, schémas XML et icônes
+## Balises et schémas XML 
 
 * Une [description des balises et des attributs XML des pages de prévisions météorologiques par ville](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/citypage_tags_table_f.csv) est disponible.
 
@@ -70,9 +70,19 @@ Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cm
 
   [https://dd.meteo.gc.ca/citypage_weather/schema/](https://dd.meteo.gc.ca/citypage_weather/schema/)
 
+## Icônes du produit XML 
+
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements __codés__ sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
-    * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
-    * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
+
+ * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
+ * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
+
+* Ces icônes sont distribuées sous les [conditions générales standards d'Environnement et Changement climatique Canada](https://www.canada.ca/fr/transparence/avis.html). Pour faire un usage commercial de ces icônes, vous devez obtenir un consentement explicite préalable.
+
+* Vous pouvez télécharger toutes les icônes météorologiques de ECCC à l'adresse suivante : [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), où NN est un nombre compris entre 00 et 45.
+
+* Vous pouvez également créer vos propres icônes en utilisant les symboles météorologiques mondiaux de l'Organisation météorologique mondiale (OMM). Voir un ensemble complet de symboles météorologiques de l'OMM à cette adresse : [https://github.com/OGCMetOceanDWG/WorldWeatherSymbols](https://github.com/OGCMetOceanDWG/WorldWeatherSymbols)
+
 ## Support
 
 Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
