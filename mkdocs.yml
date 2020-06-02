@@ -17,6 +17,7 @@ nav:
         - Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS: usage/tutorial_WMS_QGIS_en.md
         - Create interactive web maps /<br>Créer des cartes web interactives: usage/tutorial_web-maps_en.md
         - Add raw data to QGIS /<br>Ajouter des données brutes à QGIS: usage/tutorial_raw-data_QGIS_en.md
+        - API usage from a Python script /<br>Utiliser l'API dans un script Python: usage/use-case_arthur/use-case_arthur_en/
         - Use OGC API Features in QGIS /<br>Utiliser OGC API Features dans QGIS: usage/tutorial_OAFeat_QGIS_en.md
         - API technical doc /<br>Doc technique de l'API: msc-geomet/web-services_en.md
     - Contact us /<br>Contactez-nous: https://weather.gc.ca/mainmenu/contact_us_e.html

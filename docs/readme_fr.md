@@ -36,7 +36,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 * **[Aperçu de l'utilisation](usage/readme_fr.md)**
 
-Tutoriels :
+**Tutoriels** :
 
 * **Accéder et utiliser les données dans le logiciel de bureau QGIS** :
     * [Ajouter, effectuer des requêtes et animer des couches WMS](usage/tutorial_WMS_QGIS_fr.md)
@@ -47,7 +47,12 @@ Tutoriels :
     * Afficher des boîtes de dialogue
     * Animer des couches temporelles
 
-Documentation technique :
+**Cas d'utilisation** :
+
+* **Accédez et utiliser l'API des données du SMC directement dans un script Python**:
+    * [Arthur : profits anticipés selon la probabilité de précipitation](usage/use-case_arthur/use-case_arthur_fr/)
+
+**Documentation technique** :
 
 * **[Documentation technique des services web géospatiaux / API](msc-geomet/web-services_fr.md)**
 

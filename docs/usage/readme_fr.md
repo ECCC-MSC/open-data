@@ -115,6 +115,10 @@ Les données brutes peuvent également être téléchargées directement sur le 
 
 ### Services web de données brutes
 
+L'exemple de cas d'utilisation suivant est disponible :
+
+* [Utilisation de l'API pour directement accéder aux données brutes dans un script Python](/use-case_arthur/use-case_arthur_fr/): Arthur et les profits anticipés selon la probabilité de précipitation
+
 Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/web-services_fr.md).
 
 Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/web-services_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
