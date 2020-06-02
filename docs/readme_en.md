@@ -36,7 +36,7 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 
 * **[Usage overview](usage/readme_en.md)**
 
-Tutorials:
+**Tutorials**:
 
 * **Access and use data in the QGIS desktop software**:
     * [Add, query and animate WMS layers](usage/tutorial_WMS_QGIS_en.md)
@@ -47,7 +47,12 @@ Tutorials:
     * Display popup dialog boxes
     * Animate temporal layers
 
-Technical documentation:
+**Use cases**:
+
+* **Access and use the MSC data API directly from a Python script**:
+    * [Arthur: profits based on probability of precipitation](usage/use-case_arthur/use-case_arthur_en/)
+
+**Technical documentation**:
 
 * **[API / geospatial web services technical documentation](msc-geomet/web-services_en.md)**
 

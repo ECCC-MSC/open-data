@@ -23,6 +23,9 @@ Overview, examples and tutorials to access and use MSC GeoMet data:
         * Add layers
         * Display popup dialog boxes
         * Animate temporal layers
+* Use cases:
+    * [Arthur: profits based on probability of precipitation](../usage/use-case_arthur/use-case_arthur_en/)
+        * Access and use the MSC GeoMet API directly from a Python script
 * Technical documentation:
     * [API / geospatial web services technical documentation](web-services_en.md)
 
