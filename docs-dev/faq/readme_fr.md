@@ -11,45 +11,47 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 
 ## Table des matières
 
-NOTE: METTRE À JOUR en fonction des changements ci-dessous
+* [Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?](#peut-on-avoir-acces-aux-scores-de-verification-de-vos-modeles-de-prevision-numerique-du-temps-et-comment-se-comparent-ils-par-rapport-aux-autres-centres-internationaux)
+* [J’aimerais utiliser vos données à des fins lucratives, ai-je le droit ?](#j-aimerais-utiliser-vos-donnees-a-des-fins-lucratives-ai-je-le-droit)
+* [Pourquoi les files d’attente de message AMQP cessent après plusieurs heures d'inactivité ?](#pourquoi-les-files-d-attente-de-message-amqp-cessent-apres-plusieurs-heures-d-inactivite)
+* [Peut-on avoir accès aux données radar météorologiques ?](#peut-on-avoir-acces-aux-donnees-radar-meteorologiques)
+* [Peut-on accéder aux données radar archivées ?](#peut-on-acceder-aux-donnees-radar-archivees)
+* [Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?](#est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles)
+* [Comment être informé des changements aux bulletins ainsi qu'aux contenu et format des modèles de prévision numérique du temps ?](#comment-etre-informe-des-changements-aux-bulletins-ainsi-qu-aux-contenu-et-format-des-modeles-de-prevision-numerique-du-temps)
+* [Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?](#comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles-de-prevision-numerique-du-temps)
+* [Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?](#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables)
+* [Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle de prévision numérique du temps ?](#qu-est-ce-que-le-systeme-de-coordonnees-de-reference-ou-datum-d-un-modele-de-prevision-numerique-du-temps)
+* [Comment peut-on obtenir la topographie d'un modèle de prévision numérique du temps ?](#comment-peut-on-obtenir-la-topographie-d-un-modele-de-prevision-numerique-du-temps)
+* [Est-il possible d'avoir le masque terre mer d'un modèle de prévision numérique du temps ?](#est-il-possible-d-avoir-le-masque-terre-mer-d-un-modele-de-prevision-numerique-du-temps)
+* [Est-il possible d’avoir accès à d’autres paramètres de modèles de prévision numérique du temps que ceux disponibles actuellement ou la liste est-elle exhaustive ?](#est-il-possible-d-avoir-acces-a-d-autres-parametres-de-modeles-de-prevision-numerique-du-temps-que-ceux-disponibles-actuellement-ou-la-liste-est-elle-exhaustive)
+* [Puis-je obtenir les données d’équivalent en eau de la neige ?](#puis-je-obtenir-les-donnees-d-equivalent-en-eau-de-la-neige)
+* [Dans le journal de chronologie des modifications des modèles de prévision numérique du temps, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données ?](#dans-le-journal-de-chronologie-des-modifications-des-modeles-de-prevision-numerique-du-temps-je-vois-plusieurs-systèmes-ex-srpeot-non-mentionnes-parmi-la-liste-des-systemes-dont-les-donnees-sont-disponibles-ou-puis-je-trouver-ces-donnees)
+* [Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC ?](#quelle-est-la-difference-entre-les-deux-jeux-de-donnees-d-observations-disponibles-sur-le-Datamart-du-SMC?)
+* [À quelle fréquence les données d’observations rassemblées par province et territoire sont-elles rafraichies ?](#a-quelle-frequence-les-donnees-d-observations-rassemblees-par-province-et-territoire-sont-elles-rafraichies)
+* [Où pourrais-je trouver les données de bouées ?](#ou-pourrais-je-trouver-les-donnees-de-bouee)
+* [Comment faire pour accéder aux avertissements ?](#comment-faire-pour-acceder-aux-avertissements)
+* [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?](# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements)
+* [Les images satellitaires sont-elles disponibles ?](#les-images-satellitaires-sont-elles-disponibles)
+* [Les données de foudre sont-elles disponibles ?](#les-donnees-de-foudre-sont-elles-disponibles)
+* [Comment obtenir les températures minimales et maximales en format CSV ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-csv)
+* [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
+* [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
+* [Existe-t-il une plateforme de discussion pour les usagers ?](#existe-t-il-une-plateforme-de-discussion-pour-les-usagers)
 
-* [Quelles données peut-on trouver parmi l'offre de données ouvertes du SMC?](#quelles-donnees-peut-on-trouver-parmi-l-offre-de-donnees-ouvertes-du-smc)
-* [Pourquoi les files d’attente de message AMQP cessent après plusieurs heures d'inactivité?](#pourquoi-les-files-d-attente-de-message-amqp-cessent-apres-plusieurs-heures-d-inactivite)
-* [Peut-on avoir accès aux données radar?](#peut-on-avoir-acces-aux-donnees-radar)
-* [Peut-on accéder aux données radar archivées?](#peut-on-acceder-aux-donnees-radar-archivees)
-* [Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles?](#est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles)
-* [Comment être informé des changements aux bulletins ainsi qu'aux contenu et format des modèles de prévision numérique du temps?](#comment-etre-informe-des-changements-aux-bulletins-ainsi-qu-aux-contenu-et-format-des-modeles-de-prevision-numerique-du-temps)
-* [Comment être informé des problèmes de production des données de modèles de prévision numérique du temps?](#comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles-de-prevision-numerique-du-temps)
-* [Peut-on avoir un fil de données de modèle de prévision numérique du temps?](#peut-on-avoir-un-fil-de-donnees-de-modele-de-prevision-numerique-du-temps)
-* [Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables?](#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables)
-* [Qu'est-ce que le système de coordonnées de référence ou datum d'un modèle de prévision numérique du temps?](#qu-est-ce-que-le-systeme-de-coordonnees-de-reference-ou-datum-d-un-modele-de-prevision-numerique-du-temps)
-* [Comment peut-on obtenir la topographie d'un modèle de prévision numérique du temps?](#comment-peut-on-obtenir-la-topographie-d-un-modele-de-prevision-numerique-du-temps)
-* [Est-il possible d'avoir le masque terre mer d'un modèle de prévision numérique du temps?](#est-il-possible-d-avoir-le-masque-terre-mer-d-un-modele-de-prevision-numerique-du-temps)
-* [Est-il possible d’avoir accès à d’autres paramètres de modèles de prévision numérique du temps que ceux disponibles actuellement ou la liste est-elle exhaustive?](#est-il-possible-d-avoir-acces-a-d-autres-parametres-de-modeles-de-prevision-numerique-du-temps-que-ceux-disponibles-actuellement-ou-la-liste-est-elle-exhaustive)
-* [Puis-je obtenir les données d’équivalent en eau de la neige?](#puis-je-obtenir-les-donnees-d-equivalent-en-eau-de-la-neige)
-* [Dans le journal de chronologie des modifications des modèles de prévision numérique du temps, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données?](#dans-le-journal-de-chronologie-des-modifications-des-modeles-de-prevision-numerique-du-temps-je-vois-plusieurs-systèmes-ex-srpeot-non-mentionnes-parmi-la-liste-des-systemes-dont-les-donnees-sont-disponibles-ou-puis-je-trouver-ces-donnees)
-* [Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC?](#quelle-est-la-difference-entre-les-deux-jeux-de-donnees-d-observations-disponibles-sur-le-Datamart-du-SMC?)
-* [À quelle fréquence les données d’observations rassemblées par province et territoire sont-elles rafraichies?](#a-quelle-frequence-les-donnees-d-observations-rassemblees-par-province-et-territoire-sont-elles-rafraichies)
-* [Où pourrais-je trouver les données de bouées?](#ou-pourrais-je-trouver-les-donnees-de-bouee)
-* [Comment faire pour accéder aux avertissements?](#comment-faire-pour-acceder-aux-avertissements)
-* [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements?](# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements)
-* [Les images satellitaires sont-elles disponibles?](#les-images-satellitaires-sont-elles-disponibles)
-* [Les données de foudre sont-elles disponibles?](#les-donnees-de-foudre-sont-elles-disponibles)
-* [Comment obtenir les températures minimales et maximales en format CSV?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-csv)
-* [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
-* [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
-* [J’aimerais utiliser vos données à des fins lucratives, ai-je le droit?](#j-aimerais-utiliser-vos-donnees-a-des-fins-lucratives-ai-je-le-droit)
+## Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?
 
-## REFORMULER : Existe-t-il une plateforme de discussion pour les usagers ?
-NOTE : À déplacer plus bas dans le FAQ
+Le [Centre européen de prévision à moyen terme (CEPMT)](https://www.ecmwf.int/), désigné en 2011 comme le [''WMO Lead Centre for Deterministic NWP Verification''](https://confluence.ecmwf.int/pages/viewpage.action?pageId=24316358&src=sidebar), rend disponibles tous les scores en altitude et de surface de tous les centres participants à l’échange de scores des pays de l’[Organisation météorologique mondiale (OMM)](https://public.wmo.int/fr).
 
-**Note** : Une plateforme de discussion consacrée aux données ouvertes du SMC a été mise en place par une tierce 
-partie afin de permettre à la communauté des usagers d'interagir plus facilement et de tirer profit de l'expérience de chacun:
+Ainsi, il est possible d'obtenir les [scores en altitude](https://apps.ecmwf.int/wmolcdnv/scores/time_series/msl) des modèles de prévision de Environnement et Changement climatique Canada et de les comparer aux scores des autres centres, selon le domaine souhaité (ex: hémisphère nord), pour les paramètres d'intérêt (ex: température à 850hPa), depuis 1998 à nos jours.
 
-[http://meteocentre.com/help/msc-open-data/](http://meteocentre.com/help/msc-open-data/)
+Les [scores de surface](https://apps.ecmwf.int/wmolcdnv/scores/surface.time_series/tp) sont relativement nouveaux et tous les centres ne fournissent pas encore leurs métriques, ce qui est notre cas, mais nous travaillons actuellement pour les rendre disponibles. Il sera donc possible prochainement de comparer nos scores de surface à ceux de nos homologues internationaux.
 
-Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'ECCC ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
- 
+Par ailleurs, nous publions quotidiennement des [vérifications contre radiosondages et analyses](https://meteo.gc.ca/verification/index_f.html) pour le [Système global de prévision déterministe (SGPD)](../msc-data/nwp_gdps/readme_gdps_fr.md) et le [Système régional de prévision déterministe (SRPD)](../msc-data/nwp_rdps/readme_rdps_fr.md), suivant les standards définis par l'OMM.
+
+## J’aimerais utiliser vos données à des fins lucratives, ai-je le droit ?
+
+Oui, il est possible d’utiliser nos données à des fins lucratives. Vous trouverez toutes les informations nécessaires à l’utilisation de nos données dans la [licence d'utilisation](../licence/readme_fr.md).
+
 ## Pourquoi les files d’attentes de message AMQP cessent après plusieurs heures d'inactivité ?
 
 Les utilisateurs du service [AMQPS](../msc-datamart/amqp_fr.md) sont censés exécuter un démon qui télécharge des données en permanence, comme celui fourni par [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst). Dans le langage AMQP, une pompe, à savoir un hôte exécutant Sarracenia, est un [courtier](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst). Le courtier a une capacité limitée à mettre les produits en file d'attente lorsqu'un utilisateur est victime d'une longue interruption involontaire, par exemple de quelques heures à quelques jours. 
@@ -60,12 +62,11 @@ Nous maintenons les files d'attente en vie aussi longtemps que nous pouvons rais
 
 En général, il est préférable d'utiliser un accès continu plutôt qu'une consultation périodique, car cela permet de supprimer les pics de bande passante de téléchargement et de charge du serveur, et de réduire le risque que les files d'attente soient purgées sur le serveur. L'utilisation judicieuse de la directive "subtopic" dans les configurations réduira la taille des files d'attente, afin qu'elles puissent demeurer actives pendant les longues interruptions.
 
-## Peut-on avoir accès aux données et produits radar météorologiques bruts ?
+## Peut-on avoir accès aux données radar météorologiques ?
 
 Les données radar actuellement disponibles gratuitement sur le serveur de données ouvertes du SMC sont les [images GIF]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md). Nous offrons également la [mosaique radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux WMS.
 
-Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr/#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
-[formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
+Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr/#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
 
 Concernant les fils de données, les formats disponibles sont les suivants :
 
@@ -97,7 +98,6 @@ Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail
 |Coordonnées de facturation |      |
 
 ## Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?
-NOTE: AJOUTER LIEN VERS FAQ DANS LA PAGE des recouvrement de coûts
 
 Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr/#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
 
@@ -171,7 +171,7 @@ Par conséquent, la micro équation pour le calcul de l'équivalent en eau de la
 
 ## Dans le journal de chronologie des modifications des modèles de prévision numérique du temps, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données ?
 
-Ces données ne sont pas encore disponibles sur le Datamart du SMC. Pour être informé de l’ajout de jeux de données, vous pouvez vous abonner à la [liste de diffusion dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
+Ces données ne sont pas encore disponibles sur le Datamart du SMC. Pour être informé de l’ajout de jeux de données, vous pouvez vous abonner aux listes de diffusion [dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
 
 ## Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC ?
 
@@ -197,18 +197,21 @@ Les données de bouées (observations marines) sont disponibles sur le Datamart 
 
 Vous trouverez dans la [documentation](../msc-data/obs_station/readme_obs_insitu_swobdatamart_fr.md), une liste des bouées disponibles actuellement. D’autres seront ajoutées au cours du temps.
 
-Des rapports quotidiens de bouées du SMC sont aussi publiés sur le [site web de Pêches et Océans Canada](http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/msc-smc/index-fra.html). Des informations sur les [bouées dérivantes](http://www.dfo-mpo.gc.ca/science/data-donnees/drib-bder/index-fra.html) sont également disponibles. Finalement, ces données de bouées sont accessibles à travers les [bulletins alphanumériques](../msc-data/bulletins/readme_bulletins-datamart_fr.md)  disponibles sur le Datamart du SMC avec comme en-têtes SM/SN/SIVD17.
+Des rapports quotidiens de bouées du SMC sont aussi publiés sur le [site web de Pêches et Océans Canada](http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/msc-smc/index-fra.html). Des informations sur les [bouées dérivantes](http://www.dfo-mpo.gc.ca/science/data-donnees/drib-bder/index-fra.html) sont également disponibles. 
+
+Finalement, ces données de bouées sont accessibles à travers les [bulletins alphanumériques](../msc-data/bulletins/readme_bulletins-datamart_fr.md)  disponibles sur le Datamart du SMC avec comme en-têtes SM/SN/SIVD17.
 
 ## Comment faire pour accéder aux avertissements ?
-NOTE: AJOUTER LIEN VERS GEOMET-BETA pour avertissements
 
 Il y a plusieurs sources pour obtenir les avertissements.
 
-Tout d’abord, les [avertissements officiels sont disponibles en format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
+* Tout d’abord, les [avertissements officiels sont disponibles en format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
 
-Par ailleurs, ECCC a mis en place un [fil de nouvelles ATOM via lequel les alertes et avertissements sont disponibles](https://meteo.gc.ca/business/index_f.html#rss).
+* Nos services web géospatiaux permettent d'afficher la couche des avertissements seulement dans le version Beta actuellement, voir le [GetCapabilities](https://geo.weather.gc.ca/geomet-beta?service=WMS&version=1.3.0&request=GetCapabilities&layers=ALERTS). 
 
-Finalement, ECCC a mis en place le [service expérimental EC Alertez moi](https://ecalertezmoi.meteo.gc.ca/guides/quickstart_fr.php) pour envoyer les avertissements par messagerie électronique. 
+* Par ailleurs, ECCC a mis en place un [fil de nouvelles ATOM via lequel les alertes et avertissements sont disponibles](https://meteo.gc.ca/business/index_f.html#rss).
+
+* Finalement, ECCC a mis en place le [service expérimental EC Alertez moi](https://ecalertezmoi.meteo.gc.ca/guides/quickstart_fr.php) pour envoyer les avertissements par messagerie électronique. 
 
 ## Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?
 
@@ -252,6 +255,10 @@ Aussi, une estimation optimale de la quantité de précipitation qui est survenu
 
 Certaines stations météorologiques sont automatiques (sans personnel) et ne signalent pas l'état des conditions actuelles. Si vous regardez la page correspondante sur notre site web, par exemple pour la ville d’[Edmonton](https://weather.gc.ca/city/pages/ab-50_metric_e.html), vous verrez qu'il est écrit « Non observé » pour la condition. C'est pourquoi aucune icône ou condition n'est signalée dans le fichier XML Citypage correspondant.
 
-## J’aimerais utiliser vos données à des fins lucratives, ai-je le droit ?
+## Existe-t-il une plateforme de discussion pour les usagers ?
 
-Oui, il est possible d’utiliser nos données à des fins lucratives. Vous trouverez toutes les informations nécessaires à l’utilisation de nos données dans la [licence d'utilisation](../licence/readme_fr.md).
+Une plateforme de discussion consacrée aux données ouvertes du SMC a été mise en place par une tierce partie afin de permettre à la communauté des usagers d'interagir plus facilement et de tirer profit de l'expérience de chacun:
+
+[http://meteocentre.com/help/msc-open-data/](http://meteocentre.com/help/msc-open-data/)
+
+Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'ECCC ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
