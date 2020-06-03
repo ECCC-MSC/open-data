@@ -231,7 +231,7 @@ Actuellement, seule [la carte canadienne des dangers de la foudre est disponible
  
 En attendant, si vous souhaitez acheter des données sur la foudre en temps réel ou archivées, auprès du Réseau canadien de détection de la foudre (CLDN), veuillez contacter nos collègues à l'adresse : ec.rcdf-cldn.ec@canada.ca . Il y a un coût pour les entreprises privées. Le prix dépend de la superficie dont ils ont besoin pour les données en direct et de la durée des données archivées. Si le client envoie au CLDN ses spécifications, un estimé du coût sera transmis (demande envoyée à Vaisala). 
 
-## Comment obtenir les températures minimales et maximales en format CSV ?
+## Comment obtenir les températures minimales et maximales prévues en format CSV ?
 
 Pour obtenir des données de températures extrêmes prévues au format CSV, vous pouvez consulter au choix :
 
