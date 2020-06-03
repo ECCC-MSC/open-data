@@ -71,6 +71,10 @@ Series of events organized around MSC open data:
 
 The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
 
+## Frequently Asked Questions
+
+The most frequently asked questions about MSC's open data are collected in an [FAQ](faq/readme_en.md). If you cannot find the answer to your question, please contact us].
+
 ## Contact us
 
 User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
