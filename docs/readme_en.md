@@ -73,7 +73,7 @@ The End-use Licence determines the conditions for using the data and information
 
 ## Frequently Asked Questions
 
-The most frequently asked questions about MSC's open data are collected in an [FAQ](faq/readme_en.md). If you cannot find the answer to your question, please contact us].
+The most frequently asked questions about MSC's open data are collected in a [FAQ](faq/readme_en.md). If you cannot find the answer to your question, please contact us.
 
 ## Contact us
 
