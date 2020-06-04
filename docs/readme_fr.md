@@ -71,6 +71,10 @@ Série d'évènements organisés autour des données ouvertes du SMC :
 
 La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md).
 
+## Foire aux questions
+
+Les questions les plus fréquemment posées au sujet des données ouvertes du SMC sont rassemblées dans une [FAQ](faq/readme_fr.md). Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous contacter.
+
 ## Contactez-nous
 
 Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
