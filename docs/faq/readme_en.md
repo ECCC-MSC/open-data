@@ -15,7 +15,7 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Why are message queues terminated after several hours of inactivity when using AMQP ?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
 * [Can I have weather radar data ?](#can-i-have-weather-radar-data)
 * [Can I have archived radar data ?](#can-i-have-archived-radar-data)
-* [Are past forecasts from your numerical weather prediction models available ?](#are-past-forecasts-from-your-numerical-weather-prediction-models-available)
+* [Are historical data forecasts from your numerical weather prediction models available ?](#are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available)
 * [How to be informed of any change to bulletins or numerical weather prediction model format and content ?](#how-to-be-informed-of-any-change-to-bulletins-or-numerical-weather-prediction-model-format-and-content)
 * [How to be informed about problems with  numerical weather prediction model data production ?](#how-to-be-informed-about-problems-with-numerical-weather-prediction-model-data-production)
 * [Why not produce just one big GRIB file with all the variables ?](#why-not-produce-just-one-big-grib-file-with-all-the-variables)
@@ -51,7 +51,7 @@ Yes, it is possible to use our data for profit-making purposes. You will find al
 
 ## Why are message queues terminated after several hours of inactivity when using AMQP ?
 
-Users of the [AMQPS](../msc-datamart/amqp_en.md) service are supposed to run a daemon that downloads data continuously, such as the one provided by [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst). In the AMQP language, a pump, i.e. a host running Sarracenia, is a [broker](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst). The broker has a limited ability to queue products when a user experiences a long unintended interruption, for example, from a few hours to a few days. 
+Users of the [AMQPS](../msc-datamart/amqp_en.md) service are supposed to run a daemon that downloads data continuously, such as the one provided by [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst). In the AMQP language, a pump, i.e. a host running Sarracenia, is a [broker](https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst). The broker has a limited ability to queue products when a user experiences a long unintended interruption, for example, from a few hours to a few days. 
 The performance of the overall service is affected by the presence of large queues for a single consumer, so queues should not be allowed to build up indefinitely. 
 
 We keep the queues alive as long as we can reasonably do so, but this practice is only intended to give customers time to restart their service in the event of a failure. The length of disconnections that can be safely supported depends on the number of products subscribed to, which in turn determines the number of products queued. Typically, when there is a queue of more than 25,000 products and there are no customers, the queue is purged.
@@ -95,9 +95,9 @@ Typical archived data retrieval requests require between 2-4 hours to process. I
 |Other information |       |
 |Billing name and coordinates |       |
 
-## Are past forecasts from your numerical weather predicition models available ?
+## Are historical data forecasts from your numerical weather prediction models available ?
 
-Environment and Climate Change Canada does not have on online service to retrieve archived data.
+Environment and Climate Change Canada does not have an online service to retrieve archived data.
 
 The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 99$/hour, with a minimum of 99$, to retrieve/recreate the requested data. The data itself is free.
 
