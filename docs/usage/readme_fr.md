@@ -117,7 +117,7 @@ Les données brutes peuvent également être téléchargées directement sur le 
 
 L'exemple de cas d'utilisation suivant est disponible :
 
-* [Utilisation de l'API pour directement accéder aux données brutes dans un script Python](../../use-case_arthur/use-case_arthur_fr/): Arthur et les profits anticipés selon la probabilité de précipitation
+* [Utilisation de l'API pour directement accéder aux données brutes dans un script Python](../use-case_arthur/use-case_arthur_fr/): Arthur et les profits anticipés selon la probabilité de précipitation
 
 Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/web-services_fr.md).
 
