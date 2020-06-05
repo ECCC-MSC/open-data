@@ -4,7 +4,7 @@
 
 [TdM](../readme_fr.md) > FAQ
 
-# FAQ des données publiques du SMC
+# FAQ des données ouvertes du SMC
 
 Cette section contient les questions les plus fréquemment posées au sujet des données ouvertes du SMC.
 

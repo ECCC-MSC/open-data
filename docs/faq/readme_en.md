@@ -4,7 +4,7 @@
 
 [TOC](../readme_en.md) > FAQ
 
-# MSC Public Data FAQ
+# MSC Open Data FAQ
 
 This section contains the most frequently asked questions about the MSC open data.
 
