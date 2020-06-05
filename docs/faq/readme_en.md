@@ -248,7 +248,7 @@ To obtain extreme forecast temperature data in CSV format, you can consult eithe
 
 * Forecast bulletins FMCN31 to FMCN38 (CSV format), based on the [Global Deterministic Prediction System (GDPS)](../msc-data/nwp_gdps/readme_gdps_en.md). The forecast at 00Z contains the maximum for the current day, the minimum and maximum for the second day, and the minimum for the third day. The forecast at 12Z contains the minima and maxima of day two and day three.
 
-* Forecast bulletins FMCN41 to FMCN48 (CSV format), based on the [Regional Deterministic Prediction System (RDPS)(../msc-data/nwp_rdps/readme_rdps_en.md). The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.
+* Forecast bulletins FMCN41 to FMCN48 (CSV format), based on the [Regional Deterministic Prediction System (RDPS)](../msc-data/nwp_rdps/readme_rdps_en.md). The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.
 
 These bulletins are available on the MSC Datamart at the address: https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
 
