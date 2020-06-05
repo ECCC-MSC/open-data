@@ -33,7 +33,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?](# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements)
 * [Les images satellitaires sont-elles disponibles ?](#les-images-satellitaires-sont-elles-disponibles)
 * [Les données de foudre sont-elles disponibles ?](#les-donnees-de-foudre-sont-elles-disponibles)
-* [Comment obtenir les températures minimales et maximales prévues en format CSV ?](#comment-obtenir-les-temperatures-minimales-et-maximales-prevues-en-format-csv)
+* [Comment obtenir les températures minimales et maximales en format CSV ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-csv)
 * [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
 * [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
 * [Existe-t-il une plateforme de discussion pour les usagers ?](#existe-t-il-une-plateforme-de-discussion-pour-les-usagers)
@@ -54,7 +54,7 @@ Oui, il est possible d’utiliser nos données à des fins lucratives. Vous trou
 
 ## Pourquoi les files d’attentes de message AMQP cessent après plusieurs heures d'inactivité ?
 
-Les utilisateurs du service [AMQPS](../msc-datamart/amqp_fr.md) sont censés exécuter un démon qui télécharge des données en permanence, comme celui fourni par [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst). Dans le langage AMQP, une pompe, à savoir un hôte exécutant Sarracenia, est un [courtier](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst). Le courtier a une capacité limitée à mettre les produits en file d'attente lorsqu'un utilisateur est victime d'une longue interruption involontaire, par exemple de quelques heures à quelques jours. 
+Les utilisateurs du service [AMQPS](../msc-datamart/amqp_fr.md) sont censés exécuter un daemon qui télécharge des données en permanence, comme celui fourni par [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst). Dans le langage AMQP, une pompe, à savoir un hôte exécutant Sarracenia, est un [courtier](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst). Le courtier a une capacité limitée à mettre les produits en file d'attente lorsqu'un utilisateur est victime d'une longue interruption involontaire, par exemple de quelques heures à quelques jours. 
 
 La performance de l'ensemble du service est affectée par la présence de files d'attente importantes pour un seul consommateur, il ne faut donc pas laisser les files d'attente s'accumuler indéfiniment. 
 
@@ -66,18 +66,18 @@ En général, il est préférable d'utiliser un accès continu plutôt qu'une co
 
 Les données radar actuellement disponibles gratuitement sur le serveur de données ouvertes du SMC sont les [images GIF]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md). Nous offrons également la [mosaique radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux WMS.
 
-Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr/#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
+Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr.md#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
 
 Concernant les fils de données, les formats disponibles sont les suivants :
 
 * NUMERIC (ASCII)
 * Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC)
-* Format brut [IRIS]( https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx), pour les anciens radars à bande C
-* Format brut [ODIM_H5]( https://support.hdfgroup.org/HDF5/users5.html), pour les nouveaux radars à bande S
+* Format brut [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx), pour les anciens radars à bande C
+* Format brut [ODIM_H5](https://support.hdfgroup.org/HDF5/users5.html), pour les nouveaux radars à bande S
    
 ## Peut-on accéder aux données radar archivées?
 
-Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr/#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
 
 Les archives sont disponibles en format brut (IRIS/ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
 [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
@@ -99,7 +99,7 @@ Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail
 
 ## Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?
 
-Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr/#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
 
 Dès que nous recevons les détails des données demandées, nous pouvons produire un échantillon et l’envoyer à l’usager pour validation. Un estimé peut alors être fourni, une fois la requête confirmée. Selon la nature des requêtes, il faut compter quelques centaines de dollars. Pour toute commande, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: ec.dps-client.ec@canada.ca
 
@@ -144,7 +144,7 @@ Il a été choisi de mettre une variable par fichier car nous avons supposé que
 
 ## Qu'est-ce que le système de coordonnées de référence (datum) d'un modèle de prévision numérique du temps ?
 
-Pour connaitre le système de coordonnées de référence d’un modèle de prévision numérique du temps et la projection utilisée pour produire nos fichiers de prévision numérique du temps, il suffit d’utiliser les outils [GDAL]( https://www.gdal.org/GDAL) (logiciel libre). La commande suivante vous fournira le référentiel et la projection du fichier : `gdalinfo -proj4 file.grib2`.
+Pour connaitre le système de coordonnées de référence d’un modèle de prévision numérique du temps et la projection utilisée pour produire nos fichiers de prévision numérique du temps, il suffit d’utiliser les outils [GDAL](https://www.gdal.org/GDAL) (logiciel libre). La commande suivante vous fournira le référentiel et la projection du fichier : `gdalinfo -proj4 file.grib2`.
 
 En sortie, l'information commence par `The coordinates system is:`. Cette commande donne aussi accès à la projection sous format Proj4 qui est couramment utilisée dans les outils géospatiaux.
 
@@ -231,7 +231,7 @@ Actuellement, seule [la carte canadienne des dangers de la foudre est disponible
  
 En attendant, si vous souhaitez acheter des données sur la foudre en temps réel ou archivées, auprès du Réseau canadien de détection de la foudre (CLDN), veuillez contacter nos collègues à l'adresse : ec.rcdf-cldn.ec@canada.ca . Il y a un coût pour les entreprises privées. Le prix dépend de la superficie dont ils ont besoin pour les données en direct et de la durée des données archivées. Si le client envoie au CLDN ses spécifications, un estimé du coût sera transmis (demande envoyée à Vaisala). 
 
-## Comment obtenir les températures minimales et maximales prévues en format CSV ?
+## Comment obtenir les températures minimales et maximales en format CSV ?
 
 Pour obtenir des données de températures extrêmes prévues au format CSV, vous pouvez consulter au choix :
 
@@ -239,7 +239,7 @@ Pour obtenir des données de températures extrêmes prévues au format CSV, vou
 
 * Les bulletins de prévision FMCN41 à FMCN48 (format CSV), basés sur le [Système régional de prévision déterministe (SRPD) ](../msc-data/nwp_rdps/readme_rdps_en.md). Les prévisions à  12Z contiennent les minima et maxima du jour deux et les minima du jour trois. Les prévisions basées sur les données à 00Z contiennent le maximum du jour en cours et le minimum et le maximum du jour deux.
 
-Ces [bulletins sont disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/).
+Ces bulletins sont disponibles sur le Datamart du SMC, à l'adresse : https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
 
 ## Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?
 
@@ -247,7 +247,7 @@ En ce qui concerne les données QPF (Quantitative Precipitation Forecast) au for
 
 Chacun de ces bulletins est produit spécifiquement pour des sites de prévision canadiens individuels. Le contenu est donc variable. Par exemple, les valeurs des paramètres de prévision sont disponibles à des intervalles de 6 heures de 0 à 48 heures pour certains bulletins, et à des intervalles de 6 heures de 0 à 24 heures et à des intervalles de 12 heures de 24 à 48 heures pour certains autres. Les éléments de prévision météorologique peuvent également varier d'un message à l'autre.
 
-Ces [bulletins sont disponibles sur le  Datamart du SMC](https://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/). Une [interface de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) pour le serveur de données HTTPS du Service météorologique du Canada est également [disponible](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl).
+Ces [bulletins sont disponibles sur le  Datamart du SMC](https://dd.meteo.gc.ca/bulletins/focn03). Une [interface de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) pour le serveur de données HTTPS du Service météorologique du Canada est également [disponible](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl).
 
 Aussi, une estimation optimale de la quantité de précipitation qui est survenue au cours de périodes passées récentes de 6h ou 24h est disponible dans les données de l'[Analyse régionale déterministe de précipitation](../msc-data/nwp_rdpa/readme_rdpa_fr.md). Cet estimé intègre des relevés provenant de capteurs de précipitation, de radar météo et de modèles de prévision numérique du temps. La couverture géographique est l'Amérique du Nord (Canada, États-Unis et le Mexique).
 

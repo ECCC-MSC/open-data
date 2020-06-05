@@ -15,10 +15,10 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Why are message queues terminated after several hours of inactivity when using AMQP ?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
 * [Can I have weather radar data ?](#can-i-have-weather-radar-data)
 * [Can I have archived radar data ?](#can-i-have-archived-radar-data)
-* [Are past forecasts from your numerical weather prediction models available ?](#are-past-forecasts-from-your-numerical-weather-prediction-models-available)
-* [Could I be made aware of any change to bulletins or numerical weather prediction model format and content ?](#could-i-be-made-aware-of-any-change-to-bulletins-or-numerical-weather-prediction-model-format-and-content)
+* [Are historical data forecasts from your numerical weather prediction models available ?](#are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available)
+* [How to be informed of any change to bulletins or numerical weather prediction model format and content ?](#how-to-be-informed-of-any-change-to-bulletins-or-numerical-weather-prediction-model-format-and-content)
 * [How to be informed about problems with  numerical weather prediction model data production ?](#how-to-be-informed-about-problems-with-numerical-weather-prediction-model-data-production)
-* [Why not make just one big GRIB file with all the variables ?](#why-not-make-just-one-big-grib-file-with-all-the-variables)
+* [Why not produce just one big GRIB file with all the variables ?](#why-not-produce-just-one-big-grib-file-with-all-the-variables)
 * [What is the reference coordinate system or datum of a numerical weather prediction model ?](#what-is-the-reference-coordinate-system-or-datum-of-a-numerical-weather-prediction-model)
 * [Can I have the topography of a numerical weather prediction model ?](#can-i-have-the-topography-of-a-numerical-weather-prediction-model)
 * [Can I have the land sea mask of a numerical weather prediction model ?](#can-i-have-the-land-sea-mask-of-a-numerical-weather-prediction-model)
@@ -29,7 +29,7 @@ This section contains the most frequently asked questions about the MSC open dat
 * [How often are the observational data collected by province and territory refreshed ?](#how-often-are-the-observational-data-collected-by-province-and-territory-refreshed)
 * [Can I have buoys data ?](#can-i-have-buoys-data)
 * [Can I have access to weather warnings ?](#can-i-have-access-to-weather-warnings)
-* [What are the main differences between RSS ATOM feeds and AMQP protocol to retreive alerts ?](#what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retreive-alerts)
+* [What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?](#what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retreive-alerts)
 * [Can I have satellite images ?](#can-i-have-satellite-images)
 * [Are lightning data available ?](#are-lightning-data-available)
 * [Can I have CSV minimum and maximum forecast temperature ?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
@@ -51,7 +51,7 @@ Yes, it is possible to use our data for profit-making purposes. You will find al
 
 ## Why are message queues terminated after several hours of inactivity when using AMQP ?
 
-Users of the [AMQPS](../msc-datamart/amqp_en.md) service are supposed to run a daemon that downloads data continuously, such as the one provided by [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/fr/sarra.rst). In the AMQP language, a pump, i.e. a host running Sarracenia, is a [broker](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst). The broker has a limited ability to queue products when a user experiences a long unintended interruption, for example, from a few hours to a few days. 
+Users of the [AMQPS](../msc-datamart/amqp_en.md) service are supposed to run a daemon that downloads data continuously, such as the one provided by [Sarracenia](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst). In the AMQP language, a pump, i.e. a host running Sarracenia, is a [broker](https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst). The broker has a limited ability to queue products when a user experiences a long unintended interruption, for example, from a few hours to a few days. 
 The performance of the overall service is affected by the presence of large queues for a single consumer, so queues should not be allowed to build up indefinitely. 
 
 We keep the queues alive as long as we can reasonably do so, but this practice is only intended to give customers time to restart their service in the event of a failure. The length of disconnections that can be safely supported depends on the number of products subscribed to, which in turn determines the number of products queued. Typically, when there is a queue of more than 25,000 products and there are no customers, the queue is purged.
@@ -60,22 +60,22 @@ In general, it is preferable to use continuous access rather than periodic acces
 
 ## Can I have weather radar data ?
 
-The weather radar data we freely provide to the public are the [GIF images]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md) on the MSC open data server. We also offer the [North American Radar Mosaic](../msc-data/obs_radar/readme_radar_geomet_en.md) via WMS Geospatial Web Services.
+The weather radar data that we freely provide to the public are the [GIF images]( ../msc-data/obs_radar/readme_radarimage-datamart_en.md) on the MSC open data server. We also offer the [North American Radar Mosaic](../msc-data/obs_radar/readme_radar_geomet_en.md) via WMS Geospatial Web Services.
 
-The raw data, as well as various other products, are provided by a [cost-recovered service](../cost-recovered/readme_en/#dedicated-data-feed). As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
+The raw data, as well as various other products, are provided by a [cost-recovered service](../cost-recovered/readme_en.md#dedicated-data-feed). As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
 For the data feeds, the following formats are available:
 
 * NUMERIC (ASCII)
 * GIF format (recent GIFs available for free on the MSC Datamart)
-* [IRIS](https://my.vaisala.net/en/hydrology/offering/weatherradars/Pages/IRIS.aspx) raw format for the old C-Band radars 
+* [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx) raw format for the old C-Band radars 
 * [ODIM_H5](https://support.hdfgroup.org/HDF5/users5.html) raw format for the new S-band radars
 
 ## Can I have archived radar data ?
 
-Environment and Climate Change Canada does not have on online service to retrieve archived data.
+Environment and Climate Change Canada does not have an online service to retrieve archived data.
 
-The data retrieval service from our archive is under a [cost recovery policy](#../cost-recovered/readme_en/#archived-data-retrieval). We charge 99$/hour, with a minimum charge of 99$, to retrieve/recreate the requested data. The data itself is free.
+The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 99$/hour, with a minimum charge of 99$, to retrieve/recreate the requested data. The data itself is free.
 
 Archive data are available in either raw format (IRIS/ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
@@ -95,13 +95,13 @@ Typical archived data retrieval requests require between 2-4 hours to process. I
 |Other information |       |
 |Billing name and coordinates |       |
 
-## Are past forecasts from your numerical weather predicition models available ?
+## Are historical data forecasts from your numerical weather prediction models available ?
 
-Environment and Climate Change Canada does not have on online service to retrieve archived data.
+Environment and Climate Change Canada does not have an online service to retrieve archived data.
 
-The data retrieval service from our archive is under a [cost recovery policy](#../cost-recovered/readme_en/#archived-data-retrieval). We charge 99$/hour, with a minimum of 99$, to retrieve/recreate the requested data. The data itself is free.
+The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 99$/hour, with a minimum of 99$, to retrieve/recreate the requested data. The data itself is free.
 
-Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. extract it to GRIB format and send it to them. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
+Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
 
 | Information | Value |
@@ -123,7 +123,7 @@ Notes:
 * Forecast data are archived for 5 years. Other types of data (analyses for example) may have longer retention periods.
 * Given the large volume of requests, a certain delay is to be expected. Please indicate if the request is urgent, we will try to prioritize it.
 
-## Could I be made aware of any change to bulletins or model format and or content ?
+## How to be informed of any change to bulletins or model format and or content ?
 
 For Canadian station bulletins, any change in the heading and station name is announced via what we call a GENOT (GEneral NOTification) message. We have a mailing list to distribute GENOTs for station and header changes. If you are interested in this e-mail notification, please send us your e-mail and we will add it to this mailing list.
 
@@ -144,13 +144,13 @@ To view the latest AACN01 CWAO bulletins, you can use the [Script Search Utility
 
 There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at ec.dps-client.ec@canada.ca and we will add you to the mailing list.
 
-## Why not make just one big GRIB file with all the variables ?
+## Why not produce just one big GRIB file with all the variables ?
 
 Environment and Climate Change Canada opted to put one variable per file because we presumed that most users would not require all the variables. This will then reach the same download speed as if all the GRIB files were in a single zip file.
 
 ## What is the reference coordinate system or datum of a numerical weather prediction model ?
 
-To know the reference coordinate system of a numerical weather prediction model and the projection used to produce our numerical weather prediction files, just use the [GDAL]( https://www.gdal.org/GDAL) tools (free software). The following command will provide you with the reference coordinate system and the projection of the file: `gdalinfo -proj4 file.grib2`.
+To know the reference coordinate system of a numerical weather prediction model and the projection used to produce our numerical weather prediction files, just use the [GDAL](https://www.gdal.org/GDAL) tools (free software). The following command will provide you with the reference coordinate system and the projection of the file: `gdalinfo -proj4 file.grib2`.
 
 The output information starts with `The coordinates system is:`. This command also gives access to the projection in Proj4 format which is commonly used in geospatial tools.
 
@@ -160,7 +160,7 @@ The topography of a numerical weather prediction model whose data is available i
 
 ## Can I have the land sea mask of a numerical weather prediction model ?
 
-You can use the variable `LAND_SFC` (Land cover) of prognostic hour 00 to determine this mask. Where the value is 0, it is sea, where the value is not 0, it is land (or portion of it).
+You can use the variable `LAND_SFC` (Land cover) of prognostic hour 00 to determine this mask. When the value is 0, it is sea, when the value is not 0, it is land (or portion of it).
 
 ## Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?
 
@@ -215,17 +215,16 @@ You can find information about Environment and Climate Change Canada's warning i
 
 * Our geospatial web services allow to display the warnings layer only in the [Beta version](../msc-geomet/readme_en.md) currently. Please monitor our [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing list to be informed when these warnings are available in GeoMet-Weather.
 
-* In addition, ECCC has set up an [ATOM news feed through which alerts and warnings are available](https://meteo.gc.ca/business/index_f.html#rss).
+* In addition, ECCC has set up an [ATOM news feed through which alerts and warnings are available](https://weather.gc.ca/business/index_e.html#rss).
 
-* Finally, ECCC has set up the [experimental EC Alert Me service](https://ecalertezmoi.meteo.gc.ca/guides/quickstart_fr.php) to send warnings by email. 
+* Finally, ECCC has set up the [experimental EC Alert Me service](https://ecalertme.weather.gc.ca/guides/quickstart_en.php) to send warnings by email. 
 
-## What are the main differences between RSS ATOM feeds and AMQP protocol to retreive alerts ?
+## What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?
 
 The main difference between RSS feeds (ATOM) and AMQP is that in the case of the RSS feed, user needs to send a request to know if new files
 are available, whereas with AMQP, user is advised without sending any request.
 
-If one wants to make an analogy, RSS feeds may be considering as a mailman who deposes letters in the mailbox, whereas AMQP may be considering as a deliver
-who rings at the door to give the postal package.
+If one wants to make an analogy, RSS feeds can be considered as a mailman who deposes letters in the mailbox, whereas AMQP can be considered as a delivery who rings at the door to give the postal package.
 
 We recommend to use the AMQP protocol if it is important for users to receive the announcement and data once available, also AMQP is a longer-term solution.
 
@@ -251,7 +250,7 @@ To obtain extreme forecast temperature data in CSV format, you can consult eithe
 
 * Forecast bulletins FMCN41 to FMCN48 (CSV format), based on the [Regional Deterministic Prediction System (RDPS)(../msc-data/nwp_rdps/readme_rdps_en.md). The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.
 
-These [bulletins are available on the MSC Datamart](https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/).
+These bulletins are available on the MSC Datamart at the address: https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
 
 ## Can I have rainfall amount data ?
 
@@ -259,7 +258,7 @@ Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may 
 
 Each of these bulletins is produced specifically for individual canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and at 12-hour intervals from 24 to 48 hours for some others. The weather forecast elements may also vary from one message to another.
 
-These [bulletins are available on the MSC Datamart](https://dd.meteo.gc.ca/bulletins/focn03/YYYYMMDD/FO/). A [bulletin search interface](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) for the Meteorological Service of Canada's HTTPS data server is also [available](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl).
+These [bulletins are available on the MSC Datamart](https://dd.meteo.gc.ca/bulletins/focn03). A [bulletin search interface](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) for the Meteorological Service of Canada's HTTPS data server is also [available](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl).
 
 Also, an optimal estimate of the amount of precipitation that has occurred during recent past periods of 6h or 24h is available through the [Regional Deterministic Precipitation Analysis](../msc-data/nwp_rdpa/readme_rdpa_en.md) data. This estimate integrates readings from precipitation sensors, weather radar and numerical weather prediction models. The geographical coverage is North America (Canada, United States and Mexico).
 
