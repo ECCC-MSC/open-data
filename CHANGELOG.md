@@ -8,12 +8,24 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.6
+## 2.3.7
 
-* date: TBD
+* date: 2020-06-05
 * announcements:
     * Announced to GeoMet-Info and dd_info
     * Internal message sent
+* new content:
+    * none
+* improvements: 
+    * none
+* bug fixes:
+    * Broken links
+    
+## 2.3.6
+
+* date: 2020-06-05
+* announcements:
+    * not announced
 * new content:
     * New doc section to edit Jupiter Notebooks
 * improvements: 

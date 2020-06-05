@@ -239,7 +239,7 @@ If you ever need to recreate your environment from scratch you may remove the en
 
 The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
 
-1. Ensure you have `mkdocs` version 1.1.2 or newer installed in your `conda` environment (see 5.2.2)
+1. Confirm you have installed the prerequisites detailed in section 5.2
 2. In a terminal window, `cd` to the root of your `public-doc` repository fork
     1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
 3. Pull the current version of the documentation you want to publish: `git pull upstream master`
