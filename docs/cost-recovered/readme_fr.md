@@ -44,7 +44,7 @@ Les **détails concernant la tarification des données radar** sont les suivants
 
 Veuillez noter que ces tarifs sont donnés à titre indicatif et peuvent changer.
 
-Voir aussi la [FAQ](../faq/readme_faq_fr.md)
+Voir aussi la [FAQ](../faq/readme_fr.md)
 
 Le **tarif de départ** concernant le service de "push" des **données NWP au format GRIB, ou toute autre donnée**, est de 500 $/mois + 500 $ de frais d'installation pour un maximum de 1 Go/jour. Ajoutez 500$/mois pour chaque Go supplémentaire par jour.
 
