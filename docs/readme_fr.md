@@ -49,7 +49,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 **Cas d'utilisation** :
 
-* **Accédez et utiliser l'API des données du SMC directement dans un script Python**:
+* **Accéder et utiliser l'API des données du SMC directement dans un script Python**:
     * [Arthur : profits anticipés selon la probabilité de précipitation](usage/use-case_arthur/use-case_arthur_fr/)
 
 **Documentation technique** :
