@@ -49,8 +49,8 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 
 **Use cases**:
 
-* **Access and use the MSC data API directly from a Python script**:
-    * [Arthur: profits based on probability of precipitation](usage/use-case_arthur/use-case_arthur_en/)
+* **Access and use the MSC GeoMet data API directly from a Python script**:
+    * [Arthur: profits based on probability of precipitation](../usage/use-case_arthur/use-case_arthur_en/)
 
 **Technical documentation**:
 
