@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.9
+
+* date: 2020-06-08
+* announcements:
+    * not announced
+* new content:
+    * none
+* improvements: 
+    * Jupyter Notebooks now pointing to the ECCC-MSC source
+* bug fixes:
+    * Broken links
+    
 ## 2.3.8
 
 * date: 2020-06-05
