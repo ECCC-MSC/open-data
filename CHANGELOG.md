@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.10
+
+* date: 2020-06-09
+* announcements:
+    * not announced
+* new content:
+    * none
+* improvements: 
+    * Add a question about AQHI in the FAQ
+* bug fixes:
+    * Broken links
+
 ## 2.3.9
 
 * date: 2020-06-08
