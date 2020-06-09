@@ -269,7 +269,7 @@ Some weather stations are automatic (unmanned) and do not report the current con
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
 
-* Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
+## Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
 
 In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
 
