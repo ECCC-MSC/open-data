@@ -35,7 +35,7 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Can I have CSV minimum and maximum forecast temperature ?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
 * [Can I have rainfall amount data ?](#can-i-have-rainfall-amount-data)
 * [I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal)
-* [Is it possible to access the pollutant emission data used to calculate the Air Quality Health Index ?](#is-it-possible-to-access-the-pollutant-emission-data-used-to-calculate-the-Air-Quality-Health-Index)
+* [Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?](#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index)
 * [Is there a discussion platform for users ?](#is-there-a-discussion-platform-for-users)
 
 ## Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?
@@ -271,11 +271,19 @@ This is why there is no icon or condition reported in the corresponding Citypage
 
 ## Is it possible to access the pollutant emission data used to calculate the Air Quality Health Index ?
 
-In Canada, these data are generally produced by the provinces and collected by ECCC. This is true for both real time and "official" data that are revised 6 months (or more) later.  These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
+In Canada, these data are generally produced by the provinces and municollected by ECCC. This is true for both real time and "official" data that are revised 6 months (or more) later.  These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
 
 Also, a number of Canadian stations are available in the U.S. database [AirNow](https://www.airnow.gov/aqi-and-health/), and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e).
 
 Finally, the [National Pollutant Release Inventory](https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html) can be accessed. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.
+
+* Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
+
+In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
+
+Also, a number of Canadian stations are available in the U.S. [AirNow](https://www.airnow.gov/aqi-and-health/) database, and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). On the other hand, ECCC only publishes observations in the form of the Air Quality Health Index, which can be found in the [MSC Datamart](../msc-data/aqhi/readme_aqhi_en.md).
+
+Finally, the [National Pollutant Release Inventory](https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html) is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.
 
 ## Is there a discussion platform for users ?
 
