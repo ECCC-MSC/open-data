@@ -269,14 +269,6 @@ Some weather stations are automatic (unmanned) and do not report the current con
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
 
-## Is it possible to access the pollutant emission data used to calculate the Air Quality Health Index ?
-
-In Canada, these data are generally produced by the provinces and municollected by ECCC. This is true for both real time and "official" data that are revised 6 months (or more) later.  These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
-
-Also, a number of Canadian stations are available in the U.S. database [AirNow](https://www.airnow.gov/aqi-and-health/), and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e).
-
-Finally, the [National Pollutant Release Inventory](https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html) can be accessed. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.
-
 * Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
 
 In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
