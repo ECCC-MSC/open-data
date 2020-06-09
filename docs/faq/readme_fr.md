@@ -258,11 +258,11 @@ Certaines stations météorologiques sont automatiques (sans personnel) et ne si
 
 ## Est-il possible d'avoir accès aux données d'émission des polluants utilisés pour calculer la cote air santé ?
 
-Au Canada, ces données sont généralement produites par les provinces et récoltées par ECCC. C’est vrai tant pour le temps réel que pour les données « officielles » qui sont révisées 6 mois plus tard (ou plus).  Ces données officielles sont assemblées dans la base de données du programme de [http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=fr](Surveillance national de la pollution atmosphérique (SNPA)), maintenant sur le catalogue de données ECCC.
+Au Canada, ces données sont généralement produites par les provinces et récoltées par ECCC. C’est vrai tant pour le temps réel que pour les données « officielles » qui sont révisées 6 mois plus tard (ou plus).  Ces données officielles sont assemblées dans la base de données du programme de [Surveillance national de la pollution atmosphérique (SNPA)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=fr), maintenant sur le catalogue de données ECCC.
 
-Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine [https://www.airnow.gov/aqi-and-health/](AirNow), et sont aussi téléchargeables dans le projet ouvert [https://openaq.org/#/map?parameter=o3&_k=6p035e](OpenAQ).
+Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine [AirNow](https://www.airnow.gov/aqi-and-health/), et sont aussi téléchargeables dans le projet ouvert [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e).
 
-Enfin, il est possible de consulter [https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html](l'Inventaire national des rejets de polluants). Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publié plus d’un an après la date courante, sur une base annuelle.
+Enfin, il est possible de consulter [l'Inventaire national des rejets de polluants](https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html). Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publiée plus d’un an après la date courante, sur une base annuelle.
 
 ## Existe-t-il une plateforme de discussion pour les usagers ?
 
