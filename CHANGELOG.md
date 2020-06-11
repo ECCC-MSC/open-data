@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.12
+
+* date: TBD
+* announcements:
+    * not announced
+* new content:
+    * none
+* improvements: 
+    * Raw data access ordering
+* bug fixes:
+    * Fixed missing translation in Arthur use case
+    * typos
+    
 ## 2.3.11
 
 * date: 2020-06-09
