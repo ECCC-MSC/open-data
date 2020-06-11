@@ -107,12 +107,6 @@ Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vou
 
 ## Comment accéder aux données brutes
 
-### Téléchargement de données brutes
-
-Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
-
-Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
-
 ### Services web de données brutes
 
 L'exemple de cas d'utilisation suivant est disponible :
@@ -126,6 +120,12 @@ Les données brutes à des lieux géographiques spécifiques peuvent être récu
 Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
 
 Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une [requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). Une astuce pour construire des requêtes WCS est d'utiliser [l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD](https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation) et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.
+
+### Téléchargement de données brutes
+
+Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
+
+Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
