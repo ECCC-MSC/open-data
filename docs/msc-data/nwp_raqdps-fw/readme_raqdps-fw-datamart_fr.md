@@ -44,7 +44,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
-* {YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_{VAR}_{TYPENIVEAU}_{Grille}(resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_VAR_LVL_{Grille}(resolution}_P{hhh}.grib2
 
 où :
 
@@ -55,7 +55,7 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
 * __RAQDPS-FW__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe de la qualité de l’air FireWork
 * __VAR__ : Type de variable contenu dans le fichier (ex. : PM2.5-Diff-RAQDPS)
-* __TYPENIVEAU__ : Type de niveau [SFC pour la surface, EATM pour l’intégrale de la colonne]
+* __LVL__ : Niveau vertical [SFC pour la surface, EATM pour l’intégrale de la colonne]
 * __Grille__ : Grille horizontale [RLatLon] 
 * __resolution__ : 0.09x0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 072]
@@ -69,10 +69,10 @@ Exemple de noms de fichier :
 
 Liste des variables 2D disponibles dans les fichiers:
 
-* PM2.5 : Concentration des PM2.5 
-* PM2.5-Diff-RAQDPS : Différence de concentration des PM2.5 avec le modèle SRPDQA. Indique la contribution des feux de forêt à la concentration des PM2.5
-* PM10 : Concentration des PM10
-* PM10-Diff-RAQDPS : Différence de concentration des PM10 avec le modèle SRPDQA. Indique la contribution des feux de forêt à la concentration des PM10
+* PM2.5 : Concentration des PM2.5 (&mu;g.m-3)
+* PM2.5-Diff-RAQDPS : Différence de concentration des PM2.5 (&mu;g.m-3) avec le modèle SRPDQA. Indique la contribution des feux de forêt à la concentration des PM2.5
+* PM10 : Concentration des PM10 (&mu;g.m-3)
+* PM10-Diff-RAQDPS : Différence de concentration des PM10 (&mu;g.m-3) avec le modèle SRPDQA. Indique la contribution des feux de forêt à la concentration des PM10
 
 ## Support
 
