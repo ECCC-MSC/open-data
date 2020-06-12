@@ -36,7 +36,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Comment obtenir les températures minimales et maximales en format CSV ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-csv)
 * [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
 * [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
-* [Est-il possible d'avoir accès aux données observées passées de qualité de l'air, et aux données d'émission des polluants utilisées pour calculer la cote air santé ?](#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante)
+* [Est-il possible d'avoir accès aux données observées passées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la cote air santé ?](#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante)
 * [Existe-t-il une plateforme de discussion pour les usagers ?](#existe-t-il-une-plateforme-de-discussion-pour-les-usagers)
 
 ## Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?
@@ -256,7 +256,7 @@ Aussi, une estimation optimale de la quantité de précipitation qui est survenu
 
 Certaines stations météorologiques sont automatiques (sans personnel) et ne signalent pas l'état des conditions actuelles. Si vous regardez la page correspondante sur notre site web, par exemple pour la ville d’[Edmonton](https://weather.gc.ca/city/pages/ab-50_metric_e.html), vous verrez qu'il est écrit « Non observé » pour la condition. C'est pourquoi aucune icône ou condition n'est signalée dans le fichier XML Citypage correspondant.
 
-## Est-il possible d'avoir accès aux données observées passées de qualité de l'air, et aux données d'émission des polluants utilisées pour calculer la cote air santé ?
+## Est-il possible d'avoir accès aux données observées passées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la cote air santé ?
 
 Au Canada, les données d'observation de qualité de l'air sont généralement produites par les provinces et municipalités et récoltées par ECCC. C’est vrai tant pour le temps réel que pour les données « officielles » qui font l'objet d'un contrôle qualité détaillé et qui sont habituellement publiées l'année suivante.  Ces données officielles sont assemblées dans la base de données du programme de [Surveillance national de la pollution atmosphérique (SNPA)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=fr), maintenant sur le catalogue de données ECCC.
 
