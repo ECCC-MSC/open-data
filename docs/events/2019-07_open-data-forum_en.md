@@ -55,9 +55,9 @@ List of videos:
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/tom-kralidis.png](http://img.youtube.com/vi/R5rWE56D1U8/0.jpg)](http://www.youtube.com/watch?v=R5rWE56D1U8 "Services Web géospatiaux: passé, présent et futur")
 
-**Presenter** : Tom Kralidis, Senior Geomatics Specialist, Geospatial and Open Data Systems, ECCC
+**Presenter** : Tom Kralidis, Senior Systems Scientist, Geospatial and Open Data Systems, ECCC
 
-**Topic** : Overview of geospatial and internal standards, as well as a history and perspective on the future : why create an IPY at MSC, our motivations and what the future holds for us. You can [download the presentation file](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Geospatial_Web_services_overview_TomKralidis.pptx).
+**Topic** : Overview of geospatial and internal standards, as well as a history and perspective on the future : why create an API at MSC, our motivations and what the future holds for us. You can [download the presentation file](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Geospatial_Web_services_overview_TomKralidis.pptx).
 
 ### MSC GeoMet - MSC Data and Geospatial Web Services 
 
