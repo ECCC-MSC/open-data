@@ -55,7 +55,7 @@ Liste des vidéos :
 
 [![http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/forum_2019/tom-kralidis.png](http://img.youtube.com/vi/R5rWE56D1U8/0.jpg)](http://www.youtube.com/watch?v=R5rWE56D1U8 "Services Web géospatiaux: passé, présent et futur")
 
-**Présentateur** : Tom Kralidis, Spécialiste principal en géomatique, Systèmes de données géospatiales et ouvertes, ECCC
+**Présentateur** : Tom Kralidis, Scientifique principal de systèmes, Systèmes de données géospatiales et ouvertes, ECCC
 
 **Sujet** : Aperçu des normes géospatiales et internes, de même qu'un historique et une perspective sur l'avenir: pourquoi créer un API au SMC, nos motivations et ce que l'avenir nous réserve. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/Geospatial_Web_services_overview_TomKralidis.pptx).
 
