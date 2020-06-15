@@ -26,7 +26,7 @@ Les couches de la composite radar météo nord-américaine de GeoMet du SMC peuv
 
 ## Utilisation
 
-La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/web-services_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données radar météo](readme_radar_fr.md) qui pointe vers de l'information additionnelle sur les radars météo.
+La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/readme_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données radar météo](readme_radar_fr.md) qui pointe vers de l'information additionnelle sur les radars météo.
 
 ### Couches disponibles
 

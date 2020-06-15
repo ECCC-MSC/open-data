@@ -27,7 +27,7 @@ MSC GeoMet's North American weather radar composite layers can be seen in action
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
 
 ### Available layers
 
