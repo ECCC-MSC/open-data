@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système régional de prévision déterministe de la qualité de l’air FireWork (SRPDQA-FW)
 
-Cette page décrit les données du système FireWork, un système de prévision de la qualité de l’air incorporant les émissions découlant des feux de forêt. Le système est exécuté deux fois par jour, initialisé à 00 h et 12 h UTC, en marge du Système régional de prévision déterministe de la qualité de l’air (SRPDQA). Les émissions des feux de forêt sont estimées à l’aide des données sur les points chauds et sur le combustible consommé sur les terres canadiennes et américaines, fournies par le [Système canadien d’information sur les feux de végétation]( http://cwfis.cfs.nrcan.gc.ca/) de Ressources naturelles Canada. L’ensemble de données sur les points chauds est téléchargé deux fois par jour, avant l’exécution du système FireWork. Ce système a l’avantage de présenter l’inventaire complet des émissions ainsi que les sources d’incendie intermittentes ajoutées.
+Cette page décrit les données du système FireWork, un système de prévision de la qualité de l’air incorporant les émissions découlant des feux de forêt. Le système est exécuté deux fois par jour, initialisé à 00 h et 12 h UTC, en marge du Système régional de prévision déterministe de la qualité de l’air (SRPDQA). Les émissions des feux de forêt sont estimées à l’aide des données sur les points chauds et sur le combustible consommé sur les terres canadiennes et américaines, fournies par le [Système canadien d’information sur les feux de végétation](http://cwfis.cfs.nrcan.gc.ca/) de Ressources naturelles Canada. L’ensemble de données sur les points chauds est téléchargé deux fois par jour, avant l’exécution du système FireWork. Ce système a l’avantage de présenter l’inventaire complet des émissions ainsi que les sources d’incendie intermittentes ajoutées.
 
 ## Adresse des données 
 
@@ -56,7 +56,7 @@ où :
 * __RAQDPS-FW__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe de la qualité de l’air FireWork
 * __VAR__ : Type de variable contenu dans le fichier (ex. : PM2.5-Diff-RAQDPS)
 * __LVL__ : Niveau vertical [SFC pour la surface, EATM pour l’intégrale de la colonne]
-* __Grille__ : Grille horizontale [RLatLon] 
+* __Grille__ : Grille horizontale lat-lon tournée [RLatLon] 
 * __resolution__ : 0.09x0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
