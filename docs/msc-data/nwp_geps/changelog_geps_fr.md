@@ -6,12 +6,6 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
-## Le mardi 21 janvier 2020
-
-### Mise à jours du SGPE à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
-
-Voir les détails via [ce lien](../changelog_multisystems_fr.md).
-
 ## Le vendredi 26 juin 2020
 
 ### Ajout des observations GPSRO des satellites COSMIC-II
@@ -41,6 +35,12 @@ Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorol
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
 Ajout des observations AMV (Atmospheric Motion Vector) du satellite MetOp-3/C.
+
+## Le mardi 21 janvier 2020
+
+### Mise à jours du SGPE à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mardi 23 juillet 2019
 
