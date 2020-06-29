@@ -6,6 +6,36 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Friday June 26th, 2020
+
+### Addition of GPSRO observations from the COSMIC-II satellites
+
+On Friday June 26th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.0.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of GPSRO (Global Positioning System Radio Occultation) observations from the COSMIC II satellites.
+
+## Wednesday April 29th, 2020
+
+### Addition of GPSRO observations from the PAZ and the KOMPSAT-5 satellites
+
+On Wednesday April 29th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.0.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of GPSRO (Global Positioning System Radio Occultation) observations from the PAZ and the KOMPSAT-5 satellites.
+
+## Tuesday April 28th, 2020
+
+### Addition of AMV observations from the MetOp-3/C satellite
+
+On Tuesday April 28th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.0.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of AMV (Atmospheric Motion Vector) observations from the MetOp-3/C satellite.
+
 ## Tuesday January 21, 2020
 
 ### Upgrade to Version 6.1.0 of the GEPS adapted to the New High Performance Computing Infrastructure.

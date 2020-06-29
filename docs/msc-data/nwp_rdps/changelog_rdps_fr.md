@@ -6,6 +6,36 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le vendredi 26 juin 2020
+
+### Ajout des observations GPSRO des satellites COSMIC-II
+
+Le vendredi 26 juin 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites COSMIC II.
+
+## Le mercredi 29 avril 2020
+
+### Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5
+
+Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites PAZ et KOMPSAT-5.
+
+## Le mardi 28 avril 2020
+
+### Ajout des observations AMV du satellite MetOp-3/C
+
+Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations AMV (Atmospheric Motion Vector) du satellite MetOp-3/C.
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jours du SRPD à la version 7.1.0 suite à la nouvelle infrastructure de calcul haute performance. 

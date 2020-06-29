@@ -8,6 +8,24 @@
 
 ## 2020
 
+### June 26, 2020
+
+* [Addition of GPSRO observations from COSMIC-II satellites in the GEPS](../nwp_geps/changelog_geps_en#friday-june-26-2020)
+* [Addition of GPSRO observations from COSMIC-II satellites in the GDPS](../nwp_gdps/changelog_gdps_en#friday-june-26-2020)
+* [Addition of GPSRO observations from COSMIC-II satellites in the RDPS](../nwp_rdps/changelog_rdps_en#friday-june-26-2020)
+
+### April 29, 2020
+
+* [Addition of GPSRO observations from PAZ and KOMPSAT-5 satellites in the GEPS](../nwp_geps/changelog_geps_en#wednesday-april-29-2020)
+* [Addition of GPSRO observations from PAZ and KOMPSAT-5 satellites in the GDPS](../nwp_gdps/changelog_gdps_en#wednesday-april-29-2020)
+* [Addition of GPSRO observations from PAZ and KOMPSAT-5 satellites in the RDPS](../nwp_rdps/changelog_rdps_en#wednesday-april-29-2020)
+
+### April 28, 2020
+
+* [Addition of AMV observations from MetOp-3/C satellite in the GEPS](../nwp_geps/changelog_geps_en#tuesday-april-28-2020)
+* [Addition of AMV observations from MetOp-3/C satellite in the GDPS](../nwp_gdps/changelog_gdps_en#tuesday-april-28-2020)
+* [Addition of AMV observations from MetOp-3/C satellite in the RDPS](../nwp_rdps/changelog_rdps_en#tuesday-april-28-2020)
+
 ### April 1, 2020
 
 * [FireWork Summer 2020 - Season debut](../nwp_raqdps-fw/changelog_raqdps-fw_en#Wednesday-april-1-2020)
