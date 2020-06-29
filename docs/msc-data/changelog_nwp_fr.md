@@ -8,6 +8,24 @@
 
 ## 2020
 
+### 26 juin 2020
+
+* [Ajout des observations GPSRO des satellites COSMIC-II dans le SGPE](../nwp_geps/changelog_geps_fr#le-vendredi-26-juin-2020)
+* [Ajout des observations GPSRO des satellites COSMIC-II dans le SGPD](../nwp_gdps/changelog_gdps_fr#le-vendredi-26-juin-2020)
+* [Ajout des observations GPSRO des satellites COSMIC-II dans le SRPD](../nwp_rdps/changelog_rdps_fr#le-vendredi-26-juin-2020)
+
+### 29 avril 2020
+
+* [Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5 dans le SGPE](../nwp_geps/changelog_geps_fr#le-mercredi-29-avril-2020)
+* [Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5 dans le SGPD](../nwp_gdps/changelog_gdps_fr#le-mercredi-29-avril-2020)
+* [Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5 dans le SRPD](../nwp_rdps/changelog_rdps_fr#le-mercredi-29-avril-2020)
+
+### 28 avril 2020
+
+* [Ajout des observations AMV du satellite MetPp-3/C dans le SGPE](../nwp_geps/changelog_geps_fr#le-mardi-28-avril-2020)
+* [Ajout des observations AMV du satellite MetPp-3/C dans le SGPD](../nwp_gdps/changelog_gdps_fr#le-mardi-28-avril-2020)
+* [Ajout des observations AMV du satellite MetPp-3/C dans le SRPD](../nwp_rdps/changelog_rdps_fr#le-mardi-28-avril-2020)
+
 ### 1 avril 2020
 
 * [FireWork d'été 2020 - Début de la saison](../nwp_raqdps-fw/changelog_raqdps-fw_fr#le-mercredi-1-avril-2020)

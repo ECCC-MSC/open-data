@@ -12,6 +12,36 @@
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
+## Le vendredi 26 juin 2020
+
+### Ajout des observations GPSRO des satellites COSMIC-II
+
+Le vendredi 26 juin 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système global de prévision d'ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites COSMIC II.
+
+## Le mercredi 29 avril 2020
+
+### Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5
+
+Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système global de prévision d'ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites PAZ et KOMPSAT-5.
+
+## Le mardi 28 avril 2020
+
+### Ajout des observations AMV du satellite MetOp-3/C
+
+Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système global de prévision d'ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations AMV (Atmospheric Motion Vector) du satellite MetOp-3/C.
+
 ## Le mardi 23 juillet 2019
 
 ### Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le système global de prévision d'ensemble (SGPE)
