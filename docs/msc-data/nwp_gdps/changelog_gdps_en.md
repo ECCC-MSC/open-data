@@ -10,7 +10,7 @@
 
 ### Addition of GPSRO observations from the COSMIC-II satellites
 
-On Friday June 26th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.0.0 of the Global Deterministic Prediction System (GDPS).
+On Friday June 26th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Global Deterministic Prediction System (GDPS).
 
 Only the data assimilation component was modified to include the following observations:
 
@@ -20,7 +20,7 @@ Addition of GPSRO (Global Positioning System Radio Occultation) observations fro
 
 ### Addition of GPSRO observations from the PAZ and the KOMPSAT-5 satellites
 
-On Wednesday April 29th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.0.0 of the Global Deterministic Prediction System (GDPS).
+On Wednesday April 29th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Global Deterministic Prediction System (GDPS).
 
 Only the data assimilation component was modified to include the following observations:
 
@@ -30,7 +30,7 @@ Addition of GPSRO (Global Positioning System Radio Occultation) observations fro
 
 ### Addition of AMV observations from the MetOp-3/C satellite
 
-On Tuesday April 28th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.0.0 of the Global Deterministic Prediction System (GDPS.
+On Tuesday April 28th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Global Deterministic Prediction System (GDPS.
 
 Only the data assimilation component was modified to include the following observations:
 
