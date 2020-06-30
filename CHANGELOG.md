@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced
 * new content:
-    * none
+    * Add 3 inputs (new satellite obs) in the changelog of the GDPS, RDPS and GEPS
 * improvements: 
     * Raw data access ordering
 * bug fixes:
