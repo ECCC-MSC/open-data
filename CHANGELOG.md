@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * Add 3 inputs (new satellite obs) in the changelog of the GDPS, RDPS and GEPS
+    * Add RAQDPS-FW doc (GRIB2 data on DD)
 * improvements: 
     * Raw data access ordering
 * bug fixes:
