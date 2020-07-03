@@ -46,7 +46,7 @@ Valeurs données aux paramètres de la grille lat-lon tournée sur le domaine ou
 | résolution à 60° N | 1.0 km |
 | coordonnées du premier point de grille (rélatives à la grille utilisée) | 5°S  23°W |
 
-__Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) supportent ces grilles tournées. Il en sera de même avec [GDAL](https://gdal.org/) au printemps 2020.
+__Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées.
 
 ## Nomenclature des noms de fichiers 
 
