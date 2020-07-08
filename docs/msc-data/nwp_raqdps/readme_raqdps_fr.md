@@ -29,7 +29,9 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Produits
 
-* [Cartes des prévisions à 48h pour l'ozone troposphérique près de la surface et aux altitudes de 50 mètres et de 500 mètres ainsi que pour les PM 2.5 et les PM10 près de la surface sont disponibles ci-dessous. Des cartes à 4 panneaux permettent de voir simultanément les prévisions pour les PM2.5, les PM10 et l'ozone près de la surface et pour l'ozone à 500 mètres.](https://meteo.gc.ca/aqfm/index_f.html)
+* [Cartes des prévisions à 48h](https://meteo.gc.ca/aqfm/index_f.html) pour l'ozone troposphérique près de la surface et aux altitudes de 50 mètres et de 500 mètres ainsi que pour les PM 2.5 et les PM10 près de la surface sont disponibles ci-dessous. 
+
+* [Cartes à 4 panneaux](https://meteo.gc.ca/aqfm/index_f.html) permettent de voir simultanément les prévisions pour les PM2.5, les PM10 et l'ozone près de la surface et pour l'ozone à 500 mètres.
 
 ## Documentation technique
 

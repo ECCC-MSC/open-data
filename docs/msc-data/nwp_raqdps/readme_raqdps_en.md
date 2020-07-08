@@ -29,7 +29,9 @@ Upcoming
 
 ## Products
 
-* [Maps of 48 hours forecasts for tropospheric ozone near the surface and at altitudes of 50 metres and 500 metres, and for PM 2.5 and PM10 near the surface. Forecasts for PM2.5, PM10, and ozone near the surface and for ozone at 500 metres can be viewed simultaneously on the 4-panel maps.](https://weather.gc.ca/aqfm/index_e.html)
+* [Maps of 48 hours forecasts](https://weather.gc.ca/aqfm/index_e.html) for tropospheric ozone near the surface and at altitudes of 50 metres and 500 metres, and for PM 2.5 and PM10 near the surface. 
+
+* [For-panels maps](https://weather.gc.ca/aqfm/index_e.html) forecasts for PM2.5, PM10, and ozone near the surface and for ozone at 500 metres.
 
 ## Technical documentation
 
