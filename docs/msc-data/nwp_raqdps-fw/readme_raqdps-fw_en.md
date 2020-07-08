@@ -12,10 +12,10 @@ Smoke from wildfires in forests and grasslands can be a major source of air poll
 
 ### How to access the data
 
-These data are currenlty only through the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
+These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
 
-* [FireWork data (hot spots) available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_raqdps-fw-datamart_en.md) 
+* [FireWork data (hot spots) available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
