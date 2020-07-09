@@ -6,7 +6,7 @@
 
 # Regional Air Quality Deterministic Prediction System (RAQDPS) data in GRIB2 Format
 
-This page describes the [Regional Air Quality Deterministic Prediction System (RAQDPS)](readme_raqdps_fr.md) GRIB2 data. The system is run twice daily to produce 48-hour forecasts of hourly ozone (O3), nitrogen dioxide (NO2), and particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. 
+This page describes the [Regional Air Quality Deterministic Prediction System (RAQDPS)](readme_raqdps_fr.md) GRIB2 data. The system is run twice daily to produce 72-hour forecasts of some pollutants such as hourly ozone ($`O_3`$), nitrogen dioxide ($`NO_2`$), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. 
 
 ## Data location
 
@@ -25,7 +25,7 @@ A history of 24 days of forecast is kept in this directory.
 
 ## Technical specification of the grid
 
-![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps/grille_raqdps-fw.png)
+![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)
 
 Table lists the values of various parameters of the rotated lat-lon grid:
 

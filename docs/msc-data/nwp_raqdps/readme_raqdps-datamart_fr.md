@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système régional de prévision déterministe de la qualité de l’air (SRPDQA)
 
-Cette page décrit les données du [Système régional de prévision déterministe de la qualité de l’air (SRPDQA)](readme_raqdps_fr.md) en format GRIB2, exécuté deux fois par jour afin de produire des prévisions horaires de 48 heures pour les champs d’ozone (O3 ), de dioxyde d’azote (NO2) et de matières particulaires dont le diamètre aérodynamique est inférieur à 2.5 μm (PM2.5), sur une grille nord-américaine. 
+Cette page décrit les données du [Système régional de prévision déterministe de la qualité de l’air (SRPDQA)](readme_raqdps_fr.md) en format GRIB2, exécuté deux fois par jour afin de produire des prévisions horaires de 72 heures pour certains polluants tels que l’ozone ($`O_3`$), le dioxyde d’azote ($`NO_2`$) ou encore les matières particulaires dont le diamètre aérodynamique est inférieur à 2.5 μm (PM2.5), sur une grille nord-américaine.
 
 ## Adresse des données 
 
@@ -25,7 +25,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille  
 
-![Image du domaine RAQDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps/grille_raqdps-fw.png)
+![Image du domaine RAQDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)
 
 Valeurs données aux paramètres de la grille lat-lon tournée :
 
@@ -71,10 +71,10 @@ Liste des variables 2D disponibles dans les fichiers:
 
 * PM2.5 : Concentration des PM2.5 (&mu;g.m-3)
 * PM10 : Concentration des PM10 (&mu;g.m-3)
-* NO: Monoxyde d'azote (ppb)
-* NO2: Dioxyde d'azote (ppb)
-* O3: Ozone (ppb)
-* SO2: Dioxyde de sulfure (ppb)
+* NO : Monoxyde d'azote (ppb)
+* NO2 : Dioxyde d'azote (ppb)
+* O3 : Ozone (ppb)
+* SO2 : Dioxyde de sulfure (ppb)
 
 ## Support
 
