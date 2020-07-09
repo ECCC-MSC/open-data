@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Air Quality Deterministic Prediction System 
 
-The Regional Air Quality Deterministic Prediction System (RAQDPS) carries out physics and chemistry calculations to arrive at deterministic predictions of chemical species concentration of interest to air quality. Chemical constituents include $O_{3}$, $SO_{2}$, NO, and $NO_{2}$ gases as well as fine particulate matter PM2.5 (2.5 micrometers in diameter or less) and coarse particulate matter PM10 (10 micrometers in diameter or less). Predictions are available from the current day out to 72 hours into the future. Geographical coverage is the North American domain. Data is available at a horizontal resolution of 10 km. While the system encompasses 84 vertical levels, data is available only for the surface level. Predictions are performed twice a day. 
+The Regional Air Quality Deterministic Prediction System (RAQDPS) carries out physics and chemistry calculations to arrive at deterministic predictions of chemical species concentration of interest to air quality. Chemical constituents include $`O_3`$, $`SO_2`$, NO and $`NO_2`$, gases as well as fine particulate matter PM2.5 (2.5 micrometers in diameter or less) and coarse particulate matter PM10 (10 micrometers in diameter or less). Predictions are available from the current day out to 72 hours into the future. Geographical coverage is the North American domain. Data is available at a horizontal resolution of 10 km. While the system encompasses 84 vertical levels, data is available only for the surface level. Predictions are performed twice a day. 
 
 ## Access
 
@@ -29,7 +29,7 @@ Upcoming
 
 ## Products
 
-* [Maps of 48 hours forecasts](https://weather.gc.ca/aqfm/index_e.html) for tropospheric ozone near the surface and at altitudes of 50 metres and 500 metres, and for PM 2.5 and PM10 near the surface. 
+* [Maps of 48 hours forecasts](https://weather.gc.ca/aqfm/index_e.html) for tropospheric ozone near the surface and at altitudes of 50 metres and 500 metres, and for PM2.5 and PM10 near the surface. 
 
 * [For-panels maps](https://weather.gc.ca/aqfm/index_e.html) forecasts for PM2.5, PM10, and ozone near the surface and for ozone at 500 metres.
 
