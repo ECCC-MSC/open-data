@@ -25,7 +25,7 @@ A history of 24 days of forecast is kept in this directory.
 
 ## Technical specification of the grid
 
-![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps/grille_raqdps-fw.png)
+![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)
 
 Table lists the values of various parameters of the rotated lat-lon grid:
 
