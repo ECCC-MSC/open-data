@@ -1,10 +1,8 @@
 [En français](readme_rdsps-datamart_fr.md)
 
-
-![ECCC logo](../../docs/img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDSPS](readme_rdsps_en.md) > RDSPS on MSC Datamart
-
 
 # Regional Deterministic Storm Surge Prediction System (RDSPS) data in NetCDF format
 
@@ -43,7 +41,7 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_{VAR}_{LVL}_{Grille}(resolution}_P{hhh}.nc 
+{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
 
 Where:
 
@@ -70,7 +68,7 @@ The list below provides, for each variable: a short description, an alphabetical
 
 |NetCDF  | Short description|                          Abbr.|  Level|  Units|
 |--------|---------------|----------|----------|----------|
-|etas    |Storm surge    |                            ETAS|   src_0|    m|
+|etas    |Storm surge    |                            ETAS|   SFC|    m|
 
 
 ## Support

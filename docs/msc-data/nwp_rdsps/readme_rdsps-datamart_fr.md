@@ -1,7 +1,7 @@
 
 [In English](readme_rdsps-datamart_en.md)
 
-![ECCC logo](../../docs/img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > [SRPDOT](readme_rdsps_fr.md) > SRPDOT sur le Datamart du SMC
 
@@ -19,9 +19,9 @@ Les données sont accessibles à adresse suivante :
 
 * [https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf/{HH}/](https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf)
 
-where :
+où :
 
-* __HH__ : Model run start, in UTC [00 or 12]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -41,7 +41,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_{VAR}_{LVL}_{Grille}(resolution}_P{hhh}.nc 
+{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
 
 où :
 
