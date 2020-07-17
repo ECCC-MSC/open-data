@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RDSPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDSPS](readme_rdsps_en.md) > RDSPS Changelog
 
 # Chronology of changes to the Regional Deterministic Storm-surge Prediction System (RDSPS)
 
