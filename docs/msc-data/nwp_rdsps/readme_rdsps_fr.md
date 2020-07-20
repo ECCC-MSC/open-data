@@ -34,4 +34,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements
 
-La chronologie des changements apportés auSystème régional de prévision déterministe d'onde de tempête (SRPDOT) est disponible [ici](changelog_rdsps_fr.md).
+La chronologie des changements apportés au Système régional de prévision déterministe d'onde de tempête (SRPDOT) est disponible [ici](changelog_rdsps_fr.md).
