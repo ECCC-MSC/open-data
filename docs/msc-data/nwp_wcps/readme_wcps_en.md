@@ -16,7 +16,7 @@ The Regional Deterministic Prediction System (RDPS) provides initial and boundar
 
 ### How to access the data 
 
-These datasets are available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server and from the [MSC GeoMet](../../msc-geomet/readme_en.md) web services:
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [WCPS NEMO NetCDF data available on the MSC Datamart](readme_wcps_nemo-datamart_en.md) 
 * (upcoming) [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
@@ -25,7 +25,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
 
 ### Metadata

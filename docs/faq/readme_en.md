@@ -178,7 +178,7 @@ Therefore, the micro equation for calculating snow water equivalent in mm (equiv
 
 ## In the numerical weather prediction systems changelog, I see several systems (e.g. SRPEOT) not mentioned in the list of systems with available data, where can I find this data ?
 
-These data are not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the [dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing lists.
+This data is not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the [dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing lists.
 
 ## What is the difference between the two sets of observational data available on the MSC Datamart ?
 
@@ -186,7 +186,7 @@ We have 2 products that contain observations from the Environment and Climate Ch
 
 One is a one-station-per-file type, consisting of ground and marine weather observations per station, the [SWOB data](../msc-data/obs_station/readme_obs_insitu_swobdatamart_en.md), available in XML format. All Canadian station data are available in this product.
 
-The second one groups [observational data from the same province or territory](../msc-data/obs_station/readme_obs_insitu_xmldatamart_en.md) by file, in XML format. Not all Canadian stations are contained in this product. These data are used in the official forecast web site weather.gc.ca. As a result, they are subject to certain rules (e.g. for winds, use of the average observed over a 2-minute period, if it is not possible to use a 10-minute average).
+The second one groups [observational data from the same province or territory](../msc-data/obs_station/readme_obs_insitu_xmldatamart_en.md) by file, in XML format. Not all Canadian stations are contained in this product. This data is used in the official forecast web site weather.gc.ca. As a result, they are subject to certain rules (e.g. for winds, use of the average observed over a 2-minute period, if it is not possible to use a 10-minute average).
 
 Consequently, it is not really possible to compare these 2 sets of data and it is strongly recommended to use the SWOB data, which are more complete and subject to no rules, for the region of interest.
 
@@ -212,7 +212,7 @@ Finally, these buoy data are accessible through the [alphanumeric bulletins](../
 
 You can find information about Environment and Climate Change Canada's warning in several places :
 
-* First of all, the [official warnings are available in CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details these data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
+* First of all, the [official warnings are available in CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
 
 * Our geospatial web services allow to display the warnings layer only in the [Beta version](../msc-geomet/readme_en.md) currently. Please monitor our [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing list to be informed when these warnings are available in GeoMet-Weather.
 

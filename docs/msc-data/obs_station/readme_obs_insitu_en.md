@@ -12,7 +12,7 @@ Surface Observations measured at the automatic and manual stations of the Enviro
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [Provincial and territory observation summaries in XML format, available on the MSC Datamart](readme_obs_insitu_xmldatamart_en.md) 
 * [Surface Weather Observation in Markup Language SWOB Met-ML, available on the MSC Datamart](readme_obs_insitu_swobdatamart_en.md)
@@ -21,7 +21,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
 ### Metadata
 

@@ -10,7 +10,7 @@ This page describes the available products of satellite images.
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../docs/licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../docs/licence/readme_en.md) specifies the conditions of use of this data.
 
 ## Products
 

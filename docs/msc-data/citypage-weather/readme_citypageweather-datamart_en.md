@@ -86,7 +86,7 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
 
 ## Support
 
-If you have any questions about these data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 

@@ -12,7 +12,7 @@ The Canadian Hurricane Centre provides files in shapefile format as part of the 
 
 The files will allow users to plot the route of the storms forecast in a map system of their choice. There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
 
-Hurricane tracks issued by the Canadian Hurricane Centre hurricanes are published on the MSC Datamart. These data are rendered available in experimental mode in order to offer users an opportunity to ingest and test the data in real time. The service will be provided to the best of our ability but please note that there is a significant possibility of occasional unannounced interruptions and non-received from this experimental data service, up to new announcement.
+Hurricane tracks issued by the Canadian Hurricane Centre hurricanes are published on the MSC Datamart. This data is made available in experimental mode in order to offer users an opportunity to ingest and test the data in real-time. The service will be provided to the best of our ability but please note that there is a significant possibility of occasional unannounced interruptions and non-received from this experimental data service, up to new announcement.
 
 ## Data location
 
@@ -78,7 +78,7 @@ When querying the 'lin' shapefile, the elements have the same definition as in t
 
 ## Support
 
-If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list 
 

@@ -13,7 +13,7 @@ The Regional Deterministic Precipitation Analysis (RDPA) produces a best estimat
 
 ### How to access the data
 
-These data are available on the data server services MSC Datamart and the web services MSC GeoMet respectively:
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [Current data and archives available via geospatial web services GeoMet-Weather](readme_rdpa-geomet_en.md)
 * [Current GRIB2 data available on the MSC Datamart](readme_rdpa-datamart_en.md) 
@@ -22,7 +22,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
 ### Metadata
 
