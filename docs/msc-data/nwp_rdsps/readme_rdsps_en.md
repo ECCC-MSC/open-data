@@ -12,7 +12,7 @@ The Regional Deterministic storm Surge Prediction System (RDSPS) produces storm 
 
 ### How to access the data
 
-These data are available on the [MSC Datamart](../../msc-datamart/readme_en.md) open data server :
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
 * [NetCDF data available on the MSC Datamart](readme_rdsps-datamart_en.md)
 
@@ -20,7 +20,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
 ### Metadata
 

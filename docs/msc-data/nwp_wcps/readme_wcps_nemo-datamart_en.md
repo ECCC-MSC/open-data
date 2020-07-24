@@ -6,7 +6,7 @@
 
 # Water Cycle Prediction System (WCPS) NEMO data in NetCDF over the Great Lakes and St. Lawrence River 
 
-The ocean-ice model, NEMO-CICE, from WCPS produces hourly forecast products. These data are available in NetCDF format with a latitude and longitude grid, corresponding to a 1km resolution (0.009 x 0.009 degree).
+The ocean-ice model, NEMO-CICE, from WCPS produces hourly forecast products. This data is available in NetCDF format with a latitude and longitude grid, corresponding to a 1km resolution (0.009 x 0.009 degree).
 
 ## Data location 
 
@@ -88,7 +88,7 @@ List of 2D variables available in the files:
 
 ## Support
 
-If you have any questions about these data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
 
 ## Announcements from the dd_info mailing list
 

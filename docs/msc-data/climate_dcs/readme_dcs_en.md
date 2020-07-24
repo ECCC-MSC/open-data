@@ -12,7 +12,7 @@ The Statistically downscaled climate scenarios dataset provides projected change
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively :
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [NetCDF data available on the MSC Datamart](readme_dcs-datamart_en.md) 
 * [Data available via geospatial web services GeoMet-Climate](../../msc-geomet/readme_en.md)
@@ -21,7 +21,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 ### Licence
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of these data.
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
 ### Metadata
 
@@ -35,7 +35,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_dcs/DCS_Technical_Documentation_en.pdf)
 * [Statistically downscaled climate scenarios](http://climate-scenarios.canada.ca/?page=statistical-downscaling)
 * [Introduction to climate scenarios](http://climate-scenarios.canada.ca/index.php?page=cmip5-intro)
-* These data are also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
+* This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
 
 ## Change log
 
