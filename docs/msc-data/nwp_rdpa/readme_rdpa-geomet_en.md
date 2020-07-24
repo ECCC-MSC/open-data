@@ -53,7 +53,7 @@ Amount of precipitation that occurred over past periods of 6 hours:
 
 Retrieving the list of latest RDPA layers timesteps available:
 
-* Users can use `&layer=` in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the RDPA.24F - Quantity of precipitation [mm]  layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the RDPA.24F - Quantity of precipitation [mm]  layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
 
 WMS styles:

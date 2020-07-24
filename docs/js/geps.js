@@ -1,7 +1,7 @@
 const parser = new DOMParser();
 
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RADAR_1KM_RSNO')
+  let response = await fetch('https://geo.weather.gc.ca/geomet?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=GEPS.DIAG.12_PRMM.ERGE10')
   let data = await response.text().then(
     data => parser.parseFromString(data, 'text/xml').getElementsByTagName('Dimension')[0].innerHTML.split('/')
   )
@@ -19,20 +19,13 @@ let layers = [
       source: new ol.source.OSM()
     }),
     new ol.layer.Image({
+      opacity: 0.4,
       source: new ol.source.ImageWMS({
         format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
+        url: 'https://geo.weather.gc.ca/geomet',
+        params: {'LAYERS': 'GEPS.DIAG.12_PRMM.ERGE10', 'TILED': true},
       })
     }),
-    new ol.layer.Image({
-      source: new ol.source.ImageWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
-        transition: 0
-      })
-    })
   ]
 
 let map = new ol.Map({
@@ -56,10 +49,9 @@ function setTime() {
     } else if (current_time >= endTime) {
       current_time = startTime
     } else {
-      current_time = new Date(current_time.setMinutes(current_time.getMinutes() + 10));
+      current_time = new Date(current_time.setMinutes(current_time.getMinutes() + 720));
     }
     layers[1].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
-    layers[2].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
     updateInfo(current_time)
 }
 
