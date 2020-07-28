@@ -12,7 +12,7 @@ This page describes the data and products available for Environment and Climate 
 
 ### How to access the data
 
-Weather radar data is available as georeferenced images on the MSC GeoMet web map services as well as static GIF images on the MSC Datamart:
+Weather radar data is available from the MSC GeoMet API / web map services as well as static GIF images on the MSC Datamart:
 
 * [North-American radar composite layers](readme_radar_geomet_en.md) available via geospatial web services on GeoMet-Weather
 * [GIF radar imagery](readme_radarimage-datamart_en.md) available on the MSC Datamart 

@@ -13,10 +13,10 @@ Le Système global de prévision déterministe (SPGD) procède à des calculs ph
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
+* [Données GRIB2 disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -28,7 +28,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ### Métadonnées
 
-Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df)
+Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
+
 
 ## Produits
 
@@ -53,5 +54,5 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système global de prévision déterministe (SPGD) est disponible [ici](changelog_gdps_fr.md).
+La chronologie des changements apportés au Système global de prévision déterministe (SPGD) est disponible [dans le registre des changements](changelog_gdps_fr.md).
 

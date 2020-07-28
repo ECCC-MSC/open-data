@@ -12,10 +12,10 @@ The Global Ensemble Prediction System (GEPS) carries out physics calculations to
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
+* [Data available via the GeoMet-Weather geospatial web services](readme_geps-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_geps-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Weather](readme_geps-geomet_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -32,6 +32,6 @@ Upcoming.
 * [Current version of the Global Ensemble Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-600_e.pdf)
 
-## Change log
+## Changelog
 
-The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [here](changelog_geps_en.md).
+The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [in the changelog](changelog_geps_en.md).

@@ -6,7 +6,7 @@
 
 # GEPS data available on MSC GeoMet
 
-MSC GeoMet provides access to data produced by the Global Ensemble Prediction System (GEPS) model. Users can build mobile apps, create interactive web maps, and display and animate GEPS data using MSC GeoMet's various services.
+MSC GeoMet provides access to data produced by the Global Ensemble Prediction System (GEPS) model. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
 ## Access to the geospatial web services
 
@@ -27,7 +27,7 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 
 ### Available layers
 
-To see what GEPS layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
+To see which GEPS layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 
@@ -46,7 +46,7 @@ WMS styles:
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic).
-* Example of retrieving a layer's legend via a GetLegendGraphic request : [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR).
+* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR).
 
 ![The GEPS.DIAG.12_PRMM.ERGE10 REPS_PROB-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR)
 

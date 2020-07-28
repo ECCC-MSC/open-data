@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > FireWork Prediction System
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RAQDPS-FW
 
 # Data and Products of the Regional Air Quality Deterministic Prediction System FireWork
 
@@ -12,10 +12,10 @@ Smoke from wildfires in forests and grasslands can be a major source of air poll
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
+* [Data available via the GeoMet-Weather geospatial web services](readme_raqdps-fw-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_raqdps-fw-datamart_en.md) 
-* [FireWork prediction system data available via geospatial web services GeoMet-Weather](readme_raqdps-fw-geomet_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -35,7 +35,6 @@ Upcoming.
 
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pdf)
 
-## Change log
+## Changelog
 
-The chronology of changes to operational systems is available [here](changelog_raqdps-fw_en.md).
-
+The chronology of changes to operational systems is available [in the changelog](changelog_raqdps-fw_en.md).

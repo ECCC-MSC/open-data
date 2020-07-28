@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Système de prévision FireWork
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SRPDQA-FW
 
 # Données et Produits du Système régional de prévision déterministe de la qualité de l'air FireWork
 
@@ -12,10 +12,10 @@ La fumée des feux de forêt et de broussailles peut constituer une source impor
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_raqdps-fw-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_raqdps-fw-geomet_fr.md)
+* [Données GRIB2 disponibles sur le Datamart du SMC](readme_raqdps-fw-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -37,4 +37,4 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](changelog_raqdps-fw_fr.md).
+La chronologie des changements apportés aux systèmes opérationnels est disponible [le registre des changements](changelog_raqdps-fw_fr.md).
