@@ -6,7 +6,7 @@
 
 # Weather radar data available on MSC GeoMet
 
-MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, or display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
 
 ## Access to the geospatial web services

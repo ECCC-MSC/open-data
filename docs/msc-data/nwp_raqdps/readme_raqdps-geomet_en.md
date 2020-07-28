@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RAQDPS](readme_raqdps_en.md) > Regional Air Quality Deterministic Prediction System on MSC GeoMet
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RAQDPS](readme_raqdps_en.md) > RAQDPS on MSC GeoMet
 
 # RAQDPS data available on MSC GeoMet
 
-MSC GeoMet provides access to data produced by the Regional Air Quality Deterministic Prediction System (RAQDPS) model. Users can build mobile apps, create interactive web maps, and display and animate RAQDPS data using MSC GeoMet's various services.
+MSC GeoMet provides access to data produced by the Regional Air Quality Deterministic Prediction System (RAQDPS) model. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
 
 ## Access to the geospatial web services
@@ -28,7 +28,7 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 
 ### Available layers
 
-To see what RAQDPS layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
+To see which RAQDPS layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 

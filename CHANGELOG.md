@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.13
+
+* date: 2020-08-04 PLANNED
+* announcements:
+    * not announced
+* new content:
+    * New MSC GeoMet pages for GDPS, GEPS, RAQDPS and RAQDPS-FW
+* improvements: 
+    * TBD
+* bug fixes:
+    * typos
+
 ## 2.3.12
 
 * date: 2020-07-03
