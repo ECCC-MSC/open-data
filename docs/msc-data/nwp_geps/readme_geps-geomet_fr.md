@@ -12,7 +12,7 @@ GeoMet du SMC donne accès à plusieurs couches du Système global de prévision
 
 Les couches du SPGE sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant la couche SPGE [GEPS.DIAG.12_PRMM.ERGE10](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GEPS.DIAG.12_PRMM.ERGE10) provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [GEPS.DIAG.12_PRMM.ERGE10](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=GEPS.DIAG.12_PRMM.ERGE10) du SGPE provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">

@@ -13,7 +13,7 @@ GeoMet du SMC donne accès à plusieurs couches du Système régional de prévis
 
 Les couches SRPDQA-FW sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant la couche SRPDQA-FW [RAQDPS-FW.EATM_PM2.5-DIFF](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RAQDPS-FW.EATM_PM2.5-DIFF) provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [RAQDPS-FW.EATM_PM2.5-DIFF](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=RAQDPS-FW.EATM_PM2.5-DIFF) du SRPDQA-FW provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
