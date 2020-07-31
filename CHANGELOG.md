@@ -14,6 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced
 * new content:
+    * New page for RAQDPS
     * New MSC GeoMet pages for GDPS, GEPS, RAQDPS and RAQDPS-FW
 * improvements: 
     * Interactive maps now show the default timestep at load time instead of oldest
