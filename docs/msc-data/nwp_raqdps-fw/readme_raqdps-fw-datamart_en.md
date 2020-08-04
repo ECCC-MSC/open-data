@@ -6,7 +6,7 @@
 
 # Regional Air Quality Deterministic Prediction System FireWork (RAQDPS-FW) data in GRIB2 Format
 
-This page describes data from the FireWork system, an air quality forecasting system incorporating emissions from forest fires. The system is run twice a day, initialized at 00:00 and 12:00 UTC, in conjunction with the Regional Air Quality Deterministic Prediction System (RAQDPS). Forest fire emissions are estimated using data on hot spots and fuel consumed on Canadian and U.S. lands provided by Natural Resources Canada's [Canadian Wildland Fire Information System](http://cwfis.cfs.nrcan.gc.ca/). The hotspot data set is downloaded twice daily, prior to the FireWork system running. This system has the advantage of presenting the complete emissions inventory as well as added intermittent fire sources.
+This page describes data from the FireWork system, an air quality forecasting system incorporating emissions from forest fires. The system is run twice a day, initialized at 00:00 and 12:00 UTC, in conjunction with the Regional Air Quality Deterministic Prediction System (RAQDPS). Forest fire emissions are estimated using data on hotspots and fuel consumed on Canadian and U.S. lands provided by Natural Resources Canada's [Canadian Wildland Fire Information System](http://cwfis.cfs.nrcan.gc.ca/). The hotspot data set is downloaded twice daily, prior to the FireWork system running. This system has the advantage of presenting the complete emissions inventory as well as added intermittent fire sources.
 
 ## Data location
 
