@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système régional de prévision déterministe de la qualité de l’air (SRPDQA)
 
-Cette page décrit les données du [Système régional de prévision déterministe de la qualité de l’air (SRPDQA)](readme_raqdps_fr.md) en format GRIB2, exécuté deux fois par jour afin de produire des prévisions horaires de 72 heures pour certains polluants tels que l’ozone ($`O_3`$), le dioxyde d’azote ($`NO_2`$) ou encore les matières particulaires dont le diamètre aérodynamique est inférieur à 2.5 μm (PM2.5), sur une grille nord-américaine.
+Cette page décrit les données du [Système régional de prévision déterministe de la qualité de l’air (SRPDQA)](readme_raqdps_fr.md) en format GRIB2, exécuté deux fois par jour afin de produire des prévisions horaires de 72 heures pour certains polluants tels que l’ozone (O3), le dioxyde d’azote (NO2) ou encore les matières particulaires dont le diamètre aérodynamique est inférieur à 2.5 μm (PM2.5), sur une grille nord-américaine.
 
 ## Adresse des données 
 
