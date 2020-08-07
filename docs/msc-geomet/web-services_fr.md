@@ -120,7 +120,7 @@ Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour u
 
 | Paramètres optionnels      | Définition |
 | ------------------------- | ---------- |
-| INFO_FORMAT     | Le format des données retournées par la requête. Les valeurs acceptées pour ce paramètres sont : `text/plain` (valeur par défaut) ou `application/vnd.ogc.gml`|
+| INFO_FORMAT     | Le format des données retournées par la requête. Les valeurs acceptées pour ce paramètres sont : `text/plain` (valeur par défaut), `application/json` ou `application/vnd.ogc.gml`|
 | FEATURE_COUNT   | Le nombre d'entités retourné par la requête|
 | TIME            | La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
 | DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#spécification-du-temps)|
@@ -129,7 +129,7 @@ Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dess
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
 ### WMS GetLegendGraphic

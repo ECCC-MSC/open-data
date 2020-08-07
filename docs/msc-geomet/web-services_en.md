@@ -118,7 +118,7 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 
 | Optional parameters                 | Definition |
 | ------------------------- | ---------- |
-| INFO_FORMAT     | The format of the data returned by the query. Accepted values for this parameter are: `text/plain` (default) or `application/vnd.ogc.gml`|
+| INFO_FORMAT     | The format of the data returned by the query. Accepted values for this parameter are: `text/plain` (default), `application/json` or  `application/vnd.ogc.gml`|
 | FEATURE_COUNT   | The amount of features returned by the request.|
 | TIME            | The date and time used to generate the requested image. The format must respect . For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
 | DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
@@ -127,7 +127,7 @@ A GetFeatureInfo request for the same image requested in the GetMap example abov
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=text/plain&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
 ### WMS GetLegendGraphic
