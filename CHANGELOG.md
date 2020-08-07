@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements: 
-    * TBD
+    * Added support for WMS GFI JSON responses and updated associated GFI examples 
 * bug fixes:
     * typos
 
