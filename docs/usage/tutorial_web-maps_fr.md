@@ -182,21 +182,24 @@ Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre 
   <style>
     #map {
       width: 100%;
-      height: 400px;
+      height: 800px;
     }
+
     /* Ajout du CSS pour la fenêtre contextuelle */
     .ol-popup {
       position: absolute;
       background-color: white;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
       padding: 15px;
       border-radius: 10px;
       border: 1px solid #cccccc;
       bottom: 12px;
       left: -50px;
-      min-width: 400px;
+      min-width: 300px;
     }
-    .ol-popup:after, .ol-popup:before {
+
+    .ol-popup:after,
+    .ol-popup:before {
       top: 100%;
       border: solid transparent;
       content: " ";
@@ -205,26 +208,31 @@ Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre 
       position: absolute;
       pointer-events: none;
     }
+
     .ol-popup:after {
       border-top-color: white;
       border-width: 10px;
       left: 48px;
       margin-left: -10px;
     }
+
     .ol-popup:before {
       border-top-color: #cccccc;
       border-width: 11px;
       left: 48px;
       margin-left: -11px;
     }
+
     .ol-popup-closer {
       text-decoration: none;
       position: absolute;
-      top: 2px;
+      top: 5px;
       right: 8px;
     }
+
     .ol-popup-closer:after {
       content: "✖";
+      color: #A9A9A9;
     }
   </style>
 
@@ -290,9 +298,8 @@ let layers = [
   new ol.layer.Tile({
     opacity: 0.4,
     source: new ol.source.TileWMS({
-      // TODO: Change this to dev environment for JSON response
-      url: "https://geo.weather.gc.ca/geomet-climate",
-      params: { LAYERS: "CMIP5.TT.RCP45.YEAR.2081-2100_PCTL50", TILED: true },
+      url: "https://geo.weather.gc.ca/geomet",
+      params: { LAYERS: "GDPS.ETA_TT", TILED: true },
       transition: 0
     })
   })
@@ -310,19 +317,18 @@ let map = new ol.Map({
 
 
 map.on("singleclick", function (evt) {
-  var coordinate = evt.coordinate;
-  var xy_coordinates = ol.coordinate.toStringXY(
-    ol.proj.toLonLat(coordinate),
-    4
-  );
-  var viewResolution = map.getView().getResolution();
-  var wms_source = map.getLayers().item(1).getSource();
-  var url = wms_source.getFeatureInfoUrl(
-    evt.coordinate,
+  let coordinate = ol.proj.toLonLat(evt.coordinate);
+  let xy_coordinates = ol.coordinate.toStringXY(coordinate, 4);
+  let viewResolution = map.getView().getResolution();
+  let wms_source = map.getLayers().item(1).getSource();
+  let url = wms_source.getFeatureInfoUrl(
+    coordinate,
     viewResolution,
-    "EPSG:3857",
+    "EPSG:4326",
     { INFO_FORMAT: "application/json" }
   );
+  content.innerHTML = '<p align="center">Chargement...</p>';
+  overlay.setPosition(evt.coordinate);
   if (url) {
     fetch(url)
       .then(function (response) {
@@ -330,10 +336,9 @@ map.on("singleclick", function (evt) {
       })
       .then(function (json) {
         content.innerHTML = `
-Avg change in air temperature for 2081-2100 (50th percentile)<br>
-Coordinates (Lon/Lat): </> <code>${xy_coordinates}</code><br>
-Value: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
-        overlay.setPosition(coordinate);
+Température de l'air à la surface<br>
+Coordonnées (Lon/Lat): </> <code>${xy_coordinates}</code><br>
+Valeur: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
       });
   }
 });
@@ -353,12 +358,12 @@ Finalement, notre carte profitera de la méthode [<code>ol.Map.on()</code>](http
 * Récupère la résolution de la vue de la carte
 * Récupère la source de la couche `GDPS.ETA_TT`
 * Utilise la méthode `ol.source.TileWMS.getFeatureInfoUrl()` pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (au moins `INFO_FORMAT` doit être fourni)
-* Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API Javascript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo
 * Fixe la position de la superposition aux coordonnées de l'événement de clic initial
+* Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API Javascript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo
 
 Voir l'exemple ci-dessous :
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="GetFeatureInfo avec GeoMet et OpenLayers" src="https://codepen.io/eccc-msc/embed/zYvNQvL?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+<iframe height="300" style="width: 100%;" scrolling="no" title="GetFeatureInfo avec GeoMet et OpenLayers" src="https://codepen.io/eccc-msc/embed/zYvNQvL?height=300&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/zYvNQvL'>GetFeatureInfo avec GeoMet et OpenLayers</a> par le SMC d'ECCC
   (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

@@ -169,7 +169,7 @@ See the live example below:
 
 ## Building interactive popups with OpenLayers
 
-Let's now query a WMS layer to access the underlying date via a popup. Web Map Services (WMS) allow a user to make a [GetFeatureInfo](../msc-geomet/web-services_en.md#wms-getfeatureinfo) request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
+Let's now query a WMS layer to access the underlying data via a popup. Web Map Services (WMS) allow a user to make a [GetFeatureInfo](../msc-geomet/web-services_en.md#wms-getfeatureinfo) request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
 
 ### HTML
 
@@ -186,6 +186,7 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
       height: 800px;
     }
 
+    /* Add in CSS required for popup*/
     .ol-popup {
       position: absolute;
       background-color: white;
@@ -195,7 +196,7 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
       border: 1px solid #cccccc;
       bottom: 12px;
       left: -50px;
-      min-width: 400px;
+      min-width: 300px;
     }
 
     .ol-popup:after,
@@ -226,12 +227,13 @@ Some additional HTML and CSS will need to be added to our initial HTML document.
     .ol-popup-closer {
       text-decoration: none;
       position: absolute;
-      top: 2px;
+      top: 5px;
       right: 8px;
     }
 
     .ol-popup-closer:after {
       content: "✖";
+      color: #A9A9A9;
     }
   </style>
 
@@ -295,9 +297,8 @@ let layers = [
   new ol.layer.Tile({
     opacity: 0.4,
     source: new ol.source.TileWMS({
-      // TODO: Change this to dev environment for JSON response
-      url: "https://geo.weather.gc.ca/geomet-climate",
-      params: { LAYERS: "CMIP5.TT.RCP45.YEAR.2081-2100_PCTL50", TILED: true },
+      url: "https://geo.weather.gc.ca/geomet",
+      params: { LAYERS: "GDPS.ETA_TT", TILED: true },
       transition: 0
     })
   })
@@ -314,19 +315,18 @@ let map = new ol.Map({
 });
 
 map.on("singleclick", function (evt) {
-  var coordinate = evt.coordinate;
-  var xy_coordinates = ol.coordinate.toStringXY(
-    ol.proj.toLonLat(coordinate),
-    4
-  );
+  let coordinate = ol.proj.toLonLat(evt.coordinate);
+  ke xy_coordinates = ol.coordinate.toStringXY(coordinate, 4);
   var viewResolution = map.getView().getResolution();
   var wms_source = map.getLayers().item(1).getSource();
   var url = wms_source.getFeatureInfoUrl(
-    evt.coordinate,
+    coordinate,
     viewResolution,
-    "EPSG:3857",
+    "EPSG:4326",
     { INFO_FORMAT: "application/json" }
   );
+  content.innerHTML = '<p align="center">Fetching data...</p>';
+  overlay.setPosition(evt.coordinate);
   if (url) {
     fetch(url)
       .then(function (response) {
@@ -334,15 +334,12 @@ map.on("singleclick", function (evt) {
       })
       .then(function (json) {
         content.innerHTML = `
-Avg change in air temperature for 2081-2100 (50th percentile)<br>
-Coordinates (Lon/Lat): </> <code>${xy_coordinates}</code><br>Value: </b><code>${Math.round(
-          json.features[0].properties.value
-        )} °C</code>`;
-        overlay.setPosition(coordinate);
+Air surface temperature<br>
+Coordinates (Lon/Lat): </> <code>${xy_coordinates}</code><br>
+Value: </b><code>${Math.round(json.features[0].properties.value)} °C</code>`;
       });
   }
 });
-
 ```
 
 There are four main additions to the Javascript code.
@@ -361,13 +358,14 @@ that is triggered by the event does the following:
 * Retrieves the resolution of the map view
 * Retrieves the source of the `GDPS.ETA_TT` layer
 * Uses the `ol.source.TileWMS.getFeatureInfoUrl()` method to create a WMS GetFeatureInfo request. Passed as arguments are the click event coordinates, view resolution, map projection, and an object containing any GetFeatureInfo parameters (`INFO_FORMAT` should at least be provided)
-* If the GetFeatureInfo URL is properly constructed, submits the GetFeatureInfo request using the Javascript API. Upon receiving a response, the JSON is retrieved and the popup content is updated with additional HTML that includes the coordinates and the value property of the first GeoJSON feature retrieved by the GetFeatureInfo request
 * Sets the overlay position to the coordinates of the initial click event
+* If the GetFeatureInfo URL is properly constructed, submits the GetFeatureInfo request using the Javascript API. Upon receiving a response, the JSON is retrieved and the popup content is updated with additional HTML that includes the coordinates and the value property of the first GeoJSON feature retrieved by the GetFeatureInfo request
+
 
 See the live example below:
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet GetFeatureInfo OpenLayers" src="https://codepen.io/eccc-msc/embed/zYvNQvL?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/eccc-msc/pen/zYvNQvL'>GeoMet GetFeatureInfo OpenLayers</a> by ECCC-MSC
+<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet GetFeatureInfo OpenLayers English" src="https://codepen.io/eccc-msc/embed/yLOyvXa?height=300&theme-id=light&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/yLOyvXa'>GeoMet GetFeatureInfo OpenLayers English</a> by ECCC-MSC
   (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
