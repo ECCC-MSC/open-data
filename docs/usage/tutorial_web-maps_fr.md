@@ -317,14 +317,17 @@ let map = new ol.Map({
 
 
 map.on("singleclick", function (evt) {
-  let coordinate = ol.proj.toLonLat(evt.coordinate);
-  let xy_coordinates = ol.coordinate.toStringXY(coordinate, 4);
+  let coordinate = evt.coordinate;
+  let xy_coordinates = ol.coordinate.toStringXY(
+    ol.proj.toLonLat(evt.coordinate),
+    4
+  );
   let viewResolution = map.getView().getResolution();
   let wms_source = map.getLayers().item(1).getSource();
   let url = wms_source.getFeatureInfoUrl(
     coordinate,
     viewResolution,
-    "EPSG:4326",
+    "EPSG:3857",
     { INFO_FORMAT: "application/json" }
   );
   content.innerHTML = '<p align="center">Chargement...</p>';
