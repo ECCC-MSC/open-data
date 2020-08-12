@@ -44,6 +44,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Matrices Scribe de prévision immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent (SRPD couplé Golfe du Saint-Laurent)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
+    * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
     * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
     * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
     * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)

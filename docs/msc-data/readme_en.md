@@ -44,6 +44,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
     * [Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS coupled to Gulf of St. Lawrence)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
     * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
+    * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
     * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
     * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
     * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
