@@ -15,7 +15,7 @@ Le Système régional de prévision déterministe de la qualité de l'air (SRPDQ
 Ces données sont respectivement disponibles sur les API / services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_raqdps-geomet_fr.md)
-* [À VENIR - Données GRIB2 disponibles sur le Datamart du SMC](readme_raqdps-datamart_fr.md) 
+* [Données GRIB2 disponibles sur le Datamart du SMC](readme_raqdps-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

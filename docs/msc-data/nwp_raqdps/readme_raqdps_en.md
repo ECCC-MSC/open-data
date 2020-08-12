@@ -15,7 +15,7 @@ The Regional Air Quality Deterministic Prediction System (RAQDPS) carries out ph
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Data available via the GeoMet-Weather geospatial web services](readme_raqdps-geomet_en.md)
-* [UPCOMING - GRIB2 data available on the MSC Datamart](readme_raqdps-datamart_en.md) 
+* [GRIB2 data available on the MSC Datamart](readme_raqdps-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
