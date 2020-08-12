@@ -328,7 +328,7 @@ map.on("singleclick", function (evt) {
     "EPSG:3857",
     { INFO_FORMAT: "application/json" }
   );
-  content.innerHTML = '<p align="center">Chargement...</p>';
+  content.innerHTML = '<p align="center">Fetching data...</p>';
   overlay.setPosition(evt.coordinate);
   if (url) {
     fetch(url)
