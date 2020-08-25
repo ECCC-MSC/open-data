@@ -389,7 +389,7 @@ In this example, the `field` keys give the user the available band names. In Geo
 
 In GeoMet-Climate one can either request coverage for a single time step or for a time range:
 
-* Single time step: `RANGESUBSET=B20015`
+* Single time step: `RANGESUBSET=B2015`
 * Time range: `RANGESUBSET=B2015:B2019`
 
 Note that a user cannot, in a single GetCoverage request, ask for more than 256 bands.
