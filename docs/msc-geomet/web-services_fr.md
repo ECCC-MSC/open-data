@@ -394,7 +394,7 @@ Dans cet exemple, la valeur `field` indique à l'usager le nom des bandes dispon
 
 Pour GeoMet-Climat, les usagers pour demander un pas de temps unique ou une plage temporelle :
 
-* Pas de temps unique : `RANGESUBSET=B20015`
+* Pas de temps unique : `RANGESUBSET=B2015`
 * Plage temporelle : `RANGESUBSET=B2015:B2019`
 
 Notez que la limite pour une seule requête WCS GetCoverage est de 256 bandes à la fois.
