@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Reorganized list of available NWP datasets
     * Added support for WMS GFI JSON responses and updated associated GFI examples 
 * bug fixes:
+    * Fixed MSC GeoMet tech doc: multiple &LAYERS not supported in WMS GetMap requests
     * typos
 
 ## 2.3.13
