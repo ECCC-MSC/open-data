@@ -15,7 +15,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * New page for RDSPS
-* improvements: 
+* improvements:
+    * Reorganized list of available NWP datasets
     * Added support for WMS GFI JSON responses and updated associated GFI examples 
 * bug fixes:
     * typos
