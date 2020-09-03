@@ -16,12 +16,12 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/climate/indices/netcdf/historical)
 * [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
 
 où :
 
-* __historical__ : Simulations historiques de 1900 à 2005
+* __historical__ : Simulations historiques de 1951 à 2005
 * __scenarios__ : Réfère à différents scénarios d'émissions [RCP2.6, RCP4.5, RCP8.5] de 2006-2100
 * __absolute__ : Représente les projections des ensembles multimodélisés (valeur réelle)
 
@@ -37,7 +37,7 @@ avec :
 * __INDICES__: Chaîne constante indiquant que les ensembles de données sont des indices climatiques mis à l’échelle de manière statistique
 * __hist__: Chaîne constante indiquant des données historiques
 * __rcpx.y__: Version des profils représentatifs d’évolution de concentration (expériences au moyen de scénario), adoptant l’une des valeurs : [rcp2.6, rcp4.5, rcp8.5]
-* __Value__: Catégorie de valeurs prenant l’une de ces deux valeurs: [2006-2100] pour les scénarios et [1900-2005] pour les simulations historiques
+* __Value__: Catégorie de valeurs prenant l’une de ces deux valeurs: [2006-2100] pour les scénarios et [1951-2005] pour les simulations historiques
 * __Projection__: Projection de la grille (projection) prenant la valeur : [latlon]
 * __Resolution__: Résolution de grille prenant la valeurs: [0.086x0.086]; 0,086 représente une résolution de 0,086 degré dans les sens latitudinal et longitudinal (environ 10 km)
 * __Variable__: Nom de la variable disponible dans le fichier prenant l’une des valeurs : [CDD, GSC, GSO, GSW, HDD, TX30, TN20, PREP1]; CDD signifie degrés-jours de refroidissement, GSC signifie durée de la saison de croissance des cultures de saison fraîche, GSO signifie durée de la saison de croissance des cultures d’hiver, GSW signifie durée de la saison de croissance des cultures de saison chaude, HDD signifie degrés-jours de chauffage, TX30 signifie journées chaudes (nombre de jours affichant des températures maximales supérieures à 30 °C), TN20 signifie nuits chaudes (nombre de nuits affichant des températures minimales supérieures à 20 °C), PREP1 signifie nombre de jours au cours desquels les précipitations ont été supérieures à 1 mm.

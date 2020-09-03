@@ -16,12 +16,12 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URLs:
 
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/historical/absolute/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/climate/indices/netcdf/historical)
 * [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
 
 where:
 
-* __historical__: Historical simulations from 1900-2005.
+* __historical__: Historical simulations from 1951-2005.
 * __scenarios__: Refers to different emission scenarios [RCP2.6, RCP4.5,RCP8.5] from 2006-2100.
 * __absolute__: Represents the multi-modelled ensemble projections (actual value)
 
@@ -40,7 +40,7 @@ where:
 * __INDICES__: Constant string indicating that the datasets are statistically downscaled climate indices 
 * __hist__: Constant string indicating historical simulations
 * __rcpx.y__: Type of the Representative Concentration Pathways (scenario experiments), taking one of the values : [rcp2.6, rcp4.5, rcp8.5]
-* __Value__: Values category, taking one of the two values [2006-2100] for the scenarios and [1900-2005] for the historical sumulations
+* __Value__: Values category, taking one of the two values [2006-2100] for the scenarios and [1951-2005] for the historical sumulations
 * __Projection__: Grid mapping (projection) taking the value : [latlon]
 * __Resolution__: Grid resolution taking one of the values : [0.086x0.086]; 0.086 stands for 0.086-degree resolution in both the latitudinal and longitudinal directions
 * __Variable__: Name of variable available in the file, taking one of the values : [CDD, GSC, GSO, GSW, HDD, TX30, TN20, PREP1]; CDD stands for cooling degree days, GSC stands for length of growing season for cool season crops, GSO stands for length of growing season for overwintering crops, GSW stands for length of growing season for warm season crops, HDD stands for heating degree days, TX30 stands for hot days (number of days with maximum temperature above 30°C), TN20 stands for hot nights (number of days with minimum temperature above 20°C), PREP1 stands for number of days with precipitation greater than 1mm.
