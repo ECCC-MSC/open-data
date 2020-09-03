@@ -66,7 +66,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
 * [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate_dcs/readme_dcs_fr.md)
 * [Indice de précipitations et d’évapotranspiration normalisé (IPEN)](climate_spei/readme_spei_fr.md)
-* [Indices climatiques mis à l’échelle de manière statistique](climate_indices/climate_indices_fr.md)
+* [Indices climatiques mis à l’échelle de manière statistique](climate_indices/readme_indices_fr.md)
 *
 * [Observations historiques](climate_obs/readme_climateobs_fr.md)
 
