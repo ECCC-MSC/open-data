@@ -17,7 +17,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 Les fichiers se trouvent à l'adresse suivante :
 
 * [https://dd.meteo.gc.ca/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/climate/indices/netcdf/historical)
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]/absolute/](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
+* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
 
 où :
 
