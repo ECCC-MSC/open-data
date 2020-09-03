@@ -55,7 +55,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
-    *
+  
     * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
     * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
 
@@ -65,6 +65,8 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Canadian Gridded Data (CanGRD)](climate_cangrd/readme_cangrd_en.md)
 * [Coupled Model Intercomparison Project Phase 5 (CMIP5) global climate model (GCM) scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
+* [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
+* 
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 
 

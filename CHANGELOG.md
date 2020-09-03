@@ -14,10 +14,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced
 * new content:
-    * New page for RDSPS
+    * New page for SPEI (CCCS)
 * improvements:
     * Reorganized list of available NWP datasets
-    * Added support for WMS GFI JSON responses and updated associated GFI examples 
+    * Added support for WMS GFI JSON responses and updated associated GFI examples
+    * Fix NetCDF format instead of GRIB2  format in DD-Alpha RIOPS doc 
 * bug fixes:
     * Fixed MSC GeoMet tech doc: multiple &LAYERS not supported in WMS GetMap requests
     * typos
@@ -28,7 +29,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced
 * new content:
-    * New page for RAQDPS
+    * New page for RAQDPS, RDSPS
     * New MSC GeoMet pages for GDPS, GEPS, RAQDPS and RAQDPS-FW
 * improvements: 
     * Interactive maps now show the default timestep at load time instead of oldest

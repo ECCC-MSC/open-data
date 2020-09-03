@@ -14,7 +14,7 @@ Le Système régional de prévision océan-glace (SRPOG) fournit quatre fois par
 
 Ces données sont disponibles via les services de données ouvertes selon :
 
-* [Données GRIB2 expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_riops-datamart-alpha_fr.md) 
+* [Données NetCDF expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_riops-datamart-alpha_fr.md) 
 * [Données disponibles via les services web géospatiaux](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
