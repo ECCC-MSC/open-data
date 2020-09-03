@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * New page for SPEI (CCCS)
+    * New page for indices (CCCS)
 * improvements:
     * Reorganized list of available NWP datasets
     * Added support for WMS GFI JSON responses and updated associated GFI examples
