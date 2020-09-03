@@ -2,9 +2,9 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Données GRIB2 du SRPOG sur DD-Alpha
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Données NetCDF du SRPOG sur DD-Alpha
 
-# Données GRIB2 du Système Régional de Prévision Océan-Glace (SRPOG)
+# Données NetCDF du Système Régional de Prévision Océan-Glace (SRPOG)
 
 Le Centre de prévision météorologique et environnementale du Canada (CPMEC) fournit des instantanés de champs prévisionnels de glace et des moyennes temporelles des champs océaniques prévisionnels produits par son système régional de prévision océan-glace (SRPOG) expérimental et interpolées sur une grille en projection polaire stéréographique nord d'une résolution de 5 km à une latitude de 60°N (ps5km60N).
 
