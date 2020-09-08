@@ -32,30 +32,30 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * **Atmosphere**
     * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
     * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
+        * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
     * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
+    * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
-    * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
-    * 
+    * —
     * [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
+        * [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
     * [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)
     * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](nwp_cansips/readme_cansips_en.md)
-    * [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
-    * 
+    * —
     * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
     * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
     * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)
-    * 
+    * —
     * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
     * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
 * **Water, ocean and ice**
     * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
     * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
-    * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
-    *
+    * —
     * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
-  
+    * —  
     * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
     * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
 
@@ -67,7 +67,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
 * [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
 * [Statistically downscaled climate indices](climate_indices/readme_climateindices_en.md)
-* 
+* —
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 
 
