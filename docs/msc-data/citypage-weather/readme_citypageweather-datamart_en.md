@@ -78,7 +78,7 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
  * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
  * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
-* These icons are covered by the standard Environment Canada Terms and Conditions: [ttps://www.canada.ca/en/transparency/terms.html](https://www.canada.ca/en/transparency/terms.html). To make a commercial usage of these icons, you must obtain prior explicit consent.
+* These icons are covered by the standard Environment Canada Terms and Conditions: [https://www.canada.ca/en/transparency/terms.html](https://www.canada.ca/en/transparency/terms.html). To make a commercial usage of these icons, you must obtain prior explicit consent.
 
 * You can download all ECCC weather icons from the following URL: [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), where NN is a number between 00 and 45.
 
