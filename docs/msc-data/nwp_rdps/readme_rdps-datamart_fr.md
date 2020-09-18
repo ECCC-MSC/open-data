@@ -23,7 +23,7 @@ Les données sont accessibles à l’adresse suivante :
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] à 00Z et 12Z et [000, 001, 002, ..., 053, 054] à 06Z et 18Z
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 084] 
 
 Un historique de 20 heures est conservé dans ce répertoire.
 
@@ -62,7 +62,7 @@ où :
 * __ps10km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 10 km.
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,048] à 00Z et 12Z et jusqu'à 54h à 06Z et 18Z
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,084]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier : CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
