@@ -12,8 +12,9 @@ Le Système régional de prévision océan-glace (SRPOG) fournit quatre fois par
 
 ### Comment accéder aux données
 
-Ces données sont disponibles via les services de données ouvertes selon :
+Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) 
 
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_riops-datamart_fr.md) 
 * [Données NetCDF expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_riops-datamart-alpha_fr.md) 
 * [Données disponibles via les services web géospatiaux](../../msc-geomet/readme_fr.md)
 
