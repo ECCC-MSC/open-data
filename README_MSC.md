@@ -85,7 +85,7 @@ This enables receiving modifications for the entire `public-doc` repository.
     * At the desired location on your local filesystem, run: `git clone https://gccode.ssc-spc.gc.ca/YOUR-GITLAB-USERNAME/public-doc.git`
 3. Configure your fork by specifying the upstream reference:
     * `cd public-doc`
-    * `git remote add upstream http://gccode.ssc-spc.gc.ca/ec-msc/public-doc.git`
+    * `git remote add upstream https://gccode.ssc-spc.gc.ca/ec-msc/public-doc.git`
 
 ## 4.2 - Editing the documentation
 
