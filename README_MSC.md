@@ -39,7 +39,7 @@ The writing of the documentation must consider the [Canada.ca Content Style Guid
 
 # 2 - Repository file structure
 
-Files are stored on GCcode, in the public-doc repository: http://gccode.ssc-spc.gc.ca/ec-msc/public-doc/ . A copy is publicly available on GitHub at https://github.com/ECCC-MSC/open-data
+Files are stored on GCcode, in the public-doc repository: https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/ . A copy is publicly available on GitHub at https://github.com/ECCC-MSC/open-data
 
 Files in this repository:
 * README_MSC.md
@@ -79,10 +79,10 @@ This enables receiving modifications for the entire `public-doc` repository.
 ## 4.1 - Getting ready
 
 1. Log to GCcode
-    * Go to [the public-doc repository](http://gccode.ssc-spc.gc.ca/ec-msc/public-doc) and ensure you are logged to GCcode
+    * Go to [the public-doc repository](https://gccode.ssc-spc.gc.ca/ec-msc/public-doc) and ensure you are logged to GCcode
 2. Fork the `public-doc` repository
     * Click on `Fork` to fork the `public-doc` repository
-    * At the desired location on your local filesystem, run: `git clone http://gccode.ssc-spc.gc.caYOUR-GITLAB-USERNAME/public-doc.git`
+    * At the desired location on your local filesystem, run: `git clone https://gccode.ssc-spc.gc.ca/YOUR-GITLAB-USERNAME/public-doc.git`
 3. Configure your fork by specifying the upstream reference:
     * `cd public-doc`
     * `git remote add upstream http://gccode.ssc-spc.gc.ca/ec-msc/public-doc.git`
