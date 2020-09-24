@@ -10,11 +10,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.15
 
-* date: TBD
+* date: 2020-09-23
 * announcements:
     * not announced
 * new content:
-    * TBD
+    * Extension of the RDPS maximum forecast range (up to 84h)
 * improvements:
     * Improvements of updated list of available datasets 
 * bug fixes:
