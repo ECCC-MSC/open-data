@@ -75,6 +75,10 @@ La licence d'utilisation finale détermine les conditions d'utilisation des donn
 
 Les questions les plus fréquemment posées au sujet des données ouvertes du SMC sont rassemblées dans une [FAQ](faq/readme_fr.md). Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous contacter.
 
+## Votre avis nous intéresse
+
+Afin que la documentation des données ouvertes du Service météorologique du Canadado réponde à vos besoins, merci de nous faire part de votre avis en répondant à ce court [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=35b3c882-2af9-488f-ad98-9112d2892b8f&lang=FR).
+
 ## Contactez-nous
 
 Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
