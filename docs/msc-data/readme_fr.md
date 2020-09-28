@@ -38,7 +38,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
     * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * —
-    * Probabiliste :
+    * Ensembliste :
     * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
         * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
     * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
