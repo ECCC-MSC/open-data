@@ -30,6 +30,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ## Numerical weather and environmental prediction forecasts
 
 * **Atmosphere**
+    * Deterministic:
     * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
     * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
         * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
@@ -37,15 +38,18 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
     * —
+    * Ensemble:
     * [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
         * [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
     * [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)
     * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](nwp_cansips/readme_cansips_en.md)
     * —
+    * Precipitation analysis:
     * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
     * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
     * [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)
     * —
+    * Air quality:
     * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
     * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
 * **Water, ocean and ice**

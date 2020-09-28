@@ -30,6 +30,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Prévisions numériques météorologiques et environnementales
 
 * **Atmosphère**
+    * Déterministe :
     * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
     * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
         * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
@@ -37,15 +38,18 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
     * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * —
+    * Ensembliste :
     * [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
         * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
     * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
     * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)
     * —
+    * Analyse de la précipitation :
     * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
     * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
     * [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md)
     * —
+    * Qualité de l'air :
     * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
     * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
 * **Eau, océan et glace**
