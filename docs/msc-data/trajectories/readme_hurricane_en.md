@@ -12,11 +12,10 @@ Hurricane tracks and response zone are issued by the [Canadian Hurricane Centre]
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Shapefile data available on the MSC Datamart](readme_hurricane-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
-    * The Hurricane response zone is available on GeoMet-Weather
+* [Hurricane response zone and trajectories available on the GeoMet-Weather web services](readme_hurricane_geomet_en.md)
+* [Trajectories data available on the MSC Datamart](readme_hurricane-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
