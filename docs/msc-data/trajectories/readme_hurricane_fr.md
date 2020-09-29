@@ -12,11 +12,10 @@ Les trajectoires d'ouragans et la zone de réaction aux ouragans sont émises pa
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données shapefile disponibles sur le Datamart du SMC](readme_hurricane-datamart_fr.md) 
-* [Data available via geospatial web services GeoMet-Météo](../../msc-geomet/readme_en.md)
-    * La Zone de réaction aux ouragans est disponible sur GeoMet-Meteo
+* [La zone de réaction aux ouragans et les trajectoires sont disponibles sur l'API de GeoMet-Météo](readme_hurricane_geomet_fr.md)
+* [Les trajectoires sont disponibles sur le Datamart du SMC](readme_hurricane-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
