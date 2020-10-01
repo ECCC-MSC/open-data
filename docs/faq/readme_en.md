@@ -24,7 +24,7 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Can I have the land sea mask of a numerical weather prediction model ?](#can-i-have-the-land-sea-mask-of-a-numerical-weather-prediction-model)
 * [Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?](#is-it-possible-to-access-numerical-weather-prediction-parameters-other-than-those-currently-available-on-the-msc-datamart-or-is-the-list-exhaustive)
 * [Can I have snow water equivalent data ?](#can-i-have-snow-water-equivalent-data)
-* [In the numerical weather prediction systems changelog, I see several systems (e.g. SRPEOT) not mentioned in the list of systems with available data, where can I find this data ?](#in-the-numerical-weather-prediction-systems-changelog-i-see-several-systems-e-g-SRPEOT-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data)
+* [In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?](#in-the-numerical-weather-prediction-systems-changelog-i-see-several-systems-e-g-SRPEOT-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data)
 * [What is the difference between the two sets of observational data available on the MSC Datamart ?](#what-is-the-difference-between-the-two-sets-of-observational-data-available-on-the-msc-datamart)
 * [How often are the observational data collected by province and territory refreshed ?](#how-often-are-the-observational-data-collected-by-province-and-territory-refreshed)
 * [Can I have buoys data ?](#can-i-have-buoys-data)
@@ -176,7 +176,7 @@ Therefore, the micro equation for calculating snow water equivalent in mm (equiv
 * If the thickness is given in "cm" and `SDEN` in "kg/m3", which we have at operations, then `SWE = (SNOD * SDEN) / 100`; `SWE` is in mm (or kg/m2, which is the equivalent for water)
 * If the thickness is given in "m" and the `SDEN` in "kg/m3", then `SWE = SNOD * SDEN`; `SWE` is in mm (kg/m2)
 
-## In the numerical weather prediction systems changelog, I see several systems (e.g. SRPEOT) not mentioned in the list of systems with available data, where can I find this data ?
+## In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?
 
 This data is not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the [dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing lists.
 
