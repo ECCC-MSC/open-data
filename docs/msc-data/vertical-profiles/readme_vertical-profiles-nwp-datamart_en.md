@@ -1,12 +1,12 @@
-[En français](readme_prev-vertical-pfl-datamart_fr.md)
+[En français](readme_vertical-profiles-nwp-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > [Vertical profiles forecast](readme_prev-vertical-pfl_en.md) > Vertical profiles forecast on MSC Datamart
+[TOC](../../readme_en.md) > [MSC Data](../readme_en.md) > [Vertical profiles forecast](readme_vertical-profiles-nwp_en.md) > Vertical profiles forecast on MSC Datamart
 
 # Vertical profiles forecast data from the Regional Deterministic Prediction System
 
-This page describes the [vertical profiles of the Regional Deterministic Prediction System (RDPS)](readme_prev-vertical-pfl_fr.md), available on the MSC Datamart.
+This page describes the [vertical profiles of the Regional Deterministic Prediction System (RDPS)](readme_vertical-profiles-nwp_fr.md), available on the MSC Datamart.
 
 ## Data location 
 

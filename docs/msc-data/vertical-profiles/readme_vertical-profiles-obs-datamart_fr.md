@@ -1,12 +1,12 @@
-[In English](readme_obs-vertical-pfl-datamart_en.md)
+[In English](readme_vertical-profiles-obs-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations des profils verticaux](readme_obs-vertical-pfl_fr.md) > Observations des profils verticaux sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations des profils verticaux](readme_vertical-profiles-obs_fr.md) > Observations des profils verticaux sur le Datamart du SMC
 
 # Données d'observations des profils verticaux
 
-Cette page décrit les données de [profils verticaux d'observations](readme_obs-vertical-pfl_fr.md) disponibles sur le Datamart du SMC. Les données observées (ObsTephi) contiennent les données réelles à tous les niveaux mesurées par le ballon de sondage.
+Cette page décrit les données de [profils verticaux d'observations](readme_vertical-profiles-obs_fr.md) disponibles sur le Datamart du SMC. Les données observées (ObsTephi) contiennent les données réelles à tous les niveaux mesurées par le ballon de sondage.
 
 ## Adresse des données 
 

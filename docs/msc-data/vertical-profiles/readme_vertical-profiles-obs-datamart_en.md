@@ -1,12 +1,12 @@
-[En français](readme_obs-vertical-pfl-datamart_fr.md)
+[En français](readme_vertical-profiles-obs-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Vertical profiles' observation](readme_obs-vertical-pfl_en.md) > Vertical profiles' observation on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Vertical profiles' observation](readme_vertical-profiles-obs_en.md) > Vertical profiles' observation on MSC Datamart
 
 # Vertical profiles observation data in CSV format
 
-This page describes the [vertical profiles data of observations](readme_obs-vertical-pfl_en.md) available on the MSC Datamart. The observation data (ObsTephi) contain all levels data received from actual sounding.
+This page describes the [vertical profiles data of observations](readme_vertical-profiles-obs_en.md) available on the MSC Datamart. The observation data (ObsTephi) contain all levels data received from actual sounding.
 
 ## Data location 
 

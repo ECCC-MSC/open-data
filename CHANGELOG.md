@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * updated hurricanes doc path
 * improvements:
     * Further improvements of updated list of available datasets 
+    * Merged vertical profiles subfolders and renamed readmes
 * bug fixes:
     * typos
     
