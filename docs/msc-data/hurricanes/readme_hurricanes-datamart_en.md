@@ -1,12 +1,12 @@
-[En français](readme_hurricane-datamart_fr.md)
+[En français](readme_hurricanes-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Hurricane trajectories](readme_hurricane_en.md) > Hurricane trajectories on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Hurricane trajectories](readme_hurricanes_en.md) > Hurricane trajectories on MSC Datamart
 
 # Data of the hurricane trajectories
 
-This page describes the data of the [hurricane trajectories](readme_hurricane_en.md).
+This page describes the data of the [hurricane trajectories](readme_hurricanes_en.md).
 
 The Canadian Hurricane Centre provides files in shapefile format as part of the regular hurricane season forecast.
 

@@ -1,12 +1,12 @@
-[In English](readme_hurricane-datamart_en.md)
+[In English](readme_hurricanes-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Trajectoires d'ouragans](readme_hurricane_fr.md) > Trajectoires d'ouragans sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Trajectoires d'ouragans](readme_hurricanes_fr.md) > Trajectoires d'ouragans sur le Datamart du SMC
 
 # Données des trajectoires d'ouragans
 
-Cette page décrit les données des [trajectoires d'ouragans](readme_hurricane_fr.md).
+Cette page décrit les données des [trajectoires d'ouragans](readme_hurricanes_fr.md).
 
 Le Centre canadien des ouragans fournit des fichiers en format shapefile dans le cadre des prévisions régulières lors de la saison des ouragans.
 

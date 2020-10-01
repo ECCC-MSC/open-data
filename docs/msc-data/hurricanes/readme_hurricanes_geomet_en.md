@@ -1,8 +1,8 @@
-[En français](readme_hurricane_geomet_fr.md)
+[En français](readme_hurricanes_geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Hurricanes](readme_hurricane_en.md) > Hurricane data on MSC GeoMet
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Hurricanes](readme_hurricanes_en.md) > Hurricane data on MSC GeoMet
 
 # Hurricane prediction data available on MSC GeoMet
 
@@ -25,7 +25,7 @@ Example of a web map configured to display hurricane prediction Web Map Service 
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md) for detailed information. See also the [main hurricane prediction data page](readme_hurricane_en.md) which links to additional information on hurricane data and products.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md) for detailed information. See also the [main hurricane prediction data page](readme_hurricanes_en.md) which links to additional information on hurricane data and products.
 
 ### Available layers
 

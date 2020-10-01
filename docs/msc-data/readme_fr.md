@@ -78,7 +78,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 * [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
-* [Trajectoires d'ouragans](trajectories/readme_hurricane_fr.md)
+* [Ouragans](hurricanes/readme_hurricanes_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)
 

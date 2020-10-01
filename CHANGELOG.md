@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * new user survey
     * new hurricane web map and new hurricane GeoMet subpage
+    * updated hurricanes doc path
 * improvements:
     * Further improvements of updated list of available datasets 
 * bug fixes:

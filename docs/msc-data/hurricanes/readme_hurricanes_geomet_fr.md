@@ -1,8 +1,8 @@
-[In English](readme_hurricane_geomet_en.md)
+[In English](readme_hurricanes_geomet_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Ouragans](readme_hurricane_fr.md) > Données de prévision des ouragans sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Ouragans](readme_hurricanes_fr.md) > Données de prévision des ouragans sur GeoMet du SMC
 
 # Données de prévision des ouragans disponibles sur GeoMet du SMC
 
@@ -25,7 +25,7 @@ Exemple de carte interactive présentant des couches WMS des ouragans provenant 
 
 ## Utilisation
 
-La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/readme_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données de prévision des ouragans](readme_hurricane_fr.md) qui pointe vers de l'information additionnelle sur les données des ouragans et produits reliés.
+La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/readme_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données de prévision des ouragans](readme_hurricanes_fr.md) qui pointe vers de l'information additionnelle sur les données des ouragans et produits reliés.
 
 ### Couches disponibles
 
