@@ -79,7 +79,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
 * [Bulletins](bulletins/readme_bulletins_en.md)
-* [Hurricanes trajectories](trajectories/readme_hurricane_en.md)
+* [Hurricanes](hurricanes/readme_hurricanes_en.md)
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](https://dd.weather.gc.ca/meteocode/geodata/)
 
