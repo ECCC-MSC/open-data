@@ -1,4 +1,4 @@
-[In English](readme_prev-vertical-pfl_en.md)
+[In English](readme_vertical-profiles-nwp_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -14,7 +14,7 @@ Cette page décrit les profils verticaux de prévision (ProgTephi) produits par 
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données en format CSV disponibles sur le Datamart du SMC](readme_prev-vertical-pfl-datamart_fr.md) 
+* [Données en format CSV disponibles sur le Datamart du SMC](readme_vertical-profiles-nwp-datamart_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

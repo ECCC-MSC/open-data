@@ -1,12 +1,12 @@
-[In English](readme_prev-vertical-pfl-datamart_en.md)
+[In English](readme_vertical-profiles-nwp-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévisions des profils verticaux](readme_prev-vertical-pfl_fr.md) > Prévisions des profils verticaux sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Prévisions des profils verticaux](readme_vertical-profiles-nwp_fr.md) > Prévisions des profils verticaux sur le Datamart du SMC
 
 # Données de prévisions des profils verticaux du Système régional de prévision déterministe 
 
-Cette page décrit les données des [prévisions des profils verticaux du Système régional de prévision déterministe](readme_prev-vertical-pfl_fr.md), disponibles sur le Datamart du SMC.
+Cette page décrit les données des [prévisions des profils verticaux du Système régional de prévision déterministe](readme_vertical-profiles-nwp_fr.md), disponibles sur le Datamart du SMC.
 
 ## Adresse des données 
 

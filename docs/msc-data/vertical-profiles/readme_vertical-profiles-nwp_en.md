@@ -1,4 +1,4 @@
-[En français](readme_prev-vertical-pfl_fr.md)
+[En français](readme_vertical-profiles-nwp_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -14,7 +14,7 @@ This page describes the vertical profiles (ProgTephi) produced by the Regional D
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
-* [CSV data available on the MSC Datamart](readme_prev-vertical-pfl-datamart_en.md) 
+* [CSV data available on the MSC Datamart](readme_vertical-profiles-nwp-datamart_en.md) 
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.

@@ -25,7 +25,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Weather radar imagery](obs_radar/readme_radar_en.md)
 * [In situ observations](obs_station/readme_obs_insitu_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
-* [Vertical profiles](obs_vertical-profiles/readme_obs-vertical-pfl_en.md)
+* [Vertical profiles observations](vertical-profiles/readme_vertical-profiles-obs_en.md)
 
 ## Numerical weather and environmental prediction forecasts
 
@@ -33,7 +33,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * Deterministic:
     * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
     * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
-        * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](prev_vertical-profiles/readme_prev-vertical-pfl_en.md)
+        * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
     * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
     * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)

@@ -25,7 +25,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Images radar météo](obs_radar/readme_radar_fr.md)
 * [Observations in situ](obs_station/readme_obs_insitu_fr.md)
 * [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
-* [Profils verticaux](obs_vertical-profiles/readme_obs-vertical-pfl_fr.md)
+* [Observations de profils verticaux](vertical-profiles/readme_vertical-profiles-obs_fr.md)
 
 ## Prévisions numériques météorologiques et environnementales
 
@@ -33,7 +33,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * Déterministe :
     * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
     * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
-        * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](prev_vertical-profiles/readme_prev-vertical-pfl_fr.md)
+        * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](vertical-profiles/readme_vertical-profiles-nwp_fr.md)
     * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
     * [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
     * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
