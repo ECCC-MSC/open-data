@@ -6,11 +6,14 @@ async function getRadarStartEndTime() {
     data => {
       let xml = parser.parseFromString(data, 'text/xml')
       let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/')
+      /* overwrite end date and set to 48 hours from start data */
+      end = new Date(start)
+      end.setHours(end.getHours() + 48)
       let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default')
       return [start, end, default_]
     }
   )
-  return [new Date(data[0]), new Date(data[1]), new Date(data[2])]
+  return [new Date(data[0]), data[1], new Date(data[2])]
 }
 
 let frameRate = 1.0; // frames per second
@@ -86,7 +89,7 @@ let map = new ol.Map({
   target: 'map',
   layers: layers,
   view: new ol.View({
-    center: ol.proj.fromLonLat([-97, 57]),
+    center: ol.proj.fromLonLat([-69, 41]),
     zoom: 3
   })
 });
