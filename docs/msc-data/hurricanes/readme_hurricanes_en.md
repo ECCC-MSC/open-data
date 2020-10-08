@@ -19,7 +19,7 @@ This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API an
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
-Example of a web map configured to display hurricane prediction Web Map Service (WMS) layers served by MSC GeoMet:
+Example of a web map displaying the hurricane response zone and active hurricanes Web Map Service (WMS) layers, along with weather alerts (beta) and precipitation layers, served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">

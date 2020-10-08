@@ -13,7 +13,7 @@ MSC GeoMet provides access to several hurricane prediction layers. Users can bui
 
 The hurricane prediction layers are [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
-Example of a web map configured to display hurricane prediction Web Map Service (WMS) layers served by MSC GeoMet:
+Example of a web map displaying the hurricane response zone and active hurricanes Web Map Service (WMS) layers, along with weather alerts (beta) and precipitation layers, served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
