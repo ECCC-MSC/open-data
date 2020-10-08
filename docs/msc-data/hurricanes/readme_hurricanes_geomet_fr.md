@@ -13,7 +13,7 @@ GeoMet du SMC donne accès à plusieurs couches de prévision des ouragans. Les 
 
 Les couches de prévision des ouragans sont [disponibles sur GeoMet-Météo par le biais du standard Web Map Service (WMS)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant des couches WMS des ouragans provenant de GeoMet du SMC :
+Exemple de carte interactive présentant les couches Web Map Service (WMS) de zone de réaction aux ouragans et ouragans actifs, en plus de couches d'avertissements météo (beta) et de précipitation, provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
