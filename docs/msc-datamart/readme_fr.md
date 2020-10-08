@@ -13,7 +13,7 @@ Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bo
 
 ## Accès
 
-Le Datamart du SMC se trouve à l'adresse [https://dd.weather.gc.ca/](https://dd.weather.gc.ca/).
+Le Datamart du SMC se trouve à l'adresse [https://dd.meteo.gc.ca/](https://dd.meteo.gc.ca/).
 
 ### Notifications en temps réel et récupération des données
   
