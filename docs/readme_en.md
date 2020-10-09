@@ -55,7 +55,7 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 **Technical documentation**:
 
 * **[API / geospatial web services technical documentation](msc-geomet/web-services_en.md)**
-* **[Use with GDAL commands](../usage/tutorial_gdal/tutorial_gdal_en/)**
+* **[Use GDAL from the command line](../usage/tutorial_gdal/tutorial_gdal_en/)**
 
 ## Data discovery and metadata
 

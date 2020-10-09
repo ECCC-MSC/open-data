@@ -14,9 +14,9 @@ Aperçu de l'utilisation et exemples pour accéder et utiliser les données ouve
     * [Cartes interactives en-ligne et applications mobiles](#cartes-interactives-en-ligne-et-applications-mobiles)
     * [Images sur demande](#images-sur-demande)
 * [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes)
-    * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
     * [Services web de données brutes](#services-web-de-donnees-brutes)
-
+    * [Téléchargement de données brutes](#telechargement-de-donnees-brutes)
+    * [Manipuler les données brutes à partir de la ligne de commandes](#manipuler-les-donnees-brutes-a-partir-de-la-ligne-de-commandes)
 
 ## Connaître quelles sont les données disponibles
 
@@ -26,7 +26,7 @@ Le Service météorologique du Canada rend disponible de l'information sur les c
 
 ### Logiciel de bureau 
 
-Les données ouvertes du SMC dans des logiciels de bureau soit (A) en se connectant au service Web Map Service (WMS) de [GeoMet du SMC](../msc-geomet/readme_fr.md) ou (B) en téléchargeant les données brutes du [Datamart du SMC](../msc-datamart/readme_fr.md) ou via le service Web Coverage Service (WCS) ou OGC API - Features (WFS 3) de GeoMet du SMC et en chargeant les données brutes dans l'application. Les données peuvent ensuite être manipulées en utilisant des commandes de la librairie logicielle GDAL. [Un tutoriel démontrant les commandes les plus communes de la librairie logicielle GDAL](../tutorial_gdal/tutorial_gdal_fr/) est disponible.
+Les données ouvertes du SMC dans des logiciels de bureau soit (A) en se connectant au service Web Map Service (WMS) de [GeoMet du SMC](../msc-geomet/readme_fr.md) ou (B) en téléchargeant les données brutes du [Datamart du SMC](../msc-datamart/readme_fr.md) ou via le service Web Coverage Service (WCS) ou OGC API - Features (WFS 3) de GeoMet du SMC et en chargeant les données brutes dans l'application.
 
 Les données ouvertes du SMC peuvent être visualisées interactivement dans les logiciels qui supportent le standard Web Map Service (WMS) de l'Open Geospatial Consortium (OGC), tel que le logiciel libre [QGIS](https://qgis.org) ainsi que ArcGIS d'Esri. Les instructions pour ajouter les couches WMS de GeoMet du SMC dans [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) et [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) sont disponibles. Les logiciels de bureau peuvent permettre aux usagers de changer les couleurs des couches (styles WMS) ainsi qu'animer les couches pour les pas de temps disponibles. Les détails techniques sur les paramètres WMS disponibles sont documentés dans la [section sur les services web](../msc-geomet/web-services_fr.md). Pour télécharger des données brutes, veuillez vous référer à la section [Comment accéder aux données brutes](#comment-acceder-aux-donnees-brutes).
 
@@ -126,6 +126,10 @@ Les données brutes pour des données matricielles peuvent être récupérées p
 Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
 
 Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
+
+### Manipuler les données brutes à partir de la ligne de commandes
+
+Les données peuvent être manipulées en utilisant des commandes de la librairie logicielle GDAL. Un [tutoriel démontrant les commandes les plus communes de la librairie logicielle GDAL](../tutorial_gdal/tutorial_gdal_fr/) est disponible.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

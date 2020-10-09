@@ -15,8 +15,9 @@ Overview and examples on how to access and use Meteorological Service of Canada 
     * [Interactive web maps and mobile apps](#interactive-web-maps-and-mobile-apps)
     * [On-demand images](#on-demand-images)
 * [How to access raw data](#how-to-access-raw-data)
-    * [Raw data download](#raw-data-download)
     * [Raw data web services](#raw-data-web-services)
+    * [Raw data download](#raw-data-download)
+    * [Work with raw data from the command line](#work-with-raw-data-from-the-command-line)
 
 
 ## Learn about the available data
@@ -27,7 +28,7 @@ The Meteorological Service of Canada provides up-to-date information on past, pr
 
 ### Desktop software 
 
-MSC open data can be visualized in desktop software by either (A) connecting to [MSC GeoMet](../msc-geomet/readme_en.md) Web Map Service (WMS) web services or (B) by downloading the raw data from [MSC Datamart](../msc-datamart/readme_en.md) or MSC GeoMet Web Coverage Service (WCS) and OGC API- Features (WFS 3) web services and loading the raw data in the application. Then, data can be manipulated using commands from the GDAL software library. [A tutorial showcasing the most common commands of the GDAL software library](../tutorial_gdal/tutorial_gdal_en/) is available.
+MSC open data can be visualized in desktop software by either (A) connecting to [MSC GeoMet](../msc-geomet/readme_en.md) Web Map Service (WMS) web services or (B) by downloading the raw data from [MSC Datamart](../msc-datamart/readme_en.md) or MSC GeoMet Web Coverage Service (WCS) and OGC API- Features (WFS 3) web services and loading the raw data in the application.
 
 MSC open data can be interactively visualized in software that supports the Open Geospatial Consortium (OGC) Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org) and in Esri ArcGIS software. Instructions for adding MSC GeoMet WMS services to [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) and [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) are available. Desktop software may allow users to change the layer colors (WMS styles) and animate the layers amongst the available timesteps. Details on the available WMS parameters are available in the [web services section](../msc-geomet/web-services_en.md). For downloading raw data, refer to the [How to access raw data](#how-to-access-raw-data) section.
 
@@ -126,6 +127,10 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
 MSC raw data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
 
 The raw data can also be directly downloaded on the web from the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
+
+### Work with raw data from the command line
+
+Data can be manipulated using commands from the GDAL software library. A [tutorial showcasing the most common commands of the GDAL software library](../tutorial_gdal/tutorial_gdal_en/) is available.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
