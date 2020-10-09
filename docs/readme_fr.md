@@ -39,7 +39,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 **Tutoriels** :
 
 * **Accéder et utiliser les données dans le logiciel de bureau QGIS** :
-    * [Ajouter, effectuer des requêtes et animer des couches WMS](usage/tutorial_WMS_QGIS_fr.md)
+    * [Ajouter, effectuer des requêtes et animer des couches WMS](usage/tutorial_WMS_QGIS_fr.md)	
     * [Ajouter et effectuer des requêtes aux couches OGC API Features](usage/tutorial_OAFeat_QGIS_fr.md)
     * [Ajouter des données brutes](usage/tutorial_raw-data_QGIS_fr.md)
 * **[Créer des cartes interactives sur le web avec OpenLayers et Leaflet](usage/tutorial_web-maps_fr.md)** :
@@ -55,6 +55,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 **Documentation technique** :
 
 * **[Documentation technique des services web géospatiaux / API](msc-geomet/web-services_fr.md)**
+* **[Utiliser avec des commandes GDAL](../usage/tutorial_gdal/tutorial_gdal_fr/)**
 
 ## Découverte des données et métadonnées
 
