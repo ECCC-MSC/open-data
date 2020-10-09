@@ -55,7 +55,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 **Documentation technique** :
 
 * **[Documentation technique des services web géospatiaux / API](msc-geomet/web-services_fr.md)**
-* **[Utiliser avec des commandes GDAL](../usage/tutorial_gdal/tutorial_gdal_fr/)**
+* **[Utiliser GDAL à partir de la ligne de commandes](../usage/tutorial_gdal/tutorial_gdal_fr/)**
 
 ## Découverte des données et métadonnées
 
