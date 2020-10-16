@@ -36,17 +36,9 @@ Composite radar météo nord-américaine à 1 km :
 
 * Taux de précipitation radar (Pluie) (1 km) [mm/hr], ID: `RADAR_1KM_RRAI`
 * Taux de précipitation radar (Neige) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
-* Réflectivité radar (Pluie) (1 km) [dBZ], ID: `RADAR_1KM_RDBR`
 * Couches de la couverture radar dynamique correspondantes :
     * Couverture pour la pluie, ID: `RADAR_COVERAGE_RRAI`. ID pour le style WMS inversé : `RADAR_COVERAGE_RRAI.INV`
     * Couverture pour la neige, ID: `RADAR_COVERAGE_RSNO`. ID pour le style WMS inversé: `RADAR_COVERAGE_RSNO.INV`
-
-Composite radar météo nord-américaine à 4 km :
-
-* Taux de précipitation radar (Pluie) (4 km) [mm/hr], ID: `RADAR_RRAI`
-* Taux de précipitation radar (Neige) (4 km) [cm/hr], ID: `RADAR_RSNO`
-* Réflectivité radar (Pluie) (4 km) [dBZ], ID: `RADAR_RDBR`
-* Réflectivité radar (Neige) (4 km) [dBZ], ID: `RADAR_RDBS`
 
 ### Conseils d'utilisation
 
