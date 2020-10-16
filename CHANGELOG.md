@@ -21,6 +21,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Further improvements of updated list of available datasets 
     * Merged vertical profiles subfolders and renamed readmes
+    * Removed the 4km & 1km-dBZ radar composite layers from doc given their upcoming retirement
 * bug fixes:
     * typos
     
