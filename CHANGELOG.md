@@ -12,12 +12,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: TBD
 * announcements:
-    * announced to users for the user survey
+    * announced to users
 * new content:
     * new user survey
     * new hurricane web map and new hurricane GeoMet subpage
     * updated hurricanes doc path
-    * Add RIOPS doc (raw forecats, different from DD-Alpha) 
+    * Add RIOPS doc (raw forecast, different from DD-Alpha) 
+    * New GDAL commands Jupyter Notebook
 * improvements:
     * Further improvements of updated list of available datasets 
     * Merged vertical profiles subfolders and renamed readmes
@@ -48,7 +49,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Reorganized list of available NWP datasets
     * Added support for WMS GFI JSON responses and updated associated GFI examples
-    * Fix NetCDF format instead of GRIB2  format in DD-Alpha RIOPS doc 
+    * Fix NetCDF format instead of GRIB2 format in DD-Alpha RIOPS doc 
 * bug fixes:
     * Fixed MSC GeoMet tech doc: multiple &LAYERS not supported in WMS GetMap requests
     * typos
