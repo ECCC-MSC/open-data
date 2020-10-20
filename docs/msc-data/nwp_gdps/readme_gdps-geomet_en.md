@@ -13,7 +13,7 @@ MSC GeoMet provides access to data produced by the Global Deterministic Predicti
 
 The GDPS data is [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
 
-Example of a web map configured to display the [GDPS.ETA_TT](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.ETA_TT) layer served by MSC GeoMet:
+Example of a web map configured to display the [GDPS.DIAG_NW_PT1H](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.DIAG_NW_PT1H) layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
@@ -36,7 +36,7 @@ Desktop GIS software such as QGIS also makes it easy to [navigate the WMS GetCap
 
 Retrieving the available model runs and forecast hours available for a given GDPS layer:
 
-* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). Example: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.ETA_TT](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.ETA_TT)
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). Example: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.DIAG_NW_PT1H](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GDPS.DIAG_NW_PT1H)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
 
 WMS styles:
@@ -47,9 +47,9 @@ WMS styles:
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic).
-* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR).
+* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.DIAG_NW_PT1H&format=image/png&STYLE=SIGPRECIPITATIONTYPE](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.DIAG_NW_PT1H&format=image/png&STYLE=SIGPRECIPITATIONTYPE).
 
-![The GDPS.ETA_TT TEMPERATURE-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
+![The GDPS.DIAG_NW_PT1H SIGPRECIPITATIONTYPE WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.DIAG_NW_PT1H&format=image/png&STYLE=SIGPRECIPITATIONTYPE)
 
 
 ## Support

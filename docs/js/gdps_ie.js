@@ -5,11 +5,10 @@ var map = new ol.Map({
       source: new ol.source.OSM()
     }),
     new ol.layer.Tile({
-      opacity: 0.4,
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+          params: {'LAYERS': 'GDPS.DIAG_NW_PT1H', 'TILED': true},
       })
     })
   ],
