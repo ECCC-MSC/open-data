@@ -8,7 +8,7 @@ var map = new ol.Map({
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'RAQDPS.EATM_PM2.5', 'TILED': true},
+          params: {'LAYERS': 'RAQDPS.SFC_NO2', 'TILED': true},
       })
     })
   ],

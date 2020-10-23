@@ -16,7 +16,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * none
 * improvements:
-    * none
+    * Added RAQDPS, RAQDPS-FW, GDPS and REPS web maps to their root page
+	* Updated layer displayed in RAQDPS web map
 * bug fixes:
     * typos
 
