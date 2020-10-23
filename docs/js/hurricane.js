@@ -76,6 +76,7 @@ let layers = [
       })
     }),
     new ol.layer.Image({
+	  opacity: 0.7,
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet-beta/',

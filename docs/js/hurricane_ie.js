@@ -51,6 +51,7 @@ layers: [
       })
     }),
     new ol.layer.Tile({
+	  opacity: 0.7,
       source: new ol.source.TileWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet-beta/',
