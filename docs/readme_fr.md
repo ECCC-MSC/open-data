@@ -78,7 +78,7 @@ Les questions les plus fréquemment posées au sujet des données ouvertes du SM
 
 ## Votre avis nous intéresse
 
-Afin que la documentation des données ouvertes du Service météorologique du Canadado réponde à vos besoins, merci de nous faire part de votre avis en répondant à ce court [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=35b3c882-2af9-488f-ad98-9112d2892b8f&lang=FR).
+Afin que la documentation des données ouvertes du Service météorologique du Canada réponde à vos besoins, merci de nous faire part de votre avis en répondant à ce court [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=35b3c882-2af9-488f-ad98-9112d2892b8f&lang=FR).
 
 ## Contactez-nous
 

@@ -8,11 +8,23 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.17
+
+* date: 2020-10-23
+* announcements:
+    * announced to GeoMet-Info and dd_info users
+* new content:
+    * none
+* improvements:
+    * none
+* bug fixes:
+    * typos
+
 ## 2.3.16
 
-* date: TBD
+* date: 2020-10-23
 * announcements:
-    * announced to users
+    * not announced
 * new content:
     * new user survey
     * new hurricane web map and new hurricane GeoMet subpage
