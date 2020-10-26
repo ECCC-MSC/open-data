@@ -8,11 +8,23 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.18
+
+* date: 2020-10-26
+* announcements:
+    * announced to GeoMet-Info and dd_info users
+* new content:
+    * none
+* improvements:
+    * none
+* bug fixes:
+    * fixed web map animations for daylight saving time change
+    
 ## 2.3.17
 
 * date: 2020-10-23
 * announcements:
-    * announced to GeoMet-Info and dd_info users
+    * not announced
 * new content:
     * none
 * improvements:
