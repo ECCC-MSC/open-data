@@ -8,7 +8,7 @@ async function getRadarStartEndTime() {
       let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/')
       /* overwrite end date and set to 48 hours from start data */
       end = new Date(start)
-      end.setHours(end.getHours() + 48)
+      end.setUTCHours(end.getUTCHours() + 48)
       let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default')
       return [start, end, default_]
     }
