@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.20
+
+* date: TBD
+* announcements:
+    * not announced
+* new content:
+    * none
+* improvements:
+    * clarified RIOPS data on GeoMet-Beta is YOPP-RIOPS
+* bug fixes:
+    * TBD
+    
 ## 2.3.19
 
 * date: 2020-10-27
