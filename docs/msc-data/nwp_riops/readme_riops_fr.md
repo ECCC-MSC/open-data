@@ -16,7 +16,7 @@ Ces données sont respectivement disponibles sur les services du serveur de donn
 
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_riops-datamart_fr.md)
 * [Données NetCDF expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_riops-datamart-alpha_fr.md) 
-* [Données disponibles via les services web géospatiaux GeoMet-Beta](../../msc-geomet/readme_fr.md)
+* [Données YOPP-SRPOG disponibles via les services web géospatiaux GeoMet-Beta](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
