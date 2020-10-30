@@ -28,7 +28,7 @@ let layers = [
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RDPA.24P_PR', 'TILED': true},
+        params: {'LAYERS': 'RDPA.24F_PR', 'TILED': true},
       })
     })
   ]
