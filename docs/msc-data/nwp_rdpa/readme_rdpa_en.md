@@ -18,7 +18,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 * [Current data and archives available via geospatial web services GeoMet-Weather](readme_rdpa-geomet_en.md)
 * [Current GRIB2 data available on the MSC Datamart](readme_rdpa-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the quantity of precipitation (preliminary) [mm] over the past period of 24 hours using a Regional Deterministic Precipitation Analysis (RDPA) WMS layer served by MSC GeoMet:
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the quantity of precipitation [mm] over the past period of 24 hours using a Regional Deterministic Precipitation Analysis (RDPA) WMS layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
