@@ -18,7 +18,14 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 * [Current data and archives available via geospatial web services GeoMet-Weather](readme_rdpa-geomet_en.md)
 * [Current GRIB2 data available on the MSC Datamart](readme_rdpa-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the quantity of precipitation (preliminary) [mm] over the past period of 24 hours using a Regional Deterministic Precipitation Analysis (RDPA) WMS layer served by MSC GeoMet:
+
+<div id="map" style="height: 400px;"></div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
+  <span id="info" style="padding-left: 0.5rem;"></span>
+</div>
 
 ### Licence
 
@@ -46,3 +53,24 @@ List and links to the products available for this dataset :
 
 The chronology of changes to the Regional Deterministic Precipitation Analysis (RDPA) is available [here](changelog_rdpa_en.md).
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../../js/rdpa_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../../js/rdpa.js";
+    }
+    head.appendChild(js);
+</script>

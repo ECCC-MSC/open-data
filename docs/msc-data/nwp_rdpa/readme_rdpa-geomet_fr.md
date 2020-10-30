@@ -13,7 +13,7 @@ GeoMet du SMC donne accès à plusieurs couches de l'analyse régionale détermi
 
 Les couches ARPD sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant une couche WMS de l'Analyse régionale déterministe de précipitation provenant de GeoMet du SMC :
+Exemple de carte interactive configurée pour afficher la quantité de précipitations (préliminaire) [mm] au cours des dernières 24h en utilisant une couche WMS de l'Analyse régionale déterministe de précipitation (ARDP) provenant de GeoMet du SMC:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">

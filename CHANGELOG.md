@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * none
 * improvements:
+    * Added RDPA web map to related root page
     * clarified RIOPS data on GeoMet-Beta is YOPP-RIOPS
 * bug fixes:
     * TBD
