@@ -6,7 +6,7 @@
 
 # MSC Datamart
 
-The Meteorological Service of Canada (MSC) HTTP data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.
+The Meteorological Service of Canada (MSC) HTTPS data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.
 
 ## Access
 
