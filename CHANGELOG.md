@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Added RDPA web map to related root page
     * clarified RIOPS data on GeoMet-Beta is YOPP-RIOPS
+    * Modified the RDPA webmap max animation time to last 7 days
 * bug fixes:
     * TBD
     

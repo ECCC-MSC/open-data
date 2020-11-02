@@ -1,11 +1,14 @@
 const parser = new DOMParser();
 
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RDPA.24P_PR')
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RDPA.24F_PR')
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml')
       let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/')
+      /* overwrite start date and set to 168 hours (7 days) before end data */
+      start = new Date(end)
+      start.setUTCHours(start.getUTCHours() - 168)
       let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default')
       return [start, end, default_]
     }
