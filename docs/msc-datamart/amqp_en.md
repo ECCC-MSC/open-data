@@ -91,7 +91,7 @@ Here are some specific examples to receive alerts, citypage_weather data for one
 ## External links
 
 * AMQP protocol on Wikipedia:
-[https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protoco](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
+[https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
 
 * AMQP python library: 
 [https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
