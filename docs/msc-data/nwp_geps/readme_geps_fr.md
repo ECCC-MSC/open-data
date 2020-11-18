@@ -14,7 +14,7 @@ Le Système global de prévision d'ensemble (SGPE) procède à des calculs physi
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_geps-geomet_fr.md)
+* [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](readme_geps-geomet_fr.md)
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_geps-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche `GEPS.DIAG.12_PRMM.ERGE10` du SGPE provenant de GeoMet du SMC :

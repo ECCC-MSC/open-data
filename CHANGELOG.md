@@ -22,6 +22,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Modified the RDPA webmap max animation time to last 7 days
 * bug fixes:
     * Solved layer name issue in web maps tutorials
+    * Fixed wording, WCPS data is available from GeoMet-Weather
     
 ## 2.3.19
 
@@ -55,7 +56,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * none
 * improvements:
-    * Added RAQDPS, RAQDPS-FW, GDPS and REPS web maps to their root page
+    * Added RAQDPS, RAQDPS-FW, GDPS and GEPS web maps to their root page
 	* Updated layer displayed in RAQDPS web map
 * bug fixes:
     * typos

@@ -16,10 +16,11 @@ Le Système Régional de Prévision Déterministe (SRPD) fournit les conditions 
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
+* [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 * [Données NEMO du système de prévision du cycle de l'eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md) 
-* (à venir) [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
+
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
