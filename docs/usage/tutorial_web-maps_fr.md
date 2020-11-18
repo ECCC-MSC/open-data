@@ -73,7 +73,7 @@ let layers_to_add = [
 
 let map = new ol.Map({
   target: 'map',
-  layers: layers,
+  layers: layers_to_add,
   view: new ol.View({
     center: ol.proj.fromLonLat([-97, 57]),
     zoom: 0

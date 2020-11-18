@@ -12,9 +12,10 @@ High-resolution statistically downscaled climate indices based on model projecti
 
 ### How to access the data
 
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+
 * [NetCDF data available on the MSC Datamart](readme_climateindices-datamart_en.md)
 * [NetCDF multi-model ensemble and individual model datasets available on the Canadian Climate Data and Scenarios site](http://climate-scenarios.canada.ca/?page=downscaled-indices-data)
-* [Data available via GeoMet-Climate geospatial web services](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

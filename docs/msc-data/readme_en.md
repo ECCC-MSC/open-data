@@ -71,7 +71,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
 * [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
 * [Statistically downscaled climate indices](climate_indices/readme_climateindices_en.md)
-* —
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 
 
