@@ -14,7 +14,7 @@ The Global Ensemble Prediction System (GEPS) carries out physics calculations to
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Data available via the GeoMet-Weather geospatial web services](readme_geps-geomet_en.md)
+* [Data available via the GeoMet-Weather API / geospatial web services](readme_geps-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_geps-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the `GEPS.DIAG.12_PRMM.ERGE10` layer served by MSC GeoMet:
