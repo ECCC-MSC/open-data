@@ -14,13 +14,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * not announced
 * new content:
-    * none
+    * Added pages related to climate data from GeoMet-Climate
 * improvements:
     * Added RDPA web map to related root page
+    * Added climate pages web maps to their related root pages    
     * clarified RIOPS data on GeoMet-Beta is YOPP-RIOPS
     * Modified the RDPA webmap max animation time to last 7 days
 * bug fixes:
-    * TBD
+    * Solved layer name issue in web maps tutorials
     
 ## 2.3.19
 

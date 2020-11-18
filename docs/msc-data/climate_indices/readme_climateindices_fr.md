@@ -12,9 +12,10 @@ Ensembles de données des indices climatiques mis à l'échelle de manière stat
 
 ### Comment accéder aux données
 
+Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
+
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_climateindices-datamart_fr.md)
 * [Données d'ensembles multimodèles et données individuelles en format NetCDF disponibles sur le site des Données et scénarios climatiques canadiens](http://scenarios-climatiques.canada.ca/index.php?page=downscaled-indices-data)
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](../../msc-geomet/readme_en.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
