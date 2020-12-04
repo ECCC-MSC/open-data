@@ -15,8 +15,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add vertical levels for RDPS, GDPS and HRDPS
+    * Add AQHI changelog
 * improvements:
-    * None
+    * Remove changelog when not available and fix "change log" to "changelog"
 * bug fixes:
     * None
 
