@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.21
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * Add vertical levels for RDPS, GDPS and HRDPS
+* improvements:
+    * None
+* bug fixes:
+    * None
+
 ## 2.3.20
 
 * date: TBD
