@@ -41,9 +41,6 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 * [Introduction to climate scenarios](http://climate-scenarios.canada.ca/?page=cmip5-intro)
 * This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
 
-## Change log
-
-Not applicable.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

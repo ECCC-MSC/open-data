@@ -32,15 +32,3 @@ Les [métadonnées des prévisions météorologiques par ville sont disponibles 
 ## Documentation technique
 
 Le [Guide des prévisions météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/guide.html) fournit des renseignements sur les bulletins de prévisions: heure de publication, période couverte, régions, terminologie relative à la période de prévision, renseignements fournis et révision des prévisions.
-
-## Registre des changements 
-
-Ne s'applique pas.
-
-
-
-
-
-
-
-

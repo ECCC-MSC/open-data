@@ -36,7 +36,7 @@ The [metadata of the High Resolution Deterministic Prediction System are availab
 * [Current version of the High Resolution Deterministic Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the High Resolution Deterministic Prediction System (HRDPS) is available [here](changelog_hrdps_en.md).
 

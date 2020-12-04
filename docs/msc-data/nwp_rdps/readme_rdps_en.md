@@ -63,6 +63,6 @@ List and links to the products available for this dataset :
 * [Current version of the Regional Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps_e.pdf)
 
-## Change log 
+## Changelog 
 
 The chronology of changes to the Regional Deterministic Prediction System (RDPS) is available [here](changelog_rdps_en.md).

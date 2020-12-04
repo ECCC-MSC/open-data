@@ -39,6 +39,6 @@ Upcoming.
 
 * [Technical Specifications](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Canadian Arctic Prediction System (CAPS) is available [here](changelog_caps_en.md).

@@ -33,6 +33,6 @@ Upcoming.
 * [Current version of the Regional Ice Ocean Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Ice Ocean Prediction System (RIOPS) is available [here](changelog_riops_en.md).

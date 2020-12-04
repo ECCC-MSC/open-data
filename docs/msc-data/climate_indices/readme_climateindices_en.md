@@ -31,7 +31,3 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 * [Technical note in HTML format](http://climate-scenarios.canada.ca/index.php?page=downscaled-indices-notes)
 * [Technical note in PDF format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_indices/INDICES_Technical_Documentation_en.pdf)
-
-## Change log
-
-Not applicable.

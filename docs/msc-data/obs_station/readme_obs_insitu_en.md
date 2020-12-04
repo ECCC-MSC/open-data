@@ -34,7 +34,3 @@ The [metadata of the XML provincial and territory summaries are available on the
 ## Technical documentation
 
 * [MANOBS Manual of Surface Weather Observations](https://www.canada.ca/en/environment-climate-change/services/weather-manuals-documentation/manobs-surface-observations.html)
-
-## Change log
-
-Not applicable.

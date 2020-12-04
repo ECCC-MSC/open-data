@@ -31,7 +31,3 @@ The [metadata SPEI are available on the Open Government Portal](https://open.can
 
 * [Technical note in HTML format](http://climate-scenarios.canada.ca/index.php?page=spei-technical-notes)
 * [Technical note in PDF format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_spei/SPEI_Technical_Documentation_en.pdf)
-
-## Change log
-
-Not applicable.

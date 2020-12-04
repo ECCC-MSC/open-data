@@ -31,7 +31,3 @@ The [metadata of the Regional Deterministic Prediction System are available on t
 
 * [Current version of the Regional Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_20190703_e.pdf)
-
-## Change log
-
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).

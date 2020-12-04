@@ -31,7 +31,3 @@ Non disponibles.
 ## Documentation technique
 
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/Meteocode_fr.pdf)
-
-## Registre des changements 
-
-Ne s'applique pas.

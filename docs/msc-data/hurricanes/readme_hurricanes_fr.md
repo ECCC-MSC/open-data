@@ -45,10 +45,6 @@ Non disponible.
 
 * [Centre canadien des ouragans](https://www.ec.gc.ca/ouragans-hurricanes/)
 
-## Registre des changements
-
-Ne s'applique pas.
-
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

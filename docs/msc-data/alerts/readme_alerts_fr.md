@@ -31,8 +31,3 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 * [Version actuelle du système national d'alertes au public](https://www.securitepublique.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-fr.aspx)
 * [Critères d'alertes météo publiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/criteres-alertes-meteo.html) 
-
-## Registre des changements 
-
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
-

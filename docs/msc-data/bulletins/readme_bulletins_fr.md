@@ -40,7 +40,3 @@ Non disponibles.
 * [Manuel des normes et méthodes d'exploitation des prévisions et avertissements météorologiques publics (MANOBS)](https://www.canada.ca/fr/environnement-changement-climatique/services/manuels-documents-conditions-meteorologiques/manobs-observations-surface.html)
 
 * [METAR et TAF sur le site de NavCan](http://www.flightplanning.navcanada.ca/cgi-bin/CreePage.pl?Langue=francais&NoSession=NS_Inconnu&Page=Fore-obs%2Fmetar-taf-map&TypeDoc=html)
-
-## Registre des changements 
-
-Ne s'applique pas.

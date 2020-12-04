@@ -34,7 +34,3 @@ Les [métadonnées des sommaires d'observations pour les provinces et territoire
 ## Documentation technique
 
 * [MANOBS Manuel d’observations météorologiques de surface](https://www.canada.ca/fr/environnement-changement-climatique/services/manuels-documents-conditions-meteorologiques/manobs-observations-surface.html)
-
-## Registre des changements 
-
-Ne s'applique pas.

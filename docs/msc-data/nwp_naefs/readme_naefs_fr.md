@@ -40,8 +40,5 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Documentation technique
 
-Non disponible.
+[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://www.meted.ucar.edu/training_module.php?id=548#.X8ZPdc6SlPY) (En anglais seulement)
 
-## Registre des changements 
-
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
