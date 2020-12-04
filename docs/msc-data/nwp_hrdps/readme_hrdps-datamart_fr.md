@@ -157,13 +157,15 @@ Le fichier a été créé par le CMC et contient une prévision du Système haut
 
 ## Niveaux
 
-La couverture verticale des champs tridimensionnels peut atteindre jusqu’à 28 niveaux isobariques.
+La couverture verticale des champs tridimensionnels peut atteindre jusqu’à 31 niveaux isobariques.
 
-Niveaux isobariques (hPa) : 1015, 1000, 0985, 0970, 0950, 0925, 0900, 0850, 0800, 0750, 0700, 0650, 0600, 0550, 0500, 0450, 0400, 0350, 0300, 0275, 0250, 0225, 0200, 0175, 0150, 0100, 0050.
+Niveaux isobariques (hPa) : 1015, 1000, 985, 970, 950, 925, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 275, 250, 225, 200, 175, 150, 100, 50.
+
+Niveaux additionnels 30, 20 et 10 hPa pour les variables TMP, HGT, UGRD, VGRD, WIND, WDIR, SPFH, RH et DEPR
 
 Certains champs reçoivent une couverture verticale limitée à quatre niveaux isobariques.
 
-Niveaux isobariques (couverture réduite, hPa) : 0850, 0700, 0500, 0250.
+Niveaux isobariques (couverture réduite, hPa) : 850, 700, 500, 250.
 
 Autres types de niveaux qui pourraient être applicables à certains champs :
 

@@ -154,9 +154,11 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 ## Levels
 
-Vertical coverage of three-dimensional fields is provided by up to 28 isobaric levels.
+Vertical coverage of three-dimensional fields is provided by up to 31 isobaric levels.
 
-Isobaric levels (hPa): 1015, 1000, 0985, 0970, 0950, 0925, 0900, 0850, 0800, 0750, 0700, 0650, 0600, 0550, 0500, 0450, 0400, 0350, 0300, 0275, 0250, 0225, 0200, 0175, 0150, 0100, 0050.
+Isobaric levels (hPa): 1015, 1000, 985, 970, 950, 925, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 275, 250, 225, 200, 175, 150, 100, 50.
+
+Additional levels 30, 20 and 10 hPa for the variables TMP, HGT, UGRD, VGRD, WIND, WDIR, SPFH, RH and DEPR.
 
 Some fields receive limited three-dimensional coverage of 4 levels in the vertical.
 
