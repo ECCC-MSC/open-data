@@ -87,7 +87,7 @@ Vertical coverage of three-dimensional fields is provided by up to 33 isobaric l
 
     * Additional levels 30, 20 et 10 hPa for the variables RH et DEPR
 
-* Some fields receive limited three-dimensional coverage of five levels in the vertical, namely 850, 700, 500, 250 hPa.
+* Some fields receive limited three-dimensional coverage of five levels in the vertical, namely 850, 700, 600, 500, 250 hPa.
 
 Additional levels that may be applicable to a given parameter are :
 
