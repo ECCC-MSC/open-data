@@ -56,6 +56,6 @@ List and links to the products available for this dataset :
 * [Current version of the Regional Deterministic Wave Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdwps_20120524_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Deterministic Wave Prediction System (RDWPS) is available [here](changelog_rdwps_en.md).

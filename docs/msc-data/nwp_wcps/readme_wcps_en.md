@@ -38,7 +38,7 @@ To come.
 * [Current version of the Water Cycle Prediction System (WCPS)](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_e.pdf)
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_e.pdf)
 
-## Change log 
+## Changelog 
 
 The chronology of changes to the Water Cycle Prediction System (WCPS) is available [here](changelog_wcps_en.md).
 

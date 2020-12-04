@@ -31,9 +31,3 @@ Upcoming.
 
 * [Actual version of the national public alerting system](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-en.aspx)
 * [Public Weather Warning Criteria](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/criteria-alerts.html) 
-
-## Change log
-
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
-
-

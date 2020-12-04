@@ -57,7 +57,7 @@ Health Services Department, Durham Region Health Department, Ottawa Public Healt
 
 * [Guide to Air Quality Health Index forecasts](https://www.canada.ca/en/environment-climate-change/services/weather-health/publications/guide-air-quality-index-forecasts.html)
 
-## Change log
+## Changelog
 
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+The chronology of changes to the Air Quality Health Index (AQHI) program is available [here](changelog_aqhi_en.md).
 

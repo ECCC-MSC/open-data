@@ -51,9 +51,6 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 * [Site web du Climat](http://climat.meteo.gc.ca/historical_data/search_historic_data_f.html)
 * [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html)
 
-## Registre des changements 
-
-Ne s'applique pas.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

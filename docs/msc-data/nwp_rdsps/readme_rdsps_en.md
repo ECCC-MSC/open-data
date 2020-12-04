@@ -31,6 +31,6 @@ Upcoming.
 * [Current version of the Regional Deterministic Storm Surge Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDSPS_e.pdf)
 * [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdsps_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Deterministic Storm Surge Prediction System (RDSPS) is available [here](changelog_rdsps_en.md).

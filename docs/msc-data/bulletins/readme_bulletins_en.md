@@ -40,7 +40,3 @@ Upcoming.
 * [Manual of Standard Operational Procedures for Issuing Public Weather Forecasts and Warnings (MANOBS)](https://www.canada.ca/fr/environnement-changement-climatique/services/manuels-documents-conditions-meteorologiques/manobs-observations-surface.html)
 
 * [METAR and TAF on NavCan website](http://www.flightplanning.navcanada.ca/cgi-bin/CreePage.pl?Langue=anglais&NoSession=NS_Inconnu&Page=Fore-obs%2Fmetar-taf-map&TypeDoc=html)
-
-## Change log
-
-Not applicable.

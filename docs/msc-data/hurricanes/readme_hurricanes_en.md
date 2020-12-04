@@ -45,10 +45,6 @@ Upcoming.
 
 * [Canadian Hurricane Centre](https://www.ec.gc.ca/ouragans-hurricanes/)
 
-## Change log
-
-Not applicable.
-
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

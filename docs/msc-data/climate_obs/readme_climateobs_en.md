@@ -51,9 +51,6 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 * [Climate data web site](http://climat.meteo.gc.ca/historical_data/search_historic_data_e.html)
 * [Canadian Centre for Climate Services](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html)
 
-## Change log
-
-Not applicable.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

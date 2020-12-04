@@ -31,7 +31,3 @@ Les [métadonnées IPEN sont accessibles sur le portail du gouvernement ouvert](
 
 * [Note technique en format HTML](http://scenarios-climatiques.canada.ca/?page=spei-technical-notes)
 * [Note technique en format PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_spei/SPEI_Technical_Documentation_fr.pdf)
-
-## Registre des changements 
-
-Ne s'applique pas.

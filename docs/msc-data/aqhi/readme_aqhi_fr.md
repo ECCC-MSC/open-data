@@ -56,4 +56,6 @@ Le programme CAS est un partenariat conjoint d'Environnement et Changement clima
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés au programme Cote Air Santé (CAS) est disponible [ici](changelog_aqhi_fr.md).
+
+

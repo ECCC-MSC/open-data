@@ -55,6 +55,6 @@ Upcoming.
 
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS-CGSL) is available [here](changelog_rdps-cgsl_en.md).

@@ -33,7 +33,7 @@ Upcoming.
 * [Scientific review](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/e_scribe3.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_incs_20140502_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Integrated Nowcasting System (INCS) is available [here](changelog_nowcasting_en.md).
 

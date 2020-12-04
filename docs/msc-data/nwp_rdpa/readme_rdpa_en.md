@@ -49,7 +49,7 @@ List and links to the products available for this dataset :
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_rdpa_e.pdf)
 * [Information sheet describing the CaPA system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Deterministic Precipitation Analysis (RDPA) is available [here](changelog_rdpa_en.md).
 

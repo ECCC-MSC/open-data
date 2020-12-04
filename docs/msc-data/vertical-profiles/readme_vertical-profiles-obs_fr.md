@@ -29,7 +29,3 @@ Non disponibles.
 ## Documentation technique
 
 Non disponible.
-
-## Registre des changements 
-
-Ne s'applique pas.

@@ -32,7 +32,3 @@ The [metadata of the weather forecasts per city are available on the Open Govern
 ## Technical documentation
 
 The [weather forecast guide](https://www.canada.ca/en/environment-climate-change/services/types-weather-forecasts-use/public/guide.html) includes information on the issuing time of forecasts,time period covered by forecast, determination of forecast regions, forecast time period terminology, information included in the forecast, and forecast revision.
-
-## Change log
-
-Does not apply.

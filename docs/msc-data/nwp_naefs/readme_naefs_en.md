@@ -40,8 +40,4 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
-Not available.
-
-## Change log
-
-The chronology of changes to operational systems is available [here](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html).
+[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://www.meted.ucar.edu/training_module.php?id=548#.X8ZPdc6SlPY)

@@ -33,6 +33,6 @@ Upcoming.
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_e.pdf)
 * [Information sheet describing the CaPA system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Canadian Precipitation Analysis System (CaPA) is available [here](changelog_hrdpa_en.md).

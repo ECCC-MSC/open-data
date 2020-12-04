@@ -32,6 +32,6 @@ The [metadata of the Regional Ensemble Prediction System are available on the Op
 * [Actual version of the Regional Ensemble Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps_e.pdf)
 
-## Change log
+## Changelog
 
 The chronology of changes to the Regional Ensemble Prediction System (REPS) is available [here](changelog_reps_en.md).

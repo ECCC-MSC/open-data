@@ -29,7 +29,3 @@ Not available.
 ## Technical documentation
 
 Not available.
-
-## Change log
-
-Not applicable.
