@@ -62,13 +62,13 @@ Le modèle et les règles de codage du format BUFR pour ces données sont décri
 Les documents binaires peuvent être consultés ou convertis en code ASCII, entre autres, au moyen d’un logiciel conforme au code BUFR. Plusieurs centres 
 météorologiques et établissements de recherche météorologiques importants donnent accès au logiciel BUFR, libre de redevances. 
 Le SMC donne accès à libECBUFR, une bibliothèque en format BUFR comprenant des outils pour coder ou décoder du format BUFR à ASCII et l’inverse: 
-https://launchpad.net/libecbufr
+https://github.com/ECCC-MSC/libecbufr
 Une fois la bibliothèque libECBUFR installée, la ligne de commande suivante permet de produire une version lisible des données : 
 bufr_decoder -inbufr data.bufr 
 où, data.bufr est le fichier BUFR.
 
 Davantage d’information sont disponibles  quant à l’installation et à l’utilisation de libECBUFR dans la foire aux questions suivante : 
-[https://answers.launchpad.net/libecbufr/+faqs](https://answers.launchpad.net/libecbufr/+faqs)
+[https://github.com/ECCC-MSC/libecbufr/wiki/FAQ](https://github.com/ECCC-MSC/libecbufr/wiki/FAQ)
 
 ## Utilitaire de recherche de bulletins
 

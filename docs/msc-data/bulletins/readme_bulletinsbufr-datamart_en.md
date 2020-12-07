@@ -61,13 +61,13 @@ The specific template and BUFR encoding rules used in the encoding of this data 
 
 This data is in binary form and requires BUFR compliant software to be processed for viewing or decoding into ASCII or other formats. Several major 
 meteorological centers and meteorological research establishments make BUFR software available under free licenses. 
-The MSC provides libECBUFR, a BUFR library with user tools for decoding or encoding BUFR to and from ASCII : https://launchpad.net/libecbufr
+The MSC provides libECBUFR, a BUFR library with user tools for decoding or encoding BUFR to and from ASCII : https://github.com/ECCC-MSC/libecbufr
 Once libECBUFR is correctly installed, the following command line (under Unix/Linux/OSX) will provide a human-readable dump of the BUFR TEMP data: 
 bufr_decoder -inbufr data.bufr 
 where data.bufr is a BUFR file.
 
 Much useful information on installing and running libECBUFR is available in the FAQ list located at: 
-[https://answers.launchpad.net/libecbufr/+faqs](https://answers.launchpad.net/libecbufr/+faqs)
+[https://github.com/ECCC-MSC/libecbufr/wiki/FAQ](https://github.com/ECCC-MSC/libecbufr/wiki/FAQ)
 
 ## Bulletin search script
 
