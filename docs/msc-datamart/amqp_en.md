@@ -9,7 +9,7 @@
 
 ## About
 
-The HTTP Open Data server called 'MSC Datamart' is a real-time on-demand download service.  The user must, in effect, act to retrieve particular data, and the request will only be successful if the data was previously published on the server.  
+The HTTPS Open Data server called 'MSC Datamart' is a real-time on-demand download service.  The user must, in effect, act to retrieve particular data, and the request will only be successful if the data was previously published on the server.  
 
 The exact time of publication of the data on the MSC Datamart is more or less predictable: a new weather warning can appear at any time, while other data are produced on a fairly regular schedule (but still subject to occasional interruptions).  However, it may be important for some applications that data is obtained as soon as it is published.   
 

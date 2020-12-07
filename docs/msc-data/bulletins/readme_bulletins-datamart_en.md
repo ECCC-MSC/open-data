@@ -12,7 +12,7 @@ This page describes the data of the [alphanumerical bulletins](readme_bulletins_
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. 
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. 
 
 The bulletin files are available at the following address :
 
