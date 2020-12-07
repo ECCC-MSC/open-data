@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add AQHI changelog
 * improvements:
     * Remove changelog when not available and fix "change log" to "changelog"
+    * Updated links for libECBUFR
 * bug fixes:
     * None
 
