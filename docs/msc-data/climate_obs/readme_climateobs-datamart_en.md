@@ -12,7 +12,7 @@ This document describes three climate data sets, climate normal, daily climate o
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The  climate  data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser.
+The  climate  data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser.
 
 The data can be accessed at the following URLs :
 

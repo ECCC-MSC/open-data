@@ -12,7 +12,7 @@ Ce document décrit les trois jeux de données climatiques, normales climatiques
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données climatiques sont disponibles via le protocole HTTP. Il est possible de les télécharger avec un fureteur standard.
+Les données climatiques sont disponibles via le protocole HTTPS. Il est possible de les télécharger avec un fureteur standard.
 
 Les fichiers se trouvent à l'adresse suivante :
 
