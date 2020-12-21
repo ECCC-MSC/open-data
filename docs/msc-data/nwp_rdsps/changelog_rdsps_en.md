@@ -6,6 +6,10 @@
 
 # Chronology of changes to the Regional Deterministic Storm-surge Prediction System (RDSPS)
 
+## Monday December 21, 2020
+
+Update of post processing procdures to include prediction of tidal heights using Webtide and estimation of total water level (SSH) as the linear summation of tidal heights (SSHT) and storm surge (ETAS).
+
 ## Tuesday January 21, 2020
 
 ### Upgrade to Version 1.7.0 of the RDSPS adapted to the New High Performance Computing Infrastructure.
