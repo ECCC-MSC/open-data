@@ -37,7 +37,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Spécification technique de la grille continentale
 
-* Grille polaire stéréographique
+* __Grille polaire stéréographique__
 
 ![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
@@ -52,7 +52,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 | coordonnées (i; j) du Pôle Nord | (840.0, 2296.0) |
 | orientation de la grille (par rapport à l’axe des j) | -108.0° |
 
-* Grille lat-lon tournée
+* __Grille lat-lon tournée__
 
 ![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
 
