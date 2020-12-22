@@ -32,11 +32,8 @@ Un historique de 48 heures des données est conservé dans chaque répertoire.
 
 __Notes__: 
 
-* Chacun de ces produits est détaillé dans la documentation d'Environnement et changement climatique Canada à l'adresse suivante :
-
-https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
-
-* Le produit DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) utilise la double polarisation et est donc disponible uniquement pour les radars de bande S. Ce produit constitue une valeur ajoutée par rapport au produit CAPPI puisqu'il bénéficie d'un nettoyage complet des interférences radiales. Il est utilisé dans la composite radar nord-américaine disponible dans MétéoCan, l'application mobile officielle d'ECCC [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
+* Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et changement climatique Canada.
+* Le produit DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) utilise la double polarisation et est donc disponible uniquement pour les radars de bande S. Ce produit constitue une valeur ajoutée par rapport au produit CAPPI puisqu'il bénéficie d'un nettoyage complet des interférences radiales. Il est utilisé dans la composite radar nord-américaine disponible dans [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html), l'application mobile officielle d'ECCC.
 )
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
