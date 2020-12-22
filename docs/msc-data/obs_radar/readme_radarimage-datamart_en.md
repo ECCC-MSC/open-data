@@ -18,19 +18,20 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The radar images are available at the following address:
 
-[https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}/{filename}.{file_extension}](https://dd.weather.gc.ca/radar/)
+[https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}](https://dd.weather.gc.ca/radar/)
 
 where:
 
-* PRODUCT = [24_HR_ACCUM | CAPPI | PRECIPET]
+* PRODUCT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
 * FORMAT = [GIF] (other formats may appear in the future)
-* RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
+* STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
 
 The past 48 hours of data is available in each directory.
 
 __Notes__: 
 
 * Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.
+* The DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) product uses dual polarization and is therefore only available for S-band radars. This product is an added value compared to CAPPI product since it benefits from a complete cleaning of radial interference. It is used in the North American radar composite available in [WeatherCan](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html), the official mobile application of ECCC.
 * A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) is available. This list will be updated regularly.
 
 ## Filename nomenclature
@@ -104,6 +105,15 @@ Shows the rain accumulation, in mm, over the last 24hr period. The product is av
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
+
+* __DPQPE__
+
+The DPQPE files have the following nomenclature:
+
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Rain.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Snow.gif
+
+ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
 ## About the new dual-pol S-Band radars
 

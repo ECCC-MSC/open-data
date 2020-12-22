@@ -20,13 +20,13 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les images radar se trouvent à l'adresse :
 
-[https://dd.meteo.gc.ca/radar/{PRODUIT}/{FORMAT}/{STATION_RADAR}/{nom_du_fichier}.{extension}](https://dd.meteo.gc.ca/radar/)
+[https://dd.meteo.gc.ca/radar/{PRODUIT}/{FORMAT}/{STATION_RADAR}](https://dd.meteo.gc.ca/radar/)
 
 où :
 
-* PRODUIT = [24_HR_ACCUM | CAPPI | PRECIPET]
+* PRODUIT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
 * FORMAT  = [GIF] (d'autres formats peuvent apparaître dans le futur)
-* RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous).
+* STATION_RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous).
 
 Un historique de 48 heures des données est conservé dans chaque répertoire.
 
@@ -36,6 +36,8 @@ __Notes__:
 
 https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1 
 
+* Le produit DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) utilise la double polarisation et est donc disponible uniquement pour les radars de bande S. Ce produit constitue une valeur ajoutée par rapport au produit CAPPI puisqu'il bénéficie d'un nettoyage complet des interférences radiales. Il est utilisé dans la composite radar nord-américaine disponible dans MétéoCan, l'application mobile officielle d'ECCC [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
+)
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
 ## Nomenclature des noms de fichiers 
@@ -105,6 +107,15 @@ Représente l'accumulation de précipitation en mm tel qu'observée par le radar
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
+
+* __DPQPE__
+  
+La nomenclature des fichiers DPQPE est la suivante :
+
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Rain.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Snow.gif
+
+ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
 ## Au sujet des nouveaux radars à double polarisation S-Band
 
