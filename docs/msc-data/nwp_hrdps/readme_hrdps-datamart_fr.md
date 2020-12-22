@@ -19,13 +19,15 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à l'adresse suivante :
+Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps)
+* Grilles polaires stéréographiques : [https://dd.meteo.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps)
+* Grille lat-lon tournée : [https://dd.meteo.gc.ca/model_hrdps/continental/{res}/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/continental/2.5km/grib2)
 
 où :
 
 * __domain__ : Chaîne de ccaractères indiquant le domaine représenté [continental, north, east, prairies, west, maritimes]
+* __res__ : Résolution horizontale [2.5km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18], pour tous les domaines sauf le domaine Nord [00, 12]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
@@ -34,6 +36,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 ## Domaines disponibles
 
 ### Spécification technique de la grille continentale
+
+* Grille polaire stéréographique
 
 ![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
@@ -47,6 +51,21 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 | coordonnées du premier point de grille | 35.6073° N  128.0813° W |
 | coordonnées (i; j) du Pôle Nord | (840.0, 2296.0) |
 | orientation de la grille (par rapport à l’axe des j) | -108.0° |
+
+* Grille lat-lon tournée
+
+![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
+
+Valeurs données aux paramètres de la grille lat-lon tournée à haute résolution.
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 2540 |
+| nj | 1290 | 
+| résolution à 60° N | 2.5 km |
+| coordonnées du premier point de grille | 12°S 15°W |
+
+__Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ### Spécification technique de la grille nord (expérimental)
 
@@ -130,6 +149,8 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
 
+### Grille polaire stéréographique
+
 Les fichiers ont la nomenclature suivante :
 
 CMC_hrdps_domain_Variable_TypedeNiveau_Niveau_ps2.5km_YYYYMMDDHH_Phhh-mm.grib2
@@ -154,6 +175,31 @@ CMC_hrdps_east_DEPR_ISBL_0175_ps2.5km_2011092412_P003-00.grib2
 
 Le fichier a été créé par le CMC et contient une prévision du Système haute résolution de prévision déterministe. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 175 mb (ISBL_0175), sur une grille polaire stéréographique à une résolution de 2,5 km (ps2.5km). Il débute le 24 septembre 2011 à 12Z (2011092412). Il contient l’heure de prévision 03 (P003) et les minutes de prévision (00) en format GRIB2 (.grib2).
 
+### Grille lat-lon tournée 
+
+Les fichiers ont la nomenclature suivante :
+
+{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+
+où :
+
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Délimiteur temporel selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __Z__ : Fuseau horaire (heure UTC)
+* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
+* __HRDPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe.
+* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD).
+* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, EATM pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface]
+* __Grille__ : Grille horizontale [RLatLon]
+* __resolution__ : 0.0225. Signifie une résolution de 0.0225°(environ 2.5km) dans les directions longitudinale et latitudinale
+* __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 024/030/042/048].
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+
+Exemple de nom de fichier :
+20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
+
+Le fichier a été créé par le MSC et contient une prévision du Système haute résolution de prévision déterministe. Il contient les rafales de vent (GIUST), à 10 mètres au-dessus du sol (AGL-10m), sur une lat-lon tournée (RLatLon) à une résolution de 2,5 km (0.0225). La prévision débute le 23 novembre 2020 à 00Z (20201123T00Z) et contient l’heure de prévision 12 (P012) en format GRIB2 (grib2).
 
 ## Niveaux
 
@@ -183,7 +229,7 @@ Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines va
 * [Prévisions à 000h](https://meteo.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_f.html)
 * [Prévisions pour les heures suivant 000h](https://meteo.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_f.html)
 
-## À propos du masque No-Data
+## À propos du masque No-Data sur la grille polaire stéréographique continentale
 
 Depuis le 18 octobre 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
