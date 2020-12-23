@@ -31,7 +31,7 @@ The past 48 hours of data is available in each directory.
 __Notes__: 
 
 * Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.
-* The DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) product uses dual polarization and is therefore only available for S-band radars. This product is an added value compared to CAPPI product since it benefits from a complete cleaning of radial interference. It is used in the North American radar composite available in [WeatherCan](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html), the official mobile application of ECCC.
+* The Dual Polarization Quantitative Precipitation Estimation (DPQPE) product is only available for S-band radars. It is a two-dimensional representation of radar estimated precipitation rate at the lowest sweep of the radar scan (0.4 degrees elevation for the majority of the S-Band radars). So, the estimated precipitation rate is as close as possible to the earth’s surface. DPQPE product is based, among others, on a series of dual-pol processing steps (quality control) to remove, non-weather artifacts from the raw data (volume scans). It is provided in mm/hr for rainfall rates and cm/hr for snowfall rates. This product is used in our high-resolution North American radar composite available in [WeatherCan](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html), the official mobile application of ECCC.
 * A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) is available. This list will be updated regularly.
 
 ## Filename nomenclature
@@ -98,22 +98,34 @@ The CAPPI files have the following nomenclature:
 
 ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
 
-* __24_HR_ACCUM__ (based on the PRECIPET product)
+* __DPQPE__
 
-Shows the rain accumulation, in mm, over the last 24hr period. The product is available every 10 minutes, and for the last 48 hr.
+The DPQPE files have the following nomenclature:
+
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif
+
+ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
+
+* __24_HR_ACCUM__ 
+
+Shows the rain accumulation, in mm, over the last 24hr period. 
+
+** Based on PRECIPET 
+
+The product is available every 10 minutes, and for the last 48 hr.
    
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 
-* __DPQPE__
+** Based on DPQPE
 
-The DPQPE files have the following nomenclature:
+The product is available every 6 minutes, and for the last 48 hr.
+   
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-Accum24h_XXXXX.gif
 
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Rain.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Snow.gif
-
-ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
+ex: 20201106T1050Z_MSC_Radar-DPQPE-Accum24h_CASBE.gif
 
 ## About the new dual-pol S-Band radars
 
