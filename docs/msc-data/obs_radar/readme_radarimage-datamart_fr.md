@@ -109,7 +109,7 @@ ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
 Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures.
 
-** Basée sur le produit PRECIPET
+__Basée sur le produit PRECIPET__
 
 Ce produit est disponible toutes les 10 minutes.
   
@@ -117,7 +117,7 @@ Ce produit est disponible toutes les 10 minutes.
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 
-** Basée sur le produit DPQPE
+__Basée sur le produit DPQPE__
  
 Ce produit est disponible toutes les 6 minutes.
 

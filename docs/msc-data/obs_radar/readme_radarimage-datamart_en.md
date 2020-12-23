@@ -111,7 +111,7 @@ ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
 Shows the rain accumulation, in mm, over the last 24hr period. 
 
-** Based on PRECIPET 
+__Based on PRECIPET__
 
 The product is available every 10 minutes, and for the last 48 hr.
    
@@ -119,7 +119,7 @@ The product is available every 10 minutes, and for the last 48 hr.
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 
-** Based on DPQPE
+__Based on DPQPE__
 
 The product is available every 6 minutes, and for the last 48 hr.
    
