@@ -41,7 +41,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
+{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc
 
 où :
 
@@ -49,7 +49,7 @@ où :
 * __T__ : Délimiteur temporel selon les normes ISO8601
 * __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
-* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
+* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDSPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe d'onde de tempête sur le domaine nord ouest
 * __VAR__ : Type de variable contenue dans le fichier [ETAS]
 * __LVL__ : Niveau vertical [SFC, pour la surface]

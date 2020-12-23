@@ -6,9 +6,13 @@
 
 # Chronology of changes to the Regional Deterministic Storm-surge Prediction System (RDSPS)
 
-## Monday December 21, 2020
+## ??????? January ??, 2021
 
-Update of post processing procdures to include prediction of tidal heights using Webtide and estimation of total water level (SSH) as the linear summation of tidal heights (SSHT) and storm surge (ETAS).
+### Upgrade to Version 1.8.0 of the Regional Deterministic Storm-surge Prediction System (RDSPS) at the Canadian Meteorological Centre (CMC)
+
+Addition of a post processing component to provide a prediction of tidal heights using Webtide.
+
+For more information, please consult the technical specifications document for RDSPS v1.8.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDSPS_1.8.0_e.pdf).
 
 ## Tuesday January 21, 2020
 
