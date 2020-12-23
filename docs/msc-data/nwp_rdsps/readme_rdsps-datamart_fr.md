@@ -67,10 +67,11 @@ Exemple de fichier :
 La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une brève description, une abréviation alphabétique, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure.
 
 
-| NetCDF |   Description courte |                        Abr.|   Niveau | Unités|
-|--------|--------|--------|--------|--------|
-| etas   |  Onde de tempête     |                      ETAS  |  SFC | m |
-
+|  NetCDF  |   Description courte |                        Abr.|   Niveau | Unités|
+|----------|--------|--------|--------|--------|
+| etas     |  Onde de tempête                 |         ETAS  |  SFC | m |
+| ssh_tide |  Hauteur d'eau tidale             |         SSHT  |  SFC | m |
+| zos      |  Hauteur de la surface de la mer  |          SSH  |  SFC | m |
 
 ## Support
 

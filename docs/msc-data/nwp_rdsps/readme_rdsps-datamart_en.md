@@ -66,11 +66,11 @@ Example of file name:
 
 The list below provides, for each variable: a short description, an alphabetical abbreviation, the levels available for the parameter, and measurement units.
 
-|NetCDF  | Short description|                          Abbr.|  Level|  Units|
-|--------|---------------|----------|----------|----------|
-|etas    |Storm surge                            |    ETAS|   SFC|    m|
-|ssht    |Tidal heights                          |    SSHT|   SFC|    m|
-|etas    |Total Water Level (Sea surface height) |     SSH|   SFC|    m|
+|NetCDF   | Short description|                          Abbr.|  Level|  Units|
+|---------|---------------|----------|----------|----------|
+|etas     |Storm surge                            |    ETAS|   SFC|    m|
+|ssh_tide |Tidal heights                          |    SSHT|   SFC|    m|
+|zos      |Total Water Level (Sea surface height) |     SSH|   SFC|    m|
 
 ## Support
 
