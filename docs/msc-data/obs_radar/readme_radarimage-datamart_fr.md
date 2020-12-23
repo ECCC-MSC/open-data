@@ -33,7 +33,7 @@ Un historique de 48 heures des données est conservé dans chaque répertoire.
 __Notes__: 
 
 * Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et changement climatique Canada.
-* Le produit DPQPE (*Dual-Pol Quantitative Precipitation Estimate*) utilise la double polarisation et est donc disponible uniquement pour les radars de bande S. Ce produit constitue une valeur ajoutée par rapport au produit CAPPI puisqu'il bénéficie d'un nettoyage complet des interférences radiales. Il est utilisé dans la composite radar nord-américaine disponible dans [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html), l'application mobile officielle d'ECCC.
+* Le produit d'estimation quantitative des précipitations à double polarisation (DPQPE) est disponible uniquement pour les radars de bande S. Il s'agit d'une représentation bidimensionnelle du taux de précipitation estimé par le plus bas du balayage du radar (angle d’élévation de 0.4 degré pour la majorité des radars en bande S). Ainsi, le taux de précipitation estimé est aussi proche que possible de la surface de la terre. Le produit DPQPE est basé, entre autres, sur une série d'étapes de traitement polarimétrique (contrôle qualité) pour éliminer les artefacts non météorologiques des données brutes (balayages volumétriques). Il est fourni en mm/h pour la pluie et cm/h pour la neige. Ce produit est utilisé dans notre composite radar nord-américaine haute résolution disponible dans [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html), l'application mobile officielle d'ECCC.
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
 ## Nomenclature des noms de fichiers 
@@ -96,22 +96,34 @@ La nomenclature des fichiers CAPPI est la suivante :
 
 ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
 
-* __24_HR_ACCUM__ (basées sur le produit PRECIPET)
+* __DPQPE__
+  
+La nomenclature des fichiers DPQPE est la suivante :
+
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif
+
+ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
+
+* __24_HR_ACCUM__ 
 
 Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures.
+
+__Basée sur le produit PRECIPET__
+
+Ce produit est disponible toutes les 10 minutes.
   
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
 ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
 
-* __DPQPE__
-  
-La nomenclature des fichiers DPQPE est la suivante :
+__Basée sur le produit DPQPE__
+ 
+Ce produit est disponible toutes les 6 minutes.
 
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Rain.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_CASBE_Snow.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-Accum24h_XXXXX.gif
 
-ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
+ex: 20201106T1050Z_MSC_Radar-DPQPE-Accum24h_CASBE.gif
 
 ## Au sujet des nouveaux radars à double polarisation S-Band
 
