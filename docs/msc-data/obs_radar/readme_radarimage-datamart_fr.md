@@ -111,7 +111,7 @@ Représente l'accumulation de précipitation en mm tel qu'observée par le radar
 
 __Basée sur le produit PRECIPET__
 
-Ce produit est disponible toutes les 10 minutes.
+Ce produit est disponible toutes les 10 minutes pour les radars C-Band et toutes les 6 minutes pour les radars S-Band.
   
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
