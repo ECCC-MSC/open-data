@@ -113,7 +113,7 @@ Shows the rain accumulation, in mm, over the last 24hr period.
 
 __Based on PRECIPET__
 
-The product is available every 10 minutes, and for the last 48 hr.
+The product is available for the last 48 hr, every 10 minutes for C-Band radars and every 6 minutes for S-Band radars.
    
 * YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
 
