@@ -6,6 +6,10 @@
 
 # Chronology of changes to the Regional Ensemble Storm-surge Prediction System (RESPS)
 
+## Tuesday November 24, 2020
+
+### Update to 1.4.0: Include total water level forecasts based on perturbed tidal forcing, extend forecast range to 16 days
+
 ## Tuesday January 21, 2020
 
 ### Upgrade to Version 1.3.0 of the RESPS adapted to the New High Performance Computing Infrastructure.
