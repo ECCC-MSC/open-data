@@ -1,13 +1,13 @@
 
-[In English](readme_rdsps-datamart_en.md)
+[In English](readme_resps-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > [SRPEOT](readme_rdsps_fr.md) > SRPEOT sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > [SRPEOT](readme_resps_fr.md) > SRPEOT sur le Datamart du SMC
 
-# Données NetCDF du Système régional de prévision déterministe d'onde de tempête (SRPEOT)
+# Données NetCDF du Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
-Cette page décrit les données [Système régional de prévision déterministe d'onde de tempête (SRPEOT)](readme_rdsps_fr.md) disponibles en format NetCDF.
+Cette page décrit les données [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](readme_resps_fr.md) disponibles en format NetCDF.
 
 ## Adresse des données
 
@@ -17,7 +17,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à adresse suivante :
 
-* [https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf/{HH}/](https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf)
+* [https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf)
 
 où :
 
@@ -50,7 +50,7 @@ où :
 * __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
-* __RDSPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe d'onde de tempête sur le domaine nord ouest
+* __RESPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble d'onde de tempête sur le domaine nord ouest
 * __VAR__ : Type de variable contenue dans le fichier [ETAS]
 * __LVL__ : Niveau vertical [SFC, pour la surface]
 * __Grille__ : Grille horizontale lat-lon [LatLon]

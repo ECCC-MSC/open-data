@@ -1,4 +1,4 @@
-[En français](readme_rdsps_fr.md)
+[En français](readme_resps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

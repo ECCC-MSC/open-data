@@ -1,4 +1,4 @@
-[En français](readme_rdsps-datamart_fr.md)
+[En français](readme_resps-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -16,7 +16,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following address :
 
-* [https://dd.weather.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.weather.gc.ca/model_resps/atlantic-nw/netcdf)
+* [https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf)
 
 where :
 
@@ -50,7 +50,7 @@ Where:
 * __HH__: UTC run time [00, 12]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
-* __RESPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Deterministic Storm Surge Prediction System over the North-West domain
+* __RESPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Ensemble Storm Surge Prediction System over the North-West domain
 * __VAR__ : Variable type included in the file [ETAS]
 * __LVL__ : Vertical level [SFC for the surface]
 * __Grille__ : Horizontal grid lat-lon [LatLon]
