@@ -20,7 +20,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* Polar stereographic grids: [https://dd.weather.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps)
+* Polar-stereographic grids: [https://dd.weather.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps)
 * Rotated lat-lon grid: [https://dd.weather.gc.ca/model_hrdps/continental/{res}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental/2.5km/grib2)
 
 where :
@@ -34,9 +34,9 @@ A 24-hour history is stored in this directory.
 
 ## Available Domains 
 
-### Continental grid specifications
+### Continental grids specifications
 
-* __Polar stereographic grid__
+* __Polar-stereographic grid__
 
 ![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
@@ -146,7 +146,7 @@ Table lists the values of various parameters of the Maritime polar-stereographic
 
 NOTE: ALL HOURS ARE IN UTC.
 
-### Stereographic polar grid
+### Polar-stereographic grid
 
 The files have the following nomenclature :
 
@@ -188,7 +188,7 @@ where :
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __HRDPS__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
 * __VAR__ : Variable type included in the file (ex: UGRD)
-* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 et 20cm under surface]
+* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface]
 * __Grille__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
 * __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 024/030/042/048]
@@ -198,7 +198,7 @@ Example of filename :
 
 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
 
-This file has been produced by the MSC and contains the data of the High Resolution Deterministic Prediction System. It contains wind gust (GUST) at 10m above ground (AGL-10m), on a 2.5km (0.0225) resolution rotated lat-lon grid. The forecast starts on November 23th at 00Z (20201123T00Z) and contains forcast hour 12 (P012) in GRIB2 format (grib2).
+This file has been produced by the MSC and contains the data of the High Resolution Deterministic Prediction System. It contains wind gust (GUST) at 10m above ground (AGL-10m), on a 2.5km (0.0225) resolution rotated lat-lon grid. The forecast starts on November 23th at 00Z (20201123T00Z) and contains forecast hour 12 (P012) in GRIB2 format (grib2).
 
 ## Levels
 
@@ -228,14 +228,13 @@ Warning : the tables below are not up to date (to come), some variables are miss
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
 
-## About the no-data mask for the Continental polar stereographic grid
+## About the no-data mask for the Continental polar-stereographic grid
 
 Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 
 If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
-
 
 ## Announcements from the dd_info mailing list 
 
