@@ -18,13 +18,15 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URL:
+The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps)
+* Polar-stereographic grids: [https://dd.weather.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps)
+* Rotated lat-lon grid: [https://dd.weather.gc.ca/model_hrdps/continental/{res}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental/2.5km/grib2)
 
 where :
 
 * __domain__ : Constant string indicating the available domain [continental, north, east, prairies, west, maritimes]
+* __res__ : Horizontal resolution [2.5km]
 * __HH__ : Model run start, in UTC [00, 06, 12, 18], except the North domain [00, 12]
 * __hhh__ : Forecast hour [000, 001, 002, ..., 048] 
 
@@ -32,7 +34,9 @@ A 24-hour history is stored in this directory.
 
 ## Available Domains 
 
-### Continental grid specifications
+### Continental grids specifications
+
+* __Polar-stereographic grid__
 
 ![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
 
@@ -40,12 +44,27 @@ Table lists the values of various parameters of the Continental polar-stereograp
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
+| ni | 2576 |
+| nj | 1456 | 
 | resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 67.9601° N  140.7611° W |
-| (i,j) coordinate of North Pole | (389.0, 842.0) |
-| grid orientation (with respect to j axis) | -116.0° |
+| coordinate of first grid point | 35.6073° N  128.0813° W |
+| (i,j) coordinate of North Pole | (840.0, 2296.0) |
+| grid orientation (with respect to j axis) | -108.0° |
+
+* __Rotated lat-lon grid__
+
+![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
+
+Table lists the values of various parameters of the rotated lat-lon Continental grid.
+
+| Parameter | Valeur |
+| ------ | ------ |
+| ni | 2540 |
+| nj | 1290 | 
+| resolution at 60° N | 2.5 km |
+| coordinate of the first grid point | 12°S 15°W |
+
+__Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
 ### North (experimental) grid specifications
 
@@ -55,12 +74,12 @@ Table lists the values of various parameters of the North polar-stereographic gr
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 765 |
-| nj | 570 | 
+| ni | 1465 |
+| nj | 825 | 
 | resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 38.6985° N  91.3395° W |
-| (i,j) coordinate of North Pole | (450.0, 2240.0) |
-| grid orientation (with respect to j axis) | -80.0° |
+| coordinate of first grid point | 67.9601° N  140.7611° W |
+| (i,j) coordinate of North Pole | (389.0, 842.0) |
+| grid orientation (with respect to j axis) | -116.0° |
 
 ### East grid specifications
 
@@ -127,6 +146,8 @@ Table lists the values of various parameters of the Maritime polar-stereographic
 
 NOTE: ALL HOURS ARE IN UTC.
 
+### Polar-stereographic grid
+
 The files have the following nomenclature :
 
 CMC_hrdps_domain_Variable_LevelType_level_ps2.5km_YYYYMMDDHH_Phhh-mm.grib2
@@ -151,6 +172,33 @@ Example of file name :
 CMC_hrdps_east_DEPR_ISBL_0175_ps2.5km_2011092412_P003-00.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the High Resolution Deterministic Prediction System. The data in the file start on September 24th 2011 at 12Z (2011092412). It contains the dew point depression (DEPR) at the isobaric level 175 mb (ISBL_0175) on a polar-stereographic at 2.5 km resolution (ps2.5km) for the forecast hour 03 (P003) and 00 minutes (-00) in GRIB2 format (.grib2).
+
+### Rotated lat-lon grid
+
+The files have the following nomenclature :
+
+{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+
+where :
+
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to ISO8601 norms
+* __HH__ : UTC run time [00, 12]
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __HRDPS__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
+* __VAR__ : Variable type included in the file (ex: UGRD)
+* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface]
+* __Grille__ : Horizontal grid [RLatLon]
+* __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
+* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 024/030/042/048]
+* __grib2__ : Constant string indicating the GRIB2 format is used
+
+Example of filename : 
+
+20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
+
+This file has been produced by the MSC and contains the data of the High Resolution Deterministic Prediction System. It contains wind gust (GUST) at 10m above ground (AGL-10m), on a 2.5km (0.0225) resolution rotated lat-lon grid. The forecast starts on November 23th at 00Z (20201123T00Z) and contains forecast hour 12 (P012) in GRIB2 format (grib2).
 
 ## Levels
 
@@ -180,14 +228,13 @@ Warning : the tables below are not up to date (to come), some variables are miss
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
 
-## About the No-data mask
+## About the no-data mask for the Continental polar-stereographic grid
 
 Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 
 If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
-
 
 ## Announcements from the dd_info mailing list 
 

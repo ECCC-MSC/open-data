@@ -26,7 +26,7 @@ Les données sont accessibles aux adresses suivantes :
 
 où :
 
-* __domain__ : Chaîne de ccaractères indiquant le domaine représenté [continental, north, east, prairies, west, maritimes]
+* __domain__ : Chaîne de caractères indiquant le domaine représenté [continental, north, east, prairies, west, maritimes]
 * __res__ : Résolution horizontale [2.5km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18], pour tous les domaines sauf le domaine Nord [00, 12]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
@@ -35,7 +35,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Domaines disponibles
 
-### Spécification technique de la grille continentale
+### Spécification technique des grilles continentales
 
 * __Grille polaire stéréographique__
 
@@ -199,7 +199,7 @@ où :
 Exemple de nom de fichier :
 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
 
-Le fichier a été créé par le MSC et contient une prévision du Système haute résolution de prévision déterministe. Il contient les rafales de vent (GIUST), à 10 mètres au-dessus du sol (AGL-10m), sur une lat-lon tournée (RLatLon) à une résolution de 2,5 km (0.0225). La prévision débute le 23 novembre 2020 à 00Z (20201123T00Z) et contient l’heure de prévision 12 (P012) en format GRIB2 (grib2).
+Le fichier a été créé par le MSC et contient une prévision du Système haute résolution de prévision déterministe. Il contient les rafales de vent (GUST), à 10 mètres au-dessus du sol (AGL-10m), sur une lat-lon tournée (RLatLon) à une résolution de 2,5 km (0.0225). La prévision débute le 23 novembre 2020 à 00Z (20201123T00Z) et contient l’heure de prévision 12 (P012) en format GRIB2 (grib2).
 
 ## Niveaux
 
