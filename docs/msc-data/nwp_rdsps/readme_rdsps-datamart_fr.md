@@ -1,4 +1,3 @@
-
 [In English](readme_rdsps-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
@@ -51,7 +50,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDSPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe d'onde de tempête sur le domaine nord ouest
-* __VAR__ : Type de variable contenue dans le fichier [ETAS]
+* __VAR__ : Variables contenues dans le fichier [ETAS, SSHT, SSH]
 * __LVL__ : Niveau vertical [SFC, pour la surface]
 * __Grille__ : Grille horizontale lat-lon [LatLon]
 * __resolution__ : 0.033x0.033. Signifie une résolution de 0.033° dans les directions longitudinale et latitudinale
@@ -70,7 +69,7 @@ La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une br
 |  NetCDF  |   Description courte |                        Abr.|   Niveau | Unités|
 |----------|--------|--------|--------|--------|
 | etas     |  Onde de tempête                 |         ETAS  |  SFC | m |
-| ssh_tide |  Hauteur d'eau tidale             |         SSHT  |  SFC | m |
+| ssh_tide |  Hauteur d'eau associée à la marée            |         SSHT  |  SFC | m |
 | zos      |  Hauteur de la surface de la mer  |          SSH  |  SFC | m |
 
 ## Support
