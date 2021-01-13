@@ -6,9 +6,17 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe d’onde de tempête (SRPDOT)
 
+## Le ????? ?? janvier 2021
+
+### Mise à jour vers la version 1.8.0 du Système régional de prévision déterministe d’onde de tempête (SRPDOT) au Centre météorologique canadien (CMC)
+
+Ajout d'une composante de post-traitement pour fournir une prévision de niveau d'eau associé à la marée produits par Webtide.
+
+Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SRPDOT 1.8.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDSPS_1.8.0_f.pdf).
+
 ## Le mardi 21 janvier 2020
 
-### Mise à jour du SRPDOT à la version 1.7.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SRPDOT à la version 1.7.0 suite à la nouvelle infrastructure de calcul haute performance.
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
