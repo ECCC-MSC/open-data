@@ -10,12 +10,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.21
 
-* date: TBD
+* date: 2021-01-13
 * announcements:
     * Not announced
 * new content:
     * Add vertical levels for RDPS, GDPS and HRDPS
     * Add AQHI changelog
+    * Update HRDPS doc (new rotated lat-lon grid)
+    * Update RDSPS doc (add new variables)
+    * Update radar imagery doc (add new DPQPE GIF images)
 * improvements:
     * Remove changelog when not available and fix "change log" to "changelog"
     * Updated links for libECBUFR
