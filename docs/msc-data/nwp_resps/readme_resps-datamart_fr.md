@@ -1,4 +1,3 @@
-
 [In English](readme_resps-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
@@ -15,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les données sont accessibles à adresse suivante :
+Les données expérimentales sont accessibles pour le moment à l'adresse suivante :
 
 * [https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf)
 
@@ -51,7 +50,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
 * __RESPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble d'onde de tempête sur le domaine nord ouest
-* __VAR__ : Type de variable contenue dans le fichier [ETAS]
+* __VAR__ : Type de variable contenue dans le fichier [ETAS, SSH]
 * __LVL__ : Niveau vertical [SFC, pour la surface]
 * __Grille__ : Grille horizontale lat-lon [LatLon]
 * __resolution__ : 0.083x0.083. Signifie une résolution de 0.083° dans les directions longitudinale et latitudinale
