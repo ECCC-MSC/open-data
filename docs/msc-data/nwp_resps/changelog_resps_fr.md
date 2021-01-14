@@ -6,6 +6,10 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
+## Le mardi 24 novembre, 2020
+
+### Mise à jour du SRPEOT à la version 1.4.0: Ajout de la prévision du niveau d'eau total, extension de la durée de prévision à 16 jours.
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jour du SRPEOT à la version 1.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
