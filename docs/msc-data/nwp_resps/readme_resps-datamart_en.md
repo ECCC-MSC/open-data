@@ -51,7 +51,7 @@ Where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RESPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Ensemble Storm Surge Prediction System over the North-West domain
-* __VAR__ : Variable type included in the file [ETAS]
+* __VAR__ : Variables included in the file [ETAS, SSH]
 * __LVL__ : Vertical level [SFC for the surface]
 * __Grille__ : Horizontal grid lat-lon [LatLon]
 * __Resolution__ : 0.083x0.083. Indicating resolution in degreee 0.083x0.083 in latitude and longitude directions
