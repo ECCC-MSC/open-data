@@ -123,9 +123,9 @@ __Based on DPQPE__
 
 The product is available every 6 minutes, and for the last 48 hr.
    
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-Accum24h_XXXXX.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-XXXXX_Accum24h.gif
 
-ex: 20201106T1050Z_MSC_Radar-DPQPE-Accum24h_CASBE.gif
+ex: 20201106T1050Z_MSC_Radar-DPQPE-CASBE_Accum24h.gif
 
 ## About the new dual-pol S-Band radars
 
