@@ -121,9 +121,9 @@ __Basée sur le produit DPQPE__
  
 Ce produit est disponible toutes les 6 minutes.
 
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-Accum24h_XXXXX.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Accum24h.gif
 
-ex: 20201106T1050Z_MSC_Radar-DPQPE-Accum24h_CASBE.gif
+ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Accum24h.gif
 
 ## Au sujet des nouveaux radars à double polarisation S-Band
 
