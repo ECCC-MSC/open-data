@@ -141,7 +141,7 @@ Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https
 
 Occasionally, NWP model data are late or even absent from our data dissemination services. To find out if this delay or absence is due to a production problem, you can consult the AACN01 CWAO bulletins.  These are bulletins issued by the CCPEC as required to inform MSC offices and other clients of any problems that may disrupt or delay the issuance and/or distribution of operational products.
 
-To view the latest AACN01 CWAO bulletins, you can use the [Script Search Utility](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) provided by ECCC. [Example to obtain the current AACN01 bulletins](https://dd.meteo.ec.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01). For a specific day, you can refine your search. [Example to get the information for May 19, 2020](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01&day=19&month=05&year=2020).
+To view the latest AACN01 CWAO bulletins, you can use the [Script Search Utility](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) provided by ECCC. [Example to obtain the current AACN01 bulletins](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01). For a specific day, you can refine your search. [Example to get the information for May 19, 2020](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01&day=19&month=05&year=2020).
 
 There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at ec.dps-client.ec@canada.ca and we will add you to the mailing list.
 
