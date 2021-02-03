@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Ensemble Prediction System (REPS)
 
-The Regional Ensemble Prediction System (REPS) carries out physics calculations to arrive at probabilistic predictions of atmospheric elements from the current day out to 3 days into the future. The probabilistic predictions are based on 20 ensemble members that are perturbed through their initial and boundary conditions as well as physical tendencies. A control member that is not perturbed is also available. Atmospheric elements include temperature, precipitation, cloud cover, wind speed and direction, humidity and others. This product contains raw numerical results of these calculations. Geographical coverage includes Canada and the United States. Data is available at a horizontal resolution of 15 km. Data is available for 48 vertical levels. Predictions are performed twice a day.
+The Regional Ensemble Prediction System (REPS) carries out physics calculations to arrive at probabilistic predictions of atmospheric elements from the current day out to 3 days into the future. The probabilistic predictions are based on 20 ensemble members that are perturbed through their initial and boundary conditions as well as physical tendencies. A control member that is not perturbed is also available. Atmospheric elements include temperature, precipitation, cloud cover, wind speed and direction, humidity and others. This product contains raw numerical results of these calculations. Geographical coverage includes Canada and the United States. Data is available at a horizontal resolution of 15km and 10km on 24 vertical levels. Predictions are performed four times daily.
 
 ## Access
 
