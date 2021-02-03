@@ -107,8 +107,17 @@ Exemple de noms de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLat
 
 Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Pour chaque variable, la définition, la période et la fréquence de disponibilité sont mentionnées selon la nomenclature propre à chaque ensemble de données (15km vs 10km).
 
-* __FPRATE__ : Pluie verglaçante accumulée sur une période. Ex: FPRATE-Accum-24h (15km)/ FPRATE-Accum24h (10km), pluie verglaçante accumulée sur une période de 24h
-* __HEATX__ : Humidex à 2m au-dessus du sol. Ex: HEATX_TGL_2m (15km) / HEATX_AGL-2m (10km) , humidex à 2m au-dessus du sol chaque 3h ; HEATX-Max-24h_TGL_2m (15km) / HEATX-Max24h_AGL-2m (10km), humidex maximum à 2m au-dessus du sol sur une période de 24h
+* __FPRATE__ : Pluie verglaçante accumulée sur une période. 
+    * Exemple: pluie verglaçante accumulée sur une période de 24h
+         * FPRATE-Accum-24h (grille 15km) 
+         * FPRATE-Accum24h (grille 10km) 
+* __HEATX__ : Humidex à 2m au-dessus du sol
+    * Humidex à 2m au-dessus du sol chaque 3h:
+         * HEATX_TGL_2m (grille 15km) 
+         * HEATX_AGL-2m (grille 10km) 
+    * Humidex maximum à 2m au-dessus du sol sur une période de 24h
+         * HEATX-Max-24h_TGL_2m (grille 15km) 
+         * HEATX-Max24h_AGL-2m (grille 10km), 
 * __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum-12h (15km) / IPRATE-Accum12h (10km), grésil accumulé sur une période de 12h
 * __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum-6h (15km) / RPRATE-Accum6h (10km), pluie accumulée sur une période de 6h
 * __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum-24h (15km)/ SPRATE-Accum24h (10km), neige accumulée sur une période de 24h 
