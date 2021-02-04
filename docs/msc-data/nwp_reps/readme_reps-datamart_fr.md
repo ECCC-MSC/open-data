@@ -94,14 +94,16 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __REPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble
-* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD)
+* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: accumulation, maximum, minimum). 
 * __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, EATM pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.0225. Signifie une résolution de 0.0225°(environ 2.5km) dans les directions longitudinale et latitudinale
 * __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
-Exemple de noms de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_P024.grib2
+Exemple de nom de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_P024.grib2
+
+Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_P024.grib2)
 
 ## Liste des variables
 
@@ -126,7 +128,7 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __APCP0__ : Précipitations accumulées sous toutes les formes 
 * __SNOD__ : Épaisseur de la neige au sol 
 * __WEASD__ : Équivalent en eau de l'épaisseur de la neige au sol 
-* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT-ISBL-500, hauteur géopotentielle à 500hPa
+* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT_ISBL-500, hauteur géopotentielle à 500hPa
 * __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-10, humidité relative à 10hPa; RH_AGL-2m, humidité relative à 2m au-dessus du sol
 * __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-700, composante U du vent à 700hPa 
 * __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-700, composante V du vent à 700hPa 
