@@ -105,28 +105,19 @@ Exemple de noms de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLat
 
 ## Liste des variables
 
-Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Pour chaque variable, la définition, la période et la fréquence de disponibilité sont mentionnées selon la nomenclature propre à chaque ensemble de données (15km vs 10km).
+Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
 
-* __FPRATE__ : Pluie verglaçante accumulée sur une période. 
-    * Exemple: pluie verglaçante accumulée sur une période de 24h
-         * FPRATE-Accum-24h (grille 15km) 
-         * FPRATE-Accum24h (grille 10km) 
-* __HEATX__ : Humidex à 2m au-dessus du sol
-    * Humidex à 2m au-dessus du sol chaque 3h:
-         * HEATX_TGL_2m (grille 15km) 
-         * HEATX_AGL-2m (grille 10km) 
-    * Humidex maximum à 2m au-dessus du sol sur une période de 24h
-         * HEATX-Max-24h_TGL_2m (grille 15km) 
-         * HEATX-Max24h_AGL-2m (grille 10km), 
-* __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum-12h (15km) / IPRATE-Accum12h (10km), grésil accumulé sur une période de 12h
-* __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum-6h (15km) / RPRATE-Accum6h (10km), pluie accumulée sur une période de 6h
-* __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum-24h (15km)/ SPRATE-Accum24h (10km), neige accumulée sur une période de 24h 
-* __TEMP__ / __TMP__ : Température à 2m au-dessus du sol. Ex: TEMP_TGL_2m (15km) / TMP_AGL-2m (10km), température à 2m au-dessus du sol chaque 3h, TEMP-Max-24h_TGL_2m (15km) / TMP-Max24h_AGL-2m (10km), température maximum à 2m au-dessus du sol sur une période de 24h
-* __TPRATE__ : Précipitations totales accumulées sur une période. Ex: TPRATE-Max-48h (15km) / TPRATE-Max48h (10km), précipitations totales accumulées sur une période de 48h
-* __WCF__ : Facteur éolien à 2m au-dessus du sol. Ex: WCF_TGL_2m (15km) / WCF_AGL-2m (10km) , facteur éolien à 2m au-dessus du sol chaque 3h; WCF-Min-24h_TGL_2m (15km) / WCF-Min24h_AGL-2m (10km), facteur éolien minimum à 2m au-dessus du sol sur une période de 24h
-* __WIND__ : Vitesse du vent à 10m au-dessus du sol. Ex: WIND_TGL_10m (15km) / WIND_AGL-10m, vitesse du vent maximum à 10m au-dessus du sol chaque 3h; WIND-Max-12h_TGL_10m (15km) / WIND-Max12h_AGL-10m (10km), vitesse du vent maximum à 10m au-dessus du sol sur une période de 12h 
+* __FPRATE__ : Pluie verglaçante accumulée sur une période. Ex: FPRATE-Accum24h 
+* __HEATX__ : Humidex à 2m au-dessus du sol. Ex: HEATX_AGL-2m; HEATX-Max24h_AGL-2m (humidex maximum à 2m au-dessus du sol sur une période de 24h) 
+* __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum12h
+* __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum6h 
+* __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum24h 
+* __TEMP__ / __TMP__ : Température à 2m au-dessus du sol. Ex: TMP_AGL-2m; TMP-Max24h_AGL-2m (température maximum à 2m au-dessus du sol sur une période de 24h)
+* __TPRATE__ : Précipitations totales accumulées sur une période. Ex: TPRATE-Max48h
+* __WCF__ : Facteur éolien à 2m au-dessus du sol. Ex: WCF_AGL-2m; WCF-Min24h_AGL-2m (facteur éolien minimum à 2m au-dessus du sol sur une période de 24h)
+* __WIND__ : Vitesse du vent à 10m au-dessus du sol. Ex: WIND_AGL-10m; WIND-Max12h_AGL-10m (vitesse du vent maximum à 10m au-dessus du sol sur une période de 12h)
 
-Les variables pour les membres individuels dans les fichiers GRIB2 sont décrites ci-dessous selon la nomenclature propre à chaque ensemble de données (15km vs 10km). Les variables sont disponibles de 0 à 72h chaque 3h. 
+Les variables pour les membres individuels dans les fichiers GRIB2 sont décrites ci-dessous. Les variables sont disponibles de 0 à 72h chaque 3h. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
 
 * __AFRAIN__ : Précipitations accumulées sous forme de pluie verglaçante 
 * __ARAIN__ : Précipitations accumulées sous forme de pluie 
@@ -135,20 +126,20 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __APCP0__ : Précipitations accumulées sous toutes les formes 
 * __SNOD__ : Épaisseur de la neige au sol 
 * __WEASD__ : Équivalent en eau de l'épaisseur de la neige au sol 
-* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT_ISBL-0500 (15km) / HGT-ISBL-500, hauteur géopotentielle à 500hPa
-* __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-010 (15km) / RH_ISBL-10 (10km), humidité relative à 10hPa; RH_TGL_2m (15km) / RH_AGL-2m (10km), humidité relative à 2m au-dessus du sol
-* __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-0700 (15km) / UGRD_ISBL-700 (10km), composante U du vent à 700hPa 
-* __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-0700 (15km) / VGRD_ISBL-700 (10km), composante V du vent à 700hPa 
-* __TMP__ : Température à différents niveaux. Ex: TMP_TGL_2m (15km) / TMP_AGL-2m (10km), température à 2m au-dessus du sol; TMP_ISBL-0050 (15km) / TMP_ISBL-50 (10km), température à 50hPa
-* __RH__ : Humidité relative à 2m au-dessus du sol. Ex: RH_TGL_2m (15km) / RH_AGL-2m (10km)
+* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT-ISBL-500, hauteur géopotentielle à 500hPa
+* __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-10, humidité relative à 10hPa; RH_AGL-2m, humidité relative à 2m au-dessus du sol
+* __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-700, composante U du vent à 700hPa 
+* __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-700, composante V du vent à 700hPa 
+* __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-50, température à 50hPa
+* __RH__ : Humidité relative à 2m au-dessus du sol. Ex: RH_AGL-2m
 * __TCDC__ : Couverture nuageuse totale 
 * __PRES__ : Pression à la surface 
 * __MSL__ : Pression au niveau moyen de la mer 
-* __TSOIL__ : Température du sol 10cm sous la surface. Ex: TSOIL_DBLL_10cm (15km) / TSOIL_DBS-10cm (10km)
-* __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VOILSM_DBLL_10cm (15km) / VOISLM_DBS-10cm (10km)
+* __TSOIL__ : Température du sol 10cm sous la surface. Ex: TSOIL_DBS-10cm 
+* __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VOISLM_DBS-10cm 
 * __LHTFL__ : Flux net de chaleur latente à la surface 
 * __SHTFL__ : Flux net de chaleur sensible à la surface 
-* __ULWRF__ : Flux ascendant de radiation d'ondes longues au sommet nominal de l'atmosphère. Ex: ULWRF_NTAT_0 (15km) / ULWRF_NTAT (10km)
+* __ULWRF__ : Flux ascendant de radiation d'ondes longues au sommet nominal de l'atmosphère. Ex: ULWRF_NTAT
 * __DLWRF__ : Flux descendant de radiation d'ondes longues à la surface 
 * __DSWR__ : Flux descendant de radiation d'ondes courtes à la surface
 
