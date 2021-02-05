@@ -1,0 +1,94 @@
+[En français](readme_rewps-datamart_fr.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [REWPS](readme_rewps_en.md) > REWPS on MSC Datamart
+
+# Regional Ensemble Wave Prediction System (REWPS) Data in GRIB2 Format
+
+This page describes the data of the [Regional Ensemble Wave Prediction System](readme_rewps_en.md).
+
+## Data location
+
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+
+The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
+
+The data can be accessed at the following address :
+
+* [https://dd.weather.gc.ca/model_rewps/great-lakes/grib2/{HH}/](https://dd.weather.gc.ca/model_rewps/great-lakes/grib2)
+
+where :
+
+* __HH__ : Model run start, in UTC [00, 12]
+
+A 24-hour history is stored in this directory.
+
+## Available Domains
+
+### Great Lakes
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps_grl.png)
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 550 |
+| nj | 365 |
+| resolution | 0.0225° x 0.0310° |
+| coordinate of first grid point | 41.0984° N  92.4790° O |
+
+
+## File name nomenclature
+
+NOTE:  ALL HOURS ARE IN UTC.
+
+File names have the form:
+
+{YYYYMMDD}T{HH}Z_MSC_REWPS-DOMAIN_VAR_LVL_{grille}{resolution}_PT{h}.grib2
+
+Where:
+
+* __YYYYMMDD__: Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to ISO8601 norms
+* __HH__: UTC run time [00, 12]
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __REWPS__ : Constant string indicating that data is from the Regional Ensemble Wave Prediction System
+* __DOMAIN__ : String indicating which domain the data is from
+* __VAR__ : Variables included in the file
+* __LVL__ : Vertical level [SFC for the surface]
+* __grille__ : Horizontal grid type [LatLon]
+* __resolution__ : Indicating resolution in degreee in latitude and longitude direction [0.0225x0.0310]
+* __PThH__: P, T and H are constant character designating Period, Time and Hour. h is the forecast hour [0, 3, 6, ..., 72].
+* __grib2__: constant string indicating the GRIB2 format is used
+
+Example of file name:
+
+20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0225x0.0310_PT66H.grib2
+
+## Variable List
+
+This table provides, for each GRIB2 parameter number: a short description, an alphabetical abbreviation, the levels available for the parameter, and measurement units.
+
+|GRIB2 discipline/category/parameter number | Parameter description |	Abbreviation |	Level |	Units |
+|-------------------------------------------|-----------------------|----------------|--------|-------|
+|10/0/3 |	Significant height of combined wind waves and swell |	HTSGW |	SFC |	m|
+|10/0/34 |	Peak wave period |	PWPER |	SFC |	s|
+|10/0/28 |	Mean zero-crossing wave period |	MZWPER |	SFC |	s|
+|10/0/46 |	Peak wave direction |	PWAVEDIR |	SFC |	degrees true|
+|10/0/4 |	Direction of wind waves |	WVDIR |	SFC |	degrees true|
+|10/0/5 |	Significant height of wind waves |	WVHGT |	SFC |	m|
+|10/0/35 |	Peak period of wind waves |	PPERWW |	SFC |	s|
+|10/0/53 |	Mean wave direction of first swell partition |	MWDFSWEL |	SFC 	|degrees true|
+|10/0/47 |	Significant wave height of first swell partition |	SWHFSWEL |	SFC |	m|
+|10/0/65 |	Peak wave period of first swell partition 	|PWPFSWEL |	SFC |	s|
+
+## Support
+
+If you have any questions about this data, please contact us at : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+
+## Announcements from the dd_info mailing list
+
+Announcements related to this dataset are available in the [dd_info list](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
+
+
