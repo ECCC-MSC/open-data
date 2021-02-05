@@ -78,6 +78,9 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 |10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	SFC |	degré vrai |
 |10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	SFC |	m |
 |10/0/65 |	Période pic de la première houle |	PWPFSWEL |	SFC |	s |
+|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	SFC |	degré vrai |
+|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	SFC |	m |
+|10/0/68 |	Période pic de la deuxième houle |	PWPSSWEL |	SFC |	s |
 
 ## Support
 

@@ -82,6 +82,9 @@ This table provides, for each GRIB2 parameter number: a short description, an al
 |10/0/53 |	Mean wave direction of first swell partition |	MWDFSWEL |	SFC 	|degrees true|
 |10/0/47 |	Significant wave height of first swell partition |	SWHFSWEL |	SFC |	m|
 |10/0/65 |	Peak wave period of first swell partition 	|PWPFSWEL |	SFC |	s|
+|10/0/54 |	Mean wave direction of second swell partition |	MWDSSWEL |	SFC 	|degrees true|
+|10/0/48 |	Significant wave height of second swell partition |	SWHSSWEL |	SFC |	m|
+|10/0/66 |	Peak wave period of second swell partition 	|PWPSSWEL |	SFC |	s|
 
 ## Support
 
