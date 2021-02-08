@@ -33,7 +33,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ![Grille du SRPE ps](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique à 15km de résolution.
+Valeurs données aux paramètres de la grille polaire stéréographique à 15km de résolution:
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -47,7 +47,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique à 15km 
 
 ![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)
 
-Valeurs données aux paramètres de la grille lat-lon tournée à 10km de résolution.
+Valeurs données aux paramètres de la grille lat-lon tournée à 10km de résolution:
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -55,6 +55,8 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 10km de résol
 | nj | 960 | 
 | résolution à 60° N | 10km |
 | coordonnées du premier point de grille | 50.76° N ; 20.81° W | 
+
+__Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ## Nomenclature des noms de fichiers 
 
@@ -72,10 +74,10 @@ où :
 
 * __datatype__ : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres
 * __VAR__ : Type de variable contenu dans le fichier (ex: UGRD)
-* __LVLTYPE__ :  Niveau vertical [ex: SFC pour la surface, NTAT pour le haut de l'atmosphère, DBLL_10cm couche 10cm sous la surface]
+* __LVLTYPE__ :  Niveau vertical (ex: SFC pour la surface, NTAT pour le haut de l'atmosphère, DBLL_10cm couche 10cm sous la surface, TGL pour au-dessus de la surface)
 * __LVL__ : Valeur du niveau (ex: 10m pour 10 mètres)
-* __resolution__: Résolution de la grille (ex: ps15km) et heure UTC de la passe [00, 12]
-* __YYYYMMDDHH__: Année, mois, jour du début de la prévision et 
+* __resolution__: Résolution de la grille (ex: ps15km) 
+* __YYYYMMDDHH__: Année, mois, jour du début de la prévision et heure UTC de la passe [00, 12]
 * __P{hhh}__ :  « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
 * __content__ : Peut être "all-products" ou "allmbrs" pour indiquer que tous les membres ou tous les produits probabilistes pour cette variable sont regroupés dans ce fichier
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
@@ -98,10 +100,10 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __REPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble
-* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: accumulation, maximum, minimum). 
-* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, EATM pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface]
+* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum, Max, Min). 
+* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, AGL-10m pour 10m au-dessus du sol]
 * __Grille__ : Grille horizontale [RLatLon]
-* __resolution__ : 0.0225. Signifie une résolution de 0.0225°(environ 2.5km) dans les directions longitudinale et latitudinale
+* __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
@@ -137,7 +139,6 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-700, composante U du vent à 700hPa 
 * __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-700, composante V du vent à 700hPa 
 * __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-50, température à 50hPa
-* __RH__ : Humidité relative à 2m au-dessus du sol. Ex: RH_AGL-2m
 * __TCDC__ : Couverture nuageuse totale 
 * __PRES__ : Pression à la surface 
 * __MSL__ : Pression au niveau moyen de la mer 
