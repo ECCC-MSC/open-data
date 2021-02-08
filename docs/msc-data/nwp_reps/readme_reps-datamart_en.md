@@ -16,11 +16,12 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/ensemble/reps/15km/grib2/{EnsembleDataType}/{HH}/{hhh}](https://dd.weather.gc.ca/ensemble/reps/15km/grib2)
+* Polar-stereographic grid at 15km resolution: [https://dd.weather.gc.ca/ensemble/reps/15km/grib2/{EnsembleDataType}/{HH}/{hhh}](https://dd.weather.gc.ca/ensemble/reps/15km/grib2)
+* Rotated lat-lon grid at 10km resolution: [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
 
 where :
 
-* __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
+* __EnsembleDataType__ : Can be "raw" for individual members direct model output or prob for probabilistic products created from all members
 * __HH__ : Forecast run hour in UTC
 * __hhh__ : Forecast time
 
@@ -28,101 +29,129 @@ A 24-hour history is stored in this directory.
 
 ## Technical specification of the grid
 
-![REPS grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps.png)
+* __Polar-stereographic grid__
 
-Values given to the parameters of the stereographic polar grid:
+![REPS grid ps](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png)
+
+Values given to the parameters of the stereographic polar grid at 15km resolution:
 
 | Parameter | Value |
 | ------ | ------ |
 | ni | 600 |
-| nj | 610 | 
-| resolution at 60° N | 10 km |
+| nj | 510 | 
+| resolution at 60° N | 15 km |
 | coordinates of the first grid point | 19.3206° N  141.5411° W | 
 | grid orientation (with respect to j axis) | -110.0° |
+
+* __Rotated lat-lon grid__
+
+![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)
+
+Table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:
+
+| Parameter | Valeur |
+| ------ | ------ |
+| ni | 908 |
+| nj | 960 | 
+| resolution at 60° N | 10 km |
+| coordinate of the first grid point |  50.76° N ; 20.81° W |
+
+__Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
+### Polar-stereographic grid at 15km resolution 
+
 The files have the following nomenclature:
 
-CMC-reps-srpe-EnsembleDataType_Variable_LevelType_Level_Resolution_YYYYMMDDHH_Phhh_FileContent.grib2
+```
+CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_{content}.grib2
+```
 
 where:
 
-* __EnsembleDataType__ : Can be raw for individual members direct model output or prob for probabilistic products created from all members.
-* __Variable__ : Variable name (ex: WIND) 
-* __LevelType__ : Level type (ex: TGL for above ground level)
-* __Level__ : Level value (ex: 10m for 10 meters)
-* __Resolution__ : Grid resolution (ex: ps15km)
-* __YYYYMMDDHH__ : Date of the model run in UTC
-* __Phhh__ : Forecast hour
-* __FileContent__ : can be all-products or allmbrs, indicating that all the members or all the probabilistic products for this variable are contain in the file 
+* __datatype__ : Can be "raw" for individual members direct model output or prob for probabilistic products created from all members
+* __VAR__ : Variable name (ex: WIND) 
+* __LVLTYPE__ : Level type (ex: SFC for surface, NTAT for the top of the atmosphere, DBLL_10cm for 10cm lunder the surface, TGL for above ground level)
+* __LVL__ : Level value (ex: 10m for 10 meters)
+* __resolution__ : Grid resolution (ex: ps15km)
+* __YYYYMMDDHH__ : Year, month and day of the beginning of the forecast and model run in UTC [00, 12]
+* __P{hhh}__ : P is a constant character. "hhh" is the forecast hour [000, 003, 006, ..., 072].
+* __FileContent__ : can be "all-products" or "allmbrs", indicating that all the members or all the probabilistic products for this variable are contain in the file 
+* __grib2__ : Constant string indicating the GRIB2 format is used
+
+Example of filname: CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-products.grib2
+
+### Rotated lat-lon grid at 10km resolution
+
+The files have the following nomenclature:
+
+```
+{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+```
+where:
+
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to ISO8601 norms
+* __HH__ : UTC run time [00, 06, 12, 18]
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __REPS__ : Constant string indicating that the data is from the Regional Ensemble Prediction System
+* __VAR__ : Variable type included in the file (ex: UGRD). This parameter includes also the statistic process if relevant (ex: Accum, MAX, Min)
+* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, AGL-10m for 10m above ground level]
+* __Grille__ : Horizontal grid [RLatLon]
+* __resolution__ : 0.09. Indicating resolution in degree [0.09°(about 10km)] in latitude and longitude directions
+* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 003, 006, ..., 072]
+* __grib2__ : Constant string indicating the GRIB2 format is used
+
+Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_P024.grib2
+
+Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_P024.grib2)
 
 ## List of variables
 
-The variables for the ensemble products available in the GRIB2 files are listed below. For each variable, the definition, period and frequency are mentioned.
+The variables for the ensemble products available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
 
-* __FPRATE-Accum-6h_SFC_0__ :  Freezing rain accumulated over a 6h period : 6-72h every 6h
-* __FPRATE-Accum-12h_SFC_0__ : Freezing rain accumulated over a 12h period : 12-72h every 6h
-* __FPRATE-Accum-24h_SFC_0__ : Freezing rain accumulated over a 24h period : 24-72h every 6h
-* __HEATX-Max-24h_TGL_2m__ :   Humidex 2m above ground - Maximum over 24h period : 24-72h every 12h
-* __HEATX_TGL_2m__ :           Humidex 2m above ground : 3-72h every 3h
-* __IPRATE-Accum-6h_SFC_0__ :  Ice pellets (water equivalent) accumulated over a 6h period : 6-72h every 6h
-* __IPRATE-Accum-12h_SFC_0__ : Ice pellets (water equivalent) accumulated over a 12h period : 12-72h every 6h
-* __IPRATE-Accum-24h_SFC_0__ : Ice pellets (water equivalent) accumulated over a 24h period : 24-72h every 6h
-* __RPRATE-Accum-6h_SFC_0__ :  Rain accumulated over a 6h period : 6-72h every 6h
-* __RPRATE-Accum-12h_SFC_0__ : Rain accumulated over a 12h period : 12-72h every 6h
-* __RPRATE-Accum-24h_SFC_0__ : Rain accumulated over a 24h period : 24-72h every 6h
-* __SPRATE-Accum-6h_SFC_0__ :  Snow (water equivalent) accumulated over a 6h period : 6-72h every 6h
-* __SPRATE-Accum-12h_SFC_0__ : Snow (water equivalent) accumulated over a 12h period : 12-72h every 6h
-* __SPRATE-Accum-24h_SFC_0__ : Snow (water equivalent) accumulated over a 24h period : 24-72h every 6h
-* __TEMP-Max-24h_TGL_2m__ :    Temperature 2m above ground - Maximum over 24h period : 24-72h every 12h
-* __TEMP-Min-24h_TGL_2m__ :    Temperature 2m above ground - Minimum over 24h period : 24-72h every 12h
-* __TEMP_TGL_2m__ :            Temperature 2m above ground : 3-72h every 3h
-* __TPRATE-Accum-3h_SFC_0__ :  Total precipitation accumulated over a 3h period : 3-72h every 3h
-* __TPRATE-Accum-6h_SFC_0__ :  Total precipitation accumulated over a 6h period : 6-72h every 6h
-* __TPRATE-Accum-12h_SFC_0__ : Total precipitation accumulated over a 12h period : 12-72h every 6h
-* __TPRATE-Accum-24h_SFC_0__ : Total precipitation accumulated over a 24h period : 24-72h every 6h
-* __TPRATE-Accum-48h_SFC_0__ : Total precipitation accumulated over a 48h period : 48-72h every 24h
-* __TPRATE-Accum-72h_SFC_0__ : Total precipitation accumulated over a 72h period : 72-72h every 72h
-* __WCF-Min-24h_TGL_2m__ :     Wind chill factor 2m above ground - Minimum over 24h period : 24-72h every 12h
-* __WCF_TGL_2m__ :             Wind chill 2m above ground : 3-72h every 3h
-* __WIND-Max-12h_TGL_10m__ :   Wind speed 10m above ground - Maximum over 12h period : 12-72h every 12h
-* __WIND_TGL_10m__ :           Wind speed 10m above ground : 3-72h every 3h
+* __FPRATE__ : Freezing rain accumulated over a period. Ex: FPRATE-Accum24h 
+* __HEATX__ :  Humidex 2m above ground. Ex: HEATX_AGL-2m; HEATX-Max24h_AGL-2m (maximum humidex 2m above ground over a period of 24h) 
+* __IPRATE__ : Ice pellets (water equivalent) accumulated over a period. Ex: IPRATE-Accum12h
+* __RPRATE__ : Rain accumulated over a period Ex: RPRATE-Accum6h 
+* __SPRATE__ : Snow (water equivalent) accumulated over a period. Ex: SPRATE-Accum24h 
+* __TEMP__ / __TMP__ : Temperature 2m above ground. Ex: TMP_AGL-2m; TMP-Max24h_AGL-2m (maximum temperature 2m above ground over a 24h period)
+* __TPRATE__ : Total precipitation accumulated over a period. Ex: TPRATE-Max48h
+* __WCF__ : Wind chill factor 2m above ground. Ex: WCF_AGL-2m; WCF-Min24h_AGL-2m (minimum wind chill factor 2m above ground over a 24h period)
+* __WIND__ : Wind speed 10m above ground. Ex: WIND_AGL-10m; WIND-Max12h_AGL-10m (maximum wind speed 10m above ground over a 12h period)
                                                                                   
-The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h every 3h:
+The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h every 3h. Some examples are indicated for the rotated latlon grid at 10km resolution.
 
-* __AFRAIN_SFC_0__ :     Accumulated precipitation in the form of freezing rain
-* __ARAIN_SFC_0__ :      Accumulated precipitation in the form of rain 
-* __AICEP_SFC_0__ :      Accumulated precipitation in the form of ice 
-* __ASNOW_SFC_0__ :      Accumulated precipitation in the form of snow 
-* __APCP_SFC_0__ :       Accumulated precipitation, total of all forms
-* __SNOD_SFC_0__ :       Snow depth 
-* __WEASD_SFC_0__ :      Water equivalent of accumulated Snow Depth 
-* __HGT_ISBL_PPPP__ :    Geopotential height for different level pressure levels where PPPP is the level in hPa
-* __RH_ISBL_PPPP__ :     Relative humidity at different pressure levels where PPPP is the level in hPa
-* __UGRD_ISBL_PPPP__ :   Winds. U-component at different pressure levelwhere PPPP is the level in hPa
-* __VGRD_ISBL_PPPP__ :   Winds. V-component at different pressure levelwhere PPPP is the level in hPa
-* __TMP_ISBL_PPPP__ :    Temperature at different pressure levels where PPPP is the level in hPa
-* __RH_TGL_2m__ :        Relative humidity at 2m 
-* __TMP_TGL_2m__ :       Temperature at 2m 
-* __TCDC_SFC_0__ :       Total cloud cover
-* __PRES_SFC_0__ :       Pressure at surface 
-* __MSL_0__ :            Mean sea level pressure at surface 
-* __TSOIL_DBLL_10cm__ :  Soil temperature. 10cm below surface 
-* __VSOILM_DBLL_10cm__ : Volumetric soil moisture. 10cm below the surface 
-* __LHTFL_SFC__ :        Latent heat net flux at surface 
-* __SHTFL_SFC_0__ :      Sensible heat net flux at surface 
-* __ULWRF_NTAT_0__ :     Upward long-wave radiation flux at the nominal top of the atmosphere 
-* __DLWRF_SFC_0__ :      Downward long-wave radiation flux at surface 
-* __DSWRF_SFC_0__ :      Downward short-wave radiation flux at surface 
+* __AFRAIN__ : Accumulated precipitation in the form of freezing rain
+* __ARAIN__ : Accumulated precipitation in the form of rain 
+* __AICEP__ : Accumulated precipitation in the form of ice 
+* __ASNOW__ : Accumulated precipitation in the form of snow 
+* __APCP__ : Accumulated precipitation, total of all forms
+* __SNOD_SF__ : Snow depth 
+* __WEASD__ : Water equivalent of accumulated Snow Depth 
+* __HGT__ : Geopotential height ay different pressure levels. Ex: HGT_ISBL-500, geopotential height at 500hPa
+* __RH__ : Relative humidity at different pressure levels. Ex: RH_ISBL-10, relative himidity at 10hPa; RH_AGL-2m, relative himidity 2m above ground
+* __UGRD__ : Wind U-component at different pressure levels.  Ex: UGRD_ISBL-700, wind U-component at 700hPa 
+* __VGRD__ : Wind V-component at different pressure levels. Ex: VGRD_ISBL-700, wind V-component at 700hPa
+* __TMP__ : Temperature at different pressure levels. Ex: TMP_AGL-2m, temperature 2m above ground; TMP_ISBL-50, temperature at 50hPa
+* __TCDC__ : Total cloud cover
+* __PRES__ : Surface pressure
+* __MSL__ : Mean sea level pressure
+* __TSOIL__ : Soil temperature 10cm below surface. Ex: TSOIL_DBS-10cm 
+* __VSOILM__ : Volumetric soil moisture 10cm below surface. Ex: VOISLM_DBS-10cm  
+* __LHTFL__ : Latent heat net flux at surface 
+* __SHTFL__ : Sensible heat net flux at surface 
+* __ULWRF__ : Upward long-wave radiation flux at the nominal top of the atmosphere. Ex: ULWRF_NTAT  
+* __DLWRF__ : Downward long-wave radiation flux at surface 
+* __DSWRF__ : Downward short-wave radiation flux at surface 
 
-You can find a list in XML format cont.
+A [list in XML format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the 15km grid variables names, a description and the units in both French and English, is available.
 
-A [list in XML format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the variables names, a description and the units in both French and English, is available.
-
-## About the No-data mask
+## About the no-data mask for the polar-stereographic grid
 
 A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
