@@ -6,15 +6,15 @@
 
 # Regional Ensemble Prediction System (REPS) Data in GRIB2 Format
 
-This page describes the [Regional Ensemble Prediction System](readme_reps_en.md) data available in GRIB2 format.
+This page describes [Regional Ensemble Prediction System](readme_reps_en.md) data available in GRIB2 format.
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as it becomes available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. 
+This data is available using the HTTPS protocol and resides in a directory that is plainly accessible from a web browser. Visiting this directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. 
 
-The data can be accessed at the following URLs:
+This data can be accessed at the following URLs:
 
 * Polar-stereographic grid at 15km resolution: [https://dd.weather.gc.ca/ensemble/reps/15km/grib2/{EnsembleDataType}/{HH}/{hhh}](https://dd.weather.gc.ca/ensemble/reps/15km/grib2)
 * Rotated lat-lon grid at 10km resolution: [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
@@ -33,7 +33,7 @@ A 24-hour history is stored in this directory.
 
 ![REPS grid ps](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png)
 
-Values given to the parameters of the stereographic polar grid at 15km resolution:
+Values assigned to the parameters of the stereographic polar grid at 15km resolution:
 
 | Parameter | Value |
 | ------ | ------ |
@@ -47,7 +47,7 @@ Values given to the parameters of the stereographic polar grid at 15km resolutio
 
 ![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)
 
-Table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:
+The following table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:
 
 | Parameter | Valeur |
 | ------ | ------ |
@@ -64,7 +64,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 ### Polar-stereographic grid at 15km resolution 
 
-The files have the following nomenclature:
+Files have the following nomenclature:
 
 ```
 CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_{content}.grib2
@@ -72,39 +72,39 @@ CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_
 
 where:
 
-* __datatype__ : Can be "raw" for individual members direct model output or prob for probabilistic products created from all members
+* __datatype__ : Can be "raw" for individual member direct model output or prob for probabilistic products created from all members
 * __VAR__ : Variable name (ex: WIND) 
-* __LVLTYPE__ : Level type (ex: SFC for surface, NTAT for the top of the atmosphere, DBLL_10cm for 10cm lunder the surface, TGL for above ground level)
+* __LVLTYPE__ : Level type (ex: SFC for surface, NTAT for the top of the atmosphere, DBLL_10cm for 10cm under the surface, TGL for above ground level)
 * __LVL__ : Level value (ex: 10m for 10 meters)
 * __resolution__ : Grid resolution (ex: ps15km)
-* __YYYYMMDDHH__ : Year, month and day of the beginning of the forecast and model run in UTC [00, 12]
+* __YYYYMMDDHH__ : Year, month, and day of the beginning of the forecast and model run in UTC [00, 12]
 * __P{hhh}__ : P is a constant character. "hhh" is the forecast hour [000, 003, 006, ..., 072].
-* __FileContent__ : can be "all-products" or "allmbrs", indicating that all the members or all the probabilistic products for this variable are contain in the file 
-* __grib2__ : Constant string indicating the GRIB2 format is used
+* __FileContent__ : can be "all-products" or "allmbrs", indicating that all the members or all the probabilistic products for this variable are contained in the file 
+* __grib2__ : Constant string indicating that the GRIB2 format is used
 
 Example of filname: CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-products.grib2
 
 ### Rotated lat-lon grid at 10km resolution
 
-The files have the following nomenclature:
+Files have the following nomenclature:
 
 ```
 {YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
 ```
 where:
 
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __YYYYMMDD__ : Year, month, and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
 * __HH__ : UTC run time [00, 06, 12, 18]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __REPS__ : Constant string indicating that the data is from the Regional Ensemble Prediction System
-* __VAR__ : Variable type included in the file (ex: UGRD). This parameter includes also the statistic process if relevant (ex: Accum, MAX, Min)
+* __VAR__ : Variable type included in the file (ex: UGRD). This parameter includes also the statistical measure, if relevant (ex: Accum, MAX, Min)
 * __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, AGL-10m for 10m above ground level]
 * __Grille__ : Horizontal grid [RLatLon]
-* __resolution__ : 0.09. Indicating resolution in degree [0.09°(about 10km)] in latitude and longitude directions
+* __resolution__ : 0.09. Indicating resolution in degrees [0.09°(about 10km)] for latitude and longitude directions
 * __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 003, 006, ..., 072]
-* __grib2__ : Constant string indicating the GRIB2 format is used
+* __grib2__ : Constant string indicating that the GRIB2 format is used
 
 Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_P024.grib2
 
@@ -124,7 +124,7 @@ The variables for the ensemble products available in the GRIB2 files are listed 
 * __WCF__ : Wind chill factor 2m above ground. Ex: WCF_AGL-2m; WCF-Min24h_AGL-2m (minimum wind chill factor 2m above ground over a 24h period)
 * __WIND__ : Wind speed 10m above ground. Ex: WIND_AGL-10m; WIND-Max12h_AGL-10m (maximum wind speed 10m above ground over a 12h period)
                                                                                   
-The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h every 3h. Some examples are indicated for the rotated latlon grid at 10km resolution.
+The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h, every 3h. Some examples are indicated for the rotated lat-lon grid at 10km resolution.
 
 * __AFRAIN__ : Accumulated precipitation in the form of freezing rain
 * __ARAIN__ : Accumulated precipitation in the form of rain 
