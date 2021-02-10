@@ -76,7 +76,7 @@ For the data feeds, the following formats are available:
 
 Environment and Climate Change Canada does not have an online service to retrieve archived data.
 
-The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 99$/hour, with a minimum charge of 99$, to retrieve/recreate the requested data. The data itself is free.
+The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 118$/hour, with a minimum charge of 118$, to retrieve/recreate the requested data. The data itself is free.
 
 Archive data are available in either raw format (IRIS/ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
@@ -100,7 +100,7 @@ Typical archived data retrieval requests require between 2-4 hours to process. I
 
 Environment and Climate Change Canada does not have an online service to retrieve archived data.
 
-The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 99$/hour, with a minimum of 99$, to retrieve/recreate the requested data. The data itself is free.
+The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 118$/hour, with a minimum of 118$, to retrieve/recreate the requested data. The data itself is free.
 
 Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
