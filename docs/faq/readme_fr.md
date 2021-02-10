@@ -78,7 +78,7 @@ Concernant les fils de données, les formats disponibles sont les suivants :
    
 ## Peut-on accéder aux données radar archivées?
 
-Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$. Les données par elles-mêmes étant gratuites.
 
 Les archives sont disponibles en format brut (IRIS/ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
 [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
@@ -100,7 +100,7 @@ Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail
 
 ## Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?
 
-Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 99$/heure de travail nécessaire pour produire les données avec un coût minimum de 99$. Les données par elles-mêmes étant gratuites.
+Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$. Les données par elles-mêmes étant gratuites.
 
 Dès que nous recevons les détails des données demandées, nous pouvons produire un échantillon et l’envoyer à l’usager pour validation. Un estimé peut alors être fourni, une fois la requête confirmée. Selon la nature des requêtes, il faut compter quelques centaines de dollars. Pour toute commande, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: ec.dps-client.ec@canada.ca
 

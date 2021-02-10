@@ -1,4 +1,4 @@
-[In English](readme_rdps-datamart_en.md)
+[In English](readme_astro-rdps-datamart-alpha_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -20,7 +20,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-[https://dd.meteo.gc.ca/model_gem_regional/astronomy/grib2/{HH}](https://dd.meteo.gc.ca/model_gem_regional/astronomy/grib2)
+[https://dd.alpha.meteo.gc.ca/model_gem_regional/astronomy/grib2/{HH}](https://dd.alpha.meteo.gc.ca/model_gem_regional/astronomy/grib2)
 
 où :
 
@@ -49,7 +49,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 Les fichiers ont la nomenclature suivante :
 
 ```
-{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_EATM_{Grille}{resolution}_PT{hhh}H.grib2
+{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_EATM_{Grille}{resolution}_PT{hh}H.grib2
 ```
 
 où :
@@ -64,7 +64,7 @@ où :
 * __EATM__ : Atmosphère entière. Considérée comme une seule couche
 * __Grille__ : Grille horizontale [PS]
 * __resolution__ : Résolution horizontale, ici 35km
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). « hhh » représente l’heure de prévision [000, 001, 002, ..., 084]
+* __PT{hh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). « hh » représente l’heure de prévision [0, 1, 2, ..., 84]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de nom de fichier : 20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT084H.grib2
