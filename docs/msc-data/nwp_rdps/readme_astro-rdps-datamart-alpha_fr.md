@@ -6,11 +6,11 @@
 
 # Données GRIB2 d'astronomie basées sur le Système régional de prévision déterministe (SRPD)
 
-Cette page décrit les données de prévision de [scintillation](https://meteo.gc.ca/astro/seeing_f.html) (ou "seeing") utilisée en astronomie pour qualifier l'état de turbulence atmosphérique, ainsi que les prévisions de [transparence](https://meteo.gc.ca/astro/transparence_f.html) faisant référence à la clarté du ciel et se mesurant comme la capacité à observer les étoiles en fonction de leur luminosité ou de leur magnitude. 
+Cette page décrit les données de prévision de [scintillation](https://meteo.gc.ca/astro/seeing_f.html) (ou "seeing") et de [transparence](https://meteo.gc.ca/astro/transparence_f.html). La scintillation est utilisée en astronomie pour qualifier l'état de turbulence atmosphérique tandis que la transparence fait référence à la clarté du ciel et se mesure comme la capacité à observer les étoiles en fonction de leur luminosité ou de leur magnitude. 
 
 Ces données sont générées à partir du [Système régional de prévision déterministe](./readme_rdps_fr.md) respectivement aux 3 heures et aux heures jusqu'à 84 heures et projetées sur une grille polaire stéréographique à 35km de résolution.
 
-Elles permettront aux astronomes amateurs et professionnels de mieux planifier leurs activités d'observation du ciel, mais aussi à tout usager intéressé par les conditions du ciel.
+Elles permettront aux astronomes amateurs et professionnels, mais aussi à tout usager intéressé par les conditions du ciel, à mieux planifier leurs activités.
 
 ## Adresse des données 
 
@@ -73,7 +73,7 @@ Exemple de nom de fichier : 20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT084H.grib2
 
 Les variables prévues disponibles dans les fichiers 2D sont décrites ci-dessous.
 
-* __SEEI__: indice de "seeing" ou scintillation. Qualifier le niveau de turbulence et la stabilité de l'atmosphère qui influence la résolution des objets célestes (ex. planètes)
+* __SEEI__: indice de "seeing" ou scintillation. Qualifie le niveau de turbulence et la stabilité de l'atmosphère qui influence la résolution des objets célestes (ex. planètes)
 * __TRSP__: indice de transparence. Qualifie la profondeur du ciel en fonction de la composition de l'atmosphère
 
 ## Support
