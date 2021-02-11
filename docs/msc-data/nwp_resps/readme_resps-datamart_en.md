@@ -6,15 +6,15 @@
 
 # Regional Ensemble Storm Surge Prediction System (RESPS) data in NetCDF format
 
-This page describes the [Regional Ensemble Storm Surge Prediction System](readme_resps_en.md) data available in NetCDF format.
+This page describes the experimental [Regional Ensemble Storm Surge Prediction System](readme_resps_en.md) data available in NetCDF format.
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
 
-The data can be accessed at the following address :
+The experimental data can be accessed at the following address :
 
 * [https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf)
 
