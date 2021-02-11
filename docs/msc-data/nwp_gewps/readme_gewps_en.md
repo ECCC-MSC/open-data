@@ -16,7 +16,7 @@ WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third generatio
 
 The data are currently available on [DD-Alpha, the data testing website of the MSC Datamart](../../msc-datamart/readme_en.md).
 
-* [GRIB2 data available on the MSC Datamart](readme_gewps-datamart_en.md)
+* [Experimental GRIB2 data available on DD-Alpha, the data testing website of the MSC Datamart](readme_gewps-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

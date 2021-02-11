@@ -6,15 +6,15 @@
 
 # Données GRIB2 du Système Global de Prévision d'Ensemble de Vague (SGPEV)
 
-Cette page décrit les données [Système Global de Prévision d'Ensemble de Vague (SGPEV)](readme_gewps_fr.md) disponibles en format GRIB2.
+Cette page décrit les données expérimentales du [Système Global de Prévision d'Ensemble de Vague (SGPEV)](readme_gewps_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à adresse suivante :
+Les données expérimentales sont accessibles à adresse suivante :
 
 * [https://dd.alpha.weather.gc.ca/model_gewps/global/grib2/{HH}/](https://dd.alpha.weather.gc.ca/model_gewps/global/grib2)
 
