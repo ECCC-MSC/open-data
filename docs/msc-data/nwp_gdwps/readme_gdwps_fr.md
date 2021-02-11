@@ -6,9 +6,9 @@
 
 # Données et Produits du Système global de prévision déterministe de vague (SGPDV)
 
-Le Système global de prévision déterministe de vague (SGPDV) produit les prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du Système global de prévision déterministe. En outre, la prévision de glace de mer du Système global de prévision océan-glace (SGPOG) est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
+Le Système global de prévision déterministe de vague (SGPDV) produit des prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du [Système global de prévision déterministe (SGPD)](../../nwp_gdps/readme_gdps_fr.md). La prévision du GDPS est un modèle couplé atmospère-glace-océan, sa prévision de glace de mer utilisée par la prévision du SGPDV pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
 
-Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années. 
+WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.
 
 ## Accès
 
@@ -28,6 +28,14 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 ### Métadonnées
 
 À venir.
+
+## Produits
+
+Liste et liens vers les produits disponibles pour ce jeu de données :
+
+### Cartes de prévision
+
+* [Cartes des modèles de vagues](https://meteo.gc.ca/model_forecast/wave_f.html)
 
 ## Documentation technique
 

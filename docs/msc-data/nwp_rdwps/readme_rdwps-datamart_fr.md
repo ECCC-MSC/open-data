@@ -6,28 +6,7 @@
 
 # Données GRIB2 du Système Régional de Prévision Déterministe de Vague (SRPDV)
 
-Cette page décrit les données du [Système Régional de Prévision Déterministe de Vague](./readme_rdwps_fr.md). 
-
-## Grands Lacs
-
-Le [Système Régional de Prévision Déterministe de Vague (SRPDV)](readme_rdwps_fr.md) produit les prévisions de vagues pour les Grands Lacs en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du Système à haute résolution de prévision déterministe (SHRPD). Une analyse de glace est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
-
-Le WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années. 
-
-Ce système comprend quatre domaines :
-
-* Lac Supérieur     
-* Lac Huron-Michigan 
-* Lac Érié
-* Lac Ontario 
-
-Les quatre domaines ont une résolution spatiale de 1 km(0.0090 deg x 0.0124 deg).
-
-## Golfe du Saint-Laurent
-
-Le [Système Régional de Prévision Déterministe de Vague (SRPDV)](readme_rdwps_fr.md) produit les prévisions de vagues pour le golfe du Saint-Laurent en utilisant le modèle spectral de prévision de vague de troisième génération WAM. Le modèle est forcé par les vents à une altitude 10 mètres du Système régional de prévision déterministe (SRPD). En outre, une analyse de la glace de mer est utilisée par le modèle pour supprimer la croissance des vagues dans les zones couvertes par plus de 50 % de glace.
-
-Le WAM (modèle de vague) (WAMDI Groupe 1988, Komen et al. 1994) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie, sans hypothèse préalable sur la forme du spectre. Le modèle WAM est utilisé opérationnellement par la communauté internationale depuis le début des années 1990, après une longue période de développement dans le cadre du WAMDIG (modèle de vague et de développement du Groupe de mise en œuvre).
+Cette page décrit les données du [Système Régional de Prévision Déterministe de Vague](./readme_rdwps_fr.md) disponible en format GRIB2.
 
 ## Adresse des données 
 
@@ -49,13 +28,11 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-## Spécification technique de chacune des grilles
+## Domaines disponibles
 
 ### Lac Supérieur
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
-
-Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Supérieur :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -68,8 +45,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Sup
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
-Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs Huron et Michigan :
-
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 698 |
@@ -80,8 +55,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille des lacs H
 ### Lac Érié
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
-
-Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Érié :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -94,8 +67,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ér
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
-Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ontario :
-
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 348 |
@@ -106,8 +77,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille du lac Ont
 ### Golfe du Saint-Laurent
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
-
-Ce tableau répertorie les valeurs de divers paramètres de la grille du Golfe du Saint-Laurent :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -122,19 +91,20 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-CMC_rdwps_domain_Variable_LevelType_level_latlondddxddd_YYYYMMDDHH_Phhh.grib2
+CMC_rdwps_DOMAIN_VAR_LVL_LVLVAL_{grille}{resolution}_YYYYMMDDHH_P{hhh}.grib2
 
 où :
 
 * __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
 * __rdwps__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe des vagues.
-* __domain__ : Chaîne de caractères constante indiquant le domaine.
-* __Variable__ : Type de variable contenu dans le fichier (ex. : UGRD).
-* __LevelType__ : Type de niveau
-* __Level__ : Valeur du niveau
-* __latlondddxddd__ : Chaîne de caractères constante indiquant que la projection utilisée est lat/long à une résolution de ddd x ddd degré.
+* __DOMAIN__ : Chaîne de caractères indiquant le domaine.
+* __VAR__ : Type de variable contenu dans le fichier
+* __LVL__ : Type de niveau
+* __LVLVAL__ : Valeur du niveau
+* __grille__ : Type de grille horizontale [LatLon]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [par ex.: 0.0090x0.0124]
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __HH__ : UTC de la passe [00, 06, 12, 18].
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18].
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
@@ -148,17 +118,20 @@ Le fichier a été créé par le CMC et contient une prévision du Système rég
 
 Niveaux qui pourraient être applicables à certains champs :
 
-* Surface
-* Hauteur fixe au-dessus du sol
-* Niveau de la mer
+* Surface [SFC]
+* Hauteur fixe au-dessus du sol [TGL]
+* Niveau de la mer [MSL]
 
 ## Liste des variables
 
-|GRIB2 |  Description courte                   |      Abr.  | Niveau | Unités  |
+Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève description, une abréviation alphabétique conventionnelle, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure
+
+|discipline/catégorie/numéro de paramètre GRIB2 |	Description du paramètre            |	Abréviation 	         | Niveaux       |	Unités       |
 |------|---------------------------------------|------------|--------|---------|
 |10/2/0|  Couverture de glace                  |      ICEC  | SFC_0 | fraction |
 |0/2/2 |  Composante U du vent                 |      UGRD  | TGL_10 | m/s |
 |0/2/3 |  Composante V du vent                 |      VGRD  | TGL_10 | m/s |
+|0/3/1 |  Pression réduite au niveau de la mer |             PRMSL  | MSL_0 | Pa  |
 |10/0/3|  Hauteur significative des vagues de vent et de la houle combinées |  HTSGW | SFC_0 | m |
 |10/0/34| Période pic des vagues               |      PWPER | SFC_0 | s |
 |10/0/28| Période moyenne centrée des vagues   |      MZWPER | SFC_0 |  s |
@@ -168,6 +141,20 @@ Niveaux qui pourraient être applicables à certains champs :
 |10/0/7 | Direction de la première houle       |      SWDIR | SFC_0 | degré vrai |
 |10/0/8 | Hauteur significative de la première houle | SWELL | SFC_0 | m |
 |10/0/9 | Période pic de la première houle     |      SWPER | SFC_0 | s |
+
+### Notes
+
+* La direction des composantes u et v du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j.
+
+* Golfe du Saint-Laurent période pic: le nom de fichier utilise __VAR__ PKPER et __LVL__ TGL.
+
+* La pression réduite au niveau de la mer est disponible seulement pour le Golfe du Saint-Laurent
+
+* La période moyenne centrée des vagues est disponible seulement pour les Grands Lacs
+
+* Les paramètres de houle du Golfe du Saint-Laurent représentent la houle totale
+
+* Les paramètres de houle des Grands Lacs représentent la première houle. À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement.
 
 ## Support
 
