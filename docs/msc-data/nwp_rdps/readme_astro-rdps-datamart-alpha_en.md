@@ -1,111 +1,82 @@
-[En français](readme_rdps-datamart_fr.md)
+[En français](readme_astro-rdps-datamart-alpha_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [RDPS](readme_rdps_en.md) > RDPS on MSC Datamart
+[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [RDPS](readme_rdps_en.md) > Astronomy products on DD-Alpha based on RDPS
 
-# Regional Deterministic Prediction System (RDPS) data in GRIB2 format
+# Astronomy products based on the Regional Deterministic Prediction System (RDPS) in GRIB2 format
 
-Under the Regional Deterministic Prediction System (RDPS), the numerical weather prediction model is run on a variable-step grid with a 10 km central core resolution. The fields in the 10 km resolution regional GRIB2 dataset are made available on a 935 x 824 polar-stereographic grid covering North America and adjacent waters with a 10 km resolution at 60°N.
+This page describes [seeing](https://meteo.gc.ca/astro/seeing_e.html) and [transparency](https://meteo.gc.ca/astro/transparence_e.html) prediction data. Seing is used in astronomy to describe the state of atmospheric turbulence while transparency refers to the clarity of the sky and is measured as the ability to observe stars according to their brightness or magnitude. 
+
+These data are generated from the [Regional Deterministic Prediction System](./readme_rdps_en.md) respectively every 3 hours and hourly up to 84 hours and projected on a polar-stereographic grid at 35km resolution.
+
+They will allow amateur and professional astronomers, but also any user interested in sky conditions, to better plan their activities.
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs: 
+The data can be accessed at the following URL: 
 
-* [https://dd.weather.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional/10km/grib2)
+[https://dd.alpha.meteo.gc.ca/model_gem_regional/astronomy/grib2/{HH}](https://dd.alpha.meteo.gc.ca/model_gem_regional/astronomy/grib2)
 
 where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
-* __hhh__: Forecast hour [000, 001, 002,..., 084]
 
-A 20-hour history is kept in this directory.
+A 24-hour history is kept in this directory.
 
 ## Technical specification of the grid
 
-![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png)
+![Image de la grille PS astro-SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-astro_PS.png)
 
-Values given to the parameters of the stereographic polar grid :
+Values given to the parameters of the polar-stereographic grid :
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 935 |
-| nj | 824 | 
-| resolution at 60° N | 10 km |
-| coordinates of the first grid point | 18.1429° N  142.8968° W | 
-| (i,j) coordinate of North Pole | (456.2; 732.4) |
+| ni | 245 |
+| nj | 190 | 
+| resolution at 60° N | 35 km |
+| coordinates of the first grid point | 20.10° N ; 136.48° W | 
 | grid orientation (with respect to j axis) | -111.0° |
-
-There is also a pre-formatted [ASCII file containing the geographical coordinates](https://meteo.gc.ca/grib/10km_res.bz2) of each grid point. 
 
 ## Filename nomenclature 
 
-Note : all hours are in UTC.
+NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature :
 
-CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2
+```
+{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_EATM_{Grille}{resolution}_PT{hh}H.grib2
+```
 
 where :
 
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
-* __reg__ : constant string indicating that the data is from the RDPS
-* __Variable__ : Variable type included in this file. To consult a complete list, refer to the variables section.
-* __LevelType__ : Level type. To consult a complete list, refer to the variables section.
-* __Level__ : Level value. To consult a complete list, refer to the variables section.
-* __ps10km__ : constant string indicating that the projection used is polar-stereographic at 10km resolution.
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms
 * __HH__ : UTC run time [00, 06, 12, 18]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000,001,002,...,084] 
-* __grib2__ : constant string indicating the GRIB2 format is used
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __RDPS__ : Constant string indicating that data is based on the Regional Deterministic Prediction System (RDPS)
+* __VAR__ : Variable included in the file [SEEI, TRSP]
+* __EATM__ : Entire atmosphere. Considered as a single layer
+* __Grille__ : Horizontal grid [PS]
+* __resolution__ : Horizontal resolution [35km]
+* __PT{h}H__ : Forecast hours based on ISO8601 norms. « h » is the forecast hour [0, 1, 2, ..., 84]
+* __grib2__ : Constant string indicating the GRIB2 format is used
 
 Example of file name : 
 
-CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
-
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the RDPS. The data in the file start on September 13th 2010 at 06Z (2010091306). It contains the dew point depression (DEPR) at the isobaric level 1015 mb (ISBL_1015) on a polar-stereographic at 10km resolution (ps10km) for the forecast hour 27 (P027) in GRIB2 format (.grib2).
-
-## Levels
-
-Vertical coverage of three-dimensional fields is provided by up to 33 isobaric levels.
-
-* Isobaric levels (hPa): 1015, 1000, 985, 970, 950, 925, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 275, 250, 225, 200, 175, 150, 100, 50.
-
-    * Additional levels 30, 20, 10, 5 et 1 hPa for the variables TMP, HGT, UGRD, VGRD, WIND, WDIR, SPFH
-
-    * Additional levels 30, 20 et 10 hPa for the variables RH et DEPR
-
-* Some fields receive limited three-dimensional coverage of five levels in the vertical, namely 850, 700, 600, 500, 250 hPa.
-
-Additional levels that may be applicable to a given parameter are :
-
-* Surface
-* Fixed height above ground
-* Fixed height below ground
-* Thickness between two isobaric levels
-* Nominal top of the atmosphere
-* Entire atmospheric column
+20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT084H.grib2
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+The forecasted variables available in the 2D files are described below.
 
-* [0h forecast](https://weather.gc.ca/grib/REG_HR/REGIONAL_ps10km_P000_deterministic_e.html)
-* [Non-zero hour forecast](https://weather.gc.ca/grib/REG_HR/REGIONAL_ps10km_PNONZERO_deterministic_e.html)
-
-Notes :
-
-* u (UGRD) and v (VGRD) components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates. Please refer to Code Table 7 of the GRIB standard for further details.
-* Radiation fluxes parameters NLWRS_SFC, DSWRF_NTAT, and DLWRF_NTAT are encoded as accumulated values, as per value 4 of the Time Range Indicator (Code Table 5 of the GRIB format standard). This changes the unit from Watts per square metre to Joules per square meter.
-* Specific Humidity (SPFH) is the model's native moisture variable. It should be used in all NWP applications. Dew point depression (DEPR) is a diagnostic parameter and is not meant for use in high-precision applications.
-
-## About the no-data mask
-
-Since September, 7th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
+* __SEEI__: seeing index. Qualifies the level of turbulence and the stability of the atmosphere that influences the resolution of celestial objects (ex. planets)
+* __TRSP__: transparency index. Qualifies the depth of the sky according to the composition of the atmosphere
 
 ## Support
 
