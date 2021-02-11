@@ -26,7 +26,7 @@ A history of 24 hours is maintained in this directory.
 
 ## Available Domains
 
-### Global 0.25°
+Global latitude-longitude grid.
 
 | Parameter | Value |
 | ------ | ------ |

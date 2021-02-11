@@ -26,13 +26,13 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Domaines disponibles
 
-### Global 0.25°
+Grille latitude-longitude globale
 
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 1441 |
 | nj | 721 |
-| résolution | 0.25° x 0.25° |
+| résolution | 0.25° |
 | coordonnées du premier point de grille | 90° S  0° E |
 
 ## Nomenclature des noms de fichiers

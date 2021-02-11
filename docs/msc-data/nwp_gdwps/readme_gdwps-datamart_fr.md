@@ -26,13 +26,13 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Domaines disponibles
 
-### Global 0.25°
+Grille latitude-longitude globale.
 
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 1441 |
 | nj | 721 | 
-| résolution | 0.25° x 0.25° |
+| résolution | 0.25° |
 | coordonnées du premier point de grille | 90° S  0° E | 
 
 ## Nomenclature des noms de fichiers 
@@ -47,7 +47,7 @@ où :
 
 * __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
 * __gdwps__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision déterministe des vagues.
-* __DOMAIN__ : Chaîne de caractères indiquant le domaine.
+* __DOMAIN__ : Chaîne de caractères indiquant le domaine [global]
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau
 * __LVLVAL__ : Valeur du niveau

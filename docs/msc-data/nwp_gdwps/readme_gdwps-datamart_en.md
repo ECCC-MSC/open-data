@@ -26,7 +26,7 @@ A history of 24 hours is maintained in this directory.
 
 ## Available Domains
 
-### Global 0.25°
+Global latitude-longitude grid.
 
 | Parameter | Value |
 | ------ | ------ |
@@ -47,7 +47,7 @@ where :
 
 * __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
 * __gdwps__ : Constant string indicating that the data is from the Global Deterministic Wave Prediction System
-* __DOMAIN__ : String indicating which domain the data is from
+* __DOMAIN__ : String indicating which domain the data is from [global]
 * __VAR__ : Variable type included in this file
 * __LVL__ : Level type.
 * __LVLVAL__ : Level value.
