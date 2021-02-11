@@ -26,6 +26,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
 
+![Image de la grille du SRPDOT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdsps/grille_rdsps.png)
+
 Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
 | Paramètre | Valeur |

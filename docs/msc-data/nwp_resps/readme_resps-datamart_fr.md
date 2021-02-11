@@ -6,15 +6,15 @@
 
 # Données NetCDF du Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
-Cette page décrit les données [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](readme_resps_fr.md) disponibles en format NetCDF.
+Cette page décrit les données expérimentales du [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](readme_resps_fr.md) disponibles en format NetCDF.
 
 ## Adresse des données
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les données expérimentales sont accessibles pour le moment à l'adresse suivante :
+Les données expérimentales sont accessibles à l'adresse suivante :
 
 * [https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf)
 
@@ -25,6 +25,8 @@ où :
 Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
+
+![Image de la grille du SRPEOT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_resps/grille_resps.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
