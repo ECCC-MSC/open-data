@@ -26,6 +26,8 @@ A history of 24 hours is maintained in this directory.
 
 ## Grid technical specification
 
+![RESPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_resps/grille_resps.png)
+
 This table lists the values of different parameters of the RESPS grid:
 
 | Parameter | Value |

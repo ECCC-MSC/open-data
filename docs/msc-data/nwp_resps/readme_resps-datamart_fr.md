@@ -26,6 +26,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille
 
+![Image de la grille du SRPEOT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_resps/grille_resps.png)
+
 Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
 | Paramètre | Valeur |

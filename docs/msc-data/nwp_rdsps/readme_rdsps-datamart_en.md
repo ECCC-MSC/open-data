@@ -26,6 +26,8 @@ A history of 24 hours is maintained in this directory.
 
 ## Grid technical specification
 
+![RDSPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdsps/grille_rdsps.png)
+
 This table lists the values of different parameters of the RDSPS grid:
 
 | Parameter | Value |
