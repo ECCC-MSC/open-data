@@ -8,20 +8,6 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.22
-
-* date: 2021-02-05
-* announcements:
-    * Not announced
-* new content:
-    * Add REWPS model and datamart readme
-    * Add GEWPS model and datamart readme
-* improvements:
-    * Standardize wave systems pages
-    * Bring back WAM information for RDWPS
-* bug fixes:
-    * Fix GDWPS link to tech note.
-
 ## 2.3.21
 
 * date: 2021-01-13
