@@ -8,6 +8,22 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.22
+
+* date: 2021-02-11
+* announcements:
+    * Not announced
+* new content:
+    * Add RESPS doc
+    * Add 10kmRlatlon REPS doc
+    * Add REWPS doc (not in the main list)
+    * Add GEWPS doc (not in the main list)
+    * Add RDPS-astro doc (only in French and not in the main list)
+* improvements:
+    * Update FAQ : change in the cost recovery services fees 
+* bug fixes:
+    * None
+
 ## 2.3.21
 
 * date: 2021-01-13
