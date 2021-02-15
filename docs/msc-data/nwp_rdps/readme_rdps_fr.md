@@ -15,6 +15,7 @@ Le Système régional de prévision déterministe (SRPD) procède à des calculs
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_rdps-datamart_fr.md) 
+* [Produits GRIB2 d'astronomie disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_astro-rdps-datamart-alpha_fr.md)
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
