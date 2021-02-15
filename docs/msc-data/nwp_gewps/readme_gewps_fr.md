@@ -14,9 +14,9 @@ WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectra
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur [DD-Alpha, le serveur de test du Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont disponibles sur le serveur de données [DD-Alpha, le site Web d'essai du Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_gewps-datamart_fr.md)
+* [Données GRIB2 expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gewps-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
