@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > Produits astronomie basés sur le SRPD sur DD-Alpha
 
-# Données GRIB2 d'astronomie basées sur le Système régional de prévision déterministe (SRPD)
+# Produits GRIB2 d'astronomie basés sur le Système régional de prévision déterministe (SRPD)
 
 Cette page décrit les données de prévision de [scintillation](https://meteo.gc.ca/astro/seeing_f.html) (ou "seeing") et de [transparence](https://meteo.gc.ca/astro/transparence_f.html). La scintillation est utilisée en astronomie pour qualifier l'état de turbulence atmosphérique tandis que la transparence fait référence à la clarté du ciel et se mesure comme la capacité à observer les étoiles en fonction de leur luminosité ou de leur magnitude. 
 
