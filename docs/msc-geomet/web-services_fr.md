@@ -414,11 +414,7 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 ## OGC API - Features
 
-Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
-
-Le service fonctionne via HTTPS et les requêtes sont effectuées via des requêtes HTTPS GET. Aucune authentification HTTPS n'est requise. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `f=html`.
-
-Le premier paramètre d'une requête doit être spécifiée avec `?` et les paramètres subséquents avec `&`.
+Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web. Le service fonctionne via HTTPS et les requêtes sont effectuées via des requêtes HTTPS GET. Aucune authentification HTTPS n'est requise.
 
 ### Points de service
 
@@ -427,7 +423,6 @@ Le premier paramètre d'une requête doit être spécifiée avec `?` et les para
 ### Documentation OpenAPI 3.0
 
 [https://api.meteo.gc.ca/openapi](https://api.meteo.gc.ca/openapi)
-
 
 ### Collections d'entités
 
@@ -451,7 +446,7 @@ Répertorier une seule collection d'entités :
 
 ### Requête
 
-Les requêtes sur les collections d'entités permettent un filtrage spatial, temporel et sur des propriétés. Les paramètres de filtre peuvent être combinés pour formuler une recherche exclusive ('et').
+Les requêtes sur les collections d'entités permettent un filtrage spatial, temporel et sur des propriétés. Les paramètres de filtre peuvent être combinés pour formuler une recherche exclusive ('et'). Le premier paramètre d'une requête doit être spécifiée avec `?` et les paramètres subséquents avec `&`.
 
 Les exemples suivants utilisent la collection [hydrométrique de moyennes quotidiennes](https://api.meteo.gc.ca/collections/hydrometric-daily-mean).
 
