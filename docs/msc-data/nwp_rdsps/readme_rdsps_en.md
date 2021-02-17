@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Deterministic Storm Surge Prediction System (RDSPS)
 
-The Regional Deterministic storm Surge Prediction System (RDSPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the Global Deterministic Prediction System (GDPS).
+The Regional Deterministic storm Surge Prediction System (RDSPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
 
 During the post processing phase tidal heights are predicted using Webtide (Dupont et al., 2002). The tidal heights (SSHT) from Webtide and surge forecast (ETAS) from Dalcoast are summed to obtain an estimate of the total water level (SSH).
 

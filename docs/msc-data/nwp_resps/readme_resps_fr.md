@@ -6,7 +6,7 @@
 
 # Données et Produits du Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
-Le Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) produit les prévisions de niveaux d'eau en utilisant le modèle d'océan DalCoast. DalCoast (Bernier and Thompson 2015) est un sytème de prévision d'onde de tempête pour la côte est du Canada basé sur la version moyennée en profondeur, barotrope et linéarisée du Modèle d'Océan de Princeton (POM). Le modèle est forcé par les vents à une élévation de 10 mètres et la pression au niveau de la mer du Système Global de Prévision d'Ensemble (SGPE).
+Le Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) produit les prévisions de niveaux d'eau en utilisant le modèle d'océan DalCoast. DalCoast (Bernier and Thompson 2015) est un sytème de prévision d'onde de tempête pour la côte est du Canada basé sur la version moyennée en profondeur, barotrope et linéarisée du Modèle d'Océan de Princeton (POM). Le modèle est forcé par les vents à une élévation de 10 mètres et la pression au niveau de la mer du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md).
 
 ## Accès
 
