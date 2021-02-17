@@ -6,8 +6,7 @@
 
 # Données et Produits du Système régional de prévision déterministe d'onde de tempête (SRPDOT)
 
-Le Système régional de prévision déterministe d'onde de tempête (SRPDOT) produit les prévisions de niveaux d'eau en utilisant le modèle d'océan DalCoast. DalCoast (Bernier and Thompson 2015) est un sytème de prévision d'onde de tempête pour la côte est du Canada basé sur la version moyennée en profondeur, barotrope et linéarisée du Modèle d'Océan de Princeton (POM). Le modèle est forcé par les vents à une élévation de 10 mètres et la pression au niveau de la mer du Système Global de Prévision
-Déterministe (SGPD).
+Le Système régional de prévision déterministe d'onde de tempête (SRPDOT) produit les prévisions de niveaux d'eau en utilisant le modèle d'océan DalCoast. DalCoast (Bernier and Thompson 2015) est un sytème de prévision d'onde de tempête pour la côte est du Canada basé sur la version moyennée en profondeur, barotrope et linéarisée du Modèle d'Océan de Princeton (POM). Le modèle est forcé par les vents à une élévation de 10 mètres et la pression au niveau de la mer du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md).
 
 Lors du post-traitement, le niveau d'eau associé à la marée est prévu en utilisant Webtide (Dupont et al., 2002). Le niveau d'eau associé à la marée (SSHT) de Webtide et le niveau d'eau associé à l'onde de tempête (ETAS) de Dalcoast sont additionnés pour obtenir un estimé du niveau d'eau total (SSH).
 

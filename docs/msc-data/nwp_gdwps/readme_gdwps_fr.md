@@ -6,7 +6,7 @@
 
 # Données et Produits du Système global de prévision déterministe de vague (SGPDV)
 
-Le Système global de prévision déterministe de vague (SGPDV) produit des prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du [Système global de prévision déterministe (SGPD)](../../nwp_gdps/readme_gdps_fr.md). La prévision du GDPS est un modèle couplé atmospère-glace-océan, sa prévision de glace de mer utilisée par la prévision du SGPDV pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
+Le Système global de prévision déterministe de vague (SGPDV) produit des prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md). La prévision du GDPS est un modèle couplé atmospère-glace-océan, sa prévision de glace de mer utilisée par la prévision du SGPDV pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
 
 WW3 (Tolman et le WAVEWATCH III® Development Group 2014) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.
 

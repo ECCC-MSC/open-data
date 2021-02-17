@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Ensemble Storm Surge Prediction System (RESPS)
 
-The Regional Ensemble storm Surge Prediction System (RESPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the Global Ensemble Prediction System (GEPS).
+The Regional Ensemble storm Surge Prediction System (RESPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md).
 
 ## Access
 
