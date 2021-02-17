@@ -409,11 +409,7 @@ One can select a variable, region of interest, temporal information and output f
 
 ## OGC API - Features
 
-The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) provides a specification to querying geospatial data on the web.
-
-The service operates over HTTPS and requests are made via HTTPS GET requests. No HTTPS authentication is required. Responses are JSON/[GeoJSON](https://geojson.org/) by default, but can be set to html using `f=html`.
-
-The first parameter in a query is specified with `?` and subsequent parameters with `&`.
+The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) provides a specification to querying geospatial data on the web. The service operates over HTTPS and requests are made via HTTPS GET requests. No HTTPS authentication is required.
 
 ### Service endpoints
 
@@ -445,7 +441,7 @@ Issue a query returning a single feature to inspect geometry and properties:
 
 ### Querying
 
-Querying feature collections allows for spatial, temporal and property filtering. Filter parameters can be combined to formulate an exclusive ('and') search.
+Querying feature collections allows for spatial, temporal and property filtering. Filter parameters can be combined to formulate an exclusive ('and') search. The first parameter in a query is specified with `?` and subsequent parameters with `&`.
 
 The examples that follow use the [hydrometric daily mean](https://api.weather.gc.ca/collections/hydrometric-daily-mean) feature collection.
 
