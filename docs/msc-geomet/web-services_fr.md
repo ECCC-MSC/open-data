@@ -60,7 +60,7 @@ Une requête WMS GetCapabilities est composée des paramètres suivants :
 
 Une requête WMS GetCapabilities pour GeoMet-Météo est donc construite ainsi :
 
-[https://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.weather.gc.ca/geomet/?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
+[https://geo.meteo.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.meteo.gc.ca/geomet/?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
 
 Chaque couche définie dans le document XML du WMS GetCapabilities contient l'information telle que l'identifiant de la couche et son nom, son étendue géographique, la plage temporelle ainsi que les styles disponibles.
 
@@ -90,13 +90,13 @@ Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, 
 La requête WMS GetMap suivante demande une image de la couche de température de l'air du Système global de prévision déterministe (SGPD) :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
 &CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 ```
 
 Et retourne :
 
-![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
+![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
 
 ### WMS GetFeatureInfo
 
@@ -128,7 +128,7 @@ Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour u
 Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dessus :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
 &CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
 ```
 
@@ -138,7 +138,7 @@ Une requête GetLegendGraphic retourne une image de la légende d'une couche pou
 
 Par exemple, la couche de température de l'air du SGPD offre plusieurs styles dans le document WMS GetCapabilities. Demander la légende du style `TEMPERATURE-LINEAR` en utilisant une requête GetLegendGraphic retourne cette légende :
 
-![Exemple GetLegendeGraphic TEMPERATURE-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
+![Exemple GetLegendeGraphic TEMPERATURE-LINEAR](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
 
 
 
@@ -161,13 +161,13 @@ Par exemple, la couche de température de l'air du SGPD offre plusieurs styles d
 Un exemple de requête GetLegendGraphic pour la couche de vent (GDWPS.UU.1h) du Système Global de Prévision Déterministe de Vague (SGPDV) va comme suit :
 
 ```
-https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0
+https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0
 &layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW
 ```
 
 Et retourne :
 
-![Exemple des flèches de vent du SGPDV](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW)
+![Exemple des flèches de vent du SGPDV](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW)
 
 
 ### Spécification du temps
@@ -195,7 +195,7 @@ La seconde balise `<Dimension>` représente les passes de modèles (model runs) 
 Avec cette information, un usager est en mesure d'effectuer une requête WMS GetMap pour la température de l'air du SGPD pour 12:00:00 UTC le 21 juin 2019 pour la passe de modèle la plus récente 2019-06-12T00:00:00Z. La requête serait celle-ci :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
 &CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
 &TIME=2019-06-21T12:00:00Z&DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
 ```
@@ -208,7 +208,7 @@ Il est important de considérer les différences dans la spécification du temps
 
 Dans GeoMet-Climat, les intervalles temporels sont soit annuels (YYYY) ou mensuels (YYYY-MM) selon la couche interrogée. Une requête WMS GetCapabilities sur les services GeoMet-Climat indique aux usagers quelles sont les dimensions temporelles disponibles pour un couche spécifique.
 
-Par exemple, la balise `<Dimension>` de la couche [Ensembles mensuels CMIP5 pour la vitesse du vent près de la surface (5e percentile)](https://geo.weather.gc.ca/geomet-climate?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&Layer=CMIP5.SFCWIND.RCP26.ENS.ABS_PCTL5) indique :
+Par exemple, la balise `<Dimension>` de la couche [Ensembles mensuels CMIP5 pour la vitesse du vent près de la surface (5e percentile)](https://geo.meteo.gc.ca/geomet-climate?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&Layer=CMIP5.SFCWIND.RCP26.ENS.ABS_PCTL5) indique :
 
 ```xml
 <Dimension name="time" units="ISO8601" default="2100-12" nearestValue="0">2006-01/2100-12/P1M</Dimension>
@@ -228,25 +228,25 @@ Voici deux exemples de requêtes WMS GetMap pour la couche de quantité de préc
 Couche RDPA.24F_PR avec le style CAPA24-LINEAR :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![Couche RDPA.24F_PR avec le style CAPA24-LINEAR](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
+![Couche RDPA.24F_PR avec le style CAPA24-LINEAR](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=CAPA24-LINEAR&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Couche RDPA.24F_PR avec le style RDPA-WXO :
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR
 &STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png
 ```
 
-![Couche RDPA.24F_PR avec le style RDPA-WXO](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
+![Couche RDPA.24F_PR avec le style RDPA-WXO](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être encodé tel un URL HTTP.
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
 &SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3C
 StyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2F
@@ -265,7 +265,7 @@ quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%
 Rule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E
 ```
 
-![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
+![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
 
 
 ## Web Coverage Service (WCS)
@@ -295,7 +295,7 @@ Une requête WCS GetCapabilities est composée des paramètres suivants :
 
 Une requête WCS GetCapabilities peut ainsi être construite de cette manière :
 
-[https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities)
+[https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities)
 
 Le document GetCapabilities résultant contiendra l'information sur le nom du service, l'étendue géographique des données, les couches et les formats disponibles.
 
@@ -312,7 +312,7 @@ Une requête WCS DescribeCoverage permet à l'usager de récupérer davantage d'
 
 Une requête WCS DescribeCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :
 
-[https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT)
+[https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT)
 
 ### WCS GetCoverage
 
@@ -341,7 +341,7 @@ Une requête WCS GetCoverage est utilisée afin de récupérer les données brut
 
 Une requête WCS GetCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :
 
-[https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
+[https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
 
 ### <a name="wcs-specification-du-temps"></a>Spécification du temps
 
@@ -356,7 +356,7 @@ Le service WCS de GeoMet-Climat ne supporte pas les requêtes avec les paramètr
 La liste des différentes bandes disponibles peut être récupérée par une requête WCS `DescribeCoverage`. Voici un exemple pour la couche DCS.TM.RCP26.YEAR.ANO_PCTL50 de GeoMet-Climat :
 
 ```
-https://geo.weather.gc.ca/geomet-climate?SERVICE=WCS&VERSION=2.0.1
+https://geo.meteo.gc.ca/geomet-climate?SERVICE=WCS&VERSION=2.0.1
 &REQUEST=DescribeCoverage&COVERAGEID=DCS.TM.RCP26.YEAR.ANO_PCTL50
 ```
 
@@ -416,71 +416,71 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web.
 
-Le service fonctionne via HTTP et les requêtes sont effectuées via des requêtes HTTP GET. Aucune authentification HTTP n'est requise. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `f=html`.
+Le service fonctionne via HTTPS et les requêtes sont effectuées via des requêtes HTTPS GET. Aucune authentification HTTPS n'est requise. Les réponses sont au format JSON/[GeoJSON](https://geojson.org/) par défaut et peuvent être retournées en format `html` en utilisant `f=html`.
 
 Le premier paramètre d'une requête doit être spécifiée avec `?` et les paramètres subséquents avec `&`.
 
 ### Points de service
 
-[https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features)
+[https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
 
 ### Documentation OpenAPI 3.0
 
-[https://geo.weather.gc.ca/geomet/features/api](https://geo.weather.gc.ca/geomet/features/api)
+[https://api.meteo.gc.ca/openapi](https://api.meteo.gc.ca/openapi)
 
 
 ### Collections d'entités
 
-Répertoriez toutes les collections d’entités disponibles :
+Répertorier toutes les collections d’entités disponibles :
 
-[https://geo.weather.gc.ca/geomet/features/collections](https://geo.weather.gc.ca/geomet/features/collections)
+[https://api.meteo.gc.ca/collections](https://api.meteo.gc.ca/collections)
 
 La réponse fournit une liste de collections de fonctionnalités avec leurs métadonnées associées (titre, description, liens, étendue, CRS).
 
 ### Collection d'entités
 
-Répertoriez une seule collection d'entités :
+Répertorier une seule collection d'entités :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-stations)
+[https://api.meteo.gc.ca/collections/hydrometric-stations](https://api.meteo.gc.ca/collections/hydrometric-stations)
 
 ### Inspection du schéma de collection d'entités
 
-Émettez une requête renvoyant une seule entité pour inspecter sa géométrie et ses propriétés :
+Émettre une requête renvoyant une seule entité pour inspecter sa géométrie et ses propriétés :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1)
+[https://geo.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Requête
 
 Les requêtes sur les collections d'entités permettent un filtrage spatial, temporel et sur des propriétés. Les paramètres de filtre peuvent être combinés pour formuler une recherche exclusive ('et').
 
-Les exemples suivants utilisent la collection [hydrométrique de moyennes quotidiennes](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean).
+Les exemples suivants utilisent la collection [hydrométrique de moyennes quotidiennes](https://api.meteo.gc.ca/collections/hydrometric-daily-mean).
 
 Requête par défaut, pas de filtres :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items)
 
 #### Spatial
 
 Requête par zone de sélection (minx, miny, maxx, maxy) :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
 #### Temporel
 
-Requête pour une valeur instantannée :
+Requête pour une valeur instantanée :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30)
 
 Requête pour un intervalle de temps :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?time=1972-10-30/2010-07-31)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
 
 
 #### Propriété
 
 Requête par une propriété de collection d'entités :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
 
 #### Pagination
 
@@ -490,7 +490,7 @@ Le paramètre `startindex` peut être utilisé pour spécifier l’enregistremen
 
 ##### Limite
 
-Le paramètre `limit` permet de définir le nombre maximal d'enregistrements à renvoyer. La taille de réponse par défaut est de 500 entitées. Si vous définissez une `limit` de 0, seul le nombre d'entités trouvées sera retourné (sans les entités réelles retournées).
+Le paramètre `limit` permet de définir le nombre maximal d'enregistrements à retourner. La taille de réponse par défaut est de 500 entités.
 
 ##### Parcourir les résultats
 
@@ -498,37 +498,32 @@ Les paramètres `startindex` et `limit` peuvent être utilisés en tandem pour p
 
 Requête et limite aux entités 1-2 :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
 
 Requête et limite aux entités 1 à 100 :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
 
 Requête et limite aux entités 101-200 :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
 
 ##### Stratégies de pagination
 
 La stratégie de pagination est couramment utilisée pour améliorer les performances lors du retour d'extractions de données volumineuses. Par exemple, un client peut faire défiler par 1 000 entités pour parcourir un enregistrement de station complet :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
 Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Cela constituerait le dossier complet.
 
-Une autre stratégie possible consiste à interroger toutes les données sans renvoyer aucun enregistrement :
-
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&limit=0)
-
-...puis en examinant la réponse (voir `numberMatched`) pour évaluer la taille de l'enregistrement complet. Le client peut alors décider comment ou s'il doit paginer en conséquence.
  
 #### Combinaison de paramètres de filtre
 
-Interrogez toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
+Interroger toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&time=2001-01-01/2010-12-31)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31)
 
 #### Exporter au format CSV
 
@@ -542,4 +537,4 @@ Toute requête peut être triée en ajoutant `sortby=PROPERTY:X`, où `PROPERTY`
 
 Récupérer une seule caractéristique par identifiant :
 
-[https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?f=csv)
+[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv)

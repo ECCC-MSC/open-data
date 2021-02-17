@@ -40,13 +40,13 @@ GeoMet-Météo donne accès aux données météorologiques, hydriques et environ
 
 Capacités de ce service :
 
-* L'URL WMS de GeoMet-Météo : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
-* L'URL WCS de GeoMet-Météo : [https://geo.weather.gc.ca/geomet?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
+* L'URL WMS de GeoMet-Météo : [https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
+* L'URL WCS de GeoMet-Météo : [https://geo.meteo.gc.ca/geomet?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.meteo.gc.ca/geomet?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
 
 Conseil d'utilisation :
 
 * Les usagers sont invités à utiliser `&layer=` dans leurs requêtes WMS GetCapabilities afin de pointer sur une couche spécifique et récupérer une réponse plus petite contenant les dimensions temporelles à jour
-    * Exemple pour la couche de la composite radar météo de neige à 1km : [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
+    * Exemple pour la couche de la composite radar météo de neige à 1km : [https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
 
 ### GeoMet-Climat
 
@@ -54,8 +54,8 @@ GeoMet-Climat donne accès aux données d'Environnement et Changement climatique
 
 Capacités de ce service :
 
-* L'URL WMS de GeoMet-Climat : [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr)
-* L'URL WCS de GeoMet-Climat : [https://geo.weather.gc.ca/geomet-climate?service=WCS&version=2.0.1&request=GetCapabilities&lang=fr](https://geo.weather.gc.ca/geomet-climate?service=WCS&version=2.0.1&request=GetCapabilities&lang=fr)
+* L'URL WMS de GeoMet-Climat : [https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr)
+* L'URL WCS de GeoMet-Climat : [https://geo.meteo.gc.ca/geomet-climate?service=WCS&version=2.0.1&request=GetCapabilities&lang=fr](https://geo.meteo.gc.ca/geomet-climate?service=WCS&version=2.0.1&request=GetCapabilities&lang=fr)
 
 Le code source de GeoMet-Climat et de l'Outil d'extraction de données climatiques est publiquement disponible sur GitHub :
 
@@ -64,11 +64,11 @@ Le code source de GeoMet-Climat et de l'Outil d'extraction de données climatiqu
 
 ### GeoMet-OGC-API
 
-GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES) de l'Open Geospatial Consortium (OGC). Ce service donne présentement accès aux données hydrométriques et climatiques.
+GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC API - Features (WFS 3)](https://github.com/opengeospatial/ogcapi-features) de l'Open Geospatial Consortium (OGC).
 
 Capacités de ce service :
 
-* L'URL de GeoMet-OGC-API : [https://geo.weather.gc.ca/geomet/features/?f=html](https://geo.weather.gc.ca/geomet/features/?f=html)
+* L'URL de GeoMet-OGC-API : [https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
 
 ### GeoMet-Beta
 
@@ -76,8 +76,8 @@ GeoMet-Beta donne accès à des données expérimentales et autres données non-
 
 Capacités de ce service :
 
-* L'URL WMS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
-* L'URL WCS de GeoMet-Beta : [https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
+* L'URL WMS de GeoMet-Beta : [https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
+* L'URL WCS de GeoMet-Beta : [https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
 
 
 ## Liste d'information
