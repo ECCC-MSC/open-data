@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * None
+    * Added URL for experimental STAC specification support
 * improvements:
     * Updated MSC GeoMet pages for version 2.14.1
 * bug fixes:
