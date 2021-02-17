@@ -80,6 +80,11 @@ Service capabilities:
 * GeoMet-Beta WMS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
 * GeoMet-Beta WCS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities)
 
+### SpatioTemporal Asset Catalog
+
+Experimental support for the [SpatioTemporal Asset Catalog (STAC) specification](https://github.com/radiantearth/stac-spec) is available for content of the [MSC Datamart](../msc-datamart/readme_en.md).
+
+* Experimental STAC URL: [https://api.weather.gc.ca/stac/](https://api.weather.gc.ca/stac/)
 
 ## Announcement mailing list
 
