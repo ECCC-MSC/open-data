@@ -12,8 +12,9 @@ Standardized Precipitation Evapotranspiration Index (SPEI) calculated using glob
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service.
 
+* [Data available from the GeoMet-Climate API / geospatial web services](readme_spei-geomet_en.md)
 * [NetCDF multi-model ensemble datasets available on the MSC Datamart](readme_spei-datamart_en.md)
 * [NetCDF multi-model ensemble and individual model datasets available on the Canadian Climate Data and Scenarios site](http://climate-scenarios.canada.ca/?page=spei)
 
