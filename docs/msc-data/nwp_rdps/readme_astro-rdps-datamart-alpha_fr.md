@@ -64,10 +64,10 @@ où :
 * __EATM__ : Atmosphère entière. Considérée comme une seule couche
 * __Grille__ : Grille horizontale [PS]
 * __resolution__ : Résolution horizontale, ici 35km
-* __PT{hh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). « hh » représente l’heure de prévision [0, 1, 2, ..., 84]
+* __PT{h}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). « h » représente l’heure de prévision [0, 1, 2, ..., 84]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
-Exemple de nom de fichier : 20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT084H.grib2
+Exemple de nom de fichier : 20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT84H.grib2
 
 ## Liste des variables
 
