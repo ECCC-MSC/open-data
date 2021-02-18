@@ -10,13 +10,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.23
 
-* date: 2021-02-17
+* date: 2021-02-18
 * announcements:
     * Not announced
 * new content:
     * Added URL for experimental STAC specification support
+    * RDPS-Astro (fr+en) added in RDPS DD page
 * improvements:
     * Updated MSC GeoMet pages for version 2.14.1
+    * Updated RDSPS, GDWPS, REWPS, GEWPS description (also, add images)
 * bug fixes:
     * None
   
