@@ -478,10 +478,16 @@ Query by a feature collection property:
 The `startindex` parameter can be used to specify the record to start at when extracting
 features. The default value is 0 (first feature).
 
+##### Total number of items
+
+The `resulttype=hits` parameter is used to return the number of features found in a collection, without the actual features returned. The number of features is found in the response's `numberMatched` key.
+
+Example: [https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
+
 ##### Limit
 
 The `limit` parameter is used to define the maximum records to return as part of querying
-for features.  The default response size is 500 features.
+for features. The default response size is 500 features.
 
 ##### Paging through results
 
