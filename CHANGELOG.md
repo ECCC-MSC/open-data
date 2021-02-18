@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * TBD
+    * Added missing links in Climate Indices page to existing GeoMet subpages
 * bug fixes:
     * None
   
