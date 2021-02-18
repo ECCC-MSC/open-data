@@ -483,6 +483,12 @@ Requête par une propriété de collection d'entités :
 
 Le paramètre `startindex` peut être utilisé pour spécifier l’enregistrement à partir duquel extraire les entités. La valeur par défaut est 0 (première entité).
 
+##### Nombre total d'enregistrements
+
+Le paramètre `resulttype=hits` est utilisé pour obtenir le nombre d'entités d'une collection, sans que les entités soient retournées. Le nombre d'enregistrements est indiqué à la valeur `numberMatched` de la réponse.
+
+Exemple : [https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
+
 ##### Limite
 
 Le paramètre `limit` permet de définir le nombre maximal d'enregistrements à retourner. La taille de réponse par défaut est de 500 entités.
