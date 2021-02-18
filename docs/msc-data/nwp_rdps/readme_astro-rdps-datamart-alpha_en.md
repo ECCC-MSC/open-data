@@ -69,7 +69,7 @@ where :
 
 Example of file name : 
 
-20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT084H.grib2
+20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT84H.grib2
 
 ## List of variables
 
