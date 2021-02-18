@@ -12,8 +12,9 @@ L’Indice de précipitations et d’évapotranspiration normalisé (IPEN) se ca
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
+Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
+* [Données disponibles via les services web géospatiaux GeoMet-Climat](readme_spei-geomet_fr.md)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_spei-datamart_fr.md)
 * [Données d'ensembles multimodèles et données individuelles en format NetCDF disponibles sur le site des Données et scénarios climatiques canadiens](http://scenarios-climatiques.canada.ca/index.php?page=spei)
 
