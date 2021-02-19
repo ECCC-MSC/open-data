@@ -68,7 +68,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Données climatiques
 
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
-* [Données climatiques historiques sur grille canadienne (CanGRD)](climate_cangrd/readme_cangrd_fr.md)
+* [Données climatiques historiques sur grille canadienne (CANGRD)](climate_cangrd/readme_cangrd_fr.md)
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
 * [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés](climate_dcs/readme_dcs_fr.md)
 * [Indice de précipitations et d’évapotranspiration normalisé (IPEN)](climate_spei/readme_spei_fr.md)
