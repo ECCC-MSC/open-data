@@ -6,6 +6,29 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday January 26th, 2021
+
+### Addition and replacement of satellite radiance observations
+
+On Tuesday January 26th, 2021, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to include and substitute the following observations:
+
+* Addition of microwave radiances from the MWHS-2 instrument aboard the FY-3C satellite
+* Replacement of infrared radiances from the IASI instrument aboard the MetOp-2/A satellite by those from MetOp-3/C
+
+## Tuesday December 8th, 2020
+
+### Addition of satellite radiance observations
+
+On Tuesday December 8th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+* Addition of microwave radiances from the AMSUA and MHS instruments aboard the MetOp-3/C satellite
+* Addition of infrared radiances from the CrIS-FSR instrument aboard the NPP satellite
+* Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-17 satellite
+
 ## Friday June 26th, 2020
 
 ### Addition of GPSRO observations from the COSMIC-II satellites

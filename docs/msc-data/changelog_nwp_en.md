@@ -6,7 +6,21 @@
 
 # Changes to the Canadian Meteorological Centre (CMC) Operational System
 
+## 2021
+
+### January 26, 2021
+
+* [Replacement of satellite radiance observations in the GEPS](../nwp_geps/changelog_geps_en#tuesday-january-26-2021)
+* [Addition and replacement of satellite radiance observations in the GDPS](../nwp_geps/changelog_gdps_en#tuesday-january-26-2021)
+* [Addition and replacement of satellite radiance observations in the RDPS](../nwp_geps/changelog_rdps_en#tuesday-january-26-2021)
+
 ## 2020
+
+### December 8, 2020
+ 
+* [Addition of satellite radiance observations in the GEPS](../nwp_geps/changelog_geps_en#tuesday-december-8-2020)
+* [Addition of satellite radiance observations in the GDPS](../nwp_geps/changelog_gdps_en#tuesday-december-8-2020)
+* [Addition of satellite radiance observations in the RDPS](../nwp_geps/changelog_rdps_en#tuesday-december-8-2020)
 
 ### June 26, 2020
 
