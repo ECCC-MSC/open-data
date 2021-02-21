@@ -6,6 +6,29 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mardi 26 janvier 2021
+
+### Ajout et remplacement d’observations de radiances satellitaires
+
+Le mardi 26 janvier 2021, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système global de prévision déterministe (SGPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure et de substituer les observations suivantes:
+
+* Ajout des radiances micro-ondes de l’instrument MWHS-2 du satellite FY-3C
+* Remplacement des radiances infrarouges de l’instrument IASI du satellite MetOp-2/A par celles de Metop-3/C
+
+## Le mardi 8 décembre 2020
+
+### Ajouts d’observations de radiances satellitaires
+
+Le mardi 8 décembre 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système global de prévision déterministe (SGPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+* Ajout des radiances micro-ondes des instruments AMSUA et MHS du satellite MetOp-3/C
+* Ajout des radiances infrarouges de l’instrument CrIS-FSR du satellite NPP
+* Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-17
+
 ## Le vendredi 26 juin 2020
 
 ### Ajout des observations GPSRO des satellites COSMIC-II

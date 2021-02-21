@@ -6,7 +6,21 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+## 2021
+
+### 26 janvier 2021
+
+* [Remplacement d’observations de radiances satellitaires dans le SGPE](../nwp_geps/changelog_geps_fr#le-mardi-26-janvier-2021)
+* [Ajout et remplacement d’observations de radiances satellitaires dans le SGPD](../nwp_geps/changelog_gdps_fr#le-mardi-26-janvier-2021)
+* [Ajout et remplacement d’observations de radiances satellitaires dans le SRPD](../nwp_geps/changelog_rdps_fr#le-mardi-26-janvier-2021)
+
 ## 2020
+
+### 8 décembre 2020
+
+* [Ajouts d’observations de radiances satellitaires dans le SGPE](../nwp_geps/changelog_geps_fr#le-mardi-8-decembre-2020)
+* [Ajouts d’observations de radiances satellitaires dans le SGPD](../nwp_geps/changelog_gdps_fr#le-mardi-8-decembre-2020)
+* [Ajouts d’observations de radiances satellitaires dans le SRPD](../nwp_geps/changelog_rdps_fr#le-mardi-8-decembre-2020)
 
 ### 26 juin 2020
 
