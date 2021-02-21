@@ -66,4 +66,4 @@ List and links to the products available for this dataset :
 
 ## Changelog 
 
-The chronology of changes to the Regional Deterministic Prediction System (RDPS) is available [here](changelog_rdps_en.md).
+The chronology of changes to the Regional Deterministic Prediction System (RDPS) is available [in the changelog](changelog_rdps_en.md).
