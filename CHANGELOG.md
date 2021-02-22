@@ -8,25 +8,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.25
-
-* date: TBD
-* announcements:
-    * Not announced
-* new content:
-    * Update RDPS, GDPS, GEPS changelogs (addition and replacement of observations)
-* improvements:
-    * 
-* bug fixes:
-    * 
-
 ## 2.3.24
 
 * date: TBD
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * Update RDPS, GDPS, GEPS changelogs: addition and replacement of radiance observations
 * improvements:
     * Added missing links in Climate Indices pages to existing GeoMet subpages
     * Added missing links in SPEI pages to existing GeoMet subpages
