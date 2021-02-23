@@ -64,7 +64,7 @@ where :
 * __EATM__ : Entire atmosphere. Considered as a single layer
 * __Grille__ : Horizontal grid [PS]
 * __resolution__ : Horizontal resolution [35km]
-* __PT{h}H__ : Forecast hours based on ISO8601 norms. « h » is the forecast hour [0, 1, 2, ..., 84]
+* __PT{h}H__ : Forecast hours based on [ISO8601]((https://en.wikipedia.org/wiki/ISO_8601) norms. « h » is the forecast hour [0, 1, 2, ..., 84]
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
 Example of file name : 

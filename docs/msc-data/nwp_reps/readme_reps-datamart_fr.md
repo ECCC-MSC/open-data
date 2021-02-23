@@ -89,7 +89,7 @@ Exemple de nom de fichier : CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P00
 Les fichiers ont la nomenclature suivante :
 
 ```
-{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
 ```
 
 où :
@@ -104,12 +104,12 @@ où :
 * __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, AGL-10m pour 10m au-dessus du sol]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
-* __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
-Exemple de nom de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_P024.grib2
+Exemple de nom de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_P024.grib2)
+Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## Liste des variables
 

@@ -41,7 +41,7 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_GEWPS_VAR_LVL_{grille}{resolution}_PT{h}H.grib2
+{YYYYMMDD}T{HH}Z_MSC_GEWPS_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
 
 Where:
 
@@ -55,12 +55,12 @@ Where:
 * __LVL__ : Vertical level [SFC for the surface]
 * __grille__ : Horizontal grid type [LatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.25x0.25]
-* __PThH__: P, T and H are constant character designating Period, Time and Hour. h is the forecast hour [0, 3, 6, ..., 384].
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 384].
 * __grib2__: constant string indicating the GRIB2 format is used
 
 Example of file name:
 
-20210202T12Z_MSC_GEWPS_HTSGW_SFC_LatLon0.25x0.25_PT15H.grib2
+20210202T12Z_MSC_GEWPS_HTSGW_SFC_LatLon0.25x0.25_PT015H.grib2
 
 ## Variable List
 
