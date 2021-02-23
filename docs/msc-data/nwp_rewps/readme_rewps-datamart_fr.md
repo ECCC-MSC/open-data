@@ -41,7 +41,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_REWPS-DOMAIN_VAR_LVL_{grille}{resolution}_PT{h}H.grib2
+{YYYYMMDD}T{HH}Z_MSC_REWPS-DOMAIN_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
 
 où :
 
@@ -55,12 +55,12 @@ où :
 * __LVL__ : Type de niveau vertical [SFC pour la surface]
 * __grille__ : Type de grille horizontale [LatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.0225x0.0310]
-* __PThH__ : P, T et H sont des caractères constants désigannt Période, Temps et Heure. h représente l’heure de prévision [0, 3, 6, 9, 12, ..., 72].
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de fichier :
 
-20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0225x0.0310_PT66H.grib2
+20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0225x0.0310_PT066H.grib2
 
 ## Liste des variables
 

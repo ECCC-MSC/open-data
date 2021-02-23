@@ -89,7 +89,7 @@ Example of filname: CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-pr
 Files have the following nomenclature:
 
 ```
-{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
 ```
 where:
 
@@ -103,12 +103,12 @@ where:
 * __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, AGL-10m for 10m above ground level]
 * __Grille__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Indicating resolution in degrees [0.09°(about 10km)] for latitude and longitude directions
-* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 003, 006, ..., 072]
+* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 072]
 * __grib2__ : Constant string indicating that the GRIB2 format is used
 
-Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_P024.grib2
+Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_P024.grib2)
+Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## List of variables
 
