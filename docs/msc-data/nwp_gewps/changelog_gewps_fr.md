@@ -1,4 +1,4 @@
-[In English](changelog_resps_en.md)
+[In English](changelog_gewps_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

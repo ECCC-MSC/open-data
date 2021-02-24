@@ -10,4 +10,4 @@
 
 ### The Canadian Meteorological Centre (CMC) implements version 1.0.0 of the OPerational Hydrodynamic Simulation (OPHS) system
 
-On Monday May 13 2013, CMC implemented the OPerational Hydrodynamic Simulation (OPHS) system in order to produce a daily analysis of the portion of the St-Lawrence river between Montreal and Trois-Rivieres. Please consult the OPHS page in the CMC product guide [here](/readme_ophs_en.md) for more information.
+On Monday May 13 2013, CMC implemented the OPerational Hydrodynamic Simulation (OPHS) system in order to produce a daily analysis of the portion of the St-Lawrence river between Montreal and Trois-Rivieres. Please consult the OPHS page in the CMC product guide [here](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/shop_e.html) for more information.
