@@ -12,7 +12,7 @@ This page describes the experimental [Global Ensemble Wave Prediction System](re
 
 MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
+The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
 
 The experimental data can be accessed at the following URL :
 
@@ -24,7 +24,7 @@ where :
 
 A history of 24 hours is maintained in this directory.
 
-## Available Domains
+## Available Domain
 
 Global latitude-longitude grid.
 
@@ -55,12 +55,12 @@ Where:
 * __LVL__ : Vertical level [SFC for the surface]
 * __grille__ : Horizontal grid type [LatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.25x0.25]
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 384].
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 384]
 * __grib2__: constant string indicating the GRIB2 format is used
 
 Example of file name:
 
-20210202T12Z_MSC_GEWPS_HTSGW_SFC_LatLon0.25x0.25_PT015H.grib2
+20210225T12Z_MSC_GEWPS_HTSGW_SFC_LatLon0.25x0.25_PT015H.grib2
 
 ## Variable List
 

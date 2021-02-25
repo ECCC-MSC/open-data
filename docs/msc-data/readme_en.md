@@ -57,6 +57,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
     * —
     * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
+    * [Global Ensemble Wave Prediction System (GEWPS)](nwp_gewps/readme_gewps_en.md)
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * —
     * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)

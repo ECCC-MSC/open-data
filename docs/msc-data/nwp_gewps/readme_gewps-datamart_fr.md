@@ -24,7 +24,7 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-## Domaines disponibles
+## Domaine disponible
 
 Grille latitude-longitude globale
 
@@ -45,21 +45,21 @@ Les fichiers ont la nomenclature suivante :
 
 où :
 
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __T__ : Séparateur de temps selon les normes ISO8601.
-* __HH__ : Heure UTC de la passe [00, 12].
-* __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions.
-* __GEWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision d'ensemble des vagues.
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Séparateur de temps selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions
+* __GEWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision d'ensemble de vague
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau vertical [SFC pour la surface]
 * __grille__ : Type de grille horizontale [LatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.25x0.25]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 384].
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 384]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de fichier :
 
-CMC_gewps_global_HTSGW_SFC_latlon0.25x0.25_2017092112_PT096H.grib2
+20210225T12Z_MSC_GEWPS_HTSGW_SFC_LatLon0.25x0.25_PT015H.grib2
 
 ## Liste des variables
 
@@ -73,7 +73,7 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 |10/0/46 |	Direction pic des vagues |	PWAVEDIR |	SFC |	degrees true|
 |10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	SFC |	degré vrai |
 |10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	SFC |	m |
-|10/0/35 |	Période pic des vagues de la mer du vent |	WVPER |	SFC |	s |
+|10/0/35 |	Période pic des vagues de la mer du vent |	PPERWW |	SFC |	s |
 |10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	SFC |	degré vrai |
 |10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	SFC |	m |
 |10/0/65 |	Période pic de la première houle |	PWPFSWEL |	SFC |	s |
