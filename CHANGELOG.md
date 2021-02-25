@@ -10,11 +10,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.24
 
-* date: TBD
+* date: 2021-02-25
 * announcements:
     * Not announced
 * new content:
     * Update RDPS, GDPS, GEPS changelogs: addition and replacement of radiance observations
+    * Add GEWPS in the main NWP list
 * improvements:
     * Added missing links in Climate Indices pages to existing GeoMet subpages
     * Added missing links in SPEI pages to existing GeoMet subpages
