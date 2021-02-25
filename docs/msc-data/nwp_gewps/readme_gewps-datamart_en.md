@@ -12,7 +12,7 @@ This page describes the experimental [Global Ensemble Wave Prediction System](re
 
 MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
+The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
 
 The experimental data can be accessed at the following URL :
 
@@ -24,7 +24,7 @@ where :
 
 A history of 24 hours is maintained in this directory.
 
-## Available Domains
+## Available Domain
 
 Global latitude-longitude grid.
 

@@ -24,7 +24,7 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-## Domaines disponibles
+## Domaine disponible
 
 Grille latitude-longitude globale
 
