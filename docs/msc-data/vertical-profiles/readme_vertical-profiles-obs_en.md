@@ -12,7 +12,7 @@ This page describes the observed data containing all levels received from actual
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [CSV data available on the MSC Datamart](readme_vertical-profiles-obs-datamart_en.md) 
 

@@ -12,7 +12,7 @@ Observations de surface mesurées aux stations automatiques et manuelles des ré
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Sommaires d'observations pour les provinces et territoires en format XML, disponibles sur le Datamart du SMC](readme_obs_insitu_xmldatamart_fr.md) 
 * [Langage de balisage des observations météorologiques au sol (SWOB-ML)](readme_obs_insitu_swobdatamart_fr.md)

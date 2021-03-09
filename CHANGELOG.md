@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added missing links in Climate Indices pages to existing GeoMet subpages
     * Added missing links in SPEI pages to existing GeoMet subpages
     * Fixed CANGRD acronym in dataset listing
+    * Improved wording for availability of observation datasets
 * bug fixes:
     * None
   
