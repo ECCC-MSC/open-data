@@ -6,13 +6,13 @@
 
 # Data and products of in situ observations
 
-Surface Observations measured at the automatic and manual stations of the Environement and Climate Change Canada and partners networks, declined either for a single station, or for the stations of specific provinces and territories. 
+Surface Observations measured at the automatic and manual stations of the Environment and Climate Change Canada and partners networks, either for a single station, or for the stations of specific provinces and territories. 
 
 ## Access
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Provincial and territory observation summaries in XML format, available on the MSC Datamart](readme_obs_insitu_xmldatamart_en.md) 
 * [Surface Weather Observation in Markup Language SWOB Met-ML, available on the MSC Datamart](readme_obs_insitu_swobdatamart_en.md)

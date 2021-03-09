@@ -12,7 +12,7 @@ Cette page décrit les données observées (ObsTephi) contenant les données ré
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données en format CSV disponibles sur le Datamart du SMC](readme_vertical-profiles-obs-datamart_fr.md) 
 
