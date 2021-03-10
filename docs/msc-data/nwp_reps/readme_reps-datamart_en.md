@@ -108,7 +108,7 @@ where:
 
 Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
+Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-Prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## List of variables
 
