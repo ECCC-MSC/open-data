@@ -109,7 +109,7 @@ où :
 
 Exemple de nom de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
+Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-Prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## Liste des variables
 
