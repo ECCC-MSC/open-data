@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.25
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * Add REWPS in the main NWP list
+* improvements:
+    * Added REWPS domain image
+    * Typos
+* bug fixes:
+    * None
+  
 ## 2.3.24
 
 * date: 2021-02-25
