@@ -24,9 +24,13 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-## Domaines disponibles
+## Spécification technique de la grille
 
-### Grands Lacs
+Les données du SRPEV sont disponibles sur le domaine des Grands Lacs.
+
+![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps_grl.png)
+
+Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -41,22 +45,25 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_REWPS-DOMAIN_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
+```
+{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2
+```
 
 où :
 
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __T__ : Séparateur de temps selon les normes ISO8601.
-* __HH__ : Heure UTC de la passe [00, 12].
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Séparateur de temps selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions.
-* __REWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble des vagues.
-* __DOMAIN__ : Chaîne de caractères indiquant le domaine.
+* __REWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble des vagues
+* __DOMAIN__ : Chaîne de caractères indiquant le domaine [Great-Lakes]
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau vertical [SFC pour la surface]
 * __grille__ : Type de grille horizontale [LatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.0225x0.0310]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072].
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072]
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de fichier :
 
