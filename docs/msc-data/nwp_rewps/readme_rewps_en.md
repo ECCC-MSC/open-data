@@ -11,9 +11,7 @@ The Regional Ensemble Wave Prediction System (REWPS) uses the third generation s
 
 WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years.
 
-This system includes one domain :
-
-* Great Lakes
+The REWPS data are available on the Great Lakes domain.
 
 ## Access
 

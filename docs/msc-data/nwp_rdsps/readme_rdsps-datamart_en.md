@@ -43,7 +43,9 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
+```
+{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_{VAR}_{LVL}_{grille}{resolution}_P{hhh}.nc 
+```
 
 Where:
 
@@ -55,7 +57,7 @@ Where:
 * __RDSPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Deterministic Storm Surge Prediction System over the North-West domain
 * __VAR__ : Variable type included in the file [ETAS, SSHT, SSH]
 * __LVL__ : Vertical level [SFC for the surface]
-* __Grille__ : Horizontal grid lat-lon [LatLon]
+* __grille__ : Horizontal grid lat-lon [LatLon]
 * __Resolution__ : 0.033x0.033. Indicating resolution in degreee 0.033x0.033 in latitude and longitude directions
 * __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 240]
 * __nc__: constant string indicating the NetCDF format is used

@@ -42,7 +42,9 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc
+```
+{YYYYMMDD}T{HH}Z_MSC_RDSPS-Atlantic-North-West_{VAR}_{LVL}_{grille}{resolution}_P{hhh}.nc
+```
 
 où :
 
@@ -54,7 +56,7 @@ où :
 * __RDSPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe d'onde de tempête sur le domaine nord ouest
 * __VAR__ : Variables contenues dans le fichier [ETAS, SSHT, SSH]
 * __LVL__ : Niveau vertical [SFC, pour la surface]
-* __Grille__ : Grille horizontale lat-lon [LatLon]
+* __grille__ : Grille horizontale lat-lon [LatLon]
 * __resolution__ : 0.033x0.033. Signifie une résolution de 0.033° dans les directions longitudinale et latitudinale
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 240]
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF

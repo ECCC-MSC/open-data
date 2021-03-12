@@ -24,11 +24,13 @@ where :
 
 A 24-hour history is stored in this directory.
 
-## Available Domains
+## Grid technical specification
 
-### Great Lakes
+The REWPS data are available on the Great Lakes domain.
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps_grl.png)
+![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps.png)
+
+This table lists the values of different parameters of the REWPS grid:
 
 | Parameter | Value |
 | ------ | ------ |
@@ -44,7 +46,9 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_REWPS-DOMAIN_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
+```
+{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2
+```
 
 Where:
 
@@ -54,7 +58,7 @@ Where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __REWPS__ : Constant string indicating that data is from the Regional Ensemble Wave Prediction System
-* __DOMAIN__ : String indicating which domain the data is from
+* __DOMAIN__ : String indicating which domain the data is from [Great-Lakes]
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [SFC for the surface]
 * __grille__ : Horizontal grid type [LatLon]
