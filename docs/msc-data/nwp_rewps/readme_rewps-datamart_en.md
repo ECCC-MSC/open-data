@@ -28,7 +28,7 @@ A 24-hour history is stored in this directory.
 
 The REWPS data are available on the Great Lakes domain.
 
-![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps.png)
+![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps_grl.png)
 
 This table lists the values of different parameters of the REWPS grid:
 

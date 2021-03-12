@@ -28,7 +28,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 Les données du SRPEV sont disponibles sur le domaine des Grands Lacs.
 
-![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps.png)
+![Image de la grille du SRPEV](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rewps/grille_rewps_grl.png)
 
 Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
