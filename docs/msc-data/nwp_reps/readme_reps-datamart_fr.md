@@ -141,7 +141,7 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-50, température à 50hPa
 * __TCDC__ : Couverture nuageuse totale 
 * __PRES__ : Pression à la surface 
-* __MSL__ : Pression au niveau moyen de la mer 
+* __PRMSL__ : Pression au niveau moyen de la mer 
 * __TSOIL__ : Température du sol 10cm sous la surface. Ex: TSOIL_DBS-10cm 
 * __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VOISLM_DBS-10cm 
 * __LHTFL__ : Flux net de chaleur latente à la surface 
