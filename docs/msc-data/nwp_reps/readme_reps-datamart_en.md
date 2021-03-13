@@ -131,7 +131,7 @@ The GRIB2 files variables for individual members are the following. The variable
 * __AICEP__ : Accumulated precipitation in the form of ice 
 * __ASNOW__ : Accumulated precipitation in the form of snow 
 * __APCP__ : Accumulated precipitation, total of all forms
-* __SNOD_SF__ : Snow depth 
+* __SNOD__ : Snow depth 
 * __WEASD__ : Water equivalent of accumulated Snow Depth 
 * __HGT__ : Geopotential height ay different pressure levels. Ex: HGT_ISBL-500, geopotential height at 500hPa
 * __RH__ : Relative humidity at different pressure levels. Ex: RH_ISBL-10, relative himidity at 10hPa; RH_AGL-2m, relative himidity 2m above ground
@@ -140,7 +140,7 @@ The GRIB2 files variables for individual members are the following. The variable
 * __TMP__ : Temperature at different pressure levels. Ex: TMP_AGL-2m, temperature 2m above ground; TMP_ISBL-50, temperature at 50hPa
 * __TCDC__ : Total cloud cover
 * __PRES__ : Surface pressure
-* __MSL__ : Mean sea level pressure
+* __PRMSL__ : Mean sea level pressure
 * __TSOIL__ : Soil temperature 10cm below surface. Ex: TSOIL_DBS-10cm 
 * __VSOILM__ : Volumetric soil moisture 10cm below surface. Ex: VOISLM_DBS-10cm  
 * __LHTFL__ : Latent heat net flux at surface 
