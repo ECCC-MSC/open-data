@@ -36,7 +36,7 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille :
 | ------ | ------ |
 | ni | 550 |
 | nj | 365 |
-| résolution | 0.0225° x 0.0310° |
+| résolution | 0.0224° x 0.0310° |
 | coordonnées du premier point de grille | 41.0984° N  92.4790° O |
 
 ## Nomenclature des noms de fichiers
@@ -61,13 +61,13 @@ où :
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau vertical [SFC pour la surface]
 * __grille__ : Type de grille horizontale [LatLon]
-* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.0225x0.0310]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.0224x0.0310]
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de fichier :
 
-20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0225x0.0310_PT066H.grib2
+20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0224x0.0310_PT066H.grib2
 
 ## Liste des variables
 
