@@ -36,7 +36,7 @@ This table lists the values of different parameters of the REWPS grid:
 | ------ | ------ |
 | ni | 550 |
 | nj | 365 |
-| resolution | 0.0225° x 0.0310° |
+| resolution | 0.0224° x 0.0310° |
 | coordinate of first grid point | 41.0984° N  92.4790° O |
 
 
@@ -62,13 +62,13 @@ Where:
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [SFC for the surface]
 * __grille__ : Horizontal grid type [LatLon]
-* __resolution__ : Indicating resolution in degreee in latitude and longitude direction [0.0225x0.0310]
+* __resolution__ : Indicating resolution in degreee in latitude and longitude direction [0.0224x0.0310]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 072].
 * __grib2__: constant string indicating the GRIB2 format is used
 
 Example of file name:
 
-20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0225x0.0310_PT066H.grib2
+20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0224x0.0310_PT066H.grib2
 
 ## Variable List
 
