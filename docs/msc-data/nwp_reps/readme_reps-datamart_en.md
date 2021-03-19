@@ -133,11 +133,11 @@ The GRIB2 files variables for individual members are the following. The variable
 * __APCP__ : Accumulated precipitation, total of all forms
 * __SNOD__ : Snow depth 
 * __WEASD__ : Water equivalent of accumulated Snow Depth 
-* __HGT__ : Geopotential height ay different pressure levels. Ex: HGT_ISBL-500, geopotential height at 500hPa
-* __RH__ : Relative humidity at different pressure levels. Ex: RH_ISBL-10, relative himidity at 10hPa; RH_AGL-2m, relative himidity 2m above ground
-* __UGRD__ : Wind U-component at different pressure levels.  Ex: UGRD_ISBL-700, wind U-component at 700hPa 
-* __VGRD__ : Wind V-component at different pressure levels. Ex: VGRD_ISBL-700, wind V-component at 700hPa
-* __TMP__ : Temperature at different pressure levels. Ex: TMP_AGL-2m, temperature 2m above ground; TMP_ISBL-50, temperature at 50hPa
+* __HGT__ : Geopotential height ay different pressure levels. Ex: HGT_ISBL-0500, geopotential height at 500hPa
+* __RH__ : Relative humidity at different pressure levels. Ex: RH_ISBL-0010, relative himidity at 10hPa; RH_AGL-2m, relative himidity 2m above ground
+* __UGRD__ : Wind U-component at different pressure levels.  Ex: UGRD_ISBL-0700, wind U-component at 700hPa 
+* __VGRD__ : Wind V-component at different pressure levels. Ex: VGRD_ISBL-0700, wind V-component at 700hPa
+* __TMP__ : Temperature at different pressure levels. Ex: TMP_AGL-2m, temperature 2m above ground; TMP_ISBL-0050, temperature at 50hPa
 * __TCDC__ : Total cloud cover
 * __PRES__ : Surface pressure
 * __PRMSL__ : Mean sea level pressure
