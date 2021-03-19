@@ -134,11 +134,11 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __APCP0__ : Précipitations accumulées sous toutes les formes 
 * __SNOD__ : Épaisseur de la neige au sol 
 * __WEASD__ : Équivalent en eau de l'épaisseur de la neige au sol 
-* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT_ISBL-500, hauteur géopotentielle à 500hPa
-* __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-10, humidité relative à 10hPa; RH_AGL-2m, humidité relative à 2m au-dessus du sol
-* __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-700, composante U du vent à 700hPa 
-* __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-700, composante V du vent à 700hPa 
-* __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-50, température à 50hPa
+* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT_ISBL-0500, hauteur géopotentielle à 500hPa
+* __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-0010, humidité relative à 10hPa; RH_AGL-2m, humidité relative à 2m au-dessus du sol
+* __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-0700, composante U du vent à 700hPa 
+* __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-0700, composante V du vent à 700hPa 
+* __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-0050, température à 50hPa
 * __TCDC__ : Couverture nuageuse totale 
 * __PRES__ : Pression à la surface 
 * __PRMSL__ : Pression au niveau moyen de la mer 
