@@ -47,9 +47,9 @@ WMS styles:
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic).
-* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2`.
+* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=FW-EATM-PM-DIFF_UGM2`.
 
-![The RAQDPS-FW.EATM_PM2.5-DIFF [ug/m^2] WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2)
+![The RAQDPS-FW.EATM_PM2.5-DIFF [ug/m^2] WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=FW-EATM-PM-DIFF_UGM2)
 
 
 ## Support

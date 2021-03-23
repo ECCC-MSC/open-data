@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.27
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Fixed RAQDPS-FW WMS legend retrieval example
+
 ## 2.3.26
 
 * date: 2021-03-15

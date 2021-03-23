@@ -47,9 +47,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/web-services_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2).
+* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=FW-EATM-PM-DIFF_UGM2).
 
-![La légende RAQDPS-FW.EATM_PM2.5-DIFF [ug/m^2]](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=RAQDPS-FW-EATM-PM-DIFF_UGM2)
+![La légende RAQDPS-FW.EATM_PM2.5-DIFF [ug/m^2]](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS-FW.EATM_PM2.5-DIFF&format=image/png&STYLE=FW-EATM-PM-DIFF_UGM2)
 
 
 ## Support
