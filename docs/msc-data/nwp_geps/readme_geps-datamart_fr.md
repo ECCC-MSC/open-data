@@ -114,27 +114,27 @@ Pour les membres individuels:
 Pour les produits probabilistes:
 
 * __FPRATE-Accum-12h_SFC_0__    : Pluie verglaçante accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __FPRATE-Accum-24h_SFC_0__    : Pluie verglaçante accumulée sur une période de 24h : 24h-384h à chaque 24h
+* __FPRATE-Accum-24h_SFC_0__    : Pluie verglaçante accumulée sur une période de 24h : 24h-384h à chaque 12h
 * __HEATX-Max-24h_TGL_2m__      : Humidex 2m au-dessus du sol - Maximum sur une période de 24h : 24h-384h à chaque 24h
 * __HEATX_TGL_2m__              : Humidex 2m au-dessus du sol : 3-384h à chaque 3h
-* __HGT_ISBL_0500__               : Hauteur du géopotentiel 500 hPa : 3-384h à chaque 12h
+* __HGT_ISBL_0500__               : Hauteur du géopotentiel 500 hPa : 12-384h à chaque 12h
 * __IPRATE-Accum-12h_SFC_0__    : Grésil accumulé sur une période de 12h : 12h-384h à chaque 12h
-* __IPRATE-Accum-24h_SFC_0__    : Grésil accumulé sur une période de 24h : 24h-384h à chaque 24h
+* __IPRATE-Accum-24h_SFC_0__    : Grésil accumulé sur une période de 24h : 24h-384h à chaque 12h
 * __PRMSL_MSL_0__              : Pression au niveau de la mer : 3-384h à chaque 12h
-* __RATE-Accum-12h_SFC_0__    : Pluie accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __RATE-Accum-24h_SFC_0__    : Pluie accumulée sur une période de 24h : 24h-384h à chaque 24h
-* __PRATE-Accum-12h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __SPRATE-Accum-24h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 24h : 24h-384h à chaque 24h
+* __RPRATE-Accum-12h_SFC_0__    : Pluie accumulée sur une période de 12h : 12h-384h à chaque 12h
+* __RPRATE-Accum-24h_SFC_0__    : Pluie accumulée sur une période de 24h : 24h-384h à chaque 12h
+* __SPRATE-Accum-12h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 12h : 12h-384h à chaque 12h
+* __SPRATE-Accum-24h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 24h : 24h-384h à chaque 12h
 * __TCDC_SFC_0__                : Couverture nuageuse : 3-384h à chaque 3h
 * __TEMP-Max-24h_TGL_2m__       : Température 2m au-dessus du sol - Maximum sur une période de 24h : 24h-384h à chaque 24h
 * __TEMP-Min-24h_TGL_2m__       : Température 2m au-dessus du sol - Minimum sur une période de 24h : 24h-384h à chaque 24h
 * __TEMP_TGL_2m__               : Température 2m au-dessus du sol : 3-384h à chaque 3h
-* __TPRATE-Accum-120h_SFC_0__   : Précipitations totales accumulées sur une période de 120h : 120h-384h à chaque 120h
+* __TPRATE-Accum-120h_SFC_0__   : Précipitations totales accumulées sur une période de 120h : 120h-384h à chaque 24h
 * __TPRATE-Accum-12h_SFC_0__    : Précipitations totales accumulées sur une période de 12h : 12h-384h à chaque 12h
-* __TPRATE-Accum-24h_SFC_0__    : Précipitations totales accumulées sur une période de 24h : 24h-384h à chaque 24h
-* __TPRATE-Accum-48h_SFC_0__    : Précipitations totales accumulées sur une période de 48h : 48h-384h à chaque 48h
-* __TPRATE-Accum-72h_SFC_0__    : Précipitations totales accumulées sur une période de 72h : 72h-384h à chaque 72h
-* __TPRATE-Accum-96h_SFC_0__    : Précipitations totales accumulées sur une période de 96h : 96h-384h à chaque 96h
+* __TPRATE-Accum-24h_SFC_0__    : Précipitations totales accumulées sur une période de 24h : 24h-384h à chaque 12h
+* __TPRATE-Accum-48h_SFC_0__    : Précipitations totales accumulées sur une période de 48h : 48h-384h à chaque 24h
+* __TPRATE-Accum-72h_SFC_0__    : Précipitations totales accumulées sur une période de 72h : 72h-384h à chaque 24h
+* __TPRATE-Accum-96h_SFC_0__    : Précipitations totales accumulées sur une période de 96h : 96h-384h à chaque 24h
 * __WCF-Min-24h_TGL_2m__        : Facteur éolien 2m au-dessus du sol - Minimum sur une période de 24h : 24h-384h à chaque 24h
 * __WCF_TGL_2m__                : Facteur éolien 2m au-dessus du sol : 3-384h à chaque 3h
 * __WIND-Max-12h_TGL_10m__      : Vitesse du vent 10m au-dessus du sol - Maximum sur une période de 12h : 12h-384h à chaque 12h

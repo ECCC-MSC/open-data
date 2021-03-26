@@ -113,27 +113,27 @@ For individual members:
 For ensemble products:
 
 * __FPRATE-Accum-12h_SFC_0__    : Freezing rain accumulated over a 12h period : 12h-384h every 12h
-* __FPRATE-Accum-24h_SFC_0__    : Freezing rain accumulated over a 24h period : 24h-384h every 24h
+* __FPRATE-Accum-24h_SFC_0__    : Freezing rain accumulated over a 24h period : 24h-384h every 12h
 * __HEATX-Max-24h_TGL_2m__      : Humidex 2m above ground - Maximum over a 24h period : 24h-384h every 24h
 * __HEATX_TGL_2m__              : Humidex 2m above ground : 3-384h every 3h
-* __HGT_ISBL_0500__               : Geopotential height 500 hPa : 3-384h every 12h
+* __HGT_ISBL_0500__               : Geopotential height 500 hPa : 12-384h every 12h
 * __IPRATE-Accum-12h_SFC_0__    : Ice pellet accumulated over a 12h period : 12h-384h every 12h
-* __IPRATE-Accum-24h_SFC_0__    : Ice pellet accumulated over a 24h period : 24h-384h every 24h
+* __IPRATE-Accum-24h_SFC_0__    : Ice pellet accumulated over a 24h period : 24h-384h every 12h
 * __PRMSL_MSL_0__               : Mean sea level pressure : 3-384h every 12h
 * __RPRATE-Accum-12h_SFC_0__    : Rain accumulated over a 12h period : 12h-384h every 12h
-* __RPRATE-Accum-24h_SFC_0__    : Rain accumulated over a 24h period : 24h-384h every 24h
+* __RPRATE-Accum-24h_SFC_0__    : Rain accumulated over a 24h period : 24h-384h every 12h
 * __SPRATE-Accum-12h_SFC_0__    : Snow (water equivalent) accumulated over a 12h period : 12h-384h every 12h
-* __SPRATE-Accum-24h_SFC_0__    : Snow (water equivalent) accumulated over a 24h period : 24h-384h every 24h
+* __SPRATE-Accum-24h_SFC_0__    : Snow (water equivalent) accumulated over a 24h period : 24h-384h every 12h
 * __TCDC_SFC_0__                : Cloud cover : 3-384h every 3h
 * __TEMP-Max-24h_TGL_2m__       : Temperature 2m above ground - Maximum over a 24h period : 24h-384h every 24h
 * __TEMP-Min-24h_TGL_2m__       : Temperature 2m above ground - Minimum over a 24h period : 24h-384h every 24h
 * __TEMP_TGL_2m__               : Temperature 2m above ground : 3-384h every 3h
-* __TPRATE-Accum-120h_SFC_0__   : Total precipitation accumulated over a 120h period : 120h-384h every 120h
+* __TPRATE-Accum-120h_SFC_0__   : Total precipitation accumulated over a 120h period : 120h-384h every 24h
 * __TPRATE-Accum-12h_SFC_0__    : Total precipitation accumulated over a 12h period : 12h-384h every 12h
-* __TPRATE-Accum-24h_SFC_0__   : Total precipitation accumulated over a 24h period : 24h-384h every 24h
-* __TPRATE-Accum-48h_SFC_0__    : Total precipitation accumulated over a 48h period : 48h-384h every 48h
-* __TPRATE-Accum-72h_SFC_0__    : Total precipitation accumulated over a 72h period : 72h-384h every 72h
-* __TPRATE-Accum-96h_SFC_0__    : Total precipitation accumulated over a 96h period : 96h-384h every 96h
+* __TPRATE-Accum-24h_SFC_0__   : Total precipitation accumulated over a 24h period : 24h-384h every 12h
+* __TPRATE-Accum-48h_SFC_0__    : Total precipitation accumulated over a 48h period : 48h-384h every 24h
+* __TPRATE-Accum-72h_SFC_0__    : Total precipitation accumulated over a 72h period : 72h-384h every 24h
+* __TPRATE-Accum-96h_SFC_0__    : Total precipitation accumulated over a 96h period : 96h-384h every 24h
 * __WCF-Min-24h_TGL_2m__        : Wind chill factor 2m above ground - Minimum over a 24h period : 24h-384h every 24h
 * __WCF_TGL_2m__               : Wind chill factor 2m above ground : 3-384h every 3h
 * __WIND-Max-12h_TGL_10m__      : Wind speed 10m above ground - Maximum over a 12h period : 12h-384h every 12h
