@@ -100,7 +100,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __REPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble
-* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum, Max, Min). 
+* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum, Max, Min). Voir aussi la note ci-dessous.
 * __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, AGL-10m pour 10m au-dessus du sol]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
@@ -109,23 +109,23 @@ où :
 
 Exemple de nom de fichier : 20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Les fichiers contiennent par défaut tous les membres d'ensembles. Les fichiers contenant les produits probabilistes sont identifiés via le paramètre '-Prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
+__Note__: Les fichiers contiennent par défaut tous les membres d'ensemble. Les fichiers contenant les __produits probabilistes__ sont identifiés via le paramètre '-Prob' attaché à la variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## Liste des variables
 
-Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
+Les variables pour les __produits d'ensemble__ disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
 
-* __FPRATE__ : Pluie verglaçante accumulée sur une période. Ex: FPRATE-Accum24h 
-* __HEATX__ : Humidex à 2m au-dessus du sol. Ex: HEATX_AGL-2m; HEATX-Max24h_AGL-2m (humidex maximum à 2m au-dessus du sol sur une période de 24h) 
-* __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum12h
-* __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum6h 
-* __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum24h 
-* __TEMP__ / __TMP__ : Température à 2m au-dessus du sol. Ex: TMP_AGL-2m; TMP-Max24h_AGL-2m (température maximum à 2m au-dessus du sol sur une période de 24h)
-* __TPRATE__ : Précipitations totales accumulées sur une période. Ex: TPRATE-Max48h
-* __WCF__ : Facteur éolien à 2m au-dessus du sol. Ex: WCF_AGL-2m; WCF-Min24h_AGL-2m (facteur éolien minimum à 2m au-dessus du sol sur une période de 24h)
-* __WIND__ : Vitesse du vent à 10m au-dessus du sol. Ex: WIND_AGL-10m; WIND-Max12h_AGL-10m (vitesse du vent maximum à 10m au-dessus du sol sur une période de 12h)
+* __FPRATE__ : Pluie verglaçante accumulée sur une période. Ex: FPRATE-Accum24h-Prob 
+* __HEATX__ : Humidex à 2m au-dessus du sol. Ex: HEATX-Prob_AGL-2m; HEATX-Max24h-Prob_AGL-2m (humidex maximum à 2m au-dessus du sol sur une période de 24h) 
+* __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum12h-Prob
+* __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum6h-Prob 
+* __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum24h-Prob 
+* __TEMP__ / __TMP__ : Température à 2m au-dessus du sol. Ex: TMP-Prob_AGL-2m; TMP-Max24h-Prob_AGL-2m (température maximum à 2m au-dessus du sol sur une période de 24h)
+* __TPRATE__ : Précipitations totales accumulées sur une période. Ex: TPRATE-Max48h-Prob
+* __WCF__ : Facteur éolien à 2m au-dessus du sol. Ex: WCF-Prob_AGL-2m; WCF-Min24h-Prob_AGL-2m (facteur éolien minimum à 2m au-dessus du sol sur une période de 24h)
+* __WIND__ : Vitesse du vent à 10m au-dessus du sol. Ex: WIND-Prob_AGL-10m; WIND-Max12h-Prob_AGL-10m (vitesse du vent maximum à 10m au-dessus du sol sur une période de 12h)
 
-Les variables pour les membres individuels dans les fichiers GRIB2 sont décrites ci-dessous. Les variables sont disponibles de 0 à 72h chaque 3h. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
+Les variables pour les __membres individuels__ dans les fichiers GRIB2 sont décrites ci-dessous. Les variables sont disponibles de 0 à 72h chaque 3h. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
 
 * __AFRAIN__ : Précipitations accumulées sous forme de pluie verglaçante 
 * __ARAIN__ : Précipitations accumulées sous forme de pluie 
@@ -143,7 +143,7 @@ Les variables pour les membres individuels dans les fichiers GRIB2 sont décrite
 * __PRES__ : Pression à la surface 
 * __PRMSL__ : Pression au niveau moyen de la mer 
 * __TSOIL__ : Température du sol 10cm sous la surface. Ex: TSOIL_DBS-10cm 
-* __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VOISLM_DBS-10cm 
+* __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VSOILM_DBS-10cm 
 * __LHTFL__ : Flux net de chaleur latente à la surface 
 * __SHTFL__ : Flux net de chaleur sensible à la surface 
 * __ULWRF__ : Flux ascendant de radiation d'ondes longues au sommet nominal de l'atmosphère. Ex: ULWRF_NTAT
