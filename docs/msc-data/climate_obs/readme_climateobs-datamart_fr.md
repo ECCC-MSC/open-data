@@ -33,7 +33,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * climate_normals_PROVTERR_XXXXXXX_YYY1-YYY2.csv
 * climate_daily_PROVTERR_XXXXXXX_YYYY-MM_P1D.csv
-* Climate_monthly_PROVTERR_XXXXXXX_YYYY_P1M.csv
+* climate_monthly_PROVTERR_XXXXXXX_YYYY_P1M.csv
 
 avec :
  
