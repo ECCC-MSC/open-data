@@ -99,7 +99,7 @@ where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __REPS__ : Constant string indicating that the data is from the Regional Ensemble Prediction System
-* __VAR__ : Variable type included in the file (ex: UGRD). This parameter includes also the statistical measure, if relevant (ex: Accum, MAX, Min)
+* __VAR__ : Variable type included in the file (ex: UGRD). This parameter includes also the statistical measure, if relevant (ex: Accum, MAX, Min). See also the note below.
 * __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, AGL-10m for 10m above ground level]
 * __Grille__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Indicating resolution in degrees [0.09°(about 10km)] for latitude and longitude directions
@@ -108,23 +108,23 @@ where:
 
 Example of filename :  20201007T00Z_MSC_REPS_TPRATE-Accum24h_SFC_RLatLon0.09x0.09_PT024H.grib2
 
-Note: Files contain by default all ensemble members. Files containing probabilistic products are identified according to the parameter '-Prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
+__Note__: Files contain by default all ensemble members. Files containing __probabilistic products__ are identified according to the parameter '-Prob' attached to the variable (ex: 20201007T00Z_MSC_REPS_TPRATE-Accum24h-Prob_SFC_RLatLon0.09x0.09_PT024H.grib2)
 
 ## List of variables
 
-The variables for the ensemble products available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
+The variables for the __ensemble products__ available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
 
-* __FPRATE__ : Freezing rain accumulated over a period. Ex: FPRATE-Accum24h 
-* __HEATX__ :  Humidex 2m above ground. Ex: HEATX_AGL-2m; HEATX-Max24h_AGL-2m (maximum humidex 2m above ground over a period of 24h) 
-* __IPRATE__ : Ice pellets (water equivalent) accumulated over a period. Ex: IPRATE-Accum12h
-* __RPRATE__ : Rain accumulated over a period Ex: RPRATE-Accum6h 
-* __SPRATE__ : Snow (water equivalent) accumulated over a period. Ex: SPRATE-Accum24h 
-* __TEMP__ / __TMP__ : Temperature 2m above ground. Ex: TMP_AGL-2m; TMP-Max24h_AGL-2m (maximum temperature 2m above ground over a 24h period)
-* __TPRATE__ : Total precipitation accumulated over a period. Ex: TPRATE-Max48h
-* __WCF__ : Wind chill factor 2m above ground. Ex: WCF_AGL-2m; WCF-Min24h_AGL-2m (minimum wind chill factor 2m above ground over a 24h period)
-* __WIND__ : Wind speed 10m above ground. Ex: WIND_AGL-10m; WIND-Max12h_AGL-10m (maximum wind speed 10m above ground over a 12h period)
+* __FPRATE__ : Freezing rain accumulated over a period. Ex: FPRATE-Accum24h-Prob
+* __HEATX__ :  Humidex 2m above ground. Ex: HEATX-Prob_AGL-2m; HEATX-Max24h-Prob_AGL-2m (maximum humidex 2m above ground over a period of 24h) 
+* __IPRATE__ : Ice pellets (water equivalent) accumulated over a period. Ex: IPRATE-Accum12h-Prob
+* __RPRATE__ : Rain accumulated over a period Ex: RPRATE-Accum6h-Prob
+* __SPRATE__ : Snow (water equivalent) accumulated over a period. Ex: SPRATE-Accum24h-Prob
+* __TEMP__ / __TMP__ : Temperature 2m above ground. Ex: TMP-Prob_AGL-2m; TMP-Max24h-Prob_AGL-2m (maximum temperature 2m above ground over a 24h period)
+* __TPRATE__ : Total precipitation accumulated over a period. Ex: TPRATE-Max48h-Prob
+* __WCF__ : Wind chill factor 2m above ground. Ex: WCF-Prob_AGL-2m; WCF-Min24h-Prob_AGL-2m (minimum wind chill factor 2m above ground over a 24h period)
+* __WIND__ : Wind speed 10m above ground. Ex: WIND-Prob_AGL-10m; WIND-Max12h-Prob_AGL-10m (maximum wind speed 10m above ground over a 12h period)
                                                                                   
-The GRIB2 files variables for individual members are the following. The variables are available from 0 to 72h, every 3h. Some examples are indicated for the rotated lat-lon grid at 10km resolution.
+The GRIB2 files variables for __individual members__ are the following. The variables are available from 0 to 72h, every 3h. Some examples are indicated for the rotated lat-lon grid at 10km resolution.
 
 * __AFRAIN__ : Accumulated precipitation in the form of freezing rain
 * __ARAIN__ : Accumulated precipitation in the form of rain 
@@ -142,7 +142,7 @@ The GRIB2 files variables for individual members are the following. The variable
 * __PRES__ : Surface pressure
 * __PRMSL__ : Mean sea level pressure
 * __TSOIL__ : Soil temperature 10cm below surface. Ex: TSOIL_DBS-10cm 
-* __VSOILM__ : Volumetric soil moisture 10cm below surface. Ex: VOISLM_DBS-10cm  
+* __VSOILM__ : Volumetric soil moisture 10cm below surface. Ex: VSOILM_DBS-10cm  
 * __LHTFL__ : Latent heat net flux at surface 
 * __SHTFL__ : Sensible heat net flux at surface 
 * __ULWRF__ : Upward long-wave radiation flux at the nominal top of the atmosphere. Ex: ULWRF_NTAT  
