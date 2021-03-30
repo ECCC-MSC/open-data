@@ -10,15 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.27
 
-* date: TBD
+* date: 2021-03-30
 * announcements:
     * Not announced
 * new content:
     * None
 * improvements:
-    * None
+    * RDWPS new images (#163)
 * bug fixes:
     * Fixed RAQDPS-FW WMS legend retrieval example
+    * Fixed REPS examples (new nomenclature)
+    * Fixed GEPS variables time availability (#79)
+    * Fixed RDPS availability: up to 84h vs 48h
 
 ## 2.3.26
 
