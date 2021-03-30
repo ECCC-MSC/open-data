@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.28
+
+* date: 2021-03-30
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Fixed REPS products examples (new nomenclature)
+
 ## 2.3.27
 
 * date: 2021-03-30
