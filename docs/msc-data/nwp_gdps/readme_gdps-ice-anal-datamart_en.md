@@ -6,10 +6,10 @@
 
 # Global ice analysis data in NetCDF format
 
-The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides global sea-ice analysis fields produced by its operational [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) and interpolated to a rotated latitude-longitude grid with 0.09 x 0.09 degree resolution.
+Environement and Climate Change Canada provides global sea-ice analysis fields produced by its operational [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) and interpolated to a rotated latitude-longitude grid with 0.09 x 0.09 degree resolution.
 The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions.
  
-The Global Sea-Ice Analysis System is an analysis system based on 3D-Var covering all waters (ocean and lakes) at a 10km horizontal resolution on a YIN-YANG grid and using a 6h persistence forecast for the background state. This analysis assimilates satellite remote sensing data and Canadian Ice Service ice charts. 
+The Global Sea-Ice Analysis System is an analysis system based on 3D-Var assimilation covering all waters (ocean and lakes) at a 10km horizontal resolution on a YIN-YANG grid and using a 6 hours persistence forecast for the background state. This analysis assimilates 4 times a day satellite remote sensing data and [Canadian Ice Service](https://www.canada.ca/en/environment-climate-change/services/ice-forecasts-observations/latest-conditions.html) ice charts. 
 
 ## Data location
 
@@ -25,15 +25,12 @@ where :
 
 * __RES__ : Horizontal resolution [10km]
 * __HHH__ : UTC time of the beginning of the model run[00, 12]
-* __hhhh__ : Forecast time[000, 003, 006, ..., 240]
 
 A 20-hour history is kept in this directory.
 
 ## Technical specification of the grids
 
 Values given to the various parameters of the latitude-longitude grid according to the resolution.
-
-### Data at 15 km resolution
 
 | Parameter | Value |
 | ------ | ------ |

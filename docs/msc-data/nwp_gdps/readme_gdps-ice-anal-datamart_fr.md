@@ -6,7 +6,10 @@
 
 # Données NetCDF de l'analyse globale de glace 
 
-Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km et 25 km.
+Environnement et Changement climatique Canada fournit des champs d'analyse des glaces de mer à l'échelle mondiale produits par son [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) et interpolés sur une grille latitude-longitude tournée avec une résolution de 0.09 x 0.09 degré.
+Les fichiers de données sont au format NetCDF (modèle classique NetCDF-4) et sont conformes aux conventions sur le climat et les prévisions.
+ 
+Le système d'analyse global de la glace de mer est un système d'analyse basé sur une assimilation 3D-Var couvrant toutes les étendues d'eau (océans et lacs) à une résolution horizontale de 10km sur une grille YIN-YANG et utilisant une prévision de persistance de 6 heures pour l'état de base. Cette analyse assimile 4 fois par jour les données de télédétection par satellite et les cartes des glaces du [Service canadien des glaces](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-observations-glaces/conditions-glaces-plus-recentes.html). 
 
 ## Adresse des données 
 
@@ -21,7 +24,7 @@ Les données sont accessibles à adresse suivante :
 où :
 
 * __RES__ : Résolution horizontale [10km]
-* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 
 Un historique de 20 heures est conservé dans ce répertoire.
 
@@ -29,14 +32,11 @@ Un historique de 20 heures est conservé dans ce répertoire.
 
 Valeurs données aux différents paramètres de la grille latitude-longitude selon la résolution.
 
-### Données à 10km de résolution
-
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 2400 |
-| nj | 1201 | 
-| résolution | 0.15° |
-| coordonnées du premier point de grille | 90° S  180° W | 
+| ni | 4000 |
+| nj | 2000 | 
+| résolution | 0.09° x 0.09° |
 
 ## Nomenclature des noms de fichiers 
 
@@ -52,7 +52,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 12]
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __GDPS-Analysis__ : Chaîne de caractères constante indiquant que les données proviennent de l'analyse de glace du Système global de prévision déterministe
