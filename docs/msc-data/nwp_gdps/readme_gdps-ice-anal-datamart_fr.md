@@ -19,7 +19,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à adresse suivante :
 
-[https://dd.meteo.gc.ca/model_gem_global/{RES}/netcdf/{HH}](https://dd.meteo.gc.ca/model_gem_global/10km/netcdf)
+[https://dd.meteo.gc.ca/model_gem_global/{RES}/{HH}](https://dd.meteo.gc.ca/model_gem_global/10km)
 
 où :
 
