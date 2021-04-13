@@ -17,6 +17,7 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 
 * [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md) 
+* [NetCDF global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the `GDPS.DIAG_NW_PT1H` layer served by MSC GeoMet:
 
