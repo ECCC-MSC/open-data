@@ -16,7 +16,8 @@ Le Système global de prévision déterministe (SPGD) procède à des calculs ph
 Ces données sont respectivement disponibles l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md) 
+* [Données GRIB2 de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md) 
+* [Données NetCDf d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche `GDPS.DIAG_NW_PT1H` du SGPD provenant de GeoMet du SMC :
 
