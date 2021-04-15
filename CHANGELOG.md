@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.29
+	
+* date: to be determined
+* announcements:
+    * Not announced
+* new content:
+    * Add Global ice analysis page under main GDPS one
+* improvements:
+    * Change HTTPS data server for HTTPS raw data server
+    * Update RDPS description (data available until 84h rather than 48h)
+* bug fixes:
+    * None
+	
 ## 2.3.28
 
 * date: 2021-03-30
