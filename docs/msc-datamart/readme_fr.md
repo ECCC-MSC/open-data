@@ -6,7 +6,7 @@
 
 # Le Datamart du SMC
 
-Le Service météorologique du Canada (SMC) met à la disposition des usagers spécialisés une multitude de données météorologiques, prévisionnelles et climatiques sur son serveur de données HTTPS.
+Le Service météorologique du Canada (SMC) met à la disposition des usagers spécialisés une multitude de données météorologiques, prévisionnelles et climatiques sur son serveur de données brutes HTTPS.
 
 Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bonne connaissance de la météorologie et de l'informatique afin d'en faire bon usage.  Le mode d'accès privilégié est via des routines d'accès automatiques (scripts). 
 

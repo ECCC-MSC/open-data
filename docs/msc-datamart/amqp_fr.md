@@ -9,7 +9,7 @@
 
 ## À propos
 
-Le serveur de données ouvertes HTTPS appelé le "Datamart du SMC" est un service de téléchargement en temps réel, sur demande. L'usager doit en effet agir pour demander une donnée particulière, et la demande n'aura de succès que si la donnée a été préalablement publiée sur le serveur. 
+Le serveur de données brutes HTTPS appelé le "Datamart du SMC" est un service de téléchargement en temps réel, sur demande. L'usager doit en effet agir pour demander une donnée particulière, et la demande n'aura de succès que si la donnée a été préalablement publiée sur le serveur. 
 
 Le moment exact de l'apparition des données sur le Datamart du SMC est plus ou moins prévisible : un nouvel avertissement météorologique peut y apparaître à tout moment, alors que certaines autres données ont un horaire de production assez régulier (mais tout de même sujet à des perturbations occasionnelles). Or, il peut être important pour certaines applications d'obtenir des données dès leur publication. 
 
