@@ -532,7 +532,10 @@ Toute requête peut être exportée au format CSV en ajoutant `f=csv` à la dema
 
 #### Tri
 
-Toute requête peut être triée en ajoutant `sortby=PROPERTY:X`, où `PROPERTY` est la propriété de tri et `X`, l'ordre de tri (`A` est ascendant, `D` est descendant). L'ordre de tri est facultatif. Le tri en fonction de plusieurs propriétés est pris en charge en fournissant au paramètre `sortby` une liste séparée par des virgules.
+Toute requête peut être triée en ajoutant les signes `+` et `-` avant l'attribut pour spécifier l'ordre de tri ; `+` pour croissant (par défaut) et `-` pour décroissant. Le tri en fonction de plusieurs propriétés est pris en charge en fournissant au paramètre `sortby` une liste séparée par des virgules. Exemples :
+
+* `&sortby=-PROPERTY` tri décroissant de l'attribut
+* `&sortby=PROPERTY` tri croissant de l'attribut (la recommandation et meilleure pratique est de ne pas spécifier le `+`)
 
 ### Accès par identifiant
 

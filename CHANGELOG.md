@@ -10,12 +10,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.29
 	
-* date: to be determined
+* date: PLANNED FOR 2021-04-21
 * announcements:
     * Not announced
 * new content:
     * Add Global ice analysis page under main GDPS one
 * improvements:
+    * Updated GeoMet's technical documentation for OAFeat sorting changes in 2.14.2
     * Change HTTPS data server for HTTPS raw data server
     * Update RDPS description (data available until 84h rather than 48h)
 * bug fixes:
