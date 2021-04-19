@@ -528,7 +528,10 @@ Any query can be exported to CSV by adding `&f=csv` to the request.
 
 #### Sorting
 
-Any query can be sorted by adding `sortby=PROPERTY:X`, where `PROPERTY` is the sort property and `X` is the sort order (`A` is ascending, `D` is descending).  Sort order is optional.  Sorting by multiple properties is supported by providing a comma-separated list to the `sortby` parameter.
+Any query can be sorted by adding the `+` and `-` signs before the property to specify the sort order, `+` for ascending (default) and `-` for descending. Sorting by multiple properties is supported by providing a comma-separated list to the `sortby` parameter. Examples:
+
+* `&sortby=-PROPERTY` sorts the property in descending order
+* `&sortby=PROPERTY` sorts the property in ascending order (best practice recommendation, without `+`)
 
 ### Access by Identifier
 
