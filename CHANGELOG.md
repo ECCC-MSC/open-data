@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.30
+## 2.3.31
 	
 * date: TBD
 * announcements:
@@ -17,6 +17,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * improvements:
     * TBD
+* bug fixes:
+    * None
+
+## 2.3.31
+	
+* date: 2021-04-26
+* announcements:
+    * Not announced
+* new content:
+    * New Jupyter Notebook use case for OAFeat, initial publish
+* improvements:
+    * None
 * bug fixes:
     * None
     
