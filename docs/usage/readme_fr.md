@@ -109,9 +109,11 @@ Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vou
 
 ### Services web de données brutes
 
-L'exemple de cas d'utilisation suivant est disponible :
+Les exemples de cas d'utilisation suivants sont disponibles :
 
 * [Utilisation de l'API pour directement accéder aux données brutes dans un script Python](../use-case_arthur/use-case_arthur_fr/): Arthur et les profits anticipés selon la probabilité de précipitation
+* [Utilisation de OGC API Features pour récupérer des données vectorielles](../use-case_oafeat/use-case_oafeat-interactive_fr/): Récupérer et Visualiser des données hydrométriques
+
 
 Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/web-services_fr.md).
 

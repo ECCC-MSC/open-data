@@ -5,6 +5,17 @@ channels:
 dependencies:
   - python
   - numpy
+  - python=3.9
+  - cartopy
+  - gdal
+  - ipyleaflet
+  - ipywidgets
+  - matplotlib
+  - numpy
+  - owslib
+  - pandas
+  - plotly
+  - tabulate
   - pip
   - pip:
     - matplotlib
