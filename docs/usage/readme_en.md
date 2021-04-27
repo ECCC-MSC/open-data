@@ -110,9 +110,11 @@ For further information regarding these and other WMS GetMap parameters, refer t
 
 ### Raw data web services
 
-The following use case example is provided:
+The following use cases example is provided:
 
 * [Use the API to directly access raw data from a Python script](../use-case_arthur/use-case_arthur_en/): Arthur & profits based on probability of precipitation
+* [Use OGC API Features to retrieve vector data](../use-case_oafeat/use-case_oafeat-interactive_en/): Retrieving and Displaying Hydrometric data
+
 
 Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section of the technical documentation.
 
