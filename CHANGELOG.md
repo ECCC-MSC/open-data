@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.31
+## 2.3.32
 	
 * date: TBD
 * announcements:
@@ -21,6 +21,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 
 ## 2.3.31
+	
+* date: 2021-04-27
+* announcements:
+    * Not announced
+* new content:
+    * Links to new OSFeat use case
+* improvements:
+    * Improvements to the OAFeat use case
+* bug fixes:
+    * None
+
+## 2.3.30
 	
 * date: 2021-04-26
 * announcements:
