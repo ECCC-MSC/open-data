@@ -110,7 +110,7 @@ For further information regarding these and other WMS GetMap parameters, refer t
 
 ### Raw data web services
 
-The following use cases example is provided:
+The following use cases examples are provided:
 
 * [Use the API to directly access raw data from a Python script](../use-case_arthur/use-case_arthur_en/): Arthur & profits based on probability of precipitation
 * [Use OGC API Features to retrieve vector data](../use-case_oafeat/use-case_oafeat-interactive_en/): Retrieving and Displaying Hydrometric data
