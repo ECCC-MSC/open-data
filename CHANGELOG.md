@@ -28,7 +28,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Added references to the new OAFeat use case
 * improvements:
-    * TBD
+    * Updated all OAFeat links to use api.weather.gc.ca 
 * bug fixes:
     * None
 
