@@ -12,7 +12,7 @@ Ajout de données OGC API - Features de [GeoMet du SMC](../msc-geomet/readme_fr.
 2. Ajouter une nouvelle connexion
     * Cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-new_fr.png" width=7%> pour ajouter une nouvelle connexion
     * Choisir un nom pour le service et l'écrire dans la case `Nom`
-    * Entrer l'URL du service web géospatial : [https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features) dans la case `URL`
+    * Entrer l'URL du service web géospatial : [https://api.weather.gc.ca/](https://api.weather.gc.ca/) dans la case `URL`
     * Dans la boite `Option WFS` à la ligne `Version`, sélectionner <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-ogc-api-features.png" width=15%> 
     * Cliquer sur `OK`
 3. Cliquer sur <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-connexion_fr.png" width=7%> pour obtenir la liste des couches disponibles
