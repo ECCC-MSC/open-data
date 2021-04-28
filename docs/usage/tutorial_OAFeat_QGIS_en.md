@@ -12,7 +12,7 @@ Adding OGC API - Features data from [MSC GeoMet](../msc-geomet/readme_en.md) to 
 2. Add a new connection
     * Click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-new_en.png" width=7%> to add a new connection
     * Choose a name for the service and write it in the `Name` box
-    * Enter the URL of the geospatial web service: [https://geo.weather.gc.ca/geomet/features](https://geo.weather.gc.ca/geomet/features) in the `URL` box
+    * Enter the URL of the geospatial web service: [https://api.weather.gc.ca/](https://api.weather.gc.ca/) in the `URL` box
     * In the `Option WFS` box at the `Version` line, select <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-ogc-api-features.png" width=15%> 
     * Click on `OK`
 3. Click on <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_button-connexion_en.png" width=7%> for a list of available layers

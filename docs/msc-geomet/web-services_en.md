@@ -437,7 +437,7 @@ List a single feature collection:
 
 Issue a query returning a single feature to inspect geometry and properties:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?limit=1)
+[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Querying
 
@@ -463,7 +463,7 @@ Query by a single time instant:
 
 Query by a time extent:
 
-[https://api.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
+[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
 
 #### Property
 

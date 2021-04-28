@@ -109,17 +109,18 @@ Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vou
 
 ### Services web de données brutes
 
+Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/web-services_fr.md).
+
 Les exemples de cas d'utilisation suivants sont disponibles :
 
-* [Utilisation de l'API pour directement accéder aux données brutes dans un script Python](../use-case_arthur/use-case_arthur_fr/) : Arthur et les profits anticipés selon la probabilité de précipitation
-* [Utilisation de OGC API Features pour récupérer des données vectorielles](../use-case_oafeat/use-case_oafeat-interactive_fr/) : Récupérer et Visualiser des données hydrométriques
-
-
-Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/web-services_fr.md).
+* [Arthur : profits anticipés selon la probabilité de précipitation](../usage/use-case_arthur/use-case_arthur_fr/):
+    * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC Web Map Service (WMS) pour créer des tables et graphiques
+* [Cathy : suivre les niveaux d'eau aux stations hydrométriques](../usage/use-case_oafeat/use-case_oafeat-interactive_fr/):
+    * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Features (OAFeat) pour créer des séries temporelles et cartes interactives
 
 Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/web-services_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
-Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://geo.weather.gc.ca/geomet/features/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
+Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
 
 Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une [requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). [Un tutoriel est disponible pour sauvegarder la sortie d'une requête WCS sur le disque](../tutorial_gdal/tutorial_gdal_fr/). Une astuce pour construire des requêtes WCS est d'utiliser [l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD](https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation) et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.
 

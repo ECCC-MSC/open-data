@@ -8,7 +8,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.32
+## 2.3.33
 	
 * date: TBD
 * announcements:
@@ -20,13 +20,25 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * None
 
+## 2.3.32
+	
+* date: 2021-04-28
+* announcements:
+    * Not announced
+* new content:
+    * Added references to the new OAFeat use case
+* improvements:
+    * Updated all OAFeat links to use api.weather.gc.ca 
+* bug fixes:
+    * None
+
 ## 2.3.31
 	
 * date: 2021-04-27
 * announcements:
     * Not announced
 * new content:
-    * Links to new OSFeat use case
+    * Links to new OAFeat use case
 * improvements:
     * Improvements to the OAFeat use case
 * bug fixes:
