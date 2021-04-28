@@ -110,13 +110,14 @@ For further information regarding these and other WMS GetMap parameters, refer t
 
 ### Raw data web services
 
-The following use cases examples are provided:
-
-* [Use the API to directly access raw data from a Python script](../use-case_arthur/use-case_arthur_en/): Arthur & profits based on probability of precipitation
-* [Use OGC API Features to retrieve vector data](../use-case_oafeat/use-case_oafeat-interactive_en/): Retrieving and Displaying Hydrometric data
-
-
 Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section of the technical documentation.
+
+The following use case examples are provided:
+
+* [Arthur: profits based on the probability of precipitation](../usage/use-case_arthur/use-case_arthur_en/):
+    * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC Web Map Service (WMS) standard to create data tables and graphs
+* [Cathy: tracking water levels at hydrometric stations](../usage/use-case_oafeat/use-case_oafeat-interactive_en/):
+    * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps
 
 Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/web-services_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
