@@ -36,7 +36,7 @@ Upcoming.
 
 ## Products
 
-* [Daily smoke forecast maps, from early April to late October](https://weather.gc.ca/firework/index_e.html)
+* [Daily smoke forecast maps](https://weather.gc.ca/firework/index_e.html)
 
 ## Technical documentation
 
