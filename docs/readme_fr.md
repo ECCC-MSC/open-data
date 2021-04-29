@@ -51,7 +51,7 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 * [Arthur : profits anticipés selon la probabilité de précipitation](../usage/use-case_arthur/use-case_arthur_fr/):
     * **Accéder et utiliser l'API GeoMet du SMC directement dans un script Python**, spécifiquement le standard OGC Web Map Service (WMS) pour créer des tables et graphiques
-* [Cathy : suivre les niveaux d'eau aux stations hydrométriques](../usage/use-case_oafeat/use-case_oafeat-interactive_fr/):
+* [Cathy : suivre les niveaux d'eau aux stations hydrométriques](../usage/use-case_oafeat/use-case_oafeat-script_fr/):
     * **Accéder et utiliser l'API GeoMet du SMC directement dans un script Python**, spécifiquement le standard OGC API - Features (OAFeat) pour créer des séries temporelles et cartes interactives
 
 **Documentation technique** :
