@@ -36,7 +36,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Produits
 
-* [Cartes des prévisions quotidiennes sur la fumée, disponibles du début avril jusqu’à la fin octobre](https://meteo.gc.ca/firework/index_f.html)
+* [Cartes des prévisions quotidiennes sur la fumée](https://meteo.gc.ca/firework/index_f.html)
 
 ## Documentation technique
 
