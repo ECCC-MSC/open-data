@@ -2,7 +2,7 @@
 
 ![ECCC logo](img_eccc-logo.png)
 
-# Meteorological Service of Canada open data user documentation
+# Meteorological Service of Canada Open Data User Documentation
 
 The Meteorological Service of Canada makes weather, climate, water and environmental data available to private sector, academics, and the general public.
 
