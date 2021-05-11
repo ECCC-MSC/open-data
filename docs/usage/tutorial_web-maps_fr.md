@@ -150,7 +150,7 @@ let OpenStreetMap_Mapnik = L.tileLayer(
 ).addTo(map);
 
 let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-    layers: 'GDPS.ETA_TT'
+    layers: 'GDPS.ETA_TT',
     version: '1.3.0',
     opacity: 0.5,
 }).addTo(map);
