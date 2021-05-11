@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Updates to use case references
 * bug fixes:
-    * None
+    * Fixed typo in web map tutorial (thanks to external contributor SamGuay)
 
 ## 2.3.33
 	
