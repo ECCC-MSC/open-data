@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD
 * improvements:
     * Updates to use case references
+    * Added sentence in WCS GetCoverage section about the use of OUTPUTCRS
 * bug fixes:
     * Fixed typo in web map tutorial (thanks to external contributor SamGuay)
 
