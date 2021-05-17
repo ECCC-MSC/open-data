@@ -53,7 +53,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [Température de la surface de la mer](https://meteo.gc.ca/data/analysis/351_100.gif)
 * [Étendue de la glace de mer](https://meteo.gc.ca/data/analysis/350_100.gif)
 * [Épaisseur de la neige au sol](https://meteo.gc.ca/data/analysis/352_100.gif)
-* [Ozone stratosphérique](http://es-ee.tor.ec.gc.ca/f/ozone/ozoneworld.htm)
+* [Ozone stratosphérique](https://woudc.org/data/products/?lang=fr)
 
 ## Documentation technique
 

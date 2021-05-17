@@ -52,7 +52,7 @@ List and links to the products available for this dataset:
 * [Sea Surface Temperature](https://weather.gc.ca/data/analysis/351_100.gif)
 * [Sea Ice Cover](https://weather.gc.ca/data/analysis/350_100.gif)
 * [Snow Depth](https://weather.gc.ca/data/analysis/352_100.gif)
-* [Stratospheric Ozone](http://es-ee.tor.ec.gc.ca/e/ozone/ozoneworld.htm)
+* [Stratospheric Ozone](https://woudc.org/data/products/)
 
 ## Technical documentation
 
