@@ -340,10 +340,14 @@
 
 * [Système de prévision interannuelle et saisonnière Canadien SPISCan 1.0.0](../nwp_cansips/changelog_cansips_fr#le-jeudi-1er-decembre-2011)
 
-### November 16, 2011
+### 16 novembre 2011
 
 * [SGPD 2.2.0](../nwp_gdps/changelog_gdps_fr#le-mercredi-16-novembre-2011) 
 * [SRPD 2.0.0](../nwp_rdps/changelog_rdps_fr#le-mercredi-16-novembre-2011)
+
+### 22 septembre 2011
+
+* [SRPE 1.0.0](../nwp_reps/changelog_reps_fr#le-jeudi-22-septembre-2011)
 
 ## Le mercredi 20 Octobre 2010
 
