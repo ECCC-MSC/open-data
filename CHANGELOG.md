@@ -20,6 +20,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added sentence in WCS GetCoverage section about the use of OUTPUTCRS
 * bug fixes:
     * Fixed typo in web map tutorial (thanks to external contributor SamGuay)
+    * Fixed REPS changelog (missing creation input)
+    * Fix broken link (GDPS ozone stratospheric)
 
 ## 2.3.33
 	
