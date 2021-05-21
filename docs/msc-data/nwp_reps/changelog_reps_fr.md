@@ -91,7 +91,7 @@ Le jeudi 22 septembre 2011 (cycle de 12 UTC) le Centre Météorologique Canadien
 
 Pour l'instant les produits du SRPE ne sont disponibles que sur les réseaux á l'interne d'Environnement Canada mais des plans sont en cours pour rendre ces produits disponibles aux usagers externes.
 
-Une copie de la note officielle est [disponible en cliquant ici](http://dd.weather.ec.gc.ca/doc/genots/2011/09/26/NOCN03_CWAO_261345_CCA__98441).
+Une copie de la note officielle est [disponible en cliquant ici](http://dd.weather.gc.ca/doc/genots/2011/09/26/NOCN03_CWAO_261345_CCA__98441).
 
 Pour plus de détails [vous pouvez accéder à une note technique disponible au lien suivant](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_srpe_20111004_f.pdf).
 

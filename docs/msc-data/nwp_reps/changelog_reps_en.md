@@ -86,6 +86,6 @@ On Thursday September 22 2011 starting with the 12UTC run the Canadian Meteorolo
 
 Presently, products from the REPS are only available internaly to Environment Canada but plans are underway to also make these products available to external users.
 
-A copy of the official note [is available by clicking here](http://dd.weather.ec.gc.ca/doc/genots/2011/09/26/NOCN03_CWAO_261345_CCA__98421).
+A copy of the official note [is available by clicking here](http://dd.weather.gc.ca/doc/genots/2011/09/26/NOCN03_CWAO_261345_CCA__98421).
 
 Addtional technical information is [available in the technical note by clicking here](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_reps_20111004_e.pdf).
