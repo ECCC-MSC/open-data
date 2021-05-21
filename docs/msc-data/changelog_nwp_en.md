@@ -349,6 +349,10 @@
 * [GDPS 2.2.0](../nwp_gdps/changelog_gdps_en#wednesday-november-16-2011)
 * [RDPS 2.0.0](../nwp_rdps/changelog_rdps_en#wednesday-november-16-2011)
 
+### September 22, 2011
+
+* [REPS 1.0.0](../nwp_reps/changelog_reps_en#thursday-september-22-2011)
+
 ## Wednesday October 20, 2010
 
 ### A new limited area version of the regional forecast system becomes operational at the Canadian Meteorological Centre.

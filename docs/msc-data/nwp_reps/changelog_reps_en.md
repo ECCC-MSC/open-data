@@ -78,3 +78,14 @@ A copy of the official note announcing the implementation of these changes along
 A technical note with many more details on this change [is also available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_reps201_20131204_e.pdf).
 
 
+## Thursday September 22 2011
+
+The Canadian Meteorological Centre makes its Regional Ensemble Prediction System (REPS 1.0.0) Operational
+
+On Thursday September 22 2011 starting with the 12UTC run the Canadian Meteorological Centre made fully operational its Regional Ensemble Prediction System (REPS 1.0.0).
+
+Presently, products from the REPS are only available internaly to Environment Canada but plans are underway to also make these products available to external users.
+
+A copy of the official note [is available by clicking here](http://dd.weather.gc.ca/doc/genots/2011/09/26/NOCN03_CWAO_261345_CCA__98421).
+
+Addtional technical information is [available in the technical note by clicking here](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_reps_20111004_e.pdf).
