@@ -150,7 +150,7 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 
 | Optional parameters                | Definition |
 | ------------------------- | ---------- |
-| STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. If this parameter is not specified a request will return the layer's default style.|
+| STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. If this parameter is not specified a request will return the layer's default style. Note: Make sure to type the singular form of this parameter in the `GetLegendGraphic` request and not the plural form (i.e. `STYLES`), because it will output the layer's default style instead of the requested style.|
 | SLD             | Specifies that the legend should be created with an external SLD document. See the [Handing Styles](#handling-styles) for further information.|
 | SLD_BODY        | Allows the user to include an SLD document directly in the request URL.|
 | LANG          | A vendor extension that allows a client to display the legend in English(en) or French(fr). Defaults to English if the parameter is not included in the request|

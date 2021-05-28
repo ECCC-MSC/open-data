@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Updates to use case references
     * Added sentence in WCS GetCoverage section about the use of OUTPUTCRS
+    * Added sentence in WMS GetLegendGraphic section about the use of STYLE
     * Added the open ended `..` keyword for temporal OGC API - Features queries
 * bug fixes:
     * Fixed typo in web map tutorial (thanks to external contributor SamGuay)

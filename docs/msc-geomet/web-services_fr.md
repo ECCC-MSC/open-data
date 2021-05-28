@@ -153,7 +153,7 @@ Par exemple, la couche de température de l'air du SGPD offre plusieurs styles d
 
 | Paramètres optionnels  | Définition |
 | ------------------------- | ---------- |
-| STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities)|
+| STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities). Note: Assurez-vous de taper la forme au singulier de ce paramètre dans la requête `GetLegendGraphic` et non la forme au pluriel (i.e. `STYLES`) car la sortie sera le style par défaut de la couche au lieu de celui demandé. |
 | SLD             | Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section [Spécification des styles](#spécification-des-styles) pour les explications détaillées|
 | SLD_BODY        | Permet à l'usager d'inclure le document SLD directement dans la requête|
 | LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le légende. Si le paramètre n'est pas spécifié, la légende est retournée en anglais par défaut|
