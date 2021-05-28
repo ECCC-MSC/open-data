@@ -418,17 +418,17 @@ Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS
 
 ### Points de service
 
-[https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
+* [https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
 
 ### Documentation OpenAPI 3.0
 
-[https://api.meteo.gc.ca/openapi](https://api.meteo.gc.ca/openapi)
+* [https://api.meteo.gc.ca/openapi](https://api.meteo.gc.ca/openapi)
 
 ### Collections d'entités
 
 Répertorier toutes les collections d’entités disponibles :
 
-[https://api.meteo.gc.ca/collections](https://api.meteo.gc.ca/collections)
+* [https://api.meteo.gc.ca/collections](https://api.meteo.gc.ca/collections)
 
 La réponse fournit une liste de collections de fonctionnalités avec leurs métadonnées associées (titre, description, liens, étendue, CRS).
 
@@ -436,13 +436,13 @@ La réponse fournit une liste de collections de fonctionnalités avec leurs mét
 
 Répertorier une seule collection d'entités :
 
-[https://api.meteo.gc.ca/collections/hydrometric-stations](https://api.meteo.gc.ca/collections/hydrometric-stations)
+* [https://api.meteo.gc.ca/collections/hydrometric-stations](https://api.meteo.gc.ca/collections/hydrometric-stations)
 
 ### Inspection du schéma de collection d'entités
 
 Émettre une requête renvoyant une seule entité pour inspecter sa géométrie et ses propriétés :
 
-[https://geo.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
+* [https://geo.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Requête
 
@@ -452,30 +452,35 @@ Les exemples suivants utilisent la collection [hydrométrique de moyennes quotid
 
 Requête par défaut, pas de filtres :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items)
 
 #### Spatial
 
 Requête par zone de sélection (minx, miny, maxx, maxy) :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
 #### Temporel
 
 Requête pour une valeur instantanée :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30)
 
 Requête pour un intervalle de temps :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
+
+Requête pour un intervalle de temps le mot clé de borne ouverte `..` : 
+
+* Depuis un moment spécifique : [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..)
+* Jusqu'à un moment spécifique : [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11)
 
 
 #### Propriété
 
 Requête par une propriété de collection d'entités :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
 
 #### Pagination
 
@@ -487,7 +492,7 @@ Le paramètre `startindex` peut être utilisé pour spécifier l’enregistremen
 
 Le paramètre `resulttype=hits` est utilisé pour obtenir le nombre d'entités d'une collection, sans que les entités soient retournées. Le nombre d'enregistrements est indiqué à la valeur `numberMatched` de la réponse.
 
-Exemple : [https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
+* Exemple : [https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.meteo.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
 
 ##### Limite
 
@@ -499,23 +504,22 @@ Les paramètres `startindex` et `limit` peuvent être utilisés en tandem pour p
 
 Requête et limite aux entités 1-2 :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
 
 Requête et limite aux entités 1 à 100 :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
 
 Requête et limite aux entités 101-200 :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
 
 ##### Stratégies de pagination
 
 La stratégie de pagination est couramment utilisée pour améliorer les performances lors du retour d'extractions de données volumineuses. Par exemple, un client peut faire défiler par 1 000 entités pour parcourir un enregistrement de station complet :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
-
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
 Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Cela constituerait le dossier complet.
 
@@ -524,7 +528,7 @@ Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il 
 
 Interroger toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31)
 
 #### Exporter au format CSV
 
@@ -541,4 +545,4 @@ Toute requête peut être triée en ajoutant les signes `+` et `-` avant l'attri
 
 Récupérer une seule caractéristique par identifiant :
 
-[https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv)

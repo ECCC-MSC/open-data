@@ -413,17 +413,17 @@ The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) prov
 
 ### Service endpoints
 
-[https://api.weather.gc.ca/](https://api.weather.gc.ca/)
+* [https://api.weather.gc.ca/](https://api.weather.gc.ca/)
 
 #### OpenAPI 3.0 document
 
-[https://api.weather.gc.ca/openapi?f=html](https://api.weather.gc.ca/openapi?f=html)
+* [https://api.weather.gc.ca/openapi?f=html](https://api.weather.gc.ca/openapi?f=html)
 
 ### Feature collections
 
 List all feature collections available:
 
-[https://api.weather.gc.ca/collections](https://api.weather.gc.ca/collections)
+* [https://api.weather.gc.ca/collections](https://api.weather.gc.ca/collections)
 
 The response provides a list of feature collections with associated metadata (title, description, links, extent, CRS).
 
@@ -431,13 +431,13 @@ The response provides a list of feature collections with associated metadata (ti
 
 List a single feature collection:
 
-[https://api.weather.gc.ca/collections/hydrometric-stations](https://api.weather.gc.ca/collections/hydrometric-stations)
+* [https://api.weather.gc.ca/collections/hydrometric-stations](https://api.weather.gc.ca/collections/hydrometric-stations)
 
 ### Inspecting feature collection schema
 
 Issue a query returning a single feature to inspect geometry and properties:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1)
 
 ### Querying
 
@@ -447,29 +447,34 @@ The examples that follow use the [hydrometric daily mean](https://api.weather.gc
 
 Default query, no filters:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items)
 
 #### Spatial
 
 Query by bounding box (minx, miny, maxx, maxy):
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?bbox=-140,43.2,-65,67)
 
 #### Temporal
 
 Query by a single time instant:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30)
 
 Query by a time extent:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
+
+Query by time extent with the open ended `..` keyword:
+
+* Since a specific datetime: [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..)
+* Until a specific datetime: [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11)
 
 #### Property
 
 Query by a feature collection property:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001)
 
 #### Paging
 
@@ -482,7 +487,7 @@ features. The default value is 0 (first feature).
 
 The `resulttype=hits` parameter is used to return the number of features found in a collection, without the actual features returned. The number of features is found in the response's `numberMatched` key.
 
-Example: [https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
+* Example: [https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits](https://api.weather.gc.ca/collections/ltce-stations/items?f=json&resulttype=hits)
 
 ##### Limit
 
@@ -495,23 +500,22 @@ The `startindex` and `limit` parameters can be used in tandem to cycle through f
 
 Query and limit to features 1-2:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=2)
 
 Query and limit to features 1-100:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&limit=100)
 
 Query and limit to features 101-200:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&startindex=101&limit=100)
 
 ##### Strategies for paging
 
 The paging strategy is commonly used in support of performance when returning large data extraction. For example, a client could page by 1000 features to cycle through an entire station record:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
-
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
 The client can then simply cycle through all items until there no longer any records. This would constitute the entire record.
 
@@ -520,7 +524,7 @@ The client can then simply cycle through all items until there no longer any rec
 
 Query all daily mean data from a single station between 2001 and 2010:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&datetime=2001-01-01/2010-12-31)
 
 #### Exporting to CSV format
 
@@ -537,4 +541,4 @@ Any query can be sorted by adding the `+` and `-` signs before the property to s
 
 Fetch a single feature by identifier:
 
-[https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
