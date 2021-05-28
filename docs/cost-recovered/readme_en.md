@@ -44,7 +44,7 @@ Details regarding **radar data pricing** are as follows:
 
 Please, note that these rates are indicative only and may change.
 
-See also the [FAQ](../faq/readme_en.md)
+See also the [FAQ](../faq/readme_en.md).
 
 **Starting price regarding push feed for NWP data in GRIB format, or any other data** is $500/month + $500 set-up fee for up to 1 Gb/day. Add 500$/month for each additional Gb per day.
 
