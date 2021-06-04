@@ -12,7 +12,7 @@ Cette page décrit les données et produits des radars canadiens du réseau de 3
 
 ### Comment accéder aux données
 
-Les données radar sont disponibles via l'API / les services web GeoMet du SMC ainsi qu'en tant qu'images statiques GIF sur le serveur de données Datamart du SMC :
+Les données radar sont disponibles via l'API et les services web GeoMet du SMC ainsi qu'en tant qu'images statiques GIF sur le serveur de données Datamart du SMC :
 
 * [Couches disponibles pour la composite radar nord-américaine via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md)
 * [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md) 
