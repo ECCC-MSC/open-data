@@ -16,7 +16,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 
 * [Provincial and territory observation summaries in XML format, available on the MSC Datamart](readme_obs_insitu_xmldatamart_en.md) 
 * [Surface Weather Observations in Markup Language SWOB Met-ML, available on the MSC Datamart](readme_obs_insitu_swobdatamart_en.md)
-* [Real-time Surface Weather Observations available on GeoMet-OGC-API](https://api.weather.gc.ca/collections/swob-realtime) in the OGC API - Features standard
+* The last 30 days of [Real-time Surface Weather Observations are available on GeoMet-OGC-API](https://api.weather.gc.ca/collections/swob-realtime) in the OGC API - Features standard
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

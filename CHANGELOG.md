@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * TBD
 * improvements:
-    * TBD
+    * clarified real-time data retention on GeoMet-OGC-API
 * bug fixes:
     * TBD
     
