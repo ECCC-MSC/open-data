@@ -17,7 +17,7 @@ Real-time and historical hydrometric data including stations, water levels and f
 The data is available from the MSC GeoMet web services API and on the MSC Datamart data server:
 
 * Real-time hydrometric observations: [CSV data available on the MSC Datamart](readme_hydrometric-datamart_en.md) 
-* Historical and real-time hydrometric observations: [API available from GeoMet-OGC-API](../../msc-geomet/readme_en.md)
+* Historical and real-time hydrometric observations (last 30 days): [API available from GeoMet-OGC-API](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

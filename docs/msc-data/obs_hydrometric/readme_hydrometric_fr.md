@@ -15,7 +15,7 @@ Données hydrométriques en temps réel et historiques contenant les stations, l
 Ces données sont respectivement disponibles sur les services du serveur de données Datamart du SMC et les services web GeoMet du SMC :
 
 * Observations hydrométriques en temps réel : [Données CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
-* Observations hydrométriques en temps réel et historiques : [API disponible via GeoMet-OGC-API](../../msc-geomet/readme_fr.md)
+* Observations hydrométriques en temps réel (derniers 30 jours) et historiques : [API disponible via GeoMet-OGC-API](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

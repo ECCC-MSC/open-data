@@ -16,7 +16,7 @@ Ces données sont disponibles sur le serveur de données [Datamart du SMC](../..
 
 * [Sommaires d'observations pour les provinces et territoires en format XML, disponibles sur le Datamart du SMC](readme_obs_insitu_xmldatamart_fr.md) 
 * [Langage de balisage des observations météorologiques au sol (SWOB-ML)](readme_obs_insitu_swobdatamart_fr.md)
-* Les [observations météorologiques à la surface en temps réel sont disponibles sur les services web GeoMet du SMC](https://api.weather.gc.ca/collections/swob-realtime) via le standard OGC API - Features
+* Les derniers 30 jours d'[observations météorologiques à la surface en temps réel sont disponibles sur les services web GeoMet du SMC](https://api.weather.gc.ca/collections/swob-realtime) via le standard OGC API - Features
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
