@@ -1,25 +1,5 @@
 const parser = new DOMParser();
 
-async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet-climate/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50')
-  let data = await response.text().then(
-    data => {
-      let xml = parser.parseFromString(data, 'text/xml')
-      let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/')
-      let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default')
-      return [start, end, default_]
-    }
-  )
-  return [new Date(data[0]), new Date(data[1]), new Date(data[2])]
-}
-
-let frameRate = 1.0; // frames per second
-let animationId = null;
-let startTime = null
-let endTime = null
-let defaultTime = null
-let current_time = null;
-
 let layers = [
     new ol.layer.Tile({
       source: new ol.source.OSM()
@@ -29,6 +9,7 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet-climate',
         params: {'LAYERS': 'DCS.TX.RCP85.YEAR.2081-2100_PCTL50', 'TILED': true},
+        crossOrigin: 'Anonymous'
       })
     }),
   ]
@@ -42,46 +23,15 @@ let map = new ol.Map({
   })
 });
 
-function updateInfo(current_time) {
-  let el = document.getElementById('info');
-  el.innerHTML = `Time / Heure (UTC): ${current_time.toISOString()}`
-}
-
-function setTime() {
-  current_time = current_time
-    if (current_time === null) {
-      current_time = defaultTime;
-    } else if (current_time >= endTime) {
-      current_time = startTime
-    } else {
-	  current_time = new Date(current_time.setUTCMinutes(current_time.getUTCMinutes() + 720));
-    }
-    layers[1].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
-    updateInfo(current_time)
-}
-
-getRadarStartEndTime().then(data => {
-    startTime = data[0]
-    endTime = data[1]
-    defaultTime = data[2]
-    setTime();
-})
-
-
-let stop = function() {
-  if (animationId !== null) {
-    window.clearInterval(animationId);
-    animationId = null;
-  }
+let exportMapFunction = function(e) {
+  map.once('postcompose', function(event) {
+    var canvas = event.context.canvas;
+    canvas.toBlob(function(blob) {
+      saveAs(blob, 'msc-geomet_web-map_export.jpg')
+    }, 'image/jpeg',0.9);
+  });
+  map.renderSync();
 };
 
-let play = function() {
-  stop();
-  animationId = window.setInterval(setTime, 1000 / frameRate);
-};
-
-let startButton = document.getElementById('play');
-startButton.addEventListener('click', play, false);
-
-let stopButton = document.getElementById('pause');
-stopButton.addEventListener('click', stop, false);
+let exportButton = document.getElementById('exportmap');
+exportButton.addEventListener('click', exportMapFunction, false);

@@ -32,7 +32,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'GDPS.ETA_RT', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -40,7 +41,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'HURRICANE_RESPONSE_ZONE', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -48,7 +50,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'HURRICANE_CENTRE', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -56,7 +59,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'HURRICANE_LINE', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -64,7 +68,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'HURRICANE_ERR', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -72,7 +77,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'HURRICANE_RAD', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     }),
     new ol.layer.Image({
@@ -81,7 +87,8 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet-beta/',
         params: {'LAYERS': 'ALERTS', 'TILED': true},
-        transition: 0
+        transition: 0,
+        crossOrigin: 'Anonymous'
       })
     })
   ]
@@ -133,8 +140,21 @@ let play = function() {
   animationId = window.setInterval(setTime, 1000 / frameRate);
 };
 
+let exportMapFunction = function(e) {
+  map.once('postcompose', function(event) {
+    var canvas = event.context.canvas;
+    canvas.toBlob(function(blob) {
+      saveAs(blob, 'msc-geomet_web-map_export.jpg')
+    }, 'image/jpeg',0.9);
+  });
+  map.renderSync();
+};
+
 let startButton = document.getElementById('play');
 startButton.addEventListener('click', play, false);
 
 let stopButton = document.getElementById('pause');
 stopButton.addEventListener('click', stop, false);
+
+let exportButton = document.getElementById('exportmap');
+exportButton.addEventListener('click', exportMapFunction, false);
