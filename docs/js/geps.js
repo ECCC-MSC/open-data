@@ -29,6 +29,7 @@ let layers = [
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet',
         params: {'LAYERS': 'GEPS.DIAG.12_PRMM.ERGE10', 'TILED': true},
+        crossOrigin: 'Anonymous'
       })
     }),
   ]
@@ -80,8 +81,21 @@ let play = function() {
   animationId = window.setInterval(setTime, 1000 / frameRate);
 };
 
+let exportMapFunction = function(e) {
+  map.once('postcompose', function(event) {
+    var canvas = event.context.canvas;
+    canvas.toBlob(function(blob) {
+      saveAs(blob, 'msc-geomet_web-map_export.jpg')
+    }, 'image/jpeg',0.9);
+  });
+  map.renderSync();
+};
+
 let startButton = document.getElementById('play');
 startButton.addEventListener('click', play, false);
 
 let stopButton = document.getElementById('pause');
 stopButton.addEventListener('click', stop, false);
+
+let exportButton = document.getElementById('exportmap');
+exportButton.addEventListener('click', exportMapFunction, false);
