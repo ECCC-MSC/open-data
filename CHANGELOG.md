@@ -10,11 +10,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.3.35
 	
-* date: TBD
+* date: 2021-06-08
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * Update RDPA changelog
 * improvements:
     * clarified real-time data retention on GeoMet-OGC-API
 * bug fixes:
