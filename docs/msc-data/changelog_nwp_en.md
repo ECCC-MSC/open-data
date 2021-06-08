@@ -8,6 +8,10 @@
 
 ## 2021
 
+### June 9, 2021
+
+* [Upgrade to version 5.0.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)](../nwp_rdpa/changelog_rdpa_en#wednesday-june-9-2021)
+
 ### January 26, 2021
 
 * [Replacement of satellite radiance observations in the GEPS](../nwp_geps/changelog_geps_en#tuesday-january-26-2021)
