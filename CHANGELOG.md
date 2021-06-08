@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.3.36
+	
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * Added new export button feature to all interactive maps
+* improvements:
+    * None
+* bug fixes:
+    * TBD
+
 ## 2.3.35
 	
 * date: 2021-06-08
