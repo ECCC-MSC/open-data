@@ -15,13 +15,16 @@ On Wednesday, June 9, 2021, starting with the 1200 UTC run, the Canadian Meteoro
 The changes included in this upgrade are summarized as follows :
 
 * Assimilation of three new precipitation observation network:
+
     * Manitoba Agriculture (MBAG),
     * Grand River Conservation Authority (GRCA),
     * Toronto River Conservation Authority (TRCA).
 
 * Changes in the radar composite:
+
     * 5 Canadian S-band radars replacing the corresponding obsolete C-band radars. 
-    * 29 additional U.S. S-band radars. 
+    * 29 additional U.S. S-band radars.
+ 
 * Assimilation of the “Integrated Multi-SatellitE Retrievals for GPM” (IMERG) satellite data in the final analysis. 
 
 A copy of the official note announcing this implementation is available at this location: [CaPA-RDPA official announcement](https://dd.meteo.gc.ca/doc/genots/2021/06/08/NOCN03_CWAO_081408___31851)
