@@ -6,6 +6,27 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
+## Le mercredi 9 juin 2021
+
+Mise à jour vers la version 5.0.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)
+
+Le mercredi 9 juin 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) à la version 5.0.0.
+
+Les modifications incluses dans cette mise à jour sont résumées comme suit :
+
+* Assimilation de trois nouveau réseaux d’observation de précipitations:
+     * Manitoba Agriculture (MBAG),
+     * Grand River Conservation Authority (GRCA),
+     * Toronto River Conservation Authority (TRCA).
+* Changement dans la composite Radar:
+     * 5 radars Canadiens de type S-band remplacent les radars obsolètes de type C-band correspondants. 
+     * Ajout de 29 nouveaux radars américains de type S-band. 
+* Assimilation des données satellitaires “Integrated Multi-SatellitE Retrievals for GPM” (IMERG) dans l’analyse finale.
+
+Une copie de la note officielle annoncant cette implantation est disponible en cliquant sur le lien : [Annonce officielle de CaPA-ARDP 5.0.0](https://dd.meteo.gc.ca/doc/genots/2021/06/08/NOCN03_CWAO_081408___31851)
+
+Une note technique avec plus de détails sur ces changements est disponible via le lien : [Note technique du CaPA-ARDP 5.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-500_f.pdf)
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jours de CaPA-ARDP à la version 4.7.0 suite à la nouvelle infrastructure de calcul haute performance. 

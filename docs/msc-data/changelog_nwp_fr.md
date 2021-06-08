@@ -8,6 +8,10 @@
 
 ## 2021
 
+### 9 juin 2021
+
+* [Mise à jour vers la version 5.0.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)](../nwp_rdpa/changelog_rdpa_fr#le-mercredi-9-juin-2021)
+
 ### 26 janvier 2021
 
 * [Remplacement d’observations de radiances satellitaires dans le SGPE](../nwp_geps/changelog_geps_fr#le-mardi-26-janvier-2021)
