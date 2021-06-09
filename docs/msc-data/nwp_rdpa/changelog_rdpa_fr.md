@@ -14,7 +14,7 @@ Le mercredi 9 juin 2021, à compter de la passe de 1200 UTC, le Centre météoro
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 
-* Assimilation de trois nouveau réseaux d’observation de précipitations:
+* Assimilation de trois nouveaux réseaux d’observation de précipitations:
      * Manitoba Agriculture (MBAG),
      * Grand River Conservation Authority (GRCA),
      * Toronto River Conservation Authority (TRCA).
