@@ -77,7 +77,7 @@ where:
 * __LVLTYPE__ : Level type (ex: SFC for surface, NTAT for the top of the atmosphere, DBLL_10cm for 10cm under the surface, TGL for above ground level)
 * __LVL__ : Level value (ex: 10m for 10 meters)
 * __resolution__ : Grid resolution (ex: ps15km)
-* __YYYYMMDDHH__ : Year, month, and day of the beginning of the forecast and model run in UTC [00, 12]
+* __YYYYMMDDHH__ : Year, month, and day of the beginning of the forecast and model run in UTC [00, 06, 12, 18]
 * __P{hhh}__ : P is a constant character. "hhh" is the forecast hour [000, 003, 006, ..., 072].
 * __FileContent__ : can be "all-products" or "allmbrs", indicating that all the members or all the probabilistic products for this variable are contained in the file 
 * __grib2__ : Constant string indicating that the GRIB2 format is used
