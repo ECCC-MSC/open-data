@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Added new export button feature to all interactive maps
 * improvements:
-    * None
+    * Add runs 06Z and 18Z in the 15km REPS Datamart documentation
 * bug fixes:
     * TBD
 
