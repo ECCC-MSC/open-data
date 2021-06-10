@@ -77,7 +77,7 @@ où :
 * __LVLTYPE__ :  Niveau vertical (ex: SFC pour la surface, NTAT pour le haut de l'atmosphère, DBLL_10cm couche 10cm sous la surface, TGL pour au-dessus de la surface)
 * __LVL__ : Valeur du niveau (ex: 10m pour 10 mètres)
 * __resolution__: Résolution de la grille (ex: ps15km) 
-* __YYYYMMDDHH__: Année, mois, jour du début de la prévision et heure UTC de la passe [00, 12]
+* __YYYYMMDDHH__: Année, mois, jour du début de la prévision et heure UTC de la passe [00, 06, 12, 18]
 * __P{hhh}__ :  « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
 * __content__ : Peut être "all-products" ou "allmbrs" pour indiquer que tous les membres ou tous les produits probabilistes pour cette variable sont regroupés dans ce fichier
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
