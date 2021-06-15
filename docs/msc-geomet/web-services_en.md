@@ -239,28 +239,28 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 ![RDPA.24F_PR with CAPA24-LINEAR style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Users can also choose to apply their own styles either by pointing to
-an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be encoded using the URL encoding.
+an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
-&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3C
-StyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2F
-www.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net
-%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3
-Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3A
-schemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net
-%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3E
-GDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3A
-FeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0
-%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity
-%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3C
-ColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color
-%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+
-quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3A
-Rule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E
+&SLD_BODY=%3C%3Fxml%2Bversion%3D%221.0%22%2Bencoding%3D%22UTF-8%22%3F%3E%2B%3C
+StyledLayerDescriptor%2Bversion%3D%221.0.0%22%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net
+%2Fsld%22%2Bxmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%2Bxmlns%3Axlink%3D%22
+http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%2Bxmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
+2001%2FXMLSchema-instance%22%2Bxsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2F
+sld%2Bhttp%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%2B%3C
+NamedLayer%3E%2B%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%2B%3CUserStyle%3E%2B%3Cse%3AName%3ETEST
+%3C%2Fse%3AName%3E%2B%3Cse%3AFeatureTypeStyle%3E%2B%3Cse%3ARule%3E%2B%3Cse%3ARasterSymbolizer
+%3E%2B%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%2B%3CColorMap%3E%2B%3CColorMapEntry
+%2Bcolor%3D%22%238cff66%22%2Bquantity%3D%220%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23ffff00
+%22%2Bquantity%3D%2225%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23b38600%22%2Bquantity
+%3D%2250%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23cc0000%22%2Bquantity
+%3D%2275%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%234d0000%22%2Bquantity%3D%22100%22%2F%3E%2B%3C%2F
+ColorMap%3E%2B%3C%2Fse%3ARasterSymbolizer%3E%2B%3C%2Fse%3ARule%3E%2B%3C%2Fse%3A
+FeatureTypeStyle%3E%2B%3C%2FUserStyle%3E%2B%3C%2FNamedLayer%3E%2B%3C%2FStyledLayerDescriptor%3E
 ```
-![GDPS layer with a custom user-provided SLD style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png&SLD_BODY=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22UTF-8%22%3F%3E+%3CStyledLayerDescriptor+version%3D%221.0.0%22+xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22+xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22+xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22+xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22+xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld+http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E+%3CNamedLayer%3E+%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E+%3CUserStyle%3E+%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E+%3Cse%3AFeatureTypeStyle%3E+%3Cse%3ARule%3E+%3Cse%3ARasterSymbolizer%3E+%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E+%3CColorMap%3E+%3CColorMapEntry+color%3D%22%238cff66%22+quantity%3D%220%22%2F%3E+%3CColorMapEntry+color%3D%22%23ffff00%22+quantity%3D%2225%22%2F%3E+%3CColorMapEntry+color%3D%22%23b38600%22+quantity%3D%2250%22%2F%3E+%3CColorMapEntry+color%3D%22%23cc0000%22+quantity%3D%2275%22%2F%3E+%3CColorMapEntry+color%3D%22%234d0000%22+quantity%3D%22100%22%2F%3E+%3C%2FColorMap%3E+%3C%2Fse%3ARasterSymbolizer%3E+%3C%2Fse%3ARule%3E+%3C%2Fse%3AFeatureTypeStyle%3E+%3C%2FUserStyle%3E+%3C%2FNamedLayer%3E+%3C%2FStyledLayerDescriptor%3E)
+![GDPS layer with a custom user-provided SLD style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%3C%3Fxml%2Bversion%3D%221.0%22%2Bencoding%3D%22UTF-8%22%3F%3E%2B%3CStyledLayerDescriptor%2Bversion%3D%221.0.0%22%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%2Bxmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%2Bxmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%2Bxmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%2Bxsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%2Bhttp%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%2B%3CNamedLayer%3E%2B%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%2B%3CUserStyle%3E%2B%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E%2B%3Cse%3AFeatureTypeStyle%3E%2B%3Cse%3ARule%3E%2B%3Cse%3ARasterSymbolizer%3E%2B%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%2B%3CColorMap%3E%2B%3CColorMapEntry%2Bcolor%3D%22%238cff66%22%2Bquantity%3D%220%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23ffff00%22%2Bquantity%3D%2225%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23b38600%22%2Bquantity%3D%2250%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23cc0000%22%2Bquantity%3D%2275%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%234d0000%22%2Bquantity%3D%22100%22%2F%3E%2B%3C%2FColorMap%3E%2B%3C%2Fse%3ARasterSymbolizer%3E%2B%3C%2Fse%3ARule%3E%2B%3C%2Fse%3AFeatureTypeStyle%3E%2B%3C%2FUserStyle%3E%2B%3C%2FNamedLayer%3E%2B%3C%2FStyledLayerDescriptor%3E)
 
 
 ## Web Coverage Service (WCS)
