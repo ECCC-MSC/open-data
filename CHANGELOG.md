@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Add runs 06Z and 18Z in the 15km REPS Datamart documentation
 * bug fixes:
-    * TBD
+    * Fixed SLD request in the Handling styles section
 
 ## 2.3.35
 	
