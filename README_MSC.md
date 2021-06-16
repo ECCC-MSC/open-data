@@ -199,7 +199,7 @@ Pull current GCcode version before making changes and commit and merge changes o
   
 ## 5.1 - Permission requirements
   
-The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex, Tom and Étienne for GODS.
+The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex, Tom, Étienne and Félix for GODS.
 
 The `eccc-msc` codepen.io account is managed by Étienne.
  
@@ -247,6 +247,8 @@ The following instructions take the current documentation version from `https://
     1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
     2. Verify that the version number ($VERSION) tag is available on https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/tags
     3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
+    4. Push the changes to your fork using `git push origin branch_name` where `branch_name` is the branch you created to update the changelog
+    5. Merge your changes from your branch `branch_name` on the master branch using a merge request
 5. Tag the version:
     1. Create the new tag: `git tag $VERSION`
     3. Checkout the newest tag: `git checkout $VERSION`
@@ -264,7 +266,7 @@ The following instructions take the current documentation version from `https://
         5. Return to step 3
 8. Deploy the documentation on GitHub:
     1. Run `mkdocs gh-deploy --ignore-version --force -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
-        * The user must have the [permissions to push to GitHub](#permission-requirements)
+        * The user must have the [permissions to push to GitHub](#51-permission-requirements)
         * Using `--force` is required if another user pushed the previous version to GitHub
 9. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
 10. Desactivate your conda environment: `conda deactivate`
