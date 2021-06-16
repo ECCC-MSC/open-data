@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Added new export button feature to all interactive maps
+    * Add forecast regions page
 * improvements:
     * Add runs 06Z and 18Z in the 15km REPS Datamart documentation
 * bug fixes:
