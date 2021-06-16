@@ -83,7 +83,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Bulletins](bulletins/readme_bulletins_fr.md)
 * [Ouragans](hurricanes/readme_hurricanes_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
-* [Polygones des régions de prévision](https://dd.meteo.gc.ca/meteocode/geodata/)
+* [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
 
 ## Changements aux systèmes de production de données opérationnels
 
