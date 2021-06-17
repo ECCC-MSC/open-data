@@ -248,24 +248,25 @@ Les utilisateurs peuvent également spécifier leurs propres styles en fournissa
 ```
 https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
-&SLD_BODY=%3C%3Fxml%2Bversion%3D%221.0%22%2Bencoding%3D%22UTF-8%22%3F%3E%2B%3C
-StyledLayerDescriptor%2Bversion%3D%221.0.0%22%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net
-%2Fsld%22%2Bxmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%2Bxmlns%3Axlink%3D%22
-http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%2Bxmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
-2001%2FXMLSchema-instance%22%2Bxsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2F
-sld%2Bhttp%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%2B%3C
-NamedLayer%3E%2B%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%2B%3CUserStyle%3E%2B%3Cse%3AName%3ETEST
-%3C%2Fse%3AName%3E%2B%3Cse%3AFeatureTypeStyle%3E%2B%3Cse%3ARule%3E%2B%3Cse%3ARasterSymbolizer
-%3E%2B%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%2B%3CColorMap%3E%2B%3CColorMapEntry
-%2Bcolor%3D%22%238cff66%22%2Bquantity%3D%220%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23ffff00
-%22%2Bquantity%3D%2225%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23b38600%22%2Bquantity
-%3D%2250%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23cc0000%22%2Bquantity
-%3D%2275%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%234d0000%22%2Bquantity%3D%22100%22%2F%3E%2B%3C%2F
-ColorMap%3E%2B%3C%2Fse%3ARasterSymbolizer%3E%2B%3C%2Fse%3ARule%3E%2B%3C%2Fse%3A
-FeatureTypeStyle%3E%2B%3C%2FUserStyle%3E%2B%3C%2FNamedLayer%3E%2B%3C%2FStyledLayerDescriptor%3E
+&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3C
+StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net
+%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22
+http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
+2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld
+%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3C
+NamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
+%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3A
+RasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3C
+ColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E
+%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E
+%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A
 ```
 
-![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%3C%3Fxml%2Bversion%3D%221.0%22%2Bencoding%3D%22UTF-8%22%3F%3E%2B%3CStyledLayerDescriptor%2Bversion%3D%221.0.0%22%2Bxmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%2Bxmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%2Bxmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%2Bxmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%2Bxsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%2Bhttp%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%2B%3CNamedLayer%3E%2B%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%2B%3CUserStyle%3E%2B%3Cse%3AName%3ETEST%3C%2Fse%3AName%3E%2B%3Cse%3AFeatureTypeStyle%3E%2B%3Cse%3ARule%3E%2B%3Cse%3ARasterSymbolizer%3E%2B%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%2B%3CColorMap%3E%2B%3CColorMapEntry%2Bcolor%3D%22%238cff66%22%2Bquantity%3D%220%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23ffff00%22%2Bquantity%3D%2225%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23b38600%22%2Bquantity%3D%2250%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%23cc0000%22%2Bquantity%3D%2275%22%2F%3E%2B%3CColorMapEntry%2Bcolor%3D%22%234d0000%22%2Bquantity%3D%22100%22%2F%3E%2B%3C%2FColorMap%3E%2B%3C%2Fse%3ARasterSymbolizer%3E%2B%3C%2Fse%3ARule%3E%2B%3C%2Fse%3AFeatureTypeStyle%3E%2B%3C%2FUserStyle%3E%2B%3C%2FNamedLayer%3E%2B%3C%2FStyledLayerDescriptor%3E)
+![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A)
 
 
 ## Web Coverage Service (WCS)
