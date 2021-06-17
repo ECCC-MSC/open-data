@@ -19,7 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * TBD
 * bug fixes:
-    * TBD
+    * Fixed SLD request in the Handling styles section
 
 ## 2.3.36
 	
