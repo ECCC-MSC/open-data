@@ -86,6 +86,13 @@ This enables receiving modifications for the entire `public-doc` repository.
 3. Configure your fork by specifying the upstream reference:
     * `cd public-doc`
     * `git remote add upstream https://gccode.ssc-spc.gc.ca/ec-msc/public-doc.git`
+4. [Setup an SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) for GitHub access
+    * Open Git Bash application (if on Windows) and check for existing SSH keys with the `cat ~/.ssh/known_hosts | grep github` command. If an output comes out, a SSH key already exists and you can skip to the 4.2 section of this document.
+    * Generate a new SSH key with the command `ssh-keygen -t ed25519 -C "your_email@example.com"` (Replace `your_email@example.com` with the email address associated with your GitHub account) and press the Enter key when a message pops up
+    * Copy the whole content of the newly create public key. You can use a command like `cat .ssh/id_ed25519.pub` to see the content of the key (change `.ssh/id_ed25519.pub` in the command by the path specified in the output of the previous command above)
+    * Go on the [Github Settings page](https://github.com/settings/keys). Then, click on `New SSH Key` and fill the blanks. The `Key` field should contain the content of the key retrieved in the previous step.
+    * Click on the `Add SSH key` button
+    * You can then test if everything works on Git Bash by running the command `ssh -T git@github.com`, and answering `yes` to the message coming up on Git Bash (`Are you sure you want to continue connecting (yes/no/[fingerprint])`)
 
 ## 4.2 - Editing the documentation
 
