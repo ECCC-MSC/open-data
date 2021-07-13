@@ -19,7 +19,7 @@ nav:
         - Add raw data to QGIS /<br>Ajouter des données brutes à QGIS: usage/tutorial_raw-data_QGIS_en.md
         - Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python: usage/use-case_arthur/use-case_arthur_en.ipynb
         - Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS: usage/tutorial_OAFeat_QGIS_en.md
-        - Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python: usage/use-case_oafeat/use-case_oafeat-interactive_en.ipynb
+        - Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python: usage/use-case_oafeat/use-case_oafeat-script_en.ipynb
         - Use GDAL commands /<br>Utiliser des commandes GDAL: usage/tutorial_gdal/tutorial_gdal_en/
         - API technical doc /<br>Doc technique de l'API: msc-geomet/web-services_en.md
     - Contact us /<br>Contactez-nous: https://weather.gc.ca/mainmenu/contact_us_e.html
