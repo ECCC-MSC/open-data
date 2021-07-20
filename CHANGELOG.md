@@ -15,9 +15,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * TBD
-    * TBD
 * improvements:
     * Menu link now points to the appropriate OAFeat Jupyter Notebook
+    * Improved links in OAFeat Jupyter Notebooks
 * bug fixes:
     * Fixed SLD request in the Handling styles section
 
