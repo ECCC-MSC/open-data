@@ -236,8 +236,8 @@ Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre 
     }
   </style>
 
-  <title>Exemple de couche WMS de GeoMeet avec OpenLayers</title>
-  <meta name="description" content="Exemple de couche WMS de GeoMeet avec OpenLayers">
+  <title>Exemple de couche WMS de GeoMet avec OpenLayers</title>
+  <meta name="description" content="Exemple de couche WMS de GeoMet avec OpenLayers">
   <meta name="author" content="CCMEP">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.0/css/ol.css" type="text/css">
@@ -399,7 +399,7 @@ Deux couches GeoMet-Météo sont utilisées pour créer cette animation : `RADAR
       padding-left: 0.5 rem;
     }
   </style>
-  <title>Couche temporelle de GeoMet animée avec OepenLayers</title>
+  <title>Couche temporelle de GeoMet animée avec OpenLayers</title>
   <meta name="description" content="Exemple de GeoMet avec OpenLayers">
   <meta name="author" content="CCMEP">
 
