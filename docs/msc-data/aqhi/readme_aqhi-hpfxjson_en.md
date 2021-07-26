@@ -41,7 +41,7 @@ File names have the form:
     {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
 
 where:
-
+        
    * YYYYMMDD : Year, month and day of the observation
    * T : Time delimiter according to ISO8601 norms
    * HH : UTC time of the observation
