@@ -38,9 +38,9 @@ Les noms de fichiers ont la nomenclature suivante :
 
 * __Observations__ :
        
-    * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
+    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
     
-* où :
+Avec :
         
     * __YYYYMMDD__ : Année, mois et jour de l'observation
     * __T__ : Délimiteur temporel selon les normes ISO8601
@@ -55,9 +55,9 @@ Les noms de fichiers ont la nomenclature suivante :
 
 * __Prévisions publiques__
 
-    * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json     
+    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json     
     
-* où :
+Avec :
 
     * __YYYYMMDD__ : Année, mois et jour du début de l'émission
     * __T__ : Délimiteur temporel selon les normes ISO8601

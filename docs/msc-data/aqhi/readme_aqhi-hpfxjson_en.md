@@ -34,11 +34,13 @@ A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_d
 
 NOTE: ALL HOURS ARE IN UTC.
 
-* __Observations__
+File names have the form:
 
-    * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
+* __Observations__ :
 
-* where:
+    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
+
+where:
 
     * __YYYYMMDD__ : Year, month and day of the observation
     * __T__ : Time delimiter according to ISO8601 norms
@@ -53,9 +55,9 @@ NOTE: ALL HOURS ARE IN UTC.
 
 * __Public forecasts__ :
 
-    * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json   
+    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json   
    
-* where:
+where:
     
     * __YYYYMMDD__ : Year, month and day of the forecast issue time
     * __T__ : Time delimiter according to ISO8601 norms
