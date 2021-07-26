@@ -50,7 +50,7 @@ Avec :
      * MSC : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
      * AQHI : Chaîne de caractères constante pour "Air Quality Health Index"
      * Observation : Chaîne de caractères constante pour observations de la Côte Air Santé
-     * CGNDBcode : Un '[code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique)' qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+     * CGNDBcode : Un `[code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique)` qui identifie chaque [`communauté`](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
      * json : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 * __Prévisions publiques__
@@ -59,16 +59,16 @@ Avec :
     
 Avec :
      
-      * YYYYMMDD : Année, mois et jour du début de l'émission
-      * T : Délimiteur temporel selon les normes ISO8601
-      * HH : Heure UTC de l'émission  
-      * mm : Minute de l'émission
-      * Z : Fuseau horaire (heure UTC)
-      * MSC : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
-      * AQHI : Chaîne de caractères constante pour "Air Quality Health Index"
-      * Forecasts : Chaîne de caractères constante pour prévisions de la Côte Air Santé
-      * CGNDBcode : Un '[code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique)' qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-      * json : Chaîne de caractères constante indiquant que le format est GeoJSON
+     * YYYYMMDD : Année, mois et jour du début de l'émission
+     * T : Délimiteur temporel selon les normes ISO8601
+     * HH : Heure UTC de l'émission  
+     * mm : Minute de l'émission
+     * Z : Fuseau horaire (heure UTC)
+     * MSC : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données       
+     * AQHI : Chaîne de caractères constante pour "Air Quality Health Index"
+     * Forecasts : Chaîne de caractères constante pour prévisions de la Côte Air Santé
+     * CGNDBcode : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+     * json : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 ## Notes
 
