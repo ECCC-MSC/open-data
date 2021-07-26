@@ -42,7 +42,7 @@ Les noms de fichiers ont la nomenclature suivante :
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
 ```
 
-où :
+Avec :
 
 * YYYYMMDD : Année, mois et jour de l'observation
 * T : Délimiteur temporel selon les normes ISO8601
