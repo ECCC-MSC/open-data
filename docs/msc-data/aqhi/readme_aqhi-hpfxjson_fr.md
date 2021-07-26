@@ -40,7 +40,8 @@ Les noms de fichiers ont la nomenclature suivante :
        
     {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
     
-Avec :    
+Avec :
+
      * YYYYMMDD : Année, mois et jour de l'observation
      * T : Délimiteur temporel selon les normes ISO8601
      * H : Heure UTC de l'observation
@@ -57,6 +58,7 @@ Avec :
     {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json     
     
 Avec :
+
      * YYYYMMDD : Année, mois et jour du début de l'émission
      * T : Délimiteur temporel selon les normes ISO8601
      * HH : Heure UTC de l'émission  
