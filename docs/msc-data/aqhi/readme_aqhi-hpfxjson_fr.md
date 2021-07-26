@@ -36,7 +36,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-* __Observations__ :
+* __Observations__
        
     {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
     
@@ -55,8 +55,8 @@ Avec :
 
 * __Prévisions publiques__
 
-    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json     
-    
+    {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json
+
 Avec :
 
  * YYYYMMDD : Année, mois et jour du début de l'émission
