@@ -49,7 +49,7 @@ NOTE: ALL HOURS ARE IN UTC.
 * where:
 
     * __'AQ_OBS'__ : Filename prefix. Constant string.
-    * __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI communitiy](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+    * __CGNDBcode__ : 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
     * __YYYY__ : Year of the observation, 4 digits.
     * __MM__ : Month of the observation, 2 digits (January = 01).
     * __DD__ : Day of the observation, 2 digits.
