@@ -42,16 +42,16 @@ File names have the form:
 
 where:
 
-    * __YYYYMMDD__ : Year, month and day of the observation
-    * __T__ : Time delimiter according to ISO8601 norms
-    * __HH__ : UTC time of the observation
-    * __mm__ : Minute of the observation
-    * __Z__ : Time zone (UTC hour)
-    * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data 
-    * __AQHI__ : Constant string for "Air Quality Health Index"
-    * __Observation__ : Constant string for AQHI observation 
-    * __CGNDBcode__ :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-    * __json__ : Constant string for GeoJSON format
+     * YYYYMMDD : Year, month and day of the observation
+     * T : Time delimiter according to ISO8601 norms
+     * HH : UTC time of the observation
+     * mm : Minute of the observation
+     * Z : Time zone (UTC hour)
+     * MSC : Constant string indicating the Meteorological Service of Canada, source of data 
+     * AQHI : Constant string for "Air Quality Health Index"
+     * Observation : Constant string for AQHI observation 
+     * CGNDBcode :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+     * json : Constant string for GeoJSON format
 
 * __Public forecasts__ :
 
@@ -59,16 +59,16 @@ where:
    
 where:
     
-    * __YYYYMMDD__ : Year, month and day of the forecast issue time
-    * __T__ : Time delimiter according to ISO8601 norms
-    * __HH__ : Hour of the forecast issue time
-    * __mm__ : Minute of the forecast issue time
-    * __Z__ : Time zone (UTC hour)
-    * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data 
-    * __AQHI__ : Constant string for "Air Quality Health Index"
-    * __Forecasts__ : Constant string for AQHI forecasts
-    * __CGNDBcode__ :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
-    * __json__ : Constant string for GeoJSON format
+     * YYYYMMDD : Year, month and day of the forecast issue time
+     * T : Time delimiter according to ISO8601 norms
+     * HH : Hour of the forecast issue time
+     * mm : Minute of the forecast issue time
+     * Z : Time zone (UTC hour)
+     * MSC : Constant string indicating the Meteorological Service of Canada, source of data 
+     * AQHI : Constant string for "Air Quality Health Index"
+     * Forecasts : Constant string for AQHI forecasts
+     * CGNDBcode :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
+     * json : Constant string for GeoJSON format
 
 ## Notes
 
