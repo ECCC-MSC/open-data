@@ -42,16 +42,16 @@ Les noms de fichiers ont la nomenclature suivante :
     
 Avec :
         
-    * __YYYYMMDD__ : Année, mois et jour de l'observation
-    * __T__ : Délimiteur temporel selon les normes ISO8601
-    * __HH__ : Heure UTC de l'observation
-    * __mm__ : minute de l'observation
-    * __Z__ : Fuseau horaire (heure UTC)
-    * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
-    * __AQHI__ : Chaîne de caractères constante pour "Air Quality Health Index"
-    * __Observation__ : Chaîne de caractères constante pour observations de la Côte Air Santé
-    * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
-    * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
+   * __YYYYMMDD__ : Année, mois et jour de l'observation
+   * __T__ : Délimiteur temporel selon les normes ISO8601
+   * __HH__ : Heure UTC de l'observation
+   * __mm__ : minute de l'observation
+   * __Z__ : Fuseau horaire (heure UTC)
+   * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
+   * __AQHI__ : Chaîne de caractères constante pour "Air Quality Health Index"
+   * __Observation__ : Chaîne de caractères constante pour observations de la Côte Air Santé
+   * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
+   * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 * __Prévisions publiques__
 
