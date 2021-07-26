@@ -16,9 +16,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following address:
 
-* Observations: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/observation/realtime/json](http://hpfx.collab.science.gc.ca/)
+* __Observations__: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/observation/realtime/json](http://hpfx.collab.science.gc.ca/)
 
-* Public forecasts: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
+* __Public forecasts__: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
 
 With:
 
@@ -34,7 +34,7 @@ A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_d
 
 NOTE: ALL HOURS ARE IN UTC.
 
-* **Observations** 
+* __Observations__
 
     * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
 
@@ -51,7 +51,7 @@ NOTE: ALL HOURS ARE IN UTC.
     * __CGNDBcode__ :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
     * __json__ : Constant string for GeoJSON format
 
-* **Public forecasts** :
+* __Public forecasts__ :
 
     * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json   
    
@@ -71,6 +71,8 @@ NOTE: ALL HOURS ARE IN UTC.
 ## Notes
 
 * The GeoJSON observation files are produced hourly, at approximately 40 minutes past the hour. The GeoJSON public forecast files are issued twice per day at approximately 6am and 5pm local time.
+
+* When forecast data is amended, a parameter associated with the file status is updated accordingly in the GeoJSON file.
 
 * Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/que/observation/realtime/json](http://hpfx.collab.science.gc.ca). However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on [the American AirNow portal](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
 

@@ -16,9 +16,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles pour les différentes provinces aux adresses suivantes :
 
-* Observations : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/observation/realtime/json](http://hpfx.collab.science.gc.ca/)
+* __Observations__ : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/observation/realtime/json](http://hpfx.collab.science.gc.ca/)
     
-* Prévisions publiques : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
+* __Prévisions publiques__ : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
 
 Avec:
 
@@ -36,7 +36,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-* **Observations** :
+* __Observations__ :
        
     * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
     
@@ -53,7 +53,7 @@ Les noms de fichiers ont la nomenclature suivante :
     * __CGNDBcode__ : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS. 
     * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
-* **Prévisions publiques**
+* __Prévisions publiques__
 
     * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json     
     
@@ -73,6 +73,8 @@ Les noms de fichiers ont la nomenclature suivante :
 ## Notes
 
 * Les fichiers d'observations GeoJSON sont produits aux heures, environ 40 minutes après l'heure. Les fichiers GeoJSON pour les prévisions publiques sont emis deux fois par jour vers 06:00h et 17:00h heure locale.
+
+* Lorsque les données de prévision sont amendées, un paramètre associé au statut du fichier est mis à jour en conséquence dans le fichier GeoJSON.
 
 * Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/que/observation/realtime/json](http://hpfx.collab.science.gc.ca). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur [le portail américain AirNow](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
 
