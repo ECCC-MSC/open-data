@@ -36,7 +36,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-* __Observations__ : 
+### Observations
 
 ```
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
@@ -55,7 +55,7 @@ Avec :
    * CGNDBcode : Un [code de 5-caractères](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique) qui identifie chaque [communauté](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson) CAS
    * json : Chaîne de caractères constante indiquant que le format est GeoJSON
 
-* __Prévisions publiques__
+### Prévisions publiques
 
 ```
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json
