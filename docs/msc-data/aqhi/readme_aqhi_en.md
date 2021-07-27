@@ -17,6 +17,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 
 * [CSV data for AQHI, available on the MSC Datamart](readme_aqhi-datamartcsv_en.md), including chemical species forecast data from numerical air quality models
 * [XML data for AQHI, available on the MSC Datamart](readme_aqhi-datamartxml_en.md) 
+* [GeoJSON data for AQHI, available on HPFX, the alternative server of the MSC Datamart](readme_aqhi-datamartjson_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
