@@ -14,10 +14,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * Add AQHI GeoJSON page 
 * improvements:
     * Menu link now points to the appropriate OAFeat Jupyter Notebook
     * Improved links in OAFeat Jupyter Notebooks
+    * Fixed several typos
 * bug fixes:
     * Fixed SLD request in the Handling styles section
 
