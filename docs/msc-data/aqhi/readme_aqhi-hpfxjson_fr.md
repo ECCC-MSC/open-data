@@ -38,10 +38,10 @@ Les noms de fichiers ont la nomenclature suivante :
 
 * __Observations__
 
-   * {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
-
+```
+{YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
+```
    * Avec :
-
        * YYYYMMDD : Année, mois et jour de l'observation
        * T : Délimiteur temporel selon les normes ISO8601
        * H : Heure UTC de l'observation
