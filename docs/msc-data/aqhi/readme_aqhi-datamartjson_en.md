@@ -6,19 +6,19 @@
 
 # Air Quality Health Index (AQHI) observation and forecast data in GeoJSON format
 
-This page describes the the observation and forecast data available in GeoJSON format for the [Air Quality Health Index AQHI](readme_aqhi_en.md) that are also available on the [Environment and Climate Change Canada website](https://meteo.gc.ca/airquality/pages/index_e.html). 
+This page describes the the observation and forecast data available in GeoJSON format for the [Air Quality Health Index AQHI](readme_aqhi_en.md).
 
 ## Data location
 
 HPFX data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoJSON file.
+The data is available via the HTTPS protocol. It is possible to access it with a web browser. In this case, we obtain a list of links giving access to a GeoJSON file.
 
 The data can be accessed at the following address:
 
 * __Observations__: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/observation/realtime/json](http://hpfx.collab.science.gc.ca/)
 
-* __Public forecasts__: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
+* __Forecasts__: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/[atl,ont,pnr,pyr,que]/forecast/realtime/json](http://hpfx.collab.science.gc.ca/)
 
 With:
 
@@ -28,7 +28,7 @@ With:
     * pyr: Pacific and Yukon Region
     * que: Quebec region
 
-A [complete list of cities](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
+A [complete list of locations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), with the codes of [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique), Canada's toponymic data maintained by Natural Resources Canada, is available in GeoJSON format. 
 
 ## File name nomenclature 
 
@@ -48,14 +48,14 @@ where:
 * T : Time delimiter according to ISO8601 norms
 * HH : UTC time of the observation
 * mm : Minute of the observation
-* Z : Time zone (UTC hour)
+* Z : Refers to UTC time
 * MSC : Constant string indicating the Meteorological Service of Canada, source of data 
 * AQHI : Constant string for "Air Quality Health Index"
 * Observation : Constant string for AQHI observation 
 * CGNDBcode :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 * json : Constant string for GeoJSON format
 
-### Public forecasts
+### Forecasts
 
 ```
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json   
@@ -67,7 +67,7 @@ where:
 * T : Time delimiter according to ISO8601 norms
 * HH : Hour of the forecast issue time
 * mm : Minute of the forecast issue time
-* Z : Time zone (UTC hour)
+* Z : Refers to UTC time
 * MSC : Constant string indicating the Meteorological Service of Canada, source of data 
 * AQHI : Constant string for "Air Quality Health Index"
 * Forecasts : Constant string for AQHI forecasts
