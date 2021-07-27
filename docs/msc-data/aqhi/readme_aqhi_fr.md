@@ -17,6 +17,7 @@ Ces données sont respectivement disponibles sur les services serveur de donnée
 
 * [Données pour la CAS, disponibles en format CSV sur le Datamart du SMC](readme_aqhi-datamartcsv_fr.md), dont des données de prévisions d'espèces chimiques provenant de modèles numériques de qualité de l'air
 * [Données pour la CAS, disponibles en format XML sur le Datamart du SMC](readme_aqhi-datamartxml_fr.md)
+* [Données pour la CAS, disponibles en format GeoJSON sur HPFX, le serveur alternatif du Datamart du SMC](readme_aqhi-datamartjson_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
