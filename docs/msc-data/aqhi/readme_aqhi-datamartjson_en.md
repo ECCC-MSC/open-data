@@ -1,4 +1,4 @@
-[En français](readme_aqhi-hpfxjson_fr.md)
+[En français](readme_aqhi-datamartjson_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -36,7 +36,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-* __Observations__
+### Observations
 
 ```
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Observation_{CGNDBcode}.json
@@ -55,7 +55,7 @@ where:
 * CGNDBcode :  A 5-letter [CGNDB](http://www4.rncan.gc.ca/search-place-names/unique) code which identifies each [AQHI community](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson). 
 * json : Constant string for GeoJSON format
 
-* __Public forecasts__
+### Public forecasts
 
 ```
 {YYYYMMDD}T{HH}{mm}Z_MSC_AQHI-Forecasts_{CGNDBcode}.json   
