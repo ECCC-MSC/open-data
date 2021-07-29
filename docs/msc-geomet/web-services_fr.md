@@ -274,7 +274,7 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 Les requêtes de type [OGC Web Coverage Service](https://www.opengeospatial.org/standards/wcs) permettent aux usagers de télécharger les données géospatiales brutes pour une région d'intérêt spécifique. Les requêtes WCS sont effectuée via l'Internet et offrent davantage de flexibilité lorsque comparées au téléchargement de fichiers bruts. Le service WCS rend possible plusieurs types de requêtes, qui sont décrites en détail ci-dessous.
 
 
-Notez que seule la version WCS 2.0.1 est présentement supportée par les services web GeoMet du SMC. Nous invitons les usagers à utiliser cette version du standard.
+Notez que seule la version WCS 2.0.1 est présentement supportée par les services web GeoMet du SMC. Nous invitons les usagers à utiliser cette version du standard. Il est aussi à noter que QGIS et ArcGIS ne supportent pas le WCS 2.0.1.
 
  
 ### WCS GetCapabilities
