@@ -16,6 +16,7 @@ nav:
         - Usage overview /<br>Aperçu de l'utilisation: usage/readme_en.md
         - Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS: usage/tutorial_WMS_QGIS_en.md
         - Create interactive web maps /<br>Créer des cartes web interactives: usage/tutorial_web-maps_en.md
+        - Add tables and graphs: usage/tutorial_graphs-tables_en.md
         - Add raw data to QGIS /<br>Ajouter des données brutes à QGIS: usage/tutorial_raw-data_QGIS_en.md
         - Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python: usage/use-case_arthur/use-case_arthur_en.ipynb
         - Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS: usage/tutorial_OAFeat_QGIS_en.md

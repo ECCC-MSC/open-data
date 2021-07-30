@@ -46,6 +46,10 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
     * Add layers
     * Display popup dialog boxes
     * Animate temporal layers
+* **[Create interactive web graphs and tables](usage/tutorial_graphs-tables_en.md)** :
+    * Prepare and send requests
+    * Create an interactive graph
+    * Display a table with forecast data
 
 **Use cases**:
 

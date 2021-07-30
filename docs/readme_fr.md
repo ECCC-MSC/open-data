@@ -47,6 +47,11 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
     * Afficher des boîtes de dialogue
     * Animer des couches temporelles
 
+* **[Créer des graphiques et des tableaux à partir de l'API GeoMet du SMC](usage/tutorial_graphs-tables_fr.md)** :
+    * Préparation et soumission de requêtes WMS
+    * Création d'un graphique intéractif
+    * Afficher un tableau de valeurs de données
+    
 **Cas d'utilisation** :
 
 * [Arthur : profits anticipés selon la probabilité de précipitation](../usage/use-case_arthur/use-case_arthur_fr/) :
