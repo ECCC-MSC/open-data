@@ -34,7 +34,7 @@ The various data sources are supplied via Sarracenia, the directory tree structu
 
 A direct consequence of this date hierarchy is that the data retention period becomes identical for all data sets and is dependent on the available disk space.
 
-Access to data via the AMQP protocol is of course strongly recommended.
+Access to data via [the AMQP protocol is of course strongly recommended](amqp_en.md).
 
 Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca) server in case of problems.
 
