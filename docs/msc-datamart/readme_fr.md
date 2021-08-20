@@ -39,7 +39,7 @@ Alimenté des divers sources de données via Sarracenia, l'arborescence des rép
 
 Une conséquence directe de cette hiérarchie par date, concerne la période de rétention des données qui devient identique pour tous les jeux de données et fonction de l'espace disque disponible.
 
-L'accès aux données via le protocole AMQP est évidemment fortement conseillé.
+L'accès aux données via [le protocole AMQP est évidemment fortement conseillé](amqp_fr.md).
 
 Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur alternatif de développer la capacité de retourner rapidement sur le serveur [https://dd.meteo.gc.ca](https://dd.meteo.gc.ca), en cas de problèmes.
 
