@@ -14,6 +14,7 @@ dependencies:
   - numpy
   - owslib
   - pandas
+  - Pillow
   - plotly
   - tabulate
   - pip
@@ -21,4 +22,5 @@ dependencies:
     - matplotlib
     - owslib
     - pandas
+    - Pillow
     - tabulate
