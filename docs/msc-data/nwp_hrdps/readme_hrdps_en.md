@@ -4,11 +4,9 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > HRDPS
 
-
 # Data and Products of the High Resolution Deterministic Prediction System
 
-The High Resolution Deterministic Prediction System (HRDPS) carries out physics calculations to arrive at deterministic predictions of atmospheric elements from the current day out to 48 hours into the future. Atmospheric elements include temperature, precipitation, cloud cover, wind speed and direction, humidity and others. This product contains raw numerical results of these calculations. Geographical coverage of the system is most of Canada. Data is available over specific areas in the MSC Datamart and the whole coverage is available in the MSC GeoMet web services. Data is available at a horizontal resolution of 2.5 km. Data is available for 28 vertical levels. Predictions are performed up to four times a day.
-
+The High Resolution Deterministic Prediction System (HRDPS) carries out physics calculations to arrive at deterministic predictions of atmospheric elements from the current day out to 48 hours into the future. Atmospheric elements include temperature, precipitation, cloud cover, wind speed and direction, humidity and others. This product contains raw numerical results of these calculations. Geographical coverage of the system is most of Canada. Data is available over specific areas in the MSC Datamart and the whole coverage is available in the MSC GeoMet web services. Data is available at a horizontal resolution of about 2.5 km up to 31 vertical levels. Predictions are performed up to four times a day.
 
 ## Access
 
