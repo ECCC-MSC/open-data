@@ -22,6 +22,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fixed several typos
 * bug fixes:
     * Fixed SLD request in the Handling styles section
+    * updated HRDPS description to match MCF
 
 ## 2.3.36
 	

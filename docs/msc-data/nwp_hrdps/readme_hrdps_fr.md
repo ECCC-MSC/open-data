@@ -6,7 +6,7 @@
 
 # Données et Produits du Système à haute résolution de prévision déterministe
 
-Le Système à haute résolution de prévision déterministe (SHRPD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 48 heures dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique inclut la majeure partie du Canada. La résolution spatiale horizontale des données est de 2,5 km. Les données sont offertes pour 28 niveaux verticaux. Les prévisions sont exécutées quatre fois par jour.
+Le Système à haute résolution de prévision déterministe (SHRPD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 48 heures dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique inclut la majeure partie du Canada. La résolution spatiale horizontale des données est d'environ 2.5 km distribuées sur au plus 31 niveaux verticaux. Les prévisions sont exécutées quatre fois par jour.
 
 ## Accès
 
