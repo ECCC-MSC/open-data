@@ -14,7 +14,7 @@ Anomalous weather resulting in Temperature and Precipitation extremes occurs alm
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services.
 
-* [Data available from the GeoMet-Climate API / geospatial web services](https://api.weather.gc.ca/collections)
+* [Data available from the MSC GeoMet-OGC-API web services](https://api.weather.gc.ca/collections)
 * Data upcoming on the MSC Datamart
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
