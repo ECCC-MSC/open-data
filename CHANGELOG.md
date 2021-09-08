@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add AQHI GeoJSON page 
+    * Add LTCE page (GeoMet-OGC-API)
 * improvements:
     * Menu link now points to the appropriate OAFeat Jupyter Notebook
     * Improved links in OAFeat Jupyter Notebooks
