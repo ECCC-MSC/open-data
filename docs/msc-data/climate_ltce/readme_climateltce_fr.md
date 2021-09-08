@@ -14,7 +14,7 @@ Des conditions météorologiques anormales se traduisant par des extrêmes de te
 
 Ces données sont disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](https://api.weather.gc.ca/collections)
+* [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.weather.gc.ca/collections)
 * Données à venir sur le Datamart du SMC.
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
