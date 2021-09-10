@@ -21,6 +21,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Improved links in OAFeat Jupyter Notebooks
     * link to AMQP in HPFX section
     * Fixed several typos
+    * Change layer order on web map of Hurricane prediction page
 * bug fixes:
     * Fixed SLD request in the Handling styles section
     * updated HRDPS description to match MCF
