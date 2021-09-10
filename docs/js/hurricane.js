@@ -49,7 +49,16 @@ let layers = [
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_CENTRE', 'TILED': true},
+        params: {'LAYERS': 'HURRICANE_ERR', 'TILED': true},
+        transition: 0,
+        crossOrigin: 'Anonymous'
+      })
+    }),
+    new ol.layer.Image({
+      source: new ol.source.ImageWMS({
+        format: 'image/png',
+        url: 'https://geo.weather.gc.ca/geomet/',
+        params: {'LAYERS': 'HURRICANE_RAD', 'TILED': true},
         transition: 0,
         crossOrigin: 'Anonymous'
       })
@@ -67,16 +76,7 @@ let layers = [
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_ERR', 'TILED': true},
-        transition: 0,
-        crossOrigin: 'Anonymous'
-      })
-    }),
-    new ol.layer.Image({
-      source: new ol.source.ImageWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_RAD', 'TILED': true},
+        params: {'LAYERS': 'HURRICANE_CENTRE', 'TILED': true},
         transition: 0,
         crossOrigin: 'Anonymous'
       })

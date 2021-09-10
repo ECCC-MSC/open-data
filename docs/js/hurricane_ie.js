@@ -22,7 +22,15 @@ layers: [
       source: new ol.source.TileWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_CENTRE', 'TILED': true},
+        params: {'LAYERS': 'HURRICANE_ERR', 'TILED': true},
+        transition: 0
+      })
+    }),
+    new ol.layer.Tile({
+      source: new ol.source.TileWMS({
+        format: 'image/png',
+        url: 'https://geo.weather.gc.ca/geomet/',
+        params: {'LAYERS': 'HURRICANE_RAD', 'TILED': true},
         transition: 0
       })
     }),
@@ -38,15 +46,7 @@ layers: [
       source: new ol.source.TileWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_ERR', 'TILED': true},
-        transition: 0
-      })
-    }),
-    new ol.layer.Tile({
-      source: new ol.source.TileWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_RAD', 'TILED': true},
+        params: {'LAYERS': 'HURRICANE_CENTRE', 'TILED': true},
         transition: 0
       })
     }),
