@@ -25,6 +25,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * Fixed SLD request in the Handling styles section
     * updated HRDPS description to match MCF
+    * Fixed DCS variables description in French
 
 ## 2.3.36
 	

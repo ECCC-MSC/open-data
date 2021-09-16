@@ -48,7 +48,7 @@ where :
 * __Value__ : Values category, taking one of the values :  [ abs, anom, 2021-2040, 2041-2060, 2061-2080, 2081-2100]; abs stands for absolute values (actual values / modelled projections); anom stands for anomalies.
 * __Projection__ : Grid mapping (projection) taking the value : [latlon].
 * __Resolution__ : Grid resolution taking one of the values : [1x1]; 1x1 stands for 1-degree grid resolution in both the latitudinal and longitudinal directions.
-* __Variable__ : Name of climate variable available in the file, taking one of the values : [PCP, TEMP, , SICETHKN, SICECONC, SNDPT, SFCWND]; PCP stands for mean precipitation, TEMP for mean temperature, , SICETHKN stands for sea ice thickness, SICECONC stands for sea ice concentration, SNDPT stands for snow depth, SFCWND stands for surface wind speed.
+* __Variable__ : Name of climate variable available in the file, taking one of the values : [PCP, TMEAN, TMAX, TMIN]; PCP stands for mean precipitation, TMEAN for mean temperature, TMAX for maximum temperature, TMIN for minimum temperature.
 * __PctlPP__ : Ensemble percentile, taking one of the values : [pctl5, pctl25, pctl50, pctl75, pctl95]; pctl5 stands for the 5th percentile of the ensemble; pctl25 stands for the 25th percentile of the ensemble; pctl50 stands for the 50th percentile, also referred to as the median, of the ensemble; pctl75 stands for the 75th percentile of the ensemble; pctl95 stands for the 95th percentile of the ensemble.
 * __TimeStep__ : Time step, taking one of the values : [P1Y, P1M]; P1Y stand for 1 year time step and P1M stands for 1 month time step.
 * __nc__ : Constant string indicating the NetCDF format.

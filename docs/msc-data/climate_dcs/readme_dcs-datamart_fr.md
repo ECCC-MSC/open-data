@@ -48,7 +48,7 @@ avec :
 * __Value__ : Catégorie de valeurs, prenant l'une des valeurs :  [abs, anom, 2021-2040, 2041-2060, 2061-2080, 2081-2100] ; abs représente les valeurs absolues (valeurs réelles / projections modélisées) ; anom représente les anomalies.
 * __Projection__ : Projection de la grille (projection), prenant la valeur :[latlon].
 * __Resolution__ : Résolution de la grille, prenant l'une des valeurs : [1x1] ; 1x1 représente une résolution de grille de 1 degré dans les directions latitudinale et longitudinale
-* __Variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs :[ PCP, TEMP, SICETHKN, SICETHKN, SICECONC, SNDPT, SFCWND] ; PCP représente les précipitations moyennes, TEMP représente la température moyenne, SICETHKN représente l'épaisseur de la glace de mer, SICECONC représente la concentration de glace de mer, SNDPT représente la profondeur de la neige, SFCWND représente la vitesse du vent de surface.
+* __Variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs :[PCP, TMEAN, TMAX, TMIN] ; PCP représente les précipitations moyennes, TMEAN représente la température moyenne, TMAX représente la température maximale, TMIN représente la température minimale.
 * __PctlPP__ : Percentile d'ensemble, prenant l'une des valeurs : [pctl5, pctl25, pctl50, pctl75, pctl95] ; pctl5 représente le 5e percentile de l'ensemble ; pctl25 représente le 25e percentile de l'ensemble ; pctl50 représente le 50e percentile, également appelé médiane de l'ensemble ; pctl75 représente le 75e percentile de l'ensemble ; pctl95 représente le 95e percentile de l'ensemble.
 * __TimeStep__ : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
 * __nc__ : Chaîne de caractères constante indiquant le format NetCDF
@@ -61,14 +61,14 @@ Le fichier représente le 50e percentile de l'ensemble multimodèle statistiquem
 
 Les variables et unités disponibles pour les ensembles de données sur le Datamart du SMC sont :
 
-* Projections des changements de température moyenne basées sur les multimodèles d'ensemble statistiquement réduits (°C)
-* Projections des changements de température minimale basées sur les multimodèles d'ensemble statistiquement réduits (°C)
-* Projections des changements de température maximale basées sur les multimodèles d'ensemble statistiquement réduits (°C)
-* Projections des changements de précipitation totale basées sur les multimodèles d'ensemble statistiquement réduits (%)
-* Variation moyenne projetée des précipitations, basée sur des multimodèles d'ensemble statistiquement réduits (mm/jour)
-* Variation moyenne projetée de la température moyenne, basée sur des multimodèles d'ensemble statistiquement réduits (%)
-* Variation moyenne projetée de la température maximale, basée sur des multimodèles d'ensemble statistiquement réduits (%)
-* Variation moyenne projetée de la température minimale, basée sur des multimodèles d'ensemble statistiquement réduits (%)
+* Ensembles multi-modèles statistiquement réduits de la température moyenne (°C)
+* Ensembles multi-modèles à réduction statistique de la température minimale (°C)
+* Ensembles multi-modèles à réduction statistique de la température maximale (°C)
+* Ensembles multi-modèles statistiquement réduits des précipitations totales (mm/jour)
+* Changements projetés de la température moyenne sur la base d'ensembles multi-modèles à réduction d'échelle statistique (°C)
+* Changement prévus de la température minimale sur la base d'ensembles multimodèles à échelle réduite (°C)
+* Changements prévus de la température maximale sur la base d'ensembles multimodèles à échelle réduite (°C)
+* Projection des changements relatifs des précipitations totales sur la base d'ensembles multimodèles à échelle réduite (%)
 
 ## Support
 
