@@ -77,3 +77,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
     }
     head.appendChild(js);
 </script>
+
+## Note
+
+In the context of a project between Wikimedia Canada and Environnement et Changement climatique Canada, [100 years of climate data are available in Wikimedia Commons](https://meta.wikimedia.org/wiki/Projet_ECCC,_100_ans_de_donn%C3%A9es_m%C3%A9t%C3%A9orologiques_en_acc%C3%A8s_libre/en).

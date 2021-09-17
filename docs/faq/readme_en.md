@@ -70,7 +70,7 @@ For the data feeds, the following formats are available:
 * NUMERIC (ASCII)
 * GIF format (recent GIFs available for free on the MSC Datamart)
 * [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx) raw format for the old C-Band radars 
-* [ODIM_H5](https://support.hdfgroup.org/HDF5/users5.html) raw format for the new S-band radars
+* [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5) raw format for the new S-band radars
 
 ## Can I have archived radar data ?
 

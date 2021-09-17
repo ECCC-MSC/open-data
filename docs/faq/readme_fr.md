@@ -74,7 +74,7 @@ Concernant les fils de données, les formats disponibles sont les suivants :
 * NUMERIC (ASCII)
 * Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC)
 * Format brut [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx), pour les anciens radars à bande C
-* Format brut [ODIM_H5](https://support.hdfgroup.org/HDF5/users5.html), pour les nouveaux radars à bande S
+* Format brut [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5), pour les nouveaux radars à bande S
    
 ## Peut-on accéder aux données radar archivées?
 
