@@ -77,3 +77,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
     }
     head.appendChild(js);
 </script>
+
+## Note
+
+Dans le cadre d'un projet de Wikimedia Canada, financé par Environnement et Changement climatique Canada, [100 ans de données climatiques sont disponibles dans Wikimedia Commons](https://meta.wikimedia.org/wiki/Projet_ECCC,_100_ans_de_donn%C3%A9es_m%C3%A9t%C3%A9orologiques_en_acc%C3%A8s_libre).
