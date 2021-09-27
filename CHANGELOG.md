@@ -16,6 +16,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add AQHI GeoJSON page 
     * Add LTCE page (GeoMet-OGC-API)
+    * Add reference to Wikimedia Commons (100 years of climate data)
+    * Update GDPS DD page: removal of 25km data
 * improvements:
     * Menu link now points to the appropriate OAFeat Jupyter Notebook
     * Improved links in OAFeat Jupyter Notebooks
