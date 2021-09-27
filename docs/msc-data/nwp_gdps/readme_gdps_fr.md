@@ -7,7 +7,7 @@
 
 # Données et produits du Système global de prévision déterministe
 
-Le Système global de prévision déterministe (SPGD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 10 jours dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. La résolution spatiale horizontale des données est de 25 et 15 km. Les données sont offertes pour 28 niveaux verticaux. Les prévisions sont exécutées deux fois par jour.
+Le Système global de prévision déterministe (SPGD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 10 jours dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. La résolution spatiale horizontale des données est de 15 km. Les données sont offertes pour 33 niveaux verticaux. Les prévisions sont exécutées deux fois par jour.
 
 ## Accès
 
