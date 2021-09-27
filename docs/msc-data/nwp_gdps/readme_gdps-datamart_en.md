@@ -6,12 +6,11 @@
 
 # Global Deterministic Prediction System (GDPS) data in GRIB2 format
 
-The fields in the GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km and 25 km.
+The fields in the GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
 
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
-
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
 
@@ -21,32 +20,21 @@ The data can be accessed at the following address :
 
 where :
 
-* __RES__ : Horizontal resolution [15km, 25km]
+* __RES__ : Horizontal resolution [15km]
 * __HHH__ : UTC time of the beginning of the model run[00, 12]
 * __hhhh__ : Forecast time[000, 003, 006, ..., 240]
 
 A 20-hour history is kept in this directory.
 
-## Technical specification of the grids
+## Technical specification of the grid
 
-Values given to the various parameters of the latitude-longitude grid according to the resolution.
-
-### Data at 15 km resolution
+Values given to the parameters of the 15km latitude-longitude grid:
 
 | Parameter | Value |
 | ------ | ------ |
 | ni | 2400 |
 | nj | 1201 | 
 | resolution | 0.15° |
-| coordinates of the first grid point | 90° S  180° W | 
-
-### Data at 25 km resolution
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 1500 |
-| nj | 751 | 
-| resolution | 0.24° |
 | coordinates of the first grid point | 90° S  180° W | 
 
 ## File name nomenclature 
@@ -65,7 +53,7 @@ where :
 * __LevelType__ : Level type. To consult a complete list, refer to the Data in GRIB2 format section.
 * __Level__ : Level value. To consult a complete list, refer to the Data in GRIB2 format section.
 * __Projection__ : projection used for the data. Can take the values [latlon, ps]
-* __Resolution__ : constant string indicating the data resolution [.15x.15, .24x.24].
+* __Resolution__ : constant string indicating the data resolution [.15x.15].
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
 * __HH__ : UTC run time [00, 12]
 * __Phhh__ : P is a constant character. hhh is the forecast hour [000, 003, 006, ..., 240]

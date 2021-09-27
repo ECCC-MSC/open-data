@@ -9,7 +9,7 @@
 
 # Données GRIB2 du système global de prévision déterministe (SGPD)
 
-Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km et 25 km.
+Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
 
 ## Adresse des données 
 
@@ -23,32 +23,21 @@ Les données sont accessibles à adresse suivante :
 
 où :
 
-* __RES__ : Résolution horizontale [15km, 25km]
+* __RES__ : Résolution horizontale [15km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 240]
 
 Un historique de 20 heures est conservé dans ce répertoire.
 
-## Spécification technique des grilles
+## Spécification technique de la grille
 
-Valeurs données aux différents paramètres de la grille latitude-longitude selon la résolution.
-
-### Données à 15km de résolution
+Valeurs données aux différents paramètres de la grille latitude-longitude à 15km de résolution
 
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 2400 |
 | nj | 1201 | 
 | résolution | 0.15° |
-| coordonnées du premier point de grille | 90° S  180° W | 
-
-### Données à 25km de résolution
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 1500 |
-| nj | 751 | 
-| résolution | 0.24° |
 | coordonnées du premier point de grille | 90° S  180° W | 
 
 ## Nomenclature des noms de fichiers 
@@ -67,7 +56,7 @@ où :
 * __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
 * __Niveau__ : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
 * __Projection__ : Représente le type de projection utilisée pour les données. Peut prendre les valeurs [latlon, ps].
-* __Resolution__ : Chaîne de caractères constante indiquant la résolution des données [.15x.15, .24x.24].
+* __Resolution__ : Chaîne de caractères constante indiquant la résolution des données [.15x.15].
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 12].
 * __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 240].
