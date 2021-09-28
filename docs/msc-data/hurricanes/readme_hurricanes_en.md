@@ -40,7 +40,7 @@ Upcoming.
 ## Products
 
 * [Hurricane track maps](https://weather.gc.ca/hurricane/track_e.html)
-* [Canadian Hurricane Centre : forecasts and products](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html)
+* [Canadian Hurricane Centre: forecasts and products](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html)
 
 ## Technical documentation
 
