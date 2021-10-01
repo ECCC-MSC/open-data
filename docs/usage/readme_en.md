@@ -128,9 +128,7 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
 
 ### Raw data download
 
-MSC raw data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
-
-The raw data can also be directly downloaded on the web from the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
+MSC raw data can be [automatically retrieved as soon as it becomes available on the MSC Datamart through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md). Alternatively, the raw data can also be directly downloaded on the web from the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
 
 ### Work with raw data from the command line
 

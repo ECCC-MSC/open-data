@@ -127,9 +127,7 @@ Les données brutes pour des données matricielles peuvent être récupérées p
 
 ### Téléchargement de données brutes
 
-Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
-
-Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
+Les données brutes du SMC peuvent être [automatiquement récupérées du Datamart du SMC dès quelles deviennent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md). Alternativement, les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
 
 ### Manipuler les données brutes à partir de la ligne de commandes
 
