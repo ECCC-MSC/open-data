@@ -56,7 +56,7 @@ Ci-après est un exemple de carte interactive configurée avec OpenLayers et pr�
 
 #### Dans une application mobile
 
-Les services WMS de GeoMet du SMC peuvent également être intégrées dans des applications mobiles. Ceci est démontré dans [l'application MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html) d'Environnement et Changement climatique Canada, disponible pour iOS et Android, qui utilise GeoMet du SMC pour afficher les données radar météo à haute résolution sur une carte interactive :
+Les services WMS de GeoMet du SMC peuvent également être intégrées dans des applications mobiles, par exemple avec des librairies JavaScript telles que [Leaflet](https://leafletjs.com/) et [Openlayers](https://openlayers.org/). Ceci est démontré dans [l'application MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html) d'Environnement et Changement climatique Canada, disponible pour iOS et Android, qui utilise GeoMet du SMC pour afficher les données radar météo à haute résolution sur une carte interactive :
 
 ![Exemple de couche radar dans MeteoCAN](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_fr.jpg)
 
