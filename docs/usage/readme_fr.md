@@ -56,7 +56,7 @@ Ci-après est un exemple de carte interactive configurée avec OpenLayers et pr�
 
 #### Dans une application mobile
 
-Les services WMS de GeoMet du SMC peuvent également être intégrées dans des applications mobiles. Ceci est démontré dans [l'application MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html) d'Environnement et Changement climatique Canada, disponible pour iOS et Android, qui utilise GeoMet du SMC pour afficher les données radar météo à haute résolution sur une carte interactive :
+Les services WMS de GeoMet du SMC peuvent également être intégrées dans des applications mobiles, par exemple avec des librairies JavaScript telles que [Leaflet](https://leafletjs.com/) et [Openlayers](https://openlayers.org/). Ceci est démontré dans [l'application MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html) d'Environnement et Changement climatique Canada, disponible pour iOS et Android, qui utilise GeoMet du SMC pour afficher les données radar météo à haute résolution sur une carte interactive :
 
 ![Exemple de couche radar dans MeteoCAN](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_fr.jpg)
 
@@ -127,9 +127,7 @@ Les données brutes pour des données matricielles peuvent être récupérées p
 
 ### Téléchargement de données brutes
 
-Les données brutes du SMC peuvent être [automatiquement récupérées dès quelles deveinnent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md).
-
-Les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
+Les données brutes du SMC peuvent être [automatiquement récupérées du Datamart du SMC dès quelles deviennent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_fr.md). Alternativement, les données brutes peuvent également être téléchargées directement sur le web sur le serveur [Datamart du SMC](../msc-datamart/readme_fr.md).
 
 ### Manipuler les données brutes à partir de la ligne de commandes
 

@@ -58,7 +58,7 @@ Below is an example of an OpenLayers web map configured to display [weather rada
 
 #### In a mobile application
 
-MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications. In fact, Environment and Climate Change Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses MSC GeoMet to display high resolution weather radar data on an interactive map:
+MSC Geomet Web Map Services (WMS) can also be integrated into mobile applications, with JavaScript libraries such as [Leaflet](https://leafletjs.com/) and [Openlayers](https://openlayers.org/) among others. In fact, Environment and Climate Change Canada's [WeatherCAN application](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) (available on iOS and Android) uses MSC GeoMet to display high resolution weather radar data on an interactive map:
 
 ![Example of radar imagery in WeatherCan](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_en.jpg)
 
@@ -128,9 +128,7 @@ Raw data for raster data can be retrieved with a Web Coverage Service (WCS) requ
 
 ### Raw data download
 
-MSC raw data can be [automatically retrieved as soon as it becomes available through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md).
-
-The raw data can also be directly downloaded on the web from the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
+MSC raw data can be [automatically retrieved as soon as it becomes available on the MSC Datamart through the Advanced Message Queuing Protocol (AMQP)](../msc-datamart/amqp_en.md). Alternatively, the raw data can also be directly downloaded on the web from the [MSC Datamart](../msc-datamart/readme_en.md) data repository.
 
 ### Work with raw data from the command line
 
