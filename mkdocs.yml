@@ -7,11 +7,6 @@ remote_name: github
 # Related documentation: https://www.mkdocs.org/user-guide/configuration/#remote_branch
 
 nav:
-    - Available data /<br>Données disponibles: msc-data/readme_en.md
-    - Data access /<br>Accès aux données:
-        - MSC GeoMet /<br>GeoMet du SMC: msc-geomet/readme_en.md
-        - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
-        - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
     - Usage and tutorials / <br>Utilisation et tutoriels:
         - Usage overview /<br>Aperçu de l'utilisation: usage/readme_en.md
         - Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS: usage/tutorial_WMS_QGIS_en.md
@@ -22,6 +17,11 @@ nav:
         - Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python: usage/use-case_oafeat/use-case_oafeat-script_en.ipynb
         - Use GDAL commands /<br>Utiliser des commandes GDAL: usage/tutorial_gdal/tutorial_gdal_en/
         - API technical doc /<br>Doc technique de l'API: msc-geomet/web-services_en.md
+    - Available data /<br>Données disponibles: msc-data/readme_en.md
+    - Data access /<br>Accès aux données:
+        - MSC GeoMet /<br>GeoMet du SMC: msc-geomet/readme_en.md
+        - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
+        - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
     - Contact us /<br>Contactez-nous: https://weather.gc.ca/mainmenu/contact_us_e.html
 
 theme:

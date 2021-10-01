@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Clarified AMQPS is Datamart in Usage
     * Indicated librairies for mobile apps
+    * Moved 'usage' first in topmost menu
 * bug fixes:
     * Removed menu link to incomplete table and graphs doc
     * Minor typos
