@@ -16,7 +16,7 @@ Ce progiciel inclue des shapefiles et des ensembles de polygones, catégorisés 
 
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données shapefiles disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.5.0) 
+* [Données shapefiles disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.6.0) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -30,5 +30,5 @@ Non disponibles.
 
 ## Documentation technique
 
-* Version actuelle [du regroupement géographique du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.5.0/Documentations/).
+* Version actuelle [du regroupement géographique du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.6.0/Documentations/).
 * Les 3 dernières versions sont disponibles [ici](https://dd.meteo.gc.ca/meteocode/geodata/).
