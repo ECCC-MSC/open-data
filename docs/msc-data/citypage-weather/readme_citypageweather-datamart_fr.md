@@ -79,7 +79,7 @@ Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cm
 
 * Ces icônes sont distribuées sous les [conditions générales standards d'Environnement et Changement climatique Canada](https://www.canada.ca/fr/transparence/avis.html). Pour faire un usage commercial de ces icônes, vous devez obtenir un consentement explicite préalable.
 
-* Vous pouvez télécharger toutes les icônes météorologiques de ECCC à l'adresse suivante : [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), où NN est un nombre compris entre 00 et 45.
+* Vous pouvez télécharger toutes les icônes météorologiques de ECCC à l'adresse suivante : [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), où NN est un nombre compris entre 00 et 48.
 
 * Vous pouvez également créer vos propres icônes en utilisant les symboles météorologiques mondiaux de l'Organisation météorologique mondiale (OMM). Voir un ensemble complet de symboles météorologiques de l'OMM à cette adresse : [https://github.com/OGCMetOceanDWG/WorldWeatherSymbols](https://github.com/OGCMetOceanDWG/WorldWeatherSymbols)
 
