@@ -80,7 +80,7 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
 
 * These icons are covered by the standard Environment Canada Terms and Conditions: [https://www.canada.ca/en/transparency/terms.html](https://www.canada.ca/en/transparency/terms.html). To make a commercial usage of these icons, you must obtain prior explicit consent.
 
-* You can download all ECCC weather icons from the following URL: [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), where NN is a number between 00 and 45.
+* You can download all ECCC weather icons from the following URL: [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), where NN is a number between 00 and 48.
 
 * You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address: [https://github.com/OGCMetOceanDWG/WorldWeatherSymbols](https://github.com/OGCMetOceanDWG/WorldWeatherSymbols)
 
