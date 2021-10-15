@@ -21,6 +21,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Moved 'usage' first in topmost menu
 * bug fixes:
     * Removed menu link to incomplete table and graphs doc
+    * Update citypage icons nb (last one from 45 to 48)
     * Minor typos
 
 ## 2.3.37
