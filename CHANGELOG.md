@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * Update polygon package version (6.6.0)
 * improvements:
     * Clarified AMQPS is Datamart in Usage
     * Indicated librairies for mobile apps
