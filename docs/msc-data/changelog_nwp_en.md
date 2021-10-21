@@ -8,6 +8,11 @@
 
 ## 2021
 
+### November 30, 2021
+* [Global Ensemble Prediction system (GEPS) 7.0.0](../nwp_geps/changelog_geps_en#tuesday-november-30-2021)
+* [Global Deterministic Prediction system (GDPS) 8.0.0](../nwp_gdps/changelog_gdps_en#tuesday-november-30-2021)
+* [Global Ice-Ocean Prediction System (GIOPS) 3.3.0](../nwp_giops/changelog_giops_en#tuesday-november-30-2021)
+
 ### June 9, 2021
 
 * [Upgrade to version 5.0.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)](../nwp_rdpa/changelog_rdpa_en#wednesday-june-9-2021)
