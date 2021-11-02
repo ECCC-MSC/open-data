@@ -28,18 +28,24 @@ Available data include:
 
 Details regarding **radar data pricing** are as follows:
 
-**Raw data** in IRIS or ODIM_H5 format:
+**Raw data** in IRIS or ODIM_H5 format
 
 * 1-5 radars (QC, Atl or Pac region) : $1,600/month
 * 6-10 (any whole region): $1,800/month
 * 11+ : $2,000/month
 * Plus a one-time setup fee of $2,000
 
-**Products in digital format**:
+**Products in digital format**
 
 * 1-5 radars (Qc, Atl or Pac region) : $600/month
 * 6-10 (any whole region): $700/month
 * 11+ : $800/month
+* Plus a one-time setup fee of $800
+
+**Other products**
+
+* GeoTIFF 1km radar composite : $800/month
+* GeoJSON dynamic radar coverage : $800/month
 * Plus a one-time setup fee of $800
 
 Please, note that these rates are indicative only and may change.
