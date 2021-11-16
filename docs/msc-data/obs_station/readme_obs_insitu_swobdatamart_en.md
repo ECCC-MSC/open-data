@@ -120,7 +120,7 @@ Example :
 
 ## Note
 
-The specification of the data format is available in the [SWOB-ML product guide](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.5_e.pdf).
+The specification of the data format is available in the [SWOB-ML product guide](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/SWOB-ML_Product_User_Guide_v8.6_e.pdf).
 
 ## Support
 
