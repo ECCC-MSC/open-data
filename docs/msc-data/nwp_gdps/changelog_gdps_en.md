@@ -6,6 +6,22 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 8.0.0 of the Global Deterministic Prediction System (GDPS) at the Canadian Meteorological Centre
+
+On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the Global Deterministic Prediction System (GDPS) to version 8.0.0.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GDP_8.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-800_e.pdf). For detailed description of this upgrade you can read the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_e.pdf).
+
+
+Associated Notes:
+
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_e.pdf).
+* [Technical specifications of the GDPS 8.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_8.0.0_e.pdf).
+
+
 ## Tuesday January 26th, 2021
 
 ### Addition and replacement of satellite radiance observations
