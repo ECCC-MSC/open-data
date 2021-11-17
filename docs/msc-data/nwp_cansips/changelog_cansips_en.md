@@ -6,6 +6,21 @@
 
 # Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 2.1 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre
+
+On Tuesday November 30, 2021, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 2.1.
+
+The major changes of CanSIPS in this upgrade can be summarized as follow:
+
+* The GEM-NEMO model version upgraded to GEM 5.1.
+* The CanSIPS inputs is comming from upgraded systems GDPS 8.0.0, GEPS 7.0.0 and GIOPS 3.3.0.
+
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2.1_20211130_e.pdf).
+
+
 ## Tuesday January 21, 2020
 
 ### Upgrade CanSIPS version adapted to the New High Performance Computing Infrastructure.
