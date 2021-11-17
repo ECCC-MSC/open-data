@@ -11,54 +11,12 @@
 ### Mise à jour du Système global de prévision déterministe (SGPD) 8.0.0 du Centre météorologique canadien (CMC)
 
 Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système global de prévision déterministe (SGPD).
-Résumé des éléments majeurs que comporte cette mise à jour:
 
-Changements à la composante d'assimilation de données :
-* Étape majeure dans l’intégration des programmes de traitement des observations dans MIDAS
-    * Correction de biais des observations (radiances, aéronefs et GB-GPS) 
-    * Contrôle de qualité pour AMSUA, MHS, ATMS et les observations pour l’analyse d’ozone
-    * Thinning pour AMSUA, MHS, ATMS, AIRS, CrIS et IASI
-* Calcul du transfert radiatif sur les niveaux modèles, plutôt que sur des niveaux prédéfinis
-* Slant-path pour le transfert radiatif et pour les GPS-RO
-* Assimilation des radiances sensibles à la température (AMSUA: canaux 4 et 5) affectées par les nuages
-* Utilisation du masque nuageux VIIRS pour réduire la contamination nuageuse pour CrIS
-* Nouvelle correction dynamique du biais pour les observations de température des aéronefs et les observations ZTD des GB-GPS
-* Nouvelle méthode rapide pour le thinning des observations GB-GPS.
-* Réduction de l’erreur d’observation pour les observations de pression des bouées et bouées dérivantes
-* Améliorations pour l’algorithme EnVar
-    * Covariances d’erreur de prévision provenant des nouveaux ensembles (GEPS) en GEM5.1
-    * Localisation dépendante des échelles et poids des matrices B
+Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SGPD_8.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-800_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_f.pdf).
 
-Changements dans la physique du modèle:
-* Ajustement, dans les basses latitudes, à la convection des niveaux moyens (réduction du biais sec de précipitation)
-* Changement à Lmin au-dessus des lacs/rivières et glaciers (réduction d’événements découplés)
-* Ajustement de Z0_ice (augmentation de la longueur de rugosité au-dessus de la glace marine)
-
-Prévision d’ozone et de l’indice UV :
-* Assimilation de nombreuses sources satellitaires d’observations d’ozone (profils et colonnes)
-* Schéma linéarisé d’ozone (LINOZ) couplé à la radiation
-* Calcul horaire des indices UV en ciel clair et nuageux à partir des irradiances UV et du champ d’ozone pronostique
-
-Impact sur la performance du système :
-* Atmosphère : 
-    * Du point de vue de l’écart-type :
-        * Amélioration robuste et significative s’étendant généralement à plusieurs jours de prévisions, présente dans la plupart des régions géographiques, l’étendue du domaine vertical de vérifications, et les diverses variables pronostiques
-        * Une dégradation significative de l’humidité relative à 100hPa.
-     * Du point de vue du biais  
-        * Vents: Amélioration significative au-dessus de 10hPa dans les Tropiques
-        * Humidité: Assèchement autour de 50hPa associé à un réchauffement
-        * Humidité: Assèchement dans la haute troposphère (plus visible Asie et Amérique du Nord).
-
-* Surface
-    * Améliorations mesurables et caractéristiques des erreurs de prévisions pas très différentes
-    * Réduction notable des erreurs RMS de température en été le jour dans l'Arctique
-    * Correction du biais de précipitations en été sur le Sud-Est des É-U
-    * Pas d'impact notable du couplage avec l'ozone près de la surface
-
-
-Notes:
+Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_e.pdf) (en anglais, version française sera disponible bientôt).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_f.pdf).
 * [Spécifications techniques du SGPD 8.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
 
 ## Le mardi 26 janvier 2021
@@ -155,7 +113,7 @@ Résumé des éléments majeurs que comporte cette mise à jour :
 
 Notes:
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281732___16257).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf) (en anglais, version française sera disponible bientôt).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_f.pdf).
 * [Spécifications techniques du SGPD 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
 
 ## Le mardi 18 septembre 2018
