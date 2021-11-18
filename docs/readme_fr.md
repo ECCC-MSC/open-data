@@ -66,7 +66,15 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 ## Découverte des données et métadonnées
 
+### Portail du gouvernement ouvert du Canada
+
 Les métadonnées du Service météorologique du Canada sont disponibles sur le [portail du gouvernement ouvert du Canada](https://ouvert.canada.ca/fr/donnees-ouvertes), qui permet aux utilisateurs de rechercher des données ouvertes pertinentes aux Canadiens et Canadiennes, apprendre comment travailler avec les jeux de données et voir ce que les citoyens ont fait avec les données ouvertes dans l'ensemble du pays.
+
+### Le Système d'Information de l'OMM (WMO WIS)
+
+Le Système d'Information de [l'OMM (WMO WIS)](https://community.wmo.int/activity-areas/wis/wis-overview) rend possible la découverte de données météorologiques et hydrologiques faisant autorité et supporte la récupération et l'échange de données entre les Centres de l'Organisation météorologique mondiale (OMM) et leurs usagers. Le catalogue WIS décrit les données et produits disponibles au sein de l'OMM. Les données et produits sont ajoutés au catalogue WIS par le biais de la soumission de métadonnées qui décrivent leur contenu, leur structure et les méthodes d'accès.
+
+Le SMC est un 'Data Collection or Production Centre' (DCPC) pour WIS et rend disponible un service 'Discovery, Access and Retrieval' (DAR) disponible sur [https://api.weather.gc.ca/wis/catalogue/csw](https://api.weather.gc.ca/wis/catalogue/csw). Le service DAR supporte plusieurs interfaces de recherche, tel que par le biais de la spécification 'Catalogue Services for the Web' (CSW) de l'OGC, la spécification 'Search/Retrieval via URL' (SRU), ainsi que le standard 'Open Archives Initiative Protocol for Metadata Harvesting' (OAI-PMH).
 
 ## Évènements
 
