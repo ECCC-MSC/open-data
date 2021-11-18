@@ -6,6 +6,20 @@
 
 # Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour vers la version 2.1 du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+
+En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) vers la version 2.1.
+
+Les modifications majeures du SPISCAN dans cette mise à jour sont: 
+
+* Mise à jours du modèle GEM-NEMO vers la version 5.1.
+* Les modèles intrants de CanSIPS ont été mis a jours: SGPD 8.0.0, SGPE 7.0.0 et SGPOG 3.3.0.
+
+Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2.1_20211130_e.pdf).
+
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jours de SPISCAN suite à la nouvelle infrastructure de calcul haute performance. 
