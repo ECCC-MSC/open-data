@@ -30,7 +30,7 @@ Grille latitude-longitude globale.
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 1441 |
+| ni | 1440 |
 | nj | 721 | 
 | résolution | 0.25° |
 | coordonnées du premier point de grille | 90° S  0° E | 
