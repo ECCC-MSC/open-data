@@ -20,7 +20,6 @@ The changes included in this upgrade are summarized as follows:
     * U.S.:    From 2017 projected National Emissions Inventory to projected 2023 NEI.
     * Mexico:  Ftom 2008 National Emissions Inventory (NEI)	to projected 2023 NEI.
 * Improved representation of particle sedimentation
-    * More accurate numerical solution, reduces rate of PM removal
 * New meteorological and chemical libraries 
     * Meteorology:  GEM 5.0.2 => GEM 5.1.0
     * Chemistry:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
