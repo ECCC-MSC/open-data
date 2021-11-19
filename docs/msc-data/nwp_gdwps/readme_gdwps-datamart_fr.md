@@ -30,7 +30,7 @@ Grille latitude-longitude globale.
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 1441 |
+| ni | 1440 |
 | nj | 721 | 
 | résolution | 0.25° |
 | coordonnées du premier point de grille | 90° S  0° E | 
@@ -51,24 +51,17 @@ où :
 * __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions
 * __GDWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision déterministe des vagues
 * __VAR__ : Type de variable contenu dans le fichier
-* __LVL__ : Type de niveau vertical [Sfc pour la surface]
+* __LVL__ : Type de niveau vertical [Sfc pour la surface, AGL pour hauteur fixe au-dessus du sol]
 * __grille__ : Type de grille horizontale [LatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.25]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 384]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048, 051, ..., 120]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de fichier :
 
 20211007T00Z_MSC_GDWPS_HTSGW_Sfc_LatLon0.25_PT051H.grib2
 
-Le fichier a été créé par le CMC et contient une prévision du Système global de prévision déterministe des vagues. Il contient la hauteur significative des vagues (HTSGW) pour le monde au niveau de la surface sur une grille lat/long à une résolution de 0.25 degré par 0.25 degré. Il débute le 7 octobre 2021 à 00Z (2021100700). Il contient l’heure de prévision 51 (P051) en format GRIB2 (.grib2).
-
-## Niveaux
-
-Niveaux qui pourraient être applicables à certains champs :
-
-* Surface [Sfc]
-* Hauteur fixe au-dessus du sol [AGL]
+Le fichier a été créé par le CMC et contient une prévision du Système global de prévision déterministe des vagues. Il contient la hauteur significative des vagues (HTSGW) pour le monde au niveau de la surface sur une grille lat/long à une résolution de 0.25 degré par 0.25 degré. Il débute le 7 octobre 2021 à 00Z (2021100700). Il contient l’heure de prévision 51 (PT051H) en format GRIB2 (.grib2).
 
 ## Liste des variables
 
