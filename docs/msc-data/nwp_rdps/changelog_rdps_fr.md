@@ -6,6 +6,19 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour du Système système régional de prévision déterministe (RDPS) 8.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son système régional de prévision déterministe (RDPS).
+
+Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [[ABREVIATION]_8.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/not_available.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/not_available.pdf).
+
+Notes :
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/not_available.pdf).
+* [Spécifications techniques du RDPS 8.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/not_available.pdf).
+
 ## Le mardi 26 janvier 2021
 
 ### Ajout et remplacement d’observations de radiances satellitaires
