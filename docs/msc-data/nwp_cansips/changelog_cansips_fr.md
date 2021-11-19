@@ -4,13 +4,13 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPISCAN](readme_cansips_fr.md) > Changements au SPISCAN
 
-# Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN)
+# Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN)
 
 ## Le mardi 30 novembre 2021
 
-### Mise à jour vers la version 2.1 du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour vers la version 2.1 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) vers la version 2.1.
+En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) vers la version 2.1.
 
 Les modifications majeures du SPISCAN dans cette mise à jour sont: 
 
@@ -28,9 +28,9 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour vers la version 2 du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour vers la version 2 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
 
-En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) vers la version 2.
+En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) vers la version 2.
 
 Les modifications majeures du SPISCAN dans cette mise à jour sont dans la composante prévision
 
@@ -42,9 +42,9 @@ Une note technique avec plus de détails sur ces changements [est disponible sur
 
 ## Le mardi 21 juin 2016
 
-### Mise à jour du Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
 
-Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de Prévision Interannuelle et Saisonniere Canadien (SPISCAN).
+Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN).
 
 Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCAN proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisée auparavant.
 
