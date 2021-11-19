@@ -6,6 +6,22 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday November 30, 2021
+
+#### Upgrade to Version 7.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+
+On Tuesday 30th 2021, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 7.0.0.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GEPS_7.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/not_available.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/not_available.pdf).
+
+
+Associated Notes:
+
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/not_available.pdf).
+* [Technical specifications of GEPS 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/not_available.pdf).
+
+
 ## Tuesday January 26th, 2021
 
 ### Replacement of satellite radiance observations
