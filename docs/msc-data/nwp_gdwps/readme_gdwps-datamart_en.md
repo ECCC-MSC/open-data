@@ -76,18 +76,22 @@ This table provides, for each GRIB2 parameter number: a short description, an al
 |10/0/3 |	Significant height of combined wind waves and swell |	HTSGW |	Sfc |	m|
 |10/0/34 |	Peak wave period |	PWPER |	Sfc |	s|
 |10/0/28 |	Mean zero-crossing wave period |	MZWPER |	Sfc |	s|
-|10/0/4 |	Direction of wind waves (from which) |	WVDIR |	Sfc |	degrees true|
+|10/0/46 |	Peak wave direction |	PWAVEDIR |	Sfc |	degrees true|
+|10/0/4 |	Direction of wind waves |	WVDIR |	Sfc |	degrees true|
 |10/0/5 |	Significant height of wind waves |	WVHGT |	Sfc |	m|
-|10/0/6 |	Mean period of wind waves |	WVPER |	Sfc |	s|
-|10/0/7 |	Direction of primary swell |	SWDIR |	Sfc 	|degrees true|
-|10/0/8 |	Significant height of primary swell |	SWELL |	Sfc |	m|
-|10/0/9 |	Peak period of primary swell 	|SWPER |	Sfc |	s|
+|10/0/35 |	Peak period of wind waves |	PPERWW |	Sfc |	s|
+|10/0/53 |	Mean wave direction of first swell partition |	MWDFSWEL |	Sfc 	|degrees true|
+|10/0/47 |	Significant wave height of first swell partition |	SWHFSWEL |	Sfc |	m|
+|10/0/65 |	Peak wave period of first swell partition 	|PWPFSWEL |	Sfc |	s|
+|10/0/54 |	Mean wave direction of second swell partition |	MWDSSWEL |	Sfc	|degrees true|
+|10/0/48 |	Significant wave height of second swell partition |	SWHSSWEL |	Sfc |	m|
+|10/0/66 |	Peak wave period of second swell partition 	|PWPSSWEL |	Sfc |	s|
 
 ### Notes
 
 * u and v components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates.
 
-* Swell parameters refer to the primary swell. At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
+* At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
 
 ## Support
 

@@ -75,18 +75,22 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 |10/0/3 |	Hauteur significative des vagues de vent et de la houle combinés |	HTSGW |	Sfc |	m |
 |10/0/34 |	Période pic des vagues |	PWPER |	Sfc |	s |
 |10/0/28 |	Période moyenne centrée des vagues |	MZWPER |	Sfc |	s |
+|10/0/46 |	Direction pic des vagues |	PWAVEDIR |	Sfc |	degrees true|
 |10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	Sfc |	degré vrai |
 |10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	Sfc |	m |
-|10/0/6 |	Période moyenne des vagues de la mer du vent |	WVPER |	Sfc |	s |
-|10/0/7 |	Direction de la première houle |	SWDIR |	Sfc |	degré vrai |
-|10/0/8 |	Hauteur significative de la première houle |	SWELL |	Sfc |	m |
-|10/0/9 |	Période pic de la première houle |	SWPER |	Sfc |	s |
+|10/0/35 |	Période pic des vagues de la mer du vent |	WVPER |	Sfc |	s |
+|10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	Sfc |	degré vrai |
+|10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	Sfc |	m |
+|10/0/65 |	Période pic de la première houle |	PWPFSWEL |	Sfc |	s |
+|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	Sfc |	degré vrai |
+|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	Sfc |	m |
+|10/0/68 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
 
 ### Notes
 
 * La direction des composantes u et v du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j.
 
-* Les paramètres de houle représentent la première houle. À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement.
+* À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement.
 
 ## Support
 
