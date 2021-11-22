@@ -8,16 +8,16 @@
 
 ## Le mardi 30 novembre 2021
 
-### Mise à jour du Système global de prévision déterministe (SRPD) 4.0.0 du Centre météorologique canadien (CMC)
+### Mise à jour du Système régional de prévision déterministe de vagues (SRPDV) 4.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son Système régional de prévision déterministe (SRPD).
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son Système régional de prévision déterministe de vagues (SRPDV).
 
-Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPD_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-400_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-400_f.pdf).
+Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPDV_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-400_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_f.pdf).
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-400_f.pdf).
-* [Spécifications techniques du SRPD 4.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rwdps-400_f.pdf).
+* [Spécifications techniques du SRPDV 4.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDWPS_f.pdf).
 
 ## Le mardi 21 janvier 2020
 
