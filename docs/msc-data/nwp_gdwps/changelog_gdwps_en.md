@@ -17,7 +17,7 @@ Associated Notes:
 
 * [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_e.pdf).
-* [Technical specifications of GDPS 8.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.7.0_e.pdf).
+* [Technical specifications of GWPS 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.7.0_e.pdf).
 
 ## Tuesday January 21, 2020
 
