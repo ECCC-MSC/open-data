@@ -62,7 +62,7 @@ Example of file name :
 
 20211007T00Z_MSC_GDWPS_HTSGW_Sfc_LatLon0.25_PT051H.grib2
 
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the Global Deterministic Wave Prediction System. The data in the file start on October 7th 2021 at 00Z (2021100700). It contains the significant wave height (HTSGW) for the world at the surface on a lat/long grid at 0.25 degree x 0.25 degree resolution for the forecast hour 51 (PT051H) in GRIB2 format (.grib2).
+This file originates from the MSC and contains the data of the Global Deterministic Wave Prediction System. The data in the file start on October 7th 2021 at 00Z (2021100700). It contains the significant wave height (HTSGW) for the world at the surface on a lat/long grid at 0.25 degree x 0.25 degree resolution for the forecast hour 51 (PT051H) in GRIB2 format (.grib2).
 
 ## Variable List
 

@@ -61,7 +61,7 @@ Exemple de fichier :
 
 20211007T00Z_MSC_GDWPS_HTSGW_Sfc_LatLon0.25_PT051H.grib2
 
-Le fichier a été créé par le CMC et contient une prévision du Système global de prévision déterministe des vagues. Il contient la hauteur significative des vagues (HTSGW) pour le monde au niveau de la surface sur une grille lat/long à une résolution de 0.25 degré par 0.25 degré. Il débute le 7 octobre 2021 à 00Z (2021100700). Il contient l’heure de prévision 51 (PT051H) en format GRIB2 (.grib2).
+Le fichier a été créé par le SMC et contient une prévision du Système global de prévision déterministe des vagues. Il contient la hauteur significative des vagues (HTSGW) pour le monde au niveau de la surface sur une grille lat/long à une résolution de 0.25 degré par 0.25 degré. Il débute le 7 octobre 2021 à 00Z (2021100700). Il contient l’heure de prévision 51 (PT051H) en format GRIB2 (.grib2).
 
 ## Liste des variables
 
@@ -84,7 +84,7 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 |10/0/65 |	Période pic de la première houle |	PWPFSWEL |	Sfc |	s |
 |10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	Sfc |	degré vrai |
 |10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	Sfc |	m |
-|10/0/68 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
+|10/0/66 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
 
 ### Notes
 
