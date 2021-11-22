@@ -8,8 +8,6 @@
 
 ## Tuesday November 30, 2021
 
-## Tuesday November 30, 2021
-
 ### Upgrade to Version 1.5.0 of the Regional Ensemble Wave Prediction System (REWPS) at the Canadian Meteorological Centre
 
 On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Wave Prediction System (REWPS) to version 1.5.0.
