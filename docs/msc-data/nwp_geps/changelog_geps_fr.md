@@ -6,31 +6,6 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
-
-## Le mardi 30 novembre 2021
-
-#### Mise à jour majeure du système global de prévision d'ensemble (SGPE version 7.0.0) du Centre météorologique canadien (CMC)
-
-Le mardi 30 juillet 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 7.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :
-
-* Changements à la composante composante de prévision :
-    * 
-    * 
-    * 
-
-* Changements à la composante d'assimilation :
-    * 
-    * 
-    * 
-
-
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281715___16589).
-
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-700_f.pdf).
-
-Le document des spécifications techniques du SGPE 7.0.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_7.0.0_f.pdf).
-
-
 ## Le mardi 26 janvier 2021
 
 ### Remplacement d’observations de radiances satellitaires
