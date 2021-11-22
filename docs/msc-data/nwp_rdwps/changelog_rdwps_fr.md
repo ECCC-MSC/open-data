@@ -16,7 +16,7 @@ Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rwdps-400_f.pdf).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_f.pdf).
 * [Spécifications techniques du SRPDV 4.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDWPS_f.pdf).
 
 ## Le mardi 21 janvier 2020
