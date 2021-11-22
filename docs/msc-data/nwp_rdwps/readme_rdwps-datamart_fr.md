@@ -16,11 +16,11 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/erie/grib2)
-* [https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/huron-michigan/grib2)
-* [https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/ontario/grib2)
-* [https://dd.meteo.gc.ca/model_wave/great_lakes/superior/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/great_lakes/superior/grib2)
-* [https://dd.meteo.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2/{HH}/](https://dd.meteo.gc.ca/model_wave/ocean/gulf-st-lawrence/grib2)
+* [https://dd.meteo.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/erie/1km)
+* [https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km)
+* [https://dd.meteo.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/ontario/1km)
+* [https://dd.meteo.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/superior/1km)
+* [https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km)
 
 où :
 
@@ -74,16 +74,16 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | résolution | 0.0090° x 0.0124° |
 | coordonnées du premier point de grille | 43.0640° N  79.9736° O | 
 
-### Golfe du Saint-Laurent
+### Nord-ouest Atlantique
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-gsl.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 331 |
-| nj | 160 | 
-| résolution | 0.05° x 0.05° |
-| coordonnées du premier point de grille | 44.075° N  70.925° O | 
+| ni | 762 |
+| nj | 643 | 
+| résolution | 0.045° x 0.045° |
+| coordonnées du premier point de grille | 41.065° N  255.718° O | 
 
 ## Nomenclature des noms de fichiers 
 
@@ -91,36 +91,34 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-CMC_rdwps_DOMAIN_VAR_LVL_LVLVAL_{grille}{resolution}_YYYYMMDDHH_P{hhh}.grib2
+{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
 
 où :
 
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
-* __rdwps__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe des vagues.
-* __DOMAIN__ : Chaîne de caractères indiquant le domaine.
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Séparateur de temps selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions
+* __RDWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe des vagues
+* __DOMAIN__ : Chaîne de caractères constante indiquant le domaine [erie, huron-michigan, ontario, superior, atlantic-nw]
 * __VAR__ : Type de variable contenu dans le fichier
-* __LVL__ : Type de niveau
-* __LVLVAL__ : Valeur du niveau
-* __grille__ : Type de grille horizontale [LatLon]
-* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [par ex.: 0.0090x0.0124]
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __HH__ : Heure UTC de la passe [00, 06, 12, 18].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048].
+* __LVL__ : Type de niveau vertical [Sfc pour la surface, AGL pour hauteur fixe au-dessus du sol]
+* __grille__ : Type de grille horizontale [LatLon, RLatLon]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.009x0.012, 0.045]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
-Exemple de fichier :
+Exemples de fichier :
 
-CMC_rdwps_lake-ontario_HTSGW_SFC_0_latlon0.0090x0.0124_2017092606_P042.grib2
-
-Le fichier a été créé par le CMC et contient une prévision du Système régional de prévision déterministe de vague. Il contient la hauteur significative des vagues (HTSGW) du lac Ontario au niveau de la surface sur une grille lat/long à une résolution de 0,0090 degré par 0,0124 degré. Il débute le 26 septembre 2017 à 06Z (2017092606). Il contient l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
+* 20211014T00Z_MSC_RDWPS-Lake-Erie_HTSGW_Sfc_LatLon0.009x0.012_PT003H.grib2
+* 20211014T00Z_MSC_RDWPS-Atlantic-North-West_ICEC_Sfc_RLatLon0.045_PT037H.grib2
 
 ## Niveaux  
 
 Niveaux qui pourraient être applicables à certains champs :
 
-* Surface [SFC]
-* Hauteur fixe au-dessus du sol [TGL]
-* Niveau de la mer [MSL]
+* Surface [Sfc]
+* Hauteur fixe au-dessus du sol [AGL]
 
 ## Liste des variables
 
@@ -128,33 +126,29 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 
 |discipline/catégorie/numéro de paramètre GRIB2 |	Description du paramètre            |	Abréviation 	         | Niveaux       |	Unités       |
 |------|---------------------------------------|------------|--------|---------|
-|10/2/0|  Couverture de glace                  |      ICEC  | SFC_0 | fraction |
-|0/2/2 |  Composante U du vent                 |      UGRD  | TGL_10 | m/s |
-|0/2/3 |  Composante V du vent                 |      VGRD  | TGL_10 | m/s |
-|0/3/1 |  Pression réduite au niveau de la mer |             PRMSL  | MSL_0 | Pa  |
-|10/0/3|  Hauteur significative des vagues de vent et de la houle combinées |  HTSGW | SFC_0 | m |
-|10/0/34| Période pic des vagues               |      PWPER | SFC_0 | s |
-|10/0/28| Période moyenne centrée des vagues   |      MZWPER | SFC_0 |  s |
-|10/0/4 | Direction des vagues de la mer du vent |    WVDIR | SFC_0 | degré vrai |
-|10/0/5 | Hauteur significative des vagues de la mer du vent |   WVHGT | SFC_0 | m |
-|10/0/6 | Période moyenne des vagues de la mer du vent |   WVPER | SFC_0 | s |
-|10/0/7 | Direction de la première houle       |      SWDIR | SFC_0 | degré vrai |
-|10/0/8 | Hauteur significative de la première houle | SWELL | SFC_0 | m |
-|10/0/9 | Période pic de la première houle     |      SWPER | SFC_0 | s |
+|10/2/0|  Couverture de glace                  |      ICEC  | Sfc | fraction |
+|0/2/2 |  Composante U du vent                 |      UGRD  | AGL-10 | m/s |
+|0/2/3 |  Composante V du vent                 |      VGRD  | AGL-10 | m/s |
+|10/0/3 |	Hauteur significative des vagues de vent et de la houle combinés |	HTSGW |	Sfc |	m |
+|10/0/34 |	Période pic des vagues |	PWPER |	Sfc |	s |
+|10/0/28 |	Période moyenne centrée des vagues |	MZWPER |	Sfc |	s |
+|10/0/46 |	Direction pic des vagues |	PWAVEDIR |	Sfc |	degrees true|
+|10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	Sfc |	degré vrai |
+|10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	Sfc |	m |
+|10/0/35 |	Période pic des vagues de la mer du vent |	PPERWW |	Sfc |	s |
+|10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	Sfc |	degré vrai |
+|10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	Sfc |	m |
+|10/0/65 |	Période pic de la première houle |	PWPFSWEL |	Sfc |	s |
+|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	Sfc |	degré vrai |
+|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	Sfc |	m |
+|10/0/68 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
+
 
 ### Notes
 
 * La direction des composantes u et v du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j.
 
-* Golfe du Saint-Laurent période pic: le nom de fichier utilise __VAR__ PKPER et __LVL__ TGL.
-
-* La pression réduite au niveau de la mer est disponible seulement pour le Golfe du Saint-Laurent
-
-* La période moyenne centrée des vagues est disponible seulement pour les Grands Lacs
-
-* Les paramètres de houle du Golfe du Saint-Laurent représentent la houle totale
-
-* Les paramètres de houle des Grands Lacs représentent la première houle. À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement.
+* À chaque point du domaine, le spectre d’énergie des vagues peut être divisé entre la mer de vent et un certain nombre de houles. Les deux houles qui contiennent le plus d’énergie sont désignées dans l’ordre comme la première et la deuxième houle. Les paramètres de mer de vent et ceux de houles peuvent être indéfinis à certains points du domaine, pour les premiers s’il y a peu de vent et pour les seconds s’il n’y a que des vagues générées localement.
 
 ## Support
 
