@@ -6,6 +6,19 @@
 
 # Chronology of changes to the Global Ensemble Wave Prediction System (GEWPS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 1.1.0 of the GEWPS.
+
+On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Wave Prediction System (GEWPS) to version 1.1.0.
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GEWPS_1.1.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-110_e.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-110_e.pdf).
+
+Associated Notes:
+
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-110_e.pdf).
+* [Technical specifications of GEWPS 1.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEWPS_1.1.0_e.pdf).
+
 ## Tuesday November 17, 2020
 
 ### Experimental implementation of the Global Ensemble Wave Prediction System (GEWPS) Version 1.0.0 at the Canadian Meteorological Centre (CMC)
