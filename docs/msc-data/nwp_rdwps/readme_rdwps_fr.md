@@ -6,9 +6,7 @@
 
 # Données et Produits du Système Régional de Prévision Déterministe de Vague (SRPDV)
 
-Le Système Régional de Prévision Déterministe de Vague (SRPDV) produit les prévisions de vagues pour les Grands Lacs en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III ® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). Une prévision de glace du [Système de Prévision du Cycle de l'Eau (SPCE)](../nwp_wcps/readme_wcps_fr.md) est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace.
-
-Le WW3 (WAVEWATCH III® Development Group, WW3DG 2019) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.
+Le Système Régional de Prévision Déterministe de Vague (SRPDV) produit les prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III :registered: (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). Sur les Grands Lacs, une prévision de glace du [Système de Prévision du Cycle de l'Eau (SPCE)](../nwp_wcps/readme_wcps_fr.md) est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace. Sur l'océan, une prévision de glace du [Système Régional de Prévision Glace-Océan (SRPOG)](../nwp_riops/readme_riops_fr.md) est utilisée : dans le Pacifique nord-est les vagues se propagent librement pour des concentrations de glace inférieures à 50%, au delà de ce seuil il n'y a aucune propagation; dans l'Atlantique nord-ouest la même logique est utilisée que dans les Grands Lacs.
 
 Ce système comprend plusieurs domaines :
 
