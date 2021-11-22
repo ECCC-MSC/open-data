@@ -2,37 +2,37 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPISCAN](readme_cansips_fr.md) > Changements au SPISCAN
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPISCAN](readme_cansips_fr.md) > Changements au SPISCan
 
-# Chronologie des changements apportés au Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN)
+# Chronologie des changements apportés au Système de prévision interannuelle et saisonnière canadien (SPISCan)
 
 ## Le mardi 30 novembre 2021
 
-### Mise à jour vers la version 2.1 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour vers la version 2.1 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) vers la version 2.1.
+En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 2.1.
 
-Les modifications majeures du SPISCAN dans cette mise à jour sont: 
+Les modifications majeures du SPISCan dans cette mise à jour sont: 
 
 * Mise à jour du modèle GEM-NEMO vers la version 5.1.
-* Les modèles intrants de CanSIPS ont été mis à jour: SGPD 8.0.0, SGPE 7.0.0 et SGPOG 3.3.0.
+* Les modèles intrants de SPISCan ont été mis à jour: SGPD 8.0.0, SGPE 7.0.0 et SGPOG 3.3.0.
 
 Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2.1_20211130_e.pdf).
 
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jour de SPISCAN suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour de SPISCan suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour vers la version 2 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour vers la version 2 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
 
-En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) vers la version 2.
+En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 2.
 
-Les modifications majeures du SPISCAN dans cette mise à jour sont dans la composante prévision
+Les modifications majeures du SPISCan dans cette mise à jour sont dans la composante prévision
 
 * Remplacement du modèle CANCM3 par le nouveau modèle couplé GEM-NEMO.
 * Mise à jour du modèle CANCM4 par une version amélioré CANCM4I.
@@ -42,11 +42,11 @@ Une note technique avec plus de détails sur ces changements [est disponible sur
 
 ## Le mardi 21 juin 2016
 
-### Mise à jour du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN) du Centre météorologique canadien (CMC)
+### Mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
 
-Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de Prévision Interannuelle et Saisonnière Canadien (SPISCAN).
+Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de prévision interannuelle et saisonnière canadien (SPISCan).
 
-Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCAN proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisée auparavant.
+Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCan proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisée auparavant.
 
 La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211910___00716). 
 
