@@ -6,6 +6,21 @@
 
 # Chronology of changes to the Regional Deterministic Wave Prediction System (RDWPS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 4.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
+
+On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 4.0.0.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [RDPS_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-400_e.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-400_e.pdf).
+
+
+Associated Notes:
+
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-400_e.pdf).
+* [Technical specifications of RDPS 4.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_4.0.0_e.pdf).
+
 
 ## Tuesday January 21, 2020
 
