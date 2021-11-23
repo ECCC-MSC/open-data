@@ -9,7 +9,7 @@
 
 The Regional Deterministic Wave Prediction System (RDWPS) produces wave forecasts using the third generation spectral wave forecast model WaveWatch III® (WW3). The model is forced by the 10 meters winds at from the [High Resolution Deterministic Prediction System (HRDPS)](../nwp_hrdps/readme_hrdps_en.md). Over the Great Lakes, an ice forecast from the [Water Cycle Prediction System of the Great Lakes (WCPS)](../nwp_wcps/readme_wcps_en.md) is used by the model to mitigate or suppress wave growth in areas covered by 25% to 75% and more than 75% ice, respectively. Over the ocean, an ice forecast from the [Regional Ice Ocean Prediction System (RIOPS)](../nwp_riops/readme_riops_fr.md) is used: in the Northeast Pacific, waves propagate freely for ice concentrations below 50%, above this threshold there is no propagation; in the Northwest Atlantic the same logic is used as in the Great Lakes.
 
-WW3 (WAVEWATCH III® Development Group, WW3DG 2019) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.
+WW3 (WAVEWATCH III® Development Group, WW3DG 2019) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years.
 
 This system includes several domains:
 
