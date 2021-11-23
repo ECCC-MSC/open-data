@@ -59,15 +59,15 @@ où :
 * __REWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble des vagues
 * __DOMAIN__ : Chaîne de caractères indiquant le domaine [Great-Lakes]
 * __VAR__ : Type de variable contenu dans le fichier
-* __LVL__ : Type de niveau vertical [SFC pour la surface]
+* __LVL__ : Type de niveau vertical [Sfc pour la surface]
 * __grille__ : Type de grille horizontale [LatLon]
-* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.0224x0.0310]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.022x0.031]
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de fichier :
 
-20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_SFC_LatLon0.0224x0.0310_PT066H.grib2
+20210202T12Z_MSC_REWPS-Great-Lakes_HTSGW_Sfc_LatLon0.022x0.031_PT066H.grib2
 
 ## Liste des variables
 
@@ -75,19 +75,19 @@ Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève descriptio
 
 |discipline/catégorie/numéro de paramètre GRIB2 |	Description du paramètre            |	Abréviation 	         | Niveaux       |	Unités       |
 |-----------------------------------------------|---------------------------------------|----------------------------|---------------|---------------|
-|10/0/3 |	Hauteur significative des vagues de vent et de la houle combinés |	HTSGW |	SFC |	m |
-|10/0/34 |	Période pic des vagues |	PWPER |	SFC |	s |
-|10/0/28 |	Période moyenne centrée des vagues |	MZWPER |	SFC |	s |
-|10/0/46 |	Direction pic des vagues |	PWAVEDIR |	SFC |	degrees true|
-|10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	SFC |	degré vrai |
-|10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	SFC |	m |
-|10/0/35 |	Période pic des vagues de la mer du vent |	WVPER |	SFC |	s |
-|10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	SFC |	degré vrai |
-|10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	SFC |	m |
-|10/0/65 |	Période pic de la première houle |	PWPFSWEL |	SFC |	s |
-|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	SFC |	degré vrai |
-|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	SFC |	m |
-|10/0/66 |	Période pic de la deuxième houle |	PWPSSWEL |	SFC |	s |
+|10/0/3 |	Hauteur significative des vagues de vent et de la houle combinés |	HTSGW |	Sfc |	m |
+|10/0/34 |	Période pic des vagues |	PWPER |	Sfc |	s |
+|10/0/28 |	Période moyenne centrée des vagues |	MZWPER |	Sfc |	s |
+|10/0/46 |	Direction pic des vagues |	PWAVEDIR |	Sfc |	degrees true|
+|10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	Sfc |	degré vrai |
+|10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	Sfc |	m |
+|10/0/35 |	Période pic des vagues de la mer du vent |	WVPER |	Sfc |	s |
+|10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	Sfc |	degré vrai |
+|10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	Sfc |	m |
+|10/0/65 |	Période pic de la première houle |	PWPFSWEL |	Sfc |	s |
+|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	Sfc |	degré vrai |
+|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	Sfc |	m |
+|10/0/66 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
 
 ## Support
 

@@ -9,7 +9,7 @@
 
 The Regional Ensemble Wave Prediction System (REWPS) uses the third generation spectral wave model WaveWatch III® (WW3) to arrive at probabilistic predictions of wave elements from the current day out to 3 days into the future. The probabilistic predictions are based on 20 ensemble members and a control member that are forced by the 10 meters winds from the [Regional Ensemble Prediction System (REPS)](../nwp_reps/readme_reps_en.md). An ice forecast from the [Water Cycle Prediction System of the Great Lakes (WCPS)](../nwp_wcps/readme_wcps_en.md) is used by the model to dampen or suppress wave growth in areas covered respectively with 25% to 75% and more than 75% ice.
 
-WW3 (Tolman and the WAVEWATCH III® Development Group 2014) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years.
+WW3 (WAVEWATCH III® Development Group, WW3DG 2019) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years.
 
 The REWPS data are available on the Great Lakes domain.
 
