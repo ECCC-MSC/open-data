@@ -44,7 +44,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
-* {YYYYMMDD}T{HH}Z_MSC_RAQDPS_VAR_LVL_{Grille}(resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_RAQDPS_VAR_LVL_{Grille}(resolution}_PT{hhh}H.grib2
 
 où :
 
@@ -55,15 +55,15 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
 * __RAQDPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe de la qualité de l’air
 * __VAR__ : Type de variable contenu dans le fichier [PM2.5, PM10, O3, NO, NO2, SO2]
-* __LVL__ : Niveau vertical [SFC pour la surface, EATM pour l’intégrale de la colonne]
+* __LVL__ : Niveau vertical [Sfc pour la surface, EAtm pour l’intégrale de la colonne]
 * __Grille__ : Grille horizontale lat-lon tournée [RLatLon] 
-* __resolution__ : 0.09x0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 072]
+* __resolution__ : Indique la résolution en degré, ici 0.09°x0.09° (environ 10km) dans les directions longitudinale et latitudinale [0.09]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 072]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de noms de fichier :
 
-* 20200521T00Z_MSC_RAQDPS_PM2.5-SFC_RLatLon0.09x0.09_P003.grib2
+* 20200521T00Z_MSC_RAQDPS_PM2.5-Sfc_RLatLon0.09_PT003H.grib2
 
 ## Liste des variables
 

@@ -44,7 +44,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
-* {YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_VAR_LVL_{Grille}(resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_VAR_LVL_{Grille}(resolution}_PT{hhh}H.grib2
 
 Where:
 
@@ -55,15 +55,15 @@ Where:
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RAQDPS-FW__ : Constant string indicating that data is from the Regional Air Quality Deterministic Prediction System FireWork
 * __VAR__ : Variable type included in the file (ex. : PM2.5-Diff-RAQDPS)
-* __LVL__ : Vertical level [SFC for the surface, EATM for the column integral]
+* __LVL__ : Vertical level [Sfc for the surface, EAtm for the column integral]
 * __Grille__ : Horizontal grid rotated lat-lon [RLatLon]
-* __Resolution__ : 0.09x0.09. Indicating resolution in degreee 0.09x0.09 (about 10km) in latitude and longitude directions
-* __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 072]
+* __resolution__ : Indicating resolution in degreee, here 0.09°x0.09° (about 10km) in latitude and longitude directions [0.09]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 072]
 * __grib2__: Constant string indicating the GRIB2 format is used
 
 Example of forecast file name:
 
-* 20200521T00Z_MSC_RAQDPS-FW_PM2.5-Diff-RAQDPS_EATM_RLatLon0.09x0.09_P003.grib2
+* 20200521T00Z_MSC_RAQDPS-FW_PM2.5-Diff-RAQDPS_EAtm_RLatLon0.09_PT003H.grib2
 
 ## List of variables
 
