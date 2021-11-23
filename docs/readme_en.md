@@ -65,7 +65,15 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 
 ## Data discovery and metadata
 
+### Canadian Open Government Portal
+
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country.
+
+### WMO Information System (WIS)
+
+The [WMO Information System (WIS)](https://community.wmo.int/activity-areas/wis/wis-overview) enables discovery of authoritative meteorological and hydrological data and supports the collection of data and its exchange between World Meteorological Organization (WMO) Centres and their users. The "WIS Catalogue" describes the data and products available across WMO. Data and products are registered with the WIS by submitting a metadata record to the WIS Catalogue that describes the content, structure and access mechanisms for the associated data or product.
+
+MSC is a WIS Data Collection or Production Centre (DCPC), and provides a Discovery, Access and Retrieval (DAR) service available at [https://api.weather.gc.ca/wis/catalogue/csw](https://api.weather.gc.ca/wis/catalogue/csw).  The DAR supports a number of search interfaces including OGC Catalogue Services for the Web (CSW), Search/Retrieval via URL (SRU), and the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
 
 ## Events
 
