@@ -12,7 +12,11 @@
 
 Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système intégré de prévisions immédiates (SIPI).
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_incs-190_f.pdf).
+Les modifications incluses dans cette mise à jour sont résumées comme suit :
+ * Les mécanismes de SRPD SIPI utilisent les données du SRPD 8.0.0 ainsi que les données UMOS SRPD
+ * Les nuages modélisés sont améliorés  en utilisant les données de nuages de GOES 16/17
+   * Le système utilise maintenant la fraction de nuage totale (CF)
+
 
 La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
 
