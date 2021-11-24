@@ -54,7 +54,7 @@ Where:
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RESPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Ensemble Storm Surge Prediction System over the North-West domain
 * __VAR__ : Variables included in the file [ETAS, SSH]
-* __LVL__ : Vertical level [SFC for the surface]
+* __LVL__ : Vertical level [Sfc for the surface]
 * __Grille__ : Horizontal grid lat-lon [LatLon]
 * __Resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.083]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 240]

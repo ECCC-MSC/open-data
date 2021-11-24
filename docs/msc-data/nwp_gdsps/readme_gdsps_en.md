@@ -6,7 +6,9 @@
 
 # Data and Products of the Global Deterministic Storm Surge Prediction System (GDSPS)
 
-The Global Deterministic storm Surge Prediction System (GDSPS) produces storm surge forecasts using the DalCoast ocean model...
+The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a barotropic version of the Nemo ocean model (Wang et al. 2021). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+
+During the post-processing phase, storm surge elevation is derived from total water level by harmonic analysis using t_tide (Foreman et al. 2009).
 
 ## Access
 
