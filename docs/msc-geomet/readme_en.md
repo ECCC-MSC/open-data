@@ -35,6 +35,30 @@ Overview, examples and tutorials to access and use MSC GeoMet data:
 
 Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services. The supported geospatial web services are the following Open Geospatial Consortium (OGC) standards: [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs) and [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES).
 
+The MSC GeoMet Platform consists in the following services:
+
+* GeoMet-OGC-API:
+    * Weather, climate and hydrometric data
+    * Standards supported: OGC API - Features, OGC API - Processes, STAC (experimental)
+* GeoMet-Weather:
+    * Numerical Weather Prediction systems, weather radar, current conditions, alerts, and more  
+    * Standards supported: WMS, WCS, SLD
+* GeoMet-Climate: 
+    * Climate data archives, simulations and scenarios
+    * Standards supported: WMS, WCS, SLD
+* GeoMet-Beta:
+    * Unsupported web services for experimental data and web services
+
+The [available datasets pages](../msc-data/readme_en.md) specify on which MSC GeoMet service the corresponding data is available.
+
+### GeoMet-OGC-API
+
+GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium [OGC API - Features (WFS 3) standard](https://github.com/opengeospatial/ogcapi-features).
+
+Service capabilities:
+
+* GeoMet-OGC-API URL: [https://api.weather.gc.ca/](https://api.weather.gc.ca/)
+
 ### GeoMet-Weather
 
 GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.
@@ -64,14 +88,6 @@ The source code for GeoMet-Climate and the Climate Data Extraction Tool is publi
 
 * [https://github.com/ECCC-CCCS/geomet-climate](https://github.com/ECCC-CCCS/geomet-climate)
 * [https://github.com/ECCC-CCCS/climate-data-extraction-tool](https://github.com/ECCC-CCCS/geomet-climate)
-
-### GeoMet-OGC-API
-
-GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium [OGC API - Features (WFS 3) standard](https://github.com/opengeospatial/ogcapi-features).
-
-Service capabilities:
-
-* GeoMet-OGC-API URL: [https://api.weather.gc.ca/](https://api.weather.gc.ca/)
 
 ### GeoMet-Beta
 
