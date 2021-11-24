@@ -12,7 +12,10 @@
 
 On Tuesday 30th 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Integrated NowCasting System (INCS) to version 1.9.0.
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_incs-190_e.pdf).
+The changes included in this upgrade are summarized as follows :
+ * The mechanisms of RDPS INCS run using RDPS 8.0.0 and RDPS UMOS data
+ * The system improves its cloud models by using the more appropriate GOES 16/17 cloud data
+   * System now uses Cloud Fraction (CF)
 
 The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
 
