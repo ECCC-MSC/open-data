@@ -6,6 +6,30 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour du Système régional de prévision déterministe de la qualité de l'air
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 22 par la version 23.
+
+Résumé des éléments que comporte cette mise à jour:
+
+* Les analyses météorologiques et le modèle pilote proviennent maintenant du [SRPD v8.0.0](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/) plutôt que du SRPD v7.1.0.
+* Nouveaux inventaires d'émission anthropogéniques:
+    * Canada:  De la version 2013 de l'inventaire des émission de polluants atmosphériques (IEPA) à la version projetée 2020.
+    * U.S.:    de la version 2017 de l'inventaire national des émissions à la version projetée 2023.
+    * Mexique: de la version 2008 de l'inventaire national des émissions à la version projetée 2023.
+* Représentation de la sédimentation des particules améliorée.
+* Nouvelles librairies météorologique et chimique 
+    * Météo:  GEM 5.0.2 => GEM 5.1.0
+    * Chimie:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
+
+Une copie de la note officielle annonçant ces changements dans le SRPDQA est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+
+Le document des spécifications techniques du SRPDQA version 23 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_f.pdf).
+
+Une note technique du SRPDQA version 23 avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023_f.pdf).
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jours de SRPDQA à la version 22.0.0 suite à la nouvelle infrastructure de calcul haute performance. 
