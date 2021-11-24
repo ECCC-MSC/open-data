@@ -12,7 +12,7 @@
 
 On Tuesday November 30, 2021, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ice and Ocean Prediction System (GIOPS) to version 3.3.0.
 
-The major changes of GIOPS in this upgrade can be summarized as follow:
+The major changes of GIOPS in this upgrade can be summarized as follows:
 
 * Inclusion of a diurnal cycle
 * Ice strength parameter updated
