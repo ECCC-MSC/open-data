@@ -23,7 +23,7 @@ The changes included in this upgrade are summarized as follows:
 * New meteorological and chemical libraries 
     * Meteorology:  GEM 5.0.2 => GEM 5.1.0
     * Chemistry:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
-* Canadian Forest Fire Emission Prediction System (CFFEPS) Upgraded from version 2.06 to 4 
+* Canadian Forest Fire Emission Prediction System (CFFEPS) upgraded from version 2.06 to 4 
 
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
