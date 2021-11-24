@@ -12,9 +12,9 @@ The Regional Ensemble storm Surge Prediction System (RESPS) produces storm surge
 
 ### How to access the data
 
-The data are currently available on [DD-Alpha, the data testing website of the MSC Datamart](../../msc-datamart/readme_en.md).
+The data are currently available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server.
 
-* [Experimental NetCDF data available on DD-Alpha, the data testing website of the MSC Datamart](readme_resps-datamart_en.md)
+* [NetCDF data available on the MSC Datamart](readme_resps-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
