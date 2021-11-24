@@ -6,6 +6,19 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour du Système global de prévision déterministe (SGPD) 8.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système global de prévision déterministe (SGPD).
+
+Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SGPD_8.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-800_f.pdf). Pour une description complète veiullez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_f.pdf).
+
+Notes :
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-800_f.pdf).
+* [Spécifications techniques du SGPD 8.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
+
 ## Le mardi 26 janvier 2021
 
 ### Ajout et remplacement d’observations de radiances satellitaires
@@ -100,7 +113,7 @@ Résumé des éléments majeurs que comporte cette mise à jour :
 
 Notes:
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281732___16257).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_e.pdf) (en anglais, version française sera disponible bientôt).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-700_f.pdf).
 * [Spécifications techniques du SGPD 7.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf).
 
 ## Le mardi 18 septembre 2018

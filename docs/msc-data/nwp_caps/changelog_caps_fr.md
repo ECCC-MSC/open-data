@@ -6,6 +6,14 @@
 
 # Chronologie des changements apportés au Système canadien de prévision de l'Artique (SCPA)
 
+## Le mardi 30 novembre 2021
+
+### Fin de service du SCPA, remplacé par le SHRPD Nord. 
+
+Après près de 4 années de prévisions couplées haute résolution sur l'arctique, le SCPA sera mis hors service le mardi 30 novembre 2021.  Certains produits du SCPA seront générés par le SHRPD Nord.
+
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+
 ## Le mardi 21 janvier 2020
 
 ### Mise à jour du SCPA à la version 2.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
