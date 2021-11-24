@@ -6,17 +6,17 @@
 
 # Données NetCDF du Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
-Cette page décrit les données expérimentales du [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](readme_resps_fr.md) disponibles en format NetCDF.
+Cette page décrit les données du [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](readme_resps_fr.md) disponibles en format NetCDF.
 
 ## Adresse des données
 
-Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les données expérimentales sont accessibles à l'adresse suivante :
+Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.meteo.gc.ca/model_resps/atlantic-nw/netcdf)
+* [https://dd.meteo.gc.ca/model_resps/atlantic-nw/9km/{HH}/](https://dd.meteo.gc.ca/model_resps/atlantic-nw/9km)
 
 où :
 
@@ -42,7 +42,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
+{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_PT{hhh}H.nc 
 
 où :
 
@@ -53,15 +53,15 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données 
 * __RESPS-Atlantic-North-West__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble d'onde de tempête sur le domaine nord ouest
 * __VAR__ : Type de variable contenue dans le fichier [ETAS, SSH]
-* __LVL__ : Niveau vertical [SFC, pour la surface]
+* __LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale lat-lon [LatLon]
-* __resolution__ : 0.083x0.083. Signifie une résolution de 0.083° dans les directions longitudinale et latitudinale
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 240]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.083]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 240]
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemple de fichier :
 
-20180417T12Z_MSC_RESPS-Atlantic-North-West_ETAS_SFC_LatLon0.083x0.083_P024.nc
+20180417T12Z_MSC_RESPS-Atlantic-North-West_ETAS_Sfc_LatLon0.083_PT024H.nc
 
 ##   Liste de variables
 
@@ -70,8 +70,8 @@ La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une br
 
 | NetCDF |   Description courte |                        Abr.|   Niveau | Unités|
 |--------|--------|--------|--------|--------|
-| etas   |  Onde de tempête         |                      ETAS  |  SFC | m |
-| zos    |  Niveau d'eau total      |                      SSH  |  SFC | m |
+| etas   |  Onde de tempête         |                      ETAS  |  Sfc | m |
+| zos    |  Niveau d'eau total      |                      SSH  |  Sfc | m |
 
 
 ## Support

@@ -61,6 +61,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * [Regional Ensemble Wave Prediction System (REWPS)](nwp_rewps/readme_rewps_en.md)
     * —
+    * [Global Deterministic Storm Surge Prediction System (GDSPS)](nwp_gdsps/readme_gdsps_en.md)
     * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
     * [Regional Ensemble Storm Surge Prediction System (RESPS)](nwp_resps/readme_resps_en.md)
     * —  
