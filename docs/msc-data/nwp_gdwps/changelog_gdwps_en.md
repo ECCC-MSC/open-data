@@ -11,7 +11,18 @@
 ### Upgrade to Version 1.7.0 of the GDWPS.
 
 On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Wave Prediction System (GDWPS) to version 1.7.0.
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GDWPS_1.7.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdwps-170_e.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_e.pdf).
+
+The changes included in this upgrade are summarized as follows:
+
+* Use of IC-3 GDPS
+
+* Parameterization optimised for IC-3 GDPS
+
+* Use WaveWatch III version 7 which have the same physics as v5.16 and includes negative peak period bugfix
+
+* Activate Miche style limiter which offer to break unrealistically large waves in shallow water
+
+* Use hourly wind input past 144h newly available with IC-3 GDPS
 
 Associated Notes:
 
