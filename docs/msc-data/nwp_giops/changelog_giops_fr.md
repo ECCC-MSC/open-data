@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)
 
-## Mardi 30 novembre, 2021
+## Le mardi 30 novembre, 2021
 
 ### Mise à jour du Système global de prévision océan-glace (SGPOG) 3.3.0 du Centre météorologique canadien (CMC)
 
