@@ -6,7 +6,9 @@
 
 # Données et Produits du Système global de prévision déterministe d'onde de tempête (SGPDOT)
 
-Le Système global de prévision déterministe d'onde de tempête (SGPDOT) produit les prévisions de niveaux d'eau .....
+Le Système global de prévision déterministe d'onde de tempête (SGPDOT) produit les prévisions de niveaux d'eau en utilisant une version barotrope du modèle d'océan Nemo (Wang et al. 2021). Il fournit des prévisions de 240 heures, 2 fois par jour, sur une grille de 1/12° de degré (3-9 km). Le modèle est forcé par les vents à une élévation de 10 mètres et la pression au niveau de la mer du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md).
+
+En post-traitement, le niveau d'eau associé à l'onde de tempête est dérivé à partir du niveau d’eau total par analyse harmonique en utilisant t_tide (Foreman et al. 2009).
 
 ## Accès
 
