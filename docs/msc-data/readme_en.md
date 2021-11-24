@@ -72,10 +72,11 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Adjusted and homogenized Canadian Climate Data (AHCCD)](climate_ahccd/readme_ahccd_en.md)
 * [Canadian Gridded Data (CANGRD)](climate_cangrd/readme_cangrd_en.md)
 * [Coupled Model Intercomparison Project Phase 5 - Global Climate Model scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
+* [Daily Climate Records (LTCE)](climate_ltce/readme_climateltce_en.md)
+* [Historical observations](climate_obs/readme_climateobs_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
 * [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
 * [Statistically downscaled climate indices](climate_indices/readme_climateindices_en.md)
-* [Historical observations](climate_obs/readme_climateobs_en.md)
 
 
 ## Other data
