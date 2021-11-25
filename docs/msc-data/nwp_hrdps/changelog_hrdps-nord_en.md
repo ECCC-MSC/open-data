@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 1.0.0 of the High Resolution Deterministic Prediction System West (HRDPS-W) at the Canadian Meteorological Centre
 
-On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will remove retire the Canadian Arctic Prediction System ([CAPS](../nwp_caps/changelog_caps_en#tuesday-november-30-2021)) and replace it with the High Resolution Deterministic Prediction System North (HRDPS-N) version 1.0.0.
+On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will retire the Canadian Arctic Prediction System ([CAPS](../nwp_caps/changelog_caps_en#tuesday-november-30-2021)) and replace it with the High Resolution Deterministic Prediction System North (HRDPS-N) version 1.0.0.
 
 The changes included in this upgrade are summarized as follows :
 * Remove the ice-ocean coupling (CAPS was coupled).
