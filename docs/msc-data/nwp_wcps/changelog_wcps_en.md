@@ -6,6 +6,33 @@
 
 # Chronology of changes to the Water Cycle Prediction System (WCPS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 3.0.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
+
+Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v3.0.0.
+
+The modifications to WCPS v3.0.0 compared with the previous operational version are as follows:
+
+* [RDPS v8.0.0](../nwp_rdps/changelog_rdps_en.md) replaces v7.1.0 as the pilot system
+* New larger domain covering the Gulf of St. Lawrence (as well as the Great Lakes)
+* For the pseudo-analysis/forecast components:
+   * Increased resolution from 2km/5km (interior/coastlines) to 1km/2km
+   * Ice loading over Great Lakes
+   * Atmospheric pressure gradient forcing (inverse barometric effect for storm-surges)
+* For the hydrological component: 
+   * New observation stations of river discharge: Quebec, United States Geologicial Survey (USGS) 
+   * Upstream propagation of information derived from observations of river discharge 
+   * New climatological fields of drainage
+   * Implementation of the Dynamically Zoned Target Release (DZTR) model to represent management rules of individual regulated reservoirs 
+   * A new numerical solver in WATROUTE
+
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+
+For more information, please consult the technical specifications document for WCPS v3.0.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.0.0_e.pdf).
+
+A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-300_e.pdf).
+
 ## Tuesday January 21, 2020
 
 ### Upgrade to Version 2.2.1 of WCPS adapted to the New High Performance Computing Infrastructure.
@@ -14,9 +41,9 @@ See details [at this link](../changelog_multisystems_en.md)
 
 ## Wednesday July 3, 2019
 
-### Upgrade to Version 2.1.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre (CMC)
+### Upgrade to Version 2.1.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
 
-Effective Wednesday July 3rd, 2019, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will update the Water Cycle Prediction System (WCPS) to v2.1.0.
+Effective Wednesday July 3rd, 2019, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v2.1.0.
 
 The modifications to WCPS v2.1.0 compared with the previous operational version are as follows:
 

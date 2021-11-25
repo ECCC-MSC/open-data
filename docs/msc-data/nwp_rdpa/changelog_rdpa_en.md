@@ -6,15 +6,35 @@
 
 # Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)
 
+## Tuesday November 30, 2021
+
+### Upgrade to version 5.2.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
+
+On Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.2.0.
+
+The changes included in this upgrade are summarized as follows :
+
+* [RDPS v8.0.0](../nwp_hrdps/changelog_rdps_en.md) now provides the trial field instead of RDPS v7.1.0
+* Addition of 14 Canadian S-band radars
+* Assimilation of observations from the Ontario Ministry of Natural Resources (MNR) network
+* Updates to the static quality control masks for 8 radars
+* Enlargement of the grid to cover the same domain as the [RDPS](../nwp_rdps)
+
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+
+A technical note with more details on these changes is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_e.pdf).
+
+The technical specifications document for RDPA v5.2.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_5.2.0_e.pdf).
+
 ## Wednesday June 9, 2021
 
-Upgrade to version 5.0.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
+### Upgrade to version 5.0.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
 
 On Wednesday, June 9, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.0.0.
 
 The changes included in this upgrade are summarized as follows :
 
-* Assimilation of three new precipitation observation network:
+* Assimilation of three new precipitation observation networks:
      * Manitoba Agriculture (MBAG),
      * Grand River Conservation Authority (GRCA),
      * Toronto River Conservation Authority (TRCA).
@@ -25,7 +45,7 @@ The changes included in this upgrade are summarized as follows :
 
 A copy of the official note announcing this implementation is available at this location: [CaPA-RDPA official announcement](https://dd.meteo.gc.ca/doc/genots/2021/06/08/NOCN03_CWAO_081408___31851)
 
-Technical note with more details on these changes is available at this link: [CaPA-RDPA technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-500_e.pdf)
+A technical note with more details on these changes is available at this link: [CaPA-RDPA technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-500_e.pdf)
 
 ## Tuesday January 21, 2020
 
@@ -65,7 +85,7 @@ A copy of the official note announcing this implementation is available at this 
 
 * [CaPA-RDPA official announcement](http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171415___18584)
 
-Technical note with more details on these changes is available at this link:
+A technical note with more details on these changes is available at this link:
 
 * [CaPA-RDPA technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-450_e.pdf)
 
