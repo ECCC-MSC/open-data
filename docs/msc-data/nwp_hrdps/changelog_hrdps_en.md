@@ -6,17 +6,34 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday November 30, 2021
+
+### Major upgrade to Version 6.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
+
+On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 6.0.0.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-600_e.pdf).
+
+The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+
+A technical note with more details on HRDPS v6.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-600_e.pdf).
+
+The technical specifications document for HRDPS v6.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_6.0.0_e.pdf).
+
+
 ## Tuesday January 21, 2020
 
 ### Upgrade to Version 5.2.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
 
+
 ## Wednesday July 3, 2019
 
 ### Major upgrade to Version 5.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
 
-On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.1.0.
+On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.1.0.
+
 The changes included in this upgrade are summarized as follows:
 
 * Initial and boundary conditions are now provided by [RDPS v7.0.0](../nwp_rdps/changelog_rdps_en.md) instead of v6.0.0.
@@ -34,7 +51,7 @@ A technical note with more details on HRDPS 5.1.0 is available [at this link](ht
 
 ### Major upgrade to Version 5.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
 
-On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.0.0.
+On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.0.0.
 The changes included in this upgrade are summarized as follows:
 
 * Initial and boundery conditions comming from [RDPS v6.0.0](../nwp_rdps/changelog_rdps_en.md) instead of v5.1.0.
@@ -49,7 +66,7 @@ A technical note with more details on HRDPS 5.0.0 is available [at this link](ht
 
 ## Thursday December 14, 2017
 
-### The High Resolution Deterministic Prediction System (HRDPS) is declared operational at the Canadian Meteorological Centre (CMC)
+### The High Resolution Deterministic Prediction System (HRDPS) is declared operational at the Canadian Meteorological Centre
 
 Effective December 14, 2017, after several years running in experimental mode, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada declared operational the High Resolution Deterministic Prediction System (HRDPS v4.4.0).
 

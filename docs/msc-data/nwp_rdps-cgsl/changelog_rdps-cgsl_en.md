@@ -2,19 +2,29 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [SRPD-CGSL](readme_rdps-cgsl_en.md) >  Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPS-CGSL](readme_rdps-cgsl_en.md) >  Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence Changelog
 
 # Chronology of changes to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence
 
+## Tuesday November 30, 2021
+
+### Retirement of the RMPS-GSL/RDPS-CGSL at the Canadian Meteorological Centre (CMC)
+
+Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will retire the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RMPS-GSL/RDPS-CGSL).
+
+This system is replaced by the Water Cycle Prediction System [WCPS v3.0.0](../nwp_wcps/changelog_wcps_en.md). 
+
+The official note announcing these changes is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+
 ## Tuesday January 21, 2020
 
-### Upgrade to Version 3.5.0 of the RDPS-CGSL adapted to the New High Performance Computing Infrastructure.
+### Upgrade to Version 3.5.0 of the RMPS-GSL/RDPS-CGSL adapted to the New High Performance Computing Infrastructure
 
 See details [at this link](../changelog_multisystems_en.md)
 
 ## Tuesday November 18th 2014
 
-### Major Upgrade to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence  at the Canadian Meteorological Centre
+### Major Upgrade to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence at the Canadian Meteorological Centre
 
 On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will update the operational regional Marine Prediction system (RMPS-GSL) and the associated Regional Deterministic Prediction System - Coupled in the Gulf of St-Lawrence (RDPS-CGSL). The RMPS-GSL version will be updated to 6.0.0 and the RDPS-CGSL will be 3.0.0. Here are the major changes:
 

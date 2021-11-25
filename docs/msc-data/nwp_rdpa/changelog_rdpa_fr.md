@@ -6,9 +6,29 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour vers la version 5.2.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien
+
+Le mardi 30 novembre 2021, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP (10km)) à la version 5.2.0.
+
+Les modifications incluses dans cette mise à jour sont résumées comme suit :
+
+* CaPA-ARDP construit maintenant ses champs d'essai à partir du [SRPD v8.0.0](../nwp_hrdps/changelog_rdps_fr.md)
+* Ajout de 14 radars canadiens de bande S
+* Assimilation des stations du réseau du Ministère des ressources naturelles de l'Ontario (MNR)
+* Mise à jour de masques statiques de contrôle de qualité pour 8 radars
+* Agrandissement de la grille afin de couvrir le domaine du [RDPS](../nwp_rdps)
+
+La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_xxxxx).
+
+Une note technique avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_f.pdf).
+
+Le document des spécifications techniques du ARDP v5.2.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_5.2.0_f.pdf).
+
 ## Le mercredi 9 juin 2021
 
-Mise à jour vers la version 5.0.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)
+### Mise à jour vers la version 5.0.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)
 
 Le mercredi 9 juin 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) à la version 5.0.0.
 
