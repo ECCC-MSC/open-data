@@ -2,17 +2,19 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > LTCE
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Daily Climate Records
 
-# Data and products of the Daily Climate Records (LTCE)
+# Data and products of the Daily Climate Records (Long Term Climate Extremes)
 
-Anomalous weather resulting in Temperature and Precipitation extremes occurs almost every day somewhere in Canada. For the purpose of identifying and tabulating daily extremes of record for temperature, precipitation and snowfall, the Meteorological Service of Canada has threaded or put together data from closely related stations to compile a long time series of data for about 750 locations in Canada to monitor for record-breaking weather. Virtual Climate stations correspond with the city pages of weather.gc.ca. This data provides the daily extremes of record for Temperature for each day of the year. Daily elements include: High Maximum, Low Maximum, High Minimum, Low Minimum.
+The daily climate records database, also known as Long Term Climate Extremes (LTCE; [see FAQ](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/frequently-asked-questions-long-term-climate-extremes.html)), was developed to address the fragmentation of climate information due to station changes (opening, closing, relocation, etc.) over time. For approximately 750 locations in Canada, "virtual" climate stations have been developed by joining (threading) climate data for an urban location, from nearby stations to make long-term records. Each long-term record consists of the extremes (record values) of daily maximum/minimum temperatures, total precipitation and snowfall for each day of the year. Many of the longest data sets of extremes date as far back as the 1800s. This dataset identifies, for example, the highest temperature or the greatest snowfall on record for each day of the year for the selected urban area.
+ 
+Note that the database is updated twice daily with the most recent data being valid for the previous climate day. In cases where there are tied records, the earliest year of occurrence is listed before the most recent year(s) of occurrence.
 
 ## Access
 
 ### How to access the data
 
-This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services.
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API and web services.
 
 * [Data available from the GeoMet-OGC-API web services](https://api.weather.gc.ca/)
 * Data upcoming on the MSC Datamart
