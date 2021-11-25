@@ -35,7 +35,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
         * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
     * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
-    * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
     * —
     * Ensemble:

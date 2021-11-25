@@ -15,8 +15,7 @@ The Regional Ice Ocean Prediction System (RIOPS) provides 48 hr ice and ocean fo
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [NetCDF data available on the MSC Datamart](readme_riops-datamart_en.md)
-* [Experimental NetCDF data available on the MSC testing data repository DD-Alpha](readme_riops-datamart-alpha_en.md) 
-* [YOPP-RIOPS data available via the GeoMet-Beta geospatial web services](../../msc-geomet/readme_en.md) 
+* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
