@@ -4,13 +4,13 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD-O](readme_hrdps-w_fr.md) > Changements au SHRPD Ouest
 
-# Chronologie des changements apportés au système haute résolution de prévision déterministe ouest (SHRPD-O)
+# Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-O)
 
 ## Le mardi 30 novembre 2021
 
-### Mise à jour majeure vers la version 1.3.0 du système haute résolution de prévision déterministe ouest (SHRPD-O) au Centre météorologique canadien (CMC)
+### Mise à jour majeure vers la version 1.3.0 du Système à haute résolution de prévision déterministe ouest (SHRPD-O) au Centre météorologique canadien (CMC)
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système haute résolution de prévision déterministe ouest (SHRPD-O) à la version 1.3.0.
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe ouest (SHRPD-O) à la version 1.3.0.
 
 Voici un résumé des innovations: 
 * Migration à GEM 5.1 avec retro physique.
