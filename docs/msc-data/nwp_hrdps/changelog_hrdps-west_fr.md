@@ -15,7 +15,7 @@ Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météo
 Voici un résumé des innovations: 
 * Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
-* Mise-a-jour des champs géophysiques.
+* Mise à jour des champs géophysiques.
 * Nouveau modèle pilote: SHRPD National [version 6.0.0](../nwp_hrdps/changelog_hrdps_fr.md#le-mardi-30-november-2021).
 * Prolongation de l'échéance de prévision à 48h.
 
