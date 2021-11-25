@@ -4,20 +4,20 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD-N](readme_hrdps-nord_fr.md) > Changements au SHRPD Nord
 
-# Chronologie des changements apportés au système haute résolution de prévision déterministe nord (SHRPD-N)
+# Chronologie des changements apportés au Système haute résolution de prévision déterministe nord (SHRPD-N)
 
 ## Le mardi 30 novembre 2021
 
-### Mise à jour vers la version 1.0.0 du système haute résolution de prévision déterministe nord (SHRPD-N) au Centre météorologique canadien (CMC)
+### Mise à jour vers la version 1.0.0 du Système haute résolution de prévision déterministe nord (SHRPD-N) au Centre météorologique canadien (CMC)
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) retirera le Système canadien de prévision de l'Artique ([SCPA](../nwp_caps/changelog_caps_fr#le mardi-30-novembre-2021)) qui sera remplacé par le système haute résolution de prévision déterministe nord (SHRPD-N) version 1.0.0.
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) retirera le Système canadien de prévision de l'Artique ([SCPA](../nwp_caps/changelog_caps_fr#le-mardi-30-novembre-2021)) qui sera remplacé par le Système haute résolution de prévision déterministe nord (SHRPD-N) version 1.0.0.
 
 Voici un résumé des innovations: 
 * Retrait du couplage océan-glace (le SCPA était couplé).
 * Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
 * Mise-a-jour des champs géophysiques.
-* Nouveau modèle pilote: SRPD National [version 8.0.0](../nwp_rdps/changelog_rdps_fr.md#le-mardi-30-november-2021).
+* Nouveau modèle pilote: SRPD National [version 8.0.0](../nwp_rdps/changelog_rdps_fr.md#le-mardi-30-novembre-2021).
 
 La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
 
