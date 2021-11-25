@@ -16,7 +16,7 @@ Voici un résumé des innovations:
 * Retrait du couplage océan-glace (le SCPA était couplé).
 * Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
-* Mise-a-jour des champs géophysiques.
+* Mise à jour des champs géophysiques.
 * Nouveau modèle pilote: SRPD National [version 8.0.0](../nwp_rdps/changelog_rdps_fr.md#le-mardi-30-novembre-2021).
 
 La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
