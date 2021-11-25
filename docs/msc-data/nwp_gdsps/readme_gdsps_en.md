@@ -6,9 +6,9 @@
 
 # Data and Products of the Global Deterministic Storm Surge Prediction System (GDSPS)
 
-The Global Deterministic storm Surge Prediction System (GDSPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a barotropic version of the NEMO ocean model (Wang et al. 2021). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
 
-During the post processing phase tidal heights are predicted using Webtide (Dupont et al., 2002). The tidal heights (SSHT) from Webtide and surge forecast (ETAS) from Dalcoast are summed to obtain an estimate of the total water level (SSH).
+During the post-processing phase, storm surge elevation is derived from total water level by harmonic analysis using t_tide (Pawlowicz et al. 2002).
 
 ## Access
 
@@ -16,7 +16,7 @@ During the post processing phase tidal heights are predicted using Webtide (Dupo
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
-* [NetCDF data available on the MSC Datamart](readme_rdsps-datamart_en.md)
+* [NetCDF data available on the MSC Datamart](readme_gdsps-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -30,9 +30,9 @@ Upcoming.
 
 ## Technical documentation
 
-* [Current version of the Regional Deterministic Storm Surge Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDSPS_e.pdf)
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdsps_e.pdf)
+* [Current version of the Global Deterministic Storm Surge Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDSPS_e.pdf)
+* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdsps_e.pdf)
 
 ## Changelog
 
-The chronology of changes to the Regional Deterministic Storm Surge Prediction System (RDSPS) is available [here](changelog_rdsps_en.md).
+The chronology of changes to the Global Deterministic Storm Surge Prediction System (GDSPS) is available [here](changelog_gdsps_en.md).
