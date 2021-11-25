@@ -8,10 +8,9 @@
 
 ## Tuesday November 30, 2021
 
-### Upgrade to Version 1.9.0 of the Regional Deterministic Storm-surge Prediction System (RDSPS) at the Canadian Meteorological Centre (CMC)
+### Replacement of the Regional Deterministic Storm-surge Prediction System (RDSPS) at the Canadian Meteorological Centre (CMC)
 
-On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Storm-surge Prediction System (RDSPS) to version 1.9.0.
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [RDSPS_1.9.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdsps-190_e.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdsps-190_e.pdf).
+On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will replace the Regional Deterministic Storm-surge Prediction System (RDSPS) by the new Global Deterministic Storm-surge Prediction System (GDSPS) and will upgrade its version to 1.9.0.
 
 Associated Notes:
 
