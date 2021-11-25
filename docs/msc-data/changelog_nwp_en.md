@@ -25,8 +25,8 @@ Atmosphere
     * [High Resolution Deterministic Precipitation Analysis System (HRDPA) 5.0.0](nwp_hrdpa/changelog_hrdpa_en.md#tuesday-november-30th-2021)
     * [High-Resolution Ensemble Precipitation Analysis (HREPA) 1.3.0](nwp_hrepa/changelog_hrepa_en.md#tuesday-november-30th-2021)
 * Air quality:
-    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_en.md#tuesday-november-30th-2021)
     * [Regional Air Quality Deterministic Prediction System (RAQDPS) v23](nwp_raqdps/changelog_raqdps_en.md#tuesday-november-30th-2021)
+    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_en.md#tuesday-november-30th-2021)
     * [Regional Deterministic Air Quality Analysis (RDAQA) 2.0.0](nwp_rdaqa/changelog_rdaqa_en.md#tuesday-november-30th-2021)
     
 Water, ocean and ice
