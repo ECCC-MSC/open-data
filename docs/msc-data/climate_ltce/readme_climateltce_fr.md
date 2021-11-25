@@ -4,15 +4,17 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Records des Extrêmes Quotidiens
 
-# Données et produits des Records des Extrêmes Quotidiens
+# Données et produits des Records des Extrêmes Quotidiens (Extrêmes climatiques à long terme)
 
-Des conditions météorologiques anormales se traduisant par des extrêmes de température et de précipitations se produisent presque chaque jour quelque part au Canada. Afin d'identifier et de compiler les extrêmes quotidiens de température, de précipitations et de chutes de neige, le Service météorologique du Canada a rassemblé les données de stations étroitement liées pour compiler une longue série chronologique de données pour environ 750 endroits au Canada afin de surveiller les records météorologiques. Les stations climatiques virtuelles correspondent aux pages des villes de meteo.gc.ca. Ces données fournissent les extrêmes quotidiens enregistrés pour la température pour chaque jour de l'année. Les éléments quotidiens comprennent : Maximum élevé, Maximum bas, Minimum élevé, Minimum bas.
+Les Records des Extrêmes Quotidiens (ECLT; voir [la FAQ](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/afficher-telecharger/foire-questions-extremes-climatiques-long-terme.html)) visent à combler les lacunes de la fragmentation de l’information sur le climat en raison de changements apportés aux stations au fil du temps. Dans 750 endroits répartis sur le territoire canadien, des stations climatologiques « virtual » ont été construites en procédant au « remaillage » des données pour un lieu urbain, à partir de stations proches. Ces données fournissent les records des extrêmes quotidiens de la température, la précipitation et la neige pour chaque jour de l'année. La majorité des plus longs ensembles de données des extrêmes datent des années 1800s. Cet ensemble de données identifie, par exemple, la température la plus élevée ou la plus grande chute de neige enregistrée pour chaque jour de l'année pour la zone urbaine sélectionnée.
+ 
+Notez que la visualiseur de l'ECLT affiche les enregistrements actuels pour le mois et le jour de l'année sélectionnés. Il n'identifie pas spécifiquement les occurrences de nouveaux enregistrements pour une date sélectionnée. Cette fonctionnalité pourra être intégrée dans une prochaine version.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles via l'API et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.weather.gc.ca/)
 * Données à venir sur le Datamart du SMC
