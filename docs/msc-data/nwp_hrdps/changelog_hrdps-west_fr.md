@@ -16,7 +16,7 @@ Voici un résumé des innovations:
 * Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
 * Mise à jour des champs géophysiques.
-* Nouveau modèle pilote: SHRPD National [version 6.0.0](../nwp_hrdps/changelog_hrdps_fr.md#le-mardi-30-november-2021).
+* Nouveau modèle pilote: SHRPD National [version 6.0.0](../nwp_hrdps/changelog_hrdps_fr.md#le-mardi-30-novembre-2021).
 * Prolongation de l'échéance de prévision à 48h.
 
 La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
