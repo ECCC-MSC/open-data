@@ -15,13 +15,9 @@ On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteor
 The changes included in this upgrade are summarized as follows:
 
 * Use of GDPS v8.0.0
-
 * Parameterization optimised for GDPS v8.0.0
-
 * Use WaveWatch III version 7 which have the same physics as v5.16 and includes negative peak period bugfix
-
 * Activate Miche style limiter which offer to break unrealistically large waves in shallow water
-
 * Use hourly wind input past 144h newly available with GDPS v8.0.0
 
 Associated Notes:
