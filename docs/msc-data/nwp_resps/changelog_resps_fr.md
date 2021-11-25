@@ -6,19 +6,36 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
+## Le mardi 30 novembre, 2021
+
+### Mise à jours du SRPEOT à la version 1.5.0:
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.5.0 de son Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) et le changement de son statut d'experimental à opérationnel.
+
+Les modifications incluses dans cette mise à niveau sont résumées comme suit :
+
+* Le forçage du SGPE v7.0.0
+* Le forçage de 1H pour les pas de temps entre 168h and 384h
+* Variables de sortie : niveau d'eau total (SSH) et onde de tempête (ETAS) 
+
+Notes :
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-150_f.pdf).
+* [Spécifications techniques du SRPEOT 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RESPS_f.pdf).
+
 ## Le mardi 24 novembre, 2020
 
-### Mise à jour du SRPEOT à la version 1.4.0: Ajout de la prévision du niveau d'eau total, extension de la durée de prévision à 16 jours.
+### Mise à jours du SRPEOT à la version 1.4.0: Ajout de la prévision du niveau d'eau total, extension de la durée de prévision à 16 jours.
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jour du SRPEOT à la version 1.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jours du SRPEOT à la version 1.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 3 juillet 2019
 
-### Mise à jour vers la version 1.2.0 du Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) au Centre météorologique canadien (CMC)
+### Mise à jours vers la version 1.2.0 du Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) au Centre météorologique canadien (CMC)
 
 En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle du Système régional de prévision d'ensemble d’onde de tempête (SRPEOT) vers la version 1.2.0.
 
