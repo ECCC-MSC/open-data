@@ -12,7 +12,13 @@
 
 Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système global de prévision déterministe (SGPDV).
 
-Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SGPDV_1.7.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdwps-170_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_f.pdf).
+Les modifications incluses dans cette mise à niveau sont résumées comme suit :
+
+* Utilisation de SGPD v8.0.0
+* Paramétrage optimisé pour GDPS v8.0.0
+* Utilisation de la version 7 de WaveWatch III qui a la même physique que la v5.16 et inclut une correction de bogue dû a une période de pointe négative
+* Activez le limiteur de style Miche qui propose de briser les grandes vagues irréalistes dans des eaux peu profondes
+* Utilisation l'entrée de vent horaire après 144h, nouvellement disponible avec SGPD v8.0.0  
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
