@@ -35,7 +35,7 @@ En date du mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va
 Les modifications majeures du SPISCan dans cette mise à jour sont dans la composante prévision
 
 * Remplacement du modèle CANCM3 par le nouveau modèle couplé GEM-NEMO.
-* Mise à jour du modèle CANCM4 par une version amélioré CANCM4I.
+* Mise à jour du modèle CANCM4 par une version améliorée CANCM4I.
 
 Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf).
 
@@ -46,7 +46,7 @@ Une note technique avec plus de détails sur ces changements [est disponible sur
 
 Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à une mise à jour de son Système de prévision interannuelle et saisonnière canadien (SPISCan).
 
-Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCan proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisée auparavant.
+Dans cette mise à jour les analyses océaniques 3D utilisées par le modèle océanique de SPISCan proviendront du Système global de prévision océan-glace (SGPOG) 2.1. Les analyses de SGPOG remplacent les analyses GODAS provenant du centre NCEP qui étaient utilisées auparavant.
 
 La note officielle annonçant ce changement est disponible [en cliquant ici](http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211910___00716). 
 

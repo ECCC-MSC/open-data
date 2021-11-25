@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)
 
-## Mardi 30 novembre, 2021
+## Le mardi 30 novembre, 2021
 
 ### Mise à jour du Système global de prévision océan-glace (SGPOG) 3.3.0 du Centre météorologique canadien (CMC)
 
@@ -18,7 +18,7 @@ Les changements majeurs de cette mise à jour se résument ainsi:
 * Paramétrage de la rigidité de la glace.
 * Coefficient de rugosité de la glace pour ajuster à la valeur utilisée dans GEM.
 * Utilisation des forçages atmosphériques provenant de l'assimilation plutôt que de la prévision.
-* Introduction d’un nouveau système de monitorage.
+* Introduction d’un nouveau système de monitoring.
 
 
 Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_XXXX).

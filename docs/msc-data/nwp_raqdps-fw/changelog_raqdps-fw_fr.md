@@ -16,7 +16,7 @@ Résumé des éléments que comporte cette mise à jour:
 
 * Les analyses météorologiques et le modèle pilote proviennent maintenant du [SRPD v8.0.0](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/) plutôt que du SRPD v7.1.0.
 * Nouveaux inventaires d'émission anthropogéniques:
-    * Canada:  De la version 2013 de l'inventaire des émission de polluants atmosprérique (IEPA) à la version projetée 2020.
+    * Canada:  De la version 2013 de l'inventaire des émission de polluants atmosprériques (IEPA) à la version projetée 2020.
     * U.S.:    de la version 2017 de l'inventaire national des émissions à la version projetée 2023.
     * Mexique: de la version 2008 de l'inventaire national des émissions à la version projetée 2023.
 * Représentation de la sédimentation des particules améliorée.

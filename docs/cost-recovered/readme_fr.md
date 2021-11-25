@@ -35,11 +35,17 @@ Les **détails concernant la tarification des données radar** sont les suivants
 * 11+ : 2 000 $/mois
 * Plus des frais d'installation uniques de 2 000 $
 
-**Produits in format ASCII**:
+**Produits in format ASCII**
 
 * 1-5 radars (Qc, région Atl ou Pac) : 600 $/mois
 * 6-10 (toute une région) : 700 $/mois
 * 11+ : 800 $/mois
+* Plus des frais d'installation uniques de 800 $
+
+**Autres produits**
+
+* Composite radar 1km en format GeoTIFF : 800 $/mois
+* Couverture radar dynamique en format GeoJSON : 800 $/mois
 * Plus des frais d'installation uniques de 800 $
 
 Veuillez noter que ces tarifs sont donnés à titre indicatif et peuvent changer.

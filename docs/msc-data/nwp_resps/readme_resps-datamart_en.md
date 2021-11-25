@@ -6,17 +6,17 @@
 
 # Regional Ensemble Storm Surge Prediction System (RESPS) data in NetCDF format
 
-This page describes the experimental [Regional Ensemble Storm Surge Prediction System](readme_resps_en.md) data available in NetCDF format.
+This page describes the [Regional Ensemble Storm Surge Prediction System](readme_resps_en.md) data available in NetCDF format.
 
 ## Data location
 
-MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
 
-The experimental data can be accessed at the following address :
+The data can be accessed at the following address :
 
-* [https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf/{HH}/](https://dd.alpha.weather.gc.ca/model_resps/atlantic-nw/netcdf)
+* [https://dd.weather.gc.ca/model_resps/atlantic-nw/9km/{HH}/](https://dd.weather.gc.ca/model_resps/atlantic-nw/9km)
 
 where :
 
@@ -43,7 +43,7 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_P{hhh}.nc 
+{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_PT{hhh}H.nc 
 
 Where:
 
@@ -54,15 +54,15 @@ Where:
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RESPS-Atlantic-North-West__ : Constant string indicating that data is from the Regional Ensemble Storm Surge Prediction System over the North-West domain
 * __VAR__ : Variables included in the file [ETAS, SSH]
-* __LVL__ : Vertical level [SFC for the surface]
+* __LVL__ : Vertical level [Sfc for the surface]
 * __Grille__ : Horizontal grid lat-lon [LatLon]
-* __Resolution__ : 0.083x0.083. Indicating resolution in degreee 0.083x0.083 in latitude and longitude directions
-* __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 240]
+* __Resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.083]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 240]
 * __nc__: constant string indicating the NetCDF format is used
 
 Example of file name:
 
-20180417T12Z_MSC_RESPS-Atlantic-North-West_ETAS_SFC_LatLon0.083x0.083_P024.nc
+20180417T12Z_MSC_RESPS-Atlantic-North-West_ETAS_Sfc_LatLon0.083_PT024H.nc
 
 ##    Variable list
 
@@ -70,8 +70,8 @@ The list below provides, for each variable: a short description, an alphabetical
 
 |NetCDF  | Short description|                          Abbr.|  Level|  Units|
 |--------|---------------|----------|----------|----------|
-|etas    |Storm surge    |                            ETAS|   SFC|    m|
-|zos     |Total water level|                            SSH|   SFC|    m|
+|etas    |Storm surge    |                            ETAS|   Sfc|    m|
+|zos     |Total water level|                            SSH|   Sfc|    m|
 
 
 ## Support

@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Update polygon package version (6.6.0)
+    * Add radar composite and coverage fees (cost-recovery services)
 * improvements:
     * Clarified AMQPS is Datamart in Usage
     * Indicated librairies for mobile apps
