@@ -8,10 +8,50 @@
 
 ## 2021
 
+
 ### November 30, 2021
-* [Global Ensemble Prediction system (GEPS) 7.0.0](../nwp_geps/changelog_geps_en#tuesday-november-30-2021)
-* [Global Deterministic Prediction system (GDPS) 8.0.0](../nwp_gdps/changelog_gdps_en#tuesday-november-30-2021)
-* [Global Ice-Ocean Prediction System (GIOPS) 3.3.0](../nwp_giops/changelog_giops_en#tuesday-november-30-2021)
+Atmosphere
+* Deterministic:
+    * [Global Deterministic Prediction System (GDPS) 8.0.0](nwp_gdps/changelog_gdps_en.md#tuesday-november-30th-2021)
+    * [Regional Deterministic Prediction System (RDPS) 8.0.0](nwp_rdps/changelog_rdps_en.md#tuesday-november-30th-2021)
+    * [High Resolution Deterministic Prediction System (HRDPS) 6.0.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-november-30th-2021)
+    * [Integrated Nowcasting System (INCS) 1.9.0](nwp_nowcasting/changelog_nowcasting_en.md#tuesday-november-30th-2021)
+* Ensemble:
+    * [Global Ensemble Prediction System (GEPS) 8.0.0](nwp_geps/changelog_geps_en.md#tuesday-november-30th-2021)
+    * [Regional Ensemble Prediction System (REPS) 4.0.0](nwp_reps/changelog_reps_en.md#tuesday-november-30th-2021)
+    * [Canadian Seasonal to Inter-annual Prediction System (CANSIPS) 2.1.0](nwp_cansips/changelog_cansips_en.md#tuesday-november-30th-2021)
+* Precipitation analysis:
+    * [Regional Deterministic Precipitation Analysis system (RDPA) 5.2.0](nwp_rdpa/changelog_rdpa_en.md#tuesday-november-30th-2021)
+    * [High Resolution Deterministic Precipitation Analysis System (HRDPA) 5.0.0](nwp_hrdpa/changelog_hrdpa_en.md#tuesday-november-30th-2021)
+    * [High-Resolution Ensemble Precipitation Analysis (HREPA) 1.3.0](nwp_hrepa/changelog_hrepa_en.md#tuesday-november-30th-2021)
+* Air quality:
+    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_en.md#tuesday-november-30th-2021)
+    * [Regional Air Quality Deterministic Prediction System (RAQDPS) v23](nwp_raqdps/changelog_raqdps_en.md#tuesday-november-30th-2021)
+    * [Regional Deterministic Air Quality Analysis (RDAQA) 2.0.0](nwp_rdaqa/changelog_rdaqa_en.md#tuesday-november-30th-2021)
+    
+Water, ocean and ice
+* [Global Ice and Ocean Prediction System (GIOPS) 3.3.0](nwp_giops/changelog_giops_en.md#tuesday-november-30th-2021)
+* [Regional Ice and Ocean Prediction System (RIOPS) 2.2.0](nwp_riops/changelog_riops_en.md#tuesday-november-30th-2021)
+* [Coastal Ice Ocean Prediction System (CIOPS) 2.0.0](nwp_ciops/changelog_ciops_en.md#tuesday-november-30th-2021)
+* 
+* [Global Deterministic Wave Prediction System (GDWPS) 1.7.0](nwp_gdwps/changelog_gdwps_en.md#tuesday-november-30th-2021)
+* [Global Ensemble Wave Prediction System (GEWPS) 1.1.0](nwp_gewps/changelog_gewps_en.md#tuesday-november-30th-2021)
+* [Regional Deterministic Wave Prediction System (RDWPS) 4.0.0](nwp_rdwps/changelog_rdwps_en.md#tuesday-november-30th-2021)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.5.0](nwp_rewps/changelog_rewps_en.md#tuesday-november-30th-2021)
+* 
+* [Global Deterministic Storm-surge Prediction System (GDSPS) 1.0.0](nwp_gdsps/changelog_gdsps_en.md#tuesday-november-30th-2021)
+* [Regional Deterministic Storm-surge Prediction System (RDSPS) 1.9.0](nwp_rdsps/changelog_rdsps_en.md#tuesday-november-30th-2021)
+* [Regional Ensemble Storm-surge Prediction System (RESPS) 1.5.0](nwp_resps/changelog_resps_en.md#tuesday-november-30th-2021)
+* 
+* [Water Cycle Prediction System (WCPS) 3.0.0](nwp_wcps/changelog_wcps_en.md#tuesday-november-30th-2021)
+* [Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RDPS-CGSL) replaced with WCPS](nwp_rdps-cgsl/changelog_rdps-cgsl_en.md#tuesday-november-30th-2021)
+* [Canadian Arctic Prediction System (CAPS) replaced by HRDPS-North](nwp_caps/changelog_caps_en.md#tuesday-november-30th-2021)
+* 
+* [Canadian Land Data Assimilation System with sat obs (CALDAS-SAT) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_en.md#tuesday-november-30th-2021)
+* [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.0.0](nwp_hrdlps/changelog_hrdlps_en.md#tuesday-november-30th-2021)
+* [Deterministic Hydrological Prediction System (DHSP) 3.1.0](nwp_dhsp/changelog_dhsp_en.md#tuesday-november-30th-2021)
+* [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#tuesday-november-30th-2021)
+
 
 ### June 9, 2021
 
