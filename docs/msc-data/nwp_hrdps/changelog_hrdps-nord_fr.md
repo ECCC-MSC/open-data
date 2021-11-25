@@ -14,6 +14,7 @@ Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météo
 
 Voici un résumé des innovations: 
 * Retrait du couplage océan-glace (le SCPA était couplé).
+* Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
 * Mise-a-jour des champs géophysiques.
 * Nouveau modèle pilote: SRPD National [version 8.0.0](../nwp_rdps/changelog_rdps_fr.md#le-mardi-30-november-2021).
