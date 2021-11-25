@@ -1,12 +1,12 @@
-[En français](readme_rdsps_fr.md)
+[En français](readme_gdsps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > RDSPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > GDSPS
 
-# Data and Products of the Regional Deterministic Storm Surge Prediction System (RDSPS)
+# Data and Products of the Global Deterministic Storm Surge Prediction System (GDSPS)
 
-The Regional Deterministic storm Surge Prediction System (RDSPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+The Global Deterministic storm Surge Prediction System (GDSPS) produces storm surge forecasts using the DalCoast ocean model. DalCoast (Bernier and Thompson 2015) is a storm surge forecast system for the east coast of Canada based on the depth-integrated, barotropic and linearized form of the Princeton Ocean Model. The model is forced by the 10 meters winds and sea level pressure from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
 
 During the post processing phase tidal heights are predicted using Webtide (Dupont et al., 2002). The tidal heights (SSHT) from Webtide and surge forecast (ETAS) from Dalcoast are summed to obtain an estimate of the total water level (SSH).
 
