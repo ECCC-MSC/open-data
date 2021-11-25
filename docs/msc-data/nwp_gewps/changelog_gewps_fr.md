@@ -14,9 +14,9 @@ Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météo
 
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
-* Utilisation de SGPE v7.0.0
+* Utilisation du SGPE v7.0.0
 * Utilisation de WaveWatch III qui inclut une correction de bogue dû a une période de pointe négative
-* Utilisation l'entrée de vent horaire après 168h, nouvellement disponible avec SGPE v7.0.0
+* Utilisation à l'entrée de vent horaire après 168h, nouvellement disponible avec le SGPE v7.0.0
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
