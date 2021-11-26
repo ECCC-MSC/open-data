@@ -11,6 +11,7 @@
 
 ### November 30, 2021
 Atmosphere
+
 * Deterministic:
     * [Global Deterministic Prediction System (GDPS) 8.0.0](nwp_gdps/changelog_gdps_en.md#tuesday-november-30th-2021)
     * [Regional Deterministic Prediction System (RDPS) 8.0.0](nwp_rdps/changelog_rdps_en.md#tuesday-november-30th-2021)
@@ -30,6 +31,7 @@ Atmosphere
     * [Regional Deterministic Air Quality Analysis (RDAQA) 2.0.0](nwp_rdaqa/changelog_rdaqa_en.md#tuesday-november-30th-2021)
     
 Water, ocean and ice
+
 * [Global Ice and Ocean Prediction System (GIOPS) 3.3.0](nwp_giops/changelog_giops_en.md#tuesday-november-30th-2021)
 * [Regional Ice and Ocean Prediction System (RIOPS) 2.2.0](nwp_riops/changelog_riops_en.md#tuesday-november-30th-2021)
 * [Coastal Ice Ocean Prediction System (CIOPS) 2.0.0](nwp_ciops/changelog_ciops_en.md#tuesday-november-30th-2021)
