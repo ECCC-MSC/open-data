@@ -8,12 +8,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.3.38
+## 2.4.0
 	
-* date: TBD
+* date: 2021-11-26
 * announcements:
     * Not announced
 * new content:
+    * Major update for IC-3 NWP datasets including changelogs
     * Update polygon package version (6.6.0)
     * Add radar composite and coverage fees (cost-recovery services)
 * improvements:

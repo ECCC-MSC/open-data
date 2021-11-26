@@ -76,7 +76,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Indice de précipitations et d’évapotranspiration normalisé (IPEN)](climate_spei/readme_spei_fr.md)
 * [Indices climatiques mis à l’échelle de manière statistique](climate_indices/readme_climateindices_fr.md)
 * [Observations historiques](climate_obs/readme_climateobs_fr.md)
-* [Records des Extrêmes Quotidiens (ECLT)](climate_ltce/readme_climateltce_fr.md)
+* [Records des Extrêmes Quotidiens (Extrêmes climatiques à long terme)](climate_ltce/readme_climateltce_fr.md)
 
 
 ## Autres données
