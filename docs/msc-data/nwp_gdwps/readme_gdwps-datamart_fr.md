@@ -41,7 +41,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_GDWPS_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
+`{YYYYMMDD}T{HH}Z_MSC_GDWPS_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2`
 
 où :
 

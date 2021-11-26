@@ -43,7 +43,7 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_VAR_LVL_{Grille}{resolution}_PT{hhh}H.nc 
+`{YYYYMMDD}T{HH}Z_MSC_RESPS-Atlantic-North-West_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.nc`
 
 Where:
 
