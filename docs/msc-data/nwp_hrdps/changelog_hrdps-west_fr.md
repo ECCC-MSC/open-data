@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD-O](readme_hrdps-w_fr.md) > Changements au SHRPD Ouest
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > Changements au SHRPD Ouest
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-O)
 

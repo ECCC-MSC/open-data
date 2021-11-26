@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps-nord_en.md) > HRDPS-North Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS-North Changelog
 
 # Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-N)
 
