@@ -6,6 +6,32 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW)
 
+## Tuesday November 30, 2021
+
+### Upgrade to the Regional Air Quality Deterministic Prediction System FireWork (RAQSPS-FW) 
+
+On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System with Near-Real-Time Wildfire Emissions Firework (RAQDPS-FW) from version 22 to version 23.
+
+The changes included in this upgrade are summarized as follows:
+
+* The RAQDPS-FW is now piloted by [RDPS v8.0.0](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/), rather than RDPS v7.1.0.
+*  New anthropogenic emissions inventories
+    * Canada:  From 2013 Air Pollutant Emission Inventory (APEI) to projected 2020 APEI.
+    * U.S.:    From 2017 projected National Emissions Inventory to projected 2023 NEI.
+    * Mexico:  Ftom 2008 National Emissions Inventory (NEI)	to projected 2023 NEI.
+* Improved representation of particle sedimentation
+* New meteorological and chemical libraries 
+    * Meteorology:  GEM 5.0.2 => GEM 5.1.0
+    * Chemistry:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
+* Canadian Forest Fire Emission Prediction System (CFFEPS) upgraded from version 2.06 to 4 
+
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023fw_e.pdf).
+
+
 ## Wednesday April 1, 2020
 
 ## Installation of the FireWork Prediction System for the Summer Wildfire Season of 2020

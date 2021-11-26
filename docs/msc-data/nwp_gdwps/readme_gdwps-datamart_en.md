@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URL :
 
-* [https://dd.weather.gc.ca/model_wave/ocean/global/grib2/{HH}/](https://dd.weather.gc.ca/model_wave/ocean/global/grib2)
+* [https://dd.weather.gc.ca/model_gdwps/25km/{HH}/](https://dd.weather.gc.ca/model_gdwps/25km)
 
 where :
 
@@ -41,36 +41,28 @@ NOTE: ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-CMC_gdwps_DOMAIN_VAR_LVL_LVLVAL_{grille}{resolution}_YYYYMMDDHH_P{hhh}.grib2
+{YYYYMMDD}T{HH}Z_MSC_GDWPS_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
 
 where :
 
-* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
-* __gdwps__ : Constant string indicating that the data is from the Global Deterministic Wave Prediction System
-* __DOMAIN__ : String indicating which domain the data is from [global]
-* __VAR__ : Variable type included in this file
-* __LVL__ : Level type.
-* __LVLVAL__ : Level value.
-* __grille__ : Horizontal grid type [latlon]
-* __resolution__ : Indicating resolution in degreee in latitude and longitude direction [0.25x0.25]
-* __latlon0.dx0.dd__ : Constant string indicating that the projection used is lat/long at 0.dd x 0.dd degrees resolution
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
-* __HH__ : UTC run time [00, 12]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048, 051, ..., 120]
-* __grib2__ : Constant string indicating the GRIB2 format is used
+* __YYYYMMDD__: Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to ISO8601 norms
+* __HH__: UTC run time [00, 12]
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __GDWPS__ : Constant string indicating that data is from the Global Deterministic Wave Prediction System
+* __VAR__ : Variables included in the file
+* __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
+* __grille__ : Horizontal grid type [LatLon]
+* __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.25]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ...048, 051, ..., 117, 120]
+* __grib2__: constant string indicating the GRIB2 format is used
 
 Example of file name :
 
-CMC_gdwps_global_HTSGW_SFC_0_latlon0.25x0.25_2017092112_P096.grib2
+20211007T00Z_MSC_GDWPS_HTSGW_Sfc_LatLon0.25_PT051H.grib2
 
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the Global Deterministic Wave Prediction System. The data in the file start on September 21th 2017 at 12Z (2017092112). It contains the significant wave height (HTSGW) for the world at the surface (SFC_0) on a lat/long grid at 0.25 degree x 0.25 degree resolution for the forecast hour 096 (P096) in GRIB2 format (.grib2).
-
-## Levels
-
-Levels that may be applicable to a given parameter are :
-
-* Surface [SFC]
-* Fixed height above ground [TGL]
+This file originates from the MSC and contains the data of the Global Deterministic Wave Prediction System. The data in the file start on October 7th 2021 at 00Z (2021100700). It contains the significant wave height (HTSGW) for the world at the surface on a lat/long grid at 0.25 degree x 0.25 degree resolution for the forecast hour 51 (PT051H) in GRIB2 format (.grib2).
 
 ## Variable List
 
@@ -78,24 +70,28 @@ This table provides, for each GRIB2 parameter number: a short description, an al
 
 |GRIB2 discipline/category/parameter number | Parameter description |	Abbreviation |	Level |	Units |
 |-------------------------------------------|-----------------------|----------------|--------|-------|
-|10/2/0 |	Ice cover |	ICEC |	SFC_0 	|fraction|
-|0/2/2 |	U-Component of Wind |	UGRD |	TGL_10 (10m above ground) |	m/s|
-|0/2/3 |	V-Component of Wind |	VGRD |	TGL_10 (10m above ground) |	m/s|
-|10/0/3 |	Significant height of combined wind waves and swell |	HTSGW |	SFC_0 |	m|
-|10/0/34 |	Peak wave period |	PWPER |	SFC_0 |	s|
-|10/0/28 |	Mean zero-crossing wave period |	MZWPER |	SFC_0 |	s|
-|10/0/4 |	Direction of wind waves (from which) |	WVDIR |	SFC_0 |	degrees true|
-|10/0/5 |	Significant height of wind waves |	WVHGT |	SFC_0 |	m|
-|10/0/6 |	Mean period of wind waves |	WVPER |	SFC_0 |	s|
-|10/0/7 |	Direction of primary swell |	SWDIR |	SFC_0 	|degrees true|
-|10/0/8 |	Significant height of primary swell |	SWELL |	SFC_0 |	m|
-|10/0/9 |	Peak period of primary swell 	|SWPER |	SFC_0 |	s|
+|10/2/0 |	Ice cover |	ICEC |	Sfc 	|fraction|
+|0/2/2 |	U-Component of Wind |	UGRD |	AGL-10 (10m above ground) |	m/s|
+|0/2/3 |	V-Component of Wind |	VGRD |	AGL-10 (10m above ground) |	m/s|
+|10/0/3 |	Significant height of combined wind waves and swell |	HTSGW |	Sfc |	m|
+|10/0/34 |	Peak wave period |	PWPER |	Sfc |	s|
+|10/0/28 |	Mean zero-crossing wave period |	MZWPER |	Sfc |	s|
+|10/0/46 |	Peak wave direction |	PWAVEDIR |	Sfc |	degrees true|
+|10/0/4 |	Direction of wind waves |	WVDIR |	Sfc |	degrees true|
+|10/0/5 |	Significant height of wind waves |	WVHGT |	Sfc |	m|
+|10/0/35 |	Peak period of wind waves |	PPERWW |	Sfc |	s|
+|10/0/53 |	Mean wave direction of first swell partition |	MWDFSWEL |	Sfc 	|degrees true|
+|10/0/47 |	Significant wave height of first swell partition |	SWHFSWEL |	Sfc |	m|
+|10/0/65 |	Peak wave period of first swell partition 	|PWPFSWEL |	Sfc |	s|
+|10/0/54 |	Mean wave direction of second swell partition |	MWDSSWEL |	Sfc	|degrees true|
+|10/0/48 |	Significant wave height of second swell partition |	SWHSSWEL |	Sfc |	m|
+|10/0/66 |	Peak wave period of second swell partition 	|PWPSSWEL |	Sfc |	s|
 
 ### Notes
 
 * u and v components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates.
 
-* Swell parameters refer to the primary swell. At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
+* At each point of the domain, the spectra can be divided between wind sea and a certain number of swells. The two swells that contain the most energy are designated in order as the primary and secondary swell. Wind, sea and swell parameters can be undefined at some grid points, for the former if there is little wind, for the latter if there are only locally generated waves.
 
 ## Support
 

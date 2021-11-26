@@ -35,7 +35,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
         * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](vertical-profiles/readme_vertical-profiles-nwp_fr.md)
     * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
-    * [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
     * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)
     * —
     * Ensembliste :
@@ -61,6 +60,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système régional de prévision déterministe de vague (SRPDV)](nwp_rdwps/readme_rdwps_fr.md)
     * [Système régional de prévision d'ensemble de vague (SRPEV)](nwp_rewps/readme_rewps_fr.md)
     * —
+    * [Système global de prévision déterministe d'onde de tempête (SGPDOT)](nwp_gdsps/readme_gdsps_fr.md)
     * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
     * [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](nwp_resps/readme_resps_fr.md)
     * —

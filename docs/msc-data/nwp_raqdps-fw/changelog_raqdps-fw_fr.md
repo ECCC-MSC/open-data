@@ -6,6 +6,32 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air FireWork (SRPDQA-FW)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour du système régional de prévision déterministe de la qualité de l'air FireWork
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air avec émissions de feux de forêt en temps quasi réel FireWork en remplaçant la version 22 par la version 23.
+
+Résumé des éléments que comporte cette mise à jour:
+
+* Les analyses météorologiques et le modèle pilote proviennent maintenant du [SRPD v8.0.0](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/) plutôt que du SRPD v7.1.0.
+* Nouveaux inventaires d'émission anthropogéniques:
+    * Canada:  De la version 2013 de l'inventaire des émission de polluants atmosprériques (IEPA) à la version projetée 2020.
+    * U.S.:    de la version 2017 de l'inventaire national des émissions à la version projetée 2023.
+    * Mexique: de la version 2008 de l'inventaire national des émissions à la version projetée 2023.
+* Représentation de la sédimentation des particules améliorée.
+* Nouvelles librairies météorologique et chimique 
+    * Météo:  GEM 5.0.2 => GEM 5.1.0
+    * Chimie:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
+* Mise à jour du Système canadien de prévision des émissions des feux de forêt (SCPEFF), de la version 2.06 à la version 4. 
+
+
+Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+
+
+Une note technique pour FireWork avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023fw_f.pdf).
+
+
 ## Le mercredi 1 avril 2020
 
 ### Mise en œuvre du système de prévision FireWork pour la saison d'été 2020

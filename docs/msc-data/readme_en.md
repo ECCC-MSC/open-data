@@ -35,7 +35,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
         * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
     * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
-    * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
     * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)
     * —
     * Ensemble:
@@ -61,6 +60,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * [Regional Deterministic Wave Prediction System (RDWPS)](nwp_rdwps/readme_rdwps_en.md)
     * [Regional Ensemble Wave Prediction System (REWPS)](nwp_rewps/readme_rewps_en.md)
     * —
+    * [Global Deterministic Storm Surge Prediction System (GDSPS)](nwp_gdsps/readme_gdsps_en.md)
     * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
     * [Regional Ensemble Storm Surge Prediction System (RESPS)](nwp_resps/readme_resps_en.md)
     * —  

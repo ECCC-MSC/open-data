@@ -12,7 +12,7 @@ Ce système de prévision utilise le Modèle environnemental global multi-échel
 
 Le niveau de momentum le plus bas se situe à une altitude d'environ 40 m. Ce système est piloté par le domaine continental [SHRPD à 2.5 km](readme_hrdps_fr.md), qui fournit les conditions initiales, latérales et aux limites supérieures des champs atmosphériques.  Les conditions de surface initiales sont fournies par le Système canadien d'assimilation des données à la surface (CaLDAS) à 2.5 km qui est couplé au SHRPD à 2.5 km. Les champs hydrométéorologiques initiaux sont "recyclés" à partir de la prévision de 6 heures de l'intégration à 2.5 km du SHRPD. 
 
-Depuis la mise en œuvre initiale du SHRPD 1 km ouest, le système fonctionne 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 36 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1 km sur 62 niveaux verticaux.
+Depuis la mise en œuvre initiale du SHRPD 1 km ouest, le système fonctionne 2 fois par jour, initialisé à 00 et 12 UTC et est intégré pendant 48 heures. La couverture géographique du système est la plus grande partie de la Colombie-Britannique et de l'Ouest de l'Alberta. Les données sont disponibles à une résolution horizontale de 1 km sur 62 niveaux verticaux.
 
 ## Adresse des données 
 
@@ -27,7 +27,7 @@ Les données sont accessibles à l'adresse suivante :
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12].
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 036] 
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] 
 
 Un historique de 24 heures est conservé dans ce répertoire.
 

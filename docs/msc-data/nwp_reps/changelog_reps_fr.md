@@ -6,9 +6,24 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble (SRPE)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour du Système régional de prévision d'ensemble (SRPE) 4.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son Système régional de prévision d'ensemble (SRPE).
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPE_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_reps-400_e.pdf). Pour une description complète veuillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-400_f.pdf).
+
+
+Notes :
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-400_f.pdf).
+* [Spécifications techniques du SRPE 4.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_4.0.0_f.pdf).
+
+
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SRPE à la version 3.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SRPE à la version 3.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
@@ -24,7 +39,7 @@ Résumé des éléments majeurs que comporte cette mise à jour:
 * Résolution horizontale du système augmenté, passant de 15 à 10 km.
 * Résolution verticale du système augmenté, passant de 48 to 84.
 * Toit du modèle plus haut, passant de 16 hPa à 0.1 hPa.
-* Fréquence des passes amélioré, passant de 2 passes par jours (00 et 12 UTC) à 4 passes par jour (00, 06, 12, et 18 UTC).
+* Fréquence des passes améliorée, passant de 2 passes par jour (00 et 12 UTC) à 4 passes par jour (00, 06, 12, et 18 UTC).
 * Recentrage des membres de l'ensemble autour de l'analyse du SRPD.
 * Chacun des membres est maintenant configuré comme le [SRPD v7.0.0](../nwp_rdps/changelog_rdps_fr.md).
 

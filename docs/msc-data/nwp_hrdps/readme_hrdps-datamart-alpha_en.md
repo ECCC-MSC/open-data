@@ -12,7 +12,7 @@ This prediction system uses the Global Environmental Multi-scale Model (GEM). Th
 
 The lowest momentum level is at an altitude of approximately 40 m. This system is “piloted” by [HRDPS 2.5 km](readme_hrdps_en.md) national domain, which provides initial, lateral and upper boundary conditions for the atmospheric fields.  The initial surface conditions are provided by the 2.5 km Canadian Land Data Assimilation System (CaLDAS) which is coupled to the HRDPS 2.5 km. The initial hydrometeor fields are “recycled” from the 6-h forecast of the HRDPS 2.5 km integration. 
 
-Since the original implementation of the HRDPS 1 km west, the system has been running 2 times per day initialized at 00, and 12 UTC and integrated for 36h. This product contains raw numerical results of the system. The Geographical coverage of the system is the most part of British Columbia and Western Alberta. Data are available at a horizontal resolution of 1 km with 62 vertical levels.
+Since the original implementation of the HRDPS 1 km west, the system has been running 2 times per day initialized at 00, and 12 UTC and integrated for 48h. This product contains raw numerical results of the system. The Geographical coverage of the system is the most part of British Columbia and Western Alberta. Data are available at a horizontal resolution of 1 km with 62 vertical levels.
 
 ## Data location
 
@@ -27,7 +27,7 @@ The data can be accessed at the following URL:
 where:
 
 * __HH__: Model run start, in UTC [00, 12].
-* __hhh__: Forecast hour [000, 001, 002, ..., 036]
+* __hhh__: Forecast hour [000, 001, 002, ..., 048]
 
 A 24-hour history is stored in this directory.
 

@@ -58,7 +58,7 @@ Where:
 * __VAR__ : Variable type included in the file [ETAS, SSHT, SSH]
 * __LVL__ : Vertical level [SFC for the surface]
 * __grille__ : Horizontal grid lat-lon [LatLon]
-* __Resolution__ : 0.033x0.033. Indicating resolution in degreee 0.033x0.033 in latitude and longitude directions
+* __resolution__ : 0.033x0.033. Indicating resolution in degreee 0.033x0.033 in latitude and longitude directions
 * __Phhh__: P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 240]
 * __nc__: constant string indicating the NetCDF format is used
 

@@ -6,6 +6,22 @@
 
 # Chronology of changes to the OPerational Hydrodynamic Simulation system (OPHS)
 
+## Tuesday November 30, 2021
+
+### Upgrade to Version 3.0.0 of the OPerational Hydrodynamic Simulation system (OPHS) at the Canadian Meteorological Centre
+
+Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the OPerational Hydrodynamic Simulation system (OPHS) to v3.0.0.
+
+The modifications to OPHS v3.0.0 compared with the previous operational version are as follows:
+
+* New harmonic boundary conditions
+* Discharge is now from the Deterministic Hydrological Prediction System (DHPS))
+   * Previously was from the Water Cycle Prediction System (WCPS) 
+* Bias-correction of the discharge is removed
+* Surface temperature now comes from the Canadian Land Data Assimilation System (CaLDAS), rather than the Regional Deterministic Precipitation Analysis (RDPA-CaPA)
+
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+
 ## Monday May 13, 2013
 
 ### The Canadian Meteorological Centre (CMC) implements version 1.0.0 of the OPerational Hydrodynamic Simulation (OPHS) system
