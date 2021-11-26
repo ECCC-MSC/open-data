@@ -41,7 +41,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-`{YYYYMMDD}T{HH}Z_MSC_GDWPS_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_GDWPS_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 where :
 
@@ -53,7 +53,7 @@ where :
 * __GDWPS__ : Constant string indicating that data is from the Global Deterministic Wave Prediction System
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
-* __grille__ : Horizontal grid type [LatLon]
+* __Grille__ : Horizontal grid type [LatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.25]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ...048, 051, ..., 117, 120]
 * __grib2__: constant string indicating the GRIB2 format is used
