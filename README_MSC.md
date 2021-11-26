@@ -248,7 +248,7 @@ The following instructions take the current documentation version from `https://
 
 1. Confirm you have installed the prerequisites detailed in section 5.2
 2. In a terminal window, `cd` to the root of your `public-doc` repository fork
-    1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github https://github.com/ECCC-MSC/open-data.git`
+    1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github git@github.com:ECCC-MSC/open-data.git`
 3. Pull the current version of the documentation you want to publish: `git pull upstream master`
 4. Update the changelog:
     1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
