@@ -44,7 +44,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
-* {YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_VAR_LVL_{Grille}(resolution}_PT{hhh}H.grib2
+`{YYYYMMDD}T{HH}Z_MSC_RAQDPS-FW_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 où :
 

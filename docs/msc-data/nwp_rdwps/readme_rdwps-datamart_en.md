@@ -91,7 +91,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature :
 
-{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_VAR_LVL_{grille}{resolution}_PT{hhh}H.grib2
+`{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2`
 
 where :
 

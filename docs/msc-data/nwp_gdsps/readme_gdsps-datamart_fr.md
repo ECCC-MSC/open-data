@@ -40,9 +40,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 
-```
-{YYYYMMDD}T{HH}Z_MSC_GDSPS_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.nc
-```
+`{YYYYMMDD}T{HH}Z_MSC_GDSPS_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.nc`
 
 où :
 
