@@ -91,7 +91,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature :
 
-`{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_{VAR}_{LVL}_{grille}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 where :
 
@@ -104,7 +104,7 @@ where :
 * __DOMAIN__ : Constant string indicating the domain [erie, huron-michigan, ontario, superior, atlantic-nw]
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
-* __grille__ : Horizontal grid type [LatLon, RLatLon]
+* __Grille__ : Horizontal grid type [LatLon, RLatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.009x0.012, 0.045]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]
 * __grib2__: constant string indicating the GRIB2 format is used
