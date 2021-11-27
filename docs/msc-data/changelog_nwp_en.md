@@ -20,7 +20,6 @@ Atmosphere
 * Ensemble:
     * [Global Ensemble Prediction System (GEPS) 8.0.0](nwp_geps/changelog_geps_en.md#wednesday-december-1st-2021)
     * [Regional Ensemble Prediction System (REPS) 4.0.0](nwp_reps/changelog_reps_en.md#wednesday-december-1st-2021)
-    * [Canadian Seasonal to Inter-annual Prediction System (CANSIPS) 2.1.0](nwp_cansips/changelog_cansips_en.md#wednesday-december-1st-2021)
 * Precipitation analysis:
     * [Regional Deterministic Precipitation Analysis system (RDPA) 5.2.0](nwp_rdpa/changelog_rdpa_en.md#wednesday-december-1st-2021)
     * [High Resolution Deterministic Precipitation Analysis System (HRDPA) 5.0.0](nwp_hrdpa/changelog_hrdpa_en.md#wednesday-december-1st-2021)
@@ -54,6 +53,10 @@ Water, ocean and ice
 * [Deterministic Hydrological Prediction System (DHSP) 3.1.0](nwp_dhsp/changelog_dhsp_en.md#wednesday-december-1st-2021)
 * [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#wednesday-december-1st-2021)
 
+
+### November 30, 2021
+
+* [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) 2.1.0](nwp_cansips/changelog_cansips_en.md#tuesday-november-30-2021)
 
 ### June 9, 2021
 
