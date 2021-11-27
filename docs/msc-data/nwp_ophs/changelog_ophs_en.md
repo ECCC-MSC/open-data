@@ -6,11 +6,11 @@
 
 # Chronology of changes to the OPerational Hydrodynamic Simulation system (OPHS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.0 of the OPerational Hydrodynamic Simulation system (OPHS) at the Canadian Meteorological Centre
 
-Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the OPerational Hydrodynamic Simulation system (OPHS) to v3.0.0.
+Effective Tuesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the OPerational Hydrodynamic Simulation system (OPHS) to v3.0.0.
 
 The modifications to OPHS v3.0.0 compared with the previous operational version are as follows:
 

@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système de prévision hydrologique déterministe (SPHD)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er Décembre 2021
 
 ### Mise à jour du Système de prévision hydrologique déterministe (SPHD) 3.1.0 du Centre météorologique canadien
 

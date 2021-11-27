@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Regional Deterministic Air Quality Analysis (RDAQA)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.0.0 of the Regional Deterministic Air Quality Analysis (RDAQA) at the Canadian Meteorological Centre
 
-On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Air Quality Analysis (RDAQA) to version 2.0.0.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Air Quality Analysis (RDAQA) to version 2.0.0.
 
 Significant innovations in this upgrade:
 * Error covariances computed using an ensemble of simulations

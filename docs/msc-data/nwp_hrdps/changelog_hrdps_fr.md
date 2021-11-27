@@ -6,15 +6,15 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er Décembre 2021
 
 ### Mise à jour majeure vers la version 6.0.0 du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe (SHRPD) à la version 6.0.0.
+Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe (SHRPD) à la version 6.0.0.
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-600_f.pdf).
 
-La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-600_f.pdf).
 

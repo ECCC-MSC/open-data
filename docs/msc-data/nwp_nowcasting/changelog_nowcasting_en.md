@@ -6,7 +6,7 @@
 
 # Chronology of changes to the Integrated Nowcasting System (INCS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 #### Upgrade to Version 1.9.0 of the Integrated NowCasting System (INCS) at the Canadian Meteorological Centre
 
@@ -17,7 +17,7 @@ The changes included in this upgrade are summarized as follows :
  * The system improves its cloud models by using the more appropriate GOES 16/17 cloud data
    * System now uses Cloud Fraction (CF)
 
-The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 A technical note with more details on INCS v1.9.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_incs-190_e.pdf).
 

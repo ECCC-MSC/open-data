@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to the Regional Air Quality Deterministic Prediction System FireWork (RAQSPS-FW) 
 
-On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System with Near-Real-Time Wildfire Emissions Firework (RAQDPS-FW) from version 22 to version 23.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System with Near-Real-Time Wildfire Emissions Firework (RAQDPS-FW) from version 22 to version 23.
 
 The changes included in this upgrade are summarized as follows:
 
@@ -26,7 +26,7 @@ The changes included in this upgrade are summarized as follows:
 * Canadian Forest Fire Emission Prediction System (CFFEPS) upgraded from version 2.06 to 4 
 
 
-A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 
 A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023fw_e.pdf).

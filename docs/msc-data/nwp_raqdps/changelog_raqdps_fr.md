@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er Décembre 2021
 
 ### Mise à jour du Système régional de prévision déterministe de la qualité de l'air
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 22 par la version 23.
+Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 22 par la version 23.
 
 Résumé des éléments que comporte cette mise à jour:
 
@@ -24,7 +24,7 @@ Résumé des éléments que comporte cette mise à jour:
     * Météo:  GEM 5.0.2 => GEM 5.1.0
     * Chimie:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
 
-Une copie de la note officielle annonçant ces changements dans le SRPDQA est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+Une copie de la note officielle annonçant ces changements dans le SRPDQA est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Le document des spécifications techniques du SRPDQA version 23 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_f.pdf).
 

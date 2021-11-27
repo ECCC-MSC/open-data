@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Global Deterministic Storm-surge Prediction System (GDSPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Implementation of the Global Deterministic Storm-surge Prediction System (GDSPS) at the Canadian Meteorological Centre (CMC)
 
-On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement the new Global Deterministic Storm-surge Prediction System (GDSPS) with an operational status.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement the new Global Deterministic Storm-surge Prediction System (GDSPS) with an operational status.
 
 A brief summary of the innovations included in this installation can be consulted in this document: [GDSPS_1.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-100_e.pdf). 
 

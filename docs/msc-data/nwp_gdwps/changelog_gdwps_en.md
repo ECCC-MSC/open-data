@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Global Deterministic Wave Prediction System (GDWPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 1.7.0 of the GDWPS.
 
-On Tuesday November 30 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Wave Prediction System (GDWPS) to version 1.7.0.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Wave Prediction System (GDWPS) to version 1.7.0.
 
 The changes included in this upgrade are summarized as follows:
 

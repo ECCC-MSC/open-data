@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Regional Ice and Ocean Prediction System (RIOPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.2.0 of the Regional Ice and Ocean Prediction System (RIOPS) at the Canadian Meteorological Centre
 
-On Tuesday November 30, 2021, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ice and Ocean Prediction System (RIOPS) to version 2.2.0.
+On Wednesday December 1st, 2021, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ice and Ocean Prediction System (RIOPS) to version 2.2.0.
 
 The major changes of RIOPS in this upgrade can be summarized as follow:
 
@@ -22,7 +22,7 @@ The major changes of RIOPS in this upgrade can be summarized as follow:
 * New monitoring package
 
 
-A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 The technical specifications document for RIOPS 2.2.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_e.pdf).
 

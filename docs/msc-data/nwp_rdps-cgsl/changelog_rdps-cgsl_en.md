@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Retirement of the RMPS-GSL/RDPS-CGSL at the Canadian Meteorological Centre (CMC)
 
-Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will retire the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RMPS-GSL/RDPS-CGSL).
+Effective Tuesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will retire the Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RMPS-GSL/RDPS-CGSL).
 
 This system is replaced by the Water Cycle Prediction System [WCPS v3.0.0](../nwp_wcps/changelog_wcps_en.md). 
 

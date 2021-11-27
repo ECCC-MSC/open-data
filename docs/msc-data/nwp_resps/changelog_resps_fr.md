@@ -10,7 +10,7 @@
 
 ### Mise à jours du SRPEOT à la version 1.5.0:
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.5.0 de son Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) et le changement de son statut d'experimental à opérationnel.
+Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.5.0 de son Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) et le changement de son statut d'experimental à opérationnel.
 
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
@@ -19,7 +19,7 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Variables de sortie : niveau d'eau total (SSH) et onde de tempête (ETAS) 
 
 Notes :
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159X).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-150_f.pdf).
 * [Spécifications techniques du SRPEOT 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RESPS_f.pdf).
 

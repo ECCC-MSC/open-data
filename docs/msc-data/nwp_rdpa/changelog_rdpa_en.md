@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to version 5.2.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)
 
-On Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.2.0.
+On Tuesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.2.0.
 
 The changes included in this upgrade are summarized as follows :
 

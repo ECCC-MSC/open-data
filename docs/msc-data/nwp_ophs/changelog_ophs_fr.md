@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système de simulation hydrodynamique opérationnel (SHOP)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er Décembre 2021
 
 ### Mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) 3.0.0 du Centre météorologique canadien
 

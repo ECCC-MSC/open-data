@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface (SCanADS-Sat)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er Décembre 2021
 
 ### Mise à jour du Système canadien d'assimilation de données de surface (SCanADS-Sat) 3.1.0 du Centre météorologique canadien
 
