@@ -17,6 +17,8 @@ Atmosphere
     * [Regional Deterministic Prediction System (RDPS) 8.0.0](nwp_rdps/changelog_rdps_en.md#wednesday-december-1st-2021)
     * [High Resolution Deterministic Prediction System (HRDPS) 6.0.0](nwp_hrdps/changelog_hrdps_en.md#wednesday-december-1st-2021)
     * [Integrated Nowcasting System (INCS) 1.9.0](nwp_nowcasting/changelog_nowcasting_en.md#wednesday-december-1st-2021)
+    * [High Resolution Deterministic Prediction System West (HRDPS-W) 1.3.0](nwp_hrdps/changelog_hrdps-west_en.md#wednesday-december-1st-2021)
+    * [High Resolution Deterministic Prediction System North (HRDPS-North) 1.0.0](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-december-1st-2021)
 * Ensemble:
     * [Global Ensemble Prediction System (GEPS) 8.0.0](nwp_geps/changelog_geps_en.md#wednesday-december-1st-2021)
     * [Regional Ensemble Prediction System (REPS) 4.0.0](nwp_reps/changelog_reps_en.md#wednesday-december-1st-2021)
