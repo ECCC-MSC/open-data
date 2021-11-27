@@ -12,7 +12,8 @@
 
 Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse régionale déterministe de qualité de l’air (ARDQA).
 
-Résumé des innovations majeures: 
+Résumé des innovations majeures:
+
 * Covariances d'erreur provenant d'un ensemble de simulations.
 * Utilisation de la validation croisée pour calibrer les paramètres du système.  
 
