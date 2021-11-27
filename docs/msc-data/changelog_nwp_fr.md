@@ -17,6 +17,8 @@ Atmosphère
     * [Système régional de prévision déterministe (SRPD) 8.0.0](nwp_rdps/changelog_rdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système à haute résolution de prévision déterministe (SHRPD) 6.0.0](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système intégré de prévision immédiate (SIPI) 1.9.0](nwp_nowcasting/changelog_nowcasting_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système à haute résolution de prévision déterministe Ouest (SHRPD-O) 1.3.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système à haute résolution de prévision déterministe Nord (SHRPD-N) 1.0.0](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-1er-decembre-2021)
 * Ensembliste:
     * [Système global de prévision d'ensemble (SGPE) 8.0.0](nwp_geps/changelog_geps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système régional de prévision d'ensemble (SRPE) 4.0.0](nwp_reps/changelog_reps_fr.md#le-mercredi-1er-decembre-2021)
