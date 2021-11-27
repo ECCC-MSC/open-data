@@ -20,7 +20,6 @@ Atmosphère
 * Ensembliste:
     * [Système global de prévision d'ensemble (SGPE) 8.0.0](nwp_geps/changelog_geps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système régional de prévision d'ensemble (SRPE) 4.0.0](nwp_reps/changelog_reps_fr.md#le-mercredi-1er-decembre-2021)
-    * [Système de prévision interannuelle et saisonnière canadien (SPISCan) 2.1.0](nwp_cansips/changelog_cansips_fr.md#le-mercredi-1er-decembre-2021)
 * Analyse de la précipitation:
     * [Analyse régionale déterministe de précipitation (ARDP) 5.2.0](nwp_rdpa/changelog_rdpa_fr.md#le-mercredi-1er-decembre-2021)
     * [Analyse à haute résolution déterministe de précipitation (AHRDP) 5.0.0](nwp_hrdpa/changelog_hrdpa_fr.md#le-mercredi-1er-decembre-2021)
@@ -54,6 +53,9 @@ Eau, océan et glace
 * [Système de prévision hydrologique déterministe (SPHD) 3.1.0](nwp_dhps/changelog_dhps_fr.md#le-mercredi-1er-decembre-2021)
 * [Simulation hydrodynamique opérationnelle (SHOP) 3.0.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-1er-decembre-2021)
 
+### 30 novembre 2021
+
+* [Système de prévision interannuelle et saisonnière canadien (SPISCan) 2.1.0](nwp_cansips/changelog_cansips_fr.md#le-mardi-30-novembre-2021)
 
 ### 9 juin 2021
 
