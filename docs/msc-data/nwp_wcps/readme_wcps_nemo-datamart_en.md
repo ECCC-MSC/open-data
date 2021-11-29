@@ -32,8 +32,6 @@ A 30 day history is kept in this directory.
 
 In the complete domain indicated by the white rectangle, the valide domain, which covers the lakes, is in color.
 
-__IMPORTANT__  :  The grid shifting might be required in order to match the shorelines of the Great Lakes almost exactly, with the suggested values of 0.024E and 0.018N in degrees
-
 | Parameter | Value |
 | ------ | ------ |
 | ni | 1681 |
