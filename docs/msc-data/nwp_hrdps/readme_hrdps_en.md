@@ -33,6 +33,8 @@ The [metadata of the High Resolution Deterministic Prediction System are availab
 
 * [Current version of the High Resolution Deterministic Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_e.pdf)
+* [Regional Surface Data Assimilation System (RSAS) technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps-400_caldas-100_20141118_e.pdf) 
+
 
 ## Changelog
 
