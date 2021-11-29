@@ -55,7 +55,7 @@ Eau, océan et glace
 * [Système de prévision hydrologique déterministe (SPHD) 3.1.0](nwp_dhps/changelog_dhps_fr.md#le-mercredi-1er-decembre-2021)
 * [Simulation hydrodynamique opérationnelle (SHOP) 3.0.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-1er-decembre-2021)
 
-### 30 novembre 2021
+### 1er décembre 2021
 
 * [Système de prévision interannuelle et saisonnière canadien (SPISCan) 2.1.0](nwp_cansips/changelog_cansips_fr.md#le-mardi-30-novembre-2021)
 

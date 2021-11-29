@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) 3.0.0 du Centre météorologique canadien
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) vers la version 3.0.0.
+En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) vers la version 3.0.0.
 
 Les modifications au SHOP v3.0.0 comparativement au précédent système opérationnel sont résumées comme suit:
 
@@ -20,7 +20,7 @@ Les modifications au SHOP v3.0.0 comparativement au précédent système opérat
 * La correction du biais du débit a été retirée
 * La température de surface provient maintenant du Système canadien d'assimilation de données de surface (CaLDAS), plutôt que de l'Analyse régionale déterministe de précipitation (ARDP-CaPA)
 
-La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_xxxxx).
+La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 ## Le lundi 13 mai 2013
 

@@ -20,7 +20,7 @@ Les modifications incluses dans cette mise à jour sont résumées comme suit :
 * Mise à jour de masques statiques de contrôle de qualité pour 8 radars
 * Agrandissement de la grille afin de couvrir le domaine du [RDPS](../nwp_rdps)
 
-La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_xxxxx).
+La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Une note technique avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_f.pdf).
 

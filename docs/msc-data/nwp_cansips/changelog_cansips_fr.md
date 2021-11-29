@@ -10,7 +10,7 @@
 
 ### Mise à jour vers la version 2.1 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 2.1.
+En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 2.1.
 
 Les modifications majeures du SPISCan dans cette mise à jour sont: 
 

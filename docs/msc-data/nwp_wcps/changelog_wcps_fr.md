@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système de prévision du cycle de l'eau (SPCE) 3.0.0 du Centre météorologique canadien
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision du cycle de l'eau (SPCE) vers la version 3.0.0.
+En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision du cycle de l'eau (SPCE) vers la version 3.0.0.
 
 Les modifications au SPCE v3.0.0 comparativement au précédent système opérationnel sont résumées comme suit:
 
@@ -27,7 +27,7 @@ Les modifications au SPCE v3.0.0 comparativement au précédent système opérat
    * Implantation du modèle “Dynamically Zoned Target Release (DZTR)” pour représenter les règles de gestion des réservoirs régulés individuels
    * Un nouveau solveur numérique dans WATROUTE
 
-La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_xxxxx).
+La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPCE 3.0.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.0.0_f.pdf).
 

@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)
 
-## Le mardi 30 novembre, 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jours du SRPEOT à la version 1.5.0:
 
