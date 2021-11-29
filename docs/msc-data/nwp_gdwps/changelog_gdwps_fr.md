@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe des vagues (SGPDV)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système global de prévision déterministe des vagues (SGPDV) 1.7.0 du Centre météorologique canadien (CMC)
 
-Le mardi 30 novembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système global de prévision déterministe (SGPDV).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système global de prévision déterministe (SGPDV).
 
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
@@ -21,7 +21,7 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Utilisation l'entrée de vent horaire après 144h, nouvellement disponible avec SGPD v8.0.0  
 
 Notes :
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXXX).
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_f.pdf).
 * [Spécifications techniques du SGPDV 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_f.pdf).
 

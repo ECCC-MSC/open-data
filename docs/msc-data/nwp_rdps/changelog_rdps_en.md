@@ -6,7 +6,7 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 #### Upgrade to Version 8.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
@@ -14,7 +14,7 @@ On Tuesday 30th 2021, starting with the 1200 UTC run, the Canadian Meteorologica
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-800_e.pdf).
 
-The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 A technical note with more details on RDPS v8.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-800_e.pdf).
 

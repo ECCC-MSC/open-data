@@ -6,14 +6,14 @@
 
 # Chronology of changes to the Canadian Land Data Assimilation System (CaLDAS-Sat)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.3 of the Canadian Land Data Assimilation System (CaLDAS-Sat) at the Canadian Meteorological Centre
 
-Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System (CaLDAS-Sat) to v3.0.3.
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System (CaLDAS-Sat) to v3.0.3.
 
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 For more information, please consult the technical specifications document for HRCaLDAS-Sat v3.0.3 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CaLDAS-Sat_3.0.3_e.pdf).
 

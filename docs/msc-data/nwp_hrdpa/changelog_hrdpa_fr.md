@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP)
 
-## Le mardi 30 novembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour vers la version 5.1.0 du Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP) au Centre météorologique canadien
 
-Le mardi 30 novembre 2021, le Centre météorologique canadien (CMC) mettra à jour son Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP (2.5km)) à la version 5.1.0.
+Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP (2.5km)) à la version 5.1.0.
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 
@@ -21,7 +21,7 @@ Les modifications incluses dans cette mise à jour sont résumées comme suit :
 * Mise à jour de masques statiques de contrôle de qualité pour 8 radars
 * Utilisation des champs de nuage des satellites GOES 16/17 pour le nettoyage des QPE radars
 
-La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_xxxxx).
+La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Une note technique avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_hrdpa-510_f.pdf).
 

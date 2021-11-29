@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Water Cycle Prediction System (WCPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
 
-Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v3.0.0.
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v3.0.0.
 
 The modifications to WCPS v3.0.0 compared with the previous operational version are as follows:
 
@@ -27,7 +27,7 @@ The modifications to WCPS v3.0.0 compared with the previous operational version 
    * Implementation of the Dynamically Zoned Target Release (DZTR) model to represent management rules of individual regulated reservoirs 
    * A new numerical solver in WATROUTE
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 For more information, please consult the technical specifications document for WCPS v3.0.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.0.0_e.pdf).
 

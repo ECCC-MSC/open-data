@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système Régional de Prévision Océan-Glace (SRPOG)
 
-## Le mardi 30 novembre, 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système régional de prévision océan-glace (SRPOG) 2.2.0 du Centre météorologique canadien (CMC)
 
-Le mardi 30 novembre, 2021, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.2.0 de son Système régional de prévision océan-glace (SRPOG).
+Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.2.0 de son Système régional de prévision océan-glace (SRPOG).
 
 Les changements majeurs de cette mise à jour se résument ainsi:
 
@@ -22,7 +22,7 @@ Les changements majeurs de cette mise à jour se résument ainsi:
 * Ajout d’un module de monitoring
 
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_XXXX).
+Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Le document des spécifications techniques du SRPOG 2.2.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf).
 

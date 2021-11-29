@@ -10,11 +10,11 @@
 
 ### Fin de service du Système de prévision couplé atmosphère-océan-glace du Golfe du St-Laurent au Centre météorologique canadien
 
-À compter du mardi 30 novembre 2021, le Système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent sera mis hors service.
+À compter du mardi 1er décembre 2021, le Système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent sera mis hors service.
 
 Ce système est remplacé par le Système de prévision du cycle de l'eau [SPCE v3.0.0](../nwp_wcps/changelog_wcps_fr.md). 
 
-La note officielle annoncant ces changements est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+La note officielle annoncant ces changements est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 ## Le mardi 21 janvier 2020
 

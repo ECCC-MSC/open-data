@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) 
 
-On Tuesday November 30, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 22 to version 23.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 22 to version 23.
 
 The changes included in this upgrade are summarized as follows:
 
@@ -25,7 +25,7 @@ The changes included in this upgrade are summarized as follows:
     * Chemistry:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
 
 
-A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXXX).
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 The technical specifications document for RAQDPS 23 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_e.pdf).
 

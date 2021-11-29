@@ -6,14 +6,14 @@
 
 # Chronology of changes to the High Resolution Ensemble Precipitation Analysis (HREPA)
 
-## Tuesday November 30, 2021
+## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.0.0 of the High Resolution Ensemble Precipitation Analysis (HREPA) at the Canadian Meteorological Centre
 
-Effective Tuesday, November 30, 2021, the Canadian Meteorological Centre (CMC) will update the High Resolution Ensemble Precipitation Analysis (HREPA) to v1.2.0.
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the High Resolution Ensemble Precipitation Analysis (HREPA) to v1.2.0.
 
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 For more information, please consult the technical specifications document for HREPA v1.2.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HREPA_1.2.0_e.pdf).
 
