@@ -14,7 +14,7 @@ Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC
 
 This system is replaced by the Water Cycle Prediction System [WCPS v3.0.0](../nwp_wcps/changelog_wcps_en.md). 
 
-The official note announcing these changes is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing these changes is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 ## Tuesday January 21, 2020
 

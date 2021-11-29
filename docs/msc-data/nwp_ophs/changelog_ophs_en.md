@@ -20,7 +20,7 @@ The modifications to OPHS v3.0.0 compared with the previous operational version 
 * Bias-correction of the discharge is removed
 * Surface temperature now comes from the Canadian Land Data Assimilation System (CaLDAS), rather than the Regional Deterministic Precipitation Analysis (RDPA-CaPA)
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 ## Monday May 13, 2013
 

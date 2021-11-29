@@ -20,7 +20,7 @@ The changes included in this upgrade are summarized as follows :
 * Updates to the static quality control masks for 8 radars
 * Enlargement of the grid to cover the same domain as the [RDPS](../nwp_rdps)
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 A technical note with more details on these changes is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_e.pdf).
 

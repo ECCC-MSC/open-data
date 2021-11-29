@@ -21,7 +21,7 @@ The changes included in this upgrade are summarized as follows :
 * Updates to the static quality control masks for 8 radars
 * Use of the cloud fields derived from GOES 16/17 satellites for the filtering of radar derived QPE
 
-The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).
+The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 A technical note with more details on these changes is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_hrdpa-510_e.pdf).
 
