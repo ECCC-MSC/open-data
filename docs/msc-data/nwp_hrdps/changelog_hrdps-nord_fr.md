@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-N)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour vers la version 1.0.0 du Système à haute résolution de prévision déterministe nord (SHRPD-N) au Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) retirera le Système canadien de prévision de l'Artique ([SCPA](../nwp_caps/changelog_caps_fr#le-mercredi-1er-decembre-2021)) qui sera remplacé par le Système à haute résolution de prévision déterministe nord (SHRPD-N) version 1.0.0.
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) retirera le Système canadien de prévision de l'Artique ([SCPA](../nwp_caps/changelog_caps_fr#le-mercredi-1er-decembre-2021)) qui sera remplacé par le Système à haute résolution de prévision déterministe nord (SHRPD-N) version 1.0.0.
 
 Voici un résumé des innovations: 
 * Retrait du couplage océan-glace (le SCPA était couplé).

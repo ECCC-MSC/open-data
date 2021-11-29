@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés au Système canadien de prévision de l'Artique (SCPA)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Fin de service du SCPA, remplacé par le SHRPD Nord. 
 

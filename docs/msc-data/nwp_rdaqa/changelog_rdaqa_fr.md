@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés à l'Analyse régionale déterministe de qualité de l’air (ARDQA) 
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour de l'Analyse régionale déterministe de qualité de l’air (ARDQA) version 2.0.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse régionale déterministe de qualité de l’air (ARDQA).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse régionale déterministe de qualité de l’air (ARDQA).
 
 Résumé des innovations majeures:
 

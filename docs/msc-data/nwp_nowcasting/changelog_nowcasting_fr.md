@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système intégré de prévisions immédiates (SIPI) 1.9.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système intégré de prévisions immédiates (SIPI).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système intégré de prévisions immédiates (SIPI).
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 

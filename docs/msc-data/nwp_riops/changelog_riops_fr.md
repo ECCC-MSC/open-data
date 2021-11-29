@@ -22,7 +22,7 @@ Les changements majeurs de cette mise à jour se résument ainsi:
 * Ajout d’un module de monitoring
 
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_XXXX).
+Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Le document des spécifications techniques du SRPOG 2.2.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf).
 

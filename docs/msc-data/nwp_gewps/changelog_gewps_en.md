@@ -20,7 +20,7 @@ The changes included in this upgrade are summarized as follows:
 
 Associated Notes:
 
-* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-110_e.pdf).
 * [Technical specifications of GEWPS 1.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEWPS_1.1.0_e.pdf).
 

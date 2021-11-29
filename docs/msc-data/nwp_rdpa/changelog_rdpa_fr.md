@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour vers la version 5.2.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien
 
-Le mercredi 1er Décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP (10km)) à la version 5.2.0.
+Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP (10km)) à la version 5.2.0.
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 

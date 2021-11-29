@@ -6,7 +6,7 @@
 
 # Chronologie des changements apportés à l'Analyse à haute résolution ensembliste de précipitation (AHREP)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) 1.2.0 du Centre météorologique canadien
 

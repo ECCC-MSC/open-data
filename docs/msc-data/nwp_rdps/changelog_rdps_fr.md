@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système régional de prévision déterministe (SRPD) 8.0.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système régional de prévision déterministe (SRPD).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système régional de prévision déterministe (SRPD).
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-800_f.pdf).
 

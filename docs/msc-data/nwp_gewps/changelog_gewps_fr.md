@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble de vague (SGPEV)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système global de prévision d'ensemble de vague (SGPEV) 1.1.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.1.0 de son Système global de prévision d'ensemble de vague (SGPEV) et le changement de son statut d'expérimental à opérationnel.
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.1.0 de son Système global de prévision d'ensemble de vague (SGPEV) et le changement de son statut d'expérimental à opérationnel.
 
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 

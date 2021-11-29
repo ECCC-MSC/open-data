@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour vers la version 5.1.0 du Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP) au Centre météorologique canadien
 
-Le mercredi 1er Décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP (2.5km)) à la version 5.1.0.
+Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP (2.5km)) à la version 5.1.0.
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 

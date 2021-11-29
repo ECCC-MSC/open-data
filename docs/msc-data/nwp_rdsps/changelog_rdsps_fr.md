@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe d’onde de tempête (SRPDOT)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Remplacement du Système régional de prévision déterministe d’onde de tempête (SRPDOT) du Centre météorologique canadien (CMC)
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va remplacer le Système régional de prévision déterministe d'onde de tempête (SRPDOT) par le nouveau Systeme global de prévision déterministe d'onde de tempête (SGPDOT).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va remplacer le Système régional de prévision déterministe d'onde de tempête (SRPDOT) par le nouveau Systeme global de prévision déterministe d'onde de tempête (SGPDOT).
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).

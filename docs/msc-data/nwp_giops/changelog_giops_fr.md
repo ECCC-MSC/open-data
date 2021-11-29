@@ -21,7 +21,7 @@ Les changements majeurs de cette mise à jour se résument ainsi:
 * Introduction d’un nouveau système de monitoring.
 
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/30/NOCN03_CWAO_XXXX).
+Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 Le document des spécifications techniques du SGPOG 3.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.3.0_f.pdf).
 

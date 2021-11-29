@@ -16,7 +16,7 @@ A brief summary of the innovations included in this installation can be consulte
 
 Associated Notes:
 
-* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_XXXX).
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdsps-100_e.pdf).
 * [Technical specifications of GDSPS 1.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDSPS_1.0.0_e.pdf).
 

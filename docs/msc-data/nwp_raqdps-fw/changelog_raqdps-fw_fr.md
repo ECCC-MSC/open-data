@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air FireWork (SRPDQA-FW)
 
-## Le mercredi 1er Décembre 2021
+## Le mercredi 1er décembre 2021
 
 ### Mise à jour du système régional de prévision déterministe de la qualité de l'air FireWork
 
-Le mercredi 1er Décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air avec émissions de feux de forêt en temps quasi réel FireWork en remplaçant la version 22 par la version 23.
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air avec émissions de feux de forêt en temps quasi réel FireWork en remplaçant la version 22 par la version 23.
 
 Résumé des éléments que comporte cette mise à jour:
 
