@@ -21,7 +21,7 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Utilisation l'entrée de vent horaire après 144h, nouvellement disponible avec SGPD v8.0.0  
 
 Notes :
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159X).
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_f.pdf).
 * [Spécifications techniques du SGPDV 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_f.pdf).
 

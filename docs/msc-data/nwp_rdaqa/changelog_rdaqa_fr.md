@@ -19,6 +19,6 @@ Résumé des innovations majeures:
 
 
 Notes :
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159X).
+* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdaqa-200_f.pdf).
 * [Spécifications techniques de l'ARDQA 2.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDAQA_2.0.0_f.pdf).

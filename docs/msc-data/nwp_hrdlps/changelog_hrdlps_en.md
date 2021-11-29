@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 2.0.0 of the High Resolution Deterministic Land Surface Prediction System (HRDLPS) at the Canadian Meteorological Centre
 
-Effective Tuesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the High Resolution Deterministic Land Surface Prediction System (HRDLPS) to v2.0.0.
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the High Resolution Deterministic Land Surface Prediction System (HRDLPS) to v2.0.0.
 
 
 The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/29/NOCN03_CWAO_xxxx).

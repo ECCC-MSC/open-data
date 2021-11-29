@@ -12,7 +12,7 @@
 
 Après près de 4 années de prévisions couplées haute résolution sur l'arctique, le SCPA sera mis hors service le mardi 30 novembre 2021.  Certains produits du SCPA seront générés par le SHRPD Nord.
 
-La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159X).
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
 ## Le mardi 21 janvier 2020
 

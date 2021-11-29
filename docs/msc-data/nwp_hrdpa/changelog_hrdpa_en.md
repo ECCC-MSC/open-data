@@ -10,7 +10,7 @@
 
 ### Upgrade to version 5.1.0 of the High Resolution Deterministic Precipitation Analysis System (CaPA-HRDPA) at the Canadian Meteorological Centre (CMC)
 
-On Tuesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will upgrade its High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA (2.5km)) to version 5.1.0.
+On Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will upgrade its High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA (2.5km)) to version 5.1.0.
 
 The changes included in this upgrade are summarized as follows :
 
