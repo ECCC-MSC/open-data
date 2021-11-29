@@ -32,9 +32,6 @@ Un historique de 30 jours de prévision est stocké dans ce répertoire.
 
 Dans le domaine complet indiqué en blanc, le domaine de données valide, qui couvre les lacs, est en couleur. 
 
-__IMPORTANT__  : Un décalage de la grille pourrait être nécessaire afin de correspondre presque exactement aux rives des Grands Lacs, avec les valeurs suggérées de 0.024E et 0.018N en degrés.
-
-
 | Paramètre | Valeur |
 | ------ | ------ |
 | ni | 1681 |
