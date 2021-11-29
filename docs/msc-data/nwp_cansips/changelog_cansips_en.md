@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 
-## Wednesday December 1st, 2021
+## Tuesday November 30, 2021
 
 ### Upgrade to Version 2.1 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre
 
-On Wednesday December 1st, 2021, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 2.1.
+On Tuesday November 30, 2021, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 2.1.
 
 The major changes of CanSIPS in this upgrade can be summarized as follow:
 
