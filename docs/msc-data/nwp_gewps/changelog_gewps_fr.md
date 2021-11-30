@@ -15,7 +15,7 @@ Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre m�
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
 * Utilisation du SGPE v7.0.0
-* Utilisation de WaveWatch III qui inclut une correction de bogue dû a une période de pointe négative
+* Utilisation de la version 7 de WaveWatch III qui inclut une correction de bogue dû a une période de pointe négative
 * Utilisation à l'entrée de vent horaire après 168h, nouvellement disponible avec le SGPE v7.0.0
 
 Notes :
