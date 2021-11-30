@@ -10,7 +10,7 @@
 
 #### Upgrade to Version 1.9.0 of the Integrated NowCasting System (INCS) at the Canadian Meteorological Centre
 
-On Tuesday 30th 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Integrated NowCasting System (INCS) to version 1.9.0.
+On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Integrated NowCasting System (INCS) to version 1.9.0.
 
 The changes included in this upgrade are summarized as follows :
 

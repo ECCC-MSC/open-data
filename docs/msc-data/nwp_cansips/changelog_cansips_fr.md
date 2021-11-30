@@ -17,7 +17,7 @@ Les modifications majeures du SPISCan dans cette mise à jour sont:
 * Mise à jour du modèle GEM-NEMO vers la version 5.1.
 * Les modèles intrants de SPISCan ont été mis à jour: SGPD 8.0.0, SGPE 7.0.0 et SGPOG 3.3.0.
 
-Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2.1_20211130_e.pdf).
+Une note technique avec plus de détails sur ces changements [est disponible sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-210_f.pdf).
 
 
 ## Le mardi 21 janvier 2020

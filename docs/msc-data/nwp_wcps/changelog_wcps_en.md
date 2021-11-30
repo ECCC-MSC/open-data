@@ -17,15 +17,15 @@ The modifications to WCPS v3.0.0 compared with the previous operational version 
 * [RDPS v8.0.0](../nwp_rdps/changelog_rdps_en.md) replaces v7.1.0 as the pilot system
 * New larger domain covering the Gulf of St. Lawrence (as well as the Great Lakes)
 * For the pseudo-analysis/forecast components:
-   * Increased resolution from 2km/5km (interior/coastlines) to 1km/2km
-   * Ice loading over Great Lakes
-   * Atmospheric pressure gradient forcing (inverse barometric effect for storm-surges)
+    * Increased resolution from 2km/5km (interior/coastlines) to 1km/2km
+    * Ice loading over Great Lakes
+    * Atmospheric pressure gradient forcing (inverse barometric effect for storm-surges)
 * For the hydrological component: 
-   * New observation stations of river discharge: Quebec, United States Geologicial Survey (USGS) 
-   * Upstream propagation of information derived from observations of river discharge 
-   * New climatological fields of drainage
-   * Implementation of the Dynamically Zoned Target Release (DZTR) model to represent management rules of individual regulated reservoirs 
-   * A new numerical solver in WATROUTE
+    * New observation stations of river discharge: Quebec, United States Geologicial Survey (USGS) 
+    * Upstream propagation of information derived from observations of river discharge 
+    * New climatological fields of drainage
+    * Implementation of the Dynamically Zoned Target Release (DZTR) model to represent management rules of individual regulated reservoirs 
+    * A new numerical solver in WATROUTE
 
 The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 

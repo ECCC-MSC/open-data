@@ -14,7 +14,7 @@ On Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) of th
 
 The changes included in this upgrade are summarized as follows :
 
-* [RDPS v8.0.0](../nwp_hrdps/changelog_rdps_en.md) now provides the trial field instead of RDPS v7.1.0
+* [RDPS v8.0.0](../nwp_rdps/changelog_rdps_en.md) now provides the trial field instead of RDPS v7.1.0
 * Addition of 14 Canadian S-band radars
 * Assimilation of observations from the Ontario Ministry of Natural Resources (MNR) network
 * Updates to the static quality control masks for 8 radars

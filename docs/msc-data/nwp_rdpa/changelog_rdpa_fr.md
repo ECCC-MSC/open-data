@@ -14,7 +14,7 @@ Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) mettra
 
 Les modifications incluses dans cette mise à jour sont résumées comme suit :
 
-* CaPA-ARDP construit maintenant ses champs d'essai à partir du [SRPD v8.0.0](../nwp_hrdps/changelog_rdps_fr.md)
+* CaPA-ARDP construit maintenant ses champs d'essai à partir du [SRPD v8.0.0](../nwp_rdps/changelog_rdps_fr.md)
 * Ajout de 14 radars canadiens de bande S
 * Assimilation des stations du réseau du Ministère des ressources naturelles de l'Ontario (MNR)
 * Mise à jour de masques statiques de contrôle de qualité pour 8 radars
