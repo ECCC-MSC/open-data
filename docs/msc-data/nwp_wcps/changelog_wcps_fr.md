@@ -10,22 +10,22 @@
 
 ### Mise à jour du Système de prévision du cycle de l'eau (SPCE) 3.0.0 du Centre météorologique canadien
 
-En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision du cycle de l'eau (SPCE) vers la version 3.0.0.
+En date du mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision du cycle de l'eau (SPCE) vers la version 3.0.0.
 
 Les modifications au SPCE v3.0.0 comparativement au précédent système opérationnel sont résumées comme suit:
 
 * Le [SRPD v8.0.0](../nwp_rdps/changelog_rdps_fr.md) remplace le SRPD v7.1.0 comme modèle pilote
 * Nouveau domaine plus grand couvrant le Golfe du Saint-Laurent (ainsi que les Grands Lacs)
 * Pour les composantes pseudo-analyse/prévision :
-   * Résolution améliorée de 2km/5km (intérieur/côtier) à 1km/2km
-   * Charge de glace sur les Grands Lacs
-   * Forçage du gradient de pression atmosphérique (effet du baromètre inverse pour les ondes de tempête)
+    * Résolution améliorée de 2km/5km (intérieur/côtier) à 1km/2km
+    * Charge de glace sur les Grands Lacs
+    * Forçage du gradient de pression atmosphérique (effet du baromètre inverse pour les ondes de tempête)
 * Pour la composante hydrologique :
-   * Nouvelles stations d’observation de débit de rivière: Québec, United States Geologicial Survey (USGS)
-   * Propagation en amont de l’information dérivée des observations de débit des rivières
-   * Nouveaux champs climatologiques de drainage
-   * Implantation du modèle “Dynamically Zoned Target Release (DZTR)” pour représenter les règles de gestion des réservoirs régulés individuels
-   * Un nouveau solveur numérique dans WATROUTE
+    * Nouvelles stations d’observation de débit de rivière: Québec, United States Geologicial Survey (USGS)
+    * Propagation en amont de l’information dérivée des observations de débit des rivières
+    * Nouveaux champs climatologiques de drainage
+    * Implantation du modèle “Dynamically Zoned Target Release (DZTR)” pour représenter les règles de gestion des réservoirs régulés individuels
+    * Un nouveau solveur numérique dans WATROUTE
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 

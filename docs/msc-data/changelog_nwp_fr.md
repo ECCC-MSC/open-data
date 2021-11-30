@@ -16,9 +16,10 @@ Atmosphère
     * [Système global de prévision déterministe (SGPD) 8.0.0](nwp_gdps/changelog_gdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système régional de prévision déterministe (SRPD) 8.0.0](nwp_rdps/changelog_rdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système à haute résolution de prévision déterministe (SHRPD) 6.0.0](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système à haute résolution de prévision déterministe ouest (SHRPD-O) 1.3.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système à haute résolution de prévision déterministe nord (SHRPD-N) 1.0.0](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système canadien de prévision de l'Arctique (SCPA) expérimental remplacé par le SHRPD-Nord](nwp_caps/changelog_caps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système intégré de prévision immédiate (SIPI) 1.9.0](nwp_nowcasting/changelog_nowcasting_fr.md#le-mercredi-1er-decembre-2021)
-    * [Système à haute résolution de prévision déterministe Ouest (SHRPD-O) 1.3.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mercredi-1er-decembre-2021)
-    * [Système à haute résolution de prévision déterministe Nord (SHRPD-N) 1.0.0](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-1er-decembre-2021)
 * Ensembliste:
     * [Système global de prévision d'ensemble (SGPE) 8.0.0](nwp_geps/changelog_geps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système régional de prévision d'ensemble (SRPE) 4.0.0](nwp_reps/changelog_reps_fr.md#le-mercredi-1er-decembre-2021)
@@ -48,9 +49,8 @@ Eau, océan et glace
 * 
 * [Système de prévision du cycle de l'eau (SPCE) 3.0.0](nwp_wcps/changelog_wcps_fr.md#le-mercredi-1er-decembre-2021)
 * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL), remplacé par SCPE](nwp_rdps-cgsl/changelog_rdps-cgsl_fr.md#le-mercredi-1er-decembre-2021)
-* [Système canadien de prévision de l'Arctique (SCPA) expérimental remplacé par le SHRPD-Nord](nwp_caps/changelog_caps_fr.md#le-mercredi-1er-decembre-2021)
 * 
-* [Système canadien d'assimilation de données de surface (SNPSR) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_fr.md#le-mercredi-1er-decembre-2021)
+* [Système canadien d'assimilation de données de surface avec observations satellitaires (SCanADS-Sat) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_fr.md#le-mercredi-1er-decembre-2021)
 * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) 2.0.0](nwp_hrdlps/changelog_hrdlps_fr.md#le-mercredi-1er-decembre-2021)
 * [Système de prévision hydrologique déterministe (SPHD) 3.1.0](nwp_dhps/changelog_dhps_fr.md#le-mercredi-1er-decembre-2021)
 * [Simulation hydrodynamique opérationnelle (SHOP) 3.0.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-1er-decembre-2021)
