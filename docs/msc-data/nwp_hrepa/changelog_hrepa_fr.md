@@ -10,7 +10,7 @@
 
 ### Mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) 1.2.0 du Centre météorologique canadien
 
-En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) vers la version 1.2.0.
+En date du mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) vers la version 1.2.0.
 
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).

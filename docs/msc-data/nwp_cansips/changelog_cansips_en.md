@@ -18,7 +18,7 @@ The major changes of CanSIPS in this upgrade can be summarized as follow:
 * The CanSIPS inputs now comming from upgraded systems GDPS 8.0.0, GEPS 7.0.0 and GIOPS 3.3.0.
 
 
-A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2.1_20211130_e.pdf).
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-210_e.pdf).
 
 
 ## Tuesday January 21, 2020

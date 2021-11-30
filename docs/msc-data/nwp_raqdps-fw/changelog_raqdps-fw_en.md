@@ -28,6 +28,7 @@ The changes included in this upgrade are summarized as follows:
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
+The technical specifications document for RAQSPS-FW v23 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_e.pdf).
 
 A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023fw_e.pdf).
 
@@ -41,6 +42,9 @@ On Wednesday April 1st, 2020, starting with the 00 UTC run, the Canadian Meteoro
 For further information, please consult the official note announcing the implementation of FireWork for Summer 2020 [at this link](https://dd.meteo.gc.ca/doc/genots/2020/04/03/NOCN03_CWAO_031510___44016).
 
 A technical note with more details is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pdf).
+
+
+
 
 ## Tuesday January 21, 2020
 

@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système de prévision hydrologique déterministe (SPHD) 3.1.0 du Centre météorologique canadien
 
-En date du mardi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision hydrologique déterministe (SPHD) vers la version 3.1.0.
+En date du mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision hydrologique déterministe (SPHD) vers la version 3.1.0.
 
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).

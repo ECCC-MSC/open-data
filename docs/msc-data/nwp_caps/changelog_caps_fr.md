@@ -4,13 +4,13 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPA](readme_caps_fr.md) > Changements au SCPA
 
-# Chronologie des changements apportés au Système canadien de prévision de l'Artique (SCPA)
+# Chronologie des changements apportés au Système canadien de prévision de l'Arctique (SCPA)
 
 ## Le mercredi 1er décembre 2021
 
 ### Fin de service du SCPA, remplacé par le SHRPD Nord. 
 
-Après près de 4 années de prévisions couplées haute résolution sur l'arctique, le SCPA sera mis hors service le mardi 1er décembre 2021.  Certains produits du SCPA seront générés par le SHRPD Nord.
+Après près de 4 années de prévisions couplées haute résolution sur l'Arctique, le SCPA sera mis hors service le mardi 1er décembre 2021.  Certains produits du SCPA seront générés par le SHRPD Nord.
 
 La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
@@ -22,9 +22,9 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le jeudi 28 juin 2018
 
-### Mise à jour majeure du Système de prévision de l'Artique SCPA version 1.1.0 (mode expérimental) du Centre météorologique canadien (CMC)
+### Mise à jour majeure du Système de prévision de l'Arctique SCPA version 1.1.0 (mode expérimental) du Centre météorologique canadien (CMC)
 
-Le jeudi 28 juin 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour majeure de son système de prévision de l'artique SCPA (mode expérimental).
+Le jeudi 28 juin 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour majeure de son système de prévision de l'Arctique SCPA (mode expérimental).
 
 Résumé des éléments majeurs que comporte cette mise à jour :
 

@@ -1,4 +1,4 @@
-[En français](changelog_wcps_fr.md)
+[En français](changelog_hrdlps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

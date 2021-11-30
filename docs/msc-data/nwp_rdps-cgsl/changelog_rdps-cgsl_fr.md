@@ -2,15 +2,15 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD-CGSL](readme_rdps-cgsl_fr.md) > Changements au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD-CGSL](readme_rdps-cgsl_fr.md) > Changements au Système de prévision couplé atmosphère-océan-glace du Golfe Saint-Laurent
 
-# Chronologie des changements apportés au Système de prévision couplé atmosphère-océan-glace du golfe St-Laurent (SRPD-CGSL)
+# Chronologie des changements apportés au Système de prévision couplé atmosphère-océan-glace du Golfe Saint-Laurent (SRPD-CGSL)
 
-## Le mardi 30 november 2021
+## Le mercredi 1er décembre 2021
 
-### Fin de service du Système de prévision couplé atmosphère-océan-glace du Golfe du St-Laurent au Centre météorologique canadien
+### Fin de service du Système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent au Centre météorologique canadien
 
-À compter du mardi 1er décembre 2021, le Système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent sera mis hors service.
+À compter du mercredi 1er décembre 2021, le Système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent sera mis hors service.
 
 Ce système est remplacé par le Système de prévision du cycle de l'eau [SPCE v3.0.0](../nwp_wcps/changelog_wcps_fr.md). 
 
@@ -24,9 +24,9 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mardi 18 novembre 2014
 
-### Mise à jour majeure du système de prévision couplé atmosphère-océan-glace du Golfe du St-Laurent du Centre meteorologique canadien
+### Mise à jour majeure du système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent du Centre meteorologique canadien
 
-Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle du système régional de prévision marine du Golfe du Saint-Laurent (SRPM-GSL) et du système régional de prévision déterministe - couplé au golfe du Saint-Laurent (SRPD-CGSL) associé. La version du SRPM-GSL sera 6.0.0 tandis que celle du SRPD-CGSL sera 3.0.0. Ci-dessous les changements les plus importants :
+Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle du système régional de prévision marine du Golfe du Saint-Laurent (SRPM-GSL) et du système régional de prévision déterministe - couplé au Golfe du Saint-Laurent (SRPD-CGSL) associé. La version du SRPM-GSL sera 6.0.0 tandis que celle du SRPD-CGSL sera 3.0.0. Ci-dessous les changements les plus importants :
 
 * La fréquence des analyses et des prévisions sera augmentée d'une seule passe par jour (0000UTC) à 4 passes par jour : 0000, 0006, 012 et 0018 UTC
 * Le modèle opérationnel d’océan passera du modèle d’océan MoGSL (de Saucier et al.) au modèle NEMO (Nucleus fro European Modeling of the Ocean)
@@ -42,7 +42,7 @@ Une note technique à ce sujet est disponible pour les deux composantes :
 
 ## Le mercredi, 3 octobre 2012
 
-### Mise à jour du système de prévision couplé atmosphère-océan-glace du Golfe du St-Laurent au Centre meteorologique canadien
+### Mise à jour du système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent au Centre meteorologique canadien
 
-Le mercredi 3 octobre 2012, débutant avec la passe de 00Z le Centre météorologique canadien (CMC) effectuera une mise à jour du système de prévision couplé atmosphère-océan-glace du Golfe du St-Laurent afin d'utiliser une grille de 10km afin de suivre les changements de la grille associées au SRPD 3.0.0 qui utilise maintenant une grille à 10km.
+Le mercredi 3 octobre 2012, débutant avec la passe de 00Z le Centre météorologique canadien (CMC) effectuera une mise à jour du système de prévision couplé atmosphère-océan-glace du Golfe du Saint-Laurent afin d'utiliser une grille de 10km afin de suivre les changements de la grille associées au SRPD 3.0.0 qui utilise maintenant une grille à 10km.
 

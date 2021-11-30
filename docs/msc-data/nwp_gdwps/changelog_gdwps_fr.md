@@ -4,23 +4,24 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPDV](readme_gdwps_fr.md) > Changements au SGPDV
 
-# Chronologie des changements apportés au Système global de prévision déterministe des vagues (SGPDV)
+# Chronologie des changements apportés au Système global de prévision déterministe de vague (SGPDV)
 
 ## Le mercredi 1er décembre 2021
 
-### Mise à jour du Système global de prévision déterministe des vagues (SGPDV) 1.7.0 du Centre météorologique canadien (CMC)
+### Mise à jour du Système global de prévision déterministe de vague (SGPDV) 1.7.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système global de prévision déterministe (SGPDV).
+Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système global de prévision déterministe de vague (SGPDV).
 
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
 * Utilisation de SGPD v8.0.0
-* Paramétrage optimisé pour GDPS v8.0.0
+* Paramétrage optimisé pour SGPD v8.0.0
 * Utilisation de la version 7 de WaveWatch III qui a la même physique que la v5.16 et inclut une correction de bogue dû a une période de pointe négative
 * Activez le limiteur de style Miche qui propose de briser les grandes vagues irréalistes dans des eaux peu profondes
-* Utilisation l'entrée de vent horaire après 144h, nouvellement disponible avec SGPD v8.0.0  
+* Passé 144h, utilisation du vent aux heures, maintenant disponible via le SGPD v8.0.0 
 
 Notes :
+
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_f.pdf).
 * [Spécifications techniques du SGPDV 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_f.pdf).
