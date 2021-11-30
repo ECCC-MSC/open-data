@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.2
+	
+* date: 2021-11-30
+* announcements:
+    * Not announced
+* new content:
+    * Add CaLDAS tech note in HRDPS page
+* improvements:
+    * Updates to NWP changelogs
+* bug fixes:
+    * Typos and formatting fixes
+
 ## 2.4.1
 	
 * date: 2021-11-26
