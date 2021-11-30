@@ -12,11 +12,13 @@
 
 Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.5.0 de son Système régional de prévision d'ensemble de vague (SRPEV).
 
-Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPEV_1.5.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rewps-150_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rewps-150_f.pdf).
+Les modifications incluses dans cette mise à niveau sont résumées comme suit :
+
+* Utilisation de la version 7 de WaveWatch III
+* Utilisation de SRPE v4.0.0 et SPCE v3.0.0
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rewps-150_f.pdf).
 * [Spécifications techniques du SRPEV 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REWPS_f.pdf).
 
 ## Le mardi 21 janvier 2020

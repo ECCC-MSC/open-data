@@ -16,7 +16,6 @@ The changes included in this upgrade are summarized as follows:
 
 * GEPS v7.0.0 forcing
 * 1H forcing for leads between 168h and 384h
-* Output variables: Total Water Level (SSH) and Storm surge (ETAS)
 
 Associated Notes:
 

@@ -12,7 +12,7 @@
 
 Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son Système régional de prévision déterministe de vague (SRPDV).
 
-Un résumé des innovations incluses dans cette mise à jours ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPDV_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-400_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPDV_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-400_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_f.pdf).
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
@@ -21,7 +21,7 @@ Notes :
 
 ## Le mardi 21 janvier 2020
 
-### Mise à jours du SRPDV à la version 3.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SRPDV à la version 3.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 

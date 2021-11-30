@@ -15,7 +15,7 @@ On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Me
 The changes included in this upgrade are summarized as follows:
 
 * Use of GEPS v7.0.0
-* Use WaveWatch III which includes negative peak period bugfix
+* Use WaveWatch III v7 which includes negative peak period bugfix
 * Use hourly wind input past 168h newly available with GEPS v7.0.0
 
 Associated Notes:
