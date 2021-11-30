@@ -15,8 +15,7 @@ Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre m�
 Les modifications incluses dans cette mise à niveau sont résumées comme suit :
 
 * Le forçage du SGPE v7.0.0
-* Le forçage de 1H pour les pas de temps entre 168h and 384h
-* Variables de sortie : niveau d'eau total (SSH) et onde de tempête (ETAS) 
+* Le forçage de 1H pour les pas de temps entre 168h and 384h 
 
 Notes :
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
