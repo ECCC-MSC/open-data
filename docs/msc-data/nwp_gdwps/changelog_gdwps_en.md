@@ -23,7 +23,6 @@ The changes included in this upgrade are summarized as follows:
 Associated Notes:
 
 * [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-170_e.pdf).
 * [Technical specifications of GDWPS 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.7.0_e.pdf).
 
 ## Tuesday January 21, 2020
