@@ -40,7 +40,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ## Documentation technique
 
 * [Version actuelle du système global de prévision déterministe de vague ](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDWPS_f.pdf)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdwps_20150623_f.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdwps_f.pdf)
 
 ## Registre des changements 
 

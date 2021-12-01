@@ -30,8 +30,8 @@ Upcoming.
 
 ## Technical documentation
 
+* [Actual version of the High Resolution Deterministic Precipitation Analysis](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPA_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_e.pdf)
-* [Information sheet describing the CaPA system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 
 ## Changelog
 

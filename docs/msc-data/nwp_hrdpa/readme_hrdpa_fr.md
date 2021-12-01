@@ -29,8 +29,8 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
+* [Version actuelle du Système d’analyse à haute résolution déterministe de précipitation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPA_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_f.pdf)
-* [Feuillet d'information décrivant le système CaPA](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_feuillet_information_f.pdf)
 
 ## Registre des changements 
 

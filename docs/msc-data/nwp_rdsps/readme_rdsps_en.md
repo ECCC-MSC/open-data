@@ -31,7 +31,7 @@ Upcoming.
 ## Technical documentation
 
 * [Current version of the Regional Deterministic Storm Surge Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDSPS_e.pdf)
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdsps_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdsps_e.pdf)
 
 ## Changelog
 

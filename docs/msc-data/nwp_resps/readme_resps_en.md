@@ -29,7 +29,7 @@ Upcoming.
 ## Technical documentation
 
 * [Current version of the Regional Ensemble Storm Surge Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RESPS_e.pdf)
-* [Technical Note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_resps_e.pdf)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_resps_e.pdf)
 
 ## Changelog
 
