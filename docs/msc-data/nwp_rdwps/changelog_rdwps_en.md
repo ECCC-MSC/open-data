@@ -1,4 +1,4 @@
-[En français](changelog_rdwps_fr.md)
+on courage [En français](changelog_rdwps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -14,6 +14,12 @@ On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Me
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [RDWPS_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-400_e.pdf). For detailed description of this upgrade, please see the [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_e.pdf).
 
+The major changes of RDWPS in this upgrade can be summarized as follows:
+
+* Use of HRDPS v6.0.0
+* Addition of a pseudo-analysis cycle
+* Addition of two new domains: Northeast Pacific and Northwest Atlantic
+* Retirement of WAM Regional for the Gulf of St. Lawrence
 
 Associated Notes:
 

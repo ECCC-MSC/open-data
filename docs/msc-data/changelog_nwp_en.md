@@ -52,7 +52,7 @@ Water, ocean and ice
 * 
 * [Canadian Land Data Assimilation System with Satellite observations (CaLDAS-Sat) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_en.md#wednesday-december-1st-2021)
 * [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.0.0](nwp_hrdlps/changelog_hrdlps_en.md#wednesday-december-1st-2021)
-* [Deterministic Hydrological Prediction System (DHSP) 3.1.0](nwp_dhsp/changelog_dhsp_en.md#wednesday-december-1st-2021)
+* [Deterministic Hydrological Prediction System (DHPS) 3.1.0](nwp_dhps/changelog_dhps_en.md#wednesday-december-1st-2021)
 * [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#wednesday-december-1st-2021)
 
 
