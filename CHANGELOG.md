@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.3
+	
+* date: 2021-12-01
+* announcements:
+    * Announced to dd_info and GeoMet-Info in the context of IC-3 changes
+* new content:
+    * None
+* improvements:
+    * Updates to NWP changelogs
+* bug fixes:
+    * Typos and formatting fixes
+
 ## 2.4.2
 	
 * date: 2021-11-30
