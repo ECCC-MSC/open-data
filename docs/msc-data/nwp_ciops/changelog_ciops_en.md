@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CIOPS](readme_ciops_en.md) > CIOPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CIOPS Changelog
 
 # Chronology of changes to the Coastal Ice and Ocean Prediction System (CIOPS)
 
@@ -26,7 +26,7 @@ The major change of CIOPS-West in this upgrade is the addition of a subdomain ov
 Associated documents:
 
 * A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
-* The technical specifications document for CIOPS-E 2.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-E_2.0.0_e.pdf).
-* The technical specifications document for CIOPS-W 2.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-W_2.0.0_e.pdf).
-* A technical note for CIOPS-E 2.0.0 with more details [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-e-200_e.pdf).
-* A technical note for CIOPS-W 2.0.0 with more details [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-200_e.pdf).
+* The technical specifications document for CIOPS-E 2.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_2.0.0_e.pdf).
+* The technical specifications document for CIOPS-W 2.0.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_2.0.0_e.pdf).
+* A technical note for CIOPS-E 2.0.0 with more details [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-east-200_e.pdf).
+* A technical note for CIOPS-W 2.0.0 with more details [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-west-200_e.pdf).

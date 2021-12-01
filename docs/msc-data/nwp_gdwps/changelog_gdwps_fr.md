@@ -23,7 +23,7 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 Notes :
 
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
-* [Spécifications techniques du SGPDV 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_f.pdf).
+* [Spécifications techniques du SGPDV 1.7.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.7.0_f.pdf).
 
 ## Le mardi 21 janvier 2020
 

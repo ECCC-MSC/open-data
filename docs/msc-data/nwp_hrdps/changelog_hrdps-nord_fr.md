@@ -12,7 +12,8 @@
 
 Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) retirera le Système canadien de prévision de l'Artique ([SCPA](../nwp_caps/changelog_caps_fr#le-mercredi-1er-decembre-2021)) qui sera remplacé par le Système à haute résolution de prévision déterministe nord (SHRPD-N) version 1.0.0.
 
-Voici un résumé des innovations: 
+Voici un résumé des innovations:
+
 * Retrait du couplage océan-glace (le SCPA était couplé).
 * Migration à GEM 5.1 avec retro physique.
 * Configuration similaire au SHRPD National.
@@ -21,7 +22,7 @@ Voici un résumé des innovations:
 
 La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
-Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-n_100_f.pdf).
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_100_f.pdf).
 
-Le document des spécifications techniques du SHRPD-N 1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-N_1.1.0_f.pdf).
+Le document des spécifications techniques du SHRPD-N 1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_1.0.0_f.pdf).
 

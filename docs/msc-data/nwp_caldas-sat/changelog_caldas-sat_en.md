@@ -15,9 +15,7 @@ Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC
 
 The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
-For more information, please consult the technical specifications document for HRCaLDAS-Sat v3.0.3 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CaLDAS-Sat_3.0.3_e.pdf).
 
-A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_caldas-sat-303_e.pdf).
 
 
 
