@@ -18,9 +18,10 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Le forçage de 1H pour les pas de temps entre 168h and 384h 
 
 Notes :
+
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-150_f.pdf).
-* [Spécifications techniques du SRPEOT 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RESPS_f.pdf).
+* [Spécifications techniques du SRPEOT 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RESPS_1.5.0_f.pdf).
 
 ## Le mardi 24 novembre, 2020
 

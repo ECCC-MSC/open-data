@@ -19,9 +19,10 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Utilisation à l'entrée de vent horaire après 168h, nouvellement disponible avec le SGPE v7.0.0
 
 Notes :
+
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-110_f.pdf).
-* [Spécifications techniques du SGPEV 1.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEWPS_f.pdf).
+* [Spécifications techniques du SGPEV 1.1.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEWPS_1.1.0_f.pdf).
 
 ## Le mardi 17 novembre, 2020
 

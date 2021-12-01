@@ -50,7 +50,7 @@ Water, ocean and ice
 * [Water Cycle Prediction System (WCPS) 3.0.0](nwp_wcps/changelog_wcps_en.md#wednesday-december-1st-2021)
 * [Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RDPS-CGSL) replaced with WCPS](nwp_rdps-cgsl/changelog_rdps-cgsl_en.md#wednesday-december-1st-2021)
 * 
-* [Canadian Land Data Assimilation System with Satellite observations (CALDAS-Sat) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_en.md#wednesday-december-1st-2021)
+* [Canadian Land Data Assimilation System with Satellite observations (CaLDAS-Sat) 3.0.3](nwp_caldas-sat/changelog_caldas-sat_en.md#wednesday-december-1st-2021)
 * [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.0.0](nwp_hrdlps/changelog_hrdlps_en.md#wednesday-december-1st-2021)
 * [Deterministic Hydrological Prediction System (DHSP) 3.1.0](nwp_dhsp/changelog_dhsp_en.md#wednesday-december-1st-2021)
 * [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#wednesday-december-1st-2021)

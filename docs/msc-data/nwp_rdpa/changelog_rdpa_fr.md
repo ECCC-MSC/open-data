@@ -18,7 +18,7 @@ Les modifications incluses dans cette mise à jour sont résumées comme suit :
 * Ajout de 14 radars canadiens de bande S
 * Assimilation des stations du réseau du Ministère des ressources naturelles de l'Ontario (MNR)
 * Mise à jour de masques statiques de contrôle de qualité pour 8 radars
-* Agrandissement de la grille afin de couvrir le domaine du [RDPS](../nwp_rdps)
+* Agrandissement de la grille afin de couvrir le domaine du [SRPD](../nwp_rdps/readme_rdps_fr.md)
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 

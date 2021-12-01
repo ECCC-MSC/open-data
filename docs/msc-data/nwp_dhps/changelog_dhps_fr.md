@@ -15,9 +15,9 @@ En date du mercredi 1er décembre 2021, le Centre météorologique canadien (CMC
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
-Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPHD 3.1.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_SPHD_3.1.0_f.pdf).
+Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPHD 3.1.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.1.0_f.pdf).
 
-Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_sphd-310_f.pdf).
+Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_dhps-310_f.pdf).
 
 
 
