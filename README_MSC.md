@@ -218,6 +218,8 @@ It is a best practice to [review existing open tickets](http://gccode.ssc-spc.gc
 
 ### 5.2.1 - Install Conda and create a mkdocs virtual environment
 
+This process is known to work on (a) CMC Linux machines on the EC network and (b) on the `ppp4` machine on the Science network. It does _not_ work on `joule`.
+
 Validate if Conda is already installed on your computer. Type `conda --version`. If a Conda version is provided, Conda is installed and skip the installation and go directly to deployment steps at 5.2.2 below. Otherwise, proceed with the Conda installation.
 
 To install Conda, please choose a location in your work environment that has a sufficient amount of disk space. It is not recommended that you install Conda in your home directory due to limited disk space allocated to this directory.
@@ -230,9 +232,10 @@ To install Conda, please choose a location in your work environment that has a s
     * when asked about running the `conda init`, set to `yes`
 4. Start a new terminal session so you can access conda commands
 5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
-6. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
-7. Within the root of the public documentation directory, use `pip` to install the Python libraries needed for our documentation: `pip install -r requirements.txt`
-8. You can deactivate the environment with `conda deactivate`
+6. Identify the Python version installed and `python3 --version` and use this version at the next step
+7. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
+8. Within the root of the public documentation directory, use `pip` to install the Python libraries needed for our documentation: `pip install -r requirements.txt`
+9. You can deactivate the environment with `conda deactivate`
 
 ### 5.2.2 - Removing an existing conda environment
 
