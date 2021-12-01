@@ -222,7 +222,7 @@ Validate if Conda is already installed on your computer. Type `conda --version`.
 
 To install Conda, please choose a location in your work environment that has a sufficient amount of disk space. It is not recommended that you install Conda in your home directory due to limited disk space allocated to this directory.
 
-1. Download [miniconda3](https://docs.conda.io/en/latest/miniconda.html) by clicking [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)
+1. Download [miniconda3](https://docs.conda.io/en/latest/miniconda.html) by clicking [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh) or on the console, running `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 2. To install, navigate to the folder containing the downloaded file and run `bash Miniconda3-latest-Linux-x86_64.sh`
 3. Follow the installation instructions and:
     * accept the License terms
