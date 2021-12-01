@@ -42,6 +42,7 @@ Upcoming.
 
 ## Technical documentation
 
+* [Actual version of the Regional Air Quality Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_raqdps_e.pdf)
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_e.pdf)
 
 ## Changelog

@@ -34,6 +34,7 @@ Upcoming.
 ## Technical documentation
 
 * [Current version of the Regional Ensemble Wave Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_REWPS_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rewps_e.pdf)
 
 ## Changelog
 

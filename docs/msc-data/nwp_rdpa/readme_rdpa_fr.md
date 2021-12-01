@@ -46,9 +46,8 @@ Des [cartes d'analyses](https://meteo.gc.ca/analysis/index_f.html#APCP) de cumul
 
 ## Documentation technique
 
-* Version actuelle de l'Analyse régionale de précipitation déterministe - _À venir_
+* [Version actuelle de l'Analyse régionale déterministe de précipitation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_rdpa_f.pdf)
-* [Feuillet d'information décrivant le système CaPA](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_feuillet_information_f.pdf)
 
 ## Registre des changements
 

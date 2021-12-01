@@ -40,7 +40,7 @@ List and links to the products available for this dataset :
 ## Technical documentation
 
 * [Current version of the Global Deterministic Wave Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDWPS_e.pdf)
-* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdwps_20150623_e.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdwps_e.pdf)
 
 ## Changelog
 

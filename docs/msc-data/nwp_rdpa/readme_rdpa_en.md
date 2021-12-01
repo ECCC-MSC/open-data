@@ -46,9 +46,8 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
-* Current version of the Regional Deterministic Precipitation Analysis - _Upcoming_
+* [Current version of the Regional Deterministic Precipitation Analysis](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_rdpa_e.pdf)
-* [Information sheet describing the CaPA system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/capa_information_leaflet_e.pdf)
 
 ## Changelog
 
