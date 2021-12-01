@@ -8,11 +8,23 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.4.3
+## 2.4.4
 	
 * date: 2021-12-01
 * announcements:
     * Announced to dd_info and GeoMet-Info in the context of IC-3 changes
+* new content:
+    * Add HRDPS North and West tech note 
+* improvements:
+    * Update to RDWPS changelog
+* bug fixes:
+    * None
+
+## 2.4.3
+	
+* date: 2021-12-01
+* announcements:
+    * None
 * new content:
     * None
 * improvements:
