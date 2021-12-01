@@ -14,6 +14,13 @@ Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre m�
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible ici: [SRPDV_4.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-400_f.pdf). Pour une description complète veillez consulter la [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-400_f.pdf).
 
+Les changements majeurs de cette mise à jour se résument ainsi:
+
+* Utilisation du SHRPD v6.0.0
+* Ajout d'un cycle de pseudo-analyse
+* Ajout de deux nouveaux domaines: nord-est Pacifique et nord-ouest Atlantique
+* Mise hors service du WAM Regional du Golfe du Saint-Laurent
+
 Notes :
 
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
