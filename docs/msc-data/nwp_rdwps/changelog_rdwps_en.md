@@ -1,4 +1,4 @@
-on courage [En français](changelog_rdwps_fr.md)
+[En français](changelog_rdwps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
