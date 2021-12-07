@@ -18,6 +18,7 @@ Les modifications incluses dans cette mise à niveau sont résumées comme suit 
 * Utilisation de SRPE v4.0.0 et SPCE v3.0.0
 
 Notes :
+
 * [Note officielle](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 * [Spécifications techniques du SRPEV 1.5.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REWPS_1.5.0_f.pdf).
 
