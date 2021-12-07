@@ -28,6 +28,7 @@ Résumé des éléments que comporte cette mise à jour:
 
 Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
+Le document des spécifications techniques du SRPDQA-FW version 23 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_f.pdf).
 
 Une note technique pour FireWork avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023fw_f.pdf).
 
