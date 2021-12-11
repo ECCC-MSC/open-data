@@ -21,7 +21,7 @@ The data can be accessed at the following URLs:
 where:
 
 * __nd__ : Spatial dimension, latitude and longitude [2d]
-* __HH__ : Model run start, in UTC [00,12]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [001, ..., 084] 
 
 A 30 day history is kept in this directory.
