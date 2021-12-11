@@ -21,7 +21,7 @@ Les données sont accessibles à l'adresse suivante :
 où :
 
 * __nd__ : Dimension spatiale, latitude et longitude [2d]
-* __HH__ : Heure en UTC du début de la simulation [00,12]
+* __HH__ : Heure en UTC du début de la simulation [00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [001, ..., 084] 
 
 Un historique de 30 jours de prévision est stocké dans ce répertoire.
