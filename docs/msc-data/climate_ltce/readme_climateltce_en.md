@@ -33,3 +33,4 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 * [Technical note in PDF format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/LTCE_Technical_Documentation_EN.pdf)
 * [FAQ available in PDF format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/FAQ_LTCE_Jan_2021_EN.pdf)
+* This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
