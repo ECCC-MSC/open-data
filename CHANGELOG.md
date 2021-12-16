@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.6
+	
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * None 
+* improvements:
+    * Added technical link for LTCE dataset 
+* bug fixes:
+    * TBD
+
 ## 2.4.5
 	
 * date: 2021-12-01

@@ -31,5 +31,6 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 ## Documentation technique
 
-* [Note technique en format PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/LTCE_Technical_Documentation_FR.pdf)
-* [FAQ disponible en format PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/FAQ_LTCE_Jan_2021_FR.pdf)
+* [Note technique au format PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/LTCE_Technical_Documentation_FR.pdf)
+* [FAQ disponible au format PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ltce/FAQ_LTCE_Jan_2021_FR.pdf)
+* Ces données sont également disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)
