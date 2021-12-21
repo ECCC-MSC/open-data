@@ -47,7 +47,7 @@ The MSC GeoMet Platform consists in the following services:
     * Climate data archives, simulations and scenarios
     * Standards supported: WMS, WCS, SLD
 * GeoMet-Beta:
-    * Unsupported web services for experimental data and web services
+    * Unsupported web services for experimental data
 
 The [available datasets pages](../msc-data/readme_en.md) specify on which MSC GeoMet service the corresponding data is available.
 
