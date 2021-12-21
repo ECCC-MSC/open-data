@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * None 
 * improvements:
+    * New section clarifying the services available on the different GeoMet instances
     * Added technical link for LTCE dataset 
 * bug fixes:
     * TBD
