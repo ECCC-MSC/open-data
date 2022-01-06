@@ -34,7 +34,7 @@ Les [métadonnées du Système à haute résolution de prévision déterministe 
 * [Note technique pour le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_f.pdf)
 * [Note technique pour le domaine ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-west_f.pdf)
 * [Note technique pour le domaine nord](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_f.pdf)
-* [Note technique du Regional Surface Data Assimilation System (RSAS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps-400_caldas-100_20141118_e.pdf) (en anglais seulement)
+* [Note technique du Regional Surface Data Assimilation System (RSAS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) (en anglais seulement)
 
 ## Registre des changements 
 
