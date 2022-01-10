@@ -83,7 +83,7 @@ A 24-hour history is stored in this directory.
 | ni | 762 |
 | nj | 643 | 
 | resolution | 0.045° x 0.045° |
-| coordinate of first grid point | 41.065° N  225.718° W |
+| coordinate of first grid point | 41.065° N  255.718° W |
 
 ## File name nomenclature 
 
