@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * None 
+    * Added new MSC Open Data Service Usage Policy page and links 
 * improvements:
     * New section clarifying the services available on the different GeoMet instances
     * Added technical link for LTCE dataset 
