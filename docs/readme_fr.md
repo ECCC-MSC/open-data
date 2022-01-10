@@ -87,6 +87,10 @@ Série d'évènements organisés autour des données ouvertes du SMC :
 
 La licence d'utilisation finale détermine les conditions d'utilisation des données et des informations. La principale exigence est d'indiquer clairement qu'Environnement et changement climatique Canada est la source des données, [veuillez consulter la licence pour plus de détails](licence/readme_fr.md).
 
+## Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale. Cette politique d'utilisation des services complémente la [licence d'utilisation finale](licence/readme_fr.md).
+
 ## Foire aux questions
 
 Les questions les plus fréquemment posées au sujet des données ouvertes du SMC sont rassemblées dans une [FAQ](faq/readme_fr.md). Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous contacter.
