@@ -30,6 +30,8 @@ Overview, examples and tutorials to access and use MSC GeoMet data:
         * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps
 * Technical documentation:
     * [API / geospatial web services technical documentation](web-services_en.md)
+* [End-use licence](../licence/readme_en.md)
+* [Service usage policy](../usage-policy/readme_en.md)
 
 ## Access
 
