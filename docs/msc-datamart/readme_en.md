@@ -46,7 +46,9 @@ Overview, examples and tutorials to access and use MSC Datamart data:
 * Tutorials:
     * Use data in the QGIS desktop software:
         * [Add raw data](../usage/tutorial_raw-data_QGIS_en.md)
-        
+* [End-use licence](../licence/readme_en.md)
+* [Service usage policy](../usage-policy/readme_en.md)
+
 ## Data formats
 
 Data on the MSC Datamart is available in open formats. It includes:

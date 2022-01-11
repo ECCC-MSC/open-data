@@ -25,7 +25,7 @@ C'est la méthode recommandée pour récupérer les données du Datamart du SMC.
 
 La documentation de ce service se trouve sur la [page consacrée au protocole AMQP](amqp_fr.md).
   
-__Note__: Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
+__Note__ : Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
 
 ### Méthode d'accès supplémentaire
 
@@ -51,7 +51,9 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Datamart d
 * Tutoriels :
     * Utiliser les données dans le logiciel de bureau QGIS :
         * [Ajouter des données brutes](../usage/tutorial_raw-data_QGIS_fr.md)
-        
+* [Licence d'utilisation finale](../licence/readme_fr.md)
+* [Politique d'utilisation des services](../usage-policy/readme_fr.md)
+
 ## Formats de données
 
 Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-ci :
