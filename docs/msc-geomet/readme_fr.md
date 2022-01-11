@@ -31,6 +31,8 @@ Aperçu, exemples et tutoriels pour accéder et utiliser les données ouvertes d
         * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Features (OAFeat) pour créer des séries temporelles et cartes interactives
 * Documentation technique :
     * [Documentation technique des services web géospatiaux / API](web-services_fr.md)
+* [Licence d'utilisation finale](../licence/readme_fr.md)
+* [Politique d'utilisation des services](../usage-policy/readme_fr.md)
 
 ## Accès
 
