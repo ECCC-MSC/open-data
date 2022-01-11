@@ -19,7 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * New section clarifying the services available on the different GeoMet instances
     * Added technical link for LTCE dataset 
 * bug fixes:
-    * TBD
+    * Fix NW-Atlantic RDWPS grid typo
 
 ## 2.4.5
 	
