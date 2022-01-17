@@ -8,11 +8,23 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.4.6
+## 2.4.7
 	
 * date: TBD
 * announcements:
     * Not announced
+* new content:
+    * TBD 
+* improvements:
+    * TBD 
+* bug fixes:
+    * TBD
+
+## 2.4.6
+	
+* date: 2022-01-17
+* announcements:
+    * The new MSC Open Data Service Usage Policy has been announced to users
 * new content:
     * Added new MSC Open Data Service Usage Policy page and links 
 * improvements:
