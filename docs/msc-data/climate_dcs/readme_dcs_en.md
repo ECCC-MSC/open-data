@@ -28,6 +28,10 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
+
 ### Metadata
 
 * The [metadata of the statistically downscaled scenarios of projected mean temperature change are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/958b8357-3690-414d-8bec-d65951041636).

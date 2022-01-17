@@ -24,6 +24,10 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
+### Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+
 ### Métadonnées
 
 Les [métadonnées du Système de Prévision Interannuelle et Saisonnière Canadien sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/922781a9-bfef-56b9-a438-493ada629d47)

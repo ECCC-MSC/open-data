@@ -38,6 +38,10 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
+
 ### Metadata
 
 * The [metadata of the climate normals are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652).
