@@ -23,6 +23,9 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 The [End-User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
 ### Metadata
 

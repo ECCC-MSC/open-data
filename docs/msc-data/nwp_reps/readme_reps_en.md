@@ -23,6 +23,10 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 The [end-user Licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
 
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
+
 ### Metadata
 
 The [metadata of the Regional Ensemble Prediction System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5b401fa0-6c29-57f0-b3d5-749f301d829d)

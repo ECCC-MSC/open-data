@@ -24,6 +24,10 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
+### Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+
 ### Métadonnées
 
 * Les [métadonnées des indices climatiques mis à l'échelle de manière statistique sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/0a896af8-f2be-4cf5-a745-2e1792db04a1)

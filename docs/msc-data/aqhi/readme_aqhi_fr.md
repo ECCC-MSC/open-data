@@ -25,6 +25,10 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
+### Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+
 ### Métadonnées
 
 Les [métadonnées d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
