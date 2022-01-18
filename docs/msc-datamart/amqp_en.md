@@ -47,7 +47,7 @@ The script allowing to recover products on the MSC Datamart and to place them in
 
 This client is designed to perform downloads in a very reliable manner and is widely used within the Government of Canada:
 
-https://github.com/MetPX/Sarracenia 
+[https://github.com/MetPX/Sarracenia](https://github.com/MetPX/Sarracenia)
 
 An overview is available here: [https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst)
 
@@ -82,11 +82,11 @@ This is an EXE file that can be used without having to [install](https://github.
 Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters:
 
 * The available commands are:
-    * alerts : sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
-    * citypage_weather : sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
-    * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
+    * alerts: sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
+    * citypage_weather: sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
+    * rdps_grib: sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
 * The logs are available under ~/.cache/sarra/log
-* To make a cleanup, use : sr_subscribe configname.conf cleanup
+* To make a cleanup, use: sr_subscribe configname.conf cleanup
 
 ## External links
 
@@ -103,4 +103,4 @@ If you use the data available on the MSC Datamart, it is strongly recommend that
 
 [https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
-Please use the following address to contact us for any comments or questions: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca) 
+User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).

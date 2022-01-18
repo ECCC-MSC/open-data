@@ -24,9 +24,9 @@ Le service permet de cibler les notifications pour une série spécifique de fic
 
 Le script est en langage python [https://www.python.org/](https://www.python.org/) et doit être installé sur le système où il sera requis. De plus, la librairie python-amqplib doit également être installée. Consulter la documentation spécifique à votre système d'exploitation pour savoir comment installer ce logiciel et cette librairie.
 
-Le serveur AMQP sécurisé (SSL, couche de sockets sécurisée) se trouve à l'adresse: dd.meteo.gc.ca 
+Le serveur AMQP sécurisé (SSL, couche de sockets sécurisée) se trouve à l'adresse : dd.meteo.gc.ca .
 
-Il est possible de se connecter de façon anonyme sur le serveur en utilisant la combinaison:
+Il est possible de se connecter de façon anonyme sur le serveur en utilisant la combinaison :
 
 - __Nom d'usager__: anonymous
 - __Mot de passe__: anonymous
@@ -34,7 +34,8 @@ Il est possible de se connecter de façon anonyme sur le serveur en utilisant la
 ### Chemin d'accès
 
 Pour le sujet (option subtopic), il suffit de mettre le répertoire du produit, en remplaçant la barre oblique "/" par un point ".". 
-Ce sujet est  : REPERTOIRE.DU.PRODUIT.SUR.LE.DATAMART
+
+Ce sujet est : REPERTOIRE.DU.PRODUIT.SUR.LE.DATAMART
 
 - '__*__' caractère de remplacement (wildcard) (un seul '*' par répertoire)
 - '__#__' signifie les possibilités restantes et doit être à la fin de la clé.
@@ -53,7 +54,7 @@ Le guide d’installation peut être trouvé à cette adresse :  [https://github
 
 Quant au guide d’utilisation, il est disponible ici :  [https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst](https://github.com/MetPX/sarracenia/blob/master/doc/fr/subscriber.rst)
 
-Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers: [https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
+Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
 
 __NOTE__:
 
@@ -74,9 +75,9 @@ Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [installer]
 
 ## Exemples
 
-Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD
+Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD :
 
-* Les commandes disponibles sont:
+* Les commandes disponibles sont :
     * alerts : sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
     * citypage_weather : sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
     * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
@@ -99,4 +100,4 @@ Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommand
 Vous pouvez vous inscrire ici :
 [https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
 
-Vous pouvez nous contacter à cette adresse pour toute question ou commentaire : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca) 
+Le soutien aux utilisateurs est fourni dans la mesure du possible pendant les heures normales de bureau. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
