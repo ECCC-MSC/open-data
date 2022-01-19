@@ -6,6 +6,8 @@
 
 # Utilisation de wget pour les données du Datamart du SMC
 
+Avant d'utiliser 'wget', les usagers doivent considérer l'utilisation du [service de récupération de données AMQPS](amqp_fr.md) et réviser la [politique d'utilisation des services de données](../usage-policy/readme_fr.md).
+
 Cette brève page d’exemples et de notes d’utilisation illustre les possibilités de téléchargement de données en lots, sélectionnées dans la base de données ouvertes du Datamart du SMC. Veuillez vous référer au manuel officiel de [wget](https://www.gnu.org/software/wget/) (lien externe, en anglais seulement) pour de plus amples détails. Les exemples ci-dessous ont été testés sous Linux et sous l’invite de commande de Windows XP.
 
 Ces exemples sont donnés pour des cas d'utilisation à caractère unique, ou pour accèder à des données dans le passé. Pour récupérer les données en temps réel, nous engageons fortement les usagers à utiliser le [Protocole avancé de mise en file d'attente des messages (AMQP)](../msc-datamart/amqp_fr.md).
