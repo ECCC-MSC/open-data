@@ -7,6 +7,8 @@
 
 # Use of wget for the MSC Datamart data
 
+Before using 'wget', users should consider using the [AMQPS data retrieval service](amqp_en.md) and review the [service usage policy](../usage-policy/readme_en.md).
+
 Here is a brief set of examples and usage notes, offered here to illustrate the possibilities for selective batch downloading from the MSC Datamart open data server. Please refer to the official [wget](https://www.gnu.org/software/wget/) manual for detailed usage. Examples shown here were tested under Linux and the Windows XP command line.
 
 These examples are given for single use cases, or to access past data. To retrieve data in real time, we strongly encourage users to use the [Advanced Message Queuing Protocol (AMQP)](amqp_en.md).

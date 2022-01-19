@@ -20,7 +20,7 @@ The service can filter specific sets of files (weather warnings, observations, m
 This is the recommended method to retrieve data from the MSC Datamart.
 The documentation for this service is found on the [MSC Datamart AMQP documentation](amqp_en.md).
   
-__Note__: Users requiring one-time data retrieval may use [wget to download data from the MSC Datamart](readme_wget-datamart_en.md).
+__Note__: Users requiring one-time data retrieval may use [wget to download data from the MSC Datamart](readme_wget-datamart_en.md). Please review the [Service usage policy](../usage-policy/readme_en.md).
 
 ### Additional access method
 

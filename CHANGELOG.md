@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * TBD 
 * improvements:
     * linkify Sarra link on AMQPS page 
+    * added amqp and policy links in wget page
 * bug fixes:
     * TBD
 
