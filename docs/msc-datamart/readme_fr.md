@@ -25,7 +25,7 @@ C'est la méthode recommandée pour récupérer les données du Datamart du SMC.
 
 La documentation de ce service se trouve sur la [page consacrée au protocole AMQP](amqp_fr.md).
   
-__Note__ : Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md).
+__Note__ : Les utilisateurs qui ont besoin de récupérer des données une seule fois peuvent utiliser [wget pour télécharger des données du Datamart du SMC](readme_wget-datamart_fr.md). Veuillez vous référer à la [politique d'utilisation des services de données ouvertes](../usage-policy/readme_fr.md).
 
 ### Méthode d'accès supplémentaire
 
@@ -61,7 +61,7 @@ Les données du Datamart du SMC sont disponibles en formats ouverts. Parmi ceux-
 * [GRIB2](../msc-data/readme_grib_fr.md)
 * [NetCDF](https://www.unidata.ucar.edu/software/netcdf/)
 * [GeoJSON](https://geojson.org/)
-* [shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
+* [Shapefile](https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf)
 * CSV
 * XML
 
