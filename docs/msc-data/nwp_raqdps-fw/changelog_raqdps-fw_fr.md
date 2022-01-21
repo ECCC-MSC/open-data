@@ -25,6 +25,7 @@ Résumé des éléments que comporte cette mise à jour:
     * Chimie:    GEM-MACH 3.0.0.2 => GEM-MACH 3.1.0.0
 * Mise à jour du Système canadien de prévision des émissions des feux de forêt (SCPEFF), de la version 2.06 à la version 4. 
 
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps023_f.pdf ).
 
 Une copie de la note officielle annonçant ce changement dans FireWork est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
