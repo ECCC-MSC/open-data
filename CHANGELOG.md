@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * linkify Sarra link on AMQPS page 
     * added amqp and policy links in wget page
+    * clarified source of climate data
 * bug fixes:
     * TBD
 

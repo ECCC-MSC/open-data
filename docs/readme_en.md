@@ -4,15 +4,15 @@
 
 # Meteorological Service of Canada Open Data User Documentation
 
-The Meteorological Service of Canada makes weather, climate, water and environmental data available to private sector, academics, and the general public.
+The Meteorological Service of Canada makes weather, climate, water and environmental data available to the private sector, academics, and the general public.
 
 ## Available open data
 
-The **[available open data from the Meteorological Service of Canada](msc-data/readme_en.md)** provides up-to-date information on past, present and future weather, water, climate and environmental conditions over Canada and the world. The main categories of data available are:
+The **[available open data from the Meteorological Service of Canada (MSC)](msc-data/readme_en.md)** provides up-to-date information on past, present and future weather, water, climate and environmental conditions over Canada and the world. The main categories of data available are:
 
 * Weather alerts, current conditions and public forecasts
 * Weather, water and environmental observations and forecast data
-* Climate data
+* Climate data from MSC and Environment and Climate Change Canada (ECCC)
 
 ## Data access
 
