@@ -538,8 +538,8 @@ Any query can be sorted by adding the `+` and `-` signs before the property to s
 * `&sortby=-PROPERTY` sorts the property in descending order
 * `&sortby=PROPERTY` sorts the property in ascending order (best practice recommendation, without `+`)
 
-### Access by Identifier
+### Access by identifier
 
 Fetch a single feature by identifier:
 
-* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12)

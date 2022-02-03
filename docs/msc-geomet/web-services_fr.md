@@ -544,6 +544,6 @@ Toute requête peut être triée en ajoutant les signes `+` et `-` avant l'attri
 
 ### Accès par identifiant
 
-Récupérer une seule caractéristique par identifiant :
+Récupérer une seule caractéristique par un identifiant :
 
-* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12)
