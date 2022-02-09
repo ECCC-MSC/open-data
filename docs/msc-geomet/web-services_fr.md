@@ -537,13 +537,13 @@ Toute requête peut être exportée au format CSV en ajoutant `f=csv` à la dema
 
 #### Tri
 
-Toute requête peut être triée en ajoutant les signes `+` et `-` avant l'attribut pour spécifier l'ordre de tri ; `+` pour croissant (par défaut) et `-` pour décroissant. Le tri en fonction de plusieurs propriétés est pris en charge en fournissant au paramètre `sortby` une liste séparée par des virgules. Exemples :
+Toute requête peut être triée utilisant le paramètre `sortby`. L'ordre de tri est croissant par défaut et ajoutez le signe `-` avant le nom de l'attribut pour un tri décroissant. Le tri en fonction de plusieurs attributs est pris en charge en fournissant une liste séparée par des virgules au paramètre `sortby`. Exemples :
 
+* `&sortby=PROPERTY` tri croissant de l'attribut
 * `&sortby=-PROPERTY` tri décroissant de l'attribut
-* `&sortby=PROPERTY` tri croissant de l'attribut (la recommandation et meilleure pratique est de ne pas spécifier le `+`)
 
 ### Accès par identifiant
 
-Récupérer une seule caractéristique par identifiant :
+Récupérer une seule caractéristique par un identifiant :
 
-* [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12)

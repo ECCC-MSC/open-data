@@ -533,13 +533,13 @@ Any query can be exported to CSV by adding `&f=csv` to the request.
 
 #### Sorting
 
-Any query can be sorted by adding the `+` and `-` signs before the property to specify the sort order, `+` for ascending (default) and `-` for descending. Sorting by multiple properties is supported by providing a comma-separated list to the `sortby` parameter. Examples:
+Any query can be sorted by using the `sortby` parameter. The sort order is ascending by default and add the `-` sign the property name for descending order. Sorting by multiple properties is supported by providing a comma-separated list to the `sortby` parameter. Examples:
 
+* `&sortby=PROPERTY` sorts the property in ascending order
 * `&sortby=-PROPERTY` sorts the property in descending order
-* `&sortby=PROPERTY` sorts the property in ascending order (best practice recommendation, without `+`)
 
-### Access by Identifier
+### Access by identifier
 
 Fetch a single feature by identifier:
 
-* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv)
+* [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/11AC016.1926-06-12)
