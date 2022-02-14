@@ -20,7 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * added amqp and policy links in wget page
     * clarified source of climate data
 * bug fixes:
-    * TBD
+    * fixed typo in RAQDPS GeoMet page
 
 ## 2.4.6
 	

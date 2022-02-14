@@ -6,7 +6,7 @@
 
 # RAQDPS data available on MSC GeoMet
 
-MSC GeoMet provides access to data produced by the Regional Air Quality Deterministic Prediction System (RAQDPS) model. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to data produced by the Regional Air Quality Deterministic Prediction System (RAQDPS) model. Users can build mobile apps, create interactive web maps, and display and animate weather layers in desktop software.
 
 
 ## Access to the geospatial web services
