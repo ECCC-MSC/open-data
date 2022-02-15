@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_geps_fr.md) > AHREP sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur le Datamart du SMC
 
 # Données netCDF de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP)
 
