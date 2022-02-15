@@ -36,17 +36,6 @@ Trois couches sont disponibles pour AHREP:
 * Precip-Accum06h-Pct25 [mm]: percentile 25 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
 * Precip-Accum06h-Pct75 [mm]: percentile 75 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
 
-Les fichiers netCDFs ont la nomemclature suivante:
-* `<AAAAMMJJ>T<HH>_MSC_HREPA_<nom_couche>_Sfc_<grille><resolution_deg>.nc`, où: 
-    * `<AAAAMMJJ>`: représente la date au format année, mois et jour, p.ex. `20220214`
-    * `<HH>`: représente l'heure de validité de l'analyse, ici les heures synoptiques, *i.e* 00, 06, 12 et 18.
-    * `<nom_couche>`: correspond au nom de la couche, ici Precip-Accum06, Precip-Accum06h-Pct25 ou Precip-Accum06h-Pct75.
-    * `<grille>`: correspond à la grille utilisée pour le système, ici une grille tournée (*RLatLon*).
-    * `<resolution_deg>`: donne une information sur la résolution de la grille, ici 0.0225 soit environ 2.5km.
-
-Ainsi, le fichier netcdf `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc` permet de récuperer les ensembles des accumulations de précipitations sur 6h valides à 12Z (heure UTC) pour le 14 février 2022.
-
-
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
 

@@ -36,16 +36,6 @@ Three layers are available for HREPA:
 * Precip-Accum06h-Pct25 [mm]: 25 percentile estimated on all 25 members of the 6-hour precipitation accumulations
 * Precip-Accum06h-Pct75 [mm]: 75 percentile estimated on all 25 members of the 6-hour precipitation accumulations
 
-The netCDFs files have the following nomenclature:
-* `<YYYYMMDD>T<HH>_MSC_HREPA_<layer_name>_Sfc_<grid><resolution_deg>.nc`, où: 
-    * `<YYYYMMDD>`: represents the year, month and day format, e.g. `20220214`
-    * `<HH>`: represents the validity hour for the analysis, here synoptic hours, *i.e* 00, 06, 12 et 18 UTC
-    * `<layer_name>`: corresponds to the name of the layer, here Precip-Accum06, Precip-Accum06h-Pct25 or Precip-Accum06h-Pct75.
-    * `<grid>`: corresponds to the grid used for the system, here a rotated grid (*RLatLon*).
-    * `<resolution_deg>`: gives information on the resolution of the grid, here 0.0225 or about 2.5km.
-
-Thus, the netcdf file `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc` allows to retrieve the sets of precipitation accumulations over 6h valid at 12Z (UTC time) for February 14th 2022.
-
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 
 ### Usage tips
