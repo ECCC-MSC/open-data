@@ -1,53 +1,102 @@
-# Données de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP) sur GeoMet du SMC
+[En français](readme_hrepa-geomet_fr.md)
 
-GeoMet du SMC donne accès à plusieurs couches de Système global de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
+![ECCC logo](../../img_eccc-logo.png)
 
-## Accès aux services web géospatiaux
-Les couches du SPGE sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](https://gccode.ssc-spc.gc.ca/afsgdod/public-doc/-/blob/dhps/docs/msc-geomet/readme_fr.md)
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HREPA](readme_hrepa_en.md) > HREPA on MSC GeoMet
 
-Exemple de carte interactive présentant la couche Precip-Accum06h-Pct25 du AHREP provenant de GeoMet du SMC :
+# GEPS data available on MSC GeoMet
 
-## Utilisation
+MSC GeoMet provides access to data produced by the High Resolution Ensemble Precipitation Analysis (HREPA). Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
-La page de l'[aperçu de l'utilisation](https://gccode.ssc-spc.gc.ca/afsgdod/public-doc/-/blob/dhps/docs/usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](https://gccode.ssc-spc.gc.ca/afsgdod/public-doc/-/blob/dhps/docs/msc-geomet/web-services_fr.md) pour de l'information détaillée.
+## Access to the geospatial web services
 
-### Couches disponibles
+The HREPA data is [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
 
-Trois couches sont disponibles pour AHREP:
-* Precip-Accum06h [mm]: accumulations de précipitation sur une période de 6h
-* Precip-Accum06h-Pct25 [mm]: percentile 25 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
-* Precip-Accum06h-Pct75 [mm]: percentile 75 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
+Example of a web map configured to display the [ Precip-Accum06h-Pct25](https://geo.weather.gc.ca) layer served by MSC GeoMet:
 
-Les fichiers netCDFs ont la nomemclature suivante:
-* `<AAAAMMJJ>T<HH>_MSC_HREPA_<nom_couche>_Sfc_<grille><resolution_deg>.nc`, où: 
-    * `<AAAAMMJJ>`: représente la date au format année, mois et jour, p.ex. `20220214`
-    * `<HH>`: représente l'heure de validité de l'analyse, ici les heures synoptiques, *i.e* 00, 06, 12 et 18.
-    * `<nom_couche>`: correspond au nom de la couche, ici Precip-Accum06, Precip-Accum06h-Pct25 ou Precip-Accum06h-Pct75.
-    * `<grille>`: correspond à la grille utilisée pour le système, ici une grille tournée (*rotated grid*) d'ou le *RLatLon*
-    * `resolution_deg`: donne une information sur la résolution de la grille, ici 0.0225 soit environ 2.5km.
+<div id="map" style="height: 400px;"></div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
+  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <span id="info" style="padding-left: 0.5rem;"></span>
+</div>
 
-Ainsi, pour récuperer les ensembles des accumulations de précipitions sur 6h valides à 12Z (heure UTC) pour le 14 février 2022, il faudrat récupérer le fichier netcdf suivant:
-* `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc`
+## Usage
 
+The [usage overview page](../../usage/readme_en.md) provides generic information on using OGC services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md) for detailed information.
 
-### Conseils d'utilisation
+### Available layers
 
-Récupération de la liste des derniers pas de temps disponibles :
-
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. 
-    - Exemple pour la couche 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc - 25eme percentile de précipitations issue de l'ensemble à 25 membres [mm] : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc
-* Davantage d'information est disponible dans la section sur la spécification du temps avec les services WMS
+To see which HREPA layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 
-Styles WMS :
+Three layers are available for HREPA:
+* Precip-Accum06h [mm]: 6-hour accumulation precipitation (25 members of the ensemble)
+* Precip-Accum06h-Pct25 [mm]: 25 percentile estimated on all 25 members of the 6-hour precipitation accumulations
+* Precip-Accum06h-Pct75 [mm]: 75 percentile estimated on all 25 members of the 6-hour precipitation accumulations
 
-* En plus du style WMS par défaut, plusieurs styles WMS alternatifs avec des échelles de couleurs différentes sont disponibles. La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities
-* Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard *Styled Layer Descriptor* (SLD). Veuillez vous référer à la documentation technique sur le SLD
+The netCDFs files have the following nomenclature:
+* `<YYYYMMDD>T<HH>_MSC_HREPA_<layer_name>_Sfc_<grid><resolution_deg>.nc`, où: 
+    * `<YYYYMMDD>`: represents the year, month and day format, e.g. `20220214`
+    * `<HH>`: represents the validity hour for the analysis, here synoptic hours, *i.e* 00, 06, 12 et 18 UTC
+    * `<layer_name>`: corresponds to the name of the layer, here Precip-Accum06, Precip-Accum06h-Pct25 or Precip-Accum06h-Pct75.
+    * `<grid>`: corresponds to the grid used for the system, here a rotated grid (*RLatLon*).
+    * `<resolution_deg>`: gives information on the resolution of the grid, here 0.0225 or about 2.5km.
+
+Thus, the netcdf file `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc` allows to retrieve the sets of precipitation accumulations over 6h valid at 12Z (UTC time) for February 14th 2022.
+
+Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
+
+### Usage tips
+
+Retrieving the available model runs and forecast hours available for a given HREPA layer:
+
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). 
+  - Example for the 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc file that provides the Precip-Accum06h-Pct25 layer [mm] : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc
+* Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
+
+WMS styles:
+
+* In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response.
+* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/web-services_en#handling-styles).
+
+Legends:
+
+* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic).
+* Example of retrieving a layer's legend via a GetLegendGraphic request: 
+
+![The GEPS.DIAG.12_PRMM.ERGE10 REPS_PROB-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR)
 
 
 ## Support
 
-Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à communiquer avec nous.
+The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
-## Liste d'information
-Nous encourageons les usagers à s'abonner à la liste d'information GeoMet-Info afin d'être informés des améliorations et changements aux services GeoMet du SMC.
+
+## Announcement mailing list
+
+We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../../js/geps_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../../js/geps.js";
+    }
+    head.appendChild(js);
+</script>

@@ -1,9 +1,9 @@
 
-[In English](readme_geps-geomet_en.md)
+[In English](readme_hrepa-geomet_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPE](readme_geps_fr.md) > SGPE sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur GeoMet du SMC
 
 # Données de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP) sur GeoMet du SMC
 
@@ -32,7 +32,7 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 Pour avoir la liste des couches HREPA qui sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
 Trois couches sont disponibles pour AHREP:
-* Precip-Accum06h [mm]: accumulations de précipitation sur une période de 6h
+* Precip-Accum06h [mm]: accumulations de précipitation sur une période de 6h (25 membres de l'ensemble)
 * Precip-Accum06h-Pct25 [mm]: percentile 25 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
 * Precip-Accum06h-Pct75 [mm]: percentile 75 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
 
@@ -41,11 +41,11 @@ Les fichiers netCDFs ont la nomemclature suivante:
     * `<AAAAMMJJ>`: représente la date au format année, mois et jour, p.ex. `20220214`
     * `<HH>`: représente l'heure de validité de l'analyse, ici les heures synoptiques, *i.e* 00, 06, 12 et 18.
     * `<nom_couche>`: correspond au nom de la couche, ici Precip-Accum06, Precip-Accum06h-Pct25 ou Precip-Accum06h-Pct75.
-    * `<grille>`: correspond à la grille utilisée pour le système, ici une grille tournée (*rotated grid*) d'ou le *RLatLon*
-    * `resolution_deg`: donne une information sur la résolution de la grille, ici 0.0225 soit environ 2.5km.
+    * `<grille>`: correspond à la grille utilisée pour le système, ici une grille tournée (*RLatLon*).
+    * `<resolution_deg>`: donne une information sur la résolution de la grille, ici 0.0225 soit environ 2.5km.
 
-Ainsi, pour récuperer les ensembles des accumulations de précipitions sur 6h valides à 12Z (heure UTC) pour le 14 février 2022, il faudrat récupérer le fichier netcdf suivant:
-* `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc`
+Ainsi, le fichier netcdf `20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc` permet de récuperer les ensembles des accumulations de précipitations sur 6h valides à 12Z (heure UTC) pour le 14 février 2022.
+
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
