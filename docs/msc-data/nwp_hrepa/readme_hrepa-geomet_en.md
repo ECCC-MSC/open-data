@@ -30,11 +30,11 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 
 To see which HREPA layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
-
-Three layers are available for HREPA:
-* Precip-Accum06h [mm]: 6-hour accumulation precipitation (25 members of the ensemble)
-* Precip-Accum06h-Pct25 [mm]: 25 percentile estimated on all 25 members of the 6-hour precipitation accumulations
-* Precip-Accum06h-Pct75 [mm]: 75 percentile estimated on all 25 members of the 6-hour precipitation accumulations
+Four layers are available for HREPA:
+* pr [mm]: 25 ensemble member of the 6-hour accumulation precipitation (available in files containing Precip-Accum06h substring in the filename)
+* cfia [unitless]: Confidence Index of the Analysis of the control member (available in files containing Precip-Accum06h substring in the filename) 
+* q025 [mm]: 25 percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
+* q075[mm]: 75 percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 

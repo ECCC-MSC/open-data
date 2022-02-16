@@ -10,7 +10,8 @@
 GeoMet du SMC donne accès à plusieurs couches de Système global de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
 
 ## Accès aux services web géospatiaux
-Les couches du SPGE sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](../../msc-geomet/readme_fr.md)
+
+Les couches du AHREP sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](../../msc-geomet/readme_fr.md)
 
 Exemple de carte interactive présentant la couche Precip-Accum06h-Pct25 du AHREP provenant de GeoMet du SMC :
 
@@ -31,10 +32,12 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 Pour avoir la liste des couches HREPA qui sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
-Trois couches sont disponibles pour AHREP:
-* Precip-Accum06h [mm]: accumulations de précipitation sur une période de 6h (25 membres de l'ensemble)
-* Precip-Accum06h-Pct25 [mm]: percentile 25 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
-* Precip-Accum06h-Pct75 [mm]: percentile 75 estimé sur l'ensemble de 25 membres des accumulations de précipitation 6h
+Quatre couches sont disponibles pour AHREP:
+
+* pr [mm]: accumulations de précipitation sur une période de 6h pour les 25 membres de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier)
+* cfia [sans unité]: Indice de Confiance de l'Analyse du membre controle de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier)
+* q025 [mm]: 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct25 dans le nom du fichier)
+* q075[mm]: 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct75 dans le nom du fichier)
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
