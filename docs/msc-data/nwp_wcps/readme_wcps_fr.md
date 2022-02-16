@@ -20,7 +20,7 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
 
 * [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 * [Données NEMO du système de prévision du cycle de l'eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md)
-* [Données des prévision couplées atmosphère-océan-glace de mer du système de prévision du cycle de l'eau (SPCE) en format NetCDF  disponibles sur le Datamart du SMC](readme_wcps-atm-ocean-datamart_fr.md)  
+* [Données des prévisions couplées atmosphère-océan-glace de mer du système de prévision du cycle de l'eau (SPCE) en format NetCDF  disponibles sur le Datamart du SMC](readme_wcps-atm-ocean-datamart_fr.md)  
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

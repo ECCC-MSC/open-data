@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE-NEMO sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE couplées océan-atmosphère sur le Datamart du SMC
 
 # Données des prévisions couplées atmosphère-océan-glace de mer du système de prévision du cycle de l’eau (SPCE) en format NetCDF 
 
-Les prévisions couplées atmosphère-océan-glace de mer de GEM-LAM avec NEMO-CICE sont disponibles aux heures au format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 1km (0,008 x 0,008 degré), sur le domaine des Grands Lacs, du fleuve Saint-Laurent et du Golfe du Saint-Laurent. 
+Les prévisions couplées atmosphère-océan-glace de mer de GEM-LAM avec NEMO-CICE sont disponibles aux heures au format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 1km (0.008 x 0.008 degré), sur le domaine des Grands Lacs, du fleuve Saint-Laurent et du Golfe du Saint-Laurent. 
 
 ## Adresse des données 
 
@@ -29,7 +29,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ![Image du domaine SPCE ocean-atmosphere](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_ocean-atm.png)
 
-Dans le domaine complet indiqué en blanc, l'ensemble des données valides qui couvre les lacs et les océans, est en couleur. Dans le reste du domaine, un masque "no-data" est utilisé pour spécifier l'abscence de données.
+Dans le domaine complet indiqué en blanc, l'ensemble des données valides qui couvrent les lacs et les océans, est en couleur. Dans le reste du domaine, un masque "no-data" est utilisé pour spécifier l'abscence de donnée.
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -93,7 +93,7 @@ Liste des variables 2D disponibles dans les fichiers:
 * __SeaIceInternalPressure__ : Pression interne de la glace, intégrée verticalement (N/m)
 * __SeaIceShear__ : Cisaillement de la glace de mer (%/day)
 
-Les variables `AirTemp`, `WindU`, `WindV`, XXXXXXXXXXXX  sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
+Les variables `AirTemp`, `WindU`, `WindV` et `Runoff_Sfc` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
 
 ## Support
 
