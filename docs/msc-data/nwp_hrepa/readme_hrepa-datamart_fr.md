@@ -19,7 +19,7 @@ Les données sont accessibles aux adresses suivantes :
 * [https://dd.meteo.gc.ca/model_hrepa/{AC}](https://dd.meteo.gc.ca/model_hrepa/)
 
 où :
-* __AC_ : Période d'accumulation en heure: 06
+* __AC__ : Période d'accumulation en heure: 06
 
 ## Spécification technique de la grille
 
@@ -46,7 +46,7 @@ où :
 * __HH__ : heure de validité de l'analyse en UTC
 * __MSC__: Les données sont produites par le *Meteorological Service of Canada* (Chaîne constante)
 * __HREPA__: Analyse ensembliste de précipitation Chaîne constante)
-* __Variable__ : Type de variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables »
+* __VariableType__ : Type de variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables/fichiers »
 * __Sfc__: Variable de surface (Chaîne constante)
 * __RLatLon__ :Le type de projection est polaire-stéréographique (Chaîne constante)
 * __0.0225__ : Chaîne de caractères constante indiquant la résolution des données en degrée
@@ -60,18 +60,19 @@ Ce fichier provient du Service météorologique du Canada et contient des donné
 
 À noter qu'une deuxième variable est également incluse dans ce fichier, soit l'indice de confiance de l'analyse (CFIA).
 
-## Liste des variables
-Les variables pour les produits d'ensemble disponibles dans les fichiers netCDFs sont décrites ci-dessous. Pour chaque variable, la définition, la période et la fréquence de disponibilité sont mentionnées.
+## Liste des variables/fichiers
+
+Trois type de fichiers existent pour chaque heure de validité de AHREP, et chaque fichier contient des variables spécifiques pour les produits d'ensemble disponibles dans les fichiers netCDFs sont décrites ci-dessous. Pour chaque type de fichier, les variables, la définition, la période et la fréquence de disponibilité sont mentionnées.
 
 Pour la variable Precip-Accum06h
-* __pr__ : Ensemble des analyse de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
-* __cfia__ : Indice de Confiance de l'Analyse. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
+* __pr__ : Ensemble des 25 analyses de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
+* __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
 
 Pour la variable Precip-Accum06h-Pct25
-* __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
+* __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
 
 Pour la variable Precip-Accum06h-Pct75
-* __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
+* __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
 
 
 ## Support
