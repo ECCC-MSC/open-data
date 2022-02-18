@@ -1,4 +1,4 @@
-[In English](readme_wcps_wf-datamart_en.md)
+[In English](readme_wcps-atm-ocean-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -65,7 +65,7 @@ où :
 Exemples :
 
 * 20211208T12Z_MSC_WCPS_SeaIceSnowVol_Sfc_LatLon0.008_PT001H.nc
-* 20211208T12Z_MSC_WCPS_SoilLiquidWaterCont_DBS-all_LatLon0.008_PT001H.nc
+* 20211208T12Z_MSC_WCPS_SeaWaterPotentialTemp_DBS-0.5m_LatLon0.008_PT001H.nc
 
 ## Liste des variables
 

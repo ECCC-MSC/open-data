@@ -1,4 +1,4 @@
-[In French](readme_wcps_wf-datamart_fr.md)
+[In French](readme_wcps-atm-ocean-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -43,7 +43,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 
-`{YYYYMMDD}T{HH}Z_MSC_WCPS_{VAR}_{LVLTYPE}-{LVL}_{grille}{resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_WCPS_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT{hhh}H.nc`
 
 where:
 
@@ -56,7 +56,7 @@ where:
 * __VAR__ : Variables included in this file 
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface, AGL for fixed height above ground]
 * __LVL__ : Vertical level value [10m, 0.5m, 1.5m, `0-2m` from surface to 2 meters, `all` for all available levels]
-* __grille__ : Constant string indicating the latitude and longitude projection [LatLon]
+* __grid__ : Constant string indicating the latitude and longitude projection [LatLon]
 * __resolution__ : Resolution in degree 0.008 (about 1km) in both latitude and longitude directions 
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 084]
 * __nc__ : constant string indicating the NetCDF format
@@ -64,7 +64,7 @@ where:
 Examples:
 
 * 20211208T12Z_MSC_WCPS_SeaIceSnowVol_Sfc_LatLon0.008_PT001H.nc
-* 20211208T12Z_MSC_WCPS_SoilLiquidWaterCont_DBS-all_LatLon0.008_PT001H.nc
+* 20211208T12Z_MSC_WCPS_SeaWaterPotentialTemp_DBS-0.5m_LatLon0.008_PT001H.nc
 
 ## List of variables 
 
