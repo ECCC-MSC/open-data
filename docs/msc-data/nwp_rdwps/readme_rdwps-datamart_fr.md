@@ -134,7 +134,7 @@ où :
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau vertical [Sfc pour la surface, AGL pour hauteur fixe au-dessus du sol]
 * __Grille__ : Type de grille horizontale [LatLon, RLatLon]
-* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.009x0.012, 0.045]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.009x0.012, 0.045, 0.0225]
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
