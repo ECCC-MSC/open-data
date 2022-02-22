@@ -88,7 +88,7 @@ A 24-hour history is stored in this directory.
 
 ### National
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nat.png)
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)
 
 | Parameter | Value |
 | ------ | ------ |
