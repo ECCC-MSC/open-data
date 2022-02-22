@@ -16,11 +16,17 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
+Lat-lon grids:
+
 * [https://dd.weather.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/erie/1km)
 * [https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km)
 * [https://dd.weather.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.weather.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/superior/1km)
+
+Rotated lat-lon grids:
+
 * [https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km)
+* [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
 where :
 
@@ -31,6 +37,8 @@ A 24-hour history is stored in this directory.
 ## Available Domains
 
 ### Lake Superior
+
+* __Lat-lon grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
@@ -43,6 +51,8 @@ A 24-hour history is stored in this directory.
 
 ### Lake Huron and Michigan
 
+* __Lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 | Parameter | Value |
@@ -53,6 +63,8 @@ A 24-hour history is stored in this directory.
 | coordinate of first grid point | 41.4260° N  88.1452° W |
 
 ### Lake Erie
+
+* __Lat-lon grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
@@ -65,6 +77,8 @@ A 24-hour history is stored in this directory.
 
 ### Lake Ontario
 
+* __Lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
 | Parameter | Value |
@@ -76,6 +90,8 @@ A 24-hour history is stored in this directory.
 
 ### Atlantic North-West
 
+* __Rotated lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
 
 | Parameter | Value |
@@ -85,13 +101,27 @@ A 24-hour history is stored in this directory.
 | resolution | 0.045° x 0.045° |
 | coordinate of first grid point | 41.065° N  255.718° W |
 
+### National
+
+* __Rotated lat-lon grid__
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 2536 |
+| nj | 1286 | 
+| resolution | 0.0225° x 0.0225° |
+| coordinate of first grid point | 39.681° N  226.410° W | 
+
+
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature :
 
-`{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_RDWPS-{DOMAIN}_{VAR}_{LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
 
 where :
 
@@ -104,15 +134,18 @@ where :
 * __DOMAIN__ : Constant string indicating the domain [erie, huron-michigan, ontario, superior, atlantic-nw]
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
-* __Grille__ : Horizontal grid type [LatLon, RLatLon]
+* __Grid__ : Horizontal grid type [LatLon, RLatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.009x0.012, 0.045]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]
 * __grib2__: constant string indicating the GRIB2 format is used
+
+NOTE: No domain is specified in the filenames for the national domain
 
 Examples of file name :
 
 * 20211014T00Z_MSC_RDWPS-Lake-Erie_HTSGW_Sfc_LatLon0.009x0.012_PT003H.grib2
 * 20211014T00Z_MSC_RDWPS-Atlantic-North-West_ICEC_Sfc_RLatLon0.045_PT037H.grib2
+* 20211014T00Z_MSC_RDWPS_VGRD_AGL-10m_RLatLon0.0225_PT037H.grib2
 
 ## Levels
 

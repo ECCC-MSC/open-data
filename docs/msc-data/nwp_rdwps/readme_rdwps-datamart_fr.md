@@ -16,11 +16,17 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
+Données sur grilles lat-lon:
+
 * [https://dd.meteo.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/erie/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/superior/1km)
+
+Données sur grilles lat-lon tournées:
+ 
 * [https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km)
+* [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
 où :
 
@@ -31,6 +37,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 ## Domaines disponibles
 
 ### Lac Supérieur
+
+* __Grille lat-lon__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
@@ -43,6 +51,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Lac Huron et Lac Michigan
 
+* __Grille lat-lon__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
 | Paramètre | Valeur |
@@ -53,6 +63,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | coordonnées du premier point de grille | 41.4260° N  88.1452° O | 
 
 ### Lac Érié
+
+* __Grille lat-lon__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
@@ -65,6 +77,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Lac Ontario
 
+* __Grille lat_lon__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
 | Paramètre | Valeur |
@@ -76,6 +90,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Nord-ouest Atlantique
 
+* __Grille lat-lon tournée__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
 
 | Paramètre | Valeur |
@@ -84,6 +100,20 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | nj | 643 | 
 | résolution | 0.045° x 0.045° |
 | coordonnées du premier point de grille | 41.065° N  255.718° O | 
+
+### National
+
+* __Grille_lat-lon tournée__
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 2536 |
+| nj | 1286 | 
+| résolution | 0.0225° x 0.0225° |
+| coordonnées du premier point de grille | 39.681° N  226.410° O | 
+
 
 ## Nomenclature des noms de fichiers 
 
@@ -108,10 +138,13 @@ où :
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
+NOTE: pour le domaine national, aucun domaine n'est mentionné dans les noms de fichiers.
+
 Exemples de fichier :
 
 * 20211014T00Z_MSC_RDWPS-Lake-Erie_HTSGW_Sfc_LatLon0.009x0.012_PT003H.grib2
 * 20211014T00Z_MSC_RDWPS-Atlantic-North-West_ICEC_Sfc_RLatLon0.045_PT037H.grib2
+* 20211014T00Z_MSC_RDWPS_VGRD_AGL-10m_RLatLon0.0225_PT037H.grib2
 
 ## Niveaux  
 
