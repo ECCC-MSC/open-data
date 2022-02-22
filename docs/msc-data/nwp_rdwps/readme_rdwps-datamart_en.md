@@ -16,10 +16,15 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
+Lat-lon grids:
+
 * [https://dd.weather.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/erie/1km)
 * [https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km)
 * [https://dd.weather.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.weather.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/superior/1km)
+
+Rotated lat-lon grids:
+
 * [https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km)
 * [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
@@ -33,6 +38,8 @@ A 24-hour history is stored in this directory.
 
 ### Lake Superior
 
+* __Lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
 | Parameter | Value |
@@ -43,6 +50,8 @@ A 24-hour history is stored in this directory.
 | coordinate of first grid point | 46.2590° N  92.3116° W |
 
 ### Lake Huron and Michigan
+
+* __Lat-lon grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
@@ -55,6 +64,8 @@ A 24-hour history is stored in this directory.
 
 ### Lake Erie
 
+* __Lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
 | Parameter | Value |
@@ -65,6 +76,8 @@ A 24-hour history is stored in this directory.
 | coordinate of first grid point | 41.2190° N  83.6068° W |
 
 ### Lake Ontario
+
+* __Lat-lon grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
@@ -77,6 +90,8 @@ A 24-hour history is stored in this directory.
 
 ### Atlantic North-West
 
+* __Rotated lat-lon grid__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
 
 | Parameter | Value |
@@ -87,6 +102,8 @@ A 24-hour history is stored in this directory.
 | coordinate of first grid point | 41.065° N  255.718° W |
 
 ### National
+
+* __Rotated lat-lon grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)
 

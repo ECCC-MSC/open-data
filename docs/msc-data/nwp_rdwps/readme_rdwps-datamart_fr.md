@@ -16,10 +16,15 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
+Données sur grilles lat-lon:
+
 * [https://dd.meteo.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/erie/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/superior/1km)
+
+Données sur grilles lat-lon tournées:
+ 
 * [https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km)
 * [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
@@ -33,6 +38,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Lac Supérieur
 
+* __Grille lat-lon__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_sup.png)
 
 | Paramètre | Valeur |
@@ -43,6 +50,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | coordonnées du premier point de grille | 46.2590° N  92.3116° O | 
 
 ### Lac Huron et Lac Michigan
+
+* __Grille lat-lon__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_hum.png)
 
@@ -55,6 +64,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Lac Érié
 
+* __Grille lat-lon__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_erie.png)
 
 | Paramètre | Valeur |
@@ -65,6 +76,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | coordonnées du premier point de grille | 41.2190° N  83.6068° O | 
 
 ### Lac Ontario
+
+* __Grille lat_lon__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_ont.png)
 
@@ -77,6 +90,8 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### Nord-ouest Atlantique
 
+* __Grille lat-lon tournée__
+
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
 
 | Paramètre | Valeur |
@@ -88,7 +103,9 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 ### National
 
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png
+* __Grille_lat-lon tournée__
+
+![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps_nat.png)
 
 | Paramètre | Valeur |
 | ------ | ------ |
