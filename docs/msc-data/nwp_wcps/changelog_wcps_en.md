@@ -6,6 +6,25 @@
 
 # Chronology of changes to the Water Cycle Prediction System (WCPS)
 
+## Thursday February 24th, 2022
+
+### Upgrade to Version 3.1.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
+
+Effective Thursday, February 24th, 2022, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v3.1.0.
+
+The modifications to WCPS v3.1.0 compared with the previous operational version are as follows:
+
+* For the pseudo-analysis/forecast components:
+    * Ice loading over Great Lakes is correctly set up in the pseudo-analysis
+    * River connectors between Lake Huron and Lake St-Claire have been revised to correct for some of unaccounted inter-lake flow
+    * Regions of artificially enhanced mixing have been revised in order to better mix water in front of some lake outlets
+    * Larger regions of data assimilation of bogus (zero) ice concentration have been set up to avoid numerical instability at lake outlet (which also relates to the embedded ice—and loading option) due to artificial ice pileups.
+* For the river component:
+    * No change
+
+For more information, please consult the technical specifications document for WCPS v3.0.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.1.0_e.pdf).
+
+A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-310_e.pdf).
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
