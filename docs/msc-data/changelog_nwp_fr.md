@@ -6,6 +6,12 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+## 2022
+
+### 24 Février 2022
+
+* [Système de prévision du cycle de l'eau (SPCE) 3.1.0](nwp_wcps/changelog_wcps_fr.md#le-jeudi-24-fevrier-2022)
+
 ## 2021
 
 ### 1er Décembre 2021
