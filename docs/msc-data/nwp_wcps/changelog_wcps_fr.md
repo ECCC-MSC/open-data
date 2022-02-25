@@ -6,6 +6,26 @@
 
 # Chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE)
 
+## Le jeudi 24 février 2022
+
+### Mise à jour du Système de prévision du cycle de l'eau (SPCE) 3.1.0 du Centre météorologique canadien
+
+En date du jeudi 24 février 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision du cycle de l'eau (SPCE) vers la version 3.1.0.
+
+Les modifications au SPCE v3.1.0 comparativement au précédent système opérationnel sont résumées comme suit:
+
+* Pour les composantes pseudo-analyse/prévision :
+    * La charge de glace sur les Grands Lacs est correctement implantée dans la pseudo-analyse
+    * Les connecteurs de rivière entre les lacs Huron et St-Claire ont été révisés pour corriger certains débits manquants
+    * Les régions de mélange artificiellement augmenté ont été révisées pour améliorer le mélange devant les sorties de lac
+    * Les régions d'assimilation de données bogus (zéro) de concentration de glace ont été élargies pour éviter l'instabilité numérique à la sortie du lac (c'est en lien avec l'option de charge de glace) lorsque la glace s'empile.
+* Pour la composante de rivière:
+    * Aucun changement
+
+Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPCE 3.1.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.1.0_f.pdf).
+
+Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-310_f.pdf).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système de prévision du cycle de l'eau (SPCE) 3.0.0 du Centre météorologique canadien
