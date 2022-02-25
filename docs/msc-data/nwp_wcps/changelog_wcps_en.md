@@ -22,7 +22,7 @@ The modifications to WCPS v3.1.0 compared with the previous operational version 
 * For the river component:
     * No change
 
-For more information, please consult the technical specifications document for WCPS v3.1.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.1.0_e.pdf).
+For more information, please consult the technical specifications document for WCPS v3.1.0 available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.0.0_e.pdf).
 
 A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-310_e.pdf).
 
