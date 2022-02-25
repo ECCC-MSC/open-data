@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add RAQDPS and RAQDPS-FW factsheets (same one for both)
     * Update WCPS doc (new domain)
+    * Update WCPS changelog (February 24th installation)
 * improvements:
     * linkify Sarra link on AMQPS page 
     * added amqp and policy links in wget page
