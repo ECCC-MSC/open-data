@@ -15,7 +15,7 @@ En date du jeudi 24 février 2021, le Centre météorologique canadien (CMC) va 
 Les modifications au SPCE v3.1.0 comparativement au précédent système opérationnel sont résumées comme suit:
 
 * Pour les composantes pseudo-analyse/prévision :
-    * La charge de glace sur les grands lacs est correctement implantée dans la pseudo-analyse
+    * La charge de glace sur les Grands Lacs est correctement implantée dans la pseudo-analyse
     * Les connecteurs de rivière entre les lacs Huron and St-Claire ont été révisés pour corriger certains débits manquants
     * Les régions de mélange artificiellement augmenté ont été révisés pour améliorer le mélange devant les sorties de lac
     * Les régions d'assimilation de données bogus (zéro) de concentration de glace ont été élargies pour éviter l'instabilité numérique à la sortie du lac (c'est en lien avec l'option de charge de glace) lorsque la glace s'empile.
