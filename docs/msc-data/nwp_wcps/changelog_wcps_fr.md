@@ -22,9 +22,9 @@ Les modifications au SPCE v3.1.0 comparativement au précédent système opérat
 * Pour la composante de rivière:
     * Aucun changement
 
-Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPCE 3.1.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.1.0_f.pdf).
+Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SPCE 3.1.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.0.0_f.pdf).
 
-Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-310_f.pdf).
+Une note technique avec plus de détails sur ces changements est disponible [sur cette page](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps-300_f.pdf).
 
 ## Le mercredi 1er décembre 2021
 
