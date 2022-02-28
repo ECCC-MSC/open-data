@@ -76,7 +76,7 @@ Liste des variables 2D disponibles dans les fichiers:
 * __vomecrty__ : Composante Y de la vitesse de l'eau au premier niveau du modèle
 * __votemper__ : Température potentielle de l'eau de mer au premier niveau du modèle
 * __vosaline__ : Salinité de l'eau de mer 
-* __sossheig__ : Hauteur de la surface de la mer par rapport au géoïde
+* __sossheig__ : Hauteur de la surface de la mer par rapport au géoïde. Pour les Grands Lacs, la référence est IGLD85
 * __sokaraml__ : Profondeur de la couche de mélange d'après le critère de densité
 * __iiceconc__ : Fraction de la glace de mer
 * __iicevol__ : Volume de glace de mer par unité de surface de cellule de grille

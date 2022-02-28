@@ -74,7 +74,7 @@ List of 2D variables available in the files:
 * __WindU__: 10m surface wind X velocity (m/s) 
 * __WindV__: 10m surface wind Y velocity (m/s)
 * __Runoff__ : Runoff (mm)
-* __SeaSfcHeight__ : Sea surface height above geoid (m)
+* __SeaSfcHeight__ : Sea surface height above geoid (m). For Great Lakes, the reference is IGLD85
 * __SeaWaterSalinity__ : Sea water salinity at the surface model layer (per 1000) 
 * __SeaWaterPotentialTemp__ : Sea water potential temperature at the surface model layer (K)
 * __SeaWaterVelocityX__ : Sea water X velocity at the surface model layer (m/s)
