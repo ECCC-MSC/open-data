@@ -75,7 +75,7 @@ List of 2D variables available in the files:
 * __vomecrty__ : Sea water Y velocity at the first model layer  
 * __votemper__ : Sea water potential temperature at the first model layer  
 * __vosaline__ : Sea water salinity at the surface   
-* __sossheig__ : Sea surface height above geoid 
+* __sossheig__ : Sea surface height above geoid. For Great Lakes, the reference is IGLD85
 * __sokaraml__ : Ocean mixed layer depth based on density criterion 
 * __iiceconc__ : Sea ice area fraction 
 * __iicevol__ : Sea ice volume per unit grid cell area

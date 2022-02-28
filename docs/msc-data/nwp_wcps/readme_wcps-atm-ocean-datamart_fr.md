@@ -75,7 +75,7 @@ Liste des variables 2D disponibles dans les fichiers:
 * __WindU__: Composante X de la vitesse du vent à 10 mètres en altitude (m/s)
 * __WindV__: Composante Y de la vitesse du vent à 10 mètres en altitude (m/s)
 * __Runoff__ : Ruissellement (mm)
-* __SeaSfcHeight__ : Hauteur de la surface de la mer par rapport au géoïde (m)
+* __SeaSfcHeight__ : Hauteur de la surface de la mer par rapport au géoïde (m). Pour les Grands Lacs, la référence est IGLD85
 * __SeaWaterSalinity__ : Salinité de l'eau de mer au premier niveau du modèle (per 1000) 
 * __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer au premier niveau du modèle (K)
 * __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau au premier niveau du modèle (m/s)
