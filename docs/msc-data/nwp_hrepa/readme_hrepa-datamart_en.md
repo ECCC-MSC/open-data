@@ -6,21 +6,21 @@
 
 # High Resolution Ensemble Precipitation Analysis (HREPA) Data in netCDF Format
 
-This page describes the [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in netCDF format.
+This page describes the [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in netCDF format on the MSC testing data repository DD-Alpha.
 
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable netCDF file.
 
 The data can be accessed at the following URLs :
 
-* [https://dd.meteo.gc.ca/model_hrepa/{AC}](https://dd.meteo.gc.ca/model_hrepa/)
+* [https://dd-alpha.meteo.gc.ca/model_hrepa/2.5km/{HH}](https://dd.meteo.gc.ca/model_hrepa/2.5km)
 
 where :
-* __AC__ : Accumulation period in hours: 06
+* __HH__ : validy hour of the analysis, in UTC [00,06,12,18]
 
 ## Grid specifications
 
@@ -39,23 +39,25 @@ Table lists the values of parameters of the rotated latitude-longitude grid on w
 NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
-* `<YYYYMMDD>T<HH>_MSC_HREPA_<VariableType>_Sfc_<grille>RLatLon0.0225.nc`
+* `{YYYYMMDD}T{HH}Z_MSC_HREPA_{VAR}_Sfc_{grid}{resolution}_PT0H.nc`
 
 where : 
 
-* __YYYYMMDD__ : Analysis valid date: YYYY=year, MM=Month, DD=Day (e.g: 20220214)
-* __HH__ : Analysis valid hour UTC (00, 06, 12 and 18UTC)
-* __MSC__: Data is produced by the Meteorological Service of Canada (Constant string)
-* __HREPA__: Ensemble precipitation analysis (Constant string)
-* __VariableType__ : variale available in the file. To see the complete variable list, see section « List of variables/files»
-* __Sfc__: Level type is Surface (Constant string)
-* __RLatLon__ : Rotated grid (Constant string)
-* __0.0225__ : The resolution is 0.025° (2.5 km) (Constant string)
-* __nc__ : netCDF format (Constant string)
-
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __T__: Time delimiter according to ISO8601 norms
+* __HH__ : UTC run time [00, 06, 12, 18]
+* __Z__: Time zone (UTC hour)
+* __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
+* __HREPA__: Constant string indicating that data is from High Resolution Ensemble Precipitation Analysis (HREPA) system
+* __VAR__ : Variables included in this file. To see the complete variable list, see section « List of variables/files»
+* __Sfc__: Constant string indicating that the level type is Surface
+* __grid__ : Constant string indicating the rotated latitude and longitude projection [RLatLon]
+* __resolution__ : Constant string indicating that the resolution in degree 0.025° (about 2.5 km) in both latitude and longitude directions
+* __PT0H__ : Constant string indicating an analysis, based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour.
+* __nc__ : constant string indicating the NetCDF format
 
 Example :
-20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225.nc
+20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225_PT0H.nc
 
 This file originates from the Meteorological Service of Canada (MSC) and contains the High Resolution Ensemble Precipitation Analysis (HREPA) data. HREPA is an ensemble precipitation analysis of 6-hour amounts where the accumulation period goes from 20220214 at 00UTC to 20220214 at 06UTC. This file contains 25 members. The first member is the control and corresponds to a deterministic analysis (without perturbations), while the 24 other members are the analyses obtained after perturbations of the inputs.
 
