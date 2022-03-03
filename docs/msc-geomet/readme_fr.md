@@ -36,13 +36,13 @@ Aperçu, exemples et tutoriels pour accéder et utiliser les données ouvertes d
 
 ## Accès
 
-L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs) et [OGC API - Features (WFS 3)](https://github.com/opengeospatial/WFS_FES).
+L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) .
 
 La plateforme GeoMet du SMC comprend les services suivants :
 
 * GeoMet-OGC-API :
     * Données météorologiques, climatiques et hydrométriques
-    * Standards supportés : OGC API - Features, OGC API - Processes, STAC (expérimental)
+    * Standards supportés : OGC API - Features, OGC API - Coverages, OGC API - Processes, STAC (expérimental)
 * GeoMet-Météo :
     * Systèmes de prévision numérique, radar météorologique, conditions actuelles, alertes, etc.
     * Standards supportés : WMS, WCS, SLD
@@ -56,11 +56,11 @@ Les [pages des jeux de données disponibles](../msc-data/readme_fr.md) précisen
 
 ### GeoMet-OGC-API
 
-GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais du standard émergeant [OGC API - Features (WFS 3)](https://github.com/opengeospatial/ogcapi-features) de l'Open Geospatial Consortium (OGC).
+GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais des standards émergeants [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) de l'Open Geospatial Consortium (OGC).
 
-Capacités de ce service :
+Accès à GeoMet-OGC-API :
 
-* L'URL de GeoMet-OGC-API : [https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
+* [https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
 
 ### GeoMet-Météo
 

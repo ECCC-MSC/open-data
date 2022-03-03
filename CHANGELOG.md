@@ -18,6 +18,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update WCPS doc (new domain)
     * Update WCPS changelog (February 24th installation)
 * improvements:
+    * added mention and links for OACov support to GeoMet-OGC-API
+    * updated OAFeat links
     * linkify Sarra link on AMQPS page 
     * added amqp and policy links in wget page
     * clarified source of climate data
