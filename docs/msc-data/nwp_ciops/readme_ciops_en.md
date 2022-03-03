@@ -1,14 +1,16 @@
-[In French](readme_wcps_fr.md)
+[In French](readme_ciops_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > WCPS
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CIOPS
 
-# Data and products of the Water Cycle Prediction System (WCPS)
+# Data and products of the Coastal Ice Ocean Prediction System (CIOPS)
 
-The Water Cycle Prediction System (WCPS) simulates the complete water cycle, following the water as it moves from the atmosphere to the surface, through the river network and into lakes, and back to the atmosphere. It provides short-term analysis and forecasts of atmosphere-ocean-ice and river flows. WCPS was originally implemented over the Laurentian Great Lakes and St. Lawrence River watershed in support of Canada's obligations under the Boundary Waters Treaty (International Joint Commission 2016). Starting from WCPS v3.0.0, the domain is extended to cover also the Gulf of St. Lawrence ocean region.
+The Coastal Ice Ocean Prediciton System (CIOPS) provides a 48 hour ice and ocean forecasts four times a day at 1/36° resolution. A Pseudo_analysis component is initialized by that uses a coupled NEMO-CICE ocean-ice model
 
-WCPS consists of three components: Pseudo_analysis component with the ocean-ice model NEMO-CICE, Forecast component with the limited area version of the atmospheric model GEM (GEM-LAM) coupled with NEMO-CICE and Rivers component with the river routing model WATROUTE. These components are coupled to each other, representing processes in the atmosphere, at the land surface and in the soil (at 10 km resolution), in large bodies of water and marine ice (at 1-km resolution), and in rivers (at 1-km resolution).
+A forecast component is 
+
+ , Forecast component with the limited area version of the atmospheric model GEM (GEM-LAM) coupled with NEMO-CICE and Rivers component with the river routing model WATROUTE. These components are coupled to each other, representing processes in the atmosphere, at the land surface and in the soil (at 10 km resolution), in large bodies of water and marine ice (at 1-km resolution), and in rivers (at 1-km resolution).
 
 The Global Deterministic Prediciton System (GDPS) provides initial and boundary conditions to GEM-LAM covering the eastern North America, which includes the oceanic area surrounding the Gulf of St. Lawrence. Every 6 minutes, GEM-LAM communicates with NEMO-CICE of the precipitation that has landed on the surface of the lakes and of the state of the near-surface atmosphere over the Great Lakes (Lakes Superior, Michigan-Huron, St. Claire, Erie, and Ontario) and over the Gulf of St. Lawrence region. NEMO informs GEM-LAM of the surface water temperature, the extent of the ice cover, and the fluxes of latent and sensible heat and momentum. GEM-LAM also provides hourly estimates of surface runoff to WATROUTE. In turn, WATROUTE informs NEMO of the terrestrial runoff. 
 
@@ -19,8 +21,7 @@ The Global Deterministic Prediciton System (GDPS) provides initial and boundary 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Data available from the GeoMet-Weather API / web services](../../msc-geomet/readme_en.md)
-* [WCPS NEMO NetCDF data available on the MSC Datamart](readme_wcps_nemo-datamart_en.md) 
-* [WCPS Coupled atmosphere-ocean-sea ice NetCDF data available on the MSC Datamart](readme_wcps-atm-ocean-datamart_en.md) 
+* [CIOPS NetCDF data available on the MSC Datamart](readme_ciops_nemo-datamart_en.md)  
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
