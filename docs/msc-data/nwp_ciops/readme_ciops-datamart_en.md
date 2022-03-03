@@ -1,12 +1,12 @@
-[In French](readme_wcps-atm-ocean-datamart_fr.md)
+[In French](readme_spcog-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [WCPS](readme_wcps_en.md) > Coupled WCPS ocean-atmosphere on MSC Datamart 
+[TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [CIOPS](readme_ciops_en.md) > Coastal Ice Ocean Prediction System (CIOPS) on MSC Datamart 
 
-# Water Cycle Prediction System (WCPS) coupled atmosphere-ocean-sea ice forecasts data in NetCDF format
+# Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format
 
-The coupled atmosphere-ocean-sea ice forecasts of GEM-LAM coupled with NEMO-CICE from WCPS are available as hourly products. These products are in NetCDF format with a latitude and longitude grid, corresponding to about 1km resolution (0.008 x 0.008 degree), over the domain of the Great Lakes, St. Lawrence Rivers and the Gulf of St. Lawrence.
+The ocean-ice forecasts of NEMO-CICE from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a subdomain at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region.
 
 ## Data location 
 
@@ -16,7 +16,9 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_wcps/ocean-atmosphere/1km)                  
+* [https://dd.weather.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/east/2km)
+* [https://dd.weather.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/west/2km)
+* [https://dd.weather.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/salish-sea/500m)                  
 
 where:
 
@@ -27,15 +29,32 @@ A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 
-![Image of the coupled WCPS ocean-atmosphere domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_ocean-atm.png)
+![Image of the CIOPS - East ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
+| Parameter | Value |
+| ------ | ------ |
+| ni | 1333 |
+| nj | 980 |
+| nk | 99 |
+| resolution | 2km |
+
+![Image of the CIOPS - West ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
+| Parameter | Value |
+| ------ | ------ |
+| ni | 600 |
+| nj | 785 |
+| nk | 68 |
+| resolution | 2km |
+
+![Image of the CIOPS - Salish Sea ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
 In the full domain shown in white, the valid dataset that covers lakes and oceans, is in color. In the rest of the domain, a "no-data" mask is used to specify the absence of data.
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 6675 |
-| nj | 2364 |
-| resolution at 45° N | 1km |
+| ni | 629 |
+| nj | 888 |
+| nk | 39 |
+| resolution | 500km |
 
 ## Filename nomenclature
 
