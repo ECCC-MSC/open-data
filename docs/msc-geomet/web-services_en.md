@@ -30,7 +30,8 @@ The following OGC web services are supported by MSC GeoMet:
 
 * Web Map Service (WMS)
 * Web Coverage Service (WCS)
-* OGC API - Features (WFS 3)
+* OGC API - Features (OAFeat)
+* OGC API - Coverages (OACov)
 
 ## Web Map Service (WMS)
 
@@ -410,7 +411,7 @@ One can select a variable, region of interest, temporal information and output f
 
 ## OGC API - Features
 
-The [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) provides a specification to querying geospatial data on the web. The service operates over HTTPS and requests are made via HTTPS GET requests. No HTTPS authentication is required.
+The [OGC API - Features](https://ogcapi.ogc.org/features/) (OAFeat) provides a specification to querying geospatial data on the web. The service operates over HTTPS and requests are made via HTTPS GET requests. No HTTPS authentication is required.
 
 ### Service endpoints
 

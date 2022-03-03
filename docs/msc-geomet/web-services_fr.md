@@ -30,7 +30,8 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
 
 * Web Map Service (WMS)
 * Web Coverage Service (WCS)
-* OGC API - Features (WFS 3)
+* OGC API - Features (OAFeat)
+* OGC API - Coverages (OACov)
 
 
 ## Web Map Service (WMS)
@@ -415,7 +416,7 @@ Les utilisateurs peuvent choisir une variable métérologique ou climatique, une
 
 ## OGC API - Features
 
-Le standard [OGC API - Features](https://github.com/opengeospatial/WFS_FES) (WFS 3) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web. Le service fonctionne via HTTPS et les requêtes sont effectuées via des requêtes HTTPS GET. Aucune authentification HTTPS n'est requise.
+Le standard [OGC API - Features](https://ogcapi.ogc.org/features/) (OAFeat) fournit une liste de spécifications standardisées permettant d'interroger des données géospatiales sur le Web. Le service fonctionne via HTTPS et les requêtes sont effectuées via des requêtes HTTPS GET. Aucune authentification HTTPS n'est requise.
 
 ### Points de service
 
