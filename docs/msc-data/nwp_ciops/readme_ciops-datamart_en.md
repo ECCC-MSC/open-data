@@ -30,6 +30,7 @@ A 24h history is kept in this directory.
 ## Technical specification of the grid
 
 ![Image of the CIOPS - East ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
+
 | Parameter | Value |
 | ------ | ------ |
 | ni | 1333 |
@@ -38,6 +39,7 @@ A 24h history is kept in this directory.
 | resolution | 2km |
 
 ![Image of the CIOPS - West ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
+
 | Parameter | Value |
 | ------ | ------ |
 | ni | 600 |
