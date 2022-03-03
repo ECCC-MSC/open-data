@@ -6,13 +6,7 @@
 
 # Data and products of the Coastal Ice Ocean Prediction System (CIOPS)
 
-The Coastal Ice Ocean Prediciton System (CIOPS) provides a 48 hour ice and ocean forecasts four times a day at 1/36° resolution. A Pseudo_analysis component is initialized by that uses a coupled NEMO-CICE ocean-ice model
-
-A forecast component is 
-
- , Forecast component with the limited area version of the atmospheric model GEM (GEM-LAM) coupled with NEMO-CICE and Rivers component with the river routing model WATROUTE. These components are coupled to each other, representing processes in the atmosphere, at the land surface and in the soil (at 10 km resolution), in large bodies of water and marine ice (at 1-km resolution), and in rivers (at 1-km resolution).
-
-The Global Deterministic Prediciton System (GDPS) provides initial and boundary conditions to GEM-LAM covering the eastern North America, which includes the oceanic area surrounding the Gulf of St. Lawrence. Every 6 minutes, GEM-LAM communicates with NEMO-CICE of the precipitation that has landed on the surface of the lakes and of the state of the near-surface atmosphere over the Great Lakes (Lakes Superior, Michigan-Huron, St. Claire, Erie, and Ontario) and over the Gulf of St. Lawrence region. NEMO informs GEM-LAM of the surface water temperature, the extent of the ice cover, and the fluxes of latent and sensible heat and momentum. GEM-LAM also provides hourly estimates of surface runoff to WATROUTE. In turn, WATROUTE informs NEMO of the terrestrial runoff. 
+The Coastal Ice Ocean Prediciton System (CIOPS) provides a 48 hour ice and ocean forecasts four times a day at 1/36° resolution. A Pseudo_analysis component is forced at the open boundaries by the Regional Ice Ocean Prediciton System (RIOPS) forecasts and spectrally nudged to the RIOPS solution in the deep ocean to provide initial conditions for the forecast component. The Atmospheric fluxes for both components are provided by the High Resolution Deterministic Prediction System blended with either the Global Deterministic Prediction System (CIOPS-East) or the Regional Deterministic Prediciton System (CIOPS-West) where coverage of the HRDPS is lacking.
 
 ## Access
 
@@ -39,10 +33,12 @@ To come.
 
 ## Technical documentation
 
-* [Current version of the Water Cycle Prediction System (WCPS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_e.pdf)
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_e.pdf)
+* [Technical Specification of the current version of the CIOPS-East](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_e.pdf)
+* [Technical Specification of the current version of the CIOPS-West](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_e.pdf)
+* [Technical note for CIOPS-East](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-east_e.pdf)
+* [Technical note for CIOPS-West](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-west_e.pdf)
 
 ## Changelog 
 
-The chronology of changes to the Water Cycle Prediction System (WCPS) is available [here](changelog_wcps_en.md).
+The chronology of changes to the CIOPS is available [here](changelog_ciops_en.md).
 
