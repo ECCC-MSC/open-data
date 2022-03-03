@@ -75,10 +75,10 @@ where:
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __CIOPS__ : Constant string indicating that the data is from the Coastal Ice Ocean Prediction System
 * __DOMAIN__ : One of East, West or SalishSea indicating the domain
-* __VAR__ : Variable included in this file 
+* __VAR__ : Variable included in the file 
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface]
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
-* __grid__ : Constant string indicating the latitude and longitude projection [LatLon]
+* __grid__ : Constant string indicating the grid projection [here, LatLon]
 * __resolution__ : Resolution in degree (latitude x longitude) 
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 084]
 * __.nc__ : file extention indicating the NetCDF format
