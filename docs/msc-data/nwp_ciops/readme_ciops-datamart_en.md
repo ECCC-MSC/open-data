@@ -6,7 +6,7 @@
 
 # Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format
 
-The ocean-ice forecasts of NEMO-CICE from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a subdomain at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region.
+The ocean-ice forecasts of NEMO-CICE from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a regional enhancement at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region only.
 
 ## Data location 
 
