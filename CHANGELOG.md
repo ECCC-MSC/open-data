@@ -25,6 +25,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * clarified source of climate data
 * bug fixes:
     * fixed typo in RAQDPS GeoMet page
+    * remove the mention of multiple layers for GetFeatureInfo requests
 
 ## 2.4.6
 	

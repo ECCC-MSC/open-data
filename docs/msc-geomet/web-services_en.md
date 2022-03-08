@@ -107,7 +107,7 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 | SERVICE         | The service the client is requesting. In this case, `wms`|
 | VERSION         | The version of the service the client is requesting. We recommend using the latest wms version `1.3.0`|
 | REQUEST         | The request type. In this case, `GetFeatureInfo`.|
-| LAYERS          | The name of the layer(s) used to query. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request.|
+| LAYERS          | The name of the layer used to query. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request.|
 | CRS (version 1.3.0) or SRS (WMS version 1.1.0) | The coordinate reference system (CRS) used to create the map image. **Be careful, this parameter name differs depending on the version specified in the VERSION parameter**.|
 | BBOX            | The bounding box of the requested image. Coordinates should be in the units of the CRS/SRS. If using the WMS 1.3.0 specification *and the EPSG:4326* these values are: `minY,minX,maxY,maxX`. If the request uses the WMS 1.1.1 specification or any other CRS, these values are: `minX,minY,maxX,maxY`. The request's bounding box must cover a part of the request layer's geographic extent.|
 | FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`. Images in the PNG format support transparency, while images in the JPEG format are smaller in size|
@@ -115,7 +115,7 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 | WIDTH           | The width in pixels of the associated image|
 | I (WMS version 1.3.0) or X (WMS version 1.1.0) | The horizontal coordinate of the pixel to query|
 | J (WMS version 1.3.0) or Y (WMS version 1.1.0)  | The vertical coordinate of the pixel to query|
-| QUERY_LAYERS    | The name of layers to query (comma-separated)|
+| QUERY_LAYERS    | The name of the layer to query|
 
 | Optional parameters                 | Definition |
 | ------------------------- | ---------- |
