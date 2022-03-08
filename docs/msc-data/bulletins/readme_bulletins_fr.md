@@ -34,13 +34,8 @@ Non disponibles.
 ## Documentation technique
 
 * [The WMO Communication Header](https://www.weather.gov/tg/headef)
-
 * [Catalogue of meteorological bulletins(WMO)](https://www.wmo.int/pages/prog/www/ois/Operational_Information/VolC1_en.html)
-
 * [Manual of codes (WMO)](https://www.wmo.int/pages/prog/www/WMOCodes/WMO306_vI1/Publications/2014update/306_vol_I1_2014_en_track.pdf)
-
 * [Système d'observation météorologique automatisée - AWOS](http://www.navcanatm.ca/fr/navcanmet/awos.aspx)
-
 * [Manuel des normes et méthodes d'exploitation des prévisions et avertissements météorologiques publics (MANOBS)](https://www.canada.ca/fr/environnement-changement-climatique/services/manuels-documents-conditions-meteorologiques/manobs-observations-surface.html)
-
 * [METAR et TAF sur le site de NavCan](http://www.flightplanning.navcanada.ca/cgi-bin/CreePage.pl?Langue=francais&NoSession=NS_Inconnu&Page=Fore-obs%2Fmetar-taf-map&TypeDoc=html)
