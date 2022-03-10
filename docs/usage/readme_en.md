@@ -115,7 +115,7 @@ Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/r
 
 The following use case examples are provided:
 
-* [Arthur: profits based on the probability of precipitation](../usage/use-case_arthur/use-case_arthur_en/):
+* [Arthur: profits based on the probability of precipitation](../use-case_arthur/use-case_arthur_en/):
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC Web Map Service (WMS) standard to create data tables and graphs
 * [Cathy: tracking water levels at hydrometric stations](../use-case_oafeat/use-case_oafeat-script_en/):
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps
