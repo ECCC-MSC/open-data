@@ -61,6 +61,7 @@ GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatiqu
 Accès à GeoMet-OGC-API :
 
 * [https://api.meteo.gc.ca/](https://api.meteo.gc.ca/)
+* Le [générateur de requêtes OpenAPI de GeoMet-OGC-API](https://api.meteo.gc.ca/openapi?f=html)
 
 ### GeoMet-Météo
 
