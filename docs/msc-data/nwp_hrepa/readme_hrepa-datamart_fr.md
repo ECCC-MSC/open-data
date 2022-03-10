@@ -2,15 +2,15 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur DD-Alpha du SMC
 
 # Données netCDF de l'Analyse à Haute Résolution Ensembliste de Précipitation (AHREP)
 
-Cette page décrit les données de l'[Analyse à Haute Résolution Ensembliste de Précipitation (AHREP)](readme_hrepa_fr.md) disponibles en format netCDF disponible sur le dépôt de données d'essais DD-Alpha du SMC.
+Cette page décrit les données de l'[Analyse à Haute Résolution Ensembliste de Précipitation (AHREP)](readme_hrepa_fr.md) disponibles en format netCDF sur le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC.
 
 ## Adresse des données 
 
-Les données DD-Alpha du dépôt de données d'essai du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF. 
 
@@ -49,8 +49,8 @@ où :
 * __HREPA__: Chaîne constante indiquant que les données provient du système d'Analyse à Haute Résolution Ensembliste de Précipitation (en anglais *HREPA*)
 * __VAR__ : Variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables/fichiers »
 * __Sfc__: Chaîne constante indiquant que le type de niveau est la surface
-* __grille__ :Chaîne constante indiquant la rotation de la projection de la latitude et de la longitude [RLatLon].
-* __resolution__ : Chaîne constante indiquant que la résolution en degré 0.025° (environ 2,5 km) dans les directions de la latitude et de la longitude
+* __grille__ : Chaîne constante indiquant une grille lat-lon tournée
+* __resolution__ : Chaîne constante indiquant une résolution en degré de 0.025°° (environ 2,5 km) dans les directions de la latitude et de la longitude
 * __PT0H__: Chaîne de caractères constante indiquant une analyse, basée sur les normes ISO8601. P, T et H sont des caractères constants désignant la période, le temps et l'heure.
 * __nc__ : Chaîne de caractères constante indiquant que le format est netCDF (Chaîne constante)
 
