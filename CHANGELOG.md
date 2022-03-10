@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add RAQDPS and RAQDPS-FW factsheets (same one for both)
     * Update WCPS doc (new domain)
     * Update WCPS changelog (February 24th installation)
+    * Update RDWPS doc (new domain)
 * improvements:
     * added mention and links for OACov support to GeoMet-OGC-API
     * updated OAFeat links
