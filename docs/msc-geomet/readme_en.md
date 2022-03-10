@@ -60,6 +60,7 @@ GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and
 Access to GeoMet-OGC-API:
 
 * [https://api.weather.gc.ca/](https://api.weather.gc.ca/)
+* [GeoMet-OGC-API OpenAPI query builder](https://api.weather.gc.ca/openapi?f=html)
 
 ### GeoMet-Weather
 
