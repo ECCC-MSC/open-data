@@ -4,9 +4,9 @@
 
 [TOC](../../readme_fr.md) > [MSC data](../readme_fr.md) > [HREPA](readme_hrepa_fr.md) > HREPA on MSC DD-Alpha
 
-# High Resolution Ensemble Precipitation Analysis (HREPA) Data in netCDF Format
+# High Resolution Ensemble Precipitation Analysis (HREPA) Data in NetCDF Format
 
-This page describes the [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in netCDF format on the MSC testing data repository DD-Alpha.
+This page describes the experimental [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
 
 
 ## Data location
@@ -39,7 +39,8 @@ Table lists the values of parameters of the rotated latitude-longitude grid on w
 NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
-* `{YYYYMMDD}T{HH}Z_MSC_HREPA_{VAR}_Sfc_{grid}{resolution}_PT0H.nc`
+
+`{YYYYMMDD}T{HH}Z_MSC_HREPA_{Var}_Sfc_{Grid}{resolution}_PT0H.nc`
 
 where : 
 
@@ -49,23 +50,24 @@ where :
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __HREPA__: Constant string indicating that data is from High Resolution Ensemble Precipitation Analysis (HREPA) system
-* __VAR__ : Variables included in this file. To see the complete variable list, see section « List of variables/files»
+* __Var__ : Variables included in this file. To see the complete variable list, see section « List of variables/files»
 * __Sfc__: Constant string indicating that the level type is Surface
-* __grid__ : Constant string indicating the rotated latitude and longitude projection [RLatLon]
+* __Grid__ : Constant string indicating the rotated latitude and longitude projection [RLatLon]
 * __resolution__ : Constant string indicating that the resolution in degree 0.025° (about 2.5 km) in both latitude and longitude directions
 * __PT0H__ : Constant string indicating an analysis, based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour.
 * __nc__ : constant string indicating the NetCDF format
 
 Example :
+
 20220214T06Z_MSC_HREPA_Precip-Accum06h_Sfc_RLatLon0.0225_PT0H.nc
 
 This file originates from the Meteorological Service of Canada (MSC) and contains the High Resolution Ensemble Precipitation Analysis (HREPA) data. HREPA is an ensemble precipitation analysis of 6-hour amounts where the accumulation period goes from 20220214 at 00UTC to 20220214 at 06UTC. This file contains 25 members. The first member is the control and corresponds to a deterministic analysis (without perturbations), while the 24 other members are the analyses obtained after perturbations of the inputs.
 
 Note that a second variable is also included in this file, and it is the confidence index for the analysis (CFIA).
 
-## List of variables/files
+## List of variables
 
-Three types of files exist for a given valid date; each file has its variables for the package products available in the netCDFs are described below. For each file, the variable, the definition, and frequency of availability are mentioned.
+Three types of files exist for a given valid date; each file has its variables for the package products available in the NetCDF are described below. For each file, the variable, the definition, and frequency of availability are mentioned.
 
 For the file **Precip-Accum06h**:
 * __pr__ : 25-member ensemble of the 6-hour precipitation analyses, available at synoptic hours (mm)
