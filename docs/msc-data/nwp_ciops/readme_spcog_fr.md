@@ -1,16 +1,12 @@
-[In English](readme_wcps_en.md)
+[In English](readme_ciops_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SPCE
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SPCOG
 
-# Données et Produits du Système de prévision du cycle de l'eau (SPCE)
+# Données et Produits du Système cotière de prévision océan-glace (SPCOG)
 
-Le Système de prévision du cycle de l'eau (SPCE) simule le cycle complet de l’eau, suivant l’eau qui se déplace de l’atmosphère à la surface, par les réseaux fluviaux et vers les lacs, puis qui retourne dans l’atmosphère. Il fournit des analyses et des prévisions à court terme des flux atmosphère-océan-glace et des flux fluviaux. Le SPCE a été initialement mis en place pour le bassin versant des Grands Lacs Laurentiens et du fleuve Saint-Laurent à l’appui des obligations du Canada en vertu du Traité relatif aux eaux limitrophes (Commission Mixte Internationale, 2016). Depuis la version v3.0.0 du SPCE, le domaine est étendu pour couvrir également la région océanique du golfe du Saint-Laurent.
-
-Le SPCE se compose de trois composantes : La composante Pseudo-analyse avec le modèle d'océan-glace NEMO-CICE, La composante de prévision avec la version à zone limitée du modèle atmosphérique GEM (GEM-LAM) couplé à NEMO-CICE et la composante de Rivières avec le modèle de routage de rivière WATROUTE. Ces composantes sont couplées les unes aux autres et représentent les processus dans l'atmosphère, à la surface de la terre et dans le sol (à une résolution de 10 km), dans les grandes masses d'eau et la glace marine (à une résolution de 1 km), et dans les rivières (à une résolution de 1 km).
-
-Le Système Global de Prévision Déterministe (SGPD) fournit les conditions initiales et latérales à une version du modèle numérique GEM-LAM couvrant l’est de l’Amérique du Nord, ce qui inclut la zone océanique entourant le golfe du Saint-Laurent. Toutes les 6 minutes, GEM-LAM communique à NEMO-CICE les précipitations qui se sont déposées à la surface des lacs et l'état de l'atmosphère proche de la surface au-dessus des Grands Lacs (lacs Supérieur, Michigan-Huron, Sainte-Claire, Érié et Ontario) et de la région du golfe du Saint-Laurent. NEMO informe le GEM-LAM de la température de l'eau de surface, de l'étendue de la couverture de glace et des flux de chaleur et de quantité de mouvement latents et sensibles. GEM-LAM fournit également des estimations horaires du ruissellement de surface à WATROUTE. À son tour, WATROUTE informe NEMO du ruissellement terrestre.
+Le Système de prévision cotière océan-glace (SPCOG) rends disponible un prévision de 48 heure pour les eaux marine et la glace quatre fois par jour a une resolution de 1/36°. Une composante pseudo-analyse forcé aux frontières ouvertes par le systeme régional de prévision océan-glace (SRPOG) est amener vers la solutions SRPOG dans les eaux profondes est utilizé comme contitions initiales pour la composante prévisioniste. Les flues atmospherique pour les deux composantes sont fournit par le système à haute résolution de prévision déterministe (SHRPD) mélanger avec la système régional de prévision déterministe (pour SPCOG-Ouest) ou la système global de prévision déterministe (pour SPCOG-Est) ou la couverture de donnees SHRPD manques.    
 
 ## Accès
 
@@ -19,8 +15,7 @@ Le Système Global de Prévision Déterministe (SGPD) fournit les conditions ini
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
 * [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
-* [Données NEMO du système de prévision du cycle de l'eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent, disponibles sur le Datamart du SMC](readme_wcps_nemo-datamart_fr.md)
-* [Données des prévisions couplées atmosphère-océan-glace de mer du système de prévision du cycle de l'eau (SPCE) en format NetCDF  disponibles sur le Datamart du SMC](readme_wcps-atm-ocean-datamart_fr.md)  
+* [Données NEMO du système de prévision cotière océan-glace (SPCOG) en format NetCDF disponibles sur le Datamart du SMC](readme_spcog-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -38,10 +33,12 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
-* [Version actuelle du Système de prévision du cycle de l'eau (SPCE)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_f.pdf)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_f.pdf)
+* [Specifications techniques du SPCOG-Est](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_f.pdf)
+* [Specification techniques su SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_f.pdf)
+* [Note technique pour SPCOG-Est](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-east_f.pdf)
+* [Note technique pour SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-west_f.pdf)
 
 ## Registre des changements 
 
-La [chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE)](changelog_wcps_fr.md) est disponible.
+La [chronologie des changements apportés au SPCOG)](changelog_ciops_fr.md) est disponible.
 
