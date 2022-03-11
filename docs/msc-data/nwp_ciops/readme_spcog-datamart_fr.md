@@ -73,8 +73,8 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CIOPS__ : Chaîne de caractères constante indiquant le modèle source : SPCOG (CIOPS en anglais) 
 * __VAR__ : Variable contenues dans le fichier 
-* __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface, AGL pour la hauteur au-dessus du sol]
-* __LVL__ : Valeur du niveau vertical [10m, 0.5m, 1.5m, `0-2m` de la surface à 2 mètres, `all` pour tous les niveaux disponibles]. Ce paramètre est absent pour la surface
+* __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface]
+* __LVL__ : Valeur du niveau vertical [0.5m, `all` pour tous les niveaux disponibles]. Ce paramètre est absent pour la surface
 * __grille__ : Grille horizontale [ici, LatLon]
 * __resolution__ : Indique la résolution en degrées (longitudinale x latitudinale)
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [001, 002, ..., 084]
