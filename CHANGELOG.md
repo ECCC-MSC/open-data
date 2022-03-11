@@ -10,11 +10,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.8
 	
-* date: TBD
+* date: 2022-03-11
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * None
 * improvements:
     * added Swagger UI link in GeoMet doc
 * bug fixes:
