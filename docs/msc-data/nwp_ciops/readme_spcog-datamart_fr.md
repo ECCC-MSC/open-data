@@ -6,7 +6,7 @@
 
 # Données des prévisions du système de prévision cotière océan-glace (SPCOG) en format NetCDF 
 
-Les prévisions océan-glaces du modèle NEMO-CICE sont disponibles aux heures en format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est qui inclue le fleuve Saint-Laurent, le Golfe du Saint-Laurent et un region de l'océan atlantique nord-ouest. Le domain Ouest inclue la côte ouest et l'océan pacifique nord-est a une résolution aussi d'environ 2km (0.03 x 0.02 degrées). Aussi disponible est un sous-domaine a plus haute resolution (500m ou 0.008 x 0.005 degrées) qui couvre que la mer Salish.
+Les prévisions océan-glaces du modèle NEMO-CICE sont disponibles aux heures en format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine SPCOG-Est qui inclue le fleuve Saint-Laurent, le Golfe du Saint-Laurent et un region de l'océan atlantique nord-ouest. Le domain SPCOG-Ouest inclue la côte ouest et l'océan pacifique nord-est a une résolution aussi d'environ 2km (0.03 x 0.02 degrées). Aussi disponible est un sous-domaine a plus haute resolution (500m ou 0.008 x 0.005 degrées) qui couvre que la mer Salish.
 
 ## Adresse des données 
 
