@@ -93,10 +93,10 @@ Examples:
 
 List of available 3D ocean variable files: 
 
-* __SeaWaterSalinity__ : Sea water salinity at the surface model layer (psu) 
-* __SeaWaterPotentialTemp__ : Sea water potential temperature at the surface model layer (K)
-* __SeaWaterVelocityX__ : Sea water X velocity at the surface model layer (m/s)
-* __SeaWaterVelocityY__ : Sea water Y velocity at the surface model layer (m/s)
+* __SeaWaterSalinity__ : Sea water salinity (psu) 
+* __SeaWaterPotentialTemp__ : Sea water potential temperature (K)
+* __SeaWaterVelocityX__ : Sea water X velocity (m/s)
+* __SeaWaterVelocityY__ : Sea water Y velocity (m/s)
 
 List of available 2D ocean variable files: 
 
