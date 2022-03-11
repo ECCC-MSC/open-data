@@ -101,7 +101,6 @@ Liste des variables 2D disponibles dans les fichiers:
 * __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer au premier niveau du modèle (K)
 * __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau au premier niveau du modèle (m/s)
 * __SeaWaterVelocityY__ : Composante Y de la vitesse de l'eau au premier niveau du modèle (m/s)
-
 * __SeaSfcHeight__ : Hauteur de la surface de la mer par rapport au géoïde (m). Pour les Grands Lacs, la référence est IGLD85
 * __MixedLayerThickness__ : Profondeur de la couche de mélange d'après le critère de densité (m)
 * __TurboclineDepth__ : Profondeur de la turbocline (m)
