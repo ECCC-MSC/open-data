@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * added Swagger UI link in GeoMet doc
 * bug fixes:
-    * TBD
+    * fixed use-case Cathy errors when running with Jupyter Lab
 
 ## 2.4.7
 	
