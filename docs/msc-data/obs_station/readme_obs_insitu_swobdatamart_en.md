@@ -51,7 +51,12 @@ where :
 * __YYYYMMDD__ : Observation date in UTC.
 * __MSC-ID__ : Partner’s unique MSC station id.
 
-__Note__: A [list of partners stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
+__Notes__:
+
+* A [list of partners stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
+* The Department of Fisheries and Ocean moored buoys (aka Viking buoys) are seasonal. They are typically recalled in November and 
+re-deployed in June. From November to June there will be no data transmitted from the buoys
+
 
 A 30-day history is kept in these directories.
 
