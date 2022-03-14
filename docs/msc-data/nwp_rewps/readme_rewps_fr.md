@@ -16,7 +16,7 @@ Les données du SRPEV dont disponibles sur le domaine des Grands Lacs.
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
+Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_rewps-datamart_fr.md)
 
