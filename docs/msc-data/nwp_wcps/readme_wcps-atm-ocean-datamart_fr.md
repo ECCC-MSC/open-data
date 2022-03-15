@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_wcps/ocean-atmopshere/1km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/ocean-atmopshere/1km)                  
+* [https://dd.meteo.gc.ca/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/ocean-atmosphere/1km)                  
 
 où :
 
