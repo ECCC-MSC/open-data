@@ -23,7 +23,7 @@ Les données sont accessibles aux l'adresses suivantes :
 où :
 
 * __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
-* __hhh__ : Heure de la prévision [001, ..., 084] 
+* __hhh__ : Heure de la prévision [001,002,003, ..., 048] 
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
@@ -77,7 +77,7 @@ où :
 * __LVL__ : Valeur du niveau vertical [0.5m, `all` pour tous les niveaux disponibles]. Ce paramètre est absent pour la surface
 * __grille__ : Grille horizontale [ici, LatLon]
 * __resolution__ : Indique la résolution en degrées (longitudinale x latitudinale)
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [001, 002, ..., 084]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [001, 002, 003, ..., 048]
 * __.nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
