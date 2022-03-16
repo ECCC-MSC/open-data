@@ -12,9 +12,8 @@ Les Systèmes de prévision côtière océan-glace (SPCOG) effectuent des prévi
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
+Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
-* [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 * [Données NEMO du système de prévision cotière océan-glace (SPCOG) en format NetCDF disponibles sur le Datamart du SMC](readme_spcog-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
