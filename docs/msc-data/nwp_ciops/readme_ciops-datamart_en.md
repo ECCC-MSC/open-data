@@ -112,7 +112,7 @@ List of 2D ocean variables available in the files:
 * __MixedLayerThickness__ : Ocean mixed layer depth based on density criterion (m)
 * __TurboclineDepth__ : Turbocline depth (m)
 
-List of available 2D ice variables files for CIOPS-East only:
+List of 2D ice variables available in the files for CIOPS-East only:
 
 * __SeaIceVelocityX__ : Sea ice X velocity (m/s)
 * __SeaIceVelocityY__ : Sea ice Y velocity (m/s)
