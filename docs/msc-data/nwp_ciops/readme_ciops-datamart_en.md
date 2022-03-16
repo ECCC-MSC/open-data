@@ -23,7 +23,7 @@ The data can be accessed at the following URLs:
 where:
 
 * __HH__ : Model run start, in UTC [00,06,12,18]
-* __hhh__ : Forecast hour [001, ..., 084] 
+* __hhh__ : Forecast hour [001,002,003, ..., 048] 
 
 A 24h history is kept in this directory.
 
@@ -80,7 +80,7 @@ where:
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
 * __grid__ : Constant string indicating the grid projection [here, LatLon]
 * __resolution__ : Resolution in degree (latitude x longitude) 
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 084]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 048]
 * __.nc__ : file extention indicating the NetCDF format
 
 Examples:
