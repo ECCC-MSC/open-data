@@ -49,6 +49,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | nk | 68 |
 | résolution | 2km |
 
+### Domaine océanique sur la mer de Salish
 ![Image du domain océanique CIOPS - Salish Sea](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
 | Paramètre | Valeur |
