@@ -68,7 +68,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 
-`{YYYYMMDD}T{HH}Z_MSC_CIOPS-{DOMAIN}_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_CIOPS-{Domain}_{Var}_{LVLTYPE}-{LVL}_{Grid}{Resolution}_PT{hhh}H.nc`
 
 where:
 
@@ -78,14 +78,14 @@ where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __CIOPS__ : Constant string indicating that the data is from the Coastal Ice Ocean Prediction System
-* __DOMAIN__ : One of East, West or SalishSea indicating the domain
-* __VAR__ : Variable included in the file 
+* __Domain__ : Constant string indicating the domain [East, West, SalishSea]
+* __VAR__ : Variable included in the file (see the list below)
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface]
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
-* __grid__ : Constant string indicating the grid projection [here, LatLon]
-* __resolution__ : Resolution in degree (latitude x longitude) 
+* __Grid__ : Constant string indicating the grid projection [LatLon]
+* __Resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 048]
-* __.nc__ : file extention indicating the NetCDF format
+* __nc__ : File extention indicating the NetCDF format
 
 Examples:
 
