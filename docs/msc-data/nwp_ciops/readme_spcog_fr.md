@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SPCOG
 
-# Données et Produits du Système cotière de prévision océan-glace (SPCOG)
+# Données et Produits du Système de prévision océan-glace côtier (SPCOG)
 
-Le Système de prévision cotière océan-glace (SPCOG) rends disponible un prévision de 48 heure pour les eaux marine et la glace quatre fois par jour a une resolution de 1/36°. Une composante pseudo-analyse forcé aux frontières ouvertes par le systeme régional de prévision océan-glace (SRPOG) est amener vers la solutions SRPOG dans les eaux profondes est utilizé comme contitions initiales pour la composante prévisioniste. Les flues atmospherique pour les deux composantes sont fournit par le système à haute résolution de prévision déterministe (SHRPD) mélanger avec la système régional de prévision déterministe (pour SPCOG-Ouest) ou la système global de prévision déterministe (pour SPCOG-Est) ou la couverture de donnees SHRPD manques.    
+Les Systèmes de prévision côtière océan-glace (SPCOG) effectuent des prévisions de 48 heure pour l'océan et la glace marine (uniquement pour SPCOG-Est) quatre fois par jour à une résolution de 1/36°. La composante de pseudo-analyse est forcée aux frontières océaniques par le système régional de prévision océan-glace (SRPOG) et utilise une méthode de pilotage spectral dans l'océan profond pour corriger les grandes échelles vers la solution du SRPOG. Les champs de la pseudo-analyse sont utilisés afin d'initialiser la prévision de 00Z, les prévision des 06, 12 et 18 sont initialisées à partir de fichier de redémarrage à l'heure 6 de la prévision précédente. Le forçage atmosphérique pour les deux compostantes est fourni par le système à haute résolution de prévision déterministe (SHRPD) combiné (spatialement et temporellement) avec le système régional de prévision déterministe (pour SPCOG-Ouest) ou le système global de prévision déterministe (pour SPCOG-Est) pour les région qui ne sont pas couvertes par le SHRDP.    
 
 ## Accès
 
