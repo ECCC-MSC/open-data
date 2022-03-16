@@ -6,7 +6,7 @@
 
 # Data and products of the Coastal Ice Ocean Prediction System (CIOPS)
 
-The Coastal Ice Ocean Prediciton System (CIOPS) provides a 48 hour ice and ocean forecasts four times a day at 1/36° resolution. A pseudo_analysis component is forced at the open boundaries by the Regional Ice Ocean Prediciton System (RIOPS) forecasts and spectrally nudged to the RIOPS solution in the deep ocean to provide initial conditions for the forecast component. The Atmospheric fluxes for both the pseudo-analysis and forecast components are provided by the High Resolution Deterministic Prediction System blended with either the Global Deterministic Prediction System (CIOPS-East) or the Regional Deterministic Prediciton System (CIOPS-West) where coverage of the HRDPS is lacking.
+The Coastal Ice Ocean Prediciton Systems (CIOPS) provide a 48 hour ocean and ice (CIOPS-E only) forecasts four times a day at 1/36° resolution. A pseudo-analysis component is forced at the ocean boundaries by the Regional Ice Ocean Prediciton System (RIOPS) forecasts and spectrally nudged to the RIOPS solution in the deep ocean. Fields from the pseudo-analysis are used to initialize the 00Z forecast, whilst the 06, 12 adn 18Z forecasts uses a restart files saved at hour 6 of the previous forecast. The atmospheric fluxes for both the pseudo-analysis and forecast components are provided by the High Resolution Deterministic Prediction System blended (spatial and temporal) with either the Global Deterministic Prediction System (CIOPS-East) or the Regional Deterministic Prediciton System (CIOPS-West) for areas not covered by the HRDPS.
 
 ## Access
 
