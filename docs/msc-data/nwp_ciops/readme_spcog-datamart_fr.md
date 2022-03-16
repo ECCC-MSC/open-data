@@ -27,7 +27,7 @@ où :
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
-## Spécification technique de la grille  
+## Spécification technique des grilles
 
 ![Image du domain océanique CIOPS - Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
