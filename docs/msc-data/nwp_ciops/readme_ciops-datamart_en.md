@@ -29,6 +29,8 @@ A 24h history is kept in this directory.
 
 ## Technical specification of the grids
 
+### CIOPS - East
+
 ![Image of the CIOPS - East ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
 | Parameter | Value |
@@ -38,6 +40,8 @@ A 24h history is kept in this directory.
 | nk | 99 |
 | resolution | 2km |
 
+### CIOPS - West
+
 ![Image of the CIOPS - West ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
 | Parameter | Value |
@@ -46,6 +50,8 @@ A 24h history is kept in this directory.
 | nj | 785 |
 | nk | 68 |
 | resolution | 2km |
+
+### CIOPS - Salish Sea
 
 ![Image of the CIOPS - Salish Sea ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
