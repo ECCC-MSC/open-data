@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.9
+	
+* date: 2022-03-16
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Adjust cost recovery services (radar data not free)
+* bug fixes:
+    * Typo
+    
 ## 2.4.8
 	
 * date: 2022-03-11
