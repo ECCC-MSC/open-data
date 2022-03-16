@@ -55,8 +55,6 @@ A 24h history is kept in this directory.
 
 ![Image of the CIOPS - Salish Sea ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
-In the full domain shown in white, the valid dataset that covers lakes and oceans, is in color. In the rest of the domain, a "no-data" mask is used to specify the absence of data.
-
 | Parameter | Value |
 | ------ | ------ |
 | ni | 629 |
