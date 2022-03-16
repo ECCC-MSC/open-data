@@ -27,7 +27,7 @@ where:
 
 A 24h history is kept in this directory.
 
-## Technical specification of the grid
+## Technical specification of the grids
 
 ![Image of the CIOPS - East ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
