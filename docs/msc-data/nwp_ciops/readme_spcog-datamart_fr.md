@@ -29,7 +29,8 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique des grilles
 
-![Image du domain océanique CIOPS - Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
+### Domaine océanique est
+![Image du domain océanique SPCOG - Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -38,7 +39,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | nk | 99 | 
 | résolution | 1km |
 
-![Image du domain océanique of the CIOPS - Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
+![Image du domain océanique SPCOG - Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
 | Paramètre | Valeur |
 | ------ | ------ |
