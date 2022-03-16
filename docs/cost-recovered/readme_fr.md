@@ -8,9 +8,9 @@ Le Service météorologique du Canada offre les services à recouvrement de coû
 
 ## Service de désarchivage
 
-Environnement et changement climatique Canada n'a pas de service en ligne pour récupérer les données archivées. Le service de désarchivage est fourni en vertu d'une politique de recouvrement des coûts.
+Environnement et changement climatique Canada n'a pas de service en ligne pour récupérer la plupart des données archivées disponibles sur le Datamart du SMC. Le service de désarchivage est fourni en vertu d'une politique de recouvrement des coûts.
 
-Le tarif d'extraction des données archivées est de 118$/heure, avec un montant minimal de 118$. Le traitement des demandes d'extraction de données archivées prend généralement entre 2 et 4 heures. Les données elles-mêmes sont gratuites.
+Le tarif d'extraction des données archivées est de 118$/heure, avec un montant minimal de 118$. Le traitement des demandes d'extraction de données archivées prend généralement entre 1 et 4 heures (temps d'effort humain). Les données elles-mêmes sont gratuites (à l'exception des données radar brutes et des produits dérivés).
 
 ## Fil de données dédié
 

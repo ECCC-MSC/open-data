@@ -8,9 +8,9 @@ The Meteorological Service of Canada offers the following cost-recovered data se
 
 ## Archived data retrieval
 
-Environment and Climate Change Canada does not have an online service to retrieve archived data. The data retrieval service is provided under a cost recovery policy.
+Environment and Climate Change Canada does not have an online service to retrieve most or archived data available on the MSC Datamart. The data retrieval service is provided under a cost recovery policy.
 
-The processing rate for archived data retrieval is 118$/hour, with a minimum charge of one hour. Typical archived data retrieval requests require between 2-4 hours to process. The data itself is free.
+The processing rate for archived data retrieval is 118$/hour, with a minimum charge of one hour. Typical archived data retrieval requests require between 1-4 hours to process (human effort time). The data itself is free (except for raw radar data and derived products).
 
 ## Dedicated data feed
 
