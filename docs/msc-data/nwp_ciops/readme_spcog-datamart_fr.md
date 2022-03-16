@@ -39,6 +39,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | nk | 99 | 
 | résolution | 1km |
 
+### Domaine océanique ouest
 ![Image du domain océanique SPCOG - Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
 | Paramètre | Valeur |
