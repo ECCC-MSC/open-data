@@ -23,14 +23,16 @@ où :
 
 ## Spécification technique de la grille
 
+![image de la grille HREPA](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrepa/grille_hrepa.png)
+
 Ce tableau décrit des paramètres de la grille latitude-longitude sur laquelle les variables en format netCDF sont disponibles.
 
 | Paramètre de la grille                                          | Valeur du paramètre      |
 |-----------------------------------------------------------------|--------------------------|
-| ni                                                              | 2560 points              |
-| nj                                                              | 1310 points              |
+| ni                                                              | 2438                     |
+| nj                                                              | 1188                     |
 | résolution                                                      | 0,0225°                  |
-| coordonnées du premier point de grille                          | 42.2504° N ; 131.0928° W |
+| coordonnées du premier point de grille                          | 41.0269° N ; 132.5993° W |
 | orientation de la grille (par rapport à l’axe des j)            | -115.0°                  |
 
 ## Nomenclature des noms de fichiers 
@@ -49,7 +51,7 @@ où :
 * __Z__ : Fuseau horaire (UTC hour)
 * __MSC__: Chaîne constante indiquant que les données proviennent du Service météorologique du Canada 
 * __HREPA__: Chaîne constante indiquant que les données provient du système d'Analyse à haute résolution ensembliste de précipitation
-* __Var__ : Variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables/fichiers »
+* __Var__ : Variable contenu dans le fichier. Voir la liste ci-dessous
 * __Sfc__: Chaîne constante indiquant que le type de niveau est la surface
 * __Grille__ : Chaîne constante indiquant une grille lat-lon tournée
 * __resolution__ : Chaîne constante indiquant une résolution en degré de 0.025° (environ 2,5 km) dans les directions de la latitude et de la longitude
@@ -68,15 +70,13 @@ Ce fichier provient du Service météorologique du Canada et contient des donné
 
 Trois type de fichiers existent pour chaque heure de validité de AHREP, et chaque fichier contient des variables spécifiques pour les produits d'ensemble disponibles décrites ci-dessous. Pour chaque type de fichier, les variables, la définition, la période et la fréquence de disponibilité sont mentionnées.
 
-Pour la variable Precip-Accum06h
-* __pr__ : Ensemble des 25 analyses de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
-* __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
-
-Pour la variable Precip-Accum06h-Pct25
-* __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
-
-Pour la variable Precip-Accum06h-Pct75
-* __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
+* Pour les fichiers de type "Precip-Accum06h"
+    * __pr__ : Ensemble des 25 analyses de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
+    * __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
+* Pour les fichiers de type "Precip-Accum06h-Pct25"
+    * __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
+* Pour les fichiers de type "Precip-Accum06h-Pct75"
+    * __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
 
 
 ## Support
