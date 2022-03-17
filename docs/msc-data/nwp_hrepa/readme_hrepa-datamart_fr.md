@@ -71,14 +71,12 @@ Ce fichier provient du Service météorologique du Canada et contient des donné
 Trois type de fichiers existent pour chaque heure de validité de AHREP, et chaque fichier contient des variables spécifiques pour les produits d'ensemble disponibles décrites ci-dessous. Pour chaque type de fichier, les variables, la définition, la période et la fréquence de disponibilité sont mentionnées.
 
 * Pour les fichiers de type "Precip-Accum06h"
-   * __pr__ : Ensemble des 25 analyses de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
-   * __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
-
+    * __pr__ : Ensemble des 25 analyses de la quantité totale de précipitation , disponible aux heures synoptiques (mm)
+    * __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
 * Pour les fichiers de type "Precip-Accum06h-Pct25"
-   * __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
-
+    * __q025__ : 25eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
 * Pour les fichiers de type "Precip-Accum06h-Pct75"
-   * __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
+    * __q075__ : 75eme percentile de l'ensemble des analyse de la quantité totale de précipitation, disponible aux heures synoptiques (mm)
 
 
 ## Support
