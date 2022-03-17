@@ -108,7 +108,7 @@ Liste des variables 2D océanique disponibles dans les fichiers:
 * __MixedLayerThickness__ : Profondeur de la couche de mélange d'après le critère de densité (m)
 * __TurboclineDepth__ : Profondeur de la turbocline (m)
 
-Liste des variables de glace 2D disponibles dans les fichiers du SPCOG-Est seulement:
+Liste des variables 2D de glace disponibles dans les fichiers:
 
 * __SeaIceVelocityX__ : Composante X de la vitesse de la glace de mer (m/s)
 * __SeaIceVelocityY__ : Composante Y de la vitesse de la glace de mer (m/s)
