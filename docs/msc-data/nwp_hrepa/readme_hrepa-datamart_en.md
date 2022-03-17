@@ -24,14 +24,16 @@ where :
 
 ## Grid specifications
 
+![image de la grille HREPA](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrepa/grille_hrepa.png)
+
 Table lists the values of parameters of the rotated latitude-longitude grid on which the variables in netCDF format are available
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 2560 |
-| nj | 1310 | 
+| ni | 2438 |
+| nj | 1188 | 
 | résolution        | 0,0225°                  |
-| coordinates of the first grid point | 42.2504° N ; 131.0928° W | 
+| coordinates of the first grid point | 41.0269° N ; 132.5993° W | 
 | grid orientation (with respect to j axis) | -115.0° |
 
 ## File name nomenclature 
@@ -50,7 +52,7 @@ where :
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __HREPA__: Constant string indicating that data is from High Resolution Ensemble Precipitation Analysis (HREPA) system
-* __Var__ : Variables included in this file. To see the complete variable list, see section « List of variables/files»
+* __Var__ : Variables included in this file. See the list below
 * __Sfc__: Constant string indicating that the level type is Surface
 * __Grid__ : Constant string indicating the rotated latitude and longitude projection [RLatLon]
 * __resolution__ : Constant string indicating that the resolution in degree 0.025° (about 2.5 km) in both latitude and longitude directions
@@ -69,15 +71,15 @@ Note that a second variable is also included in this file, and it is the confide
 
 Three types of files exist for a given valid date; each file has its variables for the package products available in the NetCDF are described below. For each file, the variable, the definition, and frequency of availability are mentioned.
 
-For the file **Precip-Accum06h**:
-* __pr__ : 25-member ensemble of the 6-hour precipitation analyses, available at synoptic hours (mm)
-* __cfia__ : Confidence Index of the Analysis of the control member. Range of values from 0 to 1 (no unit), available at synoptic hours (mm)
+* For files of type "Precip-Accum06h":
+   * __pr__ : 25-member ensemble of the 6-hour precipitation analyses, available at synoptic hours (mm)
+   * __cfia__ : Confidence Index of the Analysis of the control member. Range of values from 0 to 1 (no unit), available at synoptic hours (mm)
 
-For the file  **Precip-Accum06h-Pct25**:
-* __q025__ : 25th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
+* For the files of type "Precip-Accum06h-Pct25":
+   * __q025__ : 25th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
 
-For the file  **Precip-Accum06h-Pct75**:
-* __q075__ : 75th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
+* For the files of type "Precip-Accum06h-Pct75":
+   * __q075__ : 75th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
 
 ## Support
 
