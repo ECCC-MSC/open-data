@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCOG](readme_ciops-datamart_fr.md) > SPCOG prévision océanique sur le Datamart du SMC
 
-# Système de prévision côtier océan-glace (SPCOG) en format NetCDF 
+# Données du Système de prévision côtier océan-glace (SPCOG) en format NetCDF 
 
-Les prévisions océan-glace sont disponibles en format NetCDF horaire sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine SPCOG-Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'Océan Atlantique. Le domaine SPCOG-Ouest inclue la Côte Ouest du Canada et le Nord-Est de l'Océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la Mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
+Les prévisions océan-glace sont disponibles en format NetCDF horaire sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'Océan Atlantique. Le domaine Ouest inclue la Côte Ouest du Canada et le Nord-Est de l'Océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la Mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
 
 ## Adresse des données 
 
@@ -23,13 +23,13 @@ Les données sont accessibles aux adresses suivantes :
 où :
 
 * __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
-* __hhh__ : Heure de la prévision [001,002,003, ..., 048] 
+* __hhh__ : Heure de la prévision [001, 002, 003, ..., 048] 
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique des grilles
 
-### Domaine océanique est
+### Domaine océanique Est
 
 ![Image du domain océanique SPCOG - Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
@@ -40,7 +40,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | nk | 99 | 
 | résolution | 2km |
 
-### Domaine océanique ouest
+### Domaine océanique Ouest
 
 ![Image du domain océanique SPCOG - Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
@@ -85,7 +85,7 @@ où :
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.03x0.02, 0.008x0.005]
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [001, 002, 003, ..., 048]
-* __.nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
+* __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
 

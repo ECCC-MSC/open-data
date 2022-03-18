@@ -83,7 +83,7 @@ where:
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface]
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
 * __Grid__ : Constant string indicating the grid projection [LatLon]
-* __Resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
+* __resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 048]
 * __nc__ : File extention indicating the NetCDF format
 
