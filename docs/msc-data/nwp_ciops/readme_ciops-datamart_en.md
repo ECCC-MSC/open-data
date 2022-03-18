@@ -1,4 +1,4 @@
-[In French](readme_spcog-datamart_fr.md)
+[In French](readme_ciops-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,7 @@
 
 # Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format
 
-The ocean-ice forecasts of NEMO-CICE from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a regional enhancement at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region only.
+The ocean-ice forecasts from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a regional enhancement at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region only.
 
 ## Data location 
 
@@ -23,13 +23,13 @@ The data can be accessed at the following URLs:
 where:
 
 * __HH__ : Model run start, in UTC [00,06,12,18]
-* __hhh__ : Forecast hour [001,002,003, ..., 048] 
+* __hhh__ : Forecast hour [001, 002, 003, ..., 048] 
 
 A 24h history is kept in this directory.
 
 ## Technical specification of the grids
 
-### CIOPS - East
+### East ocean domain
 
 ![Image of the CIOPS - East ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
@@ -40,7 +40,7 @@ A 24h history is kept in this directory.
 | nk | 99 |
 | resolution | 2km |
 
-### CIOPS - West
+### West ocean domain
 
 ![Image of the CIOPS - West ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
@@ -51,7 +51,7 @@ A 24h history is kept in this directory.
 | nk | 68 |
 | resolution | 2km |
 
-### CIOPS - Salish Sea
+### Oceanic domain over the Salish Sea
 
 ![Image of the CIOPS - Salish Sea ocean domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
@@ -60,7 +60,7 @@ A 24h history is kept in this directory.
 | ni | 629 |
 | nj | 888 |
 | nk | 39 |
-| resolution | 500km |
+| resolution | 500m |
 
 ## Filename nomenclature
 
@@ -68,7 +68,7 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 
-`{YYYYMMDD}T{HH}Z_MSC_CIOPS-{Domain}_{Var}_{LVLTYPE}-{LVL}_{Grid}{Resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_CIOPS-{Domain}_{Var}_{LVLTYPE}-{LVL}_{Grid}{resolution}_PT{hhh}H.nc`
 
 where:
 
@@ -79,11 +79,11 @@ where:
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __CIOPS__ : Constant string indicating that the data is from the Coastal Ice Ocean Prediction System
 * __Domain__ : Constant string indicating the domain [East, West, SalishSea]
-* __VAR__ : Variable included in the file (see the list below)
+* __Var__ : Variable included in the file (see the list below)
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface]
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
 * __Grid__ : Constant string indicating the grid projection [LatLon]
-* __Resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
+* __resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 048]
 * __nc__ : File extention indicating the NetCDF format
 

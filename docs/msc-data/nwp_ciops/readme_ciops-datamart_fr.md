@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCOG](readme_spcog-datamart_fr.md) > SPCOG prévision océanique sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCOG](readme_ciops-datamart_fr.md) > SPCOG prévision océanique sur le Datamart du SMC
 
-# Systèmes de prévisions cotier océan-glace (SPCOG) en format NetCDF 
+# Données du Système de prévision côtier océan-glace (SPCOG) en format NetCDF 
 
-Les prévisions océan-glace du modèle NEMO-CICE sont disponibles en format NetCDF horaire sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine SPCOG-Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'Océan Atlantique. Le domaine SPCOG-Ouest inclue la Côte Ouest du Canada et le Nord-Est de l'Océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la Mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
+Les prévisions océan-glace sont disponibles en format NetCDF horaire sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'Océan Atlantique. Le domaine Ouest inclue la Côte Ouest du Canada et le Nord-Est de l'Océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la Mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
 
 ## Adresse des données 
 
@@ -14,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF.
 
-Les données sont accessibles aux l'adresses suivantes :
+Les données sont accessibles aux adresses suivantes :
 
 * [https://dd.meteo.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/east/2km)
 * [https://dd.meteo.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/west/2km)
@@ -23,13 +23,14 @@ Les données sont accessibles aux l'adresses suivantes :
 où :
 
 * __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
-* __hhh__ : Heure de la prévision [001,002,003, ..., 048] 
+* __hhh__ : Heure de la prévision [001, 002, 003, ..., 048] 
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique des grilles
 
-### Domaine océanique est
+### Domaine océanique Est
+
 ![Image du domain océanique SPCOG - Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png)
 
 | Paramètre | Valeur |
@@ -37,9 +38,10 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | ni | 1333 | 
 | nj | 980 | 
 | nk | 99 | 
-| résolution | 1km |
+| résolution | 2km |
 
-### Domaine océanique ouest
+### Domaine océanique Ouest
+
 ![Image du domain océanique SPCOG - Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png)
 
 | Paramètre | Valeur |
@@ -50,6 +52,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | résolution | 2km |
 
 ### Domaine océanique sur la mer de Salish
+
 ![Image du domain océanique CIOPS - Salish Sea](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
 | Paramètre | Valeur |
@@ -57,7 +60,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 | ni | 629 |
 | nj | 888 |
 | nk | 39 |
-| résolution | 500km |
+| résolution | 500m |
 
 ## Nomenclature des noms de fichiers 
 
@@ -65,7 +68,7 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
-`{YYYYMMDD}T{HH}Z_MSC_WCPS_{VAR}_{LVLTYPE}-{LVL}_{grille}{resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_CIOPS-{Domain}_{Var}_{LVLTYPE}-{LVL}_{Grille}{resolution}_PT{hhh}H.nc`
 
 où :
 
@@ -74,14 +77,15 @@ où :
 * __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __CIOPS__ : Chaîne de caractères constante indiquant le modèle source : SPCOG (CIOPS en anglais) 
-* __VAR__ : Variable contenues dans le fichier 
+* __CIOPS__ : Chaîne de caractères constante indiquant le modèle source : SPCOG (CIOPS en anglais)
+* __Domain__ : Chaîne de caractères constante indiquant le domaine [East, West, SalishSea]
+* __Var__ : Variables contenues dans le fichier 
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface]
 * __LVL__ : Valeur du niveau vertical [0.5m, `all` pour tous les niveaux disponibles]. Ce paramètre est absent pour la surface
-* __grille__ : Grille horizontale [ici, LatLon]
-* __resolution__ : Indique la résolution en degrées (longitudinale x latitudinale)
+* __Grille__ : Grille horizontale [LatLon]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale [0.03x0.02, 0.008x0.005]
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [001, 002, 003, ..., 048]
-* __.nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
+* __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
 
@@ -91,14 +95,14 @@ Exemples :
 
 ## Liste des variables
 
-Liste des variables 3D océanique disponibles dans les fichiers:
+Liste des variables 3D océaniques disponibles dans les fichiers:
 
 * __SeaWaterSalinity__ : Salinité de l'eau de mer (psu) 
 * __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer (K)
 * __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau (m/s)
 * __SeaWaterVelocityY__ : Composante Y de la vitesse de l'eau (m/s)
 
-Liste des variables 2D océanique disponibles dans les fichiers:
+Liste des variables 2D océaniques disponibles dans les fichiers:
 
 * __SeaWaterSalinity__ : Salinité de l'eau de mer au premier niveau du modèle (per 1000) 
 * __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer au premier niveau du modèle (K)
