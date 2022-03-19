@@ -17,7 +17,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
-* [https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km/{HH}](https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km)
+* [https://dd.alpha.weather.gc.ca/model_hrepa/2.5km/{HH}](https://dd.alpha.weather.gc.ca/model_hrepa/2.5km)
 
 where :
 * __HH__ : validy hour of the analysis, in UTC [00,06,12,18]
