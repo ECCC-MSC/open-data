@@ -26,13 +26,13 @@ where :
 
 ![image de la grille HREPA](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrepa/grille_hrepa.png)
 
-Table lists the values of parameters of the rotated latitude-longitude grid on which the variables in netCDF format are available
+The table below lists the values of the rotated latitude-longitude grid parameters on which the variables in NetCDF format are available.
 
 | Parameter | Value |
 | ------ | ------ |
 | ni | 2438 |
 | nj | 1188 | 
-| résolution        | 0,0225°                  |
+| résolution        | 0.0225°                  |
 | coordinates of the first grid point | 41.0269° N ; 132.5993° W | 
 | grid orientation (with respect to j axis) | -115.0° |
 
@@ -55,7 +55,7 @@ where :
 * __Var__ : Variables included in this file. See the list below
 * __Sfc__: Constant string indicating that the level type is Surface
 * __Grid__ : Constant string indicating the rotated latitude and longitude projection [RLatLon]
-* __resolution__ : Constant string indicating that the resolution in degree 0.025° (about 2.5 km) in both latitude and longitude directions
+* __resolution__ : Constant string indicating that the resolution in degree 0.0225° (about 2.5 km) in both latitude and longitude directions
 * __PT0H__ : Constant string indicating an analysis, based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour.
 * __nc__ : constant string indicating the NetCDF format
 
@@ -73,7 +73,7 @@ Three types of files exist for a given valid date; each file has its variables f
 
 * For files of type "Precip-Accum06h":
     * __pr__ : 25-member ensemble of the 6-hour precipitation analyses, available at synoptic hours (mm)
-    * __cfia__ : Confidence Index of the Analysis of the control member. Range of values from 0 to 1 (no unit), available at synoptic hours (mm)
+    * __cfia__ : Confidence index of the analysis, only for the control member. Range of values from 0 to 1 (no unit), available at synoptic hours (mm)
 * For the files of type "Precip-Accum06h-Pct25":
     * __q025__ : 25th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
 * For the files of type "Precip-Accum06h-Pct75":

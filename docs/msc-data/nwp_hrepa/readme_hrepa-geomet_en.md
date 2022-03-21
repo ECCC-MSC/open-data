@@ -12,7 +12,7 @@ MSC GeoMet provides access to data produced by the High Resolution Ensemble Prec
 
 The HREPA data is [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
 
-Example of a web map configured to display the [ Precip-Accum06h-Pct25](https://geo.weather.gc.ca) layer served by MSC GeoMet:
+Example of a web map configured to display the [Precip-Accum06h-Pct25](https://geo.weather.gc.ca) layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
@@ -31,10 +31,10 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 To see which HREPA layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 Four layers are available for HREPA:
-* pr [mm]: 25 ensemble member of the 6-hour accumulation precipitation (available in files containing Precip-Accum06h substring in the filename)
-* cfia [unitless]: Confidence Index of the Analysis of the control member (available in files containing Precip-Accum06h substring in the filename) 
-* q025 [mm]: 25 percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
-* q075[mm]: 75 percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) 
+* pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)
+* cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) 
+* q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
+* q075[mm]: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 
