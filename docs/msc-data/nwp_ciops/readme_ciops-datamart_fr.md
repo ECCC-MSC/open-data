@@ -2,17 +2,17 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCOG](readme_ciops-datamart_fr.md) > SPCOG prévision océanique sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCOG](readme_ciops_fr.md) > SPCOG prévision océanique sur le Datamart du SMC
 
 # Données du Système de prévision côtier océan-glace (SPCOG) en format NetCDF 
 
-Les prévisions océan-glace sont disponibles en format NetCDF horaire sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'Océan Atlantique. Le domaine Ouest inclue la Côte Ouest du Canada et le Nord-Est de l'Océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la Mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
+Les prévisions océan-glace horaires sont disponibles en format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'océan Atlantique. Le domaine Ouest inclue la côte Ouest du Canada et le Nord-Est de l'océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
 
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
 Les données sont accessibles aux adresses suivantes :
 
@@ -22,7 +22,7 @@ Les données sont accessibles aux adresses suivantes :
 
 où :
 
-* __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
+* __HH__ : Heure en UTC du début de la simulation [00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [001, 002, 003, ..., 048] 
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
