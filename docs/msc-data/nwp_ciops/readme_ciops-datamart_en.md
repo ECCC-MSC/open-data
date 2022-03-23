@@ -22,7 +22,7 @@ The data can be accessed at the following URLs:
 
 where:
 
-* __HH__ : Model run start, in UTC [00,06,12,18]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [001, 002, 003, ..., 048] 
 
 A 24h history is kept in this directory.
