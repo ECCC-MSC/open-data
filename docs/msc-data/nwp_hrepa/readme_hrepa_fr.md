@@ -15,9 +15,9 @@ CaPA-AHREP est la version ensembliste de CaPA-AHRDP et fournit un ensemble de 25
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données NetCDF expérimentales disponibles sur DD-Alpha, le site web d'essai du Datamart du SMC](readme_hrepa-datamart_fr.md) 
+* [Données NetCDF expérimentales disponibles sur DD-Alpha](readme_hrepa-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

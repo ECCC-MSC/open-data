@@ -15,9 +15,9 @@ CaPA-HREPA is the ensemble version of CaPA-HRDPA and provides a 6-hour accumulat
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
+This experimental data is available on the MSC testing data repository [DD-Alpha](../../msc-datamart/readme_en.md):
 
-* [NetCDF data available on the MSC Datamart](readme_hrepa-datamart_en.md) 
+* [NetCDF experimental data available on DD-Alpha](readme_hrepa-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
