@@ -15,7 +15,7 @@ CaPA-AHREP est la version ensembliste de CaPA-AHRDP et fournit un ensemble de 25
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données NetCDF expérimentales disponibles sur DD-Alpha, le site web d'essai du Datamart du SMC](readme_hrepa-datamart_fr.md) 
 

@@ -15,7 +15,7 @@ CaPA-HREPA is the ensemble version of CaPA-HRDPA and provides a 6-hour accumulat
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
 * [NetCDF data available on the MSC Datamart](readme_hrepa-datamart_en.md) 
 
