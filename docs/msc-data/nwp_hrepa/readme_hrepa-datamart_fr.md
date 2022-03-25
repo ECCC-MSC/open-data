@@ -19,7 +19,8 @@ Les données sont accessibles à l'adresse suivante:
 * [https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km/{HH}](https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km)
 
 où :
-* __HH__ : Heure de validité de l'analyse, en UTC [00,06,12,18]
+
+* __HH__ : Heure de validité de l'analyse, en UTC [00, 06, 12, 18]
 
 ## Spécification technique de la grille
 
@@ -71,11 +72,16 @@ Ce fichier provient du Service météorologique du Canada et contient des donné
 Trois type de fichiers existent pour chaque heure de validité de AHREP, et chaque fichier contient des variables spécifiques, décrites ci-dessous, pour les produits d'ensemble disponibles. Pour chaque type de fichier, les variables, la définition, la période et la fréquence de disponibilité sont mentionnées.
 
 * Pour les fichiers de type "Precip-Accum06h"
+
     * __pr__ : Ensemble des 25 membres d'analyse de précipitation , accumulées sur une période de 6 heures et disponibles aux heures synoptiques (mm)
     * __cfia__ : Indice de Confiance de l'Analyse du membre controle de l'ensemble. Plage de valeurs de 0 à 1 (sans unité), disponible aux heures synoptiques (mm)
+    
 * Pour les fichiers de type "Precip-Accum06h-Pct25"
+
     * __q025__ : 25ème percentile estimé sur l'ensemble des analyses de précipitation accumulées sur une période de 6 heures, disponible aux heures synoptiques (mm)
+    
 * Pour les fichiers de type "Precip-Accum06h-Pct75"
+
     * __q075__ : 75ème percentile estimé sur l'ensemble des analyses de précipitation accumulées sur une période de 6 heures, disponible aux heures synoptiques (mm)
 
 
