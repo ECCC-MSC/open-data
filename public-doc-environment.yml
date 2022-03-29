@@ -1,0 +1,9 @@
+name: mkdocs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - mkdocs==1.3.0
+    - mkdocs-jupyter==0.20.1
