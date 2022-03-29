@@ -273,9 +273,11 @@ The following instructions take the current documentation version from `https://
         4. Make and commit the changes to upstream master
         5. Return to step 3
 8. Deploy the documentation on GitHub:
-    1. Run `mkdocs gh-deploy --ignore-version --force -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
+    1. Run `mkdocs gh-deploy --no-history -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
         * The user must have the [permissions to push to GitHub](#51-permission-requirements)
-        * Using `--force` is required if another user pushed the previous version to GitHub
+        * The `--no-history` flag replaces the entire Git history with a single commit.
+        * The `--ignore-version` flag may be used when deploying the documentation with a new version of `mkdocs` for the first time.
+        * Using `--force` may be required if another user pushed the previous version to GitHub. It is recommended not to use this flag by default.
 9. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
 10. Desactivate your conda environment: `conda deactivate`
 11. Return to the master branch: `git checkout master`
