@@ -181,13 +181,13 @@ Prior applying any change to the [licence accompanying the documentation](licenc
     * Go to your fork master branch: `git checkout master`
     * Update local master with `public-doc` source code: `git pull upstream master`
     * (optional) Push updated master to your fork: `git push`
-   
+
 Tips:
 
 * Use `git status` to learn on which branch you currently are and get additional status info
 * Use `git remote -v` to confirm `origin` and `upstream` are properly set
 * Use `git checkout master` to go back to the master branch of your fork
-    
+
 ## 4.4 - GitHub content update
 
 To accommodate remote students, in the spirit of 'open by default' and to allow outside contributions, the `master` branch of this repository is available on GitHub in addition to the `gh-pages` branch required for GitHub Pages. Given the main repository remains the internal GCcode one, it is important to keep the `master` branch on GitHub in sync when changes are known to be made to it.
@@ -203,13 +203,13 @@ Pull current GCcode version before making changes and commit and merge changes o
 
 
 # 5 - Deploying the documentation
-  
+
 ## 5.1 - Permission requirements
-  
+
 The list of colleagues with appropriate permissions to publish on the GitHub repos is found [here](https://github.com/ECCC-MSC/open-data/settings/collaboration): Sandrine for CMOA, Benoit and David for CMOI, and Alex, Tom, Étienne and Félix for GODS.
 
 The `eccc-msc` codepen.io account is managed by Étienne.
- 
+
 ## 5.2 - Getting ready
 
 In order to properly deploy the documentation using [mkdocs](https://www.mkdocs.org/), the user will also need to create a conda environment with Python 3.7 installed. Below is a step-by-step guide for publishing the documentation to the GitHub [eccc-msc/open-data repository](https://github.com/ECCC-MSC/open-data).
@@ -232,10 +232,8 @@ To install Conda, please choose a location in your work environment that has a s
     * when asked about running the `conda init`, set to `yes`
 4. Start a new terminal session so you can access conda commands
 5. Run `conda config --set auto_activate_base false`. This makes it so conda does not start by default
-6. Identify the Python version installed and `python3 --version` and use this version at the next step
-7. Create a new conda environment named **mkdocs**: `conda create -n mkdocs python=3.7 && conda activate mkdocs`
-8. Within the root of the public documentation directory, use `pip` to install the Python libraries needed for our documentation: `pip install -r requirements.txt`
-9. You can deactivate the environment with `conda deactivate`
+6. Create a new conda environment named **mkdocs**: `conda env create -f public-doc-environment.yml`.
+7. To activate the environment run the `conda activate mkdocs` command. Once activated, you can deactivate the environment with `conda deactivate`.
 
 ### 5.2.2 - Removing an existing conda environment
 
