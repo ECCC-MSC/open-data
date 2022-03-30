@@ -14,6 +14,8 @@ Only the data assimilation component was modified to include the following obser
 
 Addition of GPSRO (Global Positioning System Radio Occultation) observations from the GRACE-C and GRACE-D satellites.
 
+## Wednesday December 1st, 2021
+
 #### Upgrade to Version 8.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
 
 On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 8.0.0.
