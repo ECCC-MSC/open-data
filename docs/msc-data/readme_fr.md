@@ -62,7 +62,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système régional de prévision d'ensemble de vague (SRPEV)](nwp_rewps/readme_rewps_fr.md)
     * —
     * [Système global de prévision déterministe d'onde de tempête (SGPDOT)](nwp_gdsps/readme_gdsps_fr.md)
-    * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
     * [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](nwp_resps/readme_resps_fr.md)
     * —
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)

@@ -12,6 +12,13 @@
 
 * [Système de prévision du cycle de l'eau (SPCE) 3.1.0](nwp_wcps/changelog_wcps_fr.md#le-jeudi-24-fevrier-2022)
 
+### 16 Février 2022
+
+* [Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-16-fevrier-2022)
+* [Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-16-fevrier-2022)
+* [Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-mercredi-16-fevrier-2022)
+* [Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-16-fevrier-2022)
+
 ## 2021
 
 ### 1er Décembre 2021

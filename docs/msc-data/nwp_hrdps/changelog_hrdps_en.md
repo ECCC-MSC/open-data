@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Wednesday February 16, 2022
+
+### Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the HRDPS
+
+On Wednesday February 16th, 2022, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.0.0 of the High Resolution Deterministic Prediction System (HRDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of GPSRO (Global Positioning System Radio Occultation) observations from the GRACE-C and GRACE-D satellites.
+
 ## Wednesday December 1st, 2021
 
 ### Major upgrade to Version 6.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
