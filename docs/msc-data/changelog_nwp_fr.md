@@ -8,6 +8,10 @@
 
 ## 2022
 
+## 31 mars 2022
+
+* [Fin du service pour le Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/changelog_rdsps_fr.md#le-jeudi-31-mars-2022)
+
 ### 24 Février 2022
 
 * [Système de prévision du cycle de l'eau (SPCE) 3.1.0](nwp_wcps/changelog_wcps_fr.md#le-jeudi-24-fevrier-2022)

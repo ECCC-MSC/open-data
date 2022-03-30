@@ -6,6 +6,14 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe d’onde de tempête (SRPDOT)
 
+## Le jeudi 31 mars 2022
+
+### Fin du service pour le Système régional de prévision déterministe d'onde de tempête (SRPDOT)
+
+Le jeudi 31 mars, le Système régional de prévision déterministe d'onde de tempête (SRPDOT), opérationnel depuis novembre 2017, est retiré de la production opérationnelle du Centre météorologique canadien (CMC). Tel qu'annoncé en décembre 2021, ce système est remplacé par le [Systeme global de prévision déterministe d'onde de tempête (SGPDOT)](/../nwp_gdsps/readme_gdsps_fr.md).
+
+[Note officielle](https://dd.meteo.gc.ca/doc/genots/2022/03/29/NOCN03_CWAO_291746___07122) 
+
 ## Le mercredi 1er décembre 2021
 
 ### Remplacement du Système régional de prévision déterministe d’onde de tempête (SRPDOT) du Centre météorologique canadien (CMC)

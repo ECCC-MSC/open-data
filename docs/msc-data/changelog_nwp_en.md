@@ -8,6 +8,10 @@
 
 ## 2022
 
+### March 31st, 2022
+
+* [Retirement of the Regional Deterministic Storm-surge Prediction System (RDSPS)](nwp_rdsps/changelog_rdsps_en.md#thursday-march-31-2022)
+
 ### February 24th, 2022
 
 * [Water Cycle Prediction System (WCPS) 3.1.0](nwp_wcps/changelog_wcps_en.md#thursday-february-24th-2022)
