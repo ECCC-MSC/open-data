@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mercredi 16 février 2022
+
+### Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SGPE
+
+Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son système global de prévision d'ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites GRACE-C et GRACE-D.
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système global de prévision d'ensemble (SGPE) 7.0.0 du Centre météorologique canadien (CMC)

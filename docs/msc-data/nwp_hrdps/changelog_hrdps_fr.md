@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mercredi 16 février 2022
+
+### Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SHRPD
+
+Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites GRACE-C et GRACE-D.
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour majeure vers la version 6.0.0 du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien

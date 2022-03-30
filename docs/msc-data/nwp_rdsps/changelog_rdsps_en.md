@@ -6,6 +6,14 @@
 
 # Chronology of changes to the Regional Deterministic Storm-surge Prediction System (RDSPS)
 
+## Thursday March 31st, 2022
+
+### Retirement of the Regional Deterministic Storm-surge Prediction System (RDSPS)
+
+On Thursday March 31st, 2022, the Canadian Meteorological Centre (CMC) will retire the Regional Deterministic Storm-surge Prediction System (RDSPS), that has been operational since November 2017. As announced on December 2021, this system is replaced by the [Global Deterministic Storm-surge Prediction System (GDSPS)](/../nwp_gdsps/readme_gdsps_fr.md).
+
+[Official note](https://dd.meteo.gc.ca/doc/genots/2022/03/29/NOCN03_CWAO_291746___07122) 
+
 ## Wednesday December 1st, 2021
 
 ### Replacement of the Regional Deterministic Storm-surge Prediction System (RDSPS) at the Canadian Meteorological Centre (CMC)
