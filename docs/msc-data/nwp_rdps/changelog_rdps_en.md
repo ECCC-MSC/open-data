@@ -8,6 +8,8 @@
 
 ## Wednesday February 16, 2022
 
+### Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the RDPS
+
 On Wednesday February 16th, 2022, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.0.0 of the Regional Deterministic Prediction System (RDPS).
 
 Only the data assimilation component was modified to include the following observations:
