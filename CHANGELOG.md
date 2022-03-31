@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.12
+	
+* date: 2022-03-30
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Remove RDSPS page in the NWP data list
+    * Add several pages in the main NWP changelog (GPSRO, RDSPS retirement)
+* bug fixes:
+    * Typo
+
 ## 2.4.11
 	
 * date: 2022-03-28
