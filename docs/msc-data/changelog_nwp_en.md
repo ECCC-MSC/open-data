@@ -33,6 +33,9 @@ Atmosphere
     * [Regional Deterministic Precipitation Analysis system (RDPA) 5.2.0](nwp_rdpa/changelog_rdpa_en.md#wednesday-december-1st-2021)
     * [High Resolution Deterministic Precipitation Analysis System (HRDPA) 5.0.0](nwp_hrdpa/changelog_hrdpa_en.md#wednesday-december-1st-2021)
     * [High-Resolution Ensemble Precipitation Analysis (HREPA) 1.3.0](nwp_hrepa/changelog_hrepa_en.md#wednesday-december-1st-2021)
+* Surface Analysis
+    * [Canadian Land Data Assimilation System in HRDPS (CaLDAS-HRDPS) 3.0.3](nwp_caldas-hrdps/changelog_caldas-hrdps_en.md#wednesday-december-1st-2021)
+    * [Canadian Land Data Assimilation System in National Surface and River Prediction System (CaLDAS-NSRPS) 3.1.0](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#wednesday-december-1st-2021)
 * Air quality:
     * [Regional Air Quality Deterministic Prediction System (RAQDPS) v23](nwp_raqdps/changelog_raqdps_en.md#wednesday-december-1st-2021)
     * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_en.md#wednesday-december-1st-2021)
@@ -56,7 +59,7 @@ Water, ocean and ice
 * [Water Cycle Prediction System (WCPS) 3.0.0](nwp_wcps/changelog_wcps_en.md#wednesday-december-1st-2021)
 * [Coupled Atmosphere-Ocean-Ice Forecast System - Gulf of St-Lawrence (RDPS-CGSL) replaced with WCPS](nwp_rdps-cgsl/changelog_rdps-cgsl_en.md#wednesday-december-1st-2021)
 * 
-* [Canadian Land Data Assimilation System with Satellite observations (CaLDAS-Sat) 3.1.0](nwp_caldas-sat/changelog_caldas-sat_en.md#wednesday-december-1st-2021)
+
 * [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.0.0](nwp_hrdlps/changelog_hrdlps_en.md#wednesday-december-1st-2021)
 * [Deterministic Hydrological Prediction System (DHPS) 3.1.0](nwp_dhps/changelog_dhps_en.md#wednesday-december-1st-2021)
 * [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#wednesday-december-1st-2021)
