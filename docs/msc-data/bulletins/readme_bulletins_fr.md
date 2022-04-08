@@ -14,6 +14,7 @@ Cette page décrit les données et produits des bulletins alphanumériques et en
 
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
+* [Données (non géoréférencées) disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections/bulletins-realtime)
 * [Données alphanumériques disponibles sur le Datamart du SMC](readme_bulletins-datamart_fr.md) 
 * [Données binaires disponibles sur le Datamart du SMC](readme_bulletinsbufr-datamart_fr.md)
 

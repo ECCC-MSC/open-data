@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.13
+	
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Add link to GeoMet-OGC-API for bulletins
+* bug fixes:
+    * None
+
 ## 2.4.12
 	
 * date: 2022-03-30
