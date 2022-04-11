@@ -12,9 +12,9 @@ This page describes the data and products of the alphanumerical and binary bulle
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md)
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Data (non-georeferenced) available from the GeoMet-OGC-API web services](https://api.weather.gc.ca/collections/bulletins-realtime)
+* [Data (non-georeferenced) available via the GeoMet-OGC-API web services](https://api.weather.gc.ca/collections/bulletins-realtime)
 * [Alphanumerical data available on the MSC Datamart](readme_bulletins-datamart_en.md) 
 * [Binary data available on the MSC Datamart](readme_bulletinsbufr-datamart_en.md) 
 

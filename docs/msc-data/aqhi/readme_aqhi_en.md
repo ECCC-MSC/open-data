@@ -13,11 +13,14 @@ The formulation of the AQHI may change over time to reflect new understanding as
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md):
 
+* [Data available via the GeoMet-OGC-API web services](https://api.weather.gc.ca/collections):
+    * [AQHI - Observations](https://api.weather.gc.ca/collections/aqhi-observations-realtime)
+    * [AQHI - Forecasts](https://api.weather.gc.ca/collections/aqhi-forecasts-realtime)
+* [GeoJSON data for AQHI, available on HPFX, the alternative server of the MSC Datamart](readme_aqhi-datamartjson_en.md)
 * [CSV data for AQHI, available on the MSC Datamart](readme_aqhi-datamartcsv_en.md), including chemical species forecast data from numerical air quality models
 * [XML data for AQHI, available on the MSC Datamart](readme_aqhi-datamartxml_en.md) 
-* [GeoJSON data for AQHI, available on HPFX, the alternative server of the MSC Datamart](readme_aqhi-datamartjson_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
