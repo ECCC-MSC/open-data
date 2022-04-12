@@ -13,11 +13,14 @@ Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouve
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les API / services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
+* [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections) :
+    * [CAS - Observations](https://api.meteo.gc.ca/collections/aqhi-observations-realtime)
+    * [CAS - Prévisions](https://api.meteo.gc.ca/collections/aqhi-forecasts-realtime)
+* [Données pour la CAS, disponibles en format GeoJSON sur HPFX, le serveur alternatif du Datamart du SMC](readme_aqhi-datamartjson_fr.md)
 * [Données pour la CAS, disponibles en format CSV sur le Datamart du SMC](readme_aqhi-datamartcsv_fr.md), dont des données de prévisions d'espèces chimiques provenant de modèles numériques de qualité de l'air
 * [Données pour la CAS, disponibles en format XML sur le Datamart du SMC](readme_aqhi-datamartxml_fr.md)
-* [Données pour la CAS, disponibles en format GeoJSON sur HPFX, le serveur alternatif du Datamart du SMC](readme_aqhi-datamartjson_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

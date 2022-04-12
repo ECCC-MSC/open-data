@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * None
 * improvements:
-    * Add link to GeoMet-OGC-API for bulletins
+    * Add link to GeoMet-OGC-API for bulletins and AQHI obs+fcst
 * bug fixes:
     * None
 
