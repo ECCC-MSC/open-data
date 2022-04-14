@@ -14,9 +14,13 @@ Notez que la visualiseur de l'ECLT affiche les enregistrements actuels pour le m
 
 ### Comment accéder aux données
 
-Ces données sont disponibles via l'API et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.weather.gc.ca/)
+* [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/) :
+    * [ECLT - Records des Extrêmes Quotidiens - Précipitation](https://api.meteo.gc.ca/collections/ltce-precipitation)
+    * [ECLT - Records des Extrêmes Quotidiens - Chute de neige](https://api.meteo.gc.ca/collections/ltce-snowfall)
+    * [ECLT - Records des Extrêmes Quotidiens - Température](https://api.meteo.gc.ca/collections/ltce-temperature)
+    * [ECLT - Stations Climatologiques Virtuelles ](https://api.meteo.gc.ca/collections/ltce-stations)
 * Données à venir sur le Datamart du SMC
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
