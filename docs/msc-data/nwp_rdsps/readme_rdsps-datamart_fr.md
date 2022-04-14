@@ -8,22 +8,6 @@
 
 Cette page décrit les données [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](readme_rdsps_fr.md) disponibles en format NetCDF.
 
-## Adresse des données
-
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
-
-Les données sont disponibles via le protocole HTTP. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
-
-Les données sont accessibles à adresse suivante :
-
-* [https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf/{HH}/](https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf)
-
-où :
-
-* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécification technique de la grille
 
 ![Image de la grille du SRPDOT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdsps/grille_rdsps.png)
