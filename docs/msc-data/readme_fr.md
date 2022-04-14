@@ -87,6 +87,10 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
 
+## Données ouvertes retirées
+
+* [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
+
 ## Changements aux systèmes de production de données opérationnels
 
 Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le [journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) est disponible](changelog_nwp_fr.md).

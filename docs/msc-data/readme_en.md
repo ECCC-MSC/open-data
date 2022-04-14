@@ -87,6 +87,10 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)
 
+## Retired open data
+
+* [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
+
 ## Changes to operational data production systems
 
 Changes to operational data production systems are documented in the dataset subpages. A [chronological summary of changes is provided for Numerical Weather Prediction (NWP) systems](changelog_nwp_en.md).

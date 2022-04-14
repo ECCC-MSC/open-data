@@ -8,22 +8,6 @@
 
 This page describes the [Regional Deterministic Storm Surge Prediction System](readme_rdsps_en.md) data available in NetCDF format.
 
-## Data location
-
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
-
-The data is available via the HTTP protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a NetCDF file.
-
-The data can be accessed at the following address :
-
-* [https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf/{HH}/](https://dd.weather.gc.ca/model_rdsps/atlantic-nw/netcdf)
-
-where :
-
-* __HH__ : Model run start, in UTC [00 or 12]
-
-A history of 24 hours is maintained in this directory.
-
 ## Grid technical specification
 
 ![RDSPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdsps/grille_rdsps.png)
