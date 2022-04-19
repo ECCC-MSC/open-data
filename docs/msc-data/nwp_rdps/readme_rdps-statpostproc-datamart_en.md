@@ -63,7 +63,7 @@ Filename example: 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
 * AirTemp: Surface air dry-bulb temperature (K)
 * Dewpoint: Surface dew point temperature (K)
 * WindSpeed: Surface wind speed (km/h)
-* WindDir: Surface wind direction (True degree)
+* WindDir: Surface wind direction (°)
 
 ## Support
 
