@@ -14,9 +14,13 @@ Note that the database is updated twice daily with the most recent data being va
 
 ### How to access the data
 
-This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API and web services.
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services:
 
-* [Data available from the GeoMet-OGC-API web services](https://api.weather.gc.ca/)
+* [Data available via the GeoMet-OGC-API web services](https://api.weather.gc.ca/):
+    * [LTCE - Daily Extremes of Records - Precipitation](https://api.weather.gc.ca/collections/ltce-precipitation)
+    * [LTCE - Daily Extremes of Records - Snowfall](https://api.weather.gc.ca/collections/ltce-snowfall)
+    * [LTCE - Daily Extremes of Records - Temperature](https://api.weather.gc.ca/collections/ltce-temperature)
+    * [LTCE - Virtual Climate Stations](https://api.weather.gc.ca/collections/ltce-stations)
 * Data upcoming on the MSC Datamart
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.

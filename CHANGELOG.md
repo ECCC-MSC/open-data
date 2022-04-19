@@ -17,7 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * RDPS UMOS page
     * New section: retired open data (RDSPS added)
 * improvements:
-    * Add link to GeoMet-OGC-API for bulletins and AQHI obs+fcst
+    * Add link to GeoMet-OGC-API for bulletins, AQHI obs+fcst and LTCE
 * bug fixes:
     * None
 
