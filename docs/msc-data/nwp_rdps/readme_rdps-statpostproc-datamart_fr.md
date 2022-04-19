@@ -64,7 +64,7 @@ Exemple de nom de fichier: 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072
 * AirTemp: Température de l'air du thermomètre sec à la surface (K)
 * Dewpoint: Température du point de rosée à la surface (K)
 * WindSpeed: Vitesse du vent à la surface (km/h)
-* WindDir: Direction du vent à la surface (degré vrai)
+* WindDir: Direction du vent à la surface (°)
 
 ## Support
 
