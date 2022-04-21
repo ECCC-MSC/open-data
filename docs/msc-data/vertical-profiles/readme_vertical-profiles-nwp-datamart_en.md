@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The vertical profiles files are available at the following address :
 
-[https://dd.weather.ec.gc.ca/vertical_profile/forecast/csv](https://dd.weather.ec.gc.ca/vertical_profile/forecast/csv)
+[https://dd.weather.gc.ca/vertical_profile/forecast/csv](https://dd.weather.gc.ca/vertical_profile/forecast/csv)
 
 The data are available at 00Z and 12Z, from 00h to 48h, every 3 hours.
 
