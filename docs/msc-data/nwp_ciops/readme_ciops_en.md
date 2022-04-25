@@ -12,9 +12,9 @@ The Coastal Ice Ocean Predicton System (CIOPS) provides a 48 hour ocean and ice 
 
 ### How to access the data 
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data services:
 
-* [NetCDF data available on the MSC Datamart](readme_ciops-datamart_en.md)  
+* [NetCDF data available on HPFX, the alternative server of the MSC Datamart](readme_ciops-datamart_en.md)  
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

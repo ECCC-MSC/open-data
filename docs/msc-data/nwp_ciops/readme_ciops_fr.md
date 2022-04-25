@@ -14,7 +14,7 @@ Le Système de prévision côtier océan-glace (SPCOG) effectue des prévisions 
 
 Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
-* [Données NetCDF disponibles sur le Datamart du SMC](readme_ciops-datamart_fr.md)
+* [Données NetCDF disponibles sur HPFX, le serveur alternatif du Datamart du SMC](readme_ciops-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

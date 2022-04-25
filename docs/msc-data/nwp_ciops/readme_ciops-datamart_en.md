@@ -10,18 +10,19 @@ The ocean-ice forecasts from the CIOPS-East and CIOPS-West systems are available
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+HPFX data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible via web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/east/2km)
-* [https://dd.weather.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/west/2km)
-* [https://dd.weather.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/salish-sea/500m)                  
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/east/2km/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/)
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/west/2km/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/)
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/)                  
 
 where:
 
+* YYYYMMDD : Year, month and day
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [001, 002, 003, ..., 048] 
 
