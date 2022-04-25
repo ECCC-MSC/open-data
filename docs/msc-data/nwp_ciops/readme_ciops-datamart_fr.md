@@ -10,22 +10,23 @@ Les prévisions océan-glace horaires sont disponibles en format NetCDF sur une 
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données hébergées sur HPFX, le [serveur alternatif du Datamart du SMC](../../msc-datamart/readme_fr) peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/east/2km)
-* [https://dd.meteo.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/west/2km)
-* [https://dd.meteo.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/salish-sea/500m) 
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/east/2km/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/)
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/west/2km/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/)
+* [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://hpfx.collab.science.gc.ca/) 
 
 où :
 
+* __YYYYMMDD__ : Année, mois et jour 
 * __HH__ : Heure en UTC du début de la simulation [00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [001, 002, 003, ..., 048] 
 
-Un historique de 24h de prévision est stocké dans ce répertoire.
+Un historique de 24h de prévision est stocké dans ces répertoires.
 
 ## Spécification technique des grilles
 
