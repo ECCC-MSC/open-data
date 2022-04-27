@@ -55,6 +55,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * **Eau, océan et glace**
     * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
     * [Système régional de prévision océan-glace (SRPOG)](nwp_riops/readme_riops_fr.md)
+    * [Système de prévision côtier océan-glace (SPCOG)](nwp_ciops/readme_ciops_fr.md)
     * —
     * [Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/readme_gdwps_fr.md)
     * [Système global de prévision d'ensemble de vague (SGPEV)](nwp_gewps/readme_gewps_fr.md)
@@ -66,7 +67,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * —
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
     * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
-    * [Système de prévision côtier océan-glace (SPCOG)](nwp_ciops/readme_ciops_fr.md)
 
 ## Données climatiques
 
