@@ -66,6 +66,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * —
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
     * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
+    * [Système de prévision côtier océan-glace (SPCOG)](nwp_ciops/readme_ciops_fr.md)
 
 ## Données climatiques
 
