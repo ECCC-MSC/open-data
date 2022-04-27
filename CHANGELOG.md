@@ -10,16 +10,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.13
 	
-* date: TBD
+* date: 2022-04-27
 * announcements:
     * Not announced
 * new content:
-    * RDPS UMOS page
+    * RDPS UMOS page (not added to the NWEP main page)
+    * CIOPS page
     * New section: retired open data (RDSPS added)
 * improvements:
     * Add link to GeoMet-OGC-API for bulletins, AQHI obs+fcst and LTCE
 * bug fixes:
-    * None
+    * Fix vertical profile datatset access on MSC Datamart
 
 ## 2.4.12
 	
