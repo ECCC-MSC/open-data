@@ -24,7 +24,7 @@ where:
 
 * YYYYMMDD : Year, month and day
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
-* __hhh__ : Forecast hour [001, 002, 003, ..., 048] 
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048] 
 
 A 24h history is kept in these directories.
 
@@ -85,7 +85,7 @@ where:
 * __LVL__ : Vertical level value where applicable [0.5m, `all` for all available levels]
 * __Grid__ : Constant string indicating the grid projection [LatLon]
 * __resolution__ : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] 
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 001, 002, ..., 048]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]
 * __nc__ : File extention indicating the NetCDF format
 
 Examples:
