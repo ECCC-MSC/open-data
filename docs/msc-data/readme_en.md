@@ -55,6 +55,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * **Water, ocean and ice**
     * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
     * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
+    * [Coastal Ice Ocean Prediction System (CIOPS)](nwp_ciops/readme_ciops_en.md)
     * —
     * [Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/readme_gdwps_en.md)
     * [Global Ensemble Wave Prediction System (GEWPS)](nwp_gewps/readme_gewps_en.md)
@@ -66,7 +67,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * —
     * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
     * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
-    * [Coastal Ice Ocean Prediction System (CIOPS)](nwp_ciops/readme_ciops_en.md)
 
 ## Climate data
 
