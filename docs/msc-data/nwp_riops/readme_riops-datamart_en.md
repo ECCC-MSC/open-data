@@ -28,7 +28,7 @@ where :
 
 * __nd__ : Number of spatial dimensions of the forecast fields [2d or 3d]
 * __HH__ : Start hour of model run in UTC [00, 06, 12, 18]
-* __hhh__ : Forecast hour [000, 001, 002, ..., 048] 
+* __hhh__ : Forecast hour [000, 001, 002, ..., 084] 
 
 A history of 2 days of forecast is kept in this directory.
 
@@ -52,7 +52,7 @@ where :
 * __LVL__ : Vertical level [SFC, DBS-0.5m, DBS-all]; SFC for surface, DBS for Depth Below Surface, 0.5m for depth of 0.5m below the surface, 'all' for all depths 
 * __Grid__ : Grid mapping projection [PS]
 * __resolution__ : Horizontal resolution [5km], stands for 5 km horizontal resolution at 60°N latitude
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048]
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 084]
 * __nc__ : Constant string indicating the NetCDF format
 
 
