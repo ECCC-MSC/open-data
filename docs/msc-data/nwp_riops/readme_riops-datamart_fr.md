@@ -28,7 +28,7 @@ où :
 
 * __nd__ : Numéro de la dimension spatiale des champs de prévision [2d ou 3d] 
 * __HH__ : Heure en UTC du début de la passe du modèle[00, 06, 12, 18]
-* __hhh__ : Heure de la prévision [000, 001, 002, ..., 048]
+* __hhh__ : Heure de la prévision [000, 001, 002, ..., 084]
 
 Un historique de 2 jours de prévision est disponible dans ce répertoire.
 
@@ -52,7 +52,7 @@ où :
 * __LVL__ : Niveau vertical [SFC, DBS-0.5m, DBS-all]; SFC pour surface, DBS pour la profondeur sous la surface (Depth Below Surface), 0.5m pour 0.5 mètres de profondeur sous la surface et 'all' pour toutes les profondeurs
 * __Grille__ : Projection cartographique [PS], PS pour polaire stéréographique 
 * __resolution__ : Résolution horizontale [5km], signifie une résolution de 5 km à une latitude 60°N
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 084]
 * __nc__ : Chaîne de caractères constante indiquant le format NetCDF
 
 Exemples de noms de fichier : 
