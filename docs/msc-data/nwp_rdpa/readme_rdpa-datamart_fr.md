@@ -122,7 +122,7 @@ Le fichier a été créé par le Service météorologique canadien (MSC) et cont
 
 Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse finale d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 24 heures. Les données sont sur une grille lat-lon tournée à une résolution de 10 km (RLatLon0.09). L’analyse a été produite le 02 mars 2022 à 12Z (2022030212). L’intervalle de 24 heures dans lequel les précipitations sont analysées est de 2022030212 à 2022030312.
 
-NOTE: Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.
+__NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.
 
 ## Liste des variables
 

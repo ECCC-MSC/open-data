@@ -6,7 +6,7 @@
 
 # Regional Deterministic Precipitation Analysis (RDPA - CaPA) data in GRIB2 format
 
-The [Regional Deterministic Precipitation Analysis (RDPA)](readme_rdpa_en.md) based on the Canadian Precipitation Analysis (CaPA) system is on a domain that corresponds to that of the operational regional model, i.e. the Regional Deterministic Prediction System (RDPS-LAM3D) except for areas over the Pacific ocean where the western limit of the RDPA domain is slightly shifted eastward with respect to the regional model domain. The resolution of the RDPA analysis is identical to the resolution of the operational regional system RDPS LAM3D. The fields in the RDPA GRIB2 dataset are on a polar-stereographic (PS) grid covering North America and adjacent waters with a 10 km resolution at 60 degrees north. 
+This page describes the [Regional Deterministic Precipitation Analysis (RDPA)](readme_rdpa_en.md) data based on the Canadian Precipitation Analysis (CaPA) system. 
 
 ## Data location
 
@@ -16,7 +16,8 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weatheroffice.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
+* Polar-stereographic grid: [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
+* Rotated lat-lon grid: [https://dd.weather.gc.ca/model_rdpa/10km/{hh}](https://dd.weather.gc.ca/model_rdpa/10km/{hh})
 
 where :
 
@@ -24,7 +25,9 @@ where :
 
 A 30-day history is kept in this directory.
 
-## Technical specification of the grid
+## Technical specification of the grids
+
+* __Polar-stereographic grid__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
 
@@ -39,9 +42,26 @@ Values given to the parameters of the stereographic polar grid:
 | (i,j) coordinate of North Pole | (456.2; 732.4) |
 | grid orientation (with respect to j axis) | -111.0° |
 
+* __Rotated lat-lon grid__
+
+![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
+
+The following table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:
+
+| Parameter | Valeur |
+| ------ | ------ |
+| ni | 1102 |
+| nj | 1076 | 
+| resolution at 60° N | 10 km |
+| coordinate of the first grid point | -31.76° N ; 92.40° W |
+
+__Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
+
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.
+
+### Polar-stereographic grid
 
 The files have one of the following nomenclature :
 
@@ -72,17 +92,42 @@ Example of file name :
 CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains data of the regional deterministic precipitation analysis (RDPA).
-It contains the preliminary analysis of the accumulated precipitation represented here by APCP over a 6 (006) hour time interval starting at 2015011206 and ending at 2015011212. It is considered preliminary because the analysis has been produced using observations collected in a short 0100 hour period i.e. before all observations have been collected.
+It contains the preliminary analysis of the accumulated precipitation represented here by APCP over a 6 (006) hour time interval starting at 2015011206 and ending at 2015011212. It is considered preliminary because the analysis has been produced using observations collected in a short 0100 hour period i.e. before all observations have been collected. The data is on a polar-stereographic grid at 10km resolution (ps10km). The file name contains the valid time of the analysis which in this case is 2015011212_000.
 
-The data is on a polar-stereographic grid at 10km resolution (ps10km).
-The file name contains the valid time of the analysis which in this case is 2015011212_000.
+### Rotated lat-lon grid at 10km resolution
 
-The data encoded in GRIB2 format (.grib2).
-Note that a second variable is also included in this file and it is the confidence index for the analysis.
+Files have one of the following nomenclatures:
 
-## Levels
+* {YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
+* {YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
 
-RDPA variables are only available for the surface level.
+where:
+
+* __YYYYMMDD__: Year, month and day of the beginning of the forecast
+* __T__ : Time delimiter according to ISO8601 norms
+* __HH__: UTC run time [00, 12]
+* __Z__ : Time zone (UTC hour)
+* __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
+* __RDPA__ : Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected
+* __RDPA-Prelim__: Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected
+* __Sfc__ : Constant string indicating that the surface is the vertical level 
+* __RLatLon0.09__ : Constant string indicating a rotated lat-lon grid with 0.09 deg resolution (about 10km)
+* __PT0H__ : Based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour. Here PT0H indicates an analysis.
+* __grib2__ : constant string indicating the GRIB2 format is used
+
+Examples of files names :
+
+* 20220301T00Z_MSC_RDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2
+
+The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a preliminary analysis of precipitation accumulation represented by the APCP variable over a 6 hour interval. The data are on a lat-lon rotated grid at a 10 km resolution (RLatLon0.09). The analysis was produced on March 01, 2022 at 00Z (20220301T00Z). The 006-hour interval in which the precipitation is analyzed is 2022030100 to 2022030106. 
+
+* 20220302T12Z_MSC_RDPA_APCP-Accum24h_Sfc_RLatLon0.09_PT0H.grib2
+
+
+The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a final analysis of precipitation accumulation represented by the APCP variable over a 24-hour interval. The data are on a lat-lon grid rotated to a 10 km resolution (RLatLon0.09). The analysis was produced on 02 March 2022 at 12Z (2022030212). The 24-hour interval in which precipitation is analyzed is 2022030212 to 2022030312.
+
+__NOTE__: A second variable is also included in this file and it is the confidence index for the analysis.
+
 
 ## List of variables
 
@@ -91,10 +136,10 @@ This table provides the variable name, level, abbreviation, units and a link to 
 
 |Number  |	                Variable 	                                       | Level      | 	Abbreviation    |	Units    	 | Description        |
 |--------|---------------------------------------------------------------------|------------|-------------------|----------------|--------------------|
-| 0 	 | Analysis of Accumulated Precipitation on a 06hr or 24hr interval    | Surface 	| APCP-0[06,24]_SFC_0| 	kg m-2       |[Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)     |
-| 1      | Confidence Index for Analysis 	                                   | Surface 	| CFIA_SFC_0 |varies from 0 to 1, no units | [Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
+| 0 	 | Analysis of Accumulated Precipitation on a 06hr or 24hr interval    | Surface 	| APCP | 	kg m-2       |[Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)     |
+| 1      | Confidence Index for Analysis 	                                   | Surface 	| CFIA |varies from 0 to 1, no units | [Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
 
-## About the No-data mask
+## About the polar stereographic grid no-data mask
 
 Since January, 13th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
