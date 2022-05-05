@@ -6,7 +6,7 @@
 
 # Données GRIB2 de l'Analyse Régionale Déterministe de Précipitation (ARDP - CaPA)
 
-L’[Analyse régionale déterministe de précipitation (ARDP)](readme_rdpa_fr.md), fondée sur la CaPA (Canadian Precipitation Analysis), est présentée sur un domaine correspondant à celui du système régional opérationnel (Système régional déterministe de prévision [SRDP-LAM3D]), sauf dans l’océan Pacifique où la limite ouest du domaine ARDP est quelque peu décalée vers l’est par rapport au domaine régional. La résolution de la grille ARDP est identique à celle du système SRDP LAM3D (système régional opérationnel). Les champs du jeu de données GRIB2 sont disponibles sur une grille polaire stéréographique (PS) couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord. 
+Cette page décrit les données de L’[Analyse régionale déterministe de précipitation (ARDP)](readme_rdpa_fr.md), fondée sur le système CaPA (Canadian Precipitation Analysis).
 
 # Adresse des données
 
@@ -14,9 +14,10 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à l’adresse suivante :
+Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
+* Données sur grille polaire stéréographique: [https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
+* Données sur grille lat-lon tournée: [https://dd.meteo.gc.ca/model_rdpa/10km/{hh}/](https://dd.meteo.gc.ca/model_rdpa/10km/{hh})
 
 où :
 
@@ -24,7 +25,9 @@ où :
 
 Un historique de 30 jours est conservé dans ce répertoire.
 
-## Spécification technique de la grille
+## Spécification technique des grilles
+
+* __Grille polaire stéréographique__
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
 
@@ -37,11 +40,26 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 | résolution à 60° N | 10km |
 | coordonnées du premier point de grille | 18.1429° N ; 142.8968° W | 
 | coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
-| orientation de la grille (par rapport à l’axe des j) | -111,0° | 
+| orientation de la grille (par rapport à l’axe des j) | -111,0° |
+
+* __Grille lat-lon tournée__
+
+![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 908 |
+| nj | 960 | 
+| résolution à 60° N | 10km |
+| coordonnées du premier point de grille | 50.76° N ; 20.81° W |
+
+__Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
+
+### Grille polaire stéréographique
 
 Les fichiers ont une des nomenclatures suivantes :
 
@@ -71,19 +89,40 @@ Exemple de nom de fichier :
 
 CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
 
-Le fichier a été créé par le Centre météorologique canadien (CMC) et contient une analyse régionale déterministe de précipitation (RDPA).
-Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 006 heures.
-Les données sont sur une grille polaire stéréographique à une résolution de 10 km (ps10km).
+Le fichier a été créé par le Centre météorologique canadien (CMC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 006 heures. Les données sont sur une grille polaire stéréographique à une résolution de 10 km (ps10km). L’analyse a été produite le 12 janvier 2015 à 12Z (2015011212) et le champ (000) confirme l’heure de validité. L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2015011206 à 2015011212.
 
-L’analyse a été produite le 12 janvier 2015 à 12Z (2015011212) et le champ (000) confirme l’heure de validité.
-L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2015011206 à 2015011212.
+### Grille lat-lon tournée
 
-Les données sont encodées en format GRIB2 (.grib2).
-Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.
+Les fichiers ont une des nomenclatures suivantes :
 
-## Niveaux
+* {YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
+* {YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
 
-Les données sont disponibles pour la surface seulement (indiquée par SFC_0 dans le nom du fichier).
+où :
+
+* __YYYYMMDD__: Année, mois et jour du début de la prévision 
+* __T__ : Délimiteur temporel selon les normes ISO8601
+* __HH__: Heure UTC de la passe [00, 12]
+* __Z__ : Fuseau horaire (heure UTC)
+* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
+* __RDPA__ : Chaîne de caractères constante indiquant le modèle source Analyse régionale de prévision déterministe. Temps de coupure de 7 heures pour les observations après l'heure YYYYMMDDHH, indiquant qu'un maximum d'observations a probablement été recueilli
+* __RDPA-Prelim__: Chaîne de caractères constante indiquant le modèle source Analyse régionale de prévision déterministe. Temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies
+* __Sfc__ : Indique que le type de niveau est la surface
+* __RLatLon0.09__: Chaîne de caractères constante indiquant une grille lat-lon tournée à 0.09deg de résolution (environ 10km)
+* __PT0H__: Basé sur les normes ISO8601. P, T et H sont des caractères constants indiquant respectivement la période, le temps et l'heure. Ici, PT0H indique qu'il s'agit d'une analyse
+* __grib2__:  Indique que les données sont en format GRIB2
+
+Exemples de noms de fichiers :
+
+* 20220301T00Z_MSC_RDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2
+
+Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 6 heures. Les données sont sur une grille tournée lat-lon à une résolution de 10 km (RLatLon0.09). L’analyse a été produite le 01 mars 2022 à 00Z (20220301T00Z). L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2022030100 à 2022030106.
+
+* 20220302T12Z_MSC_RDPA_APCP-Accum24h_Sfc_RLatLon0.09_PT0H.grib2
+
+Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse finale d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 24 heures. Les données sont sur une grille lat-lon tournée à une résolution de 10 km (RLatLon0.09). L’analyse a été produite le 02 mars 2022 à 12Z (2022030212). L’intervalle de 24 heures dans lequel les précipitations sont analysées est de 2022030212 à 2022030312.
+
+NOTE: Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.
 
 ## Liste des variables
 
@@ -91,10 +130,10 @@ Cette table indique le nom de la variable, le niveau, l'abbréviation, les unit�
 
 |Numéro  |	                  Variable                                |	Niveau      | 	Abbréviation    | 	Unités        | 	Encodage    |
 |--------|------------------------------------------------------------|-------------|-------------------|-----------------|-----------------|
-|   0 	 | Analyse de précipitations accumulées sur intervalle de 06hr ou 24hr|Surface|APCP-0[06,24]_SFC_0| kg m-2          | [Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)  |
-|   1 	 | Indice de confiance de l'analyse 	                      | Surface     |CFIA_SFC_0 	    |varie de 0 à 1, sans unité |[Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
+|   0 	 | Analyse de précipitations accumulées sur intervalle de 06hr ou 24hr|Surface|APCP| kg m-2          | [Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)  |
+|   1 	 | Indice de confiance de l'analyse 	                      | Surface     |CFIA|varie de 0 à 1, sans unité |[Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
 
-## À propos du masque No-Data
+## À propos du masque No-Data de la grille polaire stéréographique
 
 Depuis le 13 janvier 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
