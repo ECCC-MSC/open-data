@@ -23,7 +23,7 @@ where :
 
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 
-A 30-day history is kept in this directory.
+A 30-day history is kept in these directories.
 
 ## Technical specification of the grids
 
@@ -46,7 +46,7 @@ Values given to the parameters of the stereographic polar grid:
 
 ![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
 
-The following table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:
+The following table lists the values of various parameters of the rotated lat-lon grid:
 
 | Parameter | Valeur |
 | ------ | ------ |
@@ -94,7 +94,7 @@ CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
 This file originates from the Canadian Meteorological Center (CMC) and contains data of the regional deterministic precipitation analysis (RDPA).
 It contains the preliminary analysis of the accumulated precipitation represented here by APCP over a 6 (006) hour time interval starting at 2015011206 and ending at 2015011212. It is considered preliminary because the analysis has been produced using observations collected in a short 0100 hour period i.e. before all observations have been collected. The data is on a polar-stereographic grid at 10km resolution (ps10km). The file name contains the valid time of the analysis which in this case is 2015011212_000.
 
-### Rotated lat-lon grid at 10km resolution
+### Rotated lat-lon grid
 
 Files have one of the following nomenclatures:
 

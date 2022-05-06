@@ -23,7 +23,7 @@ où :
 
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 
-Un historique de 30 jours est conservé dans ce répertoire.
+Un historique de 30 jours est conservé dans ces répertoires.
 
 ## Spécification technique des grilles
 
@@ -31,7 +31,7 @@ Un historique de 30 jours est conservé dans ce répertoire.
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
 
-Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution :
+Valeurs données aux paramètres de la grille polaire stéréographique:
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -45,6 +45,8 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 * __Grille lat-lon tournée__
 
 ![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
+
+Valeurs données aux paramètres de la grille lat-lon tournée:
 
 | Paramètre | Valeur |
 | ------ | ------ |
