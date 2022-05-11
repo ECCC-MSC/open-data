@@ -54,7 +54,7 @@ layers: [
 	  opacity: 0.7,
       source: new ol.source.TileWMS({
         format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet-beta/',
+        url: 'https://geo.weather.gc.ca/geomet/',
         params: {'LAYERS': 'ALERTS', 'TILED': true},
         transition: 0
       })
