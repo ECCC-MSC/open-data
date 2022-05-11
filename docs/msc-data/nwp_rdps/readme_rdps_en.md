@@ -6,7 +6,7 @@
 
 # Data and products of the Regional Deterministic Prediction System
 
-The Regional Deterministic Prediction System (RDPS) performs physical calculations to produce deterministic forecasts of elements of the atmosphere from the present day to 84 hours in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. Geographic coverage includes Canada and the United States. The horizontal spatial resolution of the data is 10 km. Data is available for 80 vertical levels. Forecasts are performed four times a day.
+The Regional Deterministic Prediction System (RDPS) performs physical calculations to produce deterministic forecasts of elements of the atmosphere from the present day to 84 hours in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. Geographic coverage includes Canada and the United States. The horizontal spatial resolution of the data is 10 km. Data is available for 33 vertical levels. Forecasts are performed four times a day.
 
 ## Access
 

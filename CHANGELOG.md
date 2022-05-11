@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.14
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Hurricane web map Alerts layer changed from Beta to Ops
+    * In RDPS abstract, available vertical levels corrected from 80 to 33
+
 ## 2.4.13
 	
 * date: 2022-04-27
