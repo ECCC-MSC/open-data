@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 3.1.0 of the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) at the Canadian Meteorological Centre
 
-Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System (CaLDAS-NSRPS) to v3.1.0.
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) to v3.1.0.
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-310_e.pdf).
 

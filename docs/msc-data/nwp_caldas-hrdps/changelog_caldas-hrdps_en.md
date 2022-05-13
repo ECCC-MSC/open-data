@@ -10,8 +10,7 @@
 
 ### Upgrade to Version 3.0.3 of the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) at the Canadian Meteorological Centre
 
-Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System (CaLDAS-HRDPS) to v3.0.3.
-
+Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) to v3.0.3.
 
 The official note announcing this implementation is available [at this location](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
