@@ -50,7 +50,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 12]
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __WCPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système de prévision du cycle de l'eau 
