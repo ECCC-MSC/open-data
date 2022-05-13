@@ -56,7 +56,7 @@ where:
 * __Projection__ : Constant string indicating the latitude and longitude projection [latlon]
 * __Resolution__ : Resolution in degreee 0.009x0.009 (about 1km) in latitude and longitude directions 
 * __YYYYMMDD__ : Year, month and days of the beginning of the forecast 
-* __HH__ : UTC run time [00,12]
+* __HH__ : UTC run time [00, 06, 12, 18]
 * __Phhh__ : P constant character, hhh the forecast hour [001,002, ..., 084] 
 * __nc__ : constant string indicating the NetCDF format
 
