@@ -57,7 +57,7 @@ où :
 * __Projection__ : Projection cartographique [latlon]
 * __Résolution__ : 0.009x0.009. Signifie une résolution de 0.009°(environ 1km) dans les directions longitudinale et latitudinale
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
-* __HH__ : Heure en UTC du début de la simulation [00,12]
+* __HH__ : Heure en UTC du début de la simulation [00, 06, 12, 18]
 * __Phhh__ : P caractère constant, hhh l'heure de prévision [001, ..., 084] 
 * __nc__ : Chaîne de caractères constante indiquant le format NetCDF
 
