@@ -304,7 +304,7 @@ A WCS DescribeCoverage request allows the user to access more information about 
 | Required parameters       | Definition |
 | ------------------------- | ---------- |
 | SERVICE      | The service the client is requesting. In this case, `wcs`.|
-| VERSION      | The version of the service the client is requesting. We recommend using the latest wms version `2.0.1`|
+| VERSION      | The version of the service the client is requesting. We recommend using the latest WCS version `2.0.1`|
 | REQUEST      | The request type. In this case, `DescribeCoverage`.|
 | COVERAGEID   | The name of the layer for which to return the metadata. The name of the layer can be retrieved using a [WCS GetCapabilities](#wcsgetcap) request|
 
@@ -319,7 +319,7 @@ A WCS GetCoverage request is used to retrieve the actual coverage information (r
 | Required parameters       | Definition |
 | ------------------------- | ---------- |
 | SERVICE      | The service the client is requesting. In this case, `wcs`.|
-| VERSION      | The version of the service the client is requesting. We recommend using the latest wms version `2.0.1`|
+| VERSION      | The version of the service the client is requesting. We recommend using the latest WCS version `2.0.1`|
 | REQUEST      | The request type. In this case, `GetCoverage`.|
 | COVERAGEID   | The name of the layer for which to return the coverage information.|
 | FORMAT       | The file format desired for the requested coverage. Accepted values for this parameter are: `image/tiff` (GeoTIFF) or `image/netcdf` (NetCDF).|
@@ -519,7 +519,7 @@ The paging strategy is commonly used in support of performance when returning la
 * [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=0&limit=1000)
 * [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&startindex=1000&limit=1000)
 
-The client can then simply cycle through all items until there no longer any records. This would constitute the entire record.
+The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record.
 
 
 #### Combining filter parameters

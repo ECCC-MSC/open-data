@@ -14,7 +14,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * None
+    * New changelog pages in French for CalDAS-NSRPS and CalDAS-HRDPS
 * improvements:
     * None
 * bug fixes:
