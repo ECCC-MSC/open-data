@@ -26,7 +26,7 @@ où :
 * __HH__ : Heure en UTC du début de la simulation [00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [000, 001, 002, ..., 048] 
 
-Un historique de 24h de prévision est stocké dans ces répertoires.
+Un historique de plusieurs semaines est conservé dans ces répertoires.
 
 ## Spécification technique des grilles
 
