@@ -6,7 +6,7 @@
 
 # Données MetNotes
 
-Cette page décrit les données MetNotes, de courtes notes rédigées par les météorologues qui précisent le contexte des prévisions météorologiques d’Environnement et changement climatique Canada (ECCC).  Ces brefs messages peuvent inclure les impacts potentiels dus aux conditions météorologiques, un avertissement précoce sur les conditions météorologiques extrêmes ou de l’information pour préparer les personnes qui assisteront à des événements extérieurs affectés par les conditions météorologiques.
+Cette page décrit les MetNotes, de courtes notes rédigées par les météorologues qui précisent le contexte des prévisions météorologiques d’Environnement et changement climatique Canada (ECCC).  Ces brefs messages peuvent inclure les impacts potentiels dus aux conditions météorologiques, un avertissement précoce sur les conditions météorologiques extrêmes ou de l’information pour préparer les personnes qui assisteront à des événements extérieurs affectés par les conditions météorologiques.
 
 Ces notes sont également disponibles sur l'application mobile [MétéoCAN](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html)
 

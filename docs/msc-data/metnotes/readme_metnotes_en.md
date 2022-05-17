@@ -6,7 +6,7 @@
 
 # MetNotes data
 
-This page describes the MetNotes, short notes written by meteorologists that provide additional context to Environment and Climate Change Canada (ECCC)-produced weather forecasts. These brief messages may include possible impacts due to weather, an early heads-up on severe weather, or information to prepare people attending outdoor events affected by weather.
+This page describes the MetNotes which are short notes written by meteorologists that provide additional context to Environment and Climate Change Canada (ECCC)-produced weather forecasts. These brief messages may include possible impacts due to weather, an early heads-up on severe weather, or information to prepare people attending outdoor events affected by weather.
 
 These notes are also available on [WeatherCAN](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) app.
 
