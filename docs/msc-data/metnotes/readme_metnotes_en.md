@@ -1,4 +1,4 @@
-[En français](readme_radar_fr.md)
+[En français](readme_metnotes_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -35,4 +35,4 @@ Upcoming.
 
 ## Technical documentation
 
-* [FAQ](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan/metnotes.html)
+[FAQ](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan/metnotes.html)
