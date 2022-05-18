@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système Régional de Prévision Déterministe de Vague (SRPDV)
 
-Cette page décrit les données du [Système Régional de Prévision Déterministe de Vague](./readme_rdwps_fr.md) disponible en format GRIB2.
+Cette page décrit les données du [Système Régional de Prévision Déterministe de Vague](./readme_rdwps_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données 
 
