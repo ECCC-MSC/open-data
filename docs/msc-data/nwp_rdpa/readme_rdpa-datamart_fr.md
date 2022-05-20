@@ -17,13 +17,14 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 Les données sont accessibles aux adresses suivantes :
 
 * Données sur grille polaire stéréographique: [https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
-* Données sur grille lat-lon tournée: [https://dd.meteo.gc.ca/model_rdpa/10km/{hh}/](https://dd.meteo.gc.ca/model_rdpa/10km/{hh})
+* Données sur grille lat-lon tournée: [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_rdpa/10km/{hh}/](https://hpfx.collab.science.gc.ca/)
 
 où :
 
+* __YYYYMMDD__ : Année, mois et jour
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 
-Un historique de 30 jours est conservé dans ces répertoires.
+Un historique de 30 jours est conservé sur le Datamart du SMC et de plusieurs semaines sur HPFX, le serveur alternatif du Datamart du SMC.
 
 ## Spécification technique des grilles
 

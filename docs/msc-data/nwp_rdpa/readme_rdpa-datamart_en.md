@@ -17,13 +17,14 @@ The data is available using the HTTPS protocol and resides in a directory that i
 The data can be accessed at the following URLs :
 
 * Polar-stereographic grid: [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
-* Rotated lat-lon grid: [https://dd.weather.gc.ca/model_rdpa/10km/{hh}](https://dd.weather.gc.ca/model_rdpa/10km/{hh})
+* Rotated lat-lon grid: [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_rdpa/10km/{hh}](https://hpfx.collab.science.gc.ca/)
 
 where :
 
+* __YYYYMMDD__: Year, month and day
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 
-A 30-day history is kept in these directories.
+A 30-day history is kept on the MSC Datamart and a history of several weeks is kept on HPFX, the MSC Datamart alternative server.
 
 ## Technical specification of the grids
 
