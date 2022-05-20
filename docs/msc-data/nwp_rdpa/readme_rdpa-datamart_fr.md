@@ -24,7 +24,7 @@ où :
 * __YYYYMMDD__ : Année, mois et jour
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 
-Un historique de 30 jours est conservé sur le Datamart du SMC et de plusieurs semaines sur HPFX, le serveur alternatif du SMC.
+Un historique de 30 jours est conservé sur le Datamart du SMC et de plusieurs semaines sur HPFX, le serveur alternatif du Datamart du SMC.
 
 ## Spécification technique des grilles
 
