@@ -206,9 +206,7 @@ Finalement, ces données de bouées sont accessibles à travers les [bulletins a
 
 Il y a plusieurs sources pour obtenir les avertissements.
 
-* Tout d’abord, les [avertissements officiels sont disponibles en format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
-
-* Nos services web géospatiaux permettent d'afficher la couche des avertissements seulement dans la [version Beta](../msc-geomet/readme_fr.md) actuellement. Veuillez surveiller notre liste de diffusion [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) pour être informé lorsque ces avertissements seront disponibles dans GeoMet-Météo.
+* Tout d’abord, les avertissements officiels sont disponibles via [les services web géospatiaux GeoMet-Météo](../msc-geomet/readme_fr.md) et en [format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
 
 * Par ailleurs, ECCC a mis en place un [fil de nouvelles ATOM via lequel les alertes et avertissements sont disponibles](https://meteo.gc.ca/business/index_f.html#rss).
 

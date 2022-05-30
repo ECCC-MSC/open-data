@@ -212,9 +212,7 @@ Finally, these buoy data are accessible through the [alphanumeric bulletins](../
 
 You can find information about Environment and Climate Change Canada's warning in several places :
 
-* First of all, the [official warnings are available in CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
-
-* Our geospatial web services allow to display the warnings layer only in the [Beta version](../msc-geomet/readme_en.md) currently. Please monitor our [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing list to be informed when these warnings are available in GeoMet-Weather.
+* First of all, the official warnings are available via the [geospatial web services GeoMet-Weather](../msc-geomet/readme_en.md) and in [CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
 
 * In addition, ECCC has set up an [ATOM news feed through which alerts and warnings are available](https://weather.gc.ca/business/index_e.html#rss).
 

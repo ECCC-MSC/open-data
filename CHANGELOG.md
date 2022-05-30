@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * Hurricane web map Alerts layer changed from Beta to Ops
     * In RDPS abstract, available vertical levels corrected from 80 to 33
+    * Mention of Geomet-Beta removed or replaced with Ops
 
 ## 2.4.13
 	

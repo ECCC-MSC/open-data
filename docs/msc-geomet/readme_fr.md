@@ -49,8 +49,6 @@ La plateforme GeoMet du SMC comprend les services suivants :
 * GeoMet-Climat :
     * Archives de données climatiques, simulations et scénarios
     * Standards supportés : WMS, WCS, SLD
-* GeoMet-Beta :
-    * Services web non supportés pour les données expérimentales
 
 Les [pages des jeux de données disponibles](../msc-data/readme_fr.md) précisent sur quel service de GeoMet du SMC les données correspondantes sont disponibles.
 
@@ -90,15 +88,6 @@ Le code source de GeoMet-Climat et de l'Outil d'extraction de données climatiqu
 
 * [https://github.com/ECCC-CCCS/geomet-climate](https://github.com/ECCC-CCCS/geomet-climate)
 * [https://github.com/ECCC-CCCS/climate-data-extraction-tool](https://github.com/ECCC-CCCS/climate-data-extraction-tool)
-
-### GeoMet-Beta
-
-GeoMet-Beta donne accès à des données expérimentales et autres données non-opérationnelles. Ce service n'est pas supporté opérationellement.
-
-Capacités de ce service :
-
-* L'URL WMS de GeoMet-Beta : [https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
-* L'URL WCS de GeoMet-Beta : [https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.meteo.gc.ca/geomet-beta?lang=fr&service=WCS&version=2.0.1&request=GetCapabilities)
 
 ### SpatioTemporal Asset Catalog
 
