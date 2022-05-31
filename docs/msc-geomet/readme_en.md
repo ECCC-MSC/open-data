@@ -48,8 +48,6 @@ The MSC GeoMet Platform consists in the following services:
 * GeoMet-Climate: 
     * Climate data archives, simulations and scenarios
     * Standards supported: WMS, WCS, SLD
-* GeoMet-Beta:
-    * Unsupported web services for experimental data
 
 The [available datasets pages](../msc-data/readme_en.md) specify on which MSC GeoMet service the corresponding data is available.
 
@@ -91,15 +89,6 @@ The source code for GeoMet-Climate and the Climate Data Extraction Tool is publi
 
 * [https://github.com/ECCC-CCCS/geomet-climate](https://github.com/ECCC-CCCS/geomet-climate)
 * [https://github.com/ECCC-CCCS/climate-data-extraction-tool](https://github.com/ECCC-CCCS/geomet-climate)
-
-### GeoMet-Beta
-
-GeoMet-Beta provides access to experimental and other non-operational data. This service is not operationally supported.
-
-Service capabilities:
-
-* GeoMet-Beta WMS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
-* GeoMet-Beta WCS URL: [https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities](https://geo.weather.gc.ca/geomet-beta?lang=en&service=WCS&version=2.0.1&request=GetCapabilities)
 
 ### SpatioTemporal Asset Catalog
 

@@ -15,7 +15,7 @@ Environment and Climate Change Canada issues weather alerts about weather relate
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
 * [XML data available on the MSC Datamart](readme_alerts-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Beta](../../msc-geomet/readme_en.md)
+* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
