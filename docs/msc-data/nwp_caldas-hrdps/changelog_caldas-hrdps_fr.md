@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour du SCanADS-SHRPD à la version 3.1.3 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD) 3.0.3 du Centre métérologique canadien

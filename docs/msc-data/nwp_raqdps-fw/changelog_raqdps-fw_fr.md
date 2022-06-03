@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air FireWork (SRPDQA-FW)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour de SRPDQA-FW à la version 24 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système régional de prévision déterministe de la qualité de l'air FireWork

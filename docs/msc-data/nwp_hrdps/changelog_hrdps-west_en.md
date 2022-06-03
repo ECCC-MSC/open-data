@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System West (HRDPS-W)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 1.4.0 of the HRDPS-W adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 1.3.0 of the High Resolution Deterministic Prediction System West (HRDPS-W) at the Canadian Meteorological Centre

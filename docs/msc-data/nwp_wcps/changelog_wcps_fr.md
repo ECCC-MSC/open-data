@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE)
 
+# Le mardi 28 juin 2022
+
+### Mise à jour du SPCE à la version 3.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le jeudi 24 février 2022
 
 ### Mise à jour du Système de prévision du cycle de l'eau (SPCE) 3.1.0 du Centre météorologique canadien

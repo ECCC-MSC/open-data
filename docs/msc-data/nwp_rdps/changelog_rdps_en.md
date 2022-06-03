@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 8.1.0 of the RDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday February 16, 2022
 
 ### Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the RDPS

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 3.1.3 of the CaLDAS-HRDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.3 of the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) at the Canadian Meteorological Centre

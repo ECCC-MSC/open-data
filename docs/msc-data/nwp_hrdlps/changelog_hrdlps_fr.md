@@ -6,13 +6,17 @@
 
 # Chronologie des changements apportés au Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour du SPDHRS à la version 2.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour du Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) 2.0.0 du Centre météorologique canadien
 
 En date du mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) vers la version 2.0.0.
-
-
 
 La note officielle annoncant cette implantation est disponible en cliquant [via ce lien](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 

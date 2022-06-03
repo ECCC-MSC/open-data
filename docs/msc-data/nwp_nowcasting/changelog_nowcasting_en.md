@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Integrated Nowcasting System (INCS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 1.10.0 of the INCS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 #### Upgrade to Version 1.9.0 of the Integrated NowCasting System (INCS) at the Canadian Meteorological Centre
@@ -23,7 +29,6 @@ The official note announcing the implementation of these changes is available [a
 A technical note with more details on INCS v1.9.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-190_e.pdf).
 
 The technical specifications document for INCS v1.9.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS-INCS_1.9.0_e.pdf).
-
 
 ## Tuesday January 21, 2020
 

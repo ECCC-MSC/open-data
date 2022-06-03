@@ -50,4 +50,4 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Registre des changements 
 
-La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html).
+La chronologie des changements apportés aux systèmes opérationnels est disponible [ici](../nwp_hrdpa/changelog_hrdpa_fr.md).

@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-N)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour du SHRPD-N à la version 1.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour vers la version 1.0.0 du Système à haute résolution de prévision déterministe nord (SHRPD-N) au Centre météorologique canadien (CMC)

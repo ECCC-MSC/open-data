@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Ensemble Wave Prediction System (REWPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 1.6.0 of the REWPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 1.5.0 of the Regional Ensemble Wave Prediction System (REWPS) at the Canadian Meteorological Centre

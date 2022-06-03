@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 3.2.0 of the CaLDAS-NSRPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.1.0 of the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) at the Canadian Meteorological Centre

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Coastal Ice and Ocean Prediction System (CIOPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 2.1.0 of the CIOPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.0.0 of the Coastal Ice and Ocean Prediction System (CIOPS) at the Canadian Meteorological Centre

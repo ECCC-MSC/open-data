@@ -8,7 +8,11 @@
 
 ## 2022
 
-## 31 mars 2022
+### 28 juin 2022
+
+* [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-28-juin-2022)
+
+### 31 mars 2022
 
 * [Fin du service pour le Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/changelog_rdsps_fr.md#le-jeudi-31-mars-2022)
 

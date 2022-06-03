@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour du SHRPD à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 16 février 2022
 
 ### Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SHRPD

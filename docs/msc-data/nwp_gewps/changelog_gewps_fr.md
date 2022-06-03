@@ -2,9 +2,15 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SRPEOT
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SGPEV
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble de vague (SGPEV)
+
+## Le mardi 28 juin 2022
+
+### Mise à jour du SGPEV à la version 1.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 1er décembre 2021
 
