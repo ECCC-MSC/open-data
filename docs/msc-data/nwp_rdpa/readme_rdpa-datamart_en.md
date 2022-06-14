@@ -17,12 +17,13 @@ The data is available using the HTTPS protocol and resides in a directory that i
 The data can be accessed at the following URLs :
 
 * Polar-stereographic grid: [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
-* Rotated lat-lon grid: [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_rdpa/10km/{hh}](https://hpfx.collab.science.gc.ca/)
+* Rotated lat-lon grid: [https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_rdpa/10km/{HH}](https://hpfx.collab.science.gc.ca/)
 
 where :
 
 * __YYYYMMDD__: Year, month and day
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
+* __HH_ :  UTC run time [00, 06, 12, 18]
 
 A 30-day history is kept on the MSC Datamart and a history of several weeks is kept on HPFX, the MSC Datamart alternative server.
 
@@ -84,7 +85,7 @@ where :
 * __0__: Elevation of the above level type where here 0 indicates the surface. For RDPA grib2 data this is the only level available.
 * __ps10km__: Constant string indicating the projection used is polar-stereographic at 10km resolution.
 * __YYYYMMDDHH__: Year, month, day and hour of valid date of the analysis.
-* __HH__: UTC run time [00,06, 12, 18]
+* __HH__: UTC run time [00, 06, 12, 18]
 * __000__: Represents the number of hours after the YYYYMMDDHH time at which the analysis is valid.
 * __grib2__: Constant string indicating the GRIB2 format is used
 
@@ -106,11 +107,12 @@ where:
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__: UTC run time [00, 12]
+* __HH__: UTC run time [00, 06, 12, 18]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RDPA__ : Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected
 * __RDPA-Prelim__: Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected
+* __VAR__ : Constant string indicating the variable included in this file is in this case the accumulated precipitation which has been analyzed over a specific period [APCP-Accum6h, APCP-Accum24h]
 * __Sfc__ : Constant string indicating that the surface is the vertical level 
 * __RLatLon0.09__ : Constant string indicating a rotated lat-lon grid with 0.09 deg resolution (about 10km)
 * __PT0H__ : Based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour. Here PT0H indicates an analysis.
