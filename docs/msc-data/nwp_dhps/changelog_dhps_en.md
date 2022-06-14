@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Deterministic Hydrological Prediction System (DHPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 3.2.0 of the DHPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.1.0 of the Deterministic Hydrological Prediction System (DHPS) at the Canadian Meteorological Centre

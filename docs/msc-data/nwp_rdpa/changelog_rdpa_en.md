@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 5.3.0 of the RDPA adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to version 5.2.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)

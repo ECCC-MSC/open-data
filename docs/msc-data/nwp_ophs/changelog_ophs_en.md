@@ -6,6 +6,12 @@
 
 # Chronology of changes to the OPerational Hydrodynamic Simulation system (OPHS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 3.1.0 of the OPHS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 3.0.0 of the OPerational Hydrodynamic Simulation system (OPHS) at the Canadian Meteorological Centre

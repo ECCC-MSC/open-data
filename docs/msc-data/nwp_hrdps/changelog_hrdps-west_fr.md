@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-O)
 
+## Le mardi 28 juin 2022
+
+### Mise à jour du SHRPD-O à la version 1.4.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 1er décembre 2021
 
 ### Mise à jour majeure vers la version 1.3.0 du Système à haute résolution de prévision déterministe ouest (SHRPD-O) au Centre météorologique canadien (CMC)

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-N)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 1.2.0 of the HRDPS-N adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 1.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre

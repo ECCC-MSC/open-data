@@ -4,6 +4,14 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCPOG
 
+## Le mardi 28 juin 2022
+
+### Mise à jour de SCPOG à la version 2.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
+## Le mercredi 1er décembre 2022
+
 ### Mise à jour du Système côtier de prévision océan-glace (SCPOG) 2.0.0 du Centre météorologique canadien (CMC)
 
 Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de ses deux Systèmes côtiers de prévision océan-glace: la fenêtre est (SCPOG-E) et la fenêtre ouest (SCPOG-O). À partir de cette mise à jour, les deux systèmes SCPOG-E et SCPOG-O obtiennent le statut opérationnel.

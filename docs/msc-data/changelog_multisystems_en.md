@@ -6,6 +6,16 @@
 
 # Changes to the Operational Services of the Canadian Meteorological Centre (CMC)
 
+## Tuesday June 28, 2022
+
+### New High Performance Computing Infrastructure
+
+A major project to migrate to a new supercomputing infrastructure employed by the Meteorological Service of Canada was completed on June 28, 2022. This successful migration was the result of a joint, sustained effort over several months by experts at the Canadian Meteorological Centre, Science and Technology Directorate, and Shared Services Canada.
+
+Over the coming years, this important upgrade will permit further technological transfers from Research and Development into Operations, supporting the continuous improvement of the meteorological and environmental forecast services offered to Canadians and to other federal and provincial government agencies, users, and partners.
+
+The official note announcing the migration is available at [this link](https://dd.meteo.gc.ca/doc/genots/2022/06/28/NOCN03_XXXXXX).
+
 ## Tuesday January 21, 2020
 
 ### New High Performance Computing Infrastructure

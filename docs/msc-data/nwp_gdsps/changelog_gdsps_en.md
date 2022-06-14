@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Deterministic Storm-surge Prediction System (GDSPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 1.1.0 of the GDSPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday December 1st, 2021
 
 ### Implementation of the Global Deterministic Storm-surge Prediction System (GDSPS) at the Canadian Meteorological Centre (CMC)

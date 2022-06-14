@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 6.1.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday February 16, 2022
 
 ### Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the HRDPS

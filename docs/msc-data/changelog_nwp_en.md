@@ -8,6 +8,10 @@
 
 ## 2022
 
+### June 28, 2022
+
+* [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-june-28-2022)
+
 ### March 31st, 2022
 
 * [Retirement of the Regional Deterministic Storm-surge Prediction System (RDSPS)](nwp_rdsps/changelog_rdsps_en.md#thursday-march-31-2022)
@@ -24,7 +28,6 @@
 * [Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-february-16-2022)
 
 ## 2021
-
 
 ### December 1st, 2021
 Atmosphere

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 7.1.0 of the GEPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday February 16, 2022
 
 #### Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the GEPS

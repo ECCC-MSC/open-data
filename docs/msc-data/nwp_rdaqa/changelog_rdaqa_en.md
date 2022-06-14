@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Deterministic Air Quality Analysis (RDAQA)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 2.1.0 of the RDAQA adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.0.0 of the Regional Deterministic Air Quality Analysis (RDAQA) at the Canadian Meteorological Centre

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Ice and Ocean Prediction System (RIOPS)
 
+## Tuesday June 28, 2022
+
+### Upgrade to Version 2.3.0 of the RIOPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md).
+
 ## Wednesday December 1st, 2021
 
 ### Upgrade to Version 2.2.0 of the Regional Ice and Ocean Prediction System (RIOPS) at the Canadian Meteorological Centre
