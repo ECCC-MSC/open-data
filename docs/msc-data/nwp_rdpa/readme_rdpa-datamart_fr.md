@@ -111,7 +111,7 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPA__ : Chaîne de caractères constante indiquant le modèle source Analyse régionale de prévision déterministe. Temps de coupure de 7 heures pour les observations après l'heure YYYYMMDDHH, indiquant qu'un maximum d'observations a probablement été recueilli
 * __RDPA-Prelim__: Chaîne de caractères constante indiquant le modèle source Analyse régionale de prévision déterministe. Temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies
-* __VAR__ : Chaîne de caractères constante donnant le nom de la variable contenue dans le fichier. Dans cet exemple, il s’agit de l’analyse de précipitation accumulée sur une certaine période [APCP-Accum6h, APCP-Accum24h]
+* __VAR__ : Chaîne de caractères constante donnant le nom de la variable contenue dans le fichier. Ici, il s’agit de l’analyse de précipitation accumulée sur une certaine période [APCP-Accum6h, APCP-Accum24h]
 * __Sfc__ : Indique que le type de niveau est la surface
 * __RLatLon0.09__: Chaîne de caractères constante indiquant une grille lat-lon tournée à 0.09deg de résolution (environ 10km)
 * __PT0H__: Basé sur les normes ISO8601. P, T et H sont des caractères constants indiquant respectivement la période, le temps et l'heure. Ici, PT0H indique qu'il s'agit d'une analyse
