@@ -23,7 +23,7 @@ where :
 
 * __YYYYMMDD__: Year, month and day
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
-* __HH_ :  UTC run time [00, 06, 12, 18]
+* __HH__ :  UTC run time [00, 06, 12, 18]
 
 A 30-day history is kept on the MSC Datamart and a history of several weeks is kept on HPFX, the MSC Datamart alternative server.
 
