@@ -10,17 +10,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.14
 
-* date: TBD
+* date: 2022-06-14
 * announcements:
     * Not announced
 * new content:
-    * New changelog pages in French for CalDAS-NSRPS and CalDAS-HRDPS
+	* New changelog pages in French for CalDAS-NSRPS and CalDAS-HRDPS
+	* New RDPA rotated lat-lon data (documentation added to current RDPA page)
+	* New HRDLPS, metnotes, lightning pages (not available in main msc-data page)
 * improvements:
     * None
 * bug fixes:
     * Hurricane web map Alerts layer changed from Beta to Ops
     * In RDPS abstract, available vertical levels corrected from 80 to 33
-    * Mention of Geomet-Beta removed or replaced with Ops
+	* Mention of Geomet-Beta removed or replaced with Ops
+	*  Fix WCPS NEMO, CIOPS README
+	
 
 ## 2.4.13
 	
