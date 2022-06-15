@@ -112,7 +112,7 @@ where:
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RDPA__ : Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected
 * __RDPA-Prelim__: Constant string indicating that data is from the Regional Deterministic Precipitation Analysis. Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected
-* __VAR__ : Constant string indicating the variable included in this file is in this case the accumulated precipitation which has been analyzed over a specific period [APCP-Accum6h, APCP-Accum24h]
+* __VAR__ : Constant string indicating the variable included in the file namely in this case, the accumulated precipitation which has been analyzed over a specific period [APCP-Accum6h, APCP-Accum24h]
 * __Sfc__ : Constant string indicating that the surface is the vertical level 
 * __RLatLon0.09__ : Constant string indicating a rotated lat-lon grid with 0.09 deg resolution (about 10km)
 * __PT0H__ : Based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour. Here PT0H indicates an analysis.
