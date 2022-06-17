@@ -153,7 +153,7 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 | ------------------------- | ---------- |
 | STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. If this parameter is not specified a request will return the layer's default style. Note: Make sure to type the singular form of this parameter in the `GetLegendGraphic` request and not the plural form (i.e. `STYLES`), because it will output the layer's default style instead of the requested style.|
 | SLD             | Specifies that the legend should be created with an external SLD document. See the [Handing Styles](#handling-styles) for further information.|
-| SLD_BODY        | Allows the user to include an SLD document directly in the request URL.|
+| SLD_BODY        | Allows the user to include an SLD document directly in the request URL.| Note: the value of LAYER in the WMS GetMap request and the value of se:Name (or se%3AName when encoded) in SLD_BODY needs to be different for the request to work.
 | LANG          | A vendor extension that allows a client to display the legend in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
 A sample GetLegendGraphic request for the Global Deterministic Wave Prediction System's winds layer (GDWPS.UU.1h) would look like this:
@@ -240,7 +240,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 ![RDPA.24F_PR with CAPA24-LINEAR style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
 Users can also choose to apply their own styles either by pointing to
-an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding.
+an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding. Also, for `SLD_BODY`, the value of LAYER in the WMS GetMap request and the value of se:Name (or se%3AName when encoded) in `SLD_BODY` needs to be different for the request to work.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT

@@ -156,7 +156,7 @@ Par exemple, la couche de température de l'air du SGPD offre plusieurs styles d
 | ------------------------- | ---------- |
 | STYLE           | Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities). Note: Assurez-vous de taper la forme au singulier de ce paramètre dans la requête `GetLegendGraphic` et non la forme au pluriel (i.e. `STYLES`) car la sortie sera le style par défaut de la couche au lieu de celui demandé. |
 | SLD             | Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section [Spécification des styles](#spécification-des-styles) pour les explications détaillées|
-| SLD_BODY        | Permet à l'usager d'inclure le document SLD directement dans la requête|
+| SLD_BODY        | Permet à l'usager d'inclure le document SLD directement dans la requête| Note: la valeur de LAYER dans la requête WMS GetMap et la valeur de se:Name (ou se%3AName lorsqu'il est encodé) dans SLD_BODY doivent être différentes pour que la requête fonctionne correctement.
 | LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le légende. Si le paramètre n'est pas spécifié, la légende est retournée en anglais par défaut|
 
 Un exemple de requête GetLegendGraphic pour la couche de vent (GDWPS.UU.1h) du Système Global de Prévision Déterministe de Vague (SGPDV) va comme suit :
@@ -244,7 +244,7 @@ https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=R
 
 ![Couche RDPA.24F_PR avec le style RDPA-WXO](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
-Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être entièrement encodé tel un URL HTTP.
+Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être entièrement encodé tel un URL HTTP. Aussi, pour `SLD_BODY`, la valeur du paramètre LAYER dans la requête WMS GetMap et la valeur de se:Name (ou se%3AName lorsqu'il est encodé) dans `SLD_BODY` doivent être différentes pour que la requête fonctionne correctement.
 
 ```
 https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
