@@ -14,7 +14,10 @@ Ensembles de données des indices climatiques mis à l'échelle de manière stat
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](readme_climateindices-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_climateindices-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [Indices - Historique](https://api.meteo.gc.ca/collections/climate:indices:historical)
+    * [Indices - Projeté](https://api.meteo.gc.ca/collections/climate:indices:projected)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_climateindices-datamart_fr.md)
 * [Données d'ensembles multimodèles et données individuelles en format NetCDF disponibles sur le site des Données et scénarios climatiques canadiens](http://scenarios-climatiques.canada.ca/index.php?page=downscaled-indices-data)
 

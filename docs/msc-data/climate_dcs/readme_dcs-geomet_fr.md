@@ -10,7 +10,22 @@ GeoMet du SMC donne accès à plusieurs données et produits des résultats stat
 
 ## Accès aux services web géospatiaux
 
-Les couches des résultats statistiquement réduits à l'échelle sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+Les données des résultats statistiquement réduits à l'échelle sont disponibles 
+
+* [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+* [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [DCS - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:absolute)
+    * [DCS - Saisonnière projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:absolute)
+    * [DCS - Mensuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:monthly:absolute)
+    * [DCS - Anomalie annuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:anomaly)
+    * [DCS - Anomalie saisonnière projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:anomaly)
+    * [DCS - Anomalie annuelle projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:P20Y-Avg)
+    * [DCS - Anomalie saisonnière projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:P20Y-Avg)
+    * [DCS - Annuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:annual:absolute)
+    * [DCS - Saisonnière historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:seasonal:absolute)
+    * [DCS - Mensuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:monthly:absolute)
+    * [DCS - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:annual:anomaly)
+    * [DCS - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:seasonal:anomaly)
 
 Exemple de carte interactive présentant la couche [DCS.PR.RCP26.YEAR.2021-2040_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50) des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :
 

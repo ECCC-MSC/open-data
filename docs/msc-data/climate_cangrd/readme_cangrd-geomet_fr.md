@@ -10,7 +10,15 @@ GeoMet du SMC donne accès à plusieurs couches et produits des Anomalies de tem
 
 ## Accès aux services web géospatiaux
 
-Les couches du CanGRD sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+Les données du CanGRD sont disponibles
+
+* [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+* [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [CanGRD - Tendance annuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:annual:trend)
+    * [CanGRD - Tendance saisonnière historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:seasonal:trend)
+    * [CanGRD - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:annual:anomaly)
+    * [CanGRD - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:seasonal:anomaly)
+    * [CanGRD - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:monthly:anomaly)
 
 Exemple de carte interactive présentant la couche [CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CANGRD.ANO.TX_ANNUAL) du CanGRD provenant de GeoMet du SMC :
 

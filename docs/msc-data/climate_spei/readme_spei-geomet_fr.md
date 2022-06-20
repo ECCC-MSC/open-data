@@ -10,7 +10,16 @@ GeoMet du SMC donne accès à plusieurs données et produits de l'Indice de pré
 
 ## Accès aux services web géospatiaux
 
-Les couches du IPEN sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+Les données du IPEN sont disponibles
+
+* [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+* [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [IPEN-1 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-1:projected)
+    * [IPEN-3 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-3:projected)
+    * [IPEN-12 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-12:projected)
+    * [IPEN-1 - Historique](https://api.meteo.gc.ca/collections/climate:spei-1:historical)
+    * [IPEN-3 - Historique](https://api.meteo.gc.ca/collections/climate:spei-3:historical)
+    * [IPEN-12 - Historique](https://api.meteo.gc.ca/collections/climate:spei-12:historical)
 
 Exemple de carte interactive présentant la couche [SPEI-1.RCP2.6.ENS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=SPEI-1.RCP2.6.ENS_PCTL50) du IPEN provenant de GeoMet du SMC :
 

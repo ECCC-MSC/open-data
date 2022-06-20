@@ -10,7 +10,15 @@ MSC GeoMet-Climate provides access to data and products of the Canadian Gridded 
 
 ## Access to the geospatial web services
 
-The CanGRD data is [available on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The CanGRD data is available
+
+* [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [CanGRD - Historical annual trend](https://api.weather.gc.ca/collections/climate:cangrd:historical:annual:trend)
+    * [CanGRD - Historical seasonal trend](https://api.weather.gc.ca/collections/climate:cangrd:historical:seasonal:trend)
+    * [CanGRD - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:annual:anomaly)
+    * [CanGRD - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:seasonal:anomaly)
+    * [CanGRD - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:monthly:anomaly)
 
 Example of a web map configured to display the [CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL) layer served by MSC GeoMet:
 

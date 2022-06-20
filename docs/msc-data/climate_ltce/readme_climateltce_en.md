@@ -16,7 +16,7 @@ Note that the database is updated twice daily with the most recent data being va
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services:
 
-* [Data available via the GeoMet-OGC-API web services](https://api.weather.gc.ca/):
+* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
     * [LTCE - Daily Extremes of Records - Precipitation](https://api.weather.gc.ca/collections/ltce-precipitation)
     * [LTCE - Daily Extremes of Records - Snowfall](https://api.weather.gc.ca/collections/ltce-snowfall)
     * [LTCE - Daily Extremes of Records - Temperature](https://api.weather.gc.ca/collections/ltce-temperature)

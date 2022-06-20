@@ -10,7 +10,24 @@ MSC GeoMet-Climate provides access to data and products of the climate scenarios
 
 ## Access to the geospatial web services
 
-The CMIP5 data is [available on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The CMIP5 data is available
+
+* [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [CMIP5 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute)
+    * [CMIP5 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:absolute)
+    * [CMIP5 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:absolute)
+    * [CMIP5 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:anomaly)
+    * [CMIP5 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:anomaly)
+    * [CMIP5 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:anomaly)
+    * [CMIP5 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:P20Y-Avg)
+    * [CMIP5 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:P20Y-Avg)
+    * [CMIP5 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:absolute)
+    * [CMIP5 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:absolute)
+    * [CMIP5 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:absolute)
+    * [CMIP5 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly)
+    * [CMIP5 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
+    * [CMIP5 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:anomaly)
 
 Example of a web map configured to display the [CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50) layer served by MSC GeoMet:
 

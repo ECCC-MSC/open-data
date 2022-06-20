@@ -11,7 +11,16 @@ MSC GeoMet provides access to several Regional Deterministic Precipitation Analy
 
 ## Access to the geospatial web services
 
-The RDPA layers are [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The RDPA data are available
+
+* [on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [RDPA - 24 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:24f)
+    * [RDPA - 6 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:6f)
+    * [RDPA - 24 hours accumulation (preliminary)](https://api.weather.gc.ca/collections/weather:rdpa:10km:24p)
+    * [RDPA - 6 hours accumulation (preliminary)](https://api.weather.gc.ca/collections/weather:rdpa:10km:6p)
+    * [RDPA - 24 hours accumulation at 15 km](https://api.weather.gc.ca/collections/weather:rdpa:15km:24f)
+    * [RDPA - 6 hours accumulation at 15 km](https://api.weather.gc.ca/collections/weather:rdpa:15km:6f)
 
 Example of a web map configured to display the quantity of precipitation [mm] over the past period of 24 hours using a Regional Deterministic Precipitation Analysis (RDPA) WMS layer served by MSC GeoMet:
 

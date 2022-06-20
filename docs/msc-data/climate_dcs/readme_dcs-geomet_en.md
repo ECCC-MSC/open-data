@@ -10,7 +10,22 @@ MSC GeoMet-Climate provides access to data and products of statistically downsca
 
 ## Access to the geospatial web services
 
-The DCS data is [available on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The DCS data is available
+
+* [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [DCS - Projected annual](https://api.weather.gc.ca/collections/climate:dcs:projected:annual:absolute)
+    * [DCS - Projected seasonal](https://api.weather.gc.ca/collections/climate:dcs:projected:seasonal:absolute)
+    * [DCS - Projected monthly](https://api.weather.gc.ca/collections/climate:dcs:projected:monthly:absolute)
+    * [DCS - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:dcs:projected:annual:anomaly)
+    * [DCS - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:dcs:projected:seasonal:anomaly)
+    * [DCS - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:dcs:projected:annual:P20Y-Avg)
+    * [DCS - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:dcs:projected:seasonal:P20Y-Avg)
+    * [DCS - Historical annual](https://api.weather.gc.ca/collections/climate:dcs:historical:annual:absolute)
+    * [DCS - Historical seasonal](https://api.weather.gc.ca/collections/climate:dcs:historical:seasonal:absolute)
+    * [DCS - Historical monthly](https://api.weather.gc.ca/collections/climate:dcs:historical:monthly:absolute)
+    * [DCS - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:dcs:historical:annual:anomaly)
+    * [DCS - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:dcs:historical:seasonal:anomaly)
 
 Example of a web map configured to display the [DCS.PR.RCP26.YEAR.2021-2040_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50) layer served by MSC GeoMet:
 

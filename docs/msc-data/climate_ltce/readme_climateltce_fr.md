@@ -16,7 +16,7 @@ Notez que la visualiseur de l'ECLT affiche les enregistrements actuels pour le m
 
 Ces données sont disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données disponibles via les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/) :
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
     * [ECLT - Records des Extrêmes Quotidiens - Précipitation](https://api.meteo.gc.ca/collections/ltce-precipitation)
     * [ECLT - Records des Extrêmes Quotidiens - Chute de neige](https://api.meteo.gc.ca/collections/ltce-snowfall)
     * [ECLT - Records des Extrêmes Quotidiens - Température](https://api.meteo.gc.ca/collections/ltce-temperature)
