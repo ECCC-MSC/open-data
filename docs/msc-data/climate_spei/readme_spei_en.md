@@ -14,7 +14,14 @@ Standardized Precipitation Evapotranspiration Index (SPEI) calculated using glob
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service.
 
-* [Data available from the GeoMet-Climate API / geospatial web services](readme_spei-geomet_en.md)
+* [Data available on the GeoMet-Climate geospatial web services](readme_spei-geomet_en.md)
+* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [SPEI-1 - Projected](https://api.weather.gc.ca/collections/climate:spei-1:projected)
+    * [SPEI-3 - Projected](https://api.weather.gc.ca/collections/climate:spei-3:projected)
+    * [SPEI-12 - Projected](https://api.weather.gc.ca/collections/climate:spei-12:projected)
+    * [SPEI-1 - Historical](https://api.weather.gc.ca/collections/climate:spei-1:historical)
+    * [SPEI-3 - Historical](https://api.weather.gc.ca/collections/climate:spei-3:historical)
+    * [SPEI-12 - Historical](https://api.weather.gc.ca/collections/climate:spei-12:historical)
 * [NetCDF multi-model ensemble datasets available on the MSC Datamart](readme_spei-datamart_en.md)
 * [NetCDF multi-model ensemble and individual model datasets available on the Canadian Climate Data and Scenarios site](http://climate-scenarios.canada.ca/?page=spei)
 

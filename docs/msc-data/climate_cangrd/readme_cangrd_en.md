@@ -14,7 +14,13 @@ CANGRD is a set of Canadian gridded annual, seasonal, and monthly temperature an
 
 This data is available on [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service.
 
-* [Data available from the GeoMet-Climate API / geospatial web services](readme_cangrd-geomet_en.md)
+* [Data available on the GeoMet-Climate geospatial web services](readme_cangrd-geomet_en.md)
+* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [CanGRD - Historical annual trend](https://api.weather.gc.ca/collections/climate:cangrd:historical:annual:trend)
+    * [CanGRD - Historical seasonal trend](https://api.weather.gc.ca/collections/climate:cangrd:historical:seasonal:trend)
+    * [CanGRD - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:annual:anomaly)
+    * [CanGRD - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:seasonal:anomaly)
+    * [CanGRD - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cangrd:historical:monthly:anomaly)
 * [GeoTIFF data available on the MSC Datamart](readme_cangrd-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the [CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL) layer served by MSC GeoMet:

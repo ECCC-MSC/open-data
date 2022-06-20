@@ -10,7 +10,12 @@ GeoMet du SMC donne accès à plusieurs données et produits d'indices climatiqu
 
 ## Accès aux services web géospatiaux
 
-Les couches des indices climatiques sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+Les données des indices climatiques sont disponibles
+
+* [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
+* [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [Indices - Historique](https://api.meteo.gc.ca/collections/climate:indices:historical)
+    * [Indices - Projeté](https://api.meteo.gc.ca/collections/climate:indices:projected)
 
 Exemple de carte interactive présentant la couche [INDICES.PREP1.RCP26_PCTL25](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=INDICES.PREP1.RCP26_PCTL25) des indices climatiques provenant de GeoMet du SMC :
 

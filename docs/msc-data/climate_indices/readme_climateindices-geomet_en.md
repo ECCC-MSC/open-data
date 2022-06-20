@@ -10,7 +10,12 @@ MSC GeoMet-Climate provides access to data and products of the climate scenarios
 
 ## Access to the geospatial web services
 
-The Climate Indices data is [available on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The Climate Indices data is available
+
+* [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [Indices - Historical](https://api.weather.gc.ca/collections/climate:indices:historical)
+    * [Indices - Projected](https://api.weather.gc.ca/collections/climate:indices:projected)
 
 Example of a web map configured to display the [INDICES.PREP1.RCP26_PCTL25](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=INDICES.PREP1.RCP26_PCTL25) layer served by MSC GeoMet:
 

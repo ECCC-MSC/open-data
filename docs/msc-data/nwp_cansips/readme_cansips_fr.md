@@ -12,11 +12,13 @@ Le Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan) proc�
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+Ces données sont respectivement disponibles sur les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données GRIB2 disponibles sur le Datamart du SMC](readme_cansips-datamart_fr.md) 
+* [Données disponibles sur les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
+    * [SPISCan - membres à 250 km](https://api.meteo.gc.ca/collections/weather:cansips:250km:forecast:members)
+* [Les données en GRIB2 des membres et des produits disponibles sur le Datamart du SMC](readme_cansips-datamart_fr.md) 
 * [Indices en format CSV disponibles sur le Datamart du SMC](readme_cansips-datamartcsv_fr.md)
-* [Données disponibles via les services web géospatiaux](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

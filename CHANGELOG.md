@@ -30,7 +30,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 	* New RDPA rotated lat-lon data (documentation added to current RDPA page)
 	* New HRDLPS, metnotes, lightning pages (not available in main msc-data page)
 * improvements:
-    * None
+    * OACov support included by adding links to dataset pages and sub-pages
 * bug fixes:
     * Hurricane web map Alerts layer changed from Beta to Ops
     * In RDPS abstract, available vertical levels corrected from 80 to 33

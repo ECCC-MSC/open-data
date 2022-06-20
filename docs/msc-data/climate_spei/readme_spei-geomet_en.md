@@ -10,7 +10,16 @@ MSC GeoMet-Climate provides access to data and products of the Standardized Prec
 
 ## Access to the geospatial web services
 
-The SPEI data is [available on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+The SPEI data is available
+
+* [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [SPEI-1 - Projected](https://api.weather.gc.ca/collections/climate:spei-1:projected)
+    * [SPEI-3 - Projected](https://api.weather.gc.ca/collections/climate:spei-3:projected)
+    * [SPEI-12 - Projected](https://api.weather.gc.ca/collections/climate:spei-12:projected)
+    * [SPEI-1 - Historical](https://api.weather.gc.ca/collections/climate:spei-1:historical)
+    * [SPEI-3 - Historical](https://api.weather.gc.ca/collections/climate:spei-3:historical)
+    * [SPEI-12 - Historical](https://api.weather.gc.ca/collections/climate:spei-12:historical)
 
 Example of a web map configured to display the [SPEI-1.RCP2.6.ENS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=SPEI-1.RCP2.6.ENS_PCTL50) layer served by MSC GeoMet:
 

@@ -14,7 +14,14 @@ L’Indice de précipitations et d’évapotranspiration normalisé (IPEN) se ca
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](readme_spei-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_spei-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [IPEN-1 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-1:projected)
+    * [IPEN-3 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-3:projected)
+    * [IPEN-12 - Projeté](https://api.meteo.gc.ca/collections/climate:spei-12:projected)
+    * [IPEN-1 - Historique](https://api.meteo.gc.ca/collections/climate:spei-1:historical)
+    * [IPEN-3 - Historique](https://api.meteo.gc.ca/collections/climate:spei-3:historical)
+    * [IPEN-12 - Historique](https://api.meteo.gc.ca/collections/climate:spei-12:historical)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_spei-datamart_fr.md)
 * [Données d'ensembles multimodèles et données individuelles en format NetCDF disponibles sur le site des Données et scénarios climatiques canadiens](http://scenarios-climatiques.canada.ca/index.php?page=spei)
 

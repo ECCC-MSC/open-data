@@ -13,9 +13,16 @@ The Regional Deterministic Precipitation Analysis (RDPA) produces a best estimat
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
+This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) web service as well as [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
-* [Current data and archives available via geospatial web services GeoMet-Weather](readme_rdpa-geomet_en.md)
+* [Current data and archives available on the GeoMet-Weather geospatial web services](readme_rdpa-geomet_en.md)
+* [Current data and archives available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [RDPA - 24 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:24f)
+    * [RDPA - 6 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:6f)
+    * [RDPA - 24 hours accumulation (preliminary)](https://api.weather.gc.ca/collections/weather:rdpa:10km:24p)
+    * [RDPA - 6 hours accumulation (preliminary)](https://api.weather.gc.ca/collections/weather:rdpa:10km:6p)
+    * [RDPA - 24 hours accumulation at 15 km](https://api.weather.gc.ca/collections/weather:rdpa:15km:24f)
+    * [RDPA - 6 hours accumulation at 15 km](https://api.weather.gc.ca/collections/weather:rdpa:15km:6f)
 * [Current GRIB2 data available on the MSC Datamart](readme_rdpa-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the quantity of precipitation [mm] over the past period of 24 hours using a Regional Deterministic Precipitation Analysis (RDPA) WMS layer served by MSC GeoMet:

@@ -14,7 +14,13 @@ CANGRD est un ensemble de données canadiennes des anomalies annuelles, saisonni
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](readme_cangrd-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_cangrd-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [CanGRD - Tendance annuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:annual:trend)
+    * [CanGRD - Tendance saisonnière historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:seasonal:trend)
+    * [CanGRD - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:annual:anomaly)
+    * [CanGRD - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:seasonal:anomaly)
+    * [CanGRD - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:monthly:anomaly)
 * [Données GeoTIFF disponibles sur le Datamart du SMC](readme_cangrd-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CANGRD.ANO.TX_ANNUAL) du CanGRD provenant de GeoMet du SMC :

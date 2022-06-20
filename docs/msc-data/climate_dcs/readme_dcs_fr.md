@@ -14,7 +14,20 @@ Des scénarios climatiques à réduction d’échelle statistique des changement
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles via les services web géospatiaux GeoMet-Climat](readme_dcs-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_dcs-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [DCS - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:absolute)
+    * [DCS - Saisonnière projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:absolute)
+    * [DCS - Mensuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:monthly:absolute)
+    * [DCS - Anomalie annuelle projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:anomaly)
+    * [DCS - Anomalie saisonnière projetée](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:anomaly)
+    * [DCS - Anomalie annuelle projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:dcs:projected:annual:P20Y-Avg)
+    * [DCS - Anomalie saisonnière projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:dcs:projected:seasonal:P20Y-Avg)
+    * [DCS - Annuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:annual:absolute)
+    * [DCS - Saisonnière historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:seasonal:absolute)
+    * [DCS - Mensuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:monthly:absolute)
+    * [DCS - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:annual:anomaly)
+    * [DCS - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:seasonal:anomaly)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_dcs-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [DCS.PR.RCP26.YEAR.2021-2040_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50) des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :
