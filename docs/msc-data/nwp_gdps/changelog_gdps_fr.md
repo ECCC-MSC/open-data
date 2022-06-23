@@ -8,7 +8,7 @@
 
 ## Le mardi 28 juin 2022
 
-### Mise à jour du GDPS à la version 8.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+### Mise à jour du SGPD à la version 8.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
 
 Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
