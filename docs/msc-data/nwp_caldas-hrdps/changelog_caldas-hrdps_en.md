@@ -8,7 +8,7 @@
 
 ## Tuesday June 28, 2022
 
-### Upgrade to Version 3.1.3 of the CaLDAS-HRDPS adapted to the New High Performance Computing Infrastructure.
+### Upgrade to Version 3.1.0 of the CaLDAS-HRDPS adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
 

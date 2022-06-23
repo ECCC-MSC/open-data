@@ -8,13 +8,13 @@
 
 ## Tuesday June 28, 2022
 
-### Upgrade to Version 2.1.0 of the HREPA adapted to the New High Performance Computing Infrastructure.
+### Upgrade to Version 1.4.0 of the HREPA adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md).
 
 ## Wednesday December 1st, 2021
 
-### Upgrade to Version 2.0.0 of the High Resolution Ensemble Precipitation Analysis (HREPA) at the Canadian Meteorological Centre
+### Upgrade to Version 1.3.0 of the High Resolution Ensemble Precipitation Analysis (HREPA) at the Canadian Meteorological Centre
 
 Effective Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) will update the High Resolution Ensemble Precipitation Analysis (HREPA) to v1.3.0.
 

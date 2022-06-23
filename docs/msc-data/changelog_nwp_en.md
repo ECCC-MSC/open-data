@@ -12,15 +12,15 @@
 
 * [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-june-28-2022)
 
-### March 31st, 2022
+### March 31, 2022
 
 * [Retirement of the Regional Deterministic Storm-surge Prediction System (RDSPS)](nwp_rdsps/changelog_rdsps_en.md#thursday-march-31-2022)
 
-### February 24th, 2022
+### February 24, 2022
 
 * [Water Cycle Prediction System (WCPS) 3.1.0](nwp_wcps/changelog_wcps_en.md#thursday-february-24th-2022)
 
-### February 16th, 2022
+### February 16, 2022
 
 * [Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-february-16-2022)
 * [Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-february-16-2022)
@@ -29,7 +29,7 @@
 
 ## 2021
 
-### December 1st, 2021
+### December 1, 2021
 Atmosphere
 
 * Deterministic:
