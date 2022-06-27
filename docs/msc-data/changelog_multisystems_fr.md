@@ -15,7 +15,7 @@ Un projet majeur de migration vers une nouvelle infrastructure de superinformati
 
 Au cours des prochaines années, cette mise à niveau importante permettra d'autres transferts technologiques de la recherche et du développement vers les opérations, ce qui favorisera l'amélioration continue des services de prévisions météorologiques et environnementales offerts aux Canadiens et aux autres organismes, utilisateurs et partenaires des gouvernements fédéral et provinciaux.
 
-La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2022/06/28/NOCN03_CWAO_XXXXXX).
+La note officielle annonçant ce changement est disponible via [ce lien](https://dd.weather.gc.ca/doc/genots/2022/06/27/NOCN03_CWAO_271857___28531).
 
 ## Le mardi 21 janvier 2020
 

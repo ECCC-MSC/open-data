@@ -86,6 +86,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Bulletins](bulletins/readme_bulletins_en.md)
 * [Hurricanes](hurricanes/readme_hurricanes_en.md)
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
+* [MetNotes](metnotes/readme_metnotes_en.md)
 * [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)
 
 ## Retired open data

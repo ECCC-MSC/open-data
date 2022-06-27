@@ -8,13 +8,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+
 ## 2.4.15
 
-* date: TBD
+* date: 2022-06-27
 * announcements:
     * Not announced
 * new content:
-    * None
+    * MetNotes on main MSC data page
+    * U2 changelog (main announcement and NWP changelogs)
 * improvements:
     * Add comment in Handling styles section about SLD_BODY parameter
 * bug fixes:

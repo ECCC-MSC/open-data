@@ -14,7 +14,7 @@ A major project to migrate to a new supercomputing infrastructure employed by th
 
 Over the coming years, this important upgrade will permit further technological transfers from Research and Development into Operations, supporting the continuous improvement of the meteorological and environmental forecast services offered to Canadians and to other federal and provincial government agencies, users, and partners.
 
-The official note announcing the migration is available at [this link](https://dd.meteo.gc.ca/doc/genots/2022/06/28/NOCN03_XXXXXX).
+The official note announcing the migration is available at [this link](https://dd.weather.gc.ca/doc/genots/2022/06/27/NOCN03_CWAO_271857___28531).
 
 ## Tuesday January 21, 2020
 
