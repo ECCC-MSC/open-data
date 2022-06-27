@@ -1,4 +1,4 @@
-[In English](readme_radarimage-datamart_en.md)
+[In English](readme_metnotes-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données MetNotes se trouvent à l'adresse :
 
-[https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/metnotes](https://hpfx.collab.science.gc.ca/)
+[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/metnotes](https://hpfx.collab.science.gc.ca/)
 
 où :
 
