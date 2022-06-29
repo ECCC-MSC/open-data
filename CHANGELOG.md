@@ -8,31 +8,29 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-
 ## 2.4.16
+
+* date: 2022-06-29
+* announcements:
+    * Not announced
+* new content:
+    * MetNotes on main MSC data page
+* improvements:
+    * None
+* bug fixes:
+    * Typos
+
+## 2.4.15
 
 * date: 2022-06-27
 * announcements:
     * Not announced
 * new content:
-    * MetNotes on main MSC data page
     * U2 changelog (main announcement and NWP changelogs)
 * improvements:
     * Add comment in Handling styles section about SLD_BODY parameter
 * bug fixes:
     * Fix mybinder link in Cathy's use case for hydrometric data
-
-## 2.4.15
-
-* date: NA (erreur)
-* announcements:
-    * Not announced
-* new content:
-    * 
-* improvements:
-    * 
-* bug fixes:
-    * 
 
 ## 2.4.14
 
