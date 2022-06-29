@@ -39,7 +39,7 @@ où :
 * __hhmmss.mss__ : Heure, minute, seconde et milliseconde à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __MetNotes__ : Chaîne de caractères constante indiquant le modèle source : SPCOG (CIOPS en anglais)
+* __MetNotes__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers 
 * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 Exemple :
