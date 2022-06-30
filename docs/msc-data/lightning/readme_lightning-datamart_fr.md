@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données de foudre se trouvent à l'adresse :
 
-[https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/lightning](https://hpfx.collab.science.gc.ca/)
+[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/lightning](https://hpfx.collab.science.gc.ca/)
 
 où :
 
