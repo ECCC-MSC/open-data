@@ -74,10 +74,10 @@ List of variables available in the files:
 
 |Name   | Description|  Level|                          Depth [m]/ Height [m]|  Output Frequency|  Units|
 |---------|---------------|----------|----------|----------|----------|
-|tt     |Air Temperature                            |   AGL|    1.5|    hourly|    K|
-|td      |Dew Point Temperature |   AGL|     1.5|    hourly|    K|
-|tg      |Aggregate Surface Radiative Temperature |   Sfc|     0.0|    hourly|    K|
-|wsol      |Volumetric Water Content of Soil |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    hourly|    m3 m-3|
+|tt     |Air Temperature                            |   AGL|    1.5|    3h|    K|
+|td      |Dew Point Temperature |   AGL|     1.5|    3h|    K|
+|tg      |Aggregate Surface Radiative Temperature |   Sfc|     0.0|    3h|    K|
+|wsol      |Volumetric Water Content of Soil |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    3h|    m3 m-3|
 
 Notes: DBS - Depth Below Surface; AGL - Above Ground Level; Sfc - Surface 
 

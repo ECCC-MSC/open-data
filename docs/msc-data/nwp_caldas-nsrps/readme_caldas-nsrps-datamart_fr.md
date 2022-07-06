@@ -75,10 +75,10 @@ Liste des variables pour chaque heure de validité de:
 
 |Nom   | Description|  Niveau|                          Hauteur [m]/ Profondeur [m]|  Fréquence de sortie|  Unité|
 |---------|---------------|----------|----------|----------|----------|
-|tt     |Température du point de rosée au niveau de l'abri                            |   AGL|    1.5|    horaire|    K|
-|td      |Température du point de rosée au niveau de l'abr |   AGL|     1.5|    horaire|    K|
-|tg      |Température radiative agrégée à la surface |   Sfc|     0.0|    horaire|    K|
-|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    horaire|    m3 m-3|
+|tt     |Température du point de rosée au niveau de l'abri                            |   AGL|    1.5|    3h|    K|
+|td      |Température du point de rosée au niveau de l'abr |   AGL|     1.5|    3h|    K|
+|tg      |Température radiative agrégée à la surface |   Sfc|     0.0|    3h|    K|
+|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    3h|    m3 m-3|
 
 Notes: DBS - profondeur sous la surface; AGL - hauteur au-dessus du sol; Sfc - surface `
 
