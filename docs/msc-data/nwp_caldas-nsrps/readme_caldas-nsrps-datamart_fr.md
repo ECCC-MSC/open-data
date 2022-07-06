@@ -16,11 +16,11 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km)                  
+* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
 
 où :
 
-* __HH__ : Heure en UTC du début de la simulation [00,12]
+* __HH__ : Heure en UTC du début de la simulation [00, 03, 06, 09, 12, 15, 18, 21]
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 

@@ -16,17 +16,17 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km)                  
+* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
 
 where:
 
-* __HH__ : Model run start, in UTC [00,03,06,09,12,15,18,21]
+* __HH__ : Model run start, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
 
 A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 
-![Image of the CaLDAS-NSRPS domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_caldas-nsrps/grille_hrdlps.png) ... _To be completed_ ...
+![Image of the CaLDAS-NSRPS domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_caldas-nsrps/grille_caldas-nsrps.png) ... _To be completed_ ...
 
 The table below lists the values of the rotated latitude-longitude grid parameters:
 
