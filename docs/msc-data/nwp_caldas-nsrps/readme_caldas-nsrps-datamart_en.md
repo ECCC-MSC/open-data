@@ -57,7 +57,7 @@ where:
 * __LVL__ : Vertical levels values are listed in the table below  
 * __grid__ : Horizontal grid [RLatLon]
 * __resolution__ : Resolution in degree 0.0225 (about 2.5km) in both latitude and longitude directions 
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000,001,002, ...,144]
+* __PT0H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour.
 * __nc__ : constant string indicating the NetCDF format
 
 Examples:

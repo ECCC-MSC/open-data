@@ -58,7 +58,7 @@ où :
 * __LVL__ : Les valeurs des niveaux verticaux sont listées dans le tableau ci-dessous
 * __grille__ : Grille horizontale [RLatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5km) dans les deux directions
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000,001, ...,144]
+* __PT0H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure.
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
