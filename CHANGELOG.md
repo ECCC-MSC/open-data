@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
-    * Fix AMQP links (SSC-Di update)
+    * Fix AMQP links (SSC-DI update)
 
 ## 2.4.16
 
