@@ -47,18 +47,18 @@ The script allowing to recover products on the MSC Datamart and to place them in
 
 This client is designed to perform downloads in a very reliable manner and is widely used within the Government of Canada:
 
-[https://github.com/MetPX/Sarracenia](https://github.com/MetPX/Sarracenia)
+[https://metpx.github.io/sarracenia/](https://metpx.github.io/sarracenia/)
 
-An overview is available here: [https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst](https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst)
+An overview is available here: [https://metpx.github.io/sarracenia/Explanation/Overview.html](https://metpx.github.io/sarracenia/Explanation/Overview.html)
 
 The installation guide can be found at this address :
-[https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst](https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst)
+[https://metpx.github.io/sarracenia/Tutorials/Install.html](https://metpx.github.io/sarracenia/Tutorials/Install.html)
 
 Regarding the user guide, please consult : 
-[https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst](https://github.com/MetPX/sarracenia/blob/master/doc/subscriber.rst)
+[https://metpx.github.io/sarracenia/How2Guides/subscriber.html](https://metpx.github.io/sarracenia/How2Guides/subscriber.html)
 
 Several examples of configuration files are also available to users, see:
-[https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe](https://github.com/MetPX/sarracenia/tree/master/sarra/examples/subscribe)
+[https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe)
 
 __NOTE__:
 
