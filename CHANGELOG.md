@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.17
+
+* date: XXXXXX
+* announcements:
+    * Not announced
+* new content:
+    * Lightning data
+* improvements:
+    * None
+* bug fixes:
+    * Fix AMQP links (SSC-Di update)
+
 ## 2.4.16
 
 * date: 2022-06-29
