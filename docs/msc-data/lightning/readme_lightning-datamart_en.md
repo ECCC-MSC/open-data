@@ -39,7 +39,7 @@ where:
 * __HHmm__ : Hour and minute when data are produced
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
-* __Lightning__ : Constant string indicating that data is from lightning density production system
+* __Lightning__ : Constant string indicating that data contain observed flash density 
 * __2.5km__ : Constant string indicating the horizontal data resolution
 * __tif__ : File extention indicating the GeoTIFF format
 

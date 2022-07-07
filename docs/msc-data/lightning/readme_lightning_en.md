@@ -6,7 +6,12 @@
 
 # Lightning density data
 
-This page describes the lightning density data... A compléter ...
+The [Canadian Lightning Detection Network](https://www.canada.ca/en/environment-climate-change/services/lightning/canadian-detection-network.html) provides lightning monitoring across most of Canada. The data distributed here represents a spatio-temporal aggregation of the observations of this network available with an accuracy of a few hundred meters. More precisely, every 10 minutes, the reported observations are processed in the following way:
+
+* The location of observed lightning (cloud-to-ground and intra-cloud) in the last 10 minutes is extracted.
+* Using a regular horizontal grid of about 2.5km by 2.5km, the number of observed lightning flashes within each grid cell is calculated.
+* These grid data are normalized by the exact area of each cell (in km2) and by the accumulation period (10min) to obtain an observed flash density expressed in km-2 and min-1
+* A mask is applied to remove data located more than 250km from Canadian land or sea borders.
 
 ## Access
 
