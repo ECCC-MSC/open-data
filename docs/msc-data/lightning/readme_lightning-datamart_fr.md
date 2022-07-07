@@ -39,7 +39,7 @@ où :
 * __HHmm__ : Heure et  minute à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __Lightning__ : Chaîne de caractères constante indiquant que les données contiennent une densité d'éclairs observés 
+* __Lightning__ : Chaîne de caractères constante indiquant que les données contiennent une densité d'éclairs observés (km-2.min-1)
 * __2.5km__ : Chaîne de caractères constante indiquant la résolution horizontale des données
 * __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF
 
