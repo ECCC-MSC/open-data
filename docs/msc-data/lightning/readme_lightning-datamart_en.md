@@ -38,7 +38,7 @@ where:
 * __T__ : Time delimiter according to ISO8601 norms
 * __HHmm__ : Hour and minute when data are produced
 * __Z__ : Time zone (UTC hour)
-* __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
+* __MSC__ : Constant string indicating that the data is from the Meteorological Service of Canada (MSC)
 * __Lightning__ : Constant string indicating that data contain observed flash density (km-2.min-1)
 * __2.5km__ : Constant string indicating the horizontal data resolution
 * __tif__ : File extention indicating the GeoTIFF format
