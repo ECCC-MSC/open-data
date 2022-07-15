@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Lightning data ((not available in main msc-data page)
+    * Add maps to MetNotes pages
 * improvements:
     * None
 * bug fixes:
