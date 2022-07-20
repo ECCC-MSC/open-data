@@ -10,11 +10,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.17
 
-* date: XXXXXX
+* date: 2022-07-19
 * announcements:
     * Not announced
 * new content:
-    * Lightning data
+    * Lightning data ((not available in main msc-data page)
 * improvements:
     * None
 * bug fixes:
