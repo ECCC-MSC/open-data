@@ -137,9 +137,10 @@ map.on("singleclick", function (evt) {
           let metnotes = features.map((e, i) => {
             let metnote_status = text
               .match(/metnote_status.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let content_en = text
-              .match(/content_en.*\n/g)[i].split(" = ")[1]
+              .replace(/'/g, "")
+              .trim();
+            let content_fr = text
+              .match(/content_fr.*\n/g)[i].split(" = ")[1]
               .replace(/'/g, "");
             let start_datetime = luxon.DateTime.fromFormat(
                 text
@@ -166,12 +167,12 @@ map.on("singleclick", function (evt) {
             return `
             <div id=metnote-${i + 1} ${i > 0 ? "style='display: none;'" : ""}>
               ${features.length > 1 ? `<b>MetNote #${i + 1}</b> <br><br>` : ``}
-              Statut: <span style="text-transform: capitalize;">${metnote_status}</span><br>
+              Statut: <span style="text-transform: capitalize;">${metnote_status == 'active' ? 'actif' : metnote_status}</span><br>
               <br>
               Début: ${start_datetime}<br>
               Fin: ${end_datetime}<br>
               <br>
-              ${content_en}
+              ${content_fr}
            </div>
           `;
           });
