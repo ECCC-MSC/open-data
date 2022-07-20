@@ -6,7 +6,7 @@
 
 # MetNotes data
 
-This page describes the MetNotes which are short notes written by meteorologists that provide additional context to Environment and Climate Change Canada (ECCC)-produced weather forecasts. These brief messages may include possible impacts due to weather, an early heads-up on severe weather, or information to prepare people attending outdoor events affected by weather.
+MetNotes are a geo- and time-referenced, free form polygon product issued by MSC that complement today’s location-based dissemination systems. The concise text of a MetNote (similar to a Tweet) is consistent with communication today where people are seeking information at a glance. Meteorologists will issue a MetNote to add contextual and/or impact information to complement the public forecast that is valid over a specific area, for a specific time range.
 
 These notes are also available on [WeatherCAN](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html) app.
 
