@@ -6,7 +6,7 @@
 
 # Données et Produits du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)
 
-Add text here (BB)
+Le système CaLDAS-SNPSR a été installé avec un statut expérimental dans le Système national de prévision de surface et de rivières (SNPSR) au Centre de prévision météorologique et environnementale du Canada (CPMEC) d'Environnement et changement climatique Canada (ECCC) en juillet 2019. CaLDAS-SNPSR est un système externalisé d'assimilation qui produit des analyses de la surface terrestre toutes les 3 heures pour le domaine du Système à haute résolution de prévision déterministe (SHRPD) à une résolution de 2.5 km. Dans CaLDAS-SNPSR, l'accent est mis sur l'assimilation de données de télédétection satellitaire dans le but de produire les conditions initiales optimales pour les composantes prédictives du SNPSR, le Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) et le Système de prévision hydrologique déterministe (SPHD).
 
 ## Accès
 
