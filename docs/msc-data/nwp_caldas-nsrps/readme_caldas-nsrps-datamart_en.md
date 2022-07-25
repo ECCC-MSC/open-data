@@ -26,7 +26,7 @@ A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 
-![Image of the CaLDAS-NSRPS domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_caldas-nsrps/grille_caldas-nsrps.png) ... _To be completed_ ...
+![Image of the CaLDAS-NSRPS domain](grille_caldas-nsrps.png)
 
 The table below lists the values of the rotated latitude-longitude grid parameters:
 
