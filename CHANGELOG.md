@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.19
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Added mention and links support to GeoMet-OGC-API for HyDat
+* bug fixes:
+    * None
+
 ## 2.4.18
 
 * date: 2022-08-02
