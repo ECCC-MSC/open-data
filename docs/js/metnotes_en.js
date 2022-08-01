@@ -146,7 +146,7 @@ map.on("singleclick", function (evt) {
                 .match(/start_datetime.*\n/g)[i].split(" = ")[1]
                 .replace(/'/g, "")
                 .trim(),
-              "yyyy/mm/dd HH:mm:ssZ"
+              "yyyy/MM/dd HH:mm:ssZ"
             )
               .toUTC()
               .toISO({
@@ -157,7 +157,7 @@ map.on("singleclick", function (evt) {
                 .match(/end_datetime.*\n/g)[i].split(" = ")[1]
                 .replace(/'/g, "")
                 .trim(),
-              "yyyy/mm/dd HH:mm:ssZ"
+              "yyyy/MM/dd HH:mm:ssZ"
             )
               .toUTC()
               .toISO({
