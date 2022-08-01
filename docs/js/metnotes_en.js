@@ -100,7 +100,7 @@ let map = new ol.Map({
   overlays: [overlay],
   view: new ol.View({
     center: ol.proj.fromLonLat([-97, 57]),
-    zoom: 0
+    zoom: 3
   })
 });
 
@@ -118,9 +118,9 @@ map.on("singleclick", function (evt) {
     coordinate,
     viewResolution,
     "EPSG:3857", {
-      INFO_FORMAT: "text/plain",
-      FEATURE_COUNT: 10
-    }
+    INFO_FORMAT: "text/plain",
+    FEATURE_COUNT: 10
+  }
   );
   content.innerHTML = '<p align="center">Loading...</p>';
   overlay.setPosition(evt.coordinate);
@@ -142,23 +142,23 @@ map.on("singleclick", function (evt) {
               .match(/content_en.*\n/g)[i].split(" = ")[1]
               .replace(/'/g, "");
             let start_datetime = luxon.DateTime.fromFormat(
-                text
+              text
                 .match(/start_datetime.*\n/g)[i].split(" = ")[1]
                 .replace(/'/g, "")
                 .trim(),
-                "yyyy/mm/dd HH:mm:ssZ"
-              )
+              "yyyy/mm/dd HH:mm:ssZ"
+            )
               .toUTC()
               .toISO({
                 suppressMilliseconds: true
               });
             let end_datetime = luxon.DateTime.fromFormat(
-                text
+              text
                 .match(/end_datetime.*\n/g)[i].split(" = ")[1]
                 .replace(/'/g, "")
                 .trim(),
-                "yyyy/mm/dd HH:mm:ssZ"
-              )
+              "yyyy/mm/dd HH:mm:ssZ"
+            )
               .toUTC()
               .toISO({
                 suppressMilliseconds: true
