@@ -12,10 +12,16 @@ Données hydrométriques en temps réel et historiques contenant les stations, l
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles sur les services du serveur de données Datamart du SMC et les services web GeoMet du SMC :
+Ces données sont respectivement disponibles sur les API / services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* Observations hydrométriques en temps réel : [Données CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
-* Observations hydrométriques en temps réel (derniers 30 jours) et historiques : [API disponible via GeoMet-OGC-API](../../msc-geomet/readme_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
+    * [Stations de surveillance hydrométrique](https://api.meteo.gc.ca/collections/hydrometric-stations)
+    * [Données hydrométriques en temps réel](https://api.meteo.gc.ca/collections/hydrometric-realtime)
+    * [Moyenne quotidienne des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-daily-mean)
+    * [Moyenne mensuelle des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-monthly-mean)
+    * [Maximum et minimum annuels des moyennes quotiennes des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-annual-statistics)
+    * [Maximum et minimum annuels des niveaux ou débits d'eau instantanés](https://api.meteo.gc.ca/collections/hydrometric-annual-peaks)
+* [Données hydrométriques en temps réel en format CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
