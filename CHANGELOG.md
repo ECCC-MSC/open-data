@@ -10,7 +10,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.19
 
-* date:
+* date: 2022-08-22
 * announcements:
     * Not announced
 * new content:
@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Added mention and links support to GeoMet-OGC-API for HyDat
 * bug fixes:
-    * None
+    * Fix Openlayers Javascript/CSS sources for MetNotes maps
 
 ## 2.4.18
 
