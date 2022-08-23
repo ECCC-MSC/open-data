@@ -1,0 +1,302 @@
+# GRIB2 products
+
+03 hr Heat index Percentile(10) [K]:
+    Variable:
+        EN: Heat index
+        FR: Humidex
+    Abbreviation: HEATX
+    Unit: K
+
+03 hr Temperature Percentile(10) [K]:
+    Variable:
+        EN: Temperature
+        FR: Température
+    Abbreviation: TMP
+    Unit: K
+
+03 hr Total cloud cover Percentile(10) [%]:
+    Variable:
+        EN: Total cloud cover
+        FR: Couverture nuageuse totale
+    Abbreviation: TCDC
+    Unit: '%'
+
+03 hr Wind chill factor Percentile(10) [K]:
+    Variable:
+        EN: Wind chill factor
+        FR: Facteur de refroidissement éolien
+    Abbreviation: WCF
+    Unit: K
+
+03 hr Wind speed Percentile(10) [m/s]:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Abbreviation: WIND
+    Unit: m/s
+
+03 hr Prob of Total precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+06 hr Prob of Freezing rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de pluie verglaçante
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+06 hr Prob of Ice pellets precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+06 hr Prob of Rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Rain precipitation rate > 0.2 kg/(m<sup>2</sup>*s)
+        FR: Taux de précipitation de pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+06 hr Prob of Snow precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+06 hr Prob of Temperature > 0 K [%]:
+    Variable:
+        EN: Temperature
+        FR: Température
+    Abbreviation: TMP
+    Unit: K
+
+06 hr Prob of Total precipitation > 0 kg/(m^2) [%]:
+    Variable:
+        EN: Total precipitation
+        FR: Précipitation totale
+    Abbreviation: APCP
+    Unit: kg/(m<sup>2</sup>)
+
+06 hr Prob of Total precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Freezing rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de pluie verglaçante
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Freezing rain precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de pluie verglaçante
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Ice pellets precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Ice pellets precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Rain precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Snow precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Snow precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Total precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Total precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+12 hr Prob of Wind speed > 5.5556 m/s [%]:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Abbreviation: WIND
+    Unit: m/s
+
+24 hr Heat index Percentile(10) [K]:
+    Variable:
+        EN: Heat index
+        FR: Humidex
+    Abbreviation: HEATX
+    Unit: K
+
+24 hr Prob of Freezing rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de pluie verglaçante
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Freezing rain precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de pluie verglaçante
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Heat index > 298.14 K [%]:
+    Variable:
+        EN: Heat index
+        FR: Humidex
+    Abbreviation: HEATX
+    Unit: K
+
+24 hr Prob of Ice pellets precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Ice pellets precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Rain precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Rain precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Snow precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Snow precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Temperature < 233.14 K [%]:
+    Variable:
+        EN: Temperature
+        FR: Probabilité de température < 233.14 K
+    Abbreviation: ProbTMP
+    Unit: K
+
+24 hr Prob of Temperature > 243.14 K [%]:
+    Variable:
+        EN: Temperature
+        FR: Température
+    Abbreviation: TMP
+    Unit: K
+
+24 hr Prob of Total precipitation rate > 0.2 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Total precipitation rate > 1 kg/(m^2*s) [%]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+24 hr Prob of Wind chill factor < 223.14 K [%]:
+    Variable:
+        EN: Wind chill factor
+        FR: Facteur de refroidissement éolien
+    Abbreviation: WCF
+    Unit: K
+
+24 hr Temperature Percentile(10) [K]:
+    Variable:
+        EN: Temperature
+        FR: Température
+    Abbreviation: TMP10
+    Unit: K
+
+24 hr Total cloud cover Percentile(10) [%]:
+    Variable:
+        EN: Total cloud cover
+        FR: Couverture nuageuse totale
+    Abbreviation: TCDC
+    Unit: '%'
+
+24 hr Wind chill factor Percentile(10) [K]:
+    Variable:
+        EN: Wind chill factor
+        FR: Facteur de refroidissement éolien
+    Abbreviation: WCF
+    Unit: K
+
+24 hr Wind speed Percentile(10) [m/s]:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Abbreviation: WIND
+    Unit: m/s

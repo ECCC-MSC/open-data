@@ -1,0 +1,1041 @@
+# GRIB2 variables
+
+24 hr Prob of Categorical freezing rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of freezing rain
+        FR: Probabilité de pluie verglaçante
+    Abbreviation: PROBFZRA
+    Unit: '%'
+
+24 hr Prob of Categorical ice pellets 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of ice pellets
+        FR: Probabilité de grésil
+    Abbreviation: PROBPL
+    Unit: '%'
+
+24 hr Prob of Categorical rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of rain
+        FR: Probabilité de pluie
+    Abbreviation: PROBRA
+    Unit: '%'
+
+24 hr Prob of Categorical snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of snow
+        FR: Probabilité de neige
+    Abbreviation: PROBSN
+    Unit: '%'
+
+24 hr Prob of Presence of blowing snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of blowing snow
+        FR: Probabilité de poudrerie
+    Abbreviation: PROBBLSN
+    Unit: '%'
+
+24 hr Prob of Presence of snow squalls 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+    Variable:
+        EN: Probability of snow squalls
+        FR: Probabilité de bourrasque de neige
+    Abbreviation: PROBSNSQ
+    Unit: '%'
+
+24 hr Probability of 0.01 inch of precipitation [%]:
+    Variable:
+        EN: Probability of precipitation
+        FR: Probabilité de précipitation
+    Abbreviation: PROBPCPN
+    Unit: '%'
+
+24 hr Thunderstorm probability [%]:
+    Variable:
+        EN: Probability of thunderstorm occurence
+        FR: Probabilité d'occurrence d'orage
+    Abbreviation: PROBTSOCRNC
+    Unit: '%'
+
+24 hr Total precipitation [kg/(m^2)]:
+    Variable:
+        EN: Total precipitation
+        FR: Précipitation totale
+    Abbreviation: APCP
+    Unit: kg/m<sup>2</sup>
+
+Absolute vorticity [1/s]:
+    Variable:
+        EN: Absolute vorticity
+        FR: Tourbillon absolu
+    Abbreviation: ABSV
+    Unit: s<sup>-1</sup>
+
+Albedo [%]:
+    Variable:
+        EN: Albedo
+        FR: Albédo
+    Abbreviation: ALBDO
+    Unit: '%' 
+
+Best (4-layer) lifted index [K]:
+    Variable:
+        EN: Best (4-layer) lifted index
+        FR: Indice de soulèvement
+    Abbreviation: 4LFTX
+    Unit: K
+
+Character of precipitation [0=None; 1=Showers; 2=Intermittent; 3=Continuous; 4-254=Reserved; 255=Missing]:
+    Variable:
+        EN: Character of precipitation
+        FR: Caractère de précipitation
+    Abbreviation: CHARPCPN
+    Unit: 0=None; 1=Showers; 2=Intermittent; 3=Continuous
+
+Cloud water [kg/(m^2)]: 
+    Variable:
+        EN: Cloud water
+        FR: Eau précipitable
+    Abbreviation: CWAT
+    Unit: kg/m<sup>2</sup>
+
+Column-Integrated Mass Density [kg/(m^2)]:
+    Variable:
+        EN: Column-Integrated Mass Density
+        FR: Densité massique intégrée dans la colonne
+    Abbreviation: COLMD
+    Unit: kg/m<sup>2</sup>
+
+Convective available potential energy [J/kg]:
+    Variable:
+        EN: Convective available potential energy
+        FR: Énergie potentielle convective disponible
+    Abbreviation: CAPE
+    Unit: J/kg
+
+Convective inhibition [J/kg]:
+    Variable:
+        EN: Convective inhibition
+        FR: Énergie d'inhibition convective
+    Abbreviation: CIN
+    Unit: J/kg
+
+Convective precipitation [kg/(m^2)]:
+    Variable:
+        EN: Convective precipitation
+        FR: Précipitations convectives
+    Abbreviation: ACPCP
+    Unit: kg/m<sup>2</sup>
+
+Density [kg/(m^3)]:
+    Variable:
+        EN: Density
+        FR: Densité
+    Abbreviation: DEN
+    Unit: kg/m<sup>3</sup>
+
+Dew point depression [K]:
+    Variable:
+        EN: Dew point depression
+        FR: Écart du point de rosée
+    Abbreviation: DEPR
+    Unit: K
+
+Dew point temperature [K]:
+    Variable:
+        EN: Dew point temperature
+        FR: Température du point de rosée
+    Abbreviation: DPT
+    Unit: K
+
+Direction of wind waves [Degree true]:
+    Variable:
+        EN: Direction of wind waves
+        FR: Direction des vagues de la mer du vent
+    Abbreviation: WVDIR
+    Unit: Degree true
+
+Dominant precipitation type [0=Reserved; 1=Rain; 2=Thunderstorm; 3=Freezing rain; 4=Mixed/ice; 5=Snow; 6=Wet snow; 7=Mixture of rain and snow; 8=Ice pellets; 9=Graupel; 10=Hail; 11=Drizzle; 12=Freezing drizzle; 13-191=Reserved; 192-254=Reserved for local use; 255=Missing]:
+    Variable:
+        EN: Dominant precipitation type
+        FR: Type de précipitation dominant
+    Abbreviation: DMNTPCPNTYPE
+    Unit: 101=Rain; 110=Hail; 111=Drizzle; 203=Freezing rain; 212=Freezing drizzle; 308=Ice pellets; 405=Snow; 409=Snow pellets; 413=Ice crystals; 414=Snow grains
+
+Downward incident solar flux [W/m^2]:
+    Variable:
+        EN: Downward incident solar flux
+        FR: Flux solaire entrant incident
+    Abbreviation: DSWRF
+    Unit: W/m<sup>2</sup>
+
+Downward Long Wave Radiative Flux [W/m^2]:
+    Variable:
+        EN: Downward longwave radiation flux
+        FR: Flux radiatif entrant d'ondes longues
+    Abbreviation: DLWRF
+    Unit: W/m<sup>2</sup>
+
+Downward long-wave radiation flux [W/(m^2)]:
+    Variable:
+        EN: Downward longwave radiation flux
+        FR: Flux radiatif entrant d'ondes longues
+    Abbreviation: DLWRF
+    Unit: W/m<sup>2</sup>
+
+Downward short-wave radiation flux [W/(m^2)]:
+    Variable:
+        EN: Downward shortwave radiation flux
+        FR: Flux radiatif entrant d'ondes courtes
+    Abbreviation: DSWRF
+    Unit: W/m<sup>2</sup>
+
+Fog [%]:
+    Variable:
+        EN: Day/night sky state (combined cloud cover and opacity)
+        FR: État du ciel jour/nuit (couverture et opacité nuageuse combinées)
+    Abbreviation: SKSTATE
+    Unit: 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast
+
+Freezing or Frozen Precipitation Rate [kg/(m^2*s)]:
+    Variable:
+        EN: Conditional freezing precipitation amount
+        FR: Quantité conditionnelle de précipitations verglaçantes
+    Abbreviation: CONDAFZPCPN
+    Unit: kg/(m<sup>2</sup>*s)
+
+Freezing rain precipitation rate [kg/(m^2*s)]:
+    Variable:
+        EN: Freezing rain precipitation rate
+        FR: Taux de précipitation des pluies verglaçantes
+    Abbreviation: FPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+Geometric height [m]:
+    Variable:
+        EN: Model orography
+        FR: Orographie du modèle
+    Abbreviation: ORGPHY
+    Unit: m
+
+Geopotential height [gpm]:
+    Variable:
+        EN: Geopotential height
+        FR: Hauteur géopotentielle
+    Abbreviation: HGT
+    Unit: gpm
+
+Ice cover [Proportion]:
+    Variable:
+        EN: Ice cover
+        FR: Fraction de glace
+    Abbreviation: ICEC
+    Unit: Proportion
+
+Ice pellets precipitation rate [kg/(m^2*s)]:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Abbreviation: IPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+Ice thinkness [m]:
+    Variable:
+        EN: Ice thinkness
+        FR: Épaisseur de la glace
+    Abbreviation: ICETK
+    Unit: m
+
+K index [K]:
+    Variable:
+        EN: K index
+        FR: Indice K
+    Abbreviation: KX
+    Unit: °C
+
+Land cover (1=land; 2=sea) [Proportion]:
+    Variable:
+        EN: Water/land mask
+        FR: Masque terre/eau
+    Abbreviation: WTRLANMASK
+    Unit: Fraction
+
+Latent heat net flux [W/(m^2)]:
+    Variable:
+        EN: Latent heat net flux
+        FR: Flux net de chaleur latente
+    Abbreviation: LHTFL
+    Unit: W/m<sup>2</sup>
+
+Mass Density (Concentration) [kg/(m^3)]:
+    Variable:
+        EN: Mass Density (Concentration)
+        FR: Densité massique (Concentration)
+    Abbreviation: MASSDEN
+    Unit: kg/m<sup>3</sup>
+
+Maximum temperature [K]:
+    Variable:
+        EN: Maximum temperature
+        FR: Température maximale
+    Abbreviation: TMAX
+    Unit: K
+
+Mean wave direction of first swell partition [deg]:
+    Variable:
+        EN: Mean wave direction of first swell partition
+        FR: Direction moyenne de la première houle
+    Abbreviation: MWDFSWEL
+    Unit: deg
+
+Mean wave direction of second swell partition [deg]:
+    Variable:
+        EN: Mean wave direction of second swell partition
+        FR: Direction moyenne de la deuxième houle
+    Abbreviation: MWDSSWEL
+    Unit: deg
+
+Mean Zero-Crossing Wave Period [s]:
+    Variable:
+        EN: Mean Zero-Crossing Wave Period
+        FR: Période moyenne centrée des vagues
+    Abbreviation: MZWPER
+    Unit: s
+
+Minimum temperature [K]:
+    Variable:
+        EN: Minimum temperature
+        FR: Température minimale
+    Abbreviation: TMIN
+    Unit: K
+
+Net long wave radiation flux (surface) [W/(m^2)]:
+    Variable:
+        EN: Net longwave radiation flux (surface)
+        FR: Flux net d'ondes longues (surface)
+    Abbreviation: NLWRS
+    Unit: W/m<sup>2</sup>
+
+Net short-wave radiation flux (surface) [W/(m^2)]:
+    Variable:
+        EN: Net shortwave radiation flux (surface)
+        FR: Flux net d'ondes courtes (surface)
+    Abbreviation: NSWRS
+    Unit: W/m<sup>2</sup>
+
+Outgoing Long Wave Radiative Flux [W/m^2]:
+    Variable:
+        EN: Outgoing longwave radiation flux
+        FR: Flux radiatif sortant d'ondes longues
+    Abbreviation: ULWRF
+    Unit: W/m<sup>2</sup>
+
+Peak Period of The Wind Waves [s]:
+    Variable:
+        EN: Peak Period of Wind Waves
+        FR: Période pic des vagues de vent de la mer
+    Abbreviation: PPERWW
+    Unit: s
+
+Peak wave direction [deg]:
+    Variable:
+        EN: Peak wave direction
+        FR: Direction pic des vagues
+    Abbreviation: PWAVEDIR
+    Unit: deg
+
+Peak Wave Period [s]:
+    Variable:
+        EN: Peak Wave Period
+        FR: Période pic des vagues
+    Abbreviation: PWPER
+    Unit: s
+
+Peak wave period of first swell partition [s]:
+    Variable:
+        EN: Peak wave period of first swell partition
+        FR: Période pic de la première houle
+    Abbreviation: PWPFSWEL
+    Unit: s
+
+Peak wave period of second swell partition [s]:
+    Variable:
+        EN: Peak wave period of second swell partition
+        FR: Période pic de la deuxième houle
+    Abbreviation: PWPSSWEL
+    Unit: s
+
+Planetary boundary layer height [m]:
+    Variable:
+        EN: Planetary boundary layer height
+        FR: Hauteur de la couche limite planétaire
+    Abbreviation: HPBL
+    Unit: m
+
+Precipitable water [kg/(m^2)]:
+    Variable:
+        EN: Precipitable water
+        FR: Eau précipitable
+    Abbreviation: PWAT
+    Unit: kg/m<sup>2</sup>
+
+Precipitation intensity index [0=No precipitation occurrence; 1=Light precipitation; 2=Moderate precipitation; 3=Heavy precipitation; 4-254=Reserved; 255=Missing]:
+    Variable:
+        EN: Total precipitation intensity index
+        FR: Indice d'intensité des précipitations totales
+    Abbreviation: TPCPNINTSTI
+    Unit: 0=No intensity; 1=Light; 2=Moderate; 3=Heavy
+
+Precipitation rate [kg/(m^2 s)]:
+    Variable:
+        EN: Precipitation rate
+        FR: Taux de précipitation
+    Abbreviation: PRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+Precipitation type [1=Rain; 2=Thunderstorm; 3=Freezing Rain; 4=Mixed/ice; 5=snow; 255=missing]:
+    Variable:
+        EN: Precipitation type
+        FR: Type de précipitation
+    Abbreviation: PTYPE
+    Unit: 1=Rain; 2=Thunderstorm; 3=Freezing Rain; 4=Mixed/ice; 5=Snow
+
+Precipitation type [0=Reserved; 1=Rain; 2=Thunderstorm; 3=Freezing rain; 4=Mixed/ice; 5=Snow; 6=Wet snow; 7=Mixture of rain and snow; 8=Ice pellets; 9=Graupel; 10=Hail; 11=Drizzle; 12=Freezing drizzle; 13-191=Reserved; 192-254=Reserved for local use; 255=Missing]:
+    Variable:
+        EN: Instantaneous precipitation type
+        FR: Type de précipitation instantanée
+    Abbreviation: PCPNTYPE
+    Unit: 1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
+
+Presence of blowing snow [0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing]:
+    Variable:
+        EN: Presence of blowing snow
+        FR: Présence de poudrerie
+    Abbreviation: BLSN
+    Unit: 0=No; 1=Yes
+
+Pressure [Pa]:
+    Variable:
+        EN: Pressure
+        FR: Pression
+    Abbreviation: PRES
+    Unit: Pa
+
+Pressure reduced to MSL [Pa]:
+    Variable:
+        EN: Pressure reduced to Mean Sea Level
+        FR: Pression réduite au niveau moyen de la mer
+    Abbreviation: PRMSL
+    Unit: Pa
+
+Rain precipitation rate [kg/(m^2*s)]:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de la pluie
+    Abbreviation: RPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+Relative humidity [%]:
+    Variable:
+        EN: Relative humidity
+        FR: Humidité relative
+    Abbreviation: RH
+    Unit: '%'
+
+Sensible heat net flux [W/(m^2)]:
+    Variable:
+        EN: Sensible heat net flux
+        FR: Flux net de chaleur sensible
+    Abbreviation: SHTFL
+    Unit: W/m<sup>2</sup>
+
+Showalter Index [K]:
+    Variable:
+        EN: Showalter Index
+        FR: Indice Showalter
+    Abbreviation: SHWINX
+    Unit: K
+
+Significant height of combined wind waves and swell [m]:
+    Variable:
+        EN: Significant height of combined wind waves and swell
+        FR: Hauteur significative des vagues de vent et de la houle combinées
+    Abbreviation: HTSGW
+    Unit: m
+
+Significant height of wind waves [m]:
+    Variable:
+        EN: Significant height of wind waves
+        FR: Hauteur significative des vagues de la mer du vent
+    Abbreviation: WVHGT
+    Unit: m
+
+Significant wave height of first swell partition [m]:
+    Variable:
+        EN: Significant wave height of first swell partition
+        FR: Hauteur significative de la première houle
+    Abbreviation: SWHFSWEL
+    Unit: m
+
+Significant wave height of second swell partition [m]:
+    Variable:
+        EN: Significant wave height of second swell partition
+        FR: Hauteur significative de la deuxième houle
+    Abbreviation: SWHSSWEL
+    Unit: m
+
+Skin temperature [K]:
+    Variable:
+        EN: Skin temperature
+        FR: Température de la peau
+    Abbreviation: SKINT
+    Unit: K
+
+Snow density [kg/m^3]:
+    Variable:
+        EN: Snow density
+        FR: Densité de la neige
+    Abbreviation: SDEN
+    Unit: kg/m<sup>3</sup>
+
+Snow depth [m]:
+    Variable:
+        EN: Snow depth
+        FR: Épaisseur de la neige
+    Abbreviation: SNOD
+    Unit: m
+
+Snow depth water equivalent [kg/m^2]:
+    Variable:
+        EN: Snow depth water equivalent
+        FR: Épaisseur de neige équivalent en eau
+    Abbreviation: SDWE
+    Unit: kg/m<sup>2</sup>
+
+Snow level [m]:
+    Variable:
+        EN: Height of snow level
+        FR: Hauteur du niveau de la neige
+    Abbreviation: HGTSNLVL
+    Unit: m
+
+Snow precipitation rate [kg/(m^2*s)]:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de la neige
+    Abbreviation: SPRATE
+    Unit: kg/(m<sup>2</sup>*s)
+
+Soil moisture content [kg/(m^2)]:
+    Variable:
+        EN: Soil moisture content
+        FR: Taux d'humidité du sol
+    Abbreviation: SOILM
+    Unit: kg/m<sup>2</sup>
+
+Soil Temperature [K]:
+    Variable:
+        EN: Soil Temperature
+        FR: Température du sol
+    Abbreviation: TSOIL
+    Unit: K
+
+Soil temperature [K]:
+    Variable:
+        EN: Soil Temperature
+        FR: Température du sol
+    Abbreviation: TSOIL
+    Unit: K
+
+Soil Volumetric Ice Content (Water Equivalent)  [m^3/m^3]:
+    Variable:
+        EN: Soil Volumetric Ice Content (Water Equivalent)
+        FR: Contenu volumétrique en glace du sol (équivalent en eau)
+    Abbreviation: SOILVIC
+    Unit: m<sup>3</sup>/m<sup>3</sup>
+
+Specific humidity [kg/kg]:
+    Variable:
+        EN: Specific humidity
+        FR: Humidité spécifique
+    Abbreviation: SPFH
+    Unit: kg/kg
+
+Storm relative helicity [J/kg]:
+    Variable:
+        EN: Storm relative helicity
+        FR: Hélicité relative de la tempête
+    Abbreviation: HLCY
+    Unit: J/kg
+
+Surface Water Runoff [kg/(m^2)]:
+    Variable:
+        EN: Surface Water Runoff
+        FR: Ruissellement de surface
+    Abbreviation: SFCWRO
+    Unit: kg/m<sup>2</sup>
+
+Temperature [K]:
+    Variable:
+        EN: Temperature
+        FR: Température
+    Abbreviation: TMP
+    Unit: K
+
+Thickness [m]:
+    Variable:
+        EN: Thickness between 2 isobaric levels
+        FR: Épaisseur entre 2 niveaux isobares
+    Abbreviation: THICK
+    Unit: m
+
+Total cloud cover [%]:
+    Variable:
+        EN: Total cloud cover
+        FR: Couverture nuageuse totale
+    Abbreviation: TCDC
+    Unit: '%'
+
+Total precipitation [kg/(m^2)]:
+    Variable:
+        EN: Total precipitation
+        FR: Précipitations totales
+    Abbreviation: APCP
+    Unit: kg/m<sup>2</sup>
+
+Total totals index [K]:
+    Variable:
+        EN: Total totals index
+        FR: Indice Total-Total
+    Abbreviation: TOTALX
+    Unit: K
+
+Universal thermal climate index [K]:
+    Variable:
+        EN: Universal thermal climate index
+        FR: Indice climatique thermique universel
+    Abbreviation: UTHCIDX
+    Unit: K
+
+Upward long-wave radiation flux [W/(m^2)]:
+    Variable:
+        EN: Upward longwave radiation flux
+        FR: Flux radiatif ascendant d'ondes longues
+    Abbreviation: ULWRF
+    Unit: W/m<sup>2</sup>
+
+Upward short-wave radiation flux [W/(m^2)]:
+    Variable:
+        EN: Upward shortwave radiation flux
+        FR: Flux radiatif ascendant d'ondes courtes
+    Abbreviation: USWRF
+    Unit: W/m<sup>2</sup>
+
+Upward short wave radiative flux [W/m^2]:
+    Variable:
+        EN: Upward shortwave radiation flux
+        FR: Flux radiatif ascendant d'ondes courtes
+    Abbreviation: USWRF
+    Unit: W/m<sup>2</sup>
+
+Vertical velocity (pressure) [Pa/s]:
+    Variable:
+        EN: Vertical velocity (pressure)
+        FR: Vitesse verticale (pression)
+    Abbreviation: VVEL
+    Unit: Pa/s
+
+Visibility Through Ice Fog [m]:
+    Variable:
+        EN: Visibility Through Ice Fog
+        FR: Visibilité dans le brouillard glacé
+    Abbreviation: VISIFG
+    Unit: m
+
+Visibility Through Liquid Fog [m]:
+    Variable:
+        EN: Visibility Through Liquid Fog
+        FR: Visibilité dans le brouillard liquide
+    Abbreviation: VISLFG
+    Unit: m
+
+Volume Mixing Ratio (Fraction in Air) [mol/mol]:
+    Variable:
+        EN: Volume Mixing Ratio (Fraction in Air)
+        FR: Rapport de mélange en volume (Fraction dans l'air)
+    Abbreviation: VMXR
+    Unit: mol/mol
+
+Volumetric soil moisture [m^3/m^3]:
+    Variable:
+        EN: Volumetric soil moisture
+        FR: Humidité volumétrique du sol
+    Abbreviation: VSOILM
+    Unit: m<sup>3</sup>/m<sup>3</sup>
+
+Water equivalent of accumulated snow depth [kg/(m^2)]:
+    Variable:
+        EN: Water equivalent of accumulated snow depth
+        FR: Épaisseur de neige accumulée équivalent en eau
+    Abbreviation: WEASD
+    Unit: kg/m<sup>2</sup>
+
+Water temperature [K]:
+    Variable:
+        EN: Water temperature
+        FR: Température de l'eau
+    Abbreviation: WTMP
+    Unit: K
+
+Wind chill factor [K]:
+    Variable:
+        EN: Wind chill factor
+        FR: Indice de refroidissement éolien
+    Abbreviation: WCF
+    Unit: °C
+
+Wind direction (from which blowing) [deg true]:
+    Variable:
+        EN: Wind direction (from which blowing)
+        FR: Direction du vent (d'où il souffle)
+    Abbreviation: WDIR
+    Unit: Degree true
+
+Wind speed [m/s]:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Abbreviation: WSPD
+    Unit: m/s
+
+Wind speed (gust) [m/s]:
+    Variable:
+        EN: Wind speed (gust)
+        FR: Vitesse du vent (rafale)
+    Abbreviation: GUST
+    Unit: m/s
+
+u-component of wind [m/s]:
+    Variable:
+        EN: u-component of wind
+        FR: Composante u du vent
+    Abbreviation: UGRD
+    Unit: m/s
+
+v-component of wind [m/s]:
+    Variable:
+        EN: v-component of wind
+        FR: Composante v du vent
+    Abbreviation: VGRD
+    Unit: m/s
+
+# NetCDF variables
+
+Depth-integrated compressive sea ice strength:
+    Variable:
+        EN: Depth-integrated compressive sea ice strength
+        FR: Résistance à la compression de la glace intégrée verticalement
+    Abbreviation: iicestrength
+    Unit: N/m
+
+Depth-integrated internal sea ice pressure:
+    Variable:
+        EN: Depth-integrated internal sea ice pressure
+        FR: Pression interne de la glace intégrée verticalement
+    Abbreviation: iicepressure
+    Unit: N/m
+
+Ocean mixed layer depth based on density criterion:
+    Variable:
+        EN: Ocean mixed layer depth based on density criterion
+        FR: Profondeur de la couche de mélange d'après le critère de densité
+    Abbreviation: sokaraml
+    Unit: m
+
+Sea ice area fraction:
+    Variable:
+        EN: Sea ice area fraction
+        FR: Fraction de la glace de mer
+    Abbreviation: iiceconc
+    Unit: Fraction
+
+sea ice divergence:
+    Variable:
+        EN: Sea ice divergence
+        FR: Divergence de la glace de mer
+    Abbreviation: iicedivergence
+    Unit: '%/day'
+
+sea ice shear: 
+    Variable:
+        EN: Sea ice shear
+        FR: Cisaillement de la glace de mer
+    Abbreviation: iiceshear
+    Unit: '%/day'
+
+sea ice shear strain rate:
+    Variable:
+        EN: Sea ice shear strain rate
+        FR: Taux de déformation dû au cisaillement dans la glace de mer
+    Abbreviation: iiceshear
+    Unit: '%/day'
+
+Sea ice volume per unit grid cell area:
+    Variable:
+        EN: Sea ice volume per unit grid cell area
+        FR: Volume de glace de mer par unité de surface de cellule de grille
+    Abbreviation: iicevol
+    Unit: m
+
+Sea ice x velocity:
+    Variable:
+        EN: Sea ice x velocity
+        FR: Composante x de la vitesse de la glace de mer
+    Abbreviation: itzocrtx
+    Unit: m/s
+
+Sea ice y velocity:
+    Variable:
+        EN: Sea ice y velocity
+        FR: Composante y de la vitesse de la glace de mer
+    Abbreviation: itmecrty
+    Unit: m/s
+
+Sea surface height (MWL):
+    Variable:
+        EN: Sea surface height above Mean Water Level
+        FR: Hauteur de la surface de la mer relative au niveau moyen de l’eau
+    Abbreviation: zos
+    Unit: m
+
+Sea surface height (HAT):
+    Variable:
+        EN: Sea surface height above model Highest Astronomical Tide
+        FR: Hauteur de la surface de la mer relative à la plus haute mer astronomique du modèle
+    Abbreviation: zos
+    Unit: m
+
+Sea surface height (LAT):
+    Variable:
+        EN: Sea surface height above model Lowest Astronomical Tide
+        FR: Hauteur de la surface de la mer relative à la plus basse mer astronomique du modèle
+    Abbreviation: zos
+    Unit: m
+
+Sea surface height above geoid:
+    Variable:
+        EN: Sea surface height above geoid
+        FR: Hauteur de la surface de la mer par rapport au géoïde
+    Abbreviation: sossheig
+    Unit: m
+
+sea_surface_height_above_geoid:
+    Variable:
+        EN: Sea surface height above geoid
+        FR: Hauteur de la surface de la mer par rapport au géoïde
+    Abbreviation: zos
+    Unit: m
+
+Sea water potential temperature:
+    Variable:
+        EN: Sea water potential temperature
+        FR: Température potentielle de l'eau de mer
+    Abbreviation: votemper
+    Unit: K
+
+Sea water salinity:
+    Variable:
+        EN: Sea water salinity
+        FR: Salinité de l'eau de mer
+    Abbreviation: vosaline
+    Unit: PSU
+
+Sea water x velocity:
+    Variable:
+        EN: Sea water x velocity
+        FR: Composante X de la vitesse de l’eau
+    Abbreviation: vozocrtx
+    Unit: m/s
+
+Sea water y velocity:
+    Variable:
+        EN: Sea water y velocity
+        FR: Composante Y de la vitesse de l’eau
+    Abbreviation: vomecrty
+    Unit: m/s
+
+Storm surge:
+    Variable:
+        EN: Storm surge
+        FR: Onde de tempête
+    Abbreviation: etas
+    Unit: m
+
+storm_surge:
+    Variable:
+        EN: Storm surge
+        FR: Onde de tempête
+    Abbreviation: etas
+    Unit: m
+
+Surface air temperature (1.5m):
+    Variable:
+        EN: Surface air temperature (1.5 m)
+        FR: Température de l'air en surface (1,5 m)
+    Abbreviation: tairsurf
+    Unit: K
+
+Surface runoff:
+    Variable:
+        EN: Surface runoff
+        FR: Ruissellement de surface
+    Abbreviation: runoffsurf
+    Unit: mm
+
+Surface temperature of snow over sea ice or bare sea ice:
+    Variable:
+        EN: Surface temperature of snow over sea ice or bare sea ice
+        FR: Température de surface de la neige sur la glace de mer ou la glace de mer nue
+    Abbreviation: iicesurftemp
+    Unit: K
+
+Surface wind x velocity (10m):
+    Variable:
+        EN: Surface wind x velocity (10 m)
+        FR: Composante X du vent de surface (10 m)
+    Abbreviation: uwindsurf
+    Unit: m/s
+
+Surface wind y velocity (10m):
+    Variable:
+        EN: Surface wind y velocity (10 m)
+        FR: Composante Y du vent de surface (10 m)
+    Abbreviation: vwindsurf
+    Unit: m/s
+
+Turbocline depth:
+    Variable:
+        EN: Turbocline depth
+        FR: Profondeur de la turbocline
+    Abbreviation: somixhgt
+    Unit: m
+
+Volume of snow on sea ice per unit grid cell area:
+    Variable:
+        EN: Volume of snow on sea ice per unit grid cell area
+        FR: Volume de la neige de mer par unité de surface de cellule de grille
+    Abbreviation: isnowvol
+    Unit: cm
+
+# https://dd.alpha.meteo.gc.ca/
+
+25th precipitation amount percentile estimated through the 25 members of the ensemble:
+    Variable:
+        EN: 25th precipitation amount percentile estimated through the 25 members of the ensemble
+        FR: 25e percentile des précipitations accumulées estimé sur les 25 membres de l'ensemble
+    Abbreviation: q025
+    Unit: kg/m<sup>2</sup>
+
+75th precipitation amount percentile estimated through the 25 members of the ensemble:
+    Variable:
+        EN: 75th precipitation amount percentile estimated through the 25 members of the ensemble
+        FR: 75e percentile des précipitations accumulées estimé sur les 25 membres de l'ensemble
+    Abbreviation: q075
+    Unit: kg/m<sup>2</sup>
+
+1.5-m air temperature:
+    Variable:
+        EN: Air Temperature
+        FR: Température de l'air
+    Abbreviation: tt
+    Unit: K
+
+1.5-m dew point temperature:
+    Variable:
+        EN: Dew Point Temperature
+        FR: Température du point de rosée
+    Abbreviation: td
+    Unit: K
+
+aggregate surface radiative temperature:
+    Variable:
+        EN: Aggregate Surface Radiative Temperature
+        FR: Température radiative agrégée à la surface
+    Abbreviation: tg
+    Unit: K
+
+drainage amount through base of soil model:
+    Variable:
+        EN: Drainage Amount Through Base of Soil Model
+        FR: Accumulation du drainage à la base de la couche de sol
+    Abbreviation: o1
+    Unit: kg/m<sup>2</sup>
+
+land surface evaporation amount:
+    Variable:
+        EN: Land Surface Evaporation Amount
+        FR: Accumulation de l'évaporation de la surface terrestre
+    Abbreviation: acwf
+    Unit: kg/m<sup>2</sup>
+
+lateral subsurface runoff amount:
+    Variable:
+        EN: Lateral Subsurface Runoff Amount
+        FR: Accumulation de l'écoulement total latéral
+    Abbreviation: alat
+    Unit: kg/m<sup>2</sup>
+
+model orography:
+    Variable:
+        EN: Model Orography
+        FR: Orographie
+    Abbreviation: mf
+    Unit: m
+
+Seeing index [0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent; 6-190=Reserved; 191=Unknown; 192-254=Reserved for local use; 255=Missing]:
+    Variable:
+        EN: Seeing index
+        FR: Indice de scintillation
+    Abbreviation: SEEI
+    Unit: 0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent
+
+Sky transparency index [0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent; 6-190=Reserved; 191=Unknown; 192-254=Reserved for local use; 255=Missing]:
+    Variable:
+        EN: Sky transparency index
+        FR: Indice de transparence
+    Abbreviation: TRSP
+    Unit: 0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent
+
+snow depth (land):
+    Variable:
+        EN: Snow depth (land)
+        FR: Épaisseur de neige (à la surface terrestre)
+    Abbreviation: sd
+    Unit: m
+
+surface area fraction:
+    Variable:
+        EN: Surface Area Fraction
+        FR: Fraction d'aire occupée par le sol
+    Abbreviation: wt
+    Unit: Fraction
+
+surface runoff amount:
+    Variable:
+        EN: Surface Runoff Amount
+        FR: Accumulation du ruissellement de surface
+    Abbreviation: traf
+    Unit: kg/m<sup>2</sup>
+
+volumetric water content of soil:
+    Variable:
+        EN: Volumetric Water Content of Soil
+        FR: Contenu volumique d'eau liquide dans le sol
+    Abbreviation: wsol
+    Unit: m<sup>3</sup>/m<sup>3</sup>
+
+water equivalent of snow cover (land):
+    Variable:
+        EN: Water equivalent of snow cover (land)
+        FR: Équivalent en eau de la neige (à la surface terrestre)
+    Abbreviation: swe
+    Unit: kg/m<sup>2</sup>

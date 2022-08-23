@@ -1,0 +1,227 @@
+0-RESERVED(200):
+    EN: Surface
+    FR: Surface
+
+0-SFC:
+    EN: Surface
+    FR: Surface
+
+0-0-SFC:
+    EN: Surface
+    FR: Surface
+
+0-MSL:
+    EN: Mean Sea Level
+    FR: Niveau moyen de la mer
+
+0-EATM:
+    EN: Atmospheric Column
+    FR: Colonne atmosphérique
+
+0-NTAT:
+    EN: Nominal Top of Atmosphere
+    FR: Sommet nominal de l'atmosphère
+
+0-0.01-DBLL:
+    EN: Depth Below Land Surface (0-0.01 m)
+    FR: Profondeur sous la surface terrestre (0-0.01 m)
+
+0-0.1-DBLL:
+    EN: Depth Below Land Surface (0-0.1 m)
+    FR: Profondeur sous la surface terrestre (0-0.1 m)
+
+100-ISBL:
+    EN: 1 mb
+    FR: 1 mb
+
+500-ISBL:
+    EN: 5 mb
+    FR: 5 mb
+
+1000-ISBL:
+    EN: 10 mb
+    FR: 10 mb
+
+2000-ISBL:
+    EN: 20 mb
+    FR: 20 mb
+
+3000-ISBL:
+    EN: 30 mb
+    FR: 30 mb
+
+5000-ISBL:
+    EN: 50 mb
+    FR: 50 mb
+
+10000-ISBL:
+    EN: 100 mb
+    FR: 100 mb
+
+15000-ISBL:
+    EN: 150 mb
+    FR: 150 mb
+
+17500-ISBL:
+    EN: 175 mb
+    FR: 175 mb
+
+20000-ISBL:
+    EN: 200 mb
+    FR: 200 mb
+
+22500-ISBL:
+    EN: 225 mb
+    FR: 225 mb
+
+25000-ISBL:
+    EN: 250 mb
+    FR: 250 mb
+
+27500-ISBL:
+    EN: 275 mb
+    FR: 275 mb
+
+30000-ISBL:
+    EN: 300 mb
+    FR: 300 mb
+
+35000-ISBL:
+    EN: 350 mb
+    FR: 350 mb
+
+40000-ISBL:
+    EN: 400 mb
+    FR: 400 mb
+
+45000-ISBL:
+    EN: 450 mb
+    FR: 450 mb
+
+50000-ISBL:
+    EN: 500 mb
+    FR: 500 mb
+
+55000-ISBL:
+    EN: 550 mb
+    FR: 550 mb
+
+60000-ISBL:
+    EN: 600 mb
+    FR: 600 mb
+
+65000-ISBL:
+    EN: 650 mb
+    FR: 650 mb
+
+70000-ISBL:
+    EN: 700 mb
+    FR: 700 mb
+
+75000-ISBL:
+    EN: 750 mb
+    FR: 750 mb
+
+80000-ISBL:
+    EN: 800 mb
+    FR: 800 mb
+
+85000-ISBL:
+    EN: 850 mb
+    FR: 850 mb
+
+87500-ISBL:
+    EN: 875 mb
+    FR: 875 mb
+
+90000-ISBL:
+    EN: 900 mb
+    FR: 900 mb
+
+92500-ISBL:
+    EN: 925 mb
+    FR: 925 mb
+
+95000-ISBL:
+    EN: 950 mb
+    FR: 950 mb
+
+97000-ISBL:
+    EN: 970 mb
+    FR: 970 mb
+
+98500-ISBL:
+    EN: 985 mb
+    FR: 985 mb
+
+100000-ISBL:
+    EN: 1000 mb
+    FR: 1000 mb
+
+101500-ISBL:
+    EN: 1015 mb
+    FR: 1015 mb
+
+100000-50000-ISBL:
+    EN: 1000-500 mb
+    FR: 1000-500 mb
+
+2-HTGL:
+    EN: 2 m Above Ground Level
+    FR: 2 m au-dessus du niveau du sol
+
+10-HTGL:
+    EN: 10 m Above Ground Level
+    FR: 10 m au-dessus du niveau du sol
+
+40-HTGL:
+    EN: 40 m Above Ground Level
+    FR: 40 m au-dessus du niveau du sol
+
+80-HTGL:
+    EN: 80 m Above Ground Level
+    FR: 80 m au-dessus du niveau du sol
+
+120-HTGL:
+    EN: 120 m Above Ground Level
+    FR: 120 m au-dessus du niveau du sol
+
+9850-EtaL:
+    EN: 120 m Above Ground Level
+    FR: 120 m au-dessus du niveau du sol
+
+9950-EtaL:
+    EN: 40 m Above Ground Level
+    FR: 40 m au-dessus du niveau du sol
+
+10000-EtaL:
+    EN: Surface
+    FR: Surface
+
+1-PVL:
+    EN: Potential Vorticity Unit 1
+    FR: Unité de tourbillon potentiel 1
+
+1.5-PVL:
+    EN: Potential Vorticity Unit 1.5
+    FR: Unité de tourbillon potentiel 1.5
+
+2-PVL:
+    EN: Potential Vorticity Unit 2
+    FR: Unité de tourbillon potentiel 2
+
+'0.494025':
+    EN: 50 depth levels
+    FR: 50 niveaux de profondeur
+
+'0.50594902':
+    EN: 99 depth levels
+    FR: 99 niveaux de profondeur
+
+'0.50752997':
+    EN: 68 depth levels
+    FR: 68 niveaux de profondeur
+
+'0.5':
+    EN: 39 depth levels
+    FR: 39 niveaux de profondeur

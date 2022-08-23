@@ -1,0 +1,2 @@
+bs4 (https://pypi.org/project/beautifulsoup4/)
+yaml (https://pypi.org/project/PyYAML/)
