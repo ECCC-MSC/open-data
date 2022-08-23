@@ -243,8 +243,8 @@ Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
 | DIST | Orographie du modèle |m |
 | DPT |	Température du point de rosée |	C |
 | DPTYPE | Type dominant de précipitation | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige |
-| FZPRATE | Quantité conditionnelle de précipitation verglaçante | kg*m-2*m-1 |
-| GUST | Rafale de vents | m*s-1 |
+| FZPRATE | Quantité conditionnelle de précipitation verglaçante | m |
+| GUST | Rafale de vents | m/s |
 | HSNOWL | Hauteur du niveau de la neige | m |
 | LAND | Masque terre/eau | fraction |
 | PARAIN | Probabilité de précipitation liquide | % |
@@ -264,7 +264,7 @@ Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
 | VISIFOG | Visibilité dans le brouillard glacé | m |
 | VISLFOG | Visibilité à travers le brouillard liquide | m |
 | WDIR | Direction du vent | Degré vrai |
-| WIND | Vitesse du vent | m*s-1 |
+| WIND | Vitesse du vent | m/s |
 
 
 ## À propos du masque No-Data sur la grille polaire stéréographique continentale
