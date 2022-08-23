@@ -230,12 +230,13 @@ Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines va
 
 Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
 
-| Abréviation du paramètre GRIB2 | Description | Unités   |
+| Abréviation du paramètre GRIB2 | Description | Unité   |
 |------------------------|-------------|----------|
-| BSNOW | Présence de poudrerie | ICEC | binaire (0/1) |
+| BSNOW | Présence de poudrerie | binaire (0/1) |
 | CFRZR | Probabilité de pluie verglaçante	| %|
 | CICEP | Probabilité de grésil | %|
 | CONDARAIN | Quantité conditionnelle de précipitation liquide | m |
+| CONDASNOW | Quantité conditionnelle de neige solide | m |
 | CONDICEP | Quantité conditionnelle de granulés de glace solide  | m |
 | CP |	Caractère de la précipitation | 0=aucune; 1=averse; 2=intermittente; 3=continue |
 | CRAIN | Probabilité de pluie | % |

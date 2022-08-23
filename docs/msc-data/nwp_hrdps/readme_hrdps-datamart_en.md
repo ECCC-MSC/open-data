@@ -10,6 +10,8 @@ The [High Resolution Deterministic Prediction System or HRDPS](readme_hrdps_en.m
 
 Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.
 
+As part of a modernization plan of the Meteorological Service of Canada (MSC), coherent [weather elements on the grid](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf) ("WEonG"), merging raw model outputs and post-processed with various diagnostic approaches, are also available to serve the different forecasting programs (public, marine, aviation, air quality, etc.) These data are available on a lat-lon rotated grid.
+
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
@@ -142,8 +144,6 @@ Table lists the values of various parameters of the Maritime polar-stereographic
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
-
 ### Polar-stereographic grid
 
 The files have the following nomenclature :
@@ -161,7 +161,7 @@ where :
 * __ps2.5km__ : Constant string indicating that the projection used is polar-stereographic at 2.5 km resolution.
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
 * __HH__ : UTC run time [00, 06, 12, 18].
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 024/030/042/048].
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048].
 * __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available].
 * __grib2__ : Constant string indicating the GRIB2 format is used.
 
@@ -175,7 +175,8 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 The files have the following nomenclature :
 
-{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grille}{resolution}_PT{hhh}H.grib2
 
 where :
 
@@ -185,18 +186,19 @@ where :
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __HRDPS__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
+* __HRDPS-WEonG__ : Constant string indicating that the data is from the weather elements on the grid of the High Resolution Deterministic Prediction System
 * __VAR__ : Variable type included in the file (ex: UGRD)
-* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface]
+* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC or Sfc for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface, AGL-10m for 10m above ground level]
 * __Grille__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
-* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 024/030/042/048]
+* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 048]
+* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 048]
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
-Example of filename : 
+Examples of filename : 
 
-20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
-
-This file has been produced by the MSC and contains the data of the High Resolution Deterministic Prediction System. It contains wind gust (GUST) at 10m above ground (AGL-10m), on a 2.5km (0.0225) resolution rotated lat-lon grid. The forecast starts on November 23th at 00Z (20201123T00Z) and contains forecast hour 12 (P012) in GRIB2 format (grib2).
+* 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
+* 20220821T12Z_MSC_HRDPS-WEonG_VISIFOG_Sfc_RLatLon0.0225_PT024H.grib2
 
 ## Levels
 
@@ -226,13 +228,52 @@ Warning : the tables below are not up to date (to come), some variables are miss
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
 
+List of weather elements on the grid (*HRDPS-WEonG*):
+
+| GRIB2 parameter abreviation | Description | Unity  |
+|------------------------|-------------|----------|
+| BSNOW | Presence of blowing snow | binary (0/1) |
+| CFRZR | Probability of freezing rain	| %|
+| CICEP | Probability of ice pellets | %|
+| CONDARAIN | Conditional amount of liquid precipitation | m |
+| CONDASNOW | Conditional amount of solid snow | m |
+| CONDICEP | Conditional amount of solide ice pellets | m |
+| CP |	Character of precipitation | 0=none; 1=showers; 2=intermittent; 3=continuous |
+| CRAIN | Probability of rain | % |
+| CSNOW | Probability of snow | % |
+| DIST | Model orography |m |
+| DPT |	Dew point temperature |	C |
+| DPTYPE | Dominant precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
+| FZPRATE | Conditional freezing precipitation amount | m |
+| GUST | Gust | m/s |
+| HSNOWL | Height of snow level | m |
+| LAND | Water/land mask | fraction |
+| PARAIN | Probability of liquid precipitation | % |
+| PBSNOW | Probability of blowing snow | % |
+| PDZ |	Probability of drizzle |	% |
+| PFRDZ | Probability of freezing rain | % |
+| PFRZR | Probability of freezing precipitation | % |
+| POP |	Probability of precipitation | % |
+| PRATE | Conditional precipitation rate | m |
+| PSNOWS | Probability of snow squalls  |	% |
+| PTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzlee; 9=freezing rain/ice pellets  |
+| SCNDPTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
+| SK | Sky state day/night (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
+| TMP |	Temperature | C |
+| TPII | Total precipitation intensity index | 0=no intensity; 1=light; 2=moderate; 3=heavy	|
+| TSTM | Probability of thunderstorm occurence | % |
+| VISIFOG | Visibility through ice fog | m |
+| VISLFOG | Visibility through liquid fog | m |
+| WDIR | Wind direction | True degree |
+| WIND | Wind speed | m/s |
+
 ## About the no-data mask for the Continental polar-stereographic grid
 
 Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 
-If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
 
 ## Announcements from the dd_info mailing list 
 
