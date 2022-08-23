@@ -146,8 +146,6 @@ Valeurs données aux paramètres de la grille polaire stéréographique à haute
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 ### Grille polaire stéréographique
 
 Les fichiers ont la nomenclature suivante :
@@ -178,7 +176,8 @@ Le fichier a été créé par le CMC et contient une prévision du Système haut
 
 Les fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
+* {YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
 
 où :
 
@@ -244,8 +243,8 @@ Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
 | DIST | Orographie du modèle |m |
 | DPT |	Température du point de rosée |	C |
 | DPTYPE | Type dominant de précipitation | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige |
-| FZPRATE | Quantité conditionnelle de précipitation verglaçante | kg.m-2.m-1 |
-| GUST | Rafale de vents | m.s-1 |
+| FZPRATE | Quantité conditionnelle de précipitation verglaçante | kg*m-2*m-1 |
+| GUST | Rafale de vents | m*s-1 |
 | HSNOWL | Hauteur du niveau de la neige | m |
 | LAND | Masque terre/eau | fraction |
 | PARAIN | Probabilité de précipitation liquide | % |
@@ -265,7 +264,7 @@ Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
 | VISIFOG | Visibilité dans le brouillard glacé | m |
 | VISLFOG | Visibilité à travers le brouillard liquide | m |
 | WDIR | Direction du vent | Degré vrai |
-| WIND | Vitesse du vent | m.s-1 |
+| WIND | Vitesse du vent | m*s-1 |
 
 
 ## À propos du masque No-Data sur la grille polaire stéréographique continentale
@@ -274,7 +273,7 @@ Depuis le 18 octobre 2016, un masque pour mieux représenter les zones où les d
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+Pour toute question relative à ces données, merci de [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 
