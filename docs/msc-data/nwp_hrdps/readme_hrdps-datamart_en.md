@@ -223,7 +223,7 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) for more information.
 
 * [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
 * [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
