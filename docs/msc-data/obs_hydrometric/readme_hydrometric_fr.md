@@ -6,7 +6,17 @@
 
 # Données d'observations hydrométriques
 
-Données hydrométriques en temps réel et historiques contenant les stations, les données de niveau d'eau et de débit pour les rivières et les lacs dans tout le Canada.
+__Données hydrométriques en temps réel__
+
+Données en temps réel sur les niveaux d'eau et les débits (décharge) recueillies dans plus de 2100 stations hydrométriques au Canada (30 derniers jours).
+ 
+__Données hydrométriques historiques__
+
+Les données hydrométriques historiques sont des données et de l'information normalisées sur les ressources en eau. Elles sont recueillies, interprétées et diffusées par les Relevés hydrologiques du Canada (RHC) en partenariat avec les provinces, territoires et autres organismes par l'intermédiaire du Programme national de relevés hydrométriques. Ces ensembles de données comprennent les valeurs de moyennes quotidiennes et mensuelles, les valeurs de moyennes quotidiennes minimales et maximales par année et les valeurs des débits et des niveaux d'eau de pointe et instantanés pour plus de 2700 stations de surveillance hydrométrique actives et 5080 stations fermées au Canada.
+
+__Stations de surveillance hydrométrique__
+
+Une station est un site sur une rivière ou un lac où les quantités d'eau (niveau et débit) sont collectées et enregistrées.
 
 ## Accès
 
@@ -15,12 +25,12 @@ Données hydrométriques en temps réel et historiques contenant les stations, l
 Ces données sont respectivement disponibles sur les API / services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/):
-    * [Stations de surveillance hydrométrique](https://api.meteo.gc.ca/collections/hydrometric-stations)
     * [Données hydrométriques en temps réel](https://api.meteo.gc.ca/collections/hydrometric-realtime)
     * [Moyenne quotidienne des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-daily-mean)
     * [Moyenne mensuelle des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-monthly-mean)
     * [Maximum et minimum annuels des moyennes quotiennes des niveaux ou débits d'eau](https://api.meteo.gc.ca/collections/hydrometric-annual-statistics)
     * [Maximum et minimum annuels des niveaux ou débits d'eau instantanés](https://api.meteo.gc.ca/collections/hydrometric-annual-peaks)
+    * [Stations de surveillance hydrométrique](https://api.meteo.gc.ca/collections/hydrometric-stations)
 * [Données hydrométriques en temps réel en format CSV disponibles sur le Datamart du SMC](readme_hydrometric-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

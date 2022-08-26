@@ -6,9 +6,17 @@
 
 # Hydrometric observations data
 
-## Description of the system
+__Real-time hydrometric data__
 
-Real-time and historical hydrometric data including stations, water levels and flow data for rivers and lakes across Canada.
+Real-time water level and flow (discharge) data collected at over 2100 hydrometric stations across Canada (last 30 days). 
+ 
+__Historical hydrometric data__
+
+Historical hydrometric data are standardized water resource data and information. They are collected, interpreted and disseminated by the Water Survey of Canada (WSC) in partnership with the provinces, territories and other agencies through the National Hydrometric Program. These data sets include daily mean, monthly mean, annual maximum and minimum daily mean and instantaneous peak water level and discharge information for over 2700 active and 5080 discontinued hydrometric monitoring stations across Canada.
+
+__Hydrometric monitoring stations__
+
+A station is a site on a river or lake where water quantity (water level and flow) are collected and recorded.
 
 ## Access
 
@@ -17,12 +25,12 @@ Real-time and historical hydrometric data including stations, water levels and f
 The data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
-    * [Hydrometric Monitoring Stations](https://api.weather.gc.ca/collections/hydrometric-stations)
     * [Real-time Hydrometric Data](https://api.weather.gc.ca/collections/hydrometric-realtime)
     * [Daily Mean of Water Level or Flow](https://api.weather.gc.ca/collections/hydrometric-daily-mean)
     * [Monthly Mean of Water Level or Flow](https://api.weather.gc.ca/collections/hydrometric-monthly-mean)
     * [Annual Maximum and Minimum Daily Water Level or Flow](https://api.weather.gc.ca/collections/hydrometric-annual-statistics)
     * [Annual Maximum and Minimum Instantaneous Water Level or Flow](https://api.weather.gc.ca/collections/hydrometric-annual-peaks)
+    * [Hydrometric Monitoring Stations](https://api.weather.gc.ca/collections/hydrometric-stations)
 * [Real-time Hydrometric Data in CSV format available on the MSC Datamart](readme_hydrometric-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
