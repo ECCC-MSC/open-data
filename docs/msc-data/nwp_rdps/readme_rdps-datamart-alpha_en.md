@@ -1,4 +1,4 @@
-[In English](readme_rdps-datamart-alpha_fr.md)
+[In French](readme_rdps-datamart-alpha_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
