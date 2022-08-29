@@ -251,14 +251,14 @@ List of weather elements on the grid (*HRDPS-WEonG*):
 | PARAIN | Probability of liquid precipitation | % |
 | PBSNOW | Probability of blowing snow | % |
 | PDZ |	Probability of drizzle |	% |
-| PFRDZ | Probability of freezing rain | % |
+| PFRDZ | Probability of freezing drizzle | % |
 | PFRZR | Probability of freezing precipitation | % |
 | POP |	Probability of precipitation | % |
 | PRATE | Conditional precipitation rate | m |
 | PSNOWS | Probability of snow squalls  |	% |
 | PTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzlee; 9=freezing rain/ice pellets  |
 | SCNDPTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| SK | Sky state day/night (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
+| SK | day/night sky state (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
 | TMP |	Temperature | C |
 | TPII | Total precipitation intensity index | 0=no intensity; 1=light; 2=moderate; 3=heavy	|
 | TSTM | Probability of thunderstorm occurence | % |

@@ -45,16 +45,16 @@ Valeurs données aux paramètres de la grille lat-lon tournée :
 
 Les fichiers ont la nomenclature suivante :
 
-* {YYYYMMDD}T{HH}Z_MSC_RDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
+`{YYYYMMDD}T{HH}Z_MSC_RDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 12]
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régionale de prévision déterministe
+* __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
 * __VAR__ : Type de variable contenu dans le fichier (ex: VISIFOG).
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
