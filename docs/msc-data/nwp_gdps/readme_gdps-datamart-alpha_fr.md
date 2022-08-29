@@ -49,13 +49,13 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
+* __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __GDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système global de prévision déterministe
 * __VAR__ : Type de variable contenu dans le fichier (ex: VISIFOG).
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
-* __Grille__ : Grille horizontale [RLatLon]
+* __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 003, 006, ..., 120]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.

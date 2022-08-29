@@ -1,10 +1,10 @@
-[In English](readme_rdps-datamart-alpha_fr.md)
+[In English](readme_gdps-datamart-alpha_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_en.md) > RDPS Weather Elements on the Grid on DD-Alpha
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_en.md) > GDPS Weather Elements on the Grid on DD-Alpha
 
-# Experimental GRIB2 Weather Elements on the Grid data based on the Regional Deterministic Prediction System (RDPS)
+# Experimental GRIB2 Weather Elements on the Grid data based on the Global Deterministic Prediction System (GDPS)
 
 For nearly three decades, the [SCRIBE system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html) has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.
 
@@ -20,32 +20,30 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The rotated lat-lon grid data can be accessed at the following address: 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+[https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}](https://dd.alpha.meteo.gc.ca/model_gem_global/15km/)
 
 where :
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __HH__: Model run start, in UTC [00, 12]
 
 A 24-hour history is kept in this directory.
 
 ## Technical specification of the grid
 
-![SRPD rotated lat-lon grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
-
-Values given to the parameters of the rotated lat-lon grid:
+Values given to the parameters of the lat-lon grid:
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | 1102 |
-| nj | 1076 | 
-| resolution at 60° N | 10km |
-| coordinates of first grid point | 48.5° S; 62.6° W | 
+| ni | 2400 |
+| nj | 1201 | 
+| resolution at 60° N | 15km |
+| coordinates of first grid point | 90° S; 180° W | 
 
 ## Nomenclature of file names 
 
 The files have the following nomenclature:
 
-`{YYYYMMDD}T{HH}Z_MSC_RDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_GDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
 
 where:
 
@@ -54,16 +52,16 @@ where:
 * __HH__: UTC run time [00, 06, 12, 18] 
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
-* __RDPS-WEonG__ : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")
+* __GDPS-WEonG__ : Constant string indicating that the data are from the Global Deterministic Prediction System weather elements on the grid ("WEonG")
 * __VAR__ : Variables contained in the files (ex: VISIFOG).
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
-* __Grid__ : Horizontal grid [RLatLon]
-* __resolution__ : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions
+* __Grid__ : Horizontal grid [LatLon]
+* __resolution__ : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions
 * __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084]
 * __grib2__: Constant string indicating that the format is GRIB2.
 
 Example file name:
-* 20220821T12Z_MSC_RDPS-WEonG_BSNOW_Sfc_RLatLon0.09_PT024H.grib2
+* 20220821T12Z_MSC_GDPS-WEonG_BSNOW_Sfc_LatLon0.15_PT024H.grib2
 
 ## List of variables
 
