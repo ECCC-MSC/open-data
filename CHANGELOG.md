@@ -10,11 +10,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.20
 
-* date:
+* date: 2022-08-30
 * announcements:
     * Not announced
 * new content:
-    * None
+    * HRDPS WEonG
+    * RDPS WEonG on DD-Alpha (ready but not included on the main page)
+    * GDPS WEonG on DD-Alpha (ready but not included on the main page)
 * improvements:
     * Added abstracts for Hydrometric observations datasets
 * bug fixes:
