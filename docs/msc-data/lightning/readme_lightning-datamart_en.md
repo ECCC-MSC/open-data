@@ -26,8 +26,6 @@ A history of several weeks is kept in this directory.
 
 ## Filename nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
-
 The files have the following nomenclature:
 
 `{YYYYMMDD}T{HHmm}Z_MSC_Lightning_2.5km.tif`

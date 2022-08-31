@@ -26,8 +26,6 @@ Un historique de plusieurs semaines est conservé dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 La nomenclature des noms des fichiers est la suivante :
 
 `{YYYYMMDD}T{HHmm}Z_MSC_Lightning_2.5km.tif`

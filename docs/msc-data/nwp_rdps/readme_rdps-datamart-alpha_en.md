@@ -63,6 +63,7 @@ where:
 * __grib2__: Constant string indicating that the format is GRIB2.
 
 Example file name:
+
 * 20220821T12Z_MSC_RDPS-WEonG_BSNOW_Sfc_RLatLon0.09_PT024H.grib2
 
 ## List of variables

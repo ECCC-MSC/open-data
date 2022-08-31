@@ -61,6 +61,7 @@ où :
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
+
 * 20220821T12Z_MSC_GDPS-WEonG_BSNOW_Sfc_LatLon0.15_PT024H.grib2
 
 ## Liste des variables

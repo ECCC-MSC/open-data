@@ -197,6 +197,7 @@ où :
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemples de nom de fichier :
+
 * 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
 * 20220821T12Z_MSC_HRDPS-WEonG_VISIFOG_Sfc_RLatLon0.0225_PT024H.grib2
 

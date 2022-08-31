@@ -23,6 +23,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Observations 
 
 * [Images radar météo](obs_radar/readme_radar_fr.md)
+* [Densité de foudre](lightning/readme_lightning_fr.md)
 * [Observations in situ](obs_station/readme_obs_insitu_fr.md)
 * [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
 * [Observations de profils verticaux](vertical-profiles/readme_vertical-profiles-obs_fr.md)
