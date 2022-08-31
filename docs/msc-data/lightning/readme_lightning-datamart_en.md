@@ -14,7 +14,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoTIFF file.
 
-The MetNotes data are available at the following address:
+Lightning data are available at the following address:
 
 [https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/lightning](https://hpfx.collab.science.gc.ca/)
 
