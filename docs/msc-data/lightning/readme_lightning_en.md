@@ -37,4 +37,4 @@ Upcoming.
 
 ## Technical documentation
 
-[Lightning: Lightning danger map, safety, statistics, science, frequently asked questions](https://www.canada.ca/en/environment-climate-change/services/lightning.htmlhttps://www.canada.ca/en/environment-climate-change/services/lightning.html)
+[Lightning: Lightning danger map, safety, statistics, science, frequently asked questions](https://www.canada.ca/en/environment-climate-change/services/lightning.html)
