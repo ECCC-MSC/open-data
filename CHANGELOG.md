@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.22
+
+* date: 2022-09-13
+* announcements:
+    * Not announced
+* new content:
+    * Added interactive Alert maps to their msc-data page (en/fr)
+* improvements:
+    * None
+* bug fixes:
+    * None
+
 ## 2.4.21
 
 * date: 2022-08-31
