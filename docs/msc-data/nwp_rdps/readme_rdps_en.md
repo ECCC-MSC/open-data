@@ -14,10 +14,11 @@ The Regional Deterministic Prediction System (RDPS) performs physical calculatio
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md):
 
-* [GRIB2 data available on the MSC Datamart](readme_rdps-datamart_en.md)
-* [GRIB2 astronomy products available on the MSC testing data repository DD-Alpha](readme_astro-rdps-datamart-alpha_en.md)
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
-  
+* [GRIB2 data available on the MSC Datamart](readme_rdps-datamart_en.md)
+* [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_rdps-datamart-alpha_en.md)
+* [Experimental GRIB2 astronomy products available on the MSC testing data repository DD-Alpha](readme_astro-rdps-datamart-alpha_en.md)
+
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
 ### Licence

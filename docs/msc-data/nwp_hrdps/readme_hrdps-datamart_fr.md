@@ -28,9 +28,11 @@ où :
 * __domain__ : Chaîne de caractères indiquant le domaine représenté [continental, north, east, prairies, west, maritimes]
 * __res__ : Résolution horizontale [2.5km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18], pour tous les domaines sauf le domaine Nord [00, 12]
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048] pour les grilles polaires stéréographiques et [001, 002, 003, ..., 048] pour la grille lat-lon tournée
 
 Un historique de 24 heures est conservé dans ce répertoire.
+
+Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Domaines disponibles
 
@@ -193,7 +195,7 @@ où :
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.0225. Signifie une résolution de 0.0225°(environ 2.5km) dans les directions longitudinale et latitudinale
 * __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 048]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 048]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemples de nom de fichier :
