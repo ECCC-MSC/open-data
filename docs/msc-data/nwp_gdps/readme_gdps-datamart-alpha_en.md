@@ -95,7 +95,7 @@ List of surface weather elements on the grid:
 | PRATE | Conditional precipitation rate | m | 
 | PSNOWS | Probability of snow squall | % | 
 | PTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzle; 9=freezing rain/ice pellets |
-| SCNDPTYPE | Secondary precipitation type 101=rain; 110=hail; 111=pellets; 203=freezing rain; 212=freezing pellets; 308=pellets; 405=snow; 409=snow pellets; 413=ice pellets; 414=snow grains|
+| SCNDPTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=pellets; 203=freezing rain; 212=freezing pellets; 308=pellets; 405=snow; 409=snow pellets; 413=ice pellets; 414=snow grains|
 | SK | Day/Night sky conditions (combined cloud cover and opacity) | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
 | TMP | Temperature | C |
 | TPII | Total precipitation intensity index | 0=no intensity; 1=low intensity; 2=moderate intensity; 3=high intensity |
