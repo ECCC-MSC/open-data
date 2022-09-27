@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.23
+
+* date: 2022-09-28
+* announcements:
+    * Not announced
+* new content:
+    * Add RDPS and GDPS WEonG pages in main systems pages
+* improvements:
+    * None
+* bug fixes:
+    * Fix WEonG RDPS, GDPS, HRDPS pages (time availability, abstracts)
+    * Fix licence (replace Queen by King)
+
 ## 2.4.22
 
 * date: 2022-09-13
