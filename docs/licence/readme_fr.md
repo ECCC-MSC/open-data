@@ -6,7 +6,7 @@
 
 # Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada
 
-Version 2.0 - Septembre 2017
+Version 2.1 - Septembre 2022
 
 Vous êtes encouragés à utiliser l’Information offerte en vertu de la présente licence, sous réserve de quelques conditions.
 
@@ -69,7 +69,7 @@ Les termes employés dans la présente licence ont la signification suivante :
 
 "Information" désigne les renseignements protégés par le droit d’auteur ou toute autre renseignement offert pour utilisation aux termes de la présente licence.
 
-"Fournisseur d’Information" désigne sa Majesté la Reine du chef du Canada représentée aux présentes par le Ministre de l’Environnement.
+"Fournisseur d’Information" désigne sa Majesté le Roi du chef du Canada représentée aux présentes par le Ministre de l’Environnement.
 
 "Renseignements personnels" désigne les "renseignements personnels" au sens de l’article 3 de la ''Loi sur la protection des renseignements personnels'', L.R.C. 1985, c. P-21.  
 
