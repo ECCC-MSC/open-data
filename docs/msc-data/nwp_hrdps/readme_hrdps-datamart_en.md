@@ -28,7 +28,7 @@ where :
 * __domain__ : Constant string indicating the available domain [continental, north, east, prairies, west, maritimes]
 * __res__ : Horizontal resolution [2.5km]
 * __HH__ : Model run start, in UTC [00, 06, 12, 18], except the North domain [00, 12]
-* __hhh__ : Forecast hour [000, 001, 002, ..., 048] 
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for polar-stereographic grids and [001, 002, 003, ..., 048] for rotated lat-lon grid
 
 A 24-hour history is stored in this directory.
 
@@ -192,7 +192,7 @@ where :
 * __Grille__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
 * __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 048]
-* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 048]
+* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 002, 003, ..., 048]
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
 Examples of filename : 

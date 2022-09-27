@@ -8,7 +8,7 @@
 
 For nearly three decades, the [SCRIBE system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html) has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.
 
-The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the understanding of weather forecasts, and require constant intervention from forecasters.
+The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the comprehension of meteorological forecasts, and and may require frequent interventions from forecasters.
 
 As part of a larger modernization plan for the Meteorological Service of Canada (MSC), in which the role of the forecaster is evolving, the goal is to replace the Scribe matrices, [available on the MSC Datamart](https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/), and their limited number of points across Canada with [Weather Elements on the Grid](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf) ("WEonG"). In other words, for each grid point of a specific numerical prediction system, a set of weather elements will be created to meet the requirements of the various forecast programs. The forecaster will not only have access to a larger set of points (grids) to produce regional forecasts, but each of these grid points will provide a consistent set of weather elements.
 
@@ -20,13 +20,16 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The rotated lat-lon grid data can be accessed at the following address: 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
 
 where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __hhh__ : Forecast hour [001, 002, 003, ..., 048]
 
 A 24-hour history is kept in this directory.
+
+Note: Some algorithms require variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
 ## Technical specification of the grid
 
@@ -59,7 +62,7 @@ where:
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions
-* __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084]
+* __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 048]
 * __grib2__: Constant string indicating that the format is GRIB2.
 
 Example file name:

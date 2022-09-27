@@ -6,7 +6,7 @@
 
 # Environment and Climate Change Canada Data Servers End-use Licence
 
-Version 2.0 - September 2017
+Version 2.1 - September 2022
 
 You are encouraged to use the Information that is available under this licence with only a few conditions.
 
@@ -69,7 +69,7 @@ In this licence, the terms below have the following meanings:
 
 "Information" means information resources protected by copyright or other information that is offered for use under the terms of this licence.
 
-"Information Provider" means Her Majesty the Queen in right of Canada, as represented by the Minister of the Environment.
+"Information Provider" means His Majesty the King in right of Canada, as represented by the Minister of the Environment.
 
 “Personal Information” means “personal information” as defined in section 3 of the ''Privacy Act'', R.S.C. 1985, c. P-21.
 
