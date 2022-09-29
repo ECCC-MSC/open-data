@@ -20,13 +20,13 @@ The data can be accessed at the following URLs:
 
 where:
 
-* __HH__ : Model run start, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
+* __HH__ : Analysis validity time, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
 
 A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 
-![Image of the CaLDAS-NSRPS domain](grille_caldas-nsrps.png)
+![Image of the CaLDAS-NSRPS domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_caldas-nsrps/grille_caldas-nsrps.png)
 
 The table below lists the values of the rotated latitude-longitude grid parameters:
 
@@ -48,7 +48,7 @@ where:
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__: UTC run time [00, 12]
+* __HH__: Analysis validity time, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __NSRPS-CaLDAS__ : Constant string indicating that the data is from The Canadian Land Data Assimilation System in the National Surface and River Prediction SystemThe Canadian Land Data Assimilation System

@@ -20,13 +20,13 @@ Les données sont accessibles à l'adresse suivante :
 
 où :
 
-* __HH__ : Heure en UTC du début de la simulation [00, 03, 06, 09, 12, 15, 18, 21]
+* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 03, 06, 09, 12, 15, 18, 21]
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique de la grille  
 
-![Image du domaine SCanADS-SNPSRS](grille_caldas-nsrps.png)
+![Image du domaine SCanADS-SNPSRS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_caldas-nsrps/grille_caldas-nsrps.png)
 
 Valeurs données aux paramètres de la grille lat-lon tournée à 2.5km de résolution:
 
@@ -49,7 +49,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00,12]
+* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 03, 06, 09, 12, 15, 18, 21]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __NSRPS-CaLDAS__ : Chaîne de caractères constante indiquant que les données proviennent du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)

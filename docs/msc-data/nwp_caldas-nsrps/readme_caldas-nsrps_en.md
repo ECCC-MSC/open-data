@@ -37,5 +37,5 @@ To come.
 
 ## Changelog 
 
-The chronology of changes to the High Resolution Deterministic Land Surface Prediction System (HRDLPS) is available [here](changelog_caldas-nsrps_en.md).
+The chronology of changes to the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) is available [here](changelog_caldas-nsrps_en.md).
 
