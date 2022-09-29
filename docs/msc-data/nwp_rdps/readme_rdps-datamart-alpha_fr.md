@@ -20,7 +20,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sur grille lat-lon tournées sont accessibles à l’adresse suivante : 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/]](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
 
 où :
 
