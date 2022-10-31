@@ -38,8 +38,6 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 
 ## Filename nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
-
 The files have the following nomenclature: 
 
 `{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT{hhh}H.nc`
