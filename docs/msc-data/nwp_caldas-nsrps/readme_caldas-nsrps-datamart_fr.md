@@ -39,8 +39,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 2.5km de réso
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 La nomenclature des noms des fichiers est la suivante :
 
 `{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grille}{resolution}_PT{hhh}H.nc`
@@ -53,12 +51,12 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __NSRPS-CaLDAS__ : Chaîne de caractères constante indiquant que les données proviennent du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)
-* __VAR__ : Variables contenues dans le fichier (voir section ci-dessous). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum143h pour une accumulation sur 143 heures)
+* __VAR__ : Variables contenues dans le fichier (voir section ci-dessous).
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface, AGL pour la hauteur au-dessus du sol]
 * __LVL__ : Les valeurs des niveaux verticaux sont listées dans le tableau ci-dessous
 * __grille__ : Grille horizontale [RLatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5km) dans les deux directions
-* __PT0H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure.
+* __PT0H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. Ici,PT0H indique une analyse.
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
@@ -73,14 +71,12 @@ Exemples :
 
 Liste des variables pour chaque heure de validité de:
 
-|Nom   | Description|  Niveau|                          Hauteur [m]/ Profondeur [m]|  Fréquence de sortie|  Unité|
-|---------|---------------|----------|----------|----------|----------|
-|tt     |Température du point de rosée au niveau de l'abri                            |   AGL|    1.5|    3h|    K|
-|td      |Température du point de rosée au niveau de l'abr |   AGL|     1.5|    3h|    K|
-|tg      |Température radiative agrégée à la surface |   Sfc|     0.0|    3h|    K|
-|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    3h|    m3 m-3|
-
-Notes: DBS - profondeur sous la surface; AGL - hauteur au-dessus du sol; Sfc - surface `
+|Nom   | Description|  Niveau|  Unité|
+|---------|---------------|----------|----------|
+|tt     |Température de l'air                           |   AGL|    K|
+|td      |Température du point de rosée au niveau de l'abri |   AGL|    K|
+|tg      |Température radiative agrégée à la surface |   Sfc|    K|
+|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m3.m-3|
 
 ## Support
 
