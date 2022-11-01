@@ -10,13 +10,13 @@ This page describes the experimental [The Canadian Land Data Assimilation System
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
 The data can be accessed at the following URLs:
 
-* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
+* [https://dd.alpha.weather.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.weather.gc.ca/model_nsrps-caldas/2.5km)                  
 
 where:
 
@@ -38,8 +38,6 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 
 ## Filename nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
-
 The files have the following nomenclature: 
 
 `{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT{hhh}H.nc`
@@ -52,12 +50,12 @@ where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __NSRPS-CaLDAS__ : Constant string indicating that the data is from The Canadian Land Data Assimilation System in the National Surface and River Prediction SystemThe Canadian Land Data Assimilation System
-* __VAR__ : Variables included in the file (see section below). This parameter includes also the statistical measure, if relevant (ex: Accum143h for an accumulation over 143 hours).
+* __VAR__ : Variables included in the file (see section below).
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface, AGL for fixed height above ground]
 * __LVL__ : Vertical levels values are listed in the table below  
 * __grid__ : Horizontal grid [RLatLon]
 * __resolution__ : Resolution in degree 0.0225 (about 2.5km) in both latitude and longitude directions 
-* __PT0H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour.
+* __PT0H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. Here, PTOH indicates an analysis.
 * __nc__ : constant string indicating the NetCDF format
 
 Examples:
@@ -72,14 +70,13 @@ Examples:
 
 List of variables available in the files:
 
-|Name   | Description|  Level|                          Depth [m]/ Height [m]|  Output Frequency|  Units|
-|---------|---------------|----------|----------|----------|----------|
-|tt     |Air Temperature                            |   AGL|    1.5|    3h|    K|
-|td      |Dew Point Temperature |   AGL|     1.5|    3h|    K|
-|tg      |Aggregate Surface Radiative Temperature |   Sfc|     0.0|    3h|    K|
-|wsol      |Volumetric Water Content of Soil |   DBS|     0.025, 0.075, 0.150, 0.300, 0.700, 1.500, 2.500|    3h|    m3 m-3|
+|Name   | Description|  Level|  Units|
+|---------|---------------|----------|----------|
+|tt     |Air Temperature                            |   AGL|    K|
+|td      |Dew Point Temperature |   AGL|     K|
+|tg      |Aggregate Surface Radiative Temperature |   Sfc|     K|
+|wsol      |Volumetric Water Content of Soil |   DBS|    m3.m-3|
 
-Notes: DBS - Depth Below Surface; AGL - Above Ground Level; Sfc - Surface 
 
 ## Support
 
