@@ -70,7 +70,7 @@ Examples:
 List of variables available in the files: 
 
 |Name   | Description|  Level|    Units|
-|---------|---------------|----------|----------|----------|----------|
+|---------|---------------|----------|----------|
 |tj     |Air Temperature                            |   AGL|     K|
 |tdk      |Dew Point Temperature |   AGL|    K|
 |acwf      |Land Surface Evaporation Amount |   Sfc|     kg.m-2|
