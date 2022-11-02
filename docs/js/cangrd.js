@@ -1,18 +1,18 @@
 const parser = new DOMParser();
 
 let layers = [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
-    }),
-    new ol.layer.Image({
-      source: new ol.source.ImageWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet-climate',
-        params: {'LAYERS': 'CANGRD.ANO.TX_ANNUAL', 'TILED': true},
-        crossOrigin: 'Anonymous'
-      })
-    }),
-  ]
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet-climate',
+      params: { 'LAYERS': 'CANGRD.ANO.TX_ANNUAL', 'TILED': true },
+      crossOrigin: 'Anonymous'
+    })
+  }),
+]
 
 let map = new ol.Map({
   target: 'map',
@@ -23,12 +23,12 @@ let map = new ol.Map({
   })
 });
 
-let exportMapFunction = function(e) {
-  map.once('postcompose', function(event) {
+let exportMapFunction = function (e) {
+  map.once('postcompose', function (event) {
     var canvas = event.context.canvas;
-    canvas.toBlob(function(blob) {
+    canvas.toBlob(function (blob) {
       saveAs(blob, 'msc-geomet_web-map_export.jpg')
-    }, 'image/jpeg',0.9);
+    }, 'image/jpeg', 0.9);
   });
   map.renderSync();
 };

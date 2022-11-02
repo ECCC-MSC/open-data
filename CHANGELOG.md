@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
+    * Use TileWMS source for maps which aren't animated
     * Fix WEonG RDPS, GDPS, HRDPS pages (time availability, abstracts)
     * Fix licence (replace Queen by King)
 
