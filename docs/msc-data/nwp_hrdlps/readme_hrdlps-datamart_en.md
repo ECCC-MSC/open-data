@@ -10,18 +10,18 @@ This page describes the experimental [High Resolution Deterministic Land Surface
 
 ## Data location 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
 The data can be accessed at the following URLs:
 
-* [https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km)                  
+* [https://dd.alpha.weather.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.weather.meteo.gc.ca/model_hrdlps/2.5km)                  
 
 where:
 
-* __HH__ : Model run start, in UTC [00,12]
-* __hhh__ : Forecast hour [000,001, ...,144] 
+* __HH__ : Model run start, in UTC [00, 12]
+* __hhh__ : Forecast hour [000, 001, ..., 144] 
 
 A 24h history is kept in this directory.
 
@@ -33,13 +33,12 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 
 | Parameter | Value |
 | ------ | ------ |
-| ni | _To be completed_ |
-| nj | _To be completed_ |
-| resolution at 45° N | 2.5km |
+| ni | 2540 |
+| nj | 1290 |
+| resolution at 45° N | 2.5 km |
 
 ## Filename nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 
@@ -55,10 +54,10 @@ where:
 * __HRDLPS__ : Constant string indicating that the data is from High Resolution Deterministic Land Surface Prediction System
 * __VAR__ : Variables included in this file (see section below). This parameter includes also the statistical measure, if relevant (ex: Accum143h pour an accumulation over 143 hours).
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface, AGL for fixed height above ground]
-* __LVL__ : Vertical level value [10m, 0.5m, 1.5m, 2m, `0-2m` from surface to 2 meters]
+* __LVL__ : Vertical level value [10 m, 0.5 m, 1.5 m, 2 m, `0-2m` from surface to 2 meters]
 * __grid__ : Horizontal grid [RLatLon]
-* __resolution__ : Resolution in degree 0.0225 (about 2.5km) in both latitude and longitude directions 
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000,001,002, ...,144]
+* __resolution__ : Resolution in degree 0.0225 (about 2.5 km) in both latitude and longitude directions 
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 144]
 * __nc__ : constant string indicating the NetCDF format
 
 Examples:
@@ -70,11 +69,18 @@ Examples:
 
 List of variables available in the files: 
 
-* __AirTemp__ : 1.5m surface air temperature (K)
-* __WindU__: 10m surface wind X velocity (m/s) 
-* __WindV__: 10m surface wind Y velocity (m/s)
-* __Runoff__ : Runoff (mm)
-* ETC.. _To be completed_ See: https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps-atm-ocean-datamart_en/#list-of-variables
+|Name   | Description|  Level|    Units|
+|---------|---------------|----------|----------|----------|----------|
+|tj     |Air Temperature                            |   AGL|     K|
+|tdk      |Dew Point Temperature |   AGL|    K|
+|acwf      |Land Surface Evaporation Amount |   Sfc|     kg.m-2|
+|tg      |Aggregate Surface Radiative Temperature |   Sfc|       K|
+|traf      |Surface Runoff Amount |   Sfc|     kg.m-2|
+|wt      |Surface Area Fraction |   Sfc|   1|
+|mf      |Model Orography |   Sfc|      m|
+|wsol      |Volumetric Water Content of Soil |   DBS|    m3.m-3|
+|o1      |Drainage Amount Through Base of Soil Model |   DBS|     kg.m-2|
+|alat      |Lateral Subsurface Runoff Amount |   DBS|     kg.m-2|
 
 
 ## Support

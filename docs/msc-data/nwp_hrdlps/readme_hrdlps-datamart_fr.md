@@ -20,8 +20,8 @@ Les données sont accessibles à l'adresse suivante :
 
 où :
 
-* __HH__ : Heure en UTC du début de la simulation [00,12]
-* __hhh__ : Heure de la prévision [000,001, ...,144] 
+* __HH__ : Heure en UTC du début de la simulation [00, 12]
+* __hhh__ : Heure de la prévision [000, 001, ..., 144] 
 
 Un historique de 24h de prévision est stocké dans ce répertoire.
 
@@ -29,18 +29,16 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ![Image du domaine HRDLPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdlps/grille_hrdlps.png) ... _To be completed_ ...
 
-Valeurs données aux paramètres de la grille lat-lon tournée à 2.5km de résolution:
+Valeurs données aux paramètres de la grille lat-lon tournée à 2.5 km de résolution:
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | _To be completed_ | 
-| nj | _To be completed_ | 
-| résolution à 45° N | 2.5km |
+| ni | 2540 | 
+| nj | 1290 | 
+| résolution à 45° N | 2.5 km |
 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
@@ -50,16 +48,16 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00,12]
+* __HH__ : Heure UTC de la passe [00, 12]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __HRDLPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système de prévision déterministe à haute résolution de la surface
 * __VAR__ : Variables contenues dans le fichier (voir section ci-dessous). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum143h pour une accumulation sur 143 heures)
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface, AGL pour la hauteur au-dessus du sol]
-* __LVL__ : Valeur du niveau vertical [10m, 0.5m, 1.5m, 2m, `0-2m` de la surface à 2 mètres]. Ce paramètre est absent pour la surface
+* __LVL__ : Valeur du niveau vertical [10 m, 0.5 m, 1.5 m, 2 m, `0-2 m` de la surface à 2 mètres]. Ce paramètre est absent pour la surface
 * __grille__ : Grille horizontale [RLatLon]
-* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5km) dans les deux directions
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000,001, ...,144]
+* __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5 km) dans les deux directions
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, ..., 144]
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples :
@@ -71,11 +69,19 @@ Exemples :
 
 Liste des variables disponibles dans les fichiers:
 
-* __AirTemp__ : Température de l'air à 1.5 mètres en altitude (K)
-* __WindU__: Composante X de la vitesse du vent à 10 mètres en altitude (m/s)
-* __WindV__: Composante Y de la vitesse du vent à 10 mètres en altitude (m/s)
-* __Runoff__ : Ruissellement (mm)
-* ETC.... _To be completed_... See: https://eccc-msc.github.io/open-data/msc-data/nwp_wcps/readme_wcps-atm-ocean-datamart_fr/#liste-des-variables
+
+|Nom   | Description|  Niveau|  Unité|
+|---------|---------------|----------|----------|
+|tj     |Température de l'air au niveau de l'abri                            |   AGL|    K|
+|tdk      |Température du point de rosée au niveau de l'abri |   AGL|     K|
+|acwf      |Accumulation de l'évaporation de la surface terrestre |   Sfc|     kg.m-2|
+|tg      |Température radiative agrégée à la surface |   Sfc|      K|
+|traf      |Accumulation du ruissellement de surface |   Sfc|     kg.m-2|
+|wt      |Fraction d'aire occupée par le sol  |   Sfc|       1|
+|mf      |Orographie  |   Sfc|       m|
+|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|  m3.m-3|
+|o1      |Accumulation du drainage à la base de la couche de sol |   DBS|   kg.m-2|
+|alat      |Accumulation de l'écoulement total latéral  |   DBS|    kg.m-2|
 
 ## Support
 

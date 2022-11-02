@@ -6,7 +6,9 @@
 
 # Données et Produits du Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)
 
-_To be completed: description of the system at a high level (will go in the discovery metadata). Suggestion: use the technical note, do not use acronyms of systems whose data are not open (see: https://eccc-msc.github.io/open-data/msc-data/readme_en/) and therefore unknown to users, indicate that it is an experimental system. Ex: https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/blob/master/docs/msc-data/nwp_hrepa/readme_hrepa_en.md_ 
+Le Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) produit des prévisions à moyen terme des variables de la surface terrestre, de sous-surface, et des variables atmosphériques proches de la surface (température et point de rosée à 1.5 m, vent à 10 m).  SPDHRS est initialisé avec des champs d'analyse et d'essai fournis par le Système canadien d’assimilation des données de surface du [Système national de prévision des surfaces et des rivières (SCanADS-SNPSR)](../msc-data/nwp_caldas-nsrps/readme_caldas-nsrps_fr.md). Le système est ensuite piloté par les prévisions atmosphériques fournies par le SHRPD sur les deux premiers jours d'intégration et par le SGPD sur les quatre jours suivants. Les prévisions sont exécutées deux fois par jour. Le système fonctionne sur une grille avec une résolution horizontale de 2.5 km couvrant le Canada et une partie des États-Unis.
+
+Notes : SHRPDS est un système expérimental; Les données de vent à 10 m ne sont pas encore disponibles. 
 
 ## Accès
 
