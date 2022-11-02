@@ -27,7 +27,7 @@ Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique de la grille  
 
-![Image du domaine HRDLPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdlps/grille_hrdlps.png) ... _To be completed_ ...
+![Image du domaine HRDLPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdlps/grille_hrdlps.png)
 
 Valeurs données aux paramètres de la grille lat-lon tournée à 2.5 km de résolution:
 
