@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le jeudi 3 novembre 2022
+
+### Ajout des observations de surface provenant des bateaux en format BUFR dans le SGPD
+
+Le jeudi 3 novembre 2022, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système global de prévision déterministe (SGPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations de surface provenant des bateaux en format BUFR (Binary Universal Form for the Representation of meteorological data). Des observations TAC (Traditional Alphanumeric Codes) étaient déjà assimilées précédemment.
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SGPD à la version 8.1.0 suite à la nouvelle infrastructure de calcul haute performance. 

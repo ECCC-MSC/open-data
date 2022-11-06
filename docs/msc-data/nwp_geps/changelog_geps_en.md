@@ -6,6 +6,17 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Thursday November 3, 2022
+
+### Addition of surface observations received from ships in BUFR format in the GEPS
+
+On Thursday November 3rd, 2022, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 7.1.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of surface observations received from ships in BUFR (Binary Universal Form for the Representation of meteorological data) format. TAC 
+(Traditional Alphanumeric Codes) observations were already being assimilated previously.
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 7.1.0 of the GEPS adapted to the New High Performance Computing Infrastructure.

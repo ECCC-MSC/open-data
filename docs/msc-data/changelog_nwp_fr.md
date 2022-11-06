@@ -8,6 +8,13 @@
 
 ## 2022
 
+### 3 novembre 2022
+
+* [Ajout des observations de surface provenant des bateaux en format BUFR dans le SGPE](nwp_geps/changelog_geps_fr.md#le-jeudi-3-novembre-2022)
+* [Ajout des observations de surface provenant des bateaux en format BUFR dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-3-novembre-2022)
+* [Ajout des observations de surface provenant des bateaux en format BUFR dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-jeudi-3-novembre-2022)
+* [Ajout des observations de surface provenant des bateaux en format BUFR dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-jeudi-3-novembre-2022)
+
 ### 28 juin 2022
 
 * [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-28-juin-2022)
