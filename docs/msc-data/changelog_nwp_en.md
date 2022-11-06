@@ -8,6 +8,13 @@
 
 ## 2022
 
+### November 3, 2022
+
+* [Addition of surface observations received from ships in BUFR format in the GEPS](nwp_geps/changelog_geps_en.md#thursday-november-3-2022)
+* [Addition of surface observations received from ships in BUFR format in the GDPS](nwp_gdps/changelog_gdps_en.md#thursday-november-3-2022)
+* [Addition of surface observations received from ships in BUFR format in the RDPS](nwp_rdps/changelog_rdps_en.md#thursday-november-3-2022)
+* [Addition of surface observations received from ships in BUFR format in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#thursday-november-3-2022)
+
 ### June 28, 2022
 
 * [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-june-28-2022)
