@@ -6,7 +6,7 @@
 
 # High Resolution Deterministic Land Surface Prediction System (HRDLPS) data in NetCDF format
 
-This page describes the experimental [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlp-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
+This page describes the experimental [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlps-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
 
 ## Data location 
 
