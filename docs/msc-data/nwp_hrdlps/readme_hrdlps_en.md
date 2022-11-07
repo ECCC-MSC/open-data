@@ -6,7 +6,7 @@
 
 # Data and products of the High Resolution Deterministic Land Surface Prediction System (HRDLPS)
 
-The High Resolution Deterministic Land Prediction System (HRDLPS) produces high-resolution medium-range forecasts of land surface, subsurface variables, and of near-surface atmospheric variables (1.5 m temperature and dewpoint, 10 m wind). HRDLPS is initialized with analysis and trial fields provided by the [Canadian Land Data Assimilation System of the National Surface and River Prediction System (CaLDAS-NSRPS)](../msc-data/nwp_caldas-nsrps/readme_caldas-nsrps_en.md). The system is then driven with atmospheric forecasts provided by the HRDPS over the first two days of integration and by the GDPS over the next four days. Predictions are performed twice a day. The system runs on a grid with a 2.5 km horizontal spacing covering Canada and part of the USA.
+The High Resolution Deterministic Land Prediction System (HRDLPS) produces high-resolution medium-range forecasts of land surface, subsurface variables, and of near-surface atmospheric variables (1.5 m temperature and dewpoint, 10 m wind). HRDLPS is initialized with analysis and trial fields provided by the [Canadian Land Data Assimilation System of the National Surface and River Prediction System (CaLDAS-NSRPS)](../../msc-data/nwp_caldas-nsrps/readme_caldas-nsrps_en.md). The system is then driven with atmospheric forecasts provided by the HRDPS over the first two days of integration and by the GDPS over the next four days. Predictions are performed twice a day. The system runs on a grid with a 2.5 km horizontal spacing covering Canada and part of the USA.
 
 Notes: HRDLPS is an experimental system; 10 m wind data is not yet available.
 
