@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.24
+
+* date: 2022-11-07
+* announcements:
+    * Not announced
+* new content:
+    * Add CaLDAS-NSRPS and HRDLPS  pages (ready but not included on the main page, should be updated)
+    * New input in the NWP changelog (new obs BUFR)
+* improvements:
+    * None
+* bug fixes:
+    * Typo
+
 ## 2.4.23
 
 * date: 2022-09-29
