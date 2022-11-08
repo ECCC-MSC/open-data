@@ -41,7 +41,7 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 2.5km de réso
 
 La nomenclature des noms des fichiers est la suivante :
 
-`{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grille}{resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grille}{resolution}_PT0H.nc`
 
 où :
 
