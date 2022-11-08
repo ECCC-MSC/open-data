@@ -6,7 +6,7 @@
 
 # High Resolution Deterministic Land Surface Prediction System (HRDLPS) data in NetCDF format
 
-This page describes the experimental [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlps-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
+This page describes the experimental [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlps_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
 
 ## Data location 
 
@@ -48,7 +48,7 @@ where:
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__: UTC run time [00, 06, 12, 18]
+* __HH__: UTC run time [00, 12]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __HRDLPS__ : Constant string indicating that the data is from High Resolution Deterministic Land Surface Prediction System
