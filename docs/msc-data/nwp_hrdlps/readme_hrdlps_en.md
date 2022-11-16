@@ -1,4 +1,4 @@
-[In French](readme_wcps_fr.md)
+[In French](readme_hrdlps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
