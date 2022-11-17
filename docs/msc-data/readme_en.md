@@ -53,6 +53,9 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
     * Air quality:
     * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
     * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
+* **Surface**
+    * [Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/readme_caldas-nsrps_en.md)
+    * [High Resolution Deterministic Land Surface Prediction System (HRDLPS)](nwp_hrdlps/readme_hrdlps_en.md)
 * **Water, ocean and ice**
     * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
     * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
