@@ -72,8 +72,8 @@ Liste des variables disponibles dans les fichiers:
 
 |Nom   | Description|  Niveau|  Unité|
 |---------|---------------|----------|----------|
-|tj     |Température de l'air au niveau de l'abri                            |   AGL|    K|
-|tdk      |Température du point de rosée au niveau de l'abri |   AGL|     K|
+|tt     |Température de l'air                            |   AGL|    K|
+|td      |Température du point de rosée  |   AGL|     K|
 |acwf      |Accumulation de l'évaporation de la surface terrestre |   Sfc|     kg.m-2|
 |tg      |Température radiative agrégée à la surface |   Sfc|      K|
 |traf      |Accumulation du ruissellement de surface |   Sfc|     kg.m-2|

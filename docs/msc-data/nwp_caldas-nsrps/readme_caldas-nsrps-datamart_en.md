@@ -6,7 +6,7 @@
 
 # The Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) data in NetCDF format
 
-This page describes the experimental [The Canadian Land Data Assimilation System](./readme_caldas-nsrps-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
+This page describes the experimental [The Canadian Land Data Assimilation System](./readme_caldas-nsrps_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
 
 ## Data location 
 
