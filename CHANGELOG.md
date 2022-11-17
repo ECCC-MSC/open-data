@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.27
+
+* date: 2022-11-17
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Add BDS levels details in HRDLPS and CaLDAS-NSRPS
+
 ## 2.4.26
 
 * date: 2022-11-17
