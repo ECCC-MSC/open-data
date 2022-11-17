@@ -53,6 +53,9 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * Qualité de l'air :
     * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
     * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
+* **Surface**
+    * [Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/readme_caldas-nsrps_fr.md)
+    * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)](nwp_hrdlps/readme_hrdlps_fr.md)
 * **Eau, océan et glace**
     * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
     * [Système régional de prévision océan-glace (SRPOG)](nwp_riops/readme_riops_fr.md)
