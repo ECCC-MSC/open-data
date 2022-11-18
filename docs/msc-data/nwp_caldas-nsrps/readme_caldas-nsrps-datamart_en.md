@@ -52,7 +52,7 @@ where:
 * __NSRPS-CaLDAS__ : Constant string indicating that the data is from The Canadian Land Data Assimilation System in the National Surface and River Prediction SystemThe Canadian Land Data Assimilation System
 * __VAR__ : Variables included in the file (see section below).
 * __LVLTYPE__ : Vertical level type [Sfc for the surface, DBS for depth below the surface, AGL for fixed height above ground]
-* __LVL__ :  Vertical level value [`1.5m` for levels AGL; `all` for levels DBS `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.5m`]. This parameter is not available for the surface. 
+* __LVL__ :  Vertical level value [`1.5m`; `all` includes all levels `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.5m`]. This parameter is not available for the surface. 
 * __grid__ : Horizontal grid [RLatLon]
 * __resolution__ : Resolution in degree 0.0225 (about 2.5km) in both latitude and longitude directions 
 * __PT0H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. Here, PTOH indicates an analysis.

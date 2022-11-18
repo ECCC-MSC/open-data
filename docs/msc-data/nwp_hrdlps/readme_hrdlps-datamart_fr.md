@@ -54,7 +54,7 @@ où :
 * __HRDLPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système de prévision déterministe à haute résolution de la surface
 * __VAR__ : Variables contenues dans le fichier (voir section ci-dessous). Ce paramètre comprend aussi le processus statistique associé si pertinent (ex: Accum143h pour une accumulation sur 143 heures)
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface, AGL pour la hauteur au-dessus du sol]
-* __LVL__ : Valeur du niveau vertical [`1.5m` pour les niveaux AGL; `all` pour les niveaux DBS `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.0m, 2.5m`; `0-2 m` de la surface à 2 mètres]. Ce paramètre est absent pour la surface
+* __LVL__ : Valeur du niveau vertical [`1.5m`; `2m`; `all` regroupe tous les niveaux `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.5m`; `0-2 m` de la surface à 2 mètres]. Ce paramètre est absent pour la surface
 * __grille__ : Grille horizontale [RLatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5 km) dans les deux directions
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 001, ..., 144]
