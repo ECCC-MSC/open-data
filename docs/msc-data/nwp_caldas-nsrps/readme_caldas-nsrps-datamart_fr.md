@@ -53,7 +53,7 @@ où :
 * __NSRPS-CaLDAS__ : Chaîne de caractères constante indiquant que les données proviennent du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)
 * __VAR__ : Variables contenues dans le fichier (voir section ci-dessous).
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, DBS pour la profondeur sous la surface, AGL pour la hauteur au-dessus du sol]
-* __LVL__ : Valeur du niveau vertical [`1.5m` pour les niveaux AGL; `all` pour tous les niveaux DBS `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.5m`]. Ce paramètre est absent pour la surface
+* __LVL__ : Valeur du niveau vertical [`1.5m`; `all` regroupe tous les niveaux `0.025m, 0.075m, 0.15m, 0.3m, 0.7m, 1.5m, 2.5m`]. Ce paramètre est absent pour la surface
 * __grille__ : Grille horizontale [RLatLon]
 * __resolution__ : Indique la résolution en degré dans les directions longitudinale et latitudinale soit ici 0.0225(environ 2.5km) dans les deux directions
 * __PT0H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. Ici,PT0H indique une analyse.
