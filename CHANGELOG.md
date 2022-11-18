@@ -10,7 +10,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.27
 
-* date: 2022-11-17
+* date: 2022-11-18
 * announcements:
     * Not announced
 * new content:
@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
-    * Add BDS levels details in HRDLPS and CaLDAS-NSRPS
+    * Add vertical levels details in HRDLPS and CaLDAS-NSRPS
 
 ## 2.4.26
 
