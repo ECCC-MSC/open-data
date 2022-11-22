@@ -82,6 +82,7 @@ List of variables available in the files:
 |o1      |Drainage Amount Through Base of Soil Model |   DBS|     kg.m-2|
 |alat      |Lateral Subsurface Runoff Amount |   DBS|     kg.m-2|
 
+NOTE: The surface area fraction (`wt`) and the model orography (`mf`) are only available at the 00h forecast hour.
 
 ## Support
 
