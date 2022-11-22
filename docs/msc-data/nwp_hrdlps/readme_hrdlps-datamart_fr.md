@@ -69,7 +69,6 @@ Exemples :
 
 Liste des variables disponibles dans les fichiers:
 
-
 |Nom   | Description|  Niveau|  Unité|
 |---------|---------------|----------|----------|
 |tt     |Température de l'air                            |   AGL|    K|
@@ -82,6 +81,8 @@ Liste des variables disponibles dans les fichiers:
 |wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|  m3.m-3|
 |o1      |Accumulation du drainage à la base de la couche de sol |   DBS|   kg.m-2|
 |alat      |Accumulation de l'écoulement total latéral  |   DBS|    kg.m-2|
+
+NOTE: la fraction d'aire occupée par le sol (`wt`) et l'orographie (`mf`) sont seulement disponibles à l'échéance 00h.
 
 ## Support
 

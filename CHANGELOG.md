@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.28
+
+* date: 2022-11-22
+* announcements:
+    * Not announced
+* new content:
+    * Add information on HRDLPS variables
+* improvements:
+    * None
+* bug fixes:
+    * Fix link
+
 ## 2.4.27
 
 * date: 2022-11-18
