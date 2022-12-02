@@ -1,25 +1,20 @@
-[In English](readme_alerts_en.md)
+[En français](readme_alerts-geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Alertes
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Alerts](readme_alerts_en.md) > Alerts on MSC GeoMet
 
-# Données et produits d'avertissements météorologiques dans le format du Protocole d'Alerte Commun (PAC)
 
-Environnement et Changement climatique Canada publie des alertes météo lorsque le temps est menaçant pour informer les personnes se trouvant dans les zones touchées afin qu'elles puissent prendre des mesures pour se protéger et protéger leurs biens. Le type d'alerte utilisé dépend de la gravité et du moment de l'événement. Ce qui inclut : les avertissements, les veilles, les avis et les bulletins. Les avertissements sont habituellement émis entre 6 et 24 heures à l'avance, même si certains phénomènes violents (par exemple les orages et les tornades) peuvent se produire rapidement, avec un avis de moins d'une demi-heure. 
+# Weather alerts data available on MSC GeoMet
 
-## Accès
+MSC GeoMet provides access to the weather alerts layer. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software.
 
-### Comment accéder aux données
+## Access to the geospatial web services
 
-Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
+The weather alerts layer is [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
-* [Données XML disponibles sur le Datamart du SMC](readme_alerts-datamart_fr.md) 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_alerts-geomet_fr.md)
+Example of a web map displaying the weather alerts layer served by MSC GeoMet:
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
-
-Exemple de carte interactive présentant la couche `ALERTS` provenant de GeoMet du SMC :
 <div id="map" style="height: 400px; margin-bottom: 1rem;"></div>
 <div id="popup" class="ol-popup">
     <a href="#" id="popup-closer" class="ol-popup-closer"></a>
@@ -40,22 +35,39 @@ Exemple de carte interactive présentant la couche `ALERTS` provenant de GeoMet 
     </div>
 </div>
 
-### Licence
 
-La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+## Usage
 
-### Politique d'utilisation des services de données ouvertes du SMC
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on the MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main weather alerts data page](readme_alerts_en.md) which links to additional information on weather alerts.
 
-La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+### Available layers
 
-### Métadonnées
+There is one main weather alerts layer with all four types of alerts (warning, watch, statement, advisory). 
 
-À venir.
+### Usage tips
 
-## Documentation technique
+WMS styles:
 
-* [Version actuelle du système national d'alertes au public](https://www.securitepublique.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-fr.aspx)
-* [Critères d'alertes météo publiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/criteres-alertes-meteo.html) 
+* The list of available WMS styles is provided in the WMS GetCapabilities response ([example of a WMS GetCapabilities request](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=ALERTS))
+* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/web-services_en#handling-styles)
+
+Legends:
+
+* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic)
+* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTS`
+
+![The ALERTS WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTS)
+
+
+## Support
+
+The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
+
+
+## Announcement mailing list
+
+We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+
 
 <style>
     .ol-popup {
@@ -137,4 +149,4 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js" integrity="sha256-uQ0RrcqAQ8NxzNqZH11eXx3qFLAgwEgSQN1V0N1+UlM=" crossorigin="anonymous"></script>
-<script src="../../../js/alerts_fr.js" type="text/javascript"></script>
+<script src="../../../js/alerts_en.js" type="text/javascript"></script>
