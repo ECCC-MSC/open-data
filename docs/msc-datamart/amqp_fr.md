@@ -56,7 +56,7 @@ Quant au guide d’utilisation, il est disponible ici : [https://metpx.github.io
 
 Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe)
 
-__NOTE__:
+__NOTES__:
 
 __Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration de sr_subscribe:
 
@@ -64,6 +64,12 @@ __Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin
 * q_anonymous.sr_subscribe./nom_config/./nom_compagnie/ (option statique)
 
 Exemple : q_anonymous.sr_subscribe.citypage.compagnie
+
+Aussi, voici une liste de recommandations pour l'usager "anonymous" qui souhaite récupérer un sous-ensemble significatif de données sans crainte de perte d'information:
+
+* L'option `expire` refléte la période de rétention souhaitée par l'utilisateur. On suggère une valeur supérieure à 5 minutes, qui est la valeur par défaut.  
+* Augmenter le nombre d'instances dans la configuration ce qui permet de traiter plus efficacement les messages afin de minimiser leur nombre dans la queue.
+* Séparer les configurations en plusieurs configurations plus petites afin d'éviter d'atteindre le maximum de 10000 messages dans une queue (le nom des queues doit être différent entre les configurations).
 
 ## Environnement Windows
 

@@ -69,6 +69,12 @@ To __facilitate support__, our analysts suggest that users identify themselves, 
 
 Example: q_anonymous.sr_subscribe.citypage.companyX
 
+Also, here is a list of recommendations for the "anonymous" user who wishes to retrieve a significant subset of data without fear of losing information:
+
+* The `expire` option reflects the user's desired retention period. We suggest a value greater than 5 minutes, which is the default.  
+* Increase the number of instances in the configuration which allows for more efficient processing of messages to minimize their number in the queue.
+* Split the configurations into several smaller configurations to avoid reaching the maximum of 10,000 messages in a queue (the name of the queues must be different between the configurations)
+
 ## Windows environment
 
 Working with the Windows environment, simply download the latest version of Sarracenia at this address:
