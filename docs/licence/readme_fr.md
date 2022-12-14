@@ -40,7 +40,7 @@ Les modalités de cette licence sont importantes, et si vous ne respectez pas l�
 
 ## 4. Exemptions
 
-La présente licence ne vous confère par le droit d’utiliser :
+La présente licence ne vous confère pas le droit d’utiliser :
 
 * Des Renseignements personnels;
 * Des droits de tierces parties que le Fournisseur d’Information ou le Contributeur externe d’Information n’est pas autorisé à accorder;
