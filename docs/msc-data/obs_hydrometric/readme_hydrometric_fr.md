@@ -12,7 +12,7 @@ Données en temps réel sur les niveaux d'eau et les débits (décharge) recueil
  
 __Données hydrométriques historiques__
 
-Les données hydrométriques historiques sont des données et de l'information normalisées sur les ressources en eau. Elles sont recueillies, interprétées et diffusées par les Relevés hydrologiques du Canada (RHC) en partenariat avec les provinces, territoires et autres organismes par l'intermédiaire du Programme national de relevés hydrométriques. Ces ensembles de données comprennent les valeurs de moyennes quotidiennes et mensuelles, les valeurs de moyennes quotidiennes minimales et maximales par année et les valeurs des débits et des niveaux d'eau de pointe et instantanés pour plus de 2700 stations de surveillance hydrométrique actives et 5080 stations fermées au Canada.
+Les données hydrométriques historiques sont des données et de l'information normalisées sur les ressources en eau. Elles sont recueillies, interprétées et diffusées par les Services hydrologiques nationaux (SHN) en partenariat avec les provinces, territoires et autres organismes par l'intermédiaire du Programme national de relevés hydrométriques. Ces ensembles de données comprennent les valeurs de moyennes quotidiennes et mensuelles, les valeurs de moyennes quotidiennes minimales et maximales par année et les valeurs des débits et des niveaux d'eau de pointe et instantanés pour plus de 2700 stations de surveillance hydrométrique actives et 5100 stations fermées au Canada.
 
 __Stations de surveillance hydrométrique__
 

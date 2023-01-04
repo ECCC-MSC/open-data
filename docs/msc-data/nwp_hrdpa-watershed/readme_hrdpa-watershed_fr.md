@@ -6,13 +6,11 @@
 
 # Données et Produits de précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP)
 
-L'Analyse canadienne des précipitations (CaPA) produit un estimé optimal des quantités de précipitations sur des périodes d'accumulation de 6 et 24 heures. Cette analyse objective intègre des données provenant d'appareils de mesure au sol, de QPE radar et d'un champ d’essai fourni par un système de prévision numérique du temps. Pour produire l'Analyse à haute résolution déterministe des précipitations (AHRDP) à une résolution de 2.5 km, CaPA est connecté au système à haute résolution de prévision déterministe (SHRPD) qui fournit le champ d'essai.
+Le Système Canadien d'Analyse de Précipitation (CaPA) produit une estimation optimale de la précipitation sur des périodes de cumuls de 6 et 24 heures. Cet estimé objectif intègre des relevés pluviométriques provenant de capteurs de précipitation, de QPE radars et d'un champ d'essai généré par un système de prévision numérique du temps. Dans le but de produire l'Analyse à Haute Résolution Déterministe de Précipitation (AHRDP) à une résolution de 2.5 km, CaPA est connecté sur le SHRPD continental pour préparer son champ d'essai. CaPA-AHRDP produit quatre analyses de cumuls 6 heures valides aux heures synoptiques (00, 06, 12 et 18 UTC) et deux analyses 24 heures valides à 06 et 12 UTC. Une production préliminaire est démarrée 1 heure après l'heure de validité et une autre, dite finale, est lancée 7 heures plus tard, ce qui revient à un total de 12 analyses par jour.
 
-CaPA-AHRDP produit quatre analyses de 6 heures par jour, valides aux heures synoptiques (00, 06, 12 et 18 UTC) et une analyse de 24 heures valide à 12 UTC. Une production préliminaire est démarrée une heure après l'heure de validité et une production finale est démarrée six heures plus tard. Ceci se traduit en une production quotidienne de 10 analyses. Le domaine de l'analyse AHRDP est le même que celui du modèle SHRPD.
+Pour plus d'informations sur l'AHRDP, veuillez vous référer à cette note technique: [http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/CAPA-HRDPA_4_0_0_Tech_note_f.pdf](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/CAPA-HRDPA_4_0_0_Tech_note_f.pdf)
 
-Le débit des rivières à un endroit précis évolue en fonction des précipitations qui se produisent en amont.
-
-Afin de mieux interpréter les changements observés dans ces débits, il est utile de calculer les précipitations moyennes pour les bassins-versants définis par la position des stations de mesure du débit.
+Le débit des rivières à un endroit précis évolue en fonction des précipitations qui se produisent en amont. Afin de mieux interpréter les changements observés dans ces débits, il est utile de calculer les précipitations moyennes pour les bassins-versants définis par la position des stations de mesure du débit.
 
 En collaboration avec toutes les provinces et territoires, le SMC opère un réseau étendu de stations de jaugeage mesurant le débit des rivières. Des données historiques et temps réel sont disponibles ici : [https://eau.ec.gc.ca/](https://eau.ec.gc.ca/)
 
@@ -41,7 +39,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées de l'Analyse à haute résolution déterministe de précipitation moyenné par bassin-versant sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/c7c9d726-c48a-49e3-98ab-78a1ab87cda8).
 
 ## Documentation technique
 
