@@ -16,7 +16,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add GeoMet subpage for Alerts
 * improvements:
-    * None
+    * Abstracts updated for Historical Hydrometric Data, RDPA, HRDPA and HRDPA watershed
+    * Metadata section added for HRDPA and HRDPA watershed
 * bug fixes:
     * None
 

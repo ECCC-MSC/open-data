@@ -6,7 +6,7 @@
 
 # Données et produits de l'Analyse régionale déterministe de précipitation
 
-L'Analyse régionale déterministe de précipitation (ARPD) produit une estimation optimale de la quantité de précipitation qui est survenue au cours de périodes passées récentes de 6h ou 24h. Cet estimé intègre des relevés provenant de capteurs de précipitation, de radar météo et de modèles de prévision numérique du temps. La couverture géographique est l'Amérique du Nord (Canada, États-Unis et le Mexique). Les données sont disponibles à une résolution spatiale horizontale de 10 km. Les données ne sont disponibles qu'au niveau de la surface. Les données d'analyse sont rendues disponibles quatre fois par jour pour les intervalles de 6h et une fois par jour pour l'intervalle de 24h. Un estimé préliminaire est disponible environ 1h après la fin de la période d'accumulation, et révisé 6h plus tard afin d'assimiler les pluviomètres dont les données furent disponibles tardivement.
+L'Analyse régionale déterministe de précipitation (ARPD) produit une estimation optimale de la quantité de précipitation qui est survenue au cours de périodes passées récentes de 6h ou 24h. Cet estimé intègre des relevés provenant de capteurs de précipitation, de radar météo, d'imagerie satellitaire et de modèles de prévision numérique du temps. La couverture géographique est l'Amérique du Nord (Canada, États-Unis et le Mexique). Les données sont disponibles à une résolution spatiale horizontale de 10 km. Les données ne sont disponibles qu'au niveau de la surface. Les données d'analyse sont rendues disponibles quatre fois par jour pour les intervalles de 6h et deux fois par jour pour l'intervalle de 24h. Un estimé préliminaire est disponible environ 1h après la fin de la période d'accumulation, et révisé 7h plus tard afin d'assimiler les pluviomètres dont les données furent disponibles tardivement.
 
 ## Accès
 
@@ -45,7 +45,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-Les [métadonnées de l'Analyse régionale déterministe de précipitation sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/fdd3446a-dc20-5bad-9755-0855e3ec9b19)
+Les [métadonnées de l'Analyse régionale déterministe de précipitation sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/fdd3446a-dc20-5bad-9755-0855e3ec9b19).
 
 ## Produits
 
