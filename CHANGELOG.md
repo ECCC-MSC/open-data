@@ -10,14 +10,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.29
 
-* date:
+* date: 2023-01-18
 * announcements:
     * Not announced
 * new content:
-    * Add GeoMet subpage for Alerts
+    * Add input in NWP changelog (Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the GDPS [RDPS, GEPS, HRDPS])
 * improvements:
-    * Abstracts updated for Historical Hydrometric Data, RDPA, HRDPA and HRDPA watershed
-    * Metadata section added for HRDPA and HRDPA watershed
+    * None
 * bug fixes:
     * None
 
