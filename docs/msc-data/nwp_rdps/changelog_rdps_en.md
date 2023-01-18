@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+## Wednesday January 4, 2023
+
+### Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the RDPS
+
+On Wednesday January 4th, 2023, starting with the 1800 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 8.1.0 of the Regional Deterministic Prediction System (RDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Replacement of Atmospheric Motion wind Vectors (AMV) from GOES-17 by those from GOES-18.
+
 ## Thursday November 3, 2022
 
 ### Addition of surface observations received from ships in BUFR format in the RDPS

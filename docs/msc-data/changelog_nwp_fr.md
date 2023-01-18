@@ -6,6 +6,15 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+## 2023
+
+### 4 janvier 2023
+
+* [Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-4-janvier-2023)
+* [Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-4-janvier-2023)
+* [Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-mercredi-4-janvier-2023)
+* [Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-4-janvier-2023)
+
 ## 2022
 
 ### 3 novembre 2022

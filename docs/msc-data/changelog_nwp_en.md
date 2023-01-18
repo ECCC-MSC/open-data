@@ -6,6 +6,15 @@
 
 # Changes to the Canadian Meteorological Centre (CMC) Operational System
 
+## 2023
+
+### January 4, 2023
+
+* [Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-january-4-2023)
+* [Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-january-4-2023)
+* [Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the RDPS](nwp_rdps/changelog_rdps_en.md#wednesday-january-4-2023)
+* [Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-january-4-2023)
+
 ## 2022
 
 ### November 3, 2022

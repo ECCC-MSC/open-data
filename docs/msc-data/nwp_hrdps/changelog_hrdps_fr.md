@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le jeudi 4 janvier 2023
+
+### Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SHRPD
+
+Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Remplacement des vecteurs vents dérivés à partir d’images satellites provenant du satellite GOES-17 par ceux de GOES-18.
+
 ## Le jeudi 3 novembre 2022
 
 ### Ajout des observations de surface provenant des bateaux en format BUFR dans le SHRPD
