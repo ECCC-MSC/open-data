@@ -8,7 +8,7 @@
 
 ## Le mercredi 4 janvier 2023
 
-### Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) dans le SGPD
+### Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SGPD
 
 Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son système global de prévision déterministe (SGPD).
 
