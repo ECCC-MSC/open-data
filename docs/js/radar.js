@@ -64,7 +64,7 @@ function setTime() {
     } else if (current_time >= endTime) {
       current_time = startTime
     } else {
-      current_time = new Date(current_time.setUTCMinutes(current_time.getUTCMinutes() + 10));
+      current_time = new Date(current_time.setUTCMinutes(current_time.getUTCMinutes() + 6));
     }
     layers[1].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
     layers[2].getSource().updateParams({'TIME': current_time.toISOString().split('.')[0]+"Z"});
