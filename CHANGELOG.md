@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.30
+
+* date: 2023-01-18
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Updated radar composite/coverage map to new 6-minute interval
+* bug fixes:
+    * None
+
 ## 2.4.29
 
 * date: 2023-01-18
