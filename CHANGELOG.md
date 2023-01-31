@@ -8,9 +8,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.31
+
+* date: 2023-01-31
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Update Alerts/MetNotes map to use JSON formatted GetFeatureInfo responses
+* bug fixes:
+    * None
+
 ## 2.4.30
 
-* date: 2023-01-18
+* date: 2023-01-30
 * announcements:
     * Not announced
 * new content:

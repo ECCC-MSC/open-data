@@ -119,54 +119,29 @@ map.on("singleclick", function (evt) {
     coordinate,
     viewResolution,
     "EPSG:3857", {
-    INFO_FORMAT: "text/plain",
+    INFO_FORMAT: "application/json",
     FEATURE_COUNT: 10
   }
   );
   if (url) {
     fetch(url)
       .then(function (response) {
-        return response.text();
+        return response.json();
       })
-      .then(function (text) {
-        let features = text.match(/Feature\s.*/g);
-        if (features !== null) {
+      .then(function (json) {
+        if (json.features.length > 0) {
           overlay.setPosition(evt.coordinate);
-          let alerts = features.map((e, i) => {
-            let alert_area = text
-              .match(/area =.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let alert_headline = text
-              .match(/headline.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let alert_type = text
-              .match(/alert_type.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let alert_description = text
-              .match(/descrip_en.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let effective_datetime = luxon.DateTime.fromFormat(
-              text
-                .match(/effective.*\n/g)[i].split(" = ")[1]
-                .replace(/'/g, "")
-                .trim(),
-              "yyyy/MM/dd HH:mm:ssZ"
-            )
+          let alerts = json.features.map((e, i) => {
+            let alert_area = e.properties.area;
+            let alert_headline = e.properties.headline;
+            let alert_type = e.properties.alert_type;
+            let alert_description = e.properties.descrip_en;
+            let effective_datetime = luxon.DateTime.fromISO(e.properties.effective)
               .toUTC()
-              .toISO({
-                suppressMilliseconds: true
-              });
-            let expires_datetime = luxon.DateTime.fromFormat(
-              text
-                .match(/expires.*\n/g)[i].split(" = ")[1]
-                .replace(/'/g, "")
-                .trim(),
-              "yyyy/MM/dd HH:mm:ssZ"
-            )
+              .toISO({ suppressMilliseconds: true })
+            let expires_datetime = luxon.DateTime.fromISO(e.properties.expires)
               .toUTC()
-              .toISO({
-                suppressMilliseconds: true
-              });
+              .toISO({ suppressMilliseconds: true })
             return `
             <div id=alert-${i + 1} ${i > 0 ? "style='display: none;'" : ""}>
               <b>${alert_area}</b><br>
@@ -179,8 +154,8 @@ map.on("singleclick", function (evt) {
            </div>
           `;
           });
-          if (features.length > 1) {
-            navText.innerText = `${activeAlert} of ${features.length}`
+          if (json.features.length > 1) {
+            navText.innerText = `${activeAlert} of ${json.features.length}`
             nav.style.display = 'flex';
             nav.style.justifyContent = 'center';
             nav.style.flexDirection = 'column';

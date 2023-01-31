@@ -118,7 +118,7 @@ map.on("singleclick", function (evt) {
     coordinate,
     viewResolution,
     "EPSG:3857", {
-    INFO_FORMAT: "text/plain",
+    INFO_FORMAT: "application/json",
     FEATURE_COUNT: 10
   }
   );
@@ -127,45 +127,24 @@ map.on("singleclick", function (evt) {
   if (url) {
     fetch(url)
       .then(function (response) {
-        return response.text();
+        return response.json();
       })
-      .then(function (text) {
-        let features = text.match(/Feature\s.*/g);
-        if (features === null) {
+      .then(function (json) {
+        if (json.features.length === 0) {
           content.innerHTML = `<p align="center">No MetNote available...</p>`;
         } else {
-          let metnotes = features.map((e, i) => {
-            let metnote_status = text
-              .match(/metnote_status.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let content_en = text
-              .match(/content_en.*\n/g)[i].split(" = ")[1]
-              .replace(/'/g, "");
-            let start_datetime = luxon.DateTime.fromFormat(
-              text
-                .match(/start_datetime.*\n/g)[i].split(" = ")[1]
-                .replace(/'/g, "")
-                .trim(),
-              "yyyy/MM/dd HH:mm:ssZ"
-            )
+          let metnotes = json.features.map((e, i) => {
+            let metnote_status = e.properties.metnote_status;
+            let content_en = e.properties.content_en;
+            let start_datetime = luxon.DateTime.fromISO(e.properties.start_datetime)
               .toUTC()
-              .toISO({
-                suppressMilliseconds: true
-              });
-            let end_datetime = luxon.DateTime.fromFormat(
-              text
-                .match(/end_datetime.*\n/g)[i].split(" = ")[1]
-                .replace(/'/g, "")
-                .trim(),
-              "yyyy/MM/dd HH:mm:ssZ"
-            )
+              .toISO({ suppressMilliseconds: true })
+            let end_datetime = luxon.DateTime.fromISO(e.properties.end_datetime)
               .toUTC()
-              .toISO({
-                suppressMilliseconds: true
-              });
+              .toISO({ suppressMilliseconds: true })
             return `
             <div id=metnote-${i + 1} ${i > 0 ? "style='display: none;'" : ""}>
-              ${features.length > 1 ? `<b>MetNote #${i + 1}</b> <br><br>` : ``}
+              ${json.features.length > 1 ? `<b>MetNote #${i + 1}</b> <br><br>` : ``}
               Status: <span style="text-transform: capitalize;">${metnote_status}</span><br>
               <br>
               Start: ${start_datetime}<br>
@@ -175,8 +154,8 @@ map.on("singleclick", function (evt) {
            </div>
           `;
           });
-          if (features.length > 1) {
-            navText.innerText = `${activeMetNote} of ${features.length}`
+          if (json.features.length > 1) {
+            navText.innerText = `${activeMetNote} of ${json.features.length}`
             nav.style.display = 'flex';
             nav.style.justifyContent = 'center';
             nav.style.flexDirection = 'column';
