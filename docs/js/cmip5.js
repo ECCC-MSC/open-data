@@ -4,7 +4,7 @@ let layers = [
   new ol.layer.Tile({
     source: new ol.source.OSM()
   }),
-  new ol.layer.TileWMS({
+  new ol.layer.Tile({
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet-climate',
