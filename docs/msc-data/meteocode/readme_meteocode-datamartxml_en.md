@@ -108,7 +108,7 @@ where :
 	        * FPWG11 : Southern Manitoba
 	        * FPWG12 : Central and Northern Manitoba
 	    * Day 3 to 5 :
-	        * FPWG52 : Saskatchewan
+	        * FPWG51 : Manitoba
     * __Northwest Territories ('pnr')__
 	    * Day 1 and 2 :
 	        * FPNT11 : Great Slave Lake and Mackenzie River Areas
