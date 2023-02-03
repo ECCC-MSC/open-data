@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.32
+
+* date: 2023-01-31
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Fix JavaScript for CMIP5 map
+
 ## 2.4.31
 
 * date: 2023-01-31
