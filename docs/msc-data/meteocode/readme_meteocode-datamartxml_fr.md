@@ -103,7 +103,7 @@ où :
 	        * FPWG14 : Nord de la Saskatchewan
 	    * Jour 3 à 5 :
 	        * FPWG52 : Saskatchewan
-            * Manitoba ('pnr')
+    * __Manitoba ('pnr')__
 	    * Jour 1 et 2 :
 	        * FPWG11 : Sud du Manitoba
 	        * FPWG12 : Centre et nord du Manitoba
