@@ -22,7 +22,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Le système SPISCan calcule plusieurs indices climatiques de l'atmosphère et l'océan (ex. les indices de la mousson, du PNA, du NAO, de El Nino, etc.) qui peuvent être calculés à partir des prévisions saisonnières ainsi qu'à partir de l'observation de certaines variables à l'échelle saisonnière. 
 
-Une ![description plus détaillée des indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_SPISCAN_f.pdf) est disponible.
+Une [description plus détaillée des indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_SPISCAN_f.pdf) est disponible.
 
 Pour accéder aux indices atmosphériques et océaniques calculés par le SPISCan veuillez suivre les liens ci-dessous :
 
@@ -50,7 +50,8 @@ La nomenclature des fichiers de prévision est la suivante :
 * YYYYMMDD00_indices_month_YYYY1MM1-YYYY2MM2.csv
 * YYYYMMDD00_indices_season_YYYY1MM1-YYYY2MM2.csv
 
-Avec :
+Avec:
+
 * __YYYY__ : L'année d'initialisation de la prévision
 * __MMDD__ : Le mois et le jour d'initialisation de la prévision
 * __YYYY1MM1__ : L'année et mois du début de la prévision
@@ -61,6 +62,7 @@ La nomenclature des fichiers d'observations est la suivante :
 * observed_indices_month_YYYY1MM1-YYYY2MM2.csv
 
 Avec :
+
 * __YYYY1MM1__ : L'année et mois du début du calcul
 * __YYYY2MM2__ : L'année et mois de la fin du calcul
 
