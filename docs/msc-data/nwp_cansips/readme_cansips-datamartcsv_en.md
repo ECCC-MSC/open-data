@@ -22,7 +22,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 CanSIPS calculates a suite of oceanic and atmospheric indices (e.g. monsoon indices, PNA, NAO, El NINO, etc.) which can be used for seasonal climate forecasting and monitoring. 
 
-A more ![detailed description of the indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_CANSIPS_e.pdf) is available.
+A more [detailed description of the indices](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_cansips/indices_CANSIPS_e.pdf) is available.
 
 The files containing atmospheric and oceanic CanSIPS indices can be accessed at the following URLs :
 
@@ -51,6 +51,7 @@ The forecast and hindcast files have the following nomenclature :
 * YYYYMMDD00_indices_season_YYYY1MM1-YYYY2MM2.csv
 
 where :
+
 * __YYYY__ : Year of the forecast initiation
 * __MMDD__ : Month and day of the forecast initiation
 * __YYYY1MM1__ : Year and month of the forecast start
@@ -61,6 +62,7 @@ The observation files have the following nomenclature :
 * observed_indices_month_YYYY1MM1-YYYY2MM2.csv
 
 where :
+
 * __YYYY1MM1__ : Year and month the index calculation starts
 * __YYYY2MM2__ : Year and month the index calculation ends
 
