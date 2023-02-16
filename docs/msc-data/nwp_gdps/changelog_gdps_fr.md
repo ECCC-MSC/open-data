@@ -10,8 +10,7 @@
 
 ### Ajout des observations GPSRO du satellite Sentinel-6A dans le SGPD
 
-Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Can
-ada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système global de prévision déterministe (SGPD).
+Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système global de prévision déterministe (SGPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
