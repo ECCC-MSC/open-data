@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.34
+
+* date: 2023-02-16 
+* announcements:
+    * Not announced
+* new content:
+    * Add input in the changelog (addition of Sentinel obs in NWP)
+* improvements:
+    * None
+* bug fixes:
+    * None	
+
 ## 2.4.33
 
 * date: 

@@ -8,6 +8,13 @@
 
 ## 2023
 
+### February 15, 2023
+
+* [Addition of GPSRO observations from the Sentinel-6A satellite in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-february-15-2023)
+* [Addition of GPSRO observations from the Sentinel-6A satellite in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-february-15-2023)
+* [Addition of GPSRO observations from the Sentinel-6A satellite in the RDPS](nwp_rdps/changelog_rdps_en.md#wednesday-february-15-2023)
+* [Addition of GPSRO observations from the Sentinel-6A satellite in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-february-15-2023)
+
 ### January 4, 2023
 
 * [Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-january-4-2023)
