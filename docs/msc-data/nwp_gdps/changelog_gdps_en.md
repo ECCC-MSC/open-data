@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Wednesday February 15, 2023
+
+### Addition of GPSRO observations from the Sentinel-6A satellite in the GDPS
+
+On Wednesday February 15th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of GPSRO (Global Positioning System Radio Occultation) observations from the Sentinel-6A
+
 ## Wednesday January 4, 2023
 
 ### Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the GDPS
