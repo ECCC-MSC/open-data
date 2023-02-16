@@ -14,7 +14,7 @@ Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre mét
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
-Ajout des observations GPSRO (Global Positioning System Radio Occultation) du satellite Sentinel-6A
+Ajout des observations GPSRO (Global Positioning System Radio Occultation) du satellite Sentinel-6A.
 
 ## Le mercredi 4 janvier 2023
 
