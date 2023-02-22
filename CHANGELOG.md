@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.35
+
+* date: 2023-02-21 
+* announcements:
+    * Not announced
+* new content:
+    * Update HRDPS page following the removal of PS data
+* improvements:
+    * None
+* bug fixes:
+    * None
+
 ## 2.4.34
 
 * date: 2023-02-16 

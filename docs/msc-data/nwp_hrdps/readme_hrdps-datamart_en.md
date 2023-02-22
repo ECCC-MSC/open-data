@@ -10,7 +10,7 @@ The [High Resolution Deterministic Prediction System or HRDPS](readme_hrdps_en.m
 
 Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.
 
-As part of a modernization plan of the Meteorological Service of Canada (MSC), coherent [weather elements on the grid](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf) ("WEonG"), merging raw model outputs and post-processed with various diagnostic approaches, are also available to serve the different forecasting programs (public, marine, aviation, air quality, etc.).  Hourly concepts are produced from different algorithms using outputs from the pan-Canadian HRDPS.These data are available on a lat-lon rotated grid. 
+As part of a modernization plan of the Meteorological Service of Canada (MSC), coherent [weather elements on the grid](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf) ("WEonG"), merging raw model outputs and post-processed with various diagnostic approaches, are also available to serve the different forecasting programs (public, marine, aviation, air quality, etc.).  Hourly concepts are produced from different algorithms using outputs from the pan-Canadian HRDPS. These data are available on a lat-lon rotated grid. 
 
 ## Data location
 
@@ -20,42 +20,26 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* Polar-stereographic grids: [https://dd.weather.gc.ca/model_hrdps/{domain}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps)
-* Rotated lat-lon grid: [https://dd.weather.gc.ca/model_hrdps/continental/{res}/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental/2.5km/grib2)
+* Continental domain: [https://dd.weather.gc.ca/model_hrdps/continental/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental)
+* North domain (experimental): [https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/grib2)
 
 where :
 
-* __domain__ : Constant string indicating the available domain [continental, north, east, prairies, west, maritimes]
 * __res__ : Horizontal resolution [2.5km]
 * __HH__ : Model run start, in UTC [00, 06, 12, 18], except the North domain [00, 12]
-* __hhh__ : Forecast hour [000, 001, 002, ..., 048] for polar-stereographic grids and [001, 002, 003, ..., 048] for rotated lat-lon grid
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048]
 
 A 24-hour history is stored in this directory.
 
-## Available Domains 
+Note: Some weather element of the grid algorithms ("WEonG") need variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
-### Continental grids specifications
+## Technical grids specification
 
-* __Polar-stereographic grid__
-
-![Image de la grille du domaine continental du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_cont.png)
-
-Table lists the values of various parameters of the Continental polar-stereographic grid.
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 2576 |
-| nj | 1456 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 35.6073° N  128.0813° W |
-| (i,j) coordinate of North Pole | (840.0, 2296.0) |
-| grid orientation (with respect to j axis) | -108.0° |
-
-* __Rotated lat-lon grid__
+* __Rotated lat-lon grid of the continental domain__
 
 ![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
 
-Table lists the values of various parameters of the rotated lat-lon Continental grid.
+Table lists the values of various parameters of the rotated lat-lon continental grid.
 
 | Parameter | Valeur |
 | ------ | ------ |
@@ -66,7 +50,7 @@ Table lists the values of various parameters of the rotated lat-lon Continental 
 
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
-### North (experimental) grid specifications
+* __Polar-stereographic grid of the North domain (experimental)__
 
 ![Image de la grille du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
 
@@ -81,102 +65,14 @@ Table lists the values of various parameters of the North polar-stereographic gr
 | (i,j) coordinate of North Pole | (389.0, 842.0) |
 | grid orientation (with respect to j axis) | -116.0° |
 
-### East grid specifications
-
-![Image de la grille du domaine est du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_east.png)
-
-Table lists the values of various parameters of the East polar-stereographic grid.
-
-| Parameter | Value|
-| ------ | ------ |
-| ni | 765 |
-| nj | 570 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 38.6985° N  91.3395° W |
-| (i,j) coordinate of North Pole | (450.0, 2240.0) |
-| grid orientation (with respect to j axis) | -80.0° |
-
-### Prairies grid specifications
-
-![Image de la grille du domaine Prairies du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_prairies.png)
-
-Table lists the values of various parameters of the Prairie polar-stereographic grid.
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 655 |
-| nj | 570 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 41.8344° N  108.4943° W |
-| (i,j) coordinate of North Pole | (1015.0, 1869.0) |
-| grid orientation (with respect to j axis) | -80.0° |
-
-### West grid specifications
-
-![Image de la grille du domaine ouest du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_west.png)
-
-Table lists the values of various parameters of the West polar-stereographic grid.
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 685 |
-| nj | 485 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 44.6922° N  129.9011° W |
-| (i,j) coordinate of North Pole | (578.0, 1900.0) |
-| grid orientation (with respect to j axis) | -113.0° |
-
-
-### Maritimes grid specifications
-
-![Image de la grille du domaine Maritimes du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_marit.png)
-
-Table lists the values of various parameters of the Maritime polar-stereographic grid.
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 595 |
-| nj | 451 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 41.2405° N  66.1830° W |
-| (i,j) coordinate of North Pole | (1078.0, 1867.7) |
-| grid orientation (with respect to j axis) | -36.2° |
-
 ## File name nomenclature 
 
-### Polar-stereographic grid
+* __Continental domain__
 
 The files have the following nomenclature :
 
-CMC_hrdps_domain_Variable_LevelType_level_ps2.5km_YYYYMMDDHH_Phhh-mm.grib2
-
-where :
-
-* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre.
-* __hrdps__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System.
-* __domain__ : Constant string indicating which domain that the data is from.
-* __Variable__ : Variable type included in this file.
-* __LevelType__ : Level type.
-* __Level__ : Level value.
-* __ps2.5km__ : Constant string indicating that the projection used is polar-stereographic at 2.5 km resolution.
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
-* __HH__ : UTC run time [00, 06, 12, 18].
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048].
-* __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available].
-* __grib2__ : Constant string indicating the GRIB2 format is used.
-
-Example of file name :
-
-CMC_hrdps_east_DEPR_ISBL_0175_ps2.5km_2011092412_P003-00.grib2
-
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the High Resolution Deterministic Prediction System. The data in the file start on September 24th 2011 at 12Z (2011092412). It contains the dew point depression (DEPR) at the isobaric level 175 mb (ISBL_0175) on a polar-stereographic at 2.5 km resolution (ps2.5km) for the forecast hour 03 (P003) and 00 minutes (-00) in GRIB2 format (.grib2).
-
-### Rotated lat-lon grid
-
-The files have the following nomenclature :
-
-* {YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_P{hhh}.grib2
-* {YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grille}{resolution}_PT{hhh}H.grib2
+* `{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
+* `{YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grid}{resolution}_PT{hhh}H.grib2`
 
 where :
 
@@ -188,17 +84,41 @@ where :
 * __HRDPS__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
 * __HRDPS-WEonG__ : Constant string indicating that the data is from the weather elements on the grid of the High Resolution Deterministic Prediction System
 * __VAR__ : Variable type included in the file (ex: UGRD)
-* __LVLTYPE-LVL__ : Vertical level type and level value [ex: SFC or Sfc for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface, AGL-10m for 10m above ground level]
-* __Grille__ : Horizontal grid [RLatLon]
+* __LVLTYPE-LVL__ : Vertical level type and level value [ex: Sfc for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface, AGL-10m for 10m above ground level]
+* __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
-* __P{hhh}__ : « P »  is a constant character, « hhh » is the forecast hour [000, 001, 002, ..., 048]
-* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [001, 002, 003, ..., 048]
+* __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
-Examples of filename : 
+Examples of filenames : 
 
-* 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_P012.grib2
+* 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_PT012H.grib2
 * 20220821T12Z_MSC_HRDPS-WEonG_VISIFOG_Sfc_RLatLon0.0225_PT024H.grib2
+
+* __North domain (experimental)__
+
+The files have the following nomenclature :
+
+* `CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2`
+
+where :
+
+* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
+* __hrdps__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
+* __north__ : Constant string indicating the North domain
+* __VAR__ : Variable type included in this file (ex. : UGRD)
+* __LVLTYPE-LVL__ : Level type and level value [ex: SFC for the surface, TGL_120 for the height of 120m above ground level]
+* __Grid__ : Horizontal grid [ps for polar stereographic]
+* __resolution__ : 2.5 km resolution
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __HH__ : UTC run time [00, 12]
+* __P{hhh}__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048]
+* __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available]
+* __grib2__ : Constant string indicating the GRIB2 format is used
+
+Example of file name :
+
+* CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2
 
 ## Levels
 
@@ -266,10 +186,6 @@ List of weather elements on the grid (*HRDPS-WEonG*):
 | VISLFOG | Visibility through liquid fog | m |
 | WDIR | Wind direction | True degree |
 | WIND | Wind speed | m/s |
-
-## About the no-data mask for the Continental polar-stereographic grid
-
-Since October, 18th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
 
 ## Support
 
