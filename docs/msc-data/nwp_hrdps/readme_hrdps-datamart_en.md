@@ -20,7 +20,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* Continental domain: [https://dd.weather.gc.ca/model_hrdps/continental/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental)
+* Continental domain: [https://dd.weather.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental)
 * North domain (experimental): [https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/grib2)
 
 where :
