@@ -113,7 +113,7 @@ où :
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __HH__ : Heure UTC de la passe [00, 12]
 * __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
-* __mm__ : représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
+* __mm__ : Représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemple de nom de fichier :
