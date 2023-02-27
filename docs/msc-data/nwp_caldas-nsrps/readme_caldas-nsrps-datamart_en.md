@@ -64,7 +64,8 @@ Examples:
 * 20220307T00Z_MSC_NSRPS-CaLDAS_Dewpoint_AGL-1.5m_RLatLon0.0225_PT0H.nc
 * 20220307T00Z_MSC_NSRPS-CaLDAS_RadiativeTemp_Sfc_RLatLon0.0225_PT0H.nc
 * 20220307T00Z_MSC_NSRPS-CaLDAS_SoilLiquidWaterCont_DBS-all_RLatLon0.0225_PT0H.nc
-
+* 20230220T00Z_MSC_NSRPS-CaLDAS_SnowDepth_Sfc_RLatLon0.0225_PT0H.nc
+* 20230220T00Z_MSC_NSRPS-CaLDAS_SnowWaterEquiv_Sfc_RLatLon0.0225_PT0H.nc
 
 ## List of variables 
 
@@ -75,7 +76,9 @@ List of variables available in the files:
 |tt     |Air Temperature                            |   AGL|    K|
 |td      |Dew Point Temperature |   AGL|     K|
 |tg      |Aggregate Surface Radiative Temperature |   Sfc|     K|
-|wsol      |Volumetric Water Content of Soil |   DBS|    m3.m-3|
+|wsol      |Volumetric Water Content of Soil |   DBS|    m<sup>3</sup>/m<sup>3</sup>|
+|swe      |Water equivalent of snow cover (land) |   Sfc|   kg/m<sup>2</sup>|
+|sd      |Snow depth (land) |   Sfc|    m|
 
 
 ## Support
