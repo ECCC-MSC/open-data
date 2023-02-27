@@ -79,7 +79,7 @@ Liste des variables pour chaque heure de validité de:
 |tg      |Température radiative agrégée à la surface |   Sfc|    K|
 |wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m<sup>3</sup>/m<sup>3</sup>|
 |swe      |Équivalent en eau de la neige (à la surface terrestre) |   Sfc|   kg/m<sup>2</sup>|
-|sd      |Hauteur de neige (à la surface terrestre) |   Sfc|    m|
+|sd      |Épaisseur de neige (à la surface terrestre) |   Sfc|    m|
 
 
 ## Support
