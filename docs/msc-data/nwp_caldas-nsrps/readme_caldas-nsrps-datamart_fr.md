@@ -65,7 +65,8 @@ Exemples :
 * 20220307T00Z_MSC_NSRPS-CaLDAS_Dewpoint_AGL-1.5m_RLatLon0.0225_PT0H.nc
 * 20220307T00Z_MSC_NSRPS-CaLDAS_RadiativeTemp_Sfc_RLatLon0.0225_PT0H.nc
 * 20220307T00Z_MSC_NSRPS-CaLDAS_SoilLiquidWaterCont_DBS-all_RLatLon0.0225_PT0H.nc
-
+* 20230220T00Z_MSC_NSRPS-CaLDAS_SnowDepth_Sfc_RLatLon0.0225_PT0H.nc
+* 20230220T00Z_MSC_NSRPS-CaLDAS_SnowWaterEquiv_Sfc_RLatLon0.0225_PT0H.nc
 
 ## Liste des variables
 
@@ -77,6 +78,9 @@ Liste des variables pour chaque heure de validité de:
 |td      |Température du point de rosée au niveau de l'abri |   AGL|    K|
 |tg      |Température radiative agrégée à la surface |   Sfc|    K|
 |wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m3.m-3|
+|swe      |Équivalent en eau de la neige (terrestre) |   Sfc|   kg m-2|
+|sd      |Hauteur de neige (terrestre) |   Sfc|    m|
+
 
 ## Support
 
