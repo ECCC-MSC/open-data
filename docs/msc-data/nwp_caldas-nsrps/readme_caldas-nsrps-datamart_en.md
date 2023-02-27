@@ -76,8 +76,8 @@ List of variables available in the files:
 |tt     |Air Temperature                            |   AGL|    K|
 |td      |Dew Point Temperature |   AGL|     K|
 |tg      |Aggregate Surface Radiative Temperature |   Sfc|     K|
-|wsol      |Volumetric Water Content of Soil |   DBS|    m3.m-3|
-|swe      |Water equivalent of snow cover (land) |   Sfc|   kg m-2|
+|wsol      |Volumetric Water Content of Soil |   DBS|    m<sup>3</sup>/m<sup>3</sup>|
+|swe      |Water equivalent of snow cover (land) |   Sfc|   kg/m<sup>2</sup>|
 |sd      |Snow depth (land) |   Sfc|    m|
 
 

@@ -77,9 +77,9 @@ Liste des variables pour chaque heure de validité de:
 |tt     |Température de l'air                           |   AGL|    K|
 |td      |Température du point de rosée au niveau de l'abri |   AGL|    K|
 |tg      |Température radiative agrégée à la surface |   Sfc|    K|
-|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m3.m-3|
-|swe      |Équivalent en eau de la neige (terrestre) |   Sfc|   kg m-2|
-|sd      |Hauteur de neige (terrestre) |   Sfc|    m|
+|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m<sup>3</sup>/m<sup>3</sup>|
+|swe      |Équivalent en eau de la neige (à la surface terrestre) |   Sfc|   kg/m<sup>2</sup>|
+|sd      |Hauteur de neige (à la surface terrestre) |   Sfc|    m|
 
 
 ## Support
