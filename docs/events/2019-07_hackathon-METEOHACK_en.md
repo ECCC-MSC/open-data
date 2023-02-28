@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](2019-07_hackathon-METEOHACK_en.md) > Hackathon METEOHACK 2019-07
+[TOC](../readme_en.md) > Hackathon METEOHACK 2019-07
 
 
 # MSC METEOHACK Hackathon 2019

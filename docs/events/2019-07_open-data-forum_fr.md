@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TdM](2019-07_open-data-forum_fr.md) > Forum de données ouvertes 2019-07
+[TdM](../readme_fr.md) > Forum de données ouvertes 2019-07
 
 # Forum de données ouvertes du SMC 2019
 

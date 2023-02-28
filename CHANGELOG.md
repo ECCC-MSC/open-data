@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.36
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * TOC links fixed for METEOHACK and Open Data Forum pages
+
 ## 2.4.35
 
 * date: 2023-02-22

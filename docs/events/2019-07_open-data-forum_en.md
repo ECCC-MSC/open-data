@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](2019-07_open-data-forum_en.md) > Open Data Forum 2019-07
+[TOC](../readme_en.md) > Open Data Forum 2019-07
 
 # MSC 2019 Open Data Forum
 
