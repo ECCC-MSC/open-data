@@ -42,6 +42,23 @@ where:
 * __MetNotes__ : Constant string indicating that data is from MetNotes
 * __json__ : File extention indicating the GeoJSON format
 
+Example :
+
+* 20220207T000000.123Z_MSC_MetNotes.json
+
+__Note__ : The use of milliseconds is required to ensure the uniqueness of the notes issued.
+
+## File content
+
+The temporal fields in the GeoJSON file are defined as follows:
+
+| Element   |   Description    |
+|-----------|------------------|
+|start_datetime |   The forecaster defined time when the weather conditions addressed by the MetNote are expected to begin.|
+|end_datetime |     The forecaster-defined time when the weather conditions addressed by the MetNote are no longer expected.|
+|expire_datetime |  If more than 27 hours have passed since a MetNote has been published (Stale time + 3 hour’s grace), it will be considered Expired and automatically removed from dissemination platforms.|
+|publish_datetime | The time that the forecaster indicates a MetNote MetObject is ready for product generation.|
+
 ## Support
 
 If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)

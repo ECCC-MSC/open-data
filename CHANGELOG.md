@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * None
 * improvements:
-    * None
+    * File content section added for MetNotes on MSC Datamart
 * bug fixes:
     * TOC links fixed for METEOHACK and Open Data Forum pages
 

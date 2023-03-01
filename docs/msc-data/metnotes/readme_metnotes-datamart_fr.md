@@ -46,7 +46,18 @@ Exemple :
 
 * 20220207T000000.123Z_MSC_MetNotes.json
 
-__Note__ : L'utilisation des millisecondes est requise pour assurer l'unicité des notes émises 
+__Note__ : L'utilisation des millisecondes est requise pour assurer l'unicité des notes émises.
+
+## Contenu du fichier
+
+Les champs temporels dans le fichier GeoJSON sont définis comme suit :
+
+| Element   |   Description    |
+|-----------|------------------|
+|start_datetime |   Le moment défini par le prévisionniste où les conditions météorologiques abordées par la MetNote devraient commencer.|
+|end_datetime |     Le moment défini par le prévisionniste où les conditions météorologiques abordées par la MetNote ne sont plus attendues.|
+|expire_datetime |  Si plus de 27 heures se sont écoulées depuis la publication d'une MetNote (délai d'expiration + 3 heures de grâce), celle-ci sera considérée comme expirée et automatiquement retirée des plateformes de diffusion.|
+|publish_datetime | Le moment auquel le prévisionniste indique qu'un MetObject d'une MetNote est prêt pour la génération du produit.|
 
 ## Support
 
