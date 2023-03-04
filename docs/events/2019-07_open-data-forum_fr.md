@@ -49,7 +49,7 @@ Liste des vidéos :
 
 **Présentatrice** : Sandrine Edouard,  coordonnatrice nationale de l'accès aux données ouvertes au Service météorologique du Canada (SMC) 
 
-**Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard.pdf).
+**Sujet** : Services de données ouvertes du Datamart du SMC, survol historique, données disponibles et accès aux données en s'appuyant sur la nouvelle documentation publique, les services à recouvrement de coûts et les motivations pour l'organisation du 1er forum de données ouvertes du SMC. Vous pouvez [télécharger le fichier de présentation](http://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/forum_msc-cccs/MSC-Datamart-OpenData_SandrineEdouard_fr.pdf).
 
 ### Services Web géospatiaux : passé, présent et futur
 
