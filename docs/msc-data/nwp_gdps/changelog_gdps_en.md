@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
-## Tuesday March 7, 2023
+## Wednesday March 8, 2023
 
 ### Correction to the quality control of snow depth observations from Canadian automatic stations in the GDPS
 
-On Tuesday March 7th, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Global Deterministic Prediction System (GDPS).
+On Wednesday March 8th, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Global Deterministic Prediction System (GDPS).
 
 A modification to the quality control of snow depth observations from Canadian automatic stations used in the snow analysis has been installed in the GDPS.
 

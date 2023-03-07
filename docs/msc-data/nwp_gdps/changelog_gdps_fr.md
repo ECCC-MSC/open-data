@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
-## Le mardi 7 mars 2023
+## Le mercredi 8 mars 2023
 
 ### Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPD
 
-Le mardi 7 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système global de prévision déterministe (SGPD).
+Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système global de prévision déterministe (SGPD).
 
 Une modification au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes utilisée dans l'analyse de neige a été installée dans le SGPD.
 
