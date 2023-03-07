@@ -10,11 +10,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.36
 
-* date:
+* date: 2023-03-07
 * announcements:
     * Not announced
 * new content:
-    * None
+    * Add input in NWP changelog (Correction to the quality control of snow depth observations from Canadian automatic stations) - RDPS, GDPS, GEPS
+    * Add swe and sd parameters in CaLDAS-NSRPS
 * improvements:
     * File content section added for MetNotes on MSC Datamart
     * Radar doc updated for 6 mins timestep and new layers
@@ -39,7 +40,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * Add input in the changelog (addition of Sentinel obs in NWP)
+     * Add input in the changelog (addition of Sentinel obs in NWP)
 * improvements:
     * None
 * bug fixes:

@@ -6,6 +6,18 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mercredi 8 mars 2023
+
+### Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPE
+
+Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).
+
+Une modification au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes utilisée dans l'analyse de neige a été installée dans le SGPE.
+
+Des détails concernant la problématique, les changements apportés et les impacts sur l'analyse de neige et les performances du système sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_fr.pdf).
+
+La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426).
+
 ## Le mercredi 15 février 2023
 
 ### Ajout des observations GPSRO du satellite Sentinel-6A dans le SGPE

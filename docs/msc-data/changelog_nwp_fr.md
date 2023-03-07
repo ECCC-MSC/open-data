@@ -8,6 +8,12 @@
 
 ## 2023
 
+### 8 mars 2023
+
+* [Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-8-mars-2023)
+* [Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-8-mars-2023)
+* [Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-mercredi-8-mars-2023)
+
 ### 15 février 2023
 
 * [Ajout des observations GPSRO du satellite Sentinel-6A dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-15-fevrier-2023)
