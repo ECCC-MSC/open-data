@@ -8,6 +8,12 @@
 
 ## 2023
 
+### March 7, 2023
+
+* [Correction to the quality control of snow depth observations from Canadian automatic stations in the GEPS](nwp_geps/changelog_geps_en.md#tuesday-march-7-2023)
+* [Correction to the quality control of snow depth observations from Canadian automatic stations in the GDPS](nwp_gdps/changelog_gdps_en.md#tuesday-march-7-2023)
+* [Correction to the quality control of snow depth observations from Canadian automatic stations in the RDPS](nwp_rdps/changelog_rdps_en.md#tuesday-march-7-2023)
+
 ### February 15, 2023
 
 * [Addition of GPSRO observations from the Sentinel-6A satellite in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-february-15-2023)

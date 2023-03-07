@@ -6,6 +6,18 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday March 7, 2023
+
+### Correction to the quality control of snow depth observations from Canadian automatic stations in the GEPS
+
+On Tuesday March 7th, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.1 of the Global Ensemble Prediction System (GEPS).
+
+A modification to the quality control of snow depth observations from Canadian automatic stations used in the snow analysis has been installed in the GEPS.
+
+Details of the issue, the changes made and the impacts on the snow analysis and system performance are available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_en.pdf).
+
+The official note announcing the implementation of these changes is available [at this link](https://dd.weather.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426).
+
 ## Wednesday February 15, 2023
 
 ### Addition of GPSRO observations from the Sentinel-6A satellite in the GEPS
