@@ -31,15 +31,27 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 ### Couches disponibles
 
-Les couches radar météo sont mises à jour toutes les 10 minutes. Les 3 dernières heures de données sont disponibles sur GeoMet du SMC.
+Les couches radar météo sont mises à jour toutes les 6 minutes. Les 3 dernières heures de données sont disponibles sur GeoMet du SMC.
 
-Composite radar météo nord-américaine à 1 km :
+Composite radar nord-américaine [1 km] :
 
-* Taux de précipitation radar (Pluie) (1 km) [mm/hr], ID: `RADAR_1KM_RRAI`
-* Taux de précipitation radar (Neige) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
+* Taux de précipitation radar pour la pluie [mm/hr], ID: `RADAR_1KM_RRAI`
+* Taux de précipitation radar pour la neige [cm/hr], ID: `RADAR_1KM_RSNO`
 * Couches de la couverture radar dynamique correspondantes :
     * Couverture pour la pluie, ID: `RADAR_COVERAGE_RRAI`. ID pour le style WMS inversé : `RADAR_COVERAGE_RRAI.INV`
     * Couverture pour la neige, ID: `RADAR_COVERAGE_RSNO`. ID pour le style WMS inversé: `RADAR_COVERAGE_RSNO.INV`
+
+Type de précipitation à la surface du radar nord-américan [1 km]:
+
+* Type de précipitation à la surface du radar [expérimental], ID: `Radar_1km_SfcPrecipType`
+* Couches de la couverture radar dynamique correspondantes [expérimental]:
+    * Couverture, ID: `Radar-Coverage_SfcPrecipType`. ID pour le style WMS inversé: `Radar-Coverage_SfcPrecipType-Inverted`
+
+Extrapolation radar nord-américaine [1 km]:
+
+* Taux de précipitation radar extrapolé pour la pluie [mm/h] [expérimental], ID: `Radar_1km_RainPrecipRate-Extrapolation`
+* Taux de précipitation radar extrapolé pour la neige [mm/h] [expérimental], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
+* Taux de précipitation radar extrapolé [dBZ] [expérimental], ID: `Radar_1km_dBZ-Extrapolation`
 
 ### Conseils d'utilisation
 
