@@ -31,15 +31,27 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 
 ### Available layers
 
-Weather radar layers are updated every 10 minutes. The last 3 hours of data is available on MSC GeoMet. 
+Weather radar layers are updated every 6 minutes. The last 3 hours of data is available on MSC GeoMet. 
 
-North-American weather radar composite at 1 km:
+North American radar composite [1 km]:
 
-* Radar precipitation rate (Rain) (1 km) [mm/hr], ID: `RADAR_1KM_RRAI`
-* Radar precipitation rate (Snow) (1 km) [cm/hr], ID: `RADAR_1KM_RSNO`
+* Radar precipitation rate for rain [mm/hr], ID: `RADAR_1KM_RRAI`
+* Radar precipitation rate for snow [cm/hr], ID: `RADAR_1KM_RSNO`
 * Corresponding dynamic radar coverage layers:
     * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`. ID for inverted style: `RADAR_COVERAGE_RRAI.INV`
     * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`. ID for inverted style: `RADAR_COVERAGE_RSNO.INV`
+
+North American radar surface precipitation type [1 km]:
+
+* Radar surface precipitation type [experimental], ID: `Radar_1km_SfcPrecipType`
+* Corresponding dynamic radar coverage layer [experimental]:
+    * Coverage, ID: `Radar-Coverage_SfcPrecipType`. ID for inverted style: `Radar-Coverage_SfcPrecipType-Inverted`
+
+North American radar extrapolation [1 km]:
+
+* Radar extrapolation precipitation rate for rain [mm/h] [experimental], ID: `Radar_1km_RainPrecipRate-Extrapolation`
+* Radar extrapolation precipitation rate for snow [mm/h] [experimental], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
+* Radar extrapolation precipitation rate [dBZ] [experimental], ID: `Radar_1km_dBZ-Extrapolation`
 
 ### Usage tips
 

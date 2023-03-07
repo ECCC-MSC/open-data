@@ -14,7 +14,10 @@ Cette page décrit les données et produits des radars canadiens du réseau de 3
 
 Les données radar sont disponibles via l'API et les services web GeoMet du SMC ainsi qu'en tant qu'images statiques GIF sur le serveur de données Datamart du SMC :
 
-* [Couches disponibles pour la composite radar nord-américaine via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md)
+* [Couches de radar disponibles via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md):
+    * Composite radar nord-américaine
+    * Type de précipitation à la surface du radar nord-américan [expérimental]
+    * Extrapolation radar nord-américaine [expérimental]
 * [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Ci-après est un exemple de carte interactive configurée pour présenter des couches WMS de la composite radar météo servies par GeoMet du SMC.
