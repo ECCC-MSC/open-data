@@ -16,7 +16,7 @@ Une modification au contrôle de qualité des observations d'épaisseur de neige
 
 Des détails concernant la problématique, les changements apportés et les impacts sur l'analyse de neige et les performances du système sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_fr.pdf).
 
-La note officielle annonçant ce changement est disponible [via ce lien] (https://dd.meteo.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426).
+La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426).
 
 ## Le mercredi 15 février 2023
 
