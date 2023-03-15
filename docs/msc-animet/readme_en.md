@@ -21,7 +21,7 @@ In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../ms
 
 # Access
 
-**Access to MSC AniMet: https://eccc-msc.github.io/msc-animet/**
+**Access to MSC AniMet: [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
 # Usage
 
@@ -98,7 +98,7 @@ MSC AniMet leverages data from the 24/7 mission critical [MSC GeoMet web service
 
 ## Source code
 
-The MSC AniMet source code is publicly available on GitHub: https://github.com/ECCC-MSC/msc-animet
+The MSC AniMet source code is publicly available on GitHub: [https://github.com/ECCC-MSC/msc-animet](https://github.com/ECCC-MSC/msc-animet)
 
 ## Support
 
