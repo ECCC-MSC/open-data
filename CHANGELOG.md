@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.37
+
+* date: 2023-03-15
+* announcements:
+    * Not announced
+* new content:
+    * Added new MSC AniMet documentation
+* improvements:
+    * TBD
+* bug fixes:
+    * Fixed topmost menu not updating due to .ipynb links
+
 ## 2.4.36
 
 * date: 2023-03-07
