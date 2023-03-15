@@ -21,7 +21,7 @@ In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../ms
 
 # Access
 
-**Access to MSC AniMet: https://eccc-msc.github.io/msc-animet/**
+**Access to MSC AniMet: [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
 # Usage
 
@@ -47,6 +47,7 @@ Tip: click on the panel name, `Add GeoMet-Weather layers`, to expand or collapse
 Configure layers in the `Layers configuration` panel and customize the map.
 
 Layers:
+
 * Reorder layers with the up and down arrows
   * Arrows are shown only if there multiple layers have been added
 * Change layer colors
@@ -55,12 +56,14 @@ Layers:
 * Toggle layer visibility
 
 Time:
+
 * The map controls at the bottom left of the map enable users to visualize the available timesteps
 * The current timestep and dataset model run (when applicable) are displayed at the bottom right of the map
 * The desired temporal range and interval can be adjusted at the top of the 'Layers configuration' panel
 * The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name
 
 Map:
+
 * Zoom and pan the map to your area of interest
 * Resize the map with the handle at the bottom right of the map
 * Rotate the map by pressing alt-shift and dragging on the map
@@ -80,6 +83,7 @@ Configure the animation in the `Animation configuration` panel:
 After clicking on the `Create animation` button and the generation process completes, the `Download animation` button will appear.
 
 Retrieve and share the permalink with the `Share` button at the top-right:
+
 * You can copy and save the permalink for later use
 * Directly share the permalink by email or on social media services
   * To share the animation on social media, the file must first be saved locally
@@ -94,7 +98,7 @@ MSC AniMet leverages data from the 24/7 mission critical [MSC GeoMet web service
 
 ## Source code
 
-The MSC AniMet source code is publicly available on GitHub: https://github.com/ECCC-MSC/msc-animet
+The MSC AniMet source code is publicly available on GitHub: [https://github.com/ECCC-MSC/msc-animet](https://github.com/ECCC-MSC/msc-animet)
 
 ## Support
 
