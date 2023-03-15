@@ -36,6 +36,12 @@ Aperçu, exemples et tutoriels pour accéder aux données ouvertes du Service m�
 
 * **[Aperçu de l'utilisation](usage/readme_fr.md)**
 
+**Outils**:
+
+* **[AniMet du SMC](msc-animet/readme_fr.md)**:
+    * Afficher des données sur une carte interactive
+    * Créer et partager des animations personalisées
+
 **Tutoriels** :
 
 * **Accéder et utiliser les données dans le logiciel de bureau QGIS** :

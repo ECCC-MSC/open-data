@@ -36,6 +36,12 @@ Overview, examples and tutorials to access and use Meteorological Service of Can
 
 * **[Usage overview](usage/readme_en.md)**
 
+**Tools**:
+
+* **[MSC AniMet](msc-animet/readme_en.md)**:
+    * Display data on an interactive map
+    * Create and share custom animations
+
 **Tutorials**:
 
 * **Access and use data in the QGIS desktop software**:
