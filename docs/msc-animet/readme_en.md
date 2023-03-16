@@ -1,10 +1,3 @@
-# TODO
-
-* French translation (Félix)
-* create and add usage examples with the latest version of AniMet (Alex)
-
-# BEGINNING OF NEW DOC
-
 [En français](readme_fr.md)
 
 ![ECCC logo](../img_eccc-logo.png)
@@ -54,6 +47,7 @@ Layers:
   * View and select the layer color ramp from available styles
 * Adjust layer opacity
 * Toggle layer visibility
+  * A layer visibility eye icon will turn red if there is no overlap with the selected temporal range
 
 Time:
 
@@ -61,11 +55,12 @@ Time:
 * The current timestep and dataset model run (when applicable) are displayed at the bottom right of the map
 * The desired temporal range and interval can be adjusted at the top of the 'Layers configuration' panel
 * The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name
+* Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval
 
 Map:
 
 * Zoom and pan the map to your area of interest
-* Resize the map with the handle at the bottom right corner of the map
+* Resize the map and the animation with the handle at the bottom right corner of the map
 * Rotate the map by pressing the _alt-shift_ keys and dragging on the map
 
 ## 3 - Configure the animation
