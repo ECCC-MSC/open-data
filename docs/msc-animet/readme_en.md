@@ -13,7 +13,7 @@
 
 # MSC AniMet
 
-MSC AniMet is a simple tool enabling users to interact with MSC Open Data weather data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink. 
+MSC AniMet is a simple tool enabling users to interact with MSC Open Data weather data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink.
 
 MSC AniMet can be used to showcase a diversity of weather events such as storms, heat waves, hurricane trajectories, air quality events, extreme wind gusts, and much more.
 
@@ -25,7 +25,7 @@ In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../ms
 
 # Usage
 
-The main usage workflow: 
+The main usage workflow:
 
 1. Add weather layers to the map
 2. Customize the content of the map
@@ -49,7 +49,7 @@ Configure layers in the `Layers configuration` panel and customize the map.
 Layers:
 
 * Reorder layers with the up and down arrows
-  * Arrows are shown only if there multiple layers have been added
+  * Arrows are shown only if multiple layers have been added
 * Change layer colors
   * View and select the layer color ramp from available styles
 * Adjust layer opacity
@@ -65,8 +65,8 @@ Time:
 Map:
 
 * Zoom and pan the map to your area of interest
-* Resize the map with the handle at the bottom right of the map
-* Rotate the map by pressing alt-shift and dragging on the map
+* Resize the map with the handle at the bottom right corner of the map
+* Rotate the map by pressing the _alt-shift_ keys and dragging on the map
 
 ## 3 - Configure the animation
 
@@ -75,12 +75,12 @@ Configure the animation in the `Animation configuration` panel:
 * Provide a custom animation title, if desired
 * Select which legend to display
 * Set animation speed in frames per second
-* Toogle time display between local time and UTC
+* Toggle time display between local time and UTC
 * Toggle basemap between the light and dark basemaps
 
 ## 4 - Create and share the map and animation
 
-After clicking on the `Create animation` button and the generation process completes, the `Download animation` button will appear.
+After clicking on the `Create animation` button and the generation process is completed, the `Download animation` button will appear.
 
 Retrieve and share the permalink with the `Share` button at the top-right:
 
