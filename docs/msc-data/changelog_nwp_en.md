@@ -8,6 +8,10 @@
 
 ## 2023
 
+### March 23, 2023
+
+* [Upgrade to version 2.1.0 of the INCS to incorporate S-band radar data over Canada](nwp_nowcasting/changelog_nowcasting_en.md#tuesday-march-23-2023)
+
 ### March 8, 2023
 
 * [Correction to the quality control of snow depth observations from Canadian automatic stations in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-march-8-2023)

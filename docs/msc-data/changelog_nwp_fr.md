@@ -8,6 +8,10 @@
 
 ## 2023
 
+### 23 mars 2023
+
+* [Mise à jour de SIPI à la version 2.1.0 pour introduire le traitement des données radars de bande-S du Canada](nwp_nowcasting/changelog_nowcasting_fr.md#le-jeudi-23-mars-2023)
+
 ### 8 mars 2023
 
 * [Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-8-mars-2023)
