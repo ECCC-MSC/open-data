@@ -18,7 +18,10 @@ In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../ms
 
 A simple example of an MSC AniMet animation with a single radar layer:
 
-![MSC AniMet animation with a radar layer](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Rain_South-Ontario_20230323T0830Z.mp4)
+<video controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Rain_South-Ontario_20230323T0830Z.mp4" type="video/mp4">
+</video>
+
 
 # Usage
 
