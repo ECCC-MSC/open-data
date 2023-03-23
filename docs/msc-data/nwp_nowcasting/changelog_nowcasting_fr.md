@@ -6,6 +6,23 @@
 
 # Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)
 
+## Le jeudi 23 mars 2023
+
+### Mise à jour de SIPI à la version 2.1.0 pour introduire le traitement des données radars de bande-S du Canada
+
+Le jeudi 23 mars 2023, à compter de la passe de 1200UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.1.0 de son Système intégré de prévisions immédiates (SIPI).
+
+Les modifications incluses dans cette mise à jour se résument comme suit :
+
+* Introduction et traitement des données des nouveaux radars de bande-S
+* Ajustement du code pour assurer une plus grande fiabilité d’accès aux données radars
+* Modification de l’approche pour la production du fichier interne  comporad  qui dépend moins du module qperad de CaPA et qui peut plutôt maintenant être produit à partir de nouvelles données radars sur grille
+* Depuis le 4 janvier 2023 le système utilise les informations des nuages calculées à partir des données satellitaires GOES 18 (GOES ouest). Les données des nuages calculées à partir des données du satellite GOES 16 (GOES est) demeurent toujours présentes
+
+La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2023/03/23/NOCN03_CWAO_231325___11843)
+
+Une note technique à ce sujet est disponible via [ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-210_f.pdf)
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour de SIPI à la version 1.10.0 suite à la nouvelle infrastructure de calcul haute performance. 
@@ -42,7 +59,7 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 Le jeudi 09 juillet 2015 à partir de 1400 UTC, le Centre Météorologique Canadien (CMC) a procédé à une mise à jour son système intégré de prévisions immédiates (SIPI). Ce système fournit à la fois des données d'observations ainsi que des prévisions à très court terme au système de production des prévisions Scribe. Cette mise à jour, amèliore, entre autres, principalement la qualité de la composante qui traite les données radar de ce système.
 
-Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2015/07/08/NOCN03_CWAO_081635___00168).
+Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weather.gc.ca/doc/genots/2015/07/08/NOCN03_CWAO_081635___00168).
 
 Une note technique à ce sujet sera disponible sous peu.
 
@@ -70,7 +87,7 @@ Les modifications suivantes ont été faites au système :
 
 Avec toutes ces modification, globalement, les résultats de vérification ont montré clairement une amélioration pour les 6 premières heures de projection.
 
-Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/11/15/NOCN03_CWAO_151902___00907).
+Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weather.gc.ca/doc/genots/2013/11/15/NOCN03_CWAO_151902___00907).
 
 Une note technique à ce sujet est disponible via le lien suivant : [Note Technique du SIPI 1.4](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_sipi_20140502_f.pdf)
 
@@ -92,6 +109,6 @@ Des modifications apportées aux règles de prévision de l'opacité nuageuse on
 
 Enfin, des ajustements aux règles de prévision de la visibilité ont permis par exemple d'améliorer la visibilité prévue sous la neige.
 
-Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/07/31/NOCN03_CWAO_312128___01022).
+Une copie de la note officielle annoncant ce changement [est disponible en cliquant ici](http://dd.weather.gc.ca/doc/genots/2012/07/31/NOCN03_CWAO_312128___01022).
 
 
