@@ -18,7 +18,9 @@ Dans sa version actuelle, AniMet du SMC donne accès aux couches de [GeoMet-Mét
 
 Un exemple simple de l'animation d'une couche radar créée avec AniMet du SMC :
 
-![Animation d'une couche radar créée avec AniMet du SMC](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Pluie_Sud-Ontario_20230323T0830Z.mp4)
+<video controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Pluie_Sud-Ontario_20230323T0830Z.mp4" type="video/mp4">
+</video>
 
 # Utilisation
 
