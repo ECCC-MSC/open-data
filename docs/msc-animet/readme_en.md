@@ -16,6 +16,10 @@ In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../ms
 
 **Access to MSC AniMet: [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
+A simple example of an MSC AniMet animation with a single radar layer:
+
+![MSC AniMet animation with a radar layer](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Rain_South-Ontario_20230323T0830Z.mp4)
+
 # Usage
 
 The main usage workflow:
