@@ -24,6 +24,10 @@ Le Service météorologique du Canada rend disponible de l'information sur les c
 
 ## Comment visualiser les données
 
+### AniMet du SMC
+
+[AniMet du SMC](../msc-animet/readme_fr.md) est un outil simple permettant aux utilisateurs d'interagir avec les données météorologiques ouvertes du SMC et de créer des animations météorologiques personnalisées pour n'importe quelle région du monde. Les animations résultantes peuvent être téléchargées et partagées avec un permalien.
+
 ### Logiciel de bureau 
 
 Les données ouvertes du SMC dans des logiciels de bureau soit (A) en se connectant au service Web Map Service (WMS) de [GeoMet du SMC](../msc-geomet/readme_fr.md) ou (B) en téléchargeant les données brutes du [Datamart du SMC](../msc-datamart/readme_fr.md) ou via le service Web Coverage Service (WCS) ou OGC API - Features (WFS 3) de GeoMet du SMC et en chargeant les données brutes dans l'application.
