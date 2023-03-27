@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.39
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * TBD
+* improvements:
+    * Update of Usage page with mention of AniMet
+* bug fixes:
+    * TBD
+
 ## 2.4.38
 
 * date: 2023-03-23
@@ -17,7 +29,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add input in the main NWP changelog for INCS 2.1.0 update 
     * Update INCS changelog for new version
 * improvements:
-    * None
+    * Improvements to AniMet page before public announcement
 * bug fixes:
     * Fix GENOT links in the INCS changelog
 	

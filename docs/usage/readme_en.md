@@ -26,6 +26,10 @@ The Meteorological Service of Canada provides up-to-date information on past, pr
 
 ## How to visualize the data
 
+### MSC AniMet
+
+[MSC AniMet](../msc-animet/readme_en.md) is a simple tool enabling users to interact with MSC Open Data weather data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink.
+
 ### Desktop software 
 
 MSC open data can be visualized in desktop software by either (A) connecting to [MSC GeoMet](../msc-geomet/readme_en.md) Web Map Service (WMS) web services or (B) by downloading the raw data from [MSC Datamart](../msc-datamart/readme_en.md) or MSC GeoMet Web Coverage Service (WCS) and OGC API- Features (WFS 3) web services and loading the raw data in the application.
