@@ -40,7 +40,7 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 
 The files have the following nomenclature: 
 
-`{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT{hhh}H.nc`
+`{YYYYMMDD}T{HH}Z_MSC_NSRPS-CaLDAS_{VAR}_{LVLTYPE}-{LVL}_{grid}{resolution}_PT0H.nc`
 
 where:
 
