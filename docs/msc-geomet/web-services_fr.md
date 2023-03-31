@@ -534,7 +534,9 @@ Interroger toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
 
 #### Exporter au format CSV
 
-Toute requête peut être exportée au format CSV en ajoutant `f=csv` à la demande.
+Les requêtes pointant sur les pages des collections peuvent être exportées au format CSV en ajoutant `&f=csv` à la requête, ou en cliquant sur l'icône `CSV` en haut à droite de la page de la collection.
+
+Exemple de requête : [https://api.meteo.gc.ca/collections/ltce-temperature/items?f=csv](https://api.meteo.gc.ca/collections/ltce-temperature/items?f=csv)
 
 #### Tri
 
