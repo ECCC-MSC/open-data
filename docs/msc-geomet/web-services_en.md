@@ -530,7 +530,9 @@ Query all daily mean data from a single station between 2001 and 2010:
 
 #### Exporting to CSV format
 
-Any query can be exported to CSV by adding `&f=csv` to the request.
+Queries against collections pages can be exported to the CSV format by adding `&f=csv` to the request, or by clicking on the `CSV` top-right icon on the collection page.
+
+Example request: [https://api.weather.gc.ca/collections/ltce-temperature/items?f=csv](https://api.weather.gc.ca/collections/ltce-temperature/items?f=csv)
 
 #### Sorting
 

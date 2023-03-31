@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Update of Usage page with mention of AniMet
 * bug fixes:
-    * TBD
+    * Fix the "Exporting to CSV format" section in the MSC-GeoMet web services page
 
 ## 2.4.38
 
