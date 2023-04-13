@@ -17,6 +17,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Adjust WEonG variable tables (filename update)
 * improvements:
     * Update of Usage page with mention of AniMet
+    * Added radar extrapolation data to weather radar map
+    * Added improved playback controls to weather radar map
+    * Various improvements and updates to web map tutorials
 * bug fixes:
     * Fix the "Exporting to CSV format" section in the MSC-GeoMet web services page
 
