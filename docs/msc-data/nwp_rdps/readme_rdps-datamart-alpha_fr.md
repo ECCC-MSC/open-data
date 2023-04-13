@@ -60,7 +60,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFOG).
+* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFG).
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
@@ -69,7 +69,7 @@ où :
 
 Exemple de nom de fichier :
 
-* 20220821T12Z_MSC_RDPS-WEonG_BSNOW_Sfc_RLatLon0.09_PT024H.grib2
+* 20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2
 
 ## Liste des variables
 
@@ -77,40 +77,40 @@ Liste des éléments du temps sur grille à la surface:
 
 | Abréviation du paramètre GRIB2 | Description | Unité   |
 |------------------------|-------------|----------|
-| BSNOW | Présence de poudrerie | binaire (0/1) |
-| CFRZR | Probabilité de pluie verglaçante	| %|
-| CICEP | Probabilité de grésil | %|
-| CONDARAIN | Quantité conditionnelle de précipitation liquide | m |
-| CONDASNOW | Quantité conditionnelle de neige solide | m |
-| CONDICEP | Quantité conditionnelle de granulés de glace solide  | m |
-| CP |	Caractère de la précipitation | 0=aucune; 1=averse; 2=intermittente; 3=continue |
-| CRAIN | Probabilité de pluie | % |
-| CSNOW | Probabilité de neige | % |
-| DIST | Orographie du modèle |m |
+| BLSN | Présence de poudrerie | binaire (0/1) |
+| PROBFZRA | Probabilité de pluie verglaçante	| %|
+| PROBPL | Probabilité de grésil | %|
+| CANDALPCN | Quantité conditionnelle de précipitation liquide | m |
+| CONDASSN | Quantité conditionnelle de neige solide | m |
+| CONDAPL| Quantité conditionnelle de granulés de glace solide  | m |
+| CHARPCPN |	Caractère de la précipitation | 0=aucune; 1=averse; 2=intermittente; 3=continue |
+| PROBRA | Probabilité de pluie | % |
+| PROBSN | Probabilité de neige | % |
+| ORGPHY | Orographie du modèle |m |
 | DPT |	Température du point de rosée |	C |
-| DPTYPE | Type dominant de précipitation | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige |
-| FZPRATE | Quantité conditionnelle de précipitation verglaçante | m |
+| DMNTPCPNTYPE | Type dominant de précipitation | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige |
+| CONDAFZPCPN | Quantité conditionnelle de précipitation verglaçante | m |
 | GUST | Rafale de vents | m/s |
-| HSNOWL | Hauteur du niveau de la neige | m |
-| LAND | Masque terre/eau | fraction |
-| PARAIN | Probabilité de précipitation liquide | % |
-| PBSNOW | Probabilité de poudrerie | % |
-| PDZ |	Probabilité de bruine |	% |
-| PFRDZ | Probabilité de bruine verglaçante | % |
-| PFRZR | Probabilité de précipitation verglaçante | % |
-| POP |	Probabilité de précipitation | % |
-| PRATE | Quantité conditionnelle de précipitation | m |
-| PSNOWS | Probabilité de bourrasque de neige |	% |
-| PTYPE | Type de précipitation instantanée | 1=pluie; 2=pluie/neige; 3=pluie verglaçante; 4=grésil; 5=neige; 6=aucune; 7=bruine; 8=bruine verglaçante; 9=précipitation verglaçante/grésil  |
-| SCNDPTYPE | Type de précipitation secondaire | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige|
-| SK | Etat du ciel jour/nuit (couverture et opacité nuageuse combinées) | 0-1=ensoleillé/dégagé; 2-3=généralement ensoleillé/quelques nuages; 4-5-6=alternance de soleil et de nuages/partiellement nuageux; 7-8=généralement nuageux/généralement nuageux; 9=nuageux/nuageux; 10=nuageux/couvert |
+| HGTSNLVL | Hauteur du niveau de la neige | m |
+| WTRLANMASK | Masque terre/eau | fraction |
+| PROBLPCPN | Probabilité de précipitation liquide | % |
+| PROBBLSN | Probabilité de poudrerie | % |
+| PROBDZ |	Probabilité de bruine |	% |
+| PROBFZDZ | Probabilité de bruine verglaçante | % |
+| PROBFZPCPN | Probabilité de précipitation verglaçante | % |
+| PROBPCPN |	Probabilité de précipitation | % |
+| CONDAPCPN | Quantité conditionnelle de précipitation | m |
+| PROBSNSQ | Probabilité de bourrasque de neige |	% |
+| PCPNTYPE | Type de précipitation instantanée | 1=pluie; 2=pluie/neige; 3=pluie verglaçante; 4=grésil; 5=neige; 6=aucune; 7=bruine; 8=bruine verglaçante; 9=précipitation verglaçante/grésil  |
+| SCNDPCPNTYPE | Type de précipitation secondaire | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige|
+| SKSTATE | Etat du ciel jour/nuit (couverture et opacité nuageuse combinées) | 0-1=ensoleillé/dégagé; 2-3=généralement ensoleillé/quelques nuages; 4-5-6=alternance de soleil et de nuages/partiellement nuageux; 7-8=généralement nuageux/généralement nuageux; 9=nuageux/nuageux; 10=nuageux/couvert |
 | TMP |	Température | C |
-| TPII | Indice d'intensité des précipitations totales | 0=aucune intensité; 1=faible; 2=modéré; 3=fort	|
-| TSTM | Probabilité d'occurence d'orage | % |
-| VISIFOG | Visibilité dans le brouillard glacé | m |
-| VISLFOG | Visibilité à travers le brouillard liquide | m |
+| TPCPNINTSTI | Indice d'intensité des précipitations totales | 0=aucune intensité; 1=faible; 2=modéré; 3=fort	|
+| PROBTSOCRNC | Probabilité d'occurence d'orage | % |
+| VISIFG | Visibilité dans le brouillard glacé | m |
+| VISLFG | Visibilité à travers le brouillard liquide | m |
 | WDIR | Direction du vent | Degré vrai |
-| WIND | Vitesse du vent | m/s |
+| WSPD | Vitesse du vent | m/s |
 
 ## Support
 
