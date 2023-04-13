@@ -6,14 +6,14 @@
 
 # Weather radar data available on MSC GeoMet
 
-MSC GeoMet provides access to several popular North American weather radar composite layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to several popular North American weather radar composite and extrapolation layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
 
 ## Access to the geospatial web services
 
 The weather radar layers are [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
-Example of a web map configured to display the weather radar composite using WMS layers served by MSC GeoMet:
+Example of a web map configured to display the weather radar composite and extrapolation using WMS layers served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
@@ -26,7 +26,7 @@ Example of a web map configured to display the weather radar composite using WMS
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
   <span id="info" style="padding-left: 0.5rem;"></span>
 </div>
-MSC GeoMet's North American weather radar composite layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
+MSC GeoMet's North American weather radar composite and extrapolation layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
 
 
 ## Usage

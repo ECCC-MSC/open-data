@@ -20,7 +20,7 @@ Weather radar data is available from the MSC GeoMet API and web services as well
     * North American radar extrapolation [experimental]
 * [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
 
-An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite Web Map Service (WMS) layers served by MSC GeoMet:
+An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
