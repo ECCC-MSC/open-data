@@ -13,12 +13,17 @@ GeoMet du SMC donne accès à plusieurs couches du Système régional de prévis
 
 Les couches du SRPDQA sont [disponibles sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant la couche [RAQDPS.EATM_PM2.5](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=RAQDPS.EATM_PM2.5) du SRPDQA provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [RAQDPS.SFC_NO2](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=RAQDPS.SFC_NO2) du SRPDQA provenant de GeoMet du SMC :
+
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
-  <button id="play" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
-  <button id="pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-pause" style="padding: 0rem 1rem"></i></button>
+  <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="play-pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="step-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-forward" style="padding: 0rem 1rem"></i></button>
+  <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
   <span id="info" style="padding-left: 0.5rem;"></span>
 </div>
 
@@ -36,7 +41,7 @@ Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dan
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RAQDPS.EATM_PM2.5](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RAQDPS.EATM_PM2.5)
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RAQDPS.SFC_NO2](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RAQDPS.SFC_NO2)
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps).
 
 Styles WMS :
@@ -47,9 +52,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/web-services_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.EATM_PM2.5&format=image/png&STYLE=RAQDPS-FW-EATM-PM_MGM2](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.EATM_PM2.5&format=image/png&STYLE=RAQDPS-FW-EATM-PM_MGM2).
+* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2_PPBV](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2_PPBV).
 
-![La légende RAQDPS.EATM_PM2.5 [mg/m^2]](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.EATM_PM2.5&format=image/png&STYLE=RAQDPS-FW-EATM-PM_MGM2)
+![La légende RAQDPS.SFC_NO2 [ppbv]](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2_PPBV)
 
 
 ## Support
@@ -61,9 +66,9 @@ Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est 
 
 Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) afin d'être informés des améliorations et changements aux services GeoMet du SMC.
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" integrity="sha256-rQq4Fxpq3LlPQ8yP11i6Z2lAo82b6ACDgd35CKyNEBw=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js" integrity="sha256-77IKwU93jwIX7zmgEBfYGHcmeO0Fx2MoWB/ooh9QkBA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
 <script>
     function isIE() {
