@@ -60,7 +60,7 @@ where:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __RDPS-WEonG__ : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")
-* __VAR__ : Variables contained in the files (ex: VISIFOG).
+* __VAR__ : Variables contained in the files (ex: VISIFG).
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions
@@ -69,7 +69,7 @@ where:
 
 Example file name:
 
-* 20220821T12Z_MSC_RDPS-WEonG_BSNOW_Sfc_RLatLon0.09_PT024H.grib2
+* 20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2
 
 ## List of variables
 

@@ -60,7 +60,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFOG).
+* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFG).
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
@@ -69,7 +69,7 @@ où :
 
 Exemple de nom de fichier :
 
-* 20220821T12Z_MSC_RDPS-WEonG_BSNOW_Sfc_RLatLon0.09_PT024H.grib2
+* 20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2
 
 ## Liste des variables
 
@@ -107,7 +107,7 @@ Liste des éléments du temps sur grille à la surface:
 | TMP |	Température | C |
 | TPCPNINTSTI | Indice d'intensité des précipitations totales | 0=aucune intensité; 1=faible; 2=modéré; 3=fort	|
 | PROBTSOCRNC | Probabilité d'occurence d'orage | % |
-| VISIFO | Visibilité dans le brouillard glacé | m |
+| VISIFG | Visibilité dans le brouillard glacé | m |
 | VISLFG | Visibilité à travers le brouillard liquide | m |
 | WDIR | Direction du vent | Degré vrai |
 | WSPD | Vitesse du vent | m/s |
