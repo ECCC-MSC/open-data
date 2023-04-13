@@ -152,40 +152,40 @@ List of weather elements on the grid (*HRDPS-WEonG*):
 
 | GRIB2 parameter abreviation | Description | Unity  |
 |------------------------|-------------|----------|
-| BSNOW | Presence of blowing snow | binary (0/1) |
-| CFRZR | Probability of freezing rain	| %|
-| CICEP | Probability of ice pellets | %|
-| CONDARAIN | Conditional amount of liquid precipitation | m |
-| CONDASNOW | Conditional amount of solid snow | m |
-| CONDICEP | Conditional amount of solide ice pellets | m |
-| CP |	Character of precipitation | 0=none; 1=showers; 2=intermittent; 3=continuous |
-| CRAIN | Probability of rain | % |
-| CSNOW | Probability of snow | % |
-| DIST | Model orography |m |
+| BSNOW/BLSN | Presence of blowing snow | binary (0/1) |
+| CFRZR/PROBFZRA | Probability of freezing rain	| %|
+| CICEP/PROBPL | Probability of ice pellets | %|
+| CONDARAIN/CONDALPCPN | Conditional amount of liquid precipitation | m |
+| CONDASNOW/CONDASSN | Conditional amount of solid snow | m |
+| CONDICEP/CONDAPL | Conditional amount of solide ice pellets | m |
+| CP/CHARPCPN |	Character of precipitation | 0=none; 1=showers; 2=intermittent; 3=continuous |
+| CRAIN/PROBRA | Probability of rain | % |
+| CSNOW/PROBSN | Probability of snow | % |
+| DIST/ORGPHY | Model orography |m |
 | DPT |	Dew point temperature |	C |
-| DPTYPE | Dominant precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| FZPRATE | Conditional freezing precipitation amount | m |
+| DPTYPE/DMNTPCPNTYPE | Dominant precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
+| FZPRATE/CONDAFZPCPN | Conditional freezing precipitation amount | m |
 | GUST | Gust | m/s |
-| HSNOWL | Height of snow level | m |
-| LAND | Water/land mask | fraction |
-| PARAIN | Probability of liquid precipitation | % |
-| PBSNOW | Probability of blowing snow | % |
-| PDZ |	Probability of drizzle |	% |
-| PFRDZ | Probability of freezing drizzle | % |
-| PFRZR | Probability of freezing precipitation | % |
-| POP |	Probability of precipitation | % |
-| PRATE | Conditional precipitation rate | m |
-| PSNOWS | Probability of snow squalls  |	% |
-| PTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzlee; 9=freezing rain/ice pellets  |
-| SCNDPTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| SK | day/night sky state (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
+| HSNOWL/HGTSNLVL | Height of snow level | m |
+| LAND/WTRLANMASK | Water/land mask | fraction |
+| PARAIN/PROBLPCPN | Probability of liquid precipitation | % |
+| PBSNOW/PROBBLSN | Probability of blowing snow | % |
+| PDZ/PROBDZ |	Probability of drizzle |	% |
+| PFRDZ/PROBFZDZ | Probability of freezing drizzle | % |
+| PFRZR/PROBFZPCPN | Probability of freezing precipitation | % |
+| POP/PROBPCPN |	Probability of precipitation | % |
+| PRATE/CONDAPCPN | Conditional precipitation rate | m |
+| PSNOWS/PROBSNSQ | Probability of snow squalls  |	% |
+| PTYPE/PCPNTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzlee; 9=freezing rain/ice pellets  |
+| SCNDPTYPE/SCNDPCPNTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
+| SK/SKSTATE | day/night sky state (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
 | TMP |	Temperature | C |
-| TPII | Total precipitation intensity index | 0=no intensity; 1=light; 2=moderate; 3=heavy	|
-| TSTM | Probability of thunderstorm occurence | % |
-| VISIFOG | Visibility through ice fog | m |
-| VISLFOG | Visibility through liquid fog | m |
+| TPII/TPCPNINTSTI | Total precipitation intensity index | 0=no intensity; 1=light; 2=moderate; 3=heavy	|
+| TSTM/PROBTSOCRNC | Probability of thunderstorm occurence | % |
+| VISIFOG/VISIFG | Visibility through ice fog | m |
+| VISLFOG/VISLFG | Visibility through liquid fog | m |
 | WDIR | Wind direction | True degree |
-| WIND | Wind speed | m/s |
+| WIND/WSPD | Wind speed | m/s |
 
 ## Support
 

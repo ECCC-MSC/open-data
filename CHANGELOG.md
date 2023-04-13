@@ -10,11 +10,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.39
 
-* date: TBD
+* date: 2023-04-13
 * announcements:
     * Not announced
 * new content:
-    * TBD
+    * Adjust WEonG variable tables (filename update)
 * improvements:
     * Update of Usage page with mention of AniMet
 * bug fixes:
