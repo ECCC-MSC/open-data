@@ -499,7 +499,7 @@ function updateLayers() {
 
 function updateInfo() {
   let el = document.getElementById('info');
-  el.innerHTML = `Time / Heure (UTC): ${currentTime.toISOString()}`
+  el.innerHTML = `Time / Heure: ${currentTime.toISOString().substr(0, 16)+"Z"}`
 }
 
 // Activer/désactiver les boutons dépendemment de l'état de la map
