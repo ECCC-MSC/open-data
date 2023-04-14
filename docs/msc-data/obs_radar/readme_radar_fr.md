@@ -20,7 +20,7 @@ Les données radar sont disponibles via l'API et les services web GeoMet du SMC 
     * Extrapolation radar nord-américaine [expérimental]
 * [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md) 
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Ci-après est un exemple de carte interactive configurée pour présenter des couches WMS de la composite radar météo servies par GeoMet du SMC.
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Ci-après est un exemple de carte interactive configurée pour présenter des couches WMS de la composite et de l'extrapolation radar météo servies par GeoMet du SMC.
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">

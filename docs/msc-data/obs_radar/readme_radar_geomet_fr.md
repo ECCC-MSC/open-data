@@ -6,14 +6,14 @@
 
 # Données radar météo disponibles sur GeoMet du SMC
 
-GeoMet du SMC donne accès à plusieurs couches de la populaire composite radar météo nord-américaine. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
+GeoMet du SMC donne accès à plusieurs couches de la populaire composite et de l'extrapolation radar météo nord-américaine. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
 
 
 ## Accès aux services web géospatiaux
 
 Les couches radar météo sont [disponibles sur GeoMet-Météo par le biais du standard Web Map Service (WMS)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant des couches WMS de la composite radar météo provenant de GeoMet du SMC :
+Exemple de carte interactive présentant des couches WMS de la composite et de l'extrapolation radar météo provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px;"></div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
@@ -26,7 +26,7 @@ Exemple de carte interactive présentant des couches WMS de la composite radar m
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
   <span id="info" style="padding-left: 0.5rem;"></span>
 </div>
-Les couches de la composite radar météo nord-américaine de GeoMet du SMC peuvent être vues en action dans MétéoCAN, [l'application mobile officielle d'ECCC](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
+Les couches de la composite et de l'extrapolation radar météo nord-américaine de GeoMet du SMC peuvent être vues en action dans MétéoCAN, [l'application mobile officielle d'ECCC](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
 
 
 ## Utilisation
