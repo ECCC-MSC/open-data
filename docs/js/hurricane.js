@@ -166,14 +166,6 @@ function setTime() {
   updateInfo();
 }
 
-getRadarStartEndTime().then(data => {
-    startTime = data[0]
-    endTime = data[1]
-    defaultTime = data[2]
-    setTime();
-})
-
-
 function togglePlayPause() {
   if (animationId !== null) {
     playPauseButton.firstElementChild.className = "fa fa-play"
@@ -189,10 +181,14 @@ function togglePlayPause() {
 
 function fastBackward() {
   if (animationId == null && currentTime > startTime) {
-    currentTime = new Date(startTime);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    getRadarStartEndTime().then(data => {
+      currentTime = startTime = data[0];
+      endTime = data[1];
+      defaultTime = data[2];
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    })
   }
 }
 
@@ -200,9 +196,21 @@ function stepBackward() {
   if (animationId == null && currentTime > startTime) {
     currentTime = new Date(currentTime);
     currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 180);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    if (currentTime.getTime() === startTime.getTime()) {
+      getRadarStartEndTime().then(data => {
+        currentTime = startTime = data[0];
+        endTime = data[1];
+        defaultTime = data[2];
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
   }
 }
 

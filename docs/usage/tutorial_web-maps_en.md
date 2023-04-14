@@ -559,10 +559,14 @@ function togglePlayPause() {
 
 function fastBackward() {
   if (animationId == null && currentTime > startTime) {
-    currentTime = new Date(startTime);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    getRadarStartEndTime().then(data => {
+      currentTime = startTime = data[0];
+      endTime = data[1];
+      defaultTime = data[2];
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    })
   }
 }
 
@@ -570,9 +574,21 @@ function stepBackward() {
   if (animationId == null && currentTime > startTime) {
     currentTime = new Date(currentTime);
     currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 6);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    if (currentTime.getTime() === startTime.getTime()) {
+      getRadarStartEndTime().then(data => {
+        currentTime = startTime = data[0];
+        endTime = data[1];
+        defaultTime = data[2];
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
   }
 }
 
@@ -628,7 +644,7 @@ In the JavaScript code, an async function is created to retrieve the start, end,
 
 Much like the other OpenLayers above, an array of layers is defined and passed to the `ol.Map` constructor.
 
-The time extent (i.e start and end time) of the layers is regularly updated, which means some images will not be able to load since data for an expired time step is no longer available. This situation is identified when a layer fires an `imageloaderror` event, and the async function is called once again to retrieve the updated start, end, and default time. 
+The time extent (i.e start and end time) of the layers is regularly updated, which means some images will not be able to load since data for an expired timestep is no longer available. This situation is identified when a layer fires an `imageloaderror` event, and the async function is called once again to retrieve the updated start, end, and default time. The async function is also called whenever the user goes to the start of the time extent (via the buttons `fastBackward()` and `stepBackward()`), in order to refresh the time extent. 
 
 The `updateButtons()` function modifies the HTML tags of the buttons in order to deactivate/reactivate them depending on the state of the map. As an example, the fast-backward, step-backward, step-forward, and fast-forward buttons are deactivated whenever the map animation is active.
 
