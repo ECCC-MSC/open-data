@@ -233,10 +233,28 @@ function togglePlayPause() {
 
 function fastBackward() {
   if (animationId == null && currentTime > startTime) {
-    currentTime = new Date(startTime);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    getObservedStartEndTime().then(data => {
+      observationStartTime = data[0];
+      observationEndTime = data[1];
+      defaultTime = data[2];
+      getExtrapolatedStartEndTime().then(data => {
+        extrapolationStartTime = data[0];
+        extrapolationEndTime = data[1];
+        currentTime = startTime = observationStartTime;
+        // We allow for a 12 minutes overlap between observation and extrapolation
+        let testDate = new Date(extrapolationStartTime);
+        testDate.setUTCMinutes(extrapolationStartTime.getUTCMinutes() + 12);
+        // If gap higher than 12 minutes, do not show extrapolation
+        if (testDate < observationEndTime) {
+          endTime = observationEndTime;
+        } else {
+          endTime = extrapolationEndTime;
+        }
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    })
   }
 }
 
@@ -244,9 +262,35 @@ function stepBackward() {
   if (animationId == null && currentTime > startTime) {
     currentTime = new Date(currentTime);
     currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 6);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    if (currentTime.getTime() === startTime.getTime()) {
+      getObservedStartEndTime().then(data => {
+        observationStartTime = data[0];
+        observationEndTime = data[1];
+        defaultTime = data[2];
+        getExtrapolatedStartEndTime().then(data => {
+          extrapolationStartTime = data[0];
+          extrapolationEndTime = data[1];
+          currentTime = startTime = observationStartTime;
+          // We allow for a 12 minutes overlap between observation and extrapolation
+          let testDate = new Date(extrapolationStartTime);
+          testDate.setUTCMinutes(extrapolationStartTime.getUTCMinutes() + 12);
+          // If gap higher than 12 minutes, do not show extrapolation
+          if (testDate < observationEndTime) {
+            endTime = observationEndTime;
+          } else {
+            endTime = extrapolationEndTime;
+          }
+          updateLayers();
+          updateInfo();
+          updateButtons();
+        })
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
   }
 }
 

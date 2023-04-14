@@ -559,10 +559,14 @@ function togglePlayPause() {
 
 function fastBackward() {
   if (animationId == null && currentTime > startTime) {
-    currentTime = new Date(startTime);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    getRadarStartEndTime().then(data => {
+      currentTime = startTime = data[0];
+      endTime = data[1];
+      defaultTime = data[2];
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    })
   }
 }
 
@@ -570,9 +574,21 @@ function stepBackward() {
   if (animationId == null && currentTime > startTime) {
     currentTime = new Date(currentTime);
     currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 6);
-    updateLayers();
-    updateInfo();
-    updateButtons();
+    if (currentTime.getTime() === startTime.getTime()) {
+      getRadarStartEndTime().then(data => {
+        currentTime = startTime = data[0];
+        endTime = data[1];
+        defaultTime = data[2];
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
   }
 }
 
@@ -628,7 +644,7 @@ Dans le code JavaScript, une fonction asynchrone est créée pour récupérer l'
 
 Tout comme les autres exemples d'OpenLayers ci-dessus, un ensemble de couches est défini et transmis au constructeur de l'`ol.Map`.
 
-La plage de temps (i.e. startTime et endTime) couverte par les couches se met régulièrement à jour, ce qui fait en sorte qu'il peut arriver qu'une image ne puisse pas être chargée car les données d'un pas de temps expiré ne sont plus disponibles. La situation est identifée quand une couche lance un événement `imageloaderror`, et la fonction asynchrone est appelée à nouveau pour récupérer l'heure de début, l'heure de fin et l'heure par défaut mises à jour.
+La plage de temps (i.e. startTime et endTime) couverte par les couches se met régulièrement à jour, ce qui fait en sorte qu'il peut arriver qu'une image ne puisse pas être chargée car les données d'un pas de temps expiré ne sont plus disponibles. La situation est identifée quand une couche lance un événement `imageloaderror`, et la fonction asynchrone est appelée à nouveau pour récupérer l'heure de début, l'heure de fin et l'heure par défaut mises à jour. La fonction asynchrone est également appelée à chaque fois que l'utilisateur va au début de la plage de temps (via les boutons `fastBackward()` et `stepBackward()`), afin de mettre à jour la plage de temps.
 
 La fonction `updateButtons()` modifie les balises HTML des boutons afin de les désactiver/réactiver dépendemment de l'état de la map. Par exemple, les boutons fast-backward, step-backward, step-forward et fast-forward sont désactivés lorsque l'animation de la map est activée.
 
