@@ -21,7 +21,7 @@ Les données sont accessibles à l’adresse suivante :
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 084] 
 
 Un historique de 24 heures est conservé dans ce répertoire.
@@ -45,7 +45,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 12]
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS__ : Chaîne de caractères constante indiquant des données post-traitées à partir du Système régional de prévision déterministe
