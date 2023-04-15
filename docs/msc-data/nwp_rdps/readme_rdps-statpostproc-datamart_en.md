@@ -20,7 +20,7 @@ The data can be accessed at the following URLs:
 
 where :
 
-* __HH__: Model run start, in UTC [00, 12]
+* __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 003, 006,..., 084]
 
 A 24-hour history is kept in this directory.
@@ -44,7 +44,7 @@ where:
 
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast
 * __T__: Time delimiter according to ISO8601 norms
-* __HH__ : UTC run time [00, 12]
+* __HH__ : UTC run time [00, 06, 12, 18]
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __RDPS__: Constant string indicating that data is from Regional Deterministic Prediction System
