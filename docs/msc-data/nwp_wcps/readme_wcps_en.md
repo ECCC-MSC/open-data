@@ -19,7 +19,6 @@ The Global Deterministic Prediciton System (GDPS) provides initial and boundary 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Data available from the GeoMet-Weather API / web services](../../msc-geomet/readme_en.md)
-* [WCPS NEMO NetCDF data available on the MSC Datamart](readme_wcps_nemo-datamart_en.md) 
 * [WCPS Coupled atmosphere-ocean-sea ice NetCDF data available on the MSC Datamart](readme_wcps-atm-ocean-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.

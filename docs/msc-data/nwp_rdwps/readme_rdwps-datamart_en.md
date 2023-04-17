@@ -23,9 +23,8 @@ Lat-lon grids:
 * [https://dd.weather.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.weather.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/superior/1km)
 
-Rotated lat-lon grids:
+Rotated lat-lon grid:
 
-* [https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.weather.gc.ca/model_rdwps/atlantic-nw/5km)
 * [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
 where :
@@ -33,6 +32,8 @@ where :
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
 A 24-hour history is stored in this directory.
+
+Note: The national domain is a post-processed composite of the above domains over the Great Lakes.
 
 ## Available Domains
 
@@ -88,19 +89,6 @@ A 24-hour history is stored in this directory.
 | resolution | 0.0090° x 0.0124° |
 | coordinate of first grid point | 43.0640° N  79.9736° W |
 
-### Atlantic North-West
-
-* __Rotated lat-lon grid__
-
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 762 |
-| nj | 643 | 
-| resolution | 0.045° x 0.045° |
-| coordinate of first grid point | 41.065° N  255.718° W |
-
 ### National
 
 * __Rotated lat-lon grid__
@@ -131,7 +119,7 @@ where :
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RDWPS__ : Constant string indicating that data is from the Regional Deterministic Wave Prediction System
-* __DOMAIN__ : Constant string indicating the domain [erie, huron-michigan, ontario, superior, atlantic-nw]
+* __DOMAIN__ : Constant string indicating the domain [erie, huron-michigan, ontario, superior, national]
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
 * __Grid__ : Horizontal grid type [LatLon, RLatLon]
@@ -144,7 +132,6 @@ NOTE: No domain is specified in the filenames for the national domain
 Examples of file name :
 
 * 20211014T00Z_MSC_RDWPS-Lake-Erie_HTSGW_Sfc_LatLon0.009x0.012_PT003H.grib2
-* 20211014T00Z_MSC_RDWPS-Atlantic-North-West_ICEC_Sfc_RLatLon0.045_PT037H.grib2
 * 20211014T00Z_MSC_RDWPS_VGRD_AGL-10m_RLatLon0.0225_PT037H.grib2
 
 ## Levels

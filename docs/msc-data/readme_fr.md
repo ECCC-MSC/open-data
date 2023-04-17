@@ -70,7 +70,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
     * [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)](nwp_resps/readme_resps_fr.md)
     * —
     * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
-    * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
 
 ## Données climatiques
 
@@ -96,6 +95,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ## Données ouvertes retirées
 
 * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
+* [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md) 
 
 ## Changements aux systèmes de production de données opérationnels
 
