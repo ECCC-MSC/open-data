@@ -95,7 +95,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ## Retired open data
 
 * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
- * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
+* [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
 
 ## Changes to operational data production systems
 
