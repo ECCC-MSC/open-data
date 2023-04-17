@@ -23,9 +23,8 @@ Données sur grilles lat-lon:
 * [https://dd.meteo.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/ontario/1km)
 * [https://dd.meteo.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/superior/1km)
 
-Données sur grilles lat-lon tournées:
+Données sur grille lat-lon tournée:
  
-* [https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/atlantic-nw/5km)
 * [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
 
 où :
@@ -33,6 +32,8 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18].
 
 Un historique de 24 heures est conservé dans ce répertoire.
+
+NOTE: Le domaine national est un assemblage en post-traitement des sous-domaines sur les Grands Lacs.
 
 ## Domaines disponibles
 
@@ -88,19 +89,6 @@ Un historique de 24 heures est conservé dans ce répertoire.
 | résolution | 0.0090° x 0.0124° |
 | coordonnées du premier point de grille | 43.0640° N  79.9736° O | 
 
-### Nord-ouest Atlantique
-
-* __Grille lat-lon tournée__
-
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdwps/grille_rdwps-nwa.png)
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 762 |
-| nj | 643 | 
-| résolution | 0.045° x 0.045° |
-| coordonnées du premier point de grille | 41.065° N  255.718° O | 
-
 ### National
 
 * __Grille_lat-lon tournée__
@@ -130,7 +118,7 @@ où :
 * __HH__ : Heure UTC de la passe [00, 12]
 * __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions
 * __RDWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe des vagues
-* __DOMAIN__ : Chaîne de caractères constante indiquant le domaine [erie, huron-michigan, ontario, superior, atlantic-nw]
+* __DOMAIN__ : Chaîne de caractères constante indiquant le domaine [erie, huron-michigan, ontario, superior, national]
 * __VAR__ : Type de variable contenu dans le fichier
 * __LVL__ : Type de niveau vertical [Sfc pour la surface, AGL pour hauteur fixe au-dessus du sol]
 * __Grille__ : Type de grille horizontale [LatLon, RLatLon]
@@ -143,7 +131,6 @@ NOTE: pour le domaine national, aucun domaine n'est mentionné dans les noms de 
 Exemples de fichier :
 
 * 20211014T00Z_MSC_RDWPS-Lake-Erie_HTSGW_Sfc_LatLon0.009x0.012_PT003H.grib2
-* 20211014T00Z_MSC_RDWPS-Atlantic-North-West_ICEC_Sfc_RLatLon0.045_PT037H.grib2
 * 20211014T00Z_MSC_RDWPS_VGRD_AGL-10m_RLatLon0.0225_PT037H.grib2
 
 ## Niveaux  

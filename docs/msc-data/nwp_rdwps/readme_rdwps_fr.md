@@ -18,7 +18,6 @@ Ce système comprend plusieurs domaines :
 * Lac Ontario
 * Atlantic nord-ouest
 * Pacifique nord-est
-* National
 
 ## Accès
 
