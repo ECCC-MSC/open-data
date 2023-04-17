@@ -33,7 +33,7 @@ where :
 
 A 24-hour history is stored in this directory.
 
-Note: The national domain is a post-processed composite of the above domains over the Great Lakes.
+Note: The national domain is a post-processed composite of all the RDWPS domains.
 
 ## Available Domains
 

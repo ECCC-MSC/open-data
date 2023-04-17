@@ -33,7 +33,7 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-NOTE: Le domaine national est un assemblage en post-traitement des sous-domaines sur les Grands Lacs.
+NOTE: Le domaine national est un assemblage en post-traitement de tous les domaines du SRPDV.
 
 ## Domaines disponibles
 
