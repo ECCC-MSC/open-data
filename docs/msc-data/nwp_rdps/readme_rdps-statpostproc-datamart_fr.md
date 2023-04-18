@@ -7,7 +7,7 @@
 
 # Données GeoJSON du Système régional de prévision déterministe statistiquement post-traitées
 
-Le système Updatable Model Output Statistics (UMOS) est un progiciel développé par Environnement et Changement climatique Canada permettant de post-traiter les prévisions brutes des modèles numériques du temps et de l'environnement, incluant le [Système régional de prévision déterministe (SRPD)](../readme_rdps_fr.md), en établissant des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties de modèles numériques. Ces relations sont bâties par l'entremise de la méthode Model Output Statistics (MOS) et par régression linéaire multiple (RLM). Les variables du temps et de l'environnement post-traitées statistiquement incluent la température de l'air et le point de rosée à 1.5 mètres au-dessus de la surface de la terre ou de l'eau ainsi que la vitesse et la direction du vent à 10 mètres au-dessus de la surface de la terre ou de l'eau. La région géographique couverte par ces données inclut le territoire couvert par les stations météorologiques du Canada et quelques bouées américaines. Les prévisions issues du post-traitement statistique sont disponibles à la même fréquence d'émission et au même pas de temps que les modèles numériques produisant les prévisions brutes.
+Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le [Système régional de prévision déterministe (SRPD)](../readme_rdps_fr.md), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies. Le système Updatable Model Output Statistics (UMOS) est un progiciel développé par Environnement et Changement climatique Canada permettant cela. Les relations sont bâties par l'entremise de la méthode Model Output Statistics (MOS) et par régression linéaire multiple (RLM). Les variables du temps et de l'environnement post-traitées statistiquement incluent les températures de l'air et du point de rosée à 1.5 mètres au-dessus de la surface de la Terre ainsi que la vitesse et la direction du vent à 10 mètres au-dessus de la surface de la Terre ou au niveau de l'anémomètre dans le cas d'une bouée. Les prévisions de la direction et de la vitesse du vent sont issues de modèles de post-traitement statistique indépendants. L'absence de prévisions statistiquement post-traitées de la direction du vent peut être dûe à un vent trop faible ne permettant pas de calculer une direction du vent fiable ou à l'absence d'un modèle statistique causé par une qualité ou quantité insuffisantes d'observations. La région géographique couverte par ces données inclut le territoire couvert par les stations météorologiques du Canada et quelques bouées américaines. Les prévisions issues du post-traitement statistique sont disponibles à la même fréquence d'émission que les prévisions brutes produites par les modèles numériques et à des échéances de prévision aux 3 heures pour le SRPD.
 
 ## Adresse des données 
 
@@ -34,8 +34,6 @@ Un historique de 24 heures est conservé dans ce répertoire.
 * Les donnees sont conformes aux normes ISO8601.
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

@@ -16,6 +16,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_rdps-datamart_en.md)
+* [GeoJSON data statistically post-processed on the MSC Datamart](readme_rdps-statpostproc-datamart_en.md)
 * [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_rdps-datamart-alpha_en.md)
 * [Experimental GRIB2 astronomy products available on the MSC testing data repository DD-Alpha](readme_astro-rdps-datamart-alpha_en.md)
 
