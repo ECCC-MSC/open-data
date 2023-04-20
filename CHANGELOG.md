@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.40
+
+* date: 2023-04-20
+* announcements:
+    * Not announced
+* new content:
+    * Erase RDPS-CGSL, WCPS-Nemo and RDWPS-NO Atlanic pages
+* improvements:
+    * None
+* bug fixes:
+    * None
+    
 ## 2.4.39
 
 * date: 2023-04-13
