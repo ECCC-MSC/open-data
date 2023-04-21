@@ -60,6 +60,11 @@ Access to GeoMet-OGC-API:
 * [https://api.weather.gc.ca/](https://api.weather.gc.ca/)
 * [GeoMet-OGC-API OpenAPI query builder](https://api.weather.gc.ca/openapi?f=html)
 
+The source code for GeoMet-OGC-API is publicly available on GitHub:
+
+* msc-pygeoapi: [https://github.com/ECCC-MSC/msc-pygeoapi](https://github.com/ECCC-MSC/msc-pygeoapi)
+* pygeoapi: [https://pygeoapi.io/](https://pygeoapi.io/)
+
 ### GeoMet-Weather
 
 GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.

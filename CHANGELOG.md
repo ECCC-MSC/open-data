@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.41
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Add links to source code for pygeoapi and msc-pygeoapi
+* bug fixes:
+    * None
+
 ## 2.4.40
 
 * date: 2023-04-20
