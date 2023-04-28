@@ -8,13 +8,25 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.4.41
+## 2.4.42
 
-* date:
+* date: 
 * announcements:
     * Not announced
 * new content:
     * None
+* improvements:
+    * None
+* bug fixes:
+    * None
+    
+## 2.4.41
+
+* date: 2023-04-28
+* announcements:
+    * Not announced
+* new content:
+    * Updated AniMet doc for version 1.1
 * improvements:
     * Add links to source code for pygeoapi and msc-pygeoapi
 * bug fixes:
