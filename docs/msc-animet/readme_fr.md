@@ -10,7 +10,7 @@ AniMet du SMC est un outil simple permettant aux utilisateurs d'interagir avec l
 
 AniMet du SMC peut être utilisé pour présenter une variété d'événements météorologiques tels que les tempêtes, les vagues de chaleur, les trajectoires d'ouragans, les événements liés à la qualité de l'air, les rafales de vent extrêmes, et bien plus encore.
 
-AniMet du SMC donne accès aux couches de [GeoMet-Météo et Geomet-Climat](../msc-geomet/readme_fr.md).
+AniMet du SMC donne accès aux couches de [GeoMet-Météo et GeoMet-Climat](../msc-geomet/readme_fr.md).
 
 # Accès
 
