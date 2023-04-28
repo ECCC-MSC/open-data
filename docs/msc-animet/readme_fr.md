@@ -10,7 +10,7 @@ AniMet du SMC est un outil simple permettant aux utilisateurs d'interagir avec l
 
 AniMet du SMC peut être utilisé pour présenter une variété d'événements météorologiques tels que les tempêtes, les vagues de chaleur, les trajectoires d'ouragans, les événements liés à la qualité de l'air, les rafales de vent extrêmes, et bien plus encore.
 
-Dans sa version actuelle, AniMet du SMC donne accès aux couches de [GeoMet-Météo](../msc-geomet/readme_fr.md).
+AniMet du SMC donne accès aux couches de [GeoMet-Météo et Geomet-Climat](../msc-geomet/readme_fr.md).
 
 # Accès
 
@@ -26,20 +26,25 @@ Un exemple simple de l'animation d'une couche radar créée avec AniMet du SMC :
 
 Les principales étapes d'utilisation :
 
-1. Ajouter des couches météorologiques à la carte
+1. Ajouter des couches météorologiques et climatiques à la carte
 2. Personnaliser le contenu de la carte
 3. Configurer l'animation
 4. Créer et partager la carte et l'animation
 
-## 1 - Ajouter des couches météorologiques
+## 1 - Ajouter des couches météorologiques et climatiques
 
-Ajouter des couches dans le panneau `Ajouter des couches GeoMet-Météo` :
+Couches : 
 
+* Ajouter des couches dans le panneau `GeoMet-Météo` ou `GeoMet-Climat`
 * Parcourir l'arborescence des couches pour trouver la couche désirée
 * Utiliser la boîte de recherche pour filtrer parmi les couches disponibles
 * Cliquer sur le signe `+` pour ajouter une couche à la carte
+* Astuce : cliquer sur le nom du panneau pour agrandir ou réduire la liste de couches
 
-Astuce : cliquer sur le nom du panneau, `Ajouter des couches GeoMet-Météo`, pour agrandir ou réduire le panneau.
+Superpositions :
+
+* Sélectionner le panneau 'Superpositions' pour ajouter de l'information au-dessus des couches affichées
+* Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom.
 
 ## 2 - Personnaliser le contenu de la carte
 

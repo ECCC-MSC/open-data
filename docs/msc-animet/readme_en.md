@@ -10,7 +10,7 @@ MSC AniMet is a simple tool enabling users to interact with MSC Open Data weathe
 
 MSC AniMet can be used to showcase a diversity of weather events such as storms, heat waves, hurricane trajectories, air quality events, extreme wind gusts, and much more.
 
-In its current incarnation, MSC AniMet provides access to [GeoMet-Weather](../msc-geomet/readme_en.md) layers.
+MSC AniMet provides access to [GeoMet-Weather and GeoMet-Climate](../msc-geomet/readme_en.md) layers.
 
 # Access
 
@@ -27,20 +27,25 @@ A simple example of an MSC AniMet animation with a single radar layer:
 
 The main usage workflow:
 
-1. Add weather layers to the map
+1. Add weather and climate layers to the map
 2. Customize the content of the map
 3. Configure the animation
 4. Create and share the map and animation
 
-## 1 - Add weather layers
+## 1 - Add weather and climate layers
 
-Add layers in the `Add GeoMet-Weather layers` panel:
+Layers: 
 
+* Add layers from the `GeoMet-Weather` or `GeoMet-Climate` panel
 * Browse the layer tree to find the desired layer
 * Use the search box to filter available layers
 * Click on the `+` sign to add a layer to the map
+* Tip: click on the panel name to expand or collapse the layer list
 
-Tip: click on the panel name, `Add GeoMet-Weather layers`, to expand or collapse the panel.
+Overlays: 
+
+* Select the 'Overlays' panel to add information on top of displayed layers
+* Currently available overlays are Canadian geopolitical boundaries, cities and waterbodies from Natural Resource Canada. They are available only at certain zoom levels.
 
 ## 2 - Customize content of the map
 
