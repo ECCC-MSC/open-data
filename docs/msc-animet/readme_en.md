@@ -59,7 +59,7 @@ Layers:
   * View and select the layer color ramp from available styles
 * Adjust layer opacity
 * Toggle layer visibility
-  * A layer visibility eye icon will turn red if there is no overlap with the selected temporal range
+  * A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range
 
 Time:
 
