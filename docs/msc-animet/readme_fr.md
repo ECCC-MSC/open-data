@@ -58,7 +58,7 @@ Couches :
   * Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles
 * Ajuster l'opacité des couches
 * Activer la visibilité des couches
-  * L'icone de la visibilité d'une couche deviendra rouge s'il n'y a pas de chevauchement avec la plage temporelle choisie
+  * L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche
 
 
 Temps :
@@ -72,7 +72,7 @@ Temps :
 Carte :
 
 * Agrandir et déplacer la carte sur votre zone d'intérêt
-* Redimensionner la carte et l'animation à l'aide de l'outil située dans le coin inférieur droit de la carte
+* Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte
 * Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte
 
 ## 3 - Configurer l'animation
@@ -110,4 +110,4 @@ Le code source d'AniMet du SMC est disponible publiquement sur GitHub : [https:/
 
 ## Support
 
-AniMet du SMC est un outil de démonstration des données ouvertes du SMC et ne bénéficie pas d'un support opérationnel. Le support aux utilisateurs est oofert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui souhaitent obtenir du support sont invités à [nous contacter](https://www.meteo.gc.ca/mainmenu/contact_us_f.html).
+AniMet du SMC est un outil de démonstration des données ouvertes du SMC et ne bénéficie pas d'un support opérationnel. Le support aux utilisateurs est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui souhaitent obtenir du support sont invités à [nous contacter](https://www.meteo.gc.ca/mainmenu/contact_us_f.html).
