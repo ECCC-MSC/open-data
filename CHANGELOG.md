@@ -29,7 +29,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * None
 * improvements:
-    * None
+    * FAQ updated for GeoMet access to Radar, Alerts, Bulletins and AQHI datasets
 * bug fixes:
     * None
     

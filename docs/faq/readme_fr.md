@@ -33,10 +33,10 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?](# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements)
 * [Les images satellitaires sont-elles disponibles ?](#les-images-satellitaires-sont-elles-disponibles)
 * [Les données de foudre sont-elles disponibles ?](#les-donnees-de-foudre-sont-elles-disponibles)
-* [Comment obtenir les températures minimales et maximales en format CSV ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-csv)
+* [Comment obtenir les températures minimales et maximales en format JSON ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-json)
 * [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
 * [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
-* [Est-il possible d'avoir accès aux données observées passées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la cote air santé ?](#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante)
+* [Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?](#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante)
 * [Existe-t-il une plateforme de discussion pour les usagers ?](#existe-t-il-une-plateforme-de-discussion-pour-les-usagers)
 
 ## Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?
@@ -65,7 +65,7 @@ En général, il est préférable d'utiliser un accès continu plutôt qu'une co
 
 ## Peut-on avoir accès aux données radar météorologiques ?
 
-Les données radar actuellement disponibles gratuitement sur le serveur de données ouvertes du SMC sont les [images GIF]( ../msc-data/obs_radar/readme_radarimage-datamart_fr.md). Nous offrons également la [mosaique radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux WMS.
+Les données radar actuellement disponibles gratuitement au public sont [la composite et l'extrapolation radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux GeoMet-Météo. La composite radar nord-américaine est disponible à chaque 6 minutes pour les 3 dernières heures. Nous offrons également les [images GIF](../msc-data/obs_radar/readme_radarimage-datamart_fr.md) sur le serveur de données ouvertes du SMC. [La documentation des observations radar](../msc-data/obs_radar/readme_radar_fr.md) peut être consultée pour les autres de données et produits radar.
 
 Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr.md#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
 
@@ -206,7 +206,7 @@ Finalement, ces données de bouées sont accessibles à travers les [bulletins a
 
 Il y a plusieurs sources pour obtenir les avertissements.
 
-* Tout d’abord, les avertissements officiels sont disponibles via [les services web géospatiaux GeoMet-Météo](../msc-geomet/readme_fr.md) et en [format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
+* Tout d’abord, les avertissements officiels sont disponibles via [les services web géospatiaux GeoMet-Météo](../msc-data/alerts/readme_alerts-geomet_fr.md) et en [format PAC-XML sur le Datamart du SMC](https://dd.meteo.gc.ca/alerts/cap). La [documentation](../msc-data/alerts/readme_alerts-datamart_fr.md) détaille ces données et donne également des informations concernant les critères d’alertes de la prévision publique ainsi des informations géographiques des emplacements des prévisions, pour tous les messages en format PAC.
 
 * Par ailleurs, ECCC a mis en place un [fil de nouvelles ATOM via lequel les alertes et avertissements sont disponibles](https://meteo.gc.ca/business/index_f.html#rss).
 
@@ -226,19 +226,21 @@ Un site recommandé pour obtenir gratuitement les images satellites est celui de
 
 ## Les données de foudre sont-elles disponibles ?
 
-Actuellement, seule [la carte canadienne des dangers de la foudre est disponible](https://meteo.gc.ca/lightning/). Veuillez noter que vous devez mettre à jour manuellement le site web. Il ne se met pas à jour tout seul, contrairement au site des images radar. Les données ne sont pas encore disponibles parmi l'offre de données ouvertes, veuillez surveiller nos listes de diffusion [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) et [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) pour être tenu informé.
+Les données de foudre actuellement disponibles gratuitement au public sont la densité des éclairs sur le Canada via les [services web géospatiaux GeoMet-Météo](../msc-geomet/readme_fr.md). Nous offrons également les [données GeoTIFF](../msc-data/lightning/readme_lightning-datamart_fr.md) sur le serveur de données ouvertes du SMC.
+
+[La carte canadienne des dangers de la foudre est disponible](https://meteo.gc.ca/lightning/). Veuillez noter que vous devez mettre à jour manuellement le site web. Il ne se met pas à jour tout seul, contrairement au site des images radar.
  
-En attendant, si vous souhaitez acheter des données sur la foudre en temps réel ou archivées, auprès du Réseau canadien de détection de la foudre (CLDN), veuillez contacter nos collègues à l'adresse : ec.rcdf-cldn.ec@canada.ca . Il y a un coût pour les entreprises privées. Le prix dépend de la superficie dont ils ont besoin pour les données en direct et de la durée des données archivées. Si le client envoie au CLDN ses spécifications, un estimé du coût sera transmis (demande envoyée à Vaisala). 
+Si vous souhaitez acheter des données sur la foudre en temps réel ou archivées, auprès du Réseau canadien de détection de la foudre (CLDN), veuillez contacter nos collègues à l'adresse : ec.rcdf-cldn.ec@canada.ca . Il y a un coût pour les entreprises privées. Le prix dépend de la superficie dont ils ont besoin pour les données en direct et de la durée des données archivées. Si le client envoie au CLDN ses spécifications, un estimé du coût sera transmis (demande envoyée à Vaisala). 
 
-## Comment obtenir les températures minimales et maximales en format CSV ?
+## Comment obtenir les températures minimales et maximales en format JSON ?
 
-Pour obtenir des données de températures extrêmes prévues au format CSV, vous pouvez consulter au choix :
+Pour obtenir des données de températures minimales et maximales prévues en format JSON, vous pouvez consulter au choix :
 
-* Les bulletins de prévision FMCN31 à FMCN38 (format CSV), basés sur le [Système global de prévision déterministe (SGPD)](../msc-data/nwp_gdps/readme_gdps_en.md). Les prévisions à 00Z contiennent le maximum du jour en cours, le minimum et le maximum du deuxième jour et le minimum du troisième jour. Les prévisions de 12Z contiennent les minima et maxima du jour deux et du jour trois.
+* Les bulletins de prévision FMCN31 à FMCN38 (format JSON), basés sur le [Système global de prévision déterministe (SGPD)](../msc-data/nwp_gdps/readme_gdps_en.md). Les prévisions à 00Z contiennent le maximum du jour en cours, le minimum et le maximum du deuxième jour et le minimum du troisième jour. Les prévisions de 12Z contiennent les minima et maxima du jour deux et du jour trois.
 
-* Les bulletins de prévision FMCN41 à FMCN48 (format CSV), basés sur le [Système régional de prévision déterministe (SRPD) ](../msc-data/nwp_rdps/readme_rdps_en.md). Les prévisions à  12Z contiennent les minima et maxima du jour deux et les minima du jour trois. Les prévisions basées sur les données à 00Z contiennent le maximum du jour en cours et le minimum et le maximum du jour deux.
+* Les bulletins de prévision FMCN41 à FMCN48 (format JSON), basés sur le [Système régional de prévision déterministe (SRPD) ](../msc-data/nwp_rdps/readme_rdps_en.md). Les prévisions à  12Z contiennent les minima et maxima du jour deux et les minima du jour trois. Les prévisions basées sur les données à 00Z contiennent le maximum du jour en cours et le minimum et le maximum du jour deux.
 
-Ces bulletins sont disponibles sur le Datamart du SMC, à l'adresse : https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
+Ces bulletins sont disponibles sur le Datamart du SMC, à l'adresse : [https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/](https://dd.meteo.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/) et sur les services web géospatiaux GeoMet-OGC-API, à l'adresse: [https://api.meteo.gc.ca/collections/bulletins-realtime/items?limit=10&startindex=0&sortby=-datetime&type=fm](https://api.meteo.gc.ca/collections/bulletins-realtime/items?limit=10&startindex=0&sortby=-datetime&type=fm)
 
 ## Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?
 
@@ -254,11 +256,11 @@ Aussi, une estimation optimale de la quantité de précipitation qui est survenu
 
 Certaines stations météorologiques sont automatiques (sans personnel) et ne signalent pas l'état des conditions actuelles. Si vous regardez la page correspondante sur notre site web, par exemple pour la ville d’[Edmonton](https://weather.gc.ca/city/pages/ab-50_metric_e.html), vous verrez qu'il est écrit « Non observé » pour la condition. C'est pourquoi aucune icône ou condition n'est signalée dans le fichier XML Citypage correspondant.
 
-## Est-il possible d'avoir accès aux données observées passées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la cote air santé ?
+## Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?
 
 Au Canada, les données d'observation de qualité de l'air sont généralement produites par les provinces et municipalités et récoltées par ECCC. C’est vrai tant pour le temps réel que pour les données « officielles » qui font l'objet d'un contrôle qualité détaillé et qui sont habituellement publiées l'année suivante.  Ces données officielles sont assemblées dans la base de données du programme de [Surveillance national de la pollution atmosphérique (SNPA)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=fr), maintenant sur le catalogue de données ECCC.
 
-Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine [AirNow](https://www.airnow.gov/aqi-and-health/), et sont aussi téléchargeables dans le projet ouvert [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). De son côté, ECCC publie uniquement les observations sous la forme de la cote air santé, et celles-ci se trouvent le [Datamart du SMC](../msc-data/aqhi/readme_aqhi_fr.md).
+Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine [AirNow](https://www.airnow.gov/aqi-and-health/), et sont aussi téléchargeables dans le projet ouvert [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). De son côté, ECCC publie les observations et les prévisions pour la Cote air santé, et celles-ci se trouvent sur [le Datamart du SMC et les services web géospatiaux GeoMet-OGC-API](../msc-data/aqhi/readme_aqhi_fr.md).
 
 Enfin, il est possible de consulter [l'Inventaire national des rejets de polluants](https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html). Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publiée plus d’un an après la date courante, sur une base annuelle.
 

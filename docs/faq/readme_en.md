@@ -32,10 +32,10 @@ This section contains the most frequently asked questions about the MSC open dat
 * [What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?](#what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retreive-alerts)
 * [Can I have satellite images ?](#can-i-have-satellite-images)
 * [Are lightning data available ?](#are-lightning-data-available)
-* [Can I have CSV minimum and maximum forecast temperature ?](#can-i-have-csv-minimum-and-maximum-forecast-temperature)
+* [Can I have JSON minimum and maximum forecast temperature ?](#can-i-have-json-minimum-and-maximum-forecast-temperature)
 * [Can I have rainfall amount data ?](#can-i-have-rainfall-amount-data)
 * [I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal)
-* [Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?](#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index)
+* [Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?](#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index)
 * [Is there a discussion platform for users ?](#is-there-a-discussion-platform-for-users)
 
 ## Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?
@@ -61,7 +61,7 @@ In general, it is preferable to use continuous access rather than periodic acces
 
 ## Can I have weather radar data ?
 
-The weather radar data that we freely provide to the public are the [GIF images]( ../msc-data/obs_radar/readme_radarimage-datamart_en.md) on the MSC open data server. We also offer the [North American Radar Mosaic](../msc-data/obs_radar/readme_radar_geomet_en.md) via WMS Geospatial Web Services.
+The weather radar data that we freely provide to the public are the [North American Radar Composite and Extrapolation](../msc-data/obs_radar/readme_radar_geomet_en.md) via GeoMet-Weather Geospatial Web Services. The North American Radar Composite is available every 6 minutes for the past 3 hours. We also offer the [GIF images](../msc-data/obs_radar/readme_radarimage-datamart_en.md) on the MSC open data server. [Documentation of radar observations](../msc-data/obs_radar/readme_radar_en.md) can be consulted for other radar data and products.
 
 The raw data, as well as various other products, are provided by a [cost-recovered service](../cost-recovered/readme_en.md#dedicated-data-feed). As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
@@ -212,7 +212,7 @@ Finally, these buoy data are accessible through the [alphanumeric bulletins](../
 
 You can find information about Environment and Climate Change Canada's warning in several places :
 
-* First of all, the official warnings are available via the [geospatial web services GeoMet-Weather](../msc-geomet/readme_en.md) and in [CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
+* First of all, the official warnings are available via the [geospatial web services GeoMet-Weather](../msc-data/alerts/readme_alerts-geomet_en.md) and in [CAP-XML format on the MSC Datamart](https://dd.meteo.gc.ca/alerts/cap). The [documentation](../msc-data/alerts/readme_alerts-datamart_en.md) details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.
 
 * In addition, ECCC has set up an [ATOM news feed through which alerts and warnings are available](https://weather.gc.ca/business/index_e.html#rss).
 
@@ -237,19 +237,21 @@ If you require a data feed of satellite images, we suggest users contact our U.S
 
 ## Are lightning data available ?
 
-Currently, only the [Canadian Lightning Danger Map](https://weather.gc.ca/lightning/) is available. Please note that you must manually update the website. It does not update itself, unlike the radar image site. The data are not yet available as part of the open data offer, please watch our mailing lists [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) for updates.
+The lightning data currently available to the public free of charge are lightning flash density over Canada via [GeoMet-Weather geospatial web services](../msc-geomet/readme_en.md). We also offer [GeoTIFF data](../msc-data/lightning/readme_lightning-datamart_en.md) on the MSC open data server.
+
+[The Canadian Lightning Danger Map](https://weather.gc.ca/lightning/) is available. Please note that you must manually update the website. It does not update itself, unlike the radar image site.
  
-In the meantime, if you are interested in purchasing real-time or archived lightning data from the Canadian Lightning Detection Network (CLDN), please contact our colleagues at ec.rcdf-cldn.ec@canada.ca . There is a cost for private companies. The price depends on the area they need for the live data and the duration of the archived data. If the customer sends the CLDN their specifications, an estimate of the cost will be forwarded (request sent to Vaisala). 
+If you are interested in purchasing real-time or archived lightning data from the Canadian Lightning Detection Network (CLDN), please contact our colleagues at ec.rcdf-cldn.ec@canada.ca . There is a cost for private companies. The price depends on the area they need for the live data and the duration of the archived data. If the customer sends the CLDN their specifications, an estimate of the cost will be forwarded (request sent to Vaisala). 
 
-## Can I have CSV minimum and maximum forecast temperature ?
+## Can I have JSON minimum and maximum forecast temperature ?
 
-To obtain extreme forecast temperature data in CSV format, you can consult either:
+To obtain minimum and maximum forecast temperature data in JSON format, you can consult either:
 
-* Forecast bulletins FMCN31 to FMCN38 (CSV format), based on the [Global Deterministic Prediction System (GDPS)](../msc-data/nwp_gdps/readme_gdps_en.md). The forecast at 00Z contains the maximum for the current day, the minimum and maximum for the second day, and the minimum for the third day. The forecast at 12Z contains the minima and maxima of day two and day three.
+* Forecast bulletins FMCN31 to FMCN38 (JSON format), based on the [Global Deterministic Prediction System (GDPS)](../msc-data/nwp_gdps/readme_gdps_en.md). The forecast at 00Z contains the maximum for the current day, the minimum and maximum for the second day, and the minimum for the third day. The forecast at 12Z contains the minima and maxima of day two and day three.
 
-* Forecast bulletins FMCN41 to FMCN48 (CSV format), based on the [Regional Deterministic Prediction System (RDPS)](../msc-data/nwp_rdps/readme_rdps_en.md). The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.
+* Forecast bulletins FMCN41 to FMCN48 (JSON format), based on the [Regional Deterministic Prediction System (RDPS)](../msc-data/nwp_rdps/readme_rdps_en.md). The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.
 
-These bulletins are available on the MSC Datamart at the address: https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/
+These bulletins are available on the MSC Datamart at the address: [https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/](https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/) and on the GeoMet-OGC-API geospatial web services at the address: [https://api.weather.gc.ca/collections/bulletins-realtime/items?limit=10&startindex=0&sortby=-datetime&type=fm](https://api.weather.gc.ca/collections/bulletins-realtime/items?limit=10&startindex=0&sortby=-datetime&type=fm)
 
 ## Can I have rainfall amount data ?
 
@@ -267,11 +269,11 @@ Some weather stations are automatic (unmanned) and do not report the current con
 
 This is why there is no icon or condition reported in the corresponding Citypage XML file.
 
-## Is it possible to access past observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
+## Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
 
 In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the [National Air Pollution Surveillance (NAPS)](http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en) program, now on the ECCC data catalogue.
 
-Also, a number of Canadian stations are available in the U.S. [AirNow](https://www.airnow.gov/aqi-and-health/) database, and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). On the other hand, ECCC only publishes observations in the form of the Air Quality Health Index, which can be found in the [MSC Datamart](../msc-data/aqhi/readme_aqhi_en.md).
+Also, a number of Canadian stations are available in the U.S. [AirNow](https://www.airnow.gov/aqi-and-health/) database, and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). On the other hand, ECCC publishes observations and forecasts for the Air Quality Health Index, which can be found in [the MSC Datamart and the GeoMet-OGC-API geospatial web services](../msc-data/aqhi/readme_aqhi_en.md).
 
 Finally, the [National Pollutant Release Inventory](https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html) is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.
 
