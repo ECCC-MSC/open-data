@@ -25,7 +25,8 @@ Les fichiers shapefile sont disponibles à cette adresse :
 * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{nom-tempête}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
 où :
-* __nom-tempête__ est le nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
+
+* __nom-tempête__ : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
 
 30 avril : l'historique est effacé
 

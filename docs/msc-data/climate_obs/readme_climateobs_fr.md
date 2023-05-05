@@ -2,13 +2,17 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données climatiques (normales, données quotidiennes, sommaires mensuels)
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données climatiques (normales, données quotidiennes et horaires, sommaires mensuels)
 
-# Données et produits données climatiques (normales, données quotidiennes, sommaires mensuels)
+# Données et produits données climatiques (normales, données quotidiennes et horaires, sommaires mensuels)
 
 __Normales climatiques__
 
 Les normales et moyennes climatiques sont utilisées pour résumer ou décrire les conditions climatiques moyennes d'un endroit particulier. À la fin de chaque décennie, Environnement et changements climatiques Canada met à jour ses normales climatiques pour autant d'endroits et autant de caractéristiques climatiques que possible. Les normales, moyennes et extrêmes climatiques présentées ici sont basées sur des stations climatiques canadiennes ayant au moins 15 ans de données entre 1981 et 2010.
+
+__Données horaires__
+
+Les données climatiques horaires canadiennes sont accessibles au public à partir des Archives climatiques nationales du ECCC/SMC. Il s'agit de stations météorologiques de surface qui produisent des observations météorologiques horaires, prises à chaque heure de la journée. En raison des limites de taille, seul un sous-ensemble des stations trouvées sur la page des données climatiques historiques d'Environnement et Changement climatique Canada est présenté. Les priorités d'inclusion sont les suivantes: Les stations situées dans des villes de plus de 10 000 habitants, les stations qui ont le statut de réseau climatologique régional de base, stations ayant plus de 30 ans de données.
 
 __Données quotidiennes__
 
@@ -46,7 +50,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ### Métadonnées
 
 * Les [métadonnées des normales climatiques sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652)
-* Les [métadonnées des données quotidiennes  sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098)
+* Les [métadonnées des données quotidiennes sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098)
+* Les [métadonnées des données horaires sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c)
 * Les [métadonnées des données mensuelles sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/b24efb37-11b6-5d03-ab19-5759f83db546)
 
 ## Produits 

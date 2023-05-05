@@ -2,13 +2,17 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Climate  data (normals, daily, monthly)
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Climate  data (normals, daily, hourly, monthly)
 
-# Data and products of the climate data (normals, daily, monthly)  
+# Data and products of the climate data (normals, daily, hourly, monthly)  
 
 __Climate normals__
 
 Climate Normals and Averages are used to summarize or describe the average climatic conditions of a particular location. At the completion of each decade, Environment and Climate Change Canada updates its Climate Normals for as many locations and as many climatic characteristics as possible. The Climate Normals, Averages and Extremes offered here are based on Canadian climate stations with at least 15 years of data between 1981 to 2010.
+
+__Climate hourly__
+
+Canadian hourly climate data are available for public access from the ECCC/MSC's National Climate Archive. These are surface weather stations that produce hourly meteorological observations, taken each hour of the day. Only a subset of the total stations found on Environment and Climate Change Canada’s Historical Climate Data Page is shown due to size limitations.The priorities for inclusion are as follows: stations in cities with populations of 10000+, stations that are Regional Basic Climatological Network status and stations with 30+ years of data.
 
 __Climate daily__
 
@@ -47,6 +51,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 * The [metadata of the climate normals are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652).
 * The [metadata of the climate daily are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098).
+* The [metadata of the climate hourly are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c)
 * The [metadata of the climate monthly are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/b24efb37-11b6-5d03-ab19-5759f83db546).
 
 ## Products 

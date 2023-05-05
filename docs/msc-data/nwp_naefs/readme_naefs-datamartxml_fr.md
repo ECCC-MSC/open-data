@@ -20,8 +20,6 @@ Un historique de 30 jours de prévisions est conservé dans ce répertoire.
 
 ## Nomenclature des répertoires des fichiers 
 
-NOTE : TOUTES LES HEURES SONT EN UTC.
-
 La structure des répertoires est basée sur la date d'intégration et la
 variable contenu dans les fichiers XML. Ils suivent la nomenclature   
 suivante:
