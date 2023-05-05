@@ -65,6 +65,7 @@ where :
 * __YYYY__ : Year of the climate daily data
 * __MM__ :  Month of the climate daily/monthly data
 * __P1D__ : Constant string indicating 1 day time step (ISO8601 standard)
+* __P1H__ : Constant string indicating 1 hour time step (ISO8601 standard)
 * __P1M__ : Constant string indicating 1 month time step (ISO8601 standard)
 * __csv__ : Constant string indicating the CSV format
 
