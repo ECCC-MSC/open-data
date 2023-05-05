@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Climate  data (normals, daily, monthly)](readme_climateobs_en.md) > Climate  data (normals, daily, monthly) on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Climate  data (normals, daily, hourly, monthly)](readme_climateobs_en.md) > Climate  data (normals, daily, hourly, monthly) on MSC Datamart
 
-# Climate  data (normals, daily, monthly) in CSV format
+# Climate  data (normals, daily, hourly, monthly) in CSV format
 
-This document describes three climate data sets, climate normal, daily climate observations and monthly climate observations summaries at various climate stations across Canada.
+This document describes four climate data sets, climate normal, daily and hourly climate observations as well as monthly climate observations summaries at various climate stations across Canada.
 
 ## Data location
 
@@ -18,23 +18,24 @@ The data can be accessed at the following URLs :
 
 * [https://dd.weather.gc.ca/climate/observations/normals/csv/1981-2010/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/normals/csv/1981-2010)
 * [https://dd.weather.gc.ca/climate/observations/daily/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/daily/csv)
+* [https://dd.weather.gc.ca/climate/observations/hourly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/hourly/csv)
 * [https://dd.weather.gc.ca/climate/observations/monthly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/monthly/csv)
 
 where :
 
 * __normals__ : Climate normals and averages are used to summarize or describe the average climatic conditions of a particular location with at least 15 years of data between 1981-2010.
 * __daily__ : Climate daily data from daily climate stations and hourly stations.
+* __hourly__ : Climate hourly data from daily hourly stations.
 * __monthly__ : A cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data. 
 * __(AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT)__ : List of the 13 provinces/territories.
 
 ## File name nomenclature 
 
-NOTE : ALL HOURS ARE IN UTC.
-
 File names have the form :
 
 * climate_normals_PROVTERR_XXXXXXX_YYY1-YYY2.csv
 * climate_daily_PROVTERR_XXXXXXX_YYYY-MM_P1D.csv
+* climate_hourly_PROVTERR_XXXXXXX_YYYY_P1H.csv
 * climate_monthly_PROVTERR_XXXXXXX_YYYY_P1M.csv
 
 where :
@@ -42,6 +43,7 @@ where :
 * __climate__ : Constant string indicating the data source, namely climate data 
 * __normals__ : Constant string indicating climate data that critically contributes to the characterization of Earth’ s climate
 * __daily__ : Constant string indicating daily climate data
+* __hourly__ : Constant string indicating hourly climate data
 * __monthly__ : Constant string indicating monthy climate data 
 * __PROVTERR__ : 2-letter code for the province or territory, and 1 string for National coverage. The code is one of the 13 following values :
     * AB (Alberta)
@@ -69,7 +71,8 @@ where :
 Examples :
 
 * climate_normals_QC_7040446_1981-2010.csv 
-* climate_daily_QC_7025280_1993-03_P1D.csv 
+* climate_daily_QC_7025280_1993-03_P1D.csv
+* climate_hourly_MB_5010480_1975_P1H.csv
 * climate_monthly_QC_7025280_2001_P1M.csv
 
 Note: A list of station codes is available at the address: https://drive.google.com/drive/folders/1WJCDEU34c60IfOnG4rv5EPZ4IhhW9vZH
@@ -80,6 +83,7 @@ The available variables and units for Climate data are documented here :
 
 * [Climate normals](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-climate-normals.html#toc1)
 * [Climate daily](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html#toc0)
+* [Climate hourly](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-hourly-data.html#toc0)
 * [Climate monthly](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-monthly-climate-summaries.html#toc0)
 
 ## File contents
@@ -103,6 +107,14 @@ Daily data is derived from two sources of data. The first are Daily Climate Stat
 See detailed documentation here :
 
 [https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-daily-data.html)
+
+* __Climate hourly__
+
+Hourly data is derived from hourly stations (see hourly data sets) that typically produce several weather elements e.g. wind or snow on ground. Data is available for stations that are currently operational with a long period of record.
+
+See detailed documentation here :
+
+[https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-hourly-data.html](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/display-download/technical-documentation-hourly-data.html)
 
 * __Climate monthly__
 

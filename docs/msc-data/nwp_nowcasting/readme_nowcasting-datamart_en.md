@@ -34,11 +34,11 @@ SCRIBE.NWCSTG.10.24.06Z.n.Z
 
 where :
 
-__SCRIBE__ : Main system production
-__NWCSTG__ : Indentifies the matrix data type (Here Nowcasting) in the file
-__10.24.06Z__ : MM.DD.HHZ MM: Month, DD: date. HH: Run Time UST Z: UTC identification
-__n__ : Nowcasting extension file name
-__Z__ : Unix compression file idenfication
+* __SCRIBE__ : Main system production
+* __NWCSTG__ : Indentifies the matrix data type (Here Nowcasting) in the file
+* __10.24.06Z__ : MM.DD.HHZ MM: Month, DD: date. HH: Run Time UST Z: UTC identification
+* __n__ : Nowcasting extension file name
+* __Z__ : Unix compression file idenfication
 
 ## Data
 

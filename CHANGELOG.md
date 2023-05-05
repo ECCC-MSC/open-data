@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.43
+
+* date:  2023-05-05
+* announcements:
+    * Not announced
+* new content:
+    * Add climate hourly doc
+* improvements:
+    * None
+* bug fixes:
+    * Fix several lists format 
+    	
+
 ## 2.4.42
 
 * date: 

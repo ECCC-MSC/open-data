@@ -20,8 +20,6 @@ A history of 30 days of forecast is kept in this directory.
 
 ## Nomenclature of file directories 
 
-NOTE : ALL HOURS ARE IN UTC.
-
 The files are grouped in a directory tree that is based on the date
 and the variable contained in the XML files. The directories have the 
 following nomenclature:
@@ -30,6 +28,7 @@ following nomenclature:
 
 
 where :
+
 * __AAAAMMJJ__ : Forecast integration date, year (YYYY), month (MM) and day (DD)
 * __ZZ__ : Forecast integration time in UTC. Can be '00' or  '12'
 * __VARIABLE__ : Variable in the XML files in the directory. Refer to the 'Variable List' section below for a complete list.
