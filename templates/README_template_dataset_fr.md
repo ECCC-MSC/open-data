@@ -6,7 +6,7 @@ Ajouter le lien vers la version anglaise, le logo et le fil d'Ariane
 
 # Données et produits du "*nom du jeu de données"*
 
-Quelques lignes décrivant sommairement les données (pour les systèmes NWP, donner l'acronyme), inspirées de la section "A propos" des README sur le Datamart du SMC. Important : la description longue utilisée ici devrait être la même que celle utilisée dans les métadonnées : [source des descriptions](https://gccode.ssc-spc.gc.ca/ec-msc/discovery-metadata/tree/master/mcf)
+Avec l'aide de l'intendant de données ou du responsable de système, indiquer quelques lignes décrivant sommairement les données (pour les systèmes NWP, donner l'acronyme). Important : la description longue utilisée ici devrait être la même que celle utilisée dans les métadonnées : [source des descriptions](https://gccode.ssc-spc.gc.ca/ec-msc/discovery-metadata/tree/master/mcf). 
 
 > Exemple pour le SRPD:
 
