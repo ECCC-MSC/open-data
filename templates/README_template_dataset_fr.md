@@ -35,7 +35,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](https://ec
 
 Les [métadonnées du *nom du jeu de données* sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset)
 
-*Lien vers les métadonnées de ce jeu de données sur ouvert.canada.ca si elles existent*
+Lien vers les métadonnées de ce jeu de données sur ouvert.canada.ca si elles existent
 
 > Exemple pour le SRPD: Les [métadonnées du Système régional de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
 
@@ -54,7 +54,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 ## Documentation technique
 
 - *Lien vers les documents techniques des données (essentiellement pour les données de modèles, les fiches techniques actuellement sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/)*
-- *Lien vers la note technique actuelle pour les NWP (actuellement sur le [Guide des produits](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
+- *Lien vers la note technique actuelle pour les NWEP (actuellement sur le [Guide des produits](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
 - *Liens vers articles scientifiques éventuels*
 
 >Exemple pour le SRPD:
@@ -63,7 +63,8 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 
 ## Registre des changements
 
-*Lien vers la page du journal des changements des systèmes opérationnels (actuellement dans le Guide des produits du CMC) A revoir plus tard si meilleure option.*
+Lien vers la page du journal des changements du système opérationnel (ref: https://eccc-msc.github.io/open-data/msc-data/changelog_nwp_fr/) pour les NWEP.
 
-La chronologie des changements apportés aux sytèmes opérationnels sont disponibles dans [CETTE](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html) page.
+> Exemple: La chronologie des changements apportés au Système régional de prévision déterministe (SRPD) est disponible dans le [registre des changements](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_fr/).
+
 
