@@ -43,7 +43,7 @@ where:
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __Radar-VolumeScans__ : Constant string indicating that the data contains radar volume scans
-* __RADAR_ID__ : 5-letter uppercase code representing the radar identifier, 5-letter uppercase code
+* __RADAR_ID__ : 5-letter uppercase code representing the radar identifier
 * __hdf5__ : Constant string indicating that the format is HDF5
 
 Example:
