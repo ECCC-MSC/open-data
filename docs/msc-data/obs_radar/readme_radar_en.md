@@ -19,10 +19,6 @@ Weather radar data is available from the MSC GeoMet API and web services as well
     * North American radar surface precipitation type [experimental]
     * North American radar extrapolation [experimental]
 * [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
-* [Raw data (volume scans) available in ODIM_H5 format on the MSC Datamart](readme_radaodimh5-datamart_en.md)
-* [Dual Polarization Quantitative Precipitation Estimation (DPQPE) product data available in GeoTIFF format on the MSC Datamart](readme_radardpqpe-datamart_en.md)
-* [North American Composite data available in GeoTIFF format on the MSC Datamart](readme_radarcomposite-datamart_en.md)
-* [Dynamic radar coverage data available in GeoJSON format on the MSC Datamart](readme_radarcouverture-datamart_en.md)
 
 An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
 
