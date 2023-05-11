@@ -43,7 +43,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __Radar-VolumeScans__ : Chaîne de caractères constante indiquant que les données contiennent des volume scans
-* __RADAR_ID__ : Code de 5 lettres en majuscule représentant l'identifiant du radar, code de 5 lettres en lettres majuscules
+* __RADAR_ID__ : Code de 5 lettres majuscules représentant l'identifiant du radar
 * __hdf5__ : Chaîne de caractères constante indiquant que le format est HDF5
 
 Exemple:
