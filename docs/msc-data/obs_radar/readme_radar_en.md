@@ -6,7 +6,7 @@
 
 # Data and products for weather radar observations
 
-This page describes the data and products available for Environment and Climate Change Canada's weather radar network. The network is comprised of 31 sites concentrated in the most populated parts of Canada, and provides radar coverage to more than 95 per cent of Canadians. The network’s primary purpose is the early detection of developing thunderstorms and high impact weather, as well the tracking of precipitation.
+This page describes the data and products available for Environment and Climate Change Canada's weather radar network. The network is comprised of 33 sites concentrated in the most populated parts of Canada, and provides radar coverage to more than 95 per cent of Canadians. The network’s primary purpose is the early detection of developing thunderstorms and high impact weather, as well the tracking of precipitation.
 
 ## Access
 
@@ -19,6 +19,10 @@ Weather radar data is available from the MSC GeoMet API and web services as well
     * North American radar surface precipitation type [experimental]
     * North American radar extrapolation [experimental]
 * [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
+* [Raw data (volume scans) available in ODIM_H5 format on the MSC Datamart](readme_radaodimh5-datamart_en.md)
+* [Dual Polarization Quantitative Precipitation Estimation (DPQPE) product data available in GeoTIFF format on the MSC Datamart](readme_radardpqpe-datamart_en.md)
+* [North American Composite data available in GeoTIFF format on the MSC Datamart](readme_radarcomposite-datamart_en.md)
+* [Dynamic radar coverage data available in GeoJSON format on the MSC Datamart](readme_radarcouverture-datamart_en.md)
 
 An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
 
@@ -51,6 +55,7 @@ Upcoming.
 * [About radar](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/about.html)
 * [Modernizing Canada's weather-radar network](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/modernizing-network.html)
 * [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
+* Radar product guide - __to come__
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

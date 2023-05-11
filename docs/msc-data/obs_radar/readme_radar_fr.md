@@ -2,23 +2,27 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Observations radar
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données et produits radar
 
 # Données et produits des observations radar
 
-Cette page décrit les données et produits des radars canadiens du réseau de 31 sites d’Environnement et Changement climatique Canada qui se concentre dans les régions les plus peuplées du Canada, offrant ainsi une couverture à plus de 95 % des Canadiennes et des Canadiens. La fonction principale du réseau est la détection avancée des précipitations, des orages et des phénomènes météorologiques à grande retombée qui se développent, tout comme de suivre le parcours des précipitations. 
+Cette page décrit les données et produits des radars canadiens du réseau de 33 sites d’Environnement et Changement climatique Canada qui se concentre dans les régions les plus peuplées du Canada, offrant ainsi une couverture à plus de 95 % des Canadiennes et des Canadiens. La fonction principale du réseau est la détection avancée des précipitations, des orages et des phénomènes météorologiques à grande retombée qui se développent, tout comme de suivre le parcours des précipitations. 
 
 ## Accès
 
 ### Comment accéder aux données
 
-Les données radar sont disponibles via l'API et les services web GeoMet du SMC ainsi qu'en tant qu'images statiques GIF sur le serveur de données Datamart du SMC :
+Les données radar sont disponibles via l'API et les services web GeoMet du SMC ainsi que sur le serveur de données Datamart du SMC :
 
 * [Couches de radar disponibles via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md):
     * Composite radar nord-américaine
     * Type de précipitation à la surface du radar nord-américan [expérimental]
     * Extrapolation radar nord-américaine [expérimental]
-* [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md) 
+* [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md)
+* [Données brutes (volume scans) disponibles en format ODIM_H5 sur le Datamart du SMC](readme_radarodimh5-datamart_fr.md)
+* [Données du produit d'estimation quantitative des précipitations à double polarisation (DPQPE) disponibles en format GeoTIFF sur le Datamart du SMC](readme_radardpqpe-datamart_fr.md)
+* [Données de la composite nord-américaine disponibles en format GeoTIFF sur le Datamart du SMC](readme_radarcomposite-datamart_fr.md)
+* [Données de la couverture radar dynamique disponibles en format GeoJSON sur le Datamart du SMC](readme_radarcouverture-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Ci-après est un exemple de carte interactive configurée pour présenter des couches WMS de la composite et de l'extrapolation radar météo servies par GeoMet du SMC.
 
@@ -51,6 +55,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [A propos des radars](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/a-propos.html)
 * [Remplacement du réseau canadien de radars météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/modernisation-reseau.html)
 * [Interruption et maintenance du service radar](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/interruption-maintenance-service.html)
+* Guide des produits radar  --  __à venir__ 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
