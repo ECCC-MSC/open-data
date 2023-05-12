@@ -6,7 +6,7 @@
 
 # Data and Products of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 
-The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) carries out physics calculations to arrive at probabilistic predictions of atmospheric elements from the beginning of a month out to up to 12 months into the future. Atmospheric elements include temperature, precipitation, wind speed and direction and others. This product contains raw numerical results of these calculations. Geographical coverage is global. Data is available on grids at a horizontal resolution of 2.5 and 1.0 degrees and for a few selected vertical levels. Predictions and corresponding hindcast are made available monthly.
+The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) carries out physics calculations to arrive at probabilistic predictions of atmospheric elements from the beginning of a month out to up to 12 months into the future, resulting in seasonal forecasts. Atmospheric elements include temperature, precipitation, wind speed and direction and others. This product contains raw numerical results of these calculations. Geographical coverage is global. Data is available on a grid at a horizontal resolution of 2.5 degrees and 1 degree and for a few selected vertical levels. In addition, forecast probabilities for below, near, and above normal temperature and precipitation are available at both resolutions. Predictions and corresponding hindcast are made available monthly.
 
 ## Access
 
