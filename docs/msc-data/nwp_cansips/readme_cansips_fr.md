@@ -6,7 +6,7 @@
 
 # Données et Produits du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan)
 
-Le Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan) procède à des calculs physiques afin de produire des prévisions probabilistes d'éléments de l'atmosphère du début d'un mois jusqu'à 12 mois dans le futur. Les éléments de l'atmosphère incluent notamment la température, la précipitation, la vitesse et direction des vents. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. Les données sont disponibles pour quelques niveaux verticaux choisis et sur des grilles de résolution spatiale de 2.5 degrés et 1.0 degré. Ces prévisions ainsi que les rétro-prévision correspondantes sont disponibles mensuellement.
+Le Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan) procède à des calculs physiques afin de produire des prévisions probabilistes d'éléments de l'atmosphère du début d'un mois jusqu'à 12 mois dans le futur. Ceci permet d'établir des prévisions saisonnières. Les éléments de l'atmosphère incluent notamment la température, la précipitation, la vitesse et direction des vents. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. Les données sont disponibles pour quelques niveaux verticaux choisis et sur une grille de résolution spatiale de 2.5 degrées et 1 degrée. De plus, les prévisions probabilistes des températures et des précipitations sous la normale, près de la normale, et au-dessus de la normale sont disponibles aux deux résolutions. Ces prévisions ainsi que les rétro-prévision correspondantes sont disponibles mensuellement.
 
 ## Accès
 
