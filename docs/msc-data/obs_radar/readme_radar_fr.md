@@ -6,7 +6,7 @@
 
 # Données et produits des observations radar
 
-Cette page décrit les données et produits des radars canadiens du réseau de 33 sites d’Environnement et Changement climatique Canada qui se concentre dans les régions les plus peuplées du Canada, offrant ainsi une couverture à plus de 95 % des Canadiennes et des Canadiens. La fonction principale du réseau est la détection avancée des précipitations, des orages et des phénomènes météorologiques à grande retombée qui se développent, tout comme de suivre le parcours des précipitations. 
+Cette page décrit les données et produits des radars canadiens du réseau de 32 sites d’Environnement et Changement climatique Canada qui se concentre dans les régions les plus peuplées du Canada, offrant ainsi une couverture à plus de 95 % des Canadiennes et des Canadiens. La fonction principale du réseau est la détection avancée des précipitations, des orages et des phénomènes météorologiques à grande retombée qui se développent, tout comme de suivre le parcours des précipitations. 
 
 ## Accès
 
