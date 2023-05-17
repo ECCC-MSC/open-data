@@ -8,7 +8,7 @@
 
 ## 2023
 
-### 3 mai 20023
+### 3 mai 2023
 
 * [Mise à jour de ARDP suite au remplacement de GOES-17 par GOES-18](nwp_rdpa/changelog_rdpa_fr.md#le-mercredi-3-mai-2023)
 * [Mise à jour de AHRDP suite au remplacement de GOES-17 par GOES-18](nwp_hrdpa/changelog_hrdpa_fr.md#le-mercredi-3-mai-2023)
