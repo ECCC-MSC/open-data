@@ -8,6 +8,11 @@
 
 ## 2023
 
+### May 3, 2023
+
+* [RDPA update following the replacement of GOES-17 by GOES-18](nwp_rdpa/changelog_rdpa_en.md#wednesday-may-3-2023)
+* [HRDPA update following the replacement of GOES-17 by GOES-18](nwp_hrdpa/changelog_hrdpa_en.md#wednesday-may-3-2023)
+
 ### March 23, 2023
 
 * [Upgrade to version 2.1.0 of the INCS to incorporate S-band radar data over Canada](nwp_nowcasting/changelog_nowcasting_en.md#tuesday-march-23-2023)
