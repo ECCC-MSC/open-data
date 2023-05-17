@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA)
 
+## Wednesday May 3, 2023
+
+### HRDPA update following the replacement of GOES-17 by GOES-18
+
+Since January 4, 2023 at 18Z, the GOES-18 satellite has taken over from GOES-17 as the operational western satellite. Within the operational HRDPA system, GOES satellite observations are used to perform some of the post-processing of radar precipitation estimates. In particular, GOES data are used to create a cloud mask to clean up the radar data.
+
+Since the GOES-17 satellite disappeared on January 4, the HRDPA system has relied on the NT field of the HRDPS forecast model to build the cloud mask. This contingency solution allowed post-processing of the radar precipitation estimates, but with less reliability than with GOES data.
+
+To further optimize the post-processing of the radar precipitation estimates, HRDPA was updated on May 3, 2023 to assimilate GOES-18 data in addition to the already assimilated GOES-16 data.
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 5.2.0 of the HRDPA adapted to the New High Performance Computing Infrastructure.

@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
+## Le mercredi 3 mai 2023
+
+### Mise à jour de ARDP suite au remplacement de GOES-17 par GOES-18
+
+Depuis le 4 janvier 2023 à 18Z, le satellite GOES-18 a pris le relais du satellite GOES-17 en tant que satellite occidental opérationnel. Au sein du système opérationnel ARDP, les observations du satellite GOES sont utilisées pour effectuer une partie du post-traitement des estimés de précipitation radar. En particulier, les données GOES sont utilisées pour créer un masque de nuages afin de nettoyer les données radar.
+
+Depuis la disparition du satellite GOES-17 le 4 janvier, le système ARDP s'est appuyé sur le champ NT du modèle de prévision SRPD pour construire le masque de nuages. Cette solution de contingence a permis d'effectuer le post-traitement des estimés de précipitation radar, mais avec une fiabilité moindre qu'avec les données GOES.
+
+Afin d'optimiser de nouveau le post-traitement des estimés de précipitation radar, le système ARDP a été mis à jour le 3 mai 2023 pour assimiler les données GOES-18 en plus des données GOES-16 déjà assimilées.
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour de ARDP à la version 5.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
