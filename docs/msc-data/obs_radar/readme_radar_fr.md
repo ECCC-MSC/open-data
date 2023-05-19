@@ -44,7 +44,12 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées de Composite radar nord-américaine (1 km) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
+* Les [métadonnées de Couverture dynamique de la composite radar sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).
+* Les [métadonnées de Radars météorologiques - Accumulation sur 24 heures sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/ce9e475b-3e3b-4b15-9ac4-165549366b09).
+* Les [métadonnées de Radars météorologiques - CAPPI sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/aae10768-0c0c-4670-807e-8e893680887e).
+* Les [métadonnées de Radars météorologiques - EQPDP sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/6059da1d-e1da-4f2b-a420-b5c2a130eeaa).
+* Les [métadonnées de Radars météorologiques - PRECIP-ET sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/d76c0f4e-af27-4f9c-b0b0-0eba5aca1d3b).
 
 ## Documentation technique
 

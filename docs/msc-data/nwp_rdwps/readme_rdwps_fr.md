@@ -40,7 +40,11 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées du Système régional de prévision déterministe de vague - National sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/9a6594f9-ad0e-4421-ba9d-16338e5a9cbe).
+* Les [métadonnées du Système régional de prévision déterministe de vague - Lac Érié sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/bf1884e2-cbbb-4a50-ab40-c5b417723d17).
+* Les [métadonnées du Système régional de prévision déterministe de vague - Lac Huron-Michigan sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/631e570e-59c3-42d7-aa7b-5a4666ab62b5).
+* Les [métadonnées du Système régional de prévision déterministe de vague - Lac Ontario sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/38414289-4beb-4854-af58-5ab3b66665eb).
+* Les [métadonnées du Système régional de prévision déterministe de vague - Lac Supérieur sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/88a5111c-136c-42a7-907f-523ad4365165).
 
 ## Produits
 

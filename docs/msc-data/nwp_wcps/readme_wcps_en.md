@@ -33,7 +33,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-To come.
+The [metadata of the Water Cycle Prediction System - Ocean-Atmosphere is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/36129cbc-3997-4b8e-a8bf-5fb44492134d).
 
 ## Technical documentation
 

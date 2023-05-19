@@ -45,7 +45,13 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-* Les [métadonnées en application de données hydrométriques en temps réel  sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/ef2161a8-b01d-4dfb-ad00-1a70f7c4073b)
+* Les [métadonnées de Données hydrométriques en temps réel sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/ef2161a8-b01d-4dfb-ad00-1a70f7c4073b)
+* Les [métadonnées de Données hydrométriques historiques sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/1ee9e14d-0814-5201-a3be-705809d8ee0e)
+* Les [métadonnées de Moyenne mensuelle des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/76747350-2faa-490e-90d1-0e5af6e66027)
+* Les [métadonnées de Moyenne quotidienne des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/f8b1490e-873e-480a-9037-6eb075f63106)
+* Les [métadonnées de Maximum et minimum annuels des moyennes quotiennes des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/0e73142b-c4a7-4bf0-8d16-72ac2df60fc1)
+* Les [métadonnées de Maximum et minimum annuels des niveaux ou débits d'eau instantanés sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/49126bff-0de8-4b9d-8c03-189be2e66261)
+* Les [métadonnées de Stations de surveillance hydrométrique sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/46763060-e859-4812-8da5-2361d99b4c34)
 
 ## Documentation technique
 

@@ -33,7 +33,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the Lightning Density Data is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/75dfb8cb-9efc-4c15-bcb5-7562f89517ce).
 
 ## Technical documentation
 

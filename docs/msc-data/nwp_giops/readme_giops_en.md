@@ -29,7 +29,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the Global Ice-Ocean Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/dc3a7022-95e8-45a7-bf63-3d45b6cda0dc).
 
 ## Technical documentation
 

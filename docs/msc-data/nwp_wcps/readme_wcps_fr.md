@@ -33,7 +33,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées du Système de prévision du cycle de l'eau - Océan-Atmosphère sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/36129cbc-3997-4b8e-a8bf-5fb44492134d).
 
 ## Documentation technique
 

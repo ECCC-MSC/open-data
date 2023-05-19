@@ -28,7 +28,9 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées du Système de prévision côtier océan-glace pour la Côte Est du Canada (SPCOG-Est) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/bfe44cce-a9c4-467f-9172-c8800b32e4ec).
+* Les [métadonnées du Système de prévision côtier océan-glace pour la Côte Ouest du Canada (SPCOG-Ouest) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/390abee6-4ba0-4d6e-ae79-25753d1c43f3).
+* Les [métadonnées du Système de prévision côtier océan-glace pour la région de la mer des Salish (SPCOG-MerDesSalish) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/cccb0064-5ab3-416a-a4f0-566b54f466f3).
 
 ## Documentation technique
 

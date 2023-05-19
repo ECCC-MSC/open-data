@@ -53,6 +53,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * Les [métadonnées des données quotidiennes sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098)
 * Les [métadonnées des données horaires sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c)
 * Les [métadonnées des données mensuelles sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/b24efb37-11b6-5d03-ab19-5759f83db546)
+* Les [métadonnées des données de stations climatiques sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/bc52b7a8-46ef-4a7f-90e0-7780abac398c)
 
 ## Produits 
 

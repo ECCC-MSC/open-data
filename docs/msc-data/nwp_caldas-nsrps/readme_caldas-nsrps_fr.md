@@ -28,7 +28,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières [expérimental] sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/3959c86b-b555-4ad8-9fcc-8fecfb79918c).
 
 ## Documentation technique
 

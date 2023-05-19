@@ -44,7 +44,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-The [metadata of the Global Deterministic Forecasting System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
+The [metadata of the Global Deterministic Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
 
 ## Products
 

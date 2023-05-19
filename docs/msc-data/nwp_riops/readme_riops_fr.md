@@ -29,7 +29,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées du Système régional de prévision océan-glace sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/66caa8cc-0e9c-4fdb-ae40-fab9c255b811).
 
 ## Documentation technique
 

@@ -45,7 +45,13 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-The [metadata of the real time hydrometric data tool are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/ef2161a8-b01d-4dfb-ad00-1a70f7c4073b)
+* The [metadata of the Real-time Hydrometric Data are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/65d3a88b-eb09-4fd9-ac44-cf42dc1f7444)
+* The [metadata of the Historical Hydrometric Data are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/1ee9e14d-0814-5201-a3be-705809d8ee0e)
+* The [metadata of the Monthly Mean of Water Level or Flow are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/76747350-2faa-490e-90d1-0e5af6e66027)
+* The [metadata of the Daily Mean of Water Level or Flow are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/f8b1490e-873e-480a-9037-6eb075f63106)
+* The [metadata of the Annual Maximum and Minimum Daily Water Level or Flow are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/0e73142b-c4a7-4bf0-8d16-72ac2df60fc1)
+* The [metadata of the Annual Maximum and Minimum Instantaneous Water Level or Flow are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/49126bff-0de8-4b9d-8c03-189be2e66261)
+* The [metadata of the Hydrometric Monitoring Stations are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/46763060-e859-4812-8da5-2361d99b4c34)
 
 ## Technical documentation
 

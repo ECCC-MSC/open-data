@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.44
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Metadata section updated for several datasets
+* bug fixes:
+    * None
+
 ## 2.4.43
 
 * date:  2023-05-05
