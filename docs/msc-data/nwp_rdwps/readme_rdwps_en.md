@@ -41,7 +41,11 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the Regional Deterministic Wave Prediction System - National is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/9a6594f9-ad0e-4421-ba9d-16338e5a9cbe).
+* The [metadata of the Regional Deterministic Wave Prediction System - Lake Erie is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bf1884e2-cbbb-4a50-ab40-c5b417723d17).
+* The [metadata of the Regional Deterministic Wave Prediction System - Lake Huron-Michigan is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/631e570e-59c3-42d7-aa7b-5a4666ab62b5).
+* The [metadata of the Regional Deterministic Wave Prediction System - Lake Ontario is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/38414289-4beb-4854-af58-5ab3b66665eb).
+* The [metadata of the Regional Deterministic Wave Prediction System - Lake Superior is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/88a5111c-136c-42a7-907f-523ad4365165).
 
 ## Products
 

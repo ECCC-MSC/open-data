@@ -30,7 +30,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-Les [métadonnées du Système à haute résolution de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5b401fa0-6c29-57f0-b3d5-749f301d829d)
+* Les [métadonnées du Système à haute résolution de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5b401fa0-6c29-57f0-b3d5-749f301d829d).
+* Les [métadonnées des Éléments du temps sur grille dérivés du Système à haute résolution de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/9eaf8b65-a734-432e-925c-7fbe8fc65670).
 
 ## Documentation technique
 

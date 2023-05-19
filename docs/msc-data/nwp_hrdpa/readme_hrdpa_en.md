@@ -29,7 +29,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-The [metadata of the High Resolution Deterministic Precipitation Analysis are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/eff69d42-ce81-4672-867f-cc3baaf4157a).
+The [metadata of the High Resolution Deterministic Precipitation Analysis is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/eff69d42-ce81-4672-867f-cc3baaf4157a).
 
 ## Technical documentation
 

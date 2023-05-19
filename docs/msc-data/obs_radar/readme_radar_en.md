@@ -44,7 +44,12 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the North American Radar Composite (1 km) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
+* The [metadata of the Dynamic Radar Composite Coverage is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).
+* The [metadata of the Weather Radar - 24 Hour Accumulation is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/ce9e475b-3e3b-4b15-9ac4-165549366b09).
+* The [metadata of the Weather Radar - CAPPI is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/aae10768-0c0c-4670-807e-8e893680887e).
+* The [metadata of the Weather Radar - DPQPE is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6059da1d-e1da-4f2b-a420-b5c2a130eeaa).
+* The [metadata of the Weather Radar - PRECIP-ET is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/d76c0f4e-af27-4f9c-b0b0-0eba5aca1d3b).
 
 ## Technical documentation
 

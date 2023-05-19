@@ -31,7 +31,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
  
-À venir.
+Les [métadonnées de l'Analyse à Haute Résolution Ensembliste de Précipitation [expérimental] sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/62c5f03f-8f03-466a-960a-88fbc5882c11).
 
 ## Documentation technique
 

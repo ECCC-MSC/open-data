@@ -33,7 +33,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées de Données de densité de foudre sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/75dfb8cb-9efc-4c15-bcb5-7562f89517ce).
 
 ## Documentation technique
 

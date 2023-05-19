@@ -31,7 +31,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the High Resolution Ensemble Precipitation Analysis [experimental] is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/62c5f03f-8f03-466a-960a-88fbc5882c11).
 
 ## Technical documentation
 

@@ -28,7 +28,9 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-To come.
+* The [metadata of the Coastal Ice-Ocean Prediction System for the East Coast of Canada (CIOPS-East) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bfe44cce-a9c4-467f-9172-c8800b32e4ec).
+* The [metadata of the Coastal Ice-Ocean Prediction System for the West Coast of Canada (CIOPS-West) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/390abee6-4ba0-4d6e-ae79-25753d1c43f3).
+* The [metadata of the Coastal Ice-Ocean Prediction System for the Salish Sea region (CIOPS-SalishSea) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/cccb0064-5ab3-416a-a4f0-566b54f466f3).
 
 ## Technical documentation
 

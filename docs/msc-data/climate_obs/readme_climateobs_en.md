@@ -49,10 +49,11 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-* The [metadata of the climate normals are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652).
-* The [metadata of the climate daily are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098).
-* The [metadata of the climate hourly are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c)
-* The [metadata of the climate monthly are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/b24efb37-11b6-5d03-ab19-5759f83db546).
+* The [metadata of the climate normals is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652).
+* The [metadata of the climate daily is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098).
+* The [metadata of the climate hourly is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c)
+* The [metadata of the climate monthly is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/b24efb37-11b6-5d03-ab19-5759f83db546).
+* The [metadata of the climate stations is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bc52b7a8-46ef-4a7f-90e0-7780abac398c).
 
 ## Products 
 

@@ -31,7 +31,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the Global Deterministic Wave Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/803a6e2a-41ed-44c2-9eeb-1b5306b4048e).
 
 ## Products
 
