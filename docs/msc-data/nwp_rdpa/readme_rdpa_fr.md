@@ -63,7 +63,7 @@ Des [cartes d'analyses](https://meteo.gc.ca/analysis/index_f.html#APCP) de cumul
 
 * [Version actuelle de l'Analyse régionale déterministe de précipitation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_rdpa_f.pdf)
-* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RDPA_fr.svg)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RDPA_fr.svg)
 
 ## Registre des changements
 

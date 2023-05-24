@@ -71,7 +71,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips_e.pdf)
 * [Arcticle scientifique - Version anglaise seulement](https://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
-* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CanSIPS_fr.svg)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CanSIPS_fr.svg)
 
 ## Registre des changements 
 

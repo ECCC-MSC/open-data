@@ -36,7 +36,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 * [Version actuelle du Système global de prévision déterministe d'onde de tempête](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDSPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdsps_f.pdf)
-* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDSPS_fr.svg)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDSPS_fr.svg)
 
 ## Registre des changements
 

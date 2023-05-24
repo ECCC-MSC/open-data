@@ -38,7 +38,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 * [Version actuelle du Système régional de prévision d'ensemble de vague](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_REWPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rewps_f.pdf)
-* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_REWPS_fr.svg)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_REWPS_fr.svg)
 
 ## Registre des changements
 

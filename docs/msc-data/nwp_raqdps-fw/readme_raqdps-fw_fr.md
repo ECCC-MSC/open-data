@@ -50,7 +50,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ## Documentation technique
 
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_f.pdf)
-* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RAQDPS_FW_fr.svg)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RAQDPS_FW_fr.svg)
 
 ## Registre des changements 
 
