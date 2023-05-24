@@ -50,6 +50,7 @@ Upcoming.
 ## Technical documentation
 
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdpsfw_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RAQDPS-FW_en.svg)
 
 ## Changelog
 

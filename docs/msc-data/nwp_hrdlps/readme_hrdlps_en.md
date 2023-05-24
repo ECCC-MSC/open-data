@@ -36,6 +36,7 @@ To come.
 
 * [Current version of the High Resolution Deterministic Land Surface Prediction System (HRDLPS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDLPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdlps_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_NSRPS-HRDLPS_en.svg)
 
 ## Changelog 
 

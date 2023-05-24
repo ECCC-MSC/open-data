@@ -34,6 +34,7 @@ The [metadata of the Canadian Land Data Assimilation System in the National Surf
 
 * [Current version of the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-310_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_caldas-nsrps_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_NSRPA-CaLDAS_en.svg)
 
 ## Changelog 
 
