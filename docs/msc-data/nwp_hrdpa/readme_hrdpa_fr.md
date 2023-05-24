@@ -35,6 +35,7 @@ Les [métadonnées de l'Analyse à haute résolution déterministe de précipita
 
 * [Version actuelle du Système d’analyse à haute résolution déterministe de précipitation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPA_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_f.pdf)
+* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPA_fr.svg)
 
 ## Registre des changements 
 

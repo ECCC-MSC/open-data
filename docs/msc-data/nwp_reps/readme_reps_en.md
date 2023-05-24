@@ -35,6 +35,7 @@ The [metadata of the Regional Ensemble Prediction System is available on the Ope
 
 * [Actual version of the Regional Ensemble Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_REPS_en.svg)
 
 ## Changelog
 

@@ -35,6 +35,7 @@ Les [métadonnées du Système régional de prévision océan-glace sont accessi
 
 * [Version actuelle du Système Régional de Prévision Océan-Glace](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RIOPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_riops_f.pdf)
+* [Diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RIOPS_fr.svg)
 
 ## Registre des changements 
 

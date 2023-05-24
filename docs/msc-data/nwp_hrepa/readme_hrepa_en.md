@@ -37,6 +37,7 @@ The [metadata of the High Resolution Ensemble Precipitation Analysis [experiment
 
 * [Actual version of the High Resolution Ensemble Precipitation Analysis](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HREPA_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrepa_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_NSRPS-HREPA_en.svg)
 
 ## Changelog
 

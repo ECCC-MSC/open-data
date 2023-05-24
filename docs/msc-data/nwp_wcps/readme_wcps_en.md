@@ -39,6 +39,7 @@ The [metadata of the Water Cycle Prediction System - Ocean-Atmosphere is availab
 
 * [Current version of the Water Cycle Prediction System (WCPS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_WCPS_en.svg)
 
 ## Changelog 
 

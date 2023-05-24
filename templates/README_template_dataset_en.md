@@ -55,6 +55,7 @@ List and link to available products for this dataset:
 
 - *Link to data technical documents (mainly for model data, data sheets currently on [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/)*
 - *Link to current technical note for NWP (currently on [Product Guide](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
+- *Link to [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams) of the system*
 - *Links to any scientific articles*
 
 >Example for the SRPD:

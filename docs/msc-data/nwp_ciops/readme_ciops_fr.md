@@ -35,9 +35,11 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ## Documentation technique
 
 * [Version actuelle du Système de prévision côtier océan-glace sur le domaine est (SPCOG-Est)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_f.pdf)
-* [Version actuelle du Système de prévision côtier océan-glace sur le domaine ouest (SPCOG-Ouest)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_f.pdf)
 * [Note technique du SPCOG-Est](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-east_f.pdf)
+* [Diagramme de dépendance du SPCOG-Est](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CIOPS-E_fr.svg)
+* [Version actuelle du Système de prévision côtier océan-glace sur le domaine ouest (SPCOG-Ouest)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_f.pdf)
 * [Note technique du SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-west_f.pdf)
+* [Diagramme de dépendance du SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CIOPS-W_fr.svg)
 
 ## Registre des changements 
 

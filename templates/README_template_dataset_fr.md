@@ -55,6 +55,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données:
 
 - *Lien vers les documents techniques des données (essentiellement pour les données de modèles, les fiches techniques actuellement sur [Collaboration](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/)*
 - *Lien vers la note technique actuelle pour les NWEP (actuellement sur le [Guide des produits](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_f.html)*
+- *Lien vers le *[diagramme de dépendance](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams) du système*
 - *Liens vers articles scientifiques éventuels*
 
 >Exemple pour le SRPD:
