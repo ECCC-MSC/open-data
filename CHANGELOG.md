@@ -10,11 +10,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.44
 
-* date:
+* date: 2023-05-25
 * announcements:
     * Not announced
 * new content:
-    * None
+    * NWEP diagrams of dependencies
+    * RDPA changelog update
 * improvements:
     * Metadata section updated for several datasets
 * bug fixes:
