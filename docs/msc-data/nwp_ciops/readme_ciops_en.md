@@ -37,7 +37,6 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 * [Current version of the Coastal Ice Ocean Prediction System over the East domain (CIOPS-East)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_e.pdf)
 * [Technical note for CIOPS-East](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-east_e.pdf)
 * [Diagram of dependencies for CIOPS-East](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CIOPS-E_en.svg)
-
 * [Current version of the Coastal Ice Ocean Prediction System over the West domain (CIOPS-West)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_e.pdf)
 * [Technical note for CIOPS-West](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-west_e.pdf)
 * [Diagram of dependencies for CIOPS-West](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CIOPS-W_en.svg)
