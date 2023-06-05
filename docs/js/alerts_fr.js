@@ -10,6 +10,8 @@ function capitalizeFirstLetter(string) {
 /**
  * Elements that make up the popup.
  */
+let legendContainer = document.getElementById("legend-popup");
+let legendContent = document.getElementById("legend-popup-content");
 let container = document.getElementById("popup");
 let content = document.getElementById("popup-content");
 let closer = document.getElementById("popup-closer");
@@ -108,8 +110,35 @@ let layers = [
     })
   })
 ];
+// **************************** Add legend button control **************************************
+class LegendSwitchControl extends ol.control.Control {
+
+  constructor(opt_options) {
+    const options = opt_options || {};
+
+    const button = document.createElement('button');
+    button.innerHTML = 'L';
+
+    const element = document.createElement('div');
+    element.className = 'legend-switch ol-unselectable ol-control';
+    element.appendChild(button);
+
+    super({
+      element: element,
+      target: options.target,
+    });
+    button.addEventListener('click', this.handleLegendSwitch.bind(this), false);
+  }
+
+  handleLegendSwitch() {
+    legendContainer.hidden = !legendContainer.hidden;
+  }
+}
+
+// **************************** Add legend button control end ***********************************
 
 let map = new ol.Map({
+  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl()]),
   target: "map",
   layers: layers,
   overlays: [overlay],

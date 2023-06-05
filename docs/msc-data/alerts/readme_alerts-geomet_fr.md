@@ -15,7 +15,13 @@ La couche des alertes météo est [disponible sur GeoMet-Météo par le biais du
 
 Exemple de carte interactive présentant la couche Web Map Service (WMS) des alertes météo provenant de GeoMet du SMC:
 
-<div id="map" style="height: 400px; margin-bottom: 1rem;"></div>
+<div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES"/>
+  </div>
+</div>
+</div>
 <div id="popup" class="ol-popup">
     <a href="#" id="popup-closer" class="ol-popup-closer"></a>
     <div id="popup-content"></div>
@@ -143,6 +149,24 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
       overflow: auto;
       max-height: 5rem;
     }
+
+    
+    #legend-img {
+       margin: 0px;
+    }
+    #legend-popup {
+      position: absolute;
+      top: 40px;
+     right: 8px;
+      z-index: 2;
+   }
+    .legend-switch{
+      top: 8px;
+      right: .5em;
+    }
+    .ol-touch .legend-switch {
+      top: 80px;
+  }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>

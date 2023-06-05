@@ -20,7 +20,13 @@ Ces données sont respectivement disponibles sur les services du serveur de donn
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 Exemple de carte interactive présentant la couche `ALERTS` provenant de GeoMet du SMC :
-<div id="map" style="height: 400px; margin-bottom: 1rem;"></div>
+<div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES"/>
+  </div>
+</div>
+</div>
 <div id="popup" class="ol-popup">
     <a href="#" id="popup-closer" class="ol-popup-closer"></a>
     <div id="popup-content"></div>
@@ -131,6 +137,23 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
       overflow: auto;
       max-height: 5rem;
     }
+    
+    #legend-img {
+       margin: 0px;
+    }
+    #legend-popup {
+      position: absolute;
+      top: 40px;
+     right: 8px;
+      z-index: 2;
+   }
+    .legend-switch{
+      top: 8px;
+      right: .5em;
+    }
+    .ol-touch .legend-switch {
+      top: 80px;
+  }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
