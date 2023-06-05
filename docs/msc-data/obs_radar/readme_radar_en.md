@@ -22,7 +22,13 @@ Weather radar data is available from the MSC GeoMet API and web services as well
 
 An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
 
-<div id="map" style="height: 400px;"></div>
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RRAI&STYLE=&TRANSPARENT=true"/>
+  </div>
+</div>
+</div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
   <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
@@ -57,6 +63,25 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 * [Modernizing Canada's weather-radar network](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/modernizing-network.html)
 * [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
 * Radar product guide - __to come__
+
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

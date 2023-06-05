@@ -20,7 +20,13 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the [AHCCD.STATIONS](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=AHCCD.STATIONS) layer served by MSC GeoMet:
 
-<div id="map" style="height: 400px;"></div>
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AHCCD.STATIONS&format=image/png&STYLE=default"/>
+  </div>
+</div>
+</div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
@@ -42,6 +48,25 @@ The [metadata of the Adjusted and Homogenized Canadian Climate Data are availabl
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_ahccd/AHCCD_Technical_Documentation_en.pdf)
 * This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
 
+
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

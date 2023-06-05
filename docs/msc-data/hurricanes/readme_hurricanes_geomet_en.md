@@ -15,7 +15,13 @@ The hurricane prediction layers are [available on GeoMet-Weather via the Web Map
 
 Example of a web map displaying the hurricane response zone and active hurricanes Web Map Service (WMS) layers, along with weather alerts and precipitation layers, served by MSC GeoMet:
 
-<div id="map" style="height: 400px;"></div>
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HURRICANE_RESPONSE_ZONE&format=image/png&STYLE=HURRICANE_LINE_BLACK_DASHED"/>
+  </div>
+</div>
+</div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
   <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
@@ -66,6 +72,25 @@ The MSC GeoMet services are operational 24/7. User support is provided on a best
 ## Announcement mailing list
 
 We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
