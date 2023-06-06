@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.4.45
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Add legend switch on interactive maps
+    * Add scale line on interactive maps
+* bug fixes:
+    * None
+
 ## 2.4.44
 
 * date: 2023-05-25
