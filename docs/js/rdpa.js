@@ -67,7 +67,7 @@ class LegendSwitchControl extends ol.control.Control {
 // **************************** Add legend button control end ***********************************
 
 let map = new ol.Map({
-  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl()]),
+  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl(), new ol.control.ScaleLine()]),
   target: 'map',
   layers: layers,
   view: new ol.View({

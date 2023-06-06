@@ -46,7 +46,7 @@ class LegendSwitchControl extends ol.control.Control {
 
 let map = new ol.Map({
   target: 'map',
-  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl()]),
+  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl(), new ol.control.ScaleLine()]),
   layers: layers,
   view: new ol.View({
     center: ol.proj.fromLonLat([-97, 57]),
