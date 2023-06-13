@@ -109,6 +109,17 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
   .ol-touch .legend-switch {
     top: 80px;
   }
+  .distinguish-switch{
+    top: 8px;
+    right: 2.25em;
+    width: 10rem;
+  }
+  .ol-touch .distinguish-switch{
+    top: 80px;
+  }
+  .distinguish-switch.ol-unselectable.ol-control button{
+    width: 10rem;
+  }
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>

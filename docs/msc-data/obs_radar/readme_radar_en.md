@@ -22,7 +22,7 @@ Weather radar data is available from the MSC GeoMet API and web services as well
 
 An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
 
-<div id="map" style="height: 400px; position: relative">
+<div id="map" style="height: 400px; position: relative">  
   <div id="legend-popup">
   <div id="legend-popup-content">
     <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RRAI&STYLE=&TRANSPARENT=true"/>
@@ -81,6 +81,18 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
   .ol-touch .legend-switch {
     top: 80px;
   }
+  .distinguish-switch{
+    top: 8px;
+    right: 2.25em;
+    width: 10rem;
+  }
+  .ol-touch .distinguish-switch{
+    top: 80px;
+  }
+  .distinguish-switch.ol-unselectable.ol-control button{
+    width: 10rem;
+  }
+   
 </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
