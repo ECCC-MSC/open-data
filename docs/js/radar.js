@@ -146,8 +146,35 @@ class LegendSwitchControl extends ol.control.Control {
 }
 
 // **************************** Add legend button control end ***********************************
+
+// **************************** Add distinguish button control **************************************
+class DistinguishSwitchControl extends ol.control.Control {
+
+  constructor(opt_options) {
+    const options = opt_options || {};
+
+    const button2 = document.createElement('button');
+    button2.innerHTML = '';
+
+    const element = document.createElement('div');
+    element.className = 'distinguish-switch ol-unselectable ol-control';
+    element.appendChild(button2);
+
+    super({
+      element: element,
+      target: options.target,
+    });
+  }
+
+}
+// **************************** Add distinguish button control end ***********************************
+
 let map = new ol.Map({
-  controls: ol.control.defaults.defaults().extend([new LegendSwitchControl(), new ol.control.ScaleLine()]),
+  controls: ol.control.defaults.defaults().extend([
+    new LegendSwitchControl(),
+    new ol.control.ScaleLine(),
+    new DistinguishSwitchControl()
+  ]),
   target: 'map',
   layers: layers,
   view: new ol.View({
@@ -182,8 +209,11 @@ layers[1].getSource().on("imageloaderror", () => {
   })
 });
 
+
 function updateLayers() {
+  let display = document.querySelector(".distinguish-switch.ol-unselectable.ol-control button");
   if (currentTime <= observationEndTime) {
+    display.innerHTML = "OBSERVATION";
     if (isSnow) {
       layers[1].getSource().updateParams({'LAYERS': 'RADAR_1KM_RSNO', 'TIME': currentTime.toISOString().split('.')[0]+"Z"});
     } else {
@@ -191,10 +221,15 @@ function updateLayers() {
     }
     layers[2].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+"Z"});
   } else {
+    display.innerHTML = "EXTRAPOLATION";
     if (isSnow) {
-      layers[1].getSource().updateParams({'LAYERS': 'Radar_1km_SnowPrecipRate-Extrapolation', 'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+      layers[1].getSource().updateParams(
+        {'LAYERS': 'Radar_1km_SnowPrecipRate-Extrapolation',
+        'TIME': currentTime.toISOString().split('.')[0]+"Z"});
     } else {
-      layers[1].getSource().updateParams({'LAYERS': 'Radar_1km_RainPrecipRate-Extrapolation', 'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+      layers[1].getSource().updateParams(
+        {'LAYERS': 'Radar_1km_RainPrecipRate-Extrapolation',
+        'TIME': currentTime.toISOString().split('.')[0]+"Z"});
     }
   }
 }
