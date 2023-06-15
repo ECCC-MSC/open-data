@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add legend switch on interactive maps
     * Add scale line on interactive maps
     * Add a label to distinguish between observation/extrapolation on weather radar interactive maps
+    * Add current conditions interactive map to City Page Weather documentation
 * bug fixes:
     * None
 
