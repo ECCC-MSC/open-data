@@ -37,7 +37,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
   <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;"></span>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
 ### Licence

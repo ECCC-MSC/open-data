@@ -37,7 +37,7 @@ An [overview and examples on how to access and use the Meteorological Service of
   <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;"></span>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
 ### Licence
@@ -92,8 +92,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
   .distinguish-switch.ol-unselectable.ol-control button{
     width: 10rem;
   }
-   
-</style>
+  </style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>

@@ -53,6 +53,15 @@ let observationEndTime = null;
 let extrapolationStartTime = null;
 let extrapolationEndTime = null;
 let isSnow = false;
+let dateIsLocal = true;
+const dateOptions = {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZoneName: 'short'
+};
 
 // Initiate the right layers depending on the time of year
 let layers = [];
@@ -234,10 +243,17 @@ function updateLayers() {
   }
 }
 
+// Dispalying current map time
 function updateInfo() {
   let el = document.getElementById('info');
-  el.innerHTML = `Time / Heure: ${currentTime.toISOString().substr(0, 16)+"Z"}`
+  if (dateIsLocal) {
+    el.innerHTML = `Time/Heure: ${currentTime.toLocaleString(navigator.local, dateOptions)}`
+  } else {
+    el.innerHTML = `Time/Heure: ${currentTime.toISOString().substr(0, 16)+"Z"}`
+  }
 }
+
+
 
 // Disable/enable buttons depending on the state of the map
 function updateButtons() {
@@ -432,6 +448,11 @@ function exportMapFunction(e) {
   map.renderSync();
 };
 
+function switchDateFormat(e) {
+  dateIsLocal = !dateIsLocal
+  updateInfo()
+}
+
 let fastBackwardButton = document.getElementById('fast-backward');
 fastBackwardButton.addEventListener('click', fastBackward, false);
 
@@ -449,6 +470,9 @@ fastForwardButton.addEventListener('click', fastForward, false);
 
 let exportButton = document.getElementById('exportmap');
 exportButton.addEventListener('click', exportMapFunction, false);
+
+let dateInfo = document.getElementById('info');
+dateInfo.addEventListener('click', switchDateFormat, false);
 
 
 // Initiate the map
