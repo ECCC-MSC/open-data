@@ -30,7 +30,7 @@ Example of a web map configured to display the weather radar composite and extra
   <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;"></span>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 MSC GeoMet's North American weather radar composite and extrapolation layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
 
