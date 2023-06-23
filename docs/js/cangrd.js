@@ -24,7 +24,7 @@ class LegendSwitchControl extends ol.control.Control {
     const options = opt_options || {};
 
     const button = document.createElement('button');
-    button.innerHTML = 'L';
+    button.innerHTML = '<i class="fa fa-paint-brush"></i>';
 
     const element = document.createElement('div');
     element.className = 'legend-switch ol-unselectable ol-control';
