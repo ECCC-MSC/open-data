@@ -41,7 +41,7 @@ où :
 Un historique de 1 mois est conservé dans ces répertoires (sauf pour les prévisions rétrospectives)
 
 ## Spécification technique de la grille
-{
+
 Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, selon la résolution.
 
 ### Données à 2.5 degrés de résolution
@@ -89,7 +89,7 @@ où :
 * __raw__ : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé
 * __VAR__ : Variables contenues dans les fichiers, voir la section des variables
 * __Var__ : Variables contenues dans les fichiers [PrecipRate, AirTemp]
-* __ StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
+* __StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __LVLTYPE__ : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]
 * __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]

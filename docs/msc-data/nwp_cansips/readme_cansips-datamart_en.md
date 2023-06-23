@@ -32,7 +32,7 @@ The data can be accessed at the following URLs :
 
 where :
 
-* __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcats part.
+* __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part.
 * __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
 * __100km__ : Indicate a 1 degree resolution (around 100km)
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
