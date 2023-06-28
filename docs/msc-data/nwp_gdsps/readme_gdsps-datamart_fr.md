@@ -73,7 +73,8 @@ La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une br
 
 __NOTE__:
 
-En post-traitement, le niveau d'eau associé à l'onde de tempête (ETAS) est dérivé à partir du niveau d’eau total (SSH) par analyse harmonique en utilisant t_tide (Foreman et al. 2009). Le niveau de l’onde de tempête est calculé pour la région autour du Canada délimitée par [150W, 40W] X [40 N, 80 N] et sur une bande de 100 km le long du littoral du reste du monde. Ailleurs, ETAS est masqué. Le niveau d'eau du modèle associé à la marée (SSHT) peut être obtenu en faisant la différence SSH-ETAS, là où ETAS est défini.
+* La Hauteur de la surface de la mer (SSH) est relative au Niveau moyen de la mer (NMM) tel que défini par la moyenne de SSH au cours des 365 derniers jours de pseudo-analyse.
+* En post-traitement, le niveau d'eau associé à l'onde de tempête (ETAS) est dérivé à partir de la hauteur de la surface de la mer (SSH) par analyse harmonique en utilisant t_tide (Foreman et al. 2009). Le niveau de l’onde de tempête est calculé pour la région autour du Canada délimitée par [150W, 40W] X [40 N, 80 N] et sur une bande de 100 km le long du littoral du reste du monde. Ailleurs, ETAS est masqué. Le niveau d'eau du modèle associé à la marée (SSHT) peut être obtenu en faisant la différence SSH-ETAS, là où ETAS est défini.
 
 ## Support
 
