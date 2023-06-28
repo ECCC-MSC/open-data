@@ -113,42 +113,83 @@ __Note__: Les fichiers contiennent par défaut tous les membres d'ensemble. Les 
 
 ## Liste des variables
 
-Les variables pour les __produits d'ensemble__ disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
-
-* __FPRATE__ : Pluie verglaçante accumulée sur une période. Ex: FPRATE-Accum24h-Prob 
-* __HEATX__ : Humidex à 2m au-dessus du sol. Ex: HEATX-Prob_AGL-2m; HEATX-Max24h-Prob_AGL-2m (humidex maximum à 2m au-dessus du sol sur une période de 24h) 
-* __IPRATE__ : Grésil (équivalent en eau) accumulé sur une période. Ex: IPRATE-Accum12h-Prob
-* __RPRATE__ : Pluie accumulée sur une période. Ex: RPRATE-Accum6h-Prob 
-* __SPRATE__ : Neige (équivalent en eau) accumulée sur une période. Ex: SPRATE-Accum24h-Prob 
-* __TEMP__ / __TMP__ : Température à 2m au-dessus du sol. Ex: TMP-Prob_AGL-2m; TMP-Max24h-Prob_AGL-2m (température maximum à 2m au-dessus du sol sur une période de 24h)
-* __TPRATE__ : Précipitations totales accumulées sur une période. Ex: TPRATE-Max48h-Prob
-* __WCF__ : Facteur éolien à 2m au-dessus du sol. Ex: WCF-Prob_AGL-2m; WCF-Min24h-Prob_AGL-2m (facteur éolien minimum à 2m au-dessus du sol sur une période de 24h)
-* __WIND__ : Vitesse du vent à 10m au-dessus du sol. Ex: WIND-Prob_AGL-10m; WIND-Max12h-Prob_AGL-10m (vitesse du vent maximum à 10m au-dessus du sol sur une période de 12h)
-
 Les variables pour les __membres individuels__ dans les fichiers GRIB2 sont décrites ci-dessous. Les variables sont disponibles de 0 à 72h chaque 3h. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
 
-* __AFRAIN__ : Précipitations accumulées sous forme de pluie verglaçante 
-* __ARAIN__ : Précipitations accumulées sous forme de pluie 
-* __AICEP__ : Précipitations accumulées sous forme de grésil 
-* __ASNOW__ : Précipitations accumulées sous forme de neige 
-* __APCP0__ : Précipitations accumulées sous toutes les formes 
-* __SNOD__ : Épaisseur de la neige au sol 
-* __WEASD__ : Équivalent en eau de l'épaisseur de la neige au sol 
-* __HGT__ : Hauteur géopotentielle à différents niveaux. Ex: HGT_ISBL-0500, hauteur géopotentielle à 500hPa
-* __RH__ : Humidité relative à différents niveaux. Ex: RH_ISBL-0010, humidité relative à 10hPa; RH_AGL-2m, humidité relative à 2m au-dessus du sol
-* __UGRD__ : Composante U du vent à différents niveaux. Ex: UGRD_ISBL-0700, composante U du vent à 700hPa 
-* __VGRD__ : Composante V du vent à différents niveaux. Ex: VGRD_ISBL-0700, composante V du vent à 700hPa 
-* __TMP__ : Température à différents niveaux. Ex: TMP_AGL-2m, température à 2m au-dessus du sol; TMP_ISBL-0050, température à 50hPa
-* __TCDC__ : Couverture nuageuse totale 
-* __PRES__ : Pression à la surface 
-* __PRMSL__ : Pression au niveau moyen de la mer 
-* __TSOIL__ : Température du sol 10cm sous la surface. Ex: TSOIL_DBS-10cm 
-* __VSOILM__ : Humidité volumétrique du sol 10cm sous la surface. Ex: VSOILM_DBS-10cm 
-* __LHTFL__ : Flux net de chaleur latente à la surface 
-* __SHTFL__ : Flux net de chaleur sensible à la surface 
-* __ULWRF__ : Flux ascendant de radiation d'ondes longues au sommet nominal de l'atmosphère. Ex: ULWRF_NTAT
-* __DLWRF__ : Flux descendant de radiation d'ondes longues à la surface 
-* __DSWR__ : Flux descendant de radiation d'ondes courtes à la surface
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/REPS_fr.csv", "FR");
+</script>
+
+Les variables pour les __produits d'ensemble__ disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
+
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_fr.csv", "FR");
+</script>
+
+### Produits d'ensemble
+
+Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
+
+###### HEATX
+
+* Probabilité au-dessus de 298,14, 303,14, 308,14, 311,14, 313,14 and 315,14 K
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### FPRATE
+
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### IPRATE
+
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### RPRATE
+
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### SPRATE
+
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75 et 100 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### TPRATE
+
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### TMP
+
+* Probabilité au-dessus de 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14, 298,14, 303,14, 308,14 et 313,14 K
+* Probabilité au-dessous de 233,14, 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14 et 298,14 K
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### WCF
+
+* Probabilité au-dessous de 223,14, 228,14, 233,14, 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14 et 273,14 K
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### WIND
+
+* Probabilité au-dessus de 5,5556, 8,3333, 10,278, 11,111, 13,889, 17,222, 18,056, 20,833, 24,444, 25, 27,778 et 32,778 m/s
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
 
 Une [liste en format XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) contenant l'information pour toutes les variables de la grille 15km, y compris les descriptions et les unités, en français et en anglais est disponible.
 

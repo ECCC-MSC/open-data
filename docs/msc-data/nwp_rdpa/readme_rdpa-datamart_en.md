@@ -134,13 +134,16 @@ __NOTE__: A second variable is also included in this file and it is the confiden
 
 ## List of variables
 
-
 This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format.
 
-|Number  |	                Variable 	                                       | Level      | 	Abbreviation    |	Units    	 | Description        |
-|--------|---------------------------------------------------------------------|------------|-------------------|----------------|--------------------|
-| 0 	 | Analysis of Accumulated Precipitation on a 06hr or 24hr interval    | Surface 	| APCP | 	kg m-2       |[Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)     |
-| 1      | Confidence Index for Analysis 	                                   | Surface 	| CFIA |varies from 0 to 1, no units | [Sections 0 to 6](https://weather.gc.ca/grib/display_e.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPA_en.csv", "EN");
+</script>
 
 ## About the polar stereographic grid no-data mask
 

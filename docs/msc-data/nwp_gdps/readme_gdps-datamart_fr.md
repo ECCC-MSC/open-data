@@ -91,13 +91,14 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
+<table id="csv-table" class="display"></table>
 
-* [Prévisions à 00 h](https://meteo.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P000_deterministic_f.html)
-* [Prévisions pour les heures 03-144 chaque 3 h et pour 150, 156, 162, 168 h](https://meteo.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P003144_03_and_P150168_06_deterministic_f.html)
-* [Prévisions pour les heures 147-165 chaque 6 h](https://meteo.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P147165_06_deterministic_f.html) (ex. : 147, 153, 159, 165)
-* [Prévisions pour les heures 171-237 chaque 6 h](https://meteo.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P171237_06_deterministic_f.html) (ex. : 171, 177, 183, 189, 195, 201, 207, 213, 219, 225, 231, 237)
-* [Prévisions pour les heures 174-240 chaque 6 h](https://meteo.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P174240_06_deterministic_f.html) (ex. : 174, 180, 186, 192, 198, 204, 210, 216, 222, 228, 234, 240)
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS_fr.csv", "FR");
+</script>
 
 Notes :
 

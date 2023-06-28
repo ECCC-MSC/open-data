@@ -62,33 +62,28 @@ Filenames examples :
 * 20200913T12Z_MSC_RIOPS_VOSALINE_DBS-all_PS5km_P046.nc
 * 20201014T00Z_MSC_RIOPS_VOTEMPER_DBS-0.5m_PS5km_P022.nc
 
+## Levels
+
+The three-dimensional fields are provided on 50 depth levels, which are the levels of the ocean model used in RIOPS.
+
+__Depth levels (m)__ : 0.494025, 1.54138, 2.64567, 3.81949, 5.07822, 6.44061, 7.92956, 9.573, 11.405, 13.4671, 15.8101, 18.4956, 21.5988, 25.2114, 29.4447, 34.4342, 40.3441, 47.3737, 55.7643, 65.8073, 77.8539, 92.3261, 109.729, 130.666, 155.851, 186.126, 222.475, 266.04, 318.127, 380.213, 453.938, 541.089, 643.567, 763.333, 902.339, 1062.44, 1245.29, 1452.25, 1684.28, 1941.89, 2225.08, 2533.34, 2865.7, 3220.82, 3597.03, 3992.48, 4405.22, 4833.29, 5274.78, 5727.92.
+
+Some of the two-dimensional variables represent quantities on the first model level, while others are defined at the sea surface (e.g. sea ice variables).
+
+Visualization of field data from the NetCDF files produced by RIOPS was successfully tested with the following free CF-aware tools: Panoply (version 4.2.2) and IDV (version 5.2).
+
 ## List of variables
 
-List of variables (forecast fields) available in the files containing 2D fields:
+<table id="csv-table" class="display"></table>
 
-* __votemper__ :	Potential temperature of sea water at the first model level
-* __vosaline__ :	Sea water salinity at the first model level
-* __vozocrtx__ :	X-component of water velocity at the first model level
-* __vomecrty__ :	Y-component of water velocity at the first model level
-* __sossheig__ :	Sea surface height
-* __somixhgt__ :	Turbocline depth
-* __sokaraml__ :	Mixed layer depth based on a density criterion
-* __iiceconc__ :	Sea ice  fraction	
-* __iicevol__ :		Volume of sea ice per unit grid cell area
-* __itzocrtx__ :	X-component of sea ice velocity	
-* __itmecrty__ :	Y-component of sea ice velocity	
-* __isnowvol__ :	Volume of snow on sea ice per unit grid cell area
-* __iicesurftemp__ :	Surface temperature of sea ice/snow
-* __iicepressure__ :	Vertically integrated ice internal pressure
-* __iicestrength__ :	Vertically integrated compressive ice strength
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RIOPS_en.csv", "EN");
+</script>
 
-
-List of variables (forecast fields) available in the files containing 3D fields:
-
-* __votemper__ :	Potential temperature of sea water
-* __vosaline__ :	Sea water salinity
-* __vozocrtx__ :	X-component of water velocity
-* __vomecrty__ :	Y-component of water velocity
+Note: The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.
 
 ## Support
 

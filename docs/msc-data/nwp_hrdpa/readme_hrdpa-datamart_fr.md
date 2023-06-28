@@ -69,8 +69,14 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient des do
 
 ## Liste des variables
 
-* __APCP__ : Analyse de la quantité totale de précipitation (mm)
-* __CFIA__ : Indice de Confiance de l'Analyse. Plage de valeurs de 0 à 1 (sans unité)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPA_fr.csv", "FR");
+</script>
 
 ## À propos du masque No-Data
 

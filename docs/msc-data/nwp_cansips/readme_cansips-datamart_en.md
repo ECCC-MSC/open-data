@@ -122,21 +122,36 @@ Following the temporal record of the month 01 of the year 2017, a second CanSIPS
 
 The list of the CanSIPS available variables is the following:
 
-* Water temperature (WTMP_SFC_0)
-* Precipitation rate (PRATE_SFC_0)
-* Temperature at 2m (TMP_TGL_2m)
-* Temperature at 850 hPa (TMP_ISBL_850)
-* Mean Sea Level Pressure (PRMSL_MSL_0)	
-* Geopotential Height at 500 hPa (HGT_ISBL_500)
-* U Wind Component at 200 hPa (UGRD_ISBL_200)
-* U Wind Component at 850 hPa (UGRD_ISBL_850)
-* V Wind Component at 200 hPa (VGRD_ISBL_200)
-* V Wind Component at 850 hPa (VGRD_ISBL_200)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/CanSIPS_en.csv", "EN");
+</script>
 
 The list of the CanSIPS variables for probability above,near or below normals products is the following:
 
-* Temperature at 2m (TMP|AirTemp)
-* Precipitation rate (PRATE|PrecipRate)
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/CanSIPS_prob_en.csv", "EN");
+</script>
+
+### Ensemble Products
+
+The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
+
+###### APCP
+
+* Probability above 0 kg/(m^2)
+* Minimum (0 percentile), maximum (100th percentile), standard deviation and mean
+
+###### TMP
+
+* Probability above 0 K
+* Minimum (0 percentile), maximum (100th percentile), standard deviation and mean
 
 ## Tips for Computing Anomaly Forecasts
 

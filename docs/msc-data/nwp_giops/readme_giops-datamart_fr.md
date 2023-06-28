@@ -87,44 +87,16 @@ La visualisation des champs contenus dans les fichiers NetCDF produits par SGPOG
 
 ## Liste des variables
 
-Liste des variables (champs de prévision au delà de 00h) disponibles dans les fichiers contenant des champs 2D :
+<table id="csv-table" class="display"></table>
 
-* __votemper__ : Température potentielle de l'eau de mer au premier niveau du modèle
-* __vosaline__ : Salinité de l'eau de mer au premier niveau du modèle
-* __vozocrtx__ : Composante X de la vitesse de l'eau au premier niveau du modèle
-* __vomecrty__ : Composante Y de la vitesse de l'eau au premier niveau du modèle
-* __sossheig__ : Hauteur de la surface de la mer par rapport au géoïde
-* __somixhgt__ : Profondeur de la turbocline
-* __sokaraml__ : Profondeur de la couche de mélange d'après le critère de densité
-* __iiceconc__ : Fraction de la glace de mer
-* __iicevol__ : Volume de glace de mer par unité de surface de cellule de grille
-* __itzocrtx__ : Composante X de la vitesse de la glace de mer
-* __itmecrty__ : Composante Y de la vitesse de la glace de mer
-* __isnowvol__ : Volume de neige sur la glace de mer par unité de surface de cellule de grille
-* __iicesurftemp__ : Température de la surface de la neige/glace de mer
-* __iicepressure__ : Pression interne de la glace, intégrée verticalement
-* __iicestrength__ : Résistance à la compression de la glace, intégrée verticalement
-* __iicedivergence__ : Divergence de la glace de mer
-* __iiceshear__ : Taux de déformation dû au cisaillement dans la glace de mer 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GIOPS_fr.csv", "FR");
+</script>
 
-Liste des variables (champs de prévision au delà de 00h) disponibles dans les fichiers contenant des champs 3D :
-
-* __votemper__ : Température potentielle de l'eau de mer
-* __vosaline__ : Salinité de l'eau de mer
-* __vozocrtx__ : Composante X de la vitesse de l'eau
-* __vomecrty__ : Composante Y de la vitesse de l'eau
-
-Liste des variables (champs d'analyse pour l'heure de prévision 00h) disponibles dans les fichiers contenant des champs 2D :
-
-* __sossheig__ : Hauteur de la surface de la mer par rapport au géoïde
-* __iiceconc__ : Fraction de la glace de mer
-
-Liste des variables (champs d'analyse pour l'heure de prévision 00h) disponibles dans les fichiers contenant des champs 3D :
-
-* __votemper__ : Température potentielle de l'eau de mer au 1er niveau du modèle
-* __vosaline__ : Salinité de l'eau de mer au 1er niveau du modèle
-* __vozocrtx__ : Composante X de la vitesse de l'eau au 1er niveau du modèle
-* __vomecrty__ : Composante Y de la vitesse de l'eau au 1er niveau du modèle
+Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
 
 Notez que puisque les champs à l'heure de prévision 0 ne sont pas moyennés dans le temps, on peut simplement extraire le niveau de surface des champs votemper, vosaline, vozocrtx et vomecrty des champs 3D pour obtenir les champs 2D correspondants. 
 

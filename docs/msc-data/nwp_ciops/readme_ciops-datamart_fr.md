@@ -94,37 +94,38 @@ Exemples :
 * 20220301T00Z_MSC_CIOPS-West_SeaWaterSalinity_DBS-0.5m_LatLon0.03x0.02_PT002H.nc
 * 20220301T00Z_MSC_CIOPS-SalishSea_SeaWaterPotentialTemp_DBS-all_LatLon0.008x0.005_PT002H.nc
 
+## Niveaux
+
+### Domaine océanique Est
+
+Les champs tridimensionnels sont disponibles sur 99 niveaux de profondeur dans le domaine océanique Est.
+
+__Niveaux de profondeur (m)__ :0,50594902, 1,55457, 2,65451, 3,8087499, 5,0204301, 6,29286, 7,62957, 9,0342503, 10,5108, 12,0634, 13,6964, 15,4145, 17,222401, 19,125401, 21,128799, 23,238501, 25,4604, 27,801001, 30,266899, 32,865299, 35,603699, 38,490002, 41,532398, 44,7397, 48,121201, 51,686501, 55,445999, 59,410198 63,590698, 67,9991, 72,648102, 77,550697, 82,720802, 88,172798, 93,921799, 99,983803, 106,375, 113,114 120,218, 127,707, 135,60001, 143,918, 152,68201, 161,91701, 171,645, 181,89, 192,679, 204,037, 215,993 228,57401, 241,81, 255,73199, 270,37201, 285,76001, 301,93201, 318,92001, 336,76099, 355,48901, 375,14301, 395,76001, 417,37799, 440,039, 463,78699, 488,681, 514,80499, 542,32397, 571,61401, 603,60602, 640,60901, 687,87701, 754,76501, 850,67902, 975,659, 1120,37, 1275,53, 1435,96, 1599,4301, 1765,0699, 1932,58, 2101,8501, 2272,8701, 2445,6499, 2620,1799, 2796,5, 2974,6201, 3154,54, 3336,27, 3519,8301, 3705,2, 3892,3999, 4081,4199, 4272,2598, 4464,8999, 4659,3301, 4855,54, 5053,52, 5253,2402, 5454,6699, 5657,8101.
+
+### Domaine océanique Ouest
+
+Les champs tridimensionnels sont disponibles sur 68 niveaux de profondeur dans le domaine océanique Ouest.
+
+__Niveaux de profondeur (m)__ : 0,50752997, 1,55757, 2,6693399, 3,8578801, 5,1419101, 6,5445399, 8,0939703, 9,8241596, 11,775, 13,9924, 16,5266, 19,431101, 22,7589, 26,5595, 30,875799, 35,741402, 41,181301, 47,2131, 53,851898, 61,114101, 69,023003, 77,612503, 86,930801, 97,042702, 108,032, 120,001, 133,077, 147,408, 163,166, 180,552, 199,79201, 221,14301, 244,892, 271,358, 300,88901, 333,86499, 370,69, 411,79599, 457,62799, 508,642, 565,29401, 628,02802, 697,26099, 773,37, 856,68103, 947,45001, 1045,86, 1151,99, 1265,86, 1387,38, 1516,37, 1652,5699, 1795,67, 1945,3, 2101,03, 2262,4199, 2429,03, 2600,3799, 2776,04, 2955,5701, 3138,5701,3324,6399, 3513,45, 3704,6599, 3897,98, 4093,1599, 4289,96, 4488,1602.
+
+### Domaine océanique sur la mer de Salish
+
+Les champs tridimensionnels sont disponibles sur 39 niveaux de profondeur dans le domaine océanique sur la mer de Salish.
+
+__Niveaux de profondeur (m)__ : 0,5, 1,5, 2,50001, 3,50003, 4,5000701, 5,5001502, 6,5003099, 7,5006199, 8,5012398, 9,50243, 10,5048, 11,5093, 12,5182, 13,5354, 14,569, 15,6343, 16,7612, 18,007099, 19,4818, 21,389999, 24,1003, 28,2299, 34,685799, 44,5177, 58,484299, 76,585602, 98,063004, 121,867, 147,089, 173,114, 199,573, 226,25999, 253,067, 279,935, 306,83401, 333,75, 360,67499, 387,603, 414,534.
+
 ## Liste des variables
 
-Liste des variables 3D océaniques disponibles dans les fichiers:
+<table id="csv-table" class="display"></table>
 
-* __SeaWaterSalinity__ : Salinité de l'eau de mer (psu) 
-* __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer (K)
-* __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau (m/s)
-* __SeaWaterVelocityY__ : Composante Y de la vitesse de l'eau (m/s)
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/CIOPS_fr.csv", "FR");
+</script>
 
-Liste des variables 2D océaniques disponibles dans les fichiers:
-
-* __SeaWaterSalinity__ : Salinité de l'eau de mer au premier niveau du modèle (per 1000) 
-* __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer au premier niveau du modèle (K)
-* __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau au premier niveau du modèle (m/s)
-* __SeaWaterVelocityY__ : Composante Y de la vitesse de l'eau au premier niveau du modèle (m/s)
-* __SeaSfcHeight__ : Hauteur de la surface de la mer par rapport au géoïde (m)
-* __MixedLayerThickness__ : Profondeur de la couche de mélange d'après le critère de densité (m)
-* __TurboclineDepth__ : Profondeur de la turbocline (m)
-
-Liste des variables 2D de glace disponibles dans les fichiers:
-
-* __SeaIceVelocityX__ : Composante X de la vitesse de la glace de mer (m/s)
-* __SeaIceVelocityY__ : Composante Y de la vitesse de la glace de mer (m/s)
-* __SeaIceAreaFraction__ : Fraction de la glace de mer (fraction)
-* __SeaIceVol__ : Volume de glace de mer par unité de surface de cellule de grille (m)
-* __SeaIceSnowTemp__ : Température de surface de la neige sur la glace de mer ou la glace de mer nue (K)
-* __SeaIceSnowVol__ : Volume de la neige de mer par unité de surface de cellule de grille (m)
-* __SeaIceCompressiveStrength__ : Résistance à la compression de la glace, intégrée verticalement (N/m)
-* __SeaIceDivergence__ : Divergence de la glace de mer (%/day)
-* __SeaIceInternalPressure__ : Pression interne de la glace, intégrée verticalement (N/m)
-* __SeaIceShear__ : Cisaillement de la glace de mer (%/day)
+Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
 
 ## Support
 

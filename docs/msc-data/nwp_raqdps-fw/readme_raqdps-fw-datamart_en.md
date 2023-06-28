@@ -69,10 +69,14 @@ Example of forecast file name:
 
 List of 2D variables available in the files:
 
-* PM2.5: PM2.5 concentration (&mu;g.m-3)
-* PM2.5-Diff-RAQDPS : PM2.5 concentration (&mu;g.m-3) difference with the RAQDPS model. Indicates the forest fires contribution to the PM2.5 concentration
-* PM10: PM10 concentration (&mu;g.m-3)
-* PM10-Diff-RAQDPS : PM10 concentration (&mu;g.m-3) difference with the RAQDPS model. Indicates the forest fires contribution to the PM10 concentration
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RAQDPS-FW_en.csv", "EN");
+</script>
 
 ## Support
 

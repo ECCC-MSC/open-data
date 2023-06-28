@@ -73,80 +73,94 @@ Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 s
 
 Pour les membres individuels:
 
-* __AFRAIN_SFC_0__              : Accumulation de pluie verglaçante : 0-384h à chaque 3h
-* __AICEP_SFC_0__               : Accumulation de grésil : 0-384h à chaque 3h
-* __APCP_SFC_0__                : Accumulation de précipitations totales : 0-384h à chaque 3h
-* __ARAIN_SFC_0__               : Accumulation de pluie : 0-384h à chaque 3h
-* __ASNOW_SFC_0__               : Accumulation de neige : 0-384h à chaque 3h
-* __CAPE_SFC_0__                : Énergie potentielle convective disponible : 0-384h à chaque 3h
-* __CIN_SFC_0__                 : Énergie d'inhibition de la convection : 0-384h à chaque 3h
-* __DLWRF_SFC_0__               : Flux radiatif d'ondes longues descendant : 0-384h à chaque 3h
-* __DSWRF_SFC_0__               : Flux radiatif d'ondes courtes descendant  : 0-384h à chaque 3h
-* __HGT_ISBL_XXXX__             : Hauteur du géopotentiel à XXXX hPa : 0-384h à chaque 3h
-* __HGT_SFC_0__                 : Hauteur du géopotentiel à la surface : 0-384h à chaque 3h
-* __ICETK_SFC_0__               : Épaisseur de la glace : 0-384h à chaque 3h
-* __LHTFL_SFC_0__               : Flux de chaleur latente à la surface : 0-384h à chaque 3h
-* __OLR_NTAT_0__                : Flux a ondes longues sortant au sommet de l'atmosphère : 0-384h à chaque 3h
-* __PRES_SFC_0__                : Pression à la surface : 0-384h à chaque 3h
-* __PRMSL_MSL_0__               : Pression au niveau de la mer : 0-384h à chaque 3h
-* __PWAT_EATM_0__               : Eau précipitable sur la colonne entière : 0-384h à chaque 3h
-* __RH_ISBL_XXXX__              : Humidité relative à XXXX hPa : 0-384h à chaque 3h
-* __RH_TGL_2m__                 : Humidité relative 2m au-dessus du sol : 0-384h à chaque 3h
-* __SHTFL_SFC_0__               : Flux de chaleur latente à la surface : 0-384h à chaque 3h
-* __SNOD_SFC_0__                : Épaisseur de neige à la surface : 0-384h à chaque 3h
-* __SWAT_DBLL_10cm__            : Contenu d'eau volumétrique au sol 0-10cm sous la surface : 0-384h à chaque 3h
-* __VSOILM_DBLL_10cm__          : Contenu d'eau volumétrique au sol 0-10cm sous la surface : 0-384h à chaque 3h
-* __TCDC_SFC_0__                : Couverture nuageuse : 0-384h à chaque 3h
-* __TMAX_TGL_2m__               : Température maximale 2m au-dessus du sol : 0-384h à chaque 3h
-* __TMIN_TGL_2m__               : Température minimale 2m au-dessus du sol : 0-384h à chaque 3h
-* __TMP_ISBL_XXXX__             : Température à XXXX hPa : 0-384h à chaque 3h
-* __TMP_TGL_2m__                : Température 2m au-dessus du sol : 0-384h à chaque 3h
-* __TSOIL_DBLL_10cm__           : Température du sol 0-10cm sous la surface : 0-384h à chaque 3h
-* __UGRD_ISBL_XXXX__            : Composante U du vent à XXXX hPa : 0-384h à chaque 3h
-* __UGRD_TGL_10m__              : Composante U du vent 10m au-dessus du sol : 0-384h à chaque 3h
-* __ULWRF_SFC_0__               : Flux d'ondes longues vers le haut à la surface : 0-384h à chaque 3h
-* __USWRF_SFC_0__               : Flux d'ondes courtes vers le haut à la surface : 0-384h à chaque 3h
-* __VGRD_ISBL_XXXX__            : Composante V du vent à XXXX hPa : 0-384h à chaque 3h
-* __VGRD_TGL_10m__              : Composante V du vent 10m au-dessus du sol : 0-384h à chaque 3h
-* __VVEL_ISBL_XXXX__            : Mouvement vertical at XXXX hPa : 0-384h à chaque 3h
-* __WEASD_SFC_0__               : Neige en équivalent eau à la surface : 0-384h à chaque 3h
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GEPS_fr.csv", "FR");
+</script>
 
 Pour les produits probabilistes:
 
-* __FPRATE-Accum-12h_SFC_0__    : Pluie verglaçante accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __FPRATE-Accum-24h_SFC_0__    : Pluie verglaçante accumulée sur une période de 24h : 24h-384h à chaque 12h
-* __HEATX-Max-24h_TGL_2m__      : Humidex 2m au-dessus du sol - Maximum sur une période de 24h : 24h-384h à chaque 24h
-* __HEATX_TGL_2m__              : Humidex 2m au-dessus du sol : 3-384h à chaque 3h
-* __HGT_ISBL_0500__               : Hauteur du géopotentiel 500 hPa : 12-384h à chaque 12h
-* __IPRATE-Accum-12h_SFC_0__    : Grésil accumulé sur une période de 12h : 12h-384h à chaque 12h
-* __IPRATE-Accum-24h_SFC_0__    : Grésil accumulé sur une période de 24h : 24h-384h à chaque 12h
-* __PRMSL_MSL_0__              : Pression au niveau de la mer : 3-384h à chaque 12h
-* __RPRATE-Accum-12h_SFC_0__    : Pluie accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __RPRATE-Accum-24h_SFC_0__    : Pluie accumulée sur une période de 24h : 24h-384h à chaque 12h
-* __SPRATE-Accum-12h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 12h : 12h-384h à chaque 12h
-* __SPRATE-Accum-24h_SFC_0__    : Neige (équivalent en eau) accumulée sur une période de 24h : 24h-384h à chaque 12h
-* __TCDC_SFC_0__                : Couverture nuageuse : 3-384h à chaque 3h
-* __TEMP-Max-24h_TGL_2m__       : Température 2m au-dessus du sol - Maximum sur une période de 24h : 24h-384h à chaque 24h
-* __TEMP-Min-24h_TGL_2m__       : Température 2m au-dessus du sol - Minimum sur une période de 24h : 24h-384h à chaque 24h
-* __TEMP_TGL_2m__               : Température 2m au-dessus du sol : 3-384h à chaque 3h
-* __TPRATE-Accum-120h_SFC_0__   : Précipitations totales accumulées sur une période de 120h : 120h-384h à chaque 24h
-* __TPRATE-Accum-12h_SFC_0__    : Précipitations totales accumulées sur une période de 12h : 12h-384h à chaque 12h
-* __TPRATE-Accum-24h_SFC_0__    : Précipitations totales accumulées sur une période de 24h : 24h-384h à chaque 12h
-* __TPRATE-Accum-48h_SFC_0__    : Précipitations totales accumulées sur une période de 48h : 48h-384h à chaque 24h
-* __TPRATE-Accum-72h_SFC_0__    : Précipitations totales accumulées sur une période de 72h : 72h-384h à chaque 24h
-* __TPRATE-Accum-96h_SFC_0__    : Précipitations totales accumulées sur une période de 96h : 96h-384h à chaque 24h
-* __WCF-Min-24h_TGL_2m__        : Facteur éolien 2m au-dessus du sol - Minimum sur une période de 24h : 24h-384h à chaque 24h
-* __WCF_TGL_2m__                : Facteur éolien 2m au-dessus du sol : 3-384h à chaque 3h
-* __WIND-Max-12h_TGL_10m__      : Vitesse du vent 10m au-dessus du sol - Maximum sur une période de 12h : 12h-384h à chaque 12h
-* __WIND_TGL_10m__              : Vitesse du vent 10m au-dessus du sol : 3-384h à chaque 3h
+<table id="csv-prob-table" class="display"></table>
 
-Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers.
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/GEPS_prob_fr.csv", "FR");
+</script>
 
-Par exemple, pour l’accumulation de précipitation totale sur une période de 12h (TPRATE-Accum-12h), on retrouve les produits suivants :
+### Produits d'ensemble
 
-* Probabilité au-dessus de 2,5,  5,  10 , 15,  20,  25,  30, 40, 50, 75, 100 et 150 mm
+Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
+
+###### HGT
+
+* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
+
+###### HEATX
+
+* Probabilité au-dessus de 298,14, 303,14, 308,14, 311,14, 313,14 et 315,14 K
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
-* Percentiles additionnels: 10,25,75 et 90 
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### FPRATE
+
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### IPRATE
+
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### RPRATE
+
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### SPRATE
+
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50 et 75 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### TPRATE
+
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### PRMSL
+
+* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
+
+###### TMP
+
+* Probabilité au-dessus de 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14, 298,14, 303,14, 308,14 et 313,14 K
+* Probabilité au-dessous de 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14 and 298,14 K
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### TCDC
+
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### WCF
+
+* Probabilité au-dessous de 223,14, 228,14, 233,14, 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14 et 273,14 K
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### WIND
+
+* Probabilité au-dessus de 5,5556, 8,3333, 10,278, 11,111, 13,889, 17,222, 18,056, 20,833, 24,444, 25, 27,778 et 32,778 m/s
+* Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
+* Percentile 10, percentile 25, percentile 75 et percentile 90
 
 Note: Une [liste en format XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
 

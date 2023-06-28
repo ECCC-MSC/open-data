@@ -92,10 +92,14 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
-    
-* [Variables disponibles à 00h](https://meteo.gc.ca/grib/REG_HR/REGIONAL_ps10km_P000_deterministic_f.html)
-* [Variables disponibles pour les heures suivant 00h](https://meteo.gc.ca/grib/REG_HR/REGIONAL_ps10km_PNONZERO_deterministic_f.html) 
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPS_fr.csv", "FR");
+</script>
 
 Notes :
 
