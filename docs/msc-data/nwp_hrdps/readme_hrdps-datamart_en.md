@@ -164,7 +164,7 @@ List of weather elements on the grid (*HRDPS-WEonG*):
 | DIST/ORGPHY | Model orography |m |
 | DPT |	Dew point temperature |	C |
 | DPTYPE/DMNTPCPNTYPE | Dominant precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| FZPRATE/CONDAFZPCPN | Conditional freezing precipitation amount | m |
+| FZPRATE/CONDAFZPCPN | Conditional freezing precipitation amount | mm |
 | GUST | Gust | m/s |
 | HSNOWL/HGTSNLVL | Height of snow level | m |
 | LAND/WTRLANMASK | Water/land mask | fraction |

@@ -89,7 +89,7 @@ List of surface weather elements on the grid:
 | ORGPHY | Model orography | m | 
 | DPT | Dew point temperature | C |
 | DMNTPCPNTYPE | Dominant precipitation type  | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| CONDAFZPCPN | Conditional freezing precipitation amount | m |
+| CONDAFZPCPN | Conditional freezing precipitation amount | mm |
 | GUST | Gust | m/s |
 | HGTSNLVL | Height of snow level | m |
 | WTRLANMASK | Land/Water mask | fraction |
