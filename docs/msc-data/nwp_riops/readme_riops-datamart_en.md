@@ -6,7 +6,7 @@
 
 # Regional Ice Ocean Prediction System (RIOPS) Data in NetCDF Format
 
-The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides instantaneous forecasts of sea ice and ocean fields produced by its operationtal Regional Ice-Ocean Prediction System (RIOPS) and interpolated to a grid in north-polar stereographic projection with 5 km resolution at the standard parallel 60°N. 
+The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) provides instantaneous forecasts of sea ice and ocean fields produced by its operational Regional Ice-Ocean Prediction System (RIOPS) and interpolated to a grid in north-polar stereographic projection with 5 km resolution at the standard parallel 60°N. 
 
 The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions. 
 
