@@ -10,17 +10,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.45
 
-* date:
+* date: 2023-07-07
 * announcements:
     * Not announced
 * new content:
-    * None
+    * Added documentation for new 1 degree CanSIPS products
+    * Add current conditions interactive map to City Page Weather documentation
+    * Add a on-click switch to change between local time/UTC on interactve maps
+    * New legend switch on interactive maps to display/hide legend
 * improvements:
-    * Add legend switch on interactive maps
     * Add scale line on interactive maps
     * Add a label to distinguish between observation/extrapolation on weather radar interactive maps
-    * Add current conditions interactive map to City Page Weather documentation
-    * Add a switch option on datetime to change between local time/UTC on interactve maps
 * bug fixes:
     * Fix Conditional freezing precipitation amount units for HRDPS-WEonG, RDPS-WEonG and GDPS-WEonG
 
