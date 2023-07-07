@@ -52,7 +52,13 @@ The following [tutorial is available for creating interactive web maps with Open
 
 Below is an example of an OpenLayers web map configured to display [weather radar composite Web Map Service (WMS) layers served by MSC GeoMet](../msc-data/obs_radar/readme_radar_geomet_en.md).
 
-<div id="map" style="height: 400px;"></div>
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
+  </div>
+</div>
+</div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
   <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
@@ -61,7 +67,7 @@ Below is an example of an OpenLayers web map configured to display [weather rada
   <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
   <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;"></span>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
 #### In a mobile application
@@ -141,6 +147,36 @@ MSC raw data can be [automatically retrieved as soon as it becomes available on 
 ### Work with raw data from the command line
 
 Data can be manipulated using commands from the GDAL software library. A [tutorial showcasing the most common commands of the GDAL software library](../tutorial_gdal/tutorial_gdal_en/) is available.
+
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+  .distinguish-switch{
+    top: 8px;
+    right: 2.25em;
+    width: 10rem;
+  }
+  .ol-touch .distinguish-switch{
+    top: 80px;
+  }
+  .distinguish-switch.ol-unselectable.ol-control button{
+    width: 10rem;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
