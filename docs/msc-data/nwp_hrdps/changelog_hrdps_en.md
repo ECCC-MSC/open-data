@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Wednesday July 5, 2023
+
+### Addition of commercial GNSS-RO observations from Spire in the HRDPS
+
+On Wednesday July 5th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of commercial GNSS-RO (Global Navigation Satellite System Radio Occultation) observations from Spire’s constellation of LEMUR nanosatellites.
+
 ## Wednesday February 15, 2023
 
 ### Addition of GPSRO observations from the Sentinel-6A satellite in the HRDPS

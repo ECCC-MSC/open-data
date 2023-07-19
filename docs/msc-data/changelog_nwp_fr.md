@@ -8,6 +8,13 @@
 
 ## 2023
 
+### 5 juillet 2023
+
+* [Ajout d’observations commerciales GNSS-RO de Spire dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-5-juillet-2023)
+* [Ajout d’observations commerciales GNSS-RO de Spire dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-5-juillet-2023)
+* [Ajout d’observations commerciales GNSS-RO de Spire dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-mercredi-5-juillet-2023)
+* [Ajout d’observations commerciales GNSS-RO de Spire dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-5-juillet-2023)
+
 ### 3 mai 2023
 
 * [Mise à jour de ARDP suite au remplacement de GOES-17 par GOES-18](nwp_rdpa/changelog_rdpa_fr.md#le-mercredi-3-mai-2023)
