@@ -8,6 +8,13 @@
 
 ## 2023
 
+### July 5, 2023
+
+* [Addition of commercial GNSS-RO observations from Spire in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-july-5-2023)
+* [Addition of commercial GNSS-RO observations from Spire in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-july-5-2023)
+* [Addition of commercial GNSS-RO observations from Spire in the RDPS](nwp_rdps/changelog_rdps_en.md#wednesday-july-5-2023)
+* [Addition of commercial GNSS-RO observations from Spire in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-july-5-2023)
+
 ### May 3, 2023
 
 * [RDPA update following the replacement of GOES-17 by GOES-18](nwp_rdpa/changelog_rdpa_en.md#wednesday-may-3-2023)

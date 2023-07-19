@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le mercredi 5 juillet 2023
+
+### Ajout d’observations commerciales GNSS-RO de Spire dans le SRPD
+
+Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de nanosatellites LEMUR de Spire.
+
 ## Le mercredi 8 mars 2023
 
 ### Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SRPD

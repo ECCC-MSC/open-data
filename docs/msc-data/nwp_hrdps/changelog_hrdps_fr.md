@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mercredi 5 juillet 2023
+
+### Ajout d’observations commerciales GNSS-RO de Spire dans le SHRPD
+
+Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de nanosatellites LEMUR de Spire.
+
 ### Le mercredi 15 février 2023
 
 ### Ajout des observations GPSRO du satellite Sentinel-6A dans le SHRPD
