@@ -8,7 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.4.45
+## 2.5.1
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    *
+* improvements:
+    *
+* bug fixes:
+    * Fixed broken links in Technical documentation and removed trailing spaces
+
+## 2.5.0
 
 * date: 2023-07-07
 * announcements:
@@ -47,12 +59,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
-    * Fix several lists format 
-    	
+    * Fix several lists format
+
 
 ## 2.4.42
 
-* date: 
+* date:
 * announcements:
     * Not announced
 * new content:
@@ -61,7 +73,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * FAQ updated for GeoMet access to Radar, Alerts, Bulletins and AQHI datasets
 * bug fixes:
     * None
-    
+
 ## 2.4.41
 
 * date: 2023-04-28
@@ -85,7 +97,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 * bug fixes:
     * None
-    
+
 ## 2.4.39
 
 * date: 2023-04-13
@@ -108,13 +120,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * Add input in the main NWP changelog for INCS 2.1.0 update 
+    * Add input in the main NWP changelog for INCS 2.1.0 update
     * Update INCS changelog for new version
 * improvements:
     * Improvements to AniMet page before public announcement
 * bug fixes:
     * Fix GENOT links in the INCS changelog
-	
+
 ## 2.4.37
 
 * date: 2023-03-15
@@ -155,7 +167,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.4.34
 
-* date: 2023-02-16 
+* date: 2023-02-16
 * announcements:
     * Not announced
 * new content:
@@ -163,11 +175,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
-    * None	
+    * None
 
 ## 2.4.33
 
-* date: 
+* date:
 * announcements:
     * Not announced
 * new content:
@@ -176,7 +188,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 * bug fixes:
     * Fix Meteocode filename nomenclature -- Manitoba forecast region and period (fr+en)
-    
+
 ## 2.4.32
 
 * date: 2023-01-31
@@ -272,7 +284,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 * bug fixes:
     * Typo
-	
+
 ## 2.4.24
 
 * date: 2022-11-07
@@ -318,7 +330,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * Lightning page on main page 
+    * Lightning page on main page
 * improvements:
     * None
 * bug fixes:
@@ -368,7 +380,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * Lightning data ((not available in main msc-data page)
+    * Lightning data (not available in main msc-data page)
     * Add maps to MetNotes pages
 * improvements:
     * None
@@ -415,10 +427,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * In RDPS abstract, available vertical levels corrected from 80 to 33
 	* Mention of Geomet-Beta removed or replaced with Ops
 	*  Fix WCPS NEMO, CIOPS README
-	
+
 
 ## 2.4.13
-	
+
 * date: 2022-04-27
 * announcements:
     * Not announced
@@ -432,7 +444,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fix vertical profile datatset access on MSC Datamart
 
 ## 2.4.12
-	
+
 * date: 2022-03-30
 * announcements:
     * Not announced
@@ -445,7 +457,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typo
 
 ## 2.4.11
-	
+
 * date: 2022-03-28
 * announcements:
     * Not announced
@@ -457,7 +469,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typo
 
 ## 2.4.10
-	
+
 * date: 2022-03-25
 * announcements:
     * Not announced
@@ -469,7 +481,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typo
 
 ## 2.4.9
-	
+
 * date: 2022-03-17
 * announcements:
     * Not announced
@@ -479,9 +491,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Adjust cost recovery services (radar data not free)
 * bug fixes:
     * Typo
-    
+
 ## 2.4.8
-	
+
 * date: 2022-03-11
 * announcements:
     * Not announced
@@ -493,7 +505,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * fixed use-case Cathy errors when running with Jupyter Lab
 
 ## 2.4.7
-	
+
 * date: 2022-03-10
 * announcements:
     * Not announced
@@ -505,7 +517,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * added mention and links for OACov support to GeoMet-OGC-API
     * updated OAFeat links
-    * linkify Sarra link on AMQPS page 
+    * linkify Sarra link on AMQPS page
     * added amqp and policy links in wget page
     * clarified source of climate data
 * bug fixes:
@@ -513,44 +525,44 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * remove the mention of multiple layers for GetFeatureInfo requests
 
 ## 2.4.6
-	
+
 * date: 2022-01-17
 * announcements:
     * The new MSC Open Data Service Usage Policy has been announced to users
 * new content:
-    * Added new MSC Open Data Service Usage Policy page and links 
+    * Added new MSC Open Data Service Usage Policy page and links
 * improvements:
     * New section clarifying the services available on the different GeoMet instances
-    * Added technical link for LTCE dataset 
+    * Added technical link for LTCE dataset
 * bug fixes:
     * Fix NW-Atlantic RDWPS grid typo
 
 ## 2.4.5
-	
+
 * date: 2021-12-01
 * announcements:
     * Announced to dd_info and GeoMet-Info in the context of IC-3 changes
 * new content:
-    * None 
+    * None
 * improvements:
     * None
 * bug fixes:
-    * Fix typo in RDWPS EN changelog 
+    * Fix typo in RDWPS EN changelog
 
 ## 2.4.4
-	
+
 * date: 2021-12-01
 * announcements:
     * None
 * new content:
-    * Add HRDPS North and West tech note 
+    * Add HRDPS North and West tech note
 * improvements:
     * Update to RDWPS changelog
 * bug fixes:
     * None
 
 ## 2.4.3
-	
+
 * date: 2021-12-01
 * announcements:
     * None
@@ -562,7 +574,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typos and formatting fixes
 
 ## 2.4.2
-	
+
 * date: 2021-11-30
 * announcements:
     * Not announced
@@ -574,7 +586,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typos and formatting fixes
 
 ## 2.4.1
-	
+
 * date: 2021-11-26
 * announcements:
     * Not announced
@@ -586,7 +598,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typos and formatting fixes
 
 ## 2.4.0
-	
+
 * date: 2021-11-26
 * announcements:
     * Not announced
@@ -605,12 +617,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Minor typos
 
 ## 2.3.37
-	
+
 * date: 2021-09-27
 * announcements:
     * Not announced
 * new content:
-    * Add AQHI GeoJSON page 
+    * Add AQHI GeoJSON page
     * Add LTCE page (GeoMet-OGC-API)
     * Add reference to Wikimedia Commons (100 years of climate data)
     * Update GDPS DD page: removal of 25km data
@@ -626,7 +638,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fixed DCS variables description in French
 
 ## 2.3.36
-	
+
 * date: 2021-06-16
 * announcements:
     * Not announced
@@ -639,7 +651,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fixed SLD request in the Handling styles section
 
 ## 2.3.35
-	
+
 * date: 2021-06-08
 * announcements:
     * Not announced
@@ -649,9 +661,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * clarified real-time data retention on GeoMet-OGC-API
 * bug fixes:
     * TBD
-    
+
 ## 2.3.34
-	
+
 * date: 2021-06-04
 * announcements:
     * Not announced
@@ -668,7 +680,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fix broken link (GDPS ozone stratospheric)
 
 ## 2.3.33
-	
+
 * date: 2020-04-29
 * announcements:
     * Not announced
@@ -681,19 +693,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 
 ## 2.3.32
-	
+
 * date: 2021-04-28
 * announcements:
     * Not announced
 * new content:
     * Added references to the new OAFeat use case
 * improvements:
-    * Updated all OAFeat links to use api.weather.gc.ca 
+    * Updated all OAFeat links to use api.weather.gc.ca
 * bug fixes:
     * None
 
 ## 2.3.31
-	
+
 * date: 2021-04-27
 * announcements:
     * Not announced
@@ -705,7 +717,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 
 ## 2.3.30
-	
+
 * date: 2021-04-26
 * announcements:
     * Not announced
@@ -715,9 +727,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * None
 * bug fixes:
     * None
-    
+
 ## 2.3.29
-	
+
 * date: 2021-04-21
 * announcements:
     * Not announced
@@ -729,7 +741,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update RDPS description (data available until 84h rather than 48h)
 * bug fixes:
     * None
-	
+
 ## 2.3.28
 
 * date: 2021-03-30
@@ -768,7 +780,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typos
 * bug fixes:
     * None
-	
+
 ## 2.3.25
 
 * date: 2021-03-15
@@ -782,7 +794,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Typos
 * bug fixes:
     * None
-  
+
 ## 2.3.24
 
 * date: 2021-02-25
@@ -797,7 +809,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fixed CANGRD acronym in dataset listing
 * bug fixes:
     * None
-  
+
 ## 2.3.23
 
 * date: 2021-02-18
@@ -811,7 +823,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Updated RDSPS, GDWPS, REWPS, GEWPS descriptions and added images
 * bug fixes:
     * None
-  
+
 ## 2.3.22
 
 * date: 2021-02-11
@@ -824,7 +836,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add GEWPS doc (not in the main list)
     * Add RDPS-astro doc (only in French and not in the main list)
 * improvements:
-    * Update FAQ : change in the cost recovery services fees 
+    * Update FAQ : change in the cost recovery services fees
 * bug fixes:
     * None
 
@@ -854,13 +866,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added pages related to climate data from GeoMet-Climate
 * improvements:
     * Added RDPA web map to related root page
-    * Added climate pages web maps to their related root pages    
+    * Added climate pages web maps to their related root pages
     * clarified RIOPS data on GeoMet-Beta is YOPP-RIOPS
     * Modified the RDPA webmap max animation time to last 7 days
 * bug fixes:
     * Solved layer name issue in web maps tutorials
     * Fixed wording, WCPS data is available from GeoMet-Weather
-    
+
 ## 2.3.19
 
 * date: 2020-10-27
@@ -884,7 +896,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * none
 * bug fixes:
     * fixed web map animations for daylight saving time change
-    
+
 ## 2.3.17
 
 * date: 2020-10-23
@@ -907,15 +919,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * new user survey
     * new hurricane web map and new hurricane GeoMet subpage
     * updated hurricanes doc path
-    * Add RIOPS doc (raw forecast, different from DD-Alpha) 
+    * Add RIOPS doc (raw forecast, different from DD-Alpha)
     * New GDAL commands Jupyter Notebook
 * improvements:
-    * Further improvements of updated list of available datasets 
+    * Further improvements of updated list of available datasets
     * Merged vertical profiles subfolders and renamed readmes
     * Removed the 4km & 1km-dBZ radar composite layers from doc given their upcoming retirement
 * bug fixes:
     * typos
-    
+
 ## 2.3.15
 
 * date: 2020-09-23
@@ -924,7 +936,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Extension of the RDPS maximum forecast range (up to 84h)
 * improvements:
-    * Improvements of updated list of available datasets 
+    * Improvements of updated list of available datasets
 * bug fixes:
     * typos
 
@@ -939,7 +951,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Reorganized list of available NWP datasets
     * Added support for WMS GFI JSON responses and updated associated GFI examples
-    * Fix NetCDF format instead of GRIB2 format in DD-Alpha RIOPS doc 
+    * Fix NetCDF format instead of GRIB2 format in DD-Alpha RIOPS doc
 * bug fixes:
     * Fixed MSC GeoMet tech doc: multiple &LAYERS not supported in WMS GetMap requests
     * typos
@@ -952,7 +964,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * New page for RAQDPS, RDSPS
     * New MSC GeoMet pages for GDPS, GEPS, RAQDPS and RAQDPS-FW
-* improvements: 
+* improvements:
     * Interactive maps now show the default timestep at load time instead of oldest
 * bug fixes:
     * typos
@@ -965,12 +977,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add 3 inputs (new satellite obs) in the changelog of the GDPS, RDPS and GEPS
     * Add RAQDPS-FW doc (GRIB2 data on DD)
-* improvements: 
+* improvements:
     * Raw data access ordering
 * bug fixes:
     * Fixed missing translation in Arthur use case
     * typos
-    
+
 ## 2.3.11
 
 * date: 2020-06-09
@@ -978,7 +990,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * none
-* improvements: 
+* improvements:
     * Clarified question in the FAQ
 * bug fixes:
     * none
@@ -990,7 +1002,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * none
-* improvements: 
+* improvements:
     * Add a question about AQHI in the FAQ
 * bug fixes:
     * Broken links
@@ -1002,11 +1014,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * none
-* improvements: 
+* improvements:
     * Jupyter Notebooks now pointing to the ECCC-MSC source
 * bug fixes:
     * Broken links
-    
+
 ## 2.3.8
 
 * date: 2020-06-05
@@ -1015,11 +1027,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Internal message sent
 * new content:
     * none
-* improvements: 
+* improvements:
     * none
 * bug fixes:
     * Broken links
-    
+
 ## 2.3.7
 
 * date: 2020-06-05
@@ -1027,11 +1039,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * none
-* improvements: 
+* improvements:
     * none
 * bug fixes:
     * Broken links
-    
+
 ## 2.3.6
 
 * date: 2020-06-05
@@ -1039,11 +1051,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * New doc section to edit Jupiter Notebooks
-* improvements: 
+* improvements:
     * Updated Arthur use case with Miguel's feedback
 * bug fixes:
     * TBD
-    
+
 ## 2.3.5
 
 * date: 2020-05-28
@@ -1051,13 +1063,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * TBD
-* improvements: 
+* improvements:
     * Deployment workflow changes to accommodate Jupyter Notebooks requirements
     * Clarified API on root page and services order changes, as discussed with management
     * Updated Datamart radar list link
 * bug fixes:
     * TBD
-    
+
 ## 2.3.4
 
 * date: 2020-05-27
@@ -1069,13 +1081,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Added GeoMet-Weather layer tree screenshot in usage overview
     * Added LICENSE.md, see GCcode ticket #25
     * Added the Arthur use case as a Jupiter Notebook, built by Marie-Eve
-* improvements: 
+* improvements:
     * Changed wording from 'on-the-fly' to 'on-demand'
-    * New QGIS WMS styles section in tutorials 
-    * Updated hydrometric data page to include historical hydrometric data 
+    * New QGIS WMS styles section in tutorials
+    * Updated hydrometric data page to include historical hydrometric data
 * bug fixes:
     * Minor fixes
-    
+
 ## 2.3.3
 
 * date: 2020-05-01
@@ -1083,7 +1095,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add Firework summer season debut - April 1st 2020
-* improvements: 
+* improvements:
     * none
 * bug fixes:
     * Minor fixes
@@ -1095,12 +1107,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * none
-* improvements: 
+* improvements:
     * none
 * bug fixes:
     * Fixed broken hamburger menu
     * Minor fixes
-    
+
 ## 2.3.1
 
 * date: 2020-05-01
@@ -1109,7 +1121,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * New RDPA doc for MSC GeoMet
     * Major improvements to many dataset changelogs
-* improvements: 
+* improvements:
     * Added mention of tutorials in radar doc
 * bug fixes:
     * Fix to tab titles
@@ -1121,13 +1133,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced
 * new content:
     * 4 tutorials with animated demonstrations and interactive code
-    * Adjustments to the root, usage, MSC GeoMet and MSC Datamart pages to link to the new tutorials 
+    * Adjustments to the root, usage, MSC GeoMet and MSC Datamart pages to link to the new tutorials
 * improvements:
     * Several new changelog updates
     * Major update to deployment docs
 * bug fixes:
     * Typos
-    
+
 ## 2.2.6
 
 * date: 2020-03-25
@@ -1140,7 +1152,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Improved GeoMet description
     * Radar coverage in embedded maps is now time-enabled (matching radar composite)
     * Updated GIOPS doc to remove wget in favor of AMQP
-    * Add 2 variables in GIOPS doc 
+    * Add 2 variables in GIOPS doc
     * Adjust WCPS doc (grid shifting required in order to match the shorelines of the Great Lakes)
     * Added response zone to hurricane doc and other fixes
 * bug fixes:
@@ -1248,7 +1260,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced to users
 * bug fixes:
-    * Links broken in the major change log (anchor issues) 
+    * Links broken in the major change log (anchor issues)
 
 ## 2.1.4
 
@@ -1270,7 +1282,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * not announced to users
 * new content:
     * HRDPS1km grid specifications
-    * Add note for AMQP (add compagny name in the sr_subscribe config : facilitate support) 
+    * Add note for AMQP (add compagny name in the sr_subscribe config : facilitate support)
 * improvements:
     * Added recommendation for WCS GetCoverage request regarding the data resolution
     * Add Environemental mention for NWP data
@@ -1278,10 +1290,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * Fixed broken list in GeoMet technical documentation
     * Formatting fixes
-    
+
 ## 2.1.2
 
-* date: 2019-10-11 
+* date: 2019-10-11
 * announcements:
     * not announced to users
 * new content:
@@ -1319,11 +1331,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * made map center closer to Canada on Usage overview
     * updates to datasets ordering on root msc-data page
     * Update changelog (generic links)
-    * Improve GEPS products documentation 
+    * Improve GEPS products documentation
     * CCCS documentation update
 * bug fixes:
     * TBD
-    
+
 ## 2.0.7
 
 * date: 2019-09-16
@@ -1335,8 +1347,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * bolding of main links on root page
     * GeoMet: clarified support multiple TIME parameters
     * updated GeoMet-OGC-API references
-    * adjust the GEPS doc for products 
-    * correct the HRDPS forecast hour availability (00 to 48h for all domains)	
+    * adjust the GEPS doc for products
+    * correct the HRDPS forecast hour availability (00 to 48h for all domains)
 * bug fixes:
     * typos
     * formatting fixes
@@ -1358,15 +1370,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * fixes to HRDPA Watershed format
     * formatting fixes
-    
+
 ## 2.0.5
 
 * date: 2019-08-06
 * announcements:
     * not announced to users
 * new content:
-    * CanSIPS documentation: new system and additional data at 1.0 deg 
-    * changelog integration for several NWP systems 
+    * CanSIPS documentation: new system and additional data at 1.0 deg
+    * changelog integration for several NWP systems
 * improvements:
     * none
 * bug fixes:
@@ -1415,7 +1427,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * fixed breadcrumbs for MSC Datamart subpages
     * fixed broken menu anchors in docs/msc-geomet/web-services_fr.md
     * typos
-    
+
 ## 2.0.1
 
 * date: 2019-07-12

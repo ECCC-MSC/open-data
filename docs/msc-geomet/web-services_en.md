@@ -35,13 +35,13 @@ The following OGC web services are supported by MSC GeoMet:
 
 ## Web Map Service (WMS)
 
-Requests with the [OGC Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) standard mainly enable a client to retrieve geospatial data as maps. WMS requests are made over the internet (HTTP) and are primarily used to retrieve an image (e.g. JPEG, PNG) of geospatial data for a given area of interest. 
+Requests with the [OGC Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms) standard mainly enable a client to retrieve geospatial data as maps. WMS requests are made over the internet (HTTP) and are primarily used to retrieve an image (e.g. JPEG, PNG) of geospatial data for a given area of interest.
 
 The Web Map Service allows for several different types of request types, each of which are described in further detail below.
 
 ### WMS GetCapabilities
 
-A WMS GetCapabilities request allows the client to retrieve an XML document that contains metadata describing the service. This document contains information relating to the supported request types, supported coordinate reference systems, and most importantly, the list of available layers (data). 
+A WMS GetCapabilities request allows the client to retrieve an XML document that contains metadata describing the service. This document contains information relating to the supported request types, supported coordinate reference systems, and most importantly, the list of available layers (data).
 
 A WMS GetCapabilities request is comprised of the following parameters:
 
@@ -65,7 +65,7 @@ Each layer defined in the WMS GetCapabilities XML document has information relat
 
 ### WMS GetMap
 
-A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.) for a given layer within a defined area. A GetMap request is composed of several parameters whose value determine the layer requested, its style, coordinate reference system, the timestep, in addition to the properties of the returned image. The [WMS GetCapabilities request](#getcapabilities) can assist the client in determining the values for several of these parameters.
+A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.) for a given layer within a defined area. A GetMap request is composed of several parameters whose value determine the layer requested, its style, coordinate reference system, the timestep, in addition to the properties of the returned image. The [WMS GetCapabilities request](#wms-getcapabilities) can assist the client in determining the values for several of these parameters.
 
 
 | Required parameters                 | Definition |
@@ -73,7 +73,7 @@ A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.)
 | SERVICE         | The service the client is requesting. In this case, `wms`.|
 | VERSION         | The version of the service the client is requesting. We recommend using the latest wms version `1.3.0`.|
 | REQUEST         | The request type. In this case, `GetMap`.|
-| LAYERS          | The name of the layer used to create the image. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. MSC GeoMet currently supports only a single value for the GetMap LAYERS parameter. This will be improved in a future version to support multiple layers as per OGC WMS 1.3.0.|
+| LAYERS          | The name of the layer used to create the image. The name of the layer can be retrieved using a [WMS GetCapabilities](#wms-getcapabilities) request. MSC GeoMet currently supports only a single value for the GetMap LAYERS parameter. This will be improved in a future version to support multiple layers as per OGC WMS 1.3.0.|
 | STYLES          | Styles with which to display the layer. If this parameter is not specified, the default layer style will be used for rendering.
 | CRS (version 1.3.0) or SRS (version 1.1.0) | The coordinate reference system (CRS) used to create the map image. **Be careful, this parameter name differs depending on the WMS version specified in the VERSION parameter**.|
 | BBOX            | The bounding box of the requested image. Coordinates should be in the units of the CRS/SRS. If using the WMS 1.3.0 specification *and the EPSG:4326* these values are: `minY,minX,maxY,maxX`. In WMS 1.3.0, the axis order depends on the projection. If the request uses the WMS 1.1.1 specification, these values are: `minX,minY,maxX,maxY`.|
@@ -95,7 +95,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-
 
 And returns:
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
 
 ### WMS GetFeatureInfo
 
@@ -107,7 +107,7 @@ A WMS GetFeatureInfo request retrieves raw data for a given geographic location.
 | SERVICE         | The service the client is requesting. In this case, `wms`|
 | VERSION         | The version of the service the client is requesting. We recommend using the latest wms version `1.3.0`|
 | REQUEST         | The request type. In this case, `GetFeatureInfo`.|
-| LAYERS          | The name of the layer used to query. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request.|
+| LAYERS          | The name of the layer used to query. The name of the layer can be retrieved using a [WMS GetCapabilities](#wms-getcapabilities) request.|
 | CRS (version 1.3.0) or SRS (WMS version 1.1.0) | The coordinate reference system (CRS) used to create the map image. **Be careful, this parameter name differs depending on the version specified in the VERSION parameter**.|
 | BBOX            | The bounding box of the requested image. Coordinates should be in the units of the CRS/SRS. If using the WMS 1.3.0 specification *and the EPSG:4326* these values are: `minY,minX,maxY,maxX`. If the request uses the WMS 1.1.1 specification or any other CRS, these values are: `minX,minY,maxX,maxY`. The request's bounding box must cover a part of the request layer's geographic extent.|
 | FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`. Images in the PNG format support transparency, while images in the JPEG format are smaller in size|
@@ -133,7 +133,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInf
 
 ### WMS GetLegendGraphic
 
-A WMS GetLegendGraphic request returns an image of the legend in the style requested by the user. The simplest way to access a layer's legend for a given style is to consult the WMS GetCapabilities document for the layer in question. All available layer styles are listed within the layer definition and the `<OnlineResource>` tag will contain a WMS GetLegendGraphic URL. 
+A WMS GetLegendGraphic request returns an image of the legend in the style requested by the user. The simplest way to access a layer's legend for a given style is to consult the WMS GetCapabilities document for the layer in question. All available layer styles are listed within the layer definition and the `<OnlineResource>` tag will contain a WMS GetLegendGraphic URL.
 
 For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles defined in the WMS GetCapabilties document. Requesting the `TEMPERATURE-LINEAR` style using the GetLegendGraphic request contained in the `<OnlineResource>` tag returns the legend for this style:
 
@@ -145,27 +145,27 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 | SERVICE         | The service the client is requesting. In this case, `wms`|
 | VERSION         | The version of the service the client is requesting. We recommend using the latest wms version `1.3.0`|
 | REQUEST         | The request type. In this case, `GetLegendGraphic`|
-| LAYER           | The name of the layer for which the legend is requested. The name of the layer can be retrieved using a [WMS GetCapabilities](#getcapabilities) request|
+| LAYER           | The name of the layer for which the legend is requested. The name of the layer can be retrieved using a [WMS GetCapabilities](#wms-getcapabilities) request|
 | FORMAT          | The file format desired for the requested image. Accepted values for this parameter are: `image/png` or `image/jpeg`|
 | SLD_VERSION     | The SLD document version. We recommend using version `1.1.0`|
 
 | Optional parameters                | Definition |
 | ------------------------- | ---------- |
-| STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#getcapabilities) request. If this parameter is not specified a request will return the layer's default style. Note: Make sure to type the singular form of this parameter in the `GetLegendGraphic` request and not the plural form (i.e. `STYLES`), because it will output the layer's default style instead of the requested style.|
+| STYLE           | The name of the style used to create the legend image. The name individual layer styles can be retrieved using a [WMS GetCapabilities](#wms-getcapabilities) request. If this parameter is not specified a request will return the layer's default style. Note: Make sure to type the singular form of this parameter in the `GetLegendGraphic` request and not the plural form (i.e. `STYLES`), because it will output the layer's default style instead of the requested style.|
 | SLD             | Specifies that the legend should be created with an external SLD document. See the [Handing Styles](#handling-styles) for further information.|
 | SLD_BODY        | Allows the user to include an SLD document directly in the request URL.| Note: the value of LAYER in the WMS GetMap request and the value of se:Name (or se%3AName when encoded) in SLD_BODY needs to be different for the request to work.
 | LANG          | A vendor extension that allows a client to display the legend in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
-A sample GetLegendGraphic request for the Global Deterministic Wave Prediction System's winds layer (GDWPS.UU.1h) would look like this:
+A sample GetLegendGraphic request for the Global Deterministic Wave Prediction System's winds layer (GDWPS_25km_Winds_10m_PT1H) would look like this:
 
 ```
 https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0
-&layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW
+&layer=GDWPS_25km_Winds_10m_PT1H&format=image/png&STYLE=WINDARROW
 ```
 
 And returns:
 
-![GDWPS Wind Arrow Style Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDWPS.UU.1h&format=image/png&STYLE=WINDARROW)
+![GDWPS Wind Arrow Style Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDWPS_25km_Winds_10m_PT1H&format=image/png&STYLE=WINDARROW)
 
 ### Handling time
 
@@ -178,10 +178,10 @@ To make a request for a specific time and/or model run, a client must first dete
 For example, the Global Deterministic Prediction System's air temperature layer (GDPS.ETA_TT) time dimensions resemble:
 
 ```xml
-<Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z" 
+<Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z"
 nearestValue="0">2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H</Dimension>
 
-<Dimension name="reference_time" units="ISO8601" default="2019-06-12T00:00:00Z" 
+<Dimension name="reference_time" units="ISO8601" default="2019-06-12T00:00:00Z"
 multipleValues="1" nearestValue="0">2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H</Dimension>
 ```
 
@@ -270,7 +270,7 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 The [OGC Web Coverage Service](https://www.opengeospatial.org/standards/wcs) requests enable a client to retrieve coverage information from a geospatial data for a given area of interest. WCS requests are made over the internet (HTTP) and give the user more flexibility when requesting information about the coverage of a layer compared with the more traditional way of downloading of flat files. The Web Coverage Service allows for several different types of requests, each of which are described in further detail below.
 
 Note that only the WCS 2.0.1 version is currently supported by the GeoMet services. We invite users to use exclusively version 2.0.1 of the WCS standard. Also, note that WCS 2.0.1 is not supported in QGIS and ArcGIS.
- 
+
 ### WCS GetCapabilities
 
 A WCS GetCapabilities request allows the client to retrieve an XML document that contains metadata describing the service. This document contains information relating to the supported request types, supported coordinate reference systems, and most importantly, the layers (data) for which clients can request raw data.
@@ -293,12 +293,12 @@ A WCS GetCapabilities request to MSC GeoMet would then be constructed
 like this:
 
 [https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCapabilities)
- 
+
 The GetCapabilities document will have information relating to the service's name and title, geographic extent, available layers and available format.
- 
+
 ### WCS DescribeCoverage
 
-A WCS DescribeCoverage request allows the user to access more information about a given layer than using the [WCS GetCapabilities](#wcsgetcap). Information in the DescribeCoverage request includes: extent, CRS, available format
+A WCS DescribeCoverage request allows the user to access more information about a given layer than using the [WCS GetCapabilities](#wcs-getcapabilities). Information in the DescribeCoverage request includes: extent, CRS, available format
 
 
 | Required parameters       | Definition |
@@ -306,7 +306,7 @@ A WCS DescribeCoverage request allows the user to access more information about 
 | SERVICE      | The service the client is requesting. In this case, `wcs`.|
 | VERSION      | The version of the service the client is requesting. We recommend using the latest WCS version `2.0.1`|
 | REQUEST      | The request type. In this case, `DescribeCoverage`.|
-| COVERAGEID   | The name of the layer for which to return the metadata. The name of the layer can be retrieved using a [WCS GetCapabilities](#wcsgetcap) request|
+| COVERAGEID   | The name of the layer for which to return the metadata. The name of the layer can be retrieved using a [WCS GetCapabilities](#wcs-getcapabilities) request|
 
 A WCS DescribeCoverage request to GeoMet-Weather for the GDPS.ETA_TT layer would then be constructed like this:
 
@@ -337,7 +337,7 @@ A WCS GetCoverage request is used to retrieve the actual coverage information (r
 |DIM_REFERENCE_TIME| The time of the weather model run (when available) to use to generate the requested coverage. The format must respect the ISO8601 standard. For more information regarding managing time in WCS requests, see the [WCS Handling Time](#wcstime) section|
 
 A WCS GetCoverage request to MSC GeoMet for the GDPS.ETA_TT layer could then be constructed
-like this: 
+like this:
 [https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
 
 ### <a name="wcstime"></a>Handling time
@@ -429,7 +429,7 @@ List all feature collections available:
 
 The response provides a list of feature collections with associated metadata (title, description, links, extent, CRS).
 
-### Feature collection 
+### Feature collection
 
 List a single feature collection:
 
