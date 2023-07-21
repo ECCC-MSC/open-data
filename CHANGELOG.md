@@ -14,9 +14,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    *
+    * UMOS-RDPS new page in main NWP page
+    * Uodate NWP changelog: Add GNSS-RO data in main NWP
 * improvements:
-    *
+    * GDSPS update (doc+changelog)
 * bug fixes:
     * Fixed broken links in Technical documentation and removed trailing spaces
 
