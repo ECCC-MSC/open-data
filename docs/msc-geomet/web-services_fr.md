@@ -67,7 +67,7 @@ Chaque couche définie dans le document XML du WMS GetCapabilities contient l'in
 
 ### WMS GetMap
 
-Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, PNG) d'une couche pour une région déterminée. Une requête WMS GetMap est constituée de plusieurs paramètres qui spécifie la couche désirée, son style, le système de coordonnées cartographiques, le pas de temps, en plus des propriétés additionnelles associées à l'image. Une [requête WMS GetCapabilities](#getcapabilities) supporte les usagers en guidant l'utilisateur sur les valeurs possibles pour ces paramètres.
+Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, PNG) d'une couche pour une région déterminée. Une requête WMS GetMap est constituée de plusieurs paramètres qui spécifie la couche désirée, son style, le système de coordonnées cartographiques, le pas de temps, en plus des propriétés additionnelles associées à l'image. Une [requête WMS GetCapabilities](#wms-getcapabilities) supporte les usagers en guidant l'utilisateur sur les valeurs possibles pour ces paramètres.
 
 
 | Paramètres obligatoires | Définition |
@@ -76,7 +76,7 @@ Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, 
 | VERSION         | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit `1.3.0`|
 | REQUEST         | Le type de requête, soit `GetMap`|
 | LAYERS          | L'identifiant des couches à être affichées sur l'image. L'identifiant des couches est spécifié dans le résultat d'une requête [WMS GetCapabilities](#wms-getcapabilities). GeoMet du SMC supporte présentement seulement une seule valeur pour le paramètre GetMap LAYERS. Ceci sera amélioré dans une version à venir afin de supporter les couches multiples du standard WMS 1.3.0.|
-| STYLES          | Le style à utiliser pour l'affichage de la couche. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. 
+| STYLES          | Le style à utiliser pour l'affichage de la couche. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé.
 | CRS (version 1.3.0) ou SRS (version 1.1.0) | Le système de coordonnées cartographiques (CRS) à utiliser pour créer l'image. **Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé**|
 | BBOX            | L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 *et avec la projection EPSG:4326*, l'ordre des coordonnées est `minY,minX,maxY,maxX`. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est `minX,minY,maxX,maxY`|
 | FORMAT          | Le format de données pour l'image désirée. Les valeurs possibles pour ce paramètre sont : `image/jpeg` ou `image/png`. Le format PNG supporte la transparence, alors que le format JPEG est plus léger|
@@ -97,7 +97,7 @@ https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90
 
 Et retourne :
 
-![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
+![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
 
 ### WMS GetFeatureInfo
 
@@ -182,10 +182,10 @@ Afin de générer une requête pour un pas de temps spécifique ou une passe de 
 Par exemple, les dimensions temporelles pour la couche de température de l'air (GDPS.ETA_TT) du Système global de prévision déterministe (SGPD) ressemble à :
 
 ```xml
-<Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z" 
+<Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z"
 nearestValue="0">2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H</Dimension>
 
-<Dimension name="reference_time" units="ISO8601" default="2019-06-12T00:00:00Z" 
+<Dimension name="reference_time" units="ISO8601" default="2019-06-12T00:00:00Z"
 multipleValues="1" nearestValue="0">2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H</Dimension>
 ```
 
@@ -277,7 +277,7 @@ Les requêtes de type [OGC Web Coverage Service](https://www.opengeospatial.org/
 
 Notez que seule la version WCS 2.0.1 est présentement supportée par les services web GeoMet du SMC. Nous invitons les usagers à utiliser cette version du standard. Il est aussi à noter que QGIS et ArcGIS ne supportent pas le WCS 2.0.1.
 
- 
+
 ### WCS GetCapabilities
 
 Une requête WCS GetCapabilities permet à l'usager de récupérer un document XML contenant les métadonnées décrivant le service. Ce document contient l'information sur le type de requêtes et les systèmes de coordonnées cartographiques supportées, ainsi que les couches pour lesquelles les données brutes sont disponibles.
@@ -310,7 +310,7 @@ Une requête WCS DescribeCoverage permet à l'usager de récupérer davantage d'
 | SERVICE      | Le service que l'utilisateur sollicite. Dans ce cas, `wcs`|
 | VERSION      | La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version supportée, soit `2.0.1`|
 | REQUEST      | Le type de requête, soit `DescribeCoverage`|
-| COVERAGEID   | Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  [WCS GetCapabilities](#wcsgetcap)|
+| COVERAGEID   | Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  [WCS GetCapabilities](#wcs-getcapabilities)|
 
 Une requête WCS DescribeCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :
 
@@ -472,7 +472,7 @@ Requête pour un intervalle de temps :
 
 * [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31)
 
-Requête pour un intervalle de temps le mot clé de borne ouverte `..` : 
+Requête pour un intervalle de temps le mot clé de borne ouverte `..` :
 
 * Depuis un moment spécifique : [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=2012-05-20/..)
 * Jusqu'à un moment spécifique : [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&STATION_NUMBER=07DA006&datetime=../2015-11-11)
@@ -525,7 +525,7 @@ La stratégie de pagination est couramment utilisée pour améliorer les perform
 
 Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Cela constituerait le dossier complet.
 
- 
+
 #### Combinaison de paramètres de filtre
 
 Interroger toutes les moyennes quotidiennes d'une station entre 2001 et 2010 :
