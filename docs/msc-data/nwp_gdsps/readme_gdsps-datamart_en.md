@@ -72,7 +72,8 @@ The list below provides, for each variable: a short description, an alphabetical
 
 __NOTE__ :
 
-During the post-processing phase, storm surge elevation (ETAS) is derived from total water level (SSH) by harmonic analysis using t_tide (Foreman et al. 2009). The storm surge elevation has been computed for the [150W, 40W] X [40 N, 80 N] region around Canada and for a band 100 km wide along the shore worldwide. Elsewhere, ETAS is masked. The model tidal heights (SSHT) can be obtained by taking the difference SSH-ETAS where ETAS is defined.
+* Total Water Level (SSH) is relative to Mean Water Level (MWL) as defined by the average SSH over the last 365 days of pseudo-analysis.
+* During the post-processing phase, storm surge elevation (ETAS) is derived from total water level (SSH) by harmonic analysis using t_tide (Foreman et al. 2009). The storm surge elevation has been computed for the [150W, 40W] X [40 N, 80 N] region around Canada and for a band 100 km wide along the shore worldwide. Elsewhere, ETAS is masked. The model tidal heights (SSHT) can be obtained by taking the difference SSH-ETAS where ETAS is defined.
 
 ## Support
 
