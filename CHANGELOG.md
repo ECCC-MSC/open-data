@@ -10,17 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.5
 
-* date: 2023-08-11
+* date: 2023-08-29
 * announcements:
     * Not announced
 * new content:
     * Changelog HRDPS-N version V2.0.0
     * Addition of a note for ODIM_H5 radar data (GTS header)
     * Add RDAQA pages
+    * Doc-wide improvements to theme for improved readability and navigation
 * improvements:
     * None
 * bug fixes:
-    * Typo
+    * Fixed various typos
 
 ## 2.5.4
 
