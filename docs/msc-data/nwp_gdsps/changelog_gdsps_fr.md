@@ -6,17 +6,17 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe d’onde de tempête (SGPDOT)
 
-## Le ???di ??? juillet 2023
+## Le jeudi 27 juillet 2023
 
 ### Installation de la version 2.0.0 du Système global de prévision déterministe d’onde de tempête (SGPDOT) du Centre météorologique canadien (CMC)
 
-Le ???di ??? juillet 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va implémenter la version v2.0.0 du Système global de prévision déterministe d'onde de tempête (SGPDOT).
+Le jeudi 27 juillet 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va implémenter la version v2.0.0 du Système global de prévision déterministe d'onde de tempête (SGPDOT).
 
 Un résumé des innovations incluses dans cette installation est disponible ici: [SGPDOT_2.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-200_f.pdf).
 
 Notes :
 
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2023/07/xx/NOCN03_CWAO_xxxxxx___xxxxx).
+* [Note officielle](https://dd.meteo.gc.ca/doc/genots/2023/07/26/NOCN03_CWAO_261538___11180).
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdsps-200_f.pdf).
 * [Spécifications techniques du SGPDOT 2.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDSPS_2.0.0_f.pdf).
 
