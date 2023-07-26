@@ -8,6 +8,10 @@
 
 ## 2023
 
+### July 27, 2023
+
+* [Upgrade to version 2.0.0 of the Global Deterministic Storm Surge Prediction System (GDSPS) to add light baroclinic mode and sea-ice efferts](nwp_gdsps/changelog_gdsps_en.md#thursday-july-27-2023)
+
 ### July 5, 2023
 
 * [Addition of commercial GNSS-RO observations from Spire in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-july-5-2023)

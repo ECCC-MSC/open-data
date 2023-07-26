@@ -8,6 +8,10 @@
 
 ## 2023
 
+### 27 juillet 2023
+
+* [Mise à jour du Système global de prévision déterministe d'onde de tempête (SGPDOT) à la version 2.0.0 pour ajouter un léger mode barocline et des effets de glace de mer](nwp_gdsps/changelog_gdsps_fr.md#le-jeudi-27-juillet-2023)
+
 ### 5 juillet 2023
 
 * [Ajout d’observations commerciales GNSS-RO de Spire dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-5-juillet-2023)
