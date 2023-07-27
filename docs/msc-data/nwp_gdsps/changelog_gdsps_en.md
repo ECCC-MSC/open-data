@@ -10,7 +10,7 @@
 
 ### Implementation of version 2.0.0 of the Global Deterministic Storm-surge Prediction System (GDSPS) at the Canadian Meteorological Centre (CMC)
 
-On Thursday July 27, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 2.0.0 of the Global Deterministic Storm-surge Prediction System (GDSPS) with an operational status.
+On Thursday July 27, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 2.0.0 of the Global Deterministic Storm-surge Prediction System (GDSPS).
 
 A brief summary of the innovations included in this installation can be consulted in this document: [GDSPS_2.0.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-200_e.pdf).
 
