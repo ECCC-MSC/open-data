@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.2
+
+* date: 2023-07-27
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * None
+* bug fixes:
+    * Fix 2.0.0 GDSPS English changelog
+
 ## 2.5.1
 
 * date: 2023-07-27
