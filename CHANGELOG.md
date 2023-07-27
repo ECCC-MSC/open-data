@@ -10,12 +10,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.1
 
-* date:
+* date: 2023-07-27
 * announcements:
     * Not announced
 * new content:
     * UMOS-RDPS new page in main NWP page
-    * Uodate NWP changelog: Add GNSS-RO data in main NWP
+    * UMOS-GDPS New page
+    * Update NWP changelog: Add GNSS-RO data in main NWP
 * improvements:
     * GDSPS update (doc+changelog)
 * bug fixes:
