@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.3
+
+* date: 2023-07-28
+* announcements:
+    * Not announced
+* new content:
+    * UMOS-GDPS new page in main GDPS page
+* improvements:
+    * None
+* bug fixes:
+    * None
+
 ## 2.5.2
 
 * date: 2023-07-27
@@ -26,7 +38,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * UMOS-RDPS new page in main NWP page
+    * UMOS-RDPS new page in main RDPS page
     * UMOS-GDPS New page
     * Update NWP changelog: Add GNSS-RO data in main NWP
 * improvements:
