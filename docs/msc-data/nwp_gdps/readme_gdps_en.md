@@ -17,6 +17,7 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 
 * [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md)
+* [GeoJSON statistically post-processed data on the MSC Datamart](readme_gdps-statpostproc-datamart_en.md)
 * [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
 * [NetCDF global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
 

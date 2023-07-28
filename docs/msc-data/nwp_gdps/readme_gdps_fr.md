@@ -17,6 +17,7 @@ Ces données sont respectivement disponibles l'API / les services web [GeoMet du
 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
 * [Données GRIB2 de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
+* [Données GeoJSON statistiquement post-traitées sur le Datamart du SMC](readme_gdps-statpostproc-datamart_fr.md)
 * [Données expérimentales GRIB2 d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gdps-datamart-alpha_fr.md) 
 * [Données NetCDF d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
 
