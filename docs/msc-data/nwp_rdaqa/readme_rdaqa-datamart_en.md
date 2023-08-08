@@ -6,7 +6,7 @@
 
 # Regional Deterministic Air Quality Analysis (RDAQA) data in GRIB2 Format
 
-This page describes the [Regional Deterministic Air Quality Analysis (RDAQA)](readme_rdaqa_en.md) GRIB2 data. The system is run hourly y to produce analysis of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. 
+This page describes the [Regional Deterministic Air Quality Analysis (RDAQA)](readme_rdaqa_en.md) GRIB2 data. The system is run hourly to produce analysis of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. 
 
 ## Data location
 
