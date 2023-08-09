@@ -145,25 +145,14 @@ Levels that may be applicable to a given parameter are :
 
 This table provides, for each GRIB2 parameter number: a short description, an alphabetical abbreviation, the levels available for the parameter, and measurement units.
 
-|GRIB2 discipline/category/parameter number | Parameter description |	Abbreviation |	Level |	Units |
-|------|-------------------------------|--------------------|-------|-------|
-|10/2/0|  Ice cover                    |              ICEC  | Sfc | fraction |
-|0/2/2 |  U-Component of Wind          |              UGRD  | AGL-10| m/s |
-|0/2/3 |  V-Component of Wind          |              VGRD  | AGL-10| m/s |
-|10/0/3 |	Significant height of combined wind waves and swell |	HTSGW |	Sfc |	m|
-|10/0/34 |	Peak wave period |	PWPER |	Sfc |	s|
-|10/0/28 |	Mean zero-crossing wave period |	MZWPER |	Sfc |	s|
-|10/0/46 |	Peak wave direction |	PWAVEDIR |	Sfc |	degrees true|
-|10/0/4 |	Direction of wind waves |	WVDIR |	Sfc |	degrees true|
-|10/0/5 |	Significant height of wind waves |	WVHGT |	Sfc |	m|
-|10/0/35 |	Peak period of wind waves |	PPERWW |	Sfc |	s|
-|10/0/53 |	Mean wave direction of first swell partition |	MWDFSWEL |	Sfc 	|degrees true|
-|10/0/47 |	Significant wave height of first swell partition |	SWHFSWEL |	Sfc |	m|
-|10/0/65 |	Peak wave period of first swell partition 	|PWPFSWEL |	Sfc |	s|
-|10/0/54 |	Mean wave direction of second swell partition |	MWDSSWEL |	Sfc 	|degrees true|
-|10/0/48 |	Significant wave height of second swell partition |	SWHSSWEL |	Sfc |	m|
-|10/0/66 |	Peak wave period of second swell partition 	|PWPSSWEL |	Sfc |	s|
+<table id="csv-table" class="display"></table>
 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDWPS_en.csv", "EN");
+</script>
 
 ### Notes
 

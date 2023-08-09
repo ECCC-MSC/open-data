@@ -70,27 +70,16 @@ Examples:
 
 List of 2D variables available in the files: 
 
-* __AirTemp__ : 1.5m surface air temperature (K)
-* __WindU__: 10m surface wind X velocity (m/s) 
-* __WindV__: 10m surface wind Y velocity (m/s)
-* __Runoff__ : Runoff (mm)
-* __SeaSfcHeight__ : Sea surface height above geoid (m). For Great Lakes, the reference is IGLD85
-* __SeaWaterSalinity__ : Sea water salinity at the surface model layer (per 1000) 
-* __SeaWaterPotentialTemp__ : Sea water potential temperature at the surface model layer (K)
-* __SeaWaterVelocityX__ : Sea water X velocity at the surface model layer (m/s)
-* __SeaWaterVelocityY__ : Sea water Y velocity at the surface model layer (m/s)
-* __MixedLayerThickness__ : Ocean mixed layer depth based on density criterion (m)
-* __TurboclineDepth__ : Turbocline depth (m)
-* __SeaIceVelocityX__ : Sea ice X velocity (m/s)
-* __SeaIceVelocityY__ : Sea ice Y velocity (m/s)
-* __SeaIceAreaFraction__ : Sea ice area fraction (fraction)
-* __SeaIceVol__ : Sea ice volume per unit grid cell area (m)
-* __SeaIceSnowTemp__ : Surface temperature of snow over sea ice or bare sea ice (K)
-* __SeaIceSnowVol__ : Volume of snow on sea ice per unit grid cell area (cm)
-* __SeaIceCompressiveStrength__ : Depth-integrated compressive sea ice strength (N/m)
-* __SeaIceDivergence__ : Sea ice divergence (%/day)
-* __SeaIceInternalPressure__ : Depth-integrated internal sea ice pressure (N/m)
-* __SeaIceShear__ : Sea ice shea (%/day)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/WCPS_en.csv", "EN");
+</script>
+
+Note: The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.
 
 The variables `AirTemp`, `WindU`, `WindV` and `Runoff` are from GEM-LAM and the rests are from NEMO-CICE. 
 

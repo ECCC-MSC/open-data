@@ -143,49 +143,16 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) for more information.
-
-* [000h forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_e.html)
-* [Non-zero hour forecast](https://weather.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_e.html)
-
 List of weather elements on the grid (*HRDPS-WEonG*):
 
-| GRIB2 parameter abreviation | Description | Unity  |
-|------------------------|-------------|----------|
-| BSNOW/BLSN | Presence of blowing snow | binary (0/1) |
-| CFRZR/PROBFZRA | Probability of freezing rain	| %|
-| CICEP/PROBPL | Probability of ice pellets | %|
-| CONDARAIN/CONDALPCPN | Conditional amount of liquid precipitation | m |
-| CONDASNOW/CONDASSN | Conditional amount of solid snow | m |
-| CONDICEP/CONDAPL | Conditional amount of solide ice pellets | m |
-| CP/CHARPCPN |	Character of precipitation | 0=none; 1=showers; 2=intermittent; 3=continuous |
-| CRAIN/PROBRA | Probability of rain | % |
-| CSNOW/PROBSN | Probability of snow | % |
-| DIST/ORGPHY | Model orography |m |
-| DPT |	Dew point temperature |	C |
-| DPTYPE/DMNTPCPNTYPE | Dominant precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| FZPRATE/CONDAFZPCPN | Conditional freezing precipitation amount | mm |
-| GUST | Gust | m/s |
-| HSNOWL/HGTSNLVL | Height of snow level | m |
-| LAND/WTRLANMASK | Water/land mask | fraction |
-| PARAIN/PROBLPCPN | Probability of liquid precipitation | % |
-| PBSNOW/PROBBLSN | Probability of blowing snow | % |
-| PDZ/PROBDZ |	Probability of drizzle |	% |
-| PFRDZ/PROBFZDZ | Probability of freezing drizzle | % |
-| PFRZR/PROBFZPCPN | Probability of freezing precipitation | % |
-| POP/PROBPCPN |	Probability of precipitation | % |
-| PRATE/CONDAPCPN | Conditional precipitation rate | m |
-| PSNOWS/PROBSNSQ | Probability of snow squalls  |	% |
-| PTYPE/PCPNTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzlee; 9=freezing rain/ice pellets  |
-| SCNDPTYPE/SCNDPCPNTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| SK/SKSTATE | day/night sky state (combined cloud cover and opacity)  | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
-| TMP |	Temperature | C |
-| TPII/TPCPNINTSTI | Total precipitation intensity index | 0=no intensity; 1=light; 2=moderate; 3=heavy	|
-| TSTM/PROBTSOCRNC | Probability of thunderstorm occurence | % |
-| VISIFOG/VISIFG | Visibility through ice fog | m |
-| VISLFOG/VISLFG | Visibility through liquid fog | m |
-| WDIR | Wind direction | True degree |
-| WIND/WSPD | Wind speed | m/s |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPS_en.csv", "EN");
+</script>
 
 ## Support
 

@@ -69,9 +69,14 @@ Exemple de nom de fichier : 20210111T00Z_MSC_GDPS-Analysis_IICECONC_SFC_RLatLon0
 
 Cette table indique le nom de la variable, le niveau, l'abbréviation et l'unité du paramètre encodé en format NetCDF.
 
-| Abbréviation | Description courte       |  Niveau |	Unité  |
-|--------------|--------------------------|---------|----------|
-|  iiceconc    | fraction de glace de mer | surface |    1     |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-Ice-Analysis_fr.csv", "FR");
+</script>
 
 ## Support
 

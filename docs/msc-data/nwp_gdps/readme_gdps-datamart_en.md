@@ -89,14 +89,14 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+<table id="csv-table" class="display"></table>
 
-
-* [00 hr forecast](https://weather.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P000_deterministic_e.html)
-* [03-144 hr every 3 hrs and 150 156 162 168 hr forecast](https://weather.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P003144_03_and_P150168_06_deterministic_e.html)
-* [147-165 hr every 6 hrs forecast](https://weather.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P147165_06_deterministic_e.html) eg. (147, 153, 159, 165)
-* [171-237 hr every 6 hrs forecast](https://weather.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P171237_06_deterministic_e.html) eg. (171, 177, 183, 189, 195, 201, 207, 213, 219, 225, 231, 237)
-* [174-240 hr every 6 hrs forecast](https://weather.gc.ca/grib/GLB_HR/GLB_latlonp24xp24_P174240_06_deterministic_e.html) eg. (174, 180, 186, 192, 198, 204, 210, 216, 222, 228, 234, 240)
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS_en.csv", "EN");
+</script>
 
 Notes :
 

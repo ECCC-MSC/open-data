@@ -65,11 +65,14 @@ Exemple de fichier :
 
 La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une brève description, une abréviation alphabétique, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure.
 
+<table id="csv-table" class="display"></table>
 
-|  NetCDF  |   Description courte |                        Abr.|   Niveau | Unités|
-|----------|--------|--------|--------|--------|
-| etas     |  Onde de tempête                 |         ETAS  |  Sfc | m |
-| zos      |  Hauteur de la surface de la mer  |          SSH  |  Sfc | m |
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDSPS_fr.csv", "FR");
+</script>
 
 __NOTE__:
 

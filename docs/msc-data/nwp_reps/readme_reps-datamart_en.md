@@ -112,42 +112,83 @@ __Note__: Files contain by default all ensemble members. Files containing __prob
 
 ## List of variables
 
-The variables for the __ensemble products__ available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
-
-* __FPRATE__ : Freezing rain accumulated over a period. Ex: FPRATE-Accum24h-Prob
-* __HEATX__ :  Humidex 2m above ground. Ex: HEATX-Prob_AGL-2m; HEATX-Max24h-Prob_AGL-2m (maximum humidex 2m above ground over a period of 24h) 
-* __IPRATE__ : Ice pellets (water equivalent) accumulated over a period. Ex: IPRATE-Accum12h-Prob
-* __RPRATE__ : Rain accumulated over a period Ex: RPRATE-Accum6h-Prob
-* __SPRATE__ : Snow (water equivalent) accumulated over a period. Ex: SPRATE-Accum24h-Prob
-* __TEMP__ / __TMP__ : Temperature 2m above ground. Ex: TMP-Prob_AGL-2m; TMP-Max24h-Prob_AGL-2m (maximum temperature 2m above ground over a 24h period)
-* __TPRATE__ : Total precipitation accumulated over a period. Ex: TPRATE-Max48h-Prob
-* __WCF__ : Wind chill factor 2m above ground. Ex: WCF-Prob_AGL-2m; WCF-Min24h-Prob_AGL-2m (minimum wind chill factor 2m above ground over a 24h period)
-* __WIND__ : Wind speed 10m above ground. Ex: WIND-Prob_AGL-10m; WIND-Max12h-Prob_AGL-10m (maximum wind speed 10m above ground over a 12h period)
-                                                                                  
 The GRIB2 files variables for __individual members__ are the following. The variables are available from 0 to 72h, every 3h. Some examples are indicated for the rotated lat-lon grid at 10km resolution.
 
-* __AFRAIN__ : Accumulated precipitation in the form of freezing rain
-* __ARAIN__ : Accumulated precipitation in the form of rain 
-* __AICEP__ : Accumulated precipitation in the form of ice 
-* __ASNOW__ : Accumulated precipitation in the form of snow 
-* __APCP__ : Accumulated precipitation, total of all forms
-* __SNOD__ : Snow depth 
-* __WEASD__ : Water equivalent of accumulated Snow Depth 
-* __HGT__ : Geopotential height ay different pressure levels. Ex: HGT_ISBL-0500, geopotential height at 500hPa
-* __RH__ : Relative humidity at different pressure levels. Ex: RH_ISBL-0010, relative himidity at 10hPa; RH_AGL-2m, relative himidity 2m above ground
-* __UGRD__ : Wind U-component at different pressure levels.  Ex: UGRD_ISBL-0700, wind U-component at 700hPa 
-* __VGRD__ : Wind V-component at different pressure levels. Ex: VGRD_ISBL-0700, wind V-component at 700hPa
-* __TMP__ : Temperature at different pressure levels. Ex: TMP_AGL-2m, temperature 2m above ground; TMP_ISBL-0050, temperature at 50hPa
-* __TCDC__ : Total cloud cover
-* __PRES__ : Surface pressure
-* __PRMSL__ : Mean sea level pressure
-* __TSOIL__ : Soil temperature 10cm below surface. Ex: TSOIL_DBS-10cm 
-* __VSOILM__ : Volumetric soil moisture 10cm below surface. Ex: VSOILM_DBS-10cm  
-* __LHTFL__ : Latent heat net flux at surface 
-* __SHTFL__ : Sensible heat net flux at surface 
-* __ULWRF__ : Upward long-wave radiation flux at the nominal top of the atmosphere. Ex: ULWRF_NTAT  
-* __DLWRF__ : Downward long-wave radiation flux at surface 
-* __DSWRF__ : Downward short-wave radiation flux at surface 
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/REPS_en.csv", "EN");
+</script>
+
+The variables for the __ensemble products__ available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
+
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_en.csv", "EN");
+</script>
+
+### Ensemble Products
+
+The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
+
+###### HEATX
+
+* Probability above 298.14, 303.14, 308.14, 311.14, 313.14 and 315.14 K
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### FPRATE
+
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### IPRATE
+
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### RPRATE
+
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### SPRATE
+
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75 and 100 kg/(m^2*s)
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### TPRATE
+
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### TMP
+
+* Probability above 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14, 298.14, 303.14, 308.14 and 313.14 K
+* Probability below 233.14, 238.14, 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14 and 298.14 K
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### WCF
+
+* Probability below 223.14, 228.14, 233.14, 238.14, 243.14, 248.14, 253.14, 258.14, 263.14, 268.14 and 273.14 K
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### WIND
+
+* Probability above 5.5556, 8.3333, 10.278, 11.111, 13.889, 17.222, 18.056, 20.833, 24.444, 25, 27.778 and 32.778 m/s
+* Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
+* 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 A [list in XML format](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) containing for all the 15km grid variables names, a description and the units in both French and English, is available.
 

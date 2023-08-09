@@ -121,21 +121,36 @@ Chaque fichier de la prévision ou de la prévision-rétrospective débute avec 
 
 La liste des variables disponibles de SPISCan est : 
 
-* Température de l'eau (WTMP_SFC_0)
-* Taux de précipitations (PRATE_SFC_0)
-* Température à 2m (TMP_TGL_2m)
-* Température à 850 hPa (TMP_ISBL_850)
-* Pression au niveau moyen de la mer (PRMSL_MSL_0)
-* Hauteur géopotentielle à 500 hPa (HGT_ISBL_500)
-* Composante U du vent à 200 hPa (UGRD_ISBL_200)
-* Composante U du vent à 850 hPa (UGRD_ISBL_850)
-* Composante V du vent à 200 hPa (VGRD_ISBL_200)
-* Composante V du vent à 850 hPa (VGRD_ISBL_200)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/CanSIPS_fr.csv", "FR");
+</script>
 
 La liste des variables pour les produits de probabilité près,sous et au-dessus des normales disponibles de SPISCan est : 
 
-* Température à 2m (TMP|AirTemp)
-* Taux de précipitations (PRATE|PrecipRate)
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/CanSIPS_prob_fr.csv", "FR");
+</script>
+
+### Produits d'ensemble
+
+Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
+
+###### APCP
+
+* Probabilité au-dessus de 0 kg/(m^2)
+* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
+
+###### TMP
+
+* Probabilité au-dessus de 0 K
+* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
 
 ## Conseils pour calculer les prévisions d'anomalies 
 

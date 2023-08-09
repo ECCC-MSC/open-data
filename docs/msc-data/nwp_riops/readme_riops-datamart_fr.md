@@ -61,32 +61,28 @@ Exemples de noms de fichier :
 * 20200913T12Z_MSC_RIOPS_VOSALINE_DBS-all_PS5km_P046.nc
 * 20201014T00Z_MSC_RIOPS_VOTEMPER_DBS-0.5m_PS5km_P022.nc
 
+## Niveaux
+
+Les champs tridimensionnels sont disponibles sur 50 niveaux de profondeur, qui sont les niveaux du modèle océanique utilisé par SRPOG.
+
+__Niveaux de profondeur (m)__ : 0.494025, 1.54138, 2.64567, 3.81949, 5.07822, 6.44061, 7.92956, 9.573, 11.405, 13.4671, 15.8101, 18.4956, 21.5988, 25.2114, 29.4447, 34.4342, 40.3441, 47.3737, 55.7643, 65.8073, 77.8539, 92.3261, 109.729, 130.666, 155.851, 186.126, 222.475, 266.04, 318.127, 380.213, 453.938, 541.089, 643.567, 763.333, 902.339, 1062.44, 1245.29, 1452.25, 1684.28, 1941.89, 2225.08, 2533.34, 2865.7, 3220.82, 3597.03, 3992.48, 4405.22, 4833.29, 5274.78, 5727.92.
+
+Une partie des variables représentent des quantités au premier niveau du modèle, tandis que les autres sont définies à la surface de l'océan (ex. variables de la glace marine).
+
+La visualisation des champs contenus dans les fichiers NetCDF produits par SRPOG a été testée avec succès avec les outils suivants : Panoply (version 4.2.2) et IDV (version 5.2).
+
 ## Liste des variables
 
-Liste des variables (champs de prévision) disponibles dans les fichiers contenant des champs 2D :
+<table id="csv-table" class="display"></table>
 
-* __votemper__ :	Température potentielle de l'eau de mer au premier niveau du modèle
-* __vosaline__ :	Salinité de l'eau de mer au premier niveau du modèle
-* __vozocrtx__ :	Composante X de la vitesse de l'eau au premier niveau du modèle
-* __vomecrty__ :	Composante Y de la vitesse de l'eau au premier niveau du modèle
-* __sossheig__ :	Hauteur de la surface de la mer
-* __somixhgt__ :	Profondeur de la turbocline 
-* __sokaraml__ :	Profondeur de la couche de mélange d'après le critère de densité
-* __iiceconc__ :	Fraction de la glace de mer
-* __iicevol__ :		Volume de glace de mer par unité de surface de cellule de grille
-* __itzocrtx__ :	Composante X de la vitesse de la glace de mer
-* __itmecrty__ :	Composante Y de la vitesse de la glace de mer 
-* __isnowvol__ :	Volume de neige sur la glace de mer par unité de surface de cellule de grille
-* __iicesurftemp__ :	Température de la surface de la neige/glace de mer
-* __iicepressure__ :	Pression interne de la glace, intégrée verticalement
-* __iicestrength__ :	Résistance à la compression de la glace, intégrée verticalement
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RIOPS_fr.csv", "FR");
+</script>
 
-Liste des variables (champs de prévision) disponibles dans les fichiers contenant des champs 3D :
-
-* __votemper__ : 	Température potentielle de l'eau de mer
-* __vosaline__ :	Salinité de l'eau de mer 
-* __vozocrtx__ :	Composante X de la vitesse de l'eau 
-* __vomecrty__ :	Composante Y de la vitesse de l'eau 
+Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
 
 ## Support
 

@@ -133,10 +133,14 @@ __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier c
 
 Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2.
 
-|Numéro  |	                  Variable                                |	Niveau      | 	Abbréviation    | 	Unités        | 	Encodage    |
-|--------|------------------------------------------------------------|-------------|-------------------|-----------------|-----------------|
-|   0 	 | Analyse de précipitations accumulées sur intervalle de 06hr ou 24hr|Surface|APCP| kg m-2          | [Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=0)  |
-|   1 	 | Indice de confiance de l'analyse 	                      | Surface     |CFIA|varie de 0 à 1, sans unité |[Sections 0 à 6](https://meteo.gc.ca/grib/display_f.html?type=rdpa&res=ps10km&hour=A000&desc=analysis&nombre=1) |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPA_fr.csv", "FR");
+</script>
 
 ## À propos du masque No-Data de la grille polaire stéréographique
 

@@ -67,7 +67,7 @@ CMC_giops_votemper_depth_0.5_latlon0.2x0.2_3h-mean_2016020800_P036.nc
 
 The three-dimensional fields are provided on 50 depth levels, which are the levels of the ocean model used in GIOPS.
 
-Depth levels (m): 0.494025, 1.54138, 2.64567, 3.81949, 5.07822, 6.44061, 7.92956, 9.573, 11.405, 13.4671, 15.8101, 18.4956, 21.5988, 25.2114, 29.4447, 34.4342, 40.3441, 47.3737, 55.7643, 65.8073, 77.8539, 92.3261, 109.729, 130.666, 155.851, 186.126, 222.475, 266.04, 318.127, 380.213, 453.938, 541.089, 643.567, 763.333, 902.339, 1062.44, 1245.29, 1452.25, 1684.28, 1941.89, 2225.08, 2533.34, 2865.7, 3220.82, 3597.03, 3992.48, 4405.22, 4833.29, 5274.78, 5727.92.
+__Depth levels (m)__ : 0.494025, 1.54138, 2.64567, 3.81949, 5.07822, 6.44061, 7.92956, 9.573, 11.405, 13.4671, 15.8101, 18.4956, 21.5988, 25.2114, 29.4447, 34.4342, 40.3441, 47.3737, 55.7643, 65.8073, 77.8539, 92.3261, 109.729, 130.666, 155.851, 186.126, 222.475, 266.04, 318.127, 380.213, 453.938, 541.089, 643.567, 763.333, 902.339, 1062.44, 1245.29, 1452.25, 1684.28, 1941.89, 2225.08, 2533.34, 2865.7, 3220.82, 3597.03, 3992.48, 4405.22, 4833.29, 5274.78, 5727.92.
 
 Some of the two-dimensional variables represent quantities on the first model level, while others are defined at the sea surface (e.g. sea ice variables).
 
@@ -75,44 +75,16 @@ Visualization of field data from the NetCDF files produced by GIOPS was successf
 
 ## List of variables
 
-List of variables (forecast fields for forecast hours greater than 0) available in the 2D files:
+<table id="csv-table" class="display"></table>
 
-* __votemper__ : Potential temperature of sea water at the first model level.
-* __vosaline__ : Sea water salinity at the first model level.
-* __vozocrtx__ : X-component of water velocity at the first model level.
-* __vomecrty__ : Y-component of water velocity at the first model level.
-* __sossheig__ : Sea surface height with respect to the geoid.
-* __somixhgt__ : Turbocline depth.
-* __sokaraml__ : Mixed layer depth based on a density criterion.
-* __iiceconc__ : Sea ice fraction.
-* __iicevol__ : Volume of sea ice per unit grid cell area.
-* __itzocrtx__ : X-component of sea ice velocity.
-* __itmecrty__ : Y-component of sea ice velocity.
-* __isnowvol__ : Volume of snow on sea ice per unit grid cell area.
-* __iicesurftemp__ : Surface temperature of sea ice/snow.
-* __iicepressure__ : Vertically integrated ice internal pressure.
-* __iicestrength__ : Vertically integrated compressive ice strength.
-* __iicedivergence__ : Sea ice divergence
-* __iiceshear__ : Sea ice shear strain rate
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GIOPS_en.csv", "EN");
+</script>
 
-List of variables (forecast fields for forecast hours greater than 0) available in the 3D files:
-
-* __votemper__ : Potential temperature of sea water.
-* __vosaline__ : Sea water salinity.
-* __vozocrtx__ : X-component of water velocity.
-* __vomecrty__ : Y-component of water velocity.
-
-List of variables (analysed fields for forecast hour 0) available in the 2D files:
-
-* __sossheig__ : Sea surface height with respect to the geoid
-* __iiceconc__ : Sea ice fraction
-
-List of variables (analysed fields for forecast hour 0) available in the 3D files:
-
-* __votemper__ : Potential temperature of sea water at the first model level
-* __vosaline__ : Sea water salinity at the first model level
-* __vozocrtx__ : X-component of water velocity at the first model level
-* __vomecrty__ : Y-component of water velocity at the first model level
+Note: The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.
 
 Note that since forecast hour 0 fields at 00Z are not time-averaged, one can simply extract the surface level of votemper, vosaline, vozocrtx and vomecrty from the 3D files to obtain the corresponding 2D fields.
 

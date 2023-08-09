@@ -144,25 +144,14 @@ Niveaux qui pourraient être applicables à certains champs :
 
 Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève description, une abréviation alphabétique conventionnelle, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure
 
-|discipline/catégorie/numéro de paramètre GRIB2 |	Description du paramètre            |	Abréviation 	         | Niveaux       |	Unités       |
-|------|---------------------------------------|------------|--------|---------|
-|10/2/0|  Couverture de glace                  |      ICEC  | Sfc | fraction |
-|0/2/2 |  Composante U du vent                 |      UGRD  | AGL-10 | m/s |
-|0/2/3 |  Composante V du vent                 |      VGRD  | AGL-10 | m/s |
-|10/0/3 |	Hauteur significative des vagues de vent et de la houle combinés |	HTSGW |	Sfc |	m |
-|10/0/34 |	Période pic des vagues |	PWPER |	Sfc |	s |
-|10/0/28 |	Période moyenne centrée des vagues |	MZWPER |	Sfc |	s |
-|10/0/46 |	Direction pic des vagues |	PWAVEDIR |	Sfc |	degrees true|
-|10/0/4 |	Direction des vagues de la mer du vent |	WVDIR |	Sfc |	degré vrai |
-|10/0/5 |	Hauteur significative des vagues de la mer du vent |	WVHGT |	Sfc |	m |
-|10/0/35 |	Période pic des vagues de la mer du vent |	PPERWW |	Sfc |	s |
-|10/0/53 |	Direction moyenne de la première houle |	MWDFSWEL |	Sfc |	degré vrai |
-|10/0/47 |	Hauteur significative de la première houle |	SWHFSWEL |	Sfc |	m |
-|10/0/65 |	Période pic de la première houle |	PWPFSWEL |	Sfc |	s |
-|10/0/54 |	Direction moyenne de la deuxième houle |	MWDSSWEL |	Sfc |	degré vrai |
-|10/0/48 |	Hauteur significative de la deuxième houle |	SWHSSWEL |	Sfc |	m |
-|10/0/66 |	Période pic de la deuxième houle |	PWPSSWEL |	Sfc |	s |
+<table id="csv-table" class="display"></table>
 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDWPS_fr.csv", "FR");
+</script>
 
 ### Notes
 

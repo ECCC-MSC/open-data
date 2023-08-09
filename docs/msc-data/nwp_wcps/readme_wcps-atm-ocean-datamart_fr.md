@@ -71,27 +71,16 @@ Exemples :
 
 Liste des variables 2D disponibles dans les fichiers:
 
-* __AirTemp__ : Température de l'air à 1.5 mètres en altitude (K)
-* __WindU__: Composante X de la vitesse du vent à 10 mètres en altitude (m/s)
-* __WindV__: Composante Y de la vitesse du vent à 10 mètres en altitude (m/s)
-* __Runoff__ : Ruissellement (mm)
-* __SeaSfcHeight__ : Hauteur de la surface de la mer par rapport au géoïde (m). Pour les Grands Lacs, la référence est IGLD85
-* __SeaWaterSalinity__ : Salinité de l'eau de mer au premier niveau du modèle (per 1000) 
-* __SeaWaterPotentialTemp__ : Température potentielle de l'eau de mer au premier niveau du modèle (K)
-* __SeaWaterVelocityX__ : Composante X de la vitesse de l'eau au premier niveau du modèle (m/s)
-* __SeaWaterVelocityY__ : Composante Y de la vitesse de l'eau au premier niveau du modèle (m/s)
-* __MixedLayerThickness__ : Profondeur de la couche de mélange d'après le critère de densité (m)
-* __TurboclineDepth__ : Profondeur de la turbocline (m)
-* __SeaIceVelocityX__ : Composante X de la vitesse de la glace de mer (m/s)
-* __SeaIceVelocityY__ : Composante Y de la vitesse de la glace de mer (m/s)
-* __SeaIceAreaFraction__ : Fraction de la glace de mer (fraction)
-* __SeaIceVol__ : Volume de glace de mer par unité de surface de cellule de grille (m)
-* __SeaIceSnowTemp__ : Température de surface de la neige sur la glace de mer ou la glace de mer nue (K)
-* __SeaIceSnowVol__ : Volume de la neige de mer par unité de surface de cellule de grille (m)
-* __SeaIceCompressiveStrength__ : Résistance à la compression de la glace, intégrée verticalement (N/m)
-* __SeaIceDivergence__ : Divergence de la glace de mer (%/day)
-* __SeaIceInternalPressure__ : Pression interne de la glace, intégrée verticalement (N/m)
-* __SeaIceShear__ : Cisaillement de la glace de mer (%/day)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/WCPS_fr.csv", "FR");
+</script>
+
+Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
 
 Les variables `AirTemp`, `WindU`, `WindV` et `Runoff_Sfc` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
 

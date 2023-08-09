@@ -69,8 +69,14 @@ Note that a second variable is also included in this file and it is the confiden
 
 ## List of variables
 
-* __APCP__ : Total precipitation amount analysis over a 6 or 24 hours period (mm)
-* __CFIA__ : Confidence Index of the Analysis. Range of values from 0 to 1 (no unit)  
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPA_en.csv", "EN");
+</script>
 
 ## About the No-data mask
 

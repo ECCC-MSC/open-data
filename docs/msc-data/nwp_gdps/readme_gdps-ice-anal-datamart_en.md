@@ -68,11 +68,15 @@ Example of filename :  20210111T00Z_MSC_GDPS-Analysis_IICECONC_SFC_RLatLon0.09x0
 ## List of variables
 
 The table below provides a short description of the parameter, the level available and measurement unit, available in NetDCF format.
- 
-|  NetCDF | Short description       |	Level |	Unit |
-|---------|-------------------------|---------|------|
-| iiceconc| Sea icea area fraction  | surface |    1 |
 
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-Ice-Analysis_en.csv", "EN");
+</script>
 
 ## Support
 

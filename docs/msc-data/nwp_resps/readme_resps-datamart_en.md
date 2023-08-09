@@ -68,11 +68,14 @@ Example of file name:
 
 The list below provides, for each variable: a short description, an alphabetical abbreviation, the levels available for the parameter, and measurement units.
 
-|NetCDF  | Short description|                          Abbr.|  Level|  Units|
-|--------|---------------|----------|----------|----------|
-|etas    |Storm surge    |                            ETAS|   Sfc|    m|
-|zos     |Total water level|                            SSH|   Sfc|    m|
+<table id="csv-table" class="display"></table>
 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RESPS_en.csv", "EN");
+</script>
 
 ## Support
 
