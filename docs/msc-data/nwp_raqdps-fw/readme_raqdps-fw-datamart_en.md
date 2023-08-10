@@ -67,8 +67,6 @@ Example of forecast file name:
 
 ## List of variables
 
-List of 2D variables available in the files:
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

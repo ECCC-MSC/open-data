@@ -119,7 +119,7 @@ Chaque fichier de la prévision ou de la prévision-rétrospective débute avec 
 
 ## Liste des variables
 
-La liste des variables disponibles de SPISCan est : 
+__Membres individuels:__
 
 <table id="csv-table" class="display"></table>
 
@@ -130,7 +130,7 @@ La liste des variables disponibles de SPISCan est :
   loadTable("csv-table", "../../../assets/csv/CanSIPS_fr.csv", "FR");
 </script>
 
-La liste des variables pour les produits de probabilité près,sous et au-dessus des normales disponibles de SPISCan est : 
+__Produits d'ensemble:__
 
 <table id="csv-prob-table" class="display"></table>
 
@@ -138,13 +138,11 @@ La liste des variables pour les produits de probabilité près,sous et au-dessus
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS_prob_fr.csv", "FR");
 </script>
 
-### Produits d'ensemble
-
 Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
 
 ###### APCP
 
-* Probabilité au-dessus de 0 kg/(m^2)
+* Probabilité au-dessus de 0 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
 
 ###### TMP

@@ -68,9 +68,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 ## List of variables
 
-The variables for the ensemble products available in the GRIB2 files are listed below. For each variable, the definition, period and frequency are mentioned.
-
-For individual members:
+__Individual members__:
 
 <table id="csv-table" class="display"></table>
 
@@ -81,15 +79,13 @@ For individual members:
   loadTable("csv-table", "../../../assets/csv/GEPS_en.csv", "EN");
 </script>
 
-For ensemble products:
+__Ensemble products__:
 
 <table id="csv-prob-table" class="display"></table>
 
 <script>
   loadTable("csv-prob-table", "../../../assets/csv/GEPS_prob_en.csv", "EN");
 </script>
-
-### Ensemble Products
 
 The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
 
@@ -105,31 +101,31 @@ The files contain probability products by member counting above or below differe
 
 ###### FPRATE
 
-* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### IPRATE
 
-* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### RPRATE
 
-* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### SPRATE
 
-* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50 and 75 kg/(m^2*s)
+* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50 and 75 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### TPRATE
 
-* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 

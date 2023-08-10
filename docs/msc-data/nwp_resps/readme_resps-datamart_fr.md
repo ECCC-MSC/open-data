@@ -65,8 +65,6 @@ Exemple de fichier :
 
 ##   Liste de variables
 
-La liste ci-dessous fournit pour chaque identifieur de paramètre NetCDF: une brève description, une abréviation alphabétique, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure.
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

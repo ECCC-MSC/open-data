@@ -120,7 +120,7 @@ Following the temporal record of the month 01 of the year 2017, a second CanSIPS
 
 ## List of variables
 
-The list of the CanSIPS available variables is the following:
+__Individual members:__
 
 <table id="csv-table" class="display"></table>
 
@@ -131,7 +131,7 @@ The list of the CanSIPS available variables is the following:
   loadTable("csv-table", "../../../assets/csv/CanSIPS_en.csv", "EN");
 </script>
 
-The list of the CanSIPS variables for probability above,near or below normals products is the following:
+__Ensemble products:__
 
 <table id="csv-prob-table" class="display"></table>
 
@@ -139,13 +139,11 @@ The list of the CanSIPS variables for probability above,near or below normals pr
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS_prob_en.csv", "EN");
 </script>
 
-### Ensemble Products
-
 The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
 
 ###### APCP
 
-* Probability above 0 kg/(m^2)
+* Probability above 0 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), standard deviation and mean
 
 ###### TMP

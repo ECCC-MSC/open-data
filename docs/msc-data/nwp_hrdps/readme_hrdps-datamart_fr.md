@@ -143,7 +143,7 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 
 ## Liste des variables
 
-Liste des éléments du temps sur grille à la surface (*HRDPS-WEonG*):
+Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement.
 
 <table id="csv-table" class="display"></table>
 

@@ -69,8 +69,6 @@ Exemples :
 
 ## Liste des variables
 
-Liste des variables 2D disponibles dans les fichiers:
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
@@ -82,7 +80,7 @@ Liste des variables 2D disponibles dans les fichiers:
 
 Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
 
-Les variables `AirTemp`, `WindU`, `WindV` et `Runoff_Sfc` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
+Les variables `tairsurf`, `uwindsurf`, `vwindsurf` et `runoffsurf` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
 
 ## Support
 

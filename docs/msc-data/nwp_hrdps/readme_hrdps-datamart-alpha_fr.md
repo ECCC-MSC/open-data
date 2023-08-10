@@ -101,10 +101,16 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
+Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement qui seront bientôt disponibles.
 
-* [Prévisions à 000h](https://meteo.gc.ca/grib/HRDPS_HR/HRDPS_nat_ps2p5km_P000_deterministic_f.html)
-* [Prévisions pour les heures suivant 000h](https://meteo.gc.ca/grib/HRDPS_HR/HRDPS_ps2p5km_PNONZERO_deterministic_f.html)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPS_fr.csv", "FR");
+</script>
 
 ## Support
 

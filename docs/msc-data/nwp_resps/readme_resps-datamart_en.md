@@ -66,8 +66,6 @@ Example of file name:
 
 ##    Variable list
 
-The list below provides, for each variable: a short description, an alphabetical abbreviation, the levels available for the parameter, and measurement units.
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

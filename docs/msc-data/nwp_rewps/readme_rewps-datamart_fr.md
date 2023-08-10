@@ -69,8 +69,6 @@ Exemple de fichier :
 
 ## Liste des variables
 
-Pour chaque numéro de paramètre GRIB, ce tableau fournit une brève description, une abréviation alphabétique conventionnelle, les niveaux pour lesquels ce paramètre est disponible et les unités de mesure
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

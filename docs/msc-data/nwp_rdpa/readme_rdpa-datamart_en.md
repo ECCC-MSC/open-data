@@ -134,8 +134,6 @@ __NOTE__: A second variable is also included in this file and it is the confiden
 
 ## List of variables
 
-This table provides the variable name, level, abbreviation, units and a link to additional grib2 encoding information for each parameter encoded in GRIB2 format.
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
