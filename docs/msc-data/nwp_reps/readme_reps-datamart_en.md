@@ -112,7 +112,7 @@ __Note__: Files contain by default all ensemble members. Files containing __prob
 
 ## List of variables
 
-The GRIB2 files variables for __individual members__ are the following. The variables are available from 0 to 72h, every 3h. Some examples are indicated for the rotated lat-lon grid at 10km resolution.
+__Individual members:__ 
 
 <table id="csv-table" class="display"></table>
 
@@ -123,15 +123,13 @@ The GRIB2 files variables for __individual members__ are the following. The vari
   loadTable("csv-table", "../../../assets/csv/REPS_en.csv", "EN");
 </script>
 
-The variables for the __ensemble products__ available in the GRIB2 files are listed below. Some examples are mentioned for the rotated lat-lon grid at 10km resolution.
+__Ensemble products:__ 
 
 <table id="csv-prob-table" class="display"></table>
 
 <script>
   loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_en.csv", "EN");
 </script>
-
-### Ensemble Products
 
 The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
 
@@ -143,31 +141,31 @@ The files contain probability products by member counting above or below differe
 
 ###### FPRATE
 
-* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### IPRATE
 
-* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m^2*s)
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### RPRATE
 
-* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### SPRATE
 
-* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75 and 100 kg/(m^2*s)
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75 and 100 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
 ###### TPRATE
 
-* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m^2*s)
+* Probability above 0.2, 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 kg/(m<sup>2</sup>*s)
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 

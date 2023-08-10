@@ -67,8 +67,6 @@ Exemple de noms de fichier :
 
 ## Liste des variables
 
-Liste des variables 2D disponibles dans les fichiers:
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

@@ -69,9 +69,7 @@ Les données dans le fichier débutent le 1 septembre 2010 à 00Z (2010090100). 
 
 ## Liste des variables
 
-Les variables pour les produits d'ensemble disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Pour chaque variable, la définition, la période et la fréquence de disponibilité sont mentionnées.
-
-Pour les membres individuels:
+__Membres individuels__:
 
 <table id="csv-table" class="display"></table>
 
@@ -82,15 +80,13 @@ Pour les membres individuels:
   loadTable("csv-table", "../../../assets/csv/GEPS_fr.csv", "FR");
 </script>
 
-Pour les produits probabilistes:
+__Produits d'ensemble__:
 
 <table id="csv-prob-table" class="display"></table>
 
 <script>
   loadTable("csv-prob-table", "../../../assets/csv/GEPS_prob_fr.csv", "FR");
 </script>
-
-### Produits d'ensemble
 
 Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
 
@@ -106,31 +102,31 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 
 ###### FPRATE
 
-* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### IPRATE
 
-* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### RPRATE
 
-* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### SPRATE
 
-* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50 et 75 kg/(m^2*s)
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50 et 75 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### TPRATE
 
-* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 

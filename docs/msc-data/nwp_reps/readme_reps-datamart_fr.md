@@ -113,7 +113,7 @@ __Note__: Les fichiers contiennent par défaut tous les membres d'ensemble. Les 
 
 ## Liste des variables
 
-Les variables pour les __membres individuels__ dans les fichiers GRIB2 sont décrites ci-dessous. Les variables sont disponibles de 0 à 72h chaque 3h. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
+__Membres individuels:__ 
 
 <table id="csv-table" class="display"></table>
 
@@ -124,15 +124,13 @@ Les variables pour les __membres individuels__ dans les fichiers GRIB2 sont déc
   loadTable("csv-table", "../../../assets/csv/REPS_fr.csv", "FR");
 </script>
 
-Les variables pour les __produits d'ensemble__ disponibles dans les fichiers GRIB2 sont décrites ci-dessous. Des exemples sont indiqués pour la grille lat-lon tournée à 10km.
+__Produits d'ensemble:__ 
 
 <table id="csv-prob-table" class="display"></table>
 
 <script>
   loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_fr.csv", "FR");
 </script>
-
-### Produits d'ensemble
 
 Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
 
@@ -144,31 +142,31 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 
 ###### FPRATE
 
-* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### IPRATE
 
-* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m^2*s)
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### RPRATE
 
-* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### SPRATE
 
-* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75 et 100 kg/(m^2*s)
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75 et 100 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 ###### TPRATE
 
-* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m^2*s)
+* Probabilité au-dessus de 0,2, 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 

@@ -131,8 +131,6 @@ __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier c
 
 ## Liste des variables
 
-Cette table indique le nom de la variable, le niveau, l'abbréviation, les unités et un lien envers de l'information d'encodage grib2 pour chaque paramètre encodé en format GRIB2.
-
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">

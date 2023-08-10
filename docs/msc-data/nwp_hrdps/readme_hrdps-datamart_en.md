@@ -143,7 +143,7 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-List of weather elements on the grid (*HRDPS-WEonG*):
+This list contains both the parameters generated from HRDPS outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing.
 
 <table id="csv-table" class="display"></table>
 
