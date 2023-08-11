@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.4
+
+* date: 2023-08-11
+* announcements:
+    * Not announced
+* new content:
+    * Addition of NWP variables tables (except data on DD-Alpha, to come in a next release)
+* improvements:
+    * None
+* bug fixes:
+    * Typo
+
 ## 2.5.3
 
 * date: 2023-07-28
