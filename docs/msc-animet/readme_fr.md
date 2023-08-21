@@ -33,7 +33,7 @@ Les principales étapes d'utilisation :
 
 ## 1 - Ajouter des couches météorologiques et climatiques
 
-Couches : 
+Couches :
 
 * Ajouter des couches dans le panneau `GeoMet-Météo` ou `GeoMet-Climat`
 * Parcourir l'arborescence des couches pour trouver la couche désirée
@@ -52,6 +52,7 @@ Configurer les couches dans le panneau `Configuration des couches` et personnali
 
 Couches :
 
+* Lorsque possible, changer la passe de modèle associée à la couche.
 * Réorganiser les couches à l'aide des flèches vers le haut et vers le bas
   * Les flèches ne sont affichées que si plusieurs couches ont été ajoutées
 * Modifier les couleurs des couches
@@ -63,26 +64,27 @@ Couches :
 
 Temps :
 
-* Les contrôles de la carte en bas à gauche de la carte permettent aux utilisateurs de visualiser les pas de temps disponibles
-* Le pas de temps actuel et la passe du modèle (le cas échéant) sont affichés en bas à droite de la carte
-* La plage temporelle et l'intervalle désirés peuvent être ajustés au haut du panneau `Configuration des couches`
-* La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche
-* Survoler l'icone de l'horloge d'une couche fournit ses dimensions temporelles : le pas de temps actuel, la plage de la passe de modèle ainsi que l'intervalle
+* L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel.
+* Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression.
+* Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre.
+* Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie.
+* Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton `Heure locale`.
+* La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches.
+* En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle.
 
 Carte :
 
 * Agrandir et déplacer la carte sur votre zone d'intérêt
 * Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte
 * Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte
+* Sélectionner les légendes à afficher à l'aide du bouton `LÉGENDES`. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite.
 
 ## 3 - Configurer l'animation
 
 Configurer l'animation dans le panneau `Configuration de l'animation` :
 
 * Fournir un titre d'animation personnalisé, si désiré
-* Sélectionner la légende à afficher
 * Définir la vitesse de l'animation en images par seconde
-* Choisir l'affichage du temps entre l'heure locale et UTC
 * Choisir la carte de fond entre la carte de fond claire et foncée
 
 ## 4 - Créer et partager la carte et l'animation
