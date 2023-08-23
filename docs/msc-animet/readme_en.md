@@ -34,7 +34,7 @@ The main usage workflow:
 
 ## 1 - Add weather and climate layers
 
-Layers: 
+Layers:
 
 * Add layers from the `GeoMet-Weather` or `GeoMet-Climate` panel
 * Browse the layer tree to find the desired layer
@@ -42,7 +42,7 @@ Layers:
 * Click on the `+` sign to add a layer to the map
 * Tip: click on the panel name to expand or collapse the layer list
 
-Overlays: 
+Overlays:
 
 * Select the 'Overlays' panel to add information on top of displayed layers
 * Currently available overlays are Canadian geopolitical boundaries, cities and waterbodies from Natural Resource Canada. They are available only at certain zoom levels.
@@ -53,6 +53,7 @@ Configure layers in the `Layers configuration` panel and customize the map.
 
 Layers:
 
+* When available, change layer's corresponding model run.
 * Reorder layers with the up and down arrows
   * Arrows are shown only if multiple layers have been added
 * Change layer colors
@@ -62,27 +63,28 @@ Layers:
   * A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range
 
 Time:
-
-* The map controls at the bottom left of the map enable users to visualize the available timesteps
-* The current timestep and dataset model run (when applicable) are displayed at the bottom right of the map
-* The desired temporal range and interval can be adjusted at the top of the 'Layers configuration' panel
-* The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name
-* Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval
+* The current time displayed on the map is displayed above the temporal controller.
+* The start and end of the animation can be modified via the sliders on the left and right of the temporal controller.
+* Playback controls allow for playing, stopping, and moving between time steps.
+* The orange dot on the playback bar shows the current displayed timestep in relation to the defined temporal extent.
+* The timestep interval can be selected via the dropdown menu to the right of the temporal controller.
+* Choose whether to display the time in the user's local time (determined via the browser) or in UTC via the `Local time` switch.
+* The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name in the Layers configuration panel.
+* Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval.
 
 Map:
 
 * Zoom and pan the map to your area of interest
 * Resize the map and the animation with the handle at the bottom right corner of the map
 * Rotate the map by pressing the _alt-shift_ keys and dragging on the map
+* Select which legends to display via the `LEGENDS` overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation.
 
 ## 3 - Configure the animation
 
 Configure the animation in the `Animation configuration` panel:
 
 * Provide a custom animation title, if desired
-* Select which legend to display
 * Set animation speed in frames per second
-* Toggle time display between local time and UTC
 * Toggle basemap between the light and dark basemaps
 
 ## 4 - Create and share the map and animation
