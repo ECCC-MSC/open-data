@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-N)
 
-## Le mercredi 3 août 2023
+## Le mercredi 30 août 2023
 
-### Mise à jour à la version 2.0.0 du Système de prévision déterministe à haute résolution pour le nord (SHRPD-N) au Centre météorologique canadien
+### Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien
 
-Le mercredi 30 août 2023, à partir de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système de prévision déterministe à haute résolution pour le nord (SHRPD-N) à la version 2.0.0.
+Le mercredi 30 août 2023, à partir de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) à la version 2.0.0.
 
 Les principaux changements inclus dans cette mise à jour sont résumés ci-dessous :
 
@@ -18,11 +18,11 @@ Les principaux changements inclus dans cette mise à jour sont résumés ci-dess
 * Les conditions initiales et de frontières latérales pour l'atmosphère proviennent de la dernière version opérationnelle du Système global de prévision déterministe (SGPD) dont les détails sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_8.0.0_f.pdf) 
 * Les conditions initiales océaniques sont fournies par le Système régional de prévision océan-glace (SRPOG) dont les détails sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf)
 
-La note officielle annonçant la mise en place de ces changements est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/08/29/NOCN03_CWAO_XXXXXX_XXXXX) 
+La note officielle annonçant la mise en place de ces changements est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/08/29/NOCN03_CWAO_XXXXXX_XXXXX). 
 
-Une note technique avec plus de détails sur SHRPD-N 2.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps-north-200_f.pdf)
+Une note technique avec plus de détails sur le SHRPD-N 2.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps-north-200_f.pdf).
 
-Le document de spécifications techniques pour SHRPD-N 2.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_2.0.0_f.pdf)
+Le document de spécifications techniques du SHRPD-N 2.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_2.0.0_f.pdf).
 
 ## Le mardi 28 juin 2022
 

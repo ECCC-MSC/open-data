@@ -65,7 +65,7 @@ The volume scans, also called raw data, are generated in Leonardo's native RAINB
 * SQI: Signal quality index H
 * KDP: Specific differential phase
 
-Note: The GTS (Global Telecommunication System) header contains the following information:  
+NOTE: The GTS (Global Telecommunication System) header contains the following information:  
 
 ```
 SDCN01 CWAO
