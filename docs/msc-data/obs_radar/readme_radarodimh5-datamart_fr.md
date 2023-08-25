@@ -65,6 +65,14 @@ Les volumes scans, également appelés données brutes, sont générés dans le 
 * SQI: Indice de qualité du signal H
 * KDP: Phase différentielle spécifique
 
+NOTE: L'en-tête GTS (_Global Telecommunication System_) contient les informations suivantes :  
+
+```
+SDCN01 CWAO
+ODIM_H5 <Radar_ID> <DDHHmm>
+```
+La deuxième ligne contient des informations spécifiques pour chaque radar telles que : `product_type`, `radar_id` et `daytime`.
+
 (*) Format HDF5 : https://support.hdfgroup.org/HDF5/users5.html
 
 ## Support

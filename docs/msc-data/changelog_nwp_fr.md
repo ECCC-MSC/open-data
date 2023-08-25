@@ -8,6 +8,10 @@
 
 ## 2023
 
+### 30 août 2023
+
+* [Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-30-août-2023)
+
 ### 27 juillet 2023
 
 * [Mise à jour du Système global de prévision déterministe d'onde de tempête (SGPDOT) à la version 2.0.0 pour ajouter un mode barocline léger et des effets de glace de mer](nwp_gdsps/changelog_gdsps_fr.md#le-jeudi-27-juillet-2023)

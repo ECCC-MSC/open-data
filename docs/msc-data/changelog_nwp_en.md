@@ -8,6 +8,10 @@
 
 ## 2023
 
+### August 30, 2023
+
+* [Upgrade to Version 2.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-august-30-2023)
+
 ### July 27, 2023
 
 * [Upgrade to version 2.0.0 of the Global Deterministic Storm Surge Prediction System (GDSPS) to add light baroclinic mode and sea-ice efferts](nwp_gdsps/changelog_gdsps_en.md#thursday-july-27-2023)
