@@ -20,7 +20,6 @@ où :
 
 * __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ..., 20, 21]
 
-
 Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Spécification technique de la grille  

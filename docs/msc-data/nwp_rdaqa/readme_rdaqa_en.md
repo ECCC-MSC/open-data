@@ -6,13 +6,9 @@
 
 # Data and Products of the Regional Deterministic Air Quality Analysis 
 
-The Regional Deterministic Air Quality Analysis (RDAQA) is an objective analysis of surface pollutants which combines numerical forecasts from the [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_raqdps/readme_raqdps_en.md) as well as from the [Regional Air Quality Deterministic Prediction System-FireWork (RAQDPS-FW)](../nwp_raqdps-fw/readme_raqdps-fw_en.md) and hourly observational data from monitoring surface networks over North America. These include Canadian measurement networks operated by the provinces, territories, and some municipalities and those networks covering the continental United States under the umbrella of EPA’s national [AIRNow](https://www.airnowtech.org/index.cfm?page=login) program. The RDAQA, which provides the best possible description of current air quality conditions, is used to inform the public, meteorologists in Environment Canada’s regional forecast offices, Health Canada and others, on the distribution of air pollutants at the surface and on the quality of the model in the context of air quality forecasts.
+Regional Deterministic Air Quality Analysis (RDAQA) is an objective analysis of surface pollutants that combines either numerical forecasts from the [Regional Air Quality  Deterministic Prediction System (RAQDPS)](.../nwp_raqdps/readme_raqdps_en.md), for the preliminary and final products, or from the [FireWork Regional Air Quality Deterministic Prediction System (FireWork-RADQPS)](.. /nwp_raqdps-fw/readme_raqdps-fw_en.md), for the Firework product, with hourly observations from various monitoring networks in North America, including the Canadian measurement networks operated by the provinces, territories and certain cities, in addition to the various American networks in the context of the [AIRNow] program (https://www.airnowtech.org/index.cfm?page=login) administered by US/EPA (US Environmental Protection Agency). RDAQA analysis provides the best description of current air quality conditions, and is used to inform the public, meteorologists in the various Environment and Climate Change Canada forecasting offices, Health Canada and other users about the distribution of air pollutants near the ground, and the performance of forecasting models.
 
-Every hour an early product is issued, approximately one hour after the time of measurement and a late product is also generated about two hours after, which contains a more complete observation data set. Also, a Firework product.... -- A compléter --
-
----- OU ----
-
-The Regional Deterministic Air Quality Analysis (RDAQA) are essentially surface maps of air pollutants that are obtained by optimally combining observations with the [Regional Air Quality Deterministic Prediction System-FireWork (RAQDPS-FW)](../nwp_raqdps-fw/readme_raqdps-fw_en.md) outputs. Because observations are close to the truth and model outputs provide a complete spatial and temporal coverage, their combination is thought to provide a more accurate and complete representation of the air quality.  These maps are called “analyses”.  There are many potential applications for air quality analyses. Over extended time periods, the analyses are useful to assess long-term effects of air quality on human health. They can also be used to monitor the air quality modeling error.  If three-dimensional analyses are produced, they can be used to initialize an air quality forecast model, a process known as data assimilation, which can improve air quality forecasts.
+Each hour, a preliminary product is available approximately one hour after the observation measurement time, while final and Firework products are available approximately two hours after the measurement time. The preliminary and final products contain analysis of the chemical constituents O3, SO2, NO, NO2, PM2.5 (fine particles with diameters of 2.5 micrometers or less) and PM10 (coarse particles with diameters of 10 micrometers or less), while the Firework product contains analysis of PM2.5 and PM10.
 
 ## Access
 
@@ -22,7 +18,8 @@ This data is available from the [MSC Datamart](../../msc-datamart/readme_en.md) 
 
 * [GRIB2 data available on the MSC Datamart](readme_rdaqa-datamart_en.md) 
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. 
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
+
 ### Licence
 
 The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
@@ -34,10 +31,6 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 ### Metadata
 
 Upcoming.
-
-## Products
-
-*  -- Images disponibles sur WxO ou ailleurs ?? Je ne pense pas ?? --
 
 ## Technical documentation
 
