@@ -18,7 +18,7 @@ Les principaux changements inclus dans cette mise à jour sont résumés ci-dess
 * Les conditions initiales et de frontières latérales pour l'atmosphère proviennent de la dernière version opérationnelle du Système global de prévision déterministe (SGPD) dont les détails sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_8.0.0_f.pdf) 
 * Les conditions initiales océaniques sont fournies par le Système régional de prévision océan-glace (SRPOG) dont les détails sont disponibles [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf)
 
-La note officielle annonçant la mise en place de ces changements est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/08/29/NOCN03_CWAO_XXXXXX_XXXXX). 
+La note officielle annonçant la mise en place de ces changements est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/08/29/NOCN03_CWAO_292016___46915). 
 
 Une note technique avec plus de détails sur le SHRPD-N 2.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps-north-200_f.pdf).
 
