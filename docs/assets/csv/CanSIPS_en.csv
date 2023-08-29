@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Geopotential height,HGT,500 mb,gpm
 Precipitation rate,PRATE,Surface,kg/(m<sup>2</sup>*s)
 Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa

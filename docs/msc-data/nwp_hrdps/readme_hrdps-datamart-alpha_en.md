@@ -107,7 +107,7 @@ This list contains both the parameters generated from the HRDPS outputs and the 
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPS_en.csv", "EN");
+  loadTable("csv-table", "../../../assets/csv/HRDPS_en.csv");
 </script>
 
 ## Support

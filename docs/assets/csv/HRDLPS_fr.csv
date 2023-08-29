@@ -1,0 +1,11 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Accumulation de l'écoulement total latéral,alat,Surface,kg/m<sup>2</sup>
+Accumulation de l'évaporation de la surface terrestre,acwf,Surface,kg/m<sup>2</sup>
+Accumulation du drainage à la base de la couche de sol,o1,Surface,kg/m<sup>2</sup>
+Accumulation du ruissellement de surface,traf,Surface,kg/m<sup>2</sup>
+Contenu volumique d'eau liquide dans le sol,wsol,Surface,m<sup>3</sup>/m<sup>3</sup>
+Fraction d'aire occupée par le sol,wt,Surface,Fraction
+Orographie,mf,Surface,m
+Température de l'air,tt,Surface,K
+Température du point de rosée,td,Surface,K
+Température radiative agrégée à la surface,tg,Surface,K

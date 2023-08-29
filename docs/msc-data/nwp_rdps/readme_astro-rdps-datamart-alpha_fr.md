@@ -73,8 +73,14 @@ Exemple de nom de fichier : 20210208T00Z_MSC_RDPS_SEEI_EATM_PS35km_PT84H.grib2
 
 Les variables prévues disponibles dans les fichiers 2D sont décrites ci-dessous.
 
-* __SEEI__: indice de "seeing" ou scintillation. Qualifie le niveau de turbulence et la stabilité de l'atmosphère qui influence la résolution des objets célestes (ex. planètes)
-* __TRSP__: indice de transparence. Qualifie la profondeur du ciel en fonction de la composition de l'atmosphère
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPS-Astronomy_fr.csv");
+</script>
 
 ## Support
 

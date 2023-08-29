@@ -1,4 +1,4 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Albédo,ALBDO,Surface,%
 Composante u du vent,UGRD,1 mb,m/s
 Composante u du vent,UGRD,10 m au-dessus du niveau du sol,m/s

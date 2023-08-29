@@ -1,4 +1,4 @@
-function loadTable(id, file, language){
+function loadTable(id, file){
     // Fetch the CSV file
     fetch(file).then(response => response.text()).then(data => {
         // Parse CSV data
@@ -15,7 +15,7 @@ function loadTable(id, file, language){
             info: "Showing {start} to {end} of {rows} entries",
             noResults: "No results match your search query"
         };
-        if (language == "FR") {
+        if (file.match(/_fr/g)) {
             labels = {
                 placeholder: "Rechercher...",
                 searchTitle: "Rechercher dans le tableau",

@@ -1,0 +1,5 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+25e percentile des précipitations accumulées estimé sur les 25 membres de l'ensemble,q025,Surface,kg/m<sup>2</sup>
+75e percentile des précipitations accumulées estimé sur les 25 membres de l'ensemble,q075,Surface,kg/m<sup>2</sup>
+Indice de confiance de l'analyse,cfia,Surface,N/A
+Précipitations accumulées estimé sur les 25 membres de l'ensemble,pr,Surface,kg/m<sup>2</sup>

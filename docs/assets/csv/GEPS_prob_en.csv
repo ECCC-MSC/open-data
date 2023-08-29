@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
 Geopotential height,HGT,500 mb,gpm
 Heat index,HEATX,2 m Above Ground Level,K

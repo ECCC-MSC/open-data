@@ -69,18 +69,14 @@ Examples:
 
 List of variables available in the files: 
 
-|Name   | Description|  Level|    Units|
-|---------|---------------|----------|----------|
-|tt     |Air Temperature                            |   AGL|     K|
-|td      |Dew Point Temperature |   AGL|    K|
-|acwf      |Land Surface Evaporation Amount |   Sfc|     kg.m-2|
-|tg      |Aggregate Surface Radiative Temperature |   Sfc|       K|
-|traf      |Surface Runoff Amount |   Sfc|     kg.m-2|
-|wt      |Surface Area Fraction |   Sfc|   1|
-|mf      |Model Orography |   Sfc|      m|
-|wsol      |Volumetric Water Content of Soil |   DBS|    m3.m-3|
-|o1      |Drainage Amount Through Base of Soil Model |   DBS|     kg.m-2|
-|alat      |Lateral Subsurface Runoff Amount |   DBS|     kg.m-2|
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDLPS_en.csv");
+</script>
 
 NOTE: The surface area fraction (`wt`) and the model orography (`mf`) are only available at the 00h forecast hour.
 

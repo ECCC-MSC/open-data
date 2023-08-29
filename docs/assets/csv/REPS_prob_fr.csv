@@ -1,4 +1,4 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Humidex,HEATX,2 m au-dessus du niveau du sol,K
 Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
 Facteur de refroidissement éolien,WCF,2 m au-dessus du niveau du sol,K

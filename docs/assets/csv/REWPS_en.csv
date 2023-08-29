@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Direction of wind waves,WVDIR,Surface,Degree true
 Mean Zero-Crossing Wave Period,MZWPER,Surface,s
 Mean wave direction of first swell partition,MWDFSWEL,Surface,deg

@@ -72,18 +72,14 @@ Note that a second variable is also included in this file, and it is the confide
 
 Three types of files exist for a given valid date; each file has its variables for the package products available in the NetCDF are described below. For each file, the variable, the definition, and frequency of availability are mentioned.
 
-* For files of type "Precip-Accum06h":
+<table id="csv-table" class="display"></table>
 
-    * __pr__ : 25-member ensemble of the 6-hour precipitation analyses, available at synoptic hours (mm)
-    * __cfia__ : Confidence index of the analysis, only for the control member. Range of values from 0 to 1 (no unit), available at synoptic hours (mm)
-    
-* For the files of type "Precip-Accum06h-Pct25":
-
-    * __q025__ : 25th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
-    
-* For the files of type "Precip-Accum06h-Pct75":
-
-    * __q075__ : 75th percentile estimated on the 25-member HREPA, available at synoptic hours (mm)
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HREPA_en.csv");
+</script>
 
 ## Support
 

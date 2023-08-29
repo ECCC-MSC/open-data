@@ -75,7 +75,7 @@ Exemple de fichier :
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/REWPS_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/REWPS_fr.csv");
 </script>
 
 ## Support

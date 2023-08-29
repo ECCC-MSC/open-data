@@ -72,15 +72,14 @@ Exemples :
 
 Liste des variables pour chaque heure de validité de:
 
-|Nom   | Description|  Niveau|  Unité|
-|---------|---------------|----------|----------|
-|tt     |Température de l'air                           |   AGL|    K|
-|td      |Température du point de rosée au niveau de l'abri |   AGL|    K|
-|tg      |Température radiative agrégée à la surface |   Sfc|    K|
-|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|   m<sup>3</sup>/m<sup>3</sup>|
-|swe      |Équivalent en eau de la neige (à la surface terrestre) |   Sfc|   kg/m<sup>2</sup>|
-|sd      |Épaisseur de neige (à la surface terrestre) |   Sfc|    m|
+<table id="csv-table" class="display"></table>
 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/NSRPS_fr.csv");
+</script>
 
 ## Support
 

@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Direction of wind waves,WVDIR,Surface,Degree true
 Ice cover,ICEC,Surface,Proportion
 Mean Zero-Crossing Wave Period,MZWPER,Surface,s

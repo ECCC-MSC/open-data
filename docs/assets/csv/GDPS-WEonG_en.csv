@@ -1,0 +1,35 @@
+Variable,Abbreviation,Level,Unit/Value
+Character of precipitation,CHARPCPN,Surface,0=None; 1=Showers; 2=Intermittent; 3=Continuous
+Conditional amount of liquid precipitation,CONDALPCPN,Surface,kg/(m<sup>2</sup>*s)
+Conditional amount of solid snow,CONDASSN,Surface,kg/(m<sup>2</sup>*s)
+Conditional amount of solid ice pellets,CONDAPL,Surface,kg/(m<sup>2</sup>*s)
+Conditional freezing precipitation amount,CONDAFZPCPN,Surface,kg/(m<sup>2</sup>*s)
+Conditional precipitation rate,CONDAPCPN,Surface,kg/(m<sup>2</sup>*s)
+Day/night sky state (combined cloud cover and opacity),SKSTATE,Surface,0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast
+Dew point temperature,DPT,2 m Above Ground Level,K
+Dominant precipitation type,DMNTPCPNTYPE,Surface,101=Rain; 110=Hail; 111=Drizzle; 203=Freezing rain; 212=Freezing drizzle; 308=Ice pellets; 405=Snow; 409=Snow pellets; 413=Ice crystals; 414=Snow grains
+Height of snow level,HGTSNLVL,Surface,m
+Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
+Model orography,ORGPHY,Surface,m
+Presence of blowing snow,BLSN,Surface,0=No; 1=Yes
+Probability of blowing snow,PROBBLSN,Surface,%
+Probability of drizzle,PROBDZ,Surface,%
+Probability of freezing drizzle,PROBFZDZ,Surface,%
+Probability of freezing rain,PROBFZRA,Surface,%
+Probability of freezing precipitation,PROBFZPCPN,Surface,%
+Probability of ice pellets,PROBPL,Surface,%
+Probability of liquid precipitation,PROBLPCPN,Surface,%
+Probability of precipitation,PROBPCPN,Surface,%
+Probability of rain,PROBRA,Surface,%
+Probability of snow squalls,PROBSNSQ,Surface,%
+Probability of snow,PROBSN,Surface,%
+Probability of thunderstorm occurence,PROBTSOCRNC,Surface,%
+Secondary precipitation type,SCNDPCPNTYPE,Surface,101=rain; 110=hail; 111=pellets; 203=freezing rain; 212=freezing pellets; 308=pellets; 405=snow; 409=snow pellets; 413=ice pellets; 414=snow grains
+Temperature,TMP,2 m Above Ground Level,K
+Total precipitation intensity index,TPCPNINTSTI,Surface,0=No intensity; 1=Light; 2=Moderate; 3=Heavy
+Visibility Through Ice Fog,VISIFG,2 m Above Ground Level,m
+Visibility Through Liquid Fog,VISLFG,2 m Above Ground Level,m
+Water/land mask,WTRLANMASK,Surface,Fraction
+Wind direction (from which blowing),WDIR,10 m Above Ground Level,Degree true
+Wind speed (gust),GUST,10 m Above Ground Level,m/s
+Wind speed,WSPD,10 m Above Ground Level,m/s

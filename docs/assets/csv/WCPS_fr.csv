@@ -1,4 +1,4 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Cisaillement de la glace de mer,iiceshear,Surface,%/day
 Composante X de la vitesse de l’eau,vozocrtx,Surface,m/s
 Composante X du vent de surface (10 m),uwindsurf,10 m au-dessus du niveau du sol,m/s

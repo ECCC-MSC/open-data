@@ -1,0 +1,11 @@
+Variable,Abbreviation,Level,Unit/Value
+Aggregate Surface Radiative Temperature,tg,Surface,K
+Air Temperature,tt,Surface,K
+Dew Point Temperature,td,Surface,K
+Drainage Amount Through Base of Soil Model,o1,Surface,kg/m<sup>2</sup>
+Land Surface Evaporation Amount,acwf,Surface,kg/m<sup>2</sup>
+Lateral Subsurface Runoff Amount,alat,Surface,kg/m<sup>2</sup>
+Model Orography,mf,Surface,m
+Surface Area Fraction,wt,Surface,Fraction
+Surface Runoff Amount,traf,Surface,kg/m<sup>2</sup>
+Volumetric Water Content of Soil,wsol,Surface,m<sup>3</sup>/m<sup>3</sup>

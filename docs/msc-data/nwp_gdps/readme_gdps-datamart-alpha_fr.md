@@ -73,42 +73,14 @@ Exemple de nom de fichier :
 
 Liste des éléments du temps sur grille à la surface:
 
-| Abréviation du paramètre GRIB2 | Description | Unité   |
-|------------------------|-------------|----------|
-| BLSN | Présence de poudrerie | binaire (0/1) |
-| PROBFZRA | Probabilité de pluie verglaçante	| %|
-| PROBPL | Probabilité de grésil | %|
-| CANDALPCN | Quantité conditionnelle de précipitation liquide | m |
-| CONDASSN | Quantité conditionnelle de neige solide | m |
-| CONDAPL| Quantité conditionnelle de granulés de glace solide  | m |
-| CHARPCPN |	Caractère de la précipitation | 0=aucune; 1=averse; 2=intermittente; 3=continue |
-| PROBRA | Probabilité de pluie | % |
-| PROBSN | Probabilité de neige | % |
-| ORGPHY | Orographie du modèle |m |
-| DPT |	Température du point de rosée |	C |
-| DMNTPCPNTYPE | Type dominant de précipitation | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige |
-| CONDAFZPCPN | Quantité conditionnelle de précipitation verglaçante | mm |
-| GUST | Rafale de vents | m/s |
-| HGTSNLVL | Hauteur du niveau de la neige | m |
-| WTRLANMASK | Masque terre/eau | fraction |
-| PROBLPCPN | Probabilité de précipitation liquide | % |
-| PROBBLSN | Probabilité de poudrerie | % |
-| PROBDZ |	Probabilité de bruine |	% |
-| PROBFZDZ | Probabilité de bruine verglaçante | % |
-| PROBFZPCPN | Probabilité de précipitation verglaçante | % |
-| PROBPCPN |	Probabilité de précipitation | % |
-| CONDAPCPN | Quantité conditionnelle de précipitation | m |
-| PROBSNSQ | Probabilité de bourrasque de neige |	% |
-| PCPNTYPE | Type de précipitation instantanée | 1=pluie; 2=pluie/neige; 3=pluie verglaçante; 4=grésil; 5=neige; 6=aucune; 7=bruine; 8=bruine verglaçante; 9=précipitation verglaçante/grésil  |
-| SCNDPCPNTYPE | Type de précipitation secondaire | 101=pluie; 110=grêle; 111=bruine; 203=pluie verglaçante; 212=bruine verglaçante; 308=grésil; 405=neige; 409=granulés de neige; 413=cristaux de glace; 414=grains de neige|
-| SKSTATE | Etat du ciel jour/nuit (couverture et opacité nuageuse combinées) | 0-1=ensoleillé/dégagé; 2-3=généralement ensoleillé/quelques nuages; 4-5-6=alternance de soleil et de nuages/partiellement nuageux; 7-8=généralement nuageux/généralement nuageux; 9=nuageux/nuageux; 10=nuageux/couvert |
-| TMP |	Température | C |
-| TPCPNINTSTI | Indice d'intensité des précipitations totales | 0=aucune intensité; 1=faible; 2=modéré; 3=fort	|
-| PROBTSOCRNC | Probabilité d'occurence d'orage | % |
-| VISIFG | Visibilité dans le brouillard glacé | m |
-| VISLFG | Visibilité à travers le brouillard liquide | m |
-| WDIR | Direction du vent | Degré vrai |
-| WSPD | Vitesse du vent | m/s |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-WEonG_fr.csv");
+</script>
 
 ## Support
 

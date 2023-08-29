@@ -137,7 +137,7 @@ __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier c
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RDPA_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/RDPA_fr.csv");
 </script>
 
 ## À propos du masque No-Data de la grille polaire stéréographique

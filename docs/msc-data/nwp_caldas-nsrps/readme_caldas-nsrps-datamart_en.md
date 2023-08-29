@@ -71,15 +71,14 @@ Examples:
 
 List of variables available in the files:
 
-|Name   | Description|  Level|  Units|
-|---------|---------------|----------|----------|
-|tt     |Air Temperature                            |   AGL|    K|
-|td      |Dew Point Temperature |   AGL|     K|
-|tg      |Aggregate Surface Radiative Temperature |   Sfc|     K|
-|wsol      |Volumetric Water Content of Soil |   DBS|    m<sup>3</sup>/m<sup>3</sup>|
-|swe      |Water equivalent of snow cover (land) |   Sfc|   kg/m<sup>2</sup>|
-|sd      |Snow depth (land) |   Sfc|    m|
+<table id="csv-table" class="display"></table>
 
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/NSRPS_en.csv");
+</script>
 
 ## Support
 

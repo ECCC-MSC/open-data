@@ -69,12 +69,14 @@ Examples:
 
 List of 2D variables available in the files:
 
-* PM2.5: PM2.5 concentration (&mu;g.m-3)
-* PM10: PM10 concentration (&mu;g.m-3)
-* NO: Nitrogen oxide (ppb)
-* NO2: Nitrogen dioxide (ppb)
-* O3: Ozone (ppb)
-* SO2: Sulfure dioxide (ppb)
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDAQA_en.csv");
+</script>
 
 ## Support
 

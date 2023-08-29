@@ -1,6 +1,6 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Albédo,ALBDO,Surface,%
-Caractère de précipitation,CHARPCPN,Surface,0=None; 1=Showers; 2=Intermittent; 3=Continuous
+Caractère de précipitation,CHARPCPN,Surface,0=Aucune; 1=Averse; 2=Intermittente; 3=Continue
 Composante u du vent,UGRD,10 m au-dessus du niveau du sol,m/s
 Composante u du vent,UGRD,100 mb,m/s
 Composante u du vent,UGRD,1000 mb,m/s
@@ -212,7 +212,7 @@ Humidité spécifique,SPFH,Surface,kg/kg
 Hélicité relative de la tempête,HLCY,Surface,J/kg
 Indice Showalter,SHWINX,500 mb,K
 Indice climatique thermique universel,UTHCIDX,Surface,K
-Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=No intensity; 1=Light; 2=Moderate; 3=Heavy
+Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
 Indice de soulèvement,4LFTX,500 mb,K
 Masque terre/eau,WTRLANMASK,Surface,Fraction
 Orographie du modèle,ORGPHY,Surface,m
@@ -288,9 +288,9 @@ Tourbillon absolu,ABSV,250 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,500 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,700 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,850 mb,s<sup>-1</sup>
-Type de précipitation dominant,DMNTPCPNTYPE,Surface,101=Rain; 110=Hail; 111=Drizzle; 203=Freezing rain; 212=Freezing drizzle; 308=Ice pellets; 405=Snow; 409=Snow pellets; 413=Ice crystals; 414=Snow grains
-Type de précipitation instantanée,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
-Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains
+Type de précipitation dominant,DMNTPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
+Type de précipitation instantanée,PCPNTYPE,Surface,1=Pluie; 2=Pluie/Neige; 3=Pluie verglaçante; 4=Grésil; 5=Neige; 6=Aucune; 7=Bruine; 8=Bruine verglaçante; 9=Précipitation verglaçante/Grésil
+Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
 Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
 Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
@@ -367,4 +367,4 @@ Vitesse verticale (pression),VVEL,850 mb,Pa/s
 Épaisseur de la neige,SNOD,Surface,m
 Épaisseur de neige équivalent en eau,SDWE,Surface,kg/m<sup>2</sup>
 Épaisseur entre 2 niveaux isobares,THICK,1000-500 mb,m
-État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast
+État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=Ensoleillé/Dégagé; 2-3=Généralement ensoleillé/Quelques nuages; 4-5-6=Alternance de soleil et de nuages/Partiellement nuageux; 7-8=Généralement nuageux/Généralement nuageux; 9=Nuageux/Nuageux; 10=Nuageux/Couvert

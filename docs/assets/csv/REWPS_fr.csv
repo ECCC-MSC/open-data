@@ -1,4 +1,4 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Direction des vagues de la mer du vent,WVDIR,Surface,Degree true
 Direction moyenne de la deuxième houle,MWDSSWEL,Surface,deg
 Direction moyenne de la première houle,MWDFSWEL,Surface,deg
