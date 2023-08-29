@@ -78,7 +78,7 @@ where :
 
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__ : UTC run time [00, 12]
+* __HH__ : UTC run time [00, 06, 12, 18]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __HRDPS__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
