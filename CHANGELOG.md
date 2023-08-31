@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.6
+
+* date: TBD
+* announcements:
+    *
+* new content:
+    *
+* improvements:
+    *
+* bug fixes:
+    * Added links to GeoMet from Lightning page
+
 ## 2.5.5
 
 * date: 2023-08-29
