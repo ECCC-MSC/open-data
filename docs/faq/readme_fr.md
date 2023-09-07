@@ -129,7 +129,7 @@ Pour les bulletins de stations canadiennes, tout changement dans l'en-tête et l
 
 Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez consulter les bulletins GENOT 03. Vous pouvez trouver un [exemple d'un tel bulletin](https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117).
 
-Finalement, nous vous recommandons fortement de vous inscrire à nos listes de diffusion [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) afin d'être averti de toute mise à jour ou changement concernant la disponibilité des données. 
+Finalement, nous vous recommandons fortement de vous inscrire à nos listes de diffusion [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) afin d'être averti de toute mise à jour ou changement concernant la disponibilité des données. 
 
 ## Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?
 

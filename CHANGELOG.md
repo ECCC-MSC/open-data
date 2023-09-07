@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     *
 * bug fixes:
     * Added links to GeoMet from Lightning page
+    * Updated GeoMet-Info and dd_info mailing list URLs
 
 ## 2.5.5
 

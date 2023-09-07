@@ -68,7 +68,7 @@ Also, as often as possible, we will use the __MSC testing data repository DD-Alp
 
 ## Announcement mailing list
 
-We encourage users to subscribe to the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.
+We encourage users to subscribe to the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.
 
 ## Support
 

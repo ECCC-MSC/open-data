@@ -116,4 +116,4 @@ If you have any questions regarding this data, please [contact us](https://meteo
 
 ## Announcements from the dd_info mailing list 
 
-Announcements related to this dataset are available via the [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) list.
+Announcements related to this dataset are available via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) list.
