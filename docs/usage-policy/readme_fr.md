@@ -17,7 +17,7 @@ Les utilisateurs des données ouvertes du SMC doivent :
 * Afficher clairement l'attribution de la source des données, tel l'exige la [licence d'utilisation finale](../licence/readme_fr.md)
 * Ne pas encourager activement ou passivement la violation des droits d'auteur
 * Demander et récupérer uniquement les données que vous avez l'intention d'utiliser
-* S'inscrire aux listes d'annonces [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) et/ou [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) pour être informé des changements apportés aux services de données du SMC et pouvoir s'adapter en conséquence
+* S'inscrire aux listes d'annonces [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) et/ou [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) pour être informé des changements apportés aux services de données du SMC et pouvoir s'adapter en conséquence
 
 Veuillez vous référer aux règles d'utilisation et aux pratiques exemplaires suivantes pour garantir une bonne utilisation des services de données ouvertes du SMC.
 
@@ -44,4 +44,4 @@ Règles d'utilisation des services HTTPS de Datamart du SMC :
 
 ## Mise à jour de la Politique d'utilisation des services
 
-Cette politique est sujet à changement afin de garantir la qualité du service pour les utilisateurs des données du SMC. Les mises à jour seront communiquées via les listes d'annonces [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) et [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info).
+Cette politique est sujet à changement afin de garantir la qualité du service pour les utilisateurs des données du SMC. Les mises à jour seront communiquées via les listes d'annonces [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) et [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/).

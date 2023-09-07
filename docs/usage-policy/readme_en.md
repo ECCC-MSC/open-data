@@ -17,7 +17,7 @@ MSC Open Data users should:
 * Clearly display the data source attribution as required by the [End-use licence](../licence/readme_en.md)
 * Do not actively or passively encourage copyright infringement
 * Request and retrieve only data you intend to use
-* Subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) and/or [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) announcement lists to be notified of changes to MSC data services and be able to adapt accordingly 
+* Subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) and/or [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) announcement lists to be notified of changes to MSC data services and be able to adapt accordingly 
 
 Please refer to the following usage rules and best practices to ensure proper usage of MSC Open Data services.
 
@@ -44,4 +44,4 @@ Usage rules for MSC Datamart HTTPS services:
 
 ## Service Usage Policy Updates
 
-This policy is subject to change to ensure quality of service for MSC data users. Updates will be communicated via the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) and [dd_info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/dd_info) announcement lists. 
+This policy is subject to change to ensure quality of service for MSC data users. Updates will be communicated via the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) and [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) announcement lists. 

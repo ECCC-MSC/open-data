@@ -135,7 +135,7 @@ You can find an [example of a GENOT 03 bulletin](https://dd.meteo.gc.ca/doc/geno
 
 [](https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117)
 
-Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) and [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) to be warned of any updates or changes regarding the data availability.
+Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) to be warned of any updates or changes regarding the data availability.
 
 ## How to be informed about problems with model data production ?
 

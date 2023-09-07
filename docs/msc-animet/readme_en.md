@@ -103,7 +103,7 @@ The [permalink](https://en.wikipedia.org/wiki/Permalink) allows you to open MSC 
 
 ## Announcement mailing list
 
-MSC AniMet leverages data from the 24/7 mission critical [MSC GeoMet web services](../msc-geomet/readme_en.md). We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to MSC AniMet.
+MSC AniMet leverages data from the 24/7 mission critical [MSC GeoMet web services](../msc-geomet/readme_en.md). We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) announcement mailing list to be informed of enhancements and changes to MSC AniMet.
 
 ## Source code
 
