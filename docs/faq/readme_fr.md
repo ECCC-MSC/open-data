@@ -129,7 +129,7 @@ Pour les bulletins de stations canadiennes, tout changement dans l'en-tête et l
 
 Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez consulter les bulletins GENOT 03. Vous pouvez trouver un [exemple d'un tel bulletin](https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117).
 
-Finalement, nous vous recommandons fortement de vous inscrire à nos listes de diffusion [dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) afin d'être averti de toute mise à jour ou changement concernant la disponibilité des données. 
+Finalement, nous vous recommandons fortement de vous inscrire à nos listes de diffusion [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) et [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) afin d'être averti de toute mise à jour ou changement concernant la disponibilité des données. 
 
 ## Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?
 
@@ -172,7 +172,7 @@ Par conséquent, la micro équation pour le calcul de l'équivalent en eau de la
 
 ## Dans le journal de chronologie des modifications des modèles de prévision numérique du temps, je vois plusieurs systèmes (ex : SRPEOT) non mentionnés parmi la liste des systèmes dont les données sont disponibles, où puis-je trouver ces données ?
 
-Ces données ne sont pas encore disponibles sur le Datamart du SMC. Pour être informé de l’ajout de jeux de données, vous pouvez vous abonner aux listes de diffusion [dd-info](https://lists.ec.gc.ca/mailman/listinfo/dd_info) et [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
+Ces données ne sont pas encore disponibles sur le Datamart du SMC. Pour être informé de l’ajout de jeux de données, vous pouvez vous abonner aux listes de diffusion [dd-info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) et [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info).
 
 ## Quelle est la différence entre les deux jeux de données d'observations disponibles sur le Datamart du SMC ?
 

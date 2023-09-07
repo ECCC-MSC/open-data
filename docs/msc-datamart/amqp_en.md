@@ -107,6 +107,6 @@ Here are some specific examples to receive alerts, citypage_weather data for one
 
 If you use the data available on the MSC Datamart, it is strongly recommend that you subscribe to the MSC Datamart's mailing list in order to be warned of any updates or changes regarding the data available. You can subscribe here:
 
-[https://lists.ec.gc.ca/mailman/listinfo/dd_info](https://lists.ec.gc.ca/mailman/listinfo/dd_info)
+[https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/)
 
 User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
