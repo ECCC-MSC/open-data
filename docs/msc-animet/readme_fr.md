@@ -103,7 +103,7 @@ Le [permalien](https://fr.wikipedia.org/wiki/Permalien) vous permet d'ouvrir Ani
 
 ## Liste d'information
 
-AniMet du SMC exploite les données des [services web 24/7 de GeoMet du SMC](../msc-geomet/readme_fr.md). Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) pour être informés des améliorations et des changements apportés à AniMet du SMC.
+AniMet du SMC exploite les données des [services web 24/7 de GeoMet du SMC](../msc-geomet/readme_fr.md). Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) pour être informés des améliorations et des changements apportés à AniMet du SMC.
 
 ## Code source
 

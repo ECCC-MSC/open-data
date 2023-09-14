@@ -90,7 +90,7 @@ Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est 
 
 ## Liste d'information
 
-Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) afin d'être informés des améliorations et changements aux services GeoMet du SMC.
+Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) afin d'être informés des améliorations et changements aux services GeoMet du SMC.
 
 <style>
   #legend-img {

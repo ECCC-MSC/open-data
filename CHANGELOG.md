@@ -1,6 +1,6 @@
 # MSC Open Data documentation changelog
 
-This is the user-oriented changelog for the MSC Open Data documentation. It tracks what has changed between the versions published on https://eccc-msc.github.io/open-data/ . It is used to create the public announcements to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) and [GeoMet-Info](https://lists.ec.gc.ca/mailman/listinfo/GeoMet-Info) lists. For GeoMet-Info, the [announcements are stored on the CMC wiki](https://wiki.cmc.ec.gc.ca/wiki/GeoMet/Announcements#Previous_GeoMet-Info_announcements).
+This is the user-oriented changelog for the MSC Open Data documentation. It tracks what has changed between the versions published on https://eccc-msc.github.io/open-data/ . It is used to create the public announcements to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info) lists. For GeoMet-Info, the [announcements are stored on the CMC wiki](https://wiki.cmc.ec.gc.ca/wiki/GeoMet/Announcements#Previous_GeoMet-Info_announcements).
 
 # Version naming
 
