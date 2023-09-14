@@ -135,7 +135,7 @@ You can find an [example of a GENOT 03 bulletin](https://dd.meteo.gc.ca/doc/geno
 
 [](https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117)
 
-Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) to be warned of any updates or changes regarding the data availability.
+Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) to be warned of any updates or changes regarding the data availability.
 
 ## How to be informed about problems with model data production ?
 
@@ -178,7 +178,7 @@ Therefore, the micro equation for calculating snow water equivalent in mm (equiv
 
 ## In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?
 
-This data is not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the [dd-info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing lists.
+This data is not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the [dd-info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) mailing lists.
 
 ## What is the difference between the two sets of observational data available on the MSC Datamart ?
 

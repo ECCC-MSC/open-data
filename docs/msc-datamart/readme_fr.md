@@ -77,7 +77,7 @@ Ce serveur, qui n'est pas opérationnel, donne également accès à des données
 
 ## Liste de diffusion des annonces
 
-Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'annonces [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) pour être informés des améliorations et des changements apportés au Datamart du SMC.
+Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion d'annonces [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) pour être informés des améliorations et des changements apportés au Datamart du SMC.
 
 ## Soutien
 

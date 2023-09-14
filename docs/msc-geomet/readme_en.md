@@ -103,7 +103,7 @@ Experimental support for the [SpatioTemporal Asset Catalog (STAC) specification]
 
 ## Announcement mailing list
 
-We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
 
 
 ## Support

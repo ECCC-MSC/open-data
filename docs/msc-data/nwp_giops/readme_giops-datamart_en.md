@@ -94,4 +94,4 @@ If you have any questions about , please contact us at: [ec.dps-client.ec@canada
 
 ## Announcements from the dd_info mailing list 
 
-Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/).
+Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).

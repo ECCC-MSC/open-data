@@ -149,7 +149,7 @@ Prior applying any change to the [licence accompanying the documentation](licenc
 * Get formal management approval for the change
 * Bump the Licence version number
 * Announce changes to the Licence to users
-    * e.g. [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) announcement lists
+    * e.g. [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement lists
 
 ## 4.3 - Update workflow
 
@@ -282,4 +282,4 @@ The following instructions take the current documentation version from `https://
 10. Desactivate your conda environment: `conda deactivate`
 11. Return to the master branch: `git checkout master`
 12. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
-13. If applicable, prepare and send announcement to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info.comm.collab.science.gc.ca/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) announcement lists based on the [changelog](CHANGELOG.md)
+13. If applicable, prepare and send announcement to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement lists based on the [changelog](CHANGELOG.md)
