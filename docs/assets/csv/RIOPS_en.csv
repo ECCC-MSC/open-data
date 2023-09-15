@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Depth-integrated compressive sea ice strength,iicestrength,Surface,N/m
 Depth-integrated internal sea ice pressure,iicepressure,Surface,N/m
 Ocean mixed layer depth based on density criterion,sokaraml,Surface,m

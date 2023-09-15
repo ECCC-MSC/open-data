@@ -1,0 +1,35 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Caractère de précipitation,CHARPCPN,Surface,0=Aucune; 1=Averse; 2=Intermittente; 3=Continue
+Direction du vent (d'où il souffle),WDIR,10 m au-dessus du niveau du sol,Degree true
+Hauteur du niveau de la neige,HGTSNLVL,Surface,m
+Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
+Masque terre/eau,WTRLANMASK,Surface,Fraction
+Orographie du modèle,ORGPHY,Surface,m
+Probabilité d'occurrence d'orage,PROBTSOCRNC,Surface,%
+Probabilité de bourrasque de neige,PROBSNSQ,Surface,%
+Probabilité de bruine,PROBDZ,Surface,%
+Probabilité de bruine verglaçante,PROBFZDZ,Surface,%
+Probabilité de grésil,PROBPL,Surface,%
+Probabilité de neige,PROBSN,Surface,%
+Probabilité de pluie verglaçante,PROBFZRA,Surface,%
+Probabilité de pluie,PROBRA,Surface,%
+Probabilité de poudrerie,PROBBLSN,Surface,%
+Probabilité de précipitation,PROBPCPN,Surface,%
+Probabilité de précipitation liquide,PROBLPCPN,Surface,%
+Probabilité de précipitation verglaçante,PROBFZPCPN,Surface,%
+Présence de poudrerie,BLSN,Surface,0=Non; 1=Oui
+Quantité conditionnelle de granulés de glace solide,CONDAPL,Surface,kg/(m<sup>2</sup>*s)
+Quantité conditionnelle de neige solide,CONDASSN,Surface,kg/(m<sup>2</sup>*s)
+Quantité conditionnelle de précipitation,CONDAPCPN,Surface,kg/(m<sup>2</sup>*s)
+Quantité conditionnelle de précipitation liquide,CONDALPCPN,Surface,kg/(m<sup>2</sup>*s)
+Quantité conditionnelle de précipitations verglaçantes,CONDAFZPCPN,Surface,kg/(m<sup>2</sup>*s)
+Température du point de rosée,DPT,2 m au-dessus du niveau du sol,K
+Température,TMP,2 m au-dessus du niveau du sol,K
+Type de précipitation dominant,DMNTPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
+Type de précipitation instantanée,PCPNTYPE,Surface,1=Pluie; 2=Pluie/Neige; 3=Pluie verglaçante; 4=Grésil; 5=Neige; 6=Aucune; 7=Bruine; 8=Bruine verglaçante; 9=Précipitation verglaçante/Grésil
+Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
+Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
+Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
+Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
+État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=Ensoleillé/Dégagé; 2-3=Généralement ensoleillé/Quelques nuages; 4-5-6=Alternance de soleil et de nuages/Partiellement nuageux; 7-8=Généralement nuageux/Généralement nuageux; 9=Nuageux/Nuageux; 10=Nuageux/Couvert

@@ -75,8 +75,14 @@ Example of file name :
 
 The forecasted variables available in the 2D files are described below.
 
-* __SEEI__: seeing index. Qualifies the level of turbulence and the stability of the atmosphere that influences the resolution of celestial objects (ex. planets)
-* __TRSP__: transparency index. Qualifies the depth of the sky according to the composition of the atmosphere
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPS-Astronomy_en.csv");
+</script>
 
 ## Support
 

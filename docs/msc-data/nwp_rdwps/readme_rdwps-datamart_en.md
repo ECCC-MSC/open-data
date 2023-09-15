@@ -149,7 +149,7 @@ Levels that may be applicable to a given parameter are :
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RDWPS_en.csv", "EN");
+  loadTable("csv-table", "../../../assets/csv/RDWPS_en.csv");
 </script>
 
 ### Notes

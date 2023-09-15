@@ -1,4 +1,4 @@
-Variable,Abréviation,Niveau,Unité
+Variable,Abréviation,Niveau,Unité/Valeur
 Composante u du vent,UGRD,10 m au-dessus du niveau du sol,m/s
 Composante v du vent,VGRD,10 m au-dessus du niveau du sol,m/s
 Direction des vagues de la mer du vent,WVDIR,Surface,Degree true

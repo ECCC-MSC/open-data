@@ -49,8 +49,8 @@ class FileParser:
             except Exception as e:
                 logger.error(e)
         
-        header_en = 'Variable,Abbreviation,Level,Unit'
-        header_fr = 'Variable,Abréviation,Niveau,Unité'
+        header_en = 'Variable,Abbreviation,Level,Unit/Value'
+        header_fr = 'Variable,Abréviation,Niveau,Unité/Valeur'
         # Write to english variable table file
         write_variable_table(data_en, directory, model + '_en.csv', header_en)
         # Write to french variable table file
@@ -76,7 +76,7 @@ class FileParser:
         if variable_key in self.variable_LUT:
             variable = self.variable_LUT[variable_key]['Variable'][language]
             abbreviation = self.variable_LUT[variable_key]['Abbreviation']
-            unit = self.variable_LUT[variable_key]['Unit']
+            unit = self.variable_LUT[variable_key]['Unit'][language]
         else:
             logger.warning(f'Variable {variable_key} not found')
             variable = variable_key
@@ -108,7 +108,7 @@ class FileParser:
         # Convert variable with lookup table
         variable = self.product_LUT[variable_key]['Variable'][language]
         abbreviation = self.product_LUT[variable_key]['Abbreviation']
-        unit = self.product_LUT[variable_key]['Unit']
+        unit = self.product_LUT[variable_key]['Unit'][language]
         # Convert level with lookup table
         if level_key in self.level_LUT:
             level = self.level_LUT[level_key][language]

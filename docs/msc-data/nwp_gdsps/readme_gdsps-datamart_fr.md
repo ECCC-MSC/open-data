@@ -61,7 +61,7 @@ Exemple de fichier :
 
 20180417T12Z_MSC_GDSPS_ETAS_Sfc_LatLon0.144x0.200_PT024H.nc
 
-##   Liste de variables
+## Liste de variables
 
 <table id="csv-table" class="display"></table>
 
@@ -69,7 +69,7 @@ Exemple de fichier :
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/GDSPS_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/GDSPS_fr.csv");
 </script>
 
 __NOTE__:

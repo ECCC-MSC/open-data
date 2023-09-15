@@ -75,7 +75,7 @@ Note that a second variable is also included in this file and it is the confiden
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPA_en.csv", "EN");
+  loadTable("csv-table", "../../../assets/csv/HRDPA_en.csv");
 </script>
 
 ## About the No-data mask

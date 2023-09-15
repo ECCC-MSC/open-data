@@ -75,7 +75,7 @@ Ce fichier provient du Centre Météorologique Canadien (CMC) et contient des do
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPA_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/HRDPA_fr.csv");
 </script>
 
 ## À propos du masque No-Data

@@ -71,7 +71,7 @@ Le fichier a été créé par le SMC et contient une prévision du Système glob
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/GDWPS_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/GDWPS_fr.csv");
 </script>
 
 ### Notes

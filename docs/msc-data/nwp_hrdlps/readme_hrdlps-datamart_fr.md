@@ -69,18 +69,14 @@ Exemples :
 
 Liste des variables disponibles dans les fichiers:
 
-|Nom   | Description|  Niveau|  Unité|
-|---------|---------------|----------|----------|
-|tt     |Température de l'air                            |   AGL|    K|
-|td      |Température du point de rosée  |   AGL|     K|
-|acwf      |Accumulation de l'évaporation de la surface terrestre |   Sfc|     kg.m-2|
-|tg      |Température radiative agrégée à la surface |   Sfc|      K|
-|traf      |Accumulation du ruissellement de surface |   Sfc|     kg.m-2|
-|wt      |Fraction d'aire occupée par le sol  |   Sfc|       1|
-|mf      |Orographie  |   Sfc|       m|
-|wsol      |Contenu volumique d'eau liquide dans le sol |   DBS|  m3.m-3|
-|o1      |Accumulation du drainage à la base de la couche de sol |   DBS|   kg.m-2|
-|alat      |Accumulation de l'écoulement total latéral  |   DBS|    kg.m-2|
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDLPS_fr.csv");
+</script>
 
 NOTE: la fraction d'aire occupée par le sol (`wt`) et l'orographie (`mf`) sont seulement disponibles à l'échéance 00h.
 

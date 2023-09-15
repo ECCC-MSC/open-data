@@ -1,0 +1,7 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Contenu volumique d'eau liquide dans le sol,wsol,Surface,m<sup>3</sup>/m<sup>3</sup>
+Température de l'air,tt,Surface,K
+Température du point de rosée,td,Surface,K
+Température radiative agrégée à la surface,tg,Surface,K
+Épaisseur de neige (à la surface terrestre),sd,Surface,m
+Équivalent en eau de la neige (à la surface terrestre),swe,Surface,kg/m<sup>2</sup>

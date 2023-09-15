@@ -73,42 +73,14 @@ Example file name:
 
 List of surface weather elements on the grid:
 
-| Abbreviation of GRIB2 parameter | Description | Unit |
-|------------------------|-------------|----------|
-| BLSN | Presence of blowing snow | Binary (0/1) |
-| PROBFZRA | Probability of freezing rain | %|
-| PROBPL | Probability of ice pellets | %|
-| CONDALPCPN | Conditional amount of liquid precipitation | m |
-| CONDASSN | Conditional amount of solid snow | m | 
-| CONDAPL | Conditional amount of solid ice pellets | m|
-| CHARPCPN | Character of precipitation | 0=no precipitation; 1=showers; 2=intermittent; 3=continuous|
-| PROBRA | Probability of rain | % | 
-| PROBSN | Probability of snow | % | 
-| ORGPHY | Model orography | m | 
-| DPT | Dew point temperature | C |
-| DMNTPCPNTYPE | Dominant precipitation type  | 101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains |
-| CONDAFZPCPN | Conditional freezing precipitation amount | mm |
-| GUST | Gust | m/s |
-| HGTSNLVL | Height of snow level | m |
-| WTRLANMASK | Land/Water mask | fraction |
-| PROBLPCPN | Probability of liquid precipitation | % | 
-| PROBBLSN | Probability of blowing snow | % |
-| PROBDZ  | Probability of drizzle | % | 
-| PROBFZDZ | Probability of freezing drizzle | % |
-| PROBFZPCPN | Probability of freezing precipitation | % | 
-| PROBPCPN | Probability of precipitation | % | 
-| CONDAPCPN | Conditional precipitation rate | m | 
-| PROBSNSQ | Probability of snow squall | % | 
-| PCPNTYPE | Instantaneous precipitation type | 1=rain; 2=rain/snow; 3=freezing rain; 4=ice pellets; 5=snow; 6=none; 7=drizzle; 8=freezing drizzle; 9=freezing rain/ice pellets |
-| SCNDPCPNTYPE | Secondary precipitation type | 101=rain; 110=hail; 111=pellets; 203=freezing rain; 212=freezing pellets; 308=pellets; 405=snow; 409=snow pellets; 413=ice pellets; 414=snow grains|
-| SKSTATE | Day/Night sky conditions (combined cloud cover and opacity) | 0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast |
-| TMP | Temperature | C |
-| TPCPNINTSTI | Total precipitation intensity index | 0=no intensity; 1=low intensity; 2=moderate intensity; 3=high intensity |
-| PROBTSOCRNC | Probability of thunderstorm occurrence | % | 
-| VISIFG | Visibility in ice fog | m |
-| VISLFG | Visibility through liquid fog | m |
-| WDIR  | Wind Direction | True Degree | 
-| WSPD | Wind Speed | m/s |
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-WEonG_en.csv");
+</script>
 
 ## Support
 

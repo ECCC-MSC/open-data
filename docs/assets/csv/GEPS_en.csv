@@ -1,4 +1,4 @@
-Variable,Abbreviation,Level,Unit
+Variable,Abbreviation,Level,Unit/Value
 Convective available potential energy,CAPE,Surface,J/kg
 Convective inhibition,CIN,Surface,J/kg
 Downward incident solar flux,DSWRF,Surface,W/m<sup>2</sup>

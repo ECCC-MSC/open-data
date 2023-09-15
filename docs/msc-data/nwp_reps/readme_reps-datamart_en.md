@@ -120,7 +120,7 @@ __Individual members:__
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/REPS_en.csv", "EN");
+  loadTable("csv-table", "../../../assets/csv/REPS_en.csv");
 </script>
 
 __Ensemble products:__ 
@@ -128,7 +128,7 @@ __Ensemble products:__
 <table id="csv-prob-table" class="display"></table>
 
 <script>
-  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_en.csv", "EN");
+  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_en.csv");
 </script>
 
 The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.

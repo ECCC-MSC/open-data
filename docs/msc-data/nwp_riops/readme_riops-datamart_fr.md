@@ -79,7 +79,7 @@ La visualisation des champs contenus dans les fichiers NetCDF produits par SRPOG
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RIOPS_fr.csv", "FR");
+  loadTable("csv-table", "../../../assets/csv/RIOPS_fr.csv");
 </script>
 
 Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
