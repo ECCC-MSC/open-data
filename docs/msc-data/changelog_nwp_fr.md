@@ -8,6 +8,17 @@
 
 ## 2023
 
+### 20 septembre 2023
+
+* [Système de simulation hydrodynamique opérationnelle (SHOP) 3.3.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-20-septembre-2023)
+
+### 14 septembre 2023
+
+* [Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SGPE](nwp_geps/changelog_geps_fr.md#le-jeudi-14-septembre-2023)
+* [Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-14-septembre-2023)
+* [Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-jeudi-14-septembre-2023)
+* [Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-jeudi-14-septembre-2023)
+
 ### 30 août 2023
 
 * [Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-30-août-2023)
