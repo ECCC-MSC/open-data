@@ -5,7 +5,6 @@ import os
 import re
 import sys
 from datetime import datetime, timedelta
-from urllib import error, request
 
 import yaml
 
@@ -19,8 +18,12 @@ variable_file = './variable_translation.yml'
 product_file = './product_translation.yml'
 # Readable level lookup table
 level_file = './readable_level.yml'
+
 # Temporary directory
-temporary = '/net/local/home/edouards/cmoa/public-doc/scripts/generate_variable_tables/work'
+temporary = f'/data/geomet/dev/{os.getlogin()}/'
+# Root logger
+logging.basicConfig()
+logger = logging.getLogger()
 
 def read_args(input, model_LUT):
     """
@@ -56,34 +59,10 @@ def read_args(input, model_LUT):
         type=str,
         help=f"GRIB2 or NetCDF datasets (default: all datasets).")
     parser.add_argument(
-        "--url",
+        "--path",
         default=url,
         type=str,
-        help=f"Server URL to download GRIB2 and NetCDF files from (default: {url}).")
-
-    class Show(argparse.Action):
-        def __call__(self, parser, namespace, values, option_string):
-            width = 98
-            print('=' * width)
-            print(f'SHOWING ALL AVAILABLE DATASETS')
-            print('=' * width)
-            # Headers
-            h = '|{:^20}|{:^75}|'
-            print(h.format('dataset', 'path'))
-            print('=' * width)
-            # Data
-            for key in model_LUT:
-                for path in model_LUT[key]:
-                    print(h.format( key, path ))
-                    print('-' * width)
-            print('DONE PRINTING ALL DATASETS, EXITING')
-            parser.exit() # exit parser and program, ignore other arguments
-
-    parser.add_argument(
-        '--show',
-        nargs=0,
-        action=Show,
-        help='Print all datasets and their paths. Note: All other options will be ignored.')
+        help=f"Server URL or local directory (default: {url}).")
     parser.add_argument(
         '--verbose',
         action='store_true',
@@ -93,24 +72,46 @@ def read_args(input, model_LUT):
 
     # Logging configuration
     if args.verbose:
-        logging.basicConfig(level=logging.INFO)
+        logger.setLevel(logging.INFO)
     else:
-        logging.basicConfig(level=logging.WARNING)
+        logger.setLevel(logging.WARNING)
 
-    # Validate input URL
+    # Create output directory
     try:
-        request.urlopen(args.url)
-    except error.URLError as e:
-        logging.error(e)
+        os.makedirs(args.directory, exist_ok=True)
+        logger.info(f'Temporary directory {args.directory} created')
+    except OSError as e:
+        logger.error(e)
         exit(1)
 
-    # Handle output directory
-    if not os.path.exists(args.directory):
-        if args.directory:
-            logging.info(f'Creating temporary directory: {args.directory}')
-            os.makedirs(args.directory)
-
     return args
+
+def append_date(path, cansips):
+    '''
+    Append year and month to CanSIPS path.
+
+        Parameters:
+            path (str): URL with date to extract
+            cansips (str): CanSIPS path without year and month
+        Returns:
+            cansips (str): CanSIPS path with year and month
+    '''
+    # Search for date in url
+    pattern = re.search('\d{8}', path)
+    if pattern is None:
+        return cansips
+    
+    try:
+        # Create datetime from pattern
+        date = datetime.strptime(pattern.group(), "%Y%m%d")
+    except ValueError as e:
+        logger.error(e)
+        return cansips
+    
+    # Jump to next month
+    new_date = date.replace(day=1) + timedelta(days=31)
+    # Convert date to YYYY/MM format
+    return os.path.join(cansips, new_date.strftime('%Y/%m/'))
 
 def main():
     # Load datasets lookup table
@@ -129,21 +130,18 @@ def main():
     # Get input arguments
     args = read_args(sys.argv[1:], model_LUT)
 
-    # Append year and month to CanSIPS URL
-    if 'CanSIPS' in args.models:
-        pattern = re.search('\d{8}', args.url)
-        if not pattern is None:
-            date = datetime.strptime(pattern.group(), "%Y%m%d")
-            new_date = date.replace(day=1) + timedelta(days=31)
-            cansips = model_LUT['CanSIPS'][0]
-            model_LUT['CanSIPS'][0] = os.path.join(cansips, new_date.strftime('%Y/%m/'))
-
-    explorer = FileExplorer(args.url, temporary)
+    explorer = FileExplorer(temporary)
     parser = FileParser(variable_LUT, product_LUT, level_LUT)
 
+    # Append year and month to CanSIPS URL
+    if 'CanSIPS' in args.models:
+        model_LUT['CanSIPS'][0] = append_date(args.path, model_LUT['CanSIPS'][0])
+
     for model in args.models:
-        # Download files
-        files = explorer.download_files(model_LUT[model])        
+        if os.path.isdir(args.path):
+            files = explorer.find_files(model_LUT[model], args.path)
+        else:
+            files = explorer.download_files(model_LUT[model], args.path)
         # Parse metadata for all files and print tables
         parser.parse_metadata(files, args.directory, model)
 

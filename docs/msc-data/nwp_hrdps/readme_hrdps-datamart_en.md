@@ -151,7 +151,7 @@ This list contains both the parameters generated from HRDPS outputs and the weat
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
 </script>
 
 ## Support

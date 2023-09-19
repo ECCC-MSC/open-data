@@ -64,6 +64,16 @@ RAQDPS-FW:
 GDPS-Ice-Analysis:
     - model_gem_global/10km/00/
 
+HREPA:
+    - model_hrepa/2.5km/00/
+
+HRDLPS:
+    - model_hrdlps/2.5km/00/000/
+    - model_hrdlps/2.5km/00/024/
+
+NSRPS:
+    - model_nsrps-caldas/2.5km/00/
+
 CIOPS:
     - model_ciops/east/2km/00/000/
     - model_ciops/salish-sea/500m/00/001/

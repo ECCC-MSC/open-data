@@ -122,7 +122,7 @@ __Niveaux de profondeur (m)__ : 0,5, 1,5, 2,50001, 3,50003, 4,5000701, 5,5001502
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/CIOPS_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/CIOPS_Variables-List_fr.csv");
 </script>
 
 Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.

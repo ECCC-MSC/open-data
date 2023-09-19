@@ -4,6 +4,54 @@
 
 The script generates weather variable tables by downloading GRIB2 and NetCDF files and reading their metadata. The script creates one table in english and another in french in two seperate files. The CSV tables display the variables, their abbreviation, their level and their unit. 
 
+## Requirements
+
+* Python 3.8.10
+* [GDAL 3.5.2](https://pypi.org/project/GDAL/)
+* [bs4](https://pypi.org/project/beautifulsoup4/)
+* [yaml](https://pypi.org/project/PyYAML/)
+
+The `geomet-dev-21.cmc.ec.gc.ca` server has all the dependencies required to run the script. If you do not have a `geomet-dev-21` account, you can also create a Conda environment with the following commands. 
+
+```sh
+conda create -n env_geomet PYTHON=3.8.10
+conda activate env_geomet
+conda install -c conda-forge pyyaml bs4 gdal==3.5.2
+```
+
+## Execution
+
+Before running the script, rename the `temporary` variable in `main.py` to a directory with permissions. **Note**: Avoid creating the temporary directory in your home, as you may exceed your disk quota while downloading files.
+
+To generate variable tables for every available dataset, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
+
+```sh
+python3 main.py --directory ./tables
+```
+
+To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. **Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
+
+After executing the script, you must move the created files to the `public-doc/docs/assets/csv/` directory to update the MSC Open Data Documentation. **Note**: It is not recommended to set `public-doc/docs/assets/csv/` as the `--directory`, because the script overwrites files in the directory.
+
+Finally, you must insert the following code block in the corresponding datamart pages located in `public-doc/docs/msc-data/` to load the tables. Make sure to rename the file in the `loadTable` function to load the correct CSV file.
+
+```js
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/Variables-List.csv");
+</script>
+```
+
+## Maintenance
+
+* You can add a dataset to `datasets.yml` by creating a new entry. A key can have more than one value. These values will be concatenated with an URL to download GRIB2 or NetCDF files from a server, e.g. `https://dd.alpha.meteo.gc.ca/`.
+* If you receive a warning indicating that a variable has not been found, you can add it to `variable_translation.yml` or `product_translation.yml` by creating a new entry. The key must be the variable from the warning.
+* If you receive a warning indicating that a level has not been found, you can add it to `readable_level.yml` by creating a new entry. The key must be the level from the warning.
+
 ## Options
 
 * `--directory`
@@ -16,24 +64,21 @@ The script generates weather variable tables by downloading GRIB2 and NetCDF fil
     * Can select multiple datasets at once;
     * Default value is all datasets.
 
-* `--url`
+* `--path`
     * Downloads files from the server;
+    * Find files in local directory;
     * Appends dataset paths to the URL;
-    * Default value is http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/
-
-* `--show`
-    * Prints all datasets to output when turned on;
-    * Displays every path for each dataset;
-    * Ignores every option and exits after printing.
+    * Default value is `http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/`
 
 * `--verbose`
-    * Prints info level messages to output when selected.
+    * Sets logging level to `INFO` when activated;
+    * Default logging level is `WARNING`.
 
 ## Classes
 
 ### FileExplorer
 
-* Downloads files from the server in a temporary directory
+* Downloads files from the server or locally
 * Uses lists of paths from the dataset lookup table
 * Removes temporary directory and its files
 
@@ -48,7 +93,7 @@ The script generates weather variable tables by downloading GRIB2 and NetCDF fil
 ### datasets.yml
 
 * Key: Dataset abbreviation
-* Value: List of HPFX paths
+* Value: List of paths
 
 Note: CanSIPS files are only available on the last day of the month. CanSIPS URL in table is incomplete. The format is changed to `ensemble/cansips/grib2/forecast/raw/YYYY/MM/` during execution.
 
@@ -58,7 +103,8 @@ Note: CanSIPS files are only available on the last day of the month. CanSIPS URL
 * `Variable EN`: Variable name in english
 * `Variable FR`: Variable name in french
 * `Abbreviation`: Variable abbreviation
-* `Unit`: Formatted variable unit
+* `Unit EN`: Formatted variable unit or category in english
+* `Unit FR`: Formatted variable unit or category in french
 
 Note: GRIB2 variables are followed by their unit in brackets.
 
@@ -70,7 +116,8 @@ Note: Unit exponents must be inside `<sup>` tags.
 * `Variable EN`: Product name in english
 * `Variable FR`: Product name in french
 * `Abbreviation`: Variable abbreviation
-* `Unit`: Formatted variable unit
+* `Unit EN`: Formatted variable unit or category in english
+* `Unit FR`: Formatted variable unit or category in french
 
 Note: Serves the same function as `variable_translation.yml` for probabilistic products.
 
@@ -89,30 +136,37 @@ Note: Unit exponents must be inside `<sup>` tags.
 ### HPFX
 
 * Source: `http://hpfx.collab.science.gc.ca/`
-* Destination: `/data/geomet/dev/afsuxad/tmp/`
+* Destination: `/data/geomet/dev/$USER/tmp/`
 
 ### DD-Alpha
 
 * Source: `https://dd.alpha.meteo.gc.ca/`
-* Destination: `/data/geomet/dev/afsuxad/tmp/`
+* Destination: `/data/geomet/dev/$USER/tmp/`
 
 ## Tests
 
+To execute all unit tests, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
+
 ```sh
-python3 -m unittest tests/test_readargs.py tests/test_fileparser.py
+python3 -m unittest tests/test_main.py tests/test_fileexplorer.py tests/test_fileparser.py -b
 ```
 
-### tests/test_readargs.py
+### tests/test_main.py
 
-* Test module which tests the `read_args` method in `main.py`
-* Verifies that default values are handled correctly in the method
-* Verifies that an incorrect URL terminates the script
+* Test module which tests the methods in `main.py`
+* Verifies that the directory is created if it does not exist
+* Verifies that the year and month are appended to CanSIPS paths
+
+### tests/test_fileexplorer.py
+
+* Test module which tests the `FileExplorer` class and its methods
+* Verifies that the temporary directory is deleted if it exists
 
 ### tests/test_fileparser.py
 
 * Test module which tests the `FileParser` class and its methods
-* Verifies that metadata is correctly parsed from GRIB2 and NetCDF files
-* Verifies that variable tables are correctly generated in english and french
+* Verifies that metadata is parsed from GRIB2 and NetCDF files
+* Verifies that variable tables are generated in english and french
 
 ### tests/mock_files/
 

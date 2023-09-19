@@ -195,8 +195,8 @@ Direction of wind waves [Degree true]:
         FR: Direction des vagues de la mer du vent
     Abbreviation: WVDIR
     Unit:
-        EN: Degré vrai
-        FR: Degree true
+        EN: Degree true
+        FR: Degré vrai
 
 Dominant precipitation type [0=Reserved; 1=Rain; 2=Thunderstorm; 3=Freezing rain; 4=Mixed/ice; 5=Snow; 6=Wet snow; 7=Mixture of rain and snow; 8=Ice pellets; 9=Graupel; 10=Hail; 11=Drizzle; 12=Freezing drizzle; 13-191=Reserved; 192-254=Reserved for local use; 255=Missing]:
     Variable:
@@ -897,8 +897,8 @@ Wind direction (from which blowing) [deg true]:
         FR: Direction du vent (d'où il souffle)
     Abbreviation: WDIR
     Unit:
-        EN: Degré vrai
-        FR: Degree true
+        EN: Degree true
+        FR: Degré vrai
 
 Wind speed [m/s]:
     Variable:

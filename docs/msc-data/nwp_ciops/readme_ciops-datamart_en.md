@@ -122,7 +122,7 @@ __Depth levels (m)__: 0.5, 1.5, 2.50001, 3.50003, 4.5000701, 5.5001502, 6.500309
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/CIOPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/CIOPS_Variables-List_en.csv");
 </script>
 
 Note: The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.

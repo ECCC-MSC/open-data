@@ -75,7 +75,7 @@ Liste des variables disponibles dans les fichiers:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDLPS_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/HRDLPS_Variables-List_fr.csv");
 </script>
 
 NOTE: la fraction d'aire occupée par le sol (`wt`) et l'orographie (`mf`) sont seulement disponibles à l'échéance 00h.

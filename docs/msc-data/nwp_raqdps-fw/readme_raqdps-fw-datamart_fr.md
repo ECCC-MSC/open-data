@@ -73,7 +73,7 @@ Exemple de noms de fichier :
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RAQDPS-FW_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/RAQDPS-FW_Variables-List_fr.csv");
 </script>
 
 ## Support

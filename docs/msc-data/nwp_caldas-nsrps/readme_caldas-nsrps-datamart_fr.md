@@ -78,7 +78,7 @@ Liste des variables pour chaque heure de validité de:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/NSRPS_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/NSRPS_Variables-List_fr.csv");
 </script>
 
 ## Support
