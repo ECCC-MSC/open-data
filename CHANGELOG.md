@@ -10,13 +10,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.6
 
-* date: TBD
+* date: 2023-09-19
 * announcements:
-    *
+    * Not announced
 * new content:
-    *
+    * Variables array for data on DD-Alpha
+    * Changelog OPHS v3.3.0
+    * Update NWP changelog: Add GNSS-RO of PlanetIQ data in main NWP
 * improvements:
-    *
+    * 
 * bug fixes:
     * Added links to GeoMet from Lightning page
     * Updated GeoMet-Info and dd_info mailing list URLs
@@ -80,7 +82,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * UMOS-RDPS new page in main RDPS page
     * UMOS-GDPS New page
-    * Update NWP changelog: Add GNSS-RO data in main NWP
+    * Update NWP changelog: Add GNSS-RO of Spire data in main NWP
 * improvements:
     * GDSPS update (doc+changelog)
 * bug fixes:

@@ -6,11 +6,21 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le jeudi 14 septembre 2023
+
+### Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SGPE
+
+Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de petits satellites GNOMES de PlanetIQ.
+
 ## Le mercredi 5 juillet 2023
 
 ### Ajout d’observations commerciales GNSS-RO de Spire dans le SGPE
 
-Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son système global de prévision d’ensemble (SGPE).
+Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 

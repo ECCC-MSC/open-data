@@ -8,6 +8,17 @@
 
 ## 2023
 
+### September 20, 2023
+
+* [Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ophs/changelog_ophs_en.md#wednesday-september-20-2023)
+
+### September 14, 2023
+
+* [Addition of commercial GNSS-RO observations from PlanetIQ in the GEPS](nwp_geps/changelog_geps_en.md#thursday-september-14-2023)
+* [Addition of commercial GNSS-RO observations from PlanetIQ in the GDPS](nwp_gdps/changelog_gdps_en.md#thursday-september-14-2023)
+* [Addition of commercial GNSS-RO observations from PlanetIQ in the RDPS](nwp_rdps/changelog_rdps_en.md#thursday-september-14-2023)
+* [Addition of commercial GNSS-RO observations from PlanetIQ in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#thursday-september-14-2023)
+
 ### August 30, 2023
 
 * [Upgrade to Version 2.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-august-30-2023)

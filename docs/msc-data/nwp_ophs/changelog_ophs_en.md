@@ -6,6 +6,16 @@
 
 # Chronology of changes to the OPerational Hydrodynamic Simulation system (OPHS)
 
+## Wednesday September 20, 2023
+
+### Operational Hydrodynamic Prediction System (OHPS) 3.3.0 is declared operational at the Canadian Meteorological Centre
+
+Effective September 20, 2023, the Canadian Meteorological Centre (CMC) of Environment and Climate Change Canada declares the Operational Hydrodynamic Prediction System (OHPS v3.3.0) as operational, following its period of experimental status since 2013.
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.weather.gc.ca/doc/genots/2023/09/19/NOCN03_CWAO_191340___27844).
+
+A technical note with more details on version 3.3.0 of this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-330_e.pdf).
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 3.1.0 of the OPHS adapted to the New High Performance Computing Infrastructure.
