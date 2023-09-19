@@ -28,7 +28,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées du Système régional de prévision d'ensemble d'onde de tempête sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/2c2cadd7-5248-4764-bf88-5042b73465c3).
 
 ## Documentation technique
 

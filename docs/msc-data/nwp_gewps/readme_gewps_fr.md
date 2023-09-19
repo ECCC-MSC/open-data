@@ -30,7 +30,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées du Système global de prévision d'ensemble de vague sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/214499e5-99c6-401f-9d7e-c16611680719).
 
 ## Documentation technique
 

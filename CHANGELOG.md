@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.7
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Updated metadata links for RESPS, GDSPS, UMOS-GDPS, UMOS-RDPS, GEWPS and REWPS
+* bug fixes:
+    * None
+
 ## 2.5.6
 
 * date: 2023-09-19

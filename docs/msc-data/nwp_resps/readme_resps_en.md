@@ -28,7 +28,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the Regional Ensemble Storm Surge Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/2c2cadd7-5248-4764-bf88-5042b73465c3).
 
 ## Technical documentation
 
