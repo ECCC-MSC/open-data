@@ -33,7 +33,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the Regional Ensemble Wave Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a0e5c7a1-03df-413b-9b04-8e9d41099c19).
 
 ## Technical documentation
 

@@ -30,7 +30,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the Global Deterministic Storm Surge Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/d244c9fa-776f-446f-9ccf-1d575cc21a5c).
 
 ## Technical documentation
 
