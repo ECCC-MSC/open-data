@@ -8,9 +8,9 @@
 
 ## Wednesday September 20, 2023
 
-### Operational Hydrodynamic Prediction System (OHPS) 3.3.0 is declared operational at the Canadian Meteorological Centre
+### OPerational Hydrodynamic Prediction System (OHPS) 3.3.0 is declared operational at the Canadian Meteorological Centre
 
-Effective September 20, 2023, the Canadian Meteorological Centre (CMC) of Environment and Climate Change Canada declares the Operational Hydrodynamic Prediction System (OHPS v3.3.0) as operational, following its period of experimental status since 2013.
+Effective September 20, 2023, the Canadian Meteorological Centre (CMC) of Environment and Climate Change Canada declares the OPerational Hydrodynamic Prediction System (OHPS v3.3.0) as operational, following its period of experimental status since 2013.
 
 A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.weather.gc.ca/doc/genots/2023/09/19/NOCN03_CWAO_191340___27844).
 
