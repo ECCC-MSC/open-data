@@ -36,7 +36,7 @@ Aperçu, exemples et tutoriels pour accéder et utiliser les données ouvertes d
 
 ## Accès
 
-L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) .
+L'accès aux services GeoMet du SMC est anonyme et gratuit. Ces services doivent être accédés via un logiciel qui supporte les services web géospatiaux. Les services web géospatiaux supportés sont les standards de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/), [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) et [OGC API - Processes](https://ogcapi.ogc.org/processes/).
 
 La plateforme GeoMet du SMC comprend les services suivants :
 
@@ -54,7 +54,7 @@ Les [pages des jeux de données disponibles](../msc-data/readme_fr.md) précisen
 
 ### GeoMet-OGC-API
 
-GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais des standards émergeants [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) de l'Open Geospatial Consortium (OGC).
+GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais des standards émergeants [OGC API - Features](https://ogcapi.ogc.org/features/), [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) et [OGC API - Processes](https://ogcapi.ogc.org/processes/) de l'Open Geospatial Consortium (OGC).
 
 Accès à GeoMet-OGC-API :
 

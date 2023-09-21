@@ -35,7 +35,7 @@ Overview, examples and tutorials to access and use MSC GeoMet data:
 
 ## Access
 
-Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services. The supported geospatial web services are the following Open Geospatial Consortium (OGC) standards: [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/) and [OGC API - Coverages](https://ogcapi.ogc.org/coverages/).
+Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services. The supported geospatial web services are the following Open Geospatial Consortium (OGC) standards: [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/), [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) and [OGC API - Processes](https://ogcapi.org.org/processes).
 
 The MSC GeoMet Platform consists in the following services:
 
@@ -53,7 +53,7 @@ The [available datasets pages](../msc-data/readme_en.md) specify on which MSC Ge
 
 ### GeoMet-OGC-API
 
-GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium [OGC API - Features](https://ogcapi.ogc.org/features/) and [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) standards.
+GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium [OGC API - Features](https://ogcapi.ogc.org/features/), [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) [OGC API - Processes](https://ogcapi.ogc.org/processes/) standards.
 
 Access to GeoMet-OGC-API:
 

@@ -32,6 +32,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
 * Web Coverage Service (WCS)
 * OGC API - Features (OAFeat)
 * OGC API - Coverages (OACov)
+* OGC API - Processes (OAProc)
 
 
 ## Web Map Service (WMS)

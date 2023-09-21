@@ -32,6 +32,7 @@ The following OGC web services are supported by MSC GeoMet:
 * Web Coverage Service (WCS)
 * OGC API - Features (OAFeat)
 * OGC API - Coverages (OACov)
+* OGC API - Processes (OAProc)
 
 ## Web Map Service (WMS)
 
