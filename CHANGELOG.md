@@ -10,15 +10,16 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.7
 
-* date:
+* date: 2023-09-22
 * announcements:
     * Not announced
 * new content:
-    * None
+    * Changelog OHPS v3.3.0 (add August 3 input)
+    * New dependency diagrams (add OHPS)
 * improvements:
     * Updated metadata links for RESPS, GDSPS, UMOS-GDPS, UMOS-RDPS, GEWPS and REWPS
 * bug fixes:
-    * None
+    * Replace OPHS by OHPS everywhere (official acronym with CI4)
 
 ## 2.5.6
 

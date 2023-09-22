@@ -1,10 +1,10 @@
-[In English](changelog_ophs_en.md)
+[In English](changelog_ohps_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SHOP
 
-# Chronologie des changements apportés au Système de simulation hydrodynamique opérationnel (SHOP)
+# Chronologie des changements apportés au Système de simulation hydrodynamique opérationnelle (SHOP)
 
 ## Le mercredi 20 septembre 2023
 
@@ -14,7 +14,20 @@
 
 Une copie de la note officielle annonçant la mise en œuvre de ces changements est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/09/19/NOCN03_CWAO_191340___27844)
 
-Une note technique avec plus de détails sur la version 3.3.0 de ce système est disponible [via ce lien]( https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-330_f.pdf ).
+## Le jeudi 3 août 2023
+
+### Passage à la version 3.3.0 du Système de simulation hydrodynamique opérationnelle (SHOP) au Centre météorologique canadien
+
+À compter du 3 août 2023, le Centre météorologique canadien (CMC) d'Environnement et Changement climatique Canada met à jour le Système de simulation hydrodynamique opérationnelle (SHOP) à la version 3.3.0.
+
+Afin de préparer la demande de statut opérationnel de SHOP, les deux changements scientifiques suivants sont mis en œuvre dans cette version :
+
+* Remplacement des sources de décharge SPHD (expérimental) par SPCE (opérationnel) pour générer des conditions limites de décharge prévisionnelles pour SHOP.
+* Remplacement des dépendances sur SCanADS-SNPSR (expérimental) et SNPSR-SPDHRS (expérimental) par les dépendances sur le SHRPD (opérationnel) dans le module Précipitation-Evaporation de SHOP.
+
+Une note technique contenant plus de détails sur la version 3.3.0 de ce système est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-330_e.pdf).
+
+Le diagramme de dépendance mis à jour est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_NSRPS-OHPS_fr.svg).
 
 ## Le mardi 28 juin 2022
 

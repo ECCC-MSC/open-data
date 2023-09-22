@@ -10,7 +10,7 @@
 
 ### 20 septembre 2023
 
-* [Système de simulation hydrodynamique opérationnelle (SHOP) 3.3.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-20-septembre-2023)
+* [Statut opérationnel du Système de simulation hydrodynamique opérationnelle (SHOP) 3.3.0](nwp_ohps/changelog_ohps_fr.md#le-mercredi-20-septembre-2023)
 
 ### 14 septembre 2023
 
@@ -22,6 +22,10 @@
 ### 30 août 2023
 
 * [Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-30-août-2023)
+
+### 3 août 2023
+
+* [Mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) à la version 3.3.0](nwp_ohps/changelog_ohps_fr.md#le-jeudi-3-aout-2023)
 
 ### 27 juillet 2023
 
@@ -138,7 +142,7 @@ Eau, océan et glace
 * [Système canadien d'assimilation de données de surface avec observations satellitaires (SCanADS-Sat) 3.1.0](nwp_caldas-sat/changelog_caldas-sat_fr.md#le-mercredi-1er-decembre-2021)
 * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) 2.0.0](nwp_hrdlps/changelog_hrdlps_fr.md#le-mercredi-1er-decembre-2021)
 * [Système de prévision hydrologique déterministe (SPHD) 3.1.0](nwp_dhps/changelog_dhps_fr.md#le-mercredi-1er-decembre-2021)
-* [Simulation hydrodynamique opérationnelle (SHOP) 3.0.0](nwp_ophs/changelog_ophs_fr.md#le-mercredi-1er-decembre-2021)
+* [Simulation hydrodynamique opérationnelle (SHOP) 3.0.0](nwp_ohps/changelog_ohps_fr.md#le-mercredi-1er-decembre-2021)
 
 ### 30 novembre 2021
 
@@ -431,7 +435,7 @@ Eau, océan et glace
 
 ### 13 mai 2013
 
-* [Implantation du Système hydrodynamique opérationnel (SHOP) 1.0.0](../nwp_ophs/changelog_ophs_fr#le-lundi-13-mai-2013)
+* [Implantation du Système hydrodynamique opérationnel (SHOP) 1.0.0](../nwp_ohps/changelog_ohps_fr#le-lundi-13-mai-2013)
 
 ### 7 mai 2013
 
