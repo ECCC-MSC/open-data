@@ -1,4 +1,4 @@
-[En français](changelog_ophs_fr.md)
+[En français](changelog_ohps_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
