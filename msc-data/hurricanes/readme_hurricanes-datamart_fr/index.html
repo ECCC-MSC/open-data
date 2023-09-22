@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme hurricanes datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-des-trajectoires-douragans" class="nav-link">Données des trajectoires d'ouragans</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-repertoires-et-noms-de-fichiers" class="nav-link">Nomenclature des répertoires et noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-du-fichier" class="nav-link">Contenu du fichier</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_hurricanes-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_hurricanes_fr/">Trajectoires d'ouragans</a> &gt; Trajectoires d'ouragans sur le Datamart du SMC</p>
+<h1 id="donnees-des-trajectoires-douragans">Données des trajectoires d'ouragans</h1>
+<p>Cette page décrit les données des <a href="../readme_hurricanes_fr/">trajectoires d'ouragans</a>.</p>
+<p>Le Centre canadien des ouragans fournit des fichiers en format shapefile dans le cadre des prévisions régulières lors de la saison des ouragans.</p>
+<p>Les fichiers permettront aux utilisateurs de tracer l'itinéraire des tempêtes prévues dans un système de cartes géographiques de leur choix. Il y a quatre formats shapefiles (*.shp) qui sont produits et comportent chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes d'origine tropicale menace ou risque de menacer le territoire canadien.</p>
+<p>Les trajectoires d'ouragans émises par le Centre canadien de prévision des ouragans sont publiées sur le Datamart du SMC. Ces données sont rendues disponibles en mode expérimental afin d'offrir aux usagers une opportunité d'ingérer et de tester les données en temps réel. Le service sera fourni au mieux de nos possibilités mais veuillez noter qu'il existe une possibilité non négligeable d'interruptions occasionnelles non-annoncées et non-remédiées de ce service expérimental de données, et ce jusqu'à nouvelle annonce.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile.</p>
+<p>Les fichiers shapefile sont disponibles à cette adresse :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile">https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{nom-tempête}/</a></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>nom-tempête</strong> : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)</li>
+</ul>
+<p>30 avril : l'historique est effacé</p>
+<h2 id="nomenclature-des-repertoires-et-noms-de-fichiers">Nomenclature des répertoires et noms de fichiers</h2>
+<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
+<p>La convention régissant les noms de fichiers est la suivante :</p>
+<p>YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp</p>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD__HHMM</strong> : Date d'émission de la prévision (UTC).</li>
+<li><strong>Z</strong> : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC).</li>
+<li><strong>STORM-NAME</strong> : Nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.).</li>
+<li>
+<p><strong>TYPE</strong> : Type de fichier shapefile :</p>
+<ul>
+<li>« pts » pour points, qui contient majoritairement des données/attributs</li>
+<li>« lin » pour les segments de ligne qui relient les points de suivi de la prévision</li>
+<li>« rad » pour les informations des rayons de prévisions de vent (quadrants)</li>
+<li>« err » pour les informations sur l'erreur de prévision de trajectoire (« cône d'erreur »)</li>
+</ul>
+</li>
+</ul>
+<h2 id="contenu-du-fichier">Contenu du fichier</h2>
+<p>Il y aura 2 types de fichiers, point et ligne.</p>
+<p>Lorsque l'utilisateur interroge le fichier shapefile par points, le contenu de
+chaque colonne est donné comme suit :</p>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADVDATE</td>
+<td>heure d'émission de la prévision en format YYMMDD/HHMM (UTC)</td>
+</tr>
+<tr>
+<td>BASIN</td>
+<td>Région - 'al' pour l'Atlantique (toujours 'al' pour Centre canadien des ouragans)</td>
+</tr>
+<tr>
+<td>DATELBL</td>
+<td>Étiquette à utiliser sur une carte</td>
+</tr>
+<tr>
+<td>ERRCT</td>
+<td>Rayon d'erreur de suivi de la prévision en miles nautiques qui, lorsque cartographié, représente la zone/le cône d'incertitude moyenne dans la prévision de suivi (centre de la tempête)</td>
+</tr>
+<tr>
+<td>LAT</td>
+<td>Latitude de la position du centre de la tempête</td>
+</tr>
+<tr>
+<td>LON</td>
+<td>Longitude de la position du centre de la tempête</td>
+</tr>
+<tr>
+<td>MAXWND</td>
+<td>Intensité - vitesse maximale soutenue des vents en noeuds (miles nautiques à l'heure).  Pour obtenir des km/h, multiplier par 1,84</td>
+</tr>
+<tr>
+<td>MSLP</td>
+<td>Pression minimale au centre, en hectopascals</td>
+</tr>
+<tr>
+<td>RXXYY Columns</td>
+<td>douze colonnes représentent les rayons du vent (R) en milles nautiques pour 3 catégories primaires de prévisions : 34 (coups de vent de 34 noeuds),  48 (force de vents de tempête de 48 noeuds) et 64 (force du vent d'ouragans de 64 noeuds). NE, SE, SO, NO représentent les 4 principaux quadrants géographiques entourant la tempête.</td>
+</tr>
+<tr>
+<td>STORMNAME</td>
+<td>Nom de la tempête - p. ex., BERTHA</td>
+</tr>
+<tr>
+<td>STORMTYPE</td>
+<td>Type de tempête au moment de l'émission de la prévision : DT = dépression tropicale; TT = tempête tropicale; OU = ouragan; PT = post-tropicale</td>
+</tr>
+<tr>
+<td>TAU</td>
+<td>Heure prévue à partir de l'heure d'émission, p. ex., 48 = 48 heures/2 jours</td>
+</tr>
+<tr>
+<td>TCDVLP</td>
+<td>État de la tempête au moment de l'heure de prévision TAU (DT, TT, OU, PT)</td>
+</tr>
+<tr>
+<td>TIMEZONE</td>
+<td>fuseau horaire local reflétant la région géographique d'une tempête active</td>
+</tr>
+<tr>
+<td>VALIDTIME</td>
+<td>Temps pendant lequel la prévision à l'heure TAU est valide. En format DD/HHMM (UTC)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>Format ISO pour le paramètre VALIDTIME. Format:  YYYY-MM-DDTHH:MMZ</td>
+</tr>
+</tbody>
+</table>
+<p>Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les éléments des fichiers 'pts'.</p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

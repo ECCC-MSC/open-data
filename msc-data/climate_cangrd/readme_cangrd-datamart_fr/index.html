@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme cangrd datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-climatiques-historiques-sur-grille-canadienne-cangrd-en-format-geotiff" class="nav-link">Données climatiques historiques sur grille canadienne (CANGRD) en format GeoTIFF</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specifications-de-la-grille" class="nav-link">Spécifications de la grille</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_cangrd-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_cangrd_fr/">CanGRD</a> &gt; CanGRD sur le Datamart du SMC</p>
+<h1 id="donnees-climatiques-historiques-sur-grille-canadienne-cangrd-en-format-geotiff">Données climatiques historiques sur grille canadienne (CANGRD) en format GeoTIFF</h1>
+<p>CANGRD est basé sur les données climatiques canadiennes ajustées et homogénéisées (DCCAH) pour les observations climatiques historiques à partir de 1948 sur l'ensemble du Canada, et à partir de 1900 pour le sud du Canada, jusqu'à la fin de l'année civile précédente. Les anomalies de température maximales et minimales quotidiennes mensuelles, saisonnières et annuelles sont calculées à chaque station d'observation et pour chaque année en soustrayant la moyenne de référence adéquate (définie comme moyenne sur la période de référence 1961-1990) des valeurs mensuelles, saisonnières et annuelles correspondantes. Les anomalies de précipitations totales mensuelles, saisonnières et annuelles sont calculées de la même façon. De plus, les anomalies de précipitations sont ensuite normalisées en divisant par la période de référence moyenne et exprimées en pourcentage pour produire des écarts de précipitations normalisés.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.</p>
+<p>Les fichiers CANGRD se trouvent à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/annual">https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}</a></li>
+<li><a href="https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal">https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}</a></li>
+<li><a href="https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly">https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly</a></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>historical</strong> : Simulations historiques à partir de 1948 sur l'ensemble du Canada, et à partir de 1900 pour le sud du Canada, jusqu'à la fin de l'année civile précédente.</li>
+<li><strong>monthly</strong> : Janvier à décembre </li>
+<li><strong>seasonal</strong> : Les saisons météorologiques standard sont utilisées : (de mars à mai (MAM, printemps), de juin à août (JJA, été), de septembre à novembre (SON, automne/automne) et de décembre à février (DJF, hiver))].</li>
+<li><strong>anomaly</strong> : Les anomalies sont calculées à chaque station d'observation et pour chaque année en soustrayant la moyenne de référence adéquate (définie comme moyenne sur la période de référence 1961-1990) à celle des valeurs mensuelles, saisonnières et annuelles correspondantes (anomalies de température : 1948-2018 et anomalies de précipitations : 1948-2014).</li>
+<li><strong>trend</strong> : Les données de tendance représentent le changement de température ou l’écart relatif des précipitations sur la période étudiée (tendance moyenne des températures : 1948-2018 ; tendance des précipitations : 1948-2012).</li>
+</ul>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
+<p>CANGRD_hist_TemporalResolution_Value_ProjectionResolution_Variable_TimePeriod.tif</p>
+<p>avec :</p>
+<ul>
+<li><strong>CANGRD</strong> : Chaîne constante indiquant la source des données, c'est-à-dire les anomalies de température et de précipitations annuelles, saisonnières et mensuelles, qui ont été interpolées à partir des stations de la base de données climatiques canadiennes ajustées et homogénéisées de l'AHCCD.</li>
+<li><strong>hist</strong> : Chaîne constante indiquant les simulations historiques.</li>
+<li><strong>TemporalResolution</strong> : Résolution temporelle, prenant l'une des valeurs : [annual, monthly, DJF, MAM, JJA, SON]</li>
+<li><strong>Value</strong> : Catégorie de valeurs, prenant l'une des valeurs :  [anom, trend]</li>
+<li><strong>Projection</strong> : Projection de la grille, prenant la valeur :[ps] ; ps indique une projection polaire stéréographique</li>
+<li><strong>Resolution</strong> : Résolution de la grille, prenant la valeur : [50km</li>
+<li><strong>Variable</strong> : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs : [PCP, TMIN, TMAX, TMEAN] ; PCP représente les précipitations totales, TMIN représente la température minimale, TMAX représente la température maximale, TMEAN représente la température moyenne.</li>
+<li><strong>TimePeriod</strong> : Période temporelle, prenant l'une des valeurs : [YYYY, YYYY-MM, YYY1-YYY2] ; YYYY-MM représente l'année-mois pour les anomalies, YYY1-YYY2 représente l'intervalle d'années utilisé dans les tendances.</li>
+<li><strong>tif</strong> : Chaîne constante indiquant le format GeoTIFF.</li>
+</ul>
+<p>Exemples :</p>
+<ul>
+<li>CANGRD_hist_annual_anom_ps50km_TMEAN_1903.tiff</li>
+<li>CANGRD_hist_DJF_trend_ps50km_PCP_1948-2012.tiff</li>
+</ul>
+<h2 id="specifications-de-la-grille">Spécifications de la grille</h2>
+<p>La grille CANGRD est une projection stéréographique polaire avec une résolution spatiale de 50 km. La grille est une matrice de 125 (colonnes) par 95 (lignes), où le coin sud-ouest (0,0) est à 40,0451° de latitude nord et 129,8530° de longitude ouest. La projection est vraie à 60,0°N et centrée sur 110,0°W. </p>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p>Les variables et unités disponibles pour CANGRD sont :</p>
+<ul>
+<li>Anomalie de température maximale (°C)</li>
+<li>Anomalie de température minimale (°C)</li>
+<li>Anomalie de température moyenne (°C)</li>
+<li>Tendance de la température moyenne (°C)</li>
+<li>Anomalie totale des précipitations (%)</li>
+<li>Tendance relative des précipitations totales (%)</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

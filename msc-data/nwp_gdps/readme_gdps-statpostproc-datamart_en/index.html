@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme gdps statpostproc datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#global-deterministic-prediction-system-gdps-data-statistically-post-processed-in-geojson-format" class="nav-link">Global Deterministic Prediction System (GDPS) data statistically post-processed in GeoJSON format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specifications" class="nav-link">Technical specifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_gdps-statpostproc-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_gdps_en/">GDPS</a> &gt; GDPS statistical post-processing on MSC Datamart</p>
+<h1 id="global-deterministic-prediction-system-gdps-data-statistically-post-processed-in-geojson-format">Global Deterministic Prediction System (GDPS) data statistically post-processed in GeoJSON format</h1>
+<p>Statistical post-processing of weather and environmental forecasts issued by numerical models, including the <a href="../readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>, reduces systematic bias and error variance of raw numerical forecasts. This is achieved by establishing an optimal relationship between observations recorded at stations and co-located numerical model outputs. The Updatable Model Output Statistics (UMOS) system at Environment Canada carries out this task. The statistical relationships are built using the Model Output Statistics (MOS) method and a multiple linear regression (MLR) technic. The weather and environmental variable being statistically post-processed by UMOS consists of air temperature at approximately 1.5 meters above ground. The absence of a statistically post-processed forecast can be caused by a missing statistical model due to insufficient observation data quality or quantity. Geographical coverage includes weather stations across Canada. Statistically post-processed forecasts are available at the same frequency of emission as the numerical model producing the raw forecasts and at 3-hourly lead times up to 144 hours (6 days) for the GDPS.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GeoJSON file.</p>
+<p>The data can be accessed at the following URLs: </p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/model_gem_global/stat-post-processing">https://dd.weather.gc.ca/model_gem_global/stat-post-processing/{HH}/{hhh}/</a></li>
+</ul>
+<p>where :</p>
+<ul>
+<li><strong>HH</strong>: Model issuing run time, in UTC [00, 12]</li>
+<li><strong>hhh</strong>: Forecast lead time [000, 003, 006, ..., 144]</li>
+</ul>
+<p>A 24-hour history is kept in this directory.</p>
+<h2 id="technical-specifications">Technical specifications</h2>
+<ul>
+<li>UMOS forecast is offered at observation station locations in North America covered within the following geographical boundaries: 141⁰W, 40⁰N, 42⁰W, 88⁰N</li>
+<li>The datum and geographical projection are respectively: WGS84, latlon.</li>
+<li>Data is bilingual</li>
+<li>Data is in ISO8601 compliant</li>
+</ul>
+<h2 id="filename-nomenclature">Filename nomenclature</h2>
+<p>Note : all hours are in UTC.</p>
+<p>The files have the following nomenclature :</p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_GDPS-{PRODUCT}-{METHOD}_{Var}_{LVLTYPE}-{LVL}_PT{hhh}H.json</code></p>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the issued forecast</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong> : Issuing run time in UTC [00, 12]</li>
+<li><strong>Z</strong>: Time zone (UTC hour)</li>
+<li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
+<li><strong>GDPS</strong>: Constant string indicating that data is from Global Deterministic Prediction System</li>
+<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [UMOS]</li>
+<li><strong>METHOD</strong>: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]</li>
+<li><strong>Var</strong> : Variables included in this file [AirTemp]</li>
+<li><strong>LVLYPE</strong>: Vertical level type [Sfc for surface level, AGL for Above Ground Level]</li>
+<li><strong>LVL</strong>: Vertical level value [1.5m]. This parameter is not used for surface level</li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant characters designating Period, Time and Hour. "hhh" is the forecast lead time [000, 003, 006, ..., 144]</li>
+<li><strong>json</strong> : constant string indicating the GeoJSON format</li>
+</ul>
+<p>Filename example: 20220128T00Z_MSC_GDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json</p>
+<h2 id="list-of-variables">List of variables</h2>
+<ul>
+<li>AirTemp: Surface air dry-bulb temperature (K)</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

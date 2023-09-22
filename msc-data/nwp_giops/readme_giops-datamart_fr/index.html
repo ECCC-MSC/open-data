@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme giops datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-netcdf-du-systeme-global-de-prevision-ocean-glace-sgpog" class="nav-link">Données NetCDF du Système global de prévision océan-glace (SGPOG)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#niveaux" class="nav-link">Niveaux</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_giops-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_giops_fr/">SGPOG</a> &gt; SGPOG sur le Datamart du SMC</p>
+<h1 id="donnees-netcdf-du-systeme-global-de-prevision-ocean-glace-sgpog">Données NetCDF du Système global de prévision océan-glace (SGPOG)</h1>
+<p>Le Centre de prévision météorologique et environnementale du Canada (CPMEC) fournit des champs prévisionnels produits par son <a href="../readme_giops_fr/">Système global de prévision océan-glace (SGPOG)</a> et interpolées sur deux grilles usagers : une grille régulière latitude-longitude de 0.2° de résolution (latlon0.2x0.2) et une grille en projection polaire stéréographique nord d'une résolution de 5 km à une latitude de 60°N (ps5km60N).  À 00Z, Les champs fournis à l'échéance 0-heure correspondent à l'analyse SGPOG et sont valides à 00Z.  À toutes les autres échéances les champs correspondent à la prévision et sont moyennés dans le temps.  Les fichiers des données sont en format NetCDF (NetCDF-4 modèle classique), conformes aux conventions CF liées au climat et aux prévisions (Climate and Forecast Conventions).</p>
+<p>Les fichiers des données sont en format NetCDF (NetCDF-4 modèle classique), conformes aux conventions CF liées au climat et aux prévisions (Climate and Forecast Conventions).  Un fichier NetCDF se décrit lui-même à l'aide des métadonnées décrivant les données contenues.  Les fichiers contiennent des moyennes temporelles des champs de prévision de l'état de la glace marine et de l'océan.  La période de calcul de la moyenne a une longueur de 3 heures pour les champs bidimensionnels et de 24 heures pour les champs tridimensionnels, les deux périodes finissant au temps de validité des champs respectifs. À 00Z, pour l'heure de prévision 0, les fichiers contiennent des champs analyses, considérés valides à 00Z. Le temps dans le fichier est encodé comme le temps en secondes écoulé depuis le 1er Janvier 1950 à 0h00 UTC.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont accessibles à l'adresses suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/model_giops/netcdf">https://dd.meteo.gc.ca/model_giops/netcdf</a>                  </li>
+</ul>
+<p>Un historique de 5 jours de prévision est stocké dans ce répertoire.</p>
+<ul>
+<li>Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :</li>
+</ul>
+<p><a href="https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/">https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/</a></p>
+<ul>
+<li>Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :</li>
+</ul>
+<p><a href="https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic">https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/</a></p>
+<p>où :</p>
+<ul>
+<li><strong>nd</strong> : Numéro de la dimension spatiale des champs de prévision [2d ou 3d]. </li>
+<li><strong>HH</strong> : Heure en UTC du début de la simulation [00,12].</li>
+<li><strong>hhh</strong> : Heure de la prévision ; chaque 3 heures [000, 003, ..., 240] pour N=2 et chaque 24 heures
+[024, 048, ..., 240] pour N=3.</li>
+</ul>
+<p>À noter que, puisque les fichiers à l'heure de prévision 0, à 00Z, sont basés sur l'analyse et non la prévision, un sous-ensemble de variables est fourni à cette échéance, contrairement aux autres échéances.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
+<p>La nomenclature des noms des fichiers suivante :</p>
+<p>CMC_giops_Variable_TypedeNiveau_Niveau_ProjectionResolution_MoyenneTemporelle_YYYYMMDDHH_Phhh.nc</p>
+<p>où :</p>
+<ul>
+<li><strong>CMC</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.</li>
+<li><strong>giops</strong> : Chaîne de caractères constante indiquant le système de prévision qui génère les données.</li>
+<li><strong>Variable</strong> : Nom de la variable contenue dans le fichier.</li>
+<li><strong>TypedeNiveau</strong> : Type de niveau : sfc ou depth.</li>
+<li><strong>Niveau</strong> : Valeur du niveau: 0 pour niveau sfc (surface) et soit 0.5 (mètres) soit "all" (toutes les profondeurs)
+pour le niveau type depth.</li>
+<li><strong>Projection</strong> : Projection cartographique : latlon ou ps.</li>
+<li><strong>Résolution</strong> : 0.2x0.2 ou 5km60N.  0.2x0.2 signifie une résolution de 0.2° dans les directions longitudinale et
+latitudinale, tandis que 5km60N signifie une résolution de 5 km à une latitude 60°N.</li>
+<li><strong>MoyenneTemporelle</strong> : Pour des échéances au-delà de 0 heures, cette chaîne prend la valeur 3h-mean ou 24h-mean,
+indiquant que la variable est une moyenne temporelle calculée sur la période de temps spécifiée (3 heures pour 3h
+et 24 heures pour 24h).  À noter que le temps de validité de la variable de prévision est fixé à la fin de la
+période de calcul de la moyenne. À 00Z, pour l'échéance 0-heure cette chaîne est vide (c.-à.d. les champs fournis ne sont
+pas moyennés et sont considérés valides à 00Z).</li>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision.</li>
+<li><strong>HH</strong> : Heure en UTC du début de la simulation [00,12].</li>
+<li><strong>TypeDeFichierhhh</strong> : Pour des échéances au-delà de 0 heures, TypeDeFichier est égale à P et hhh est l'heure de
+prévision [003, 006, ..., 240]. Pour l'échéance 0-heure à 00Z, TypeDeFichier est égale à Anal et hhh est égale à 000.</li>
+<li><strong>nc</strong> : Chaîne de caractères constante indiquant le format NetCDF.</li>
+</ul>
+<p>Exemple de nom de fichier de prévision :</p>
+<ul>
+<li>CMC_giops_votemper_depth_0.5_latlon0.2x0.2_3h-mean_2016020800_P036.nc</li>
+</ul>
+<p>Exemple de nom de fichier analyse :</p>
+<ul>
+<li>CMC_giops_votemper_depth_all_latlon0.2x0.2_2016120700_Anal000.nc</li>
+</ul>
+<h2 id="niveaux">Niveaux</h2>
+<p>Les champs tridimensionnels sont disponibles sur 50 niveaux de profondeur, qui sont les niveaux du modèle océanique utilisé par SGPOG.</p>
+<p><strong>Niveaux de profondeur (m)</strong> : 0.494025, 1.54138, 2.64567, 3.81949, 5.07822, 6.44061, 7.92956, 9.573, 11.405, 13.4671, 15.8101, 18.4956, 21.5988, 25.2114, 29.4447, 34.4342, 40.3441, 47.3737, 55.7643, 65.8073, 77.8539, 92.3261, 109.729, 130.666, 155.851, 186.126, 222.475, 266.04, 318.127, 380.213, 453.938, 541.089, 643.567, 763.333, 902.339, 1062.44, 1245.29, 1452.25, 1684.28, 1941.89, 2225.08, 2533.34, 2865.7, 3220.82, 3597.03, 3992.48, 4405.22, 4833.29, 5274.78, 5727.92.</p>
+<p>Une partie des variables représentent des quantités au premier niveau du modèle, tandis que les autres sont définies à la surface de l'océan (ex. variables de la glace marine).</p>
+<p>La visualisation des champs contenus dans les fichiers NetCDF produits par SGPOG a été testée avec succès avec les outils suivants : Panoply (version 4.2.2) et IDV (version 5.2).</p>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GIOPS_fr.csv");
+</script>
+
+<p>Note: L'unité <code>PSU</code> (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.</p>
+<p>Notez que puisque les champs à l'heure de prévision 0 ne sont pas moyennés dans le temps, on peut simplement extraire le niveau de surface des champs votemper, vosaline, vozocrtx et vomecrty des champs 3D pour obtenir les champs 2D correspondants. </p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

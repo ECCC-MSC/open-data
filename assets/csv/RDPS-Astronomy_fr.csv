@@ -1,0 +1,3 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Indice de scintillation,SEEI,Colonne atmosphérique,0=Nulle; 1=Très mauvaise; 2=Mauvaise; 3=Moyenne; 4=Bonne; 5=Excellente
+Indice de transparence,TRSP,Colonne atmosphérique,0=Nulle; 1=Très mauvaise; 2=Mauvaise; 3=Moyenne; 4=Bonne; 5=Excellente

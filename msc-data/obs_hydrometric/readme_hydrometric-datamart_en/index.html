@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme hydrometric datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#hydrometric-data-in-csv-format" class="nav-link">Hydrometric data in CSV format</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-description" class="nav-link">Data description</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_hydrometric-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hydrometric_en/">Hydrometric data</a> &gt; Hydrometric data on MSC Datamart</p>
+<h1 id="hydrometric-data-in-csv-format">Hydrometric data in CSV format</h1>
+<p>This page describes the <a href="../readme_hydrometric_en/">real time hydrometric</a> data available in CSV format.</p>
+<h1 id="data-location">Data location</h1>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable CSV file.</p>
+<p>The data is available at the following address:</p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/hydrometric/csv">https://dd.weather.gc.ca/hydrometric/csv/{PROVTERR}/{FREQUENCY}/</a></li>
+</ul>
+<p>where:</p>
+<ul>
+<li>
+<p><strong>PROVTERR</strong> : 2-letter code for the province or territory. The code is one of the 13 following values:</p>
+<ul>
+<li>AB (Alberta)</li>
+<li>BC (British Columbia)</li>
+<li>MB (Manitoba)</li>
+<li>NB (New Brunswick)</li>
+<li>NL (Newfoundland and Labrador)</li>
+<li>NS (Nova Scotia)</li>
+<li>NT (Northwest Territories)</li>
+<li>NU (Nunavut)</li>
+<li>ON (Ontario)</li>
+<li>PE (Prince Edward Island)</li>
+<li>QC (Quebec)</li>
+<li>SK (Saskatchewan)</li>
+<li>YT (Yukon)</li>
+</ul>
+</li>
+<li>
+<p><strong>FREQUENCY</strong> : Frequency of update, "hourly" or "daily".</p>
+</li>
+</ul>
+<p>A 30-day history is kept in this directory.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>Each real-time hydrometric data file has a static filename which follows this naming convention:</p>
+<p>[PROVTERR]<em>[ID]</em>[FREQUENCY]_hydrometric.csv </p>
+<p>where:</p>
+<ul>
+<li>
+<p><strong>PROVTERR</strong> : 2-letter code for the province or territory</p>
+</li>
+<li>
+<p><strong>ID</strong> : station identifier</p>
+</li>
+<li>
+<p><strong>FREQUENCY</strong> : frequency of update, "hourly" or "daily"</p>
+</li>
+</ul>
+<p>Example: </p>
+<p>"AB_05AA004_hourly_hydrometric.csv" means the hydrometric observations updated hourly for the station "05AA004" in Alberta (AB) in CSV format.</p>
+<p><strong>Province File</strong></p>
+<p>A file containing all stations in a province is also provided for convenience.
+It has a static filename which follows this naming convention:</p>
+<p>[PROVTERR]_[FREQUENCY]_hydrometric.csv </p>
+<p>where:</p>
+<ul>
+<li>
+<p><strong>PROVTERR</strong> : 2-letter code for the province or territory</p>
+</li>
+<li>
+<p><strong>FREQUENCY</strong> : frequency of update, "hourly" or "daily"</p>
+</li>
+</ul>
+<p>Example:</p>
+<p>"ON_daily_hydrometric.csv" means the hydrometric observations updated daily for all stations in Ontario (ON) in CSV format.</p>
+<h2 id="data-description">Data description</h2>
+<h3 id="data-file">Data File</h3>
+<p>The real-time hydrometric data is provided in a CSV format for the distribution 
+by Environment and Climate Change Canada.</p>
+<p>The files updated on an hourly basis contain the last 2 complete days of data 
+plus the current incomplete day. The files updated on a daily basis contain the 
+last 30 complete days of data plus the current incomplete day.</p>
+<p>The first line is a bilingual header, followed by data records. Below are the 
+English column descriptors:</p>
+<p>ID,Date,Water Level (m),Grade,Symbol,QA/QC,Discharge (cms),Grade,Symbol,QA/QC</p>
+<p>where :</p>
+<ul>
+<li>
+<p><strong>ID</strong> : Station identifier. The first two digits indicate the major drainage 
+basin in which the station is located. The next two characters indicate 
+the sub-basin and sub-sub-basin. The last three digits indicate the 
+specific station within the sub-sub-basin.</p>
+</li>
+<li>
+<p><strong>Date</strong> : Data timestamp in ISO 8601 format, Local Standard Time (LST).</p>
+</li>
+<li>
+<p><strong>Water Level (m)</strong> : Water level in meters.</p>
+</li>
+<li>
+<p><strong>Grade</strong> : Future use.</p>
+</li>
+<li>
+<p><strong>Symbol</strong> : Future use.</p>
+</li>
+<li>
+<p><strong>QA/QC</strong> : Quality assurance/quality control flag for the water level 
+         (1 = preliminary, 2 = reviewed, 3 = checked, 4 = approved).</p>
+</li>
+<li>
+<p><strong>Discharge (cms)</strong> : Discharge in cubic meters per second.</p>
+</li>
+<li>
+<p><strong>Grade</strong> : Future use.</p>
+</li>
+<li>
+<p><strong>Symbol</strong> : Future use.</p>
+</li>
+<li>
+<p><strong>QA/QC</strong> : Quality assurance/quality control flag for the discharge.</p>
+</li>
+</ul>
+<p>Please note that the timestamps of the data are always in LST at that 
+particular station. The timestamps of the data records show the offset from 
+UTC.</p>
+<h3 id="station-list-file">Station List File</h3>
+<p>A list of the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_hydrometric/hydrometric_StationList.geojson">real-time hydrometric stations</a> in GeoJSON format is available.</p>
+<p>The first line is a bilingual header, followed by station metadata. Below are the English column descriptors:</p>
+<p>ID,Name,Latitude,Longitude,Prov/Terr,Timezone</p>
+<p>where :</p>
+<ul>
+<li>
+<p><strong>ID</strong> : Station identifier.</p>
+</li>
+<li>
+<p><strong>Name</strong> : Name of the station. The name is in English or French depending on the 
+        location of the station.</p>
+</li>
+<li>
+<p><strong>Latitude</strong> : Latitude in decimal format.</p>
+</li>
+<li>
+<p><strong>Longitude</strong> : Longitude in decimal format.</p>
+</li>
+<li>
+<p><strong>Prov/Terr</strong> : 2-letter code for the province or territory.</p>
+</li>
+<li>
+<p><strong>Timezone</strong> : LST offset from UTC.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

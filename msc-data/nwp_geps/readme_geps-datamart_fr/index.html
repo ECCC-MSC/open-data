@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme geps datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-grib2-du-systeme-global-de-prevision-densemble-sgpe" class="nav-link">Données GRIB2 du Système global de prévision d'ensemble (SGPE)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_geps-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_geps_fr/">SGPE</a> &gt; SGPE sur le Datamart du SMC</p>
+<h1 id="donnees-grib2-du-systeme-global-de-prevision-densemble-sgpe">Données GRIB2 du Système global de prévision d'ensemble (SGPE)</h1>
+<p>Cette page décrit les données du <a href="../readme_geps_fr/">Système global de prévision d'ensemble</a> disponibles en format GRIB2.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2. </p>
+<p>Les données sont accessibles aux adresses suivantes :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/ensemble/geps/grib2">https://dd.meteo.gc.ca/ensemble/geps/grib2/{TYPE}/{HH}/{hhh}/</a></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>TYPE</strong> : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]</li>
+<li><strong>raw</strong> : Chaîne de caractères constante indiquant les sorties brutes du modèle</li>
+<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
+<li><strong>hhh</strong> : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC</li>
+</ul>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
+<p>Ce tableau décrit des paramètres de la grille latitude-longitude sur laquelle les variables en format GRIB sont disponibles.</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre de la grille</th>
+<th>Valeur du paramètre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>720 points</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>361 points</td>
+</tr>
+<tr>
+<td>résolution</td>
+<td>0,5°</td>
+</tr>
+<tr>
+<td>coordonnées du premier point de grille</td>
+<td>90° S  000° E</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
+<p>Les fichiers ont la nomenclature suivante :</p>
+<ul>
+<li>CMC_geps-raw_Variable_TypedeNiveau_Niveau_latlonResolution_YYYYMMDDHH_Phhh_allmbrs.grib2</li>
+<li>CMC_geps-prob_Variable_TypedeNiveau_Niveau_latlonResolution_YYYYMMDDHH_Phhh_all-products.grib2</li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>CMC_geps</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions, le modèle (geps : Global Ensemble Prediction System).</li>
+<li><strong>raw</strong> : sorties brutes des membres individuels </li>
+<li><strong>prob</strong> : produits probabilistes générés à partir de tous les membres</li>
+<li><strong>Resolution</strong> : Chaîne de caractères constante indiquant la résolution des données (0p5x0p5).</li>
+<li><strong>Variable</strong> : Type de variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables ».</li>
+<li><strong>TypedeNiveau</strong> : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables ».</li>
+<li><strong>Niveau</strong> : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables ».</li>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision.</li>
+<li><strong>HH</strong> : Heure UTC de la passe [00, 12].</li>
+<li><strong>Phhh</strong> : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, …, 192, 198, 204, ..., 378, 384], ou [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC.</li>
+<li><strong>allmbrs</strong> : Chaîne de caractères constante indiquant que tous les membres sont inclus dans le fichier.</li>
+<li><strong>all-products</strong> : Indique que tous les produits probabilistes pour cette variable sont regroupés dans ce fichier</li>
+<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
+</ul>
+<p>Exemple de nom de fichier :</p>
+<p>CMC_geps-raw_UGRD_ISBL_0925_latlon0p5x0p5_2010090100_P078_allmbrs.grib2</p>
+<p>Les données dans le fichier débutent le 1 septembre 2010 à 00Z (2010090100). Il a été créé par le CMC et contient les données brutes du Système global de prévision d'ensemble (CMC_geps-raw). Il contient les composantes du vent selon U (UGRD), au niveau isobarique 925 mb (ISBL_0925), à l’heure de prévision 78 (P078), pour tous les membres de l’ensemble (allmbrs), le tout en format GRIB2 (.grib2).</p>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p><strong>Membres individuels</strong>:</p>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GEPS_fr.csv");
+</script>
+
+<p><strong>Produits d'ensemble</strong>:</p>
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/GEPS_prob_fr.csv");
+</script>
+
+<p>Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.</p>
+<h6 id="hgt">HGT</h6>
+<ul>
+<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
+</ul>
+<h6 id="heatx">HEATX</h6>
+<ul>
+<li>Probabilité au-dessus de 298,14, 303,14, 308,14, 311,14, 313,14 et 315,14 K</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="fprate">FPRATE</h6>
+<ul>
+<li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="iprate">IPRATE</h6>
+<ul>
+<li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="rprate">RPRATE</h6>
+<ul>
+<li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="sprate">SPRATE</h6>
+<ul>
+<li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50 et 75 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="tprate">TPRATE</h6>
+<ul>
+<li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="prmsl">PRMSL</h6>
+<ul>
+<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
+</ul>
+<h6 id="tmp">TMP</h6>
+<ul>
+<li>Probabilité au-dessus de 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14, 298,14, 303,14, 308,14 et 313,14 K</li>
+<li>Probabilité au-dessous de 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14 and 298,14 K</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="tcdc">TCDC</h6>
+<ul>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="wcf">WCF</h6>
+<ul>
+<li>Probabilité au-dessous de 223,14, 228,14, 233,14, 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14 et 273,14 K</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="wind">WIND</h6>
+<ul>
+<li>Probabilité au-dessus de 5,5556, 8,3333, 10,278, 11,111, 13,889, 17,222, 18,056, 20,833, 24,444, 25, 27,778 et 32,778 m/s</li>
+<li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
+<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<p>Note: Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml">liste en format XML</a> contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.</p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme cansips datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-grib2-du-systeme-de-prevision-interannuelle-et-saisonniere-canadien-spiscan" class="nav-link">Données GRIB2 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#les-principales-composantes-de-spiscan" class="nav-link">Les principales composantes de SPISCan</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#configuration-des-previsions-spiscan" class="nav-link">Configuration des prévisions SPISCan</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#structure-interne-des-fichiers" class="nav-link">Structure interne des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conseils-pour-calculer-les-previsions-danomalies" class="nav-link">Conseils pour calculer les prévisions d'anomalies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_cansips-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_cansips_fr/">SPISCan</a> &gt; Données GRIB2 de SPISCan sur le Datamart du SMC</p>
+<h1 id="donnees-grib2-du-systeme-de-prevision-interannuelle-et-saisonniere-canadien-spiscan">Données GRIB2 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan)</h1>
+<p>Le <a href="../readme_cansips_fr/">Système de prévision interannuelle et saisonnière canadien (SPISCan)</a> est un système de prévision à long terme dont l’objectif est de prévoir l’évolution des conditions climatiques à l’échelle globale. SPISCan est un système d’ensemble multi-modèle (Multi-Model Ensemble [MME]) utilisant CanCM4 et GEM-NEMO, deux modèles climatiques développés au Centre canadien de la modélisation et de l'analyse climatique (CCmaC) et au Centre météorologique canadien (CMC). Ce système de prévision est entièrement couplé atmosphère-océan-glace-sol. SPISCan utilise l'infrastructure d'assimilation en place pour les autres systèmes de prévision afin d'obtenir les conditions initiales de l'atmosphère, de la température de la surface de la mer et de glace marine. Pour plus de détails sur ce système, vous pouvez vous référer à la note technique.</p>
+<h2 id="les-principales-composantes-de-spiscan">Les principales composantes de SPISCan</h2>
+<ul>
+<li><strong>Mode assimilation</strong> : CanCM4 utilise le mode continu comme un cycle d’assimilation pour les variables atmosphériques en 3D, soit la  température, les vents et l’humidité. Les variables océaniques comme la  température de surface de mer et le glace marine sont aussi assimilées par le système. Les données atmosphériques, assimilées, proviennent des analyses globales avec un intervalle temporaire de 6 heures tandis que l’intervalle des données océaniques est un jour. Les analyses des températures d’océan en 3D sont aussi intégrées dans le système SPIScan. Les conditions initiales utilisées par GEM-NEMO proviennent du Système global de prévision d’ensemble (SGPE) qui sont générées a partir de la procédure de Filtre de Kalman d’ensemble (EnKf). Dans cette procédure de filtrage, on applique une procédure du ‘contrôle de la qualité sur un champs d’essai’ sur les observations et on corrige les biais avec  le Système global de prévision déterministe (SGPD). Les analyses du Système global de prévision océan-glace (SGPOG) font partie des données utilisées pour initialiser l’océan et la glace marine. Pour initialiser les champs de surface, le système de prévision de surface (SPS) du SMC  est utilisé. SPS est utilisé dans le mode non-couplé (offline) forcé par les champs atmosphériques provenant des analyses du SMC. </li>
+<li><strong>Mode prévision</strong> : Le système SPIScan est composé de 10 membres d’ensemble provenant de chaque modèle pour un total de 20 membres d’ensemble. Les prévisions mensuelles et les prévisions multi-saisonnières (jusqu’au 12 mois) sont publiées au début de chaque mois.</li>
+<li><strong>Mode prévisions rétrospectives (hindcast)</strong> : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1980 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.   </li>
+</ul>
+<h2 id="configuration-des-previsions-spiscan">Configuration des prévisions SPISCan</h2>
+<p>SPISCan est composé de 20 membres, 10 membres du modèle GEM-NEMO et 10 membres du modèle CanCM4. Le dernier jour de chaque mois on exécute une prévision de 12 mois et chaque membre est initialisé avec des conditions initiales valides au même moment, mais légèrement différentes. Lorsque la prévision de l’ensemble est terminée, on construit une moyenne saisonnière de l’anomalie, en soustrayant la moyenne climatologique de 30 ans de ces modèles. Ensuite, on calcule la moyenne d’ensemble pour une prévision déterministe, et les probabilités de chaque catégorie, calculées en calibrant le comptage des membres, pour une prévision probabiliste. </p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
+<p>Les données sont accessibles aux adresses suivantes :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (membres et produits de prévision à 2.5 degrés, membres à 1 degré)</li>
+<li><a href="https://dd.meteo.gc.ca/model_cansips/100km/forecast">https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (produits de prévision à 1 degré)</li>
+<li><a href="https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw">https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw/{YYYY}/{MM}/</a> (prévisions rétrospectives)</li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>forecast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast).</li>
+<li><strong>hindcast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast).</li>
+<li><strong>100km</strong> : Indique une résolution de 1 degré (environ 100km)</li>
+<li><strong>MM</strong> : Le mois du début de la prévision [01, 02, 03, ..., 12]</li>
+<li><strong>YYYY</strong>: L’année du début de la prévision [2012, 2013, ...]</li>
+</ul>
+<p>Un historique de 1 mois est conservé dans ces répertoires (sauf pour les prévisions rétrospectives)</p>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
+<p>Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, selon la résolution.</p>
+<h3 id="donnees-a-25-degres-de-resolution">Données à 2.5 degrés de résolution</h3>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>145</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>73</td>
+</tr>
+<tr>
+<td>résolution</td>
+<td>2.5°</td>
+</tr>
+<tr>
+<td>coordonnées du premier point de grille</td>
+<td>90° S  0° E</td>
+</tr>
+</tbody>
+</table>
+<h3 id="donnees-a-1-degre-de-resolution">Données à 1 degré de résolution</h3>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>360</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>180</td>
+</tr>
+<tr>
+<td>résolution</td>
+<td>1.0°</td>
+</tr>
+<tr>
+<td>coordonnées du premier point de grille</td>
+<td>89.5° S  0.5° E</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>La nomenclature des fichiers est la suivante :</p>
+<ul>
+<li>
+<p>Membres et produits de prévision à 2.5 degrés:</p>
+<ul>
+<li>Prévisions en cours : <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li>Produits probabilistes: <code>cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2</code></li>
+</ul>
+</li>
+<li>
+<p>Membres et produits de prévision à 1 degré:</p>
+<ul>
+<li>Prévisions en cours : <code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li>Produits probabilistes: <code>{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2</code></li>
+</ul>
+</li>
+<li>
+<p>Prévisions rétrospectives:</p>
+<ul>
+<li><code>cansips_hindcast_raw_latlon1.0x1.0_{VAR}_{YYYY}-{MM}_allmembers.grib2</code></li>
+</ul>
+</li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>cansips|CanSIPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>forecast</strong> : Chaîne de caractères constante indiquant que le fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast)</li>
+<li><strong>hindcast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)</li>
+<li><strong>raw</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé</li>
+<li><strong>VAR</strong> : Variables contenues dans les fichiers, voir la section des variables</li>
+<li><strong>Var</strong> : Variables contenues dans les fichiers [PrecipRate, AirTemp]</li>
+<li><strong>StatProcess</strong> : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
+<li><strong>LVLTYPE</strong> : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]</li>
+<li><strong>LVL</strong> : Valeur du niveau vertical</li>
+<li><strong>Level</strong> : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]</li>
+<li><strong>MM</strong> : Le mois du début de la prévision [01, 02, 03, ..., 12]</li>
+<li><strong>YYYY</strong> : L’année du début de la prévision [2012, 2013, ...]</li>
+<li><strong>allmembers</strong> : Chaîne de caractères constante indiquant que tous les membres [01, 02, 03, ..., 20] de l’ensemble sont regroupés dans ce fichier</li>
+<li><strong>PPP</strong>: Durée du produit (ex: P3M indique un produit pour une prévision d'une période de 3 mois)</li>
+<li><strong>Month</strong> : Mois concernés à partir du début de la prévision, soit 1 mois [ex : P07M pour décembre si le début de la prévision est le mois de mai] ou plusieurs mois à partir du début de la prévision [ex : P01M-P03M pour juin à août si le début de la prévision est le mois de mai]</li>
+<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2</li>
+</ul>
+<p>Exemples de noms de fichier : </p>
+<ul>
+<li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
+<li>cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2</li>
+<li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
+<li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
+<li>cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2</li>
+</ul>
+<h2 id="structure-interne-des-fichiers">Structure interne des fichiers</h2>
+<p>La structure interne des fichiers des prévisions et celle des prévisions rétrospectives (hindcast) est la suivante : </p>
+<p>Chaque fichier contient 240 enregistrements temporels (12 mois fois 20 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.</p>
+<p>Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02 (ex. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2), les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.</p>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p><strong>Membres individuels:</strong></p>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/CanSIPS_fr.csv");
+</script>
+
+<p><strong>Produits d'ensemble:</strong></p>
+<table id="csv-prob-table" class="display"></table>
+
+<script>
+  loadTable("csv-prob-table", "../../../assets/csv/CanSIPS_prob_fr.csv");
+</script>
+
+<p>Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.</p>
+<h6 id="apcp">APCP</h6>
+<ul>
+<li>Probabilité au-dessus de 0 kg/(m<sup>2</sup>*s)</li>
+<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
+</ul>
+<h6 id="tmp">TMP</h6>
+<ul>
+<li>Probabilité au-dessus de 0 K</li>
+<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
+</ul>
+<h2 id="conseils-pour-calculer-les-previsions-danomalies">Conseils pour calculer les prévisions d'anomalies</h2>
+<p>Il est recommandé d'utiliser directement les prévisions d'anomalies plutôt que les prévisions de données brutes. Les prévisions d'anomalies pour certains mois ou saisons peuvent être obtenues par la soustraction de la climatologie modélisée pour ce mois ou saison. La recette suivante peut être utilisée pour calculer la prévision d'anomalie :</p>
+<p>Pour la prévision d'un mois en particulier (ex. 2016-02) on commence par la création d'un fichier de moyenne d'ensemble, et pour cet exemple, on peut nommer ce fichier ensm_for_02_2016. Ce fichier contient maintenant 12 enregistrements temporels car la moyenne de 20 ensembles a été calculée. L'enregistrement temporel de ce fichier commence le mois 02 de l'année 2016 et va jusqu'au mois 01 de l'année 2017.</p>
+<p>Ensuite, la même procédure est répétée pour les prévisions rétrospectives mais séparément pour chaque année, commençant en 1981 et finissant l'année 2010. Chaque année de la période rétrospective aura donc sa moyenne d'ensemble, par exemple pour le mois 02, ce sera ensm_hin_02_YYYY (YYYY représente chaque année de la période-rétrospective). La moyenne des 30 fichiers de ensm_hin_02_YYYY permettra d'obtenir la climatologie de la moyenne d'ensemble pour les prévisions débutant en  février, qui pourra alors être nommée ensm_hinclim_02, dans cet exemple.</p>
+<p>La soustraction de ensm_hinclim_02 à ensm_for_02_2016, permet d'obtenir  la prévision d'anomalie pour le mois 02 de l'année 2016. Puisque cette prévision d'anomalie contient 12 enregistrements temporels, débutant en février 2016, on peut dire que la prévision d'anomalie pour le mois de février c'est une prévision à zéro mois de préavis, celle du mois de mars 2016, une prévision à un mois de préavis, et ainsi de suite jusqu'en janvier 2017 (la dernière de 12 enregistrements) où on a une prévision de 11 mois de préavis.</p>
+<p>Une approche très similaire peut être appliquée avec les prévisions saisonnières mais en utilisant les moyennes saisonnières (ex. DJF, JFM, MAM, etc.) qui sont construites avant que l'anomalie de moyenne saisonnière ait été calculée.</p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@ec.gc.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

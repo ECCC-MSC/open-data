@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Readme fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#animet-du-smc" class="nav-link">AniMet du SMC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#acces" class="nav-link">Accès</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#utilisation" class="nav-link">Utilisation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-ajouter-des-couches-meteorologiques-et-climatiques" class="nav-link">1 - Ajouter des couches météorologiques et climatiques</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-personnaliser-le-contenu-de-la-carte" class="nav-link">2 - Personnaliser le contenu de la carte</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-configurer-lanimation" class="nav-link">3 - Configurer l'animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-creer-et-partager-la-carte-et-lanimation" class="nav-link">4 - Créer et partager la carte et l'animation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#informations-supplementaires" class="nav-link">Informations supplémentaires</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#liste-dinformation" class="nav-link">Liste d'information</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#code-source" class="nav-link">Code source</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_en/">En anglais</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TOC</a> &gt; AniMet du SMC</p>
+<h1 id="animet-du-smc">AniMet du SMC</h1>
+<p>AniMet du SMC est un outil simple permettant aux utilisateurs d'interagir avec les données météorologiques ouvertes du SMC et de créer des animations météorologiques personnalisées pour n'importe quelle région du monde. Les animations résultantes peuvent être téléchargées et partagées avec un permalien.</p>
+<p>AniMet du SMC peut être utilisé pour présenter une variété d'événements météorologiques tels que les tempêtes, les vagues de chaleur, les trajectoires d'ouragans, les événements liés à la qualité de l'air, les rafales de vent extrêmes, et bien plus encore.</p>
+<p>AniMet du SMC donne accès aux couches de <a href="../../msc-geomet/readme_fr/">GeoMet-Météo et GeoMet-Climat</a>.</p>
+<h1 id="acces">Accès</h1>
+<p><strong>Accès à AniMet du SMC : <a href="https://eccc-msc.github.io/msc-animet/">https://eccc-msc.github.io/msc-animet/</a></strong></p>
+<p>Un exemple simple de l'animation d'une couche radar créée avec AniMet du SMC :</p>
+<video controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Pluie_Sud-Ontario_20230323T0830Z.mp4" type="video/mp4">
+</video>
+
+<h1 id="utilisation">Utilisation</h1>
+<p>Les principales étapes d'utilisation :</p>
+<ol>
+<li>Ajouter des couches météorologiques et climatiques à la carte</li>
+<li>Personnaliser le contenu de la carte</li>
+<li>Configurer l'animation</li>
+<li>Créer et partager la carte et l'animation</li>
+</ol>
+<h2 id="1-ajouter-des-couches-meteorologiques-et-climatiques">1 - Ajouter des couches météorologiques et climatiques</h2>
+<p>Couches :</p>
+<ul>
+<li>Ajouter des couches dans le panneau <code>GeoMet-Météo</code> ou <code>GeoMet-Climat</code></li>
+<li>Parcourir l'arborescence des couches pour trouver la couche désirée</li>
+<li>Utiliser la boîte de recherche pour filtrer parmi les couches disponibles</li>
+<li>Cliquer sur le signe <code>+</code> pour ajouter une couche à la carte</li>
+<li>Astuce : cliquer sur le nom du panneau pour agrandir ou réduire la liste de couches</li>
+</ul>
+<p>Superpositions :</p>
+<ul>
+<li>Sélectionner le panneau 'Superpositions' pour ajouter de l'information au-dessus des couches affichées</li>
+<li>Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom.</li>
+</ul>
+<h2 id="2-personnaliser-le-contenu-de-la-carte">2 - Personnaliser le contenu de la carte</h2>
+<p>Configurer les couches dans le panneau <code>Configuration des couches</code> et personnaliser la carte.</p>
+<p>Couches :</p>
+<ul>
+<li>Lorsque possible, changer la passe de modèle associée à la couche.</li>
+<li>Réorganiser les couches à l'aide des flèches vers le haut et vers le bas</li>
+<li>Les flèches ne sont affichées que si plusieurs couches ont été ajoutées</li>
+<li>Modifier les couleurs des couches</li>
+<li>Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles</li>
+<li>Ajuster l'opacité des couches</li>
+<li>Activer la visibilité des couches</li>
+<li>L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche</li>
+</ul>
+<p>Temps :</p>
+<ul>
+<li>L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel.</li>
+<li>Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression.</li>
+<li>Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre.</li>
+<li>Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie.</li>
+<li>Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton <code>Heure locale</code>.</li>
+<li>La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches.</li>
+<li>En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle.</li>
+</ul>
+<p>Carte :</p>
+<ul>
+<li>Agrandir et déplacer la carte sur votre zone d'intérêt</li>
+<li>Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte</li>
+<li>Pivoter la carte en appuyant sur les touches <em>alt-shift</em> et en faisant glisser la carte</li>
+<li>Sélectionner les légendes à afficher à l'aide du bouton <code>LÉGENDES</code>. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite.</li>
+</ul>
+<h2 id="3-configurer-lanimation">3 - Configurer l'animation</h2>
+<p>Configurer l'animation dans le panneau <code>Configuration de l'animation</code> :</p>
+<ul>
+<li>Fournir un titre d'animation personnalisé, si désiré</li>
+<li>Définir la vitesse de l'animation en images par seconde</li>
+<li>Choisir la carte de fond entre la carte de fond claire et foncée</li>
+</ul>
+<h2 id="4-creer-et-partager-la-carte-et-lanimation">4 - Créer et partager la carte et l'animation</h2>
+<p>Après avoir cliqué sur le bouton <code>Créer l'animation</code> et que le processus de génération est terminé, le bouton <code>Télécharger l'animation</code> apparaîtra.</p>
+<p>Récupérer et partager le permalien avec le bouton <code>Partager</code> en haut à droite :</p>
+<ul>
+<li>Vous pouvez copier et sauvegarder le permalien pour une utilisation ultérieure</li>
+<li>Partager directement le permalien par courriel ou sur les médias sociaux</li>
+<li>Pour partager l'animation sur les médias sociaux, le fichier doit d'abord être enregistré localement</li>
+</ul>
+<p>Le <a href="https://fr.wikipedia.org/wiki/Permalien">permalien</a> vous permet d'ouvrir AniMet du SMC avec un ensemble déterminé de couches et leur configuration, ainsi qu'un zoom, une étendue et une taille de carte spécifiques. Les dimensions temporelles ne sont pas incluses dans le permalien en raison de la nature évolutive et de la disponibilité des données archivées.</p>
+<h1 id="informations-supplementaires">Informations supplémentaires</h1>
+<h2 id="liste-dinformation">Liste d'information</h2>
+<p>AniMet du SMC exploite les données des <a href="../../msc-geomet/readme_fr/">services web 24/7 de GeoMet du SMC</a>. Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> pour être informés des améliorations et des changements apportés à AniMet du SMC.</p>
+<h2 id="code-source">Code source</h2>
+<p>Le code source d'AniMet du SMC est disponible publiquement sur GitHub : <a href="https://github.com/ECCC-MSC/msc-animet">https://github.com/ECCC-MSC/msc-animet</a></p>
+<h2 id="support">Support</h2>
+<p>AniMet du SMC est un outil de démonstration des données ouvertes du SMC et ne bénéficie pas d'un support opérationnel. Le support aux utilisateurs est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui souhaitent obtenir du support sont invités à <a href="https://www.meteo.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,97 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Composante u du vent,UGRD,10 m au-dessus du niveau du sol,m/s
+Composante u du vent,UGRD,10 mb,m/s
+Composante u du vent,UGRD,100 mb,m/s
+Composante u du vent,UGRD,1000 mb,m/s
+Composante u du vent,UGRD,200 mb,m/s
+Composante u du vent,UGRD,250 mb,m/s
+Composante u du vent,UGRD,300 mb,m/s
+Composante u du vent,UGRD,400 mb,m/s
+Composante u du vent,UGRD,50 mb,m/s
+Composante u du vent,UGRD,500 mb,m/s
+Composante u du vent,UGRD,700 mb,m/s
+Composante u du vent,UGRD,850 mb,m/s
+Composante u du vent,UGRD,925 mb,m/s
+Composante v du vent,VGRD,10 m au-dessus du niveau du sol,m/s
+Composante v du vent,VGRD,10 mb,m/s
+Composante v du vent,VGRD,100 mb,m/s
+Composante v du vent,VGRD,1000 mb,m/s
+Composante v du vent,VGRD,200 mb,m/s
+Composante v du vent,VGRD,250 mb,m/s
+Composante v du vent,VGRD,300 mb,m/s
+Composante v du vent,VGRD,400 mb,m/s
+Composante v du vent,VGRD,50 mb,m/s
+Composante v du vent,VGRD,500 mb,m/s
+Composante v du vent,VGRD,700 mb,m/s
+Composante v du vent,VGRD,850 mb,m/s
+Composante v du vent,VGRD,925 mb,m/s
+Couverture nuageuse totale,TCDC,Surface,%
+Eau précipitable,PWAT,Surface,kg/m<sup>2</sup>
+Flux net de chaleur latente,LHTFL,Surface,W/m<sup>2</sup>
+Flux net de chaleur sensible,SHTFL,Surface,W/m<sup>2</sup>
+Flux radiatif ascendant d'ondes courtes,USWRF,Surface,W/m<sup>2</sup>
+Flux radiatif entrant d'ondes longues,DLWRF,Surface,W/m<sup>2</sup>
+Flux radiatif sortant d'ondes longues,ULWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
+Flux radiatif sortant d'ondes longues,ULWRF,Surface,W/m<sup>2</sup>
+Flux solaire entrant incident,DSWRF,Surface,W/m<sup>2</sup>
+Hauteur géopotentielle,HGT,10 mb,gpm
+Hauteur géopotentielle,HGT,100 mb,gpm
+Hauteur géopotentielle,HGT,1000 mb,gpm
+Hauteur géopotentielle,HGT,200 mb,gpm
+Hauteur géopotentielle,HGT,250 mb,gpm
+Hauteur géopotentielle,HGT,300 mb,gpm
+Hauteur géopotentielle,HGT,50 mb,gpm
+Hauteur géopotentielle,HGT,500 mb,gpm
+Hauteur géopotentielle,HGT,700 mb,gpm
+Hauteur géopotentielle,HGT,850 mb,gpm
+Hauteur géopotentielle,HGT,925 mb,gpm
+Humidité relative,RH,10 mb,%
+Humidité relative,RH,100 mb,%
+Humidité relative,RH,1000 mb,%
+Humidité relative,RH,2 m au-dessus du niveau du sol,%
+Humidité relative,RH,200 mb,%
+Humidité relative,RH,250 mb,%
+Humidité relative,RH,50 mb,%
+Humidité relative,RH,500 mb,%
+Humidité relative,RH,700 mb,%
+Humidité relative,RH,850 mb,%
+Humidité relative,RH,925 mb,%
+Humidité spécifique,SPFH,120 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,2 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,40 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,80 m au-dessus du niveau du sol,kg/kg
+Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
+Pression,PRES,Surface,Pa
+Précipitation totale,APCP,Surface,kg/m<sup>2</sup>
+Ruissellement de surface,SFCWRO,Surface,kg/m<sup>2</sup>
+Taux de précipitation de la neige,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation de la pluie,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation des pluies verglaçantes,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation du grésil,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Température maximale,TMAX,2 m au-dessus du niveau du sol,K
+Température minimale,TMIN,2 m au-dessus du niveau du sol,K
+Température,TMP,10 mb,K
+Température,TMP,100 mb,K
+Température,TMP,1000 mb,K
+Température,TMP,120 m au-dessus du niveau du sol,K
+Température,TMP,2 m au-dessus du niveau du sol,K
+Température,TMP,200 mb,K
+Température,TMP,250 mb,K
+Température,TMP,40 m au-dessus du niveau du sol,K
+Température,TMP,50 mb,K
+Température,TMP,500 mb,K
+Température,TMP,700 mb,K
+Température,TMP,80 m au-dessus du niveau du sol,K
+Température,TMP,850 mb,K
+Température,TMP,925 mb,K
+Température,TMP,Profondeur sous la surface terrestre (0-0.1 m),K
+Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,120 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,40 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,80 m au-dessus du niveau du sol,m/s
+Vitesse verticale (pression),VVEL,850 mb,Pa/s
+Énergie d'inhibition convective,CIN,Surface,J/kg
+Énergie potentielle convective disponible,CAPE,Surface,J/kg
+Épaisseur de la glace,ICETK,Surface,m
+Épaisseur de la neige,SNOD,Surface,m
+Épaisseur de neige accumulée équivalent en eau,WEASD,Surface,kg/m<sup>2</sup>

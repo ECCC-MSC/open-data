@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog rips en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-regional-ice-prediction-system-rips" class="nav-link">Chronology of changes to the  Regional Ice Prediction System (RIPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#thursday-september-17-2015" class="nav-link">Thursday September 17, 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-july-23-2013" class="nav-link">Tuesday July 23 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#friday-may-17-2013" class="nav-link">Friday May 17, 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_rips_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; RIPS Changelog</p>
+<h1 id="chronology-of-changes-to-the-regional-ice-prediction-system-rips">Chronology of changes to the  Regional Ice Prediction System (RIPS)</h1>
+<h2 id="thursday-september-17-2015">Thursday September 17, 2015</h2>
+<h3 id="the-canadian-meteorological-centre-cmc-installs-rips-version-22">The Canadian Meteorological Centre (CMC) installs RIPS version 2.2</h3>
+<p>On September 17, 2015, CMC implemented version 2.2 of the Regional Ice Prediction System (RIPS). Here is the list of the major changes included in this upgrade:</p>
+<ul>
+<li>Assimilation of AMSR2 data</li>
+<li>Assimilation of Canadian Ice Service regional (weekly) chart data</li>
+<li>Modifications to the passive microwave data processing:<ul>
+<li>Thinning of SSMIS data along the satellite track (assimilate only 1 of 3 scan lines)</li>
+<li>Reduction of the observation-error standard deviation of SSMIS data from 0.1 to 0.05 (because of thinning)</li>
+<li>Reject all data over lakes (as in version 1.0)</li>
+<li>Wind filter to eliminate spurious ice concentration retrievals
+A technical note with more details on this change is available <a href="file:///C:/Users/prisc/docs/msc-data/open-data/docs/msc-data/nwp_reps/changelog_reps_en.md">at this link</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="tuesday-july-23-2013">Tuesday July 23 2013</h2>
+<h3 id="the-canadian-meteorological-centre-cmc-installs-version-20-of-rips-f-forecast-component">The Canadian Meteorological Centre (CMC) installs version 2.0 of RIPS-F (forecast component)</h3>
+<p>On July 23, 2013, the CMC implemented, for the first time, the Forecast Component of the Regional Ice Prediction System (RIPS-F 2.0.0). RIPS-F system is the forecasting component of RIPS 2.0.0 based on the Los-Alamos sea-ice model (CICEv4.1). Each 6h (i.e., 4 times a day), following the analysis production in RIPS-A, RIPS-F generates initial conditions for ice concentration (from the analysis), sea surface temperature (CMC analysis at 00Z), ice velocity (previous forecast) and ice thickness and mixed layer depth (both from GLORYS1v1 climatology). The surface forcing during the 48h forecast comes from the RDPS for the atmoshpere and time-interpolated surface currents (GLORYS1v1 monthly climatology). There are no open boundary conditions for ice considered in this new version.</p>
+<p>A technical note with more details on this change is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_ripsf_20140506_e.pdf">at this link</a>.</p>
+<h2 id="friday-may-17-2013">Friday May 17, 2013</h2>
+<h3 id="the-canadian-meteorological-centre-cmc-upgrades-rips-a-analysis-component-to-version-20">The Canadian Meteorological Centre (CMC) upgrades RIPS-A (analysis component) to version 2.0</h3>
+<p>On May 17, 2013, CMC implemented a new experimental version of the Analysis Component of the Regional Ice Prediction System (RIPS-A 2.0.0). RIPS-A provides near real-time gridded estimates of ice concentration for all ice affected areas around North America and Greenland, and is primarily aimed to satisfy the operational requirements of the Canadian Ice Service. Three major modifications have been considered in this new version:</p>
+<pre><code>1. The first modification is the assimilation of passive microwave data from three satellite platforms to complement the already assimilated Special Sensor Microwave/Imager data from one platform.
+2. The second change is the assimilation of ice concentration information derived from the Advanced Scatterometer data.
+3. The third is the use of an estimate of analysis uncertainty to identify areas where the estimated ice concentration in the analysis is then replaced by spatially interpolated values.
+</code></pre>
+<p>A technical note with more details on this change is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_ripsa_20140505_e.pdf">at this link</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme hrdpa watershed datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#high-resolution-deterministic-precipitation-analysis-hrdpa-average-watershed-precipitation-data-in-esri-shapefile-format" class="nav-link">High Resolution Deterministic Precipitation Analysis (HRDPA) average watershed precipitation data in Esri Shapefile Format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_hrdpa-watershed-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrdpa-watershed_en/">HRDPA Watershed</a> &gt; HRDPA Watershed on MSC Datamart</p>
+<h1 id="high-resolution-deterministic-precipitation-analysis-hrdpa-average-watershed-precipitation-data-in-esri-shapefile-format">High Resolution Deterministic Precipitation Analysis (HRDPA) average watershed precipitation data in Esri Shapefile Format</h1>
+<p>Data for over 1900 watersheds is available. In order to reduce the number of files on the MSC Datamart, it has been necessary to group these watersheds by drainage basin:</p>
+<ul>
+<li>Maritime Provinces</li>
+<li>St. Lawrence</li>
+<li>Northern Quebec and Labrador</li>
+<li>Southwest Hudson Bay</li>
+<li>Nelson River</li>
+<li>Western Hudson Bay</li>
+<li>Great Slave Lake</li>
+<li>Pacific</li>
+<li>Yukon River</li>
+<li>Arctic</li>
+<li>Mississipi River</li>
+</ul>
+<p>In addition to the average precipitation, the average confidence index of the analysis is also provided. As explained in the documentation of the HRDPA, the analysis is a weighted average of a numerical weather prediction and of observations (both in-situ and radar). The total weight given to observations (from zero to one) in the final computation is reported alongside the precipitation amount in the gridded HRDPA data files. </p>
+<p>This number can also be averaged so as to reflect the average weight given to observations in the computation of watershed precipitation. It can be interpreted as a confidence index for the precipitation amount reporter. Values close to one indicate that the HRDPA estimate comes essentially from observed precipitation data, whereas values close to zero indicate that the HRDPA estimate comes essentially from a short-term precipitation forecast.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links of downloadable Esri Shapefile data.</p>
+<p>The data can be accessed at the following URLs:</p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile">https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/{HH}</a></li>
+</ul>
+<p>where:</p>
+<ul>
+<li><strong>HH</strong> :  Accumulation period in hours: 06 or 24 </li>
+</ul>
+<p>A 30-day history is kept in this directory.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The files have the following nomenclature:</p>
+<p>CMC_HRDPA_WATERSHED-HHH-CC00cutoff_SFC_0_ps2.5km_YYYYMMDDHH_000_ID.SUF</p>
+<p>where:</p>
+<ul>
+<li><strong>HHH</strong> : Accumulation period in hours (006 or 024)</li>
+<li><strong>CC</strong> : Cutoff time in hours (01 or 07) after the end of the accumulation period</li>
+<li><strong>YYYYMMDDHH</strong> : Analysis validity date and hour (timestamp associated with the end of the accumulation period)</li>
+<li>
+<p><strong>ID</strong> : Drainage basin ID, from 01 to 11 :</p>
+<ul>
+<li>01 Maritime Provinces</li>
+<li>02 St. Lawrence</li>
+<li>03 Northern Quebec and Labrador</li>
+<li>04 Southwest Hudson Bay</li>
+<li>05 Nelson River</li>
+<li>06 Western Hudson Bay</li>
+<li>07 Great Slave Lake</li>
+<li>08 Pacific</li>
+<li>09 Yukon River</li>
+<li>10 Arctic</li>
+<li>11 Mississipi River</li>
+</ul>
+</li>
+<li>
+<p><strong>SUF</strong> : suffix of Shapefile:</p>
+<ul>
+<li>"dbf" - attributes of the shapes found in the Shapefile</li>
+<li>"prj" - text file describing the projection of the data</li>
+<li>"shp" - binary file containing the geometry data</li>
+<li>"shx" - index file for the geometry data</li>
+</ul>
+</li>
+</ul>
+<p>Example: </p>
+<ul>
+<li>CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.dbf</li>
+<li>CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.prj</li>
+<li>CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shp</li>
+<li>CMC_HRDPA_WATERSHED-024-0700cutoff_SFC_0_ps2.5km_2018021612_000_10.shx</li>
+</ul>
+<p>This set of files would contain average precipitation for a 24h accumulation period ending at 12 UTC on February 16, 2018 for watersheds in the arctic basin, and the analysis would have been produced 7 hours after the end of that accumulation period.</p>
+<p>The area associated with each watershed is defined by a single polygon.</p>
+<p>Seven attributes are provided for each watershed:</p>
+<ul>
+<li><strong>Station</strong>    : Station ID</li>
+<li><strong>StationNam</strong> : Station Name</li>
+<li><strong>Stn_UID</strong>    : Station unique ID (at the moment, corresponds to the Station ID, followed by _1)</li>
+<li><strong>Shp_Area</strong>   : Area associated with the polygon (in km2)</li>
+<li><strong>Shp_Perime</strong> : Perimeter associated with the polygon (in km)</li>
+<li><strong>PR_mm</strong>      : Average watershed precipitation associated with the polygon (in mm)</li>
+<li><strong>CFIA</strong>       : Average confidence index associated with the polygon (from zero to one), which reflects the average weight given to observations (in-situ and radar) in the computation of the watershed precipitation</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<p>Warning: the tables below are not up to date (to come), some variables are missing. Feel free to <a href="mailto:ec.dps-client.ec@canada.ca">contact us</a> for more information.</p>
+<ul>
+<li><strong>Station</strong>    : Station ID</li>
+<li><strong>StationNam</strong> : Station Name</li>
+<li><strong>Stn_UID</strong>    : Station unique ID (at the moment, corresponds to the Station ID, followed by _1)</li>
+<li><strong>Shp_Area</strong>   : Area associated with the polygon (in km2)</li>
+<li><strong>Shp_Perime</strong> : Perimeter associated with the polygon (in km)</li>
+<li><strong>PR_mm</strong>      : Average watershed precipitation associated with the polygon (in mm)</li>
+<li><strong>CFIA</strong>       : Average confidence index associated with the polygon (from zero to one), which reflects the average weight given to observations (in-situ and radar) in the computation of the watershed precipitation</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

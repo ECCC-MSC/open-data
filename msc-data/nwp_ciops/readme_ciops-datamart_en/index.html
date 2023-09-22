@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme ciops datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#coastal-ice-ocean-prediction-system-ciops-ocean-ice-forecasts-data-in-netcdf-format" class="nav-link">Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grids" class="nav-link">Technical specification of the grids</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#levels" class="nav-link">Levels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_ciops-datamart_fr/">In French</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_ciops_en/">CIOPS</a> &gt; Coastal Ice Ocean Prediction System (CIOPS) on MSC Datamart </p>
+<h1 id="coastal-ice-ocean-prediction-system-ciops-ocean-ice-forecasts-data-in-netcdf-format">Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format</h1>
+<p>The ocean-ice forecasts from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a regional enhancement at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region only.</p>
+<h2 id="data-location">Data location</h2>
+<p>HPFX data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible via web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.</p>
+<p>The data can be accessed at the following URLs: </p>
+<ul>
+<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/east/2km/{HH}/{hhh}/</a></li>
+<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/west/2km/{HH}/{hhh}/</a></li>
+<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/salish-sea/500m/{HH}/{hhh}/</a>                  </li>
+</ul>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day</li>
+<li><strong>HH</strong> : Model run start, in UTC [00, 06, 12, 18]</li>
+<li><strong>hhh</strong> : Forecast hour [000, 001, 002, ..., 048] </li>
+</ul>
+<p>A history of several weeks is kept in these directories.</p>
+<h2 id="technical-specification-of-the-grids">Technical specification of the grids</h2>
+<h3 id="east-ocean-domain">East ocean domain</h3>
+<p><img alt="Image of the CIOPS - East ocean domain" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>1333</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>980</td>
+</tr>
+<tr>
+<td>nk</td>
+<td>99</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>2km</td>
+</tr>
+</tbody>
+</table>
+<h3 id="west-ocean-domain">West ocean domain</h3>
+<p><img alt="Image of the CIOPS - West ocean domain" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-west.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>600</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>785</td>
+</tr>
+<tr>
+<td>nk</td>
+<td>68</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>2km</td>
+</tr>
+</tbody>
+</table>
+<h3 id="oceanic-domain-over-the-salish-sea">Oceanic domain over the Salish Sea</h3>
+<p><img alt="Image of the CIOPS - Salish Sea ocean domain" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>629</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>888</td>
+</tr>
+<tr>
+<td>nk</td>
+<td>39</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>500m</td>
+</tr>
+</tbody>
+</table>
+<h2 id="filename-nomenclature">Filename nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The files have the following nomenclature: </p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_CIOPS-{Domain}_{Var}_{LVLTYPE}-{LVL}_{Grid}{resolution}_PT{hhh}H.nc</code></p>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong>: Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong> : Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong>: UTC run time [00, 06, 12, 18]</li>
+<li><strong>Z</strong> : Time zone (UTC hour)</li>
+<li><strong>MSC</strong> : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
+<li><strong>CIOPS</strong> : Constant string indicating that the data is from the Coastal Ice Ocean Prediction System</li>
+<li><strong>Domain</strong> : Constant string indicating the domain [East, West, SalishSea]</li>
+<li><strong>Var</strong> : Variable included in the file (see the list below)</li>
+<li><strong>LVLTYPE</strong> : Vertical level type [Sfc for the surface, DBS for depth below the surface]</li>
+<li><strong>LVL</strong> : Vertical level value where applicable [0.5m, <code>all</code> for all available levels]</li>
+<li><strong>Grid</strong> : Constant string indicating the grid projection [LatLon]</li>
+<li><strong>resolution</strong> : Indicating resolution in degree in latitude and longitude directions [0.03x0.02, 0.008x0.005] </li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]</li>
+<li><strong>nc</strong> : File extention indicating the NetCDF format</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>20220225T00Z_MSC_CIOPS-East_SeaIceDivergence_Sfc_LatLon0.03x0.02_PT002H.nc</li>
+<li>20220301T00Z_MSC_CIOPS-West_SeaWaterSalinity_DBS-0.5m_LatLon0.03x0.02_PT002H.nc</li>
+<li>20220301T00Z_MSC_CIOPS-SalishSea_SeaWaterPotentialTemp_DBS-all_LatLon0.008x0.005_PT002H.nc</li>
+</ul>
+<h2 id="levels">Levels</h2>
+<h3 id="east-ocean-domain_1">East ocean domain</h3>
+<p>The three-dimensional fields are provided on 99 depth levels in the East ocean domain.</p>
+<p><strong>Depth levels (m)</strong>: 0.50594902, 1.55457, 2.65451, 3.8087499, 5.0204301, 6.29286, 7.62957, 9.0342503, 10.5108, 12.0634, 13.6964, 15.4145, 17.222401, 19.125401, 21.128799, 23.238501, 25.4604, 27.801001, 30.266899, 32.865299, 35.603699, 38.490002, 41.532398, 44.7397, 48.121201, 51.686501, 55.445999, 59.410198 63.590698, 67.9991, 72.648102, 77.550697, 82.720802, 88.172798, 93.921799, 99.983803, 106.375, 113.114 120.218, 127.707, 135.60001, 143.918, 152.68201, 161.91701, 171.645, 181.89, 192.679, 204.037, 215.993 228.57401, 241.81, 255.73199, 270.37201, 285.76001, 301.93201, 318.92001, 336.76099, 355.48901, 375.14301, 395.76001, 417.37799, 440.039, 463.78699, 488.681, 514.80499, 542.32397, 571.61401, 603.60602, 640.60901, 687.87701, 754.76501, 850.67902, 975.659, 1120.37, 1275.53, 1435.96, 1599.4301, 1765.0699, 1932.58, 2101.8501, 2272.8701, 2445.6499, 2620.1799, 2796.5, 2974.6201, 3154.54, 3336.27, 3519.8301, 3705.2, 3892.3999, 4081.4199, 4272.2598, 4464.8999, 4659.3301, 4855.54, 5053.52, 5253.2402, 5454.6699, 5657.8101.</p>
+<h3 id="west-ocean-domain_1">West ocean domain</h3>
+<p>The three-dimensional fields are provided on 68 depth levels in the West ocean domain.</p>
+<p><strong>Depth levels (m)</strong>: 0.50752997, 1.55757, 2.6693399, 3.8578801, 5.1419101, 6.5445399, 8.0939703, 9.8241596, 11.775, 13.9924, 16.5266, 19.431101, 22.7589, 26.5595, 30.875799, 35.741402, 41.181301, 47.2131, 53.851898, 61.114101, 69.023003, 77.612503, 86.930801, 97.042702, 108.032, 120.001, 133.077, 147.408, 163.166, 180.552, 199.79201, 221.14301, 244.892, 271.358, 300.88901, 333.86499, 370.69, 411.79599, 457.62799, 508.642, 565.29401, 628.02802, 697.26099, 773.37, 856.68103, 947.45001, 1045.86, 1151.99, 1265.86, 1387.38, 1516.37, 1652.5699, 1795.67, 1945.3, 2101.03, 2262.4199, 2429.03, 2600.3799, 2776.04, 2955.5701, 3138.5701,3324.6399, 3513.45, 3704.6599, 3897.98, 4093.1599, 4289.96, 4488.1602.</p>
+<h3 id="oceanic-domain-over-the-salish-sea_1">Oceanic domain over the Salish Sea</h3>
+<p>The three-dimensional fields are provided on 39 depth levels in the Salish sea domain.</p>
+<p><strong>Depth levels (m)</strong>: 0.5, 1.5, 2.50001, 3.50003, 4.5000701, 5.5001502, 6.5003099, 7.5006199, 8.5012398, 9.50243, 10.5048, 11.5093, 12.5182, 13.5354, 14.569, 15.6343, 16.7612, 18.007099, 19.4818, 21.389999, 24.1003, 28.2299, 34.685799, 44.5177, 58.484299, 76.585602, 98.063004, 121.867, 147.089, 173.114, 199.573, 226.25999, 253.067, 279.935, 306.83401, 333.75, 360.67499, 387.603, 414.534.</p>
+<h2 id="list-of-variables">List of variables</h2>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/CIOPS_en.csv");
+</script>
+
+<p>Note: The unit <code>PSU</code> (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.</p>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

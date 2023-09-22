@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Readme en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#msc-open-data-faq" class="nav-link">MSC Open Data FAQ</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#table-of-content" class="nav-link">Table of Content</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-we-have-access-to-the-verification-scores-of-your-numerical-weather-prediction-models-and-how-do-they-compare-with-other-international-centres" class="nav-link">Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#i-would-like-to-use-your-data-for-profit-am-i-allowed-to-do-so" class="nav-link">I would like to use your data for profit, am I allowed to do so ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp" class="nav-link">Why are message queues terminated after several hours of inactivity when using AMQP ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-weather-radar-data" class="nav-link">Can I have weather radar data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-archived-radar-data" class="nav-link">Can I have archived radar data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available" class="nav-link">Are historical data forecasts from your numerical weather prediction models available ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-be-informed-of-any-change-to-bulletins-or-model-format-and-or-content" class="nav-link">How to be informed of any change to bulletins or model format and or content ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-be-informed-about-problems-with-model-data-production" class="nav-link">How to be informed about problems with model data production ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-not-produce-just-one-big-grib-file-with-all-the-variables" class="nav-link">Why not produce just one big GRIB file with all the variables ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-is-the-reference-coordinate-system-or-datum-of-a-numerical-weather-prediction-model" class="nav-link">What is the reference coordinate system or datum of a numerical weather prediction model ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-the-topography-of-a-numerical-weather-prediction-model" class="nav-link">Can I have the topography of a numerical weather prediction model ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-the-land-sea-mask-of-a-numerical-weather-prediction-model" class="nav-link">Can I have the land sea mask of a numerical weather prediction model ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#is-it-possible-to-access-numerical-weather-prediction-parameters-other-than-those-currently-available-on-the-msc-datamart-or-is-the-list-exhaustive" class="nav-link">Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-snow-water-equivalent-data" class="nav-link">Can I have snow water equivalent data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#in-the-numerical-weather-prediction-systems-changelog-i-see-several-systems-eg-resps-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data" class="nav-link">In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-is-the-difference-between-the-two-sets-of-observational-data-available-on-the-msc-datamart" class="nav-link">What is the difference between the two sets of observational data available on the MSC Datamart ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-often-are-the-observational-data-collected-by-province-and-territory-refreshed" class="nav-link">How often are the observational data collected by province and territory refreshed ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-buoys-data" class="nav-link">Can I have buoys data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-access-to-weather-warnings" class="nav-link">Can I have access to weather warnings ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retrieve-alerts" class="nav-link">What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-satellite-images" class="nav-link">Can I have satellite images ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#are-lightning-data-available" class="nav-link">Are lightning data available ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-json-minimum-and-maximum-forecast-temperature" class="nav-link">Can I have JSON minimum and maximum forecast temperature ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-have-rainfall-amount-data" class="nav-link">Can I have rainfall amount data ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal" class="nav-link">I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#is-it-possible-to-access-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index" class="nav-link">Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#is-there-a-discussion-platform-for-users" class="nav-link">Is there a discussion platform for users ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; FAQ</p>
+<h1 id="msc-open-data-faq">MSC Open Data FAQ</h1>
+<p>This section contains the most frequently asked questions about the MSC open data.</p>
+<h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="#can-we-have-access-to-the-verification-scores-of-your-numerical-weather-prediction-models-and-how-do-they-compare-with-other-international-centres">Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?</a></li>
+<li><a href="#i-would-like-to-use-your-data-for-profit-am-i-allowed-to-do-so">I would like to use your data for profit, am I allowed to do so ?</a></li>
+<li><a href="#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp">Why are message queues terminated after several hours of inactivity when using AMQP ?</a></li>
+<li><a href="#can-i-have-weather-radar-data">Can I have weather radar data ?</a></li>
+<li><a href="#can-i-have-archived-radar-data">Can I have archived radar data ?</a></li>
+<li><a href="#are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available">Are historical data forecasts from your numerical weather prediction models available ?</a></li>
+<li><a href="#how-to-be-informed-of-any-change-to-bulletins-or-numerical-weather-prediction-model-format-and-content">How to be informed of any change to bulletins or numerical weather prediction model format and content ?</a></li>
+<li><a href="#how-to-be-informed-about-problems-with-numerical-weather-prediction-model-data-production">How to be informed about problems with  numerical weather prediction model data production ?</a></li>
+<li><a href="#why-not-produce-just-one-big-grib-file-with-all-the-variables">Why not produce just one big GRIB file with all the variables ?</a></li>
+<li><a href="#what-is-the-reference-coordinate-system-or-datum-of-a-numerical-weather-prediction-model">What is the reference coordinate system or datum of a numerical weather prediction model ?</a></li>
+<li><a href="#can-i-have-the-topography-of-a-numerical-weather-prediction-model">Can I have the topography of a numerical weather prediction model ?</a></li>
+<li><a href="#can-i-have-the-land-sea-mask-of-a-numerical-weather-prediction-model">Can I have the land sea mask of a numerical weather prediction model ?</a></li>
+<li><a href="#is-it-possible-to-access-numerical-weather-prediction-parameters-other-than-those-currently-available-on-the-msc-datamart-or-is-the-list-exhaustive">Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?</a></li>
+<li><a href="#can-i-have-snow-water-equivalent-data">Can I have snow water equivalent data ?</a></li>
+<li><a href="#in-the-numerical-weather-prediction-systems-changelog-i-see-several-systems-e-g-SRPEOT-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data">In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?</a></li>
+<li><a href="#what-is-the-difference-between-the-two-sets-of-observational-data-available-on-the-msc-datamart">What is the difference between the two sets of observational data available on the MSC Datamart ?</a></li>
+<li><a href="#how-often-are-the-observational-data-collected-by-province-and-territory-refreshed">How often are the observational data collected by province and territory refreshed ?</a></li>
+<li><a href="#can-i-have-buoys-data">Can I have buoys data ?</a></li>
+<li><a href="#can-i-have-access-to-weather-warnings">Can I have access to weather warnings ?</a></li>
+<li><a href="#what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retreive-alerts">What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?</a></li>
+<li><a href="#can-i-have-satellite-images">Can I have satellite images ?</a></li>
+<li><a href="#are-lightning-data-available">Are lightning data available ?</a></li>
+<li><a href="#can-i-have-json-minimum-and-maximum-forecast-temperature">Can I have JSON minimum and maximum forecast temperature ?</a></li>
+<li><a href="#can-i-have-rainfall-amount-data">Can I have rainfall amount data ?</a></li>
+<li><a href="#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal">I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?</a></li>
+<li><a href="#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index">Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?</a></li>
+<li><a href="#is-there-a-discussion-platform-for-users">Is there a discussion platform for users ?</a></li>
+</ul>
+<h2 id="can-we-have-access-to-the-verification-scores-of-your-numerical-weather-prediction-models-and-how-do-they-compare-with-other-international-centres">Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?</h2>
+<p>The <a href="https://www.ecmwf.int/">European Centre for Medium-Range Weather Forecasting (ECMWF)</a>, designated in 2011 as the <a href="https://confluence.ecmwf.int/pages/viewpage.action?pageId=24316358&amp;src=sidebar">WMO Lead Centre for Deterministic NWP Verification</a>, makes available all altitude and surface scores of all centres participating in the <a href="https://public.wmo.int/en">World Meteorological Organization (WMO)</a> score exchange.</p>
+<p>Thus, it is possible to obtain <a href="https://apps.ecmwf.int/wmolcdnv/scores/time_series/msl">upper air scores</a> from Environment and Climate Change Canada's forecast models and compare them to the scores of other centres, according to the desired domain (e.g. northern hemisphere), for the parameters of interest (e.g. temperature at 850hPa), from 1998 to the present.</p>
+<p>In addition, we publish daily <a href="https://weather.gc.ca/verification/index_e.html">scores against radiosonde observations and against model analyses</a> for the <a href="../../msc-data/nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> and the <a href="../../msc-data/nwp_rdps/readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a>, following the standards defined by the WMO.</p>
+<h2 id="i-would-like-to-use-your-data-for-profit-am-i-allowed-to-do-so">I would like to use your data for profit, am I allowed to do so ?</h2>
+<p>Yes, it is possible to use our data for profit-making purposes. You will find all the information you need to use our data in the <a href="../../licence/readme_en/">user licence</a>.</p>
+<h2 id="why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp">Why are message queues terminated after several hours of inactivity when using AMQP ?</h2>
+<p>Users of the <a href="../../msc-datamart/amqp_en/">AMQPS</a> service are supposed to run a daemon that downloads data continuously, such as the one provided by <a href="https://github.com/MetPX/sarracenia/blob/master/doc/sarra.rst">Sarracenia</a>. In the AMQP language, a pump, i.e. a host running Sarracenia, is a <a href="https://github.com/MetPX/sarracenia/blob/master/doc/Install.rst">broker</a>. The broker has a limited ability to queue products when a user experiences a long unintended interruption, for example, from a few hours to a few days. 
+The performance of the overall service is affected by the presence of large queues for a single consumer, so queues should not be allowed to build up indefinitely. </p>
+<p>We keep the queues alive as long as we can reasonably do so, but this practice is only intended to give customers time to restart their service in the event of a failure. The length of disconnections that can be safely supported depends on the number of products subscribed to, which in turn determines the number of products queued. Typically, when there is a queue of more than 25,000 products and there are no customers, the queue is purged.</p>
+<p>In general, it is preferable to use continuous access rather than periodic access, as this eliminates server download and load bandwidth spikes and reduces the risk of queues being purged on the server. Careful use of the "subtopic" directive in configurations will reduce the size of the queues, so that they can remain active during long interruptions.</p>
+<h2 id="can-i-have-weather-radar-data">Can I have weather radar data ?</h2>
+<p>The weather radar data that we freely provide to the public are the <a href="../../msc-data/obs_radar/readme_radar_geomet_en/">North American Radar Composite and Extrapolation</a> via GeoMet-Weather Geospatial Web Services. The North American Radar Composite is available every 6 minutes for the past 3 hours. We also offer the <a href="../../msc-data/obs_radar/readme_radarimage-datamart_en/">GIF images</a> on the MSC open data server. <a href="../../msc-data/obs_radar/readme_radar_en/">Documentation of radar observations</a> can be consulted for other radar data and products.</p>
+<p>The raw data, as well as various other products, are provided by a <a href="../../cost-recovered/readme_en/#dedicated-data-feed">cost-recovered service</a>. As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf">radar products</a> and <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf">radar data formats</a> is available.</p>
+<p>For the data feeds, the following formats are available:</p>
+<ul>
+<li>NUMERIC (ASCII)</li>
+<li>GIF format (recent GIFs available for free on the MSC Datamart)</li>
+<li><a href="http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx">IRIS</a> raw format for the old C-Band radars </li>
+<li><a href="https://portal.hdfgroup.org/display/HDF5/HDF5">ODIM_H5</a> raw format for the new S-band radars</li>
+</ul>
+<h2 id="can-i-have-archived-radar-data">Can I have archived radar data ?</h2>
+<p>Environment and Climate Change Canada does not have an online service to retrieve archived data.</p>
+<p>The data retrieval service from our archive is under a <a href="../../cost-recovered/readme_en/#archived-data-retrieval">cost recovery policy</a>. We charge 118$/hour, with a minimum charge of 118$, to retrieve/recreate the requested data.</p>
+<p>Archive data are available in either raw format (IRIS/ODIM_H5) or products in ASCII format. Documentation regarding <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf">radar products</a> and <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf">radar data formats</a> is available.</p>
+<p>Typical archived data retrieval requests require between 2-4 hours to process. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca</p>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radar name(s)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Product type (Raw, CAPPI, PRECIP, ECHOTOP, etc.)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Unit (dBZ, mm/hr)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Format (GIF, Numeric, IRIS/ODIM_H5)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Period (UTC)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Frequency (default: 10 minutes)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Delivery format (zip, tar, other)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Expected delivery date (when?)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Other information</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Billing name and coordinates</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available">Are historical data forecasts from your numerical weather prediction models available ?</h2>
+<p>Environment and Climate Change Canada does not have an online service to retrieve archived data.</p>
+<p>The data retrieval service from our archive is under a <a href="../../cost-recovered/readme_en/#archived-data-retrieval">cost recovery policy</a>. We charge 118$/hour, with a minimum of 118$, to retrieve/recreate the requested data. The corresponding open data, if any, are themselves free.</p>
+<p>Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca</p>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model (e.g. GDPS, RDPS, HRDPS, GIOPS)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Data type (forecast, analysis or map)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Weather variables (e.g. WIND_TGL_40m)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Dates (e.g. 2006-01-01 to 2008-12-31 )</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Run hours (e.g. 00Z, 12Z)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Forecast hours (e.g. 000, 003, 006)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Data domain (user defined lat-lon box, existing MSC Datamart domain)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Horizontal spatial resolution (e.g. 10km/0.24 degrees)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Levels (surface, isobaric levels, meters above ground)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Delivery mode  FTP</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Contact name and billing coordinates</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<ul>
+<li>Forecast data are archived for 5 years. Other types of data (analyses for example) may have longer retention periods.</li>
+<li>Given the large volume of requests, a certain delay is to be expected. Please indicate if the request is urgent, we will try to prioritize it.</li>
+</ul>
+<h2 id="how-to-be-informed-of-any-change-to-bulletins-or-model-format-and-or-content">How to be informed of any change to bulletins or model format and or content ?</h2>
+<p>For Canadian station bulletins, any change in the heading and station name is announced via what we call a GENOT (GEneral NOTification) message. We have a mailing list to distribute GENOTs for station and header changes. If you are interested in this e-mail notification, please send us your e-mail and we will add it to this mailing list.</p>
+<p>In parallel, these <a href="https://dd.meteo.gc.ca/doc/genots/">bulletins are available on the MSC Datamart</a>.</p>
+<p>To be advised of major changes, such as model resolution, you can subscribe to the GENOT 03 mailing list.
+You can find an <a href="https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117">example of a GENOT 03 bulletin</a>.</p>
+<p><a href="https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117"></a></p>
+<p>Finally, we strongly recommend to subscribe to our mailing lists <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> and <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> to be warned of any updates or changes regarding the data availability.</p>
+<h2 id="how-to-be-informed-about-problems-with-model-data-production">How to be informed about problems with model data production ?</h2>
+<p>Occasionally, NWP model data are late or even absent from our data dissemination services. To find out if this delay or absence is due to a production problem, you can consult the AACN01 CWAO bulletins.  These are bulletins issued by the CCPEC as required to inform MSC offices and other clients of any problems that may disrupt or delay the issuance and/or distribution of operational products.</p>
+<p>To view the latest AACN01 CWAO bulletins, you can use the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf">Script Search Utility</a> provided by ECCC. <a href="https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&amp;location=CN01">Example to obtain the current AACN01 bulletins</a>. For a specific day, you can refine your search. <a href="https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&amp;location=CN01&amp;day=26&amp;month=11&amp;year=2022">Example to get the information for November 26, 2022</a>.</p>
+<p>There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at ec.dps-client.ec@canada.ca and we will add you to the mailing list.</p>
+<h2 id="why-not-produce-just-one-big-grib-file-with-all-the-variables">Why not produce just one big GRIB file with all the variables ?</h2>
+<p>Environment and Climate Change Canada opted to put one variable per file because we presumed that most users would not require all the variables. This will then reach the same download speed as if all the GRIB files were in a single zip file.</p>
+<h2 id="what-is-the-reference-coordinate-system-or-datum-of-a-numerical-weather-prediction-model">What is the reference coordinate system or datum of a numerical weather prediction model ?</h2>
+<p>To know the reference coordinate system of a numerical weather prediction model and the projection used to produce our numerical weather prediction files, just use the <a href="https://www.gdal.org/GDAL">GDAL</a> tools (free software). The following command will provide you with the reference coordinate system and the projection of the file: <code>gdalinfo -proj4 file.grib2</code>.</p>
+<p>The output information starts with <code>The coordinates system is:</code>. This command also gives access to the projection in Proj4 format which is commonly used in geospatial tools.</p>
+<h2 id="can-i-have-the-topography-of-a-numerical-weather-prediction-model">Can I have the topography of a numerical weather prediction model ?</h2>
+<p>The topography of a numerical weather prediction model whose data is available in GRIB2 format can be obtained using the <code>HGT_SFC</code> parameter (smoothed topography of the model).</p>
+<h2 id="can-i-have-the-land-sea-mask-of-a-numerical-weather-prediction-model">Can I have the land sea mask of a numerical weather prediction model ?</h2>
+<p>You can use the variable <code>LAND_SFC</code> (Land cover) of prognostic hour 00 to determine this mask. When the value is 0, it is sea, when the value is not 0, it is land (or portion of it).</p>
+<h2 id="is-it-possible-to-access-numerical-weather-prediction-parameters-other-than-those-currently-available-on-the-msc-datamart-or-is-the-list-exhaustive">Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?</h2>
+<p>The list is not exhaustive. We are always very open to receive feedback from users and to know their needs. It is possible to communicate with us via the email address: ec.dps-client.ec@canada.ca.</p>
+<h2 id="can-i-have-snow-water-equivalent-data">Can I have snow water equivalent data ?</h2>
+<p>The estimation of the snow mass is mainly valid for the ground. The GRIB parameter <code>SNOD</code> representing the snow depth on the ground is available as an aggregated value but the parameter <code>SDEN</code> (snow density) is only available for the fraction of soil. The <code>SNODxSDENxfactor</code> product for the units probably provides the best estimate currently available for snow water equivalent. Be aware that the <code>SDEN</code> parameter for the soil fraction may or may not be representative of snow density for other surface types.</p>
+<p>Therefore, the micro equation for calculating snow water equivalent in mm (equivalent to kg/m2) from the absolute density <code>SDEN</code> and the thickness <code>SNOD</code> is expressed as :</p>
+<ul>
+<li>If the thickness is given in "cm" and <code>SDEN</code> in "kg/m3", which we have at operations, then <code>SWE = (SNOD * SDEN) / 100</code>; <code>SWE</code> is in mm (or kg/m2, which is the equivalent for water)</li>
+<li>If the thickness is given in "m" and the <code>SDEN</code> in "kg/m3", then <code>SWE = SNOD * SDEN</code>; <code>SWE</code> is in mm (kg/m2)</li>
+</ul>
+<h2 id="in-the-numerical-weather-prediction-systems-changelog-i-see-several-systems-eg-resps-not-mentioned-in-the-list-of-systems-with-available-data-where-can-i-find-this-data">In the numerical weather prediction systems changelog, I see several systems (e.g. RESPS) not mentioned in the list of systems with available data, where can I find this data ?</h2>
+<p>This data is not yet available on the MSC Datamart. To be informed when new datasets are added, you can subscribe to the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd-info</a> and <a href="http://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info">GeoMet-Info</a> mailing lists.</p>
+<h2 id="what-is-the-difference-between-the-two-sets-of-observational-data-available-on-the-msc-datamart">What is the difference between the two sets of observational data available on the MSC Datamart ?</h2>
+<p>We have 2 products that contain observations from the Environment and Climate Change Canada station network.</p>
+<p>One is a one-station-per-file type, consisting of ground and marine weather observations per station, the <a href="../../msc-data/obs_station/readme_obs_insitu_swobdatamart_en/">SWOB data</a>, available in XML format. All Canadian station data are available in this product.</p>
+<p>The second one groups <a href="../../msc-data/obs_station/readme_obs_insitu_xmldatamart_en/">observational data from the same province or territory</a> by file, in XML format. Not all Canadian stations are contained in this product. This data is used in the official forecast web site weather.gc.ca. As a result, they are subject to certain rules (e.g. for winds, use of the average observed over a 2-minute period, if it is not possible to use a 10-minute average).</p>
+<p>Consequently, it is not really possible to compare these 2 sets of data and it is strongly recommended to use the SWOB data, which are more complete and subject to no rules, for the region of interest.</p>
+<h2 id="how-often-are-the-observational-data-collected-by-province-and-territory-refreshed">How often are the observational data collected by province and territory refreshed ?</h2>
+<p>The <a href="../../msc-data/obs_station/readme_obs_insitu_xmldatamart_en/">provincial summary files</a> are updated 6 times per hour, but the simple fact that we update them does not necessarily mean that any of the stations in the summary file have updated their data since the last run. We update the observations on an hourly (not minute-by-minute) basis for each station at the beginning of the hour, but another update (called a "special obs" or "speci") within the hour is also possible if the observer feels that there has been a change large enough to warrant an update. </p>
+<p>It is possible, for example, that the 1614Z file may not contain observations different from those in 1611Z, so the user should not always expect changes in values for an individual station within the hour. We present only the data we obtain and, in this case, most stations report only once per hour.</p>
+<h2 id="can-i-have-buoys-data">Can I have buoys data ?</h2>
+<p>Buoy data (marine observations) are available on the MSC Datamart at this address:</p>
+<p><a href="https://dd.meteo.gc.ca/observations/swob-ml/marine/moored-buoys">https://dd.meteo.gc.ca/observations/swob-ml/marine/moored-buoys</a></p>
+<p>You will find in the <a href="../../msc-data/obs_station/readme_obs_insitu_swobdatamart_en/">documentation</a>, a list of buoys currently available. Others will be added in the course of time.</p>
+<p>Daily reports of MSC buoys are also published on the <a href="http://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/msc-smc/index-eng.html">Fisheries and Oceans Canada website</a>. Information on <a href="http://www.dfo-mpo.gc.ca/science/data-donnees/drib-bder/index-eng.html">drifting buoys</a> is also available. </p>
+<p>Finally, these buoy data are accessible through the <a href="../../msc-data/bulletins/readme_bulletins-datamart_en/">alphanumeric bulletins</a> available on the MSC Datamart with SM/SN/SIVD17 headings.</p>
+<h2 id="can-i-have-access-to-weather-warnings">Can I have access to weather warnings ?</h2>
+<p>You can find information about Environment and Climate Change Canada's warning in several places :</p>
+<ul>
+<li>
+<p>First of all, the official warnings are available via the <a href="../../msc-data/alerts/readme_alerts-geomet_en/">geospatial web services GeoMet-Weather</a> and in <a href="https://dd.meteo.gc.ca/alerts/cap">CAP-XML format on the MSC Datamart</a>. The <a href="../../msc-data/alerts/readme_alerts-datamart_en/">documentation</a> details this data and also gives information on the alert criteria of the public forecast and geographical information of the forecast locations, for all messages in CAP format.</p>
+</li>
+<li>
+<p>In addition, ECCC has set up an <a href="https://weather.gc.ca/business/index_e.html#rss">ATOM news feed through which alerts and warnings are available</a>.</p>
+</li>
+<li>
+<p>Finally, ECCC has set up the <a href="https://ecalertme.weather.gc.ca/guides/quickstart_en.php">experimental EC Alert Me service</a> to send warnings by email. </p>
+</li>
+</ul>
+<h2 id="what-are-the-main-differences-between-rss-atom-feeds-and-amqp-protocol-to-retrieve-alerts">What are the main differences between RSS ATOM feeds and AMQP protocol to retrieve alerts ?</h2>
+<p>The main difference between RSS feeds (ATOM) and AMQP is that in the case of the RSS feed, user needs to send a request to know if new files
+are available, whereas with AMQP, user is advised without sending any request.</p>
+<p>If one wants to make an analogy, RSS feeds can be considered as a mailman who deposes letters in the mailbox, whereas AMQP can be considered as a delivery who rings at the door to give the postal package.</p>
+<p>We recommend to use the AMQP protocol if it is important for users to receive the announcement and data once available, also AMQP is a longer-term solution.</p>
+<h2 id="can-i-have-satellite-images">Can I have satellite images ?</h2>
+<p>Environment and Climate Change Canada does not provide satellite images or products to external users, apart those from our <a href="https://weather.gc.ca/satellite/index_e.html">web site</a>, as we are not the data producer.</p>
+<p>A recommended site for freely available satellite images is from the <a href="https://www.atmos.washington.edu/~ovens/loops/">University of Washington</a>.</p>
+<p>If you require a data feed of satellite images, we suggest users contact our U.S. counterparts at NOAA or to seek a provider in the private sector.</p>
+<h2 id="are-lightning-data-available">Are lightning data available ?</h2>
+<p>The lightning data currently available to the public free of charge are lightning flash density over Canada via <a href="../../msc-geomet/readme_en/">GeoMet-Weather geospatial web services</a>. We also offer <a href="../../msc-data/lightning/readme_lightning-datamart_en/">GeoTIFF data</a> on the MSC open data server.</p>
+<p><a href="https://weather.gc.ca/lightning/">The Canadian Lightning Danger Map</a> is available. Please note that you must manually update the website. It does not update itself, unlike the radar image site.</p>
+<p>If you are interested in purchasing real-time or archived lightning data from the Canadian Lightning Detection Network (CLDN), please contact our colleagues at ec.rcdf-cldn.ec@canada.ca . There is a cost for private companies. The price depends on the area they need for the live data and the duration of the archived data. If the customer sends the CLDN their specifications, an estimate of the cost will be forwarded (request sent to Vaisala). </p>
+<h2 id="can-i-have-json-minimum-and-maximum-forecast-temperature">Can I have JSON minimum and maximum forecast temperature ?</h2>
+<p>To obtain minimum and maximum forecast temperature data in JSON format, you can consult either:</p>
+<ul>
+<li>
+<p>Forecast bulletins FMCN31 to FMCN38 (JSON format), based on the <a href="../../msc-data/nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>. The forecast at 00Z contains the maximum for the current day, the minimum and maximum for the second day, and the minimum for the third day. The forecast at 12Z contains the minima and maxima of day two and day three.</p>
+</li>
+<li>
+<p>Forecast bulletins FMCN41 to FMCN48 (JSON format), based on the <a href="../../msc-data/nwp_rdps/readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a>. The 12Z forecast contains the minima and maxima of day two and the minima of day three. The forecast based on data at 00Z contains the maximum of the current day and the minimum and maximum of day two.</p>
+</li>
+</ul>
+<p>These bulletins are available on the MSC Datamart at the address: <a href="https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/">https://dd.weather.gc.ca/bulletins/alphanumeric/YYYYMMDD/FM/CWAO/</a> and on the GeoMet-OGC-API geospatial web services at the address: <a href="https://api.weather.gc.ca/collections/bulletins-realtime/items?limit=10&amp;startindex=0&amp;sortby=-datetime&amp;type=fm">https://api.weather.gc.ca/collections/bulletins-realtime/items?limit=10&amp;startindex=0&amp;sortby=-datetime&amp;type=fm</a></p>
+<h2 id="can-i-have-rainfall-amount-data">Can I have rainfall amount data ?</h2>
+<p>Regarding QPF (Quantitative Precipitation Forecast) data in CSV format, you may be interested in the FOCN03 bulletins, i.e. grid point forecasts of meteorological variables obtained from the direct outputs of the RDPS (Regional Deterministic Prediction System).</p>
+<p>Each of these bulletins is produced specifically for individual canadian forecast sites. The content is therefore variable. For example, values of forecast parameters are available at 6-hour intervals from 0 to 48 hours for some bulletins, and at 6-hour intervals from 0 to 24 hours and at 12-hour intervals from 24 to 48 hours for some others. The weather forecast elements may also vary from one message to another.</p>
+<p>These <a href="https://dd.meteo.gc.ca/bulletins/focn03">bulletins are available on the MSC Datamart</a>. A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf">bulletin search interface</a> for the Meteorological Service of Canada's HTTPS data server is also <a href="https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl">available</a>.</p>
+<p>Also, an optimal estimate of the amount of precipitation that has occurred during recent past periods of 6h or 24h is available through the <a href="../../msc-data/nwp_rdpa/readme_rdpa_en/">Regional Deterministic Precipitation Analysis</a> data. This estimate integrates readings from precipitation sensors, weather radar and numerical weather prediction models. The geographical coverage is North America (Canada, United States and Mexico).</p>
+<h2 id="i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal">I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?</h2>
+<p>Some weather stations are automatic (unmanned) and do not report the current condition. If you look to the corresponding page on our web site, for example <a href="https://weather.gc.ca/city/pages/ab-50_metric_e.html">Edmonton</a>, you will see that it is written <em>Not observed</em> for the condition.</p>
+<p>This is why there is no icon or condition reported in the corresponding Citypage XML file.</p>
+<h2 id="is-it-possible-to-access-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index">Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?</h2>
+<p>In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the <a href="http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en">National Air Pollution Surveillance (NAPS)</a> program, now on the ECCC data catalogue.</p>
+<p>Also, a number of Canadian stations are available in the U.S. <a href="https://www.airnow.gov/aqi-and-health/">AirNow</a> database, and are also downloadable from the Open Project <a href="https://openaq.org/#/map?parameter=o3&amp;_k=6p035e">OpenAQ</a>. On the other hand, ECCC publishes observations and forecasts for the Air Quality Health Index, which can be found in <a href="../../msc-data/aqhi/readme_aqhi_en/">the MSC Datamart and the GeoMet-OGC-API geospatial web services</a>.</p>
+<p>Finally, the <a href="https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html">National Pollutant Release Inventory</a> is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.</p>
+<h2 id="is-there-a-discussion-platform-for-users">Is there a discussion platform for users ?</h2>
+<p>A discussion platform dedicated to MSC open data has been set up by a third party to allow the user community to interact more easily and benefit from each other's experience:</p>
+<p><a href="http://meteocentre.com/help/msc-open-data/">http://meteocentre.com/help/msc-open-data/</a></p>
+<p>While we approve and applaud this initiative, we would like to make it clear that ECCC and MSC are not responsible for this site and their employees are not obligated to respond to the questions asked. When ECCC or MSC employees participate, they do so in their personal capacity.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

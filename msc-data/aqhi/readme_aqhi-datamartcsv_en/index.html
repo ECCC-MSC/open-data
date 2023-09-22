@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme aqhi datamartcsv en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#observation-and-forecast-data-generated-in-csv-format-for-the-air-quality-health-index-aqhi-program" class="nav-link">Observation and forecast data generated in CSV format for the Air Quality Health Index (AQHI) program</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-retention" class="nav-link">Data retention</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-content" class="nav-link">File content</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notes" class="nav-link">Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_aqhi-datamartcsv_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_aqhi_en/">AQHI</a> &gt; AQHI data in CSV on MSC Datamart</p>
+<h1 id="observation-and-forecast-data-generated-in-csv-format-for-the-air-quality-health-index-aqhi-program">Observation and forecast data generated in CSV format for the Air Quality Health Index (AQHI) program</h1>
+<p>This page describes the observation and forecast data available in CSV format for the <a href="../readme_aqhi_en/">Air Quality Health Index AQHI</a> that are also available on the <a href="https://meteo.gc.ca/airquality/pages/index_e.html">Environment and Climate Change Canada website</a>. </p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples for accessing and using the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a CSV file.</p>
+<p>The data can be accessed at the following address:</p>
+<ul>
+<li>
+<p><strong>Observations</strong>: </p>
+<ul>
+<li>
+<p>Files in real time:</p>
+<ul>
+<li>Atlantic region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/csv">https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/realtime/csv</a></li>
+<li>Ontario region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/csv">https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/realtime/csv</a></li>
+<li>Prairie and Northern Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv">https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv</a></li>
+<li>Pacific and Yukon Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv">https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv</a></li>
+<li>Quebec region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/que/observation/realtime/csv">https://dd.weather.gc.ca/air_quality/aqhi/que/observation/realtime/csv</a></li>
+</ul>
+</li>
+<li>
+<p>Monthly files: </p>
+<ul>
+<li>Atlantic region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/atl/observation/monthly/csv</a></li>
+<li>Ontario region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/ont/observation/monthly/csv</a></li>
+<li>Prairie and Northern Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv</a></li>
+<li>Pacific and Yukon Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv</a></li>
+<li>Quebec region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/que/observation/monthly/csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Public forecasts</strong>:</p>
+<ul>
+<li>
+<p>Monthly files: </p>
+<ul>
+<li>Atlantic region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv</a></li>
+<li>Ontario region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv</a></li>
+<li>Prairie and Northern Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv</a></li>
+<li>Pacific and Yukon Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv</a></li>
+<li>Quebec region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv">https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/monthly/csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Data from numerical models</strong>:</p>
+<ul>
+<li>Atlantic region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv">https://dd.weather.gc.ca/air_quality/aqhi/atl/forecast/model/csv</a></li>
+<li>Ontario region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/model/csv">https://dd.weather.gc.ca/air_quality/aqhi/ont/forecast/model/csv</a></li>
+<li>Prairie and Northern Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/model/csv">https://dd.weather.gc.ca/air_quality/aqhi/pnr/forecast/model/csv</a></li>
+<li>Pacific and Yukon Region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv">https://dd.weather.gc.ca/air_quality/aqhi/pyr/forecast/model/csv</a></li>
+<li>Quebec region: <a href="https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv">https://dd.weather.gc.ca/air_quality/aqhi/que/forecast/model/csv</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="data-retention">Data retention</h2>
+<p>Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. Monthly CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE : ALL HOURS ARE IN UTC.</p>
+<ul>
+<li>
+<p><strong>Observations</strong>:</p>
+<ul>
+<li>Real-time files : YYYYYMMDDhh_AQHI_REGION_OBSTYPE.csv</li>
+<li>Monthly files : AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv</li>
+<li>Monthly files with backfilled data:  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv</li>
+</ul>
+</li>
+<li>
+<p>where: </p>
+<ul>
+<li><strong>YYYYY</strong> : Year of observation, 4 digits.</li>
+<li><strong>MM</strong> : Month of observation, 2 digits (January = 01).</li>
+<li><strong>JJ</strong> : Day of observation, 2 digits.</li>
+<li><strong>hh</strong> : Hour of observation, 2 digits.</li>
+<li><strong>mm</strong> : Minute of observation, 2 digits.</li>
+<li><strong>'MONTHLY'</strong> : Symbol that is present when the file contains data for the month.</li>
+<li><strong>REGION</strong> : Name of Environment and Climate Change Canada region where the observations are located. The possible values are as follows:<ul>
+<li>ATL' = Atlantic Region
+*'ON' = Ontario Region</li>
+<li>NRP' = Prairie and Northern Region</li>
+<li>PYR' = Pacific and Yukon Region</li>
+<li>'QC' = Quebec Region</li>
+</ul>
+</li>
+<li><strong>OBSTYPE</strong> : Type of observation in the file. The possible options are as follows:<ul>
+<li>'SiteObs' = The file contains AQHI observations for <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communities</a>,</li>
+<li>'StationObs' = The file contains AQHI observations for the associated observation stations to communities (not available in January 2012).</li>
+</ul>
+</li>
+<li><strong>'BACKFILLED'</strong> : Symbol that is present when the file contains AQHI observations that are not calculated in real time, but are calculated from the backfilled data or corrected (received within 48 hours of the validity time).</li>
+</ul>
+</li>
+<li>
+<p><strong>Public forecasts</strong>:</p>
+<ul>
+<li>AAAAMM_MONTHLY_AQHI_CGNDBcode_SiteFcst.csv</li>
+</ul>
+</li>
+<li>
+<p>where: </p>
+<ul>
+<li><strong>YYYYY</strong> : Year of forecast, 4 digits.</li>
+<li><strong>MM</strong> : Month of forecast, 2 digits (January = 01).</li>
+<li><strong>'MONTHLY'</strong> : Symbol that is present when the file contains data for the month.</li>
+<li><strong>CGNDB_code</strong> : A <a href="http://www4.rncan.gc.ca/search-place-names/unique">5-character code</a> that identifies each <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">community</a> in the AQHI. </li>
+<li><strong>'SiteFcst'</strong> : Symbol that is present to indicate that the file contains AQHI forecasts for a community.</li>
+</ul>
+</li>
+</ul>
+<p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson">complete list of cities</a>, with the codes of <a href="http://www4.rncan.gc.ca/search-place-names/unique">CGNDB</a>, Canadian toponymic data maintained by Natural Resources Canada, is available in GeoJSON format.</p>
+<ul>
+<li>
+<p><strong>Data from numerical models</strong>:</p>
+<ul>
+<li>AAAAMMDDhh_SPECIES_REGION_MODELTYPE.csv</li>
+</ul>
+</li>
+<li>
+<p>where:</p>
+<ul>
+<li><strong>YYYYY</strong> : Year for which data were generated, 4 digits.</li>
+<li><strong>MM</strong> : Month for which data were generated, 2 digits (January = 01).</li>
+<li><strong>DD</strong> : Day for which the data was generated, 2 digits.</li>
+<li><strong>hh</strong> : Hour for which the data was generated, 2 digits (00 or 12 UTC).</li>
+<li>'SPECIES': Name of the chemical species in the file. The possible options are as follows :<ul>
+<li>'O3' = Ozone</li>
+<li>'NO2' = Nitrogen dioxide</li>
+<li>PM2.5' = Particles with a diameter of less than 2.5 um</li>
+<li>'PM10' = Particles with a diameter of less than 10 um</li>
+<li>'AQHI' = Air Quality Health Index</li>
+</ul>
+</li>
+<li><strong>REGION</strong> : Name of the Environment and Climate Change Canada region for which the data are valid. The values
+possible are as follows:<ul>
+<li>'ATL' = Atlantic Region,</li>
+<li>'ON' = Ontario Region,</li>
+<li>'PNR'' = Prairie and Northern Region,</li>
+<li>'PYR' = Pacific and Yukon Region,</li>
+<li>'QC' = Quebec Region;</li>
+</ul>
+</li>
+<li><strong>MODELTYPE</strong> : Indicates the system used to generate the data. The possible options are as follows:<ul>
+<li>'AQFM' = Air quality prediction model.</li>
+<li>'UMOSAQ' = the "Updateable Model Output Statistics" post-processing system applied to the raw outputs of the AQFM.</li>
+<li>'UMOSAQMIST' = the combined data of the AQFM and UMOSAQ systems; generated to provide additional information to meteorologists because UMOSAQ data are not always directly available at observation points.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="file-content">File content</h2>
+<ul>
+<li>
+<p><strong>CSV files with AQHI observations calculated from pollutant data received in real-time</strong> (for files in "real-time" and "MONTHLY" format):</p>
+<ul>
+<li><strong>Header</strong> </li>
+</ul>
+</li>
+</ul>
+<p>The header is given on the first line and contains the following information:</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Hour</th>
+<th>CGNDB_Site1</th>
+<th>CGNDB_Site2</th>
+<th>...</th>
+<th>CGNDB_SiteN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>where:</p>
+<ul>
+<li>'Date': Fixed string</li>
+<li>'Hour': Fixed string</li>
+<li>CGNDB_Site#: A 5-letter CGNDB code that identifies each <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">AQHI community</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Data block</strong></p>
+</li>
+</ul>
+<p>Observations are provided with an accuracy of two decimal. Each line of a data block contains the following information:</p>
+<table>
+<thead>
+<tr>
+<th>YYYYY-MM-DD</th>
+<th>hh</th>
+<th>AQHI_Site1</th>
+<th>AQHI_Site2</th>
+<th>...</th>
+<th>AQHI_SiteN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>where:</p>
+<ul>
+<li>YYYYY: The year of observation.</li>
+<li>MM: The month of observation.</li>
+<li>DD: The day of observation.</li>
+<li>hhh: Hour for observation.</li>
+<li>AQHI_Site#: AQHI observations for all <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communities</a> in the region.</li>
+</ul>
+</li>
+</ul>
+<p>Note: For real-time files, AQHI observations cover the latest seven days with the most recent observation on the first line. They are available on the MSC Datamart for a period of 48 hours. For "MONTHLY" files, the AQHI observations cover the period from month end (first line) to beginning of the month (in the last line). They are available on the MSC Datamart for a period of time of 12 months.</p>
+<ul>
+<li><strong>CSV files with AQHI observations calculated from backfilled or corrected data</strong> (only files in "MONTHLY" format):</li>
+</ul>
+<p>These products have the same description as for the "MONTHLY" files provided in 2.1.1. However, the content is different in that the AQHI values are calculated 48 hours after the validity time for allow the arrival of missing data and corrections for pollutants. </p>
+<ul>
+<li>
+<p><strong>CSV files with public AQHI forecasts</strong> (only "MONTHLY" files) :</p>
+<ul>
+<li><strong>Header</strong></li>
+</ul>
+</li>
+</ul>
+<p>The header is given on the first line and contains the following information:</p>
+<table>
+<thead>
+<tr>
+<th>cgndb code</th>
+<th>community name</th>
+<th>issue date</th>
+<th>issue time</th>
+<th>period</th>
+<th>period</th>
+<th>value</th>
+<th>amended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>where the values are all the symbols that describe the content of the following lines.</p>
+<ul>
+<li><strong>Data block</strong></li>
+</ul>
+<p>Public forecasts are provided in whole numbers.</p>
+<table>
+<thead>
+<tr>
+<th>CGNDBcode</th>
+<th>CommunityName</th>
+<th>IssueDate</th>
+<th>IssueTime</th>
+<th>ForecastPeriod</th>
+<th>Value</th>
+<th>AmendmentFlag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>where:</p>
+<ul>
+<li>CGNDBcode: a 5-character code that identifies each <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">AQHI community</a>. </li>
+<li>CommunityName: the name used to identify the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">community</a> associated with the CGNDB code, for which the forecast is valid,</li>
+<li>IssueDate: the day for which the forecast was issued (YYYY-MM-DD),</li>
+<li>IssueTime: the exact time the forecast was issued (hh:mm:ss),</li>
+<li>ForecastPeriod: integer with a value of 1, 2, or 3, which represents the forecast period ("Today", "Tonight and Night", or "Tomorrow", respectively),</li>
+<li>for forecasts issued at 06:00 (local time): 1=Today, 2=Today and tonight, 3=Tomorrow</li>
+<li>for forecasts issued at 17:00 (local time): 2=This evening and tonight, 3=Tomorrow</li>
+<li>Value: value of the AQHI forecast for the forecast period in question,</li>
+<li>AmendmentFlag: integer with a value of 0 for the first emission of the forecast and which is incremented by +1 for each subsequent amendment.       </li>
+</ul>
+</li>
+</ul>
+<p>Note: In these "MONTHLY" files, AQHI public forecasts are written with the most recent issue (at the end of the month) in the first line and they proceed to move back in time to the first issue (at the beginning of the month) in the last line. They are available on the MSC Datamart for a period of 12 months.</p>
+<ul>
+<li>
+<p><strong>CSV files that contain model data</strong>:</p>
+<ul>
+<li><strong>Header</strong></li>
+</ul>
+</li>
+</ul>
+<p>The header is given on the first line and contains the following information :</p>
+<p>1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):</p>
+<table>
+<thead>
+<tr>
+<th>stationId</th>
+<th>forecast date (time 0)</th>
+<th>forecast date (time 1)</th>
+<th>...</th>
+<th>forecast date (time48)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>2) For files that contain AQHI data:</p>
+<table>
+<thead>
+<tr>
+<th>cgndb</th>
+<th>forecast date (hour0)</th>
+<th>forecast date (hour1)</th>
+<th>...</th>
+<th>forecast date (hour47)</th>
+<th>forecast date (hour48)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>where:</p>
+<ul>
+<li>"stationId" is a symbol that states that the values in the first column identify stations in the region of interest;</li>
+<li>"cgndb" is a symbol that states that the values in the first column identify the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communities</a> in the region of interest;</li>
+<li>The 49 values following stationId are the dates (format=YYYYYMMDDhh) that define the forecast time (H+000 to H+048) of the model and are applicable to all stations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data block</strong></p>
+</li>
+</ul>
+<p>Model data for all species are provided to 2 decimal.</p>
+<p>Each line of a data block contains the following information:</p>
+<p>1) For files that contain pollutant data (O3, NO2, PM2.5, PM10):</p>
+<table>
+<thead>
+<tr>
+<th>StationID</th>
+<th>Value (H+000)</th>
+<th>Value (H+001)</th>
+<th>...</th>
+<th>Value (H+047)</th>
+<th>Value (H+048)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>2) For files that contain AQHI data:</p>
+<table>
+<thead>
+<tr>
+<th>StationID</th>
+<th>Value (H+000)</th>
+<th>Value (H+001)</th>
+<th>...</th>
+<th>Value (H+047)</th>
+<th>Value (H+048)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>where:</p>
+<ul>
+<li>StationID: NAPS ID that identifies the observation station to which the model data is provided.</li>
+<li>CGNDBcode: a 5-character code that identifies each <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">AQHI community</a>. A list of CGNDB codes is given at the end of this file.</li>
+<li>Value (H+000 to H+048): model value derived at the observation station (for UMOSAQ) or interpolated at the observation station (for AQFM, UMOSAQMIST). </li>
+</ul>
+</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. "MONTHLY" CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.</p>
+</li>
+<li>
+<p>In the CSV files for the AQHI, the value of the first hour is always missing because the AQHI formula requires a minimum of two hours in the last 3 hours to calculate moving averages.</p>
+</li>
+<li>
+<p>In CSV files for UMOSAQ, it is possible that some values are missing since UMOS guidance may not be available for all hours. The availability of UMOS guidance for a specfic hour is dependent upon having sufficient historical data to be able to generate reliable predictive statistical equations.</p>
+</li>
+<li>
+<p>Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: <a href="https://dd.weather.gc.ca/air_quality/aqhi/que/observation/">https://dd.weather.gc.ca/air_quality/aqhi/que/observation/</a>. However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: <a href="https://www.airnowtech.org/index.cfm?page=login">https://www.airnowtech.org/index.cfm?page=login</a>.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> list</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

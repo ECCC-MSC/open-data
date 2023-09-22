@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme nowcasting datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#matrices-scribe-de-previsions-immediates" class="nav-link">Matrices Scribe de prévisions immédiates</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#donnees" class="nav-link">Données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_nowcasting-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_nowcasting_fr/">Prévisions immédiates</a> &gt; Prévisions immédiates sur le Datamart du SMC</p>
+<h1 id="matrices-scribe-de-previsions-immediates">Matrices Scribe de prévisions immédiates</h1>
+<p>Les fichiers de <a href="../readme_nowcasting_fr/">matrices de prévisions immédiates</a> sont mis à jour à chaque heure et contiennent un ensemble cohérent d'éléments du temps observés et prévus à très court terme pour des points de prévision correspondant généralement à des sites de stations d'observation. Il y a plus de 450 points de prévision dans la matrice.</p>
+<p>Les observations horaires de surface (METAR-SPECI) et synoptiques sont traités ainsi que les observations de foudre.</p>
+<p>On utilise des modèles de prévision numérique du temps, des modèles statistiques ainsi que des système de prévisions immédiates de pair avec les observations pour préparer les données prévues. </p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
+<p>Les données sont accessibles à adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/nowcasting/matrices/">https://dd.meteo.gc.ca/nowcasting/matrices/</a></li>
+</ul>
+<p>Un historique de 24 heures est conservé dans ce répertoire.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
+<p>Les fichiers ont la nomenclature suivante :</p>
+<p>SCRIBE.NWCSTG.10.24.06Z.n.Z</p>
+<p>où :</p>
+<ul>
+<li><strong>SCRIBE</strong> : Nom du système principal de production</li>
+<li><strong>NWCSTG</strong> : Identification du type de données (ici Prévisions immédiates) des matrices présentes dans le fichier</li>
+<li><strong>10.24.06Z</strong> : MM.DD.HHZ MM: Mois, DD: date. HH: Heure UTC de la passe. Z:  Identificateur UTC</li>
+<li><strong>n</strong> : Extension de fichier identifiant le type Prévisions immédiates</li>
+<li><strong>Z</strong> : Identificateur de compression Unix</li>
+</ul>
+<h2 id="donnees">Données</h2>
+<h3 id="exemple-et-description-du-contenu-dune-matrice-de-prevision-immediate">Exemple et description du contenu d'une matrice de prévision immédiate.</h3>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE</td>
+<td>HR</td>
+<td>/10</td>
+<td></td>
+<td>PCPN1</td>
+<td>POP</td>
+<td>PCPN2</td>
+<td>POP</td>
+<td>PCPN3</td>
+<td>POP</td>
+<td></td>
+<td>Qp</td>
+<td>Tp</td>
+<td>T</td>
+<td>Td</td>
+<td>DD</td>
+<td>VV</td>
+<td>GST</td>
+<td>(SM)</td>
+<td>TP</td>
+</tr>
+<tr>
+<td>20040122 0200</td>
+<td>10</td>
+<td>41</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-8.0</td>
+<td>200</td>
+<td>22</td>
+<td>33</td>
+<td>2.00</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0300</td>
+<td>10</td>
+<td>24</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-7.0</td>
+<td>200</td>
+<td>15</td>
+<td></td>
+<td>1.75</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0400</td>
+<td>10</td>
+<td>23</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>200</td>
+<td>17</td>
+<td></td>
+<td>2.50</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0500</td>
+<td>9</td>
+<td>25</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>90</td>
+<td>0.0</td>
+<td></td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>206</td>
+<td>17</td>
+<td></td>
+<td>7.98</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0600</td>
+<td>9</td>
+<td>87</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td></td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>190</td>
+<td>11</td>
+<td></td>
+<td>12.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0700</td>
+<td>10</td>
+<td>50</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.0</td>
+<td></td>
+<td>-4.0</td>
+<td>-6.0</td>
+<td>185</td>
+<td>9</td>
+<td></td>
+<td>6.75</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0800</td>
+<td>10</td>
+<td>88</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.0</td>
+<td></td>
+<td>-3.0</td>
+<td>-5.0</td>
+<td>203</td>
+<td>17</td>
+<td></td>
+<td>10.21</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0900</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>60</td>
+<td>0.0</td>
+<td></td>
+<td>-2.7</td>
+<td>-5.1</td>
+<td>221</td>
+<td>18</td>
+<td>29</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1000</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>60</td>
+<td>0.0</td>
+<td></td>
+<td>-3.8</td>
+<td>-7.2</td>
+<td>229</td>
+<td>24</td>
+<td>34</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1100</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>30</td>
+<td>0.0</td>
+<td></td>
+<td>-4.8</td>
+<td>-7.5</td>
+<td>236</td>
+<td>30</td>
+<td>40</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1200</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td></td>
+<td>-5.9</td>
+<td>-8.6</td>
+<td>242</td>
+<td>36</td>
+<td>46</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1300</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>11</td>
+<td>0.0</td>
+<td></td>
+<td>-5.9</td>
+<td>-8.7</td>
+<td>252</td>
+<td>38</td>
+<td>48</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1400</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>15</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-8.8</td>
+<td>261</td>
+<td>39</td>
+<td>49</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1500</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-9.4</td>
+<td>270</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1600</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>22</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>274</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1700</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>278</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1800</td>
+<td>10</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.5</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>282</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1900</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.4</td>
+<td>SN</td>
+<td>-6.7</td>
+<td>-10.8</td>
+<td>281</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 2000</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-7.3</td>
+<td>-11.7</td>
+<td>279</td>
+<td>40</td>
+<td>50</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Dans cet exemple la séquence de données commence à 02Z puis est suivie par 6 heures d'observations précédentes l'heure de la passe 08Z, puis se termine 12 heures plus tard à 20Z, pour totaliser 19 heures de données (6 heures de données passées, plus l'heure courante d'observation (moment de la passe) et 12 heures de données prévues)</p>
+<h3 id="description-des-colonnes-de-gauche-a-droite">Description des colonnes de gauche à droite.</h3>
+<p><strong>Colonne no. :</strong></p>
+<p><strong>1 &amp; 2</strong> : Les deux premières colonnes donne la date et l'heure. Le moment de la
+       passe courante est la 7e ligne de la matrice (celle entre les deux lignes en pointillés)</p>
+<p><strong>3 &amp; 4</strong> : la colonne 3 donne la nébulosité du ciel en dixièmes, et la colonne 4
+       la hauteur du plafond en  centaines de pieds. Si aucun plafond n'est prévu le code «999» 
+       sera utilisé. Notez que cette valeur du plafond est là seulement pour des raisons techniques et 
+       n'est pas très fiable, certainement pas pour la prévision à l'aviation.</p>
+<p><strong>5, 6, 7, 8, 9, 10</strong> : Ces six colonnes représentes les types de précipitations
+       avec leur probabilité d'occurrence, qui ne doit pas être confondu avec la
+       probabilité globale des précipitations située dans la colonne 11 (POP). 
+       La probabilité de précipitations du type donne la probabilité
+       d'occurrence de ce type, dans l'exemple, seulement de la neige et des
+       averses de neige sont observées et les prévues, avec une probabilité
+       de 100%. La valeur totale sera jamais plus grande que 100%.</p>
+<table>
+<thead>
+<tr>
+<th>(P): prévue</th>
+<th>(O): observée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Averses de pluie</td>
+<td>RW  (P &amp; O)</td>
+</tr>
+<tr>
+<td>Pluie</td>
+<td>R   (P &amp; O)</td>
+</tr>
+<tr>
+<td>Averses de neige</td>
+<td>SW  (P &amp; O)</td>
+</tr>
+<tr>
+<td>Neige</td>
+<td>S   (P &amp; O)</td>
+</tr>
+<tr>
+<td>Bruine</td>
+<td>L   (P &amp; O)</td>
+</tr>
+<tr>
+<td>Pluie verglaçante</td>
+<td>ZR  (P &amp; O)</td>
+</tr>
+<tr>
+<td>Bruine verglaçant</td>
+<td>ZL  (P &amp; O)</td>
+</tr>
+<tr>
+<td>Averse de grésil</td>
+<td>IPW (P &amp; O)</td>
+</tr>
+<tr>
+<td>Grésil</td>
+<td>IP  (P &amp; O)</td>
+</tr>
+<tr>
+<td>Tonner</td>
+<td>T   (P &amp; O)</td>
+</tr>
+<tr>
+<td>Grêle</td>
+<td>A   (P &amp; O)</td>
+</tr>
+<tr>
+<td>Non disponible</td>
+<td>NA  (P &amp; O)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L'intensité des précipitations est donnée par :</strong>
+* (-) très faible à faible
+* ( ) (pas de signe) modérée
+* (+) Forte</p>
+<p>Dans certaines circonstances, par exemple lorsque la température est proche de zéro, il est possible d'avoir plus d'un type de précipitation à un moment donné, par exemple; neige mélangée avec de la pluie et occasionnellement de la pluie verglaçante. Dans cette situation, la condition dominante (neige) serait rapportée dans le type 1 (PCPN1) tandis que les précipitations associées seraient de type 2 (PCPN2) pour la pluie et de type 3 (PCPN3) pour la pluie verglaçante.</p>
+<p><strong>11</strong> :     La colonne 11, nommée "POP", représente la probabilité de précipitations de tous les types 
+        ensemble. Dans la section des observations, à savoir de 02Z à 07Z la POP observées pourraient 
+        être inférieure à 100%. En d'autres termes, même s'il ne précipite pas à la station, un POP peut 
+        exister si certaines informations existent dans les observations telles que
+        "averses dans le voisinage", présence suffisante de nuages convectifs dans le METAR, échos radar ou 
+        foudre autour de la station.</p>
+<p><strong>12, 13</strong> : Les deux colonnes suivantes se réfèrent à la quantité de précipitations, en mm/h d'eau (ou cm/h pour la neige)
+        et au type de précipitations correspondant à cette accumulation. Dans l'exemple, un total de 0,6 cm
+        de neige (pas des mm ici car il qu'il neige) accumulées de 02Z à 04Z est observé, et une accumulation de la neige 
+        de 1,3 cm est prévue de 17Z à 20Z. Seul le type dominant de précipitations (type qui a le POP supérieur) des
+        3 types possibles sera considéré pour l'accumulées pendant une heure donnée.</p>
+<p><strong>14, 15</strong> : Ces deux colonnes contiennent la température et le point de rosée observations et prévus;</p>
+<p><strong>16, 17, 18</strong> : Les trois colonnes suivantes sont dédiées au vent: la direction, la vitesse (km/h) et les rafales (km/h).</p>
+<p><strong>19, 20</strong> : Les deux dernières colonnes donnent la visibilité (une distance de référence en miles statutaires)
+        et le type d'obstacle à la visibilité. Les valeurs observées représentent une synthèse des valeurs de la visibilité signalée
+        dans les observations de surface METAR SPECI. Les visibilités prévues utilisent un ensemble prédéfini (case) de valeurs correspondant
+        à des catégories de visibilité, par exemple les faibles visibilités correspondent à des visibilités de 0.5 mn, 
+        les visibilités passables sont de 1.0 et 3.0 mn et les bonnes visibilités sont de 9.0 ou 15 ou plus.
+        Un type d'obstacle à la visibilité accompagnera une visibilité inférieure à 6 miles, observés ou prévus</p>
+<p>Le code des types possibles de visibilité utilisés dans les matrices de prévisions immédiates sont :</p>
+<table>
+<thead>
+<tr>
+<th>(P): prévue</th>
+<th>(O): observée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dans les précipitations</td>
+<td>PP (F &amp; O)</td>
+</tr>
+<tr>
+<td>Brouillard</td>
+<td>FG (F &amp; O)</td>
+</tr>
+<tr>
+<td>Bancs de Brouillard</td>
+<td>BF (F &amp; O)</td>
+</tr>
+<tr>
+<td>Brume</td>
+<td>BR (F &amp; O)</td>
+</tr>
+<tr>
+<td>Risque de Brouillard</td>
+<td>RF (F)</td>
+</tr>
+<tr>
+<td>Brouillard glacé</td>
+<td>IF (F &amp; O)</td>
+</tr>
+<tr>
+<td>Poudrerie</td>
+<td>BS (F &amp; O)</td>
+</tr>
+<tr>
+<td>Poudrerie basse</td>
+<td>DS (F &amp; O)</td>
+</tr>
+<tr>
+<td>Brume sèche</td>
+<td>HZ (F &amp; O)</td>
+</tr>
+<tr>
+<td>Fumée</td>
+<td>FU (F &amp; O)</td>
+</tr>
+<tr>
+<td>Chasse Poussière</td>
+<td>BD (F &amp; O)</td>
+</tr>
+<tr>
+<td>Non disponible</td>
+<td>NA (F &amp; O)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>
+<p>Bien que les éléments du temps des prévisions immédiates sont très dépendants des observations, une prévision sera toujours produit même si les observations de surface sont incomplètes, manquantes ou non disponibles à un endroit donné. Les observastions provenant de la télédétection tels que le radar, le satellite et le réseau de détection de foudre seront utilisés et ultimement les éléments météorologiques .
+du Système régional de prévision déterministe canadien (SRPD) seront utilisés.</p>
+</li>
+<li>
+<p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson">liste des stations</a> est disponible en format GeoJSON.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

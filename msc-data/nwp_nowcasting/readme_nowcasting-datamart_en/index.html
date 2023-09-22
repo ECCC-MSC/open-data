@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme nowcasting datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#scribe-nowcasting-matrices" class="nav-link">Scribe nowcasting matrices</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data" class="nav-link">Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_nowcasting-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_nowcasting_en/">Scribe Nowcasting Matrices</a> &gt; Scribe Nowcasting Matrices on MSC Datamart</p>
+<h1 id="scribe-nowcasting-matrices">Scribe nowcasting matrices</h1>
+<p>The <a href="../readme_nowcasting_en/">scribe nowcasting matrices</a> are updated every hour and contain a consistent set of observed and forecasted weather elements for the short term and for a number of forecast points generally corresponding to observation stations. </p>
+<p>There are over 450 forecast points in the file. Hourly surface observations (METAR, SPECI) and synoptic messages are processed as well as lightning observations.</p>
+<p>Numerical Weather Prediction models, Statistical models and Nowcasting systems are used in conjunction with the observations to produce a very short term forecast.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
+<p>The data can be accessed at the following URLs :</p>
+<ul>
+<li><a href="https://dd.weatheroffice.gc.ca/nowcasting/matrices/">https://dd.weatheroffice.gc.ca/nowcasting/matrices/</a></li>
+</ul>
+<p>A 24-hour history is kept in this directory.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The files have the following nomenclature:</p>
+<p>SCRIBE.NWCSTG.10.24.06Z.n.Z</p>
+<p>where :</p>
+<ul>
+<li><strong>SCRIBE</strong> : Main system production</li>
+<li><strong>NWCSTG</strong> : Indentifies the matrix data type (Here Nowcasting) in the file</li>
+<li><strong>10.24.06Z</strong> : MM.DD.HHZ MM: Month, DD: date. HH: Run Time UST Z: UTC identification</li>
+<li><strong>n</strong> : Nowcasting extension file name</li>
+<li><strong>Z</strong> : Unix compression file idenfication</li>
+</ul>
+<h2 id="data">Data</h2>
+<h3 id="example-of-a-nowcasting-matrix-followed-by-its-content-description">Example of a Nowcasting matrix followed by it's content description.</h3>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE</td>
+<td>HR</td>
+<td>/10</td>
+<td></td>
+<td>PCPN1</td>
+<td>POP</td>
+<td>PCPN2</td>
+<td>POP</td>
+<td>PCPN3</td>
+<td>POP</td>
+<td></td>
+<td>Qp</td>
+<td>Tp</td>
+<td>T</td>
+<td>Td</td>
+<td>DD</td>
+<td>VV</td>
+<td>GST</td>
+<td>(SM)</td>
+<td>TP</td>
+</tr>
+<tr>
+<td>20040122 0200</td>
+<td>10</td>
+<td>41</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-8.0</td>
+<td>200</td>
+<td>22</td>
+<td>33</td>
+<td>2.00</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0300</td>
+<td>10</td>
+<td>24</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-7.0</td>
+<td>200</td>
+<td>15</td>
+<td></td>
+<td>1.75</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0400</td>
+<td>10</td>
+<td>23</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>200</td>
+<td>17</td>
+<td></td>
+<td>2.50</td>
+<td>PP</td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0500</td>
+<td>9</td>
+<td>25</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>90</td>
+<td>0.0</td>
+<td></td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>206</td>
+<td>17</td>
+<td></td>
+<td>7.98</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0600</td>
+<td>9</td>
+<td>87</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td></td>
+<td>-5.0</td>
+<td>-6.0</td>
+<td>190</td>
+<td>11</td>
+<td></td>
+<td>12.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0700</td>
+<td>10</td>
+<td>50</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.0</td>
+<td></td>
+<td>-4.0</td>
+<td>-6.0</td>
+<td>185</td>
+<td>9</td>
+<td></td>
+<td>6.75</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0800</td>
+<td>10</td>
+<td>88</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.0</td>
+<td></td>
+<td>-3.0</td>
+<td>-5.0</td>
+<td>203</td>
+<td>17</td>
+<td></td>
+<td>10.21</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 0900</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>60</td>
+<td>0.0</td>
+<td></td>
+<td>-2.7</td>
+<td>-5.1</td>
+<td>221</td>
+<td>18</td>
+<td>29</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1000</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>60</td>
+<td>0.0</td>
+<td></td>
+<td>-3.8</td>
+<td>-7.2</td>
+<td>229</td>
+<td>24</td>
+<td>34</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1100</td>
+<td>9</td>
+<td>999</td>
+<td>-SW</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>30</td>
+<td>0.0</td>
+<td></td>
+<td>-4.8</td>
+<td>-7.5</td>
+<td>236</td>
+<td>30</td>
+<td>40</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1200</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>8</td>
+<td>0.0</td>
+<td></td>
+<td>-5.9</td>
+<td>-8.6</td>
+<td>242</td>
+<td>36</td>
+<td>46</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1300</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>11</td>
+<td>0.0</td>
+<td></td>
+<td>-5.9</td>
+<td>-8.7</td>
+<td>252</td>
+<td>38</td>
+<td>48</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1400</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>15</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-8.8</td>
+<td>261</td>
+<td>39</td>
+<td>49</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1500</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>16</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-9.4</td>
+<td>270</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1600</td>
+<td>9</td>
+<td>999</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>22</td>
+<td>0.0</td>
+<td></td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>274</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1700</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>278</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1800</td>
+<td>10</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>100</td>
+<td>0.5</td>
+<td>SN</td>
+<td>-6.0</td>
+<td>-10.0</td>
+<td>282</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 1900</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.4</td>
+<td>SN</td>
+<td>-6.7</td>
+<td>-10.8</td>
+<td>281</td>
+<td>41</td>
+<td>51</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20040122 2000</td>
+<td>9</td>
+<td>999</td>
+<td>-S</td>
+<td>100</td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>80</td>
+<td>0.2</td>
+<td>SN</td>
+<td>-7.3</td>
+<td>-11.7</td>
+<td>279</td>
+<td>40</td>
+<td>50</td>
+<td>15.00</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In this example the data sequence begins at 02Z with six hours of observations before the run time 08Z, and ends 12 hours later at 20Z, for a total of 19 hours (6 hours of past observations, plus the current observation (run time) followed by 12 hours of forecast data.  </p>
+<h3 id="looking-at-columns-from-left-to-right">Looking at columns from left to right.</h3>
+<p><strong>Column no. :</strong></p>
+<p><strong>1 &amp; 2</strong> : The first two columns identify the date and time. The current run time
+       is the 7th line of the matrix (the one between the two dashed lines)</p>
+<p><strong>3 &amp; 4</strong> : Column 3 gives the sky cover in tenths, and column 4 the ceiling height in hundreds of feet. 
+       If no ceiling is forecasted the code "999" will be used. Note that this ceiling 
+       value is there only for technical reasons and is not very reliable, certainly not for 
+       aviation forecast.</p>
+<p><strong>5, 6 ,7 ,8 ,9, 10</strong> : These six columns represent the precipitation types and related
+probability of occurrence, which should not be confused with the total (global) probability 
+of precipitation or POP in column 11. The precipitation type probability give the probability 
+of occurrence of this type, in this example only snow is observed and forecast, 
+with a probability of 100%. Total value should not exceed 100%.</p>
+<p>The following Scribe Nowcasting precipitation type codes are possible :
+|(F): forecasted  |  (O): observed  |
+|-----------------|-----------------|
+| Rain Showers    |   RW  (F &amp; O)   |
+| Rain            |  R   (F &amp; O)    | 
+| Snow Showers    |   SW  (F &amp; O)   |
+| Snow            |   S   (F &amp; O)   |
+| Drizzle         |   L   (F &amp; O)   |
+| Freezing Rain   |   ZR  (F &amp; O)   |
+| Freezing Drizzle|   ZL  (F &amp; O)   |
+| Ice Pellet Shower|  IPW (F &amp; O)   |
+| Ice Pellet      |   IP  (F &amp; O)   |
+| Thunder         |   T   (F &amp; O)   |
+| Hail            |   A   (F &amp; O)   |
+| Not Available   |   NA  (F &amp; O)   |     </p>
+<p><strong>Intensity of precipitation given by :</strong>
+* (-) very light to light
+* ( ) (no sign) moderate
+* (+) heavy</p>
+<p>In certain circumstances, for instance when temperatures are near zero, it is possible to have more than one precipitation type at any given moment, for example: snow mixed with rain and occasional freezing rain.  </p>
+<p>In that situation the dominant condition (snow) would appear in type 1 (PCPN1) while the associated precipitation would be type 2 (PCPN2) for rain and type 3 (PCPN3) for freezing rain.</p>
+<p><strong>11</strong> :    Column 11 identified "POP" is the all types together probability of precipitation. In the observations 
+       section, i.e. from 02Z to 07Z the POP observed could be les then 100%. In other words, 
+       although if it is not precipitating at the station, a POP may exist du to some observed 
+       information such as "vicinity showers" convective clouds, radar echoes or lightning around the station. </p>
+<p><strong>12, 13</strong> : The next two columns refer to the precipitation quantity, in mm/hr of water (or cm/hr for snow) 
+       and the type of precipitation corresponding to this accumulation. In the example a total of 0.6 cm 
+       of snow (not mm since it is snow) accumulated from 02Z to 04Z included, and a snow amount forecast 
+       of 1.3 cm from 17Z to 20Z included. Only the dominant (higher POP type) precipitation type of 
+       the possible 3 will be considered for the precipitation accumulated during a given hour.</p>
+<p><strong>14, 15</strong> : These two columns contain the temperature and the dew point observations and forecasts; </p>
+<p><strong>16, 17 ,18</strong> : The  next three columns are dedicated to the wind: direction, speed (km/h) and gust (km/h).  </p>
+<p><strong>19, 20</strong> : The last two columns indicate the visibility (a reference distance value in statute miles) 
+        and the type of obstacle to visibility.  The observed values represent the synthetized visibility based on the reported values
+        in the METAR-SPECI surface observation. The forecasted visibilities use a predefined set of values (bins) corresponding 
+        to visibility categories, e.g. poor are 0.5, average are 1.0 and 3.0, and good are 9.0 or 15.0. 
+        A type of obstacle to the visibility will be associated to the reduction of visibility when lower than 6 miles, 
+        for the observed or forecasted values.</p>
+<p>The following visibility Scribe Nowcasting codes are possible :</p>
+<table>
+<thead>
+<tr>
+<th>(F): forecasted</th>
+<th>(O): observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precipitation</td>
+<td>PP (F &amp; O)</td>
+</tr>
+<tr>
+<td>Fog</td>
+<td>FG (F &amp; O)</td>
+</tr>
+<tr>
+<td>Fog banks</td>
+<td>BF (F &amp; O)</td>
+</tr>
+<tr>
+<td>Mist</td>
+<td>BR (F &amp; O)</td>
+</tr>
+<tr>
+<td>Risk Fog</td>
+<td>RF (F)</td>
+</tr>
+<tr>
+<td>Ice Fog</td>
+<td>IF (F &amp; O)</td>
+</tr>
+<tr>
+<td>Blowing snow</td>
+<td>BS (F &amp; O)</td>
+</tr>
+<tr>
+<td>Drifting snow</td>
+<td>DS (F &amp; O)</td>
+</tr>
+<tr>
+<td>Haze</td>
+<td>HZ (F &amp; O)</td>
+</tr>
+<tr>
+<td>Smoke</td>
+<td>FU (F &amp; O)</td>
+</tr>
+<tr>
+<td>Blowing dust</td>
+<td>BD (F &amp; O)</td>
+</tr>
+<tr>
+<td>Not Available</td>
+<td>NA (F &amp; O)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>
+<p>Although the nowcasting weather elements are highly dependant and observations, a forecast will always be produced even if surface observations are incomplete, missing or not available at a specific location. Remote sensing observastions such as Radar, Satellite and Lightning detection will be used and utimately the weather elements from the Canadian Regional Deterministic Prediction System (RDPS NWP) will be used.</p>
+</li>
+<li>
+<p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_nowcasting/nowcasting.geojson">stations list</a> is avaiable in GeoJSON format.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

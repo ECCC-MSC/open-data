@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme meteocode datamartxml en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#meteocode-forecast-data-in-xml-format" class="nav-link">Meteocode forecast data in XML format</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-address" class="nav-link">Data address</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_meteocode-datamartxml_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_meteocode_en/">Meteocode forecast data</a> &gt; Meteocode forecast data in XML on MSC Datamart</p>
+<h1 id="meteocode-forecast-data-in-xml-format">Meteocode forecast data in XML format</h1>
+<p>This page describes the markup language files Canadian Meteorological Service (CMML) on the MSC Datamart. The CMML is an XML format containing Environment and Climate Change Canada's official forecasts, interpolated by hour.</p>
+<h1 id="data-address">Data address</h1>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.</p>
+<p>The terrestrial data is available at the following address : </p>
+<p><a href="https://dd.weather.gc.ca/meteocode">https://dd.weather.gc.ca/meteocode/{REGION}/cmml</a></p>
+<p>where 'REGION' is one of the following value :</p>
+<ul>
+<li>atl</li>
+<li>ont</li>
+<li>pnr</li>
+<li>pyr</li>
+<li>que</li>
+</ul>
+<p>A data history of one month is kept in these directories.</p>
+<p>The <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf">CMML format specifications</a> are available.</p>
+<p>Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.</p>
+<p>These files can be found here :</p>
+<p><a href="https://dd.weather.gc.ca/meteocode/geodata/">https://dd.weather.gc.ca/meteocode/geodata/</a></p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The forecast emitted for each provinces and territories is located in a specific directory :
+* <strong>atl</strong> : New Brunswick, Nova Scotia, Prince Edward Island, Newfoundland and Labrador
+* <strong>ont</strong> : Ontario
+* <strong>pnr</strong> : Alberta, Saskatchewan, Manitoba, Northwest Territories, Nunavut
+* <strong>pyr</strong> : British Columbia, Yukon
+* <strong>que</strong> : Québec</p>
+<p>The filenames follow the convention :</p>
+<p>TRANSMIT.FP[A-Z][A-Z][0-9][0-9].MM.DD.HHmmZ[.AMD].xml</p>
+<p>where :</p>
+<ul>
+<li>MM.DD.HHmm is the date of emission of the bulletin</li>
+<li>Z is a constant indicating that the time zone of the forecast is
+      in UTC.</li>
+<li><strong>AMD</strong> : Optionnal. If present, this forecast is an amendement to the previous forecast for this region.</li>
+<li><strong>FP[A-Z][A-Z][0-9][0-9]</strong> describes the forecast region and period :<ul>
+<li><strong>New Brunswick ('atl')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPHX14 : New Brunswick </li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPHX54 : New Brunswick </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Nova Scotia ('atl')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPHX11 : Nova Scotia</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPHX51 : Nova Scotia</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Prince Edward Island ('atl')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPHX15 : Prince Edward Island</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPHX55 : Prince Edward Island</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Newfoundland and Labrador ('atl')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPHX16 : Newfoundland</li>
+<li>FPHX17 : Labrador</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPHX56 : Newfoundland</li>
+<li>FPHX57 : Labrador</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Ontario ('ont')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPTO11 : Southern Ontario and the National Capital Region</li>
+<li>FPTO12 : Northern Ontario</li>
+<li>FPTO13 : Far Northern Ontario</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPTO51 : Southern Ontario and the National Capital Region</li>
+<li>FPTO52 : Northern Ontario</li>
+<li>FPTO53 : Far Northern Ontario</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Alberta ('pnr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPWG15 : Southern Alberta and the mountain parks</li>
+<li>FPWG16 : Central and northern Alberta</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPWG53 : Southern Alberta and the mountain parks</li>
+<li>FPWG54 : Central and northern Alberta</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Saskatchewan ('pnr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPWG13 : Southern Saskatchewan</li>
+<li>FPWG14 : Northern Saskatchewan</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPWG52 : Saskatchewan</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Manitoba ('pnr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPWG11 : Southern Manitoba</li>
+<li>FPWG12 : Central and Northern Manitoba</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPWG51 : Manitoba</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Northwest Territories ('pnr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPNT11 : Great Slave Lake and Mackenzie River Areas</li>
+<li>FPNT12 : Mackenzie Delta and Arctic Coast</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPNT51 : Great Slave Lake and Mackenzie River Areas</li>
+<li>FPNT52 : Mackenzie Delta and Arctic Coast</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Nunavut ('pnr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPNT13 : Kivalliq</li>
+<li>FPNT14 : Kitikmeot</li>
+<li>FPNT15 : High Arctic</li>
+<li>FPNT16 : Qikiqtaaluk</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPNT53 : Kivalliq</li>
+<li>FPNT54 : Kitikmeot</li>
+<li>FPNT55 : High Arctic</li>
+<li>FPNT56 : Qikiqtaaluk</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>British Columbia ('pyr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPVR11 : Coastal - South </li>
+<li>FPVR12 : Coastal - Central and North</li>
+<li>FPVR13 : Southwest interior </li>
+<li>FPVR14 : Columbia districts</li>
+<li>FPVR15 : Kootenay districts</li>
+<li>FPVR16 : Central interior</li>
+<li>FPVR17 : Southeast Yukon and Northern British Columbia</li>
+<li>FPVR18 : Peace river district</li>
+<li>FPVR19 : Western Yukon and northwestern British Columbia</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPVR50 : Coastal British Columbia</li>
+<li>FPVR52 : Southwest and central interior</li>
+<li>FPVR54 : Columbia and Kootenay districts</li>
+<li>FPVR56 : Peace River district</li>
+<li>FPVR58 : Yukon and northern British Columbia</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Yukon ('pyr')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPVR17 : Southeast Yukon and Northern British Columbia</li>
+<li>FPVR19 : Western Yukon and northwestern British Columbia</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPVR58 : Yukon and northern British Columbia</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Québec ('que')</strong><ul>
+<li>Day 1 and 2 :<ul>
+<li>FPCN71 : Western Québec</li>
+<li>FPCN72 : Northern Québec</li>
+<li>FPCN73 : Central Québec</li>
+<li>FPCN74 : Eastern Québec</li>
+<li>FPCN75 : Extreme northern Québec</li>
+</ul>
+</li>
+<li>Day 3 to 5 :<ul>
+<li>FPUL55 : Western Québec</li>
+<li>FPXK55 : Eastern Québec</li>
+<li>FPQB55 : Central and Northern Québec</li>
+<li>FPQB57 : Extreme northern Québec</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong> : The year of the forecast is not included in the file name.</p>
+<p>File name example :</p>
+<p><a href="https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml">https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml</a></p>
+<p>This file contains the forecast emitted by the Vancouver office (directory 'pyr' and 'VR' in the file name) in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').</p>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

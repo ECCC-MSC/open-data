@@ -1,0 +1,17 @@
+Variable,Abbreviation,Level,Unit/Value
+Direction of wind waves,WVDIR,Surface,Degree true
+Ice cover,ICEC,Surface,Proportion
+Mean Zero-Crossing Wave Period,MZWPER,Surface,s
+Mean wave direction of first swell partition,MWDFSWEL,Surface,deg
+Mean wave direction of second swell partition,MWDSSWEL,Surface,deg
+Peak Period of Wind Waves,PPERWW,Surface,s
+Peak Wave Period,PWPER,Surface,s
+Peak wave direction,PWAVEDIR,Surface,deg
+Peak wave period of first swell partition,PWPFSWEL,Surface,s
+Peak wave period of second swell partition,PWPSSWEL,Surface,s
+Significant height of combined wind waves and swell,HTSGW,Surface,m
+Significant height of wind waves,WVHGT,Surface,m
+Significant wave height of first swell partition,SWHFSWEL,Surface,m
+Significant wave height of second swell partition,SWHSSWEL,Surface,m
+u-component of wind,UGRD,10 m Above Ground Level,m/s
+v-component of wind,VGRD,10 m Above Ground Level,m/s

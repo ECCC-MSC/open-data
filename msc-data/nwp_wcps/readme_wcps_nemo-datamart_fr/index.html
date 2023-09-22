@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme wcps nemo datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-nemo-du-systeme-de-prevision-du-cycle-de-leau-spce-en-format-netcdf-sur-les-grands-lacs-et-le-fleuve-saint-laurent" class="nav-link">Données NEMO du système de prévision du cycle de l’eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_wcps_nemo-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_wcps_fr/">SPCE</a> &gt; SPCE-NEMO sur le Datamart du SMC</p>
+<h1 id="donnees-nemo-du-systeme-de-prevision-du-cycle-de-leau-spce-en-format-netcdf-sur-les-grands-lacs-et-le-fleuve-saint-laurent">Données NEMO du système de prévision du cycle de l’eau (SPCE) en format NetCDF sur les Grands Lacs et le fleuve Saint-Laurent</h1>
+<p>Le modèle océan-glace, NEMO-CICE, du SPCE, produit des prévisions horaires. Ces données sont disponibles au format NetCDF sur une grille lat-lon correspondant à une résolution de 1 km (0,009 x 0,009 degrés).</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF.</p>
+<p>Les données sont accessibles à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon">https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/</a>                  </li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>nd</strong> : Dimension spatiale, latitude et longitude [2d]</li>
+<li><strong>HH</strong> : Heure en UTC du début de la simulation [00, 06, 12, 18]</li>
+<li><strong>hhh</strong> : Heure de la prévision [001, ..., 084] </li>
+</ul>
+<p>Un historique de 30 jours de prévision est stocké dans ce répertoire.</p>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
+<p><img alt="Image du domaine SPCE-NEMO" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_nemo.png" /></p>
+<p>Dans le domaine complet indiqué en blanc, le domaine de données valide, qui couvre les lacs, est en couleur. </p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>1681</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>3181</td>
+</tr>
+<tr>
+<td>résolution à 45° N</td>
+<td>1km</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
+<p>La nomenclature des noms des fichiers est la suivante :</p>
+<p>CMC_wcps_nemo_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.nc</p>
+<p>où :</p>
+<ul>
+<li><strong>CMC</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions</li>
+<li><strong>wcps_nemo</strong> : Chaîne de caractères constante indiquant le système de prévision qui génère les données</li>
+<li><strong>Variable</strong> : Nom de la variable contenue dans le fichier</li>
+<li><strong>TypedeNiveau</strong> : Type de niveau [sfc, depth, tgl]</li>
+<li><strong>Niveau</strong> : Valeur du niveau, soit 0 pour sfc (surface), 0.5 pour la profondeur (profondeur des lacs en mètres), 40 pour l'altitude (l'altitude en mètres)</li>
+<li><strong>Projection</strong> : Projection cartographique [latlon]</li>
+<li><strong>Résolution</strong> : 0.009x0.009. Signifie une résolution de 0.009°(environ 1km) dans les directions longitudinale et latitudinale</li>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
+<li><strong>HH</strong> : Heure en UTC du début de la simulation [00, 06, 12, 18]</li>
+<li><strong>Phhh</strong> : P caractère constant, hhh l'heure de prévision [001, ..., 084] </li>
+<li><strong>nc</strong> : Chaîne de caractères constante indiquant le format NetCDF</li>
+</ul>
+<p>Exemple :</p>
+<ul>
+<li>CMC_wcps_nemo_vomecrty_depth_0.5_latlon0.009x0.009_2019011100_P036.nc</li>
+</ul>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p>Liste des variables 2D disponibles dans les fichiers:</p>
+<ul>
+<li><strong>tairsurf</strong> : Température de l'air à environ 40 mètres en altitude</li>
+<li><strong>uwindsurf</strong> : Composante X de la vitesse du vent à 40 mètres en altitude</li>
+<li><strong>vwindsurf</strong> : Composante Y de la vitesse du vent à 40 mètres en altitude</li>
+<li><strong>vozocrtx</strong> : Composante X de la vitesse de l'eau au premier niveau du modèle </li>
+<li><strong>vomecrty</strong> : Composante Y de la vitesse de l'eau au premier niveau du modèle</li>
+<li><strong>votemper</strong> : Température potentielle de l'eau de mer au premier niveau du modèle</li>
+<li><strong>vosaline</strong> : Salinité de l'eau de mer </li>
+<li><strong>sossheig</strong> : Hauteur de la surface de la mer par rapport au géoïde. Pour les Grands Lacs, la référence est IGLD85</li>
+<li><strong>sokaraml</strong> : Profondeur de la couche de mélange d'après le critère de densité</li>
+<li><strong>iiceconc</strong> : Fraction de la glace de mer</li>
+<li><strong>iicevol</strong> : Volume de glace de mer par unité de surface de cellule de grille</li>
+<li><strong>itzocrtx</strong> : Composante X de la vitesse de la glace de mer</li>
+<li><strong>itmecrty</strong> : Composante Y de la vitesse de la glace de mer</li>
+<li><strong>iicepressure</strong> : Pression interne de la glace, intégrée verticalement</li>
+<li><strong>iicestrength</strong> : Résistance à la compression de la glace, intégrée verticalement</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

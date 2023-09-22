@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme ahccd datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#adjusted-and-homogenized-canadian-climate-data-ahccd-in-geojson-format" class="nav-link">Adjusted and Homogenized Canadian Climate Data (AHCCD) in GeoJSON format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_ahccd-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_ahccd_en/">AHCCD</a> &gt; AHCCD on MSC Datamart</p>
+<h1 id="adjusted-and-homogenized-canadian-climate-data-ahccd-in-geojson-format">Adjusted and Homogenized Canadian Climate Data (AHCCD) in GeoJSON format</h1>
+<p>The AHCCD data are climate station datasets with adjustments (derived from statistical procedures) to the original historical station data to account for discontinuities from non-climatic factors, such as instrument changes or station relocation. </p>
+<p>This dataset was developed for use in climate research, including climate change studies. Long-term data records are often impacted by changes (e.g. site exposure, location, instrumentation, observer, and observing procedures) that are not related to climate. These non-climatic changes were detected and removed using statistical procedures. </p>
+<p>When necessary, data were corrected for some measurement techniques that are known to possibly lead to underestimations or overestimations. In addition, data from nearby stations were sometimes combined to create longer time series.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoJSON file.</p>
+<p>The data can be accessed at the following URLs :</p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/climate/ahccd/geojson/historical/annual">https://dd.weather.gc.ca/climate/ahccd/geojson/historical/annual/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}</a></li>
+<li><a href="https://dd.weather.gc.ca/climate/ahccd/geojson/historical/seasonal">https://dd.weather.gc.ca/climate/ahccd/geojson/historical/seasonal/{[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}</a></li>
+<li><a href="https://dd.weather.gc.ca/climate/ahccd/geojson/historical/monthly">https://dd.weather.gc.ca/climate/ahccd/geojson/historical/monthly/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}</a></li>
+</ul>
+<p>where :</p>
+<ul>
+<li><strong>historical</strong> : Historical data from 1840. Annually updated.</li>
+<li><strong>seasonal</strong> : The standard meteorological seasons are used: (March to May (MAM, spring), June to August (JJA, summer),  September to November (SON, autumn/fall), and December to February (DJF, winter)]</li>
+<li><strong>monthly</strong> : January to December</li>
+<li>AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT : The 10 Canadian provinces and 3 territories </li>
+</ul>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE : ALL HOURS ARE IN UTC.</p>
+<p>File names have the form :</p>
+<p>AHCCD_hist_TemporalResolution_ProvTerr_XXXXXXX_Variable_TimeStep.json</p>
+<p>where :</p>
+<ul>
+<li><strong>AHCCD</strong> : Constant string indicating the data source, namely the adjusted and homogenized climate data for many climatological stations in Canada</li>
+<li><strong>hist</strong> : Constant string indicating historical data. Varies per station, per variable with data availability ranging between 1840 to the year preceding current year</li>
+<li><strong>TemporalResoltion</strong> : Time period, taking one of the values : [annual, monthly, DJF, MAM, JJA, SON]</li>
+<li><strong>ProvTerr</strong> : 2-letter code for the province or territory. The code is one of the 13 following values :<ul>
+<li>AB (Alberta)</li>
+<li>BC (British Columbia)</li>
+<li>MB (Manitoba)</li>
+<li>NB (New Brunswick)</li>
+<li>NL (Newfoundland and Labrador)</li>
+<li>NS (Nova Scotia)</li>
+<li>NT (Northwest Territories)</li>
+<li>NU (Nunavut)</li>
+<li>ON (Ontario)</li>
+<li>PE (Prince Edward Island)</li>
+<li>QC (Quebec)</li>
+<li>SK (Saskatchewan)</li>
+<li>YT (Yukon)</li>
+</ul>
+</li>
+<li><strong>XXXXXXX</strong> : Climate_ID of the climate stations</li>
+<li><strong>Variable</strong> : Name of the variable available in the file, taking one of the values : [TMEAN,TMIN,TMAX,PCP,RA,SN,SLP,PSFC,SFCWND]; TMEAN stands for mean temperature, TMIN stands for minimum temperature, TMAX stands for maximum temperature, PCP stands for total precipitation, RA stands for rain; SN stands for snow; SLP stands for sea level pressure; PSFC stands for surface pressure; SFCWND stands for surface wind speed</li>
+<li><strong>TimeStep</strong> : Time step, taking one of the values : [P1Y, P1M]; P1Y stand for 1 year time step and P1M stands for 1 month time step</li>
+<li><strong>json</strong> : Constant string indicating the GeoJSON format</li>
+</ul>
+<p>Example :  AHCCD_hist_annual_QC_7040446_SLP_P1Y.json</p>
+<h2 id="list-of-variables">List of variables</h2>
+<p>Warning : the tables below are not up to date (to come), some variables are missing. Feel free to <a href="mailto:ec.dps-client.ec@canada.ca">contact us</a> for more information.</p>
+<p>The available variables and units for AHCCD are :</p>
+<ul>
+<li>Maximum temperature (°C)</li>
+<li>Minimum temperature (°C)</li>
+<li>Mean temperature (°C)</li>
+<li>Rainfall (mm/period)</li>
+<li>Snowfall (mm/period)</li>
+<li>Total precipitation (mm/period)</li>
+<li>Wind speed (m/s)</li>
+<li>Station level  pressure (Pa) </li>
+<li>Sea level pressure (Pa)</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

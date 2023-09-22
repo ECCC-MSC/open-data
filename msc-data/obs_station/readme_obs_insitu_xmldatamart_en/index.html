@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme obs insitu xmldatamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#observations-summary-data-in-xml-format-by-province-or-territory" class="nav-link">Observations summary data in XML format by province or territory</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature" class="nav-link">Nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#description" class="nav-link">Description</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notes" class="nav-link">Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_obs_insitu_xmldatamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_obs_insitu_en/">Observations summary</a> &gt; Observations summary on MSC Datamart</p>
+<h1 id="observations-summary-data-in-xml-format-by-province-or-territory">Observations summary data in XML format by province or territory</h1>
+<p>This page describes the <a href="../readme_obs_insitu_en/">observation</a> data available in XML format.</p>
+<p>The provincial and territory summary pages provide the observations of all available stations for the selected province or territory. Data is made available through a number of sources and may not be QA/QC.</p>
+<p>The files are in XML format and follow an Environment and Climate Change Canada defined schema.</p>
+<p>Update frequency of XML files will be generated as follows:</p>
+<ul>
+<li>Hourly - every 5 minutes</li>
+<li>Today - every 5 minutes</li>
+<li>Yesterday - twice per day at 06:30 UTC and 08:00 UTC</li>
+</ul>
+<p>There are 6 XML files for each province/territory as follows:</p>
+<ul>
+<li>English and French for Hourly Provincial Summary</li>
+<li>English and French for Today's Provincial Summary</li>
+<li>English and French for Yesterday's Provincial Summary</li>
+</ul>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable XML file.</p>
+<p>The provincial and territorial summary XML files are grouped in a directory tree that is based on the province/territory and the summary type.</p>
+<p>The provincial summary XML files are available at the following address :</p>
+<ul>
+<li><a href="https://dd.weather.ec.gc.ca/observations/xml">https://dd.weather.ec.gc.ca/observations/xml/{PC}/{TYPE}</a></li>
+</ul>
+<p>where :</p>
+<ul>
+<li>
+<p><strong>PC</strong> : indicates the 2 letter provincial code in lower case. Could be one of the 13 values below:</p>
+<ul>
+<li>AB (Alberta)</li>
+<li>BC (British Columbia)</li>
+<li>MB (Manitoba)</li>
+<li>NB (New-Brunswick)</li>
+<li>NL (Newfounland and Labrador)</li>
+<li>NS (Nova Scotia)</li>
+<li>NT (Northwest Territories)</li>
+<li>NU (Nunavut)</li>
+<li>ON (Ontario)</li>
+<li>PE (Prince-Edouard Island)</li>
+<li>QC (Quebec)</li>
+<li>SK (Saskatchewan)</li>
+<li>YT (Yukon)</li>
+</ul>
+</li>
+<li>
+<p><strong>TYPE</strong> : String indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.</p>
+</li>
+</ul>
+<p>A history of data (30 days) is kept in the directory.</p>
+<h2 id="nomenclature">Nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The file names have the following nomenclature :</p>
+<p>TYPE_PC_YYYYMMDD_L.xml</p>
+<p>where :</p>
+<ul>
+<li>TYPE : String indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.</li>
+<li>PC : Indicates the 2 letter provincial code in lower case. See above for the values.</li>
+<li>YYYYMMDDHH : Observations date. HH is present only in 'hourly' product type.</li>
+<li>L : 1 letter indicating the language of the file. Can be one of the values :<ul>
+<li>f (French)</li>
+<li>e (English)</li>
+</ul>
+</li>
+</ul>
+<p>Examples of filename:</p>
+<ul>
+<li>hourly_ab_2010030517_e.xml</li>
+<li>today_mb_20100306_e.xml</li>
+<li>yesterday_qc_20100306_f.xml</li>
+</ul>
+<h2 id="description">Description</h2>
+<p><strong>1- Hourly summary</strong></p>
+<p>The Hourly summary contains the most recent observations available.</p>
+<p>This file is regenerated at 8, 11, 14, 25, 35 and 50 minutes past each hour. The file is overwritten by every new version, until the last one created. The last one remaining on the server is the last created within the hour indicated in the file name, i.e. at 50 minutes. For every hour, a file is then kept for 30 days on the server.</p>
+<p>If current data is missing, use the previous hour's data temporarily. Hourly observation data will be set to blank if it hasn't been updated within 2 hours and 15 minutes. </p>
+<p>These observations have QA/QC applied to them. Any values that do not pass QA/QC will be suppressed. This includes values that are flagged as doubtful.</p>
+<p>Parameters contained in each file for the selected province or territory are:</p>
+<ul>
+<li>This Hour's Hot and Cold spots for Canada</li>
+<li>This Hour's Hot and Cold spots for the selected province/territory</li>
+<li>The current hour observations for each station available. It contains:<ul>
+<li>Present Condition (string)</li>
+<li>Mean sea level pressure (kPa)</li>
+<li>Value of pressure tendency (kPa)</li>
+<li>Pressure tendency (rising, falling, stable)</li>
+<li>Visibility (km)</li>
+<li>Air temperature (°C)</li>
+<li>Dew point (°C)</li>
+<li>Relative humidity (%)</li>
+<li>Wind speed (km/h)</li>
+<li>Wind direction (code)</li>
+<li>Gust speed (km/h)</li>
+<li>Cloud cover</li>
+<li>Wind chill</li>
+<li>Humidex</li>
+</ul>
+</li>
+</ul>
+<p><strong>2- Today's summary</strong></p>
+<p>Today's summary is generated at 8, 11, 14, 25, 35 and 50 minutes past each hour. The file is overwritten by every new version, until the last one created. The last one remaining on the server is the last created within the day indicated in the file name. For every day, a file is kept for 30 days on the server.   </p>
+<p>Depending on the time of day, the data is obtained from either hourly data or synoptic data. If obtained from hourly data, QA/QC is applied. If obtained from synoptic data, QA/QC is not applied.</p>
+<p>For example, on March 9 at 14:40 UTC, the today's observations file would contain the observations for the day starting on March 9 at 06 UTC and ending on March 9 at 14:40 UTC.</p>
+<p>Today's component starts to accumulate the high/lows for each station at the start of the climate day (06Z each day). At 06Z each day the daily products high/lows are reset, then with each passing hour it accumulates the data, and generates the high and low from the start of the climate day.                                  </p>
+<p>Some stations only report during day time, so they don't have any value before the first hour of observation. </p>
+<p>This file contains for the selected province or territory:</p>
+<ul>
+<li>Today so far Hot and Cold spots for Canada</li>
+<li>Today so far Hot and Cold spots for the selected province/territory</li>
+<li>The observations and records for each station available:<ul>
+<li>Maximum air temperature for today (°C)</li>
+<li>Minimum air temperature for today (°C)</li>
+<li>Wind direction of the peak wind (code)</li>
+<li>Peak gust speed so far in the day (km/h)</li>
+<li>Record value for maximum air temperature (°C)</li>
+<li>Year of the record value for maximum air temperature</li>
+<li>Record value for minimum air temperature (°C)</li>
+<li>Year of the record value for minimum air temperature</li>
+<li>Record value for rain precipitation (mm)</li>
+<li>Year of the record value for rain precipitation</li>
+<li>Record value for snow precipitation (cm)</li>
+<li>Year of the record value for snow precipitation</li>
+<li>Year from which this station acquired temperature data</li>
+<li>Year from which this station acquired precipitation data</li>
+</ul>
+</li>
+</ul>
+<p><strong>3- Yesterday's summary</strong></p>
+<p>Yesterday's summary is defined as the summary for the most recently completed climate day. A climate day goes from 06 UTC to 06 UTC. </p>
+<p>This product is based on the 06 UTC SYNO bulletins produced for each station. The data does not undergo QA/QC. Please refer to the <a href="http://climat.meteo.gc.ca/index_e.html">climatological official data sets</a>.</p>
+<p>Some stations have observations but do not have a SYNO bulletins. These stations will be included in the 'hourly' and 'today' products but not in 'yesterday'.</p>
+<p>Yesterday's summary is generated at 8, 11, 14, 25, 35 and 50 minutes past each hour. The file is overwritten by every new version, until the last one created. The last one remaining on the server is the last created within the day indicated in the file name. For every day, a file is kept for 30 days on the server.   </p>
+<p>This file provides a list of all available stations for the selected province/territory displaying:</p>
+<ul>
+<li>Yesterday's Hot and Cold spots for Canada</li>
+<li>Yesterday's Hot and Cold spots for the selected province/territory</li>
+<li>Yesterday's record values for highest and lowest temperature, rain and snow amount for each station available</li>
+<li>Yesterday's values for highest and lowest temperature, peak wind, total precipitation, rain and snow amount for each station available</li>
+</ul>
+<h3 id="stations">Stations</h3>
+<p>For each station, the following information is provided:</p>
+<ul>
+<li>Station name</li>
+<li>Latitude (decimal degree)</li>
+<li>Longitude (decimal (degree)</li>
+<li>Transport Canada identification number</li>
+<li>Observations time in UTC and local time</li>
+<li>Climate station number</li>
+<li>WMO station number</li>
+</ul>
+<p>There are in excess of 500 observation stations in Canada. However this number is continually changing. Stations only appear if data is available for that station.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/Met-ML-SchemaDescriptionV2_e.pdf">complete documentation of the Meteorological Point Observation Mark-up Language Schema Description</a> is available.</li>
+<li>To be displayed, any record for an element must have a period of at least 15 years in the Climate Site database, as stated on the Climate Site: <a href="http://climate.weather.gc.ca/historical_data/search_historic_data_e.html">http://climate.weather.gc.ca/historical_data/search_historic_data_e.html</a>.</li>
+<li>Station Metadata is provided in English or French</li>
+<li>Any floating values that are below 0.05 are rounded to 0.0</li>
+<li>Any floating values that are 0.05 and above are rounded up to 0.1</li>
+<li>The creation date of the file is included in the header of each XML file</li>
+<li>ISO 8601 standard is used for all time/date formats</li>
+<li>All date/time are both in UTC and local time</li>
+<li>Historical data (record data) has undergone QA/QC procedures</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

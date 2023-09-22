@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Readme fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#services-a-recouvrement-de-couts" class="nav-link">Services à recouvrement de coûts</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#service-de-desarchivage" class="nav-link">Service de désarchivage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fil-de-donnees-dedie" class="nav-link">Fil de données dédié</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<h1 id="services-a-recouvrement-de-couts">Services à recouvrement de coûts</h1>
+<p>Le Service météorologique du Canada offre les services à recouvrement de coûts suivants. Merci de <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">communiquer avec nous</a> si vous êtes intéressés par ces services.</p>
+<h2 id="service-de-desarchivage">Service de désarchivage</h2>
+<p>Environnement et changement climatique Canada n'a pas de service en ligne pour récupérer la plupart des données archivées disponibles sur le Datamart du SMC. Le service de désarchivage est fourni en vertu d'une politique de recouvrement des coûts.</p>
+<p>Le tarif d'extraction des données archivées est de 118$/heure, avec un montant minimal de 118$. Le traitement des demandes d'extraction de données archivées prend généralement entre 1 et 4 heures (temps d'effort humain). Les données elles-mêmes sont gratuites (à l'exception des données radar brutes et des produits dérivés).</p>
+<h2 id="fil-de-donnees-dedie">Fil de données dédié</h2>
+<p>Un service de fil de données dédié avec un support 24h/24 et 7j/7 est disponible pour les utilisateurs spécialisés, pouvant inclure des données qui ne sont pas directement accessibles au public. Les frais reliés à ce service varient en fonction des types de données souhaitées et des besoins en bande passante associés. Les contrats s'étendent généralement sur un an ou plus, et les paiements sont habituellement traités sur une base mensuelle.</p>
+<p>Les données disponibles comprennent :</p>
+<ul>
+<li>Données du modèle de prévision numérique météorologique en format GRIdded Binary (GRIB2) pour des paramètres et des domaines spécifiques (jusqu'à des valeurs horaires), ou en des points spécifiques.</li>
+<li>Données radar brutes pour les radars canadiens, par exemple :<ul>
+<li>Sorties numériques d'échos radar ou de précipitations au format ASCII</li>
+<li>Balayages volumétriques de type Doppler en format IRIS ou ODIM_H5.</li>
+</ul>
+</li>
+<li>Cartes météorologiques</li>
+<li>Bulletins en format texte</li>
+<li>La plupart des données disponibles via les services gratuits du Datamart et GeoMet du SMC</li>
+</ul>
+<p>Les <strong>détails concernant la tarification des données radar</strong> sont les suivants :</p>
+<p><strong>Données brutes</strong></p>
+<ul>
+<li>1-5 radars (QC, région Atl ou Pac) : 1 600 $/mois</li>
+<li>6-10 (toute une région) : 1 800 $/mois</li>
+<li>11+ : 2 000 $/mois</li>
+<li>Plus des frais d'installation uniques de 2 000 $</li>
+</ul>
+<p><strong>Produits in format ASCII</strong></p>
+<ul>
+<li>1-5 radars (Qc, région Atl ou Pac) : 600 $/mois</li>
+<li>6-10 (toute une région) : 700 $/mois</li>
+<li>11+ : 800 $/mois</li>
+<li>Plus des frais d'installation uniques de 800 $</li>
+</ul>
+<p><strong>Autres produits</strong></p>
+<ul>
+<li>Composite radar 1km en format GeoTIFF : 800 $/mois</li>
+<li>Couverture radar dynamique en format GeoJSON : 800 $/mois</li>
+<li>Plus des frais d'installation uniques de 800 $</li>
+</ul>
+<p>Veuillez noter que ces tarifs sont donnés à titre indicatif et peuvent changer.</p>
+<p>Voir aussi la <a href="../../faq/readme_fr/">FAQ</a>.</p>
+<p>Le <strong>tarif de départ</strong> concernant le service de "push" des <strong>données NWP au format GRIB, ou toute autre donnée</strong>, est de 500 $/mois + 500 $ de frais d'installation pour un maximum de 1 Go/jour. Ajoutez 500$/mois pour chaque Go supplémentaire par jour.</p>
+<p>À noter que des frais de 200$ sont requis pour tout changement relié aux fils de données.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

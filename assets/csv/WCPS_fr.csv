@@ -1,0 +1,22 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Cisaillement de la glace de mer,iiceshear,Surface,%/day
+Composante X de la vitesse de l’eau,vozocrtx,Surface,m/s
+Composante X du vent de surface (10 m),uwindsurf,10 m au-dessus du niveau du sol,m/s
+Composante Y de la vitesse de l’eau,vomecrty,Surface,m/s
+Composante Y du vent de surface (10 m),vwindsurf,10 m au-dessus du niveau du sol,m/s
+Composante x de la vitesse de la glace de mer,itzocrtx,Surface,m/s
+Composante y de la vitesse de la glace de mer,itmecrty,Surface,m/s
+Divergence de la glace de mer,iicedivergence,Surface,%/day
+Fraction de la glace de mer,iiceconc,Surface,Fraction
+Hauteur de la surface de la mer par rapport au géoïde,sossheig,Surface,m
+Pression interne de la glace intégrée verticalement,iicepressure,Surface,N/m
+Profondeur de la couche de mélange d'après le critère de densité,sokaraml,Surface,m
+Profondeur de la turbocline,somixhgt,Surface,m
+Ruissellement de surface,runoffsurf,Surface,mm
+Résistance à la compression de la glace intégrée verticalement,iicestrength,Surface,N/m
+Salinité de l'eau de mer,vosaline,Surface,PSU
+Température de l'air en surface (1.5 m),tairsurf,1.5 m au-dessus du niveau du sol,K
+Température de surface de la neige sur la glace de mer ou la glace de mer nue,iicesurftemp,Surface,K
+Température potentielle de l'eau de mer,votemper,Surface,K
+Volume de glace de mer par unité de surface de cellule de grille,iicevol,Surface,m
+Volume de la neige de mer par unité de surface de cellule de grille,isnowvol,Surface,cm

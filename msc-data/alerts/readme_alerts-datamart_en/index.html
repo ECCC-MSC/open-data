@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme alerts datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#weather-warning-xml-data-in-the-format-of-the-common-alerting-protocol-cap" class="nav-link">Weather warning XML data in the format of the Common Alerting Protocol (CAP)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notes" class="nav-link">Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_alerts-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_alerts_en/">Alerts</a> &gt; Alerts on MSC Datamart</p>
+<h1 id="weather-warning-xml-data-in-the-format-of-the-common-alerting-protocol-cap">Weather warning XML data in the format of the Common Alerting Protocol (CAP)</h1>
+<p>This page describes the <a href="../readme_alerts_en/">weather warning data in the format of the Common Alerting Protocol (CAP)</a>.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable XML file.</p>
+<p>The <strong>data can be accessed</strong> at the following URLs:</p>
+<p><a href="https://dd.weather.gc.ca/alerts/cap">https://dd.weather.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/</a></p>
+<p>A 30-day history is kept in this directory.</p>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong>: warning transmission day.</li>
+<li><strong>EEEE</strong>: 4 letters for the responsible office code except LAND or WATR for tornado warning and severe thunderstorm warning alerts.</li>
+<li>
+<p><strong>hh</strong>: warning transmission hour.</p>
+</li>
+<li>
+<p>The CAP-XML are grouped in a directory tree that is based on the date and the responsible office (see note1) code for the alert. The exception is for tornado warning and severe thunderstorm warning alerts which are grouped based on a LAND or WATR (see note2) designation rather than responsible office. </p>
+</li>
+<li>
+<p>The LAND directory contains the CAP-XML files for all tornado warning and severe thunderstorm warning alerts that are issued over land zones in Canada. </p>
+</li>
+<li>
+<p>The WATR directory contains the CAP-XML files for all tornado warning alerts that are issued over water zones in Canada. </p>
+</li>
+<li>
+<p>Not all WATR areas in Canada are configured for tornado warning alerts. No WATR areas in Canada are configured for severe thunderstorm warning alerts.</p>
+</li>
+</ul>
+<p>A history of 1 month is maintained in this directory.</p>
+<p>A <strong>standardized package of GIS (Geographical Information System) based forecast location shapefiles</strong>, for all the forecast locations used in ECCC CAP Messages, are available at the following address:</p>
+<p><a href="https://dd.weather.gc.ca/meteocode/geodata/">https://dd.weather.gc.ca/meteocode/geodata/</a></p>
+<p>Shapefile packages found there are the same Shapefiles that are used in the operational environment where ECCC warnings are initially generated. The Shapefile packages are versioned in order to track the available packages to the package used in the operational environment at any given time. Beginning with version 5.0.3 of the GIS package, usage dates for the package will be included in the documentation.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p><strong>The directories have the following nomenclature :</strong></p>
+<p>alerts/cap/YYYYMMDD/</p>
+<p><strong>The filenames have the following nomenclature :</strong></p>
+<p>T_BBBBNN_C_EEEE_YYYYMMDDhh_##########.cap</p>
+<p>where:</p>
+<ul>
+<li>T: constant string. Literal specification from WMO-386 manual as a prefix for this file 
+  naming convention.                                                                               </li>
+<li>BBBBNN (for tornado and severe thunderstorm alerts): 4 letters and 2 numbers representing the 2 letter province or water body code, the 2 letter country code CN (from the WMO list), and a 2 digit numeric code set to 00 to satisfy the format of the existing filename structure. Ex: ABCN00.</li>
+<li>BBBBNN (for all other alerts): 4 letters and 2 numbers representing the traditional WMO bulletin header used for the alert bulletin on the WMO transmission circuits. Ex: WWCN11.</li>
+</ul>
+<p>In the case of the 2 letter province or water body codes, the list of provincial or territorial codes includes: </p>
+<pre><code>* BC – British Columbia
+* AB - Alberta
+* SK - Saskatchewan
+* MB - Manitoba
+* ON – Ontario
+* QC - Quebec
+* YT - Yukon
+* NU - Nunavut
+* NT - Northwest Territories
+* NS – Nova Scotia
+* NB – New Brunswick
+* PE – Prince Edward Island
+* NL – Newfoundland and Labrador
+* GL - Great Lakes
+* PC - Pacific Waters
+* AT - Atlantic Waters
+* AC - Arctic Waters
+</code></pre>
+<ul>
+<li>C: constant string. Specified by the WMO, as a prefix for the CCCC group.                                      </li>
+<li>EEEE: 4 letters for the responsible office code (CWAO, CWTO, etc.). The exception is for tornado warning and severe thunderstorm warning alerts where the 4 letters are either LAND or WATR rather than responsible office.                              </li>
+<li>YYYYMMDDhhmm: warning transmission date/time (UTC).</li>
+<li>'##########': the 10 numeric digit CAP message identifier found in the CAP file</li>
+</ul>
+<p><strong>Examples of the filename nomenclature</strong>:</p>
+<ul>
+<li>
+<p>T_WWCN11_C_CWTO_201608041031_8263481729.cap: WWCN11 alert bulletin type for the responsible office of CWTO - Ontario Storm Prediction Centre. 
+  The alert was transmitted on August 4, 2016 at 1031 UTC.</p>
+</li>
+<li>
+<p>T_ABCN00_C_LAND_201608041521_0615296639.cap: LAND alert bulletin type for the province of Alberta - AB. The alert type would be either tornado warning or severe thunderstorm warning. 
+  The alert was transmitted on August 4, 2016 at 1521 UTC.</p>
+</li>
+<li>
+<p>T_QCCN00_C_WATR_201608041521_1920353215.cap: WATR alert bulletin type for the province of Quebec - QC. The alert type would be a tornado warning (severe thunderstorm warnings are not issued over water zones). 
+  The alert was transmitted on August 4, 2016 at 1521 UTC.                                                                                   </p>
+</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>The term "responsible" office is used as it is independent of the "issuing" office which sends the alert. Normally, the "responsible" office is also the "issuing" office. However, in contingency situations the "issuing" office can be different. </p>
+</li>
+<li>
+<p>The "Responsible" office is used for routing and distribution purposes (the right message to the right place) and the “issuing” office is used for accounting and performance measurement purposes (who wrote it).</p>
+</li>
+<li>
+<p>List of the issuing offices:</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name English</th>
+<th>Name French</th>
+<th>Acronym English</th>
+<th>Acronym French</th>
+<th>City</th>
+<th>Time Zone Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CWUL</td>
+<td>Quebec Storm Prediction Centre</td>
+<td>centre de prévision des intempéries du Québec</td>
+<td>QSPC</td>
+<td>CPIQ</td>
+<td>Montréal</td>
+<td>EST5EDT</td>
+</tr>
+<tr>
+<td>CWEG</td>
+<td>Prairie and Arctic Storm Prediction Centre</td>
+<td>centre de prévision des intempéries des Prairies et de l'Arctique</td>
+<td>PASPC</td>
+<td>CPIPA</td>
+<td>Edmonton</td>
+<td>MST7MDT</td>
+</tr>
+<tr>
+<td>CWNT</td>
+<td>Prairie and Arctic Storm Prediction Centre</td>
+<td>centre de prévision des intempéries des Prairies et de l'Arctique</td>
+<td>PASPC</td>
+<td>CPIPA</td>
+<td>Edmonton</td>
+<td>MST7MDT</td>
+</tr>
+<tr>
+<td>CWWG</td>
+<td>Prairie and Arctic Storm Prediction Centre</td>
+<td>centre de prévision des intempéries des Prairies et de l'Arctique</td>
+<td>PASPC</td>
+<td>CPIPA</td>
+<td>Winnipeg</td>
+<td>CST6CDT</td>
+</tr>
+<tr>
+<td>CWVR</td>
+<td>Pacific and Yukon Storm Prediction Centre</td>
+<td>centre de prévision des intempéries de la région du Pacfique et du Yukon</td>
+<td>PSPC</td>
+<td>CPIP</td>
+<td>Vancouver</td>
+<td>PST8PDT</td>
+</tr>
+<tr>
+<td>CWTO</td>
+<td>Ontario Storm Prediction Centre</td>
+<td>centre de prévision des intempéries de l'Ontario</td>
+<td>OSPC</td>
+<td>CPIO</td>
+<td>Toronto</td>
+<td>EST5EDT</td>
+</tr>
+<tr>
+<td>CYQX</td>
+<td>Newfoundland and Labrador Weather Office</td>
+<td>centre de prévision des intempéries de Terre-Neuve-et-Labrador</td>
+<td>NLWO</td>
+<td>CPITNL</td>
+<td>Gander</td>
+<td>NST3:30NDT</td>
+</tr>
+<tr>
+<td>CWAO</td>
+<td>Canadian Meteorological Centre</td>
+<td>Centre météorologique canadien</td>
+<td>CMC</td>
+<td>CMC</td>
+<td>Montréal</td>
+<td>EST5EDT</td>
+</tr>
+<tr>
+<td>CWIS</td>
+<td>Canadian Ice Service</td>
+<td>Service canadien des glaces</td>
+<td>CIS</td>
+<td>SCG</td>
+<td>Ottawa</td>
+<td>EST5EDT</td>
+</tr>
+<tr>
+<td>CWHX</td>
+<td>Atlantic Storm Prediction Centre</td>
+<td>centre de prévision des intempéries de la région de l'Atlantique</td>
+<td>ASPC</td>
+<td>CPIRA</td>
+<td>Dartmouth</td>
+<td>AST4ADT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

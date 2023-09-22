@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme naefs datamartxml fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-xml-du-systeme-de-previsions-densemble-nord-americain-spena" class="nav-link">Données XML du Système de Prévisions d'Ensemble Nord-Américain (SPENA)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-repertoires-des-fichiers" class="nav-link">Nomenclature des répertoires des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#emplacements-disponibles" class="nav-link">Emplacements disponibles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_naefs-datamartxml_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_naefs_fr/">SPENA</a> &gt; SPENA sur le Datamart du SMC</p>
+<h1 id="donnees-xml-du-systeme-de-previsions-densemble-nord-americain-spena">Données XML du Système de Prévisions d'Ensemble Nord-Américain (SPENA)</h1>
+<p>Cette page décrit les données <a href="../readme_naefs_fr/">système de prévisions d'ensemble Nord-Américain</a> disponibles en format GRIB2.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les fichiers XML de SPENA se trouvent à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml">https://dd.meteo.gc.ca/ensemble/naefs/xml</a></li>
+</ul>
+<p>Un historique de 30 jours de prévisions est conservé dans ce répertoire.</p>
+<h2 id="nomenclature-des-repertoires-des-fichiers">Nomenclature des répertoires des fichiers</h2>
+<p>La structure des répertoires est basée sur la date d'intégration et la
+variable contenu dans les fichiers XML. Ils suivent la nomenclature <br />
+suivante:</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml">https://dd.meteo.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}</a></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>AAAAMMJJ</strong> : Date du début d'intégration de la prévision</li>
+<li><strong>ZZ</strong> : Heure UTC d'intégration de la prévision. Peut être '00' ou '12'</li>
+<li><strong>VARIABLE</strong> : Élément du temps dans ce répertoire. Voir la section 'Liste
+des variables' plus bas pour la liste complète des variables.</li>
+<li><strong>TYPE</strong> : Type de données. Pour l'instant, seules les sorties directes de
+modèles sont disponibles ('raw').</li>
+</ul>
+<p>Exemple : pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
+pour la vitesse du vent à la surface de seront dans le répertoire:</p>
+<p><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw">https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw</a></p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
+<p>La nomenclature des fichiers est la suivante :</p>
+<p>AAAAMMJJHH_GEPS-NAEFS-TYPE_EMPLACEMENT_PROVETAT_PAYS_VAR_DEB-FIN.xml.bz2</p>
+<p>où :</p>
+<ul>
+<li><strong>AAAA</strong> : Année de la prévision, 4 chiffres.</li>
+<li><strong>MM</strong> : Mois de la prévision, 2 chiffres (janvier = 01).</li>
+<li><strong>JJ</strong> : Jour de prévision, 2 chiffres.</li>
+<li><strong>HH</strong> : Heure du début la prévision, 2 chiffres (00 ou 12 - représentant
+l'heure en UTC).</li>
+<li><strong>GEPS-NAEFS</strong> : Un chaîne de caractères constante qui indique le modèle GEM
+pour les EPSgramme (GEPS) dans le cadre du projets SPENA (en anglais,
+l'acronyme est NAEFS).</li>
+<li><strong>TYPE</strong> : Peut prendre la valeur 'RAW' (brute) pour les données brutes du
+modèle ou 'BC' pour les données débiaisées. (présentement seul RAW est
+disponible).</li>
+<li><strong>EMPLACEMENT</strong> : Nom de l'emplacement pour lequel la prévision est émise.</li>
+<li><strong>PROVETAT</strong> : Province (Canada) ou État (États-Unis, Mexique) de
+l'emplacement pour lequel la prévision est émise. Code de 2 lettres.  Pour
+les autres pays le
+code 'XX' est utilisé. Vous pouvez télécharger la liste anglaise de
+correspondance des codes ici : 
+<a href="http://www.state.ia.us/tax/forms/84055.pdf">http://www.state.ia.us/tax/forms/84055.pdf</a></li>
+<li><strong>PAYS</strong> : Pays de l'emplacement pour lequel la prévision est émise.
+CA=Canada,
+US=États-Unis, MX=Mexique, etc. Pour une liste complète des pays, voir la
+section « Liste des pays » à la fin de ce fichier.</li>
+<li><strong>VAR</strong> : Variables (voir section suivante pour la liste).</li>
+<li><strong>DEB</strong> : Début de l'intervalle (en heures après la date de prévision) pour
+lequel des prévisions sont émises.</li>
+<li><strong>FIN</strong> : Fin de l'intervalle (en heures après la date de prévision) pour
+lequel des prévisions sont émises.</li>
+</ul>
+<p>Exemple :</p>
+<p>2010051000_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2</p>
+<p>Ce fichier représente les données des modèles pour la date du 10 mai 2010
+à 00UTC (2010051000), en format brut (RAW) pour la ville de London 
+(LONDON) en Ontario (ON) au Canada (CA). On y retrouvera les valeurs pour
+la pression au niveau de la mer (MSLP) pour les 384 premières heures de <br />
+prévisions (000-384). C'est un fichier XML (xml) compressé à l'aide de  <br />
+l'algorithme bzip2 (bz2).</p>
+<p>Exemple d'URL pour un fichier sur internet :</p>
+<p><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2">https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2</a></p>
+<h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
+<p>Les fichiers XML ont été compressés avec l'algorithme bzip2. Pour 
+décompresser ces fichiers, vous pouvez utiliser le logiciel bunzip2 
+(GNU/Linux, Mac OS X) ou encore 7-zip (Windows). Les fichiers sont encodés
+en format UTF-8.</p>
+<p>Chaque fichier est composé d'une section d'en-tête (<header>) indiquant la
+localisation de l'emplacement, les dates et heures de début et fin des  <br />
+prévisions, la variable concernée, l'unité utilisé pour le représenter  <br />
+ainsi que la date et l'heure de création du fichier.</p>
+<p>Viennent ensuite plusieurs sections pour la prévision (<forecast>). 
+Chacune de ces sections correspond à une heure de prévision précise. Elles
+contiennent chacune une série d'étiquettes <model> indiquant pour chaque<br />
+modèle disponible la valeur de la variable pour ce modèle à cette heure de
+prévision (voir la liste des modèles dans la section précédente « Liste <br />
+des modèles ».
+Note: Certains modèles n'ont pas de prévisions pour certaines heures.</p>
+<p>Le contenu des fichiers est sous la forme :</p>
+<pre><code class="language-xml">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+   &lt;naefs_spena_forecast&gt;
+      &lt;header&gt;
+         &lt;location description=&quot;XXXXXXXXX&quot; pays_country=&quot;XX&quot; province_state=&quot;XX&quot;/&gt;
+         &lt;valid-begin-time&gt;XXXXXXXX&lt;/valid-begin-time&gt;
+         &lt;valid-end-time&gt;XXXXXXXX&lt;/valid-end-time&gt;
+         &lt;forecast_element no=&quot;X&quot; type=&quot;XX&quot; niveau_level=&quot;X&quot; titre_francais=&quot;XXXXXXXXXXXXXXXXXX&quot; unite_francaise=&quot;XXX&quot; title_english=&quot;XXXXXXXXXXXXX&quot; unit_english=&quot;XXX&quot;/&gt;
+        &lt;model_description&gt;
+          &lt;model id='1' model='GEM' member='000' center='CMC' domain='global' data_type='RAW' member_type='control'/&gt;
+          &lt;model id='2' model='GEM' member='001' center='CMC' domain='global' data_type='RAW' member_type='member'/&gt;
+          &lt;model id='3' model='GEM' member='002' center='CMC' domain='global' data_type='RAW' member_type='member'/&gt;
+               ...
+        &lt;/model_description&gt;
+         &lt;creation_date&gt;XXXXXXXXXXX&lt;/creation_date&gt;
+      &lt;/header&gt;
+   &lt;forecast forecast_hour='XXX' valid_time='XXXXXXXXXX'&gt;
+      &lt;model id='1'&gt;XXX&lt;/model&gt;
+               ...
+   &lt;/forecast&gt;
+   &lt;forecast forecast_hour='XXX' valid_time='XXXXXXXXXX'&gt;
+      &lt;model id='1'&gt;XXX&lt;/model&gt;
+      &lt;model id='2'&gt;XXX&lt;/model&gt;
+               ...
+   &lt;/forecast&gt;
+         ...
+&lt;/naefs_spena_forecast&gt;
+</code></pre>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p>Les fichiers XML sont produits pour 10 variables :
+* Pression moyenne au niveau de la mer (MSLP)
+* Accumulation totale de précipitation à la surface (APCP-SFC)
+* Couvert nuageux total (TCDC)
+* Vitesse du vent à 200 hpa (WIND-200HPA)
+* Hauteur géopotentielle à 500 hpa (HGT-500HPA)
+* Épaisseurs entre 1000-500 hpa (LAYER-1000-500HPA)
+* Température de l'air à la surface (TMP-SFC)
+* Humidité relative à la surface (RELH-SFC)
+* Vitesse du vent à la surface (WIND-SFC)
+* Direction du vent à la surface (WDIR-SFC)</p>
+<p>Vous trouverez une liste en format XML des variables qui contient le nom<br />
+du répertoire associé, les descriptions et les unités, en français et 
+anglais à cette adresse :</p>
+<p><a href="https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml">https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml</a></p>
+<h2 id="emplacements-disponibles">Emplacements disponibles</h2>
+<p>Les sorties XML des prévisions d'ensemble SPENA sont des interpolations
+de points de grille des prévisions aux coordonnées latitude-longitude
+de 540 emplacements :
+* 273 au Canada
+* 137 aux États-Unis
+* 74 au Mexique
+* 56 dans les tropiques et au Groenland</p>
+<p>Vous trouverez une liste en format XML des emplacements qui contient :
+* Le nom de l'emplacement
+* La province ou l'État
+* Le pays
+* Les codes, lorsque qu'applicables: NAEFS, WMO, IATA, ICAO
+* La longitude, la latitude et l'altitude (notez que l'altitude est 
+manquante pour quelques emplacements)</p>
+<p>Cette liste se trouve dans le fichier suivant :</p>
+<p><a href="https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml">https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml</a></p>
+<p>La correspondance pour les codes de 2 lettres pour les provinces ou les
+États peut-être trouvée dans ce document PDF :</p>
+<p><a href="http://www.state.ia.us/tax/forms/84055.pdf">http://www.state.ia.us/tax/forms/84055.pdf</a></p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

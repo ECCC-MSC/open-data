@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme aqhi datamartcsv fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-csv-dobservations-et-previsions-qui-sont-generees-pour-le-programme-cote-air-sante-cas" class="nav-link">Données CSV d'observations et prévisions qui sont générées pour le programme Cote Air Santé (CAS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresses-des-donnees" class="nav-link">Adresses des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#retention-des-donnees" class="nav-link">Rétention des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notes" class="nav-link">Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_aqhi-datamartcsv_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_aqhi_fr/">CAS</a> &gt; Données CSV de CAS sur le Datamart du SMC</p>
+<h1 id="donnees-csv-dobservations-et-previsions-qui-sont-generees-pour-le-programme-cote-air-sante-cas">Données CSV d'observations et prévisions qui sont générées pour le programme Cote Air Santé (CAS)</h1>
+<p>Cette page décrit les données d'observations et de prévisions disponibles en format CSV pour la <a href="../readme_aqhi_fr/">cote air santé CAS</a> qui sont aussi disponibles sur le <a href="https://meteo.gc.ca/airquality/pages/index_f.html">site web d'Environnement et Changement climatique Canada</a>. </p>
+<h2 id="adresses-des-donnees">Adresses des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV.</p>
+<p>Les données sont accessibles aux adresses suivantes :</p>
+<ul>
+<li>
+<p><strong>Observations</strong> : </p>
+<ul>
+<li>
+<p>Fichiers en temps réel : </p>
+<ul>
+<li>Région de l'Atlantique : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv">https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv</a></li>
+<li>Région de l'Ontario : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv">https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv</a></li>
+<li>Région des Prairies et du Nord : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv</a></li>
+<li>Région du Pacifique et Yukon : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv</a></li>
+<li>Région du Québec : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv">https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv</a></li>
+</ul>
+</li>
+<li>
+<p>Fichiers mensuels :</p>
+<ul>
+<li>Région de l'Atlantique : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv</a></li>
+<li>Région de l'Ontario : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv</a></li>
+<li>Région des Prairies et du Nord : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv</a></li>
+<li>Région du Pacifique et Yukon : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv</a></li>
+<li>Région du Québec : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prévisions publiques</strong> :</p>
+<ul>
+<li>Fichiers mensuels : <ul>
+<li>Région de l'Atlantique : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv</a></li>
+<li>Région de l'Ontario : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv</a></li>
+<li>Région des Prairies et du Nord : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv</a></li>
+<li>Région du Pacifique et Yukon : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv</a></li>
+<li>Région du Québec : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv">https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Données des modèles numériques</strong> :</p>
+<ul>
+<li>Région de l'Atlantique : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv">https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv</a></li>
+<li>Région de l'Ontario : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv">https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv</a></li>
+<li>Région des Prairies et du Nord : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv</a></li>
+<li>Région du Pacifique et Yukon : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv">https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv</a></li>
+<li>Région du Québec : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv">https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="retention-des-donnees">Rétention des données</h2>
+<p>Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
+<ul>
+<li>
+<p><strong>Observations</strong>: </p>
+<ul>
+<li>Fichiers en temps réel: AAAAMMJJhh_AQHI_REGION_OBSTYPE.csv</li>
+<li>Fichiers mensuels: AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE.csv</li>
+<li>Fichiers mensuels avec données remblayées :  AAAAMM_MONTHLY_AQHI_REGION_OBSTYPE_BACKFILLED.csv</li>
+</ul>
+</li>
+<li>
+<p>où : </p>
+<ul>
+<li><strong>AAAA</strong> : Année de l'observation, 4 chiffres.</li>
+<li><strong>MM</strong> : Mois de l'observation, 2 chiffres (janvier = 01).</li>
+<li><strong>JJ</strong> : Jour de l'observation, 2 chiffres.</li>
+<li><strong>hh</strong> : Heure de l'observation, 2 chiffres.</li>
+<li><strong>mm</strong> : Minute de l'observation, 2 chiffres.</li>
+<li><strong>'MONTHLY'</strong> : Symbole présent lorsque le fichier contient des données mensuelles.</li>
+<li><strong>REGION</strong> : Nom de la région d'Environnement et Changement climatique Canada  où les observations sont situées. Les valeurs possibles sont les suivantes :<ul>
+<li>'ATL'= Région de l'Atlantique</li>
+<li>'ON'= Région de l'Ontario</li>
+<li>'PNR'= Région des Prairies et du Nord</li>
+<li>'PYR'= Région du Pacifique et du Yukon</li>
+<li>'QC'= Région du Québec</li>
+</ul>
+</li>
+<li><strong>OBSTYPE</strong> : Type d'observation dans le fichier. Les options possibles sont les suivantes :<ul>
+<li>'SiteObs' = Le fichier contient les observations de CAS pour les <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communautés</a>,</li>
+<li>'StationObs' = Le fichier contient les observations de CAS pour les stations d'observation associées aux communautés (non disponible au mois de janvier 2012).</li>
+<li><strong>'BACKFILLED'</strong> : Symbole présent lorsque le fichier contient des observations de CAS qui ne sont pas calculées en temps-réel, mais qui sont calculées à partir des données remblayées ou corrigées (reçues dans les 48 heures suivant l'heure de validité).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Prévisions publiques</strong> : </p>
+</li>
+<li>
+<p>AAAAMM_MONTHLY_AQHI_CGNDB_SiteFcst.csv</p>
+</li>
+<li>
+<p>où : </p>
+<ul>
+<li><strong>AAAA</strong> : Année des prévisions, 4 chiffres.</li>
+<li><strong>MM</strong> : Mois des prévisions, 2 chiffres (janvier = 01).</li>
+<li><strong>'MONTHLY'</strong> : Symbole présent lorsque le fichier contient des données pour le mois.</li>
+<li><strong>CGNDB</strong> : Un <a href="http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique">code de 5-caractères</a> identifiant chaque <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté de la CAS</a>. </li>
+<li><strong>'SiteFcst'</strong> : Symbole indiquant que le fichier contient des prévisions de CAS pour une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">liste complète des communautés</a>, avec les codes de <a href="http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique">CGNDB</a>, données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.</p>
+<ul>
+<li>
+<p><strong>Données des modèles numériques</strong>:</p>
+<ul>
+<li>AAAAMMDDhh_SPECIE_REGION_MODELTYPE.csv</li>
+</ul>
+</li>
+<li>
+<p>où :</p>
+<ul>
+<li><strong>AAAA</strong> : année pour laquelle les données ont été générées, 4 chiffres;</li>
+<li><strong>MM</strong> : mois pour lequel les données ont été générées, 2 chiffres (Janvier = 01);</li>
+<li><strong>DD</strong> : jour pour lequel les données ont été générées, 2 chiffres;</li>
+<li><strong>hh</strong> : heure pour laquelle les données ont été générées, 2 chiffres (00 ou 12 UTC);</li>
+<li><strong>'SPECIE'</strong> : nom de l'espèce chimique. Les options possibles sont les suivantes :<ul>
+<li>'O3' = Ozone</li>
+<li>'NO2' = Dioxyde d'azote</li>
+<li>'PM2.5' = Particules d'un diamètre de moins de 2.5 um</li>
+<li>'PM10' = Particules d'un diamètre de moins de 10 um</li>
+<li>'AQHI' = Cote Air Santé</li>
+</ul>
+</li>
+<li><strong>REGION</strong> : Nom de la région d'Environnement et Changement climatique Canada  pour laquelle les données sont valides. Les valeurs possibles sont les suivantes :<ul>
+<li>'ATL' = Région de l'Atlantique</li>
+<li>'ON' = Région de l'Ontario</li>
+<li>'PNR' = Région des Prairies et du Nord</li>
+<li>'PYR' = Région du Pacifique et du Yukon</li>
+<li>'QC' = Région du Québec</li>
+</ul>
+</li>
+<li><strong>MODELTYPE</strong> : Système utilisé pour générer les données. Les options possibles sont les suivantes :<ul>
+<li>'AQFM' = Modèle de prévision de la qualité de l'air,</li>
+<li>'UMOSAQ' = Le système de post-traitement "Updateable Model Output Statistics" appliqué aux sorties bruts de l'AQFM,</li>
+<li>'UMOSAQMIST' = Données combinées des systèmes AQFM et UMOSAQ générées à fournir des informations additionelles aux météorologues car les données d'UMOSAQ ne sont pas toujours disponibles directement aux points d'observation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
+<ul>
+<li>
+<p><strong>Fichiers CSV des observations de CAS calculées à partir des donnèes sur les polluants reçus en temps-réel</strong> (pour les fichiers en temps réels et mensuels) :</p>
+<ul>
+<li><strong>En-tête</strong></li>
+</ul>
+</li>
+</ul>
+<p>L'en-tête présent sur la première ligne contient les informations suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Hour</th>
+<th>CGNDB_Site1</th>
+<th>CGNDB_Site2</th>
+<th>...</th>
+<th>CGNDB_SiteN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où:</p>
+<ul>
+<li>'Date' : Étiquette statique</li>
+<li>'Hour' : Étiquette statique</li>
+<li>CGNDB_Site# : Code de 5 caractères identifiant chaque <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté CAS</a>. </li>
+</ul>
+</li>
+<li>
+<p><strong>Bloc de données</strong></p>
+</li>
+</ul>
+<p>Les observations sont fournit avec une précision de deux décimales.</p>
+<p>Chaque ligne d'un bloc de données contient les informations suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>AAAA-MM-JJ</th>
+<th>hh</th>
+<th>CAS_Site1</th>
+<th>CAS_Site2</th>
+<th>...</th>
+<th>CAS_SiteN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où :</p>
+<ul>
+<li>AAAA : Année de l'observation</li>
+<li>MM : Mois de l'observation</li>
+<li>JJ : Jour de l'observation</li>
+<li>hh : L'heure de l'observation</li>
+<li>CAS_Site# : Observations de la CAS pour toutes les <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communautés</a> dans la région.</li>
+</ul>
+</li>
+</ul>
+<p>Note : Les fichiers en temps réels contiennent les 7 derniers jours d’observations de la CAS, avec les observations les plus récentes en premier. Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures. Les fichiers mensuels sont également ordonnés en ordre décroissant avec les observations les plus récentes en premier. Ceux-ci sont disponibles sur le Datamart du SMC pour une période de 12 mois.</p>
+<ul>
+<li><strong>Fichiers CSV des observations de CAS calculées à partir des donnèes remblayées ou corrigées</strong> (uniquement disponible dans les fichiers mensuels) :</li>
+</ul>
+<p>Ces fichiers ont la même structure que les fichiers mensuels décrits précédemment, mais son contenu en diffère. En effet, ce fichier présente les valeurs de la CAS calculées 48 heures suivant l’heure de validité à partir des données corrigées et remblayées. </p>
+<ul>
+<li>
+<p><strong>Fichiers CSV des prévisions publiques de CAS</strong> (uniquement disponible dans le fichiers mensuels) :</p>
+<ul>
+<li><strong>En-tête</strong></li>
+</ul>
+</li>
+</ul>
+<p>L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes :</p>
+<table>
+<thead>
+<tr>
+<th>cgndb code</th>
+<th>community name</th>
+<th>issue date</th>
+<th>issue time</th>
+<th>period</th>
+<th>value</th>
+<th>amended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Bloc de données</strong></li>
+</ul>
+<p>Les prévisions publiques sont fournit en nombres entiers.</p>
+<table>
+<thead>
+<tr>
+<th>CGNDBcode</th>
+<th>CommunityName</th>
+<th>IssueDate</th>
+<th>IssueTime</th>
+<th>ForecastPeriod</th>
+<th>Value</th>
+<th>AmendmentFlag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où :</p>
+<ul>
+<li>CGNDBcode : Code de 5-caractères qui identifie chaque <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté CAS</a>. </li>
+<li>CommunityName : Nom utilisé de la <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté</a> associée au code CGNDB, et pour laquelle la prévision est valide,</li>
+<li>IssueDate : Date d'émission de la prévision (AAAA-MM-JJ),</li>
+<li>IssueTime : Heure d'émission de la prévision (hh:mm:ss),</li>
+<li>ForecastPeriod : Période de prévision représentée par un entier entre 1 et 3 ("Aujourd'hui", "Ce soir et cette nuit", ou "Demain", respectivement),<ul>
+<li>pour les prévisions émises à 06h00 (heure locale): 1 = Aujourd'hui, 2 = Ce soir et cette nuit, 3 = Demain</li>
+<li>pour les prévisions émises à 17h00 (heure locale): 2 = Ce soir et cette nuit, 3 = Demain</li>
+</ul>
+</li>
+<li>Value : valeur de la prévision de CAS pour la période de prévision en question,</li>
+<li>AmendmentFlag : Entier représentant le nombre d’amendements effectués à la prévision. La première émission de la prévision indique toujours une valeur de zéro, puis celle-ci est incrémentée de 1 à chaque ammendement. </li>
+</ul>
+</li>
+</ul>
+<p>Note : Les fichiers mensuels de prévisions publiques de la CAS sont ordonnés en ordre décroissant avec les prévisions les plus récentes en premier. Ceux-ci sont disponibles sur le Datamart du SMC pour une période de 12 mois.</p>
+<ul>
+<li>
+<p><strong>Fichiers CSV qui contiennent les données des modèles</strong> :</p>
+<ul>
+<li><strong>En-tête</strong></li>
+</ul>
+</li>
+</ul>
+<p>L'en-tête présent sur la première ligne de chaque fichier contient les informations suivantes :</p>
+<p>1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10) :</p>
+<table>
+<thead>
+<tr>
+<th>stationId</th>
+<th>YYYYMMDDhh +0</th>
+<th>YYYYMMDDhh+1</th>
+<th>...</th>
+<th>YYYYMMDDhh+48</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où:</p>
+<ul>
+<li>"stationId" identifiant NAPS unique de la station d’observation. </li>
+<li>YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).</li>
+</ul>
+</li>
+</ul>
+<p>2) Pour les fichiers qui contiennent des données de CAS :</p>
+<table>
+<thead>
+<tr>
+<th>cgndb</th>
+<th>forecast date (hour0)</th>
+<th>forecast date (hour1)</th>
+<th>...</th>
+<th>forecast date (hour47),forecast date (hour48)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où:</p>
+<ul>
+<li>"cgndb" identifiant CGNDB de la <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté</a> pour laquelle la prévision est effectuée. </li>
+<li>YYYYMMDDhh+# date (YYYYMMDD) et heure de la prévision (hh) du modèle, jusqu’à 48 heures (de H+000 à H+048).</li>
+</ul>
+</li>
+<li>
+<p><strong>Bloc de données</strong></p>
+</li>
+</ul>
+<p>Les données des modèles pour toutes les espèces sont fournit avec 2 décimales.</p>
+<p>Chaque ligne d'un bloc de données contient les informations suivantes :</p>
+<p>1) Pour les fichiers qui contiennent des données de polluants (O3, NO2, PM2.5, PM10) :</p>
+<table>
+<thead>
+<tr>
+<th>StationID</th>
+<th>Valeur (H+000)</th>
+<th>Valeur (H+001)</th>
+<th>...</th>
+<th>Valeur (H+047)</th>
+<th>Valeur (H+048)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>2) Pour les fichiers qui contiennent des données de CAS :</p>
+<table>
+<thead>
+<tr>
+<th>StationID</th>
+<th>Valeur (H+000)</th>
+<th>Valeur (H+001)</th>
+<th>...</th>
+<th>Valeur (H+047)</th>
+<th>Valeur (H+048)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>où :</p>
+<ul>
+<li>StationID : Identifiant NAPS unique de la station d’observation.</li>
+<li>CGNDBcode : un code de 5-caractères qui identifie chaque <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_community.geojson">communauté CAS</a>.</li>
+<li>Valeur (H+000 à H+048) : valeur du modèle dérivée à la station d'observation (pour UMOSAQ) ou interpolées à la station d'observation (pour AQFM, UMOSAQMIST). </li>
+</ul>
+</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>Les fichiers CSV « real-time » sont produits aux heures et ils contiennent les données pour les dernières 7 jours. Ils sont disponibles sur le Datamart pour une période de 8 jours. Les fichiers CSV « MONTHLY » sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.</p>
+</li>
+<li>
+<p>Dans les fichiers CSV pour la CAS, la valeur de la première heure est toujours manquante parce que la formule de la CAS nécessite un minimum de deux heures au cours des dernières 3 heures pour calculer les moyennes mobiles.</p>
+</li>
+<li>
+<p>Dans les fichiers CSV pour UMOSAQ, il est possible que certaines valeurs soient manquantes en raison de prévisions manquantes. La disponibilité des prévisions de UMOS pour une heure spécifique dépend de l'existence de données historiques suffisantes pour être en mesure de générer des équations statistiques/prédictifs qui sont fiables.</p>
+</li>
+<li>
+<p>Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : <a href="https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/">https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/</a>. Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: <a href="https://www.airnowtech.org/index.cfm?page=login">https://www.airnowtech.org/index.cfm?page=login</a>.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
