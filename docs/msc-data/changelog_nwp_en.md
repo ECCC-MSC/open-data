@@ -10,7 +10,7 @@
 
 ### September 20, 2023
 
-* [Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ophs/changelog_ophs_en.md#wednesday-september-20-2023)
+* [Operational status of the Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ohps/changelog_ohps_en.md#wednesday-september-20-2023)
 
 ### September 14, 2023
 
@@ -22,6 +22,10 @@
 ### August 30, 2023
 
 * [Upgrade to Version 2.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-august-30-2023)
+
+### August 3, 2023
+
+* [Upgrade to version 3.3.0 of the Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ohps/changelog_ohps_en.md#thursday-august-3-2023)
 
 ### July 27, 2023
 
@@ -140,7 +144,7 @@ Water, ocean and ice
 
 * [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.0.0](nwp_hrdlps/changelog_hrdlps_en.md#wednesday-december-1st-2021)
 * [Deterministic Hydrological Prediction System (DHPS) 3.1.0](nwp_dhps/changelog_dhps_en.md#wednesday-december-1st-2021)
-* [OPerational Hydrodynamic Simulation system (OPHS) 3.0.0](nwp_ophs/changelog_ophs_en.md#wednesday-december-1st-2021)
+* [Operational Hydrodynamic Prediction system (OHPS) 3.0.0](nwp_ohps/changelog_ohps_en.md#wednesday-december-1st-2021)
 
 
 ### November 30, 2021
@@ -438,7 +442,7 @@ Water, ocean and ice
 
 ### May 13, 2013
 
-* [Implementation of the Operational Hydrodynamic System (OPHS) 1.0.0](../nwp_ophs/changelog_ophs_en#monday-may-13-2013)
+* [Implementation of the Operational Hydrodynamic Prediction System (OHPS) 1.0.0](../nwp_ohps/changelog_ohps_en#monday-may-13-2013)
 
 ### May 7, 2013
 
