@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.8
+
+* date: 2023-09-28
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Update GeoMet-OGC-API documentation (starindex -> offset, add OGC API - Processes as supported OGC web service)
+* bug fixes:
+    * None
+
 ## 2.5.7
 
 * date: 2023-09-22
