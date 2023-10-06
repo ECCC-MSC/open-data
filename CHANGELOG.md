@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.9
+
+* date: 2023-10-06
+* announcements:
+    * Not announced
+* new content:
+    * Add RDAQA documentation
+* improvements:
+    * None
+* bug fixes:
+    * Fix typos
+
 ## 2.5.8
 
 * date: 2023-09-28
