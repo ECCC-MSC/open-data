@@ -62,7 +62,8 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ##### &emsp;<span class="badge badge-info">Air quality</span>
 
 * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
-* [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)</br>
+* [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
+* [Regional Deterministic Air Quality Analysis (RDAQA)](nwp_rdaqa/readme_rdaqa_en.md)
 
 ### <span class="badge badge-light">Surface</span>
 
