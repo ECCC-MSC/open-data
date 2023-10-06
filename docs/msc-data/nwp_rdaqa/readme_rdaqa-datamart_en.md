@@ -18,7 +18,7 @@ The data can be accessed at the following URLs:
 
 where:
 
-* __HH__ : Analysis validity time, in UTC [00, 01, 02, ..., 20, 21]
+* __HH__ : Analysis validity time, in UTC [00, 01, 02, ..., 22, 23]
 
 
 A history of 24 days of forecast is kept in this directory.
@@ -48,7 +48,7 @@ where:
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__: Analysis validity time, in UTC [00, 01, 02, ..., 20, 21]
+* __HH__: Analysis validity time, in UTC [00, 01, 02, ..., 22, 23]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __SYSTEM__ : Constant string indicating the system from which the analysis was generated [RDAQA; RDAQA-Prelim for the observation cut-off time within one hour of time YYYYMMDDHH, indicating that all observations may not have been collected; RDAQA-FW for analysis generated from the RAQDPS-FW system].
