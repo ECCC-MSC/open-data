@@ -18,7 +18,7 @@ Les données sont accessibles à l'adresse suivante :
 
 où :
 
-* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ..., 20, 21]
+* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ..., 22, 23]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -47,7 +47,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ...., 20, 21] 
+* __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ...., 22, 23] 
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __SYSTEM__ : Chaîne de caractères constante indiquant le système à partir duquel l'analyse a été générée [RDAQA; RDAQA-Prelim pour le temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies; RDAQA-FW pour l'analyse générée à partir du système SRPDQA-FW]
