@@ -197,6 +197,7 @@
 <li>Web Coverage Service (WCS)</li>
 <li>OGC API - Features (OAFeat)</li>
 <li>OGC API - Coverages (OACov)</li>
+<li>OGC API - Processes (OAProc)</li>
 </ul>
 <h2 id="web-map-service-wms">Web Map Service (WMS)</h2>
 <p>Requests with the <a href="https://www.opengeospatial.org/standards/wms">OGC Web Map Service (WMS)</a> standard mainly enable a client to retrieve geospatial data as maps. WMS requests are made over the internet (HTTP) and are primarily used to retrieve an image (e.g. JPEG, PNG) of geospatial data for a given area of interest.</p>
@@ -815,8 +816,8 @@ the <code>TIME</code> and <code>DIM_REFERENCE_TIME</code> usage is the same.</p>
 <li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001</a></li>
 </ul>
 <h4 id="paging">Paging</h4>
-<h5 id="startindex">Startindex</h5>
-<p>The <code>startindex</code> parameter can be used to specify the record to start at when extracting
+<h5 id="offset">Offset</h5>
+<p>The <code>offset</code> parameter can be used to specify the record to start at when extracting
 features. The default value is 0 (first feature).</p>
 <h5 id="total-number-of-items">Total number of items</h5>
 <p>The <code>resulttype=hits</code> parameter is used to return the number of features found in a collection, without the actual features returned. The number of features is found in the response's <code>numberMatched</code> key.</p>
@@ -827,7 +828,7 @@ features. The default value is 0 (first feature).</p>
 <p>The <code>limit</code> parameter is used to define the maximum records to return as part of querying
 for features. The default response size is 500 features.</p>
 <h5 id="paging-through-results">Paging through results</h5>
-<p>The <code>startindex</code> and <code>limit</code> parameters can be used in tandem to cycle through feature collections. The examples below demonstrate how to adjust and page through query results.</p>
+<p>The <code>offset</code> and <code>limit</code> parameters can be used in tandem to cycle through feature collections. The examples below demonstrate how to adjust and page through query results.</p>
 <p>Query and limit to features 1-2:</p>
 <ul>
 <li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=2">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=2</a></li>
@@ -838,13 +839,13 @@ for features. The default response size is 500 features.</p>
 </ul>
 <p>Query and limit to features 101-200:</p>
 <ul>
-<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;startindex=101&amp;limit=100">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;startindex=101&amp;limit=100</a></li>
+<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offset=101&amp;limit=100">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offset=101&amp;limit=100</a></li>
 </ul>
 <h5 id="strategies-for-paging">Strategies for paging</h5>
 <p>The paging strategy is commonly used in support of performance when returning large data extraction. For example, a client could page by 1000 features to cycle through an entire station record:</p>
 <ul>
-<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=0&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=0&amp;limit=1000</a></li>
-<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=1000&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=1000&amp;limit=1000</a></li>
+<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000</a></li>
+<li><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000</a></li>
 </ul>
 <p>The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record.</p>
 <h4 id="combining-filter-parameters">Combining filter parameters</h4>

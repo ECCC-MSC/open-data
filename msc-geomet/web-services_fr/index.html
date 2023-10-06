@@ -187,6 +187,7 @@
 <li>Web Coverage Service (WCS)</li>
 <li>OGC API - Features (OAFeat)</li>
 <li>OGC API - Coverages (OACov)</li>
+<li>OGC API - Processes (OAProc)</li>
 </ul>
 <h2 id="web-map-service-wms">Web Map Service (WMS)</h2>
 <p>Les requêtes effectuées avec le <a href="https://www.opengeospatial.org/standards/wms">standard Web Map Service (WMS)</a> de l'OGC permettent principalement aux usagers to récupérer des données géospatiales en tant que cartes. Les requêtes WMS sont effectuées via Internet (HTTP) et servent principalement à récupérer une image (e.g. JPEG, PNG) issue de données géospatiales pour une région d'intérêt donnée.</p>
@@ -801,8 +802,8 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 <li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001</a></li>
 </ul>
 <h4 id="pagination">Pagination</h4>
-<h5 id="startindex">Startindex</h5>
-<p>Le paramètre <code>startindex</code> peut être utilisé pour spécifier l’enregistrement à partir duquel extraire les entités. La valeur par défaut est 0 (première entité).</p>
+<h5 id="offset">Offset</h5>
+<p>Le paramètre <code>offset</code> peut être utilisé pour spécifier l’enregistrement à partir duquel extraire les entités. La valeur par défaut est 0 (première entité).</p>
 <h5 id="nombre-total-denregistrements">Nombre total d'enregistrements</h5>
 <p>Le paramètre <code>resulttype=hits</code> est utilisé pour obtenir le nombre d'entités d'une collection, sans que les entités soient retournées. Le nombre d'enregistrements est indiqué à la valeur <code>numberMatched</code> de la réponse.</p>
 <ul>
@@ -811,7 +812,7 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 <h5 id="limite">Limite</h5>
 <p>Le paramètre <code>limit</code> permet de définir le nombre maximal d'enregistrements à retourner. La taille de réponse par défaut est de 500 entités.</p>
 <h5 id="parcourir-les-resultats">Parcourir les résultats</h5>
-<p>Les paramètres <code>startindex</code> et <code>limit</code> peuvent être utilisés en tandem pour parcourir les collections d’entités. Les exemples ci-dessous montrent comment ajuster et parcourir les résultats d'une requête.</p>
+<p>Les paramètres <code>offset</code> et <code>limit</code> peuvent être utilisés en tandem pour parcourir les collections d’entités. Les exemples ci-dessous montrent comment ajuster et parcourir les résultats d'une requête.</p>
 <p>Requête et limite aux entités 1-2 :</p>
 <ul>
 <li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=2">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=2</a></li>
@@ -822,13 +823,13 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 </ul>
 <p>Requête et limite aux entités 101-200 :</p>
 <ul>
-<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;startindex=101&amp;limit=100">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;startindex=101&amp;limit=100</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offset=101&amp;limit=100">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offset=101&amp;limit=100</a></li>
 </ul>
 <h5 id="strategies-de-pagination">Stratégies de pagination</h5>
 <p>La stratégie de pagination est couramment utilisée pour améliorer les performances lors du retour d'extractions de données volumineuses. Par exemple, un client peut faire défiler par 1 000 entités pour parcourir un enregistrement de station complet :</p>
 <ul>
-<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=0&amp;limit=1000">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=0&amp;limit=1000</a></li>
-<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=1000&amp;limit=1000">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;startindex=1000&amp;limit=1000</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000</a></li>
 </ul>
 <p>Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Cela constituerait le dossier complet.</p>
 <h4 id="combinaison-de-parametres-de-filtre">Combinaison de paramètres de filtre</h4>
