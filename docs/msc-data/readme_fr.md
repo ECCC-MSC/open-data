@@ -61,6 +61,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 ##### &emsp;<span class="badge badge-info">Qualité de l'air</span>
 * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
 * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
+* [Analyse régionale déterministe de la qualité de l'air (ARDQA)](nwp_rdaqa/readme_rdaqa_fr.md)
 
 ### <span class="badge badge-light">Surface</span>
 
