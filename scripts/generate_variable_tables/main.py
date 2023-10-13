@@ -20,7 +20,7 @@ product_file = './product_translation.yml'
 # Readable level lookup table
 level_file = './readable_level.yml'
 # Temporary directory
-temporary = '/data/geomet/dev/afsuxad/tmp/'
+temporary = '/net/local/home/edouards/cmoa/public-doc/scripts/generate_variable_tables/work'
 
 def read_args(input, model_LUT):
     """
