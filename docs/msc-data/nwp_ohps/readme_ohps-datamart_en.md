@@ -1,6 +1,6 @@
 [In French](readme_ohps-datamart_fr.md)
 
-ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [OHPS](readme_ohps_en.md) > OHPS on the MSC Datamart
 
@@ -10,7 +10,7 @@ This page describes the [Operation Hydrodynamic Prediction System](./readme_ohps
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../.../msc-datamart/amqp_en.md) as soon as it becomes available. An overview and examples to access and use Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../.../msc-datamart/amqp_en.md) as soon as it becomes available. An overview and examples to access and use [Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
