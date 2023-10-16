@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Update REPS doc: remove 15km grid
+    * README and scripts for variables array generation
 * improvements:
     * None
 * bug fixes:
