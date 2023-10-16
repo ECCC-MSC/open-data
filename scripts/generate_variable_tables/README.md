@@ -21,7 +21,9 @@ conda install -c conda-forge pyyaml bs4 gdal==3.5.2
 
 ## Execution
 
-Before running the script, rename the `temporary` variable in `main.py` to a directory with permissions. **Note**: Avoid creating the temporary directory in your home, as you may exceed your disk quota while downloading files.
+Before running the script, rename the `temporary` variable in `main.py` to a directory with permissions. 
+
+**Note**: Avoid creating the temporary directory in your home, as you may exceed your disk quota while downloading files.
 
 To generate variable tables for every available dataset, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
 
@@ -29,9 +31,13 @@ To generate variable tables for every available dataset, run this script in your
 python3 main.py --directory ./tables
 ```
 
-To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. **Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
+To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. 
 
-After executing the script, you must move the created files to the `public-doc/docs/assets/csv/` directory to update the MSC Open Data Documentation. **Note**: It is not recommended to set `public-doc/docs/assets/csv/` as the `--directory`, because the script overwrites files in the directory.
+**Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
+
+After executing the script, you must move the created files to the `public-doc/docs/assets/csv/` directory to update the MSC Open Data Documentation. 
+
+**Note**: It is not recommended to set `public-doc/docs/assets/csv/` as the `--directory`, because the script overwrites files in the directory.
 
 Finally, you must insert the following code block in the corresponding datamart pages located in `public-doc/docs/msc-data/` to load the tables. Make sure to rename the file in the `loadTable` function to load the correct CSV file.
 
