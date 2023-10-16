@@ -46,7 +46,7 @@ NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 
-`{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
 
 Where:
 
@@ -59,8 +59,8 @@ Where:
 * __DOMAIN__ : String indicating which domain the data is from [Great-Lakes]
 * __VAR__ : Variables included in the file
 * __LVL__ : Vertical level [Sfc for the surface]
-* __Grille__ : Horizontal grid type [LatLon]
-* __resolution__ : Indicating resolution in degreee in latitude and longitude direction [0.022x0.031]
+* __Grid__ : Horizontal grid type [LatLon]
+* __resolution__ : Indicating resolution in degree in latitude and longitude direction [0.022x0.031]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 072].
 * __grib2__: constant string indicating the GRIB2 format is used
 

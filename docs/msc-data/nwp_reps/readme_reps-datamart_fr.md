@@ -14,36 +14,18 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles aux adresses suivantes :
+Les données sont accessibles à l'adresse suivante :
 
-* Données à 15km sur grille polaire stéréographique : [https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/{EnsembleTypeDonnee}/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/15km/grib2)
-* Données à 10km sur grille lat-lon tournée : [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
+* [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
 
 où :
 
-* __EnsembleTypeDonnee__ : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres
-* __HH__ : Heure de la passe du modèle en TU
-* __hhh__ : Heure de la prévision
+* __HH__ : Heure de la passe du modèle en UTC [00, 06, 12, 18]
+* __hhh__ : Heure de la prévision [000, 003, 006, ..., 048]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-## Spécification technique des grilles
-
-* __Grille polaire stéréographique__
-
-![Grille du SRPE ps](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique à 15km de résolution:
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 600 |
-| nj | 510 | 
-| résolution à 60° N | 15km |
-| coordonnées du premier point de grille | 19.3206° N ; 141.5411° W | 
-| orientation de la grille (par rapport à l’axe des j) | -110.0° | 
-
-* __Grille lat-lon tournée__
+## Spécification technique de la grille
 
 ![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)
 
@@ -59,32 +41,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 10km de résol
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
-
-### Grille polaire stéréographique à 15km de résolution
-
-Les fichiers ont la nomenclature suivante :
-
-```
-CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_{content}.grib2
-```
-
-où :
-
-* __datatype__ : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres
-* __VAR__ : Type de variable contenu dans le fichier (ex: UGRD)
-* __LVLTYPE__ :  Niveau vertical (ex: SFC pour la surface, NTAT pour le haut de l'atmosphère, DBLL_10cm couche 10cm sous la surface, TGL pour au-dessus de la surface)
-* __LVL__ : Valeur du niveau (ex: 10m pour 10 mètres)
-* __resolution__: Résolution de la grille (ex: ps15km) 
-* __YYYYMMDDHH__: Année, mois, jour du début de la prévision et heure UTC de la passe [00, 06, 12, 18]
-* __P{hhh}__ :  « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]
-* __content__ : Peut être "all-products" ou "allmbrs" pour indiquer que tous les membres ou tous les produits probabilistes pour cette variable sont regroupés dans ce fichier
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
-
-Exemple de nom de fichier : CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-products.grib2
-
-### Grille lat-lon tournée à 10km de résolution
 
 Les fichiers ont la nomenclature suivante :
 
@@ -190,10 +146,6 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
 Une [liste en format XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml) contenant l'information pour toutes les variables de la grille 15km, y compris les descriptions et les unités, en français et en anglais est disponible.
-
-## À propos du masque No-Data sur la grille polaire stéréographique 
-
-Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
 ## Support
 
