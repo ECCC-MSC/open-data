@@ -8,13 +8,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.5.9
 
-* date: 2023-10-06
+## 2.5.10
+
+* date: 2023-10-16
 * announcements:
     * Not announced
 * new content:
-    * Add RDAQA documentation
+    * Update REPS doc: remove 15km grid
 * improvements:
     * None
 * bug fixes:
