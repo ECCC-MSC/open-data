@@ -77,7 +77,7 @@ Trois type de fichiers existent pour chaque heure de validité de AHREP, et chaq
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HREPA_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/HREPA_Variables-List_fr.csv");
 </script>
 
 

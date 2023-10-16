@@ -3,13 +3,13 @@ import os
 
 from osgeo import gdal
 
+# Module logger
 logger = logging.getLogger(__name__)
 
 class FileParser:
     def __init__(self, variable_LUT, product_LUT, level_LUT):
-        self.variable_LUT = variable_LUT
-        self.product_LUT = product_LUT
-        self.level_LUT = level_LUT
+        self.var_generator = Generator(variable_LUT, level_LUT)
+        self.prod_generator = Generator(product_LUT, level_LUT)
         # GDAL configuration options
         gdal.SetConfigOption('GRIB_NORMALIZE_UNITS', 'NO')
 
@@ -40,26 +40,31 @@ class FileParser:
                     name = dataset.GetRasterBand(1).GetMetadataItem('long_name')
                     level = dataset.GetRasterBand(1).GetMetadataItem('NETCDF_DIM_depth')
                 # Insert metadata in variable or product lists
-                if name in self.product_LUT:
-                    prob_data_en.append(self.generate_prod_row('EN', name, level))
-                    prob_data_fr.append(self.generate_prod_row('FR', name, level))
+                if name in self.prod_generator.variable_LUT:
+                    prob_data_en.append(self.prod_generator.generate_row('EN', name, level))
+                    prob_data_fr.append(self.prod_generator.generate_row('FR', name, level))
                 else:
-                    data_en.append(self.generate_row('EN', name, level))
-                    data_fr.append(self.generate_row('FR', name, level))
+                    data_en.append(self.var_generator.generate_row('EN', name, level))
+                    data_fr.append(self.var_generator.generate_row('FR', name, level))
             except Exception as e:
                 logger.error(e)
         
         header_en = 'Variable,Abbreviation,Level,Unit/Value'
         header_fr = 'Variable,Abréviation,Niveau,Unité/Valeur'
         # Write to english variable table file
-        write_variable_table(data_en, directory, model + '_en.csv', header_en)
+        write_variable_table(data_en, os.path.join(directory, model + '_Variables-List_en.csv'), header_en)
         # Write to french variable table file
-        write_variable_table(data_fr, directory, model + '_fr.csv', header_fr)
+        write_variable_table(data_fr, os.path.join(directory, model + '_Variables-List_fr.csv'), header_fr)
         # Write to english product table file
-        write_variable_table(prob_data_en, directory, model + '_prob_en.csv', header_en)
+        write_variable_table(prob_data_en, os.path.join(directory, model + '_prob_Variables-List_en.csv'), header_en)
         # Write to french product table file
-        write_variable_table(prob_data_fr, directory, model + '_prob_fr.csv', header_fr)
+        write_variable_table(prob_data_fr, os.path.join(directory, model + '_prob_Variables-List_fr.csv'), header_fr)
 
+class Generator:
+    def __init__(self, variable_LUT, level_LUT):
+        self.variable_LUT = variable_LUT
+        self.level_LUT = level_LUT
+    
     def generate_row(self, language, variable_key, level_key):
         '''
             Create a formatted table row from metadata.
@@ -93,45 +98,16 @@ class FileParser:
         # Return formatted row
         return f'{variable},{abbreviation},{level},{unit}'
 
-    def generate_prod_row(self, language, variable_key, level_key):
-        '''
-            Create a formatted table row from probabilistic product.
-            Translate metadata to english or french with lookup tables.
-
-            Parameters:
-                language (str): "EN" for english or "FR" for french
-                variable_key (str): Variable name
-                level_key (str): Variable level
-            Returns:
-                row (str): Formatted table row   
-        '''
-        # Convert variable with lookup table
-        variable = self.product_LUT[variable_key]['Variable'][language]
-        abbreviation = self.product_LUT[variable_key]['Abbreviation']
-        unit = self.product_LUT[variable_key]['Unit'][language]
-        # Convert level with lookup table
-        if level_key in self.level_LUT:
-            level = self.level_LUT[level_key][language]
-        elif level_key is None:
-            level = 'Surface'
-        else:
-            logger.warning(f'Level {level_key} not found')
-            level = level_key
-        # Return formatted row
-        return f'{variable},{abbreviation},{level},{unit}'
-
-def write_variable_table(data, directory, name, header):
+def write_variable_table(data, filename, header):
     '''
     Write GRIB2 or NetCDF variable table into file.
 
         Parameters:
             data ([str]): Table rows
-            directory (str): File directory
-            name (str): File name and extension
+            filename (str): File path
             header (str): Table header
     '''
     if data:
-        filename = os.path.join(directory, name)
         # Remove duplicate lines in the list
         data = list(dict.fromkeys(data))
         # Sort list by variable name
@@ -139,13 +115,13 @@ def write_variable_table(data, directory, name, header):
         # Delete existing file
         if os.path.exists(filename):
             os.remove(filename)
+            logger.info(f'File {filename} removed')
         # Open the file
-        logger.info(f'Writing into file: {filename}')
         out = open(filename, 'w')
-        # Write the header
+        # Write the header and variables
         out.write(f'{header}\n')
-        # Write the variables
         for line in data:
             out.write(f'{line}\n')
         # Close the files
         out.close()
+        logger.info(f'File {filename} created')

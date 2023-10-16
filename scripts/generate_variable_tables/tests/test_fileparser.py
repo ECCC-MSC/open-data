@@ -4,7 +4,7 @@ import os
 
 import yaml
 
-from fileparser import FileParser, write_variable_table
+from fileparser import FileParser, Generator, write_variable_table
 
 # Variable translation lookup table
 variable_file = './variable_translation.yml'
@@ -26,8 +26,8 @@ class TestFileParser(unittest.TestCase):
 
     def tearDown(self):
         # Delete files
-        file_en = 'tests/RDPA_en.csv'
-        file_fr = 'tests/RDPA_fr.csv'
+        file_en = 'tests/RDPA_Variables-List_en.csv'
+        file_fr = 'tests/RDPA_Variables-List_fr.csv'
         if os.path.exists(file_en):
             os.remove(file_en)
         if os.path.exists(file_fr):
@@ -39,54 +39,35 @@ class TestFileParser(unittest.TestCase):
             self.product_LUT,
             self.level_LUT
         )
-        expected_en = 'tests/RDPA_expected_en.csv'
-        expected_fr = 'tests/RDPA_expected_fr.csv'
+        expected_en = 'tests/RDPA_expected_Variables-List_en.csv'
+        expected_fr = 'tests/RDPA_expected_Variables-List_fr.csv'
         files = [
             'tests/mock_files/MSC_RDPA_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2',
             'tests/mock_files/MSC_RDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2'
         ]
         parser.parse_metadata(files, 'tests', 'RDPA')
-        self.assertTrue(filecmp.cmp('tests/RDPA_en.csv', expected_en), 'english files are not equal')
-        self.assertTrue(filecmp.cmp('tests/RDPA_fr.csv', expected_fr), 'french files are not equal')
-        self.assertFalse(os.path.exists('tests/RDPA_prob_en.csv'), 'english product table should not exist')
-        self.assertFalse(os.path.exists('tests/RDPA_prob_fr.csv'), 'french product table should not exist')
+        self.assertTrue(filecmp.cmp('tests/RDPA_Variables-List_en.csv', expected_en), 'english files are not equal')
+        self.assertTrue(filecmp.cmp('tests/RDPA_Variables-List_fr.csv', expected_fr), 'french files are not equal')
 
     def test_generate_row(self):
-        parser = FileParser(
-            self.variable_LUT,
-            self.product_LUT,
-            self.level_LUT
-        )
+        generator = Generator(self.variable_LUT, self.level_LUT)
         expected = 'Total precipitation,APCP,Surface,kg/m<sup>2</sup>'
-        result = parser.generate_row(
-            'EN',
-            'Total precipitation [kg/(m^2)]',
-            '0-SFC'
-        )
-        self.assertEqual(result, expected, 'incorrect variable')
+        result = generator.generate_row('EN', 'Total precipitation [kg/(m^2)]', '0-SFC')
+        self.assertEqual(result, expected, 'rows are not equal')
 
-    def test_generate_prod_row(self):
-        parser = FileParser(
-            self.variable_LUT,
-            self.product_LUT,
-            self.level_LUT
-        )
-        expected = 'Heat index,HEATX,2 m Above Ground Level,K'
-        result = parser.generate_prod_row(
-            'EN',
-            '03 hr Heat index Percentile(10) [K]',
-            '2-HTGL'
-        )
-        self.assertEqual(result, expected, 'incorrect variable')
+    def test_generate_row_not_found(self):
+        generator = Generator(self.variable_LUT, self.level_LUT)
+        expected = 'Reserved,unknown,Reserved,unknown'
+        result = generator.generate_row('EN', 'Reserved', 'Reserved')
+        self.assertEqual(result, expected, 'rows are not equal')
 
     def test_write_variable_table(self):
-        expected = 'tests/RDPA_expected_en.csv'
+        expected = 'tests/RDPA_expected_Variables-List_en.csv'
         data = ['Total precipitation,APCP,Surface,kg/m<sup>2</sup>']
-        directory = 'tests/'
-        name = 'RDPA_en.csv'
-        header = 'Variable,Abbreviation,Level,Unit'
-        write_variable_table(data, directory, name, header)
-        self.assertTrue(filecmp.cmp('tests/RDPA_en.csv', expected), 'files are not equal')
+        filename = 'tests/RDPA_Variables-List_en.csv'
+        header = 'Variable,Abbreviation,Level,Unit/Value'
+        write_variable_table(data, filename, header)
+        self.assertTrue(filecmp.cmp(filename, expected), 'files are not equal')
 
 if __name__ == '__main__':
     unittest.main()

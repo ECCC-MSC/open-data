@@ -75,7 +75,7 @@ List of variables available in the files:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDLPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/HRDLPS_Variables-List_en.csv");
 </script>
 
 NOTE: The surface area fraction (`wt`) and the model orography (`mf`) are only available at the 00h forecast hour.

@@ -81,7 +81,7 @@ Liste des éléments du temps sur grille à la surface:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RDPS-WEonG_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/RDPS-WEonG_Variables-List_fr.csv");
 </script>
 
 ## Support
