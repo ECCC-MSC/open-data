@@ -211,7 +211,7 @@
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>NOTE:  ALL HOURS ARE IN UTC.</p>
 <p>File names have the form:</p>
-<p><code>{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2</code></p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></p>
 <p>Where:</p>
 <ul>
 <li><strong>YYYYMMDD</strong>: Year, month and day of the beginning of the forecast</li>
@@ -223,8 +223,8 @@
 <li><strong>DOMAIN</strong> : String indicating which domain the data is from [Great-Lakes]</li>
 <li><strong>VAR</strong> : Variables included in the file</li>
 <li><strong>LVL</strong> : Vertical level [Sfc for the surface]</li>
-<li><strong>Grille</strong> : Horizontal grid type [LatLon]</li>
-<li><strong>resolution</strong> : Indicating resolution in degreee in latitude and longitude direction [0.022x0.031]</li>
+<li><strong>Grid</strong> : Horizontal grid type [LatLon]</li>
+<li><strong>resolution</strong> : Indicating resolution in degree in latitude and longitude direction [0.022x0.031]</li>
 <li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 072].</li>
 <li><strong>grib2</strong>: constant string indicating the GRIB2 format is used</li>
 </ul>
@@ -237,7 +237,7 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/REWPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/REWPS_Variables-List_en.csv");
 </script>
 
 <h2 id="support">Support</h2>

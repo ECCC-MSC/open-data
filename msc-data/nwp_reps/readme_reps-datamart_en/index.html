@@ -146,10 +146,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#about-the-no-data-mask-for-the-polar-stereographic-grid" class="nav-link">About the no-data mask for the polar-stereographic grid</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -173,57 +169,17 @@
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>This data is available using the HTTPS protocol and resides in a directory that is plainly accessible from a web browser. Visiting this directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file. </p>
-<p>This data can be accessed at the following URLs:</p>
+<p>This data can be accessed at the following URL:</p>
 <ul>
-<li>Polar-stereographic grid at 15km resolution: <a href="https://dd.weather.gc.ca/ensemble/reps/15km/grib2">https://dd.weather.gc.ca/ensemble/reps/15km/grib2/{EnsembleDataType}/{HH}/{hhh}</a></li>
-<li>Rotated lat-lon grid at 10km resolution: <a href="https://dd.meteo.gc.ca/ensemble/reps/10km/grib2">https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}</a></li>
+<li><a href="https://dd.meteo.gc.ca/ensemble/reps/10km/grib2">https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}</a></li>
 </ul>
 <p>where :</p>
 <ul>
-<li><strong>EnsembleDataType</strong> : Can be "raw" for individual members direct model output or prob for probabilistic products created from all members</li>
-<li><strong>HH</strong> : Forecast run hour in UTC</li>
-<li><strong>hhh</strong> : Forecast time</li>
+<li><strong>HH</strong> : Forecast run hour in UTC [00, 06, 12, 18]</li>
+<li><strong>hhh</strong> : Forecast time [000, 003, 006, ..., 048]</li>
 </ul>
 <p>A 24-hour history is stored in this directory.</p>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
-<ul>
-<li><strong>Polar-stereographic grid</strong></li>
-</ul>
-<p><img alt="REPS grid ps" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png" /></p>
-<p>Values assigned to the parameters of the stereographic polar grid at 15km resolution:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>600</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>510</td>
-</tr>
-<tr>
-<td>resolution at 60° N</td>
-<td>15 km</td>
-</tr>
-<tr>
-<td>coordinates of the first grid point</td>
-<td>19.3206° N  141.5411° W</td>
-</tr>
-<tr>
-<td>grid orientation (with respect to j axis)</td>
-<td>-110.0°</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Rotated lat-lon grid</strong></li>
-</ul>
 <p><img alt="Grille du SRPE Rlatlon" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png" /></p>
 <p>The following table lists the values of various parameters of the rotated lat-lon grid at 10km resolution:</p>
 <table>
@@ -254,25 +210,6 @@
 </table>
 <p><strong>Note</strong> : The <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">most recent versions of wgrib2</a> and <a href="https://gdal.org/">GDAL</a> support these rotated grids.</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
-<h3 id="polar-stereographic-grid-at-15km-resolution">Polar-stereographic grid at 15km resolution</h3>
-<p>Files have the following nomenclature:</p>
-<pre><code>CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_{content}.grib2
-</code></pre>
-<p>where:</p>
-<ul>
-<li><strong>datatype</strong> : Can be "raw" for individual member direct model output or prob for probabilistic products created from all members</li>
-<li><strong>VAR</strong> : Variable name (ex: WIND) </li>
-<li><strong>LVLTYPE</strong> : Level type (ex: SFC for surface, NTAT for the top of the atmosphere, DBLL_10cm for 10cm under the surface, TGL for above ground level)</li>
-<li><strong>LVL</strong> : Level value (ex: 10m for 10 meters)</li>
-<li><strong>resolution</strong> : Grid resolution (ex: ps15km)</li>
-<li><strong>YYYYMMDDHH</strong> : Year, month, and day of the beginning of the forecast and model run in UTC [00, 06, 12, 18]</li>
-<li><strong>P{hhh}</strong> : P is a constant character. "hhh" is the forecast hour [000, 003, 006, ..., 072].</li>
-<li><strong>FileContent</strong> : can be "all-products" or "allmbrs", indicating that all the members or all the probabilistic products for this variable are contained in the file </li>
-<li><strong>grib2</strong> : Constant string indicating that the GRIB2 format is used</li>
-</ul>
-<p>Example of filname: CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-products.grib2</p>
-<h3 id="rotated-lat-lon-grid-at-10km-resolution">Rotated lat-lon grid at 10km resolution</h3>
 <p>Files have the following nomenclature:</p>
 <pre><code>{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
 </code></pre>
@@ -301,14 +238,14 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/REPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/REPS_Variables-List_en.csv");
 </script>
 
 <p><strong>Ensemble products:</strong> </p>
 <table id="csv-prob-table" class="display"></table>
 
 <script>
-  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_en.csv");
+  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_Variables-List_en.csv");
 </script>
 
 <p>The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.</p>
@@ -368,8 +305,6 @@
 <li>10 percentile, 25 percentile, 75 percentile and 90 percentile</li>
 </ul>
 <p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml">list in XML format</a> containing for all the 15km grid variables names, a description and the units in both French and English, is available.</p>
-<h2 id="about-the-no-data-mask-for-the-polar-stereographic-grid">About the no-data mask for the polar-stereographic grid</h2>
-<p>A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>

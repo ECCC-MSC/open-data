@@ -134,7 +134,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#specification-technique-des-grilles" class="nav-link">Spécification technique des grilles</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -143,10 +143,6 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#a-propos-du-masque-no-data-sur-la-grille-polaire-stereographique" class="nav-link">À propos du masque No-Data sur la grille polaire stéréographique</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -173,57 +169,17 @@
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
-<p>Les données sont accessibles aux adresses suivantes :</p>
+<p>Les données sont accessibles à l'adresse suivante :</p>
 <ul>
-<li>Données à 15km sur grille polaire stéréographique : <a href="https://dd.meteo.gc.ca/ensemble/reps/15km/grib2">https://dd.meteo.gc.ca/ensemble/reps/15km/grib2/{EnsembleTypeDonnee}/{HH}/{hhh}</a></li>
-<li>Données à 10km sur grille lat-lon tournée : <a href="https://dd.meteo.gc.ca/ensemble/reps/10km/grib2">https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}</a></li>
+<li><a href="https://dd.meteo.gc.ca/ensemble/reps/10km/grib2">https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}</a></li>
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>EnsembleTypeDonnee</strong> : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres</li>
-<li><strong>HH</strong> : Heure de la passe du modèle en TU</li>
-<li><strong>hhh</strong> : Heure de la prévision</li>
+<li><strong>HH</strong> : Heure de la passe du modèle en UTC [00, 06, 12, 18]</li>
+<li><strong>hhh</strong> : Heure de la prévision [000, 003, 006, ..., 048]</li>
 </ul>
 <p>Un historique de 24 heures est conservé dans ce répertoire.</p>
-<h2 id="specification-technique-des-grilles">Spécification technique des grilles</h2>
-<ul>
-<li><strong>Grille polaire stéréographique</strong></li>
-</ul>
-<p><img alt="Grille du SRPE ps" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_ps.png" /></p>
-<p>Valeurs données aux paramètres de la grille polaire stéréographique à 15km de résolution:</p>
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Valeur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>600</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>510</td>
-</tr>
-<tr>
-<td>résolution à 60° N</td>
-<td>15km</td>
-</tr>
-<tr>
-<td>coordonnées du premier point de grille</td>
-<td>19.3206° N ; 141.5411° W</td>
-</tr>
-<tr>
-<td>orientation de la grille (par rapport à l’axe des j)</td>
-<td>-110.0°</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Grille lat-lon tournée</strong></li>
-</ul>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p><img alt="Grille du SRPE Rlatlon" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png" /></p>
 <p>Valeurs données aux paramètres de la grille lat-lon tournée à 10km de résolution:</p>
 <table>
@@ -254,25 +210,6 @@
 </table>
 <p><strong>Note</strong> : Les <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">versions les plus récentes de wgrib2</a> et <a href="https://gdal.org/">GDAL</a> supportent ces grilles tournées. </p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
-<h3 id="grille-polaire-stereographique-a-15km-de-resolution">Grille polaire stéréographique à 15km de résolution</h3>
-<p>Les fichiers ont la nomenclature suivante :</p>
-<pre><code>CMC-reps-srpe-{datatype}_{VAR}_{LVLTYPE}_{LVL}_{resolution}_{YYYYMMDDHH}_P{hhh}_{content}.grib2
-</code></pre>
-<p>où :</p>
-<ul>
-<li><strong>datatype</strong> : Peut être "raw" pour les sorties brutes des membres individuels ou "prob" pour les produits probabilistes générés à partir de tous les membres</li>
-<li><strong>VAR</strong> : Type de variable contenu dans le fichier (ex: UGRD)</li>
-<li><strong>LVLTYPE</strong> :  Niveau vertical (ex: SFC pour la surface, NTAT pour le haut de l'atmosphère, DBLL_10cm couche 10cm sous la surface, TGL pour au-dessus de la surface)</li>
-<li><strong>LVL</strong> : Valeur du niveau (ex: 10m pour 10 mètres)</li>
-<li><strong>resolution</strong>: Résolution de la grille (ex: ps15km) </li>
-<li><strong>YYYYMMDDHH</strong>: Année, mois, jour du début de la prévision et heure UTC de la passe [00, 06, 12, 18]</li>
-<li><strong>P{hhh}</strong> :  « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 072]</li>
-<li><strong>content</strong> : Peut être "all-products" ou "allmbrs" pour indiquer que tous les membres ou tous les produits probabilistes pour cette variable sont regroupés dans ce fichier</li>
-<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
-</ul>
-<p>Exemple de nom de fichier : CMC-reps-srpe-prob_TEMP_TGL_2m_ps15km_2021012700_P009_all-products.grib2</p>
-<h3 id="grille-lat-lon-tournee-a-10km-de-resolution">Grille lat-lon tournée à 10km de résolution</h3>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <pre><code>{YYYYMMDD}T{HH}Z_MSC_REPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
 </code></pre>
@@ -301,14 +238,14 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/REPS_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/REPS_Variables-List_fr.csv");
 </script>
 
 <p><strong>Produits d'ensemble:</strong> </p>
 <table id="csv-prob-table" class="display"></table>
 
 <script>
-  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_fr.csv");
+  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_Variables-List_fr.csv");
 </script>
 
 <p>Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.</p>
@@ -368,8 +305,6 @@
 <li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
 </ul>
 <p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/reps_element.xml">liste en format XML</a> contenant l'information pour toutes les variables de la grille 15km, y compris les descriptions et les unités, en français et en anglais est disponible.</p>
-<h2 id="a-propos-du-masque-no-data-sur-la-grille-polaire-stereographique">À propos du masque No-Data sur la grille polaire stéréographique</h2>
-<p>Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
