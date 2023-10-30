@@ -1,7 +1,7 @@
 # GRIB2 Datasets
 
 CanSIPS:
-    - ensemble/cansips/grib2/forecast/raw/
+    - ensemble/cansips/grib2/forecast/raw/2023/10/
 
 GDPS:
     - model_gem_global/15km/grib2/lat_lon/00/024/

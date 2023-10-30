@@ -68,12 +68,14 @@ The files have the following nomenclature:
 
 * Members and products at 2.5 degrees:
 
-    * Forecasts : `cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2`
+    * Individual members: `cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2`
     * Probability products: `cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2`
 
 * Members and products at 1 degree:
 
-    * Forecasts : `cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2`
+    * Individual members:
+        * `cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2` (directory: `https://dd.weather.gc.ca/ensemble/cansips`)
+	* `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (directory:  `https://dd.weather.gc.ca/model_cansips`)
     * Probability products: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2`
 
 * Hindcast:
@@ -87,8 +89,8 @@ where :
 * __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part
 * __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part
 * __raw__ : Constant string indicating that the file contains raw data without bias correction
-* __VAR__ : Variables included in the files. To consult a complete list, refer to the variables section
-* __Var__ : Variables included in the files [PrecipRate, AirTemp]
+* __VAR__ : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
+* __Var__ : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight, Pressure, WindU, WindV]
 * __StatProcess__ : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __LVLTYPE__ : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]
 * __LVL__ : Vertical level value
@@ -104,6 +106,7 @@ Examples :
 
 * cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
 * cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
+* 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2
@@ -117,6 +120,9 @@ Each file contains 240 temporal records (12 months times 20 ensemble members) an
 Each forecast or the hindcast file starts with a lead time of zero months. This means that if for example a CanSIPS file has a 2016-02 date-tag (e.g. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2),data will start from the month 02 of the year of 2016 and will be finished (for the first member) in the month 01 of the year of 2017. This means that the forecast was initialised on the last day of the January 2016 and that the results are starting to appear in the month of February 2016 (zero lead time).
 
 Following the temporal record of the month 01 of the year 2017, a second CanSIPS ensemble member appears from the month 02 of the year 2016 following the same logic as described earlier.
+
+NOTE: For 1 degree individual members, each file contains 20 records for the 20 members of each month (example: `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2`, `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2`, etc.) 
+
 
 ## List of variables
 
