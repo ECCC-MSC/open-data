@@ -8,6 +8,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.11
+
+* date: 2023-10-30
+* announcements:
+    * Not announced
+* new content:
+    * Update of 1 degree CanSIPS data
+* improvements:
+    * Add SSHG parameter in CanSIPS variable array
+* bug fixes:
+    * Fix typos
 
 ## 2.5.10
 
