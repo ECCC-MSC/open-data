@@ -20,7 +20,7 @@ product_file = './product_translation.yml'
 level_file = './readable_level.yml'
 
 # Temporary directory
-temporary = f'/data/geomet/dev/{os.getlogin()}/'
+temporary = f'/fs/project/eccc/cmod/cmoa/edouards/public-doc/variable_tables/work'
 # Root logger
 logging.basicConfig()
 logger = logging.getLogger()
