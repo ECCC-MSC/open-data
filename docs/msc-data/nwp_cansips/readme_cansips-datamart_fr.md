@@ -75,7 +75,7 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
     * Membres individuels : 
         * `cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2` (répertoire: `https://dd.meteo.gc.ca/ensemble/cansips`)
-	* `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (répertoire `https://dd.meteo.gc.ca/model_cansips`)
+       * `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (répertoire `https://dd.meteo.gc.ca/model_cansips`)
     * Produits probabilistes: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_P{Month}M.grib2`
 
 * Prévisions rétrospectives:

@@ -75,7 +75,7 @@ The files have the following nomenclature:
 
     * Individual members:
         * `cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2` (directory: `https://dd.weather.gc.ca/ensemble/cansips`)
-	* `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (directory:  `https://dd.weather.gc.ca/model_cansips`)
+       * `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (directory:  `https://dd.weather.gc.ca/model_cansips`)
     * Probability products: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2`
 
 * Hindcast:
