@@ -2,7 +2,6 @@
 import argparse
 import logging
 import os
-import re
 import sys
 from datetime import datetime, timedelta
 
@@ -11,16 +10,8 @@ import yaml
 from fileexplorer import FileExplorer
 from fileparser import FileParser
 
-# Datasets lookup table
-model_file = './datasets.yml'
-# Variable translation lookup table
-variable_file = './variable_translation.yml'
-product_file = './product_translation.yml'
-# Readable level lookup table
-level_file = './readable_level.yml'
-
-# Temporary directory
-temporary = f'/fs/project/eccc/cmod/cmoa/edouards/public-doc/variable_tables/work'
+# Configuration file
+config_file = 'config.yaml'
 # Root logger
 logging.basicConfig()
 logger = logging.getLogger()
@@ -79,63 +70,76 @@ def read_args(input, model_LUT):
     # Create output directory
     try:
         os.makedirs(args.directory, exist_ok=True)
-        logger.info(f'Temporary directory {args.directory} created')
+        logger.info(f'Output directory {args.directory} created')
     except OSError as e:
         logger.error(e)
         exit(1)
 
     return args
 
-def append_date(path, cansips):
+def append_date(path):
     '''
-    Append year and month to CanSIPS path.
+    Append year and month to dataset path.
 
         Parameters:
-            path (str): URL with date to extract
-            cansips (str): CanSIPS path without year and month
+            path (str): dataset path without year and month
         Returns:
-            cansips (str): CanSIPS path with year and month
+            path (str): dataset path with year and month
     '''
-    # Search for date in url
-    pattern = re.search('\d{8}', path)
-    if pattern is None:
-        return cansips
-    
-    try:
-        # Create datetime from pattern
-        date = datetime.strptime(pattern.group(), "%Y%m%d")
-    except ValueError as e:
-        logger.error(e)
-        return cansips
-    
-    # Jump to next month
-    new_date = date.replace(day=1) + timedelta(days=31)
-    # Convert date to YYYY/MM format
-    return os.path.join(cansips, new_date.strftime('%Y/%m/'))
+    template = os.path.join(path, 'YYYY/MM/')
+    while True:
+        try:
+            year = int(input(f'Enter year for {template}: '))
+        except:
+            logger.error('Year must be an integer')
+            continue
+        if year < 1:
+            logger.error('Year must be a positive number')
+            continue
+        break
+
+    while True:
+        try:
+            month = int(input(f'Enter month for {template}: '))
+        except:
+            logger.error('Month must be an integer')
+            continue
+        if month < 1 or month > 12:
+            logger.error('Month must be a number between 1 and 12')
+            continue
+        break
+
+    return os.path.join(path, f'{year:04}/' + f'{month:02}/')
 
 def main():
+    # Load configurations
+    with open(config_file, 'r') as file:
+        config = yaml.safe_load(file)
+    
     # Load datasets lookup table
-    with open(model_file, 'r') as file:
+    with open(config['model_file'], 'r') as file:
         model_LUT = yaml.safe_load(file)
-    # Load variable translation lookup table
-    with open(variable_file, 'r') as file:
-        variable_LUT = yaml.safe_load(file)
-    # Load product translation lookup table
-    with open(product_file, 'r') as file:
-        product_LUT = yaml.safe_load(file)
-    # Load readable level lookup table
-    with open(level_file, 'r') as file:
-        level_LUT = yaml.safe_load(file)
 
     # Get input arguments
     args = read_args(sys.argv[1:], model_LUT)
 
-    explorer = FileExplorer(temporary)
+    explorer = FileExplorer(config['temporary'])
+    
+    # Load variable translation lookup table
+    with open(config['variable_file'], 'r') as file:
+        variable_LUT = yaml.safe_load(file)
+    # Load product translation lookup table
+    with open(config['product_file'], 'r') as file:
+        product_LUT = yaml.safe_load(file)
+    # Load readable level lookup table
+    with open(config['level_file'], 'r') as file:
+        level_LUT = yaml.safe_load(file)
+    
     parser = FileParser(variable_LUT, product_LUT, level_LUT)
 
     # Append year and month to CanSIPS URL
     if 'CanSIPS' in args.models:
-        model_LUT['CanSIPS'][0] = append_date(args.path, model_LUT['CanSIPS'][0])
+        model_LUT['CanSIPS'][0] = append_date(model_LUT['CanSIPS'][0])
 
     for model in args.models:
         if os.path.isdir(args.path):

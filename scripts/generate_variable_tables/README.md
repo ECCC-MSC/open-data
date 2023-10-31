@@ -19,9 +19,19 @@ conda activate env_geomet
 conda install -c conda-forge pyyaml bs4 gdal==3.5.2
 ```
 
+## Configuration
+
+The configuration file `config.yaml` allows the user to change certain settings, such as the path of the temporary directory with the `temporary` variable. In addition, the user may also change the path of the lookup tables, though it is not necessary.
+
+* `temporary`: Path of the temporary directory
+* `model_file`: Path of the lookup table for the datasets
+* `variable_file`: Path of the lookup table for the variables
+* `product_file`: Path of the lookup table for the products
+* `level_file`: Path of the lookup table for the levels
+
 ## Execution
 
-Before running the script, rename the `temporary` variable in `main.py` to a directory with permissions. 
+Before running the script, rename the value of the `temporary` variable in `config.yaml` to an existing directory in which you have permissions to read and write. 
 
 **Note**: Avoid creating the temporary directory in your home, as you may exceed your disk quota while downloading files.
 
@@ -30,10 +40,6 @@ To generate variable tables for every available dataset, run this script in your
 ```sh
 python3 main.py --directory ./tables
 ```
-
-To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. 
-
-**Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
 
 After executing the script, you must move the created files to the `public-doc/docs/assets/csv/` directory to update the MSC Open Data Documentation. 
 
@@ -51,6 +57,14 @@ Finally, you must insert the following code block in the corresponding datamart 
   loadTable("csv-table", "../../../assets/csv/Variables-List.csv");
 </script>
 ```
+
+### Notes
+
+To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. 
+
+**Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
+
+The `CanSIPS` path in `datasets.yml` is incomplete, because the year and the month are missing, as there are multiple possible values. As such, when the `--models` argument takes `CanSIPS`, you will be prompted to enter the year and the month as integers to complete the path.
 
 ## Maintenance
 
@@ -101,7 +115,7 @@ Finally, you must insert the following code block in the corresponding datamart 
 * Key: Dataset abbreviation
 * Value: List of paths
 
-Note: CanSIPS files are only available on the last day of the month. CanSIPS URL in table is incomplete. The format is changed to `ensemble/cansips/grib2/forecast/raw/YYYY/MM/` during execution.
+Note: CanSIPS files are only available on the last day of the month. The CanSIPS path in the dictionary is incomplete. The format is changed to `ensemble/cansips/grib2/forecast/raw/YYYY/MM/` during execution.
 
 ### variable_translation.yml
 
@@ -144,6 +158,11 @@ Note: Unit exponents must be inside `<sup>` tags.
 * Source: `http://hpfx.collab.science.gc.ca/`
 * Destination: `/data/geomet/dev/$USER/tmp/`
 
+### DD-Meteo
+
+* Source: `https://dd.meteo.gc.ca/`
+* Destination: `/data/geomet/dev/$USER/tmp/`
+
 ### DD-Alpha
 
 * Source: `https://dd.alpha.meteo.gc.ca/`
@@ -161,7 +180,7 @@ python3 -m unittest tests/test_main.py tests/test_fileexplorer.py tests/test_fil
 
 * Test module which tests the methods in `main.py`
 * Verifies that the directory is created if it does not exist
-* Verifies that the year and month are appended to CanSIPS paths
+* Verifies that the year and month are appended to the path
 
 ### tests/test_fileexplorer.py
 

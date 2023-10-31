@@ -6,7 +6,7 @@ import yaml
 from main import read_args, append_date
 
 # Datasets lookup table
-model_file = './datasets.yml'
+model_file = 'lookup_tables/datasets.yml'
 
 class TestMain(unittest.TestCase):
     def setUp(self):
@@ -21,16 +21,12 @@ class TestMain(unittest.TestCase):
         read_args(input, self.model_LUT)
         mock_os.makedirs.assert_called_with(directory, exist_ok=True)
 
-    def test_append_date(self):
-        path = 'http://hpfx.collab.science.gc.ca/20231231/WXO-DD/'
-        expected = self.model_LUT['CanSIPS'][0] + '2024/01/'
-        result = append_date(path, self.model_LUT['CanSIPS'][0])
-        self.assertEqual(result, expected, 'paths are not equal')
-    
-    def test_append_date_no_pattern(self):
-        path = 'https://dd.alpha.meteo.gc.ca/'
-        expected = self.model_LUT['CanSIPS'][0]
-        result = append_date(path, self.model_LUT['CanSIPS'][0])
+    @unittest.mock.patch('main.input')
+    def test_append_date(self, mock_input):
+        path = 'ensemble/cansips/grib2/forecast/raw/'
+        expected = 'ensemble/cansips/grib2/forecast/raw/2024/01/'
+        mock_input.side_effect = ['2024', '1']
+        result = append_date(path)
         self.assertEqual(result, expected, 'paths are not equal')
 
 if __name__ == '__main__':
