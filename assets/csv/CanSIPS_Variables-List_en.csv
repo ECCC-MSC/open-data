@@ -2,6 +2,7 @@ Variable,Abbreviation,Level,Unit/Value
 Geopotential height,HGT,500 mb,gpm
 Precipitation rate,PRATE,Surface,kg/(m<sup>2</sup>*s)
 Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa
+Sea surface height relative to geoid,SSHG,Surface,m
 Temperature,TMP,2 m Above Ground Level,K
 Temperature,TMP,850 mb,K
 Water temperature,WTMP,Surface,K

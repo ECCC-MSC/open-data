@@ -196,7 +196,7 @@
 <p>Les données sont accessibles aux adresses suivantes :</p>
 <ul>
 <li><a href="https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (membres et produits de prévision à 2.5 degrés, membres à 1 degré)</li>
-<li><a href="https://dd.meteo.gc.ca/model_cansips/100km/forecast">https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (produits de prévision à 1 degré)</li>
+<li><a href="https://dd.meteo.gc.ca/model_cansips/100km/forecast">https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (membres et produits de prévision à 1 degré)</li>
 <li><a href="https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw">https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw/{YYYY}/{MM}/</a> (prévisions rétrospectives)</li>
 </ul>
 <p>où :</p>
@@ -270,15 +270,19 @@
 <li>
 <p>Membres et produits de prévision à 2.5 degrés:</p>
 <ul>
-<li>Prévisions en cours : <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li>Membres individuels : <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
 <li>Produits probabilistes: <code>cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2</code></li>
 </ul>
 </li>
 <li>
 <p>Membres et produits de prévision à 1 degré:</p>
 <ul>
-<li>Prévisions en cours : <code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
-<li>Produits probabilistes: <code>{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2</code></li>
+<li>Membres individuels : <ul>
+<li><code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code> (répertoire: <code>https://dd.meteo.gc.ca/ensemble/cansips</code>)</li>
+</ul>
+</li>
+<li><code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> (répertoire <code>https://dd.meteo.gc.ca/model_cansips</code>)</li>
+<li>Produits probabilistes: <code>{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_P{Month}M.grib2</code></li>
 </ul>
 </li>
 <li>
@@ -295,8 +299,8 @@
 <li><strong>forecast</strong> : Chaîne de caractères constante indiquant que le fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast)</li>
 <li><strong>hindcast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)</li>
 <li><strong>raw</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé</li>
-<li><strong>VAR</strong> : Variables contenues dans les fichiers, voir la section des variables</li>
-<li><strong>Var</strong> : Variables contenues dans les fichiers [PrecipRate, AirTemp]</li>
+<li><strong>VAR</strong> : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
+<li><strong>Var</strong> : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
 <li><strong>StatProcess</strong> : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
 <li><strong>LVLTYPE</strong> : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]</li>
 <li><strong>LVL</strong> : Valeur du niveau vertical</li>
@@ -312,6 +316,7 @@
 <ul>
 <li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
 <li>cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2</li>
+<li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2</li>
@@ -320,6 +325,8 @@
 <p>La structure interne des fichiers des prévisions et celle des prévisions rétrospectives (hindcast) est la suivante : </p>
 <p>Chaque fichier contient 240 enregistrements temporels (12 mois fois 20 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.</p>
 <p>Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02 (ex. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2), les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.</p>
+<p>NOTE: Pour les membres individuels à 1 degré de résolution, chaque fichier contient 20 enregistrements pour les 20 membres de chaque mois (ex: <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2</code>, <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2</code>, etc.) 
+`</p>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <p><strong>Membres individuels:</strong></p>
 <table id="csv-table" class="display"></table>

@@ -270,14 +270,18 @@
 <li>
 <p>Members and products at 2.5 degrees:</p>
 <ul>
-<li>Forecasts : <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li>Individual members: <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
 <li>Probability products: <code>cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2</code></li>
 </ul>
 </li>
 <li>
 <p>Members and products at 1 degree:</p>
 <ul>
-<li>Forecasts : <code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li>Individual members:<ul>
+<li><code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code> (directory: <code>https://dd.weather.gc.ca/ensemble/cansips</code>)</li>
+</ul>
+</li>
+<li><code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> (directory:  <code>https://dd.weather.gc.ca/model_cansips</code>)</li>
 <li>Probability products: <code>{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2</code></li>
 </ul>
 </li>
@@ -295,8 +299,8 @@
 <li><strong>forecast</strong> : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part</li>
 <li><strong>hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part</li>
 <li><strong>raw</strong> : Constant string indicating that the file contains raw data without bias correction</li>
-<li><strong>VAR</strong> : Variables included in the files. To consult a complete list, refer to the variables section</li>
-<li><strong>Var</strong> : Variables included in the files [PrecipRate, AirTemp]</li>
+<li><strong>VAR</strong> : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
+<li><strong>Var</strong> : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
 <li><strong>StatProcess</strong> : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
 <li><strong>LVLTYPE</strong> : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]</li>
 <li><strong>LVL</strong> : Vertical level value</li>
@@ -312,6 +316,7 @@
 <ul>
 <li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
 <li>cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2</li>
+<li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2</li>
@@ -321,6 +326,7 @@
 <p>Each file contains 240 temporal records (12 months times 20 ensemble members) and starts with the first ensemble member. Ensemble members are placed in an incremental order within the CanSIPS files.</p>
 <p>Each forecast or the hindcast file starts with a lead time of zero months. This means that if for example a CanSIPS file has a 2016-02 date-tag (e.g. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2),data will start from the month 02 of the year of 2016 and will be finished (for the first member) in the month 01 of the year of 2017. This means that the forecast was initialised on the last day of the January 2016 and that the results are starting to appear in the month of February 2016 (zero lead time).</p>
 <p>Following the temporal record of the month 01 of the year 2017, a second CanSIPS ensemble member appears from the month 02 of the year 2016 following the same logic as described earlier.</p>
+<p>NOTE: For 1 degree individual members, each file contains 20 records for the 20 members of each month (example: <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2</code>, <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2</code>, etc.) </p>
 <h2 id="list-of-variables">List of variables</h2>
 <p><strong>Individual members:</strong></p>
 <table id="csv-table" class="display"></table>
