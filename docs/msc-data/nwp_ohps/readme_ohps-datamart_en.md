@@ -6,7 +6,7 @@
 
 # NetCDF data for the Operation Hydrodynamic Prediction System (OHPS)
 
-This page describes the analyses and forecasts data of the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) available in NetCDF format.
+This page describes analyses and forecasts data of the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) available in NetCDF format.
 
 ## Data address 
 
