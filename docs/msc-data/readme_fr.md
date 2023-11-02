@@ -70,7 +70,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ### <span class="badge badge-light">Eau, océan et glace</span>
 
-##### &emsp;<span class="badge badge-info">Glace</span>
+##### &emsp;<span class="badge badge-info">Glace et océan</span>
 
 * [Système global de prévision océan-glace (SGPOG)](nwp_giops/readme_giops_fr.md)
 * [Système régional de prévision océan-glace (SRPOG)](nwp_riops/readme_riops_fr.md)
