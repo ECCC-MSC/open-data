@@ -6,7 +6,7 @@
 
 # NetCDF data for the Operation Hydrodynamic Prediction System (OHPS)
 
-This page describes the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) data available in NetCDF format.
+This page describes the analyses and forecasts data of the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) available in NetCDF format.
 
 ## Data address 
 
@@ -20,8 +20,10 @@ The data can be accessed at the following address:
 
 where :
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
-* __hhh__ : Forecast time [000, 001, 002, ..., 048]
+* __HH__: Reference time, in UTC [00, 01, 02, ..., 23]
+* __hhh__ : Forecast hour [001, 002, 003, ..., 048]
+
+Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the `000` forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].
 
 A 24-hour history is stored in this directory.
 
@@ -47,7 +49,7 @@ where :
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__: Time delimiter according to ISO8601 standards
-* __HH__: UTC run time [00, 06, 12, 18] (see the NOTE below for analyses) 
+* __HH__: UTC reference time [00, 01, 02, ..., 23]
 * __MSC__ : Constant character string indicating that the Canadian Meteorological Service is issuing the forecast.
 * __OHPS__ : Constant string indicating that the data comes from the Operation Hydrodynamic Prediction System. 
 * __DOMAIN__ : Constant string indicating the domain [SLFE, for "Saint Lawrence Fluvial Estuary"].
@@ -55,11 +57,9 @@ where :
 * __LVL__: Type of vertical level [Sfc for surface, DBS-Avg for mean below water surface]
 * __Grid__: Horizontal grid type [PS for polar stereographic grid]
 * __resolution__ : Indicates resolution [100m]
-* __PT{hhh}H__: Time scale according to standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for period, time and hour. "hhh" represents the forecast time [000, 001, 002, ..., 048].
+* __PT{hhh}H__: Time scale according to standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [001, 002, 003, ..., 048].
 * __PT0H__ : Constant character string indicating an analysis, based on ISO8601 standards. P, T and H are constant characters for period, time and hour.
 * __nc__: Constant character string indicating NetCDF format.
-
-NOTE: Analyses are available hourly, so in each run directory [00, 06, 12, 18], the last 6 hourly analyses are available.
 
 File examples:
 

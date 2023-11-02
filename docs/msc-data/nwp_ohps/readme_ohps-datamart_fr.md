@@ -6,7 +6,7 @@
 
 # Données NetCDF du Système de simulation hydrodynamique opérationnelle (SHOP)
 
-Cette page décrit les données du [Système de simulation hydrodynamique opérationnelle](./readme_ohps_fr.md) disponibles en format NetCDF.
+Cette page décrit les données d'analyses et de prévisions du [Système de simulation hydrodynamique opérationnelle](./readme_ohps_fr.md) disponibles en format NetCDF.
 
 ## Adresse des données 
 
@@ -20,8 +20,10 @@ Les données sont accessibles à L'adresse suivante :
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
-* __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
+* __HH__ : Heure UTC de référence [00, 01, 02, ..., 23]
+* __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
+
+Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance `000` des heures de prévision. Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -47,7 +49,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Séparateur de temps selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 06, 12, 18] (voir NOTE pour les analyses)
+* __HH__ : Heure UTC de référence [00, 01, 02, ..., 23]
 * __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions
 * __OHPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système de simulation hydrodynamique opérationnelle
 * __DOMAIN__ : Chaîne de caractères constante indiquant le domaine [SLFE, pour "Saint Lawrence Fluvial Estuary"]
@@ -55,11 +57,9 @@ où :
 * __LVL__ : Type de niveau vertical [Sfc pour la surface, DBS-Avg pour la moyenne sous la surface de l'eau]
 * __Grille__ : Type de grille horizontale [PS pour grille polaire stéréographique]
 * __resolution__ : Indique la résolution [100m]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [001, 002, ..., 048]
 * __PT0H__ : Chaîne de caractères constante indiquant une analyse, basée sur les normes ISO8601. P, T et H sont des caractères constants désignant la période, le temps et l'heure.
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
-
-NOTE: Les analyses sont disponibles aux heures, par conséquent dans chaque répertoire des passes [00, 06, 12, 18], les 6 dernières analyses horaires sont disponibles.
 
 Exemples de fichier :
 
