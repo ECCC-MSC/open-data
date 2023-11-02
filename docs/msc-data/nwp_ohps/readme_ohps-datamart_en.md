@@ -6,7 +6,7 @@
 
 # NetCDF data for the Operation Hydrodynamic Prediction System (OHPS)
 
-This page describes the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) data available in NetCDF format.
+This page describes the analyses and forecasts data of the [Operation Hydrodynamic Prediction System](./readme_ohps_en.md) available in NetCDF format.
 
 ## Data address 
 
@@ -23,8 +23,7 @@ where :
 * __HH__: Reference time, in UTC [00, 01, 02, ..., 23]
 * __hhh__ : Forecast hour [001, 002, 003, ..., 048]
 
-* Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the `000` forecast hour directory.
-* Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].
+Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the `000` forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].
 
 A 24-hour history is stored in this directory.
 

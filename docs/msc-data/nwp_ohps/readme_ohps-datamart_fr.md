@@ -6,7 +6,7 @@
 
 # Données NetCDF du Système de simulation hydrodynamique opérationnelle (SHOP)
 
-Cette page décrit les données du [Système de simulation hydrodynamique opérationnelle](./readme_ohps_fr.md) disponibles en format NetCDF.
+Cette page décrit les données d'analyses et de prévisions du [Système de simulation hydrodynamique opérationnelle](./readme_ohps_fr.md) disponibles en format NetCDF.
 
 ## Adresse des données 
 
@@ -23,8 +23,7 @@ où :
 * __HH__ : Heure UTC de référence [00, 01, 02, ..., 23]
 * __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
 
-* Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance `000` des heures de prévision.
-* Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]
+Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance `000` des heures de prévision. Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
