@@ -72,7 +72,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ### <span class="badge badge-light">Water, ocean and ice</span>
 
-##### &emsp;<span class="badge badge-info">Ice</span>
+##### &emsp;<span class="badge badge-info">Ice and Ocean</span>
 
 * [Global Ice Ocean Prediction System (GIOPS)](nwp_giops/readme_giops_en.md)
 * [Regional Ice Ocean Prediction System (RIOPS)](nwp_riops/readme_riops_en.md)
