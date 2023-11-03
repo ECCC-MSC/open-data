@@ -139,7 +139,8 @@ def main():
 
     # Append year and month to CanSIPS URL
     if 'CanSIPS' in args.models:
-        model_LUT['CanSIPS'][0] = append_date(model_LUT['CanSIPS'][0])
+        for i in range(len(model_LUT['CanSIPS'])):
+            model_LUT['CanSIPS'][i] = append_date(model_LUT['CanSIPS'][i])
 
     for model in args.models:
         if os.path.isdir(args.path):
