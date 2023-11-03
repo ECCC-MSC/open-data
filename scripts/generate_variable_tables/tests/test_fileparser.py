@@ -7,10 +7,10 @@ import yaml
 from fileparser import FileParser, Generator, write_variable_table
 
 # Variable translation lookup table
-variable_file = './variable_translation.yml'
-product_file = './product_translation.yml'
+variable_file = 'lookup_tables/variable_translation.yml'
+product_file = 'lookup_tables/product_translation.yml'
 # Readable level lookup table
-level_file = './readable_level.yml'
+level_file = 'lookup_tables/readable_level.yml'
 
 class TestFileParser(unittest.TestCase):
     def setUp(self):
