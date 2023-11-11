@@ -51,10 +51,10 @@ Valeurs données aux paramètres de la grille lat-lon tournée:
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 1102 |
-| nj | 1076 | 
-| résolution à 60° N | 10km |
-| coordonnées du premier point de grille | -31.76° N ; 92.40° W |
+| ni | 2538 |
+| nj | 1288 | 
+| résolution à 60° N | 2.5km |
+| coordonnées du premier point de grille | -36.09° N ; 114.70° W |
 
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées.
 

@@ -51,10 +51,10 @@ The following table lists the values of various parameters of the rotated lat-lo
 
 | Parameter | Valeur |
 | ------ | ------ |
-| ni | 1102 |
-| nj | 1076 | 
-| resolution at 60° N | 10 km |
-| coordinate of the first grid point | -31.76° N ; 92.40° W |
+| ni | 2538 |
+| nj | 1288 | 
+| resolution at 60° N | 2.5 km |
+| coordinate of the first grid point | -36.09° N ; 114.70° W |
 
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
