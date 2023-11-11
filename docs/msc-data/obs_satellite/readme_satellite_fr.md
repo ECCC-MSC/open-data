@@ -6,39 +6,20 @@
 
 # Données et produits des observations satellite
 
-Cette page décrit les données et produits des 
+Cette page décrit les données et produits de satellites météorologiques exploités par la NASA (National Aeronautics and Space Administration) dont la résolution temporelle, généralement élevée, fournit des observations fréquentes de la surface de la Terre, de l'humidité atmosphérique et de la couverture de nuages, permettant de surveiller et prévoir les conditions météorologiques de l'ensemble du globe.
+
+Parmi ces satellites, la série GOES (Geostationary Operational Environmental Satellite), conçus par la [NASA](https://science.nasa.gov/mission/goes/) pour la NOAA (National Aeronautics and Space Administration) font partie d'un réseau mondial de satellites météorologiques qui sont alignés à des intervalles de 70º de longitude autour de la Terre pour offrir une couverture presque totale du globe. Deux satellites GOES, placés en orbite géostationnaire à 36 000 km au-dessus de l'équateur, voient chacun un tiers de la Terre. Le premier satellite est situé à 75ºO de longitude et surveille l'Amérique du Nord, l'Amérique du Sud, et la plus grande partie de l'océan Atlantique. Le deuxième est situé à 135ºO de longitude et surveille l'Amérique du Nord et le bassin de l'océan Pacifique. À eux deux, ils couvrent la région s'étendant du 20e°O au 165e°E de longitude.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Les données radar sont disponibles via l'API et les services web GeoMet du SMC ainsi que sur le serveur de données Datamart du SMC :
+Les données satellite sont disponibles via l'API et les services web GeoMet du SMC ainsi que sur le serveur de données Datamart du SMC :
 
-* [Couches de radar disponibles via les services web géospatiaux GeoMet-Météo](readme_radar_geomet_fr.md):
-    * Composite radar nord-américaine
-    * Type de précipitation à la surface du radar nord-américain [expérimental]
-    * Extrapolation radar nord-américaine [expérimental]
-* [Imagerie radar en format GIF disponible sur le Datamart du SMC](readme_radarimage-datamart_fr.md)
-
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Ci-après est un exemple de carte interactive configurée pour présenter des couches WMS de la composite et de l'extrapolation radar météo servies par GeoMet du SMC.
-
-<div id="map" style="height: 400px; position: relative">
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
-  </div>
-</div>
-</div>
-<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
-  <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
-  <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
-  <button id="play-pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
-  <button id="step-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-forward" style="padding: 0rem 1rem"></i></button>
-  <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
-  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
-  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
-</div>
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)   
+* [Données satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satelliteGOES-datamart_fr.md)
+ 
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 
@@ -50,69 +31,12 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-* Les [métadonnées de Composite radar nord-américaine (1 km) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
-* Les [métadonnées de Couverture dynamique de la composite radar sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).
-* Les [métadonnées de Radars météorologiques - Accumulation sur 24 heures sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/ce9e475b-3e3b-4b15-9ac4-165549366b09).
-* Les [métadonnées de Radars météorologiques - CAPPI sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/aae10768-0c0c-4670-807e-8e893680887e).
-* Les [métadonnées de Radars météorologiques - EQPDP sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/6059da1d-e1da-4f2b-a420-b5c2a130eeaa).
-* Les [métadonnées de Radars météorologiques - PRECIP-ET sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/d76c0f4e-af27-4f9c-b0b0-0eba5aca1d3b).
+* À venir.
 
 ## Documentation technique
 
-* [A propos des radars](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/a-propos.html)
-* [Remplacement du réseau canadien de radars météorologiques](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/modernisation-reseau.html)
-* [Interruption et maintenance du service radar](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/interruption-maintenance-service.html)
-* Guide des produits radar  --  __à venir__ 
+* [A propos des satellites](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/satellites.html)
+* [GOES overview - NOAA](https://www.noaasis.noaa.gov/GOES/goes_overview.html)
+* [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) - _En anglais seulement_ 
 
-<style>
-  #legend-img {
-    margin: 0px;
-  }
-  #legend-popup {
-    position: absolute;
-    top: 40px;
-    right: 8px;
-    z-index: 2;
-  }
-  .legend-switch{
-    top: 8px;
-    right: .5em;
-  }
-  .ol-touch .legend-switch {
-    top: 80px;
-  }
-  .distinguish-switch{
-    top: 8px;
-    right: 2.25em;
-    width: 10rem;
-  }
-  .ol-touch .distinguish-switch{
-    top: 80px;
-  }
-  .distinguish-switch.ol-unselectable.ol-control button{
-    width: 10rem;
-  }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
-<script>
-    function isIE() {
-      return window.navigator.userAgent.match(/(MSIE|Trident)/);
-    }
-    var head = document.getElementsByTagName('head')[0];
-    var js = document.createElement("script");
-    js.type = "text/javascript";
-    if (isIE())
-    {
-        js.src = "../../../js/radar_ie.js";
-        document.getElementById("controller").setAttribute("hidden", true);
-    }
-    else
-    {
-        js.src = "../../../js/radar.js";
-    }
-    head.appendChild(js);
-</script>
+  

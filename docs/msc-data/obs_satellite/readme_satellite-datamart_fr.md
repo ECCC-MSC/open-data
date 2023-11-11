@@ -1,8 +1,8 @@
-[In English](readme_radarimage-datamart_en.md)
+[In English](readme_satellite-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations radar](readme_radar_fr.md) > Observations radar sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations satellite](readme_satellite_fr.md) > Observations satellite sur le Datamart du SMC
 
 # Imagerie radar
 
