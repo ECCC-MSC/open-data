@@ -8,7 +8,7 @@
 
 Cette page décrit les données et produits de satellites météorologiques exploités par la NASA (National Aeronautics and Space Administration) dont la résolution temporelle, généralement élevée, fournit des observations fréquentes de la surface de la Terre, de l'humidité atmosphérique et de la couverture de nuages, permettant de surveiller et prévoir les conditions météorologiques de l'ensemble du globe.
 
-Parmi ces satellites, la série GOES (Geostationary Operational Environmental Satellite), conçus par la [NASA](https://science.nasa.gov/mission/goes/) pour la NOAA (National Aeronautics and Space Administration) font partie d'un réseau mondial de satellites météorologiques qui sont alignés à des intervalles de 70º de longitude autour de la Terre pour offrir une couverture presque totale du globe. Deux satellites GOES, placés en orbite géostationnaire à 36 000 km au-dessus de l'équateur, voient chacun un tiers de la Terre. Le premier satellite est situé à 75ºO de longitude et surveille l'Amérique du Nord, l'Amérique du Sud, et la plus grande partie de l'océan Atlantique. Le deuxième est situé à 135ºO de longitude et surveille l'Amérique du Nord et le bassin de l'océan Pacifique. À eux deux, ils couvrent la région s'étendant du 20e°O au 165e°E de longitude.
+Parmi ces satellites, la série [GOES (Geostationary Operational Environmental Satellite), conçus par la NASA](https://science.nasa.gov/mission/goes/) pour la NOAA (National Aeronautics and Space Administration) font partie d'un réseau mondial de satellites météorologiques qui sont alignés à des intervalles de 70º de longitude autour de la Terre pour offrir une couverture presque totale du globe. Deux satellites GOES, placés en orbite géostationnaire à 36 000 km au-dessus de l'équateur, voient chacun un tiers de la Terre. Le premier satellite est situé à 75ºO de longitude et surveille l'Amérique du Nord, l'Amérique du Sud, et la plus grande partie de l'océan Atlantique. Le deuxième est situé à 135ºO de longitude et surveille l'Amérique du Nord et le bassin de l'océan Pacifique. À eux deux, ils couvrent la région s'étendant du 20e°O au 165e°E de longitude.
 
 ## Accès
 
@@ -17,7 +17,7 @@ Parmi ces satellites, la série GOES (Geostationary Operational Environmental Sa
 Les données satellite sont disponibles via l'API et les services web GeoMet du SMC ainsi que sur le serveur de données Datamart du SMC :
 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)   
-* [Données satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satelliteGOES-datamart_fr.md)
+* [Données satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satellite-datamart_fr.md)
  
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
