@@ -33,6 +33,17 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 * À venir.
 
+### Produits
+
+Liste des liens vers l'imagerie et animation satellitaire:
+
+* [Images GOES composites](https://meteo.gc.ca/satellite/index_f.html#goes_composites)
+* [Images GOES-Est](https://meteo.gc.ca/satellite/index_f.html#goes_east)
+* [Images GOES-Ouest](https://meteo.gc.ca/satellite/index_f.html#goes_west)
+* [Images HRPT polaires](https://meteo.gc.ca/satellite/index_f.html#hrpt)
+
+
+
 ## Documentation technique
 
 * [A propos des satellites](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/satellites.html)
