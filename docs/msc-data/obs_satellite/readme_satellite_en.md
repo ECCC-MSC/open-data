@@ -1,118 +1,50 @@
-[En français](readme_radar_fr.md)
+[In English](readme_satellite_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Radar imagery
+[TdM](../../readme_en.md) > [MSC data](../readme_en.md) > Satellite data and products
 
-# Data and products for weather radar observations
+# Satellite observation data and products
 
-This page describes the data and products available for Environment and Climate Change Canada's weather radar network. The network is comprised of 32 sites concentrated in the most populated parts of Canada, and provides radar coverage to more than 95 per cent of Canadians. The network’s primary purpose is the early detection of developing thunderstorms and high impact weather, as well the tracking of precipitation.
+This page describes data and products from weather satellites operated by NOAA (National Oceanic and Atmospheric Administration). The instruments aboard these satellites provide observations of the Earth's surface at a generally high temporal and spatial resolution. These observations of atmospheric humidity, cloud cover, surface temperature, lightning occurrence and many other characteristics enable us to monitor and forecast weather conditions across the globe.
+
+Among these satellites, the [GOES (Geostationary Operational Environmental Satellite) series, designed by NASA](https://science.nasa.gov/mission/goes/) for NOAA are part of a global network of weather satellites that are placed in geostationary orbit 36,000 km above the equator and aligned at 70º longitude intervals around the Earth to provide almost total coverage of the globe. Two GOES satellites each see a third of the Earth: the first satellite is located at 75ºW longitude and monitors North America, South America and most of the Atlantic Ocean. The second is located near longitude 135ºW and monitors western North America and the Pacific Ocean basin, together covering the region from longitude 20ºW to 165ºE.
 
 ## Access
 
-### How to access the data
+### How to access data
 
-Weather radar data is available from the MSC GeoMet API and web services as well as static GIF images on the MSC Datamart:
+Satellite data are available via MSC's GeoMet API and web services, as well as on MSC's Datamart data server:
 
-* [Radar layers available via geospatial web services on GeoMet-Weather](readme_radar_geomet_en.md):
-    * North American radar composite
-    * North American radar surface precipitation type [experimental]
-    * North American radar extrapolation [experimental]
-* [GIF radar imagery available on the MSC Datamart](readme_radarimage-datamart_en.md) 
+* [Data available on the GeoMet-Weather geospatial web services](../../msc-geomet/readme_en.md)   
+* GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
+ 
+[An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available.
 
-An [overview and examples on how to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display weather radar composite and extrapolation Web Map Service (WMS) layers served by MSC GeoMet:
+### License
 
-<div id="map" style="height: 400px; position: relative">  
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RRAI&STYLE=&TRANSPARENT=true"/>
-  </div>
-</div>
-</div>
-<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
-  <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
-  <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
-  <button id="play-pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
-  <button id="step-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-forward" style="padding: 0rem 1rem"></i></button>
-  <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
-  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
-  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
-</div>
+The [end-user license for Environment and Climate Change Canada's data servers](.../.../license/readme_en.md) specifies the conditions of use of this data.
 
-### Licence
+### MSC Open Data Services Usage Policy
 
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use for this data.
-
-### MSC Open Data Service Usage Policy
-
-The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
+The [MSC Open Data Services Usage Policy](../.../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
 ### Metadata
 
-* The [metadata of the North American Radar Composite (1 km) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
-* The [metadata of the Dynamic Radar Composite Coverage is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).
-* The [metadata of the Weather Radar - 24 Hour Accumulation is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/ce9e475b-3e3b-4b15-9ac4-165549366b09).
-* The [metadata of the Weather Radar - CAPPI is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/aae10768-0c0c-4670-807e-8e893680887e).
-* The [metadata of the Weather Radar - DPQPE is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6059da1d-e1da-4f2b-a420-b5c2a130eeaa).
-* The [metadata of the Weather Radar - PRECIP-ET is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/d76c0f4e-af27-4f9c-b0b0-0eba5aca1d3b).
+* Coming soon.
+
+### Products
+
+List of links to satellite imagery and animation on the Government of Canada weather information site:
+
+* [Composite GOES Images](https://weather.gc.ca/satellite/index_e.html#goes_composites)
+* [GOES East Images](https://weather.gc.ca/satellite/index_e.html#goes_east)
+* [GOES-West Images](https://weather.gc.ca/satellite/index_e.html#goes_west)
+* [Polar HRPT images](https://weather.gc.ca/satellite/index_e.html#hrpt)
 
 ## Technical documentation
 
-* [About radar](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/about.html)
-* [Modernizing Canada's weather-radar network](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/modernizing-network.html)
-* [Radar outages and maintenance](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/radar-overview/outages-maintenance.html)
-* Radar product guide - __to come__
-
-<style>
-  #legend-img {
-    margin: 0px;
-  }
-  #legend-popup {
-    position: absolute;
-    top: 40px;
-    right: 8px;
-    z-index: 2;
-  }
-  .legend-switch{
-    top: 8px;
-    right: .5em;
-  }
-  .ol-touch .legend-switch {
-    top: 80px;
-  }
-  .distinguish-switch{
-    top: 8px;
-    right: 2.25em;
-    width: 10rem;
-  }
-  .ol-touch .distinguish-switch{
-    top: 80px;
-  }
-  .distinguish-switch.ol-unselectable.ol-control button{
-    width: 10rem;
-  }
-  </style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
-<script>
-    function isIE() {
-      return window.navigator.userAgent.match(/(MSIE|Trident)/);
-    }
-    var head = document.getElementsByTagName('head')[0];
-    var js = document.createElement("script");
-    js.type = "text/javascript";
-    if (isIE())
-    {
-        js.src = "../../../js/radar_ie.js";
-        document.getElementById("controller").setAttribute("hidden", true);
-    }
-    else
-    {
-        js.src = "../../../js/radar.js";
-    }
-    head.appendChild(js);
-</script>
+* [About satellites](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/satellites.html)
+* [Geostationary Satellites | NESDIS (noaa.gov)](https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites)
+* [CIMSS GOES-R Series WebApps (wisc.edu) - individual channels, RGB (Red-Green-Blue) and other products](https://cimss.ssec.wisc.edu/goes/GOESR_QuickGuides.html)
+* [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) 

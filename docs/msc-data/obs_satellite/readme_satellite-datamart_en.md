@@ -1,164 +1,60 @@
-[En français](readme_radarimage-datamart_fr.md)
+[In English](readme_satellite-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Radar imagery](readme_radar_en.md) > Radar imagery on MSC Datamart
+[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > Satellite Observations on the MSC Datamart
 
-# Radar imagery
+# Satellite data and products
 
-This page describes the [weather radar](readme_radar_en.md) imagery available in GIF format via the MSC Datamart.
+This page describes data and products derived from GOES-West and GOES-East [satellite](readme_satellite_en.md) instruments in GeoTIFF format available on the MSC Datamart. 
 
-These images are used to feed the weather radar page on ECCC's [public forecast website](https://meteo.gc.ca/radar/index_e.html).
+These products are derived from [RGB](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb.pdf) (red/green/blue) images, a satellite processing technique that uses a combination of satellite sensor bands (also called channels) and applies a red/green/blue (RGB) filter to each of them. The result is a false-color image, i.e. an [image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/true_color.pdf) that does not match the appearance of the human eye, but offers high contrast between different cloud types and surface features. The on-board sensor of a weather satellite obtains two basic types of information: visible light data (reflected light) reflecting off clouds and different surface types, also known as "reflectance", and infrared data (emitted radiation) which are long-wave radiations emitted by clouds and surface features. RGBs are specially designed to combine this type of satellite data, resulting in an information-rich final product.
 
-## Data location
+Four types of products are currently generated from the GOES-West and GOES-East satellites: ["NightIR"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir.pdf) and ["NightMicrophysics"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics.pdf), at 2km resolution, are generated 24 hours a day with infrared channels, so are visible both night and day, and ["NaturalColour"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour. pdf) and ["DayCloudConvection"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection.pdf), at 1km resolution, which combine visible light channels with infrared channels; their higher resolution makes the latter two products more popular, but they are not available during most of the night (between 02UTC and 07UTC for GOES-Est, and between 06UTC and 11UTC for GOES-Ouest) given the absence of reflected sunlight. Other RGB products should be added gradually in the future to meet different needs. 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+## Data location 
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GIF file.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../.../msc-datamart/amqp_en.md) as soon as it becomes available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
 
-The radar images are available at the following address:
+The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoTIFF file is displayed.
 
-[https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}](https://dd.weather.gc.ca/radar/)
+GOES-R series products can be found at :
 
-where:
+* [https://dd.weather.gc.ca/satellite/goes/[west|east]/{HH}/](https://dd.weather.gc.ca/satellite/goes/)
 
-* PRODUCT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
-* FORMAT = [GIF] (other formats may appear in the future)
-* STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
+where :
 
-The past 48 hours of data is available in each directory.
+* __HH__: Time in UTC of image validity [00, 01, .., 23]
 
-__Notes__: 
+A 54-hour history of data is stored in each directory.
 
-* Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.
-* The Dual Polarization Quantitative Precipitation Estimation (DPQPE) product is only available for S-band radars. It is a two-dimensional representation of radar estimated precipitation rate at the lowest sweep of the radar scan (0.4 degrees elevation for the majority of the S-Band radars). So, the estimated precipitation rate is as close as possible to the earth’s surface. DPQPE product is based, among others, on a series of dual-pol processing steps (quality control) to remove, non-weather artifacts from the raw data (volume scans). It is provided in mm/hr for rainfall rates and cm/hr for snowfall rates. This product is used in our high-resolution North American radar composite available in [WeatherCan](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html), the official mobile application of ECCC.
-* A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) is available. This list will be updated regularly.
+## File name nomenclature 
 
-## Filename nomenclature
+File names follow the nomenclature below:
 
-NOTE: ALL HOURS ARE IN UTC.
+`{YYYYMMDD}T{HHmm}Z_MSC_{GOES-Sat}_{Product}_{resolution}.tif`
 
-The files have the following nomenclature, with XXX, a 3 letter radar identifier in capital letters. For the new S-band radars, a 5-letter code is used.
+where :
 
-* __PRECIPET__
+* __YYYYMMDD__: Year, month and day of image validity
+* __T__: Time delimiter according to ISO8601 standards
+* __HHmm__: Hour and minute in UTC of image validity time [00, 01, 02, ...., 22, 23] 
+* __Z__: Time zone (UTC time)
+* __MSC__: Constant string for Meteorological Service of Canada, the data source
+* __GOES-Sat__ : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]
+* __Product__: String indicating the type of satellite product generated [NaturalColor, DayVis, NighIR, NightMicrophysics].
+* __resolution__ : Horizontal resolution of data [1km, 2km]
+* __tif__ : Constant string indicating that the format is GeoTIFF 
 
-Images for regional composites (5 regions of Canada) and individual radar are available. Two intensities scale (8 and 14 colors) are also available for each image. 
+Examples: 
 
-Composites with 14 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
-
-ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
-
-Composites with 8 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
-
-ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
-
-Individual radar with 14 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
-
-ex: 201409201400_XFT_PRECIPET_RAIN.gif
-
-Individual radar with 8 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
-
-ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
-
-* __PRECIPET contingency products__
-
-When a Canadian radar site is down, an alternate PRECIPET product is made available for contingency purposes. It is a composite product generated from the available neighbouring radars, which in some cases may include US radars. It is also important to note that for some regions, neighbouring radars may not cover the entire domain of the radar out of service. 
-To this end and to help the user identify these non-covered areas, red circles have been added to show the contributing radars in the composite.
-
-This product contains the string "COMP" in its file name, as:
-
-YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif
-
-ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif
-
-This composite image can be differentiated from the original radar image, by the inscription "Composite" in the legend on the right of the image.
-
-To learn more about how to use the composite images, you can read the documentation on line:
-
-[https://weather.gc.ca/radar/how-to-use_e.html#display](https://weather.gc.ca/radar/how-to-use_e.html#display)
-
-* __CAPPI__
-
-The CAPPI files have the following nomenclature:
-
-* YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
-* YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
-
-ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
-
-* __DPQPE__
-
-The DPQPE files have the following nomenclature:
-
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif
-
-ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
-
-* __24_HR_ACCUM__ 
-
-Shows the rain accumulation, in mm, over the last 24hr period. 
-
-__Based on PRECIPET__
-
-The product is available for the last 48 hr, every 10 minutes for C-Band radars and every 6 minutes for S-Band radars.
-   
-* YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
-
-ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
-
-__Based on DPQPE__
-
-The product is available every 6 minutes, and for the last 48 hr.
-   
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-XXXXX_Accum24h.gif
-
-ex: 20201106T1050Z_MSC_Radar-DPQPE-CASBE_Accum24h.gif
-
-## About the new dual-pol S-Band radars
-
-ECCC is in the process of replacing its old C-Band radars with new dual-pol S-Band radars. This radar renewal project extends over several years and the installation of radar is done progressively (For more information, see the Products documentation section below).
-
-The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important:
-
-* Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality.
-* The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename).
-* The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA).
-* Some other new products will emerge in the future and be available externally.
-
-What will happen with the availability of these products and the impact on users?
-
-* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). It help to manage the transition.
-* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)).
-* Users will be informed as and when new radars are installed and their products are available following the same procedure described above.
-
-Example (the Radisson case):
-
-* __The 3-lettre ID product every 10 minutes (Temporary)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
-* __The 5-letter ID products every 6 minutes (Permanently)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
-
-## Historical radar images
-
-Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:
-
-[https://climate.weather.gc.ca/radar/index_e.html](https://climate.weather.gc.ca/radar/index_e.html)
+* 20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif
+* 20231109T0510Z_MSC_GOES-West_NightMicrophysics_2km.tif
 
 ## Support
 
-If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about these data, please contact us at: [dps-client@ec.gc.ca](mailto:ec.dps-client.ec@canada.ca)
 
-## Announcements from the dd_info mailing list 
+## dd_info mailing list announcements 
 
-Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
+Announcements related to this dataset are available via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) list.
