@@ -1,4 +1,4 @@
-[In English](readme_satellite_en.md)
+[In French](readme_satellite_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -17,7 +17,7 @@ Among these satellites, the [GOES (Geostationary Operational Environmental Satel
 Satellite data are available via MSC's GeoMet API and web services, as well as on MSC's Datamart data server:
 
 * [Data available on the GeoMet-Weather geospatial web services](../../msc-geomet/readme_en.md)   
-* GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
+* [GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
  
 [An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available.
 

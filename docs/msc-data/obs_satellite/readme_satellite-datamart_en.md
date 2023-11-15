@@ -42,7 +42,7 @@ where :
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __GOES-Sat__ : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]
-* __Product__: String indicating the type of satellite product generated [NaturalColor, DayVis, NighIR, NightMicrophysics].
+* __Product__: String indicating the type of satellite product generated [NaturalColor, DayVis, NighIR, NightMicrophysics]
 * __resolution__ : Horizontal resolution of data [1km, 2km]
 * __tif__ : Constant string indicating that the format is GeoTIFF 
 
