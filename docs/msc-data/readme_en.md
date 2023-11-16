@@ -28,7 +28,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * [Weather radar imagery](obs_radar/readme_radar_en.md)
 * [Lightning density](lightning/readme_lightning_en.md)
-* [Satellite observations](satellite/readme_satellite_en.md)
+* [Satellite observations](obs_satellite/readme_satellite_en.md)
 * [In situ observations](obs_station/readme_obs_insitu_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
 * [Vertical profiles observations](vertical-profiles/readme_vertical-profiles-obs_en.md)
