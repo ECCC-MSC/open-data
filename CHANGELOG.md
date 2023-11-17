@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.12
+
+* date: 2023-11-17
+* announcements:
+    * Not announced
+* new content:
+    * HRDPA rotated lat-lon
+    * Satellite products
+* improvements:
+    * None
+* bug fixes:
+    * Fix typos
+
 ## 2.5.11
 
 * date: 2023-10-30
