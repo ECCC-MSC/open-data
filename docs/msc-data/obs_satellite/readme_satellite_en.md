@@ -14,9 +14,8 @@ Among these satellites, the [GOES (Geostationary Operational Environmental Satel
 
 ### How to access data
 
-Satellite data are available via MSC's GeoMet API and web services, as well as on MSC's Datamart data server:
+Satellite data are available on MSC's Datamart data server:
 
-* [Data available on the GeoMet-Weather geospatial web services](../../msc-geomet/readme_en.md)   
 * [GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
  
 [An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available.
