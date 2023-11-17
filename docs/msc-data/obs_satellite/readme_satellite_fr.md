@@ -14,9 +14,8 @@ Parmi ces satellites, la série [GOES (Geostationary Operational Environmental S
 
 ### Comment accéder aux données
 
-Les données satellite sont disponibles via l'API et les services web GeoMet du SMC ainsi que sur le serveur de données Datamart du SMC :
-
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)   
+Les données satellite sont disponibles sur le serveur de données Datamart du SMC :
+ 
 * [Données satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satellite-datamart_fr.md)
  
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
