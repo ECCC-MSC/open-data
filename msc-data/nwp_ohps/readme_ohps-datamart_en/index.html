@@ -165,7 +165,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TdM</a> &gt; <a href="../../readme_en/">MSC Data</a> &gt; <a href="../readme_ohps_en/">OHPS</a> &gt; OHPS on the MSC Datamart</p>
 <h1 id="netcdf-data-for-the-operation-hydrodynamic-prediction-system-ohps">NetCDF data for the Operation Hydrodynamic Prediction System (OHPS)</h1>
-<p>This page describes the <a href="../readme_ohps_en/">Operation Hydrodynamic Prediction System</a> data available in NetCDF format.</p>
+<p>This page describes analyses and forecasts data of the <a href="../readme_ohps_en/">Operation Hydrodynamic Prediction System</a> available in NetCDF format.</p>
 <h2 id="data-address">Data address</h2>
 <p>MSC Datamart data can be <a href="../.../msc-datamart/amqp_en.md">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An overview and examples to access and use <a href="../../../usage/readme_en/">Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.</p>
@@ -175,9 +175,10 @@
 </ul>
 <p>where :</p>
 <ul>
-<li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
-<li><strong>hhh</strong> : Forecast time [000, 001, 002, ..., 048]</li>
+<li><strong>HH</strong>: Reference time, in UTC [00, 01, 02, ..., 23]</li>
+<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 048]</li>
 </ul>
+<p>Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the <code>000</code> forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].</p>
 <p>A 24-hour history is stored in this directory.</p>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p><img alt="" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ohps/grille_ohps.png" /></p>
@@ -217,7 +218,7 @@
 <ul>
 <li><strong>YYYYMMDD</strong>: Year, month and day of the beginning of the forecast</li>
 <li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
-<li><strong>HH</strong>: UTC run time [00, 06, 12, 18] (see the NOTE below for analyses) </li>
+<li><strong>HH</strong>: UTC reference time [00, 01, 02, ..., 23]</li>
 <li><strong>MSC</strong> : Constant character string indicating that the Canadian Meteorological Service is issuing the forecast.</li>
 <li><strong>OHPS</strong> : Constant string indicating that the data comes from the Operation Hydrodynamic Prediction System. </li>
 <li><strong>DOMAIN</strong> : Constant string indicating the domain [SLFE, for "Saint Lawrence Fluvial Estuary"].</li>
@@ -225,11 +226,10 @@
 <li><strong>LVL</strong>: Type of vertical level [Sfc for surface, DBS-Avg for mean below water surface]</li>
 <li><strong>Grid</strong>: Horizontal grid type [PS for polar stereographic grid]</li>
 <li><strong>resolution</strong> : Indicates resolution [100m]</li>
-<li><strong>PT{hhh}H</strong>: Time scale according to standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for period, time and hour. "hhh" represents the forecast time [000, 001, 002, ..., 048].</li>
+<li><strong>PT{hhh}H</strong>: Time scale according to standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [001, 002, 003, ..., 048].</li>
 <li><strong>PT0H</strong> : Constant character string indicating an analysis, based on ISO8601 standards. P, T and H are constant characters for period, time and hour.</li>
 <li><strong>nc</strong>: Constant character string indicating NetCDF format.</li>
 </ul>
-<p>NOTE: Analyses are available hourly, so in each run directory [00, 06, 12, 18], the last 6 hourly analyses are available.</p>
 <p>File examples:</p>
 <ul>
 <li>20230911T18Z_MSC_OHPS-SLFE_WaterLvlRiver_Sfc_PS100m_PT029H.nc</li>
@@ -330,5 +330,20 @@
     </div>
 </div>
 
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </body>
 </html>

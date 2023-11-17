@@ -134,7 +134,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#grid-specifications" class="nav-link">Grid specifications</a>
+            <li class="nav-item" data-level="2"><a href="#grid-specifications-of-the-grids" class="nav-link">Grid specifications of the grids</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -146,7 +146,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#about-the-no-data-mask" class="nav-link">About the No-data mask</a>
+            <li class="nav-item" data-level="2"><a href="#about-the-polar-stereographic-grid-no-data-mask" class="nav-link">About the polar stereographic grid no-data mask</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -175,15 +175,20 @@
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The data can be accessed at the following URLs :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic">https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{HH}</a></li>
+<li>Polar-stereographic grid: <a href="https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic">https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{hh}</a></li>
+<li>Rotated lat-lon grid: <a href="https://dd.weather.gc.ca/model_hrdpa/2.5km">https://dd.weather.gc.ca/model_hrdpa/2.5km/{HH}</a></li>
 </ul>
 <p>where :</p>
 <ul>
 <li><strong>polar_stereographic</strong> :  Grid projection</li>
-<li><strong>HH</strong> :  Accumulation period in hours: 06 or 24 </li>
+<li><strong>hh</strong> : time interval of 06 or 24 hours in which precipitation accumulations are analyzed</li>
+<li><strong>HH</strong> :  UTC run time [00, 06, 12, 18]</li>
 </ul>
 <p>A history of 30 days is maintained in this directory.</p>
-<h2 id="grid-specifications">Grid specifications</h2>
+<h2 id="grid-specifications-of-the-grids">Grid specifications of the grids</h2>
+<ul>
+<li><strong>Polar-stereographic grid</strong></li>
+</ul>
 <p><img alt="HRDPA grid specification image" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png" /></p>
 <p>Table lists the values of parameters of the polar-stereographic grid.</p>
 <table>
@@ -216,8 +221,40 @@
 </tr>
 </tbody>
 </table>
+<ul>
+<li><strong>Rotated lat-lon grid</strong></li>
+</ul>
+<p><img alt="Rlatlon HRDPA grid" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa_rlatlon.png" /></p>
+<p>The following table lists the values of various parameters of the rotated lat-lon grid:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>2538</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>1288</td>
+</tr>
+<tr>
+<td>resolution at 60° N</td>
+<td>2.5 km</td>
+</tr>
+<tr>
+<td>coordinate of the first grid point</td>
+<td>-36.09° N ; 114.70° W</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong> : The <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">most recent versions of wgrib2</a> and <a href="https://gdal.org/">GDAL</a> support these rotated grids.</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE : ALL HOURS ARE IN UTC.</p>
+<h3 id="polar-stereographic-grid">Polar-stereographic grid</h3>
 <p>The files have the following nomenclature:</p>
 <p>CMC_HRDPA_APCP-TotalPrecipAmount-HHMMcutoff_SFC_0_ps2.5km_YYYYMMDDHH_000.grib2</p>
 <p>where :</p>
@@ -236,6 +273,37 @@
 <p>CMC_HRDPA_APCP-006-0100cutoff_SFC_0_ps2.5km_2018020912_000.grib2</p>
 <p>This file originates from the Canadian Meteorological Center (CMC) and contains data of the High Resolution Deterministic Precipitation Analysis (HRDPA). This is a precipitation analysis (APCP) of 6 hour amounts (006) where the accumulation period goes from 2018020906 to 2018020912. It is considered preliminary because observations have been collected up to 2018020913, which is 1 hour after valid time (0100cutoff). The data is on a polar-stereographic grid at a resolution of 2.5 km (ps2.5km). The valid time of the analysis is 2018020912_000 and the suffix _000 means that the projection time in the future is null, which is always the case for an analysis. The data is encoded in GRIB2 format (.grib2).</p>
 <p>Note that a second variable is also included in this file and it is the confidence index for the analysis (CFIA).</p>
+<h3 id="rotated-lat-lon-grid">Rotated lat-lon grid</h3>
+<p>Files have one of the following nomenclatures:</p>
+<ul>
+<li>{YYYYMMDD}T{HH}Z_MSC_HRDPA_{VAR}_Sfc_RLatLon0.0225_PT0H.grib2</li>
+<li>{YYYYMMDD}T{HH}Z_MSC_HRDPA-Prelim_{VAR}_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong>: Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong> : Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong>: UTC run time [00, 06, 12, 18]</li>
+<li><strong>Z</strong> : Time zone (UTC hour)</li>
+<li><strong>MSC</strong> : Constant string indicating the Meteorological Service of Canada, source of data</li>
+<li><strong>HRDPA</strong> : Constant string indicating that data is from the High Resolution Deterministic Precipitation Analysis. Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected</li>
+<li><strong>HRDPA-Prelim</strong>: Constant string indicating that data is from the High Resolution Deterministic Precipitation Analysis. Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected</li>
+<li><strong>VAR</strong> : Constant string indicating the variable included in the file namely in this case, the accumulated precipitation which has been analyzed over a specific period [APCP-Accum6h, APCP-Accum24h]</li>
+<li><strong>Sfc</strong> : Constant string indicating that the surface is the vertical level </li>
+<li><strong>RLatLon0.0225</strong> : Constant string indicating a rotated lat-lon grid with 0.0225 deg resolution (about 2.5km)</li>
+<li><strong>PT0H</strong> : Based on ISO8601 norms. P, T and H are constant character designating Period, Time and Hour. Here PT0H indicates an analysis.</li>
+<li><strong>grib2</strong> : constant string indicating the GRIB2 format is used</li>
+</ul>
+<p>Examples of files names :</p>
+<ul>
+<li>20231106T00Z_MSC_HRDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>The file originates from the Meteorological Service of Canada (MSC) and contains a High Resolution Deterministic Precipitation Analysis (HRDPA). It contains a preliminary analysis of precipitation accumulation represented by the APCP variable over a 6 hour interval. The data are on a lat-lon rotated grid at a 2.5 km resolution (RLatLon0.0225). The analysis was produced on November 6, 2023 at 00Z (20231106T00Z). The 006-hour interval in which the precipitation is analyzed is 2023110600 to 2023110606. </p>
+<ul>
+<li>20231106T12Z_MSC_HRDPA_APCP-Accum24h_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>The file originates from the Meteorological Service of Canada (MSC) and contains a High Resolution Deterministic Precipitation Analysis (HRDPA). It contains a final analysis of precipitation accumulation represented by the APCP variable over a 24-hour interval. The data are on a lat-lon grid rotated to a 2.5 km resolution (RLatLon0.0225). The analysis was produced on November 6, 2023 at 12Z (20231106T12Z). The 24-hour interval in which precipitation is analyzed is 2023110612 to 2023110712.</p>
+<p><strong>NOTE</strong>: A second variable is also included in this file and it is the confidence index for the analysis.</p>
 <h2 id="list-of-variables">List of variables</h2>
 <table id="csv-table" class="display"></table>
 
@@ -246,7 +314,7 @@
   loadTable("csv-table", "../../../assets/csv/HRDPA_Variables-List_en.csv");
 </script>
 
-<h2 id="about-the-no-data-mask">About the No-data mask</h2>
+<h2 id="about-the-polar-stereographic-grid-no-data-mask">About the polar stereographic grid no-data mask</h2>
 <p>A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
@@ -332,5 +400,20 @@
     </div>
 </div>
 
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </body>
 </html>

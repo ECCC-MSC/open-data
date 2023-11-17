@@ -165,7 +165,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_ohps_fr/">SHOP</a> &gt; SHOP sur le Datamart du SMC</p>
 <h1 id="donnees-netcdf-du-systeme-de-simulation-hydrodynamique-operationnelle-shop">Données NetCDF du Système de simulation hydrodynamique opérationnelle (SHOP)</h1>
-<p>Cette page décrit les données du <a href="../readme_ohps_fr/">Système de simulation hydrodynamique opérationnelle</a> disponibles en format NetCDF.</p>
+<p>Cette page décrit les données d'analyses et de prévisions du <a href="../readme_ohps_fr/">Système de simulation hydrodynamique opérationnelle</a> disponibles en format NetCDF.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.</p>
@@ -175,9 +175,10 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 06, 12, 18]</li>
-<li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 048]</li>
+<li><strong>HH</strong> : Heure UTC de référence [00, 01, 02, ..., 23]</li>
+<li><strong>hhh</strong> : Heure de prévision [001, 002, 003, ..., 048]</li>
 </ul>
+<p>Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance <code>000</code> des heures de prévision. Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]</p>
 <p>Un historique de 24 heures est conservé dans ce répertoire.</p>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p><img alt="" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ohps/grille_ohps.png" /></p>
@@ -217,7 +218,7 @@
 <ul>
 <li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
 <li><strong>T</strong> : Séparateur de temps selon les normes ISO8601</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18] (voir NOTE pour les analyses)</li>
+<li><strong>HH</strong> : Heure UTC de référence [00, 01, 02, ..., 23]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions</li>
 <li><strong>OHPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du Système de simulation hydrodynamique opérationnelle</li>
 <li><strong>DOMAIN</strong> : Chaîne de caractères constante indiquant le domaine [SLFE, pour "Saint Lawrence Fluvial Estuary"]</li>
@@ -225,11 +226,10 @@
 <li><strong>LVL</strong> : Type de niveau vertical [Sfc pour la surface, DBS-Avg pour la moyenne sous la surface de l'eau]</li>
 <li><strong>Grille</strong> : Type de grille horizontale [PS pour grille polaire stéréographique]</li>
 <li><strong>resolution</strong> : Indique la résolution [100m]</li>
-<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [000, 001, 002, ..., 048]</li>
+<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [001, 002, ..., 048]</li>
 <li><strong>PT0H</strong> : Chaîne de caractères constante indiquant une analyse, basée sur les normes ISO8601. P, T et H sont des caractères constants désignant la période, le temps et l'heure.</li>
 <li><strong>nc</strong> : Chaîne de caractères constante indiquant que le format est NetCDF</li>
 </ul>
-<p>NOTE: Les analyses sont disponibles aux heures, par conséquent dans chaque répertoire des passes [00, 06, 12, 18], les 6 dernières analyses horaires sont disponibles.</p>
 <p>Exemples de fichier :</p>
 <ul>
 <li>20230911T18Z_MSC_OHPS-SLFE_WaterLvlRiver_Sfc_PS100m_PT029H.nc</li>
@@ -330,5 +330,20 @@
     </div>
 </div>
 
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </body>
 </html>

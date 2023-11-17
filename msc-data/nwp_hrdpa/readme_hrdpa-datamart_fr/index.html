@@ -134,7 +134,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-des-grilles" class="nav-link">Spécification technique des grilles</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -146,7 +146,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#a-propos-du-masque-no-data" class="nav-link">À propos du masque No-Data</a>
+            <li class="nav-item" data-level="2"><a href="#a-propos-du-masque-no-data-de-la-grille-polaire-stereographique" class="nav-link">À propos du masque No-Data de la grille polaire stéréographique</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -175,15 +175,20 @@
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
 <p>Les données sont accessibles aux adresses suivantes :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic">https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{HH}</a></li>
+<li>Données sur grille polaire stéréographique:<a href="https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic">https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{hh}</a></li>
+<li>Données sur grille lat-lon tournée: <a href="https://dd.meteo.gc.ca/model_hrdpa/2.5km">https://dd.meteo.gc.ca/model_hrdpa/2.5km/{HH}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
 <li><strong>polar_stereographic</strong> :  Projection de la grille</li>
-<li><strong>HH</strong> :  Période d'accumulation en heures: 06 or 24 </li>
+<li><strong>hh</strong> : Heure finale d’accumulation de précipitation [06, 24]</li>
+<li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18]</li>
 </ul>
-<p>Un historique de 30 jours est conservé dans ce répertoire.</p>
-<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
+<p>Un historique de 30 jours est conservé dans ces répertoires.</p>
+<h2 id="specification-technique-des-grilles">Spécification technique des grilles</h2>
+<ul>
+<li><strong>Grille polaire stéréographique</strong></li>
+</ul>
 <p><img alt="image de la spécification technique de la grille AHRDP" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png" /></p>
 <p>Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.</p>
 <table>
@@ -216,8 +221,40 @@
 </tr>
 </tbody>
 </table>
+<ul>
+<li><strong>Grille lat-lon tournée</strong></li>
+</ul>
+<p><img alt="Grille HRDPA Rlatlon" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa_rlatlon.png" /></p>
+<p>Valeurs données aux paramètres de la grille lat-lon tournée:</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>2538</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>1288</td>
+</tr>
+<tr>
+<td>résolution à 60° N</td>
+<td>2.5km</td>
+</tr>
+<tr>
+<td>coordonnées du premier point de grille</td>
+<td>-36.09° N ; 114.70° W</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong> : Les <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">versions les plus récentes de wgrib2</a> et <a href="https://gdal.org/">GDAL</a> supportent ces grilles tournées.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
+<h3 id="grille-polaire-stereographique">Grille polaire stéréographique</h3>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <p>CMC_HRDPA_APCP-TotalPrecipAmount-HHMMcutoff_SFC_0_ps2.5km_YYYYMMDDHH_000.grib2</p>
 <p>où :</p>
@@ -236,6 +273,37 @@
 <p>CMC_HRDPA_APCP-006-0100cutoff_SFC_0_ps2.5km_2018020912_000.grib2</p>
 <p>Ce fichier provient du Centre Météorologique Canadien (CMC) et contient des données de l'Analyse à Haute Résolution Déterministe de Précipitation (HRDPA). C'est une analyse de précipitation (APCP) sur des cumuls de 6 heures (006) dont la période de cumul débute à 2018020906 et se termine à 2018020912. Elle est considérée préliminaire parce que la collecte des observations s'est faite jusqu'à 2018020913, soit 1 heure après l'heure de validité (0100cutoff). Les données sont sur une grille stéréographique polaire à une résolution de 2.5 km (ps2.5km). L'heure de validité de l'analyse est 2018020912_000 où le suffixe _000 signifie que le temps de projection dans le future est nulle, ce qui est toujours le cas pour une analyse. Les données de ce fichier sont encodées en format GRIB2 (.grib2).</p>
 <p>À noter qu'une deuxième variable est également incluse dans ce fichier, soit l'indice de confiance de l'analyse (CFIA).</p>
+<h3 id="grille-lat-lon-tournee">Grille lat-lon tournée</h3>
+<p>Les fichiers ont une des nomenclatures suivantes :</p>
+<ul>
+<li>{YYYYMMDD}T{HH}Z_MSC_HRDPA_{VAR}_Sfc_RLatLon0.0225_PT0H.grib2</li>
+<li>{YYYYMMDD}T{HH}Z_MSC_HRDPA-Prelim_{VAR}_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD</strong>: Année, mois et jour du début de la prévision </li>
+<li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
+<li><strong>HH</strong>: Heure UTC de la passe [00, 06, 12, 18]</li>
+<li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>HRDPA</strong> : Chaîne de caractères constante indiquant le modèle source Analyse à haute résolution de prévision déterministe. Temps de coupure de 7 heures pour les observations après l'heure YYYYMMDDHH, indiquant qu'un maximum d'observations a probablement été recueilli</li>
+<li><strong>HRDPA-Prelim</strong>: Chaîne de caractères constante indiquant le modèle source Analyse à haute résolution de prévision déterministe. Temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies</li>
+<li><strong>VAR</strong> : Chaîne de caractères constante donnant le nom de la variable contenue dans le fichier. Ici, il s’agit de l’analyse de précipitation accumulée sur une certaine période [APCP-Accum6h, APCP-Accum24h]</li>
+<li><strong>Sfc</strong> : Indique que le type de niveau est la surface</li>
+<li><strong>RLatLon0.0225</strong>: Chaîne de caractères constante indiquant une grille lat-lon tournée à 0.0225deg de résolution (environ 2.5km)</li>
+<li><strong>PT0H</strong>: Basé sur les normes ISO8601. P, T et H sont des caractères constants indiquant respectivement la période, le temps et l'heure. Ici, PT0H indique qu'il s'agit d'une analyse</li>
+<li><strong>grib2</strong>:  Indique que les données sont en format GRIB2</li>
+</ul>
+<p>Exemples de noms de fichiers :</p>
+<ul>
+<li>20231106T00Z_MSC_HRDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 6 heures. Les données sont sur une grille tournée lat-lon à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 00Z (20230306T00Z). L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2023110600 à 2023110606.</p>
+<ul>
+<li>20231106T12Z_MSC_HRDPA_APCP-Accum24h_Sfc_RLatLon0.0225_PT0H.grib2</li>
+</ul>
+<p>Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse finale d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 24 heures. Les données sont sur une grille lat-lon tournée à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 12Z (2023110612). L’intervalle de 24 heures dans lequel les précipitations sont analysées est de 2023110612 à 2023110712.</p>
+<p><strong>NOTE</strong> : Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.</p>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <table id="csv-table" class="display"></table>
 
@@ -246,7 +314,7 @@
   loadTable("csv-table", "../../../assets/csv/HRDPA_Variables-List_fr.csv");
 </script>
 
-<h2 id="a-propos-du-masque-no-data">À propos du masque No-Data</h2>
+<h2 id="a-propos-du-masque-no-data-de-la-grille-polaire-stereographique">À propos du masque No-Data de la grille polaire stéréographique</h2>
 <p>Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de nous contacter à l'adresse : <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
@@ -332,5 +400,20 @@
     </div>
 </div>
 
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </body>
 </html>
