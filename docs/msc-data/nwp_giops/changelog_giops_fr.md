@@ -16,7 +16,7 @@ Le seul changement inclus dans cette version est l’ajout d’un volet de contr
 
 Une copie de la note officielle documentant ce changement est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-341_f.pdf).
 
-Le document des spécifications techniques du SGPOG 3.4.1 est disponible [via ce lien]()https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.4.1_f.pdf.
+Le document des spécifications techniques du SGPOG 3.4.1 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.4.1_f.pdf).
 
 ## Le mardi 28 juin 2022
 
