@@ -6,6 +6,18 @@
 
 # Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)
 
+## Le mardi 28 novembre 2023
+
+### Mise à jour du Système global de prévision océan-glace (SGPOG) 3.4.1 du Centre météorologique canadien (CMC)
+
+Le mardi 28 novembre 2023, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.4.1 de son Système global de prévision océan-glace (SGPOG).
+
+Le seul changement inclus dans cette version est l’ajout d’un volet de contrôle de la qualité pour les observations "in situ" utilisées dans l’assimilation de données.
+
+Une copie de la note officielle documentant ce changement est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-341_f.pdf).
+
+Le document des spécifications techniques du SGPOG 3.4.1 est disponible [via ce lien]()https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.4.1_f.pdf.
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SGPOG à la version 3.4.0 suite à la nouvelle infrastructure de calcul haute performance. 

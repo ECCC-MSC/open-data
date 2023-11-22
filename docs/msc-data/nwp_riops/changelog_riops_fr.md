@@ -6,6 +6,18 @@
 
 # Chronologie des changements apportés au Système Régional de Prévision Océan-Glace (SRPOG)
 
+# Le mardi 28 novembre 2023
+
+### Mise à jour du Système régional de prévision océan-glace (SRPOG) 2.3.1 du Centre météorologique canadien (CMC)
+
+Le mardi 28 novembre 2023, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.1 de son Système régional de prévision océan-glace (SRPOG).
+
+Pour cette implantation il n’y a pas de changement pour le modèle numérique ou pour l’assimilation des données. Le seul changement vient de l’utilisation des données « in situ » en provenance de la nouvelle composante de contrôle de qualité (DFO-QC) introduite dans le Système global de prévision océan-glace (SGPOG).
+
+Plus de détails sur cette composante DFO-QC et l’impact sur le SRPOG sont disponibles dans la [note technique du SGPOG 3.4.1](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-341_f.pdf)
+
+Le document des spécifications techniques du SRPOG 2.3.1 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.3.1_f.pdf).
+
 # Le mardi 28 juin 2022
 
 ### Mise à jour du SRPOG à la version 2.3.0 suite à la nouvelle infrastructure de calcul haute performance. 
@@ -28,11 +40,11 @@ Les changements majeurs de cette mise à jour se résument ainsi:
 * Ajout d’un module de monitoring
 
 
-Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
+Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159).
 
-Le document des spécifications techniques du SRPOG 2.2.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf).
+Le document des spécifications techniques du SRPOG 2.2.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.2.0_f.pdf).
 
-Une note technique à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_riops-220_f.pdf).
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_riops-220_f.pdf).
 
 
 ## Le mardi 21 janvier 2020
