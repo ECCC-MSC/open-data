@@ -8,6 +8,10 @@
 
 ## 2023
 
+### November 28, 2023
+
+* [Upgrade to Version 3.4.1 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre](nwp_giops/changelog_giops_en.md#tuesday-november-28-2023)
+
 ### September 20, 2023
 
 * [Operational status of the Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ohps/changelog_ohps_en.md#wednesday-september-20-2023)
