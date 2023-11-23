@@ -34,5 +34,5 @@ Non disponibles.
 
 ## Documentation technique
 
-* Version actuelle [du regroupement géographique du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.6.0/Documentations/).
+* Version actuelle [du regroupement géographique du SMC](https://dd.meteo.gc.ca/meteocode/geodata/version_6.9.0/Documentations/).
 * Les 3 dernières versions sont disponibles [ici](https://dd.meteo.gc.ca/meteocode/geodata/).
