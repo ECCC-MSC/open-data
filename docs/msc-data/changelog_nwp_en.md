@@ -13,6 +13,10 @@
 * [Upgrade to Version 3.4.1 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre](nwp_giops/changelog_giops_en.md#tuesday-november-28-2023)
 * [Upgrade to Version 2.3.1 of the Regional Ice and Ocean Prediction System (RIOPS) at the Canadian Meteorological Centre](nwp_riops/changelog_riops_en.md#tuesday-november-28-2023)
 
+### November 22, 2023
+
+* [Correction to the snow density and snow albedo variables in the diagnostic outputs of CaLDAS-HRDPS](nwp_caldas-hrdps/changelog_caldas-hrdps_en.md#wednesday-november-22-2023)
+
 ### September 20, 2023
 
 * [Operational status of the Operational Hydrodynamic Prediction System (OHPS) 3.3.0](nwp_ohps/changelog_ohps_en.md#wednesday-september-20-2023)
