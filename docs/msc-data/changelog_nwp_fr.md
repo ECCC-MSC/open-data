@@ -13,6 +13,10 @@
 * [Mise à jour du Système global de prévision océan-glace (SGPOG) 3.4.1 du Centre météorologique canadien (CMC)](nwp_giops/changelog_giops_fr.md#le-mardi-28-novembre-2023)
 * [Mise à jour du Système régional de prévision océan-glace (SRPOG) 2.3.1 du Centre météorologique canadien (CMC)](nwp_riops/changelog_riops_fr.md#le-mardi-28-novembre-2023)
 
+### 22 novembre 2023
+
+* [Correction aux variables de la densité de la neige et de l'albédo de la neige dans les sorties diagnostiques de SCanADS-SHRPD](nwp_caldas-hrdps/changelog_caldas-hrdps_fr.md#le-mercredi-22-novembre-2023)
+
 ### 20 septembre 2023
 
 * [Statut opérationnel du Système de simulation hydrodynamique opérationnelle (SHOP) 3.3.0](nwp_ohps/changelog_ohps_fr.md#le-mercredi-20-septembre-2023)
