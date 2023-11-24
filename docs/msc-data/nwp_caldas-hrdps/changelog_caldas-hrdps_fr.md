@@ -6,6 +6,14 @@
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD)
 
+## Le mercredi 22 novembre 2023
+
+### Correction aux variables de la densité de la neige et de l'albédo de la neige dans les sorties diagnostiques de SCanADS-SHRPD
+
+Le mercredi 22 novembre 2023, à compter de la passe de 1800 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 3.1.1 du Système canadien d'assimilation de données de surface (SCanADS-SHRPD) initialisant le Système à haute résolution de prévision déterministe (SHRPD).
+
+Une modification à la moyenne diagnostique de la densité de la neige et de l'albédo de la neige des 24 membres de l'analyse a été installée dans SCanADS-SHRPD.
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SCanADS-SHRPD à la version 3.1.0 suite à la nouvelle infrastructure de calcul haute performance. 

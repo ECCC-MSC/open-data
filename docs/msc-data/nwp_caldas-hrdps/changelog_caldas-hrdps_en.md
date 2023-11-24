@@ -6,6 +6,14 @@
 
 # Chronology of changes to the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS)
 
+## Wednesday November 22, 2023
+
+### Correction to the snow density and snow albedo variables in the diagnostic outputs of CaLDAS-HRDPS
+
+On Wednesday November 22nd, 2023, starting with the 1800 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 3.1.1 of the Canadian Land Data Assimilation System (CaLDAS-HRDPS), which is used to initialize the High Resolution Deterministic Prediction System (HRDPS).
+
+A modification to the diagnostic average of the snow density and snow albedo from the 24 members of the analysis has been installed in CaLDAS-HRDPS.
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 3.1.0 of the CaLDAS-HRDPS adapted to the New High Performance Computing Infrastructure.
