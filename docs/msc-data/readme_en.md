@@ -94,6 +94,7 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ##### &emsp;<span class="badge badge-info">Water</span>
 
 * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
+* [Operational Hydrodynamic Prediction System (OHPS)](nwp_ohps/readme_ohps_en.md)
 
 Note: [Dependencies diagram for the numerical weather and environmental prediction forecasts systems of CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_en.svg)
 </br></br>
