@@ -21,7 +21,7 @@ The data can be accessed at the following address:
 where :
 
 * __HH__: Reference time, in UTC [00, 01, 02, ..., 23]
-* __hhh__ : Forecast hour [001, 002, 003, ..., 048]
+* __hhh__ : Forecast hour [000, 001, 002, ..., 048]
 
 Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the `000` forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].
 
@@ -57,7 +57,7 @@ where :
 * __LVL__: Type of vertical level [Sfc for surface, DBS-Avg for mean below water surface]
 * __Grid__: Horizontal grid type [PS for polar stereographic grid]
 * __resolution__ : Indicates resolution [100m]
-* __PT{hhh}H__: Time scale according to standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [001, 002, 003, ..., 048].
+* __PT{hhh}H__: Time scale according to standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [000, 001, 002, ..., 048].
 * __PT0H__ : Constant character string indicating an analysis, based on ISO8601 standards. P, T and H are constant characters for period, time and hour.
 * __nc__: Constant character string indicating NetCDF format.
 
