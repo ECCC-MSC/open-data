@@ -176,7 +176,7 @@
 <p>where :</p>
 <ul>
 <li><strong>HH</strong>: Reference time, in UTC [00, 01, 02, ..., 23]</li>
-<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 048]</li>
+<li><strong>hhh</strong> : Forecast hour [000, 001, 002, ..., 048]</li>
 </ul>
 <p>Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the <code>000</code> forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].</p>
 <p>A 24-hour history is stored in this directory.</p>
@@ -226,7 +226,7 @@
 <li><strong>LVL</strong>: Type of vertical level [Sfc for surface, DBS-Avg for mean below water surface]</li>
 <li><strong>Grid</strong>: Horizontal grid type [PS for polar stereographic grid]</li>
 <li><strong>resolution</strong> : Indicates resolution [100m]</li>
-<li><strong>PT{hhh}H</strong>: Time scale according to standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [001, 002, 003, ..., 048].</li>
+<li><strong>PT{hhh}H</strong>: Time scale according to standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for period, time and hour. "hhh" represents the forecast hours [000, 001, 002, ..., 048].</li>
 <li><strong>PT0H</strong> : Constant character string indicating an analysis, based on ISO8601 standards. P, T and H are constant characters for period, time and hour.</li>
 <li><strong>nc</strong>: Constant character string indicating NetCDF format.</li>
 </ul>
@@ -243,7 +243,7 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/OHPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/OHPS_Variables-List_en.csv");
 </script>
 
 <h2 id="support">Support</h2>
