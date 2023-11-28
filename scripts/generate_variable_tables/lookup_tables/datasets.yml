@@ -94,7 +94,7 @@ GDSPS:
     - model_gdsps/15km/00/
 
 OHPS:
-    - cmc/cmos/test_tableaux/
+    - model_ohps/slfe/100m/13/000/
 
 RESPS:
     - model_resps/atlantic-nw/9km/00/

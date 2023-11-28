@@ -75,7 +75,7 @@ File examples:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/OHPS_en.csv");
+  loadTable("csv-table", "../../../assets/csv/OHPS_Variables-List_en.csv");
 </script>
 
 ## Support

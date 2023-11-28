@@ -1,5 +1,5 @@
 # Temporary directory
-temporary: /data/geomet/dev/afsuxad/
+temporary: /data/geomet/dev/duprex/
 
 # Lookup tables
 model_file: lookup_tables/datasets.yml
