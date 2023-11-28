@@ -10,12 +10,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.13
 
-* date: 2023-11-
+* date: 2023-11-27
 * announcements:
     * Not announced
 * new content:
-    * RDPA rotated lat-lon on DD (in addition to HPFX)
+    * Add RDPA rotated lat-lon on DD (in addition to HPFX)
+    * Add OHPS on DD 
     * GIOPS & RIOPS udpated changelogs
+    * CaLDAS-HRDPS updated changelog
 * improvements:
     * None
 * bug fixes:

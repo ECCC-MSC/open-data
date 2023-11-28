@@ -92,7 +92,8 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ##### &emsp;<span class="badge badge-info">Eau</span>
 
-* [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)</br>
+* [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
+* [Système de simulation hydrodynamique opérationnelle (SHOP)](nwp_ohps/readme_ohps_fr.md)</br>
 
 Note: [Diagramme de dépendances des systèmes de prévision numériques météorologiques et environnementales du CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_fr.svg)
 </br></br>
