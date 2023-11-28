@@ -1237,6 +1237,24 @@ aggregate surface radiative temperature:
         EN: K
         FR: K
 
+Depth-averaged river velocity in x-direction:
+    Variable:
+        EN: Depth-averaged river velocity in x-direction
+        FR: Vélocité moyenne de la rivière en profondeur dans la direction x
+    Abbreviation: RiverVelocityX
+    Unit:
+        EN: m/s
+        FR: m/s
+
+Depth-averaged river velocity in y-direction:
+    Variable:
+        EN: Depth-averaged river velocity in y-direction
+        FR: Vélocité moyenne de la rivière en profondeur dans la direction y
+    Abbreviation: RiverVelocityY
+    Unit:
+        EN: m/s
+        FR: m/s
+
 drainage amount through base of soil model:
     Variable:
         EN: Drainage Amount Through Base of Soil Model
@@ -1263,6 +1281,15 @@ lateral subsurface runoff amount:
     Unit:
         EN: kg/m<sup>2</sup>
         FR: kg/m<sup>2</sup>
+
+Magnitude of the depth-averaged river velocity:
+    Variable:
+        EN: Magnitude of the depth-averaged river velocity
+        FR: Magnitude de la vélocité moyenne de la rivière en profondeur
+    Abbreviation: RiverVelocity
+    Unit:
+        EN: m/s
+        FR: m/s
 
 model orography:
     Variable:
@@ -1335,3 +1362,12 @@ water equivalent of snow cover (land):
     Unit:
         EN: kg/m<sup>2</sup>
         FR: kg/m<sup>2</sup>
+
+Water level of the river:
+    Variable:
+        EN: Water level of the river
+        FR: Niveau d'eau de la rivière
+    Abbreviation: WaterLvlRiver
+    Unit:
+        EN: m
+        FR: m

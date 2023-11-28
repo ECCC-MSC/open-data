@@ -1,0 +1,5 @@
+Variable,Abbreviation,Level,Unit/Value
+Depth-averaged river velocity in x-direction,RiverVelocityX,Surface,m/s
+Depth-averaged river velocity in y-direction,RiverVelocityY,Surface,m/s
+Magnitude of the depth-averaged river velocity,RiverVelocity,Surface,m/s
+Water level of the river,WaterLvlRiver,Surface,m

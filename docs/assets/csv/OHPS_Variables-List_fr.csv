@@ -1,0 +1,5 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Magnitude de la vélocité moyenne de la rivière en profondeur,RiverVelocity,Surface,m/s
+Niveau d'eau de la rivière,WaterLvlRiver,Surface,m
+Vélocité moyenne de la rivière en profondeur dans la direction x,RiverVelocityX,Surface,m/s
+Vélocité moyenne de la rivière en profondeur dans la direction y,RiverVelocityY,Surface,m/s
