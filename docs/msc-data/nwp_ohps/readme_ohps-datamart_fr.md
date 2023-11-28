@@ -21,7 +21,7 @@ Les données sont accessibles à L'adresse suivante :
 où :
 
 * __HH__ : Heure UTC de référence [00, 01, 02, ..., 23]
-* __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
 Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance `000` des heures de prévision. Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]
 
@@ -57,7 +57,7 @@ où :
 * __LVL__ : Type de niveau vertical [Sfc pour la surface, DBS-Avg pour la moyenne sous la surface de l'eau]
 * __Grille__ : Type de grille horizontale [PS pour grille polaire stéréographique]
 * __resolution__ : Indique la résolution [100m]
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [001, 002, ..., 048]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant la période, le temps et l'heure. "hhh" représente l’heure de prévision  [000, 001, ..., 048]
 * __PT0H__ : Chaîne de caractères constante indiquant une analyse, basée sur les normes ISO8601. P, T et H sont des caractères constants désignant la période, le temps et l'heure.
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
