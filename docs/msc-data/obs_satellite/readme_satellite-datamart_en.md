@@ -1,4 +1,4 @@
-[In French](readme_satellite-datamart_fr.md)
+[En français](readme_satellite-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
