@@ -6,11 +6,11 @@
 
 # Données GRIB2 du Système à Haute Résolution de Prévision Déterministe (SHRPD)
 
-Le [Système à haute résolution de prévision déterministe ou SHRPD](readme_hrdps_fr.md) est une série de grilles emboitées pour les prévisions à aire limitée (LAM). Les grilles proviennent du SRPD et ont une résolution horizontale de 2.5 km à l’intérieur du domaine, sur une région principale Pancanadienne et sur une région Nord couvrant l'archipel arctique et le Groenland. Le modèle pilote du SHRPD est le Système régional de prévision déterministe ou SRPD. Le SHRPD est opérationnel sauf le domaine Nord qui demeure expérimental. Les champs du jeu de données GRIB2 du SHRPD sont disponibles quatre fois par jour (sauf pour le domaine Nord). Des prévisions de 48 heures sont produites pour le domaine pancanadien.
+Le [Système à haute résolution de prévision déterministe ou SHRPD](readme_hrdps_fr.md) opérationnel est une série de grilles emboitées pour les prévisions à aire limitée (LAM). Les grilles proviennent du SRPD et ont une résolution horizontale de 2.5 km sur une région principale pancanadienne. Le modèle pilote du SHRPD est le Système régional de prévision déterministe ou SRPD. Les champs du jeu de données GRIB2 du SHRPD sont disponibles quatre fois par jour. Des prévisions de 48 heures sont produites pour le domaine pancanadien.
 
 Les utilisateurs qui tireront le plus avantage des données sont ceux qui ont besoin de prévisions plus détaillées sur la température et sur les vents à la surface pour la journée même. Les prévisions à 2.5 km sont grandement utiles lors des changements de saisons et en hiver lorsque des changements rapides de température et de vents provoquent des changements de phase des précipitations (neige à pluie verglaçante à pluie, par exemple). Elles sont aussi utiles pour les prévisions à court terme aux endroits avec des reliefs accidentés et le long des rivages, car l’influence des changements d’altitude, de topographie ou de nature du terrain sera mieux décrite pour les phénomènes à cette échelle (brises de lacs ou de mer, circulation locale dans des vallées, changements de phase, etc.). Même en terrain moins accidenté ou loin de l’eau du rivage, la justesse de ces prévisions pourrait s’avérer utile à long terme. Le SHRPD devrait également être pris en compte pour des prévisions hydrologiques sur de plus petits bassins.
 
-Dans le cadre d’un plan de modernisation du Service Météorologique Canadien (SMC), des [éléments du temps sur grille](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf) ("WEonG") cohérents, fusionnant les sorties brutes du modèle et post-traitées à l’aide de diverses approches diagnostiques sont également disponibles pour servir les différents programmes de prévision (public, maritime, aviation, qualité de l’air, etc.). Des concepts horaires sont ainsi produits à partir de différents algorithmes en utilisant des sorties provenant du SHRPD sur le domaine pan-canadien. Ces données sont disponibles sur une grille lat-lon tournée. 
+Dans le cadre d’un plan de modernisation du Service Météorologique Canadien (SMC), des [éléments du temps sur grille](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf) ("WEonG") cohérents, fusionnant les sorties brutes du modèle et post-traitées à l’aide de diverses approches diagnostiques sont également disponibles pour servir les différents programmes de prévision (public, maritime, aviation, qualité de l’air, etc.). Des concepts horaires sont ainsi produits à partir de différents algorithmes en utilisant des sorties provenant du SHRPD sur le domaine pancanadien. Ces données sont disponibles sur une grille lat-lon tournée. 
 
 ## Adresse des données 
 
@@ -20,24 +20,19 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* Domaine continental : [https://dd.meteo.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/continental/2.5km)
-* Domaine nord (expérimental) : [https://dd.meteo.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/grib2)
+* [https://dd.meteo.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/continental/2.5km)
 
 où :
 
 * __res__ : Résolution horizontale [2.5km]
-* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18] pour le domaine continental et [00, 12] pour le domaine nord
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
 Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
-## Spécification technique des grilles 
-
-* __Grille lat-lon tournée du domaine continental__
-
-![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
+## Spécification technique de la grille
 
 Valeurs données aux paramètres de la grille lat-lon tournée à haute résolution.
 
@@ -50,24 +45,7 @@ Valeurs données aux paramètres de la grille lat-lon tournée à haute résolut
 
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
-* __Grille polaire stéréographique du domaine nord (expérimental)__
-
-![Image de la grille du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
-| résolution à 60° N | 2.5 km |
-| coordonnées du premier point de grille | 67.9601° N  140.7611° W |
-| coordonnées (i; j) du Pôle Nord | (389.0, 842.0) |
-| orientation de la grille (par rapport à l’axe des j) | -116.0° |
-
 ## Nomenclature des noms de fichiers
-
-* __Domaine continental__
 
 Les fichiers ont la nomenclature suivante :
 
@@ -94,31 +72,6 @@ Exemples de noms de fichier :
 
 * 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_PT012H.grib2
 * 20220821T12Z_MSC_HRDPS-WEonG_VISIFG_Sfc_RLatLon0.0225_PT024H.grib2
-
-* __Domaine nord (expérimental)__
-
-Les fichiers ont la nomenclature suivante :
-
-`CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2`
-
-où :
-
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions
-* __hrdps__ : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe
-* __north__ : Chaîne de caractères constante indiquant le domaine nord
-* __VAR__ : Type de variable contenu dans le fichier (ex. : UGRD)
-* __LVLTYPE_LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, TGL_120 pour la hauteur de 120m au-dessus du sol]
-* __Grille__ : Grille horizontale [ps pour polaire stéréographique]
-* __resolution__ : 2.5km de résolution
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision
-* __HH__ : Heure UTC de la passe [00, 12]
-* __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
-* __mm__ : Représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
-
-Exemple de nom de fichier :
-
-* CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2
 
 ## Niveaux
 

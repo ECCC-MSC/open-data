@@ -6,7 +6,7 @@
 
 # High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format
 
-The [High Resolution Deterministic Prediction System or HRDPS](readme_hrdps_en.md) is a set of nested limited-area model (LAM) forecast grids from the non-hydrostatic version of the Global Environmental Multiscale (GEM) model with a 2.5 km horizontal grid spacing for the inner domain over one main Pan-Canadian region and a northern region over the Arctic archipelago and Greenland. The pilot model of the HRDPS is the Regional Deterministic Prediction System or RDPS (GEM Regional model). The HRDPS is operational except the northern domain which remains experimental. The fields in the HRDPS high resolution GRIB2 dataset are made available four times a day for the Pan-Canadian domain for a 48 hour forecast period (except the northern domain).
+The operationnal [High Resolution Deterministic Prediction System or HRDPS](readme_hrdps_en.md) is a set of nested limited-area model (LAM) forecast grids from the non-hydrostatic version of the Global Environmental Multiscale (GEM) model with a 2.5 km horizontal grid spacing over one main Pan-Canadian region. The pilot model of the HRDPS is the Regional Deterministic Prediction System or RDPS (GEM Regional model). The fields in the HRDPS high resolution GRIB2 dataset are made available four times a day for the Pan-Canadian domain for a 48 hour forecast period.
 
 Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.
 
@@ -20,22 +20,19 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* Continental domain: [https://dd.weather.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental)
-* North domain (experimental): [https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/grib2)
+* [https://dd.weather.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/continental)
 
 where :
 
 * __res__ : Horizontal resolution [2.5km]
-* __HH__ : Model run start, in UTC [00, 06, 12, 18], except the North domain [00, 12]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [000, 001, 002, ..., 048]
 
 A 24-hour history is stored in this directory.
 
 Note: Some weather element of the grid algorithms ("WEonG") need variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
-## Technical grids specification
-
-* __Rotated lat-lon grid of the continental domain__
+## Technical grid specification
 
 ![Image de la grille du domaine continental lat-lon tournée du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png)
 
@@ -50,24 +47,7 @@ Table lists the values of various parameters of the rotated lat-lon continental 
 
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
-* __Polar-stereographic grid of the North domain (experimental)__
-
-![Image de la grille du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_north.png)
-
-Table lists the values of various parameters of the North polar-stereographic grid.
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
-| resolution at 60° N | 2.5 km |
-| coordinate of first grid point | 67.9601° N  140.7611° W |
-| (i,j) coordinate of North Pole | (389.0, 842.0) |
-| grid orientation (with respect to j axis) | -116.0° |
-
 ## File name nomenclature 
-
-* __Continental domain__
 
 The files have the following nomenclature :
 
@@ -94,31 +74,6 @@ Examples of filenames :
 
 * 20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_PT012H.grib2
 * 20220821T12Z_MSC_HRDPS-WEonG_VISIFG_Sfc_RLatLon0.0225_PT024H.grib2
-
-* __North domain (experimental)__
-
-The files have the following nomenclature :
-
-* `CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2`
-
-where :
-
-* __CMC__ : Constant string indicating that the data is from the Canadian Meteorological Centre
-* __hrdps__ : Constant string indicating that the data is from the High Resolution Deterministic Prediction System
-* __north__ : Constant string indicating the North domain
-* __VAR__ : Variable type included in this file (ex. : UGRD)
-* __LVLTYPE-LVL__ : Level type and level value [ex: SFC for the surface, TGL_120 for the height of 120m above ground level]
-* __Grid__ : Horizontal grid [ps for polar stereographic]
-* __resolution__ : 2.5 km resolution
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
-* __HH__ : UTC run time [00, 12]
-* __P{hhh}__ : P is a constant character. hhh is the forecast hour [000, 001, 002, ..., 048]
-* __mm__ : mm are the forecast minutes [Hard-coded to 00 for now. In the future 30 minute timesteps will be available]
-* __grib2__ : Constant string indicating the GRIB2 format is used
-
-Example of file name :
-
-* CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2
 
 ## Levels
 
