@@ -112,7 +112,7 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 
 ## Autres données
 
-* [Observations et prévisions de la cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
+* [Observations et prévisions de la Cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
 * [Ouragans](hurricanes/readme_hurricanes_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
