@@ -38,7 +38,6 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [Version actuelle du Système à haute résolution de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_f.pdf)
 * [Note technique pour le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_f.pdf)
 * [Diagramme de dépendances du SHRPD sur le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS_fr.svg)
-* [Note technique pour le domaine nord](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_f.pdf)
 * [Note technique du Système canadien d'assimilation de surface (SCanADS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) (en anglais seulement)
 
 ## Registre des changements 

@@ -38,7 +38,6 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 * [Current version of the High Resolution Deterministic Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_e.pdf)
 * [Technical Note for the continental domain](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_e.pdf)
 * [Diagram of dependencies for the continental domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS_en.svg)
-* [Technical Note for the North domain](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_e.pdf)
 * [Canadian Land Data Assimilation System (CaLDAS) technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) 
 
 
