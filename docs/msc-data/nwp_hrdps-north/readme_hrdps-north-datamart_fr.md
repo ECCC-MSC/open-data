@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps-north_fr.md) > SHRPD-Nord sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD-Nord](readme_hrdps-north_fr.md) > SHRPD-Nord sur le Datamart du SMC
 
 # Données GRIB2 du Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)
 
