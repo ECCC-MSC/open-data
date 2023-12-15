@@ -121,7 +121,7 @@ Exemples de noms de fichier :
 
 ## Liste des variables
 
-Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement.
+Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement.
 
 <table id="csv-table" class="display"></table>
 
@@ -129,7 +129,7 @@ Cette liste contient à la fois les paramètres générés à partir des sorties
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_fr.csv");
+  loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_fr.csv");
 </script>
 
 ## Support
