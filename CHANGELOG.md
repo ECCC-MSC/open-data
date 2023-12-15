@@ -8,6 +8,22 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.14
+
+* date: 2023-12-
+* announcements:
+    * Not announced
+* new content:
+    * Add HRDPS-North rotated lat-lon on DD-Alpha
+    * Add HRDPS-North main page
+    * HRDPS updated changelog (WEonG 2.2.0)
+    * Add CAPS in retired pages
+* improvements:
+    * None
+* bug fixes:
+	* Fix typos
+
+
 ## 2.5.13
 
 * date: 2023-11-28
