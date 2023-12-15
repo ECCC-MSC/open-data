@@ -121,7 +121,7 @@ Examples of file names:
 
 ## Variable list
 
-This list contains both the parameters generated from HRDPS outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing.
+This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing.
 
 <table id="csv-table" class="display"></table>
 
@@ -129,7 +129,7 @@ This list contains both the parameters generated from HRDPS outputs and the weat
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
+  loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_en.csv");
 </script>
 
 ## Support
