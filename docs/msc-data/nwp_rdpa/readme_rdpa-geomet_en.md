@@ -13,7 +13,7 @@ MSC GeoMet provides access to several Regional Deterministic Precipitation Analy
 
 The RDPA data are available
 
-* [on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md).
+* [on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md#available-ogc-standards).
 * [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
     * [RDPA - 24 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:24f)
     * [RDPA - 6 hours accumulation](https://api.weather.gc.ca/collections/weather:rdpa:10km:6f)
@@ -45,7 +45,7 @@ Example of a web map configured to display the quantity of precipitation [mm] ov
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on the MSC GeoMet geospatial web services](../../msc-geomet/web-services_en.md) for detailed information. See also the [main RDPA data page](readme_rdpa_en.md) which links to additional information on RDPA.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials](../../usage/tutorials_en.md) and [technical documentation for MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md#available-ogc-standards) for detailed information. See also the [main RDPA data page](readme_rdpa_en.md) which links to additional information on RDPA.
 
 
 ### Available layers
@@ -74,16 +74,16 @@ Amount of precipitation that occurred over past periods of 6 hours:
 Retrieving the list of latest RDPA layers timesteps available:
 
 * Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the RDPA.24F - Quantity of precipitation [mm]  layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
-* Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
+* Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
 
 WMS styles:
 
 * In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response
-* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/web-services_en#handling-styles)
+* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/wms_en#handling-styles)
 
 Legends:
 
-* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic)
+* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/wms_en#wms-getlegendgraphic)
 * Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR`
 
 ![The CAPA24-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR)

@@ -4,6 +4,10 @@
 
 [TdM](../readme_fr.md) > Données du SMC
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> geomet public reorganization step 2 with navigators and available data changes
 # Données ouvertes du Service météorologique du Canada
 
 Le Service météorologique du Canada (SMC) fournit des renseignements à jour sur les conditions météorologiques, le climat, l'eau et l'environnement passés, présents et futurs au Canada et dans le monde.
@@ -53,7 +57,7 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
 * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)</br>
 
-##### &emsp;<span class="badge badge-info">Analyse de la précipitation</span>
+##### &emsp;<span class="badge badge-info">Analyse de la précipitation:</span>
 
 * [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
 * [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
