@@ -8,6 +8,10 @@
 
 ## 2023
 
+### December 19, 2023
+
+* [Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-december-19-2023)
+
 ### November 28, 2023
 
 * [Upgrade to Version 3.4.1 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre](nwp_giops/changelog_giops_en.md#tuesday-november-28-2023)

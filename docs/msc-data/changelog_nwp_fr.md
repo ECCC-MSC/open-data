@@ -8,6 +8,10 @@
 
 ## 2023
 
+### 19 décembre 2023
+
+* [Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps_fr.md#le-mardi-19-décembre-2023)
+
 ### 28 novembre 2023
 
 * [Mise à jour du Système global de prévision océan-glace (SGPOG) 3.4.1 du Centre météorologique canadien (CMC)](nwp_giops/changelog_giops_fr.md#le-mardi-28-novembre-2023)

@@ -6,6 +6,24 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mardi 19 décembre 2023
+
+### Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien
+
+Le mardi 19 décembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) a mis à jour les éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) à la version 2.2.0.
+
+Résumé des modifications que comporte cette mise à jour :
+
+* Interpoler sur la grille les valeurs corrigées statistiquement des températures de surface aux points, fournis par UMOS en utilisant l'outil d'interpolation MIDAS
+* Production des concepts intégrés sur des périodes de trois heures 
+* Ajout du type de précipitation significative
+* Modifications de l'algorithme de probabilité de détection des bourrasques de neige
+* Activation du “Garry Morning Patch“ pour prolonger la présence du brouillard de rayonnement matinal jusqu'à ce que l'angle solaire atteigne un seuil spécifique
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_XXXXX___XXXXX).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_weong-hrdps-220_f.pdf).
+
 ## Le jeudi 14 septembre 2023
 
 ### Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SHRPD
