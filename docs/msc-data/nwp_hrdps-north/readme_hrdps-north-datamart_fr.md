@@ -121,7 +121,7 @@ Exemples de noms de fichier :
 
 ## Liste des variables
 
-Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement.
+Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement (seulement disponibles sur la grille lat-lon tournée)
 
 <table id="csv-table" class="display"></table>
 
