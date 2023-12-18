@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Wcs fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#web-coverage-service-wcs" class="nav-link">Web Coverage Service (WCS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#wcs-getcapabilities" class="nav-link">WCS GetCapabilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wcs-describecoverage" class="nav-link">WCS DescribeCoverage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wcs-getcoverage" class="nav-link">WCS GetCoverage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-du-temps" class="nav-link">Spécification du temps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exemple-dutilisation" class="nav-link">Exemple d'utilisation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../wcs_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; <a href="../readme_fr/">GeoMet du SMC</a> &gt; WCS</p>
+<h1 id="web-coverage-service-wcs">Web Coverage Service (WCS)</h1>
+<p>Les requêtes de type <a href="https://www.opengeospatial.org/standards/wcs">OGC Web Coverage Service</a> permettent aux usagers de télécharger les données géospatiales brutes pour une région d'intérêt spécifique. Les requêtes WCS sont effectuée via l'Internet et offrent davantage de flexibilité lorsque comparées au téléchargement de fichiers bruts. Le service WCS rend possible plusieurs types de requêtes, qui sont décrites en détail ci-dessous.</p>
+<p>Notez que seule la version WCS 2.0.1 est présentement supportée par les services web GeoMet du SMC. Nous invitons les usagers à utiliser cette version du standard. Il est aussi à noter que QGIS et ArcGIS ne supportent pas le WCS 2.0.1.</p>
+<p>Plusieurs types de requêtes WCS peuvent être spécifiés et celles-ci sont décrites ci-après:</p>
+<ul>
+<li>GetCapabilities</li>
+<li>DescribeCoverage</li>
+<li>GetCoverage</li>
+<li>GetLegendGraphic
+</br></br></li>
+</ul>
+<h2 id="wcs-getcapabilities">WCS GetCapabilities</h2>
+<p>Une requête WCS GetCapabilities permet à l'usager de récupérer un document XML contenant les métadonnées décrivant le service. Ce document contient l'information sur le type de requêtes et les systèmes de coordonnées cartographiques supportées, ainsi que les couches pour lesquelles les données brutes sont disponibles.</p>
+<p>Une requête WCS GetCapabilities est composée des paramètres suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wcs</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version supportée, soit <code>2.0.1</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetCapabilities</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètre optionnel</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COVERAGEID</td>
+<td>Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant</td>
+</tr>
+<tr>
+<td>LANG</td>
+<td>Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut</td>
+</tr>
+</tbody>
+</table>
+<p>Une requête WCS GetCapabilities peut ainsi être construite de cette manière :</p>
+<p><a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCapabilities">https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCapabilities</a></p>
+<p>Le document GetCapabilities résultant contiendra l'information sur le nom du service, l'étendue géographique des données, les couches et les formats disponibles.</p>
+<p></br></br></p>
+<h2 id="wcs-describecoverage">WCS DescribeCoverage</h2>
+<p>Une requête WCS DescribeCoverage permet à l'usager de récupérer davantage d'information qu'un WCS GetCapabilities pour une couche en particulier. L'information provenant d'une requête WCS DescribeCoverage inclut l'étendue géographique des données, les couches et les formats disponibles.</p>
+<p>Une requête WCS DescribeCoverage est construite ainsi :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wcs</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version supportée, soit <code>2.0.1</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>DescribeCoverage</code></td>
+</tr>
+<tr>
+<td>COVERAGEID</td>
+<td>Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  <a href="#wcs-getcapabilities">WCS GetCapabilities</a></td>
+</tr>
+</tbody>
+</table>
+<p>Une requête WCS DescribeCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :</p>
+<p><a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS.ETA_TT">https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS.ETA_TT</a></p>
+<p></br></br></p>
+<h2 id="wcs-getcoverage">WCS GetCoverage</h2>
+<p>Une requête WCS GetCoverage est utilisée afin de récupérer les données brutes d'une couche en particulier. L'aspect pratique de ces requêtes est qu'elles permettent de récupérer un sous-domaine spatial dans la projection cartographique spécifiée ainsi que de récupérer les données dans un format de données et une résolution spatiale différente que les données d'origine.</p>
+<p>Une requête WCS GetCoverage est composée des paramètres suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wcs</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version supportée, soit <code>image/jpeg</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetCoverage</code></td>
+</tr>
+<tr>
+<td>COVERAGEID</td>
+<td>Un paramètre permettant aux usagers de spécifier la couche désirée. La liste des couches disponibles est récupérée par le biais d'une requête  <a href="#wcs-getcapabilities">wcs getcapabilities</a></td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>Le format de données désiré pour les données brutes. Les valeurs possibles pour ce paramètre sont : <code>image/tiff</code> (GeoTIFF) ou <code>image/netcdf</code> (NetCDF)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètres optionnels</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUBSETTINGCRS</td>
+<td>Le système de coordonnées cartographiques (CRS) utilisé dans la requête de récupération des données brutes</td>
+</tr>
+<tr>
+<td>OUTPUTCRS</td>
+<td>Le système de coordonnées cartographiques (CRS) des données brutes téléchargées. Ce paramètre peut être différent de <code>SUBSETTINGCRS</code>. Note: L'utilisation de ce paramètre est <strong>fortement recommandée</strong> pour garantir la précision des réponses <code>WCS GetCoverage</code>.</td>
+</tr>
+<tr>
+<td>SUBSET=axis()</td>
+<td>L'étendue géographique des données demandées, par axe. Les sous-paramètres supportées sont : <code>x</code>, <code>xaxis</code>, <code>x-axis</code>, <code>x_axis</code>, <code>long</code>, <code>long_axis</code>, <code>long-axis</code>, <code>lon</code>, <code>lon_axis</code>, <code>lon-axis</code>, <code>y</code>, <code>axis</code>, <code>y-axis</code>, <code>y_axis</code>, <code>lat</code>, <code>lat_axis</code> et <code>lat-axis</code>. Les coordonnées doivent utiliser les mêmes unités que SUBSETTINGCRS. L'étendue géographique demandée doit couvrir au moins une partie de l'étendue géographique de la donnée demandée</td>
+</tr>
+<tr>
+<td>RESOLUTION=axis()</td>
+<td>La résolution spatiale pour chaque axe (pixel/unité) pour la donnée demandée. Si aucune valeur n'est spécifiée, la résolution spatiale de la donnée récupérée pourrait être différente de la donnée d'origine, il est donc recommandé de spécifier la resolution voulue dans la requête. Notez que les paramètres <code>RESOLUTION</code> et <code>SIZE</code> sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête</td>
+</tr>
+<tr>
+<td>SIZE=axis()</td>
+<td>Le nombre de pixels voulus pour un axe donné. Si aucune valeur n'est spécifiée, la grosseur de pixel de la donnée récupérée pourrait être différente de la donnée d'origine, il est donc recommandé de spécifier le nombre de pixels voulus dans la requête. Notez que les paramètres <code>RESOLUTION</code> et <code>SIZE</code> sont mutuellement exclusifs pour un axe et ne doivent pas être utilisés en même temps pour le même axe d'une requête</td>
+</tr>
+<tr>
+<td>INTERPOLATION</td>
+<td>La méthode d'interpolation utilisée si une mise à l'échelle est nécessaire. Les trois méthodes suivantes sont disponibles : <code>NEAREST</code>, <code>BILINEAR</code> et <code>AVERAGE</code>. Si aucune n'est spécifiée, la méthode par défaut est <code>NEAREST</code></td>
+</tr>
+<tr>
+<td>RANGESUBSET</td>
+<td>Ce paramètre permet à l'usager de spécifier une bande de la donnée matricielle à récupérer. Le nom ou le numéro de la bande doit être utilisé</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>La date et temps associés à la donnée demandée. Le format doit respecter le standard ISO8601. Pour davantage de détails au sujet de la composante temporelle, se référer à la section <a href="#specification-du-temps">Spécification du temps dans les requêtes WCS</a></td>
+</tr>
+<tr>
+<td>DIM_REFERENCE_TIME</td>
+<td>Le temps de la passe de modèle (model run), lorsque disponible, à récupérer par le biais de la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WCS</a></td>
+</tr>
+</tbody>
+</table>
+<p>Une requête WCS GetCoverage pour la couche GDPS.ETA_TT de GeoMet-Météo est construite comme suit :</p>
+<p><a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS.ETA_TT&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff">https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS.ETA_TT&amp;
+SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;
+RESOLUTION=y(0.24)&amp;FORMAT=image/tiff</a></p>
+<p></br></br></p>
+<h2 id="specification-du-temps">Spécification du temps</h2>
+<p>Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre <code>TIME</code> ou <code>DIM_REFERENCE_TIME</code> n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches.</p>
+<p>Un utilisateur désirant effectuer une requête pour un moment spécifique pour les requêtes WCS GetCoverage doit utiliser les paramètres <code>TIME</code> et/ou <code>DIM_REFERENCE_TIME</code>. La date et le moment doit être envoyé dans le format du standard ISO8601 et les temps sont toujours en UTC (Coordinate Universal Time).</p>
+<p></br></p>
+<h4 id="geomet-climat"><span class="badge badge-light">GeoMet-Climat</span></h4>
+<p></br></p>
+<p>Le service WCS de GeoMet-Climat ne supporte pas les requêtes avec les paramètres <code>TIME</code> ou <code>DIM_REFERENCE_TIME</code>. À la place, l'information temporelle des requêtes WCS sur GeoMet-Climat utilise des bandes différentes, chaque bande correspondant à un pas de temps spécifique. Les usagers doivent utiliser le paramètre <code>RANGESUBSET</code> pour accéder au pas de temps désiré.</p>
+<p>La liste des différentes bandes disponibles peut être récupérée par une requête WCS <code>DescribeCoverage</code>. Voici un exemple pour la couche DCS.TM.RCP26.YEAR.ANO_PCTL50 de GeoMet-Climat :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet-climate?SERVICE=WCS&amp;VERSION=2.0.1
+&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=DCS.TM.RCP26.YEAR.ANO_PCTL50
+</code></pre>
+<pre><code class="language-xml">...
+&lt;swe:field name=&quot;B2006&quot;&gt;
+    &lt;swe:Quantity&gt;
+        &lt;swe:nilValues/&gt;
+        &lt;swe:uom code=&quot;W.m-2.Sr-1&quot;/&gt;
+        &lt;swe:constraint&gt;
+            &lt;swe:AllowedValues&gt;
+                &lt;swe:interval&gt;-3.4028e+38 3.4028e+38&lt;/swe:interval&gt;
+                &lt;swe:significantFigures&gt;12&lt;/swe:significantFigures&gt;
+            &lt;/swe:AllowedValues&gt;
+        &lt;/swe:constraint&gt;
+    &lt;/swe:Quantity&gt;
+&lt;/swe:field&gt;
+&lt;swe:field name=&quot;B2007&quot;&gt;
+    &lt;swe:Quantity&gt;
+        &lt;swe:nilValues/&gt;
+        &lt;swe:uom code=&quot;W.m-2.Sr-1&quot;/&gt;
+        &lt;swe:constraint&gt;
+            &lt;swe:AllowedValues&gt;
+                &lt;swe:interval&gt;-3.4028e+38 3.4028e+38&lt;/swe:interval&gt;
+                &lt;swe:significantFigures&gt;12&lt;/swe:significantFigures&gt;
+            &lt;/swe:AllowedValues&gt;
+        &lt;/swe:constraint&gt;
+    &lt;/swe:Quantity&gt;
+&lt;/swe:field&gt;
+&lt;swe:field name=&quot;B2008&quot;&gt;
+...
+</code></pre>
+<p>Dans cet exemple, la valeur <code>field</code> indique à l'usager le nom des bandes disponibles. Pour GeoMet-Climat, les bandes utilisent toujours la nomenclature suivante : <code>B</code> suivi de l'intervalle ISO8601 correspondant, soit <code>YYYY</code> pour un intervalle annuel et <code>YYYY-MM</code> pour un intervalle mensuel.</p>
+<p>Pour GeoMet-Climat, les usagers pour demander un pas de temps unique ou une plage temporelle :</p>
+<ul>
+<li>Pas de temps unique : <code>RANGESUBSET=B2015</code></li>
+<li>Plage temporelle : <code>RANGESUBSET=B2015:B2019</code></li>
+</ul>
+<p>Notez que la limite pour une seule requête WCS GetCoverage est de 256 bandes à la fois.
+</br></p>
+<h4 id="geomet-meteo"><span class="badge badge-light">GeoMet-Météo</span></h4>
+<p>Pour les requêtes temporelles WCS avec GeoMet-Météo, veuillez vous référer à section sur <a href="../WMS_fr/#specification-du-temps">la spécification du temps dans les requêtes WMS</a> puisque l'utilisation des paramètres <code>TIME</code> et <code>DIM_REFERENCE_TIME</code> demeure la même.</p>
+<p>Les dimensions temporelles pour les requêtes WCS sur GeoMet-Météo ne sont pas fournies par les requêtes WCS GetCapabilities ou WCS DesbcribeCoverage. Les dimensions temporelles de ce service WCS ne sont accessibles que dans une requête WMS GetCapabilities.
+</br></br></p>
+<h2 id="exemple-dutilisation">Exemple d'utilisation</h2>
+<p>Le service WCS de GeoMet-Climat et GeoMet-Météo peut être accédé avec <a href="https://changements-climatiques.canada.ca/donnees-climatiques/">l'Outil d'extraction de données climatiques</a> du <a href="https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques.html">Centre canadien des services climatiques</a>.</p>
+<p>Les utilisateurs peuvent choisir une variable métérologique ou climatique, une région d'intérêt, l'information temporelle ainsi que de spécifier le format de récupération des données pour obtenir les données brutes correspondantes.
+</br></br></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

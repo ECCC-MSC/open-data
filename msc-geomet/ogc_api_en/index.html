@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>OGC API technical doc /Doc technique de l'OGC API - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../wcs_en/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#ogc-api" class="nav-link">OGC API</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#main-endpoints" class="nav-link">Main endpoints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#common-query-parameters" class="nav-link">Common Query Parameters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ogc-api-features" class="nav-link">OGC API - Features</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ogc-api-coverages" class="nav-link">OGC API - Coverages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../ogc_api_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TdM</a> &gt; <a href="../readme_en/">MSC GeoMet</a> &gt; OGC API</p>
+<h1 id="ogc-api">OGC API</h1>
+<p>The Open Geospatial Consortium (OGC) API standards are a set of specifications developed by the OGC to facilitate the interoperable exchange of geospatial data and services over the web. These standards are designed to enable seamless integration and sharing of geospatial information across different systems, applications, and organizations. The following documentation will go over the basics of the OGC API - Features and OGC API - Coverages standards and provide examples of how to query GeoMet-OGC-API using these standards.</p>
+<h2 id="main-endpoints">Main endpoints</h2>
+<h5 id="get-landing-page"><span class="badge badge-info">GET /</span> - Landing page</h5>
+<p><a href="https://api.weather.gc.ca/">https://api.weather.gc.ca/</a></p>
+<p>The GeoMet-OGC-API landing page with links to view the data collections, processes, and conformance classes implemented by the API.
+</br></p>
+<h5 id="get-collections-all-data-collections"><span class="badge badge-info">GET /collections</span> - All data collections</h5>
+<p><a href="https://api.weather.gc.ca/collections">https://api.weather.gc.ca/collections</a></p>
+<p>Retrieves information describing the set of supported collections and provides a list of collections with data type and a brief description.</p>
+<h5 id="get-collectionscollectionid-collection-specific-information"><span class="badge badge-info">GET collections/{collectionID}</span> - Collection-specific information</h5>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-stations">https://api.weather.gc.ca/collections/hydrometric-daily-mean</a></p>
+<p>Retrieves descriptive information about a specific collection, either of type feature or type coverage. For example, the URL above returns
+the root page for the Hydrometric Monitoring Stations feature collection.</p>
+<h5 id="get-openapi-openapi-documentation"><span class="badge badge-info">GET /openapi</span> - OpenAPI documentation</h5>
+<p><a href="https://api.weather.gc.ca/openapi">https://api.weather.gc.ca/openapi</a></p>
+<p>The API documentation links provide a Swagger page of the API as a tool for developers to provide example request/response/query capabilities. A JSON representation is also provided.
+</br></p>
+<h5 id="get-conformance-api-conformance-definition"><span class="badge badge-info">GET /conformance</span> - API conformance definition</h5>
+<p><a href="https://api.weather.gc.ca/conformance">https://api.weather.gc.ca/conformance</a></p>
+<p>The conformance page provides a list of URLs corresponding to the OGC API conformance classes supported by GeoMet-OGC-API.
+</br></p>
+<h2 id="common-query-parameters"><strong>Common Query Parameters</strong></h2>
+<p>The following section provides information regarding common query parameters often used when making requests to both feature and coverage collections. Query parameters are passed with the request URL using the <code>?</code> character to separate the query parameter from the URL and the <code>&amp;</code> character to separate multiple query parameters.</p>
+<h5 id="f-format-query-parameter"><span class="badge badge-info">f</span> - Format query parameter</h5>
+<p><a href="https://api.weather.gc.ca/collections/?f=json">https://api.weather.gc.ca/collections/?f=json</a></p>
+<p>The format query paremeter is used to specify the format of the server response. Depending on the collection type, the value of the format query parameter could be one of of the following: html, json. The example above returns the list of available collections from GeoMet-OGC-API as a JSON object.</p>
+<p>For feature collections, results can also be returned as a CSV file via <code>?f=csv</code>.</p>
+<p>For coverage collections, the output format of the coverage can be specified via this parameter. Depending on the collection and its supported output formats, the following values are supported: <code>GRIB</code>, <code>GTiff</code>, and <code>NetCDF</code> in GeoMet-OGC-API but their support is on a per coverage collection basis.</p>
+<h5 id="bbox-bounding-box-query-parameter"><span class="badge badge-info">bbox</span> - Bounding box query parameter</h5>
+<p><a href="https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?bbox=-71,46,-65,49">https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?bbox=-71,46,-65,49</a></p>
+<p>Retrieves information according to a specific region or bounding box. It is a rectangular area defined by two sets of coordinates that represent the minimum and maximum extents of the box. <code>bbox</code> coordinate values must be fall within the bounds of <a href="https://epsg.io/4326">EPSG:4326</a>. The coordinates specified must be in the following order: <code>minX, minY, maxX, maxY</code>.</p>
+<h5 id="datetime-datetime-query-parameter"><span class="badge badge-info">datetime</span> - Datetime query parameter</h5>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30</a></p>
+<p>Retrieves information according to a specific date, year or time interval. It is highly recommend to use RFC 3339 compliant datetime strings (i.e. <code>YYYY-MM-DD</code> or <code>YYYY-MM-DDTHH:MM:SSZ</code>). The datetime parameter can be used in conjunction with the <code>..</code> keyword to specify a time extent. For example, <code>datetime=2012-05-20/..</code> returns all items from 2015-05-20 onwards. <code>datetime=../2015-11-11</code> returns all items older than 2015-11-11.
+</br></br></p>
+<h2 id="ogc-api-features">OGC API - Features</h2>
+<p>The <a href="https://ogcapi.ogc.org/features/">OGC API - Features</a> (OAFeat) standard provides a list of standardized specifications for querying vector-based geospatial data (points, lines and polygons) on the web. Listed below are example OGC-API feature collection endpoints, examples for spatial, temporal and property filtering, and further details regarding pagination.</p>
+<h5 id="get-collectionscollectioniditems-feature-collection-items"><span class="badge badge-info">GET collections/{collectionID}/items</span> - Feature collection items</h5>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items</a></p>
+<p>Returns items from a specified collection.</p>
+<p>The above URL returns items from the <code>hydrometric-daily-mean</code> collection:
+<img alt="Hydrometric Daily Mean Items" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items.png" /></p>
+<h5 id="get-collectionscollectioniditemsitemid-single-feature-overview"><span class="badge badge-info">GET collections/{collectionID}/items/{itemID}</span> - Single feature overview</h5>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-stations/items/01AA002">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items/01AA002</a></p>
+<p>Returns the item with the corresponding ID from the requested collection and provides its full set of properties.</p>
+<p>The above URL returns the item with ID <code>01AA002</code> from the <code>hydrometric-stations</code> collection:
+<img alt="Item 01AA002" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_itemID_01AA002.png" />
+</br></p>
+<h5 id="get-collectionscollectioniditemsquery-parameters-query-a-feature-collection"><span class="badge badge-info">GET collections/{collectionID}/items?{query parameters}</span> - Query a feature collection</h5>
+<p>Feature collection queries allow for spatial, temporal, and property filtering. Filter parameters can be combined to formulate a more complex query. The first parameter of a query must be specified with <code>?</code> and subsequent parameters with <code>&amp;</code>.</br>
+</br>
+Below are a few examples of various types of queries, ranging from simple bbox and datetime filtering queries to more complex queries comprised of multiple query parameters. All queries are made to the <a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean">hydometric-daily-mean</a> feature collection.</p>
+<h3 id="spatial"><span class="badge badge-light">Spatial</span></h3>
+<p>Query by bounding box (minx, miny,maxx, maxy).</br>
+</br>
+<a href="https://api.weather.gc.ca/collections/hydrometric-stations/items?bbox=-71,46,-65,49">https://api.weather.gc.ca/collections/hydrometric-stations/items?bbox=-71,46,-65,49</a></p>
+<p>Returns items from the feature collection that intersect the provided bounding box:
+<img alt="Map with selected area" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items_bbox.png" /></p>
+<h3 id="temporal"><span class="badge badge-light">Temporal</span></h3>
+<p>Query for an instantaneous value with a single date:</br>
+</br>
+<a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30</a></p>
+<p>Returns feature collection items that match the provided datetime value:
+<img alt="Items from collection that match datetime" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items&amp;_1_datetime.png" /></p>
+<p>Query for a time interval:</br>
+</br>
+<a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?datetime=1972-10-30/2010-07-31</a></p>
+<p>Returns feature collection items that fall within the provided datetime range:
+<img alt="Items from collection that fall within the provided datetime range" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items&amp;_intervalle_datetime.png" /></p>
+<p>Query by time extent with the open ended <code>..</code> keyword:</p>
+<ul>
+<li>
+<p>Since a specific datetime:</br>
+    <a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&amp;STATION_NUMBER=07DA006&amp;datetime=2012-05-20/..">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&amp;STATION_NUMBER=07DA006&amp;datetime=2012-05-20/..</a></p>
+</li>
+<li>
+<p>Returns feature collection items from 2015-05-20 onwards.</p>
+<p>Until a specific datetime:</br>
+<a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&amp;STATION_NUMBER=07DA006&amp;datetime=../2015-11-11">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=json&amp;STATION_NUMBER=07DA006&amp;datetime=../2015-11-11</a></br></p>
+<p>Returns feature collection items older than 2015-11-11.</p>
+</li>
+</ul>
+<h3 id="property"><span class="badge badge-light">Property</span></h3>
+<p>Query by an entity collection property:</br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001</a></p>
+<p>Returns feature collection items that have <code>STATION_NUMBER = 10CD001</code>
+<img alt="Features by station number" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items_stationNumber.png" /></p>
+<h3 id="paging"><span class="badge badge-light">Paging</span></h3>
+<ul>
+<li>
+<h4 id="offset"><span class="badge badge-light">Offset</span></h4>
+<p>The <code>offset</code> parameter can be used to specify the record to start at when extracting
+features. The default value is <code>0</code> (first feature).</br>
+</br></p>
+</li>
+<li>
+<h4 id="total-number-of-items"><span class="badge badge-light">Total number of items</span></h4>
+<p>The <code>resulttype=hits</code> parameter is used to return the number of features found in a collection, without returning any features from the collection. The number of features is found in the response's <code>numberMatched</code> key.</br></p>
+<p><a href="https://api.weather.gc.ca/collections/ltce-stations/items?f=json&amp;resulttype=hits">https://api.weather.gc.ca/collections/ltce-stations/items?f=json&amp;resulttype=hits</a></p>
+<p><img alt="numberMatched" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/numberMatched.png" /></p>
+</li>
+<li>
+<h4 id="limit"><span class="badge badge-light">Limit</span></h4>
+<p>The <code>limit</code> parameter is used to define the maximum records to return in the response. The default response size is 500 features.</br>
+In the following query, a single entity is requested, for example, to inspect its geometry and properties:
+</br></br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?limit=1</a></p>
+<p>Returns a single feature from the collection:</p>
+<p><img alt="Items with a limit of 1" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/GET_items_limit.png" /></p>
+<p>The <code>offset</code> and <code>limit</code> parameters can be used in tandem to cycle through feature collections. The examples below demonstrate how to adjust and page through query results.</p>
+<ul>
+<li>
+<p>Query and limit to items 1 to 100:</br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=100">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;limit=100</a></p>
+</li>
+<li>
+<p>Query and limit to items 101-200:</br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offset=101&amp;limit=100">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;offsetx=101&amp;limit=100</a>
+</br></p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="strategies-for-paging"><span class="badge badge-light">Strategies for paging</span></h4>
+<p>The paging strategy is commonly used when extract large amounts of data. For example, a client could page by 1000 features to cycle through an entire station record, starting with the first 1000 items and subsquently requesting the next 1000 items, until all items are returned.</br>
+    </br>
+<a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=0&amp;limit=1000</a></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000</a></br></p>
+<p>The above queries return the first 1000 items and the next 1000 items respectively.
+The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record.
+</br></p>
+</li>
+</ul>
+<h3 id="combining-filter-parameters"><span class="badge badge-light">Combining filter parameters</span></h3>
+<p>Query all hydrometric daily mean data from a single station between 2001 and 2010:</br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31</a></p>
+<h3 id="exporting-to-csv-format"><span class="badge badge-light">Exporting to CSV format</span></h3>
+<p>Results from queries made against feature collections can be exported to the CSV format by adding <code>&amp;f=csv</code> to the request, or by clicking on the <code>CSV</code> top-right icon on the collection page.</br></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?f=csv</a></p>
+<h3 id="sorting"><span class="badge badge-light">Sorting</span></h3>
+<p>Results from a query can be sorted by using the <code>sortby</code> parameter. By default, the sort order is ascending. For a descending sort, add the <code>-</code> (minus) character prior to the property name. Sorting by multiple properties is supported by providing a comma-separated list of properties to the <code>sortby</code> query parameter.</br>
+    </br>
+<code>&amp;sortby=PROPERTY</code> sorts the property in ascending order
+<code>&amp;sortby=-PROPERTY</code> sorts the property in descending order.</p>
+<p>Examples with the <code>DATE</code> property:</p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=DATE">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=DATE</a> <code>ascending</code></p>
+<p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=-DATE">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=-DATE</a> <code>descending</code></p>
+<h2 id="ogc-api-coverages">OGC API - Coverages</h2>
+<p>The <a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a> standard specifies the fundamental API building blocks for interacting with coverages (raster data). The spatial data community uses the term "coverage" to refer to homogeneous sets of values ​​located in space and time, such as data from spatiotemporal sensors, images, simulation and statistics.</p>
+<h5 id="get-collectionscoverageid-coverage-collection-landing-page"><span class="badge badge-info">GET collections/{coverageId}</span> - Coverage collection landing page</h5>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly</a></p>
+<p>Retrieves detailed coverage metadata for the specified collection. This page displays the collections geographic extent, supported output forms and related links.</p>
+<h5 id="get-collectionscoverageidcoverage-coverage-query-with-no-parameters"><span class="badge badge-info">GET collections/{coverageId}/coverage</span> - Coverage query with no parameters</h5>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage</a></p>
+<p>Retrieves the coverage data and related self-describing information (range set, domain set, range type, metadata). It is comparable to a WCS GetCoverage response. By default, the response is returned as JSON. The URL above returns the entire coverage data for the default coverage field "tas" (surface temperature).</p>
+<h5 id="get-collectionscoverageidcoveragerangetype-coverage-range-type"><span class="badge badge-info">GET collections/{coverageId}/coverage/rangetype</span> - Coverage range type</h5>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/rangetype?">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/rangetype?</a></p>
+<p>Returns the range type of the coverage, that is, the semantics of the data values ​​(their components and the data type). The range type response returns a list of fields that can be queried against the coverage. For example, the query below returns the range type for the CMIP5 Historical annual anomaly collection.
+<img alt="RangeType" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/COV_rangeType.png" /></p>
+<h5 id="get-collectionscoverageidcoveragedomainset-coverage-domain-set"><span class="badge badge-info">GET collections/{coverageId}/coverage/domainset</span> - Coverage domain set</h5>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/domainset">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/domainset</a></p>
+<p>Returns the domain of the coverage (the detailed n-dimensional space covered by the data). Domains include available axis labels, extent of coverage, pixel size, and resolution.</p>
+<p><img alt="Domainset" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/COV_domainset.png" /></p>
+<h5 id="get-collectionscoverageidcoverageparams-coverage-with-query-parameters"><span class="badge badge-info">GET collections/{coverageId}/coverage?{params}</span> - Coverage with query parameters</h5>
+<p>Queries against coverage collections allow for spatial, temporal, and range type filtering against the n-dimensionsal space (domain set axes) of the coverage itself. The first parameter of a query must be specified with <code>?</code> and subsequent parameters with <code>&amp;</code>.</p>
+<h3 id="spatial_1"><span class="badge badge-light">Spatial</span></h3>
+<p>Query by bounding box (minx, miny,maxx, maxy).</br>
+    </br>
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;bbox=-80.557251,42.561173,-75.135498,44.805224">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;bbox=-80.557251,42.561173,-75.135498,44.805224</a> or
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;bbox=-80.557251,42.561173,-75.135498,44.805224&amp;f=NetCDF">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;bbox=-80.557251,42.561173,-75.135498,44.805224&amp;f=NetCDF</a></p>
+<h3 id="temporal_1"><span class="badge badge-light">Temporal</span></h3>
+<p>Query for an instantaneous value for a single period if a "time" axis label is available, for this specific coverage:</br>
+    </br>
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;datetime=1905">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;datetime=1905</a></p>
+<p>Query for a time interval:</br>
+    </br>
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;datetime=1901/1905">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&amp;datetime=1901/1905</a></p>
+<h3 id="rangetype-field"><span class="badge badge-light">Rangetype field</span></h3>
+<p>Query for a specifc range type field with the <code>properties</code> query parameter. For example, the query below retrieves coverage data for the rangetype field named "sit" (sea ice thickness).
+</br></br>
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?properties=sit">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?properties=sit</a></p>
+<h3 id="domain-set-dimension"><span class="badge badge-light">Domain set dimension</span></h3>
+<p>Query by a dimension specificied in the domain set with the <code>subset</code> query parameter.
+    </br></br>
+<a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?subset=percentile(25)">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?subset=percentile(25)</a></p>
+<h3 id="combination-of-filter-parameters"><span class="badge badge-light">Combination of filter parameters</span></h3>
+<p>Query the coverage with a spatial and temporal filter, for a a specific rangetype field via the <code>properties</code> query parameter.</br>
+    </br>
+Returns in json format by default:</p>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?bbox=-80.557251,42.561173,-75.135498,44.805224&amp;properties=sfcWind&amp;datetime=1901/1905">https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?bbox=-80.557251,42.561173,-75.135498,44.805224&amp;properties=sfcWind&amp;datetime=1901/1905 </a></p>
+<h3 id="export-to-gtiff-or-netcdf-format"><span class="badge badge-light">Export to GTiff or NetCDF format</span></h3>
+<p>Queries pointing to collections pages can be exported in GTiff format and NetCDF format if available. Consult the root of a given coverage collection to identify the available response data formats. For example:</p>
+<p><a href="https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute?f=json">https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute?f=json</a></p>
+<p>Under the <code>links</code> key, the available values for the <code>?f</code> parameter can be found. In this case the coverage data can be requested in JSON via <code>?f=json</code> or as NetCDF via <code>?f=NetCDF</code>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

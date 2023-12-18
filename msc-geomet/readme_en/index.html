@@ -34,51 +34,6 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview /<br>Aperçu de l'utilisation</a>
-</li>
-                                    
-<li>
-    <a href="../../msc-animet/readme_en/" class="dropdown-item">Display data and create animations with MSC AniMet /<br>Afficher les données et créer des animations avec AniMet du SMC</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/tutorial_WMS_QGIS_en/" class="dropdown-item">Display and animate data in QGIS /<br>Afficher et animer des couches dans QGIS</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/tutorial_web-maps_en/" class="dropdown-item">Create interactive web maps /<br>Créer des cartes web interactives</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/tutorial_raw-data_QGIS_en/" class="dropdown-item">Add raw data to QGIS /<br>Ajouter des données brutes à QGIS</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/use-case_arthur/use-case_arthur_en" class="dropdown-item">Make WMS Requests from Python /<br>Faire des requêtes WMS avec Python</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/tutorial_OAFeat_QGIS_en/" class="dropdown-item">Use OGC API - Features in QGIS /<br>Utiliser OGC API - Features dans QGIS</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/use-case_oafeat/use-case_oafeat-script_en" class="dropdown-item">Make OGC API - Feature requests from Python /<br>Faire des requêtes OGC API - Features avec Python</a>
-</li>
-                                    
-<li>
-    <a href="../../usage/tutorial_gdal/tutorial_gdal_en/" class="dropdown-item">Use GDAL commands /<br>Utiliser des commandes GDAL</a>
-</li>
-                                    
-<li>
-    <a href="../web-services_en/" class="dropdown-item">API technical doc /<br>Doc technique de l'API</a>
-</li>
-                                </ul>
-                            </li>
                             <li class="navitem">
                                 <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
                             </li>
@@ -96,6 +51,35 @@
                                     
 <li>
     <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
 </li>
                                 </ul>
                             </li>
@@ -140,19 +124,15 @@
             
             <li class="nav-item" data-level="1"><a href="#msc-geomet" class="nav-link">MSC GeoMet</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#usage-tutorials-and-technical-documentation" class="nav-link">Usage, tutorials and technical documentation</a>
+            <li class="nav-item" data-level="2"><a href="#services" class="nav-link">Services</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#access" class="nav-link">Access</a>
+            <li class="nav-item" data-level="2"><a href="#available-ogc-standards" class="nav-link">Available OGC standards</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#announcement-mailing-list" class="nav-link">Announcement mailing list</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+            <li class="nav-item" data-level="2"><a href="#contact-and-support" class="nav-link">Contact and support</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -167,113 +147,96 @@
 <p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
 <p><a href="../../readme_en/">TOC</a> &gt; MSC GeoMet</p>
 <h1 id="msc-geomet">MSC GeoMet</h1>
-<p>The MSC GeoMet platform provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of real-time and archived weather, climate and water datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on demand raw data clipping and reprojection, on demand format conversion and custom visualization.</p>
-<h2 id="usage-tutorials-and-technical-documentation">Usage, tutorials and technical documentation</h2>
-<p>Overview, examples and tutorials to access and use MSC GeoMet data:</p>
+<p>The MSC GeoMet platform provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of real-time and archived weather, climate and water datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on demand raw data clipping and reprojection, on demand format conversion and custom visualization.
+</br></br></p>
+<h2 id="services">Services</h2>
+<p>Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services.</p>
+<p>The following Open Geospatial Consortium <a href="https://www.ogc.org/standards">standards</a> and <a href="https://www.ogc.org/standards/community/">community standards</a> are suppported:</p>
 <ul>
-<li><a href="../../usage/readme_en/">Usage overview</a></li>
-<li>Tutorials:<ul>
-<li>Use data in the QGIS desktop software:<ul>
-<li><a href="../../usage/tutorial_WMS_QGIS_en/">Add, query and animate WMS layers</a></li>
-<li><a href="../../usage/tutorial_OAFeat_QGIS_en/">Add and query OGC API Features layers</a></li>
+<li><a href="https://www.opengeospatial.org/standards/wms">Web Map Service (WMS)</a></li>
+<li><a href="https://www.opengeospatial.org/standards/wcs">Web Coverage Service (WCS)</a></li>
+<li><a href="https://ogcapi.ogc.org/features/">OGC API - Features</a></li>
+<li><a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a></li>
+<li><a href="https://stacspec.org/en">SpatioTemporal Asset Catalog (STAC) (experimental)</a></li>
 </ul>
-</li>
-<li><a href="../../usage/tutorial_web-maps_en/">Create interactive web maps with OpenLayers and Leaflet</a>:<ul>
-<li>Add layers</li>
-<li>Display popup dialog boxes</li>
-<li>Animate temporal layers</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Use cases:<ul>
-<li><a href="../../usage/use-case_arthur/use-case_arthur_en/">Arthur: profits based on the probability of precipitation</a>:<ul>
-<li>Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC Web Map Service (WMS) standard to create data tables and graphs</li>
-</ul>
-</li>
-<li><a href="../../usage/use-case_oafeat/use-case_oafeat-script_en/">Cathy: tracking water levels at hydrometric stations</a>:<ul>
-<li>Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Technical documentation:<ul>
-<li><a href="../web-services_en/">API / geospatial web services technical documentation</a></li>
-</ul>
-</li>
-<li><a href="../../licence/readme_en/">End-use licence</a></li>
-<li><a href="../../usage-policy/readme_en/">Service usage policy</a></li>
-</ul>
-<h2 id="access">Access</h2>
-<p>Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services. The supported geospatial web services are the following Open Geospatial Consortium (OGC) standards: <a href="https://www.opengeospatial.org/standards/wms">Web Map Service (WMS)</a>, <a href="https://www.opengeospatial.org/standards/wcs">Web Coverage Service (WCS)</a>, <a href="https://ogcapi.ogc.org/features/">OGC API - Features</a>, <a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a> and <a href="https://ogcapi.org.org/processes">OGC API - Processes</a>.</p>
-<p>The MSC GeoMet Platform consists in the following services:</p>
+<p>For further information regarding how to use MSC GeoMet services, see the following pages:</p>
 <ul>
-<li>GeoMet-OGC-API:<ul>
-<li>Weather, climate and hydrometric data</li>
-<li>Standards supported: OGC API - Features, OGC API - Coverages, OGC API - Processes, STAC (experimental)</li>
+<li><a href="https://eccc-msc.github.io/open-data/usage/readme_en/">MSC GeoMet usage overview</a></li>
+<li><a href="/usage/tutorials_en/">Tutorials and guides on ways to use MSC GeoMet services</a>
+</br></br></li>
 </ul>
-</li>
-<li>GeoMet-Weather:<ul>
-<li>Numerical Weather Prediction systems, weather radar, current conditions, alerts, and more  </li>
-<li>Standards supported: WMS, WCS, SLD</li>
-</ul>
-</li>
-<li>GeoMet-Climate: <ul>
-<li>Climate data archives, simulations and scenarios</li>
-<li>Standards supported: WMS, WCS, SLD</li>
-</ul>
-</li>
-</ul>
-<p>The <a href="../../msc-data/readme_en/">available datasets pages</a> specify on which MSC GeoMet service the corresponding data is available.</p>
-<h3 id="geomet-ogc-api">GeoMet-OGC-API</h3>
-<p>GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium <a href="https://ogcapi.ogc.org/features/">OGC API - Features</a>, <a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a> <a href="https://ogcapi.ogc.org/processes/">OGC API - Processes</a> standards.</p>
-<p>Access to GeoMet-OGC-API:</p>
-<ul>
-<li><a href="https://api.weather.gc.ca/">https://api.weather.gc.ca/</a></li>
-<li><a href="https://api.weather.gc.ca/openapi?f=html">GeoMet-OGC-API OpenAPI query builder</a></li>
-</ul>
-<p>The source code for GeoMet-OGC-API is publicly available on GitHub:</p>
-<ul>
-<li>msc-pygeoapi: <a href="https://github.com/ECCC-MSC/msc-pygeoapi">https://github.com/ECCC-MSC/msc-pygeoapi</a></li>
-<li>pygeoapi: <a href="https://pygeoapi.io/">https://pygeoapi.io/</a></li>
-</ul>
-<h3 id="geomet-weather">GeoMet-Weather</h3>
-<p>GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services. It provides access to data such as weather alerts and public forecasts, observations and numerical weather prediction forecasts.</p>
-<p>Service capabilities:</p>
-<ul>
-<li>GeoMet-Weather WMS URL: <a href="https://geo.weather.gc.ca/geomet?lang=en&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">https://geo.weather.gc.ca/geomet?lang=en&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities</a></li>
-<li>GeoMet-Weather WCS URL: <a href="https://geo.weather.gc.ca/geomet?lang=en&amp;service=WCS&amp;version=2.0.1&amp;request=GetCapabilities">https://geo.weather.gc.ca/geomet?lang=en&amp;service=WCS&amp;version=2.0.1&amp;request=GetCapabilities</a></li>
-</ul>
-<p>Usage tip:</p>
-<ul>
-<li>Users can use <code>&amp;layer=</code> in WMS GetCapabilities requests to point to a
-specific layer and retrieve a smaller XML payload with up to date
-temporal dimensions<ul>
-<li>Example for the 1km radar snow layer: <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=RADAR_1KM_RSNO">https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=RADAR_1KM_RSNO</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="geomet-climate">GeoMet-Climate</h3>
-<p>GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services. It provides access to historical climate datasets such daily observation data, monthly summaries and climate normals for climate stations across the country. The GeoMet-Climate services are a data source for the <a href="https://canada.ca/climate-services">Canadian Centre for Climate Services</a>.</p>
-<p>Service capabilities:</p>
-<ul>
-<li>GeoMet-Climate WMS URL: <a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities</a></li>
-<li>GeoMet-Climate WCS URL: <a href="https://geo.weather.gc.ca/geomet-climate?service=WCS&amp;version=2.0.1&amp;request=GetCapabilities">https://geo.weather.gc.ca/geomet-climate?service=WCS&amp;version=2.0.1&amp;request=GetCapabilities</a></li>
-</ul>
-<p>The source code for GeoMet-Climate and the Climate Data Extraction Tool is publicly available on GitHub:</p>
-<ul>
-<li><a href="https://github.com/ECCC-CCCS/geomet-climate">https://github.com/ECCC-CCCS/geomet-climate</a></li>
-<li><a href="https://github.com/ECCC-CCCS/geomet-climate">https://github.com/ECCC-CCCS/climate-data-extraction-tool</a></li>
-</ul>
-<h3 id="spatiotemporal-asset-catalog">SpatioTemporal Asset Catalog</h3>
-<p>Experimental support for the <a href="https://github.com/radiantearth/stac-spec">SpatioTemporal Asset Catalog (STAC) specification</a> is available for content of the <a href="../../msc-datamart/readme_en/">MSC Datamart</a>.</p>
-<ul>
-<li>Experimental STAC URL: <a href="https://api.weather.gc.ca/stac/">https://api.weather.gc.ca/stac/</a></li>
-</ul>
-<h2 id="announcement-mailing-list">Announcement mailing list</h2>
-<p>We encourage users to subscribe to the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.</p>
-<h2 id="support">Support</h2>
-<p>The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p></div>
+<p>The MSC GeoMet Platform consists in the following services:
+</br></p>
+<div class="card-deck">
+  <div class="card text-black mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-Weather</h5></div>
+    <div class="card-body">
+      <p class="card-text">GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services.</p></br></br><a href="https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-OGC-API</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium standards.</p><a href="https://api.weather.gc.ca/" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-Climate</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services.</p></br></br></br><a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>
+<p><br/></p>
+<h2 id="available-ogc-standards">Available OGC standards</h2>
+<p>Web services are protocols designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.</p>
+<p>The MSC GeoMet web services adhere to open standards ratified by the <a href="https://www.opengeospatial.org/">Open Geospatial Consortium (OGC)</a>, and the <a href="https://www.isotc211.org/">International Organization for Standardization (ISO)</a> which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in <a href="https://public.wmo.int/en">WMO Information System</a> and are supported by numerous off the shelf open source or commercial tools.</p>
+<p>The following OGC web services are supported by MSC GeoMet:</p>
+<div class="card-deck">
+  <div class="card text-black mb-3 text-center">
+    <div class="card-header bg-light"><h5>Web Map Service</h5></div>
+    <div class="card-body">
+      <p class="card-text">Web Map Service (WMS) is a standard protocol that allows users to request and receive geospatial map images from a server over the internet.</p>
+      <a href="../wms_en" class="btn btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>OGC API</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      OGC API (Open Geospatial Consortium API) is a new set of standardized web APIs (Application Programming Interfaces) that facilitate easy and uniform access to geospatial data and services.</p>
+      <a href="../ogc_api_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>Web Coverage Service</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      Web Coverage Service (WCS) is a standard protocol that enables users to request and retrieve geospatial data in the form of coverages or grids over the internet.</p>
+      <a href="../wcs_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>SpatioTemporal Asset Catalog</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      SpatioTemporal Asset Catalog (STAC) is an OGC community standard that provides a common structure for describing and cataloging spatiotemporal assets.</p>
+      <a href="../stac_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>
+<p><br/></p>
+<h2 id="contact-and-support">Contact and support</h2>
+<h3 id="announcement-mailing-list"><span class="badge badge-light">Announcement mailing list</span></h3>
+<p>We encourage users to subscribe to the <a href="https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info">GeoMet-Info</a> announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.</p>
+<h3 id="support"><span class="badge badge-light">Support</span></h3>
+<p>The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a></p>
+<p></br></br></br></p></div>
             </div>
         </div>
 
@@ -363,7 +326,7 @@ temporal dimensions<ul>
             (function() {
             var u="https://msc-analytics.ca/piwik/";
             _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '7']);
+            _paq.push(['setSiteId', '13']);
             var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
             g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
             })();

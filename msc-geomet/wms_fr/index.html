@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Wms fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#web-map-service-wms" class="nav-link">Web Map Service (WMS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#wms-getcapabilities" class="nav-link">WMS GetCapabilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wms-getmap" class="nav-link">WMS GetMap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wms-getfeatureinfo" class="nav-link">WMS GetFeatureInfo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wms-getlegendgraphic" class="nav-link">WMS GetLegendGraphic</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-du-temps" class="nav-link">Spécification du temps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specification-des-styles" class="nav-link">Spécification des styles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../wms_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; <a href="../readme_fr/">GeoMet du SMC</a> &gt; WMS</p>
+<h1 id="web-map-service-wms">Web Map Service (WMS)</h1>
+<p>Les requêtes effectuées avec le <a href="https://www.opengeospatial.org/standards/wms">standard Web Map Service (WMS)</a> de l'OGC permettent principalement aux usagers to récupérer des données géospatiales en tant que cartes. Les requêtes WMS sont effectuées via Internet (HTTP) et servent principalement à récupérer une image (e.g. JPEG, PNG) issue de données géospatiales pour une région d'intérêt donnée.</p>
+<p>Plusieurs types de requêtes WMS peuvent être spécifiés et celles-ci sont décrites ci-après:</p>
+<ul>
+<li>GetCapabilities</li>
+<li>GetMap</li>
+<li>GetFeatureInfo</li>
+<li>GetLegendGraphic
+</br></br></li>
+</ul>
+<h2 id="wms-getcapabilities">WMS GetCapabilities</h2>
+<p>Une requête WMS GetCapabilities permet à l'usager de récupérer un document XML contenant les métadonnées décrivant le service. Ce document contient l'information associée aux types de requêtes supportées, les systèmes de coordonnées cartographiques supportés, et particulièrement important, la liste des couches (données) disponibles.</p>
+<p>Une requête WMS GetCapabilities est composée des paramètres suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wms</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit <code>1.3.0</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetCapabilities</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètres optionnels</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAYERS</td>
+<td>Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant</td>
+</tr>
+<tr>
+<td>LANG</td>
+<td>Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut</td>
+</tr>
+</tbody>
+</table>
+<p>Une requête WMS GetCapabilities pour GeoMet-Météo est donc construite ainsi :</p>
+<p><a href="https://geo.meteo.gc.ca/geomet/?lang=fr&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">https://geo.meteo.gc.ca/geomet/?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;lang=fr</a></p>
+<p>Chaque couche définie dans le document XML du WMS GetCapabilities contient l'information telle que l'identifiant de la couche et son nom, son étendue géographique, la plage temporelle ainsi que les styles disponibles.
+</br></br></p>
+<h2 id="wms-getmap">WMS GetMap</h2>
+<p>Une requête WMS GetMap permet aux usagers de récupérer une image (e.g. JPEG, PNG) d'une couche pour une région déterminée. Une requête WMS GetMap est constituée de plusieurs paramètres qui spécifie la couche désirée, son style, le système de coordonnées cartographiques, le pas de temps, en plus des propriétés additionnelles associées à l'image. Une <a href="#wms-getcapabilities">requête WMS GetCapabilities</a> supporte les usagers en guidant l'utilisateur sur les valeurs possibles pour ces paramètres.</p>
+<p>Une requête WMS GetMap est composée des paramètres suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas présent, <code>wms</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit <code>1.3.0</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetMap</code></td>
+</tr>
+<tr>
+<td>LAYERS</td>
+<td>L'identifiant des couches à être affichées sur l'image. L'identifiant des couches est spécifié dans le résultat d'une requête <a href="#wms-getcapabilities">WMS GetCapabilities</a>. GeoMet du SMC supporte présentement seulement une seule valeur pour le paramètre GetMap LAYERS. Ceci sera amélioré dans une version à venir afin de supporter les couches multiples du standard WMS 1.3.0.</td>
+</tr>
+<tr>
+<td>STYLES</td>
+<td>Le style à utiliser pour l'affichage de la couche. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé.</td>
+</tr>
+<tr>
+<td>CRS (version 1.3.0) ou SRS (version 1.1.0)</td>
+<td>Le système de coordonnées cartographiques (CRS) à utiliser pour créer l'image. <strong>Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé</strong></td>
+</tr>
+<tr>
+<td>BBOX</td>
+<td>L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 <em>et avec la projection EPSG:4326</em>, l'ordre des coordonnées est <code>minY,minX,maxY,maxX</code>. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est <code>minX,minY,maxX,maxY</code></td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>Le format de données pour l'image désirée. Les valeurs possibles pour ce paramètre sont : <code>image/jpeg</code> ou <code>image/png</code>. Le format PNG supporte la transparence, alors que le format JPEG est plus léger</td>
+</tr>
+<tr>
+<td>HEIGHT</td>
+<td>La hauteur en pixels de l'image retournée</td>
+</tr>
+<tr>
+<td>WIDTH</td>
+<td>La largeur en pixels de l'image retournée</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètres optionnels</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TIME</td>
+<td>La date et l'heure associées à l'image désirée. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WMS</a></td>
+</tr>
+<tr>
+<td>DIM_REFERENCE_TIME</td>
+<td>Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WMS</a></td>
+</tr>
+</tbody>
+</table>
+<p>La requête WMS GetMap suivante demande une image de la couche de température de l'air du Système global de prévision déterministe (SGPD) :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
+&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS.ETA_TT&amp;FORMAT=image/png
+</code></pre>
+<p>Et retourne :</p>
+<p><img alt="Température de l'air du Système global de prévision déterministe (SGPD)" src="https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS.ETA_TT&amp;FORMAT=image/png" />
+</br></br></br></p>
+<h2 id="wms-getfeatureinfo">WMS GetFeatureInfo</h2>
+<p>Une requête WMS GetFeatureInfo permet de récupérer les données brutes pour un lieu géographique spécifique. Une requête WMS GetFeatureInfo ressemble à une requête WMS GetMap à laquelle s'ajoute les paramètres suivants : <code>I</code>, <code>J</code> et <code>QUERY_LAYERS</code>. Ces paramètres représentent la localisation horizontale et verticale du pixel ainsi que le nom des couches à interroger.</p>
+<p>Une requête WMS GetFeatureInfo est composée des paramètres suivants :&gt;</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wms</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit <code>1.3.0</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetFeatureInfo</code></td>
+</tr>
+<tr>
+<td>LAYERS</td>
+<td>L'identifiant de la couche à interroger. L'identifiant de la couche est spécifié dans le résultat d'une requête <a href="#wms-getcapabilities">WMS GetCapabilities</a></td>
+</tr>
+<tr>
+<td>CRS (version 1.3.0) ou SRS (WMS version 1.1.0)</td>
+<td>Le système de coordonnées cartographiques (CRS) à utiliser pour la requête. <strong>Attention, le nom de ce paramètre diffère selon la version du service WMS utilisé</strong></td>
+</tr>
+<tr>
+<td>BBOX</td>
+<td>L'étendue géographique associée à l'image désirée. Les coordonnées doivent utiliser les unités du CRS/SRS. Si la requête est effectuée en WMS 1.3.0 <em>et avec la projection EPSG:4326</em>, l'ordre des coordonnées est <code>minY,minX,maxY,maxX</code>. En WMS 1.3.0, l'ordre des axes dépend de la projection. Si la requête est effectuée en WMS 1.1.1, l'ordre des coordonnées est <code>minX,minY,maxX,maxY</code></td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>Le format de données pour l'image désirée. Les valeurs possibles pour ce paramètre sont : <code>image/jpeg</code> ou <code>image/png</code>. Le format PNG supporte la transparence, alors que le format JPEG est plus léger</td>
+</tr>
+<tr>
+<td>HEIGHT</td>
+<td>La hauteur en pixels de l'image associée</td>
+</tr>
+<tr>
+<td>WIDTH</td>
+<td>La largeur en pixels de l'image associée</td>
+</tr>
+<tr>
+<td>I (WMS version 1.3.0) ou X (WMS version 1.1.0)</td>
+<td>La coordonnée horizontale du pixel à interroger</td>
+</tr>
+<tr>
+<td>J (WMS version 1.3.0) ou Y (WMS version 1.1.0)</td>
+<td>La coordonnée verticale du pixel à interroger</td>
+</tr>
+<tr>
+<td>QUERY_LAYERS</td>
+<td>L'identifiant de la couche à interroger</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètres optionnels</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INFO_FORMAT</td>
+<td>Le format des données retournées par la requête. Les valeurs acceptées pour ce paramètres sont : <code>text/plain</code> (valeur par défaut), <code>application/json</code> ou <code>application/vnd.ogc.gml</code></td>
+</tr>
+<tr>
+<td>FEATURE_COUNT</td>
+<td>Le nombre d'entités retourné par la requête</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>La date et l'heure associées à la requête. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WMS</a></td>
+</tr>
+<tr>
+<td>DIM_REFERENCE_TIME</td>
+<td>Le temps de la passe du modèle (model run) à utiliser pour la requête. Pour davantage d'information, vous référer à la section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WMS</a></td>
+</tr>
+</tbody>
+</table>
+<p>Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dessus :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetFeatureInfo&amp;BBOX=45,-75,45.5,-74.5
+&amp;CRS=EPSG:4326&amp;WIDTH=10&amp;HEIGHT=10&amp;LAYERS=GDPS.ETA_TT&amp;INFO_FORMAT=application/json&amp;QUERY_LAYERS=GDPS.ETA_TT&amp;I=5&amp;J=5
+</code></pre>
+<p></br></br></br></p>
+<h2 id="wms-getlegendgraphic">WMS GetLegendGraphic</h2>
+<p>Une requête GetLegendGraphic retourne une image de la légende d'une couche pour le style demandé. La manière simple d'accéder à la légende d'un style spécifique est de consulter le document WMS GetCapabilities pour la couche en question. Tous les styles d'une couche s'y retrouvent et l'URL de la légende se retrouve dans la balise <code>&lt;OnlineResource&gt;</code>.</p>
+<p>Par exemple, la couche de température de l'air du SGPD offre plusieurs styles dans le document WMS GetCapabilities. Demander la légende du style <code>TEMPERATURE-LINEAR</code> en utilisant une requête GetLegendGraphic retourne cette légende :</p>
+<p><img alt="Exemple GetLegendeGraphic TEMPERATURE-LINEAR" src="https://geo.meteo.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=GDPS.ETA_TT&amp;format=image/png&amp;STYLE=TEMPERATURE-LINEAR" /></p>
+<p>Une requête WMS GetLegendeGraphic est composée des paramètres suivants :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètres obligatoires</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SERVICE</td>
+<td>Le service que l'utilisateur sollicite. Dans ce cas, <code>wms</code></td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>La version du service que l'utilisateur sollicite. Nous recommendons l'utilisation de la version la plus récente, soit <code>1.3.0</code></td>
+</tr>
+<tr>
+<td>REQUEST</td>
+<td>Le type de requête, soit <code>GetLegendGraphic</code></td>
+</tr>
+<tr>
+<td>LAYER</td>
+<td>L'identifiant de la couche à interroger. L'identifiant des couches est spécifié dans le résultat d'une requête <a href="#wms-getcapabilities">WMS GetCapabilities</a></td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>Le format de données pour la légende désirée. Les valeurs possibles pour ce paramètre sont : <code>image/jpeg</code> ou <code>image/png</code></td>
+</tr>
+<tr>
+<td>SLD_VERSION</td>
+<td>La version du document SLD. Nous recommendons d'utiliser la version <code>1.1.0</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Paramètres optionnels</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STYLE</td>
+<td>Le style associé à la légende désirée. Si ce paramètre n'est pas spécifié, le style par défaut de la couche sera utilisé. Les styles disponibles pour une couche est spécifié dans le résultat d'une requête <a href="#wms-getcapabilities">WMS GetCapabilities</a>. Note: Assurez-vous de taper la forme au singulier <code>STYLE</code> de ce paramètre dans la requête <code>GetLegendGraphic</code> et non la forme au pluriel (i.e. STYLES) car la sortie sera le style par défaut de la couche au lieu de celui demandé.</td>
+</tr>
+<tr>
+<td>SLD</td>
+<td>Indique que la légende doit être créée selon un document SLD externe. Vous référer à la section <a href="#specification-des-styles">Spécification des styles</a> pour les explications détaillées</td>
+</tr>
+<tr>
+<td>SLD_BODY</td>
+<td>Permet à l'usager d'inclure le document SLD directement dans la requête</td>
+</tr>
+<tr>
+<td>LANG</td>
+<td>Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) la légende. Si le paramètre n'est pas spécifié, la légende est retournée en anglais par défaut</td>
+</tr>
+<tr>
+<td></br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Un exemple de requête GetLegendGraphic pour la couche des courants océaniques (CIOPS-East_2km_SeaIceVelocity) du Système Mondial de Prévision des Glaces et des Océans (GIOPS) va comme suit :</p>
+<pre><code>https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0
+&amp;layer=OCEAN.GIOPS.2D_UU2W&amp;format=image/png&amp;STYLE=SEA_CURARROW_0MTO100M_SURFACE
+</code></pre>
+<p>Et retourne :</p>
+<p><img alt="Exemple des flèches des courants océaniques du GIOPS" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=OCEAN.GIOPS.2D_UU2W&amp;format=image/png&amp;STYLE=SEA_CURARROW_0MTO100M_SURFACE" /></p>
+<h2 id="specification-du-temps">Spécification du temps</h2>
+<p>Compte tenu de l'importance des dimensions temporelles des données météorologiques, il est important de connaître comment GeoMet du SMC traite les paramètres temporels dans les requêtes. Par défaut, si aucun paramètre <code>TIME</code> ou <code>DIM_REFERENCE_TIME</code> n'est spécifié dans une requête, GeoMet du SMC va utiliser le pas de temps ainsi que la passe de modèle les plus proches.</p>
+<p>Un utilisateur désirant effectuer une requête pour un moment spécifique pour les requêtes WMS GetMap et WMS GetFeatureInfo doit utiliser les paramètres <code>TIME</code> et/ou <code>DIM_REFERENCE_TIME</code>. La date et le moment doit être envoyé dans le format du standard ISO8601 et les temps sont toujours en UTC (Coordinate Universal Time).</p>
+<p>Afin de générer une requête pour un pas de temps spécifique ou une passe de modèle, l'utilisateur doit premièrement valider quels sont les intervalles de temps valides. Cette information est disponible dans la balise <code>&lt;Dimension&gt;</code> disponible dans le document WMS GetCapabilities.</p>
+<p>Par exemple, les dimensions temporelles pour la couche de température de l'air (GDPS.ETA_TT) du Système global de prévision déterministe (SGPD) ressemble à :</p>
+<pre><code class="language-xml">&lt;Dimension name=&quot;time&quot; units=&quot;ISO8601&quot; default=&quot;2019-06-12T15:00:00Z&quot;
+nearestValue=&quot;0&quot;&gt;2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H&lt;/Dimension&gt;
+
+&lt;Dimension name=&quot;reference_time&quot; units=&quot;ISO8601&quot; default=&quot;2019-06-12T00:00:00Z&quot;
+multipleValues=&quot;1&quot; nearestValue=&quot;0&quot;&gt;2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H&lt;/Dimension&gt;
+</code></pre>
+<p>La première balise <code>&lt;Dimension&gt;</code> représente l'intervalle de temps disponible pour cette couche. La valeur associée à <code>default</code> indique la valeur considérée si le paramètre <code>TIME</code> n'est pas spécifié dans la requête. La valeur de la balise, soit <code>2019-06-12T00:00:00Z/2019-06-22T00:00:00Z/PT3H</code> dans l'exemple, indique à l'usager quelles sont les valeurs temporelles valides. Au moment où la requête WMS GetCapabilities a fourni cette réponse, les usagers étaient en mesure de récupérer des cartes (WMS GetMap) ou la donnée brute à un point (WMS GetFeatureInfo) pour n'importe quel moment entre 2019-06-12T00:00:00Z et 2019-06-22T00:00:00Z à un intervalle de 3 heures (PT3H).</p>
+<p>La seconde balise <code>&lt;Dimension&gt;</code> représente les passes de modèles (model runs) disponibles pour la couche. La valeur indiqué à <code>default</code> est celle de la passe de modèle disponible la plus récente. La valeur de la balise, soit <code>2019-06-11T00:00:00Z/2019-06-12T00:00:00Z/PT12H</code> dans cet exemple indique les passes de <code>2019-06-11T00:00:00Z</code> à <code>2019-06-12T00:00:00Z</code> à tous les 12 heures (PT12H) sont valides.</p>
+<p>Avec cette information, un usager est en mesure d'effectuer une requête WMS GetMap pour la température de l'air du SGPD pour 12:00:00 UTC le 21 juin 2019 pour la passe de modèle la plus récente 2019-06-12T00:00:00Z. La requête serait celle-ci :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
+&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS.ETA_TT&amp;FORMAT=image/png
+&amp;TIME=2019-06-21T12:00:00Z&amp;DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
+</code></pre>
+<p>Notez que les requêtes avec des plages de temps ou des valeurs temporelles multiples ne sont pas actuellement prises en charge dans GeoMet pour les paramètres <code>TIME</code> ou <code>DIM_REFERENCE_TIME</code>. Seules les requêtes de temps ponctuelles sont supportées.</p>
+<p></br></p>
+<h4 id="differences-entre-les-dimensions-temporelles-de-geomet-meteo-et-geomet-climat"><span class="badge badge-light">Différences entre les dimensions temporelles de GeoMet-Météo et GeoMet-Climat</span></h4>
+<p>Il est important de considérer les différences dans la spécification du temps entre GeoMet-Météo et GeoMet-Climat, différences issues de la nature différente des données en cause.</p>
+<p>Dans GeoMet-Climat, les intervalles temporels sont soit annuels (YYYY) ou mensuels (YYYY-MM) selon la couche interrogée. Une requête WMS GetCapabilities sur les services GeoMet-Climat indique aux usagers quelles sont les dimensions temporelles disponibles pour un couche spécifique.</p>
+<p>Par exemple, la balise <code>&lt;Dimension&gt;</code> de la couche <a href="https://geo.meteo.gc.ca/geomet-climate?lang=fr&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;Layer=CMIP5.SFCWIND.RCP26.ENS.ABS_PCTL5">Ensembles mensuels CMIP5 pour la vitesse du vent près de la surface (5e percentile)</a> indique :</p>
+<pre><code class="language-xml">&lt;Dimension name=&quot;time&quot; units=&quot;ISO8601&quot; default=&quot;2100-12&quot; nearestValue=&quot;0&quot;&gt;2006-01/2100-12/P1M&lt;/Dimension&gt;
+</code></pre>
+<p>Un requête WMS GetMap valide avec le paramètre <code>TIME</code> doit ainsi utiliser une valeur entre <code>2006-01</code> et <code>2100-12</code>.</p>
+<p></br></br></p>
+<h2 id="specification-des-styles">Spécification des styles</h2>
+<p>La représentation graphique de l'information et des données peut avoir un impact significatif sur la manière que les données sont interprétées par les usagers. GeoMet du SMC offre fréquemment plusieurs représentations graphiques possibles pour une même couche. L'usager doit identifier le style à utiliser qui est le plus approprié pour le cas d'utilisation.</p>
+<p>L'utilisateur utilise le paramètre <code>STYLE</code> dans les requêtes WMS GetMap et WMS GetFeatureInfo afin de spécifier la représentation graphique désirée. Les styles disponibles pour une couche sont énumérés dans le document WMS GetCapabilities.</p>
+<p>Voici deux exemples de requêtes WMS GetMap pour la couche de quantité de précipitation (RDPA.24F_PR) de l'Analyse régional déterministe de précipitation (ARDP) avec des paramètres <code>STYLE</code> différents.</p>
+<p>Couche RDPA.24F_PR avec le style CAPA24-LINEAR :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=RDPA.24F_PR
+&amp;STYLES=CAPA24-LINEAR&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=600&amp;HEIGHT=400&amp;FORMAT=image/png
+</code></pre>
+<p><img alt="Couche RDPA.24F_PR avec le style CAPA24-LINEAR" src="https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=RDPA.24F_PR&amp;STYLES=CAPA24-LINEAR&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=600&amp;HEIGHT=400&amp;FORMAT=image/png" /></p>
+<p>Couche RDPA.24F_PR avec le style RDPA-WXO :</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=RDPA.24F_PR
+&amp;STYLES=RDPA-WXO&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=600&amp;HEIGHT=400&amp;FORMAT=image/png
+</code></pre>
+<p><img alt="Couche RDPA.24F_PR avec le style RDPA-WXO" src="https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=RDPA.24F_PR&amp;STYLES=RDPA-WXO&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=600&amp;HEIGHT=400&amp;FORMAT=image/png" /></p>
+<p>Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard <a href="https://www.opengeospatial.org/standards/sld">OGC Styled Layer Descriptor (SLD)</a>, soit en pointant vers un document SLD externe avec le paramètre <code>SLD</code> soit en spécifiant le contenu SLD directement dans le paramètre <code>SLD_BODY</code>. Notez que le contenu de <code>SLD_BODY</code> doit être entièrement encodé tel un URL HTTP. Aussi, pour <code>SLD_BODY</code>, la valeur du paramètre LAYER dans la requête WMS GetMap et la valeur de se:Name (ou se%3AName lorsqu'il est encodé) dans <code>SLD_BODY</code> doivent être différentes pour que la requête fonctionne correctement.</p>
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=GDPS.ETA_NT
+&amp;STYLES=&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=1800&amp;HEIGHT=1200&amp;FORMAT=image/png
+&amp;SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3C
+StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net
+%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22
+http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
+2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld
+%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3C
+NamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
+%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3A
+RasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3C
+ColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3C
+ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E
+%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E
+%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A
+</code></pre>
+<p><img alt="Couche du SGPD avec un style SLD provenant de l'usager" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;LAYERS=GDPS.ETA_NT&amp;STYLES=&amp;CRS=EPSG:4326&amp;BBOX=35,-150,85,-45&amp;WIDTH=1800&amp;HEIGHT=1200&amp;FORMAT=image/png&amp;SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

@@ -24,6 +24,7 @@ a {
     font-size: 0.95em;
     font-weight: bold;
 }
+
 .navbar-dark {
     background-color:#4e64a6;
     border-color: none;
@@ -42,17 +43,13 @@ a {
 }
 
 .badge-info {
+    font-size: 100%;
     background-color:#70959c;
 }
 .badge-light {
     color: #22211f;
     background-color: #eaecef;
     padding-left: 0px;
-}
-
-.badge-secondary {
-    color: #1b818f;
-    background-color: white;
 }
 
 .bg-light {
@@ -78,3 +75,4 @@ a {
 #controller {
     background-color: #fafafa!important;
 }
+
