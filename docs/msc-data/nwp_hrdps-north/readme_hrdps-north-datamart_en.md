@@ -121,7 +121,7 @@ Examples of file names:
 
 ## Variable list
 
-This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing.
+This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing (only available on the rotated lat-lon grid)
 
 <table id="csv-table" class="display"></table>
 
