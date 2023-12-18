@@ -34,7 +34,7 @@ The Meteorological Service of Canada provides up-to-date information on past, pr
 
 MSC open data can be visualized in desktop software by either (A) connecting to [MSC GeoMet](../msc-geomet/readme_en.md) Web Map Service (WMS) web services or (B) by downloading the raw data from [MSC Datamart](../msc-datamart/readme_en.md) or MSC GeoMet Web Coverage Service (WCS) and OGC API- Features (WFS 3) web services and loading the raw data in the application.
 
-MSC open data can be interactively visualized in software that supports the Open Geospatial Consortium (OGC) Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org) and in Esri ArcGIS software. Instructions for adding MSC GeoMet WMS services to [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) and [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) are available. Desktop software may allow users to change the layer colors (WMS styles) and animate the layers amongst the available timesteps. Details on the available WMS parameters are available in the [web services section](../msc-geomet/web-services_en.md). For downloading raw data, refer to the [How to access raw data](#how-to-access-raw-data) section.
+MSC open data can be interactively visualized in software that supports the Open Geospatial Consortium (OGC) Web Map Service (WMS) standard such as the free and open source software [QGIS](https://qgis.org) and in Esri ArcGIS software. Instructions for adding MSC GeoMet WMS services to [QGIS](https://docs.qgis.org/3.4/en/docs/training_manual/online_resources/wms.html) and [ArcGIS](https://desktop.arcgis.com/en/arcmap/latest/map/web-maps-and-services/adding-wms-services.htm) are available. Desktop software may allow users to change the layer colors (WMS styles) and animate the layers amongst the available timesteps. Details on the available WMS parameters are available in the [web services section](../msc-geomet/wms_en.md). For downloading raw data, refer to the [How to access raw data](#how-to-access-raw-data) section.
 
 The following tutorials are available for the QGIS desktop software: [add, query and animate WMS layers](tutorial_WMS_QGIS_en.md), [add and query OGC API Features layers](tutorial_OAFeat_QGIS_en.md) and [add raw data](tutorial_raw-data_QGIS_en.md). The following image presents the root of the GeoMet-Weather layer tree in QGIS:
 
@@ -76,7 +76,7 @@ MSC Geomet Web Map Services (WMS) can also be integrated into mobile application
 
 ![Example of radar imagery in WeatherCan](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/WeatherCan_MSC-GeoMet_weather-radar_20200207_en.jpg)
 
-For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WFS, WCS) refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
+For additional information regarding the capabilities and parameters for MSC GeoMet web services (ie. WMS, WCS) refer to the [technical MSC GeoMet web services documentation](../../msc-geomet/readme_en/#available-ogc-standards).
 
 ### On-demand images
 
@@ -119,13 +119,13 @@ The examples above define a handful of parameters and send a GetMap request to M
 * **LAYERS** - The name of the layer used to create the image. The list and name of the available layers can be retrieved using a WMS GetCapabilities request. For best performances, it is recommended to specify one layer per WMS GetMap request
 * **FORMAT** - The format of the image returned by the WMS GetMap request. In both cases case, the returned image will be in the PNG format
 
-For further information regarding these and other WMS GetMap parameters, refer to the [technical MSC GeoMet web services documentation](../msc-geomet/web-services_en.md).
+For further information regarding these and other WMS GetMap parameters, refer to the [technical MSC GeoMet web services documentation](../msc-geomet/wms_en.md).
 
 ## How to access raw data
 
 ### Raw data web services
 
-Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/web-services_en.md) section of the technical documentation.
+Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../../msc-geomet/readme_en.md#available-ogc-standards) section of the technical documentation.
 
 The following use case examples are provided:
 
@@ -134,7 +134,7 @@ The following use case examples are provided:
 * [Cathy: tracking water levels at hydrometric stations](../use-case_oafeat/use-case_oafeat-script_en/):
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps
 
-Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/web-services_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/wms_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
 Raw data for vector data can be retrieved with a OGC API - Features (WFS 3) request. Example of a [WFS 3 query for the Winnipeg River hydrometric station daily means](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) which returns the corresponding data as a GeoJSON file.
 

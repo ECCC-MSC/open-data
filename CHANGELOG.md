@@ -10,7 +10,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.14
 
-* date: 2023-12-
+* date: 2023-12-18
 * announcements:
     * Not announced
 * new content:
@@ -18,8 +18,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add HRDPS-North main page
     * HRDPS updated changelog (WEonG 2.2.0)
     * Add CAPS in retired pages
+    * Add OGC-API technical documentation
+    * Separate WMS/WCS technical documentation into their own individual papers
 * improvements:
-    * None
+    * Reorganize menu bar for easier navigation
+    * Move tutorials to a new dedicated tutorials page
+    * Re-design MSC GeoMet page for better readability and navigation
 * bug fixes:
 	* Fix typos
 

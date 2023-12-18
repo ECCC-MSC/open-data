@@ -171,7 +171,7 @@ See the live example below:
 
 ## Building interactive popups with OpenLayers
 
-Let's now query a WMS layer to access the underlying data via a popup. Web Map Services (WMS) allow a user to make a [GetFeatureInfo](../msc-geomet/web-services_en.md#wms-getfeatureinfo) request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
+Let's now query a WMS layer to access the underlying data via a popup. Web Map Services (WMS) allow a user to make a [GetFeatureInfo](../msc-geomet/wms_en.md#wms-getfeatureinfo) request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the [popup](https://openlayers.org/en/latest/examples/popup.html?q=popup) and [WMS GetFeatureInfo](https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup) examples provided by OpenLayers.
 
 ### HTML
 

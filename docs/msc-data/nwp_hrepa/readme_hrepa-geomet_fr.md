@@ -11,7 +11,7 @@ GeoMet du SMC donne accès à plusieurs couches de Système global de l'Analyse 
 
 ## Accès aux services web géospatiaux
 
-Les couches du AHREP sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](../../msc-geomet/readme_fr.md)
+Les couches du AHREP sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](../../msc-geomet/readme_fr.md#standards-disponibles)
 
 Exemple de carte interactive présentant la couche Precip-Accum06h-Pct25 du AHREP provenant de GeoMet du SMC :
 
@@ -36,7 +36,7 @@ Exemple de carte interactive présentant la couche Precip-Accum06h-Pct25 du AHRE
 
 ## Utilisation
 
-La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/web-services_fr.md) pour de l'information détaillée.
+La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels](../../usage/tutorials_fr.md) et à [la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/readme_fr.md#standards-disponibles) pour de l'information détaillée.
 
 ### Couches disponibles
 
@@ -58,16 +58,16 @@ Récupération de la liste des derniers pas de temps disponibles :
 
 * Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`).
     - Exemple pour la couche 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc - 25eme percentile de précipitations issue de l'ensemble à 25 membres [mm] : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc
-* Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps).
+* Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps).
 
 Styles WMS :
 
 * En plus du style WMS par défaut, plusieurs styles WMS alternatifs avec des échelles de couleurs différentes sont disponibles. La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities
-* Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard *Styled Layer Descriptor* (SLD). Veuillez vous référer à la [documentation technique sur le SLD](../../../msc-geomet/web-services_fr#specification-des-styles).
+* Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard *Styled Layer Descriptor* (SLD). Veuillez vous référer à la [documentation technique sur le SLD](../../../msc-geomet/wms_fr#specification-des-styles).
 
 Légendes :
 
-* Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/web-services_fr#wms-getlegendgraphic).
+* Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic).
 * Exemple d'une requête pour récupérer une légende : 
 
 
