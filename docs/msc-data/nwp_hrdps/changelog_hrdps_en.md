@@ -6,6 +6,24 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday December 19, 2023
+
+### Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0
+
+On Tuesday, December 12, 2023, as of the 1200 UTC run, the Canadian Meteorological Centre (CMC) has updated the weather elements on the grid (WEonG) of the High Resolution Deterministic Prediction System (HRDPS) to version 2.2.0.
+
+Summary of the changes included in this update:
+
+* Interpolate to the grid the statistically corrected values of surface temperatures at points, supplied by UMOS using the MIDAS interpolation tool
+* Production of integrated concepts over three-hour periods 
+* Addition of significant precipitation type
+* Modifications to the snow squall detection probability algorithm
+* Activation of the "Garry Morning Patch" to prolong the presence of morning radiation fog until the solar angle reaches a specific threshold
+
+The official note announcing the implementation of these changes is available [at this link](http://dd.weather.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_XXXXXX___XXXXX).
+
+A technical note on this subject is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_weong-hrdps-220_e.pdf).
+
 ## Thursday September 14, 2023
 
 ### Addition of commercial GNSS-RO observations from PlanetIQ in the HRDPS
