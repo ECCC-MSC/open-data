@@ -111,4 +111,4 @@ The MSC AniMet source code is publicly available on GitHub: [https://github.com/
 
 ## Support
 
-MSC AniMet is a MSC Open Data demonstration tool and is not operationally supported. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
+MSC AniMet is a MSC Open Data demonstration tool. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
