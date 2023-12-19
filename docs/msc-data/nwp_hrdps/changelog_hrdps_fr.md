@@ -20,7 +20,7 @@ Résumé des modifications que comporte cette mise à jour :
 * Modifications de l'algorithme de probabilité de détection des bourrasques de neige
 * Activation du “Garry Morning Patch“ pour prolonger la présence du brouillard de rayonnement matinal jusqu'à ce que l'angle solaire atteigne un seuil spécifique
 
-La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_XXXXX___XXXXX).
+La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_191614___49612).
 
 Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_weong-hrdps-220_f.pdf).
 
