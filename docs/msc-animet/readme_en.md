@@ -40,7 +40,6 @@ Layers:
 * Browse the layer tree to find the desired layer
 * Use the search box to filter available layers
 * Click on the `+` sign to add a layer to the map
-* Tip: click on the panel name to expand or collapse the layer list
 
 Overlays:
 
@@ -63,6 +62,7 @@ Layers:
   * A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range
 
 Time:
+
 * The current time displayed on the map is displayed above the temporal controller.
 * The start and end of the animation can be modified via the sliders on the left and right of the temporal controller.
 * Playback controls allow for playing, stopping, and moving between time steps.
@@ -76,7 +76,7 @@ Map:
 
 * Zoom and pan the map to your area of interest
 * Resize the map and the animation with the handle at the bottom right corner of the map
-* Rotate the map by pressing the _alt-shift_ keys and dragging on the map
+* Rotate the map by pressing the _alt-shift_ keys and dragging on the map. Note that animations cannot be generated when the map is rotated.
 * Select which legends to display via the `LEGENDS` overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation.
 
 ## 3 - Configure the animation
