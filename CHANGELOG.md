@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.15
+
+* date: 2023-12-19
+* announcements:
+    * Not announced
+* new content:
+    * Add HRDPS WEonG GENOT link in the changelog
+* improvements:
+    * None
+* bug fixes:
+    * Fix HRDPS-North domain images
+
 ## 2.5.14
 
 * date: 2023-12-18
