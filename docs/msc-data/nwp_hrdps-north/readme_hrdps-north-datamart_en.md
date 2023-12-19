@@ -36,7 +36,7 @@ Note: Some weather elements on the grid algorithms ("WEonG") require variable va
 
 * __Polar stereographic grid__
 
-![HRDPS Northern Domain PS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grillePS_hrdps-north.png)
+![HRDPS Northern Domain PS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png)
 
 Values given to polar stereographic grid parameters at 2.5km resolution:
 
@@ -51,7 +51,7 @@ Values given to polar stereographic grid parameters at 2.5km resolution:
 
 * __Rotated lat-lon grid__
 
-![Rotated lat-lon grid image of HRDPS's northern domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grilleRLatLon_hrdps-north.png)
+![Rotated lat-lon grid image of HRDPS's northern domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png)
 
 Values given to rotated lat-lon grid parameters at 3km resolution:
 

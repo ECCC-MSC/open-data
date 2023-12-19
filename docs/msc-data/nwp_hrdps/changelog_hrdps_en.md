@@ -20,7 +20,7 @@ Summary of the changes included in this update:
 * Modifications to the snow squall detection probability algorithm
 * Activation of the "Garry Morning Patch" to prolong the presence of morning radiation fog until the solar angle reaches a specific threshold
 
-The official note announcing the implementation of these changes is available [at this link](http://dd.weather.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_XXXXXX___XXXXX).
+The official note announcing the implementation of these changes is available [at this link](https://dd.weather.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_191614___49612).
 
 A technical note on this subject is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_weong-hrdps-220_e.pdf).
 

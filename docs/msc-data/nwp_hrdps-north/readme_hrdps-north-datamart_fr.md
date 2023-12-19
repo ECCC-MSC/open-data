@@ -36,7 +36,7 @@ Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont beso
 
 * __Grille polaire stéréographique__
 
-![Image de la grille PS du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grillePS_hrdps-north.png)
+![Image de la grille PS du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png)
 
 Valeurs données aux paramètres de la grille polaire stéréographique à 2.5km de résolution:
 
@@ -51,7 +51,7 @@ h| ni | 1465 |
 
 * __Grille lat-lon tournée__
 
-![Image de la grille lat-lon tournée du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grilleRLatLon_hrdps-north.png)
+![Image de la grille lat-lon tournée du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png)
 
 Valeurs données aux paramètres de la grille lat-lon tournée à 3km de résolution:
 
