@@ -4,10 +4,7 @@
 
 [TdM](../readme_fr.md) > Données du SMC
 
-<<<<<<< HEAD
-=======
 
->>>>>>> geomet public reorganization step 2 with navigators and available data changes
 # Données ouvertes du Service météorologique du Canada
 
 Le Service météorologique du Canada (SMC) fournit des renseignements à jour sur les conditions météorologiques, le climat, l'eau et l'environnement passés, présents et futurs au Canada et dans le monde.
