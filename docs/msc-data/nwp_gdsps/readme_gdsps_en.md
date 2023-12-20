@@ -16,6 +16,7 @@ During the post-processing phase, storm surge elevation is derived from total wa
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
+* [Data available via the GeoMet-Weather geospatial web services](readme_gdsps-geomet_en.md)
 * [NetCDF data available on the MSC Datamart](readme_gdsps-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.

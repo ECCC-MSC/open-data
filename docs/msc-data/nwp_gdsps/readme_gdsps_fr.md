@@ -16,6 +16,7 @@ En post-traitement, le niveau d'eau associé à l'onde de tempête est dérivé 
 
 Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdsps-geomet_fr.md)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_gdsps-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
