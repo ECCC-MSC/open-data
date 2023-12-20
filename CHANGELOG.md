@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * None
 * bug fixes:
+    * Fix typos in dates of HRDPS changelog
     * Fix broken tutorial links in new tutorials page
 
 ## 2.5.15

@@ -6,7 +6,7 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
-## Tuesday December 19, 2023
+## Tuesday December 12, 2023
 
 ### Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0
 
