@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
-## Le mardi 19 décembre 2023
+## Le mardi 12 décembre 2023
 
 ### Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien
 
-Le mardi 19 décembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) a mis à jour les éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) à la version 2.2.0.
+Le mardi 12 décembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) a mis à jour les éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) à la version 2.2.0.
 
 Résumé des modifications que comporte cette mise à jour :
 
