@@ -6,7 +6,7 @@
 
 # MSC AniMet
 
-MSC AniMet is a simple tool enabling users to interact with MSC Open Data weather data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink.
+MSC AniMet is a simple tool enabling users to interact with MSC Open Data weather, climate, water and environmental data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink.
 
 MSC AniMet can be used to showcase a diversity of weather events such as storms, heat waves, hurricane trajectories, air quality events, extreme wind gusts, and much more.
 
