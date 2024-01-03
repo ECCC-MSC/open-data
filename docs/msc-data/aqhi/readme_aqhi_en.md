@@ -15,6 +15,7 @@ The formulation of the AQHI may change over time to reflect new understanding as
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
+* [Data available via the GeoMet-Weather geospatial web services](readme_aqhi-geomet_en.md)
 * [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/collections):
     * [AQHI - Observations](https://api.weather.gc.ca/collections/aqhi-observations-realtime)
     * [AQHI - Forecasts](https://api.weather.gc.ca/collections/aqhi-forecasts-realtime)

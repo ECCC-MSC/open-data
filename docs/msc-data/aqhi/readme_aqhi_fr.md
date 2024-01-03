@@ -15,6 +15,7 @@ Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouve
 
 Ces données sont respectivement disponibles sur les API / services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_aqhi-geomet_fr.md)
 * [Données disponibles sur les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections) :
     * [CAS - Observations](https://api.meteo.gc.ca/collections/aqhi-observations-realtime)
     * [CAS - Prévisions](https://api.meteo.gc.ca/collections/aqhi-forecasts-realtime)
