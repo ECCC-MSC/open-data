@@ -18,6 +18,7 @@ Les données du SRPEV dont disponibles sur le domaine des Grands Lacs.
 
 Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_rewps-geomet_fr.md)
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_rewps-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
