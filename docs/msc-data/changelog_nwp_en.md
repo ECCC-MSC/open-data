@@ -8,7 +8,7 @@
 
 ## 2023
 
-### December 19, 2023
+### December 12, 2023
 
 * [Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-december-19-2023)
 
