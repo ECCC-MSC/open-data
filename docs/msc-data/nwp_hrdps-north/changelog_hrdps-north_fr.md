@@ -1,4 +1,4 @@
-[In English](changelog_hrdps-nord_en.md)
+[In English](changelog_hrdps-north_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
