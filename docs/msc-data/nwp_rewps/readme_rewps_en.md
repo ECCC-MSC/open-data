@@ -19,6 +19,7 @@ The REWPS data are available on the Great Lakes domain.
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
+* [Data available via the GeoMet-Weather geospatial web services](readme_rewps-geomet_en.md)
 * [GRIB2 data available on the MSC Datamart](readme_rewps-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
