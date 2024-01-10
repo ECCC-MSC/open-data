@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > Changements au SHRPD Nord
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD-Nord](readme_hrdps-north_fr.md) > Changements au SHRPD Nord
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-N)
 
