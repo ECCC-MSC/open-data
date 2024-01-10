@@ -34,7 +34,7 @@
 
 ### 30 août 2023
 
-* [Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-30-août-2023)
+* [Mise à jour à la version 2.0.0 du Système à haute résolution de prévision déterministe pour le nord (SHRPD-N) au Centre météorologique canadien](nwp_hrdps-north/changelog_hrdps-north_fr.md#le-mercredi-30-août-2023)
 
 ### 3 août 2023
 
