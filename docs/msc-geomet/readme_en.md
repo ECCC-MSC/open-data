@@ -14,7 +14,7 @@ The MSC GeoMet platform provides public access to the Meteorological Service of 
 
 Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services.
 
-The following Open Geospatial Consortium [standards](https://www.ogc.org/standards) and [community standards](https://www.ogc.org/standards/community/) are suppported:
+The following Open Geospatial Consortium [standards](https://www.ogc.org/standards) and [community standards](https://www.ogc.org/standards/community/) are supported:
 
 *   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
 *   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
