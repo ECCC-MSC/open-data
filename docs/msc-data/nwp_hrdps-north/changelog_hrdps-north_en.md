@@ -1,8 +1,8 @@
-[En français](changelog_hrdps-nord_fr.md)
+[En français](changelog_hrdps-north_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS-North Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS-North](readme_hrdps-north_en.md) > HRDPS-North Changelog
 
 # Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-N)
 
