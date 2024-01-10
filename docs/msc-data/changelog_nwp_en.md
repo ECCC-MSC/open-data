@@ -10,7 +10,7 @@
 
 ### December 12, 2023
 
-* [Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-december-19-2023)
+* [Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-december-12-2023)
 
 ### November 28, 2023
 
@@ -34,7 +34,7 @@
 
 ### August 30, 2023
 
-* [Upgrade to Version 2.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-august-30-2023)
+* [Upgrade to Version 2.0.0 of the High Resolution Deterministic Prediction System North (HRDPS-N) at the Canadian Meteorological Centre](nwp_hrdps-north/changelog_hrdps-north_en.md#wednesday-august-30-2023)
 
 ### August 3, 2023
 
