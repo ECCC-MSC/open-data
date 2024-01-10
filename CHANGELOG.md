@@ -16,6 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add GDSPS GeoMet subpage documentation with interactive map
     * Add REWPS GeoMet subpage documentation with interactive map
+    * Add CanSIPS GeoMet subpage documentation with interactive map
 * improvements:
     * None
 * bug fixes:

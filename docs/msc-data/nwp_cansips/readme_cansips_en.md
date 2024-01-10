@@ -14,7 +14,7 @@ The Canadian Seasonal to Inter-annual Prediction System (CanSIPS) carries out ph
 
 This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) web service as well as [MSC Datamart](../../msc-datamart/readme_en.md) data server service:
 
-* [Data available on the GeoMet-Weather geospatial web services](../../msc-geomet/readme_en.md)
+* [Data available via the GeoMet-Weather geospatial web services](readme_cansips-geomet_en.md)
 * [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
     * [CanSIPS - members at 250 km](https://api.weather.gc.ca/collections/weather:cansips:250km:forecast:members)
 * [Members and products data in GRIB2 available on the MSC Datamart](readme_cansips-datamart_en.md)
