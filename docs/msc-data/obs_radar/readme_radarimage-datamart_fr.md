@@ -8,10 +8,6 @@
 
 Cette page décrit les images [radar](readme_radar_fr.md) en format GIF disponibles sur le Datamart du SMC.
 
-Ces images servent à alimenter le site web des prévisions publiques :
-
-[https://meteo.gc.ca/radar/index_f.html](https://meteo.gc.ca/radar/index_f.html)
-
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
@@ -25,127 +21,100 @@ Les images radar se trouvent à l'adresse :
 où :
 
 * PRODUIT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
-* FORMAT  = [GIF] (d'autres formats peuvent apparaître dans le futur)
-* STATION_RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous).
+* FORMAT  = [GIF] 
+* STATION_RADAR   = [CASBV, CASRA, ...]  code de 5 lettres du radar, en lettres majuscules. 
 
 Un historique de 48 heures des données est conservé dans chaque répertoire.
 
 __Notes__: 
 
-* Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et changement climatique Canada.
-* Le produit d'estimation quantitative des précipitations à double polarisation (DPQPE) est disponible uniquement pour les radars de bande S. Il s'agit d'une représentation bidimensionnelle du taux de précipitation estimé par le plus bas du balayage du radar (angle d’élévation de 0.4 degré pour la majorité des radars en bande S). Ainsi, le taux de précipitation estimé est aussi proche que possible de la surface de la terre. Le produit DPQPE est basé, entre autres, sur une série d'étapes de traitement polarimétrique (contrôle qualité) pour éliminer les artefacts non météorologiques des données brutes (balayages volumétriques). Il est fourni en mm/h pour la pluie et cm/h pour la neige. Ce produit est utilisé dans notre composite radar nord-américaine haute résolution disponible dans [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html), l'application mobile officielle d'ECCC.
+* Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et Changement climatique Canada.
+* Le produit d'estimation quantitative des précipitations à double polarisation (DPQPE) est une représentation bidimensionnelle du taux de précipitation estimé par le plus bas du balayage du radar (angle d’élévation de 0.4 degré pour la majorité des radars en bande S). Ainsi, le taux de précipitation estimé est aussi proche que possible de la surface de la terre. Le produit DPQPE est basé, entre autres, sur une série d'étapes de traitement polarimétrique (contrôle qualité) pour éliminer les artefacts non météorologiques des données brutes (balayages volumétriques). Il est fourni en mm/h pour la pluie et cm/h pour la neige. Ce produit est utilisé dans notre composite radar nord-américaine haute résolution disponible dans [MétéoCan](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html), l'application mobile officielle d'ECCC.
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
-Les noms de fichiers ont le format suivant, avec XXX, code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres.
+Les noms de fichiers ont le format suivant, avec XXXXX, code de 5 lettres du radar, en lettres majuscules.
 
 * __PRECIPET__
      
-Des images pour des composites régionales (5 régions du Canada) et pour les radars individuels sont disponibles. Pour chaque image, deux échelles d'intensité sont disponibles. 
+Des images pour les composites régionales (5 régions du Canada), la composite nationale et pour les radars individuels sont disponibles. Pour chaque image, deux échelles d'intensité sont disponibles. 
 
-Composites avec une échelle d'intensité de 14 couleurs : 
+Composites régionales avec une échelle d'intensité de 14 et 8 couleurs, respectivement: 
 
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
+* YYYMMDDHHmm_YYY_PRECIPET_RAIN_[WT,A11Y].gif 
+* YYYMMDDHHmm_YYY_PRECIPET_SNOW_[WT,A11Y].gif
+
+Où YYY =[ATL, ONT, PNR, PYR, QUE]
 
 ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
 
-Composites avec une échelle d'intensité de 8 couleurs :
+Composites nationales avec une échelle d'intensité de 8 couleurs:
 
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
+* YYYMMDDHHmm_NATIONAL_PRECIPET_[RAIN,SNOW]_A11Y.gif 
  
-ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
+ex: 201409201350_NATIONAL_PRECIPET_RAIN_A11Y.gif
 
-Radar individuel avec une échelle d'intensité de 14 couleurs :
+Radars individuels avec une échelle d'intensité de 14 couleurs:
 
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXXXX_PRECIPET_[RAIN,SNOW].gif 
 
-ex: 201409201400_XFT_PRECIPET_RAIN.gif
+ex: 201409201400_CASBV_PRECIPET_RAIN.gif
 
-Radar individuel avec une échelle d'intensité de 14 couleurs :
+Radars individuels avec une échelle d'intensité de 8 couleurs :
 
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
+* YYYMMDDHHmm_XXXXX_PRECIPET_RAIN_A11Y.gif 
+* YYYMMDDHHmm_XXXXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
  
-ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
-
-* __Produits de contingence PRECIPET__ 
-
-Quand un radar canadien tombe en panne, un produit alternatif PRECIPET est disponible pour des fins de contingence. Il s'agit d'un produit composite généré à partir des radars voisins, qui peut contenir des radars américains. Il est également important de noter que pour certaines régions, les radars avoisinants peuvent ne pas couvrir tout le domaine du radar qui est en panne ou en entretien. À cet effet et pour aider l’usager à mieux identifier ces zones non-couvertes, des cercles de couleur rouge ont été ajoutés pour montrer les radars contributeurs qui ont servi à construire cette composite.
-
-Ce produit contient les lettres "COMP" dans le nom de fichier, soit :
-
-YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif
-
-ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif
-
-Cette image composite peut être différenciée de celle du radar d'origine grâce à l'inscription "Composite" dans la légende à droite de l'image. Pour savoir comment utiliser ces images composites, vous pouvez consulter la documentation en ligne:
-[https://meteo.gc.ca/radar/how-to-use_f.html#display](https://meteo.gc.ca/radar/how-to-use_f.html#display)
+ex: 201409201400_CASRA_PRECIPET_SNOW_A11Y.gif
 
 * __CAPPI__
   
 La nomenclature des fichiers CAPPI est la suivante :
 
-* YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
-* YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
+* YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW.gif
+* YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN.gif
+* YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW_A11Y.gif
+* YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN_A11Y.gif
 
-ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
+ex: 200806191550_CASFT_CAPPI_1.5_RAIN.gif
 
 * __DPQPE__
   
 La nomenclature des fichiers DPQPE est la suivante :
 
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow].gif
 
 ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
+* __Produits de contingence__ 
+
+Quand un radar canadien tombe en panne, un produit alternatif est disponible pour des fins de contingence. Il s'agit d'un produit composite généré à partir des radars voisins, qui peut contenir des radars américains. Il est également important de noter que pour certaines régions, les radars avoisinants peuvent ne pas couvrir tout le domaine du radar qui est en panne ou en entretien. À cet effet et pour aider l’usager à mieux identifier ces zones non-couvertes, des cercles de couleur rouge ont été ajoutés pour montrer les radars contributeurs qui ont servi à construire cette composite.
+
+Ces produits sont identifiés dans les noms de fichiers grâce aux mentions "COMP" pour les produits de contingence basés sur le produit PRECIPET et la mention "Contingency" pour les produits de contingence basés sur le produit DPQPE, soit respectivement:
+
+* YYYMMDDHHmm_XXXXX_COMP_PRECIPET_[RAIN,SNOW].gif; YYYMMDDHHmm_XXXXX_COMP_PRECIPET_[RAIN,SNOW]_A11Y.gif
+* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow]-Contingency.gif
+
+ex: 201511271400_CASET_COMP_PRECIPET_RAIN.gif; 20240112T1636Z_MSC_Radar-DPQPE_CASET_Snow-Contingency.gif
+
+Cette image composite peut être différenciée de celle du radar d'origine grâce à l'inscription "Composite" dans la légende à droite de l'image.
+
 * __24_HR_ACCUM__ 
 
-Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures.
+Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures. Ce produit est disponible toutes les 6 minutes pour les radars de bande S.
 
 __Basée sur le produit PRECIPET__
 
-Ce produit est disponible toutes les 10 minutes pour les radars C-Band et toutes les 6 minutes pour les radars S-Band.
-  
-* YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
+* YYYMMDDHHmm_XXXXX_24_HR_ACCUM_MM.gif
 
-ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
+ex: 200806161900_CASMR_24_HR_ACCUM_MM.gif
 
 __Basée sur le produit DPQPE__
- 
-Ce produit est disponible toutes les 6 minutes.
 
 * YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Accum24h.gif
 
 ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Accum24h.gif
-
-## Au sujet des nouveaux radars à double polarisation S-Band
-
-ECCC est en cours de remplacement de ses anciens radars C-Band avec de nouveaux radars à double polarisation S-Band. Ce projet de renouvellement des radars s'étendra sur plusieurs années et l'installation des nouveaux radars se fera progressivement(pour davantage d'information, voir la section de documentation des produits ci-dessous).
-
-Le 1er radar a déjà été installé à Radisson (Saskatchewan) et quelques produits sont déjà disponibles. Plusieurs changements affectant les produits/usagers sont planifiés dans ce projet. Ci-dessous figurent les plus importants :
-
-* Les produits actuels (PRECIPET, CAPPI, ...) restent les mêmes mais sont de meilleure qualité
-* la résolution temporelle a été augmentée et les produits sont disponibles toutes les 6 minutes au lieu de toutes les 10 minutes (impact sur les noms de fichiers)
-* L'identifiant radar (ID) de 3 lettres est remplacé par un identifiant de 5 lettres (exemple: le ID actuel du radar Radisson C-band est XRA, il est remaplcé par CASRA pour le nouveau radar)
-* D'autres nouveaux produits seront développés dans le futur et rendus disponibles à l'externe
-
-Comment va se faire la transition et quels seront les impacts sur les usagers ?
-
-* Pour une certaine période, les produits (PRECIPET, CAPPI, ...) seront générés avec le même ID de 3 lettres (mêmes noms de fichiers) et la même fréquence (aux 10 minutes). Durant cette période, les produits seront déposés dans les mêmes répertoires (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). Cela facilitera la transition.
-* En parallèle, les nouveaux produits avec le nouvel ID de 5 lettres seront disponibles aux 6 minutes dans les nouveaux répertoires respectifs (ex: https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA).
-* Les usagers seront informés lorsque les nouveaux radars seront installés et leurs produits disponibles selon le processus décrit ci-dessus.
-
-Exemple (cas du radar Radisson) :
-
-* __Produit avec l'ID de 3 lettres aux 10 minutes (temporaire)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)
-* __Produit avec l'ID de 5 lettres aux 6 minutes (permanent)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA)
 
 ## Archive des images radar
 
