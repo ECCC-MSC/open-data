@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme radar odimh5 datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#volume-scans-des-donnees-radar-en-bande-s" class="nav-link">Volume scans des données radar en Bande S</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="readme_radarodimh5-datamart_en.md">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_radar_fr/">Données et produits radar</a> &gt; Volume scans ODIM_H5 sur le Datamart du SMC</p>
+<h1 id="volume-scans-des-donnees-radar-en-bande-s">Volume scans des données radar en Bande S</h1>
+<p>Les fichiers bruts des radars en bande S sont distribués au format Leonardo Rainbow version 5 (RB5). La stratégie de balayage du radar en bande S est basée sur le "volume polaire de six minutes" (PVOL6). L'acronyme PVOL trouve son origine dans la norme ODIM actuellement utilisée en Europe et en Australie. Le PVOL6S se compose de 17 balayages qui sont acquis séquentiellement, dans l'ordre décroissant (haut vers le bas), de sorte que le balayage le plus bas est collecté le plus près de l'heure nominale du volume. Tous les balayages sont Doppler et à double polarisation. Les angles d'élévation sont compris entre 0.4° et 24.4° et la largeur du faisceau radar est de 0.9°. Les 6 balayages les plus bas sont à double fréquence de répétition d'impulsions (PRF) (600/450 Hz), ont une résolution azimutale de 0.5° et un pas de portée de 0.5 km, et s'étendent jusqu'à une portée de 240 km. Les autres élévations sont à PRF unique (600-1200 Hz) avec une résolution azimutale de 1° et un pas de portée de 0.5 km. La portée maximale de ces élévations est configurée pour permettre un échantillonnage vertical jusqu'à 20 km d'altitude. Le PVOL6S est collecté régulièrement toutes les six minutes, à partir de la minute 0.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier hdf5.</p>
+<p>Les données sont disponibles à l'adresse :</p>
+<p><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/radar/volume-scans/{RADAR_ID}</a></p>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour</li>
+<li><strong>RADAR_ID</strong> : Identifiant du radar, code de 5 lettres en lettres majuscules (voir la liste ci-dessous).</li>
+</ul>
+<p>Un historique de plusieurs semaines est conservé dans ce répertoire.</p>
+<p><strong>Notes</strong>: </p>
+<ul>
+<li>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">liste des sites radar</a> est disponible. Cette liste sera mise à jour régulièrement.</li>
+</ul>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>Les fichiers suivent la nomenclature suivante :</p>
+<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-VolumeScans_{RADAR_ID}.hdf5</code></p>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour de l'émission des données</li>
+<li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
+<li><strong>HHmm</strong> : Heure et  minute à laquelle les données sont émises</li>
+<li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>Radar-VolumeScans</strong> : Chaîne de caractères constante indiquant que les données contiennent des volume scans</li>
+<li><strong>RADAR_ID</strong> : Code de 5 lettres majuscules représentant l'identifiant du radar</li>
+<li><strong>hdf5</strong> : Chaîne de caractères constante indiquant que le format est HDF5</li>
+</ul>
+<p>Exemple:</p>
+<ul>
+<li>20230511T0036Z_MSC_Radar-VolumeScans_CASBV.hdf5</li>
+</ul>
+<h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
+<p>Les volumes scans, également appelés données brutes, sont générés dans le format natif RAINBOW de Leonardo (*). Au cours d'un cycle de 6 minutes, nous distribuons 10 fichiers de PVOL6S.vol pour les fichiers de volume complet soit 17 scans pour chacun des 10 paramètres suivants:</p>
+<ul>
+<li>dBuZ: Facteur de réflectivité radar à polarisation horizontale non corrigé</li>
+<li>dBZ: Facteur de réflectivité du radar à polarisation horizontale corrigé</li>
+<li>V: Vitesse radiale du vent à polarisation horizontale</li>
+<li>W: Largeur spectrale polarisée horizontalement</li>
+<li>uPhiDP: Phase différentielle HV</li>
+<li>PHIDP: Phase différentielle corrigée HV</li>
+<li>ZDR: Réflectivité différentielle logarithmique (H/V)</li>
+<li>RhoHV: Coefficient de corrélation entre H et V</li>
+<li>SQI: Indice de qualité du signal H</li>
+<li>KDP: Phase différentielle spécifique</li>
+</ul>
+<p>NOTE: L'en-tête GTS (<em>Global Telecommunication System</em>) contient les informations suivantes :  </p>
+<pre><code>SDCN01 CWAO
+ODIM_H5 &lt;Radar_ID&gt; &lt;DDHHmm&gt;
+</code></pre>
+<p>La deuxième ligne contient des informations spécifiques pour chaque radar telles que : <code>product_type</code>, <code>radar_id</code> et <code>daytime</code>.</p>
+<p>(*) Format HDF5 : https://support.hdfgroup.org/HDF5/users5.html</p>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">merci de nous contacter</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

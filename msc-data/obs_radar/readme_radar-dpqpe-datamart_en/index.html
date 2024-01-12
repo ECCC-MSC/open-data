@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme radar dpqpe datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#radar-imagery" class="nav-link">Radar imagery</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#about-the-new-dual-pol-s-band-radars" class="nav-link">About the new dual-pol S-Band radars</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#historical-radar-images" class="nav-link">Historical radar images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_radarimage-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_radar_en/">Radar imagery</a> &gt; Radar imagery on MSC Datamart</p>
+<h1 id="radar-imagery">Radar imagery</h1>
+<p>This page describes the <a href="../readme_radar_en/">weather radar</a> imagery available in GIF format via the MSC Datamart.</p>
+<p>These images are used to feed the weather radar page on ECCC's <a href="https://meteo.gc.ca/radar/index_e.html">public forecast website</a>.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GIF file.</p>
+<p>The radar images are available at the following address:</p>
+<p><a href="https://dd.weather.gc.ca/radar/">https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}</a></p>
+<p>where:</p>
+<ul>
+<li>PRODUCT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]</li>
+<li>FORMAT = [GIF] (other formats may appear in the future)</li>
+<li>STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).</li>
+</ul>
+<p>The past 48 hours of data is available in each directory.</p>
+<p><strong>Notes</strong>: </p>
+<ul>
+<li>Details about these products can be found on the Environment and Climate Change Canada's <a href="https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&amp;n=2B931828-1">About radar</a> page.</li>
+<li>The Dual Polarization Quantitative Precipitation Estimation (DPQPE) product is only available for S-band radars. It is a two-dimensional representation of radar estimated precipitation rate at the lowest sweep of the radar scan (0.4 degrees elevation for the majority of the S-Band radars). So, the estimated precipitation rate is as close as possible to the earth’s surface. DPQPE product is based, among others, on a series of dual-pol processing steps (quality control) to remove, non-weather artifacts from the raw data (volume scans). It is provided in mm/hr for rainfall rates and cm/hr for snowfall rates. This product is used in our high-resolution North American radar composite available in <a href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html">WeatherCan</a>, the official mobile application of ECCC.</li>
+<li>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">list of radar sites</a> is available. This list will be updated regularly.</li>
+</ul>
+<h2 id="filename-nomenclature">Filename nomenclature</h2>
+<p>NOTE: ALL HOURS ARE IN UTC.</p>
+<p>The files have the following nomenclature, with XXX, a 3 letter radar identifier in capital letters. For the new S-band radars, a 5-letter code is used.</p>
+<ul>
+<li><strong>PRECIPET</strong></li>
+</ul>
+<p>Images for regional composites (5 regions of Canada) and individual radar are available. Two intensities scale (8 and 14 colors) are also available for each image. </p>
+<p>Composites with 14 colors intensity scale:</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif </li>
+<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif </li>
+</ul>
+<p>ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif</p>
+<p>Composites with 8 colors intensity scale:</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif </li>
+<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif </li>
+</ul>
+<p>ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif</p>
+<p>Individual radar with 14 colors intensity scale:</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif </li>
+<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)</li>
+</ul>
+<p>ex: 201409201400_XFT_PRECIPET_RAIN.gif</p>
+<p>Individual radar with 8 colors intensity scale:</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif </li>
+<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)</li>
+</ul>
+<p>ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif</p>
+<ul>
+<li><strong>PRECIPET contingency products</strong></li>
+</ul>
+<p>When a Canadian radar site is down, an alternate PRECIPET product is made available for contingency purposes. It is a composite product generated from the available neighbouring radars, which in some cases may include US radars. It is also important to note that for some regions, neighbouring radars may not cover the entire domain of the radar out of service. 
+To this end and to help the user identify these non-covered areas, red circles have been added to show the contributing radars in the composite.</p>
+<p>This product contains the string "COMP" in its file name, as:</p>
+<p>YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif</p>
+<p>ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif</p>
+<p>This composite image can be differentiated from the original radar image, by the inscription "Composite" in the legend on the right of the image.</p>
+<p>To learn more about how to use the composite images, you can read the documentation on line:</p>
+<p><a href="https://weather.gc.ca/radar/how-to-use_e.html#display">https://weather.gc.ca/radar/how-to-use_e.html#display</a></p>
+<ul>
+<li><strong>CAPPI</strong></li>
+</ul>
+<p>The CAPPI files have the following nomenclature:</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif</li>
+<li>YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif</li>
+</ul>
+<p>ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif</p>
+<ul>
+<li><strong>DPQPE</strong></li>
+</ul>
+<p>The DPQPE files have the following nomenclature:</p>
+<ul>
+<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif</li>
+<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif</li>
+</ul>
+<p>ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif</p>
+<ul>
+<li><strong>24_HR_ACCUM</strong> </li>
+</ul>
+<p>Shows the rain accumulation, in mm, over the last 24hr period. </p>
+<p><strong>Based on PRECIPET</strong></p>
+<p>The product is available for the last 48 hr, every 10 minutes for C-Band radars and every 6 minutes for S-Band radars.</p>
+<ul>
+<li>YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif</li>
+</ul>
+<p>ex: 200806161900_WBI_24_HR_ACCUM_MM.gif</p>
+<p><strong>Based on DPQPE</strong></p>
+<p>The product is available every 6 minutes, and for the last 48 hr.</p>
+<ul>
+<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-XXXXX_Accum24h.gif</li>
+</ul>
+<p>ex: 20201106T1050Z_MSC_Radar-DPQPE-CASBE_Accum24h.gif</p>
+<h2 id="about-the-new-dual-pol-s-band-radars">About the new dual-pol S-Band radars</h2>
+<p>ECCC is in the process of replacing its old C-Band radars with new dual-pol S-Band radars. This radar renewal project extends over several years and the installation of radar is done progressively (For more information, see the Products documentation section below).</p>
+<p>The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important:</p>
+<ul>
+<li>Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality.</li>
+<li>The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename).</li>
+<li>The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA).</li>
+<li>Some other new products will emerge in the future and be available externally.</li>
+</ul>
+<p>What will happen with the availability of these products and the impact on users?</p>
+<ul>
+<li>For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA</a>). It help to manage the transition.</li>
+<li>In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/</a>).</li>
+<li>Users will be informed as and when new radars are installed and their products are available following the same procedure described above.</li>
+</ul>
+<p>Example (the Radisson case):</p>
+<ul>
+<li><strong>The 3-lettre ID product every 10 minutes (Temporary)</strong> : <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/</a></li>
+<li><strong>The 5-letter ID products every 6 minutes (Permanently)</strong> : <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA</a></li>
+</ul>
+<h2 id="historical-radar-images">Historical radar images</h2>
+<p>Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:</p>
+<p><a href="https://climate.weather.gc.ca/radar/index_e.html">https://climate.weather.gc.ca/radar/index_e.html</a></p>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>
