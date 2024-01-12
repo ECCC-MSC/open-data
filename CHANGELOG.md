@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.17
+
+* date: 2024-01-12
+* announcements:
+    * Not announced
+* new content:
+    * New GeoMet subpages ?
+* improvements:
+    * Clean DD radar images doc and add doc on DPQPE contingency images
+* bug fixes:
+    * Fix typos in dates of HRDPS changelog
+
 ## 2.5.16
 
 * date: 2023-12-20
