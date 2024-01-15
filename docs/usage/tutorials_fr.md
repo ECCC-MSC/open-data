@@ -34,9 +34,19 @@ Cette page présente les tutoriels disponibles selon   différents standards soi
 * Ajouter, effectuer des requêtes aux couches OGC API - Features.
 
 
+##### <span class="badge badge-light">[Utiliser OGC API - Features dans Power BI](../tutorial_OAFeat_Power-BI_fr/)</span>
+* Ajouter des données hydrométriques en temps réel à Power BI depuis le web
+
+
 ##### <span class="badge badge-light">[Faire des requêtes OGC API - Features à partir de Python avec OWSLib](../use-case_oafeat/use-case_oafeat-script_fr/)</span>
 * Étude de cas: suivre les niveaux d’eau aux stations hydrométriques
 * Créer des séries temporelles et cartes interactives
+
+
+##### <span class="badge badge-light">[Faire des requêtes OGC API - Features avec VBA dans Excel et R](../tutorial_OAFeat_R-Excel_fr/)</span>
+* Interroger les observations de la CAS en temps réel à partir du web
+* [Tracer des données à l'aide du langage de programmation R dans RStudio](../tutorial_OAFeat_R-Excel_fr#exemple-avec-r)
+* [Générer automatiquement des tableaux et des graphiques à l'aide de VBA dans Excel](../tutorial_OAFeat_R-Excel_fr#exemple-avec-excel)
 </br></br>
 
 ## Dans la ligne de commande
