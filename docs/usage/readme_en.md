@@ -133,6 +133,8 @@ The following use case examples are provided:
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC Web Map Service (WMS) standard to create data tables and graphs
 * [Cathy: tracking water levels at hydrometric stations](../use-case_oafeat/use-case_oafeat-script_en/):
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Features (OAFeat) standard to create time series and interactive maps
+* [Gerald: upper air observations for safe travel](../use-case_skewt/use-case_skewt_en/):
+    * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Process (OAProc) standard to create data tables and graphs
 
 Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/wms_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 

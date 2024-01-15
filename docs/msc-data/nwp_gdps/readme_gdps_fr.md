@@ -4,11 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > SGPD
 
-
 # Données et produits du Système global de prévision déterministe
 
-Le Système global de prévision déterministe (SPGD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE). Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
-
+Le Système global de prévision déterministe (SGPD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE). Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
 
 ## Accès
 
@@ -16,11 +14,11 @@ Le Système global de prévision déterministe (SPGD) est un modèle de prévisi
 
 Ces données sont respectivement disponibles l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
-* [Données GRIB2 de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
-* [Données GeoJSON statistiquement post-traitées sur le Datamart du SMC](readme_gdps-statpostproc-datamart_fr.md)
-* [Données expérimentales GRIB2 d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gdps-datamart-alpha_fr.md) 
-* [Données NetCDF d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
+- [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
+- [Données GRIB2 de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
+- [Données GeoJSON statistiquement post-traitées sur le Datamart du SMC](readme_gdps-statpostproc-datamart_fr.md)
+- [Données expérimentales GRIB2 d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gdps-datamart-alpha_fr.md)
+- [Données NetCDF d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche `GDPS.DIAG_NW_PT1H` du SGPD provenant de GeoMet du SMC :
 
@@ -52,8 +50,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-* Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
-* Les [métadonnées de la Prévision du système global de prévision déterministe statistiquement post-traité par UMOS sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/7c1070fd-af7d-40fe-9e78-49d2962f0bbc).
+- Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
+- Les [métadonnées de la Prévision du système global de prévision déterministe statistiquement post-traité par UMOS sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/7c1070fd-af7d-40fe-9e78-49d2962f0bbc).
 
 ## Produits
 
@@ -61,25 +59,25 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ### Cartes de prévision
 
-* [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/global_f.html)
+- [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/global_f.html)
 
 ### Cartes d'analyses
 
-* [Température de la surface de la mer](https://meteo.gc.ca/data/analysis/351_100.gif)
-* [Étendue de la glace de mer](https://meteo.gc.ca/data/analysis/350_100.gif)
-* [Épaisseur de la neige au sol](https://meteo.gc.ca/data/analysis/352_100.gif)
-* [Ozone stratosphérique](https://woudc.org/data/products/?lang=fr)
+- [Température de la surface de la mer](https://meteo.gc.ca/data/analysis/351_100.gif)
+- [Étendue de la glace de mer](https://meteo.gc.ca/data/analysis/350_100.gif)
+- [Épaisseur de la neige au sol](https://meteo.gc.ca/data/analysis/352_100.gif)
+- [Ozone stratosphérique](https://woudc.org/data/products/?lang=fr)
 
 ## Documentation technique
 
-* [Version actuelle du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf)
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps_f.pdf)
-* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
-* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps_f.pdf)
+- [Version actuelle du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf)
+- [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps_f.pdf)
+- [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
+- [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps_f.pdf)
 
-## Registre des changements 
+## Registre des changements
 
-La chronologie des changements apportés au Système global de prévision déterministe (SPGD) est disponible [ici](changelog_gdps_fr.md).
+La chronologie des changements apportés au Système global de prévision déterministe (SGPD) est disponible [ici](changelog_gdps_fr.md).
 
 <style>
   #legend-img {
