@@ -112,17 +112,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#produit-radar-de-grele-mesh-maximum-expected-size-of-hail" class="nav-link">Produit radar de grêle MESH (Maximum Expected Size of Hail)</a>
+            <li class="nav-item" data-level="1"><a href="#produit-radar-de-diametre-maximal-de-grele-dmg" class="nav-link">Produit radar de diamètre maximal de grêle (DMG)</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -143,9 +139,9 @@
 
 <p><a href="../readme_radar-mesh-datamart_en/">In English</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_radar_fr/">Données et produits radar</a> &gt; Produit MESH sur le Datamart du SMC</p>
-<h1 id="produit-radar-de-grele-mesh-maximum-expected-size-of-hail">Produit radar de grêle MESH (Maximum Expected Size of Hail)</h1>
-<p>A compléter</p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_radar_fr/">Données et produits radar</a> &gt; Produit DMG sur le Datamart du SMC</p>
+<h1 id="produit-radar-de-diametre-maximal-de-grele-dmg">Produit radar de diamètre maximal de grêle (DMG)</h1>
+<p>Le produit DMG (Diamètre Maximal de Grêle) est déterminé comme suit : Le volume de la réflectivité radar à un emplacement de pixel donné est intégré verticalement depuis le balayage à l'élévation la plus basse jusqu'à la hauteur du niveau de température de -20°C. Le niveau de température est déterminé par le <a href="../../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a>. La réflectivité pondérée est traitée à travers plusieurs étapes intermédiaires et une relation empirique est utilisée pour estimer les tailles maximales de grêle. Les estimations résultantes de la taille de la grêle sont affichées sous forme de champ bidimensionnel ou de PPI (Plan Position Indicator). L'unité du produit DMG est en millimètres. </p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.</p>
@@ -171,7 +167,7 @@
 <li><strong>HHmm</strong> : Heure et  minute à laquelle les données sont émises</li>
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
-<li><strong>Radar-MESH</strong> : Chaîne de caractères constante indiquant que les données contiennent le produit MESH</li>
+<li><strong>Radar-MESH</strong> : Chaîne de caractères constante indiquant que les données contiennent le produit DMG (MESH en anglais)</li>
 <li><strong>RADAR_ID</strong> : Code de 5 lettres majuscules représentant l'identifiant du radar</li>
 <li><strong>res</strong> : résolution horizontale [1km]</li>
 <li><strong>hdf5</strong> : Chaîne de caractères constante indiquant que le format est HDF5</li>
@@ -180,8 +176,6 @@
 <ul>
 <li>20240110T0030Z_MSC_Radar-MESH_CASBV_1km.tif</li>
 </ul>
-<h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
-<p>A compléter</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">merci de nous contacter</a></p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
