@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.18
+
+* date: 2024-01-16
+* announcements:
+    * Not announced
+* new content:
+    * New MESH radar subpage
+* improvements:
+    * None
+* bug fixes:
+    * None
+
 ## 2.5.17
 
 * date: 2024-01-12
