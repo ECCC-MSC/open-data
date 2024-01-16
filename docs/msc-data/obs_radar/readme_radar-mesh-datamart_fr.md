@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données et produits radar](readme_radar_fr.md) > Produit MESH sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données et produits radar](readme_radar_fr.md) > Produit DMG sur le Datamart du SMC
 
-# Produit radar de grêle MESH (Maximum Expected Size of Hail) 
+# Produit radar de diamètre maximal de grêle (DMG)
 
-A compléter
+Le produit DMG (Diamètre Maximal de Grêle) est déterminé comme suit : Le volume de la réflectivité radar à un emplacement de pixel donné est intégré verticalement depuis le balayage à l'élévation la plus basse jusqu'à la hauteur du niveau de température de -20°C. Le niveau de température est déterminé par le [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). La réflectivité pondérée est traitée à travers plusieurs étapes intermédiaires et une relation empirique est utilisée pour estimer les tailles maximales de grêle. Les estimations résultantes de la taille de la grêle sont affichées sous forme de champ bidimensionnel ou de PPI (Plan Position Indicator). L'unité du produit DMG est en millimètres. 
 
 ## Adresse des données 
 
@@ -42,7 +42,7 @@ où :
 * __HHmm__ : Heure et  minute à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __Radar-MESH__ : Chaîne de caractères constante indiquant que les données contiennent le produit MESH
+* __Radar-MESH__ : Chaîne de caractères constante indiquant que les données contiennent le produit DMG (MESH en anglais)
 * __RADAR_ID__ : Code de 5 lettres majuscules représentant l'identifiant du radar
 * __res__ : résolution horizontale [1km]
 * __hdf5__ : Chaîne de caractères constante indiquant que le format est HDF5
@@ -50,10 +50,6 @@ où :
 Exemple:
 
 * 20240110T0030Z_MSC_Radar-MESH_CASBV_1km.tif
-
-## Contenu des fichiers
-
-A compléter
 
 ## Support
 
