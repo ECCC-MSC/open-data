@@ -1,26 +1,21 @@
-[En français](readme_radar_geomet_fr.md)
+[En français](readme_satellite_geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Radar](readme_radar_en.md) > Radar data on MSC GeoMet
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GOES satellite](readme_satellite_en.md) > GOES data on MSC GeoMet
 
-# Weather radar data available on MSC GeoMet
+# GOES satellite data available on MSC GeoMet
 
-MSC GeoMet provides access to several popular North American weather radar composite and extrapolation layers. Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
+MSC GeoMet provides access to the weather satellites layers. Users can build mobile apps, create interactive web maps, and display and animate weather satellites layers in desktop software.
 
 
 ## Access to the geospatial web services
 
-The weather radar layers are [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
+The GOES data is available on GeoMet-Weather via the [Web Map Service (WMS)](../../msc-geomet/wms_en.md) and [Web Coverage Service (WCS)](../../msc-geomet/wcs_en.md) standards.
 
-Example of a web map configured to display the weather radar composite and extrapolation using WMS layers served by MSC GeoMet:
+Example of a web map configured to display the Satellite Imagery in natural color [(GOES-East_1km_NaturalColor)](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor) layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; position: relative">
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RRAI&STYLE=&TRANSPARENT=true"/>
-  </div>
-</div>
 </div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
@@ -32,56 +27,42 @@ Example of a web map configured to display the weather radar composite and extra
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
-MSC GeoMet's North American weather radar composite and extrapolation layers can be seen in action in ECCC's [WeatherCAN mobile app](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html).
 
+</br>
 
 ## Usage
 
-The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials and technical documentation on MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md) for detailed information. See also the [main weather radar data page](readme_radar_en.md) which links to additional information on weather radar.
+The [usage overview page](../../usage/readme_en.md) provides generic information on using OGC services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials](../../usage/tutorials_en.md) and [technical documentation for MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md#available-ogc-standards) for detailed information. See also the [main weather satellite data page](readme_satellite_en.md) which links to additional information on weather satellite layers.
 
 ### Available layers
 
-Weather radar layers are updated every 6 minutes. The last 3 hours of data is available on MSC GeoMet. 
+Weather satellite layers are updated every 10 minutes.
 
-North American radar composite [1 km]:
+East :
 
-* Radar precipitation rate for rain [mm/hr], ID: `RADAR_1KM_RRAI`
-* Radar precipitation rate for snow [cm/hr], ID: `RADAR_1KM_RSNO`
-* Corresponding dynamic radar coverage layers:
-    * Coverage for Rain, ID: `RADAR_COVERAGE_RRAI`. ID for inverted style: `RADAR_COVERAGE_RRAI.INV`
-    * Coverage for Snow, ID: `RADAR_COVERAGE_RSNO`. ID for inverted style: `RADAR_COVERAGE_RSNO.INV`
+* GOES-East Day visibility / Day Cloud Convection [1 km], ID: `GOES-East_1km_DayVis`
+* GOES-East Natural Color [1 km], ID: `GOES-East_1km_NaturalColor`
+* GOES-East Night IR [2 km], ID: `GOES-East_2km_NightIR`
+* GOES-East Night Microphysics [2 km], ID: `GOES-East_2km_NightMicrophysics`
 
-North American radar surface precipitation type [1 km]:
+West :
 
-* Radar surface precipitation type [experimental], ID: `Radar_1km_SfcPrecipType`
-* Corresponding dynamic radar coverage layer [experimental]:
-    * Coverage, ID: `Radar-Coverage_SfcPrecipType`. ID for inverted style: `Radar-Coverage_SfcPrecipType-Inverted`
-
-North American radar extrapolation [1 km]:
-
-* Radar extrapolation precipitation rate for rain [mm/h] [experimental], ID: `Radar_1km_RainPrecipRate-Extrapolation`
-* Radar extrapolation precipitation rate for snow [mm/h] [experimental], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
-* Radar extrapolation precipitation rate [dBZ] [experimental], ID: `Radar_1km_dBZ-Extrapolation`
+* GOES-West Day visibility / Day Cloud Convection [1 km], ID: `GOES-West_1km_DayVis`
+* GOES-West Natural Color [1 km], ID: `GOES-West_1km_NaturalColor`
+* GOES-West Night IR [2 km], ID: `GOES-West_2km_NightIR`
+* GOES-West Night Microphysics [2 km], ID: `GOES-West_2km_NightMicrophysics`
 
 ### Usage tips
 
-Retrieving the list of latest radar layer timesteps available:
+Retrieving the list of latest satellite layer timesteps available:
 
-* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
-* Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km satellite natural color layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor)
+* Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
 
 WMS styles:
 
 * In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response
-* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/web-services_en#handling-styles)
-
-Legends:
-
-* Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/web-services_en#wms-getlegendgraphic)
-* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR`
-
-![The RADARURPPRECIPR14-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR)
-
+* Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/wms_en#handling-styles)
 
 ## Support
 
@@ -111,14 +92,24 @@ We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science
   }
   .distinguish-switch{
     top: 8px;
-    right: 2.25em;
+    right: 1em;
     width: 10rem;
+    position: relative;
   }
   .ol-touch .distinguish-switch{
     top: 80px;
   }
   .distinguish-switch.ol-unselectable.ol-control button{
     width: 10rem;
+  }
+
+  .distinguish-switch::before {
+    content: "Daytime data only"; /* Ajoute le texte que tu veux ici */
+    position: absolute;
+    top: 50%; /* Ajuste la position verticale si nécessaire */
+    left: 50%; /* Ajuste la position horizontale si nécessaire */
+    transform: translate(-50%, -50%); /* Centre le texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
   }
 </style>
 
@@ -135,12 +126,12 @@ We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/radar_ie.js";
+        js.src = "../../../js/satellite_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/radar.js";
+        js.src = "../../../js/satellite.js";
     }
     head.appendChild(js);
 </script>
