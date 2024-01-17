@@ -1,26 +1,21 @@
-[In English](readme_radar_geomet_en.md)
+[In English](readme_satellite_geomet_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Radar](readme_radar_fr.md) > Données radar sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [GOES Satellite](readme_satellite_fr.md) > Données satellite GOES sur GeoMet du SMC
 
-# Données radar météo disponibles sur GeoMet du SMC
+# Données de satellites météorologiques disponibles sur GeoMet du SMC
 
-GeoMet du SMC donne accès à plusieurs couches de la populaire composite et de l'extrapolation radar météo nord-américaine. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
+MSC GeoMet donne accès aux couches des satellites météorologiques. Les utilisateurs peuvent créer des applications mobiles, des cartes web interactives et afficher et animer des couches de satellites météorologiques dans des logiciels de bureau.
 
 
 ## Accès aux services web géospatiaux
 
-Les couches radar météo sont [disponibles sur GeoMet-Météo par le biais du standard Web Map Service (WMS)](../../msc-geomet/readme_fr.md).
+Les données GOES sont disponibles sur GeoMet-Weather via les standards [Web Map Service (WMS)](../../msc-geomet/wms_fr.md) et [Web Coverage Service (WCS)](../../msc-geomet/wcs_fr.md).
 
-Exemple de carte interactive présentant des couches WMS de la composite et de l'extrapolation radar météo provenant de GeoMet du SMC :
+Exemple de carte web configurée pour afficher la couche d'imagerie satellite en couleur naturelle [(GOES-East_1km_NaturalColor)](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor) servie par MSC GeoMet :
 
 <div id="map" style="height: 400px; position: relative">
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
-  </div>
-</div>
 </div>
 <div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
   <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
@@ -32,60 +27,44 @@ Exemple de carte interactive présentant des couches WMS de la composite et de l
   <a id="image-download" download="msc-geomet_web-map_export.png"></a>
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
-Les couches de la composite et de l'extrapolation radar météo nord-américaine de GeoMet du SMC peuvent être vues en action dans MétéoCAN, [l'application mobile officielle d'ECCC](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/meteocan.html).
-
-
+</br>
 ## Utilisation
 
-La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux [tutoriels et à la documentation technique sur les services web géospatiaux GeoMet du SMC](../../msc-geomet/readme_fr.md) pour de l'information détaillée. Voir également la [page d'accueil des données radar météo](readme_radar_fr.md) qui pointe vers de l'information additionnelle sur les radars météo.
+La [page de l'aperçu de l'utilisation](../../usage/readme_fr.md) fournit des informations génériques sur l'utilisation des services OGC avec des logiciels de bureau, des applications mobiles, des cartes web interactives et un accès direct. Veuillez vous référer aux [tutoriels](../../usage/tutorials_fr.md) et à la [documentation technique pour les services web géospatiaux de MSC GeoMet](../../msc-geomet/readme_fr.md#standards-disponibles) pour des informations détaillées. Voir également la [page principale des données des satellites météorologiques](readme_satellite_fr.md) qui contient des liens vers des informations supplémentaires sur les couches de satellites météorologiques.
 
 ### Couches disponibles
 
-Les couches radar météo sont mises à jour toutes les 6 minutes. Les 3 dernières heures de données sont disponibles sur GeoMet du SMC.
+Les couches satellites météorologiques sont mises à jour toutes les 10 minutes.
 
-Composite radar nord-américaine [1 km] :
+Est :
 
-* Taux de précipitation radar pour la pluie [mm/hr], ID: `RADAR_1KM_RRAI`
-* Taux de précipitation radar pour la neige [cm/hr], ID: `RADAR_1KM_RSNO`
-* Couches de la couverture radar dynamique correspondantes :
-    * Couverture pour la pluie, ID: `RADAR_COVERAGE_RRAI`. ID pour le style WMS inversé : `RADAR_COVERAGE_RRAI.INV`
-    * Couverture pour la neige, ID: `RADAR_COVERAGE_RSNO`. ID pour le style WMS inversé: `RADAR_COVERAGE_RSNO.INV`
+* GOES-Est visibilité de jour / Convection nuageuse de jour [1 km], ID: `GOES-East_1km_DayVis`
+* GOES-Est Couleur naturelle [1 km], ID: `GOES-East_1km_NaturalColor`
+* GOES-Est IR de nuit [2 km], ID: `GOES-East_2km_NightIR`
+* GOES-Est Microphysique de nuit [2 km], ID: `GOES-East_2km_NightMicrophysics`
 
-Type de précipitation à la surface du radar nord-américan [1 km]:
+Ouest :
 
-* Type de précipitation à la surface du radar [expérimental], ID: `Radar_1km_SfcPrecipType`
-* Couches de la couverture radar dynamique correspondantes [expérimental]:
-    * Couverture, ID: `Radar-Coverage_SfcPrecipType`. ID pour le style WMS inversé: `Radar-Coverage_SfcPrecipType-Inverted`
-
-Extrapolation radar nord-américaine [1 km]:
-
-* Taux de précipitation radar extrapolé pour la pluie [mm/h] [expérimental], ID: `Radar_1km_RainPrecipRate-Extrapolation`
-* Taux de précipitation radar extrapolé pour la neige [mm/h] [expérimental], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
-* Taux de précipitation radar extrapolé [dBZ] [expérimental], ID: `Radar_1km_dBZ-Extrapolation`
+* GOES-Ouest visibilité de jour / Convection nuageuse de jour [1 km], ID: `GOES-West_1km_DayVis`
+* GOES-Ouest Couleur naturelle [1 km], ID: `GOES-West_1km_NaturalColor`
+* GOES-Ouest IR de nuit [2 km], ID: `GOES-West_2km_NightIR`
+* GOES-Ouest Microphysique de nuit [2 km], ID: `GOES-West_2km_NightMicrophysics`
 
 ### Conseils d'utilisation
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la nouvelle couche de neige radar à 1km : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
-* Davantage d'informations sont disponibles dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps)
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la couche de couleur naturelle du satellite de 1 km : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor)
+* Davantage d'informations sont disponibles dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps)
 
 Styles WMS :
 
 * En plus du style WMS par défaut, plusieurs styles WMS alternatifs avec des échelles de couleurs différentes sont disponibles. La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities
-* Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard Styled Layer Descriptor (SLD). Veuillez vous référer à la [documentation technique sur le SLD](../../../msc-geomet/web-services_fr#specification-des-styles)
-
-Légendes :
-
-* Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/web-services_fr#wms-getlegendgraphic)
-* Exemple d'une requête pour récupérer une légende : `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR`
-
-![La légende WMS RADARURPPRECIPR14-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=RADARURPPRECIPR14-LINEAR)
-
+* Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard Styled Layer Descriptor (SLD). Veuillez vous référer à la [documentation technique sur le SLD](../../../msc-geomet/wms_fr#specification-des-styles)
 
 ## Support
 
-Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à [communiquer avec nous](https://weather.gc.ca/mainmenu/contact_us_e.html).
+Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à [communiquer avec nous](https://weather.gc.ca/mainmenu/contact_us_f.html).
 
 
 ## Liste d'information
@@ -111,14 +90,24 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
   }
   .distinguish-switch{
     top: 8px;
-    right: 2.25em;
-    width: 10rem;
+    right: 1em;
+    width: 15rem;
+    position: relative;
   }
   .ol-touch .distinguish-switch{
     top: 80px;
   }
   .distinguish-switch.ol-unselectable.ol-control button{
-    width: 10rem;
+    width: 15rem;
+  }
+
+  .distinguish-switch::before {
+    content: "Données de jour seulement"; /* Ajoute le texte que tu veux ici */
+    position: absolute;
+    top: 50%; /* Ajuste la position verticale si nécessaire */
+    left: 50%; /* Ajuste la position horizontale si nécessaire */
+    transform: translate(-50%, -50%); /* Centre le texte */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
   }
 </style>
 
@@ -135,12 +124,12 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/radar_ie.js";
+        js.src = "../../../js/satellite_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/radar.js";
+        js.src = "../../../js/satellite.js";
     }
     head.appendChild(js);
 </script>
