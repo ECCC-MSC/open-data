@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Thursday November 2, 2023
+
+### Addition of CSR observations from the GOES-18 satellite in the GDPS
+
+On Thursday November 2nd, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-18 satellite.
+
 ## Thursday September 14, 2023
 
 ### Addition of commercial GNSS-RO observations from PlanetIQ in the GDPS

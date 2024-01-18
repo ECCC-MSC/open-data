@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le jeudi 2 novembre 2023
+
+### Ajout des observations CSR du satellite GOES-18 dans le SHRPD
+
+Le jeudi 2 novembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-18.
+
 ## Le mardi 12 décembre 2023
 
 ### Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien
@@ -28,7 +38,7 @@ Une note technique à ce sujet est disponible [via ce lien](https://collaboratio
 
 ### Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SHRPD
 
-Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -48,7 +58,7 @@ Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System 
 
 ### Ajout des observations GPSRO du satellite Sentinel-6A dans le SHRPD
 
-Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -58,7 +68,7 @@ Ajout des observations GPSRO (Global Positioning System Radio Occultation) du sa
 
 ### Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SHRPD
 
-Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son Système à haute résolution de prévision déterministe (SHRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -84,7 +94,7 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ### Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SHRPD
 
-Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système à haute résolution de prévision déterministe (SHRPD).
+Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.0.0 de son système à haute résolution de prévision déterministe (SHRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 

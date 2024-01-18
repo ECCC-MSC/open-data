@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Thursday November 2, 2023
+
+### Addition of CSR observations from the GOES-18 satellite in the HRDPS
+
+On Thursday November 2nd, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).
+
+Only the data assimilation component was modified to include the following observations:
+
+Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-18 satellite.
+
 ## Tuesday December 12, 2023
 
 ### Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0
