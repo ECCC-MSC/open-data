@@ -8,6 +8,12 @@
 
 ## 2023
 
+### November 2, 2023
+
+* [Addition of CSR observations from the GOES-18 satellite in the GDPS](nwp_gdps/changelog_gdps_en.md#thursday-november-2-2023)
+* [Addition of CSR observations from the GOES-18 satellite in the RDPS](nwp_rdps/changelog_rdps_en.md#thursday-november-2-2023)
+* [Addition of CSR observations from the GOES-18 satellite in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#thursday-november-2-2023)
+
 ### December 12, 2023
 
 * [Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-december-12-2023)

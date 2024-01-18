@@ -6,11 +6,21 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le jeudi 2 novembre 2023
+
+### Ajout des observations CSR du satellite GOES-18 dans le SRPD
+
+Le jeudi 2 novembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
+
+Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-18.
+
 ## Le jeudi 14 septembre 2023
 
 ### Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SRPD
 
-Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
+Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -20,7 +30,7 @@ Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System 
 
 ### Ajout d’observations commerciales GNSS-RO de Spire dans le SRPD
 
-Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
+Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -30,7 +40,7 @@ Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System 
 
 ### Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SRPD
 
-Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
+Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).
 
 Une modification au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes utilisée dans l'analyse de neige a été installée dans le SRPD.
 
@@ -52,7 +62,7 @@ Ajout des observations GPSRO (Global Positioning System Radio Occultation) du sa
 
 ### Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SRPD 
 
-Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).
+Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -62,7 +72,7 @@ Remplacement des vecteurs vents dérivés à partir d’images satellites proven
 
 ### Ajout des observations de surface provenant des bateaux en format BUFR dans le SRPD
 
-Le jeudi 3 novembre 2022, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).
+Le jeudi 3 novembre 2022, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -78,7 +88,7 @@ Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ### Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SRPD
 
-Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son système régional de prévision déterministe (SRPD).
+Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -113,7 +123,7 @@ Seulement la composante de l'assimilation des données a été modifiée afin d'
 
 ### Ajout d’observations de radiances satellitaires
 
-Le mardi 8 décembre 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
+Le mardi 8 décembre 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -135,7 +145,7 @@ Ajout des observations GPSRO (Global Positioning System Radio Occultation) des s
 
 ### Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5
 
-Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
+Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
@@ -145,7 +155,7 @@ Ajout des observations GPSRO (Global Positioning System Radio Occultation) des s
 
 ### Ajout des observations AMV du satellite MetOp-3/C
 
-Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
+Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:
 
