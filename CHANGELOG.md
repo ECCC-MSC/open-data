@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update of HRDPS, RDPS and GDPS changelogs (Addition of CSR observations from the GOES-18 satellite)
 * improvements:
     * Fix RDPA DD page : On line archive on Collaboration stopped on Sept 23 2023 
+    * Add note in DD HRDPS and HRDPS-North pages : VI experimental index
 * bug fixes:
     * None
 
