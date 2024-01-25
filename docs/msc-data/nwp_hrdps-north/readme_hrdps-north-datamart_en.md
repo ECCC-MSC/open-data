@@ -132,6 +132,8 @@ This list contains both the parameters generated from HRDPS-North outputs and th
   loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_en.csv");
 </script>
 
+Note: The ventilation index (VI) is currently an experimental parameter.
+
 ## Support
 
 If you have any questions about this data, please [contact us](https://meteo.gc.ca/mainmenu/contact_us_f.html).

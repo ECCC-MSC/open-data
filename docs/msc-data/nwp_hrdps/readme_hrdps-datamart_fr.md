@@ -107,6 +107,8 @@ Cette liste contient à la fois les paramètres générés à partir des sorties
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_fr.csv");
 </script>
 
+Note: L'indice de ventilation (VI) est actuellement un paramètre expérimental.
+
 ## Support
 
 Pour toute question relative à ces données, merci de [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).

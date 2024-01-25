@@ -109,6 +109,8 @@ This list contains both the parameters generated from HRDPS outputs and the weat
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
 </script>
 
+Note: The ventilation index (VI) is currently an experimental parameter.
+
 ## Support
 
 If you have any questions about this data, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
