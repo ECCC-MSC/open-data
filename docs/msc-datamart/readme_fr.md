@@ -33,7 +33,7 @@ Depuis le printemps 2019, un __serveur alternatif HPFX__ d'accès aux données d
 
 Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).
 
-L'adresse de ce serveur HTTP est la suivante : [http://hpfx.collab.science.gc.ca/](http://hpfx.collab.science.gc.ca/)
+L'adresse de ce serveur HTTP est la suivante : [http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/](http://hpfx.collab.science.gc.ca/), avec `YYYYMMDD` la date dynamique.
 
 Alimenté des divers sources de données via Sarracenia, l'arborescence des répertoires est modifiée par rapport à celle disponible sur le Datamart du SMC, avec présence de la date ce qui rend ces répertoires dynamiques et non plus statiques.
 
