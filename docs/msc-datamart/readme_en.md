@@ -28,7 +28,7 @@ Since spring 2019, an __alternative HPFX server__ for accessing MSC Datamart dat
 
 This server guarantees a much more efficient access to the data (bandwidth multiplied by 10) during high demand periods of the day (around 12Z).
 
-The address of this HTTP server is as follows: [http://hpfx.collab.science.gc.ca/](http://hpfx.collab.science.gc.ca/)
+The address of this HTTP server is as follows: [http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/](http://hpfx.collab.science.gc.ca/), with `YYYYMMDD` the dynamic date.
 
 The various data sources are supplied via Sarracenia, the directory tree structure is then modified from that available on the MSC Datamart.  Access to data by date rather than by product suite makes the directory structure dynamic rather than static.
 
