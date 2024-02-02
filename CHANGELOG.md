@@ -19,7 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Fix RDPA DD page : On line archive on Collaboration stopped on Sept 23 2023 
     * Add note in DD HRDPS and HRDPS-North pages : VI experimental index
 * bug fixes:
-    * None
+    * Fix broken links to the WMS page in the GeoMet Hurricane page
 
 ## 2.5.18
 
