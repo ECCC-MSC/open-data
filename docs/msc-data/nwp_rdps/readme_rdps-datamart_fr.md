@@ -42,8 +42,6 @@ Valeurs données aux paramètres de la grille polaire stéréographique :
 | coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
 | orientation de la grille (par rapport à l’axe des j) | -111,0° | 
 
-Il existe aussi un fichier ASCII préformaté contenant les [coordonnées géographiques](https://meteo.gc.ca/grib/10km_res.bz2) de chaque point de grille. 
-
 ## Nomenclature des noms de fichiers 
 
 NOTE: TOUTES LES HEURES SONT EN UTC.
