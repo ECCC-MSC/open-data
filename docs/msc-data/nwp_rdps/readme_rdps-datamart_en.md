@@ -40,8 +40,6 @@ Values given to the parameters of the stereographic polar grid :
 | (i,j) coordinate of North Pole | (456.2; 732.4) |
 | grid orientation (with respect to j axis) | -111.0° |
 
-There is also a pre-formatted [ASCII file containing the geographical coordinates](https://meteo.gc.ca/grib/10km_res.bz2) of each grid point. 
-
 ## Filename nomenclature 
 
 Note : all hours are in UTC.
