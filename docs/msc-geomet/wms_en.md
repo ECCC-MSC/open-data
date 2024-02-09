@@ -34,9 +34,15 @@ A WMS GetCapabilities request is comprised of the following parameters:
 | LAYERS         | A vendor extension that allows a client to filter the GetCapabilities document for a single specific layer. This greatly reduces the size of the returned XML document|
 | LANG          | A vendor extension that allows a client to display the GetCapabilities document in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
-A WMS GetCapabilities request to GeoMet-Weather is then be constructed like this:
+Below are examples of a WMS GetCapabilities request for GeoMet-Weather and GeoMet-Climate :
+
+GeoMet-Weather:
 
 [https://geo.weather.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
+
+Geomet-Climate:
+
+[https://geo.weather.gc.ca/geomet-climate/?service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet-climate/?lang=en&service=WMS&version=1.3.0&request=GetCapabilities)
 
 Each layer defined in the WMS GetCapabilities XML document has information relating to the layer's name and title, geographic extent, time extent, and available styles.
 </br></br>

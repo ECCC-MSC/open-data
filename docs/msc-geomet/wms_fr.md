@@ -35,10 +35,15 @@ Une requête WMS GetCapabilities est composée des paramètres suivants :
 | LAYERS         | Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant|
 | LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut|
 
-Une requête WMS GetCapabilities pour GeoMet-Météo est donc construite ainsi :
+Les exemples suivants illustrent une requête WMS GetCapabilities pour GeoMet-Météo et GeoMet-Climat.
 
+GeoMet-Météo:
 
 [https://geo.meteo.gc.ca/geomet/?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.meteo.gc.ca/geomet/?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
+
+GeoMet-Climat:
+
+[https://geo.weather.gc.ca/geomet-climate/?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr](https://geo.weather.gc.ca/geomet-climate/?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities)
 
 Chaque couche définie dans le document XML du WMS GetCapabilities contient l'information telle que l'identifiant de la couche et son nom, son étendue géographique, la plage temporelle ainsi que les styles disponibles.
 </br></br>
