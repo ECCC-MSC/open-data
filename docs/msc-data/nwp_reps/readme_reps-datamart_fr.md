@@ -85,7 +85,7 @@ __Produits d'ensemble:__
 <table id="csv-prob-table" class="display"></table>
 
 <script>
-  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_Variables-List_fr.csv");
+  loadTable("csv-prob-table", "../../../assets/csv/REPS-Products_Variables-List_fr.csv");
 </script>
 
 Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.

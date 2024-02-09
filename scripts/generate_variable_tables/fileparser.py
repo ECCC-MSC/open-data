@@ -56,9 +56,9 @@ class FileParser:
         # Write to french variable table file
         write_variable_table(data_fr, os.path.join(directory, model + '_Variables-List_fr.csv'), header_fr)
         # Write to english product table file
-        write_variable_table(prob_data_en, os.path.join(directory, model + '_prob_Variables-List_en.csv'), header_en)
+        write_variable_table(prob_data_en, os.path.join(directory, model + '-Products_Variables-List_en.csv'), header_en)
         # Write to french product table file
-        write_variable_table(prob_data_fr, os.path.join(directory, model + '_prob_Variables-List_fr.csv'), header_fr)
+        write_variable_table(prob_data_fr, os.path.join(directory, model + '-Products_Variables-List_fr.csv'), header_fr)
 
 class Generator:
     def __init__(self, variable_LUT, level_LUT):

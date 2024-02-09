@@ -84,7 +84,7 @@ __Ensemble products:__
 <table id="csv-prob-table" class="display"></table>
 
 <script>
-  loadTable("csv-prob-table", "../../../assets/csv/REPS_prob_Variables-List_en.csv");
+  loadTable("csv-prob-table", "../../../assets/csv/REPS-Products_Variables-List_en.csv");
 </script>
 
 The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
