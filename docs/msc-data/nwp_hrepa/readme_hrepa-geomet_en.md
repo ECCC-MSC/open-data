@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HREPA](readme_hrepa_en.md) > HREPA on MSC GeoMet
 
-# GEPS data available on MSC GeoMet
+# HREPA data available on MSC GeoMet
 
 MSC GeoMet provides access to data produced by the High Resolution Ensemble Precipitation Analysis (HREPA). Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.
 
@@ -41,6 +41,7 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 To see which HREPA layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 Four layers are available for HREPA:
+
 * pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)
 * cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) 
 * q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
