@@ -35,21 +35,19 @@ The MSC GeoMet Platform consists in the following services:
   <div class="card text-black mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-Weather</h5></div>
     <div class="card-body">
-      <p class="card-text">GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services.</p></br></br><a href="https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">More info</a>
+      <p class="card-text">GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services.</p>
     </div>
   </div>
   <div class="card mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-OGC-API</h5></div>
     <div class="card-body">
-      <p class="card-text">
-      GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium standards.</p><a href="https://api.weather.gc.ca/" class="btn btn-primary">More info</a>
+      <p class="card-text">GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium standards.</p>
     </div>
   </div>
   <div class="card mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-Climate</h5></div>
     <div class="card-body">
-      <p class="card-text">
-      GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services.</p></br></br></br><a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">More info</a>
+      <p class="card-text">GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services.</p>
     </div>
   </div>
 </div>

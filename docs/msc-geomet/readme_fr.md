@@ -66,8 +66,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-header bg-light"><h5>Web Map Service</h5></div>
     <div class="card-body">
       <p class="card-text">
-        Web Map Service (WMS) est un protocole standard qui permet aux utilisateurs de demander et de recevoir des images de cartes géospatiales à partir d'un serveur sur Internet.</p></br>
-      <a href="../wms_fr" class="btn btn btn-primary">En savoir +</a>
+        Web Map Service (WMS) est un protocole standard qui permet aux utilisateurs de demander et de recevoir des images de cartes géospatiales à partir d'un serveur sur Internet.</p>
     </div>
   </div>
   <div class="card mb-3 text-center">
@@ -75,7 +74,6 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-body">
       <p class="card-text">
       L'API OGC (Open Geospatial Consortium API) est un nouvel ensemble d'API Web standardisées (interfaces de programmation d'applications) qui facilitent l'accès et uniformise les données et services géospatiaux.</p>
-      <a href="../ogc_api_fr" class="btn btn-primary">En savoir +</a>
     </div>
   </div>
 </div>
@@ -86,7 +84,6 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-body">
       <p class="card-text">
       Web Coverage Service (WCS) est un protocole standard qui permet aux utilisateurs de demander et de récupérer des données géospatiales sous forme de couvertures ou de grilles sur Internet.</p>
-      <a href="../wcs_fr" class="btn btn-primary">En savoir +</a>
     </div>
   </div>
   <div class="card mb-3 text-center">
