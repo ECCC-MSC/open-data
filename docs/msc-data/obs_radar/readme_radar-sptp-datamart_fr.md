@@ -1,12 +1,12 @@
-[In English](readme_radar-mesh-datamart_en.md)
+[In English](readme_radar-sptp-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données et produits radar](readme_radar_fr.md) > Produit DMG sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Données et produits radar](readme_radar_fr.md) > SPTP sur le Datamart du SMC
 
-# Produit radar de diamètre maximal de grêle (DMG)
+# Produit radar de type de précipitation à la surface (SPTP)
 
-Le produit DMG (Diamètre Maximal de Grêle) est déterminé comme suit : Le volume de la réflectivité radar à un emplacement de pixel donné est intégré verticalement depuis le balayage à l'élévation la plus basse jusqu'à la hauteur du niveau de température de -20°C. Le niveau de température est déterminé par le [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). La réflectivité pondérée est traitée à travers plusieurs étapes intermédiaires et une relation empirique est utilisée pour estimer les tailles maximales de grêle. Les estimations résultantes de la taille de la grêle sont affichées sous forme de champ bidimensionnel ou de PPI (Plan Position Indicator). L'unité du produit DMG est en millimètres. 
+Ce produit est un composite à une résolution de 1km sur le domaine nord-américain, qui, pour les zones avec une couverture radar, peut distinguer l'occurrence, le type de précipitation et son niveau d'intensité. Ce produit utilise en entrée deux composites radar à 1km, soit un composite nord-américain nettoyé à l'aide de la technologie de double polarisation, un autre composite radar de classification des particules (précipitations) ainsi que la température de surface provenant du [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). Le produit est généré toutes les 6 minutes.
 
 ## Adresse des données 
 
@@ -16,12 +16,11 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont disponibles à l'adresse :
 
-[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/radar/mesh/{RADAR_ID}](https://hpfx.collab.science.gc.ca/)
+[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/radar/sptp](https://hpfx.collab.science.gc.ca/)
 
 où :
 
 * __YYYYMMDD__ : Année, mois et jour
-* __RADAR_ID__ : Identifiant du radar, code de 5 lettres en lettres majuscules (voir la liste ci-dessous).
 
 Un historique de plusieurs semaines est conservé dans ce répertoire.
 
@@ -33,7 +32,7 @@ __Notes__:
 
 Les fichiers suivent la nomenclature suivante :
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Radar-MESH_{RADAR_ID}_{res}.tif`
+`{YYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_SfcPrecipType_{res}.tif`
 
 où :
 
@@ -42,14 +41,14 @@ où :
 * __HHmm__ : Heure et  minute à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __Radar-MESH__ : Chaîne de caractères constante indiquant que les données contiennent le produit DMG (MESH en anglais)
-* __RADAR_ID__ : Code de 5 lettres majuscules représentant l'identifiant du radar
+* __Radar-Composite__ : Chaîne de caractères constante indiquant que les données contiennent un produit radar qui un composite
+* __SfcPrecipType__ : Chaîne de caractères constante indiquant que les données contiennent le produit de type de précipitation à la surface (SPTP)
 * __res__ : résolution horizontale [1km]
 * __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF
 
 Exemple:
 
-* 20240110T0030Z_MSC_Radar-MESH_CASBV_1km.tif
+* 20240214T1550Z_MSC_Radar-Composite_SfcPrecipType_1km.tif
 
 ## Support
 
