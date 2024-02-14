@@ -45,7 +45,7 @@ où :
 * __Radar-MESH__ : Chaîne de caractères constante indiquant que les données contiennent le produit DMG (MESH en anglais)
 * __RADAR_ID__ : Code de 5 lettres majuscules représentant l'identifiant du radar
 * __res__ : résolution horizontale [1km]
-* __hdf5__ : Chaîne de caractères constante indiquant que le format est HDF5
+* __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF
 
 Exemple:
 
