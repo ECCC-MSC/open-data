@@ -8,25 +8,10 @@
 # MSC GeoMet
 
 The MSC GeoMet platform provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of real-time and archived weather, climate and water datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on demand raw data clipping and reprojection, on demand format conversion and custom visualization.
-</br></br>
 
 ## Services
 
 Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services.
-
-The following Open Geospatial Consortium [standards](https://www.ogc.org/standards) and [community standards](https://www.ogc.org/standards/community/) are supported:
-
-*   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
-*   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
-*   [OGC API - Features](https://ogcapi.ogc.org/features/)
-*   [OGC API - Coverages](https://ogcapi.ogc.org/coverages/)
-*   [SpatioTemporal Asset Catalog (STAC) (experimental)](https://stacspec.org/en)
-
-For further information regarding how to use MSC GeoMet services, see the following pages:
-
-*    [MSC GeoMet usage overview](https://eccc-msc.github.io/open-data/usage/readme_en/)
-*    [Tutorials and guides on ways to use MSC GeoMet services](/usage/tutorials_en/)
-</br></br>
 
 The MSC GeoMet Platform consists in the following services:
 </br>
@@ -51,7 +36,11 @@ The MSC GeoMet Platform consists in the following services:
     </div>
   </div>
 </div>
-<br/>
+
+For further information regarding how to use MSC GeoMet services, see the following pages:
+
+*    [Usage overview](https://eccc-msc.github.io/open-data/usage/readme_en/)
+*    [Tutorials and guides on ways to use MSC GeoMet services](/usage/tutorials_en/)
 
 ## Available OGC standards
 
@@ -96,7 +85,14 @@ The following OGC web services are supported by MSC GeoMet:
     </div>
   </div>
 </div>
-<br/>
+
+For further infromation regarding the aforementioned Open Geospatial Consortium [standards](https://www.ogc.org/standards) and [community standards](https://www.ogc.org/standards/community/), consult the following official references:
+
+*   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
+*   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
+*   [OGC API - Features](https://ogcapi.ogc.org/features/)
+*   [OGC API - Coverages](https://ogcapi.ogc.org/coverages/)
+*   [SpatioTemporal Asset Catalog (STAC) (experimental)](https://stacspec.org/en)
 
 ## Contact and support
 

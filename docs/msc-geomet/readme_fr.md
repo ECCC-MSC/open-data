@@ -8,25 +8,10 @@
 # GeoMet du SMC
 
 La plateforme GeoMet du SMC rend publiquement accessible les données du Service météorologique du Canada (SMC) et d'Environnement et Changement climatique Canada (ECCC) via des services web interopérables et des interfaces de programme (API). Par le biais de standards ouverts, ces services donnent rapidement et gratuitement accès à des milliers de jeux de données et produits météorologiques, climatiques et hydrométriques en temps réel et archivés qui peuvent être intégrés dans les applications spécifiques de l'usager et leurs systèmes d'aide à la décision. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en ligne, ainsi que de visualiser et animer les données du SMC dans des logiciels de bureau. Les services GeoMet du SMC rendent également possible le découpage de données et la reprojection sur demande, tout autant que la conversion de formats et la visualisation personnalisée de couches de données.
-</br></br>
 
 ## Services
 
-Les services GeoMet du SMC peuvent être utilisés via des logiciels qui supportent les services web géospatiaux de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/). Suivre ce lien pour un aperçu des [outils de visualisation](https://eccc-msc.github.io/open-data/usage/readme_fr/) et d’utilisations.
-
-Les [normes](https://www.ogc.org/standards) et [normes communautaires](https://www.ogc.org/standards/community/) suivantes de l'Open Geospatial Consortium sont prises en charge :
-
-*   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
-*   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
-*   [OGC API - Features](https://ogcapi.ogc.org/features/)
-*   [OGC API - Coverages](https://ogcapi.ogc.org/coverages/)
-*   [SpatioTemporal Asset Catalog (STAC) (expérimental)](https://stacspec.org/en)
-
-Pour plus d'informations sur l'utilisation des services MSC GeoMet, voir les pages suivantes:
-
-*    [Vue d'ensemble de l'utilisation du CSM GeoMet](https://eccc-msc.github.io/open-data/usage/readme_fr/)
-*    [Tutoriels et guides sur l'utilisation des services GeoMet du CSM](/usage/tutorials_fr/)
-</br></br>
+Les services GeoMet du SMC peuvent être utilisés via des logiciels qui supportent les services web géospatiaux de l'Open Geospatial Consortium (OGC) suivants : [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms), [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs), [OGC API - Features](https://ogcapi.ogc.org/features/) et [OGC API - Coverages](https://ogcapi.ogc.org/coverages/).
 
 La plateforme GeoMet du SMC comprend les services suivants :
 <div class="card-deck">
@@ -51,7 +36,11 @@ La plateforme GeoMet du SMC comprend les services suivants :
     </div>
   </div>
 </div>
-<br/>
+
+Pour plus d'informations sur l'utilisation des services MSC GeoMet, voir les pages suivantes:
+
+*    [Vue d'ensemble de l'utilisation des services de données ouvertes](https://eccc-msc.github.io/open-data/usage/readme_fr/)
+*    [Tutoriels et guides sur l'utilisation des services GeoMet du CSM](/usage/tutorials_fr/)
 
 ## Standards disponibles
 
@@ -96,7 +85,13 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
   </div>
 </div>
 
-</br>
+Pour de plus amples informations concernant les [normes](https://www.ogc.org/standards) et les [normes communautaires](https://www.ogc.org/standards/community/) de l'Open Geospatial Consortium, veuillez consulter les références officielle
+
+*   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
+*   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
+*   [OGC API - Features](https://ogcapi.ogc.org/features/)
+*   [OGC API - Coverages](https://ogcapi.ogc.org/coverages/)
+*   [SpatioTemporal Asset Catalog (STAC) (expérimental)](https://stacspec.org/en)
 
 ## Contact et support
 
