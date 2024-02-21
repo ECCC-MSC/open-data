@@ -14,10 +14,9 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles aux adresses suivantes :
+Les données sur une grille lat-lon tournée sont accessibles à l'adresse suivante :
 
-* Données sur grille polaire stéréographique: [https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
-* Données sur grille lat-lon tournée: [https://dd.meteo.gc.ca/model_rdpa/10km/{HH}/](https://dd.meteo.gc.ca/model_rdpa/10km)
+* [https://dd.meteo.gc.ca/model_rdpa/10km/{HH}/](https://dd.meteo.gc.ca/model_rdpa/10km)
 
 où :
 
@@ -26,24 +25,7 @@ où :
 
 Un historique de 30 jours est conservé sur le Datamart du SMC.
 
-## Spécification technique des grilles
-
-* __Grille polaire stéréographique__
-
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique:
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 935 |
-| nj | 824 | 
-| résolution à 60° N | 10km |
-| coordonnées du premier point de grille | 18.1429° N ; 142.8968° W | 
-| coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
-| orientation de la grille (par rapport à l’axe des j) | -111,0° |
-
-* __Grille lat-lon tournée__
+## Spécification technique de la grille
 
 ![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
 
@@ -60,46 +42,10 @@ __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
-### Grille polaire stéréographique
-
 Les fichiers ont une des nomenclatures suivantes :
 
-* CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-* CMC_RDPA_APCP-006-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-* CMC_RDPA_APCP-024-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-* CMC_RDPA_APCP-024-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-
-où :
-
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet ces prévisions.
-* __RDPA__ : Chaîne de caractères constante indiquant que les données proviennent de l’Analyse régionale déterministe de précipitation (que l’on connaît aussi comme CaPA).
-* __APCP__ : Chaîne de caractères constante donnant le nom de la variable contenue dans le fichier. Dans cet exemple, il s’agit de l’analyse de précipitation.
-* __006__ : Intervalle d'accumulation de précipitation, soit sur 006 heures.
-* __024__ : Intervalle d’accumulation de précipitation, soit sur 024 heures.
-* __0100cutoff__ : Temps de coupure des observations à l'intérieur d'une heure indiquant que possiblement pas toutes les observations qui ont été recueillies.
-* __0700cutoff__ : Temps de coupure de 7 heures pour les observations, indiquant qu'un maximum d'observations a probablement été recueilli.
-* __SFC__ : Indique que le type de niveau est la surface.
-* __0__ : Valeur du niveau. Dans cet exemple, 0 indique aussi la surface.
-* __ps10km__ : Indique que la projection utilisée est polaire stéréographique à une résolution de 10 km.
-* __YYYYMMDDHH__ : Année, mois, jour et heure de la date de validité de l'analyse.
-* __HH__ : Heure UTC de la passe [00, 06, 12, 18].
-* __000__ : Indique que l’analyse est valide exactement à YYYYMMDDHH.
-* __grib2__ : Indique que les données sont en format GRIB2.
-
-Exemple de nom de fichier :
-
-CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
-
-Le fichier a été créé par le Centre météorologique canadien (CMC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 006 heures. Les données sont sur une grille polaire stéréographique à une résolution de 10 km (ps10km). L’analyse a été produite le 12 janvier 2015 à 12Z (2015011212) et le champ (000) confirme l’heure de validité. L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2015011206 à 2015011212.
-
-### Grille lat-lon tournée
-
-Les fichiers ont une des nomenclatures suivantes :
-
-* {YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
-* {YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
+* `{YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2`
+* `{YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2`
 
 où :
 
@@ -139,13 +85,9 @@ __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier c
   loadTable("csv-table", "../../../assets/csv/RDPA_Variables-List_fr.csv");
 </script>
 
-## À propos du masque No-Data de la grille polaire stéréographique
-
-Depuis le 13 janvier 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
-
 ## Archives en ligne
 
-* Une [archive des données de l'ARDP](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) depuis le 6 avril 2011 jusqu'au 24 septembre 2023 est disponible en ligne, en format GRIB2. Notez que contrairement à ce qui est indiqué dans la section «A propos du masque No-Data» ci-dessus, les données disponibles ici ont été encodées avec le masque sur toute la période, et non à partir du 13 janvier 2016.
+* Une [archive des données de l'ARDP](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) depuis le 6 avril 2011 jusqu'au 24 septembre 2023 est disponible en ligne, en format GRIB2.
 
 * Une [archive des ré-analyses](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/hindcast/), couvrant la période de janvier 2002 à juin 2012, est disponible en ligne, en format GRIB2.
 
