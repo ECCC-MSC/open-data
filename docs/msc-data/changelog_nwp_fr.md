@@ -138,7 +138,7 @@ Atmosphère
 * Analyse de surface
     * [Système canadien d'assimilation de données de surface dans le SHRPD (SCanADS-SHRPD) 3.0.3](nwp_caldas-hrdps/changelog_caldas-hrdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système canadien d'assimilation de données de surface dans le système national de prévision de surface et de rivière (SCanADS-SNPSR) 3.1.0](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#le-mercredi-1er-decembre-2021)
-    * [Système canadien d'assimilation de données de surface dans le SGPD (SCanADS-SGPD)](nwp_caldas-gdps/changelog_caldas-gdps_en.md#le-mercredi-1er-decembre-2021)
+    * [Système canadien d'assimilation de données de surface dans le SGPD (SCanADS-SGPD)](nwp_caldas-gdps/changelog_caldas-gdps_fr.md#le-mercredi-1er-decembre-2021)
 * Qualité de l'Air:
     * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) v23](nwp_raqdps/changelog_raqdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_fr.md#le-mercredi-1er-decembre-2021)
