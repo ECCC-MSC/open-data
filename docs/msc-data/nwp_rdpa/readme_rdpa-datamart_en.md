@@ -14,10 +14,9 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The data can be accessed at the following URLs :
+Data on a rotated lat-lon grid can be accessed at the following URL :
 
-* Polar-stereographic grid: [https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}](https://dd.weather.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic)
-* Rotated lat-lon grid: [https://dd.weather.gc.ca/model_rdpa/10km/{HH}](https://dd.weather.gc.ca/model_rdpa/10km)
+* [https://dd.weather.gc.ca/model_rdpa/10km/{HH}](https://dd.weather.gc.ca/model_rdpa/10km)
 
 where :
 
@@ -26,24 +25,7 @@ where :
 
 A 30-day history is kept on the MSC Datamart.
 
-## Technical specification of the grids
-
-* __Polar-stereographic grid__
-
-![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png)
-
-Values given to the parameters of the stereographic polar grid:
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 935 |
-| nj | 824 | 
-| resolution at 60° N | 10 km |
-| coordinates of the first grid point | 18.1429° N  142.8968° W | 
-| (i,j) coordinate of North Pole | (456.2; 732.4) |
-| grid orientation (with respect to j axis) | -111.0° |
-
-* __Rotated lat-lon grid__
+## Technical specification of the grid
 
 ![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
 
@@ -60,47 +42,10 @@ __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/pr
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
-
-### Polar-stereographic grid
-
-The files have one of the following nomenclature :
-
-* CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-* CMC_RDPA_APCP-006-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2
-* CMC_RDPA_APCP-024-0100cutoff_SFC_0_ps10km_YYYYMMDDHH_000.grib2
-* CMC_RDPA_APCP-024-0700cutoff_SFC_0_ps10km_YYYYMMDDHH_000.grib2
-
-where :
-
-* __CMC__: Constant string indicating the data is from the Canadian Meteorological Centre
-* __RDPA__: Constant string indicating the data is from the regional deterministic precipitation analysis (RDPA)
-* __APCP__: Constant string indicating the variable included in this file is in this case the accumulated precipitation which has been analyzed.
-* __006__: Precipitation accumulation interval is 006 hours
-* __024__: Precipitation accumulation interval is 024 hours
-* __0100cutoff__: Observation cut-off time is one hour after the time YYYYMMDDHH indicating that possibly not all observations have been collected
-* __0700cutoff__: Observation cut-off time is about 007 hours after the time YYYYMMDDHH indicating that a maximum of observations has likely been collected
-* __SFC__: Constant string indicating the type of level is at the surface.
-* __0__: Elevation of the above level type where here 0 indicates the surface. For RDPA grib2 data this is the only level available.
-* __ps10km__: Constant string indicating the projection used is polar-stereographic at 10km resolution.
-* __YYYYMMDDHH__: Year, month, day and hour of valid date of the analysis.
-* __HH__: UTC run time [00, 06, 12, 18]
-* __000__: Represents the number of hours after the YYYYMMDDHH time at which the analysis is valid.
-* __grib2__: Constant string indicating the GRIB2 format is used
-
-Example of file name :
-
-CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2
-
-This file originates from the Canadian Meteorological Center (CMC) and contains data of the regional deterministic precipitation analysis (RDPA).
-It contains the preliminary analysis of the accumulated precipitation represented here by APCP over a 6 (006) hour time interval starting at 2015011206 and ending at 2015011212. It is considered preliminary because the analysis has been produced using observations collected in a short 0100 hour period i.e. before all observations have been collected. The data is on a polar-stereographic grid at 10km resolution (ps10km). The file name contains the valid time of the analysis which in this case is 2015011212_000.
-
-### Rotated lat-lon grid
-
 Files have one of the following nomenclatures:
 
-* {YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
-* {YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2
+* `{YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2`
+* `{YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2`
 
 where:
 
@@ -125,11 +70,9 @@ The file originates from the Meteorological Service of Canada (MSC) and contains
 
 * 20220302T12Z_MSC_RDPA_APCP-Accum24h_Sfc_RLatLon0.09_PT0H.grib2
 
-
 The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a final analysis of precipitation accumulation represented by the APCP variable over a 24-hour interval. The data are on a lat-lon grid rotated to a 10 km resolution (RLatLon0.09). The analysis was produced on 02 March 2022 at 12Z (2022030212). The 24-hour interval in which precipitation is analyzed is 2022030212 to 2022030312.
 
 __NOTE__: A second variable is also included in this file and it is the confidence index for the analysis.
-
 
 ## List of variables
 
@@ -142,13 +85,9 @@ __NOTE__: A second variable is also included in this file and it is the confiden
   loadTable("csv-table", "../../../assets/csv/RDPA_Variables-List_en.csv");
 </script>
 
-## About the polar stereographic grid no-data mask
-
-Since January, 13th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
-
 ## Online archives
 
-* An [RDPA data archive](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) from April, 6th 2011 to September 23th, 2023 is available online in GRIB2 format. Note that contrary to what is indicated in the "About the No-Data mask" section above, the data available here were encoded with the mask over the entire period, not from 13 January 2016.
+* An [RDPA data archive](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/) from April, 6th 2011 to September 23th, 2023 is available online in GRIB2 format. 
 
 * An [archive of re-analyses](https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/hindcast/), covering the period from January 2002 to June 2012, is available online in GRIB2 format.
 
