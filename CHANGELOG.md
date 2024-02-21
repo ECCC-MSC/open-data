@@ -10,15 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.5.19
 
-* date:
+* date: 2024-02-21
 * announcements:
     * Not announced
 * new content:
     * Update of HRDPS, RDPS and GDPS changelogs (Addition of CSR observations from the GOES-18 satellite)
+    * Add SPTP documentation for radar dissemination pilot project
 * improvements:
     * Fix RDPA DD page : On line archive on Collaboration stopped on Sept 23 2023
     * Add note in DD HRDPS and HRDPS-North pages : VI experimental index
     * Removed `More Info` and `En savoir +` buttons on service cards for MSC GeoMet readme pages (en/fr)
+    * Adjust CaLDAS changelogs (add French version links for HRDPS and NSRPS in main NWP page and add changelogs for CaLDAS-GDPS)
+    * Adjust RDPA Datamart page : remove PS grid
 * bug fixes:
     * Fix broken links to the WMS page in the GeoMet Hurricane page
 
