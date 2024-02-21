@@ -137,6 +137,7 @@ Atmosphere
 * Surface Analysis
     * [Canadian Land Data Assimilation System in HRDPS (CaLDAS-HRDPS) 3.0.3](nwp_caldas-hrdps/changelog_caldas-hrdps_en.md#wednesday-december-1st-2021)
     * [Canadian Land Data Assimilation System in National Surface and River Prediction System (CaLDAS-NSRPS) 3.1.0](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#wednesday-december-1st-2021)
+    * [Canadian Land Data Assimilation System in GDPS (CaLDAS-GDPS)](nwp_caldas-gdps/changelog_caldas-gdps_en.md#wednesday-december-1st-2021)
 * Air quality:
     * [Regional Air Quality Deterministic Prediction System (RAQDPS) v23](nwp_raqdps/changelog_raqdps_en.md#wednesday-december-1st-2021)
     * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) v23](nwp_raqdps-fw/changelog_raqdps-fw_en.md#wednesday-december-1st-2021)
