@@ -1,0 +1,3 @@
+Variable,Abbreviation,Level,Unit/Value
+Temperature,TMP,2 m Above Ground Level,K
+Total precipitation,APCP,Surface,kg/(m<sup>2</sup>*s)

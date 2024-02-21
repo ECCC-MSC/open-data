@@ -162,7 +162,7 @@
 <h3 id="methode-dacces-supplementaire">Méthode d'accès supplémentaire</h3>
 <p>Depuis le printemps 2019, un <strong>serveur alternatif HPFX</strong> d'accès aux données du Datamart du SMC est disponible pour contourner d'éventuels enjeux de bande passante. </p>
 <p>Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).</p>
-<p>L'adresse de ce serveur HTTP est la suivante : <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca/</a></p>
+<p>L'adresse de ce serveur HTTP est la suivante : <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/</a>, avec <code>YYYYMMDD</code> la date dynamique.</p>
 <p>Alimenté des divers sources de données via Sarracenia, l'arborescence des répertoires est modifiée par rapport à celle disponible sur le Datamart du SMC, avec présence de la date ce qui rend ces répertoires dynamiques et non plus statiques.</p>
 <p>Une conséquence directe de cette hiérarchie par date, concerne la période de rétention des données qui devient identique pour tous les jeux de données et fonction de l'espace disque disponible.</p>
 <p>L'accès aux données via <a href="../amqp_fr/">le protocole AMQP est évidemment fortement conseillé</a>.</p>

@@ -119,7 +119,7 @@
             
             <li class="nav-item" data-level="1"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#specification-technique-des-grilles" class="nav-link">Spécification technique des grilles</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -128,10 +128,6 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#a-propos-du-masque-no-data-de-la-grille-polaire-stereographique" class="nav-link">À propos du masque No-Data de la grille polaire stéréographique</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -162,10 +158,9 @@
 <h1 id="adresse-des-donnees">Adresse des données</h1>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
-<p>Les données sont accessibles aux adresses suivantes :</p>
+<p>Les données sur une grille lat-lon tournée sont accessibles à l'adresse suivante :</p>
 <ul>
-<li>Données sur grille polaire stéréographique: <a href="https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic">https://dd.meteo.gc.ca/analysis/precip/rdpa/grib2/polar_stereographic/{hh}</a></li>
-<li>Données sur grille lat-lon tournée: <a href="https://dd.meteo.gc.ca/model_rdpa/10km">https://dd.meteo.gc.ca/model_rdpa/10km/{HH}/</a></li>
+<li><a href="https://dd.meteo.gc.ca/model_rdpa/10km">https://dd.meteo.gc.ca/model_rdpa/10km/{HH}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -173,49 +168,7 @@
 <li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18]</li>
 </ul>
 <p>Un historique de 30 jours est conservé sur le Datamart du SMC.</p>
-<h2 id="specification-technique-des-grilles">Spécification technique des grilles</h2>
-<ul>
-<li><strong>Grille polaire stéréographique</strong></li>
-</ul>
-<p><img alt="" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa.png" /></p>
-<p>Valeurs données aux paramètres de la grille polaire stéréographique:</p>
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Valeur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>935</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>824</td>
-</tr>
-<tr>
-<td>résolution à 60° N</td>
-<td>10km</td>
-</tr>
-<tr>
-<td>coordonnées du premier point de grille</td>
-<td>18.1429° N ; 142.8968° W</td>
-</tr>
-<tr>
-<td>coordonnées (i; j) du Pôle Nord</td>
-<td>(456.2; 732.4)</td>
-</tr>
-<tr>
-<td>orientation de la grille (par rapport à l’axe des j)</td>
-<td>-111,0°</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Grille lat-lon tournée</strong></li>
-</ul>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p><img alt="Grille RDPA Rlatlon" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png" /></p>
 <p>Valeurs données aux paramètres de la grille lat-lon tournée:</p>
 <table>
@@ -246,40 +199,10 @@
 </table>
 <p><strong>Note</strong> : Les <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">versions les plus récentes de wgrib2</a> et <a href="https://gdal.org/">GDAL</a> supportent ces grilles tournées.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
-<h3 id="grille-polaire-stereographique">Grille polaire stéréographique</h3>
 <p>Les fichiers ont une des nomenclatures suivantes :</p>
 <ul>
-<li>CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2</li>
-<li>CMC_RDPA_APCP-006-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2</li>
-<li>CMC_RDPA_APCP-024-0100cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2</li>
-<li>CMC_RDPA_APCP-024-0700cutoff_SFC_0_ps10km_AAAAMMJJHH_000.grib2</li>
-</ul>
-<p>où :</p>
-<ul>
-<li><strong>CMC</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet ces prévisions.</li>
-<li><strong>RDPA</strong> : Chaîne de caractères constante indiquant que les données proviennent de l’Analyse régionale déterministe de précipitation (que l’on connaît aussi comme CaPA).</li>
-<li><strong>APCP</strong> : Chaîne de caractères constante donnant le nom de la variable contenue dans le fichier. Dans cet exemple, il s’agit de l’analyse de précipitation.</li>
-<li><strong>006</strong> : Intervalle d'accumulation de précipitation, soit sur 006 heures.</li>
-<li><strong>024</strong> : Intervalle d’accumulation de précipitation, soit sur 024 heures.</li>
-<li><strong>0100cutoff</strong> : Temps de coupure des observations à l'intérieur d'une heure indiquant que possiblement pas toutes les observations qui ont été recueillies.</li>
-<li><strong>0700cutoff</strong> : Temps de coupure de 7 heures pour les observations, indiquant qu'un maximum d'observations a probablement été recueilli.</li>
-<li><strong>SFC</strong> : Indique que le type de niveau est la surface.</li>
-<li><strong>0</strong> : Valeur du niveau. Dans cet exemple, 0 indique aussi la surface.</li>
-<li><strong>ps10km</strong> : Indique que la projection utilisée est polaire stéréographique à une résolution de 10 km.</li>
-<li><strong>YYYYMMDDHH</strong> : Année, mois, jour et heure de la date de validité de l'analyse.</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18].</li>
-<li><strong>000</strong> : Indique que l’analyse est valide exactement à YYYYMMDDHH.</li>
-<li><strong>grib2</strong> : Indique que les données sont en format GRIB2.</li>
-</ul>
-<p>Exemple de nom de fichier :</p>
-<p>CMC_RDPA_APCP-006-0100cutoff_SFC_0_ps10km_2015011212_000.grib2</p>
-<p>Le fichier a été créé par le Centre météorologique canadien (CMC) et contient une analyse régionale déterministe de précipitation (RDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 006 heures. Les données sont sur une grille polaire stéréographique à une résolution de 10 km (ps10km). L’analyse a été produite le 12 janvier 2015 à 12Z (2015011212) et le champ (000) confirme l’heure de validité. L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2015011206 à 2015011212.</p>
-<h3 id="grille-lat-lon-tournee">Grille lat-lon tournée</h3>
-<p>Les fichiers ont une des nomenclatures suivantes :</p>
-<ul>
-<li>{YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2</li>
-<li>{YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2</li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_RDPA_{VAR}_Sfc_RLatLon0.09_PT0H.grib2</code></li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_RDPA-Prelim_{VAR}_Sfc_RLatLon0.09_PT0H.grib2</code></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -316,12 +239,10 @@
   loadTable("csv-table", "../../../assets/csv/RDPA_Variables-List_fr.csv");
 </script>
 
-<h2 id="a-propos-du-masque-no-data-de-la-grille-polaire-stereographique">À propos du masque No-Data de la grille polaire stéréographique</h2>
-<p>Depuis le 13 janvier 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.</p>
 <h2 id="archives-en-ligne">Archives en ligne</h2>
 <ul>
 <li>
-<p>Une <a href="https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/">archive des données de l'ARDP</a> depuis le 6 avril 2011 est disponible en ligne, en format GRIB2. Notez que contrairement à ce qui est indiqué dans la section «A propos du masque No-Data» ci-dessus, les données disponibles ici ont été encodées avec le masque sur toute la période, et non à partir du 13 janvier 2016.</p>
+<p>Une <a href="https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/">archive des données de l'ARDP</a> depuis le 6 avril 2011 jusqu'au 24 septembre 2023 est disponible en ligne, en format GRIB2.</p>
 </li>
 <li>
 <p>Une <a href="https://collaboration.cmc.ec.gc.ca/science/outgoing/capa.grib/hindcast/">archive des ré-analyses</a>, couvrant la période de janvier 2002 à juin 2012, est disponible en ligne, en format GRIB2.</p>

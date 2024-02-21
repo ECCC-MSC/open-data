@@ -112,7 +112,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#geps-data-available-on-msc-geomet" class="nav-link">GEPS data available on MSC GeoMet</a>
+            <li class="nav-item" data-level="1"><a href="#hrepa-data-available-on-msc-geomet" class="nav-link">HREPA data available on MSC GeoMet</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#access-to-the-geospatial-web-services" class="nav-link">Access to the geospatial web services</a>
               <ul class="nav flex-column">
@@ -140,7 +140,7 @@
 <p><a href="../readme_hrepa-geomet_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrepa_en/">HREPA</a> &gt; HREPA on MSC GeoMet</p>
-<h1 id="geps-data-available-on-msc-geomet">GEPS data available on MSC GeoMet</h1>
+<h1 id="hrepa-data-available-on-msc-geomet">HREPA data available on MSC GeoMet</h1>
 <p>MSC GeoMet provides access to data produced by the High Resolution Ensemble Precipitation Analysis (HREPA). Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.</p>
 <h2 id="access-to-the-geospatial-web-services">Access to the geospatial web services</h2>
 <p>The HREPA data is <a href="../../../msc-geomet/readme_en/#available-ogc-standards">available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards</a>.</p>
@@ -167,11 +167,13 @@
 <p>The <a href="../../../usage/readme_en/">usage overview page</a> provides generic information on using OGC services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the <a href="../../../usage/tutorials_en/">tutorials</a> and <a href="../../../msc-geomet/readme_en/#available-ogc-standards">technical documentation for MSC GeoMet geospatial web services</a> for detailed information.</p>
 <h3 id="available-layers">Available layers</h3>
 <p>To see which HREPA layers are served via MSC GeoMet consult the service's <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">WMS GetCapabilities document</a>. </p>
-<p>Four layers are available for HREPA:
-* pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)
-* cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) 
-* q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
-* q075[mm]: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) </p>
+<p>Four layers are available for HREPA:</p>
+<ul>
+<li>pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)</li>
+<li>cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) </li>
+<li>q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) </li>
+<li>q075[mm]: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) </li>
+</ul>
 <p>Desktop GIS software such as QGIS also makes it easy to <a href="../../../usage/tutorial_WMS_QGIS_en/">navigate the WMS Get Capabilities document as a layer tree</a>.</p>
 <h3 id="usage-tips">Usage tips</h3>
 <p>Retrieving the available model runs and forecast hours available for a given HREPA layer:</p>
