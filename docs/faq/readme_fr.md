@@ -73,14 +73,13 @@ Concernant les fils de données, les formats disponibles sont les suivants :
 
 * NUMERIC (ASCII)
 * Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC)
-* Format brut [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx), pour les anciens radars à bande C
 * Format brut [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5), pour les nouveaux radars à bande S
    
 ## Peut-on accéder aux données radar archivées?
 
 Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$.
 
-Les archives sont disponibles en format brut (IRIS/ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
+Les archives sont disponibles en format brut (ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
 [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
 
 Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse : ec.dps-client.ec@canada.ca

@@ -68,8 +68,7 @@ The raw data, as well as various other products, are provided by a [cost-recover
 For the data feeds, the following formats are available:
 
 * NUMERIC (ASCII)
-* GIF format (recent GIFs available for free on the MSC Datamart)
-* [IRIS](http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx) raw format for the old C-Band radars 
+* GIF format (recent GIFs available for free on the MSC Datamart) 
 * [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5) raw format for the new S-band radars
 
 ## Can I have archived radar data ?
@@ -78,7 +77,7 @@ Environment and Climate Change Canada does not have an online service to retriev
 
 The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 118$/hour, with a minimum charge of 118$, to retrieve/recreate the requested data.
 
-Archive data are available in either raw format (IRIS/ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
+Archive data are available in either raw format (ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
 Typical archived data retrieval requests require between 2-4 hours to process. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 
