@@ -185,6 +185,13 @@ Returns feature collection items that have `STATION_NUMBER = 10CD001`
     The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record.
     </br>
 
+### <span class="badge badge-light">Filter the list of properties of a queried element</span>
+
+Query a feature collection and return features for which the list of associated properties is restricted to the properties listed in the `properties=`. For example, the query below returns properties related to atmospheric pressure observations, in JSON format.
+</br>
+
+[https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&offset=0&sortby=-date_tm-value&url=CYRV&properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&f=json](https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&offset=0&sortby=-date_tm-value&url=CYRV&properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&f=json)
+
 ### <span class="badge badge-light">Combining filter parameters</span>
 
 Query all hydrometric daily mean data from a single station between 2001 and 2010:</br>
