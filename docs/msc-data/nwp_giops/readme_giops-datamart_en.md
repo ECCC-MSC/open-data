@@ -90,8 +90,7 @@ Note that since forecast hour 0 fields at 00Z are not time-averaged, one can sim
 
 ## Support
 
-If you have any questions about , please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
-
+If you have any questions about , please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
