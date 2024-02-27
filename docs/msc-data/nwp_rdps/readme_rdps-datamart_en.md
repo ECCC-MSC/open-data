@@ -111,7 +111,7 @@ Since September, 7th 2016, a mask called "No-data" has been added to our GRIB2 e
 
 ## Support
 
-If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 ## Announcements from the dd_info mailing list 
 

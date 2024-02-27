@@ -102,7 +102,7 @@ Notez que puisque les champs à l'heure de prévision 0 ne sont pas moyennés da
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+Pour toute question relative à ces données, merci de [nous contacter](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 

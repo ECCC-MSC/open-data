@@ -109,7 +109,7 @@ Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines va
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+Pour toute question relative à ces données, merci de [nous contacter]( https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 

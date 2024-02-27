@@ -78,7 +78,7 @@ The second line contains specific information for each radar such : `product_typ
 
 ## Support
 
-If you have any questions about these data, [please contact us](https://meteo.gc.ca/mainmenu/contact_us_f.html)
+If you have any questions about these data, [please contact us](https://meteo.gc.ca/mainmenu/contact_us_e.html)
 
 ## Announcements from the dd_info mailing list 
 

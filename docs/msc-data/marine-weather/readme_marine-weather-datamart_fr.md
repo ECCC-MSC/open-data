@@ -70,7 +70,7 @@ Une [__liste de noms d'emplacements et de codes de sites__](https://collaboratio
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 

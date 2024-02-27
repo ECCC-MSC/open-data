@@ -129,7 +129,7 @@ Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour 
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+Pour toute question relative à ces données, merci de [nous contacter](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 
