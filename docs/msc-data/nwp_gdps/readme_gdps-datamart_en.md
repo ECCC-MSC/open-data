@@ -107,7 +107,7 @@ Notes :
 
 ## Support
 
-If you have any questions about this data, please contact us at : https://weather.gc.ca/mainmenu/contact_us_e.html
+If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 ## Announcements from the dd_info mailing list 
 

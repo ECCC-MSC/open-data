@@ -63,7 +63,7 @@ Exemple de nom de fichier: 20220128T00Z_MSC_GDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072
 
 ## Support
 
-Pour toutes questions relative à ces données, merci de nous contacter à l'adresse suivante: https://meteo.gc.ca/mainmenu/contact_us_f.html
+Pour toutes questions relative à ces données, merci de [nous contacter](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 

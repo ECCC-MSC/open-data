@@ -129,7 +129,7 @@ Note: The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thou
 
 ## Support
 
-If you have any questions about this data, please contact us at: https://weather.gc.ca/mainmenu/contact_us_e.html
+If you have any questions about this data, [please contact](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 ## Announcements from the dd_info mailing list
 

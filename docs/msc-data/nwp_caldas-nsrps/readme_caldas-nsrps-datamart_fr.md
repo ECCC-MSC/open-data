@@ -83,7 +83,7 @@ Liste des variables pour chaque heure de validité de:
 
 ## Support
 
-Pour toute question relative à ces données, merci de nous contacter à l'adresse : https://meteo.gc.ca/mainmenu/contact_us_f.html
+Pour toute question relative à ces données, merci de [nous contacter](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
 ## Annonces de la liste de diffusion dd_info 
 

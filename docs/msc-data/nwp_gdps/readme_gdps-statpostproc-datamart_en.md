@@ -64,7 +64,7 @@ Filename example: 20220128T00Z_MSC_GDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
 
 ## Support
 
-If you have any questions about this data, please contact us at: https://weather.gc.ca/mainmenu/contact_us_e.html
+If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 ## Announcements from the dd_info mailing list 
 
