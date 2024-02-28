@@ -8,12 +8,6 @@
 
 ## 2023
 
-### 2 novembre 2023
-
-* [Ajout des observations CSR du satellite GOES-18 dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-2-novembre-2023)
-* [Ajout des observations CSR du satellite GOES-18 dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-jeudi-2-novembre-2023)
-* [Ajout des observations CSR du satellite GOES-18 dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-jeudi-2-novembre-2023)
-
 ### 12 décembre 2023
 
 * [Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps_fr.md#le-mardi-12-décembre-2023)
@@ -26,6 +20,12 @@
 ### 22 novembre 2023
 
 * [Correction aux variables de la densité de la neige et de l'albédo de la neige dans les sorties diagnostiques de SCanADS-SHRPD](nwp_caldas-hrdps/changelog_caldas-hrdps_fr.md#le-mercredi-22-novembre-2023)
+
+### 2 novembre 2023
+
+* [Ajout des observations CSR du satellite GOES-18 dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-2-novembre-2023)
+* [Ajout des observations CSR du satellite GOES-18 dans le SRPD](nwp_rdps/changelog_rdps_fr.md#le-jeudi-2-novembre-2023)
+* [Ajout des observations CSR du satellite GOES-18 dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-jeudi-2-novembre-2023)
 
 ### 20 septembre 2023
 
