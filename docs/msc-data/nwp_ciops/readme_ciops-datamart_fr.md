@@ -6,7 +6,7 @@
 
 # Données du Système de prévision côtier océan-glace (SPCOG) en format NetCDF 
 
-Les prévisions océan-glace horaires sont disponibles en format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'océan Atlantique. Le domaine Ouest inclue la côte Ouest du Canada et le Nord-Est de l'océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la mer de Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
+Les prévisions océan-glace horaires sont disponibles en format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 2km (0.03 x 0.02 degrées) pour le domaine Est couvrant le Fleuve Saint-Laurent, le Golfe du Saint-Laurent et une région Nord-Ouest de l'océan Atlantique. Le domaine Ouest inclue la côte Ouest du Canada et le Nord-Est de l'océan Pacifique à une résolution d'environ 2km (0.03 x 0.02 degrées). Un sous-domaine couvrant la mer des Salish est aussi disponible à plus haute résolution (500m ou 0.008 x 0.005 degrées).
 
 ## Adresse des données 
 
@@ -52,7 +52,7 @@ Un historique de plusieurs semaines est conservé dans ces répertoires.
 | nk | 68 |
 | résolution | 2km |
 
-### Domaine océanique sur la mer de Salish
+### Domaine océanique sur la mer des Salish
 
 ![Image du domain océanique CIOPS - Salish Sea](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-salishsea.png)
 
@@ -108,7 +108,7 @@ Les champs tridimensionnels sont disponibles sur 68 niveaux de profondeur dans l
 
 __Niveaux de profondeur (m)__ : 0,50752997, 1,55757, 2,6693399, 3,8578801, 5,1419101, 6,5445399, 8,0939703, 9,8241596, 11,775, 13,9924, 16,5266, 19,431101, 22,7589, 26,5595, 30,875799, 35,741402, 41,181301, 47,2131, 53,851898, 61,114101, 69,023003, 77,612503, 86,930801, 97,042702, 108,032, 120,001, 133,077, 147,408, 163,166, 180,552, 199,79201, 221,14301, 244,892, 271,358, 300,88901, 333,86499, 370,69, 411,79599, 457,62799, 508,642, 565,29401, 628,02802, 697,26099, 773,37, 856,68103, 947,45001, 1045,86, 1151,99, 1265,86, 1387,38, 1516,37, 1652,5699, 1795,67, 1945,3, 2101,03, 2262,4199, 2429,03, 2600,3799, 2776,04, 2955,5701, 3138,5701,3324,6399, 3513,45, 3704,6599, 3897,98, 4093,1599, 4289,96, 4488,1602.
 
-### Domaine océanique sur la mer de Salish
+### Domaine océanique sur la mer des Salish
 
 Les champs tridimensionnels sont disponibles sur 39 niveaux de profondeur dans le domaine océanique sur la mer de Salish.
 
