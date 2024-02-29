@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_fr.md) > [MSC data](../readme_fr.md) > Changements au SCanADS-SGPD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCanADS-SGPD
 
 ## Le mercredi 1er décembre 2021
 
