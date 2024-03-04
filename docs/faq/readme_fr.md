@@ -16,7 +16,8 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Pourquoi les files d’attente de message AMQP cessent après plusieurs heures d'inactivité ?](#pourquoi-les-files-d-attente-de-message-amqp-cessent-apres-plusieurs-heures-d-inactivite)
 * [Peut-on avoir accès aux données radar météorologiques ?](#peut-on-avoir-acces-aux-donnees-radar-meteorologiques)
 * [Peut-on accéder aux données radar archivées ?](#peut-on-acceder-aux-donnees-radar-archivees)
-* [Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?](#est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles)
+* [Lorsqu'on effectue un zoom sur la couche radar, on peut clairement voir les pixels. Appliquez-vous une interpolation spatiale sur les données radars en passant d'un niveau de zoom à un autre ?](#lorsqu-on-effectue-un-zoom-sur-la-couche-radar-on-peut-clairement-voir-les-pixels-appliquez-vous-une-interpolation-spatiale-sur-les-données-radars-en-passant-d-un-niveau-de-zoom-a-un-autre)             
+* [Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?](#est-ce-que-les-prévisions-historiques-des-modèles-de-prévision-numérique-du-temps-sont-disponibles)
 * [Comment être informé des changements aux bulletins ainsi qu'aux contenu et format des modèles de prévision numérique du temps ?](#comment-etre-informe-des-changements-aux-bulletins-ainsi-qu-aux-contenu-et-format-des-modeles-de-prevision-numerique-du-temps)
 * [Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?](#comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles-de-prevision-numerique-du-temps)
 * [Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?](#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables)
@@ -30,7 +31,7 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [À quelle fréquence les données d’observations rassemblées par province et territoire sont-elles rafraichies ?](#a-quelle-frequence-les-donnees-d-observations-rassemblees-par-province-et-territoire-sont-elles-rafraichies)
 * [Où pourrais-je trouver les données de bouées ?](#ou-pourrais-je-trouver-les-donnees-de-bouee)
 * [Comment faire pour accéder aux avertissements ?](#comment-faire-pour-acceder-aux-avertissements)
-* [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?](# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements)
+* [Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?](#quelles-sont-les-principales-différences-entre-un-fil-de-données-atom-et-le-protocole-amqp-pour-accéder-aux-avertissements)
 * [Les images satellitaires sont-elles disponibles ?](#les-images-satellitaires-sont-elles-disponibles)
 * [Les données de foudre sont-elles disponibles ?](#les-donnees-de-foudre-sont-elles-disponibles)
 * [Comment obtenir les températures minimales et maximales en format JSON ?](#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-json)
@@ -96,6 +97,10 @@ Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail
 |Date de livraison désirée (quand?) |       |
 |Autres informations |       |
 |Coordonnées de facturation |      |
+
+##  Lorsqu'on effectue un zoom sur la couche radar, on peut clairement voir les pixels. Appliquez-vous une interpolation spatiale sur les données radars en passant d'un niveau de zoom à un autre ?
+
+La résolution originale des données radar est de 1 km, et notre système d'affichage n'applique aucun traitement supplémentaire, tel qu'une interpolation spatiale, en passant d'un niveau de zoom à un autre.
 
 ## Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?
 
@@ -270,3 +275,6 @@ Une plateforme de discussion consacrée aux données ouvertes du SMC a été mis
 [http://meteocentre.com/help/msc-open-data/](http://meteocentre.com/help/msc-open-data/)
 
 Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'ECCC ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
+
+
+[def]: #est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles
