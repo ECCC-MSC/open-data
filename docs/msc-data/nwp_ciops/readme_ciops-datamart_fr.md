@@ -110,7 +110,7 @@ __Niveaux de profondeur (m)__ : 0,50752997, 1,55757, 2,6693399, 3,8578801, 5,141
 
 ### Domaine océanique sur la mer des Salish
 
-Les champs tridimensionnels sont disponibles sur 39 niveaux de profondeur dans le domaine océanique sur la mer de Salish.
+Les champs tridimensionnels sont disponibles sur 39 niveaux de profondeur dans le domaine océanique sur la mer des Salish.
 
 __Niveaux de profondeur (m)__ : 0,5, 1,5, 2,50001, 3,50003, 4,5000701, 5,5001502, 6,5003099, 7,5006199, 8,5012398, 9,50243, 10,5048, 11,5093, 12,5182, 13,5354, 14,569, 15,6343, 16,7612, 18,007099, 19,4818, 21,389999, 24,1003, 28,2299, 34,685799, 44,5177, 58,484299, 76,585602, 98,063004, 121,867, 147,089, 173,114, 199,573, 226,25999, 253,067, 279,935, 306,83401, 333,75, 360,67499, 387,603, 414,534.
 
