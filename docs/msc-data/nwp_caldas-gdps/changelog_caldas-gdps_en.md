@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CaLDAS-GDPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md)
 
 ## Wednesday December 1st, 2021
 

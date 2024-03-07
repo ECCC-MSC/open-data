@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [DHPS](readme_dhps_en.md) > DHPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md)
 
 # Chronology of changes to the Deterministic Hydrological Prediction System (DHPS)
 

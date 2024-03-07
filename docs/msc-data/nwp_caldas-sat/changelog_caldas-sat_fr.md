@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCanADS-Sat](readme_caldas-sat_fr.md) > Changements au SCanADS-Sat
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md)
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface avec observations satellitaires (SCanADS-Sat)
 
