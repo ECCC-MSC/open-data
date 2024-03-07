@@ -52,7 +52,7 @@ Le fichier représente le 50e percentile de l'indice de précipitations et d’�
 
 ## Support
 
-Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
+Pour toute question relative à ces données, merci de [nous contacter](mailto:info.cccs-ccsc@canada.ca).
 
 ## Annonces de la liste de diffusion dd_info 
 

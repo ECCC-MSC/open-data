@@ -77,7 +77,7 @@ The available variables and units for the CMIP5 datasets on the MSC Datamart are
 
 ## Support
 
-If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
+If you have any questions about this data, please [contact us](mailto:info.cccs-ccsc@canada.ca).
 
 ## Announcements from the dd_info mailing list 
 

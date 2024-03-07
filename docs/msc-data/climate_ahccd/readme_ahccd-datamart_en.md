@@ -67,7 +67,7 @@ Example :  AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 ## List of variables
 
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:ec.dps-client.ec@canada.ca) for more information.
+Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:info.cccs-ccsc@canada.ca) for more information.
 
 The available variables and units for AHCCD are :
 
@@ -83,7 +83,7 @@ The available variables and units for AHCCD are :
 
 ## Support
 
-If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
+If you have any questions about this data, please [contact us](mailto:info.cccs-ccsc@canada.ca).
 
 ## Announcements from the dd_info mailing list 
 
