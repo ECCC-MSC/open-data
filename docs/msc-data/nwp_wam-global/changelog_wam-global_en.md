@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > WAM-Global Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md)
 
 # Chronology of changes to the WAM-Global wave prediction system
 
