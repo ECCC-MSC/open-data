@@ -67,7 +67,7 @@ Exemple : AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 ## Liste des variables
 
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:ec.dps-client.ec@canada.ca) pour plus d'information.
+Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:info.cccs-ccsc@canada.ca) pour plus d'information.
 
 La liste des variables DCCAH est :
 
@@ -83,7 +83,7 @@ La liste des variables DCCAH est :
 
 ## Support
 
-Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
+Pour toute question relative à ces données, merci de [nous contacter](mailto:info.cccs-ccsc@canada.ca).
 
 ## Annonces de la liste de diffusion dd_info 
 
