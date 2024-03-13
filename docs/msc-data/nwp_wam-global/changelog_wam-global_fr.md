@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au WAM-Global
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md)
 
 # Chronologie des changements apportés au Système de vague WAM-Global
 

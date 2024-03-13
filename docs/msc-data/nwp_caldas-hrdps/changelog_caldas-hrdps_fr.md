@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCanADS-SHRPD](readme_caldas-hrdps_fr.md) > Changements au SCanADS-SHRPD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) 
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD)
 

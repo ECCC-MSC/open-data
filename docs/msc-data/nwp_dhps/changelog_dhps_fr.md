@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPHD](readme_dhps_fr.md) > Changements au SPHD
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md)
 
 # Chronologie des changements apportés au Système de prévision hydrologique déterministe (SPHD)
 
