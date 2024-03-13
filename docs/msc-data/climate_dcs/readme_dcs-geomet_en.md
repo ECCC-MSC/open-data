@@ -73,7 +73,7 @@ Legends:
 
 ## Support
 
-The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](mailto:info.cccs-ccsc@canada.ca).
+The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
 
 ## Announcement mailing list
