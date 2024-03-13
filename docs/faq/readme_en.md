@@ -15,6 +15,7 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Why are message queues terminated after several hours of inactivity when using AMQP ?](#why-are-message-queues-terminated-after-several-hours-of-inactivity-when-using-amqp)
 * [Can I have weather radar data ?](#can-i-have-weather-radar-data)
 * [Can I have archived radar data ?](#can-i-have-archived-radar-data)
+* [When you zoom in on the radar layer, you can clearly see the pixels. Do you apply spatial interpolation to radar data when moving from one zoom level to another?](#when-you-zoom-in-on-the-radar-layer-you-can-clearly-see-the-pixels-do-you-apply-spatial-interpolation-to-radar-data-when-moving-from-one-zoom-level-to-another)
 * [Are historical data forecasts from your numerical weather prediction models available ?](#are-historical-data-forecasts-from-your-numerical-weather-prediction-models-available)
 * [How to be informed of any change to bulletins or numerical weather prediction model format and content ?](#how-to-be-informed-of-any-change-to-bulletins-or-numerical-weather-prediction-model-format-and-content)
 * [How to be informed about problems with  numerical weather prediction model data production ?](#how-to-be-informed-about-problems-with-numerical-weather-prediction-model-data-production)
@@ -94,6 +95,10 @@ Typical archived data retrieval requests require between 2-4 hours to process. I
 |Expected delivery date (when?) |       |
 |Other information |       |
 |Billing name and coordinates |       |
+
+## When you zoom in on the radar layer, you can clearly see the pixels. Do you apply spatial interpolation to radar data when moving from one zoom level to another?
+
+The original resolution of the radar data is 1 km, and our display system does not apply any additional processing, such as spatial interpolation, when moving from one zoom level to another.
 
 ## Are historical data forecasts from your numerical weather prediction models available ?
 
