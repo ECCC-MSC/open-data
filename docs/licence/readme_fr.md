@@ -79,4 +79,4 @@ Les termes employés dans la présente licence ont la signification suivante :
 
 ## 9. Contrôle des versions
 
-Il s’agit de la version 2.0 de la licence d’utilisation finale des serveurs de données d’Environnement et Changement climatique Canada. Le Fournisseur d’Information peut apporter des modifications périodiques aux conditions de cette licence et produire une nouvelle version de celle-ci. Votre utilisation de l’Information sera régie par les conditions précisées dans la licence en vigueur à la date où vous avez accédé à l’Information.
+Il s’agit de la version 2.1 de la licence d’utilisation finale des serveurs de données d’Environnement et Changement climatique Canada. Le Fournisseur d’Information peut apporter des modifications périodiques aux conditions de cette licence et produire une nouvelle version de celle-ci. Votre utilisation de l’Information sera régie par les conditions précisées dans la licence en vigueur à la date où vous avez accédé à l’Information.
