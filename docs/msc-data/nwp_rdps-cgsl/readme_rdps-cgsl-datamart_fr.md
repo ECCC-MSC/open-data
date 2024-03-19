@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD couplé au Golfe du Saint-Laurent](readme_rdps-cgsl_fr.md) > SRPD couplé au Golfe du Saint-Laurent sur le Datamart du SMC
 
-# Données GRIB2 système régional de prévision déterministe couplé au Golfe du Saint-Laurent
+# Données GRIB2 Système régional de prévision déterministe couplé au Golfe du Saint-Laurent
 
-Cette page décrit les données [système régional de prévision déterministe couplé au Golfe du Saint-Laurent](readme_rdps-cgsl_fr.md) disponibles en format GRIB2.
+Cette page décrit les données [Système régional de prévision déterministe couplé au Golfe du Saint-Laurent](readme_rdps-cgsl_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données 
 

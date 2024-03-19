@@ -8,7 +8,7 @@
 
 ## Description du système
 
-Le système régional de prévision déterministe couplé au Golfe du Saint-Laurent est un modèle de circulation dont l’objectif est de mieux comprendre les régions marines côtières canadiennes. Ce système comprend deux composantes :
+Le Système régional de prévision déterministe couplé au Golfe du Saint-Laurent est un modèle de circulation dont l’objectif est de mieux comprendre les régions marines côtières canadiennes. Ce système comprend deux composantes :
 
 * Le cycle de pseudo-analyse océanique, incluant une analyse de glace basée sur l’insertion directe d’analyses d’images Radarsat (Smith et al., 2012),
 * Le cycle de prévision atmosphérique couplé.
@@ -17,7 +17,7 @@ Notons que le cycle de prévision du modèle couplé est une simulation de 48 he
 
 ### Spécifications techniques de la grille native (domaine de calcul)
 
-La composante atmosphérique comprend le système régional de prévision déterministe opérationnel (SRPD) configuré pour rouler sur une grille à aire limitée (LAM) qui est centrée sur le golfe du Saint-Laurent (GSL). Cette grille contient 360 par 400 points de grille dans l’horizontal avec un espacement de 10 km (0,09 degré) avec une projection latitude-longitude rectangulaire. Les conditions nécessaires aux frontières sont fournies aux heures par les prévisions du modèle régional opérationnel SRPD à la même résolution (0,09 degré).
+La composante atmosphérique comprend le Système régional de prévision déterministe opérationnel (SRPD) configuré pour rouler sur une grille à aire limitée (LAM) qui est centrée sur le golfe du Saint-Laurent (GSL). Cette grille contient 360 par 400 points de grille dans l’horizontal avec un espacement de 10 km (0,09 degré) avec une projection latitude-longitude rectangulaire. Les conditions nécessaires aux frontières sont fournies aux heures par les prévisions du modèle régional opérationnel SRPD à la même résolution (0,09 degré).
 
 Pour la composante océanique, le système utilise le modèle glace-océan NEMO 
 (Nucleus fro European Modeling of the Ocean) qui inclut un modèle de circulation 

@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SPCE](readme_wcps_fr.md) > SPCE couplées océan-atmosphère sur le Datamart du SMC
 
-# Données des prévisions couplées atmosphère-océan-glace de mer du système de prévision du cycle de l’eau (SPCE) en format NetCDF 
+# Données des prévisions couplées atmosphère-océan-glace de mer du Système de prévision du cycle de l’eau (SPCE) en format NetCDF 
 
 Les prévisions couplées atmosphère-océan-glace de mer de GEM-LAM avec NEMO-CICE sont disponibles aux heures au format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 1km (0.008 x 0.008 degré), sur le domaine des Grands Lacs, du fleuve Saint-Laurent et du Golfe du Saint-Laurent. 
 

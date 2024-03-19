@@ -8,9 +8,9 @@
 
 ## Le jeudi 17 septembre 2015
 
-### Mise à jour du système régional de prévision de glace (SRPG version 2.2) au Centre météorologique canadien (CMC)
+### Mise à jour du Système régional de prévision de glace (SRPG version 2.2) au Centre météorologique canadien (CMC)
 
-Le jeudi 17 septembre 2015 à partir de 0600 UTC, le Centre Météorologique Canadien (CMC) a procédé à une mise à jour du système régional de prévision de glace (SRPG version 2.2). Voici la liste des changements inclus dans cette mise à jour:
+Le jeudi 17 septembre 2015 à partir de 0600 UTC, le Centre Météorologique Canadien (CMC) a procédé à une mise à jour du Système régional de prévision de glace (SRPG version 2.2). Voici la liste des changements inclus dans cette mise à jour:
 
 * Assimilation des données AMSR2
 * Assimilation des cartes de glace régionales (hebdomadaires) du Service canadien des glaces
