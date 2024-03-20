@@ -2,10 +2,15 @@ Ce ticket rassemble toute l'information et les documents à fournir pour le syst
 
 __Documents à fournir (si pertinent)__:
 
-* [ ] Note technique
-* [ ] Spécifications techniques
-* [ ] Fiche technique ("_factsheet_")
-
+* Note technique
+    * [ ] Version francaise
+    * [ ] Version anglaise
+* Spécifications techniques
+    * [ ] Version francaise
+    * [ ] Version anglaise
+* Fiche technique ("_factsheet_")
+    * [ ] Version francaise
+    * [ ] Version anglaise
 
 __Informations à fournir dans la documentation publique__:
 
