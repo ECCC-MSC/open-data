@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.20
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * None
+* improvements:
+    * Add metadata link for MetNotes
+* bug fixes:
+    * None
+
 ## 2.5.19
 
 * date: 2024-02-21
