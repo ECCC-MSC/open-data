@@ -5,7 +5,7 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > SRPD sur le Datamart du SMC
 
 
-# Données GRIB2 du système régional de prévision déterministe (SRPD)
+# Données GRIB2 du Système régional de prévision déterministe (SRPD)
 
 Les champs du jeu de données GRIB2 du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles sur une grille polaire stéréographique de 935 x 824 points couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord.
 

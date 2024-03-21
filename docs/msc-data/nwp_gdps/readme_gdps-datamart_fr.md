@@ -7,7 +7,7 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD sur le Datamart du SMC
 
 
-# Données GRIB2 du système global de prévision déterministe (SGPD)
+# Données GRIB2 du Système global de prévision déterministe (SGPD)
 
 Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
 

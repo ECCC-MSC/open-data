@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPEV](readme_rewps_fr.md) > SRPEV sur le Datamart du SMC
 
-# Données GRIB2 du Système Régional de Prévision d'Ensemble de Vague (SRPEV)
+# Données GRIB2 du Système régional de prévision d'ensemble de vague (SRPEV)
 
-Cette page décrit les données [Système Régional de Prévision d'Ensemble de Vague (SRPEV)](readme_rewps_fr.md) disponibles en format GRIB2.
+Cette page décrit les données [Système régional de prévision d'ensemble de vague (SRPEV)](readme_rewps_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données
 

@@ -10,7 +10,7 @@ Le Système de prévision du cycle de l'eau (SPCE) simule le cycle complet de l�
 
 Le SPCE se compose de trois composantes : La composante Pseudo-analyse avec le modèle d'océan-glace NEMO-CICE, La composante de prévision avec la version à zone limitée du modèle atmosphérique GEM (GEM-LAM) couplé à NEMO-CICE et la composante de Rivières avec le modèle de routage de rivière WATROUTE. Ces composantes sont couplées les unes aux autres et représentent les processus dans l'atmosphère, à la surface de la terre et dans le sol (à une résolution de 10 km), dans les grandes masses d'eau et la glace marine (à une résolution de 1 km), et dans les rivières (à une résolution de 1 km).
 
-Le Système Global de Prévision Déterministe (SGPD) fournit les conditions initiales et latérales à une version du modèle numérique GEM-LAM couvrant l’est de l’Amérique du Nord, ce qui inclut la zone océanique entourant le golfe du Saint-Laurent. Toutes les 6 minutes, GEM-LAM communique à NEMO-CICE les précipitations qui se sont déposées à la surface des lacs et l'état de l'atmosphère proche de la surface au-dessus des Grands Lacs (lacs Supérieur, Michigan-Huron, Sainte-Claire, Érié et Ontario) et de la région du golfe du Saint-Laurent. NEMO informe le GEM-LAM de la température de l'eau de surface, de l'étendue de la couverture de glace et des flux de chaleur et de quantité de mouvement latents et sensibles. GEM-LAM fournit également des estimations horaires du ruissellement de surface à WATROUTE. À son tour, WATROUTE informe NEMO du ruissellement terrestre.
+Le Système global de prévision déterministe (SGPD) fournit les conditions initiales et latérales à une version du modèle numérique GEM-LAM couvrant l’est de l’Amérique du Nord, ce qui inclut la zone océanique entourant le golfe du Saint-Laurent. Toutes les 6 minutes, GEM-LAM communique à NEMO-CICE les précipitations qui se sont déposées à la surface des lacs et l'état de l'atmosphère proche de la surface au-dessus des Grands Lacs (lacs Supérieur, Michigan-Huron, Sainte-Claire, Érié et Ontario) et de la région du golfe du Saint-Laurent. NEMO informe le GEM-LAM de la température de l'eau de surface, de l'étendue de la couverture de glace et des flux de chaleur et de quantité de mouvement latents et sensibles. GEM-LAM fournit également des estimations horaires du ruissellement de surface à WATROUTE. À son tour, WATROUTE informe NEMO du ruissellement terrestre.
 
 ## Accès
 
@@ -19,7 +19,7 @@ Le Système Global de Prévision Déterministe (SGPD) fournit les conditions ini
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
 * [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
-* [Données des prévisions couplées atmosphère-océan-glace de mer du système de prévision du cycle de l'eau (SPCE) en format NetCDF  disponibles sur le Datamart du SMC](readme_wcps-atm-ocean-datamart_fr.md)  
+* [Données des prévisions couplées atmosphère-océan-glace de mer du Système de prévision du cycle de l'eau (SPCE) en format NetCDF  disponibles sur le Datamart du SMC](readme_wcps-atm-ocean-datamart_fr.md)  
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

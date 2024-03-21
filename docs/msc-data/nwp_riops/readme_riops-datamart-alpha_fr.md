@@ -4,17 +4,17 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPOG](readme_riops_fr.md) > Données NetCDF du SRPOG sur DD-Alpha
 
-# Données NetCDF du Système Régional de Prévision Océan-Glace (SRPOG)
+# Données NetCDF du Système régional de prévision océan-glace (SRPOG)
 
-Le Centre de prévision météorologique et environnementale du Canada (CPMEC) fournit des instantanés de champs prévisionnels de glace et des moyennes temporelles des champs océaniques prévisionnels produits par son système régional de prévision océan-glace (SRPOG) expérimental et interpolées sur une grille en projection polaire stéréographique nord d'une résolution de 5 km à une latitude de 60°N (ps5km60N).
+Le Centre de prévision météorologique et environnementale du Canada (CPMEC) fournit des instantanés de champs prévisionnels de glace et des moyennes temporelles des champs océaniques prévisionnels produits par son Système régional de prévision océan-glace (SRPOG) expérimental et interpolées sur une grille en projection polaire stéréographique nord d'une résolution de 5 km à une latitude de 60°N (ps5km60N).
 
 Les fichiers des données sont en format NetCDF (NetCDF-4 modèle classique), conformes aux conventions CF liées au climat et aux prévisions (Climate and Forecast Conventions).
 
 Le SRPOG utilise le modèle océan-glace NEMO-CICE et fournit des analyses et prévisions globales de 2 jours de l'océan et de la glace marine, quotidiennement à partir de [00, 12] UTC.
 
-Le SRPOG comprend une analyse 3DVar de la concentration de la glace (assimilant des observations satellitaires et des cartes de glace du service canadien des glaces) alors que les larges échelles de l'analyse océanique sont constraintes en rappelant spectralement les champs de température et de salinité vers ceux du système global de prévision océan-glace du CCMEP (qui lui inclut un système d'assimilation multivarié qui ingère des observations satellitaires ainsi que des observations in-situ).
+Le SRPOG comprend une analyse 3DVar de la concentration de la glace (assimilant des observations satellitaires et des cartes de glace du service canadien des glaces) alors que les larges échelles de l'analyse océanique sont constraintes en rappelant spectralement les champs de température et de salinité vers ceux du Système global de prévision océan-glace du CCMEP (qui lui inclut un système d'assimilation multivarié qui ingère des observations satellitaires ainsi que des observations in-situ).
 
-Les flux atmosphériques servant aux prévisions de 2 jours sont calculés par couplage entre NEMO-CICE et le modèle atmosphérique du système canadien de prévision de l'Arctique SCPA. Comme tel, les prévisions du SRPOG décrites ici sont maintenant générées directement dans le [SCPA](../nwp_caps/readme_caps_fr.md).
+Les flux atmosphériques servant aux prévisions de 2 jours sont calculés par couplage entre NEMO-CICE et le modèle atmosphérique du Système canadien de prévision de l'Arctique SCPA. Comme tel, les prévisions du SRPOG décrites ici sont maintenant générées directement dans le [SCPA](../nwp_caps/readme_caps_fr.md).
 
 Ce système contribue de façon importante à diverses expériences scientifiques qui font partie de l'[année de la prévision polaire (YOPP)](https://www.polarprediction.net/) en fournissant des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien.
 

@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système régional de prévision d'ensemble (SRPE)
 
-Cette page décrit les données du [système régional de prévision d'ensemble](readme_reps_fr.md) disponibles en format GRIB2.
+Cette page décrit les données du [Système régional de prévision d'ensemble](readme_reps_fr.md) disponibles en format GRIB2.
 
 ## Adresse des données 
 

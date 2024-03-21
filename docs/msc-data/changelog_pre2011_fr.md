@@ -8,9 +8,9 @@
 
 ## Le mercredi 20 Octobre 2010
 
-### Mise en opération d'une version à aire limitée du système régional de prévision au Centre Météorologique Canadien
+### Mise en opération d'une version à aire limitée du Système régional de prévision au Centre Météorologique Canadien
 
-À partir du 20 octobre 2010 à compter de la passe 12 UTC, le système régional de prévision actuel du Centre Météorologique Canadien (CMC) sera remplacé par une version à aire limitée du modèle GEM appelée REG-LAM3D. Des modifications sont aussi apportées aux analyses.
+À partir du 20 octobre 2010 à compter de la passe 12 UTC, le Système régional de prévision actuel du Centre Météorologique Canadien (CMC) sera remplacé par une version à aire limitée du modèle GEM appelée REG-LAM3D. Des modifications sont aussi apportées aux analyses.
 
 Un des changements au modèle voit la grille à 15 km étendue vers l'ouest et vers le sud. Si aucune modification touchant la physique ou la dynamique du modèle régional n'a été faite ce nouveau système permettra de nouveaux développements dans la physique de la couche limite.
 
