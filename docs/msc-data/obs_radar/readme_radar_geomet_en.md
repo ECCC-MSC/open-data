@@ -65,9 +65,10 @@ North American radar extrapolation [1 km]:
 
 ### Usage tips
 
-Retrieving the list of latest radar layer timesteps available:
+Retrieving the list of latest layer timesteps available:
 
 * Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km radar snow layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RADAR_1KM_RSNO)
+* Users can also get the most up-to-date time dimensions for all radar layers with a time interval in minutes, in a single query, via the use of the `LAYERS_REFRESH_RATE=PT1M` query parameter. In addition, all layers with a time interval in minutes will be included in this WMS GetCapabilities. Example for the query: [https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
 
 WMS styles:

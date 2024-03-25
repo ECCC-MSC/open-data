@@ -54,9 +54,10 @@ West :
 
 ### Usage tips
 
-Retrieving the list of latest satellite layer timesteps available:
+Retrieving the list of latest layer timesteps available:
 
 * Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km satellite natural color layer: [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=GOES-East_1km_NaturalColor)
+* Users can also get the most up-to-date time dimensions for all satellite layers with a time interval in minutes, in a single query, via the use of the `LAYERS_REFRESH_RATE=PT1M` query parameter. In addition, all layers with a time interval in minutes will be included in this WMS GetCapabilities. Example for the query: [https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
 
 WMS styles:

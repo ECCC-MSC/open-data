@@ -22,6 +22,12 @@ There is a single main lightning density layer monitoring lightning across most 
 
 ### Usage tips
 
+Retrieving the list of latest layer timesteps available:
+
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the lightning density layer: [https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities&layer=Lightning_2.5km_Density](https://geo.weather.gc.ca/geomet?&service=WMS&version=1.3.0&request=GetCapabilities&layer=Lightning_2.5km_Density)
+* Users can also get the most up-to-date time dimensions for all layers that have a time interval in minutes, including lightning density, in a single query, via the use of the `LAYERS_REFRESH_RATE=PT1M` query parameter. In addition, all layers with a time interval in minutes will be included in this GetCapabilities. Example for the query: [https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities)
+* Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
+
 WMS styles:
 
 * The list of available WMS styles is provided in the WMS GetCapabilities response ([example of a WMS GetCapabilities request](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=Lightning_2.5km_Density))
