@@ -16,13 +16,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données MetNotes se trouvent à l'adresse :
 
-[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/metnotes](https://hpfx.collab.science.gc.ca/)
+[https://dd.meteo.gc.ca/metnotes](https://dd.meteo.gc.ca/metnotes)
 
-où :
-
-* __YYYYMMDD__ : Année, mois et jour 
-
-Un historique de plusieurs semaines est conservé dans ce répertoire.
+Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
 

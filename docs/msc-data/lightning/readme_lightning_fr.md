@@ -19,7 +19,7 @@ Le [Réseau Canadien de Détection de la Foudre](https://www.canada.ca/fr/enviro
 
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
-* [Données GeoTIFF disponibles sur HPFX, le serveur alternatif Datamart du SMC](readme_lightning-datamart_fr.md)
+* [Données GeoTIFF disponibles sur le Datamart du SMC](readme_lightning-datamart_fr.md)
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

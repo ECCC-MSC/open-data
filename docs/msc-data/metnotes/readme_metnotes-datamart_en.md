@@ -16,13 +16,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The MetNotes data are available at the following address:
 
-[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/WXO-DD/metnotes](https://hpfx.collab.science.gc.ca/)
+[https://dd.weather.gc.ca/metnotes](https://dd.weather.gc.ca/metnotes)
 
-where:
-
-* __YYYYMMDD__: Year, month and day
-
-A history of several weeks is kept in this directory.
+A history of 24 hours is kept in this directory.
 
 ## Filename nomenclature
 
