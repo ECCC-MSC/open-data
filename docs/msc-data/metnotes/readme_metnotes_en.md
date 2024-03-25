@@ -52,7 +52,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the MetNotes is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5fc7ab98-afa1-427b-87b6-658565cca575).
 
 ## Technical documentation
 

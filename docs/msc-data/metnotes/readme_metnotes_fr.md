@@ -52,7 +52,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées de MetNotes sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/5fc7ab98-afa1-427b-87b6-658565cca575).
 
 ## Documentation technique
 
