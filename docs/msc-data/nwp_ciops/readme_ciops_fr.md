@@ -6,7 +6,7 @@
 
 # Données et Produits du Système de prévision côtier océan-glace (SPCOG)
 
-Le Système de prévision côtier océan-glace (SPCOG) effectue des prévisions de 48 heures pour l'océan et la glace marine pour différents domaines (Est, Ouest, mer des Salish) quatre fois par jour à une résolution de 1/36°. La composante de pseudo-analyse est forcée aux frontières océaniques par le [Système régional de prévision océan-glace (SRPOG)](../msc-riops/readme_ciops_fr.md) et utilise une méthode de pilotage spectral dans l'océan profond pour corriger les grandes échelles vers la solution du SRPOG. Les champs de la pseudo-analyse sont utilisés afin d'initialiser la prévision de 00Z, les prévisions des passes 06, 12 et 18Z sont initialisées à partir de fichier de redémarrage à l'heure 6 de la prévision précédente. Le forçage atmosphérique pour les deux compostantes est fourni par le [Système à haute résolution de prévision déterministe (SHRPD)](../msc-hrdpps/readme_hrdps_fr.md) combiné spatialement et temporellement avec le [Système régional de prévision déterministe (SRPD)](../msc-rdps/readme_rdps_fr.md) (pour SPCOG-Ouest) ou le [Système global de prévision déterministe (SGPD)](../msc-gdps/readme_gdps_fr.md) (pour SPCOG-Est) pour les régions qui ne sont pas couvertes par le SHRPD.    
+Le Système de prévision côtier océan-glace (SPCOG) effectue des prévisions de 48 heures pour l'océan et la glace marine pour différents domaines (Est, Ouest, mer de Salish) quatre fois par jour à une résolution de 1/36°. La composante de pseudo-analyse est forcée aux frontières océaniques par le [Système régional de prévision océan-glace (SRPOG)](../msc-riops/readme_ciops_fr.md) et utilise une méthode de pilotage spectral dans l'océan profond pour corriger les grandes échelles vers la solution du SRPOG. Les champs de la pseudo-analyse sont utilisés afin d'initialiser la prévision de 00Z, les prévisions des passes 06, 12 et 18Z sont initialisées à partir de fichier de redémarrage à l'heure 6 de la prévision précédente. Le forçage atmosphérique pour les deux compostantes est fourni par le [Système à haute résolution de prévision déterministe (SHRPD)](../msc-hrdpps/readme_hrdps_fr.md) combiné spatialement et temporellement avec le [Système régional de prévision déterministe (SRPD)](../msc-rdps/readme_rdps_fr.md) (pour SPCOG-Ouest) ou le [Système global de prévision déterministe (SGPD)](../msc-gdps/readme_gdps_fr.md) (pour SPCOG-Est) pour les régions qui ne sont pas couvertes par le SHRPD.
 
 ## Accès
 
@@ -14,7 +14,8 @@ Le Système de prévision côtier océan-glace (SPCOG) effectue des prévisions 
 
 Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md)  :
 
-* [Données NetCDF disponibles sur le Datamart du SMC](readme_ciops-datamart_fr.md)
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_ciops-geomet_fr.md)
+* [Données NetCDF disponibles sur HPFX, le serveur alternatif du Datamart du SMC](readme_ciops-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -41,7 +42,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [Note technique du SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_ciops-west_f.pdf)
 * [Diagramme de dépendances du SPCOG-Ouest](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CIOPS-W_fr.svg)
 
-## Registre des changements 
+## Registre des changements
 
 La [chronologie des changements apportés au SPCOG](changelog_ciops_fr.md) est disponible.
 

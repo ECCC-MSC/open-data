@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add lightning, MetNotes and CIOPS on DD: DD pages adjusted
     * Links to Vimeo webinars for users records
     * Add GEWPS GeoMet subpage documentation with interactive map
+    * Add CIOPS GeoMet subpage documentation with interactive map
     * Add lightning GeoMet subpage
 * improvements:
     * Add metadata link for MetNotes
@@ -76,10 +77,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add CanSIPS GeoMet subpage documentation with interactive map
     * Add AQHI GeoMet subpage documentation with interactive map
     * Add RESPS GeoMet subpage documentation with interactive map
-    * Add AQHI GeoMet subpage documentation with interactive map
-    * Add RESPS GeoMet subpage documentation with interactive map
     * Add GOES GeoMet subpage documentation with interactive map
-    * Add lightning GeoMet subpage documentation
 * improvements:
     * None
 * bug fixes:
