@@ -16,6 +16,7 @@ WW3 (WAVEWATCH III® Development Group, WW3DG 2019) est un modèle spectral de p
 
 Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
+* [Données disponibles via l'API / les services web géospatiaux GeoMet-Météo](readme_gewps-geomet_fr.md)
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_gewps-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
