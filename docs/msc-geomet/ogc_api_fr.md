@@ -188,6 +188,13 @@ Retourne les éléments de la collection d'éléments qui ont `STATION_NUMBER = 
     Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Il s'agit alors de l'ensemble de l'enregistrement.
     </br>
 
+### <span class="badge badge-light">Filtrer la liste des propriétés d'un élément interrogé</span>
+
+Interroger une collection d'éléments et renvoyer les caractéristiques pour lesquelles la liste des propriétés associées est limitée aux propriétés énumérées dans la valeur `properties=`. Par exemple, la requête ci-dessous retourne des propriétés reliées aux observations de pression atmosphérique, au format JSON.
+</br>
+
+[https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&offset=0&sortby=-date_tm-value&url=CYRV&properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&f=json](https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&offset=0&sortby=-date_tm-value&url=CYRV&properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&f=json)
+
 ### <span class="badge badge-light">Combinaison de paramètres de filtre</span>
 
 Interroger toutes les données hydrométriques moyennes journalières d'une seule station entre 2001 et 2010 :</br>
