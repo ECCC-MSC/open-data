@@ -14,11 +14,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * None
+    * Add lightning, MetNotes and CIOPS on DD: DD pages adjusted
+    * Links to Vimeo webinars for users records
 * improvements:
     * Add metadata link for MetNotes
+    * Fix licence page (wrong number at the bottom of the page)
 * bug fixes:
-    * None
+    * General small improvements and fixes to various data subpages
 
 ## 2.5.19
 
