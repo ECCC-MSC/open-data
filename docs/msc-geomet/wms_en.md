@@ -31,8 +31,9 @@ A WMS GetCapabilities request is comprised of the following parameters:
 
 | Optional parameter                | Definition |
 | ------------------------- | ---------- |
-| LAYERS         | A vendor extension that allows a client to filter the GetCapabilities document for a single specific layer. This greatly reduces the size of the returned XML document|
-| LANG          | A vendor extension that allows a client to display the GetCapabilities document in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
+| LAYERS              | A vendor extension that allows a client to filter the GetCapabilities document for a single specific layer. This greatly reduces the size of the returned XML document|
+| LAYERS_REFRESH_RATE | An external parameter (vendor extension) allowing users to filter the GetCapabilities document for a request that will list all layers updated every minute. The accepted value for this parameter is: `PT1M` |
+| LANG                | A vendor extension that allows a client to display the GetCapabilities document in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
 Below are examples of a WMS GetCapabilities request for GeoMet-Weather and GeoMet-Climate :
 

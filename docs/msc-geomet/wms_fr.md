@@ -32,8 +32,9 @@ Une requête WMS GetCapabilities est composée des paramètres suivants :
 
 | Paramètres optionnels | Définition |
 | ------------------------- | ---------- |
-| LAYERS         | Un paramètre externe (vendor extension) permettant aux usagers de filter le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant|
-| LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut|
+| LAYERS              | Un paramètre externe (vendor extension) permettant aux usagers de filtrer le document GetCapabilities pour une couche spécifique. Ceci réduit significativement la grosseur du document XML résultant|
+| LAYERS_REFRESH_RATE | Un paramètre externe (vendor extension) permettant aux usagers de filtrer le document GetCapabilities pour une requête qui listera toutes les couches mises à jour toutes les minutes. La valeur acceptée pour ce paramètre est: `PT1M` |
+| LANG                | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) le document GetCapabilities. Si le paramètre n'est pas spécifié, le document GetCapabilities est retourné en anglais par défaut|
 
 Les exemples suivants illustrent une requête WMS GetCapabilities pour GeoMet-Météo et GeoMet-Climat.
 

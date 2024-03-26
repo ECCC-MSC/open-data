@@ -22,6 +22,12 @@ Il y a une seule couche principale de densité de foudre la surveillance de la f
 
 ### Conseils d'utilisation
 
+Récupération de la liste des derniers pas de temps disponibles :
+
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer vers une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la couche de densité de foudre : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=Lightning_2.5km_Density](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=Lightning_2.5km_Density)
+* Les utilisateurs peuvent également avoir les dimensions temporelles les plus à jour pour toutes les couches qui ont un intervalle de temps en minutes, dont celle de densité de foudre, en une seule requête, via l'utilisation du paramètre de requête `LAYERS_REFRESH_RATE=PT1M`. Exemple pour la requête : [https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities&lang=fr](https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities&lang=fr)
+* Davantage d'informations sont disponibles dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps)
+
 Styles WMS :
 
 * La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities ([exemple d'une requête WMS GetCapabilites](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&lang=fr&request=GetCapabilities&layer=Lightning_2.5km_Density))
