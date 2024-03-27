@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>2019 07 hackathon METEOHACK fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#hackathon-meteohack-2019-du-smc" class="nav-link">Hackathon METEOHACK 2019 du SMC</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#laureats" class="nav-link">Lauréats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../2019-07_hackathon-METEOHACK_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; Hackathon METEOHACK 2019-07</p>
+<h1 id="hackathon-meteohack-2019-du-smc">Hackathon METEOHACK 2019 du SMC</h1>
+<p>Cette page est consacrée au 1er hackathon METEOHACK du Service métérologique du Canada (SMC) qui a eu lieu à Montréal, au <a href="https://phi-centre.com/">Centre Phi</a>, et en ligne partout au Canada, du 8 au 10 juillet 2019, avec l’aide de la Direction générale des services ministériels et des finances, et de Services partagés Canada.</p>
+<p>Cet hackathon a mis au défi 150 innovateurs regroupés en 21 équipes réparties à travers le pays et 4 équipes internes à Environnement et Changement climatique Canada (ECCC). Le but était de démontrer, en-dedans de 48 h, le potentiel des données ouvertes du SMC dans le domaine des sciences de la Terre, à travers <strong>4 thèmes principaux</strong> :</p>
+<ul>
+<li><strong>La Terre et Nous</strong></li>
+</ul>
+<p><em>Combinez les données des sciences de la Terre et les données météorologiques avec des informations sociologiques et économiques pour générer de nouvelles compréhensions et perspectives sur les interactions humaines avec l’environnement.</em></p>
+<ul>
+<li><strong>Nouveaux publics</strong></li>
+</ul>
+<p><em>Trouvez de nouvelles applications touchant un public varié qui ne s’intéresse généralement pas aux données des sciences de la Terre et météorologiques : jeune public, étudiants, non- experts et diverses communautés socioculturelles.</em></p>
+<ul>
+<li><strong>Attention! Danger imminent!</strong></li>
+</ul>
+<p><em>Analysez les données des sciences de la Terre et météorologiques pour faciliter la surveillance des catastrophes naturelles et des phénomènes associés aux risques sur la santé et évaluer leurs impacts sur la vie et les biens.</em></p>
+<ul>
+<li><strong>Une représentation artistique de la Terre</strong></li>
+</ul>
+<p><em>Interprétez artistiquement les données des sciences de la Terre et les données météorologiques pour créer de belles visualisations de données, des expériences de réalité virtuelle, de la musique ou des œuvres d’art uniques</em></p>
+<p>Au cours de cet évènenement, des <strong>présentateurs invités</strong> de divers horizons sont venus parler de domaines d'activité entourant les thèmes proposés et présenter des sources d'informations et de données ouvertes utilisables dans le cadre du marathon de programmation :</p>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/SILLS_CMOS-IUGG-2019_Hackthon_final.pptx">Tornado data in Canada - version anglaise seulement</a> - David Sills de Western Engineering</li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/OGSL_MeteoHack.pptx">Observatoire global du Saint Laurent (OGSL)</a> - Maxime Lévesque</li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/presentations/hackathon_guest-speakers/Meteohack_ExperienceUtilisateur101.pdf">Initiation à l'expérience utilisateur (UX)</a> - Catherine Dionne de Ergoweb </li>
+</ul>
+<h1 id="laureats">Lauréats</h1>
+<p>Le 11 juillet 2019, un <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf"><strong>jury prestigieux</strong></a> composé de juges internes et externes a choisi les lauréats dans chacune catégories et a nommé l'équipe <strong>Red Leaf, le grand champion</strong> pour son application <a href="https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1">"Harnessing Weather Data to Correlate Product Sales and Inventory Management"</a>.</p>
+<p>Les lauréats de METEOHACK 2019 sont les suivants :</p>
+<ul>
+<li>Catégorie "La Terre et nous" : <a href="https://www.youtube.com/watch?v=k9SNqhikcmw&amp;feature=youtu.be">Heat Crime</a></li>
+<li>Catégorie "Nouveaux publics" : <a href="https://www.loom.com/share/ab59c8e1570646e6b0afa1eb487ecae1">Red Leaf</a></li>
+<li>Catégorie "Attention! Danger imminent!" : <a href="https://www.youtube.com/watch?v=nYdaN7RUibE&amp;feature=youtu.be">GEOHACK</a></li>
+<li>Catégorie "Une représentation artistique de la Terre" : <a href="https://www.youtube.com/watch?v=KWMnSSIYstY">Data-Quintet</a></li>
+<li>Catégorie "Étudiant" : <a href="https://www.youtube.com/watch?v=nYdaN7RUibE&amp;feature=youtu.be">EnvironmentJusticeMap</a></li>
+<li>Catégorie "Source ouverte (open source)" : <a href="https://www.youtube.com/watch?v=rlS7Bt2pwnc&amp;feature=youtu.be">Twisty Wind</a></li>
+</ul>
+<p>Un <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/meteohack/summary/METEOHACK_Event_Summary_fr.pdf"><strong>rapport d'évènement</strong></a> complet et détaillé est disponible rassemblant l'ensemble des soumissions et les détails sur les lauréats. </p>
+<p><a href="http://www.youtube.com/watch?v=DNlTntWKTtA" title="Grand champion de METEOHACK 2019 : Red Leaf"><img alt="Red Leaf" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/meteohack_2019/Red.Leaf_2019.jpg" /></a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

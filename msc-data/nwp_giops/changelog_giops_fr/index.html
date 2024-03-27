@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog giops fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-au-systeme-global-de-prevision-ocean-glace-sgpog" class="nav-link">Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-novembre-2023" class="nav-link">Le mardi 28 novembre 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mercredi-3-juillet-2019" class="nav-link">Mercredi 3 juillet, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1-novembre-2017" class="nav-link">Le mercredi 1 novembre 2017</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-juin-2016" class="nav-link">Le mardi 21 juin 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-20-aout-2015" class="nav-link">Le jeudi 20 août 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_giops_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_giops_fr/">SGPOG</a> &gt; Changements au SGPOG</p>
+<h1 id="chronologie-des-changements-apportes-au-systeme-global-de-prevision-ocean-glace-sgpog">Chronologie des changements apportés au Système global de prévision océan-glace (SGPOG)</h1>
+<h2 id="le-mardi-28-novembre-2023">Le mardi 28 novembre 2023</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-ocean-glace-sgpog-341-du-centre-meteorologique-canadien-cmc">Mise à jour du Système global de prévision océan-glace (SGPOG) 3.4.1 du Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 28 novembre 2023, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.4.1 de son Système global de prévision océan-glace (SGPOG).</p>
+<p>Le seul changement inclus dans cette version est l’ajout d’un volet de contrôle de la qualité pour les observations "in situ" utilisées dans l’assimilation de données.</p>
+<p>Une copie de la note officielle documentant ce changement est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-341_f.pdf">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPOG 3.4.1 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.4.1_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-du-sgpog-a-la-version-340-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour du SGPOG à la version 3.4.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-ocean-glace-sgpog-330-du-centre-meteorologique-canadien-cmc">Mise à jour du Système global de prévision océan-glace (SGPOG) 3.3.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.3.0 de son Système global de prévision océan-glace (SGPOG).</p>
+<p>Les changements majeurs de cette mise à jour se résument ainsi:</p>
+<ul>
+<li>Inclusion du cycle diurne.</li>
+<li>Paramétrage de la rigidité de la glace.</li>
+<li>Coefficient de rugosité de la glace pour ajuster à la valeur utilisée dans GEM.</li>
+<li>Utilisation des forçages atmosphériques provenant de l'assimilation plutôt que de la prévision.</li>
+<li>Introduction d’un nouveau système de monitoring.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPOG 3.3.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.3.0_f.pdf">est disponible ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-330_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jours-du-sgpog-a-la-version-321-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jours du SGPOG à la version 3.2.1 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="mercredi-3-juillet-2019">Mercredi 3 juillet, 2019</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-ocean-glace-sgpog-300-du-centre-meteorologique-canadien-cmc">Mise à jour du Système global de prévision océan-glace (SGPOG) 3.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 3 juillet 2019, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son Système global de prévision océan-glace (SGPOG).
+Les changements majeurs de cette mise à jour se situent principalement dans la composante prévision.</p>
+<ul>
+<li>Mise à jour vers SAM2 (Système d'Assimilation Mercator).</li>
+<li>La nouvelle analyse de température de surface de la mer et de glace marine a une plus haute résolution (0.10 degré).</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281844___55878">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPOG 3.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.0.0_f.pdf">est disponible ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-300_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mercredi-1-novembre-2017">Le mercredi 1 novembre 2017</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-ocean-glace-sgpog-23-du-centre-meteorologique-canadien-cmc">Mise à jour du Système global de prévision océan-glace (SGPOG) 2.3 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 1er novembre 2017, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3 de son Système global de prévision océan-glace (SGPOG).</p>
+<p>Les changements majeurs de cette mise à jour se situent principalement dans la composante prévision:</p>
+<ul>
+<li>Introduction d'un couplage bi-directionnel entre les composante de prévision du SGPD et du SGPOG. Ce couplage permet une interaction bi-directionnel entre le modèle atmosphérique et le modèle océan-glace, de telle sorte que l'évolution des conditions marines influence l'atmosphère dans le SGPD qui en retour influence la prévision des champs océan-glace du SGPOG.</li>
+</ul>
+<p>La composante de assimilation de SGPOG n'est pas modifié de façon significative dans cette mise à jour.</p>
+<p>L'announce officielle pour l'implantation de ces changements est incluse dans le GENOT émis pour le <a href="../../nwp_gdps/changelog_gdps_fr/">SGPD 6.0.0</a>.</p>
+<p>Une note technique à ce sujet (en anglais) <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-230_e.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-21-juin-2016">Le mardi 21 juin 2016</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-ocean-glace-sgpog-21-du-centre-meteorologique-canadien-cmc">Mise à jour du Système Global de Prévision Océan-Glace (SGPOG) 2.1 du Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 21 juin 2016, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.1 de son Système Global de Prévision Océan-Glace (SGPOG).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour pour la composante assimilation de ce système:</p>
+<ul>
+<li>Le code source du système d'assimilation Mercator (SAM) est mis à jour à la version utilisé par le centre Mercator-Océan depuis juin 2015:<ul>
+<li>Approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).</li>
+<li>Plusieurs raffinements dans le kernel d'analyse.</li>
+</ul>
+</li>
+<li>L'introduction d'une topographie dynamique moyenne (MDT) ameliorée.</li>
+<li>L'utilisation des observations bogus de température et de salinité dans des régions cles comme dans les eaux sous la glace marine.</li>
+<li>Raffinement dans l'utilisation de l'erreur d'observation de la température de la surface de la mer (sst).</li>
+</ul>
+<p>La composante de prévision de SGPOG n'est pas modifié de façon significative.</p>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211410___00536">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet (en anglais) <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-210_e.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-jeudi-20-aout-2015">Le jeudi 20 août 2015</h2>
+<h3 id="le-centre-meteorologique-canadien-declare-le-statut-operationnel-pour-le-sgpog-version-111">Le Centre Météorologique Canadien déclare le statut opérationnel pour le SGPOG version 1.1.1</h3>
+<p>Le jeudi 20 août 2015, le Centre Météorologique Canadien (CMC) à déclaré le statut opérationnel pour son Système Global de Prévision Océan-Glace (SGPOG) version 1.1.1.</p>
+<p>Une copie de la note officielle annoncant ce changement <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2015/07/08/NOCN03_CWAO_081635___00168">est disponible en cliquant ici</a>.</p>
+<p>La documentation technique du système SGPOG est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_giops-111_e.pdf">via ce lien</a> (en anglais, version française disponible sous peu).</p>
+<p>Un manuel des produits du SGPOG qui contient la description des sorties du système est aussi disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/product_manual_giops-111_f.pdf">via ce lien</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

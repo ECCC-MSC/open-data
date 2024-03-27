@@ -1,0 +1,5 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Hauteur de la surface de la mer relative au niveau moyen de l’eau,zos,Surface,m
+Hauteur de la surface de la mer relative à la plus haute mer astronomique du modèle,zos,Surface,m
+Hauteur de la surface de la mer relative à la plus basse mer astronomique du modèle,zos,Surface,m
+Onde de tempête,etas,Surface,m

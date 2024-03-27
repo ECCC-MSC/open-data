@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog raqdps en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-regional-air-quality-deterministic-prediction-system-raqdps" class="nav-link">Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-december-1st-2021" class="nav-link">Wednesday December 1st, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-21-2020" class="nav-link">Tuesday January 21, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-3-2019" class="nav-link">Wednesday July 3, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-september-18-2018" class="nav-link">Tuesday September 18, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-september-7-2016" class="nav-link">Wednesday September 7, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-april-7th-2016" class="nav-link">Thursday April 7th, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-june-11-2015" class="nav-link">Thursday June 11, 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-november-18th-2014" class="nav-link">Tuesday November 18th 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-february-26-2013" class="nav-link">Tuesday February 26, 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-october-3-2012" class="nav-link">Wednesday October 3 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-december-22-2011" class="nav-link">Thursday December 22, 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_raqdps_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; RAQDPS Changelog</p>
+<h1 id="chronology-of-changes-to-the-regional-air-quality-deterministic-prediction-system-raqdps">Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)</h1>
+<h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
+<h3 id="upgrade-to-version-24-of-the-raqdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 24 of the RAQDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a>.</p>
+<h2 id="wednesday-december-1st-2021">Wednesday December 1st, 2021</h2>
+<h3 id="upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps">Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS)</h3>
+<p>On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 22 to version 23.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>The RAQDPS is now piloted by <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/">RDPS v8.0.0</a>, rather than RDPS v7.1.0.</li>
+<li>New anthropogenic emissions inventories<ul>
+<li>Canada:  From 2013 Air Pollutant Emission Inventory (APEI) to projected 2020 APEI.</li>
+<li>U.S.:    From 2017 projected National Emissions Inventory to projected 2023 NEI.</li>
+<li>Mexico:  From 2008 National Emissions Inventory (NEI) to projected 2023 NEI.</li>
+</ul>
+</li>
+<li>Improved representation of particle sedimentation</li>
+<li>New meteorological and chemical libraries <ul>
+<li>Meteorology:  GEM 5.0.2 =&gt; GEM 5.1.0</li>
+<li>Chemistry:    GEM-MACH 3.0.0.2 =&gt; GEM-MACH 3.1.0.0</li>
+</ul>
+</li>
+</ul>
+<p>A brief summary of the innovations included in this upgrade and their impact on performance <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps023_e.pdf">can be found in this document</a></p>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">is available at this link</a>.</p>
+<p>The technical specifications document for RAQDPS 23 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_e.pdf">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-january-21-2020">Tuesday January 21, 2020</h2>
+<h3 id="upgrade-to-version-2200-of-the-raqdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 22.0.0 of the RAQDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="wednesday-july-3-2019">Wednesday July 3, 2019</h2>
+<h3 id="upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps-and-firework-prediction-system">Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) and FireWork Prediction System</h3>
+<p>On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS), and it's companion system, FireWork, from version 20 to version 21.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>The RAQDPS is now piloted by <a href="/../nwp_rdps/changelog_rdps_en.md#wednesday-july-3-2019">RDPS v7.0.0</a>, rather than RDPS v6.0.0.</li>
+<li>Upgrade from GEM v4.8-LTS.16 to GEM v5.0.0.  For more informations on GEM-5, please consult <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf">this document</a>.</li>
+<li>Improvements to chemistry processing.
+A copy of the official note announcing the implementation of these changes in RAQDPS is available <a href="https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281933___34219">at this link</a>.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes in FireWork is available <a href="https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281935___12903">at this link</a>.</p>
+<p>A technical note for RAQDPS with more details on this change is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-021_20190703_e.pdf">at this link</a>.</p>
+<p>A technical note for FireWork with more details on this change will be available soon.</p>
+<h2 id="tuesday-september-18-2018">Tuesday September 18, 2018</h2>
+<h3 id="upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps-and-firework-prediction-system_1">Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) and FireWork Prediction System</h3>
+<p>On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS), and it's companion system, FireWork, from version 19 to version 20.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>The meteorological analyses and pilot model are now linked to <a href="/../nwp_rdps/changelog_rdps_en.md#tuesday-september-18-2018">RDPS v6.0.0</a> rather than RDPS v5.1.0.</li>
+<li>Adoption of the RDPS v6.0.0 configuration, including recycling of key physics variables and the incremental analysis update (IAU) based meteorological initialization.</li>
+<li>Implementation of a new version of the RAQDPS model code (v2.3.1), to improve processing speed and provide increased robustness, as well as improve chemistry (gas-phase dry deposition over snow-covered surfaces and sea-ice).</li>
+<li>Introduction of a new set of input emissions files based on more recent national emissions inventories.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available <a href="https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412">at this link</a>.</p>
+<p>A technical note with more details on this change is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_e.pdf">at this link</a>.</p>
+<h2 id="wednesday-september-7-2016">Wednesday September 7, 2016</h2>
+<h3 id="major-upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps">Major Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS)</h3>
+<p>On Wednesday, September 7th, 2016, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 015 to version 016.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>
+<p>The version of GEM is upgraded from a modified v4.6.2 to v4.8.0.</p>
+</li>
+<li>
+<p>The meteorological analyses and pilot model are now linked to RDPS 5.0.0 rather than RDPS 4.2.0.</p>
+</li>
+<li>
+<p>The grid is rotated to correspond to the new RDPS 5.0.0 grid (see <a href="/../nwp_rdps/changelog_rdps_en.md#wednesday-september-7-2016">description of changes</a>).</p>
+</li>
+<li>
+<p>An important change is made to the use of the Monin-Obukov parameter.</p>
+</li>
+<li>
+<p>Other minor bug fixes.</p>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available <a href="https://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022109___00871">at this link</a>.</p>
+<p>A technical note with more details on these changes will be forthcoming on this page.</p>
+<h2 id="thursday-april-7th-2016">Thursday April 7th, 2016</h2>
+<h3 id="major-upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps_1">Major Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS)</h3>
+<p>On Thursday April 7th, 2016, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 013 (previously 1.5.4) to version 015. This update includes the following changes:</p>
+<ul>
+<li>
+<p>Slight change to the model grid size, though horizontal grid spacing (10 km) and grid orientation remain unchanged.</p>
+</li>
+<li>
+<p>The GEM model employed by the RAQDPS changes from version 3.3.8.2 to 4.6.2.</p>
+</li>
+<li>
+<p>New chemical lateral boundary conditions.</p>
+</li>
+<li>
+<p>Updates to the chemistry module, including two important bug fixes.</p>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available <a href="https://dd.meteo.gc.ca/doc/genots/2016/04/05/NOCN03_CWAO_051925___00885">at this link</a>.</p>
+<p>A technical note with more details on these changes will be forthcoming on this page.</p>
+<h2 id="thursday-june-11-2015">Thursday June 11, 2015</h2>
+<h3 id="upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps-at-the-canadian-meteorological-centre-cmc">Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Thursday, June 11 2015, the Canadian Meteorological Centre implemented a new emissions data set for the operational Regional Air Quality Deterministic Prediction System (RAQDPS). The new emissions set is based on the 2010 Canadian Inventory/2011 USA Inventory, updating from the 2006 Canadian Inventory/2005 USA Inventory.</p>
+<p>A copy of the official note announcing the implementation of these changes is available <a href="https://dd.meteo.gc.ca/doc/genots/2015/06/10/NOCN03_CWAO_101245___00612">at this link</a>.</p>
+<p>More technical/scientific details about this system is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/Technical_Note_GEM-MACH10_v1.5.3+SET2.1.1_Emissions_9Nov2015.pdf">at this link</a>.</p>
+<h2 id="tuesday-november-18th-2014">Tuesday November 18th 2014</h2>
+<h3 id="minor-upgrade-to-the-regional-air-quality-deterministic-prediction-system-raqdps-version-153-at-the-canadian-meteorological-centre">Minor Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) version 1.5.3 at the Canadian Meteorological Centre</h3>
+<p>On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS). The version of the system is changed from 1.5.2 to 1.5.3. The update include the following changes:</p>
+<ol>
+<li>
+<p>The system now feeds from the Regional Deterministic Prediction System (RDPS) version 4.0.0</p>
+</li>
+<li>
+<p>The GEM model employed by the RAQDPS changes from version 3.3.8.1 to 3.3.8.2.</p>
+</li>
+</ol>
+<h2 id="tuesday-february-26-2013">Tuesday February 26, 2013</h2>
+<h3 id="update-to-the-regional-air-quality-deterministic-prediction-system-raqdps-version-151-at-the-canadian-meteorological-centre">Update to the Regional Air Quality Deterministic Prediction System (RAQDPS - version 1.5.1) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday, February 26, 2013, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 1.5.1 of the Regional Air Quality Deterministic Prediction System (RAQDPS). This version contains three bug fixes in the chemistry component which bring significant improvements to the operational air quality forecast system.</p>
+<p>During the summer of 2012, three bugs were discovered in the RAQDPS, all of which had been present since operational implementation in 2009. The bugs mainly impacted wet removal of chemical species by convective precipitation (both rain-out and below-cloud scavenging); and vertical mixing particularly in stable atmospheric conditions.</p>
+<p>RAQDPS-1.5.1 has been tested extensively over the summer and winter of 2012. Objective evaluation scores indicate an improvement in RAQDPS-1.5.1 forecasts when compared to those of version 1.5.0 for the three main pollutants: ozone (O3), fine particulate matter (PM2.5), and nitrogen dioxide (NO2). The most significant improvement with RAQDPS-1.5.1 is observed for winter PM2.5 concentrations, especially for the daily maximum values. The new system represents better the observed values with an important reduction of the peak daily concentration in cases where the RAQDPS had over-forecast the PM2.5.</p>
+<p>Categorical scores such as: percentage correct, critical success index, and false alarm ratio show an improvement with RAQDPS-1.5.1 in both summer and winter seasons for all three pollutants: O3, NO2 and PM2.5.</p>
+<p>For approximately 90% of stations, UMOS-AQ performs similarly during both cold and warm seasons when connected to RAQDPS-1.5.0 and RAQDPS-1.5.1. For the majority of the remaining stations, UMOS-AQ performance is improved with RAQDPS-1.5.1.</p>
+<p>There will be no changes to product availability as a result of this implementation.</p>
+<p>A copy of the official note describing these changes and the verification work leading up to this implementation is available <a href="https://dd.weather.gc.ca/doc/genots/2013/02/26/NOCN03_CWAO_262210___00308">here</a>.</p>
+<p>A copy of the technical note with more details on this change is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_raqdps_20130226_e.pdf">at this link</a>.</p>
+<h2 id="wednesday-october-3-2012">Wednesday October 3 2012</h2>
+<h3 id="the-canadian-meteorological-centre-upgrades-the-regional-air-quality-deterministic-prediction-system-raqdps-to-version-15">The Canadian Meteorological Centre Upgrades the Regional Air Quality Deterministic Prediction System (RAQDPS) to version 1.5</h3>
+<p>On Wednesday October 3 2012, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 1.5.0 of the Regional Air Quality Deterministic Prediction System (RAQDPS). This version of RAQDPS replaces version 1.4.6 which was also formerly known as GEM-MACH15 which had been in service since November 2009.</p>
+<p>Improvements to the air quality forecast system are provided as a result of changes in grid resolution (from 15 to 10 km) and to the vertical grid spacing, an updated version of the GEM model, and an improved set of emissions files.</p>
+<p>Please note that this update is made necessary as a result of major upgrades to the Regional Deterministic Prediction System (RDPS) which provides initial and lateral boundary conditions to the RAQDPS. For details on the RDPS upgrade please refer to the information <a href="/../nwp_rdps/changelog_rdps_en.md">at this link</a>.</p>
+<p>Products from this system are expected to be available a few minutes later than they were previously, due to the slightly longer execution time caused by the model's higher resolution.</p>
+<p>A copy of the official note describing these changes is available <a href="https://dd.weather.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_022002___00095">at this link here</a>.</p>
+<p>A technical note with details on changes including version 1.5.0 and 1.5.1 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_raqdps_20121003_e.pdf">at this link here</a>.</p>
+<h2 id="thursday-december-22-2011">Thursday December 22, 2011</h2>
+<h3 id="the-canadian-meteorological-centre-implements-a-correction-for-gem-mach15">The Canadian Meteorological Centre implements a correction for GEM-MACH15</h3>
+<p>Starting with the 12 UTC run of December 22 2011, an updated binary was installed in the GEM-MACH15 system to better process humidity and cloud information in the very upper levels of the model's atmosphere.</p>
+<p>With this correction the GEM-MACH15 system is now versiuon 1.4.5.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

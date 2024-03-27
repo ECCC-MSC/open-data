@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog rdps fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-au-systeme-regional-de-prevision-deterministe-srpd" class="nav-link">Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-2-novembre-2023" class="nav-link">Le jeudi 2 novembre 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-14-septembre-2023" class="nav-link">Le jeudi 14 septembre 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-5-juillet-2023" class="nav-link">Le mercredi 5 juillet 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-8-mars-2023" class="nav-link">Le mercredi 8 mars 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-15-fevrier-2023" class="nav-link">Le mercredi 15 février 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-4-janvier-2023" class="nav-link">Le mercredi 4 janvier 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-3-novembre-2022" class="nav-link">Le jeudi 3 novembre 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-16-fevrier-2022" class="nav-link">Le mercredi 16 février 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-26-janvier-2021" class="nav-link">Le mardi 26 janvier 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-8-decembre-2020" class="nav-link">Le mardi 8 décembre 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-vendredi-26-juin-2020" class="nav-link">Le vendredi 26 juin 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-29-avril-2020" class="nav-link">Le mercredi 29 avril 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-avril-2020" class="nav-link">Le mardi 28 avril 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-23-juillet-2019" class="nav-link">Le mardi 23 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-juillet-2019" class="nav-link">Le mercredi 3 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-septembre-2018" class="nav-link">Le mardi 18 septembre 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-7-septembre-2016" class="nav-link">Le mercredi 7 septembre 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-15-decembre-2015" class="nav-link">Le mardi 15 décembre 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-novembre-2014" class="nav-link">Le mardi 18 novembre 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-6-mai-2014" class="nav-link">Le mardi 6 mai 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-7-novembre-2013" class="nav-link">Le jeudi 7 novembre 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-3-juillet-2013" class="nav-link">Le mardi 3 juillet 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mercredi-le-13-fevrier-2013" class="nav-link">Mercredi le 13 février, 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mercredi-le-19-octobre-2012" class="nav-link">Mercredi, le 19 octobre, 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-octobre-2012" class="nav-link">Le mercredi, 3 octobre 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-16-novembre-2011" class="nav-link">Le mercredi 16 novembre 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_rdps_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_rdps_fr/">SRPD</a> &gt; Changements au SRPD</p>
+<h1 id="chronologie-des-changements-apportes-au-systeme-regional-de-prevision-deterministe-srpd">Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)</h1>
+<h2 id="le-jeudi-2-novembre-2023">Le jeudi 2 novembre 2023</h2>
+<h3 id="ajout-des-observations-csr-du-satellite-goes-18-dans-le-srpd">Ajout des observations CSR du satellite GOES-18 dans le SRPD</h3>
+<p>Le jeudi 2 novembre 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-18.</p>
+<h2 id="le-jeudi-14-septembre-2023">Le jeudi 14 septembre 2023</h2>
+<h3 id="ajout-dobservations-commerciales-gnss-ro-de-planetiq-dans-le-srpd">Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SRPD</h3>
+<p>Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de petits satellites GNOMES de PlanetIQ.</p>
+<h2 id="le-mercredi-5-juillet-2023">Le mercredi 5 juillet 2023</h2>
+<h3 id="ajout-dobservations-commerciales-gnss-ro-de-spire-dans-le-srpd">Ajout d’observations commerciales GNSS-RO de Spire dans le SRPD</h3>
+<p>Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de nanosatellites LEMUR de Spire.</p>
+<h2 id="le-mercredi-8-mars-2023">Le mercredi 8 mars 2023</h2>
+<h3 id="correction-au-controle-de-qualite-des-observations-depaisseur-de-neige-provenant-des-stations-automatiques-canadiennes-dans-le-srpd">Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SRPD</h3>
+<p>Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.1 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Une modification au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes utilisée dans l'analyse de neige a été installée dans le SRPD.</p>
+<p>Des détails concernant la problématique, les changements apportés et les impacts sur l'analyse de neige et les performances du système sont disponibles <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_fr.pdf">via ce lien</a>.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426">via ce lien</a>.</p>
+<h2 id="le-mercredi-15-fevrier-2023">Le mercredi 15 février 2023</h2>
+<h3 id="ajout-des-observations-gpsro-du-satellite-sentinel-6a-dans-le-srpd">Ajout des observations GPSRO du satellite Sentinel-6A dans le SRPD</h3>
+<p>Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) du satellite Sentinel-6A.</p>
+<h2 id="le-mercredi-4-janvier-2023">Le mercredi 4 janvier 2023</h2>
+<h3 id="remplacement-des-vecteurs-vents-derives-a-partir-dimages-satellites-atmospheric-motion-wind-vector-de-goes-17-par-ceux-de-goes-18-dans-le-srpd">Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SRPD</h3>
+<p>Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Remplacement des vecteurs vents dérivés à partir d’images satellites provenant du satellite GOES-17 par ceux de GOES-18.</p>
+<h2 id="le-jeudi-3-novembre-2022">Le jeudi 3 novembre 2022</h2>
+<h3 id="ajout-des-observations-de-surface-provenant-des-bateaux-en-format-bufr-dans-le-srpd">Ajout des observations de surface provenant des bateaux en format BUFR dans le SRPD</h3>
+<p>Le jeudi 3 novembre 2022, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.1.0 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations de surface provenant des bateaux en format BUFR (Binary Universal Form for the Representation of meteorological data). Des observations TAC (Traditional Alphanumeric Codes) étaient déjà assimilées précédemment.</p>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-du-srpd-a-la-version-810-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour du SRPD à la version 8.1.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-16-fevrier-2022">Le mercredi 16 février 2022</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-grace-c-et-grace-d-dans-le-srpd">Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SRPD</h3>
+<p>Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites GRACE-C et GRACE-D.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-srpd-800-du-centre-meteorologique-canadien-cmc">Mise à jour du Système régional de prévision déterministe (SRPD) 8.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système régional de prévision déterministe (SRPD).</p>
+<p>Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-800_f.pdf">est disponible ici</a>.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">via ce lien</a>.</p>
+<p>Une note technique à ce sujet est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-800_f.pdf">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SRPD v8.0.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_8.0.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-26-janvier-2021">Le mardi 26 janvier 2021</h2>
+<h3 id="ajout-et-remplacement-dobservations-de-radiances-satellitaires">Ajout et remplacement d’observations de radiances satellitaires</h3>
+<p>Le mardi 26 janvier 2021, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure et de substituer les observations suivantes:</p>
+<ul>
+<li>Ajout des radiances micro-ondes de l’instrument MWHS-2 du satellite FY-3C</li>
+<li>Remplacement des radiances infrarouges de l’instrument IASI du satellite MetOp-2/A par celles de Metop-3/C</li>
+</ul>
+<h2 id="le-mardi-8-decembre-2020">Le mardi 8 décembre 2020</h2>
+<h3 id="ajout-dobservations-de-radiances-satellitaires">Ajout d’observations de radiances satellitaires</h3>
+<p>Le mardi 8 décembre 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<ul>
+<li>Ajout des radiances micro-ondes des instruments AMSUA et MHS du satellite MetOp-3/C</li>
+<li>Ajout des radiances infrarouges de l’instrument CrIS-FSR du satellite NPP</li>
+<li>Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-17</li>
+</ul>
+<h2 id="le-vendredi-26-juin-2020">Le vendredi 26 juin 2020</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-cosmic-ii">Ajout des observations GPSRO des satellites COSMIC-II</h3>
+<p>Le vendredi 26 juin 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites COSMIC II.</p>
+<h2 id="le-mercredi-29-avril-2020">Le mercredi 29 avril 2020</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-paz-et-kompsat-5">Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5</h3>
+<p>Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites PAZ et KOMPSAT-5.</p>
+<h2 id="le-mardi-28-avril-2020">Le mardi 28 avril 2020</h2>
+<h3 id="ajout-des-observations-amv-du-satellite-metop-3c">Ajout des observations AMV du satellite MetOp-3/C</h3>
+<p>Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations AMV (Atmospheric Motion Vector) du satellite MetOp-3/C.</p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jour-du-srpd-a-la-version-710-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour du SRPD à la version 7.1.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mardi-23-juillet-2019">Le mardi 23 juillet 2019</h2>
+<h3 id="ajout-dobservations-satellitaires-dans-les-systemes-de-prevision-suivants-du-centre-meteorologique-canadien-cmc-le-systeme-regional-de-prevision-deterministe-srpd">Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le Système régional de prévision déterministe (SRPD)</h3>
+<p>Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) a procédé à une mise à jour du Système régional de prévision déterministe (SRPD).</p>
+<p>Les composantes d'assimilation de données du SRPD ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.</p>
+<p>Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_f.pdf">via ce lien</a>.</p>
+<ul>
+<li>Le document des spécifications techniques pour le SRPD 7.0.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_f.pdf">via ce lien</a>.</li>
+</ul>
+<h2 id="le-mercredi-3-juillet-2019">Le mercredi 3 juillet 2019</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-srpd-700-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système régional de prévision déterministe (SRPD) 7.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 7.0.0 de son Système régional de prévision déterministe (SRPD).
+Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements au modèle de prévision :<ul>
+<li>Le <a href="../../nwp_gdps/changelog_gdps_fr/">SGPD v7.0.0</a> remplace le SGPD v6.1.0 comme modèle pilote.</li>
+<li>Mise à jour de GEM de la version v4.8-LTS.16 à la version GEM v5.0.0. Pour plus d'informations sur GEM-5, veillez consulter ce document (en anglais).</li>
+<li>Augmentation de la résolution verticale, passant de 80 à 84 niveaux.</li>
+<li>Amélioration su schéma de surface ISBA</li>
+</ul>
+</li>
+<li>Changements au système d'assimilation:<ul>
+<li>Temps de coupure uniforme de T+7h pour chaque passes de la journée</li>
+<li>Utilisation de la nouvelle analyse de température de mer à 0.1 deg de résolution plutot que 0.2 deg de résolution avant.</li>
+</ul>
+</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281756___39189">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques pour le SRPD 7.0.0 est disponible <a href="http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-18-septembre-2018">Le mardi 18 septembre 2018</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-srpd-600-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système régional de prévision déterministe (SRPD) 6.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son Système régional de prévision déterministe (SRPD).
+Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements au modèle de prévision :<ul>
+<li>Il n'y a pas de changement significatif dans la composante modèle de prévision.</li>
+</ul>
+</li>
+<li>Changements au système d'assimilation :<ul>
+<li>Introduction d'une stratégie de cyclage continu (comme le SGPD), en remplacement du cyclage intermittent utilisé précedemment.</li>
+<li>Augmentation de la résolution de l'incrément d'analyse dans le 4D-EnVar (de 50 à 37 km).</li>
+<li>Introduction de l'approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).</li>
+<li>Le modèle rapide de transfert radiatif pour l'assimilation de la radiance RTTOV a été mis à niveau, de la version 10.2 à la version 12.</li>
+<li>Ajustement des poids d'erreur de covariance pour donner plus de poids aux champs d'essai du SGPE.</li>
+</ul>
+</li>
+<li>Changements aux observations :<ul>
+<li>Plusieurs améliorations dans le traitement des observations radiosonde, AMV, des récepteurs GPS au sol et d'avions.</li>
+<li>Ajout des observations de surface du réseau METAR ainsi que des autres partenaires du SMC.</li>
+<li>Ajout de plusieurs canneaux de radiances CSR (radiance en ciel clair), principalement pour la vapeur d'eau.</li>
+</ul>
+</li>
+</ul>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171331___27584">est disponible via ce lien</a>.</p>
+<p>Une note technique avec plus de détails sur la version 6.0.0 de ce système <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-600_20180918_f.pdf">est disponible en cliquant ici</a>.</p>
+<p>Le document des spécifications techniques pour le SRPD 6.0.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_6.0.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mercredi-7-septembre-2016">Le mercredi 7 septembre 2016</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-srpd-500-du-centre-meteorologique-canadien-cmc">Mise à jour du système régional de prévision déterministe (SRPD) 5.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 7 septembre 2016, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements au modèle de prévision:<ul>
+<li>La version de GEM est mise à jour de v3.3.8.2-isba (niveaux verticales non décallés) à v4.8.2 (niveaux verticales décallés).</li>
+<li>Le système global de prévision déterministe (SGPD) remplace le "pilote" précédant grâce à l'introduction d'une nouvelle passe (la G0) qui a un temps de coupure de 120 minutes.</li>
+<li>Une nouvelle grille basée sur la grille Yin du SGPD remplace la grille lat-lon existante.</li>
+<li>La représentation des sorties du modèle à la surface a été modifiée.</li>
+<li>Le séquenceur de tâches OCM a été remplacé par le nouveau séquenceur Maestro.</li>
+</ul>
+</li>
+<li>Changements au système d'assimilation:<ul>
+<li>Aucune.</li>
+</ul>
+</li>
+<li>Changements aux observations:<ul>
+<li>Aucune.</li>
+</ul>
+</li>
+</ul>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022052___00869">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SRPD 5.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_5.0.0_f.pdf">est disponible ici</a>.</p>
+<h2 id="le-mardi-15-decembre-2015">Le mardi 15 décembre 2015</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-srpd-410-du-centre-meteorologique-canadien-cmc">Mise à jour du système régional de prévision déterministe (SRPD) 4.1.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 15 décembre 2015, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.1.0 de son système régional de prévision déterministe (SRPD).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements au modèle de prévision:<ul>
+<li>L'espacement horizontal entre les points de grille du modèle pilote global est réduite de 33 km à 25 km.</li>
+<li>Les conditions latérales aux frontières du modèle pilote sont maintenant livrées à toutes les 30 minutes plutôt qu'aux 60 minutes.</li>
+</ul>
+</li>
+<li>Changements aux observations:<ul>
+<li>Ajout des observations de radiance de 17 canaux de l'instrument satellitaire Advanced Microwave Sounding Unit (ATMS).</li>
+<li>Ajout de 103 canaux de l'instrument satellitaire Cross-track Infrared Sounder (CrIS).</li>
+<li>Ajout des observations de plus de 600 récepteurs GPS au sol - la plupart en Europe.</li>
+<li>L'application des corrélations inter-canaux pour toutes les données de radiance infrarouge et micro-onde.</li>
+</ul>
+</li>
+</ul>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142134___00045">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-410_20151215_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SRPD 4.1.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_4.1.0_e.pdf">est disponible ici</a>. (en anglais)</p>
+<h2 id="le-mardi-18-novembre-2014">Le mardi 18 novembre 2014</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-srpd-version-400-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système régional de prévision déterministe (SRPD version 4.0.0) du Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son système régional de prévision déterministe (SGPD).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>La méthode d'assimilation 4D-EnVAR remplace le 4D-VAR.<ul>
+<li>Couplage avec le filtre de kalman d'ensemble (FKEn) pour recevoir les covariances d'erreur de prévisions.</li>
+</ul>
+</li>
+<li>Changement aux observations<ul>
+<li>Amélioration au traitement des observations de radiosondes et d'avions.</li>
+<li>Assimilation des observations de récepteurs GPS au sol.</li>
+<li>Amélioration de la procédure de correction de biais des radiances satellitaires.</li>
+<li>Canaux additionnels de données AIRS/IASI assimilées.</li>
+</ul>
+</li>
+<li>Nouvelle analyse de la concentration de la glace de mer.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141824___00706">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-400_20141118_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-6-mai-2014">Le mardi 6 mai 2014</h2>
+<h3 id="incorporation-des-observations-iasi-de-metop-b1-aux-donnees-operationnelles-du-systeme-srpd">Incorporation des observations IASI de METOP-B/1 aux données operationnelles du système SRPD</h3>
+<p>Le 6 mai 2014, à partir de la passe de prévision de 1200 UTC du système régional de prévisions déterministes(SRPD), le Centre meteorologique canadien (CMC) d'environnement Canada a ajouté les observations de radiances de l'instrument IASI du satellite METOP-B/1 au système d'assimilation de données opérationnel. Cet instrument (IASI) est le dernier du satellite METOP-B/1 à faire l'objet d'une mise en œuvre opérationnelle.</p>
+<p>Motivation pour l'incorporation des observations IASI de METOP-B/1 aux données opérationnelles du SRPD :
+Bien que les données du satellite METOP-A/2 continueront d'être assimilées par nos systèmes de prévisions, METOP-B/1 est dorénavant le satellite METOP opérationnel de l'agence EUMETSAT. Les satellites METOP-A/2 et METOP-B/1 ont des trajectoires similaires, mais décalées d'une demi-orbite, donc l'ajout des données IASI de METOP-B/1 double presque le nombre de données IASI assimilées. De plus, ces données supplémentaires ajoutent de la robustesse au système d'assimilation en cas de défaillance de l'instrument IASI de METOP-A/2 ou METOP-B/1.</p>
+<p>Suite à ces changements le numéro du système SRPD passe de 3.2.0 à 3.2.1.
+Vous pouvez accéder à la page du SRPD <a href="../readme_rdps_fr/">en cliquant ici</a>.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938">en cliquant ici</a>.</p>
+<h2 id="le-jeudi-7-novembre-2013">Le jeudi 7 novembre 2013</h2>
+<h3 id="ajout-de-donnees-satellitaires-additionnelles-csr-atovs-vents-polaires-au-systeme-dassimilation-du-srpd">Ajout de données satellitaires additionnelles (CSR, ATOVS, vents polaires) au système d'assimilation du SRPD</h3>
+<p>Le jeudi 7 novembre 2013 à partir de la prévision produite des données de 12Z, des données satellitaires additionnelles ont été ajoutées au Système régional de prévision déterministe (SRPD).</p>
+<p>Les changements incluent: l'ajout des radiances CSR (radiance en ciel clair) de MétéoSat10, l'ajout des radiances ATOVS de Metop-B et des vents polaires AVHRR de Metop-B.</p>
+<p>En même temps, d'autres ajustements ont aussi été installés. Nous avons fait une mise-à-jour des fichiers de coefficients spectroscopiques utilisés par le modèle de transfert radiatif RTTOV pour le calcul des observations simulés (la portion "P"révision de six heures des Observations-Prévisions (O-P) des instruments AMSUB et MHS de tous les satellites. Les nouveaux coefficients de type "Newstyle" ne séparent pas l'absorption de la vapeur d'eau en une contribution de raies et un continuum. Cela a un impact neutre sur les résultats.</p>
+<p>En ce qui concerne le SRPD, depuis l'implantation du <a href="./">SRPD 3.1.0</a>, le champ de couverture de neige (nommé NE à l'interne au CMC) manquait dans le contrôle de qualité des observations AIRS et IASI. Comme solution qui est maintenant installée, désormais le champ de profondeur de la neige (connu comme paramètre SD au CMC) sera utilisé au lieu de NE. Il n'y a aucun impact météorologique significatif. Un autre ajustement concerne l'interpolation incorrecte du champ albédo (connu comme AL au CMC) pendant le contrôle de qualité des observations AIRS et IASI. Pour corriger cette situation, le champs AL est maintenant interpolé correctement, en utilisant le logiciel EzScInt au CMC. Par conséquent, le nombre d'observations AIRS et IASI a augmenté jusqu'à 50% et 30%, respectivement, en fonction de la saison (c.à.d. en fonction de la distribution de la glace).</p>
+<p>Avec l'installation de tous ces changements, le SRPD opérationnel devient la version 3.2.0.</p>
+<h2 id="le-mardi-3-juillet-2013">Le mardi 3 juillet 2013</h2>
+<h3 id="mise-a-jour-au-binaire-srpd-pour-la-production-de-la-variable-px">Mise à jour au binaire SRPD (pour la production de la variable PX)</h3>
+<h2 id="mercredi-le-13-fevrier-2013">Mercredi le 13 février, 2013</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-srpd-version-310-du-centre-meteorologique-canadien-cmc">Mise à jour du système régional de prévision déterministe (SRPD version 3.1.0) du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 13 février 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.1.0 de son système régional de prévision déterministe (SRPD)</p>
+<p>Ce changement ce fait en conjonction avec la <a href="../../nwp_gdps/changelog_gdps_fr/">mise en œuvre opérationnelle de son SGPD 3.0.0 qui aura lieu le même jour</a>.</p>
+<p>Grâce à ces changements, les prévisions du SRPD sont améliorées.</p>
+<p>Veuillez consulter la documentation <a href="../../nwp_gdps/changelog_gdps_fr/">à ce lien pour plus d'information à ce sujet</a>.</p>
+<h2 id="mercredi-le-19-octobre-2012">Mercredi, le 19 octobre, 2012</h2>
+<h3 id="cinq-minutes-ajoutees-au-temps-de-coupure-du-systeme-regional-de-prevision-deterministe-srpd-version-300">Cinq minutes ajoutées au temps de coupure du système régional de prévision déterministe (SRPD version 3.0.0)</h3>
+<p>Le mercredi 19 octobre 2012, à compter de la passe de 1800 UTC, les passes [00,06,12,18]Z du SRPD debuteront à [00,06,12,18]Z+2:00 respectivement, ce qui permettra à ces passes de collecter 5 minutes additionnelles d'observations.</p>
+<h2 id="le-mercredi-3-octobre-2012">Le mercredi, 3 octobre 2012</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-srpd-version-300-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système régional de prévision déterministe (SRPD version 3.0.0) du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 3 octobre 2012, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son système régional de prévision déterministe (SRPD), ci-après le SRPD-300. Cette nouvelle version amène une augmentation de la résolution de 15 à 10 km, incorpore un système d'assimilation 4D-VAR pour l'analyse en remplacement du schème 3D-VAR précédent, et apporte d'importants changements à la physique du modèle GEM. Ceci résulte en une amélioration notable des prévisions, notamment pour l'hiver.</p>
+<p>Lors de cette implantation le temps de coupure a été réduit de 10 minutes et il est maintenant [00,06,12,18]Z+1:55</p>
+<p>La verification objective de champs en altitude et en surface contre des données de radiosondage montre une amélioration significative à toutes les écheances de prévision. Ceci s'avère en général pour toutes les saisons évaluées, sur toutes les régions pour toutes les variables.</p>
+<p>D'autres systèmes de prévision qui sont alimentés par le SRPD-300 ont tous été adaptés. Les changements dont ces autres systèmes ont fait l'objet ainsi que leur performance suite a ces changements sont décrits dans des bulletins GENOT et notes techniques à part qui sont aussi disponibles en cliquant sur le lien a la fin de ce message.</p>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_021702___00109">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdps300_20121003_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mercredi-16-novembre-2011">Le mercredi 16 novembre 2011</h2>
+<h3 id="ameliorations-apportees-au-systeme-regional-de-prevision-deterministe-srpd-du-centre-meteorologique-canadien">Améliorations apportées au système régional de prévision déterministe (SRPD) du Centre Météorologique Canadien.</h3>
+<p>À partir du cycle d'assimilation de 06 UTC le 16 novembre 2011, le Centre Météorologique Canadien (CMC) implantera des changements au système d'assimilation régional en y ajoutant des données satellitaires et en introduisant une nouvelle analyse de température de la surface de la mer.</p>
+<p>Voici un sommaire des changements apportés aux systèmes d'assimilation déterministe régional :</p>
+<p>A. Nouvelles données satellitaires - les données satellitaires suivantes seront incorporées dans les systèmes d'assimilation global et régional :</p>
+<ul>
+<li>62 canaux infrarouges provenant de l'instrumentation IASI à bord du satellite METOP.</li>
+<li>7 canaux micro-ondes de l'instrumentation SSM/IS à bord du satellite DMSP F16.</li>
+<li>1 canal de vapeur d'eau provenant des deux satellites METEOSAT, de MTSAT-1R et de GOES-W.</li>
+<li>Une restriction sur les canaux infrarouges de l'instrumentation AIRS dans les régions polaires sera enlevée.</li>
+<li>L'écrémage horizontal de toutes les radiances satellitaires passera de 250 km (sauf 200 km pour SSM/I) présentement à 150 km, ajoutant beaucoup de données disponibles aux systèmes d'assimilation.</li>
+</ul>
+<p>B. Autres changements à l'assimilation :</p>
+<ul>
+<li>Les observations d'humidité mesurées par les avions équipés de système AMDAR seront assimilées.</li>
+<li>Un nouveau schéma de correction de biais des données satellitaires remplacera le schéma présent. L'impact principal sera de réduire la période sur laquelle se fait le calcul de la correction de biais de 15 à 7 jours. Le même code est utilisé pour toutes les données de radiance.</li>
+<li>Une version modifiée du code de transfert radiatif (RTTOV) sera utilisée pour les données de radiance.</li>
+<li>
+<p>Une nouvelle analyse de la température de la surface de la mer sur grille de 0.20 degres de résolution sera dorénavant utilisée par le système régional.</p>
+</li>
+<li>
+<p>É: Tous les changements ci-dessus ont été combinés et ont fait l'objet de tests exhaustifs sur des cas d'été et d'hiver, incluant une passe parallèle. Pour le système régional, les changements à l'assimilation des données ont aussi été testeé sur des périodes comparables, incluant une passe parallèle.</p>
+</li>
+</ul>
+<p>Une copie de la note officielle avec de l'information additionnelle sur l'évaluation des impacts de ces changements est disponible <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___06041">en cliquant ici</a>.</p>
+<p>Avec ces changements le système régional de prévision déterministe (SRPD) est maintenant la version 2.0.0</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

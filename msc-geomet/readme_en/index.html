@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>MSC GeoMet /GeoMet du SMC - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../msc-data/readme_en/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../msc-datamart/readme_en/" class="nav-link">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#msc-geomet" class="nav-link">MSC GeoMet</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#services" class="nav-link">Services</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#available-ogc-standards" class="nav-link">Available OGC standards</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contact-and-support" class="nav-link">Contact and support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; MSC GeoMet</p>
+<h1 id="msc-geomet">MSC GeoMet</h1>
+<p>The MSC GeoMet platform provides public access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via interoperable web services and application programming interfaces (API). Through open standards, users can freely and quickly access thousands of real-time and archived weather, climate and water datasets and products and integrate them in their domain-specific applications and decision support systems. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software. MSC GeoMet also enables on demand raw data clipping and reprojection, on demand format conversion and custom visualization.</p>
+<h2 id="services">Services</h2>
+<p>Access to the MSC GeoMet services is anonymous and free of charge. These services must be accessed with software that supports geospatial web services.</p>
+<p>The MSC GeoMet Platform consists in the following services:
+</br></p>
+<div class="card-deck">
+  <div class="card text-black mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-Weather</h5></div>
+    <div class="card-body">
+      <p class="card-text">GeoMet-Weather provides access to the Meteorological Service of Canada (MSC) weather, and environmental data via interoperable web services.</p>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-OGC-API</h5></div>
+    <div class="card-body">
+      <p class="card-text">GeoMet-OGC-API provides access to the Meteorological Service of Canada (MSC) and Environment and Climate Change Canada (ECCC) data via the emerging Open Geospatial Consortium standards.</p>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>GeoMet-Climate</h5></div>
+    <div class="card-body">
+      <p class="card-text">GeoMet-Climate provides access to Environment and Climate Change Canada (ECCC) climate data via interoperable web services.</p>
+    </div>
+  </div>
+</div>
+
+<p>For further information regarding how to use MSC GeoMet services, see the following pages:</p>
+<ul>
+<li><a href="https://eccc-msc.github.io/open-data/usage/readme_en/">Usage overview</a></li>
+<li><a href="/usage/tutorials_en/">Tutorials and guides on ways to use MSC GeoMet services</a></li>
+</ul>
+<h2 id="available-ogc-standards">Available OGC standards</h2>
+<p>Web services are protocols designed to support machine to machine interaction over a network, and are typically utilized in a client/server computing environment made available through programmatic access, associated tools and applications.</p>
+<p>The MSC GeoMet web services adhere to open standards ratified by the <a href="https://www.opengeospatial.org/">Open Geospatial Consortium (OGC)</a>, and the <a href="https://www.isotc211.org/">International Organization for Standardization (ISO)</a> which enable interoperability and thus make data easy to discover, access, visualize and integrate. OGC and ISO standards play an important role in <a href="https://public.wmo.int/en">WMO Information System</a> and are supported by numerous off the shelf open source or commercial tools.</p>
+<p>The following OGC web services are supported by MSC GeoMet:</p>
+<div class="card-deck">
+  <div class="card text-black mb-3 text-center">
+    <div class="card-header bg-light"><h5>Web Map Service</h5></div>
+    <div class="card-body">
+      <p class="card-text">Web Map Service (WMS) is a standard protocol that allows users to request and receive geospatial map images from a server over the internet.</p>
+      <a href="../wms_en" class="btn btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>OGC API</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      OGC API (Open Geospatial Consortium API) is a new set of standardized web APIs (Application Programming Interfaces) that facilitate easy and uniform access to geospatial data and services.</p>
+      <a href="../ogc_api_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>Web Coverage Service</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      Web Coverage Service (WCS) is a standard protocol that enables users to request and retrieve geospatial data in the form of coverages or grids over the internet.</p>
+      <a href="../wcs_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+  <div class="card mb-3 text-center">
+    <div class="card-header bg-light"><h5>SpatioTemporal Asset Catalog</h5></div>
+    <div class="card-body">
+      <p class="card-text">
+      SpatioTemporal Asset Catalog (STAC) is an OGC community standard that provides a common structure for describing and cataloging spatiotemporal assets.</p>
+      <a href="../stac_en" class="btn btn-primary">More info</a>
+    </div>
+  </div>
+</div>
+
+<p>For further infromation regarding the aforementioned Open Geospatial Consortium <a href="https://www.ogc.org/standards">standards</a> and <a href="https://www.ogc.org/standards/community/">community standards</a>, consult the following official references:</p>
+<ul>
+<li><a href="https://www.opengeospatial.org/standards/wms">Web Map Service (WMS)</a></li>
+<li><a href="https://www.opengeospatial.org/standards/wcs">Web Coverage Service (WCS)</a></li>
+<li><a href="https://ogcapi.ogc.org/features/">OGC API - Features</a></li>
+<li><a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a></li>
+<li><a href="https://stacspec.org/en">SpatioTemporal Asset Catalog (STAC) (experimental)</a></li>
+</ul>
+<h2 id="contact-and-support">Contact and support</h2>
+<h3 id="announcement-mailing-list"><span class="badge badge-light">Announcement mailing list</span></h3>
+<p>We encourage users to subscribe to the <a href="https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info">GeoMet-Info</a> announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.</p>
+<h3 id="support"><span class="badge badge-light">Support</span></h3>
+<p>The MSC GeoMet services are operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a></p>
+<p></br></br></br></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

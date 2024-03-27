@@ -1,0 +1,9 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Concentration des PM2.5,PM2.5,Colonne atmosphérique,μg/m<sup>-3</sup>
+Concentration des PM2.5,PM2.5,Surface,μg/m<sup>-3</sup>
+Différence de concentration des PM2.5 avec le modèle SRPDQA,PM2.5-Diff-RAQDPS,Colonne atmosphérique,μg/m<sup>-3</sup>
+Différence de concentration des PM2.5 avec le modèle SRPDQA,PM2.5-Diff-RAQDPS,Surface,μg/m<sup>-3</sup>
+Concentration des PM10,PM10,Colonne atmosphérique,μg/m<sup>-3</sup>
+Concentration des PM10,PM10,Surface,μg/m<sup>-3</sup>
+Différence de concentration des PM10 avec le modèle SRPDQA,PM10-Diff-RAQDPS,Colonne atmosphérique,μg/m<sup>-3</sup>
+Différence de concentration des PM10 avec le modèle SRPDQA,PM10-Diff-RAQDPS,Surface,μg/m<sup>-3</sup>

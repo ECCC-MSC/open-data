@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog raqdps fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-au-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa" class="nav-link">Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-juillet-2019" class="nav-link">Le mercredi 3 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-septembre-2018" class="nav-link">Le mardi 18 septembre, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-7-septembre-2016" class="nav-link">Le mercredi 7 septembre 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-7-avril-2016" class="nav-link">Le jeudi 7 avril 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-11-juin-2015" class="nav-link">Le jeudi 11 juin 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-novembre-2014" class="nav-link">Le mardi 18 novembre 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-26-fevrier-2013" class="nav-link">Le mardi 26 février 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-octobre-2012" class="nav-link">Le mercredi 3 octobre 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-22-decembre-2011" class="nav-link">Le jeudi 22 décembre 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_raqdps_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; Changements au SRPDQA</p>
+<h1 id="chronologie-des-changements-apportes-au-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa">Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)</h1>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-de-srpdqa-a-la-version-24-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour de SRPDQA à la version 24 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair">Mise à jour du Système régional de prévision déterministe de la qualité de l'air</h3>
+<p>Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 22 par la version 23.</p>
+<p>Résumé des éléments que comporte cette mise à jour:</p>
+<ul>
+<li>Les analyses météorologiques et le modèle pilote proviennent maintenant du <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/changelog_rdps_en/">SRPD v8.0.0</a> plutôt que du SRPD v7.1.0.</li>
+<li>Nouveaux inventaires des émissions atmosphériques de sources anthropogéniques:<ul>
+<li>Canada:  De la version 2013 de l'inventaire des émissions de polluants atmosphériques (IEPA) à la version projetée 2020.</li>
+<li>U.S.:    de la version 2017 de l'inventaire national des émissions à la version projetée 2023.</li>
+<li>Mexique: de la version 2008 de l'inventaire national des émissions à la version projetée 2023.</li>
+</ul>
+</li>
+<li>Représentation de la sédimentation des particules améliorée.</li>
+<li>Nouvelles librairies météorologique et chimique <ul>
+<li>Météo:  GEM 5.0.2 =&gt; GEM 5.1.0</li>
+<li>Chimie:    GEM-MACH 3.0.0.2 =&gt; GEM-MACH 3.1.0.0</li>
+</ul>
+</li>
+</ul>
+<p>Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps023_f.pdf">est disponible ici</a>.</p>
+<p>Une copie de la note officielle annonçant ces changements dans le SRPDQA est disponible <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SRPDQA version 23 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_023_f.pdf">est disponible ici</a>.</p>
+<p>Une note technique du SRPDQA version 23 avec plus de détails sur ces changements est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps023_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jours-de-srpdqa-a-la-version-2200-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jours de SRPDQA à la version 22.0.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-3-juillet-2019">Le mercredi 3 juillet 2019</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa">Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA)</h3>
+<p>Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) en remplaçant la version 020 par la version 021.</p>
+<p>Résumé des éléments que comporte cette mise à jour :</p>
+<ul>
+<li>Les analyses météorologiques et le modèle pilote proviennent maintenant du <a href="/../nwp_rdps/changelog_rdps_fr.md#le-mercredi-3-juillet-2019">SRPD v7.0.0</a> plutôt que du SRPD v6.0.0.</li>
+<li>Mise à jour de GEM de la version v4.8-LTS.16 à la version GEM v5.0.0. Pour plus d'informations sur GEM-5, veuillez consulter ce <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/GEM5_paper_submitted_JAMES_20190614.pdf">document (en anglais)</a>.</li>
+<li>Amélioration dans le calcul de la chimie du modèle.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement dans SRPDQA est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281933___34219">via ce lien</a>.</p>
+<p>Une note technique pour SRPDQA avec plus de détails sur ces changements est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-021_20190703_f.pdf">sur cette page</a>.</p>
+<h2 id="le-mardi-18-septembre-2018">Le mardi 18 septembre, 2018</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa-et-du-systeme-de-prevision-firework">Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA) et du système de prévision FireWork</h3>
+<p>Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) et le système complémentaire FireWork en remplaçant la version 019 par la version 020.</p>
+<p>Résumé des éléments que comporte cette mise à jour :
+* Les analyses météorologiques et le modèle pilote proviennent maintenant du <a href="/../nwp_rdps/changelog_rdps_fr.md#le-mardi-18-septembre-2018">SRPD v6.0.0</a> plutôt que du SRPD v5.1.0.
+* Adoption de la configuration SRPD v6.0.0, comprenant le recyclage des principales variables physiques et l'approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).
+* L'implementation de la nouvelle version du code du modèle (v2.3.1), pour améliorer la vitesse de traitement et augmenter la robustesse, ainsi que l'amélioration de la chimie (dépôt sec en phase gazeuse sur les surfaces enneigées et la glace marine).
+* Introduction d’un nouvel ensemble d'émissions basé sur des inventaires nationaux d’émissions plus récents.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171403___42412">en cliquant ici</a>.</p>
+<p>Une note technique avec plus de détails sur ces changements est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps-v20_20180918_f.pdf">sur cette page</a>.</p>
+<h2 id="le-mercredi-7-septembre-2016">Le mercredi 7 septembre 2016</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa">Mise à jour majeure du système régional de prévision déterministe de la qualité de l'air (SRPDQA)</h3>
+<p>Le mercredi 7 septembre 2016, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) en remplaçant la version 015 par la version 016.</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>
+<p>Le modèle GEM utilisé par le SRPDQA change d'une version modifiée de v4.6.2 à v4.8.0.</p>
+</li>
+<li>
+<p>Les analyses météorologiques et le modèle pilote sont dorénavant liés au SRPD 5.0.0 plutôt qu'au SRPD 4.2.0.</p>
+</li>
+<li>
+<p>La grille a été tournée pour correspondre à la nouvelle grille du SRPD 5.0.0 (voir la <a href="/../nwp_rdps/changelog_rdps_fr.md#le-mercredi-7-septembre-2016">description du SRPD 5.0.0¸</a>).</p>
+</li>
+<li>
+<p>Un changement important à été fait dans l'utilisation du paramètre de Monin-Obukov.</p>
+</li>
+<li>
+<p>Quelques autres corrections mineures.</p>
+</li>
+</ul>
+<p>La note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022109___00871">en cliquant ici</a>.</p>
+<p>Une note technique avec plus de détails sur ces changements reste à venir sur cette page.</p>
+<h2 id="le-jeudi-7-avril-2016">Le jeudi 7 avril 2016</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa_1">Mise à jour majeure du système régional de prévision déterministe de la qualité de l'air (SRPDQA)</h3>
+<p>Le jeudi 7 avril 2016, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) mettra à jour le système régional de prévision déterministe de la qualité de l'air (SRPDQA) en remplaçant la version 013 (antérieurement version 1.5.4) par la version 015.</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>
+<p>Légère modification de la taille de la grille du modèle, mais la résolution horizontale (10 km) et l'orientation de la grille restent inchangées.</p>
+</li>
+<li>
+<p>Le modèle GEM utilisé par le SRPDQA change de la version 3.3.8.2 à la version 4.6.2.</p>
+</li>
+<li>
+<p>Nouvelles conditions latérales chimiques aux frontières.</p>
+</li>
+<li>
+<p>Mises à jour du module de la chimie, y compris deux corrections de bogues importants.</p>
+</li>
+</ul>
+<p>La note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2016/04/05/NOCN03_CWAO_051925___00885">en cliquant ici</a>.</p>
+<p>Une note technique avec plus de détails sur ces changements reste à venir sur cette page.</p>
+<h2 id="le-jeudi-11-juin-2015">Le jeudi 11 juin 2015</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa-au-centre-meteorologique-canadien-cmc">Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA) au Centre météorologique canadien (CMC)</h3>
+<p>Le Centre météorologique canadien (CMC) a implémenté un nouveau jeu de fichiers d'émissions pour le système régional de prévision déterministe de la qualité de l'air (SRPDQA). Les nouvelles émissions sont basé sur l'inventaire national 2010 du Canada / l'inventaire national 2011 des États-Unis, ce qui est une mise à jour de l'inventaire national 2006 du Canada / l'inventaire national 2005 des États-Unis.</p>
+<p>Une copie de la note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2015/06/10/NOCN03_CWAO_101245___00612">via ce lien</a>.</p>
+<p>Plus d'information technique/scientifique sur ce système est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/Technical_Note_GEM-MACH10_v1.5.3+SET2.1.1_Emissions_9Nov2015.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-18-novembre-2014">Le mardi 18 novembre 2014</h2>
+<h3 id="mise-a-jour-mineure-du-systeme-regional-de-prevision-deterministe-qualite-de-lair-srpdqa-153-au-centre-meteorologique-canadien-cmc">Mise à jour mineure du Système régional de prévision déterministe qualité de l'air (SRPDQA) 1.5.3 au Centre météorologique Canadien (CMC)</h3>
+<p>Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à une mise à jour mineure Système régional de prévision déterministe qualité de l'air. La version du système passe de 1.5.2 à 1.5.3. Ci-dessous les changements inclus dans cette mise à jour:</p>
+<ol>
+<li>
+<p>Le système s'alimente maintenant du système régional de prévision déterministe (SRPD) 4.0.0.</p>
+</li>
+<li>
+<p>Le modèle GEM utilisé dans le SRPDQA est passé de la version 3.3.8.1 à 3.3.8.2.</p>
+</li>
+</ol>
+<h2 id="le-mardi-26-fevrier-2013">Le mardi 26 février 2013</h2>
+<h3 id="mise-a-jour-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa-version-151-au-centre-meteorologique-canadien-cmc">Mise à jour du système régional de prévision déterministe de la qualité de l'air (SRPDQA - version 1.5.1) au Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 26 février 2013 débutant a partir de l'intégration de 1200 UTC, le Centre météorologique canadien (cmc) mettra en opération la version 1.5.1 du SRPDQA celle-ci remplace la version 1.5.0 (SRPDQA-1.5.0). La nouvelle version contient trois correctifs à la chimie qui apportent une amélioration significative au système opérationnel de prévision de la qualité de l'air.</p>
+<p>Durant l'été 2012, trois bogues ont été découverts dans le SRPDQA, ceux-ci étaient présents depuis l'implantation opérationnelle de 2009. Ces bogues affectaient le dépôt humide des espèces chimiques par la précipitation convective, ainsi que le mélange vertical. Ce dernier se manifestant particulièrement lors de conditions atmosphériques stables.</p>
+<p>La performance du SRPDQA-1.5.1 a été mesurée durant l'été et l'hiver 2012. Les statistiques utilisées pour l'évaluation objective indiquent une amélioration des prévisions du SRPDQA-1.5.1 comparativement à celles du SRPDQA-1.5.0 pour les trois polluants principaux: ozone (O3), particules fines (PM2.5) et dioxyde d'azote (NO2). L'amélioration la plus significative avec le SRPDQA-151 est observée pour la prévision des concentrations des PM2.5 en hiver, surtout en ce qui concerne les maximums quotidiens prévus. Le nouveau système représente mieux les valeurs observées avec une importante réduction du maximum quotidien dans les cas de sur-prévisions des PM2.5. Les scores catégoriques, tels que le pourcentage correct, l'indice de succès critique et le ratio de fausses alertes du nouveau système affichent une amélioration avec le SRPDQA-1.5.1, tant en été qu'en hiver, pour les trois polluants: O3, NO2 et PM2.5.</p>
+<p>Pour environ 90% des stations de mesure, UMOS-AQ se comporte de façon similaire autant l'été que l'hiver. Lorsque les sorties du modèle SRPDQA-1.5.0 et du SRPDQA-1.5.1 sont comparées. pour la majorité des autres stations, la performance d'UMOS-AQ est améliorée avec le SRPDQA-1.5.1.</p>
+<p>Il n'y aura aucun changement sur la disponibilité des produits résultant de cette implantation.</p>
+<p>Une copie de la note officielle annonçant ce changement est disponible <a href="https://dd.weather.gc.ca/doc/genots/2013/02/26/NOCN03_CWAO_262210___00308">via ce lien</a>.</p>
+<p>Une note technique à ce sujet est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_raqdps_20130226_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mercredi-3-octobre-2012">Le mercredi 3 octobre 2012</h2>
+<h3 id="le-centre-meteorologique-canadien-ameliore-son-systeme-regional-de-prevision-deterministe-de-qualite-de-lair-srpdqa-version-150">Le Centre Météorologique Canadien améliore son système régional de prévision déterministe de qualité de l'air (SRPDQA-version 1.5.0)</h3>
+<p>Le mercredi 3 octobre 2012, débutant avec l'integration de 1200 UTC, le Centre météorologique canadien (CMC) mettra en operation la version 1.5.0 du système régional de prévision déterministe de qualité de l'air (SRPDQA-150). Des changements dans l'espacement horizontal (de 15 à 10 km de résolution) et vertical des points de grille, une mise à jour de la version du modèle GEM, ainsi que des fichiers d'émissions améliorés, s'allient pour améliorer le système de prévision de la qualité de l'air.</p>
+<p>En résumé, les changements principaux sont: SRPDQA-150 utilise la version GEM 3.3.8 dévelopée au CMC, le modèle a maintenent un espacement horizontal de 10 km entre les points de grille, le nombre de niveaux verticaux du augmente de 58 à 80 et le nouveau système incorpore un nouveau jeu de fichiers d'émissions anthropogéniques horaires.</p>
+<p>Des informations additionnelles sur les changements et sur les évaluations objectives et subjectives sont disponibles dans les notes ci-dessous.</p>
+<p>Les produits du SRPDQA-150 seront disponibles quelques minutes plus tard que les produits actuels étant donne le temps d'execution accru d'un système à plus haute résolution.</p>
+<p>Une copie de la note officielle annoncant ce changement est disponible <a href="https://dd.weather.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_022004___00099">via ce lien</a>.</p>
+<p>Une note technique à incluant des détails sur la version 1.5.0 et la version 1.5.1 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/op_systems/doc_opchanges/technote_raqdps_20121003_f.pdf">en cliquant ici</a>.</p>
+<p>Finalement, notez que cette mise à jour du SRPDQA est nécessaire à cause des changements majeurs qu'on apporte au système régional de prévision déterministe (SRPD) qui fournit les conditions initiales au SRPDQA. Des informations sur les changements au SRPD sont disponibles via ce lien <a href="/../nwp_rdps/changelog_rdps_fr.md">en cliquant ici</a>.</p>
+<h2 id="le-jeudi-22-decembre-2011">Le jeudi 22 décembre 2011</h2>
+<h3 id="le-centre-meteorologique-canadien-implante-un-correctif-a-gem-mach15">Le Centre Météorologique Canadien implante un correctif à GEM-MACH15</h3>
+<p>À partir de la passe 12 UTC du 22 décembre 2011, une mise à jour a été installée dans GEM-MACH15 afin de mieux traiter l'humidité et l'information des nuages dans les hauts niveaux de l'atmosphère perçus par ce modèle. Avec ce correctif la version de GEM-MACH15 est maintenant la version 1.4.5.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

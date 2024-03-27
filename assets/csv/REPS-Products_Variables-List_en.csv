@@ -1,0 +1,10 @@
+Variable,Abbreviation,Level,Unit/Value
+Heat index,HEATX,2 m Above Ground Level,K
+Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Snow precipitation rate,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Temperature,TMP,2 m Above Ground Level,K
+Total precipitation rate,TPRATE,Surface,kg/(m<sup>2</sup>*s)
+Wind chill factor,WCF,2 m Above Ground Level,K
+Wind speed,WIND,10 m Above Ground Level,m/s

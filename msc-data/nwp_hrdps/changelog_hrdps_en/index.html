@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog hrdps en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-high-resolution-deterministic-prediction-system-hrdps" class="nav-link">Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#thursday-november-2-2023" class="nav-link">Thursday November 2, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-december-12-2023" class="nav-link">Tuesday December 12, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-september-14-2023" class="nav-link">Thursday September 14, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-5-2023" class="nav-link">Wednesday July 5, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-february-15-2023" class="nav-link">Wednesday February 15, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-january-4-2023" class="nav-link">Wednesday January 4, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-november-3-2022" class="nav-link">Thursday November 3, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-february-16-2022" class="nav-link">Wednesday February 16, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-december-1st-2021" class="nav-link">Wednesday December 1st, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-21-2020" class="nav-link">Tuesday January 21, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-3-2019" class="nav-link">Wednesday July 3, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-september-18-2018" class="nav-link">Tuesday September 18, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-december-14-2017" class="nav-link">Thursday December 14, 2017</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-september-7-2016" class="nav-link">Wednesday September 7, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-december-15-2015" class="nav-link">Tuesday December 15 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-november-18th-2014" class="nav-link">Tuesday November 18th 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#friday-july-12-2013" class="nav-link">Friday July 12 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-october-3-2012" class="nav-link">Wednesday October 3 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-december-22-2011" class="nav-link">Thursday December 22, 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_hrdps_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrdps_en/">HRDPS</a> &gt; HRDPS Changelog</p>
+<h1 id="chronology-of-changes-to-the-high-resolution-deterministic-prediction-system-hrdps">Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)</h1>
+<h2 id="thursday-november-2-2023">Thursday November 2, 2023</h2>
+<h3 id="addition-of-csr-observations-from-the-goes-18-satellite-in-the-hrdps">Addition of CSR observations from the GOES-18 satellite in the HRDPS</h3>
+<p>On Thursday November 2nd, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-18 satellite.</p>
+<h2 id="tuesday-december-12-2023">Tuesday December 12, 2023</h2>
+<h3 id="canadian-meteorological-centres-high-resolution-deterministic-prediction-system-hrdps-weather-elements-on-the-grid-weong-updated-to-version-220">Canadian Meteorological Centre's High Resolution Deterministic Prediction System (HRDPS) weather elements on the grid (WEonG) updated to version 2.2.0</h3>
+<p>On Tuesday, December 12, 2023, as of the 1200 UTC run, the Canadian Meteorological Centre (CMC) has updated the weather elements on the grid (WEonG) of the High Resolution Deterministic Prediction System (HRDPS) to version 2.2.0.</p>
+<p>Summary of the changes included in this update:</p>
+<ul>
+<li>Interpolate to the grid the statistically corrected values of surface temperatures at points, supplied by UMOS using the MIDAS interpolation tool</li>
+<li>Production of integrated concepts over three-hour periods </li>
+<li>Addition of significant precipitation type</li>
+<li>Modifications to the snow squall detection probability algorithm</li>
+<li>Activation of the "Garry Morning Patch" to prolong the presence of morning radiation fog until the solar angle reaches a specific threshold</li>
+</ul>
+<p>The official note announcing the implementation of these changes is available <a href="https://dd.weather.gc.ca/doc/genots/2023/12/19/NOCN03_CWAO_191614___49612">at this link</a>.</p>
+<p>A technical note on this subject is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_weong-hrdps-220_e.pdf">via this link</a>.</p>
+<h2 id="thursday-september-14-2023">Thursday September 14, 2023</h2>
+<h3 id="addition-of-commercial-gnss-ro-observations-from-planetiq-in-the-hrdps">Addition of commercial GNSS-RO observations from PlanetIQ in the HRDPS</h3>
+<p>On Thursday September 14th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of commercial GNSS-RO (Global Navigation Satellite System Radio Occultation) observations from PlanetIQ’s constellation of GNOMES small satellites.</p>
+<h2 id="wednesday-july-5-2023">Wednesday July 5, 2023</h2>
+<h3 id="addition-of-commercial-gnss-ro-observations-from-spire-in-the-hrdps">Addition of commercial GNSS-RO observations from Spire in the HRDPS</h3>
+<p>On Wednesday July 5th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of commercial GNSS-RO (Global Navigation Satellite System Radio Occultation) observations from Spire’s constellation of LEMUR nanosatellites.</p>
+<h2 id="wednesday-february-15-2023">Wednesday February 15, 2023</h2>
+<h3 id="addition-of-gpsro-observations-from-the-sentinel-6a-satellite-in-the-hrdps">Addition of GPSRO observations from the Sentinel-6A satellite in the HRDPS</h3>
+<p>On Wednesday February 15th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the Sentinel-6A.</p>
+<h2 id="wednesday-january-4-2023">Wednesday January 4, 2023</h2>
+<h3 id="replacement-of-atmospheric-motion-wind-vectors-from-goes-17-by-those-from-goes-18-in-the-hrdps">Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the HRDPS</h3>
+<p>On Wednesday January 4th, 2023, starting with the 1800 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Replacement of Atmospheric Motion wind Vectors (AMV) from GOES-17 by those from GOES-18.</p>
+<h2 id="thursday-november-3-2022">Thursday November 3, 2022</h2>
+<h3 id="addition-of-surface-observations-received-from-ships-in-bufr-format-in-the-hrdps">Addition of surface observations received from ships in BUFR format in the HRDPS</h3>
+<p>On Thursday November 3rd, 2022, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 6.1.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of surface observations received from ships in BUFR (Binary Universal Form for the Representation of meteorological data) format. TAC (Traditional Alphanumeric Codes) observations were already being assimilated previously.</p>
+<h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
+<h3 id="upgrade-to-version-610-of-the-hrdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 6.1.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a>.</p>
+<h2 id="wednesday-february-16-2022">Wednesday February 16, 2022</h2>
+<h3 id="addition-of-gpsro-observations-from-the-grace-c-and-grace-d-satellites-in-the-hrdps">Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the HRDPS</h3>
+<p>On Wednesday February 16th, 2022, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 6.0.0 of the High Resolution Deterministic Prediction System (HRDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the GRACE-C and GRACE-D satellites.</p>
+<h2 id="wednesday-december-1st-2021">Wednesday December 1st, 2021</h2>
+<h3 id="major-upgrade-to-version-600-of-the-high-resolution-deterministic-prediction-system-hrdps-at-the-canadian-meteorological-centre">Major upgrade to Version 6.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 6.0.0.</p>
+<p>A brief summary of the innovations included in this upgrade and their impact on performance can be found <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-600_e.pdf">in this document</a>.</p>
+<p>The official note announcing the implementation of these changes is available <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">at this link</a>.</p>
+<p>A technical note with more details on HRDPS v6.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-600_e.pdf">at this link</a>.</p>
+<p>The technical specifications document for HRDPS v6.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_6.0.0_e.pdf">at this link</a>.</p>
+<h2 id="tuesday-january-21-2020">Tuesday January 21, 2020</h2>
+<h3 id="upgrade-to-version-520-of-the-hrdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 5.2.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="wednesday-july-3-2019">Wednesday July 3, 2019</h2>
+<h3 id="major-upgrade-to-version-510-of-the-high-resolution-deterministic-prediction-system-hrdps-at-the-canadian-meteorological-centre">Major upgrade to Version 5.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday July 3rd, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.1.0.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Initial and boundary conditions are now provided by <a href="../../nwp_rdps/changelog_rdps_en/">RDPS v7.0.0</a> instead of v6.0.0.</li>
+<li>RDPS-CGSL v3.4.0 replaces v3.3.0 as a pilot system over the St. Lawrence region.</li>
+<li>Upgrade from GEM v4.9.5 to GEM v4.9.8.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available at <a href="http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281830___34641">this link</a>.</p>
+<p>The technical specifications document of the HRDPS 5.1.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_5.1.0_e.pdf">is available at this link</a>.</p>
+<p>A technical note with more details on HRDPS 5.1.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-510_20190703_e.pdf">at this link</a>.</p>
+<h2 id="tuesday-september-18-2018">Tuesday September 18, 2018</h2>
+<h3 id="major-upgrade-to-version-500-of-the-high-resolution-deterministic-prediction-system-hrdps-at-the-canadian-meteorological-centre">Major upgrade to Version 5.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 5.0.0.
+The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Initial and boundery conditions comming from <a href="../../nwp_rdps/changelog_rdps_en/">RDPS v6.0.0</a> instead of v5.1.0.</li>
+<li>Update GEM model from v4.8-LTS.13 to v4.9.4.</li>
+<li>New microphysics scheme "Predicted Particle Properties (P3)" replaces Milbrandt-Yau (MY2).</li>
+<li>Inclusion of the Town Energy Balance (TEB) urban parameterization scheme</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available at <a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171332___49260">this link</a>.</p>
+<p>A technical note with more details on HRDPS 5.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-500_20180918_e.pdf">at this link</a>.</p>
+<h2 id="thursday-december-14-2017">Thursday December 14, 2017</h2>
+<h3 id="the-high-resolution-deterministic-prediction-system-hrdps-is-declared-operational-at-the-canadian-meteorological-centre">The High Resolution Deterministic Prediction System (HRDPS) is declared operational at the Canadian Meteorological Centre</h3>
+<p>Effective December 14, 2017, after several years running in experimental mode, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada declared operational the High Resolution Deterministic Prediction System (HRDPS v4.4.0).</p>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2017/12/13/NOCN03_CWAO_132058___00004">is available at this link</a>.</p>
+<p>A technical note with more details on v4.2.0 of this system <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-420_20160907_e.pdf">is available at this link</a>.</p>
+<h2 id="wednesday-september-7-2016">Wednesday September 7, 2016</h2>
+<h3 id="upgrade-to-version-420-of-the-high-resolution-regional-deterministic-prediction-system-hrdps">Upgrade to Version 4.2.0 of the High Resolution Regional Deterministic Prediction System (HRDPS)</h3>
+<p>On Wednesday, September 7th 2016, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Regional Deterministic Prediction System (HRDPS) to version 4.2.0.
+The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Changes to the forecast model:<ul>
+<li>The version of GEM is upgraded from version 4.7.3 to version 4.8.2.</li>
+<li>The introduction of a physically-based hysteresis effect in the turbulent mixing scheme that improves the forecast of precipitation types.</li>
+<li>Change to the horizontal diffusion for the momentum variables, (from a del-4 operator to a del-2) in order to reduce noise in the precipitation field</li>
+<li>Minor changes to the surface data assimilation system (CaLDAS).</li>
+</ul>
+</li>
+<li>Changes to the grid configuration:<ul>
+<li>A new forecast domain has been added to the HRDPS which is called 'North' and covers the Canadian arctic region.</li>
+<li>As a result, forecasts for the domains known as 'Arctic' and 'Lancaster' will be discontinued.</li>
+<li>View <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/hrdps/hrdps_4.2.0_grids_snapshot.png">this image</a> which illustrates the changes.</li>
+</ul>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022055___00741">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-420_20160907_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-december-15-2015">Tuesday December 15 2015</h2>
+<h3 id="upgrade-to-version-410-of-the-high-resolution-deterministic-prediction-system-hrdps-at-the-canadian-meteorological-centre">Upgrade to Version 4.1.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday December 15th 2015, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Prediction System (HRDPS) to version 4.1.0.
+The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>The use of an implicit convection scheme Kain &amp; Fritsch</li>
+<li>Correction for freezing rain events that were largely under-estimated in the HRDPS-4.0.0</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142228___00074">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-410_20151215_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-november-18th-2014">Tuesday November 18th 2014</h2>
+<h3 id="major-upgrade-to-the-high-resolution-deterministic-prediction-system-hrdps-version-400-at-the-canadian-meteorological-centre">Major Upgrade to the High Resolution Deterministic Prediction System (HRDPS) version 4.0.0 at the Canadian Meteorological Centre</h3>
+<p>On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the experimental High Resolution Deterministic Prediction System (HRDPS) to version 4.0.0.</p>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/17/NOCN03_CWAO_171911___00921">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_hrdps-400_20141118_e.pdf">is available at this link</a>.</p>
+<h2 id="friday-july-12-2013">Friday July 12 2013</h2>
+<h3 id="adjustments-to-high-resolution-deterministic-prediction-system-hrdps-to-version-301">Adjustments to High Resolution Deterministic Prediction System (HRDPS) to version 3.0.1</h3>
+<p>The Canadian Meteorological Centre adjusts the HRDPS system.</p>
+<p>On July 12 2013, the native grid of the HRDPS arctic domain was adjusted so that the native grid is shifted slightly westward and extended farther north and south.</p>
+<p>The <a href="http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/hrdps/20130710_HRDPSArcticGrid_BluePrevious_BlackNew.jpg">image at this link here</a> shows the original operational HRDPS arctic grid (blue box) and the newly installed HRDPS arctic domain grid (black box).</p>
+<p>This change follows requests by operational meteorologists for a HRDPS arctic domain that could provide forecast data for Ungava Bay and eastern portions of Hudson Bay, especially in the busy summer season.</p>
+<p>Users of the Ninjo workstation should be made aware that despite this change to the native HRDPS arctic grid, that Ninjo workstations will continue to receive the same configuration of HRDPS arctic grib2 files. This means that after July 12 2013, users of Ninjo HRDPS arctic grib2 data should not use lam arctic data east of longitude 60 west for decision making. These HRDPS arctic Ninjo grib2 files will only be updated at the next scheduled software update.</p>
+<p>On the other hand, the HRDPS grib2 files distributed via the datamart have been adjusted to present data on the new HRDPS arctic grid. The documentation associated with these grib2 files can only be updated however at a later date.</p>
+<p>Another adjustment to the HRDPS system was installed on June 18 2013 and this was a correction to the post processed calculations of the HRDPS summer severe weather parameters. This correction applies to the calculations performed on all HRDPS domains.</p>
+<p>A copy of the official note describing these changes <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/07/12/NOCN03_CWAO_122020___01071">is available by clicking here</a>.</p>
+<h2 id="wednesday-october-3-2012">Wednesday October 3 2012</h2>
+<h3 id="the-canadian-meteorological-centre-upgrades-its-high-resolution-deterministic-prediction-system-hrdps-to-version-300">The Canadian Meteorological Centre Upgrades Its High Resolution Deterministic Prediction System (HRDPS) to version 3.0.0</h3>
+<p>On Wednesday October 3 2012, starting with the implementation of a new 1800 UTC run of the west domain, the Canadian Meteorological Centre (CMC) will procede with an update to version 3.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at 2.5 km resolution.</p>
+<p>Modifications to all HRDPS domains involve the use of a newer version of the CMC GEM model and adjustments to the model dynamics and physics. For the west HRDPS only, the nesting configuration, the run frequency and the forecast lead times have been changed.</p>
+<p>Note that this HRDPS update is done in conjunction with the major upgrade to the CMC Regional Deterministic Prediction System (RDPS) which provides initial and lateral boundary conditions to the HRDPS. For details on the <a href="../../nwp_rdps/changelog_rdps_en/">RDPS upgrade please refer to the information at this link</a>.</p>
+<p>All forecast products presently available for HRDPS will continue to be available. For the west domain the previous datafiles labelled 12 UTC will now use earlier data from the RDPS and as a result will be labelled 06 UTC. There is also the addition of a second daily west domain run that will be labelled 18 UTC. It must be noted that for some time, in spite of the longer lead times extending to 42 hours for the west domain, meteorological fields will displayed in the NINJO visualization platform will only be visible up to the 24-hour lead time.</p>
+<p>With this implementation all HRPDS domains continue to maintain their status as experimental. The are plans to make the HRDPS west domain fully operational and this announcement should follow in the near future.</p>
+<p>A copy of the official note describing these changes <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_021948___00154">is available by clicking here</a>.</p>
+<p>A technical note with more details on these changes <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_hrdps_20121003_e.pdf">will be made available at this link here</a>.</p>
+<h2 id="thursday-december-22-2011">Thursday December 22, 2011</h2>
+<h3 id="the-canadian-meteorological-centre-implements-a-correction-to-its-hrdps-snow-analysis">The Canadian Meteorological Centre implements a correction to its HRDPS snow analysis</h3>
+<p>A correction was made to grid of the High Resolution Deterministic Prediction System (HRDPS) snow analysis starting with the 06 UTC snow analysis of Dec 22 2011.</p>
+<p>With this correction the HRDPS is now version 2.2.1</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

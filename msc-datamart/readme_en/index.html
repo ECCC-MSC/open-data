@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>MSC Datamart /Datamart du SMC - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../msc-geomet/readme_en/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../cost-recovered/readme_en/" class="nav-link">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#msc-datamart" class="nav-link">MSC Datamart</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#access" class="nav-link">Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#usage-and-tutorials" class="nav-link">Usage and tutorials</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-formats" class="nav-link">Data formats</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#change-management" class="nav-link">Change management</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcement-mailing-list" class="nav-link">Announcement mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; MSC Datamart</p>
+<h1 id="msc-datamart">MSC Datamart</h1>
+<p>The Meteorological Service of Canada (MSC) HTTPS raw data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.</p>
+<h2 id="access">Access</h2>
+<p>The MSC Datamart is located at <a href="https://dd.weather.gc.ca/">https://dd.weather.gc.ca/</a>.</p>
+<h3 id="real-time-push-notifications-and-data-retrieval">Real-time push notifications and data retrieval</h3>
+<p>To facilitate the retrieval of timely data on the MSC Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the MSC Datamart. This data wire uses the <strong>'Advanced Message Queuing Protocol' (AMQP)</strong> protocol. Not only does this enable the user to be notified of available products as they're published, but also to receive them automatically.</p>
+<p>The service can filter specific sets of files (weather warnings, observations, model data, etc.), enabling notifications only for products of interest to the user.
+This is the recommended method to retrieve data from the MSC Datamart.
+The documentation for this service is found on the <a href="../amqp_en/">MSC Datamart AMQP documentation</a>.</p>
+<p><strong>Note</strong>: Users requiring one-time data retrieval may use <a href="../readme_wget-datamart_en/">wget to download data from the MSC Datamart</a>. Please review the <a href="../../usage-policy/readme_en/">Service usage policy</a>.</p>
+<h3 id="additional-access-method">Additional access method</h3>
+<p>Since spring 2019, an <strong>alternative HPFX server</strong> for accessing MSC Datamart data has been available to avoid potential bandwidth issues.</p>
+<p>This server guarantees a much more efficient access to the data (bandwidth multiplied by 10) during high demand periods of the day (around 12Z).</p>
+<p>The address of this HTTP server is as follows: <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/</a>, with <code>YYYYMMDD</code> the dynamic date.</p>
+<p>The various data sources are supplied via Sarracenia, the directory tree structure is then modified from that available on the MSC Datamart.  Access to data by date rather than by product suite makes the directory structure dynamic rather than static.</p>
+<p>A direct consequence of this date hierarchy is that the data retention period becomes identical for all data sets and is dependent on the available disk space.</p>
+<p>Access to data via <a href="../amqp_en/">the AMQP protocol is of course strongly recommended</a>.</p>
+<p>Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the <a href="https://dd.meteo.gc.ca">https://dd.meteo.gc.ca</a> server in case of problems.</p>
+<h2 id="usage-and-tutorials">Usage and tutorials</h2>
+<p>Overview, examples and tutorials to access and use MSC Datamart data:</p>
+<ul>
+<li><a href="../../usage/readme_en/">Usage overview</a></li>
+<li>Tutorials:<ul>
+<li>Use data in the QGIS desktop software:<ul>
+<li><a href="../../usage/tutorial_raw-data_QGIS_en/">Add raw data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../../licence/readme_en/">End-use licence</a></li>
+<li><a href="../../usage-policy/readme_en/">Service usage policy</a></li>
+</ul>
+<h2 id="data-formats">Data formats</h2>
+<p>Data on the MSC Datamart is available in open formats. It includes:</p>
+<ul>
+<li><a href="../../msc-data/readme_grib_en/">GRIB2</a></li>
+<li><a href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a></li>
+<li><a href="https://geojson.org/">GeoJSON</a></li>
+<li><a href="https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf">shapefile</a></li>
+<li>CSV</li>
+<li>XML</li>
+</ul>
+<h2 id="change-management">Change management</h2>
+<p>The MSC needs to be flexible in the manner in which it offers specialized data to interested users. Therefore, we need to be able to update or change formats or data offerings in a timely manner, as the technology, standards and innovation do change continuously. However, we will do our best to notify our users in advance of upcoming changes. </p>
+<p>Also, as often as possible, we will use the <strong>MSC testing data repository DD-Alpha</strong>, to deposit samples of the new modified data to help our users adapt their applications. The server DD-Alpha is located at <a href="http://dd.alpha.weather.gc.ca/">http://dd.alpha.weather.gc.ca/</a> . This server, which is not operational, provides also access to experimental or other non-operational data.</p>
+<h2 id="announcement-mailing-list">Announcement mailing list</h2>
+<p>We encourage users to subscribe to the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> announcement mailing list to be informed of enhancements and changes to the MSC Datamart service.</p>
+<h2 id="support">Support</h2>
+<p>The MSC Datamart service is operational 24/7. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

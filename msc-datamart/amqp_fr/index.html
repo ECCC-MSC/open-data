@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Amqp fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#protocole-avance-de-mise-en-file-dattente-des-messages" class="nav-link">Protocole avancé de mise en file d'attente des messages</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#a-propos" class="nav-link">À propos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#description" class="nav-link">Description</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#environnement-windows" class="nav-link">Environnement Windows</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exemples" class="nav-link">Exemples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liens-externes" class="nav-link">Liens externes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pour-nous-joindre" class="nav-link">Pour nous joindre</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../amqp_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; <a href="../readme_fr/">MSC Datamart</a> &gt; AMQP</p>
+<h1 id="protocole-avance-de-mise-en-file-dattente-des-messages">Protocole avancé de mise en file d'attente des messages</h1>
+<h2 id="a-propos">À propos</h2>
+<p>Le serveur de données brutes HTTPS appelé le "Datamart du SMC" est un service de téléchargement en temps réel, sur demande. L'usager doit en effet agir pour demander une donnée particulière, et la demande n'aura de succès que si la donnée a été préalablement publiée sur le serveur. </p>
+<p>Le moment exact de l'apparition des données sur le Datamart du SMC est plus ou moins prévisible : un nouvel avertissement météorologique peut y apparaître à tout moment, alors que certaines autres données ont un horaire de production assez régulier (mais tout de même sujet à des perturbations occasionnelles). Or, il peut être important pour certaines applications d'obtenir des données dès leur publication. </p>
+<p>Les tentatives d'obtenir des données du Datamart du SMC dès leur apparition sur le serveur génèrent de nombreuses requêtes prématurées qui sont évidemment infructueuses. Ceci motive l'utilisation d'une solution plus élégante et plus commode pour les usagers.</p>
+<p>Afin de faciliter l'obtention en temps opportun des données du Datamart du SMC, le Service météorologique du Canada (SMC) a donc mis en place un fil de données annonçant les fichiers disponibles sur le Datamart du SMC. Ce fil de données utilise le protocole ''Advanced Message Queuing Protocol'' (AMQP). Il devient ainsi possible non seulement d'être avisé de la disponibilité des produits sur le Datamart du SMC lorsque ceux-ci sont publiés, mais aussi de les recevoir automatiquement. </p>
+<p>Le service permet de cibler les notifications pour une série spécifique de fichiers (alertes météorologiques, observations, données de modèle, etc.) et ainsi viser seulement les produits d'intérêt pour l'usager.</p>
+<h2 id="description">Description</h2>
+<p>Le script est en langage python <a href="https://www.python.org/">https://www.python.org/</a> et doit être installé sur le système où il sera requis. De plus, la librairie python-amqplib doit également être installée. Consulter la documentation spécifique à votre système d'exploitation pour savoir comment installer ce logiciel et cette librairie.</p>
+<p>Le serveur AMQP sécurisé (SSL, couche de sockets sécurisée) se trouve à l'adresse : dd.meteo.gc.ca .</p>
+<p>Il est possible de se connecter de façon anonyme sur le serveur en utilisant la combinaison :</p>
+<ul>
+<li><strong>Nom d'usager</strong>: anonymous</li>
+<li><strong>Mot de passe</strong>: anonymous</li>
+</ul>
+<h3 id="chemin-dacces">Chemin d'accès</h3>
+<p>Pour le sujet (option subtopic), il suffit de mettre le répertoire du produit, en remplaçant la barre oblique "/" par un point ".". </p>
+<p>Ce sujet est : REPERTOIRE.DU.PRODUIT.SUR.LE.DATAMART</p>
+<ul>
+<li>'__<em>__' caractère de remplacement (wildcard) (un seul '</em>' par répertoire)</li>
+<li>'<strong>#</strong>' signifie les possibilités restantes et doit être à la fin de la clé.</li>
+</ul>
+<h3 id="script-dutilisation">Script d'utilisation</h3>
+<p>Le script permettant de récupérer les produits sur le Datamart du SMC et de les placer dans un répertoire local choisi par l'usager, utilise le client Sarracenia (Souscrire, annoncer, et récursivement ré-annoncer afin de communiquer instantanément et ad vitam aeternam). </p>
+<p>Ce client est élaboré pour accomplir des téléchargements d´une façon très fiable et est largement utilisé au sein du gouvernement du Canada :</p>
+<p><a href="https://metpx.github.io/sarracenia/">https://metpx.github.io/sarracenia/</a></p>
+<p>Un survol est disponible ici : <a href="https://metpx.github.io/sarracenia/Explanation/Overview.html">https://metpx.github.io/sarracenia/Explanation/Overview.html</a></p>
+<p>Le guide d’installation peut être trouvé à cette adresse : <a href="https://metpx.github.io/sarracenia/Tutorials/Install.html">https://metpx.github.io/sarracenia/Tutorials/Install.html</a></p>
+<p>Quant au guide d’utilisation, il est disponible ici : <a href="https://metpx.github.io/sarracenia/How2Guides/subscriber.html">https://metpx.github.io/sarracenia/How2Guides/subscriber.html</a></p>
+<p>Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : <a href="https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
+<p><strong>NOTES</strong>:</p>
+<p><strong>Pour faciliter le support</strong>, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration de sr_subscribe:</p>
+<ul>
+<li>queue_name q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}  (option dynamique)</li>
+<li>q_anonymous.sr_subscribe./nom_config/./nom_compagnie/ (option statique)</li>
+</ul>
+<p>Exemple : q_anonymous.sr_subscribe.citypage.compagnie</p>
+<p>Aussi, voici une liste de recommandations pour l'usager "anonymous" qui souhaite récupérer un sous-ensemble significatif de données sans crainte de perte d'information:</p>
+<ul>
+<li>L'option <code>expire</code> permet d'ajuster la période de rétention souhaitée par l'utilisateur. On suggère une valeur supérieure à 5 minutes, qui est la valeur par défaut.  </li>
+<li>Augmenter le nombre d'instances dans la configuration ce qui permet de traiter plus efficacement les messages afin de minimiser leur nombre dans la queue.</li>
+<li>Séparer les configurations en plusieurs configurations plus petites afin d'éviter d'atteindre le maximum de 10000 messages dans une queue (le nom des queues doit être différent entre les configurations).</li>
+</ul>
+<h2 id="environnement-windows">Environnement Windows</h2>
+<p>Dans l’environnement Windows, il suffit de télécharger la dernière version de Sarracenia à cette adresse :</p>
+<p><a href="https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/">https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/</a></p>
+<p>Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à <a href="https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst">installer</a> d’environnement Python.</p>
+<h2 id="exemples">Exemples</h2>
+<p>Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD :</p>
+<ul>
+<li>Les commandes disponibles sont :<ul>
+<li>alerts : sr_subscribe <a href="../amqp_cap-xml.conf">amqp_cap.xml.conf</a> start/stop/status</li>
+<li>citypage_weather : sr_subscribe <a href="../amqp_citypage.conf">amqp_citypage.conf</a> start/stop/status</li>
+<li>rdps_grib : sr_subscribe <a href="../amqp_rdps-grib.conf">amqp_rdps-grib.conf</a> start/stop/status</li>
+</ul>
+</li>
+<li>Les logs se retrouvent sous : ~/.cache/sarra/log</li>
+<li>Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup</li>
+</ul>
+<h2 id="liens-externes">Liens externes</h2>
+<p>Protocol AMQP sur Wikipédia :
+<a href="https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol">https://fr.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol</a></p>
+<p>Librairie python pour AMQP :
+<a href="https://pypi.python.org/pypi/amqplib">https://pypi.python.org/pypi/amqplib</a></p>
+<h2 id="pour-nous-joindre">Pour nous joindre</h2>
+<p>Si vous utilisez les données disponibles sur le Datamart du SMC, nous recommandons fortement de vous inscrire à la liste de diffusion du Datamart du SMC afin d'être averti de tout changement ou mise à jour des données disponibles.</p>
+<p>Vous pouvez vous inscrire ici :
+<a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/</a></p>
+<p>Le soutien aux utilisateurs est fourni dans la mesure du possible pendant les heures normales de bureau. Les utilisateurs qui demandent de l'aide sont invités à <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">communiquer avec nous</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

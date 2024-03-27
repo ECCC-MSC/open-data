@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme rdps cgsl en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#data-and-products-of-the-atmosphere-ocean-ice-forecast-system-for-the-gulf-of-st-lawrence" class="nav-link">Data and products of the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#description-of-the-system" class="nav-link">Description of the system</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#access" class="nav-link">Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-documentation" class="nav-link">Technical documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#changelog" class="nav-link">Changelog</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_rdps-cgsl_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence</p>
+<h1 id="data-and-products-of-the-atmosphere-ocean-ice-forecast-system-for-the-gulf-of-st-lawrence">Data and products of the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence</h1>
+<h2 id="description-of-the-system">Description of the system</h2>
+<p>The Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence is a circulation model to better understand Canadian inland seas. This system includes two main parts:</p>
+<ul>
+<li>An oceanic pseudo-analysis cycle (Smith et al., 2012) including a superimposed sea ice analysis based on direct insertion of Radarsat image analyses (Smith et al., 2012).</li>
+<li>A coupled forecast cycle.</li>
+</ul>
+<p>Note that the coupled forecast cycle is a 48 hour simulation based on 00, 06, 12 and 18 UTC data where both of its models (LAM and OCEAN-ICE) run at the same time. It provides 00-48 hour weather, sea ice and ocean forecasts.</p>
+<h3 id="technical-native-grid-specifications-computational-domain">Technical Native Grid Specifications (Computational Domain)</h3>
+<p>The atmospheric component is a limited area configuration (LAM) of the Regional Deterministic Prediction System (RDPS) centered over the Gulf of St. Lawrence (GSL). This grid has 360 x 400 points in the horizontal with a spacing of 10 km (0.09 degrees) on a rectangular latitude-longitude projection. The required lateral boundary conditions for this model configuration are taken at every hour from the operational RDPS forecasts at the same resolution (0.09 degrees).</p>
+<p>For the oceanic component, the system uses the NEMO model (Nucleus fro European Modeling of the Ocean) 
+which includes a 3D oceanic circulation model taking into account the tides and freshwater inflows of 
+rivers. The CICE (Community of Ice CodE) model is used for the sea-ice component. The NEMO-CICE 
+domain consists of a 149 x 236 grid in the horizontal direction and extends from the Cabot Strait 
+and Belle Isle Strait to Quebec City and to the head of the Saguenay Fjord near Tadoussac. A 
+one-dimensional hydrological model is used from Montreal to Quebec City to absorb tides. The 
+horizontal resolution is 5 km on a rotated-Mercator projection. The ocean is layered in the vertical 
+with a uniform resolution of 5 m down to 300 m depth and 10 m further below. The surface and bottom 
+layers are adjusted to the water level and local depth respectively. The boundary conditions for 
+river runoffs, temperature and salinity are taken from climatological data and tides are implicitly 
+calculated (Saucier et al. [2003]). </p>
+<h2 id="access">Access</h2>
+<h3 id="how-to-access-the-data">How to access the data</h3>
+<p>This data is available on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server service as well as <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a>:</p>
+<ul>
+<li><a href="../readme_rdps-cgsl-datamart_en/">GRIB2 data available on the MSC Datamart</a> </li>
+<li><a href="../../../msc-geomet/readme_en/">Data available via geospatial web services GeoMet-Weather</a></li>
+</ul>
+<p>An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is available.</p>
+<h3 id="licence">Licence</h3>
+<p>The <a href="../../../licence/readme_en/">end-user licence for Environment and Climate Change Canada's data servers</a> specifies the conditions of use of this data.</p>
+<h3 id="msc-open-data-service-usage-policy">MSC Open Data Service Usage Policy</h3>
+<p>The <a href="../../../usage-policy/readme_en/">MSC Open Data Service Usage Policy</a> determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.</p>
+<h3 id="metadata">Metadata</h3>
+<p>Upcoming.</p>
+<h2 id="technical-documentation">Technical documentation</h2>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/lib/technote_rdps-cgsl_e.pdf">Technical Note</a></li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<p>The chronology of changes to the Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence (RDPS-CGSL) is available <a href="../changelog_rdps-cgsl_en/">here</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

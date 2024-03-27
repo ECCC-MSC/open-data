@@ -1,0 +1,5 @@
+Variable,Abbreviation,Level,Unit/Value
+Sea surface height above Mean Water Level,zos,Surface,m
+Sea surface height above model Highest Astronomical Tide,zos,Surface,m
+Sea surface height above model Lowest Astronomical Tide,zos,Surface,m
+Storm surge,etas,Surface,m

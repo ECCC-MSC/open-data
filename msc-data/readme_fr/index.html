@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Readme fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-ouvertes-du-service-meteorologique-du-canada" class="nav-link">Données ouvertes du Service météorologique du Canada</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#alertes-meteo-et-previsions-publiques" class="nav-link">Alertes météo et prévisions publiques</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#observations" class="nav-link">Observations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#previsions-numeriques-meteorologiques-et-environnementales" class="nav-link">Prévisions numériques météorologiques et environnementales</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#donnees-climatiques" class="nav-link">Données climatiques</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#autres-donnees" class="nav-link">Autres données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#donnees-ouvertes-retirees" class="nav-link">Données ouvertes retirées</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#changements-aux-systemes-de-production-de-donnees-operationnels" class="nav-link">Changements aux systèmes de production de données opérationnels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; Données du SMC</p>
+<h1 id="donnees-ouvertes-du-service-meteorologique-du-canada">Données ouvertes du Service météorologique du Canada</h1>
+<p>Le Service météorologique du Canada (SMC) fournit des renseignements à jour sur les conditions météorologiques, le climat, l'eau et l'environnement passés, présents et futurs au Canada et dans le monde.</p>
+<ul>
+<li>
+<p>Le Service météorologique du Canada d'Environnement et Changement climatique  Canada est la source officielle d'information sur la météo, l'eau, la glace et le climat au pays et la source officielle d'avertissements de temps violent au Canada.</br></p>
+</li>
+<li>
+<p>Le SMC fournit des prévisions et des avertissements météorologiques 24 heures par jour, 365 jours par année. Le SMC fournit également aux ministères fédéraux, aux organismes et aux autres ordres de gouvernement de l'information à l'appui de la préparation et de l'intervention d'urgence en cas d'événements tels que tempêtes, inondations, feux de forêt et autres urgences météorologiques.</br></p>
+</li>
+<li>
+<p>Des renseignements exacts et opportuns sur les conditions météorologiques, hydriques, glacières et climatiques changeantes aident les Canadiens à prendre des décisions éclairées pour leur santé, leur sécurité et leur prospérité économique.</br></p>
+</li>
+<li>
+<p>L'information météorologique, hydrique et climatique d'Environnementet Changement climatique Canada appuie la prise de décisions économiques judicieuses pour les secteurs d'activité clés du Canada. Ces secteurs comprennent la construction, la fabrication, la production d'énergie, l'agriculture, le transport, la foresterie, l'exploitation minière, la vente au détail, les finances et le tourisme.
+</br></br></p>
+</li>
+</ul>
+<h2 id="alertes-meteo-et-previsions-publiques">Alertes météo et prévisions publiques</h2>
+<ul>
+<li><a href="../alerts/readme_alerts_fr/">Alertes météo et maritimes</a></li>
+<li><a href="../citypage-weather/readme_citypageweather_fr/">Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes</a></li>
+<li><a href="../marine-weather/readme_marine-weather_fr/">Conditions marines actuelles et prévisions sur 7 jours pour les régions marines</a>
+</br></br></li>
+</ul>
+<h2 id="observations">Observations</h2>
+<ul>
+<li><a href="../obs_radar/readme_radar_fr/">Images radar météo</a></li>
+<li><a href="../lightning/readme_lightning_fr/">Densité de foudre</a></li>
+<li><a href="../obs_satellite/readme_satellite_fr/">Observations satellitaires</a></li>
+<li><a href="../obs_station/readme_obs_insitu_fr/">Observations in situ</a></li>
+<li><a href="../obs_hydrometric/readme_hydrometric_fr/">Observations hydrométriques</a></li>
+<li><a href="../vertical-profiles/readme_vertical-profiles-obs_fr/">Observations de profils verticaux</a>
+</br></br></li>
+</ul>
+<h2 id="previsions-numeriques-meteorologiques-et-environnementales">Prévisions numériques météorologiques et environnementales</h2>
+<h3 id="atmosphere"><span class="badge badge-light">Atmosphère</span></h3>
+<h5 id="deterministe">&emsp;<span class="badge badge-info">Déterministe</span></h5>
+<ul>
+<li><a href="../nwp_gdps/readme_gdps_fr/">Système global de prévision déterministe (SGPD)</a></li>
+<li><a href="../nwp_rdps/readme_rdps_fr/">Système régional de prévision déterministe (SRPD)</a><ul>
+<li><a href="../vertical-profiles/readme_vertical-profiles-nwp_fr/">Profils verticaux à partir du Système régional de prévision déterministe (SRPD)</a></li>
+</ul>
+</li>
+<li><a href="../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a></li>
+<li><a href="../nwp_hrdps-north/readme_hrdps-north_fr/">Système à haute résolution de prévision déterministe Nord expérimental (SHRPD-Nord)</a></li>
+<li><a href="../nwp_nowcasting/readme_nowcasting_fr/">Matrices Scribe de prévisions immédiates</a></br></li>
+</ul>
+<h5 id="ensembliste">&emsp;<span class="badge badge-info">Ensembliste</span></h5>
+<ul>
+<li><a href="../nwp_geps/readme_geps_fr/">Système global de prévision d'ensemble (SGPE)</a><ul>
+<li><a href="../nwp_naefs/readme_naefs_fr/">Système de prévision d'ensemble nord-américain (SPENA)</a></li>
+</ul>
+</li>
+<li><a href="../nwp_reps/readme_reps_fr/">Système régional de prévision d'ensemble (SRPE)</a></li>
+<li><a href="../nwp_cansips/readme_cansips_fr/">Système de prévision interannuelle et saisonnière canadien (SPISCan)</a></br></li>
+</ul>
+<h5 id="analyse-de-la-precipitation">&emsp;<span class="badge badge-info">Analyse de la précipitation:</span></h5>
+<ul>
+<li><a href="../nwp_rdpa/readme_rdpa_fr/">Analyse régionale déterministe de précipitation (ARDP)</a></li>
+<li><a href="../nwp_hrdpa/readme_hrdpa_fr/">Analyse à haute résolution déterministe de précipitation (AHRDP)</a></li>
+<li><a href="../nwp_hrepa/readme_hrepa_fr/">Analyse à haute résolution ensembliste de précipitation (AHREP)</a></li>
+<li><a href="../nwp_hrdpa-watershed/readme_hrdpa-watershed_fr/">Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)</a></br></li>
+</ul>
+<h5 id="qualite-de-lair">&emsp;<span class="badge badge-info">Qualité de l'air</span></h5>
+<ul>
+<li><a href="../nwp_raqdps/readme_raqdps_fr/">Système régional de prévision déterministe de la qualité de l'air (SRPDQA)</a></li>
+<li><a href="../nwp_raqdps-fw/readme_raqdps-fw_fr/">Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)</a></li>
+<li><a href="../nwp_rdaqa/readme_rdaqa_fr/">Analyse régionale déterministe de la qualité de l'air (ARDQA)</a></li>
+</ul>
+<h3 id="surface"><span class="badge badge-light">Surface</span></h3>
+<ul>
+<li><a href="../nwp_caldas-nsrps/readme_caldas-nsrps_fr/">Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)</a></li>
+<li><a href="../nwp_hrdlps/readme_hrdlps_fr/">Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)</a></br></li>
+</ul>
+<h3 id="eau-ocean-et-glace"><span class="badge badge-light">Eau, océan et glace</span></h3>
+<h5 id="glace-et-ocean">&emsp;<span class="badge badge-info">Glace et océan</span></h5>
+<ul>
+<li><a href="../nwp_giops/readme_giops_fr/">Système global de prévision océan-glace (SGPOG)</a></li>
+<li><a href="../nwp_riops/readme_riops_fr/">Système régional de prévision océan-glace (SRPOG)</a></li>
+<li><a href="../nwp_ciops/readme_ciops_fr/">Système de prévision côtier océan-glace (SPCOG)</a></br></li>
+</ul>
+<h5 id="vague">&emsp;<span class="badge badge-info">Vague</span></h5>
+<ul>
+<li><a href="../nwp_gdwps/readme_gdwps_fr/">Système global de prévision déterministe de vague (SGPDV)</a></li>
+<li><a href="../nwp_gewps/readme_gewps_fr/">Système global de prévision d'ensemble de vague (SGPEV)</a></li>
+<li><a href="../nwp_rdwps/readme_rdwps_fr/">Système régional de prévision déterministe de vague (SRPDV)</a></li>
+<li><a href="../nwp_rewps/readme_rewps_fr/">Système régional de prévision d'ensemble de vague (SRPEV)</a></br></li>
+</ul>
+<h5 id="onde-de-tempete">&emsp;<span class="badge badge-info">Onde de tempête</span></h5>
+<ul>
+<li><a href="../nwp_gdsps/readme_gdsps_fr/">Système global de prévision déterministe d'onde de tempête (SGPDOT)</a></li>
+<li><a href="../nwp_resps/readme_resps_fr/">Système régional de prévision d'ensemble d'onde de tempête (SRPEOT)</a>
+</br></li>
+</ul>
+<h5 id="eau">&emsp;<span class="badge badge-info">Eau</span></h5>
+<ul>
+<li><a href="../nwp_wcps/readme_wcps_fr/">Système de prévision du cycle de l'eau (SPCE)</a></li>
+<li><a href="../nwp_ohps/readme_ohps_fr/">Système de simulation hydrodynamique opérationnelle (SHOP)</a></br></li>
+</ul>
+<p>Note: <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_fr.svg">Diagramme de dépendances des systèmes de prévision numériques météorologiques et environnementales du CCMEP</a>
+</br></br></p>
+<h2 id="donnees-climatiques">Données climatiques</h2>
+<ul>
+<li><a href="../climate_ahccd/readme_ahccd_fr/">Données climatiques canadiennes ajustées et homogénéisées (AHCCD)</a></li>
+<li><a href="../climate_cangrd/readme_cangrd_fr/">Données climatiques historiques sur grille canadienne (CANGRD)</a></li>
+<li><a href="../climate_cmip5/readme_cmip5_fr/">Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)</a></li>
+<li><a href="../climate_dcs/readme_dcs_fr/">Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (DCS)</a></li>
+<li><a href="../climate_spei/readme_spei_fr/">Indice de précipitations et d’évapotranspiration normalisé (IPEN)</a></li>
+<li><a href="../climate_indices/readme_climateindices_fr/">Indices climatiques mis à l’échelle de manière statistique</a></li>
+<li><a href="../climate_obs/readme_climateobs_fr/">Observations historiques</a></li>
+<li><a href="../climate_ltce/readme_climateltce_fr/">Records des Extrêmes Quotidiens (Extrêmes climatiques à long terme)</a>
+</br></br></li>
+</ul>
+<h2 id="autres-donnees">Autres données</h2>
+<ul>
+<li><a href="../aqhi/readme_aqhi_fr/">Observations et prévisions de la Cote air santé (CAS)</a></li>
+<li><a href="../bulletins/readme_bulletins_fr/">Bulletins</a></li>
+<li><a href="../hurricanes/readme_hurricanes_fr/">Ouragans</a></li>
+<li><a href="../meteocode/readme_meteocode_fr/">Meteocode pour les régions publiques canadiennes</a></li>
+<li><a href="../metnotes/readme_metnotes_fr/">MetNotes</a></li>
+<li><a href="../forecast-regions/readme_forecast-regions_fr/">Polygones des régions de prévision</a>
+</br></br></li>
+</ul>
+<h2 id="donnees-ouvertes-retirees">Données ouvertes retirées</h2>
+<ul>
+<li><a href="../nwp_caps/readme_caps_fr/">Système canadien de prévision de l'Arctique (SCPA) expérimental</a></li>
+<li><a href="../nwp_rdsps/readme_rdsps_fr/">Système régional de prévision déterministe d'onde de tempête (SRPDOT)</a></li>
+<li><a href="../nwp_rdps-cgsl/readme_rdps-cgsl_fr/">Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)</a>
+</br></br></li>
+</ul>
+<h2 id="changements-aux-systemes-de-production-de-donnees-operationnels">Changements aux systèmes de production de données opérationnels</h2>
+<p>Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le <a href="../changelog_nwp_fr/">journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) est disponible</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

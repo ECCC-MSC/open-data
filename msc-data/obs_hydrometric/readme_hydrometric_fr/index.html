@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme hydrometric fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-dobservations-hydrometriques" class="nav-link">Données d'observations hydrométriques</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#acces" class="nav-link">Accès</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#documentation-technique" class="nav-link">Documentation technique</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_hydrometric_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; Observations hydrométriques</p>
+<h1 id="donnees-dobservations-hydrometriques">Données d'observations hydrométriques</h1>
+<p><strong>Données hydrométriques en temps réel</strong></p>
+<p>Données en temps réel sur les niveaux d'eau et les débits (décharge) recueillies dans plus de 2100 stations hydrométriques au Canada (30 derniers jours).</p>
+<p><strong>Données hydrométriques historiques</strong></p>
+<p>Les données hydrométriques historiques sont des données et de l'information normalisées sur les ressources en eau. Elles sont recueillies, interprétées et diffusées par les Services hydrologiques nationaux (SHN) en partenariat avec les provinces, territoires et autres organismes par l'intermédiaire du Programme national de relevés hydrométriques. Ces ensembles de données comprennent les valeurs de moyennes quotidiennes et mensuelles, les valeurs de moyennes quotidiennes minimales et maximales par année et les valeurs des débits et des niveaux d'eau de pointe et instantanés pour plus de 2700 stations de surveillance hydrométrique actives et 5100 stations fermées au Canada.</p>
+<p><strong>Stations de surveillance hydrométrique</strong></p>
+<p>Une station est un site sur une rivière ou un lac où les quantités d'eau (niveau et débit) sont collectées et enregistrées.</p>
+<h2 id="acces">Accès</h2>
+<h3 id="comment-acceder-aux-donnees">Comment accéder aux données</h3>
+<p>Ces données sont respectivement disponibles sur les API / services web <a href="../../../msc-geomet/readme_fr/">GeoMet du SMC</a> et le serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> :</p>
+<ul>
+<li><a href="https://api.meteo.gc.ca/">Données disponibles sur les services web géospatiaux GeoMet-OGC-API</a>:<ul>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-realtime">Données hydrométriques en temps réel</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean">Moyenne quotidienne des niveaux ou débits d'eau</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-monthly-mean">Moyenne mensuelle des niveaux ou débits d'eau</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-annual-statistics">Maximum et minimum annuels des moyennes quotiennes des niveaux ou débits d'eau</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-annual-peaks">Maximum et minimum annuels des niveaux ou débits d'eau instantanés</a></li>
+<li><a href="https://api.meteo.gc.ca/collections/hydrometric-stations">Stations de surveillance hydrométrique</a></li>
+</ul>
+</li>
+<li><a href="../readme_hydrometric-datamart_fr/">Données hydrométriques en temps réel en format CSV disponibles sur le Datamart du SMC</a> </li>
+</ul>
+<p>Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est disponible.</p>
+<h3 id="licence">Licence</h3>
+<p>La <a href="../../../licence/readme_fr/">licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada</a> précise les conditions d'utilisation de ces données.</p>
+<h3 id="politique-dutilisation-des-services-de-donnees-ouvertes-du-smc">Politique d'utilisation des services de données ouvertes du SMC</h3>
+<p>La <a href="../../../usage-policy/readme_fr/">Politique d'utilisation des services de données ouvertes du SMC</a> détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.</p>
+<h3 id="metadonnees">Métadonnées</h3>
+<ul>
+<li>Les <a href="https://ouvert.canada.ca/data/fr/dataset/ef2161a8-b01d-4dfb-ad00-1a70f7c4073b">métadonnées de Données hydrométriques en temps réel sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/1ee9e14d-0814-5201-a3be-705809d8ee0e">métadonnées de Données hydrométriques historiques sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/76747350-2faa-490e-90d1-0e5af6e66027">métadonnées de Moyenne mensuelle des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/f8b1490e-873e-480a-9037-6eb075f63106">métadonnées de Moyenne quotidienne des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/0e73142b-c4a7-4bf0-8d16-72ac2df60fc1">métadonnées de Maximum et minimum annuels des moyennes quotiennes des niveaux ou débits d'eau sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/49126bff-0de8-4b9d-8c03-189be2e66261">métadonnées de Maximum et minimum annuels des niveaux ou débits d'eau instantanés sont accessibles sur le portail du gouvernement ouvert</a></li>
+<li>Les <a href="https://open.canada.ca/data/fr/dataset/46763060-e859-4812-8da5-2361d99b4c34">métadonnées de Stations de surveillance hydrométrique sont accessibles sur le portail du gouvernement ouvert</a></li>
+</ul>
+<h2 id="documentation-technique">Documentation technique</h2>
+<ul>
+<li><a href="https://www.canada.ca/fr/environnement-changement-climatique/services/eau-apercu/volume/surveillance/releves.html">Relevés hydrologiques du Canada</a></li>
+<li><a href="https://eau.ec.gc.ca/">Données de niveau d'eau et de débit en temps réel et historiques</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

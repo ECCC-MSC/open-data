@@ -1,0 +1,371 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Albédo,ALBDO,Surface,%
+Caractère de précipitation,CHARPCPN,Surface,0=Aucune; 1=Averse; 2=Intermittente; 3=Continue
+Composante u du vent,UGRD,10 m au-dessus du niveau du sol,m/s
+Composante u du vent,UGRD,100 mb,m/s
+Composante u du vent,UGRD,1000 mb,m/s
+Composante u du vent,UGRD,1015 mb,m/s
+Composante u du vent,UGRD,120 m au-dessus du niveau du sol,m/s
+Composante u du vent,UGRD,150 mb,m/s
+Composante u du vent,UGRD,175 mb,m/s
+Composante u du vent,UGRD,200 mb,m/s
+Composante u du vent,UGRD,225 mb,m/s
+Composante u du vent,UGRD,250 mb,m/s
+Composante u du vent,UGRD,275 mb,m/s
+Composante u du vent,UGRD,300 mb,m/s
+Composante u du vent,UGRD,350 mb,m/s
+Composante u du vent,UGRD,40 m au-dessus du niveau du sol,m/s
+Composante u du vent,UGRD,400 mb,m/s
+Composante u du vent,UGRD,450 mb,m/s
+Composante u du vent,UGRD,50 mb,m/s
+Composante u du vent,UGRD,500 mb,m/s
+Composante u du vent,UGRD,550 mb,m/s
+Composante u du vent,UGRD,600 mb,m/s
+Composante u du vent,UGRD,650 mb,m/s
+Composante u du vent,UGRD,700 mb,m/s
+Composante u du vent,UGRD,750 mb,m/s
+Composante u du vent,UGRD,80 m au-dessus du niveau du sol,m/s
+Composante u du vent,UGRD,800 mb,m/s
+Composante u du vent,UGRD,850 mb,m/s
+Composante u du vent,UGRD,875 mb,m/s
+Composante u du vent,UGRD,900 mb,m/s
+Composante u du vent,UGRD,925 mb,m/s
+Composante u du vent,UGRD,950 mb,m/s
+Composante u du vent,UGRD,970 mb,m/s
+Composante u du vent,UGRD,985 mb,m/s
+Composante v du vent,VGRD,10 m au-dessus du niveau du sol,m/s
+Composante v du vent,VGRD,100 mb,m/s
+Composante v du vent,VGRD,1000 mb,m/s
+Composante v du vent,VGRD,1015 mb,m/s
+Composante v du vent,VGRD,120 m au-dessus du niveau du sol,m/s
+Composante v du vent,VGRD,150 mb,m/s
+Composante v du vent,VGRD,175 mb,m/s
+Composante v du vent,VGRD,200 mb,m/s
+Composante v du vent,VGRD,225 mb,m/s
+Composante v du vent,VGRD,250 mb,m/s
+Composante v du vent,VGRD,275 mb,m/s
+Composante v du vent,VGRD,300 mb,m/s
+Composante v du vent,VGRD,350 mb,m/s
+Composante v du vent,VGRD,40 m au-dessus du niveau du sol,m/s
+Composante v du vent,VGRD,400 mb,m/s
+Composante v du vent,VGRD,450 mb,m/s
+Composante v du vent,VGRD,50 mb,m/s
+Composante v du vent,VGRD,500 mb,m/s
+Composante v du vent,VGRD,550 mb,m/s
+Composante v du vent,VGRD,600 mb,m/s
+Composante v du vent,VGRD,650 mb,m/s
+Composante v du vent,VGRD,700 mb,m/s
+Composante v du vent,VGRD,750 mb,m/s
+Composante v du vent,VGRD,80 m au-dessus du niveau du sol,m/s
+Composante v du vent,VGRD,800 mb,m/s
+Composante v du vent,VGRD,850 mb,m/s
+Composante v du vent,VGRD,875 mb,m/s
+Composante v du vent,VGRD,900 mb,m/s
+Composante v du vent,VGRD,925 mb,m/s
+Composante v du vent,VGRD,950 mb,m/s
+Composante v du vent,VGRD,970 mb,m/s
+Composante v du vent,VGRD,985 mb,m/s
+Contenu volumétrique en glace du sol (équivalent en eau),SOILVIC,Surface,m<sup>3</sup>/m<sup>3</sup>
+Couverture nuageuse totale,TCDC,Surface,%
+Densité de la neige,SDEN,Surface,kg/m<sup>3</sup>
+Densité,DEN,120 m au-dessus du niveau du sol,kg/m<sup>3</sup>
+Densité,DEN,40 m au-dessus du niveau du sol,kg/m<sup>3</sup>
+Densité,DEN,80 m au-dessus du niveau du sol,kg/m<sup>3</sup>
+Direction du vent (d'où il souffle),WDIR,10 m au-dessus du niveau du sol,Degree true
+Direction du vent (d'où il souffle),WDIR,100 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,1000 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,1015 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,120 m au-dessus du niveau du sol,Degree true
+Direction du vent (d'où il souffle),WDIR,150 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,175 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,200 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,225 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,250 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,275 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,300 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,350 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,40 m au-dessus du niveau du sol,Degree true
+Direction du vent (d'où il souffle),WDIR,400 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,450 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,50 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,500 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,550 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,600 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,650 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,700 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,750 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,80 m au-dessus du niveau du sol,Degree true
+Direction du vent (d'où il souffle),WDIR,800 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,850 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,875 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,900 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,925 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,950 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,970 mb,Degree true
+Direction du vent (d'où il souffle),WDIR,985 mb,Degree true
+Eau précipitable,CWAT,Colonne atmosphérique,kg/m<sup>2</sup>
+Flux net d'ondes courtes (surface),NSWRS,Surface,W/m<sup>2</sup>
+Flux net d'ondes longues (surface),NLWRS,Surface,W/m<sup>2</sup>
+Flux net de chaleur latente,LHTFL,Surface,W/m<sup>2</sup>
+Flux net de chaleur sensible,SHTFL,Surface,W/m<sup>2</sup>
+Flux radiatif ascendant d'ondes courtes,USWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
+Flux radiatif ascendant d'ondes longues,ULWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
+Flux radiatif entrant d'ondes courtes,DSWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
+Flux radiatif entrant d'ondes courtes,DSWRF,Surface,W/m<sup>2</sup>
+Flux radiatif entrant d'ondes longues,DLWRF,Surface,W/m<sup>2</sup>
+Hauteur de la couche limite planétaire,HPBL,Surface,m
+Hauteur du niveau de la neige,HGTSNLVL,Surface,m
+Hauteur géopotentielle,HGT,100 mb,gpm
+Hauteur géopotentielle,HGT,1000 mb,gpm
+Hauteur géopotentielle,HGT,1015 mb,gpm
+Hauteur géopotentielle,HGT,150 mb,gpm
+Hauteur géopotentielle,HGT,175 mb,gpm
+Hauteur géopotentielle,HGT,200 mb,gpm
+Hauteur géopotentielle,HGT,225 mb,gpm
+Hauteur géopotentielle,HGT,250 mb,gpm
+Hauteur géopotentielle,HGT,275 mb,gpm
+Hauteur géopotentielle,HGT,300 mb,gpm
+Hauteur géopotentielle,HGT,350 mb,gpm
+Hauteur géopotentielle,HGT,400 mb,gpm
+Hauteur géopotentielle,HGT,450 mb,gpm
+Hauteur géopotentielle,HGT,50 mb,gpm
+Hauteur géopotentielle,HGT,500 mb,gpm
+Hauteur géopotentielle,HGT,550 mb,gpm
+Hauteur géopotentielle,HGT,600 mb,gpm
+Hauteur géopotentielle,HGT,650 mb,gpm
+Hauteur géopotentielle,HGT,700 mb,gpm
+Hauteur géopotentielle,HGT,750 mb,gpm
+Hauteur géopotentielle,HGT,800 mb,gpm
+Hauteur géopotentielle,HGT,850 mb,gpm
+Hauteur géopotentielle,HGT,875 mb,gpm
+Hauteur géopotentielle,HGT,900 mb,gpm
+Hauteur géopotentielle,HGT,925 mb,gpm
+Hauteur géopotentielle,HGT,950 mb,gpm
+Hauteur géopotentielle,HGT,970 mb,gpm
+Hauteur géopotentielle,HGT,985 mb,gpm
+Hauteur géopotentielle,HGT,Surface,gpm
+Humidité relative,RH,100 mb,%
+Humidité relative,RH,1000 mb,%
+Humidité relative,RH,1015 mb,%
+Humidité relative,RH,120 m au-dessus du niveau du sol,%
+Humidité relative,RH,150 mb,%
+Humidité relative,RH,175 mb,%
+Humidité relative,RH,2 m au-dessus du niveau du sol,%
+Humidité relative,RH,200 mb,%
+Humidité relative,RH,225 mb,%
+Humidité relative,RH,250 mb,%
+Humidité relative,RH,275 mb,%
+Humidité relative,RH,300 mb,%
+Humidité relative,RH,350 mb,%
+Humidité relative,RH,40 m au-dessus du niveau du sol,%
+Humidité relative,RH,400 mb,%
+Humidité relative,RH,450 mb,%
+Humidité relative,RH,50 mb,%
+Humidité relative,RH,500 mb,%
+Humidité relative,RH,550 mb,%
+Humidité relative,RH,600 mb,%
+Humidité relative,RH,650 mb,%
+Humidité relative,RH,700 mb,%
+Humidité relative,RH,750 mb,%
+Humidité relative,RH,80 m au-dessus du niveau du sol,%
+Humidité relative,RH,800 mb,%
+Humidité relative,RH,850 mb,%
+Humidité relative,RH,875 mb,%
+Humidité relative,RH,900 mb,%
+Humidité relative,RH,925 mb,%
+Humidité relative,RH,950 mb,%
+Humidité relative,RH,970 mb,%
+Humidité relative,RH,985 mb,%
+Humidité spécifique,SPFH,100 mb,kg/kg
+Humidité spécifique,SPFH,1000 mb,kg/kg
+Humidité spécifique,SPFH,1015 mb,kg/kg
+Humidité spécifique,SPFH,120 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,150 mb,kg/kg
+Humidité spécifique,SPFH,175 mb,kg/kg
+Humidité spécifique,SPFH,2 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,200 mb,kg/kg
+Humidité spécifique,SPFH,225 mb,kg/kg
+Humidité spécifique,SPFH,250 mb,kg/kg
+Humidité spécifique,SPFH,275 mb,kg/kg
+Humidité spécifique,SPFH,300 mb,kg/kg
+Humidité spécifique,SPFH,350 mb,kg/kg
+Humidité spécifique,SPFH,40 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,400 mb,kg/kg
+Humidité spécifique,SPFH,450 mb,kg/kg
+Humidité spécifique,SPFH,50 mb,kg/kg
+Humidité spécifique,SPFH,500 mb,kg/kg
+Humidité spécifique,SPFH,550 mb,kg/kg
+Humidité spécifique,SPFH,600 mb,kg/kg
+Humidité spécifique,SPFH,650 mb,kg/kg
+Humidité spécifique,SPFH,700 mb,kg/kg
+Humidité spécifique,SPFH,750 mb,kg/kg
+Humidité spécifique,SPFH,80 m au-dessus du niveau du sol,kg/kg
+Humidité spécifique,SPFH,800 mb,kg/kg
+Humidité spécifique,SPFH,850 mb,kg/kg
+Humidité spécifique,SPFH,875 mb,kg/kg
+Humidité spécifique,SPFH,900 mb,kg/kg
+Humidité spécifique,SPFH,925 mb,kg/kg
+Humidité spécifique,SPFH,950 mb,kg/kg
+Humidité spécifique,SPFH,970 mb,kg/kg
+Humidité spécifique,SPFH,985 mb,kg/kg
+Humidité spécifique,SPFH,Surface,kg/kg
+Hélicité relative de la tempête,HLCY,Surface,J/kg
+Indice Showalter,SHWINX,500 mb,K
+Indice climatique thermique universel,UTHCIDX,Surface,K
+Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
+Indice de soulèvement,4LFTX,500 mb,K
+Indice de ventilation,VI,Surface,0 à 100
+Masque terre/eau,WTRLANMASK,Surface,Fraction
+Orographie du modèle,ORGPHY,Surface,m
+Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
+Pression,PRES,Surface,Pa
+Probabilité d'occurrence d'orage,PROBTSOCRNC,Surface,%
+Probabilité de bourrasque de neige,PROBSNSQ,Surface,%
+Probabilité de bruine,PROBDZ,Surface,%
+Probabilité de bruine verglaçante,PROBFZDZ,Surface,%
+Probabilité de grésil,PROBPL,Surface,%
+Probabilité de neige,PROBSN,Surface,%
+Probabilité de pluie verglaçante,PROBFZRA,Surface,%
+Probabilité de pluie,PROBRA,Surface,%
+Probabilité de poudrerie,PROBBLSN,Surface,%
+Probabilité de précipitation,PROBPCPN,Surface,%
+Probabilité de précipitation liquide,PROBLPCPN,Surface,%
+Probabilité de précipitation verglaçante,PROBFZPCPN,Surface,%
+Précipitation totale,APCP,Surface,kg/m<sup>2</sup>
+Précipitations convectives,ACPCP,Surface,kg/m<sup>2</sup>
+Quantité conditionnelle de granulés de glace solide,CONDAPL,Surface,m
+Quantité conditionnelle de neige solide,CONDASSN,Surface,m
+Quantité conditionnelle de précipitation,CONDAPCPN,Surface,m
+Quantité conditionnelle de précipitation liquide,CONDALPCPN,Surface,m
+Quantité conditionnelle de précipitations verglaçantes,CONDAFZPCPN,Surface,kg/(m<sup>2</sup>*s)
+Ruissellement de surface,SFCWRO,Surface,kg/m<sup>2</sup>
+Taux d'humidité du sol,SOILM,Profondeur sous la surface terrestre (0-0.01 m),kg/m<sup>2</sup>
+Taux d'humidité du sol,SOILM,Profondeur sous la surface terrestre (0-0.1 m),kg/m<sup>2</sup>
+Taux de précipitation de la neige,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation de la pluie,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation des pluies verglaçantes,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation du grésil,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation,PRATE,Surface,kg/(m<sup>2</sup>*s)
+Température de la peau,SKINT,Surface,K
+Température du point de rosée,DPT,120 m au-dessus du niveau du sol,K
+Température du point de rosée,DPT,2 m au-dessus du niveau du sol,K
+Température du point de rosée,DPT,40 m au-dessus du niveau du sol,K
+Température du sol,TSOIL,Profondeur sous la surface terrestre (0-0.1 m),K
+Température du sol,TSOIL,Surface,K
+Température,TMP,100 mb,K
+Température,TMP,1000 mb,K
+Température,TMP,1015 mb,K
+Température,TMP,120 m au-dessus du niveau du sol,K
+Température,TMP,150 mb,K
+Température,TMP,175 mb,K
+Température,TMP,2 m au-dessus du niveau du sol,K
+Température,TMP,200 mb,K
+Température,TMP,225 mb,K
+Température,TMP,250 mb,K
+Température,TMP,275 mb,K
+Température,TMP,300 mb,K
+Température,TMP,350 mb,K
+Température,TMP,40 m au-dessus du niveau du sol,K
+Température,TMP,400 mb,K
+Température,TMP,450 mb,K
+Température,TMP,50 mb,K
+Température,TMP,500 mb,K
+Température,TMP,550 mb,K
+Température,TMP,600 mb,K
+Température,TMP,650 mb,K
+Température,TMP,700 mb,K
+Température,TMP,750 mb,K
+Température,TMP,80 m au-dessus du niveau du sol,K
+Température,TMP,800 mb,K
+Température,TMP,850 mb,K
+Température,TMP,875 mb,K
+Température,TMP,900 mb,K
+Température,TMP,925 mb,K
+Température,TMP,950 mb,K
+Température,TMP,970 mb,K
+Température,TMP,985 mb,K
+Tourbillon absolu,ABSV,1000 mb,s<sup>-1</sup>
+Tourbillon absolu,ABSV,250 mb,s<sup>-1</sup>
+Tourbillon absolu,ABSV,500 mb,s<sup>-1</sup>
+Tourbillon absolu,ABSV,700 mb,s<sup>-1</sup>
+Tourbillon absolu,ABSV,850 mb,s<sup>-1</sup>
+Type de précipitation dominant,DMNTPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
+Type de précipitation instantanée,PCPNTYPE,Surface,1=Pluie; 2=Pluie/Neige; 3=Pluie verglaçante; 4=Grésil; 5=Neige; 6=Aucune; 7=Bruine; 8=Bruine verglaçante; 9=Précipitation verglaçante/Grésil
+Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
+Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
+Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
+Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,100 mb,m/s
+Vitesse du vent,WSPD,1000 mb,m/s
+Vitesse du vent,WSPD,1015 mb,m/s
+Vitesse du vent,WSPD,120 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,150 mb,m/s
+Vitesse du vent,WSPD,175 mb,m/s
+Vitesse du vent,WSPD,200 mb,m/s
+Vitesse du vent,WSPD,225 mb,m/s
+Vitesse du vent,WSPD,250 mb,m/s
+Vitesse du vent,WSPD,275 mb,m/s
+Vitesse du vent,WSPD,300 mb,m/s
+Vitesse du vent,WSPD,350 mb,m/s
+Vitesse du vent,WSPD,40 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,400 mb,m/s
+Vitesse du vent,WSPD,450 mb,m/s
+Vitesse du vent,WSPD,50 mb,m/s
+Vitesse du vent,WSPD,500 mb,m/s
+Vitesse du vent,WSPD,550 mb,m/s
+Vitesse du vent,WSPD,600 mb,m/s
+Vitesse du vent,WSPD,650 mb,m/s
+Vitesse du vent,WSPD,700 mb,m/s
+Vitesse du vent,WSPD,750 mb,m/s
+Vitesse du vent,WSPD,80 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WSPD,800 mb,m/s
+Vitesse du vent,WSPD,850 mb,m/s
+Vitesse du vent,WSPD,875 mb,m/s
+Vitesse du vent,WSPD,900 mb,m/s
+Vitesse du vent,WSPD,925 mb,m/s
+Vitesse du vent,WSPD,950 mb,m/s
+Vitesse du vent,WSPD,970 mb,m/s
+Vitesse du vent,WSPD,985 mb,m/s
+Vitesse verticale (pression),VVEL,1000 mb,Pa/s
+Vitesse verticale (pression),VVEL,250 mb,Pa/s
+Vitesse verticale (pression),VVEL,500 mb,Pa/s
+Vitesse verticale (pression),VVEL,700 mb,Pa/s
+Vitesse verticale (pression),VVEL,850 mb,Pa/s
+Écart du point de rosée,DEPR,100 mb,K
+Écart du point de rosée,DEPR,1000 mb,K
+Écart du point de rosée,DEPR,1015 mb,K
+Écart du point de rosée,DEPR,120 m au-dessus du niveau du sol,K
+Écart du point de rosée,DEPR,150 mb,K
+Écart du point de rosée,DEPR,175 mb,K
+Écart du point de rosée,DEPR,2 m au-dessus du niveau du sol,K
+Écart du point de rosée,DEPR,200 mb,K
+Écart du point de rosée,DEPR,225 mb,K
+Écart du point de rosée,DEPR,250 mb,K
+Écart du point de rosée,DEPR,275 mb,K
+Écart du point de rosée,DEPR,300 mb,K
+Écart du point de rosée,DEPR,350 mb,K
+Écart du point de rosée,DEPR,40 m au-dessus du niveau du sol,K
+Écart du point de rosée,DEPR,400 mb,K
+Écart du point de rosée,DEPR,450 mb,K
+Écart du point de rosée,DEPR,50 mb,K
+Écart du point de rosée,DEPR,500 mb,K
+Écart du point de rosée,DEPR,550 mb,K
+Écart du point de rosée,DEPR,600 mb,K
+Écart du point de rosée,DEPR,650 mb,K
+Écart du point de rosée,DEPR,700 mb,K
+Écart du point de rosée,DEPR,750 mb,K
+Écart du point de rosée,DEPR,80 m au-dessus du niveau du sol,K
+Écart du point de rosée,DEPR,800 mb,K
+Écart du point de rosée,DEPR,850 mb,K
+Écart du point de rosée,DEPR,875 mb,K
+Écart du point de rosée,DEPR,900 mb,K
+Écart du point de rosée,DEPR,925 mb,K
+Écart du point de rosée,DEPR,950 mb,K
+Écart du point de rosée,DEPR,970 mb,K
+Écart du point de rosée,DEPR,985 mb,K
+Énergie potentielle convective disponible,CAPE,Surface,J/kg
+Épaisseur de la neige,SNOD,Surface,m
+Épaisseur de neige équivalent en eau,SDWE,Surface,kg/m<sup>2</sup>
+Épaisseur entre 2 niveaux isobares,THICK,1000-500 mb,m
+État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=Ensoleillé/Dégagé; 2-3=Généralement ensoleillé/Quelques nuages; 4-5-6=Alternance de soleil et de nuages/Partiellement nuageux; 7-8=Généralement nuageux/Généralement nuageux; 9=Nuageux/Nuageux; 10=Nuageux/Couvert

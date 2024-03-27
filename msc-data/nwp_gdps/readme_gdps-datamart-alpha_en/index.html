@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme gdps datamart alpha en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#experimental-grib2-weather-elements-on-the-grid-data-based-on-the-global-deterministic-prediction-system-gdps" class="nav-link">Experimental GRIB2 Weather Elements on the Grid data based on the Global Deterministic Prediction System (GDPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-address" class="nav-link">Data Address</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid" class="nav-link">Technical specification of the grid</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-of-file-names" class="nav-link">Nomenclature of file names</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_gdps-datamart-alpha_fr/">In French</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_gdps_en/">SGPD</a> &gt; GDPS Weather Elements on the Grid on DD-Alpha</p>
+<h1 id="experimental-grib2-weather-elements-on-the-grid-data-based-on-the-global-deterministic-prediction-system-gdps">Experimental GRIB2 Weather Elements on the Grid data based on the Global Deterministic Prediction System (GDPS)</h1>
+<p>For nearly three decades, the <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html">SCRIBE system</a> has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.</p>
+<p>The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the understanding of weather forecasts, and and may require frequent interventions from forecasters.</p>
+<p>As part of a larger modernization plan for the Meteorological Service of Canada (MSC), in which the role of the forecaster is evolving, the goal is to replace the Scribe matrices, <a href="https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/">available on the MSC Datamart</a>, and their limited number of points across Canada with <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf">Weather Elements on the Grid</a> ("WEonG").</p>
+<p>Weather Elements on Grid (WEonG) based on the Global Deterministic Prediction System (GDPS) is a post-processing system designed to compute the weather elements required by different forecast programs (public, marine, aviation, air quality, etc.). This system amalgamates numerical and post-processed data using various diagnostic approaches. Hourly concepts are produced from different algorithms using outputs from the <a href="../readme_gdps_en.md">Global Deterministic Prediction System (GDPS)</a>.</p>
+<h2 id="data-address">Data Address</h2>
+<p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
+<p>The rotated lat-lon grid data can be accessed at the following address: </p>
+<p><a href="https://dd.alpha.meteo.gc.ca/model_gem_global/15km/">https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}/{hhh}/</a></p>
+<p>where :</p>
+<ul>
+<li><strong>HH</strong> : Model run start, in UTC [00, 12]</li>
+<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 048]</li>
+</ul>
+<p>A 24-hour history is kept in this directory.</p>
+<p>Note: Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</p>
+<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
+<p>Values given to the parameters of the lat-lon grid:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>2400</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>1201</td>
+</tr>
+<tr>
+<td>resolution at 60° N</td>
+<td>15km</td>
+</tr>
+<tr>
+<td>coordinates of first grid point</td>
+<td>90° S; 180° W</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
+<p>The files have the following nomenclature:</p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_GDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></p>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
+<li><strong>HH</strong>: UTC run time [00, 06, 12, 18] </li>
+<li><strong>Z</strong>: Time zone (UTC hour)</li>
+<li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
+<li><strong>GDPS-WEonG</strong> : Constant string indicating that the data are from the Global Deterministic Prediction System weather elements on the grid ("WEonG")</li>
+<li><strong>VAR</strong> : Variables contained in the files (ex: VISIFG).</li>
+<li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
+<li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
+<li><strong>resolution</strong> : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions</li>
+<li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 048]</li>
+<li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
+</ul>
+<p>Example file name:</p>
+<ul>
+<li>20220821T12Z_MSC_GDPS-WEonG_BLSN_Sfc_LatLon0.15_PT024H.grib2</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<p>List of surface weather elements on the grid:</p>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-WEonG_Variables-List_en.csv");
+</script>
+
+<h2 id="support">Support</h2>
+<p>If you have any questions regarding this data, please <a href="https://meteo.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> list.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

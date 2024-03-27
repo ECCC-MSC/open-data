@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog rdps en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-regional-deterministic-prediction-system-rdps" class="nav-link">Chronology of changes to the Regional Deterministic Prediction System (RDPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#thursday-november-2-2023" class="nav-link">Thursday November 2, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-september-14-2023" class="nav-link">Thursday September 14, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-5-2023" class="nav-link">Wednesday July 5, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-march-8-2023" class="nav-link">Wednesday March 8, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-february-15-2023" class="nav-link">Wednesday February 15, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-january-4-2023" class="nav-link">Wednesday January 4, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-november-3-2022" class="nav-link">Thursday November 3, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-february-16-2022" class="nav-link">Wednesday February 16, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-december-1st-2021" class="nav-link">Wednesday December 1st, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-26th-2021" class="nav-link">Tuesday January 26th, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-december-8th-2020" class="nav-link">Tuesday December 8th, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#friday-june-26th-2020" class="nav-link">Friday June 26th, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-april-29th-2020" class="nav-link">Wednesday April 29th, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-april-28th-2020" class="nav-link">Tuesday April 28th, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-21-2020" class="nav-link">Tuesday January 21, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-july-23-2019" class="nav-link">Tuesday July 23, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-3-2019" class="nav-link">Wednesday July 3, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-september-18-2018" class="nav-link">Tuesday September 18, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-september-7-2016" class="nav-link">Wednesday September 7, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-december-15-2015" class="nav-link">Tuesday December 15, 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-november-18th-2014" class="nav-link">Tuesday November 18th 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-may-6th-2014" class="nav-link">Tuesday May 6th 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-november-7-2013" class="nav-link">Thursday November 7 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-july-3rd-2013" class="nav-link">Tuesday July 3rd 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-february-13-2013" class="nav-link">Wednesday February 13, 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-october-19-2012" class="nav-link">Wednesday October 19 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-october-3-2012" class="nav-link">Wednesday October 3 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-november-16-2011" class="nav-link">Wednesday November 16, 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_rdps_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_rdps_en/">RDPS</a> &gt; RDPS Changelog</p>
+<h1 id="chronology-of-changes-to-the-regional-deterministic-prediction-system-rdps">Chronology of changes to the Regional Deterministic Prediction System (RDPS)</h1>
+<h2 id="thursday-november-2-2023">Thursday November 2, 2023</h2>
+<h3 id="addition-of-csr-observations-from-the-goes-18-satellite-in-the-rdps">Addition of CSR observations from the GOES-18 satellite in the RDPS</h3>
+<p>On Thursday November 2nd, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-18 satellite.</p>
+<h2 id="thursday-september-14-2023">Thursday September 14, 2023</h2>
+<h3 id="addition-of-commercial-gnss-ro-observations-from-planetiq-in-the-rdps">Addition of commercial GNSS-RO observations from PlanetIQ in the RDPS</h3>
+<p>On Thursday September 14th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of commercial GNSS-RO (Global Navigation Satellite System Radio Occultation) observations from PlanetIQ’s constellation of GNOMES small satellites.</p>
+<h2 id="wednesday-july-5-2023">Wednesday July 5, 2023</h2>
+<h3 id="addition-of-commercial-gnss-ro-observations-from-spire-in-the-rdps">Addition of commercial GNSS-RO observations from Spire in the RDPS</h3>
+<p>On Wednesday July 5th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of commercial GNSS-RO (Global Navigation Satellite System Radio Occultation) observations from Spire’s constellation of LEMUR nanosatellites.</p>
+<h2 id="wednesday-march-8-2023">Wednesday March 8, 2023</h2>
+<h3 id="correction-to-the-quality-control-of-snow-depth-observations-from-canadian-automatic-stations-in-the-rdps">Correction to the quality control of snow depth observations from Canadian automatic stations in the RDPS</h3>
+<p>On Wednesday March 8th, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.1 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>A modification to the quality control of snow depth observations from Canadian automatic stations used in the snow analysis has been installed in the RDPS.</p>
+<p>Details of the issue, the changes made and the impacts on the snow analysis and system performance are available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_en.pdf">at this link</a>.</p>
+<p>The official note announcing the implementation of these changes is available <a href="https://dd.weather.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426">at this link</a>.</p>
+<h2 id="wednesday-february-15-2023">Wednesday February 15, 2023</h2>
+<h3 id="addition-of-gpsro-observations-from-the-sentinel-6a-satellite-in-the-rdps">Addition of GPSRO observations from the Sentinel-6A satellite in the RDPS</h3>
+<p>On Wednesday February 15th, 2023, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the Sentinel-6A.</p>
+<h2 id="wednesday-january-4-2023">Wednesday January 4, 2023</h2>
+<h3 id="replacement-of-atmospheric-motion-wind-vectors-from-goes-17-by-those-from-goes-18-in-the-rdps">Replacement of Atmospheric Motion wind Vectors from GOES-17 by those from GOES-18 in the RDPS</h3>
+<p>On Wednesday January 4th, 2023, starting with the 1800 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 8.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Replacement of Atmospheric Motion wind Vectors (AMV) from GOES-17 by those from GOES-18.</p>
+<h2 id="thursday-november-3-2022">Thursday November 3, 2022</h2>
+<h3 id="addition-of-surface-observations-received-from-ships-in-bufr-format-in-the-rdps">Addition of surface observations received from ships in BUFR format in the RDPS</h3>
+<p>On Thursday November 3rd, 2022, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update of version 8.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of surface observations received from ships in BUFR (Binary Universal Form for the Representation of meteorological data) format. TAC 
+(Traditional Alphanumeric Codes) observations were already being assimilated previously.</p>
+<h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
+<h3 id="upgrade-to-version-810-of-the-rdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 8.1.0 of the RDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="wednesday-february-16-2022">Wednesday February 16, 2022</h2>
+<h3 id="addition-of-gpsro-observations-from-the-grace-c-and-grace-d-satellites-in-the-rdps">Addition of GPSRO observations from the GRACE-C and GRACE-D satellites in the RDPS</h3>
+<p>On Wednesday February 16th, 2022, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.0.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the GRACE-C and GRACE-D satellites.</p>
+<h2 id="wednesday-december-1st-2021">Wednesday December 1st, 2021</h2>
+<h4 id="upgrade-to-version-800-of-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Upgrade to Version 8.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h4>
+<p>On Wednesday December 1st, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 8.0.0.</p>
+<p>A brief summary of the innovations included in this upgrade and their impact on performance can be found <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-800_e.pdf">in this document</a>.</p>
+<p>The official note announcing the implementation of these changes is available <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">at this link</a>.</p>
+<p>A technical note with more details on RDPS v8.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-800_e.pdf">at this link</a>.</p>
+<p>The technical specifications document for RDPS v8.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_8.0.0_e.pdf">at this link</a>.</p>
+<h2 id="tuesday-january-26th-2021">Tuesday January 26th, 2021</h2>
+<h3 id="addition-and-replacement-of-satellite-radiance-observations">Addition and replacement of satellite radiance observations</h3>
+<p>On Tuesday January 26th, 2021, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include and substitute the following observations:</p>
+<ul>
+<li>Addition of microwave radiances from the MWHS-2 instrument aboard the FY-3C satellite</li>
+<li>Replacement of infrared radiances from the IASI instrument aboard the MetOp-2/A satellite by those from MetOp-3/C</li>
+</ul>
+<h2 id="tuesday-december-8th-2020">Tuesday December 8th, 2020</h2>
+<h3 id="addition-of-satellite-radiance-observations">Addition of satellite radiance observations</h3>
+<p>On Tuesday December 8th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<ul>
+<li>Addition of microwave radiances from the AMSUA and MHS instruments aboard the MetOp-3/C satellite</li>
+<li>Addition of infrared radiances from the CrIS-FSR instrument aboard the NPP satellite</li>
+<li>Addition of CSR (Clear-Sky Radiance) infrared radiances from the GOES-17 satellite</li>
+</ul>
+<h2 id="friday-june-26th-2020">Friday June 26th, 2020</h2>
+<h3 id="addition-of-gpsro-observations-from-the-cosmic-ii-satellites">Addition of GPSRO observations from the COSMIC-II satellites</h3>
+<p>On Friday June 26th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the COSMIC II satellites.</p>
+<h2 id="wednesday-april-29th-2020">Wednesday April 29th, 2020</h2>
+<h3 id="addition-of-gpsro-observations-from-the-paz-and-the-kompsat-5-satellites">Addition of GPSRO observations from the PAZ and the KOMPSAT-5 satellites</h3>
+<p>On Wednesday April 29th, 2020, starting with the 0000 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of GPSRO (Global Positioning System Radio Occultation) observations from the PAZ and the KOMPSAT-5 satellites.</p>
+<h2 id="tuesday-april-28th-2020">Tuesday April 28th, 2020</h2>
+<h3 id="addition-of-amv-observations-from-the-metop-3c-satellite">Addition of AMV observations from the MetOp-3/C satellite</h3>
+<p>On Tuesday April 28th, 2020, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.1.0 of the Regional Deterministic Prediction System (RDPS).</p>
+<p>Only the data assimilation component was modified to include the following observations:</p>
+<p>Addition of AMV (Atmospheric Motion Vector) observations from the MetOp-3/C satellite.</p>
+<h2 id="tuesday-january-21-2020">Tuesday January 21, 2020</h2>
+<h3 id="upgrade-to-version-710-of-the-rdps-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 7.1.0 of the RDPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="tuesday-july-23-2019">Tuesday July 23, 2019</h2>
+<h3 id="additional-observations-data-in-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Additional observations data in the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday July 23rd 2019, starting with the 0600 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) proceeded with an update of its Regional Deterministic Prediction System (RDPS).</p>
+<p>The data assimilation component of the RDPS system was modified to use additional observations in seven observations families. All these families were already used, this upgrade mainly increase the data assimilation systems robustness.</p>
+<p>The details of these changes can be consulted in the copy of the official note announcing the implementation <a href="http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255">at this link</a>.</p>
+<ul>
+<li>The technical specifications document of the RDPS 7.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_e.pdf">is available at this link</a>.</li>
+</ul>
+<h2 id="wednesday-july-3-2019">Wednesday July 3, 2019</h2>
+<h3 id="major-upgrade-to-version-700-of-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Major upgrade to Version 7.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday, July 3, 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the Regional Deterministic Prediction System (RDPS) to version 7.0.0.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Changes to the forecast model:<ul>
+<li><a href="../../nwp_gdps/changelog_gdps_en/">GDPS v7.0.0</a> replaces v6.1.0 as the pilot system.</li>
+<li>Upgrade from GEM v4.8-LTS.16 to GEM v5.0.0. For more informations on GEM-5, please consult this document.</li>
+<li>Increase in the number of vertical levels from 80 to 84.</li>
+<li>Improvements to the land surface scheme ISBA.</li>
+</ul>
+</li>
+<li>Changes to the assimilation system:<ul>
+<li>Uniform cut-off for all daily runs at 7h.</li>
+<li>New sea-surface temperature and sea-ice analyses at 0.1 deg resolution (from 0.2 deg resolution).</li>
+</ul>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281748___44556">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-700_20190703_e.pdf">is available at this link</a>.</p>
+<p>The technical specifications document for RDPS 7.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_7.0.0_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-september-18-2018">Tuesday September 18, 2018</h2>
+<h3 id="major-upgrade-to-version-600-of-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Major upgrade to Version 6.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada will upgrade the Regional Deterministic Prediction System (RDPS) to version 6.0.0.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Changes to the forecast model:<ul>
+<li>No modifications were made to the forecast model component in this upgrade of the RDPS.</li>
+</ul>
+</li>
+<li>Changes to the assimilation system:<ul>
+<li>Replacement of the intermittent analysis cycling strategy by a continuous cycle (like the GDPS).</li>
+<li>An increase in the resolution of the analysis increment from 50 to 39 km.</li>
+<li>The analysis increment is now applied incrementally (IAU approach), which permits the cycling of several physics variables.</li>
+<li>Upgrade in the RTTOV radiative transfer package (From v10.2 to v12).</li>
+<li>Changes to the weighting of the error covariances to give more weight to GEPS trial fields.</li>
+</ul>
+</li>
+<li>Changes to observations:<ul>
+<li>Several improvements to the processing of radiosonde observations, atmospheric motion vectors (AMV), ground-based GPS, and aircraft data.</li>
+<li>Addition of near-surface observations from the METAR network and MSC partner networks.</li>
+<li>Addition of several clear-sky radiance (CSR) channels, primarily for water vapour.</li>
+</ul>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171330___59181">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-600_20180918_e.pdf">is available at this link</a>.</p>
+<p>The technical specifications document for RDPS 6.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_6.0.0_e.pdf">is available at this link</a>.</p>
+<h2 id="wednesday-september-7-2016">Wednesday September 7, 2016</h2>
+<h3 id="upgrade-to-version-500-of-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Upgrade to Version 5.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday, September 7th 2016, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 5.0.0.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Changes to the forecast model:<ul>
+<li>The version of GEM is upgraded from v3.3.8.2-isba (unstaggered vertical levels) to v4.8.2 (staggered vertical levels).</li>
+<li>The Global Deterministic Prediction System (GDPS) replaces the previous pilot model thanks to the introduction of a new GDPS run (G0) with cut-off of 120 min.</li>
+<li>A new grid based on the GDPS Yin grid replaces the existing rotated lat-lon grid.</li>
+<li>The representation of model output at the surface has been modified.</li>
+<li>The OCM sequencer is replaced by the new Maestro sequencer.</li>
+</ul>
+</li>
+<li>Changes to the assimilation system:<ul>
+<li>None.</li>
+</ul>
+</li>
+<li>Changes to observations:<ul>
+<li>None.</li>
+</ul>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2016/09/02/NOCN03_CWAO_022050___00740">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-500_20160907_e.pdf">is available at this link</a>.</p>
+<p>The technical specifications document for RDPS 5.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_5.0.0_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-december-15-2015">Tuesday December 15, 2015</h2>
+<h3 id="upgrade-to-version-410-of-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Upgrade to Version 4.1.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday December 15th 2015, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 4.1.0.</p>
+<p>The changes included in this upgrade are summarized as follows:</p>
+<ul>
+<li>Changes to the forecast model:<ul>
+<li>The horizontal grid spacing of the global driver model decreases from 33 to 25 km.</li>
+<li>The lateral boundary conditions of the driver model are now provided every 30 minutes (rather than every 60 minutes).</li>
+</ul>
+</li>
+<li>Changes to observations:<ul>
+<li>Addition of radiance observations from 17 channels of the Advanced Microwave Sounding Unit (ATMS).</li>
+<li>103 additional Cross-track Infrared Sounder (CrIS) channels.</li>
+<li>More than 600 additional ground-based GPS sites (mostly in Europe).</li>
+<li>Introduction of inter-channel correlations for all infrared and microwave radiances.</li>
+</ul>
+</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142130___00044">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-410_20151215_e.pdf">is available at this link</a>.</p>
+<p>The technical specifications document for RDPS 4.1.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_4.1.0_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-november-18th-2014">Tuesday November 18th 2014</h2>
+<h3 id="major-upgrade-to-the-regional-deterministic-prediction-system-rdps-version-400-at-the-canadian-meteorological-centre">Major Upgrade to the Regional Deterministic Prediction System (RDPS) version 4.0.0 at the Canadian Meteorological Centre</h3>
+<p>On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 4.0.0.
+Summary of the major changes included in this upgrade:</p>
+<ul>
+<li>New 4D-EnVAR assimilation technique replaces 4D-VAR.<ul>
+<li>Coupling with the ensemble Kalman filtre (EnKF) to obtain background-error covariances.</li>
+</ul>
+</li>
+<li>Changes to observations<ul>
+<li>Improved treatment of radiosonde and aircraft observations.</li>
+<li>Assimilation of ground-based GPS data.</li>
+<li>Improved satellite radiance bias correction procedure.</li>
+<li>Additional AIRS/IASI channels assimilated.</li>
+</ul>
+</li>
+<li>New sea-ice concentration analysis.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141800___00705">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_rdps-400_20141118_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-may-6th-2014">Tuesday May 6th 2014</h2>
+<h3 id="addition-of-iasi-observations-from-metop-b1-to-the-operational-data-of-the-rdps">Addition of IASI observations from METOP-B/1 to the operational data of the RDPS</h3>
+<p>On May 6th, 2014, starting with the 1200 UTC prediction run of the Regional Deterministic Prediction System (RDPS), the Canadian Meteorological Centre (CMC) of Environment Canada added radiance observations from the IASI instrument aboard the METOP-B/1 satellite to the operational data assimilation system. IASI is the last of the instruments on-board the METOP-B/1 satellite to be included in the operational data assimilation systems.</p>
+<p>Motivation for the incorporation of IASI observations from METOP-B/1 in the operational data of the RDPS:</p>
+<p>Although IASI data from METOP-A/2 will continue to be assimilated into our forecast systems, METOP-B/1 is now the operational METOP satellite of the EUMETSAT agency. The two satellites METOP-A/2 and METOP-B/1 have similar trajectories, but offset by a half-orbit, so the addition of METOP-B/1 IASI data will almost double the number of IASI data assimilated. Furthermore, these new data add robustness to the data assimilation system in the event of a failure of the IASI instrument on-board either METOP-A/2 or METOP-B/1.</p>
+<p>Following this change, the version of the RDPS system is changed from 3.2.0 to 3.2.1.
+You can also access the RDPS products page by <a href="../readme_rdps_en/">clicking here</a>.</p>
+<p>A copy of the official note announcing the implementation of this change along with information on verification work leading up to this implementation is available <a href="http://dd.meteo.gc.ca/doc/genots/2014/05/08/NOCN03_CWAO_081640___00938">at this link</a>.</p>
+<h2 id="thursday-november-7-2013">Thursday November 7 2013</h2>
+<h3 id="additional-satellite-data-csr-atovs-polar-winds-added-to-the-rdps-assimilation-systems-and-various-other-adjustments">Additional satellite data (CSR, ATOVS, polar winds) added to the RDPS assimilation systems and various other adjustments</h3>
+<p>On Thursday November 7 2013, additional satellite data was added to the operational data assimilation system of the Global Deterministic Prediction System (GDPS). Changes include the following: additional CSR (Clear Sky Radiance) radiances from MeteoSat10, additional ATOVS radiances from Metop-B and additional AVHRR polar winds from Metop-B.</p>
+<p>Along with the addition of satellite data, there were also other adjustments made to the systems. There was an update of the spectroscopic coefficient files used by the RTTOV radiative transfer model for computing the simulated observations (the 6-hour "P"rognosis portion of the Observations-Prognosis (O-P) of the AMSUB and MHS instruments onboard all satellites. These new coefficients labelled as "Newstyle" do not separate out water vapor transmittances into line absorption and continuum absorption. The impact on the results are neutral.</p>
+<p>As was done for the RDPS at the time of the implementation of the <a href="./">RDPS 3.1.0</a>) the snow cover field (known internall at CMC as the parameter NE) was missing in the background check of AIRS and IASI data. To resolve this, the parameter snow depth (known internally in CMC as the parameter SD) will be used instead. No significant meteorological impact was observed. Also it had been observed there was an incorrect interpolation of the albedo field (known internally at CMC as the parameter AL) during the background check of AIRS and IASI data. To address this the solution is that AL is now interpolated correctly, using the CMC package EzScInt. As a result, the number of AIRS and IASI observations has increased by up to 50% and 30%, respectively, depending on the season (i.e. as a function of the distribution of ice).</p>
+<p>As a result of all of the above changes installed in this implementation, the RDPS operational system becomes version 3.2.0</p>
+<h2 id="tuesday-july-3rd-2013">Tuesday July 3rd 2013</h2>
+<h3 id="update-to-the-rdps-binary-in-support-of-the-production-of-the-variable-px">Update to the RDPS binary (in support of the production of the variable PX)</h3>
+<h2 id="wednesday-february-13-2013">Wednesday February 13, 2013</h2>
+<h3 id="regional-deterministic-prediction-system-rdps-version-310-installed-at-the-canadian-meteorological-centre">Regional Deterministic Prediction System (RDPS) version 3.1.0 installed at the Canadian Meteorological Centre</h3>
+<p>On Wednesday February 13 2013, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 3.1.0 of the Regional Deterministic Prediction System (RDPS) in order to harmonize it with the <a href="../../nwp_gdps/changelog_gdps_en/">implementation on that same day of the GDPS-3.0.0</a>. As a result, RDPS forecasts are improved as a result.</p>
+<p>Please consult the documentation available regarding the GDPS-3.0.0 implementation <a href="../../nwp_gdps/changelog_gdps_en/">at this link for more information</a>.</p>
+<h2 id="wednesday-october-19-2012">Wednesday October 19 2012</h2>
+<h3 id="regional-deterministic-prediction-system-rdps-data-assimilation-window-extended-by-5-minutes">Regional Deterministic Prediction System (RDPS) Data Assimilation Window extended by 5 minutes</h3>
+<p>Starting with the 18Z run of October 19 2012, the [00,06,12,18]Z runs of the RDPS will now be launched at [00,06,12,18]Z+2:00 allowing those runs to collect an additional 5 minutes of observation data prior to the model integration.</p>
+<h2 id="wednesday-october-3-2012">Wednesday October 3 2012</h2>
+<h3 id="major-upgrade-to-the-regional-deterministic-prediction-system-rdps-at-the-canadian-meteorological-centre">Major Upgrade to the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday October 3 2012, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 3.0.0 of the Regional Deterministic Prediction System (RDPS). This version includes an increase in resolution to 10 km from the previous 15 km, a 4D-Var data assimilation system replacing the previous 3D-Var, as well as important changes in the GEM model physics. This results in significant forecast improvements especially for the winter season.</p>
+<p>As part of this implementation the cutoff time for collecting observations has been reduced by 10 minutes and is now [00,06,12,18]Z+1:55</p>
+<p>Objective scores show improvements in the forecasts with most metrics throughout most of the atmosphere, in particular for the lower portion of the atmosphere and at the surface. A subjective evaluation by operational meteorologists confirmed those improvements. Other forecast systems which depend on RDPS ouput include similar changes and as a result they also benefit from this version of the RDPS.</p>
+<p>A copy of the official note describing these changes and the verification work leading up to this implementation <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_021644___00044">is available by clicking here</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdps300_20121003_e.pdf">is available at this link</a>.</p>
+<h2 id="wednesday-november-16-2011">Wednesday November 16, 2011</h2>
+<h3 id="improvements-to-the-regional-deterministic-prediction-system-rdps-v-200-of-the-canadian-meteorological-centre">Improvements to the Regional Deterministic Prediction System (RDPS v 2.0.0) of the Canadian Meteorological Centre</h3>
+<p>Starting on November 16 2011 at 06 UTC, the Canadian Meteorological Centre (CMC) will implement changes to the regional data assimilation system by incorporating additional satellite data and by introducing a higher quality analysis of the sea surface temperature.</p>
+<p>Here is an overview of changes involving the regional data assimilation system:</p>
+<p>A. New Satellite Data: The following satellite data will be incorporated in the global and regional data assimilation systems:</p>
+<ul>
+<li>Sixty-two (62) infrared channels from the IASI instrument on board the METOP satellite.</li>
+<li>Seven (7) microwave channels from the SSM/IS instrument on board the DMSP F16 satellite.</li>
+<li>One (1) water vapor channel from the GOES-W, METSAT-1R and both METEOSAT satellites.</li>
+<li>A restriction to the infrared channels of the AIRS instrument in the polar regions will be removed.</li>
+<li>The horizontal thinning of all satellite radiance data, currently done at 250 km (except 200 km for SSM/I) will be reduced to 150 km, therefore adding much more satellite data to the systems.</li>
+</ul>
+<p>B. Other Assimilation Changes:</p>
+<ul>
+<li>Moisture observations measured from properly equipped aircraft (AMDAR) will be assimilated.</li>
+<li>A new satellite data bias correction scheme will replace the current one. The main impact is the reduction of the time period to compute the bias corrections from 15 to 7 days. the same code is used for all radiance data.</li>
+<li>A modified version of the RTTOV radiative transfer code will be used for satellite radiance data.</li>
+<li>Also, a new sea surface temperature analysis on a grid of 0.20 degrees resolution will be used now by the regional system.</li>
+</ul>
+<p>All of the above changes were combined and tested extensively during winter and summer seasons, including a parallel run of the global system. The data assimilation changes were also tested in the regional system over similar test periods, including a parallel run.</p>
+<p>A copy of the text of the official note which includes additional information on the evaluation of these changes is available <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/15/NOCN03_CWAO_152020___05806">by clicking here</a>.</p>
+<p>With these changes the RDPS is now version 2.0.0</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

@@ -1,0 +1,12 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Composante u du vent,UGRD,200 mb,m/s
+Composante u du vent,UGRD,850 mb,m/s
+Composante v du vent,VGRD,200 mb,m/s
+Composante v du vent,VGRD,850 mb,m/s
+Hauteur géopotentielle,HGT,500 mb,gpm
+Hauteur de la surface de la mer par rapport au géoide,SSHG,Surface,m
+Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
+Taux de précipitation,PRATE,Surface,kg/(m<sup>2</sup>*s)
+Température de l'eau,WTMP,Surface,K
+Température,TMP,2 m au-dessus du niveau du sol,K
+Température,TMP,850 mb,K

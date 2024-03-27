@@ -1,0 +1,97 @@
+Variable,Abbreviation,Level,Unit/Value
+Convective available potential energy,CAPE,Surface,J/kg
+Convective inhibition,CIN,Surface,J/kg
+Downward incident solar flux,DSWRF,Surface,W/m<sup>2</sup>
+Downward longwave radiation flux,DLWRF,Surface,W/m<sup>2</sup>
+Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Geopotential height,HGT,10 mb,gpm
+Geopotential height,HGT,100 mb,gpm
+Geopotential height,HGT,1000 mb,gpm
+Geopotential height,HGT,200 mb,gpm
+Geopotential height,HGT,250 mb,gpm
+Geopotential height,HGT,300 mb,gpm
+Geopotential height,HGT,50 mb,gpm
+Geopotential height,HGT,500 mb,gpm
+Geopotential height,HGT,700 mb,gpm
+Geopotential height,HGT,850 mb,gpm
+Geopotential height,HGT,925 mb,gpm
+Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Ice thinkness,ICETK,Surface,m
+Latent heat net flux,LHTFL,Surface,W/m<sup>2</sup>
+Maximum temperature,TMAX,2 m Above Ground Level,K
+Minimum temperature,TMIN,2 m Above Ground Level,K
+Outgoing longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+Outgoing longwave radiation flux,ULWRF,Surface,W/m<sup>2</sup>
+Precipitable water,PWAT,Surface,kg/m<sup>2</sup>
+Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa
+Pressure,PRES,Surface,Pa
+Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Relative humidity,RH,10 mb,%
+Relative humidity,RH,100 mb,%
+Relative humidity,RH,1000 mb,%
+Relative humidity,RH,2 m Above Ground Level,%
+Relative humidity,RH,200 mb,%
+Relative humidity,RH,250 mb,%
+Relative humidity,RH,50 mb,%
+Relative humidity,RH,500 mb,%
+Relative humidity,RH,700 mb,%
+Relative humidity,RH,850 mb,%
+Relative humidity,RH,925 mb,%
+Sensible heat net flux,SHTFL,Surface,W/m<sup>2</sup>
+Snow depth,SNOD,Surface,m
+Snow precipitation rate,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Specific humidity,SPFH,120 m Above Ground Level,kg/kg
+Specific humidity,SPFH,2 m Above Ground Level,kg/kg
+Specific humidity,SPFH,40 m Above Ground Level,kg/kg
+Specific humidity,SPFH,80 m Above Ground Level,kg/kg
+Surface Water Runoff,SFCWRO,Surface,kg/m<sup>2</sup>
+Temperature,TMP,10 mb,K
+Temperature,TMP,100 mb,K
+Temperature,TMP,1000 mb,K
+Temperature,TMP,120 m Above Ground Level,K
+Temperature,TMP,2 m Above Ground Level,K
+Temperature,TMP,200 mb,K
+Temperature,TMP,250 mb,K
+Temperature,TMP,40 m Above Ground Level,K
+Temperature,TMP,50 mb,K
+Temperature,TMP,500 mb,K
+Temperature,TMP,700 mb,K
+Temperature,TMP,80 m Above Ground Level,K
+Temperature,TMP,850 mb,K
+Temperature,TMP,925 mb,K
+Temperature,TMP,Depth Below Land Surface (0-0.1 m),K
+Total cloud cover,TCDC,Surface,%
+Total precipitation,APCP,Surface,kg/m<sup>2</sup>
+Upward shortwave radiation flux,USWRF,Surface,W/m<sup>2</sup>
+Vertical velocity (pressure),VVEL,850 mb,Pa/s
+Water equivalent of accumulated snow depth,WEASD,Surface,kg/m<sup>2</sup>
+Wind speed,WSPD,10 m Above Ground Level,m/s
+Wind speed,WSPD,120 m Above Ground Level,m/s
+Wind speed,WSPD,40 m Above Ground Level,m/s
+Wind speed,WSPD,80 m Above Ground Level,m/s
+u-component of wind,UGRD,10 m Above Ground Level,m/s
+u-component of wind,UGRD,10 mb,m/s
+u-component of wind,UGRD,100 mb,m/s
+u-component of wind,UGRD,1000 mb,m/s
+u-component of wind,UGRD,200 mb,m/s
+u-component of wind,UGRD,250 mb,m/s
+u-component of wind,UGRD,300 mb,m/s
+u-component of wind,UGRD,400 mb,m/s
+u-component of wind,UGRD,50 mb,m/s
+u-component of wind,UGRD,500 mb,m/s
+u-component of wind,UGRD,700 mb,m/s
+u-component of wind,UGRD,850 mb,m/s
+u-component of wind,UGRD,925 mb,m/s
+v-component of wind,VGRD,10 m Above Ground Level,m/s
+v-component of wind,VGRD,10 mb,m/s
+v-component of wind,VGRD,100 mb,m/s
+v-component of wind,VGRD,1000 mb,m/s
+v-component of wind,VGRD,200 mb,m/s
+v-component of wind,VGRD,250 mb,m/s
+v-component of wind,VGRD,300 mb,m/s
+v-component of wind,VGRD,400 mb,m/s
+v-component of wind,VGRD,50 mb,m/s
+v-component of wind,VGRD,500 mb,m/s
+v-component of wind,VGRD,700 mb,m/s
+v-component of wind,VGRD,850 mb,m/s
+v-component of wind,VGRD,925 mb,m/s

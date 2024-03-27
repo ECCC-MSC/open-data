@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog rdpa en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-regional-deterministic-precipitation-analysis-system-capa-rdpa" class="nav-link">Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#wednesday-may-3-2023" class="nav-link">Wednesday May 3, 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-december-1st-2021" class="nav-link">Wednesday December 1st, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-june-9-2021" class="nav-link">Wednesday June 9, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-21-2020" class="nav-link">Tuesday January 21, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-3-2019" class="nav-link">Wednesday July 3, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-september-18-2018" class="nav-link">Tuesday September 18, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-november-9-2016" class="nav-link">Wednesday November 9, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-december-15-2015" class="nav-link">Tuesday December 15, 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-june-03-2015" class="nav-link">Wednesday June 03, 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-november-18th-2014" class="nav-link">Tuesday November 18th, 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#august-20-2013" class="nav-link">August 20 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-october-3-2012" class="nav-link">Wednesday October 3 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_rdpa_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_rdpa_en/">RDPA</a> &gt; RDPA Changelog</p>
+<h1 id="chronology-of-changes-to-the-regional-deterministic-precipitation-analysis-system-capa-rdpa">Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)</h1>
+<h2 id="wednesday-may-3-2023">Wednesday May 3, 2023</h2>
+<h3 id="rdpa-update-following-the-replacement-of-goes-17-by-goes-18">RDPA update following the replacement of GOES-17 by GOES-18</h3>
+<p>Since January 4, 2023 at 18Z, the GOES-18 satellite has taken over from GOES-17 as the operational western satellite. Within the operational RDPA system, GOES satellite observations are used to perform some of the post-processing of radar precipitation estimates. In particular, GOES data are used to create a cloud mask to clean up the radar data.</p>
+<p>Since the GOES-17 satellite disappeared on January 4, the RDPA system has relied on the NT field of the RDPS forecast model to build the cloud mask. This contingency solution allowed post-processing of the radar precipitation estimates, but with less reliability than with GOES data.</p>
+<p>To further optimize the post-processing of the radar precipitation estimates, RDPA was updated on May 3, 2023 to assimilate GOES-18 data in addition to the already assimilated GOES-16 data.</p>
+<h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
+<h3 id="upgrade-to-version-530-of-the-rdpa-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 5.3.0 of the RDPA adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a>.</p>
+<h2 id="wednesday-december-1st-2021">Wednesday December 1st, 2021</h2>
+<h3 id="upgrade-to-version-520-of-the-regional-deterministic-precipitation-analysis-system-capa-rdpa-at-the-canadian-meteorological-centre-cmc">Upgrade to version 5.2.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Wednesday, December 1st, 2021, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.2.0.</p>
+<p>The changes included in this upgrade are summarized as follows :</p>
+<ul>
+<li><a href="../../nwp_rdps/changelog_rdps_en/">RDPS v8.0.0</a> now provides the trial field instead of RDPS v7.1.0</li>
+<li>Addition of 14 Canadian S-band radars</li>
+<li>Assimilation of observations from the Ontario Ministry of Natural Resources (MNR) network</li>
+<li>Updates to the static quality control masks for 8 radars</li>
+<li>Enlargement of the grid to cover the same domain as the <a href="../nwp_rdps">RDPS</a></li>
+</ul>
+<p>The official note announcing this implementation is available <a href="https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">at this location</a>.</p>
+<p>A technical note with more details on these changes is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_e.pdf">at this link</a>.</p>
+<p>The technical specifications document for RDPA v5.2.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_5.2.0_e.pdf">at this link</a>.</p>
+<h2 id="wednesday-june-9-2021">Wednesday June 9, 2021</h2>
+<h3 id="upgrade-to-version-500-of-the-regional-deterministic-precipitation-analysis-system-capa-rdpa-at-the-canadian-meteorological-centre-cmc">Upgrade to version 5.0.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Wednesday, June 9, 2021, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 5.0.0.</p>
+<p>The changes included in this upgrade are summarized as follows :</p>
+<ul>
+<li>Assimilation of three new precipitation observation networks:<ul>
+<li>Manitoba Agriculture (MBAG),</li>
+<li>Grand River Conservation Authority (GRCA),</li>
+<li>Toronto River Conservation Authority (TRCA).</li>
+</ul>
+</li>
+<li>Changes in the radar composite:<ul>
+<li>5 Canadian S-band radars replacing the corresponding obsolete C-band radars. </li>
+<li>29 additional U.S. S-band radars.</li>
+</ul>
+</li>
+<li>Assimilation of the “Integrated Multi-SatellitE Retrievals for GPM” (IMERG) satellite data in the final analysis. </li>
+</ul>
+<p>A copy of the official note announcing this implementation is available at this location: <a href="https://dd.meteo.gc.ca/doc/genots/2021/06/08/NOCN03_CWAO_081408___31851">CaPA-RDPA official announcement</a></p>
+<p>A technical note with more details on these changes is available at this link: <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-500_e.pdf">CaPA-RDPA technical note</a></p>
+<h2 id="tuesday-january-21-2020">Tuesday January 21, 2020</h2>
+<h3 id="upgrade-to-version-470-of-the-capa-rdpa-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 4.7.0 of the CaPA-RDPA adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="wednesday-july-3-2019">Wednesday July 3, 2019</h2>
+<h3 id="upgrade-to-version-460-of-the-regional-deterministic-precipitation-analysis-system-capa-rdpa-at-the-canadian-meteorological-centre-cmc">Upgrade to version 4.6.0 of the Regional Deterministic Precipitation Analysis system (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Wednesday July 3rd 2019, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade the Regional Deterministic Precipication Analysis system (CaPA-RDPA) to version 4.6.0.</p>
+<p>Changes are summarized as follows:</p>
+<ul>
+<li><a href="../../nwp_rdps/changelog_rdps_en/">RDPS v7.0.0</a> now provides the trial field instead of RDPS v6.0.0.</li>
+<li>The lead times 6 and 12 hours for the total precipitation forecast (PR) will be used instead of 0 and 6 hours as in the previous version.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031225___18175">is available at this link</a>.</p>
+<h2 id="tuesday-september-18-2018">Tuesday September 18, 2018</h2>
+<h3 id="upgrade-to-version-450-of-the-regional-deterministic-precipitation-analysis-system-capa-rdpa-at-the-canadian-meteorological-centre-cmc">Upgrade to version 4.5.0 of the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Tuesday, September 18, 2018, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will upgrade its Regional Deterministic Precipitation Analysis systems (CaPA-RDPA (10km)) to version 4.5.0.</p>
+<p>The changes included in this upgrade are summarized as follows :</p>
+<ul>
+<li>The trial fields for these precipitaion analyses are generated from the new version of the system implemented on September 18, 2018:<ul>
+<li>CaPA-RDPA now builds its trial fields from <a href="../../nwp_rdps/changelog_rdps_en/">RDPS v6.0.0</a></li>
+</ul>
+</li>
+<li>Assimilation of the observations from the CoCoRaHS network. (CaPA-RDPA)</li>
+<li>New 24h analysis valid at 06h00 UTC in line with the climatological day. (CaPA-RDPA)</li>
+<li>CaPA-RDPA v4.5.0 will be using the 0 and 6 hour lead times of the total precipitation field instead of the 6 and 12 hour. This is made possible because the RDPS v6.0.0 can now generate precipitation right from the beginning of the integration.</li>
+</ul>
+<p>A copy of the official note announcing this implementation is available at this location:</p>
+<ul>
+<li><a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171415___18584">CaPA-RDPA official announcement</a></li>
+</ul>
+<p>A technical note with more details on these changes is available at this link:</p>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-450_e.pdf">CaPA-RDPA technical note</a></li>
+</ul>
+<h2 id="wednesday-november-9-2016">Wednesday November 9, 2016</h2>
+<h3 id="upgrade-to-the-regional-deterministic-precipitation-analysis-system-capa-rdpa-at-the-canadian-meteorological-centre-cmc">Upgrade to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA) at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Wednesday November 9th 2016, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis System (CaPA-RDPA) by replacing CaPA-RDPA 3.2.0 by version 4.0.0. This new version assimilates precipitation observations provided by two networks of stations newly available at CMC. Pseudo-observations of 0 mm inferred from the American METAR network are added to the dataset submitted to CaPA system. Finally, 33 American weather radars are added to the composite of quantitative precipitation estimates (QPE) which is also assimilated by the system. All these modifications allow producing a better precipitation analysis.
+A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2016/11/09/NOCN03_CWAO_091420___00557">is available at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa-400_20161109_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-december-15-2015">Tuesday December 15, 2015</h2>
+<h3 id="upgrade-to-the-regional-deterministic-precipitation-analysis-rdpa-capa-version-320-at-the-canadian-meteorological-centre-cmc">Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.2.0 at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Tuesday December 15th 2015, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) by  replacing CaPA-RDPA 3.1.0 by version 3.2.0. This version will solve two minor problems: The first of which is related to the processing of precipitation reports and the second which affects the GRIB2 encoding procedure by adding a mask to represent well the No-Data regions.
+A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/10/NOCN03_CWAO_102100___00779">is available at this link</a>.</p>
+<p>An information leaflet on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf">is available at this link</a>.</p>
+<h2 id="wednesday-june-03-2015">Wednesday June 03, 2015</h2>
+<h3 id="upgrade-to-the-regional-deterministic-precipitation-analysis-rdpa-capa-version-310-at-the-canadian-meteorological-centre-cmc">Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.1.0 at the Canadian Meteorological Centre (CMC)</h3>
+<p>On Wednesday June 03th 2015, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) by  replacing CaPA-RDPA 3.0.0 by version 3.1.0. This version will lead mainly  to the assimilation of a higher number of solid precipitation observations.
+A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2015/06/03/NOCN03_CWAO_031900___00790">is available at this link</a>.</p>
+<p>An information leaflet on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-november-18th-2014">Tuesday November 18th, 2014</h2>
+<h3 id="major-upgrade-to-the-regional-deterministic-precipitation-analysis-rdpa-capa-version-300-at-the-canadian-meteorological-centre">Major Upgrade to the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) version 3.0.0 at the Canadian Meteorological Centre</h3>
+<p>On Tuesday November 18th 2014, starting with the 1200 UTC run the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Precipitation Analysis (RDPA (CaPA)) to version 3.0.0. Here are the major changes:</p>
+<ul>
+<li>This version will assimilate an additional source of important information, the quantitative precipitation estimates (QPE) provided by the Canadian weather radar.</li>
+<li>The Regional Deterministic Prediction System (RDPS) which will provide the required trial field to the CaPA system is also updated to RDPS 4.0.0.</li>
+<li>The the number of analysis produced daily is increased from 9 to 10.</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141831___01258">is available at this link</a>.</p>
+<p>An information leaflet on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_e.pdf">is available at this link</a>.</p>
+<h2 id="august-20-2013">August 20 2013</h2>
+<h3 id="version-24-of-rdpa-capa-installed-in-operations">Version 2.4 of RDPA (CaPA) installed in operations</h3>
+<h2 id="wednesday-october-3-2012">Wednesday October 3 2012</h2>
+<h3 id="the-canadian-meteorological-centre-upgrades-the-rdpa-capa-system-to-version-230">The Canadian Meteorological Centre Upgrades the RDPA (CaPA) system to version 2.3.0</h3>
+<p>On Wednesday October 3 2012, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 2.3.0 of the regional deterministic precipitation analysis. This upgrade is done concurrently with the upgrade to the Regional Deterministic Prediction System version 3.0.0 which will now povide a higher resolution trial field to the precipitation analysis system. For details on the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/changes_e.html#20121003_rdps">RDPS upgrade please refer to the information at this link</a>.</p>
+<p>In addition to the introduction of the higher resolution which is fairly influential on the analysis results, several significant improvements are made to the system and these changes are described in the announcement and technical note avaialble below.</p>
+<p>A copy of the official note describing these changes <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_022152___00156">is available by clicking here</a>.</p>
+<p>A technical note with more details of these changes <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdpa_20121018_e.pdf">is available at this link here</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

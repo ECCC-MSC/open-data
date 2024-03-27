@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog nowcasting fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-au-systeme-integre-de-prevision-immediate-sipi" class="nav-link">Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-23-mars-2023" class="nav-link">Le jeudi 23 mars 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-9-juillet-2015" class="nav-link">Le jeudi 9 juillet 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-20-novembre-2013" class="nav-link">Le mercredi 20 novembre 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-7-aout-2012" class="nav-link">Le mardi 7 août 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_nowcasting_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_nowcasting_fr/">Prévision immédiate</a> &gt; Changements au système SIPI</p>
+<h1 id="chronologie-des-changements-apportes-au-systeme-integre-de-prevision-immediate-sipi">Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)</h1>
+<h2 id="le-jeudi-23-mars-2023">Le jeudi 23 mars 2023</h2>
+<h3 id="mise-a-jour-de-sipi-a-la-version-210-pour-introduire-le-traitement-des-donnees-radars-de-bande-s-du-canada">Mise à jour de SIPI à la version 2.1.0 pour introduire le traitement des données radars de bande-S du Canada</h3>
+<p>Le jeudi 23 mars 2023, à compter de la passe de 1200UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.1.0 de son Système intégré de prévisions immédiates (SIPI).</p>
+<p>Les modifications incluses dans cette mise à jour se résument comme suit :</p>
+<ul>
+<li>Introduction et traitement des données des nouveaux radars de bande-S</li>
+<li>Ajustement du code pour assurer une plus grande fiabilité d’accès aux données radars</li>
+<li>Modification de l’approche pour la production du fichier interne  comporad  qui dépend moins du module qperad de CaPA et qui peut plutôt maintenant être produit à partir de nouvelles données radars sur grille</li>
+<li>Depuis le 4 janvier 2023 le système utilise les informations des nuages calculées à partir des données satellitaires GOES 18 (GOES ouest). Les données des nuages calculées à partir des données du satellite GOES 16 (GOES est) demeurent toujours présentes</li>
+</ul>
+<p>La note officielle annonçant ce changement est disponible via <a href="https://dd.meteo.gc.ca/doc/genots/2023/03/23/NOCN03_CWAO_231325___11843">ce lien</a></p>
+<p>Une note technique à ce sujet est disponible via <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-210_f.pdf">ce lien</a></p>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-de-sipi-a-la-version-1100-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour de SIPI à la version 1.10.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-du-systeme-integre-de-previsions-immediates-sipi-190-du-centre-meteorologique-canadien-cmc">Mise à jour du Système intégré de prévisions immédiates (SIPI) 1.9.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système intégré de prévisions immédiates (SIPI).</p>
+<p>Les modifications incluses dans cette mise à jour sont résumées comme suit :</p>
+<ul>
+<li>Les mécanismes de SRPD SIPI utilisent les données du SRPD 8.0.0 ainsi que les données UMOS SRPD</li>
+<li>Les nuages modélisés sont améliorés  en utilisant les données de nuages de GOES 16/17</li>
+<li>Le système utilise maintenant la fraction de nuage totale (CF)</li>
+</ul>
+<p>La note officielle annonçant ce changement est disponible <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">via ce lien</a>.</p>
+<p>Une note technique à ce sujet est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-190_f.pdf">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SIPI v1.9.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS-INCS_1.9.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jours-de-sipi-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jours de SIPI suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-jeudi-9-juillet-2015">Le jeudi 9 juillet 2015</h2>
+<h3 id="le-centre-meteorologique-canadien-ameliore-son-systeme-sipi-a-version-15">Le Centre Météorologique Canadien améliore son système SIPI à version 1.5</h3>
+<p>Le jeudi 09 juillet 2015 à partir de 1400 UTC, le Centre Météorologique Canadien (CMC) a procédé à une mise à jour son système intégré de prévisions immédiates (SIPI). Ce système fournit à la fois des données d'observations ainsi que des prévisions à très court terme au système de production des prévisions Scribe. Cette mise à jour, amèliore, entre autres, principalement la qualité de la composante qui traite les données radar de ce système.</p>
+<p>Une copie de la note officielle annoncant ce changement <a href="http://dd.weather.gc.ca/doc/genots/2015/07/08/NOCN03_CWAO_081635___00168">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet sera disponible sous peu.</p>
+<h2 id="le-mercredi-20-novembre-2013">Le mercredi 20 novembre 2013</h2>
+<h3 id="le-centre-meteorologique-canadien-ameliore-son-systeme-sipi-a-version-14">Le Centre Météorologique Canadien améliore son système SIPI à version 1.4</h3>
+<p>Le mercredi 20 novembre 2013 à partir de 1400 UTC le Centre Météorologique Canadien (CMC) a procédé à une mise à jour son système intégré de prévisions immédiates (SIPI). Ce système fournit à la fois des données d'observations ainsi que des prévisions à très court terme au système de production des prévisions Scribe. Cette mise à jour, qui amène entre autres, l'intégration des observations radar dans le SIPI, fait passer la version du système de 1.1. à la version 1.4.</p>
+<p>Les modifications suivantes ont été faites au système :</p>
+<p>1) Intégration des observations radar sous la forme d'une composite nord-américaine provenant du système URP de résolution de 4 km et basée sur le produit PRECIP-ET</p>
+<p>2) Nettoyage des données radar à l'aide d'un masque de nuage (satellite et champ NT du système régional de prévisions déterministes ou SRPD) et d'un traitement statistique</p>
+<p>3) Extrapolation des données radar observées avec l'algorithme MAPLE (McGill Algorithm for Precipitation langrangian Extrapolation, REF. McGill University's Research center on Atmospheric Remote Sensing)</p>
+<p>4) Remplacement de l'algorithme d'extrapolation de la foudre (Ouellet-Price) par le champ vectoriel de déplacement Maple</p>
+<p>5) Utilisation du champ de probabilité de précipitations prévu par Maple à 4 km</p>
+<p>6) Application d'une méthode d'échantillonnage pour produire un champ de probabilité de foudre à partir du champ de densité de coups de foudre observé et prévu.</p>
+<p>7) Utilisation d'un champ de probabilité de précipitations généré à partir d'une méthode d'échantillonnage appliquée au champ des QPF horaire  du système régional de prévisions déterministes - SRPD.</p>
+<p>Avec toutes ces modification, globalement, les résultats de vérification ont montré clairement une amélioration pour les 6 premières heures de projection.</p>
+<p>Une copie de la note officielle annoncant ce changement <a href="http://dd.weather.gc.ca/doc/genots/2013/11/15/NOCN03_CWAO_151902___00907">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet est disponible via le lien suivant : <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_sipi_20140502_f.pdf">Note Technique du SIPI 1.4</a></p>
+<h2 id="le-mardi-7-aout-2012">Le mardi 7 août 2012</h2>
+<h3 id="le-centre-meteorologique-canadien-ameliore-son-systeme-sipi-a-version-11">Le Centre Météorologique Canadien améliore son système SIPI à version 1.1</h3>
+<p>Le mardi 7 août 2012 à partir de 1400 UTC le Centre Météorologique Canadien (CMC) a mis à jour son système intégré de prévisions immédiates (SIPI). Ce système fournit à la fois des données d'observations ainsi que des prévisions à très court terme au système de production des prévisions Scribe. Avec cette mise à jour le numéro de version du système SIPI passe de 1.0. à 1.1.</p>
+<p>Les modifications suivantes ont été faites au système:</p>
+<p>1) Les prévisions de la température du point de rosée produites par le système statistique UMOS ont été intégrées au SIPI.</p>
+<p>2) Le système de règles gouvernant la prévision de l'opacité nuageuse et de la visibilité a connu des améliorations.</p>
+<p>Les règles qui génèrent la prévision du point de rosée utiliseront le point de rosée umos au lieu du point de rosée du système régional de prévision déterministe (SRPD), pour toutes les stations pour lesquelles le point de rosée umos est disponible. les résultats de vérification du point de rosée ont montre une performance supérieure de la version 1.1 par rapport à la version 1.0. avec ce changement nous anticipons notamment un impact positif sur la capacité à prévoir le brouillard.</p>
+<p>Des modifications apportées aux règles de prévision de l'opacité nuageuse ont amélioré les performances du système pour cet élément du temps, particulièrement pour la période de 4 à 12 heures apres l'heure de début de la passe.</p>
+<p>Enfin, des ajustements aux règles de prévision de la visibilité ont permis par exemple d'améliorer la visibilité prévue sous la neige.</p>
+<p>Une copie de la note officielle annoncant ce changement <a href="http://dd.weather.gc.ca/doc/genots/2012/07/31/NOCN03_CWAO_312128___01022">est disponible en cliquant ici</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

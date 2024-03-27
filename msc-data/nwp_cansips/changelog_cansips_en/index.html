@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog cansips en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-canadian-seasonal-to-inter-annual-prediction-system-cansips" class="nav-link">Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-november-30-2021" class="nav-link">Tuesday November 30, 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-january-21-2020" class="nav-link">Tuesday January 21, 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wednesday-july-3-2019" class="nav-link">Wednesday July 3, 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-21st-2016" class="nav-link">Tuesday June 21st, 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tuesday-july-23-2013" class="nav-link">Tuesday July 23 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#thursday-december-1-2011" class="nav-link">Thursday December 1, 2011</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_cansips_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_cansips_en/">CanSIPS</a> &gt; CanSIPS Changelog</p>
+<h1 id="chronology-of-changes-to-the-canadian-seasonal-to-inter-annual-prediction-system-cansips">Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</h1>
+<h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
+<h3 id="upgrade-to-version-220-of-the-cansips-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 2.2.0 of the CanSIPS adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="tuesday-november-30-2021">Tuesday November 30, 2021</h2>
+<h3 id="upgrade-to-version-21-of-the-canadian-seasonal-to-inter-annual-prediction-system-cansips-at-the-canadian-meteorological-centre">Upgrade to Version 2.1 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday November 30, 2021, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 2.1.</p>
+<p>The major changes of CanSIPS in this upgrade can be summarized as follow:</p>
+<ul>
+<li>The GEM-NEMO model version upgraded to GEM 5.1.</li>
+<li>The CanSIPS inputs now comming from upgraded systems GDPS 8.0.0, GEPS 7.0.0 and GIOPS 3.3.0.</li>
+</ul>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-210_e.pdf">is available at this link</a>.</p>
+<p>The technical specifications document for CanSIPS version 2.1 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_2.1.0_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-january-21-2020">Tuesday January 21, 2020</h2>
+<h3 id="upgrade-cansips-version-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade CanSIPS version adapted to the New High Performance Computing Infrastructure.</h3>
+<p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>
+<h2 id="wednesday-july-3-2019">Wednesday July 3, 2019</h2>
+<h3 id="upgrade-to-version-2-of-the-canadian-seasonal-to-inter-annual-prediction-system-cansips-at-the-canadian-meteorological-centre">Upgrade to Version 2 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre</h3>
+<p>On Wednesday July 3rd, 2019, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 2.
+The major changes of CanSIPS in this upgrade are in the forecast component:</p>
+<ul>
+<li>The CANCM3 global coupled model is replaced by newer and better performing GEM-NEMO couped model.</li>
+<li>The CANCM4 model is upgraded with improved sea-ice initialisation.</li>
+</ul>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-v2_20190703_e.pdf">is available at this link</a>.</p>
+<h2 id="tuesday-june-21st-2016">Tuesday June 21st, 2016</h2>
+<h3 id="upgrade-to-the-canadian-seasonal-to-inter-annual-prediction-system-cansips-at-the-canadian-meteorological-centre">Upgrade to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday June 21st, 2016, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS).</p>
+<p>In this upgrade the 3D ocean analyses used by the ocean model in CanSIPS will now come from the Global Ice Ocean Prediction System (GIOPS) 2.1 and will replace the NCEP GODAS ocean analyses previously used.</p>
+<p>A copy of the official note announcing the implementation of these changes is available <a href="http://dd.meteo.gc.ca/doc/genots/2016/06/21/NOCN03_CWAO_211910___00716">at this link</a>.</p>
+<h2 id="tuesday-july-23-2013">Tuesday July 23 2013</h2>
+<h3 id="adjustments-to-the-ocean-temperature-analysis-godas-feed-for-cansips">Adjustments to the ocean temperature analysis (GODAS) feed for CanSIPS</h3>
+<p>Between July 16 and July 23 the feed of the GODAS analysis into the CanSIPS model was interrupted. A number of actions were undertaken to restore this feed. As a result, access to the (correct) daily GODAS analysis was restored on 23 July, with importation of the correct analyses dated 17-21 July 2013. It was anticipated as of 23 July 2013 that the normal sequence for importing and assimilating GODAS data would resume on 24 July 2013.</p>
+<h2 id="thursday-december-1-2011">Thursday December 1, 2011</h2>
+<h3 id="the-canadian-meteorological-centre-starts-using-cansips-canadian-seasonal-to-inter-annual-prediction-system">The Canadian Meteorological Centre starts using CanSIPS: Canadian Seasonal to Inter-annual Prediction System</h3>
+<p>On Thursday December 1 2011, CMC started issuing forecasts using its CanSIPS system, a newly developed global coupled seasonal prediction system for forecasting monthly to multi-seasonal climate conditions.</p>
+<p>With CanSIPS, Environment Canada will be able to issue seasonal climate condition predictions for lead times out to one full year thanks to a seamless physically-based prediction system; this represents substantive progress with respect to the previous system. CanSIPS can also skillfully predict the ENSO phenomenon (El Niño-La Niña/Southern Oscillation) and its influence on the climate up to a year in advance.</p>
+<p>The development and the implementation of this multi-seasonal forecast system is the result of a close collaboration between CMC and the Canadian Centre for Climate Modeling and Analysis (CCCma).</p>
+<p>By using CanSIPS operationally, Environment Canada maintains its position amongst leading international organizations producing such long-range predictions. MSC is also contributing to the multi-model ensemble forecasts produced by WMO and the APEC Climate Centre.</p>
+<p>Initially no additional products will appear on MSC's monthly and seasonal forecast page (see link below) but the accuracy of existing products are now improved by using CanSIPS. Products from CanSIPS will be available on the first day of every month at this web site. New products will be introduced as part of the upcoming phase 2 of this project.</p>
+<p>A copy of the official note announcing the start of the operational use of CanSIPS <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2011/11/28/NOCN03_CWAO_281935___35418">is available by clicking here</a>.</p>
+<p>A technical note providing more detail on the CanSIPS system is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_cansips_20111124_e.pdf">by clicking here</a></p>
+<p>Information on CanSIPS and its products is also available <a href="https://weather.gc.ca/saisons/index_e.html">at the MSC public web on monthly and seasonal forecasts available by clicking here</a>.</p>
+<p>Information is also avaialble in the CMC Product Guide at the following links: <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_monthly-temperature-anomalies_gen_e.html">Monthly forecasts page</a> and also on the <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/product-pages/image_ens_prog_seasonal-forecasts_gen_e.html">Multi-Season forecasts page</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

@@ -1,0 +1,371 @@
+Variable,Abbreviation,Level,Unit/Value
+Absolute vorticity,ABSV,1000 mb,s<sup>-1</sup>
+Absolute vorticity,ABSV,250 mb,s<sup>-1</sup>
+Absolute vorticity,ABSV,500 mb,s<sup>-1</sup>
+Absolute vorticity,ABSV,700 mb,s<sup>-1</sup>
+Absolute vorticity,ABSV,850 mb,s<sup>-1</sup>
+Albedo,ALBDO,Surface,%
+Best (4-layer) lifted index,4LFTX,500 mb,K
+Character of precipitation,CHARPCPN,Surface,0=None; 1=Showers; 2=Intermittent; 3=Continuous
+Cloud water,CWAT,Atmospheric Column,kg/m<sup>2</sup>
+Conditional amount of liquid precipitation,CONDALPCPN,Surface,m
+Conditional amount of solid snow,CONDASSN,Surface,m
+Conditional amount of solid ice pellets,CONDAPL,Surface,m
+Conditional freezing precipitation amount,CONDAFZPCPN,Surface,kg/(m<sup>2</sup>*s)
+Conditional precipitation rate,CONDAPCPN,Surface,m
+Convective available potential energy,CAPE,Surface,J/kg
+Convective precipitation,ACPCP,Surface,kg/m<sup>2</sup>
+Day/night sky state (combined cloud cover and opacity),SKSTATE,Surface,0-1=sunny/clear; 2-3=mainly sunny/cloudy periods; 4-5-6=mix of sun and clouds/partly cloudy; 7-8=mainly cloudy/mainly cloudy; 9=cloudy/cloudy; 10=cloudy/overcast
+Density,DEN,120 m Above Ground Level,kg/m<sup>3</sup>
+Density,DEN,40 m Above Ground Level,kg/m<sup>3</sup>
+Density,DEN,80 m Above Ground Level,kg/m<sup>3</sup>
+Dew point depression,DEPR,100 mb,K
+Dew point depression,DEPR,1000 mb,K
+Dew point depression,DEPR,1015 mb,K
+Dew point depression,DEPR,120 m Above Ground Level,K
+Dew point depression,DEPR,150 mb,K
+Dew point depression,DEPR,175 mb,K
+Dew point depression,DEPR,2 m Above Ground Level,K
+Dew point depression,DEPR,200 mb,K
+Dew point depression,DEPR,225 mb,K
+Dew point depression,DEPR,250 mb,K
+Dew point depression,DEPR,275 mb,K
+Dew point depression,DEPR,300 mb,K
+Dew point depression,DEPR,350 mb,K
+Dew point depression,DEPR,40 m Above Ground Level,K
+Dew point depression,DEPR,400 mb,K
+Dew point depression,DEPR,450 mb,K
+Dew point depression,DEPR,50 mb,K
+Dew point depression,DEPR,500 mb,K
+Dew point depression,DEPR,550 mb,K
+Dew point depression,DEPR,600 mb,K
+Dew point depression,DEPR,650 mb,K
+Dew point depression,DEPR,700 mb,K
+Dew point depression,DEPR,750 mb,K
+Dew point depression,DEPR,80 m Above Ground Level,K
+Dew point depression,DEPR,800 mb,K
+Dew point depression,DEPR,850 mb,K
+Dew point depression,DEPR,875 mb,K
+Dew point depression,DEPR,900 mb,K
+Dew point depression,DEPR,925 mb,K
+Dew point depression,DEPR,950 mb,K
+Dew point depression,DEPR,970 mb,K
+Dew point depression,DEPR,985 mb,K
+Dew point temperature,DPT,120 m Above Ground Level,K
+Dew point temperature,DPT,2 m Above Ground Level,K
+Dew point temperature,DPT,40 m Above Ground Level,K
+Dominant precipitation type,DMNTPCPNTYPE,Surface,101=Rain; 110=Hail; 111=Drizzle; 203=Freezing rain; 212=Freezing drizzle; 308=Ice pellets; 405=Snow; 409=Snow pellets; 413=Ice crystals; 414=Snow grains
+Downward longwave radiation flux,DLWRF,Surface,W/m<sup>2</sup>
+Downward shortwave radiation flux,DSWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+Downward shortwave radiation flux,DSWRF,Surface,W/m<sup>2</sup>
+Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Geopotential height,HGT,100 mb,gpm
+Geopotential height,HGT,1000 mb,gpm
+Geopotential height,HGT,1015 mb,gpm
+Geopotential height,HGT,150 mb,gpm
+Geopotential height,HGT,175 mb,gpm
+Geopotential height,HGT,200 mb,gpm
+Geopotential height,HGT,225 mb,gpm
+Geopotential height,HGT,250 mb,gpm
+Geopotential height,HGT,275 mb,gpm
+Geopotential height,HGT,300 mb,gpm
+Geopotential height,HGT,350 mb,gpm
+Geopotential height,HGT,400 mb,gpm
+Geopotential height,HGT,450 mb,gpm
+Geopotential height,HGT,50 mb,gpm
+Geopotential height,HGT,500 mb,gpm
+Geopotential height,HGT,550 mb,gpm
+Geopotential height,HGT,600 mb,gpm
+Geopotential height,HGT,650 mb,gpm
+Geopotential height,HGT,700 mb,gpm
+Geopotential height,HGT,750 mb,gpm
+Geopotential height,HGT,800 mb,gpm
+Geopotential height,HGT,850 mb,gpm
+Geopotential height,HGT,875 mb,gpm
+Geopotential height,HGT,900 mb,gpm
+Geopotential height,HGT,925 mb,gpm
+Geopotential height,HGT,950 mb,gpm
+Geopotential height,HGT,970 mb,gpm
+Geopotential height,HGT,985 mb,gpm
+Geopotential height,HGT,Surface,gpm
+Height of snow level,HGTSNLVL,Surface,m
+Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
+Latent heat net flux,LHTFL,Surface,W/m<sup>2</sup>
+Model orography,ORGPHY,Surface,m
+Net longwave radiation flux (surface),NLWRS,Surface,W/m<sup>2</sup>
+Net shortwave radiation flux (surface),NSWRS,Surface,W/m<sup>2</sup>
+Planetary boundary layer height,HPBL,Surface,m
+Precipitation rate,PRATE,Surface,kg/(m<sup>2</sup>*s)
+Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa
+Pressure,PRES,Surface,Pa
+Probability of blowing snow,PROBBLSN,Surface,%
+Probability of drizzle,PROBDZ,Surface,%
+Probability of freezing drizzle,PROBFZDZ,Surface,%
+Probability of freezing precipitation,PROBFZPCPN,Surface,%
+Probability of freezing rain,PROBFZRA,Surface,%
+Probability of ice pellets,PROBPL,Surface,%
+Probability of liquid precipitation,PROBLPCPN,Surface,%
+Probability of precipitation,PROBPCPN,Surface,%
+Probability of rain,PROBRA,Surface,%
+Probability of snow squalls,PROBSNSQ,Surface,%
+Probability of snow,PROBSN,Surface,%
+Probability of thunderstorm occurence,PROBTSOCRNC,Surface,%
+Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Relative humidity,RH,100 mb,%
+Relative humidity,RH,1000 mb,%
+Relative humidity,RH,1015 mb,%
+Relative humidity,RH,120 m Above Ground Level,%
+Relative humidity,RH,150 mb,%
+Relative humidity,RH,175 mb,%
+Relative humidity,RH,2 m Above Ground Level,%
+Relative humidity,RH,200 mb,%
+Relative humidity,RH,225 mb,%
+Relative humidity,RH,250 mb,%
+Relative humidity,RH,275 mb,%
+Relative humidity,RH,300 mb,%
+Relative humidity,RH,350 mb,%
+Relative humidity,RH,40 m Above Ground Level,%
+Relative humidity,RH,400 mb,%
+Relative humidity,RH,450 mb,%
+Relative humidity,RH,50 mb,%
+Relative humidity,RH,500 mb,%
+Relative humidity,RH,550 mb,%
+Relative humidity,RH,600 mb,%
+Relative humidity,RH,650 mb,%
+Relative humidity,RH,700 mb,%
+Relative humidity,RH,750 mb,%
+Relative humidity,RH,80 m Above Ground Level,%
+Relative humidity,RH,800 mb,%
+Relative humidity,RH,850 mb,%
+Relative humidity,RH,875 mb,%
+Relative humidity,RH,900 mb,%
+Relative humidity,RH,925 mb,%
+Relative humidity,RH,950 mb,%
+Relative humidity,RH,970 mb,%
+Relative humidity,RH,985 mb,%
+Secondary precipitation type,SCNDPCPNTYPE,Surface,101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains
+Sensible heat net flux,SHTFL,Surface,W/m<sup>2</sup>
+Showalter Index,SHWINX,500 mb,K
+Skin temperature,SKINT,Surface,K
+Snow density,SDEN,Surface,kg/m<sup>3</sup>
+Snow depth water equivalent,SDWE,Surface,kg/m<sup>2</sup>
+Snow depth,SNOD,Surface,m
+Snow precipitation rate,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Soil Temperature,TSOIL,Depth Below Land Surface (0-0.1 m),K
+Soil Temperature,TSOIL,Surface,K
+Soil Volumetric Ice Content (Water Equivalent),SOILVIC,Surface,m<sup>3</sup>/m<sup>3</sup>
+Soil moisture content,SOILM,Depth Below Land Surface (0-0.01 m),kg/m<sup>2</sup>
+Soil moisture content,SOILM,Depth Below Land Surface (0-0.1 m),kg/m<sup>2</sup>
+Specific humidity,SPFH,100 mb,kg/kg
+Specific humidity,SPFH,1000 mb,kg/kg
+Specific humidity,SPFH,1015 mb,kg/kg
+Specific humidity,SPFH,120 m Above Ground Level,kg/kg
+Specific humidity,SPFH,150 mb,kg/kg
+Specific humidity,SPFH,175 mb,kg/kg
+Specific humidity,SPFH,2 m Above Ground Level,kg/kg
+Specific humidity,SPFH,200 mb,kg/kg
+Specific humidity,SPFH,225 mb,kg/kg
+Specific humidity,SPFH,250 mb,kg/kg
+Specific humidity,SPFH,275 mb,kg/kg
+Specific humidity,SPFH,300 mb,kg/kg
+Specific humidity,SPFH,350 mb,kg/kg
+Specific humidity,SPFH,40 m Above Ground Level,kg/kg
+Specific humidity,SPFH,400 mb,kg/kg
+Specific humidity,SPFH,450 mb,kg/kg
+Specific humidity,SPFH,50 mb,kg/kg
+Specific humidity,SPFH,500 mb,kg/kg
+Specific humidity,SPFH,550 mb,kg/kg
+Specific humidity,SPFH,600 mb,kg/kg
+Specific humidity,SPFH,650 mb,kg/kg
+Specific humidity,SPFH,700 mb,kg/kg
+Specific humidity,SPFH,750 mb,kg/kg
+Specific humidity,SPFH,80 m Above Ground Level,kg/kg
+Specific humidity,SPFH,800 mb,kg/kg
+Specific humidity,SPFH,850 mb,kg/kg
+Specific humidity,SPFH,875 mb,kg/kg
+Specific humidity,SPFH,900 mb,kg/kg
+Specific humidity,SPFH,925 mb,kg/kg
+Specific humidity,SPFH,950 mb,kg/kg
+Specific humidity,SPFH,970 mb,kg/kg
+Specific humidity,SPFH,985 mb,kg/kg
+Specific humidity,SPFH,Surface,kg/kg
+Storm relative helicity,HLCY,Surface,J/kg
+Surface Water Runoff,SFCWRO,Surface,kg/m<sup>2</sup>
+Temperature,TMP,100 mb,K
+Temperature,TMP,1000 mb,K
+Temperature,TMP,1015 mb,K
+Temperature,TMP,120 m Above Ground Level,K
+Temperature,TMP,150 mb,K
+Temperature,TMP,175 mb,K
+Temperature,TMP,2 m Above Ground Level,K
+Temperature,TMP,200 mb,K
+Temperature,TMP,225 mb,K
+Temperature,TMP,250 mb,K
+Temperature,TMP,275 mb,K
+Temperature,TMP,300 mb,K
+Temperature,TMP,350 mb,K
+Temperature,TMP,40 m Above Ground Level,K
+Temperature,TMP,400 mb,K
+Temperature,TMP,450 mb,K
+Temperature,TMP,50 mb,K
+Temperature,TMP,500 mb,K
+Temperature,TMP,550 mb,K
+Temperature,TMP,600 mb,K
+Temperature,TMP,650 mb,K
+Temperature,TMP,700 mb,K
+Temperature,TMP,750 mb,K
+Temperature,TMP,80 m Above Ground Level,K
+Temperature,TMP,800 mb,K
+Temperature,TMP,850 mb,K
+Temperature,TMP,875 mb,K
+Temperature,TMP,900 mb,K
+Temperature,TMP,925 mb,K
+Temperature,TMP,950 mb,K
+Temperature,TMP,970 mb,K
+Temperature,TMP,985 mb,K
+Thickness between 2 isobaric levels,THICK,1000-500 mb,m
+Total cloud cover,TCDC,Surface,%
+Total precipitation intensity index,TPCPNINTSTI,Surface,0=No intensity; 1=Light; 2=Moderate; 3=Heavy
+Total precipitation,APCP,Surface,kg/m<sup>2</sup>
+Universal thermal climate index,UTHCIDX,Surface,K
+Upward longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+Upward shortwave radiation flux,USWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+Ventilation index,VI,Surface,0 to 100
+Vertical velocity (pressure),VVEL,1000 mb,Pa/s
+Vertical velocity (pressure),VVEL,250 mb,Pa/s
+Vertical velocity (pressure),VVEL,500 mb,Pa/s
+Vertical velocity (pressure),VVEL,700 mb,Pa/s
+Vertical velocity (pressure),VVEL,850 mb,Pa/s
+Visibility Through Ice Fog,VISIFG,2 m Above Ground Level,m
+Visibility Through Liquid Fog,VISLFG,2 m Above Ground Level,m
+Water/land mask,WTRLANMASK,Surface,Fraction
+Wind direction (from which blowing),WDIR,10 m Above Ground Level,Degree true
+Wind direction (from which blowing),WDIR,100 mb,Degree true
+Wind direction (from which blowing),WDIR,1000 mb,Degree true
+Wind direction (from which blowing),WDIR,1015 mb,Degree true
+Wind direction (from which blowing),WDIR,120 m Above Ground Level,Degree true
+Wind direction (from which blowing),WDIR,150 mb,Degree true
+Wind direction (from which blowing),WDIR,175 mb,Degree true
+Wind direction (from which blowing),WDIR,200 mb,Degree true
+Wind direction (from which blowing),WDIR,225 mb,Degree true
+Wind direction (from which blowing),WDIR,250 mb,Degree true
+Wind direction (from which blowing),WDIR,275 mb,Degree true
+Wind direction (from which blowing),WDIR,300 mb,Degree true
+Wind direction (from which blowing),WDIR,350 mb,Degree true
+Wind direction (from which blowing),WDIR,40 m Above Ground Level,Degree true
+Wind direction (from which blowing),WDIR,400 mb,Degree true
+Wind direction (from which blowing),WDIR,450 mb,Degree true
+Wind direction (from which blowing),WDIR,50 mb,Degree true
+Wind direction (from which blowing),WDIR,500 mb,Degree true
+Wind direction (from which blowing),WDIR,550 mb,Degree true
+Wind direction (from which blowing),WDIR,600 mb,Degree true
+Wind direction (from which blowing),WDIR,650 mb,Degree true
+Wind direction (from which blowing),WDIR,700 mb,Degree true
+Wind direction (from which blowing),WDIR,750 mb,Degree true
+Wind direction (from which blowing),WDIR,80 m Above Ground Level,Degree true
+Wind direction (from which blowing),WDIR,800 mb,Degree true
+Wind direction (from which blowing),WDIR,850 mb,Degree true
+Wind direction (from which blowing),WDIR,875 mb,Degree true
+Wind direction (from which blowing),WDIR,900 mb,Degree true
+Wind direction (from which blowing),WDIR,925 mb,Degree true
+Wind direction (from which blowing),WDIR,950 mb,Degree true
+Wind direction (from which blowing),WDIR,970 mb,Degree true
+Wind direction (from which blowing),WDIR,985 mb,Degree true
+Wind speed (gust),GUST,10 m Above Ground Level,m/s
+Wind speed,WSPD,10 m Above Ground Level,m/s
+Wind speed,WSPD,100 mb,m/s
+Wind speed,WSPD,1000 mb,m/s
+Wind speed,WSPD,1015 mb,m/s
+Wind speed,WSPD,120 m Above Ground Level,m/s
+Wind speed,WSPD,150 mb,m/s
+Wind speed,WSPD,175 mb,m/s
+Wind speed,WSPD,200 mb,m/s
+Wind speed,WSPD,225 mb,m/s
+Wind speed,WSPD,250 mb,m/s
+Wind speed,WSPD,275 mb,m/s
+Wind speed,WSPD,300 mb,m/s
+Wind speed,WSPD,350 mb,m/s
+Wind speed,WSPD,40 m Above Ground Level,m/s
+Wind speed,WSPD,400 mb,m/s
+Wind speed,WSPD,450 mb,m/s
+Wind speed,WSPD,50 mb,m/s
+Wind speed,WSPD,500 mb,m/s
+Wind speed,WSPD,550 mb,m/s
+Wind speed,WSPD,600 mb,m/s
+Wind speed,WSPD,650 mb,m/s
+Wind speed,WSPD,700 mb,m/s
+Wind speed,WSPD,750 mb,m/s
+Wind speed,WSPD,80 m Above Ground Level,m/s
+Wind speed,WSPD,800 mb,m/s
+Wind speed,WSPD,850 mb,m/s
+Wind speed,WSPD,875 mb,m/s
+Wind speed,WSPD,900 mb,m/s
+Wind speed,WSPD,925 mb,m/s
+Wind speed,WSPD,950 mb,m/s
+Wind speed,WSPD,970 mb,m/s
+Wind speed,WSPD,985 mb,m/s
+u-component of wind,UGRD,10 m Above Ground Level,m/s
+u-component of wind,UGRD,100 mb,m/s
+u-component of wind,UGRD,1000 mb,m/s
+u-component of wind,UGRD,1015 mb,m/s
+u-component of wind,UGRD,120 m Above Ground Level,m/s
+u-component of wind,UGRD,150 mb,m/s
+u-component of wind,UGRD,175 mb,m/s
+u-component of wind,UGRD,200 mb,m/s
+u-component of wind,UGRD,225 mb,m/s
+u-component of wind,UGRD,250 mb,m/s
+u-component of wind,UGRD,275 mb,m/s
+u-component of wind,UGRD,300 mb,m/s
+u-component of wind,UGRD,350 mb,m/s
+u-component of wind,UGRD,40 m Above Ground Level,m/s
+u-component of wind,UGRD,400 mb,m/s
+u-component of wind,UGRD,450 mb,m/s
+u-component of wind,UGRD,50 mb,m/s
+u-component of wind,UGRD,500 mb,m/s
+u-component of wind,UGRD,550 mb,m/s
+u-component of wind,UGRD,600 mb,m/s
+u-component of wind,UGRD,650 mb,m/s
+u-component of wind,UGRD,700 mb,m/s
+u-component of wind,UGRD,750 mb,m/s
+u-component of wind,UGRD,80 m Above Ground Level,m/s
+u-component of wind,UGRD,800 mb,m/s
+u-component of wind,UGRD,850 mb,m/s
+u-component of wind,UGRD,875 mb,m/s
+u-component of wind,UGRD,900 mb,m/s
+u-component of wind,UGRD,925 mb,m/s
+u-component of wind,UGRD,950 mb,m/s
+u-component of wind,UGRD,970 mb,m/s
+u-component of wind,UGRD,985 mb,m/s
+v-component of wind,VGRD,10 m Above Ground Level,m/s
+v-component of wind,VGRD,100 mb,m/s
+v-component of wind,VGRD,1000 mb,m/s
+v-component of wind,VGRD,1015 mb,m/s
+v-component of wind,VGRD,120 m Above Ground Level,m/s
+v-component of wind,VGRD,150 mb,m/s
+v-component of wind,VGRD,175 mb,m/s
+v-component of wind,VGRD,200 mb,m/s
+v-component of wind,VGRD,225 mb,m/s
+v-component of wind,VGRD,250 mb,m/s
+v-component of wind,VGRD,275 mb,m/s
+v-component of wind,VGRD,300 mb,m/s
+v-component of wind,VGRD,350 mb,m/s
+v-component of wind,VGRD,40 m Above Ground Level,m/s
+v-component of wind,VGRD,400 mb,m/s
+v-component of wind,VGRD,450 mb,m/s
+v-component of wind,VGRD,50 mb,m/s
+v-component of wind,VGRD,500 mb,m/s
+v-component of wind,VGRD,550 mb,m/s
+v-component of wind,VGRD,600 mb,m/s
+v-component of wind,VGRD,650 mb,m/s
+v-component of wind,VGRD,700 mb,m/s
+v-component of wind,VGRD,750 mb,m/s
+v-component of wind,VGRD,80 m Above Ground Level,m/s
+v-component of wind,VGRD,800 mb,m/s
+v-component of wind,VGRD,850 mb,m/s
+v-component of wind,VGRD,875 mb,m/s
+v-component of wind,VGRD,900 mb,m/s
+v-component of wind,VGRD,925 mb,m/s
+v-component of wind,VGRD,950 mb,m/s
+v-component of wind,VGRD,970 mb,m/s
+v-component of wind,VGRD,985 mb,m/s

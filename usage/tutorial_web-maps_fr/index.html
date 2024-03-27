@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tutorial web maps fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#tutoriel-creer-des-cartes-interactives-sur-le-web-avec-openlayers-et-leaflet" class="nav-link">Tutoriel : créer des cartes interactives sur le web avec OpenLayers et Leaflet</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#afficher-une-couche-wms" class="nav-link">Afficher une couche WMS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#creer-des-popups-interactifs-avec-openlayers" class="nav-link">Créer des popups interactifs avec OpenLayers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animation-de-couches-wms-temporelles-avec-openlayers" class="nav-link">Animation de couches WMS temporelles avec OpenLayers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../tutorial_web-maps_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; <a href="../readme_fr/">Aperçu de l'utilisation</a> &gt; Créer des cartes web interactives</p>
+<h1 id="tutoriel-creer-des-cartes-interactives-sur-le-web-avec-openlayers-et-leaflet">Tutoriel : créer des cartes interactives sur le web avec OpenLayers et Leaflet</h1>
+<p>Les services web géospatiaux de <a href="../../msc-geomet/readme_fr/">GeoMet du SMC</a> peuvent facilement être intégrés dans des bibliothèques de cartographie web libres et gratuites telles que <a href="https://openlayers.org/">OpenLayers</a> et <a href="https://leafletjs.com/">Leaflet</a> pour créer des cartes interactives pour pages web et applications mobiles. Ce tutoriel vous montrera comment travailler avec le standard WMS (Web Map Service) en utilisant ces deux bibliothèques. À la fin, vous serez en mesure d'afficher n'importe quelle couche WMS de GeoMet du SMC sur une carte interactive, d'interroger la couche pour obtenir des données et d'animer des couches selon une dimension temporelle.</p>
+<ul>
+<li><a href="#afficher-une-couche-wms">Afficher une couche WMS</a><ul>
+<li><a href="#exemple-avec-openlayers">Exemple avec OpenLayers</a></li>
+<li><a href="#exemple-avec-leaflet">Exemple avec Leaflet</a></li>
+</ul>
+</li>
+<li><a href="#créer-des-popups-interactifs-avec-openlayers">Créer des popups interactifs avec OpenLayers</a></li>
+<li><a href="#animation-de-couches-wms-temporelles-avec-openlayers">Animation de couches WMS temporelles avec OpenLayers</a></li>
+</ul>
+<h2 id="afficher-une-couche-wms">Afficher une couche WMS</h2>
+<p>Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (<code>GPDS.ETA_TT</code>) sur un fond de carte de <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Un exemple est disponible pour les librairies OpenLayers et Leaflet.</p>
+<h3 id="exemple-avec-openlayers">Exemple avec OpenLayers</h3>
+<h4 id="html">HTML</h4>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    } 
+  &lt;/style&gt;
+  &lt;title&gt;Exemple d'OpenLayers avec une couche de GeoMet du SMC&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Exemple d'OpenLayers avec une couche de GeoMet du SMC&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+    &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Afin d'utiliser OpenLayers, nous devons importer les bibliothèques JS et CSS requises. Un élément <code>&lt;div&gt;</code> est ajouté dans le corps de notre document HTML et assigné d'un attribut <code>id</code> avec une valeur de <code>map</code>. La valeur "id" sera référencée dans le code JavaScript afin de spécifier où placer la carte interactive dans le document HTML.
+Un élément <code>&lt;script&gt;</code> est également inclus dans le corps du document HTML, afin de lier le fichier JavaScript à notre HTML.
+Un peu de CSS est également ajouté dans la balise <code>&lt;head&gt;</code> afin de définir la largeur et la hauteur du conteneur de la carte.</p>
+<h4 id="javascript">JavaScript</h4>
+<p>Le code HTML étant maintenant terminé, tournons notre attention vers l'écriture du code JavaScript nécessaire à la création de notre carte web.</p>
+<pre><code class="language-javascript">/* Nom du fichier : tutorial.js */
+
+let layers_to_add = [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
+    }),
+    new ol.layer.Tile({
+      opacity: 0.4,
+      source: new ol.source.TileWMS({
+        url: 'https://geo.weather.gc.ca/geomet/',
+        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+        transition: 0
+      })
+    })
+  ];
+
+let map = new ol.Map({
+  target: 'map',
+  layers: layers_to_add,
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 0
+  })
+});
+</code></pre>
+<p>Pour garder les choses en ordre, nous créons un tableau de "couches à ajouter" qui contient une liste de couches que nous voulons ajouter à notre carte. Chaque élément est une couche qui est liée à une source. Dans ce cas, deux couches sont ajoutées à la carte : (1) la couche OpenStreetMap pour notre carte de base et (2) la couche WMS de GeoMet-Météo pour le Système global de prévision déterministe (SGPD) de la température de l'air à la surface. La source de la couche de température de l'air à la surface du SGPD a également quelques propriétés supplémentaires :</p>
+<ul>
+<li><code>url</code> : URL du service WMS</li>
+<li><code>params</code> : paramètres de la requête WMS, le paramètre <code>LAYERS</code> est requis</li>
+<li><code>transition</code> : durée de la transition d'opacité pour le rendu. Nous désactivons cette option ici car nous définissons une opacité et nous voulons qu'elle soit appliquée avant l'affichage de chaque tuile</li>
+</ul>
+<p>Ensuite, nous créons une nouvelle variable appelée "map" et utilisons le constructeur "o.Map" pour définir la carte qui sera rendue dans notre document HTML. Dans l'objet passé au constructeur, définissez une "target" pour notre carte (par exemple la valeur "id" du conteneur HTML, dans ce cas "map"). Le tableau <code>layers_to_add</code> est ensuite passé à la propriété <code>layers</code> et le constructeur <code>ol.View</code> est utilisé pour définir la vue initiale de notre carte. Dans notre cas, nous définissons le niveau de zoom initial et nous centrons la vue sur une coordonnée lon/lat spécifique.</p>
+<p>Vous trouverez ci-dessous un exemple du code ci-dessus. Essayez de modifier le code JavaScript pour afficher une autre couche, changer l'opacité, et les coordonnées initiales du zoom et du centre de la carte.</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Simple couche WMS de GeoMet avec OpenLayers" src="https://codepen.io/eccc-msc/embed/jObyoPw?height=281&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/jObyoPw'>Simple couche WMS de GeoMet avec OpenLayers</a> par le SMC d'ECCC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="exemple-avec-leaflet">Exemple avec Leaflet</h3>
+<h4 id="html_1">HTML</h4>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  &lt;/style&gt;
+  &lt;title&gt;Exemple de couche WMS de GeoMet du SMC avec Leaflet&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Exemple de couche WMS de GeoMet du SMC avec Leaflet&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.9.3/dist/leaflet.css&quot; integrity=&quot;sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=&quot; crossorigin=&quot;&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.9.3/dist/leaflet.js&quot; integrity=&quot;sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=&quot; crossorigin=&quot;&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Afin d'utiliser Leaflet, nous devons importer les bibliothèques JS et CSS requises. Un élément <code>&lt;div&gt;</code> est ajouté dans le corps de notre document HTML et ass igné d'un attribut <code>id</code> avec une valeur de <code>map</code>. La valeur "id" sera référencée dans le code JavaScript afin de spécifier où rendre la carte interactive dans le document HTML.
+Un élément <code>&lt;script&gt;</code> est également inclus dans le corps du document HTML, afin de lier le fichier JavaScript à notre HTML.
+Un peu de CSS est également ajouté dans la balise <code>&lt;head&gt;</code> afin de définir la largeur et la hauteur du conteneur de la carte.</p>
+<h4 id="javascript_1">JavaScript</h4>
+<p>Le code HTML étant maintenant terminé, tournons notre attention vers l'écriture du code JavaScript nécessaire à la création de notre carte web.</p>
+<pre><code class="language-javascript">/* Nom du fichier : tutorial.js */
+
+let map = L.map(&quot;map&quot;).setView([0,0], 3);
+
+let OpenStreetMap_Mapnik = L.tileLayer(
+  &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+  {
+    maxZoom: 19,
+    attribution:
+      '&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors'
+  }
+).addTo(map);
+
+let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
+    layers: 'GDPS.ETA_TT',
+    version: '1.3.0',
+    opacity: 0.5,
+}).addTo(map);
+</code></pre>
+<p>Le code ci-dessus initialise un <a href="https://leafletjs.com/reference-1.6.0.html#map">objet de carte</a> en utilisant l'API de Leaflet et définit la vue initiale de la carte avec la méthode <a href="https://leafletjs.com/reference-1.6.0.html#map-setview"><code>setView</code></a>.</p>
+<p>Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable <code>wmsLayer</code>, nous définissons l'opacité de la couche <code>GDPS.ETA_TT</code> et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.</p>
+<p>Voir l'exemple ci-dessous :</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Exemple simple de couche WMS de GeoMet avec Leaflet" src="https://codepen.io/eccc-msc/embed/GRpragg?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/GRpragg'>Exemple simple de couche WMS de GeoMet avec Leaflet</a> par le SMC d'ECCC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h2 id="creer-des-popups-interactifs-avec-openlayers">Créer des popups interactifs avec OpenLayers</h2>
+<p>Interrogeons maintenant une couche WMS pour accéder à la date sous-jacente via un popup. Le WMS permet à un utilisateur de faire une demande GetFeatureInfo pour extraire les données brutes associées à une coordonnée sur la carte. En utilisant l'API OpenLayers, nous allons créer une fenêtre contextuelle lorsqu'un utilisateur clique sur la carte qui affichera les coordonnées du point cliqué ainsi que la valeur de la donnée sous-jacente. Cette implémentation s'inspire fortement des exemples <a href="https://openlayers.org/en/latest/examples/popup.html?q=popup">popup</a> et <a href="https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup">WMS GetFeatureInfo</a> fournis par OpenLayers.</p>
+<h3 id="html_2">HTML</h3>
+<p>Il faudra ajouter quelques lignes de code HTML et CSS supplémentaires à notre document HTML initial.</p>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 800px;
+    }
+
+    /* Ajout du CSS pour la fenêtre contextuelle */
+    .ol-popup {
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #cccccc;
+      bottom: 12px;
+      left: -50px;
+      min-width: 300px;
+    }
+
+    .ol-popup:after,
+    .ol-popup:before {
+      top: 100%;
+      border: solid transparent;
+      content: &quot; &quot;;
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .ol-popup:after {
+      border-top-color: white;
+      border-width: 10px;
+      left: 48px;
+      margin-left: -10px;
+    }
+
+    .ol-popup:before {
+      border-top-color: #cccccc;
+      border-width: 11px;
+      left: 48px;
+      margin-left: -11px;
+    }
+
+    .ol-popup-closer {
+      text-decoration: none;
+      position: absolute;
+      top: 5px;
+      right: 8px;
+    }
+
+    .ol-popup-closer:after {
+      content: &quot;✖&quot;;
+      color: #A9A9A9;
+    }
+  &lt;/style&gt;
+
+  &lt;title&gt;Exemple de couche WMS de GeoMet avec OpenLayers&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Exemple de couche WMS de GeoMet avec OpenLayers&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;popup&quot; class=&quot;ol-popup&quot;&gt;
+    &lt;a href=&quot;#&quot; id=&quot;popup-closer&quot; class=&quot;ol-popup-closer&quot;&gt;&lt;/a&gt;
+    &lt;div id=&quot;popup-content&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Pour créer le popup, un nouvel élément "div" est ajouté. Dans ce nouvel élément, une balise d'ancrage est ajoutée pour permettre la fermeture de la fenêtre contextuelle lorsqu'elle est affichée sur la carte. Un "div" vide contiendra les résultats du GetFeatureInfo et les coordonnées du point cliqué sur la carte. Le CSS supplémentaire est utilisé pour définir l'aspect et la convivialité de la fenêtre contextuelle ainsi que pour afficher/masquer la fenêtre contextuelle lorsque l'utilisateur clique sur la carte.</p>
+<h3 id="javascript_2">JavaScript</h3>
+<pre><code class="language-javascript">/* Nom du fichier : tutorial.js */
+
+/**
+ * Éléments de la fenêtre contextuelle
+ */
+let container = document.getElementById(&quot;popup&quot;);
+let content = document.getElementById(&quot;popup-content&quot;);
+let closer = document.getElementById(&quot;popup-closer&quot;);
+
+
+/**
+ * Créer un élément &quot;Overlay&quot; pour ancrer la fenêtre contextuelle sur la carte
+ */
+let overlay = new ol.Overlay({
+  element: container,
+  autoPan: true,
+  autoPanAnimation: {
+    duration: 250
+  }
+});
+
+
+/**
+ * Ajoutez un gestionnaire de clic pour cacher la fenêtre contextuelle
+ * @return {boolean} ne pas suivre le href
+ */
+closer.onclick = function () {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+let layers = [
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+    opacity: 0.4,
+    source: new ol.source.TileWMS({
+      url: &quot;https://geo.weather.gc.ca/geomet&quot;,
+      params: { LAYERS: &quot;GDPS.ETA_TT&quot;, TILED: true },
+      transition: 0
+    })
+  })
+];
+
+let map = new ol.Map({
+  target: &quot;map&quot;,
+  layers: layers,
+  overlays: [overlay],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 0
+  })
+});
+
+
+map.on(&quot;singleclick&quot;, function (evt) {
+  let coordinate = evt.coordinate;
+  let xy_coordinates = ol.coordinate.toStringXY(
+    ol.proj.toLonLat(evt.coordinate),
+    4
+  );
+  let viewResolution = map.getView().getResolution();
+  let wms_source = map.getLayers().item(1).getSource();
+  let url = wms_source.getFeatureInfoUrl(
+    coordinate,
+    viewResolution,
+    &quot;EPSG:3857&quot;,
+    { INFO_FORMAT: &quot;application/json&quot; }
+  );
+  content.innerHTML = '&lt;p align=&quot;center&quot;&gt;Chargement...&lt;/p&gt;';
+  overlay.setPosition(evt.coordinate);
+  if (url) {
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        content.innerHTML = `
+Température de l'air à la surface&lt;br&gt;
+Coordonnées (Lon/Lat): &lt;/&gt; &lt;code&gt;${xy_coordinates}&lt;/code&gt;&lt;br&gt;
+Valeur: &lt;/b&gt;&lt;code&gt;${Math.round(json.features[0].properties.value)} °C&lt;/code&gt;`;
+      });
+  }
+});
+</code></pre>
+<p>Il y a quatre principaux ajouts au code JavaScript.</p>
+<p>Tout d'abord, nous créons des références aux trois éléments HTML qui sont utilisés par le popup ("container", "content" et "closer").</p>
+<p>Le constructeur <a href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html"><code>ol.Overlay()</code></a> est ensuite utilisé pour créer une nouvelle superposition qui sera utilisée pour ancrer la fenêtre contextuelle à la carte. Notez que le "container" (c'est-à-dire notre fenêtre contextuelle) est associé à la propriété "element " de l'object passé au constructeur de l'"Overlay". La superposition est ensuite passée comme un élément de tableau à la propriété "Overlays" lors de la construction de la carte.</p>
+<p>Un événement "onclick" est alors ajouté au <code>closer</code> (c'est-à-dire la balise <code>&lt;a&gt;</code> dans le popup), qui fixe la position du recouvrement à <code>undefined</code>, cachant ainsi efficacement le recouvrement lorsque la balise d'ancrage contenue dans la fenêtre contextuelle est cliquée.</p>
+<p>Finalement, notre carte profitera de la méthode <a href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html#on"><code>ol.Map.on()</code></a> pour écouter les événements <code>singleclick</code> sur la carte. La fonction de rappel qui est déclenchée par l'événement fait ce qui suit :</p>
+<ul>
+<li>Récupère les coordonnées du point de la carte cliqué, puis reprojette les coordonnées en EPSG:4326 (WSG 84). La méthode <code>ol.coordinate.toStringXY</code> transforme les coordonnées en une chaîne de caractères délimités par des virgules</li>
+<li>Récupère la résolution de la vue de la carte</li>
+<li>Récupère la source de la couche <code>GDPS.ETA_TT</code></li>
+<li>Utilise la méthode <code>ol.source.TileWMS.getFeatureInfoUrl()</code> pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (au moins <code>INFO_FORMAT</code> doit être fourni)</li>
+<li>Fixe la position de la superposition aux coordonnées de l'événement de clic initial</li>
+<li>Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API JavaScript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo</li>
+</ul>
+<p>Voir l'exemple ci-dessous :</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="GetFeatureInfo avec GeoMet et OpenLayers" src="https://codepen.io/eccc-msc/embed/zYvNQvL?height=300&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/zYvNQvL'>GetFeatureInfo avec GeoMet et OpenLayers</a> par le SMC d'ECCC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h2 id="animation-de-couches-wms-temporelles-avec-openlayers">Animation de couches WMS temporelles avec OpenLayers</h2>
+<p>Une quantité importante de données servies par GeoMet du SMC a une ou plusieurs dimensions temporelles. La section suivante explique comment OpenLayers peut nous aider à visualiser et à animer les différents pas de temps de ces couches, dans ce cas-ci, les données des radars météorologiques, servies comme un WMS via GeoMet-Météo.</p>
+<p>Deux couches GeoMet-Météo sont utilisées pour créer cette animation : <code>RADAR_1KM_RRAI</code> et <code>RADAR_COVERAGE_RRAI.INV</code>. Ces couches sont disponibles sur une fenêtre mobile de 3 heures, toutes les 6 minutes.</p>
+<h3 id="html_3">HTML</h3>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    } 
+  &lt;/style&gt;
+  &lt;title&gt;Couche temporelle de GeoMet animée avec OpenLayers&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Exemple de GeoMet avec OpenLayers&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css&quot; integrity=&quot;sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;link href=&quot;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;controller&quot; role=&quot;group&quot; aria-label=&quot;Animation controls&quot; style=&quot;background: #ececec; padding: 0.5rem;&quot;&gt;
+    &lt;button id=&quot;fast-backward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-fast-backward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;step-backward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-step-backward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;play-pause&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-play&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;step-forward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-step-forward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;fast-forward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-fast-forward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;span id=&quot;info&quot; style=&quot;padding-left: 0.5rem;&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Tout comme les exemples précédents, le HTML ci-dessus charge les bibliothèques JavaScript et CSS OpenLayers, ainsi que les CSS Bootstrap et Font Awesome utilisés pour afficher les différents boutons dans le contrôleur d'animation. Un conteneur supplémentaire <code>controller</code> est créé sous la carte et contient les boutons fast-backward, step-backward, play-pause, step-forward et fast-forward, ainsi qu'un élément <code>&lt;span&gt;</code> utilisé pour afficher le pas de temps actuellement affiché.</p>
+<h3 id="javascript_3">JavaScript</h3>
+<pre><code class="language-javascript">/* Nom du fichier : tutorial.js */
+
+const parser = new DOMParser();
+
+// Fonction asynchrone utilisée pour récupérer l'heure de début et de fin du document GetCapabilities de la couche RADAR_1KM_RRAI
+async function getRadarStartEndTime() {
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&amp;service=WMS&amp;request=GetCapabilities&amp;version=1.3.0&amp;LAYERS=RADAR_1KM_RRAI&amp;t=' + new Date().getTime())
+  let data = await response.text().then(
+    data =&gt; {
+      let xml = parser.parseFromString(data, 'text/xml');
+      let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/');
+      let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default');
+      return [start, end, default_];
+    }
+  )
+  return [new Date(data[0]), new Date(data[1]), new Date(data[2])];
+}
+
+let frameRate = 1.0;
+let animationId = null;
+let startTime = null;
+let endTime = null;
+let defaultTime = null;
+let currentTime = null;
+
+let layers = [
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: {'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true},
+      crossOrigin: 'Anonymous'
+    })
+  }),
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: {'LAYERS': 'RADAR_COVERAGE_RRAI.INV', 'TILED': true},
+      transition: 0,
+      crossOrigin: 'Anonymous'
+    })
+  })
+];
+
+let map = new ol.Map({
+  target: 'map',
+  layers: layers,
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 3
+  })
+});
+
+// Si l'image n'a pas pu load à cause d'un changement dans la plage de temps, récupérer la nouvelle plage de temps
+layers[1].getSource().on(&quot;imageloaderror&quot;, () =&gt; {
+  getRadarStartEndTime().then(data =&gt; {
+    currentTime = startTime = data[0];
+    endTime = data[1];
+    defaultTime = data[2];
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  })
+});
+
+function updateLayers() {
+  layers[1].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+&quot;Z&quot;});
+  layers[2].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+&quot;Z&quot;});
+}
+
+function updateInfo() {
+  let el = document.getElementById('info');
+  el.innerHTML = `Time / Heure: ${currentTime.toISOString().substr(0, 16)+&quot;Z&quot;}`
+}
+
+// Activer/désactiver les boutons dépendemment de l'état de la map
+function updateButtons() {
+  if (animationId !== null) {
+    disableButtons([fastBackwardButton, stepBackwardButton, stepForwardButton, fastForwardButton]);
+    enableButtons([playPauseButton]);
+  } else {
+    if (currentTime &lt;= startTime) {
+      disableButtons([fastBackwardButton, stepBackwardButton]);
+      enableButtons([playPauseButton, stepForwardButton, fastForwardButton]);
+    } else if (currentTime &gt;= endTime) {
+      disableButtons([playPauseButton, stepForwardButton, fastForwardButton]);
+      enableButtons([fastBackwardButton, stepBackwardButton]);
+    } else {
+      enableButtons([fastBackwardButton, stepBackwardButton, playPauseButton, stepForwardButton, fastForwardButton]);
+    }
+  }
+}
+
+function disableButtons(buttons) {
+  for (var i = 0; i &lt; buttons.length; i++){
+    buttons[i].disabled = true;
+  }
+}
+
+function enableButtons(buttons) {
+  for (var i = 0; i &lt; buttons.length; i++){
+    buttons[i].disabled = false;
+  }
+}
+
+function setTime() {
+  if (currentTime &gt;= endTime) {
+    currentTime = endTime;
+    togglePlayPause();
+  } else {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() + 6);
+  }
+  updateLayers();
+  updateInfo();
+}
+
+function togglePlayPause() {
+  if (animationId !== null) {
+    playPauseButton.firstElementChild.className = &quot;fa fa-play&quot;
+    window.clearInterval(animationId);
+    animationId = null;
+    updateButtons();
+  } else {
+    playPauseButton.firstElementChild.className = &quot;fa fa-pause&quot;
+    animationId = window.setInterval(setTime, 1000 / frameRate);
+    updateButtons();
+  }
+}
+
+function fastBackward() {
+  if (animationId == null &amp;&amp; currentTime &gt; startTime) {
+    getRadarStartEndTime().then(data =&gt; {
+      currentTime = startTime = data[0];
+      endTime = data[1];
+      defaultTime = data[2];
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    })
+  }
+}
+
+function stepBackward() {
+  if (animationId == null &amp;&amp; currentTime &gt; startTime) {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 6);
+    if (currentTime.getTime() === startTime.getTime()) {
+      getRadarStartEndTime().then(data =&gt; {
+        currentTime = startTime = data[0];
+        endTime = data[1];
+        defaultTime = data[2];
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
+  }
+}
+
+function stepForward() {
+  if (animationId == null &amp;&amp; currentTime &lt; endTime) {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() + 6);
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  }
+}
+
+function fastForward() {
+  if (animationId == null &amp;&amp; currentTime &lt; endTime) {
+    currentTime = new Date(endTime);
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  }
+}
+
+let fastBackwardButton = document.getElementById('fast-backward');
+fastBackwardButton.addEventListener('click', fastBackward, false);
+
+let stepBackwardButton = document.getElementById('step-backward');
+stepBackwardButton.addEventListener('click', stepBackward, false);
+
+let playPauseButton = document.getElementById('play-pause');
+playPauseButton.addEventListener('click', togglePlayPause, false);
+
+let stepForwardButton = document.getElementById('step-forward');
+stepForwardButton.addEventListener('click', stepForward, false);
+
+let fastForwardButton = document.getElementById('fast-forward');
+fastForwardButton.addEventListener('click', fastForward, false);
+
+// Initialiser la map
+function initMap() {
+  getRadarStartEndTime().then(data =&gt; {
+    startTime = data[0];
+    endTime = data[1];
+    currentTime = defaultTime = data[2];
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  })
+}
+initMap();
+</code></pre>
+<p>Dans le code JavaScript, une fonction asynchrone est créée pour récupérer l'heure de début, l'heure de fin et l'heure par défaut actuellement disponible pour les données du radar météorologique (<code>RADAR_1KM_RRAI</code>). Lorsqu'une réponse est reçue, le <code>DOMParser()</code> est utilisé pour récupérer le contenu de la balise GetCapabilities <code>&lt;Dimension&gt;</code> et renvoie un tableau contenant trois objets date-heure représentant l'heure de début, l'heure de fin et l'heure par défaut des données radar météo disponibles.</p>
+<p>Tout comme les autres exemples d'OpenLayers ci-dessus, un ensemble de couches est défini et transmis au constructeur de l'<code>ol.Map</code>.</p>
+<p>La plage de temps (i.e. startTime et endTime) couverte par les couches se met régulièrement à jour, ce qui fait en sorte qu'il peut arriver qu'une image ne puisse pas être chargée car les données d'un pas de temps expiré ne sont plus disponibles. La situation est identifée quand une couche lance un événement <code>imageloaderror</code>, et la fonction asynchrone est appelée à nouveau pour récupérer l'heure de début, l'heure de fin et l'heure par défaut mises à jour. La fonction asynchrone est également appelée à chaque fois que l'utilisateur va au début de la plage de temps (via les boutons <code>fastBackward()</code> et <code>stepBackward()</code>), afin de mettre à jour la plage de temps.</p>
+<p>La fonction <code>updateButtons()</code> modifie les balises HTML des boutons afin de les désactiver/réactiver dépendemment de l'état de la map. Par exemple, les boutons fast-backward, step-backward, step-forward et fast-forward sont désactivés lorsque l'animation de la map est activée.</p>
+<p>La fonction <code>setTime()</code> est utilisée pour augmenter l'heure actuelle de 6 minutes afin de de récupérer le pas de temps disponible suivant. Si l'heure actuelle est supérieure ou égale à l'heure de fin, la fonction <code>togglePlayPause()</code> est appelée pour arrêter l'animation. </p>
+<p>La fonction <code>togglePlayPause()</code> permet d'alterner entre le bouton play et pause dépendemment de l'état de la map. Lorsque l'animation est activée, le bouton prend l'apparence d'un bouton pause et son action permet de désactiver l'animation. Lorsque l'animation est désactivée, le bouton prend l'apparence d'un bouton play et son action permet d'appeler <code>setTime()</code> à un intervalle régulier, de manière à augmenter continuellement le pas de temps. </p>
+<p>Les fonctions <code>fastBackward()</code>, <code>stepBackward()</code>, <code>stepForward()</code> et <code>fastForward()</code> permettent respectivement d'aller à l'heure du début, au pas de temps précédent, au pas de temps suivant, et à l'heure de fin. Chaque bouton appelle les fonctions <code>updateLayers()</code>, <code>updateInfo()</code> et <code>updateButtons()</code> afin de mettre à jour les couches et le temps affiché, ainsi que désactiver les boutons appropriés. Les boutons du HTML sont ensuite associés à leur fonction respective à l'aide de Event Listeners.</p>
+<p>Enfin, la map est initialisée en appelant <code>getRadarStartEndTime()</code> pour définir les variables startTime, endTime, defaultTime et currentTime.</p>
+<p>Voir l'exemple ci-dessous :</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="Exemple de couche WMS avec composante temporelle et OpenLayers" src="https://codepen.io/eccc-msc/embed/NWGdVRp?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> par le SMC d'ECCC 
+(<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

@@ -1,0 +1,3 @@
+Variable,Abbreviation,Level,Unit/Value
+Seeing index,SEEI,Atmospheric Column,0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent
+Sky transparency index,TRSP,Atmospheric Column,0=Worst; 1=Very poor; 2=Poor; 3=Average; 4=Good; 5=Excellent

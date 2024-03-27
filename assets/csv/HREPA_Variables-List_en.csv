@@ -1,0 +1,5 @@
+Variable,Abbreviation,Level,Unit/Value
+25th precipitation amount percentile estimated through the 25 members of the ensemble,q025,Surface,kg/m<sup>2</sup>
+75th precipitation amount percentile estimated through the 25 members of the ensemble,q075,Surface,kg/m<sup>2</sup>
+Confidence index of analysis,cfia,Surface,N/A
+Precipitation amount estimated through the 25 members of the ensemble,pr,Surface,kg/m<sup>2</sup>

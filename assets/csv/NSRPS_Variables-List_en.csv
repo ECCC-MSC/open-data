@@ -1,0 +1,7 @@
+Variable,Abbreviation,Level,Unit/Value
+Aggregate Surface Radiative Temperature,tg,Surface,K
+Air Temperature,tt,Surface,K
+Dew Point Temperature,td,Surface,K
+Snow depth (land),sd,Surface,m
+Volumetric Water Content of Soil,wsol,Surface,m<sup>3</sup>/m<sup>3</sup>
+Water equivalent of snow cover (land),swe,Surface,kg/m<sup>2</sup>

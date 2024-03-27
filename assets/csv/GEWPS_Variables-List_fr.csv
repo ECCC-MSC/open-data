@@ -1,0 +1,14 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Direction des vagues de la mer du vent,WVDIR,Surface,Degree true
+Direction moyenne de la deuxième houle,MWDSSWEL,Surface,deg
+Direction moyenne de la première houle,MWDFSWEL,Surface,deg
+Direction pic des vagues,PWAVEDIR,Surface,deg
+Hauteur significative de la deuxième houle,SWHSSWEL,Surface,m
+Hauteur significative de la première houle,SWHFSWEL,Surface,m
+Hauteur significative des vagues de la mer du vent,WVHGT,Surface,m
+Hauteur significative des vagues de vent et de la houle combinées,HTSGW,Surface,m
+Période moyenne centrée des vagues,MZWPER,Surface,s
+Période pic de la deuxième houle,PWPSSWEL,Surface,s
+Période pic de la première houle,PWPFSWEL,Surface,s
+Période pic des vagues de vent de la mer,PPERWW,Surface,s
+Période pic des vagues,PWPER,Surface,s

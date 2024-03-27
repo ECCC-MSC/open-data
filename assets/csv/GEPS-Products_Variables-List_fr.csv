@@ -1,0 +1,13 @@
+Variable,Abréviation,Niveau,Unité/Valeur
+Couverture nuageuse totale,TCDC,Surface,%
+Facteur de refroidissement éolien,WCF,2 m au-dessus du niveau du sol,K
+Hauteur géopotentielle,HGT,500 mb,gpm
+Humidex,HEATX,2 m au-dessus du niveau du sol,K
+Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
+Taux de pluie verglaçante,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation de neige,SPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation de pluie,RPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation du grésil,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Taux de précipitation totale,TPRATE,Surface,kg/(m<sup>2</sup>*s)
+Température,TMP,2 m au-dessus du niveau du sol,K
+Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s

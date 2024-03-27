@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Aviation package en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#aviation-package-4-panel" class="nav-link">Aviation Package (4-panel)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#icing-and-freezing-level-top-left-panel" class="nav-link">Icing and Freezing Level (top left panel)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#high-level-turbulence-and-tropopause-height-top-right-panel" class="nav-link">High level turbulence and Tropopause height (top right panel)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#momentum-flux-or-surface-stress-bottom-left-panel" class="nav-link">Momentum flux or surface stress (bottom left panel)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mid-level-turbulence-bottom-right-panel" class="nav-link">Mid level turbulence (bottom right panel)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../aviation-package_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; Four Panel Aviation Package </p>
+<h1 id="aviation-package-4-panel">Aviation Package (4-panel)</h1>
+<p>These prognostic charts for 6, 12, 18 and 24 hours (at 0000 and 1200) are produced by the regional run of the Global Environmental Multiscale (GEM) model. Forecasts are packaged as 4-panel charts as depicted below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Icing &amp; Freezing levels</th>
+<th style="text-align: center;">Tropopause heights &amp; High level turbulence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Surface stress</td>
+<td style="text-align: center;">Mid level turbulence</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Area of coverage for all panels is as follows : North America and Arctic regions, North Atlantic, northern portions of Asia, and North Pacific.</li>
+<li>The transmission identifiers are as follows : CMC776, CMC777, CMC778, CMC779, CMC780, CMC781, CMC782, CMC783.</li>
+</ul>
+<p><strong>Sample chart (4-panel)</strong></p>
+<p><img alt="echantillon de carte" src="http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/samples_products/difax_reg_prog_aviation-package.gif" /></p>
+<h2 id="icing-and-freezing-level-top-left-panel">Icing and Freezing Level (top left panel)</h2>
+<h3 id="fields">Fields</h3>
+<ul>
+<li>Freezing level<ul>
+<li>Depiction: Solid lines of the height of the freezing level above mean sea level, at intervals of 2500 feet. The units are in hundreds of feet.</li>
+</ul>
+</li>
+<li>Supercooled water (potential for icing)<ul>
+<li>Depiction: Dashed lines delineate areas where model physics predict the presence of supercooled water droplets; these areas are further enhanced by a light stippling.</li>
+</ul>
+</li>
+</ul>
+<h3 id="plotting-model">Plotting model</h3>
+<p>In the stippled areas, the base and top of the layer in which supercooled water is to be found, are plotted in thousands of feet above mean sea level, at selected grid points. The lower number gives the base and the upper number indicates the top of the layer.</p>
+<h2 id="high-level-turbulence-and-tropopause-height-top-right-panel">High level turbulence and Tropopause height (top right panel)</h2>
+<h3 id="fields_1">Fields</h3>
+<ul>
+<li>Tropopause height<ul>
+<li>Depiction: Solid lines of the tropopause height above mean sea level, at intervals of 5000 feet. The units are in thousands of feet.</li>
+</ul>
+</li>
+<li>
+<p>Turbulence (Deformation Vertical Shear Index or DVSI)</p>
+<ul>
+<li>Depiction: Dashed lines are the isopleths of the maximum deformation vertical shear index (DVSI) in the layer from 400 to 200 hPa.<ul>
+<li><strong>DVSI values are enhanced as follows</strong>:<ul>
+<li>Lower than 50 : no enhancement </li>
+<li>50 &lt; DVSI &lt; 150 : light stippling </li>
+<li>150 &lt; DVSI &lt; 240: dark stippling </li>
+<li>DVSI &gt; 240 : no enhancement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Note</strong>: The WMO definition of the tropopause is used.</p>
+</li>
+</ul>
+<h3 id="plotting-model_1">Plotting model</h3>
+<p>The base and top of the DVSI layer greater than 40 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.</p>
+<h2 id="momentum-flux-or-surface-stress-bottom-left-panel">Momentum flux or surface stress (bottom left panel)</h2>
+<h3 id="fields_2">Fields</h3>
+<ul>
+<li>Momentum Flux or surface stress<ul>
+<li>Depiction: Isopleths of surface stress in Pa. The contoured values correspond to 0.5, 0.75, 1.5 and 3.0 Pa. </li>
+</ul>
+</li>
+</ul>
+<h3 id="note">Note</h3>
+<p>Areas where the values of surface stress are above 0.75 Pa are hatched horizontally, while those where values of surface stress are above 1.5 Pa are hatched vertically. The values of 0.75 Pa represents the lower threshold for moderate mechanical turbulence; the value of 1.5 Pa represents the lower threshold for heavy turbulence and the value of 3.0 Pa is the lower threshold for extreme turbulence. </p>
+<h2 id="mid-level-turbulence-bottom-right-panel">Mid level turbulence (bottom right panel)</h2>
+<h3 id="fields_3">Fields</h3>
+<ul>
+<li>Turbulence (Deformation Vertical Shear Index or DVSI)<ul>
+<li>Depiction: Isopleths of the maximum deformation vertical shear index (DVSI) in the layer from 700 to 400 hPa.<ul>
+<li><strong>DVSI values are enhanced as follows</strong>:<ul>
+<li>Lower than 50 : no enhancement</li>
+<li>50 &lt; DVSI &lt; 150 : light stippling</li>
+<li>150 &lt; DVSI &lt; 240: dark stippling</li>
+<li>DVSI &gt; 240 : no enhancement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="plotting-model_2">Plotting model</h3>
+<p>The base and top of the DVSI layer greater than 40 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

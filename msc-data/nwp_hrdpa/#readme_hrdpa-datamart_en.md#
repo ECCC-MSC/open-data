@@ -1,0 +1,92 @@
+[En français](readme_hrdpa-datamart_fr.md)
+
+![ECCC logo](../../img_eccc-logo.png)
+
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPA](readme_hrdpa_en.md) > HRDPA on MSC Datamart
+
+# High Resolution Deterministic Precipitation Analysis (HRDPA) Data in GRIB2 Format
+
+This page describes the [High Resolution Deterministic Precipitation Analysis](./readme_hrdpa-datamart_en.md) data available in GRIB2 format.
+
+## Data location
+
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+
+The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
+
+The data can be accessed at the following URLs :
+
+
+* [https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{HH}](https://dd.weather.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic)
+
+where :
+
+* __polar_stereographic__ :  Grid projection
+* __HH__ :  Accumulation period in hours: 06 or 24 
+
+A history of 30 days is maintained in this directory.
+
+## Grid specifications
+
+![HRDPA grid specification image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
+
+Table lists the values of parameters of the polar-stereographic grid.
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 2500 |
+| nj | 1222 | 
+| resolution at 60° N | 2.5 km |
+| coordinates of the first grid point | 42.2504° N  131.0928° W | 
+| grid orientation (with respect to j axis) | -115.0° |
+
+## File name nomenclature 
+
+NOTE : ALL HOURS ARE IN UTC.
+
+The files have the following nomenclature:
+
+CMC_HRDPA_APCP-TotalPrecipAmount-HHMMcutoff_SFC_0_ps2.5km_YYYYMMDDHH_000.grib2
+
+where :
+
+* __CMC__ : Data is produced by the Canadian Meteorological Centre (Constant string)
+* __HRDPA__ : High Resolution Deterministic Precipitation Analysis (Constant string)
+* __APCP__ : Analysis of Precipitation (Constant string)
+* __TotalPrecipAmountPeriod__ : Total precipitation amount over a period of time in number of hours (006 or 024)
+* __HHMMcutoff__ : Observation cuttoff time in number of hours and minutes after valid time. (0100cutoff or 0700cutoff)
+* __SFC_0__ : Level type is Surface and level value is 0 (Constant string)
+* __ps2.5km__ : Projection type is Polar-Stereographic and the resolution is 2.5 km (Constant string)
+* __YYYYMMDDHH__ : Analysis valid time in UTC. YYYY=Year, MM=Month, DD=Day, HH=Hour (ex: 2018020912)
+* __000__ : The projection time in number of hours. Always 000 for an analysis product (Constant string)
+
+Example :
+
+CMC_HRDPA_APCP-006-0100cutoff_SFC_0_ps2.5km_2018020912_000.grib2
+
+This file originates from the Canadian Meteorological Center (CMC) and contains data of the High Resolution Deterministic Precipitation Analysis (HRDPA). This is a precipitation analysis (APCP) of 6 hour amounts (006) where the accumulation period goes from 2018020906 to 2018020912. It is considered preliminary because observations have been collected up to 2018020913, which is 1 hour after valid time (0100cutoff). The data is on a polar-stereographic grid at a resolution of 2.5 km (ps2.5km). The valid time of the analysis is 2018020912_000 and the suffix _000 means that the projection time in the future is null, which is always the case for an analysis. The data is encoded in GRIB2 format (.grib2).
+
+Note that a second variable is also included in this file and it is the confidence index for the analysis (CFIA).
+
+## List of variables
+
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPA_Variables-List_en.csv");
+</script>
+
+## About the No-data mask
+
+A mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.
+
+## Support
+
+If you have any questions about this data, please contact us at: [ec.dps-client.ec@canada.ca](mailto:ec.dps-client.ec@canada.ca)
+
+## Announcements from the dd_info mailing list 
+
+Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).

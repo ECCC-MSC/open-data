@@ -1,0 +1,22 @@
+Variable,Abbreviation,Level,Unit/Value
+Depth-integrated compressive sea ice strength,iicestrength,Surface,N/m
+Depth-integrated internal sea ice pressure,iicepressure,Surface,N/m
+Ocean mixed layer depth based on density criterion,sokaraml,Surface,m
+Sea ice area fraction,iiceconc,Surface,Fraction
+Sea ice divergence,iicedivergence,Surface,%/day
+Sea ice shear,iiceshear,Surface,%/day
+Sea ice volume per unit grid cell area,iicevol,Surface,m
+Sea ice x velocity,itzocrtx,Surface,m/s
+Sea ice y velocity,itmecrty,Surface,m/s
+Sea surface height above geoid,sossheig,Surface,m
+Sea water potential temperature,votemper,Surface,K
+Sea water salinity,vosaline,Surface,PSU
+Sea water x velocity,vozocrtx,Surface,m/s
+Sea water y velocity,vomecrty,Surface,m/s
+Surface air temperature (1.5 m),tairsurf,1.5 m Above Ground Level,K
+Surface runoff,runoffsurf,Surface,mm
+Surface temperature of snow over sea ice or bare sea ice,iicesurftemp,Surface,K
+Surface wind x velocity (10 m),uwindsurf,10 m Above Ground Level,m/s
+Surface wind y velocity (10 m),vwindsurf,10 m Above Ground Level,m/s
+Turbocline depth,somixhgt,Surface,m
+Volume of snow on sea ice per unit grid cell area,isnowvol,Surface,cm

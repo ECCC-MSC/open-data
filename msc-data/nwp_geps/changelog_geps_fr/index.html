@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog geps fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-au-systeme-global-de-prevision-densemble-sgpe" class="nav-link">Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-14-septembre-2023" class="nav-link">Le jeudi 14 septembre 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-5-juillet-2023" class="nav-link">Le mercredi 5 juillet 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-8-mars-2023" class="nav-link">Le mercredi 8 mars 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-15-fevrier-2023" class="nav-link">Le mercredi 15 février 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-4-janvier-2023" class="nav-link">Le mercredi 4 janvier 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-jeudi-3-novembre-2022" class="nav-link">Le jeudi 3 novembre 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-16-fevrier-2022" class="nav-link">Le mercredi 16 février 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-26-janvier-2021" class="nav-link">Le mardi 26 janvier 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-8-decembre-2020" class="nav-link">Le mardi 8 décembre 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-vendredi-26-juin-2020" class="nav-link">Le vendredi 26 juin 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-29-avril-2020" class="nav-link">Le mercredi 29 avril 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-avril-2020" class="nav-link">Le mardi 28 avril 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-23-juillet-2019" class="nav-link">Le mardi 23 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-juillet-2019" class="nav-link">Le mercredi 3 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-septembre-2018" class="nav-link">Le mardi 18 septembre 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-15-decembre-2015" class="nav-link">Le mardi 15 décembre 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-novembre-2014" class="nav-link">Le mardi 18 novembre 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-4-decembre-2013" class="nav-link">Le mercredi 4 décembre 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-13-fevrier-2013" class="nav-link">Le mercredi, 13 février 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_geps_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_geps_fr/">SGPE</a> &gt; Changements au SGPE</p>
+<h1 id="chronologie-des-changements-apportes-au-systeme-global-de-prevision-densemble-sgpe">Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)</h1>
+<h2 id="le-jeudi-14-septembre-2023">Le jeudi 14 septembre 2023</h2>
+<h3 id="ajout-dobservations-commerciales-gnss-ro-de-planetiq-dans-le-sgpe">Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SGPE</h3>
+<p>Le jeudi 14 septembre 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de petits satellites GNOMES de PlanetIQ.</p>
+<h2 id="le-mercredi-5-juillet-2023">Le mercredi 5 juillet 2023</h2>
+<h3 id="ajout-dobservations-commerciales-gnss-ro-de-spire-dans-le-sgpe">Ajout d’observations commerciales GNSS-RO de Spire dans le SGPE</h3>
+<p>Le mercredi 5 juillet 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations commerciales GNSS-RO (Global Navigation Satellite System Radio Occultation) de la constellation de nanosatellites LEMUR de Spire.</p>
+<h2 id="le-mercredi-8-mars-2023">Le mercredi 8 mars 2023</h2>
+<h3 id="correction-au-controle-de-qualite-des-observations-depaisseur-de-neige-provenant-des-stations-automatiques-canadiennes-dans-le-sgpe">Correction au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes dans le SGPE</h3>
+<p>Le mercredi 8 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.1 de son Système global de prévision d’ensemble (SGPE).</p>
+<p>Une modification au contrôle de qualité des observations d'épaisseur de neige provenant des stations automatiques canadiennes utilisée dans l'analyse de neige a été installée dans le SGPE.</p>
+<p>Des détails concernant la problématique, les changements apportés et les impacts sur l'analyse de neige et les performances du système sont disponibles <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/snowAnalysis_update_Spring2023_fr.pdf">via ce lien</a>.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="https://dd.meteo.gc.ca/doc/genots/2023/03/07/NOCN03_CWAO_071547___38426">via ce lien</a>.</p>
+<h2 id="le-mercredi-15-fevrier-2023">Le mercredi 15 février 2023</h2>
+<h3 id="ajout-des-observations-gpsro-du-satellite-sentinel-6a-dans-le-sgpe">Ajout des observations GPSRO du satellite Sentinel-6A dans le SGPE</h3>
+<p>Le mercredi 15 février 2023, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son Système global de prévision d’ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) du satellite Sentinel-6A.</p>
+<h2 id="le-mercredi-4-janvier-2023">Le mercredi 4 janvier 2023</h2>
+<h3 id="remplacement-des-vecteurs-vents-derives-a-partir-dimages-satellites-atmospheric-motion-wind-vector-de-goes-17-par-ceux-de-goes-18-dans-le-sgpe">Remplacement des vecteurs vents dérivés à partir d’images satellites (Atmospheric Motion wind Vector) de GOES-17 par ceux de GOES-18 dans le SGPE</h3>
+<p>Le mercredi 4 janvier 2023, à compter de la passe de 1800 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son Système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Remplacement des vecteurs vents dérivés à partir d’images satellites provenant du satellite GOES-17 par ceux de GOES-18.</p>
+<h2 id="le-jeudi-3-novembre-2022">Le jeudi 3 novembre 2022</h2>
+<h3 id="ajout-des-observations-de-surface-provenant-des-bateaux-en-format-bufr-dans-le-sgpe">Ajout des observations de surface provenant des bateaux en format BUFR dans le SGPE</h3>
+<p>Le jeudi 3 novembre 2022, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.1.0 de son Système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations de surface provenant des bateaux en format BUFR (Binary Universal Form for the Representation of meteorological data). Des observations TAC (Traditional Alphanumeric Codes) étaient déjà assimilées précédemment.</p>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-du-sgpe-a-la-version-710-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour du SGPE à la version 7.1.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-16-fevrier-2022">Le mercredi 16 février 2022</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-grace-c-et-grace-d-dans-le-sgpe">Ajout des observations GPSRO des satellites GRACE-C et GRACE-D dans le SGPE</h3>
+<p>Le mercredi 16 février 2022, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son Système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites GRACE-C et GRACE-D.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-du-systeme-global-de-prevision-densemble-sgpe-700-du-centre-meteorologique-canadien-cmc">Mise à jour du Système global de prévision d'ensemble (SGPE) 7.0.0 du Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 1er décembre 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 7.0.0 de son Système global de prévision d'ensemble (SGPE).</p>
+<p>Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_geps-700_f.pdf">est disponible ici</a>.</p>
+<p>La note officielle annonçant ce changement est disponible <a href="http://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">via ce lien</a>.</p>
+<p>Une note technique à ce sujet est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-700_f.pdf">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPE v7.0.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_7.0.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mardi-26-janvier-2021">Le mardi 26 janvier 2021</h2>
+<h3 id="remplacement-dobservations-de-radiances-satellitaires">Remplacement d’observations de radiances satellitaires</h3>
+<p>Le mardi 26 janvier 2021, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin de substituer les observations suivantes:</p>
+<ul>
+<li>Remplacement des radiances infrarouges de l’instrument IASI du satellite MetOp-2/A par celles de MetOp-3/C</li>
+</ul>
+<h2 id="le-mardi-8-decembre-2020">Le mardi 8 décembre 2020</h2>
+<h3 id="ajouts-dobservations-de-radiances-satellitaires">Ajouts d’observations de radiances satellitaires</h3>
+<p>Le mardi 8 décembre 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes dans son analyse 4DEnVar, tandis que l’analyse EnKF est demeurée inchangée:</p>
+<ul>
+<li>Ajout des radiances micro-ondes des instruments AMSUA et MHS du satellite MetOp-3/C</li>
+<li>Ajout des radiances infrarouges de l’instrument CrIS-FSR du satellite NPP</li>
+<li>Ajout des radiances infrarouges CSR (Clear-Sky Radiance) du satellite GOES-17</li>
+</ul>
+<h2 id="le-vendredi-26-juin-2020">Le vendredi 26 juin 2020</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-cosmic-ii">Ajout des observations GPSRO des satellites COSMIC-II</h3>
+<p>Le vendredi 26 juin 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites COSMIC II.</p>
+<h2 id="le-mercredi-29-avril-2020">Le mercredi 29 avril 2020</h2>
+<h3 id="ajout-des-observations-gpsro-des-satellites-paz-et-kompsat-5">Ajout des observations GPSRO des satellites PAZ et KOMPSAT-5</h3>
+<p>Le mercredi 29 avril 2020, à compter de la passe de 0000 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations GPSRO (Global Positioning System Radio Occultation) des satellites PAZ et KOMPSAT-5.</p>
+<h2 id="le-mardi-28-avril-2020">Le mardi 28 avril 2020</h2>
+<h3 id="ajout-des-observations-amv-du-satellite-metop-3c">Ajout des observations AMV du satellite MetOp-3/C</h3>
+<p>Le mardi 28 avril 2020, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du service météorologique du Canada (SMC) a procédé à une mise à jour de la version 6.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Seulement la composante de l'assimilation des données a été modifiée afin d'inclure les observations suivantes:</p>
+<p>Ajout des observations AMV (Atmospheric Motion Vector) du satellite MetOp-3/C.</p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jours-du-sgpe-a-la-version-610-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jours du SGPE à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mardi-23-juillet-2019">Le mardi 23 juillet 2019</h2>
+<h3 id="ajout-dobservations-satellitaires-dans-les-systemes-de-prevision-suivants-du-centre-meteorologique-canadien-cmc-le-systeme-global-de-prevision-densemble-sgpe">Ajout d'observations satellitaires dans les systèmes de prévision suivants du Centre météorologique canadien (CMC): Le système global de prévision d'ensemble (SGPE)</h3>
+<p>Le mardi 23 juillet 2019, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) a procédé à une mise à jour du système global de prévision d'ensemble (SGPE).</p>
+<p>Les composantes d'assimilation de données du SGPE ont été modifiées pour utiliser des observations supplémentaires dans sept familles d'observations. Toutes ces familles étaient déjà utilisées, ces ajouts observations visent principalement à augmenter la robustesse des systèmes d'assimilation.</p>
+<p>Les détails de cette mise à jour sont disponibles dans la copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2019/07/23/NOCN03_CWAO_231247___30255">via ce lien</a>.</p>
+<ul>
+<li>Le document des spécifications techniques pour le SGPE 6.0.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_6.0.0_f.pdf">via ce lien</a>.</li>
+</ul>
+<h2 id="le-mercredi-3-juillet-2019">Le mercredi 3 juillet 2019</h2>
+<h4 id="mise-a-jour-majeure-du-systeme-global-de-prevision-densemble-sgpe-version-600-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système global de prévision d'ensemble (SGPE version 6.0.0) du Centre météorologique canadien (CMC)</h4>
+<p>Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements à la composante composante de prévision :<ul>
+<li>Le modèle atmosphérique est mis à niveau vers la version GEM 4.8-LTS.16</li>
+<li>Le modèle atmosphérique est couplé avec le modèle océanique NEMO 3.6</li>
+<li>Les conditions initiales de l'océan et de la glace de mer proviennent de l'analyse du <a href="../../nwp_giops/changelog_giops_fr/">SGPOG (mise à jour à la version 3.0.0 au même moment)</a> du CMC</li>
+<li>Conditions initiales de la surface terrestre proviennent d'une pseudo-analyse de surface qui est réalisée à une résolution de 25 km et avec des forçages de GEM 4.8</li>
+</ul>
+</li>
+<li>Changements à la composante d'assimilation :<ul>
+<li>La présente version intègre une configuration de gain hybride-cepmmt, qui recentre tous les membres d'ensemble autour de la moyenne des analyses FKEN et 4DENVAR</li>
+<li>On utilise une nouvelle analyse de la température de surface de la mer et de couverture de la glace de mer</li>
+<li>Le nouveau FKEN assimile maintenant les données sur la dépression du point de rosée (t-td) obtenues par radiosonde jusqu'à 100 hpa au lieu de 200 hpa</li>
+</ul>
+</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2019/06/28/NOCN03_CWAO_281715___16589">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-600_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPE 6.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_6.0.0_f.pdf">est disponible ici</a>.</p>
+<h2 id="le-mardi-18-septembre-2018">Le mardi 18 septembre 2018</h2>
+<h4 id="mise-a-jour-majeure-du-systeme-global-de-prevision-densemble-sgpe-version-500-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système global de prévision d'ensemble (SGPE version 5.0.0) du Centre météorologique canadien (CMC)</h4>
+<p>Le mardi 18 septembre 2018, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son système global de prévision d'ensemble (SGPE). Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Changements communs entre la composante d'assimilation et prévision<ul>
+<li>Mise à jour de la version du modèle GEM de la version 4.6.10 à 4.8.lts13:</li>
+<li>La grille globale gaussienne 800x400 est remplaçée par une grille Yin-Yang grid à 39 km de résolution</li>
+<li>Les champs géophysiques sont maintenant générés par le logiciel genphysX au lieu de GENESIS.</li>
+</ul>
+</li>
+<li>Changements à la composante assimilation<ul>
+<li>Introduction de l'approche incrémentale 4D de mise à jour de l'analyse (IAU:Incremental Analysis Update).</li>
+<li>Le modèle a un toit plus élevé (de 2 hpa jusqu'a 0.1 hpa) avec 81 niveaux verticaux au lieu de 74.</li>
+<li>Ajout d'observations infrarouge (AIRS, IASI and CrIS).</li>
+<li>Amélioration du triage aux observations des vents satellitaires, des radiance, des aeronef et des diffusiomètre.</li>
+<li>Le modèle rapide de transfert radiatif pour l'assimilation de la radiance RTTOV a été mis à niveau de la version 10 à la version 12.</li>
+</ul>
+</li>
+<li>Changements à la composante Prévision uniquement<ul>
+<li>Le modèle a un toit plus élevé (de 2 hpa jusqu'a 0.1) avec 45 niveaux verticaux au lieu de 41.</li>
+<li>Une nouvelle méthode est utilisée pour générer les chaînes de Markov.</li>
+</ul>
+</li>
+<li>La période des reprévision est maintenant de 1998 à 2017 plutôt que 1995 à 2014.</li>
+<li>Les sorties sont dorénavant disponibles sur une grille "usager" avec une résolution de 25 km.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171242___10232">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-500_20180918_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du SGPE 5.0.0 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_5.0.0_f.pdf">est disponible ici</a>.</p>
+<h2 id="le-mardi-15-decembre-2015">Le mardi 15 décembre 2015</h2>
+<h4 id="mise-a-jour-du-systeme-global-de-prevision-densemble-sgpe-version-411-du-centre-meteorologique-canadien-cmc">Mise à jour du système global de prévision d'ensemble (SGPE version 4.1.1) du Centre météorologique canadien (CMC)</h4>
+<p>Le mardi 15 décembre 2015, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.1.1 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>La diffusion numérique du champ de la temperature potentielle est maintenant appliquées à chaque membre de l'ensemble (au lieu de seulement la moitie des membres).</li>
+<li>L'ajout d'un gradient d'amortissement qui limite la diffusion près des poles.</li>
+<li>Nouvelles statistiques d'erreurs d'observations pour les données de radiance et les observations de type "GPS-RO" (GPS Radio-Occultation).</li>
+<li>De nouvelles observations de radiance du Advanced Microwave Sounding Unit (ATMS).</li>
+<li>L'ajout d'observations GPS-RO des satellites TanDEM et GRACE-B.</li>
+<li>La période de reprévision est allongée de 18 à 20 ans.</li>
+</ul>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/14/NOCN03_CWAO_142245___00047">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_geps-411_20151215_f.pdf">est disponible via ce lien</a>.</p>
+<p>Le document des spécifications techniques du GEPS 4.1.1 <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_4.1.1_f.pdf">est disponible ici</a>.</p>
+<h2 id="le-mardi-18-novembre-2014">Le mardi 18 novembre 2014</h2>
+<h4 id="mise-a-jour-majeure-du-systeme-global-de-prevision-densemble-sgpe-version-400-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système global de prévision d'ensemble (SGPE version 4.0.0) du Centre météorologique canadien (CMC)</h4>
+<p>Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Résumé des éléments majeurs que comporte cette mise à jour :</p>
+<ul>
+<li>Couplage avec le 4D-EnVAR pour fournir les covariances d'erreur de prévisions</li>
+<li>La taille de l'ensemble du FKEn augmente de 192 à 256 membres</li>
+<li>La résolution horizontale du FKEn et de la prévision passe de 66km à 50 km</li>
+<li>Le pas de temps du modèle GEM passe de 20 à 15 minutes</li>
+<li>Le toit est plus haut à environ 1.45 hPa (1.78 hPa avant)</li>
+<li>Changements à la correction de biais des observations et à l'opérateur RTTOV</li>
+</ul>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141746___01238">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_geps-400_20141118_f.pdf">est disponible via ce lien</a>.</p>
+<p>Une note technique à propos des améliorations au système de re-prévisions <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/Tech_Note_GEPS400_reforecast_v1.1_E.pdf">est disponible via ce lien (en anglais seulement pour le moment)</a>.</p>
+<h2 id="le-mercredi-4-decembre-2013">Le mercredi 4 décembre 2013</h2>
+<h4 id="mise-a-jour-majeure-du-systeme-global-de-prevision-densemble-sgpe-version-310-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.1.0) du Centre météorologique canadien (CMC)</h4>
+<p>Le mercredi 4 décembre 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.1.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Dans cette nouvelle version du SGPE, une nouvelle version du modèle gem (de 4.4.1 vers 4.4.5) sera utilisée contenant des options additionnelles.  Ce changement de nature purement technique n’engendre aucune différence dans les prévisions du SGPE, mais permet un entretien plus facile du système et une plus grande cohérence avec les autres systèmes de prévisions du CMC.</p>
+<p>Du coté de l’assimilation, les données de radiances ATOV et les vents polaires avhrr d’un satellite additionnel, METOP-B, sont maintenant assimilés.  Également, il y a eu une mise à jour des coefficients spectroscopiques utilisés par le modèle de transfert radiatif RTTOV pour calculer les observations simulées des instruments AMSUB et MHS pour tous les satellites. Quoique l’impact de ces changements sur les prévisions soit neutre, ils permettent d’améliorer la  robustesse de la composante d’assimilation du système. </p>
+<p>Pour la prévision, le changement le plus important est dans le traitement de la température de surface de la mer (Tm). Dans le nouveau GEPS,  Tm  évoluera avec l’échéance temporelle de prévision en utilisant la méthode de la persistance de l’anomalie (écart avec la climatologie).  La valeur de Tm changera donc linéairement avec le temps (interpolation journalière) à partir de la valeur initiale de l’analyse du CMC vers la prochaine valeur de la climatologie de Tm à la moitié du mois, plus l'anomalie de Tm calculée initialement.</p>
+<p>Aussi, des prévisions mensuelles (32 jours) seront produites une fois par semaine chaque jeudi à 00z.  Bien que les données de ces prévisions seront disponibles avec cette mise en œuvre, l’introduction de produits spécifiques aux prévisions mensuelles n’est planifiée que pour plus tard en 2014.</p>
+<p>Un autre élément nouveau dans le SGPE 3.1.0 est l’ajout de prévisions d’ensemble historiques pour les derniers 18 ans qui seront produites à chaque semaine avec un ensemble réduit de 4 membres (au lieu de 20).  Les sorties de cette base de données de re-prévisions seront utilisées pour générer les statistiques du climat du modèle pour les prévisions mensuelles et,  éventuellement, pour calculer l’indice de prévision extrême (IPE, acronyme anglais EFI) ainsi que pour calibrer les prévisions probabilistes.</p>
+<p>La note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2013/12/03/NOCN03_CWAO_032255___01160">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_geps310_20131204_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mercredi-13-fevrier-2013">Le mercredi, 13 février 2013</h2>
+<h4 id="mise-a-jour-majeure-du-systeme-global-de-prevision-densemble-sgpe-version-300-du-centre-meteorologique-canadien-cmc">Mise à jour majeure du système global de prévision d'ensemble (SGPE version 3.0.0) du Centre météorologique canadien (CMC)</h4>
+<p>Le mercredi 13 février 2013, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son système global de prévision d'ensemble (SGPE).</p>
+<p>Des changements majeurs sont faits tant à la portion d'assimilation de données (filtre kalman d'ensemble ou FKEn) qu'à celle de pévision du système.</p>
+<p>Les changements communs aux composantes d'assimilation et de prévision incluent: nouvelle version du modèle GEM (soit la version version 4.4.1) avec une physique améliorée, réduction du pas de temps du modèle de 30 à 20 minutes, l'utilisation d'un filtre pour lisser le champ topographique, utilisation d'un seul schème de surface (ISBA) au lieu de deux.</p>
+<p>Les changements à la composante d'assimilation de données FKEn seulement incluent: augmentation avec l'altitude de la longueur de localisation horizontale au lieu d'etre une constante, la résolution horizontale a été accrue passant de 400x200 points (environ 100 km) vers 600x300 points (environ 66km), le nombre de niveaux verticaux est augmenté à 74 et le toit du modele demeure à 2 hPa, l'assimilation d'un plus grand volume d'observations de radiance AMSU: les données sont sélectionnées à chaque 150 km au lieu de chaque 250 km, amélioration de la correction de biais des observations, par le partage de celle venant de la nouvelle <a href="../../nwp_gdps/changelog_gdps_fr/">version 3.0.0 du système global de prévision déterministe (SGPD), mise en œuvre simultanement</a>.</p>
+<p>Les changements à la composante de prévisions seulement incluent: changement à la manière de perturber les tendances physiques pour les précipitations convectives, l'enveloppe latitudinale tropicale de limitation des perturbations est enlevée, les perturbations des tendances physiques sont appliquées à chaque niveau vertical sauf au dernier niveau près du sol, de la diffusion a été ajoutée dans le schème d'advection, une perturbation du coefficient de trainée du blocage orographique a été ajoutée, le facteur d'ajustement alpha du schème de rétroaction d'énergie cinétique stochastique est maintenant 0.8 pour mieux s'ajuster au nouveau pas de temps de 20 minutes.</p>
+<p>Des tests approfondis du SPGE-3.0.0 ont été faits lors de la phase finale de developpement (juillet-aout 2011 et fevrier-mars 2011) ainsi que durant une passe parallèle de novembre 2012 à janvier 2013. Le nouveau FKEn inclus dans cette implantation produit généralement des impacts positifs importants pour les analyses et les champs d'essai des vents et des températures pour presque toute la colonne atmosphérique.</p>
+<p>Le SGPE-3.0.0 apporte une amélioration majeure des prévisions de 16 jours des champs atmospheriques dans les regions extra-tropicales.</p>
+<p>Les prévisions atmosphériques du système régional de prévision d'ensemble (SRPE) bénéficieront grandement d'avoir de meilleures conditions initiales et aux frontières latérales de la part du SGPE-3.0.0.</p>
+<p>Les prévisions pour les échéances du jour 1 à 10 des champs atmospheriques du système de prevision d'ensemble nord-americain (SPENA) seront grandement améliorées par l'utilisation du SGPE-3.0.0.</p>
+<p>Grâace à des améliorations d'équipement ordinateur qui coincident avec cette implantation, certains produits du SGPE devraient maintenant être prêts entre dix (10) et cent vingt (120) minutes plus tôt que les temps de production actuels.</p>
+<p>La note officielle annonçant ce changement <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2013/02/08/NOCN03_CWAO_081505___00885">est disponible en cliquant ici</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_geps300_20130213_f.pdf">est disponible via ce lien</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

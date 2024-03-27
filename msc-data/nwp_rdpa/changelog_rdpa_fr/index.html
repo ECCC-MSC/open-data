@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Changelog rdpa fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chronologie-des-changements-apportes-a-lanalyse-regionale-deterministe-de-precipitation-capa-ardp" class="nav-link">Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-mai-2023" class="nav-link">Le mercredi 3 mai 2023</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-28-juin-2022" class="nav-link">Le mardi 28 juin 2022</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-1er-decembre-2021" class="nav-link">Le mercredi 1er décembre 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-9-juin-2021" class="nav-link">Le mercredi 9 juin 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-21-janvier-2020" class="nav-link">Le mardi 21 janvier 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-juillet-2019" class="nav-link">Le mercredi 3 juillet 2019</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-septembre-2018" class="nav-link">Le mardi 18 septembre, 2018</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-9-novembre-2016" class="nav-link">Le mercredi 9 novembre 2016</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-15-decembre-2015" class="nav-link">Le mardi 15 décembre 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-03-juin-2015" class="nav-link">Le mercredi 03 juin 2015</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-18-novembre-2014" class="nav-link">Le mardi 18 novembre 2014</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mardi-20-aout-2013" class="nav-link">Le mardi 20 août 2013</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#le-mercredi-3-octobre-2012" class="nav-link">Le mercredi 3 octobre 2012</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../changelog_rdpa_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_rdpa_fr/">ARDP</a> &gt; Changements au ARDP</p>
+<h1 id="chronologie-des-changements-apportes-a-lanalyse-regionale-deterministe-de-precipitation-capa-ardp">Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)</h1>
+<h2 id="le-mercredi-3-mai-2023">Le mercredi 3 mai 2023</h2>
+<h3 id="mise-a-jour-de-ardp-suite-au-remplacement-de-goes-17-par-goes-18">Mise à jour de ARDP suite au remplacement de GOES-17 par GOES-18</h3>
+<p>Depuis le 4 janvier 2023 à 18Z, le satellite GOES-18 a pris le relais du satellite GOES-17 en tant que satellite occidental opérationnel. Au sein du système opérationnel ARDP, les observations du satellite GOES sont utilisées pour effectuer une partie du post-traitement des estimés de précipitation radar. En particulier, les données GOES sont utilisées pour créer un masque de nuages afin de nettoyer les données radar.</p>
+<p>Depuis la disparition du satellite GOES-17 le 4 janvier, le système ARDP s'est appuyé sur le champ NT du modèle de prévision SRPD pour construire le masque de nuages. Cette solution de contingence a permis d'effectuer le post-traitement des estimés de précipitation radar, mais avec une fiabilité moindre qu'avec les données GOES.</p>
+<p>Afin d'optimiser de nouveau le post-traitement des estimés de précipitation radar, le système ARDP a été mis à jour le 3 mai 2023 pour assimiler les données GOES-18 en plus des données GOES-16 déjà assimilées.</p>
+<h2 id="le-mardi-28-juin-2022">Le mardi 28 juin 2022</h2>
+<h3 id="mise-a-jour-de-ardp-a-la-version-530-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jour de ARDP à la version 5.3.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-1er-decembre-2021">Le mercredi 1er décembre 2021</h2>
+<h3 id="mise-a-jour-vers-la-version-520-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-au-centre-meteorologique-canadien">Mise à jour vers la version 5.2.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien</h3>
+<p>Le mercredi 1er décembre 2021, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP (10km)) à la version 5.2.0.</p>
+<p>Les modifications incluses dans cette mise à jour sont résumées comme suit :</p>
+<ul>
+<li>CaPA-ARDP construit maintenant ses champs d'essai à partir du <a href="../../nwp_rdps/changelog_rdps_fr/">SRPD v8.0.0</a></li>
+<li>Ajout de 14 radars canadiens de bande S</li>
+<li>Assimilation des stations du réseau du Ministère des ressources naturelles de l'Ontario (MNR)</li>
+<li>Mise à jour de masques statiques de contrôle de qualité pour 8 radars</li>
+<li>Agrandissement de la grille afin de couvrir le domaine du <a href="../../nwp_rdps/readme_rdps_fr/">SRPD</a></li>
+</ul>
+<p>La note officielle annoncant cette implantation est disponible en cliquant <a href="https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___50159">via ce lien</a>.</p>
+<p>Une note technique avec plus de détails sur ces changements est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-520_f.pdf">via ce lien</a>.</p>
+<p>Le document des spécifications techniques du ARDP v5.2.0 est disponible <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_5.2.0_f.pdf">via ce lien</a>.</p>
+<h2 id="le-mercredi-9-juin-2021">Le mercredi 9 juin 2021</h2>
+<h3 id="mise-a-jour-vers-la-version-500-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-au-centre-meteorologique-canadien-cmc">Mise à jour vers la version 5.0.0 du système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 9 juin 2021, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'Analyse régionale déterministe de précipitation (CaPA-ARDP) à la version 5.0.0.</p>
+<p>Les modifications incluses dans cette mise à jour sont résumées comme suit :</p>
+<ul>
+<li>Assimilation de trois nouveaux réseaux d’observation de précipitations:<ul>
+<li>Manitoba Agriculture (MBAG),</li>
+<li>Grand River Conservation Authority (GRCA),</li>
+<li>Toronto River Conservation Authority (TRCA).</li>
+</ul>
+</li>
+<li>Changement dans la composite Radar:<ul>
+<li>5 radars Canadiens de type S-band remplacent les radars obsolètes de type C-band correspondants. </li>
+<li>Ajout de 29 nouveaux radars américains de type S-band. </li>
+</ul>
+</li>
+<li>Assimilation des données satellitaires “Integrated Multi-SatellitE Retrievals for GPM” (IMERG) dans l’analyse finale.</li>
+</ul>
+<p>Une copie de la note officielle annoncant cette implantation est disponible en cliquant sur le lien : <a href="https://dd.meteo.gc.ca/doc/genots/2021/06/08/NOCN03_CWAO_081408___31851">Annonce officielle de CaPA-ARDP 5.0.0</a></p>
+<p>Une note technique avec plus de détails sur ces changements est disponible via le lien : <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-500_f.pdf">Note technique du CaPA-ARDP 5.0.0</a></p>
+<h2 id="le-mardi-21-janvier-2020">Le mardi 21 janvier 2020</h2>
+<h3 id="mise-a-jours-de-capa-ardp-a-la-version-470-suite-a-la-nouvelle-infrastructure-de-calcul-haute-performance">Mise à jours de CaPA-ARDP à la version 4.7.0 suite à la nouvelle infrastructure de calcul haute performance.</h3>
+<p>Voir les détails via <a href="../../changelog_multisystems_fr/">ce lien</a>.</p>
+<h2 id="le-mercredi-3-juillet-2019">Le mercredi 3 juillet 2019</h2>
+<h3 id="mise-en-uvre-de-la-version-460-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-au-centre-meteorologique-canadien-cmc">Mise en œuvre de la version 4.6.0 du système d'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 3 juillet 2019, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) mettra à jour le système d'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP) en le faisant passer à la version 4.6.0.</p>
+<p>Résumé des changements :</p>
+<ul>
+<li>Branchement au <a href="../../nwp_rdps/changelog_rdps_fr/">SRPD v7.0.0</a> pour obtenir son champ d'essai.</li>
+<li>Utilisation des échéances 6 et 12 heures du champ prévu de la précipitation totale (PR) au lieu de 0 et 6 heures comme dans la version précédente.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2019/07/03/NOCN03_CWAO_031225___18175">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-18-septembre-2018">Le mardi 18 septembre, 2018</h2>
+<h3 id="mise-a-jour-vers-la-version-450-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-au-centre-meteorologique-canadien-cmc">Mise à jour vers la version 4.5.0 du système d'analyse régionale déterministe de précipitation (CaPA-ARDP) au Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 18 septembre 2018,  à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'analyses régionales déterministes de précipitation (CaPA-ARDP) à la version 4.5.0.</p>
+<p>Les modifications incluses dans cette mise à jour sont résumées comme suit :</p>
+<ul>
+<li>Les champs d'essai de ces analyses de précipitation sont issus de la nouvelle version du système implantée le 18 septembre 2018<ul>
+<li>CaPA-ARDP construit maintenant ses champs d'essai à partir du <a href="../../nwp_rdps/changelog_rdps_fr/">SRPD v6.0.0</a>.</li>
+</ul>
+</li>
+<li>Assimilation des observations du réseau CoCoRaHS. (CaPA-ARDP)</li>
+<li>Nouvelle analyse 24h valide à 06h00 UTC alignée avec la journée climatologique. (CaPA-ARDP)</li>
+<li>CaPA-ARDP v4.5.0 utilisera les échéances de 0 et 6 heure de précipitation totale au lieu des 6 et 12 heures. Ceci est rendu possible parce que le SRPD 6.0.0 peut maintenant générer des précipitations dès le début de l'intégration.</li>
+</ul>
+<p>Une copie de la note officielle annoncant cette implantation est disponible en cliquant sur le lien :</p>
+<ul>
+<li><a href="http://dd.meteo.gc.ca/doc/genots/2018/09/17/NOCN03_CWAO_171415___18584">Annonce officielle de CaPA-ARDP 4.5.0</a></li>
+</ul>
+<p>Une note technique avec plus de détails sur ces changements est disponible via le lien :</p>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-450_20180918_f.pdf">Note technique du CaPA-ARDP 4.5.0</a></li>
+</ul>
+<h2 id="le-mercredi-9-novembre-2016">Le mercredi 9 novembre 2016</h2>
+<h3 id="mise-a-jour-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-version-400-au-centre-meteorologique-canadien-cmc">Mise à jour du système d'analyse régionale déterministe de précipitation (CaPA-ARDP version 4.0.0) au Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 09 novembre 2016 à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'analyse régionale déterministe de précipitation (CaPA-ARDP) en remplaçant la version CaPA-ARDP-3.2.0 par la version 4.0.0. Cette nouvelle version assimile des observations de précipitation provenant de deux réseaux de stations nouvellement disponibles au CMC. Des pseudo-observations de 0 mm déduites du réseau METAR américain sont ajoutées au jeu d'observations soumis au système. Cette nouvelle version assimile aussi 33 radars météorologiques américains ajoutés à la présente composite des quantités de précipitation estimées (QPE). Toutes ces modifications permettent de produire une meilleure analyse de précipitation.</p>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2016/11/09/NOCN03_CWAO_091420___00557">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa-400_20161109_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-15-decembre-2015">Le mardi 15 décembre 2015</h2>
+<h3 id="mise-a-jour-du-systeme-danalyse-regionale-deterministe-de-precipitation-capa-ardp-version-320-au-centre-meteorologique-canadien-cmc">Mise à jour du système d'analyse régionale déterministe de précipitation (CaPA-ARDP version 3.2.0) au Centre météorologique canadien (CMC)</h3>
+<p>Le mardi 15 décembre 2015,  à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'analyse régionale déterministe de précipitation (CaPA-ARDP) en remplaçant la version CaPA-ARDP-3.1.0 par la version 3.2.0. Cette nouvelle version corrigera deux problèmes mineurs : Un au niveau du traitement des relevès de précipitation et un second qui affecte l'encodage en GRIB2 en ajoutant un masque pour bien représenter les zones "No-Data".</p>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2015/12/10/NOCN03_CWAO_102100___00779">est disponible via ce lien</a>.</p>
+<p>Un feuillet d'information à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_feuillet_information_20141118_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mercredi-03-juin-2015">Le mercredi 03 juin 2015</h2>
+<h3 id="mise-a-jour-du-systeme-danalyse-regionale-deterministe-de-precipitation-ardp-version-310-au-centre-meteorologique-canadien-cmc">Mise à jour du système d'analyse régionale déterministe de précipitation (ARDP version 3.1.0) au Centre météorologique canadien (CMC)</h3>
+<p>Le mercredi 03 juin 2015,  à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour son système d'analyse régionale déterministe de précipitation (ARDP) en remplaçant la version CaPA-ARDP-3.0.0 par la version 3.1.0. Cette nouvelle version favorisera principalement l'assimilation d'un nombre accru d'observations de précipitation solide.</p>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2015/06/03/NOCN03_CWAO_031904___00791">est disponible via ce lien</a>.</p>
+<p>Un feuillet d'information à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_feuillet_information_20141118_f.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-18-novembre-2014">Le mardi 18 novembre 2014</h2>
+<h3 id="mise-a-jour-majeure-du-systeme-danalyse-regionale-deterministe-de-precipitations-ardp-version-300-au-centre-meteorologique-canadien-cmc">Mise à jour majeure du système d'analyse régionale déterministe de précipitations (ARDP version 3.0.0) au Centre météorologique Canadien (CMC)</h3>
+<p>Le mardi 18 novembre 2014, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.0.0 de son système d'analyse régionale déterministe de précipitations (ARDP). Ci-dessous les changements les plus importants:</p>
+<ul>
+<li>Cette version assimilera une source importante d'information supplémentaire, soit les quantités de précipitation estimées (QPE) par les radars météorologiques canadiens.</li>
+<li>Le système régional déterministe de prévision (SRPD) qui fournit le champ d'essai sera aussi mis à jour pour passer à la version 4.0.0</li>
+<li>Le nombre d'analyses produites quotidiennement passera de 9 à 10.</li>
+</ul>
+<p>Une copie de la note officielle annonçant ce changement <a href="http://dd.meteo.gc.ca/doc/genots/2014/11/14/NOCN03_CWAO_141846___00708">est disponible via ce lien</a>.</p>
+<p>Un feuillet d'information à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_feuillet_information_20141118_fr.pdf">est disponible via ce lien</a>.</p>
+<h2 id="le-mardi-20-aout-2013">Le mardi 20 août 2013</h2>
+<h3 id="mise-en-place-de-la-version-24-de-capa-ardp">Mise en place de la version 2.4 de CaPA (ARDP)</h3>
+<h2 id="le-mercredi-3-octobre-2012">Le mercredi 3 octobre 2012</h2>
+<h3 id="ameliorations-au-systeme-danalyse-regionale-deterministe-de-precipitations-ardp-version-230-au-centre-meteorologique-canadien-cmc">Améliorations au système d'analyse régionale déterministe de précipitations (ARDP version 2.3.0) au Centre météorologique Canadien (CMC)</h3>
+<p>Le mercredi 3 octobre 2012, débutant avec la passe de 1200 UTC, le Centre météorologique Canadien (CMC) mettra à jour son système d'analyse régionale déterministe de précipitations avec la version 2.3.0 (ARDP-230).</p>
+<p>Cette mise à jour se fait conjointement avec celle du nouveau système régional de prévision déterministe version 3.0.0 qui fournira au système ARDP un champ d'essai à plus haute résolution. <a href="../../nwp_rdps/changelog_rdps_fr/">Des informations sur les changements au SRPD-300 sont disponibles via ce lien en cliquant ici</a>.</p>
+<p>Une copie de la note officielle annoncant ce changement <a href="http://dd.weatheroffice.ec.gc.ca/doc/genots/2012/10/02/NOCN03_CWAO_022155___00170">est disponible via ce lien</a>.</p>
+<p>Une note technique à ce sujet <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_rdpa_20121018_f.pdf">est disponible en cliquant ici</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

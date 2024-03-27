@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme hrdps datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#high-resolution-deterministic-prediction-system-hrdps-data-in-grib2-format" class="nav-link">High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-grid-specification" class="nav-link">Technical grid specification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#levels" class="nav-link">Levels</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_hrdps-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrdps_en/">HRDPS</a> &gt; HRDPS on MSC Datamart</p>
+<h1 id="high-resolution-deterministic-prediction-system-hrdps-data-in-grib2-format">High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format</h1>
+<p>The operationnal <a href="../readme_hrdps_en/">High Resolution Deterministic Prediction System or HRDPS</a> is a set of nested limited-area model (LAM) forecast grids from the non-hydrostatic version of the Global Environmental Multiscale (GEM) model with a 2.5 km horizontal grid spacing over one main Pan-Canadian region. The pilot model of the HRDPS is the Regional Deterministic Prediction System or RDPS (GEM Regional model). The fields in the HRDPS high resolution GRIB2 dataset are made available four times a day for the Pan-Canadian domain for a 48 hour forecast period.</p>
+<p>Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.</p>
+<p>As part of a modernization plan of the Meteorological Service of Canada (MSC), coherent <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf">weather elements on the grid</a> ("WEonG"), merging raw model outputs and post-processed with various diagnostic approaches, are also available to serve the different forecasting programs (public, marine, aviation, air quality, etc.).  Hourly concepts are produced from different algorithms using outputs from the pan-Canadian HRDPS. These data are available on a lat-lon rotated grid. </p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
+<p>The data can be accessed at the following URLs:</p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/model_hrdps/continental">https://dd.weather.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/</a></li>
+</ul>
+<p>where :</p>
+<ul>
+<li><strong>res</strong> : Horizontal resolution [2.5km]</li>
+<li><strong>HH</strong> : Model run start, in UTC [00, 06, 12, 18]</li>
+<li><strong>hhh</strong> : Forecast hour [000, 001, 002, ..., 048]</li>
+</ul>
+<p>A 24-hour history is stored in this directory.</p>
+<p>Note: Some weather element of the grid algorithms ("WEonG") need variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</p>
+<h2 id="technical-grid-specification">Technical grid specification</h2>
+<p><img alt="Image de la grille du domaine continental lat-lon tournée du SHRPD" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps/grille_hrdps_Rlatlon.png" /></p>
+<p>Table lists the values of various parameters of the rotated lat-lon continental grid.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>2540</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>1290</td>
+</tr>
+<tr>
+<td>resolution at 60° N</td>
+<td>2.5 km</td>
+</tr>
+<tr>
+<td>coordinate of the first grid point</td>
+<td>12°S 15°W</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong> : The <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">most recent versions of wgrib2</a> and <a href="https://gdal.org/">GDAL</a> support these rotated grids.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>The files have the following nomenclature :</p>
+<ul>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grid}{resolution}_PT{hhh}H.grib2</code></li>
+</ul>
+<p>where :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong> : Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong> : UTC run time [00, 06, 12, 18]</li>
+<li><strong>Z</strong> : Time zone (UTC hour)</li>
+<li><strong>MSC</strong> : Constant string indicating the Meteorological Service of Canada, source of data</li>
+<li><strong>HRDPS</strong> : Constant string indicating that the data is from the High Resolution Deterministic Prediction System</li>
+<li><strong>HRDPS-WEonG</strong> : Constant string indicating that the data is from the weather elements on the grid of the High Resolution Deterministic Prediction System</li>
+<li><strong>VAR</strong> : Variable type included in the file (ex: UGRD)</li>
+<li><strong>LVLTYPE-LVL</strong> : Vertical level type and level value [ex: Sfc for surface, EATM for the entire atmospheric column, DBS-10-20cm layer between 10 and 20cm under surface, AGL-10m for 10m above ground level]</li>
+<li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
+<li><strong>resolution</strong> : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions</li>
+<li><strong>PT{hhh}H</strong> : Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]</li>
+<li><strong>grib2</strong> : Constant string indicating the GRIB2 format is used</li>
+</ul>
+<p>Examples of filenames : </p>
+<ul>
+<li>20201123T00Z_MSC_HRDPS_GUST_AGL-10m_RLatLon0.0225_PT012H.grib2</li>
+<li>20220821T12Z_MSC_HRDPS-WEonG_VISIFG_Sfc_RLatLon0.0225_PT024H.grib2</li>
+</ul>
+<h2 id="levels">Levels</h2>
+<p>Vertical coverage of three-dimensional fields is provided by up to 31 isobaric levels.</p>
+<p>Isobaric levels (hPa): 1015, 1000, 985, 970, 950, 925, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 275, 250, 225, 200, 175, 150, 100, 50.</p>
+<p>Additional levels 30, 20 and 10 hPa for the variables TMP, HGT, UGRD, VGRD, WIND, WDIR, SPFH, RH and DEPR.</p>
+<p>Some fields receive limited three-dimensional coverage of 4 levels in the vertical.</p>
+<p>Isobaric levels (reduced coverage, hPa): 0850, 0700, 0500, 0250.</p>
+<p>Additional levels that may be applicable to a given parameter are :</p>
+<ul>
+<li>Surface</li>
+<li>Fixed height above ground</li>
+<li>Fixed height below ground</li>
+<li>Thickness between two isobaric levels</li>
+<li>Nominal top of the atmosphere</li>
+<li>Entire atmospheric column</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<p>This list contains both the parameters generated from HRDPS outputs and the weather elements on the grid (<em>HRDPS-WEonG</em>) calculated in post-processing.</p>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
+</script>
+
+<p>Note: The ventilation index (VI) is currently an experimental parameter.</p>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

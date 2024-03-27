@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme raqdps fw geomet en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#raqdps-fw-data-available-on-msc-geomet" class="nav-link">RAQDPS-FW data available on MSC GeoMet</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#access-to-the-geospatial-web-services" class="nav-link">Access to the geospatial web services</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#usage" class="nav-link">Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcement-mailing-list" class="nav-link">Announcement mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_raqdps-fw-geomet_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_raqdps-fw_en/">RAQDPS-FW</a> &gt; RAQDPS-FireWork on MSC GeoMet</p>
+<h1 id="raqdps-fw-data-available-on-msc-geomet">RAQDPS-FW data available on MSC GeoMet</h1>
+<p>MSC GeoMet provides access to data produced by the Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW) model. Users can build mobile apps, create interactive web maps, and display and animate RAQDPS-FW data using MSC GeoMet's various services.</p>
+<h2 id="access-to-the-geospatial-web-services">Access to the geospatial web services</h2>
+<p>The RAQDPS-FW data is <a href="../../../msc-geomet/readme_en/#available-ogc-standards">available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards</a>.</p>
+<p>Example of a web map configured to display the <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=RAQDPS-FW.EATM_PM2.5-DIFF">RAQDPS-FW.EATM_PM2.5-DIFF</a> layer served by MSC GeoMet:</p>
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RAQDPS-FW.EATM_PM2.5-DIFF&STYLE"/>
+  </div>
+</div>
+</div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="play-pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="step-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-forward" style="padding: 0rem 1rem"></i></button>
+  <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
+  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
+</div>
+
+<h2 id="usage">Usage</h2>
+<p>The <a href="../../../usage/readme_en/">usage overview page</a> provides generic information on using OGC services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the <a href="../../../usage/tutorials_en/">tutorials</a> and <a href="../../../msc-geomet/readme_en/#available-ogc-standards">technical documentation for MSC GeoMet geospatial web services</a> for detailed information.</p>
+<h3 id="available-layers">Available layers</h3>
+<p>To see which RAQDPS-FW layers are served via MSC GeoMet, consult the service's <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">WMS GetCapabilities document</a>. </p>
+<p>Desktop GIS software such as QGIS also makes it easy to <a href="../../../usage/tutorial_WMS_QGIS_en/">navigate the WMS Get Capabilities document as a layer tree</a>.</p>
+<h3 id="usage-tips">Usage tips</h3>
+<p>Retrieving the available model runs and forecast hours available for a given RAQDPS-FW layer:</p>
+<ul>
+<li>Users can use the <code>layer</code> query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the <code>&lt;Dimension&gt;</code> tags). Example: <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=RAQDPS-FW.EATM_PM2.5-DIFF">https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=RAQDPS-FW.EATM_PM2.5-DIFF</a></li>
+<li>Additional information is available in the <a href="../../../msc-geomet/wms_en#handling-time">handling time with WMS section</a></li>
+</ul>
+<p>WMS styles:</p>
+<ul>
+<li>In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response.</li>
+<li>Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the <a href="../../../msc-geomet/wms_en#handling-styles">SLD technical documentation</a>.</li>
+</ul>
+<p>Legends:</p>
+<ul>
+<li>Legends are available for every WMS style. Details are provided in <a href="../../../msc-geomet/wms_en#wms-getlegendgraphic">the WMS legend technical documentation</a>.</li>
+<li>Legend retrieval request example: <code>https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=RAQDPS-FW.EATM_PM2.5-DIFF&amp;format=image/png&amp;STYLE=FW-EATM-PM-DIFF_UGM2</code>.</li>
+</ul>
+<p><img alt="The RAQDPS-FW.EATM_PM2.5-DIFF [ug/m^2] WMS legend" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=RAQDPS-FW.EATM_PM2.5-DIFF&amp;format=image/png&amp;STYLE=FW-EATM-PM-DIFF_UGM2" /></p>
+<h2 id="support">Support</h2>
+<p>The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcement-mailing-list">Announcement mailing list</h2>
+<p>We encourage users to subscribe to the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.</p>
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+</style>
+
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/></p>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../../js/raqdps-fw_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../../js/raqdps-fw.js";
+    }
+    head.appendChild(js);
+</script></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

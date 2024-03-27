@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tutorial web maps en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#tutorial-building-interactive-web-maps-with-openlayers-and-leaflet" class="nav-link">Tutorial: building interactive web maps with OpenLayers and Leaflet</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#displaying-a-wms-layer" class="nav-link">Displaying a WMS layer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#building-interactive-popups-with-openlayers" class="nav-link">Building interactive popups with OpenLayers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#animating-time-enabled-wms-layers-with-openlayers" class="nav-link">Animating time-enabled WMS layers with OpenLayers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../tutorial_web-maps_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; <a href="../readme_en/">Usage overview</a> &gt; Create interactive web maps</p>
+<h1 id="tutorial-building-interactive-web-maps-with-openlayers-and-leaflet">Tutorial: building interactive web maps with OpenLayers and Leaflet</h1>
+<p><a href="../../msc-geomet/readme_en/">MSC GeoMet</a> geospatial web services are easily integrated into free and open source web mapping libraries such as <a href="https://openlayers.org/">OpenLayers</a> and <a href="https://leafletjs.com/">Leaflet</a> to build interactive maps for web pages and mobile apps. This tutorial will show you how to work with a Web Map Service (WMS) using both libraries. By the end of it, you will be able to display any MSC GeoMet WMS layer on an interactive map, query the layer for data, and animate time-enabled layers.</p>
+<ul>
+<li><a href="#displaying-a-wms-layer">Displaying a WMS layer</a><ul>
+<li><a href="#openlayers-example">OpenLayer example</a></li>
+<li><a href="#leaflet-example">Leaflet example</a></li>
+</ul>
+</li>
+<li><a href="#building-interactive-popups-with-openlayers">Building interactive popups with OpenLayers</a></li>
+<li><a href="#animating-time-enabled-wms-layers-with-openlayers">Animating time-enabled WMS layers with OpenLayers</a></li>
+</ul>
+<h2 id="displaying-a-wms-layer">Displaying a WMS layer</h2>
+<p>The following steps will show how to create a simple web map with OpenLayers and Leaflet. The map will display the Global Deterministic Prediction System (GDPS) air surface temperature data (<code>GPDS.ETA_TT</code>) over an <a href="https://www.openstreetmap.org/">OpenStreetMap</a> basemap. An example is given for the both OpenLayers and Leaflet.</p>
+<h3 id="openlayers-example">OpenLayers example</h3>
+<h4 id="html">HTML</h4>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  &lt;/style&gt;
+
+  &lt;title&gt;MSC GeoMet OpenLayers Example&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;MSC GeoMet OpenLayers Example&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+    &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>In order to use OpenLayers, we must import the required JS and CSS libraries. A <code>&lt;div&gt;</code> element is added in the body of our HTML document and assigned an <code>id</code> attribute with a value of <code>map</code>. The <code>id</code> value will be referred to in the JavaScript code in order to specify where to render the interactive map in the HTML document.
+A <code>&lt;script&gt;</code> tag is also included in the body of the HTML document, to link the JavaScript file to our HTML.
+A small amount of CSS is also added in the <code>&lt;head&gt;</code> tag in order to define the width and height of the map container.</p>
+<h4 id="javascript">JavaScript</h4>
+<p>With the HTML code now complete, let's turn our attention to writing the JavaScript code required to create our web map.</p>
+<pre><code class="language-javascript">/* Name of the file: tutorial.js */
+
+let layers_to_add = [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
+    }),
+    new ol.layer.Tile({
+      opacity: 0.4,
+      source: new ol.source.TileWMS({
+        url: 'https://geo.weather.gc.ca/geomet/',
+        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+        transition: 0
+      })
+    })
+  ];
+
+let map = new ol.Map({
+  target: 'map',
+  layers: layers_to_add,
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 0
+  })
+});
+</code></pre>
+<p>To keep things a little tidy, we create an <code>layers_to_add</code> array that contains a list of layers we want to add to our map. Each item is a layer that is linked to a source. In this case two layers are added to the map: (1) the OpenStreetMap layer for our basemap and (2) the GeoMet-Weather WMS for the Global Deterministic Prediction System (GDPS) air surface temperature layer. The GDPS air surface temperature source also has some additional properties:</p>
+<ul>
+<li><code>url</code>: WMS service URL</li>
+<li><code>params</code>: WMS request parameters. The <code>LAYERS</code> parameter is required</li>
+<li><code>transition</code>: duration of the opacity transition for rendering. We disable this here since we are setting an opacity and want it to be applied prior to displaying each tile</li>
+</ul>
+<p>Then we create a new variable called <code>map</code> and use the <code>ol.Map</code> constructor to define the map that will be rendered in our HTML document. In the object passed to the constructor, define a <code>target</code> for our map (e.g the <code>id</code> value of the HTML container, in this case <code>map</code>). The <code>layers_to_add</code> array is then passed to the <code>layers</code> property and the <code>ol.View</code> constructor is used to define the initial view of our map. In our case, we set the  initial zoom level and center the view on a specific lon/lat coordinate. </p>
+<p>Below is a a live example of the above code. Try modifying the JavaScript code to display another layer, changing the opacity, and the initial zoom and centre coordinates of the map.</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet Simple WMS  OpenLayers" src="https://codepen.io/eccc-msc/embed/jObyoPw?height=281&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/jObyoPw'>GeoMet Simple WMS  OpenLayers</a> by ECCC-MSC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="leaflet-example">Leaflet example</h3>
+<h4 id="html_1">HTML</h4>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  &lt;/style&gt;
+  &lt;title&gt;MSC GeoMet Simple WMS Leaflet Example&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;MSC GeoMet OpenLayers Example&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.9.3/dist/leaflet.css&quot; integrity=&quot;sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=&quot; crossorigin=&quot;&quot; /&gt;
+  &lt;script src=&quot;https://unpkg.com/leaflet@1.9.3/dist/leaflet.js&quot; integrity=&quot;sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=&quot; crossorigin=&quot;&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>First, in order to use Leaflet, we must import the required JS and CSS libraries. A <code>&lt;div&gt;</code> element is added in the body of our HTML document and assigned an <code>id</code> attribute with a value of <code>map</code>. The <code>id</code> value will be referred to in the JavaScript code in order to specify where to render the interactive map in the HTML document.
+A <code>&lt;script&gt;</code> tag is also included in the body of the HTML document, to link the JavaScript file to our HTML.
+A small amount of CSS is also added in the <code>&lt;head&gt;</code> tag in order to define the width and height of the map container.</p>
+<h4 id="javascript_1">JavaScript</h4>
+<p>With the HTML code now complete, let's turn our attention to writing the JavaScript code required to create our web map.</p>
+<pre><code class="language-javascript">/* Name of the file: tutorial.js */
+
+let map = L.map(&quot;map&quot;).setView([0,0], 3);
+
+let OpenStreetMap_Mapnik = L.tileLayer(
+  &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+  {
+    maxZoom: 19,
+    attribution:
+      '&amp;copy; &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors'
+  }
+).addTo(map);
+
+let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
+    layers: 'GDPS.ETA_TT',
+    version: '1.3.0',
+    opacity: 0.5,
+}).addTo(map);
+</code></pre>
+<p>The above code instantiates a <a href="https://leafletjs.com/reference-1.6.0.html#map">map object</a> using the Leaflet API and sets the initial map view with the <a href="https://leafletjs.com/reference-1.6.0.html#map-setview"><code>setView</code></a> method.</p>
+<p>Following the instantiation of the map, two layers are defined and added to the map instance. For each layer, a base URL is passed as well as parameters/options object used to define in further detail. For example, when instantiating the <code>wmsLayer</code> variable we define the opacity of the <code>GDPS.ETA_TT</code> layer and the WMS version to use when a request is made within the parameters object.</p>
+<p>See the live example below:</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet Simple WMS Leaflet" src="https://codepen.io/eccc-msc/embed/GRpragg?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/GRpragg'>GeoMet Simple WMS Leaflet</a> by ECCC-MSC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h2 id="building-interactive-popups-with-openlayers">Building interactive popups with OpenLayers</h2>
+<p>Let's now query a WMS layer to access the underlying data via a popup. Web Map Services (WMS) allow a user to make a <a href="../../msc-geomet/wms_en/#wms-getfeatureinfo">GetFeatureInfo</a> request to extract raw data associated to a coordinate on the map. Using the OpenLayers API, we will create a popup when a user clicks on the map that will display the coordinates of the clicked point and the corresponding data. This implementation is heavily inspired by the <a href="https://openlayers.org/en/latest/examples/popup.html?q=popup">popup</a> and <a href="https://openlayers.org/en/latest/examples/getfeatureinfo-tile.html?q=popup">WMS GetFeatureInfo</a> examples provided by OpenLayers.</p>
+<h3 id="html_2">HTML</h3>
+<p>Some additional HTML and CSS will need to be added to our initial HTML document.</p>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 800px;
+    }
+    /* Add in CSS required for popup*/
+    .ol-popup {
+      position: absolute;
+      background-color: white;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #cccccc;
+      bottom: 12px;
+      left: -50px;
+      min-width: 300px;
+    }
+
+    .ol-popup:after,
+    .ol-popup:before {
+      top: 100%;
+      border: solid transparent;
+      content: &quot; &quot;;
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .ol-popup:after {
+      border-top-color: white;
+      border-width: 10px;
+      left: 48px;
+      margin-left: -10px;
+    }
+
+    .ol-popup:before {
+      border-top-color: #cccccc;
+      border-width: 11px;
+      left: 48px;
+      margin-left: -11px;
+    }
+
+    .ol-popup-closer {
+      text-decoration: none;
+      position: absolute;
+      top: 5px;
+      right: 8px;
+    }
+
+    .ol-popup-closer:after {
+      content: &quot;✖&quot;;
+      color: #A9A9A9;
+    }
+  &lt;/style&gt;
+
+  &lt;title&gt;GeoMet OpenLayers Popup Example&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;GeoMet OpenLayers Popup Example&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;popup&quot; class=&quot;ol-popup&quot;&gt;
+    &lt;a href=&quot;#&quot; id=&quot;popup-closer&quot; class=&quot;ol-popup-closer&quot;&gt;&lt;/a&gt;
+    &lt;div id=&quot;popup-content&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>To create the popup, a new <code>div</code> element is added. Within this new element, an anchor tag is added to allow for closing the popup when displayed on the map. An empty <code>div</code> will contain the results of the GetFeatureInfo and the coordinates of the clicked map point. The additional CSS is used to define the look and feel of the popup as well as displaying/hiding the popup when the user clicks on the map.</p>
+<h3 id="javascript_2">JavaScript</h3>
+<pre><code class="language-javascript">/* Name of the file: tutorial.js */
+
+/**
+ * Elements that make up the popup.
+ */
+let container = document.getElementById(&quot;popup&quot;);
+let content = document.getElementById(&quot;popup-content&quot;);
+let closer = document.getElementById(&quot;popup-closer&quot;);
+
+/**
+ * Create an overlay to anchor the popup to the map.
+ */
+let overlay = new ol.Overlay({
+  element: container,
+  autoPan: true,
+  autoPanAnimation: {
+    duration: 250
+  }
+});
+
+/**
+ * Add a click handler to hide the popup.
+ * @return {boolean} Don't follow the href.
+ */
+closer.onclick = function () {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+
+let layers = [
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Tile({
+    opacity: 0.4,
+    source: new ol.source.TileWMS({
+      url: &quot;https://geo.weather.gc.ca/geomet&quot;,
+      params: { LAYERS: &quot;GDPS.ETA_TT&quot;, TILED: true },
+      transition: 0
+    })
+  })
+];
+
+let map = new ol.Map({
+  target: &quot;map&quot;,
+  layers: layers,
+  overlays: [overlay],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 0
+  })
+});
+
+map.on(&quot;singleclick&quot;, function (evt) {
+  let coordinate = evt.coordinate;
+  let xy_coordinates = ol.coordinate.toStringXY(
+    ol.proj.toLonLat(evt.coordinate),
+    4
+  );
+  let viewResolution = map.getView().getResolution();
+  let wms_source = map.getLayers().item(1).getSource();
+  let url = wms_source.getFeatureInfoUrl(
+    coordinate,
+    viewResolution,
+    &quot;EPSG:3857&quot;,
+    { INFO_FORMAT: &quot;application/json&quot; }
+  );
+  content.innerHTML = '&lt;p align=&quot;center&quot;&gt;Fetching data...&lt;/p&gt;';
+  overlay.setPosition(evt.coordinate);
+  if (url) {
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        content.innerHTML = `
+Air surface temperature&lt;br&gt;
+Coordinates (Lon/Lat): &lt;/&gt; &lt;code&gt;${xy_coordinates}&lt;/code&gt;&lt;br&gt;
+Value: &lt;/b&gt;&lt;code&gt;${Math.round(json.features[0].properties.value)} °C&lt;/code&gt;`;
+      });
+  }
+});
+</code></pre>
+<p>There are four main additions to the JavaScript code.</p>
+<p>First, we create references to the three HTML elements that are used by the popup( <code>container</code>, <code>content</code>, and <code>closer</code>). </p>
+<p>The <a href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html"><code>ol.Overlay()</code></a> constructor is then used to create a new overlay which will be used to anchor the popup to the map. Note that <code>container</code> (i.e. our popup) is associated to the <code>element</code> property of the object passed to the Overlay
+constructor. The overlay is then passed as an array item to the <code>overlays</code> property when constructing the map.</p>
+<p>An inline <code>onclick</code> event is then added to the <code>closer</code> (i.e the <code>&lt;a&gt;</code> tag in the popup), that sets the overlay position to <code>undefined</code>, effectively hiding the overlay when the anchor tag contained in the popup is clicked.</p>
+<p>Finally, our map will take advantage of the <a href="https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html#on"><code>ol.Map.on()</code></a> method to listen for <code>singleclick</code> events on the map. The callback function
+that is triggered by the event does the following:</p>
+<ul>
+<li>Fetches the coordinates of the clicked map point, then reprojects the coordinates to EPSG:4326 (WSG 84). The <code>ol.coordinate.toStringXY</code> method transforms the coordinates into a comma delimited string</li>
+<li>Retrieves the resolution of the map view</li>
+<li>Retrieves the source of the <code>GDPS.ETA_TT</code> layer</li>
+<li>Uses the <code>ol.source.TileWMS.getFeatureInfoUrl()</code> method to create a WMS GetFeatureInfo request. Passed as arguments are the click event coordinates, view resolution, map projection, and an object containing any GetFeatureInfo parameters (<code>INFO_FORMAT</code> should at least be provided)</li>
+<li>Sets the overlay position to the coordinates of the initial click event</li>
+<li>If the GetFeatureInfo URL is properly constructed, submits the GetFeatureInfo request using the JavaScript API. Upon receiving a response, the JSON is retrieved and the popup content is updated with additional HTML that includes the coordinates and the value property of the first GeoJSON feature retrieved by the GetFeatureInfo request</li>
+</ul>
+<p>See the live example below:</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet GetFeatureInfo OpenLayers English" src="https://codepen.io/eccc-msc/embed/yLOyvXa?height=300&theme-id=light&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/yLOyvXa'>GeoMet GetFeatureInfo OpenLayers English</a> by ECCC-MSC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+<h2 id="animating-time-enabled-wms-layers-with-openlayers">Animating time-enabled WMS layers with OpenLayers</h2>
+<p>A significant amount of data served by MSC GeoMet has one or more temporal dimensions. The following section will dive into how OpenLayers can help us visualize and animate the various time slices of such layers, in this case weather radar data, served as a WMS via GeoMet-Weather.</p>
+<p>Two GeoMet-Weather layers are used to create this animation: <code>RADAR_1KM_RRAI</code> and <code>RADAR_COVERAGE_RRAI.INV</code>. These layers are available over a moving 3-hour window, every 6 minutes.</p>
+<h3 id="html_3">HTML</h3>
+<pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;style&gt;
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  &lt;/style&gt;
+  &lt;title&gt;GeoMet Animated WMS Time OpenLayers Example&lt;/title&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;GeoMet OpenLayers Example&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;CCMEP&quot;&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css&quot; integrity=&quot;sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;link href=&quot;https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css&quot; type=&quot;text/css&quot;/&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;map&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;controller&quot; role=&quot;group&quot; aria-label=&quot;Animation controls&quot; style=&quot;background: #ececec; padding: 0.5rem;&quot;&gt;
+    &lt;button id=&quot;fast-backward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-fast-backward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;step-backward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-step-backward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;play-pause&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-play&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;step-forward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-step-forward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button id=&quot;fast-forward&quot; class=&quot;btn btn-primary btn-sm&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-fast-forward&quot; style=&quot;padding: 0rem 1rem&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;span id=&quot;info&quot; style=&quot;padding-left: 0.5rem;&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;./tutorial.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Much like the previous examples, the above HTML loads the OpenLayers JavaScript and CSS libraries, as well as the Bootstrap and Font Awesome CSS used to display the different buttons in the animation controller. An additional <code>#controller</code> container is created below the map and contains the fast-backward, step-backward, play-pause, step-forward, and fast-forward buttons, as well as a <code>&lt;span&gt;</code> element used to display the currently displayed timestep.</p>
+<h3 id="javascript_3">JavaScript</h3>
+<pre><code class="language-javascript">/* Name of the file: tutorial.js */
+
+const parser = new DOMParser();
+
+// Async function used to retrieve start and end time from RADAR_1KM_RRAI layer GetCapabilities document
+async function getRadarStartEndTime() {
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&amp;service=WMS&amp;request=GetCapabilities&amp;version=1.3.0&amp;LAYERS=RADAR_1KM_RRAI&amp;t=' + new Date().getTime())
+  let data = await response.text().then(
+    data =&gt; {
+      let xml = parser.parseFromString(data, 'text/xml');
+      let [start, end] = xml.getElementsByTagName('Dimension')[0].innerHTML.split('/');
+      let default_ = xml.getElementsByTagName('Dimension')[0].getAttribute('default');
+      return [start, end, default_];
+    }
+  )
+  return [new Date(data[0]), new Date(data[1]), new Date(data[2])];
+}
+
+let frameRate = 1.0;
+let animationId = null;
+let startTime = null;
+let endTime = null;
+let defaultTime = null;
+let currentTime = null;
+
+let layers = [
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: {'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true},
+      crossOrigin: 'Anonymous'
+    })
+  }),
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: {'LAYERS': 'RADAR_COVERAGE_RRAI.INV', 'TILED': true},
+      transition: 0,
+      crossOrigin: 'Anonymous'
+    })
+  })
+];
+
+let map = new ol.Map({
+  target: 'map',
+  layers: layers,
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-97, 57]),
+    zoom: 3
+  })
+});
+
+// If the image couldn't load due to a change in the time extent, get the new time extent
+layers[1].getSource().on(&quot;imageloaderror&quot;, () =&gt; {
+  getRadarStartEndTime().then(data =&gt; {
+    currentTime = startTime = data[0];
+    endTime = data[1];
+    defaultTime = data[2];
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  })
+});
+
+function updateLayers() {
+  layers[1].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+&quot;Z&quot;});
+  layers[2].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+&quot;Z&quot;});
+}
+
+function updateInfo() {
+  let el = document.getElementById('info');
+  el.innerHTML = `Time / Heure: ${currentTime.toISOString().substr(0, 16)+&quot;Z&quot;}`
+}
+
+// Disable/enable buttons depending on the state of the map
+function updateButtons() {
+  if (animationId !== null) {
+    disableButtons([fastBackwardButton, stepBackwardButton, stepForwardButton, fastForwardButton]);
+    enableButtons([playPauseButton]);
+  } else {
+    if (currentTime &lt;= startTime) {
+      disableButtons([fastBackwardButton, stepBackwardButton]);
+      enableButtons([playPauseButton, stepForwardButton, fastForwardButton]);
+    } else if (currentTime &gt;= endTime) {
+      disableButtons([playPauseButton, stepForwardButton, fastForwardButton]);
+      enableButtons([fastBackwardButton, stepBackwardButton]);
+    } else {
+      enableButtons([fastBackwardButton, stepBackwardButton, playPauseButton, stepForwardButton, fastForwardButton]);
+    }
+  }
+}
+
+function disableButtons(buttons) {
+  for (var i = 0; i &lt; buttons.length; i++){
+    buttons[i].disabled = true;
+  }
+}
+
+function enableButtons(buttons) {
+  for (var i = 0; i &lt; buttons.length; i++){
+    buttons[i].disabled = false;
+  }
+}
+
+function setTime() {
+  if (currentTime &gt;= endTime) {
+    currentTime = endTime;
+    togglePlayPause();
+  } else {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() + 6);
+  }
+  updateLayers();
+  updateInfo();
+}
+
+function togglePlayPause() {
+  if (animationId !== null) {
+    playPauseButton.firstElementChild.className = &quot;fa fa-play&quot;
+    window.clearInterval(animationId);
+    animationId = null;
+    updateButtons();
+  } else {
+    playPauseButton.firstElementChild.className = &quot;fa fa-pause&quot;
+    animationId = window.setInterval(setTime, 1000 / frameRate);
+    updateButtons();
+  }
+}
+
+function fastBackward() {
+  if (animationId == null &amp;&amp; currentTime &gt; startTime) {
+    getRadarStartEndTime().then(data =&gt; {
+      currentTime = startTime = data[0];
+      endTime = data[1];
+      defaultTime = data[2];
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    })
+  }
+}
+
+function stepBackward() {
+  if (animationId == null &amp;&amp; currentTime &gt; startTime) {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() - 6);
+    if (currentTime.getTime() === startTime.getTime()) {
+      getRadarStartEndTime().then(data =&gt; {
+        currentTime = startTime = data[0];
+        endTime = data[1];
+        defaultTime = data[2];
+        updateLayers();
+        updateInfo();
+        updateButtons();
+      })
+    }
+    else {
+      updateLayers();
+      updateInfo();
+      updateButtons();
+    }
+  }
+}
+
+function stepForward() {
+  if (animationId == null &amp;&amp; currentTime &lt; endTime) {
+    currentTime = new Date(currentTime);
+    currentTime.setUTCMinutes(currentTime.getUTCMinutes() + 6);
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  }
+}
+
+function fastForward() {
+  if (animationId == null &amp;&amp; currentTime &lt; endTime) {
+    currentTime = new Date(endTime);
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  }
+}
+
+let fastBackwardButton = document.getElementById('fast-backward');
+fastBackwardButton.addEventListener('click', fastBackward, false);
+
+let stepBackwardButton = document.getElementById('step-backward');
+stepBackwardButton.addEventListener('click', stepBackward, false);
+
+let playPauseButton = document.getElementById('play-pause');
+playPauseButton.addEventListener('click', togglePlayPause, false);
+
+let stepForwardButton = document.getElementById('step-forward');
+stepForwardButton.addEventListener('click', stepForward, false);
+
+let fastForwardButton = document.getElementById('fast-forward');
+fastForwardButton.addEventListener('click', fastForward, false);
+
+// Initialize the map
+function initMap() {
+  getRadarStartEndTime().then(data =&gt; {
+    startTime = data[0];
+    endTime = data[1];
+    currentTime = defaultTime = data[2];
+    updateLayers();
+    updateInfo();
+    updateButtons();
+  })
+}
+initMap();
+</code></pre>
+<p>In the JavaScript code, an async function is created to retrieve the start, end, and default time currently available for the weather radar data (<code>RADAR_1KM_RRAI</code>). When a response is received, the <code>DOMParser()</code> is used to retrieve the content of the GetCapabilities <code>&lt;Dimension&gt;</code> tag and returns an array containing three datetime objects representing the start, end, and default time of the available weather radar data.</p>
+<p>Much like the other OpenLayers above, an array of layers is defined and passed to the <code>ol.Map</code> constructor.</p>
+<p>The time extent (i.e start and end time) of the layers is regularly updated, which means some images will not be able to load since data for an expired timestep is no longer available. This situation is identified when a layer fires an <code>imageloaderror</code> event, and the async function is called once again to retrieve the updated start, end, and default time. The async function is also called whenever the user goes to the start of the time extent (via the buttons <code>fastBackward()</code> and <code>stepBackward()</code>), in order to refresh the time extent. </p>
+<p>The <code>updateButtons()</code> function modifies the HTML tags of the buttons in order to deactivate/reactivate them depending on the state of the map. As an example, the fast-backward, step-backward, step-forward, and fast-forward buttons are deactivated whenever the map animation is active.</p>
+<p>The <code>setTime()</code> function is used to increase the current time by 6 minutes, in order to retrieve the next available timestep. If the current time is greater than or equal to the retrieved end time, the <code>togglePlayPause()</code> function is called to stop the animation.</p>
+<p>The <code>togglePlayPause()</code> function allows to switch between the play and pause buttons depending on the state of the map. When the map animation is active, the button shows a pause sign which allows the user to deactivate the animation. When the map animation is inactive, the button shows a play sign which, when pressed, calls the <code>setTime()</code> function at a regular interval in order to constantly increase the timestep.</p>
+<p>The <code>fastBackward()</code>, <code>stepBackward()</code>, <code>stepForward()</code>, and <code>fastForward()</code> functions respectively allow the user to go the start of the time extent, to the previous timestep, to the next timestep, and to the end of the time extent. They all call the <code>updateLayers()</code>, <code>updateInfo()</code>, and <code>updateButtons()</code> functions which updates the layers and the displayed timestep, as well as deactivates the appropriate buttons. The buttons in the HTML are then associated to their respective function with click Event Listeners.</p>
+<p>Finally, the map is initialized by calling <code>getRadarStartEndTime()</code> to set the startTime, endTime, defaultTime, and currentTime variables.</p>
+<p>See the live example below:</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet WMS Time Openlayers Example" src="https://codepen.io/eccc-msc/embed/NWGdVRp?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
+  See the Pen <a href='https://codepen.io/eccc-msc/pen/NWGdVRp'>GeoMet WMS Time Openlayers Example</a> by ECCC-MSC
+  (<a href='https://codepen.io/eccc-msc'>@eccc-msc</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>
