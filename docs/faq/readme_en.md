@@ -143,11 +143,15 @@ Finally, we strongly recommend to subscribe to our mailing lists [dd_info](https
 
 ## How to be informed about problems with model data production ?
 
-Occasionally, NWP model data are late or even absent from our data dissemination services. To find out if this delay or absence is due to a production problem, you can consult the AACN01 CWAO bulletins.  These are bulletins issued by the CCPEC as required to inform MSC offices and other clients of any problems that may disrupt or delay the issuance and/or distribution of operational products.
+Occasionally, NWP model data are late or even absent from our data dissemination services. To find out if this delay or absence is due to a production problem, you can consult the AACN01 CWAO bulletins. These are bulletins issued by the CCPEC as required to inform MSC offices and other clients of any problems that may disrupt or delay the issuance and/or distribution of operational products.
 
-To view the latest AACN01 CWAO bulletins, you can use the [Script Search Utility](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) provided by ECCC. [Example to obtain the current AACN01 bulletins](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01). For a specific day, you can refine your search. [Example to get the information for November 26, 2022](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&location=CN01&day=26&month=11&year=2022).
+To consult the latest AACN01 CWAO bulletins, you can make a request using our [MSC GeoMet-OGC-API](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/#services) web services.
 
-There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at ec.dps-client.ec@canada.ca and we will add you to the mailing list.
+Here is an example of a request to obtain all the AACN01 bulletins issued for a given date (to be adjusted according to the date of interest):
+
+https://api.weather.gc.ca/collections/bulletins-realtime/items?q=*AACN01*&f=json&datetime=2023-11-18T09:55
+
+There is also a mailing list for AACN01 bulletins. If you are interested, please contact us at dps-client@ec.gc.ca and we will add you to the mailing list.
 
 ## Why not produce just one big GRIB file with all the variables ?
 
