@@ -91,6 +91,8 @@ Here are some specific examples to receive alerts, citypage_weather data for one
     * alerts: sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
     * citypage_weather: sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
     * rdps_grib: sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
+    * bulletins : sr_subscribe [amqp_aacn01.conf](./amqp_aacn01.conf) start/stop/status
+
 * The logs are available under ~/.cache/sarra/log
 * To make a cleanup, use: sr_subscribe configname.conf cleanup
 
