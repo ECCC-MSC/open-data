@@ -58,7 +58,7 @@ Regarding the user guide, please consult :
 [https://metpx.github.io/sarracenia/How2Guides/subscriber.html](https://metpx.github.io/sarracenia/How2Guides/subscriber.html)
 
 Several examples of configuration files are also available to users, see:
-[https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe)
+[https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe)
 
 __NOTE__:
 
