@@ -54,7 +54,7 @@ Le guide d’installation peut être trouvé à cette adresse : [https://metpx.g
 
 Quant au guide d’utilisation, il est disponible ici : [https://metpx.github.io/sarracenia/How2Guides/subscriber.html](https://metpx.github.io/sarracenia/How2Guides/subscriber.html)
 
-Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe)
+Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe)
 
 __NOTES__:
 
