@@ -6,12 +6,36 @@
 
 # Data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 6 (CMIP6)  
 
-The Global climate model scenarios dataset is based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 6 (CMIP6) are provided. Multi-model ensembles of modelled output (actual value) and projected change (anomaly) are available for historical simulations and three emission scenarios at a 1x1 degree grid resolution. Projected changes are expressed as anomalies according to a historical reference period of 1995-2014. 
+Multi-model ensembles for a suite of variables based on projections from Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate models (GCMs) are available for 1850-2100 on a common 1x1 degree global grid.
+
+Climate projections vary across GCMs due to differences in the representation and approximation of earth systems and processes, and natural variability and uncertainty regarding future climate drivers. Thus, there is no single best climate model. Rather, using results from an ensemble of models (e.g., taking the average) is best practice, as an ensemble takes model uncertainty into account and provides more reliable climate projections.
+
+Provided on Canadian Climate Data and Scenarios (CCDS) are four types of products based on the CMIP6 multi-model ensembles: time series datasets and plots, maps and associated datasets, tabular datasets, and global gridded datasets. Monthly, seasonal, and annual ensembles are available for up to six Shared Socioeconomic Pathways (SSPs) (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP4-6.0, and SSP5-8.5), four future periods (near-term (2021-2040), mid-term (2041-2060 and 2061-2080), end of century (2081-2100)), and up to five percentiles (5th, 25th, 50th (median), 75th, and 95th) of the CMIP6 ensemble distribution.
+
+The number of models in each ensemble differs according to model availability for each SSP and variable, see the model list resource for details on the models included in each ensemble. The majority of products show projected changes expressed as anomalies according to a historical reference period of 1995-2014. The products provided include global, national, and provincial/territorial datasets and graphics. For more information on the CMIP6 multi-model ensembles, see the technical documentation resource. 
 
 ## Access
 ### How to access the data
 
-This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server.
+This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+
+* [Data available on the GeoMet-Climate geospatial web services](readme_cmip6-geomet_en.md)
+* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
+    * [CMIP6 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:absolute)
+    * [CMIP6 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:absolute)
+    * [CMIP6 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:absolute)
+    * [CMIP6 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:anomaly)
+    * [CMIP6 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:anomaly)
+    * [CMIP6 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:anomaly)
+    * [CMIP6 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:P20Y-Avg)
+    * [CMIP6 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:P20Y-Avg)
+    * [CMIP6 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:absolute)
+    * [CMIP6 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip6:historical:seasonal:absolute)
+    * [CMIP6 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:absolute)
+    * [CMIP6 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:anomaly)
+    * [CMIP6 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
+    * [CMIP6 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:anomaly)
+* [NetCDF data available on the MSC Datamart](readme_cmip6-datamart_en.md)
 
 ### Licence
 
@@ -21,10 +45,17 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
+### Metadata
+
+* The [metadata of the projected temperature change based on CMIP6 multi-model ensembles are available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
+
 ## Technical documentation
 
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip6/CMIP6_GCM_Tech_Docs_EN.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip6/CMIP6_Technical_Documentation_en.pdf)
 * [Information on Representative Concentration Pathways](http://climate-scenarios.canada.ca/?page=scen-rcp )
+* [Introduction to climate scenarios](http://climate-scenarios.canada.ca/?page=cmip6-scenarios)
+* This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
+
 
 <style>
   #legend-img {
