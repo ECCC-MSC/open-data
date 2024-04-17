@@ -21,7 +21,7 @@ where:
 * __HH__ : Analysis validity time, in UTC [00, 01, 02, ..., 22, 23]
 
 
-A history of 24 days of forecast is kept in this directory.
+An history of 24 hours of forecast is kept in this directory.
 
 ## Technical specification of the grid
 
