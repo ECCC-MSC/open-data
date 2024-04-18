@@ -4,6 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > CMIP6
 
+# Données et produits de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6) 
 
 Des ensembles multimodèles pour une série de variables basées sur les projections des modèles climatiques mondiaux (MCM) de la phase 6 du Projet d’intercomparaison des modèles couplés (CMIP6) sont disponibles pour 1850 à 2100 sur une grille mondiale commune de 1 x 1 degré.
 
@@ -19,7 +20,9 @@ Le nombre de modèles dans chaque ensemble diffère selon la disponibilité des 
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-   * [CMIP6 - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:absolute)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_cmip6-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
+    * [CMIP6 - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:absolute)
     * [CMIP6 - Saisonnière projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:seasonal:absolute)
     * [CMIP6 - Mensuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:monthly:absolute)
     * [CMIP6 - Anomalie annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:anomaly)
@@ -36,6 +39,7 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_cmip6-datamart_fr.md)
 
 
+
 ### Licence
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
@@ -49,7 +53,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip6/MIP6_Technical_Documentation_fr.pdf)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip6/CMIP6_Technical_Documentation_fr.pdf)
 * [Informations sur les profils représentatifs d’évolution de concentration](http://scenarios-climatiques.canada.ca/index.php?page=scen-rcp)
 * [Introduction aux scénarios climatiques](http://scenarios-climatiques.canada.ca/index.php?page=cmip6-scenarios)
 * Ces données sont aussi disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)
