@@ -1,4 +1,4 @@
-[In English](readme_cmip5_en.md)
+[In English](readme_cmip6_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 

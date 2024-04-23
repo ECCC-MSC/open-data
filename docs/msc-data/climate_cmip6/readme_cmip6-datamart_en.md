@@ -1,4 +1,4 @@
-[En français](readme_cmip5-datamart_fr.md)
+[En français](readme_cmip6-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,12 +6,6 @@
 
 # ClimMulti-model ensembles for a suite of variables based on projections from Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate models (GCMs) are available for 1850-2100 on a common 1x1 degree global grid.
 
-Climate projections vary across GCMs due to differences in the representation and approximation of earth systems and processes, and natural variability and uncertainty regarding future climate drivers. Thus, there is no single best climate model. Rather, using results from an ensemble of models (e.g., taking the average) is best practice, as an ensemble takes model uncertainty into account and provides more reliable climate projections.
-
-Provided on Canadian Climate Data and Scenarios (CCDS) are four types of products based on the CMIP6 multi-model ensembles: time series datasets and plots, maps and associated datasets, tabular datasets, and global gridded datasets. Monthly, seasonal, and annual ensembles are available for up to six Shared Socioeconomic Pathways (SSPs) (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP4-6.0, and SSP5-8.5), four future periods (near-term (2021-2040), mid-term (2041-2060 and 2061-2080), end of century (2081-2100)), and up to five percentiles (5th, 25th, 50th (median), 75th, and 95th) of the CMIP6 ensemble distribution.
-
-The number of models in each ensemble differs according to model availability for each SSP and variable, see the model list resource for details on the models included in each ensemble. The majority of products show projected changes expressed as anomalies according to a historical reference period of 1995-2014. The products provided include global, national, and provincial/territorial datasets and graphics. For more information on the CMIP6 multi-model ensembles, see the technical documentation resource. 
-ate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 6 (CMIP6) in NetCDF format
 
 Multi-model ensembles of modelled output and projected change are available for historical simulations and three emission scenarios, RCP2.6, RCP4.5 and RCP8.5, at a 1x1 degree grid resolution. Projected changes are expressed as anomalies with respect to the reference period of 1986-2005. 
 

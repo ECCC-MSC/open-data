@@ -1,16 +1,10 @@
-[In English](readme_cmip5-datamart_en.md)
+[In English](readme_cmip6-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [CMIP6](readme_cmip6_fr.md) > CMIP6 sur le Datamart du SMC
 
 # Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6) en format NetCDF
-
-Des ensembles multimodèles pour une série de variables basées sur les projections des modèles climatiques mondiaux (MCM) de la phase 6 du Projet d’intercomparaison des modèles couplés (CMIP6) sont disponibles pour 1850 à 2100 sur une grille mondiale commune de 1 x 1 degré.
-
-Les projections climatiques varient entre les MCM en raison des différences dans la représentation et l’approximation des systèmes et des processus terrestres, ainsi que de la variabilité naturelle et de l’incertitude concernant les futurs facteurs climatiques. Ainsi, aucun modèle climatique n’est meilleur que les autres. À la place, l’utilisation des résultats d’un ensemble de modèles (p. ex. en utilisant la moyenne) constitue une pratique exemplaire puisqu’un ensemble tient compte de l’incertitude dans les projections des modèles et offre des projections climatiques plus fiables.
-
-Le site Données et scénarios climatiques canadiens (DSCC) offre quatre types de produits basés sur les ensembles multimodèles du CMIP6 : des ensembles de données et des graphiques de séries chronologiques, des cartes et des ensembles de données connexes, des ensembles de données tabulaires et des ensembles de données maillées à l’échelle mondiale. Des ensembles mensuels, saisonniers et annuels sont disponibles pour un maximum de six profils socioéconomiques partagés (SSP) [SSP1 1.9, SSP1 2.6, SSP2 4.5, SSP3 7.0, SSP4 6.0 et SSP5 8. 5], quatre périodes futures (court terme [2021-2040], moyen terme [2041-2060 et 2061-2080], fin du siècle [2081-2100]) et un maximum de cinq percentiles (5e, 25e, 50e [médiane], 75e et 95e) de la distribution de l’ensemble du CMIP6.
 
 Le nombre de modèles dans chaque ensemble diffère selon la disponibilité des modèles pour chaque SSP et variable; consultez la liste des modèles pour plus de détails sur les modèles inclus dans chaque ensemble. La majorité des produits indiquent les changements prévus sous forme d’anomalies selon une période de référence historique (1995 à 2014). Les produits fournis comprennent des ensembles de données et des graphiques à l’échelle mondiale, nationale, provinciale et territoriale. Pour de plus amples renseignements sur les ensembles multimodèles du CMIP6, veuillez consulter la documentation technique.
 
