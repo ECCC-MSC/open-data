@@ -1,10 +1,11 @@
-[En français](readme_cmip5-datamart_fr.md)
+[En français](readme_cmip6-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CMIP5](readme_cmip5_fr.md) > CMIP5 on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CMIP6](readme_cmip5_fr.md) > CMIP6 on MSC Datamart
 
-# Climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5) in NetCDF format
+# ClimMulti-model ensembles for a suite of variables based on projections from Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate models (GCMs) are available for 1850-2100 on a common 1x1 degree global grid.
+
 
 Multi-model ensembles of modelled output and projected change are available for historical simulations and three emission scenarios, RCP2.6, RCP4.5 and RCP8.5, at a 1x1 degree grid resolution. Projected changes are expressed as anomalies with respect to the reference period of 1986-2005. 
 
@@ -16,12 +17,12 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/annual)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/seasonal)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)                                                                
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)                                                                     
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/annual/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/annual)
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/seasonal)
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip6/netcdf/historical/monthly_ens/absolute)
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios)                                                                
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios)                                                                     
+* [https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip6/netcdf/scenarios)
 
 where :
 
@@ -36,12 +37,12 @@ where :
 
 NOTE : ALL HOURS ARE IN UTC.
 
-* CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
-* CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP6_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP6_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 
 where:
 
-* __CMIP5__ : Constant string indicating Coupled Model Intercomparison Project Phase5 global climate model ensemble datasets.
+* __CMIP6__ : Constant string indicating Coupled Model Intercomparison Project Phase6 global climate model ensemble datasets.
 * __hist__ : Constant string indicating historical simulations.
 * __rcpx.y__ : Type of Representative Concentration Pathways (emission scenarios), taking one of the values : [rcp2.6, rcp4.5, rcp8.5].
 * __TemporalResolution__ : Time period, taking one of the values : [annual, monthly, DJF, MAM, JJA, SON].
@@ -53,27 +54,27 @@ where:
 * __TimeStep__ : Time step, taking one of the values : [P1Y, P1M]; P1Y stand for 1 year time step and P1M stands for 1 month time step.
 * __nc__ : Constant string indicating the NetCDF format.
 
-Example : CMIP5_rcp4.5_DJF_2021-2040_latlon1x1_PCP_pctl50_P1Y.nc
+Example : CMIP6_rcp4.5_DJF_2021-2040_latlon1x1_PCP_pctl50_P1Y.nc
 
-The file represents the 50th percentile of the CMIP5 multi-model ensemble of projected relative changes in mean precipitation (i.e., anomalies) with respect to the reference period of 1986-2005, in winter (3 month average across December, January, February), expressed as percentage change. The bands in the NetCDF file are yearly time steps.
+The file represents the 50th percentile of the CMIP6 multi-model ensemble of projected relative changes in mean precipitation (i.e., anomalies) with respect to the reference period of 1986-2005, in winter (3 month average across December, January, February), expressed as percentage change. The bands in the NetCDF file are yearly time steps.
 
 
 ## List of variables
 
-The available variables and units for the CMIP5 datasets on the MSC Datamart are :
+The available variables and units for the CMIP6 datasets on the MSC Datamart are :
 
-* CMIP5 multi-model ensembles of mean precipitation projections (mm/day)
-* CMIP5 multi-model ensembles of sea ice concentration projections (percentage, %, of grid cell area)
-* CMIP5 multi-model ensembles of sea ice thickness projections (m)
-* CMIP5 multi-model ensembles of snow depth projections (m)
-* CMIP5 multi-model ensembles of surface wind speed projections (m/s)
-* CMIP5 multi-model ensembles of mean temperature projections (°C)
-* Projected mean precipitation change based on CMIP5 multi-model ensembles (%)
-* Projected sea ice concentration change based on CMIP5 multi-model ensembles (%) 
-* Projected sea ice thickness change based on CMIP5 multi-model ensembles (%)
-* Projected snow depth change based on CMIP5 multi-model ensembles (%)
-* Projected surface wind speed change based on CMIP5 multi-model ensembles (%)
-* Projected mean temperature change based on CMIP5 multi-model ensembles (°C)
+* CMIP6 multi-model ensembles of mean precipitation projections (mm/day)
+* CMIP6 multi-model ensembles of sea ice concentration projections (percentage, %, of grid cell area)
+* CMIP6 multi-model ensembles of sea ice thickness projections (m)
+* CMIP6 multi-model ensembles of snow depth projections (m)
+* CMIP6 multi-model ensembles of surface wind speed projections (m/s)
+* CMIP6 multi-model ensembles of mean temperature projections (°C)
+* Projected mean precipitation change based on CMIP6 multi-model ensembles (%)
+* Projected sea ice concentration change based on CMIP6 multi-model ensembles (%) 
+* Projected sea ice thickness change based on CMIP6 multi-model ensembles (%)
+* Projected snow depth change based on CMIP6 multi-model ensembles (%)
+* Projected surface wind speed change based on CMIP6 multi-model ensembles (%)
+* Projected mean temperature change based on CMIP6 multi-model ensembles (°C)
 
 ## Support
 

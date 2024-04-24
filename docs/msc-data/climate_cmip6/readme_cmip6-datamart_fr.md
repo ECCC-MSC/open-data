@@ -1,12 +1,14 @@
-[In English](readme_cmip5-datamart_en.md)
+[In English](readme_cmip6-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [CMIP5](readme_cmip5_fr.md) > CMIP5 sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [CMIP6](readme_cmip6_fr.md) > CMIP6 sur le Datamart du SMC
 
-# Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5) en format NetCDF
+# Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6) en format NetCDF
 
-Des ensembles multimodèles de sorties de modèles et de changements projetés sur grille sont disponibles pour les simulations historiques et trois scénarios d'émissions, RCP2.6, RCP4.5 et RCP8.5, à une résolution de de 1x1 degré. Les changements projetés sont exprimés sous forme d'anomalies par rapport à la période de référence 1986-2005.
+Le nombre de modèles dans chaque ensemble diffère selon la disponibilité des modèles pour chaque SSP et variable; consultez la liste des modèles pour plus de détails sur les modèles inclus dans chaque ensemble. La majorité des produits indiquent les changements prévus sous forme d’anomalies selon une période de référence historique (1995 à 2014). Les produits fournis comprennent des ensembles de données et des graphiques à l’échelle mondiale, nationale, provinciale et territoriale. Pour de plus amples renseignements sur les ensembles multimodèles du CMIP6, veuillez consulter la documentation technique.
+
+
 
 ## Adresse des données 
 
@@ -14,14 +16,14 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les fichiers CMIP5 se trouvent à l'adresse suivante :
+Les fichiers CMIP6 se trouvent à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}                                                                  
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}                                                                             
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/annual/{[anomaly,absolute]}
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}                                                                  
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}                                                                             
+* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute
 
 où :
 
@@ -36,12 +38,12 @@ où :
 
 NOTE : TOUTES LES HEURES SONT EN UTC.
 
-* CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
-* CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP6_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* CMIP6_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 
 avec :
 
-* __CMIP5__ : Chaîne constante indiquant les ensembles de données de la phase 5 du projet d'intercomparaison de modèles couplés.
+* __CMIP6__ : Chaîne constante indiquant les ensembles de données de la phase 6 du projet d'intercomparaison de modèles couplés.
 * __hist__ : Chaîne constante indiquant les simulations historiques.
 * __rcpx.y__ : Profils représentatifs d’évolution de concentration (scénarios d'émissions), prenant l'une des valeurs : [rcp2.6, rcp4.5, rcp8.5].
 * __TemporalResolution__ : Résolution temporelle, prenant l'une des valeurs : [annual, monthly, DJF, MAM, JJA, SON].
@@ -53,26 +55,26 @@ avec :
 * __TimeStep__ : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
 * __nc__ : Chaîne de caractères constante indiquant le format NetCDF
 
-Exemple :   CMIP5_rcp4.5_DJF_2021-2040_latlon1x1_PCP_pctl50_P1Y.nc
+Exemple :   CMIP6_rcp4.5_DJF_2021-2040_latlon1x1_PCP_pctl50_P1Y.nc
 
-Le fichier représente le 50e percentile de l'ensemble multimodèle CMIP5 de changements relatifs projetés sur la période 2021-2040 des précipitations moyennes (c.-à-d. anomalies) par rapport à la période de référence de 1986-2005, en hiver (moyenne sur 3 mois en décembre, janvier, février), exprimés en pourcentage de changement. Les bandes du fichier NetCDF sont des pas de temps annuels.
+Le fichier représente le 50e percentile de l'ensemble multimodèle CMIP6 de changements relatifs projetés sur la période 2021-2040 des précipitations moyennes (c.-à-d. anomalies) par rapport à la période de référence de 1986-2005, en hiver (moyenne sur 3 mois en décembre, janvier, février), exprimés en pourcentage de changement. Les bandes du fichier NetCDF sont des pas de temps annuels.
 
 ## Liste des variables
 
-Les variables et unités disponibles pour les ensembles de données CMIP5 sur le Datamart du SMC sont :
+Les variables et unités disponibles pour les ensembles de données CMIP6 sur le Datamart du SMC sont :
 
-* Projection des précipitations moyennes des multi-modèles d’ensemble CMIP5 (mm/jour)
-* Projections de la concentration de glace de mer des multi-modèles d’ensemble CMIP5 (pourcentage, %, de la surface de la cellule de la grille)
-* Projections de l'épaisseur de la glace de mer des multi-modèles d’ensemble CMIP5 (m)
-* Projections d'épaisseur de neige des multi-modèles d’ensemble CMIP5 (m)
-* Projections de la vitesse du vent de surface des multi-modèles d’ensemble CMIP5 (m/s)
-* Projections de température moyenne des multi-modèles d’ensemble CMIP5 (°C)
-* Variation moyenne projetée des précipitations, basée sur des ensembles multimodèles CMIP5 (%)
-* Changement projeté de la concentration de la glace de mer d'après les ensembles multimodèles CMIP5 (%) 
-* Variation projetée de l'épaisseur de la glace de mer d'après les ensembles multimodèles CMIP5 (%)
-* Variation projetée de l'épaisseur de neige selon les ensembles multimodèles CMIP5 (%)
-* Variation projetée de la vitesse du vent de surface basée sur des ensembles multimodèles CMIP5 (%)
-* Changement de température moyenne projetée basée sur des ensembles multimodèles CMIP5 (°C)
+* Projection des précipitations moyennes des multi-modèles d’ensemble CMIP6 (mm/jour)
+* Projections de la concentration de glace de mer des multi-modèles d’ensemble CMIP6 (pourcentage, %, de la surface de la cellule de la grille)
+* Projections de l'épaisseur de la glace de mer des multi-modèles d’ensemble CMIP6 (m)
+* Projections d'épaisseur de neige des multi-modèles d’ensemble CMIP6 (m)
+* Projections de la vitesse du vent de surface des multi-modèles d’ensemble CMIP6 (m/s)
+* Projections de température moyenne des multi-modèles d’ensemble CMIP6 (°C)
+* Variation moyenne projetée des précipitations, basée sur des ensembles multimodèles CMIP6 (%)
+* Changement projeté de la concentration de la glace de mer d'après les ensembles multimodèles CMIP6 (%) 
+* Variation projetée de l'épaisseur de la glace de mer d'après les ensembles multimodèles CMIP6 (%)
+* Variation projetée de l'épaisseur de neige selon les ensembles multimodèles CMIP6 (%)
+* Variation projetée de la vitesse du vent de surface basée sur des ensembles multimodèles CMIP6 (%)
+* Changement de température moyenne projetée basée sur des ensembles multimodèles CMIP6 (°C)
 
 ## Support
 

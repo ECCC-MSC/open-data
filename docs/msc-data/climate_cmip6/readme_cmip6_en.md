@@ -1,50 +1,41 @@
-[En français](readme_cmip5_fr.md)
+[En français](readme_cmip6_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CMIP5
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CMIP6
 
-# Data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5)  
+# Data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 6 (CMIP6)  
 
-The Global climate model scenarios dataset is based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5) are provided. Multi-model ensembles of modelled output (actual value) and projected change (anomaly) are available for historical simulations and three emission scenarios at a 1x1 degree grid resolution. Projected changes are expressed as anomalies with respect to the reference period of 1986-2005. A range of percentiles across the multi-model ensembles are available for download.
+Multi-model ensembles for a suite of variables based on projections from Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate models (GCMs) are available for 1850-2100 on a common 1x1 degree global grid.
+
+Climate projections vary across GCMs due to differences in the representation and approximation of earth systems and processes, and natural variability and uncertainty regarding future climate drivers. Thus, there is no single best climate model. Rather, using results from an ensemble of models (e.g., taking the average) is best practice, as an ensemble takes model uncertainty into account and provides more reliable climate projections.
+
+Provided on Canadian Climate Data and Scenarios (CCDS) are four types of products based on the CMIP6 multi-model ensembles: time series datasets and plots, maps and associated datasets, tabular datasets, and global gridded datasets. Monthly, seasonal, and annual ensembles are available for up to six Shared Socioeconomic Pathways (SSPs) (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP4-6.0, and SSP5-8.5), four future periods (near-term (2021-2040), mid-term (2041-2060 and 2061-2080), end of century (2081-2100)), and up to five percentiles (5th, 25th, 50th (median), 75th, and 95th) of the CMIP6 ensemble distribution.
+
+The number of models in each ensemble differs according to model availability for each SSP and variable, see the model list resource for details on the models included in each ensemble. The majority of products show projected changes expressed as anomalies according to a historical reference period of 1995-2014. The products provided include global, national, and provincial/territorial datasets and graphics. For more information on the CMIP6 multi-model ensembles, see the technical documentation resource. 
 
 ## Access
-
 ### How to access the data
 
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Data available on the GeoMet-Climate geospatial web services](readme_cmip5-geomet_en.md)
+* [Data available on the GeoMet-Climate geospatial web services](readme_cmip6-geomet_en.md)
 * [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
-    * [CMIP5 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute)
-    * [CMIP5 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:absolute)
-    * [CMIP5 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:absolute)
-    * [CMIP5 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:anomaly)
-    * [CMIP5 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:anomaly)
-    * [CMIP5 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:anomaly)
-    * [CMIP5 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:P20Y-Avg)
-    * [CMIP5 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:P20Y-Avg)
-    * [CMIP5 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:absolute)
-    * [CMIP5 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:absolute)
-    * [CMIP5 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:absolute)
-    * [CMIP5 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly)
-    * [CMIP5 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
-    * [CMIP5 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:anomaly)
-* [NetCDF data available on the MSC Datamart](readme_cmip5-datamart_en.md)
-
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the [CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50) layer served by MSC GeoMet:
-
-<div id="map" style="height: 400px; position: relative">
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE"/>
-  </div>
-</div>
-</div>
-<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
-  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
-  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-</div>
+    * [CMIP6 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:absolute)
+    * [CMIP6 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:absolute)
+    * [CMIP6 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:absolute)
+    * [CMIP6 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:anomaly)
+    * [CMIP6 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:anomaly)
+    * [CMIP6 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:anomaly)
+    * [CMIP6 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:P20Y-Avg)
+    * [CMIP6 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:P20Y-Avg)
+    * [CMIP6 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:absolute)
+    * [CMIP6 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip6:historical:seasonal:absolute)
+    * [CMIP6 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:absolute)
+    * [CMIP6 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:anomaly)
+    * [CMIP6 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
+    * [CMIP6 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:anomaly)
+* [NetCDF data available on the MSC Datamart](readme_cmip6-datamart_en.md)
 
 ### Licence
 
@@ -56,19 +47,15 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-* The [metadata of the projected temperature change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/1e86f4f7-da88-403e-bd44-92065c0fd568)
-* The [metadata of the projected precipitation change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/eddd6eaf-34d7-4452-a994-3d928115a68b)
-* The [metadata of the projected Snow Depth change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/0933f0dc-3625-4583-828a-86d032e4b737)
-* The [metadata of the projected sea ice thickness change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/b6a68b05-58f3-4d71-89d8-25b5a5277796)
-* The [metadata of the projected sea ice concentration change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/78f9e3e0-3a12-4321-99dd-eed047c31e5e)
-* The [metadata of the projected surface wind speed change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/e0c71149-db7a-4700-acfd-1c8f9d778354)
+* The [metadata of the projected temperature change based on CMIP6 multi-model ensembles are available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
 
 ## Technical documentation
 
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip5/CMIP5_Technical_Documentation_en.pdf)
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/climate_cmip6/CMIP6_Technical_Documentation_en.pdf)
 * [Information on Representative Concentration Pathways](http://climate-scenarios.canada.ca/?page=scen-rcp )
-* [Introduction to climate scenarios](http://climate-scenarios.canada.ca/?page=cmip5-intro)
+* [Introduction to climate scenarios](http://climate-scenarios.canada.ca/?page=cmip6-scenarios)
 * This data is also available through the [Canadian Climate Services Centre](https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services/about.html)
+
 
 <style>
   #legend-img {
