@@ -6,9 +6,7 @@
 
 # Données de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6) en format NetCDF
 
-Le nombre de modèles dans chaque ensemble diffère selon la disponibilité des modèles pour chaque SSP et variable; consultez la liste des modèles pour plus de détails sur les modèles inclus dans chaque ensemble. La majorité des produits indiquent les changements prévus sous forme d’anomalies selon une période de référence historique (1995 à 2014). Les produits fournis comprennent des ensembles de données et des graphiques à l’échelle mondiale, nationale, provinciale et territoriale. Pour de plus amples renseignements sur les ensembles multimodèles du CMIP6, veuillez consulter la documentation technique.
-
-
+Des ensembles multimodèles pour une série de variables basées sur les projections des modèles climatiques mondiaux (MCM) de la phase 6 du Projet d’intercomparaison des modèles couplés (CMIP6) sont disponibles pour 1850 à 2100 sur une grille mondiale commune de 1 x 1 degré.
 
 ## Adresse des données 
 
@@ -18,46 +16,37 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers CMIP6 se trouvent à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/annual/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/historical/monthly_ens/absolute
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}                                                                  
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}                                                                             
-* https://dd.meteo.gc.ca/climate/cmip6/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute
+* https://dd.meteo.gc.ca/climate/cmip6/100km/historical/
+* https://dd.meteo.gc.ca/climate/cmip6/100km/scenarios/{[ssp126,ssp245,ssp370,ssp585]}                                                         
 
 où :
 
-* __historical__ : Simulations historiques sur la période 1950-2005
-* __scenarios__ : Réfère à différents scénarios d’émission [RCP2.6, RCP4.5,RCP8.5] pour la période 2006-2100
-* __seasonal__ : Les saisons météorologiques standards sont utilisées: mars à mai (MAM, printemps), juin à août (JJA, été), septembre à novembre (SON, automne), et décembre à février (DJF, hiver)
-* __avg_20year__ : Moyennes de 20 ans de changements projetés, disponibles pour quatre périodes : 2021-2040; 2041-2060; 2061-2080; 2081-2100
-* __Anomaly__ : Représente les changements projetés par rapport à la période de référence 1986-2005
-* __Absolute__ : Représente les projections d’ensembles multi-modèles (valeurs actuelles)
+* __historical__ : Simulations historiques sur la période 1850-2100
+* __scenarios__ : Réfère à différents profils socioéconomiques partagés [ssp126, ssp245, ssp370, ssp585] pour plusieurs périodes de 20ans, soit court terme [2021-2040], moyen terme [2041-2060 et 2061-2080] et fin du siècle [2081-2100]
 
 ## Nomenclature des noms de fichiers
 
-NOTE : TOUTES LES HEURES SONT EN UTC.
-
-* CMIP6_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
-* CMIP6_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
+* `{period}_ECCC_CMIP6_{variable}-Pct{percentile}_Sfc_LatLon1.0_{timestep}.nc`
+* `{period}_ECCC_CMIP6-{scenario}_{variable}-Pct{percentile}_Sfc_LatLon1.0_{timestep}.nc`
 
 avec :
 
-* __CMIP6__ : Chaîne constante indiquant les ensembles de données de la phase 6 du projet d'intercomparaison de modèles couplés.
-* __hist__ : Chaîne constante indiquant les simulations historiques.
-* __rcpx.y__ : Profils représentatifs d’évolution de concentration (scénarios d'émissions), prenant l'une des valeurs : [rcp2.6, rcp4.5, rcp8.5].
-* __TemporalResolution__ : Résolution temporelle, prenant l'une des valeurs : [annual, monthly, DJF, MAM, JJA, SON].
-* __Value__ : Catégorie de valeurs, prenant l'une des valeurs :  [abs, anom, 2021-2040, 2041-2060, 2061-2080, 2081-2100] ; abs représente les valeurs absolues (valeurs réelles / projections modélisées) ; anom représente les anomalies.
-* __Projection__ : Projection de la grille (projection), prenant la valeur :[latlon].
-* __Resolution__ : Résolution de la grille, prenant l'une des valeurs : [1x1] ; 1x1 représente une résolution de grille de 1 degré dans les directions latitudinale et longitudinale.
-* __Variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs :[ PCP, TEMP, SICETHKN, SICETHKN, SICECONC, SNDPT, SFCWND] ; PCP représente les précipitations moyennes, TEMP représente la température moyenne, SICETHKN représente l'épaisseur de la glace de mer, SICECONC représente la concentration de glace de mer, SNDPT représente la profondeur de la neige, SFCWND représente la vitesse du vent de surface.
-* __PctlPP__ : Percentile d'ensemble, prenant l'une des valeurs : [pctl5, pctl25, pctl50, pctl75, pctl95] ; pctl5 représente le 5e percentile de l'ensemble ; pctl25 représente le 25e percentile de l'ensemble ; pctl50 représente le 50e percentile, également appelé médiane de l'ensemble ; pctl75 représente le 75e percentile de l'ensemble ; pctl95 représente le 95e percentile de l'ensemble.
-* __TimeStep__ : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
+* __period__ : Période associée à chaque ensemble de données, sous format {année du début de la période}-{année de la fin de la période} : [1900-2024; 2015-2100; etc.]
+ * __ECCC_ : Chaîne de caractères constante pour Environnement et Changement climatique Canada, la source des données
+* __CMIP6__ : Chaîne de caractères constante indiquant les ensembles de données de la phase 6 du projet d'intercomparaison de modèles couplés
+* __variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs : [AirTemp, Precip, SeaIceConcentration, SeaIceThickness, SurfaceWindSpeed, SnowDepth]. Pour les anomalies : [AirTempAnomaly, PrecipAnomaly, SeaIceConcentrationAnomaly, SeaIceThicknessAnomaly, SurfaceWindSpeedAnomaly, SnowDepthAnomaly]
+* __scenario__ : Profils socioéconomiques partagés (SSP), prenant l'une des valeurs : [SSP126, SSP245, SSP370, SSP585]
+* __percentile__ : Percentile d'ensemble, prenant l'une des valeurs : [pctl5, pctl25, pctl50, pctl75, pctl95] ; pctl5 représente le 5e percentile de l'ensemble ; pctl25 représente le 25e percentile de l'ensemble ; pctl50 représente le 50e percentile, également appelé médiane de l'ensemble ; pctl75 représente le 75e percentile de l'ensemble ; pctl95 représente le 95e percentile de l'ensemble
+* __Sfc__ : Chaîne de caractères constante indiquant que les données sont disponibles à la surface
+* __LatLon__ : Chaîne de caractères constante indiquant la projection lat-lon de la grille 
+* __1.0__ : Résolution de grille de 1 degré dans les directions latitudinale et longitudinale.
+* __timeStep__ : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an, P1M représente un pas de temps de un mois ; [P1Y-{DJF, MAM, JJA, SON}] représente la période saisonnière (ex: DJF: décembre-janvier-février) annuelle
 * __nc__ : Chaîne de caractères constante indiquant le format NetCDF
 
-Exemple :   CMIP6_rcp4.5_DJF_2021-2040_latlon1x1_PCP_pctl50_P1Y.nc
+Exemples :
 
-Le fichier représente le 50e percentile de l'ensemble multimodèle CMIP6 de changements relatifs projetés sur la période 2021-2040 des précipitations moyennes (c.-à-d. anomalies) par rapport à la période de référence de 1986-2005, en hiver (moyenne sur 3 mois en décembre, janvier, février), exprimés en pourcentage de changement. Les bandes du fichier NetCDF sont des pas de temps annuels.
+* 1900-2014_ECCC_CMIP6_AirTempAnomaly-Pct50_Sfc_LatLon1.0_P1Y.nc
+* 2015-2100_ECCC_CMIP6-SSP126_PrecipAnomaly-Pct50_Sfc_LatLon1.0_P1Y-JJA.nc
 
 ## Liste des variables
 
