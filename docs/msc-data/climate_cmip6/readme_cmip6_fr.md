@@ -38,8 +38,6 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
     * [CMIP6 - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:monthly:anomaly)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_cmip6-datamart_fr.md)
 
-
-
 ### Licence
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
