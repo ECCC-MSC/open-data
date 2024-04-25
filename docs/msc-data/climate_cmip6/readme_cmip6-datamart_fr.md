@@ -17,7 +17,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 Les fichiers CMIP6 se trouvent à l'adresse suivante :
 
 * https://dd.meteo.gc.ca/climate/cmip6/100km/historical/
-* https://dd.meteo.gc.ca/climate/cmip6/100km/scenarios/{[ssp126,ssp245,ssp370,ssp585]}                                                         
+* https://dd.meteo.gc.ca/climate/cmip6/100km/scenarios/{ssp126,ssp245,ssp370,ssp585}                                                         
 
 où :
 
@@ -31,8 +31,8 @@ où :
 
 avec :
 
-* __period__ : Période associée à chaque ensemble de données, sous format {année du début de la période}-{année de la fin de la période} : [1900-2024; 2015-2100; etc.]
- * __ECCC_ : Chaîne de caractères constante pour Environnement et Changement climatique Canada, la source des données
+* __period__ : Période associée à chaque ensemble de données, sous format {année du début de la période}-{année de la fin de la période} : [1900-2014; 2015-2100; etc.]
+ * __ECCC__ : Chaîne de caractères constante pour Environnement et Changement climatique Canada, la source des données
 * __CMIP6__ : Chaîne de caractères constante indiquant les ensembles de données de la phase 6 du projet d'intercomparaison de modèles couplés
 * __variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs : [AirTemp, Precip, SeaIceConcentration, SeaIceThickness, SurfaceWindSpeed, SnowDepth]. Pour les anomalies : [AirTempAnomaly, PrecipAnomaly, SeaIceConcentrationAnomaly, SeaIceThicknessAnomaly, SurfaceWindSpeedAnomaly, SnowDepthAnomaly]
 * __scenario__ : Profils socioéconomiques partagés (SSP), prenant l'une des valeurs : [SSP126, SSP245, SSP370, SSP585]
