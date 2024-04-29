@@ -16,11 +16,11 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les images radar se trouvent à l'adresse :
 
-[https://dd.meteo.gc.ca/radar/{PRODUIT}/{FORMAT}/{STATION_RADAR}](https://dd.meteo.gc.ca/radar/)
+* [https://dd.meteo.gc.ca/radar/{PRODUIT}/{FORMAT}/{STATION_RADAR}](https://dd.meteo.gc.ca/radar/)
 
 où :
 
-* PRODUIT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
+* PRODUIT = [24_HR_ACCUM | CAPPI | DPQPE]
 * FORMAT  = [GIF] 
 * STATION_RADAR   = [CASBV, CASRA, ...]  code de 5 lettres du radar, en lettres majuscules. 
 
@@ -36,46 +36,14 @@ __Notes__:
 
 Les noms de fichiers ont le format suivant, avec XXXXX, code de 5 lettres du radar, en lettres majuscules.
 
-* __PRECIPET__
-     
-Des images pour les composites régionales (5 régions du Canada), la composite nationale et pour les radars individuels sont disponibles. Pour chaque image, deux échelles d'intensité sont disponibles. 
-
-Composites régionales avec une échelle d'intensité de 14 et 8 couleurs, respectivement: 
-
-* YYYMMDDHHmm_YYY_PRECIPET_RAIN_[WT,A11Y].gif 
-* YYYMMDDHHmm_YYY_PRECIPET_SNOW_[WT,A11Y].gif
-
-Où YYY =[ATL, ONT, PNR, PYR, QUE]
-
-ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
-
-Composites nationales avec une échelle d'intensité de 8 couleurs:
-
-* YYYMMDDHHmm_NATIONAL_PRECIPET_[RAIN,SNOW]_A11Y.gif 
- 
-ex: 201409201350_NATIONAL_PRECIPET_RAIN_A11Y.gif
-
-Radars individuels avec une échelle d'intensité de 14 couleurs:
-
-* YYYMMDDHHmm_XXXXX_PRECIPET_[RAIN,SNOW].gif 
-
-ex: 201409201400_CASBV_PRECIPET_RAIN.gif
-
-Radars individuels avec une échelle d'intensité de 8 couleurs :
-
-* YYYMMDDHHmm_XXXXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXXXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
- 
-ex: 201409201400_CASRA_PRECIPET_SNOW_A11Y.gif
-
 * __CAPPI__
   
 La nomenclature des fichiers CAPPI est la suivante :
 
-* YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW.gif
-* YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN.gif
-* YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW_A11Y.gif
-* YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN_A11Y.gif
+* `YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW.gif`
+* `YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN.gif`
+* `YYYMMDDHHmm_XXXXX_CAPPI_1.0_SNOW_A11Y.gif`
+* `YYYMMDDHHmm_XXXXX_CAPPI_1.5_RAIN_A11Y.gif`
 
 ex: 200806191550_CASFT_CAPPI_1.5_RAIN.gif
 
@@ -83,7 +51,7 @@ ex: 200806191550_CASFT_CAPPI_1.5_RAIN.gif
   
 La nomenclature des fichiers DPQPE est la suivante :
 
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow].gif
+* `YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow].gif`
 
 ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
@@ -91,12 +59,11 @@ ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
 
 Quand un radar canadien tombe en panne, un produit alternatif est disponible pour des fins de contingence. Il s'agit d'un produit composite généré à partir des radars voisins, qui peut contenir des radars américains. Il est également important de noter que pour certaines régions, les radars avoisinants peuvent ne pas couvrir tout le domaine du radar qui est en panne ou en entretien. À cet effet et pour aider l’usager à mieux identifier ces zones non-couvertes, des cercles de couleur rouge ont été ajoutés pour montrer les radars contributeurs qui ont servi à construire cette composite.
 
-Ces produits sont identifiés dans les noms de fichiers grâce aux mentions "COMP" pour les produits de contingence basés sur le produit PRECIPET et la mention "Contingency" pour les produits de contingence basés sur le produit DPQPE, soit respectivement:
+Ces produits sont identifiés grâce à la mention "Contingency" dans les noms de fichies pour les produits de contingence basés sur le produit DPQPE, soit:
 
-* YYYMMDDHHmm_XXXXX_COMP_PRECIPET_[RAIN,SNOW].gif; YYYMMDDHHmm_XXXXX_COMP_PRECIPET_[RAIN,SNOW]_A11Y.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow]-Contingency.gif
+* `YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_[Rain,Snow]-Contingency.gif`
 
-ex: 201511271400_CASET_COMP_PRECIPET_RAIN.gif; 20240112T1636Z_MSC_Radar-DPQPE_CASET_Snow-Contingency.gif
+ex: 20240112T1636Z_MSC_Radar-DPQPE_CASET_Snow-Contingency.gif
 
 Cette image composite peut être différenciée de celle du radar d'origine grâce à l'inscription "Composite" dans la légende à droite de l'image.
 
@@ -104,15 +71,7 @@ Cette image composite peut être différenciée de celle du radar d'origine grâ
 
 Représente l'accumulation de précipitation en mm tel qu'observée par le radar au cours des 24 dernières heures. Ce produit est disponible toutes les 6 minutes pour les radars de bande S.
 
-__Basée sur le produit PRECIPET__
-
-* YYYMMDDHHmm_XXXXX_24_HR_ACCUM_MM.gif
-
-ex: 200806161900_CASMR_24_HR_ACCUM_MM.gif
-
-__Basée sur le produit DPQPE__
-
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Accum24h.gif
+* `YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Accum24h.gif`
 
 ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Accum24h.gif
 
