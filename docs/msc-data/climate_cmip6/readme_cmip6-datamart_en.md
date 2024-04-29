@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It can be accessed using a standar
 
 CMIP6 files can be found at the following address:
 
-* [https://dd.weather.gc.ca/climate/cmip6/100km/historical/]([https://dd.weather.gc.ca/climate/cmip6/100km/historical)
+* [https://dd.weather.gc.ca/climate/cmip6/100km/historical/](https://dd.weather.gc.ca/climate/cmip6/100km/historical)
 * [https://dd.weather.gc.ca/climate/cmip6/100km/scenarios/{ssp126,ssp245,ssp370,ssp585}](https://dd.weather.gc.ca/climate/cmip6/100km/scenarios)                                                         
 
 where:
