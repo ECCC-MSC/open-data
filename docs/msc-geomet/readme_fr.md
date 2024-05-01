@@ -37,10 +37,10 @@ La plateforme GeoMet du SMC comprend les services suivants :
   </div>
 </div>
 
-Pour plus d'informations sur l'utilisation des services MSC GeoMet, voir les pages suivantes:
+Pour plus d'informations sur l'utilisation des services GeoMet du SMC, voir les pages suivantes:
 
 *    [Vue d'ensemble de l'utilisation des services de données ouvertes](https://eccc-msc.github.io/open-data/usage/readme_fr/)
-*    [Tutoriels et guides sur l'utilisation des services GeoMet du CSM](https://eccc-msc.github.io/open-data/usage/tutorials_fr/)
+*    [Tutoriels et guides sur l'utilisation des services GeoMet du SMC](https://eccc-msc.github.io/open-data/usage/tutorials_fr/)
 
 ## Standards disponibles
 
