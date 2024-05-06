@@ -10,7 +10,7 @@ Multimodel ensembles for a range of variables based on global climate model (GCM
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../.../msc-datamart/amqp_en.md) as soon as they become available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../.../msc-datamart/amqp_en.md) as soon as they become available. [An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a NetCDF file is displayed.
 
