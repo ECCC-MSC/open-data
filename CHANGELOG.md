@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Update radar GIF doc: removal of PRECIPET
     * Move AQHI and Hurricane pages to Alerts and public forecasts section
+    * Update climate observations pages to refer to GeoMet-OGC-API and available data collections
 * bug fixes:
     * Fix technical note (FR) link for RDWPS
     * Fix broken link to tutorials
