@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.5.21
+
+* date: 2024-05-06
+* announcements:
+    * Not announced
+* new content:
+    * Add CMIP6 documentation
+* improvements:
+    * Update radar GIF doc: removal of PRECIPET
+    * Move AQHI and Hurricane pages to Alerts and public forecasts section
+* bug fixes:
+    * Fix technical note (FR) link for RDWPS
+
 ## 2.5.20
 
 * date: 2024-03-26
