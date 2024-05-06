@@ -23,6 +23,8 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
 * [Current marine conditions and 7-days forecast for marine regions](marine-weather/readme_marine-weather_en.md)
 </br></br>
+* [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
+* [Hurricanes](hurricanes/readme_hurricanes_en.md)
 
 ## Observations
 
@@ -115,9 +117,7 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 
 ## Other data
 
-* [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
 * [Bulletins](bulletins/readme_bulletins_en.md)
-* [Hurricanes](hurricanes/readme_hurricanes_en.md)
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [MetNotes](metnotes/readme_metnotes_en.md)
 * [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)

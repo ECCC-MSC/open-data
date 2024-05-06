@@ -24,6 +24,8 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
 </br></br>
+* [Observations et prévisions de la Cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
+* [Ouragans](hurricanes/readme_hurricanes_fr.md)
 
 ## Observations
 
@@ -115,9 +117,7 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 
 ## Autres données
 
-* [Observations et prévisions de la Cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Bulletins](bulletins/readme_bulletins_fr.md)
-* [Ouragans](hurricanes/readme_hurricanes_fr.md)
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [MetNotes](metnotes/readme_metnotes_fr.md)
 * [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
