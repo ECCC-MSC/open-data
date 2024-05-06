@@ -1,40 +1,25 @@
-[In English](readme_cmip5-geomet_en.md)
+[In English](readme_cmip6-geomet_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [CMIP5](readme_cmip5_fr.md) > CMIP5 sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [CMIP6](readme_cmip6_fr.md) > CMIP6 sur GeoMet du SMC
 
-# Données du CMIP5 disponibles sur GeoMet du SMC
+# Données du CMIP6 disponibles sur GeoMet du SMC
 
-GeoMet du SMC donne accès à plusieurs couches et produits de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 5 du projet d'intercomparaison de modèles couplées (CMIP5). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données climatiques du SMC dans des logiciels de bureau.
+GeoMet du SMC donne accès à plusieurs couches et produits de scénarios climatiques, basés sur un ensemble de projections de modèles climatiques globaux de la phase 6 du projet d'intercomparaison de modèles couplées (CMIP6). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données climatiques du SMC dans des logiciels de bureau.
 
 ## Accès aux services web géospatiaux
 
-Les données du CMIP5 sont disponibles 
+Les données du CMIP6 sont disponibles 
 
-* [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md#standards-disponibles).
-* [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
-    * [CMIP5 - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:annual:absolute)
-    * [CMIP5 - Saisonnière projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:seasonal:absolute)
-    * [CMIP5 - Mensuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:monthly:absolute)
-    * [CMIP5 - Anomalie annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:annual:anomaly)
-    * [CMIP5 - Anomalie saisonnière projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:seasonal:anomaly)
-    * [CMIP5 - Anomalie mensuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip5:projected:monthly:anomaly)
-    * [CMIP5 - Anomalie annuelle projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:cmip5:projected:annual:P20Y-Avg)
-    * [CMIP5 - Anomalie saisonnière projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:cmip5:projected:seasonal:P20Y-Avg)
-    * [CMIP5 - Annuelle historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:annual:absolute)
-    * [CMIP5 - Saisonnière historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:seasonal:absolute)
-    * [CMIP5 - Mensuelle historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:monthly:absolute)
-    * [CMIP5 - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:annual:anomaly)
-    * [CMIP5 - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
-    * [CMIP5 - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cmip5:historical:monthly:anomaly)
+* [sur GeoMet-Climat par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md#standards-disponibles).
 
-Exemple de carte interactive présentant la couche [CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50) du CMIP5 provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) du CMIP6 provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE"/>
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES&lang=fr"/>
   </div>
 </div>
 </div>
@@ -49,7 +34,7 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 ### Couches disponibles
 
-Pour savoir quelles couches CMIP5 sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
+Pour savoir quelles couches CMIP6 sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
@@ -57,7 +42,7 @@ Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dan
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50).
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&lang=fr](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&lang=fr).
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps).
 
 Styles WMS :
@@ -68,9 +53,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE).
+* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES&lang=fr](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES&lang=fr).
 
-![La légende TEMP-ABSOLUTE pour la couche CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE)
+![La légende TEMP-ANOMALIES pour la couche CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES&lang=fr)
 
 
 ## Support
@@ -115,12 +100,12 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/cmip5_ie.js";
+        js.src = "../../../js/cmip6_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/cmip5.js";
+        js.src = "../../../js/cmip6.js";
     }
     head.appendChild(js);
 </script>

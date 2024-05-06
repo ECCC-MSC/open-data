@@ -20,22 +20,21 @@ The number of models in each ensemble differs according to model availability fo
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
 * [Data available on the GeoMet-Climate geospatial web services](readme_cmip6-geomet_en.md)
-* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
-    * [CMIP6 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:absolute)
-    * [CMIP6 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:absolute)
-    * [CMIP6 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:absolute)
-    * [CMIP6 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:anomaly)
-    * [CMIP6 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:anomaly)
-    * [CMIP6 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:projected:monthly:anomaly)
-    * [CMIP6 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:annual:P20Y-Avg)
-    * [CMIP6 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip6:projected:seasonal:P20Y-Avg)
-    * [CMIP6 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:absolute)
-    * [CMIP6 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip6:historical:seasonal:absolute)
-    * [CMIP6 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:absolute)
-    * [CMIP6 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:annual:anomaly)
-    * [CMIP6 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
-    * [CMIP6 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip6:historical:monthly:anomaly)
 * [NetCDF data available on the MSC Datamart](readme_cmip6-datamart_en.md)
+
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) layer served by MSC GeoMet:
+
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
+  </div>
+</div>
+</div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
+</div>
 
 ### Licence
 
@@ -47,7 +46,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-* The [metadata of the projected temperature change based on CMIP6 multi-model ensembles are available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
+* The [CMIP6 multi-model ensembles metadata is available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
 
 ## Technical documentation
 
@@ -90,12 +89,12 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/cmip5_ie.js";
+        js.src = "../../../js/cmip6_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/cmip5.js";
+        js.src = "../../../js/cmip6.js";
     }
     head.appendChild(js);
 </script>

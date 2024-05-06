@@ -21,22 +21,21 @@ Le nombre de modèles dans chaque ensemble diffère selon la disponibilité des 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
 * [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_cmip6-geomet_fr.md)
-* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
-    * [CMIP6 - Annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:absolute)
-    * [CMIP6 - Saisonnière projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:seasonal:absolute)
-    * [CMIP6 - Mensuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:monthly:absolute)
-    * [CMIP6 - Anomalie annuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:anomaly)
-    * [CMIP6 - Anomalie saisonnière projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:seasonal:anomaly)
-    * [CMIP6 - Anomalie mensuelle projetée](https://api.meteo.gc.ca/collections/climate:cmip6:projected:monthly:anomaly)
-    * [CMIP6 - Anomalie annuelle projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:cmip6:projected:annual:P20Y-Avg)
-    * [CMIP6 - Anomalie saisonnière projetée pour une moyenne de 20 ans](https://api.meteo.gc.ca/collections/climate:cmip6:projected:seasonal:P20Y-Avg)
-    * [CMIP6 - Annuelle historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:annual:absolute)
-    * [CMIP6 - Saisonnière historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:seasonal:absolute)
-    * [CMIP6 - Mensuelle historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:monthly:absolute)
-    * [CMIP6 - Anomalie annuelle historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:annual:anomaly)
-    * [CMIP6 - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:seasonal:anomaly)
-    * [CMIP6 - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cmip6:historical:monthly:anomaly)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_cmip6-datamart_fr.md)
+
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) du CMIP6 provenant de GeoMet du SMC :
+
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
+  </div>
+</div>
+</div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
+</div>
 
 ### Licence
 
@@ -47,7 +46,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 ### Métadonnées
 
-* Les [métadonnées sur les ensembles multimodèles CMIP6 sont accessibles sur le portail du gouvernement ouvert](https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
+* La [métadonnée sur les ensembles multimodèles CMIP6 est accessible sur le portail du gouvernement ouvert](https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
 
 ## Documentation technique
 
@@ -90,12 +89,12 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/cmip5_ie.js";
+        js.src = "../../../js/cmip6_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/cmip5.js";
+        js.src = "../../../js/cmip6.js";
     }
     head.appendChild(js);
 </script>

@@ -1,40 +1,25 @@
-[En français](readme_cmip5-geomet_fr.md)
+[En français](readme_cmip6-geomet_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CMIP5](readme_cmip5_en.md) > CMIP5 on MSC GeoMet
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CMIP6](readme_cmip6_en.md) > CMIP6 on MSC GeoMet
 
-# CMIP5 data available on MSC GeoMet
+# CMIP6 data available on MSC GeoMet
 
-MSC GeoMet-Climate provides access to data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 5 (CMIP5). Users can build mobile apps, create interactive web maps, and display and animate climate data layers in desktop software.
+MSC GeoMet-Climate provides access to data and products of the climate scenarios datasets based on an ensemble of global climate model projections from the Coupled Model Intercomparison Project Phase 6 (CMIP6). Users can build mobile apps, create interactive web maps, and display and animate climate data layers in desktop software.
 
 ## Access to the geospatial web services
 
-The CMIP5 data is available
+The CMIP6 data is available
 
 * [on GeoMet-Climate via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md#available-ogc-standards).
-* [on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/):
-    * [CMIP5 - Projected annual](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute)
-    * [CMIP5 - Projected seasonal](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:absolute)
-    * [CMIP5 - Projected monthly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:absolute)
-    * [CMIP5 - Projected annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:anomaly)
-    * [CMIP5 - Projected seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:anomaly)
-    * [CMIP5 - Projected monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:projected:monthly:anomaly)
-    * [CMIP5 - Projected annual anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:P20Y-Avg)
-    * [CMIP5 - Projected seasonal anomaly for 20 years average](https://api.weather.gc.ca/collections/climate:cmip5:projected:seasonal:P20Y-Avg)
-    * [CMIP5 - Historical annual](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:absolute)
-    * [CMIP5 - Historical seasonal](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:absolute)
-    * [CMIP5 - Historical monthly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:absolute)
-    * [CMIP5 - Historical annual anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly)
-    * [CMIP5 - Historical seasonal anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:seasonal:anomaly)
-    * [CMIP5 - Historical monthly anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:monthly:anomaly)
 
-Example of a web map configured to display the [CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50) layer served by MSC GeoMet:
+Example of a web map configured to display the [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE"/>
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
   </div>
 </div>
 </div>
@@ -49,15 +34,15 @@ The [usage overview page](../../usage/readme_en.md) provides generic information
 
 ### Available layers
 
-To see which CMIP5 layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities). 
+To see which CMIP6 layers are served via MSC GeoMet consult the service's [WMS GetCapabilities document](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities). 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 
 ### Usage tips
 
-Retrieving the available model runs and forecast hours available for a given CMIP5 layer:
+Retrieving the available model runs and forecast hours available for a given CMIP6 layer:
 
-* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). Example: [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50)
+* Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). Example: [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
 
 WMS styles:
@@ -68,9 +53,9 @@ WMS styles:
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/wms_en#wms-getlegendgraphic).
-* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE).
+* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES).
 
-![The CMIP5.TT.HISTO.SUMMER.ABS_PCTL50 TEMP-ABSOLUTE WMS legend](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP5.TT.HISTO.SUMMER.ABS_PCTL50&format=image/png&STYLE=TEMP-ABSOLUTE)
+![The CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y TEMP-ANOMALIES WMS legend](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES)
 
 
 ## Support
@@ -115,12 +100,12 @@ We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/cmip5_ie.js";
+        js.src = "../../../js/cmip6_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/cmip5.js";
+        js.src = "../../../js/cmip6.js";
     }
     head.appendChild(js);
 </script>
