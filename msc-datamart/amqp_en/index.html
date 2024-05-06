@@ -181,7 +181,7 @@
 <p>Regarding the user guide, please consult : 
 <a href="https://metpx.github.io/sarracenia/How2Guides/subscriber.html">https://metpx.github.io/sarracenia/How2Guides/subscriber.html</a></p>
 <p>Several examples of configuration files are also available to users, see:
-<a href="https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
+<a href="https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
 <p><strong>NOTE</strong>:</p>
 <p>To <strong>facilitate support</strong>, our analysts suggest that users identify themselves, in order to more easily track down queues in case of problems. It is therefore highly recommended to add one of the following lines in the sr_subscribe configuration:</p>
 <ul>
@@ -202,13 +202,18 @@
 <h2 id="examples">Examples</h2>
 <p>Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters:</p>
 <ul>
-<li>The available commands are:<ul>
+<li>
+<p>The available commands are:</p>
+<ul>
 <li>alerts: sr_subscribe <a href="../amqp_cap-xml.conf">amqp_cap.xml.conf</a> start/stop/status</li>
 <li>citypage_weather: sr_subscribe <a href="../amqp_citypage.conf">amqp_citypage.conf</a> start/stop/status</li>
 <li>rdps_grib: sr_subscribe <a href="../amqp_rdps-grib.conf">amqp_rdps-grib.conf</a> start/stop/status</li>
+<li>bulletins : sr_subscribe <a href="../amqp_aacn01.conf">amqp_aacn01.conf</a> start/stop/status</li>
 </ul>
 </li>
-<li>The logs are available under ~/.cache/sarra/log</li>
+<li>
+<p>The logs are available under ~/.cache/sarra/log</p>
+</li>
 <li>To make a cleanup, use: sr_subscribe configname.conf cleanup</li>
 </ul>
 <h2 id="external-links">External links</h2>

@@ -178,9 +178,10 @@
 <li>GOES-West Night Microphysics [2 km], ID: <code>GOES-West_2km_NightMicrophysics</code></li>
 </ul>
 <h3 id="usage-tips">Usage tips</h3>
-<p>Retrieving the list of latest satellite layer timesteps available:</p>
+<p>Retrieving the list of latest layer timesteps available:</p>
 <ul>
 <li>Users can use the <code>layer</code> query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions. Example for the 1km satellite natural color layer: <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=GOES-East_1km_NaturalColor">https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=GOES-East_1km_NaturalColor</a></li>
+<li>Users can also get the most up-to-date time dimensions for all satellite layers with a time interval in minutes, in a single query, via the use of the <code>LAYERS_REFRESH_RATE=PT1M</code> query parameter. In addition, all layers with a time interval in minutes will be included in this WMS GetCapabilities. Example for the query: <a href="https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&amp;SERVICE=WMS&amp;REQUEST=GetCapabilities">https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&amp;SERVICE=WMS&amp;REQUEST=GetCapabilities</a></li>
 <li>Additional information is available in the <a href="../../../msc-geomet/wms_en#handling-time">handling time with WMS section</a></li>
 </ul>
 <p>WMS styles:</p>

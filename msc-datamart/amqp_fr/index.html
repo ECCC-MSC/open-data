@@ -177,7 +177,7 @@
 <p>Un survol est disponible ici : <a href="https://metpx.github.io/sarracenia/Explanation/Overview.html">https://metpx.github.io/sarracenia/Explanation/Overview.html</a></p>
 <p>Le guide d’installation peut être trouvé à cette adresse : <a href="https://metpx.github.io/sarracenia/Tutorials/Install.html">https://metpx.github.io/sarracenia/Tutorials/Install.html</a></p>
 <p>Quant au guide d’utilisation, il est disponible ici : <a href="https://metpx.github.io/sarracenia/How2Guides/subscriber.html">https://metpx.github.io/sarracenia/How2Guides/subscriber.html</a></p>
-<p>Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : <a href="https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
+<p>Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : <a href="https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
 <p><strong>NOTES</strong>:</p>
 <p><strong>Pour faciliter le support</strong>, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration de sr_subscribe:</p>
 <ul>
@@ -198,13 +198,18 @@
 <h2 id="exemples">Exemples</h2>
 <p>Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD :</p>
 <ul>
-<li>Les commandes disponibles sont :<ul>
+<li>
+<p>Les commandes disponibles sont :</p>
+<ul>
 <li>alerts : sr_subscribe <a href="../amqp_cap-xml.conf">amqp_cap.xml.conf</a> start/stop/status</li>
 <li>citypage_weather : sr_subscribe <a href="../amqp_citypage.conf">amqp_citypage.conf</a> start/stop/status</li>
 <li>rdps_grib : sr_subscribe <a href="../amqp_rdps-grib.conf">amqp_rdps-grib.conf</a> start/stop/status</li>
+<li>bulletins : sr_subscribe <a href="../amqp_aacn01.conf">amqp_aacn01.conf</a> start/stop/status</li>
 </ul>
 </li>
-<li>Les logs se retrouvent sous : ~/.cache/sarra/log</li>
+<li>
+<p>Les logs se retrouvent sous : ~/.cache/sarra/log</p>
+</li>
 <li>Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup</li>
 </ul>
 <h2 id="liens-externes">Liens externes</h2>

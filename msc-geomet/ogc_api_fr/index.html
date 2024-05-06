@@ -273,6 +273,10 @@ Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il 
 </br></p>
 </li>
 </ul>
+<h3 id="filtrer-la-liste-des-proprietes-dun-element-interroge"><span class="badge badge-light">Filtrer la liste des propriétés d'un élément interrogé</span></h3>
+<p>Interroger une collection d'éléments et renvoyer les caractéristiques pour lesquelles la liste des propriétés associées est limitée aux propriétés énumérées dans la valeur <code>properties=</code>. Par exemple, la requête ci-dessous retourne des propriétés reliées aux observations de pression atmosphérique, au format JSON.
+</br></p>
+<p><a href="https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&amp;offset=0&amp;sortby=-date_tm-value&amp;url=CYRV&amp;properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&amp;f=json">https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&amp;offset=0&amp;sortby=-date_tm-value&amp;url=CYRV&amp;properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&amp;f=json</a></p>
 <h3 id="combinaison-de-parametres-de-filtre"><span class="badge badge-light">Combinaison de paramètres de filtre</span></h3>
 <p>Interroger toutes les données hydrométriques moyennes journalières d'une seule station entre 2001 et 2010 :</br></p>
 <p><a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31">https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31</a></p>

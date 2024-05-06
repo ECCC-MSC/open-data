@@ -155,21 +155,20 @@
 <h1 id="coastal-ice-ocean-prediction-system-ciops-ocean-ice-forecasts-data-in-netcdf-format">Coastal Ice Ocean Prediction System (CIOPS) ocean-ice forecasts data in NetCDF format</h1>
 <p>The ocean-ice forecasts from the CIOPS-East and CIOPS-West systems are available as hourly products. These products are available in NetCDF format on a latitude and longitude grid. The CIOPS-East domain covers the Gulf of St. Lawrence, the North West Atlantic and the east coast of Canada at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West main domain covers the North East Pacific and the west coast of Canada, also at a resolution of 2km (0.03 x 0.02 degree). The CIOPS-West system also outputs a regional enhancement at 500m resolution (0.008 x 0.005 degree) that covers the Salish Sea region only.</p>
 <h2 id="data-location">Data location</h2>
-<p>HPFX data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>Data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible via web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.</p>
 <p>The data can be accessed at the following URLs: </p>
 <ul>
-<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/east/2km/{HH}/{hhh}/</a></li>
-<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/west/2km/{HH}/{hhh}/</a></li>
-<li><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/WXO-DD/model_ciops/salish-sea/500m/{HH}/{hhh}/</a>                  </li>
+<li><a href="https://dd.weather.gc.ca/model_ciops/east/">https://dd.weather.gc.ca/model_ciops/east/2km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.weather.gc.ca/model_ciops/west/2km/">https://dd.weather.gc.ca/model_ciops/west/2km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.weather.gc.ca/model_ciops/salish-sea/500m/">https://dd.weather.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/</a>                  </li>
 </ul>
 <p>where:</p>
 <ul>
-<li><strong>YYYYMMDD</strong> : Year, month and day</li>
 <li><strong>HH</strong> : Model run start, in UTC [00, 06, 12, 18]</li>
 <li><strong>hhh</strong> : Forecast hour [000, 001, 002, ..., 048] </li>
 </ul>
-<p>A history of several weeks is kept in these directories.</p>
+<p>A history of 24 hours is kept in these directories.</p>
 <h2 id="technical-specification-of-the-grids">Technical specification of the grids</h2>
 <h3 id="east-ocean-domain">East ocean domain</h3>
 <p><img alt="Image of the CIOPS - East ocean domain" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ciops/grille_ciops-east.png" /></p>
@@ -304,7 +303,7 @@
 
 <p>Note: The unit <code>PSU</code> (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.</p>
 <h2 id="support">Support</h2>
-<p>If you have any questions about this data, please contact us at: <a href="mailto:ec.dps-client.ec@canada.ca">ec.dps-client.ec@canada.ca</a></p>
+<p>If you have any questions about this data, <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">please contact</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
 <p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
             </div>

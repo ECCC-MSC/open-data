@@ -284,6 +284,10 @@ The client can then simply cycle through all items until there are no longer any
 </br></p>
 </li>
 </ul>
+<h3 id="filter-the-list-of-properties-of-a-queried-element"><span class="badge badge-light">Filter the list of properties of a queried element</span></h3>
+<p>Query a feature collection and return features for which the list of associated properties is restricted to the properties listed in the <code>properties=</code>. For example, the query below returns properties related to atmospheric pressure observations, in JSON format.
+</br></p>
+<p><a href="https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&amp;offset=0&amp;sortby=-date_tm-value&amp;url=CYRV&amp;properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&amp;f=json">https://api.weather.gc.ca/collections/swob-realtime/items?lang=en&amp;offset=0&amp;sortby=-date_tm-value&amp;url=CYRV&amp;properties=date_tm-value%2Cmslp%2Cmslp-uom%2Cmslp-qa&amp;f=json</a></p>
 <h3 id="combining-filter-parameters"><span class="badge badge-light">Combining filter parameters</span></h3>
 <p>Query all hydrometric daily mean data from a single station between 2001 and 2010:</br></p>
 <p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=10CD001&amp;datetime=2001-01-01/2010-12-31</a></p>

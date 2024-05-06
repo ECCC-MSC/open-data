@@ -138,6 +138,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#lorsquon-effectue-un-zoom-sur-la-couche-radar-on-peut-clairement-voir-les-pixels-appliquez-vous-une-interpolation-spatiale-sur-les-donnees-radars-en-passant-dun-niveau-de-zoom-a-un-autre" class="nav-link">Lorsqu'on effectue un zoom sur la couche radar, on peut clairement voir les pixels. Appliquez-vous une interpolation spatiale sur les données radars en passant d'un niveau de zoom à un autre ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles" class="nav-link">Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?</a>
               <ul class="nav flex-column">
               </ul>
@@ -245,7 +249,8 @@
 <li><a href="#pourquoi-les-files-d-attente-de-message-amqp-cessent-apres-plusieurs-heures-d-inactivite">Pourquoi les files d’attente de message AMQP cessent après plusieurs heures d'inactivité ?</a></li>
 <li><a href="#peut-on-avoir-acces-aux-donnees-radar-meteorologiques">Peut-on avoir accès aux données radar météorologiques ?</a></li>
 <li><a href="#peut-on-acceder-aux-donnees-radar-archivees">Peut-on accéder aux données radar archivées ?</a></li>
-<li><a href="#est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles">Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?</a></li>
+<li><a href="#lorsqu-on-effectue-un-zoom-sur-la-couche-radar-on-peut-clairement-voir-les-pixels-appliquez-vous-une-interpolation-spatiale-sur-les-données-radars-en-passant-d-un-niveau-de-zoom-a-un-autre">Lorsqu'on effectue un zoom sur la couche radar, on peut clairement voir les pixels. Appliquez-vous une interpolation spatiale sur les données radars en passant d'un niveau de zoom à un autre ?</a>             </li>
+<li><a href="#est-ce-que-les-prévisions-historiques-des-modèles-de-prévision-numérique-du-temps-sont-disponibles">Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?</a></li>
 <li><a href="#comment-etre-informe-des-changements-aux-bulletins-ainsi-qu-aux-contenu-et-format-des-modeles-de-prevision-numerique-du-temps">Comment être informé des changements aux bulletins ainsi qu'aux contenu et format des modèles de prévision numérique du temps ?</a></li>
 <li><a href="#comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles-de-prevision-numerique-du-temps">Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?</a></li>
 <li><a href="#pourquoi-ne-pas-produire-un-seul-fichier-grib-avec-toutes-les-variables">Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?</a></li>
@@ -259,7 +264,7 @@
 <li><a href="#a-quelle-frequence-les-donnees-d-observations-rassemblees-par-province-et-territoire-sont-elles-rafraichies">À quelle fréquence les données d’observations rassemblées par province et territoire sont-elles rafraichies ?</a></li>
 <li><a href="#ou-pourrais-je-trouver-les-donnees-de-bouee">Où pourrais-je trouver les données de bouées ?</a></li>
 <li><a href="#comment-faire-pour-acceder-aux-avertissements">Comment faire pour accéder aux avertissements ?</a></li>
-<li><a href="# quelles-sont-les-principales-differences-entre-un-fil-de-donnees-atom-et-le-protocole-amqp-pour acceder-aux-avertissements">Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?</a></li>
+<li><a href="#quelles-sont-les-principales-différences-entre-un-fil-de-données-atom-et-le-protocole-amqp-pour-accéder-aux-avertissements">Quelles sont les principales différences entre un fil de données ATOM et le protocole AMQP pour accéder aux avertissements ?</a></li>
 <li><a href="#les-images-satellitaires-sont-elles-disponibles">Les images satellitaires sont-elles disponibles ?</a></li>
 <li><a href="#les-donnees-de-foudre-sont-elles-disponibles">Les données de foudre sont-elles disponibles ?</a></li>
 <li><a href="#comment-obtenir-les-temperatures-minimales-et-maximales-en-format-json">Comment obtenir les températures minimales et maximales en format JSON ?</a></li>
@@ -287,12 +292,11 @@
 <ul>
 <li>NUMERIC (ASCII)</li>
 <li>Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC)</li>
-<li>Format brut <a href="http://www.vaisala.com/en/defense/products/weatherradar/Pages/IRIS.aspx">IRIS</a>, pour les anciens radars à bande C</li>
 <li>Format brut <a href="https://portal.hdfgroup.org/display/HDF5/HDF5">ODIM_H5</a>, pour les nouveaux radars à bande S</li>
 </ul>
 <h2 id="peut-on-acceder-aux-donnees-radar-archivees">Peut-on accéder aux données radar archivées?</h2>
 <p>Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à <a href="../../cost-recovered/readme_fr/#service-de-desarchivage">recouvrement de coût</a>, nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$.</p>
-<p>Les archives sont disponibles en format brut (IRIS/ODIM_H5) ou en format ASCII. La documentation concernant les <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf">produits radar</a> et des 
+<p>Les archives sont disponibles en format brut (ODIM_H5) ou en format ASCII. La documentation concernant les <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf">produits radar</a> et des 
 <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf">formats de données radar</a> est disponible.</p>
 <p>Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse : ec.dps-client.ec@canada.ca</p>
 <table>
@@ -345,6 +349,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="lorsquon-effectue-un-zoom-sur-la-couche-radar-on-peut-clairement-voir-les-pixels-appliquez-vous-une-interpolation-spatiale-sur-les-donnees-radars-en-passant-dun-niveau-de-zoom-a-un-autre">Lorsqu'on effectue un zoom sur la couche radar, on peut clairement voir les pixels. Appliquez-vous une interpolation spatiale sur les données radars en passant d'un niveau de zoom à un autre ?</h2>
+<p>La résolution originale des données radar est de 1 km, et notre système d'affichage n'applique aucun traitement supplémentaire, tel qu'une interpolation spatiale, en passant d'un niveau de zoom à un autre.</p>
 <h2 id="est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles">Est-ce que les prévisions historiques des modèles de prévision numérique du temps sont disponibles ?</h2>
 <p>Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à <a href="../../cost-recovered/readme_fr/#service-de-desarchivage">recouvrement de coût</a>, nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$. Les données ouvertes correspondantes, s'il y a lieu, sont elles-mêmes gratuites.</p>
 <p>Dès que nous recevons les détails des données demandées, nous pouvons produire un échantillon et l’envoyer à l’usager pour validation. Un estimé peut alors être fourni, une fois la requête confirmée. Selon la nature des requêtes, il faut compter quelques centaines de dollars. Pour toute commande, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: ec.dps-client.ec@canada.ca</p>
@@ -412,9 +418,11 @@
 <p>Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez consulter les bulletins GENOT 03. Vous pouvez trouver un <a href="https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117">exemple d'un tel bulletin</a>.</p>
 <p>Finalement, nous vous recommandons fortement de vous inscrire à nos listes de diffusion <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> et <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> afin d'être averti de toute mise à jour ou changement concernant la disponibilité des données. </p>
 <h2 id="comment-etre-informe-des-problemes-de-production-des-donnees-de-modeles-de-prevision-numerique-du-temps">Comment être informé des problèmes de production des données de modèles de prévision numérique du temps ?</h2>
-<p>Il arrive parfois que les données de modèle de prévision numérique du temps soient en retard ou même absentes de nos services de dissémination de données. Afin de savoir si ce délai ou cette absence est dû à un problème de production, vous pouvez consulter les bulletins AACN01 CWAO.  Ces derniers sont des bulletins émis par le CCMEP au besoin pour informer les bureaux du SMC et d'autres clients de tout problème pouvant perturber ou retarder l'émission et/ou la distribution des produits opérationnels.</p>
-<p>Pour consulter les derniers bulletins AACN01 CWAO, vous pouvez utiliser l'<a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf">utilitaire de recherche de script</a> mis à votre disposition par ECCC. <a href="https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&amp;location=CN01">Exemple pour obtenir les bulletins AACN01 du jour</a>. Pour un jour précis, vous pouvez préciser votre recherche. <a href="https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl?product=AA&amp;location=CN01&amp;day=26&amp;month=11&amp;year=2022">Exemple pour obtenir les informations pour le 26 novembre 2022</a>.</p>
-<p>Il existe par ailleurs une liste de diffusion des bulletins AACN01. Si vous êtes intéressés, veuillez nous contacter à l'adresse ec.dps-client.ec@canada.ca et nous vous ajouterons à la liste de diffusion.</p>
+<p>Il arrive parfois que les données de modèle de prévision numérique du temps soient en retard ou même absentes de nos services de dissémination de données. Afin de savoir si ce délai ou cette absence est dû à un problème de production, vous pouvez consulter les bulletins AACN01 CWAO. Ces derniers sont des bulletins émis par le CCMEP au besoin pour informer les bureaux du SMC et d'autres clients de tout problème pouvant perturber ou retarder l'émission et/ou la distribution des produits opérationnels.</p>
+<p>Pour consulter les derniers bulletins AACN01 CWAO, vous pouvez faire une requête via nos services web <a href="https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/#services">GeoMet-OGC-API du SMC</a></p>
+<p>Voici un exemple de requête pour obtenir tous les bulletins AACN01 émis pour une date donnée (à ajuster selon la date recherchée):</p>
+<p>https://api.weather.gc.ca/collections/bulletins-realtime/items?q=<em>AACN01</em>&amp;f=json&amp;datetime=2023-11-18T09:55</p>
+<p>Il existe par ailleurs une liste de diffusion des bulletins AACN01. Si vous êtes intéressés, veuillez nous contacter à l'adresse dps-client@ec.gc.ca et nous vous ajouterons à la liste de diffusion.</p>
 <h2 id="pourquoi-ne-pas-produire-un-seul-gros-fichier-grib-avec-toutes-les-variables">Pourquoi ne pas produire un seul gros fichier GRIB avec toutes les variables ?</h2>
 <p>Il a été choisi de mettre une variable par fichier car nous avons supposé que la plupart des utilisateurs n'auraient pas besoin de toutes les variables. La vitesse de téléchargement sera la même que si tous les fichiers GRIB étaient dans un seul fichier zip.</p>
 <h2 id="quest-ce-que-le-systeme-de-coordonnees-de-reference-datum-dun-modele-de-prevision-numerique-du-temps">Qu'est-ce que le système de coordonnées de référence (datum) d'un modèle de prévision numérique du temps ?</h2>
