@@ -105,6 +105,7 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
 * [Données climatiques historiques sur grille canadienne (CANGRD)](climate_cangrd/readme_cangrd_fr.md)
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
+* [Données de scénarios climatiques des modèles climatiques de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6)](climate_cmip6/readme_cmip6_fr.md)
 * [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (DCS)](climate_dcs/readme_dcs_fr.md)
 * [Indice de précipitations et d’évapotranspiration normalisé (IPEN)](climate_spei/readme_spei_fr.md)
 * [Indices climatiques mis à l’échelle de manière statistique](climate_indices/readme_climateindices_fr.md)

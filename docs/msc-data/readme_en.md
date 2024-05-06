@@ -105,6 +105,7 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Adjusted and homogenized Canadian Climate Data (AHCCD)](climate_ahccd/readme_ahccd_en.md)
 * [Canadian Gridded Data (CANGRD)](climate_cangrd/readme_cangrd_en.md)
 * [Coupled Model Intercomparison Project Phase 5 - Global Climate Model scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
+* [Coupled Model Intercomparison Project Phase 6 - Global Climate Model scenarios (CMIP6)](climate_cmip6/readme_cmip6_en.md)
 * [Daily Climate Records (Long Term Climate Extremes)](climate_ltce/readme_climateltce_en.md)
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
