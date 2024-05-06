@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Move AQHI and Hurricane pages to Alerts and public forecasts section
 * bug fixes:
     * Fix technical note (FR) link for RDWPS
+    * Fix broken link to tutorials
 
 ## 2.5.20
 
