@@ -23,7 +23,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Alertes météo et maritimes](alerts/readme_alerts_fr.md)
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
-</br></br>
 * [Observations et prévisions de la Cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Ouragans](hurricanes/readme_hurricanes_fr.md)
 
