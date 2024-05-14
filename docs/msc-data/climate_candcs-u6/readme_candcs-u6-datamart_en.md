@@ -15,7 +15,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a NetCDF file is displayed.
 
-CMIP6 files can be found at the following address:
+CanDCS-U6 files can be found at the following address:
 
 * [https://dd.weather.gc.ca/climate/candcsu6/10km/historical/](https://dd.weather.gc.ca/climate/candcsu6/10km/historical)
 * [https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp370,ssp585}](https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios)
