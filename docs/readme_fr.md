@@ -9,11 +9,15 @@ Le Service météorologique du Canada met à la disposition du secteur privé, d
 
 ## Données ouvertes disponibles
 
-Les **[données ouvertes du Service météorologique du Canada (SMC)](msc-data/readme_fr.md)** fournissent des renseignements à jour sur les conditions météorologiques et environnementales, l'eau et le climat passés, présents et futurs au Canada et dans le monde. Les principales catégories de données disponibles sont :
+Les **[données ouvertes du Service météorologique du Canada (SMC)](msc-data/readme_fr.md)** fournissent des informations météorologiques, environnementales, hydriques et climatiques à divers échelles spatiales et temporelles au Canada et partout dans le monde pour divers domaines d’application. Les principales catégories de données disponibles sont :
 
 * Alertes météorologiques, conditions actuelles et prévisions publiques
-* Observations météorologiques, hydrologiques et environnementales et données prévisionnelles
+* Observations météorologiques, hydrologiques et environnementales
+* Prévisions numériques météorologiques et environnementales
+* Données de qualité de l’air
 * Données climatiques du SMC et d'Environnement et Changement climatique Canada (ECCC)
+
+Afin de répondre à des besoins plus ciblés selon les principaux domaines d’application, **[ces données sont également disponibles par thèmes.](msc-data-themes/readme_fr.md)**
 </br></br>
 
 ## Accès aux données

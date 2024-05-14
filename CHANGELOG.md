@@ -8,6 +8,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.0
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * Added new themes pages for easier exploration of available datasets by common weather-related themes.
+* improvements:
+    *
+* bug fixes:
+    *
+
 ## 2.5.21
 
 * date: 2024-05-06
