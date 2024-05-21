@@ -1,6 +1,6 @@
 [In French](readme_coastal-flooding_fr.md)
 
-ECCC logo](../../img_eccc-logo.png)
+[ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > Coastal Flooding
 
