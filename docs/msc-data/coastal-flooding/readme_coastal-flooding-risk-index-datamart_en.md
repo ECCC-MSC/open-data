@@ -48,7 +48,7 @@ Example:
 
 * 20240410T2200Z_MSC_CoastalFloodRiskIndex_ASPC_ASPC_PT014H00M_v1.json
 
-## File contents
+## File content
 
 ?????????????
 
