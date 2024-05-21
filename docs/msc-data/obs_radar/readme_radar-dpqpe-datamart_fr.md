@@ -27,7 +27,7 @@ Les images radar se trouvent à l'adresse :
 où :
 
 * __YYYYMMDD__ : Année, mois et jour
-* __RADAR_ID__ : Identifiant du radar, code de 5 lettres en lettres majuscules (voir la liste ci-dessous).
+* __RADAR_ID__ : Identifiant du radar, code de 5 lettres en lettres majuscules (voir la liste ci-dessous)
 
 Un historique de plusieurs semaines est conservé dans ce répertoire.
 

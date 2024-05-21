@@ -27,7 +27,7 @@ The radar images can be found at :
 where :
 
 * __YYYYMMDD__: Year, month and day
-* __RADAR_ID__: Radar identifier, a 5-letter code in uppercase letters (see list below).
+* __RADAR_ID__: Radar identifier, a 5-letter code in uppercase letters (see list below)
 
 A history of several weeks is kept in this directory.
 
@@ -48,11 +48,11 @@ where :
 * __HHmm__: Hour and minute at which data is sent
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
-* __Radar-DPQPE__ : Constant character string indicating that the data contains the DPQPE product.
+* __Radar-DPQPE__ : Constant character string indicating that the data contains the DPQPE product
 * __RADAR_ID__: 5-letter uppercase code representing the radar identifier
-* __SCALE__: Conversion scale used to measure precipitation, may be in millimeters per hour (MMHR) or centimeters per hour (CMHR).
-* __res__: Horizontal resolution [1km].
-* __hdf5__ : Constant character string indicating that the format is HDF5.
+* __SCALE__: Conversion scale used to measure precipitation, may be in millimeters per hour (MMHR) or centimeters per hour (CMHR)
+* __res__: Horizontal resolution [1km]
+* __hdf5__ : Constant character string indicating that the format is HDF5
 
 Example:
 
