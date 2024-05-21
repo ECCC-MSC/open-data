@@ -14,7 +14,7 @@ L'indice de risque de submersion côtière est un produit polygonal géo-référ
 
 Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données GeoJSON disponibles sur le Datamart du SMC](readme_coastal-flooding-risk-index-datamart_fr.md) 
+* [Données d'indice de risque de submersion côtière en format GeoJSON disponibles sur le Datamart du SMC](readme_coastal-flooding-risk-index-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
 
