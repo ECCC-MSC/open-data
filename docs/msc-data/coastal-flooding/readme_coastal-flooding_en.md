@@ -1,6 +1,6 @@
 [In French](readme_coastal-flooding_fr.md)
 
-[ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > Coastal Flooding
 
@@ -12,7 +12,7 @@ The Coastal Flooding Risk Index is a geo- and time-referenced, polygon product i
 
 ### How to access the data
 
-This experimental data is available on the MSC testing data repository [MSC Datamart](../../msc-datamart/readme_en.md) :
+This data is available on DD-Alpha, the [MSC Datamart](../../msc-datamart/readme_en.md) testing data repository :
 
 * [Coastal flooding risk index in GeoJSON format available on DD-Alpha](readme_coastal-flooding-risk-index-datamart_en.md) 
 
