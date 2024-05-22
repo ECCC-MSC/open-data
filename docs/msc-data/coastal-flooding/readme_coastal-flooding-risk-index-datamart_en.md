@@ -6,7 +6,7 @@
 
 # Coastal flooding risk index data 
 
-This page describes the coastal flooding risk index data [Coastal Flooding](readme_coastal-flooding-risk-index_en.md) in GeoJSON format available on the MSC Datamart.
+This page describes the coastal flooding risk index data [Coastal Flooding](readme_coastal-flooding_en.md) in GeoJSON format available on the MSC Datamart.
 
 ## Data address 
 
