@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Air Quality Deterministic Prediction System 
 
-The Regional Air Quality Deterministic Prediction System (RAQDPS) carries out physics and chemistry calculations to arrive at deterministic predictions of chemical species concentration of interest to air quality. Chemical constituents include O3, SO2, NO and NO2, gases as well as fine particulate matter PM2.5 (2.5 micrometers in diameter or less) and coarse particulate matter PM10 (10 micrometers in diameter or less). Predictions are available from the current day out to 72 hours into the future. Geographical coverage is the North American domain. Data is available at a horizontal resolution of 10 km. While the system encompasses 84 vertical levels, data is available only for the surface level. Predictions are performed twice a day. 
+The Regional Deterministic Air Quality Forecast System (RAQDPS) takes into account physical and chemical processes to produce deterministic forecasts of the concentration of chemical species of interest to air quality. These chemical constituents include gases such as O3, SO2, NO, and NO2, in addition to fine particles PM2.5 (diameter of 2.5 micrometers or less) and coarse particles PM10 (diameter of 10 micrometers or less). The PM2.5 and PM10 now include the contribution of wildfire emissions as well as anthropogenic and biogenic emission sources. The forecasts are available for the present up to 72 hours in the future twice a day (run 00 UTC and 12 UTC). The geographic domain of the RAQDPS covers most of North America with a horizontal resolution of 10km and 84 vertical levels. Forecast data are available only at the surface level.
 
 ## Access
 
