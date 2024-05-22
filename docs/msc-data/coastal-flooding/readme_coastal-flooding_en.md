@@ -12,9 +12,9 @@ The Coastal Flooding Risk Index is a geo- and time-referenced, polygon product i
 
 ### How to access the data
 
-These data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) :
+This experimental data is available on the MSC testing data repository [MSC Datamart](../../msc-datamart/readme_en.md) :
 
-* [Coastal flooding risk index in GeoJSON format available on the MSC Datamart](readme_coastal-flooding-risk-index-datamart_en.md) 
+* [Coastal flooding risk index in GeoJSON format available on DD-Alpha](readme_coastal-flooding-risk-index-datamart_en.md) 
 
 An [Overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available. 
 

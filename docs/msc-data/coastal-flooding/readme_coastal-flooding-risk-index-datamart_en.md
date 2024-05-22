@@ -10,13 +10,13 @@ This page describes the coastal flooding risk index data [Coastal Flooding](read
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../.../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
+MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../.../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoJSON file is displayed.
 
 Coastal flooding risk index data can be found at :
 
-[https://dd.weather.gc.ca/coastal-flooding/risk-index/](https://dd.weather.gc.ca/coastal-flooding/risk-index)
+[https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index)
 
 A 7-day history is kept in this directory.
 
