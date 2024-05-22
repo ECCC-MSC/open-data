@@ -12,7 +12,7 @@ L'indice de risque de submersion côtière est un produit polygonal géo-référ
 
 ### Comment accéder aux données
 
-Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données d'indice de risque de submersion côtière en format GeoJSON disponibles sur DD-Alpha](readme_coastal-flooding-risk-index-datamart_fr.md) 
 

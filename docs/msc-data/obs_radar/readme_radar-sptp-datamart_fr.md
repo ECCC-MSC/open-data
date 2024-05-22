@@ -28,6 +28,25 @@ __Notes__:
 
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.
 
+## Spécifications techniques
+
+Les valeurs du type de précipitation à la surface sont encodées selon le tableau suivant :
+
+| Type de précipitation | Valeur |
+| ------ | ------ |
+| Neige légère | 110 |
+| Neige modérée | 120 | 
+| Neige forte | 130 |
+| Mélange pluie/neige faible | 210 |
+| Mélange pluie/neige modéré | 220 |
+| Mélange pluie/neige intense | 230 |
+| Pluie légère | 310 | 
+| Pluie modérée | 320 | 
+| Pluie forte | 330 |
+| Grêle ou pluie | 410 |
+| Pluie verglaçante légère | 510 |   
+| Pluie verglaçante modérée/intense | 520 |
+
 ## Nomenclature des noms de fichiers
 
 Les fichiers suivent la nomenclature suivante :
