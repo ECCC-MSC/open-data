@@ -10,13 +10,13 @@ Cette page décrit les données d'indice de risque de [Submersion côtière](rea
 
 ## Adresse des données 
 
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.
 
 Les données d'indice de risque de submersion côtière se trouvent à l'adresse :
 
-[https://dd.meteo.gc.ca/coastal-flooding/risk-index/](https://dd.meteo.gc.ca/coastal-flooding/risk-index)
+[https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index)
 
 Un historique de 7 jours est conservé dans ce répertoire.
 
