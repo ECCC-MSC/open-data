@@ -28,6 +28,25 @@ __Note__:
 
 * A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) is available. This list will be updated regularly.
 
+## Technical specifications
+
+Surface precipitation type product values are encoded according to the following table:
+
+| Precipiation type  | Value |
+| ------ | ------ |
+| Light snow | 110 |
+| Moderate snow | 120 | 
+| Heavy snow | 130 |
+| Light mixed rain/snow | 210 | 
+| Moderate mixed rain/snow | 220 |
+| Heavy mixed rain/snow | 230 |
+| Light rain | 310 | 
+| Moderate rain | 320 |
+| Heavy rain | 330 | 
+| Hail or rain | 410 |
+| Light freezing rain | 510 |  
+| Moderate/heavy freezing rain | 520 |
+
 ## Nomenclature of file names
 
 Files follow the following nomenclature:
