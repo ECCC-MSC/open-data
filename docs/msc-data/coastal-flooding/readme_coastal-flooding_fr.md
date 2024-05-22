@@ -32,10 +32,10 @@ A venir
 
 ### Produits
 
-* Produits graphiques de l'aperçu du risque de submersion côtière: [https://hpfx.collab.science.gc.ca/YYYYMMDD/coastal_flooding_risk_index/](https://hpfx.collab.science.gc.ca)
+Produits graphiques de l'aperçu du risque de submersion côtière: [https://hpfx.collab.science.gc.ca/YYYYMMDD/coastal_flooding_risk_index/](https://hpfx.collab.science.gc.ca)
 
 ## Documentation technique
 
-* [Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
+[Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
 
 

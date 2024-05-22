@@ -32,8 +32,8 @@ Coming soon
 
 ### Products
 
-* Coastal Flooding Risk Outlooks graphical products: [https://hpfx.collab.science.gc.ca/YYYYMMDD/coastal_flooding_risk_outlooks/](https://hpfx.collab.science.gc.ca)
+Coastal Flooding Risk Outlooks graphical products: [https://hpfx.collab.science.gc.ca/YYYYMMDD/coastal_flooding_risk_outlooks/](https://hpfx.collab.science.gc.ca)
 
 ## Technical documentation
 
-* [Coastal Flooding Risk Outlooks graphical products](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_EN.pdf) 
+[Coastal Flooding Risk Outlooks graphical products](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_EN.pdf) 
