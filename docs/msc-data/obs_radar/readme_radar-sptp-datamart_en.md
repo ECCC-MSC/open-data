@@ -32,7 +32,7 @@ __Note__:
 
 Surface precipitation type product values are encoded according to the following table:
 
-| Precipiation type  | Value |
+| Precipitation type  | Value |
 | ------ | ------ |
 | Light snow | 110 |
 | Moderate snow | 120 | 
