@@ -14,8 +14,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Added new themes pages for easier exploration of available datasets by common weather-related themes.
+    * Draft coastal flooding risk index pages 
 * improvements:
-    *
+    * Add SPTP values in radar SPTP documentation (radar pilot project)
+    * Update AMQP page (Sarracenia releases GitHub link in Windows section)
 * bug fixes:
     *
 
