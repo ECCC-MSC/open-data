@@ -79,7 +79,7 @@ Also, here is a list of recommendations for the "anonymous" user who wishes to r
 
 Working with the Windows environment, simply download the latest version of Sarracenia at this address:
 
-[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
+[https://github.com/MetPX/sarracenia/releases](https://github.com/MetPX/sarracenia/releases)
 
 This is an EXE file that can be used without having to [install](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst) a Python environment.
 
