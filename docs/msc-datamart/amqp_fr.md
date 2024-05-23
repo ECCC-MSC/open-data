@@ -75,7 +75,7 @@ Aussi, voici une liste de recommandations pour l'usager "anonymous" qui souhaite
 
 Dans l’environnement Windows, il suffit de télécharger la dernière version de Sarracenia à cette adresse :
 
-[https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/](https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/)
+[https://github.com/MetPX/sarracenia/releases](https://github.com/MetPX/sarracenia/releases)
 
 Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [installer](https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst) d’environnement Python.
 
