@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Add SPTP values in radar SPTP documentation (radar pilot project)
     * Update AMQP page (Sarracenia releases GitHub link in Windows section)
-    * Update RDWPS abstract (CI4)
+    * Update RDWPS abstract 
 * bug fixes:
     *
 
