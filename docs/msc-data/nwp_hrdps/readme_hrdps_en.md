@@ -44,5 +44,5 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ## Changelog
 
-The chronology of changes to the High Resolution Deterministic Prediction System (HRDPS) is available [here](changelog_hrdps_en.md).
-
+* The chronology of changes to the High Resolution Deterministic Prediction System (HRDPS) is available [here](changelog_hrdps_en.md)
+* The chronology of changes to the Canadian Land Data Assimilation System in the HRDPS (CaLDAS-HRDPS) is available [here](changelog_caldas-hrdps_en.md)
