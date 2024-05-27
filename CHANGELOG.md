@@ -18,6 +18,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Add SPTP values in radar SPTP documentation (radar pilot project)
     * Update AMQP page (Sarracenia releases GitHub link in Windows section)
+    * Update RDWPS abstract 
+    * Update FAQ: removal of last question (Meteocentre forum)
+    * Update the MSC Open Data Service Usage Policy (https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/issues/456)
 * bug fixes:
     *
 
