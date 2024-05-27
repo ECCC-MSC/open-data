@@ -6,7 +6,7 @@
 
 # Données et Produits du Système régional de prévision déterministe de la qualité de l'air 
 
-Le Système régional de prévision déterministe de la qualité de l'air (SRPDQA) procède à des calculs physiques et chimiques afin de produire des prévisions déterministes de la concentration d'espèces chimiques d'intérêt pour la qualité de l'air. Ces constituants chimiques incluent les gaz O3, SO2, NO et NO2, s'ajoutant aux particules fines PM2.5 (diamètre de 2.5 micromètres ou moins) et aux particules grossières (diamètre de 10 micromètres ou moins). Les prévisions sont disponibles pour le présent jusqu'à 72 heures dans le futur. La couverture géographique est le domaine nord américain. Les données sont disponibles à une résolution spatiale horizontale de 10 km. Le système comporte 84 niveaux verticaux et les données sont disponibles seulement au niveau de la surface. Les prévisions sont exécutées deux fois par jour. 
+Le Système régional de prévision déterministe de la qualité de l'air (SRPDQA) procède à des calculs physiques et chimiques afin de produire des prévisions déterministes de la concentration d'espèces chimiques d'intérêt pour la qualité de l'air. Ces constituants chimiques incluent les gaz O3, SO2, NO et NO2, s'ajoutant aux particules fines PM2.5 (diamètre de 2.5 micromètres ou moins) et aux particules grossières (diamètre de 10 micromètres ou moins). La couverture géographique est le domaine nord américain. Les données sont disponibles à une résolution spatiale horizontale de 10 km. Le système comporte 84 niveaux verticaux et les données sont disponibles seulement au niveau de la surface. Les prévisions sont exécutées deux fois par jour. 
 
 ## Accès
 

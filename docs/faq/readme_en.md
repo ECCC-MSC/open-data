@@ -37,7 +37,6 @@ This section contains the most frequently asked questions about the MSC open dat
 * [Can I have rainfall amount data ?](#can-i-have-rainfall-amount-data)
 * [I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?](#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal)
 * [Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?](#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index)
-* [Is there a discussion platform for users ?](#is-there-a-discussion-platform-for-users)
 
 ## Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?
 
@@ -284,12 +283,4 @@ In Canada, observed air quality data are generally produced by provinces and mun
 Also, a number of Canadian stations are available in the U.S. [AirNow](https://www.airnow.gov/aqi-and-health/) database, and are also downloadable from the Open Project [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). On the other hand, ECCC publishes observations and forecasts for the Air Quality Health Index, which can be found in [the MSC Datamart and the GeoMet-OGC-API geospatial web services](../msc-data/aqhi/readme_aqhi_en.md).
 
 Finally, the [National Pollutant Release Inventory](https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html) is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.
-
-## Is there a discussion platform for users ?
-
-A discussion platform dedicated to MSC open data has been set up by a third party to allow the user community to interact more easily and benefit from each other's experience:
-
-[http://meteocentre.com/help/msc-open-data/](http://meteocentre.com/help/msc-open-data/)
-
-While we approve and applaud this initiative, we would like to make it clear that ECCC and MSC are not responsible for this site and their employees are not obligated to respond to the questions asked. When ECCC or MSC employees participate, they do so in their personal capacity.
 

@@ -19,7 +19,7 @@ Les utilisateurs des données ouvertes du SMC doivent :
 * Demander et récupérer uniquement les données que vous avez l'intention d'utiliser
 * S'inscrire aux listes d'annonces [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) et/ou [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) pour être informé des changements apportés aux services de données du SMC et pouvoir s'adapter en conséquence
 
-Veuillez vous référer aux règles d'utilisation et aux pratiques exemplaires suivantes pour garantir une bonne utilisation des services de données ouvertes du SMC.
+Veuillez vous référer aux règles d'utilisation et aux pratiques exemplaires suivantes pour garantir une bonne utilisation des services de données ouvertes du SMC. Il est important de noter que nous nous réservons le droit de bloquer les usagers qui saturent nos services en ne respectant pas cette politique d'utilisation.
 
 ## Règles d'utilisation et pratiques exemplaires
 
