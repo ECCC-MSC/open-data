@@ -36,6 +36,8 @@ Produits graphiques de l'aperçu du risque de submersion côtière: [https://hpf
 
 ## Documentation technique
 
-[Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
+* [Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
+* [Prévisions et alertes de submersions côtières](https://www.canada.ca/fr/services/environnement/meteo/autres-services/prevision-alerte-submersions-cotieres.html)
+
 
 
