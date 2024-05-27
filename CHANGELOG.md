@@ -21,6 +21,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update RDWPS abstract 
     * Update FAQ: removal of last question (Meteocentre forum)
     * Update the MSC Open Data Service Usage Policy (https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/issues/456)
+    * Update polygon package version (6.10.0)
 * bug fixes:
     *
 
