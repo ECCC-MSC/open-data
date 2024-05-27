@@ -38,7 +38,6 @@ Cette section contient les questions les plus fréquemment posées au sujet des 
 * [Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?](#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue)
 * [Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?](#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal)
 * [Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?](#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante)
-* [Existe-t-il une plateforme de discussion pour les usagers ?](#existe-t-il-une-plateforme-de-discussion-pour-les-usagers)
 
 ## Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?
 
@@ -273,14 +272,5 @@ Au Canada, les données d'observation de qualité de l'air sont généralement p
 Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine [AirNow](https://www.airnow.gov/aqi-and-health/), et sont aussi téléchargeables dans le projet ouvert [OpenAQ](https://openaq.org/#/map?parameter=o3&_k=6p035e). De son côté, ECCC publie les observations et les prévisions pour la Cote air santé, et celles-ci se trouvent sur [le Datamart du SMC et les services web géospatiaux GeoMet-OGC-API](../msc-data/aqhi/readme_aqhi_fr.md).
 
 Enfin, il est possible de consulter [l'Inventaire national des rejets de polluants](https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html). Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publiée plus d’un an après la date courante, sur une base annuelle.
-
-## Existe-t-il une plateforme de discussion pour les usagers ?
-
-Une plateforme de discussion consacrée aux données ouvertes du SMC a été mise en place par une tierce partie afin de permettre à la communauté des usagers d'interagir plus facilement et de tirer profit de l'expérience de chacun:
-
-[http://meteocentre.com/help/msc-open-data/](http://meteocentre.com/help/msc-open-data/)
-
-Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'ECCC ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.
-
 
 [def]: #est-ce-que-les-previsions-historiques-des-modeles-de-prevision-numerique-du-temps-sont-disponibles

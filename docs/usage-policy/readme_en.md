@@ -19,7 +19,7 @@ MSC Open Data users should:
 * Request and retrieve only data you intend to use
 * Subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) and/or [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) announcement lists to be notified of changes to MSC data services and be able to adapt accordingly 
 
-Please refer to the following usage rules and best practices to ensure proper usage of MSC Open Data services.
+Please refer to the following usage rules and best practices to ensure proper usage of MSC Open Data services. It is important to note that we reserve the right to block users who saturate our services by not respecting this usage policy.
 
 ## Usage Rules and Best Practices
 
