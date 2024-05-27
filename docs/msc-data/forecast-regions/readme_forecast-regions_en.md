@@ -16,7 +16,7 @@ This package includes shapefiles and polygon sets, categorized into various laye
 
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/meteocode/geodata/version_6.9.0/) 
+* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/meteocode/geodata/version_6.10.0/) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -34,5 +34,5 @@ Not available.
 
 ## Technical documentation
 
-* Current version of the [MSC Geography package](https://dd.weather.gc.ca/meteocode/geodata/version_6.9.0/Documentations/).
+* Current version of the [MSC Geography package](https://dd.weather.gc.ca/meteocode/geodata/version_6.10.0/Documentations/).
 * Last 3 versions are available [here](https://dd.weather.gc.ca/meteocode/geodata/).
