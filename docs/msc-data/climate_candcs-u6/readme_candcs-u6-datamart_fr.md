@@ -27,6 +27,8 @@ où :
 
 ## Nomenclature des noms de fichiers
 
+La nomenclature des noms des fichiers est la suivante:
+
 * `{period}_ECCC_CanDCSU6_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc`
 * `{period}_ECCC_CanDCSU6-{scenario}_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc`
 

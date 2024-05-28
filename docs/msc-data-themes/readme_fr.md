@@ -2,9 +2,9 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_fr.md) > MSC Données par thèmes
+[TOC](../readme_fr.md) > Données du SMC par thème
 
-# Jeux de données par thèmes
+# Jeux de données par thème
 
 Les **[données ouvertes du Service météorologique du Canada (SMC)](../msc-data/readme_fr.md)** représentent une ressource précieuse mise à la disposition du secteur privé, des universitaires et du grand public. Elles englobent un large éventail de données météorologiques, climatiques, hydrologiques et environnementales. Grâce à l'adoption de standards ouverts, ces services offrent un accès rapide et gratuit à des milliers de jeux de données et de produits, qu'ils soient en temps réel ou archivés. Ces données sont facilement intégrables dans les applications spécifiques des utilisateurs ainsi que dans leurs systèmes d'aide à la décision.
 

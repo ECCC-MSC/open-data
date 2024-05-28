@@ -2,7 +2,7 @@
 
 ![ECCC logo](../img_eccc-logo.png)
 
-[TOC](../readme_en.md) > MSC Datasets by themes
+[TOC](../readme_en.md) > MSC Datasets by theme
 
 # Datasets by theme
 
