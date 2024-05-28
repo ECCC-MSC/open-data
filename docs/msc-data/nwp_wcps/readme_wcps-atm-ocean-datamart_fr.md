@@ -6,7 +6,7 @@
 
 # Données des prévisions couplées atmosphère-océan-glace de mer du Système de prévision du cycle de l’eau (SPCE) en format NetCDF 
 
-Les prévisions couplées atmosphère-océan-glace de mer de GEM-LAM avec NEMO-CICE sont disponibles aux heures au format NetCDF sur une grille latitude-longitude, correspondant à une résolution d'environ 1km (0.008 x 0.008 degré), sur le domaine des Grands Lacs, du fleuve Saint-Laurent et du Golfe du Saint-Laurent. 
+SPCE-prévision couplée est la composante du Système de prévision du cycle de l'eau (SPCE) qui fournit les prévisions couplées atmosphère-océan-glace de mer, correspondant à une résolution d'environ 1km (0.008 x 0.008 degré), sur le domaine des Grand Lacs, de fleuve Saint-Laurent de du Golfe de Saint-Laurent. Elle est lancée quatre fois par jour à 00, 06, 12 et 18 UTC et produit des prévisions sur 84 heures, basé sur le modèle atmosphérique GEM, couplé au modèle océan-glace NEMO-CICE. Les produits de la SPCE-prévision couplée sont (1) GEM : températures de l'air en surface, vitesses du vent en surface et ruissellement en surface (2) NEMO-CICE : variété de variables  des lacs/océan et de la glace de mer, par exemple les niveaux et les températures des lacs. Ells sont conçues pour aider les prévisionnistes à émettre des bulletins et des avertissements dans les eaux envahies par la glace pour la navigation, l'alerte sur les niveaux d'eau, les interventions d'urgence, la recherche et le sauvetage, et la prévision de la glace de mer du CIS.
 
 ## Adresse des données 
 

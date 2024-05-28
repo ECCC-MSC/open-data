@@ -31,7 +31,8 @@ The [MSC Open Data Services Usage Policy](../.../usage-policy/readme_en.md) dete
 
 ### Metadata
 
-* Coming soon.
+* The [metadata of the Satellite Imagery - GOES-West is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bde9b113-ab40-4d7f-a501-5cbb0b55805c).
+* The [metadata of the Satellite Imagery - GOES-East is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/4564cbf5-9de5-4521-b007-a20d73ad6f89).
 
 ### Products
 

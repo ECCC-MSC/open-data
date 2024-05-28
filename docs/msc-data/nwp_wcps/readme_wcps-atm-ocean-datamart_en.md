@@ -6,7 +6,7 @@
 
 # Water Cycle Prediction System (WCPS) coupled atmosphere-ocean-sea ice forecasts data in NetCDF format
 
-The coupled atmosphere-ocean-sea ice forecasts of GEM-LAM coupled with NEMO-CICE from WCPS are available as hourly products. These products are in NetCDF format with a latitude and longitude grid, corresponding to about 1km resolution (0.008 x 0.008 degree), over the domain of the Great Lakes, St. Lawrence Rivers and the Gulf of St. Lawrence.
+WCPS-coupled forecast is the component in the Water Cycle Prediction System (WCPS) that provides the coupled atmosphere-ocean-sea ice forecasts at a 1km resolution (0.008 x 0.008 degree) over the Great Lakes, St. Lawrence River and the Gulf of St. Lawrence. It launches 4 times a day at 00, 06, 12, and 18 UTC and produces 84 hours forecast, based on the atmospheric model GEM, coupled with the ocean-ice model NEMO-CICE. The products from WCPS-coupled forecasts are (1) GEM : surface air temperatures, surface wind velocities, and surface runoff (2) NEMO-CICE : variety of lake/ocean sea ice variables, for example, lake levels and temperatures. They are designed to help forecasters issuing bulletins and warnings in ice-infestested waters for navigation, water level alert, emergency response, Search and Rescue, and CIS Sea Ice forecast.
 
 ## Data location 
 

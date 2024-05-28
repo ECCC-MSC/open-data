@@ -57,7 +57,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+* The [metadata of the Weather Alerts is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/79550951-6b17-49a6-9028-8ae1c21274cf).
 
 ## Technical documentation
 

@@ -8,7 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.1
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+* improvements:
+    * Update abstract for WCPS-atmosphere
+    * Add Metadata links for Weather Alerts and Satellites
+* bug fixes:
+
 ## 2.6.0
+
 * date: 2024-05-28
 * announcements:
     * Not announced

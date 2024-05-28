@@ -56,7 +56,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+* Les [métadonnées des Alertes météo sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/79550951-6b17-49a6-9028-8ae1c21274cf).
 
 ## Documentation technique
 

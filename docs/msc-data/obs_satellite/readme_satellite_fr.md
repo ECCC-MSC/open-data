@@ -31,7 +31,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-* À venir.
+* Les [métadonnées d'Image satellite - GOES-Ouest sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/bde9b113-ab40-4d7f-a501-5cbb0b55805c).
+* Les [métadonnées d'Image satellite - GOES-Est sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/4564cbf5-9de5-4521-b007-a20d73ad6f89).
 
 ### Produits
 
