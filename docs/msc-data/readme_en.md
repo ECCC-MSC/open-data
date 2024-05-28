@@ -110,6 +110,7 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Daily Climate Records (Long Term Climate Extremes)](climate_ltce/readme_climateltce_en.md)
 * [Historical observations](climate_obs/readme_climateobs_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
+* [Statistically scaled climate scenario data from CMIP6 global climate models (CanDCS-U6)](climate_candcs-u6/readme_candcs-u6_en.md)
 * [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
 * [Statistically downscaled climate indices](climate_indices/readme_climateindices_en.md)
 </br></br>
