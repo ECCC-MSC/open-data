@@ -107,12 +107,12 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Canadian Gridded Data (CANGRD)](climate_cangrd/readme_cangrd_en.md)
 * [Coupled Model Intercomparison Project Phase 5 - Global Climate Model scenarios (CMIP5)](climate_cmip5/readme_cmip5_en.md)
 * [Coupled Model Intercomparison Project Phase 6 - Global Climate Model scenarios (CMIP6)](climate_cmip6/readme_cmip6_en.md)
-* [Daily Climate Records (Long Term Climate Extremes)](climate_ltce/readme_climateltce_en.md)
-* [Historical observations](climate_obs/readme_climateobs_en.md)
 * [Statistically downscaled climate scenarios (DCS)](climate_dcs/readme_dcs_en.md)
 * [Statistically scaled climate scenario data from CMIP6 global climate models (CanDCS-U6)](climate_candcs-u6/readme_candcs-u6_en.md)
 * [Standardized Precipitation Evapotranspiration Index (SPEI)](climate_spei/readme_spei_en.md)
 * [Statistically downscaled climate indices](climate_indices/readme_climateindices_en.md)
+* [Historical observations](climate_obs/readme_climateobs_en.md)
+* [Daily Climate Records (Long Term Climate Extremes)](climate_ltce/readme_climateltce_en.md)
 </br></br>
 
 ## Other data
