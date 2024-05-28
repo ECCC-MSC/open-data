@@ -26,6 +26,8 @@ where:
 
 ## Nomenclature of file names
 
+The files have the following nomenclature:
+
 * `{period}_ECCC_CMIP6_{variable}-Pct{percentile}_Sfc_LatLon1.0_{timestep}.nc`
 * `{period}_ECCC_CMIP6-{scenario}_{variable}-Pct{percentile}_Sfc_LatLon1.0_{timestep}.nc`
 

@@ -11,7 +11,7 @@ Multimodel ensembles of model outputs and projected gridded changes are availabl
 
 ## Data address 
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../.../msc-datamart/amqp_en.md) as soon as they become available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](.../.../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a NetCDF file is displayed.
 
@@ -26,6 +26,8 @@ where :
 * __scenarios__ : Refers to different future emission scenarios [ssp126, ssp245, ssp585] for several periods, i.e. 2015-2100, 2021-2050 and 2041-2070 and 2071-2100
 
 ## Nomenclature of file names
+
+The files have the following nomenclature:
 
 * `{period}_ECCC_CanDCSU6_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc`
 * `{period}_ECCC_CanDCSU6-{scenario}_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc`
