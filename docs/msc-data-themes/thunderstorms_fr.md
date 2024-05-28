@@ -141,12 +141,12 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/thunderstorms_theme_ie.js";
+        js.src = "../../js/thunderstorms_theme_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/thunderstorms_theme.js";
+        js.src = "../../js/thunderstorms_theme.js";
     }
     head.appendChild(js);
 </script>

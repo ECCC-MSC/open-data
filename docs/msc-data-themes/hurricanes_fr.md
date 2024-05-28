@@ -150,12 +150,12 @@ input[type="checkbox"] {
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/hurricane_theme_ie.js";
+        js.src = "../../js/hurricane_theme_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/hurricane_theme.js";
+        js.src = "../../js/hurricane_theme.js";
     }
     head.appendChild(js);
 </script>

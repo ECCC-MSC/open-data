@@ -155,12 +155,12 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/ice_storms_theme_ie.js";
+        js.src = "../../js/ice_storms_theme_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/ice_storms_theme.js";
+        js.src = "../../js/ice_storms_theme.js";
     }
     head.appendChild(js);
 </script>
