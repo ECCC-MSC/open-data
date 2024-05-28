@@ -6,7 +6,7 @@
 
 # Statistically scaled climate scenario data from CMIP6 global climate models (CanDCS-U6) in NetCDF format
 
-Multimodel ensembles of model outputs and projected gridded changes are available for historical simulations and four emission scenarios, SSP126, SSP245, SSPP370 and SSP585, at 1/10th degree resolution. Projected changes are expressed as anomalies relative to the 1950-2014 and 1971-2000 reference periods.
+Multimodel ensembles of model outputs and projected gridded changes are available for historical simulations and four emission scenarios, SSP126, SSP245 and SSP585, at 1/10th degree resolution. Projected changes are expressed as anomalies relative to the 1950-2014 and 1971-2000 reference periods.
 .
 
 ## Data address 
@@ -18,12 +18,12 @@ The data is available via the HTTPS protocol. It can be accessed using a standar
 CanDCS-U6 files can be found at the following address:
 
 * [https://dd.weather.gc.ca/climate/candcsu6/10km/historical/](https://dd.weather.gc.ca/climate/candcsu6/10km/historical)
-* [https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp370,ssp585}](https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios)
+* [https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp585}](https://dd.weather.gc.ca/climate/candcsu6/10km/scenarios)
 
 where :
 
 * __historical__: Historical simulations for the periods 1950-2014 and 1971-2000
-* __scenarios__ : Refers to different future emission scenarios [ssp126, ssp245, ssp370, ssp585] for several periods, i.e. 2015-2100, 2021-2050 and 2041-2070 and 2071-2100
+* __scenarios__ : Refers to different future emission scenarios [ssp126, ssp245, ssp585] for several periods, i.e. 2015-2100, 2021-2050 and 2041-2070 and 2071-2100
 
 ## Nomenclature of file names
 
@@ -33,15 +33,15 @@ where :
 with :
 
 * __period__: Period associated with each data set, in {year of period start}-{year of period end} format: [1900-2014; 2015-2100; etc.].
- * __ECCC__ : Constant character string for Environment and Climate Change Canada, the data source.
+ * __ECCC__ : Constant character string for Environment and Climate Change Canada, the data source
 * __CanDCSU6__ : Constant string indicating statistically scaled climate scenario data from CMIP6 global climate models
-* __variable__: Name of the climate variable available in the file, taking one of the following values: [AirTemp, AirTempMin, AirTempMax, Precip]. For anomalies: [AirTempAnomaly, AirTempMinAnomaly, AirTempMaxAnomaly, PrecipAnomaly].
-* __scenario__ : Scenarios emissions, taking one of the values: [SSP126, SSP245, SSP370, SSP585].
+* __variable__: Name of the climate variable available in the file, taking one of the following values: [AirTemp, AirTempMin, AirTempMax, Precip]. For anomalies: [AirTempAnomaly, AirTempMinAnomaly, AirTempMaxAnomaly, PrecipAnomaly]
+* __scenario__ : Scenarios emissions, taking one of the values: [SSP126, SSP245, SSP585]
 * __percentile__: Ensemble percentile, taking one of the values: [Pct5, Pct25, Pct50, Pct75, Pct95]; Pct5 represents the 5th ensemble percentile; Pct25 represents the 25th ensemble percentile, etc.
-* __Sfc__ : Constant character string indicating that data are available on the surface.
+* __Sfc__ : Constant character string indicating that data are available on the surface
 * __LatLon__ : Constant string indicating lat-lon grid projection 
 * __0.86__ : Horizontal grid resolution of 0.86 degrees 
-* __timeStep__: Time step, taking one of the following values: [P1Y, P1M]; P1Y represents a time step of one year, P1M represents a time step of one month; [P1Y-{DJF, MAM, JJA, SON}] represents the seasonal period (ex: DJF: December-January-February) ; [P0Y-{DJF, MAM, JJA, SON}] represents the 30-year average, P0Y indicates a single time period in the file.
+* __timeStep__: Time step, taking one of the following values: [P1Y, P1M]; P1Y represents a time step of one year, P1M represents a time step of one month; [P1Y-{DJF, MAM, JJA, SON}] represents the seasonal period (ex: DJF: December-January-February) ; [P0Y-{DJF, MAM, JJA, SON}] represents the 30-year average, P0Y indicates a single time period in the file
 * __nc__: Constant string indicating NetCDF format
 
 Examples:
