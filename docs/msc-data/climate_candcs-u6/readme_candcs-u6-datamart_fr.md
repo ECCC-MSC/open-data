@@ -6,7 +6,7 @@
 
 # Données scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6 (CanDCS-U6) en format NetCDF
 
-Des ensembles multimodèles de sorties de modèles et de changements projetés sur grille sont disponibles pour les simulations historiques et quatre scénarios d'émissions, SSP126, SSP245, SSPP370 et SSP585, à une résolution de 1/10è de degré. Les changements projetés sont exprimés sous forme d'anomalies par rapport aux périodes de référence 1950-2014 et 1971-2000.
+Des ensembles multimodèles de sorties de modèles et de changements projetés sur grille sont disponibles pour les simulations historiques et quatre scénarios d'émissions, SSP126, SSP245 et SSP585, à une résolution de 1/10è de degré. Les changements projetés sont exprimés sous forme d'anomalies par rapport aux périodes de référence 1950-2014 et 1971-2000.
 .
 
 ## Adresse des données 
@@ -18,12 +18,12 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 Les fichiers CanDCS-U6 se trouvent à l'adresse suivante :
 
 * [https://dd.meteo.gc.ca/climate/candcsu6/10km/historical/](https://dd.meteo.gc.ca/climate/candcsu6/10km/historical)
-* [https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp370,ssp585}](https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios)
+* [https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp585}](https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios)
 
 où :
 
 * __historical__ : Simulations historiques sur les périodes 1950-2014 et 1971-2000
-* __scenarios__ : Réfère à différents scénarios d'émissions futurs [ssp126, ssp245, ssp370, ssp585] pour plusieurs périodes, soit 2015-2100, 2021-2050 et 2041-2070 et 2071-2100
+* __scenarios__ : Réfère à différents scénarios d'émissions futurs [ssp126, ssp245, ssp585] pour plusieurs périodes, soit 2015-2100, 2021-2050 et 2041-2070 et 2071-2100
 
 ## Nomenclature des noms de fichiers
 
@@ -36,7 +36,7 @@ avec :
  * __ECCC__ : Chaîne de caractères constante pour Environnement et Changement climatique Canada, la source des données
 * __CanDCSU6__ : Chaîne de caractères constante indiquant les données de scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6
 * __variable__ : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs : [AirTemp, AirTempMin, AirTempMax, Precip]. Pour les anomalies : [AirTempAnomaly, AirTempMinAnomaly, AirTempMaxAnomaly, PrecipAnomaly]
-* __scenario__ : Scénarios d'émissions, prenant l'une des valeurs : [SSP126, SSP245, SSP370, SSP585]
+* __scenario__ : Scénarios d'émissions, prenant l'une des valeurs : [SSP126, SSP245, SSP585]
 * __percentile__ : Percentile d'ensemble, prenant l'une des valeurs : [Pct5, Pct25, Pct50, Pct75, Pct95] ; Pct5 représente le 5e percentile de l'ensemble ; Pct25 représente le 25e percentile de l'ensemble, etc.
 * __Sfc__ : Chaîne de caractères constante indiquant que les données sont disponibles à la surface
 * __LatLon__ : Chaîne de caractères constante indiquant la projection lat-lon de la grille 
