@@ -22,22 +22,10 @@ Les ensembles de données de modèles individuels et tous les produits dérivés
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_candcs-u6-geomet_fr.md)
+* [Données disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_candcs-u6-datamart_fr.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) du CMIP6 provenant de GeoMet du SMC :
-
-<div id="map" style="height: 400px; position: relative">
-  <div id="legend-popup">
-  <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
-  </div>
-</div>
-</div>
-<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
-  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
-  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
-</div>
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
 ### Licence
 
@@ -57,47 +45,3 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [Informations sur les profils représentatifs d’évolution de concentration](http://scenarios-climatiques.canada.ca/index.php?page=scen-rcp)
 * [Introduction aux scénarios climatiques](http://scenarios-climatiques.canada.ca/index.php?page=cmip6-scenarios)
 * Ces données sont aussi disponibles via le [Centre canadien des services climatiques](https://www.canada.ca/fr/environnement-changement-climatique/services/changements-climatiques/centre-canadien-services-climatiques/a-propos.html)
-
-
-<style>
-  #legend-img {
-    margin: 0px;
-    height:280px;
-  }
-  #legend-popup {
-    position: absolute;
-    top: 40px;
-    right: 8px;
-    z-index: 2;
-  }
-  .legend-switch{
-    top: 8px;
-    right: .5em;
-  }
-  .ol-touch .legend-switch {
-    top: 80px;
-  }
-</style>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
-<script>
-    function isIE() {
-      return window.navigator.userAgent.match(/(MSIE|Trident)/);
-    }
-    var head = document.getElementsByTagName('head')[0];
-    var js = document.createElement("script");
-    js.type = "text/javascript";
-    if (isIE())
-    {
-        js.src = "../../../js/cmip6_ie.js";
-        document.getElementById("controller").setAttribute("hidden", true);
-    }
-    else
-    {
-        js.src = "../../../js/cmip6.js";
-    }
-    head.appendChild(js);
-</script>
