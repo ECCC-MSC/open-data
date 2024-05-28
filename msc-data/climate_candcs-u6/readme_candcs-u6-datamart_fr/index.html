@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme candcs u6 datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-scenarios-climatiques-mis-a-lechelle-statistique-des-modeles-climatiques-mondiaux-du-cmip6-candcs-u6-en-format-netcdf" class="nav-link">Données scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6 (CanDCS-U6) en format NetCDF</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_candcs-u6-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_candcs-u6_fr/">CanDCS-U6</a> &gt; CanDCS-U6 sur le Datamart du SMC</p>
+<h1 id="donnees-scenarios-climatiques-mis-a-lechelle-statistique-des-modeles-climatiques-mondiaux-du-cmip6-candcs-u6-en-format-netcdf">Données scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6 (CanDCS-U6) en format NetCDF</h1>
+<p>Des ensembles multimodèles de sorties de modèles et de changements projetés sur grille sont disponibles pour les simulations historiques et quatre scénarios d'émissions, SSP126, SSP245 et SSP585, à une résolution de 1/10è de degré. Les changements projetés sont exprimés sous forme d'anomalies par rapport aux périodes de référence 1950-2014 et 1971-2000.
+.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.</p>
+<p>Les fichiers CanDCS-U6 se trouvent à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/climate/candcsu6/10km/historical">https://dd.meteo.gc.ca/climate/candcsu6/10km/historical/</a></li>
+<li><a href="https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios">https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp585}</a></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>historical</strong> : Simulations historiques sur les périodes 1950-2014 et 1971-2000</li>
+<li><strong>scenarios</strong> : Réfère à différents scénarios d'émissions futurs [ssp126, ssp245, ssp585] pour plusieurs périodes, soit 2015-2100, 2021-2050 et 2041-2070 et 2071-2100</li>
+</ul>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<ul>
+<li><code>{period}_ECCC_CanDCSU6_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc</code></li>
+<li><code>{period}_ECCC_CanDCSU6-{scenario}_{variable}-Pct{percentile}_Sfc_LatLon0.86_{timestep}.nc</code></li>
+</ul>
+<p>avec :</p>
+<ul>
+<li><strong>period</strong> : Période associée à chaque ensemble de données, sous format {année du début de la période}-{année de la fin de la période} : [1900-2014; 2015-2100; etc.]</li>
+<li><strong>ECCC</strong> : Chaîne de caractères constante pour Environnement et Changement climatique Canada, la source des données</li>
+<li><strong>CanDCSU6</strong> : Chaîne de caractères constante indiquant les données de scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6</li>
+<li><strong>variable</strong> : Nom de la variable climatique disponible dans le fichier, prenant l'une des valeurs : [AirTemp, AirTempMin, AirTempMax, Precip]. Pour les anomalies : [AirTempAnomaly, AirTempMinAnomaly, AirTempMaxAnomaly, PrecipAnomaly]</li>
+<li><strong>scenario</strong> : Scénarios d'émissions, prenant l'une des valeurs : [SSP126, SSP245, SSP585]</li>
+<li><strong>percentile</strong> : Percentile d'ensemble, prenant l'une des valeurs : [Pct5, Pct25, Pct50, Pct75, Pct95] ; Pct5 représente le 5e percentile de l'ensemble ; Pct25 représente le 25e percentile de l'ensemble, etc.</li>
+<li><strong>Sfc</strong> : Chaîne de caractères constante indiquant que les données sont disponibles à la surface</li>
+<li><strong>LatLon</strong> : Chaîne de caractères constante indiquant la projection lat-lon de la grille </li>
+<li><strong>0.86</strong> : Résolution horizontale de la grille de 0.86 degré </li>
+<li><strong>timeStep</strong> : Pas de temps, prenant l'une des valeurs : [P1Y, P1M] ; P1Y représente un pas de temps d'un an, P1M représente un pas de temps de un mois ; [P1Y-{DJF, MAM, JJA, SON}] représente la période saisonnière (ex: DJF: décembre-janvier-février) annuelle ; [P0Y-{DJF, MAM, JJA, SON}] représente la moyenne sur 30 ans, P0Y indique une seule période de temps dans le fichier</li>
+<li><strong>nc</strong> : Chaîne de caractères constante indiquant le format NetCDF</li>
+</ul>
+<p>Exemples :</p>
+<ul>
+<li>1950-2014_ECCC_CanDCSU6_AirTemp-Pct50_Sfc_LatLon0.86_P1M.nc</li>
+<li>1971-2000_ECCC_CanDCSU6_Precip-Pct25_Sfc_LatLon0.86_P1Y-SON.nc</li>
+<li>2041-2070_ECCC_CanDCSU6-SSP126_PrecipAnomaly-Pct50_Sfc_LatLon0.86_P1Y-JJA.nc</li>
+</ul>
+<h2 id="liste-des-variables">Liste des variables</h2>
+<p>Les variables et unités disponibles pour les ensembles de données CanDCS-U6 sur le Datamart du SMC sont :</p>
+<ul>
+<li>Température moyenne (°C)</li>
+<li>Changement projeté de la température moyenne (°C)</li>
+<li>Température minimale (°C)</li>
+<li>Changement projeté de la température minimale (°C)</li>
+<li>Température maximale (°C)</li>
+<li>Changement projeté de la température maximale (°C)</li>
+<li>Précipitations totales (mm)</li>
+<li>Changement relatif projeté des précipitations totales (mm)</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, merci de <a href="mailto:info.cccs-ccsc@canada.ca">nous contacter</a>.</p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

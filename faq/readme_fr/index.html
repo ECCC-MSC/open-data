@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -226,10 +236,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#existe-t-il-une-plateforme-de-discussion-pour-les-usagers" class="nav-link">Existe-t-il une plateforme de discussion pour les usagers ?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -271,7 +277,6 @@
 <li><a href="#est-il-possible-d-avoir-acces-aux-hauteurs-cumulatives-de-pluie-prevue">Est-il possible d'avoir accès aux hauteurs cumulatives de pluie prévue ?</a></li>
 <li><a href="#je-ne-vois-pas-de-conditions-actuelles-sous-l-element-correspondant-dans-le-fichier-citypage-weather-en-format-xml-est-ce-normal">Je ne vois pas de « conditions actuelles » sous l'élément correspondant dans le fichier citypage_weather en format XML, est-ce normal ?</a></li>
 <li><a href="#est-il-possible-d-avoir-acces-aux-donnees-observees-passees-de-qualite-de-l-air-et-aux-donnees-d-emission-des-polluants-utilisees-pour-calculer-la-cote-air-sante">Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?</a></li>
-<li><a href="#existe-t-il-une-plateforme-de-discussion-pour-les-usagers">Existe-t-il une plateforme de discussion pour les usagers ?</a></li>
 </ul>
 <h2 id="peut-on-avoir-acces-aux-scores-de-verification-de-vos-modeles-de-prevision-numerique-du-temps-et-comment-se-comparent-ils-par-rapport-aux-autres-centres-internationaux">Peut-on avoir accès aux scores de vérification de vos modèles de prévision numérique du temps et comment se comparent-ils par rapport aux autres centres internationaux ?</h2>
 <p>Le <a href="https://www.ecmwf.int/">Centre européen de prévision à moyen terme (CEPMT)</a>, désigné en 2011 comme le <a href="https://confluence.ecmwf.int/pages/viewpage.action?pageId=24316358&amp;src=sidebar">''WMO Lead Centre for Deterministic NWP Verification''</a>, rend disponibles tous les scores en altitude et de surface de tous les centres participants à l’échange de scores des pays de l’<a href="https://public.wmo.int/fr">Organisation météorologique mondiale (OMM)</a>.</p>
@@ -501,11 +506,7 @@
 <h2 id="est-il-possible-davoir-acces-aux-donnees-observees-de-qualite-de-lair-et-aux-donnees-demission-des-polluants-utilisees-pour-calculer-la-cote-air-sante">Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?</h2>
 <p>Au Canada, les données d'observation de qualité de l'air sont généralement produites par les provinces et municipalités et récoltées par ECCC. C’est vrai tant pour le temps réel que pour les données « officielles » qui font l'objet d'un contrôle qualité détaillé et qui sont habituellement publiées l'année suivante.  Ces données officielles sont assemblées dans la base de données du programme de <a href="http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=fr">Surveillance national de la pollution atmosphérique (SNPA)</a>, maintenant sur le catalogue de données ECCC.</p>
 <p>Aussi, un certain nombre de stations canadiennes sont disponibles dans la base de données américaine <a href="https://www.airnow.gov/aqi-and-health/">AirNow</a>, et sont aussi téléchargeables dans le projet ouvert <a href="https://openaq.org/#/map?parameter=o3&amp;_k=6p035e">OpenAQ</a>. De son côté, ECCC publie les observations et les prévisions pour la Cote air santé, et celles-ci se trouvent sur <a href="../../msc-data/aqhi/readme_aqhi_fr/">le Datamart du SMC et les services web géospatiaux GeoMet-OGC-API</a>.</p>
-<p>Enfin, il est possible de consulter <a href="https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html">l'Inventaire national des rejets de polluants</a>. Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publiée plus d’un an après la date courante, sur une base annuelle.</p>
-<h2 id="existe-t-il-une-plateforme-de-discussion-pour-les-usagers">Existe-t-il une plateforme de discussion pour les usagers ?</h2>
-<p>Une plateforme de discussion consacrée aux données ouvertes du SMC a été mise en place par une tierce partie afin de permettre à la communauté des usagers d'interagir plus facilement et de tirer profit de l'expérience de chacun:</p>
-<p><a href="http://meteocentre.com/help/msc-open-data/">http://meteocentre.com/help/msc-open-data/</a></p>
-<p>Nous approuvons et applaudissons cette initiative, mais nous tenons à préciser qu'ECCC ainsi que le SMC ne sont pas responsables de ce site et que leurs employés n'ont pas l'obligation de répondre aux questions posées. Quand des employés d'ECCC ou du SMC participent, ils le font à titre personnel.</p></div>
+<p>Enfin, il est possible de consulter <a href="https://www.canada.ca/fr/environnement-changement-climatique/services/inventaire-national-rejets-polluants/outils-ressources-donnees/explorerdonnees.html">l'Inventaire national des rejets de polluants</a>. Veuillez noter qu'on accorde beaucoup de temps aux installations polluantes pour déclarer leurs émissions, par conséquent l’information est publiée plus d’un an après la date courante, sur une base annuelle.</p></div>
             </div>
         </div>
 

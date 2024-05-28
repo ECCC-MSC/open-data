@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -118,6 +128,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specifications" class="nav-link">Technical specifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#nomenclature-of-file-names" class="nav-link">Nomenclature of file names</a>
               <ul class="nav flex-column">
               </ul>
@@ -156,6 +170,66 @@
 <ul>
 <li>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">list of radar sites</a> is available. This list will be updated regularly.</li>
 </ul>
+<h2 id="technical-specifications">Technical specifications</h2>
+<p>Surface precipitation type product values are encoded according to the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Precipitation type</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Light snow</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Moderate snow</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Heavy snow</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Light mixed rain/snow</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Moderate mixed rain/snow</td>
+<td>220</td>
+</tr>
+<tr>
+<td>Heavy mixed rain/snow</td>
+<td>230</td>
+</tr>
+<tr>
+<td>Light rain</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Moderate rain</td>
+<td>320</td>
+</tr>
+<tr>
+<td>Heavy rain</td>
+<td>330</td>
+</tr>
+<tr>
+<td>Hail or rain</td>
+<td>410</td>
+</tr>
+<tr>
+<td>Light freezing rain</td>
+<td>510</td>
+</tr>
+<tr>
+<td>Moderate/heavy freezing rain</td>
+<td>520</td>
+</tr>
+</tbody>
+</table>
 <h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
 <p>Files follow the following nomenclature:</p>
 <p><code>{YYYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_SfcPrecipType_{res}.tif</code></p>

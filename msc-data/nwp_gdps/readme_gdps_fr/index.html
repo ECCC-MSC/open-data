@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -141,7 +151,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; SGPD</p>
 <h1 id="donnees-et-produits-du-systeme-global-de-prevision-deterministe">Données et produits du Système global de prévision déterministe</h1>
-<p>Le Système global de prévision déterministe (SPGD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 10 jours dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est mondiale. La résolution spatiale horizontale des données est de 15 km. Les données sont offertes pour 33 niveaux verticaux. Les prévisions sont exécutées deux fois par jour.</p>
+<p>Le Système global de prévision déterministe (SPGD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE). Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale sur une grille native Yin-Yang avec une résolution horizontale de 15 km. Les données sont offertes pour 33 niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.2 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.</p>
 <h2 id="acces">Accès</h2>
 <h3 id="comment-acceder-aux-donnees">Comment accéder aux données</h3>
 <p>Ces données sont respectivement disponibles l'API / les services web <a href="../../../msc-geomet/readme_fr/">GeoMet du SMC</a> et le serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> :</p>

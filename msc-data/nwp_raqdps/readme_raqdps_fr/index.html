@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -141,7 +151,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; SRPDQA</p>
 <h1 id="donnees-et-produits-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair">Données et Produits du Système régional de prévision déterministe de la qualité de l'air</h1>
-<p>Le Système régional de prévision déterministe de la qualité de l'air (SRPDQA) procède à des calculs physiques et chimiques afin de produire des prévisions déterministes de la concentration d'espèces chimiques d'intérêt pour la qualité de l'air. Ces constituants chimiques incluent les gaz O3, SO2, NO et NO2, s'ajoutant aux particules fines PM2.5 (diamètre de 2.5 micromètres ou moins) et aux particules grossières (diamètre de 10 micromètres ou moins). Les prévisions sont disponibles pour le présent jusqu'à 72 heures dans le futur. La couverture géographique est le domaine nord américain. Les données sont disponibles à une résolution spatiale horizontale de 10 km. Le système comporte 84 niveaux verticaux et les données sont disponibles seulement au niveau de la surface. Les prévisions sont exécutées deux fois par jour. </p>
+<p>Le Système régional de prévision déterministe de la qualité de l'air (SRPDQA) prend en compte les processus physiques et chimiques afin de produire des prévisions déterministes de la concentration d'espèces chimiques d'intérêt pour la qualité de l'air. Ces constituants chimiques incluent les gaz O3, SO2, NO, et NO2, s'ajoutant aux particules fines PM2.5 (diamètre de 2.5 micromètres ou moins) et aux particules grossières (diamètre de 10 micromètres ou moins). Les prévisions sont disponibles pour le présent jusqu'à 72 heures dans le futur deux fois par jour (passe de 00 UTC et 12 UTC). Le domaine géographique du SRPDQA couvre la majeure partie de l'Amérique du Nord avec une résolution horizontale de 10 km et 84 niveaux verticaux. Les données sont disponibles seulement au niveau de la surface. </p>
 <h2 id="acces">Accès</h2>
 <h3 id="comment-acceder-aux-donnees">Comment accéder aux données</h3>
 <p>Ces données sont respectivement disponibles sur les API / services web <a href="../../../msc-geomet/readme_fr/">GeoMet du SMC</a> ainsi que sur le serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> :</p>

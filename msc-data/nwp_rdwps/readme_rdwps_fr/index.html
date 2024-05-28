@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -141,17 +151,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; SRPDV</p>
 <h1 id="donnees-et-produits-du-systeme-regional-de-prevision-deterministe-de-vague-srpdv">Données et Produits du Système Régional de Prévision Déterministe de Vague (SRPDV)</h1>
-<p>Le Système Régional de Prévision Déterministe de Vague (SRPDV) produit les prévisions de vagues en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du <a href="../../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a>. Sur les Grands Lacs, une prévision de glace du <a href="../../nwp_wcps/readme_wcps_fr/">Système de Prévision du Cycle de l'Eau (SPCE)</a> est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace. Sur l'océan, une prévision de glace du <a href="../../nwp_riops/readme_riops_fr/">Système Régional de Prévision Glace-Océan (SRPOG)</a> est utilisée : dans le Pacifique nord-est les vagues se propagent librement pour des concentrations de glace inférieures à 50%, au delà de ce seuil il n'y a aucune propagation; dans l'Atlantique nord-ouest la même logique est utilisée que dans les Grands Lacs.</p>
-<p>WW3 (WAVEWATCH III® Development Group, WW3DG 2019) est un modèle spectral de prévision de vague de troisième génération qui résout l’évolution de l’équation du bilan énergétique pour le spectre de vague 2D d’énergie. Le modèle WW3 a été adopté par de nombreux centres nationaux de prévision au cours des dernières années.</p>
-<p>Ce système comprend plusieurs domaines :</p>
-<ul>
-<li>Lac Supérieur</li>
-<li>Lac Huron-Michigan</li>
-<li>Lac Érié</li>
-<li>Lac Ontario</li>
-<li>Atlantic nord-ouest</li>
-<li>Pacifique nord-est</li>
-</ul>
+<p>Le Système régional de prévision déterministe de vague (SRPDV) produit les prévisions de vagues jusqu'à 48 heures dans le futur en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres du <a href="../../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a>. Sur les Grands Lacs, une prévision de glace du <a href="../../nwp_wcps/readme_wcps_fr/">Système de prévision du cycle de l'eau (SPCE)</a> est utilisée par le modèle pour atténuer ou supprimer la croissance des vagues dans les zones couvertes par respectivement 25% à 75% et plus de 75% de glace. Sur l'océan, une prévision de glace du Système Régional de <a href="../../nwp_riops/readme_riops_fr/">Prévision Glace-Océan (SRPOG)</a> est utilisée : dans le Pacifique nord-est les vagues se propagent librement pour des concentrations de glace inférieures à 50%, au delà de ce seuil il n'y a aucune propagation; dans l'Atlantique nord-ouest la même logique est utilisée que dans les Grands Lacs. Les éléments prévus incluent la hauteur significative des vagues, la période pic, des paramètres partitionnés et autres. Ce système comprend plusieurs domaines : lac Supérieur, lac Huron-Michigan, lac Érié, Lac Ontario, Atlantique nord-ouest et Pacifique nord-est.</p>
 <h2 id="acces">Accès</h2>
 <h3 id="comment-acceder-aux-donnees">Comment accéder aux données</h3>
 <p>Ces données sont respectivement disponibles sur les services du serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> et les services web <a href="../../../msc-geomet/readme_fr/">GeoMet du SMC</a> :</p>

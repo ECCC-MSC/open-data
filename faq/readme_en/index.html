@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -226,10 +236,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#is-there-a-discussion-platform-for-users" class="nav-link">Is there a discussion platform for users ?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -271,7 +277,6 @@
 <li><a href="#can-i-have-rainfall-amount-data">Can I have rainfall amount data ?</a></li>
 <li><a href="#i-do-not-see-a-condition-under-the-corresponding-element-of-the-citypage-xml-file-is-this-normal">I do not see a condition under the corresponding element of the Citypage XML file, is this normal ?</a></li>
 <li><a href="#is-it-possible-to-access-past-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index">Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?</a></li>
-<li><a href="#is-there-a-discussion-platform-for-users">Is there a discussion platform for users ?</a></li>
 </ul>
 <h2 id="can-we-have-access-to-the-verification-scores-of-your-numerical-weather-prediction-models-and-how-do-they-compare-with-other-international-centres">Can we have access to the verification scores of your numerical weather prediction models and how do they compare with other international centres ?</h2>
 <p>The <a href="https://www.ecmwf.int/">European Centre for Medium-Range Weather Forecasting (ECMWF)</a>, designated in 2011 as the <a href="https://confluence.ecmwf.int/pages/viewpage.action?pageId=24316358&amp;src=sidebar">WMO Lead Centre for Deterministic NWP Verification</a>, makes available all altitude and surface scores of all centres participating in the <a href="https://public.wmo.int/en">World Meteorological Organization (WMO)</a> score exchange.</p>
@@ -508,11 +513,7 @@ are available, whereas with AMQP, user is advised without sending any request.</
 <h2 id="is-it-possible-to-access-observed-air-quality-data-and-pollutant-emission-data-used-to-calculate-the-air-quality-health-index">Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?</h2>
 <p>In Canada, observed air quality data are generally produced by provinces and municipalities and collected by ECCC. This is true for both real-time and "official" data that are subject to detailed quality control and are usually published the following year. These official data are assembled in the <a href="http://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/?lang=en">National Air Pollution Surveillance (NAPS)</a> program, now on the ECCC data catalogue.</p>
 <p>Also, a number of Canadian stations are available in the U.S. <a href="https://www.airnow.gov/aqi-and-health/">AirNow</a> database, and are also downloadable from the Open Project <a href="https://openaq.org/#/map?parameter=o3&amp;_k=6p035e">OpenAQ</a>. On the other hand, ECCC publishes observations and forecasts for the Air Quality Health Index, which can be found in <a href="../../msc-data/aqhi/readme_aqhi_en/">the MSC Datamart and the GeoMet-OGC-API geospatial web services</a>.</p>
-<p>Finally, the <a href="https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html">National Pollutant Release Inventory</a> is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.</p>
-<h2 id="is-there-a-discussion-platform-for-users">Is there a discussion platform for users ?</h2>
-<p>A discussion platform dedicated to MSC open data has been set up by a third party to allow the user community to interact more easily and benefit from each other's experience:</p>
-<p><a href="http://meteocentre.com/help/msc-open-data/">http://meteocentre.com/help/msc-open-data/</a></p>
-<p>While we approve and applaud this initiative, we would like to make it clear that ECCC and MSC are not responsible for this site and their employees are not obligated to respond to the questions asked. When ECCC or MSC employees participate, they do so in their personal capacity.</p></div>
+<p>Finally, the <a href="https://www.canada.ca/en/environment-climate-change/services/national-pollutant-release-inventory/tools-resources-data/exploredata.html">National Pollutant Release Inventory</a> is available. Please note that polluting facilities are given considerable time to report their emissions, therefore the information is published more than one year after the current date, on an annual basis.</p></div>
             </div>
         </div>
 

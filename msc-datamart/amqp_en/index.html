@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -197,7 +207,7 @@
 </ul>
 <h2 id="windows-environment">Windows environment</h2>
 <p>Working with the Windows environment, simply download the latest version of Sarracenia at this address:</p>
-<p><a href="https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/">https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/</a></p>
+<p><a href="https://github.com/MetPX/sarracenia/releases">https://github.com/MetPX/sarracenia/releases</a></p>
 <p>This is an EXE file that can be used without having to <a href="https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst">install</a> a Python environment.</p>
 <h2 id="examples">Examples</h2>
 <p>Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters:</p>

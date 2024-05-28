@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -118,6 +128,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#specifications-techniques" class="nav-link">Spécifications techniques</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
               <ul class="nav flex-column">
               </ul>
@@ -156,6 +170,66 @@
 <ul>
 <li>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">liste des sites radar</a> est disponible. Cette liste sera mise à jour régulièrement.</li>
 </ul>
+<h2 id="specifications-techniques">Spécifications techniques</h2>
+<p>Les valeurs du type de précipitation à la surface sont encodées selon le tableau suivant :</p>
+<table>
+<thead>
+<tr>
+<th>Type de précipitation</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neige légère</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Neige modérée</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Neige forte</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Mélange pluie/neige faible</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Mélange pluie/neige modéré</td>
+<td>220</td>
+</tr>
+<tr>
+<td>Mélange pluie/neige intense</td>
+<td>230</td>
+</tr>
+<tr>
+<td>Pluie légère</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Pluie modérée</td>
+<td>320</td>
+</tr>
+<tr>
+<td>Pluie forte</td>
+<td>330</td>
+</tr>
+<tr>
+<td>Grêle ou pluie</td>
+<td>410</td>
+</tr>
+<tr>
+<td>Pluie verglaçante légère</td>
+<td>510</td>
+</tr>
+<tr>
+<td>Pluie verglaçante modérée/intense</td>
+<td>520</td>
+</tr>
+</tbody>
+</table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
 <p>Les fichiers suivent la nomenclature suivante :</p>
 <p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_SfcPrecipType_{res}.tif</code></p>

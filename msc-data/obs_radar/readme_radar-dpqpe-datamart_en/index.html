@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -114,19 +124,11 @@
             
             <li class="nav-item" data-level="1"><a href="#radar-imagery" class="nav-link">Radar imagery</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+            <li class="nav-item" data-level="2"><a href="#data-address" class="nav-link">Data address</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#about-the-new-dual-pol-s-band-radars" class="nav-link">About the new dual-pol S-Band radars</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#historical-radar-images" class="nav-link">Historical radar images</a>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-of-file-names" class="nav-link">Nomenclature of file names</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -134,7 +136,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+            <li class="nav-item" data-level="2"><a href="#dd_info-mailing-list-announcements" class="nav-link">dd_info mailing list announcements</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -145,133 +147,53 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_radarimage-datamart_fr/">En français</a></p>
+<p><a href="../readme_radar-dpqpe-datamart_fr/">In French</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_radar_en/">Radar imagery</a> &gt; Radar imagery on MSC Datamart</p>
+<p><a href="../../../readme_en/">TdM</a> &gt; <a href="../../readme_en/">MSC Data</a> &gt; <a href="../readme_radar_en/">DPQPE Data</a> &gt; Dual Polarized Quantitative Precipitation Estimation (DPQPE) on the MSC Datamart</p>
 <h1 id="radar-imagery">Radar imagery</h1>
-<p>This page describes the <a href="../readme_radar_en/">weather radar</a> imagery available in GIF format via the MSC Datamart.</p>
-<p>These images are used to feed the weather radar page on ECCC's <a href="https://meteo.gc.ca/radar/index_e.html">public forecast website</a>.</p>
-<h2 id="data-location">Data location</h2>
-<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GIF file.</p>
-<p>The radar images are available at the following address:</p>
-<p><a href="https://dd.weather.gc.ca/radar/">https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}</a></p>
-<p>where:</p>
+<p>This page describes the Dual Polarized Quantitative Precipitation Estimation (DPQPE) data in GeoTIFF format available on the MSC Datamart.</p>
+<p>This product is exclusively available for all Canadian S-band radars and provides a two-dimensional representation of precipitation rate, based on the 0.4 degree elevation scan data from S-band radars. It therefore provides an estimate of precipitation rate as close as possible to the Earth's surface.</p>
+<p>The DPQPE product is built, among other things, on the basis of a series of polarimetric processing steps, which serve primarily as quality control measures to remove non-meteorological artifacts from the raw data. In addition, there is a hybrid option in the DPQPE product designed to fill gaps in precipitation data resulting from radar signal or polarimetric data processing. This hybrid option uses the two adjacent upper elevation scans above 0.4 degrees to help fill these data gaps.</p>
+<p>Precipitation rates are calculated in liquid equivalent in MM/HR and converted to CM/HR for snowfall over a maximum coverage range of 240 km. </p>
+<h2 id="data-address">Data address</h2>
+<p>MSC Datamart data can be <a href=".../.../msc-datamart/amqp_en.md">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.</p>
+<p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoTIFF file is displayed.</p>
+<p>The radar images can be found at :</p>
+<p><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/radar/dpqpe/{RADAR_ID}</a></p>
+<p>where :</p>
 <ul>
-<li>PRODUCT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]</li>
-<li>FORMAT = [GIF] (other formats may appear in the future)</li>
-<li>STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).</li>
+<li><strong>YYYYMMDD</strong>: Year, month and day</li>
+<li><strong>RADAR_ID</strong>: Radar identifier, a 5-letter code in uppercase letters (see list below)</li>
 </ul>
-<p>The past 48 hours of data is available in each directory.</p>
+<p>A history of several weeks is kept in this directory.</p>
 <p><strong>Notes</strong>: </p>
 <ul>
-<li>Details about these products can be found on the Environment and Climate Change Canada's <a href="https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&amp;n=2B931828-1">About radar</a> page.</li>
-<li>The Dual Polarization Quantitative Precipitation Estimation (DPQPE) product is only available for S-band radars. It is a two-dimensional representation of radar estimated precipitation rate at the lowest sweep of the radar scan (0.4 degrees elevation for the majority of the S-Band radars). So, the estimated precipitation rate is as close as possible to the earth’s surface. DPQPE product is based, among others, on a series of dual-pol processing steps (quality control) to remove, non-weather artifacts from the raw data (volume scans). It is provided in mm/hr for rainfall rates and cm/hr for snowfall rates. This product is used in our high-resolution North American radar composite available in <a href="https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html">WeatherCan</a>, the official mobile application of ECCC.</li>
 <li>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">list of radar sites</a> is available. This list will be updated regularly.</li>
 </ul>
-<h2 id="filename-nomenclature">Filename nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
-<p>The files have the following nomenclature, with XXX, a 3 letter radar identifier in capital letters. For the new S-band radars, a 5-letter code is used.</p>
+<h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
+<p>Files have the following nomenclature:</p>
+<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.hdf5</code></p>
+<p>where :</p>
 <ul>
-<li><strong>PRECIPET</strong></li>
+<li><strong>YYYYMMDD</strong> : Year, month and day of data emission</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
+<li><strong>HHmm</strong>: Hour and minute at which data is sent</li>
+<li><strong>Z</strong>: Time zone (UTC time)</li>
+<li><strong>MSC</strong>: Constant character string for Meteorological Service of Canada, the data source</li>
+<li><strong>Radar-DPQPE</strong> : Constant character string indicating that the data contains the DPQPE product</li>
+<li><strong>RADAR_ID</strong>: 5-letter uppercase code representing the radar identifier</li>
+<li><strong>SCALE</strong>: Conversion scale used to measure precipitation, may be in millimeters per hour (MMHR) or centimeters per hour (CMHR)</li>
+<li><strong>res</strong>: Horizontal resolution [1km]</li>
+<li><strong>hdf5</strong> : Constant character string indicating that the format is HDF5</li>
 </ul>
-<p>Images for regional composites (5 regions of Canada) and individual radar are available. Two intensities scale (8 and 14 colors) are also available for each image. </p>
-<p>Composites with 14 colors intensity scale:</p>
+<p>Example:</p>
 <ul>
-<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif </li>
-<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif </li>
+<li>20240429T0030Z_MSC_Radar-DPQPE_CASFM_CMHR_1km.tif</li>
 </ul>
-<p>ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif</p>
-<p>Composites with 8 colors intensity scale:</p>
-<ul>
-<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif </li>
-<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif </li>
-</ul>
-<p>ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif</p>
-<p>Individual radar with 14 colors intensity scale:</p>
-<ul>
-<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif </li>
-<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)</li>
-</ul>
-<p>ex: 201409201400_XFT_PRECIPET_RAIN.gif</p>
-<p>Individual radar with 8 colors intensity scale:</p>
-<ul>
-<li>YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif </li>
-<li>YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)</li>
-</ul>
-<p>ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif</p>
-<ul>
-<li><strong>PRECIPET contingency products</strong></li>
-</ul>
-<p>When a Canadian radar site is down, an alternate PRECIPET product is made available for contingency purposes. It is a composite product generated from the available neighbouring radars, which in some cases may include US radars. It is also important to note that for some regions, neighbouring radars may not cover the entire domain of the radar out of service. 
-To this end and to help the user identify these non-covered areas, red circles have been added to show the contributing radars in the composite.</p>
-<p>This product contains the string "COMP" in its file name, as:</p>
-<p>YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif</p>
-<p>ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif</p>
-<p>This composite image can be differentiated from the original radar image, by the inscription "Composite" in the legend on the right of the image.</p>
-<p>To learn more about how to use the composite images, you can read the documentation on line:</p>
-<p><a href="https://weather.gc.ca/radar/how-to-use_e.html#display">https://weather.gc.ca/radar/how-to-use_e.html#display</a></p>
-<ul>
-<li><strong>CAPPI</strong></li>
-</ul>
-<p>The CAPPI files have the following nomenclature:</p>
-<ul>
-<li>YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif</li>
-<li>YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif</li>
-</ul>
-<p>ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif</p>
-<ul>
-<li><strong>DPQPE</strong></li>
-</ul>
-<p>The DPQPE files have the following nomenclature:</p>
-<ul>
-<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif</li>
-<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif</li>
-</ul>
-<p>ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif</p>
-<ul>
-<li><strong>24_HR_ACCUM</strong> </li>
-</ul>
-<p>Shows the rain accumulation, in mm, over the last 24hr period. </p>
-<p><strong>Based on PRECIPET</strong></p>
-<p>The product is available for the last 48 hr, every 10 minutes for C-Band radars and every 6 minutes for S-Band radars.</p>
-<ul>
-<li>YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif</li>
-</ul>
-<p>ex: 200806161900_WBI_24_HR_ACCUM_MM.gif</p>
-<p><strong>Based on DPQPE</strong></p>
-<p>The product is available every 6 minutes, and for the last 48 hr.</p>
-<ul>
-<li>YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-XXXXX_Accum24h.gif</li>
-</ul>
-<p>ex: 20201106T1050Z_MSC_Radar-DPQPE-CASBE_Accum24h.gif</p>
-<h2 id="about-the-new-dual-pol-s-band-radars">About the new dual-pol S-Band radars</h2>
-<p>ECCC is in the process of replacing its old C-Band radars with new dual-pol S-Band radars. This radar renewal project extends over several years and the installation of radar is done progressively (For more information, see the Products documentation section below).</p>
-<p>The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important:</p>
-<ul>
-<li>Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality.</li>
-<li>The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename).</li>
-<li>The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA).</li>
-<li>Some other new products will emerge in the future and be available externally.</li>
-</ul>
-<p>What will happen with the availability of these products and the impact on users?</p>
-<ul>
-<li>For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA</a>). It help to manage the transition.</li>
-<li>In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/</a>).</li>
-<li>Users will be informed as and when new radars are installed and their products are available following the same procedure described above.</li>
-</ul>
-<p>Example (the Radisson case):</p>
-<ul>
-<li><strong>The 3-lettre ID product every 10 minutes (Temporary)</strong> : <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/</a></li>
-<li><strong>The 5-letter ID products every 6 minutes (Permanently)</strong> : <a href="https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/">https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA</a></li>
-</ul>
-<h2 id="historical-radar-images">Historical radar images</h2>
-<p>Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:</p>
-<p><a href="https://climate.weather.gc.ca/radar/index_e.html">https://climate.weather.gc.ca/radar/index_e.html</a></p>
 <h2 id="support">Support</h2>
-<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
-<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
-<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">contact us</a>.</p>
+<h2 id="dd_info-mailing-list-announcements">dd_info mailing list announcements</h2>
+<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> list.</p></div>
             </div>
         </div>
 

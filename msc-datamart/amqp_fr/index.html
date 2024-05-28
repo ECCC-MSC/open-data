@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../msc-data/readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -193,7 +203,7 @@
 </ul>
 <h2 id="environnement-windows">Environnement Windows</h2>
 <p>Dans l’environnement Windows, il suffit de télécharger la dernière version de Sarracenia à cette adresse :</p>
-<p><a href="https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/">https://hpfx.collab.science.gc.ca/~pas037/Sarracenia_Releases/</a></p>
+<p><a href="https://github.com/MetPX/sarracenia/releases">https://github.com/MetPX/sarracenia/releases</a></p>
 <p>Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à <a href="https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst">installer</a> d’environnement Python.</p>
 <h2 id="exemples">Exemples</h2>
 <p>Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD :</p>

@@ -34,8 +34,18 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href="../../readme_en/" class="nav-link">Available data /<br>Données disponibles</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
@@ -141,7 +151,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; GDPS</p>
 <h1 id="data-and-products-of-the-global-deterministic-prediction-system">Data and Products of the Global Deterministic Prediction System</h1>
-<p>The Global Deterministic Prediction System (GDPS) performs physical calculations to produce deterministic forecasts of atmospheric elements from the present day to 10 days in the future. Elements of the atmosphere include temperature, precipitation, cloud cover, wind speed and direction, and humidity. This product contains the raw numerical results of these calculations. The geographical coverage is global. The horizontal spatial resolution of the data is 15 km. Data is available for 33 vertical levels. The forecasts are carried out twice a day.</p>
+<p>The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global on a native Yin-Yang grid at 15 km horizontal resolution. Data is available for 33 vertical levels and interpolated on a global latitude-longitude uniform grid with 0.2 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.</p>
 <h2 id="access">Access</h2>
 <h3 id="how-to-access-the-data">How to access the data</h3>
 <p>This data is available from the <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a> API / web services and on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server respectively:</p>
