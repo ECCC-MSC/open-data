@@ -22,7 +22,7 @@ Individual model datasets and all related derived products are subject to the te
 
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
 
-* [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/)
+* [Data available on the GeoMet-Climate geospatial web services](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
 * [NetCDF data available on the MSC Datamart](readme_candcs-u6-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
