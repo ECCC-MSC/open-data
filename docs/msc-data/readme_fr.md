@@ -108,7 +108,7 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 * [Données de scénarios climatiques des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (CMIP5)](climate_cmip5/readme_cmip5_fr.md)
 * [Données de scénarios climatiques des modèles climatiques de la phase 6 du projet d’intercomparaison de modèles couplés (CMIP6)](climate_cmip6/readme_cmip6_fr.md)
 * [Données de résultats statistiquement réduits à l'échelle pour des modèles climatiques de la phase 5 du projet d’intercomparaison de modèles couplés (DCS)](climate_dcs/readme_dcs_fr.md)
-* [Données de scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6 (CanDCS-U6)](climate_candcs-u6/readme_candcs-u6-datamart_fr.md)
+* [Données de scénarios climatiques mis à l’échelle statistique des modèles climatiques mondiaux du CMIP6 (CanDCS-U6)](climate_candcs-u6/readme_candcs-u6_fr.md)
 * [Indice de précipitations et d’évapotranspiration normalisé (IPEN)](climate_spei/readme_spei_fr.md)
 * [Indices climatiques mis à l’échelle de manière statistique](climate_indices/readme_climateindices_fr.md)
 * [Observations historiques](climate_obs/readme_climateobs_fr.md)
