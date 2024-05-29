@@ -6,9 +6,7 @@
 
 # Data and Products of the Global Deterministic Storm Surge Prediction System (GDSPS)
 
-The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a modified version of the NEMO ocean model (Wang et al. 2021, 2022, 2023). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds, sea level pressure, ice concentration, ice velocity and surface currents from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md). The three dimensionnal ocean temperature and salinity fields of the model are nudged to values provided by the [Global Ice-Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md) and the GDPS.
-
-During the post-processing phase, storm surge elevation is derived from total water level by harmonic analysis using t_tide (Pawlowicz et al. 2002).
+The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a modified version of the NEMO ocean model (Wang et al. 2021, 2022, 2023). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds, sea level pressure, ice concentration, ice velocity and surface currents from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md). The three dimensionnal ocean temperature and salinity fields of the model are nudged to values provided by the [Global Ice-Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md) and the GDPS. During the post-processing phase, storm surge elevation (ETAS) is derived from total water level (SSH) by harmonic analysis using t_tide (Foreman et al. 2009).
 
 ## Access
 
