@@ -6,9 +6,7 @@
 
 # Data and Products of the Global Deterministic Wave Prediction System (GDWPS) 
 
-The Global Deterministic Wave Prediction System (GDWPS) produces wave forecasts using the third generation spectral wave model WaveWatch III® (WW3). The model is forced by the 10 meters winds from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md). The GDPS forecast is a coupled atmosphere-ice-ocean model, its sea ice forecast is used by the GDWPS forecast to dampen or suppress wave growth in areas covered respectively with 25% to 75% and more than 75% ice.
-
-WW3 (WAVEWATCH III® Development Group, WW3DG 2019) is a third generation spectral wave prediction model that solves the evolution of the energy balance equation for the 2-D wave energy spectrum without any prior assumptions on the shape of the spectrum. The WW3 model has been implemented by a growing number of national operational forecasting centres over the last several years.
+The Global Deterministic Wave Prediction System (GDWPS) produces wave forecasts out to 120 hours in the future using the third generation spectral wave forecast model WaveWatch III® (WW3). The model is forced by the 10 meters winds and the ice concentration from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md). The ice concentration is used by the model to attenuate wave growth in areas covered by 25% to 75% ice and to suppress it for concentration above 75%. Forecast elements include significant wave height, peak period and primary swell height, direction and period.
 
 ## Access
 
