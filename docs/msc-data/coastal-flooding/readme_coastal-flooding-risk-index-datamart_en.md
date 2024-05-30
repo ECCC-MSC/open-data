@@ -50,7 +50,9 @@ Example:
 
 ## File content
 
-?????????????
+Date is produced once a day and is validated over the next 24 hours (to be confirmed).
+
+_Other information to add ?_
 
 ## Support
 
