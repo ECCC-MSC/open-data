@@ -1,0 +1,8 @@
+name: env_geomet
+channels:
+  - defaults
+dependencies:
+  - gdal=3.5.2
+  - python=3.8.10
+  - yaml=5.3.1
+prefix: /data/geomet/dev/duprex/miniconda3/envs/env_geomet

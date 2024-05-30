@@ -1,3 +1,2 @@
 GDAL 3.5.2 (https://pypi.org/project/GDAL/)
-bs4 (https://pypi.org/project/beautifulsoup4/)
 yaml (https://pypi.org/project/PyYAML/)
