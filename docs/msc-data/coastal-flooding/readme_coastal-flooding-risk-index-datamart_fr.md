@@ -50,7 +50,9 @@ Exemple :
 
 ## Contenu du fichier
 
-?????????????
+Les données sont générées 1 fois par jour et sont valides pour les 24 prochaines heures. _(à confirmer)_
+
+_Autres infos à ajouter ?_
 
 ## Support
 
