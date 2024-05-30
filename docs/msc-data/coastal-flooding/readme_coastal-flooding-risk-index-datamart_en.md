@@ -24,7 +24,7 @@ A 7-day history is kept in this directory.
 
 File names follow the nomenclature below:
 
-`{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}`
+`{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json`
 
 where :
 
