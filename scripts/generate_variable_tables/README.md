@@ -8,32 +8,25 @@ The script generates weather variable tables by downloading GRIB2 and NetCDF fil
 
 * Python 3.8.10
 * [GDAL 3.5.2](https://pypi.org/project/GDAL/)
-* [bs4](https://pypi.org/project/beautifulsoup4/)
 * [yaml](https://pypi.org/project/PyYAML/)
 
-The `geomet-dev-21.cmc.ec.gc.ca` server has all the dependencies required to run the script. If you do not have a `geomet-dev-21` account, you can also create a Conda environment with the following commands. 
+The `geomet-dev-22.cmc.ec.gc.ca` server has all the dependencies required to run the script. If you do not have a `geomet-dev-22` account, you can also create a Conda environment with the following commands. 
 
 ```sh
-conda create -n env_geomet PYTHON=3.8.10
+conda env create -f conda_env.yml
 conda activate env_geomet
-conda install -c conda-forge pyyaml bs4 gdal==3.5.2
 ```
 
 ## Configuration
 
-The configuration file `config.yaml` allows the user to change certain settings, such as the path of the temporary directory with the `temporary` variable. In addition, the user may also change the path of the lookup tables, though it is not necessary.
+The configuration file `config.yaml` allows the user to change certain settings, such as the path of the lookup tables, though it is not necessary.
 
-* `temporary`: Path of the temporary directory
 * `model_file`: Path of the lookup table for the datasets
 * `variable_file`: Path of the lookup table for the variables
 * `product_file`: Path of the lookup table for the products
 * `level_file`: Path of the lookup table for the levels
 
 ## Execution
-
-Before running the script, rename the value of the `temporary` variable in `config.yaml` to an existing directory in which you have permissions to read and write. 
-
-**Note**: Avoid creating the temporary directory in your home, as you may exceed your disk quota while downloading files.
 
 To generate variable tables for every available dataset, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
 
@@ -60,15 +53,11 @@ Finally, you must insert the following code block in the corresponding datamart 
 
 ### Notes
 
-To generate variable tables from files in a local directory, you may use the `--path` argument to avoid needless downloads. The local files do not get deleted after the creation of the variable tables. 
-
-**Note**: The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
-
-The `CanSIPS` path in `datasets.yml` is incomplete, because the year and the month are missing, as there are multiple possible values. As such, when the `--models` argument takes `CanSIPS`, you will be prompted to enter the year and the month as integers to complete the path.
+The paths from the `--path` argument and from the `datasets.yml` lookup table are concatenated during execution and the result must be a valid directory. As such, you may need to create directories and move the files around.
 
 ## Maintenance
 
-* You can add a dataset to `datasets.yml` by creating a new entry. A key can have more than one value. These values will be concatenated with an URL to download GRIB2 or NetCDF files from a server, e.g. `https://dd.alpha.meteo.gc.ca/`.
+* You can add a dataset to `datasets.yml` by creating a new entry. A key can have more than one value. The values will be concatenated with the local directory to find GRIB2 or NetCDF files.
 * If you receive a warning indicating that a variable has not been found, you can add it to `variable_translation.yml` or `product_translation.yml` by creating a new entry. The key must be the variable from the warning.
 * If you receive a warning indicating that a level has not been found, you can add it to `readable_level.yml` by creating a new entry. The key must be the level from the warning.
 
@@ -85,24 +74,20 @@ The `CanSIPS` path in `datasets.yml` is incomplete, because the year and the mon
     * Default value is all datasets.
 
 * `--path`
-    * Downloads files from the server;
-    * Find files in local directory;
-    * Appends dataset paths to the URL;
-    * Default value is `http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/`
+    * Used to find files in local directory;
+    * Default value is `/data/geomet/feeds/hpfx/` on `geomet-dev-22`
 
 * `--verbose`
     * Sets logging level to `INFO` when activated;
     * Default logging level is `WARNING`.
 
-## Classes
+## Packages
 
-### FileExplorer
+### fileexplorer.py
 
-* Downloads files from the server or locally
-* Uses lists of paths from the dataset lookup table
-* Removes temporary directory and its files
+* Finds files in local directory
 
-### FileParser
+### fileparser.py
 
 * Extracts metadata from GRIB2 or NetCDF files
 * Transforms and translates metadata with lookup tables
@@ -114,8 +99,6 @@ The `CanSIPS` path in `datasets.yml` is incomplete, because the year and the mon
 
 * Key: Dataset abbreviation
 * Value: List of paths
-
-Note: CanSIPS files are only available on the last day of the month. The CanSIPS path in the dictionary is incomplete. The format is changed to `ensemble/cansips/grib2/forecast/raw/YYYY/MM/` during execution.
 
 ### variable_translation.yml
 
@@ -155,44 +138,35 @@ Note: Unit exponents must be inside `<sup>` tags.
 
 ### HPFX
 
-* Source: `http://hpfx.collab.science.gc.ca/`
-* Destination: `/data/geomet/dev/$USER/tmp/`
+* Source: `/data/geomet/feeds/hpfx/`
 
-### DD-Meteo
+### DD-Weather
 
-* Source: `https://dd.meteo.gc.ca/`
-* Destination: `/data/geomet/dev/$USER/tmp/`
+* Source: `/data/geomet/feeds/dd/`
 
 ### DD-Alpha
 
-* Source: `https://dd.alpha.meteo.gc.ca/`
-* Destination: `/data/geomet/dev/$USER/tmp/`
+* Source: `/data/geomet/feeds/dd-alpha/`
 
 ## Tests
 
 To execute all unit tests, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
 
 ```sh
-python3 -m unittest tests/test_main.py tests/test_fileexplorer.py tests/test_fileparser.py -b
+python3 -m unittest tests/test_fileexplorer.py tests/test_fileparser.py -b
 ```
-
-### tests/test_main.py
-
-* Test module which tests the methods in `main.py`
-* Verifies that the directory is created if it does not exist
-* Verifies that the year and month are appended to the path
 
 ### tests/test_fileexplorer.py
 
-* Test module which tests the `FileExplorer` class and its methods
+* Test module which tests the `fileexplorer` package and its methods
 * Verifies that the temporary directory is deleted if it exists
 
 ### tests/test_fileparser.py
 
-* Test module which tests the `FileParser` class and its methods
+* Test module which tests the `fileparser` package and its methods
 * Verifies that metadata is parsed from GRIB2 and NetCDF files
 * Verifies that variable tables are generated in english and french
 
 ### tests/mock_files/
 
-* Directory containing GRIB2 files which are necessary to test `FileParser`
+* Directory containing GRIB2 files which are necessary to test `fileparser`

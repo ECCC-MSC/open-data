@@ -4,7 +4,7 @@ import os
 
 import yaml
 
-from fileparser import FileParser, Generator, write_variable_table
+from fileparser import parse_metadata, generate_row, write_variable_table
 
 # Variable translation lookup table
 variable_file = 'lookup_tables/variable_translation.yml'
@@ -34,31 +34,24 @@ class TestFileParser(unittest.TestCase):
             os.remove(file_fr)
 
     def test_parse_metadata(self):
-        parser = FileParser(
-            self.variable_LUT,
-            self.product_LUT,
-            self.level_LUT
-        )
         expected_en = 'tests/RDPA_expected_Variables-List_en.csv'
         expected_fr = 'tests/RDPA_expected_Variables-List_fr.csv'
         files = [
             'tests/mock_files/MSC_RDPA_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2',
             'tests/mock_files/MSC_RDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2'
         ]
-        parser.parse_metadata(files, 'tests', 'RDPA')
+        parse_metadata(files, 'tests', 'RDPA', self.variable_LUT, self.product_LUT, self.level_LUT)
         self.assertTrue(filecmp.cmp('tests/RDPA_Variables-List_en.csv', expected_en), 'english files are not equal')
         self.assertTrue(filecmp.cmp('tests/RDPA_Variables-List_fr.csv', expected_fr), 'french files are not equal')
 
     def test_generate_row(self):
-        generator = Generator(self.variable_LUT, self.level_LUT)
         expected = 'Total precipitation,APCP,Surface,kg/m<sup>2</sup>'
-        result = generator.generate_row('EN', 'Total precipitation [kg/(m^2)]', '0-SFC')
+        result = generate_row('EN', 'Total precipitation [kg/(m^2)]', '0-SFC', self.variable_LUT, self.level_LUT)
         self.assertEqual(result, expected, 'rows are not equal')
 
     def test_generate_row_not_found(self):
-        generator = Generator(self.variable_LUT, self.level_LUT)
         expected = 'Reserved,unknown,Reserved,unknown'
-        result = generator.generate_row('EN', 'Reserved', 'Reserved')
+        result = generate_row('EN', 'Reserved', 'Reserved', self.variable_LUT, self.level_LUT)
         self.assertEqual(result, expected, 'rows are not equal')
 
     def test_write_variable_table(self):

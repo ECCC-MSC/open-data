@@ -2,129 +2,22 @@
 import argparse
 import logging
 import os
-import sys
-from datetime import datetime, timedelta
 
 import yaml
 
-from fileexplorer import FileExplorer
-from fileparser import FileParser
+from fileexplorer import find_files
+from fileparser import parse_metadata
 
 # Configuration file
 config_file = 'config.yaml'
-# Root logger
-logging.basicConfig()
-logger = logging.getLogger()
-
-def read_args(input, model_LUT):
-    """
-    Parse and validate input arguments.
-        
-        Parameters:
-            input ([str]): Input arguments
-            model_LUT (dict): Datasets with their paths
-        Returns:
-            args (Namespace): Parsed arguments
-    """
-    # Formated date
-    time = datetime.now() - timedelta(1)
-    yesterday = time.strftime("%Y%m%d")
-    
-    # Default arguments
-    url = f"http://hpfx.collab.science.gc.ca/{yesterday}/WXO-DD/"
-    models = list(model_LUT.keys())
-
-    parser = argparse.ArgumentParser()
-    
-    parser.add_argument(
-        "--directory",
-        default=".",
-        type=str,
-        help="Output directory (default: current directory). Caution: Existing files will be overwritten. ")
-    parser.add_argument(
-        "--models",
-        nargs="*",
-        choices=models,
-        default=models,
-        metavar="MODELS",
-        type=str,
-        help=f"GRIB2 or NetCDF datasets (default: all datasets).")
-    parser.add_argument(
-        "--path",
-        default=url,
-        type=str,
-        help=f"Server URL or local directory (default: {url}).")
-    parser.add_argument(
-        '--verbose',
-        action='store_true',
-        help='Print info messages to standard output.')
-
-    args = parser.parse_args(input)
-
-    # Logging configuration
-    if args.verbose:
-        logger.setLevel(logging.INFO)
-    else:
-        logger.setLevel(logging.WARNING)
-
-    # Create output directory
-    try:
-        os.makedirs(args.directory, exist_ok=True)
-        logger.info(f'Output directory {args.directory} created')
-    except OSError as e:
-        logger.error(e)
-        exit(1)
-
-    return args
-
-def append_date(path):
-    '''
-    Append year and month to dataset path.
-
-        Parameters:
-            path (str): dataset path without year and month
-        Returns:
-            path (str): dataset path with year and month
-    '''
-    template = os.path.join(path, 'YYYY/MM/')
-    while True:
-        try:
-            year = int(input(f'Enter year for {template}: '))
-        except:
-            logger.error('Year must be an integer')
-            continue
-        if year < 1:
-            logger.error('Year must be a positive number')
-            continue
-        break
-
-    while True:
-        try:
-            month = int(input(f'Enter month for {template}: '))
-        except:
-            logger.error('Month must be an integer')
-            continue
-        if month < 1 or month > 12:
-            logger.error('Month must be a number between 1 and 12')
-            continue
-        break
-
-    return os.path.join(path, f'{year:04}/' + f'{month:02}/')
 
 def main():
     # Load configurations
     with open(config_file, 'r') as file:
         config = yaml.safe_load(file)
-    
     # Load datasets lookup table
     with open(config['model_file'], 'r') as file:
         model_LUT = yaml.safe_load(file)
-
-    # Get input arguments
-    args = read_args(sys.argv[1:], model_LUT)
-
-    explorer = FileExplorer(config['temporary'])
-    
     # Load variable translation lookup table
     with open(config['variable_file'], 'r') as file:
         variable_LUT = yaml.safe_load(file)
@@ -135,23 +28,44 @@ def main():
     with open(config['level_file'], 'r') as file:
         level_LUT = yaml.safe_load(file)
     
-    parser = FileParser(variable_LUT, product_LUT, level_LUT)
+    # Default arguments
+    path = f'/data/geomet/feeds/hpfx/'
+    models = list(model_LUT.keys())
 
-    # Append year and month to CanSIPS URL
-    if 'CanSIPS' in args.models:
-        for i in range(len(model_LUT['CanSIPS'])):
-            model_LUT['CanSIPS'][i] = append_date(model_LUT['CanSIPS'][i])
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument('--directory', default='.', help='Output directory (default: current directory). Caution: Existing files will be overwritten')
+    parser.add_argument('--models', nargs='*', choices=models, default=models, metavar='MODELS', help=f'GRIB2 or NetCDF datasets (default: all datasets)')
+    parser.add_argument('--path', default=path, help=f'Local directory path (default: {path})')
+    parser.add_argument('--verbose', action='store_true', help='Print info messages to standard output')
+
+    args = parser.parse_args()
+
+    # Logging configuration
+    if args.verbose:
+        # Add module name, function name and line number
+        logging.basicConfig(level=logging.INFO, format='(%(levelname)s) (%(asctime)s) (%(name)s %(module)s:%(funcName)s:L%(lineno)d) ::: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    else:
+        logging.basicConfig(level=logging.WARNING, format='(%(levelname)s) (%(asctime)s) (%(name)s) ::: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    # Create the root logger
+    logger = logging.getLogger()
+
+    # Check if path exists
+    if not os.path.isdir(args.path):
+        parser.error(f'Directory {path} does not exist')
+
+    # Create output directory
+    try:
+        os.makedirs(args.directory, exist_ok=True)
+        logger.info(f'Output directory {args.directory} created')
+    except OSError as e:
+        parser.error(e)
 
     for model in args.models:
-        if os.path.isdir(args.path):
-            files = explorer.find_files(model_LUT[model], args.path)
-        else:
-            files = explorer.download_files(model_LUT[model], args.path)
+        logger.info(f'Generating csv file for {model}')
+        files = find_files(model_LUT[model], args.path)
         # Parse metadata for all files and print tables
-        parser.parse_metadata(files, args.directory, model)
-
-    # Remove temporary directory
-    explorer.remove_files()
+        parse_metadata(files, args.directory, model, variable_LUT, product_LUT, level_LUT)
 
 if __name__ == '__main__':
     main()

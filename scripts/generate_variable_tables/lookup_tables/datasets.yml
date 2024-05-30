@@ -102,7 +102,7 @@ RESPS:
 WCPS:
     - model_wcps/ocean-atmosphere/1km/00/000/
 
-# https://dd.alpha.meteo.gc.ca/
+# DD-Alpha datasets
 
 HRDLPS:
     - model_hrdlps/2.5km/00/000/
