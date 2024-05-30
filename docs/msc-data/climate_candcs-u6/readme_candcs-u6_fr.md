@@ -22,7 +22,7 @@ Les ensembles de données de modèles individuels et tous les produits dérivés
 
 Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) ainsi que sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md):
 
-* [Données disponibles sur les services web géospatiaux GeoMet-Climat](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
+* [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_candcs-u6-geomet_fr.md)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_candcs-u6-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

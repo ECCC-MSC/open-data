@@ -4,7 +4,7 @@
 
 [TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [CanDCS-U6](readme_candcs-u6_en.md) > CanDCS-U6 on the MSC Datamart
 
-# Statistically scaled climate scenario data from CMIP6 global climate models (CanDCS-U6) in NetCDF format
+# Statistically downscaled climate scenarios data from CMIP6 global climate models (CanDCS-U6) in NetCDF format
 
 Multimodel ensembles of model outputs and projected gridded changes are available for historical simulations and four emission scenarios, SSP126, SSP245 and SSP585, at 1/10th degree resolution. Projected changes are expressed as anomalies relative to the 1950-2014 and 1971-2000 reference periods.
 .
