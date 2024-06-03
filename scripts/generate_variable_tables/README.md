@@ -31,7 +31,13 @@ The configuration file `config.yaml` allows the user to change certain settings,
 To generate variable tables for every available dataset, run this script in your terminal in the `public-doc/scripts/generate_variable_tables/` directory.
 
 ```sh
-python3 main.py --directory ./tables
+python3 main.py --directory ./variable_tables
+```
+
+Use the `--user_at_host` option to sync files from a remote host. Said files are deleted once the variable tables are generated.
+
+```sh
+python3 main.py --path /data/dd/public_data/ --user_at_host ${science_user}@hpfx3.collab.science.gc.ca
 ```
 
 After executing the script, you must move the created files to the `public-doc/docs/assets/csv/` directory to update the MSC Open Data Documentation. 
@@ -77,6 +83,10 @@ The paths from the `--path` argument and from the `datasets.yml` lookup table ar
     * Used to find files in local directory;
     * Default value is `/data/geomet/feeds/hpfx/` on `geomet-dev-22`
 
+* `--user_at_host`
+    * Copy files from host with user (e.g. xad000@hpfx3.collab.science.gc.ca).
+    * Ignore to read files on current machine.
+
 * `--verbose`
     * Sets logging level to `INFO` when activated;
     * Default logging level is `WARNING`.
@@ -86,6 +96,8 @@ The paths from the `--path` argument and from the `datasets.yml` lookup table ar
 ### fileexplorer.py
 
 * Finds files in local directory
+* Sync files from remote host
+* Deletes synced files after use
 
 ### fileparser.py
 
@@ -138,15 +150,23 @@ Note: Unit exponents must be inside `<sup>` tags.
 
 ### HPFX
 
+* Host: `geomet-dev-22.cmc.ec.gc.ca`
 * Source: `/data/geomet/feeds/hpfx/`
 
 ### DD-Weather
 
+* Host: `geomet-dev-22.cmc.ec.gc.ca`
 * Source: `/data/geomet/feeds/dd/`
 
 ### DD-Alpha
 
+* Host: `geomet-dev-22.cmc.ec.gc.ca`
 * Source: `/data/geomet/feeds/dd-alpha/`
+
+# HPFX-Collab
+
+* Host: `hpfx3.collab.science.gc.ca`
+* Source: `/data/dd/public_data/`
 
 ## Tests
 
