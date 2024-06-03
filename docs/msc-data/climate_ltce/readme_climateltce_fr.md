@@ -21,7 +21,7 @@ Ces données sont disponibles via l'API / les services web [GeoMet du SMC](../..
     * [ECLT - Records des Extrêmes Quotidiens - Chute de neige](https://api.meteo.gc.ca/collections/ltce-snowfall)
     * [ECLT - Records des Extrêmes Quotidiens - Température](https://api.meteo.gc.ca/collections/ltce-temperature)
     * [ECLT - Stations Climatologiques Virtuelles ](https://api.meteo.gc.ca/collections/ltce-stations)
-* Données à venir sur le Datamart du SMC
+* [Données CSV disponibles sur le Datamart du SMC](readme_climateltce-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
