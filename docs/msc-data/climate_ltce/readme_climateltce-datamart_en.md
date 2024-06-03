@@ -6,7 +6,7 @@
 
 # Daily Long Term Climate Extremes in CSV format
 
-This page describes the Daily Climate Records (Long Term Climate Extremes)(readme_climateltce_en.md) data in CSV format. Please note that these data should not be used to answer questions about climate trends. For these analyses, please consult the [Adjusted and Homogenized Canadian Climate Data](../climate_ahccd/readme_ahccd_en.md).
+This page describes the [Daily Climate Records (Long Term Climate Extremes)](readme_climateltce_en.md) data in CSV format. Please note that these data should not be used to answer questions about climate trends. For these analyses, please consult the [Adjusted and Homogenized Canadian Climate Data](../climate_ahccd/readme_ahccd_en.md).
 
 ## Data location
 
@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/climate/ltce/daily/{Variable}]/{PROVINCE}](https://dd.weather.gc.ca/climate/ltce/daily)
+* [https://dd.weather.gc.ca/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.weather.gc.ca/climate/ltce/daily)
 * [https://dd.weather.gc.ca/climate/ltce/stations](https://dd.weather.gc.ca/climate/ltce/stations)
 
 where:

@@ -6,7 +6,7 @@
 
 # Extrêmes climatiques quotidiens à long terme au format CSV
 
-Cette page décrit les données d'extrêmes climatiques quotidiennes (Extrêmes climatiques à long terme)(readme_climateltce_fr.md) au format CSV. Veuillez noter que ces données ne doivent pas être utilisées pour répondre à des questions sur les tendances climatiques. Pour ces analyses, veuillez consulter les [Données climatiques canadiennes ajustées et homogénéisées](../climate_ahccd/readme_ahccd_fr.md).
+Cette page décrit les données d'[extrêmes climatiques quotidiennes (Extrêmes climatiques à long terme)](readme_climateltce_fr.md) au format CSV. Veuillez noter que ces données ne doivent pas être utilisées pour répondre à des questions sur les tendances climatiques. Pour ces analyses, veuillez consulter les [Données climatiques canadiennes ajustées et homogénéisées](../climate_ahccd/readme_ahccd_fr.md).
 
 ## Localisation des données
 
@@ -16,13 +16,13 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d'y accéd
 
 Les données sont accessibles aux URL suivantes :
 
-* [https://dd.meteo.gc.ca/climate/ltce/daily/{Variable}]/{PROVINCE}](https://dd.meteo.gc.ca/climate/ltce/daily)
+* [https://dd.meteo.gc.ca/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.meteo.gc.ca/climate/ltce/daily)
 * [https://dd.meteo.gc.ca/climate/ltce/stations](https://dd.meteo.gc.ca/climate/ltce/stations)
 
 où :
 
 * __Variable__ : Prend l'une des valeurs [Temperature, Precipitation, Snowfall]
-* __PROVINCE__ : Chaîne de deux lettres identifiant la province dans laquelle se trouve la station [ex : AB, BC, MB, etc.]
+* __PROVINCE__ : Chaîne de caractères de deux lettres identifiant la province dans laquelle se trouve la station [ex : AB, BC, MB, etc.]
 
 ## Nomenclature des noms de fichiers 
 
@@ -40,9 +40,9 @@ où :
 * __LTCE__ : Chaîne de caractères constante indiquant le nom de l'ensemble de données sur les extrêmes climatiques à long terme
 * __Variable__ : Nom de la variable disponible dans le fichier, prenant l'une des valeurs suivantes : [Temperature, Precipitation, Snowfall]
 * __Records__ : Chaîne de caractères constante indiquant que les données sont des records d'extrêmes quotidiens
-* __PROVINCE__ : Chaîne de deux lettres identifiant la province dans laquelle se trouve la station, prenant l'une des valeurs suivantes : [AB, BC, MB, NB, NL, NS, NT, NU, ON, PE, QC, SK, YT]
+* __PROVINCE__ : Chaîne de caractères de deux lettres identifiant la province dans laquelle se trouve la station, prenant l'une des valeurs suivantes : [AB, BC, MB, NB, NL, NS, NT, NU, ON, PE, QC, SK, YT]
 * __STATION-ID__ : Identifiant unique de la station concernée
-* __Virtual-Stations__ : Chaîne constante indiquant que le fichier est une liste de stations virtuelles
+* __Virtual-Stations__ : Chaîne de caractères constante indiquant que le fichier est une liste de stations virtuelles
 * __csv__ : Chaîne de caractères constante indiquant le format CSV
 
 Exemples :
@@ -63,7 +63,7 @@ Les variables et unités disponibles pour les records des extrêmes quotidiens (
 
 ## Support
 
-Si vous avez des questions concernant ces données, veuillez [nous contacter] (mailto:info.cccs-ccsc@canada.ca).
+Si vous avez des questions concernant ces données, veuillez [nous contacter](mailto:info.cccs-ccsc@canada.ca).
 
 ## Annonces de la liste de diffusion dd_info 
 
