@@ -79,7 +79,7 @@ Examples:
 
 Notes:
 
-* The `sossheig` variable is generated relative to an arbitrary geoid over the ocean and relative to IGD85 over the Laurentian Great Lakes. However, water levels in all the Great Lakes are subject to significant biases due to the very construction of the WCPS, which does not benefit from water level assimilation and remains dependent on lake precipitation, river inflows and inter-lake exchanges for its water balance. We therefore encourage users to use the `sossheig` variable with caution in the Great Lakes region.
+* The `sossheig` variable is generated relative to an arbitrary geoid over the ocean and relative to IGD85 over the Laurentian Great Lakes. However, water levels in all the Great Lakes are subject to significant biases due to the very construction of the WCPS, which does not benefit from water level assimilation and remains dependent on lake precipitation, river inflows and inter-lake exchanges for its water balance. **We therefore encourage users to use the `sossheig` variable with caution in the Great Lakes region.**
 * The unit `PSU` (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.
 * The variables `tairsurf`, `uwindsurf`, `vwindsurf` and `runoffsurf` are from GEM-LAM and the rests are from NEMO-CICE. 
 
