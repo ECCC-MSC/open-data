@@ -78,9 +78,11 @@ Exemples :
   loadTable("csv-table", "../../../assets/csv/WCPS_Variables-List_fr.csv");
 </script>
 
-Note: L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
+Notes:
 
-Les variables `tairsurf`, `uwindsurf`, `vwindsurf` et `runoffsurf` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
+* La variable `sossheig` est générée par rapport à une géoide arbitraire sur l'océan et par rapport à IGD85 sur les Grands Lacs laurentiens. Pour autant, les niveaux d’eau dans tous les Grands Lacs présentent des biais importants du fait de la construction même du SPCE qui ne bénéficie pas d’assimilation des niveaux d’eau et reste dépendant des précipitations sur lacs, des apports des rivières et des échanges interlacs pour son bilan hydrique. Nous encourageons donc les usagers à utiliser la variable `sossheig` dans la région des Grands Lacs avec circonspection.
+* L'unité `PSU` (Practical Salinity Unit) est équivalente à g/kg ou pour mille (‰). Elle est basée sur les propriétés de la conductivité de l'eau de mer.
+* Les variables `tairsurf`, `uwindsurf`, `vwindsurf` et `runoffsurf` (ruissellement de surface) sont issues de GEM-LAM et les autres variables sont issues de NEMO-CICE.
 
 ## Support
 
