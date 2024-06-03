@@ -21,7 +21,7 @@ This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / 
     * [LTCE - Daily Extremes of Records - Snowfall](https://api.weather.gc.ca/collections/ltce-snowfall)
     * [LTCE - Daily Extremes of Records - Temperature](https://api.weather.gc.ca/collections/ltce-temperature)
     * [LTCE - Virtual Climate Stations](https://api.weather.gc.ca/collections/ltce-stations)
-* Data upcoming on the MSC Datamart
+* [CSV data available on the MSC Datamart](readme_climateltce-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
