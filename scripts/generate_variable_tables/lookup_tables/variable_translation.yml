@@ -765,6 +765,15 @@ Total cloud cover [%]:
         EN: '%'
         FR: '%'
 
+Total column integrated ozone [Dobson]:
+    Variable:
+        EN: Total column integrated ozone
+        FR: Ozone totale intégrée dans la colonne
+    Abbreviation: TCIOZ
+    Unit:
+        EN: 'DU'
+        FR: 'DU'
+
 Total precipitation [kg/(m^2)]:
     Variable:
         EN: Total precipitation
@@ -1344,6 +1353,24 @@ surface runoff amount:
     Unit:
         EN: kg/m<sup>2</sup>
         FR: kg/m<sup>2</sup>
+
+UV index [W/(m^2)]:
+    Variable:
+        EN: UV Index
+        FR: Indice UV
+    Abbreviation: UVI
+    Unit:
+        EN: Numeric
+        FR: Numérique
+
+UV index (under clear sky) [Numeric]:
+    Variable:
+        EN: UV Index under clear sky
+        FR: Indice UV par ciel clair
+    Abbreviation: UVIUCS
+    Unit:
+        EN: Numeric
+        FR: Numérique
 
 volumetric water content of soil:
     Variable:

@@ -10,6 +10,9 @@ GDPS:
 GDPS-WEonG:
     - model_gem_global/15km/00/024/
 
+GDPS-UV:
+    - grib2/glb/latlon.15x.15/UV_datamart/018/
+
 RDPS:
     - model_gem_regional/10km/grib2/00/024/
 

@@ -8,24 +8,27 @@ import yaml
 from fileexplorer import find_files, sync_files, delete_files
 from fileparser import parse_metadata
 
-# Configuration file
-config_file = 'config.yaml'
+# Root directory of script
+root_dir = os.path.dirname(os.path.realpath(__file__))
+
+# Lookup tables files
+model_file = os.path.join(root_dir, 'lookup_tables/datasets.yml')
+variable_file = os.path.join(root_dir, 'lookup_tables/variable_translation.yml')
+product_file = os.path.join(root_dir, 'lookup_tables/product_translation.yml')
+level_file = os.path.join(root_dir, 'lookup_tables/readable_level.yml')
 
 def main():
-    # Load configurations
-    with open(config_file, 'r') as file:
-        config = yaml.safe_load(file)
     # Load datasets lookup table
-    with open(config['model_file'], 'r') as file:
+    with open(model_file, 'r') as file:
         model_LUT = yaml.safe_load(file)
     # Load variable translation lookup table
-    with open(config['variable_file'], 'r') as file:
+    with open(variable_file, 'r') as file:
         variable_LUT = yaml.safe_load(file)
     # Load product translation lookup table
-    with open(config['product_file'], 'r') as file:
+    with open(product_file, 'r') as file:
         product_LUT = yaml.safe_load(file)
     # Load readable level lookup table
-    with open(config['level_file'], 'r') as file:
+    with open(level_file, 'r') as file:
         level_LUT = yaml.safe_load(file)
     
     # Default arguments
@@ -72,8 +75,9 @@ def main():
             files = find_files(model_LUT[model], args.path)
         # Parse metadata for all files and print tables
         parse_metadata(files, args.directory, model, variable_LUT, product_LUT, level_LUT)
-        # Delete synced temporary files 
+        # Delete temporary files 
         if args.user_at_host:
+            logger.info(f'Deleting files for {model}')
             delete_files(files)
 
 if __name__ == '__main__':

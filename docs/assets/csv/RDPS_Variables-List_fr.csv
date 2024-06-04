@@ -234,6 +234,8 @@ Indice Showalter,SHWINX,500 mb,K
 Indice Total-Total,TOTALX,Surface,K
 Indice de refroidissement éolien,WCF,Surface,°C
 Indice de soulèvement,4LFTX,500 mb,K
+Indice UV,UVI,Surface,Numérique
+Indice UV par ciel clair,UVIUCS,Surface,Numérique
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
 Pression,PRES,Surface,Pa
 Pression,PRES,Unité de tourbillon potentiel 1,Pa

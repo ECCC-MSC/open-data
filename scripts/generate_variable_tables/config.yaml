@@ -1,5 +1,0 @@
-# Lookup tables
-model_file: lookup_tables/datasets.yml
-variable_file: lookup_tables/variable_translation.yml
-product_file: lookup_tables/product_translation.yml
-level_file: lookup_tables/readable_level.yml
