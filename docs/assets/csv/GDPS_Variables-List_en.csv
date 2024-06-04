@@ -217,9 +217,12 @@ Temperature,TMP,970 mb,K
 Temperature,TMP,985 mb,K
 Thickness between 2 isobaric levels,THICK,1000-500 mb,m
 Total cloud cover,TCDC,Surface,%
+Total column integrated ozone,TCIOZ,Surface,DU
 Total precipitation,APCP,Surface,kg/m<sup>2</sup>
 Total totals index,TOTALX,Surface,K
 Upward longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+UV Index,UVI,Surface,Numeric
+UV Index under clear sky,UVIUCS,Surface,Numeric
 Vertical velocity (pressure),VVEL,250 mb,Pa/s
 Vertical velocity (pressure),VVEL,500 mb,Pa/s
 Vertical velocity (pressure),VVEL,600 mb,Pa/s
