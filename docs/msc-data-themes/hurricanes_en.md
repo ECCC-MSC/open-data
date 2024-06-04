@@ -97,7 +97,7 @@ The layers in the following list can also be viewed on MSC AniMet with a single 
 
 ##### &emsp;<span class="badge badge-info">Autres</span>
 
-* [Weather Alerts (experimental)](../msc-data/alerts/readme_alerts_en.md)
+* [Weather Alerts](../msc-data/alerts/readme_alerts_en.md)
 * [Lightning Flash Density over Canada (2.5 km)](../msc-data/lightning/readme_lightning_en.md)
 * [MetNotes](../msc-data/metnotes/readme_metnotes_en.md)
 * [Current Conditions](../msc-data/citypage-weather/readme_citypageweather_en.md)

@@ -89,7 +89,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 
 ##### &emsp;<span class="badge badge-info">Autres</span>
 
-* [Alertes météo (experimental)](../msc-data/alerts/readme_alerts_fr.md)
+* [Alertes météo](../msc-data/alerts/readme_alerts_fr.md)
 * [Conditions actuelles](../msc-data/citypage-weather/readme_citypageweather_fr.md)
 * [Densité de foudre sur le Canada](../msc-data/lightning/readme_lightning_fr.md)
 * [SGPDOT - Onde de tempête](../msc-data/nwp_gdsps/readme_gdsps_fr.md)
