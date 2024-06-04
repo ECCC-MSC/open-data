@@ -6,6 +6,20 @@
 
 # Chronology of changes to the Regional Ice and Ocean Prediction System (RIOPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 2.4.0 of the Regional Ice and Ocean Prediction System (RIOPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ice and Ocean Prediction System (RIOPS) to version 2.4.0.
+
+The RIOPS 2.4.0 is a big step up from the previous version. The sea ice component was upgraded from CICE version 4.0 to 6.2, bringing new features like the Delta-Eddington radiation scheme. The system's reliability was also improved by updating the atmospheric and St. Lawrence River freshwater flux forcings, as well as enhancing the analysis components with a new Mean Dynamic Topography and additional altimetry datasets. 
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+The technical specifications document for RIOPS 2.4.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.4.0_e.pdf)
+
+A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_riops-240_e.pdf).
+
 ## Tuesday November 28, 2023
 
 ### Upgrade to Version 2.3.1 of the Regional Ice and Ocean Prediction System (RIOPS) at the Canadian Meteorological Centre
@@ -17,6 +31,8 @@ For this implementation, there are no change for the numerical model or the assi
 More details about DFO-QC and the impact of using these data in RIOPS could be found in the [technical note for GIOPS version 3.4.1](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-341_e.pdf).
 
 The technical specifications document for RIOPS 2.3.1 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RIOPS_2.3.1_e.pdf)
+
+A technical note with more details on this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_riops-220_e.pdf).
 
 ## Tuesday June 28, 2022
 
