@@ -6,6 +6,18 @@
 
 # Chronology of changes to the Global Ice and Ocean Prediction System (GIOPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 3.5.0 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ice and Ocean Prediction System (GIOPS) to version 3.5.0.
+
+The GIOPS 3.5.0 is a significant upgrade from the previous version. The sea ice component was updated from CICE version 4.0 to 6.2, introducing new features such as the Delta-Eddington radiation scheme. Additionally, the analysis components were improved with a new Mean Dynamic Topography and the incorporation of additional altimetry datasets.
+
+A copy of the official note announcing the implementation of this change is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-350_e.pdf).
+
+The technical specifications document for GIOPS 3.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.5.0_e.pdf).
+
 ## Tuesday November 28, 2023
 
 ### Upgrade to Version 3.4.1 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre
