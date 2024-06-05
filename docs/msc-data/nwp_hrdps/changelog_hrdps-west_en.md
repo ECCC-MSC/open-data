@@ -4,7 +4,22 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS-West Changelog
 
-# Chronology of changes to the High Resolution Deterministic Prediction System West (HRDPS-W)
+# Chronology of changes to the High Resolution Deterministic Prediction System West (HRDPS-West)
+
+## Tuesday June 11, 2024
+
+### Upgrade to Version 1.5.0 of the High Resolution Deterministic Prediction System West (HRDPS-West) at the Canadian Meteorological Centre
+
+On Tuesday June 11st, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System West (HRDPS-West) to version 1.5.0.
+
+The HRDPS-West 1.5.0 represents a notable improvement over the previous version. It integrates the GEM model version 5.2.0, which brings enhanced performance through new physics and bug fixes. The most impactful change is the adoption of improved geophysical fields. Furthermore, upgrades related to sea(lake) ice initialization(processing) and the utilization of the SLEVE vertical coordinate system further enhance the precision and reliability of weather forecasts in the Western region. 
+
+
+The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+A technical note with more details on HRDPS-West 1.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-west-150_e.pdf).
+
+The technical specifications document for HRDPS-West 1.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-WEST_1.5.0_e.pdf).
 
 ## Tuesday June 28, 2022
 

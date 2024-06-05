@@ -4,7 +4,22 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > Changements au SHRPD Ouest
 
-# Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-O)
+# Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-Ouest)
+
+## Le mardi 11 juin 2024
+
+### Mise à jour majeure vers la version 1.5.0 du Système à haute résolution de prévision déterministe ouest (SHRPD-Ouest) au Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe ouest (SHRPD-Ouest) à la version 1.5.0.
+
+La mise à jour SHRPD-Ouest 1.5.0 représente une amélioration notable par rapport à la version précédente. Elle intègre la version 5.2.0 du modèle GEM, ce qui améliore les performances grâce à une nouvelle physique et à la correction de bogues. Le changement le plus important est l'adoption de champs géophysiques améliorés. De plus, des améliorations associées à l'initialisation(le traitement) de la glace de mer(lac) et l'utilisation du système de coordonnées verticales SLEVE permettent d’accroître la précision et la fiabilité des prévisions météorologiques dans la région Ouest. 
+
+
+La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-west-150_f.pdf).
+
+Le document des spécifications techniques du SHRPD-O 1.5.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-WEST_1.5.0_f.pdf).
 
 ## Le mardi 28 juin 2022
 
