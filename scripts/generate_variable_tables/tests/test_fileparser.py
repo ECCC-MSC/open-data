@@ -56,7 +56,10 @@ class TestFileParser(unittest.TestCase):
 
     def test_write_variable_table(self):
         expected = 'tests/RDPA_expected_Variables-List_en.csv'
-        data = ['Total precipitation,APCP,Surface,kg/m<sup>2</sup>']
+        data = [
+            '(prodType 0, cat 1, subcat 193) [-],unknown,Surface,unknown',
+            'Total precipitation,APCP,Surface,kg/m<sup>2</sup>'
+        ]
         filename = 'tests/RDPA_Variables-List_en.csv'
         header = 'Variable,Abbreviation,Level,Unit/Value'
         write_variable_table(data, filename, header)

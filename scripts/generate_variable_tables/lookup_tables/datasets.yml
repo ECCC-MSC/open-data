@@ -1,118 +1,106 @@
 # GRIB2 Datasets
 
 CanSIPS:
-    - ensemble/cansips/grib2/forecast/raw/
-    - model_cansips/100km/forecast/
+    - ensemble/cansips/grib2/forecast/raw
+    - model_cansips/100km/forecast
 
 GDPS:
-    - model_gem_global/15km/grib2/lat_lon/00/024/
+    - model_gem_global/15km/grib2/lat_lon/00/024
 
 GDPS-WEonG:
-    - model_gem_global/15km/00/024/
+    - model_gem_global/15km/00/024
 
 GDPS-UV:
-    - grib2/glb/latlon.15x.15/UV_datamart/018/
+    - grib2/glb/latlon.15x.15/UV_datamart/018
 
 RDPS:
-    - model_gem_regional/10km/grib2/00/024/
+    - model_gem_regional/10km/grib2/00/024
 
 RDPS-WEonG:
     - model_gem_regional/10km/00/024
 
 RDPS-Astronomy:
-    - model_gem_regional/astronomy/grib2/00/
+    - model_gem_regional/astronomy/grib2/00
 
 GDWPS:
-    - model_gdwps/25km/00/
+    - model_gdwps/25km/00
 
 RDWPS:
-    - model_rdwps/erie/1km/00/
-    - model_rdwps/huron-michigan/1km/00/
-    - model_rdwps/national/2.5km/00/
-    - model_rdwps/ontario/1km/00/
-    - model_rdwps/superior/1km/00/
+    - model_rdwps/erie/1km/00
+    - model_rdwps/huron-michigan/1km/00
+    - model_rdwps/national/2.5km/00
+    - model_rdwps/ontario/1km/00
+    - model_rdwps/superior/1km/00
 
 GEPS: 
-    - ensemble/geps/grib2/products/00/024/
-    - ensemble/geps/grib2/raw/00/024/
+    - ensemble/geps/grib2/products/00/024
+    - ensemble/geps/grib2/raw/00/024
 
 REPS:
-    - ensemble/reps/10km/grib2/00/024/
-    - ensemble/reps/15km/grib2/raw/00/024/
+    - ensemble/reps/10km/grib2/00/024
+    - ensemble/reps/15km/grib2/raw/00/024
 
 GEWPS:
-    - model_gewps/25km/00/
+    - model_gewps/25km/00
 
 REWPS:
-    - model_rewps/great-lakes/grib2/00/
+    - model_rewps/great-lakes/grib2/00
 
 HRDPA:
-    - analysis/precip/hrdpa/grib2/polar_stereographic/06/
+    - analysis/precip/hrdpa/grib2/polar_stereographic/06
 
 RDPA:
-    - analysis/precip/rdpa/grib2/polar_stereographic/06/
-    - model_rdpa/10km/00/
+    - analysis/precip/rdpa/grib2/polar_stereographic/06
+    - model_rdpa/10km/00
 
 HRDPS:
-    - model_hrdps/continental/2.5km/00/024/
-    - model_hrdps/north/grib2/00/024/
+    - model_hrdps/continental/2.5km/00/024
+    - model_hrdps/north/grib2/00/024
 
 RAQDPS:
-    - model_raqdps/10km/grib2/00/000/
+    - model_raqdps/10km/grib2/00/000
 
 RAQDPS-FW:
-    - model_raqdps-fw/10km/grib2/00/000/
+    - model_raqdps-fw/10km/grib2/00/000
 
 # NetCDF Datasets
 
 GDPS-Ice-Analysis:
-    - model_gem_global/10km/00/
+    - model_gem_global/10km/00
 
 HREPA:
-    - model_hrepa/2.5km/00/
+    - model_hrepa/2.5km/00
 
 HRDLPS:
-    - model_hrdlps/2.5km/00/000/
-    - model_hrdlps/2.5km/00/024/
+    - model_hrdlps/2.5km/00/000
+    - model_hrdlps/2.5km/00/024
 
 NSRPS:
-    - model_nsrps-caldas/2.5km/00/
+    - model_nsrps-caldas/2.5km/00
 
 CIOPS:
-    - model_ciops/east/2km/00/000/
-    - model_ciops/salish-sea/500m/00/001/
-    - model_ciops/west/2km/00/000/
+    - model_ciops/east/2km/00/000
+    - model_ciops/salish-sea/500m/00/001
+    - model_ciops/west/2km/00/000
 
 GIOPS:
-    - model_giops/netcdf/lat_lon/2d/00/024/
-    - model_giops/netcdf/lat_lon/3d/00/000/
-    - model_giops/netcdf/polar_stereographic/2d/00/024/
-    - model_giops/netcdf/polar_stereographic/3d/00/000/
+    - model_giops/netcdf/lat_lon/2d/00/024
+    - model_giops/netcdf/lat_lon/3d/00/000
+    - model_giops/netcdf/polar_stereographic/2d/00/024
+    - model_giops/netcdf/polar_stereographic/3d/00/000
 
 RIOPS:
-    - model_riops/netcdf/forecast/polar_stereographic/2d/00/000/
-    - model_riops/netcdf/forecast/polar_stereographic/3d/00/000/
+    - model_riops/netcdf/forecast/polar_stereographic/2d/00/000
+    - model_riops/netcdf/forecast/polar_stereographic/3d/00/000
 
 GDSPS:
-    - model_gdsps/15km/00/
+    - model_gdsps/15km/00
 
 OHPS:
-    - model_ohps/slfe/100m/13/000/
+    - model_ohps/slfe/100m/13/000
 
 RESPS:
-    - model_resps/atlantic-nw/9km/00/
+    - model_resps/atlantic-nw/9km/00
 
 WCPS:
-    - model_wcps/ocean-atmosphere/1km/00/000/
-
-# DD-Alpha datasets
-
-HRDLPS:
-    - model_hrdlps/2.5km/00/000/
-    - model_hrdlps/2.5km/00/024/
-
-HREPA:
-    - model_hrepa/2.5km/00/
-
-NSRPS:
-    - model_nsrps-caldas/2.5km/00/
+    - model_wcps/ocean-atmosphere/1km/00/000
