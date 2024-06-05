@@ -6,6 +6,25 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe de vague (SGPDV)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système global de prévision déterministe de vague (SGPDV) 1.9.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin décembre 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système global de prévision déterministe de vague (SGPDV).
+
+Les modifications incluses dans cette mise à niveau sont résumées comme suit :
+
+* Utilisation de la dernière version du Système de Prévision Déterministe Global (GDPS), v9.0.0
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible ici: [SGPDV_1.9.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdwps-190_f.pdf).
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-190_f.pdf).
+
+Le document des spécifications techniques du SGPDV 1.9.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.9.0_f.pdf).
+
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SGPDV à la version 1.8.0 suite à la nouvelle infrastructure de calcul haute performance. 
