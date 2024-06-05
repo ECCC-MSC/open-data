@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système régional de prévision océan-glace (SRPOG) 2.4.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juine 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.4.0 de son Système régional de prévision océan-glace (SRPOG).
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.4.0 de son Système régional de prévision océan-glace (SRPOG).
 
 La version 2.4.0 du SRPOG représente une amélioration notable comparée à la version précédente. La composante glace de mer est passée de la version 4.0 du CICE à la version 6.2, apportant de nouvelles fonctionnalités telles que le schéma de rayonnement Delta-Eddington. La fiabilité du système a également été améliorée avec la mise à jour des forçages atmosphériques et des flux d'eau douce du fleuve Saint-Laurent, ainsi que par l'amélioration des composantes d'analyse, comprenant une nouvelle topographie dynamique moyenne et un ajout d’ensembles de données altimétriques. 
 
