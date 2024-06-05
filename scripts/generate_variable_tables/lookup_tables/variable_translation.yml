@@ -72,6 +72,15 @@
         EN: '%'
         FR: '%'
 
+15 hr Total precipitation [kg/(m^2)]:
+    Variable:
+        EN: Total precipitation
+        FR: Précipitation totale
+    Abbreviation: APCP
+    Unit:
+        EN: kg/m<sup>2</sup>
+        FR: kg/m<sup>2</sup>
+
 24 hr Total precipitation [kg/(m^2)]:
     Variable:
         EN: Total precipitation
@@ -98,6 +107,15 @@ Albedo [%]:
     Unit:
         EN: '%'
         FR: '%' 
+
+Best (4 layer) Lifted Index [K]:
+    Variable:
+        EN: Best (4-layer) lifted index
+        FR: Indice de soulèvement
+    Abbreviation: 4LFTX
+    Unit:
+        EN: K
+        FR: K
 
 Best (4-layer) lifted index [K]:
     Variable:
@@ -1145,6 +1163,15 @@ Surface air temperature (1.5m):
         EN: K
         FR: K
 
+Surface lifted index [K]:
+    Variable:
+        EN: Surface lifted index
+        FR: Indice de soulèvement en surface
+    Abbreviation: LFTX
+    Unit:
+        EN: K
+        FR: K
+
 Surface runoff:
     Variable:
         EN: Surface runoff
@@ -1178,8 +1205,17 @@ Surface wind y velocity (10m):
         FR: Composante Y du vent de surface (10 m)
     Abbreviation: vwindsurf
     Unit:
-        EN: m/s 
+        EN: m/s
         FR: m/s
+
+Sweat index [numeric]:
+    Variable:
+        EN: Sweat index
+        FR: Indice de sueur
+    Abbreviation: SX
+    Unit:
+        EN: Numeric
+        FR: Numérique
 
 Turbocline depth:
     Variable:
@@ -1189,6 +1225,33 @@ Turbocline depth:
     Unit:
         EN: m
         FR: m
+
+UV index [W/(m^2)]:
+    Variable:
+        EN: UV Index
+        FR: Indice UV
+    Abbreviation: UVI
+    Unit:
+        EN: Numeric
+        FR: Numérique
+
+UV index (under clear sky) [Numeric]:
+    Variable:
+        EN: UV Index under clear sky
+        FR: Indice UV par ciel clair
+    Abbreviation: UVIUCS
+    Unit:
+        EN: Numeric
+        FR: Numérique
+
+Vertical speed shear [1/s]:
+    Variable:
+        EN: Vertical speed shear
+        FR: Cisaillement vertical du vent
+    Abbreviation: VWSH
+    Unit:
+        EN: 1/s
+        FR: 1/s
 
 Volume of snow on sea ice per unit grid cell area:
     Variable:
@@ -1353,24 +1416,6 @@ surface runoff amount:
     Unit:
         EN: kg/m<sup>2</sup>
         FR: kg/m<sup>2</sup>
-
-UV index [W/(m^2)]:
-    Variable:
-        EN: UV Index
-        FR: Indice UV
-    Abbreviation: UVI
-    Unit:
-        EN: Numeric
-        FR: Numérique
-
-UV index (under clear sky) [Numeric]:
-    Variable:
-        EN: UV Index under clear sky
-        FR: Indice UV par ciel clair
-    Abbreviation: UVIUCS
-    Unit:
-        EN: Numeric
-        FR: Numérique
 
 volumetric water content of soil:
     Variable:

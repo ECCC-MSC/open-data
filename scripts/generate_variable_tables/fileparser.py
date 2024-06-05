@@ -92,20 +92,23 @@ def parse_metadata(files, directory, model, variable_LUT, product_LUT, level_LUT
         try:
             # Open the file to get the dataset
             dataset = gdal.Open(file)
-            # Get the dataset metadata
-            if file.endswith('.grib2'):
-                name = dataset.GetRasterBand(1).GetMetadataItem('GRIB_COMMENT')
-                level = dataset.GetRasterBand(1).GetMetadataItem('GRIB_SHORT_NAME')
-            elif file.endswith('.nc'):
-                name = dataset.GetRasterBand(1).GetMetadataItem('long_name')
-                level = dataset.GetRasterBand(1).GetMetadataItem('NETCDF_DIM_depth')
-            # Insert metadata in variable or product lists
-            if name in product_LUT:
-                prod_data_en.append(generate_row('EN', name, level, product_LUT, level_LUT))
-                prod_data_fr.append(generate_row('FR', name, level, product_LUT, level_LUT))
-            else:
-                data_en.append(generate_row('EN', name, level, variable_LUT, level_LUT))
-                data_fr.append(generate_row('FR', name, level, variable_LUT, level_LUT))
+            for i in range(1, dataset.RasterCount + 1):
+                # Get the dataset metadata
+                if file.endswith('.grib2'):
+                    name = dataset.GetRasterBand(i).GetMetadataItem('GRIB_COMMENT')
+                    level = dataset.GetRasterBand(i).GetMetadataItem('GRIB_SHORT_NAME')
+                elif file.endswith('.nc'):
+                    name = dataset.GetRasterBand(i).GetMetadataItem('long_name')
+                    level = dataset.GetRasterBand(i).GetMetadataItem('NETCDF_DIM_depth')
+                # Insert metadata in variable or product lists
+                if name in product_LUT:
+                    prod_data_en.append(generate_row('EN', name, level, product_LUT, level_LUT))
+                    prod_data_fr.append(generate_row('FR', name, level, product_LUT, level_LUT))
+                else:
+                    data_en.append(generate_row('EN', name, level, variable_LUT, level_LUT))
+                    data_fr.append(generate_row('FR', name, level, variable_LUT, level_LUT))
+            # Close the dataset
+            dataset = None
         except Exception as e:
             logger.error(e)
     
