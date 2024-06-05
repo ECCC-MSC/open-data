@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > Changements au SHRPD Ouest
 
-# Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-O)
+# Chronologie des changements apportés au Système à haute résolution de prévision déterministe ouest (SHRPD-Ouest)
 
 ## Le mardi 11 juin 2024
 
