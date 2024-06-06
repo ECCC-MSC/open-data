@@ -12,11 +12,18 @@
 
 Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.5.0 de son Système global de prévision océan-glace (SGPOG).
 
-Le SGPOG 3.5.0 est une mise à jour importante par rapport à la version précédente. La composante glace de mer a été mise à jour de la version CICE 4.0 à 6.2, introduisant de nouvelles fonctionnalités telles que le schéma de radiation Delta-Eddington. En outre, les composants d'analyse ont été améliorés avec une nouvelle topographie dynamique moyenne et l'incorporation de jeux de données altimétriques supplémentaires.
+Principaux changements :
 
-Une copie de la note officielle documentant ce changement est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-350_f.pdf).
+* Mise à jour de la version 6.2 du CICE 
+* Schéma de rayonnement Delta-Eddington 
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_f.pdf).
+
+Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
 Le document des spécifications techniques du SGPOG 3.5.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.5.0_f.pdf).
+
+Une note technique à ce sujet est disponiblee [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops-350_f.pdf).
 
 ## Le mardi 28 novembre 2023
 
