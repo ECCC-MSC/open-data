@@ -27,14 +27,14 @@ Un historique de 30 jours est conservé sur le Datamart du SMC.
 
 ## Spécification technique de la grille
 
-![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
+![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_RDPA.png)
 
 Valeurs données aux paramètres de la grille lat-lon tournée:
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | 1102 |
-| nj | 1076 | 
+| ni | 1140 |
+| nj | 1045 | 
 | résolution à 60° N | 10km |
 | coordonnées du premier point de grille | -31.76° N ; 92.40° W |
 

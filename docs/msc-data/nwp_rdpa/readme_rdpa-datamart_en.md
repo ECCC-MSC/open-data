@@ -27,14 +27,14 @@ A 30-day history is kept on the MSC Datamart.
 
 ## Technical specification of the grid
 
-![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_rdpa_rlatlon.png)
+![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_RDPA.png)
 
 The following table lists the values of various parameters of the rotated lat-lon grid:
 
 | Parameter | Valeur |
 | ------ | ------ |
-| ni | 1102 |
-| nj | 1076 | 
+| ni | 1140 |
+| nj | 1045 | 
 | resolution at 60° N | 10 km |
 | coordinate of the first grid point | -31.76° N ; 92.40° W |
 
