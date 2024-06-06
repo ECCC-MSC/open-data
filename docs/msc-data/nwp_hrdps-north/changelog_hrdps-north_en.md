@@ -4,7 +4,33 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS-North](readme_hrdps-north_en.md) > HRDPS-North Changelog
 
-# Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-N)
+# Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-North)
+
+## Tuesday June 11, 2024
+
+### Upgrade to Version 2.1.0 of the High Resolution Deterministic Prediction System North (HRDPS-North) at the Canadian Meteorological Centre
+
+On Tuesday June 11st, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System North (HRDPS-North) to version 2.1.0.
+
+
+Significant change::
+
+* Upgraded to GEM version 5.2.1, enhancing atmospheric physics and improving model performance. 
+* Bourgouin approach for surface precipitation phase partitioning.  
+* Improved initial and boundary conditions sourced from the upgraded [10-km GDPS](../nwp_gdps/readme_gdps_en.md).  
+* Updated ocean-ice initial conditions from the Regional Ice-Ocean Prediction System (RIOPS), providing more accurate sea-ice data. 
+* Implemented the SLEVE vertical coordinate system.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [HRDPS-North_2.1.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north-210_e.pdf).
+
+
+The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+A technical note with more details on HRDPS-North 2.1.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north-210_e.pdf).
+
+The technical specifications document for HRDPS-North 2.1.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_2.1.0_e.pdf).
+
+
 
 ## Wednesday August 30, 2023
 
