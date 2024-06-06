@@ -8,7 +8,7 @@
 
 ## Tuesday June 11, 2024
 
-### Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) 
+### Upgrade to Version 25 of the Regional Air Quality Deterministic Prediction System (RAQDPS) 
 
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 24 to version 25.
 

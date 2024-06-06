@@ -8,17 +8,17 @@
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour du Système régional de prévision déterministe de la qualité de l'air
+### Mise à jour du Système régional de prévision déterministe de la qualité de l'air à la version 25
 
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 24 par la version 25.
 
 
 Principaux changements :
 
-* Passage au GEM 5.2.1 
-* Les analyses météorologiques et le modèle pilote proviennent maintenant du [GDPD à 10km](../nwp_gdps/readme_gdps_fr.md)
+* Passage à la version GEM 5.2.1 
+* Pilotage par le [SGPD à 10km](../nwp_gdps/readme_gdps_fr.md)
 * Émissions:
-    * Intégration des émissions dues aux incendies de forêt
+    * Intégration des émissions dues aux feux de forêt
     * Mise à jour des émissions : Passage à SET5.0.0 avec des inventaires projetés pour 2023.
 * Inclusion du sel marin dans la masse totale des PM2.5     
 
