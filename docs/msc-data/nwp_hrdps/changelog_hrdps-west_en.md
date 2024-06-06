@@ -12,8 +12,6 @@
 
 On Tuesday June 11st, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System West (HRDPS-West) to version 1.5.0.
 
-The HRDPS-West 1.5.0 represents a notable improvement over the previous version. It integrates the GEM model version 5.2.0, which brings enhanced performance through new physics and bug fixes. The most impactful change is the adoption of improved geophysical fields. Furthermore, upgrades related to sea(lake) ice initialization(processing) and the utilization of the SLEVE vertical coordinate system further enhance the precision and reliability of weather forecasts in the Western region. 
-
 Significant change:
 * GEM version 5.2.0 upgrade  
 * SLEVE vertical coordinate implementation 
