@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Air Quality Deterministic Prediction System FireWork
 
-Smoke from wildfires in forests and grasslands can be a major source of air pollution for Canadians. The fine particles in the smoke can be a serious risk to health, particularly for children, seniors and those with heart or lung disease. Because smoke may be carried thousands of kilometres downwind, distant locations can be affected almost as severely as areas close to the fire. To help Canadians be better prepared, wildfire smoke forecast maps are available through the Government of Canada’s FireWork system. FireWork is an air quality prediction system that indicates how smoke from wildfires is expected to move across North America over the next 72 hours.
+The Regional Air Quality Deterministic Prediction System FireWork (RAQDPS-FW) carries out physics and chemistry calculations, including emissions from active wildfires, to arrive at deterministic predictions of chemical species concentration of interest to air quality, such as fine particulate matter PM2.5 (2.5 micrometers in diameter or less). Geographical coverage is Canada and the United States. Data is available at a horizontal resolution of 10 km. While the system encompasses more than 80 vertical levels, data is available only for the surface level and the total column. The products are presented as historical, annual or monthly, averages which highlight long-term trends in cumulative effects on the environment.
 
 ## Access
 
