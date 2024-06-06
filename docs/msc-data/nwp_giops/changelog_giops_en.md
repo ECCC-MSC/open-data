@@ -17,7 +17,7 @@ Significant changes:
 * Updated from CICE version 4.0 to 6.2
 * Introduced new features such as the Delta-Eddington radiation scheme
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_e.pdf).
 
 A copy of the official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
