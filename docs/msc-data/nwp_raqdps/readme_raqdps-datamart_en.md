@@ -6,7 +6,9 @@
 
 # Regional Air Quality Deterministic Prediction System (RAQDPS) data in GRIB2 Format
 
-This page describes the [Regional Air Quality Deterministic Prediction System (RAQDPS)](readme_raqdps_fr.md) GRIB2 data. The system is run twice daily to produce 72-hour forecasts of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. 
+This page describes the [Regional Air Quality Deterministic Prediction System (RAQDPS)](readme_raqdps_fr.md) GRIB2 data. The system is run twice daily to produce 72-hour forecasts of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid.
+
+In addition, data containing the total concentrations associated with forest and vegetation fire plumes are available, making it possible to estimate where the impact of these fires dominates pollution.
 
 ## Data location
 
@@ -40,8 +42,6 @@ __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/pr
 
 ## File nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
-
 The files have the following nomenclature:
 
 `{YYYYMMDD}T{HH}Z_MSC_RAQDPS_{VAR}_{LVL}_{Grille}(resolution}_PT{hhh}H.grib2`
@@ -54,7 +54,7 @@ Where:
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RAQDPS__ : Constant string indicating that data is from the Regional Air Quality Deterministic Prediction System 
-* __VAR__ : Variable type included in the file [PM2.5, PM10, NO2, NO, O3, SO2]
+* __VAR__ : Variable type included in the file [PM2.5, PM2.5-WildfireSmokePlume, PM10, PM10-WildfireSmokePlume, NO2, NO, O3, SO2]
 * __LVL__ : Vertical level [Sfc for the surface, EAtm for the column integral]
 * __Grille__ : Horizontal grid rotated lat-lon [RLatLon]
 * __resolution__ : Indicating resolution in degreee, here 0.09°x0.09° (about 10km) in latitude and longitude directions [0.09]
@@ -64,6 +64,7 @@ Where:
 Example of forecast file name:
 
 * 20200521T00Z_MSC_RAQDPS_NO2_Sfc_RLatLon0.09_PT003H.grib2
+* 20240606T12Z_MSC_RAQDPS_PM10-WildfireSmokePlume_EAtm_RLatLon0.09_PT012H.grib2
 
 ## List of variables
 

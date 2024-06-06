@@ -65,7 +65,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 ##### &emsp;<span class="badge badge-info">Air quality</span>
 
 * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
-* [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
 * [Regional Deterministic Air Quality Analysis (RDAQA)](nwp_rdaqa/readme_rdaqa_en.md)
 
 ### <span class="badge badge-light">Surface</span>
@@ -128,6 +127,7 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
 * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
 * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
+* [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
 </br></br>
 
 ## Changes to operational data production systems
