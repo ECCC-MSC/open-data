@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système global de prévision d'ensemble de vague (SGPEV) 1.3.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin décembre 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.3.0 de son Système global de prévision d'ensemble de vague (SGPEV).
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.3.0 de son Système global de prévision d'ensemble de vague (SGPEV).
 
 Principaux changements :
 
