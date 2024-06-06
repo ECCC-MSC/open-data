@@ -6,6 +6,26 @@
 
 # Chronology of changes to the Regional Deterministic Air Quality Analysis (RDAQA)
 
+## Tuesday June 11, 2024,
+
+### Upgrade to Version 2.2.0 of the Regional Deterministic Air Quality Analysis (RDAQA) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Air Quality Analysis (RDAQA) to version 2.2.0.
+
+Significant innovations in this upgrade:
+
+* Model input switching from RAQDPS24 to [RAQDPS25](../nwp_gdps/readme_raqdps_en.md)
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf).
+
+Associated Notes:
+
+
+* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdaqa-220_e.pdf).
+* [Technical specifications of RDAQA 2.2.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDAQA_2.2.0_e.pdf).
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 2.1.0 of the RDAQA adapted to the New High Performance Computing Infrastructure.
