@@ -59,6 +59,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [Version actuelle du Système régional de prévision déterministe de la qualité de l'air](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_f.pdf) 
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_raqdps_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RAQDPS-FW_fr.svg)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps_f.pdf)
 
 ## Registre des changements 
 
