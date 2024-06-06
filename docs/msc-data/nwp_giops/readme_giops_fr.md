@@ -35,6 +35,7 @@ Les [métadonnées du Système global de prévision océan-glace sont accessible
 
 * [Version actuelle du Système global de prévision océan-glace](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GIOPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_giops_f.pdf)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GIOPS_fr.svg)
 
 ## Registre des changements 
