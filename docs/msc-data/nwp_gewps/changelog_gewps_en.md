@@ -16,7 +16,7 @@ Significant change:
 
 * Use of forcings from the latest version of the Global Ensemble Prediction System (GEPS), v8.0.0
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GEWPS_1.3.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-130_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-130_e.pdf).
 
 A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 
