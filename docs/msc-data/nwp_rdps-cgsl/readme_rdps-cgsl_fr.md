@@ -8,12 +8,7 @@
 
 ## Description du système
 
-Le Système régional de prévision déterministe couplé au Golfe du Saint-Laurent est un modèle de circulation dont l’objectif est de mieux comprendre les régions marines côtières canadiennes. Ce système comprend deux composantes :
-
-* Le cycle de pseudo-analyse océanique, incluant une analyse de glace basée sur l’insertion directe d’analyses d’images Radarsat (Smith et al., 2012),
-* Le cycle de prévision atmosphérique couplé.
-
-Notons que le cycle de prévision du modèle couplé est une simulation de 48 heures basée sur les données de 00, 06, 12 et 18 UTC où les deux modèles de ce système (soit le LAM et le modèle Océan-Glace) tournent en même temps. Le système prévoit des conditions atmosphériques, l’état de la glace de mer et des prévisions océaniques pour une période de prévision de 0 à 48 heures.
+Le Système régional de prévision déterministe - couplé au Golfe du Saint-Laurent (SRDP-CGSL) effectue des calculs physiques pour arriver à des analyses déterministes des glaces de mer et des éléments océaniques pour la journée en cours. Le système de prévision Océan-glace pour le golfe du Saint-Laurent est un modèle de circulation qui fournit une estimation des conditions actuelles sur le golfe. La glace de mer et les éléments océaniques comprennent la température de l'océan, la salinité, les courants, la hauteur de la surface de la mer, la concentration et l'épaisseur de la glace de mer, la dérive des glaces et autres. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique est centrée sur le golfe du Saint-Laurent. Les données sont disponibles à une résolution horizontale de 5 km. Les données ne sont disponibles que pour le niveau de la surface. Les prévisions sont effectuées jusqu'à quatre fois par jour.
 
 ### Spécifications techniques de la grille native (domaine de calcul)
 
