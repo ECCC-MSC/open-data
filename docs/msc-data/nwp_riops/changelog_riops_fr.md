@@ -15,7 +15,7 @@ Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à
 Principaux changements :
 * Mise à jour de la version 6.2 du CICE 
 * Schéma de rayonnement Delta-Eddington 
-* forçages atmosphériques provenant du Système global de prévision déterministe ([SGPD](../nwp_gdps/readme_gdps_en.md)) 
+* Forçages atmosphériques provenant du Système global de prévision déterministe ([SGPD](../nwp_gdps/readme_gdps_en.md)) 
 * Mise à jour de la topographie dynamique moyenne (MDT)
 * Activation de nouveaux jeux de données altimétriques 
 
