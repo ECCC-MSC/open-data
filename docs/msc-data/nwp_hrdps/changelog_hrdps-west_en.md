@@ -20,7 +20,7 @@ Significant change:
 * Sea(lake) ice initialization(processing) changes .
 
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [HRDPS-West_1.5.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-west-150_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-west-150_e.pdf).
 
 The official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
