@@ -13,7 +13,7 @@
 On Tuesday June 11st, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System North (HRDPS-North) to version 2.1.0.
 
 
-Significant change::
+Significant change:
 
 * Upgraded to GEM version 5.2.1, enhancing atmospheric physics and improving model performance. 
 * Bourgouin approach for surface precipitation phase partitioning.  
