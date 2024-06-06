@@ -6,6 +6,30 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to the Regional Air Quality Deterministic Prediction System (RAQDPS) 
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Air Quality Deterministic Prediction System (RAQDPS) from version 24 to version 25.
+
+Significant change:
+
+* The RAQDPS is now piloted by [GDPS](../nwp_gdps/readme_gdps_en.md)
+* Transition to GEM 5.2.1 
+* Emissions
+     * Integration of wildfire emissions 
+     * Updated anthropogenic emissions: Transition to SET5.0.0 with projected 2023 inventories for Canada, U.S. and Mexico 
+* Inclusion of sea-salt to total PM2.5 mass 
+
+A brief summary of the innovations included in this upgrade and their impact on performance [can be found in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps025_e.pdf )
+
+A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+The technical specifications document for RAQDPS 25 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_025_e.pdf).
+
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps025_e.pdf).
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 24 of the RAQDPS adapted to the New High Performance Computing Infrastructure.

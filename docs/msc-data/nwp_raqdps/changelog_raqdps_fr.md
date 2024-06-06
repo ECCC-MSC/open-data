@@ -6,6 +6,31 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système régional de prévision déterministe de la qualité de l'air
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système régional de prévision déterministe de la qualité de l'air en remplaçant la version 24 par la version 25.
+
+
+Principaux changements :
+
+* Passage au GEM 5.2.1 
+* Les analyses météorologiques et le modèle pilote proviennent maintenant du [GDPD à 10km](../nwp_gdps/readme_gdps_fr.md)
+* Émissions:
+    * Intégration des émissions dues aux incendies de forêt
+    * Mise à jour des émissions : Passage à SET5.0.0 avec des inventaires projetés pour 2023.
+* Inclusion du sel marin dans la masse totale des PM2.5     
+
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps025_f.pdf ).
+
+Une copie de la note officielle annonçant ces changements dans le SRPDQA est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+Le document des spécifications techniques du SRPDQA version 25 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_025_f.pdf).
+
+Une note technique du SRPDQA version 25 avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps025_f.pdf).
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour de SRPDQA à la version 24 suite à la nouvelle infrastructure de calcul haute performance. 
