@@ -8,12 +8,7 @@
 
 ## Description of the system
 
-The Atmosphere-Ocean-Ice forecast system for the Gulf of St. Lawrence is a circulation model to better understand Canadian inland seas. This system includes two main parts:
-
-* An oceanic pseudo-analysis cycle (Smith et al., 2012) including a superimposed sea ice analysis based on direct insertion of Radarsat image analyses (Smith et al., 2012).
-* A coupled forecast cycle.
-
-Note that the coupled forecast cycle is a 48 hour simulation based on 00, 06, 12 and 18 UTC data where both of its models (LAM and OCEAN-ICE) run at the same time. It provides 00-48 hour weather, sea ice and ocean forecasts.
+The Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL) carries out physics calculations to arrive at deterministic analyses of sea ice and ocean elements for the current day. The Ocean-Ice forecast system for the Gulf of St. Lawrence is a circulation model to provide an estimate of current conditions over the gulf. Sea ice and ocean elements include ocean temperature, salinity, currents, sea surface height, sea ice concentration and thickness, ice drift and others. This product contains raw numerical results of these calculations. Geographical coverage is centered on the Gulf of the St. Lawrence. Data is available at a horizontal resolution of 5 km. Data is only available for the surface level. Predictions are performed up to four times a day.
 
 ### Technical Native Grid Specifications (Computational Domain)
 
