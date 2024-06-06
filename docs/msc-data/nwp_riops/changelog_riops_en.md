@@ -19,7 +19,7 @@ Significant change:
 * Mean Dynamic Topography (MDT) Update 
 * Activation of New Altimetry Datasets 
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [IOPS_2.4.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_riops-240_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [RIOPS_2.4.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_riops-240_e.pdf).
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
