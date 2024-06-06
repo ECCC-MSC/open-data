@@ -12,7 +12,14 @@
 
 On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ice and Ocean Prediction System (RIOPS) to version 2.4.0.
 
-The RIOPS 2.4.0 is a big step up from the previous version. The sea ice component was upgraded from CICE version 4.0 to 6.2, bringing new features like the Delta-Eddington radiation scheme. The system's reliability was also improved by updating the atmospheric and St. Lawrence River freshwater flux forcings, as well as enhancing the analysis components with a new Mean Dynamic Topography and additional altimetry datasets. 
+Significant change:
+* CICE Version 6.2 Upgrade 
+* Delta-Eddington Radiation Scheme 
+* Global Deterministic Prediction System ([GDPS](../nwp_gdps/readme_gdps_en.md)) Atmospheric Forcing 
+* Mean Dynamic Topography (MDT) Update 
+* Activation of New Altimetry Datasets 
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_riops-240_e.pdf).
 
 A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
