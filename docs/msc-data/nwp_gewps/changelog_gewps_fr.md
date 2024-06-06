@@ -6,6 +6,24 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble de vague (SGPEV)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système global de prévision d'ensemble de vague (SGPEV) 1.3.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.3.0 de son Système global de prévision d'ensemble de vague (SGPEV).
+
+Principaux changements :
+
+* Utilisation de forçages provenant de la dernière version du Système global de prévision d'ensemble (SGPE), v8.0.0
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-130_f.pdf).
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-130_f.pdf).
+
+Le document des spécifications techniques du SGPEV 1.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEWPS_1.3.0_f.pdf).
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SGPEV à la version 1.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
