@@ -16,7 +16,7 @@ Significant changes:
 
 * Use of the latest version of the Global Deterministic Prediction System (GDPS), version 9.0.0
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [at this link]( https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/fact_sheets/factsheet_gdwps_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdwps-190_e.pdf).
 
 A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 
