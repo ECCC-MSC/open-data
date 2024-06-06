@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorolo
 
 Principaux changements :
 
-* Utilisation de la dernière version du  Système Global de Prévision Déterministe (SGPD), v9.0.0
+* Utilisation de la dernière version du Système Global de Prévision Déterministe (SGPD), v9.0.0
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est disponible ici: [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/fact_sheets/factsheet_gdwps_f.pdf).
 
