@@ -6,6 +6,25 @@
 
 # Chronology of changes to the Global Deterministic Wave Prediction System (GDWPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 1.9.0 of the GDWPS.
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Wave Prediction System (GDWPS) to version 1.9.0.
+
+The changes included in this upgrade are summarized as follows:
+
+* Use of the latest version of the Global Deterministic Prediction System (GDPS), version 9.0.0
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in this document: [GDWPS_1.9.0_innovations](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdwps-190_e.pdf).
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps-190_e.pdf).
+
+The technical specifications document for GDWPS 1.9.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.9.0_e.pdf) .
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 1.8.0 of the GDWPS adapted to the New High Performance Computing Infrastructure.
