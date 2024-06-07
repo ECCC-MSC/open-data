@@ -12,7 +12,7 @@
 
 On Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will upgrade the Coastal Ice and Ocean Prediction System East (CIOPS-East) to version 2.3.0 and the Coastal Ice and Ocean Prediction System West (CIOPS-West) to version 2.3.0. 
 
-Significant change in CIOPS-East:
+Significant changes in CIOPS-East:
 
 * New region of the upper estuary increased mixing
 * Updated St. Lawrence River temperature climatology
