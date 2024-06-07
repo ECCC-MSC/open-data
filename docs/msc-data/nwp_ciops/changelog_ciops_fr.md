@@ -20,12 +20,16 @@ Principaux changements du système SCPOG-Est:
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement delta Eddington 
 
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
 
 Principaux changements du système SCPOG-Ouest:
 
-* Forcages atmospheriques provenant du [SGPD](../nwp_gdps/readme_gdps_fr.md) au lieu du SRPD.
+* * Forcages atmosphériques provenant d'une composante du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale.
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement delta Eddington 
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
+
 
 Documents associés:
 

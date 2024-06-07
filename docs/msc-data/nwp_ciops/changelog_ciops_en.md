@@ -24,7 +24,7 @@ A brief summary of the innovations included in this upgrade of CIOPS-East and th
 
 Significant change in CIOPS-West:
 
-* Atmospheric forcing from changes from RDPS to [GDPS](../nwp_gdps/readme_gdps_en.md)
+* Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)
 * Upgrade to CICE6
 * Usage of delta Edington radiation scheme  
 
