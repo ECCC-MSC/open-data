@@ -20,7 +20,7 @@ Les données sont accessibles à adresse suivante :
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 12].
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -41,8 +41,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
 ## Nomenclature des noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 Les fichiers ont la nomenclature suivante :
 
 `{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
@@ -51,7 +49,7 @@ où :
 
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision
 * __T__ : Séparateur de temps selon les normes ISO8601
-* __HH__ : Heure UTC de la passe [00, 12]
+* __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions.
 * __REWPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble des vagues
