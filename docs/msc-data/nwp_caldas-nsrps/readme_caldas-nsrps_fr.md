@@ -39,5 +39,5 @@ Les [métadonnées du Système canadien d'assimilation de données de surface da
 
 ## Registre des changements 
 
-La [chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](changelog_caldas-nsrps_fr.md) est disponible.
+La chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR) est disponible [ici](changelog_caldas-nsrps_fr.md).
 
