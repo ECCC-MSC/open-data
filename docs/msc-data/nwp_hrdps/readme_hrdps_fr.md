@@ -40,10 +40,11 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 * [Note technique des éléments du temps sur grille](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf)
 * [Diagramme de dépendances du SHRPD sur le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS_fr.svg)
 * [Note technique du Système canadien d'assimilation de surface (SCanADS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) (en anglais seulement)
+* [Fiche d'information du SHRPD-Ouest associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-west_f.pdf)
 
 ## Registre des changements 
 
 * La chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD) est disponible [ici](changelog_hrdps_fr.md).
 * La chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le SHRPD (SCanADS-SHRPD) est disponible [ici](changelog_caldas-hrdps_fr.md).
-
+* La chronologie des changements apportés au Système à haute résolution de prévision déterministe Ouest (SHRPD-Ouest) est disponible [ici](changelog_hrdps-west_fr.md).
 
