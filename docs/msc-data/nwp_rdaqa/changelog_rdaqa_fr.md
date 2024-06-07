@@ -16,11 +16,13 @@ Résumé des innovations majeures:
 
 * Mise à jour du modèle intrant de SRPDQA-24 à [SRPDQA-25](../nwp_gdps/readme_raqdps_en.md).
 
-Notes :
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf). 
 
-* [Note officielle](http://dd.meteo.gc.ca/doc/genots/2022/06/11/NOCN03_CWAO_262118___xxxxx).
-* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdaqa-220_f.pdf).
-* [Spécifications techniques de l'ARDQA 2.2.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDAQA_2.2.0_f.pdf).
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdaqa-220_f.pdf).
+
+Le document des spécifications techniques du ARDQA 2.2.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDAQA_2.2.0_f.pdf).
 
 
 ## Le mardi 28 juin 2022
