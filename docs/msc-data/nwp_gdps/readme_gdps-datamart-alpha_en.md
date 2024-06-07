@@ -27,7 +27,7 @@ The rotated lat-lon grid data can be accessed at the following address:
 where :
 
 * __HH__ : Model run start, in UTC [00, 12]
-* __hhh__ : Forecast hour [001, 002, 003, ..., 048]
+* __hhh__ : Forecast hour [001, 002, 003, ..., 144]
 
 A 24-hour history is kept in this directory.
 
@@ -62,7 +62,7 @@ where:
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions
-* __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 048]
+* __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 144]
 * __grib2__: Constant string indicating that the format is GRIB2.
 
 Example file name:

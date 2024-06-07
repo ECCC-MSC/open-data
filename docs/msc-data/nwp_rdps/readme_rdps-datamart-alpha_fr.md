@@ -12,7 +12,7 @@ Les différentes règles reliées aux matrices Scribe entravent l’innovation s
 
 Dans le cadre d’un plan de modernisation plus vaste du Service Météorologique Canadien (SMC), dans lequel le rôle du prévisionniste évolue, l’objectif est de remplacer les matrices Scribe, [disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/), et leur nombre limité de points à travers le Canada par des [éléments du temps sur grille](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf) ("WEonG"). 
 
-Les éléments du temps sur grille du Système régional de prévision déterministe (SRPD) est un système de post-traitement conçu afin de générer les éléments du temps requis par les différents programmes de prévision (public, maritime, aviation, qualité de l’air, etc.). Ce système fusionne les sorties brutes du modèle et post-traitées, à l’aide de diverses approches diagnostiques. Des concepts horaires sont produits à partir de différents algorithmes en utilisant des sorties provenant du [Système régional de prévision déterministe (SRPD)](../readme_rdps_fr.md)."
+Les éléments du temps sur grille du Système régional de prévision déterministe (SRPD) est un système de post-traitement conçu afin de générer les éléments du temps requis par les différents programmes de prévision (public, maritime, aviation, qualité de l’air, etc.). Ce système fusionne les sorties brutes du modèle et post-traitées, à l’aide de diverses approches diagnostiques. Des concepts horaires sont produits à partir de différents algorithmes en utilisant des sorties provenant du [Système régional de prévision déterministe (SRPD)](../readme_rdps_fr.md).
 
 ## Adresse des données 
 
@@ -27,7 +27,7 @@ Les données sur grille lat-lon tournées sont accessibles à l’adresse suivan
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
-* __hhh__ : Heure de prévision [001, 002, 003, ..., 048]
+* __hhh__ : Heure de prévision [001, 002, 003, ..., 084]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -64,7 +64,7 @@ où :
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 048]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
