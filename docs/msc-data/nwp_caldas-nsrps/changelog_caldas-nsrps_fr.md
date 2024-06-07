@@ -18,7 +18,7 @@ Principaux changements :
 * Amélioration de la séparation entre les phases de précipitation
 * Utilisation des données d'humidité relative du SHRPD plutôt que d'effectuer les calculs dans SCanADS
 * Utilisation des forçages du SHRPD pour la récupération de la température de la surface (Tskin)
-* Géstion des biais froid pendant l’été à la surface de l'eau
+* Traitement des biais froid pendant l’été à la surface de l'eau
 
 Un bref résumé des innovations incluses dans cette mise à niveau et de leur impact sur les performances se trouve [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_caldas-nsrps-400_f.pdf).
 
