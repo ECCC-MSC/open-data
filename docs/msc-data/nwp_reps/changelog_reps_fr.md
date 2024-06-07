@@ -16,8 +16,8 @@ Principaux changements :
 
 * Les conditions frontières proviennent du [SGPE](../nwp_gdps/readme_geps_fr.md)  avec une résolution de 25km.
 * Utilisation des analyses du [SGPD](../nwp_gdps/readme_gdps_fr.md) à 10 km pour les conditions initiales en remplacement du SRPD.
-* Utilisation des analyses du Système global de prévision océan-glace (SGPOG) et modifiations des configurations de la physique.
-* Utilisation de la coordonnée SLEVE
+* Utilisation des analyses du Système global de prévision océan-glace (SGPOG) et modifications des configurations de la physique.
+* Utilisation de la coordonnée SLEVE.
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_reps-500_e.pdf). 
 
