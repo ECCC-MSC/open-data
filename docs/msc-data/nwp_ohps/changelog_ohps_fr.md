@@ -6,6 +6,25 @@
 
 # Chronologie des changements apportés au Système de simulation hydrodynamique opérationnelle (SHOP)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système de simulation hydrodynamique opérationnelle (SHOP) 3.4.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 3.4.0 de son Système de simulation hydrodynamique opérationnelle (SHOP).
+
+Principaux changements :
+
+*  Remplacement de la prévision actuelle de l'onde de tempête basée sur l'ajustement sinusoïdal par un signal d'onde de tempête plus réaliste prévu par le système régional de prévision des ondes de tempête d'ensemble (RESPS) pour calculer la condition limite en aval 
+*  Mise à jour du traitement des observations manquantes pour garantir l'utilisation des données au moment approprié de leur validité
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop-340_e.pdf).
+
+Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+Le document des spécifications techniques du SHOP 3.4.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_SHOP_3.4.0_f.pdf).
+
+Une note technique à ce sujet est disponiblee [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-340_f.pdf).
+
 ## Le mercredi 20 septembre 2023
 
 ### Le Système de simulation hydrodynamique opérationnelle (SHOP) 3.3.0 est déclaré opérationnel au Centre météorologique canadien
