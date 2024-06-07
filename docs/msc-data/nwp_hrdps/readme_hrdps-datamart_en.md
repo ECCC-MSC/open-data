@@ -6,7 +6,7 @@
 
 # High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format
 
-The operationnal [High Resolution Deterministic Prediction System or HRDPS](readme_hrdps_en.md) is a set of nested limited-area model (LAM) forecast grids from the non-hydrostatic version of the Global Environmental Multiscale (GEM) model with a 2.5 km horizontal grid spacing over one main Pan-Canadian region. The pilot model of the HRDPS is the Regional Deterministic Prediction System or RDPS (GEM Regional model). The fields in the HRDPS high resolution GRIB2 dataset are made available four times a day for the Pan-Canadian domain for a 48 hour forecast period.
+The operational [High Resolution Deterministic Prediction System (HRDPS)](readme_hrdps_en.md) is a series of nested grids for Limited Area Forecasts (LAM). The main grid has a horizontal resolution of 2.5 km over a pan-Canadian region. The HRDPS pilot model is a component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) at 10km horizontal resolution. The fields of the HRDPS GRIB2 dataset are available four times a day. 48-hour forecasts are produced for the pan-Canadian domain.
 
 Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.
 
@@ -43,7 +43,7 @@ Table lists the values of various parameters of the rotated lat-lon continental 
 | ni | 2540 |
 | nj | 1290 | 
 | resolution at 60° N | 2.5 km |
-| coordinate of the first grid point | 12°S 15°W |
+| coordinate of the first grid point | 39°N 134°W |
 
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
