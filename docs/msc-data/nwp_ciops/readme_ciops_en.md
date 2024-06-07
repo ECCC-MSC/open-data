@@ -46,5 +46,5 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ## Changelog
 
-The chronology of changes to the CIOPS is available [here](changelog_ciops_en.md).
+The chronology of changes to the Coastal Ice Ocean Prediction System (CIOPS) is available [here](changelog_ciops_en.md).
 
