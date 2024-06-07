@@ -12,7 +12,7 @@
 
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Prediction System (REPS) to version 5.0.0.
 
-Significant change:
+Significant changes:
 * Boundary conditions coming from new [GEPS](../nwp_gdps/readme_geps_en.md) at 25 km resolution.
 * Use of the [GDPS](../nwp_gdps/readme_gdps_en.md) analysis at 10 km for initial conditions as a replacement of the RDPS.
 * Use of the Global Ice-Ocean Prediction System (GIOPS) analyses and modification to the physics configuration.
