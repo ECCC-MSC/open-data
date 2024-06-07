@@ -10,22 +10,22 @@
 
 ### Upgrade to Version 5.0.0 of the Regional Ensemble Prediction System (REPS) at the Canadian Meteorological Centre
 
-On uesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Prediction System (REPS) to version 5.0.0.
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Prediction System (REPS) to version 5.0.0.
 
 Significant change:
-* Use of the new and better [GEPS](../nwp_gdps/readme_geps_en.md)  at 25 km resolution for initial conditions and piloting
-* Use of the [GDPS](../nwp_gdps/readme_gdps_en.md) analysis at 15 km for initial conditions as a replacement of the RDPS which has been removed.
+* Use of the new and better [GEPS](../nwp_gdps/readme_geps_en.md)  at 25 km resolution for piloting
+* Use of the [GDPS](../nwp_gdps/readme_gdps_en.md) analysis at 15 km for initial conditions as a replacement of the RDPS which has been remove.
 * Use of the Global Ice-Ocean Prediction System (GIOPS) analyses and modification to the physics configuration.
 * Transition to the Smooth LEvel Vertical (SLEVE) coordinate
 
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_reps-500_e.pdf). 
 
-Associated Notes:
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 
-* [Official note announcing the implementation](http://dd.weather.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxx).
-* [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-500_e.pdf).
-* [Technical specifications of REPS 5.0.0](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_5.0.0_e.pdf).
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-500_e.pdf).
+
+The technical specifications document for REPS 5.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_5.0.0_e.pdf) .
 
 
 
