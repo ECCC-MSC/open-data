@@ -41,7 +41,7 @@ Valeurs données aux paramètres de la grille lat-lon tournée à haute résolut
 | ni | 2540 |
 | nj | 1290 | 
 | résolution à 60° N | 2.5 km |
-| coordonnées du premier point de grille | 12°S 15°W |
+| coordonnées du premier point de grille | 39°N 134°W |
 
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 

@@ -43,7 +43,7 @@ Table lists the values of various parameters of the rotated lat-lon continental 
 | ni | 2540 |
 | nj | 1290 | 
 | resolution at 60° N | 2.5 km |
-| coordinate of the first grid point | 12°S 15°W |
+| coordinate of the first grid point | 39°N 134°W |
 
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids.
 
