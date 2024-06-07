@@ -20,7 +20,7 @@ The data can be accessed at the following address :
 
 where :
 
-* __HH__ : Model run start, in UTC [00, 12]
+* __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
 A 24-hour history is stored in this directory.
 
@@ -52,7 +52,7 @@ Where:
 
 * __YYYYMMDD__: Year, month and day of the beginning of the forecast
 * __T__ : Time delimiter according to ISO8601 norms
-* __HH__: UTC run time [00, 12]
+* __HH__: UTC run time [00, 06, 12, 18]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __REWPS__ : Constant string indicating that data is from the Regional Ensemble Wave Prediction System
