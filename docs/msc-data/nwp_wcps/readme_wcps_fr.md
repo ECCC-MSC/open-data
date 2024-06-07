@@ -36,6 +36,7 @@ Les [métadonnées du Système de prévision du cycle de l'eau - Océan-Atmosph�
 * [Version actuelle du Système de prévision du cycle de l'eau (SPCE)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_WCPS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_wcps_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_WCPS_fr.svg)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_wcps_f.pdf)
 
 ## Registre des changements 
 
