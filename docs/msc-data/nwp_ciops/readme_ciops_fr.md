@@ -46,5 +46,5 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Registre des changements
 
-La [chronologie des changements apportés au SPCOG](changelog_ciops_fr.md) est disponible.
+La [chronologie des changements apportés au Système de prévision côtier océan-glace (SPCOG)](changelog_ciops_fr.md) est disponible.
 
