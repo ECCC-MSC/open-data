@@ -14,7 +14,8 @@ On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorolo
 
 Significant innovations in this upgrade:
 
-* Pilot model update: from RAQDPS version 24 to [RAQDPS version 25](../nwp_gdps/readme_raqdps_en.md)
+* Pilot model update: from [Regional Air Quality Deterministic Prediction System (RAQDPS)](../nwp_gdps/readme_raqdps_en.md)
+ version 24 to version 25.
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf).
 
