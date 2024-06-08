@@ -13,25 +13,25 @@
 Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de ses deux Systèmes côtiers de prévision océan-glace: la fenêtre est (SCPOG-Est) et la fenêtre ouest (SCPOG-Ouest). 
 
 
-Principaux changements du système SCPOG-Est:
+**Principaux changements au système SCPOG-Est**:
 
 * Nouvelle région de la zone de mélange dans l'estuaire supérieur
 * Mise à jour de la climatologie des températures du fleuve Saint-Laurent 
 * Passage au modèle CICE6
-* Utilisation du schéma de rayonnement delta Eddington 
+* Utilisation du schéma de rayonnement Delta Eddington 
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
 
-Principaux changements du système SCPOG-Ouest:
+**Principaux changements au système SCPOG-Ouest**:
 
-* * Forcages atmosphériques provenant d'une composante du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale.
+* Forcages atmosphériques provenant d'une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale.
 * Passage au modèle CICE6
-* Utilisation du schéma de rayonnement delta Eddington 
+* Utilisation du schéma de rayonnement Delta Eddington 
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
 
 
-Documents associés:
+**Documents associés**:
 
 * Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 * Le document des spécifications techniques du SCPOG-Est 2.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_2.3.0_f.pdf).
