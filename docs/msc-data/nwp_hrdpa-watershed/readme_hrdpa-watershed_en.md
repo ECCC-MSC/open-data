@@ -10,7 +10,7 @@ The Canadian Precipitation Analysis System (CaPA) produces a best estimate of 6 
 
 Notes:
 
-*River flow at a particular location is impacted by precipitation occurring upstream of that location. In order to better interpret changes in observed stream flow, it is useful to compute average precipitation for watersheds defined by the locations where stream flow is being observed.
+* River flow at a particular location is impacted by precipitation occurring upstream of that location. In order to better interpret changes in observed stream flow, it is useful to compute average precipitation for watersheds defined by the locations where stream flow is being observed.
 * In collaboration with all provinces and territories, MSC operates an extensive network of stream flow gauges. Historical and real-time flow data is available here:
 [https://wateroffice.ec.gc.ca/](https://wateroffice.ec.gc.ca/)
 * Furthermore, Environment and Climate Change Canada has published the National hydrometric network basin polygons dataset which provides watershed delineations upstream of active hydrometric gauges which report flow. [https://open.canada.ca/data/en/dataset/0c121878-ac23-46f5-95df-eb9960753375](https://open.canada.ca/data/en/dataset/0c121878-ac23-46f5-95df-eb9960753375). By combining these polygons with the HRDPA, it is possible to obtain average watershed precipitation. The Esri Shapefiles described here contain the result of this computation, in millimeters.
