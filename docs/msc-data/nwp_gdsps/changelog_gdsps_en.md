@@ -16,7 +16,7 @@ Significant changes:
 
 *  The GDSPS v2.1.0 is driven by wind, atmospheric pressure, ice concentration, ice velocities, surface currents, salinity and ocean temperature profiles from the upgraded [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) v9.0.0 and [Global Ice Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md) v3.5.0
 * The bathymetry field has been updated to exclude isolated lakes
-* The reference atmospheric pressure is now set to a constant value of 101,000 Pa
+* The reference atmospheric pressure is now set to a constant value of 101000 Pa
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-210_e.pdf).
 
