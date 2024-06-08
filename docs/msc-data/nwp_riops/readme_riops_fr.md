@@ -6,7 +6,7 @@
 
 # Données et Produits du Système régional de prévision océan-glace (SRPOG)
 
-Le Système régional de prévision océan-glace (SRPOG) fournit quatre fois par jour des prévisions de l'océan et de la glace à 84 heures sur une grille à 1/12° de résolution (de 3 à 8 km). Le SRPOG est initialisé avec l'utilisation d'analyses tirées du [Système global de prévision océan-glace (SGPOG)](../nwp_giops/readme_giops_fr.md). Les calculs des flux atmosphériques des prévisions à 84 heures utilisent des champs tirés du [Système régional de prévision déterministe (SRPD)](../nwp_rdps/readme_rdps_fr.md).
+Le Système régional de prévision océan-glace (SRPOG) fournit quatre fois par jour des prévisions de l'océan et de la glace jusqu'à 84 heures sur une grille à 1/12° de résolution (de 3 à 8 km). Le SRPOG est initialisé avec l'utilisation d'analyses tirées du [Système global de prévision océan-glace (SGPOG)](../nwp_giops/readme_giops_fr.md). Les calculs des flux atmosphériques des prévisions jusqu'à 84 heures utilisent des champs tirés d'une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) à 10km de résolution horizontale.
 
 ## Accès
 

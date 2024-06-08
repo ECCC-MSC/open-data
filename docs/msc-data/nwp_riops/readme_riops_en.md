@@ -6,7 +6,7 @@
 
 # Data and Products of the Regional Ice Ocean Prediction System (RIOPS)
 
-The Regional Ice Ocean Prediction System (RIOPS) provides 84 hr ice and ocean forecasts four times per day on a 1/12° resolution grid (3-8 km). RIOPS is initialized using analyses from the [Global Ice-Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md). Atmospheric fluxes for 84 hr forecasts are calculated using fields from the [Regional Deterministic Prediction System (RDPS)](../nwp_rdps/readme_rdps_en.md).
+The Regional Ice Ocean Prediction System (RIOPS) provides ice and ocean forecasts up to 84 hours, four times per day on a 1/12° resolution grid (3-8 km). RIOPS is initialized using analyses from the [Global Ice-Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md). Atmospheric fluxes up to 84 hours forecasts are calculated using fields from a component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) at 10km horizontal resolution
 
 ## Access
 
