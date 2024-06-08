@@ -16,7 +16,7 @@ Principaux changements :
 
 *  Le SGPDOT est désormais piloté par les vents, la pression atmosphérique, la concentration de glace, la vitesse de la glace, les courants de surface, la salinité et la température de l'océan provenant de la version 9.0.0 du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) et de la version 3.5.0 du [Système Global de prévision océan-glace (SGPOG)](../nwp_giops/readme_giops_fr.md)
 *  Le champ de bathymétrie a été mis à jour pour exclure les lacs isolés
-*  La pression atmosphérique de référence est désormais fixée à une valeur constante de 101 000 Pa
+*  La pression atmosphérique de référence est désormais fixée à une valeur constante de 101000 Pa
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-210_f.pdf).
 
