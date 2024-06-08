@@ -14,7 +14,7 @@ On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteor
 
 Significant changes:
 
-*  Model forcing, Wind and sea level pressure input upgraded to GEPS v8.0.0 
+*  Model forcing, wind and sea level pressure input upgraded to GEPS v8.0.0 
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_resps-170_e.pdf).
 
