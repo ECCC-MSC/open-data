@@ -18,7 +18,7 @@ Principaux changements :
 * Mise à jour vers la version 5.2.1 de GEM, améliorant la physique atmosphérique et les performances du modèle. 
 * Approche de Bourgouin pour partitionner la phase des précipitations en surface.  
 * Améliorations aux conditions initiales et aux frontières qui proviennent d'une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) à 10km de résolution. 
-* Mise à jour des conditions initiales de la glace de mer à partir du SRPOG, fournissant des données plus précises sur la glace de mer. 
+* Mise à jour des conditions initiales de la glace de mer à partir du [Système régional de prévision océan-glace (SRPOG)](../nwp_riops/readme_riops_fr.md), fournissant des données plus précises sur la glace de mer. 
 * Mise en œuvre du système de coordonnées verticales SLEVE
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north-210_f.pdf).
