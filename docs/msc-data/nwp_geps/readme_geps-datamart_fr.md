@@ -23,7 +23,7 @@ où :
 * __TYPE__ : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]
 * __raw__ : Chaîne de caractères constante indiquant les sorties brutes du modèle
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-* __hhh__ : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC
+* __hhh__ : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC
 
 ## Spécification technique de la grille
 
@@ -37,8 +37,6 @@ Ce tableau décrit des paramètres de la grille latitude-longitude sur laquelle 
 | coordonnées du premier point de grille                          | 90° S  000° E            |
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
@@ -56,7 +54,7 @@ où :
 * __Niveau__ : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables ».
 * __YYYYMMDD__ : Année, mois et jour du début de la prévision.
 * __HH__ : Heure UTC de la passe [00, 12].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, …, 192, 198, 204, ..., 378, 384], ou [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC.
+* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, …, 192, 198, 204, ..., 378, 384], ou [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC.
 * __allmbrs__ : Chaîne de caractères constante indiquant que tous les membres sont inclus dans le fichier.
 * __all-products__ : Indique que tous les produits probabilistes pour cette variable sont regroupés dans ce fichier
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.

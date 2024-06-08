@@ -22,7 +22,7 @@ where :
 
 * __TYPE__ : String indicating individual members direct model outputs (not processed) or probabilistic products created from all members [raw, products]
 * __HH__ : Model run start, in UTC [00,12]
-* __hhh__ : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC
+* __hhh__ : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 930, 936] each Monday and Thursday at 000UTC
 
 ## Grid specifications
 
@@ -36,8 +36,6 @@ This table lists details of the latitude-longitude grid used in the encoding of 
 | first gris point coordinate | 90° S 000° E         |
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature :
 
@@ -55,7 +53,7 @@ where :
 * __Level__ : Level value. To consult a complete list, refer to the variables section.
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
 * __HH__ : UTC run time [00,12]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] or [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC
+* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] or [000, 003, …, 192, 198, 204, ..., 930, 936] each Monday and Thursday at 000UTC
 * __allmbrs__ : Constant string indicating that all the members of the ensemble are included in this file
 * __all-products__ : indicating that all probabilistic products for this variable are contain in the file
 * __grib2__ : Constant string indicating the GRIB2 format is used
