@@ -14,7 +14,7 @@ On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteor
 
 Significant changes:
 
-*  The GDSPS v2.1.0 is driven by wind, atmospheric pressure, ice concentration, ice velocities, surface currents, salinity and ocean temperature profiles from the upgraded GDPS v9.0.0 and GIOPS v3.5.0
+*  The GDSPS v2.1.0 is driven by wind, atmospheric pressure, ice concentration, ice velocities, surface currents, salinity and ocean temperature profiles from the upgraded [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) v9.0.0 and [Global Ice Ocean Prediction System (GIOPS)](../nwp_giops/readme_giops_en.md) v3.5.0
 * The bathymetry field has been updated to exclude isolated lakes
 * The reference atmospheric pressure is now set to a constant value of 101,000 Pa
 
