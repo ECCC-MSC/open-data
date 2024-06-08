@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à
 
 Principaux changements :
 
-*  Le SGPDOT est désormais piloté par les vents, la pression atmosphérique, la concentration de glace, la vitesse de la glace, les courants de surface, la salinité et la température de l'océan provenant de la version 9.0.0 du SGPD et de la version 3.5.0 du SGPOG 
+*  Le SGPDOT est désormais piloté par les vents, la pression atmosphérique, la concentration de glace, la vitesse de la glace, les courants de surface, la salinité et la température de l'océan provenant de la version 9.0.0 du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) et de la version 3.5.0 du [Système Global de prévision océan-glace (SGPOG)](../nwp_giops/readme_giops_fr.md)
 *  Le champ de bathymétrie a été mis à jour pour exclure les lacs isolés
 *  La pression atmosphérique de référence est désormais fixée à une valeur constante de 101 000 Pa
 
