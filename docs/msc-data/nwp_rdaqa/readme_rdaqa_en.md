@@ -37,6 +37,7 @@ Upcoming.
 * [Actual version of the Regional Deterministic Air Quality Analysis](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDAQA_e.pdf)
 * [Technical note](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdaqa_e.pdf)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RDAQA_FW_en.svg) 
+* [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa_e.pdf)
 
 ## Changelog
 
