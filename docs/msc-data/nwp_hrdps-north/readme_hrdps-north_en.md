@@ -36,14 +36,14 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ## Technical documentation
 
-* [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north_e.pdf)
 * [Current version of the High Resolution Deterministic Prediction System North](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_e.pdf)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS-N_en.svg)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_e.pdf)
 * [Weather elements on the grid (WEonG) technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf)
+* [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north_e.pdf)
 
 
 ## Changelog
 
-The chronology of changes to the High Resolution Deterministic Prediction System (HRDPS) is available [here](changelog_hrdps-north_en.md).
+The chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-North) is available [here](changelog_hrdps-north_en.md).
 
