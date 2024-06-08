@@ -11,7 +11,7 @@
 ### Mise à jour vers la version 2.1.0 du Système à haute résolution de prévision déterministe nord (SHRPD-Nord) au Centre météorologique canadien (CMC)
 
  
-Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe ouest (SHRPD-Nord) à la version 2.1.0.
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe nord (SHRPD-Nord) à la version 2.1.0.
 
 Principaux changements :
 
