@@ -12,25 +12,24 @@
 
 On Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will upgrade the Coastal Ice and Ocean Prediction System East (CIOPS-East) to version 2.3.0 and the Coastal Ice and Ocean Prediction System West (CIOPS-West) to version 2.3.0. 
 
-Significant changes in CIOPS-East:
+**Significant changes in CIOPS-East**:
 
 * New region of the upper estuary increased mixing
 * Updated St. Lawrence River temperature climatology
 * Upgrade to CICE6
-* Usage of delta Edington radiation scheme
+* Usage of Delta Edington radiation scheme
 
 A brief summary of the innovations included in this upgrade of CIOPS-East and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-e-230_east.pdf). 
 
-
-Significant change in CIOPS-West:
+**Significant change in CIOPS-West**:
 
 * Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)
 * Upgrade to CICE6
-* Usage of delta Edington radiation scheme  
+* Usage of Delta Edington radiation scheme  
 
 A brief summary of the innovations included in this upgrade of CIOPS-West and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-e-230_west.pdf). 
 
-Associated documents:
+**Associated documents**:
 
 * A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 * The technical specifications document for CIOPS-Eest 2.3.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_2.3.0_e.pdf).
