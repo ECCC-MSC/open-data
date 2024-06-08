@@ -36,14 +36,14 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
-* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north_f.pdf)
 * [Version actuelle du Système à haute résolution de prévision déterministe Nord](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS-NORTH_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS-N_fr.svg)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-north_f.pdf)
 * [Note technique des éléments du temps sur grille (WEonG)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-north_f.pdf)
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD) est disponible [ici](changelog_hrdps-north_fr.md).
+La chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-nord) est disponible [ici](changelog_hrdps-north_fr.md).
 
 
