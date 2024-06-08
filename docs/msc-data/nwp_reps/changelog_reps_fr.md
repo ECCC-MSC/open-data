@@ -14,8 +14,8 @@ Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorolo
 
 Principaux changements :
 
-* Les conditions frontières proviennent du [SGPE](../nwp_gdps/readme_geps_fr.md)  avec une résolution de 25km.
-* Utilisation des analyses d'une composante du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale pour les conditions initiales en remplacement du SRPD.
+* Les conditions frontières proviennent du [Système global de prévision d'ensemble (SGPE)](../nwp_gdps/readme_geps_fr.md) avec une résolution de 25km.
+* Utilisation des analyses d'une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale pour les conditions initiales en remplacement du Système régional de prévision déterministe (SRPD).
 * Utilisation des analyses du Système global de prévision océan-glace (SGPOG) et modifications des configurations de la physique.
 * Utilisation de la coordonnée SLEVE.
 
