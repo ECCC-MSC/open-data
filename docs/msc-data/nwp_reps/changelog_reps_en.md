@@ -6,6 +6,29 @@
 
 # Chronology of changes to the Regional Ensemble Prediction System (REPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 5.0.0 of the Regional Ensemble Prediction System (REPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Prediction System (REPS) to version 5.0.0.
+
+Significant changes:
+* Boundary conditions coming from new [GEPS](../nwp_gdps/readme_geps_en.md) at 25 km resolution.
+* Use of a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md), for initial conditions as a replacement of the RDPS.
+* Use of the Global Ice-Ocean Prediction System (GIOPS) analyses and modification to the physics configuration.
+* Transition to the Smooth LEvel Vertical (SLEVE) coordinate.
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_reps-500_e.pdf). 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-500_e.pdf).
+
+The technical specifications document for REPS 5.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_5.0.0_e.pdf) .
+
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 4.1.0 of the REPS adapted to the New High Performance Computing Infrastructure.

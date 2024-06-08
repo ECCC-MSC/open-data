@@ -6,6 +6,29 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble (SRPE)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système régional de prévision d'ensemble (SRPE) 5.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 5.0.0 de son Système régional de prévision d'ensemble (SRPE).
+
+Principaux changements :
+
+* Les conditions frontières proviennent du [SGPE](../nwp_gdps/readme_geps_fr.md)  avec une résolution de 25km.
+* Utilisation des analyses d'une composante du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale pour les conditions initiales en remplacement du SRPD.
+* Utilisation des analyses du Système global de prévision océan-glace (SGPOG) et modifications des configurations de la physique.
+* Utilisation de la coordonnée SLEVE.
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_reps-500_e.pdf). 
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_reps-500_f.pdf).
+
+Le document des spécifications techniques du SRPE 5.0.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_5.0.0_f.pdf).
+
+
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SRPE à la version 4.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
