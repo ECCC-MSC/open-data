@@ -35,6 +35,7 @@ A venir
 * [Version actuelle du Système de simulation hydrodynamique opérationnelle (SHOP)](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_SHOP_f.pdf)
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_shop_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_NSRPS-OHPS_fr.svg)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop_f.pdf)
 
 ## Registre des changements 
 
