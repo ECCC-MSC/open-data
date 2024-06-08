@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorolo
 
 Résumé des innovations majeures:
 
-* Mise à jour du modèle intrant de SRPDQA-24 à [SRPDQA-25](../nwp_gdps/readme_raqdps_en.md).
+* Mise à jour du modèle intrant de la version 24 du [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](../nwp_gdps/readme_raqdps_en.md) à la version 25.
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf). 
 
