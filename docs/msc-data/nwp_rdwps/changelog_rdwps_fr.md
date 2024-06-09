@@ -8,9 +8,9 @@
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour du Système Régional de Prévision Déterministe de Vague (SRPDV) 4.2.0 du Centre météorologique canadien (CMC)
+### Mise à jour du Système régional de prévision déterministe de vague (SRPDV) 4.2.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.2.0 de son Système Régional de Prévision Déterministe de Vague (SRPDV).
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.2.0 de son Système régional de prévision déterministe de vague (SRPDV).
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
