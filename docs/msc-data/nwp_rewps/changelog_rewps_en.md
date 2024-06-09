@@ -16,11 +16,11 @@ Significant changes:
 
 * Addition of 06Z and 18Z runs
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-170_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rewps-170_e.pdf).
 
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
 
-The technical specifications document for RDWPS 1.7.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_1.7.0_e.pdf).
+The technical specifications document for REWPS 1.7.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_REWPS_1.7.0_e.pdf).
 
 ## Tuesday June 28, 2022
 

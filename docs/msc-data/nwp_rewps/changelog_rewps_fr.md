@@ -8,9 +8,9 @@
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour du  Système régional de prévision d'ensemble de Vague (SRPEV) 1.7.0 du Centre météorologique canadien (CMC)
+### Mise à jour du  Système régional de prévision d'ensemble de vague (SRPEV) 1.7.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système régional de prévision d'ensemble de Vague (SRPEV).
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système régional de prévision d'ensemble de vague (SRPEV).
 
 Principaux changements :
 
