@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à
 
 Principaux changements :
 
-*  Forçage du modèle, les données relatives au vent et à la pression au niveau de la mer ont été mises à jour pour tenir compte de la version 8.0.0 du SGPE. 
+*  Forçage du modèle, les données relatives au vent et à la pression au niveau de la mer ont été mises à jour pour tenir compte de la version 8.0.0 du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md). 
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_resps-170_f.pdf).
 
@@ -22,7 +22,7 @@ Une copie de la note officielle annonçant ce changement est disponible [via ce 
 
 Le document des spécifications techniques du SRPEOT 1.7.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RESPS_1.7.0_f.pdf).
 
-Une note technique à ce sujet est disponiblee [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-170_f.pdf).
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-170_f.pdf).
 
 ## Le mardi 28 juin 2022
 
