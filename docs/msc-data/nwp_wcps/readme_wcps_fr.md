@@ -40,5 +40,5 @@ Les [métadonnées du Système de prévision du cycle de l'eau - Océan-Atmosph�
 
 ## Registre des changements 
 
-La [chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE)](changelog_wcps_fr.md) est disponible.
+La chronologie des changements apportés au Système de prévision du cycle de l'eau (SPCE) est disponible [ici](changelog_wcps_fr.md).
 
