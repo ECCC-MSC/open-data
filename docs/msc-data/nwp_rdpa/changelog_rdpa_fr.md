@@ -6,6 +6,24 @@
 
 # Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour de l'Analyse déterministe de précipitation (ARDP) 6.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son Analyse déterministe de précipitation (ARDP).
+
+Principaux changements :
+
+* Ajout de 86 stations supplémentaires du réseau partenaire Saskatchewan Fire Weather Network (SKForestry) permettant d'améliorer les analyses pour cette province.
+* Assimilation des données radar à double polarisation pour 25 radars canadiens bande S (DPQPE) et 65 radars américains NEXRAD (DAA). Ajout de 3 radars américains.
+* Ces changements entrainent une amélioration significative des scores d’habileté pour une majorité de seuils de précipitation.
+
+Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+Le document des spécifications techniques de ARDP 6.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_6.0.0_f.pdf).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdpa-600_f.pdf).
+
 ## Le mercredi 3 mai 2023
 
 ### Mise à jour de ARDP suite au remplacement de GOES-17 par GOES-18
