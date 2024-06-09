@@ -41,5 +41,5 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Registre des changements 
 
-La [chronologie des changements apportés au Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)](changelog_hrdlps_fr.md) est disponible.
+La chronologie des changements apportés au Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS est disponible [ici](changelog_hrdlps_fr.md).
 
