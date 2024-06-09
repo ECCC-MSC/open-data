@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à
 
 Principaux changements :
 
-*  Remplacement de la prévision actuelle de l'onde de tempête basée sur l'ajustement sinusoïdal par un signal d'onde de tempête plus réaliste prévu par le Système régional de prévision d'ensemble d'ondes de tempête (SRPEOT) pour calculer la condition limite en aval 
+*  Remplacement de la prévision actuelle de l'onde de tempête basée sur l'ajustement sinusoïdal par un signal d'onde de tempête plus réaliste prévu par le [Système régional de prévision d'ensemble d'ondes de tempête (SRPEOT)](../nwp_resps/readme_resps_fr.md) pour calculer la condition limite en aval 
 *  Mise à jour du traitement des observations manquantes pour garantir l'utilisation des données au moment approprié de leur validité
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop-340_f.pdf).
