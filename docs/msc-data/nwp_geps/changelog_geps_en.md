@@ -16,9 +16,8 @@ Significant changes:
 
 * Increase grid resolution from 39km to 25km.
 * Upgrade to CICE 6
-* Usage of delta Edington radiation scheme
-* Extended to 39 days from 32 days the monthly forecast runs
-
+* Usage of Delta Edington radiation scheme
+* Extended to 39 days from 32 days the monthly forecast runs at 00Z
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_geps-800_e.pdf).
 
