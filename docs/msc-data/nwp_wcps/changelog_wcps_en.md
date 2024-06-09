@@ -14,10 +14,9 @@ Effective Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will u
 
 Significant changes:
 
-* Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md), instead of RDPS
+* Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)
 * Upgrade to CICE6
-* Usage of delta Edington radiation scheme
-
+* Usage of Delta Edington radiation scheme
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_wcps-330_e.pdf). 
 
@@ -25,7 +24,7 @@ A copy of the official note announcing the implementation of these changes is av
 
 A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_wcps-330_e.pdf).
 
-The technical specifications document for WCPS 3.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_3.3.0_e.pdf) .
+The technical specifications document for WCPS 3.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_WCPS_3.3.0_e.pdf) .
 
 
 
