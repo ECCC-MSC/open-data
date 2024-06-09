@@ -6,6 +6,24 @@
 
 # Chronology of changes to the Regional Ensemble Storm-surge Prediction System (RESPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 1.7.0 of Regional Ensemble Storm-surge Prediction System (RESPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Storm-surge Prediction System (RESPS) to v1.7.0
+
+Significant changes:
+
+*  Model forcing, wind and sea level pressure input upgraded to GEPS v8.0.0 
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_resps-170_e.pdf).
+
+The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
+
+The technical specifications document for RESPS 1.7.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RESPS_1.7.0_e.pdf).
+
+A technical note with more details on this change [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_resps-170_e.pdf)
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 1.6.0 of the RESPS adapted to the New High Performance Computing Infrastructure.
