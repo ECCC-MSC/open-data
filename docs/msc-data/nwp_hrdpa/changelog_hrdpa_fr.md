@@ -8,9 +8,9 @@
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour de l'Analyse à Haute Résolution Déterministe de Précipitation (AHRDP) 6.0.0 du Centre météorologique canadien (CMC)
+### Mise à jour de l'Analyse à haute résolution déterministe de précipitation (AHRDP) 6.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.6.0 de son Analyse à Haute Résolution Déterministe de Précipitation (AHRDP).
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.6.0 de son Analyse à haute résolution déterministe de précipitation (AHRDP).
 
 Principaux changements :
 
