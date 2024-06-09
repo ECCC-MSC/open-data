@@ -59,7 +59,7 @@ Upcoming.
 
 ## Changelog
 
-The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [in the changelog](changelog_geps_en.md).
+The chronology of changes to the Global Ensemble Prediction System (GEPS) is available [ici](changelog_geps_en.md).
 
 <style>
   #legend-img {
