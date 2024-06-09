@@ -17,7 +17,7 @@ Principaux changements :
 *  Remplacement de la prévision actuelle de l'onde de tempête basée sur l'ajustement sinusoïdal par un signal d'onde de tempête plus réaliste prévu par le Système régional de prévision d'ensemble d'ondes de tempête (SRPEOT) pour calculer la condition limite en aval 
 *  Mise à jour du traitement des observations manquantes pour garantir l'utilisation des données au moment approprié de leur validité
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop-340_e.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop-340_f.pdf).
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
