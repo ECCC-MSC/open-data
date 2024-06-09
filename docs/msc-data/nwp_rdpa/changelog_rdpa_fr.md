@@ -4,13 +4,13 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [ARDP](readme_rdpa_fr.md) > Changements au ARDP
 
-# Chronologie des changements apportés à l'Analyse Régionale Déterministe de Précipitation (CaPA-ARDP)
+# Chronologie des changements apportés à l'Analyse régionale déterministe de précipitation (CaPA-ARDP)
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour de l'Analyse déterministe de précipitation (ARDP) 6.0.0 du Centre météorologique canadien (CMC)
+### Mise à jour de l'Analyse régionale déterministe de précipitation (ARDP) 6.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son Analyse déterministe de précipitation (ARDP).
+Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 6.0.0 de son Analyse régionale déterministe de précipitation (ARDP).
 
 Principaux changements :
 
