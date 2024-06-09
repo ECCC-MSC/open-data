@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 6.0.0 of the High Resolution Deterministic Precipitation Analysis (HRDPA) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Precipitation Analysis (HRDPA) to v6.0.0
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Precipitation Analysis (HRDPA) to v6.0.0.
 
 Significant changes:
 
