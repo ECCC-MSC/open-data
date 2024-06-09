@@ -14,7 +14,7 @@ On Tuesday June 11, 2024 starting with the 1200 UTC run, the Canadian Meteorolog
 
 Significant changes:
 
-* Increase grid resolution from 39km to 25km.
+* Increase horizontal resolution from 39km to 25km.
 * Upgrade to CICE 6
 * Usage of Delta Edington radiation scheme
 * Extended to 39 days from 32 days the monthly forecast runs at 00Z
