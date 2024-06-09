@@ -23,7 +23,7 @@ Une copie de la note officielle annonçant ce changement est disponible [via ce 
 
 Le document des spécifications techniques du SHOP 3.4.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_SHOP_3.4.0_f.pdf).
 
-Une note technique à ce sujet est disponiblee [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-340_f.pdf).
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_shop-340_f.pdf).
 
 ## Le mercredi 20 septembre 2023
 
