@@ -23,8 +23,6 @@ The official note announcing this implementation is available [at this link](htt
 
 The technical specifications document for HRDLPS 2.2.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDLPS_2.2.0_e.pdf).
 
-A technical note with more details on this change [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdlps-220_e.pdf)
-
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 2.1.0 of the HRDLPS adapted to the New High Performance Computing Infrastructure.
