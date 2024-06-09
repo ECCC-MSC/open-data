@@ -14,7 +14,7 @@ On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteor
 
 Significant changes:
 
-* Replacing the current surge forecast based on sine-wave fitting by a more realistic surge signal predicted by the Regional Ensemble Storm Surge Prediction System (RESPS) to calculate the downstream boundary condition ​
+* Replacing the current surge forecast based on sine-wave fitting by a more realistic surge signal predicted by the [Regional Ensemble Storm Surge Prediction System (RESPS)](../nwp_resps/readme_resps_en.md) to calculate the downstream boundary condition ​
 * Updating the treatment of missing observations to ensure the use of data at the appropriate time of validity
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_shop-340_e.pdf).
