@@ -6,6 +6,29 @@
 
 # Chronology of changes to the Water Cycle Prediction System (WCPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 3.3.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre
+
+Effective Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will update the Water Cycle Prediction System (WCPS) to v3.3.0.
+
+Significant changes:
+
+* Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md), instead of RDPS
+* Upgrade to CICE6
+* Usage of delta Edington radiation scheme
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_wcps-330_e.pdf). 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_wcps-330_e.pdf).
+
+The technical specifications document for WCPS 3.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REPS_3.3.0_e.pdf) .
+
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 3.2.0 of the WCPS adapted to the New High Performance Computing Infrastructure.
