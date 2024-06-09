@@ -6,6 +6,22 @@
 
 # Chronology of changes to the High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 6.0.0 of the High Resolution Deterministic Precipitation Analysis (HRDPA) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Precipitation Analysis (HRDPA) to v6.0.0
+
+Significant changes:
+
+* Addition of 86 additional stations from partner network Saskatchewan Fire Weather Network (SKForestry) to improve analyses for this province.
+* Assimilation of dual-polarized radar data for 25 Canadian S-band radars (DPQPE) and 65 US NEXRAD radars (DAA). Addition of 3 US radars.
+* These changes lead to a significant improvement in skill scores for a majority of precipitation thresholds.
+
+The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
+
+The technical specifications document for HRDPA 6.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPA_6.0.0_e.pdf).
+
 ## Wednesday May 3, 2023
 
 ### HRDPA update following the replacement of GOES-17 by GOES-18
