@@ -21,7 +21,7 @@ Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs 
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
-Le document des spécifications techniques de SPDHRS est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRELPS_1.2.0_f.pdf).
+Le document des spécifications techniques de SPEHRS est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRELPS_1.2.0_f.pdf).
 
 
 
