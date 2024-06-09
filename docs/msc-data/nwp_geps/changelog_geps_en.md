@@ -6,6 +6,28 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday June 11, 2024
+
+#### Upgrade to Version 8.0.0 of the Global Ensemble Prediction System (GEPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024 starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Ensemble Prediction System (GEPS) to version 8.0.0.
+
+Significant changes:
+
+* Increase grid resolution from 39km to 25km.
+* Upgrade to CICE 6
+* Usage of delta Edington radiation scheme
+* Extended to 39 days from 32 days the monthly forecast runs
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_geps-800_e.pdf).
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on GEPS v8.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-800_e.pdf).
+
+The technical specifications document for GEPS v8.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_8.0.0_e.pdf).
+
 ## Thursday September 14, 2023
 
 ### Addition of commercial GNSS-RO observations from PlanetIQ in the GEPS

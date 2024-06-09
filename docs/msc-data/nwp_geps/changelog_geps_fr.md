@@ -6,6 +6,27 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système global de prévision d'ensemble (SGPE) 8.0.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système global de prévision d'ensemble (SGPE).
+
+Principaux changements :
+* Augmentation de la résolution de 39 km à 25 km
+* Passage au modèle CICE 6
+* Utilisation du schéma de rayonnement delta Eddington
+* Extension de 32 jours à 39 jours pour les passes de la prévision mensuelle
+
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_geps-800_f.pdf).
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_geps-800_f.pdf).
+
+Le document des spécifications techniques du SGPE v8.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GEPS_8.0.0_f.pdf).
+
 ## Le jeudi 14 septembre 2023
 
 ### Ajout d’observations commerciales GNSS-RO de PlanetIQ dans le SGPE
