@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Regional Deterministic Wave Prediction System (RDWPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 4.2.0 of the Regional Deterministic Wave Prediction System (RDWPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Wave Prediction System (RDWPS) to v4.2.0
+
+The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
+
+The technical specifications document for RDWPS 4.2.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_4.2.0_e.pdf).
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 4.1.0 of the RDWPS adapted to the New High Performance Computing Infrastructure.
