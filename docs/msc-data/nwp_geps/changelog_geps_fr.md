@@ -13,11 +13,11 @@
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 8.0.0 de son Système global de prévision d'ensemble (SGPE).
 
 Principaux changements :
-* Augmentation de la résolution de 39 km à 25 km
-* Passage au modèle CICE 6
-* Utilisation du schéma de rayonnement delta Eddington
-* Extension de 32 jours à 39 jours pour les passes de la prévision mensuelle
 
+* Augmentation de la résolution horizontale de 39 km à 25 km
+* Passage au modèle CICE 6
+* Utilisation du schéma de rayonnement Delta Eddington
+* Extension de 32 jours à 39 jours pour les passes de la prévision mensuelle à 00Z
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_geps-800_f.pdf).
 
