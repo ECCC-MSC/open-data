@@ -23,7 +23,6 @@ Une copie de la note officielle annonçant ce changement est disponible [via ce 
 
 Le document des spécifications techniques de SPDHRS est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDLPS_2.2.0_f.pdf).
 
-Une note technique à ce sujet est disponiblee [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdlps-220_f.pdf).
 
 ## Le mardi 28 juin 2022
 
