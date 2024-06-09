@@ -8,7 +8,7 @@
 
 ## Tuesday June 11, 2024
 
-### Upgrade to Version 3.4.0 of Operational Hydrodynamic Prediction System (OHPS) at the Canadian Meteorological Centre
+### Upgrade to Version 3.4.0 of the Operational Hydrodynamic Prediction System (OHPS) at the Canadian Meteorological Centre
 
 On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Operational Hydrodynamic Prediction System (OHPS) to v3.4.0
 
