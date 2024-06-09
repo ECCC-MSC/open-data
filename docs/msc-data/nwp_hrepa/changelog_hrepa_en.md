@@ -6,6 +6,20 @@
 
 # Chronology of changes to the High Resolution Ensemble Precipitation Analysis (HREPA)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 2.0.0 of the High Resolution Ensemble Precipitation Analysis (HREPA) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the High Resolution Ensemble Precipitation Analysis (HREPA) to v2.0.0.
+
+Significant changes:
+
+* Addition of 86 additional stations from partner network Saskatchewan Fire Weather Network (SKForestry) to improve analyses for this province.
+* Assimilation of dual-polarized radar data for 25 Canadian S-band radars (DPQPE) and 65 US NEXRAD radars (DAA). Addition of 3 US radars.
+* These changes lead to a significant improvement in skill Brier scores for all precipitation thresholds.
+
+The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 1.4.0 of the HREPA adapted to the New High Performance Computing Infrastructure.
