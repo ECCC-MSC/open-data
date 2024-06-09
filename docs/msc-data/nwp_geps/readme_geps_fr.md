@@ -61,7 +61,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système global de prévision d'ensemble (SGPE) est disponible [dans le registre des changements](changelog_geps_fr.md).
+La chronologie des changements apportés au Système global de prévision d'ensemble (SGPE) est disponible [ici](changelog_geps_fr.md).
 
 <style>
   #legend-img {
