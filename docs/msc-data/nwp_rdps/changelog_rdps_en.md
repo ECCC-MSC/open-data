@@ -6,6 +6,24 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 9.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Prediction System (RDPS) to version 9.0.0.
+
+Significant changes:
+
+* The Regional Deterministic Prediction System is now a component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) at 10 km resolution, over a North American domain.
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps-900_e.pdf). 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-900_e.pdf).
+
+The technical specifications document for RDPS 9.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_9.0.0_e.pdf) .
+
 ## Thursday November 2, 2023
 
 ### Addition of CSR observations from the GOES-18 satellite in the RDPS

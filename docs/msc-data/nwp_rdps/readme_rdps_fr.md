@@ -8,6 +8,8 @@
 
 Le Système régional de prévision déterministe (SRPD) procède à des calculs physiques afin de produire des prévisions déterministes d'éléments de l'atmosphère du jour présent jusqu'à 84 heures dans le futur. Les éléments de l'atmosphère incluent notamment la température, les précipitations, la couverture nuageuse, la vitesse et direction des vents et l'humidité. Ce produit contient les résultats numériques bruts de ces calculs. La couverture géographique inclut le Canada et les États-Unis. La résolution spatiale horizontale des données est d'environ 10 km distribuées sur au plus 33 niveaux verticaux. Les prévisions sont exécutées quatre fois par jour.
 
+Note: Le Système régional de prévision déterministe est désormais une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) à 10 km de résolution, sur un domaine nord-américain.
+
 ## Accès
 
 ### Comment accéder aux données
@@ -72,8 +74,9 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [Version actuelle du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_f.pdf)
 * [Note technique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdps_f.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_RDPS_fr.svg)
+* [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdps_f.pdf)
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système régional de prévision déterministe (SRPD) est disponible [dans le registre des changements](changelog_rdps_fr.md).
+La chronologie des changements apportés au Système régional de prévision déterministe (SRPD) est disponible [ici](changelog_rdps_fr.md).
 
