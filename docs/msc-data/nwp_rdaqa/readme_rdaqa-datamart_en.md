@@ -51,7 +51,7 @@ where:
 * __HH__: Analysis validity time, in UTC [00, 01, 02, ..., 22, 23]
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
-* __SYSTEM__ : Constant string indicating the system from which the analysis was generated [RDAQA; RDAQA-Prelim for the observation cut-off time within one hour of time YYYYMMDDHH, indicating that all observations may not have been collected; RDAQA-FW for analysis generated from the RAQDPS-FW system].
+* __SYSTEM__ : Constant string indicating the system from which the analysis was generated [RDAQA; RDAQA-Prelim for the observation cut-off time within one hour of time YYYYMMDDHH, indicating that all observations may not have been collected; RDAQA-FW for analysis generated from the Firework component of the system].
 * __VAR__ : Variables included in the file (see section below).
 * __LVLTYPE__ : Vertical level type [Sfc for the surface]
 * __grid__ : Horizontal grid [RLatLon]
