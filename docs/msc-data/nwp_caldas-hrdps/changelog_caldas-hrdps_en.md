@@ -6,6 +6,24 @@
 
 # Chronology of changes to the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 4.0.0 of the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) to version 4.0.0.
+
+Significant changes:
+
+* Improved IMS Data Upscaling
+* Enhanced Precipitation-Phase Partitioning
+* Utilize relative humidity (HR) data from HRDPS rather than performing calculations within CaLDAS-NSRPS
+* Utilize HRDPS forcings for the skin temperature (Tskin) retrieval
+* Addressing Summer Cold Biases in Water Surfaces
+
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
+
+A technical note with more details on this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_caldas-400_e.pdf).
+
 ## Wednesday November 22, 2023
 
 ### Correction to the snow density and snow albedo variables in the diagnostic outputs of CaLDAS-HRDPS
