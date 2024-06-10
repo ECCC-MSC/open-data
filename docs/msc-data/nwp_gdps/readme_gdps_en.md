@@ -79,7 +79,7 @@ List and links to the products available for this dataset:
 
 ## Changelog
 
-The chronology of changes to the Global Deterministic Prediction System (GDPS) is available [in the changelog](changelog_gdps_en.md).
+The chronology of changes to the Global Deterministic Prediction System (GDPS) is available [here](changelog_gdps_en.md).
 
 <style>
   #legend-img {
