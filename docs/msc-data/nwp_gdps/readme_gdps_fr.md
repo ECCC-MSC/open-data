@@ -79,7 +79,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Registre des changements 
 
-La chronologie des changements apportés au Système global de prévision déterministe (SPGD) est disponible [dans le registre des changements](changelog_gdps_fr.md).
+La chronologie des changements apportés au Système global de prévision déterministe (SPGD) est disponible [ici](changelog_gdps_fr.md).
 
 <style>
   #legend-img {
