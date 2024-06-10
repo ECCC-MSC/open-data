@@ -6,6 +6,24 @@
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD) 4.0.0 du Centre métérologique canadien
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.0.0 de son Système canadien d'assimilation de données de surface dans le [SHRPD](../nwp_hrdps/readme_hrdps_fr.md) (SCanADS-SHRPD).
+
+Principaux changements :
+
+* Amélioration de la mise à l'échelle des données IMS
+* Amélioration de la séparation entre les phases de précipitation
+* Utilisation des données d'humidité relative du SHRPD plutôt que d'effectuer les calculs dans SCanADS
+* Utilisation des forçages du SHRPD pour la récupération de la température de la surface (Tskin)
+* Correction de biais froid pendant l’été à la surface de l'eau
+ 
+La note officielle annonçant ce changement [est disponible via ce lien](hhttps://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](hhttps://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_caldas-400_f.pdf).
+
 ## Le mercredi 22 novembre 2023
 
 ### Correction aux variables de la densité de la neige et de l'albédo de la neige dans les sorties diagnostiques de SCanADS-SHRPD
