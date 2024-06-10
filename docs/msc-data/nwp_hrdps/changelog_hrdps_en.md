@@ -6,6 +6,28 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday June 11, 2024
+
+### Major upgrade to Version 7.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 7.0.0.
+
+Significant changes:
+* Asssimilation cycle now using boundary conditions from [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+* Upgrade from GEM 5.1.2 to 5.2.1.
+* Forecast component now using boundary conditions from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be found [in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-700_e.pdf).
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on HRDPS v7.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_e.pdf).
+
+The technical specifications document for HRDPS v7.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPS_7.0.0_e.pdf).
+
+
+
 ## Thursday November 2, 2023
 
 ### Addition of CSR observations from the GOES-18 satellite in the HRDPS
