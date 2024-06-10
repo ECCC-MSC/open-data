@@ -29,9 +29,6 @@ A technical note with more details on this system is available [at this link](ht
 
 The technical specifications document for GDPS 9.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_9.0.0_e.pdf) .
 
-
-
-
 ## Thursday November 2, 2023
 
 ### Addition of CSR observations from the GOES-18 satellite in the GDPS
