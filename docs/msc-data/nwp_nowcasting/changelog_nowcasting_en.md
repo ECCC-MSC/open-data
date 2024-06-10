@@ -14,7 +14,7 @@ On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorolo
 
 Significant change:
 
-* Cloud Fraction CF generated using GOES and GDPS data replacing the RDPS data.  
+* Cloud Fraction CF generated using GOES and GDPS data replacing the RDPS data  
 * Use of post-processed S-band radar data 
 * GDPS model data replacing the RDPS model data used in previous INCS versions 
 * UMOS-GDPS data replacing the UMOS RDPS data used in previous INCS versions 
