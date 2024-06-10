@@ -13,7 +13,7 @@
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the High Resolution Deterministic Prediction System (HRDPS) to version 7.0.0.
 
 Significant changes:
-* Asssimilation cycle now using boundary conditions from [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
+* Asssimilation cycle now using boundary conditions from the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
 * Upgrade from GEM 5.1.2 to 5.2.1.
 * Forecast component now using boundary conditions from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md).
 
