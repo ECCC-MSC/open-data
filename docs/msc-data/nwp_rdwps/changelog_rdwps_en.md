@@ -10,7 +10,14 @@
 
 ### Upgrade to Version 4.2.0 of the Regional Deterministic Wave Prediction System (RDWPS) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Wave Prediction System (RDWPS) to v4.2.0
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Deterministic Wave Prediction System (RDWPS) to v4.2.0
+
+Significant changes:
+
+* Use of wind forcings from the latest version of the High Resolution Deterministic Prediction System (HRDPS), v7.0.0
+* Use of ice concentration forcings from the latest versions of the Water Cycle Prediction Systems (WCPS), v3.3.0 and the Regional Ice-Ocean Prediction System (RIOPS), v2.4.0
+* Ocean domains: correct interpolation of wind to model grid
+* Great Lakes domains: activate Miche style shallow water limiter
 
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
 

@@ -10,7 +10,14 @@
 
 ### Mise à jour du Système régional de prévision déterministe de vague (SRPDV) 4.2.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.2.0 de son Système régional de prévision déterministe de vague (SRPDV).
+Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 4.2.0 de son Système régional de prévision déterministe de vague (SRPDV).
+
+Principaux changements:
+
+* Utilisation de forçages de vent provenant de la dernière version du Système à haute résolution de prévision déterministe (SHRPD), v7.0.0
+* Utilisation de forçages de concentration de glace provenant de la dernière version du Système de prévision du cycle de l'eau (SPCE), v3.3.0 et du Système régional de prévision océan-glace (SRPOG), v2.4.0
+* Domaines océaniques: correction de l'interpolation des vents à la grille modèle
+* Domaines des Grands Lacs: activation du limiteur de style Miche pour les eaux peu profondes
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 

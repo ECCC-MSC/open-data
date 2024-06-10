@@ -10,13 +10,16 @@
 
 ### Mise à jour du  Système régional de prévision d'ensemble de vague (SRPEV) 1.7.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système régional de prévision d'ensemble de vague (SRPEV).
+Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système régional de prévision d'ensemble de vague (SRPEV).
 
 Principaux changements :
 
-* Ajout des passes 06Z et 18Z
+* Utilisation de forçages provenant de la dernière version du Système régional de prévision d'ensemble (SRPE), v5.0.0
+* Utilisation de forçages provenant de la dernière version du Système de prévision du cycle de l'eau (SPCE), v3.3.0
+* Activation du limiteur de style Miche pour les eaux peu profondes
+* Ajout de deux prévisions quotidiennes à 06 UTC et 18 UTC
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rewps-170_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rewps-170_f.pdf).
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
 
