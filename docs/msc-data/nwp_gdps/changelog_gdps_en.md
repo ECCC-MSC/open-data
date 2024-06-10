@@ -18,6 +18,7 @@ Significant changes:
 * Upgrade from GEM 5.1.2 to 5.2.1.
 * Upgrade from CICE 4 to CICE 6.
 * Usage of delta Edington radiation scheme.
+* GDPS is also running a 10 km uncoupled component. This component is moslty used as a boundary conditions for regional systems and atmospheric forcing for environmental systems.
 
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_e.pdf). 

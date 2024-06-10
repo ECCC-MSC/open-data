@@ -9,7 +9,6 @@
 
 Le Système global de prévision déterministe (SPGD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE). Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale sur une grille native Yin-Yang avec une résolution horizontale de 15 km. Les données sont offertes pour 33 niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.2 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
 
-Le SGPD produit aussi une composante non-couplée à 10 km de résolution. Cette composante est principalement utilisée comme condition frontière pour les systèmes régionaux et comme forçage atmosphérique pour les systèmes environmentaux.
 
 ## Accès
 
