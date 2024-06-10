@@ -16,9 +16,9 @@ Principaux changements :
 
 * Utilisation de forçages provenant de la dernière version du Système global de prévision d'ensemble (SGPE), v8.0.0
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-130_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gewps-130_f.pdf).
 
-La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 Un document avec des détails techniques à ce sujet [est disponible via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gewps-130_f.pdf).
 

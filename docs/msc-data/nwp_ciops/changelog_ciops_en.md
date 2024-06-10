@@ -10,7 +10,7 @@
 
 ### Upgrade of the Coastal Ice and Ocean Prediction System East (CIOPS-East) and West (CIOPS-West) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will upgrade the Coastal Ice and Ocean Prediction System East (CIOPS-East) to version 2.3.0 and the Coastal Ice and Ocean Prediction System West (CIOPS-West) to version 2.3.0. 
+On Tuesday June 11, 2024, starting with the 1200 UTC, the Canadian Meteorological Centre (CMC) will upgrade the Coastal Ice and Ocean Prediction System East (CIOPS-East) to version 2.3.0 and the Coastal Ice and Ocean Prediction System West (CIOPS-West) to version 2.3.0. 
 
 **Significant changes in CIOPS-East**:
 
@@ -31,7 +31,7 @@ A brief summary of the innovations included in this upgrade of CIOPS-West and th
 
 **Associated documents**:
 
-* A copy of the official note announcing the implementation of these changes [is available at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+* A copy of the official note announcing the implementation of these changes [is available at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 * The technical specifications document for CIOPS-Eest 2.3.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_2.3.0_e.pdf).
 * The technical specifications document for CIOPS-West 2.3.0 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_2.3.0_e.pdf).
 * A technical note for CIOPS-East 2.3.0 with more details [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-east-230_e.pdf).

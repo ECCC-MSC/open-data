@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 3.5.0 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ice and Ocean Prediction System (GIOPS) to version 3.5.0.
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Ice and Ocean Prediction System (GIOPS) to version 3.5.0.
 
 Significant changes:
 
@@ -19,7 +19,7 @@ Significant changes:
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_e.pdf).
 
-A copy of the official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 The technical specifications document for GIOPS 3.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GIOPS_3.5.0_e.pdf).
 

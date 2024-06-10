@@ -18,7 +18,7 @@ Significant changes:
 * Assimilation of dual-polarized radar data for 32 Canadian S-band radars (DPQPE) and 65 US NEXRAD radars (DAA). Addition of 3 US radars.
 * These changes lead to a significant improvement in skill scores for a majority of precipitation thresholds.
 
-The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).
+The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 The technical specifications document for HRDPA 6.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPA_6.0.0_e.pdf).
 
