@@ -17,11 +17,11 @@ Principaux changements :
 * La composante assimilation utilise des ébeauches du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md) amélioré à 25km.
 * Passage du modèle GEM 5.1.2 à GEM 5.2.1.
 * Passage du modèle CICE 4 à CICE 6.
-* Utilisation du schéma de rayonnement delta Eddington.
+* Utilisation du schéma de rayonnement Delta Eddington.
 * Le SGPD produit aussi une composante non-couplée à 10 km de résolution. Cette composante est principalement utilisée comme condition frontière pour les systèmes régionaux et comme forçage atmosphérique pour les systèmes environmentaux.
 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_f.pdf).
 
 La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 
