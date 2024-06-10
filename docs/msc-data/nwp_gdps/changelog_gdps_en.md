@@ -6,6 +6,31 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 9.0.0 of the Global Deterministic Prediction System (GDPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Prediction System (GDPS) to version 9.0.0.
+
+
+Significant changes:
+* Assimilation component feeding from improved 25km [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md) trials fields.
+* Upgrade from GEM 5.1.2 to 5.2.1.
+* Upgrade from CICE 4 to CICE 6.
+* Usage of delta Edington radiation scheme.
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_e.pdf). 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-900_e.pdf).
+
+The technical specifications document for WCPS 3.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_9.0.0_e.pdf) .
+
+
+
+
 ## Thursday November 2, 2023
 
 ### Addition of CSR observations from the GOES-18 satellite in the GDPS
