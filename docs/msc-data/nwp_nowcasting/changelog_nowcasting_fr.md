@@ -10,16 +10,16 @@
 
 ### Mise à jour du Système intégré de prévision immédiate (SIPI) 2.3.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de son ystème intégré de prévision immédiate (SIPI).
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de son Système intégré de prévision immédiate (SIPI).
 
 Principaux changements :
 
-* Fraction nuageuse CF générée à partir des données GOES (Geostationary Operational Environmental Satellite) et SGPD en remplacement des données SRPD.  
-* Radar en bande S post-traité avec les versions CI-4 des modèles de prévision numérique du temps. 
-* Les données du modèle SGPD remplacent les données du modèle SRPD utilisées dans les versions précédentes de l'SIPI. 
-* Les données UMOS-SGPD remplacent les données UMOS-SRPD utilisées dans les versions précédentes de SIPI. 
+* Fraction nuageuse CF générée à partir des données GOES (Geostationary Operational Environmental Satellite) et du Système global de prévision déterministe (SGPD) en remplacement du Système régional de prévision déterministe (SRPD) 
+* Utilisation des données radar en bande S post-traitées 
+* Les données du modèle SGPD remplacent les données du modèle SRPD utilisées dans les versions précédentes du SIPI 
+* Les données UMOS-SGPD remplacent les données UMOS-SRPD utilisées dans les versions précédentes du SIPI 
 
-La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 Un document avec des détails techniques à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-230_f.pdf).
 
