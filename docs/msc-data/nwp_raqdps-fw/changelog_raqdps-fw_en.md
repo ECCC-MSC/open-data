@@ -6,6 +6,17 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW)
 
+## Tuesday June 11, 2024
+
+### The Regional Air Quality Deterministic Prediction System FireWork (RAQSPS-FW) is merged with The Regional Air Quality Deterministic Prediction System (RAQDPS)
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) will stop running a separate system forecasting air quality with near-real-Time wildfire emissions.  The wildfire emissions are included into the regular Regional Air Quality Deterministic Prediction System (RAQDPS) version 25.
+
+
+All documentaion regarding Regional Air Quality Deterministic Prediction System (RAQDPS) version 25 [can be found here](../nwp_raqdps/changelog_raqdps_en.md#tuesday-june-11-2024).
+
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 24 of the RAQDPS-FW adapted to the New High Performance Computing Infrastructure.
