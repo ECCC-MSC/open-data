@@ -10,7 +10,7 @@
 
 ### Mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) 2.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse à haute résolution ensembliste de précipitation (AHREP).
+Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse à haute résolution ensembliste de précipitation (AHREP).
 
 Principaux changements :
 

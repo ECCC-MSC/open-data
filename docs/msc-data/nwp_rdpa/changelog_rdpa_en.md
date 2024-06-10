@@ -10,7 +10,7 @@
 
 ### Upgrade to Version 6.0.0 of the Resolution Deterministic Precipitation Analysis (RDPA) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Precipitation Analysis (RDPA) to v6.0.0.
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Precipitation Analysis (RDPA) to v6.0.0.
 
 Significant changes:
 
