@@ -72,6 +72,7 @@ List and links to the products available for this dataset :
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips_e.pdf)
 * [Scientific article](https://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CanSIPS_en.svg)
+* [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_cansips_e.pdf)
 
 ## Changelog
 

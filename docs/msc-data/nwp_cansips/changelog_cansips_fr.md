@@ -6,6 +6,32 @@
 
 # Chronologie des changements apportés au Système de prévision interannuelle et saisonnière canadien (SPISCan)
 
+## Le mardi 30 novembre 2021
+
+### Mise à jour vers la version 2.1 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
+
+En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 3.0.0
+
+Principaux changements :
+* Le modèle climatique couplé CanCM4i remplacé par le modèle  CanESM5.1 Earth system model
+* Le modèle couplé GEM-NEMO 5.1 est remplacé par GEM-NEMO 5.2
+* La taille de l'ensemble de la prévision est doublé (de 20 à 40 membres) en utilisant une combinaison des prévisions usuelles et des prévision initialisées quatre jours avant.
+* Dans CanESM5, Une nouvelle correction de biais à été introduite.
+* L'initialisation de conditions de surface de GEM-NEMO provient maintenant du [système global de prévision déterministe (SGPD)](./nwp_gdps/readme_gdps_fr.md) après un ajustement vers la climatologie du modèle. Dans la version précédente, l'initialisation provenait des processus hors-ligne. 
+
+
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_cansips-300_f.pdf).
+
+La note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/cansips-300_f.pdf).
+
+Le document des spécifications techniques du SPISCan 3.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CanSIPS_3.0.0_f.pdf).
+
+
+
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour de SPISCan à la version 2.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
