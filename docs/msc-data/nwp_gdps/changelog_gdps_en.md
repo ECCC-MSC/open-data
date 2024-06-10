@@ -26,7 +26,7 @@ A copy of the official note announcing the implementation of these changes is av
 
 A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-900_e.pdf).
 
-The technical specifications document for WCPS 3.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_9.0.0_e.pdf) .
+The technical specifications document for GDPS 9.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_9.0.0_e.pdf) .
 
 
 
