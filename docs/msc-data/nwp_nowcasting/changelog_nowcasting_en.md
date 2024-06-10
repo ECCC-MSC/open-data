@@ -19,7 +19,7 @@ Significant change:
 * GDPS model data replacing the RDPS model data used in previous INCS versions 
 * UMOS-GDPS data replacing the UMOS RDPS data used in previous INCS versions 
 
-A copy of the official note announcing the implementation of these changes is available at [this link](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 A technical note with more details on this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-230_e.pdf).
 
