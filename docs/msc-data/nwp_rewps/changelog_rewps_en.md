@@ -10,11 +10,14 @@
 
 ### Upgrade to Version 1.7.0 of the Regional Ensemble Wave Prediction System (REWPS) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Wave Prediction System (REWPS) to v1.7.0
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Wave Prediction System (REWPS) to v1.7.0
 
 Significant changes:
 
-* Addition of 06Z and 18Z runs
+* Use of wind forcings from the latest version of the Regional Ensemble Prediction System (REPS), v5.0.0
+* Use of ice concentration forcings from the latest versions of the Water Cycle Prediction Systems (WCPS), v3.3.0
+* Activate Miche style shallow water limiter
+* Add two daily forecasts at 06 UTC and 18 UTC
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rewps-170_e.pdf).
 
