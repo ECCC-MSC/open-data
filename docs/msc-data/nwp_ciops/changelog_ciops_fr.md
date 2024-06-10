@@ -10,7 +10,7 @@
 
 ### Mise à jour du Système côtier de prévision océan-glace est (SCPOG-Est) et west (SCPOG-Ouest) du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de ses deux Systèmes côtiers de prévision océan-glace: la fenêtre est (SCPOG-Est) et la fenêtre ouest (SCPOG-Ouest). 
+Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de ses deux Systèmes côtiers de prévision océan-glace: la fenêtre est (SCPOG-Est) et la fenêtre ouest (SCPOG-Ouest). 
 
 
 **Principaux changements au système SCPOG-Est**:
@@ -20,7 +20,7 @@ Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement Delta Eddington 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
 
 **Principaux changements au système SCPOG-Ouest**:
 
@@ -28,12 +28,12 @@ Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs 
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement Delta Eddington 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
 
 
 **Documents associés**:
 
-* Une copie de la note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
+* Une copie de la note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 * Le document des spécifications techniques du SCPOG-Est 2.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-EAST_2.3.0_f.pdf).
 * Le document des spécifications techniques du SCPOG-Ouest 2.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CIOPS-WEST_2.3.0_f.pdf).
 * La note technique du SCPOG-E 2.3.0 [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_ciops-east-230_f.pdf).
