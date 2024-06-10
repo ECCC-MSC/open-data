@@ -16,7 +16,7 @@ Résumé des innovations majeures:
 
 * Mise à jour du modèle intrant de la version 24 du [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](../nwp_raqdps/readme_raqdps_fr.md) à la version 25.
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf). 
 
 La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 

@@ -10,12 +10,12 @@
 
 ### Upgrade to Version 6.0.0 of the Resolution Deterministic Precipitation Analysis (RDPA) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Precipitation Analysis (RDPA) to v6.0.0.
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Resolution Deterministic Precipitation Analysis (RDPA) to v6.0.0.
 
 Significant changes:
 
 * Addition of 86 additional stations from partner network Saskatchewan Fire Weather Network (SKForestry) to improve analyses for this province.
-* Assimilation of dual-polarized radar data for 25 Canadian S-band radars (DPQPE) and 65 US NEXRAD radars (DAA). Addition of 3 US radars.
+* Assimilation of dual-polarized radar data for 32 Canadian S-band radars (DPQPE) and 65 US NEXRAD radars (DAA). Addition of 3 US radars.
 * These changes lead to a significant improvement in skill scores for a majority of precipitation thresholds.
 
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2021/11/26/NOCN03_CWAO_262118___xxxxx).

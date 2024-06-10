@@ -50,7 +50,7 @@ où :
 * __HH__ : Heure en UTC du temps de validité de l'analyse [00, 01, 02, ...., 22, 23] 
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __SYSTEM__ : Chaîne de caractères constante indiquant le système à partir duquel l'analyse a été générée [RDAQA; RDAQA-Prelim pour le temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies; RDAQA-FW pour l'analyse générée à partir du système SRPDQA-FW]
+* __SYSTEM__ : Chaîne de caractères constante indiquant le système à partir duquel l'analyse a été générée [RDAQA; RDAQA-Prelim pour le temps de coupure des observations à l'intérieur d'une heure après l'heure YYYYMMDDHH, indiquant que toutes les observations n'ont possiblement pas été recueillies; RDAQA-FW pour l'analyse générée à partir de la composante Firework du système]
 * __VAR__ : Variables contenues dans le fichier (voir section ci-dessous).
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface]
 * __grille__ : Grille horizontale [RLatLon]

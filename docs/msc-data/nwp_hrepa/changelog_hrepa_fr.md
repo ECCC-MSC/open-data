@@ -10,12 +10,12 @@
 
 ### Mise à jour de l'Analyse à haute résolution ensembliste de précipitation (AHREP) 2.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse à haute résolution ensembliste de précipitation (AHREP).
+Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.0.0 de son Analyse à haute résolution ensembliste de précipitation (AHREP).
 
 Principaux changements :
 
 * Ajout de 86 stations supplémentaires du réseau partenaire Saskatchewan Fire Weather Network (SKForestry) permettant d'améliorer les analyses pour cette province.
-* Assimilation des données radar à double polarisation pour 25 radars canadiens bande S (DPQPE) et 65 radars américains NEXRAD (DAA). Ajout de 3 radars américains.
+* Assimilation des données radar à double polarisation pour 32 radars canadiens bande S (DPQPE) et 65 radars américains NEXRAD (DAA). Ajout de 3 radars américains.
 * Ces changements entrainent une amélioration significative des scores d’habileté de Brier pour tous les seuils de précipitation.
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_262118___xxxxx).
