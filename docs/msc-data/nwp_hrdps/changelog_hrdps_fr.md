@@ -18,7 +18,7 @@ Principaux changements :
 * La composante prévision utilise conditions frontière d'une composante du [système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale: 
 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-700_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-700_f.pdf).
 
 La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
 
