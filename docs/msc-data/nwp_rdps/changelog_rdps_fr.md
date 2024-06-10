@@ -22,7 +22,7 @@ La note officielle annonçant ce changement [est disponible via ce lien](http://
 
 Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-900_f.pdf).
 
-Le document des spécifications techniques du SGPD v9.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_9.0.0_f.pdf).
+Le document des spécifications techniques du SRPD v9.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS_9.0.0_f.pdf).
 
 ## Le jeudi 2 novembre 2023
 
