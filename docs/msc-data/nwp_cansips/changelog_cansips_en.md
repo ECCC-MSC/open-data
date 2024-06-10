@@ -28,7 +28,7 @@ A copy of the official note announcing the implementation of these changes is av
 
 A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-300_e.pdf).
 
-The technical specifications document for CanSIPS 3.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CanSIPS_3.0.0_e.pdf) .
+The technical specifications document for CanSIPS 3.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_3.0.0_e.pdf) .
 
 
 

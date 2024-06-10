@@ -27,7 +27,7 @@ La note officielle annonçant ce changement est disponible [via ce lien](https:/
 
 Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/cansips-300_f.pdf).
 
-Le document des spécifications techniques du SPISCan 3.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CanSIPS_3.0.0_f.pdf).
+Le document des spécifications techniques du SPISCan 3.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_3.0.0_f.pdf).
 
 
 
