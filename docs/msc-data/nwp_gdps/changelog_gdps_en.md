@@ -12,12 +12,12 @@
 
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Prediction System (GDPS) to version 9.0.0.
 
-
 Significant changes:
+
 * Assimilation component feeding from improved 25km [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md) trials fields.
 * Upgrade from GEM 5.1.2 to 5.2.1.
 * Upgrade from CICE 4 to CICE 6.
-* Usage of delta Edington radiation scheme.
+* Usage of Delta Edington radiation scheme.
 * GDPS is also running a 10 km uncoupled component. This component is moslty used as a boundary conditions for regional systems and atmospheric forcing for environmental systems.
 
 
