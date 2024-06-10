@@ -4,11 +4,11 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) 
 
-# Chronology of changes to the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS)
+# Chronology of changes to the Canadian Land Data Assimilation System in the High Resolution Prediction System (HRDPS)
 
 ## Tuesday June 11, 2024
 
-### Upgrade to Version 4.0.0 of the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) at the Canadian Meteorological Centre
+### Upgrade to Version 4.0.0 of the Canadian Land Data Assimilation System in the HRDPS at the Canadian Meteorological Centre
 
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Land Data Assimilation System in the [HRDPS](../nwp_hrdps/readme_hrdps_en.md) (CaLDAS-HRDPS) to version 4.0.0.
 
