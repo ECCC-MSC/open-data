@@ -6,11 +6,41 @@
 
 # Chronologie des changements apportés au Système intégré de prévision immédiate (SIPI)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système intégré de prévision immédiate (SIPI) 2.3.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de son ystème intégré de prévision immédiate (SIPI).
+
+Principaux changements :
+
+* Fraction nuageuse CF générée à partir des données GOES (Geostationary Operational Environmental Satellite) et SGPD en remplacement des données SRPD.  
+* Radar en bande S post-traité avec les versions CI-4 des modèles de prévision numérique du temps. 
+* Les données du modèle SGPD remplacent les données du modèle SRPD utilisées dans les versions précédentes de l'SIPI. 
+* Les données UMOS-SGPD remplacent les données UMOS-SRPD utilisées dans les versions précédentes de SIPI. 
+
+La note officielle annonçant ce changement [est disponible via ce lien](http://dd.meteo.gc.ca/doc/genots/2024/06/11/NOCN03_CWAO_311455___xxxxx).
+
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-230_f.pdf).
+
+Le document des spécifications techniques du SIPI 2.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPS-INCS_2.3.0_f.pdf).
+
+## Le lundi 19 février 2024
+
+### Mise à jour du Système intégré de prévisions immédiates (SIPI) 2.2.0 du Centre météorologique canadien (CMC)
+
+Le lundi 19 février 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.2.0 de son Système intégré de prévisions immédiates (SIPI).
+
+Les modifications incluses dans cette mise à jour se résument comme suit :
+
+* Correctif dans le SIPI opérationnel pour mieux gérer les cas rares de données radars manquantes.
+
+
 ## Le jeudi 23 mars 2023
 
 ### Mise à jour de SIPI à la version 2.1.0 pour introduire le traitement des données radars de bande-S du Canada
 
-Le jeudi 23 mars 2023, à compter de la passe de 1200UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.1.0 de son Système intégré de prévisions immédiates (SIPI).
+Le jeudi 23 mars 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.1.0 de son Système intégré de prévisions immédiates (SIPI).
 
 Les modifications incluses dans cette mise à jour se résument comme suit :
 
