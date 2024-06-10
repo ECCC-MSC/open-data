@@ -13,9 +13,9 @@
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe (SHRPD) à la version 7.0.0.
 
 Principaux changements :
-* Le cycle d'asssimilation utilise les conditions frontières du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md)
+* Le cycle d'asssimilation utilise les conditions frontières du [système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md)
 * Passage de GEM 5.1.2 à 5.2.1.
-* La composante prévision utilise conditions frontière d'une composante du [system global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale: 
+* La composante prévision utilise conditions frontière d'une composante du [système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale: 
 
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps-700_f.pdf).
