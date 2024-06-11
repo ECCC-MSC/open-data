@@ -6,11 +6,67 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+## 2024
+
+### 11 juin 2024
+
+Atmosphère
+
+* Deterministe:
+    * [Système global de prévision déterministe (SGPD) 9.0.0](nwp_gdps/changelog_gdps_fr.md#le-mardi-11-juin-2024)
+    * Remplacement du [Système régional de prévision déterministe (SRPD)](nwp_rdps/changelog_rdps_fr.md#le-mardi-11-juin-2024)
+    * [Système à haute résolution de prévision déterministe (SHRPD) 7.0.0](nwp_hrdps/changelog_hrdps_fr.md#le-mardi-11-juin-2024)
+    * [Système à haute résolution de prévision déterministe ouest (SHRPD-O) 1.5.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mardi-11-juin-2024)
+    * [Système à haute résolution de prévision déterministe nord (SHRPD-N) 2.1.0](nwp_hrdps-north/changelog_hrdps-north_fr.md#le-mardi-11-juin-2024)
+    * [Système intégré de prévision immédiate (SIPI) 2.3.0](nwp_nowcasting/changelog_nowcasting_fr.md#le-mardi-11-juin-2024)
+    * [Système automatique de production de "TAF" (aTAGS) 1.3.0](nwp_nowcasting/changelog_atags_fr.md#le-mardi-11-juin-2024)
+* Ensembliste:
+    * [Système global de prévision d'ensemble (SGPE) 8.0.0](nwp_geps/changelog_geps_fr.md#le-mardi-11-juin-2024)
+    * [Système régional de prévision d'ensemble (SRPE) 5.0.0](nwp_reps/changelog_reps_fr.md#le-mardi-11-juin-2024)
+    * [Système de prévision interannuelle et saisonnière canadien (SPISCan) 3.0.0](nwp_cansips/changelog_cansips_fr.md#le-mardi-11-juin-2024)
+* Analyse de la précipitation:
+    * [Analyse régionale déterministe de précipitation (ARDP) 6.0.0](nwp_rdpa/changelog_rdpa_fr.md#le-mardi-11-juin-2024)
+    * [Analyse à haute résolution déterministe de précipitation (AHRDP) 6.0.0](nwp_hrdpa/changelog_hrdpa_fr.md#le-mardi-11-juin-2024)
+    * [Analyse à haute résolution d'ensemble de précipitation (AHREP) 2.0.0](nwp_hrepa/changelog_hrepa_fr.md#le-mardi-11-juin-2024)
+* Surface
+    * [Système canadien d'assimilation de données de surface dans le SHRPD (SCanADS-SHRPD) 4.0.0](nwp_caldas-hrdps/changelog_caldas-hrdps_fr.md#le-mardi-11-juin-2024)
+    * [Système canadien d'assimilation de données de surface dans le système national de prévision de surface et de rivière (SCanADS-SNPSR) 4.0.0](nwp_caldas-nsrps/changelog_caldas-nsrps_fr.md#le-mardi-11-juin-2024)
+    * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) 2.2.0](nwp_hrdlps/changelog_hrdlps_fr.md#le-mardi-11-juin-2024)
+    * [Système de prévision ensembliste à haute résolution de la surface terrestre (SPEHRS) 1.2.0](nwp_hrdlps/changelog_hrelps_fr.md#le-mardi-11-juin-2024)
+* Qualité de l'air:
+    * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) v25](nwp_raqdps/changelog_raqdps_fr.md#le-mardi-11-juin-2024)
+    * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW) fusionné avec le SRPDQA](nwp_raqdps-fw/changelog_raqdps-fw_fr.md#le-mardi-11-juin-2024)
+    * [Analyse régionale déterministe de qualité de l’air (ARDQA) 2.2.0](nwp_rdaqa/changelog_rdaqa_fr.md#le-mardi-11-juin-2024)
+    
+Eau, océan et glace
+
+* [Système global de prévision océan-glace (SGPOG) 3.5.0](nwp_giops/changelog_giops_fr.md#le-mardi-11-juin-2024)
+* [Système régional de prévision océan-glace (SRPOG) 2.4.0](nwp_riops/changelog_riops_fr.md#le-mardi-11-juin-2024)
+* [Système côtier de prévision océan-glace (SCPOG) 2.3.0](nwp_ciops/changelog_ciops_fr.md#le-mardi-11-juin-2024)
+* 
+* [Système global de prévision déterministe de vague (SGPDV) 1.9.0](nwp_gdwps/changelog_gdwps_fr.md#le-mardi-11-juin-2024)
+* [Système global de prévision d'ensemble de vague (SGPEV) 1.3.0](nwp_gewps/changelog_gewps_fr.md#le-mardi-11-juin-2024)
+* [Système régional de prévision déterministe de vague (SRPDV) 4.2.0](nwp_rdwps/changelog_rdwps_fr.md#le-mardi-11-juin-2024)
+* [Système régional de prévision d'ensemble de vague (SRPEV) 1.7.0](nwp_rewps/changelog_rewps_fr.md#le-mardi-11-juin-2024)
+* 
+* [Système global de prévision déterministe d'onde de tempête (SGPDOT) 2.1.0](nwp_gdsps/changelog_gdsps_fr.md#le-mardi-11-juin-2024)
+* [Système régional de prévision d'ensemble d'onde de tempête (SRPEOT) 1.7.0](nwp_resps/changelog_resps_fr.md#le-mardi-11-juin-2024)
+* 
+* [Système de prévision du cycle de l'eau (SPCE) 3.3.0](nwp_wcps/changelog_wcps_fr.md#le-mardi-11-juin-2024)
+* 
+* [Système de prévision hydrologique déterministe (SPHD) 3.5.0](nwp_dhps/changelog_dhps_fr.md#le-mardi-11-juin-2024)
+* [Système de prévision hydrologique d'ensemble (SPHE) 1.3.0](nwp_ehps/changelog_ehps_fr.md#le-mardi-11-juin-2024)
+* [Simulation hydrodynamique opérationnelle (SHOP) 3.4.0](nwp_ohps/changelog_ohps_fr.md#le-mardi-11-juin-2024)
+
+### 19 février 2024
+
+* [Mise à jour du Système intégré de prévisions immédiates (SIPI) 2.2.0 du Centre météorologique canadien (CMC)](nwp_nowcasting/changelog_nowcasting_fr.md#le-lundi-19-fevrier-2024)
+
 ## 2023
 
 ### 12 décembre 2023
 
-* [Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps_fr.md#le-mardi-12-décembre-2023)
+* [Mise à jour vers la version 2.2.0 des éléments du temps sur grille (WEonG) du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien](nwp_hrdps/changelog_hrdps_fr.md#le-mardi-12-decembre-2023)
 
 ### 28 novembre 2023
 

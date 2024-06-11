@@ -6,6 +6,62 @@
 
 # Changes to the Canadian Meteorological Centre (CMC) Operational System
 
+## 2024
+
+### June 11, 2024
+
+Atmosphere
+
+* Deterministic:
+    * [Global Deterministic Prediction System (GDPS) 9.0.0](nwp_gdps/changelog_gdps_en.md#tuesday-june-11-2024)
+    * [Regional Deterministic Prediction System (RDPS) replacement](nwp_rdps/changelog_rdps_en.md#tuesday-june-11-2024)
+    * [High Resolution Deterministic Prediction System (HRDPS) 7.0.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-june-11-2024)
+    * [High Resolution Deterministic Prediction System West (HRDPS-W) 1.5.0](nwp_hrdps/changelog_hrdps-west_en.md#tuesday-june-11-2024)
+    * [High Resolution Deterministic Prediction System North (HRDPS-North) 2.1.0](nwp_hrdps-north/changelog_hrdps-north_en#tuesday-june-11-2024)
+    * [Integrated Nowcasting System (INCS) 2.3.0](nwp_nowcasting/changelog_nowcasting_en.md#tuesday-june-11-2024)
+    * [Automated "TAF" Generating System (aTAS) 1.3.0](nwp_atags/changelog_atags_en.md#tuesday-june-11-2024)
+* Ensemble:
+    * [Global Ensemble Prediction System (GEPS) 8.0.0](nwp_geps/changelog_geps_en.md#tuesday-june-11-2024)
+    * [Regional Ensemble Prediction System (REPS) 5.0.0](nwp_reps/changelog_reps_en.md#tuesday-june-11-2024)
+    * [Canadian Seasonal to Inter-annual Prediction System (CanSIPS) 3.0.0](nwp_cansips/changelog_cansips_en.md#tuesday-june-11-2024)
+* Precipitation analysis:
+    * [Regional Deterministic Precipitation Analysis system (RDPA) 6.0.0](nwp_rdpa/changelog_rdpa_en.md#tuesday-june-11-2024)
+    * [High Resolution Deterministic Precipitation Analysis System (HRDPA) 6.0.0](nwp_hrdpa/changelog_hrdpa_en.md#tuesday-june-11-2024)
+    * [High-Resolution Ensemble Precipitation Analysis (HREPA) 2.0.0](nwp_hrepa/changelog_hrepa_en.md#tuesday-june-11-2024)
+* Surface
+    * [Canadian Land Data Assimilation System in HRDPS (CaLDAS-HRDPS) 4.0.0](nwp_caldas-hrdps/changelog_caldas-hrdps_en.md#tuesday-june-11-2024)
+    * [Canadian Land Data Assimilation System in National Surface and River Prediction System (CaLDAS-NSRPS) 4.0.0](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#tuesday-june-11-2024)
+    * [High-Resolution Deterministic Land Prediction System (HRDLPS) 2.2.0](nwp_hrdlps/changelog_hrdlps_en.md#tuesday-june-11-2024)
+    * [High-Resolution Ensemble Land Prediction System (HRELPS) 1.2.0](nwp_hrelps/changelog_hrelps_en.md#tuesday-june-11-2024)
+* Air quality:
+    * [Regional Air Quality Deterministic Prediction System (RAQDPS) v25](nwp_raqdps/changelog_raqdps_en.md#tuesday-june-11-2024)
+    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) merged into RAQDPS](nwp_raqdps/changelog_raqdpsfw_en.md#tuesday-june-11-2024)
+    * [Regional Deterministic Air Quality Analysis (RDAQA) 2.2.0](nwp_rdaqa/changelog_rdaqa_en.md#tuesday-june-11-2024)
+    
+Water, ocean and ice
+
+* [Global Ice and Ocean Prediction System (GIOPS) 3.5.0](nwp_giops/changelog_giops_en.md#tuesday-june-11-2024)
+* [Regional Ice and Ocean Prediction System (RIOPS) 2.4.0](nwp_riops/changelog_riops_en.md#tuesday-june-11-2024)
+* [Coastal Ice Ocean Prediction System (CIOPS) 2.3.0](nwp_ciops/changelog_ciops_en.md#tuesday-june-11-2024)
+* 
+* [Global Deterministic Wave Prediction System (GDWPS) 1.9.0](nwp_gdwps/changelog_gdwps_en.md#tuesday-june-11-2024)
+* [Global Ensemble Wave Prediction System (GEWPS) 1.3.0](nwp_gewps/changelog_gewps_en.md#tuesday-june-11-2024)
+* [Regional Deterministic Wave Prediction System (RDWPS) 4.2.0](nwp_rdwps/changelog_rdwps_en.md#tuesday-june-11-2024)
+* [Regional Ensemble Wave Prediction System (REWPS) 1.7.0](nwp_rewps/changelog_rewps_en.md#tuesday-june-11-2024)
+* 
+* [Global Deterministic Storm-surge Prediction System (GDSPS) 2.1.0](nwp_gdsps/changelog_gdsps_en.md#tuesday-june-11-2024)
+* [Regional Ensemble Storm-surge Prediction System (RESPS) 1.7.0](nwp_resps/changelog_resps_en.md#tuesday-june-11-2024)
+* 
+* [Water Cycle Prediction System (WCPS) 3.3.0](nwp_wcps/changelog_wcps_en.md#tuesday-june-11-2024)
+* 
+* [Deterministic Hydrological Prediction System (DHPS) 3.5.0](nwp_dhps/changelog_dhps_en.md#tuesday-june-11-2024)
+* [Ensemble Hydrological Prediction System (EHPS) 1.3.0](nwp_ehps/changelog_ehps_en.md#tuesday-june-11-2024)
+* [Operational Hydrodynamic Prediction system (OHPS) 3.4.0](nwp_ohps/changelog_ohps_en.md#tuesday-june-11-2024)
+
+### February 19, 2024
+
+* [Upgrade to Version 2.2.0 of the Integrated NowCasting System (INCS)](nwp_nowcasting/changelog_nowcasting_en.md#monday-february-19-2024)
+
 ## 2023
 
 ### December 12, 2023
