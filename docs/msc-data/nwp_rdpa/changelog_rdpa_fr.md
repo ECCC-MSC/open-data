@@ -22,7 +22,7 @@ Une copie de la note officielle annonçant ce changement est disponible [via ce 
 
 Le document des spécifications techniques de ARDP 6.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDPA_6.0.0_f.pdf).
 
-Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdpa-600_f.pdf).
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_capa_rdpa-600_f.pdf).
 
 ## Le mercredi 3 mai 2023
 

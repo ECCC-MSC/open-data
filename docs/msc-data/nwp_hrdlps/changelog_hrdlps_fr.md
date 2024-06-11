@@ -17,7 +17,7 @@ Principaux changements :
 * Utilisation du système de prévision de surface SPS 6.2.1 dans lequel l'approche basée sur la température du thermomètre mouillé pour la répartition des phases de précipitations améliore les estimations des phases de précipitations et les simulations du manteau neigeux.​
 * Correction des biais froids pendant l'été au-dessus des lacs nord-américains, en particulier pour des lacs comme Winnipeg et Saint-Pierre.​
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que de leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdlps-220_f.pdf).
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdlps-220_f.pdf(
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 

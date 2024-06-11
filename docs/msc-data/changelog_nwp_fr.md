@@ -19,7 +19,7 @@ Atmosphère
     * [Système à haute résolution de prévision déterministe ouest (SHRPD-O) 1.5.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mardi-11-juin-2024)
     * [Système à haute résolution de prévision déterministe nord (SHRPD-N) 2.1.0](nwp_hrdps-north/changelog_hrdps-north_fr.md#le-mardi-11-juin-2024)
     * [Système intégré de prévision immédiate (SIPI) 2.3.0](nwp_nowcasting/changelog_nowcasting_fr.md#le-mardi-11-juin-2024)
-    * [Système automatique de production de "TAF" (aTAGS) 1.3.0](nwp_nowcasting/changelog_atags_fr.md#le-mardi-11-juin-2024)
+    * [Système automatique de production de "TAF" (aTAGS) 1.3.0](nwp_atags/changelog_atags_fr.md#le-mardi-11-juin-2024)
 * Ensembliste:
     * [Système global de prévision d'ensemble (SGPE) 8.0.0](nwp_geps/changelog_geps_fr.md#le-mardi-11-juin-2024)
     * [Système régional de prévision d'ensemble (SRPE) 5.0.0](nwp_reps/changelog_reps_fr.md#le-mardi-11-juin-2024)
@@ -32,7 +32,7 @@ Atmosphère
     * [Système canadien d'assimilation de données de surface dans le SHRPD (SCanADS-SHRPD) 4.0.0](nwp_caldas-hrdps/changelog_caldas-hrdps_fr.md#le-mardi-11-juin-2024)
     * [Système canadien d'assimilation de données de surface dans le système national de prévision de surface et de rivière (SCanADS-SNPSR) 4.0.0](nwp_caldas-nsrps/changelog_caldas-nsrps_fr.md#le-mardi-11-juin-2024)
     * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) 2.2.0](nwp_hrdlps/changelog_hrdlps_fr.md#le-mardi-11-juin-2024)
-    * [Système de prévision ensembliste à haute résolution de la surface terrestre (SPEHRS) 1.2.0](nwp_hrdlps/changelog_hrelps_fr.md#le-mardi-11-juin-2024)
+    * [Système de prévision ensembliste à haute résolution de la surface terrestre (SPEHRS) 1.2.0](nwp_hrelps/changelog_hrelps_fr.md#le-mardi-11-juin-2024)
 * Qualité de l'air:
     * [Système régional de prévision déterministe de la qualité de l'air (SRPDQA) v25](nwp_raqdps/changelog_raqdps_fr.md#le-mardi-11-juin-2024)
     * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW) fusionné avec le SRPDQA](nwp_raqdps-fw/changelog_raqdps-fw_fr.md#le-mardi-11-juin-2024)

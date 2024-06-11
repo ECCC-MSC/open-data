@@ -17,7 +17,7 @@ Atmosphere
     * [Regional Deterministic Prediction System (RDPS) replacement](nwp_rdps/changelog_rdps_en.md#tuesday-june-11-2024)
     * [High Resolution Deterministic Prediction System (HRDPS) 7.0.0](nwp_hrdps/changelog_hrdps_en.md#tuesday-june-11-2024)
     * [High Resolution Deterministic Prediction System West (HRDPS-W) 1.5.0](nwp_hrdps/changelog_hrdps-west_en.md#tuesday-june-11-2024)
-    * [High Resolution Deterministic Prediction System North (HRDPS-North) 2.1.0](nwp_hrdps-north/changelog_hrdps-north_en#tuesday-june-11-2024)
+    * [High Resolution Deterministic Prediction System North (HRDPS-North) 2.1.0](nwp_hrdps-north/changelog_hrdps-north_en.md#tuesday-june-11-2024)
     * [Integrated Nowcasting System (INCS) 2.3.0](nwp_nowcasting/changelog_nowcasting_en.md#tuesday-june-11-2024)
     * [Automated "TAF" Generating System (aTAS) 1.3.0](nwp_atags/changelog_atags_en.md#tuesday-june-11-2024)
 * Ensemble:
@@ -35,7 +35,7 @@ Atmosphere
     * [High-Resolution Ensemble Land Prediction System (HRELPS) 1.2.0](nwp_hrelps/changelog_hrelps_en.md#tuesday-june-11-2024)
 * Air quality:
     * [Regional Air Quality Deterministic Prediction System (RAQDPS) v25](nwp_raqdps/changelog_raqdps_en.md#tuesday-june-11-2024)
-    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) merged into RAQDPS](nwp_raqdps/changelog_raqdpsfw_en.md#tuesday-june-11-2024)
+    * [Regional Air Quality Deterministic Prediction System Firework (RAQDPS-FW) merged into RAQDPS](nwp_raqdps-fw/changelog_raqdps-fw_en.md#tuesday-june-11-2024)
     * [Regional Deterministic Air Quality Analysis (RDAQA) 2.2.0](nwp_rdaqa/changelog_rdaqa_en.md#tuesday-june-11-2024)
     
 Water, ocean and ice

@@ -12,11 +12,11 @@
 
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.2.0 de son Analyse régionale déterministe de qualité de l’air (ARDQA).
 
-Résumé des innovations majeures:
+Principaux changements :
 
 * Mise à jour du modèle intrant de la version 24 du [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](../nwp_raqdps/readme_raqdps_fr.md) à la version 25.
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdaqa-220_f.pdf). 
 
 La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 

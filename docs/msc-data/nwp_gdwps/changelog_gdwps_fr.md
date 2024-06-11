@@ -12,7 +12,7 @@
 
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.9.0 de son Système global de prévision déterministe de vague (SGPDV).
 
-Principaux changements :
+Principal changement :
 
 * Utilisation de la dernière version du Système Global de Prévision Déterministe (SGPD), v9.0.0
  

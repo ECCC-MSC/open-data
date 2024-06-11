@@ -12,7 +12,7 @@
 
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 9.0.0 de son Système régional de prévision déterministe (SRPD).
 
-Principaux changements :
+Principal changement :
 
 * Le SRPD est remplacé par une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) v9.0.0, à 10 km de résolution, sur un domaine nord-américain.
 
