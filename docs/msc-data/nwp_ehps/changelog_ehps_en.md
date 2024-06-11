@@ -18,6 +18,8 @@ Significant changes:
 * Dynamically Zoned Target Release (DZTR) model was removed for three reservoirs in the Great Lakes and St. Lawrence River domain
 * A station in the Yukon domain was relocated for better accuracy
 
+A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ehps-130_e.pdf)
+
 A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 The technical specifications document for EHPS 1.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_EHPS_1.3.0_e.pdf) .
