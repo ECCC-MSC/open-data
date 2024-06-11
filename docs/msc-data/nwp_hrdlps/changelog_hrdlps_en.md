@@ -17,7 +17,7 @@ Significant changes:
 * Use of the SPS 6.2.1 Surface Prediction System, in which the wet-thermometer temperature-based approach to precipitation phase distribution improves precipitation phase estimates and snowpack simulations.
 * Correction of summertime cold biases over North American lakes, particularly for lakes such as Winnipeg and Saint-Pierre.
 
-A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdlps-220_e.pdf).
+A brief summary of the innovations included in this upgrade and their impact on performance can be found in [this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdlps-220_e.pdf)
 
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 

@@ -13,6 +13,7 @@
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système à haute résolution de prévision déterministe ouest (SHRPD-Ouest) à la version 1.5.0.
 
 Principaux changements :
+
 * Mise à jour à la version 5.2.0 de GEM 
 * Utilisation des coordonnées verticales SLEVE 
 * Approche de Bourgouin pour partitionner la phase des précipitations en surface 

@@ -12,7 +12,7 @@
 
 On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Wave Prediction System (GDWPS) to version 1.9.0.
 
-Significant changes:
+Significant change:
 
 * Use of the latest version of the Global Deterministic Prediction System (GDPS), version 9.0.0
 

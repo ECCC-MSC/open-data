@@ -14,7 +14,7 @@ Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorolo
 
 Principaux changements :
 
-* La composante assimilation utilise des ébeauches du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md) amélioré à 25km.
+* La composante assimilation utilise des ébauches du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md) amélioré à 25km.
 * Passage du modèle GEM 5.1.2 à GEM 5.2.1.
 * Passage du modèle CICE 4 à CICE 6.
 * Utilisation du schéma de rayonnement Delta Eddington.

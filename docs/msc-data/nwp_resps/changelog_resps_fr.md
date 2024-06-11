@@ -12,7 +12,7 @@
 
 Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.7.0 de son Système régional de prévision d'ensemble d'onde de tempête (SRPEOT).
 
-Principaux changements :
+Principal changement :
 
 *  Forçage du modèle, les données relatives au vent et à la pression au niveau de la mer ont été mises à jour pour tenir compte de la version 8.0.0 du [Système global de prévision d'ensemble (SGPE)](../nwp_geps/readme_geps_fr.md). 
 

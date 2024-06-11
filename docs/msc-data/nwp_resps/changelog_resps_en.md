@@ -12,7 +12,7 @@
 
 On Tuesday June 11, 2024, starting with the 1200 UTC, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Regional Ensemble Storm-surge Prediction System (RESPS) to v1.7.0
 
-Significant changes:
+Significant change:
 
 *  Model forcing, wind and sea level pressure input upgraded to [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md) v8.0.0 
 

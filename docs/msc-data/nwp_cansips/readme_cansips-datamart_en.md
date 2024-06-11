@@ -11,9 +11,12 @@ The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansi
 ## Principal components of CanSIPS
     
 * __Initialization procedure__:
-** CanESM5: Initial atmospheric and oceanic conditions are obtained by running a coupled atmosphere-ocean-sec ice assimilation process constrained by CMC (GDPS) atmospheric analysis and GIOPS oceanic analysis through the same nudging procedure. Modelled sea ice thickness in the Northern Hemisphere is constrained near values from the SMv3 statistical model. Modelled sea ice concentration and sea surface temperature are constrained near values from GDPS G6. Land variables are initialized through the response of CLASS/CTEM to the assimilating atmosphere component.
-** GEM5.2-NEMO: The atmospheric initial conditions of GEM5.2-NEMO come from those of the Global Ensemble Prediction System (GEPS).The ocean and sea ice initial conditions in the forecast come from the CMC GIOPS analysis whereas land surface initial conditions is from CMC (GDPS) analysis after adjusting it to the hindcast climatology.
+
+     * CanESM5: Initial atmospheric and oceanic conditions are obtained by running a coupled atmosphere-ocean-sec ice assimilation process constrained by CMC (GDPS) atmospheric analysis and GIOPS oceanic analysis through the same nudging procedure. Modelled sea ice thickness in the Northern Hemisphere is constrained near values from the SMv3 statistical model. Modelled sea ice concentration and sea surface temperature are constrained near values from GDPS G6. Land variables are initialized through the response of CLASS/CTEM to the assimilating atmosphere component.
+     * GEM5.2-NEMO: The atmospheric initial conditions of GEM5.2-NEMO come from those of the Global Ensemble Prediction System (GEPS).The ocean and sea ice initial conditions in the forecast come from the CMC GIOPS analysis whereas land surface initial conditions is from CMC (GDPS) analysis after adjusting it to the hindcast climatology.
+     
 * __Forecast mode__: CanSIPS official forecasts are based on a 20-member ensemble of forecasts produced with each of the two models for a total ensemble size of 40. The 20 members, 12 month forecasts from each model are produced by combining the forecasts produced on the last day of each month (ensemble members 1-10)  with forecasts issued four-days prior to that (ensemble members 11-20).
+
 * __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1991 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
 
 ## How is the CanSIPS forecast configured ?

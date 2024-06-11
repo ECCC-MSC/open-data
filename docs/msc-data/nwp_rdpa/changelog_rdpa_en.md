@@ -22,7 +22,7 @@ The official note announcing this implementation is available [at this link](htt
 
 The technical specifications document for RDPA 6.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDPA_6.0.0_e.pdf).
 
-A technical note with more details on this change [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_rdpa-600_e.pdf)
+A technical note with more details on this change [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_capa_rdpa-600_e.pdf)
 
 ## Wednesday May 3, 2023
 
