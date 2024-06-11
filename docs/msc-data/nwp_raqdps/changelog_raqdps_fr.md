@@ -29,7 +29,7 @@ Une copie de la note officielle annonçant ces changements dans le SRPDQA est di
 
 Le document des spécifications techniques du SRPDQA version 25 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_025_f.pdf).
 
-Une note technique du SRPDQA version 25 avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps025_f.pdf).
+Une note technique du SRPDQA version 25 avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps-v25_f.pdf).
 
 ## Le mardi 28 juin 2022
 
