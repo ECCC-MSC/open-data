@@ -17,7 +17,7 @@ Significant change:
 * Cloud Fraction CF generated using GOES and GDPS data replacing the RDPS data  
 * Use of post-processed S-band radar data 
 * GDPS model data replacing the RDPS model data used in previous INCS versions 
-* UMOS-GDPS data replacing the UMOS RDPS data used in previous INCS versions 
+* UMOS-GDPS data replacing the UMOS-RDPS data used in previous INCS versions 
 
 A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
