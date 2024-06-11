@@ -6,6 +6,32 @@
 
 # Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 
+
+## Tuesday June 11, 2024
+
+### Upgrade to Version 3.0.0 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 3.0.0
+
+Significant changes:
+* CanCM4i coupled climate model replaced by CanESM5.1 Earth system model
+* GEM-NEMO 5.1 coupled model replaced by GEM-NEMO 5.2
+* Ensemble size of the official forecast is doubled (increased from 20 to 40) by combining the last-day of the forecast with forecasts initialized four days prior to it.
+* more variables are available to external users via c3s
+* In CanESM5, a new runtime atmosphere/ocean bias correction is introduced via tendency adjustment terms        
+* Land initial conditions (for realtime forecast) for GEM5.2-NEMO is now obtained form the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)  after adjusting to hindcast climatology. In previous version, it was obtained from an offline runs.  
+
+
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_cansips-300_e.pdf). 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-300_e.pdf).
+
+The technical specifications document for CanSIPS 3.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_3.0.0_e.pdf) .
+
+
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 2.2.0 of the CanSIPS adapted to the New High Performance Computing Infrastructure.
