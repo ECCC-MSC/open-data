@@ -21,7 +21,7 @@ Significant change:
      * Updated anthropogenic emissions: Transition to SET5.0.0 with projected 2023 inventories for Canada, U.S. and Mexico 
 * Inclusion of sea-salt to total PM2.5 mass 
 
-A brief summary of the innovations included in this upgrade and their impact on performance [can be found in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps025_e.pdf )
+A brief summary of the innovations included in this upgrade and their impact on performance [can be found in this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_raqdps-v25_e.pdf )
 
 A copy of the official note announcing the implementation of these changes [is available at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
