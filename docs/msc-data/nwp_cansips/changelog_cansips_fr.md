@@ -6,18 +6,18 @@
 
 # Chronologie des changements apportés au Système de prévision interannuelle et saisonnière canadien (SPISCan)
 
-## Le mardi 30 novembre 2021
+## Le mardi 11 juin 2024
 
-### Mise à jour vers la version 2.1 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
+### Mise à jour vers la version 3.0.0 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)
 
-En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 3.0.0
+En date du mardi 11 juin 2024, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 3.0.0
 
 Principaux changements :
 * Le modèle climatique couplé CanCM4i remplacé par le modèle du système terrestre CanESM5.1
 * Le modèle couplé GEM-NEMO 5.1 est remplacé par GEM-NEMO 5.2
 * La taille de l'ensemble de la prévision est doublé (de 20 à 40 membres) en utilisant une combinaison des prévisions usuelles et des prévision initialisées quatre jours avant.
-* Dans CanESM5, Une nouvelle correction de biais à été introduite.
-* L'initialisation de conditions de surface de GEM-NEMO provient maintenant du [système global de prévision déterministe (SGPD)](./nwp_gdps/readme_gdps_fr.md) après un ajustement vers la climatologie du modèle. Dans la version précédente, l'initialisation provenait des processus hors-ligne. 
+* Dans CanESM5, une nouvelle correction de biais à été introduite.
+* L'initialisation de conditions de surface de GEM-NEMO provient maintenant du [système global de prévision déterministe (SGPD)](./nwp_gdps/readme_gdps_fr.md) après un ajustement vers la climatologie du modèle. Dans la version précédente, l'initialisation provenait de processus hors-ligne. 
 
 
 
