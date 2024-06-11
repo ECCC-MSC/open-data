@@ -27,7 +27,7 @@ A copy of the official note announcing the implementation of these changes [is a
 
 The technical specifications document for RAQDPS 25 [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RAQDPS_025_e.pdf).
 
-A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps025_e.pdf).
+A technical note with more details on this change [is available at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_raqdps-v25_e.pdf).
 
 
 ## Tuesday June 28, 2022
