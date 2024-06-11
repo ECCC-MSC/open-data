@@ -11,9 +11,10 @@
 
 ### Upgrade to Version 3.0.0 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre
 
-On Tuesday June 11, 2024, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 3.0.0
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 3.0.0
 
 Significant changes:
+
 * CanCM4i coupled climate model replaced by CanESM5.1 Earth system model
 * GEM-NEMO 5.1 coupled model replaced by GEM-NEMO 5.2
 * Ensemble size of the official forecast is doubled (increased from 20 to 40) by combining the last-day of the forecast with forecasts initialized four days prior to it.
@@ -29,7 +30,6 @@ A copy of the official note announcing the implementation of these changes is av
 A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-300_e.pdf).
 
 The technical specifications document for CanSIPS 3.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_3.0.0_e.pdf) .
-
 
 
 ## Tuesday June 28, 2022
