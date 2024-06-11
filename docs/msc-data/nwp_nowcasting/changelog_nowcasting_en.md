@@ -6,6 +6,35 @@
 
 # Chronology of changes to the Integrated Nowcasting System (INCS)
 
+# Tuesday June 11, 2024
+
+### Upgrade to Version 2.3.0 of the INCS.
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Integrated Nowcasting System (INCS) to version 2.3.0.
+
+Significant change:
+
+* Cloud Fraction CF generated using GOES and GDPS data replacing the RDPS data  
+* Use of post-processed S-band radar data 
+* GDPS model data replacing the RDPS model data used in previous INCS versions 
+* UMOS-GDPS data replacing the UMOS RDPS data used in previous INCS versions 
+
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
+
+A technical note with more details on this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdps-incs-230_e.pdf).
+
+The technical specifications document for INCS 2.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDPS-INCS_2.3.0_e.pdf) .
+
+## Monday February 19, 2024
+
+### Upgrade to Version 2.2.0 of the INCS
+
+On Monday February 19, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 2.2.0 of the Integrated NowCasting System (INCS).
+
+The changes included in this upgrade are summarized as follows:
+
+* Bug fix in operational INCS to better handle occasional missing radar data. 
+
 ## Thursday March 23, 2023
 
 ### Upgrade to version 2.1.0 of the INCS to incorporate S-band radar data over Canada
