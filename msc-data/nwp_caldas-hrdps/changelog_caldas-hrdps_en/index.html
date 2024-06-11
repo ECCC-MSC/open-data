@@ -122,8 +122,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-canadian-land-data-assimilation-system-in-the-hrdps-caldas-hrdps" class="nav-link">Chronology of changes to the Canadian Land Data Assimilation System in the HRDPS (CaLDAS-HRDPS)</a>
+            <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-canadian-land-data-assimilation-system-in-the-high-resolution-prediction-system-hrdps" class="nav-link">Chronology of changes to the Canadian Land Data Assimilation System in the High Resolution Prediction System (HRDPS)</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-11-2024" class="nav-link">Tuesday June 11, 2024</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#wednesday-november-22-2023" class="nav-link">Wednesday November 22, 2023</a>
               <ul class="nav flex-column">
               </ul>
@@ -146,7 +150,20 @@
 <p><a href="../changelog_caldas-hrdps_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> </p>
-<h1 id="chronology-of-changes-to-the-canadian-land-data-assimilation-system-in-the-hrdps-caldas-hrdps">Chronology of changes to the Canadian Land Data Assimilation System in the <a href="../../nwp_hrdps/readme_hrdps_en/">HRDPS</a> (CaLDAS-HRDPS)</h1>
+<h1 id="chronology-of-changes-to-the-canadian-land-data-assimilation-system-in-the-high-resolution-prediction-system-hrdps">Chronology of changes to the Canadian Land Data Assimilation System in the High Resolution Prediction System (HRDPS)</h1>
+<h2 id="tuesday-june-11-2024">Tuesday June 11, 2024</h2>
+<h3 id="upgrade-to-version-400-of-the-canadian-land-data-assimilation-system-in-the-hrdps-at-the-canadian-meteorological-centre">Upgrade to Version 4.0.0 of the Canadian Land Data Assimilation System in the HRDPS at the Canadian Meteorological Centre</h3>
+<p>On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Land Data Assimilation System in the <a href="../../nwp_hrdps/readme_hrdps_en/">HRDPS</a> (CaLDAS-HRDPS) to version 4.0.0.</p>
+<p>Significant changes:</p>
+<ul>
+<li>Improved IMS Data Upscaling</li>
+<li>Enhanced Precipitation-Phase Partitioning</li>
+<li>Utilize relative humidity (HR) data from HRDPS rather than performing calculations within CaLDAS-NSRPS</li>
+<li>Utilize HRDPS forcings for the skin temperature (Tskin) retrieval</li>
+<li>Addressing Summer Cold Biases in Water Surfaces</li>
+</ul>
+<p>A copy of the official note announcing the implementation of these changes is available at <a href="https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443">this link</a>.</p>
+<p>A technical note with more details on this system is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_caldas-400_e.pdf">at this link</a>.</p>
 <h2 id="wednesday-november-22-2023">Wednesday November 22, 2023</h2>
 <h3 id="correction-to-the-snow-density-and-snow-albedo-variables-in-the-diagnostic-outputs-of-caldas-hrdps">Correction to the snow density and snow albedo variables in the diagnostic outputs of CaLDAS-HRDPS</h3>
 <p>On Wednesday November 22nd, 2023, starting with the 1800 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 3.1.1 of the Canadian Land Data Assimilation System (CaLDAS-HRDPS), which is used to initialize the High Resolution Deterministic Prediction System (HRDPS).</p>

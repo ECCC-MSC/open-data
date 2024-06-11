@@ -172,7 +172,7 @@
 <li><strong>TYPE</strong> : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]</li>
 <li><strong>raw</strong> : Chaîne de caractères constante indiquant les sorties brutes du modèle</li>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
-<li><strong>hhh</strong> : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC</li>
+<li><strong>hhh</strong> : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC</li>
 </ul>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p>Ce tableau décrit des paramètres de la grille latitude-longitude sur laquelle les variables en format GRIB sont disponibles.</p>
@@ -203,7 +203,6 @@
 </tbody>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <ul>
 <li>CMC_geps-raw_Variable_TypedeNiveau_Niveau_latlonResolution_YYYYMMDDHH_Phhh_allmbrs.grib2</li>
@@ -220,7 +219,7 @@
 <li><strong>Niveau</strong> : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables ».</li>
 <li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision.</li>
 <li><strong>HH</strong> : Heure UTC de la passe [00, 12].</li>
-<li><strong>Phhh</strong> : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, …, 192, 198, 204, ..., 378, 384], ou [000, 003, …, 192, 198, 204, ..., 762, 768] chaque jeudi à 000UTC.</li>
+<li><strong>Phhh</strong> : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, …, 192, 198, 204, ..., 378, 384], ou [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC.</li>
 <li><strong>allmbrs</strong> : Chaîne de caractères constante indiquant que tous les membres sont inclus dans le fichier.</li>
 <li><strong>all-products</strong> : Indique que tous les produits probabilistes pour cette variable sont regroupés dans ce fichier</li>
 <li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>

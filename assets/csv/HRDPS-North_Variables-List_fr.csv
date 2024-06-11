@@ -215,6 +215,7 @@ Indice climatique thermique universel,UTHCIDX,Surface,K
 Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
 Indice de soulèvement,4LFTX,500 mb,K
 Indice de ventilation,VI,Surface,0 à 100
+Indice UV,UVI,Surface,Numérique
 Masque terre/eau,WTRLANMASK,Surface,Fraction
 Orographie du modèle,ORGPHY,Surface,m
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa

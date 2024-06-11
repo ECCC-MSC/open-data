@@ -124,6 +124,10 @@
             
             <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-global-deterministic-storm-surge-prediction-system-gdsps" class="nav-link">Chronology of changes to the Global Deterministic Storm-surge Prediction System (GDSPS)</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-11-2024" class="nav-link">Tuesday June 11, 2024</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#thursday-july-27-2023" class="nav-link">Thursday July 27, 2023</a>
               <ul class="nav flex-column">
               </ul>
@@ -147,6 +151,19 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_gdsps_en/">GDSPS</a> &gt; GDSPS Changelog</p>
 <h1 id="chronology-of-changes-to-the-global-deterministic-storm-surge-prediction-system-gdsps">Chronology of changes to the Global Deterministic Storm-surge Prediction System (GDSPS)</h1>
+<h2 id="tuesday-june-11-2024">Tuesday June 11, 2024</h2>
+<h3 id="upgrade-to-version-210-of-global-deterministic-storm-surge-prediction-system-gdsps-at-the-canadian-meteorological-centre">Upgrade to Version 2.1.0 of Global Deterministic Storm-surge Prediction System (GDSPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday June 11, 2024, starting with the 1200 UTC run, the Meteorological Service of Canada's Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Storm-surge Prediction System (GDSPS) to v2.1.0</p>
+<p>Significant changes:</p>
+<ul>
+<li>The GDSPS v2.1.0 is driven by wind, atmospheric pressure, ice concentration, ice velocities, surface currents, salinity and ocean temperature profiles from the upgraded <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> v9.0.0 and <a href="../../nwp_giops/readme_giops_en/">Global Ice Ocean Prediction System (GIOPS)</a> v3.5.0</li>
+<li>The bathymetry field has been updated to exclude isolated lakes</li>
+<li>The reference atmospheric pressure is now set to a constant value of 101000 Pa</li>
+</ul>
+<p>A brief summary of the innovations included in this upgrade and their impact on performance can be found in <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps-210_e.pdf">this document</a>.</p>
+<p>The official note announcing this implementation is available <a href="https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443">at this link</a>.</p>
+<p>The technical specifications document for GDSPS 2.1.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDSPS_2.1.0_e.pdf">at this link</a>.</p>
+<p>A technical note with more details on this change <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdsps-210_e.pdf">at this link</a></p>
 <h2 id="thursday-july-27-2023">Thursday July 27, 2023</h2>
 <h3 id="implementation-of-version-200-of-the-global-deterministic-storm-surge-prediction-system-gdsps-at-the-canadian-meteorological-centre-cmc">Implementation of version 2.0.0 of the Global Deterministic Storm-surge Prediction System (GDSPS) at the Canadian Meteorological Centre (CMC)</h3>
 <p>On Thursday July 27, 2023, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement version 2.0.0 of the Global Deterministic Storm-surge Prediction System (GDSPS).</p>

@@ -159,7 +159,8 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_raqdps_en/">RAQDPS</a> &gt; Regional Air Quality Deterministic Prediction System on MSC Datamart</p>
 <h1 id="regional-air-quality-deterministic-prediction-system-raqdps-data-in-grib2-format">Regional Air Quality Deterministic Prediction System (RAQDPS) data in GRIB2 Format</h1>
-<p>This page describes the <a href="../readme_raqdps_fr/">Regional Air Quality Deterministic Prediction System (RAQDPS)</a> GRIB2 data. The system is run twice daily to produce 72-hour forecasts of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid. </p>
+<p>This page describes the <a href="../readme_raqdps_fr/">Regional Air Quality Deterministic Prediction System (RAQDPS)</a> GRIB2 data. The system is run twice daily to produce 72-hour forecasts of some pollutants such as hourly ozone (O3), nitrogen dioxide (NO2), or particulate matter with aerodynamic diameter smaller than 2.5 μm (PM2.5) fields on a North American grid.</p>
+<p>In addition, data containing the total concentrations associated with forest and vegetation fire plumes are available, making it possible to estimate where the impact of these fires dominates pollution.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data can be accessed at the following URLs:</p>
@@ -203,7 +204,6 @@
 </table>
 <p><strong>Note</strong> : The <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">most recent versions of wgrib2</a> and <a href="https://gdal.org/">GDAL</a> support these rotated grids.</p>
 <h2 id="file-nomenclature">File nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
 <p>The files have the following nomenclature:</p>
 <p><code>{YYYYMMDD}T{HH}Z_MSC_RAQDPS_{VAR}_{LVL}_{Grille}(resolution}_PT{hhh}H.grib2</code></p>
 <p>Where:</p>
@@ -214,7 +214,7 @@
 <li><strong>Z</strong> : Time zone (UTC hour)</li>
 <li><strong>MSC</strong> : Constant string indicating the Meteorological Service of Canada, source of data</li>
 <li><strong>RAQDPS</strong> : Constant string indicating that data is from the Regional Air Quality Deterministic Prediction System </li>
-<li><strong>VAR</strong> : Variable type included in the file [PM2.5, PM10, NO2, NO, O3, SO2]</li>
+<li><strong>VAR</strong> : Variable type included in the file [PM2.5, PM2.5-WildfireSmokePlume, PM10, PM10-WildfireSmokePlume, NO2, NO, O3, SO2]</li>
 <li><strong>LVL</strong> : Vertical level [Sfc for the surface, EAtm for the column integral]</li>
 <li><strong>Grille</strong> : Horizontal grid rotated lat-lon [RLatLon]</li>
 <li><strong>resolution</strong> : Indicating resolution in degreee, here 0.09°x0.09° (about 10km) in latitude and longitude directions [0.09]</li>
@@ -224,6 +224,7 @@
 <p>Example of forecast file name:</p>
 <ul>
 <li>20200521T00Z_MSC_RAQDPS_NO2_Sfc_RLatLon0.09_PT003H.grib2</li>
+<li>20240606T12Z_MSC_RAQDPS_PM10-WildfireSmokePlume_EAtm_RLatLon0.09_PT012H.grib2</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <table id="csv-table" class="display"></table>

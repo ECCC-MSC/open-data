@@ -124,6 +124,10 @@
             
             <li class="nav-item" data-level="1"><a href="#chronology-of-changes-to-the-canadian-seasonal-to-inter-annual-prediction-system-cansips" class="nav-link">Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuesday-june-11-2024" class="nav-link">Tuesday June 11, 2024</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#tuesday-june-28-2022" class="nav-link">Tuesday June 28, 2022</a>
               <ul class="nav flex-column">
               </ul>
@@ -163,6 +167,22 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_cansips_en/">CanSIPS</a> &gt; CanSIPS Changelog</p>
 <h1 id="chronology-of-changes-to-the-canadian-seasonal-to-inter-annual-prediction-system-cansips">Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</h1>
+<h2 id="tuesday-june-11-2024">Tuesday June 11, 2024</h2>
+<h3 id="upgrade-to-version-300-of-the-canadian-seasonal-to-inter-annual-prediction-system-cansips-at-the-canadian-meteorological-centre">Upgrade to Version 3.0.0 of the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) at the Canadian Meteorological Centre</h3>
+<p>On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Canadian Seasonal to Inter-annual Prediction System (CanSIPS) to version 3.0.0</p>
+<p>Significant changes:</p>
+<ul>
+<li>CanCM4i coupled climate model replaced by CanESM5.1 Earth system model</li>
+<li>GEM-NEMO 5.1 coupled model replaced by GEM-NEMO 5.2</li>
+<li>Ensemble size of the official forecast is doubled (increased from 20 to 40) by combining the last-day of the forecast with forecasts initialized four days prior to it.</li>
+<li>more variables are available to external users via c3s</li>
+<li>In CanESM5, a new runtime atmosphere/ocean bias correction is introduced via tendency adjustment terms        </li>
+<li>Land initial conditions (for realtime forecast) for GEM5.2-NEMO is now obtained form the <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>  after adjusting to hindcast climatology. In previous version, it was obtained from an offline runs.  </li>
+</ul>
+<p>A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_cansips-300_e.pdf">this document</a>. </p>
+<p>A copy of the official note announcing the implementation of these changes is available at <a href="https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443">this link</a>.</p>
+<p>A technical note with more details on this system is available <a href="http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips-300_e.pdf">at this link</a>.</p>
+<p>The technical specifications document for CanSIPS 3.0.0 is available <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_3.0.0_e.pdf">at this link</a> .</p>
 <h2 id="tuesday-june-28-2022">Tuesday June 28, 2022</h2>
 <h3 id="upgrade-to-version-220-of-the-cansips-adapted-to-the-new-high-performance-computing-infrastructure">Upgrade to Version 2.2.0 of the CanSIPS adapted to the New High Performance Computing Infrastructure.</h3>
 <p>See details <a href="../../changelog_multisystems_en/">at this link</a></p>

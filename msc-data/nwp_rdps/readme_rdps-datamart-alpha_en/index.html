@@ -171,7 +171,7 @@
 <p>where :</p>
 <ul>
 <li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
-<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 048]</li>
+<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 084]</li>
 </ul>
 <p>A 24-hour history is kept in this directory.</p>
 <p>Note: Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</p>
@@ -219,7 +219,7 @@
 <li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
 <li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
 <li><strong>resolution</strong> : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions</li>
-<li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 048]</li>
+<li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084]</li>
 <li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
 </ul>
 <p>Example file name:</p>

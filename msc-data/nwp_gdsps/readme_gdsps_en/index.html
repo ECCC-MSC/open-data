@@ -147,8 +147,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; GDSPS</p>
 <h1 id="data-and-products-of-the-global-deterministic-storm-surge-prediction-system-gdsps">Data and Products of the Global Deterministic Storm Surge Prediction System (GDSPS)</h1>
-<p>The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a modified version of the NEMO ocean model (Wang et al. 2021, 2022, 2023). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds, sea level pressure, ice concentration, ice velocity and surface currents from the <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>. The three dimensionnal ocean temperature and salinity fields of the model are nudged to values provided by the <a href="../../nwp_giops/readme_giops_en/">Global Ice-Ocean Prediction System (GIOPS)</a> and the GDPS.</p>
-<p>During the post-processing phase, storm surge elevation is derived from total water level by harmonic analysis using t_tide (Pawlowicz et al. 2002).</p>
+<p>The Global Deterministic storm Surge Prediction System (GDSPS) produces water level forecasts using a modified version of the NEMO ocean model (Wang et al. 2021, 2022, 2023). It provides 240 hours forecasts twice per day on a 1/12° resolution grid (3-9 km). The model is forced by the 10 meters winds, sea level pressure, ice concentration, ice velocity and surface currents from the <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>. The three dimensionnal ocean temperature and salinity fields of the model are nudged to values provided by the <a href="../../nwp_giops/readme_giops_en/">Global Ice-Ocean Prediction System (GIOPS)</a> and the GDPS. During the post-processing phase, storm surge elevation (ETAS) is derived from total water level (SSH) by harmonic analysis using t_tide (Foreman et al. 2009).</p>
 <h2 id="access">Access</h2>
 <h3 id="how-to-access-the-data">How to access the data</h3>
 <p>This data is available on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server service:</p>
@@ -170,6 +169,7 @@
 <li><a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_GDSPS_e.pdf">Current version of the Global Deterministic Storm Surge Prediction System</a></li>
 <li><a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_gdsps_e.pdf">Technical Note</a></li>
 <li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDSPS_en.svg">Diagram of dependencies</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdsps_e.pdf">Factsheet associated with the latest innovation cycle</a></li>
 </ul>
 <h2 id="changelog">Changelog</h2>
 <p>The chronology of changes to the Global Deterministic Storm Surge Prediction System (GDSPS) is available <a href="../changelog_gdsps_en/">here</a>.</p></div>

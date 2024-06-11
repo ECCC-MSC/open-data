@@ -160,6 +160,7 @@
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_raqdps_fr/">SRPDQA</a> &gt; Système régional de prévision déterministe de la qualité de l’air sur le Datamart du SMC</p>
 <h1 id="donnees-grib2-du-systeme-regional-de-prevision-deterministe-de-la-qualite-de-lair-srpdqa">Données GRIB2 du Système régional de prévision déterministe de la qualité de l’air (SRPDQA)</h1>
 <p>Cette page décrit les données du <a href="../readme_raqdps_fr/">Système régional de prévision déterministe de la qualité de l’air (SRPDQA)</a> en format GRIB2, exécuté deux fois par jour afin de produire des prévisions horaires de 72 heures pour certains polluants tels que l’ozone (O3), le dioxyde d’azote (NO2) ou encore les matières particulaires dont le diamètre aérodynamique est inférieur à 2.5 μm (PM2.5), sur une grille nord-américaine.</p>
+<p>De plus, des données contenant les concentrations totales associées aux panaches de feux de forêt et de végétation sont disponibles, ce qui permet d'estimer où l'impact de ces feux domine la pollution.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont accessibles à l'adresse suivante :</p>
@@ -214,7 +215,7 @@
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données </li>
 <li><strong>RAQDPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe de la qualité de l’air</li>
-<li><strong>VAR</strong> : Type de variable contenu dans le fichier [PM2.5, PM10, O3, NO, NO2, SO2]</li>
+<li><strong>VAR</strong> : Type de variable contenu dans le fichier [PM2.5, PM2.5-WildfireSmokePlume, PM10, PM10-WildfireSmokePlume, O3, NO, NO2, SO2]</li>
 <li><strong>LVL</strong> : Niveau vertical [Sfc pour la surface, EAtm pour l’intégrale de la colonne]</li>
 <li><strong>Grille</strong> : Grille horizontale lat-lon tournée [RLatLon] </li>
 <li><strong>resolution</strong> : Indique la résolution en degré, ici 0.09°x0.09° (environ 10km) dans les directions longitudinale et latitudinale [0.09]</li>
@@ -224,6 +225,7 @@
 <p>Exemple de noms de fichier :</p>
 <ul>
 <li>20200521T00Z_MSC_RAQDPS_PM2.5-Sfc_RLatLon0.09_PT003H.grib2</li>
+<li>20240606T12Z_MSC_RAQDPS_PM10-WildfireSmokePlume_EAtm_RLatLon0.09_PT012H.grib2</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <table id="csv-table" class="display"></table>

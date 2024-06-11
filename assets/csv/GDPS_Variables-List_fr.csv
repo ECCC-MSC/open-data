@@ -231,6 +231,9 @@ Indice K,KX,Surface,°C
 Indice Showalter,SHWINX,500 mb,K
 Indice Total-Total,TOTALX,Surface,K
 Indice de soulèvement,4LFTX,500 mb,K
+Indice UV,UVI,Surface,Numérique
+Indice UV par ciel clair,UVIUCS,Surface,Numérique
+Ozone totale intégrée dans la colonne,TCIOZ,Surface,DU
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
 Pression,PRES,Surface,Pa
 Pression,PRES,Unité de tourbillon potentiel 1,Pa

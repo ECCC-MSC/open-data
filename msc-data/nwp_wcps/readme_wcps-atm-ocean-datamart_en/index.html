@@ -159,7 +159,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_wcps_en/">WCPS</a> &gt; Coupled WCPS ocean-atmosphere on MSC Datamart </p>
 <h1 id="water-cycle-prediction-system-wcps-coupled-atmosphere-ocean-sea-ice-forecasts-data-in-netcdf-format">Water Cycle Prediction System (WCPS) coupled atmosphere-ocean-sea ice forecasts data in NetCDF format</h1>
-<p>The coupled atmosphere-ocean-sea ice forecasts of GEM-LAM coupled with NEMO-CICE from WCPS are available as hourly products. These products are in NetCDF format with a latitude and longitude grid, corresponding to about 1km resolution (0.008 x 0.008 degree), over the domain of the Great Lakes, St. Lawrence Rivers and the Gulf of St. Lawrence.</p>
+<p>WCPS-coupled forecast is the component in the Water Cycle Prediction System (WCPS) that provides the coupled atmosphere-ocean-sea ice forecasts at a 1km resolution (0.008 x 0.008 degree) over the Great Lakes, St. Lawrence River and the Gulf of St. Lawrence. It launches 4 times a day at 00, 06, 12, and 18 UTC and produces 84 hours forecast, based on the atmospheric model GEM, coupled with the ocean-ice model NEMO-CICE. The products from WCPS-coupled forecasts are (1) GEM : surface air temperatures, surface wind velocities, and surface runoff (2) NEMO-CICE : variety of lake/ocean sea ice variables, for example, lake levels and temperatures. They are designed to help forecasters issuing bulletins and warnings in ice-infestested waters for navigation, water level alert, emergency response, Search and Rescue, and CIS Sea Ice forecast.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.</p>
@@ -233,8 +233,12 @@
   loadTable("csv-table", "../../../assets/csv/WCPS_Variables-List_en.csv");
 </script>
 
-<p>Note: The unit <code>PSU</code> (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.</p>
-<p>The variables <code>tairsurf</code>, <code>uwindsurf</code>, <code>vwindsurf</code> and <code>runoffsurf</code> are from GEM-LAM and the rests are from NEMO-CICE. </p>
+<p>Notes:</p>
+<ul>
+<li>The <code>sossheig</code> variable is generated relative to an arbitrary geoid over the ocean and relative to IGLD85 over the Laurentian Great Lakes. However, water levels in all the Great Lakes are subject to significant biases due to the very construction of the WCPS, which does not benefit from water level assimilation and remains dependent on lake precipitation, river inflows and inter-lake exchanges for its water balance. <strong>We therefore encourage users to use the <code>sossheig</code> variable with caution in the Great Lakes region.</strong></li>
+<li>The unit <code>PSU</code> (Practical Salinity Unit) is equivalent to g/kg or per thousand (‰). It is based on the properties of sea water conductivity.</li>
+<li>The variables <code>tairsurf</code>, <code>uwindsurf</code>, <code>vwindsurf</code> and <code>runoffsurf</code> are from GEM-LAM and the rests are from NEMO-CICE. </li>
+</ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>

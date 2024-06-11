@@ -144,10 +144,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#a-propos-du-masque-no-data" class="nav-link">À propos du masque No-Data</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -180,7 +176,7 @@
 </ul>
 <p>Un historique de 20 heures est conservé dans ce répertoire.</p>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
-<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png" /></p>
+<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png" /></p>
 <p>Valeurs données aux paramètres de la grille polaire stéréographique :</p>
 <table>
 <thead>
@@ -277,9 +273,14 @@
 <li>La direction des composantes u (UGRD) et v (VGRD) du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j. Veuillez vous référer à la table de code 7 du standard GRIB pour de plus amples informations.</li>
 <li>Les paramètres NLWRS_SFC, DSWRF_NTAT, DLWRF_NTAT sont donnés en quantités accumulées. L’intervalle temporel d’accumulation est spécifié selon la valeur numéro 4 de la table de code 5 du standard GRIB. En raison de l’accumulation sur une période, les unités d’origine (watts par mètre carré) deviennent des joules par mètre carré.</li>
 <li>Le paramètre représentant l’humidité dans le modèle est l’humidité spécifique (SPFH). C’est ce paramètre qui devrait être utilisé pour toute application de PNT. La dépression du point de rosée (DEPR) est un paramètre diagnostique déconseillé pour les applications de haute précision.</li>
+<li>Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:<ul>
+<li>Passe de 00Z: 18h, 42h et 66h</li>
+<li>Passe de 06Z: 12h, 36h et 60h</li>
+<li>Passe de 12Z: 6h , 30h et 54h</li>
+<li>Passe de 18Z: 0h , 24h et 48h</li>
 </ul>
-<h2 id="a-propos-du-masque-no-data">À propos du masque No-Data</h2>
-<p>Depuis le 7 septembre 2016, un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.</p>
+</li>
+</ul>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

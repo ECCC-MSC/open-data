@@ -169,7 +169,7 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12].</li>
+<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 06, 12, 18]</li>
 </ul>
 <p>Un historique de 24 heures est conservé dans ce répertoire.</p>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
@@ -203,14 +203,13 @@
 </tbody>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <p><code>{YYYYMMDD}T{HH}Z_MSC_REWPS-{DOMAIN}_{VAR}_{LVL}_{Grille}{resolution}_PT{hhh}H.grib2</code></p>
 <p>où :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
 <li><strong>T</strong> : Séparateur de temps selon les normes ISO8601</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 12]</li>
+<li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18]</li>
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante indiquant que le Service Météorologique Canadien émet les prévisions.</li>
 <li><strong>REWPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision d'ensemble des vagues</li>

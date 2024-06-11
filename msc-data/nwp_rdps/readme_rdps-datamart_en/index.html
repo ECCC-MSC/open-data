@@ -144,10 +144,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#about-the-no-data-mask" class="nav-link">About the no-data mask</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -182,7 +178,7 @@
 </ul>
 <p>A 20-hour history is kept in this directory.</p>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
-<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps-srpd.png" /></p>
+<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png" /></p>
 <p>Values given to the parameters of the stereographic polar grid :</p>
 <table>
 <thead>
@@ -280,9 +276,14 @@
 <li>u (UGRD) and v (VGRD) components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates. Please refer to Code Table 7 of the GRIB standard for further details.</li>
 <li>Radiation fluxes parameters NLWRS_SFC, DSWRF_NTAT, and DLWRF_NTAT are encoded as accumulated values, as per value 4 of the Time Range Indicator (Code Table 5 of the GRIB format standard). This changes the unit from Watts per square metre to Joules per square meter.</li>
 <li>Specific Humidity (SPFH) is the model's native moisture variable. It should be used in all NWP applications. Dew point depression (DEPR) is a diagnostic parameter and is not meant for use in high-precision applications.</li>
+<li>UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:<ul>
+<li>00Z run: 18h, 42h and 66h</li>
+<li>06Z run: 12h, 36h and 60h</li>
+<li>12Z run: 6h , 30h and 54h</li>
+<li>18Z run: 0h , 24h and 48h</li>
 </ul>
-<h2 id="about-the-no-data-mask">About the no-data mask</h2>
-<p>Since September, 7th 2016, a mask called "No-data" has been added to our GRIB2 encoding process in order to better represent the areas where data are unavailable. This mask only concerns a few grid points with no data, always the same ones, located at the edge of the domain. Note that this mask has no negative effect on the product quality.</p>
+</li>
+</ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>

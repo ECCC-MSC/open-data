@@ -171,7 +171,7 @@
 <ul>
 <li><strong>TYPE</strong> : String indicating individual members direct model outputs (not processed) or probabilistic products created from all members [raw, products]</li>
 <li><strong>HH</strong> : Model run start, in UTC [00,12]</li>
-<li><strong>hhh</strong> : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC</li>
+<li><strong>hhh</strong> : Forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] and [000, 003, …, 192, 198, 204, ..., 930, 936] each Monday and Thursday at 000UTC</li>
 </ul>
 <h2 id="grid-specifications">Grid specifications</h2>
 <p>This table lists details of the latitude-longitude grid used in the encoding of the GRIB variables.</p>
@@ -202,7 +202,6 @@
 </tbody>
 </table>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE : ALL HOURS ARE IN UTC.</p>
 <p>The files have the following nomenclature :</p>
 <ul>
 <li>CMC_geps-raw_Variable_LevelType_Level_latlonResolution_YYYYMMDDHH_Phhh_allmbrs.grib2</li>
@@ -219,7 +218,7 @@
 <li><strong>Level</strong> : Level value. To consult a complete list, refer to the variables section.</li>
 <li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast.</li>
 <li><strong>HH</strong> : UTC run time [00,12]</li>
-<li><strong>Phhh</strong> : P is a constant character. hhh is the forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] or [000, 003, …, 192, 198, 204, ..., 762, 768] each Thursday at 000UTC</li>
+<li><strong>Phhh</strong> : P is a constant character. hhh is the forecast hour [000, 003, …, 192, 198, 204, ..., 378, 384] or [000, 003, …, 192, 198, 204, ..., 930, 936] each Monday and Thursday at 000UTC</li>
 <li><strong>allmbrs</strong> : Constant string indicating that all the members of the ensemble are included in this file</li>
 <li><strong>all-products</strong> : indicating that all probabilistic products for this variable are contain in the file</li>
 <li><strong>grib2</strong> : Constant string indicating the GRIB2 format is used</li>

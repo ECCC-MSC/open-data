@@ -219,6 +219,8 @@ Total precipitation,APCP,Surface,kg/m<sup>2</sup>
 Total totals index,TOTALX,Surface,K
 Upward longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
 Upward shortwave radiation flux,USWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
+UV Index,UVI,Surface,Numeric
+UV Index under clear sky,UVIUCS,Surface,Numeric
 Vertical velocity (pressure),VVEL,250 mb,Pa/s
 Vertical velocity (pressure),VVEL,500 mb,Pa/s
 Vertical velocity (pressure),VVEL,700 mb,Pa/s
