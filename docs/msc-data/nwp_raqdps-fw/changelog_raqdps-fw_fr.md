@@ -12,7 +12,7 @@
 
 Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) cessera de tourner un système séparé pour la prévision de la qualité de l'air avec émissions de feux de forêt en temps quasi réel. Le Système régional de prévision déterministe de la qualité de l'air (SRPDQA) incluera désormais les contributions de feux de forêt, à partir de la version 25 de ce système.
 
-Toute la documentation reliée à la mise à jour du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) version 25 est [disponible ici](../nwp_raqdps/changelog_raqdps_en.md#tuesday-june-11-2024).
+Toute la documentation reliée à la mise à jour du Système régional de prévision déterministe de la qualité de l'air (SRPDQA) version 25 est [disponible ici](../nwp_raqdps/changelog_raqdps_fr.md#mardi-11-juin-2024).
 
 ## Le mardi 28 juin 2022
 
