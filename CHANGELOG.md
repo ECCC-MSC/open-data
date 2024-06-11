@@ -10,10 +10,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.6.1
 
-* date: 
+* date: 2024-06-10
 * announcements:
     * Not announced
 * new content:
+    * New changelogs all systems IC-4
+    * Update several NWP pages for IC-4
+    * Add LTCE DD page
 * improvements:
     * Update abstract for WCPS-atmosphere
     * Add Metadata links for Weather Alerts and Satellites
