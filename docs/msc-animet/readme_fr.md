@@ -16,11 +16,12 @@ AniMet du SMC donne accès aux couches de [GeoMet-Météo et GeoMet-Climat](../m
 
 **Accès à AniMet du SMC : [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
-Un exemple simple de l'animation d'une couche radar créée avec AniMet du SMC :
+Un exemple simple d'animation montrant des orages à l'aube, avec l'imagerie satellitaire GOES et une couche radar :
 
-<video controls>
-  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Pluie_Sud-Ontario_20230323T0830Z.mp4" type="video/mp4">
+<video controls width="66%">
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2224Z_Orages_2024-04-22.mp4" type="video/mp4">
 </video>
+<br>
 
 # Utilisation
 
@@ -43,7 +44,7 @@ Couches :
 Superpositions :
 
 * Sélectionner le panneau 'Superpositions' pour ajouter de l'information au-dessus des couches affichées
-* Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom.
+* Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom
 
 ## 2 - Personnaliser le contenu de la carte
 
@@ -51,32 +52,35 @@ Configurer les couches dans le panneau `Configuration des couches` et personnali
 
 Couches :
 
-* Lorsque possible, changer la passe de modèle associée à la couche.
+* Lorsque possible, changer la passe de modèle associée à la couche
 * Réorganiser les couches à l'aide des flèches vers le haut et vers le bas
-  * Les flèches ne sont affichées que si plusieurs couches ont été ajoutées
+    * Les flèches ne sont affichées que si plusieurs couches ont été ajoutées
 * Modifier les couleurs des couches
-  * Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles
+    * Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles
 * Ajuster l'opacité des couches
 * Activer la visibilité des couches
-  * L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche
+    * L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche
 
 
 Temps :
 
-* L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel.
-* Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression.
-* Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre.
-* Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie.
-* Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton `Heure locale`.
-* La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches.
-* En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle.
+* L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel
+* Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression
+* Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre
+    * Les options de lecture sont situées au-dessus du bouton de lecture/pause et permettent à l'utilisateur de jouer l'animation en boucle ou en sens inverse
+    * L'étendue temporelle des couches ajoutées sont périodiquement mises à jour automatiquement et les limites temporelles de la carte peuvent être mises à jour lorsque les pas de temps précédents ne sont plus disponibles
+* Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie
+* Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton `Heure locale`
+* La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches
+* En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle
 
 Carte :
 
 * Agrandir et déplacer la carte sur votre zone d'intérêt
 * Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte
-* Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte. Notez que les animations ne peuvent pas être générées lorsque la carte est pivotée.
-* Sélectionner les légendes à afficher à l'aide du bouton `LÉGENDES`. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite.
+* Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte. Notez que les animations ne peuvent pas être générées lorsque la carte est pivotée
+* Sélectionner les légendes à afficher à l'aide du bouton `LÉGENDES`. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite
+* L'icône du globe en haut de la carte permet aux utilisateurs de passer d'une projection cartographique à l'autre, d'afficher des graticules et de modifier la couleur de la carte
 
 ## 3 - Configurer l'animation
 
@@ -85,6 +89,9 @@ Configurer l'animation dans le panneau `Configuration de l'animation` :
 * Fournir un titre d'animation personnalisé, si désiré
 * Définir la vitesse de l'animation en images par seconde
 * Choisir la carte de fond entre la carte de fond claire et foncée
+* Le contour rouge montre ce qui sera inclus dans l'animation et les éléments blancs montrent l'espace utilisé par l'en-tête, le pied de page et l'horloge murale de l'animation
+    * Un message d'avertissement s'affiche si les légendes affichées ne sont pas entièrement contenues dans la zone de sortie de l'animation
+* Différents formats de sortie peuvent être sélectionnés pour l'animation afin de répondre aux besoins de l'utilisateur et de permettre un partage facile sur les plateformes de médias sociaux
 
 ## 4 - Créer et partager la carte et l'animation
 
@@ -94,7 +101,7 @@ Récupérer et partager le permalien avec le bouton `Partager` en haut à droite
 
 * Vous pouvez copier et sauvegarder le permalien pour une utilisation ultérieure
 * Partager directement le permalien par courriel ou sur les médias sociaux
-  * Pour partager l'animation sur les médias sociaux, le fichier doit d'abord être enregistré localement
+    * Pour partager l'animation sur les médias sociaux, le fichier doit d'abord être enregistré localement
 
 Le [permalien](https://fr.wikipedia.org/wiki/Permalien) vous permet d'ouvrir AniMet du SMC avec un ensemble déterminé de couches et leur configuration, ainsi qu'un zoom, une étendue et une taille de carte spécifiques. Les dimensions temporelles ne sont pas incluses dans le permalien en raison de la nature évolutive et de la disponibilité des données archivées.
 
