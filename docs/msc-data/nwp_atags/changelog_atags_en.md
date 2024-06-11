@@ -6,6 +6,14 @@
 
 # Chronology of changes to the autoTAF Automated Guidance System (aTAGS)
 
+## Tuesday June 11, 2024
+
+### Upgrade to Version 1.3.0 of the autoTAF Automated Guidance System (aTAGS) at the Canadian Meteorological Centre
+
+On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the autoTAF Automated Guidance System (aTAGS) to version 1.3.0.
+
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
+
 ## Tuesday June 28, 2022
 
 ### Upgrade to Version 1.2.0 of the aTAGS adapted to the New High Performance Computing Infrastructure.

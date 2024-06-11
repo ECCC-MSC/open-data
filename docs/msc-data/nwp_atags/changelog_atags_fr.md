@@ -6,6 +6,13 @@
 
 # Chronologie des changements apportés au Système automatisé de prévisions à l'aviation (aTAGS)
 
+## Le mardi 11 juin 2024
+
+### Mise à jour du Système automatisé de prévisions à l'aviation (aTAGS) 1.3.0 du Centre météorologique canadien (CMC)
+
+Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.3.0 de son Système automatisé de prévisions à l'aviation (aTAGS)
+
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 ## Le mardi 28 juin 2022
 
