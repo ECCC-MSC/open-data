@@ -13,7 +13,7 @@
 En date du mardi 30 novembre 2021, le Centre météorologique canadien (CMC) va procéder à la mise à jour du Système de prévision interannuelle et saisonnière canadien (SPISCan) vers la version 3.0.0
 
 Principaux changements :
-* Le modèle climatique couplé CanCM4i remplacé par le modèle  CanESM5.1 Earth system model
+* Le modèle climatique couplé CanCM4i remplacé par le modèle du système terrestre CanESM5.1
 * Le modèle couplé GEM-NEMO 5.1 est remplacé par GEM-NEMO 5.2
 * La taille de l'ensemble de la prévision est doublé (de 20 à 40 membres) en utilisant une combinaison des prévisions usuelles et des prévision initialisées quatre jours avant.
 * Dans CanESM5, Une nouvelle correction de biais à été introduite.
