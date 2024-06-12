@@ -67,14 +67,14 @@ Quinze types de produits sont actuellement générés à partir des satellites G
      * [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf)
      * [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf)
      
-* __Produits générés individuellement ou en combinaison «jour-nuit » avec d’autres, à 1km de résolution__ :
+* __Produit généré individuellement ou en combinaison «jour-nuit» avec d’autres produits, à 1km de résolution__ :
      * [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf); ce produit est aussi connu en anglais comme « DayVis ». Disponible que le jour si pris isolément
 
-* __Produits générés individuellement 24h/24 ou en combinaison «jour-nuit » avec d’autres et avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
+* __Produits générés individuellement 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
      * [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf)
      * [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf)
 
-* __Produits générés qu’en combinaison avec d’autres, utilisent la lumière visible et n’apparaissent que dans la portion jour d’une combinaison, à 1km de résolution__ : 
+* __Produits générés qu’en combinaison avec d’autres produits, utilisent la lumière visible et n’apparaissent que dans la portion jour d’une combinaison, à 1km de résolution__ : 
      * [Température des feux](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_fr.pdf)
      * [Type de nuage de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_fr.pdf)
      * [Nuage-sol et feux de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf)
