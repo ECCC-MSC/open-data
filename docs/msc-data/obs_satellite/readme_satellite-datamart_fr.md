@@ -59,14 +59,14 @@ En combinant des produits n’utilisant que le rayonnement infrarouge avec des p
  
 Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est.
 
-* __Produit généré isolément, seulement le jour, à 1km de résolution__ :
+* __Produit généré individuellement, seulement le jour, à 1km de résolution__ :
      * [Couleur naturelle](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf)
-      
-* __Produits générés isolément, 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
+     
+* __Produits générés individuellement, 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
      * [Cendre](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_fr.pdf)
      * [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf)
      * [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf)
-     
+
 * __Produit généré individuellement ou en combinaison «jour-nuit» avec d’autres produits, à 1km de résolution__ :
      * [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf); ce produit est aussi connu en anglais comme « DayVis ». Disponible que le jour si pris isolément
 
@@ -80,9 +80,9 @@ Quinze types de produits sont actuellement générés à partir des satellites G
      * [Nuage-sol et feux de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf)
      * [Neige-brouillard](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_fr.pdf)
      * [Sandwich Visible et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_fr.pdf)
-     * [Fumée sur Canal-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf).
+     * [Fumée sur Canal-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf)
  
-* __Produits n'apparaissant que dans la portion de nuit d’une combinaison de produits, à 2km de résolution__ :
+* __Produits n'apparaissant que dans la portion nuit d’une combinaison de produits, à 2km de résolution__ :
      * [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf)
      * [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf)
  
