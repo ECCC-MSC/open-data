@@ -10,7 +10,7 @@ Cette page décrit des données et produits dérivés des instruments [satellita
 
 Ces produits sont dérivés d'images [RVB](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_fr.pdf) (rouge/vert/bleu), une technique de traitement satellitaire qui utilise une combinaison de bandes de capteurs satellitaires (également appelées canaux) et les applique chacune à un filtre rouge/vert/bleu (RVB). Il en résulte une image en fausses couleurs, c'est-à-dire une image qui ne correspond pas à ce que verrait l'œil humain, mais qui offre un contraste élevé entre les différents types de nuages et les caractéristiques de la surface. Le capteur embarqué à bord d'un satellite météorologique obtient deux types d'informations de base : les données de la lumière visible (lumière réfléchie) se reflétant sur les nuages et les différents types de surface, aussi appelée « réflectance », et les données infrarouges (radiation émise) qui sont des radiations à ondes longues émises par les nuages et les caractéristiques de surface. Les RVB sont spécialement conçus pour combiner ce type de données satellitaires, ce qui permet d'obtenir un produit final riche en informations.
 
-Quatre types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est: ["NightIR"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf) et ["NightMicrophysics"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf), à 2km de résolution, sont générés 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour, et des produits ["NaturalColour"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf)  et ["DayCloudConvection"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf), à 1km de résolution, qui combinent des canaux dans la lumière visible à des  canaux infrarouges; leur plus haute résolution rendent ces deux derniers produits plus populaires, mais ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest) étant donnée l’absence de lumière réfléchie du soleil. D’autres produits RVB devraient s’ajouter graduellement dans le futur pour combler différents besoins. 
+Les autres produits résultent d’un rehaussement des données d’un canal pour une longueur d’onde unique, visant aussi à mettre en évidence des caractéristiques météorologiques de la surface ou des nuages observés, mais de manière plus simple puisque ne mettant en jeu qu’une seule longueur d’onde. Cette façon de faire plus ancienne est toujours utile parce que sa simplicité facilite dans certains cas l’interprétation de l’image.
 
 ## Adresse des données 
 
@@ -42,14 +42,51 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __GOES-Sat__ : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West] 
-* __Product__ : Chaîne de caractères indiquant le type de produit satellitaire généré [NaturalColor, DayVis, NighIR, NightMicrophysics]
+* __Product__ : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, FireTemperature, etc.]. Voir la section sur le contenu des fichiers
 * __resolution__ : Résolution horizontale des données [1km, 2km]
 * __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF 
 
 Examples: 
 
 * 20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif
-* 20231109T0510Z_MSC_GOES-West_NightMicrophysics_2km.tif
+* 20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif
+
+## Contenu des fichiers
+
+Il est important de noter que les produits utilisant les canaux de lumière visible ne peuvent être générés durant les heures de la nuit où aucune portion du disque terrestre vu par le satellite n’est éclairée directement par le soleil. Ces produits ont une résolution nominale de 1km. Leur plus haute résolution rendent ces deux derniers produits plus populaires, mais lorsque produits individuellement ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest). Par contre les produits n’utilisant que des canaux infrarouges sont générés de jour comme de nuit et donc disponibles 24h/24 à une résolution nominale de 2km.
+ 
+En combinant des produits n’utilisant que le rayonnement infrarouge avec des produits utilisant la lumière réfléchie du soleil on obtient des produits combinés générés 24h/24 où la partie éclairée de jour utilise des canaux de lumière visible, et la partie nocturne utilise que des canaux de rayonnement infrarouge.
+ 
+Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est.
+
+* __Produit généré isolément, seulement le jour, à 1km de résolution__ :
+     * [Couleur naturelle](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf)
+      
+* __Produits générés isolément, 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
+     * [Cendre](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_fr.pdf)
+     * [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf)
+     * [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf)
+     
+* __Produit généré individuellement ou en combinaison «jour-nuit» avec d’autres produits, à 1km de résolution__ :
+     * [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf); ce produit est aussi connu en anglais comme « DayVis ». Disponible que le jour si pris isolément
+
+* __Produits générés individuellement 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour, à 2km de résolution__ :
+     * [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf)
+     * [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf)
+
+* __Produits générés qu’en combinaison avec d’autres produits, utilisent la lumière visible et n’apparaissent que dans la portion jour d’une combinaison, à 1km de résolution__ : 
+     * [Température des feux](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_fr.pdf)
+     * [Type de nuage de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_fr.pdf)
+     * [Nuage-sol et feux de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf)
+     * [Neige-brouillard](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_fr.pdf)
+     * [Sandwich Visible et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_fr.pdf)
+     * [Fumée sur Canal-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf).
+ 
+* __Produits n'apparaissant que dans la portion de nuit d’une combinaison de produits, à 2km de résolution__ :
+     * [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf)
+     * [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf)
+ 
+D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.
 
 ## Support
 
