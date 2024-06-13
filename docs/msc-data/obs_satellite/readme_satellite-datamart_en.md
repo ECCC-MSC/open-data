@@ -63,11 +63,11 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 
 | Individual products | Resolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
-| [Natural Color](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) | 1km | Various applications (e.g. warm season) | Only available during the day | 
+| [Natural Colour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) | 1km | Various applications (e.g. warm season) | Only available during the day | 
 | [Ash](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_en.pdf) | 2km | Detection of volcanic ash | Available 24/24 with infrared channels, so visible day and night | 
 | [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_en.pdf) | 2km | Detection of sulfur dioxide, a volcanic gas that can pose a threat to the environment and human health at high concentrations | Available 24/24 with infrared channels so visible night and day | 
 | [Dust](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_en.pdf) | 2km | Detection of moisture fronts and volcanic ash | Available 24/24 with infrared channels so visible night and day | 
-| [Daytime cloud convection](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf) | 1km | Detection of convective clouds causing thunderstorms | Only available during the day if used in isolation or in "day-night" combination with other products | 
+| [Day cloud convection](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf) | 1km | Detection of convective clouds causing thunderstorms | Only available during the day if used in isolation or in "day-night" combination with other products | 
 | [Night IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf) | 2km | Night surveillance of clouds | Available 24/24 or in "day-night" combination with other products, with infrared channels so visible night and day | 
 | [Night Microphysics](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf) | 2km | Identification of high and low clouds and fog. Allows identification of fire hotspots and cloud heights | Available 24 hours a day or in "day-night" combination with other products, with infrared channels so visible night and day | 
 
@@ -76,13 +76,13 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 | "Day-night" combination products | Resolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
 | [Fire temperature](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_en.pdf) | 1km | Forest fire detection | Uses visible light and only appears in the daytime portion of a combination | 
-| [Daytime Cloud Type](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_en.pdf) | 1km | Distinguishes between high and low clouds, reveals the vertical development stage of convective clouds | Uses visible light and only appears in the daytime portion of a combination | 
-| [Ground cloud and daylight](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_en.pdf) | 1km | Distinguishes water clouds from ice clouds. Detection of fire hotspots, smoke, burn scars and snow/ice cover | Uses visible light and appears only in the daytime portion of a suit | 
+| [Day Cloud Type](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_en.pdf) | 1km | Distinguishes between high and low clouds, reveals the vertical development stage of convective clouds | Uses visible light and only appears in the daytime portion of a combination | 
+| [Day land cloud fire](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_en.pdf) | 1km | Distinguishes water clouds from ice clouds. Detection of fire hotspots, smoke, burn scars and snow/ice cover | Uses visible light and appears only in the daytime portion of a suit | 
 | [Snow-fog](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_en.pdf) | 1km | Distinguish between snow and cloudless ground. In the cloudy phase, provides information on water versus ice | Uses visible light and appears only in the daytime portion of a suit |  
-| [Visible and IR Sandwich](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_en.pdf) | 1km | Monitoring of cloud top characteristics of mature convective thunderstorms that can be violent | Uses visible light and only appears in the daytime portion of a combination | 
-| [Smoke on Channel-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf) | 1km | Smoke detection, dust storms | Uses visible light and only appears in the daytime portion of a combination | 
+| [Visible IR Sandwich](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_en.pdf) | 1km | Monitoring of cloud top characteristics of mature convective thunderstorms that can be violent | Uses visible light and only appears in the daytime portion of a combination | 
+| [Smoke ABI Channel-1](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf) | 1km | Smoke detection, dust storms | Uses visible light and only appears in the daytime portion of a combination | 
 | [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Detection of smoke, fog, etc. ?? | Appears only in the night-time portion of a product combination | 
-| [Night Microphysics and IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Smoke detection, forest fires ?? | Appears only in the night portion of a product combination |
+| [Night Microphysics IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Smoke detection, forest fires ?? | Appears only in the night portion of a product combination |
 
 Other RGB products will gradually be added in the future to serve a wider range of needs.
 
