@@ -63,7 +63,7 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 
 | Individual products | Resolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
-| [Natural Colour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) | 1km | Various applications (e.g. warm season) | Only available during the day | 
+| [Natural Color](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) | 1km | Various applications (e.g. warm season) | Only available during the day | 
 | [Ash](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_en.pdf) | 2km | Detection of volcanic ash | Available 24/24 with infrared channels, so visible day and night | 
 | [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_en.pdf) | 2km | Detection of sulfur dioxide, a volcanic gas that can pose a threat to the environment and human health at high concentrations | Available 24/24 with infrared channels so visible night and day | 
 | [Dust](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_en.pdf) | 2km | Detection of moisture fronts and volcanic ash | Available 24/24 with infrared channels so visible night and day | 
