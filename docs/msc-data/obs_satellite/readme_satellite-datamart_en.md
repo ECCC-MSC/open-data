@@ -71,9 +71,9 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 | [Night IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf) | 2km | Night surveillance of clouds | Available 24/24 or in "day-night" combination with other products, with infrared channels so visible night and day | 
 | [Night Microphysics](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf) | 2km | Identification of high and low clouds and fog. Allows identification of fire hotspots and cloud heights | Available 24 hours a day or in "day-night" combination with other products, with infrared channels so visible night and day | 
 
-### Day-night" combination products : 
+### "Day-night" combination products : 
 
-| Resolution | Application | Note | 
+| "Day-night" combination products | Resolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
 | [Fire temperature](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_en.pdf) | 1km | Forest fire detection | Uses visible light and only appears in the daytime portion of a combination | 
 | [Daytime Cloud Type](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_en.pdf) | 1km | Distinguishes between high and low clouds, reveals the vertical development stage of convective clouds | Uses visible light and only appears in the daytime portion of a combination | 
