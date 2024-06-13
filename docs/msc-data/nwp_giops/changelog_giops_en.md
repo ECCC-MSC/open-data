@@ -16,6 +16,8 @@ Significant changes:
 
 * Updated from CICE version 4.0 to 6.2
 * Introduced new features such as the Delta-Eddington radiation scheme
+* Mean Dynamic Topography (MDT) Update
+* Activation of New Altimetry Datasets
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_e.pdf).
 

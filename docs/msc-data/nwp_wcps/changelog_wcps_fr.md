@@ -16,6 +16,8 @@ Principaux changements :
 
 * Forçages atmosphériques provenant d'une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_en.md) à 10km de résolution horizontale
 * Passage au modèle CICE6
+* Introduction de connecteurs lac-rivière entre le Lac Supérieur et le Lac Huron
+* Ajout du domaine de la Baie de Fundy
 * Utilisation du schéma de rayonnement Delta Eddington 
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_wcps-330_e.pdf). 

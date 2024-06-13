@@ -18,6 +18,7 @@ Principaux changements :
 * Passage du modèle GEM 5.1.2 à GEM 5.2.1.
 * Passage du modèle CICE 4 à CICE 6.
 * Utilisation du schéma de rayonnement Delta Eddington.
+* Inclusion de l'analyse de neige et de la glace sur la glace de mer issue du SGPOG dans le cycle  d'assimilation, améliorant la cohérence dans les régions arctiques
 * Le SGPD produit aussi une composante non-couplée à 10 km de résolution. Cette composante est principalement utilisée comme condition frontière pour les systèmes régionaux et comme forçage atmosphérique pour les systèmes environmentaux.
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_f.pdf).

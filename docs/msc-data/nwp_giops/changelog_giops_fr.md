@@ -15,7 +15,9 @@ Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologiq
 Principaux changements :
 
 * Mise à jour de la version 6.2 du CICE 
-* Schéma de rayonnement Delta-Eddington 
+* Schéma de rayonnement Delta-Eddington
+* Mise à jour de la topographie dynamique moyenne (MDT)
+* Activation de nouveaux jeux de données altimétriques
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_giops-350_f.pdf).
 
