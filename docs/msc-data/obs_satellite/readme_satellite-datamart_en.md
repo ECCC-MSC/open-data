@@ -10,7 +10,7 @@ This page describes data and products derived from GOES-West and GOES-East [sate
 
 These products are derived from [RGB](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_en.pdf) (red/green/blue) images, a satellite processing technique that uses a combination of satellite sensor bands (also called channels) and applies a red/green/blue (RGB) filter to each of them. The result is a false-color image, i.e. an image that does not correspond to what the human eye would see, but offers high contrast between different cloud types and surface features. The on-board sensor of a weather satellite obtains two basic types of information: visible light data (reflected light) reflecting off clouds and different surface types, also known as "reflectance", and infrared data (emitted radiation) which are long-wave radiations emitted by clouds and surface features. RGBs are specially designed to combine this type of satellite data, resulting in an information-rich final product.
 
-Four types of products are currently generated from the GOES-West and GOES-East satellites: ["NightIR"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf) and ["NightMicrophysics"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf), at 2km resolution, are generated 24 hours a day with infrared channels, so are visible both night and day, and ["NaturalColour"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) and ["DayCloudConvection"](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf), at 1km resolution, which combine visible light channels with infrared channels; their higher resolution makes the latter two products more popular, but they are not available during most of the night (between 02UTC and 07UTC for GOES-Est, and between 06UTC and 11UTC for GOES-Ouest) given the absence of reflected sunlight. Other RGB products should be added gradually in the future to meet different needs. 
+Other products are based on the enhancement of channel data for a single wavelength, also aimed at highlighting meteorological features of the observed surface or clouds, but in a simpler way since only a single wavelength is involved. This older approach is still useful today, as its simplicity makes image interpretation easier in some cases.
 
 ## Data location 
 
@@ -42,14 +42,49 @@ where :
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __GOES-Sat__ : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]
-* __Product__: String indicating the type of satellite product generated [NaturalColor, DayVis, NighIR, NightMicrophysics]
+* __Product__: String indicating the type of satellite product generated [Ash, FireTemperature, etc.]. See the section on file contents
 * __resolution__ : Horizontal resolution of data [1km, 2km]
 * __tif__ : Constant string indicating that the format is GeoTIFF 
 
 Examples: 
 
 * 20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif
-* 20231109T0510Z_MSC_GOES-West_NightMicrophysics_2km.tif
+* 20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif
+
+## File contents
+
+It is important to note that products using visible light channels cannot be generated during the hours of the night when no portion of the Earth's disk seen by the satellite is directly illuminated by the sun. These products have a nominal resolution of 1km. Their higher resolution makes the latter two products more popular, but when produced individually they are not available during most of the night (between 02UTC and 07UTC for GOES-East, and between 06UTC and 11UTC for GOES-West). On the other hand, products using only infrared channels are generated day and night, and are therefore available 24 hours a day at a nominal resolution of 2km.
+ 
+By combining products using only infrared radiation with products using reflected sunlight, we obtain combined products generated around the clock, where the daytime illuminated part uses visible light channels, and the night-time part uses only infrared radiation channels.
+ 
+Fifteen types of product are currently generated from the GOES-West and GOES-East satellites. They are described below according to the type of individual or combined "day-night" products: 
+
+### Individual or combined "day-night" products : 
+
+| Individual products | Resolution | Application | Note | 
+| ------ | ------ | ------ | ------ | 
+| [Natural Color](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf) | 1km | Various applications (e.g. warm season) | Only available during the day | 
+| [Ash](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_en.pdf) | 2km | Detection of volcanic ash | Available 24/24 with infrared channels, so visible day and night | 
+| [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_en.pdf) | 2km | Detection of sulfur dioxide, a volcanic gas that can pose a threat to the environment and human health at high concentrations | Available 24/24 with infrared channels so visible night and day | 
+| [Dust](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_en.pdf) | 2km | Detection of moisture fronts and volcanic ash | Available 24/24 with infrared channels so visible night and day | 
+| [Daytime cloud convection](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf) | 1km | Detection of convective clouds causing thunderstorms | Only available during the day if used in isolation or in "day-night" combination with other products | 
+| [Night IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf) | 2km | Night surveillance of clouds | Available 24/24 or in "day-night" combination with other products, with infrared channels so visible night and day | 
+| [Night Microphysics](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf) | 2km | Identification of high and low clouds and fog. Allows identification of fire hotspots and cloud heights | Available 24 hours a day or in "day-night" combination with other products, with infrared channels so visible night and day | 
+
+### "Day-night" combination products : 
+
+| "Day-night" combination products | Resolution | Application | Note | 
+| ------ | ------ | ------ | ------ | 
+| [Fire temperature](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_en.pdf) | 1km | Forest fire detection | Uses visible light and only appears in the daytime portion of a combination | 
+| [Daytime Cloud Type](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_en.pdf) | 1km | Distinguishes between high and low clouds, reveals the vertical development stage of convective clouds | Uses visible light and only appears in the daytime portion of a combination | 
+| [Ground cloud and daylight](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_en.pdf) | 1km | Distinguishes water clouds from ice clouds. Detection of fire hotspots, smoke, burn scars and snow/ice cover | Uses visible light and appears only in the daytime portion of a suit | 
+| [Snow-fog](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_en.pdf) | 1km | Distinguish between snow and cloudless ground. In the cloudy phase, provides information on water versus ice | Uses visible light and appears only in the daytime portion of a suit |  
+| [Visible and IR Sandwich](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_en.pdf) | 1km | Monitoring of cloud top characteristics of mature convective thunderstorms that can be violent | Uses visible light and only appears in the daytime portion of a combination | 
+| [Smoke on Channel-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf) | 1km | Smoke detection, dust storms | Uses visible light and only appears in the daytime portion of a combination | 
+| [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Detection of smoke, fog, etc. | Appears only in the night-time portion of a product combination | 
+| [Night Microphysics and IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Smoke detection, forest fires ?? | Appears only in the night portion of a product combination |
+
+Other RGB products will gradually be added in the future to serve a wider range of needs.
 
 ## Support
 

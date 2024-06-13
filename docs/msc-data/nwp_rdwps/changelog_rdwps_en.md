@@ -19,6 +19,8 @@ Significant changes:
 * Ocean domains: correct interpolation of wind to model grid
 * Great Lakes domains: activate Miche style shallow water limiter
 
+A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_rdwps-420_e.pdf).
+
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
 The technical specifications document for RDWPS 4.2.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_4.2.0_e.pdf).

@@ -14,11 +14,12 @@ On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorolo
 
 Significant changes:
 
-* Assimilation component feeding from improved 25km [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md) trials fields.
-* Upgrade from GEM 5.1.2 to 5.2.1.
-* Upgrade from CICE 4 to CICE 6.
-* Usage of Delta Edington radiation scheme.
-* GDPS is also running a 10 km uncoupled component. This component is moslty used as a boundary conditions for regional systems and atmospheric forcing for environmental systems.
+* Assimilation component feeding from improved 25km [Global Ensemble Prediction System (GEPS)](../nwp_geps/readme_geps_en.md) trials fields
+* Upgrade from GEM 5.1.2 to 5.2.1
+* Upgrade from CICE 4 to CICE 6
+* Usage of Delta Edington radiation scheme
+* Inclusion of snow and ice analysis on sea ice from GIOPS in the assimilation cycle, improving consistency in Arctic regions
+* GDPS is also running a 10 km uncoupled component. This component is moslty used as a boundary conditions for regional systems and atmospheric forcing for environmental systems
 
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-900_e.pdf). 

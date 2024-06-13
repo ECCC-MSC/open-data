@@ -16,6 +16,8 @@ Significant changes:
 
 * Atmospheric forcing from a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)
 * Upgrade to CICE6
+* Introduction of new lake-river connectors between Lake Superior and Lake Huron
+* Add new Bay of Fundy domain
 * Usage of Delta Edington radiation scheme
 
 A brief summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_wcps-330_e.pdf). 
