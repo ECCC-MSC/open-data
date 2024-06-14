@@ -27,6 +27,26 @@ Une note technique à ce sujet est disponible [via ce lien](https://collaboratio
 
 Le document des spécifications techniques du SPHD v3.5.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.5.0_f.pdf).
 
+## Le mardi 21 juin 2023
+
+### Mise à jour du Système de prévision hydrologique déterministe (SPHD) 3.4.0 du Centre météorologique canadien (CMC)
+
+Le mercredi 21 juin 2023, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) a procéder à la mise en œuvre opérationnelle de la version 3.4.0 de son Système de prévision hydrologique déterministe (SPHD).  
+
+Principaux changements :
+
+* Ajout de 3 nouveaux bassins versants (Fleuve Columbia, Fleuve Skeena, Baie de Fundy) et extension du bassin de la Rivière Yukon.  
+* Mise en peuvre du modèle de réservoir DZTR sur 18 nouveaux réservoirs pour les domaines existants et sur 11 réservoirs pour les nouveaux domaines.  
+* Ajustement de l’état du réservoir profond par assimilation du débit de base estimé à partir des observations du débit total de la rivière.  
+* Relocalisation de certaines stations pour une meilleure précision.  
+* Changements liés aux pertes par évaporation.
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_dhps-340_f.pdf) 
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_dhps-340_f.pdf).
+
+Le document des spécifications techniques du SPHD v3.4.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.4.0_f.pdf).
+
 ## Le mardi 28 juin 2022
 
 ### Mise à jour du SPHD à la version 3.2.0 suite à la nouvelle infrastructure de calcul haute performance. 
