@@ -27,7 +27,7 @@ Une note technique à ce sujet est disponible [via ce lien](https://collaboratio
 
 Le document des spécifications techniques du SPHD v3.5.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.5.0_f.pdf).
 
-## Le mardi 21 juin 2023
+## Le mercredi 21 juin 2023
 
 ### Mise à jour du Système de prévision hydrologique déterministe (SPHD) 3.4.0 du Centre météorologique canadien (CMC)
 
