@@ -25,7 +25,25 @@ A copy of the official note announcing the implementation of these changes is av
 
 A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_dhps-350_e.pdf).
 
-The technical specifications document for DHPS 3.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.5.0_e.pdf) .
+The technical specifications document for DHPS 3.5.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.5.0_e.pdf).
+
+## Wednesday June 21, 2023
+
+### Upgrade to Version 3.4.0 of the Deterministic Hydrological Prediction System (DHPS) at the Canadian Meteorological Centre
+
+Significant changes :  
+
+* Addition of 3 new watersheds (Columbia River, Skeena River, Bay of Fundy) and extension of the Yukon River watershed
+* Implementation of the DZTR reservoir model on 18 new reservoirs for existing domains and on 11 reservoirs for new domains  
+* Adjustment of deep reservoir status by assimilation of base flow estimated from total river flow observations  
+* Relocation of some stations to improve accuracy 
+* Changes related to evaporation losses
+
+A summary of the innovations included in this upgrade and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_dhps-340_e.pdf). 
+
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_dhps-340_e.pdf).  
+
+The technical specifications document for DHPS 3.4.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_DHPS_3.4.0_e.pdf).
 
 ## Tuesday June 28, 2022
 
