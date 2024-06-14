@@ -57,16 +57,21 @@ Il est important de noter que les produits utilisant les canaux de lumière visi
  
 En combinant des produits n’utilisant que le rayonnement infrarouge avec des produits utilisant la lumière réfléchie du soleil on obtient des produits combinés générés 24h/24 où la partie éclairée de jour utilise des canaux de lumière visible, et la partie nocturne utilise que des canaux de rayonnement infrarouge.
  
-Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est. Ils sont décrits ci-dessous selon le type de produits individuels ou combinés "jour-nuit": 
+Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est. Ils sont décrits ci-dessous en détails selon le type de produits individuels et/ou combinés "jour-nuit" (voir les liens dans les tableaux): 
 
-### Produits individuels ou en combinaison «jour-nuit» : 
+### Produits individuels : 
 
 | Produits individuels | Résolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
 | [Couleur naturelle](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf) | 1km | Applications variées (ex: saison chaude) | Disponible seulement le jour | 
 | [Cendre](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_fr.pdf) | 2km | Détection des cendres volcaniques | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour | 
 | [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf) | 2km | Détection du dioxyde de soufre, un gaz volcanique qui peut poser une menace à l'environnement et la santé humaine à des concentrations élevées | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour | 
-| [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf) | 2km | Détection des fronts d’humidité et de la cendre volcanique | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour | 
+| [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf) | 2km | Détection des fronts d’humidité et de la cendre volcanique | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour |
+
+### Produits individuels ou combinés «jour-nuit» :
+
+| Produits individuels ou combinés «jour-nuit» | Résolution | Application | Note | 
+| ------ | ------ | ------ | ------ | 
 | [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf) | 1km | Détection des nuages convectifs causant les orages | Disponible que le jour si pris isolément ou en combinaison «jour-nuit» avec d’autres produits | 
 | [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf) | 2km | Surveillance nocturne des nuages | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour | 
 | [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf) | 2km | Identification des nuages hauts et bas et du brouillard. Permet d'identifier les points chauds des incendies et la hauteur des nuages | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour | 
@@ -83,6 +88,12 @@ Quinze types de produits sont actuellement générés à partir des satellites G
 | [Fumée sur Canal-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf) | 1km | Détection de fumée, tempêtes de poussière | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
 | [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Détection de fumée, brouillard ?? | Apparait que dans la portion nuit d’une combinaison de produits | 
 | [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf) | 2km | Détection de fumée, feux de forêts ?? | Apparait que dans la portion nuit d’une combinaison de produits |
+
+Voici la liste des combinaisons disponibles:
+
+*
+*
+* ....
 
 D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.
 
