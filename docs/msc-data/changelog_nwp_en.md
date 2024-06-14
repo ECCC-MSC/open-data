@@ -115,7 +115,7 @@ Water, ocean and ice
 
 ### June 21, 2023
 
-* [Upgrade to Version 3.4.0 of the Deterministic Hydrological Prediction System (DHPS) at the Canadian Meteorological Centre](nwp_dhdps/changelog_dhdps_en.md#wednesday-june-21-2023)
+* [Upgrade to Version 3.4.0 of the Deterministic Hydrological Prediction System (DHPS) at the Canadian Meteorological Centre](nwp_dhps/changelog_dhps_en.md#wednesday-june-21-2023)
 
 ### May 3, 2023
 
