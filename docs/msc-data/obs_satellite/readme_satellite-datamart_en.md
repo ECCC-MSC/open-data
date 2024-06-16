@@ -86,14 +86,14 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 | [Snow Fog](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_en.pdf) | 1km | Distinguish between snow on the ground, fog and low clouds | Uses visible light and appears only in the daytime portion of a combination |  
 | [Visible IR Sandwich](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_en.pdf) | 1km | Monitoring of deep convection, top features of mature convective clouds causing severe weather | Uses visible light and only appears in the daytime portion of a combination | 
 | [Smoke ABI Band1](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf) | 1km | Detection of smoke, dust storms | Uses visible light and only appears in the daytime portion of a combination | 
-| [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_en.pdf) | 2km | Forest fire hotspot monitoring | Appears only in the night-time portion of a product combination | 
+| [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_en.pdf) | 2km | Forest fire hotspot monitoring | Appears only in the night portion of a product combination | 
 | [Night Microphysics IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Monitoring of nocturnal convective storms | Appears only in the night portion of a product combination |
 
 Here is the list of available "day-night" combinations:
 
 * Day Cloud Convection (or DayVis) / Night IR
 * Cay Cloud Type / Night Microphysics
-* SnowFog / Night Microphysics
+* Snow Fog / Night Microphysics
 * Visible IR Sandwich / Night Microphysics IR 
 * Smoke ABI band1 / SWIR
 * Fire Temperature / SWIR
