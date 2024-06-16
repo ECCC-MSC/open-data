@@ -57,43 +57,47 @@ Il est important de noter que les produits utilisant les canaux de lumière visi
  
 En combinant des produits n’utilisant que le rayonnement infrarouge avec des produits utilisant la lumière réfléchie du soleil on obtient des produits combinés générés 24h/24 où la partie éclairée de jour utilise des canaux de lumière visible, et la partie nocturne utilise que des canaux de rayonnement infrarouge.
  
-Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est. Ils sont décrits ci-dessous en détails selon le type de produits individuels et/ou combinés "jour-nuit" (voir les liens dans les tableaux): 
+Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est. Ils sont décrits ci-dessous en détails selon le type de produits individuels et/ou combinés "jour-nuit" (voir les liens dans les tableaux et la liste des combinaisons disponibles): 
 
 ### Produits individuels : 
 
 | Produits individuels | Résolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
-| [Couleur naturelle](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf) | 1km | Applications variées (ex: saison chaude) | Disponible seulement le jour | 
+| [Couleur naturelle](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf) | 1km | Applications variées (ex: aspect naturel des surfaces, suivi de la fumée de feux de forêts, saison chaude) | Disponible seulement le jour | 
 | [Cendre](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_fr.pdf) | 2km | Détection des cendres volcaniques | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour | 
-| [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf) | 2km | Détection du dioxyde de soufre, un gaz volcanique qui peut poser une menace à l'environnement et la santé humaine à des concentrations élevées | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour | 
-| [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf) | 2km | Détection des fronts d’humidité et de la cendre volcanique | Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour |
+| [SO2](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf) | 2km | Détection du dioxyde de soufre, un gaz volcanique qui peut poser une menace à l'environnement et la santé humaine à des concentrations élevées | Disponible 24h/24 avec des canaux infrarouges donc visible la nuit comme le jour | 
+| [Poussière](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf) | 2km | Détection des nuages de poussière et des fronts d’humidité | Disponible 24h/24 avec des canaux infrarouges donc visible la nuit comme le jour |
 
 ### Produits individuels ou combinés «jour-nuit» :
 
 | Produits individuels ou combinés «jour-nuit» | Résolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
-| [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf) | 1km | Détection des nuages convectifs causant les orages | Disponible que le jour si pris isolément ou en combinaison «jour-nuit» avec d’autres produits | 
-| [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf) | 2km | Surveillance nocturne des nuages | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour | 
-| [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf) | 2km | Identification des nuages hauts et bas et du brouillard. Permet d'identifier les points chauds des incendies et la hauteur des nuages | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visibles la nuit comme le jour | 
+| [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf) | 1km | Création d’un contraste entre les nuages hauts et bas, détection des nuages convectifs causant les orages | Disponible que le jour si pris isolément ou en combinaison «jour-nuit» avec d’autres produits | 
+| [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf) | 2km | Surveillance nocturne des nuages, aspect similaire au RVB « Convection nuageuse de jour »  | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour | 
+| [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf) | 2km | Analyse contrastée entre les nuages hauts et bas, et le brouillard. Permet d'identifier les points chauds des incendies  | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour | 
 
 ### Produits combinés «jour-nuit» : 
 
 | Produits combinés «jour-nuit» | Résolution | Application | Note | 
 | ------ | ------ | ------ | ------ | 
-| [Température des feux](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_fr.pdf) | 1km | Détection des feux de forêts | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [Type de nuage de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_fr.pdf) | 1km | Distinction des nuages élevés des nuages bas, permet de révéler le stade de développement vertical des nuages convectifs | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [Nuage-sol et feux de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf) | 1km | Distinction des nuages d'eau des nuages de glace. Détection de points chauds d'incendie, fumée, cicatrices de brûlures et couverture de neige/glace | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [Neige-brouillard](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_fr.pdf) | 1km | Distinguer la neige et les sols sans nuages. En phase nuageuse, permet de fournir des informations sur de l'eau par rapport à la glace | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [Sandwich Visible et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_fr.pdf) | 1km | Surveillance des caractéristiques du sommet des nuages des orages convectifs matures qui peuvent être violents | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [Fumée sur Canal-1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf) | 1km | Détection de fumée, tempêtes de poussière | Utilise la lumière visible et n’apparaissent que dans la portion jour d’une combinaison | 
-| [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Détection de fumée, brouillard ?? | Apparait que dans la portion nuit d’une combinaison de produits | 
-| [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf) | 2km | Détection de fumée, feux de forêts ?? | Apparait que dans la portion nuit d’une combinaison de produits |
+| [Température des feux](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_fr.pdf) | 1km | Détection des feux de forêts | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [Type de nuage de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_fr.pdf) | 1km | Distinction des nuages élevés des nuages bas, permet de révéler le stade de développement vertical des nuages convectifs  | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [Détection des feux de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf) | 1km | Détection de points chauds d'incendie, de la fumée, des cicatrices de brûlures  | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [Neige-brouillard](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_fr.pdf) | 1km | Distinction de  la neige au sol, du brouillard et des nuages bas | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [Sandwich Visible et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_fr.pdf) | 1km | Surveillance de la convection profonde, des caractéristiques du sommet des nuages convectifs matures qui causent du temps violent  | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [Fumée Bande 1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf) | 1km | Détection de fumée, tempêtes de poussière | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
+| [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Surveillance des points chauds des incendies de forêt | N'apparait que dans la portion nuit d’une combinaison de produits | 
+| [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf) | 2km | Surveillance des tempêtes convectives nocturnes  | N'apparait que dans la portion nuit d’une combinaison de produits |
 
-Voici la liste des combinaisons disponibles:
+Voici la liste des combinaisons «jour-nuit» disponibles:
 
-*
-*
-* ....
+* Convection nuageuse de jour (ou Visibilité de jour) / IR de nuit
+* Type de nuage de jour / Microphysique de nuit 
+* Neige-brouillard / Microphysique de nuit
+* Sandwich Visible et IR / Microphysique de nuit et IR
+* Fumée Bande 1 ABI / SWIR
+* Température des feux / SWIR
+* Détection des feux de jour /SWIR
 
 D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.
 
