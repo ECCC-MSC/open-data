@@ -53,7 +53,7 @@ Examples:
 
 ## File contents
 
-It is important to note that products using visible light channels cannot be generated during the hours of the night when no portion of the Earth's disk seen by the satellite is directly illuminated by the sun. These products have a nominal resolution of 1km. Their higher resolution makes the latter two products more popular, but when produced individually they are not available during most of the night (between 02UTC and 07UTC for GOES-East, and between 06UTC and 11UTC for GOES-West). On the other hand, products using only infrared channels are generated day and night, and are therefore available 24 hours a day at a nominal resolution of 2km.
+It is important to note that products using visible light channels cannot be generated during the hours of the night when no portion of the Earth's disk seen by the satellite is directly illuminated by the sun. These products have a nominal resolution of 1km. Their higher resolution makes the latter products more popular, but when produced individually they are not available during most of the night (between 02UTC and 07UTC for GOES-East, and between 06UTC and 11UTC for GOES-West). On the other hand, products using only infrared channels are generated day and night, and are therefore available 24 hours a day at a nominal resolution of 2km.
  
 By combining products using only infrared radiation with products using reflected sunlight, we obtain combined products generated around the clock, where the daytime illuminated part uses visible light channels, and the night-time part uses only infrared radiation channels.
  
@@ -92,7 +92,7 @@ Fifteen types of product are currently generated from the GOES-West and GOES-Eas
 Here is the list of available "day-night" combinations:
 
 * Day Cloud Convection (or DayVis) / Night IR
-* Cay Cloud Type / Night Microphysics
+* Day Cloud Type / Night Microphysics
 * Snow Fog / Night Microphysics
 * Visible IR Sandwich / Night Microphysics IR 
 * Smoke ABI band1 / SWIR
