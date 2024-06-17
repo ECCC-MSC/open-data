@@ -53,7 +53,7 @@ Examples:
 
 ## Contenu des fichiers
 
-Il est important de noter que les produits utilisant les canaux de lumière visible ne peuvent être générés durant les heures de la nuit où aucune portion du disque terrestre vu par le satellite n’est éclairée directement par le soleil. Ces produits ont une résolution nominale de 1km. Leur plus haute résolution rendent ces deux derniers produits plus populaires, mais lorsque produits individuellement ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest). Par contre les produits n’utilisant que des canaux infrarouges sont générés de jour comme de nuit et donc disponibles 24h/24 à une résolution nominale de 2km.
+Il est important de noter que les produits utilisant les canaux de lumière visible ne peuvent être générés durant les heures de la nuit où aucune portion du disque terrestre vu par le satellite n’est éclairée directement par le soleil. Ces produits ont une résolution nominale de 1km. Leur plus haute résolution rendent ces derniers produits plus populaires, mais lorsque générés individuellement ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest). Par contre les produits n’utilisant que des canaux infrarouges sont générés de jour comme de nuit et donc disponibles 24h/24 à une résolution nominale de 2km.
  
 En combinant des produits n’utilisant que le rayonnement infrarouge avec des produits utilisant la lumière réfléchie du soleil on obtient des produits combinés générés 24h/24 où la partie éclairée de jour utilise des canaux de lumière visible, et la partie nocturne utilise que des canaux de rayonnement infrarouge.
  
