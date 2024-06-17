@@ -57,7 +57,7 @@ It is important to note that products using visible light channels cannot be gen
  
 By combining products using only infrared radiation with products using reflected sunlight, we obtain combined products generated around the clock, where the daytime illuminated part uses visible light channels, and the night-time part uses only infrared radiation channels.
  
-Fifteen types of product are currently generated from the GOES-West and GOES-East satellites. They are described below according to the type of individual or combined "day-night" products (see links in tables and list of available combinations) : 
+Fifteen types of products are currently generated from the GOES-West and GOES-East satellites. They are described below according to the type of individual or combined "day-night" products (see links in tables and list of available combinations) : 
 
 ### Individual products : 
 
