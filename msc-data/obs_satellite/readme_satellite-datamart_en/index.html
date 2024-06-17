@@ -132,6 +132,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#file-contents" class="nav-link">File contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -153,7 +157,7 @@
 <h1 id="satellite-data-and-products">Satellite data and products</h1>
 <p>This page describes data and products derived from GOES-West and GOES-East <a href="../readme_satellite_en/">satellite</a> instruments in GeoTIFF format available on the MSC Datamart. </p>
 <p>These products are derived from <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_en.pdf">RGB</a> (red/green/blue) images, a satellite processing technique that uses a combination of satellite sensor bands (also called channels) and applies a red/green/blue (RGB) filter to each of them. The result is a false-color image, i.e. an image that does not correspond to what the human eye would see, but offers high contrast between different cloud types and surface features. The on-board sensor of a weather satellite obtains two basic types of information: visible light data (reflected light) reflecting off clouds and different surface types, also known as "reflectance", and infrared data (emitted radiation) which are long-wave radiations emitted by clouds and surface features. RGBs are specially designed to combine this type of satellite data, resulting in an information-rich final product.</p>
-<p>Four types of products are currently generated from the GOES-West and GOES-East satellites: <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf">"NightIR"</a> and <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf">"NightMicrophysics"</a>, at 2km resolution, are generated 24 hours a day with infrared channels, so are visible both night and day, and <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf">"NaturalColour"</a> and <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf">"DayCloudConvection"</a>, at 1km resolution, which combine visible light channels with infrared channels; their higher resolution makes the latter two products more popular, but they are not available during most of the night (between 02UTC and 07UTC for GOES-Est, and between 06UTC and 11UTC for GOES-Ouest) given the absence of reflected sunlight. Other RGB products should be added gradually in the future to meet different needs. </p>
+<p>Other products are based on the enhancement of channel data for a single wavelength, also aimed at highlighting meteorological features of the observed surface or clouds, but in a simpler way since only a single wavelength is involved. This older approach is still useful today, as its simplicity makes image interpretation easier in some cases.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href=".../.../msc-datamart/amqp_en.md">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.</p>
 <p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoTIFF file is displayed.</p>
@@ -177,15 +181,159 @@
 <li><strong>Z</strong>: Time zone (UTC time)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>GOES-Sat</strong> : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]</li>
-<li><strong>Product</strong>: String indicating the type of satellite product generated [NaturalColor, DayVis, NighIR, NightMicrophysics]</li>
+<li><strong>Product</strong>: String indicating the type of satellite product generated [Ash, FireTemperature, etc.]. See the section on file contents</li>
 <li><strong>resolution</strong> : Horizontal resolution of data [1km, 2km]</li>
 <li><strong>tif</strong> : Constant string indicating that the format is GeoTIFF </li>
 </ul>
 <p>Examples: </p>
 <ul>
 <li>20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif</li>
-<li>20231109T0510Z_MSC_GOES-West_NightMicrophysics_2km.tif</li>
+<li>20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif</li>
 </ul>
+<h2 id="file-contents">File contents</h2>
+<p>It is important to note that products using visible light channels cannot be generated during the hours of the night when no portion of the Earth's disk seen by the satellite is directly illuminated by the sun. These products have a nominal resolution of 1km. Their higher resolution makes the latter products more popular, but when produced individually they are not available during most of the night (between 02UTC and 07UTC for GOES-East, and between 06UTC and 11UTC for GOES-West). On the other hand, products using only infrared channels are generated day and night, and are therefore available 24 hours a day at a nominal resolution of 2km.</p>
+<p>By combining products using only infrared radiation with products using reflected sunlight, we obtain combined products generated around the clock, where the daytime illuminated part uses visible light channels, and the night-time part uses only infrared radiation channels.</p>
+<p>Fifteen types of product are currently generated from the GOES-West and GOES-East satellites. They are described below according to the type of individual or combined "day-night" products (see links in tables and list of available combinations) : </p>
+<h3 id="individual-products">Individual products :</h3>
+<table>
+<thead>
+<tr>
+<th>Individual products</th>
+<th>Resolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_en.pdf">Natural Colour</a></td>
+<td>1km</td>
+<td>Various applications (e.g. natural appearance of surfaces, tracking smoke from forest fires, warm season)</td>
+<td>Only available during the day</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_en.pdf">Ash</a></td>
+<td>2km</td>
+<td>Detection of volcanic ash</td>
+<td>Available 24/24 with infrared channels, so visible day and night</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_en.pdf">SO2</a></td>
+<td>2km</td>
+<td>Detection of sulfur dioxide, a volcanic gas that can pose a threat to the environment and human health at high concentrations</td>
+<td>Available 24/24 with infrared channels so visible night and day</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_en.pdf">Dust</a></td>
+<td>2km</td>
+<td>Detection of dust clouds and moisture fronts</td>
+<td>Available 24/24 with infrared channels so visible night and day</td>
+</tr>
+</tbody>
+</table>
+<h3 id="individual-or-combined-day-night-products">Individual or combined "day-night" products:</h3>
+<table>
+<thead>
+<tr>
+<th>Individual or combined "day-night" products</th>
+<th>Resolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_en.pdf">Day Cloud Convection</a></td>
+<td>1km</td>
+<td>Creation of contrast between high and low clouds, detection of convective clouds causing thunderstorms</td>
+<td>Only available during the day if used in isolation or in "day-night" combination with other products</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_en.pdf">Night IR</a></td>
+<td>2km</td>
+<td>Night cloud monitoring, similar appearance to RGB "Day Cloud Convection"</td>
+<td>Available 24/24 or in "day-night" combination with other products, with infrared channels so visible night and day</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_en.pdf">Night Microphysics</a></td>
+<td>2km</td>
+<td>Contrast analysis between high and low clouds, and fog. Allows identification of fire hotspots</td>
+<td>Available 24 hours a day or in "day-night" combination with other products, with infrared channels so visible night and day</td>
+</tr>
+</tbody>
+</table>
+<h3 id="day-night-combination-products">"Day-night" combination products :</h3>
+<table>
+<thead>
+<tr>
+<th>"Day-night" combination products</th>
+<th>Resolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_en.pdf">Fire Temperature</a></td>
+<td>1km</td>
+<td>Forest fire detection</td>
+<td>Uses visible light and only appears in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_en.pdf">Day Cloud Type</a></td>
+<td>1km</td>
+<td>Distinguishes between high and low clouds, reveals the vertical development stage of convective clouds</td>
+<td>Uses visible light and only appears in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_en.pdf">Day Land Cloud Fire</a></td>
+<td>1km</td>
+<td>Detection of fire hotspots, smoke, burn scars</td>
+<td>Uses visible light and appears only in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_en.pdf">Snow Fog</a></td>
+<td>1km</td>
+<td>Distinguish between snow on the ground, fog and low clouds</td>
+<td>Uses visible light and appears only in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_en.pdf">Visible IR Sandwich</a></td>
+<td>1km</td>
+<td>Monitoring of deep convection, top features of mature convective clouds causing severe weather</td>
+<td>Uses visible light and only appears in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf">Smoke ABI Band1</a></td>
+<td>1km</td>
+<td>Detection of smoke, dust storms</td>
+<td>Uses visible light and only appears in the daytime portion of a combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_en.pdf">SWIR</a></td>
+<td>2km</td>
+<td>Forest fire hotspot monitoring</td>
+<td>Appears only in the night portion of a product combination</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf">Night Microphysics IR</a></td>
+<td>2km</td>
+<td>Monitoring of nocturnal convective storms</td>
+<td>Appears only in the night portion of a product combination</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the list of available "day-night" combinations:</p>
+<ul>
+<li>Day Cloud Convection (or DayVis) / Night IR</li>
+<li>Day Cloud Type / Night Microphysics</li>
+<li>Snow Fog / Night Microphysics</li>
+<li>Visible IR Sandwich / Night Microphysics IR </li>
+<li>Smoke ABI band1 / SWIR</li>
+<li>Fire Temperature / SWIR</li>
+<li>Day Land Cloud Fire / SWIR</li>
+</ul>
+<p>Other RGB products will gradually be added in the future to serve a wider range of needs.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about these data, <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">please contact us</a>.</p>
 <h2 id="dd_info-mailing-list-announcements">dd_info mailing list announcements</h2>

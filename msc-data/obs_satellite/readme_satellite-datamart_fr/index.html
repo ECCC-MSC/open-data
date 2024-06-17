@@ -132,6 +132,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -153,7 +157,7 @@
 <h1 id="donnees-et-produits-satellitaires">Données et produits satellitaires</h1>
 <p>Cette page décrit des données et produits dérivés des instruments <a href="../readme_satellite_fr/">satellitaires</a> GOES-Ouest et GOES-Est en format GeoTIFF disponibles sur le Datamart du SMC. </p>
 <p>Ces produits sont dérivés d'images <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_fr.pdf">RVB</a> (rouge/vert/bleu), une technique de traitement satellitaire qui utilise une combinaison de bandes de capteurs satellitaires (également appelées canaux) et les applique chacune à un filtre rouge/vert/bleu (RVB). Il en résulte une image en fausses couleurs, c'est-à-dire une image qui ne correspond pas à ce que verrait l'œil humain, mais qui offre un contraste élevé entre les différents types de nuages et les caractéristiques de la surface. Le capteur embarqué à bord d'un satellite météorologique obtient deux types d'informations de base : les données de la lumière visible (lumière réfléchie) se reflétant sur les nuages et les différents types de surface, aussi appelée « réflectance », et les données infrarouges (radiation émise) qui sont des radiations à ondes longues émises par les nuages et les caractéristiques de surface. Les RVB sont spécialement conçus pour combiner ce type de données satellitaires, ce qui permet d'obtenir un produit final riche en informations.</p>
-<p>Quatre types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est: <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf">"NightIR"</a> et <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf">"NightMicrophysics"</a>, à 2km de résolution, sont générés 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour, et des produits <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf">"NaturalColour"</a>  et <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf">"DayCloudConvection"</a>, à 1km de résolution, qui combinent des canaux dans la lumière visible à des  canaux infrarouges; leur plus haute résolution rendent ces deux derniers produits plus populaires, mais ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest) étant donnée l’absence de lumière réfléchie du soleil. D’autres produits RVB devraient s’ajouter graduellement dans le futur pour combler différents besoins. </p>
+<p>Les autres produits résultent d’un rehaussement des données d’un canal pour une longueur d’onde unique, visant aussi à mettre en évidence des caractéristiques météorologiques de la surface ou des nuages observés, mais de manière plus simple puisque ne mettant en jeu qu’une seule longueur d’onde. Cette façon de faire plus ancienne est toujours utile parce que sa simplicité facilite dans certains cas l’interprétation de l’image.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.</p>
@@ -177,15 +181,159 @@
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>GOES-Sat</strong> : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West] </li>
-<li><strong>Product</strong> : Chaîne de caractères indiquant le type de produit satellitaire généré [NaturalColor, DayVis, NighIR, NightMicrophysics]</li>
+<li><strong>Product</strong> : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, FireTemperature, etc.]. Voir la section sur le contenu des fichiers</li>
 <li><strong>resolution</strong> : Résolution horizontale des données [1km, 2km]</li>
 <li><strong>tif</strong> : Chaîne de caractères constante indiquant que le format est GeoTIFF </li>
 </ul>
 <p>Examples: </p>
 <ul>
 <li>20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif</li>
-<li>20231109T0510Z_MSC_GOES-West_NightMicrophysics_2km.tif</li>
+<li>20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif</li>
 </ul>
+<h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
+<p>Il est important de noter que les produits utilisant les canaux de lumière visible ne peuvent être générés durant les heures de la nuit où aucune portion du disque terrestre vu par le satellite n’est éclairée directement par le soleil. Ces produits ont une résolution nominale de 1km. Leur plus haute résolution rendent ces derniers produits plus populaires, mais lorsque générés individuellement ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest). Par contre les produits n’utilisant que des canaux infrarouges sont générés de jour comme de nuit et donc disponibles 24h/24 à une résolution nominale de 2km.</p>
+<p>En combinant des produits n’utilisant que le rayonnement infrarouge avec des produits utilisant la lumière réfléchie du soleil on obtient des produits combinés générés 24h/24 où la partie éclairée de jour utilise des canaux de lumière visible, et la partie nocturne utilise que des canaux de rayonnement infrarouge.</p>
+<p>Quinze types de produits sont actuellement générés à partir des satellites GOES-Ouest et GOES-Est. Ils sont décrits ci-dessous en détails selon le type de produits individuels et/ou combinés "jour-nuit" (voir les liens dans les tableaux et la liste des combinaisons disponibles): </p>
+<h3 id="produits-individuels">Produits individuels :</h3>
+<table>
+<thead>
+<tr>
+<th>Produits individuels</th>
+<th>Résolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/natural_colour_fr.pdf">Couleur naturelle</a></td>
+<td>1km</td>
+<td>Applications variées (ex: aspect naturel des surfaces, suivi de la fumée de feux de forêts, saison chaude)</td>
+<td>Disponible seulement le jour</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/ash_fr.pdf">Cendre</a></td>
+<td>2km</td>
+<td>Détection des cendres volcaniques</td>
+<td>Disponible 24h/24 avec des canaux infrarouges donc visibles la nuit comme le jour</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/so2_fr.pdf">SO2</a></td>
+<td>2km</td>
+<td>Détection du dioxyde de soufre, un gaz volcanique qui peut poser une menace à l'environnement et la santé humaine à des concentrations élevées</td>
+<td>Disponible 24h/24 avec des canaux infrarouges donc visible la nuit comme le jour</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/dust_fr.pdf">Poussière</a></td>
+<td>2km</td>
+<td>Détection des nuages de poussière et des fronts d’humidité</td>
+<td>Disponible 24h/24 avec des canaux infrarouges donc visible la nuit comme le jour</td>
+</tr>
+</tbody>
+</table>
+<h3 id="produits-individuels-ou-combines-jour-nuit">Produits individuels ou combinés «jour-nuit» :</h3>
+<table>
+<thead>
+<tr>
+<th>Produits individuels ou combinés «jour-nuit»</th>
+<th>Résolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf">Convection nuageuse de jour</a></td>
+<td>1km</td>
+<td>Création d’un contraste entre les nuages hauts et bas, détection des nuages convectifs causant les orages</td>
+<td>Disponible que le jour si pris isolément ou en combinaison «jour-nuit» avec d’autres produits</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf">IR de nuit</a></td>
+<td>2km</td>
+<td>Surveillance nocturne des nuages, aspect similaire au RVB « Convection nuageuse de jour »</td>
+<td>Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf">Microphysique de nuit</a></td>
+<td>2km</td>
+<td>Analyse contrastée entre les nuages hauts et bas, et le brouillard. Permet d'identifier les points chauds des incendies</td>
+<td>Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour</td>
+</tr>
+</tbody>
+</table>
+<h3 id="produits-combines-jour-nuit">Produits combinés «jour-nuit» :</h3>
+<table>
+<thead>
+<tr>
+<th>Produits combinés «jour-nuit»</th>
+<th>Résolution</th>
+<th>Application</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/firetemperature_fr.pdf">Température des feux</a></td>
+<td>1km</td>
+<td>Détection des feux de forêts</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daycloudtype_fr.pdf">Type de nuage de jour</a></td>
+<td>1km</td>
+<td>Distinction des nuages élevés des nuages bas, permet de révéler le stade de développement vertical des nuages convectifs</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/daylandcloudfire_fr.pdf">Détection des feux de jour</a></td>
+<td>1km</td>
+<td>Détection de points chauds d'incendie, de la fumée, des cicatrices de brûlures</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/snowfog_fr.pdf">Neige-brouillard</a></td>
+<td>1km</td>
+<td>Distinction de  la neige au sol, du brouillard et des nuages bas</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/visibleirsandwich_fr.pdf">Sandwich Visible et IR</a></td>
+<td>1km</td>
+<td>Surveillance de la convection profonde, des caractéristiques du sommet des nuages convectifs matures qui causent du temps violent</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf">Fumée Bande 1 ABI</a></td>
+<td>1km</td>
+<td>Détection de fumée, tempêtes de poussière</td>
+<td>Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf">SWIR</a></td>
+<td>2km</td>
+<td>Surveillance des points chauds des incendies de forêt</td>
+<td>N'apparait que dans la portion nuit d’une combinaison de produits</td>
+</tr>
+<tr>
+<td><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf">Microphysique de nuit et IR</a></td>
+<td>2km</td>
+<td>Surveillance des tempêtes convectives nocturnes</td>
+<td>N'apparait que dans la portion nuit d’une combinaison de produits</td>
+</tr>
+</tbody>
+</table>
+<p>Voici la liste des combinaisons «jour-nuit» disponibles:</p>
+<ul>
+<li>Convection nuageuse de jour (ou Visibilité de jour) / IR de nuit</li>
+<li>Type de nuage de jour / Microphysique de nuit </li>
+<li>Neige-brouillard / Microphysique de nuit</li>
+<li>Sandwich Visible et IR / Microphysique de nuit et IR</li>
+<li>Fumée Bande 1 ABI / SWIR</li>
+<li>Température des feux / SWIR</li>
+<li>Détection des feux de jour /SWIR</li>
+</ul>
+<p>D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

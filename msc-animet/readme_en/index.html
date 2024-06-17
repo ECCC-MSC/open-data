@@ -193,11 +193,11 @@
 <p>MSC AniMet provides access to <a href="../../msc-geomet/readme_en/">GeoMet-Weather and GeoMet-Climate</a> layers.</p>
 <h1 id="access">Access</h1>
 <p><strong>Access to MSC AniMet: <a href="https://eccc-msc.github.io/msc-animet/">https://eccc-msc.github.io/msc-animet/</a></strong></p>
-<p>A simple example of an MSC AniMet animation with a single radar layer:</p>
-<video controls>
-  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Rain_South-Ontario_20230323T0830Z.mp4" type="video/mp4">
+<p>A simple example of an MSC AniMet animation showing thunderstorms at dawn, with GOES satellite imagery and radar layers:</p>
+<video controls width="66%">
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2230Z_Thunderstorms_2024-05-22.mp4" type="video/mp4">
 </video>
-
+<p><br></p>
 <h1 id="usage">Usage</h1>
 <p>The main usage workflow:</p>
 <ol>
@@ -217,38 +217,48 @@
 <p>Overlays:</p>
 <ul>
 <li>Select the 'Overlays' panel to add information on top of displayed layers</li>
-<li>Currently available overlays are Canadian geopolitical boundaries, cities and waterbodies from Natural Resource Canada. They are available only at certain zoom levels.</li>
+<li>Currently available overlays are Canadian geopolitical boundaries, cities and waterbodies from Natural Resource Canada. They are available only at certain zoom levels</li>
 </ul>
 <h2 id="2-customize-content-of-the-map">2 - Customize content of the map</h2>
 <p>Configure layers in the <code>Layers configuration</code> panel and customize the map.</p>
 <p>Layers:</p>
 <ul>
-<li>When available, change layer's corresponding model run.</li>
+<li>When available, change layer's corresponding model run</li>
 <li>Reorder layers with the up and down arrows</li>
 <li>Arrows are shown only if multiple layers have been added</li>
-<li>Change layer colors</li>
+<li>Change layer colors<ul>
 <li>View and select the layer color ramp from available styles</li>
+</ul>
+</li>
 <li>Adjust layer opacity</li>
-<li>Toggle layer visibility</li>
+<li>Toggle layer visibility<ul>
 <li>A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range</li>
+</ul>
+</li>
 </ul>
 <p>Time:</p>
 <ul>
-<li>The current time displayed on the map is displayed above the temporal controller.</li>
-<li>The start and end of the animation can be modified via the sliders on the left and right of the temporal controller.</li>
-<li>Playback controls allow for playing, stopping, and moving between time steps.</li>
-<li>The orange dot on the playback bar shows the current displayed timestep in relation to the defined temporal extent.</li>
-<li>The timestep interval can be selected via the dropdown menu to the right of the temporal controller.</li>
-<li>Choose whether to display the time in the user's local time (determined via the browser) or in UTC via the <code>Local time</code> switch.</li>
-<li>The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name in the Layers configuration panel.</li>
-<li>Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval.</li>
+<li>The current time displayed on the map is displayed above the temporal controller</li>
+<li>The start and end of the animation can be modified via the sliders on the left and right of the temporal controller</li>
+<li>Playback controls allow for playing, stopping, and moving between time steps<ul>
+<li>Playback options are located above the play/pause button and allow the user to loop the animation continuously or play the animation in reverse</li>
+<li>The temporal extent of added layers are updated and the temporal bounds of the map maybe updated as previous timesteps are no longer available</li>
+</ul>
+</li>
+<li>The orange dot on the playback bar shows the current displayed timestep in relation to the defined temporal extent</li>
+<li>The timestep interval can be selected via the dropdown menu to the right of the temporal controller</li>
+<li>Choose whether to display the time in the user's local time (determined via the browser) or in UTC via the <code>Local time</code> switch</li>
+<li>Via the chevron located next to the UTC/local switch, users can select a specific timezone for the map. Users can revert to their system's time zone via the blue revert arrow in the timezone dropdown menu</li>
+<li>The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name in the Layers configuration panel</li>
+<li>Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval</li>
 </ul>
 <p>Map:</p>
 <ul>
 <li>Zoom and pan the map to your area of interest</li>
 <li>Resize the map and the animation with the handle at the bottom right corner of the map</li>
-<li>Rotate the map by pressing the <em>alt-shift</em> keys and dragging on the map. Note that animations cannot be generated when the map is rotated.</li>
-<li>Select which legends to display via the <code>LEGENDS</code> overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation.</li>
+<li>Rotate the map by pressing the <em>alt-shift</em> keys and dragging on the map. Note that animations cannot be generated when the map is rotated</li>
+<li>Select which legends to display via the <code>LEGENDS</code> overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation</li>
+<li>The globe icon at the top of the map allows users to switch between map projections, show map graticules and alter the colour of the basemap</li>
 </ul>
 <h2 id="3-configure-the-animation">3 - Configure the animation</h2>
 <p>Configure the animation in the <code>Animation configuration</code> panel:</p>
@@ -256,14 +266,21 @@
 <li>Provide a custom animation title, if desired</li>
 <li>Set animation speed in frames per second</li>
 <li>Toggle basemap between the light and dark basemaps</li>
+<li>The red outline shows what will be included in the animation output and the white elements show the space used by the animation header, footer and wall clock<ul>
+<li>A warning message will be displayed if displayed legends are not entirely contained within the area of the animation output</li>
+</ul>
+</li>
+<li>Various aspect ratios can be selected for the animation output to match the user's needs and allow for easy sharing on social media platforms</li>
 </ul>
 <h2 id="4-create-and-share-the-map-and-animation">4 - Create and share the map and animation</h2>
 <p>After clicking on the <code>Create animation</code> button and the generation process is completed, the <code>Download animation</code> button will appear.</p>
 <p>Retrieve and share the permalink with the <code>Share</code> button at the top-right:</p>
 <ul>
 <li>You can copy and save the permalink for later use</li>
-<li>Directly share the permalink by email or on social media services</li>
+<li>Directly share the permalink by email or on social media services<ul>
 <li>To share the animation on social media, the file must first be saved locally</li>
+</ul>
+</li>
 </ul>
 <p>The <a href="https://en.wikipedia.org/wiki/Permalink">permalink</a> allows you to open MSC AniMet with a determined set of layers and their configuration, as well as a specific map zoom, extent and size. The temporal dimensions are not included in the permalink due to the evolving nature and availability of archived data.</p>
 <h1 id="additional-information">Additional information</h1>

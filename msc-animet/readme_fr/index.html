@@ -183,11 +183,11 @@
 <p>AniMet du SMC donne accès aux couches de <a href="../../msc-geomet/readme_fr/">GeoMet-Météo et GeoMet-Climat</a>.</p>
 <h1 id="acces">Accès</h1>
 <p><strong>Accès à AniMet du SMC : <a href="https://eccc-msc.github.io/msc-animet/">https://eccc-msc.github.io/msc-animet/</a></strong></p>
-<p>Un exemple simple de l'animation d'une couche radar créée avec AniMet du SMC :</p>
-<video controls>
-  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Radar-Pluie_Sud-Ontario_20230323T0830Z.mp4" type="video/mp4">
+<p>Un exemple simple d'animation montrant des orages à l'aube, avec l'imagerie satellitaire GOES et une couche radar :</p>
+<video controls width="66%">
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2224Z_Orages_2024-04-22.mp4" type="video/mp4">
 </video>
-
+<p><br></p>
 <h1 id="utilisation">Utilisation</h1>
 <p>Les principales étapes d'utilisation :</p>
 <ol>
@@ -207,37 +207,48 @@
 <p>Superpositions :</p>
 <ul>
 <li>Sélectionner le panneau 'Superpositions' pour ajouter de l'information au-dessus des couches affichées</li>
-<li>Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom.</li>
+<li>Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom</li>
 </ul>
 <h2 id="2-personnaliser-le-contenu-de-la-carte">2 - Personnaliser le contenu de la carte</h2>
 <p>Configurer les couches dans le panneau <code>Configuration des couches</code> et personnaliser la carte.</p>
 <p>Couches :</p>
 <ul>
-<li>Lorsque possible, changer la passe de modèle associée à la couche.</li>
-<li>Réorganiser les couches à l'aide des flèches vers le haut et vers le bas</li>
+<li>Lorsque possible, changer la passe de modèle associée à la couche</li>
+<li>Réorganiser les couches à l'aide des flèches vers le haut et vers le bas<ul>
 <li>Les flèches ne sont affichées que si plusieurs couches ont été ajoutées</li>
-<li>Modifier les couleurs des couches</li>
+</ul>
+</li>
+<li>Modifier les couleurs des couches<ul>
 <li>Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles</li>
+</ul>
+</li>
 <li>Ajuster l'opacité des couches</li>
-<li>Activer la visibilité des couches</li>
+<li>Activer la visibilité des couches<ul>
 <li>L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche</li>
+</ul>
+</li>
 </ul>
 <p>Temps :</p>
 <ul>
-<li>L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel.</li>
-<li>Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression.</li>
-<li>Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre.</li>
-<li>Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie.</li>
-<li>Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton <code>Heure locale</code>.</li>
-<li>La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches.</li>
-<li>En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle.</li>
+<li>L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel</li>
+<li>Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression</li>
+<li>Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre<ul>
+<li>Les options de lecture sont situées au-dessus du bouton de lecture/pause et permettent à l'utilisateur de jouer l'animation en boucle ou en sens inverse</li>
+<li>L'étendue temporelle des couches ajoutées sont périodiquement mises à jour automatiquement et les limites temporelles de la carte peuvent être mises à jour lorsque les pas de temps précédents ne sont plus disponibles</li>
+</ul>
+</li>
+<li>Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie</li>
+<li>Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton <code>Heure locale</code></li>
+<li>La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches</li>
+<li>En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle</li>
 </ul>
 <p>Carte :</p>
 <ul>
 <li>Agrandir et déplacer la carte sur votre zone d'intérêt</li>
 <li>Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte</li>
-<li>Pivoter la carte en appuyant sur les touches <em>alt-shift</em> et en faisant glisser la carte. Notez que les animations ne peuvent pas être générées lorsque la carte est pivotée.</li>
-<li>Sélectionner les légendes à afficher à l'aide du bouton <code>LÉGENDES</code>. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite.</li>
+<li>Pivoter la carte en appuyant sur les touches <em>alt-shift</em> et en faisant glisser la carte. Notez que les animations ne peuvent pas être générées lorsque la carte est pivotée</li>
+<li>Sélectionner les légendes à afficher à l'aide du bouton <code>LÉGENDES</code>. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite</li>
+<li>L'icône du globe en haut de la carte permet aux utilisateurs de passer d'une projection cartographique à l'autre, d'afficher des graticules et de modifier la couleur de la carte</li>
 </ul>
 <h2 id="3-configurer-lanimation">3 - Configurer l'animation</h2>
 <p>Configurer l'animation dans le panneau <code>Configuration de l'animation</code> :</p>
@@ -245,14 +256,21 @@
 <li>Fournir un titre d'animation personnalisé, si désiré</li>
 <li>Définir la vitesse de l'animation en images par seconde</li>
 <li>Choisir la carte de fond entre la carte de fond claire et foncée</li>
+<li>Le contour rouge montre ce qui sera inclus dans l'animation et les éléments blancs montrent l'espace utilisé par l'en-tête, le pied de page et l'horloge murale de l'animation<ul>
+<li>Un message d'avertissement s'affiche si les légendes affichées ne sont pas entièrement contenues dans la zone de sortie de l'animation</li>
+</ul>
+</li>
+<li>Différents formats de sortie peuvent être sélectionnés pour l'animation afin de répondre aux besoins de l'utilisateur et de permettre un partage facile sur les plateformes de médias sociaux</li>
 </ul>
 <h2 id="4-creer-et-partager-la-carte-et-lanimation">4 - Créer et partager la carte et l'animation</h2>
 <p>Après avoir cliqué sur le bouton <code>Créer l'animation</code> et que le processus de génération est terminé, le bouton <code>Télécharger l'animation</code> apparaîtra.</p>
 <p>Récupérer et partager le permalien avec le bouton <code>Partager</code> en haut à droite :</p>
 <ul>
 <li>Vous pouvez copier et sauvegarder le permalien pour une utilisation ultérieure</li>
-<li>Partager directement le permalien par courriel ou sur les médias sociaux</li>
+<li>Partager directement le permalien par courriel ou sur les médias sociaux<ul>
 <li>Pour partager l'animation sur les médias sociaux, le fichier doit d'abord être enregistré localement</li>
+</ul>
+</li>
 </ul>
 <p>Le <a href="https://fr.wikipedia.org/wiki/Permalien">permalien</a> vous permet d'ouvrir AniMet du SMC avec un ensemble déterminé de couches et leur configuration, ainsi qu'un zoom, une étendue et une taille de carte spécifiques. Les dimensions temporelles ne sont pas incluses dans le permalien en raison de la nature évolutive et de la disponibilité des données archivées.</p>
 <h1 id="informations-supplementaires">Informations supplémentaires</h1>
