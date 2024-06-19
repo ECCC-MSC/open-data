@@ -14,7 +14,7 @@ On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorolo
 
 Significant change:
 
-* The RAQDPS is now piloted by [GDPS](../nwp_gdps/readme_gdps_en.md)
+* The RAQDPS is now piloted by a 10km component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md)
 * Transition to GEM 5.2.1 
 * Emissions
      * Integration of wildfire emissions 
