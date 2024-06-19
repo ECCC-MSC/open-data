@@ -69,6 +69,7 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
+* [Current version of the Canadian Seasonal to Inter-annual Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CANSIPS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_cansips_e.pdf)
 * [Scientific article](https://journals.ametsoc.org/doi/abs/10.1175/MWR-D-12-00216.1)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CanSIPS_en.svg)

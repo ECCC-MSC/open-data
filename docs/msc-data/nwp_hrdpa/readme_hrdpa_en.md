@@ -36,6 +36,7 @@ The [metadata of the High Resolution Deterministic Precipitation Analysis is ava
 * [Actual version of the High Resolution Deterministic Precipitation Analysis](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_HRDPA_e.pdf)
 * [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/technote_capa_hrdpa_e.pdf)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPA_en.svg)
+* [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdpa_e.pdf)
 
 ## Changelog
 
