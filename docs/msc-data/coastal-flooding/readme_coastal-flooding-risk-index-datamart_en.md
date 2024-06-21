@@ -81,6 +81,7 @@ Note:
 | qspc | Quebec Storm Prediction Centre | qspc-s | Southern Quebec |
 
 (*) The Kitikmeot region includes the southern and eastern parts of Victoria Island and the adjacent mainland to the Boothia Peninsula, as well as King William Island and the southern part of Prince of Wales Island.
+
 (**) The Kivalliq region includes the part of the continent west of Hudson Bay, as well as Southampton Island and Coats Island.
 
 ## Support

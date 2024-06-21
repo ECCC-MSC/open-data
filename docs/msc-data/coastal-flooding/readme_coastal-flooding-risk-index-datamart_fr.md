@@ -82,6 +82,7 @@ de 12UTC ce jour à 12UTC le jour suivant.
 | qspc | Centre de prévision des intempéries du Québec | qspc-s | Sud du Québec |
 
 (*) La région Kitikmeot comprend les parties sud et est de l'île Victoria et la partie adjacente du continent jusqu'à la péninsule de Boothia, ainsi que l'île du Roi-Guillaume et la partie sud de l'île du Prince-de-Galles.
+
 (**) La région Kivalliq comprend la partie du continent située à l'ouest de la baie d'Hudson, ainsi que l'île Southampton et l'île Coats.
 
 ## Support

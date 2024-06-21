@@ -6,15 +6,15 @@
 
 # Données de submersion côtière
 
-L'indice de risque de submersion côtière est un produit polygonal géo-référencé et temporel émis par le SMC pour exprimer le risque, l'impact et la probabilité d'inondation côtière. Ce produit quotidien est destiné à fournir une notification anticipée, jusqu'à 7 jours, des inondations côtières dues aux marées astronomiques, aux ondes de tempête et aux impacts des vagues.
+L'indice de risque de submersion côtière est un produit polygonal géo-référencé et temporel émis par le SMC pour exprimer le risque, l'impact et la probabilité d'inondation côtière. Ce produit quotidien est destiné à fournir une notification anticipée, jusqu'à 7 jours, des submersions côtières dues aux marées astronomiques, aux ondes de tempête et aux impacts des vagues.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données expérimentales sont disponibles sur le serveur DD-ALpha, le site web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données d'indice de risque de submersion côtière en format GeoJSON disponibles sur le Datamart du SMC](readme_coastal-flooding-risk-index-datamart_fr.md) 
+* [Données d'indice de risque de submersion côtière en format GeoJSON disponibles sur DD-Alpha](readme_coastal-flooding-risk-index-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
 
