@@ -6,7 +6,7 @@
 
 # Données d'indice de risque de submersion côtière 
 
-Cette page décrit les données d'indice de risque de [Submersion côtière](readme_coastal-flooding_fr.md) en format GeoJSON disponibles sur le Datamart du SMC.
+Cette page décrit les données d'indice de risque de [submersion côtière](readme_coastal-flooding_fr.md) en format GeoJSON disponibles sur le Datamart du SMC.
 
 ## Adresse des données 
 
