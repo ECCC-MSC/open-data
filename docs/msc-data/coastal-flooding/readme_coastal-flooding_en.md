@@ -6,7 +6,7 @@
 
 # Coastal flooding data
 
-The Coastal Flooding Risk Index is a geo- and time-referenced, polygon product issued by MSC to articulate the coastal flooding risk, impact and probability. This daily product is intended to provide early notification, out to 7 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
+The Costal Flooding Risk Index GeoJSON is a geo and time referenced polygon product issued by MSC to articulate the coastal flooding risk, impact and probability. Files are produced daily by Storm Prediction Centres and intended to provide early notification, out to 5 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
 
 ## Access
 
