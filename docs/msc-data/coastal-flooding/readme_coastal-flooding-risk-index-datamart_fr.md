@@ -10,7 +10,7 @@ Cette page décrit les données d'indice de risque de [Submersion côtière](rea
 
 ## Adresse des données 
 
-Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.
 
@@ -34,8 +34,8 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CoastalFloodRiskIndex__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit l'indice de risque de submersion côtière
-* __SPC-code__ : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit. Voir la [liste des bureaux émetteurs](https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_fr/#notes)
-* __coverage-code__ : Région couverte par l'indice de risque de submersion côtière. Voir la [liste des régions couvertes](https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_fr/#notes)
+* __SPC-code__ : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit [aspc, nlwo, ospc, paspc, pspc, qspc]. Voir la liste des bureaux émetteurs ci-dessous
+* __coverage-code__ : Région couverte pour l'indice de risque de submersion côtière. Voir la liste des régions couvertes pour chaque bureau émetteur ci-dessous
 * __PTxxxH__ : Heure de validité 
      * __PTxxxHxxM__ : Heure de validité avec les minutes 
      * NOTE : le nom de fichier peut utiliser soit {PTxxxH} soit {PTxxxHxxM}, à la discrétion du générateur de données
@@ -46,13 +46,43 @@ où :
 
 Exemple :
 
-* 20240410T2200Z_MSC_CoastalFloodRiskIndex_ASPC_ASPC_PT014H00M_v1.json
+* 20240618T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json
 
-## Contenu du fichier
+Note:
 
-Les données sont générées 1 fois par jour et sont valides pour les 24 prochaines heures. _(à confirmer)_
+* Les données sont générées 1 fois par jour et sont valides pour les 24 prochaines heures. Plus spécifiquement, les données sont valides 
+de 12UTC ce jour à 12UTC le jour suivant.
 
-_Autres infos à ajouter ?_
+### Liste des bureaux émetteurs et des régions couvertes:
+
+| SPC-code | Nom du bureau émetteur | coverage-code | Région couverte |
+| ------ | ------ | ------ | ------ |
+| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc | Atlantique |
+| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-magdalen | Île de la Madeleine |
+| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-nb | Nouveau-Brunswick |
+| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-ns | Nouvelle-Écosse |
+| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-pei | Île-du-Prince-Edouard |
+| nlwo | Centre de prévision des intempéries de Terre-Neuve-et-Labrador | nlwo | Terre-Neuve-et-Labrador |
+| ospc | Centre de prévision des intempéries de l'Ontario | ospc | Ontario |
+| ospc | Centre de prévision des intempéries de l'Ontario | ospc-n | Nord de l'Ontario |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc | Arctique et Manitoba |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-baffin | Terre de Baffin |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-qujuqtaaluk | Nord de la Terre de Baffin |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-higharctic | Extrême-Arctique |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-kitikmeot | région administrative du Nunavut (*) |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-kivalliq | région administrative du Nunavut (**) |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-mb | Manitoba |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-nwt | Northwest Territories |
+| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-yt | Yukon Territory |
+| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc | Colombie-Britannique |
+| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc-n | Nord de la Colombie-Britannique |
+| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc-s | Sud de la Colombie-Britannique |
+| qspc | Centre de prévision des intempéries du Québec | qspc | Québec |
+| qspc | Centre de prévision des intempéries du Québec | qspc-n | Nord du Québec |
+| qspc | Centre de prévision des intempéries du Québec | qspc-s | Sud du Québec |
+
+(*) La région Kitikmeot comprend les parties sud et est de l'île Victoria et la partie adjacente du continent jusqu'à la péninsule de Boothia, ainsi que l'île du Roi-Guillaume et la partie sud de l'île du Prince-de-Galles.
+(**) La région Kivalliq comprend la partie du continent située à l'ouest de la baie d'Hudson, ainsi que l'île Southampton et l'île Coats.
 
 ## Support
 

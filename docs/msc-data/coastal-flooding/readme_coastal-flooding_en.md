@@ -12,7 +12,7 @@ The Coastal Flooding Risk Index is a geo- and time-referenced, polygon product i
 
 ### How to access the data
 
-This data is available on DD-Alpha, the [MSC Datamart](../../msc-datamart/readme_en.md) testing data repository :
+This data is available on the MSC testing data repository [DD-Alpha](../../msc-datamart/readme_en.md) :
 
 * [Coastal flooding risk index in GeoJSON format available on DD-Alpha](readme_coastal-flooding-risk-index-datamart_en.md) 
 
