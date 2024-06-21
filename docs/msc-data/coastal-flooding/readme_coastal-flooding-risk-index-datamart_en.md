@@ -6,7 +6,7 @@
 
 # Coastal flooding risk index data 
 
-This page describes the coastal flooding risk index data [Coastal Flooding](readme_coastal-flooding_en.md) in GeoJSON format available on the MSC Datamart.
+This page describes the [coastal flooding](readme_coastal-flooding_en.md) risk index data in GeoJSON format available on the MSC Datamart.
 
 ## Data address 
 
@@ -34,8 +34,8 @@ where :
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
 * __CoastalFloodRiskIndex__ : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.
-* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product. See the [list of issuing offices](https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/#notes)
-* __coverage-code__: Region covered by coastal flooding risk index. See [list of regions covered](https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/#notes)
+* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [aspc, nlwo, ospc, paspc, pspc, qspc]. See list of issuing offices below
+* __coverage-code__: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below
 * __PTxxxH__ : Validity time 
      * __PTxxxHxxM__: Validity time with minutes 
      * NOTE: the filename can use either {PTxxxH} or {PTxxxHxxM}, at the discretion of the data provider
@@ -46,13 +46,43 @@ where :
 
 Example:
 
-* 20240410T2200Z_MSC_CoastalFloodRiskIndex_ASPC_ASPC_PT014H00M_v1.json
+* 20240410T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json
 
-## File content
+Note:
 
-Date is produced once a day and is validated over the next 24 hours (to be confirmed).
+* Data is generated once per day and is valid for the next 24 hours, namely data is valid from 12UTC that day to 12Z the next day.
 
-_Other information to add ?_
+### List of issuing offices and regions covered:
+
+| SPC-code | Name of issuing office | coverage-code | Region covered |
+| ------ | ------ | ------ | ------ |
+| aspc | Atlantic Storm Prediction Center | aspc | Atlantic |
+| aspc | Atlantic Storm Prediction Centre | aspc-magdalen | Magdalen Island |
+| aspc | Atlantic Storm Prediction Centre | aspc-nb | New Brunswick |
+| aspc | Atlantic Storm Prediction Centre | aspc-ns | Nova Scotia |
+| aspc | Atlantic Storm Prediction Centre | aspc-pei | Prince Edward Island |
+| nlwo | Newfoundland and Labrador Weather Office | nlwo | Newfoundland and Labrador |
+| ospc | Ontario Storm Prediction Centre | ospc | Ontario |
+| ospc | Ontario Storm Prediction Centre | ospc-n | Northern Ontario |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc | Arctic and Manitoba |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-baffin | Baffin Island |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-qujuqtaaluk | Northern Baffin |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-higharctic | High Arctic |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-kitikmeot | Nunavut Administrative Region (*) |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-kivalliq | Nunavut Administrative Region (**) |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-mb | Manitoba |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-nwt | Northwest Territories |
+| paspc | Prairie and Arctic Storm Prediction Centre | paspc-yt | Yukon Territory |
+| pspc | Pacific and Yukon Storm Prediction Centre | pspc | British Columbia |
+| pspc | Pacific and Yukon Storm Prediction Centre | pspc-n | Northern British Columbia |
+| pspc | Pacific and Yukon Storm Prediction Centre | pspc-s | Southern British Columbia |
+| qspc | Quebec Storm Prediction Centre | qspc | Quebec |
+| qspc | Quebec Storm Prediction Centre | qspc-n | Northern Quebec |
+| qspc | Quebec Storm Prediction Centre | qspc-s | Southern Quebec |
+
+(*) The Kitikmeot region includes the southern and eastern parts of Victoria Island and the adjacent mainland to the Boothia Peninsula, as well as King William Island and the southern part of Prince of Wales Island.
+
+(**) The Kivalliq region includes the part of the continent west of Hudson Bay, as well as Southampton Island and Coats Island.
 
 ## Support
 

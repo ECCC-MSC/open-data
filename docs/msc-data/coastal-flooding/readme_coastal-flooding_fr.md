@@ -6,13 +6,13 @@
 
 # Données de submersion côtière
 
-L'indice de risque de submersion côtière est un produit polygonal géo-référencé et temporel émis par le SMC pour exprimer le risque, l'impact et la probabilité d'inondation côtière. Ce produit quotidien est destiné à fournir une notification anticipée, jusqu'à 7 jours, des inondations côtières dues aux marées astronomiques, aux ondes de tempête et aux impacts des vagues.
+L'indice de risque de submersion côtière est un produit polygonal géo-référencé et temporel émis par le SMC pour exprimer le risque, l'impact et la probabilité d'inondation côtière. Ce produit quotidien est destiné à fournir une notification anticipée, jusqu'à 7 jours, des submersions côtières dues aux marées astronomiques, aux ondes de tempête et aux impacts des vagues.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
 * [Données d'indice de risque de submersion côtière en format GeoJSON disponibles sur DD-Alpha](readme_coastal-flooding-risk-index-datamart_fr.md) 
 
@@ -36,7 +36,7 @@ Produits graphiques de l'aperçu du risque de submersion côtière: [https://hpf
 
 ## Documentation technique
 
-* [Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
+* [Produits graphiques de l'aperçu du risque de submersion côtière](https://hpfx.collab.science.gc.ca/docs/coastal_flooding_risk_outlooks/CoastalFloodingRiskOutlook_Specs_Graphical_1A_FR.pdf) 
 * [Prévisions et alertes de submersions côtières](https://www.canada.ca/fr/services/environnement/meteo/autres-services/prevision-alerte-submersions-cotieres.html)
 
 

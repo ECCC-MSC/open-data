@@ -12,7 +12,7 @@ The Coastal Flooding Risk Index is a geo- and time-referenced, polygon product i
 
 ### How to access the data
 
-This data is available on DD-Alpha, the [MSC Datamart](../../msc-datamart/readme_en.md) testing data repository :
+This experimental data is available on the MSC testing data repository [DD-Alpha](../../msc-datamart/readme_en.md) :
 
 * [Coastal flooding risk index in GeoJSON format available on DD-Alpha](readme_coastal-flooding-risk-index-datamart_en.md) 
 
@@ -36,5 +36,5 @@ Coastal Flooding Risk Outlooks graphical products: [https://hpfx.collab.science.
 
 ## Technical documentation
 
-* [Coastal Flooding Risk Outlooks graphical products](https://hpfx.collab.science.gc.ca/docs/CoastalFloodingRiskOutlook_Specs_Graphical_1A_EN.pdf) 
+* [Coastal Flooding Risk Outlooks graphical products](https://hpfx.collab.science.gc.ca/docs/coastal_flooding_risk_outlooks/CoastalFloodingRiskOutlook_Specs_Graphical_1A_EN.pdf) 
 * [Predicting and Alerting Coastal Flooding](https://www.canada.ca/en/services/environment/weather/other-services/coastal-flooding-prediction-alert.html)
