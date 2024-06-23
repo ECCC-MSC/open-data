@@ -48,9 +48,20 @@ Example:
 
 * 20240410T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
 
-Note:
+Notes:
 
-* Data is generated once per day and is valid for the next 24 hours, namely data is valid from 12UTC that day to 12Z the next day.
+* Thunderstorm outlooks are issued by storm prediction centres across Canada once per day at around 12:00 pm regional local time during the convective season each year. 
+
+* Forecasters may choose from four time periods for which the thunderstorm outlook is valid:
+
+     * Day 1 (PM) – Valid from 12pm to 12am on the same day it was issued. 
+     * Day 2 (AM) – Valid from 12am to 12pm on the day after it was issued. 
+     * Day 2 (PM) – Valid from 12pm to 12am on the day after it was issued. 
+     * Day 3 (full day) – Valid from 12am to 12am two days after it was issued. 
+
+* The forecaster could provide information for more than one time period by creating separate thunderstorm outlooks for each time period. 
+
+* Subsequent amendments to existing thunderstorm outlooks are issued on an as-needed basis during the day. The Thunderstorm outlook may not be updated with active severe weather alerts. Users are asked to check with the latest watches and warnings for the most current conditions.
 
 ### List of issuing offices and regions covered:
 

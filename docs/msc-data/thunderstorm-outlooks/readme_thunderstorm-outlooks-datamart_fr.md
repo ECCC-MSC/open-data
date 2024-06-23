@@ -48,9 +48,19 @@ Exemple :
 
 * 20240618T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
 
-Note:
+Notes:
 
-* Les données sont générées 1 fois par jour et sont valides pour les 24 prochaines heures. Plus spécifiquement, les données sont valides de 12UTC ce jour à 12UTC le jour suivant.
+* Les perspectives d'orages sont émises par les centres de prévision des intempéries du Canada une fois par jour, vers midi, heure locale régionale, pendant la saison de convection chaque année. 
+
+* Les prévisionnistes peuvent choisir parmi quatre périodes pour lesquelles le bulletin d'orage est valable.
+     * Jour 1 (PM) - Valable de midi à minuit le jour même de son émission.
+     * Jour 2 (AM) - Valable de minuit à midi le jour suivant son émission.
+     * Jour 2 (PM) - Valable de midi à minuit le jour suivant son émission.
+     * Jour 3 (journée complète) - Valable de minuit à minuit deux jours après son émission.
+
+* Le prévisionniste pourrait fournir des informations pour plus d'une période en créant des perspectives d'orage distinctes pour chaque période.
+
+* Les modifications ultérieures aux prévisions d'orages existantes sont émises selon les besoins au cours de la journée. Les perspectives d'orages peuvent ne pas être mises à jour en fonction des alertes de temps violent en cours. Les usagers sont invités à consulter les dernières veilles et alertes pour connaître les conditions les plus récentes.
 
 ### Liste des bureaux émetteurs et des régions couvertes:
 
