@@ -27,7 +27,7 @@ Les données sur grille lat-lon sont accessibles à l’adresse suivante :
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-* __hhh__ : Heure de prévision [001, 002, 003, ..., 144]
+* __hhh__ : Heure de prévision [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
@@ -62,7 +62,7 @@ où :
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 144]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemple de nom de fichier :
