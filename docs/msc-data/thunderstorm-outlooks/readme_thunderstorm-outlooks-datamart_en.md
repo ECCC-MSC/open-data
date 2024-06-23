@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [thunderstorm-outlooks](readme_thunderstorm-outlooks_en.md) > Thunderstorm outlooks on MSC Datamart
+[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Thunderstorm Outlooks](readme_thunderstorm-outlooks_en.md) > Thunderstorm outlooks on MSC Datamart
 
 # Thunderstorm outlooks data 
 
