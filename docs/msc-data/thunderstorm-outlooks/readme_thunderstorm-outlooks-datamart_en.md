@@ -48,7 +48,7 @@ Example:
 
 * 20240410T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
 
-Notes:
+**Notes**:
 
 * Thunderstorm outlooks are issued by storm prediction centres across Canada once per day at around 12:00 pm regional local time during the convective season each year. 
 
