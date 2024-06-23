@@ -48,7 +48,7 @@ Exemple :
 
 * 20240618T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
 
-Notes:
+**Notes**:
 
 * Les perspectives d'orages sont émises par les centres de prévision des intempéries du Canada une fois par jour, vers midi, heure locale régionale, pendant la saison de convection chaque année. 
 
