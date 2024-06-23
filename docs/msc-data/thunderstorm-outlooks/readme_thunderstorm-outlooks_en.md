@@ -14,7 +14,7 @@ The Thunderstorm Outlook data is a graphical or GeoJSON forecast product, which 
 
 This experimental data is available on the MSC testing data repository [DD-Alpha](../../msc-datamart/readme_en.md) :
 
-* [Thunderstorm outlooks in GeoJSON format available on DD-Alpha](readme_thunderstorm-outlooks_datamart_en.md) 
+* [Thunderstorm outlooks in GeoJSON format available on DD-Alpha](readme_thunderstorm-outlooks-datamart_en.md) 
 
 An [Overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available. 
 
