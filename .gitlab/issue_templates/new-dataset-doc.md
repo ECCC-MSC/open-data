@@ -14,6 +14,7 @@ Checklist for creating new or updating existing MSC Open Data dataset pages.
 * Optional content
   * * [ ] (C.1) Configure dataset-specific interactive map, if applicable
   * * [ ] (C.2) Add the NWP model dependancy diagram via [a new CMDI ticket](https://gitlab.science.gc.ca/CMDI/dependencyGraphs) (contact @parentr)
+  * * [ ] (C.3) Add links to the technical documents, such as the factsheet (if any), in the `Technical documentation` section
 * Validations
   * * [ ] (D.1) Ensure all new content is available in English and French
   * * [ ] (D.2) Confirm links to discovery metadata on open.canada.ca and WMO WIS2 are up to date (contact: @bruno.fang)
