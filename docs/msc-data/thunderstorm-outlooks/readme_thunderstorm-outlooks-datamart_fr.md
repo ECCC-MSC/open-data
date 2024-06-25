@@ -66,33 +66,11 @@ Exemple :
 
 | SPC-code | Nom du bureau émetteur | coverage-code | Région couverte |
 | ------ | ------ | ------ | ------ |
-| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc | Atlantique |
-| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-magdalen | Île de la Madeleine |
-| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-nb | Nouveau-Brunswick |
-| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-ns | Nouvelle-Écosse |
-| aspc | Centre de prévision des intempéries de la région de l'Atlantique | aspc-pei | Île-du-Prince-Edouard |
-| nlwo | Centre de prévision des intempéries de Terre-Neuve-et-Labrador | nlwo | Terre-Neuve-et-Labrador |
-| ospc | Centre de prévision des intempéries de l'Ontario | ospc | Ontario |
-| ospc | Centre de prévision des intempéries de l'Ontario | ospc-n | Nord de l'Ontario |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc | Arctique et Manitoba |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-baffin | Terre de Baffin |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-qujuqtaaluk | Nord de la Terre de Baffin |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-higharctic | Extrême-Arctique |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-kitikmeot | région administrative du Nunavut (*) |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-kivalliq | région administrative du Nunavut (**) |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-mb | Manitoba |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-nwt | Northwest Territories |
-| paspc | Centre de prévision des intempéries des Prairies et de l'Arctique | paspc-yt | Yukon Territory |
-| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc | Colombie-Britannique |
-| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc-n | Nord de la Colombie-Britannique |
-| pspc | Centre de prévision des intempéries de la région du Pacfique et du Yukon | pspc-s | Sud de la Colombie-Britannique |
-| qspc | Centre de prévision des intempéries du Québec | qspc | Québec |
-| qspc | Centre de prévision des intempéries du Québec | qspc-n | Nord du Québec |
-| qspc | Centre de prévision des intempéries du Québec | qspc-s | Sud du Québec |
-
-(*) La région Kitikmeot comprend les parties sud et est de l'île Victoria et la partie adjacente du continent jusqu'à la péninsule de Boothia, ainsi que l'île du Roi-Guillaume et la partie sud de l'île du Prince-de-Galles.
-
-(**) La région Kivalliq comprend la partie du continent située à l'ouest de la baie d'Hudson, ainsi que l'île Southampton et l'île Coats.
+| ASPC | Centre de prévision des intempéries de la région de l'Atlantique | Atlantic | Atlantique |
+| OSPC | Centre de prévision des intempéries de l'Ontario | ON | Ontario |
+| PASPC| Centre de prévision des intempéries des Prairies et de l'Arctique | Prairies | Prairies |
+| PSPC | Centre de prévision des intempéries de la région du Pacfique et du Yukon | BC-YT | Colombie-Britannique et Territoire du Yukon |
+| QSPC | Centre de prévision des intempéries du Québec | QC | Québec |
 
 ## Support
 
