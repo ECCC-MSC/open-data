@@ -42,6 +42,16 @@ Est :
 * GOES-Est Couleur naturelle [1 km], ID: `GOES-East_1km_NaturalColor`
 * GOES-Est IR de nuit [2 km], ID: `GOES-East_2km_NightIR`
 * GOES-Est Microphysique de nuit [2 km], ID: `GOES-East_2km_NightMicrophysics`
+* GOES-Est Température des feux/SWIR [1 km], ID: `GOES-East_1km_FireTemperature-SWIR`
+* GOES-Est Cendre [2 km], ID: `GOES-East_2km_Ash`
+* GOES-Est SO2 [2 km], ID: `GOES-East_2km_SO2`
+* GOES-Est Poussière [2 km], ID: `GOES-East_2km_Dust`
+* GOES-Est Type de nuage de jour/Microphysique de nuit [1 km], ID: `GOES-East_1km_DayCloudType-NightMicrophysics`
+* GOES-Est Visibilité de jour/IR de nuit [1 km], ID: `GOES-East_1km_DayVis-NightIR`
+* GOES-Est Sandwich visible et IR/Microphysique de nuit et IR [1 km], ID: `GOES-East_1km_VisibleIRSandwich-NightMicrophysicsIR`
+* GOES-Est Neige-brouillard/Microphysique de nuit [1 km], ID: `GOES-East_1km_SnowFog-NightMicrophysics`
+* GOES-Est Fumée sur Canal-1 ABI/SWIR [1 km], ID: `GOES-East_1km_SmokeABIband1-SWIR`
+* GOES-Est Détection de feux de jour /SWIR [1 km], ID: `GOES-East_1km_DayLandCloudFire-SWIR`
 
 Ouest :
 
@@ -49,6 +59,16 @@ Ouest :
 * GOES-Ouest Couleur naturelle [1 km], ID: `GOES-West_1km_NaturalColor`
 * GOES-Ouest IR de nuit [2 km], ID: `GOES-West_2km_NightIR`
 * GOES-Ouest Microphysique de nuit [2 km], ID: `GOES-West_2km_NightMicrophysics`
+* GOES-Ouest Température des feux/SWIR [1 km], ID: `GOES-West_1km_FireTemperature-SWIR`
+* GOES-Ouest Cendre [2 km], ID: `GOES-West_2km_Ash`
+* GOES-Ouest SO2 [2 km], ID: `GOES-West_2km_SO2`
+* GOES-Ouest Poussière [2 km], ID: `GOES-West_2km_Dust`
+* GOES-Ouest Type de nuage de jour/Microphysique de nuit [1 km], ID: `GOES-West_1km_DayCloudType-NightMicrophysics`
+* GOES-Ouest Visibilité de jour/IR de nuit [1 km], ID: `GOES-West_1km_DayVis-NightIR`
+* GOES-Ouest Sandwich visible et IR/Microphysique de nuit et IR [1 km], ID: `GOES-West_1km_VisibleIRSandwich-NightMicrophysicsIR`
+* GOES-Ouest Neige-brouillard/Microphysique de nuit [1 km], ID: `GOES-West_1km_SnowFog-NightMicrophysics`
+* GOES-Ouest Fumée sur Canal-1 ABI/SWIR [1 km], ID: `GOES-West_1km_SmokeABIband1-SWIR`
+* GOES-Ouest Détection de feux de jour /SWIR [1 km], ID: `GOES-West_1km_DayLandCloudFire-SWIR`
 
 ### Conseils d'utilisation
 
