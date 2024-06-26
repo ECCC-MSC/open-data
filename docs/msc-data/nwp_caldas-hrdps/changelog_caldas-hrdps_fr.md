@@ -14,11 +14,9 @@ Le mardi 11 juin 2024, à compter de la passe de 1200 UTC, le Centre météorolo
 
 Principaux changements :
 
-* Amélioration de la mise à l'échelle des données IMS
-* Amélioration de la séparation entre les phases de précipitation
-* Utilisation des données d'humidité relative du SHRPD plutôt que d'effectuer les calculs dans SCanADS
-* Utilisation des forçages du SHRPD pour la récupération de la température de la surface (Tskin)
-* Correction de biais froid pendant l’été à la surface de l'eau
+* Correction de la densité maximale de la neige (rhomax)
+* Correction de la représentation du gel et du dégel du contenu en eau du sol
+* Amélioration de la partition de la phase de précipitation
  
 La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
