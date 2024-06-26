@@ -44,6 +44,16 @@ East :
 * GOES-East Natural Color [1 km], ID: `GOES-East_1km_NaturalColor`
 * GOES-East Night IR [2 km], ID: `GOES-East_2km_NightIR`
 * GOES-East Night Microphysics [2 km], ID: `GOES-East_2km_NightMicrophysics`
+* GOES-East Fire Temperature/SWIR Fires [1 km], ID: `GOES-East_1km_FireTemperature-SWIR`
+* GOES-East Ash [2 km], ID: `GOES-East_2km_Ash`
+* GOES-East SO2 [2 km], ID: `GOES-East_2km_SO2`
+* GOES-East Dust [2 km], ID: `GOES-East_2km_Dust`
+* GOES-East Day Cloud Type/Night Microphysics [1 km], ID: `GOES-East_1km_DayCloudType-NightMicrophysics`
+* GOES-East Day visibility/Night IR [1 km], ID: `GOES-East_1km_DayVis-NightIR`
+* GOES-East Visible IR Sandwich/Night Microphysics IR [1 km], ID: `GOES-East_1km_VisibleIRSandwich-NightMicrophysicsIR`
+* GOES-East Snow-Fog/Night Microphysics [1 km], ID: `GOES-East_1km_SnowFog-NightMicrophysics`
+* GOES-East Smoke ABI - band1/SWIR [1 km], ID: `GOES-East_1km_SmokeABIband1-SWIR`
+* GOES-East Day Land Cloud Fire /SWIR [1 km], ID: `GOES-East_1km_DayLandCloudFire-SWIR`
 
 West :
 
@@ -51,6 +61,16 @@ West :
 * GOES-West Natural Color [1 km], ID: `GOES-West_1km_NaturalColor`
 * GOES-West Night IR [2 km], ID: `GOES-West_2km_NightIR`
 * GOES-West Night Microphysics [2 km], ID: `GOES-West_2km_NightMicrophysics`
+* GOES-West Fire Temperature/SWIR Fires [1 km], ID: `GOES-West_1km_FireTemperature-SWIR`
+* GOES-West Ash [2 km], ID: `GOES-West_2km_Ash`
+* GOES-West SO2 [2 km], ID: `GOES-West_2km_SO2`
+* GOES-West Dust [2 km], ID: `GOES-West_2km_Dust`
+* GOES-West Day Cloud Type/Night Microphysics [1 km], ID: `GOES-West_1km_DayCloudType-NightMicrophysics`
+* GOES-West Day visibility/Night IR [1 km], ID: `GOES-West_1km_DayVis-NightIR`
+* GOES-West Visible IR Sandwich/Night Microphysics IR [1 km], ID: `GOES-West_1km_VisibleIRSandwich-NightMicrophysicsIR`
+* GOES-West Snow-Fog/Night Microphysics [1 km], ID: `GOES-West_1km_SnowFog-NightMicrophysics`
+* GOES-West Smoke ABI - band1/SWIR [1 km], ID: `GOES-West_1km_SmokeABIband1-SWIR`
+* GOES-West Day Land Cloud Fire /SWIR [1 km], ID: `GOES-West_1km_DayLandCloudFire-SWIR`
 
 ### Usage tips
 
