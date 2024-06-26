@@ -14,11 +14,9 @@ On Tuesday June 11, 2024, starting with the 1200 UTC run, the Canadian Meteorolo
 
 Significant changes:
 
-* Improved IMS Data Upscaling
-* Enhanced Precipitation-Phase Partitioning
-* Utilize relative humidity (HR) data from HRDPS rather than performing calculations within CaLDAS-NSRPS
-* Utilize HRDPS forcings for the skin temperature (Tskin) retrieval
-* Addressing Summer Cold Biases in Water Surfaces
+* Correction to snow maximum density (rhomax)
+* Correction to freeze and thaw of the soil volumetric water content representation
+* Enhanced precipitation-phase partitioning 
 
 A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
