@@ -34,7 +34,7 @@ where :
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
 * __CoastalFloodRiskIndex__ : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.
-* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [aspc, nlwo, ospc, paspc, pspc, qspc]. See list of issuing offices below
+* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. See list of issuing offices below
 * __coverage-code__: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below
 * __PTxxxH__ : Validity time 
      * __PTxxxHxxM__: Validity time with minutes 
@@ -61,7 +61,7 @@ Notes:
 | ASPC | Atlantic Storm Prediction Center | ASPC | Atlantic |
 | NLWO | Newfoundland and Labrador Weather Office | NLWO | Newfoundland and Labrador |
 | OSPC | Ontario Storm Prediction Centre | OSPC | Ontario |
-| PASPC | Prairie and Arctic Storm Prediction Centre | PASPC | Arctic and Prairie |
+| PASPC | Prairie and Arctic Storm Prediction Centre | PASPC | Arctic and Prairies |
 | PSPC | Pacific and Yukon Storm Prediction Centre | PSPC | West Coast (Pacific and Yukon) |
 | QSPC | Quebec Storm Prediction Centre | QSPC | Quebec |
 

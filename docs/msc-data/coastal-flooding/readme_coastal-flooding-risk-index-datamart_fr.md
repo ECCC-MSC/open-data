@@ -61,7 +61,7 @@ Notes:
 | ASPC | Centre de prévision des intempéries de la région de l'Atlantique | ASPC| Atlantique |
 | NLWO | Centre de prévision des intempéries de Terre-Neuve-et-Labrador | NLWO | Terre-Neuve-et-Labrador |
 | OSPC | Centre de prévision des intempéries de l'Ontario | OSPC | Ontario |
-| PASPC | Centre de prévision des intempéries des Prairies et de l'Arctique | PASPC | Praries et Arctique |
+| PASPC | Centre de prévision des intempéries des Prairies et de l'Arctique | PASPC | Prairies et Arctique |
 | PSPC | Centre de prévision des intempéries de la région du Pacfique et du Yukon | PSPC | Pacifique et Yukon |
 | QSPC | Centre de prévision des intempéries du Québec | QSPC | Québec |
 
