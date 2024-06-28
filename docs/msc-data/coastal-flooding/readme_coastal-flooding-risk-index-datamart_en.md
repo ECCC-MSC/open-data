@@ -48,41 +48,22 @@ Example:
 
 * 20240410T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json
 
-Note:
+Notes:
 
 * Data is generated once per day and is valid for the next 24 hours, namely data is valid from 12UTC that day to 12Z the next day.
+
+* Files may be generated containing no information in the absence of coastal flooding risk.
 
 ### List of issuing offices and regions covered:
 
 | SPC-code | Name of issuing office | coverage-code | Region covered |
 | ------ | ------ | ------ | ------ |
-| aspc | Atlantic Storm Prediction Center | aspc | Atlantic |
-| aspc | Atlantic Storm Prediction Centre | aspc-magdalen | Magdalen Island |
-| aspc | Atlantic Storm Prediction Centre | aspc-nb | New Brunswick |
-| aspc | Atlantic Storm Prediction Centre | aspc-ns | Nova Scotia |
-| aspc | Atlantic Storm Prediction Centre | aspc-pei | Prince Edward Island |
-| nlwo | Newfoundland and Labrador Weather Office | nlwo | Newfoundland and Labrador |
-| ospc | Ontario Storm Prediction Centre | ospc | Ontario |
-| ospc | Ontario Storm Prediction Centre | ospc-n | Northern Ontario |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc | Arctic and Manitoba |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-baffin | Baffin Island |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-qujuqtaaluk | Northern Baffin |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-higharctic | High Arctic |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-kitikmeot | Nunavut Administrative Region (*) |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-kivalliq | Nunavut Administrative Region (**) |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-mb | Manitoba |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-nwt | Northwest Territories |
-| paspc | Prairie and Arctic Storm Prediction Centre | paspc-yt | Yukon Territory |
-| pspc | Pacific and Yukon Storm Prediction Centre | pspc | British Columbia |
-| pspc | Pacific and Yukon Storm Prediction Centre | pspc-n | Northern British Columbia |
-| pspc | Pacific and Yukon Storm Prediction Centre | pspc-s | Southern British Columbia |
-| qspc | Quebec Storm Prediction Centre | qspc | Quebec |
-| qspc | Quebec Storm Prediction Centre | qspc-n | Northern Quebec |
-| qspc | Quebec Storm Prediction Centre | qspc-s | Southern Quebec |
-
-(*) The Kitikmeot region includes the southern and eastern parts of Victoria Island and the adjacent mainland to the Boothia Peninsula, as well as King William Island and the southern part of Prince of Wales Island.
-
-(**) The Kivalliq region includes the part of the continent west of Hudson Bay, as well as Southampton Island and Coats Island.
+| ASPC | Atlantic Storm Prediction Center | ASPC | Atlantic |
+| NLWO | Newfoundland and Labrador Weather Office | NLWO | Newfoundland and Labrador |
+| OSPC | Ontario Storm Prediction Centre | OSPC | Ontario |
+| PASPC | Prairie and Arctic Storm Prediction Centre | PASPC | Arctic and Prairie |
+| PSPC | Pacific and Yukon Storm Prediction Centre | PSPC | West Coast (Pacific and Yukon) |
+| QSPC | Quebec Storm Prediction Centre | QSPC | Quebec |
 
 ## Support
 
