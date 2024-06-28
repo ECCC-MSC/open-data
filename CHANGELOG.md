@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.4
+
+* date: 2024-06-28
+* announcements:
+    * Not announced
+* new content:
+    * Thunderstorm outlooks
+    * Coastal flooding risk index
+* improvements:
+    * None
+* bug fixes: 
+    * Typos 
+
 ## 2.6.3
 
 * date: 2024-06-17
