@@ -34,7 +34,7 @@ where :
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
 * __ThunderstormOutlook__ : Constant string indicating the name of the product contained in the files, i.e. thunderstorm outlook
-* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [aspc, nlwo, ospc, paspc, pspc, qspc]. See list of issuing offices below
+* __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. See list of issuing offices below
 * __coverage-code__: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below
 * __PTxxxH__ : Validity time 
      * __PTxxxHxxM__: Validity time with minutes 
@@ -46,7 +46,7 @@ where :
 
 Example:
 
-* 20240410T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
+*  20240627T1900Z_MSC_ThunderstormOutlook_PASPC_PRAIRIES_PT036H00M_v1.json
 
 **Notes**:
 
@@ -63,15 +63,18 @@ Example:
 
 * Subsequent amendments to existing thunderstorm outlooks are issued on an as-needed basis during the day. The Thunderstorm outlook may not be updated with active severe weather alerts. Users are asked to check with the latest watches and warnings for the most current conditions.
 
+* Files may be generated containing no information in the absence of thunderstorm outlook.
+
 ### List of issuing offices and regions covered:
 
 | SPC-code | Name of issuing office | coverage-code | Region covered |
 | ------ | ------ | ------ | ------ |
-| ASPC | Atlantic Storm Prediction Center | Atlantic | Atlantic |
+| ASPC | Atlantic Storm Prediction Center | ATLANTIC | Atlantic |
 | OSPC | Ontario Storm Prediction Centre | ON | Ontario |
-| PASPC | Prairie and Arctic Storm Prediction Centre | Prairies | Prairies |
+| PASPC | Prairie and Arctic Storm Prediction Centre | PRAIRIES | Prairies |
+| PASPC | Prairie and Arctic Storm Prediction Centre | MK | Mackenzie river |
 | PSPC | Pacific and Yukon Storm Prediction Centre | BC-YT | British Columbia and Yukon Territory |
-| QSPC | Quebec Storm Prediction Centre | QV | Quebec |
+| QSPC | Quebec Storm Prediction Centre | QC | Quebec |
 
 ## Support
 

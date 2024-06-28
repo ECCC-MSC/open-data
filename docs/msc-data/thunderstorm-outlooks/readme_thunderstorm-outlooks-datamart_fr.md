@@ -34,7 +34,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __ThunderstormOutlook__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit le potentiel orageux
-* __SPC-code__ : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit [aspc, nlwo, ospc, paspc, pspc, qspc]. Voir la liste des bureaux émetteurs ci-dessous
+* __SPC-code__ : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit [ASPC, NLWO, OSPC, PASPC, OSPC, PASPC, QSPC]. Voir la liste des bureaux émetteurs ci-dessous
 * __coverage-code__ : Région couverte pour l'indice de risque de submersion côtière. Voir la liste des régions couvertes pour chaque bureau émetteur ci-dessous
 * __PTxxxH__ : Heure de validité 
      * __PTxxxHxxM__ : Heure de validité avec les minutes 
@@ -46,7 +46,7 @@ où :
 
 Exemple :
 
-* 20240618T2200Z_MSC_ThunderstormOutlook_pspc_bc-yt_PT014H00M_v1.json
+* 20240627T1900Z_MSC_ThunderstormOutlook_PASPC_PRAIRIES_PT036H00M_v1.json
 
 **Notes**:
 
@@ -62,13 +62,16 @@ Exemple :
 
 * Les modifications ultérieures aux prévisions d'orages existantes sont émises selon les besoins au cours de la journée. Les perspectives d'orages peuvent ne pas être mises à jour en fonction des alertes de temps violent en cours. Les usagers sont invités à consulter les dernières veilles et alertes pour connaître les conditions les plus récentes.
 
+* Des fichiers peuvent être générés et ne contenir aucune information en cas d'abscence de potentiel orageux.
+
 ### Liste des bureaux émetteurs et des régions couvertes:
 
 | SPC-code | Nom du bureau émetteur | coverage-code | Région couverte |
 | ------ | ------ | ------ | ------ |
-| ASPC | Centre de prévision des intempéries de la région de l'Atlantique | Atlantic | Atlantique |
+| ASPC | Centre de prévision des intempéries de la région de l'Atlantique | ATLANTIC | Atlantique |
 | OSPC | Centre de prévision des intempéries de l'Ontario | ON | Ontario |
-| PASPC| Centre de prévision des intempéries des Prairies et de l'Arctique | Prairies | Prairies |
+| PASPC| Centre de prévision des intempéries des Prairies et de l'Arctique | PRAIRIES | Prairies |
+| PASPC| Centre de prévision des intempéries des Prairies et de l'Arctique | MK | Rivière Mackenzie |
 | PSPC | Centre de prévision des intempéries de la région du Pacfique et du Yukon | BC-YT | Colombie-Britannique et Territoire du Yukon |
 | QSPC | Centre de prévision des intempéries du Québec | QC | Québec |
 
