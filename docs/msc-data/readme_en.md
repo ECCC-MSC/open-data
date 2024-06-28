@@ -23,6 +23,8 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
 * [Current marine conditions and 7-days forecast for marine regions](marine-weather/readme_marine-weather_en.md)
 * [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
+* [Thunderstorm outlooks](thunderstorm-outlooks/readme_thunderstorm-outlooks_en.md)
+* [Coastal flooding risk index](coastal-flooding/readme_coastal-flooding_en.md)
 * [Hurricanes](hurricanes/readme_hurricanes_en.md)
 
 ## Observations
