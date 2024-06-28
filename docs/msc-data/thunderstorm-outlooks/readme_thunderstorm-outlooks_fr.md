@@ -1,4 +1,4 @@
-[In English](readme_coastal-flooding_en.md)
+[In English](readme_thunderstorm-outlooks_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -32,7 +32,7 @@ A venir
 
 ### Produits
 
-Produits graphiques de l'aperçu du risque de submersion côtière: [https://hpfx.collab.science.gc.ca/YYYYMMDD/thunderstorm_outlooks/](https://hpfx.collab.science.gc.ca)
+Produits graphiques du potentiel orageux : [https://hpfx.collab.science.gc.ca/YYYYMMDD/thunderstorm_outlooks/](https://hpfx.collab.science.gc.ca)
 
 ## Documentation technique
 
