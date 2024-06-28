@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme gdps datamart alpha en - MSC Open Data / Données ouvertes du SMC</title>
+        <title>Readme thunderstorm outlooks datamart fr - MSC Open Data / Données ouvertes du SMC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -122,21 +122,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#experimental-grib2-weather-elements-on-the-grid-data-based-on-the-global-deterministic-prediction-system-gdps" class="nav-link">Experimental GRIB2 Weather Elements on the Grid data based on the Global Deterministic Prediction System (GDPS)</a>
+            <li class="nav-item" data-level="1"><a href="#donnees-de-potentiel-orageux" class="nav-link">Données de potentiel orageux</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#data-address" class="nav-link">Data Address</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid" class="nav-link">Technical specification of the grid</a>
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#nomenclature-of-file-names" class="nav-link">Nomenclature of file names</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -144,7 +136,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -155,91 +147,123 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_gdps-datamart-alpha_fr/">In French</a></p>
+<p><a href="../readme_thunderstorm-outlooks-datamart_en/">In English</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_gdps_en/">SGPD</a> &gt; GDPS Weather Elements on the Grid on DD-Alpha</p>
-<h1 id="experimental-grib2-weather-elements-on-the-grid-data-based-on-the-global-deterministic-prediction-system-gdps">Experimental GRIB2 Weather Elements on the Grid data based on the Global Deterministic Prediction System (GDPS)</h1>
-<p>For nearly three decades, the <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html">SCRIBE system</a> has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.</p>
-<p>The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the understanding of weather forecasts, and and may require frequent interventions from forecasters.</p>
-<p>As part of a larger modernization plan for the Meteorological Service of Canada (MSC), in which the role of the forecaster is evolving, the goal is to replace the Scribe matrices, <a href="https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/">available on the MSC Datamart</a>, and their limited number of points across Canada with <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf">Weather Elements on the Grid</a> ("WEonG").</p>
-<p>Weather Elements on Grid (WEonG) based on the Global Deterministic Prediction System (GDPS) is a post-processing system designed to compute the weather elements required by different forecast programs (public, marine, aviation, air quality, etc.). This system amalgamates numerical and post-processed data using various diagnostic approaches. Hourly concepts are produced from different algorithms using outputs from the <a href="../readme_gdps_en.md">Global Deterministic Prediction System (GDPS)</a>.</p>
-<h2 id="data-address">Data Address</h2>
-<p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
-<p>The rotated lat-lon grid data can be accessed at the following address: </p>
-<p><a href="https://dd.alpha.meteo.gc.ca/model_gem_global/15km/">https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}/{hhh}/</a></p>
-<p>where :</p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_thunderstorm-outlooks_fr/">Potentiel orageux</a> &gt; Données de potentiel orageux sur le Datamart du SMC</p>
+<h1 id="donnees-de-potentiel-orageux">Données de potentiel orageux</h1>
+<p>Cette page décrit les données de <a href="../readme_thunderstorm-outlooks_fr/">potentiel orageux</a> en format GeoJSON disponibles sur le Datamart du SMC.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.</p>
+<p>Les données d'indice de risque de submersion côtière se trouvent à l'adresse :</p>
+<p><a href="https://dd.alpha.meteo.gc.ca/thunderstorm-outlooks">https://dd.alpha.meteo.gc.ca/thunderstorm-outlooks/</a></p>
+<p>Un historique de 7 jours est conservé dans ce répertoire.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>Les noms de fichiers suivent la nomenclature ci-dessous :</p>
+<p><code>{YYYYMMDD}T{HHmm}Z_MSC_ThunderstormOutlook_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json</code></p>
+<p>où :</p>
 <ul>
-<li><strong>HH</strong> : Model run start, in UTC [00, 12]</li>
-<li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]</li>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour de l'émission des données</li>
+<li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
+<li><strong>HHmm</strong> : Heure et minute à laquelle les données sont émises</li>
+<li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>ThunderstormOutlook</strong> : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit le potentiel orageux</li>
+<li><strong>SPC-code</strong> : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit [ASPC, NLWO, OSPC, PASPC, OSPC, PASPC, QSPC]. Voir la liste des bureaux émetteurs ci-dessous</li>
+<li><strong>coverage-code</strong> : Région couverte pour l'indice de risque de submersion côtière. Voir la liste des régions couvertes pour chaque bureau émetteur ci-dessous</li>
+<li><strong>PTxxxH</strong> : Heure de validité <ul>
+<li><strong>PTxxxHxxM</strong> : Heure de validité avec les minutes </li>
+<li>NOTE : le nom de fichier peut utiliser soit {PTxxxH} soit {PTxxxHxxM}, à la discrétion du générateur de données</li>
 </ul>
-<p>A 24-hour history is kept in this directory.</p>
-<p>Note: Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</p>
-<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
-<p>Values given to the parameters of the lat-lon grid:</p>
+</li>
+<li><strong>version-id</strong> : <ul>
+<li>v1 pour la version originale</li>
+<li>v2 pour la nouvelle version après un amendement, v3 pour un autre amendement, v4 et ainsi de suite</li>
+</ul>
+</li>
+<li><strong>json</strong> : Chaîne de caractères constante indiquant que le format est GeoJSON</li>
+</ul>
+<p>Exemple :</p>
+<ul>
+<li>20240627T1900Z_MSC_ThunderstormOutlook_PASPC_PRAIRIES_PT036H00M_v1.json</li>
+</ul>
+<p><strong>Notes</strong>:</p>
+<ul>
+<li>
+<p>Les perspectives d'orages sont émises par les centres de prévision des intempéries du Canada une fois par jour, vers midi, heure locale régionale, pendant la saison de convection chaque année. </p>
+</li>
+<li>
+<p>Les prévisionnistes peuvent choisir parmi quatre périodes pour lesquelles le bulletin d'orage est valable.</p>
+<ul>
+<li>Jour 1 (PM) - Valable de midi à minuit le jour même de son émission.</li>
+<li>Jour 2 (AM) - Valable de minuit à midi le jour suivant son émission.</li>
+<li>Jour 2 (PM) - Valable de midi à minuit le jour suivant son émission.</li>
+<li>Jour 3 (journée complète) - Valable de minuit à minuit deux jours après son émission.</li>
+</ul>
+</li>
+<li>
+<p>Le prévisionniste pourrait fournir des informations pour plus d'une période en créant des perspectives d'orage distinctes pour chaque période.</p>
+</li>
+<li>
+<p>Les modifications ultérieures aux prévisions d'orages existantes sont émises selon les besoins au cours de la journée. Les perspectives d'orages peuvent ne pas être mises à jour en fonction des alertes de temps violent en cours. Les usagers sont invités à consulter les dernières veilles et alertes pour connaître les conditions les plus récentes.</p>
+</li>
+<li>
+<p>Des fichiers peuvent être générés et ne contenir aucune information en cas d'abscence de potentiel orageux.</p>
+</li>
+</ul>
+<h3 id="liste-des-bureaux-emetteurs-et-des-regions-couvertes">Liste des bureaux émetteurs et des régions couvertes:</h3>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Value</th>
+<th>SPC-code</th>
+<th>Nom du bureau émetteur</th>
+<th>coverage-code</th>
+<th>Région couverte</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ni</td>
-<td>2400</td>
+<td>ASPC</td>
+<td>Centre de prévision des intempéries de la région de l'Atlantique</td>
+<td>ATLANTIC</td>
+<td>Atlantique</td>
 </tr>
 <tr>
-<td>nj</td>
-<td>1201</td>
+<td>OSPC</td>
+<td>Centre de prévision des intempéries de l'Ontario</td>
+<td>ON</td>
+<td>Ontario</td>
 </tr>
 <tr>
-<td>resolution at 60° N</td>
-<td>15km</td>
+<td>PASPC</td>
+<td>Centre de prévision des intempéries des Prairies et de l'Arctique</td>
+<td>PRAIRIES</td>
+<td>Prairies</td>
 </tr>
 <tr>
-<td>coordinates of first grid point</td>
-<td>90° S; 180° W</td>
+<td>PASPC</td>
+<td>Centre de prévision des intempéries des Prairies et de l'Arctique</td>
+<td>MK</td>
+<td>Rivière Mackenzie</td>
+</tr>
+<tr>
+<td>PSPC</td>
+<td>Centre de prévision des intempéries de la région du Pacfique et du Yukon</td>
+<td>BC-YT</td>
+<td>Colombie-Britannique et Territoire du Yukon</td>
+</tr>
+<tr>
+<td>QSPC</td>
+<td>Centre de prévision des intempéries du Québec</td>
+<td>QC</td>
+<td>Québec</td>
 </tr>
 </tbody>
 </table>
-<h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
-<p>The files have the following nomenclature:</p>
-<p><code>{YYYYMMDD}T{HH}Z_MSC_GDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></p>
-<p>where:</p>
-<ul>
-<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
-<li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
-<li><strong>HH</strong>: UTC run time [00, 06, 12, 18] </li>
-<li><strong>Z</strong>: Time zone (UTC hour)</li>
-<li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
-<li><strong>GDPS-WEonG</strong> : Constant string indicating that the data are from the Global Deterministic Prediction System weather elements on the grid ("WEonG")</li>
-<li><strong>VAR</strong> : Variables contained in the files (ex: VISIFG).</li>
-<li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
-<li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
-<li><strong>resolution</strong> : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions</li>
-<li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]</li>
-<li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
-</ul>
-<p>Example file name:</p>
-<ul>
-<li>20220821T12Z_MSC_GDPS-WEonG_BLSN_Sfc_LatLon0.15_PT024H.grib2</li>
-</ul>
-<h2 id="list-of-variables">List of variables</h2>
-<p>List of surface weather elements on the grid:</p>
-<table id="csv-table" class="display"></table>
-
-<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
-<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
-<script>
-  loadTable("csv-table", "../../../assets/csv/GDPS-WEonG_Variables-List_en.csv");
-</script>
-
 <h2 id="support">Support</h2>
-<p>If you have any questions regarding this data, please <a href="https://meteo.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
-<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
-<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> list.</p></div>
+<p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
             </div>
         </div>
 

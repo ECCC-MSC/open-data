@@ -132,10 +132,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#file-content" class="nav-link">File content</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -155,7 +151,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TdM</a> &gt; <a href="../../readme_en/">MSC Data</a> &gt; <a href="../readme_coastal-flooding_en/">Coastal Flooding</a> &gt; Coastal Flooding Risk Index on MSC Datamart</p>
 <h1 id="coastal-flooding-risk-index-data">Coastal flooding risk index data</h1>
-<p>This page describes the coastal flooding risk index data <a href="../readme_coastal-flooding_en/">Coastal Flooding</a> in GeoJSON format available on the MSC Datamart.</p>
+<p>This page describes the <a href="../readme_coastal-flooding_en/">coastal flooding</a> risk index data in GeoJSON format available on the MSC Datamart.</p>
 <h2 id="data-address">Data address</h2>
 <p>MSC testing data repository DD-Alpha data can be <a href="../.../msc-datamart/amqp_en.md">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples of how to access and use Meteorological Service of Canada open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoJSON file is displayed.</p>
@@ -173,8 +169,8 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant character string for Meteorological Service of Canada, the data source</li>
 <li><strong>CoastalFloodRiskIndex</strong> : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.</li>
-<li><strong>SPC-code</strong>: Identifier of the Storm Prediction Center responsible for issuing and distributing the product. See the <a href="https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/#notes">list of issuing offices</a></li>
-<li><strong>coverage-code</strong>: Region covered by coastal flooding risk index. See <a href="https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/#notes">list of regions covered</a></li>
+<li><strong>SPC-code</strong>: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. See list of issuing offices below</li>
+<li><strong>coverage-code</strong>: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below</li>
 <li><strong>PTxxxH</strong> : Validity time <ul>
 <li><strong>PTxxxHxxM</strong>: Validity time with minutes </li>
 <li>NOTE: the filename can use either {PTxxxH} or {PTxxxHxxM}, at the discretion of the data provider</li>
@@ -189,11 +185,66 @@
 </ul>
 <p>Example:</p>
 <ul>
-<li>20240410T2200Z_MSC_CoastalFloodRiskIndex_ASPC_ASPC_PT014H00M_v1.json</li>
+<li>20240410T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json</li>
 </ul>
-<h2 id="file-content">File content</h2>
-<p>Date is produced once a day and is validated over the next 24 hours (to be confirmed).</p>
-<p><em>Other information to add ?</em></p>
+<p>Notes:</p>
+<ul>
+<li>
+<p>Data is generated once per day and is valid for the next 24 hours, namely data is valid from 12UTC that day to 12Z the next day.</p>
+</li>
+<li>
+<p>Files may be generated containing no information in the absence of coastal flooding risk.</p>
+</li>
+</ul>
+<h3 id="list-of-issuing-offices-and-regions-covered">List of issuing offices and regions covered:</h3>
+<table>
+<thead>
+<tr>
+<th>SPC-code</th>
+<th>Name of issuing office</th>
+<th>coverage-code</th>
+<th>Region covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASPC</td>
+<td>Atlantic Storm Prediction Center</td>
+<td>ASPC</td>
+<td>Atlantic</td>
+</tr>
+<tr>
+<td>NLWO</td>
+<td>Newfoundland and Labrador Weather Office</td>
+<td>NLWO</td>
+<td>Newfoundland and Labrador</td>
+</tr>
+<tr>
+<td>OSPC</td>
+<td>Ontario Storm Prediction Centre</td>
+<td>OSPC</td>
+<td>Ontario</td>
+</tr>
+<tr>
+<td>PASPC</td>
+<td>Prairie and Arctic Storm Prediction Centre</td>
+<td>PASPC</td>
+<td>Arctic and Prairies</td>
+</tr>
+<tr>
+<td>PSPC</td>
+<td>Pacific and Yukon Storm Prediction Centre</td>
+<td>PSPC</td>
+<td>West Coast (Pacific and Yukon)</td>
+</tr>
+<tr>
+<td>QSPC</td>
+<td>Quebec Storm Prediction Centre</td>
+<td>QSPC</td>
+<td>Quebec</td>
+</tr>
+</tbody>
+</table>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">contact us</a>.</p>
 <h2 id="dd_info-mailing-list-announcements">dd_info mailing list announcements</h2>

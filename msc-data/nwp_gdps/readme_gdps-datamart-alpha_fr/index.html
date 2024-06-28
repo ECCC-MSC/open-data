@@ -171,7 +171,7 @@
 <p>où :</p>
 <ul>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
-<li><strong>hhh</strong> : Heure de prévision [001, 002, 003, ..., 144]</li>
+<li><strong>hhh</strong> : Heure de prévision [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]</li>
 </ul>
 <p>Un historique de 24 heures est conservé dans ce répertoire.</p>
 <p>Note: Certains algorithmes ont besoin des valeurs des variables à <code>t-1</code>, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.</p>
@@ -218,7 +218,7 @@
 <li><strong>LVLTYPE-LVL</strong> : Niveau vertical [Sfc pour la surface]</li>
 <li><strong>Grille</strong> : Grille horizontale [LatLon]</li>
 <li><strong>resolution</strong> : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale</li>
-<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 144]</li>
+<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]</li>
 <li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
 </ul>
 <p>Exemple de nom de fichier :</p>
