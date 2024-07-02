@@ -58,12 +58,12 @@ Notes:
 
 | SPC-code | Nom du bureau émetteur | coverage-code | Région couverte |
 | ------ | ------ | ------ | ------ |
-| ASPC | Centre de prévision des intempéries de la région de l'Atlantique | ASPC| Atlantique |
-| NLWO | Centre de prévision des intempéries de Terre-Neuve-et-Labrador | NLWO | Terre-Neuve-et-Labrador |
-| OSPC | Centre de prévision des intempéries de l'Ontario | OSPC | Ontario |
-| PASPC | Centre de prévision des intempéries des Prairies et de l'Arctique | PASPC | Prairies et Arctique |
-| PSPC | Centre de prévision des intempéries de la région du Pacfique et du Yukon | PSPC | Pacifique et Yukon |
-| QSPC | Centre de prévision des intempéries du Québec | QSPC | Québec |
+| ASPC | Centre de prévision des intempéries de la région de l'Atlantique | ASPC| Côtes atlantiques du Canada (Les Maritimes) |
+| NLWO | Centre de prévision des intempéries de Terre-Neuve-et-Labrador | NLWO | Côtes de Terre-Neuve-et-Labrador |
+| OSPC | Centre de prévision des intempéries de l'Ontario | OSPC | Grands Lacs et baie d'Hudson par les côtes de l'Arctique (y compris le Manitoba et le Yukon) |
+| PASPC | Centre de prévision des intempéries des Prairies et de l'Arctique | PASPC | Côtes arctiques (y compris le Manitoba et le Yukon) |
+| PSPC | Centre de prévision des intempéries de la région du Pacfique et du Yukon | PSPC | Côtes du Pacifique |
+| QSPC | Centre de prévision des intempéries du Québec | QSPC | Saint-Laurent (Québec), baie d'Hudson et détroit d'Hudson |
 
 ## Support
 
