@@ -58,12 +58,12 @@ Notes:
 
 | SPC-code | Name of issuing office | coverage-code | Region covered |
 | ------ | ------ | ------ | ------ |
-| ASPC | Atlantic Storm Prediction Center | ASPC | Atlantic |
-| NLWO | Newfoundland and Labrador Weather Office | NLWO | Newfoundland and Labrador |
-| OSPC | Ontario Storm Prediction Centre | OSPC | Ontario |
-| PASPC | Prairie and Arctic Storm Prediction Centre | PASPC | Arctic and Prairies |
-| PSPC | Pacific and Yukon Storm Prediction Centre | PSPC | West Coast (Pacific and Yukon) |
-| QSPC | Quebec Storm Prediction Centre | QSPC | Quebec |
+| ASPC | Atlantic Storm Prediction Center | ASPC | Canada’s Atlantic coasts (the Maritimes) |
+| NLWO | Newfoundland and Labrador Weather Office | NLWO | Newfoundland and Labrador coasts |
+| OSPC | Ontario Storm Prediction Centre | OSPC | Great Lakes and Hudson Bay |
+| PASPC | Prairie and Arctic Storm Prediction Centre | PASPC | Arctic coasts (including Manitoba and Yukon) |
+| PSPC | Pacific and Yukon Storm Prediction Centre | PSPC | Pacific coasts |
+| QSPC | Quebec Storm Prediction Centre | QSPC | St. Lawrence (Quebec), Hudson Bay, and Hudson strait |
 
 ## Support
 
