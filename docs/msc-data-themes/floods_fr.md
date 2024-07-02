@@ -81,7 +81,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 
 ##### &emsp;<span class="badge badge-info">Autres</span>
 
-* [Alertes météo (experimental)](../msc-data/alerts/readme_alerts_fr.md)
+* [Alertes météo](../msc-data/alerts/readme_alerts_fr.md)
 * [Conditions actuelles](../msc-data/citypage-weather/readme_citypageweather_fr.md)
 * [Accumulation de ruissellement (SRDP)](../msc-data/nwp_rdps/readme_rdps_fr.md)
 
