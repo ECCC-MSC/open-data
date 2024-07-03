@@ -23,6 +23,8 @@ A brief summary of the innovations included in this upgrade and their impact on 
 
 The official note announcing this implementation is available [at this link](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
+A technical note with more details on this system is available [at this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rdwps-420_e.pdf).
+
 The technical specifications document for RDWPS 4.2.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RDWPS_4.2.0_e.pdf).
 
 ## Tuesday June 28, 2022
@@ -79,8 +81,6 @@ The technical specifications document for RDWPS 3.2.0 is available [at this link
 Effective April 4, 2018, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada declared operational the new Regional Deterministic Wave Prediction System (RDWPS v3.0.0).
 
 A copy of the official note announcing the implementation of these changes is available [at this link](http://dd.meteo.gc.ca/doc/genots/2018/04/03/NOCN03_CWAO_032022___00001).
-
-A technical note with more details on the RDWPS will be available soon.
 
 The technical specifications document for RDWPS 3.0.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_RDWPS_3.0.0_e.pdf).
 

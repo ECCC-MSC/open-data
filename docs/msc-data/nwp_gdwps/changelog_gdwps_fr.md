@@ -75,5 +75,5 @@ Le document des spécifications techniques du SGPDV 1.3.1 [est disponible ici](h
 
 Le Centre météorologique canadien (CMC) a implanté un nouveau système global de prévision déterministe des vagues en mode experimental. Le développement du SGPDV a été fait en partenariat avec NCEP/NOAA.
 
-Pour plus d'information technique et scientifique, veuillez consulter la note technique de l'implantation disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdwps_20150623_f.pdf).
+Pour plus d'information technique et scientifique, veuillez consulter la note technique de l'implantation disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps_20150623_f.pdf).
 

@@ -69,4 +69,4 @@ Les modifications au SRPEOT v1.2.0 comparativement au précédent système opér
 
 Pour plus d'informations, veuillez consulter le document des spécifications techniques pour le SRPEOT 1.2.0 qui est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_RESPS_1.2.0_f.pdf).
 
-Une note technique avec plus de détails sur ces changements est disponible [sur cette page en anglais seulement](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_resps-120_20190703_e.pdf).
+Une note technique avec plus de détails sur ces changements est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_resps-120_f.pdf).
