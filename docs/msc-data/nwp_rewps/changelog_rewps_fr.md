@@ -23,6 +23,8 @@ Un résumé des innovations incluses dans cette mise à jour ainsi que leurs imp
 
 Une copie de la note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
+Un document avec des détails techniques à ce sujet est disponible [via ce lien](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_rewps-170_f.pdf).
+
 Le document des spécifications techniques du SRPEV est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_REWPS_1.7.0_f.pdf).
 
 # Le mardi 28 juin 2022
@@ -72,7 +74,5 @@ Le document des spécifications techniques pour le SRPEV 1.2.0 est disponible [v
 En date du 4 avril 2018, le Centre météorologique canadien (CMC) du Service météorologique du Canada déclare opérationnel le nouveau Système régional de prévision d'ensemble de vague (SRPEV v1.0.0).
 
 La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2018/04/03/NOCN03_CWAO_032022___00001).
-
-Un document avec des détails techniques pour le SRPDV et le SRPEV sera bientôt disponible.
 
 Le document des spécifications techniques pour le SRPEV 1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_REWPS_1.0.0_f.pdf).

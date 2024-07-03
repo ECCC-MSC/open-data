@@ -75,6 +75,5 @@ The technical specifications document for GDWPS 1.3.1 is available [at this link
 
 On Tuesday, June 23 2015, the Canadian Meteorological Centre implemented a new experimental Global Deterministic Wave Prediction System (GDWPS). The development of the GDWPS was made through a partnership with NCEP/NOAA.
 
-Technical/scientific details are available at [this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/op_systems/doc_opchanges/technote_gdwps_20150623_e.pdf).
-
+Technical/scientific details are available at [this link](http://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdwps_20150623_e.pdf).
 
