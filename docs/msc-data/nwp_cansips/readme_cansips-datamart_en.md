@@ -6,7 +6,7 @@
 
 # Canadian Seasonal to Inter-annual Prediction System (CanSIPS) Data in GRIB2 Format
 
-The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansips_en.md) is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two atmosphere-ocean-land coupled models (CanESM5 and GEM5.2-NEMO) developed by the Canadian Centre for Climate Modelling and Analysis (CCCma) and the Canadian Meteorological Centre (CMC). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.
+The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansips_en.md) is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two atmosphere-ocean-land coupled models (CanESM5 and GEM5.2-NEMO) developed by the Canadian Centre for Climate Modelling and Analysis (CCCma), Meteorological Research Division (MRD) and the Canadian Centre for Meteorological and Environmental Prediction (CCMEP). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.
 
 ## Principal components of CanSIPS
     
@@ -21,7 +21,8 @@ The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansi
 
 ## How is the CanSIPS forecast configured ?
 
-Ensemble size for the forecast is 40 members (20 GEM-NEMO members + 20 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. 
+
+In CanSIPSv3, the ensemble size of the forecast has been increased from 20 members to 40 members (20 GEM-NEMO members + 20 CanESM5 members). This is achieved by combining the forecasts initialized on the last day of the month with the forecasts initialized four days prior to that.  For each model, a 12-month forecast is produced with the first 10 members of each model obtained from the last day of the month and the second set of 10 members from the forecasts initialized four days prior to that.  When the ensemble forecasts are completed, we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. 
 
 ## Data location 
 
@@ -117,14 +118,12 @@ Examples :
 
 The internal structure of the forecast and hindcast files is the following : 
 
-Each file contains 480 temporal records (12 months times 40 ensemble members) and starts with the first ensemble member. Ensemble members are placed in an incremental order within the CanSIPS files.
+Each file contains 40 records (corresponding to the 40 ensemble members) and the first 20 ensemble members belong to GEM5.2-NEMO whereas the last 20 ensemble members are from CanESM5. Please, find below the detailed classification of ensemble members with respect to model and start date.
 
-Each forecast or the hindcast file starts with a lead time of zero months. This means that if for example a CanSIPS file has a 2016-02 date-tag, data will start from the month 02 of the year of 2016 and will be finished (for the first member) in the month 01 of the year of 2017. This means that the forecast was initialised on the last day of the January 2016 and that the results are starting to appear in the month of February 2016 (zero lead time).
-
-Following the temporal record of the month 01 of the year 2017, a second CanSIPS ensemble member appears from the month 02 of the year 2016 following the same logic as described earlier.
-
-NOTE: For 1 degree individual members, each file contains 40 records for the 40 members of each month (example: `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2`, `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2`, etc.) 
-
+* ensemble 1-10 : from GEM5.2-NEMO with forecasts initialized on the last day of the month
+* ensemble 11-20: from GEM5.2-NEMO with forecasts initialized four days prior to the last day of the month
+* ensemble 21-30: from CanESM5 with forecasts initialized on the last day of the month
+* ensemble 31-40: from CanESM5 with forecasts initialized four days prior to the last day of the month
 
 ## List of variables
 

@@ -6,7 +6,7 @@
 
 # Données GRIB2 du Système de Prévision Interannuelle et Saisonnière Canadien (SPISCan)
 
-Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](readme_cansips_fr.md) est un système de prévision à long terme dont l’objectif est de prévoir l’évolution des conditions climatiques à l’échelle globale. SPISCan est un système d’ensemble multi-modèle (Multi-Model Ensemble [MME]) utilisant deux modèles couplés atmosphère-océan-terre (CanESM5 et GEM5.2-NEMO) développés au Centre canadien de la modélisation et de l'analyse climatique (CCmaC) et au Centre météorologique canadien (CMC). Ce système de prévision est entièrement couplé atmosphère-océan-glace-sol. SPISCan utilise l'infrastructure d'assimilation en place pour les autres systèmes de prévision afin d'obtenir les conditions initiales de l'atmosphère, de la température de la surface de la mer et de glace marine. Pour plus de détails sur ce système, vous pouvez vous référer à la note technique.
+Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](readme_cansips_fr.md) est un système de prévision à long terme dont l’objectif est de prévoir l’évolution des conditions climatiques à l’échelle globale. SPISCan est un système d’ensemble multi-modèle (Multi-Model Ensemble [MME]) utilisant deux modèles couplés atmosphère-océan-terre (CanESM5 et GEM5.2-NEMO) développés au Centre canadien de la modélisation et de l'analyse climatique (CCmaC), à la Division de la recherche météorologique (DRM) et au Centre de prévision météorologique et environnementale du Canada (CPMEC). Ce système de prévision est entièrement couplé atmosphère-océan-glace-sol. SPISCan utilise l'infrastructure d'assimilation en place pour les autres systèmes de prévision afin d'obtenir les conditions initiales de l'atmosphère, de la température de la surface de la mer et de glace marine. Pour plus de détails sur ce système, vous pouvez vous référer à la note technique.
 
 ## Les principales composantes de SPISCan
 
@@ -21,7 +21,7 @@ Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](rea
 
 ## Configuration des prévisions SPISCan 
 
-SPISCan est composé de 40 membres, 20 membres du modèle GEM-NEMO et 20 membres du modèle CanCM4. Le dernier jour de chaque mois on exécute une prévision de 12 mois et chaque membre est initialisé avec des conditions initiales valides au même moment, mais légèrement différentes. Lorsque la prévision de l’ensemble est terminée, on construit une moyenne saisonnière de l’anomalie, en soustrayant la moyenne climatologique de 30 ans de ces modèles. Ensuite, on calcule la moyenne d’ensemble pour une prévision déterministe, et les probabilités de chaque catégorie, calculées en calibrant le comptage des membres, pour une prévision probabiliste. 
+Dans SIPSCanv3, la taille de l'ensemble des prévisions a été augmentée de 20 à 40 membres (20 membres GEM-NEMO + 20 membres CanESM5). Pour ce faire, on combine les prévisions initialisées le dernier jour du mois avec les prévisions initialisées quatre jours auparavant.  Pour chaque modèle, une prévision à 12 mois est produite avec les 10 premiers membres de chaque modèle obtenus à partir du dernier jour du mois et le deuxième ensemble de 10 membres provenant des prévisions initialisées quatre jours auparavant.  Lorsque les prévisions d'ensemble sont terminées, nous construisons des anomalies saisonnières moyennes par rapport aux prévisions rétrospectives sur 30 ans pour chaque membre de l'ensemble. Ensuite, nous mettons en œuvre des approches déterministes (moyenne de l'ensemble) et probabilistes (différentes catégories en fonction de la taille de l'ensemble) pour prévoir les saisons à venir.
 
 ## Adresse des données 
 
@@ -113,17 +113,19 @@ Exemples de noms de fichier :
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 
-
 ## Structure interne des fichiers
 
-La structure interne des fichiers des prévisions et celle des prévisions rétrospectives (hindcast) est la suivante : 
+La structure interne des fichiers des prévisions et prévisions rétrospectives (hindcast) est décrite ci-dessous. 
 
-Chaque fichier contient 480 enregistrements temporels (12 mois fois 40 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.
+Chaque fichier contient 40 enregistrements (correspondant aux 40 membres de l'ensemble), les 20 premiers membres de l'ensemble appartiennent à GEM5.2-NEMO tandis que les 20 derniers membres de l'ensemble proviennent de CanESM5.
 
-Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02, les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.
+Voici la classification détaillée des membres de l'ensemble par rapport au modèle et à la date de début:
 
-NOTE: Pour les membres individuels à 1 degré de résolution, chaque fichier contient 40 enregistrements pour les 40 membres de chaque mois (ex: `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2`, `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2`, etc.) 
-`
+* ensemble 1-10 : de GEM5.2-NEMO avec des prévisions initialisées le dernier jour du mois
+* ensemble 11-20 : de GEM5.2-NEMO avec des prévisions initialisées quatre jours avant le dernier jour du mois
+* ensemble 21-30 : de CanESM5 avec des prévisions initialisées le dernier jour du mois
+* ensemble 31-40 : de CanESM5 avec des prévisions initialisées quatre jours avant le dernier jour du mois
+
 ## Liste des variables
 
 __Membres individuels:__
