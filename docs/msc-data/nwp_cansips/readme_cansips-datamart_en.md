@@ -17,7 +17,7 @@ The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansi
      
 * __Forecast mode__: CanSIPS official forecasts are based on a 20-member ensemble of forecasts produced with each of the two models for a total ensemble size of 40. The 20 members, 12 month forecasts from each model are produced by combining the forecasts produced on the last day of each month (ensemble members 1-10)  with forecasts issued four-days prior to that (ensemble members 11-20).
 
-* __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1991 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
+* __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1990 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
 
 ## How is the CanSIPS forecast configured ?
 
@@ -41,7 +41,7 @@ where :
 * __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
 * __100km__ : Indicate a 1 degree resolution (around 100km)
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
-* __YYYY__ : Year of the forecast start [2012, 2013, ...]
+* __YYYY__ : Year of the forecast start [Ex: 2012, 2013, ...]
 
 A 1-month history is kept in these directories (except for hindcast).
 
@@ -99,7 +99,7 @@ where :
 * __LVL__ : Vertical level value
 * __Level__ : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
-* __YYYY__ : Year of the forecast start [2012, 2013, ...]
+* __YYYY__ : Year of the forecast start
 * __allmembers__ : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file
 * __PPP__ : Forecast product time length ex: P3M is for a product with forecast a period of 3 months
 * __Month__ : Months concerned from the beginning of the forecast, either 1 month [ex: P07M for December if the beginning of the forecast is May] or several months starting from the beginning of the forecast [ex: P01M-P03M for June to August if the beginning of the forecast is May]
