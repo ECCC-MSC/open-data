@@ -17,7 +17,7 @@ Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](rea
 
 * __Mode prévision__ : Le système SPIScan est composé de 20 membres d’ensemble provenant de chaque modèle pour un total de 40 membres d’ensemble. Les prévisions mensuelles et les prévisions multi-saisonnières (jusqu’au 12 mois) sont générées en combinant les prévisions produites le dernier jour de chaque mois (membres de l'ensemble 1-10) avec les prévisions émises quatre jours avant (membres de l'ensemble 11-20).
 
-* __Mode prévisions rétrospectives (hindcast)__ : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1980 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.   
+* __Mode prévisions rétrospectives (hindcast)__ : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.   
 
 ## Configuration des prévisions SPISCan 
 
@@ -41,7 +41,7 @@ où :
 * __hindcast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast).
 * __100km__ : Indique une résolution de 1 degré (environ 100km)
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
-* __YYYY__: L’année du début de la prévision [2012, 2013, ...]
+* __YYYY__: L’année du début de la prévision [Ex: 2012, 2013, ...]
 
 Un historique de 1 mois est conservé dans ces répertoires (sauf pour les prévisions rétrospectives)
 
@@ -99,7 +99,7 @@ où :
 * __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
-* __YYYY__ : L’année du début de la prévision [2012, 2013, ...]
+* __YYYY__ : L’année du début de la prévision 
 * __allmembers__ : Chaîne de caractères constante indiquant que tous les membres [01, 02, 03, ..., 20] de l’ensemble sont regroupés dans ce fichier
 * __PPP__: Durée du produit (ex: P3M indique un produit pour une prévision d'une période de 3 mois)
 * __Month__ : Mois concernés à partir du début de la prévision, soit 1 mois [ex : P07M pour décembre si le début de la prévision est le mois de mai] ou plusieurs mois à partir du début de la prévision [ex : P01M-P03M pour juin à août si le début de la prévision est le mois de mai]
