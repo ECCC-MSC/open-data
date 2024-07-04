@@ -31,9 +31,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés, membres à 1 degré)
+* [https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés)
 * [https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/forecast) (membres et produits de prévision à 1 degré)
-* [https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/ensemble/cansips/grib2/hindcast/raw) (prévisions rétrospectives)
+* [https://dd.meteo.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/hindcast) (prévisions rétrospectives)
 
 où :
 
@@ -78,21 +78,19 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
 * Membres et produits de prévision à 1 degré:
 
-    * Membres individuels : 
-        * `cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2` (répertoire: `https://dd.meteo.gc.ca/ensemble/cansips`)
-        * `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` (répertoire `https://dd.meteo.gc.ca/model_cansips`)
+    * Membres individuels : `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` 
     * Produits probabilistes: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_P{Month}M.grib2`
 
 * Prévisions rétrospectives:
 
-    * `cansips_hindcast_raw_latlon1.0x1.0_{VAR}_{YYYY}-{MM}_allmembers.grib2`
+    * `{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2`
 
 où :
 
 * __cansips|CanSIPS__ : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __forecast__ : Chaîne de caractères constante indiquant que le fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast)
-* __hindcast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)
+* __CanSIPS-hindcast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)
 * __raw__ : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé
 * __VAR__ : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
 * __Var__ : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
@@ -110,22 +108,21 @@ où :
 Exemples de noms de fichier : 
 
 * cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-* cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2
-* 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
+* 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
-* cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2
+* 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 
 
 ## Structure interne des fichiers
 
 La structure interne des fichiers des prévisions et celle des prévisions rétrospectives (hindcast) est la suivante : 
 
-Chaque fichier contient 240 enregistrements temporels (12 mois fois 20 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.
+Chaque fichier contient 480 enregistrements temporels (12 mois fois 40 membres d'ensemble) et commence par le premier membre d'ensemble. Dans les fichiers SPISCan, les membres d'ensemble sont enregistrés de façon croissante du premier au dernier.
 
-Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02 (ex. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2), les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.
+Chaque fichier de la prévision ou de la prévision-rétrospective débute avec une prévision à zéro mois de préavis (en réalité, un jour de préavis pour les prévisions en temps réel). Cela signifie que par exemple, si on a le fichier de SPISCan daté de 2016-02, les données  commencent à partir du 1er février de l'année 2016 et se terminent le 31 janvier de l'année 2017.  À la suite de l'enregistrement pour le mois 01 de l'année 2017, un deuxième membre de l'ensemble SPISCan apparaît pour le mois 02 de l'année 2016, en suivant la même logique décrite plus haut.
 
-NOTE: Pour les membres individuels à 1 degré de résolution, chaque fichier contient 20 enregistrements pour les 20 membres de chaque mois (ex: `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2`, `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2`, etc.) 
+NOTE: Pour les membres individuels à 1 degré de résolution, chaque fichier contient 40 enregistrements pour les 40 membres de chaque mois (ex: `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2`, `202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2`, etc.) 
 `
 ## Liste des variables
 
@@ -164,7 +161,7 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 
 Il est recommandé d'utiliser directement les prévisions d'anomalies plutôt que les prévisions de données brutes. Les prévisions d'anomalies pour certains mois ou saisons peuvent être obtenues par la soustraction de la climatologie modélisée pour ce mois ou saison. La recette suivante peut être utilisée pour calculer la prévision d'anomalie :
 
-Pour la prévision d'un mois en particulier (ex. 2016-02) on commence par la création d'un fichier de moyenne d'ensemble, et pour cet exemple, on peut nommer ce fichier ensm_for_02_2016. Ce fichier contient maintenant 12 enregistrements temporels car la moyenne de 20 ensembles a été calculée. L'enregistrement temporel de ce fichier commence le mois 02 de l'année 2016 et va jusqu'au mois 01 de l'année 2017.
+Pour la prévision d'un mois en particulier (ex. 2016-02) on commence par la création d'un fichier de moyenne d'ensemble, et pour cet exemple, on peut nommer ce fichier ensm_for_02_2016. Ce fichier contient maintenant 12 enregistrements temporels car la moyenne de 40 ensembles a été calculée. L'enregistrement temporel de ce fichier commence le mois 02 de l'année 2016 et va jusqu'au mois 01 de l'année 2017.
  
 Ensuite, la même procédure est répétée pour les prévisions rétrospectives mais séparément pour chaque année, commençant en 1981 et finissant l'année 2010. Chaque année de la période rétrospective aura donc sa moyenne d'ensemble, par exemple pour le mois 02, ce sera ensm_hin_02_YYYY (YYYY représente chaque année de la période-rétrospective). La moyenne des 30 fichiers de ensm_hin_02_YYYY permettra d'obtenir la climatologie de la moyenne d'ensemble pour les prévisions débutant en  février, qui pourra alors être nommée ensm_hinclim_02, dans cet exemple.
 
