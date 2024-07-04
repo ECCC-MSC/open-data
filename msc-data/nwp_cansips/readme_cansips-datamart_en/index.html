@@ -175,7 +175,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_cansips_en/">CanSIPS</a> &gt; CanSIPS data in GRIB2 on MSC Datamart</p>
 <h1 id="canadian-seasonal-to-inter-annual-prediction-system-cansips-data-in-grib2-format">Canadian Seasonal to Inter-annual Prediction System (CanSIPS) Data in GRIB2 Format</h1>
-<p>The <a href="../readme_cansips_en/">Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</a> is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two atmosphere-ocean-land coupled models (CanESM5 and GEM5.2-NEMO) developed by the Canadian Centre for Climate Modelling and Analysis (CCCma) and the Canadian Meteorological Centre (CMC). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.</p>
+<p>The <a href="../readme_cansips_en/">Canadian Seasonal to Inter-annual Prediction System (CanSIPS)</a> is a long-term prediction system whose objective is to forecast the evolution of global climate conditions. CanSIPS is a multi-model ensemble (MME) system using two atmosphere-ocean-land coupled models (CanESM5 and GEM5.2-NEMO) developed by the Canadian Centre for Climate Modelling and Analysis (CCCma), Meteorological Research Division (MRD) and the Canadian Centre for Meteorological and Environmental Prediction (CCMEP). It is a fully coupled atmosphere-ocean-ice-land prediction system relying on the operational data assimilation infrastructure for the initial state of the atmosphere, sea surface temperature and sea ice. For further technical information about CanSIPS please refer to the technical note.</p>
 <h2 id="principal-components-of-cansips">Principal components of CanSIPS</h2>
 <ul>
 <li>
@@ -189,19 +189,19 @@
 <p><strong>Forecast mode</strong>: CanSIPS official forecasts are based on a 20-member ensemble of forecasts produced with each of the two models for a total ensemble size of 40. The 20 members, 12 month forecasts from each model are produced by combining the forecasts produced on the last day of each month (ensemble members 1-10)  with forecasts issued four-days prior to that (ensemble members 11-20).</p>
 </li>
 <li>
-<p><strong>Hindcast mode</strong>: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1991 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.</p>
+<p><strong>Hindcast mode</strong>: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1990 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.</p>
 </li>
 </ul>
 <h2 id="how-is-the-cansips-forecast-configured">How is the CanSIPS forecast configured ?</h2>
-<p>Ensemble size for the forecast is 40 members (20 GEM-NEMO members + 20 CanCM4 members). At the last day of the each month, a 12-month forecast is produced. There are no lagged initial conditions, all the 20 members start on the first of the month and are initialised with different initial conditions originating from separate assimilating coupled model runs. When the ensemble forecasts are finished we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. </p>
+<p>In CanSIPSv3, the ensemble size of the forecast has been increased from 20 members to 40 members (20 GEM-NEMO members + 20 CanESM5 members). This is achieved by combining the forecasts initialized on the last day of the month with the forecasts initialized four days prior to that.  For each model, a 12-month forecast is produced with the first 10 members of each model obtained from the last day of the month and the second set of 10 members from the forecasts initialized four days prior to that.  When the ensemble forecasts are completed, we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. </p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The data can be accessed at the following URLs :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (forecast members and products at 2.5 degrees, members at 1 degree)</li>
-<li><a href="https://dd.weather.gc.ca/model_cansips/100km/forecast">https://dd.weather.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (forecast products at 1 degree)</li>
-<li><a href="https://dd.weather.gc.ca/ensemble/cansips/grib2/hindcast/raw">https://dd.weather.gc.ca/ensemble/cansips/grib2/hindcast/raw/{YYYY}/{MM}/</a> (hindcast)</li>
+<li><a href="https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (forecast members and products at 2.5 degrees)</li>
+<li><a href="https://dd.weather.gc.ca/model_cansips/100km/forecast">https://dd.weather.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (forecast members and products at 1 degree)</li>
+<li><a href="https://dd.weather.gc.ca/model_cansips/100km/hindcast">https://dd.weather.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/</a> (hindcast)</li>
 </ul>
 <p>where :</p>
 <ul>
@@ -209,7 +209,7 @@
 <li><strong>hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.</li>
 <li><strong>100km</strong> : Indicate a 1 degree resolution (around 100km)</li>
 <li><strong>MM</strong> : Month of the forecast start [01, 02, 03, ..., 12]</li>
-<li><strong>YYYY</strong> : Year of the forecast start [2012, 2013, ...]</li>
+<li><strong>YYYY</strong> : Year of the forecast start [Ex: 2012, 2013, ...]</li>
 </ul>
 <p>A 1-month history is kept in these directories (except for hindcast).</p>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
@@ -281,18 +281,14 @@
 <li>
 <p>Members and products at 1 degree:</p>
 <ul>
-<li>Individual members:<ul>
-<li><code>cansips_forecast_raw_latlon1.0x1.0_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code> (directory: <code>https://dd.weather.gc.ca/ensemble/cansips</code>)</li>
-<li><code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> (directory:  <code>https://dd.weather.gc.ca/model_cansips</code>)</li>
-</ul>
-</li>
+<li>Individual members: <code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> </li>
 <li>Probability products: <code>{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2</code></li>
 </ul>
 </li>
 <li>
 <p>Hindcast:</p>
 <ul>
-<li><code>cansips_hindcast_raw_latlon1.0x1.0_{VAR}_{YYYY}-{MM}_allmembers.grib2</code></li>
+<li><code>{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code></li>
 </ul>
 </li>
 </ul>
@@ -301,7 +297,7 @@
 <li><strong>cansips|CanSIPS</strong> : Constant string indicating that the data is from the CanSIPS system</li>
 <li><strong>MSC</strong> : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>forecast</strong> : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part</li>
-<li><strong>hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part</li>
+<li><strong>CanSIPS-Hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part</li>
 <li><strong>raw</strong> : Constant string indicating that the file contains raw data without bias correction</li>
 <li><strong>VAR</strong> : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
 <li><strong>Var</strong> : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
@@ -310,7 +306,7 @@
 <li><strong>LVL</strong> : Vertical level value</li>
 <li><strong>Level</strong> : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]</li>
 <li><strong>MM</strong> : Month of the forecast start [01, 02, 03, ..., 12]</li>
-<li><strong>YYYY</strong> : Year of the forecast start [2012, 2013, ...]</li>
+<li><strong>YYYY</strong> : Year of the forecast start</li>
 <li><strong>allmembers</strong> : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file</li>
 <li><strong>PPP</strong> : Forecast product time length ex: P3M is for a product with forecast a period of 3 months</li>
 <li><strong>Month</strong> : Months concerned from the beginning of the forecast, either 1 month [ex: P07M for December if the beginning of the forecast is May] or several months starting from the beginning of the forecast [ex: P01M-P03M for June to August if the beginning of the forecast is May]</li>
@@ -319,18 +315,20 @@
 <p>Examples : </p>
 <ul>
 <li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
-<li>cansips_forecast_raw_latlon1.0x1.0_PRATE_SFC_0_2019-08_allmembers.grib2</li>
-<li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
+<li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
-<li>cansips_hindcast_raw_latlon2.5x2.5_HGT_ISBL_0500_1990-11_allmembers.grib2</li>
+<li>202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2</li>
 </ul>
 <h2 id="internal-structure-of-the-files">Internal Structure of the Files</h2>
 <p>The internal structure of the forecast and hindcast files is the following : </p>
-<p>Each file contains 240 temporal records (12 months times 20 ensemble members) and starts with the first ensemble member. Ensemble members are placed in an incremental order within the CanSIPS files.</p>
-<p>Each forecast or the hindcast file starts with a lead time of zero months. This means that if for example a CanSIPS file has a 2016-02 date-tag (e.g. cansips_forecast_raw_latlon-1x1_PRATE_SFC_0_2016-02_allmembers.grib2),data will start from the month 02 of the year of 2016 and will be finished (for the first member) in the month 01 of the year of 2017. This means that the forecast was initialised on the last day of the January 2016 and that the results are starting to appear in the month of February 2016 (zero lead time).</p>
-<p>Following the temporal record of the month 01 of the year 2017, a second CanSIPS ensemble member appears from the month 02 of the year 2016 following the same logic as described earlier.</p>
-<p>NOTE: For 1 degree individual members, each file contains 20 records for the 20 members of each month (example: <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P00M.grib2</code>, <code>202311_MSC_CanSIPS_Pressure_MSL_LatLon1.0_P01M.grib2</code>, etc.) </p>
+<p>Each file contains 40 records (corresponding to the 40 ensemble members) and the first 20 ensemble members belong to GEM5.2-NEMO whereas the last 20 ensemble members are from CanESM5. Please, find below the detailed classification of ensemble members with respect to model and start date.</p>
+<ul>
+<li>ensemble 1-10 : from GEM5.2-NEMO with forecasts initialized on the last day of the month</li>
+<li>ensemble 11-20: from GEM5.2-NEMO with forecasts initialized four days prior to the last day of the month</li>
+<li>ensemble 21-30: from CanESM5 with forecasts initialized on the last day of the month</li>
+<li>ensemble 31-40: from CanESM5 with forecasts initialized four days prior to the last day of the month</li>
+</ul>
 <h2 id="list-of-variables">List of variables</h2>
 <p><strong>Individual members:</strong></p>
 <table id="csv-table" class="display"></table>
@@ -362,7 +360,7 @@
 </ul>
 <h2 id="tips-for-computing-anomaly-forecasts">Tips for Computing Anomaly Forecasts</h2>
 <p>It is recommended to use anomaly forecasts instead of the raw forecasts. Anomaly forecasts can be obtained by subtracting from the forecast a climatology based on the hindcasts. The recipe is as follows for a given variable:</p>
-<p>For a specific forecast month (e.g. 2016-02) an ensemble mean file needs to be created and we can call it ensm_for_02_2016 for the purpose of this example. This file now contains only 12 temporal records since the mean of 20 ensemble members is performed. The temporal record of this file starts in the month 02 of the year 2016 and stretches until the month 01 of the year 2017.</p>
+<p>For a specific forecast month (e.g. 2016-02) an ensemble mean file needs to be created and we can call it ensm_for_02_2016 for the purpose of this example. This file now contains only 12 temporal records since the mean of 40 ensemble members is performed. The temporal record of this file starts in the month 02 of the year 2016 and stretches until the month 01 of the year 2017.</p>
 <p>Subsequently, the same procedure is repeted for the hindcast files but separately for each of the hindcasts that start in 1981 and stretch until the year of 2010. Each year will have an ensemble mean file for the month 02, ensm_hin_02_YYYY, but for the particular hindcast year (YYYY stands for a particular hindcast year). By making the mean of all of the 30 ensm_hin_02_YYYY files, the climatology of the ensemble mean hindcast for the month of February is obtained, which can be called ensm_hinclim_02 in this example.</p>
 <p>The subtraction of ensm_hinclim_02 and ensm_for_02_2016 allows for anomaly forecast production for the month 02 of the year 2016. Since this anomaly forecast now contains 12 temporal records, starting from the month of February 2016, we can say that the anomaly forecast for the month of February has zero lead time, for the month of March 2016 a one month lead time and finally for the month of January 2017 (last of the 12 record) an eleven month lead time.</p>
 <p>Similar approach applies for the seasonal forecasts only with the seasonal means (e.g. DJF, JFM, FMA, or any other running season) being calculated before the anomaly forecast is computed.</p>
