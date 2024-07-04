@@ -81,7 +81,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 * Taux de précipitation radar extrapolé</br>
 
 ##### &emsp;<span class="badge badge-info">Satellite</span>
-###### &emsp;[Documentation des données satellite](../msc-data/obs_satellite/readme_satellite_fr/)
+###### &emsp;[Documentation des données satellite](../msc-data/obs_satellite/readme_satellite_fr.md)
 * Produit couleur naturelle
 * Produit microphysique de nuit
 * Produit température des feux
