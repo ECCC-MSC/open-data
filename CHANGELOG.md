@@ -19,6 +19,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * RDWPS, GDWPS, RESPS, REWPS changelogs update
     * CanSIPS doc update (IC4 hindcast)
     * Costal flooding risk index DD page update (coverage_code)
+    * Datasets by theme update (add satellite, coastal flooding risk index, thunderstorm outlooks)
 * bug fixes: 
     * Typos 
 
