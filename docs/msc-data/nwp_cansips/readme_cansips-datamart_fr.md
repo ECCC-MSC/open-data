@@ -113,7 +113,6 @@ Exemples de noms de fichier :
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 
-
 ## Structure interne des fichiers
 
 La structure interne des fichiers des prévisions et prévisions rétrospectives (hindcast) est décrite ci-dessous. 
@@ -126,6 +125,8 @@ Voici la classification détaillée des membres de l'ensemble par rapport au mod
 * ensemble 11-20 : de GEM5.2-NEMO avec des prévisions initialisées quatre jours avant le dernier jour du mois
 * ensemble 21-30 : de CanESM5 avec des prévisions initialisées le dernier jour du mois
 * ensemble 31-40 : de CanESM5 avec des prévisions initialisées quatre jours avant le dernier jour du mois
+
+## Liste des variables
 
 __Membres individuels:__
 
