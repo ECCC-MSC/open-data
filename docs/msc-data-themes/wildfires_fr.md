@@ -4,9 +4,9 @@
 
 [TOC](../readme_fr.md) > [Thèmes des données](readme_fr.md) > Incendies de forêt
 
-# Incendies de forêt&emsp;<i class="wi wi-fire" style="font-size: 45px; color: #4e64a6;"></i>
+# Feux de forêt&emsp;<i class="wi wi-fire" style="font-size: 45px; color: #4e64a6;"></i>
 
-Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des incendies de forêt, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables de qualité de l'air et les taux de précipitations. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les points chauds, la vitesse des vents ou la direction des vents, pour ne citer que ces quelques exemples.
+Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des feux de forêt, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables de qualité de l'air et les taux de précipitations. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les points chauds, la vitesse des vents ou la direction des vents, pour ne citer que ces quelques exemples.
 
 Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Points chauds`, de `HRDPS-WEonG` (Rafale de vents) et de `Concentration de NO2` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
 
