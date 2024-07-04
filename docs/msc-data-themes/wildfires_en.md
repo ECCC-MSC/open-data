@@ -79,6 +79,15 @@ The layers in the following list can also be viewed on MSC AniMet with a single 
 * Radar extrapolation precipitation rate for rain
 * Radar extrapolation precipitation rate</br>
 
+##### &emsp;<span class="badge badge-info">Satellite</span>
+###### &emsp;[Radar data documentation](../msc-data/obs_satellite/readme_satellite_en.md)
+* Natural colour product
+* Night Microphysics product
+* Fire Temperature product
+* Day Land Cloud Fire product
+* Smoke ABI Band1 product
+* SWIR product</br>
+
 ##### &emsp;<span class="badge badge-info">RAQDPS</span>
 ###### &emsp;[RAQDPS data documentation](../msc-data/nwp_raqdps/readme_raqdps_en.md)
 * Wildfire hotspots ingested by RAQDPS-FireWork

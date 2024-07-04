@@ -84,6 +84,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 * [Alertes météo](../msc-data/alerts/readme_alerts_fr.md)
 * [Conditions actuelles](../msc-data/citypage-weather/readme_citypageweather_fr.md)
 * [Accumulation de ruissellement (SRDP)](../msc-data/nwp_rdps/readme_rdps_fr.md)
+* [Indice de risque de submersion côtière](../msc-data/coastal-flooding/readme_coastal-flooding_fr.md)
 
 
 <style>

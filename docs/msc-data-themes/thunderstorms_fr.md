@@ -83,14 +83,21 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 * Onde de tempête  - Atlantique nord-ouest (6)</br>
 
 ##### &emsp;<span class="badge badge-info">Radar</span>
-###### &emsp;[Documentation des données radar](../msc-data/nwp_reps/readme_radar_fr.md)
+###### &emsp;[Documentation des données radar](../msc-data/obs_radar/readme_radar_fr.md)
 * Taux de précipitation radar pour la pluie
 * Taux de précipitation radar extrapolé</br>
+
+##### &emsp;<span class="badge badge-info">Satellite</span>
+###### &emsp;[Documentation des données satellite](../msc-data/obs_satellite/readme_satellite_fr.md)
+* Produit convection nuageuse de jour
+* Produit sandwich Visible et IR
+* Produit microphysique de nuit et IR</br>
 
 ##### &emsp;<span class="badge badge-info">Autres</span>
 
 * [Alertes météo](../msc-data/alerts/readme_alerts_fr.md)
 * [Conditions actuelles](../msc-data/citypage-weather/readme_citypageweather_fr.md)
+* [Potentiel orageux](../msc-data/thunderstorm-outlooks/readme_thunderstorm-outlooks_fr.md)
 * [Densité de foudre sur le Canada](../msc-data/lightning/readme_lightning_fr.md)
 * [SGPDOT - Onde de tempête](../msc-data/nwp_gdsps/readme_gdsps_fr.md)
 
