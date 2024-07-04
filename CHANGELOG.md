@@ -8,6 +8,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.6
+
+* date: 2024-07-04
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * RDWPS, GDWPS, RESPS, REWPS changelogs update
+    * CanSIPS doc update (IC4 hindcast)
+    * Costal flooding risk index DD page update (coverage_code)
+* bug fixes: 
+    * Typos 
+
 ## 2.6.5
 
 * date: 2024-06-28
@@ -20,7 +34,6 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes: 
     * Broken links 
 	
-
 ## 2.6.4
 
 * date: 2024-06-28
