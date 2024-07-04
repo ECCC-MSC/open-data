@@ -86,10 +86,17 @@ The layers in the following list can also be viewed on MSC AniMet with a single 
 * Radar precipitation rate for rain
 * Radar extrapolation precipitation rate</br>
 
+##### &emsp;<span class="badge badge-info">Satellite</span>
+###### &emsp;[Satellite documentation](../msc-data/obs_satellite/readme_satellite_en.md)
+* Day Cloud Convection product
+* Visible IR Sandwich product
+* Night Microphysics and IR</br>
+
 ##### &emsp;<span class="badge badge-info">Others</span>
 
 * [Weather Alerts](../msc-data/alerts/readme_alerts_en.md)
 * [Current Conditions](../msc-data/citypage-weather/readme_citypageweather_en.md)
+* [Thunderstorm Outlooks](../msc-data/thunderstorm-outlooks/readme_thunderstorm-outlooks_en.md)
 * [Lightning Flash Density over Canada](../msc-data/lightning/readme_lightning_en.md)
 * [GDSPS - Storm surge](../msc-data/nwp_gdsps/readme_gdsps_en.md)
 

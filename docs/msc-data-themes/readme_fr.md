@@ -73,7 +73,7 @@ Voici une liste non exhaustive de thématiques de données disponibles :
     </div>
   </div>
   <div class="card mb-3 text-center" style="border-radius: 15px;">
-    <div class="card-header bg-light" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"><h5>Incendies de forêt / fumée</h5><i class="wi wi-fire" style="font-size: 30px;"></i></div>
+    <div class="card-header bg-light" style="border-top-left-radius: 15px; border-top-right-radius: 15px;"><h5>Feux de forêt / fumée</h5><i class="wi wi-fire" style="font-size: 30px;"></i></div>
     <div class="card-body">
       <img class="card-img-top" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data-themes/wildfires.jpg" alt="Card image cap">
       </br>

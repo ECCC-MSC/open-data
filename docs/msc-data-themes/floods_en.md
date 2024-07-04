@@ -84,6 +84,7 @@ The layers in the following list can also be viewed on MSC AniMet with a single 
 * [Weather Alerts](../msc-data/alerts/readme_alerts_en.md)
 * [Current Conditions](../msc-data/citypage-weather/readme_citypageweather_en.md)
 * [Water runoff accumulation (RDPS)](../msc-data/nwp_rdps/readme_rdps_en.md)
+* [Coastal flooding risk index](../msc-data/coastal-flooding/readme_coastal-flooding_en.md)
 
 
 <style>

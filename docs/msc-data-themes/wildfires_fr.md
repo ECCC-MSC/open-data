@@ -75,11 +75,19 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 * Probabilité de quantité de précipitations supérieures à 10 mm (120 heures)</br>
 
 ##### &emsp;<span class="badge badge-info">Radar</span>
-###### &emsp;[Documentation des données radar](http://geomet-dev-22.cmc.ec.gc.ca:8082/msc-data/obs_radar/readme_radar_fr/)
+###### &emsp;[Documentation des données radar](../msc-data/obs_radar/readme_radar_fr.md)
 * Taux de précipitation radar pour la pluie
 * Taux de précipitation radar extrapolé pour la pluie
 * Taux de précipitation radar extrapolé</br>
-       &emsp;&emsp;[Documentation des données radar](../msc-data/nwp_raqdps-fw/readme_raqdps-fw_fr.md)</br>
+
+##### &emsp;<span class="badge badge-info">Satellite</span>
+###### &emsp;[Documentation des données satellite](../msc-data/obs_satellite/readme_satellite_fr/)
+* Produit couleur naturelle
+* Produit microphysique de nuit
+* Produit température des feux
+* Produit détection des feux de jour
+* Produit fumée bande1 ABI
+* Produit SWIR</br>
 
 ##### &emsp;<span class="badge badge-info">Qualité de l'air</span>
 ###### &emsp;[Documentation des données SRPDQA](../msc-data/nwp_raqdps/readme_raqdps_fr.md)
