@@ -42,16 +42,16 @@ In the stippled areas, the base and top of the layer in which supercooled water 
 * Turbulence (Deformation Vertical Shear Index or DVSI)
     * Depiction: Dashed lines are the isopleths of the maximum deformation vertical shear index (DVSI) in the layer from 400 to 200 hPa.
         *  __DVSI values are enhanced as follows__:
-            * Lower than 50 : no enhancement 
-            * 50 < DVSI < 150 : light stippling 
-            * 150 < DVSI < 240: dark stippling 
-            * DVSI > 240 : no enhancement
+            * Lower than 200 : no enhancement 
+            * 200 < DVSI < 300 : light stippling 
+            * 300 < DVSI < 400: dark stippling 
+            * DVSI > 400 : no enhancement
 
 * __Note__: The WMO definition of the tropopause is used.
 
 ### Plotting model
 
-The base and top of the DVSI layer greater than 40 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.
+The base and top of the DVSI layer greater than 200 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.
 
 
 ## Momentum flux or surface stress (bottom left panel)
@@ -73,13 +73,13 @@ Areas where the values of surface stress are above 0.75 Pa are hatched horizonta
 * Turbulence (Deformation Vertical Shear Index or DVSI)
     * Depiction: Isopleths of the maximum deformation vertical shear index (DVSI) in the layer from 700 to 400 hPa.
         * __DVSI values are enhanced as follows__:
-             * Lower than 50 : no enhancement
-             * 50 < DVSI < 150 : light stippling
-             * 150 < DVSI < 240: dark stippling
-             * DVSI > 240 : no enhancement
+             * Lower than 200 : no enhancement
+             * 200 < DVSI < 300 : light stippling
+             * 300 < DVSI < 400: dark stippling
+             * DVSI > 400 : no enhancement
              
 ### Plotting model
 
-The base and top of the DVSI layer greater than 40 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.
+The base and top of the DVSI layer greater than 200 are indicated in thousands of feet above mean sea level, at selected grid points. The lower number is the base and the upper number is the top of the layer.
 
 
