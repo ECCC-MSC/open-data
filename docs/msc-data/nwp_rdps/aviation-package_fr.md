@@ -40,7 +40,7 @@ Dans les régions pointillées, la base et le sommet de la couche d'eau surfondu
 
 * Tropopause
     * Représentation : Lignes solides représentant la hauteur de la tropopause au dessus du niveau moyen au niveau de la mer. Intervalles de 5 000 pieds; hauteurs exprimées en milliers de pieds. 
-* Turbulence (Indice de cisaillement vertical : Déformation Vertical Shear Indexou DVSI).
+* Turbulence (Indice de cisaillement vertical : Déformation Vertical Shear Index ou DVSI).
     * Représentation : Lignes tiretées représentant le maximum de DVSI, dans la couche 400 à 200 hPa; contours à 100, 200, 300 et 400 DVSI.
         * __Rehaussement__ :
             * 0-200 DVSI : pas de rehaussement
@@ -70,7 +70,7 @@ La zone de 0,75 Pa à 1,5 Pa est hachurée horizontalement et représente la zon
 
 ### Champs 
 
-* Turbulence (Indice de cisaillement vertical: Deformation Vertical Shear Indexou DVSI). 
+* Turbulence (Indice de cisaillement vertical: Deformation Vertical Shear Index ou DVSI). 
     * Représentation : Lignes tiretées représentant le maximum de DVSI, dans la couche 400 à 200 hPa; contours à 100, 200, 300 et 400 DVSI.
         * __Rehaussement__ :
             * 0-200 DVSI : pas de rehaussement
