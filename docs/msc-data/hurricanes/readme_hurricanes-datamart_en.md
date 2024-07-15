@@ -6,44 +6,44 @@
 
 # Data of the hurricane trajectories
 
-This page describes the data of the [hurricane trajectories](readme_hurricanes_en.md).
+This page describes the data of the [hurricane trajectories](readme_hurricanes_en.md) available on the MSC Datamart in shapefile and GeoJSON formats.
 
-The Canadian Hurricane Centre provides files in shapefile format as part of the regular hurricane season forecast.
+There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
 
-The files will allow users to plot the route of the storms forecast in a map system of their choice. There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
-
-Hurricane tracks issued by the Canadian Hurricane Centre hurricanes are published on the MSC Datamart. This data is made available in experimental mode in order to offer users an opportunity to ingest and test the data in real-time. The service will be provided to the best of our ability but please note that there is a significant possibility of occasional unannounced interruptions and non-received from this experimental data service, up to new announcement.
+Please note that GeoJSON data will eventually replace shapefile data. An announcement to this effect will be made via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) mailing list.
 
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a  shapefile.
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to shapefile or GeoJSON files according to the selected format.
 
-You can find the shapefiles at:
+* __Data in shapefile format__ can be found at this address:
 
-* [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{storm-name}/](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
+     * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-where:
+with {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
-* __storm-name__ : storm name in uppercase (e.g. 'BERTHA' )
+* __Data in GeoJSON format__ can be found in the MSC testing data repository DD-Alpha, at this address:
 
-April 30: the history is deleted
+     * [https://dd.alpha.weather.gc.ca/hurricanes](https://dd.alpha.weather.gc.ca/hurricanes)
 
-## Directory and file name nomenclature 
+Note: The history is deleted on April 30th for both datasets.
 
-NOTE : ALL HOURS ARE IN UTC.
+## File name nomenclature
+
+* __Data in shapefile format__
 
 File naming convention is:
 
-YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
+`{YYYYMMDD}_{HHMM}Z_{NAME}.{TYPE}.shp`
 
 where:
 
 * __YYYYMMDD__ : Forecast issuance date
 * __HHMM__ : Time in UTC 
 * __Z__ : Constant string, indicating Zulu time (UTC code name)
-* __STORM-NAME__ : Storm name (e.g. BERTHA - hurricane, post-tropical, etc)
+* __NAME__ : Hurricane name (e.g. BERTHA)
 * __TYPE__ : Type of shapefile:
 
     * "pts" - The forecast locations (points) 
@@ -51,8 +51,6 @@ where:
     * "rad" - Contains forecast wind radii information (wind quadrants)
     * "err" - Contains information on track forecast error ("error cone")
 	
-## File content
-
 When querying the points (pts) shapefile, the contents of each column are given
 as follows:
 
@@ -76,6 +74,23 @@ as follows:
 |TIMESTAMP |     ISO format for the VALIDTIME. Format:  YYYY-MM-DDTHH:MMZ |
 
 When querying the 'lin' shapefile, the elements have the same definition as in the 'pts' file.
+
+* __Data in GeoJSON format__
+
+File names follow the nomenclature below:
+
+`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{Name}.json`
+
+* __YYYYMMDD__ : Year, month and day of data transmission
+* __T__: Time delimiter according to ISO8601 standards
+* __HHmm__: Hour and minute at which data is transmitted
+* __Z__: Time zone (UTC hour)
+* __MSC__: Constant character string for Meteorological Service of Canada, the data source
+* __Hurricane__ : Constant string indicating the name of the product contained in the files, i.e. hurricane trajectories
+* __Name__ : Constant string indicating the name of the hurricane
+* __json__: Constant string indicating that the format is GeoJSON
+
+Ex: `20240708T2100Z_MSC_Hurricane_Beryl.json`
 
 ## Support
 
