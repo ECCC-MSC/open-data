@@ -20,9 +20,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 * Les données en format shapefile sont disponibles à cette adresse :
 
-     * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{nom-tempête}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
+     * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
-Avec __nom-tempête__ : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
+Avec __{NAME}__ : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
 * Les données en format GeoJSON sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
 
@@ -36,13 +36,13 @@ Note: L'historique est effacé le 30 avril pour ces 2 jeux de données.
 
 Les fichiers ont la nomenclature suivante :
 
-`{YYYYMMDD_HHMM}Z_{STORM-NAME}.{TYPE}.shp`
+`{YYYYMMDD_HHMM}Z_{NAME}.{TYPE}.shp`
 
 où :
 
 * __YYYYMMDD__HHMM__ : Date d'émission de la prévision (UTC).
 * __Z__ : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC).
-* __STORM-NAME__ : Nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.).
+* __NAME__ : Nom de l'ouragan (p. ex. BERTHA).
 * __TYPE__ : Type de fichier shapefile :
 
     * « pts » pour points, qui contient majoritairement des données/attributs
@@ -81,7 +81,7 @@ Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les 
 
 Les fichiers ont la nomenclature suivante :
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{Nom}.json`
+`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{Name}.json`
 
 * __YYYYMMDD__ : Année, mois et jour de l'émission des données
 * __T__ : Délimiteur temporel selon les normes ISO8601
@@ -89,7 +89,7 @@ Les fichiers ont la nomenclature suivante :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __ Hurricane__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit les trajectoires d'ouragans
-* __Nom__ :  Chaîne de caractères constante indiquant le nom de l'ouragan
+* __Name__ :  Chaîne de caractères constante indiquant le nom de l'ouragan
 * __json__ : Chaîne de caractères constante indiquant le format GeoJSON
 
 Ex: `20240708T2100Z_MSC_Hurricane_Beryl.json`

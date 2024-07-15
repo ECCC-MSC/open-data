@@ -10,7 +10,7 @@ This page describes the data of the [hurricane trajectories](readme_hurricanes_e
 
 There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
 
-Please note that GeoJSON data will eventually replace shapefile data. An announcement to this effect will be made via the [dd_info] mailing list (https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
+Please note that GeoJSON data will eventually replace shapefile data. An announcement to this effect will be made via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) mailing list.
 
 ## Data location
 
@@ -20,9 +20,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 * Data in shapefile format can be found at this address:
 
-     * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{storm-name}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
+     * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-with  __storm-name__ : storm name in uppercase (e.g. 'BERTHA' )
+with  __{NAME}__ : hurricane name in uppercase (e.g. 'BERTHA' )
 
 * Data in GeoJSON format can be found in the MSC testing data repository DD-Alpha, at this address:
 
@@ -32,18 +32,18 @@ Note: The history is deleted on April 30th for both datasets.
 
 ## File name nomenclature
 
-*__ Data in shapefile format__
+* __Data in shapefile format__
 
 File naming convention is:
 
-`{YYYYMMDD}_{HHMM}Z_{STORM-NAME}.{TYPE}.shp`
+`{YYYYMMDD}_{HHMM}Z_{NAME}.{TYPE}.shp`
 
 where:
 
 * __YYYYMMDD__ : Forecast issuance date
 * __HHMM__ : Time in UTC 
 * __Z__ : Constant string, indicating Zulu time (UTC code name)
-* __STORM-NAME__ : Storm name (e.g. BERTHA - hurricane, post-tropical, etc)
+* __NAME__ : Hurricane name (e.g. BERTHA)
 * __TYPE__ : Type of shapefile:
 
     * "pts" - The forecast locations (points) 
@@ -75,7 +75,7 @@ as follows:
 
 When querying the 'lin' shapefile, the elements have the same definition as in the 'pts' file.
 
-*__ Data in GeoJSON format__
+* __Data in GeoJSON format__
 
 File names follow the nomenclature below:
 
