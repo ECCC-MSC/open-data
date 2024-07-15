@@ -18,13 +18,13 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile ou GeoJSON, selon le format choisi.
 
-* Les données en format shapefile sont disponibles à cette adresse :
+* __Les données en format shapefile__ sont disponibles à cette adresse :
 
      * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
 Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
-* Les données en format GeoJSON sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
+* __Les données en format GeoJSON__ sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
 
      * [https://dd.alpha.meteo.gc.ca/hurricanes/](https://dd.alpha.meteo.gc.ca/hurricanes)
 

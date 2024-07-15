@@ -18,13 +18,13 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to shapefile or GeoJSON files according to the selected format.
 
-* Data in shapefile format can be found at this address:
+* __Data in shapefile format__ can be found at this address:
 
      * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
 with {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
-* Data in GeoJSON format can be found in the MSC testing data repository DD-Alpha, at this address:
+* __Data in GeoJSON format__ can be found in the MSC testing data repository DD-Alpha, at this address:
 
      * [https://dd.alpha.weather.gc.ca/hurricanes](https://dd.alpha.weather.gc.ca/hurricanes)
 
