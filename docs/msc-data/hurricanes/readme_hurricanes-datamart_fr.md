@@ -22,9 +22,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
      * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{nom-tempête}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
-où :
-
-     * __nom-tempête__ : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
+Avec __nom-tempête__ : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)
 
 * Les données en format GeoJSON sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
 
@@ -36,9 +34,9 @@ Note: L'historique est effacé le 30 avril pour ces 2 jeux de données.
 
 * __Données en format shapefile__
 
-La convention régissant les noms de fichiers est la suivante :
+Les fichiers ont la nomenclature suivante :
 
-YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
+`{YYYYMMDD_HHMM}Z_{STORM-NAME}.{TYPE}.shp`
 
 où :
 

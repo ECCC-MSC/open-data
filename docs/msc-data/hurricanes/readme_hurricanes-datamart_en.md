@@ -22,9 +22,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
      * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{storm-name}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-where:
-
-     * __storm-name__ : storm name in uppercase (e.g. 'BERTHA' )
+with  __storm-name__ : storm name in uppercase (e.g. 'BERTHA' )
 
 * Data in GeoJSON format can be found in the MSC testing data repository DD-Alpha, at this address:
 
@@ -38,7 +36,7 @@ Note: The history is deleted on April 30th for both datasets.
 
 File naming convention is:
 
-YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp
+`{YYYYMMDD}_{HHMM}Z_{STORM-NAME}.{TYPE}.shp`
 
 where:
 
