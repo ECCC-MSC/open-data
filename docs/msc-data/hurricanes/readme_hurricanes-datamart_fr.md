@@ -22,7 +22,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
      * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
-Avec __{NAME}__ : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
+Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
 * Les données en format GeoJSON sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
 
@@ -88,7 +88,7 @@ Les fichiers ont la nomenclature suivante :
 * __HHmm__ : Heure et minute à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __ Hurricane__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit les trajectoires d'ouragans
+* __Hurricane__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit les trajectoires d'ouragans
 * __Name__ :  Chaîne de caractères constante indiquant le nom de l'ouragan
 * __json__ : Chaîne de caractères constante indiquant le format GeoJSON
 
