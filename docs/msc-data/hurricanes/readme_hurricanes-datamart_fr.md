@@ -24,9 +24,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
-* __Les données en format GeoJSON__ sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC à cette adresse :
+* __Les données en format GeoJSON__ sont disponibles à cette adresse :
 
-     * [https://dd.alpha.meteo.gc.ca/hurricanes/](https://dd.alpha.meteo.gc.ca/hurricanes)
+     * [https://dd.meteo.gc.ca/hurricanes/](https://dd.meteo.gc.ca/hurricanes)
 
 Note: L'historique est effacé le 30 avril pour ces 2 jeux de données.
 
@@ -81,7 +81,7 @@ Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les 
 
 Les fichiers ont la nomenclature suivante :
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{Name}.json`
+`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json`
 
 * __YYYYMMDD__ : Année, mois et jour de l'émission des données
 * __T__ : Délimiteur temporel selon les normes ISO8601
@@ -89,10 +89,10 @@ Les fichiers ont la nomenclature suivante :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __Hurricane__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit les trajectoires d'ouragans
-* __Name__ :  Chaîne de caractères constante indiquant le nom de l'ouragan
+* __NAME__ :  Chaîne de caractères constante indiquant le nom de l'ouragan
 * __json__ : Chaîne de caractères constante indiquant le format GeoJSON
 
-Ex: `20240708T2100Z_MSC_Hurricane_Beryl.json`
+Ex: `20240708T2100Z_MSC_Hurricane_BERYL.json`
 
 ## Support
 

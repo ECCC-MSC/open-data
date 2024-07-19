@@ -24,9 +24,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 with {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
-* __Data in GeoJSON format__ can be found in the MSC testing data repository DD-Alpha, at this address:
+* __Data in GeoJSON format__ can be found at this address:
 
-     * [https://dd.alpha.weather.gc.ca/hurricanes](https://dd.alpha.weather.gc.ca/hurricanes)
+     * [https://dd.weather.gc.ca/hurricanes](https://dd.weather.gc.ca/hurricanes)
 
 Note: The history is deleted on April 30th for both datasets.
 
@@ -79,7 +79,7 @@ When querying the 'lin' shapefile, the elements have the same definition as in t
 
 File names follow the nomenclature below:
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{Name}.json`
+`{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json`
 
 * __YYYYMMDD__ : Year, month and day of data transmission
 * __T__: Time delimiter according to ISO8601 standards
@@ -87,10 +87,10 @@ File names follow the nomenclature below:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
 * __Hurricane__ : Constant string indicating the name of the product contained in the files, i.e. hurricane trajectories
-* __Name__ : Constant string indicating the name of the hurricane
+* __NAME__ : Constant string indicating the name of the hurricane
 * __json__: Constant string indicating that the format is GeoJSON
 
-Ex: `20240708T2100Z_MSC_Hurricane_Beryl.json`
+Ex: `20240708T2100Z_MSC_Hurricane_BERYL.json`
 
 ## Support
 
