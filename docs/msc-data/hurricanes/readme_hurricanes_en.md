@@ -6,7 +6,7 @@
 
 # Hurricane prediction data and products
 
-Hurricane tracks and response zone are issued by the [Canadian Hurricane Centre](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html) as part of the regular hurricane season forecast.
+Hurricane tracks and the hurricane response zone are issued by the [Canadian Hurricane Centre](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html), which provides track forecasts for tropical and post-tropical cyclones that pose a threat to Canada during the hurricane season, from June to November.
 
 ## Access
 
