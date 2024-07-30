@@ -7,8 +7,7 @@
 
 # Data and Products of the Global Deterministic Prediction System
 
-The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global on a native Yin-Yang grid at 15 km horizontal resolution. Data is available for 33 vertical levels and interpolated on a global latitude-longitude uniform grid with 0.2 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.
-
+The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global at 15 km horizontal resolution. Data is available on some thirty vertical levels and interpolated on a global latitude-longitude uniform grid with 0.15 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.
 
 ## Access
 
