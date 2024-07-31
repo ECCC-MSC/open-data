@@ -22,7 +22,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
      * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-with {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
+     With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
 * __Data in GeoJSON format__ can be found at this address:
 
