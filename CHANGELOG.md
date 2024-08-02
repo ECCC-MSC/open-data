@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.8
+
+* date: 2024-08-02
+* announcements:
+    * Not announced
+* new content:
+    * GeoJSON hurricane
+* improvements:
+    * Update GDPS, GEPS, HRDPS-North and RAQDPS abstracts
+* bug fixes: 
+    * Typos
+
 ## 2.6.7
 
 * date: 2024-07-04
