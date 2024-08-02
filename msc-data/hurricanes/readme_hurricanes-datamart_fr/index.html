@@ -128,11 +128,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#nomenclature-des-repertoires-et-noms-de-fichiers" class="nav-link">Nomenclature des répertoires et noms de fichiers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#contenu-du-fichier" class="nav-link">Contenu du fichier</a>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -155,31 +151,39 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_hurricanes_fr/">Trajectoires d'ouragans</a> &gt; Trajectoires d'ouragans sur le Datamart du SMC</p>
 <h1 id="donnees-des-trajectoires-douragans">Données des trajectoires d'ouragans</h1>
-<p>Cette page décrit les données des <a href="../readme_hurricanes_fr/">trajectoires d'ouragans</a>.</p>
-<p>Le Centre canadien des ouragans fournit des fichiers en format shapefile dans le cadre des prévisions régulières lors de la saison des ouragans.</p>
-<p>Les fichiers permettront aux utilisateurs de tracer l'itinéraire des tempêtes prévues dans un système de cartes géographiques de leur choix. Il y a quatre formats shapefiles (*.shp) qui sont produits et comportent chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes d'origine tropicale menace ou risque de menacer le territoire canadien.</p>
-<p>Les trajectoires d'ouragans émises par le Centre canadien de prévision des ouragans sont publiées sur le Datamart du SMC. Ces données sont rendues disponibles en mode expérimental afin d'offrir aux usagers une opportunité d'ingérer et de tester les données en temps réel. Le service sera fourni au mieux de nos possibilités mais veuillez noter qu'il existe une possibilité non négligeable d'interruptions occasionnelles non-annoncées et non-remédiées de ce service expérimental de données, et ce jusqu'à nouvelle annonce.</p>
+<p>Cette page décrit les données des <a href="../readme_hurricanes_fr/">trajectoires d'ouragans</a> disponibles sur le Datamart du SMC en format shapefile et GeoJSON.</p>
+<p>Il y a quatre formats shapefiles (*.shp) qui sont produits et comportent chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes d'origine tropicale menace ou risque de menacer le territoire canadien.</p>
+<p>Veuillez noter que les données en format GeoJSON remplaceront à terme les données en format shapefile. Une annonce sera communiquée à cet effet via la liste de diffusion <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
-<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile.</p>
-<p>Les fichiers shapefile sont disponibles à cette adresse :</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile ou GeoJSON, selon le format choisi.</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile">https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{nom-tempête}/</a></li>
-</ul>
-<p>où :</p>
+<li>
+<p><strong>Les données en format shapefile</strong> sont disponibles à cette adresse :</p>
 <ul>
-<li><strong>nom-tempête</strong> : nom de la tempête en lettres majuscules (p. ex. « BERTHA »)</li>
+<li><a href="https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile">https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/</a></li>
 </ul>
-<p>30 avril : l'historique est effacé</p>
-<h2 id="nomenclature-des-repertoires-et-noms-de-fichiers">Nomenclature des répertoires et noms de fichiers</h2>
-<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
-<p>La convention régissant les noms de fichiers est la suivante :</p>
-<p>YYYYMMDD_HHMMZ_STORM-NAME.TYPE.shp</p>
+<p>Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)</p>
+</li>
+<li>
+<p><strong>Les données en format GeoJSON</strong> sont disponibles à cette adresse :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/hurricanes">https://dd.meteo.gc.ca/hurricanes/</a></li>
+</ul>
+</li>
+</ul>
+<p>Note: L'historique est effacé le 30 avril pour ces 2 jeux de données.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<ul>
+<li><strong>Données en format shapefile</strong></li>
+</ul>
+<p>Les fichiers ont la nomenclature suivante :</p>
+<p><code>{YYYYMMDD_HHMM}Z_{NAME}.{TYPE}.shp</code></p>
 <p>où :</p>
 <ul>
 <li><strong>YYYYMMDD__HHMM</strong> : Date d'émission de la prévision (UTC).</li>
 <li><strong>Z</strong> : Chaîne de caractère constante indiquant le fuseau horaire Zulu (code pour UTC).</li>
-<li><strong>STORM-NAME</strong> : Nom de la tempête (p. ex. BERTHA - ouragan, post-tropical, etc.).</li>
+<li><strong>NAME</strong> : Nom de l'ouragan (p. ex. BERTHA).</li>
 <li>
 <p><strong>TYPE</strong> : Type de fichier shapefile :</p>
 <ul>
@@ -190,10 +194,9 @@
 </ul>
 </li>
 </ul>
-<h2 id="contenu-du-fichier">Contenu du fichier</h2>
-<p>Il y aura 2 types de fichiers, point et ligne.</p>
-<p>Lorsque l'utilisateur interroge le fichier shapefile par points, le contenu de
-chaque colonne est donné comme suit :</p>
+<p><strong>Notes</strong>:</p>
+<p>Il y a 2 types de fichiers, point et ligne.</p>
+<p>Lorsque l'utilisateur interroge le fichier shapefile par points, le contenu de chaque colonne est donné comme suit :</p>
 <table>
 <thead>
 <tr>
@@ -269,6 +272,22 @@ chaque colonne est donné comme suit :</p>
 </tbody>
 </table>
 <p>Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les éléments des fichiers 'pts'.</p>
+<ul>
+<li><strong>Données en format GeoJSON</strong></li>
+</ul>
+<p>Les fichiers ont la nomenclature suivante :</p>
+<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json</code></p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour de l'émission des données</li>
+<li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
+<li><strong>HHmm</strong> : Heure et minute à laquelle les données sont émises</li>
+<li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>Hurricane</strong> : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit les trajectoires d'ouragans</li>
+<li><strong>NAME</strong> :  Chaîne de caractères constante indiquant le nom de l'ouragan</li>
+<li><strong>json</strong> : Chaîne de caractères constante indiquant le format GeoJSON</li>
+</ul>
+<p>Ex: <code>20240708T2100Z_MSC_Hurricane_BERYL.json</code></p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
