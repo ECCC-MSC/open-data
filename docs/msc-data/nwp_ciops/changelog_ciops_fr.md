@@ -1,8 +1,8 @@
-[In English](readme_ciops_en.md)
+[In English](changelog_ciops_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Changements au SCPOG
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SCPOG](readme_ciops_fr.md) > Changements au SCPOG
 
 # Chronologie des changements apportés au Système côtier de prévision océan-glace (SCPOG)
 
@@ -20,7 +20,7 @@ Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologiq
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement Delta Eddington 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_f.pdf). 
 
 **Principaux changements au système SCPOG-Ouest**:
 
@@ -28,7 +28,7 @@ Un résumé des innovations incluses dans cette mise à jour ainsi que leurs imp
 * Passage au modèle CICE6
 * Utilisation du schéma de rayonnement Delta Eddington 
 
-Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_f.pdf). 
 
 
 **Documents associés**:

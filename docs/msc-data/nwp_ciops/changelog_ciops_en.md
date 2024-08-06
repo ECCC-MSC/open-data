@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > CIOPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [CIOPS](readme_ciops_en.md) > CIOPS Changelog
 
 # Chronology of changes to the Coastal Ice and Ocean Prediction System (CIOPS)
 
@@ -19,7 +19,7 @@ On Tuesday June 11, 2024, starting with the 1200 UTC, the Canadian Meteorologica
 * Upgrade to CICE6
 * Usage of Delta Edington radiation scheme
 
-A brief summary of the innovations included in this upgrade of CIOPS-East and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-e-230_east.pdf). 
+A brief summary of the innovations included in this upgrade of CIOPS-East and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-east-230_e.pdf). 
 
 **Significant change in CIOPS-West**:
 
@@ -27,7 +27,7 @@ A brief summary of the innovations included in this upgrade of CIOPS-East and th
 * Upgrade to CICE6
 * Usage of Delta Edington radiation scheme  
 
-A brief summary of the innovations included in this upgrade of CIOPS-West and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-e-230_west.pdf). 
+A brief summary of the innovations included in this upgrade of CIOPS-West and their impact on performance can be consulted in [this document](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_ciops-west-230_e.pdf). 
 
 **Associated documents**:
 
