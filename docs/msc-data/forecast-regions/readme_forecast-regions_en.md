@@ -34,5 +34,5 @@ Not available.
 
 ## Technical documentation
 
-* Current version of the [MSC Geography package](https://dd.weather.gc.ca/meteocode/geodata/version_6.11.0/Documentations/).
+* Current version of the [MSC Geography package](https://dd.weather.gc.ca/meteocode/geodata/version_6.11.0/Documentation/).
 * Last 3 versions are available [here](https://dd.weather.gc.ca/meteocode/geodata/).
