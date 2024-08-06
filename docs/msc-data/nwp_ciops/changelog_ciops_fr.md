@@ -8,7 +8,7 @@
 
 ## Le mardi 11 juin 2024
 
-### Mise à jour du Système côtier de prévision océan-glace est (SCPOG-Est) et west (SCPOG-Ouest) du Centre météorologique canadien (CMC)
+### Mise à jour du Système de prévision côtier océan-glace est (SCPOG-Est) et west (SCPOG-Ouest) du Centre météorologique canadien (CMC)
 
 Le mardi 11 juin 2024, à compter de la passe 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de ses deux Systèmes côtiers de prévision océan-glace: la fenêtre est (SCPOG-Est) et la fenêtre ouest (SCPOG-Ouest). 
 
