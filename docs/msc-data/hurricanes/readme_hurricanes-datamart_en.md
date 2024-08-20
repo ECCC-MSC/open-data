@@ -18,9 +18,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 Data in shapefile format can be found at this address:
 
-     * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
+* [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
 
-      With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
+With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
 Note: The history is deleted on April 30th for both datasets.
 
