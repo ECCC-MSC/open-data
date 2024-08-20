@@ -18,9 +18,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont disponibles à cette adresse :
 
-     * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
+* [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
-     Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
+Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
 Note: L'historique est effacé le 30 avril.
 
