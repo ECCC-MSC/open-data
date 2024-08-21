@@ -16,9 +16,9 @@ Prévisions du modèle GEM, en configuration régionale, valides pour 6, 12, 18 
 * La couverture géographique pour l'ensemble des panneaux est la suivante : L'Amérique du Nord et les régions de l'Arctique, l'Atlantique Nord, le nord de l'Europe et de l'Asie et le Pacifique Nord.
 * Les identificateurs de transmission sont les suivants : CMC776, CMC777, CMC778, CMC779, CMC780, CMC781, CMC782, CMC783.
 
-__Échantillon de carte (4 panneaux)__
+__Exemple de carte (4 panneaux) en temps réel (passe de 12Z, prévision de 6 heures)__
 
-![echantillon de carte](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/samples_products/difax_reg_prog_aviation-package.gif)
+![lien carte](https://meteo.gc.ca/data/model_forecast/780_100.gif)
 
 ## Givrage et Niveau de congélation (panneau supérieur gauche)
 

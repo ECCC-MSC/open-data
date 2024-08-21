@@ -16,9 +16,9 @@ These prognostic charts for 6, 12, 18 and 24 hours (at 0000 and 1200) are produc
 * Area of coverage for all panels is as follows : North America and Arctic regions, North Atlantic, northern portions of Asia, and North Pacific.
 * The transmission identifiers are as follows : CMC776, CMC777, CMC778, CMC779, CMC780, CMC781, CMC782, CMC783.
 
-__Sample chart (4-panel)__
+__Example of a 4 panels chart in real time (12Z run, 6-hour forecast)__
 
-![echantillon de carte](http://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/samples_products/difax_reg_prog_aviation-package.gif)
+![link to chart](https://meteo.gc.ca/data/model_forecast/780_100.gif)
 
 ## Icing and Freezing Level (top left panel)
 
