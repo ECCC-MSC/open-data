@@ -9,7 +9,6 @@
 
 These prognostic charts for 6, 12, 18 and 24 hours (at 0000 and 1200) are produced by the regional run of the Global Environmental Multiscale (GEM) model. Forecasts are packaged as 4-panel charts as depicted below.
 
-</> HTML
 <table style="table-layout: fixed;text-align:center;vertical-align:top;border-width:1px" class="table table-striped table-hover">
    <tbody>
       <tr style="

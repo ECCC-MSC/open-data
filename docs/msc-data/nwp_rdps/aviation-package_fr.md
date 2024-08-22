@@ -9,7 +9,6 @@
 
 Prévisions du modèle GEM, en configuration régionale, valides pour 6, 12, 18 et 24 heures (à 0000 et 1200). Chaque prévision est présentée sous forme de 4 panneaux, illustrés ci-dessous.
 
-</> HTML
 <table style="table-layout: fixed;text-align:center;vertical-align:top;border-width:1px" class="table table-striped table-hover">
    <tbody>
       <tr style="
