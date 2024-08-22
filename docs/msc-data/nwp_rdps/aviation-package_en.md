@@ -9,9 +9,32 @@
 
 These prognostic charts for 6, 12, 18 and 24 hours (at 0000 and 1200) are produced by the regional run of the Global Environmental Multiscale (GEM) model. Forecasts are packaged as 4-panel charts as depicted below.
 
-| Icing & Freezing levels  |  Tropopause heights & High level turbulence |
-|:--------------------------------:|:-------------------------------------------------------:|
-| Surface stress   |  Mid level turbulence |
+</> HTML
+<table style="table-layout: fixed;text-align:center;vertical-align:top;border-width:1px" class="table table-striped table-hover">
+   <tbody>
+      <tr style="
+         background-color: #fafafa;
+         border: black;
+         border-top: 1px solid black;
+         border-left: 0px;
+         border-right: 0px;
+         ">
+         <td st="" style="
+            border-right: 1px solid #dee2e6;
+            ">Icing & Freezing levels</td>
+         <td>Tropopause heights & High level turbulence</td>
+      </tr>
+      <tr style="
+        background-color: #fafafa;
+        ">
+         <td style="
+            border-right: 1px solid #dee2e6;
+            border-bottom: 0px;
+            ">Surface stress</td>
+         <td>Mid level turbulence </td>
+      </tr>
+   </tbody>
+</table>
 
 * Area of coverage for all panels is as follows : North America and Arctic regions, North Atlantic, northern portions of Asia, and North Pacific.
 * The transmission identifiers are as follows : CMC776, CMC777, CMC778, CMC779, CMC780, CMC781, CMC782, CMC783.
