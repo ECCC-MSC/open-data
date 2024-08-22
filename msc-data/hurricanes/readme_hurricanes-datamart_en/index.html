@@ -151,32 +151,18 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hurricanes_en/">Hurricane trajectories</a> &gt; Hurricane trajectories on MSC Datamart</p>
 <h1 id="data-of-the-hurricane-trajectories">Data of the hurricane trajectories</h1>
-<p>This page describes the data of the <a href="../readme_hurricanes_en/">hurricane trajectories</a> available on the MSC Datamart in shapefile and GeoJSON formats.</p>
+<p>This page describes the data of the <a href="../readme_hurricanes_en/">hurricane trajectories</a> available on the MSC Datamart in shapefile format.</p>
 <p>There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.</p>
-<p>Please note that GeoJSON data will eventually replace shapefile data. An announcement to this effect will be made via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> mailing list.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to shapefile or GeoJSON files according to the selected format.</p>
-<ul>
-<li>
-<p><strong>Data in shapefile format</strong> can be found at this address:</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to shapefile files.</p>
+<p>Data in shapefile format can be found at this address:</p>
 <ul>
 <li><a href="https://dd.weather.gc.ca/trajectoires/hurricane/shapefile">https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}</a></li>
 </ul>
 <p>With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')</p>
-</li>
-<li>
-<p><strong>Data in GeoJSON format</strong> can be found at this address:</p>
-<ul>
-<li><a href="https://dd.weather.gc.ca/hurricanes">https://dd.weather.gc.ca/hurricanes</a></li>
-</ul>
-</li>
-</ul>
 <p>Note: The history is deleted on April 30th for both datasets.</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<ul>
-<li><strong>Data in shapefile format</strong></li>
-</ul>
 <p>File naming convention is:</p>
 <p><code>{YYYYMMDD}_{HHMM}Z_{NAME}.{TYPE}.shp</code></p>
 <p>where:</p>
@@ -195,8 +181,7 @@
 </ul>
 </li>
 </ul>
-<p>When querying the points (pts) shapefile, the contents of each column are given
-as follows:</p>
+<p>When querying the points (pts) shapefile, the contents of each column are given as follows:</p>
 <table>
 <thead>
 <tr>
@@ -272,22 +257,6 @@ as follows:</p>
 </tbody>
 </table>
 <p>When querying the 'lin' shapefile, the elements have the same definition as in the 'pts' file.</p>
-<ul>
-<li><strong>Data in GeoJSON format</strong></li>
-</ul>
-<p>File names follow the nomenclature below:</p>
-<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json</code></p>
-<ul>
-<li><strong>YYYYMMDD</strong> : Year, month and day of data transmission</li>
-<li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
-<li><strong>HHmm</strong>: Hour and minute at which data is transmitted</li>
-<li><strong>Z</strong>: Time zone (UTC hour)</li>
-<li><strong>MSC</strong>: Constant character string for Meteorological Service of Canada, the data source</li>
-<li><strong>Hurricane</strong> : Constant string indicating the name of the product contained in the files, i.e. hurricane trajectories</li>
-<li><strong>NAME</strong> : Constant string indicating the name of the hurricane</li>
-<li><strong>json</strong>: Constant string indicating that the format is GeoJSON</li>
-</ul>
-<p>Ex: <code>20240708T2100Z_MSC_Hurricane_BERYL.json</code></p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
