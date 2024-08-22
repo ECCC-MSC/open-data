@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.9
+
+* date: 2024-08-22
+* announcements:
+    * Not announced
+* new content:
+    * GeoJSON hurricane removed from the page
+* improvements:
+    * Update aviation products page (live link to 4 panels)
+* bug fixes: 
+    * Correction abstracts , changelogs 
+
 ## 2.6.8
 
 * date: 2024-08-02
