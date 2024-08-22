@@ -9,9 +9,31 @@
 
 Prévisions du modèle GEM, en configuration régionale, valides pour 6, 12, 18 et 24 heures (à 0000 et 1200). Chaque prévision est présentée sous forme de 4 panneaux, illustrés ci-dessous.
 
-| Givrage & Niveau de congélation  |  Hauteur de la tropopause & Turbulence à haute altitude|
-|--------------------------------|-------------------------------------------------------|
-| Tension en surface  |  Turbulence à moyenne altitude |
+<table style="table-layout: fixed;text-align:center;vertical-align:top;border-width:1px" class="table table-striped table-hover">
+   <tbody>
+      <tr style="
+         background-color: #fafafa;
+         border: black;
+         border-top: 1px solid black;
+         border-left: 0px;
+         border-right: 0px;
+         ">
+         <td st="" style="
+            border-right: 1px solid #dee2e6;
+            ">Givrage & Niveau de congélation</td>
+         <td>Hauteur de la tropopause & Turbulence à haute altitude</td>
+      </tr>
+      <tr style="
+        background-color: #fafafa;
+        ">
+         <td style="
+            border-right: 1px solid #dee2e6;
+            border-bottom: 0px;
+            ">Tension en surface</td>
+         <td>Turbulence à moyenne altitude</td>
+      </tr>
+   </tbody>
+</table>
 
 * La couverture géographique pour l'ensemble des panneaux est la suivante : L'Amérique du Nord et les régions de l'Arctique, l'Atlantique Nord, le nord de l'Europe et de l'Asie et le Pacifique Nord.
 * Les identificateurs de transmission sont les suivants : CMC776, CMC777, CMC778, CMC779, CMC780, CMC781, CMC782, CMC783.
