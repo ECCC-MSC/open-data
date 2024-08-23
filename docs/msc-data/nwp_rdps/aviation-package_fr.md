@@ -40,7 +40,7 @@ Prévisions du modèle GEM, en configuration régionale, valides pour 6, 12, 18 
 
 __Exemple de carte (4 panneaux) en temps réel (passe de 12Z, prévision de 6 heures)__
 
-![lien carte](https://meteo.gc.ca/data/model_forecast/780_100.gif)
+<a href="https://meteo.gc.ca/data/model_forecast/780_100.gif" target="_blank"><img alt="lien vers la carte" src="https://meteo.gc.ca/data/model_forecast/780_100.gif" /></a>
 
 ## Givrage et Niveau de congélation (panneau supérieur gauche)
 
