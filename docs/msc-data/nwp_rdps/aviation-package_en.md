@@ -40,7 +40,7 @@ These prognostic charts for 6, 12, 18 and 24 hours (at 0000 and 1200) are produc
 
 __Example of a 4 panels chart in real time (12Z run, 6-hour forecast)__
 
-![link to chart](https://meteo.gc.ca/data/model_forecast/780_100.gif)
+<a href="https://meteo.gc.ca/data/model_forecast/780_100.gif" target="_blank"><img alt="link to chart" src="https://meteo.gc.ca/data/model_forecast/780_100.gif" /></a>
 
 ## Icing and Freezing Level (top left panel)
 
