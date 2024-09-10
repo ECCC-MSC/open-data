@@ -14,36 +14,17 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles aux adresses suivantes :
+Les données sur une grille lat-lon tournée sont accessibles à l'adresse suivante:
 
-* Données sur grille polaire stéréographique:[https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic/{hh}](https://dd.meteo.gc.ca/analysis/precip/hrdpa/grib2/polar_stereographic)
-* Données sur grille lat-lon tournée: [https://dd.meteo.gc.ca/model_hrdpa/2.5km/{HH}/](https://dd.meteo.gc.ca/model_hrdpa/2.5km)
+* [https://dd.meteo.gc.ca/model_hrdpa/2.5km/{HH}/](https://dd.meteo.gc.ca/model_hrdpa/2.5km)
 
 où :
 
-* __polar_stereographic__ :  Projection de la grille
-* __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 
 Un historique de 30 jours est conservé dans ces répertoires.
 
-## Spécification technique des grilles
-
-* __Grille polaire stéréographique__
-
-![image de la spécification technique de la grille AHRDP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique à haute résolution.
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 2500 |
-| nj | 1222 | 
-| résolution à 60° N | 2.5 km |
-| coordonnées du premier point de grille | 42.2504° N ; 131.0928° W | 
-| orientation de la grille (par rapport à l’axe des j) | -115,0° |
-
-* __Grille lat-lon tournée__
+## Spécification technique de la grille
 
 ![Grille HRDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa_rlatlon.png)
 
@@ -59,34 +40,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée:
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées.
 
 ## Nomenclature des noms de fichiers 
-
-### Grille polaire stéréographique
-
-Les fichiers ont la nomenclature suivante :
-
-CMC_HRDPA_APCP-TotalPrecipAmount-HHMMcutoff_SFC_0_ps2.5km_YYYYMMDDHH_000.grib2
-
-où :
-
-* __CMC__ : Les données sont produites par le Centre Météorologique Canadien (Chaîne constante)
-* __HRDPA__ : Analyse à Haute Résolution Déterministe de Précipitation (Chaîne constante)
-* __APCP__ : Analyse de Précipitation (Chaîne constante)
-* __AccumTotalePrecipPeriode__ : La quantité de précipitation totale sur une période de temps définie en nombre d'heures (006 ou 024)
-* __HHMMcutoff__ : Le temps de coupure des observations en nombre d'heures et minutes après l'heure de validité. (0100cutoff ou 0700cutoff)
-* __SFC_0__ : Le type de niveau est Surface et son type de valeur est 0 (Chaîne constante)
-* __ps2.5km__: Le type de projection est polaire-stéréographique à une résolution de 2.5 km (Chaîne constante)
-* __YYYYMMDDHH__: Heure de validité de l'analyse en UTC. YYYY=Année, MM=Mois, DD=Jour, HH=Heure (ex: 2018020912)
-* __000__: Le temps de projection en nombre d'heures. Toujours 000 pour une analyse (Chaîne constante)
-
-Exemple :
-
-CMC_HRDPA_APCP-006-0100cutoff_SFC_0_ps2.5km_2018020912_000.grib2
-
-Ce fichier provient du Centre Météorologique Canadien (CMC) et contient des données de l'Analyse à Haute Résolution Déterministe de Précipitation (HRDPA). C'est une analyse de précipitation (APCP) sur des cumuls de 6 heures (006) dont la période de cumul débute à 2018020906 et se termine à 2018020912. Elle est considérée préliminaire parce que la collecte des observations s'est faite jusqu'à 2018020913, soit 1 heure après l'heure de validité (0100cutoff). Les données sont sur une grille stéréographique polaire à une résolution de 2.5 km (ps2.5km). L'heure de validité de l'analyse est 2018020912_000 où le suffixe _000 signifie que le temps de projection dans le future est nulle, ce qui est toujours le cas pour une analyse. Les données de ce fichier sont encodées en format GRIB2 (.grib2).
-
-À noter qu'une deuxième variable est également incluse dans ce fichier, soit l'indice de confiance de l'analyse (CFIA).
-
-### Grille lat-lon tournée
 
 Les fichiers ont une des nomenclatures suivantes :
 
@@ -130,10 +83,6 @@ __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier c
 <script>
   loadTable("csv-table", "../../../assets/csv/HRDPA_Variables-List_fr.csv");
 </script>
-
-## À propos du masque No-Data de la grille polaire stéréographique
-
-Un masque pour mieux représenter les zones où les données ne sont pas disponibles, appelées aussi "No-Data" a été ajouté dans notre procédure d’encodage GRIB2. Ce masque vise uniquement quelques points de grille non-valides (données non-disponibles), toujours les mêmes et qui se situent en périphérie du domaine. Notons que ces points masqués n’ont aucun effet négatif sur la qualité du produit.
 
 ## Support
 
