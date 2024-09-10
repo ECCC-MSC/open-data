@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.10
+
+* date: 2024-09-10
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * Update HRDPA page (removal of PS grid)
+* bug fixes: 
+    * Typos
+
 ## 2.6.9
 
 * date: 2024-08-22
