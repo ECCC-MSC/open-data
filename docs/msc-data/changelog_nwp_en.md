@@ -8,6 +8,10 @@
 
 ## 2024
 
+### September 11, 2024
+
+* [Temporary removal of the Fire Weather network observations (OMNRF) from the Regional Deterministic Precipitation Analysis System (RDPA) assimilation at the Canadian Meteorological Centre (CMC)](nwp_rdpa/changelog_rdpa_en.md#wednesday-september-11-2024)
+
 ### June 11, 2024
 
 Atmosphere

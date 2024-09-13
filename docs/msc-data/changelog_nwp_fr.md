@@ -8,6 +8,10 @@
 
 ## 2024
 
+### 11 septembre 2024
+
+* [Retrait temporaire des observations du réseau Fire Weather (OMNRF) du système d'assimilation de l'Analyse régionale déterministe de précipitation (ARDP) au Centre météorologique canadien (CMC)](nwp_rdpa/changelog_rdpa_fr.md#le-mercredi-11-septembre-2024)
+
 ### 11 juin 2024
 
 Atmosphère
