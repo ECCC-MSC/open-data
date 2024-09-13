@@ -6,6 +6,14 @@
 
 # Chronology of changes to the Regional Deterministic Precipitation Analysis system (CaPA-RDPA)
 
+## Wednesday September 11, 2024
+
+### Temporary removal of the Fire Weather network observations (OMNRF) from the Regional Deterministic Precipitation Analysis System (RDPA) assimilation at the Canadian Meteorological Centre (CMC)
+
+Starting on September 11, 2024, Fire Weather network observations from the Ontario Ministry of Natural Resources and Forestry (OMNRF) have been temporarily removed from the set of observations assimilated into the Regional Deterministic Precipitation Analysis (RDPA). This update is effective at 06UTC for the final and at 12UTC for the preliminary analyses.
+
+This update was required to prevent the influence of some erroneous observations from the OMNRF network on the final RDPA analysis over certain regions in Southern Ontario – particularly in the Kingston-Ottawa and Huron-Erie regions. An investigation is in progress to identify the problematic stations and exclude them from the RDPA analysis once the network is reinstated. The issue appears to mostly stem from false zero observations reported by certain gauges in the OMNRF network.
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 6.0.0 of the Resolution Deterministic Precipitation Analysis (RDPA) at the Canadian Meteorological Centre

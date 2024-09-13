@@ -6,6 +6,14 @@
 
 # Chronologie des changements apportés à l'Analyse régionale déterministe de précipitation (CaPA-ARDP)
 
+## Le mercredi 11 septembre 2024
+
+### Retrait temporaire des observations du réseau Fire Weather (OMNRF) du système d'assimilation de l'Analyse régionale déterministe de précipitation (ARDP) au Centre météorologique canadien (CMC)
+
+À compter du 11 septembre 2024, les observations du réseau Fire Weather du ministère des Richesses naturelles et des Forêts de l'Ontario (OMNRF) ont été temporairement retirées de l'ensemble des observations assimilées dans l'Analyse régionale déterministe de précipitation (ARDP). Cette mise à jour est effective à 06UTC pour l'analyse finale et à 12UTC pour l'analyse préliminaire.
+
+Cette mise à jour était nécessaire pour éviter l'impact de certaines observations erronées du réseau OMNRF sur l'ARDP finale sur certaines régions du sud de l'Ontario - en particulier dans les régions de Kingston-Ottawa et Huron-Erie. Une enquête est en cours pour identifier les stations problématiques et les exclure de l'ARDP une fois le réseau rétabli. Le problème semble provenir principalement de fausses observations de zéro rapportées par certaines jauges du réseau OMNRF.
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour de l'Analyse régionale déterministe de précipitation (ARDP) 6.0.0 du Centre météorologique canadien (CMC)
