@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * NA
 * improvements:
-    * Update RDPA changelog
+    * Update RDPA, HRDPA & HREPA changelogs
 * bug fixes: 
     * Typos
 
