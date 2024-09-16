@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.11
+
+* date: 2024-09-16
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * Update RDPA changelog
+* bug fixes: 
+    * Typos
+
 ## 2.6.10
 
 * date: 2024-09-10
