@@ -1220,6 +1220,7 @@ Licensed under the Apache License, Version 2.0.
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Importation of Python modules </span>
+<span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
@@ -1245,6 +1246,7 @@ Licensed under the Apache License, Version 2.0.
 <span class="n">time_zone</span> <span class="o">=</span> <span class="o">-</span><span class="mi">7</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt"># Importation of Python modules 
+import json
 from datetime import datetime, timedelta
 import re
 import warnings
@@ -1356,16 +1358,16 @@ min_x, min_y, max_x, max_y = x - 0.25, y - 0.25, x + 0.25, y + 0.25</div>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># WMS service connection</span>
-<span class="n">wms</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span><span class="s1">&#39;https://geo.weather.gc.ca/geomet?SERVICE=WMS&#39;</span> <span class="o">+</span>
-                    <span class="s1">&#39;&amp;REQUEST=GetCapabilities&#39;</span><span class="p">,</span>
-                    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span><span class="p">,</span>
-                    <span class="n">timeout</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">wms</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span>
+    <span class="s1">&#39;https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERGE5&#39;</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span>
+<span class="p">)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"># WMS service connection
-wms = WebMapService('https://geo.weather.gc.ca/geomet?SERVICE=WMS' +
-                    '&REQUEST=GetCapabilities',
-                    version='1.3.0',
-                    timeout=300)</div>
+wms = WebMapService(
+    'https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERGE5',
+    version='1.3.0'
+)</div>
     
         </div>
     </div>
@@ -1486,7 +1488,7 @@ while time[-1] < end_time:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The WMS service can now be queried. To get the probability of getting 5 mm or more of precipitations for each available prediction, a <code>for</code> loop is used to query the WMS service with each prediction time and date as parameters. As the results of the request contains different informations, the probability has to be recovered from the results. To achieve this, <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> (<code>re</code> module) can be used to find a character chain. Regular expressions, also called regex, are expressions that describe a search pattern. In this use case exemple, the regex used are <code>\s</code> (whitespace character), <code>\d</code> (numerical characters), <code>*</code> (0 or more characters from the regex present before it) et <code>+</code> (1 or more characters from the regex present before it). Using the <code>re.findall</code> methods, all the the character chains corresponding to the regex expression given will be extracted. The <code>re.sub</code> and <code>strip</code> methods will also be used to remove the characters present around the value we are looking for.</p>
+<p>The WMS service can now be queried. To get the probability of getting 5 mm or more of precipitations for each available prediction, a <code>for</code> loop is used to query the WMS service with each prediction time and date as parameters. In order to retrieve the probability for each time and date, a JSON response is retrieved via a WMS GetFeatureInfo request, and the probability value is extracted from the GeoJSON feature representing the returned pixel.</p>
 
 </div>
 </div>
@@ -1513,7 +1515,7 @@ while time[-1] < end_time:
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Loop to carry out the requests and extract the probabilities</span>
-<span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span> 
+<span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span>
     <span class="n">info</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">pixel_value</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">timestep</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>
@@ -1524,25 +1526,24 @@ while time[-1] < end_time:
                                        <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
                                        <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;image/jpeg&#39;</span><span class="p">,</span>
                                        <span class="n">query_layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span>
-                                       <span class="n">info_format</span><span class="o">=</span><span class="s1">&#39;text/plain&#39;</span><span class="p">,</span>
+                                       <span class="n">info_format</span><span class="o">=</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
                                        <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
                                        <span class="n">feature_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
                                        <span class="n">time</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">timestep</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;Z&#39;</span>
                                        <span class="p">))</span>
         <span class="c1"># Probability extraction from the request&#39;s results</span>
         <span class="n">text</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
-        <span class="n">pixel_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;value_0\s+\d*.*\d+&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)))</span>
-        <span class="n">pixel_value</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span>
-            <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;value_0 = </span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">pixel_value</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-            <span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;[&quot;&quot;]&#39;</span><span class="p">)</span>
-        <span class="p">)</span>
+        <span class="n">json_text</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">pixel_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="nb">float</span><span class="p">(</span><span class="n">json_text</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
+            <span class="p">)</span>
     
     <span class="k">return</span> <span class="n">pixel_value</span>
 
 <span class="n">pixel_value</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt"># Loop to carry out the requests and extract the probabilities
-def request(layer): 
+def request(layer):
     info = []
     pixel_value = []
     for timestep in time:
@@ -1553,18 +1554,17 @@ def request(layer):
                                        size=(100, 100),
                                        format='image/jpeg',
                                        query_layers=[layer],
-                                       info_format='text/plain',
+                                       info_format='application/json',
                                        xy=(50, 50),
                                        feature_count=1,
                                        time=str(timestep.isoformat()) + 'Z'
                                        ))
         # Probability extraction from the request's results
         text = info[-1].read().decode('utf-8')
-        pixel_value.append(str(re.findall(r'value_0\s+\d*.*\d+', text)))
-        pixel_value[-1] = float(
-            re.sub('value_0 = \'', '', pixel_value[-1])
-            .strip('[""]')
-        )
+        json_text = json.loads(text)
+        pixel_value.append(
+            float(json_text['features'][0]['properties']['value'])
+            )
     
     return pixel_value
 
@@ -1697,6 +1697,11 @@ pixel_value = request(layer)
 
 <span class="c1"># Add quantity of precipitations to the plot</span>
 <span class="c1"># Verification of temporal parameters compatibility:</span>
+<span class="n">wms</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span>
+    <span class="s1">&#39;https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERMEAN&#39;</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span>
+<span class="p">)</span>
+
 <span class="n">start_time1</span><span class="p">,</span> <span class="n">end_time1</span><span class="p">,</span> <span class="n">interval1</span> <span class="o">=</span> <span class="n">time_parameters</span><span class="p">(</span><span class="s1">&#39;REPS.DIAG.3_PRMM.ERMEAN&#39;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="n">start_time1</span> <span class="o">==</span> <span class="n">start_time</span>
@@ -1809,6 +1814,11 @@ def fig(x, y, title, xlabel, ylabel, ylim, color = 'black', y2 = '', y2label = '
 
 # Add quantity of precipitations to the plot
 # Verification of temporal parameters compatibility:
+wms = WebMapService(
+    'https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERMEAN',
+    version='1.3.0'
+)
+
 start_time1, end_time1, interval1 = time_parameters('REPS.DIAG.3_PRMM.ERMEAN')
 
 if (start_time1 == start_time
@@ -1857,9 +1867,9 @@ plt.show()</div>
 
 
 
-<div id="7129d14c-cc5b-4109-893e-511ed698811f" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="e8705d1d-065f-4727-8a47-d0c72d255f6a" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('7129d14c-cc5b-4109-893e-511ed698811f');
+var element = document.getElementById('e8705d1d-065f-4727-8a47-d0c72d255f6a');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -2894,9 +2904,9 @@ plt.show()</div>
 
 
 
-<div id="928d0508-5811-4765-a531-d5c3e10396dd" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="e2b0db09-59ed-48c5-b36b-e9dae9320632" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('928d0508-5811-4765-a531-d5c3e10396dd');
+var element = document.getElementById('e2b0db09-59ed-48c5-b36b-e9dae9320632');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
