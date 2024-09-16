@@ -12,7 +12,9 @@
 
 Starting on September 11, 2024, Fire Weather network observations from the Ontario Ministry of Natural Resources and Forestry (OMNRF) have been temporarily removed from the set of observations assimilated into the Regional Deterministic Precipitation Analysis (RDPA). This update is effective at 06UTC for the final and at 12UTC for the preliminary analyses.
 
-This update was required to prevent the influence of some erroneous observations from the OMNRF network on the final RDPA analysis over certain regions in Southern Ontario – particularly in the Kingston-Ottawa and Huron-Erie regions. An investigation is in progress to identify the problematic stations and exclude them from the RDPA analysis once the network is reinstated. The issue appears to mostly stem from false zero observations reported by certain gauges in the OMNRF network.
+This update was required to prevent the influence of some erroneous observations from the OMNRF network on the final RDPA analysis over certain regions in Southern Ontario – particularly in the Kingston-Ottawa and Huron-Erie regions. This has a minor impact on system performance, since in most cases, the gaps are properly filled by observations from the other networks, particularly the synoptic gauges, as well as the radar and satellite QPEs.
+
+An investigation is in progress to identify the problematic stations and exclude them from the RDPA analysis once the network is reinstated. The issue appears to mostly stem from false zero observations reported by certain gauges in the OMNRF network.
 
 ## Tuesday June 11, 2024
 
