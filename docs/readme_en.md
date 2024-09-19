@@ -100,7 +100,7 @@ The most frequently asked questions about MSC's open data are collected in a [FA
 
 ## Your opinion matters to us
 
-In order for the Meteorological Service of Canada open data user documentation to meet your needs, please let us know what you think by answering this short [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=35b3c882-2af9-488f-ad98-9112d2892b8f).
+In order for the Meteorological Service of Canada open data user documentation to meet your needs, please let us know what you think by answering this short [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=42af4a30-525a-4514-8905-21c027aeea35&lang=EN&r=6ea11a22-4476-4dd6-b02a-dbbc15e9e3d4).
 </br></br>
 
 ## Contact us
