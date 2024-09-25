@@ -128,10 +128,12 @@ Les données brutes du SMC peuvent être récupérées par les [services web Geo
 
 Les exemples de cas d'utilisation suivants sont disponibles :
 
-* [Arthur : profits anticipés selon la probabilité de précipitation](../usage/use-case_arthur/use-case_arthur_fr/):
+* [Arthur : profits anticipés selon la probabilité de précipitation](../use-case_arthur/use-case_arthur_fr/):
     * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC Web Map Service (WMS) pour créer des tables et graphiques
 * [Cathy : suivre les niveaux d'eau aux stations hydrométriques](../use-case_oafeat/use-case_oafeat-script_fr/):
     * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Features (OAFeat) pour créer des séries temporelles et cartes interactives
+* [Gerald : profil thermique de l'atmosphère pour voyager sécuritairement](../use-case_skewt/use-case_skewt_fr/):
+    * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Process (OAProc) pour créer des tables et graphiques
 
 Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/wms_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
