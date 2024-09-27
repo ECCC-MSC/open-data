@@ -4,9 +4,9 @@
 
 [TOC](../readme_en.md) > [Usage overview](readme_en.md) > Using OGC API - Features with R and VBA
 
-# Tutorial: querying data with GeoMet-OGC-API Features using R and VBA programming languages
+# Tutorial: querying data with OGC API - Features using R and VBA programming languages
 
-The [OGC API - Features](https://eccc-msc.github.io/open-data/msc-geomet/ogc_api_en/#ogc-api-features) web services available in GeoMet-OGC-API offer the capability to query vector geospatial data and retrieve it in GeoJSON and CSV formats. The output file can then be used for display or further data processing. This tutorial will show you how you can:
+The [OGC API - Features](https://eccc-msc.github.io/open-data/msc-geomet/ogc_api_en/#ogc-api-features) web services available in GeoMet-OGC-API offer the capability to query vector geospatial data and retrieve it in GeoJSON and CSV formats. The output file can then be used for display or additional data processing. This tutorial will show you how you can:
 
 * Query and retrieve vector geospatial data from GeoMet-OGC-API with [R](https://www.r-project.org/) and Excel's [VBA](https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office)
 * Load the data inside the [R](https://www.r-project.org/) code editor and display time series data with a simple graph
