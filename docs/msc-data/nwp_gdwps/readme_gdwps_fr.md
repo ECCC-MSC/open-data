@@ -6,7 +6,7 @@
 
 # Données et Produits du Système global de prévision déterministe de vague (SGPDV)
 
-Le Système global de prévision déterministe de vague (SGPDV) produit les prévisions de vagues jusqu'à 120 heures dans le futur en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres et la concentration de glace du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md). La concentration de glace est utilisée par le modèle pour atténuer la croissance des vagues dans les zones couvertes par 25% à 75% de glace ou la supprimer lorsque la concentration dépasse 75%. Les éléments prévus incluent notamment la hauteur significative des vagues, la période pic ainsi que la hauteur, la direction et la période de la première houle.
+Le Système global de prévision déterministe de vague (SGPDV) produit les prévisions de vagues jusqu'à 240 heures dans le futur en utilisant le modèle spectral de prévision de vague de troisième génération WaveWatch III® (WW3). Le modèle est forcé par les vents à une élévation de 10 mètres et la concentration de glace du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md). La concentration de glace est utilisée par le modèle pour atténuer la croissance des vagues dans les zones couvertes par 25% à 75% de glace ou la supprimer lorsque la concentration dépasse 75%. Les éléments prévus incluent notamment la hauteur significative des vagues, la période pic ainsi que la hauteur, la direction et la période de la première houle.
 
 ## Accès
 
