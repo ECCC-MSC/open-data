@@ -103,6 +103,10 @@ The files contain probability products by member counting above or below differe
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
 
+###### GUST
+
+* Probability above 10, 15 and 25 m/s
+
 ###### IPRATE
 
 * Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40 and 50 kg/(m<sup>2</sup>*s)

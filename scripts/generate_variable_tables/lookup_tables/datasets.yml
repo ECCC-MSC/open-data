@@ -33,7 +33,7 @@ RDWPS:
     - model_rdwps/superior/1km/00
 
 GEPS: 
-    - ensemble/geps/grib2/products/00/024
+    - ensemble/geps/grib2/products/12/012
     - ensemble/geps/grib2/raw/00/024
 
 REPS:

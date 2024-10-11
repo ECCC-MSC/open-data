@@ -104,6 +104,10 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
 
+###### GUST
+
+* Probabilité au dessus de 10, 15 et 25 m/s
+
 ###### IPRATE
 
 * Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40 et 50 kg/(m<sup>2</sup>*s)
