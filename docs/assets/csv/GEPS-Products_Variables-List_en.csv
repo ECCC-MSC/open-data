@@ -10,4 +10,7 @@ Temperature,TMP,2 m Above Ground Level,K
 Total cloud cover,TCDC,Surface,%
 Total precipitation rate,TPRATE,Surface,kg/(m<sup>2</sup>*s)
 Wind chill factor,WCF,2 m Above Ground Level,K
+Wind speed (gust),GUST,10 m Above Ground Level,m/s
 Wind speed,WIND,10 m Above Ground Level,m/s
+Wind speed,WIND,250 mb,m/s
+Wind speed,WIND,850 mb,m/s

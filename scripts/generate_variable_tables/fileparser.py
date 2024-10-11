@@ -6,27 +6,32 @@ from osgeo import gdal
 # Module logger
 logger = logging.getLogger(__name__)
 
-def generate_row(language, variable_key, level_key, variable_LUT, level_LUT):
+def generate_row(language, variable_name, level_key, variable_LUT, level_LUT):
     '''
         Create a formatted table row from metadata.
         Translate metadata to english or french with lookup tables.
         Parameters:
             language (str): "EN" for english or "FR" for french
-            variable_key (str): Variable name
+            variable_name (str): Variable name
             level_key (str): Variable level
             variable_LUT (dict): Variables lookup table
             level_LUT (dict): Levels lookup table
         Returns:
             row (str): Formatted table row   
     '''
+    var_keys = [key for key in variable_LUT if key.lower() in variable_name.lower()]
     # Convert variable with lookup table
-    if variable_key in variable_LUT:
-        variable = variable_LUT[variable_key]['Variable'][language]
-        abbreviation = variable_LUT[variable_key]['Abbreviation']
-        unit = variable_LUT[variable_key]['Unit'][language]
+    if var_keys:
+        var_key = ""
+        for key in var_keys:
+            if len(key) > len(var_key):
+                var_key = key
+        variable = variable_LUT[var_key]['Variable'][language]
+        abbreviation = variable_LUT[var_key]['Abbreviation']
+        unit = variable_LUT[var_key]['Unit'][language]
     else:
-        logger.warning(f'Variable {variable_key} not found')
-        variable = variable_key
+        logger.warning(f'Variable {variable_name} not found')
+        variable = variable_name
         abbreviation = 'unknown'
         unit = 'unknown'
     # Convert level with lookup table
@@ -101,7 +106,8 @@ def parse_metadata(files, directory, model, variable_LUT, product_LUT, level_LUT
                     name = dataset.GetRasterBand(i).GetMetadataItem('long_name')
                     level = dataset.GetRasterBand(i).GetMetadataItem('NETCDF_DIM_depth')
                 # Insert metadata in variable or product lists
-                if name in product_LUT:
+                prod_keys = [key for key in product_LUT if key.lower() in name.lower()]
+                if prod_keys:
                     prod_data_en.append(generate_row('EN', name, level, product_LUT, level_LUT))
                     prod_data_fr.append(generate_row('FR', name, level, product_LUT, level_LUT))
                 else:

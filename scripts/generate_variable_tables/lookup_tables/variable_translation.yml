@@ -1,6 +1,6 @@
 # GRIB2 variables
 
-24 hr Prob of Categorical freezing rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Categorical freezing rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of freezing rain
         FR: Probabilité de pluie verglaçante
@@ -9,7 +9,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Prob of Categorical ice pellets 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Categorical ice pellets 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of ice pellets
         FR: Probabilité de grésil
@@ -18,7 +18,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Prob of Categorical rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Categorical rain 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of rain
         FR: Probabilité de pluie
@@ -27,7 +27,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Prob of Categorical snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Categorical snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of snow
         FR: Probabilité de neige
@@ -36,7 +36,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Prob of Presence of blowing snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Presence of blowing snow 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of blowing snow
         FR: Probabilité de poudrerie
@@ -45,7 +45,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Prob of Presence of snow squalls 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
+Prob of Presence of snow squalls 0=No; 1=Yes; 2-191=Reserved; 192-254=Reserved for local use; 255=Missing [%]:
     Variable:
         EN: Probability of snow squalls
         FR: Probabilité de bourrasque de neige
@@ -54,7 +54,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Probability of 0.01 inch of precipitation [%]:
+Probability of 0.01 inch of precipitation [%]:
     Variable:
         EN: Probability of precipitation
         FR: Probabilité de précipitation
@@ -63,7 +63,7 @@
         EN: '%'
         FR: '%'
 
-24 hr Thunderstorm probability [%]:
+Thunderstorm probability [%]:
     Variable:
         EN: Probability of thunderstorm occurence
         FR: Probabilité d'occurrence d'orage
@@ -71,24 +71,6 @@
     Unit:
         EN: '%'
         FR: '%'
-
-15 hr Total precipitation [kg/(m^2)]:
-    Variable:
-        EN: Total precipitation
-        FR: Précipitation totale
-    Abbreviation: APCP
-    Unit:
-        EN: kg/m<sup>2</sup>
-        FR: kg/m<sup>2</sup>
-
-24 hr Total precipitation [kg/(m^2)]:
-    Variable:
-        EN: Total precipitation
-        FR: Précipitation totale
-    Abbreviation: APCP
-    Unit:
-        EN: kg/m<sup>2</sup>
-        FR: kg/m<sup>2</sup>
 
 Absolute vorticity [1/s]:
     Variable:
@@ -711,15 +693,6 @@ Soil Temperature [K]:
         EN: K
         FR: K
 
-Soil temperature [K]:
-    Variable:
-        EN: Soil Temperature
-        FR: Température du sol
-    Abbreviation: TSOIL
-    Unit:
-        EN: K
-        FR: K
-
 Soil Volumetric Ice Content (Water Equivalent)  [m^3/m^3]:
     Variable:
         EN: Soil Volumetric Ice Content (Water Equivalent)
@@ -791,6 +764,15 @@ Total column integrated ozone [Dobson]:
     Unit:
         EN: 'DU'
         FR: 'DU'
+
+Total precipitation rate [kg/(m^2*s)]:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Abbreviation: TPRATE
+    Unit:
+        EN: kg/(m<sup>2</sup>*s)
+        FR: kg/(m<sup>2</sup>*s)
 
 Total precipitation [kg/(m^2)]:
     Variable:
@@ -927,20 +909,20 @@ Wind direction (from which blowing) [deg true]:
         EN: Degree true
         FR: Degré vrai
 
-Wind speed [m/s]:
-    Variable:
-        EN: Wind speed
-        FR: Vitesse du vent
-    Abbreviation: WSPD
-    Unit:
-        EN: m/s 
-        FR: m/s
-
 Wind speed (gust) [m/s]:
     Variable:
         EN: Wind speed (gust)
         FR: Vitesse du vent (rafale)
     Abbreviation: GUST
+    Unit:
+        EN: m/s 
+        FR: m/s
+
+Wind speed [m/s]:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Abbreviation: WSPD
     Unit:
         EN: m/s 
         FR: m/s
@@ -1010,19 +992,19 @@ sea ice divergence:
         EN: '%/day'
         FR: '%/day'
 
-sea ice shear: 
+sea ice shear strain rate:
     Variable:
-        EN: Sea ice shear
-        FR: Cisaillement de la glace de mer
+        EN: Sea ice shear strain rate
+        FR: Taux de déformation dû au cisaillement dans la glace de mer
     Abbreviation: iiceshear
     Unit:
         EN: '%/day'
         FR: '%/day'
 
-sea ice shear strain rate:
+sea ice shear: 
     Variable:
-        EN: Sea ice shear strain rate
-        FR: Taux de déformation dû au cisaillement dans la glace de mer
+        EN: Sea ice shear
+        FR: Cisaillement de la glace de mer
     Abbreviation: iiceshear
     Unit:
         EN: '%/day'
