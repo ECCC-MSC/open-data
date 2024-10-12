@@ -55,7 +55,7 @@ where :
 * __LVL__ : Vertical level [Sfc for the surface, AGL for fixed height above ground]
 * __Grille__ : Horizontal grid type [LatLon]
 * __resolution__ : Indicating resolution in degreee in latitude and longitude directions [0.25]
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ...048, 051, ..., 117, 240]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ...048, 051, ..., 237, 240]
 * __grib2__: constant string indicating the GRIB2 format is used
 
 Example of file name :
