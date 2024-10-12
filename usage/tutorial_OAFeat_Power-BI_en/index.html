@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>tutorial OAFeat Power BI en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#tutorial-querying-and-using-data-with-ogc-api-features-using-power-bi" class="nav-link">Tutorial: querying and using data with OGC API - Features using Power BI</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#building-the-url-to-get-the-data-you-want" class="nav-link">Building the URL to get the data you want</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#simple-scenario-using-power-bi" class="nav-link">Simple scenario using Power BI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../tutorial_OAFeat_Power-BI_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; <a href="../readme_en/">Usage overview</a> &gt; Using OGC API - Features with Power BI</p>
+<h1 id="tutorial-querying-and-using-data-with-ogc-api-features-using-power-bi">Tutorial: querying and using data with OGC API - Features using Power BI</h1>
+<p>The <a href="https://eccc-msc.github.io/open-data/msc-geomet/ogc_api_en/#ogc-api-features">OGC API - Features</a> web services available in GeoMet-OGC-API offer the capability to query vector geospatial data and retrieve it in GeoJSON and CSV formats. The output file can then be used for display or additional data processing (<a href="../tutorial_OAFeat_R-Excel_en/">check out the R and Excel/VBA examples using those same files!</a>). This tutorial will show you how you can:</p>
+<ul>
+<li>Query and retrieve vector geospatial data from GeoMet-OGC-API with <a href="https://www.microsoft.com/en-au/power-platform/products/power-bi/">Power BI</a> as CSV</li>
+<li>Specify what data you want from the <a href="https://api.weather.gc.ca/collections/">Open Data Collections</a></li>
+<li>Load the data inside the <a href="https://www.microsoft.com/en-au/power-platform/products/power-bi/">Power BI Report page</a> and display data with a simple map.</li>
+</ul>
+<h2 id="building-the-url-to-get-the-data-you-want">Building the URL to get the data you want</h2>
+<p>So, the way we'll be adding the data to <a href="https://powerbi.microsoft.com/en-au/">Power BI</a> is going to be by specifying a Web URL. You can also download the data as CSV on your station and load it to <a href="https://powerbi.microsoft.com/en-au/">Power BI</a> from there, but since you don't need to, it's usually better to just query from the Web.</p>
+<p>First things first, we'll get to the <a href="https://api.weather.gc.ca/collections/">Open Data Collections</a> URL and select the one that we want. In this case we'll be choosing Real-time hydrometric data, then we'll click on <code>Browse through the items of "Real-time hydrometric data"</code>. If you're following along, the page URL should look something like <code>https://api.weather.gc.ca/collections/hydrometric-realtime/items</code>. Now we could use it like this, but let's filter on some values first!</p>
+<p>We will scroll down to the table and click on <code>DATETIME</code> twice to sort the table by dates descending. Let's also change the <code>Limit</code> under the table to 100. Let's also decide to select a specific <code>PROV_TERR_STATE_LOC</code>, we'll take <code>BC</code>. Now that we've done that, we can see that the URL's changed to reflect our selection and now looks like <code>https://api.weather.gc.ca/collections/hydrometric-realtime/items?lang=en&amp;limit=100&amp;offset=0&amp;sortby=-DATETIME&amp;PROV_TERR_STATE_LOC=BC</code>. There are more things we could play with, but for the sake of this example let's stick to this URL.</p>
+<p>Take note that if you were actually looking to download this data as CSV, you can simply click on the <code>CSV</code> link on the top right of the screen, but as we've discussed earlier, there is no need to download it to use inside <code>Power BI</code>.</p>
+<h2 id="simple-scenario-using-power-bi">Simple scenario using Power BI</h2>
+<p>Now let's open <code>Power BI</code>! Once opened, we click on <code>Get data</code>, in the search bar we'll look for <code>Web</code>, select it and click on <code>Connect</code>. In the Dialog Box that just opened, we will select <code>Advanced</code> and paste our URL in the first Text Box. To tell <code>Power BI</code> we want the data as CSV, we'll add on the second line <code>&amp;f=csv</code>. You can now click on the <code>OK</code> button and on the next Dialog Box that opens click <code>Connect</code>.</p>
+<p>You will now be shown the table with all the values in it. If you're used to <code>Power BI</code>, you can decide to use <code>Transform Data</code> to format the table any way you like. Otherwise you can simply click on <code>Load</code>.</p>
+<p>Now that we've brought in our table, we can start by changing the name since it defaulted to the end of the URL as its name. We'll just name it <code>Real-time hydrometric data BC</code>. For this example, let's go inside the Visualizations pane on the right and Select <code>Map</code>. Let's drag the corner to extend it enough that we can see everything inside.</p>
+<p>We can now drag the data we want inside the appropriate field from the <code>Fields</code> pane to the <code>Visualizations</code> pane. Let's drag <code>x</code> into Longitude and <code>y</code> inside Latitude. We can also drag <code>DISCHARGE</code> inside <code>Size</code> to get varying circle sizes depending on that value. We can also switch <code>Sub-Pane</code> inside <code>Visualizations</code> and go into <code>Format</code> and change the data colors by pressing on the <code>fx</code> button. We'll put a gradient of colors with green, yellow and red scaling with the <code>LEVEL</code>(see image below). We'll also specify some values instead of leaving it at Minimum, Middle and Maximum since there are lots of outliers and the colors would be different for only 2-3 points otherwise. Finally we can just change the title of the Map to something else, let's rename it <code>Discharge and Level by Station, BC</code>, center it and increase its size a bit.</p>
+<p>And there you go! With this simple example you now understand how you can query data from our OGC API - Features services and use it in any way your heart desires! You can also either Setup a Scheduled Refresh for your own Dashboard (which will not be explained here) or simply use the <code>Refresh</code> button inside to refresh the data manually. Here's an image that shows the final result as well as the fields that have been mentionned during this tutorial:</p>
+<p><img alt="Power BI full Map view with Fields" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/tutorial_OAFeat_Power-BI_Map_en.jpg" /></p>
+<p><img alt="Power BI full Color Formatting" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/tutorial_OAFeat_Power-BI_Format_en.jpg" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>tutorial OAFeat R Excel en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-data/readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#tutorial-querying-data-with-ogc-api-features-using-r-and-vba-programming-languages" class="nav-link">Tutorial: querying data with OGC API - Features using R and VBA programming languages</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#r-example" class="nav-link">R example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#excel-example" class="nav-link">Excel example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../tutorial_OAFeat_R-Excel_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
+<p><a href="../../readme_en/">TOC</a> &gt; <a href="../readme_en/">Usage overview</a> &gt; Using OGC API - Features with R and VBA</p>
+<h1 id="tutorial-querying-data-with-ogc-api-features-using-r-and-vba-programming-languages">Tutorial: querying data with OGC API - Features using R and VBA programming languages</h1>
+<p>The <a href="https://eccc-msc.github.io/open-data/msc-geomet/ogc_api_en/#ogc-api-features">OGC API - Features</a> web services available in GeoMet-OGC-API offer the capability to query vector geospatial data and retrieve it in GeoJSON and CSV formats. The output file can then be used for display or additional data processing. This tutorial will show you how you can:</p>
+<ul>
+<li>Query and retrieve vector geospatial data from GeoMet-OGC-API with <a href="https://www.r-project.org/">R</a> and Excel's <a href="https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">VBA</a></li>
+<li>Load the data inside the <a href="https://www.r-project.org/">R</a> code editor and display time series data with a simple graph</li>
+<li>Load the data inside an Excel sheet and display time series data with a simple graph</li>
+</ul>
+<h2 id="r-example">R example</h2>
+<p>Getting a simple piece of code working in <code>R</code> is very simple using the <a href="https://www.rdocumentation.org/packages/graphics/versions/3.6.2/topics/plot">plot()</a> function. However, the costumization options are non-existent and as such we'll be making a plot that is a little more complex, but that really shows what you can do with our data and with <code>R</code>:</p>
+<pre><code class="language-R">library(ggplot2)
+library(scales)
+
+options(scipen=999)
+aqhi_obs_realtime &lt;- read.csv(&quot;https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa&amp;f=csv&quot;)
+format_str=&quot;%Y-%m-%dT%H:%M:%OSZ&quot;
+obs_datetime &lt;- as.POSIXct(aqhi_obs_realtime$observation_datetime, tz=&quot;GMT&quot;, format=format_str)
+
+aqhi_obs_realtime$observation_datetime &lt;- obs_datetime
+
+p &lt;- ggplot(aqhi_obs_realtime, aes(x=observation_datetime, y=aqhi)) +
+  geom_point(aes(fill=aqhi, size=aqhi), shape=21) +
+  scale_fill_viridis_c(guide = &quot;legend&quot;) +
+  scale_size_continuous(range=c(1, 3)) +
+  geom_line(size=1) +
+  labs(title=&quot;AQHI as a function of time for Ottawa&quot;,
+       subtitle=&quot;From weather.gc.ca&quot;,
+       y=&quot;AQHI&quot;,
+       x=&quot;Observation datetime&quot;,
+       caption=&quot;Working with R example&quot;) +
+  scale_x_datetime(
+    breaks=seq(min(obs_datetime), max(obs_datetime), by=&quot;6 hours&quot;),
+    date_labels=&quot;%m-%d %H:%M&quot;,
+    expand=c(0.005, 0))
+print(p)
+</code></pre>
+<p>First things first, before we can run this code, we'll need to install the proper tools (of course skip steps if you already have them):</p>
+<ul>
+<li>Install <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
+<li>Download the <a href="https://cran.r-project.org/bin/windows/base/">R language</a></li>
+<li>Download the appropriate version of <a href="https://cran.r-project.org/bin/windows/Rtools/">RTools</a> depending on the version of RStudio you have. This is necessary so that the libraries we will be adding to our code work properly.</li>
+</ul>
+<p>We now have everything we need, so let's first open <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> so we can move to the next steps! Once opened, go in the tab called <code>Console</code> and type these two lines (press <code>Enter</code> key after each):</p>
+<ul>
+<li><code>install.packages("ggplot2")</code></li>
+<li><code>install.packages("scales")</code></li>
+</ul>
+<p><a href="https://ggplot2.tidyverse.org/">ggplot2</a> is a great plotting library that gives us lots of costumization options and <a href="https://scales.r-lib.org/">scales</a> is a library used with <a href="https://ggplot2.tidyverse.org/">ggplot2</a> that helps with rescaling the final plot.</p>
+<p>Next we'll go to <code>File &gt; New File &gt; R Script</code>, which will open an empty untitled file. We will then copy and paste the code shown above inside it and we'll save the file (either by clicking on the <code>Save</code> icon or by pressing <code>Ctrl S</code>). You may name it however you like, just make sure the extension of the file is <code>.R</code> (i.e. <code>myfilename.R</code>). To run the entire code, simply click on the <code>Source</code> button (the <code>Run</code> button only runs lines you've highlighted inside your file). The result should look like this:</p>
+<p><img alt="RStudio complete overview" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/tutorial_OAFeat_R_en.jpg" /></p>
+<p>We will now explain the code we've just run line by line so that you understand what has been done:</p>
+<p>The first two lines with <code>library</code> are just to tell the code we'll be using these two libraries. The <a href="https://cran.r-project.org/web/packages/Tplyr/vignettes/options.html#:~:text=The%20value%20of%20scipen%20is,to%20understand%20with%20an%20example.&amp;text=In%20'Tplyr'%2C%20we%20have%20the%20option%20tplyr.">options(scipen=999)</a> isn't used in this particular example, but it removes scientific notation if you ever need it. </p>
+<p>Inside the <a href="https://swcarpentry.github.io/r-novice-inflammation/11-supp-read-write-csv/">read.csv()</a> function, you put the desired url with whatever parameters you want to have. For example, here we want the <code>aqhi-observations-realtime</code> data, we want the data to be sorted according to the <code>observation_datetime</code> field, we want a <code>limit</code> of 100 lines of data and we only want the data for <code>Ottawa</code>. Finally, we just add <code>&amp;f=csv</code> at the end so that the data is in CSV format. It will thus load all the data from the CSV file inside the variable named <code>X</code> as a <code>dataset</code> inside R Studio. </p>
+<p>The <code>format_str</code> is used to tell the code how our dates are formatted so it knows how to interpret them. You can find more info on what each letter means <a href="https://www.stat.berkeley.edu/~s133/dates.html">here</a>. The next line is so the code understands that the values in <code>observation_datetime</code> aren't just text, they represent the date and time. We will thus use <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/as.POSIX*">as.POSIXct()</a> to achieve this goal. We will give it <code>aqhi_obs_realtime$observation_datetime</code>, which means "all data inside the <code>aqhi_obs_realtime</code> dataset under the <code>observation_datetime</code> field". We'll also specify that the timezone is <code>GMT</code> and we will tell it how the dates and times are formatted so that it can understand it, using the <code>format_str</code> we've just defined. We then overwrite <code>aqhi_obs_realtime$observation_datetime</code> with the datetimes formatted as datetimes instead of just as text.</p>
+<p>Now we come to the <a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a> function and all the formatting options that we've added to it:</p>
+<ul>
+<li>First the function itself. We need to pass it the dataset that we want to use to plot, then we need to pass it our <a href="https://ggplot2.tidyverse.org/reference/aes.html">aesthetic mappings aes</a>, in which all we've done is tell it what columns we wish to be using. This line by itself will only show an empty graph since all we've done here is tell it what we'll be plotting, not how.</li>
+<li>Now let's tell it how to plot it! We'll use <a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point()</a> to tell it to plot the data as points. Inside we've added some more <a href="https://ggplot2.tidyverse.org/reference/aes.html">aesthetic mappings</a>, which will color the points according to the value inside <code>aqhi</code> and change the point's size according to <code>aqhi</code> as well. You could've skipped the aesthetics and simply given it a color and a size, it's just there to show it is possible.</li>
+<li>Problem now is the points vary a LOT with size, so we'll use <a href="https://www.rdocumentation.org/packages/ggplot2/versions/0.9.0/topics/scale_size_continuous">scale_size_continuous()</a> and tell it to have a minimum size of 1 and a maximum size of 3 for points. The other problem is that there are now two legends, one with sizes and one with color. To remedy that, we're using <a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_c</a> to tell the code they're both of type <code>legend</code>, which will combine the two of them together.</li>
+<li>After that, let's connect these points with a line while we're at it! We'll be using <a href="https://plotly.com/ggplot2/geom_line/">geom_line()</a> for that purpose and give it a constant size.</li>
+<li>Next we'll add all the labels that we want all around the plot with <a href="https://www.rdocumentation.org/packages/ggplot2/versions/3.3.6/topics/labs">labs</a>.</li>
+<li>Finally, our x axis currently contains all of the dates with their full notation and we can't read a single thing on the x axis. As such, we'll format it using <a href="https://www.rdocumentation.org/packages/ggplot2/versions/1.0.0/topics/scale_x_datetime">scale_x_datetime()</a>. First we'll use the <code>breaks</code> argument to tell it to start at the first time and end at the last time (meaning put the first time label under the first point and don't go further than the last value). For that purpose we'll use the sequence generator <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/seq">seq()</a>, which will return a list of all the labels that are between start and end and we'll use the <code>by</code> argument to give it the desired interval. Next, we don't need to see every date as for example <code>2022-01-01 00:00:00</code>. Instead, let's tell it using the <code>date_labels</code> argument that we only want <code>01-01 00:00</code> with the date format <code>%m-%d %H:%M</code>. <a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a> also always keeps a buffer at the start and end of the plot that represent 5% of the entire graph on each side, so we'll reduce that to 0.5% by using the <code>expand</code> argument.</li>
+</ul>
+<p>We are at the end of the script. All that's left is the <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/print">print()</a> line, which only tells RStudio to display the plot we've just created. Had you decided to paste all of these lines directly inside the console, you wouldn't need that print statement as within the console it is always implicit that you wish to see the result of what you're doing. Although it is a better practice to keep everything within a file and run that instead as you don't run the risk of losing your work.</p>
+<h2 id="excel-example">Excel example</h2>
+<p>The goal here is to query and make the plot in Excel using only the Excel programming language: <a href="https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">VBA</a>. Before we start, something to note is that you will need to change the sheet name <code>Sheet1</code> to the name of your sheet (unless it's already the same name). The reason is we are clearing the entire sheet and putting new data inside it, so this makes sure you don't have the wrong Excel sheet selected and clear everything that's in it.</p>
+<p>Steps to follow to use <code>VBA</code> in Excel:</p>
+<ul>
+<li>Enable the Developer tab: On the File tab, go to <code>Options &gt; Customize Ribbon</code>. Under <code>Customize the Ribbon</code> and under <code>Main Tabs</code>, select the <code>Developer</code> check box;</li>
+<li>Go in the newly added <code>Developer</code> tab and click on <code>Visual Basic</code>;</li>
+<li>Right click on the Excel sheet in the <code>VBAProject</code> tab in the newly opened window, then <code>Insert &gt; Module</code>;</li>
+<li>Copy paste the code shown below inside the code Module (don't forget to change every <code>Sheet1</code> in the code if that's not the name of your sheet) and press the <code>Run</code> button.</li>
+</ul>
+<p>And that's it! You've just populated your Excel sheet with the data from <code>aqhi-observations-realtime</code> and you've plotted a <code>ScatterLineChart</code> using the data from the <code>observation_datetime</code> and <code>aqhi</code> fields. Here is the code that you need to accomplish this (code made with added comments to help users understand each step):</p>
+<pre><code class="language-VB">' Explicit -&gt; The variables used must be defined with Dim before being used
+Option Explicit
+
+Sub MakeRequest()
+
+     Dim baseURL As String
+     Dim params As String
+     Dim reqURL As String
+
+     ' URL for the request with parameters
+     baseURL = &quot;https://api.weather.gc.ca/collections/aqhi-observations-realtime/items&quot;
+     params = &quot;sortby=observation_datetime&amp;limit=100&amp;location_name_fr=Ottawa&quot;
+
+     ' We concatenate into a single URL and we add &quot;&amp;f=csv&quot; at the end to get the data in CSV format
+     reqURL = baseURL &amp; &quot;?&quot; &amp; params &amp; &quot;&amp;f=csv&quot;
+
+     Application.ScreenUpdating = False
+
+     ' We clear the content of the cell in columns A to Z before adding the new data
+     ThisWorkbook.Worksheets(&quot;Sheet1&quot;).Range(&quot;A:Z&quot;).ClearContents
+
+     ' We select the Excel sheet named &quot;Sheet1&quot;
+     Sheets(&quot;Sheet1&quot;).Select
+
+     Dim ConnString As String
+
+     ' We send the request for the CSV file and we tell it to put the data inside &quot;Sheet1&quot;
+     ConnString = &quot;TEXT;&quot; &amp; reqURL
+          With ThisWorkbook.Worksheets(&quot;Sheet1&quot;).QueryTables.Add(Connection:=ConnString, Destination:=Worksheets(&quot;Sheet1&quot;).Cells(1, 1))
+               .Name = &quot;AQHI Observations Realtime&quot;
+               .FieldNames = True
+               .RowNumbers = False
+               .FillAdjacentFormulas = False
+               .PreserveFormatting = True
+               .RefreshOnFileOpen = False
+               .BackgroundQuery = True
+               .RefreshStyle = xlInsertDeleteCells
+               .SavePassword = True
+               .SaveData = True
+               .AdjustColumnWidth = True
+               .RefreshPeriod = 0
+               .TextFileStartRow = 1
+               .TextFileParseType = xlDelimited
+               .TextFileCommaDelimiter = True
+               .Refresh
+
+          End With
+
+     ' We will be making a LineChart of AQHI (aqhi) as a function of time (observation_datetime)
+     Dim WS As Worksheet
+     Dim ColxNum As Integer
+     Dim ColyNum As Integer
+     Dim ColxLetter As String
+     Dim ColyLetter As String
+     Dim lastRow As Long
+     Dim ValuesRange As String
+
+     Set WS = ActiveSheet
+
+     ' We need to find the column number of &quot;observation_datetime&quot; and the corresponding column letter
+     ColxNum = Application.WorksheetFunction.Match(&quot;observation_datetime&quot;, WS.Rows(1), 0)
+     ColxLetter = Split(Cells(1, ColxNum).Address, &quot;$&quot;)(1)
+
+     ' We need to find the column number of &quot;aqhi&quot; and the corresponding column letter
+     ColyNum = Application.WorksheetFunction.Match(&quot;aqhi&quot;, WS.Rows(1), 0)
+     ColyLetter = Split(Cells(1, ColyNum).Address, &quot;$&quot;)(1)
+
+     ' We find the total number of lines for the data selection
+     lastRow = ActiveSheet.Cells.Find(&quot;*&quot;, SearchOrder:=xlByRows, SearchDirection:=xlPrevious).Row
+
+     ' We select all the values from observation_datetime column and format it into a datetime format in the form &quot;month-day hour:minute&quot;
+     Dim c As Range
+     Dim ColDatetimeValues As String
+     ColDatetimeValues = ColxLetter &amp; &quot;1:&quot; &amp; ColxLetter &amp; lastRow
+     WS.Range(ColDatetimeValues).Select
+     Selection.NumberFormat = &quot;mm-dd hh:mm&quot;
+     For Each c In Selection
+          c.Value = Replace(c.Value, &quot;T&quot;, &quot; &quot;)
+          c.Value = Replace(c.Value, &quot;Z&quot;, &quot;&quot;)
+     Next c
+
+     ' We format lines and columns for data selection as H1:H62,J1:J62 for the LineChart
+     ValuesRange = ColxLetter &amp; &quot;1:&quot; &amp; ColxLetter &amp; lastRow &amp; &quot;,&quot; &amp; ColyLetter &amp; &quot;1:&quot; &amp; ColyLetter &amp; lastRow
+
+     ' We select the values according to the formatted intervals
+     WS.Range(ValuesRange).Select
+
+     ' We create a ScatterLine chart with the selected data
+     Dim myChart
+     Set myChart = WS.Shapes.AddChart2(227, xlXYScatterLines)
+     myChart.Select
+
+     ' We add and format the labels
+     With myChart
+          .chart.SetElement msoElementChartTitleAboveChart
+          .chart.SetElement msoElementPrimaryCategoryGridLinesMinor
+          .chart.SetElement msoElementPrimaryCategoryAxisTitleBelowAxis
+          .chart.SetElement msoElementPrimaryValueAxisTitleRotated
+          .chart.ChartTitle.Text = &quot;AQHI as a function of time for Ottawa&quot;
+          .chart.Axes(Type:=xlCategory, AxisGroup:=xlPrimary).AxisTitle.Text = &quot;Observation datetime&quot;
+          .chart.Axes(Type:=xlCategory).TickLabels.Orientation = 45
+          .chart.Axes(Type:=xlCategory).MinimumScale = Range(ColxLetter &amp; &quot;2&quot;).Value
+          .chart.Axes(Type:=xlCategory).MaximumScale = Range(ColxLetter &amp; lastRow).Value
+          .chart.Axes(Type:=xlValue, AxisGroup:=xlPrimary).AxisTitle.Text = &quot;AQHI&quot;
+     End With
+
+End Sub
+</code></pre>
+<p>Here's the result after running the code:</p>
+<p><img alt="Excel and VB Window complete overview" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/tutorial_OAFeat_Excel_VBA_en.jpg" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://msc-analytics.ca/piwik/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '13']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+    </body>
+</html>
