@@ -86,7 +86,9 @@ This enables receiving modifications for the entire `public-doc` repository.
 3. Configure your fork by specifying the upstream reference:
     * `cd public-doc`
     * `git remote add upstream https://gccode.ssc-spc.gc.ca/ec-msc/public-doc.git`
-4. [Setup an SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) for GitHub access
+4. Add a remote reference to the GitHub repository:
+    * `git remote add github https://github.com/ECCC-MSC/open-data.git`
+5. [Setup an SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) for GitHub access
     * Open Git Bash application (if on Windows) and check for existing SSH keys with the `cat ~/.ssh/known_hosts | grep github` command. If an output comes out, a SSH key already exists and you can skip to the 4.2 section of this document.
     * Generate a new SSH key with the command `ssh-keygen -t ed25519 -C "your_email@example.com"` (Replace `your_email@example.com` with the email address associated with your GitHub account) and press the Enter key when a message pops up
     * Copy the whole content of the newly create public key. You can use a command like `cat .ssh/id_ed25519.pub` to see the content of the key (change `.ssh/id_ed25519.pub` in the command by the path specified in the output of the previous command above)
@@ -243,43 +245,18 @@ If you ever need to recreate your environment from scratch you may remove the en
 2. Remove the environment with `conda remove --name mkdocs --all`
 3. Follow the instructions above to recreate your mkdocs virtual environment
 
-## 5.3 - Deploy documentation on GitHub with mkdocs
+## 5.3 - Deploy documentation on GitHub.io
 
-The following instructions take the current documentation version from `https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/` and publish it in the `gh-pages` branch of the `https://eccc-msc.github.io/open-data/` repository to make the documentation available on `https://eccc-msc.github.io/open-data/`.
+The following instructions show how to deploy the documentation on GitHub Pages. This process is now automated via a GitHub Action triggered when a new GitHub release is created.
 
-1. Confirm you have installed the prerequisites detailed in section 5.2
-2. In a terminal window, `cd` to the root of your `public-doc` repository fork
-    1. Run `git remote -v` and validate that the `github` remote exists, otherwise create it with `git remote add github git@github.com:ECCC-MSC/open-data.git`
-3. Pull the current version of the documentation you want to publish: `git pull upstream master`
-4. Update the changelog:
-    1. Confirm the version number to publish in the [changelog](CHANGELOG.md)
-    2. Verify that the version number ($VERSION) tag is available on https://gccode.ssc-spc.gc.ca/ec-msc/public-doc/-/tags
-    3. In the [changelog](CHANGELOG.md), update the version publication date and release notes if needed and commit changes made to your fork with `git commit CHANGELOG.md -m "updated changelog for release $VERSION"`
-    4. Push the changes to your fork using `git push origin branch_name` where `branch_name` is the branch you created to update the changelog
-    5. Merge your changes from your branch `branch_name` on the master branch using a merge request
-5. Tag the version:
-    1. Create the new tag: `git tag $VERSION`
-    3. Checkout the newest tag: `git checkout $VERSION`
-6. Activate your mkdocs environment: `conda activate mkdocs`
-7. Test and validate the documentation:
-    1. Run `mkdocs serve`, pay close attention to warnings (if any)
-    2. Head to http://127.0.0.1:8000 in a web browser, once validation completed, stop `mkdocs serve` with control-c
-    3. If validation succeeded:
-        1. Push the tag to upstream: `git push upstream $VERSION`
-    4. If validation failed:
-        1. Leave conda: `conda deactivate`
-        2. Return to master: `git checkout master`
-        3. Delete the tag: `git tag -d 2.x.y` where `2.x.y` corresponds to the tag to replace
-        4. Make and commit the changes to upstream master
-        5. Return to step 3
-8. Deploy the documentation on GitHub:
-    1. Run `mkdocs gh-deploy --no-history -m "version 2.x.y"` where `2.x.y` corresponds to the actual version number to publish
-        * The user must have the [permissions to push to GitHub](#51-permission-requirements)
-        * The `--no-history` flag replaces the entire Git history with a single commit.
-        * The `--ignore-version` flag may be used when deploying the documentation with a new version of `mkdocs` for the first time.
-        * Using `--force` may be required if another user pushed the previous version to GitHub. It is recommended not to use this flag by default.
-9. Verify that the [gh-pages branch was updated on GitHub](https://github.com/ECCC-MSC/open-data) and that the documentation is available and updated at [https://eccc-msc.github.io/open-data](https://eccc-msc.github.io/open-data)
-10. Desactivate your conda environment: `conda deactivate`
-11. Return to the master branch: `git checkout master`
-12. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
-13. If applicable, prepare and send announcement to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement lists based on the [changelog](CHANGELOG.md)
+1. Ensure the ECCC-MSC/open-data repository is up to date with the latest changes from the GCcode repository
+    * `git pull upstream master`
+    * `git push github master`
+2. Create a new tag and release via the [GitHub UI](https://github.com/ECCC-MSC/open-data/releases/new):
+    * Click `Choose a tag` and type the version number and the `+ Create new tag: <version number>`.
+    * Add the release version number as the title and a description for the release.
+    * Optionally, you can save a draft of the release by clicking `Save draft` and come back to it later.
+    * When ready to publish the release, click `Publish release`. This will trigger the GitHub Action to automatically deploy the documentation
+4. Verify that the triggerring of the GitHub Action was successful by checking the [Actions tab](https://github.com/ECCC-MSC/open-data/actions). Within a minute or two, two new jobs should appear, one with the name of the release and the other with the name `pages build and deployment`. When both have green checkmarks, the deployment is complete and should be available at [https://eccc-msc.github.io/open-data/](https://eccc-msc.github.io/open-data/).
+5. Inform colleagues of the release in the Public Doc channel: https://message.gccollab.ca/group/msc-public-data-documentation
+6. If applicable, prepare and send announcement to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement lists based on the [changelog](CHANGELOG.md)
