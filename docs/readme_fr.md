@@ -80,6 +80,7 @@ Série d'évènements organisés autour des données ouvertes du SMC :
 * Série de webinaires consacrés aux usagers des données ouvertes du SMC
     * [Année 2021](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2021.pdf) 
     * [Année 2022](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2022.pdf)
+    * [Année 2024](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2024.pdf)
 </br></br>
 
 ## Licence
