@@ -10,11 +10,12 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.6.14
 
-* date: 
+* date: 2024-10-24
 * announcements:
     * Not announced
 * new content:
-    * NA
+    * Add 4 precip parameters in WCPS 
+    * Add 2024 webinar series
 * improvements:
     * NA
 * bug fixes: 
