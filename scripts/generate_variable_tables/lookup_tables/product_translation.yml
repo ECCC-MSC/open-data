@@ -1,289 +1,112 @@
-# GRIB2 products
-
-Freezing rain precipitation rate [spread]:
-    Variable:
-        EN: Freezing rain precipitation rate
-        FR: Taux de pluie verglaçante
-    Abbreviation: FPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Heat index [spread]:
-    Variable:
-        EN: Heat index
-        FR: Humidex
-    Abbreviation: HEATX
-    Unit:
-        EN: K
-        FR: K
-
-Geopotential height [spread]:
-    Variable:
-        EN: Geopotential height
-        FR: Hauteur géopotentielle
-    Abbreviation: HGT
-    Unit:
-        EN: gpm
-        FR: gpm
-
-Ice pellets precipitation rate [spread]:
-    Variable:
-        EN: Ice pellets precipitation rate
-        FR: Taux de précipitation du grésil
-    Abbreviation: IPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Pressure reduced to MSL [spread]:
-    Variable:
-        EN: Pressure reduced to Mean Sea Level
-        FR: Pression réduite au niveau moyen de la mer
-    Abbreviation: PRMSL
-    Unit:
-        EN: Pa
-        FR: Pa
-
-Rain precipitation rate [spread]:
-    Variable:
-        EN: Rain precipitation rate
-        FR: Taux de précipitation de pluie
-    Abbreviation: RPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Snow precipitation rate [spread]:
-    Variable:
-        EN: Snow precipitation rate
-        FR: Taux de précipitation de neige
-    Abbreviation: SPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Temperature [spread]:
-    Variable:
-        EN: Temperature
-        FR: Température
-    Abbreviation: TMP
-    Unit:
-        EN: K
-        FR: K
-
-Total precipitation rate [spread]:
-    Variable:
-        EN: Total precipitation rate
-        FR: Taux de précipitation totale
-    Abbreviation: TPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Wind chill factor [spread]:
-    Variable:
-        EN: Wind chill factor
-        FR: Facteur de refroidissement éolien
-    Abbreviation: WCF
-    Unit:
-        EN: K
-        FR: K
-
-Wind speed [spread]:
-    Variable:
-        EN: Wind speed
-        FR: Vitesse du vent
-    Abbreviation: WIND
-    Unit:
-        EN: m/s
-        FR: m/s
-
-Freezing rain precipitation rate Percentile:
-    Variable:
-        EN: Freezing rain precipitation rate
-        FR: Taux de pluie verglaçante
-    Abbreviation: FPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Heat index Percentile:
-    Variable:
-        EN: Heat index
-        FR: Humidex
-    Abbreviation: HEATX
-    Unit:
-        EN: K
-        FR: K
-
-Ice pellets precipitation rate Percentile:
-    Variable:
-        EN: Ice pellets precipitation rate
-        FR: Taux de précipitation du grésil
-    Abbreviation: IPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Rain precipitation rate Percentile:
-    Variable:
-        EN: Rain precipitation rate
-        FR: Taux de précipitation de pluie
-    Abbreviation: RPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Snow precipitation rate Percentile:
-    Variable:
-        EN: Snow precipitation rate
-        FR: Taux de précipitation de neige
-    Abbreviation: SPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Temperature Percentile:
-    Variable:
-        EN: Temperature
-        FR: Température
-    Abbreviation: TMP
-    Unit:
-        EN: K
-        FR: K
-
-Total cloud cover Percentile:
-    Variable:
-        EN: Total cloud cover
-        FR: Couverture nuageuse totale
-    Abbreviation: TCDC
-    Unit:
-        EN: '%'
-        FR: '%'
-
-Total precipitation rate Percentile:
-    Variable:
-        EN: Total precipitation rate
-        FR: Taux de précipitation totale
-    Abbreviation: TPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Wind chill factor Percentile:
-    Variable:
-        EN: Wind chill factor
-        FR: Facteur de refroidissement éolien
-    Abbreviation: WCF
-    Unit:
-        EN: K
-        FR: K
-
-Wind speed Percentile:
-    Variable:
-        EN: Wind speed
-        FR: Vitesse du vent
-    Abbreviation: WIND
-    Unit:
-        EN: m/s
-        FR: m/s
-
-Prob of Total precipitation rate:
-    Variable:
-        EN: Total precipitation rate
-        FR: Taux de précipitation totale
-    Abbreviation: TPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Prob of Total precipitation:
+APCP:
     Variable:
         EN: Total precipitation
         FR: Précipitation totale
-    Abbreviation: APCP
     Unit:
         EN: kg/(m<sup>2</sup>)
         FR: kg/(m<sup>2</sup>)
 
-Prob of Freezing rain precipitation rate:
+FPRATE:
     Variable:
         EN: Freezing rain precipitation rate
         FR: Taux de pluie verglaçante
-    Abbreviation: FPRATE
     Unit:
         EN: kg/(m<sup>2</sup>*s)
         FR: kg/(m<sup>2</sup>*s)
 
-Prob of Ice pellets precipitation rate:
-    Variable:
-        EN: Ice pellets precipitation rate
-        FR: Taux de précipitation du grésil
-    Abbreviation: IPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Prob of Rain precipitation rate:
-    Variable:
-        EN: Rain precipitation rate
-        FR: Taux de précipitation de pluie
-    Abbreviation: RPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Prob of Snow precipitation rate:
-    Variable:
-        EN: Snow precipitation rate
-        FR: Taux de précipitation de neige
-    Abbreviation: SPRATE
-    Unit:
-        EN: kg/(m<sup>2</sup>*s)
-        FR: kg/(m<sup>2</sup>*s)
-
-Prob of Temperature:
-    Variable:
-        EN: Temperature
-        FR: Température
-    Abbreviation: TMP
-    Unit:
-        EN: K
-        FR: K
-
-Prob of Wind speed (gust):
+GUST:
     Variable:
         EN: Wind speed (gust)
         FR: Vitesse du vent (rafale)
-    Abbreviation: GUST
-    Unit:
-        EN: m/s 
-        FR: m/s
-
-Prob of Wind speed:
-    Variable:
-        EN: Wind speed
-        FR: Vitesse du vent
-    Abbreviation: WIND
     Unit:
         EN: m/s
         FR: m/s
 
-Prob of Heat index:
+HEATX:
     Variable:
         EN: Heat index
         FR: Humidex
-    Abbreviation: HEATX
     Unit:
         EN: K
         FR: K
 
-Prob of Wind chill factor:
+HGT:
     Variable:
-        EN: Wind chill factor
-        FR: Facteur de refroidissement éolien
-    Abbreviation: WCF
+        EN: Geopotential height
+        FR: Hauteur géopotentielle
+    Unit:
+        EN: gpm
+        FR: gpm
+
+IPRATE:
+    Variable:
+        EN: Ice pellets precipitation rate
+        FR: Taux de précipitation du grésil
+    Unit:
+        EN: kg/(m<sup>2</sup>*s)
+        FR: kg/(m<sup>2</sup>*s)
+
+PRMSL:
+    Variable:
+        EN: Pressure reduced to Mean Sea Level
+        FR: Pression réduite au niveau moyen de la mer
+    Unit:
+        EN: Pa
+        FR: Pa
+
+RPRATE:
+    Variable:
+        EN: Rain precipitation rate
+        FR: Taux de précipitation de pluie
+    Unit:
+        EN: kg/(m<sup>2</sup>*s)
+        FR: kg/(m<sup>2</sup>*s)
+
+SPRATE:
+    Variable:
+        EN: Snow precipitation rate
+        FR: Taux de précipitation de neige
+    Unit:
+        EN: kg/(m<sup>2</sup>*s)
+        FR: kg/(m<sup>2</sup>*s)
+
+TCDC:
+    Variable:
+        EN: Total cloud cover
+        FR: Couverture nuageuse totale
+    Unit:
+        EN: '%'
+        FR: '%'
+
+TMP:
+    Variable:
+        EN: Temperature
+        FR: Température
     Unit:
         EN: K
         FR: K
+
+TPRATE:
+    Variable:
+        EN: Total precipitation rate
+        FR: Taux de précipitation totale
+    Unit:
+        EN: kg/(m<sup>2</sup>*s)
+        FR: kg/(m<sup>2</sup>*s)
+
+WCF:
+    Variable:
+        EN: Wind chill factor
+        FR: Facteur de refroidissement éolien
+    Unit:
+        EN: K
+        FR: K
+
+WIND:
+    Variable:
+        EN: Wind speed
+        FR: Vitesse du vent
+    Unit:
+        EN: m/s
+        FR: m/s
+
