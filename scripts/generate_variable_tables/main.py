@@ -49,9 +49,13 @@ def main():
     # Logging configuration
     if args.verbose:
         # Add module name, function name and line number
-        logging.basicConfig(level=logging.INFO, format='(%(levelname)s) (%(asctime)s) (%(name)s %(module)s:%(funcName)s:L%(lineno)d) ::: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        log_level = logging.DEBUG
+        log_format = '(%(levelname)s) (%(asctime)s) (%(name)s %(module)s:%(funcName)s:L%(lineno)d) ::: %(message)s'
     else:
-        logging.basicConfig(level=logging.WARNING, format='(%(levelname)s) (%(asctime)s) (%(name)s) ::: %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        log_level = logging.INFO
+        log_format = '(%(levelname)s) (%(asctime)s) (%(name)s) ::: %(message)s'
+    logging.basicConfig(level=log_level, format=log_format, datefmt='%Y-%m-%d %H:%M:%S')
+
     # Create the root logger
     logger = logging.getLogger()
 

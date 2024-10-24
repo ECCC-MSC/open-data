@@ -1,38 +1,34 @@
 import logging
 import os
+import re
 
 from osgeo import gdal
 
 # Module logger
 logger = logging.getLogger(__name__)
 
-def generate_row(language, variable_name, level_key, variable_LUT, level_LUT):
+ensemble = ['CanSIPS', 'GEPS', 'REPS']
+
+def generate_row(language, abbreviation, level_key, variable_LUT, level_LUT):
     '''
         Create a formatted table row from metadata.
         Translate metadata to english or french with lookup tables.
         Parameters:
             language (str): "EN" for english or "FR" for french
-            variable_name (str): Variable name
+            abbreviation (str): Variable name
             level_key (str): Variable level
             variable_LUT (dict): Variables lookup table
             level_LUT (dict): Levels lookup table
         Returns:
             row (str): Formatted table row   
     '''
-    var_keys = [key for key in variable_LUT if key.lower() in variable_name.lower()]
     # Convert variable with lookup table
-    if var_keys:
-        var_key = ""
-        for key in var_keys:
-            if len(key) > len(var_key):
-                var_key = key
-        variable = variable_LUT[var_key]['Variable'][language]
-        abbreviation = variable_LUT[var_key]['Abbreviation']
-        unit = variable_LUT[var_key]['Unit'][language]
+    if abbreviation in variable_LUT:
+        variable = variable_LUT[abbreviation]['Variable'][language]
+        unit = variable_LUT[abbreviation]['Unit'][language]
     else:
-        logger.warning(f'Variable {variable_name} not found')
-        variable = variable_name
-        abbreviation = 'unknown'
+        logger.warning(f'Variable {abbreviation} not found')
+        variable = 'unknown'
         unit = 'unknown'
     # Convert level with lookup table
     if level_key in level_LUT:
@@ -100,19 +96,21 @@ def parse_metadata(files, directory, model, variable_LUT, product_LUT, level_LUT
             for i in range(1, dataset.RasterCount + 1):
                 # Get the dataset metadata
                 if file.endswith('.grib2'):
-                    name = dataset.GetRasterBand(i).GetMetadataItem('GRIB_COMMENT')
+                    name = dataset.GetRasterBand(i).GetMetadataItem('GRIB_ELEMENT')
                     level = dataset.GetRasterBand(i).GetMetadataItem('GRIB_SHORT_NAME')
                 elif file.endswith('.nc'):
-                    name = dataset.GetRasterBand(i).GetMetadataItem('long_name')
+                    name = dataset.GetRasterBand(i).GetMetadataItem('NETCDF_VARNAME')
                     level = dataset.GetRasterBand(i).GetMetadataItem('NETCDF_DIM_depth')
+                
                 # Insert metadata in variable or product lists
-                prod_keys = [key for key in product_LUT if key.lower() in name.lower()]
-                if prod_keys:
-                    prod_data_en.append(generate_row('EN', name, level, product_LUT, level_LUT))
-                    prod_data_fr.append(generate_row('FR', name, level, product_LUT, level_LUT))
+                if model in ensemble and re.search('prob', file, re.IGNORECASE):
+                    product = re.sub('(Prob|\d+)', '', name)
+                    prod_data_en.append(generate_row('EN', product, level, product_LUT, level_LUT))
+                    prod_data_fr.append(generate_row('FR', product, level, product_LUT, level_LUT))
                 else:
                     data_en.append(generate_row('EN', name, level, variable_LUT, level_LUT))
                     data_fr.append(generate_row('FR', name, level, variable_LUT, level_LUT))
+
             # Close the dataset
             dataset = None
         except Exception as e:

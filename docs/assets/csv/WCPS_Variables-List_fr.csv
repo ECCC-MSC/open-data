@@ -12,9 +12,13 @@ Hauteur de la surface de la mer par rapport au géoïde,sossheig,Surface,m
 Pression interne de la glace intégrée verticalement,iicepressure,Surface,N/m
 Profondeur de la couche de mélange d'après le critère de densité,sokaraml,Surface,m
 Profondeur de la turbocline,somixhgt,Surface,m
+Quantité de neige en équivalent d'eau liquide précipitante,snowfallaccum,Surface,m
+Quantité de précipitations liquides,rainaccum,Surface,m
+Quantité de précipitations,precipaccum,Surface,m
 Ruissellement de surface,runoffsurf,Surface,mm
 Résistance à la compression de la glace intégrée verticalement,iicestrength,Surface,N/m
 Salinité de l'eau de mer,vosaline,Surface,PSU
+Taux de précipitation total,preciprate,Surface,m/s
 Température de l'air en surface (1.5 m),tairsurf,1.5 m au-dessus du niveau du sol,K
 Température de surface de la neige sur la glace de mer ou la glace de mer nue,iicesurftemp,Surface,K
 Température potentielle de l'eau de mer,votemper,Surface,K

@@ -46,19 +46,19 @@ class TestFileParser(unittest.TestCase):
 
     def test_generate_row(self):
         expected = 'Total precipitation,APCP,Surface,kg/m<sup>2</sup>'
-        result = generate_row('EN', 'Total precipitation [kg/(m^2)]', '0-SFC', self.variable_LUT, self.level_LUT)
+        result = generate_row('EN', 'APCP', '0-SFC', self.variable_LUT, self.level_LUT)
         self.assertEqual(result, expected, 'rows are not equal')
 
     def test_generate_row_not_found(self):
-        expected = 'Reserved,unknown,Reserved,unknown'
+        expected = 'unknown,Reserved,Reserved,unknown'
         result = generate_row('EN', 'Reserved', 'Reserved', self.variable_LUT, self.level_LUT)
         self.assertEqual(result, expected, 'rows are not equal')
 
     def test_write_variable_table(self):
         expected = 'tests/RDPA_expected_Variables-List_en.csv'
         data = [
-            '(prodType 0, cat 1, subcat 193) [-],unknown,Surface,unknown',
-            'Total precipitation,APCP,Surface,kg/m<sup>2</sup>'
+            'Total precipitation,APCP,Surface,kg/m<sup>2</sup>',
+            'unknown,unknown,Surface,unknown',
         ]
         filename = 'tests/RDPA_Variables-List_en.csv'
         header = 'Variable,Abbreviation,Level,Unit/Value'

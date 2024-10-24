@@ -38,7 +38,6 @@ GEPS:
 
 REPS:
     - ensemble/reps/10km/grib2/00/024
-    - ensemble/reps/15km/grib2/raw/00/024
 
 GEWPS:
     - model_gewps/25km/00
