@@ -81,6 +81,7 @@ Series of events organized around MSC open data:
 * MSC Open Data User Webinar Series
     * [Year 2021](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2021.pdf) 
     * [Year 2022](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2022.pdf)
+    * [Year 2024](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2024.pdf)
 </br></br>
 
 ## Licence
