@@ -8,6 +8,12 @@
 
 ## 2024
 
+### 23 octobre 2024
+
+* [Ajout de nouvelles sources d’observations satellitaires dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-23-octobre-2024)
+* [Ajout de nouvelles sources d’observations satellitaires dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-23-octobre-2024)
+* [Ajout de nouvelles sources d’observations satellitaires dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-23-octobre-2024)
+
 ### 11 septembre 2024
 
 * [Retrait temporaire des observations du réseau Fire Weather (OMNRF) du système d'assimilation de l'Analyse régionale déterministe de précipitation (ARDP) au Centre météorologique canadien (CMC)](nwp_rdpa/changelog_rdpa_fr.md#le-mercredi-11-septembre-2024)

@@ -8,6 +8,12 @@
 
 ## 2024
 
+### October 23, 2024
+
+* [Addition of new satellite observation sources in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-october-23-2024)
+* [Addition of new satellite observation sources in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-october-23-2024)
+* [Addition of new satellite observation sources in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-october-23-2024)
+
 ### September 11, 2024
 
 * [Temporary removal of the Fire Weather network observations (OMNRF) from the Regional Deterministic Precipitation Analysis System (RDPA) assimilation at the Canadian Meteorological Centre (CMC)](nwp_rdpa/changelog_rdpa_en.md#wednesday-september-11-2024)

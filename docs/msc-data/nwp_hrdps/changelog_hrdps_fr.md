@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mercredi 23 octobre 2024
+
+### Ajout de nouvelles sources d’observations satellitaires dans le SHRPD
+
+Le mercredi 23 octobre 2024, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'ajouter les sources d’observations satellitaires suivantes:
+
+* Ajout des observations de vents de surface au-dessus de la mer du diffusiomètre HSCAT des satellites HY-2B et HY-2C. 
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour majeure vers la version 7.0.0 du Système à haute résolution de prévision déterministe (SHRPD) au Centre météorologique canadien

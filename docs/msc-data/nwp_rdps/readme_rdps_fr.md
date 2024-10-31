@@ -46,7 +46,6 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 * [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/index_f.html)
 * [Produits de prévision du temps violent](https://meteo.gc.ca/model_forecast/severe_weather_f.html)
-* [Documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/rdps_f.html)
 
 ### Cartes d'analyse aerologique
 
@@ -54,7 +53,6 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [500 hPa: Hauteur géopotentielle, épaisseurs 1000-500hPa](https://meteo.gc.ca/data/analysis/sai_100.gif)
 * [700 hPa: Hauteur géopotentielle, température, écart du point de rosée](https://meteo.gc.ca/data/analysis/saj_100.gif)
 * [850 hPa: Hauteur géopotentielle, température ](https://meteo.gc.ca/data/analysis/saa_100.gif)
-* [Documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/analyses_f.html)
 
 ### Produits pour l'aviation
 
