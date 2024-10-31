@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mercredi 23 octobre 2024
+
+### Ajout de nouvelles sources d’observations satellitaires dans le SGPE
+
+Le mercredi 23 octobre 2024, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son Système global de prévision d’ensemble (SGPE).
+
+Seulement la composante de l'assimilation des données a été modifiée afin d'ajouter les sources d’observations satellitaires suivantes:
+
+8 Ajout des observations de vents de surface au-dessus de la mer du diffusiomètre HSCAT des satellites HY-2B et HY-2C. 
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du Système global de prévision d'ensemble (SGPE) 8.0.0 du Centre météorologique canadien (CMC)

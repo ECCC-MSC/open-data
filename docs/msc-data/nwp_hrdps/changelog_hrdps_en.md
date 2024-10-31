@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Wednesday October 23, 2024
+
+### Addition of new satellite observation sources in the HRDPS
+
+On Wednesday October 23rd, 2024, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.0.0 of the High Resolution Deterministic Prediction System (HRDPS).
+
+Only the data assimilation component was modified to add the following satellite observation sources:
+
+* Addition of sea surface wind observations from the HSCAT scatterometer of the HY-2B and HY-2C satellites.
+
 ## Tuesday June 11, 2024
 
 ### Major upgrade to Version 7.0.0 of the High Resolution Deterministic Prediction System (HRDPS) at the Canadian Meteorological Centre

@@ -45,7 +45,6 @@ List and links to the products available for this dataset :
 
 * [4-panel charts](https://meteo.gc.ca/model_forecast/index_e.html)
 * [Severe weather prediction products](https://meteo.gc.ca/model_forecast/severe_weather_e.html)
-* [Product guide documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/rdps_e.html)
 
 ### Aerological analysis maps
 
@@ -53,7 +52,6 @@ List and links to the products available for this dataset :
 * [500 hPa: Geopotential height, thicknesses 1000-500hPa](https://meteo.gc.ca/data/analysis/sai_100.gif)
 * [700 hPa: Geopotential height, temperature, dew point deviation](https://meteo.gc.ca/data/analysis/saj_100.gif)
 * [850 hPa: Geopotential height, temperature ](https://meteo.gc.ca/data/analysis/saa_100.gif)
-* [Product guide documentation](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/submenus/analyses_e.html)
 
 ### Aviation products
 
