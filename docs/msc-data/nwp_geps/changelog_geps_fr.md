@@ -14,7 +14,7 @@ Le mercredi 23 octobre 2024, à compter de la passe de 0600 UTC, le Centre mét�
 
 Seulement la composante de l'assimilation des données a été modifiée afin d'ajouter les sources d’observations satellitaires suivantes:
 
-8 Ajout des observations de vents de surface au-dessus de la mer du diffusiomètre HSCAT des satellites HY-2B et HY-2C. 
+* Ajout des observations de vents de surface au-dessus de la mer du diffusiomètre HSCAT des satellites HY-2B et HY-2C. 
 
 ## Le mardi 11 juin 2024
 
