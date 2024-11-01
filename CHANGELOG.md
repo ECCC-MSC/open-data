@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.15
+
+* date: 2024-11-01
+* announcements:
+    * Not announced
+* new content:
+    * Update GEPS, GDPS and HRDPS changelogs
+* improvements:
+    * NA
+* bug fixes: 
+    * Fix broken links (RDPS products, legacy CMC product guide)
+
 ## 2.6.14
 
 * date: 2024-10-24
