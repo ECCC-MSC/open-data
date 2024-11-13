@@ -26,13 +26,13 @@ NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 
-`{YYYYMMDD}T{hhmmss.mss}Z_MSC_MetNotes.json`
+`{YYYYMMDD}T{hhmmss.sss}Z_MSC_MetNotes.json`
 
 where:
 
 * __YYYYMMDD__ : Year, month and day of data emission
 * __T__ : Time delimiter according to ISO8601 norms
-* __hhmmss.mss__ : Hour, minute, second and milliseconds when data are produced
+* __hhmmss.sss__ : Hour, minute, second and milliseconds when data are produced
 * __Z__ : Time zone (UTC hour)
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __MetNotes__ : Constant string indicating that data is from MetNotes
