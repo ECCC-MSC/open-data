@@ -26,13 +26,13 @@ NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 
-`{YYYYMMDD}T{hhmmss.mss}Z_MSC_MetNotes.json`
+`{YYYYMMDD}T{hhmmss.sss}Z_MSC_MetNotes.json`
 
 où :
 
 * __YYYYMMDD__ : Année, mois et jour de l'émission des données
 * __T__ : Délimiteur temporel selon les normes ISO8601
-* __hhmmss.mss__ : Heure, minute, seconde et milliseconde à laquelle les données sont émises
+* __hhmmss.sss__ : Heure, minute, seconde et milliseconde à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __MetNotes__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers 
