@@ -34,7 +34,7 @@ The provincial and territorial summary XML files are grouped in a directory tree
 
 The provincial summary XML files are available at the following address :
 
-* [https://dd.weather.ec.gc.ca/observations/xml/{PC}/{TYPE}](https://dd.weather.ec.gc.ca/observations/xml)
+* [https://dd.weather.gc.ca/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/observations/xml)
 
 where :
 
