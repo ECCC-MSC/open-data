@@ -59,7 +59,7 @@ Les fichiers suivent la nomenclature suivante :
 
 * **Fichiers datés, uniques**:
 
- `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
+  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
   où :
 
@@ -73,7 +73,7 @@ Les fichiers suivent la nomenclature suivante :
 
 * **Fichiers non datés, écrasés lors de chaque mise à jour**:
 
- `{SiteCode}_{L}.xml`
+  `{SiteCode}_{L}.xml`
 
   où :
 
