@@ -61,12 +61,12 @@ Les fichiers suivent la nomenclature suivante :
 
  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
- où :
+  où :
 
     * __SiteCode__ : Code de la ville (voir plus bas)
     * __L__ : Lettre indiquant la langue du fichier : fr (français) ou en (anglais)
 
- Exemples de noms de fichier :
+  Exemples de noms de fichier :
 
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
@@ -75,12 +75,12 @@ Les fichiers suivent la nomenclature suivante :
 
  `{SiteCode}_{L}.xml`
 
- où :
+  où :
 
     * __SiteCode__ : Code de la ville (voir plus bas)
     * __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
 
- Exemples de noms de fichier :
+  Exemples de noms de fichier :
 
     * s0000011_e.xml 
     * s0000011_f.xml

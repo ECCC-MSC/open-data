@@ -59,12 +59,12 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
- where :
+  where :
 
     * __SiteCode__ : City code (see below)
     * __L__ : Letter indicating file language: fr (French) or en (English)
 
- Examples of file names:
+  Examples of file names:
 
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
@@ -73,12 +73,12 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
  `{SiteCode}_{L}.xml`
 
- where :
+  where :
 
     * __SiteCode__ : City code (see below)
     * __L__ : Letter indicating file language: f (French) or e (English)
 
- Examples of file names:
+  Examples of file names:
 
     * s0000011_e.xml 
     * s0000011_f.xml
