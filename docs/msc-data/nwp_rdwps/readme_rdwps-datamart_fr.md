@@ -31,7 +31,6 @@ où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18].
 
-Un historique de 24 heures est conservé dans ce répertoire.
 
 NOTE: Le domaine national est un assemblage en post-traitement de tous les domaines du SRPDV.
 

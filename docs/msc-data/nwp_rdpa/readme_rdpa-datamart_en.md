@@ -23,8 +23,6 @@ where :
 * __hh__ : time interval of 06 or 24 hours in which precipitation accumulations are analyzed
 * __HH__ :  UTC run time [00, 06, 12, 18]
 
-A 30-day history is kept on the MSC Datamart.
-
 ## Technical specification of the grid
 
 ![Rlatlon RDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_RDPA.png)

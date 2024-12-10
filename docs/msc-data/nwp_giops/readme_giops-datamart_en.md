@@ -18,7 +18,6 @@ The data can be accessed at the following URLs:
 
 * [https://dd.weather.gc.ca/model_giops/netcdf](https://dd.weather.gc.ca/model_giops/netcdf)
 
-A history of 5 days of forecast is kept in this directory.
 
 * Files containing data on the latlon0.2x0.2 grid can be found at the following address:
 

@@ -23,8 +23,6 @@ où :
 * __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
 * __hhh__ : Heure de la prévision [001, ..., 084] 
 
-Un historique de 24h de prévision est stocké dans ce répertoire.
-
 ## Spécification technique de la grille  
 
 ![Image du domaine SPCE ocean-atmosphere](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_ocean-atm.png)

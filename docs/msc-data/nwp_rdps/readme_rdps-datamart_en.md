@@ -23,8 +23,6 @@ where :
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 001, 002,..., 084]
 
-A 20-hour history is kept in this directory.
-
 ## Technical specification of the grid
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)

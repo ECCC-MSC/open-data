@@ -31,8 +31,6 @@ where :
 
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
-A 24-hour history is stored in this directory.
-
 Note: The national domain is a post-processed composite of all the RDWPS domains.
 
 ## Available Domains

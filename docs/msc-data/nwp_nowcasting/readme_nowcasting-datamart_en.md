@@ -22,8 +22,6 @@ The data can be accessed at the following URLs :
 
 * [https://dd.weatheroffice.gc.ca/nowcasting/matrices/](https://dd.weatheroffice.gc.ca/nowcasting/matrices/)
 
-A 24-hour history is kept in this directory.
-
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.

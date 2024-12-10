@@ -28,8 +28,6 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12] 
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 048]
 
-Un historique de 24 heures est conservé dans ces répertoires.
-
 Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Spécification technique des grilles 

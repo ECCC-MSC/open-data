@@ -22,7 +22,6 @@ où :
 
 * __HH__ : Heure en UTC du temps de validité de l'analyse [00, 03, 06, 09, 12, 15, 18, 21]
 
-Un historique de 24h de prévision est stocké dans ce répertoire.
 
 ## Spécification technique de la grille  
 

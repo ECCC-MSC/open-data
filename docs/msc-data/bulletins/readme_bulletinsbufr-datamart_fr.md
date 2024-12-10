@@ -25,13 +25,9 @@ où :
 
 __YYYYMMDD__ : Date de l’émission du bulletin BUFR en UTC.
 
-Tout comme les bulletins alphanumériques, les bulletins BUFR sont conservés pendant six mois.
-
 __Note__: Dans le contexte du passage des bulletins alphanumériques aux bulletins BUFR, les bulletins binaires sont distribués dans le même répertoire que les bulletins alphanumériques.
 	
 ## Nomenclature des noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms des fichiers ont la forme :
 

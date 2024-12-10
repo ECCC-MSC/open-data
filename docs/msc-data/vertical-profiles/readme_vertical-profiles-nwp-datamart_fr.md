@@ -20,8 +20,6 @@ Les profils verticaux sont disponibles à cette adresse :
 
 Les données sont disponibles à 00Z et 12Z, toutes les 3h de 00h à 48h.
 
-Un historique de 24 heures des données est conservé dans ce répertoire.
-
 ## Nomenclature des noms de fichiers 
 
 Les noms de fichiers suivent la nomenclature suivante :

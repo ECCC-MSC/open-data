@@ -22,8 +22,6 @@ où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12].
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Domaine disponible
 
 Grille latitude-longitude globale

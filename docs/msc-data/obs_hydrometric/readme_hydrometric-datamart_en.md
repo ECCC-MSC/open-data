@@ -37,7 +37,6 @@ where:
 
 * __FREQUENCY__ : Frequency of update, "hourly" or "daily".
 
-A 30-day history is kept in this directory.
 
 ## File name nomenclature 
 

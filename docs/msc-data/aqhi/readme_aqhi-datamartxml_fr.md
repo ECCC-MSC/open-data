@@ -40,8 +40,6 @@ Une [liste complète des villes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/pub
 
 ## Nomenclature des noms de fichiers 
 
-NOTE : TOUTES LES HEURES SONT EN UTC.
-
 * **Observations** (Noter: les fichiers « MONTHLY » ne sont pas disponibles encore) :
        
     * __Fichier horaire__ : AQ_OBS_CGNDBcode_AAAAMMJJhhmm.xml
@@ -76,7 +74,7 @@ NOTE : TOUTES LES HEURES SONT EN UTC.
 
 ## Notes
 
-* Les fichiers XML pour observations sont produits aux heures, environ 40 minutes après l'heure. Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures. Les fichiers XML pour les prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. Ils sont disponibles sur le Datamart du SMC pour une période de 48 heures.
+* Les fichiers XML pour observations sont produits aux heures, environ 40 minutes après l'heure. Les fichiers XML pour les prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. 
 
 * Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur [le portail américain AirNow](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
 

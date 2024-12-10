@@ -23,8 +23,6 @@ où :
 * __HH__ : Heure de la passe du modèle en UTC [00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [000, 003, 006, ..., 048]
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécification technique de la grille
 
 ![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)

@@ -25,8 +25,6 @@ où :
 
 Les analyses sont disponibles aux heures dans chaque répertoire d'heures de référence [00, 01, ..., 23], sous l'échéance `000` des heures de prévision. Les prévisions sont disponibles pour chaque heure synoptique dans les répertoires [00, 06, 12, 18]
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécification technique de la grille
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ohps/grille_ohps.png)

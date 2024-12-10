@@ -43,7 +43,6 @@ où :
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
 * __YYYY__: L’année du début de la prévision [Ex: 2012, 2013, ...]
 
-Un historique de 1 mois est conservé dans ces répertoires (sauf pour les prévisions rétrospectives)
 
 ## Spécification technique de la grille
 

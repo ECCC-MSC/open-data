@@ -23,8 +23,6 @@ where :
 * __HH__: Model issuing run time, in UTC [00, 12]
 * __hhh__: Forecast lead time [000, 003, 006, ..., 144]
 
-A 24-hour history is kept in this directory.
-
 ## Technical specifications
 
 * UMOS forecast is offered at observation station locations in North America covered within the following geographical boundaries: 141⁰W, 40⁰N, 42⁰W, 88⁰N

@@ -18,11 +18,8 @@ The bulletin files are available at the following address :
 
 * [https://dd.weather.gc.ca/bulletins/alphanumeric/](https://dd.weather.gc.ca/bulletins/alphanumeric/)
 
-A 5-month history is kept in this directory.
 
 ## Directory and file name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The bulletins are grouped in a directory tree that is based on the date and on the type of bulletin.
 

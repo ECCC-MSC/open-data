@@ -54,7 +54,7 @@ The data can be accessed at the following address:
   
 ## Data retention
 
-Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. They are available on the MSC Datamart for a period of 8 days. Monthly CSV files are produced at the end of each month. They are available on the MSC Datamart for a period of 12 months.
+Real-time CSV files are produced on an hourly basis and contain the data for the last 7 days. Monthly CSV files are produced at the end of each month.
     
 ## File name nomenclature 
 

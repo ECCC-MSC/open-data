@@ -18,11 +18,7 @@ The vertical profiles files are available at the following address :
 
 [https://dd.weather.gc.ca/vertical_profile/observation/csv](https://dd.weather.gc.ca/vertical_profile/observation/csv)
 
-An history of 24 hours of data is kept in the directory.
-
 ## Filename nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The filenames have the following nomenclature :
 

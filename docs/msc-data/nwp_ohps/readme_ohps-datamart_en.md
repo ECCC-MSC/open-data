@@ -25,8 +25,6 @@ where :
 
 Analyses are hourly available in each reference time directory [00, 01, ..., 23], under the `000` forecast hour directory. Forecasts are available for each synoptic hour in model run directories [00, 06, 12, 18].
 
-A 24-hour history is stored in this directory.
-
 ## Technical specification of the grid
 
 ![](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_ohps/grille_ohps.png)

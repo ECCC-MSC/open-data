@@ -23,8 +23,6 @@ où :
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 072] 
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécification technique de la grille  
 
 ![Image du domaine RAQDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)

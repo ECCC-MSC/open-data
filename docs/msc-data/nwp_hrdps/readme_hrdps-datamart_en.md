@@ -28,8 +28,6 @@ where :
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [000, 001, 002, ..., 048]
 
-A 24-hour history is stored in this directory.
-
 Note: Some weather element of the grid algorithms ("WEonG") need variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
 ## Technical grid specification

@@ -20,11 +20,7 @@ The vertical profiles files are available at the following address :
 
 The data are available at 00Z and 12Z, from 00h to 48h, every 3 hours.
 
-An history of 24 hours of data is kept in the directory.
-
 ## Filename nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 The filenames have the following nomenclature :
 

@@ -18,8 +18,6 @@ Thunderstorm outlooks data can be found at :
 
 [https://dd.alpha.weather.gc.ca/thunderstorm-outlooks/](https://dd.alpha.weather.gc.ca/thunderstorm-outlooks)
 
-A 7-day history is kept in this directory.
-
 ## File name nomenclature 
 
 File names follow the nomenclature below:

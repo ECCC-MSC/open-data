@@ -24,13 +24,9 @@ where :
 
 __YYYYMMDD__ : Date of the BUFR bulletin emission in UTC
 
-As other alphanumeric bulletins, the retention period is 6 months.
-
 __Note__: In the context of the migration from alphanumeric to BUFR format, binary bulletins are available in the same directory than alphanumeric ones.
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 File  names have the form :
 

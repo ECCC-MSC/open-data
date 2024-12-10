@@ -24,8 +24,6 @@ où :
 * __HH__ : Heure d’émission des prévisions du modèle numérique en UTC  [00, 12]
 * __hhh__ : Heure d'échéance de la prévision [000, 003, 006, ..., 144] 
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécifications techniques
 
 * Les prévisions de UMOS sont offertes aux stations d’observation situées en Amérique du Nord à l’intérieur des limites géographiques suivantes : 141⁰W, 40⁰N, 42⁰W, 88⁰N

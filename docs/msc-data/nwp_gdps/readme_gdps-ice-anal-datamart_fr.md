@@ -26,8 +26,6 @@ où :
 * __RES__ : Résolution horizontale [10km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 
-Un historique de 7 jours est conservé dans ce répertoire.
-
 ## Spécification technique de la grille
 
 Valeurs données aux différents paramètres de la grille latitude-longitude selon la résolution.

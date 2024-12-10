@@ -23,8 +23,6 @@ This table lists the values of different parameters of the RDSPS grid:
 
 ##    Nomenclature of file directories
 
-NOTE:  ALL HOURS ARE IN UTC.
-
 File names have the form:
 
 ```

@@ -22,8 +22,6 @@ où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 
-Un historique de 24 heures est conservé dans ce répertoire.
-
 ## Spécification technique de la grille
 
 ![Image de la grille du SRPEOT](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_resps/grille_resps.png)

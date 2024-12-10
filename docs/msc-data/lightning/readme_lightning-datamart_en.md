@@ -18,7 +18,6 @@ Lightning data are available at the following address:
 
 [https://dd.weather.gc.ca/lightning](https://dd.weather.gc.ca/lightning/)
 
-A history of 24 hours is kept in this directory.
 
 ## Filename nomenclature
 

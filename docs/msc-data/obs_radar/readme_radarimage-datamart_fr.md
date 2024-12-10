@@ -24,8 +24,6 @@ où :
 * FORMAT  = [GIF] 
 * STATION_RADAR   = [CASBV, CASRA, ...]  code de 5 lettres du radar, en lettres majuscules. 
 
-Un historique de 48 heures des données est conservé dans chaque répertoire.
-
 __Notes__: 
 
 * Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et Changement climatique Canada.

@@ -23,8 +23,6 @@ where:
 * __HH__ : Model run start, in UTC [00, 12]
 * __hhh__ : Forecast hour [000, 001, ..., 144] 
 
-A 24h history is kept in this directory.
-
 ## Technical specification of the grid
 
 ![Image of the HRDLPS domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdlps/grille_hrdlps.png)

@@ -32,8 +32,6 @@ A [complete list of locations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/publi
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
-
 File names have the form:
 
 ### Observations

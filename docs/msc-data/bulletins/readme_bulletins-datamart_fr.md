@@ -18,11 +18,8 @@ Les données sont accessibles aux adresses suivantes :
 
 * [https://dd.meteo.gc.ca/bulletins/alphanumeric/](https://dd.meteo.gc.ca/bulletins/alphanumeric/)
 
-Un historique de 5 mois est conservé dans ce répertoire.
 
 ## Nomenclature des répertoires et noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les bulletins sont regroupés dans des structures de répertoires basés sur la date et sur le type de bulletin.
 Les répertoires suivent la nomenclature suivante:

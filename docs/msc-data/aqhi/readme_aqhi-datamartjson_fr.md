@@ -32,8 +32,6 @@ Une [liste complète des localisations](https://collaboration.cmc.ec.gc.ca/cmc/c
 
 ## Nomenclature des noms de fichiers 
 
-NOTE : TOUTES LES HEURES SONT EN UTC.
-
 Les noms de fichiers ont la nomenclature suivante :
 
 ### Observations

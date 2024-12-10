@@ -21,8 +21,6 @@ where:
 * __HH__ : Analysis validity time, in UTC [00, 01, 02, ..., 22, 23]
 
 
-An history of 24 hours of forecast is kept in this directory.
-
 ## Technical specification of the grid
 
 ![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)

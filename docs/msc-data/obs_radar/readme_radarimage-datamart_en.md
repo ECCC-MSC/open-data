@@ -24,8 +24,6 @@ where:
 * FORMAT = [GIF] 
 * STATION_RADAR = [CASBV, CASRA ...]  radar 5 letter identifier code in capital letters. 
 
-The past 48 hours of data is available in each directory.
-
 __Notes__: 
 
 * Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.

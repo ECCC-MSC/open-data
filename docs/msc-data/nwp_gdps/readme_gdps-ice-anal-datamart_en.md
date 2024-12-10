@@ -26,8 +26,6 @@ where :
 * __RES__ : Horizontal resolution [10km]
 * __HH__ : UTC time of the beginning of the model run [00, 06, 12, 18]
 
-A one week history is kept in this directory.
-
 ## Technical specification of the grid
 
 Values given to the various parameters of the latitude-longitude grid according to the resolution.

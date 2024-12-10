@@ -18,8 +18,6 @@ Coastal flooding risk index data can be found at :
 
 [https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index)
 
-A 7-day history is kept in this directory.
-
 ## File name nomenclature 
 
 File names follow the nomenclature below:

@@ -18,7 +18,6 @@ Les données sont accessibles à l'adresses suivante :
 
 * [https://dd.meteo.gc.ca/model_giops/netcdf](https://dd.meteo.gc.ca/model_giops/netcdf)                  
 
-Un historique de 5 jours de prévision est stocké dans ce répertoire.
 
 * Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
 

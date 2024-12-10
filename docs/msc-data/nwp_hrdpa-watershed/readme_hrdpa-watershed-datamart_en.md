@@ -38,8 +38,6 @@ where:
 
 * __HH__ :  Accumulation period in hours: 06 or 24 
 
-A 30-day history is kept in this directory.
-
 ## File name nomenclature 
 
 NOTE: ALL HOURS ARE IN UTC.

@@ -26,8 +26,6 @@ où :
 
 * __HH__ : Heure en UTC de validité de l'image [00, 01, .., 23]
 
-Un historique de 54 heures des données est conservé dans chaque répertoire.
-
 ## Nomenclature des noms de fichiers 
 
 Les noms de fichiers suivent la nomenclature ci-dessous:

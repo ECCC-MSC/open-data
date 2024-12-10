@@ -18,7 +18,6 @@ Les données de foudre se trouvent à l'adresse :
 
 [https://dd.meteo.gc.ca/lightning](https://dd.meteo.gc.ca/lightning)
 
-Un historique de 24 heures est conservé dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
 
