@@ -30,11 +30,8 @@ where :
 * __HH__ : Start hour of model run in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [000, 001, 002, ..., 084] 
 
-A history of 2 days of forecast is kept in this directory.
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 

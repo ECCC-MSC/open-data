@@ -29,8 +29,6 @@ où :
 * __YYYYMMDD__ : Année, mois et jour
 * __RADAR_ID__ : Identifiant du radar, code de 5 lettres en lettres majuscules (voir la liste ci-dessous)
 
-Un historique de plusieurs semaines est conservé dans ce répertoire.
-
 __Notes__: 
 
 * Une [liste des sites radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) est disponible. Cette liste sera mise à jour régulièrement.

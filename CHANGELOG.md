@@ -8,6 +8,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.16
+
+* date: 2024-12-10
+* announcements:
+    * Not announced
+* new content:
+    * Add dated Citypage weather (update MSC Datamart doc)
+    * Remove data retention period in all MSC Datamart pages (new dynamic structure)
+    * Update AMQP config files (new MSC Datamart dynamic structure)	
+* improvements:
+    * NA
+* bug fixes: 
+    * NA
+	
 ## 2.6.15
 
 * date: 2024-11-01

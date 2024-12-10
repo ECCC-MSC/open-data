@@ -23,8 +23,6 @@ where :
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 003, 006,..., 084]
 
-A 24-hour history is kept in this directory.
-
 ## Technical specifications
 
 * UMOS forecast is offered at observation station locations in North America covered within the following geographical bounding box : 141⁰W, 40⁰N, 42⁰W, 88⁰N

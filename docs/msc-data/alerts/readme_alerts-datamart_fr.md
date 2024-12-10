@@ -18,8 +18,6 @@ Les __bulletins sont disponibles__ à cette adresse :
 
 [https://dd.meteo.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.meteo.gc.ca/alerts/cap)
 
-Un historique de 30 jours est conservé dans ce répertoire.
-
 avec :
 
 * __YYYYMMDD__ : jour de la transmission de l'avertissement.

@@ -18,8 +18,6 @@ Les données d'indice de risque de submersion côtière se trouvent à l'adresse
 
 [https://dd.alpha.meteo.gc.ca/thunderstorm-outlooks/](https://dd.alpha.meteo.gc.ca/thunderstorm-outlooks)
 
-Un historique de 7 jours est conservé dans ce répertoire.
-
 ## Nomenclature des noms de fichiers 
 
 Les noms de fichiers suivent la nomenclature ci-dessous :

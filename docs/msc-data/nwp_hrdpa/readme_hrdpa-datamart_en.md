@@ -22,8 +22,6 @@ where :
 
 * __HH__ :  UTC run time [00, 06, 12, 18]
 
-A history of 30 days is maintained in this directory.
-
 ## Grid specifications of the grid
 
 ![Rlatlon HRDPA grid](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa_rlatlon.png)

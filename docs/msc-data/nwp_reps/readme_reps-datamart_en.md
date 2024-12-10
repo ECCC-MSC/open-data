@@ -23,8 +23,6 @@ where :
 * __HH__ : Forecast run hour in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast time [000, 003, 006, ..., 048]
 
-A 24-hour history is stored in this directory.
-
 ## Technical specification of the grid
 
 ![Grille du SRPE Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_reps/grille_reps_rlatlon.png)

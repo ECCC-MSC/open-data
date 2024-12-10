@@ -22,8 +22,6 @@ where :
 
 * __HH__ : Model run start, in UTC [00 or 12]
 
-A history of 24 hours is maintained in this directory.
-
 ## Available domain
 
 Global latitude-longitude grid.

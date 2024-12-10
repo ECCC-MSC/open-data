@@ -23,8 +23,6 @@ où :
 * __hh__ : Heure finale d’accumulation de précipitation [06, 24]
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 
-Un historique de 30 jours est conservé sur le Datamart du SMC.
-
 ## Spécification technique de la grille
 
 ![Grille RDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdpa/grille_RDPA.png)

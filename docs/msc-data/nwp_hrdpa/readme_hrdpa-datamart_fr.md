@@ -22,8 +22,6 @@ où :
 
 * __HH__ : Heure UTC de la passe [00, 06, 12, 18]
 
-Un historique de 30 jours est conservé dans ces répertoires.
-
 ## Spécification technique de la grille
 
 ![Grille HRDPA Rlatlon](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdpa/grille_hrdpa_rlatlon.png)

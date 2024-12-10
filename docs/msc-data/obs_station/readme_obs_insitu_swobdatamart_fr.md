@@ -55,14 +55,9 @@ où :
 __Notes__: 
 
 * Une [liste des stations des partenaires](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
-* Les bouées amarrées du ministère des Pêches et des Océans (alias bouées Viking) sont saisonnières. Elles sont généralement retirées en novembre et 
-redéployées en juin. De novembre à juin, il n'y aura pas de données transmises par ces bouées.
-
-Un historique de 30 jours est conservé dans ces répertoires.
+* Les bouées amarrées du ministère des Pêches et des Océans (alias bouées Viking) sont saisonnières. Elles sont généralement retirées en novembre et redéployées en juin. De novembre à juin, il n'y aura pas de données transmises par ces bouées.
 
 ## Nomenclature
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 * __La nomenclature pour les fichiers SWOB est la suivante :__
 

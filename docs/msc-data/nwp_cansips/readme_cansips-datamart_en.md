@@ -44,7 +44,6 @@ where :
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [Ex: 2012, 2013, ...]
 
-A 1-month history is kept in these directories (except for hindcast).
 
 ## Technical specification of the grid
 

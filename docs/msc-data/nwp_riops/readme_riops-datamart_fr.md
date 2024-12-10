@@ -30,11 +30,8 @@ où :
 * __HH__ : Heure en UTC du début de la passe du modèle[00, 06, 12, 18]
 * __hhh__ : Heure de la prévision [000, 001, 002, ..., 084]
 
-Un historique de 2 jours de prévision est disponible dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

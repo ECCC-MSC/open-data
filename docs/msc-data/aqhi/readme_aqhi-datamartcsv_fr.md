@@ -52,7 +52,7 @@ Les données sont accessibles aux adresses suivantes :
 
 ## Rétention des données 
 
-Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Ils sont disponibles sur le Datamart du SMC pour une période de 8 jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. Ils sont disponibles sur le Datamart du SMC pour une période de 12 mois.
+Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. 
     
 ## Nomenclature des noms de fichiers 
 

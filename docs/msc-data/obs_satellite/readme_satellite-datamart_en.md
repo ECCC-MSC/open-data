@@ -26,8 +26,6 @@ where :
 
 * __HH__: Time in UTC of image validity [00, 01, .., 23]
 
-A 54-hour history of data is stored in each directory.
-
 ## File name nomenclature 
 
 File names follow the nomenclature below:

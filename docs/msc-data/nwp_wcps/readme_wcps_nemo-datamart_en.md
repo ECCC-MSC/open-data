@@ -24,8 +24,6 @@ where:
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 * __hhh__ : Forecast hour [001, ..., 084] 
 
-A 30 day history is kept in this directory.
-
 ## Technical specification of the grid
 
 ![Image of the WCPS-NEMO domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_wcps/grille_wcps_nemo.png)

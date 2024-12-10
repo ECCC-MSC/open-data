@@ -23,7 +23,6 @@ where:
 * __HH__ : Model run start, in UTC [00,06,12,18]
 * __hhh__ : Forecast hour [001, ..., 084] 
 
-A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 

@@ -16,11 +16,13 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-* The weather forecast data by city are available according to this hierarchy :
+* **Weather forecast data by city, disseminated in dated files (single files)** are available according to this hierarchy :
 
-  [https://dd.weather.gc.ca/citypage_weather/xml/{XX}](https://dd.weather.gc.ca/citypage_weather/xml)
+  [https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.weather.gc.ca/citypage_weather/)
   
-  where __XX__ is a 2 letter provincial or territorial code indicating the area covered by the forecasts. 
+  where:
+     * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
+     * __HH__ : Hour (UTC) of forecast data emission 
 
   The code is one of the 13 following values :
 
@@ -37,31 +39,67 @@ The data is available via the HTTPS protocol. It is possible to access it with a
     * QC (Québec)
     * SK (Saskatchewan)
     * YT (Yukon)
-  
-* The high elevation forecasts, for seasonal text bulletin forecasts issued only for British Columbia, are available at the following address :
-   
-   [https://dd.weather.gc.ca/citypage_weather/xml/HEF](https://dd.weather.gc.ca/citypage_weather/xml/HEF)
-   
+
+Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+
+* **Weather forecast data by city, distributed in undated files (data overwritten with each update)** are available at this address:
+
+  [https://dd.weather.gc.ca/citypage_weather/xml/{PROV}](https://dd.weather.gc.ca/citypage_weather/xml/)
+
+  where:
+     * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
+
+  The code is one of the 13 following values :
+
+    * AB (Alberta)
+    * BC (British Columbia)
+    * MB (Manitoba)
+    * NB (New Brunswick)
+    * NL (Newfoundland and Labrador)
+    * NS (Nova Scotia)
+    * NT (Northwest Territories)
+    * NU (Nunavut)
+    * ON (Ontario)
+    * PE (Prince Edward Island)
+    * QC (Québec)
+    * SK (Saskatchewan)
+    * YT (Yukon)
+
+Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
+* Dated, unique files:
 
-The file names have the following nomenclature :
+`{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
-SiteNameCode_L.xml
+where :
 
-where:
+* __SiteCode__ : City code (see below)
+* __L__ : Letter indicating file language: fr (French) or en (English)
 
-* SiteNameCode: code corresponding to the site codes used in the city site list 
-* L: single letter indicating the language of the file. Can be either: f
-(French) or e (English)
+Examples of file names:
 
-Examples of filenames :
+* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
+* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
-* s0000001_e.xml - English citypage weather XML for Athabasca.
-* s0000001_f.xml - French citypage weather XML for Athabasca.
+* Undated files, overwritten with each update:
+
+`{SiteCode}_{L}.xml`
+
+where :
+
+* __SiteCode__ : City code (see below)
+* __L__ : Letter indicating file language: f (French) or e (English)
+
+Examples of file names:
+
+* s0000011_e.xml 
+* s0000011_f.xml
 
 A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
+
+NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.
 
 ## Tags and XML schemas 
 

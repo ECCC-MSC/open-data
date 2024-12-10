@@ -18,7 +18,6 @@ Les données d'indice de risque de submersion côtière se trouvent à l'adresse
 
 [https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index)
 
-Un historique de 7 jours est conservé dans ce répertoire.
 
 ## Nomenclature des noms de fichiers 
 

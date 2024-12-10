@@ -41,8 +41,6 @@ où  :
 
 * __HH__ : Période d’accumulation en heures: 06 ou 24 
 
-Un historique de 30 jours est conservé dans ce répertoire.
-
 ## Nomenclature des noms de fichiers 
 
 NOTE : TOUTES LES HEURES SONT EN UTC.

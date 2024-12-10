@@ -22,8 +22,6 @@ Ce tableau répertorie les valeurs de divers paramètres de la grille :
 
 ## Nomenclature des noms de fichiers
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 Les noms de fichiers ont la nomenclature suivante :
 
 ```

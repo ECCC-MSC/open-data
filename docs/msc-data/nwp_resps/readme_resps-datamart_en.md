@@ -22,8 +22,6 @@ where :
 
 * __HH__ : Model run start, in UTC [00 or 12]
 
-A history of 24 hours is maintained in this directory.
-
 ## Grid technical specification
 
 ![RESPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_resps/grille_resps.png)

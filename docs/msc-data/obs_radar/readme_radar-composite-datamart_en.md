@@ -26,8 +26,6 @@ where:
 * FORMAT = [GIF] (other formats may appear in the future)
 * STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
 
-The past 48 hours of data is available in each directory.
-
 __Notes__: 
 
 * Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.

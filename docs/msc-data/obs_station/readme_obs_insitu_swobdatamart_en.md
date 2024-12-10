@@ -57,12 +57,7 @@ __Notes__:
 * The Department of Fisheries and Ocean moored buoys (aka Viking buoys) are seasonal. They are typically recalled in November and 
 re-deployed in June. From November to June there will be no data transmitted from the buoys
 
-
-A 30-day history is kept in these directories.
-
 ## Nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 * __SWOB files follow this naming convention :__
 

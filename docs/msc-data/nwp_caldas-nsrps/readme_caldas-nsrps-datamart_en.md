@@ -22,7 +22,6 @@ where:
 
 * __HH__ : Analysis validity time, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
 
-A 24h history is kept in this directory.
 
 ## Technical specification of the grid
 

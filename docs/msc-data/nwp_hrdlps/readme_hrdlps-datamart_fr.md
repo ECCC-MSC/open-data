@@ -23,8 +23,6 @@ où :
 * __HH__ : Heure en UTC du début de la simulation [00, 12]
 * __hhh__ : Heure de la prévision [000, 001, ..., 144] 
 
-Un historique de 24h de prévision est stocké dans ce répertoire.
-
 ## Spécification technique de la grille  
 
 ![Image du domaine HRDLPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdlps/grille_hrdlps.png)

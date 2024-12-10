@@ -18,12 +18,8 @@ Les profils verticaux observés sont disponibles à cette adresse :
 
 [https://dd.meteo.gc.ca/vertical_profile/observation/csv/](https://dd.meteo.gc.ca/vertical_profile/observation/csv/)
 
-Un historique de 24 heures des données est conservé dans ce répertoire.
-
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
- 
 Les noms de fichiers suivent la nomenclature suivante :
 
 ObsTephi_HH_AAAA.csv

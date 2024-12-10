@@ -23,8 +23,6 @@ where:
 * __HH__ : Model run start, in UTC [00, 12]
 * __hhh__ : Forecast hour [000, 001, 002, ..., 072] 
 
-A history of 24 days of forecast is kept in this directory.
-
 ## Technical specification of the grid
 
 ![RAQDPS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_raqdps-fw/grille_raqdps-fw.png)

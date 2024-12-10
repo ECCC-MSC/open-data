@@ -28,8 +28,6 @@ où :
 * FORMAT  = [GIF] (d'autres formats peuvent apparaître dans le futur)
 * STATION_RADAR   = [WKR, XAM, ...]  code de 3 lettres du radar, en lettres majuscules. Pour les nouveaux radars S-band, code de 5 lettres (voir section ci-dessous).
 
-Un historique de 48 heures des données est conservé dans chaque répertoire.
-
 __Notes__: 
 
 * Chacun de ces produits est détaillé dans la [documentation](https://www.ec.gc.ca/meteo-weather/default.asp?lang=Fr&n=2B931828-1) d'Environnement et changement climatique Canada.

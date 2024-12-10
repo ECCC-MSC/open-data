@@ -22,8 +22,6 @@ where :
 
 * __HH__ : Model run start, in UTC [00, 06, 12, 18]
 
-A 24-hour history is stored in this directory.
-
 ## Grid technical specification
 
 The REWPS data are available on the Great Lakes domain.
