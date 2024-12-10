@@ -57,7 +57,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 * **Dated, unique files**:
 
- `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
+  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
   where :
 
@@ -71,7 +71,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 * **Undated files, overwritten with each update**:
 
- `{SiteCode}_{L}.xml`
+  `{SiteCode}_{L}.xml`
 
   where :
 
