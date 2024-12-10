@@ -49,7 +49,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
   où:
   
-      * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions (voir la liste ci-dessus)
+    * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions (voir la liste ci-dessus)
 
   Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
 

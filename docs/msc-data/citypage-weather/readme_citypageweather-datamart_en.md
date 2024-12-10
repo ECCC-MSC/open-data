@@ -21,8 +21,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
   [https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.weather.gc.ca/citypage_weather/)
   
   where:
-     * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
-     * __HH__ : Hour (UTC) of forecast data emission 
+  
+    * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
+    * __HH__ : Hour (UTC) of forecast data emission 
 
   The code is one of the 13 following values :
 
@@ -40,62 +41,47 @@ The data is available via the HTTPS protocol. It is possible to access it with a
     * SK (Saskatchewan)
     * YT (Yukon)
 
-Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+ Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
 * **Weather forecast data by city, distributed in undated files (data overwritten with each update)** are available at this address:
 
   [https://dd.weather.gc.ca/citypage_weather/xml/{PROV}](https://dd.weather.gc.ca/citypage_weather/xml/)
 
   where:
-     * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
+  
+    * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list aboce)
 
-  The code is one of the 13 following values :
-
-    * AB (Alberta)
-    * BC (British Columbia)
-    * MB (Manitoba)
-    * NB (New Brunswick)
-    * NL (Newfoundland and Labrador)
-    * NS (Nova Scotia)
-    * NT (Northwest Territories)
-    * NU (Nunavut)
-    * ON (Ontario)
-    * PE (Prince Edward Island)
-    * QC (Québec)
-    * SK (Saskatchewan)
-    * YT (Yukon)
-
-Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+ Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
 ## File name nomenclature 
 
 * Dated, unique files:
 
-`{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
+ `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
 where :
 
-* __SiteCode__ : City code (see below)
-* __L__ : Letter indicating file language: fr (French) or en (English)
+    * __SiteCode__ : City code (see below)
+    * __L__ : Letter indicating file language: fr (French) or en (English)
 
 Examples of file names:
 
-* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
-* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
+    * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
+    * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
 * Undated files, overwritten with each update:
 
-`{SiteCode}_{L}.xml`
+ `{SiteCode}_{L}.xml`
 
 where :
 
-* __SiteCode__ : City code (see below)
-* __L__ : Letter indicating file language: f (French) or e (English)
+    * __SiteCode__ : City code (see below)
+    * __L__ : Letter indicating file language: f (French) or e (English)
 
 Examples of file names:
 
-* s0000011_e.xml 
-* s0000011_f.xml
+    * s0000011_e.xml 
+    * s0000011_f.xml
 
 A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
 
