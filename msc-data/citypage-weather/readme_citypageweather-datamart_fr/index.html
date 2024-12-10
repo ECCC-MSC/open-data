@@ -165,10 +165,13 @@
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.</p>
 <ul>
-<li>Les <strong>données de prévision météorologique par ville</strong> sont disponibles suivant cette hiérarchie :</li>
+<li><strong>Les données de prévision météorologique par ville, distribuées dans des fichiers datés (fichiers uniques)</strong> sont disponibles à cette adresse:</li>
 </ul>
-<p><a href="https://dd.meteo.gc.ca/citypage_weather/xml">https://dd.meteo.gc.ca/citypage_weather/xml/{XX}</a></p>
-<p>où, XX est un code de 2 lettres pour la province ou le territoire couvert par ces prévisions. </p>
+<p><a href="https://dd.meteo.gc.ca/citypage_weather/">https://dd.meteo.gc.ca/citypage_weather/{PROV}/{HH}</a></p>
+<p>où:</p>
+<pre><code>* __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions
+* __HH__ : Heure UTC d'émission des prévisions
+</code></pre>
 <p>Ce code peut prendre une de ces 13 valeurs :</p>
 <pre><code>* AB (Alberta)
 * BC (Colombie-Britannique)
@@ -184,25 +187,43 @@
 * SK (Saskatchewan)
 * YT (Yukon)
 </code></pre>
+<p>Note: le répertoire <code>HEF</code> contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique</p>
 <ul>
-<li>Les <strong>données de haute altitude</strong> alimentant des bulletins de <strong>prévisions saisonnières publiés seulement pour la Colombie-Britannique</strong>, sont disponibles à l'adresse suivante :</li>
+<li><strong>Les données de prévision météorologique par ville, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)</strong> sont disponibles à cette adresse:</li>
 </ul>
-<p><a href="https://dd.meteo.gc.ca/citypage_weather/xml/HEF">https://dd.meteo.gc.ca/citypage_weather/xml/HEF</a></p>
+<p><a href="https://dd.meteo.gc.ca/citypage_weather/xml/">https://dd.meteo.gc.ca/citypage_weather/xml/{PROV}</a></p>
+<p>où:</p>
+<pre><code>* __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions (voir la liste ci-dessus)
+</code></pre>
+<p>Note: le répertoire <code>HEF</code> contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers suivent la nomenclature suivante :</p>
-<p>CodeDeSite_L.xml</p>
+<ul>
+<li><strong>Fichiers datés, uniques</strong>:</li>
+</ul>
+<p><code>{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml</code></p>
 <p>où :</p>
+<pre><code>* __SiteCode__ : Code de la ville (voir plus bas)
+* __L__ : Lettre indiquant la langue du fichier : fr (français) ou en (anglais)
+</code></pre>
+<p>Exemples de noms de fichier :</p>
+<pre><code>* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
+* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
+</code></pre>
 <ul>
-<li><strong>CodeDeSite</strong> : Code de la ville (voir plus bas).</li>
-<li><strong>L</strong> : Lettre indiquant la langue du fichier : f (français) ou e (anglais).</li>
+<li><strong>Fichiers non datés, écrasés lors de chaque mise à jour</strong>:</li>
 </ul>
-<p>Exemples de nom de fichier :</p>
-<ul>
-<li>s0000001_e.xml - fichier XML de prévisions météorologiques pour Athabasca, en anglais.</li>
-<li>s0000001_f.xml - fichier XML de prévisions météorologiques pour Athabasca, en français.</li>
-</ul>
+<p><code>{SiteCode}_{L}.xml</code></p>
+<p>où :</p>
+<pre><code>* __SiteCode__ : Code de la ville (voir plus bas)
+* __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
+</code></pre>
+<p>Exemples de noms de fichier :</p>
+<pre><code>* s0000011_e.xml 
+* s0000011_f.xml
+</code></pre>
 <p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson">liste de noms d'emplacements et de codes de sites</a>, en format GeoJSON est disponible.</p>
+<p>NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.</p>
 <h2 id="balises-et-schemas-xml">Balises et schémas XML</h2>
 <ul>
 <li>

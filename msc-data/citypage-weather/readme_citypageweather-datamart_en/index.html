@@ -165,10 +165,13 @@
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.</p>
 <ul>
-<li>The weather forecast data by city are available according to this hierarchy :</li>
+<li><strong>Weather forecast data by city, disseminated in dated files (single files)</strong> are available according to this hierarchy :</li>
 </ul>
-<p><a href="https://dd.weather.gc.ca/citypage_weather/xml">https://dd.weather.gc.ca/citypage_weather/xml/{XX}</a></p>
-<p>where <strong>XX</strong> is a 2 letter provincial or territorial code indicating the area covered by the forecasts. </p>
+<p><a href="https://dd.weather.gc.ca/citypage_weather/">https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}</a></p>
+<p>where:</p>
+<pre><code>* __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
+* __HH__ : Hour (UTC) of forecast data emission
+</code></pre>
 <p>The code is one of the 13 following values :</p>
 <pre><code>* AB (Alberta)
 * BC (British Columbia)
@@ -184,26 +187,42 @@
 * SK (Saskatchewan)
 * YT (Yukon)
 </code></pre>
+<p>Note: the <code>HEF</code> directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.</p>
 <ul>
-<li>The high elevation forecasts, for seasonal text bulletin forecasts issued only for British Columbia, are available at the following address :</li>
+<li><strong>Weather forecast data by city, distributed in undated files (data overwritten with each update)</strong> are available at this address:</li>
 </ul>
-<p><a href="https://dd.weather.gc.ca/citypage_weather/xml/HEF">https://dd.weather.gc.ca/citypage_weather/xml/HEF</a></p>
-<h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
-<p>The file names have the following nomenclature :</p>
-<p>SiteNameCode_L.xml</p>
+<p><a href="https://dd.weather.gc.ca/citypage_weather/xml/">https://dd.weather.gc.ca/citypage_weather/xml/{PROV}</a></p>
 <p>where:</p>
+<pre><code>* __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list aboce)
+</code></pre>
+<p>Note: the <code>HEF</code> directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.</p>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
 <ul>
-<li>SiteNameCode: code corresponding to the site codes used in the city site list </li>
-<li>L: single letter indicating the language of the file. Can be either: f
-(French) or e (English)</li>
+<li><strong>Dated, unique files</strong>:</li>
 </ul>
-<p>Examples of filenames :</p>
+<p><code>{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml</code></p>
+<p>where :</p>
+<pre><code>* __SiteCode__ : City code (see below)
+* __L__ : Letter indicating file language: fr (French) or en (English)
+</code></pre>
+<p>Examples of file names:</p>
+<pre><code>* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
+* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
+</code></pre>
 <ul>
-<li>s0000001_e.xml - English citypage weather XML for Athabasca.</li>
-<li>s0000001_f.xml - French citypage weather XML for Athabasca.</li>
+<li><strong>Undated files, overwritten with each update</strong>:</li>
 </ul>
+<p><code>{SiteCode}_{L}.xml</code></p>
+<p>where :</p>
+<pre><code>* __SiteCode__ : City code (see below)
+* __L__ : Letter indicating file language: f (French) or e (English)
+</code></pre>
+<p>Examples of file names:</p>
+<pre><code>* s0000011_e.xml 
+* s0000011_f.xml
+</code></pre>
 <p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson">list with location names and SiteNameCodes</a> is available in GeoJSON format.</p>
+<p>NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.</p>
 <h2 id="tags-and-xml-schemas">Tags and XML schemas</h2>
 <ul>
 <li>

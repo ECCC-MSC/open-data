@@ -161,16 +161,15 @@
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoJSON file.</p>
 <p>The MetNotes data are available at the following address:</p>
 <p><a href="https://dd.weather.gc.ca/metnotes">https://dd.weather.gc.ca/metnotes</a></p>
-<p>A history of 24 hours is kept in this directory.</p>
 <h2 id="filename-nomenclature">Filename nomenclature</h2>
 <p>NOTE: ALL HOURS ARE IN UTC.</p>
 <p>The files have the following nomenclature:</p>
-<p><code>{YYYYMMDD}T{hhmmss.mss}Z_MSC_MetNotes.json</code></p>
+<p><code>{YYYYMMDD}T{hhmmss.sss}Z_MSC_MetNotes.json</code></p>
 <p>where:</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of data emission</li>
 <li><strong>T</strong> : Time delimiter according to ISO8601 norms</li>
-<li><strong>hhmmss.mss</strong> : Hour, minute, second and milliseconds when data are produced</li>
+<li><strong>hhmmss.sss</strong> : Hour, minute, second and milliseconds when data are produced</li>
 <li><strong>Z</strong> : Time zone (UTC hour)</li>
 <li><strong>MSC</strong> : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>MetNotes</strong> : Constant string indicating that data is from MetNotes</li>
