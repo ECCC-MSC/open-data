@@ -41,7 +41,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
     * SK (Saskatchewan)
     * YT (Yukon)
 
- Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+  Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
 * **Weather forecast data by city, distributed in undated files (data overwritten with each update)** are available at this address:
 
@@ -51,34 +51,34 @@ The data is available via the HTTPS protocol. It is possible to access it with a
   
     * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list aboce)
 
- Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
+  Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
 ## File name nomenclature 
 
-* Dated, unique files:
+* **Dated, unique files**:
 
  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
-where :
+ where :
 
     * __SiteCode__ : City code (see below)
     * __L__ : Letter indicating file language: fr (French) or en (English)
 
-Examples of file names:
+ Examples of file names:
 
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
-* Undated files, overwritten with each update:
+* **Undated files, overwritten with each update**:
 
  `{SiteCode}_{L}.xml`
 
-where :
+ where :
 
     * __SiteCode__ : City code (see below)
     * __L__ : Letter indicating file language: f (French) or e (English)
 
-Examples of file names:
+ Examples of file names:
 
     * s0000011_e.xml 
     * s0000011_f.xml
