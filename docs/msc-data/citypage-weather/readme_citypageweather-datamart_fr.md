@@ -21,8 +21,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
   [https://dd.meteo.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.meteo.gc.ca/citypage_weather/)
 
   où:
-      * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions
-      * __HH__ : Heure UTC d'émission des prévisions  
+  
+    * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions
+    * __HH__ : Heure UTC d'émission des prévisions  
 
   Ce code peut prendre une de ces 13 valeurs :
 
@@ -40,16 +41,17 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
     * SK (Saskatchewan)
     * YT (Yukon)
 
-Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
+  Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
 
 * **Les données de prévision météorologique par ville, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)** sont disponibles à cette adresse:
 
   [https://dd.meteo.gc.ca/citypage_weather/xml/{PROV}](https://dd.meteo.gc.ca/citypage_weather/xml/)
 
   où:
+  
       * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions (voir la liste ci-dessus)
 
-Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
+  Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
 
 ## Nomenclature des noms de fichiers 
 
@@ -57,31 +59,31 @@ Les fichiers suivent la nomenclature suivante :
 
 * Fichiers datés, uniques:
 
-`{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
+ `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
 où :
 
-* __SiteCode__ : Code de la ville (voir plus bas)
-* __L__ : Lettre indiquant la langue du fichier : fr (français) ou en (anglais)
+    * __SiteCode__ : Code de la ville (voir plus bas)
+    * __L__ : Lettre indiquant la langue du fichier : fr (français) ou en (anglais)
 
 Exemples de noms de fichier :
 
-* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
-* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
+    * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
+    * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
 * Fichiers non datés, écrasés lors de chaque mise à jour:
 
-`{SiteCode}_{L}.xml`
+ `{SiteCode}_{L}.xml`
 
 où :
 
-* __SiteCode__ : Code de la ville (voir plus bas)
-* __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
+    * __SiteCode__ : Code de la ville (voir plus bas)
+    * __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
 
 Exemples de noms de fichier :
 
-* s0000011_e.xml 
-* s0000011_f.xml
+    * s0000011_e.xml 
+    * s0000011_f.xml
 
 Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson), en format GeoJSON est disponible.
 
