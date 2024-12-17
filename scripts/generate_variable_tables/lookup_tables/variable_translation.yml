@@ -870,14 +870,6 @@ WIND:
         EN: m/s
         FR: m/s
 
-WSPD:
-    Variable:
-        EN: Wind speed
-        FR: Vitesse du vent
-    Unit:
-        EN: m/s
-        FR: m/s
-
 WTMP:
     Variable:
         EN: Water temperature

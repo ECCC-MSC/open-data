@@ -53,10 +53,10 @@ Total precipitation,APCP,Surface,kg/m<sup>2</sup>
 Upward longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
 Volumetric soil moisture,VSOILM,Depth Below Land Surface (0-0.1 m),m<sup>3</sup>/m<sup>3</sup>
 Water equivalent of accumulated snow depth,WEASD,Surface,kg/m<sup>2</sup>
-Wind speed,WSPD,10 m Above Ground Level,m/s
-Wind speed,WSPD,120 m Above Ground Level,m/s
-Wind speed,WSPD,40 m Above Ground Level,m/s
-Wind speed,WSPD,80 m Above Ground Level,m/s
+Wind speed,WIND,10 m Above Ground Level,m/s
+Wind speed,WIND,120 m Above Ground Level,m/s
+Wind speed,WIND,40 m Above Ground Level,m/s
+Wind speed,WIND,80 m Above Ground Level,m/s
 u-component of wind,UGRD,10 m Above Ground Level,m/s
 u-component of wind,UGRD,100 mb,m/s
 u-component of wind,UGRD,1000 mb,m/s

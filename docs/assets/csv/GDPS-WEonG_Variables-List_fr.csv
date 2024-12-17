@@ -31,5 +31,5 @@ Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 11
 Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
 Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
 État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=Ensoleillé/Dégagé; 2-3=Généralement ensoleillé/Quelques nuages; 4-5-6=Alternance de soleil et de nuages/Partiellement nuageux; 7-8=Généralement nuageux/Généralement nuageux; 9=Nuageux/Nuageux; 10=Nuageux/Couvert
