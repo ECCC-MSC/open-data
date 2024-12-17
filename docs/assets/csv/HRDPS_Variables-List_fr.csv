@@ -297,38 +297,38 @@ Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 11
 Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
 Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,100 mb,m/s
-Vitesse du vent,WSPD,1000 mb,m/s
-Vitesse du vent,WSPD,1015 mb,m/s
-Vitesse du vent,WSPD,120 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,150 mb,m/s
-Vitesse du vent,WSPD,175 mb,m/s
-Vitesse du vent,WSPD,200 mb,m/s
-Vitesse du vent,WSPD,225 mb,m/s
-Vitesse du vent,WSPD,250 mb,m/s
-Vitesse du vent,WSPD,275 mb,m/s
-Vitesse du vent,WSPD,300 mb,m/s
-Vitesse du vent,WSPD,350 mb,m/s
-Vitesse du vent,WSPD,40 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,400 mb,m/s
-Vitesse du vent,WSPD,450 mb,m/s
-Vitesse du vent,WSPD,50 mb,m/s
-Vitesse du vent,WSPD,500 mb,m/s
-Vitesse du vent,WSPD,550 mb,m/s
-Vitesse du vent,WSPD,600 mb,m/s
-Vitesse du vent,WSPD,650 mb,m/s
-Vitesse du vent,WSPD,700 mb,m/s
-Vitesse du vent,WSPD,750 mb,m/s
-Vitesse du vent,WSPD,80 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,800 mb,m/s
-Vitesse du vent,WSPD,850 mb,m/s
-Vitesse du vent,WSPD,875 mb,m/s
-Vitesse du vent,WSPD,900 mb,m/s
-Vitesse du vent,WSPD,925 mb,m/s
-Vitesse du vent,WSPD,950 mb,m/s
-Vitesse du vent,WSPD,970 mb,m/s
-Vitesse du vent,WSPD,985 mb,m/s
+Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,100 mb,m/s
+Vitesse du vent,WIND,1000 mb,m/s
+Vitesse du vent,WIND,1015 mb,m/s
+Vitesse du vent,WIND,120 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,150 mb,m/s
+Vitesse du vent,WIND,175 mb,m/s
+Vitesse du vent,WIND,200 mb,m/s
+Vitesse du vent,WIND,225 mb,m/s
+Vitesse du vent,WIND,250 mb,m/s
+Vitesse du vent,WIND,275 mb,m/s
+Vitesse du vent,WIND,300 mb,m/s
+Vitesse du vent,WIND,350 mb,m/s
+Vitesse du vent,WIND,40 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,400 mb,m/s
+Vitesse du vent,WIND,450 mb,m/s
+Vitesse du vent,WIND,50 mb,m/s
+Vitesse du vent,WIND,500 mb,m/s
+Vitesse du vent,WIND,550 mb,m/s
+Vitesse du vent,WIND,600 mb,m/s
+Vitesse du vent,WIND,650 mb,m/s
+Vitesse du vent,WIND,700 mb,m/s
+Vitesse du vent,WIND,750 mb,m/s
+Vitesse du vent,WIND,80 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,800 mb,m/s
+Vitesse du vent,WIND,850 mb,m/s
+Vitesse du vent,WIND,875 mb,m/s
+Vitesse du vent,WIND,900 mb,m/s
+Vitesse du vent,WIND,925 mb,m/s
+Vitesse du vent,WIND,950 mb,m/s
+Vitesse du vent,WIND,970 mb,m/s
+Vitesse du vent,WIND,985 mb,m/s
 Vitesse verticale (pression),VVEL,1000 mb,Pa/s
 Vitesse verticale (pression),VVEL,250 mb,Pa/s
 Vitesse verticale (pression),VVEL,500 mb,Pa/s
