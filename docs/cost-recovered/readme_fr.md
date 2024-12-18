@@ -17,6 +17,7 @@ Le tarif d'extraction des données archivées est de 118$/heure, avec un montant
 Un service de fil de données dédié avec un support 24h/24 et 7j/7 est disponible pour les utilisateurs spécialisés, pouvant inclure des données qui ne sont pas directement accessibles au public. Les frais reliés à ce service varient en fonction des types de données souhaitées et des besoins en bande passante associés. Les contrats s'étendent généralement sur un an ou plus, et les paiements sont habituellement traités sur une base mensuelle.
 
 Les données disponibles comprennent :
+
 * Données du modèle de prévision numérique météorologique en format GRIdded Binary (GRIB2) pour des paramètres et des domaines spécifiques (jusqu'à des valeurs horaires), ou en des points spécifiques.
 * Données radar brutes pour les radars canadiens, par exemple :
     * Sorties numériques d'échos radar ou de précipitations au format ASCII
