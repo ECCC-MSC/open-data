@@ -1,0 +1,3 @@
+mkdocs
+mkdocs-jupyter
+mkdocs-mermaid2-plugin

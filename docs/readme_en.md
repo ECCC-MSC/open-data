@@ -64,13 +64,11 @@ Access to open data available on the MSC Datamart and MSC GeoMet services is ano
 The Meteorological Service of Canada's [metadata is available on the Canadian Open Government portal](https://open.canada.ca/en/open-data), enabling users to search open data that is relevant to Canadians, learn how to work with datasets, and see what people have done with open data across the country.
 </br></br>
 
-### WMO Information System (WIS)
+## WMO Information System (WIS2)
 
-The [WMO Information System (WIS)](https://community.wmo.int/activity-areas/wis/wis-overview) enables discovery of authoritative meteorological and hydrological data and supports the collection of data and its exchange between World Meteorological Organization (WMO) Centres and their users. The "WIS Catalogue" describes the data and products available across WMO. Data and products are registered with the WIS by submitting a metadata record to the WIS Catalogue that describes the content, structure and access mechanisms for the associated data or product.
-</br></br>
+The Meteorological Service of Canada's data and metadata is also circulated internationally via the WMO Information System 2.0 (WIS2).  WIS2 enables discovery, subscription and download of weather/climate/water data from WMO Members.  WIS2 has been in operation since 01 January 2025 and replaces the Global Telecommunication System (GTS).
 
-MSC is a WIS Data Collection or Production Centre (DCPC), and provides a Discovery, Access and Retrieval (DAR) service available at [https://api.weather.gc.ca/wis/catalogue/csw](https://api.weather.gc.ca/wis/catalogue/csw).  The DAR supports a number of search interfaces including OGC Catalogue Services for the Web (CSW), Search/Retrieval via URL (SRU), and the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) standard.
-</br></br>
+* [Overview](wmo-wis2/readme_en.md)
 
 ## Events
 
