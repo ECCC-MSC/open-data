@@ -15,6 +15,7 @@ nav:
         - MSC Datamart /<br>Datamart du SMC: msc-datamart/readme_en.md
         - Cost-recovered services /<br>Services à recouvrement de coûts: cost-recovered/readme_en.md
         - MSC AniMet /<br>AniMet du SMC: msc-animet/readme_en.md
+        - WMO WIS2 /<br>WMO WIS2: wmo-wis2/readme_en.md
     - Usage and tutorials / <br>Utilisation et tutoriels:
         - Usage overview/<br>Aperçu de l'utilisation: usage/readme_en.md
         - Access tutorials /<br>Accéder aux tutoriels: usage/tutorials_en/
@@ -32,3 +33,4 @@ extra_css: [css/extra.css]
 plugins:
   - search
   - mkdocs-jupyter
+  - mermaid2

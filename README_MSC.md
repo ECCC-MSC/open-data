@@ -245,9 +245,9 @@ If you ever need to recreate your environment from scratch you may remove the en
 2. Remove the environment with `conda remove --name mkdocs --all`
 3. Follow the instructions above to recreate your mkdocs virtual environment
 
-## 5.3 - Deploy documentation on GitHub.io
+## 5.3 - Deploying documentation to GitHub Pages
 
-The following instructions show how to deploy the documentation on GitHub Pages. This process is now automated via a GitHub Action triggered when a new GitHub release is created.
+The following instructions show how to deploy the documentation on GitHub Pages (<https://eccc-msc.github.io/open-data>). This process is now automated via a GitHub Action triggered when a new GitHub release is created.
 
 1. Ensure the ECCC-MSC/open-data repository is up to date with the latest changes from the GCcode repository
     * `git pull upstream master`
