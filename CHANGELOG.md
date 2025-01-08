@@ -8,6 +8,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.6.17
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    * new dedicated WIS2 pages and associated changes
+* improvements:
+    * NA
+* bug fixes: 
+    * NA
+
 ## 2.6.16
 
 * date: 2024-12-10
