@@ -66,9 +66,8 @@ The Meteorological Service of Canada's [metadata is available on the Canadian Op
 
 ## WMO Information System (WIS2)
 
-The Meteorological Service of Canada's data and metadata is also circulated internationally via the WMO Information System 2.0 (WIS2).  WIS2 enables discovery, subscription and download of weather/climate/water data from WMO Members.  WIS2 has been in operation since 01 January 2025 and replaces the Global Telecommunication System (GTS).
-
-* [Overview](wmo-wis2/readme_en.md)
+The [Meteorological Service of Canada's data and metadata is also circulated internationally via the WMO Information System 2.0 (WIS2)](wmo-wis2/readme_en.md).  WIS2 enables discovery, subscription and download of weather, climate and water data from World Meteorological Organization (WMO) members. WIS2 has been in operation since January 2025 and replaces the Global Telecommunication System (GTS).
+</br></br>
 
 ## Events
 

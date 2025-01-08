@@ -8,7 +8,7 @@
 
 The WMO Information System 2.0 (WIS2) is the framework for WMO data sharing in the 21st century for all WMO domains and disciplines. It supports the WMO Unified Data Policy, the Global Basic Observing Network (GBON) and makes international, regional, and national data sharing simple, effective, and inexpensive. The idea that no Member should be left behind and the objective of lowering the barrier to adoption has been at the core of WIS 2.0 development. These objectives inspire the principles underpinning the WIS 2.0 technical framework, such as adopting open standards and Web technologies to facilitate sharing of increasing variety and volume of real-time data.
 
-WIS2 has been in operation since 01 January 2025 and replaces the Global Telecommunication System (GTS).
+WIS2 has been in operation since January 2025 and replaces the Global Telecommunication System (GTS).
 
 ## Key documents
 
@@ -45,16 +45,16 @@ flowchart TD
     A -->|4 download| D[fa:fa-download WIS2 Global Cache]
 ```
 
-The WIS2 GDC is provided by MSC and is available at <https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata>.  This catalogue provides discovery services for all data on WIS2.
+The WIS2 GDC is provided by the Meteorological Service of Canada (MSC) and is available at <https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata>.  This catalogue provides discovery services for all data on WIS2.
 
 To discover Canadian data on WIS2, a user may query the GDC as follows:
 
-* [Spatial query (all data in Canada)](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?bbox=-142,42,-52,84)
+* [Spatial query (all data over Canada)](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?bbox=-142,42,-52,84)
 * Keyword search:
-    * [All datasets in Canada](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=canada)
+    * [All datasets with 'Canada'](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=canada)
     * [All datasets from MSC](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=%22ca-eccc-msc%22)
     * [Canadian prediction data](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&q=canada%20AND%20prediction)
-    * [Canadian observations](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&q=canada%20AND%20observations)
+    * [Canadian observations data](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&q=canada%20AND%20observations)
 
 Note that the WIS2 GDC provides search results in HTML or JSON.  JSON results are made available by adding `f=json` to search queries.
 
@@ -62,7 +62,7 @@ The WIS2 GDC search results provide access links (raw data download, API, notifi
 
 ## Tools
 
-Numerous tools exist to discover, access, subscribe to and retrieve data on WIS2.  The 
+Numerous tools exist to discover, access, subscribe to and retrieve data on WIS2, including: 
 
 * [pywiscat](https://github.com/wmo-im/pywiscat): provides a Pythonic API atop the WIS2 Global Discovery Catalogue (GDC)
 * [pywis-pubsub](https://github.com/wmo-im/pywis-pubsub): provides subscription and download capability of data from WIS2
