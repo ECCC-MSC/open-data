@@ -15,9 +15,9 @@ WIS2 est en opération depuis janvier 2025 et remplace le Système global de té
 
 Les manuels et guides WIS2 suivants sont disponibles (an anglais seulement) : 
 
-* [Provisions for the Transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS 2.0](https://library.wmo.int/fr/records/item/69050-provisions-for-the-transition-from-the-wmo-information-system-wis-1-0-and-global-telecommunication-system-to-wis-2-0)
-* [Manual on the WMO Information System, Volume II - WMO Information System 2.0](https://library.wmo.int/fr/records/item/68731-manual-on-the-wmo-information-system-volume-ii-wmo-information-system-2-0)
-* [Guide to the WMO Information System Volume II (DRAFT) - WMO Information System 2.0](https://wmo-im.github.io/wis2-guide/guide/wis2-guide-DRAFT.html)
+* [Manual on the WMO Information System, Volume II - WMO Information System 2.0](https://library.wmo.int/idurl/4/68731)
+* [Guide to the WMO Information System Volume II - WMO Information System 2.0](https://library.wmo.int/idurl/4/69130)
+* [Provisions for the Transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS 2.0](https://library.wmo.int/idurl/4/69050)
 
 En tant qu'information additionnelle, le [WIS2 Cookbook](https://wmo-im.github.io/wis2-cookbook/cookbook/wis2-cookbook-DRAFT.html) fournit plusieurs exemples, extraits de code, recettes et processus en support aux exigences de WIS2.
 
