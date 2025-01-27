@@ -52,7 +52,7 @@ Pour découvrir les données canadiennes sur WIS2, un utilisateur peut effectuer
 
 * [Requête spatiale (toutes les données couvrant le Canada)](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?bbox=-142,42,-52,84)
 * Recherche par mot clé :
-    * [Tous les jeux de données avec Canada](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=canada)
+    * [Tous les jeux de données avec 'Canada'](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=canada)
     * [Tous les jeux de données du SMC](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=%22ca-eccc-msc%22)
     * [Données de prévision canadienne](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&q=canada%20AND%20prediction)
     * [Données d'observations canadiennes](https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&q=canada%20AND%20observations)
