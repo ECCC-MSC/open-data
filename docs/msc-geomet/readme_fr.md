@@ -18,21 +18,21 @@ La plateforme GeoMet du SMC comprend les services suivants :
   <div class="card text-black mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-Météo</h5></div>
     <div class="card-body">
-      <p class="card-text">GeoMet-Météo donne accès aux données météorologiques, hydriques et environnementales du Service météorologique du Canada (SMC) par le biais de services web interopérables.</p></br></br></br><a href="https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">En savoir +</a>
+      <p class="card-text">GeoMet-Météo donne accès aux données météorologiques, hydriques et environnementales du Service météorologique du Canada (SMC) par le biais de services web interopérables.</p>
     </div>
   </div>
   <div class="card mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-OGC-API</h5></div>
     <div class="card-body">
       <p class="card-text">
-      GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais des standards émergeants de l'Open Geospatial Consortium (OGC).</p><a href="https://api.weather.gc.ca/" class="btn btn-primary">En savoir +</a>
+      GeoMet-OGC-API donne accès aux données d'Environnement et Changement climatique Canada (ECCC) et du Service météorologique du Canada (SMC) par le biais des standards émergeants de l'Open Geospatial Consortium (OGC).</p>
     </div>
   </div>
    <div class="card mb-3 text-center">
     <div class="card-header bg-light"><h5>GeoMet-Climat</h5></div>
     <div class="card-body">
       <p class="card-text">
-      GeoMet-Climat donne accès aux données d'Environnement et Changement climatique Canada (ECCC) via des services web interopérables.</p></br></br></br></br><a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities" class="btn btn-primary">En savoir +</a>
+      GeoMet-Climat donne accès aux données d'Environnement et Changement climatique Canada (ECCC) via des services web interopérables.</p>
     </div>
   </div>
 </div>
@@ -56,6 +56,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-body">
       <p class="card-text">
         Web Map Service (WMS) est un protocole standard qui permet aux utilisateurs de demander et de recevoir des images de cartes géospatiales à partir d'un serveur sur Internet.</p>
+        <a href="../wms_fr" class="btn btn btn-primary">En savoir +</a>
     </div>
   </div>
   <div class="card mb-3 text-center">
@@ -63,6 +64,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-body">
       <p class="card-text">
       L'API OGC (Open Geospatial Consortium API) est un nouvel ensemble d'API Web standardisées (interfaces de programmation d'applications) qui facilitent l'accès et uniformise les données et services géospatiaux.</p>
+      <a href="../ogc_api_fr" class="btn btn-primary">En savoir +</a>
     </div>
   </div>
 </div>
@@ -73,6 +75,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
     <div class="card-body">
       <p class="card-text">
       Web Coverage Service (WCS) est un protocole standard qui permet aux utilisateurs de demander et de récupérer des données géospatiales sous forme de couvertures ou de grilles sur Internet.</p>
+      <a href="../wcs_fr" class="btn btn-primary">En savoir +</a>
     </div>
   </div>
   <div class="card mb-3 text-center">
