@@ -215,6 +215,7 @@ Indice climatique thermique universel,UTHCIDX,Surface,K
 Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
 Indice de soulèvement,4LFTX,500 mb,K
 Indice de ventilation,VI,Surface,0 à 100
+Indice humidex,HMX,Surface,°C
 Indice UV,UVI,Surface,Numérique
 Indice UV par ciel clair,UVIUCS,Surface,Numérique
 Masque terre/eau,WTRLANMASK,Surface,Fraction
@@ -370,4 +371,6 @@ Vitesse verticale (pression),VVEL,850 mb,Pa/s
 Épaisseur de la neige,SNOD,Surface,m
 Épaisseur de neige équivalent en eau,SDWE,Surface,kg/m<sup>2</sup>
 Épaisseur entre 2 niveaux isobares,THICK,1000-500 mb,m
+Épaisseur entre 2 niveaux isobares,THICK,1000-850 mb,m
+Épaisseur entre 2 niveaux isobares,THICK,850-700 mb,m
 État du ciel jour/nuit (couverture et opacité nuageuse combinées),SKSTATE,Surface,0-1=Ensoleillé/Dégagé; 2-3=Généralement ensoleillé/Quelques nuages; 4-5-6=Alternance de soleil et de nuages/Partiellement nuageux; 7-8=Généralement nuageux/Généralement nuageux; 9=Nuageux/Nuageux; 10=Nuageux/Couvert
