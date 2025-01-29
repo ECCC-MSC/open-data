@@ -89,6 +89,7 @@ Geopotential height,HGT,970 mb,gpm
 Geopotential height,HGT,985 mb,gpm
 Geopotential height,HGT,Surface,gpm
 Height of snow level,HGTSNLVL,Surface,m
+Humidex index,HMX,Surface,°C
 Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
 Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
 Latent heat net flux,LHTFL,Surface,W/m<sup>2</sup>
@@ -225,6 +226,8 @@ Temperature,TMP,950 mb,K
 Temperature,TMP,970 mb,K
 Temperature,TMP,985 mb,K
 Thickness between 2 isobaric levels,THICK,1000-500 mb,m
+Thickness between 2 isobaric levels,THICK,1000-850 mb,m
+Thickness between 2 isobaric levels,THICK,850-700 mb,m
 Total cloud cover,TCDC,Surface,%
 Total precipitation intensity index,TPCPNINTSTI,Surface,0=No intensity; 1=Light; 2=Moderate; 3=Heavy
 Total precipitation,APCP,Surface,kg/m<sup>2</sup>

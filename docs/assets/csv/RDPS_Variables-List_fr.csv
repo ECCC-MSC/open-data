@@ -230,10 +230,13 @@ Humidité spécifique,SPFH,985 mb,kg/kg
 Humidité spécifique,SPFH,Surface,kg/kg
 Hélicité relative de la tempête,HLCY,Surface,J/kg
 Indice K,KX,Surface,°C
+Indice humidex,HMX,Surface,°C
 Indice Showalter,SHWINX,500 mb,K
 Indice Total-Total,TOTALX,Surface,K
 Indice de refroidissement éolien,WCF,Surface,°C
+Indice d'orages violents,SSI,Surface,Numérique
 Indice de soulèvement,4LFTX,500 mb,K
+Indice de menace de temps violent,SWEAT,Surface,Numérique
 Indice UV,UVI,Surface,Numérique
 Indice UV par ciel clair,UVIUCS,Surface,Numérique
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
@@ -292,11 +295,13 @@ Température,TMP,925 mb,K
 Température,TMP,950 mb,K
 Température,TMP,970 mb,K
 Température,TMP,985 mb,K
+Tendance de pression dans les 3 dernières heures,TSLSA,Surface,mb
 Tourbillon absolu,ABSV,250 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,500 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,700 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,850 mb,s<sup>-1</sup>
 Type de précipitation instantanée,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
+Vitesse de cisaillement vertical,VWSH,650 mb,1/s
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,1 mb,m/s
 Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
@@ -375,3 +380,5 @@ Vitesse verticale (pression),VVEL,850 mb,Pa/s
 Énergie potentielle convective disponible,CAPE,Surface,J/kg
 Épaisseur de la neige,SNOD,Surface,m
 Épaisseur entre 2 niveaux isobares,THICK,1000-500 mb,m
+Épaisseur entre 2 niveaux isobares,THICK,1000-850 mb,m
+Épaisseur entre 2 niveaux isobares,THICK,850-700 mb,m
