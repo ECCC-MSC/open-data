@@ -8,6 +8,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+
+## 2.6.18
+
+* date: 2025-01-30
+* announcements:
+    * Not announced
+* new content:
+    * Move Skew-T notebooks as dev as per
+* improvements:
+    * NA
+* bug fixes: 
+    * Fix CI deps (mermaid) 
+
 ## 2.6.17
 
 * date: 2025-01-30
