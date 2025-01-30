@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Readme fr - MSC Open Data / Données ouvertes du SMC</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../../css/base.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<link href="../../css/extra.css" rel="stylesheet"/>
+<script defer="" src="../../js/jquery-1.10.2.min.js"></script>
+<script defer="" src="../../js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="../..">MSC Open Data / <br/>Données ouvertes du SMC</a>
+<!-- Expander button -->
+<button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Available data /<br/>Données disponibles <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../msc-data/readme_en/">Data list /<br/>Liste des données</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-data-themes/readme_en/">Theme list /<br/>Liste de thèmes</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Data access /<br/>Accès aux données <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../msc-geomet/readme_en/">MSC GeoMet /<br/>GeoMet du SMC</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-datamart/readme_en/">MSC Datamart /<br/>Datamart du SMC</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../cost-recovered/readme_en/">Cost-recovered services /<br/>Services à recouvrement de coûts</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-animet/readme_en/">MSC AniMet /<br/>AniMet du SMC</a>
+</li>
+<li>
+<a class="dropdown-item" href="../readme_en/">WMO WIS2 /<br/>WMO WIS2</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Usage and tutorials / <br/>Utilisation et tutoriels <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../usage/readme_en/">Usage overview/<br/>Aperçu de l'utilisation</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../usage/tutorials_en/">Access tutorials /<br/>Accéder aux tutoriels</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-geomet/wms_en/">WMS technical doc /<br/>Doc technique du WMS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-geomet/wcs_en/">WCS technical doc /<br/>Doc technique du WCS</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../msc-geomet/ogc_api_en/">OGC API technical doc /<br/>Doc technique de l'OGC API</a>
+</li>
+</ul>
+</li>
+<li class="navitem">
+<a class="nav-link" href="https://weather.gc.ca/mainmenu/contact_us_e.html">Contact us /<br/>Contactez-nous</a>
+</li>
+</ul>
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" data-target="#mkdocs_search_modal" data-toggle="modal" href="#">
+<i class="fa fa-search"></i> Search /<br/> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+<div class="navbar-header">
+<button class="navbar-toggler collapsed" data-target="#toc-collapse" data-toggle="collapse" title="Table of Contents" type="button">
+<span class="fa fa-angle-down"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse card bg-secondary" id="toc-collapse">
+<ul class="nav flex-column">
+<li class="nav-item" data-level="1"><a class="nav-link" href="#le-systeme-dinformation-de-lomm-wis2">Le Système d'Information de l'OMM (WIS2)</a>
+<ul class="nav flex-column">
+<li class="nav-item" data-level="2"><a class="nav-link" href="#documents-cles">Documents clés</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#decouverte-et-acces">Découverte et accès</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-level="2"><a class="nav-link" href="#outils">Outils</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div></div>
+<div class="col-md-9" role="main">
+<p><a href="../readme_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../img_eccc-logo.png"/></p>
+<p><a href="../../readme_fr/">TdM</a> &gt; Système d'Information de l'OMM (WIS2)</p>
+<h1 id="le-systeme-dinformation-de-lomm-wis2">Le Système d'Information de l'OMM (WIS2)</h1>
+<p>Le Système d'information de l'OMM 2.0 (WIS2) est le cadre de partage des données de l'OMM au 21e siècle pour tous les domaines et disciplines de l'OMM. Il soutient la Politique unifiée de données de l'OMM, le Global Basic Observing Network (GBON) et rend le partage de données internationales, régionales et nationales simple, efficace et peu coûteux. L'idée qu'aucun Membre ne devrait être laissé pour compte et l'objectif de réduire la barrière à l'adoption ont été au cœur du développement de WIS 2.0. Ces objectifs inspirent les principes sous-jacents au cadre technique de WIS 2.0, comme l'adoption de normes ouvertes et de technologies Web pour faciliter le partage d'une variété croissante et d'un volume croissant de données en temps réel.</p>
+<p>WIS2 est en opération depuis janvier 2025 et remplace le Système global de télécommunication (GTS).</p>
+<h2 id="documents-cles">Documents clés</h2>
+<p>Les manuels et guides WIS2 suivants sont disponibles (an anglais seulement) : </p>
+<ul>
+<li><a href="https://library.wmo.int/idurl/4/68731">Manual on the WMO Information System, Volume II - WMO Information System 2.0</a></li>
+<li><a href="https://library.wmo.int/idurl/4/69130">Guide to the WMO Information System Volume II - WMO Information System 2.0</a></li>
+<li><a href="https://library.wmo.int/idurl/4/69050">Provisions for the Transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS 2.0</a></li>
+</ul>
+<p>En tant qu'information additionnelle, le <a href="https://wmo-im.github.io/wis2-cookbook/cookbook/wis2-cookbook-DRAFT.html">WIS2 Cookbook</a> fournit plusieurs exemples, extraits de code, recettes et processus en support aux exigences de WIS2.</p>
+<h2 id="decouverte-et-acces">Découverte et accès</h2>
+<p>Bâtie sur des standards ouverts, WIS2 supporte les principes de données FAIR pour l'échange ouvert et libre de données internationales. WIS2 est propulsé par le Global Discovery Catalogue (GDC), qui :</p>
+<ul>
+<li>Permet à un utilisateur de données d'effectuer des recherches et de d'obtenir les descriptions des données publiées sur WIS2. La description des jeux de données (métadonnées de découverte) fournissent l'information nécessaire pour déterminer l'utilité d'un jeu de données et comment il peut être accédé</li>
+<li>Rend disponible le contenu afin qu'il puisse être indexé par les moteurs de recherche en ligne</li>
+<li>Fournit une interface de programmation d'applications (API) via le standard <a href="https://ogcapi.ogc.org/records">OGC API - Records</a></li>
+</ul>
+<p>Les résultats de recherche WIS2 retournent des "liens actionnables" qui facilitent l'accès et le téléchargement automatisé des données par le biais de mécanismes variés :</p>
+<ul>
+<li>Téléchargement de données brutes, par exemple via le <a href="../../msc-datamart/readme_fr/">Datamart du SMC</a></li>
+<li>Accès et téléchargement par un API, par exemple via <a href="../../msc-geomet/readme_fr/">GeoMet du SMC</a>)</li>
+<li>Service de notification de données Pub/Sub (MQTT)</li>
+</ul>
+<div class="mermaid">---
+title: Découverte, abonnement et réléchargement WIS2
+---
+flowchart TD
+    A[fa:fa-user Utilisateur de données] --&gt;|1 search| B[fa:fa-book WIS2 Global Discovery Catalogue]
+    B --&gt;|2 s'abonne| C[fa:fa-bullhorn WIS2 Global Broker]
+    C --&gt;|3 notifie| A
+    A --&gt;|4 télécharge| D[fa:fa-download WIS2 Global Cache]
+</div>
+<p>Le GDC de WIS2 est fournit par le Service météorologique du Canada (SMC) et est disponible à l'adresse <a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata">https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata</a>. Ce catalogue fournit les services de découverte pour toutes les données de WIS2.</p>
+<p>Pour découvrir les données canadiennes sur WIS2, un utilisateur peut effectuer des requêtes au GDC telles que celles-ci : </p>
+<ul>
+<li><a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?bbox=-142,42,-52,84">Requête spatiale (toutes les données couvrant le Canada)</a></li>
+<li>Recherche par mot clé :<ul>
+<li><a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=canada">Tous les jeux de données avec 'Canada'</a></li>
+<li><a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?q=%22ca-eccc-msc%22">Tous les jeux de données du SMC</a></li>
+<li><a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&amp;q=canada%20AND%20prediction">Données de prévision canadienne</a></li>
+<li><a href="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata/items?f=json&amp;q=canada%20AND%20observations">Données d'observations canadiennes</a></li>
+</ul>
+</li>
+</ul>
+<p>Notez que les résultats de recherche du GDC de WIS2 sont disponibles au format HTML et JSON. Les résultats en JSON peuvent être obtenus en spécifiant <code>f=json</code> dans la requête.</p>
+<p>Les résultats de recherche du GDC de WIS2 fournissent des liens d'accès (téléchargement de données brutes, API, notifications). Pour accéder aux données en temps réel, les utilisateurs peuvent se connecter et s'abonner aux WIS2 Global Brokers spécifiés dans le résultat de recherche, via le protocol MQTT.</p>
+<h2 id="outils">Outils</h2>
+<p>Plusieurs outils permettent de découvrir, accéder, s'abonner et télécharger des données de WIS2. Parmi ceux-ci :</p>
+<ul>
+<li><a href="https://github.com/wmo-im/pywiscat">pywiscat</a> : fournit un API Python pour exploiter le Global Discovery Catalogue (GDC) de WIS2</li>
+<li><a href="https://github.com/wmo-im/pywis-pubsub">pywis-pubsub</a> : permet de s'abonner et télécharger les données disponibles sur WIS2</li>
+</ul></div>
+</div>
+</div>
+<footer class="col-md-12">
+<hr/>
+<p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+</footer>
+<script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+<script defer="" src="../../js/base.js"></script>
+<script defer="" src="../../search/main.js"></script>
+<div aria-hidden="true" aria-labelledby="searchModalLabel" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="searchModalLabel">Search</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br/>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+<form>
+<div class="form-group">
+<input class="form-control" id="mkdocs-search-query" placeholder="Search..." title="Type search term here" type="search"/>
+</div>
+</form>
+<div id="mkdocs-search-results"></div>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div><div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>

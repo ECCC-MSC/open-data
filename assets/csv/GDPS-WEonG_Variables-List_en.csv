@@ -32,4 +32,4 @@ Visibility Through Liquid Fog,VISLFG,2 m Above Ground Level,m
 Water/land mask,WTRLANMASK,Surface,Fraction
 Wind direction (from which blowing),WDIR,10 m Above Ground Level,Degree true
 Wind speed (gust),GUST,10 m Above Ground Level,m/s
-Wind speed,WSPD,10 m Above Ground Level,m/s
+Wind speed,WIND,10 m Above Ground Level,m/s

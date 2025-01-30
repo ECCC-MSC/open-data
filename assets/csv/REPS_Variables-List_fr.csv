@@ -71,9 +71,9 @@ Température,TMP,700 mb,K
 Température,TMP,80 m au-dessus du niveau du sol,K
 Température,TMP,850 mb,K
 Température,TMP,925 mb,K
-Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,120 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,40 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,80 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,120 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,40 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,80 m au-dessus du niveau du sol,m/s
 Épaisseur de la neige,SNOD,Surface,m
 Épaisseur de neige accumulée équivalent en eau,WEASD,Surface,kg/m<sup>2</sup>

@@ -66,6 +66,10 @@
 <li>
     <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
 </li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WMO WIS2</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -1220,18 +1224,18 @@ Licensed under the Apache License, Version 2.0.
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Importation des modules Python </span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-<span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
 
 <span class="c1"># Les modules suivants doivent avoir été préalablement installés sur </span>
 <span class="c1"># votre ordinateur pour utiliser le code hors de Jupyter Notebook</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">matplotlib.dates</span> <span class="k">as</span> <span class="nn">mdates</span>
-<span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">from</span> <span class="nn">owslib.wms</span> <span class="kn">import</span> <span class="n">WebMapService</span>
-<span class="kn">import</span> <span class="nn">pandas</span>
-<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.dates</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mdates</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">owslib.wms</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebMapService</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tabulate</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabulate</span>
 
 <span class="c1"># Ignore les avertissements du module OWSLib</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s1">&#39;owslib&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">UserWarning</span><span class="p">)</span>
@@ -1410,7 +1414,7 @@ wms = WebMapService('https://geo.weather.gc.ca/geomet?SERVICE=WMS' +
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Extraction des informations liées au temps</span>
 <span class="c1"># des prévisions disponibles à partir des métadonnées</span>
-<span class="k">def</span> <span class="nf">time_parameters</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">time_parameters</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span>
     <span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">,</span> <span class="n">interval</span> <span class="o">=</span> <span class="p">(</span><span class="n">wms</span><span class="p">[</span><span class="n">layer</span><span class="p">]</span>
                                       <span class="o">.</span><span class="n">dimensions</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">][</span><span class="s1">&#39;values&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
                                       <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
@@ -1517,7 +1521,7 @@ while time[-1] < end_time:
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Boucle pour effectuer les requêtes et extraire les probabilités</span>
-<span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span> 
+<span class="k">def</span><span class="w"> </span><span class="nf">request</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span> 
     <span class="n">info</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">pixel_value</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">timestep</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>
@@ -1620,7 +1624,7 @@ pixel_value = request(layer)
 
 
 <span class="c1"># Création d&#39;une fonction permettant de mieux aligner deux axes y ensemble</span>
-<span class="k">def</span> <span class="nf">align_yaxis</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">ax2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">align_yaxis</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">ax2</span><span class="p">):</span>
     <span class="n">y_lims</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">ax</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span> <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="p">[</span><span class="n">ax</span><span class="p">,</span> <span class="n">ax2</span><span class="p">]])</span>
 
     <span class="c1"># Normalisation des limites des axes y</span>
@@ -1638,7 +1642,7 @@ pixel_value = request(layer)
 
     
 <span class="c1"># Création d&#39;une fonction pour faire le graphique</span>
-<span class="k">def</span> <span class="nf">fig</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">ylim</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">y2label</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fig</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">ylim</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">y2label</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
     <span class="c1"># Taille du graphique et des polices de caractères</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;legend.fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;14&#39;</span><span class="p">,</span>
               <span class="s1">&#39;figure.figsize&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
@@ -1867,9 +1871,9 @@ plt.show()</div>
 
 
 
-<div id="194c8c5b-88b7-4702-b2ab-ab356cae69da" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="e5437603-0b9c-42c9-a9e1-27ad2b285a3c" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('194c8c5b-88b7-4702-b2ab-ab356cae69da');
+var element = document.getElementById('e5437603-0b9c-42c9-a9e1-27ad2b285a3c');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -2908,9 +2912,9 @@ plt.show()</div>
 
 
 
-<div id="e65a260a-f463-498c-99f6-9a3108866d47" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="a70a2095-9809-436b-8d57-0d6ccfa5c6bf" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('e65a260a-f463-498c-99f6-9a3108866d47');
+var element = document.getElementById('a70a2095-9809-436b-8d57-0d6ccfa5c6bf');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 

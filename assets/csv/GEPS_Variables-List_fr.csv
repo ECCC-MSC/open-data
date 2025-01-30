@@ -85,10 +85,10 @@ Température,TMP,80 m au-dessus du niveau du sol,K
 Température,TMP,850 mb,K
 Température,TMP,925 mb,K
 Température,TMP,Profondeur sous la surface terrestre (0-0.1 m),K
-Vitesse du vent,WSPD,10 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,120 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,40 m au-dessus du niveau du sol,m/s
-Vitesse du vent,WSPD,80 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,120 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,40 m au-dessus du niveau du sol,m/s
+Vitesse du vent,WIND,80 m au-dessus du niveau du sol,m/s
 Vitesse verticale (pression),VVEL,850 mb,Pa/s
 Énergie d'inhibition convective,CIN,Surface,J/kg
 Énergie potentielle convective disponible,CAPE,Surface,J/kg

@@ -275,38 +275,38 @@ Wind direction (from which blowing),WDIR,950 mb,Degree true
 Wind direction (from which blowing),WDIR,970 mb,Degree true
 Wind direction (from which blowing),WDIR,985 mb,Degree true
 Wind speed (gust),GUST,10 m Above Ground Level,m/s
-Wind speed,WSPD,10 m Above Ground Level,m/s
-Wind speed,WSPD,100 mb,m/s
-Wind speed,WSPD,1000 mb,m/s
-Wind speed,WSPD,1015 mb,m/s
-Wind speed,WSPD,120 m Above Ground Level,m/s
-Wind speed,WSPD,150 mb,m/s
-Wind speed,WSPD,175 mb,m/s
-Wind speed,WSPD,200 mb,m/s
-Wind speed,WSPD,225 mb,m/s
-Wind speed,WSPD,250 mb,m/s
-Wind speed,WSPD,275 mb,m/s
-Wind speed,WSPD,300 mb,m/s
-Wind speed,WSPD,350 mb,m/s
-Wind speed,WSPD,40 m Above Ground Level,m/s
-Wind speed,WSPD,400 mb,m/s
-Wind speed,WSPD,450 mb,m/s
-Wind speed,WSPD,50 mb,m/s
-Wind speed,WSPD,500 mb,m/s
-Wind speed,WSPD,550 mb,m/s
-Wind speed,WSPD,600 mb,m/s
-Wind speed,WSPD,650 mb,m/s
-Wind speed,WSPD,700 mb,m/s
-Wind speed,WSPD,750 mb,m/s
-Wind speed,WSPD,80 m Above Ground Level,m/s
-Wind speed,WSPD,800 mb,m/s
-Wind speed,WSPD,850 mb,m/s
-Wind speed,WSPD,875 mb,m/s
-Wind speed,WSPD,900 mb,m/s
-Wind speed,WSPD,925 mb,m/s
-Wind speed,WSPD,950 mb,m/s
-Wind speed,WSPD,970 mb,m/s
-Wind speed,WSPD,985 mb,m/s
+Wind speed,WIND,10 m Above Ground Level,m/s
+Wind speed,WIND,100 mb,m/s
+Wind speed,WIND,1000 mb,m/s
+Wind speed,WIND,1015 mb,m/s
+Wind speed,WIND,120 m Above Ground Level,m/s
+Wind speed,WIND,150 mb,m/s
+Wind speed,WIND,175 mb,m/s
+Wind speed,WIND,200 mb,m/s
+Wind speed,WIND,225 mb,m/s
+Wind speed,WIND,250 mb,m/s
+Wind speed,WIND,275 mb,m/s
+Wind speed,WIND,300 mb,m/s
+Wind speed,WIND,350 mb,m/s
+Wind speed,WIND,40 m Above Ground Level,m/s
+Wind speed,WIND,400 mb,m/s
+Wind speed,WIND,450 mb,m/s
+Wind speed,WIND,50 mb,m/s
+Wind speed,WIND,500 mb,m/s
+Wind speed,WIND,550 mb,m/s
+Wind speed,WIND,600 mb,m/s
+Wind speed,WIND,650 mb,m/s
+Wind speed,WIND,700 mb,m/s
+Wind speed,WIND,750 mb,m/s
+Wind speed,WIND,80 m Above Ground Level,m/s
+Wind speed,WIND,800 mb,m/s
+Wind speed,WIND,850 mb,m/s
+Wind speed,WIND,875 mb,m/s
+Wind speed,WIND,900 mb,m/s
+Wind speed,WIND,925 mb,m/s
+Wind speed,WIND,950 mb,m/s
+Wind speed,WIND,970 mb,m/s
+Wind speed,WIND,985 mb,m/s
 u-component of wind,UGRD,10 m Above Ground Level,m/s
 u-component of wind,UGRD,100 mb,m/s
 u-component of wind,UGRD,1000 mb,m/s

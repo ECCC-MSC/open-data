@@ -66,6 +66,10 @@
 <li>
     <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
 </li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WMO WIS2</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -1226,19 +1230,19 @@ Licensed under the Apache License, Version 2.0.
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Importation des modules</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">from</span> <span class="nn">textwrap</span> <span class="kn">import</span> <span class="n">fill</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">date</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">textwrap</span><span class="w"> </span><span class="kn">import</span> <span class="n">fill</span>
 
-<span class="kn">import</span> <span class="nn">cartopy.crs</span> <span class="k">as</span> <span class="nn">ccrs</span>
-<span class="kn">from</span> <span class="nn">cartopy.io.img_tiles</span> <span class="kn">import</span> <span class="n">OSM</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span><span class="p">,</span> <span class="n">dates</span> <span class="k">as</span> <span class="n">mdates</span>
-<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">ogr</span><span class="p">,</span> <span class="n">osr</span>
-<span class="kn">from</span> <span class="nn">owslib.ogcapi.features</span> <span class="kn">import</span> <span class="n">Features</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">cartopy.crs</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ccrs</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">cartopy.io.img_tiles</span><span class="w"> </span><span class="kn">import</span> <span class="n">OSM</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span><span class="p">,</span> <span class="n">dates</span> <span class="k">as</span> <span class="n">mdates</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">osgeo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ogr</span><span class="p">,</span> <span class="n">osr</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">owslib.ogcapi.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">Features</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tabulate</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabulate</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt"># Importation des modules
 from datetime import date
@@ -1819,7 +1823,7 @@ if not stations:
 <span class="n">station_displayed_p</span> <span class="o">=</span> <span class="n">stations</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="c1"># Fonction pour créer un graphique pour la station sélectionnée</span>
-<span class="k">def</span> <span class="nf">interactive_plot</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">interactive_plot</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Ajustement de la taille des caractères et de la figure</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">&quot;legend.fontsize&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
@@ -1875,7 +1879,7 @@ if not stations:
 
 
 <span class="c1"># Mise à jour des annotations avec les informations du point de donnée</span>
-<span class="k">def</span> <span class="nf">update_annot</span><span class="p">(</span><span class="n">ind</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update_annot</span><span class="p">(</span><span class="n">ind</span><span class="p">):</span>
     <span class="c1"># Identification des annotations à afficher</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
     <span class="n">annot</span><span class="o">.</span><span class="n">xy</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]],</span> <span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
@@ -1891,7 +1895,7 @@ if not stations:
 
 
 <span class="c1"># Affichage des annotations au passage de la souris</span>
-<span class="k">def</span> <span class="nf">hover</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">hover</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="n">vis</span> <span class="o">=</span> <span class="n">annot</span><span class="o">.</span><span class="n">get_visible</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">inaxes</span> <span class="o">==</span> <span class="n">ax</span><span class="p">:</span>
         <span class="n">cont</span><span class="p">,</span> <span class="n">ind</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
@@ -2031,9 +2035,9 @@ plt.show()</div>
 
 
 
-<div id="cbd81c8a-7b54-48c5-bf18-0aec640d0edf" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="0fee5203-65b1-4ccc-9656-c0e68636bced" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('cbd81c8a-7b54-48c5-bf18-0aec640d0edf');
+var element = document.getElementById('0fee5203-65b1-4ccc-9656-c0e68636bced');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -3049,7 +3053,7 @@ if (IPython.notebook.kernel !== null) {
 
 
 <span class="c1"># Fonction pour afficher le tableau de la station sélectionnée</span>
-<span class="k">def</span> <span class="nf">data_table</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">data_table</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Impression du titre de la table</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="s2">&quot;Niveaux d&#39;eau de la station &quot;</span>
@@ -3321,7 +3325,7 @@ print(tabulate(data_table(station_displayed_t),
 
 
 <span class="c1"># Fonction pour suivre les coordonnées de la souris et annoter</span>
-<span class="k">def</span> <span class="nf">on_move</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">on_move</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">inaxes</span><span class="p">:</span>
         <span class="c1"># Transformation des coordonnées dans la même projection que la figure</span>
         <span class="n">xproj</span><span class="p">,</span> <span class="n">yproj</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span>
@@ -3512,9 +3516,9 @@ plt.show()</div>
 
 
 
-<div id="3b1e4fd1-6450-4340-9f4e-b2bb5bbb1025" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="916c6954-9baa-495e-91b2-8395d86ee394" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('3b1e4fd1-6450-4340-9f4e-b2bb5bbb1025');
+var element = document.getElementById('916c6954-9baa-495e-91b2-8395d86ee394');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};

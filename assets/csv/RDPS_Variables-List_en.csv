@@ -79,6 +79,7 @@ Geopotential height,HGT,925 mb,gpm
 Geopotential height,HGT,950 mb,gpm
 Geopotential height,HGT,970 mb,gpm
 Geopotential height,HGT,985 mb,gpm
+Humidex index,HMX,Surface,°C
 Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
 Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
 K index,KX,Surface,°C
@@ -92,6 +93,7 @@ Pressure,PRES,Potential Vorticity Unit 1,Pa
 Pressure,PRES,Potential Vorticity Unit 1.5,Pa
 Pressure,PRES,Potential Vorticity Unit 2,Pa
 Pressure,PRES,Surface,Pa
+Pressure trend over the last 3 hours,TSLSA,Surface,mb
 Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
 Relative humidity,RH,10 mb,%
 Relative humidity,RH,100 mb,%
@@ -175,7 +177,9 @@ Specific humidity,SPFH,970 mb,kg/kg
 Specific humidity,SPFH,985 mb,kg/kg
 Specific humidity,SPFH,Surface,kg/kg
 Storm relative helicity,HLCY,Surface,J/kg
+Storm severity index,SSI,Surface,Numeric
 Surface Water Runoff,SFCWRO,Surface,kg/m<sup>2</sup>
+Severe Weather Threat Index,SWEAT,Surface,Numeric
 Temperature,TMP,1 mb,K
 Temperature,TMP,10 mb,K
 Temperature,TMP,100 mb,K
@@ -214,6 +218,8 @@ Temperature,TMP,950 mb,K
 Temperature,TMP,970 mb,K
 Temperature,TMP,985 mb,K
 Thickness between 2 isobaric levels,THICK,1000-500 mb,m
+Thickness between 2 isobaric levels,THICK,1000-850 mb,m
+Thickness between 2 isobaric levels,THICK,850-700 mb,m
 Total cloud cover,TCDC,Surface,%
 Total precipitation,APCP,Surface,kg/m<sup>2</sup>
 Total totals index,TOTALX,Surface,K
@@ -221,6 +227,7 @@ Upward longwave radiation flux,ULWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
 Upward shortwave radiation flux,USWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
 UV Index,UVI,Surface,Numeric
 UV Index under clear sky,UVIUCS,Surface,Numeric
+Vertical speed shear,VWSH,650 mb,1/s
 Vertical velocity (pressure),VVEL,250 mb,Pa/s
 Vertical velocity (pressure),VVEL,500 mb,Pa/s
 Vertical velocity (pressure),VVEL,700 mb,Pa/s
@@ -264,43 +271,43 @@ Wind direction (from which blowing),WDIR,950 mb,Degree true
 Wind direction (from which blowing),WDIR,970 mb,Degree true
 Wind direction (from which blowing),WDIR,985 mb,Degree true
 Wind speed (gust),GUST,10 m Above Ground Level,m/s
-Wind speed,WSPD,1 mb,m/s
-Wind speed,WSPD,10 m Above Ground Level,m/s
-Wind speed,WSPD,10 mb,m/s
-Wind speed,WSPD,100 mb,m/s
-Wind speed,WSPD,1000 mb,m/s
-Wind speed,WSPD,1015 mb,m/s
-Wind speed,WSPD,120 m Above Ground Level,m/s
-Wind speed,WSPD,150 mb,m/s
-Wind speed,WSPD,175 mb,m/s
-Wind speed,WSPD,20 mb,m/s
-Wind speed,WSPD,200 mb,m/s
-Wind speed,WSPD,225 mb,m/s
-Wind speed,WSPD,250 mb,m/s
-Wind speed,WSPD,275 mb,m/s
-Wind speed,WSPD,30 mb,m/s
-Wind speed,WSPD,300 mb,m/s
-Wind speed,WSPD,350 mb,m/s
-Wind speed,WSPD,40 m Above Ground Level,m/s
-Wind speed,WSPD,400 mb,m/s
-Wind speed,WSPD,450 mb,m/s
-Wind speed,WSPD,5 mb,m/s
-Wind speed,WSPD,50 mb,m/s
-Wind speed,WSPD,500 mb,m/s
-Wind speed,WSPD,550 mb,m/s
-Wind speed,WSPD,600 mb,m/s
-Wind speed,WSPD,650 mb,m/s
-Wind speed,WSPD,700 mb,m/s
-Wind speed,WSPD,750 mb,m/s
-Wind speed,WSPD,80 m Above Ground Level,m/s
-Wind speed,WSPD,800 mb,m/s
-Wind speed,WSPD,850 mb,m/s
-Wind speed,WSPD,875 mb,m/s
-Wind speed,WSPD,900 mb,m/s
-Wind speed,WSPD,925 mb,m/s
-Wind speed,WSPD,950 mb,m/s
-Wind speed,WSPD,970 mb,m/s
-Wind speed,WSPD,985 mb,m/s
+Wind speed,WIND,1 mb,m/s
+Wind speed,WIND,10 m Above Ground Level,m/s
+Wind speed,WIND,10 mb,m/s
+Wind speed,WIND,100 mb,m/s
+Wind speed,WIND,1000 mb,m/s
+Wind speed,WIND,1015 mb,m/s
+Wind speed,WIND,120 m Above Ground Level,m/s
+Wind speed,WIND,150 mb,m/s
+Wind speed,WIND,175 mb,m/s
+Wind speed,WIND,20 mb,m/s
+Wind speed,WIND,200 mb,m/s
+Wind speed,WIND,225 mb,m/s
+Wind speed,WIND,250 mb,m/s
+Wind speed,WIND,275 mb,m/s
+Wind speed,WIND,30 mb,m/s
+Wind speed,WIND,300 mb,m/s
+Wind speed,WIND,350 mb,m/s
+Wind speed,WIND,40 m Above Ground Level,m/s
+Wind speed,WIND,400 mb,m/s
+Wind speed,WIND,450 mb,m/s
+Wind speed,WIND,5 mb,m/s
+Wind speed,WIND,50 mb,m/s
+Wind speed,WIND,500 mb,m/s
+Wind speed,WIND,550 mb,m/s
+Wind speed,WIND,600 mb,m/s
+Wind speed,WIND,650 mb,m/s
+Wind speed,WIND,700 mb,m/s
+Wind speed,WIND,750 mb,m/s
+Wind speed,WIND,80 m Above Ground Level,m/s
+Wind speed,WIND,800 mb,m/s
+Wind speed,WIND,850 mb,m/s
+Wind speed,WIND,875 mb,m/s
+Wind speed,WIND,900 mb,m/s
+Wind speed,WIND,925 mb,m/s
+Wind speed,WIND,950 mb,m/s
+Wind speed,WIND,970 mb,m/s
+Wind speed,WIND,985 mb,m/s
 u-component of wind,UGRD,1 mb,m/s
 u-component of wind,UGRD,10 m Above Ground Level,m/s
 u-component of wind,UGRD,10 mb,m/s

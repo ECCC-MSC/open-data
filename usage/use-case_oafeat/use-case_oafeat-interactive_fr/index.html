@@ -66,6 +66,10 @@
 <li>
     <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
 </li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WMO WIS2</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -1225,10 +1229,10 @@ Licensed under the Apache License, Version 2.0.
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Importation des modules</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
-<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">date</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 
-<span class="kn">from</span> <span class="nn">ipyleaflet</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ipyleaflet</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">AwesomeIcon</span><span class="p">,</span>
     <span class="n">basemaps</span><span class="p">,</span>
     <span class="n">FullScreenControl</span><span class="p">,</span>
@@ -1237,11 +1241,11 @@ Licensed under the Apache License, Version 2.0.
     <span class="n">ScaleControl</span><span class="p">,</span>
     <span class="n">WidgetControl</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">interact</span>
-<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">ogr</span><span class="p">,</span> <span class="n">osr</span>
-<span class="kn">from</span> <span class="nn">owslib.ogcapi.features</span> <span class="kn">import</span> <span class="n">Features</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">interact</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">osgeo</span><span class="w"> </span><span class="kn">import</span> <span class="n">ogr</span><span class="p">,</span> <span class="n">osr</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">owslib.ogcapi.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">Features</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt"># Importation des modules
 from datetime import date
@@ -1819,7 +1823,7 @@ if not stations:
 
 
 <span class="c1"># Fonction pour crééer le graphique de la station sélectionnée</span>
-<span class="k">def</span> <span class="nf">choose_station</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">choose_station</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Création du graphique</span>
     <span class="n">fig</span> <span class="o">=</span> <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s2">&quot;LEVEL&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
         <span class="n">title</span><span class="o">=</span><span class="p">(</span>
@@ -1962,7 +1966,7 @@ graph = interact(choose_station, station=stations)</div>
 
 
 <span class="c1"># Fonction pour afficher le tableau de la station sélectionnée</span>
-<span class="k">def</span> <span class="nf">choose_station_table</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">choose_station_table</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Création d&#39;un widget HTML pour ajouter un titre au tableau</span>
     <span class="n">table_title</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span>
         <span class="n">value</span><span class="o">=</span><span class="p">(</span>
@@ -2107,8 +2111,8 @@ table = interact(choose_station_table, station=stations)</div>
 <span class="n">m</span><span class="o">.</span><span class="n">add_control</span><span class="p">(</span><span class="n">control</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">get_callback</span><span class="p">(</span><span class="n">marker</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">callback</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_callback</span><span class="p">(</span><span class="n">marker</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">callback</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">html</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="p">(</span>
             <span class="sa">f</span><span class="s2">&quot;&lt;b&gt;</span><span class="si">{</span><span class="n">marker</span><span class="o">.</span><span class="n">STATION_NAME</span><span class="si">}</span><span class="s2">&lt;/b&gt;&lt;br&gt;&quot;</span>
             <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;ID de la station: </span><span class="si">{</span><span class="n">marker</span><span class="o">.</span><span class="n">STATION_NUMBER</span><span class="si">}</span><span class="s2">&lt;br&gt;&quot;</span>
