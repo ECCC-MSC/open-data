@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * NA
 * bug fixes: 
     * Fixed missing links on GeoMet FR page
+    * Deleted or moved unannounced content 
 
 ## 2.6.16
 
