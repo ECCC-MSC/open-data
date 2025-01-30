@@ -15,6 +15,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * new dedicated WIS2 pages and associated changes
+    * Update RDPS and HRDPS variable arrays (new variables added). Add SSI documentation
 * improvements:
     * NA
 * bug fixes: 
