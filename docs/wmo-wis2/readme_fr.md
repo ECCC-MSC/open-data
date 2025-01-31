@@ -40,10 +40,10 @@ Les résultats de recherche WIS2 retournent des "liens actionnables" qui facilit
 title: Découverte, abonnement et réléchargement WIS2
 ---
 flowchart TD
-    A[fa:fa-user Utilisateur de données] -->|1 search| B[fa:fa-book WIS2 Global Discovery Catalogue]
-    B -->|2 s'abonne| C[fa:fa-bullhorn WIS2 Global Broker]
-    C -->|3 notifie| A
-    A -->|4 télécharge| D[fa:fa-download WIS2 Global Cache]
+    A[fa:fa-user Utilisateur de données] -->|1 - recherche| B[fa:fa-book WIS2 Global Discovery Catalogue]
+    B -->|2 - s'abonne| C[fa:fa-bullhorn WIS2 Global Broker]
+    C -->|3 - notifie| A
+    A -->|4 - télécharge| D[fa:fa-download WIS2 Global Cache]
 ```
 
 Le GDC de WIS2 est fournit par le Service météorologique du Canada (SMC) et est disponible à l'adresse <https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata>. Ce catalogue fournit les services de découverte pour toutes les données de WIS2.

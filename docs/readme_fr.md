@@ -66,7 +66,7 @@ Les métadonnées du Service météorologique du Canada sont disponibles sur le 
 
 ## Le Système d'Information de l'OMM 2.0 (WIS2)
 
-Les [données et métadonnées du Service météorolotique du Canada sont également rendues disponibles internationalement via le Système d'Information de l'OMM 2.0 (WIS2)](wmo-wis2/readme_fr.md). WIS2 permet la découverte, l'abonnement et le téléchargement de données météorologiques, climatiques et hydrologiques des membres de l'Organisation météorologique mondiale (OMM). WIS2 est en opération depuis janvier 2025 et remplace le Système global de télécommunication (GTS).
+Les [données et métadonnées du Service météorologique du Canada sont également rendues disponibles internationalement via le Système d'Information de l'OMM 2.0 (WIS2)](wmo-wis2/readme_fr.md). WIS2 permet la découverte, l'abonnement et le téléchargement de données météorologiques, climatiques et hydrologiques des membres de l'Organisation météorologique mondiale (OMM). WIS2 est en opération depuis janvier 2025 et remplace le Système global de télécommunication (GTS).
 </br></br>
 </br></br>
 
