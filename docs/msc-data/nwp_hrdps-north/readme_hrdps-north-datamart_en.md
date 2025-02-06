@@ -8,7 +8,7 @@
 
 This page describes all the data from the experimental [High Resolution Deterministic Prediction System North (HRDPS-North)](readme_hrdps-north_en.md) available in GRIB2 format, i.e. data on a polar stereographic grid at 2.5km resolution and data on a rotated lat-lon grid at 3km resolution over an extended domain.
 
-The 3km-resolution data come from a version of HRDPS-North whose domain and grid are identical to the former [Canadian Arctic Prediction System (CAPS)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_en/) which was implemented during the Polar Forecast Year (YOPP) and whose data were publicly available from January 2018 to November 2021 (see [HERE](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)). These data are currently distributed in experimental mode on DD-Alpha, the MSC testing data repository.
+The 3km-resolution data come from a version of HRDPS-North whose domain and grid are identical to the former [Canadian Arctic Prediction System (CAPS)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_en/) which was implemented during the Polar Forecast Year (YOPP) and whose data were publicly available from January 2018 to November 2021 (see [HERE](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)).
 
 NOTE: Weather elements on the grid (WEonG) are only available for the 3km resolution domain.
 
@@ -21,7 +21,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 The data can be accessed at the following URLs:
 
 * Data on 2.5km polar stereographic grid: [https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/grib2/)
-* Data on 3km rotated lat-lon grid: [https://dd.alpha.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.alpha.weather.gc.ca/model_hrdps/north/3km/)
+* Data on 3km rotated lat-lon grid: [https://dd.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/3km/)
 
 where :
 
@@ -129,8 +129,6 @@ This list contains both the parameters generated from HRDPS-North outputs and th
 <script>
   loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_en.csv");
 </script>
-
-Note: The ventilation index (VI) is currently an experimental parameter.
 
 ## Support
 
