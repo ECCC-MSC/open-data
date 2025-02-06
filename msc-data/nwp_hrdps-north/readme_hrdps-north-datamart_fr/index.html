@@ -68,7 +68,7 @@
 </li>
                                     
 <li>
-    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WMO WIS2</a>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WIS2 de l'OMM</a>
 </li>
                                 </ul>
                             </li>
@@ -164,7 +164,7 @@
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_hrdps-north_fr/">SHRPD-Nord</a> &gt; SHRPD-Nord sur le Datamart du SMC</p>
 <h1 id="donnees-grib2-du-systeme-a-haute-resolution-de-prevision-deterministe-nord-shrpd-nord">Données GRIB2 du Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)</h1>
 <p>Cette page décrit toutes les données du <a href="../readme_hrdps-north_fr/">Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)</a> expérimental disponibles en format GRIB2, soit les données sur une grille polaire stéréographique à 2.5km de résolution et les données sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.</p>
-<p>Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/">Système canadien de prévision de l'Arctique (SCPA)</a> qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir <a href="https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/">ICI</a>). Ces données sont pour le moment distribuées en mode expérimental sur DD-Alpha, le site Web d'essai du Datamart du SMC.</p>
+<p>Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/">Système canadien de prévision de l'Arctique (SCPA)</a> qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir <a href="https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/">ICI</a>). </p>
 <p>NOTE: Les éléments du temps sur grille (WEonG) ne sont disponibles que pour le domaine à 3km de résolution.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
@@ -172,7 +172,7 @@
 <p>Les données sont accessibles aux adresses suivantes :</p>
 <ul>
 <li>Données à 2.5km sur grille polaire stéréographique : <a href="https://dd.meteo.gc.ca/model_hrdps/north/grib2/">https://dd.meteo.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/</a></li>
-<li>Données à 3km sur grille lat-lon tournée : <a href="https://dd.alpha.meteo.gc.ca/model_hrdps/north/3km/">https://dd.alpha.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
+<li>Données à 3km sur grille lat-lon tournée : <a href="https://dd.meteo.gc.ca/model_hrdps/north/3km/">https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -313,7 +313,6 @@
   loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_fr.csv");
 </script>
 
-<p>Note: L'indice de ventilation (VI) est actuellement un paramètre expérimental.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">communiquer avec nous</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
