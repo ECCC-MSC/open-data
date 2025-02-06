@@ -105,9 +105,8 @@ Cette liste contient à la fois les paramètres générés à partir des sorties
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_fr.csv");
 </script>
 
-Notes:
+Note:
 
-* L'indice de ventilation (VI) est actuellement un paramètre expérimental.
 * Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:
     * Passe de 00Z: 18h et 42h
     * Passe de 06Z: 12h et 36h

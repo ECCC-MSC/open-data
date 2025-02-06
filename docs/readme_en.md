@@ -76,8 +76,11 @@ Series of events organized around MSC open data:
 * [MSC open data forum - July 8, 2019](events/2019-07_open-data-forum_en.md)
 * [METEOHACK hackathon - July 8-11, 2019](events/2019-07_hackathon-METEOHACK_en.md)
 * MSC Open Data User Webinar Series
+    * [Year 2019](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2019.pdf)
+    * [Year 2020](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2020.pdf) 
     * [Year 2021](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2021.pdf) 
     * [Year 2022](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2022.pdf)
+    * [Year 2023](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2023.pdf) 
     * [Year 2024](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2024.pdf)
 </br></br>
 
