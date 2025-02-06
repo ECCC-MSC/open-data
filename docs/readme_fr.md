@@ -77,8 +77,11 @@ Série d'évènements organisés autour des données ouvertes du SMC :
 * [Forum de données ouvertes du SMC - 8 Juillet 2019](events/2019-07_open-data-forum_fr.md)
 * [Hackathon METEOHACK - 8 au 11 juillet 2019](events/2019-07_hackathon-METEOHACK_fr.md)
 * Série de webinaires consacrés aux usagers des données ouvertes du SMC
+    * [Année 2019](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2019.pdf)
+    * [Année 2020](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2020.pdf)
     * [Année 2021](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2021.pdf) 
     * [Année 2022](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2022.pdf)
+    * [Année 2023](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2023.pdf)
     * [Année 2024](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2024.pdf)
 </br></br>
 

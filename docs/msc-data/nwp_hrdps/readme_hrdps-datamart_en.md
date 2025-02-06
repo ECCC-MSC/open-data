@@ -107,9 +107,8 @@ This list contains both the parameters generated from HRDPS outputs and the weat
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
 </script>
 
-Notes:
+Note:
 
-* The ventilation index (VI) is currently an experimental parameter.
 * UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:
     * 00Z run: 18h and 42h
     * 06Z run: 12h and 36h
