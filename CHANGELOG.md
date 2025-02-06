@@ -8,27 +8,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.6.20
+## 2.6.19
 
-* date: TBD
+* date: 2025-02-06
 * announcements:
     * Not announced
 * new content:
     * Add 2019, 2020 and 2023 recorded webinar series 
 * improvements:
     * HRDPS: Remove CVI experimental note under variables table (now operational)
-* bug fixes: 
-    * NA
-
-## 2.6.19
-
-* date: TBD
-* announcements:
-    * Not announced
-* new content:
-    * NA
-* improvements:
-    * NA
 * bug fixes: 
     * Minor fixes to new WIS2 content
 
