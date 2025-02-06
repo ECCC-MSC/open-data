@@ -14,7 +14,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * Add 2019, 2020 and 2023 recorded webinar series 
+    * Add 2019, 2020 and 2023 recorded webinar series
+    * Update HRDPS-North: add 3km lat-lon data on DD ops 
 * improvements:
     * HRDPS: Remove CVI experimental note under variables table (now operational)
 * bug fixes: 
