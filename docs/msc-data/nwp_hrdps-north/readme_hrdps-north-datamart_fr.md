@@ -8,7 +8,7 @@
 
 Cette page décrit toutes les données du [Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)](readme_hrdps-north_fr.md) expérimental disponibles en format GRIB2, soit les données sur une grille polaire stéréographique à 2.5km de résolution et les données sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.
 
-Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien [Système canadien de prévision de l'Arctique (SCPA)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/) qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir [ICI](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)). Ces données sont pour le moment distribuées en mode expérimental sur DD-Alpha, le site Web d'essai du Datamart du SMC.
+Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien [Système canadien de prévision de l'Arctique (SCPA)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/) qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir [ICI](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)). 
 
 NOTE: Les éléments du temps sur grille (WEonG) ne sont disponibles que pour le domaine à 3km de résolution.
 
@@ -21,7 +21,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 Les données sont accessibles aux adresses suivantes :
 
 * Données à 2.5km sur grille polaire stéréographique : [https://dd.meteo.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/grib2/)
-* Données à 3km sur grille lat-lon tournée : [https://dd.alpha.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_hrdps/north/3km/)
+* Données à 3km sur grille lat-lon tournée : [https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/3km/)
 
 où :
 
@@ -129,8 +129,6 @@ Cette liste contient à la fois les paramètres générés à partir des sorties
 <script>
   loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_fr.csv");
 </script>
-
-Note: L'indice de ventilation (VI) est actuellement un paramètre expérimental.
 
 ## Support
 
