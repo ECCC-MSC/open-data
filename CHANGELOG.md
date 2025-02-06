@@ -1,6 +1,8 @@
 # MSC Open Data documentation changelog
 
-This is the user-oriented changelog for the MSC Open Data documentation. It tracks what has changed between the versions published on https://eccc-msc.github.io/open-data/ . It is used to create the public announcements to [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info) lists. For GeoMet-Info, the [announcements are stored on the CMC wiki](https://wiki.cmc.ec.gc.ca/wiki/GeoMet/Announcements#Previous_GeoMet-Info_announcements).
+This is the user-oriented changelog for the MSC Open Data documentation. It tracks what has changed between the versions published on https://eccc-msc.github.io/open-data/ . 
+
+We encourage users to subscribe to the following announcement mailing lists to be informed of enhancements and changes to MSC Open Data services: [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) and [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info).
 
 # Version naming
 
@@ -18,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update HRDPS-North: add 3km lat-lon data on DD ops 
 * improvements:
     * HRDPS: Remove CVI experimental note under variables table (now operational)
+    * Update to public changelog, removed internal link
 * bug fixes: 
     * Minor fixes to new WIS2 content
 
