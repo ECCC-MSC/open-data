@@ -10,6 +10,31 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.7.1 ?
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * 
+* improvements:
+    * Update ODIM_H5 external link 
+* bug fixes: 
+    * Fix typos and links
+
+## 2.7.0 ?
+
+* date: ??
+* announcements:
+    * Announced
+* new content:
+    * 
+* improvements:
+    * 
+* bug fixes: 
+    * 
+
+
 ## 2.6.19
 
 * date: 2025-02-06
