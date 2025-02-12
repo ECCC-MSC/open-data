@@ -1,4 +1,4 @@
-[In French](readme_thunderstorm-outlooks_datamart_fr.md)
+[In French](readme_thunderstorm-outlooks-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
