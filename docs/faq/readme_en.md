@@ -69,7 +69,7 @@ For the data feeds, the following formats are available:
 
 * NUMERIC (ASCII)
 * GIF format (recent GIFs available for free on the MSC Datamart) 
-* [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5) raw format for the new S-band radars
+* [ODIM_H5](https://www.eumetnet.eu/wp-content/uploads/2019/01/ODIM_H5_v23.pdf) raw format for the new S-band radars
 
 ## Can I have archived radar data ?
 
