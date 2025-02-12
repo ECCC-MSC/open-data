@@ -20,7 +20,7 @@ Principaux changements :
  
 La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2024/06/10/NOCN03_CWAO_101857___46443).
 
-Un document avec des détails techniques à ce sujet [est disponible via ce lien](hhttps://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_caldas-400_f.pdf).
+Un document avec des détails techniques à ce sujet [est disponible via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps-700_caldas-400_f.pdf).
 
 ## Le mercredi 22 novembre 2023
 
