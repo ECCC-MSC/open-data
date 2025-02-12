@@ -73,7 +73,7 @@ Concernant les fils de données, les formats disponibles sont les suivants :
 
 * NUMERIC (ASCII)
 * Images GIF (les récentes données GIF sont disponibles gratuitement sur le Datamart du SMC)
-* Format brut [ODIM_H5](https://portal.hdfgroup.org/display/HDF5/HDF5), pour les nouveaux radars à bande S
+* Format brut [ODIM_H5](https://www.eumetnet.eu/wp-content/uploads/2019/01/ODIM_H5_v23.pdf), pour les nouveaux radars à bande S
    
 ## Peut-on accéder aux données radar archivées?
 
