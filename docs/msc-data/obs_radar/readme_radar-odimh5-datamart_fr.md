@@ -71,7 +71,7 @@ ODIM_H5 <Radar_ID> <DDHHmm>
 ```
 La deuxième ligne contient des informations spécifiques pour chaque radar telles que : `product_type`, `radar_id` et `daytime`.
 
-(*) Format HDF5 : https://support.hdfgroup.org/HDF5/users5.html
+(*) Format HDF5 : https://www.eumetnet.eu/wp-content/uploads/2019/01/ODIM_H5_v23.pdf
 
 ## Support
 
