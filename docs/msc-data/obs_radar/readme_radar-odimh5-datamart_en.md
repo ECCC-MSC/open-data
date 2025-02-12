@@ -1,4 +1,4 @@
-[In French](readme_radarodimh5-datamart_fr.md)
+[In French](readme_radar-odimh5-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
