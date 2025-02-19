@@ -49,7 +49,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
   where:
   
-    * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list aboce)
+    * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list above)
 
   Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
