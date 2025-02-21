@@ -83,6 +83,7 @@ Série d'évènements organisés autour des données ouvertes du SMC :
     * [Année 2022](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2022.pdf)
     * [Année 2023](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2023.pdf)
     * [Année 2024](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2024.pdf)
+    * [Année 2025](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/events/StayConnected_Webinars_2025.pdf)
 </br></br>
 
 ## Licence

@@ -63,7 +63,7 @@ In general, it is preferable to use continuous access rather than periodic acces
 
 The weather radar data that we freely provide to the public are the [North American Radar Composite and Extrapolation](../msc-data/obs_radar/readme_radar_geomet_en.md) via GeoMet-Weather Geospatial Web Services. The North American Radar Composite is available every 6 minutes for the past 3 hours. We also offer the [GIF images](../msc-data/obs_radar/readme_radarimage-datamart_en.md) on the MSC open data server. [Documentation of radar observations](../msc-data/obs_radar/readme_radar_en.md) can be consulted for other radar data and products.
 
-The raw data, as well as various other products, are provided by a [cost-recovered service](../cost-recovered/readme_en.md#dedicated-data-feed). As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
+The raw data, as well as various other products, are provided by a [cost-recovered service](../cost-recovered/readme_en.md#dedicated-data-feed). As part of this service, we push the data to the client's FTP server and provide a 24/7 service. The documentation for [radar products](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
 For the data feeds, the following formats are available:
 
@@ -77,7 +77,7 @@ Environment and Climate Change Canada does not have an online service to retriev
 
 The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 118$/hour, with a minimum charge of 118$, to retrieve/recreate the requested data.
 
-Archive data are available in either raw format (ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
+Archive data are available in either raw format (ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) is available.
 
 Typical archived data retrieval requests require between 2-4 hours to process. If interested, please complete the order form below and send it via e-mail using the address: ec.dps-client.ec@canada.ca
 

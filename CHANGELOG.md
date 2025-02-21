@@ -10,36 +10,24 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.7.1 ?
+## 2.7.0
 
-* date: 
+* date: 2025-02-21
 * announcements:
-    * Not announced
+    * Announcement on February, 11 2025
 * new content:
-    * 
+    * Add 2025 MSC Open Data users webinar series
+    * Update marine_weather DD page (add dated files) 
 * improvements:
     * Update ODIM_H5 external link 
 * bug fixes: 
     * Fix typos and links
 
-## 2.7.0 ?
-
-* date: ??
-* announcements:
-    * Announced
-* new content:
-    * 
-* improvements:
-    * 
-* bug fixes: 
-    * 
-
-
 ## 2.6.19
 
 * date: 2025-02-06
 * announcements:
-    * Not announced
+ 2025-02-21    * Not announced
 * new content:
     * Add 2019, 2020 and 2023 recorded webinar series
     * Update HRDPS-North: add 3km lat-lon data on DD ops 

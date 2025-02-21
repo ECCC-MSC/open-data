@@ -24,23 +24,34 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-__The marine weather XML files__ are available according to Canadian marine regions, at the following address :
+* **Marine weather XML forecasts, disseminated in dated files (single files)** are available according to this hierarchy :
 
-  [https://dd.weather.gc.ca/marine_weather/xml/{REGION}](https://dd.weather.gc.ca/marine_weather/xml)
+  [https://dd.weather.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.weather.gc.ca/marine_weather/)
+  
+  where:
+  
+    * __DOMAIN__ : Name of the region covered by the forecast
+    * __HH__ : Hour (UTC) of forecast data emission 
 
-where :
+  The domain is one of the 8 following values :
 
- __REGION__ : name of the region covered by the forecast.The region name is one of the 8 following values:
+   * arctic
+   * atlantic
+   * great_lakes
+   * hudson
+   * mackenzie
+   * pacific
+   * prairies
+   * st_lawrence
+
+* **Marine weather XML forecasts, distributed in undated files (data overwritten with each update)** are available at this address:
+
+  [https://dd.weather.gc.ca/marine_weather/xml/{DOMAIN}](https://dd.weather.gc.ca/marine_weather/xml/)
+
+  where:
+  
+    * __DOMAIN__ : Name of the region covered by the forecast (see the list above)
  
-* arctic
-* atlantic
-* great_lakes
-* hudson
-* mackenzie
-* pacific
-* prairies
-* st_lawrence
-
 [__Tables describing each of the marine weather XML element tags and their associated attributes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
 
 The __XML schemas__ for marine weather data are found in this directory :
@@ -49,22 +60,35 @@ https://dd.weather.gc.ca/marine_weather/schema/
 
 ## File name nomenclature 
 
-NOTE : ALL HOURS ARE IN UTC.
-
 The file names have the following nomenclature :
 
-RegionNameCode_L.xml
+* **Dated, unique files**:
 
-where :
+  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml`
 
-* __RegionNameCode__ : Site code used in the marine region list (see URL below).
-* __L__ : Single letter indicating the language of the file. Can be either : f (French) or e (English)
+  where :
 
-Examples of file name :
+    * __SiteCode__ : Marine region code (see below)
+    * __L__ : Letter indicating file language: fr (French) or en (English)
 
-* m0000001_e.xml - English marine weather XML for area Tuktoyaktuk.
+  Examples of file names:
 
-* m0000001_f.xml - French marine weather XML for area Tuktoyaktuk.
+    * 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
+    * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
+
+* **Undated files, overwritten with each update**:
+
+  `{SiteCode}_{L}.xml`
+
+  where :
+
+    * __SiteCode__ : Marine region code (see below)
+    * __L__ : Letter indicating file language: f (French) or e (English)
+
+  Examples of file names:
+
+    * s0000011_e.xml 
+    * s0000011_f.xml
 
 A [__list with location names and RegionNameCodes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
 
