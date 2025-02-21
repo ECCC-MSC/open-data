@@ -92,6 +92,8 @@ The file names have the following nomenclature :
 
 A [__list with location names and RegionNameCodes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
 
+NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.
+
 ## Support
 
 If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).

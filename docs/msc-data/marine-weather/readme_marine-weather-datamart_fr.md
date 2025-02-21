@@ -90,6 +90,8 @@ https://dd.meteo.gc.ca/marine_weather/schema/
 
 Une [__liste de noms d'emplacements et de codes de sites__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
 
+NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.
+
 ## Support
 
 Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
