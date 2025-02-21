@@ -24,23 +24,34 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-__Les fichiers XML de prévisions météorologiques marines__ sont disponibles dans des répertoires organisés selon les régions de prévisions marines du Canada :
+* **Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques)** sont disponibles à cette adresse:
 
-  [https://dd.meteo.gc.ca/marine_weather/xml/{REGION}](https://dd.meteo.gc.ca/marine_weather/xml)
+  [https://dd.meteo.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.meteo.gc.ca/marine_weather/)
 
-où :
+  où:
+  
+    * __DOMAIN__ : Nom du domaine couvert par la prévision marine
+    * __HH__ : Heure UTC d'émission des prévisions  
 
- __REGION__ : nom de la région couverte par la prévision marine. Cette région peut prendre une de ces 8 valeurs :
- 
-* arctic
-* atlantic
-* great_lakes
-* hudson
-* mackenzie
-* pacific
-* prairies
-* st_lawrence
+  Ce domaine peut prendre une de ces 8 valeurs :
 
+    * arctic
+    * atlantic
+    * great_lakes
+    * hudson
+    * mackenzie
+    * pacific
+    * prairies
+    * st_lawrence
+
+* **Les données de prévisions météorologiques marines, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)** sont disponibles à cette adresse:
+
+  [https://dd.meteo.gc.ca/marine_weather/xml/{DOMAIN}](https://dd.meteo.gc.ca/marine_weather/xml/)
+
+  où:
+  
+    * __DOMAIN__ : Nom du domaine couvert par la prévision marine (voir la liste ci-dessus)
+    
 Une [__description des balises et des attributs XML__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
 
 Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse suivante :
@@ -49,24 +60,37 @@ https://dd.meteo.gc.ca/marine_weather/schema/
 
 ## Nomenclature des noms de fichiers
 
-NOTE : TOUTES LES HEURES SONT EN UTC.
+* **Fichiers datés, uniques**:
 
-Les fichiers XML de prévisions météorologiques marines suivent la nomenclature suivante:
+  `{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml`
 
-CodeDeSite_L.xml
+  où :
 
-où :
+    * __SiteCode__ : Code de la région marine (voir plus bas)
+    * __L__ : Lettre indiquant la langue du fichier : fr (français) ou en (anglais)
 
-* __CodeDeSite__ : code du site pour la région marine ( voir l'URL plus bas )
-* __L__ : lettre indiquant la langue du fichier : f (français) ou e (anglais).
+  Exemples de noms de fichier :
 
-Exemple de nom de fichier :
+    * 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
+    * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
 
-* m0000001_e.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en anglais.
+* **Fichiers non datés, écrasés lors de chaque mise à jour**:
 
-* m0000001_f.xml - fichier XML de prévision météorologique marine pour Tuktoyaktuk, en français.
+  `{SiteCode}_{L}.xml`
+
+  où :
+
+    * __SiteCode__ : Code de la région marine (voir plus bas)
+    * __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
+
+  Exemples de noms de fichier :
+
+    * s0000011_e.xml 
+    * s0000011_f.xml
 
 Une [__liste de noms d'emplacements et de codes de sites__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
+
+NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.
 
 ## Support
 
