@@ -213,7 +213,9 @@ Hélicité relative de la tempête,HLCY,Surface,J/kg
 Indice Showalter,SHWINX,500 mb,K
 Indice climatique thermique universel,UTHCIDX,Surface,K
 Indice d'intensité des précipitations totales,TPCPNINTSTI,Surface,0=Aucune intensité; 1=Faible; 2=Modéré; 3=Fort
+Indice de menace de temps violent,SWEAT,Surface,Numérique
 Indice de soulèvement,4LFTX,500 mb,K
+Indice de soulèvement à la surface,LFTX,500 mb,K
 Indice de ventilation,VI,Surface,0 à 100
 Indice humidex,HMX,Surface,°C
 Indice UV,UVI,Surface,Numérique
@@ -297,6 +299,7 @@ Type de précipitation instantanée,PCPNTYPE,Surface,1=Pluie; 2=Pluie/Neige; 3=P
 Type de précipitation secondaire,SCNDPCPNTYPE,Surface,101=Pluie; 110=Grêle; 111=Bruine; 203=Pluie verglaçante; 212=Bruine verglaçante; 308=Grésil; 405=Neige; 409=Granulés de neige; 413=Cristaux de glace; 414=Grains de neige
 Visibilité dans le brouillard glacé,VISIFG,2 m au-dessus du niveau du sol,m
 Visibilité dans le brouillard liquide,VISLFG,2 m au-dessus du niveau du sol,m
+Vitesse de cisaillement vertical,VWSH,650 mb,1/s
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,100 mb,m/s
