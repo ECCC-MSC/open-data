@@ -10,7 +10,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.7.1
+## 2.7.2
 
 * date: 2025-02-25
 * announcements:
@@ -22,6 +22,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * NA
 * bug fixes: 
     * Fix typos
+
+
+## 2.7.1
+
+* date: 2025-02-21 (issue with the release, so published twice..)
+* announcements:
+    * Announcement on February, 11 2025
+* new content:
+    * Add 2025 MSC Open Data users webinar series
+    * Update marine_weather DD page (add dated files) 
+* improvements:
+    * Update ODIM_H5 external link 
+* bug fixes: 
+    * Fix typos and links
 
 ## 2.7.0
 
