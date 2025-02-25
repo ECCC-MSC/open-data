@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.7.1
+
+* date: 2025-02-25
+* announcements:
+    * Not announced
+* new content:
+    * Update HRDPS variable table - Add GRIB HRDPS convection parameters (SWEAT, LFTX, VWSH)
+    * Update RDPS variable table - Fix wind chill unit (deg C to deg K)
+* improvements:
+    * NA
+* bug fixes: 
+    * Fix typos
+
 ## 2.7.0
 
 * date: 2025-02-21
@@ -27,7 +40,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 * date: 2025-02-06
 * announcements:
- 2025-02-21    * Not announced
+    * Not announced
 * new content:
     * Add 2019, 2020 and 2023 recorded webinar series
     * Update HRDPS-North: add 3km lat-lon data on DD ops 
