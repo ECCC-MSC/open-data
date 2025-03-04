@@ -17,6 +17,8 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add links to GeoMet-Weather and GeoMet-OGC-API for forecast regions data page
+    * Update GDPS variable table - Add land-sea mask (LAND) and topography (HGT_SFC)
+    * Update GDPS Datamart page. Add note about topography
 * improvements:
     * NA
 * bug fixes:
