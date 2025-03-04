@@ -25,7 +25,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
+    <img id="legend-img" src=""/>
   </div>
 </div>
 </div>

@@ -14,9 +14,13 @@ This package includes shapefiles and polygon sets, categorized into various laye
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server as well as [MSC GeoMet](../../msc-geomet/readme_en.md)::
 
-* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/meteocode/geodata/version_6.11.0/) 
+* [Data available via the GeoMet-Weather geospatial web services](../../msc-geomet/readme_en.md)
+* [Data available via the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca)
+    * [Public Standard Forecast Zones](https://api.weather.gc.ca/collections/public-standard-forecast-zones?lang=en)
+    * [Marine Standard Forecast Zones](https://api.weather.gc.ca/collections/marine-standard-forecast-zones?lang=en)
+* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/meteocode/geodata/version_6.12.0/)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

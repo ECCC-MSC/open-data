@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.0
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * Add links to GeoMet-Weather and GeoMet-OGC-API for forecast regions data page
+* improvements:
+    * NA
+* bug fixes:
+    * Fix issue with radar maps showing the incorrect legend. Legends are now dynamically set based on time of year and page
+
+
 ## 2.7.2
 
 * date: 2025-02-25
