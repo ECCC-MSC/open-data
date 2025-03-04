@@ -47,6 +47,7 @@ Downward longwave radiation flux,DLWRF,Surface,W/m<sup>2</sup>
 Downward shortwave radiation flux,DSWRF,Nominal Top of Atmosphere,W/m<sup>2</sup>
 Downward shortwave radiation flux,DSWRF,Surface,W/m<sup>2</sup>
 Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
+Geopotential height,HGT,Surface,gpm
 Geopotential height,HGT,1 mb,gpm
 Geopotential height,HGT,10 mb,gpm
 Geopotential height,HGT,100 mb,gpm
@@ -83,6 +84,7 @@ Geopotential height,HGT,985 mb,gpm
 Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
 Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
 K index,KX,Surface,°C
+Land cover,LAND,Surface,0=Sea; 1=Land
 Latent heat net flux,LHTFL,Surface,W/m<sup>2</sup>
 Maximum temperature,TMAX,2 m Above Ground Level,K
 Minimum temperature,TMIN,2 m Above Ground Level,K

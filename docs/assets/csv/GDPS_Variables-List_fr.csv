@@ -124,6 +124,7 @@ Flux radiatif entrant d'ondes courtes,DSWRF,Sommet nominal de l'atmosphère,W/m<
 Flux radiatif entrant d'ondes courtes,DSWRF,Surface,W/m<sup>2</sup>
 Flux radiatif entrant d'ondes longues,DLWRF,Surface,W/m<sup>2</sup>
 Hauteur de la couche limite planétaire,HPBL,Surface,m
+Hauteur géopotentielle,HGT,Surface,gpm
 Hauteur géopotentielle,HGT,1 mb,gpm
 Hauteur géopotentielle,HGT,10 mb,gpm
 Hauteur géopotentielle,HGT,100 mb,gpm
@@ -233,6 +234,7 @@ Indice Total-Total,TOTALX,Surface,K
 Indice de soulèvement,4LFTX,500 mb,K
 Indice UV,UVI,Surface,Numérique
 Indice UV par ciel clair,UVIUCS,Surface,Numérique
+Masque terre-mer,LAND,Surface,0=Mer; 1=Terre
 Ozone totale intégrée dans la colonne,TCIOZ,Surface,DU
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa
 Pression,PRES,Surface,Pa
