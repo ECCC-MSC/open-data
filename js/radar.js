@@ -1,4 +1,16 @@
 const parser = new DOMParser();
+const fullpath = window.location.pathname;
+const isEnglish = fullpath.includes("_en/") ? true : false;
+const legends = {
+  en: {
+    rain: "https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RRAI&STYLE=&TRANSPARENT=true",
+    snow: "https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RADAR_1KM_RSNO&STYLE=&TRANSPARENT=true",
+  },
+  fr: {
+    rain: "https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr",
+    snow: "https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr"
+  }
+}
 
 async function getObservedStartEndTime() {
   let response = null;
@@ -72,6 +84,13 @@ let november = new Date(new Date().getFullYear(), 10, 1);
 if (today < april || today >= november) {
   // Snow coverage
   isSnow = true;
+  const legend_img = document.getElementById("legend-img");
+  // set source attribute of legend image to appropriate legend
+  if (isSnow === true) {
+    isEnglish ? legend_img.src = legends.en.snow : legend_img.src = legends.fr.snow;
+  } else {
+    isEnglish ? legend_img.src = legends.en.rain : legend_img.src = legends.fr.rain;
+  }
   layers.push(
     new ol.layer.Tile({
       source: new ol.source.OSM()
