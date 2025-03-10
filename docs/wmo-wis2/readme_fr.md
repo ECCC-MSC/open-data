@@ -18,6 +18,7 @@ Les manuels et guides WIS2 suivants sont disponibles (an anglais seulement) :
 * [Manual on the WMO Information System, Volume II - WMO Information System 2.0](https://library.wmo.int/idurl/4/68731)
 * [Guide to the WMO Information System Volume II - WMO Information System 2.0](https://library.wmo.int/idurl/4/69130)
 * [Provisions for the Transition from the WMO Information System (WIS) 1.0 and Global Telecommunication System to WIS 2.0](https://library.wmo.int/idurl/4/69050)
+* [WMO Unified Data Policy for the International Exchange of Earth System Data (Resolution 1 (Cg-Ext(2021)))](http://library.wmo.int/idviewer/57850/15)
 
 En tant qu'information additionnelle, le [WIS2 Cookbook](https://wmo-im.github.io/wis2-cookbook/cookbook/wis2-cookbook-DRAFT.html) fournit plusieurs exemples, extraits de code, recettes et processus en support aux exigences de WIS2.
 
