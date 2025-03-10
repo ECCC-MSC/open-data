@@ -16,7 +16,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * 
+    * Update daily climate Datamart page: reorganization by year rather than month of the daily climate files
 * improvements:
     * 
 * bug fixes:
