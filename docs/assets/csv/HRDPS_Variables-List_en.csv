@@ -145,6 +145,7 @@ Relative humidity,RH,925 mb,%
 Relative humidity,RH,950 mb,%
 Relative humidity,RH,970 mb,%
 Relative humidity,RH,985 mb,%
+Sea ice area fraction,ICEC,Surface,Fraction
 Secondary precipitation type,SCNDPCPNTYPE,Surface,101=rain; 110=hail; 111=drizzle; 203=freezing rain; 212=freezing drizzle; 308=ice pellets; 405=snow; 409=snow pellets; 413=ice crystals; 414=snow grains
 Sensible heat net flux,SHTFL,Surface,W/m<sup>2</sup>
 Severe Weather Threat Index,SWEAT,Surface,Numeric
