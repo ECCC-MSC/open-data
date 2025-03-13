@@ -34,7 +34,7 @@ where :
 File names have the form :
 
 * climate_normals_PROVTERR_XXXXXXX_YYY1-YYY2.csv
-* climate_daily_PROVTERR_XXXXXXX_YYYY-MM_P1D.csv
+* climate_daily_PROVTERR_XXXXXXX_YYYY_P1D.csv
 * climate_hourly_PROVTERR_XXXXXXX_YYYY_P1H.csv
 * climate_monthly_PROVTERR_XXXXXXX_YYYY_P1M.csv
 
@@ -63,7 +63,6 @@ where :
 * __YYY1__ : Year of the beginning of the climate period of interest : [1981]
 * __YYY2__  : Year of the end of the climate period of interest : [2010]
 * __YYYY__ : Year of the climate daily data
-* __MM__ :  Month of the climate daily/monthly data
 * __P1D__ : Constant string indicating 1 day time step (ISO8601 standard)
 * __P1H__ : Constant string indicating 1 hour time step (ISO8601 standard)
 * __P1M__ : Constant string indicating 1 month time step (ISO8601 standard)
@@ -72,7 +71,7 @@ where :
 Examples :
 
 * climate_normals_QC_7040446_1981-2010.csv 
-* climate_daily_QC_7025280_1993-03_P1D.csv
+* climate_daily_QC_7025280_1993_P1D.csv
 * climate_hourly_MB_5010480_1975_P1H.csv
 * climate_monthly_QC_7025280_2001_P1M.csv
 

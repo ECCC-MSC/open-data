@@ -32,7 +32,7 @@ avec :
 ## Nomenclature des noms de fichiers
 
 * climate_normals_PROVTERR_XXXXXXX_YYY1-YYY2.csv
-* climate_daily_PROVTERR_XXXXXXX_YYYY-MM_P1D.csv
+* climate_daily_PROVTERR_XXXXXXX_YYYY_P1D.csv
 * climate_hourly_PROVTERR_XXXXXXX_YYYY_P1H.csv
 * climate_monthly_PROVTERR_XXXXXXX_YYYY_P1M.csv
 
@@ -61,7 +61,6 @@ avec :
 * __YYY1__ : Année du début de la période climatique d’intérêt : [1981]
 * __YYY2__ : Année de la fin de la période climatique d’intérêt : [2010]
 * __YYYY__ : Année des données climatiques quotidiennes/mensuelles 
-* __MM__ : Mois des données climatiques quotidiennes 
 * __P1D__ : Chaîne constante indiquant un pas de temps de 1 jour (standard ISO8601)
 * __P1H__ : Chaîne constante indiquant un pas de temps de 1 heure (standard ISO8601)
 * __P1M__ : Chaîne constante indiquant un pas de temps de 1 mois (standard ISO8601)
@@ -71,7 +70,7 @@ avec :
 Exemples :
 
 * climate_normals_QC_7040446_1981-2010.csv 
-* climate_daily_QC_7025280_1993-03_P1D.csv
+* climate_daily_QC_7025280_1993_P1D.csv
 * climate_hourly_MB_5010480_1977_P1H.csv
 * Climate_monthly_QC_7025280_2001_P1M.csv
 
