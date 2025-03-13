@@ -1,157 +1,64 @@
-[En français](readme_radarimage-datamart_fr.md)
+[En français](readme_radar-composite-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Radar imagery](readme_radar_en.md) > Radar imagery on MSC Datamart
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Radar data and products](readme_radar_en.md) > North American radar composite on MSC Datamart
 
-# Radar imagery
+# North American radar composite
 
-This page describes the [weather radar](readme_radar_en.md) imagery available in GIF format via the MSC Datamart.
+This mosaic is calculated over the North American domain with a horizontal spatial resolution of 1 km. This mosaic therefore includes all the Canadian and American radars available in the network and which can reach a maximum of 200 contributing radars.
 
-These images are used to feed the weather radar page on ECCC's [public forecast website](https://meteo.gc.ca/radar/index_e.html).
+To better represent precipitation over the different seasons, this mosaic renders in mm/h to represent rain and in cm/h to represent snow. For the two precipitation types (rain and snow), we use two different mathematical relationships to convert the reflectivity by rainfall rates (mm/h rain cm/h for snow).
+
+This mosaic is based on the DPQPE (Dual-Pol Quantitative Precipitation Estimation) product for S-Band radars. For the US Nexrad radars, ECCC uses the most similar product from the US Meteorological Service (NOAA). This product displays radar reflectivity converted into precipitation rates, using the same formulas as the Canadian radars.
 
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GIF file.
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoTIFF file.
 
-The radar images are available at the following address:
+The data are available at the address :
 
-[https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}](https://dd.weather.gc.ca/radar/)
+[https://hpfx.collab.science.gc.ca/{YYYYMMDD}/radar/composite](https://hpfx.collab.science.gc.ca/)
 
 where:
 
-* PRODUCT = [24_HR_ACCUM | CAPPI | DPQPE | PRECIPET]
-* FORMAT = [GIF] (other formats may appear in the future)
-* STATION_RADAR = [WKR, XAM, ...]  radar 3 letter identifier code in capital letters. For the new S-band radars, a 5-letter ID will be used (see section below).
+* __YYYYMMDD__ : Year, month and day
 
-__Notes__: 
+__Note__: 
 
-* Details about these products can be found on the Environment and Climate Change Canada's [About radar](https://www.ec.gc.ca/meteo-weather/default.asp?lang=En&n=2B931828-1) page.
-* The Dual Polarization Quantitative Precipitation Estimation (DPQPE) product is only available for S-band radars. It is a two-dimensional representation of radar estimated precipitation rate at the lowest sweep of the radar scan (0.4 degrees elevation for the majority of the S-Band radars). So, the estimated precipitation rate is as close as possible to the earth’s surface. DPQPE product is based, among others, on a series of dual-pol processing steps (quality control) to remove, non-weather artifacts from the raw data (volume scans). It is provided in mm/hr for rainfall rates and cm/hr for snowfall rates. This product is used in our high-resolution North American radar composite available in [WeatherCan](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weathercan.html), the official mobile application of ECCC.
 * A [list of radar sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf) is available. This list will be updated regularly.
+
+## Technical specifications
+
+Here are more details regarding the two products used to generate the radar composite:
+
+* __DPQPE product__: The acronym DPQPE stands for Dual Polarization Quantitative Precipitation Estimation. It is a two-dimensional representation of the precipitation rate estimated from the lowest radar scan (elevation angle of 0.4 degrees for most S-band radars). Thus, the estimated precipitation rate is as close as possible to the Earth's surface. The EQPDP product is based, among other things, on a series of polarimetric processing steps (quality control based on dual-polarization technology) to remove non-meteorological artifacts from the raw data (volumetric scans). It is provided in mm/h for rain and cm/h for snow. This product is calculated with a maximum coverage range of 240 km.
+
+* __American product__: ECCC uses base reflectivity mosaics from the NOAA (National Oceanic and Atmospheric Administration) Multi-Radar-Multi-Sensor (MRMS) system, with quality control to eliminate ground echoes and non-meteorological echoes. These mosaics cover the entire contiguous United States, as well as the domains of Alaska and Hawaii. This product is calculated with a maximum coverage range of 460 km for most U.S. radars. We have adapted this composite to our specific needs to ensure it is consistent and compatible with Canadian radar data, thus ensuring smooth integration between the two networks.
 
 ## Filename nomenclature
 
-NOTE: ALL HOURS ARE IN UTC.
+Files follow the following nomenclature:
 
-The files have the following nomenclature, with XXX, a 3 letter radar identifier in capital letters. For the new S-band radars, a 5-letter code is used.
+`{YYYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_{UNIT}_{res}.tif`
 
-* __PRECIPET__
+where:
 
-Images for regional composites (5 regions of Canada) and individual radar are available. Two intensities scale (8 and 14 colors) are also available for each image. 
+* __YYYYMMDD__ : Year, month and day of the data emission
+* __T__ : Time delimiter according to ISO8601 standards
+* __HHmm__: Hour and minute at which the data is sent
+* __Z__: Time zone (UTC time)
+* __MSC__: Constant string for Meteorological Service of Canada, the data source
+* __Radar-Composite__ : Constant string indicating that the data contains the north-american radar composite
+* __UNIT__ : String indicating the unit [MMHR,CMHR] according to the precipitation type (rain, snow)
+* __res__ : horizontal resolution [1km]
+* __tif__ : Constant string indicating that the format is GeoTIFF
 
-Composites with 14 colors intensity scale:
+Example:
 
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_WT.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_WT.gif 
-
-ex: 201409201350_ATL_PRECIPET_RAIN_WT.gif
-
-Composites with 8 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif 
-
-ex: 201409201350_ATL_PRECIPET_RAIN_A11Y.gif
-
-Individual radar with 14 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW.gif (14 colors for Snow)
-
-ex: 201409201400_XFT_PRECIPET_RAIN.gif
-
-Individual radar with 8 colors intensity scale:
-
-* YYYMMDDHHmm_XXX_PRECIPET_RAIN_A11Y.gif 
-* YYYMMDDHHmm_XXX_PRECIPET_SNOW_A11Y.gif (14 colors for Snow)
-
-ex: 201409201400_XFT_PRECIPET_RAIN_A11Y.gif
-
-* __PRECIPET contingency products__
-
-When a Canadian radar site is down, an alternate PRECIPET product is made available for contingency purposes. It is a composite product generated from the available neighbouring radars, which in some cases may include US radars. It is also important to note that for some regions, neighbouring radars may not cover the entire domain of the radar out of service. 
-To this end and to help the user identify these non-covered areas, red circles have been added to show the contributing radars in the composite.
-
-This product contains the string "COMP" in its file name, as:
-
-YYYMMDDHHmm_XXX_COMP_PRECIPET_RAIN.gif
-
-ex: 201511271400_XWL_COMP_PRECIPET_RAIN.gif
-
-This composite image can be differentiated from the original radar image, by the inscription "Composite" in the legend on the right of the image.
-
-To learn more about how to use the composite images, you can read the documentation on line:
-
-[https://weather.gc.ca/radar/how-to-use_e.html#display](https://weather.gc.ca/radar/how-to-use_e.html#display)
-
-* __CAPPI__
-
-The CAPPI files have the following nomenclature:
-
-* YYYMMDDHHmm_XXX_CAPPI_1.5_RAIN_AGL.gif
-* YYYMMDDHHmm_XXX_CAPPI_1.0_SNOW_AGL.gif
-
-ex: 200806191550_WHK_CAPPI_1.5_RAIN_AGL.gif
-
-* __DPQPE__
-
-The DPQPE files have the following nomenclature:
-
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Rain.gif
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE_XXXXX_Snow.gif
-
-ex: 20201106T1050Z_MSC_Radar-DPQPE_CASBE_Rain.gif
-
-* __24_HR_ACCUM__ 
-
-Shows the rain accumulation, in mm, over the last 24hr period. 
-
-__Based on PRECIPET__
-
-The product is available for the last 48 hr, every 10 minutes for C-Band radars and every 6 minutes for S-Band radars.
-   
-* YYYMMDDHHmm_XXX_24_HR_ACCUM_MM.gif
-
-ex: 200806161900_WBI_24_HR_ACCUM_MM.gif
-
-__Based on DPQPE__
-
-The product is available every 6 minutes, and for the last 48 hr.
-   
-* YYYYMMDDTHHmmZ_MSC_Radar-DPQPE-XXXXX_Accum24h.gif
-
-ex: 20201106T1050Z_MSC_Radar-DPQPE-CASBE_Accum24h.gif
-
-## About the new dual-pol S-Band radars
-
-ECCC is in the process of replacing its old C-Band radars with new dual-pol S-Band radars. This radar renewal project extends over several years and the installation of radar is done progressively (For more information, see the Products documentation section below).
-
-The first radar has already been installed in Radisson (Saskatchewan) and some products are already available. Several changes that impact the products/users are planned in this project. Below are the most important:
-
-* Existing products (PRECIPET, CAPPI, …) will remain the same but with better quality.
-* The temporal resolution has been improved and the products are going to be available every 6 minutes instead of 10 minutes (impact on the filename).
-* The 3-letter radar ID is replaced by a 5-letter ID (example: the current ID C-band Radisson radar is XRA and is replaced by CASRA).
-* Some other new products will emerge in the future and be available externally.
-
-What will happen with the availability of these products and the impact on users?
-
-* For a certain period, the product (PRECIPET, CAPPI, …) will be generated with the same 3-letter ID (same filenames) and the same frequency (each 10 minutes). During this period, these products will be pushed in the same directories (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA)). It help to manage the transition.
-* In parallel, we will provide these products with the new 5-letters ID and every 6 minutes in a new directory (ex: [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)).
-* Users will be informed as and when new radars are installed and their products are available following the same procedure described above.
-
-Example (the Radisson case):
-
-* __The 3-lettre ID product every 10 minutes (Temporary)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
-* __The 5-letter ID products every 6 minutes (Permanently)__ : [https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA](https://dd.meteo.gc.ca/radar/PRECIPET/GIF/XRA/)
-
-## Historical radar images
-
-Historical national, regional and local radar images from the network of radar sites across Canada are available, for free, on the Climate data website at this address:
-
-[https://climate.weather.gc.ca/radar/index_e.html](https://climate.weather.gc.ca/radar/index_e.html)
+* 20240110T0030Z_MSC_Radar-Composite_MMHR_1km.tif
 
 ## Support
 

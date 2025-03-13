@@ -6,7 +6,7 @@
 
 # Surface precipitation type product (SPTP)
 
-This product is a 1km resolution composite over the North American domain, which, for areas with radar coverage, can distinguish the occurrence, type and intensity of precipitation. This product uses two 1km radar composites as input: a North American composite cleaned using dual polarization technology, another particle classification radar composite (precipitation) and surface temperature from the [High Resolution Deterministic Prediction System (HRDPS)](../nwp_hrdps/readme_hrdps_en.md). The SPTP product is produced every 6 minutes.
+This product is a 1km resolution composite over the North American domain, which, for areas with radar coverage, can distinguish the occurrence, type and intensity of precipitation. This product uses two 1km radar composites as input: a North American composite cleaned using dual polarization technology, another particle classification radar composite (precipitation) and surface temperature from the 2.5km [High Resolution Deterministic Prediction System (HRDPS)](../nwp_hrdps/readme_hrdps_en.md) for Canada and the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) for the USA. The SPTP product is produced every 6 minutes.
 
 ## Data Address 
 
@@ -28,6 +28,12 @@ __Note__:
 
 ## Technical specifications
 
+The product distinguishes five types of precipitation: rain, snow, freezing rain, hail and mixed precipitation. Each type is classified in three intensity levels: light, medium and heavy. The intensity thresholds are defined as follows in mm/h:
+
+* <= Light <= 5.0
+* 5.0 < Medium <= 25.0
+* Heavy > 25.0
+
 Surface precipitation type product values are encoded according to the following table:
 
 | Precipitation type  | Value |
@@ -44,6 +50,8 @@ Surface precipitation type product values are encoded according to the following
 | Hail or rain | 410 |
 | Light freezing rain | 510 |  
 | Moderate/heavy freezing rain | 520 |
+
+It is important to note that this product is available with a maximum range of 240 km for Canadian radars and 230 km for U.S. radars. The composite is updated every 6 minutes, with a production and availability delay of approximately 8 minutes after the valid time.
 
 ## Nomenclature of file names
 

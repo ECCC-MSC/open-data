@@ -6,7 +6,7 @@
 
 # Produit radar de type de précipitation à la surface (SPTP)
 
-Ce produit est un composite à une résolution de 1km sur le domaine nord-américain, qui, pour les zones avec une couverture radar, peut distinguer l'occurrence, le type de précipitation et son niveau d'intensité. Ce produit utilise en entrée deux composites radar à 1km, soit un composite nord-américain nettoyé à l'aide de la technologie de double polarisation, un autre composite radar de classification des particules (précipitations) ainsi que la température de surface provenant du [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md). Le produit est généré toutes les 6 minutes.
+Ce produit est un composite à une résolution de 1km sur le domaine nord-américain, qui, pour les zones avec une couverture radar, peut distinguer l'occurrence, le type de précipitation et son niveau d'intensité. Ce produit utilise en entrée deux composites radar à 1km, soit un composite nord-américain nettoyé à l'aide de la technologie de double polarisation, un autre composite radar de classification des particules (précipitations) ainsi que la température de surface provenant du [Système à haute résolution de prévision déterministe (SHRPD)](../nwp_hrdps/readme_hrdps_fr.md) à 2.5 km pour le Canada et du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) pour les États-Unis.Le produit est généré toutes les 6 minutes.
 
 ## Adresse des données 
 
@@ -28,6 +28,12 @@ __Notes__:
 
 ## Spécifications techniques
 
+Le produit distingue cinq types de précipitations : pluie, neige, pluie verglaçante, grêle et précipitations mixtes. Chaque type est classé en trois niveaux d'intensité : faible, modérée et forte. Les seuils d'intensité sont définis comme suit en mm/h :
+
+* <= Léger <= 5.0
+* 5,0 < Moyen <= 25.0
+* Fort > 25.0
+
 Les valeurs du type de précipitation à la surface sont encodées selon le tableau suivant :
 
 | Type de précipitation | Valeur |
@@ -44,6 +50,8 @@ Les valeurs du type de précipitation à la surface sont encodées selon le tabl
 | Grêle ou pluie | 410 |
 | Pluie verglaçante légère | 510 |   
 | Pluie verglaçante modérée/intense | 520 |
+
+Il est important de noter que ce produit est disponible avec une portée maximale de 240 km pour les radars canadiens et de 230 km pour les radars américains. La composite est mise à jour toutes les 6 minutes, avec un délai de production et de disponibilité d'environ 8 minutes après l'heure de validité.
 
 ## Nomenclature des noms de fichiers
 
