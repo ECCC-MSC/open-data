@@ -127,6 +127,7 @@ Relative humidity,RH,925 mb,%
 Relative humidity,RH,950 mb,%
 Relative humidity,RH,970 mb,%
 Relative humidity,RH,985 mb,%
+Sea ice area fraction,ICEC,Surface,Fraction
 Sensible heat net flux,SHTFL,Surface,W/m<sup>2</sup>
 Showalter Index,SHWINX,500 mb,K
 Skin temperature,SKINT,Surface,K
