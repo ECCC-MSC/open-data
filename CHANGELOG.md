@@ -20,9 +20,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Add extrapolated north-american radar composite MSC Datamart page
     * Update north-american radar composite MSC Datamart page
     * Update radar SPTP MSC Datamart page
-    * Update GDPS, RDPS and HRDPS variable tables, Add ....
+    * Update GDPS, RDPS and HRDPS variable tables. Add several variables 
 * improvements:
-    * 
+    * NA 
 * bug fixes:
     * Fix typos in the FAQ 
 
