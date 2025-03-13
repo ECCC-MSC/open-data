@@ -17,6 +17,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Update daily climate Datamart page: reorganization by year rather than month of the daily climate files
+    * Add extrapolated north-american radar composite MSC Datamart page
+    * Update north-american radar composite MSC Datamart page
+    * Update radar SPTP MSC Datamart page
+    * Update GDPS, RDPS and HRDPS variable tables, Add ....
 * improvements:
     * 
 * bug fixes:
