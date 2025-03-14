@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme radar composite datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <title>Readme radar composite extrapolation datamart en - MSC Open Data / Données ouvertes du SMC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#north-american-radar-composite" class="nav-link">North American radar composite</a>
+            <li class="nav-item" data-level="1"><a href="#extrapolated-north-american-radar-composite" class="nav-link">Extrapolated North American radar composite</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -155,18 +155,19 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_radar-composite-datamart_fr/">En français</a></p>
+<p><a href="../readme_radar-composite-extrapolation-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_radar_en/">Radar data and products</a> &gt; North American radar composite on MSC Datamart</p>
-<h1 id="north-american-radar-composite">North American radar composite</h1>
-<p>This mosaic is calculated over the North American domain with a horizontal spatial resolution of 1 km. This mosaic therefore includes all the Canadian and American radars available in the network and which can reach a maximum of 200 contributing radars.</p>
-<p>To better represent precipitation over the different seasons, this mosaic renders in mm/h to represent rain and in cm/h to represent snow. For the two precipitation types (rain and snow), we use two different mathematical relationships to convert the reflectivity by rainfall rates (mm/h rain cm/h for snow).</p>
-<p>This mosaic is based on the DPQPE (Dual-Pol Quantitative Precipitation Estimation) product for S-Band radars. For the US Nexrad radars, ECCC uses the most similar product from the US Meteorological Service (NOAA). This product displays radar reflectivity converted into precipitation rates, using the same formulas as the Canadian radars.</p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_radar_en/">Radar data and products</a> &gt; Extrapolated North American radar composite on MSC Datamart</p>
+<h1 id="extrapolated-north-american-radar-composite">Extrapolated North American radar composite</h1>
+<p>This product is the Radar Extrapolation Composite at 1 km resolution over the North American domain. It uses only the 6-minute high-resolution (1 km) radar composite (the one displayed on the different government public platforms) as input.</p>
+<p>Using a modification of the open source PySTEPS library, a motion field is computed, and radar echoes are projected forward in time. The motion is based on similarities between radar reflectivity in a time sequence at multiple spatial scales.</p>
+<p>Future radar reflectivity is extrapolated, followed by conversion to precipitation rates of MM/HR (Rain) or CM/HR (Snow). An output sequence of future radar is generated every 6 minutes.</p>
+<p>It is important to note that this output is only a projection of existing echoes with no account for the growth and decay that is expected in a real radar sequence. Errors will exist, especially near the edges of radar coverage, or near geographic features. Therefore, the product should be used with caution considering that no perfect solution can exist given the limits of predictability.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GeoTIFF file.</p>
 <p>The data are available at the address :</p>
-<p><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYYMMDD}/radar/composite</a></p>
+<p><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYYMMDD}/radar/composite-extrapolation</a></p>
 <p>where:</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day</li>
@@ -176,18 +177,12 @@
 <li>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">list of radar sites</a> is available. This list will be updated regularly.</li>
 </ul>
 <h2 id="technical-specifications">Technical specifications</h2>
-<p>Here are more details regarding the two products used to generate the radar composite:</p>
-<ul>
-<li>
-<p><strong>DPQPE product</strong>: The acronym DPQPE stands for Dual Polarization Quantitative Precipitation Estimation. It is a two-dimensional representation of the precipitation rate estimated from the lowest radar scan (elevation angle of 0.4 degrees for most S-band radars). Thus, the estimated precipitation rate is as close as possible to the Earth's surface. The EQPDP product is based, among other things, on a series of polarimetric processing steps (quality control based on dual-polarization technology) to remove non-meteorological artifacts from the raw data (volumetric scans). It is provided in mm/h for rain and cm/h for snow. This product is calculated with a maximum coverage range of 240 km.</p>
-</li>
-<li>
-<p><strong>American product</strong>: ECCC uses base reflectivity mosaics from the NOAA (National Oceanic and Atmospheric Administration) Multi-Radar-Multi-Sensor (MRMS) system, with quality control to eliminate ground echoes and non-meteorological echoes. These mosaics cover the entire contiguous United States, as well as the domains of Alaska and Hawaii. This product is calculated with a maximum coverage range of 460 km for most U.S. radars. We have adapted this composite to our specific needs to ensure it is consistent and compatible with Canadian radar data, thus ensuring smooth integration between the two networks.</p>
-</li>
-</ul>
+<p>Extrapolation is carried out exclusively within the coverage area of the radar network in the North American domain (Canada and the United States), with a maximum range of 240 km for Canadian radars and 460 km for U.S. radars.</p>
+<p>The product is available in dBZ, MM/HR, and CM/HR.</p>
+<p>The composite is available every 6 minutes, with a production and availability delay of approximately 7 minutes after the valid time.</p>
 <h2 id="filename-nomenclature">Filename nomenclature</h2>
 <p>Files follow the following nomenclature:</p>
-<p><code>{YYYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_{UNIT}_{res}.tif</code></p>
+<p><code>{YYYYYMMDD}T{HHmm}Z_MSC_Radar-Composite-Extrapolation_{UNIT}_{res}_PT{mmm}M.tif</code></p>
 <p>where:</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of the data emission</li>
@@ -195,14 +190,15 @@
 <li><strong>HHmm</strong>: Hour and minute at which the data is sent</li>
 <li><strong>Z</strong>: Time zone (UTC time)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
-<li><strong>Radar-Composite</strong> : Constant string indicating that the data contains the north-american radar composite</li>
+<li><strong>Radar-Composite-Extrapolation</strong> : Constant string indicating that the data contains the extrapolated north-american radar composite</li>
 <li><strong>UNIT</strong> : String indicating the unit [MMHR,CMHR] according to the precipitation type (rain, snow)</li>
-<li><strong>res</strong> : horizontal resolution [1km]</li>
+<li><strong>res</strong> : Horizontal resolution [1km]</li>
+<li><strong>PT{mmm}M</strong> : Validity time in minutes</li>
 <li><strong>tif</strong> : Constant string indicating that the format is GeoTIFF</li>
 </ul>
 <p>Example:</p>
 <ul>
-<li>20240110T0030Z_MSC_Radar-Composite_MMHR_1km.tif</li>
+<li>20240110T0030Z_MSC_Radar-Composite-Extrapolation_MMHR_1km_PT042M.tif</li>
 </ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>

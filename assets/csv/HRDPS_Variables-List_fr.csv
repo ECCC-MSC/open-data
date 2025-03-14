@@ -113,6 +113,7 @@ Flux radiatif ascendant d'ondes longues,ULWRF,Sommet nominal de l'atmosphère,W/
 Flux radiatif entrant d'ondes courtes,DSWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
 Flux radiatif entrant d'ondes courtes,DSWRF,Surface,W/m<sup>2</sup>
 Flux radiatif entrant d'ondes longues,DLWRF,Surface,W/m<sup>2</sup>
+Fraction de la glace de mer,ICEC,Surface,Fraction
 Hauteur de la couche limite planétaire,HPBL,Surface,m
 Hauteur du niveau de la neige,HGTSNLVL,Surface,m
 Hauteur géopotentielle,HGT,100 mb,gpm

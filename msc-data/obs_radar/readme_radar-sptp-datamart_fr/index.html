@@ -159,7 +159,7 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_radar_fr/">Données et produits radar</a> &gt; SPTP sur le Datamart du SMC</p>
 <h1 id="produit-radar-de-type-de-precipitation-a-la-surface-sptp">Produit radar de type de précipitation à la surface (SPTP)</h1>
-<p>Ce produit est un composite à une résolution de 1km sur le domaine nord-américain, qui, pour les zones avec une couverture radar, peut distinguer l'occurrence, le type de précipitation et son niveau d'intensité. Ce produit utilise en entrée deux composites radar à 1km, soit un composite nord-américain nettoyé à l'aide de la technologie de double polarisation, un autre composite radar de classification des particules (précipitations) ainsi que la température de surface provenant du <a href="../../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a>. Le produit est généré toutes les 6 minutes.</p>
+<p>Ce produit est un composite à une résolution de 1km sur le domaine nord-américain, qui, pour les zones avec une couverture radar, peut distinguer l'occurrence, le type de précipitation et son niveau d'intensité. Ce produit utilise en entrée deux composites radar à 1km, soit un composite nord-américain nettoyé à l'aide de la technologie de double polarisation, un autre composite radar de classification des particules (précipitations) ainsi que la température de surface provenant du <a href="../../nwp_hrdps/readme_hrdps_fr/">Système à haute résolution de prévision déterministe (SHRPD)</a> à 2.5 km pour le Canada et du <a href="../../nwp_gdps/readme_gdps_fr/">Système global de prévision déterministe (SGPD)</a> pour les États-Unis.Le produit est généré toutes les 6 minutes.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.</p>
@@ -174,6 +174,12 @@
 <li>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">liste des sites radar</a> est disponible. Cette liste sera mise à jour régulièrement.</li>
 </ul>
 <h2 id="specifications-techniques">Spécifications techniques</h2>
+<p>Le produit distingue cinq types de précipitations : pluie, neige, pluie verglaçante, grêle et précipitations mixtes. Chaque type est classé en trois niveaux d'intensité : faible, modérée et forte. Les seuils d'intensité sont définis comme suit en mm/h :</p>
+<ul>
+<li>&lt;= Léger &lt;= 5.0</li>
+<li>5,0 &lt; Moyen &lt;= 25.0</li>
+<li>Fort &gt; 25.0</li>
+</ul>
 <p>Les valeurs du type de précipitation à la surface sont encodées selon le tableau suivant :</p>
 <table>
 <thead>
@@ -233,6 +239,7 @@
 </tr>
 </tbody>
 </table>
+<p>Il est important de noter que ce produit est disponible avec une portée maximale de 240 km pour les radars canadiens et de 230 km pour les radars américains. La composite est mise à jour toutes les 6 minutes, avec un délai de production et de disponibilité d'environ 8 minutes après l'heure de validité.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
 <p>Les fichiers suivent la nomenclature suivante :</p>
 <p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-Composite_SfcPrecipType_{res}.tif</code></p>

@@ -123,6 +123,7 @@ Flux radiatif ascendant d'ondes longues,ULWRF,Sommet nominal de l'atmosphère,W/
 Flux radiatif entrant d'ondes courtes,DSWRF,Sommet nominal de l'atmosphère,W/m<sup>2</sup>
 Flux radiatif entrant d'ondes courtes,DSWRF,Surface,W/m<sup>2</sup>
 Flux radiatif entrant d'ondes longues,DLWRF,Surface,W/m<sup>2</sup>
+Fraction de la glace de mer,ICEC,Surface,Fraction
 Hauteur de la couche limite planétaire,HPBL,Surface,m
 Hauteur géopotentielle,HGT,Surface,gpm
 Hauteur géopotentielle,HGT,1 mb,gpm
@@ -228,6 +229,7 @@ Humidité spécifique,SPFH,950 mb,kg/kg
 Humidité spécifique,SPFH,970 mb,kg/kg
 Humidité spécifique,SPFH,985 mb,kg/kg
 Humidité spécifique,SPFH,Surface,kg/kg
+Indice humidex,HMX,Surface,°C
 Indice K,KX,Surface,°C
 Indice Showalter,SHWINX,500 mb,K
 Indice Total-Total,TOTALX,Surface,K
@@ -338,11 +340,17 @@ Vitesse du vent,WIND,925 mb,m/s
 Vitesse du vent,WIND,950 mb,m/s
 Vitesse du vent,WIND,970 mb,m/s
 Vitesse du vent,WIND,985 mb,m/s
+Vitesse verticale (pression),VVEL,200 mb,Pa/s
 Vitesse verticale (pression),VVEL,250 mb,Pa/s
 Vitesse verticale (pression),VVEL,500 mb,Pa/s
 Vitesse verticale (pression),VVEL,600 mb,Pa/s
 Vitesse verticale (pression),VVEL,700 mb,Pa/s
 Vitesse verticale (pression),VVEL,850 mb,Pa/s
+Vorticité relative,RELV,200 mb,1/s
+Vorticité relative,RELV,250 mb,1/s
+Vorticité relative,RELV,500 mb,1/s
+Vorticité relative,RELV,700 mb,1/s
+Vorticité relative,RELV,800 mb,1/s
 Écart du point de rosée,DEPR,10 mb,K
 Écart du point de rosée,DEPR,100 mb,K
 Écart du point de rosée,DEPR,1000 mb,K
@@ -378,4 +386,6 @@ Vitesse verticale (pression),VVEL,850 mb,Pa/s
 Énergie d'inhibition convective,CIN,Surface,J/kg
 Énergie potentielle convective disponible,CAPE,Surface,J/kg
 Épaisseur de la neige,SNOD,Surface,m
+Épaisseur entre 2 niveaux isobares,THICK,850-700 mb,m
 Épaisseur entre 2 niveaux isobares,THICK,1000-500 mb,m
+Épaisseur entre 2 niveaux isobares,THICK,1000-850 mb,m
