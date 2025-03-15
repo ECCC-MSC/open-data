@@ -30,7 +30,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Metadata
 
-Upcoming.
+The [metadata of the Regional Deterministic Air Quality Analysis is available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/1f11ed9f-b13d-497b-853a-997b991195a1).
 
 ## Technical documentation
 
