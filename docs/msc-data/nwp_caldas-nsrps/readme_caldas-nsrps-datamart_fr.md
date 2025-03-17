@@ -67,7 +67,7 @@ Exemples :
 * 20230220T00Z_MSC_NSRPS-CaLDAS_SnowDepth_Sfc_RLatLon0.0225_PT0H.nc
 * 20230220T00Z_MSC_NSRPS-CaLDAS_SnowWaterEquiv_Sfc_RLatLon0.0225_PT0H.nc
 
-Remarque : La teneur en humidité du sol dans chaque couche correspond à la valeur moyenne, généralement référencée au point médian de la couche respective.
+Note : La teneur en humidité du sol dans chaque couche correspond à la valeur moyenne, généralement référencée au point médian de la couche respective.
 
 ## Liste des variables
 
