@@ -66,6 +66,8 @@ Examples:
 * 20230220T00Z_MSC_NSRPS-CaLDAS_SnowDepth_Sfc_RLatLon0.0225_PT0H.nc
 * 20230220T00Z_MSC_NSRPS-CaLDAS_SnowWaterEquiv_Sfc_RLatLon0.0225_PT0H.nc
 
+Note: The soil moisture content in each layer corresponds to the average value, typically referenced at the midpoint of the respective layer
+
 ## List of variables 
 
 List of variables available in the files:
