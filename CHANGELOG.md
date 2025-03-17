@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.2
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * 
+* improvements:
+    * Add note in CaLDAS-NSRPS regarding soil moister content in each layer
+* bug fixes:
+    * 
+
 ## 2.8.1
 
 * date: 2025-03-14
