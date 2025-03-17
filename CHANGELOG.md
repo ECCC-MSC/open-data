@@ -16,11 +16,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * 
+    * NA
 * improvements:
     * Add note in CaLDAS-NSRPS regarding soil moister content in each layer
 * bug fixes:
-    * 
+    * NA
 
 ## 2.8.1
 
