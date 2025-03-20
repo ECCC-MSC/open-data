@@ -8,7 +8,7 @@
 
 Cette page décrit les données de prévision de [scintillation](https://meteo.gc.ca/astro/seeing_f.html) (ou "seeing") et de [transparence](https://meteo.gc.ca/astro/transparence_f.html). La scintillation est utilisée en astronomie pour qualifier l'état de turbulence atmosphérique tandis que la transparence fait référence à la clarté du ciel et se mesure comme la capacité à observer les étoiles en fonction de leur luminosité ou de leur magnitude. 
 
-Ces données sont générées à partir du [Système régional de prévision déterministe](./readme_rdps_fr.md) respectivement aux 3 heures et aux heures jusqu'à 84 heures et projetées sur une grille polaire stéréographique à 35km de résolution.
+Ces données sont générées à partir du [Système régional de prévision déterministe](./readme_rdps_fr.md) aux heures jusqu'à 84 heures et projetées sur une grille polaire stéréographique à 35km de résolution.
 
 Elles permettront aux astronomes amateurs et professionnels, mais aussi à tout usager intéressé par les conditions du ciel, à mieux planifier leurs activités.
 
