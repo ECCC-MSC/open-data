@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.3
+
+* date: 2025-03-20 (issue with the release, so published twice..)
+* announcements:
+    * Not announced
+* new content:
+    * RDPS astronomy seeing data hourly 
+* improvements:
+    * Add note in CaLDAS-NSRPS regarding soil moister content in each layer
+* bug fixes:
+    * NA
+
+
 ## 2.8.2
 
 * date: 2025-03-20
