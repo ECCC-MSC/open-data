@@ -8,7 +8,7 @@
 
 This page describes [seeing](https://meteo.gc.ca/astro/seeing_e.html) and [transparency](https://meteo.gc.ca/astro/transparence_e.html) prediction data. Seing is used in astronomy to describe the state of atmospheric turbulence while transparency refers to the clarity of the sky and is measured as the ability to observe stars according to their brightness or magnitude. 
 
-These data are generated from the [Regional Deterministic Prediction System](./readme_rdps_en.md) respectively every 3 hours and hourly up to 84 hours and projected on a polar-stereographic grid at 35km resolution.
+These data are generated hourly from the [Regional Deterministic Prediction System](./readme_rdps_en.md) up to 84 hours and projected on a polar-stereographic grid at 35km resolution.
 
 They will allow amateur and professional astronomers, but also any user interested in sky conditions, to better plan their activities.
 
