@@ -20,7 +20,7 @@ Les données sont accessibles aux adresses suivantes :
 
 où :
 
-* __TYPE__ : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]
+* __TYPE__ : Chaîne de caractères indiquant les membres individuels issus des sorties directes du modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]
 * __raw__ : Chaîne de caractères constante indiquant les sorties brutes du modèle
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
 * __hhh__ : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC
@@ -45,9 +45,9 @@ Les fichiers ont la nomenclature suivante :
 
 où :
 
-* __CMC_geps__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions, le modèle (geps : Global Ensemble Prediction System).
-* __raw__ : sorties brutes des membres individuels 
-* __prob__ : produits probabilistes générés à partir de tous les membres
+* __CMC_geps__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions du modèle SGPE (geps : Global Ensemble Prediction System).
+* __raw__ : Sorties brutes des membres individuels 
+* __prob__ : Produits probabilistes générés à partir de tous les membres
 * __Resolution__ : Chaîne de caractères constante indiquant la résolution des données (0p5x0p5).
 * __Variable__ : Type de variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables ».
 * __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables ».
