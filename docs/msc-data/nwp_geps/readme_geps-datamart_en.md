@@ -44,9 +44,9 @@ The files have the following nomenclature :
 
 where :
 
-* __CMC_geps__ : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC), the model used (geps: Global Ensemble Prediction System).
-* __raw__ : individual members direct model output
-* __prob__ : probabilistic products created from all members
+* __CMC_geps__ : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC) and the model used (geps: Global Ensemble Prediction System).
+* __raw__ : Individual members direct model output
+* __prob__ : Probabilistic products created from all members
 * __Resolution__ : Constant string indicating the data resolution (0p5x0p5)
 * __Variable__ : Variable type included in this file. To consult a complete list, refer to the variables section.
 * __LevelType__ : Level type. To consult a complete list, refer to the variables section.
