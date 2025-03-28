@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.5
+
+* date: 2025-03-28
+* announcements:
+    * Not announced
+* new content:
+    * New GEPS data pour OMM and SWFP 
+* improvements:
+    * NA
+* bug fixes:
+    * NA
+
 ## 2.8.4
 
 * date: 2025-03-20 (issue with the release, so published twice..)
