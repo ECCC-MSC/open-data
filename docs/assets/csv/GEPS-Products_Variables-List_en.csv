@@ -3,12 +3,16 @@ Freezing rain precipitation rate,FPRATE,Surface,kg/(m<sup>2</sup>*s)
 Geopotential height,HGT,500 mb,gpm
 Heat index,HEATX,2 m Above Ground Level,K
 Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
+Most unstable convective available potential energy,MUCAPE,Surface,J/kg
 Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa
 Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
 Snow precipitation rate,SPRATE,Surface,kg/(m<sup>2</sup>*s)
 Temperature,TMP,2 m Above Ground Level,K
+Temperature,TMP,850 mb,K
 Total cloud cover,TCDC,Surface,%
 Total precipitation rate,TPRATE,Surface,kg/(m<sup>2</sup>*s)
+Vertical wind shear,VWSH,850-250 mb,s<sup>-1</sup>
+Vertical wind shear,VWSH,925-700 mb,s<sup>-1</sup>
 Wind chill factor,WCF,2 m Above Ground Level,K
 Wind speed (gust),GUST,10 m Above Ground Level,m/s
 Wind speed,WIND,10 m Above Ground Level,m/s

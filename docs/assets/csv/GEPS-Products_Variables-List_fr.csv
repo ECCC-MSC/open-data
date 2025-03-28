@@ -10,7 +10,11 @@ Taux de précipitation de pluie,RPRATE,Surface,kg/(m<sup>2</sup>*s)
 Taux de précipitation du grésil,IPRATE,Surface,kg/(m<sup>2</sup>*s)
 Taux de précipitation totale,TPRATE,Surface,kg/(m<sup>2</sup>*s)
 Température,TMP,2 m au-dessus du niveau du sol,K
+Température,TMP,850 mb,K
+Vitesse de cisaillement vertical,VWSH,850-250 mb,s<sup>-1</sup>
+Vitesse de cisaillement vertical,VWSH,925-700 mb,s<sup>-1</sup>
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,250 mb,m/s
 Vitesse du vent,WIND,850 mb,m/s
+Énergie potentielle convective disponible la plus instable,MUCAPE,Surface,J/kg
