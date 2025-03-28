@@ -130,7 +130,7 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 
 * Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
-* Percentile 10, percentile 25, percentile 75 et percentile 90
+* Percentile 10, percentile 25, percentile 50, percentile 75 et percentile 90
 
 ###### PRMSL
 
@@ -141,7 +141,7 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 * Probabilité au-dessus de 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14, 298,14, 303,14, 308,14 et 313,14 K
 * Probabilité au-dessous de 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14 and 298,14 K
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
-* Percentile 10, percentile 25, percentile 75 et percentile 90
+* Percentile 10, percentile 25, percentile 50, percentile 75 et percentile 90
 
 ###### TCDC
 
@@ -159,6 +159,14 @@ Les fichiers contiennent des produits de probabilité par comptage de membre au-
 * Probabilité au-dessus de 5,5556, 8,3333, 10,278, 11,111, 13,889, 17,222, 18,056, 20,833, 24,444, 25, 27,778 et 32,778 m/s
 * Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne
 * Percentile 10, percentile 25, percentile 75 et percentile 90
+
+###### MUCAPE
+
+* percentile 25, percentile 50 et percentile 75
+
+###### VWSH
+
+* percentile 25, percentile 50 et percentile 75
 
 Note: Une [liste en format XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml) contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.
 

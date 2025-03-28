@@ -129,7 +129,7 @@ The files contain probability products by member counting above or below differe
 
 * Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
-* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+* 10 percentile, 25 percentile, 50 percentile, 75 percentile and 90 percentile
 
 ###### PRMSL
 
@@ -140,7 +140,7 @@ The files contain probability products by member counting above or below differe
 * Probability above 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14, 298.14, 303.14, 308.14 and 313.14 K
 * Probability below 238.14, 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14 and 298.14 K
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
-* 10 percentile, 25 percentile, 75 percentile and 90 percentile
+* 10 percentile, 25 percentile, 50 percentile, 75 percentile and 90 percentile
 
 ###### TCDC
 
@@ -158,6 +158,14 @@ The files contain probability products by member counting above or below differe
 * Probability above 5.5556, 8.3333, 10.278, 11.111, 13.889, 17.222, 18.056, 20.833, 24.444, 25, 27.778 and 32.778 m/s
 * Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean
 * 10 percentile, 25 percentile, 75 percentile and 90 percentile
+
+###### MUCAPE
+
+* 25 percentile, 50 percentile and 75 percentile
+
+###### VWSH
+
+* 25 percentile, 50 percentile and 75 percentile
 
 Note : An [XML list](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml) containing information for all variables, including descriptions and units, in both French and English is available.
 
