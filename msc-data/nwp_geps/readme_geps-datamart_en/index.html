@@ -213,9 +213,9 @@
 </ul>
 <p>where :</p>
 <ul>
-<li><strong>CMC_geps</strong> : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC), the model used (geps: Global Ensemble Prediction System).</li>
-<li><strong>raw</strong> : individual members direct model output</li>
-<li><strong>prob</strong> : probabilistic products created from all members</li>
+<li><strong>CMC_geps</strong> : Constant string indicating that the data is from the Canadian Meteorological Centre (CMC) and the model used (geps: Global Ensemble Prediction System).</li>
+<li><strong>raw</strong> : Individual members direct model output</li>
+<li><strong>prob</strong> : Probabilistic products created from all members</li>
 <li><strong>Resolution</strong> : Constant string indicating the data resolution (0p5x0p5)</li>
 <li><strong>Variable</strong> : Variable type included in this file. To consult a complete list, refer to the variables section.</li>
 <li><strong>LevelType</strong> : Level type. To consult a complete list, refer to the variables section.</li>
@@ -291,7 +291,7 @@
 <ul>
 <li>Probability above 1, 2.5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 and 150 </li>
 <li>Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean</li>
-<li>10 percentile, 25 percentile, 75 percentile and 90 percentile</li>
+<li>10 percentile, 25 percentile, 50 percentile, 75 percentile and 90 percentile</li>
 </ul>
 <h6 id="prmsl">PRMSL</h6>
 <ul>
@@ -302,7 +302,7 @@
 <li>Probability above 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14, 298.14, 303.14, 308.14 and 313.14 K</li>
 <li>Probability below 238.14, 243.14, 248.14, 253.14, 258.14, 263.14, 268.14, 273.14, 278.14, 283.14, 288.14, 293.14 and 298.14 K</li>
 <li>Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean</li>
-<li>10 percentile, 25 percentile, 75 percentile and 90 percentile</li>
+<li>10 percentile, 25 percentile, 50 percentile, 75 percentile and 90 percentile</li>
 </ul>
 <h6 id="tcdc">TCDC</h6>
 <ul>
@@ -320,6 +320,14 @@
 <li>Probability above 5.5556, 8.3333, 10.278, 11.111, 13.889, 17.222, 18.056, 20.833, 24.444, 25, 27.778 and 32.778 m/s</li>
 <li>Minimum (0 percentile), maximum (100th percentile), median (50th percentile), standard deviation and mean</li>
 <li>10 percentile, 25 percentile, 75 percentile and 90 percentile</li>
+</ul>
+<h6 id="mucape">MUCAPE</h6>
+<ul>
+<li>25 percentile, 50 percentile and 75 percentile</li>
+</ul>
+<h6 id="vwsh">VWSH</h6>
+<ul>
+<li>25 percentile, 50 percentile and 75 percentile</li>
 </ul>
 <p>Note : An <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml">XML list</a> containing information for all variables, including descriptions and units, in both French and English is available.</p>
 <h2 id="support">Support</h2>

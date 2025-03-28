@@ -302,7 +302,7 @@ Tourbillon absolu,ABSV,500 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,700 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,850 mb,s<sup>-1</sup>
 Type de précipitation instantanée,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
-Vitesse de cisaillement vertical,VWSH,650 mb,1/s
+Vitesse de cisaillement vertical,VWSH,650 mb,s<sup>-1</sup>
 Vitesse du vent (rafale),GUST,10 m au-dessus du niveau du sol,m/s
 Vitesse du vent,WIND,1 mb,m/s
 Vitesse du vent,WIND,10 m au-dessus du niveau du sol,m/s

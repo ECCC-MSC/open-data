@@ -173,7 +173,7 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>TYPE</strong> : Chaîne de caractères indiquant les membres individuels issus des sorties directes de modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]</li>
+<li><strong>TYPE</strong> : Chaîne de caractères indiquant les membres individuels issus des sorties directes du modèle (pas de traitement) ou les produits probabilistes créés à partir des membres individuels [raw, products]</li>
 <li><strong>raw</strong> : Chaîne de caractères constante indiquant les sorties brutes du modèle</li>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
 <li><strong>hhh</strong> : Heure de prévision [000, 003, 006, ..., 192, 198, 204, ..., 378, 384] et [000, 003, …, 192, 198, 204, ..., 930, 936] chaque lundi et jeudi à 000UTC</li>
@@ -214,9 +214,9 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>CMC_geps</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions, le modèle (geps : Global Ensemble Prediction System).</li>
-<li><strong>raw</strong> : sorties brutes des membres individuels </li>
-<li><strong>prob</strong> : produits probabilistes générés à partir de tous les membres</li>
+<li><strong>CMC_geps</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions du modèle SGPE (geps : Global Ensemble Prediction System).</li>
+<li><strong>raw</strong> : Sorties brutes des membres individuels </li>
+<li><strong>prob</strong> : Produits probabilistes générés à partir de tous les membres</li>
 <li><strong>Resolution</strong> : Chaîne de caractères constante indiquant la résolution des données (0p5x0p5).</li>
 <li><strong>Variable</strong> : Type de variable contenu dans le fichier. Pour voir la liste complète, consultez la section « Description des variables ».</li>
 <li><strong>TypedeNiveau</strong> : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables ».</li>
@@ -292,7 +292,7 @@
 <ul>
 <li>Probabilité au-dessus de 1, 2,5, 5, 10, 15, 20, 25, 30, 40, 50, 75, 100 et 150 kg/(m<sup>2</sup>*s)</li>
 <li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
-<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+<li>Percentile 10, percentile 25, percentile 50, percentile 75 et percentile 90</li>
 </ul>
 <h6 id="prmsl">PRMSL</h6>
 <ul>
@@ -303,7 +303,7 @@
 <li>Probabilité au-dessus de 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14, 298,14, 303,14, 308,14 et 313,14 K</li>
 <li>Probabilité au-dessous de 238,14, 243,14, 248,14, 253,14, 258,14, 263,14, 268,14, 273,14, 278,14, 283,14, 288,14, 293,14 and 298,14 K</li>
 <li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
-<li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+<li>Percentile 10, percentile 25, percentile 50, percentile 75 et percentile 90</li>
 </ul>
 <h6 id="tcdc">TCDC</h6>
 <ul>
@@ -321,6 +321,14 @@
 <li>Probabilité au-dessus de 5,5556, 8,3333, 10,278, 11,111, 13,889, 17,222, 18,056, 20,833, 24,444, 25, 27,778 et 32,778 m/s</li>
 <li>Minimum (percentile 0), maximum (100e percentile), médiane (50e percentile), écart-type et moyenne</li>
 <li>Percentile 10, percentile 25, percentile 75 et percentile 90</li>
+</ul>
+<h6 id="mucape">MUCAPE</h6>
+<ul>
+<li>percentile 25, percentile 50 et percentile 75</li>
+</ul>
+<h6 id="vwsh">VWSH</h6>
+<ul>
+<li>percentile 25, percentile 50 et percentile 75</li>
 </ul>
 <p>Note: Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_geps/geps_element.xml">liste en format XML</a> contenant l'information pour toutes les variables, y compris les descriptions et les unités, en français et en anglais est disponible.</p>
 <h2 id="support">Support</h2>
