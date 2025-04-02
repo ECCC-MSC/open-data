@@ -37,7 +37,7 @@ __Notes__:
 
 Les fichiers ont la nomenclature suivante:
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.hdf5`
+`{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.tif`
 
 où :
 
@@ -50,7 +50,7 @@ où :
 * __RADAR_ID__ : Code de 5 lettres majuscules représentant l'identifiant du radar
 * __SCALE__ : Échelle de conversion utilisée pour mesurer les précipitations, peut être en millimètre par heure (MMHR) ou en centimètre par heure (CMHR)
 * __res__ : Résolution horizontale [1km]
-* __hdf5__ : Chaîne de caractères constante indiquant que le format est HDF5
+* __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF
 
 Exemple:
 
