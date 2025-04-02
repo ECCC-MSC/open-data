@@ -53,15 +53,15 @@ Composite radar nord-américaine [1 km] :
 
 Type de précipitation à la surface du radar nord-américan [1 km]:
 
-* Type de précipitation à la surface du radar [expérimental], ID: `Radar_1km_SfcPrecipType`
-* Couches de la couverture radar dynamique correspondantes [expérimental]:
+* Type de précipitation à la surface du radar, ID: `Radar_1km_SfcPrecipType`
+* Couches de la couverture radar dynamique correspondantes:
     * Couverture, ID: `Radar-Coverage_SfcPrecipType`. ID pour le style WMS inversé: `Radar-Coverage_SfcPrecipType-Inverted`
 
 Extrapolation radar nord-américaine [1 km]:
 
-* Taux de précipitation radar extrapolé pour la pluie [mm/h] [expérimental], ID: `Radar_1km_RainPrecipRate-Extrapolation`
-* Taux de précipitation radar extrapolé pour la neige [mm/h] [expérimental], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
-* Taux de précipitation radar extrapolé [dBZ] [expérimental], ID: `Radar_1km_dBZ-Extrapolation`
+* Taux de précipitation radar extrapolé pour la pluie [mm/h], ID: `Radar_1km_RainPrecipRate-Extrapolation`
+* Taux de précipitation radar extrapolé pour la neige [mm/h], ID: `Radar_1km_SnowPrecipRate-Extrapolation`
+* Taux de précipitation radar extrapolé [dBZ], ID: `Radar_1km_dBZ-Extrapolation`
 
 ### Conseils d'utilisation
 
