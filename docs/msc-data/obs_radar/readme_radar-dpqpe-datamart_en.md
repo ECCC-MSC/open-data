@@ -37,7 +37,7 @@ __Notes__:
 
 Files have the following nomenclature:
 
-`{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.hdf5`
+`{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.tif`
 
 where :
 
@@ -50,7 +50,7 @@ where :
 * __RADAR_ID__: 5-letter uppercase code representing the radar identifier
 * __SCALE__: Conversion scale used to measure precipitation, may be in millimeters per hour (MMHR) or centimeters per hour (CMHR)
 * __res__: Horizontal resolution [1km]
-* __hdf5__ : Constant character string indicating that the format is HDF5
+* __tif__ : Constant character string indicating that the format is GeoTIFF
 
 Example:
 
