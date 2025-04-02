@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.7
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * Remove "experimental" status for SPTP radar product
+* bug fixes:
+    * Typo
+
 ## 2.8.6
 
 * date: 2025-03-28
