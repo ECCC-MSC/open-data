@@ -10,7 +10,7 @@ Le Centre de prévision météorologique et environnementale du Canada (CPMEC) f
 
 Les fichiers des données sont en format NetCDF (NetCDF-4 modèle classique), conformes aux conventions CF liées au climat et aux prévisions (Climate and Forecast Conventions).
 
-Le SRPOG utilise le modèle océan-glace NEMO-CICE et fournit des analyses et prévisions globales de 2 jours de l'océan et de la glace marine, quotidiennement à partir de [00, 06, 12, 18] UTC.
+Le SRPOG est basé sur le modèle glace-océan NEMO-CICE et produit quotidiennement des analyses régionales de la glace de mer et de l'océan ainsi que des prévisions à 2 jours basées sur [00, 06, 12, 18] UTC sur un sous-ensemble de la grille tripolaire globale à résolution 1/12° (ORCA12).
 
 Le SRPOG comprend une analyse 3DVar de la concentration de la glace (assimilant des observations satellitaires et des cartes de glace du service canadien des glaces) alors que les larges échelles de l'analyse océanique sont constraintes en rappelant spectralement les champs de température et de salinité vers ceux du Système global de prévision océan-glace du CCMEP (qui lui inclut un système d'assimilation multivarié qui ingère des observations satellitaires ainsi que des observations in-situ).
 
