@@ -35,11 +35,13 @@ The data can be accessed at the following URLs :
 * [https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw) (forecast members and products at 2.5 degrees)
 * [https://dd.weather.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.weather.gc.ca/model_cansips/100km/forecast) (forecast members and products at 1 degree)
 * [https://dd.weather.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.weather.gc.ca/model_cansips/100km/hindcast) (hindcast)
+* [https://dd.weather.gc.ca/model_cansips/100km/verification/{YYYY}](https://dd.weather.gc.ca/model_cansips/100km/verification) (vérification products at 1 degree)
 
 where :
 
 * __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part.
 * __hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.
+* __verification__ : Constant string indicating that the file contains verification data against observations or reanalyses
 * __100km__ : Indicate a 1 degree resolution (around 100km)
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start [Ex: 2012, 2013, ...]
@@ -85,6 +87,10 @@ The files have the following nomenclature:
 
     * `{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2`
 
+* Verification products:
+
+    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_AGL-2m_LatLon1.0_P{Month}M-P{Month}M.grib2`
+
 where :
 
 * __cansips|CanSIPS__ : Constant string indicating that the data is from the CanSIPS system
@@ -94,7 +100,9 @@ where :
 * __raw__ : Constant string indicating that the file contains raw data without bias correction
 * __VAR__ : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
 * __Var__ : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
+* __Var-Anomaly__ : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
+* __ERA5__ : Constant string indicating that verification products are generated against ECMWF ERA5 reanalysis
 * __LVLTYPE__ : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]
 * __LVL__ : Vertical level value
 * __Level__ : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]
@@ -103,6 +111,7 @@ where :
 * __allmembers__ : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file
 * __PPP__ : Forecast product time length ex: P3M is for a product with forecast a period of 3 months
 * __Month__ : Months concerned from the beginning of the forecast, either 1 month [ex: P07M for December if the beginning of the forecast is May] or several months starting from the beginning of the forecast [ex: P01M-P03M for June to August if the beginning of the forecast is May]
+* __P{Month}M-P{Month}M__ : Three months period covered for the verification
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
 Examples : 
@@ -112,6 +121,8 @@ Examples :
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
+* 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
+* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_AGL-2m_LatLon1.0_P01M-P03M.grib2
 
 ## Internal Structure of the Files
 
