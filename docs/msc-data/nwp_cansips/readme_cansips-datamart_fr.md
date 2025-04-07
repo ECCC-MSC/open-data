@@ -34,11 +34,13 @@ Les données sont accessibles aux adresses suivantes :
 * [https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés)
 * [https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/forecast) (membres et produits de prévision à 1 degré)
 * [https://dd.meteo.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/hindcast) (prévisions rétrospectives)
+* [https://dd.meteo.gc.ca/model_cansips/100km/verification/{YYYY}](https://dd.meteo.gc.ca/model_cansips/100km/verification) (produits de vérification à 1 degré)
 
 où :
 
 * __forecast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast).
 * __hindcast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast).
+* __verification__ : Chaîne de caractères constante indiquant que ce fichier contient des données de vérification contre observations ou réanalyses 
 * __100km__ : Indique une résolution de 1 degré (environ 100km)
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
 * __YYYY__: L’année du début de la prévision [Ex: 2012, 2013, ...]
@@ -84,6 +86,10 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
     * `{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2`
 
+* Produits de vérification:
+
+    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_AGL-2m_LatLon1.0_P{Month}M-P{Month}M.grib2`
+
 où :
 
 * __cansips|CanSIPS__ : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)
@@ -93,7 +99,9 @@ où :
 * __raw__ : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé
 * __VAR__ : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
 * __Var__ : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
+* __Var-Anomaly__ : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
+* __ERA5__ : Chaîne de caractères constante indiquant que les produits de vérification sont générés contre les reanalyses ERA5 de ECMWF
 * __LVLTYPE__ : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]
 * __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]
@@ -102,6 +110,7 @@ où :
 * __allmembers__ : Chaîne de caractères constante indiquant que tous les membres [01, 02, 03, ..., 20] de l’ensemble sont regroupés dans ce fichier
 * __PPP__: Durée du produit (ex: P3M indique un produit pour une prévision d'une période de 3 mois)
 * __Month__ : Mois concernés à partir du début de la prévision, soit 1 mois [ex : P07M pour décembre si le début de la prévision est le mois de mai] ou plusieurs mois à partir du début de la prévision [ex : P01M-P03M pour juin à août si le début de la prévision est le mois de mai]
+* __P{Month}M-P{Month}M__ : Période de 3 mois couverte pour la vérification
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
 
 Exemples de noms de fichier : 
@@ -111,6 +120,8 @@ Exemples de noms de fichier :
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
+* 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
+* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_AGL-2m_LatLon1.0_P01M-P03M.grib2
 
 ## Structure interne des fichiers
 
