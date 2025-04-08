@@ -17,7 +17,9 @@ Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](rea
 
 * __Mode prévision__ : Le système SPIScan est composé de 20 membres d’ensemble provenant de chaque modèle pour un total de 40 membres d’ensemble. Les prévisions mensuelles et les prévisions multi-saisonnières (jusqu’au 12 mois) sont générées en combinant les prévisions produites le dernier jour de chaque mois (membres de l'ensemble 1-10) avec les prévisions émises quatre jours avant (membres de l'ensemble 11-20).
 
-* __Mode prévisions rétrospectives (hindcast)__ : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.   
+* __Mode prévisions rétrospectives (hindcast)__ : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.
+
+* __Mode vérification__ : Afin d'évaluer la performance des prévisions historiques de SPISCan, des prévisions déterministes d'anomalies de température et de précipitations normalisées (au-dessus, en dessous et proches de la normale) sont évaluées globalement, sur une période de trois mois, en les comparant aux anomalies observées (catégories terciles) sur la base des données ERA5 du CEPMMT (ECMWF) pour la même période climatologique.
 
 ## Configuration des prévisions SPISCan 
 
@@ -101,7 +103,7 @@ où :
 * __Var__ : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
 * __Var-Anomaly__ : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
-* __ERA5__ : Chaîne de caractères constante indiquant que les produits de vérification sont générés contre les reanalyses ERA5 de ECMWF
+* __ERA5__ : Chaîne de caractères constante indiquant que les produits de vérification sont générés à partir des reanalyses ERA5 du CEPMMT (ECMWF)
 * __LVLTYPE__ : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]
 * __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]

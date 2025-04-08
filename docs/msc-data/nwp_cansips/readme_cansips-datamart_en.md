@@ -19,6 +19,8 @@ The [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](readme_cansi
 
 * __Hindcast mode__: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1990 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.
 
+* __Verification mode__ : To assess the performance of past CanSIPS forecasts, 3-month deterministic forecasts of normalized temperature and precipitation anomalies (in tercile categories: above, below, and near normal) are evaluated globally by comparing them to observed anomalies (tercile categories) based on the ECMWF ERA5 data for the same climatological period.
+
 ## How is the CanSIPS forecast configured ?
 
 
@@ -102,7 +104,7 @@ where :
 * __Var__ : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
 * __Var-Anomaly__ : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
-* __ERA5__ : Constant string indicating that verification products are generated against ECMWF ERA5 reanalysis
+* __ERA5__ : Constant string indicating that verification products are generated based on ECMWF ERA5 reanalysis
 * __LVLTYPE__ : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]
 * __LVL__ : Vertical level value
 * __Level__ : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]
