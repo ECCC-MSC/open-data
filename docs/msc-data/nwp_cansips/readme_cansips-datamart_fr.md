@@ -19,7 +19,7 @@ Le [Système de prévision interannuelle et saisonnière canadien (SPISCan)](rea
 
 * __Mode prévisions rétrospectives (hindcast)__ : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.
 
-* __Mode vérification__ : Afin d'évaluer la performance des prévisions historiques de SPISCan, des prévisions déterministes d'anomalies de température et de précipitations normalisées (au-dessus, en dessous et proches de la normale) sont évaluées globalement, sur une période de trois mois, en les comparant aux anomalies observées (catégories terciles) sur la base des données ERA5 du CEPMMT (ECMWF) pour la même période climatologique.
+* __Mode vérification__ : Afin d'évaluer la performance des prévisions historiques de SPISCan, des prévisions déterministes d'anomalies de température et de précipitations normalisées (au-dessus, en dessous et proches de la normale) sont évaluées globalement, sur une période de trois mois, en les comparant aux anomalies observées (catégories terciles) basées sur les données ERA5 du CEPMMT (ECMWF) pour la même période climatologique.
 
 ## Configuration des prévisions SPISCan 
 
