@@ -158,17 +158,38 @@ __Ensemble products:__
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS-Products_Variables-List_en.csv");
 </script>
 
-The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.
+__Tercile probability products:__
 
-###### APCP
+The files contain tercile probability values for above, near or below normal categories.  The variables considered are precipitation and temperature. For each of the two variables, there are three files to represent the three tercile probabilities and are described below.
 
-* Probability above 0 kg/(m<sup>2</sup>*s)
-* Minimum (0 percentile), maximum (100th percentile), standard deviation and mean
+* APCP
 
-###### TMP
+    * Probability above the 66.7 percentile threshold (unitless)- often known as Probability of precip being above normal
+    * Minimum (0 percent), maximum (100 percent)
+    * Probability below the 33.3 percentile threshold (unitless)- often known as Probability of precip being below normal
+    * Minimum (0 percent), maximum (100 percent)
+    * Probability between 33.3 and 66.7 percentiles (unitless)  – often known as Probability of precipitation being near normal/climatology
+    * Minimum (0 percent), maximum (100 percent)
 
-* Probability above 0 K
-* Minimum (0 percentile), maximum (100th percentile), standard deviation and mean
+* TMP
+
+    * Probability above the 66.7 percentile threshold (unitless)- often known as Probability of temperature being above normal
+    * Minimum (0 percent), maximum (100 percent)
+    * Probability below the 33.3 percentile threshold (unitless)- often known as Probability of temperature being below normal
+    * Minimum (0 percent), maximum (100 percent)
+    * Probability between 33.3 and 66.7 percentiles (unitless)  – often known as Probability of temperature being near normal/climatology
+    * Minimum (0 percent), maximum (100 percent)
+
+__Exceedance probability products:__
+
+These files contain exceedance probabilities and are available based on nine thresholds, namely:
+
+1.Probability of temperature/precipitation of being above 10 percentile
+2.Probability of temperature/Precipitation of being above 20 percentile
+3.Probability of temperature/Precipitation of being above 30 percentile
+…….
+8. Probability of temperature/Precipitation of being above 80 percentile
+9. Probability of temperature/Precipitation of being above 90 percentile
 
 ## Tips for Computing Anomaly Forecasts
 
