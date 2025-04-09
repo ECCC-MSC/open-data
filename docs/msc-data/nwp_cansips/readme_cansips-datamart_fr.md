@@ -188,7 +188,9 @@ Ces fichiers contiennent les probabilités de dépassement et sont disponibles e
 1. Probabilité que la température/précipitation soit supérieure au 10e percentile
 2. Probabilité que la température/précipitation soit supérieure au 20e percentile
 3. Probabilité que la température/précipitation soit supérieure au 30e percentile
-…….
+
+……
+
 8. Probabilité que la température/précipitation soit supérieure au 80e percentile
 9. Probabilité que la température/précipitation soit supérieure au 90e percentile
 
