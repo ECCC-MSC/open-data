@@ -90,7 +90,7 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
 * Produits de vérification:
 
-    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_AGL-2m_LatLon1.0_P{Month}M-P{Month}M.grib2`
+    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2`
 
 où :
 
@@ -123,7 +123,7 @@ Exemples de noms de fichier :
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 * 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
-* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_AGL-2m_LatLon1.0_P01M-P03M.grib2
+* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2
 
 ## Structure interne des fichiers
 
@@ -159,17 +159,38 @@ __Produits d'ensemble:__
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS-Products_Variables-List_fr.csv");
 </script>
 
-Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.
+__Produits de probabilité terciles__ :
 
-###### APCP
+Les fichiers contiennent des probabilité de terciles pour les catégories supérieures, proches ou inférieures à la normale.  Les variables considérées sont les précipitations et la température. Pour chacune des deux variables, il existe trois fichiers pour représenter les trois probabilités de terciles, décrits ci-dessous.
 
-* Probabilité au-dessus de 0 kg/(m<sup>2</sup>*s)
-* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
+* APCP
 
-###### TMP
+    * Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité de précipitations supérieures à la normale
+    * Minimum (0 %), maximum (100 %)
+    * Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée probabilité de précipitations inférieures à la normale
+    * Minimum (0 %), maximum (100 %)
+    * Probabilité comprise entre 33.3 et 66.7e centiles (sans unité) - souvent appelée probabilité de précipitations proches de la normale/climatologie
+    * Minimum (0 %), maximum (100 %)
 
-* Probabilité au-dessus de 0 K
-* Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne
+* TMP
+
+    * Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité que la température soit supérieure à la normale
+    * Minimum (0 %), maximum (100 %)
+    * Probabilité inférieure au seuil du 33,3e centile (sans unité) - souvent appelée Probabilité que la température soit inférieure à la normale
+    * Minimum (0 %), maximum (100 %)
+    * Probabilité entre les percentiles 33,3 et 66,7 (sans unité) – souvent appelée Probabilité que la température soit proche de la normale/climatologie
+    * Minimum (0 %), maximum (100 %)
+
+__Produits de probabilité de dépassement :__
+
+Ces fichiers contiennent les probabilités de dépassement et sont disponibles en fonction de neuf seuils, soit:
+
+1. Probabilité que la température/précipitation soit supérieure au 10e percentile
+2. Probabilité que la température/précipitation soit supérieure au 20e percentile
+3. Probabilité que la température/précipitation soit supérieure au 30e percentile
+…….
+8. Probabilité que la température/précipitation soit supérieure au 80e percentile
+9. Probabilité que la température/précipitation soit supérieure au 90e percentile
 
 ## Conseils pour calculer les prévisions d'anomalies 
 
