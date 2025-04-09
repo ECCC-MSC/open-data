@@ -184,14 +184,14 @@ __Exceedance probability products:__
 
 These files contain exceedance probabilities and are available based on nine thresholds, namely:
 
-1.Probability of temperature/precipitation of being above 10 percentile
-2.Probability of temperature/Precipitation of being above 20 percentile
-3.Probability of temperature/Precipitation of being above 30 percentile
+1. Probability of temperature/precipitation of being above 10 percentile
+2. Probability of temperature/Precipitation of being above 20 percentile
+3. Probability of temperature/Precipitation of being above 30 percentile
 
 ……
 
-8.Probability of temperature/Precipitation of being above 80 percentile
-9.Probability of temperature/Precipitation of being above 90 percentile
+8. Probability of temperature/Precipitation of being above 80 percentile
+9. Probability of temperature/Precipitation of being above 90 percentile
 
 ## Tips for Computing Anomaly Forecasts
 
