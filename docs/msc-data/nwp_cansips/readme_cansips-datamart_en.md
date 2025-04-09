@@ -91,7 +91,7 @@ The files have the following nomenclature:
 
 * Verification products:
 
-    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_AGL-2m_LatLon1.0_P{Month}M-P{Month}M.grib2`
+    * `{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2`
 
 where :
 
@@ -124,7 +124,7 @@ Examples :
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 * 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
-* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_AGL-2m_LatLon1.0_P01M-P03M.grib2
+* 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2
 
 ## Internal Structure of the Files
 
