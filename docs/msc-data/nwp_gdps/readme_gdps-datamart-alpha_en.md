@@ -12,7 +12,7 @@ The various rules related to the Scribe matrices hinder scientific innovation, d
 
 As part of a larger modernization plan for the Meteorological Service of Canada (MSC), in which the role of the forecaster is evolving, the goal is to replace the Scribe matrices, [available on the MSC Datamart](https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/), and their limited number of points across Canada with [Weather Elements on the Grid](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf) ("WEonG").
 
-Weather Elements on Grid (WEonG) based on the Global Deterministic Prediction System (GDPS) is a post-processing system designed to compute the weather elements required by different forecast programs (public, marine, aviation, air quality, etc.). This system amalgamates numerical and post-processed data using various diagnostic approaches. Hourly concepts are produced from different algorithms using outputs from the [Global Deterministic Prediction System (GDPS)](../readme_gdps_en.md).
+Weather Elements on Grid (WEonG) based on the Global Deterministic Prediction System (GDPS) is a post-processing system designed to compute the weather elements required by different forecast programs (public, marine, aviation, air quality, etc.). This system amalgamates numerical and post-processed data using various diagnostic approaches. Hourly concepts are produced from different algorithms using outputs from the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md).
 
 ## Data Address 
 

@@ -1,0 +1,12 @@
+mkdocs_build_test:
+  image: python:3.10
+  stage: test
+  tags:
+    - mkdocs
+  script:
+    - pip install mkdocs==1.3.0 mkdocs-jupyter==0.20.1 mkdocs-mermaid2-plugin lxml_html_clean
+    - mkdocs build --strict
+  # run job when PR is created
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always

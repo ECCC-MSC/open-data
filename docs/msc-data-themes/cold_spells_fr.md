@@ -58,7 +58,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 * Indice Climatique Thermique Universel (ICTU)</br>
 
 ##### &emsp;<span class="badge badge-info">SHRPD Continental - Éléments du temps sur grille</span>
-###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdpa/readme_hrdps_fr.md)
+###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)
 * Direction du vent
 * Vitesse du vent
 * Rafale de vents

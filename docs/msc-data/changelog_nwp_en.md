@@ -196,7 +196,7 @@ Atmosphere
     * [Regional Deterministic Prediction System (RDPS) 8.0.0](nwp_rdps/changelog_rdps_en.md#wednesday-december-1st-2021)
     * [High Resolution Deterministic Prediction System (HRDPS) 6.0.0](nwp_hrdps/changelog_hrdps_en.md#wednesday-december-1st-2021)
     * [High Resolution Deterministic Prediction System West (HRDPS-W) 1.3.0](nwp_hrdps/changelog_hrdps-west_en.md#wednesday-december-1st-2021)
-    * [High Resolution Deterministic Prediction System North (HRDPS-North) 1.0.0](nwp_hrdps/changelog_hrdps-nord_en.md#wednesday-december-1st-2021)
+    * [High Resolution Deterministic Prediction System North (HRDPS-North) 1.0.0](nwp_hrdps-north/changelog_hrdps-north_en.md#wednesday-december-1st-2021)
     * [Canadian Arctic Prediction System (CAPS) replaced by HRDPS-North](nwp_caps/changelog_caps_en.md#wednesday-december-1st-2021)
     * [Integrated Nowcasting System (INCS) 1.9.0](nwp_nowcasting/changelog_nowcasting_en.md#wednesday-december-1st-2021)
 * Ensemble:

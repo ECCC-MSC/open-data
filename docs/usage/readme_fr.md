@@ -124,7 +124,7 @@ Pour de l'information additionnelle sur les paramètres WMS GetMap, veuillez vou
 
 ### Services web de données brutes
 
-Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../../msc-geomet/readme_fr.md#standards-disponibles).
+Les données brutes du SMC peuvent être récupérées par les [services web GeoMet du SMC](../msc-geomet/readme_fr.md). Ces services web permettent aux usagers de récupérer les données brutes en spécifiant les coordonnées géographiques, la projection cartographique, les dimensions temporelles et en choisissant parmi les formats de données disponibles. Les détails sur les paramètres à spécifier sont disponibles dans la section de la documentation technique sur les [services web](../msc-geomet/readme_fr.md#standards-disponibles).
 
 Les exemples de cas d'utilisation suivants sont disponibles :
 
