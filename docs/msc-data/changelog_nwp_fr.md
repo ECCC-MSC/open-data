@@ -197,7 +197,7 @@ Atmosphère
     * [Système régional de prévision déterministe (SRPD) 8.0.0](nwp_rdps/changelog_rdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système à haute résolution de prévision déterministe (SHRPD) 6.0.0](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système à haute résolution de prévision déterministe ouest (SHRPD-O) 1.3.0](nwp_hrdps/changelog_hrdps-west_fr.md#le-mercredi-1er-decembre-2021)
-    * [Système à haute résolution de prévision déterministe nord (SHRPD-N) 1.0.0](nwp_hrdps/changelog_hrdps-nord_fr.md#le-mercredi-1er-decembre-2021)
+    * [Système à haute résolution de prévision déterministe nord (SHRPD-N) 1.0.0](nwp_hrdps-north/changelog_hrdps-north_fr.md#le-mercredi-1er-decembre-2021)
     * [Système canadien de prévision de l'Arctique (SCPA) expérimental remplacé par le SHRPD-Nord](nwp_caps/changelog_caps_fr.md#le-mercredi-1er-decembre-2021)
     * [Système intégré de prévision immédiate (SIPI) 1.9.0](nwp_nowcasting/changelog_nowcasting_fr.md#le-mercredi-1er-decembre-2021)
 * Ensembliste:

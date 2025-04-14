@@ -125,7 +125,7 @@ For further information regarding these and other WMS GetMap parameters, refer t
 
 ### Raw data web services
 
-Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../../msc-geomet/readme_en.md#available-ogc-standards) section of the technical documentation.
+Raw MSC data can be retrieved from the [MSC GeoMet web services](../msc-geomet/readme_en.md). These web services allow users to retrieve raw data by specifying the geographic coordinates, the cartographic projection, the temporal dimensions and choose amongst available data formats. Details on the available parameters are provided in the [web services](../msc-geomet/readme_en.md#available-ogc-standards) section of the technical documentation.
 
 The following use case examples are provided:
 

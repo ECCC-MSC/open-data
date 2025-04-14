@@ -18,7 +18,7 @@ Principaux changements :
 * Le modèle couplé GEM-NEMO 5.1 est remplacé par GEM-NEMO 5.2
 * La taille de l'ensemble de la prévision est doublé (de 20 à 40 membres) en utilisant une combinaison des prévisions usuelles et des prévision initialisées quatre jours avant.
 * Dans CanESM5, une nouvelle correction de biais à été introduite.
-* L'initialisation de conditions de surface de GEM-NEMO provient maintenant du [Système global de prévision déterministe (SGPD)](./nwp_gdps/readme_gdps_fr.md) après un ajustement vers la climatologie du modèle. Dans la version précédente, l'initialisation provenait de processus hors-ligne. 
+* L'initialisation de conditions de surface de GEM-NEMO provient maintenant du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) après un ajustement vers la climatologie du modèle. Dans la version précédente, l'initialisation provenait de processus hors-ligne.
 
 Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est [disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_cansips-300_f.pdf).
 

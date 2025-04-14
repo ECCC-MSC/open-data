@@ -18,7 +18,7 @@ nav:
         - WMO WIS2 /<br>WIS2 de l'OMM: wmo-wis2/readme_en.md
     - Usage and tutorials / <br>Utilisation et tutoriels:
         - Usage overview/<br>Aperçu de l'utilisation: usage/readme_en.md
-        - Access tutorials /<br>Accéder aux tutoriels: usage/tutorials_en/
+        - Access tutorials /<br>Accéder aux tutoriels: usage/tutorials_en.md
         - WMS technical doc /<br>Doc technique du WMS: msc-geomet/wms_en.md
         - WCS technical doc /<br>Doc technique du WCS: msc-geomet/wcs_en.md
         - OGC API technical doc /<br>Doc technique de l'OGC API: msc-geomet/ogc_api_en.md
