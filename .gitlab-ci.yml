@@ -8,5 +8,5 @@ mkdocs_build:
     - mkdocs build --strict
   # run job when PR is created
   rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_PIPELINE_SOURCE == "push" || $CI_PIPELINE_SOURCE == "merge_request_event"'
       when: always
