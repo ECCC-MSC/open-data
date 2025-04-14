@@ -1,6 +1,6 @@
-mkdocs_build_test:
+mkdocs_build:
   image: python:3.10
-  stage: test
+  stage: build
   tags:
     - mkdocs
   script:
