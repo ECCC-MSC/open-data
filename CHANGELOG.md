@@ -12,11 +12,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.8.7
 
-* date: 
+* date: 2025-04-15 
 * announcements:
     * Not announced
 * new content:
-    * NA
+    * Add Windchill in HRDPS variable table
+    * Update GEPS, GDPS and HRDPS changelogs
+    * Update CanSIPS Datamart page with verification product addition 
 * improvements:
     * Remove "experimental" status for SPTP radar product
 * bug fixes:

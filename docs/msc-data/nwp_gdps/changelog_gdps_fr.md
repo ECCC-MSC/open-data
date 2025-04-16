@@ -6,6 +6,27 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mercredi 2 avril 2025
+
+### Mise à jour technique des systèmes d'assimilation atmosphérique
+
+Le mercredi 2 avril 2025, à compter de la passe de 0600UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 9.0.0 de son Système global de prévision déterministe (SGPD).
+
+Seule la composante de l'assimilation des données a été modifiée avec:
+
+* Modification au schéma d'écrémage des observations SSMIS résultant en une augmentation du nombre de données assimilées
+* Correction à l'angle azimuthal pour le calcul de la trajectoire oblique des radiances AMSUA et MHS.
+
+## Le lundi 3 mars 2025
+
+### Correction au traitement des observations TropOMI de colonne totale d'ozone 
+
+Le lundi 3 mars 2025,  à compter de la passe de 0600UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 9.0.0 de son Système global de prévision déterministe (SGPD).
+
+Seule la composante de l'assimilation des données a été modifiée avec:
+
+* Augmentation de l'écrémage des données TropOMI de colonne totale d'ozone.
+
 ## Le mercredi 23 octobre 2024
 
 ### Ajout de nouvelles sources d’observations satellitaires dans le SGPD

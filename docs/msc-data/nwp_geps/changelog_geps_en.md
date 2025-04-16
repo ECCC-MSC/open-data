@@ -6,6 +6,17 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Wednesday April 2, 2025
+
+### Technical update of atmospheric data assimilation systems
+
+On Wednesday April 2nd, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.0.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified:
+
+* Different thinning scheme for SSMIS satellite observations allowing for more data assimilated
+* Correction to the azimuth angle for slant-path computation for AMSUA and MHS radiances
+
 ## Wednesday October 23, 2024
 
 #### Addition of new satellite observation sources in the GEPS
