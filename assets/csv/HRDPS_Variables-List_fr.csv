@@ -104,6 +104,7 @@ Direction du vent (d'où il souffle),WDIR,950 mb,Degree true
 Direction du vent (d'où il souffle),WDIR,970 mb,Degree true
 Direction du vent (d'où il souffle),WDIR,985 mb,Degree true
 Eau précipitable,CWAT,Colonne atmosphérique,kg/m<sup>2</sup>
+Indice de refroidissement éolien,WCF,Surface,K
 Flux net d'ondes courtes (surface),NSWRS,Surface,W/m<sup>2</sup>
 Flux net d'ondes longues (surface),NLWRS,Surface,W/m<sup>2</sup>
 Flux net de chaleur latente,LHTFL,Surface,W/m<sup>2</sup>

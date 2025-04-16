@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme radar visibility datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WIS2 de l'OMM</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#produits-de-visibilite-des-radars-meteorologiques-canadiens" class="nav-link">Produits de visibilité des radars météorologiques canadiens</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers" class="nav-link">Nomenclature des noms de fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#contenu-des-donnees" class="nav-link">Contenu des données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#notes-et-utilisation" class="nav-link">Notes et utilisation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_radar-visibility-datamart_en/">In English</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_radar_fr/">Données et produits radar</a> &gt; Produits de visibilité radar sur le Datamart du SMC</p>
+<h1 id="produits-de-visibilite-des-radars-meteorologiques-canadiens">Produits de visibilité des radars météorologiques canadiens</h1>
+<p>Les éoliennes peuvent contaminer les données des radars météorologiques, ce qui peut compromettre la capacité d'Environnement et changement climatique Canada (ECCC) à fournir des prévisions et des avertissements météorologiques de qualité aux Canadiens.</p>
+<p>Afin d'appuyer les <a href="https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/apercu-radars/interference-eoliennes/lignes-directrices-concernant-lemplacement-des-eoliennes-et-des-radars-meteorologiques.html">lignes directrices d'ECCC concernant les emplacements des parcs éoliens et des radars météorologiques</a>, des couches de visibilité de radars météorologiques ont été créées pour des hauteurs de surface de 150, 200 et 250 mètres au-dessus du sol (mAGL). Ceci correspond aux hauteurs typiques passées et présentes des éoliennes (de la base à la pointe ou au total) ainsi qu'aux hauteurs potentielles futures de celles-ci, compte tenu la tendance actuelle.</p>
+<p>Ces couches de visibilité ont été générées à partir d'une analyse de cônes de visibilité utilisant les 32 radars météorologiques opérationnels en bande S d'ECCC comme observateurs et les trois hauteurs susmentionnées comme décalages de surface.</p>
+<p>Au sein de ces couches de visibilité, les turbines de hauteurs de 150, 200 et 250 mAGL sont susceptibles d'être visibles par les radars météorologiques opérationnels d'ECCC et ont donc le potentiel de contaminer les données des radars météorologiques. Une couche de points comprenant les coordonnées des radars et une couche de polygones contenant les zones tampons de 10 et 60 kilomètres de rayon entourant chaque radar et délimitant les zones d'impact des turbines sur ces derniers sont également incluses dans cet ensemble de données.</p>
+<h2 id="adresse-des-donnees">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.</p>
+<p>Les données sont disponibles à l'adresse :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/radar/visibility">https://dd.meteo.gc.ca/radar/visibility</a></li>
+</ul>
+<p><strong>Note</strong>:</p>
+<p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/radars_list.pdf">liste des sites radar</a> est disponible. Cette liste est mise à jour régulièrement.</p>
+<h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
+<p>Les fichiers suivent la nomenclature suivante :</p>
+<ul>
+<li><code>{YYYYMMDD}_MSC_Radar-Viewsheds_AGL-{height}.json</code></li>
+<li><code>{YYYYMMDD}_MSC_Radar-ImpactZones.json</code></li>
+</ul>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour de production des données [20250113]</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>Radar-Viewsheds</strong> : Chaîne de caractères constante indiquant que les données contiennent des couches de visibilité de radar météorologiques</li>
+<li><strong>Radar-ImpactZones</strong> : Chaîne de caractères constante indiquant que les données contiennent des couches de points et polygones délimitant les zones d'impacts des turbines</li>
+<li><strong>AGL-{height}</strong> : Hauteur de surface au-dessus du sol [150m, 200m, 250m]</li>
+<li><strong>json</strong> : Chaîne de caractères constante indiquant que le format est GeoJSON</li>
+</ul>
+<p>Exemples:</p>
+<ul>
+<li>20250113_MSC_Radar-Viewsheds_AGL-150m.json</li>
+<li>20250113_MSC_Radar-ImpactZones.json</li>
+</ul>
+<h2 id="contenu-des-donnees">Contenu des données</h2>
+<p><strong>Couches de visibilité radar</strong></p>
+<p>Le jeu de données de visibilité radar contient des polygones non projetés illustrant les emplacements à 150, 200 et 250 mAGL de hauteur de surface susceptibles d'être visibles par les 32 radars météorologiques opérationnels en bande S d'ECCC. À l’intérieur de ces couches de visibilité, les turbines d'une hauteur de 150, 200 et 250 mAGL sont susceptibles d'être visibles par les radars météorologiques opérationnels d'ECCC et donc de contaminer les données des radars météorologiques.</p>
+<p>Il convient de noter que ces couches de visibilité ont été générées à l'aide d'un simple outil de visualisation et que les résultats peuvent donc ne pas être tout à fait exacts en raison des limites des données et/ou de l'outil. Il est possible que, dans certains cas, les turbines soient visibles ou non par les radars d'ECCC, bien qu'elles se trouvent à l'intérieur ou à l'extérieur de ces couches de visibilité. ECCC devrait être consulté sur toutes propositions de parcs éoliens au Canada le plus tôt possible dans la phase de planification du projet.</p>
+<p><strong>Zones d'impact radar</strong></p>
+<p>Le jeu de données des zones d'impact radar contient des polygones non projetés illustrant les zones tampons de 10 et 60 km de rayon autour des 32 radars météorologiques opérationnels en bande S d'ECCC. La zone tampon de 10 km de rayon entourant chaque radar représente la "zone d'impact certain" où des impacts significatifs sur le radar sont attendus, et où les éoliennes ne devraient donc pas être construites.</p>
+<p>Les éoliennes se trouvant entre les zones tampons de 10 km et 60 km de rayon (la "zone d'impact modéré") sont plus susceptibles d'avoir un impact modéré à significatif sur le radar si elles y sont construites.</p>
+<p>Les éoliennes situées à l'extérieur de ces zones tampons de 60 km et des couches de visibilité radar sont moins susceptibles d'avoir des impacts significatifs sur le radar.</p>
+<p>Cependant, ECCC doit être consulté sur toutes propositions de parcs éoliens au Canada le plus tôt possible au cours de la phase de planification du projet, car des impacts peuvent encore se réaliser dans de rares cas.</p>
+<h2 id="notes-et-utilisation">Notes et utilisation</h2>
+<p>Lors de l'utilisation des données décrites dans ce document, il est important de comprendre leur objectif, leurs limites et la façon dont elles interagissent avec d'autres ensembles de données radar, en particulier dans le contexte des interférences potentielles dues aux éoliennes. Vous trouverez ci-dessous des points importants à considérer lors de l'interprétation et de l'utilisation de ces données :</p>
+<ul>
+<li>
+<p><strong>Avertissement</strong> : les couches de visibilité radar ont été générées à l'aide d'un simple outil de visualisation et les résultats peuvent donc ne pas être tout à fait exacts en raison des limites inhérentes aux données et/ou à l'outil. Dans certains cas, les turbines peuvent être visibles ou non par les radars d'ECCC, bien qu'elles se trouvent à l'intérieur ou à l'extérieur de ces couches de visibilité. Il convient également de noter que les données fournies ne le sont qu'à titre informatif. Bien que des efforts aient été déployés pour assurer l'exactitude, l'exhaustivité et la fiabilité des données, aucune garantie, expresse ou implicite, n'est donnée à leur sujet. L'utilisation de ces données se fait à vos propres risques, et nous déclinons toute responsabilité pour tout dommage ou perte résultant de leur utilisation. Pour toute question ou commentaire concernant cet ensemble de données, veuillez nous contacter à l'adresse suivante : radarsmeteo-weatherradars@ec.gc.ca. ECCC devrait être consulté pour toute proposition de parc éolien au Canada le plus tôt possible lors de la phase de planification du projet.</p>
+</li>
+<li>
+<p><strong>Objectif</strong> : Les couches de visibilité radar ont été créées pour indiquer les endroits où les éoliennes, dont la hauteur de la base à la pointe (ou la hauteur totale) est égale à 150, 200 et 250 mAGL, sont susceptibles d'être visibles par les radars météorologiques opérationnels en bande S d'ECCC et par conséquent, de contaminer les données de ceux-ci. Ces couches de visibilité ont été générées à l'aide d'une analyse de cônes de vue, qui prend en compte la ligne de visée entre les radars et les emplacements potentiels des éoliennes.</p>
+</li>
+<li>
+<p><strong>Interprétation des données</strong> : Il est important de noter que les couches de visibilité ont été générées à l'aide d'un simple outil de visualisation. Cela signifie que l'impact réel des éoliennes sur les données radar peut être différent de ce que la couche de visibilité suggère. Les couches de visibilité doivent être considérées comme un outil d'analyse préliminaire permettant d'identifier des zones potentiellement à risque, plutôt que comme une indication définitive de l'interférence des éoliennes avec les données radar.</p>
+</li>
+<li>
+<p><strong>Utilisation avec des données radar traitées</strong> : Lorsque vous superposez les couches de visibilité radar avec des produits radar traités par ECCC et disponibles sur les plateformes GeoMet du SMC, Datamart du SMC, MétéoCA et meteo.gc.ca, soyez conscient que les données radar que vous visualisez peuvent avoir été traitées pour supprimer les échos autres que météorologiques, y compris ceux des éoliennes, dans la mesure du possible. Ceci est particulièrement important car les systèmes de production de données radar intègrent souvent des algorithmes pour filtrer ces contaminations afin de garantir que les données présentées sont aussi propres et précises que possible.</p>
+</li>
+<li>
+<p><strong>Éviter les erreurs d'interprétation</strong> : Les couches de visibilité ne doivent pas être interprétées comme un indicateur direct de la contamination des données radar, mais plutôt comme un moyen de comprendre où des interférences sont possibles. Les utilisateurs doivent éviter de supposer que toutes les zones situées dans les couches de visibilité présenteront des échos d'éoliennes dans les données radar. Inversement, l'absence d'échos d'éoliennes dans les données radar traitées ne signifie pas que les éoliennes n'affectent pas le radar.</p>
+</li>
+<li>
+<p><strong>Applications pratiques</strong> : En termes pratiques, les couches de visibilité radar sont utilisées à meilleur escient en conjonction avec d'autres ensembles de données et outils d'analyse. Par exemple, si un nouveau parc éolien est prévu dans une zone où l'on s'attend à ce que les turbines soient visibles par les radars, des analyses supplémentaires devraient être menées pour mieux modéliser et simuler les impacts potentiels (si possible), y compris l'examen de données radar brutes pour vérifier s'il y a présence d'échos de turbines.</p>
+</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>Pour toute question relative à ces données, <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">merci de nous contacter</a></p>
+<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

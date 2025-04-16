@@ -193,7 +193,10 @@
 <p><strong>Mode prévision</strong> : Le système SPIScan est composé de 20 membres d’ensemble provenant de chaque modèle pour un total de 40 membres d’ensemble. Les prévisions mensuelles et les prévisions multi-saisonnières (jusqu’au 12 mois) sont générées en combinant les prévisions produites le dernier jour de chaque mois (membres de l'ensemble 1-10) avec les prévisions émises quatre jours avant (membres de l'ensemble 11-20).</p>
 </li>
 <li>
-<p><strong>Mode prévisions rétrospectives (hindcast)</strong> : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.   </p>
+<p><strong>Mode prévisions rétrospectives (hindcast)</strong> : La climatologie de SPIScan est basée sur un série de prévisions en mode rétrograde (ex. prévisions historiques) couvrant la période de 1990 à 2020. Cette climatologie est très utile pour l’interprétation des prévisions réalistes car les anomalies de prévision en temps réel sont générées à la place des prévisions brutes.</p>
+</li>
+<li>
+<p><strong>Mode vérification</strong> : Afin d'évaluer la performance des prévisions historiques de SPISCan, des prévisions déterministes d'anomalies de température et de précipitations normalisées (au-dessus, en-dessous et proches de la normale) sont évaluées globalement, sur une période de trois mois, en les comparant aux anomalies observées (catégories terciles) basées sur les données ERA5 du CEPMMT (ECMWF) pour la même période climatologique.</p>
 </li>
 </ul>
 <h2 id="configuration-des-previsions-spiscan">Configuration des prévisions SPISCan</h2>
@@ -206,11 +209,13 @@
 <li><a href="https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (membres et produits de prévision à 2.5 degrés)</li>
 <li><a href="https://dd.meteo.gc.ca/model_cansips/100km/forecast">https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (membres et produits de prévision à 1 degré)</li>
 <li><a href="https://dd.meteo.gc.ca/model_cansips/100km/hindcast">https://dd.meteo.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/</a> (prévisions rétrospectives)</li>
+<li><a href="https://dd.meteo.gc.ca/model_cansips/100km/verification">https://dd.meteo.gc.ca/model_cansips/100km/verification/{YYYY}</a> (produits de vérification à 1 degré)</li>
 </ul>
 <p>où :</p>
 <ul>
 <li><strong>forecast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast).</li>
 <li><strong>hindcast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast).</li>
+<li><strong>verification</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données de vérification contre observations ou réanalyses </li>
 <li><strong>100km</strong> : Indique une résolution de 1 degré (environ 100km)</li>
 <li><strong>MM</strong> : Le mois du début de la prévision [01, 02, 03, ..., 12]</li>
 <li><strong>YYYY</strong>: L’année du début de la prévision [Ex: 2012, 2013, ...]</li>
@@ -294,6 +299,12 @@
 <li><code>{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code></li>
 </ul>
 </li>
+<li>
+<p>Produits de vérification:</p>
+<ul>
+<li><code>{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2</code></li>
+</ul>
+</li>
 </ul>
 <p>où :</p>
 <ul>
@@ -304,7 +315,9 @@
 <li><strong>raw</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé</li>
 <li><strong>VAR</strong> : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
 <li><strong>Var</strong> : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
+<li><strong>Var-Anomaly</strong> : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]</li>
 <li><strong>StatProcess</strong> : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
+<li><strong>ERA5</strong> : Chaîne de caractères constante indiquant que les produits de vérification sont générés à partir des reanalyses ERA5 du CEPMMT (ECMWF)</li>
 <li><strong>LVLTYPE</strong> : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]</li>
 <li><strong>LVL</strong> : Valeur du niveau vertical</li>
 <li><strong>Level</strong> : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]</li>
@@ -313,6 +326,7 @@
 <li><strong>allmembers</strong> : Chaîne de caractères constante indiquant que tous les membres [01, 02, 03, ..., 20] de l’ensemble sont regroupés dans ce fichier</li>
 <li><strong>PPP</strong>: Durée du produit (ex: P3M indique un produit pour une prévision d'une période de 3 mois)</li>
 <li><strong>Month</strong> : Mois concernés à partir du début de la prévision, soit 1 mois [ex : P07M pour décembre si le début de la prévision est le mois de mai] ou plusieurs mois à partir du début de la prévision [ex : P01M-P03M pour juin à août si le début de la prévision est le mois de mai]</li>
+<li><strong>P{Month}M-P{Month}M</strong> : Période de 3 mois couverte pour la vérification</li>
 <li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2</li>
 </ul>
 <p>Exemples de noms de fichier : </p>
@@ -322,6 +336,8 @@
 <li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2</li>
+<li>202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2</li>
+<li>202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2</li>
 </ul>
 <h2 id="structure-interne-des-fichiers">Structure interne des fichiers</h2>
 <p>La structure interne des fichiers des prévisions et prévisions rétrospectives (hindcast) est décrite ci-dessous. </p>
@@ -351,17 +367,44 @@
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS-Products_Variables-List_fr.csv");
 </script>
 
-<p>Les fichiers contiennent des produits de probabilité par comptage de membre au-dessus ou au-dessous de différents seuils, des percentiles , moyennes, médianes et écarts-types. Notez que les produits et les seuils sont définis dans la méta-information des fichiers. Les produits suivants sont disponibles pour chacune des variables mentionnées ci-dessous.</p>
-<h6 id="apcp">APCP</h6>
+<p><strong>Produits de probabilité terciles</strong> :</p>
+<p>Les fichiers contiennent des probabilité de terciles pour les catégories supérieures, proches ou inférieures à la normale.  Les variables considérées sont les précipitations et la température. Pour chacune des deux variables, il existe trois fichiers pour représenter les trois probabilités de terciles, décrits ci-dessous.</p>
 <ul>
-<li>Probabilité au-dessus de 0 kg/(m<sup>2</sup>*s)</li>
-<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
-</ul>
-<h6 id="tmp">TMP</h6>
+<li>
+<p>APCP</p>
 <ul>
-<li>Probabilité au-dessus de 0 K</li>
-<li>Minimum (percentile 0), maximum (100e percentile), écart-type et moyenne</li>
+<li>Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité de précipitations supérieures à la normale</li>
+<li>Minimum (0 %), maximum (100 %)</li>
+<li>Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée probabilité de précipitations inférieures à la normale</li>
+<li>Minimum (0 %), maximum (100 %)</li>
+<li>Probabilité comprise entre 33.3 et 66.7e centiles (sans unité) - souvent appelée probabilité de précipitations proches de la normale/climatologie</li>
+<li>Minimum (0 %), maximum (100 %)</li>
 </ul>
+</li>
+<li>
+<p>TMP</p>
+<ul>
+<li>Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité que la température soit supérieure à la normale</li>
+<li>Minimum (0 %), maximum (100 %)</li>
+<li>Probabilité inférieure au seuil du 33,3e centile (sans unité) - souvent appelée Probabilité que la température soit inférieure à la normale</li>
+<li>Minimum (0 %), maximum (100 %)</li>
+<li>Probabilité entre les percentiles 33,3 et 66,7 (sans unité) – souvent appelée Probabilité que la température soit proche de la normale/climatologie</li>
+<li>Minimum (0 %), maximum (100 %)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Produits de probabilité de dépassement :</strong></p>
+<p>Ces fichiers contiennent les probabilités de dépassement et sont disponibles en fonction de neuf seuils, soit:</p>
+<ol>
+<li>Probabilité que la température/précipitation soit supérieure au 10e percentile</li>
+<li>Probabilité que la température/précipitation soit supérieure au 20e percentile</li>
+<li>Probabilité que la température/précipitation soit supérieure au 30e percentile</li>
+</ol>
+<p>……</p>
+<ol>
+<li>Probabilité que la température/précipitation soit supérieure au 80e percentile</li>
+<li>Probabilité que la température/précipitation soit supérieure au 90e percentile</li>
+</ol>
 <h2 id="conseils-pour-calculer-les-previsions-danomalies">Conseils pour calculer les prévisions d'anomalies</h2>
 <p>Il est recommandé d'utiliser directement les prévisions d'anomalies plutôt que les prévisions de données brutes. Les prévisions d'anomalies pour certains mois ou saisons peuvent être obtenues par la soustraction de la climatologie modélisée pour ce mois ou saison. La recette suivante peut être utilisée pour calculer la prévision d'anomalie :</p>
 <p>Pour la prévision d'un mois en particulier (ex. 2016-02) on commence par la création d'un fichier de moyenne d'ensemble, et pour cet exemple, on peut nommer ce fichier ensm_for_02_2016. Ce fichier contient maintenant 12 enregistrements temporels car la moyenne de 40 ensembles a été calculée. L'enregistrement temporel de ce fichier commence le mois 02 de l'année 2016 et va jusqu'au mois 01 de l'année 2017.</p>

@@ -249,6 +249,7 @@ Vertical velocity (pressure),VVEL,850 mb,Pa/s
 Visibility Through Ice Fog,VISIFG,2 m Above Ground Level,m
 Visibility Through Liquid Fog,VISLFG,2 m Above Ground Level,m
 Water/land mask,WTRLANMASK,Surface,Fraction
+Wind chill index,WCF,Surface,K
 Wind direction (from which blowing),WDIR,10 m Above Ground Level,Degree true
 Wind direction (from which blowing),WDIR,100 mb,Degree true
 Wind direction (from which blowing),WDIR,1000 mb,Degree true

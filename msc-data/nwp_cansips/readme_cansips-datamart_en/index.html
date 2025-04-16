@@ -195,6 +195,9 @@
 <li>
 <p><strong>Hindcast mode</strong>: CanSIPS climatology is based on a series of retrograde forecasts (e. g. historical forecasts) covering the period 1990 to 2020. This climatology is very useful for interpreting realistic forecasts because real-time forecast anomalies are generated instead of raw forecasts.</p>
 </li>
+<li>
+<p><strong>Verification mode</strong> : To assess the performance of past CanSIPS forecasts, 3-month deterministic forecasts of normalized temperature and precipitation anomalies (in tercile categories: above, below, and near normal) are evaluated globally by comparing them to observed anomalies (tercile categories) based on the ECMWF ERA5 data for the same climatological period.</p>
+</li>
 </ul>
 <h2 id="how-is-the-cansips-forecast-configured">How is the CanSIPS forecast configured ?</h2>
 <p>In CanSIPSv3, the ensemble size of the forecast has been increased from 20 members to 40 members (20 GEM-NEMO members + 20 CanESM5 members). This is achieved by combining the forecasts initialized on the last day of the month with the forecasts initialized four days prior to that.  For each model, a 12-month forecast is produced with the first 10 members of each model obtained from the last day of the month and the second set of 10 members from the forecasts initialized four days prior to that.  When the ensemble forecasts are completed, we construct seasonal mean anomalies with respect to the 30-year hindcasts for each ensemble member. Subsequently we implement deterministic (ensemble mean) and probabilistic (different categories with respect to the ensemble size) approaches to forecast the upcoming seasons. </p>
@@ -206,11 +209,13 @@
 <li><a href="https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw">https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (forecast members and products at 2.5 degrees)</li>
 <li><a href="https://dd.weather.gc.ca/model_cansips/100km/forecast">https://dd.weather.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (forecast members and products at 1 degree)</li>
 <li><a href="https://dd.weather.gc.ca/model_cansips/100km/hindcast">https://dd.weather.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/</a> (hindcast)</li>
+<li><a href="https://dd.weather.gc.ca/model_cansips/100km/verification">https://dd.weather.gc.ca/model_cansips/100km/verification/{YYYY}</a> (vérification products at 1 degree)</li>
 </ul>
 <p>where :</p>
 <ul>
 <li><strong>forecast</strong> : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part.</li>
 <li><strong>hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part.</li>
+<li><strong>verification</strong> : Constant string indicating that the file contains verification data against observations or reanalyses</li>
 <li><strong>100km</strong> : Indicate a 1 degree resolution (around 100km)</li>
 <li><strong>MM</strong> : Month of the forecast start [01, 02, 03, ..., 12]</li>
 <li><strong>YYYY</strong> : Year of the forecast start [Ex: 2012, 2013, ...]</li>
@@ -294,6 +299,12 @@
 <li><code>{YYYYMM}_MSC_CanSIPS-Hindcast_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code></li>
 </ul>
 </li>
+<li>
+<p>Verification products:</p>
+<ul>
+<li><code>{YYYYMM}_MSC_CanSIPS_{Var-Anomaly}-ERA5_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2</code></li>
+</ul>
+</li>
 </ul>
 <p>where :</p>
 <ul>
@@ -304,7 +315,9 @@
 <li><strong>raw</strong> : Constant string indicating that the file contains raw data without bias correction</li>
 <li><strong>VAR</strong> : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
 <li><strong>Var</strong> : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
+<li><strong>Var-Anomaly</strong> : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]</li>
 <li><strong>StatProcess</strong> : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
+<li><strong>ERA5</strong> : Constant string indicating that verification products are generated based on ECMWF ERA5 reanalysis</li>
 <li><strong>LVLTYPE</strong> : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]</li>
 <li><strong>LVL</strong> : Vertical level value</li>
 <li><strong>Level</strong> : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]</li>
@@ -313,6 +326,7 @@
 <li><strong>allmembers</strong> : Constant string indicating that all members [01, 02, 03, ..., 20] are grouped into the file</li>
 <li><strong>PPP</strong> : Forecast product time length ex: P3M is for a product with forecast a period of 3 months</li>
 <li><strong>Month</strong> : Months concerned from the beginning of the forecast, either 1 month [ex: P07M for December if the beginning of the forecast is May] or several months starting from the beginning of the forecast [ex: P01M-P03M for June to August if the beginning of the forecast is May]</li>
+<li><strong>P{Month}M-P{Month}M</strong> : Three months period covered for the verification</li>
 <li><strong>grib2</strong> : Constant string indicating the GRIB2 format is used</li>
 </ul>
 <p>Examples : </p>
@@ -322,6 +336,8 @@
 <li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2</li>
+<li>202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2</li>
+<li>202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2</li>
 </ul>
 <h2 id="internal-structure-of-the-files">Internal Structure of the Files</h2>
 <p>The internal structure of the forecast and hindcast files is the following : </p>
@@ -350,17 +366,44 @@
   loadTable("csv-prob-table", "../../../assets/csv/CanSIPS-Products_Variables-List_en.csv");
 </script>
 
-<p>The files contain probability products by member counting above or below different thresholds, percentiles, means, medians and standard deviations. Note that products and thresholds are defined in the file metadata. The following products are available for each of the variables listed below.</p>
-<h6 id="apcp">APCP</h6>
+<p><strong>Tercile probability products:</strong></p>
+<p>The files contain tercile probability values for above, near or below normal categories.  The variables considered are precipitation and temperature. For each of the two variables, there are three files to represent the three tercile probabilities and are described below.</p>
 <ul>
-<li>Probability above 0 kg/(m<sup>2</sup>*s)</li>
-<li>Minimum (0 percentile), maximum (100th percentile), standard deviation and mean</li>
-</ul>
-<h6 id="tmp">TMP</h6>
+<li>
+<p>APCP</p>
 <ul>
-<li>Probability above 0 K</li>
-<li>Minimum (0 percentile), maximum (100th percentile), standard deviation and mean</li>
+<li>Probability above the 66.7 percentile threshold (unitless)- often known as Probability of precip being above normal</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
+<li>Probability below the 33.3 percentile threshold (unitless)- often known as Probability of precip being below normal</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
+<li>Probability between 33.3 and 66.7 percentiles (unitless)  – often known as Probability of precipitation being near normal/climatology</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
 </ul>
+</li>
+<li>
+<p>TMP</p>
+<ul>
+<li>Probability above the 66.7 percentile threshold (unitless)- often known as Probability of temperature being above normal</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
+<li>Probability below the 33.3 percentile threshold (unitless)- often known as Probability of temperature being below normal</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
+<li>Probability between 33.3 and 66.7 percentiles (unitless)  – often known as Probability of temperature being near normal/climatology</li>
+<li>Minimum (0 percent), maximum (100 percent)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exceedance probability products:</strong></p>
+<p>These files contain exceedance probabilities and are available based on nine thresholds, namely:</p>
+<ol>
+<li>Probability of temperature/precipitation of being above 10 percentile</li>
+<li>Probability of temperature/Precipitation of being above 20 percentile</li>
+<li>Probability of temperature/Precipitation of being above 30 percentile</li>
+</ol>
+<p>……</p>
+<ol>
+<li>Probability of temperature/Precipitation of being above 80 percentile</li>
+<li>Probability of temperature/Precipitation of being above 90 percentile</li>
+</ol>
 <h2 id="tips-for-computing-anomaly-forecasts">Tips for Computing Anomaly Forecasts</h2>
 <p>It is recommended to use anomaly forecasts instead of the raw forecasts. Anomaly forecasts can be obtained by subtracting from the forecast a climatology based on the hindcasts. The recipe is as follows for a given variable:</p>
 <p>For a specific forecast month (e.g. 2016-02) an ensemble mean file needs to be created and we can call it ensm_for_02_2016 for the purpose of this example. This file now contains only 12 temporal records since the mean of 40 ensemble members is performed. The temporal record of this file starts in the month 02 of the year 2016 and stretches until the month 01 of the year 2017.</p>

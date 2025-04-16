@@ -160,7 +160,7 @@
 <p>The DPQPE product is built, among other things, on the basis of a series of polarimetric processing steps, which serve primarily as quality control measures to remove non-meteorological artifacts from the raw data. In addition, there is a hybrid option in the DPQPE product designed to fill gaps in precipitation data resulting from radar signal or polarimetric data processing. This hybrid option uses the two adjacent upper elevation scans above 0.4 degrees to help fill these data gaps.</p>
 <p>Precipitation rates are calculated in liquid equivalent in MM/HR and converted to CM/HR for snowfall over a maximum coverage range of 240 km. </p>
 <h2 id="data-address">Data address</h2>
-<p>MSC Datamart data can be <a href=".../.../msc-datamart/amqp_en.md">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.</p>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.</p>
 <p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoTIFF file is displayed.</p>
 <p>The radar images can be found at :</p>
 <p><a href="https://hpfx.collab.science.gc.ca/">https://hpfx.collab.science.gc.ca/{YYYMMDD}/radar/dpqpe/{RADAR_ID}</a></p>
@@ -175,7 +175,7 @@
 </ul>
 <h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
 <p>Files have the following nomenclature:</p>
-<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.hdf5</code></p>
+<p><code>{YYYYMMDD}T{HHmm}Z_MSC_Radar-DPQPE_{RADAR_ID}_{SCALE}_{res}.tif</code></p>
 <p>where :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of data emission</li>
@@ -187,7 +187,7 @@
 <li><strong>RADAR_ID</strong>: 5-letter uppercase code representing the radar identifier</li>
 <li><strong>SCALE</strong>: Conversion scale used to measure precipitation, may be in millimeters per hour (MMHR) or centimeters per hour (CMHR)</li>
 <li><strong>res</strong>: Horizontal resolution [1km]</li>
-<li><strong>hdf5</strong> : Constant character string indicating that the format is HDF5</li>
+<li><strong>tif</strong> : Constant character string indicating that the format is GeoTIFF</li>
 </ul>
 <p>Example:</p>
 <ul>
