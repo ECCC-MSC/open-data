@@ -6,6 +6,18 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+## 2025
+
+### 2 avril 2025
+
+* [Mise à jour technique des systèmes d'assimilation atmosphérique dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-2-avril-2025)
+* [Mise à jour technique des systèmes d'assimilation atmosphérique dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mercredi-2-avril-2025)
+* [Mise à jour technique des systèmes d'assimilation atmosphérique dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-mercredi-2-avril-2025)
+
+### 3 mars 2025
+
+* [Correction au traitement des observations TropOMI de colonne totale d'ozone dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-lundi-3-mars-2025)
+
 ## 2024
 
 ### 23 octobre 2024

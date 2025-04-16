@@ -6,6 +6,17 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mercredi 2 avril 2025
+
+### Mise à jour technique des systèmes d'assimilation atmosphérique
+
+Le mercredi 2 avril 2025, à compter de la passe de 0600UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+
+Seule la composante de l'assimilation des données a été modifiée avec:
+
+* Modification au schéma d'écrémage des observations SSMIS résultant en une augmentation du nombre de données assimilées
+* Correction à l'angle azimuthal pour le calcul de la trajectoire oblique des radiances AMSUA et MHS.
+
 ## Le mercredi 23 octobre 2024
 
 ### Ajout de nouvelles sources d’observations satellitaires dans le SHRPD

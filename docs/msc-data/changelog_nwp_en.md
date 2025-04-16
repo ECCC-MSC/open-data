@@ -6,6 +6,18 @@
 
 # Changes to the Canadian Meteorological Centre (CMC) Operational System
 
+## 2025
+
+### April 2, 2025
+
+* [Technical update of atmospheric data assimilation systems in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-april-2-2025)
+* [Technical update of atmospheric data assimilation systems in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-april-2-2025)
+* [ Technical update of atmospheric data assimilation systems in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-april-2-2025)
+
+### March 3, 2025
+
+* [Correction to the treatment of TropOMI total column ozone observations in the GDPS](nwp_gdps/changelog_gdps_en.md#monday-march-3-2025)
+
 ## 2024
 
 ### October 23, 2024

@@ -6,6 +6,27 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Wednesday April 2, 2025
+
+### Technical update of atmospheric data assimilation systems
+
+On Wednesday April 2nd, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 9.0.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified:
+
+* Different thinning scheme for SSMIS satellite observations allowing for more data assimilated
+* Correction to the azimuth angle for slant-path computation for AMSUA and MHS radiances
+
+## Monday March 3, 2025
+
+### Correction to the treatment of TropOMI total column ozone observations
+
+On Monday March 3rd, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 9.0.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified with:
+
+* Increased TropOMI Total Colummn Ozone Thinning
+
 ## Wednesday October 23, 2024
 
 ### Addition of new satellite observation sources in the GDPS
