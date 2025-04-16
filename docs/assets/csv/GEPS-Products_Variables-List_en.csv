@@ -13,7 +13,7 @@ Total cloud cover,TCDC,Surface,%
 Total precipitation rate,TPRATE,Surface,kg/(m<sup>2</sup>*s)
 Vertical wind shear,VWSH,850-250 mb,s<sup>-1</sup>
 Vertical wind shear,VWSH,925-700 mb,s<sup>-1</sup>
-Wind chill factor,WCF,2 m Above Ground Level,K
+Wind chill index,WCF,2 m Above Ground Level,K
 Wind speed (gust),GUST,10 m Above Ground Level,m/s
 Wind speed,WIND,10 m Above Ground Level,m/s
 Wind speed,WIND,250 mb,m/s

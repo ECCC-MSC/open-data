@@ -230,11 +230,11 @@ Humidité spécifique,SPFH,970 mb,kg/kg
 Humidité spécifique,SPFH,985 mb,kg/kg
 Humidité spécifique,SPFH,Surface,kg/kg
 Hélicité relative de la tempête,HLCY,Surface,J/kg
+Indice de refroidissement éolien,WCF,Surface,K
 Indice K,KX,Surface,°C
 Indice humidex,HMX,Surface,°C
 Indice Showalter,SHWINX,500 mb,K
 Indice Total-Total,TOTALX,Surface,K
-Indice de refroidissement éolien,WCF,Surface,K
 Indice d'orages violents,SSI,Surface,Numérique
 Indice de soulèvement,4LFTX,500 mb,K
 Indice de menace de temps violent,SWEAT,Surface,Numérique

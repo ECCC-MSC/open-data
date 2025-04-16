@@ -1,6 +1,6 @@
 Variable,Abréviation,Niveau,Unité/Valeur
 Couverture nuageuse totale,TCDC,Surface,%
-Facteur de refroidissement éolien,WCF,2 m au-dessus du niveau du sol,K
+Indice de refroidissement éolien,WCF,2 m au-dessus du niveau du sol,K
 Hauteur géopotentielle,HGT,500 mb,gpm
 Humidex,HEATX,2 m au-dessus du niveau du sol,K
 Pression réduite au niveau moyen de la mer,PRMSL,Niveau moyen de la mer,Pa

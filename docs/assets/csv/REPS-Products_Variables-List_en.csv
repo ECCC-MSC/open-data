@@ -6,5 +6,5 @@ Rain precipitation rate,RPRATE,Surface,kg/(m<sup>2</sup>*s)
 Snow precipitation rate,SPRATE,Surface,kg/(m<sup>2</sup>*s)
 Temperature,TMP,2 m Above Ground Level,K
 Total precipitation rate,TPRATE,Surface,kg/(m<sup>2</sup>*s)
-Wind chill factor,WCF,2 m Above Ground Level,K
+Wind chill index,WCF,2 m Above Ground Level,K
 Wind speed,WIND,10 m Above Ground Level,m/s
