@@ -12,6 +12,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 ## 2.8.7
 
+* date:  
+* announcements:
+    * Not announced
+* new content:
+    * 
+* improvements:
+    * 
+* bug fixes:
+    * Fix radar format PDF URL
+
+## 2.8.7
+
 * date: 2025-04-15 
 * announcements:
     * Not announced
