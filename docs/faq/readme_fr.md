@@ -67,7 +67,7 @@ En général, il est préférable d'utiliser un accès continu plutôt qu'une co
 
 Les données radar actuellement disponibles gratuitement au public sont [la composite et l'extrapolation radar nord-américaine](../msc-data/obs_radar/readme_radar_geomet_fr.md) via les services web géospatiaux GeoMet-Météo. La composite radar nord-américaine est disponible à chaque 6 minutes pour les 3 dernières heures. Nous offrons également les [images GIF](../msc-data/obs_radar/readme_radarimage-datamart_fr.md) sur le serveur de données ouvertes du SMC. [La documentation des observations radar](../msc-data/obs_radar/readme_radar_fr.md) peut être consultée pour les autres de données et produits radar.
 
-Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr.md#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
+Les données brutes ainsi que divers autres produits, sont fournis par un [service à recouvrement de coûts](../cost-recovered/readme_fr.md#fil-de-donnees-dedie). Dans le cadre de ce service, nous poussons les données vers le serveur FTP des clients et assurons un service 24/7. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) et les [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Formats_used_in_URP_Fr_last_version.pdf) est disponible.
 
 Concernant les fils de données, les formats disponibles sont les suivants :
 
@@ -80,7 +80,7 @@ Concernant les fils de données, les formats disponibles sont les suivants :
 Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$.
 
 Les archives sont disponibles en format brut (ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des 
-[formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/produits/samples/radar/vscan/Formats_used_in_URP_En_last_version.pdf) est disponible.
+[formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Formats_used_in_URP_Fr_last_version.pdf) est disponible.
 
 Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse : ec.dps-client.ec@canada.ca
 
