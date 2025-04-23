@@ -10,15 +10,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
-## 2.8.7
+## 2.8.8
 
-* date:  
+* date: 2025-04-23
 * announcements:
     * Not announced
 * new content:
-    * 
+    * Add changelog section for satellite observations
 * improvements:
-    * 
+    * Update RAQDPS page (products section)
 * bug fixes:
     * Fix radar format PDF URL
 
