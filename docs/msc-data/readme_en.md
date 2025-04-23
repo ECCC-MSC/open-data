@@ -134,5 +134,5 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 
 ## Changes to operational data production systems
 
-Changes to operational data production systems are documented in the dataset subpages. A [chronological summary of changes is provided for Numerical Weather Prediction (NWP) systems](changelog_nwp_en.md).
+Changes to operational data production systems are documented in the dataset subpages. A [chronological summary of changes is provided for Numerical Weather Prediction (NWP) systems and observations](changelog_nwp_en.md).
 

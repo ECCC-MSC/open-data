@@ -51,8 +51,8 @@ Upcoming.
 
 ## Products
 
-* [Maps of 48 hours forecasts](https://weather.gc.ca/aqfm/index_e.html) for tropospheric ozone near the surface and at altitudes of 50 metres and 500 metres, and for PM2.5 and PM10 near the surface. 
-* [For-panels maps](https://weather.gc.ca/aqfm/index_e.html) forecasts for PM2.5, PM10, and ozone near the surface and for ozone at 500 metres.
+* [Hourly forecast maps over 72-hours, and 24-hour forecast maps for average and maximum over 72-hours, for total PM2.5 concentrations near the surface within wildfire smoke plume](https://weather.gc.ca/firework/index_e.html).
+* [Hourly forecast maps over 72-hours for tropospheric ozone (O₃), nitrogen dioxide (NO₂), and total PM2.5 concentrations near the surface](https://weather.gc.ca/firework/index_e.html).
 
 ## Technical documentation
 

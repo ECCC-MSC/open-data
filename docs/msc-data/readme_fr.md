@@ -134,5 +134,5 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 
 ## Changements aux systèmes de production de données opérationnels
 
-Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le [journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) est disponible](changelog_nwp_fr.md).
+Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le [journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) et données d'observation est disponible](changelog_nwp_fr.md).
 

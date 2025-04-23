@@ -51,8 +51,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Produits
 
-* [Cartes des prévisions à 48h](https://meteo.gc.ca/aqfm/index_f.html) pour l'ozone troposphérique près de la surface et aux altitudes de 50 mètres et de 500 mètres ainsi que pour les PM2.5 et les PM10 près de la surface sont disponibles ci-dessous. 
-* [Cartes à 4 panneaux](https://meteo.gc.ca/aqfm/index_f.html) permettent de voir simultanément les prévisions pour les PM2.5, les PM10 et l'ozone près de la surface et pour l'ozone à 500 mètres.
+* [Cartes des prévisions horaires sur 72 heures, et cartes des prévisions des moyennes et maximums par 24 heures sur 72 heures, des concentrations totales de PM2.5 près de la surface dans le panache de fumée](https://meteo.gc.ca/firework/index_f.html).
+* [Cartes des prévisions horaires sur 72 heures pour l'ozone troposphérique (O₃), le dioxyde d'azote (NO₂) et les concentrations totales de PM2.5 près de la surface](https://meteo.gc.ca/firework/index_f.html).
 
 ## Documentation technique
 

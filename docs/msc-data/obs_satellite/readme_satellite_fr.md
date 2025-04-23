@@ -49,5 +49,7 @@ Liste des liens vers l'imagerie et animation satellitaire sur le site d'informat
 * [Geostationary Satellites | NESDIS (noaa.gov)](https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites) - _En anglais seulement_
 * [CIMSS GOES-R Series WebApps (wisc.edu) – canaux individuels, produits RVB (Rouge-Vert-Bleu) et autres](https://cimss.ssec.wisc.edu/goes/GOESR_QuickGuides.html) -  _En anglais seulement_
 * [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) - _En anglais seulement_ 
+## Registre des changements 
 
+La chronologie des changements apportés aux observations satellites est disponible [ici](changelog_satellite_fr.md).
   
