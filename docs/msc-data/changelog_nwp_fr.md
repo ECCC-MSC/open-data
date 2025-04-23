@@ -8,6 +8,10 @@
 
 ## 2025
 
+### 7 avril 2025
+
+* [Satellite GOES-Est: Transition de GOES16 à GOES19](obs_satellite/changelog_satellite_fr.md#le-lundi-7-avril-2025)
+
 ### 2 avril 2025
 
 * [Mise à jour technique des systèmes d'assimilation atmosphérique dans le SGPE](nwp_geps/changelog_geps_fr.md#le-mercredi-2-avril-2025)

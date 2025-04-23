@@ -49,3 +49,7 @@ List of links to satellite imagery and animation on the Government of Canada wea
 * [Geostationary Satellites | NESDIS (noaa.gov)](https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites)
 * [CIMSS GOES-R Series WebApps (wisc.edu) - individual channels, RGB (Red-Green-Blue) and other products](https://cimss.ssec.wisc.edu/goes/GOESR_QuickGuides.html)
 * [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) 
+
+## Changelog 
+
+The chronology of changes to the satellite observations is available [here](changelog_satellite_en.md).

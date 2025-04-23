@@ -8,6 +8,10 @@
 
 ## 2025
 
+### April 7, 2025
+
+* [GOES-East Satellite: Transition from GOES16 to GOES19](obs_satellite/changelog_satellite_en.md#monday-april-7-2025)
+
 ### April 2, 2025
 
 * [Technical update of atmospheric data assimilation systems in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-april-2-2025)
