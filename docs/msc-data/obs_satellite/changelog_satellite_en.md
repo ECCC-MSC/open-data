@@ -1,10 +1,10 @@
-[En français](changelog_rdps_fr.md)
+[En français](changelog_satellite_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPS](readme_rdps_en.md) > RDPS Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > Satellite Observations Changelog
 
-# Chronology of changes to the Regional Deterministic Prediction System (RDPS)
+# Chronology of changes to the satellite observations
 
 ## Monday April 7, 2025
 
