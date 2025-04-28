@@ -83,6 +83,7 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
     * Membres individuels : `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` 
     * Produits probabilistes: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_P{Month}M.grib2`
+    * Produits probabilistes de dépassement de seuils (individuels et saisonniers): `{YYYYMM}_MSC_CanSIPS_{Var}-Prob{ComparSymbol}{XX}Pct_{Level}_LatLon1.0_P{Month}M.grib2` ; `{YYYYMM}_MSC_CanSIPS_{Var}-Prob{ComparSymbol}{XX}Pct_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2`
 
 * Prévisions rétrospectives:
 
@@ -104,6 +105,8 @@ où :
 * __Var-Anomaly__ : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __ERA5__ : Chaîne de caractères constante indiquant que les produits de vérification sont générés à partir des reanalyses ERA5 du CEPMMT (ECMWF)
+* __ComparSymbol__ : Symbole mathématique de comparaison [GT, GE, LT, LE]
+* __XX__ : Valeur de percentiles 
 * __LVLTYPE__ : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]
 * __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]
@@ -121,6 +124,8 @@ Exemples de noms de fichier :
 * cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
+* 202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2
+* 202504_MSC_CanSIPS_AirTemp-ProbGT20Pct_Sfc_LatLon1.0_P09M-P11M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 * 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
 * 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2
@@ -176,9 +181,9 @@ Les fichiers contiennent des probabilité de terciles pour les catégories supé
 
     * Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité que la température soit supérieure à la normale
     * Minimum (0 %), maximum (100 %)
-    * Probabilité inférieure au seuil du 33,3e centile (sans unité) - souvent appelée Probabilité que la température soit inférieure à la normale
+    * Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée Probabilité que la température soit inférieure à la normale
     * Minimum (0 %), maximum (100 %)
-    * Probabilité entre les percentiles 33,3 et 66,7 (sans unité) – souvent appelée Probabilité que la température soit proche de la normale/climatologie
+    * Probabilité entre les percentiles 33.3 et 66.7 (sans unité) – souvent appelée Probabilité que la température soit proche de la normale/climatologie
     * Minimum (0 %), maximum (100 %)
 
 __Produits de probabilité de dépassement :__

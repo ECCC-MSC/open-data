@@ -84,6 +84,7 @@ The files have the following nomenclature:
 
      * Individual members: `{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2` 
      * Probability products: `{YYYYMM}_MSC_CanSIPS_{Var}-{StatProcess}_{Level}_LatLon1.0_{Month}.grib2`
+     * Probabilistic threshold exceedance products (individual and seasonal) : `{YYYYMM}_MSC_CanSIPS_{Var}-Prob{ComparSymbol}{XX}Pct_{Level}_LatLon1.0_P{Month}M.grib2` ; `{YYYYMM}_MSC_CanSIPS_{Var}-Prob{ComparSymbol}{XX}Pct_{Level}_LatLon1.0_P{Month}M-P{Month}M.grib2`
 
 * Hindcast:
 
@@ -105,6 +106,8 @@ where :
 * __Var-Anomaly__ : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __ERA5__ : Constant string indicating that verification products are generated based on ECMWF ERA5 reanalysis
+* __ComparSymbol__ : Mathematical comparison symbols [GT, GE, LT, LE]
+* __XX__ : Percentiles value
 * __LVLTYPE__ : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]
 * __LVL__ : Vertical level value
 * __Level__ : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]
@@ -122,6 +125,8 @@ Examples :
 * cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
+* 202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2
+* 202504_MSC_CanSIPS_AirTemp-ProbGT20Pct_Sfc_LatLon1.0_P09M-P11M.grib2
 * 202010_MSC_CanSIPS-Hindcast_WaterTemp_Sfc_LatLon1.0_P10M.grib2
 * 202503_MSC_CanSIPS_AirTempAnomaly-ERA5_AGL-2m_LatLon1.0_P12M-P02M.grib2
 * 202504_MSC_CanSIPS_PrecipAccumAnomaly-ERA5_Sfc_LatLon1.0_P01M-P03M.grib2
