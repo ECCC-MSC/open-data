@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.9
+
+* date: 2025-04-30
+* announcements:
+    * Not announced
+* new content:
+    * Add CanSIPS monthly and seasonal probability of thresholds exceedance products for temperature and precipitation  documentation
+* improvements:
+    * NA
+* bug fixes:
+    * NA
+
 ## 2.8.8
 
 * date: 2025-04-23
