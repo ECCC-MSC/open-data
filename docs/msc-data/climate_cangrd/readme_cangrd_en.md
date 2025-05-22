@@ -45,7 +45,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the Canadian Gridded Temperature and Precipitation Anomalies are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/3d4b68a5-13bc-48bb-ad10-801128aa6604)
 

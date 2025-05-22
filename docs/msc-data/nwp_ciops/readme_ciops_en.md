@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Coastal Ice-Ocean Prediction System for the East Coast of Canada (CIOPS-East) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bfe44cce-a9c4-467f-9172-c8800b32e4ec).
 * The [metadata of the Coastal Ice-Ocean Prediction System for the West Coast of Canada (CIOPS-West) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/390abee6-4ba0-4d6e-ae79-25753d1c43f3).

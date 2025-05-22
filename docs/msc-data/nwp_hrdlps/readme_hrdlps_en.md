@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the High Resolution Deterministic Land Surface Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/organization/ec?_res_type_limit=0&_keywords_fra_limit=0&_res_format_limit=0&frequency=continual&portal_type=dataset&_keywords_limit=0&res_type=dataset&keywords=Temperature).
 

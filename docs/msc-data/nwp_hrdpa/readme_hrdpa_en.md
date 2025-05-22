@@ -27,7 +27,7 @@ The [End-User Licence for Environment and Climate Change Canada's Data Servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the High Resolution Deterministic Precipitation Analysis is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/eff69d42-ce81-4672-867f-cc3baaf4157a).
 

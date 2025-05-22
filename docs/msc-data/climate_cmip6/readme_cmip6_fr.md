@@ -44,7 +44,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 ### Politique d'utilisation des services de données ouvertes du SMC
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
-### Métadonnées
+### Métadonnées de découverte
 
 * La [métadonnée sur les ensembles multimodèles CMIP6 est accessible sur le portail du gouvernement ouvert](https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/7e7337b7-d36c-4486-a8df-16609a6b99bd)
 

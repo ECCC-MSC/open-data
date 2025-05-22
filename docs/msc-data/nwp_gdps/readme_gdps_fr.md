@@ -40,7 +40,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
-### Métadonnées
+### Métadonnées de découverte
 
 - Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
 - Les [métadonnées de la Prévision du système global de prévision déterministe statistiquement post-traité par UMOS sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/7c1070fd-af7d-40fe-9e78-49d2962f0bbc).

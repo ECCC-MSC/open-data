@@ -32,7 +32,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Regional Deterministic Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d).
 * The [metadata of the UMOS statistically post-processed Forecast of the Regional Deterministic Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bb0d1eeb-0e11-49e0-a5e3-6d99d4decb31).

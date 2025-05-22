@@ -48,7 +48,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the North American Radar Composite (1 km) is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
 * The [metadata of the Dynamic Radar Composite Coverage is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).

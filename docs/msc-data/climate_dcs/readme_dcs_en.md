@@ -52,7 +52,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the statistically downscaled scenarios of projected mean temperature change are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/958b8357-3690-414d-8bec-d65951041636).
 * The [metadata of the statistically downscaled scenarios of projected maximum temperature change are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/57fee0af-40ec-4aad-89da-6c0d39a6424d).

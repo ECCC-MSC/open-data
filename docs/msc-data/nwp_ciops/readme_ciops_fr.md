@@ -27,7 +27,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 * Les [métadonnées du Système de prévision côtier océan-glace pour la Côte Est du Canada (SPCOG-Est) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/bfe44cce-a9c4-467f-9172-c8800b32e4ec).
 * Les [métadonnées du Système de prévision côtier océan-glace pour la Côte Ouest du Canada (SPCOG-Ouest) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/390abee6-4ba0-4d6e-ae79-25753d1c43f3).

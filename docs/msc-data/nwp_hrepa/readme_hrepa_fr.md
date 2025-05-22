@@ -27,7 +27,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
  
 Les [métadonnées de l'Analyse à Haute Résolution Ensembliste de Précipitation sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/62c5f03f-8f03-466a-960a-88fbc5882c11).
 

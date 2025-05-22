@@ -43,7 +43,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Real-time Hydrometric Data are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/65d3a88b-eb09-4fd9-ac44-cf42dc1f7444)
 * The [metadata of the Historical Hydrometric Data are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/1ee9e14d-0814-5201-a3be-705809d8ee0e)
