@@ -16,7 +16,7 @@ MSC AniMet provides access to [GeoMet-Weather and GeoMet-Climate](../msc-geomet/
 
 **Access to MSC AniMet: [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
-A simple example of an MSC AniMet animation showing thunderstorms at dawn, with GOES satellite imagery and radar layers:
+A simple example of an MSC AniMet animation showing thunderstorms at dusk, with GOES satellite imagery and radar layers:
 
 <video controls width="66%">
   <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2230Z_Thunderstorms_2024-05-22.mp4" type="video/mp4">
