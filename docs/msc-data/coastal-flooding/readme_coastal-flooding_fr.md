@@ -28,7 +28,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-A venir
+Les [métadonnées de l'indice de risque de submersion côtière sont accessibles sur le portail du gouvernement ouvert] (https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/3e0f265d-f33d-477f-b113-8e9c43c689b1).
 
 ### Produits
 
