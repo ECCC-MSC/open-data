@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+### Monday May 26th, 2025
+
+### Addition of ATMS and CrIS observations from the NOAA-21 satellite in the GEPS
+
+On Monday May 26th, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 8.0.0 of the Global Ensemble Prediction System (GEPS).
+
+Only the data assimilation component was modified to add the following satellite observation sources:
+
+* Addition of ATMS and CrIS observations from the NOAA-21 satellite.
+
 ## Wednesday April 2, 2025
 
 ### Technical update of atmospheric data assimilation systems

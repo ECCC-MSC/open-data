@@ -6,11 +6,22 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le lundi 26 mai 2025
+
+### Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SHRPD
+
+Le lundi 26 mai 2025, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+
+Seulement la composante d'assimilation des données a été modifiée afin d'ajouter les sources d’observations satellitaires suivantes:
+
+* Ajout des observations ATMS et CriS provenant du satellite NOAA-21,
+* Ajout des observations (DBnet) RARS-MWHS2 provenant des satellites FY-3D et FY-3E.
+
 ## Le mercredi 2 avril 2025
 
 ### Mise à jour technique des systèmes d'assimilation atmosphérique
 
-Le mercredi 2 avril 2025, à compter de la passe de 0600UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son Système à haute résolution de prévision déterministe (SHRPD).
+Le mercredi 2 avril 2025, à compter de la passe de 0600UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 7.0.0 de son Système à haute résolution de prévision déterministe (SHRPD).
 
 Seule la composante de l'assimilation des données a été modifiée avec:
 

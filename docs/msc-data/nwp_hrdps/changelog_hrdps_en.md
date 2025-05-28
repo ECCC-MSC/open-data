@@ -6,6 +6,16 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Monday May 26th, 2025
+
+Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the HRDPS
+On Monday May 26th, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 7.0.0 of the High-Resolution Deterministic Prediction System (HRDPS).
+
+Only the data assimilation component was modified to add the following satellite observation sources:
+
+* Addition of ATMS and CrIS observations from the NOAA-21 satellite,
+* Addition of (DBnet) RARS-MWHS2 observations from the FY-3D and FY-3E satellites.
+
 ## Wednesday April 2, 2025
 
 ### Technical update of atmospheric data assimilation systems

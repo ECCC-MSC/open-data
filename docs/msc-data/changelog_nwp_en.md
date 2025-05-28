@@ -8,6 +8,12 @@
 
 ## 2025
 
+### May 26, 2025
+
+* [Addition of ATMS and CrIS observations from the NOAA-21 satellite in the GEPS](nwp_geps/changelog_geps_en.md#monday-may-26-2025)
+* [Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the GDPS](nwp_gdps/changelog_gdps_en.md#monday-may-26-2025)
+* [Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#monday-may-26-2025)
+
 ### April 7, 2025
 
 * [GOES-East Satellite: Transition from GOES16 to GOES19](obs_satellite/changelog_satellite_en.md#monday-april-7-2025)
@@ -16,7 +22,7 @@
 
 * [Technical update of atmospheric data assimilation systems in the GEPS](nwp_geps/changelog_geps_en.md#wednesday-april-2-2025)
 * [Technical update of atmospheric data assimilation systems in the GDPS](nwp_gdps/changelog_gdps_en.md#wednesday-april-2-2025)
-* [ Technical update of atmospheric data assimilation systems in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-april-2-2025)
+* [Technical update of atmospheric data assimilation systems in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#wednesday-april-2-2025)
 
 ### March 3, 2025
 

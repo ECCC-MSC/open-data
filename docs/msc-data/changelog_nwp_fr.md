@@ -8,6 +8,12 @@
 
 ## 2025
 
+### 26 mai 2025
+
+* [Ajout des observations ATMS et CrIS du satellite NOAA-21 dans le SGPE](nwp_geps/changelog_geps_fr.md#le-lundi-26-mai-2025)
+* [Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-lundi-26-mai-2025)
+* [Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-lundi-26-mai-2025)
+
 ### 7 avril 2025
 
 * [Satellite GOES-Est: Transition de GOES16 à GOES19](obs_satellite/changelog_satellite_fr.md#le-lundi-7-avril-2025)
