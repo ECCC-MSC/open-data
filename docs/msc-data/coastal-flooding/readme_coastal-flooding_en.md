@@ -28,7 +28,7 @@ The [MSC Open Data Services Usage Policy](../../usage-policy/readme_en.md) deter
 
 ### Metadata
 
-Coming soon
+The metadata of the coastal flooding risk index is available on the [Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/3e0f265d-f33d-477f-b113-8e9c43c689b1).
 
 ### Products
 
