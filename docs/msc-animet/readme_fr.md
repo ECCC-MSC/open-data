@@ -16,7 +16,7 @@ AniMet du SMC donne accès aux couches de [GeoMet-Météo et GeoMet-Climat](../m
 
 **Accès à AniMet du SMC : [https://eccc-msc.github.io/msc-animet/](https://eccc-msc.github.io/msc-animet/)**
 
-Un exemple simple d'animation montrant des orages à l'aube, avec l'imagerie satellitaire GOES et une couche radar :
+Un exemple simple d'animation montrant des orages au crépuscule, avec l'imagerie satellitaire GOES et une couche radar :
 
 <video controls width="66%">
   <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2224Z_Orages_2024-04-22.mp4" type="video/mp4">
