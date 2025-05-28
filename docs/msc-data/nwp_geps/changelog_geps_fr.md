@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+### Le lundi 26 mai 2025
+
+### Ajout des observations ATMS et CrIS du satellite NOAA-21 dans le SGPE
+
+Le lundi 26 mai 2025, à compter de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 8.0.0 de son Système global de prévision d'ensemble (SGPE).
+
+Seulement la composante d'assimilation des données a été modifiée afin d'ajouter les sources d’observations satellitaires suivantes:
+
+* Ajout des observations ATMS et CriS provenant du satellite NOAA-21.
+
 ## Le mercredi 2 avril 2025
 
 ### Mise à jour technique des systèmes d'assimilation atmosphérique
