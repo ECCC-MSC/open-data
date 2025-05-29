@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés à l'Analyse à haute résolution ensembliste de précipitation (AHREP)
 
+## Le jeudi 1er mai 2025
+
+### L'Analyse à haute résolution ensembliste de précipitation (AHREP) est déclarée opérationnelle au Centre météorologique canadien (CMC)
+
+En date du 1 mai 2025, le Centre météorologique canadien (CMC) du Service météorologique du Canada déclare opérationnelle l'Analyse à haute résolution ensembliste de précipitation (AHREP, v2.0.1).
+
 ## Le mercredi 11 septembre 2024
 
 ### Retrait temporaire des observations du réseau Fire Weather (OMNRF) du système d'assimilation de l'Analyse à haute résolution ensembliste de précipitation (AHREP) au Centre météorologique canadien (CMC)

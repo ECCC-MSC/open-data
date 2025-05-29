@@ -2,21 +2,21 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur DD-Alpha du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHREP](readme_hrepa_fr.md) > AHREP sur le Datamart du SMC
 
 # Données NetCDF de l'Analyse à haute résolution ensembliste de précipitation (AHREP)
 
-Cette page décrit les données expérimentales de l'[Analyse à haute résolution ensembliste de précipitation (AHREP)](readme_hrepa_fr.md) disponibles en format NetCDF sur le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC.
+Cette page décrit les données de l'[Analyse à haute résolution ensembliste de précipitation (AHREP)](readme_hrepa_fr.md) disponibles en format NetCDF sur le serveur Datamart du SMC.
 
 ## Adresse des données 
 
-Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC, peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF. 
 
 Les données sont accessibles à l'adresse suivante:
 
-* [https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km/{HH}](https://dd.alpha.meteo.gc.ca/model_hrepa/2.5km)
+* [https://dd.meteo.gc.ca/model_hrepa/2.5km/{HH}](https://dd.meteo.gc.ca/model_hrepa/2.5km)
 
 où :
 
@@ -37,8 +37,6 @@ Ce tableau décrit des paramètres de la grille latitude-longitude sur laquelle 
 | orientation de la grille (par rapport à l’axe des j)            | -115.0°                  |
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

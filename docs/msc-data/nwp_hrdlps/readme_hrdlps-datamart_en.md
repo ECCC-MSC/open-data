@@ -6,17 +6,17 @@
 
 # High Resolution Deterministic Land Surface Prediction System (HRDLPS) data in NetCDF format
 
-This page describes the experimental [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlps_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
+This page describes the [High Resolution Deterministic Land Surface Prediction System](./readme_hrdlps_en.md) data available in NetCDF format on the MSC Datamart.
 
 ## Data location 
 
-MSC testing data repository DD-Alpha can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
 The data can be accessed at the following URLs:
 
-* [https://dd.alpha.weather.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.alpha.weather.gc.ca/model_hrdlps/2.5km)                  
+* [https://dd.weather.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdlps/2.5km)                  
 
 where:
 
@@ -36,7 +36,6 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 | resolution at 45° N | 2.5 km |
 
 ## Filename nomenclature
-
 
 The files have the following nomenclature: 
 

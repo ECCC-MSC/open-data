@@ -6,22 +6,21 @@
 
 # The Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) data in NetCDF format
 
-This page describes the experimental [The Canadian Land Data Assimilation System](./readme_caldas-nsrps_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
+This page describes the [The Canadian Land Data Assimilation System](./readme_caldas-nsrps_en.md) data available in NetCDF format on the MSC Datamart.
 
 ## Data location 
 
-MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable NetCDF file.
 
 The data can be accessed at the following URLs:
 
-* [https://dd.alpha.weather.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.weather.gc.ca/model_nsrps-caldas/2.5km)                  
+* [https://dd.weather.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.weather.gc.ca/model_nsrps-caldas/2.5km)                  
 
 where:
 
 * __HH__ : Analysis validity time, in UTC [00, 03, 06, 09, 12, 15, 18, 21]
-
 
 ## Technical specification of the grid
 
