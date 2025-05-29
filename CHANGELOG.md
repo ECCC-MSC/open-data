@@ -18,7 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add Costal Flooding Risk Index metadata
     * Update CaLDAS-NSRPS, HREPA, HRDLPS and HRELPS changelogs: systems now fully operational
-    * Update HREPA, HRDLPS and CaLDAS-NSRPS docuemntation: systems now fully operational and data on MSC Datamart ops
+    * Update HREPA, HRDLPS and CaLDAS-NSRPS documentation: systems now fully operational and data on MSC Datamart ops
     * Update NWEP changelogs: add satellite observations in the GEPS, GDPS and HRDPS
 * improvements:
     * NA
