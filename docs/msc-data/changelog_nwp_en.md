@@ -24,7 +24,7 @@
 ### April 7, 2025
 
 * [GOES-East Satellite: Transition from GOES16 to GOES19](obs_satellite/changelog_satellite_en.md#monday-april-7-2025)
-* [Transition to GOES19 for skin temperature observationsin the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#monday-april-7-2025)
+* [Transition to GOES19 for skin temperature observations in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#monday-april-7-2025)
 
 ### April 2, 2025
 
