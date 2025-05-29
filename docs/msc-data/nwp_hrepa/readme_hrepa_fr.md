@@ -6,15 +6,16 @@
 
 # Données et Produits de l’analyse à haute résolution ensembliste de précipitation (analyse à haute résolution ensembliste de précipitation (CaPA-AHREP)
 
-L'analyse à haute résolution ensembliste de précipitation (AHREP) fait partie du système expérimental NSRPS (National Surface and River Prediction System) et est dépendant de deux autres systèmes. Il utilise d'une part les observations aux stations de surface et les QPE radar prétraitées par l'Anlayse à haute réoslution déterministe de de précipitation (AHRDP) et d'autre part les champs d'essai perturbés générés par le Système canadien d'assimilation de données de surface (SCanADS). L'AHREP produit quatre jeux d'analyses de précipitation par jour sur des cumuls 6 heures valides aux heures synoptiques (00, 06, 12 et 18 UTC). Chaque jeu d'analyses contient 24 membres plus le membre contrôle. Un indice de qualité (confidence index) est aussi disponible sur la même grille que les champs de précipitation. Enfin, deux percentiles, 25eme et 75eme, estimés sur ces ensembles sont aussi fournit pour chaque heure synoptique. Actuellement, il existe seulement une version à haute résolution du système ensembliste, dont le domaine couvre le Canada et le nord des États-Unis avec une resolution horizontale d'environ 2.5km.
+L'analyse à haute résolution ensembliste de précipitation (AHREP) fait partie du système NSRPS (National Surface and River Prediction System) et est dépendant de deux autres systèmes. Il utilise d'une part les observations aux stations de surface et les QPE radar prétraitées par l'Anlayse à haute réoslution déterministe de de précipitation (AHRDP) et d'autre part les champs d'essai perturbés générés par le Système canadien d'assimilation de données de surface (SCanADS). L'AHREP produit quatre jeux d'analyses de précipitation par jour sur des cumuls 6 heures valides aux heures synoptiques (00, 06, 12 et 18 UTC). Chaque jeu d'analyses contient 24 membres plus le membre contrôle. Un indice de qualité (confidence index) est aussi disponible sur la même grille que les champs de précipitation. Enfin, deux percentiles, 25eme et 75eme, estimés sur ces ensembles sont aussi fournit pour chaque heure synoptique. Actuellement, il existe seulement une version à haute résolution du système ensembliste, dont le domaine couvre le Canada et le nord des États-Unis avec une resolution horizontale d'environ 2.5km.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont respectivement disponibles via les services web [GeoMet du SMC](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/) et sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données NetCDF expérimentales disponibles sur DD-Alpha](readme_hrepa-datamart_fr.md) 
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/)
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_hrepa-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -28,7 +29,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
  
-Les [métadonnées de l'Analyse à Haute Résolution Ensembliste de Précipitation [expérimental] sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/62c5f03f-8f03-466a-960a-88fbc5882c11).
+Les [métadonnées de l'Analyse à Haute Résolution Ensembliste de Précipitation sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/62c5f03f-8f03-466a-960a-88fbc5882c11).
 
 ## Documentation technique
 

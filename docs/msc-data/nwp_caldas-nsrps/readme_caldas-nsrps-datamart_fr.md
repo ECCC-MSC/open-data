@@ -6,22 +6,21 @@
 
 # Données du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR) en format NetCDF
 
-Cette page décrit les données expérimentales du [Système canadien d'assimilation de données de surface](./readme_caldas-nsrps_fr.md) disponibles en format NetCDF sur le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC.
+Cette page décrit les données du [Système canadien d'assimilation de données de surface](./readme_caldas-nsrps_fr.md) disponibles en format NetCDF sur le serveur Datamart du SMC.
 
 ## Adresse des données 
 
-Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF. 
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.alpha.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
+* [https://dd.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
 
 où :
 
 * __HH__ : Heure en UTC du temps de validité de l'analyse [00, 03, 06, 09, 12, 15, 18, 21]
-
 
 ## Spécification technique de la grille  
 

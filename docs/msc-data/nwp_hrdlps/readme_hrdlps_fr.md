@@ -8,15 +8,14 @@
 
 Le Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) produit des prévisions à moyen terme des variables de la surface terrestre, de sous-surface, et des variables atmosphériques proches de la surface (température et point de rosée à 1.5 m, vent à 10 m).  SPDHRS est initialisé avec des champs d'analyse et d'essai fournis par le [Système canadien d’assimilation des données de surface du Système national de prévision des surfaces et des rivières (SCanADS-SNPSR)](../../msc-data/nwp_caldas-nsrps/readme_caldas-nsrps_fr.md). Le système est ensuite piloté par les prévisions atmosphériques fournies par le SHRPD sur les deux premiers jours d'intégration et par le SGPD sur les quatre jours suivants. Les prévisions sont exécutées deux fois par jour. Le système fonctionne sur une grille avec une résolution horizontale de 2.5 km couvrant le Canada et une partie des États-Unis.
 
-Notes : Le système SPDHRS est un système expérimental; Les données de vent à 10 m ne sont pas encore disponibles. 
-
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont respectivement disponibles via les services web [GeoMet du SMC](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/) et sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données NetCDF expérimentales disponibles sur DD-Alpha](readme_hrdlps-datamart_fr.md)   
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/)
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_hrdlps-datamart_fr.md)   
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -30,7 +29,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées
 
-À venir.
+Les [métadonnées du Système de prévision déterministe à haute résolution de la surface terrestre sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/organization/ec?_res_type_limit=0&_keywords_fra_limit=0&_res_format_limit=0&frequency=continual&portal_type=dataset&_keywords_limit=0&res_type=dataset&keywords=Temperature).
 
 ## Documentation technique
 

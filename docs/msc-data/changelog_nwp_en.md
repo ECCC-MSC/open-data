@@ -14,9 +14,17 @@
 * [Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the GDPS](nwp_gdps/changelog_gdps_en.md#monday-may-26-2025)
 * [Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the HRDPS](nwp_hrdps/changelog_hrdps_en.md#monday-may-26-2025)
 
+### May 1, 2025
+
+* [The Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) is declared operational at the Canadian Meteorological Centre (CMC)](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#thursday-may-1-2025)
+* [The High Resolution Ensemble Precipitation Analysis (HREPA) is declared operational at the Canadian Meteorological Centre](nwp_hrepa/changelog_hrepa_en.md#thursday-may-1-2025)
+* [The High Resolution Deterministic Land Surface Prediction System (HRDLPS) is declared operational at the Canadian Meteorological Centre](nwp_hrdlps/changelog_hrdlps_en.md#thursday-may-1-2025)
+* [The High Resolution Ensemble Land Surface Prediction System (HRELPS) is declared operational at the Canadian Meteorological Centre](nwp_hrelps/changelog_hrelps_en.md#thursday-may-1-2025)
+
 ### April 7, 2025
 
 * [GOES-East Satellite: Transition from GOES16 to GOES19](obs_satellite/changelog_satellite_en.md#monday-april-7-2025)
+* [Transition to GOES19 for skin temperature observationsin the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#monday-april-7-2025)
 
 ### April 2, 2025
 
@@ -27,6 +35,10 @@
 ### March 3, 2025
 
 * [Correction to the treatment of TropOMI total column ozone observations in the GDPS](nwp_gdps/changelog_gdps_en.md#monday-march-3-2025)
+
+### January 7, 2025
+
+* [Introduction of short cut-off run in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/changelog_caldas-nsrps_en.md#tuesday-january-7-2025)
 
 ## 2024
 

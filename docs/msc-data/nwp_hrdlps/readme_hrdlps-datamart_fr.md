@@ -6,17 +6,17 @@
 
 # Données du Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) en format NetCDF
 
-Cette page décrit les données expérimentales du [Système de prévision déterministe à haute résolution de la surface](./readme_hrdlps_fr.md) disponibles en format NetCDF sur le serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC.
+Cette page décrit les données du [Système de prévision déterministe à haute résolution de la surface](./readme_hrdlps_fr.md) disponibles en format NetCDF sur le serveur Datamart du SMC.
 
 ## Adresse des données 
 
-Les données du serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC, peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier netCDF. 
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_hrdlps/2.5km)                  
+* [https://dd.meteo.gc.ca/model_hrdlps/2.5km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdlps/2.5km)                  
 
 où :
 
@@ -34,7 +34,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 2.5 km de rés
 | ni | 2540 | 
 | nj | 1290 | 
 | résolution à 45° N | 2.5 km |
-
 
 ## Nomenclature des noms de fichiers 
 

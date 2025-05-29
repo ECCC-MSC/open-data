@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Ensemble Precipitation Analysis (HREPA)
 
+## Thursday May 1, 2025
+
+### The High Resolution Ensemble Precipitation Analysis (HREPA) is declared operational at the Canadian Meteorological Centre
+
+Effective May 1st, 2025, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada declared operational the High Resolution Ensemble Precipitation Analysis (HREPA, v2.0.1).
+
 ## Wednesday September 11, 2024
 
 ### Temporary removal of the Fire Weather network observations (OMNRF) from the High Resolution Ensemble Precipitation Analysis System (HREPA) assimilation at the Canadian Meteorological Centre (CMC)

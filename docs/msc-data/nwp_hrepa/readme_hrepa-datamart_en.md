@@ -2,22 +2,21 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_fr.md) > [MSC data](../readme_fr.md) > [HREPA](readme_hrepa_fr.md) > HREPA on MSC DD-Alpha
+[TOC](../../readme_fr.md) > [MSC data](../readme_fr.md) > [HREPA](readme_hrepa_fr.md) > HREPA on MSC Datamart
 
 # High Resolution Ensemble Precipitation Analysis (HREPA) Data in NetCDF Format
 
-This page describes the experimental [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in NetCDF format on the MSC testing data repository DD-Alpha.
-
+This page describes the [High Resolution Ensemble Precipitation Analysis](./readme_hrepa-datamart_en.md) data available in NetCDF format on the MSC Datamart.
 
 ## Data location
 
-MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable netCDF file.
 
 The data can be accessed at the following URLs :
 
-* [https://dd.alpha.weather.gc.ca/model_hrepa/2.5km/{HH}](https://dd.alpha.weather.gc.ca/model_hrepa/2.5km)
+* [https://dd.weather.gc.ca/model_hrepa/2.5km/{HH}](https://dd.weather.gc.ca/model_hrepa/2.5km)
 
 where :
 
@@ -38,8 +37,6 @@ The table below lists the values of the rotated latitude-longitude grid paramete
 | grid orientation (with respect to j axis) | -115.0° |
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 

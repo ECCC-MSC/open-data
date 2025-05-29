@@ -6,15 +6,16 @@
 
 # Données et Produits du Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)
 
-Le système SCanADS-SNPSR a été installé avec un statut expérimental dans le Système national de prévision de surface et de rivières (SNPSR) au Centre de prévision météorologique et environnementale du Canada (CPMEC) d'Environnement et changement climatique Canada (ECCC) en juillet 2019. SCanADS-SNPSR est un système externe d'assimilation qui produit des analyses de la surface terrestre toutes les 3 heures pour le domaine du Système à haute résolution de prévision déterministe (SHRPD) à une résolution de 2.5 km. Dans SCanADS-SNPSR, l'accent est mis sur l'assimilation de données de télédétection satellitaire dans le but de produire les conditions initiales optimales pour les composantes prédictives du SNPSR, le Système de prévision déterministe/ensembliste à haute résolution de la surface terrestre (SPDHRS/SPEHRS) et le Système de prévision hydrologique déterministe/ensembliste (SPHD/SPHE). SCanADS-SNPSR est lancé 4 fois par jour à 0000, 0600, 1200 et 1800 UTC.
+Le système SCanADS-SNPSR a été installé dans le Système national de prévision de surface et de rivières (SNPSR) au Centre de prévision météorologique et environnementale du Canada (CPMEC) d'Environnement et changement climatique Canada (ECCC) en juillet 2019. SCanADS-SNPSR est un système externe d'assimilation qui produit des analyses de la surface terrestre toutes les 3 heures pour le domaine du Système à haute résolution de prévision déterministe (SHRPD) à une résolution de 2.5 km. Dans SCanADS-SNPSR, l'accent est mis sur l'assimilation de données de télédétection satellitaire dans le but de produire les conditions initiales optimales pour les composantes prédictives du SNPSR, le Système de prévision déterministe/ensembliste à haute résolution de la surface terrestre (SPDHRS/SPEHRS) et le Système de prévision hydrologique déterministe/ensembliste (SPHD/SPHE). SCanADS-SNPSR est lancé 4 fois par jour à 0000, 0600, 1200 et 1800 UTC.
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données expérimentales sont disponibles sur le serveur DD-Alpha, le site Web d'essai de données du [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont respectivement disponibles via les services web [GeoMet du SMC](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/) et sur le serveur [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données NetCDF expérimentales disponibles sur DD-Alpha](readme_caldas-nsrps-datamart_fr.md)   
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/)
+* [Données NetCDF disponibles sur le Datamart du SMC](readme_caldas-nsrps-datamart_fr.md)   
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 

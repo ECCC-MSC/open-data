@@ -6,15 +6,16 @@
 
 # Data and products of the Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS) 
 
-CaLDAS-NSRPS was installed as an experimental system within the National Surface and River Prediction System (NSRPS) at Environment and Climate Change Canada's (ECCC) Canadian Centre for Meteorological and Environmental Prediction (CCMEP) in July 2019. CaLDAS-NSRPS is a continuous offline land-surface assimilation system, which provides analyses of the land surface every 3 h over the domain of the High-Resolution Deterministic Prediction System (HRDPS) at a 2.5 km grid spacing. The emphasis in CaLDAS-NSRPS is to focus upon the assimilation of satellite based remote sensing observations to provide the optimal initial conditions for the predictive components of the NSRPS, the High Resolution Deterministic/Ensemble Land Surface Prediction System (HRDLPS/HRELPS) and the Deterministic/Ensemble Hydrological Prediction Systems (DHPS/EHPS). CaLDAS-NSRPS is launched 4 times per day, at 0000, 0600, 1200, and 1800 UTC.
+CaLDAS-NSRPS was installed within the National Surface and River Prediction System (NSRPS) at Environment and Climate Change Canada's (ECCC) Canadian Centre for Meteorological and Environmental Prediction (CCMEP) in July 2019. CaLDAS-NSRPS is a continuous offline land-surface assimilation system, which provides analyses of the land surface every 3 h over the domain of the High-Resolution Deterministic Prediction System (HRDPS) at a 2.5 km grid spacing. The emphasis in CaLDAS-NSRPS is to focus upon the assimilation of satellite based remote sensing observations to provide the optimal initial conditions for the predictive components of the NSRPS, the High Resolution Deterministic/Ensemble Land Surface Prediction System (HRDLPS/HRELPS) and the Deterministic/Ensemble Hydrological Prediction Systems (DHPS/EHPS). CaLDAS-NSRPS is launched 4 times per day, at 0000, 0600, 1200, and 1800 UTC.
 
 ## Access
 
 ### How to access the data 
 
-This experimental data is available on the MSC testing data repository [DD-Alpha](../../msc-datamart/readme_en.md):
+This data is available from the [MSC GeoMet](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/) web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) server respectively:
 
-* [NetCDF experimental data available on DD-Alpha](readme_caldas-nsrps-datamart_en.md) 
+* [Data available via the GeoMet-Weather geospatial web services](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
+* [NetCDF data available on the MSC Datamart](readme_caldas-nsrps-datamart_en.md) 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

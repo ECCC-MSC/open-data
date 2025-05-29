@@ -14,9 +14,17 @@
 * [Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-lundi-26-mai-2025)
 * [Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SHRPD](nwp_hrdps/changelog_hrdps_fr.md#le-lundi-26-mai-2025)
 
+### 1er mai 2025
+
+* [Le Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR) est déclaré opérationnel au Centre météorologique canadien (CMC)](nwp_caldas-nsrps/changelog_caldas-nsrps_fr.md#le-jeudi-1er-mai-2025)
+* [L'Analyse à haute résolution ensembliste de précipitation (AHREP) est déclarée opérationnelle au Centre météorologique canadien (CMC)](nwp_hrepa/changelog_hrepa_fr.md#le-jeudi-1er-mai-2025)
+* [Le Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS) est déclaré opérationnel au Centre météorologique canadien (CMC)](nwp_hrdlps/changelog_hrdlps_fr.md#le-jeudi-1er-mai-2025)
+* [Le Système de prévision d'ensemble à haute résolution de la surface terrestre (SPEHRS) est déclaré opérationnel au Centre météorologique canadien (CMC)](nwp_hrelps/changelog_hrelps_fr.md#le-jeudi-1er-mai-2025)
+
 ### 7 avril 2025
 
 * [Satellite GOES-Est: Transition de GOES16 à GOES19](obs_satellite/changelog_satellite_fr.md#le-lundi-7-avril-2025)
+* [Transition vers GOES19 pour les observations de la température des premiers micromètres de la couche de surface (terrestre) dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/changelog_caldas-nsrps_fr.md#le-lundi-7-avril-2025)
 
 ### 2 avril 2025
 
@@ -27,6 +35,10 @@
 ### 3 mars 2025
 
 * [Correction au traitement des observations TropOMI de colonne totale d'ozone dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-lundi-3-mars-2025)
+
+### 7 janvier 2025
+
+*  [Introduction d'une passe de temps de coupure court dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/changelog_caldas-nsrps_fr.md#le-mardi-7-janvier-2025)
 
 ## 2024
 
