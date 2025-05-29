@@ -10,6 +10,22 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.8.10
+
+* date: 2025-05-29
+* announcements:
+    * Not announced
+* new content:
+    * Add Costal Flooding Risk Index metadata
+    * Update CaLDAS-NSRPS, HREPA, HRDLPS and HRELPS changelogs: systems now fully operational
+    * Update HREPA, HRDLPS and CaLDAS-NSRPS docuemntation: systems now fully operational and data on MSC Datamart ops
+    * Update NWEP changelogs: add satellite observations in the GEPS, GDPS and HRDPS
+* improvements:
+    * NA
+* bug fixes:
+    * Fix AniMet image caption
+    * Fix CanSIPS documentation
+
 ## 2.8.9
 
 * date: 2025-04-30
