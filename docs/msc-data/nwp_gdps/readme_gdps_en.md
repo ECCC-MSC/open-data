@@ -123,7 +123,7 @@ The chronology of changes to the Global Deterministic Prediction System (GDPS) i
     head.appendChild(js);
 </script>
 
-# Data and Products of the experimental Global Deterministic Prediction System
+# Data of the experimental Global Deterministic Prediction System
 
 The experimental Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model, spectrally driven by... TO BE COMPLETED 
 

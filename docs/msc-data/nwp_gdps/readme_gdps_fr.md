@@ -122,7 +122,7 @@ La chronologie des changements apportés au Système global de prévision déter
     head.appendChild(js);
 </script>
 
-# Données et produits du Système global de prévision déterministe expérimental
+# Données du Système global de prévision déterministe expérimental
 
 Le Système global de prévision déterministe (SGPD) expérimental est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE), piloté spectralement ....... A COMPLETER
 
