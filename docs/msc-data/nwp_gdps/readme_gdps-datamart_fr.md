@@ -1,11 +1,8 @@
 [In English](readme_gdps-datamart_en.md)
 
-
 ![ECCC logo](../../img_eccc-logo.png)
 
-
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD sur le Datamart du SMC
-
 
 # Données GRIB2 du Système global de prévision déterministe (SGPD)
 
@@ -40,8 +37,6 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
-
 Les fichiers ont la nomenclature suivante :
 
 CMC_glb_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
@@ -65,6 +60,62 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
 Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
 
+# Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental
+
+Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) expérimental sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
+
+## Adresse des données 
+
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
+
+Les données sont accessibles à adresse suivante :
+
+[https://dd.meteo.gc.ca/model_gdps/{RES}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gdps)
+
+où :
+
+* __RES__ : Résolution horizontale [15km]
+* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
+* __hhh__ : Heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]
+
+## Spécification technique de la grille
+
+Valeurs données aux différents paramètres de la grille latitude-longitude à 15km de résolution
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 2400 |
+| nj | 1201 | 
+| résolution | 0.15° |
+| coordonnées du premier point de grille | 0° W  360° E | 
+
+## Nomenclature des noms de fichiers 
+
+Les fichiers ont la nomenclature suivante :
+
+{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
+
+où :
+
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Délimiteur temporel selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __Z__ : Fuseau horaire (heure UTC)
+* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
+* __GDPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision déterministe (version expérimentale)
+* __VAR__ : Type de variable contenu dans le fichier (ex: AirTemp).
+* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: Sfc pour la surface, EATM pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface, AGL-10m pour la hauteur de 10m au-dessus du sol]
+* __Grille__ : Grille horizontale [LatLon]
+* __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+
+Exemples de noms de fichiers :
+
+* 20250529T12Z_MSC_GDPS_GeopotentialHeight_IsbL-0350_LatLon0.15_PT018H.grib2
+* 20250529T12Z_MSC_GDPS_SoilTemp_Sfc_LatLon0.15_PT018H.grib2
 
 ## Niveaux  
 
