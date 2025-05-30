@@ -41,13 +41,6 @@ An [overview and examples to access and use the Meteorological Service of Canada
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
-### Licence
-
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
-
-### MSC Open Data Service Usage Policy
-
-The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
 ### Metadata
 
@@ -138,17 +131,16 @@ This experimental data is available from the [MSC GeoMet](../../msc-geomet/readm
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
-### Licence
-
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
-
-### MSC Open Data Service Usage Policy
-
-The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
-
 ## Technical documentation
 
 * [Current version of the experimental Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_e.pdf)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg)
 
+# Licence
+
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
+
+# MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
