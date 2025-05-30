@@ -122,3 +122,33 @@ The chronology of changes to the Global Deterministic Prediction System (GDPS) i
     }
     head.appendChild(js);
 </script>
+
+# Data and Products of the experimental Global Deterministic Prediction System
+
+The experimental Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model, spectrally driven by... TO BE COMPLETED 
+
+## Access
+
+### How to access the data
+
+This experimental data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
+
+* [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
+* [GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md)
+
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
+
+### Licence
+
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
+
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
+
+## Technical documentation
+
+* [Current version of the experimental Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg)
+
+

@@ -63,6 +63,63 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).
 
+# Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format
+
+The fields in the experimental GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
+
+## Data location
+
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
+
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
+
+The data can be accessed at the following address :
+
+[https://dd.weather.gc.ca/model_gdps/{RES}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gdps)
+
+where :
+
+* __RES__ : Horizontal resolution [15km]
+* __HHH__ : UTC time of the beginning of the model run[00, 12]
+* __hhhh__ : Forecast time[000, 001, 002, ..., 084, 087, 090, …, 240]
+
+## Technical specification of the grid
+
+Values given to the parameters of the 15km latitude-longitude grid:
+
+| Parameter | Value |
+| ------ | ------ |
+| ni | 2400 |
+| nj | 1201 | 
+| resolution | 0.15° |
+| orientation of the grid| | 0° W  360° E | 
+
+## File name nomenclature 
+
+The files have the following nomenclature:
+
+{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
+
+where :
+
+* __YYYYMMDD__ : Year, month and day of the beginning of the forecast
+* __T__: Time delimiter according to ISO8601 standards
+* __HH__: UTC run time [00, 12]
+* __Z__: Time zone (UTC time)
+* __MSC__: Constant string for Meteorological Service of Canada, the data source
+* __GDPS__: Constant string indicating that the data come from the Global Deterministic Prediction System (experimental version)
+* __VAR__: Type of variable contained in the file (e.g. UGRD)
+* __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, EATM for the integral of the column, DBS-10-20cm layer between 10 and 20cm below the surface, AGL-10m for the height of 10m above ground]
+* __Grid__ : Horizontal grid [LatLon]
+* __resolution__ : 0.15. Means a resolution of 0.15° (approx. 15km) in longitudinal and latitudinal directions
+* __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084, 087, 090, …, 240]
+* __grib2__: Constant character string indicating that the format is GRIB2.
+
+Examples of filenames :
+
+* 20250529T12Z_MSC_GDPS_GeopotentialHeight_IsbL-0350_LatLon0.15_PT018H.grib2
+* 20250529T12Z_MSC_GDPS_SoilTemp_Sfc_LatLon0.15_PT018H.grib2
+
 ## Levels
 
 Vertical coverage of three-dimensional fields is provided by up to 33 isobaric levels.

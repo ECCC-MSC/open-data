@@ -121,3 +121,35 @@ La chronologie des changements apportés au Système global de prévision déter
     }
     head.appendChild(js);
 </script>
+
+# Données et produits du Système global de prévision déterministe expérimental
+
+Le Système global de prévision déterministe (SGPD) expérimental est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE), piloté spectralement ....... A COMPLETER
+
+## Accès
+
+### Comment accéder aux données
+
+Ces données expérimentales sont respectivement disponibles l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+
+- [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
+- [Données GRIB2 de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
+
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
+
+### Licence
+
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+
+### Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+
+## Documentation technique
+
+- [Version actuelle du Système global de prévision déterministe expérimental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_f.pdf)
+- [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
+
+
+
+
