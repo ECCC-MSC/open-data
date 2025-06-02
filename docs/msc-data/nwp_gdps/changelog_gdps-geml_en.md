@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GEML](readme_geml_en.md) > GEML Changelog
+[TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GEML](readme_gdps_en.md) > GEML Changelog
 
 # Chronology of changes to the Global Environmental eMuLator
 

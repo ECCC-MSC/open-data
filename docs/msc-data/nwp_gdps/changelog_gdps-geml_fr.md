@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [GEML](readme_geml_fr.md) > Changements au GEML
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [GEML](readme_gdps_fr.md) > Changements au GEML
 
 # Chronologie des changements apportés au Global Environnemental éMuLateur (GEML)
 
