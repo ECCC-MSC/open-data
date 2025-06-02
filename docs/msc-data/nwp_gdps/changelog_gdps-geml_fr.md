@@ -1,4 +1,4 @@
-[In English](changelog_geml_en.md)
+[In English](changelog_gdps-geml_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
