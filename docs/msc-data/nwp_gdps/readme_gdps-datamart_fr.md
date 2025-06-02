@@ -14,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à adresse suivante :
+Les données sont accessibles à l'adresse suivante :
 
 [https://dd.meteo.gc.ca/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_global)
 
@@ -70,7 +70,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à adresse suivante :
+Les données sont accessibles à l'adresse suivante :
 
 [https://dd.meteo.gc.ca/model_gdps/{RES}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gdps)
 
@@ -89,7 +89,7 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 | ni | 2400 |
 | nj | 1201 | 
 | résolution | 0.15° |
-| coordonnées du premier point de grille | 0° W  360° E | 
+| orientation de la grille | 0° W  360° E | 
 
 ## Nomenclature des noms de fichiers 
 
@@ -106,7 +106,7 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __GDPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision déterministe (version expérimentale)
 * __VAR__ : Type de variable contenu dans le fichier (ex: AirTemp).
-* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: Sfc pour la surface, EATM pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface, AGL-10m pour la hauteur de 10m au-dessus du sol]
+* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: Sfc pour la surface, EAtm pour l’intégrale de la colonne, DBS-10to20cm couche entre 10 et 20cm sous la surface, AGL-10m pour la hauteur de 10m au-dessus du sol]
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]
@@ -154,7 +154,7 @@ Notes :
 * La direction des composantes u (UGRD) et v (VGRD) du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j. Veuillez vous rérérer à la table de code 7 du standard GRIB pour de plus amples informations. 
 * Les paramètres NLWRS_SFC, DSWRF_NTAT, DLWRF_NTAT sont donnés en quantités accumulées. L’intervalle temporel d’accumulation est spécifié selon la valeur numéro 4 de la table de code 5 du standard GRIB. En raison de l’accumulation sur une période, les unités d’origine (watts par mètre carré) deviennent des joules par mètre carré.   
 * Le paramètre représentant l’humidité dans le modèle est l’humidité spécifique (SPFH). C’est ce paramètre qui devrait être utilisé pour toute application de PNT. La dépression du point de rosée (DEPR) est un paramètre diagnostique déconseillé pour les applications de haute précision.
-* La topographie (altitude géopotentielle de surface, HGT_SFC) est disponible à l'heure de prévision 00h de chacune des passes du modèle.
+* La topographie (altitude géopotentielle de surface, HGT) est disponible à l'heure de prévision 00h de chacune des passes du modèle.
 * Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:
     * Passe de 00Z: 18h à 234h, toutes les 3 heures
     * Passe de 12Z: 6h à 222h, toutes les 3 heures
