@@ -37,8 +37,6 @@ Values given to the parameters of the 15km latitude-longitude grid:
 
 ## File name nomenclature 
 
-NOTE: ALL HOURS ARE IN UTC.
-
 The files have the following nomenclature:
 
 CMC_glb_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
@@ -65,7 +63,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 # Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format
 
-The fields in the experimental GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
+The fields in the GRIB2 dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
 
 ## Data location
 
@@ -92,7 +90,7 @@ Values given to the parameters of the 15km latitude-longitude grid:
 | ni | 2400 |
 | nj | 1201 | 
 | resolution | 0.15° |
-| orientation of the grid| | 0° W  360° E | 
+| orientation of the grid | 0° W  360° E | 
 
 ## File name nomenclature 
 
@@ -109,7 +107,7 @@ where :
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __GDPS__: Constant string indicating that the data come from the Global Deterministic Prediction System (experimental version)
 * __VAR__: Type of variable contained in the file (e.g. UGRD)
-* __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, EATM for the integral of the column, DBS-10-20cm layer between 10 and 20cm below the surface, AGL-10m for the height of 10m above ground]
+* __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, EAtm for the integral of the column, DBS-10to20cm layer between 10 and 20cm below the surface, AGL-10m for the height of 10m above ground]
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.15. Means a resolution of 0.15° (approx. 15km) in longitudinal and latitudinal directions
 * __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084, 087, 090, …, 240]
@@ -157,7 +155,7 @@ Notes :
 * u (UGRD) and v (VGRD) components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates. Please refer to Code Table 7 of the GRIB standard for further details.    
 * Radiation fluxes parameters NLWRS_SFC, DSWRF_NTAT, and DLWRF_NTAT are encoded as accumulated values, as per value 4 of the Time Range Indicator (Code Table 5 of the GRIB format standard). This changes the unit from Watts per square metre to Joules per square meter.    
 * Specific Humidity (SPFH) is the model's native moisture variable. It should be used in all NWP applications. Dew point depression (DEPR) is a diagnostic parameter and is not meant for use in high-precision applications.
-* Topography (surface geopotential height, HGT_SFC) is available at 00h for each model run.
+* Topography (surface geopotential height, HGT) is available at 00h for each model run.
 * UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:
     * 00Z run: 18h to 234h, every 3 hours
     * 12Z run: 6h to 222h, every 3 hours
