@@ -6,7 +6,7 @@
 
 # Experimental Global Environmental eMuLator (GDPS-GEML) data in GRIB2 format
 
-The Global Environmental eMuLator (GEML) is a component of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system)..... TO BE COMPLETED
+The Global Environmental eMuLator (GEML) is a component of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) and is an artificial intelligence (AI)-based weather emulator trained on past atmospheric states. Forecasts are carried out twice daily, each with a 10-day lead time. It generates the reference large-scale temperature and horizontal wind fields, toward which GDPS’s GEM forecasts are spectrally nudged. The geographical coverage is global with a horizontal resolution of 28 km. Data is available on 13 pressure levels, and employs a uniform latitude–longitude grid with 0.25-degree grid resolution. Six atmospheric variables defined on the 13 pressure levels, along with 4 surface variables are available every 6 hours.
 
 ## Data location
 

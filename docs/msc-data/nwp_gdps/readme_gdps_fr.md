@@ -116,7 +116,7 @@ La chronologie des changements apportés au Système global de prévision déter
 
 # Données du Système global de prévision déterministe expérimental
 
-Le Système global de prévision déterministe (SGPD) expérimental est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE), piloté spectralement ....... A COMPLETER
+Le Système global de prévision déterministe (SGPD) expérimental est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE) où __la température et les composantes horizontales du vent aux grandes échelles prévues par GEM sont pilotées spectralement par les prévisions du [Global Environnemental éMuLateur (GEML)](readme_gdps-geml-datamart_fr.md), le modèle météorologique d'ECCC entraîné par des données et basé sur l'intelligence artificielle (IA)__. Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
 
 ## Accès
 
