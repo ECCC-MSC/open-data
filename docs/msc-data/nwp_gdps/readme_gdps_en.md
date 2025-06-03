@@ -127,7 +127,7 @@ The experimental Global Deterministic Prediction System (GDPS) is a coupled atmo
 This experimental data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
 * [Experimental data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
-* [Experimental GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md)
+* [Experimental GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format)
 * [Experimental Global Environmental eMuLator (GEML) GRIB2 data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
