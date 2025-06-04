@@ -6,7 +6,11 @@
 
 # Données expérimentales GRIB2 du Global Environnemental éMuLateur (SGPD-GEML)
 
-Le Global Environnemental éMuLateur (GEML) est un composant du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental). Il s'agit d'un émulateur météorologique basé sur l'intelligence artificielle (IA) et entraîné sur des états atmosphériques passés. Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. Il génère les champs de référence de température et de vent horizontal à grande échelle vers lesquels les prévisions de GEM dans le SGPD sont pilotées spectralement. La couverture géographique est globale avec une résolution horizontale de 28 km. Les données sont offertes sur 13 niveaux verticaux et sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.25 degré. Six variables atmosphériques définies sur les 13 niveaux de pression, ainsi que 4 variables de surface sont disponibles toutes les 6 heures.
+Le Global Environnemental éMuLateur (GEML) est un composant du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental). Il s'agit d'un émulateur météorologique basé sur l'intelligence artificielle (IA) et entraîné sur des états atmosphériques passés.
+
+Plus précisément, ce modèle GEML est basé sur des données compatibles avec la version ¼°, 13 niveaux du modèle [GraphCast (Lam et al. 2023)](https://www.science.org/doi/10.1126/science.adi2336) de la compagnie DeepMind. Il a été entraîné et affiné par ECCC, à l'aide des données ERA5 (1979-2016) et des analyses opérationnelles (2016-2021) du CEPMMT (ECMWF). Les [poids recalculés](https://huggingface.co/ECCC-ASTD-MRD/geml) sont également disponibles au public.
+
+Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. Il génère les champs de référence de température et de vent horizontal à grande échelle vers lesquels les prévisions de GEM dans le SGPD sont pilotées spectralement. La couverture géographique est globale avec une résolution horizontale de 28 km. Les données sont offertes sur 13 niveaux verticaux et sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.25 degré. Six variables atmosphériques définies sur les 13 niveaux de pression, ainsi que 4 variables de surface sont disponibles toutes les 6 heures.
 
 ## Adresse des données 
 
@@ -30,10 +34,10 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 
 | Paramètre | Valeur |
 | ------ | ------ |
-| ni | A COMPLÉTER |
-| nj | A COMPLÉTER | 
+| ni | 1440 |
+| nj | 721 | 
 | résolution | 0.25° |
-| orientation de la grille | A COMPLÉTER | 
+| orientation de la grille | 0° W  359.75° E | 
 
 ## Nomenclature des noms de fichiers 
 

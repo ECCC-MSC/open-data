@@ -90,7 +90,7 @@ Values given to the parameters of the 15km latitude-longitude grid:
 | ni | 2400 |
 | nj | 1201 | 
 | resolution | 0.15° |
-| orientation of the grid | 0° W  360° E | 
+| orientation of the grid | 0° W  359.85° E | 
 
 ## File name nomenclature 
 
