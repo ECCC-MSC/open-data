@@ -124,16 +124,17 @@ Le Système global de prévision déterministe (SGPD) expérimental est un modè
 
 Ces données expérimentales sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-- [Données expérimentales disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
-- [Données GRIB2 expérimentales de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md#données-grib2-du-système-global-de-prévision-déterministe-sgpd-expérimental)
-- [Données GRIB2 expérimentales du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
+* [Données expérimentales disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
+* [Données GRIB2 expérimentales de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md#données-grib2-du-système-global-de-prévision-déterministe-sgpd-expérimental)
+* [Données GRIB2 expérimentales du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
 
 ## Documentation technique
 
-- [Version actuelle du Système global de prévision déterministe expérimental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_f.pdf)
-- [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
+* [Version actuelle du Système global de prévision déterministe expérimental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_f.pdf)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
+* ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; Juillet 2024](https://arxiv.org/abs/2407.06100)
 
 # Licence
 

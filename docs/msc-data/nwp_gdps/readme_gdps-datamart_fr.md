@@ -89,7 +89,7 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 | ni | 2400 |
 | nj | 1201 | 
 | résolution | 0.15° |
-| orientation de la grille | 0° W  360° E | 
+| orientation de la grille | 0° W  359.85° E | 
 
 ## Nomenclature des noms de fichiers 
 
