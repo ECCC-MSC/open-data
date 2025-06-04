@@ -8,7 +8,7 @@
 
 The Global Environmental eMuLator (GEML) is a component of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) and is an artificial intelligence (AI)-based weather emulator trained on past atmospheric states.
 
-More specifically, this GEML model is based on data compatible with the ¼°, 13-level version of the [GraphCast model (Lam et al. 2023)](https://www.science.org/doi/10.1126/science.adi2336) from DeepMind. It was trained and refined by ECCC, using ECMWF’s ERA5 data (1979-2016) and operational analyses (2016-2021).
+More specifically, this GEML model is based on data compatible with the ¼°, 13-level version of the [GraphCast model (Lam et al. 2023)](https://www.science.org/doi/10.1126/science.adi2336) from DeepMind. It was trained and refined by ECCC, using ECMWF’s ERA5 data (1979-2016) and operational analyses (2016-2021). The [weights have been recalculated](https://huggingface.co/ECCC-ASTD-MRD/geml) and are also available to the public.
 
 Forecasts are carried out twice daily, each with a 10-day lead time. It generates the reference large-scale temperature and horizontal wind fields, toward which GDPS’s GEM forecasts are spectrally nudged. The geographical coverage is global with a horizontal resolution of 28 km. Data is available on 13 pressure levels, and employs a uniform latitude–longitude grid with 0.25-degree grid resolution. Six atmospheric variables defined on the 13 pressure levels, along with 4 surface variables are available every 6 hours.
 
