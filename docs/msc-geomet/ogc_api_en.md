@@ -226,42 +226,30 @@ The [OGC API - Coverages](https://ogcapi.ogc.org/coverages/) standard specifies 
 
 [https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly)
 
-Retrieves detailed coverage metadata for the specified collection. This page displays the collections geographic extent, supported output forms and related links.
+Retrieves detailed coverage metadata for the specified collection. The JSON response for this page displays the collection's geographic extent, grid size, temporal extent (if available), and any other additional dimensions. The collection root page also lists supported other collection-related links such as the collection schema (available fields) and coverage URLs for each format support by the collection.
+
+##### <span class="badge badge-info">GET collections/{coverageId}/schema</span> - Coverage schema
+
+[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/schema](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/schema)
+
+Retrieves the schema of the coverage collection. The schema provides a list of available fields and their data types. The schema can be returned in JSON or HTML format and can be used to understand the available fields of the coverage data.
 
 
 ##### <span class="badge badge-info">GET collections/{coverageId}/coverage</span> - Coverage query with no parameters
 
 [https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage)
 
-Retrieves the coverage data and related self-describing information (range set, domain set, range type, metadata). It is comparable to a WCS GetCoverage response. By default, the response is returned as JSON. The URL above returns the entire coverage data for the default coverage field "tas" (surface temperature).
-
-
-##### <span class="badge badge-info">GET collections/{coverageId}/coverage/rangetype</span> - Coverage range type
-
-[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/rangetype?](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/rangetype?)
-
-Returns the range type of the coverage, that is, the semantics of the data values ​​(their components and the data type). The range type response returns a list of fields that can be queried against the coverage. For example, the query below returns the range type for the CMIP5 Historical annual anomaly collection.
-![RangeType](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/COV_rangeType.png)
-
-##### <span class="badge badge-info">GET collections/{coverageId}/coverage/domainset</span> - Coverage domain set
-
-[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/domainset](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage/domainset)
-
-Returns the domain of the coverage (the detailed n-dimensional space covered by the data). Domains include available axis labels, extent of coverage, pixel size, and resolution.
-
-![Domainset](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/COV_domainset.png)
+Returns the coverage data for the specified collection. The response will include all available data for the collection, which may be a large amount of data. It is recommended to use query parameters to filter the data returned by the coverage query. The data can be returned in different formats, such as [CoverageJSON](https://covjson.org/), GRIB, or NetCDF, depending on the collection and its supported output formats. See the links contained in the collection's root page for its available formats.
 
 ##### <span class="badge badge-info">GET collections/{coverageId}/coverage?{params}</span> - Coverage with query parameters
 
-Queries against coverage collections allow for spatial, temporal, and range type filtering against the n-dimensionsal space (domain set axes) of the coverage itself. The first parameter of a query must be specified with `?` and subsequent parameters with `&`.
+Queries against coverage collections allow for spatial, temporal, and field filtering against the n-dimensionsal space of the coverage itself//. The first parameter of a query must be specified with `?` and subsequent parameters with `&`.
 
 ### <span class="badge badge-light">Spatial</span>
 
 Query by bounding box (minx, miny,maxx, maxy).</br>
     </br>
-[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224) or
-[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224&f=NetCDF](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224&f=NetCDF)
-
+[https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&bbox=-80.557251,42.561173,-75.135498,44.805224)
 
 ### <span class="badge badge-light">Temporal</span>
 
@@ -274,21 +262,21 @@ Query for a time interval:</br>
     </br>
 [https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&datetime=1901/1905](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?f=json&datetime=1901/1905)
 
-### <span class="badge badge-light">Rangetype field</span>
+### <span class="badge badge-light">Schema field</span>
 
-Query for a specifc range type field with the `properties` query parameter. For example, the query below retrieves coverage data for the rangetype field named "sit" (sea ice thickness).
+Query for a specifc coverage field listed in the coverage schema via the `properties` query parameter. For example, the query below retrieves coverage data for the schema field named "sit" (sea ice thickness).
 </br></br>
 [https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?properties=sit](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?properties=sit)
 
-### <span class="badge badge-light">Domain set dimension</span>
+### <span class="badge badge-light">Additional dimensions</span>
 
-Query by a dimension specificied in the domain set with the `subset` query parameter.
+Query additional dimensions (other than the spatial and temporal, which are queried via the `bbox` and `datetime` query parameters respectively) with the `subset` query parameter. Additional available dimensions are listed under the `extent` key at the coverage collection root via the JSON response only.
     </br></br>
 [https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?subset=percentile(25)](https://api.weather.gc.ca/collections/climate:cmip5:historical:annual:anomaly/coverage?subset=percentile(25))
 
 ### <span class="badge badge-light">Combination of filter parameters</span>
 
-Query the coverage with a spatial and temporal filter, for a a specific rangetype field via the `properties` query parameter.</br>
+Query the coverage with a spatial filter, temporal filter, and for a specific coverage field via the `properties` query parameter.</br>
     </br>
 Returns in json format by default:
 
