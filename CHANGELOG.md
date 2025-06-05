@@ -10,6 +10,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+## 2.9.0
+
+* date: 2025-05-29
+* announcements:
+    * Announcement on June 5th, 2025
+* new content:
+    * NA
+* improvements:
+    * Updated GeoMet-OGC-API documentation for changes to OGC API - Coverages specification
+* bug fixes:
+
 ## 2.8.10
 
 * date: 2025-05-29
