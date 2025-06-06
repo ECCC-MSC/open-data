@@ -6,16 +6,17 @@
 
 # Data and Products of the experimental Canadian Arctic Prediction System (CAPS)
 
-The Canadian Arctic Prediction System (CAPS) provides an important contribution to various scientific experiments that are part of the Year of polar prediction (YOPP) and provides km-scale NWP forecasts for the canadian Arctic. The CAPS is a GEM-based deterministic prediction system, very similar to the current High Resolution Deterministic Prediction System North domain (HRDPS-North) which will be replaced by the CAPS. CAPS is downscaled from ECCC's Global Deterministic Prediction System, the GDPS, which provides initial conditions and lateral boundary conditions for the atmospheric fields.  In the current system, which is not yet coupled to the ice-ocean prediction system, all initial surface fields come from the global configuration of the land-data assimilation system, CaLDAS. The system is running on a 3 km domain of 2250 x 1850 horizontal grid points (covering the entire Arctic basin and Hudson Bay) and 62 vertical levels. The major differences between CAPS and the current HRDPS is the introduction of the predicted particle properties (P3) cloud microphysics scheme, which is responsible for parameterizing the grid-scale clouds and precipitation.
+The Canadian Arctic Prediction System (CAPS) is an experimental forecast system based on a limited-area (LAM) configuration of the Global Environmental Multiscale model (GEM). It covers the entire Arctic basin and Hudson Bay, with an horizontal grid spacing of approximately 3 km. The lowest momentum level is at an altitude of approximately 40 m. The CAPS is piloted by ECCC’s Global Deterministic Prediction System (GDPS), which provides initial and lateral boundary conditions for the atmospheric fields. The initial hydrometeor fields are recycled from the 12h forecast of the previous CAPS integration. The ocean-ice surface fields are provided through a two-way coupling with an ice-ocean model, whose configuration follows that of the Regional Ice Ocean Prediction System (RIOPS). The CAPS runs on a rotated lat-lon grid twice per day and is initialized at 00 and 12 UTC respectively with 48h integration.
 
 ## Access
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md)
+This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
-* [Experimental GRIB2 data available on the MSC testing data repository DD-Alpha](readme_caps-datamart-alpha_en.md) 
-* [Data available via geospatial web services](../../msc-geomet/readme_en.md) 
+* [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
+* [Experimental GRIB2 and NetCDF data available on the MSC Datamart](readme_caps-datamart_en.md)
+* [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_caps-weong-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -33,7 +34,7 @@ Upcoming.
 
 ## Technical documentation
 
-* [Technical Specifications](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf)
+Upcoming.
 
 ## Changelog
 

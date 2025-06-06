@@ -6,16 +6,17 @@
 
 # Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
-Le système canadien de prévision de l'Arctique (SCPA) fournira une contribution importante à diverses expériences scientifiques qui font partie de l'année de la prévision polaire (YOPP) et fournira des prévisions numériques du temps à l'échelle kilométrique dans l'Arctique canadien. SCPA est un système de prévision basé sur GEM, très similaire au système à haute résolution de prévision déterministe (SHRPD), dont le domaine nord actuel sera remplacé par le SCPA. C'est un modèle à réduction d'échelle du système de prévision global déterministe (SGPD) de ECCC qui lui fournit les conditions initiales et aux frontières pour les champs atmosphériques. Dans le système actuel, qui n'est pour le moment pas encore couplé avec le système de prévision océan-glace, tous les champs de surface initiaux proviennent de la configuration globale du système d'assimilation de surface CaLDAS. SCPA tourne sur une grille horizontale 2250 x 1850 , d'une résolution approximative de 3 km (couvrant le bassin arctique et la Baie d'Hudson). La différence majeure entre le SCPA et le SHRPD actuel est l'introduction de la nouvelle méthode de calcul pour la microphysique des nuages appelée prédiction des propriétés des particules (P3) qui est responsable du paramétrage des nuages et des précipitations.
+Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision expérimental basé sur une configuration à aire limitée (LAM) du modèle Global Environmental Multiscale (GEM). Il couvre l'ensemble du bassin arctique et la baie d'Hudson avec une résolution de la grille horizontale d'environ 3km. Le niveau momentum le plus bas se situe à une altitude d'environ 40m. Le SCPA 3km est piloté par le Système global de prévision déterministe global (SGPD) de ECCC, qui fournit des conditions initiales et latérales pour les champs atmosphériques. Les champs hydrométéorologiques initiaux sont recyclés à partir de la prévision à 12 heures de l'intégration précédente du SCPA.  Les champs de surface océan-glace sont fournis grâce à un couplage bidirectionnel avec un modèle glace-océan, dont la configuration suit celle du Système régional de prévision océan-glace (SRPOG). Le SCPA tourne deux fois par jour sur une grille lat-lon tournée et est initialisé à 00 et 12 UTC respectivement avec une intégration de 48 heures."
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont disponibles via les services de données ouvertes selon:
+Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données GRIB2 expérimentales disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_caps-datamart-alpha_fr.md) 
-* [Données disponibles via les services web géospatiaux](../../msc-geomet/readme_fr.md)
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
+* [Données GRIB2 et NetCDF expérimentales disponibles sur le Datamart du SMC](readme_caps-datamart_fr.md)
+* [Données GRIB2  expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_caps-weong-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -33,8 +34,9 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
-* [Spécifications techniques](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf) (version anglaise seulement)
+A venir.
 
 ## Registre des changements 
 
 La chronologie des changements apportés au Système canadien de prévision de l'Arctique (SCPA) est disponible [ici](changelog_caps_fr.md).
+

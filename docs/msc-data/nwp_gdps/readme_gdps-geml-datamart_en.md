@@ -54,7 +54,7 @@ where :
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __GDPS-GEML__: Constant string indicating that the data come from the experimental Global Environmental eMuLator (GEML), a component of the experimental Global Deterministic Prediction System (GDPS)
 * __VAR__: Type of variable contained in the file (e.g. AirTemp)
-* __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, AGL-2m for the height of 2m above ground, Isbl-0850 for the geopotential height at 850mb]
+* __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, AGL-2m for the height of 2m above ground, IsbL-0850 for the geopotential height at 850mb]
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.25. Means a resolution of 0.25° (approx. 25km) in longitudinal and latitudinal directions
 * __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 006, 012, ..., 240]
@@ -62,8 +62,8 @@ where :
 
 Examples of filenames :
 
-* 20250529T12Z_MSC_GDPS-GEML_SpecificHumidity_AGL-2m_LatLon0.25_PT012H.grib2
-* 20250529T00Z_MSC_GDPS-GEML_WindU_Isbl-0050_LatLon0.25_PT234H.grib2
+* 20250529T12Z_MSC_GDPS-GEML_SpecificHumidity_IsbL-0925_LatLon0.25_PT012H.grib2
+* 20250529T00Z_MSC_GDPS-GEML_WindU_AGL-10m_LatLon0.25_PT234H.grib2
 
 ## List of variables
 

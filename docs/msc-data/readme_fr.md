@@ -126,7 +126,6 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 
 ## Données ouvertes retirées
 
-* [Système canadien de prévision de l'Arctique (SCPA) expérimental](nwp_caps/readme_caps_fr.md)
 * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
 * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
 * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
