@@ -10,7 +10,7 @@ The Canadian Centre for Meteorological and Environmental Prediction (CCMEP) prov
 
 The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions. 
 
-RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 2 day forecasts daily based at [00, 06, 12, 18] UTC on a subset of the 1/12° resolution global tri-polar grid (ORCA12). 
+RIOPS is based on the NEMO-CICE ice-ocean model and produces regional sea ice and ocean analyses and 84 hours forecasts daily based at [00, 06, 12, 18] UTC on a subset of the 1/12° resolution global tri-polar grid (ORCA12). 
 
 RIOPS includes a 3DVar ice concentration analysis (assimilating sattelite remote sensing and Canadian Ice Service ice charts) while the large scales of the ocean analysis are constrained by spectrally nudging the temperature and salinity fields to those of the CCMEP Global Ice Ocean Prediction System (which itself includes a full multivariate assimilation system that combines satellite observations with in situ observations). 
 
