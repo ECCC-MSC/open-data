@@ -126,7 +126,6 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 
 ## Retired open data
 
-* [Experimental Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
 * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
 * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
 * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)

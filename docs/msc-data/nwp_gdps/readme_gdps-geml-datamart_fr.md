@@ -62,8 +62,8 @@ où :
 
 Exemples de noms de fichiers :
 
-* 20250529T12Z_MSC_GDPS-GEML_SpecificHumidity_AGL-2m_LatLon0.25_PT012H.grib2
-* 20250529T00Z_MSC_GDPS-GEML_WindU_IsbL-0050_LatLon0.25_PT234H.grib2
+* 20250529T12Z_MSC_GDPS-GEML_SpecificHumidity_IsbL-0925_LatLon0.25_PT012H.grib2
+* 20250529T00Z_MSC_GDPS-GEML_WindU_AGL-10m_LatLon0.25_PT234H.grib2
 
 ## Liste des variables
 

@@ -135,6 +135,7 @@ An [overview and examples to access and use the Meteorological Service of Canada
 ## Technical documentation
 
 * [Current version of the experimental Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_e.pdf)
+* [Experimental Global Deterministic Prediction System factsheet](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-exp_e.pdf) 
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg)
 * ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; July 2024](https://arxiv.org/abs/2407.06100)
 

@@ -117,7 +117,7 @@ Exemples de noms de fichiers :
 * 20250529T12Z_MSC_GDPS_GeopotentialHeight_IsbL-0350_LatLon0.15_PT018H.grib2
 * 20250529T12Z_MSC_GDPS_SoilTemp_Sfc_LatLon0.15_PT018H.grib2
 
-## Niveaux  
+# Niveaux  
 
 La couverture verticale des champs tridimensionnels peut atteindre jusqu’à 33 niveaux isobariques.
 
@@ -138,7 +138,7 @@ Autres types de niveaux qui pourraient être applicables à certains champs :
 * Sommet théorique de l’atmosphère
 * Colonne atmosphérique entière
 
-## Liste des variables
+# Liste des variables
 
 <table id="csv-table" class="display"></table>
 
@@ -159,11 +159,11 @@ Notes :
     * Passe de 00Z: 18h à 234h, toutes les 3 heures
     * Passe de 12Z: 6h à 222h, toutes les 3 heures
 
-## Support
+# Support
 
 Pour toute question relative à ces données, merci de [nous contacter](https://meteo.gc.ca/mainmenu/contact_us_f.html). 
 
-## Annonces de la liste de diffusion dd_info 
+# Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
 

@@ -118,7 +118,7 @@ Examples of filenames :
 * 20250529T12Z_MSC_GDPS_GeopotentialHeight_IsbL-0350_LatLon0.15_PT018H.grib2
 * 20250529T12Z_MSC_GDPS_SoilTemp_Sfc_LatLon0.15_PT018H.grib2
 
-## Levels
+# Levels
 
 Vertical coverage of three-dimensional fields is provided by up to 33 isobaric levels.
 
@@ -139,7 +139,7 @@ Additional levels that may be applicable to a given parameter are :
 * Nominal top of the atmosphere
 * Entire atmospheric column
 
-## List of variables
+# List of variables
 
 <table id="csv-table" class="display"></table>
 
@@ -160,11 +160,11 @@ Notes :
     * 00Z run: 18h to 234h, every 3 hours
     * 12Z run: 6h to 222h, every 3 hours
     
-## Support
+# Support
 
 If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
 
-## Announcements from the dd_info mailing list 
+# Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available in the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
 
