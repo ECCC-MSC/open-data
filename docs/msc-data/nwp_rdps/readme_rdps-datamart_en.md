@@ -26,7 +26,7 @@ where :
 
 ## Technical specification of the grids
 
-* __Polar stereographic grid__
+### Polar stereographic grid
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)
 
@@ -41,7 +41,7 @@ Values given to the parameters of the polar stereographic grid :
 | (i,j) coordinate of North Pole | (456.2; 732.4) |
 | grid orientation (with respect to j axis) | -111.0° |
 
-* __Rotated lat-lon grid__
+### Rotated lat-lon grid
 
 ![Rotated lat-lon grid image of RDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
 
@@ -83,7 +83,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 ### Rotated lat-lon grid
 
-Files have the following nomenclature:
+The files have the following nomenclature:
 
 `{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
 

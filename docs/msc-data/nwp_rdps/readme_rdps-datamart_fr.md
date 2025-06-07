@@ -19,6 +19,7 @@ Les données sont accessibles aux adresses suivantes :
 
 * Données sur la grille polaire stéréographique : [https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/10km/grib2)
 * Données sur la grille lat-lon tournée : [https://dd.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_rdps/10km/)
+
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
@@ -26,7 +27,7 @@ où :
 
 ## Spécification technique des grilles
 
-* Grille polaire stéréographique
+### Grille polaire stéréographique
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)
 
@@ -41,7 +42,7 @@ Valeurs données aux paramètres de la grille polaire stéréographique :
 | coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
 | orientation de la grille (par rapport à l’axe des j) | -111,0° | 
 
-* Grille lat-lon tournée
+### Grille lat-lon tournée
 
 ![Image de la grille lat-lon tournée SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
 
@@ -81,7 +82,9 @@ Le fichier a été créé par le CMC et contient une prévision du SRPD. Il cont
 
 ### Grille lat-lon tournée
 
- `{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+Les fichiers ont la nomenclature suivante :
+
+`{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 où :
 
