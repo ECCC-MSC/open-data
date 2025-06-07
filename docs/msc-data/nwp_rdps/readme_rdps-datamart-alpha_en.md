@@ -6,7 +6,7 @@
 
 # Experimental GRIB2 Weather Elements on the Grid data based on the Regional Deterministic Prediction System (RDPS)
 
-For nearly three decades, the [SCRIBE system](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html) has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.
+For nearly three decades, the SCRIBE system has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.
 
 The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the comprehension of meteorological forecasts, and and may require frequent interventions from forecasters.
 
@@ -20,9 +20,10 @@ MSC testing data repository DD-Alpha data can be [automatically retrieved with t
 
 The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
 
-The rotated lat-lon grid data can be accessed at the following address: 
+The rotated lat-lon grid data can be accessed at the following addresses: 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+* Old nomenclature: [https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+* New nomenclature: [https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_rdps/10km/)
 
 where :
 
@@ -31,7 +32,10 @@ where :
 
 A 24-hour history is kept in this directory.
 
-Note: Some algorithms require variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
+__Important  notes__:
+
+* The files contained in the directory `https://dd.alpha.weather.gc.ca/model_gdps` comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in [Camel case](https://en.wikipedia.org/wiki/Camel_case)  style. These files will replace the files contained in the directory `https://dd.alpha.weather.gc.ca/model_gem_regional` in the coming months.
+* Some algorithms require variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
 ## Technical specification of the grid
 
@@ -60,16 +64,17 @@ where:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __RDPS-WEonG__ : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")
-* __VAR__ : Variables contained in the files (ex: VISIFG).
+* __VAR__ : Variables contained in the files according to the old nomenclature (acronym, ex: VISIFG) or the new nomenclature (Camel case, ex: LiquidFogVisibility)
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions
 * __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084]
 * __grib2__: Constant string indicating that the format is GRIB2.
 
-Example file name:
+Examples file names:
 
-* 20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2
+* 20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2
+* 20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2
 
 ## List of variables
 
@@ -91,3 +96,4 @@ If you have any questions regarding this data, please [contact us](https://meteo
 ## Announcements from the dd_info mailing list 
 
 Announcements related to this dataset are available via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) list.
+

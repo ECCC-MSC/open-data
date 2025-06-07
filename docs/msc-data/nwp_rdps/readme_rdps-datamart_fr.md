@@ -7,8 +7,7 @@
 
 # Données GRIB2 du Système régional de prévision déterministe (SRPD)
 
-Les champs du jeu de données GRIB2 du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles sur une grille polaire stéréographique de 935 x 824 points couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km à 60 degrés nord.
-
+Les champs du jeu de données GRIB2 du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles à la fois sur une grille polaire stéréographique couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km et sur une grille lat-lon tournée sur un domaine plus vaste couvrant également les Caraïbes et le Mexique au complet ainsi qu’une partie de l’Europe du Nord.
 
 ## Adresse des données 
 
@@ -16,16 +15,19 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sont accessibles à l’adresse suivante : 
+Les données sont accessibles aux adresses suivantes : 
 
-[https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/10km/grib2)
+* Données sur la grille polaire stéréographique : [https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/10km/grib2)
+* Données sur la grille lat-lon tournée : [https://dd.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_rdps/10km/)
 
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 084] 
 
-## Spécification technique de la grille
+## Spécification technique des grilles
+
+### Grille polaire stéréographique
 
 ![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)
 
@@ -40,13 +42,26 @@ Valeurs données aux paramètres de la grille polaire stéréographique :
 | coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
 | orientation de la grille (par rapport à l’axe des j) | -111,0° | 
 
+### Grille lat-lon tournée
+
+![Image de la grille lat-lon tournée SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
+
+Valeurs données aux paramètres de la grille lat-lon tournée :
+
+| Paramètre | Valeur |
+| ------ | ------ |
+| ni | 1102 |
+| nj | 1076 | 
+| résolution à 60° N | 10km |
+| coordonnées du premier point de grille | 48.5° S ; 62.6° W |
+
 ## Nomenclature des noms de fichiers 
 
-NOTE: TOUTES LES HEURES SONT EN UTC.
+### Grille polaire stéréographique
 
 Les fichiers ont la nomenclature suivante :
 
-CMC_reg_Variable_TypedeNiveau_Niveau_ps10km_YYYYMMDDHH_Phhh.grib2
+`CMC_reg_Variable_TypedeNiveau_Niveau_ps10km_YYYYMMDDHH_Phhh.grib2`
 
 où :
 
@@ -64,6 +79,32 @@ où :
 Exemple de nom de fichier : CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
 
 Le fichier a été créé par le CMC et contient une prévision du SRPD. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 1015 mb (ISBL_1015), sur une grille polaire stéréographique à une résolution de 10 km (ps10km). Il débute le 13 septembre 2010 à 06Z (22010091306). Il contient l’heure de prévision 27 (P027) en format GRIB2 (.grib2).
+
+### Grille lat-lon tournée
+
+Les fichiers ont la nomenclature suivante :
+
+`{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+
+où :
+
+* __YYYYMMDD__ : Année, mois et jour du début de la prévision
+* __T__ : Délimiteur temporel selon les normes ISO8601
+* __HH__ : Heure UTC de la passe [00, 12]
+* __Z__ : Fuseau horaire (heure UTC)
+* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
+* __RDPS__ : Chaîne de caractères constante indiquant que les données proviennent du Système régional de prévision déterministe (RDPS en anglais)
+* __VAR__ : Type de variable contenu dans le fichier (ex: AirTemp).
+* __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: Sfc pour la surface, EAtm pour l’intégrale de la colonne, DBS-10-20cm couche entre 10 et 20cm sous la surface, AGL-10m pour la hauteur de 10m au-dessus du sol]
+* __Grille__ : Grille horizontale [RLatLon]
+* __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084]
+* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+
+Exemples de noms de fichier :
+
+* 20250604T00Z_MSC_RDPS_GeopotentialHeight_IsbL-0100_RLatLon0.09_PT024H.grib2
+* 20250604T00Z_MSC_RDPS_WindDir_AGL-10m_RLatLon0.09_PT024H.grib2
 
 ## Niveaux  
 
@@ -116,3 +157,4 @@ Pour toute question relative à ces données, merci de [nous contacter](https://
 ## Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
+
