@@ -1,4 +1,4 @@
-[In English](readme_rdps-datamart-alpha_en.md)
+In English](readme_rdps-datamart-alpha_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
@@ -6,7 +6,7 @@
 
 # Données GRIB2 expérimentales d'éléments du temps sur grille basés sur le Système régional de prévision déterministe (SRPD)
 
-Depuis près de trois décennies, le [Système SCRIBE](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_f.html) est utilisé pour aider les météorologues à préparer les bulletins météorologiques. La philosophie derrière SCRIBE est la suivante : un ensemble de matrices d’éléments du temps est généré pour certaines stations ou points d’échantillonnage, pour ensuite être transmis aux centres météorologiques régionaux. Les matrices sont ensuite décodées par SCRIBE et peuvent être modifiées via l’interface graphique par les usagers. Les données qui en résultent sont ensuite fournies à un générateur de texte, qui produit des prévisions publiques bilingues en langage clair.
+Depuis près de trois décennies, le Système SCRIBE est utilisé pour aider les météorologues à préparer les bulletins météorologiques. La philosophie derrière SCRIBE est la suivante : un ensemble de matrices d’éléments du temps est généré pour certaines stations ou points d’échantillonnage, pour ensuite être transmis aux centres météorologiques régionaux. Les matrices sont ensuite décodées par SCRIBE et peuvent être modifiées via l’interface graphique par les usagers. Les données qui en résultent sont ensuite fournies à un générateur de texte, qui produit des prévisions publiques bilingues en langage clair.
 
 Les différentes règles reliées aux matrices Scribe entravent l’innovation scientifique, n’exploitent pas la richesse des Prévision Numérique du Temps (PNT), réduisent la compréhension des prévisions météorologiques, et peuvent demander l’intervention fréquente des prévisionnistes.
 
@@ -20,9 +20,10 @@ Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sur grille lat-lon tournées sont accessibles à l’adresse suivante : 
+Les données sur grille lat-lon tournées sont accessibles aux adresses suivantes : 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+* Ancienne nomenclature : [https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
+* Nouvelle nomenclature : [https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_rdps/10km/)
 
 où :
 
@@ -31,7 +32,10 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-Note: Certains algorithmes ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
+__Notes importantes__ :
+
+* Les fichiers contenus dans le répertoire  https://dd.alpha.meteo.gc.ca/model_gdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style Camel Case. Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
+* Certains algorithmes ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Spécification technique de la grille
 
@@ -60,16 +64,17 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFG).
+* __VAR__ : Type de variable contenu dans le fichier selon l’ancienne nomenclature (acronyme, ex : VISIFG) ou la nouvelle nomenclature (Camel case, ex: LiquidFogVisibility) .
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
-Exemple de nom de fichier :
+Exemples de noms de fichier :
 
-* 20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2
+* 20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2
+* 20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2
 
 ## Liste des variables
 
@@ -91,3 +96,4 @@ Pour toute question relative à ces données, merci de [communiquer avec nous](h
 ## Annonces de la liste de diffusion dd_info 
 
 Les annonces reliées à ce jeu de données sont disponibles via la liste [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
+
