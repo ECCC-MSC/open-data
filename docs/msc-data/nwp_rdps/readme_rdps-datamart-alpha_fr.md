@@ -34,7 +34,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 __Notes importantes__ :
 
-* Les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_rdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style [Camel Case](https://fr.wikipedia.org/wiki/Camel_case). Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
+* Les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_rdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style [Camel case](https://fr.wikipedia.org/wiki/Camel_case). Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
 * Certains algorithmes ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Spécification technique de la grille
