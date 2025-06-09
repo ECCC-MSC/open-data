@@ -36,7 +36,7 @@ Les principales étapes d'utilisation :
 
 Couches :
 
-* Ajouter des couches dans le panneau `GeoMet-Météo` ou `GeoMet-Climat`
+* Ajouter des couches dans le panneau `GeoMet-Météo` ou `GeoMet-Climat`. Des sources supplémentaires de données peuvent être ajoutées via le bouton `+`.
 * Parcourir l'arborescence des couches pour trouver la couche désirée
 * Utiliser la boîte de recherche pour filtrer parmi les couches disponibles
 * Cliquer sur le signe `+` pour ajouter une couche à la carte
@@ -78,7 +78,7 @@ Carte :
 
 * Agrandir et déplacer la carte sur votre zone d'intérêt
 * Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte
-* Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte. Notez que les animations ne peuvent pas être générées lorsque la carte est pivotée
+* Pivoter la carte en appuyant sur les touches _alt-shift_ et en faisant glisser la carte.
 * Sélectionner les légendes à afficher à l'aide du bouton `LÉGENDES`. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite
 * L'icône du globe en haut de la carte permet aux utilisateurs de passer d'une projection cartographique à l'autre, d'afficher des graticules et de modifier la couleur de la carte
 
