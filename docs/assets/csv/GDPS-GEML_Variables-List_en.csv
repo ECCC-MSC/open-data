@@ -1,0 +1,83 @@
+Variable,Abbreviation,Level,Unit/Value
+Geopotential,GP,50 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,100 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,150 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,200 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,250 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,300 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,400 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,500 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,600 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,700 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,850 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,925 mb,m<sup>2</sup>/s<sup>2</sup>
+Geopotential,GP,1000 mb,m<sup>2</sup>/s<sup>2</sup>
+Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa
+Specific humidity,SPFH,50 mb,kg/kg
+Specific humidity,SPFH,100 mb,kg/kg
+Specific humidity,SPFH,150 mb,kg/kg
+Specific humidity,SPFH,200 mb,kg/kg
+Specific humidity,SPFH,250 mb,kg/kg
+Specific humidity,SPFH,300 mb,kg/kg
+Specific humidity,SPFH,400 mb,kg/kg
+Specific humidity,SPFH,500 mb,kg/kg
+Specific humidity,SPFH,600 mb,kg/kg
+Specific humidity,SPFH,700 mb,kg/kg
+Specific humidity,SPFH,850 mb,kg/kg
+Specific humidity,SPFH,925 mb,kg/kg
+Specific humidity,SPFH,1000 mb,kg/kg
+Temperature,TMP,2 m Above Ground Level,K
+Temperature,TMP,50 mb,K
+Temperature,TMP,100 mb,K
+Temperature,TMP,150 mb,K
+Temperature,TMP,200 mb,K
+Temperature,TMP,250 mb,K
+Temperature,TMP,300 mb,K
+Temperature,TMP,400 mb,K
+Temperature,TMP,500 mb,K
+Temperature,TMP,600 mb,K
+Temperature,TMP,700 mb,K
+Temperature,TMP,850 mb,K
+Temperature,TMP,925 mb,K
+Temperature,TMP,1000 mb,K
+u-component of wind,UGRD,10 m Above Ground Level,m/s
+u-component of wind,UGRD,50 mb,m/s
+u-component of wind,UGRD,100 mb,m/s
+u-component of wind,UGRD,150 mb,m/s
+u-component of wind,UGRD,200 mb,m/s
+u-component of wind,UGRD,250 mb,m/s
+u-component of wind,UGRD,300 mb,m/s
+u-component of wind,UGRD,400 mb,m/s
+u-component of wind,UGRD,500 mb,m/s
+u-component of wind,UGRD,600 mb,m/s
+u-component of wind,UGRD,700 mb,m/s
+u-component of wind,UGRD,850 mb,m/s
+u-component of wind,UGRD,925 mb,m/s
+u-component of wind,UGRD,1000 mb,m/s
+v-component of wind,VGRD,10 m Above Ground Level,m/s
+v-component of wind,VGRD,50 mb,m/s
+v-component of wind,VGRD,100 mb,m/s
+v-component of wind,VGRD,150 mb,m/s
+v-component of wind,VGRD,200 mb,m/s
+v-component of wind,VGRD,250 mb,m/s
+v-component of wind,VGRD,300 mb,m/s
+v-component of wind,VGRD,400 mb,m/s
+v-component of wind,VGRD,500 mb,m/s
+v-component of wind,VGRD,600 mb,m/s
+v-component of wind,VGRD,700 mb,m/s
+v-component of wind,VGRD,850 mb,m/s
+v-component of wind,VGRD,925 mb,m/s
+v-component of wind,VGRD,1000 mb,m/s
+Vertical velocity (pressure),VVEL,50 mb,Pa/s
+Vertical velocity (pressure),VVEL,100 mb,Pa/s
+Vertical velocity (pressure),VVEL,150 mb,Pa/s
+Vertical velocity (pressure),VVEL,200 mb,Pa/s
+Vertical velocity (pressure),VVEL,250 mb,Pa/s
+Vertical velocity (pressure),VVEL,300 mb,Pa/s
+Vertical velocity (pressure),VVEL,400 mb,Pa/s
+Vertical velocity (pressure),VVEL,500 mb,Pa/s
+Vertical velocity (pressure),VVEL,600 mb,Pa/s
+Vertical velocity (pressure),VVEL,700 mb,Pa/s
+Vertical velocity (pressure),VVEL,850 mb,Pa/s
+Vertical velocity (pressure),VVEL,925 mb,Pa/s
+Vertical velocity (pressure),VVEL,1000 mb,Pa/s
