@@ -34,7 +34,7 @@ A 24-hour history is kept in this directory.
 
 __Important  notes__:
 
-* The files contained in the directory `https://dd.alpha.weather.gc.ca/model_gdps` comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in [Camel case](https://en.wikipedia.org/wiki/Camel_case)  style. These files will replace the files contained in the directory `https://dd.alpha.weather.gc.ca/model_gem_regional` in the coming months.
+* The files contained in the directory `https://dd.alpha.weather.gc.ca/model_rdps` comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in [Camel case](https://en.wikipedia.org/wiki/Camel_case)  style. These files will replace the files contained in the directory `https://dd.alpha.weather.gc.ca/model_gem_regional` in the coming months.
 * Some algorithms require variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
 ## Technical specification of the grid
