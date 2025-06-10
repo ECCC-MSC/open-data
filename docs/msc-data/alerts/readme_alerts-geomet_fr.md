@@ -18,7 +18,7 @@ Exemple de carte interactive présentant la couche Web Map Service (WMS) des ale
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES"/>
   </div>
 </div>
 </div>

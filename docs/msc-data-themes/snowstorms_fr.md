@@ -13,7 +13,7 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
     <div id="legend-popup-content">
-      <img id="legend-img" src="" />
+      <img id="legend-img" style="display: flex; max-height: 400px;" src="" />
     </div>
   </div>
 
@@ -25,23 +25,23 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS.ETA_SN&format=image/png&STYLE=PRECIPSNOW')">Neige accumulée</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS.ETA_SN&format=image/png&STYLE=PRECIPSNOW')">Neige accumulée</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Conditions actuelles</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Conditions actuelles</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_BlowingSnow-Prob&format=image/png&STYLE=BlowingSnow-Prob')">Probabilité de poudredrie</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_BlowingSnow-Prob&format=image/png&STYLE=BlowingSnow-Prob')">Probabilité de poudredrie</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_AirTemp&format=image/png&STYLE=TEMPERATURE-LINEAR')">Température</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_AirTemp&format=image/png&STYLE=TEMPERATURE-LINEAR')">Température</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr')">Radar pour la neige</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr')">Radar pour la neige</span>
         </label></br>
     </div>
   </div>

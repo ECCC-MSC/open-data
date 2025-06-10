@@ -17,7 +17,7 @@ Exemple de carte interactive présentant la couche [GEWPS_25km_SignificantWaveHe
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEWPS_25km_SignificantWaveHeight_01&format=image/png&STYLE=MODELWAVEHEIGHT_OCEAN_2-LINEAR"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEWPS_25km_SignificantWaveHeight_01&format=image/png&STYLE=MODELWAVEHEIGHT_OCEAN_2-LINEAR"/>
   </div>
 </div>
 </div>

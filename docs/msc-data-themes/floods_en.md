@@ -13,7 +13,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
     <div id="legend-popup-content">
-      <img id="legend-img" src="" />
+      <img id="legend-img" style="display: flex; max-height: 400px;" src="" />
     </div>
   </div>
 
@@ -21,7 +21,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR')">Quantity of precipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR')">Quantity of precipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
@@ -33,15 +33,15 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_PC&format=image/png&STYLE=CAPA24-LINEAR')">Convective precipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_PC&format=image/png&STYLE=CAPA24-LINEAR')">Convective precipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_14colors')">Radar precipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_14colors')">Radar precipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_IH&format=image/png&STYLE=CAPA24-LINEAR')">Cloud water</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_IH&format=image/png&STYLE=CAPA24-LINEAR')">Cloud water</span>
         </label></br>
     </div>
   </div>

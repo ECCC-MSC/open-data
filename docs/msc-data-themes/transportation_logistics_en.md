@@ -14,7 +14,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
     <div id="legend-popup-content">
-      <img id="legend-img" src="" />
+      <img id="legend-img" style="display: flex; max-height: 400px;" src="" />
     </div>
   </div>
 

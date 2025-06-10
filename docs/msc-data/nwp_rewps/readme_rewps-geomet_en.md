@@ -18,7 +18,7 @@ Example of a web map configured to display the [REWPS-Great-Lakes - Peak wave di
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=REWPS-Great-Lakes_2.5km_PeakWaveDir_01&STYLE"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=REWPS-Great-Lakes_2.5km_PeakWaveDir_01&STYLE"/>
   </div>
 </div>
 </div>

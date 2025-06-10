@@ -18,7 +18,7 @@ Exemple de carte interactive présentant la couche [RAQDPS.SFC_NO2](https://geo.
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2_PPBV"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2_PPBV"/>
   </div>
 </div>
 </div>

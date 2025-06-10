@@ -13,7 +13,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
     <div id="legend-popup-content">
-      <img id="legend-img" src="" />
+      <img id="legend-img" style="display: flex; max-height: 400px;" src="" />
     </div>
   </div>
 
@@ -25,23 +25,23 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_DominantPrecipType&format=image/png&STYLE=DominantPrecipType_Dis')">Dominant precipitation type</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_DominantPrecipType&format=image/png&STYLE=DominantPrecipType_Dis')">Dominant precipitation type</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_FreezingRain-Prob&format=image/png&STYLE=FreezingRain-Prob')">Probability of freezing rain</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_FreezingRain-Prob&format=image/png&STYLE=FreezingRain-Prob')">Probability of freezing rain</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.6_PRMM.ERMEAN&format=image/png&STYLE=REPS_PRMM-LINEAR')">Quantity of precipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.6_PRMM.ERMEAN&format=image/png&STYLE=REPS_PRMM-LINEAR')">Quantity of precipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS')">Gust</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS-WEonG_15km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS')">Gust</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.wxod-dev.cmc.ec.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Radar_1km_SfcPrecipType&format=image/png&STYLE=SfcPrecipType_Dis')">Radar - precipitation type</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Radar_1km_SfcPrecipType&format=image/png&STYLE=SfcPrecipType_Dis')">Radar - precipitation type</span>
         </label></br>
     </div>
   </div>

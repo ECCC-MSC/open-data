@@ -24,7 +24,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR"/>
   </div>
 </div>
 </div>

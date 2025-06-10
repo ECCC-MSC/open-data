@@ -36,66 +36,66 @@ const dateOptions = {
 };
 
 let layers = [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
+  new ol.layer.Tile({
+    source: new ol.source.OSM()
+  }),
+  // *** 1
+  new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex', 'TILED': true },
     }),
-    // *** 1
-    new ol.layer.Tile({
-        source: new ol.source.TileWMS({
-            format: 'image/png',
-            url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex', 'TILED': true},
-        }),
-        opacity: 0.7,
-      }),
-      // *** 2
-      new ol.layer.Tile({
-        source: new ol.source.TileWMS({
-            format: 'image/png',
-            url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'HRDPS-WEonG_2.5km_WindGust', 'TILED': true},
-        })
-      }),
-      // *** 3
-      new ol.layer.Tile({
-        source: new ol.source.TileWMS({
-            format: 'image/png',
-            url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'HRDPS-WEonG_2.5km_Thunderstorm-Prob', 'TILED': true},
-        })
-      }),
-    // *** 4
-    new ol.layer.Tile({
-      source: new ol.source.TileWMS({
-          format: 'image/png',
-          url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'CURRENT_CONDITIONS', 'TILED': true},
-      })
-    }),
-   // *** 5
-    new ol.layer.Image({
-      source: new ol.source.ImageWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HURRICANE_RESPONSE_ZONE', 'TILED': true},
-        transition: 0,
-        crossOrigin: 'Anonymous'
-      })
-    }),
-    // *** 6
-    new ol.layer.Image({
-      source: new ol.source.ImageWMS({
-        format: 'image/png',
-        url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'ALERTS', 'TILED': true},
-        transition: 0,
-        crossOrigin: 'Anonymous'
-      })
-    }),
+    opacity: 0.7,
+  }),
+  // *** 2
+  new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'HRDPS-WEonG_2.5km_WindGust', 'TILED': true },
+    })
+  }),
+  // *** 3
+  new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'HRDPS-WEonG_2.5km_Thunderstorm-Prob', 'TILED': true },
+    })
+  }),
+  // *** 4
+  new ol.layer.Tile({
+    source: new ol.source.TileWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'CURRENT_CONDITIONS', 'TILED': true },
+    })
+  }),
+  // *** 5
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'HURRICANE_RESPONSE_ZONE', 'TILED': true },
+      transition: 0,
+      crossOrigin: 'Anonymous'
+    })
+  }),
+  // *** 6
+  new ol.layer.Image({
+    source: new ol.source.ImageWMS({
+      format: 'image/png',
+      url: 'https://geo.weather.gc.ca/geomet/',
+      params: { 'LAYERS': 'ALERTS', 'TILED': true },
+      transition: 0,
+      crossOrigin: 'Anonymous'
+    })
+  }),
 
-  ]
+]
 
-  // **************************** Add legend button control **************************************
+// **************************** Add legend button control **************************************
 class LegendSwitchControl extends ol.control.Control {
 
   constructor(opt_options) {
@@ -163,27 +163,27 @@ layer4.setVisible(false);
 layer6.setVisible(true);
 
 // Écoutez les changements dans les cases à cocher
-layer1Checkbox.addEventListener('change', function() {
-    layer1.setVisible(layer1Checkbox.checked);
+layer1Checkbox.addEventListener('change', function () {
+  layer1.setVisible(layer1Checkbox.checked);
 });
 
-layer2Checkbox.addEventListener('change', function() {
-    layer2.setVisible(layer2Checkbox.checked);
+layer2Checkbox.addEventListener('change', function () {
+  layer2.setVisible(layer2Checkbox.checked);
 });
 
-layer3Checkbox.addEventListener('change', function() {
-    layer3.setVisible(layer3Checkbox.checked);
+layer3Checkbox.addEventListener('change', function () {
+  layer3.setVisible(layer3Checkbox.checked);
 });
 
-layer4Checkbox.addEventListener('change', function() {
-    layer4.setVisible(layer4Checkbox.checked);
+layer4Checkbox.addEventListener('change', function () {
+  layer4.setVisible(layer4Checkbox.checked);
 });
 
-layer5Checkbox.addEventListener('change', function() {
-    layer5.setVisible(layer5Checkbox.checked);
+layer5Checkbox.addEventListener('change', function () {
+  layer5.setVisible(layer5Checkbox.checked);
 });
 
-layer6Checkbox.addEventListener('change', function() {
+layer6Checkbox.addEventListener('change', function () {
   layer6.setVisible(layer6Checkbox.checked);
 });
 
@@ -196,24 +196,13 @@ layers[1].getSource().on("imageloaderror", () => {
     endTime = data[1];
     defaultTime = data[2];
     updateLayers();
-    updateInfo();
-    updateButtons();
   })
 });
 
 function updateLayers() {
-  layers[1].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+  layers[1].getSource().updateParams({ 'TIME': currentTime.toISOString().split('.')[0] + "Z" });
 }
 
-// Dispalying current map time
-function updateInfo() {
-  let el = document.getElementById('info');
-  if (dateIsLocal) {
-    el.innerHTML = `Time/Heure: ${currentTime.toLocaleString(navigator.local, dateOptions)}`
-  } else {
-    el.innerHTML = `Time/Heure: ${currentTime.toISOString().substr(0, 16)+"Z"}`
-  }
-}
 
 // Initialize the map
 function initMap() {
@@ -222,8 +211,6 @@ function initMap() {
     endTime = data[1];
     currentTime = defaultTime = data[2];
     updateLayers();
-    updateInfo();
-    updateButtons();
   })
 }
 

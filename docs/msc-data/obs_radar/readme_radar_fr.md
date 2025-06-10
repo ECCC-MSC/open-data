@@ -25,7 +25,7 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src=""/>
+    <img id="legend-img" style="display: flex; max-height: 325px;" src=""/>
   </div>
 </div>
 </div>

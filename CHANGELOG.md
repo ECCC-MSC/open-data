@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * improvements:
     * Updated GeoMet-OGC-API documentation for changes to OGC API - Coverages specification
 * bug fixes:
+    * Fixed legends size on interactive maps, broken legend URLs and other JavaScript errors related to interactive maps
 
 ## 2.8.10
 

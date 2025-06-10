@@ -41,7 +41,7 @@ async function getExtrapolatedStartEndTime() {
     data => {
       let xml = parser.parseFromString(data, 'text/xml');
       let dimensionTag = xml.getElementsByTagName('Dimension');
-      for (var i = 0; i < dimensionTag.length; i++){
+      for (var i = 0; i < dimensionTag.length; i++) {
         if (dimensionTag[i].getAttribute('name') == 'time') {
           let [start, end] = dimensionTag[i].innerHTML.split('/');
           return [start, end];
@@ -101,7 +101,7 @@ if (today < april || today >= november) {
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true},
+        params: { 'LAYERS': 'RADAR_1KM_RSNO', 'TILED': true },
         crossOrigin: 'Anonymous'
       })
     })
@@ -111,7 +111,7 @@ if (today < april || today >= november) {
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true},
+        params: { 'LAYERS': 'RADAR_COVERAGE_RSNO.INV', 'TILED': true },
         transition: 0,
         crossOrigin: 'Anonymous'
       })
@@ -120,6 +120,12 @@ if (today < april || today >= november) {
 } else {
   // Rain coverage
   isSnow = false;
+  const legend_img = document.getElementById("legend-img");
+  if (isSnow === true) {
+    isEnglish ? legend_img.src = legends.en.snow : legend_img.src = legends.fr.snow;
+  } else {
+    isEnglish ? legend_img.src = legends.en.rain : legend_img.src = legends.fr.rain;
+  }
   layers.push(
     new ol.layer.Tile({
       source: new ol.source.OSM()
@@ -130,7 +136,7 @@ if (today < april || today >= november) {
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true},
+        params: { 'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true },
         crossOrigin: 'Anonymous'
       })
     })
@@ -140,7 +146,7 @@ if (today < april || today >= november) {
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'RADAR_COVERAGE_RRAI.INV', 'TILED': true},
+        params: { 'LAYERS': 'RADAR_COVERAGE_RRAI.INV', 'TILED': true },
         transition: 0,
         crossOrigin: 'Anonymous'
       })
@@ -243,21 +249,25 @@ function updateLayers() {
   if (currentTime <= observationEndTime) {
     display.innerHTML = "OBSERVATION";
     if (isSnow) {
-      layers[1].getSource().updateParams({'LAYERS': 'RADAR_1KM_RSNO', 'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+      layers[1].getSource().updateParams({ 'LAYERS': 'RADAR_1KM_RSNO', 'TIME': currentTime.toISOString().split('.')[0] + "Z" });
     } else {
-      layers[1].getSource().updateParams({'LAYERS': 'RADAR_1KM_RRAI', 'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+      layers[1].getSource().updateParams({ 'LAYERS': 'RADAR_1KM_RRAI', 'TIME': currentTime.toISOString().split('.')[0] + "Z" });
     }
-    layers[2].getSource().updateParams({'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+    layers[2].getSource().updateParams({ 'TIME': currentTime.toISOString().split('.')[0] + "Z" });
   } else {
     display.innerHTML = "EXTRAPOLATION";
     if (isSnow) {
       layers[1].getSource().updateParams(
-        {'LAYERS': 'Radar_1km_SnowPrecipRate-Extrapolation',
-        'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+        {
+          'LAYERS': 'Radar_1km_SnowPrecipRate-Extrapolation',
+          'TIME': currentTime.toISOString().split('.')[0] + "Z"
+        });
     } else {
       layers[1].getSource().updateParams(
-        {'LAYERS': 'Radar_1km_RainPrecipRate-Extrapolation',
-        'TIME': currentTime.toISOString().split('.')[0]+"Z"});
+        {
+          'LAYERS': 'Radar_1km_RainPrecipRate-Extrapolation',
+          'TIME': currentTime.toISOString().split('.')[0] + "Z"
+        });
     }
   }
 }
@@ -268,7 +278,7 @@ function updateInfo() {
   if (dateIsLocal) {
     el.innerHTML = `Time/Heure: ${currentTime.toLocaleString(navigator.local, dateOptions)}`
   } else {
-    el.innerHTML = `Time/Heure: ${currentTime.toISOString().substr(0, 16)+"Z"}`
+    el.innerHTML = `Time/Heure: ${currentTime.toISOString().substr(0, 16) + "Z"}`
   }
 }
 
@@ -293,13 +303,13 @@ function updateButtons() {
 }
 
 function disableButtons(buttons) {
-  for (var i = 0; i < buttons.length; i++){
+  for (var i = 0; i < buttons.length; i++) {
     buttons[i].disabled = true;
   }
 }
 
 function enableButtons(buttons) {
-  for (var i = 0; i < buttons.length; i++){
+  for (var i = 0; i < buttons.length; i++) {
     buttons[i].disabled = false;
   }
 }

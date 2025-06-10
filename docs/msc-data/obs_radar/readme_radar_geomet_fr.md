@@ -18,7 +18,7 @@ Exemple de carte interactive présentant des couches WMS de la composite et de l
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src=""/>
+    <img id="legend-img" style="display: flex; max-height: 325px;" src=""/>
   </div>
 </div>
 </div>
