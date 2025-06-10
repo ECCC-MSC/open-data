@@ -152,7 +152,7 @@ Returns feature collection items that have `STATION_NUMBER = 10CD001`
 
 *   #### <span class="badge badge-light">Limit</span>
 
-    The `limit` parameter is used to define the maximum records to return in the response. The default response size is 500 features.</br>
+    The `limit` parameter is used to define the maximum records to return in the response. The response size is limited to 500 features per query.</br>
     In the following query, a single entity is requested, for example, to inspect its geometry and properties:
     </br></br>
 
@@ -175,14 +175,13 @@ Returns feature collection items that have `STATION_NUMBER = 10CD001`
 
 *   #### <span class="badge badge-light">Strategies for paging</span>
 
-    The paging strategy is commonly used when extract large amounts of data. For example, a client could page by 1000 features to cycle through an entire station record, starting with the first 1000 items and subsquently requesting the next 1000 items, until all items are returned.</br>
+    The paging strategy is commonly used when extract large amounts of data. For example, a client could page by 500 features to cycle through an entire station record, starting with the first 500 items and subsquently requesting the next 500 items, until all items are returned.</br>
         </br>
-    [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=1000)
+    [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=500](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=500)
 
-    [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=1000&limit=1000](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=1000&limit=1000)</br>
+    [https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=500&limit=500](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=500&limit=500)</br>
 
-    The above queries return the first 1000 items and the next 1000 items respectively.
-    The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record.
+    The above queries return the first 500 items and the next 500 items respectively. The client can then simply cycle through all items until there are no longer any records. This would constitute the entire record. The `/items` endpoint will also return a `next` link in the response, which can be used to retrieve the next page of results. The `next` link will contain the updated `offset` value for the next page of results.
     </br>
 
 ### <span class="badge badge-light">Filter the list of properties of a queried element</span>

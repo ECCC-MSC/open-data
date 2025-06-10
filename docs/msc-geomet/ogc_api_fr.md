@@ -158,7 +158,7 @@ Retourne les éléments de la collection d'éléments qui ont `STATION_NUMBER = 
 
 *   #### <span class="badge badge-light">Limite</span>
 
-    Le paramètre `limit` est utilisé pour définir le nombre maximum d'entités à renvoyer dans la réponse. La taille de la réponse par défaut est de 500 entités.</br>
+    Le paramètre `limit` est utilisé pour définir le nombre maximum d'entités à renvoyer dans la réponse. La taille limite de la réponse est de 500 entités par requête.</br>
     Dans la requête suivante, une seule entité est demandée, par exemple, pour inspecter sa géométrie et ses propriétés :
     </br></br>
 
@@ -179,14 +179,13 @@ Retourne les éléments de la collection d'éléments qui ont `STATION_NUMBER = 
 
 *   ### <span class="badge badge-light">Stratégies de pagination</span>
 
-    La stratégie de pagination est couramment utilisée pour extraire de grandes quantités de données. Par exemple, un client peut paginer par 1000 entités pour parcourir l'ensemble d'un enregistrement de station, en commençant par les 1000 premiers éléments et en demandant ensuite les 1000 entités suivantes, jusqu'à ce que tous les éléments soient renvoyés.</br>
+    La stratégie de pagination est couramment utilisée pour extraire de grandes quantités de données. Par exemple, un client peut paginer par 500 entités pour parcourir l'ensemble d'un enregistrement de station, en commençant par les 500 premiers éléments et en demandant ensuite les 500 entités suivantes, jusqu'à ce que tous les éléments soient renvoyés.</br>
     </br>
-    [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=1000)
+    [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=500](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=0&limit=500)
 
-    [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=1000&limit=1000](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=1000&limit=1000)</br>
+    [https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=500&limit=500](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&offset=500&limit=500)</br>
 
-    Les requêtes ci-dessus renvoient respectivement les 1000 premiers éléments et les 1000 éléments suivants.
-    Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Il s'agit alors de l'ensemble de l'enregistrement.
+    Les requêtes ci-dessus renvoient respectivement les 500 premiers éléments et les 500 éléments suivants. Le client peut alors simplement parcourir tous les éléments jusqu'à ce qu'il n'y ait plus d'enregistrements. Il s'agit alors de l'ensemble de l'enregistrement. Le point d'accès `/items` renvoie aussi un lien `next` qui peut être utilisé pour récupérer la page suivante de résultats. Le lien `next` contiendra le paramètre `offset` mis à jour pour la prochaine page de résultats.
     </br>
 
 ### <span class="badge badge-light">Filtrer la liste des propriétés d'un élément interrogé</span>
