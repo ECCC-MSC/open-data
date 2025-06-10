@@ -18,7 +18,7 @@ Example of a web map configured to display the [RAQDPS.SFC_NO2](https://geo.weat
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RAQDPS.SFC_NO2&STYLE=SFC-NO2_PPBV"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=RAQDPS.SFC_NO2&STYLE=SFC-NO2_PPBV"/>
   </div>
 </div>
 </div>
