@@ -37,7 +37,7 @@ The main usage workflow:
 
 Layers:
 
-* Add layers from the `GeoMet-Weather` or `GeoMet-Climate` panel
+* Add layers from the `GeoMet-Weather` or `GeoMet-Climate` panel. Additional data sources may be added via the `+` button.
 * Browse the layer tree to find the desired layer
 * Use the search box to filter available layers
 * Click on the `+` sign to add a layer to the map
@@ -80,7 +80,7 @@ Map:
 
 * Zoom and pan the map to your area of interest
 * Resize the map and the animation with the handle at the bottom right corner of the map
-* Rotate the map by pressing the _alt-shift_ keys and dragging on the map. Note that animations cannot be generated when the map is rotated
+* Rotate the map by pressing the _alt-shift_ keys and dragging on the map.
 * Select which legends to display via the `LEGENDS` overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation
 * The globe icon at the top of the map allows users to switch between map projections, show map graticules and alter the colour of the basemap
 
