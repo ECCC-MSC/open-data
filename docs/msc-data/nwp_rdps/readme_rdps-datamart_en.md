@@ -130,7 +130,7 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
-The list of available data is:
+The list of available variables is:
 
 <table id="csv-table" class="display"></table>
 
