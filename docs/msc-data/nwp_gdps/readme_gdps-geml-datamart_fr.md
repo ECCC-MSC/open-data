@@ -26,7 +26,7 @@ où :
 
 * __RES__ : Résolution horizontale [25km]
 * __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-* __hhh__ : Heure de prévision [000, 006, ..., 240]
+* __hhh__ : Heure de prévision [006, 012, ..., 240]
 
 ## Spécification technique de la grille
 
@@ -57,7 +57,7 @@ où :
 * __LVLTYPE-LVL__ : Niveau vertical et hauteur [ex: Sfc pour la surface, AGL-2m pour la hauteur de 2m au-dessus du sol, IsbL-0850 pour l'altitude géopotentielle à 850mb]
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.25. Signifie une résolution de 0.25°(environ 25km) dans les directions longitudinale et latitudinale
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 006, 012, ..., 240]
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [006, 012, ..., 240]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemples de noms de fichiers :
