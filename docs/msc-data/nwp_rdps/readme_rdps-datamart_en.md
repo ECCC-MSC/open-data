@@ -143,7 +143,7 @@ The list of available variables is:
 
 The astronomy variables, related to sky conditions, are as follows:
 
-<table id="csv-table" class="display"></table>
+<table id="csv-table-astro" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
