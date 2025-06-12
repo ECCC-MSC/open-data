@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.2
+
+* date: 2025-06-12
+* announcements:
+    * Not announced
+* new content:
+    * Add astronomy variables in the RDPS Datamart pages
+* improvements:
+    * NA
+* bug fixes:
+    * Fix GDPS-GEML Datamart pages (add 000 directory)
+
 # 2.9.1
 
 * date: 2025-06-12
@@ -17,7 +29,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add GDPS experimental documentation (spectral nudging, AI)
-    * Add GEML page
+    * Add GDPS-GEML pages
     * Update RDPS pages with rotated lat-lon data 
     * Update RDPS-WEonG pages with rotated lat-lon data
     * Update CAPS pages (not included in the main data availability pages - to come)
