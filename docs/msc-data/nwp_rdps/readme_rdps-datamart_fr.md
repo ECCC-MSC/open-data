@@ -149,7 +149,7 @@ Les variables d'astronomie, reliées à la condition du ciel, sont les suivantes
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table", "../../../assets/csv/RDPS-Astronomy_Variables-List_fr.csv");
+  loadTable("csv-table-astro", "../../../assets/csv/RDPS-Astronomy_Variables-List_fr.csv");
 </script>
 
 
