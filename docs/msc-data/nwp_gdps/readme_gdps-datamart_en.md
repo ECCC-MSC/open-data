@@ -63,7 +63,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 # Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format
 
-The fields in the GRIB2 dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
+The fields in the GRIB2 dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
 
 ## Data location
 
