@@ -34,7 +34,7 @@ A 24-hour history is kept in this directory.
 
 __Important  notes__:
 
-* The files contained in the directory `https://dd.alpha.weather.gc.ca/model_rdps` comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in [Camel case](https://en.wikipedia.org/wiki/Camel_case)  style. These files will replace the files contained in the directory `https://dd.alpha.weather.gc.ca/model_gem_regional` in the coming months.
+* The files contained in the directory `https://dd.alpha.weather.gc.ca/model_rdps` comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in [upper camel case](https://en.wikipedia.org/wiki/Camel_case)  style. These files will replace the files contained in the directory `https://dd.alpha.weather.gc.ca/model_gem_regional` in the coming months.
 * Some algorithms require variable values at `t-1`, in order to standardize the data supply, the forecast times start at 001h.
 
 ## Technical specification of the grid
@@ -64,7 +64,7 @@ where:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __RDPS-WEonG__ : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")
-* __VAR__ : Variables contained in the files according to the old nomenclature (acronym, ex: VISIFG) or the new nomenclature (Camel case, ex: LiquidFogVisibility)
+* __VAR__ : Variables contained in the files according to the old nomenclature (acronym, ex: VISIFG) or the new nomenclature (Upper camel case, ex: LiquidFogVisibility)
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions
