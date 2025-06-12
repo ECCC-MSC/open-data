@@ -25,6 +25,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Remove CAPS pages from the retired open data
 * bug fixes:
     * Fix typos
+    * Fix GeoMet-info link in GeoMet pages
 
 ## 2.9.0
 
