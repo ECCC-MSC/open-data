@@ -100,7 +100,7 @@ Pour de plus amples informations concernant les [normes](https://www.ogc.org/sta
 
 ### <span class="badge badge-light">Liste d'information</span>
 
-Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) afin d'être informés des améliorations et changements aux services GeoMet du SMC.
+Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) afin d'être informés des améliorations et changements aux services GeoMet du SMC.
 
 
 ### <span class="badge badge-light">Support</span>
