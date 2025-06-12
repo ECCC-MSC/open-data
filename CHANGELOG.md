@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.3
+
+* date: 2025-06-12
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * NA
+* bug fixes:
+    * Fix astronomy variables table in Datamart pages
+
+
 # 2.9.2
 
 * date: 2025-06-12
