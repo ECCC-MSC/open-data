@@ -130,6 +130,8 @@ Additional levels that may be applicable to a given parameter are :
 
 ## List of variables
 
+The list of available data is:
+
 <table id="csv-table" class="display"></table>
 
 <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
@@ -138,6 +140,18 @@ Additional levels that may be applicable to a given parameter are :
 <script>
   loadTable("csv-table", "../../../assets/csv/RDPS_Variables-List_en.csv");
 </script>
+
+The astronomy variables, related to sky conditions, are as follows:
+
+<table id="csv-table" class="display"></table>
+
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/RDPS-Astronomy_Variables-List_en.csv");
+</script>
+
 
 Notes :
 

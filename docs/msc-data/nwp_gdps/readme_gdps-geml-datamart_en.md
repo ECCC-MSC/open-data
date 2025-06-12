@@ -26,7 +26,7 @@ where :
 
 * __RES__ : Horizontal resolution [25km]
 * __HHH__ : UTC time of the beginning of the model run[00, 12]
-* __hhhh__ : Forecast time[006, 012, ..., 240]
+* __hhhh__ : Forecast time[000, 006, ..., 240]
 
 ## Technical specification of the grid
 
@@ -57,7 +57,7 @@ where :
 * __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, AGL-2m for the height of 2m above ground, IsbL-0850 for the geopotential height at 850mb]
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.25. Means a resolution of 0.25° (approx. 25km) in longitudinal and latitudinal directions
-* __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [006, 012, ..., 240]
+* __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 006, ..., 240]
 * __grib2__: Constant character string indicating that the format is GRIB2.
 
 Examples of filenames :
