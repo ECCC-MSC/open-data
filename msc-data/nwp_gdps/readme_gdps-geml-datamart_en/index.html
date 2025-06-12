@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme gdps geml datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WIS2 de l'OMM</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#experimental-global-environmental-emulator-gdps-geml-data-in-grib2-format" class="nav-link">Experimental Global Environmental eMuLator (GDPS-GEML) data in GRIB2 format</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid" class="nav-link">Technical specification of the grid</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_gdps-geml-datamart_fr/">En français</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_gdps_en/">GDPS</a> &gt; GDPS-GEML on MSC Datamart</p>
+<h1 id="experimental-global-environmental-emulator-gdps-geml-data-in-grib2-format">Experimental Global Environmental eMuLator (GDPS-GEML) data in GRIB2 format</h1>
+<p>The Global Environmental eMuLator (GEML) is a component of the <a href="../readme_gdps_en/#data-of-the-experimental-global-deterministic-prediction-system">experimental Global Deterministic Prediction System (GDPS)</a> and is an artificial intelligence (AI)-based weather emulator trained on past atmospheric states.</p>
+<p>More specifically, this GEML model is based on data compatible with the ¼°, 13-level version of the <a href="https://www.science.org/doi/10.1126/science.adi2336">GraphCast model (Lam et al. 2023)</a> from DeepMind. It was trained and refined by ECCC, using ECMWF’s ERA5 data (1979-2016) and operational analyses (2016-2021). The <a href="https://huggingface.co/ECCC-ASTD-MRD/geml">weights have been recalculated</a> and are also available to the public.</p>
+<p>Forecasts are carried out twice daily, each with a 10-day lead time. It generates the reference large-scale temperature and horizontal wind fields, toward which GDPS’s GEM forecasts are spectrally nudged. The geographical coverage is global with a horizontal resolution of 28 km. Data is available on 13 pressure levels, and employs a uniform latitude–longitude grid with 0.25-degree grid resolution. Six atmospheric variables defined on the 13 pressure levels, along with 4 surface variables are available every 6 hours.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.</p>
+<p>The data can be accessed at the following address :</p>
+<p><a href="https://dd.weather.gc.ca/model_gdps-geml">https://dd.weather.gc.ca/model_gdps-geml/{RES}/grib2/lat_lon/{HH}/{hhh}/</a></p>
+<p>where :</p>
+<ul>
+<li><strong>RES</strong> : Horizontal resolution [25km]</li>
+<li><strong>HHH</strong> : UTC time of the beginning of the model run[00, 12]</li>
+<li><strong>hhhh</strong> : Forecast time[006, 012, ..., 240]</li>
+</ul>
+<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
+<p>Values given to the parameters of the 25km latitude-longitude grid:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>1440</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>721</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>0.25°</td>
+</tr>
+<tr>
+<td>orientation iof the grid</td>
+<td>0° W  359.75° E</td>
+</tr>
+</tbody>
+</table>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p>The files have the following nomenclature:</p>
+<p>{YYYYMMDD}T{HH}Z_MSC_GDPS-GEML_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.grib2</p>
+<p>where :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 standards</li>
+<li><strong>HH</strong>: UTC run time [00, 12]</li>
+<li><strong>Z</strong>: Time zone (UTC time)</li>
+<li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
+<li><strong>GDPS-GEML</strong>: Constant string indicating that the data come from the experimental Global Environmental eMuLator (GEML), a component of the experimental Global Deterministic Prediction System (GDPS)</li>
+<li><strong>VAR</strong>: Type of variable contained in the file (e.g. AirTemp)</li>
+<li><strong>LVLTYPE-LVL</strong> : Vertical level and height [ex: Sfc for the surface, AGL-2m for the height of 2m above ground, IsbL-0850 for the geopotential height at 850mb]</li>
+<li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
+<li><strong>resolution</strong> : 0.25. Means a resolution of 0.25° (approx. 25km) in longitudinal and latitudinal directions</li>
+<li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [006, 012, ..., 240]</li>
+<li><strong>grib2</strong>: Constant character string indicating that the format is GRIB2.</li>
+</ul>
+<p>Examples of filenames :</p>
+<ul>
+<li>20250529T12Z_MSC_GDPS-GEML_SpecificHumidity_IsbL-0925_LatLon0.25_PT012H.grib2</li>
+<li>20250529T00Z_MSC_GDPS-GEML_WindU_AGL-10m_LatLon0.25_PT234H.grib2</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<table id="csv-table" class="display"></table>
+
+<p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+<script src="../../../js/variables_datatable.js" type="text/javascript"></script>
+<script>
+  loadTable("csv-table", "../../../assets/csv/GDPS-GEML_Variables-List_en.csv");
+</script>
+
+<p>Notes :</p>
+<ul>
+<li>u (UGRD) and v (VGRD) components of the wind vector are to be resolved relative to the defined grid, in the direction of increasing i and j coordinates. Please refer to Code Table 7 of the GRIB standard for further details.    </li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -151,13 +151,14 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; CAPS experimental</p>
 <h1 id="data-and-products-of-the-experimental-canadian-arctic-prediction-system-caps">Data and Products of the experimental Canadian Arctic Prediction System (CAPS)</h1>
-<p>The Canadian Arctic Prediction System (CAPS) provides an important contribution to various scientific experiments that are part of the Year of polar prediction (YOPP) and provides km-scale NWP forecasts for the canadian Arctic. The CAPS is a GEM-based deterministic prediction system, very similar to the current High Resolution Deterministic Prediction System North domain (HRDPS-North) which will be replaced by the CAPS. CAPS is downscaled from ECCC's Global Deterministic Prediction System, the GDPS, which provides initial conditions and lateral boundary conditions for the atmospheric fields.  In the current system, which is not yet coupled to the ice-ocean prediction system, all initial surface fields come from the global configuration of the land-data assimilation system, CaLDAS. The system is running on a 3 km domain of 2250 x 1850 horizontal grid points (covering the entire Arctic basin and Hudson Bay) and 62 vertical levels. The major differences between CAPS and the current HRDPS is the introduction of the predicted particle properties (P3) cloud microphysics scheme, which is responsible for parameterizing the grid-scale clouds and precipitation.</p>
+<p>The Canadian Arctic Prediction System (CAPS) is an experimental forecast system based on a limited-area (LAM) configuration of the Global Environmental Multiscale model (GEM). It covers the entire Arctic basin and Hudson Bay, with an horizontal grid spacing of approximately 3 km. The lowest momentum level is at an altitude of approximately 40 m. The CAPS is piloted by ECCC’s Global Deterministic Prediction System (GDPS), which provides initial and lateral boundary conditions for the atmospheric fields. The initial hydrometeor fields are recycled from the 12h forecast of the previous CAPS integration. The ocean-ice surface fields are provided through a two-way coupling with an ice-ocean model, whose configuration follows that of the Regional Ice Ocean Prediction System (RIOPS). The CAPS runs on a rotated lat-lon grid twice per day and is initialized at 00 and 12 UTC respectively with 48h integration.</p>
 <h2 id="access">Access</h2>
 <h3 id="how-to-access-the-data">How to access the data</h3>
-<p>This data is available on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server service as well as <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a></p>
+<p>This data is available from the <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a> API / web services and on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server respectively:</p>
 <ul>
-<li><a href="../readme_caps-datamart-alpha_en/">Experimental GRIB2 data available on the MSC testing data repository DD-Alpha</a> </li>
-<li><a href="../../../msc-geomet/readme_en/">Data available via geospatial web services</a> </li>
+<li><a href="https://eccc-msc.github.io/open-data/msc-geomet/readme_en/">Data available via the GeoMet-Weather geospatial web services</a></li>
+<li><a href="../readme_caps-datamart_en/">Experimental GRIB2 and NetCDF data available on the MSC Datamart</a></li>
+<li><a href="../readme_caps-weong-datamart_en/">Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha</a></li>
 </ul>
 <p>An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is available.</p>
 <h3 id="licence">Licence</h3>
@@ -167,9 +168,7 @@
 <h3 id="metadata">Metadata</h3>
 <p>Upcoming.</p>
 <h2 id="technical-documentation">Technical documentation</h2>
-<ul>
-<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/CAPS-100_factsheet.pdf">Technical Specifications</a></li>
-</ul>
+<p>Upcoming.</p>
 <h2 id="changelog">Changelog</h2>
 <p>The chronology of changes to the Regional Canadian Arctic Prediction System (CAPS) is available <a href="../changelog_caps_en/">here</a>.</p></div>
             </div>

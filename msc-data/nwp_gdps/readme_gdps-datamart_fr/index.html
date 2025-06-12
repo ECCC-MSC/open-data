@@ -140,22 +140,43 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#niveaux" class="nav-link">Niveaux</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd-experimental" class="nav-link">Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#adresse-des-donnees_1" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille_1" class="nav-link">Spécification technique de la grille</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+            <li class="nav-item" data-level="2"><a href="#nomenclature-des-noms-de-fichiers_1" class="nav-link">Nomenclature des noms de fichiers</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#niveaux" class="nav-link">Niveaux</a>
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="1"><a href="#liste-des-variables" class="nav-link">Liste des variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#annonces-de-la-liste-de-diffusion-dd_info" class="nav-link">Annonces de la liste de diffusion dd_info</a>
+              <ul class="nav flex-column">
               </ul>
             </li>
         </ul>
@@ -171,7 +192,7 @@
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
-<p>Les données sont accessibles à adresse suivante :</p>
+<p>Les données sont accessibles à l'adresse suivante :</p>
 <p><a href="https://dd.meteo.gc.ca/model_gem_global">https://dd.meteo.gc.ca/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/</a></p>
 <p>où :</p>
 <ul>
@@ -208,7 +229,6 @@
 </tbody>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <p>CMC_glb_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.grib2</p>
 <p>où :</p>
@@ -228,7 +248,71 @@
 <p>Exemple de nom de fichier :
 CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <p>Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).</p>
-<h2 id="niveaux">Niveaux</h2>
+<h1 id="donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd-experimental">Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental</h1>
+<p>Les champs du jeu de données GRIB2 du <a href="../readme_gdps_fr/#données-du-système-global-de-prévision-déterministe-expérimental">Système global de prévision déterministe expérimental (SGPD)</a> sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.</p>
+<h2 id="adresse-des-donnees_1">Adresse des données</h2>
+<p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
+<p>Les données sont accessibles à l'adresse suivante :</p>
+<p><a href="https://dd.meteo.gc.ca/model_gdps">https://dd.meteo.gc.ca/model_gdps/{RES}/{HH}/{hhh}/</a></p>
+<p>où :</p>
+<ul>
+<li><strong>RES</strong> : Résolution horizontale [15km]</li>
+<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
+<li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]</li>
+</ul>
+<h2 id="specification-technique-de-la-grille_1">Spécification technique de la grille</h2>
+<p>Valeurs données aux différents paramètres de la grille latitude-longitude à 15km de résolution</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ni</td>
+<td>2400</td>
+</tr>
+<tr>
+<td>nj</td>
+<td>1201</td>
+</tr>
+<tr>
+<td>résolution</td>
+<td>0.15°</td>
+</tr>
+<tr>
+<td>orientation de la grille</td>
+<td>0° W  359.85° E</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nomenclature-des-noms-de-fichiers_1">Nomenclature des noms de fichiers</h2>
+<p>Les fichiers ont la nomenclature suivante :</p>
+<p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.grib2</p>
+<p>où :</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
+<li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
+<li><strong>HH</strong> : Heure UTC de la passe [00, 12]</li>
+<li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
+<li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
+<li><strong>GDPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du Système global de prévision déterministe (version expérimentale)</li>
+<li><strong>VAR</strong> : Type de variable contenu dans le fichier (ex: AirTemp).</li>
+<li><strong>LVLTYPE-LVL</strong> : Niveau vertical et hauteur [ex: Sfc pour la surface, EAtm pour l’intégrale de la colonne, DBS-10to20cm couche entre 10 et 20cm sous la surface, AGL-10m pour la hauteur de 10m au-dessus du sol]</li>
+<li><strong>Grille</strong> : Grille horizontale [LatLon]</li>
+<li><strong>resolution</strong> : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale</li>
+<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]</li>
+<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
+</ul>
+<p>Exemples de noms de fichiers :</p>
+<ul>
+<li>20250529T12Z_MSC_GDPS_GeopotentialHeight_IsbL-0350_LatLon0.15_PT018H.grib2</li>
+<li>20250529T12Z_MSC_GDPS_SoilTemp_Sfc_LatLon0.15_PT018H.grib2</li>
+</ul>
+<h1 id="niveaux">Niveaux</h1>
 <p>La couverture verticale des champs tridimensionnels peut atteindre jusqu’à 33 niveaux isobariques.</p>
 <ul>
 <li>
@@ -255,7 +339,7 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <li>Sommet théorique de l’atmosphère</li>
 <li>Colonne atmosphérique entière</li>
 </ul>
-<h2 id="liste-des-variables">Liste des variables</h2>
+<h1 id="liste-des-variables">Liste des variables</h1>
 <table id="csv-table" class="display"></table>
 
 <p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>
@@ -270,16 +354,16 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <li>La direction des composantes u (UGRD) et v (VGRD) du vecteur vent doit être résolue selon les composantes i, j de la grille définie et dans la direction croissante des coordonnées i, j. Veuillez vous rérérer à la table de code 7 du standard GRIB pour de plus amples informations. </li>
 <li>Les paramètres NLWRS_SFC, DSWRF_NTAT, DLWRF_NTAT sont donnés en quantités accumulées. L’intervalle temporel d’accumulation est spécifié selon la valeur numéro 4 de la table de code 5 du standard GRIB. En raison de l’accumulation sur une période, les unités d’origine (watts par mètre carré) deviennent des joules par mètre carré.   </li>
 <li>Le paramètre représentant l’humidité dans le modèle est l’humidité spécifique (SPFH). C’est ce paramètre qui devrait être utilisé pour toute application de PNT. La dépression du point de rosée (DEPR) est un paramètre diagnostique déconseillé pour les applications de haute précision.</li>
-<li>La topographie (altitude géopotentielle de surface, HGT_SFC) est disponible à l'heure de prévision 00h de chacune des passes du modèle.</li>
+<li>La topographie (altitude géopotentielle de surface, HGT) est disponible à l'heure de prévision 00h de chacune des passes du modèle.</li>
 <li>Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:<ul>
 <li>Passe de 00Z: 18h à 234h, toutes les 3 heures</li>
 <li>Passe de 12Z: 6h à 222h, toutes les 3 heures</li>
 </ul>
 </li>
 </ul>
-<h2 id="support">Support</h2>
+<h1 id="support">Support</h1>
 <p>Pour toute question relative à ces données, merci de <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>. </p>
-<h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
+<h1 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h1>
 <p>Les annonces reliées à ce jeu de données sont disponibles via la liste <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a>.</p></div>
             </div>
         </div>

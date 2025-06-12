@@ -146,6 +146,29 @@
             </li>
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-of-the-experimental-global-deterministic-prediction-system" class="nav-link">Data of the experimental Global Deterministic Prediction System</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#access_1" class="nav-link">Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-documentation_1" class="nav-link">Technical documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#licence" class="nav-link">Licence</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#msc-open-data-service-usage-policy" class="nav-link">MSC Open Data Service Usage Policy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
@@ -185,10 +208,6 @@
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
-<h3 id="licence">Licence</h3>
-<p>The <a href="../../../licence/readme_en/">end-user licence for Environment and Climate Change Canada's data servers</a> specifies the conditions of use of this data.</p>
-<h3 id="msc-open-data-service-usage-policy">MSC Open Data Service Usage Policy</h3>
-<p>The <a href="../../../usage-policy/readme_en/">MSC Open Data Service Usage Policy</a> determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.</p>
 <h3 id="metadata">Metadata</h3>
 <ul>
 <li>The <a href="https://open.canada.ca/data/en/dataset/c041e79a-914a-5a4e-a485-9cbc506195df">metadata of the Global Deterministic Prediction System is available on the Open Government Portal</a>.</li>
@@ -257,7 +276,30 @@
         js.src = "../../../js/gdps.js";
     }
     head.appendChild(js);
-</script></div>
+</script>
+
+<h1 id="data-of-the-experimental-global-deterministic-prediction-system">Data of the experimental Global Deterministic Prediction System</h1>
+<p>The experimental Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model where the <strong>GEM-predicted large-scale temperature and horizontal wind components are spectrally nudged toward the <a href="../readme_gdps-geml-datamart_en/">Global Environmental eMuLator (GEML)</a> predictions, ECCC's data-driven artificial intelligence (AI)-based weather model</strong>. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global at 15 km horizontal resolution. Data is available on some thirty vertical levels and interpolated on a global latitude-longitude uniform grid with 0.15 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.</p>
+<h2 id="access_1">Access</h2>
+<h3 id="how-to-access-the-data_1">How to access the data</h3>
+<p>This experimental data is available from the <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a> API / web services and on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server respectively:</p>
+<ul>
+<li><a href="../readme_gdps-geomet_en/">Experimental data available via the GeoMet-Weather geospatial web services</a></li>
+<li><a href="../readme_gdps-datamart_en/#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format">Experimental GRIB2 data available on the MSC Datamart</a></li>
+<li><a href="../readme_gdps-geml-datamart_en/">Experimental Global Environmental eMuLator (GEML) GRIB2 data available on the MSC Datamart</a></li>
+</ul>
+<p>An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is available.</p>
+<h2 id="technical-documentation_1">Technical documentation</h2>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_e.pdf">Current version of the experimental Global Deterministic Prediction System</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-exp_e.pdf">Experimental Global Deterministic Prediction System factsheet</a> </li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg">Diagram of dependencies</a></li>
+<li><a href="https://arxiv.org/abs/2407.06100">"Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; July 2024</a></li>
+</ul>
+<h1 id="licence">Licence</h1>
+<p>The <a href="../../../licence/readme_en/">end-user licence for Environment and Climate Change Canada's data servers</a> specifies the conditions of use of this data.</p>
+<h1 id="msc-open-data-service-usage-policy">MSC Open Data Service Usage Policy</h1>
+<p>The <a href="../../../usage-policy/readme_en/">MSC Open Data Service Usage Policy</a> determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.</p></div>
             </div>
         </div>
 

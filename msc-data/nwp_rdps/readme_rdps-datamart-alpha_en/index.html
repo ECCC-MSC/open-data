@@ -163,22 +163,29 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_rdps_en/">SRPD</a> &gt; RDPS Weather Elements on the Grid on DD-Alpha</p>
 <h1 id="experimental-grib2-weather-elements-on-the-grid-data-based-on-the-regional-deterministic-prediction-system-rdps">Experimental GRIB2 Weather Elements on the Grid data based on the Regional Deterministic Prediction System (RDPS)</h1>
-<p>For nearly three decades, the <a href="https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/product-pages/alpha_glb_scrib_scribe-documentation_gen_e.html">SCRIBE system</a> has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.</p>
+<p>For nearly three decades, the SCRIBE system has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.</p>
 <p>The various rules related to the Scribe matrices hinder scientific innovation, do not exploit the richness of the Numerical Weather Prediction (NWP), reduce the comprehension of meteorological forecasts, and and may require frequent interventions from forecasters.</p>
 <p>As part of a larger modernization plan for the Meteorological Service of Canada (MSC), in which the role of the forecaster is evolving, the goal is to replace the Scribe matrices, <a href="https://dd.meteo.gc.ca/model_gem_regional/matrices/land_regions/">available on the MSC Datamart</a>, and their limited number of points across Canada with <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf">Weather Elements on the Grid</a> ("WEonG"). </p>
 <p>Weather Elements on Grid (WEonG) based on the Regional Deterministic Prediction System (RDPS) is a post-processing system designed to compute the weather elements required by different forecast programs (public, marine, aviation, air quality, etc.). This system amalgamates numerical and post-processed data using various diagnostic approaches. Hourly concepts are produced from different algorithms using outputs from the <a href="../readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a>.</p>
 <h2 id="data-address">Data Address</h2>
 <p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
-<p>The rotated lat-lon grid data can be accessed at the following address: </p>
-<p><a href="https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/">https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/</a></p>
+<p>The rotated lat-lon grid data can be accessed at the following addresses: </p>
+<ul>
+<li>Old nomenclature: <a href="https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/">https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/</a></li>
+<li>New nomenclature: <a href="https://dd.alpha.meteo.gc.ca/model_rdps/10km/">https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/</a></li>
+</ul>
 <p>where :</p>
 <ul>
 <li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
 <li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 084]</li>
 </ul>
 <p>A 24-hour history is kept in this directory.</p>
-<p>Note: Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</p>
+<p><strong>Important  notes</strong>:</p>
+<ul>
+<li>The files contained in the directory <code>https://dd.alpha.weather.gc.ca/model_rdps</code> comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in <a href="https://en.wikipedia.org/wiki/Camel_case">upper camel case</a>  style. These files will replace the files contained in the directory <code>https://dd.alpha.weather.gc.ca/model_gem_regional</code> in the coming months.</li>
+<li>Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</li>
+</ul>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p><img alt="SRPD rotated lat-lon grid image" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png" /></p>
 <p>Values given to the parameters of the rotated lat-lon grid:</p>
@@ -219,16 +226,17 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>RDPS-WEonG</strong> : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")</li>
-<li><strong>VAR</strong> : Variables contained in the files (ex: VISIFG).</li>
+<li><strong>VAR</strong> : Variables contained in the files according to the old nomenclature (acronym, ex: VISIFG) or the new nomenclature (Upper camel case, ex: LiquidFogVisibility)</li>
 <li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
 <li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
 <li><strong>resolution</strong> : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions</li>
 <li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084]</li>
 <li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
 </ul>
-<p>Example file name:</p>
+<p>Examples file names:</p>
 <ul>
-<li>20220821T12Z_MSC_RDPS-WEonG_BLSN_Sfc_RLatLon0.09_PT024H.grib2</li>
+<li>20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2</li>
+<li>20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <p>List of surface weather elements on the grid:</p>
