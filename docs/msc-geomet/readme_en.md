@@ -98,7 +98,7 @@ For further infromation regarding the aforementioned Open Geospatial Consortium 
 
 ### <span class="badge badge-light">Announcement mailing list</span>
 
-We encourage users to subscribe to the [GeoMet-Info](https://lists.ec.gc.ca/cgi-bin/mailman/listinfo/geomet-info) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
+We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info.comm.collab.science.gc.ca/) announcement mailing list to be informed of enhancements and changes to the MSC GeoMet services.
 
 
 ### <span class="badge badge-light">Support</span>
