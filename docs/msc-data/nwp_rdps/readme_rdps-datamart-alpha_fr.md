@@ -34,7 +34,7 @@ Un historique de 24 heures est conservé dans ce répertoire.
 
 __Notes importantes__ :
 
-* Les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_rdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style [Camel case](https://fr.wikipedia.org/wiki/Camel_case). Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
+* Les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_rdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style [_upper camel case_](https://fr.wikipedia.org/wiki/Camel_case). Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
 * Certains algorithmes ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Spécification technique de la grille
@@ -64,7 +64,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier selon l’ancienne nomenclature (acronyme, ex : VISIFG) ou la nouvelle nomenclature (Camel case, ex: LiquidFogVisibility) .
+* __VAR__ : Type de variable contenu dans le fichier selon l’ancienne nomenclature (acronyme, ex : VISIFG) ou la nouvelle nomenclature (_Upper camel case_, ex: LiquidFogVisibility) .
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
