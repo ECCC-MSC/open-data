@@ -175,7 +175,7 @@
 <ul>
 <li><strong>RES</strong> : Résolution horizontale [25km]</li>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
-<li><strong>hhh</strong> : Heure de prévision [006, 012, ..., 240]</li>
+<li><strong>hhh</strong> : Heure de prévision [000, 006, 012, ..., 240]</li>
 </ul>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p>Valeurs données aux différents paramètres de la grille latitude-longitude à 25km de résolution</p>
@@ -220,7 +220,7 @@
 <li><strong>LVLTYPE-LVL</strong> : Niveau vertical et hauteur [ex: Sfc pour la surface, AGL-2m pour la hauteur de 2m au-dessus du sol, IsbL-0850 pour l'altitude géopotentielle à 850mb]</li>
 <li><strong>Grille</strong> : Grille horizontale [LatLon]</li>
 <li><strong>resolution</strong> : 0.25. Signifie une résolution de 0.25°(environ 25km) dans les directions longitudinale et latitudinale</li>
-<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [006, 012, ..., 240]</li>
+<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 006, ..., 240]</li>
 <li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
 </ul>
 <p>Exemples de noms de fichiers :</p>

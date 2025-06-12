@@ -175,7 +175,7 @@
 <ul>
 <li><strong>RES</strong> : Horizontal resolution [25km]</li>
 <li><strong>HHH</strong> : UTC time of the beginning of the model run[00, 12]</li>
-<li><strong>hhhh</strong> : Forecast time[006, 012, ..., 240]</li>
+<li><strong>hhhh</strong> : Forecast time[000, 006, ..., 240]</li>
 </ul>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p>Values given to the parameters of the 25km latitude-longitude grid:</p>
@@ -220,7 +220,7 @@
 <li><strong>LVLTYPE-LVL</strong> : Vertical level and height [ex: Sfc for the surface, AGL-2m for the height of 2m above ground, IsbL-0850 for the geopotential height at 850mb]</li>
 <li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
 <li><strong>resolution</strong> : 0.25. Means a resolution of 0.25° (approx. 25km) in longitudinal and latitudinal directions</li>
-<li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [006, 012, ..., 240]</li>
+<li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 006, ..., 240]</li>
 <li><strong>grib2</strong>: Constant character string indicating that the format is GRIB2.</li>
 </ul>
 <p>Examples of filenames :</p>
