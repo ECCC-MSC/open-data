@@ -10,6 +10,22 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.1
+
+* date: 2025-06-12
+* announcements:
+    * Not announced
+* new content:
+    * Add GDPS experimental documentation (spectral nudging, AI)
+    * Add GEML page
+    * Update RDPS pages with rotated lat-lon data 
+    * Update RDPS-WEonG pages with rotated lat-lon data
+    * Update CAPS pages (not included in the main data availability pages - to come)
+* improvements:
+    * Remove CAPS pages from the retired open data
+* bug fixes:
+    * Fix typos
+
 ## 2.9.0
 
 * date: 2025-05-29
