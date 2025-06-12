@@ -62,7 +62,7 @@ Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par
 
 # Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental
 
-Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) expérimental sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
+Les champs du jeu de données GRIB2 du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
 
 ## Adresse des données 
 
