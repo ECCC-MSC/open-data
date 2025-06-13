@@ -152,7 +152,7 @@ Returns feature collection items that have `STATION_NUMBER = 10CD001`
 
 *   #### <span class="badge badge-light">Limit</span>
 
-    The `limit` parameter is used to define the maximum records to return in the response. The response size is limited to 500 features per query.</br>
+    The `limit` parameter is used to define the maximum records to return in the response. The response size is limited to 10 000 features per query.</br>
     In the following query, a single entity is requested, for example, to inspect its geometry and properties:
     </br></br>
 
