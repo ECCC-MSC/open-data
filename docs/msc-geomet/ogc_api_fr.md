@@ -158,7 +158,7 @@ Retourne les éléments de la collection d'éléments qui ont `STATION_NUMBER = 
 
 *   #### <span class="badge badge-light">Limite</span>
 
-    Le paramètre `limit` est utilisé pour définir le nombre maximum d'entités à renvoyer dans la réponse. La taille limite de la réponse est de 500 entités par requête.</br>
+    Le paramètre `limit` est utilisé pour définir le nombre maximum d'entités à renvoyer dans la réponse. La taille limite de la réponse est de 10,000 entités par requête.</br>
     Dans la requête suivante, une seule entité est demandée, par exemple, pour inspecter sa géométrie et ses propriétés :
     </br></br>
 
