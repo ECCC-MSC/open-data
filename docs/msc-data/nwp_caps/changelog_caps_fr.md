@@ -10,7 +10,7 @@
 
 ### Fin de service du SHRPD-Nord, à nouveau remplacé par le Système canadien de prévision de l'Arctique (SCPA)
 
-Le mercredi 18 juin 2025, après 3.5 années, le système non-couplé de SHRPD-Nord réintroduit le couplage bidirectionnel avec un modèle régional océan-glace et reprend le non de « Système Canadien de prévision de l'Arctique ». Certains produits du SHRPD-Nord continueront d'être alimentés par le SCPA jusqu’à l’automne (la date précise à déterminer).
+Le mercredi 18 juin 2025, après 3.5 années, le système non-couplé de SHRPD-Nord réintroduit le couplage bidirectionnel avec un modèle régional océan-glace et reprend le nom de « Système Canadien de prévision de l'Arctique ». Certains produits du SHRPD-Nord continueront d'être alimentés par le SCPA jusqu’à l’automne (la date précise à déterminer).
 
 La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXX).
 
