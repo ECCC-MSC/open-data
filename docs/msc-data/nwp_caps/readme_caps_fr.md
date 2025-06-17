@@ -6,15 +6,14 @@
 
 # Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental
 
-Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision expérimental basé sur une configuration à aire limitée (LAM) du modèle Global Environmental Multiscale (GEM). Il couvre l'ensemble du bassin arctique et la baie d'Hudson avec une résolution de la grille horizontale d'environ 3km. Le niveau momentum le plus bas se situe à une altitude d'environ 40m. Le SCPA 3km est piloté par le Système global de prévision déterministe global (SGPD) de ECCC, qui fournit des conditions initiales et latérales pour les champs atmosphériques. Les champs hydrométéorologiques initiaux sont recyclés à partir de la prévision à 12 heures de l'intégration précédente du SCPA.  Les champs de surface océan-glace sont fournis grâce à un couplage bidirectionnel avec un modèle glace-océan, dont la configuration suit celle du Système régional de prévision océan-glace (SRPOG). Le SCPA tourne deux fois par jour sur une grille lat-lon tournée et est initialisé à 00 et 12 UTC respectivement avec une intégration de 48 heures."
+Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision couplé experimental atmosphère-océan-glace basé sur une configuration à aire limitée (LAM) du modèle Global Environmental Multiscale (GEM), couplé au Nucleus of European Modeling of the Ocean (NEMO) et le Community ICe Code (CICE). Il couvre l'ensemble du bassin arctique avec une résolution de la grille horizontale d'environ 3km. Le SCPA est piloté par le [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) de ECCC, qui fournit des conditions initiales et latérales pour les champs atmosphériques. Les champs hydrométéorologiques initiaux sont recyclés à partir de la prévision à 12 heures de l'intégration précédente du SCPA. De plus, le SGPD est utilisé pour forcer le modèle océan-glace en dehors des régions couplées. Les conditions initiales pour les champs océan-glace sont pris du [Système Régional de Prévision Océan-Glace (SRPOG)](../nwp_riops/readme_riops_fr.md). Les conditions frontières océaniques dans l'Atlantique Nord et le Pacifique Nord viennent du SGPD. Le SCPA tourne deux fois par jour et est initialisé à 00 et 12 UTC respectivement avec une intégration de 48 heures
 
 ## Accès
 
 ### Comment accéder aux données
 
-Ces données sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont respectivement disponibles via le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/)
 * [Données GRIB2 et NetCDF expérimentales disponibles sur le Datamart du SMC](readme_caps-datamart_fr.md)
 * [Données GRIB2  expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_caps-weong-datamart_fr.md)
 
