@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système canadien de prévision de l'Arctique (SCPA)
 
+## Le mercredi 18 juin 2025
+
+### Fin de service du SHRPD-Nord, à nouveau remplacé par le Système canadien de prévision de l'Arctique (SCPA)
+
+Le mercredi 18 juin 2025, après 3.5 années, le système non-couplé de SHRPD-Nord réintroduit le couplage bidirectionnel avec un modèle régional océan-glace et reprend le non de « Système Canadien de prévision de l'Arctique ». Certains produits du SHRPD-Nord continueront d'être alimentés par le SCPA jusqu’à l’automne (la date précise à déterminer).
+
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXX).
+
+Le document des spécifications techniques du SCPA v3.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CAPS_3.0.0_f.pdf).
+
 ## Le mercredi 1er décembre 2021
 
 ### Fin de service du SCPA, remplacé par le SHRPD Nord. 

@@ -6,6 +6,14 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe nord (SHRPD-Nord)
 
+## Le mercredi 18 juin 2025
+
+### Fin de service du SHRPD-Nord, remplacé par le SCPA
+
+Après près de 4 années de prévisions couplées haute résolution sur l'Arctique, le SHRPD-Nord sera mis hors service le mercredi 18 juin 2025.
+
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXXXXX).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour vers la version 2.1.0 du Système à haute résolution de prévision déterministe nord (SHRPD-Nord) au Centre météorologique canadien (CMC)

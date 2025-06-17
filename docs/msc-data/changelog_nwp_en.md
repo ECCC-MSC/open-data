@@ -8,6 +8,10 @@
 
 ## 2025
 
+### June 18, 2025
+
+* [Decommission of HRDPS North, replaced again by the coupled Canadian Arctic Prediction System (CAPS)](nwp_caps/changelog_caps_en.md#wednesday-june-18-2025)
+
 ### May 26, 2025
 
 * [Addition of ATMS and CrIS observations from the NOAA-21 satellite in the GEPS](nwp_geps/changelog_geps_en.md#monday-may-26-2025)

@@ -6,11 +6,7 @@
 
 # Données GRIB2 du Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)
 
-Cette page décrit toutes les données du [Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)](readme_hrdps-north_fr.md) expérimental disponibles en format GRIB2, soit les données sur une grille polaire stéréographique à 2.5km de résolution et les données sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.
-
-Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien [Système canadien de prévision de l'Arctique (SCPA)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/) qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir [ICI](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)). 
-
-NOTE: Les éléments du temps sur grille (WEonG) ne sont disponibles que pour le domaine à 3km de résolution.
+Cette page décrit toutes les données du [Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)](readme_hrdps-north_fr.md) expérimental disponibles en format GRIB2 sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.
 
 ## Adresse des données 
 
@@ -20,8 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* Données à 2.5km sur grille polaire stéréographique : [https://dd.meteo.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/grib2/)
-* Données à 3km sur grille lat-lon tournée : [https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/3km/)
+* [https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/3km/)
 
 où :
 
@@ -30,24 +25,7 @@ où :
 
 Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
-## Spécification technique des grilles 
-
-* __Grille polaire stéréographique__
-
-![Image de la grille PS du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique à 2.5km de résolution:
-
-| Paramètre | Valeur |
-| ------ | ------ |
-h| ni | 1465 |
-| nj | 825 | 
-| résolution à 60° N | 2.5 km |
-| coordonnées du premier point de grille | 67.9601°N ; 140.7611°W |
-| coordonnées (i; j) du Pôle Nord | (389.0, 842.0) |
-| orientation de la grille (par rapport à l’axe des j) | -116.0° |
-
-* __Grille lat-lon tournée__
+## Spécification technique de la grille 
 
 ![Image de la grille lat-lon tournée du domaine nord du SHRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png)
 
@@ -63,33 +41,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée à 3km de résolu
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ## Nomenclature des noms de fichiers
-
-### Grille polaire stéréographique
-
-Les fichiers ont la nomenclature suivante :
-
-`CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2`
-
-où :
-
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions
-* __hrdps__ : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe
-* __north__ : Chaîne de caractères constante indiquant le domaine nord
-* __VAR__ : Type de variable contenu dans le fichier (ex. : UGRD)
-* __LVLTYPE_LVL__ : Niveau vertical et hauteur [ex: SFC pour la surface, TGL_120 pour la hauteur de 120m au-dessus du sol]
-* __Grille__ : Grille horizontale [ps pour polaire stéréographique]
-* __resolution__ : 2.5km de résolution
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision
-* __HH__ : Heure UTC de la passe [00, 12]
-* __P{hhh}__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]
-* __mm__ : Représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2
-
-Exemple de nom de fichier :
-
-* CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2
-
-### Grille lat-lon tournée
 
 Les fichiers ont la nomenclature suivante :
 
@@ -119,7 +70,7 @@ Exemples de noms de fichier :
 
 ## Liste des variables
 
-Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement (seulement disponibles sur la grille lat-lon tournée)
+Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (*HRDPS-WEonG*) calculés en post-traitement. 
 
 <table id="csv-table" class="display"></table>
 

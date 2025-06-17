@@ -6,6 +6,14 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System North (HRDPS-North)
 
+## Wednesday June 18, 2025
+
+### Decommission of HRDPS-North, replaced by CAPS 
+
+After nearly four years of high-resolution coupled forecasts for the Arctic, the HRDPS-North will be decommissioned on Wednesday, June 18, 2025.
+
+The official announcement is available [via this link](https://dd.weather.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXXXXX).
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 2.1.0 of the High Resolution Deterministic Prediction System North (HRDPS-North) at the Canadian Meteorological Centre
