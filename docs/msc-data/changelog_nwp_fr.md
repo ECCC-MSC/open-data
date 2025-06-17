@@ -8,6 +8,10 @@
 
 ## 2025
 
+### 18 juin 2025
+
+* [Fin de service du SHRPD Nord, à nouveau remplacé par le Système canadien de prévision de l'Arctique (SCPA)](nwp_caps/changelog_caps_fr.md#le-mercredi-18-juin-2025)
+
 ### 26 mai 2025
 
 * [Ajout des observations ATMS et CrIS du satellite NOAA-21 dans le SGPE](nwp_geps/changelog_geps_fr.md#le-lundi-26-mai-2025)

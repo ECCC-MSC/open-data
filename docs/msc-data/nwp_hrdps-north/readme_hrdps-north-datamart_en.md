@@ -6,11 +6,7 @@
 
 # GRIB2 data from the High Resolution Deterministic Prediction System North (HRDPS-North)
 
-This page describes all the data from the experimental [High Resolution Deterministic Prediction System North (HRDPS-North)](readme_hrdps-north_en.md) available in GRIB2 format, i.e. data on a polar stereographic grid at 2.5km resolution and data on a rotated lat-lon grid at 3km resolution over an extended domain.
-
-The 3km-resolution data come from a version of HRDPS-North whose domain and grid are identical to the former [Canadian Arctic Prediction System (CAPS)](https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_en/) which was implemented during the Polar Forecast Year (YOPP) and whose data were publicly available from January 2018 to November 2021 (see [HERE](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/)).
-
-NOTE: Weather elements on the grid (WEonG) are only available for the 3km resolution domain.
+This page describes all the data from the experimental [High Resolution Deterministic Prediction System North (HRDPS-North)](readme_hrdps-north_en.md) available in GRIB2 format on a rotated lat-lon grid at 3km resolution over an extended domain.
 
 ## Data address 
 
@@ -20,8 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs:
 
-* Data on 2.5km polar stereographic grid: [https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/grib2/)
-* Data on 3km rotated lat-lon grid: [https://dd.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/3km/)
+* [https://dd.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/north/3km/)
 
 where :
 
@@ -30,24 +25,7 @@ where :
 
 Note: Some weather elements on the grid algorithms ("WEonG") require variable values at `t-1`, so in order to standardize data supply, forecast times start at 001h.
 
-## Technical specification of grids 
-
-* __Polar stereographic grid__
-
-![HRDPS Northern Domain PS grid image](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png)
-
-Values given to polar stereographic grid parameters at 2.5km resolution:
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 1465 |
-| nj | 825 | 
-| resolution at 60° N | 2.5 km |
-| coordinates of first grid point | 67.9601°N ; 140.7611°W |
-| coordinates (i; j) of North Pole | (389.0, 842.0) |
-| grid orientation (relative to j axis) | -116.0° |
-
-* __Rotated lat-lon grid__
+## Technical specification of the grid 
 
 ![Rotated lat-lon grid image of HRDPS's northern domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png)
 
@@ -63,33 +41,6 @@ Values given to rotated lat-lon grid parameters at 3km resolution:
 __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) and [GDAL](https://gdal.org/) support these rotated grids. 
 
 ## Nomenclature of file names
-
-### Polar stereographic grid
-
-Files have the following nomenclature:
-
-`CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2`
-
-where :
-
-* __CMC__: Constant character string indicating that the Canadian Meteorological Centre (CMC) is issuing the forecast.
-* __hrdps__ : Constant character string indicating that the data comes from the High Resolution Deterministic Prediction System.
-* __north__: Constant character string indicating the north domain.
-* __VAR__: Type of variable contained in the file (e.g. UGRD)
-* __LVLTYPE_LVL__: Vertical level and height [e.g. SFC for surface, TGL_120 for height 120m above ground]
-* __Grid__ : Horizontal grid [ps for polar stereographic]
-* __resolution__ : 2.5km resolution
-* __YYYYMMDD__: Year, month and day of the beginning of the forecast
-* __HH__: UTC run time [00, 12]
-* __P{hhh}__ : "P" is a constant character. "hhh" represents the forecast hour [000, 001, 002, ..., 048]
-* __mm__: Represents the minutes of the forecast [Hard-coded to 00 for now. Time steps of 30 minutes will be available eventually].
-* __grib2__: Constant string indicating that the format is GRIB2.
-
-Example file name:
-
-* CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2
-
-### Rotated lat-lon grid
 
 Files have the following nomenclature:
 
@@ -119,7 +70,7 @@ Examples of file names:
 
 ## Variable list
 
-This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing (only available on the rotated lat-lon grid)
+This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (*HRDPS-WEonG*) calculated in post-processing. 
 
 <table id="csv-table" class="display"></table>
 

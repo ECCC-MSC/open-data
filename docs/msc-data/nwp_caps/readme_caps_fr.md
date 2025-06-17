@@ -34,7 +34,10 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
-A venir.
+* [Version actuelle du Système canadien de prévision de l'Arctique](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CAPS_f.pdf)
+* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CAPS_fr.svg)
+* [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_caps_f.pdf)
+* [Note technique des éléments du temps sur grille (WEonG)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf)
 
 ## Registre des changements 
 

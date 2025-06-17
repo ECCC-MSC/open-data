@@ -34,7 +34,10 @@ Upcoming.
 
 ## Technical documentation
 
-Upcoming.
+* [Current version of the Canadian Arctic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CAPS_e.pdf)
+* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CAPS_en.svg)
+* [Technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_caps_e.pdf)
+* [Weather elements on the grid (WEonG) technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf)
 
 ## Changelog
 
