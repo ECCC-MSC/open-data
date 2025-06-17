@@ -17,6 +17,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 The data can be accessed at the following URL:
 
 * [https://dd.weather.gc.ca/model_caps/3km/{HH}/{hhh}](https://dd.weather.gc.ca/model_caps/3km/) 
+
 where :
 
 * __HH__: UTC run time [00, 12] 
@@ -77,6 +78,7 @@ Examples of file names:
 <script>
   loadTable("csv-table", "../../../assets/csv/HRDPS-North_Variables-List_en.csv");
 </script>
+
 * Oceanic variables list:
 
 <table id="csv-table-netcdf" class="display"></table>
