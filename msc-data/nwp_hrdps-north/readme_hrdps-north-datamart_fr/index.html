@@ -132,7 +132,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#specification-technique-des-grilles" class="nav-link">Spécification technique des grilles</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -163,16 +163,13 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_hrdps-north_fr/">SHRPD-Nord</a> &gt; SHRPD-Nord sur le Datamart du SMC</p>
 <h1 id="donnees-grib2-du-systeme-a-haute-resolution-de-prevision-deterministe-nord-shrpd-nord">Données GRIB2 du Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)</h1>
-<p>Cette page décrit toutes les données du <a href="../readme_hrdps-north_fr/">Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)</a> expérimental disponibles en format GRIB2, soit les données sur une grille polaire stéréographique à 2.5km de résolution et les données sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.</p>
-<p>Les données à 3km de résolution proviennent d'une version du SHRPD-Nord dont le domaine et la grille sont identiques à l'ancien <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_fr/">Système canadien de prévision de l'Arctique (SCPA)</a> qui avait été mis en place pendant l'année de la prévision polaire (YOPP) et dont les données ont été disponibles au public de janvier 2018 à novembre 2021 (voir <a href="https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/">ICI</a>). </p>
-<p>NOTE: Les éléments du temps sur grille (WEonG) ne sont disponibles que pour le domaine à 3km de résolution.</p>
+<p>Cette page décrit toutes les données du <a href="../readme_hrdps-north_fr/">Système à Haute Résolution de Prévision Déterministe Nord (SHRPD-Nord)</a> expérimental disponibles en format GRIB2 sur une grille lat-lon tournée à 3km de résolution sur un domaine étendu.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
 <p>Les données sont accessibles aux adresses suivantes :</p>
 <ul>
-<li>Données à 2.5km sur grille polaire stéréographique : <a href="https://dd.meteo.gc.ca/model_hrdps/north/grib2/">https://dd.meteo.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/</a></li>
-<li>Données à 3km sur grille lat-lon tournée : <a href="https://dd.meteo.gc.ca/model_hrdps/north/3km/">https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.meteo.gc.ca/model_hrdps/north/3km/">https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -180,49 +177,7 @@
 <li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 048]</li>
 </ul>
 <p>Note: Certains algorithmes des éléments du temps sur grille ("WEonG") ont besoin des valeurs des variables à <code>t-1</code>, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.</p>
-<h2 id="specification-technique-des-grilles">Spécification technique des grilles</h2>
-<ul>
-<li><strong>Grille polaire stéréographique</strong></li>
-</ul>
-<p><img alt="Image de la grille PS du domaine nord du SHRPD" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png" /></p>
-<p>Valeurs données aux paramètres de la grille polaire stéréographique à 2.5km de résolution:</p>
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Valeur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>h</td>
-<td>ni</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>825</td>
-</tr>
-<tr>
-<td>résolution à 60° N</td>
-<td>2.5 km</td>
-</tr>
-<tr>
-<td>coordonnées du premier point de grille</td>
-<td>67.9601°N ; 140.7611°W</td>
-</tr>
-<tr>
-<td>coordonnées (i; j) du Pôle Nord</td>
-<td>(389.0, 842.0)</td>
-</tr>
-<tr>
-<td>orientation de la grille (par rapport à l’axe des j)</td>
-<td>-116.0°</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Grille lat-lon tournée</strong></li>
-</ul>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p><img alt="Image de la grille lat-lon tournée du domaine nord du SHRPD" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png" /></p>
 <p>Valeurs données aux paramètres de la grille lat-lon tournée à 3km de résolution:</p>
 <table>
@@ -253,29 +208,6 @@
 </table>
 <p><strong>Note</strong> : Les <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">versions les plus récentes de wgrib2</a> et <a href="https://gdal.org/">GDAL</a> supportent ces grilles tournées. </p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<h3 id="grille-polaire-stereographique">Grille polaire stéréographique</h3>
-<p>Les fichiers ont la nomenclature suivante :</p>
-<p><code>CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2</code></p>
-<p>où :</p>
-<ul>
-<li><strong>CMC</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions</li>
-<li><strong>hrdps</strong> : Chaîne de caractères constante indiquant que les données proviennent du Système haute résolution de prévision déterministe</li>
-<li><strong>north</strong> : Chaîne de caractères constante indiquant le domaine nord</li>
-<li><strong>VAR</strong> : Type de variable contenu dans le fichier (ex. : UGRD)</li>
-<li><strong>LVLTYPE_LVL</strong> : Niveau vertical et hauteur [ex: SFC pour la surface, TGL_120 pour la hauteur de 120m au-dessus du sol]</li>
-<li><strong>Grille</strong> : Grille horizontale [ps pour polaire stéréographique]</li>
-<li><strong>resolution</strong> : 2.5km de résolution</li>
-<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 12]</li>
-<li><strong>P{hhh}</strong> : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002, ..., 048]</li>
-<li><strong>mm</strong> : Représente les minutes de prévision [Codé en dur à 00 pour l’instant. Les pas de temps de 30 minutes seront disponibles éventuellement.].</li>
-<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2</li>
-</ul>
-<p>Exemple de nom de fichier :</p>
-<ul>
-<li>CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2</li>
-</ul>
-<h3 id="grille-lat-lon-tournee">Grille lat-lon tournée</h3>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <ul>
 <li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2</code></li>
@@ -303,7 +235,7 @@
 <li>20231211T12Z_MSC_HRDPS-North-WEonG_VISIFG_Sfc_RLatLon0.03_PT024H.grib2</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
-<p>Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (<em>HRDPS-WEonG</em>) calculés en post-traitement (seulement disponibles sur la grille lat-lon tournée)</p>
+<p>Cette liste contient à la fois les paramètres générés à partir des sorties du SHRPD-Nord mais aussi les éléments du temps sur grille (<em>HRDPS-WEonG</em>) calculés en post-traitement. </p>
 <table id="csv-table" class="display"></table>
 
 <p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>

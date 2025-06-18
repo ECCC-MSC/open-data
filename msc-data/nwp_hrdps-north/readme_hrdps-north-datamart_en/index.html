@@ -132,7 +132,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#technical-specification-of-grids" class="nav-link">Technical specification of grids</a>
+            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid" class="nav-link">Technical specification of the grid</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -163,16 +163,13 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrdps-north_en/">HRDPS-North</a> &gt; HRDPS-North on MSC Datamart</p>
 <h1 id="grib2-data-from-the-high-resolution-deterministic-prediction-system-north-hrdps-north">GRIB2 data from the High Resolution Deterministic Prediction System North (HRDPS-North)</h1>
-<p>This page describes all the data from the experimental <a href="../readme_hrdps-north_en/">High Resolution Deterministic Prediction System North (HRDPS-North)</a> available in GRIB2 format, i.e. data on a polar stereographic grid at 2.5km resolution and data on a rotated lat-lon grid at 3km resolution over an extended domain.</p>
-<p>The 3km-resolution data come from a version of HRDPS-North whose domain and grid are identical to the former <a href="https://eccc-msc.github.io/open-data/msc-data/nwp_caps/readme_caps_en/">Canadian Arctic Prediction System (CAPS)</a> which was implemented during the Polar Forecast Year (YOPP) and whose data were publicly available from January 2018 to November 2021 (see <a href="https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/dd_info@comm.collab.science.gc.ca/message/A2FYFAQCCJKQNGX7DOPO6QMC6VHAPG3R/">HERE</a>).</p>
-<p>NOTE: Weather elements on the grid (WEonG) are only available for the 3km resolution domain.</p>
+<p>This page describes all the data from the experimental <a href="../readme_hrdps-north_en/">High Resolution Deterministic Prediction System North (HRDPS-North)</a> available in GRIB2 format on a rotated lat-lon grid at 3km resolution over an extended domain.</p>
 <h2 id="data-address">Data address</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The data can be accessed at the following URLs:</p>
 <ul>
-<li>Data on 2.5km polar stereographic grid: <a href="https://dd.weather.gc.ca/model_hrdps/north/grib2/">https://dd.weather.gc.ca/model_hrdps/north/grib2/{HH}/{hhh}/</a></li>
-<li>Data on 3km rotated lat-lon grid: <a href="https://dd.weather.gc.ca/model_hrdps/north/3km/">https://dd.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.weather.gc.ca/model_hrdps/north/3km/">https://dd.weather.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/</a></li>
 </ul>
 <p>where :</p>
 <ul>
@@ -180,49 +177,7 @@
 <li><strong>hhh</strong> : Forecast hour [000, 001, 002, ..., 048]</li>
 </ul>
 <p>Note: Some weather elements on the grid algorithms ("WEonG") require variable values at <code>t-1</code>, so in order to standardize data supply, forecast times start at 001h.</p>
-<h2 id="technical-specification-of-grids">Technical specification of grids</h2>
-<ul>
-<li><strong>Polar stereographic grid</strong></li>
-</ul>
-<p><img alt="HRDPS Northern Domain PS grid image" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grillePS_hrdps-north.png" /></p>
-<p>Values given to polar stereographic grid parameters at 2.5km resolution:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>1465</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>825</td>
-</tr>
-<tr>
-<td>resolution at 60° N</td>
-<td>2.5 km</td>
-</tr>
-<tr>
-<td>coordinates of first grid point</td>
-<td>67.9601°N ; 140.7611°W</td>
-</tr>
-<tr>
-<td>coordinates (i; j) of North Pole</td>
-<td>(389.0, 842.0)</td>
-</tr>
-<tr>
-<td>grid orientation (relative to j axis)</td>
-<td>-116.0°</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>Rotated lat-lon grid</strong></li>
-</ul>
+<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p><img alt="Rotated lat-lon grid image of HRDPS's northern domain" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_hrdps-north/grilleRLatLon_hrdps-north.png" /></p>
 <p>Values given to rotated lat-lon grid parameters at 3km resolution:</p>
 <table>
@@ -253,29 +208,6 @@
 </table>
 <p><strong>Note</strong> : The <a href="https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html">most recent versions of wgrib2</a> and <a href="https://gdal.org/">GDAL</a> support these rotated grids. </p>
 <h2 id="nomenclature-of-file-names">Nomenclature of file names</h2>
-<h3 id="polar-stereographic-grid">Polar stereographic grid</h3>
-<p>Files have the following nomenclature:</p>
-<p><code>CMC_hrdps_north_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_{YYYYMMDDHH}_P{hhh}-{mm}.grib2</code></p>
-<p>where :</p>
-<ul>
-<li><strong>CMC</strong>: Constant character string indicating that the Canadian Meteorological Centre (CMC) is issuing the forecast.</li>
-<li><strong>hrdps</strong> : Constant character string indicating that the data comes from the High Resolution Deterministic Prediction System.</li>
-<li><strong>north</strong>: Constant character string indicating the north domain.</li>
-<li><strong>VAR</strong>: Type of variable contained in the file (e.g. UGRD)</li>
-<li><strong>LVLTYPE_LVL</strong>: Vertical level and height [e.g. SFC for surface, TGL_120 for height 120m above ground]</li>
-<li><strong>Grid</strong> : Horizontal grid [ps for polar stereographic]</li>
-<li><strong>resolution</strong> : 2.5km resolution</li>
-<li><strong>YYYYMMDD</strong>: Year, month and day of the beginning of the forecast</li>
-<li><strong>HH</strong>: UTC run time [00, 12]</li>
-<li><strong>P{hhh}</strong> : "P" is a constant character. "hhh" represents the forecast hour [000, 001, 002, ..., 048]</li>
-<li><strong>mm</strong>: Represents the minutes of the forecast [Hard-coded to 00 for now. Time steps of 30 minutes will be available eventually].</li>
-<li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
-</ul>
-<p>Example file name:</p>
-<ul>
-<li>CMC_hrdps_north_DEPR_ISBL_0175_ps2.5km_2021092412_P003-00.grib2</li>
-</ul>
-<h3 id="rotated-lat-lon-grid">Rotated lat-lon grid</h3>
 <p>Files have the following nomenclature:</p>
 <ul>
 <li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS-North_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></li>
@@ -303,7 +235,7 @@
 <li>20231211T12Z_MSC_HRDPS-North-WEonG_VISIFG_Sfc_RLatLon0.03_PT024H.grib2</li>
 </ul>
 <h2 id="variable-list">Variable list</h2>
-<p>This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (<em>HRDPS-WEonG</em>) calculated in post-processing (only available on the rotated lat-lon grid)</p>
+<p>This list contains both the parameters generated from HRDPS-North outputs and the weather elements on the grid (<em>HRDPS-WEonG</em>) calculated in post-processing. </p>
 <table id="csv-table" class="display"></table>
 
 <p><link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css"></p>

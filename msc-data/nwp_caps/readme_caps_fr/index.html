@@ -151,12 +151,11 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; SCPA expérimental</p>
 <h1 id="donnees-et-produits-du-systeme-canadien-de-prevision-de-larctique-scpa-experimental">Données et Produits du Système canadien de prévision de l'Arctique (SCPA) expérimental</h1>
-<p>Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision expérimental basé sur une configuration à aire limitée (LAM) du modèle Global Environmental Multiscale (GEM). Il couvre l'ensemble du bassin arctique et la baie d'Hudson avec une résolution de la grille horizontale d'environ 3km. Le niveau momentum le plus bas se situe à une altitude d'environ 40m. Le SCPA 3km est piloté par le Système global de prévision déterministe global (SGPD) de ECCC, qui fournit des conditions initiales et latérales pour les champs atmosphériques. Les champs hydrométéorologiques initiaux sont recyclés à partir de la prévision à 12 heures de l'intégration précédente du SCPA.  Les champs de surface océan-glace sont fournis grâce à un couplage bidirectionnel avec un modèle glace-océan, dont la configuration suit celle du Système régional de prévision océan-glace (SRPOG). Le SCPA tourne deux fois par jour sur une grille lat-lon tournée et est initialisé à 00 et 12 UTC respectivement avec une intégration de 48 heures."</p>
+<p>Le Système canadien de prévision de l'Arctique (SCPA) est un système de prévision couplé experimental atmosphère-océan-glace basé sur une configuration à aire limitée (LAM) du modèle Global Environmental Multiscale (GEM), couplé au Nucleus of European Modeling of the Ocean (NEMO) et le Community ICe Code (CICE). Il couvre l'ensemble du bassin arctique avec une résolution de la grille horizontale d'environ 3km. Le SCPA est piloté par le <a href="../../nwp_gdps/readme_gdps_fr/">Système global de prévision déterministe (SGPD)</a> de ECCC, qui fournit des conditions initiales et latérales pour les champs atmosphériques. Les champs hydrométéorologiques initiaux sont recyclés à partir de la prévision à 12 heures de l'intégration précédente du SCPA. De plus, le SGPD est utilisé pour forcer le modèle océan-glace en dehors des régions couplées. Les conditions initiales pour les champs océan-glace sont pris du <a href="../../nwp_riops/readme_riops_fr/">Système Régional de Prévision Océan-Glace (SRPOG)</a>. Les conditions frontières océaniques dans l'Atlantique Nord et le Pacifique Nord viennent du SGPD. Le SCPA tourne deux fois par jour et est initialisé à 00 et 12 UTC respectivement avec une intégration de 48 heures</p>
 <h2 id="acces">Accès</h2>
 <h3 id="comment-acceder-aux-donnees">Comment accéder aux données</h3>
-<p>Ces données sont respectivement disponibles via l'API / les services web <a href="../../../msc-geomet/readme_fr/">GeoMet du SMC</a> et le serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> :</p>
+<p>Ces données sont respectivement disponibles via le serveur de données <a href="../../../msc-datamart/readme_fr/">Datamart du SMC</a> :</p>
 <ul>
-<li><a href="https://eccc-msc.github.io/open-data/msc-geomet/readme_fr/">Données disponibles via les services web géospatiaux GeoMet-Météo</a></li>
 <li><a href="../readme_caps-datamart_fr/">Données GRIB2 et NetCDF expérimentales disponibles sur le Datamart du SMC</a></li>
 <li><a href="../readme_caps-weong-datamart_fr/">Données GRIB2  expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC</a></li>
 </ul>
@@ -168,7 +167,12 @@
 <h3 id="metadonnees">Métadonnées</h3>
 <p>À venir.</p>
 <h2 id="documentation-technique">Documentation technique</h2>
-<p>A venir.</p>
+<ul>
+<li><a href="http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_CAPS_f.pdf">Version actuelle du Système canadien de prévision de l'Arctique</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_CAPS_fr.svg">Diagramme de dépendances</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_caps_f.pdf">Note technique</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf">Note technique des éléments du temps sur grille (WEonG)</a></li>
+</ul>
 <h2 id="registre-des-changements">Registre des changements</h2>
 <p>La chronologie des changements apportés au Système canadien de prévision de l'Arctique (SCPA) est disponible <a href="../changelog_caps_fr/">ici</a>.</p></div>
             </div>
