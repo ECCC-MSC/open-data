@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.4
+
+* date: 2025-06-18
+* announcements:
+    * Not announced
+* new content:
+    * Add CAPS pages 
+    * Update HRDPS-Nord pages 
+* improvements:
+    * NA
+* bug fixes:
+    * Typo
+
 # 2.9.3
 
 * date: 2025-06-12
