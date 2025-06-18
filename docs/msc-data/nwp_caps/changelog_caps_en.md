@@ -12,7 +12,7 @@
 
 On Wednesday June 18th, 2025, after 3.5 years, the uncoupled HRDPS North re-introduces two-way coupling with a regional ice-ocean model and retakes the name “Canadian Arctic Prediction System”. Some HRDPS North products will continue to be available, being fed by CAPS, until the fall (exact date to be determined).
 
-The official note is available [at this link](https://dd.weather.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXX).
+The official note is available [at this link](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_181500___38690).
 
 The CAPS v3.0.0 technical specifications document is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CAPS_3.0.0_e.pdf).
 
