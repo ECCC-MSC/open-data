@@ -12,7 +12,7 @@
 
 After nearly four years of high-resolution coupled forecasts for the Arctic, the HRDPS-North will be decommissioned on Wednesday, June 18, 2025.
 
-The official announcement is available [via this link](https://dd.weather.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXXXXX).
+The official announcement is available [via this link](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_181500___38690).
 
 ## Tuesday June 11, 2024
 

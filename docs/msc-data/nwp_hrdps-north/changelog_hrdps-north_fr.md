@@ -12,7 +12,7 @@
 
 Après près de 4 années de prévisions couplées haute résolution sur l'Arctique, le SHRPD-Nord sera mis hors service le mercredi 18 juin 2025.
 
-La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXXXXX).
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_181500___38690).
 
 ## Le mardi 11 juin 2024
 

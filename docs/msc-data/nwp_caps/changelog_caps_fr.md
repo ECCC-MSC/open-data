@@ -12,7 +12,7 @@
 
 Le mercredi 18 juin 2025, après 3.5 années, le système non-couplé de SHRPD-Nord réintroduit le couplage bidirectionnel avec un modèle régional océan-glace et reprend le nom de « Système Canadien de prévision de l'Arctique ». Certains produits du SHRPD-Nord continueront d'être alimentés par le SCPA jusqu’à l’automne (la date précise à déterminer).
 
-La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_XXXX).
+La note officielle est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/06/18/NOCN03_CWAO_181500___38690).
 
 Le document des spécifications techniques du SCPA v3.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_CAPS_3.0.0_f.pdf).
 
