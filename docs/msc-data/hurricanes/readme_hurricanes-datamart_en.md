@@ -10,7 +10,10 @@ This page describes the data of the [hurricane trajectories](readme_hurricanes_e
 
 There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.
 
-Please note that GeoJSON data will replace shapefile data in fall 2025. An announcement to this effect will be made via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) mailing list.
+NOTES:
+
+* Hurricane tracks in the Atlantic region, from the [NOAA National Hurricane Center](https://www.nhc.noaa.gov/) are republished by the [Canadian Hurricane Centre](https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html) and are also available in GeoJSON format (but not in Shapefile format).
+* Data in GeoJSON format is currently shared as experimental data because the format used does not comply with the latest [RFC7946](https://datatracker.ietf.org/doc/html/rfc7946) specifications. Once the format has been corrected in autumn 2025, this data will be hosted on the MSC Datamart as operational data and will replace the shapefile data. An announcement will be made via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info) mailing list.
 
 ## Data location
 
@@ -24,7 +27,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 
-* __Data in GeoJSON format__ can be found at this address:
+* __Data in GeoJSON format__ can be found on the MSC testing data repository DD-Alpha, at this address:
 
     * [https://dd.alpha.weather.gc.ca/hurricanes](https://dd.alpha.weather.gc.ca/hurricanes)
 

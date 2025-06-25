@@ -10,7 +10,10 @@ Cette page décrit les données des [trajectoires d'ouragans](readme_hurricanes_
 
 Il y a quatre formats shapefiles (*.shp) qui sont produits et comportent chacun un bulletin de prévisions sur 6 heures lorsque des tempêtes d'origine tropicale menace ou risque de menacer le territoire canadien.
 
-Veuillez noter que les données en format GeoJSON remplaceront, dès l'automne 2025, les données en format shapefile. Une annonce sera communiquée à cet effet via la liste de diffusion [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info).
+NOTES:
+
+* Les trajectoires d'ouragans dans la région atlantique, provenant du [Centre national des ouragans de la NOAA](https://www.nhc.noaa.gov/) sont rediffusées par le [Centre canadien des ouragans](https://www.canada.ca/fr/environnement-changement-climatique/services/previsions-faits-ouragans/produits.html) et sont aussi disponibles en format GeoJSON (mais pas en format Shapefile). 
+* Les données en format GeoJSON sont pour le moment partagées en tant que données expérimentales car le format utilisé n'est pas conforme aux dernières spécifications [RFC7946](https://datatracker.ietf.org/doc/html/rfc7946). Dès que le format sera corrigé au cours de l'automne 2025, ces données seront hébergées sur le Datamart du SMC en tant que données opérationnelles et remplaceront les données en format shapefile. Une annonce sera communiquée à cet effet via la liste de diffusion [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info).
 
 ## Adresse des données 
 
@@ -24,7 +27,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Avec {NAME} : nom de l'ouragan en lettres majuscules (p. ex. « BERTHA »)
 
-* __Les données en format GeoJSON__ sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC,  à cette adresse :
+* __Les données en format GeoJSON__ sont disponibles sur le site web d'essai de données DD-Alpha du Datamart du SMC, à cette adresse :
 
      * [https://dd.alpha.meteo.gc.ca/hurricanes/](https://dd.alpha.meteo.gc.ca/hurricanes)
 
