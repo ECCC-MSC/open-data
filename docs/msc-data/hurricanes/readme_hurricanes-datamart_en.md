@@ -76,6 +76,8 @@ When querying the 'lin' shapefile, the elements have the same definition as in t
 
 `{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json`
 
+Where :
+
 * __YYYYMMDD__ : Year, month and day of data transmission
 * __T__: Time delimiter according to ISO8601 standards
 * __HHmm__ : Hour and minute of data transmission

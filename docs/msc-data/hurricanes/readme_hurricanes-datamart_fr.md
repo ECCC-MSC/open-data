@@ -18,7 +18,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier shapefile ou GeoJSON, selon le format choisi.
 
-* Les données en format Shapefile sont disponibles à cette adresse :
+* __Les données en format Shapefile__ sont disponibles à cette adresse :
 
      * [https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile/{NAME}/](https://dd.meteo.gc.ca/trajectoires/hurricane/shapefile)
 
@@ -78,6 +78,8 @@ Les éléments des fichiers shapefile 'lin' ont les mêmes définitions que les 
 * __Données en format GeoJSON__
 
 `{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json`
+
+où :
 
 * __YYYYMMDD__ : Année, mois et jour de l'émission des données
 * __T__ : Délimiteur temporel selon les normes ISO8601
