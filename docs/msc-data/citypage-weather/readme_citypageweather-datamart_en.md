@@ -16,7 +16,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-* **Weather forecast data by city, disseminated in dated files (single files)** are available according to this hierarchy :
+Weather forecast data by city, disseminated in dated files (single files) are available according to this hierarchy :
 
   [https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.weather.gc.ca/citypage_weather/)
   
@@ -43,19 +43,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
   Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
 
-* **Weather forecast data by city, distributed in undated files (data overwritten with each update)** are available at this address:
-
-  [https://dd.weather.gc.ca/citypage_weather/xml/{PROV}](https://dd.weather.gc.ca/citypage_weather/xml/)
-
-  where:
-  
-    * __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list above)
-
-  Note: the `HEF` directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.
-
 ## File name nomenclature 
 
-* **Dated, unique files**:
+The files have the following nomenclature:
 
   `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
@@ -69,23 +59,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
-* **Undated files, overwritten with each update**:
-
-  `{SiteCode}_{L}.xml`
-
-  where :
-
-    * __SiteCode__ : City code (see below)
-    * __L__ : Letter indicating file language: f (French) or e (English)
-
-  Examples of file names:
-
-    * s0000011_e.xml 
-    * s0000011_f.xml
-
 A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson) is available in GeoJSON format.
-
-NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.
 
 ## Tags and XML schemas 
 
@@ -99,12 +73,10 @@ NOTE: Unique dated files should replace undated files within the next few months
 
 * City page weather XML files contain __coded__ current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at:
 
- * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
- * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
+     * [Current weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv)
+     * [Forecast weather conditions](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv)
 
 * These icons are covered by the standard Environment Canada Terms and Conditions: [https://www.canada.ca/en/transparency/terms.html](https://www.canada.ca/en/transparency/terms.html). To make a commercial usage of these icons, you must obtain prior explicit consent.
-
-* You can download all ECCC weather icons from the following URL: [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), where NN is a number between 00 and 48.
 
 * You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address: [https://github.com/OGCMetOceanDWG/WorldWeatherSymbols](https://github.com/OGCMetOceanDWG/WorldWeatherSymbols)
 

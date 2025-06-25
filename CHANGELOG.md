@@ -10,6 +10,21 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.6
+
+* date: 2025-06-25
+* announcements:
+    * Not announced
+* new content:
+    * Update hurricane pages with GeoJSON data
+    * Update CAPS page with GeoMet link
+    * Update citypage_weathe DD pages to remove non-dated files
+    * Update marine_weathe DD pages to remove non-dated files
+* improvements:
+    * Fix AMQP config files (RDPS, citypage_weather examples)
+* bug fixes:
+    * NA
+
 # 2.9.5
 
 * date: 2025-06-18

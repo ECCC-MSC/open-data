@@ -16,7 +16,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-* **Les données de prévision météorologique par ville, distribuées dans des fichiers datés (fichiers uniques)** sont disponibles à cette adresse:
+Les données de prévision météorologique par ville, distribuées dans des fichiers datés (fichiers uniques) sont disponibles à cette adresse:
 
   [https://dd.meteo.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.meteo.gc.ca/citypage_weather/)
 
@@ -43,21 +43,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
   Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
 
-* **Les données de prévision météorologique par ville, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)** sont disponibles à cette adresse:
-
-  [https://dd.meteo.gc.ca/citypage_weather/xml/{PROV}](https://dd.meteo.gc.ca/citypage_weather/xml/)
-
-  où:
-  
-    * __PROV__ : Code de 2 lettres pour la province ou le territoire couvert par ces prévisions (voir la liste ci-dessus)
-
-  Note: le répertoire `HEF` contient des données de haute altitude alimentant des bulletins de prévisions saisonnières publiés seulement pour la Colombie-Britannique
-
 ## Nomenclature des noms de fichiers 
 
 Les fichiers suivent la nomenclature suivante :
-
-* **Fichiers datés, uniques**:
 
   `{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml`
 
@@ -71,23 +59,8 @@ Les fichiers suivent la nomenclature suivante :
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
     * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 
-* **Fichiers non datés, écrasés lors de chaque mise à jour**:
-
-  `{SiteCode}_{L}.xml`
-
-  où :
-
-    * __SiteCode__ : Code de la ville (voir plus bas)
-    * __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
-
-  Exemples de noms de fichier :
-
-    * s0000011_e.xml 
-    * s0000011_f.xml
-
 Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_fr.geojson), en format GeoJSON est disponible.
 
-NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.
 
 ## Balises et schémas XML 
 
@@ -101,12 +74,10 @@ NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois le
 
 * Les fichiers XML de prévisions météorologiques par ville contiennent des renseignements __codés__ sur les conditions actuelles et prévues. Ces codes définissent l'icône à afficher sur les pages par ville du site Web du bureau des prévisions météorologiques. Vous pouvez consulter la description des conditions météorologiques qui correspond aux codes ici :
 
- * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
- * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
+     * [Conditions météorologiques actuelles](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_f.csv)
+     * [Prévisions météorologiques](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_f.csv)
 
 * Ces icônes sont distribuées sous les [conditions générales standards d'Environnement et Changement climatique Canada](https://www.canada.ca/fr/transparence/avis.html). Pour faire un usage commercial de ces icônes, vous devez obtenir un consentement explicite préalable.
-
-* Vous pouvez télécharger toutes les icônes météorologiques de ECCC à l'adresse suivante : [https://meteo.gc.ca/weathericons/NN.gif](https://meteo.gc.ca/weathericons/NN.gif), où NN est un nombre compris entre 00 et 48.
 
 * Vous pouvez également créer vos propres icônes en utilisant les symboles météorologiques mondiaux de l'Organisation météorologique mondiale (OMM). Voir un ensemble complet de symboles météorologiques de l'OMM à cette adresse : [https://github.com/OGCMetOceanDWG/WorldWeatherSymbols](https://github.com/OGCMetOceanDWG/WorldWeatherSymbols)
 

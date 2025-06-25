@@ -12,10 +12,11 @@ The Canadian Arctic Prediction System (CAPS) is an experimental coupled atmosphe
 
 ### How to access the data
 
-This data is available from the [MSC Datamart](../../msc-datamart/readme_en.md) HTTPS raw data server: 
+This experimental data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
-* [Experimental GRIB2 and NetCDF data available on the MSC Datamart](readme_caps-datamart_en.md)
-* [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_caps-weong-datamart_en.md)
+* [Data available via the GeoMet-Weather geospatial web services](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
+* [GRIB2 and NetCDF data available on the MSC Datamart](readme_caps-datamart_en.md)
+* [GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_caps-weong-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

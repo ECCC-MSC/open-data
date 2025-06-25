@@ -24,7 +24,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-* **Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques)** sont disponibles à cette adresse:
+Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques) sont disponibles à cette adresse:
 
   [https://dd.meteo.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.meteo.gc.ca/marine_weather/)
 
@@ -44,23 +44,15 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
     * prairies
     * st_lawrence
 
-* **Les données de prévisions météorologiques marines, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)** sont disponibles à cette adresse:
-
-  [https://dd.meteo.gc.ca/marine_weather/xml/{DOMAIN}](https://dd.meteo.gc.ca/marine_weather/xml/)
-
-  où:
-  
-    * __DOMAIN__ : Nom du domaine couvert par la prévision marine (voir la liste ci-dessus)
-    
 Une [__description des balises et des attributs XML__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv) des pages de prévisions météorologiques marines est disponible.
 
 Les __schémas XML__ des fichiers de données météorologiques marines sont également disponibles à l'adresse suivante :
 
-https://dd.meteo.gc.ca/marine_weather/schema/
+https://dd.meteo.gc.ca/today/marine_weather/schema/
 
 ## Nomenclature des noms de fichiers
 
-* **Fichiers datés, uniques**:
+Les fichiers ont la nomenclature suivante:
 
   `{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml`
 
@@ -74,23 +66,7 @@ https://dd.meteo.gc.ca/marine_weather/schema/
     * 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
     * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
 
-* **Fichiers non datés, écrasés lors de chaque mise à jour**:
-
-  `{SiteCode}_{L}.xml`
-
-  où :
-
-    * __SiteCode__ : Code de la région marine (voir plus bas)
-    * __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
-
-  Exemples de noms de fichier :
-
-    * s0000011_e.xml 
-    * s0000011_f.xml
-
 Une [__liste de noms d'emplacements et de codes de sites__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv) est disponible.
-
-NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.
 
 ## Support
 

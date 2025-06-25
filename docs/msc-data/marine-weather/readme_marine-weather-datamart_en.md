@@ -24,7 +24,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.
 
-* **Marine weather XML forecasts, disseminated in dated files (single files)** are available according to this hierarchy :
+Marine weather XML forecasts, disseminated in dated files (single files) are available according to this hierarchy :
 
   [https://dd.weather.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.weather.gc.ca/marine_weather/)
   
@@ -44,25 +44,15 @@ The data is available via the HTTPS protocol. It is possible to access it with a
    * prairies
    * st_lawrence
 
-* **Marine weather XML forecasts, distributed in undated files (data overwritten with each update)** are available at this address:
-
-  [https://dd.weather.gc.ca/marine_weather/xml/{DOMAIN}](https://dd.weather.gc.ca/marine_weather/xml/)
-
-  where:
-  
-    * __DOMAIN__ : Name of the region covered by the forecast (see the list above)
- 
 [__Tables describing each of the marine weather XML element tags and their associated attributes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv) are available.
 
 The __XML schemas__ for marine weather data are found in this directory :
 
-https://dd.weather.gc.ca/marine_weather/schema/
+https://dd.weather.gc.ca/today/marine_weather/schema/
 
 ## File name nomenclature 
 
 The file names have the following nomenclature :
-
-* **Dated, unique files**:
 
   `{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml`
 
@@ -76,23 +66,7 @@ The file names have the following nomenclature :
     * 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
     * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
 
-* **Undated files, overwritten with each update**:
-
-  `{SiteCode}_{L}.xml`
-
-  where :
-
-    * __SiteCode__ : Marine region code (see below)
-    * __L__ : Letter indicating file language: f (French) or e (English)
-
-  Examples of file names:
-
-    * s0000011_e.xml 
-    * s0000011_f.xml
-
 A [__list with location names and RegionNameCodes__](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv) is available.
-
-NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.
 
 ## Support
 
