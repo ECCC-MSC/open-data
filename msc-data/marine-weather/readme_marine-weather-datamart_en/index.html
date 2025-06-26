@@ -170,9 +170,7 @@
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.</p>
-<ul>
-<li><strong>Marine weather XML forecasts, disseminated in dated files (single files)</strong> are available according to this hierarchy :</li>
-</ul>
+<p>Marine weather XML forecasts, disseminated in dated files (single files) are available according to this hierarchy :</p>
 <p><a href="https://dd.weather.gc.ca/marine_weather/">https://dd.weather.gc.ca/marine_weather/{DOMAIN}/{HH}</a></p>
 <p>where:</p>
 <pre><code>* __DOMAIN__ : Name of the region covered by the forecast
@@ -187,25 +185,13 @@
 <li>mackenzie</li>
 <li>pacific</li>
 <li>prairies</li>
-<li>
-<p>st_lawrence</p>
-</li>
-<li>
-<p><strong>Marine weather XML forecasts, distributed in undated files (data overwritten with each update)</strong> are available at this address:</p>
-</li>
+<li>st_lawrence</li>
 </ul>
-<p><a href="https://dd.weather.gc.ca/marine_weather/xml/">https://dd.weather.gc.ca/marine_weather/xml/{DOMAIN}</a></p>
-<p>where:</p>
-<pre><code>* __DOMAIN__ : Name of the region covered by the forecast (see the list above)
-</code></pre>
 <p><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_e.csv"><strong>Tables describing each of the marine weather XML element tags and their associated attributes</strong></a> are available.</p>
 <p>The <strong>XML schemas</strong> for marine weather data are found in this directory :</p>
-<p>https://dd.weather.gc.ca/marine_weather/schema/</p>
+<p>https://dd.weather.gc.ca/today/marine_weather/schema/</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>The file names have the following nomenclature :</p>
-<ul>
-<li><strong>Dated, unique files</strong>:</li>
-</ul>
 <p><code>{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml</code></p>
 <p>where :</p>
 <pre><code>* __SiteCode__ : Marine region code (see below)
@@ -215,20 +201,7 @@
 <pre><code>* 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
 * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
 </code></pre>
-<ul>
-<li><strong>Undated files, overwritten with each update</strong>:</li>
-</ul>
-<p><code>{SiteCode}_{L}.xml</code></p>
-<p>where :</p>
-<pre><code>* __SiteCode__ : Marine region code (see below)
-* __L__ : Letter indicating file language: f (French) or e (English)
-</code></pre>
-<p>Examples of file names:</p>
-<pre><code>* s0000011_e.xml 
-* s0000011_f.xml
-</code></pre>
 <p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_en.csv"><strong>list with location names and RegionNameCodes</strong></a> is available.</p>
-<p>NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>

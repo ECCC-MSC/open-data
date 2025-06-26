@@ -170,9 +170,7 @@
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.</p>
-<ul>
-<li><strong>Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques)</strong> sont disponibles à cette adresse:</li>
-</ul>
+<p>Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques) sont disponibles à cette adresse:</p>
 <p><a href="https://dd.meteo.gc.ca/marine_weather/">https://dd.meteo.gc.ca/marine_weather/{DOMAIN}/{HH}</a></p>
 <p>où:</p>
 <pre><code>* __DOMAIN__ : Nom du domaine couvert par la prévision marine
@@ -188,20 +186,11 @@
 * prairies
 * st_lawrence
 </code></pre>
-<ul>
-<li><strong>Les données de prévisions météorologiques marines, distribuées dans des fichiers non datés (données écrasées lors de chaque mise à jour)</strong> sont disponibles à cette adresse:</li>
-</ul>
-<p><a href="https://dd.meteo.gc.ca/marine_weather/xml/">https://dd.meteo.gc.ca/marine_weather/xml/{DOMAIN}</a></p>
-<p>où:</p>
-<pre><code>* __DOMAIN__ : Nom du domaine couvert par la prévision marine (voir la liste ci-dessus)
-</code></pre>
 <p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_tags_table_f.csv"><strong>description des balises et des attributs XML</strong></a> des pages de prévisions météorologiques marines est disponible.</p>
 <p>Les <strong>schémas XML</strong> des fichiers de données météorologiques marines sont également disponibles à l'adresse suivante :</p>
-<p>https://dd.meteo.gc.ca/marine_weather/schema/</p>
+<p>https://dd.meteo.gc.ca/today/marine_weather/schema/</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<ul>
-<li><strong>Fichiers datés, uniques</strong>:</li>
-</ul>
+<p>Les fichiers ont la nomenclature suivante:</p>
 <p><code>{YYYYMMDD}T{HHmmss.sss}Z_MSC_MarineWeather_{SiteCode}_{L}.xml</code></p>
 <p>où :</p>
 <pre><code>* __SiteCode__ : Code de la région marine (voir plus bas)
@@ -211,20 +200,7 @@
 <pre><code>* 20250219T070026.074Z_MSC_MarineWeather_m0000109_en.xml
 * 20250219T070026.074Z_MSC_MarineWeather_m0000109_fr.xml
 </code></pre>
-<ul>
-<li><strong>Fichiers non datés, écrasés lors de chaque mise à jour</strong>:</li>
-</ul>
-<p><code>{SiteCode}_{L}.xml</code></p>
-<p>où :</p>
-<pre><code>* __SiteCode__ : Code de la région marine (voir plus bas)
-* __L__ : Lettre indiquant la langue du fichier : f (français) ou e (anglais)
-</code></pre>
-<p>Exemples de noms de fichier :</p>
-<pre><code>* s0000011_e.xml 
-* s0000011_f.xml
-</code></pre>
 <p>Une <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/marine-weather/marine_region_list_fr.csv"><strong>liste de noms d'emplacements et de codes de sites</strong></a> est disponible.</p>
-<p>NOTE: Les fichiers datés uniques devraient remplacer dans les prochains mois les fichiers non datés, mis en place pour éviter tout enjeu de corruption de fichiers.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

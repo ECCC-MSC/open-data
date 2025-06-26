@@ -168,9 +168,7 @@
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.</p>
-<ul>
-<li><strong>Weather forecast data by city, disseminated in dated files (single files)</strong> are available according to this hierarchy :</li>
-</ul>
+<p>Weather forecast data by city, disseminated in dated files (single files) are available according to this hierarchy :</p>
 <p><a href="https://dd.weather.gc.ca/citypage_weather/">https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}</a></p>
 <p>where:</p>
 <pre><code>* __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts
@@ -192,18 +190,8 @@
 * YT (Yukon)
 </code></pre>
 <p>Note: the <code>HEF</code> directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.</p>
-<ul>
-<li><strong>Weather forecast data by city, distributed in undated files (data overwritten with each update)</strong> are available at this address:</li>
-</ul>
-<p><a href="https://dd.weather.gc.ca/citypage_weather/xml/">https://dd.weather.gc.ca/citypage_weather/xml/{PROV}</a></p>
-<p>where:</p>
-<pre><code>* __PROV__ : Two letter provincial or territorial code indicating the area covered by the forecasts (see the list above)
-</code></pre>
-<p>Note: the <code>HEF</code> directory contains high elevation forecasts for seasonal forecast bulletins published only for British Columbia.</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<ul>
-<li><strong>Dated, unique files</strong>:</li>
-</ul>
+<p>The files have the following nomenclature:</p>
 <p><code>{YYYYMMDD}T{HHmmss.sss}Z_MSC_CitypageWeather_{SiteCode}_{L}.xml</code></p>
 <p>where :</p>
 <pre><code>* __SiteCode__ : City code (see below)
@@ -213,20 +201,7 @@
 <pre><code>* 20240815T154059.89Z_MSC_CitypageWeather_s0000011_fr.xml
 * 20240815T154059.89Z_MSC_CitypageWeather_s0000011_en.xml
 </code></pre>
-<ul>
-<li><strong>Undated files, overwritten with each update</strong>:</li>
-</ul>
-<p><code>{SiteCode}_{L}.xml</code></p>
-<p>where :</p>
-<pre><code>* __SiteCode__ : City code (see below)
-* __L__ : Letter indicating file language: f (French) or e (English)
-</code></pre>
-<p>Examples of file names:</p>
-<pre><code>* s0000011_e.xml 
-* s0000011_f.xml
-</code></pre>
 <p>A <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/site_list_en.geojson">list with location names and SiteNameCodes</a> is available in GeoJSON format.</p>
-<p>NOTE: Unique dated files should replace undated files within the next few months, in order to avoid any file corruption issues.</p>
 <h2 id="tags-and-xml-schemas">Tags and XML schemas</h2>
 <ul>
 <li>
@@ -241,18 +216,13 @@
 <ul>
 <li>
 <p>City page weather XML files contain <strong>coded</strong> current conditions and forecast conditions. These codes are used to determine the icon displayed on the weather office web site's city pages. Tables describing the meteorological conditions for each code are available at:</p>
-</li>
-<li>
-<p><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv">Current weather conditions</a></p>
-</li>
-<li>
-<p><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv">Forecast weather conditions</a></p>
+<ul>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/current_conditions_icon_code_descriptions_e.csv">Current weather conditions</a></li>
+<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/citypage-weather/forecast_conditions_icon_code_descriptions_e.csv">Forecast weather conditions</a></li>
+</ul>
 </li>
 <li>
 <p>These icons are covered by the standard Environment Canada Terms and Conditions: <a href="https://www.canada.ca/en/transparency/terms.html">https://www.canada.ca/en/transparency/terms.html</a>. To make a commercial usage of these icons, you must obtain prior explicit consent.</p>
-</li>
-<li>
-<p>You can download all ECCC weather icons from the following URL: <a href="https://meteo.gc.ca/weathericons/NN.gif">https://meteo.gc.ca/weathericons/NN.gif</a>, where NN is a number between 00 and 48.</p>
 </li>
 <li>
 <p>You can also create your own icons using WMO World Weather Symbols. See <em>A complete set of WMO weather symbols in SVG with full metadata and fallback PNGs</em> at this address: <a href="https://github.com/OGCMetOceanDWG/WorldWeatherSymbols">https://github.com/OGCMetOceanDWG/WorldWeatherSymbols</a></p>
