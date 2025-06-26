@@ -12,7 +12,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.6
 
-* date: 2025-06-25
+* date: 2025-06-26
 * announcements:
     * Not announced
 * new content:
