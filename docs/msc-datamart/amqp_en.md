@@ -38,7 +38,7 @@ For the subtopic, one only needs to  write the directory where the product is fo
 
 This subtopic is: PRODUCT.DIRECTORY.ON.THE.DATAMART
 
-- '__*__'  character is a wildcard (only one '*' per directory)
+- '__\*__'  character is a wildcard (only one '*' per directory)
 - '__#__'  means all remaining possibilities and must appear at the end of the key.
 
 ### Script
