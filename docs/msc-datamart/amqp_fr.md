@@ -37,7 +37,7 @@ Pour le sujet (option subtopic), il suffit de mettre le répertoire du produit, 
 
 Ce sujet est : REPERTOIRE.DU.PRODUIT.SUR.LE.DATAMART
 
-- '__*__' caractère de remplacement (wildcard) (un seul '*' par répertoire)
+- '__\*__' caractère de remplacement (wildcard) (un seul '*' par répertoire)
 - '__#__' signifie les possibilités restantes et doit être à la fin de la clé.
 
 ### Script d'utilisation
