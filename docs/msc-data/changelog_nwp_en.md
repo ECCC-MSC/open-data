@@ -8,9 +8,17 @@
 
 ## 2025
 
+### June 26, 2025
+
+* [Addition of AMV observations from the NOAA-21 and GOES19 satellites in the GDPS](nwp_gdps/changelog_gdps_en.md#thursday-june-26-2025)
+
 ### June 18, 2025
 
 * [Decommission of HRDPS North, replaced again by the coupled Canadian Arctic Prediction System (CAPS)](nwp_caps/changelog_caps_en.md#wednesday-june-18-2025)
+
+### June 17, 2025
+
+* [Production and use of dynamic allowlists for radiosonde, aircraft and ground-based GNSS observations in the GDPS](nwp_gdps/changelog_gdps_en.md#tuesday-june-17-2025)
 
 ### May 26, 2025
 

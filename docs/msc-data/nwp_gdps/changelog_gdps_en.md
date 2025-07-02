@@ -6,6 +6,27 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Thursday June 26th, 2025
+
+### Addition of AMV observations from the NOAA-21 and GOES19 satellites in the GDPS
+
+On Thursday June 26th, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 9.0.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to add the following satellite observation sources:
+
+* Addition of Atmospheric Motion Vector (AMV) observations from the NOAA-21 and GOES19 satellites.
+
+## Tuesday June 17th, 2025
+
+### Production and use of dynamic allowlists for radiosonde, aircraft and ground-based GNSS observations in the GDPS
+
+On Tuesday June 17th, 2025, starting with the 0600 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 9.0.0 of the Global Deterministic Prediction System (GDPS).
+
+Only the data assimilation component was modified to include:
+
+* Automated production and use of dynamic allowlists for radiosonde, aircraft and ground-based GNSS observations, produced every 6 hours, replacing manually-produced monthly lists.
+* The Global Ensemble Prediction System (GEPS) and High-Resolution Deterministic Prediction System (HRDPS) also benefit from this update, by assimilating the refined quality-controlled observations.
+
 ## Monday May 26th, 2025
 
 ### Addition of ATMS and CrIS observations from the NOAA-21 satellite and RARS-MWHS2 observations from the FY-3D and FY-3E satellites in the GDPS
