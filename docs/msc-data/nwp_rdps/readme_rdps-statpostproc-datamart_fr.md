@@ -17,7 +17,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-[https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing)
+* Données UMOS: [https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing)
+* Données PROGNOS: [https://dd.meteo.gc.ca/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_rdps/stat-post-processing)
 
 où :
 
@@ -45,20 +46,24 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS__ : Chaîne de caractères constante indiquant des données post-traitées à partir du Système régional de prévision déterministe
-* __PRODUCT__ : Chaîne de caractères constante indiquant le produit de post-traitement statistique [UMOS]
+* __PRODUCT__ : Chaîne de caractères constante indiquant le produit de post-traitement statistique [UMOS, PROGNOS]
 * __METHOD__ : Chaîne de caractères constante indiquant la méthode statistique utilisée [MLR pour Multiple Linear Regression]
-* __Var__ : Variables contenues dans le fichier [AirTemp, Dewpoint, WindSpeed, WindDir]
+* __Var__ : Variables contenues dans le fichier [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLTYPE__ : Type de niveau vertical [Sfc pour la surface, AGL pour le niveau au-dessus du sol (Above Ground Level)]
 * __LVL__ : Valeur du niveau vertical [1.5m, 10m]. Ce paramètre est absent pour la surface
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision  [000, 003, 006, ..., 084]
 * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
-Exemple de nom de fichier: 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
+Exemples de noms de fichiers: 
+
+* 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
+* 20250703T06Z_MSC_RDPS-PROGNOS-MLR_DewPoint_Sfc_PT024H.json
+
 
 ## Liste des variables
 
 * AirTemp: Température de l'air du thermomètre sec à la surface (K)
-* Dewpoint: Température du point de rosée à la surface (K)
+* DewPoint: Température du point de rosée à la surface (K)
 * WindSpeed: Vitesse du vent à la surface (km/h)
 * WindDir: Direction du vent à la surface (°)
 

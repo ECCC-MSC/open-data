@@ -6,6 +6,27 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le jeudi 26 juin 2025
+
+### Ajout d'observations AMV provenant des satellites NOAA-21 et GOES19 dans le SGPD
+
+Le jeudi 26 juin 2025, à partir de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a déployé une mise à jour à la version 9.0.0 du Système global de prévision déterministe (SGPD).
+
+Seule la composante de l'assimilation des données a été modifiée avec:
+
+* Ajout d'observations AMV provenant des satellites NOAA-21 et GOES19
+
+## Le mardi 17 juin 2025
+
+### Production et utilisation de listes d'autorisation dynamiques pour les observations de radiosondage, d'avions et de GNSS au sol dans le SGPD
+
+Le mardi 17 juin 2025, à partir de la passe de 0600 UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a déployé une mise à jour à la version 9.0.0 du Système global de prévision déterministe (SGPD).
+
+Seule la composante de l'assimilation des données a été modifiée avec:
+
+* Production et utilisation de listes d'autorisation dynamiques pour les observations de radiosondage, d'avions et de GNSS au sol, produites aux 6 heures, en remplacement des listes manuelles mensuelles.
+* Le Système global de prévision d'ensemble (SGPE) et le Système à haute-résolution de prévision déterministe (SHRPD) bénéficient également de cette mise-à-jour, en assimilant ces observations avec contrôle de qualité bonifié.
+
 ## Le lundi 26 mai 2025
 
 ### Ajout des observations ATMS et CrIS du satellite NOAA-21 et des observations RARS-MWHS2 des satellites FY-3D et FY-3E dans le SGPD

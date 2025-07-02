@@ -8,9 +8,17 @@
 
 ## 2025
 
+### 26 juin 2025
+
+* [Ajout d'observations AMV provenant des satellites NOAA-21 et GOES19 dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-26-juin-2025)
+
 ### 18 juin 2025
 
 * [Fin de service du SHRPD Nord, à nouveau remplacé par le Système canadien de prévision de l'Arctique (SCPA)](nwp_caps/changelog_caps_fr.md#le-mercredi-18-juin-2025)
+
+### 17 juin 2025
+
+* [Production et utilisation de listes d'autorisation dynamiques pour les observations de radiosondage, d'avions et de GNSS au sol dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-mardi-17-juin-2025)
 
 ### 26 mai 2025
 

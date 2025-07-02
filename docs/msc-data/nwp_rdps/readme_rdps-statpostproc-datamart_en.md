@@ -16,7 +16,8 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional/stat-post-processing)
+* UMOS data: [https://dd.weather.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional/stat-post-processing)
+* PROGNOS data: [https://dd.weather.gc.ca/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_rdps/stat-post-processing)
 
 where :
 
@@ -46,20 +47,23 @@ where:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __RDPS__: Constant string indicating that data is from Regional Deterministic Prediction System
-* __PRODUCT__: Constant string indicating the post-processing product [UMOS]
+* __PRODUCT__: Constant string indicating the post-processing product [UMOS, PROGNOS]
 * __METHOD__: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]
-* __Var__ : Variables included in this file [AirTemp, Dewpoint, WindSpeed, WindDir]
+* __Var__ : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLYPE__: Vertical level type [Sfc for surface level, AGL for Above Ground Level]
 * __LVL__: Vertical level value [1.5m, 10m]. This parameter is not used for surface level
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 084]
 * __json__ : constant string indicating the GeoJSON format
 
-Filename example: 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
+Filenames examples: 
+
+* 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
+* 20250702T12Z_MSC_RDPS-PROGNOS-MLR_DewPoint_Sfc_PT024H.json
 
 ## List of variables
 
 * AirTemp: Surface air dry-bulb temperature (K)
-* Dewpoint: Surface dew point temperature (K)
+* DewPoint: Surface dew point temperature (K)
 * WindSpeed: Surface wind speed (km/h)
 * WindDir: Surface wind direction (°)
 
