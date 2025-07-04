@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the Canadian Land Data Assimilation System in the National Surface and River Prediction System [experimental] is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/3959c86b-b555-4ad8-9fcc-8fecfb79918c).
 

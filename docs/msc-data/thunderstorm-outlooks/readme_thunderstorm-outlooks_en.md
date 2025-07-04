@@ -26,7 +26,7 @@ The [end-user license for Environment and Climate Change Canada data servers](..
 
 The [MSC Open Data Services Usage Policy](../../usage-policy/readme_en.md) determines what constitutes appropriate use of MSC Open Data Services and provides users with best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 Coming soon
 

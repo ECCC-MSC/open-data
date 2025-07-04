@@ -54,7 +54,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 * Les [métadonnées des changements de température projetés basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/1e86f4f7-da88-403e-bd44-92065c0fd568)
 * Les [métadonnées des changements de précipitation projetés basés sur les ensembles multimodèles CMIP5 sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/eddd6eaf-34d7-4452-a994-3d928115a68b)

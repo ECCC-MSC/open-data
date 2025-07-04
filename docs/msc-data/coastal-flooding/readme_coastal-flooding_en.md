@@ -26,7 +26,7 @@ The [end-user license for Environment and Climate Change Canada data servers](..
 
 The [MSC Open Data Services Usage Policy](../../usage-policy/readme_en.md) determines what constitutes appropriate use of MSC Open Data Services and provides users with best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The metadata of the coastal flooding risk index is available on the [Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/3e0f265d-f33d-477f-b113-8e9c43c689b1).
 

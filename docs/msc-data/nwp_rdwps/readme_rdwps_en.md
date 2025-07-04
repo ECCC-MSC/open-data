@@ -28,7 +28,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Regional Deterministic Wave Prediction System - National is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/9a6594f9-ad0e-4421-ba9d-16338e5a9cbe).
 * The [metadata of the Regional Deterministic Wave Prediction System - Lake Erie is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/bf1884e2-cbbb-4a50-ab40-c5b417723d17).

@@ -32,7 +32,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Regional Ensemble Wave Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a0e5c7a1-03df-413b-9b04-8e9d41099c19).
 

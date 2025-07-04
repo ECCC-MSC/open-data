@@ -54,7 +54,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the projected temperature change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/1e86f4f7-da88-403e-bd44-92065c0fd568)
 * The [metadata of the projected precipitation change based on CMIP5 multi-model ensembles are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/eddd6eaf-34d7-4452-a994-3d928115a68b)

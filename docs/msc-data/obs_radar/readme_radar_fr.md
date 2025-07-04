@@ -48,7 +48,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 * Les [métadonnées de Composite radar nord-américaine (1 km) sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/37aecae5-7783-4274-b595-df02aa003ac3).
 * Les [métadonnées de Couverture dynamique de la composite radar sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/6b02c778-8eaa-46f5-8786-ae80b0ea0f72).

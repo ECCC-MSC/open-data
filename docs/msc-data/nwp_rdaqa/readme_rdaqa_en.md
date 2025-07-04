@@ -28,7 +28,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the Regional Deterministic Air Quality Analysis is available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/1f11ed9f-b13d-497b-853a-997b991195a1).
 

@@ -35,7 +35,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [statistically downscaled climate scenarios from CMIP6 global climate models metadata is available on the Open Government Portal](https://catalogue.ec.gc.ca/geonetwork/srv/eng/catalog.search#/metadata/f73d6939-912a-4add-a291-c233fc5d1946)
 

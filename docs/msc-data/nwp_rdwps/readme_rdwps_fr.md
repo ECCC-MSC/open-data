@@ -27,7 +27,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 * Les [métadonnées du Système régional de prévision déterministe de vague - National sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/9a6594f9-ad0e-4421-ba9d-16338e5a9cbe).
 * Les [métadonnées du Système régional de prévision déterministe de vague - Lac Érié sont accessibles sur le portail du gouvernement ouvert](https://open.canada.ca/data/fr/dataset/bf1884e2-cbbb-4a50-ab40-c5b417723d17).

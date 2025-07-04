@@ -28,7 +28,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 Les [métadonnées de l'Analyse régionale déterministe de la qualité de l'air sont accessibles sur le portail du gouvernement ouvert](https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/1f11ed9f-b13d-497b-853a-997b991195a1).
 

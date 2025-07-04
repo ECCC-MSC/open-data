@@ -55,7 +55,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 * The [metadata of the Weather Alerts is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/79550951-6b17-49a6-9028-8ae1c21274cf).
 

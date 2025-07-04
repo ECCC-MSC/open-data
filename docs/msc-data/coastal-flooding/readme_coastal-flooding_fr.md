@@ -26,7 +26,7 @@ La [licence d’utilisation finale pour les serveurs de données d’Environneme
 
 La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
-### Métadonnées
+### Métadonnées de découverte
 
 Les [métadonnées de l'indice de risque de submersion côtière sont accessibles sur le portail du gouvernement ouvert] (https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/3e0f265d-f33d-477f-b113-8e9c43c689b1).
 

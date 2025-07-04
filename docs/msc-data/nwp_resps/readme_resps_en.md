@@ -27,7 +27,7 @@ The [end-user licence for Environment and Climate Change Canada's data servers](
 
 The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
-### Metadata
+### Discovery metadata
 
 The [metadata of the Regional Ensemble Storm Surge Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/2c2cadd7-5248-4764-bf88-5042b73465c3).
 
