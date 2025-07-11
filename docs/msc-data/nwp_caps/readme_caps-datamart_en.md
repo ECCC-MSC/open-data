@@ -87,7 +87,7 @@ Examples of file names:
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 <script src="../../../js/variables_datatable.js" type="text/javascript"></script>
 <script>
-  loadTable("csv-table-netcdf", "../../../assets/csv/RIOPS_Variables-List_fr.csv");
+  loadTable("csv-table-netcdf", "../../../assets/csv/RIOPS_Variables-List_en.csv");
 </script>
 
 ## Support
