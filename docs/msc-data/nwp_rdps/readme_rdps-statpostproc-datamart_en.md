@@ -6,7 +6,20 @@
 
 # Regional Deterministic Prediction System (RDPS) data statistically post-processed in GeoJSON format
 
-Statistical post-processing of weather and environmental forecasts issued by numerical models, including the [Regional Deterministic Prediction System (RDPS)](readme_rdps_en.md), reduces systematic biases and error variance of raw forecasts. This is achieved by establishing an optimal relationship between observations recorded at stations and co-located numerical model outputs. The Updatable Model Output Statistics (UMOS) system at Environment and Climate Change Canada carries out this task. The statistical relationships are built using the Model Output Statistics (MOS) method and a multiple linear regression (MLR) technic. The weather and environmental variables being statistically post-processed by UMOS include air temperature and dew point temperature at approximately 1.5 meters above ground as well as wind speed and direction at 10 meters above ground or at the anemometer level in the case of a buoy. The absence of a statistically post-processed forecast can be caused by a missing statistical model due to insufficient observation data quality or quantity. In addition, the absence of a post-processed forecast for wind direction could also be due to weak forecasted wind components preventing the calculation of reliable results. The forecasts of wind speed and direction are produced from independent statstistical post-processing models. Geographical coverage includes weather stations accross Canada and a few American buoys. Statistically post-processed forecasts is available at the same frequency of emission as the numerical model producing the raw forecasts and at 3-hourly lead times for the RDPS.
+Statistical post-processing of forecasts from numerical weather and environmental models, including the [Regional Deterministic Prediction System (RDPS)](readme_rdps_en.md), helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.
+
+The "Updatable Model Output Statistics" (**UMOS**) system is a software package developed by Environment and Climate Change Canada that enables this. Relationships are built using the "Model Output Statistics" (MOS) method and multiple linear regression (MLR). After 25 years of dedicated service, **UMOS** will soon be replaced by a more modern software package, **PROGNOS**.
+
+For both systems, the statistically post-processed weather and environmental variables include:
+
+* Air and dew point temperatures at 1.5 meters above the Earth's surface
+* Wind speed and direction at 10 meters above the Earth's surface or at anemometer level in the case of a buoy
+
+The absence of statistically post-processed forecasts can be due to the unavailability of a statistical model caused by insufficient observation quality or quantity.
+
+Furthermore, the absence of wind direction forecasts can also be due to predicted wind components being too weak to provide a reliable result. Wind direction and speed forecasts are derived from independent statistical post-processing models.
+
+The geographical region covered by this data includes the territory covered by Canadian meteorological stations and some American buoys.
 
 ## Data location 
 
@@ -22,18 +35,17 @@ The data can be accessed at the following URLs:
 where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
-* __hhh__: Forecast hour [000, 003, 006,..., 084]
+* __hhh__: Forecast hour [000, 003, 006,..., 084] for UMOS data
+* __hhh__: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to the observation stations
 
 ## Technical specifications
 
-* UMOS forecast is offered at observation station locations in North America covered within the following geographical bounding box : 141⁰W, 40⁰N, 42⁰W, 88⁰N
+* UMOS and PROGNOS forecasts are offered at observation station locations in North America covered within the following geographical bounding box : 149⁰W, 40⁰N, 42⁰W, 88⁰N
 * The datum and geographical projection are respectively: WGS84, latlon.
 * Data is bilingual
 * Data is in ISO8601 compliant
 
 ## Filename nomenclature 
-
-Note : all hours are in UTC.
 
 The files have the following nomenclature :
 
@@ -48,17 +60,19 @@ where:
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __RDPS__: Constant string indicating that data is from Regional Deterministic Prediction System
 * __PRODUCT__: Constant string indicating the post-processing product [UMOS, PROGNOS]
-* __METHOD__: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]
+* __METHOD__: Constant string indicating the [statistical method used](https://link.springer.com/book/10.1007/978-0-387-84858-7) [MLR for Multiple Linear Regression, LASSO for Least Absolute Shrinkage and Selection Operator, WDLASSO2 for LASSO applied to zonal and meridional winds components]
 * __Var__ : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLYPE__: Vertical level type [Sfc for surface level, AGL for Above Ground Level]
 * __LVL__: Vertical level value [1.5m, 10m]. This parameter is not used for surface level
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 084]
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour from 00h to 84h according to the products (evry 3 hours for UMOS and hourly for PROGNOS according to the stations observations)
 * __json__ : constant string indicating the GeoJSON format
 
 Filenames examples: 
 
 * 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json
 * 20250702T12Z_MSC_RDPS-PROGNOS-MLR_DewPoint_Sfc_PT024H.json
+* 20250714T00Z_MSC_RDPS-PROGNOS-LASSO-WindSpeed_AGL-10m_PT006H.json
+* 20250714T00Z_MSC_RDPS-PROGNOS-WDLASSO2-WindDir_AGL-10m_PT000H.json
 
 ## List of variables
 

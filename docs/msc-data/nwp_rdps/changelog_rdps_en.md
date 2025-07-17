@@ -6,6 +6,20 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+## Tuesday July 22, 2025
+
+### Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Regional Deterministic Forecast System (RDFS) 9.0.0 of the Canadian Meteorological Centre (CMC)
+
+On Tuesday, July 22, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system: PROGNOS.
+
+Main change:
+
+PROGNOS is a modernized version of UMOS, the current statistical post-processing system of the Meteorological Service of Canada.
+
+A copy of the official note announcing this implementation [is available via this link](https://dd.weather.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_DDHHHH___XXX).
+
+The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/PROGNOS_Specifications_techniques-202507.pdf).
+ 
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 9.0.0 of the Regional Deterministic Prediction System (RDPS) at the Canadian Meteorological Centre
