@@ -36,7 +36,7 @@ where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 003, 006,..., 084] for UMOS data
-* __hhh__: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to the observation stations
+* __hhh__: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to the observations stations
 
 ## Technical specifications
 
