@@ -7,7 +7,7 @@
 
 # Données GeoJSON du Système global de prévision déterministe (SGPD) statistiquement post-traitées
 
-Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le [Système glbal de prévision déterministe (SGPD)](readme_gdps_fr.md), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies. 
+Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies. 
 
 Le système "Updatable Model Output Statistics" (**UMOS**) est un progiciel développé par Environnement et Changement climatique Canada permettant cela. Les relations sont bâties par l'entremise de la méthode "Model Output Statistics" (MOS) et par régression linéaire multiple (RLM). Après 25 années de loyaux services, **UMOS** sera bientôt remplacé par un progiciel plus moderne, **PROGNOS**.
 
