@@ -8,7 +8,7 @@
 
 ## Le mardi 22 juillet 2025
 
-### Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système global de prévision déterministe (SRPD) 9.0.0 du Centre météorologique canadien (CMC)
+### Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système global de prévision déterministe (SGPD) 9.0.0 du Centre météorologique canadien (CMC)
 
 Le mardi 22 juillet 2025, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle d'un nouveau système de post-traitement statistique : PROGNOS.
 
