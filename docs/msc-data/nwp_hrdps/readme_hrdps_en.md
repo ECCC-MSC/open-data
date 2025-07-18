@@ -15,6 +15,7 @@ The High Resolution Deterministic Prediction System (HRDPS) carries out physics 
 This data are available on the data server services [MSC Datamart](../../msc-datamart/readme_en.md) and the web services [MSC GeoMet](../../msc-geomet/readme_en.md) respectively:
 
 * [GRIB2 data available on the MSC Datamart](readme_hrdps-datamart_en.md) 
+* [GeoJSON statistically post-processed data on the MSC Datamart](readme_hrdps-statpostproc-datamart_en.md)
 * [Experimental 1km West GRIB2 data available on the MSC testing data repository DD-Alpha](readme_hrdps-datamart-alpha_en.md) 
 * [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md)
 
@@ -36,8 +37,10 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 ## Technical documentation
 
 * [Current version of the High Resolution Deterministic Prediction System](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_e.pdf)
+* [Current version of the statistical post-processing software package of the High Resolution Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Technical Note for the continental domain](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_e.pdf)
 * [Weather elements on the grid (WEonG) technical Note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf)
+* [Technical note of the statistical post-processing software package of the High Resolution Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Diagram of dependencies for the continental domain](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS_en.svg)
 * [Canadian Land Data Assimilation System (CaLDAS) technical note](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) 
 * [HRDPS factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps_e.pdf)

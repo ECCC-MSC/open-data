@@ -15,6 +15,7 @@ Le Système à haute résolution de prévision déterministe (SHRPD) procède à
 Ces données sont respectivement disponibles sur les services serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données GRIB2 disponibles sur le Datamart du SMC](readme_hrdps-datamart_fr.md) 
+* [Données GeoJSON statistiquement post-traitées sur le Datamart du SMC](readme_hrdps-statpostproc-datamart_fr.md)
 * [Données GRIB2 expérimentales à 1km disponibles sur le domaine ouest sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_hrdps-datamart-alpha_fr.md) 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 
@@ -36,8 +37,10 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ## Documentation technique
 
 * [Version actuelle du Système à haute résolution de prévision déterministe](http://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_specifications/tech_specifications_HRDPS_f.pdf)
+* [Version actuelle du prologiciel de post-traitement statistique du Système à haute résolution de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Note technique pour le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_hrdps_f.pdf)
 * [Note technique des éléments du temps sur grille](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_f.pdf)
+* [Note technique du prologiciel de post-traitement statistique du Système à haute résolution de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Diagramme de dépendances du SHRPD sur le domaine continental](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_HRDPS_fr.svg)
 * [Note technique du Système canadien d'assimilation de surface (SCanADS)](https://collaboration.cmc.ec.gc.ca/cmc/CMOI/product_guide/docs/tech_notes/technote_hrdps_caldas_e.pdf) (en anglais seulement)
 * [Fiche d'information du SHRPD associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_hrdps_f.pdf)
