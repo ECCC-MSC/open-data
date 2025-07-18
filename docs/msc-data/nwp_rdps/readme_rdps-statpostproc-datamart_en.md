@@ -36,7 +36,7 @@ where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 003, 006,..., 084] for UMOS data
-* __hhh__: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to the observations stations
+* __hhh__: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to observation stations
 
 ## Technical specifications
 
@@ -64,7 +64,7 @@ where:
 * __Var__ : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLYPE__: Vertical level type [Sfc for surface level, AGL for Above Ground Level]
 * __LVL__: Vertical level value [1.5m, 10m]. This parameter is not used for surface level
-* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour from 00h to 84h according to the products (evry 3 hours for UMOS and hourly for PROGNOS according to the stations observations)
+* __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour from 00h to 84h according to the products (every 3 hours for UMOS and hourly for PROGNOS according to the obervations stations) 
 * __json__ : constant string indicating the GeoJSON format
 
 Filenames examples: 
