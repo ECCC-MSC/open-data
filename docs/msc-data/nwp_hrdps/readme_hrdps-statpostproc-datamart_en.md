@@ -51,7 +51,7 @@ where:
 * __HH__ : Issuing run time in UTC [00, 12]
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
-* __GDPS__: Constant string indicating that data is from Global Deterministic Prediction System
+* __HRDPS__: Constant string indicating that data is from High Resolution Deterministic Prediction System
 * __PRODUCT__: Constant string indicating the post-processing product [PROGNOS]
 * __METHOD__: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]
 * __Var__ : Variables included in this file [AirTemp]
