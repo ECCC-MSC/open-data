@@ -6,11 +6,11 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
-## Tuesday July 22, 2025
+## Wednesday July 23, 2025
 
 ### Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Global Deterministic Prediction System (GDPS) 9.0.0 of the Canadian Meteorological Centre (CMC)
 
-On Tuesday, July 22, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system: PROGNOS.
+On Wednesday, July 23, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system: PROGNOS.
 
 Main change:
 
@@ -18,7 +18,7 @@ PROGNOS is a modernized version of UMOS, the current statistical post-processing
 
 A copy of the official note announcing this implementation [is available via this link](https://dd.weather.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_DDHHHH___XXX).
 
-The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/PROGNOS_Specifications_techniques-202507.pdf).
+The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 
 ## Thursday June 26th, 2025
 

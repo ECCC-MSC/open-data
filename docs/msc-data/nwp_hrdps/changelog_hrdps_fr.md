@@ -6,15 +6,15 @@
 
 # Chronologie des changements apportés au Système à haute résolution de prévision déterministe (SHRPD)
 
-## Le mercredi 23 juillet 2025
+## Le jeudi 24 juillet 2025
 
 ### Mise en œuvre d'un système de post-traitement statistique PROGNOS v1.0.0 du Système à haute résolution de prévision déterministe (SHRPD) 7.0.0 du Centre météorologique canadien (CMC)
 
-Le mercredi 23 juillet 2025, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle d'un système de post-traitement statistique PROGNOS.
+Le jeudi 24 juillet 2025, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle d'un système de post-traitement statistique PROGNOS.
 
 La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/07/23/NOCN03_CWAO_DDHHHH___XXX).
 
-Le document des spécifications techniques de PROGNOS v1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/PROGNOS_Specifications_techniques-202507.pdf).
+Le document des spécifications techniques de PROGNOS v1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 
 ## Le lundi 26 mai 2025
 

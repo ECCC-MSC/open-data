@@ -6,15 +6,15 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
-## Wednesday July 23, 2025
+## Thursday July 24, 2025
 
 ### Implementation of a statistical post-processing system, PROGNOS v1.0.0, for the High Resolution Deterministic Prediction System (HRDPS) 7.0.0 of the Canadian Meteorological Centre (CMC)
 
-On Wednesday, July 23, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system PROGNOS.
+On Thursday, July 24, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system PROGNOS.
 
 A copy of the official note announcing this implementation [is available via this link](https://dd.weather.gc.ca/doc/genots/2025/07/23/NOCN03_CWAO_DDHHHH___XXX).
 
-The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/PROGNOS_Specifications_techniques-202507.pdf).
+The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 
 ## Monday May 26th, 2025
 
