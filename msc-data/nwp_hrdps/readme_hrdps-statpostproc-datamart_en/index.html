@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme climateobs en - MSC Open Data / Données ouvertes du SMC</title>
+        <title>Readme hrdps statpostproc datamart en - MSC Open Data / Données ouvertes du SMC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -126,21 +126,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#data-and-products-of-the-climate-data-normals-daily-hourly-monthly" class="nav-link">Data and products of the climate data (normals, daily, hourly, monthly)</a>
+            <li class="nav-item" data-level="1"><a href="#high-resolution-deterministic-prediction-system-hrdps-data-statistically-post-processed-in-geojson-format" class="nav-link">High Resolution Deterministic Prediction System (HRDPS) data statistically post-processed in GeoJSON format</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#access" class="nav-link">Access</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#products" class="nav-link">Products</a>
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#technical-documentation" class="nav-link">Technical documentation</a>
+            <li class="nav-item" data-level="2"><a href="#technical-specifications" class="nav-link">Technical specifications</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#note" class="nav-link">Note</a>
+            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -151,50 +159,65 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_climateobs_fr/">En français</a></p>
+<p><a href="../readme_hrdps-statpostproc-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; Climate  data (normals, daily, hourly, monthly)</p>
-<h1 id="data-and-products-of-the-climate-data-normals-daily-hourly-monthly">Data and products of the climate data (normals, daily, hourly, monthly)</h1>
-<p><strong>Climate normals</strong></p>
-<p>Climate Normals and Averages are used to summarize or describe the average climatic conditions of a particular location. At the completion of each decade, Environment and Climate Change Canada updates its Climate Normals for as many locations and as many climatic characteristics as possible. The Climate Normals, Averages and Extremes offered here are based on Canadian climate stations with at least 15 years of data between 1981 to 2010.</p>
-<p><strong>Climate hourly</strong></p>
-<p>Canadian hourly climate data are available for public access from the ECCC/MSC's National Climate Archive. These are surface weather stations that produce hourly meteorological observations, taken each hour of the day. Only a subset of the total stations found on Environment and Climate Change Canada’s Historical Climate Data Page is shown due to size limitations.The priorities for inclusion are as follows: stations in cities with populations of 10000+, stations that are Regional Basic Climatological Network status and stations with 30+ years of data.</p>
-<p><strong>Climate daily</strong></p>
-<p>Daily climate observations are derived from two sources of data. The first are Daily Climate Stations producing one or two observations per day of temperature, precipitation. The second are hourly stations that typically produce more weather elements e.g. wind or snow on ground. Only a subset of the total stations is shown due to size limitations. The criteria for station selection are listed as below. The priorities for inclusion are as follows: (1) Station is currently operational, (2) Stations with long periods of record, (3) Stations that are co-located with the categories above and supplement the period of record.</p>
-<p><strong>Climate monthly</strong></p>
-<p>A cross-country summary of the averages and extremes for the month, including precipitation totals, max-min temperatures, and degree days.  This data is available from stations that produce daily data.</p>
-<h2 id="access">Access</h2>
-<h3 id="how-to-access-the-data">How to access the data</h3>
-<p>This data is available from the <a href="../../../msc-geomet/readme_en/">MSC GeoMet</a> API / web services and on the <a href="../../../msc-datamart/readme_en/">MSC Datamart</a> data server:</p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_hrdps_en/">HRDPS</a> &gt; HRDPS statistical post-processing on MSC Datamart</p>
+<h1 id="high-resolution-deterministic-prediction-system-hrdps-data-statistically-post-processed-in-geojson-format">High Resolution Deterministic Prediction System (HRDPS) data statistically post-processed in GeoJSON format</h1>
+<p>Statistical post-processing of forecasts from numerical weather and environmental models, including the <a href="../readme_hrdps_en/">High Resolution Deterministic Prediction System (HRDPS)</a>, helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.</p>
+<p>The <strong>PROGNOS</strong> system is a software package developed by Environment and Climate Change Canada that enables this. Relationships are built using the "Model Output Statistics" (MOS) method and multiple linear regression (MLR).</p>
+<p>Currently, only the air temperature at 1.5 meters above the Earth's surface is statistically post-processed.</p>
+<p>The absence of statistically post-processed forecasts can be due to the unavailability of a statistical model caused by insufficient observation quality or quantity.</p>
+<p>The geographical region covered by this data includes the territory covered by Canadian meteorological stations and some American buoys.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GeoJSON file.</p>
+<p>The data can be accessed at the following URLs: </p>
 <ul>
-<li><a href="../readme_climateobs-geomet_en/">Data available from GeoMet-OGC-API / geospatial web services</a></li>
-<li><a href="../readme_climateobs-datamart_en/">CSV data available on the MSC Datamart</a></li>
+<li><a href="https://dd.weather.gc.ca/model_hrdps/stat-post-processing">https://dd.weather.gc.ca/model_hrdps/stat-post-processing/{HH}/{hhh}/</a></li>
 </ul>
-<p>An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is available.</p>
-<h3 id="licence">Licence</h3>
-<p>The <a href="../../../licence/readme_en/">end-user licence for Environment and Climate Change Canada's data servers</a> specifies the conditions of use of this data.</p>
-<h3 id="msc-open-data-service-usage-policy">MSC Open Data Service Usage Policy</h3>
-<p>The <a href="../../../usage-policy/readme_en/">MSC Open Data Service Usage Policy</a> determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.</p>
-<h3 id="discovery-metadata">Discovery metadata</h3>
+<p>where :</p>
 <ul>
-<li>The <a href="https://open.canada.ca/data/en/dataset/746f9469-ab78-5dcc-b165-4b51e8ab8652">metadata of the climate normals is available on the Open Government Portal</a>.</li>
-<li>The <a href="https://open.canada.ca/data/en/dataset/5f963c2d-d4ed-5a79-8a31-c9c582ca5098">metadata of the climate daily is available on the Open Government Portal</a>.</li>
-<li>The <a href="https://open.canada.ca/data/en/dataset/df2e6e1a-6057-4c4d-a509-94aa57705a8c">metadata of the climate hourly is available on the Open Government Portal</a></li>
-<li>The <a href="https://open.canada.ca/data/en/dataset/b24efb37-11b6-5d03-ab19-5759f83db546">metadata of the climate monthly is available on the Open Government Portal</a>.</li>
-<li>The <a href="https://open.canada.ca/data/en/dataset/bc52b7a8-46ef-4a7f-90e0-7780abac398c">metadata of the climate stations is available on the Open Government Portal</a>.</li>
+<li><strong>HH</strong> : UTC hour of the model run start [00, 12]</li>
+<li><strong>hhh</strong> : Forecast lead time [000, 001, 002, ..., 048] according to observation stations</li>
 </ul>
-<h2 id="products">Products</h2>
+<h2 id="technical-specifications">Technical specifications</h2>
 <ul>
-<li><a href="https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/">Real-Time Weather Statistics Maps</a></li>
+<li>PROGNOS forecasts are offered at observation station locations in North America covered within the following geographical boundaries: 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
+<li>The datum and geographical projection are respectively: WGS84, latlon.</li>
+<li>Data is bilingual</li>
+<li>Data is in ISO8601 compliant</li>
 </ul>
-<h2 id="technical-documentation">Technical documentation</h2>
+<h2 id="filename-nomenclature">Filename nomenclature</h2>
+<p>The files have the following nomenclature :</p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS-{PRODUCT}-{METHOD}_{Var}_{LVLTYPE}-{LVL}_PT{hhh}H.json</code></p>
+<p>where:</p>
 <ul>
-<li><a href="https://climate.weather.gc.ca/doc/Technical_Documentation.pdf">Technical note</a></li>
-<li><a href="http://climat.meteo.gc.ca/historical_data/search_historic_data_e.html">Climate data web site</a></li>
-<li><a href="https://www.canada.ca/en/environment-climate-change/services/climate-change/canadian-centre-climate-services.html">Canadian Centre for Climate Services</a></li>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the issued forecast</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong> : Issuing run time in UTC [00, 12]</li>
+<li><strong>Z</strong>: Time zone (UTC hour)</li>
+<li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
+<li><strong>GDPS</strong>: Constant string indicating that data is from Global Deterministic Prediction System</li>
+<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [PROGNOS]</li>
+<li><strong>METHOD</strong>: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]</li>
+<li><strong>Var</strong> : Variables included in this file [AirTemp]</li>
+<li><strong>LVLYPE</strong>: Vertical level type [Sfc for surface level, AGL for Above Ground Level]</li>
+<li><strong>LVL</strong>: Vertical level value [1.5m]. This parameter is not used for surface level</li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant characters designating Period, Time and Hour. "hhh" is the forecast lead time [000, 001, 002, ..., 048] according to observation stations</li>
+<li><strong>json</strong> : constant string indicating the GeoJSON format</li>
 </ul>
-<h2 id="note">Note</h2>
-<p>In the context of a project between Wikimedia Canada and Environnement et Changement climatique Canada, <a href="https://meta.wikimedia.org/wiki/Projet_ECCC,_100_ans_de_donn%C3%A9es_m%C3%A9t%C3%A9orologiques_en_acc%C3%A8s_libre/en">100 years of climate data are available in Wikimedia Commons</a>.</p></div>
+<p>Example of file name: </p>
+<ul>
+<li>20250703T06Z_MSC_HRDPS-PROGNOS-MLR_AirTemp_AGL-1.5m_PT024H.json</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<ul>
+<li>AirTemp: Surface air dry-bulb temperature (K)</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
             </div>
         </div>
 

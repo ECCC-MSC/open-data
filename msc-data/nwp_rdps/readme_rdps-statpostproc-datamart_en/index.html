@@ -163,28 +163,38 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_rdps_en/">RDPS</a> &gt; RDPS statistical post-processing on MSC Datamart</p>
 <h1 id="regional-deterministic-prediction-system-rdps-data-statistically-post-processed-in-geojson-format">Regional Deterministic Prediction System (RDPS) data statistically post-processed in GeoJSON format</h1>
-<p>Statistical post-processing of weather and environmental forecasts issued by numerical models, including the <a href="../readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a>, reduces systematic biases and error variance of raw forecasts. This is achieved by establishing an optimal relationship between observations recorded at stations and co-located numerical model outputs. The Updatable Model Output Statistics (UMOS) system at Environment and Climate Change Canada carries out this task. The statistical relationships are built using the Model Output Statistics (MOS) method and a multiple linear regression (MLR) technic. The weather and environmental variables being statistically post-processed by UMOS include air temperature and dew point temperature at approximately 1.5 meters above ground as well as wind speed and direction at 10 meters above ground or at the anemometer level in the case of a buoy. The absence of a statistically post-processed forecast can be caused by a missing statistical model due to insufficient observation data quality or quantity. In addition, the absence of a post-processed forecast for wind direction could also be due to weak forecasted wind components preventing the calculation of reliable results. The forecasts of wind speed and direction are produced from independent statstistical post-processing models. Geographical coverage includes weather stations accross Canada and a few American buoys. Statistically post-processed forecasts is available at the same frequency of emission as the numerical model producing the raw forecasts and at 3-hourly lead times for the RDPS.</p>
+<p>Statistical post-processing of forecasts from numerical weather and environmental models, including the <a href="../readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a>, helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.</p>
+<p>The "Updatable Model Output Statistics" (<strong>UMOS</strong>) system is a software package developed by Environment and Climate Change Canada that enables this. Relationships are built using the "Model Output Statistics" (MOS) method and multiple linear regression (MLR). After 25 years of dedicated service, <strong>UMOS</strong> will soon be replaced by a more modern software package, <strong>PROGNOS</strong>.</p>
+<p>For both systems, the statistically post-processed weather and environmental variables include:</p>
+<ul>
+<li>Air and dew point temperatures at 1.5 meters above the Earth's surface</li>
+<li>Wind speed and direction at 10 meters above the Earth's surface or at anemometer level in the case of a buoy</li>
+</ul>
+<p>The absence of statistically post-processed forecasts can be due to the unavailability of a statistical model caused by insufficient observation quality or quantity.</p>
+<p>Furthermore, the absence of wind direction forecasts can also be due to predicted wind components being too weak to provide a reliable result. Wind direction and speed forecasts are derived from independent statistical post-processing models.</p>
+<p>The geographical region covered by this data includes the territory covered by Canadian meteorological stations and some American buoys.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GeoJSON file.</p>
 <p>The data can be accessed at the following URLs: </p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/model_gem_regional/stat-post-processing">https://dd.weather.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/</a></li>
+<li>UMOS data: <a href="https://dd.weather.gc.ca/model_gem_regional/stat-post-processing">https://dd.weather.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/</a></li>
+<li>PROGNOS data: <a href="https://dd.weather.gc.ca/model_rdps/stat-post-processing">https://dd.weather.gc.ca/model_rdps/stat-post-processing/{HH}/{hhh}/</a></li>
 </ul>
 <p>where :</p>
 <ul>
 <li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
-<li><strong>hhh</strong>: Forecast hour [000, 003, 006,..., 084]</li>
+<li><strong>hhh</strong>: Forecast hour [000, 003, 006,..., 084] for UMOS data</li>
+<li><strong>hhh</strong>: Forecast hour [000, 001, 002,..., 084] for PROGNOS data, according to observation stations</li>
 </ul>
 <h2 id="technical-specifications">Technical specifications</h2>
 <ul>
-<li>UMOS forecast is offered at observation station locations in North America covered within the following geographical bounding box : 141⁰W, 40⁰N, 42⁰W, 88⁰N</li>
+<li>UMOS and PROGNOS forecasts are offered at observation station locations in North America covered within the following geographical bounding box : 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
 <li>The datum and geographical projection are respectively: WGS84, latlon.</li>
 <li>Data is bilingual</li>
 <li>Data is in ISO8601 compliant</li>
 </ul>
 <h2 id="filename-nomenclature">Filename nomenclature</h2>
-<p>Note : all hours are in UTC.</p>
 <p>The files have the following nomenclature :</p>
 <p><code>{YYYYMMDD}T{HH}Z_MSC_RDPS-{PRODUCT}-{METHOD}_{Var}_{LVLTYPE}-{LVL}_PT{hhh}H.json</code></p>
 <p>where:</p>
@@ -195,19 +205,25 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>RDPS</strong>: Constant string indicating that data is from Regional Deterministic Prediction System</li>
-<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [UMOS]</li>
-<li><strong>METHOD</strong>: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]</li>
-<li><strong>Var</strong> : Variables included in this file [AirTemp, Dewpoint, WindSpeed, WindDir]</li>
+<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [UMOS, PROGNOS]</li>
+<li><strong>METHOD</strong>: Constant string indicating the <a href="https://link.springer.com/book/10.1007/978-0-387-84858-7">statistical method used</a> [MLR for Multiple Linear Regression, LASSO for Least Absolute Shrinkage and Selection Operator, WDLASSO2 for LASSO applied to zonal and meridional winds components]</li>
+<li><strong>Var</strong> : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]</li>
 <li><strong>LVLYPE</strong>: Vertical level type [Sfc for surface level, AGL for Above Ground Level]</li>
 <li><strong>LVL</strong>: Vertical level value [1.5m, 10m]. This parameter is not used for surface level</li>
-<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 003, 006, ..., 084]</li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour from 00h to 84h according to the products (every 3 hours for UMOS and hourly for PROGNOS according to the obervations stations) </li>
 <li><strong>json</strong> : constant string indicating the GeoJSON format</li>
 </ul>
-<p>Filename example: 20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json</p>
+<p>Filenames examples: </p>
+<ul>
+<li>20220128T00Z_MSC_RDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json</li>
+<li>20250702T12Z_MSC_RDPS-PROGNOS-MLR_DewPoint_Sfc_PT024H.json</li>
+<li>20250714T00Z_MSC_RDPS-PROGNOS-LASSO-WindSpeed_AGL-10m_PT006H.json</li>
+<li>20250714T00Z_MSC_RDPS-PROGNOS-WDLASSO2-WindDir_AGL-10m_PT000H.json</li>
+</ul>
 <h2 id="list-of-variables">List of variables</h2>
 <ul>
 <li>AirTemp: Surface air dry-bulb temperature (K)</li>
-<li>Dewpoint: Surface dew point temperature (K)</li>
+<li>DewPoint: Surface dew point temperature (K)</li>
 <li>WindSpeed: Surface wind speed (km/h)</li>
 <li>WindDir: Surface wind direction (°)</li>
 </ul>
