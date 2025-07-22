@@ -8,6 +8,15 @@
 
 ## 2025
 
+### 24 juillet 2025
+
+* [Mise en œuvre d'un système de post-traitement statistique PROGNOS v1.0.0 du Système à haute résolution de prévision déterministe (SHRPD) 7.0.0 du Centre météorologique canadien (CMC)](nwp_hrdps/changelog_hrdps_fr.md#le-jeudi-24-juillet-2025)
+
+### 23 juillet 2025
+
+* [Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système régional de prévision déterministe (SRPD) 9.0.0 du Centre météorologique canadien (CMC)](nwp_rdps/changelog_rdps_fr.md#le-mercredi-23-juillet-2025)
+* [Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système global de prévision déterministe (SGPD) 9.0.0 du Centre météorologique canadien (CMC)](nwp_gdps/changelog_gdps_fr.md#le-mercredi-23-juillet-2025)
+
 ### 26 juin 2025
 
 * [Ajout d'observations AMV provenant des satellites NOAA-21 et GOES19 dans le SGPD](nwp_gdps/changelog_gdps_fr.md#le-jeudi-26-juin-2025)

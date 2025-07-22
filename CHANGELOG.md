@@ -10,6 +10,22 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.7
+
+* date: 2025-07-22
+* announcements:
+    * Not announced
+* new content:
+    * New PROGNOS page for HRDPS
+    * Update RDPS and GDPS statistically post-processed pages with PROGNOS addition
+    * Update HRDPS, GDPS and GDPS changelogs with PROGNOS addition
+    * Update GDPS changelog (Addition of AMV observations from the NOAA-21 and GOES19 satellites)
+    * Update main changelog with HRDPS, RDPS and GDPS PROGNOS inputs and AMV obs in GDPS
+* improvements:
+    * NA
+* bug fixes:
+    * typos
+
 # 2.9.6
 
 * date: 2025-06-26

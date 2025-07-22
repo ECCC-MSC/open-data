@@ -6,11 +6,11 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
-## Le mardi 22 juillet 2025
+## Le mercredi 23 juillet 2025
 
 ### Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système régional de prévision déterministe (SRPD) 9.0.0 du Centre météorologique canadien (CMC)
 
-Le mardi 22 juillet 2025, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle d'un nouveau système de post-traitement statistique : PROGNOS.
+Le mercredi 23 juillet 2025, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle d'un nouveau système de post-traitement statistique : PROGNOS.
 
 Principal changement :
 
@@ -18,7 +18,7 @@ PROGNOS est une version modernisée de UMOS, le système actuel de post-traiteme
 
 La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_DDHHHH___XXX).
 
-Le document des spécifications techniques de PROGNOS v1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/PROGNOS_Specifications_techniques-202507.pdf).
+Le document des spécifications techniques de PROGNOS v1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 
 ## Le mardi 11 juin 2024
 

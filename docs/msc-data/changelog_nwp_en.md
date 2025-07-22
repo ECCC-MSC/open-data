@@ -8,6 +8,15 @@
 
 ## 2025
 
+### July 24, 2025
+
+* [Implementation of a statistical post-processing system, PROGNOS v1.0.0, for the High Resolution Deterministic Prediction System (HRDPS) 7.0.0 of the Canadian Meteorological Centre (CMC)](nwp_hrdps/changelog_hrdps_en.md#thursday-july-24-2025)
+
+### July 23, 2025
+
+* [Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Regional Deterministic Prediction System (RDPS) 9.0.0 of the Canadian Meteorological Centre (CMC)](nwp_rdps/changelog_rdps_en.md#wednesday-july-23-2025)
+* [Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Global Deterministic Prediction System (GDPS) 9.0.0 of the Canadian Meteorological Centre (CMC)](nwp_gdps/changelog_gdps_en.md#wednesday-july-23-2025)
+
 ### June 26, 2025
 
 * [Addition of AMV observations from the NOAA-21 and GOES19 satellites in the GDPS](nwp_gdps/changelog_gdps_en.md#thursday-june-26-2025)
