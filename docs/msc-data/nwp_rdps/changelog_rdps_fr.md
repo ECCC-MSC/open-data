@@ -16,7 +16,7 @@ Principal changement :
 
 PROGNOS est une version modernisée de UMOS, le système actuel de post-traitement statistique du Service météorologique du Canada.
 
-La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_DDHHHH___XXX).
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.meteo.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_221845___22357).
 
 Le document des spécifications techniques de PROGNOS v1.0.0 est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 

@@ -12,7 +12,7 @@
 
 On Thursday, July 24, 2025, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will implement a new statistical post-processing system PROGNOS.
 
-A copy of the official note announcing this implementation [is available via this link](https://dd.weather.gc.ca/doc/genots/2025/07/23/NOCN03_CWAO_DDHHHH___XXX).
+A copy of the official note announcing this implementation [is available via this link](https://dd.meteo.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_221850___51676).
 
 The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
 
