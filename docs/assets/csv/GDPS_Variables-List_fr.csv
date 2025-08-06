@@ -245,6 +245,7 @@ Pression,PRES,Unité de tourbillon potentiel 1.5,Pa
 Pression,PRES,Unité de tourbillon potentiel 2,Pa
 Précipitation totale,APCP,Surface,kg/m<sup>2</sup>
 Précipitations convectives,ACPCP,Surface,kg/m<sup>2</sup>
+Rapport de mélange de l'ozone,O3MR,Surface,kg/kg
 Ruissellement de surface,SFCWRO,Surface,kg/m<sup>2</sup>
 Taux d'humidité du sol,SOILM,Profondeur sous la surface terrestre (0-0.01 m),kg/m<sup>2</sup>
 Taux d'humidité du sol,SOILM,Profondeur sous la surface terrestre (0-0.1 m),kg/m<sup>2</sup>
