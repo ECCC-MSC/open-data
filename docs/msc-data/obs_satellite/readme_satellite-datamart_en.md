@@ -20,7 +20,7 @@ The data is available via the HTTPS protocol. It can be accessed using a standar
 
 GOES-R series products can be found at :
 
-* [https://dd.weather.gc.ca/satellite/goes/[west|east]/{HH}/](https://dd.weather.gc.ca/satellite/goes/)
+* [https://dd.weather.gc.ca/today/satellite/goes/[west|east]/{HH}/](https://dd.weather.gc.ca/today/satellite/goes/)
 
 where :
 

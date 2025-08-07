@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les profils verticaux observés sont disponibles à cette adresse :
 
-[https://dd.meteo.gc.ca/vertical_profile/observation/csv/](https://dd.meteo.gc.ca/vertical_profile/observation/csv/)
+[https://dd.meteo.gc.ca/today/vertical_profile/observation/csv/](https://dd.meteo.gc.ca/today/vertical_profile/observation/csv/)
 
 ## Nomenclature des noms de fichiers 
 

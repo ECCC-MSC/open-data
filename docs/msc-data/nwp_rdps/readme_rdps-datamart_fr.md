@@ -17,8 +17,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes : 
 
-* Données sur la grille polaire stéréographique : [https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional)
-* Données sur la grille lat-lon tournée : [https://dd.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_rdps)
+* Données sur la grille polaire stéréographique : [https://dd.meteo.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gem_regional)
+* Données sur la grille lat-lon tournée : [https://dd.meteo.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_rdps)
 
 où :
 

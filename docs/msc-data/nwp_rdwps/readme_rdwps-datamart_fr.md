@@ -18,14 +18,14 @@ Les données sont accessibles aux adresses suivantes :
 
 Données sur grilles lat-lon:
 
-* [https://dd.meteo.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/erie/1km)
-* [https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/huron-michigan/1km)
-* [https://dd.meteo.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/ontario/1km)
-* [https://dd.meteo.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/superior/1km)
+* [https://dd.meteo.gc.ca/today/model_rdwps/erie/1km/{HH}/](https://dd.meteo.gc.ca/today/model_rdwps/erie/1km)
+* [https://dd.meteo.gc.ca/today/model_rdwps/huron-michigan/1km/{HH}/](https://dd.meteo.gc.ca/today/model_rdwps/huron-michigan/1km)
+* [https://dd.meteo.gc.ca/today/model_rdwps/ontario/1km/{HH}/](https://dd.meteo.gc.ca/today/model_rdwps/ontario/1km)
+* [https://dd.meteo.gc.ca/today/model_rdwps/superior/1km/{HH}/](https://dd.meteo.gc.ca/today/model_rdwps/superior/1km)
 
 Données sur grille lat-lon tournée:
  
-* [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
+* [https://dd.meteo.gc.ca/today/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/today/model_rdwps/national/2.5km)
 
 où :
 

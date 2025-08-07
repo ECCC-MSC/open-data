@@ -26,7 +26,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données de prévisions météorologiques marines, distribuées dans des fichiers datés (fichiers uniques) sont disponibles à cette adresse:
 
-  [https://dd.meteo.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.meteo.gc.ca/marine_weather/)
+  [https://dd.meteo.gc.ca/today/marine_weather/{DOMAIN}/{HH}](https://dd.meteo.gc.ca/today/marine_weather/)
 
   où:
   

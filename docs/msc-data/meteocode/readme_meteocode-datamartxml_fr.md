@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers pour ces données couvrant le domaine terrestre se trouvent à l'adresse suivante :  
        
-[https://dd.meteo.gc.ca/meteocode/{REGION}/cmml/](https://dd.meteo.gc.ca/meteocode)
+[https://dd.meteo.gc.ca/today/meteocode/{REGION}/cmml/](https://dd.meteo.gc.ca/today/meteocode)
 
 où 'REGION' peut prendre une des valeurs suivantes :
  
@@ -26,7 +26,6 @@ où 'REGION' peut prendre une des valeurs suivantes :
 * pyr
 * que  
 
-Un historique des données de un mois est conservé dans ces répertoires.
 
 Les [spécifications du format CMML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf) sont disponibles.
 
@@ -34,11 +33,9 @@ Les régions de prévisions publiques sont définies précisément et peuvent ê
 
 Ces fichiers se trouvent ici :
 
-[https://dd.meteo.gc.ca/meteocode/geodata/](https://dd.meteo.gc.ca/meteocode/geodata/)
+[https://dd.meteo.gc.ca/today/meteocode/geodata/](https://dd.meteo.gc.ca/today/meteocode/geodata/)
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les prévisions émises pour chaque province se trouvent dans un répertoire spécifique :
 * __atl__ : Nouveau-Brunswick, Nouvelle-Écosse, Île-du-Prince-Édouard, Terre-Neuve-et-Labrador
@@ -161,9 +158,9 @@ __Note__ : L'année de la prévision n'est pas dans le nom de fichier.
 
 Exemple de nom de fichier :
 
-[https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml](https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml)
+* TRANSMIT.FPVR11.10.30.2300Z.xml
 
-Ce fichier contient les prévisions émise par le bureau de Vancouver (répertoire 'pyr' et 'VR' dans le nom de fichier) en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').
+Ce fichier contient les prévisions émise par le bureau de Vancouver ('VR') en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').
 
 ## Support
 

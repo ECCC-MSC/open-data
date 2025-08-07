@@ -16,8 +16,8 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.weather.gc.ca/climate/ltce/daily)
-* [https://dd.weather.gc.ca/climate/ltce/stations](https://dd.weather.gc.ca/climate/ltce/stations)
+* [https://dd.weather.gc.ca/today/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.weather.gc.ca/today/climate/ltce/daily)
+* [https://dd.weather.gc.ca/today/climate/ltce/stations](https://dd.weather.gc.ca/today/climate/ltce/stations)
 
 where:
 

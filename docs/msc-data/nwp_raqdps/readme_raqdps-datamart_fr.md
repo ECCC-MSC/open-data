@@ -16,7 +16,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_raqdps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/model_raqdps/10km/grib2)         
+* [https://dd.meteo.gc.ca/today/model_raqdps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/today/model_raqdps/10km/grib2)         
 
 où :
 
@@ -39,8 +39,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée :
 __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/update_2.0.8.html) et [GDAL](https://gdal.org/) supportent ces grilles tournées. 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 

@@ -16,7 +16,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/model_raqdps/10km/grib2/{HH}/{hhh}](https://dd.weather.gc.ca/model_raqdps/10km/grib2) 
+* [https://dd.weather.gc.ca/today/model_raqdps/10km/grib2/{HH}/{hhh}](https://dd.weather.gc.ca/today/model_raqdps/10km/grib2) 
 
 where:
 

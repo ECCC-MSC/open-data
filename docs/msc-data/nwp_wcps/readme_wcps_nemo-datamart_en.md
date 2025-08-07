@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
+* [https://dd.weather.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
 
 where:
 
@@ -37,8 +37,6 @@ In the complete domain indicated by the white rectangle, the valide domain, whic
 | resolution at 45° N | 1km |
 
 ## Filename nomenclature
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 

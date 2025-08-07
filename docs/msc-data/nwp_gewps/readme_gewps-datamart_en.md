@@ -16,7 +16,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following URL :
 
-* [https://dd.weather.gc.ca/model_gewps/25km/{HH}/](https://dd.weather.gc.ca/model_gewps/25km)
+* [https://dd.weather.gc.ca/today/model_gewps/25km/{HH}/](https://dd.weather.gc.ca/today/model_gewps/25km)
 
 where :
 
@@ -34,8 +34,6 @@ Global latitude-longitude grid.
 | coordinate of first grid point | 90° S  0° E |
 
 ## File name nomenclature
-
-NOTE:  ALL HOURS ARE IN UTC.
 
 File names have the form:
 

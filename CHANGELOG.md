@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.9
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * Update MSC Datamart pages according to the new dynamic structure
+    * Update MSC Datamart alerts pages with the addition of tsunami for "LAND" alerts
+* bug fixes:
+    * Fix PM air quality units 
+
 # 2.9.8
 
 * date: 2025-07-22

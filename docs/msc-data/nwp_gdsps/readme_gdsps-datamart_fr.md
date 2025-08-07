@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles à adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_gdsps/15km/{HH}/](https://dd.meteo.gc.ca/model_gdsps/15km)
+* [https://dd.meteo.gc.ca/today/model_gdsps/15km/{HH}/](https://dd.meteo.gc.ca/today/model_gdsps/15km)
 
 où :
 
@@ -33,8 +33,6 @@ Grille latitude-logitude globale
 | résolution | 0.144° x 0.200° |
 
 ## Nomenclature des noms de fichiers
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la nomenclature suivante :
 

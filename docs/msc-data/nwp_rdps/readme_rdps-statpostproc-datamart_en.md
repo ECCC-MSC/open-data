@@ -29,8 +29,8 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* UMOS data: [https://dd.weather.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional/stat-post-processing)
-* PROGNOS data: [https://dd.weather.gc.ca/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_rdps/stat-post-processing)
+* UMOS data: [https://dd.weather.gc.ca/today/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_gem_regional/stat-post-processing)
+* PROGNOS data: [https://dd.weather.gc.ca/today/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_rdps/stat-post-processing)
 
 where :
 

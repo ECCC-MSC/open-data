@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The radar images are available at the following address:
 
-* [https://dd.weather.gc.ca/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}](https://dd.weather.gc.ca/radar/)
+* [https://dd.weather.gc.ca/today/radar/{PRODUCT}/{FORMAT}/{RADAR_STATION}](https://dd.weather.gc.ca/today/radar/)
 
 where:
 

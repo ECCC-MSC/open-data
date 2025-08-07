@@ -18,7 +18,7 @@ Les données sont disponibles aux adresses suivantes :
 
 * __Observations terrestres :__
 
-* [https://dd.meteo.gc.ca/observations/swob-ml/{AAAAMMJJ}/{XXXX}/](https://dd.meteo.gc.ca/observations/swob-ml)
+* [https://dd.meteo.gc.ca/today/observations/swob-ml/{AAAAMMJJ}/{XXXX}/](https://dd.meteo.gc.ca/today/observations/swob-ml)
 
 où :
 
@@ -27,13 +27,13 @@ où :
 
 De plus, un répertoire spécial contient les dernières observations reçues pour chaque station:
 
-[https://dd.meteo.gc.ca/observations/swob-ml/latest/](https://dd.meteo.gc.ca/observations/swob-ml/latest/)
+[https://dd.meteo.gc.ca/today/observations/swob-ml/latest/](https://dd.meteo.gc.ca/today/observations/swob-ml/latest/)
 
-__Note__: Une [liste des stations d'observations](https://dd.meteo.gc.ca/observations/doc/swob-xml_station_list.csv) est disponible et mise à jour quotidiennement.
+__Note__: Une [liste des stations d'observations](https://dd.meteo.gc.ca/today/observations/doc/swob-xml_station_list.csv) est disponible et mise à jour quotidiennement.
 
 * __Observations marines :__
 
-https://dd.meteo.gc.ca/observations/swob-ml/marine/moored-buoys/{YYYMMDD}/{XXXXXXX}
+https://dd.meteo.gc.ca/today/observations/swob-ml/marine/moored-buoys/{YYYMMDD}/{XXXXXXX}
 
 où : 
 
@@ -44,7 +44,7 @@ __Note__: Une [liste des stations marines d'observation](https://collaboration.c
 
 * __Observations des partenaires__ :
   
-https://dd.meteo.gc.ca/observations/swob-ml/partners/{NETWORK}/{YYYMMDD}/{MSC-ID}
+https://dd.meteo.gc.ca/today/observations/swob-ml/partners/{NETWORK}/{YYYMMDD}/{MSC-ID}
 
 où : 
 

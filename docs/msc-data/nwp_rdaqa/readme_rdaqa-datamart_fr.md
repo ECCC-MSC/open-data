@@ -14,7 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_rdaqa/10km/{HH}](https://dd.meteo.gc.ca/model_rdaqa/10km)
+* [https://dd.meteo.gc.ca/today/model_rdaqa/10km/{HH}](https://dd.meteo.gc.ca/today/model_rdaqa/10km)
 
 où :
 

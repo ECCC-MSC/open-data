@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/nemo/netcdf/lat_lon)                  
+* [https://dd.meteo.gc.ca/today/model_wcps/nemo/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_wcps/nemo/netcdf/lat_lon)                  
 
 où :
 
@@ -38,8 +38,6 @@ Dans le domaine complet indiqué en blanc, le domaine de données valide, qui co
 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 

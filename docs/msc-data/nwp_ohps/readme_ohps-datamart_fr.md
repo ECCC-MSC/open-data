@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à L'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_ohps/slfe/100m/{HH}/{hhh}](https://dd.meteo.gc.ca/model_ohps/slfe/100m)
+* [https://dd.meteo.gc.ca/today/model_ohps/slfe/100m/{HH}/{hhh}](https://dd.meteo.gc.ca/today/model_ohps/slfe/100m)
 
 où :
 

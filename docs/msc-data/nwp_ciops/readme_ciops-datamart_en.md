@@ -16,9 +16,9 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/east/)
-* [https://dd.weather.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/west/2km/)
-* [https://dd.weather.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.weather.gc.ca/model_ciops/salish-sea/500m/)                  
+* [https://dd.weather.gc.ca/today/model_ciops/east/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_ciops/east/)
+* [https://dd.weather.gc.ca/today/model_ciops/west/2km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_ciops/west/2km/)
+* [https://dd.weather.gc.ca/today/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_ciops/salish-sea/500m/)                  
 
 where:
 

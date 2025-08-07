@@ -22,7 +22,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data are available at the address :
 
-* [https://dd.weather.gc.ca/radar/visibility](https://dd.weather.gc.ca/radar/visibility)
+* [https://dd.weather.gc.ca/today/radar/visibility](https://dd.weather.gc.ca/today/radar/visibility)
 
 __Note__: 
 

@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The bulletin files are available at the following address :
 
-* [https://dd.weather.gc.ca/bulletins/alphanumeric/](https://dd.weather.gc.ca/bulletins/alphanumeric/)
+* [https://dd.weather.gc.ca/today/bulletins/alphanumeric/](https://dd.weather.gc.ca/today/bulletins/alphanumeric/)
 
 
 ## Directory and file name nomenclature 
@@ -58,7 +58,7 @@ SOVD02_CWOW_250553___14352
 
 A complete listing of all bulletins posted on the MSC Datamart is not available. 
 However, once you know which ones you are looking for after consulting the WMO documents, 
-then you can easily checked if they are on our http server using the [bulletin search script](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
+then you can easily checked if they are on our http server using our [MSC GeoMet-OGC-API](https://api.weather.gc.ca/collections/bulletins-realtime?lang=en).
 
 ### Weather Warnings
 

@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/bulletins/alphanumeric/](https://dd.meteo.gc.ca/bulletins/alphanumeric/)
+* [https://dd.meteo.gc.ca/today/bulletins/alphanumeric/](https://dd.meteo.gc.ca/today/bulletins/alphanumeric/)
 
 
 ## Nomenclature des répertoires et noms de fichiers
@@ -55,7 +55,7 @@ Exemple :
 
 SOVD02_CWOW_250553___14352
 
-Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC. Cependant, une fois le type de bulletin identifié dans le répertoire de l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à l'[utilitaire de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf).
+Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC. Cependant, une fois le type de bulletin identifié dans le répertoire de l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à nos services web [GeoMet-OGC-API du SMC](https://api.weather.gc.ca/collections/bulletins-realtime?lang=fr).
 
 ### Avertissements météo
 

@@ -16,8 +16,8 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* Data on polar stereographic grid: [https://dd.weather.gc.ca/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/model_gem_regional)
-* Data on rotated lat-lon grid: [https://dd.weather.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_rdps) 
+* Data on polar stereographic grid: [https://dd.weather.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_gem_regional)
+* Data on rotated lat-lon grid: [https://dd.weather.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_rdps) 
 
 where :
 

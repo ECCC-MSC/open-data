@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 Lightning data are available at the following address:
 
-[https://dd.weather.gc.ca/lightning](https://dd.weather.gc.ca/lightning/)
+[https://dd.weather.gc.ca/today/lightning](https://dd.weather.gc.ca/today/lightning/)
 
 
 ## Filename nomenclature

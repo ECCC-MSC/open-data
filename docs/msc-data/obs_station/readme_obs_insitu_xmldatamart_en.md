@@ -34,7 +34,7 @@ The provincial and territorial summary XML files are grouped in a directory tree
 
 The provincial summary XML files are available at the following address :
 
-* [https://dd.weather.gc.ca/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/observations/xml)
+* [https://dd.weather.gc.ca/today/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/today/observations/xml)
 
 where :
 
@@ -55,11 +55,7 @@ where :
 
 * __TYPE__ : String indicating the summary type. Could be one of those 3 types: [hourly | today | yesterday]. See Description below for more information.
 
-A history of data (30 days) is kept in the directory.
-
 ## Nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The file names have the following nomenclature :
 

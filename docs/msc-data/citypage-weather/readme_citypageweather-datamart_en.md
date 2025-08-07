@@ -18,7 +18,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 Weather forecast data by city, disseminated in dated files (single files) are available according to this hierarchy :
 
-  [https://dd.weather.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.weather.gc.ca/citypage_weather/)
+  [https://dd.weather.gc.ca/today/citypage_weather/{PROV}/{HH}](https://dd.weather.gc.ca/today/citypage_weather/)
   
   where:
   

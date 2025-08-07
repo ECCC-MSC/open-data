@@ -16,8 +16,8 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/spei/netcdf/historical/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.weather.gc.ca/climate/spei/netcdf/historical)
-* [https://dd.weather.gc.ca/climate/spei/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.weather.gc.ca/climate/spei/netcdf/scenarios)
+* [https://dd.weather.gc.ca/today/climate/spei/netcdf/historical/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.weather.gc.ca/today/climate/spei/netcdf/historical)
+* [https://dd.weather.gc.ca/today/climate/spei/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.weather.gc.ca/today/climate/spei/netcdf/scenarios)
 
 where :
 
@@ -25,8 +25,6 @@ where :
 * __scenarios__ : Refers to different emission scenarios [RCP2.6, RCP4.5,RCP8.5] from 2006 to 2100. 
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form :
 

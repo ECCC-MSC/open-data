@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following address:
 
-* [https://dd.weather.gc.ca/model_ohps/slfe/100m/{HH}/{hhh}](https://dd.weather.gc.ca/model_ohps/slfe/100m)
+* [https://dd.weather.gc.ca/today/model_ohps/slfe/100m/{HH}/{hhh}](https://dd.weather.gc.ca/today/model_ohps/slfe/100m)
 
 where :
 

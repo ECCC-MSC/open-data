@@ -20,9 +20,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/ahccd/geojson/historical/annual/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/ahccd/geojson/historical/annual)
-* [https://dd.weather.gc.ca/climate/ahccd/geojson/historical/seasonal/{[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/ahccd/geojson/historical/seasonal)
-* [https://dd.weather.gc.ca/climate/ahccd/geojson/historical/monthly/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/ahccd/geojson/historical/monthly)
+* [https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/annual/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/annual)
+* [https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/seasonal/{[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/seasonal)
+* [https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/monthly/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/ahccd/geojson/historical/monthly)
 
 where :
 
@@ -32,8 +32,6 @@ where :
 *  AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT : The 10 Canadian provinces and 3 territories 
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form :
 
@@ -66,8 +64,6 @@ where :
 Example :  AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 ## List of variables
-
-Warning : the tables below are not up to date (to come), some variables are missing. Feel free to [contact us](mailto:info.cccs-ccsc@canada.ca) for more information.
 
 The available variables and units for AHCCD are :
 

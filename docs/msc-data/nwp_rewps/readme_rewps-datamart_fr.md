@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à adresse suivante :
 
-* [https://dd.weather.gc.ca/model_rewps/great-lakes/grib2/{HH}/](https://dd.weather.gc.ca/model_rewps/great-lakes/grib2)
+* [https://dd.meteo.gc.ca/today/model_rewps/great-lakes/grib2/{HH}/](https://dd.meteo.gc.ca/today/model_rewps/great-lakes/grib2)
 
 où :
 

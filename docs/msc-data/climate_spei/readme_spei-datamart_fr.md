@@ -16,8 +16,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers IPEN se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/spei/netcdf/historical/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.meteo.gc.ca/climate/spei/netcdf/historical)
-* [https://dd.meteo.gc.ca/climate/spei/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.meteo.gc.ca/climate/spei/netcdf/scenarios)
+* [https://dd.meteo.gc.ca/today/climate/spei/netcdf/historical/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.meteo.gc.ca/today/climate/spei/netcdf/historical)
+* [https://dd.meteo.gc.ca/today/climate/spei/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/{[SPEI-1, SPEI-3, SPEI-12]}](https://dd.meteo.gc.ca/today/climate/spei/netcdf/scenarios)
 
 où :
 
@@ -25,8 +25,6 @@ où :
 * __scenarios__ : Réfère à différents scénarios d'émissions [RCP2.6, RCP4.5, RCP8.5] pour la période de 2006-2100.
 
 ## Nomenclature des noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP.nc
 * CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP.nc

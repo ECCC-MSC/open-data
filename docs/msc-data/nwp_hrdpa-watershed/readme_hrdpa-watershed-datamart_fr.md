@@ -35,15 +35,13 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile/{HH}](https://dd.weather.gc.ca/analysis/precip/hrdpa_watershed/shapefile)
+* [https://dd.weather.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile/{HH}](https://dd.weather.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile)
 
 où  :
 
 * __HH__ : Période d’accumulation en heures: 06 ou 24 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

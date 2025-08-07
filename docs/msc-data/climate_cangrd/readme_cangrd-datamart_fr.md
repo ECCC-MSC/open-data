@@ -16,9 +16,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers CANGRD se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}](https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/annual)
-* [https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}](https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/seasonal)
-* [https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly](https://dd.meteo.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly)
+* [https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}](https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/annual)
+* [https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}](https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/seasonal)
+* [https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/monthly_ens/anomaly](https://dd.meteo.gc.ca/today/climate/cangrd/geotiff/historical/monthly_ens/anomaly)
 
 où :
 
@@ -29,8 +29,6 @@ où :
 * __trend__ : Les données de tendance représentent le changement de température ou l’écart relatif des précipitations sur la période étudiée (tendance moyenne des températures : 1948-2018 ; tendance des précipitations : 1948-2012).
 
 ## Nomenclature des noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 CANGRD_hist_TemporalResolution_Value_ProjectionResolution_Variable_TimePeriod.tif
 

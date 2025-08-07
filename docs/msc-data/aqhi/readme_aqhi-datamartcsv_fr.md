@@ -19,35 +19,35 @@ Les données sont accessibles aux adresses suivantes :
 * **Observations** : 
 
     * Fichiers en temps réel : 
-        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/csv)
-        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/csv)
-        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/csv)
-        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/csv)
-        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/csv)
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/realtime/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/realtime/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/realtime/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/realtime/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/realtime/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/realtime/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/realtime/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/realtime/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/realtime/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/realtime/csv)
     
     * Fichiers mensuels :
-        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/monthly/csv)
-        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/monthly/csv)
-        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/monthly/csv)
-        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/monthly/csv)
-        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/monthly/csv)
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/monthly/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/monthly/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/monthly/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/monthly/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/monthly/csv)
 
 * **Prévisions publiques** :
     * Fichiers mensuels : 
-        * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/monthly/csv)
-        * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/monthly/csv)
-        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/monthly/csv)
-        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/monthly/csv)
-        * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/monthly/csv)
+        * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/monthly/csv)
+        * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/monthly/csv)
+        * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/monthly/csv)
+        * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/monthly/csv)
+        * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/monthly/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/monthly/csv)
 
 
 * **Données des modèles numériques** :
 
-    * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/model/csv)
-    * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/model/csv)
-    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/model/csv)
-    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/model/csv)
-    * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/model/csv)
+    * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/model/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/model/csv)
+    * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/model/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/model/csv)
+    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/model/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/model/csv)
+    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/model/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/model/csv)
+    * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/model/csv](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/model/csv)
   
 
 ## Rétention des données 
@@ -55,8 +55,6 @@ Les données sont accessibles aux adresses suivantes :
 Les fichiers CSV en temps réel sont produits aux heures et ils contiennent les données pour les 7 derniers jours. Les fichiers CSV mensuels sont produits à la fin de chaque mois. 
     
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 * **Observations**: 
   
@@ -251,7 +249,7 @@ Chaque ligne d'un bloc de données contient les informations suivantes :
 
 * Dans les fichiers CSV pour UMOSAQ, il est possible que certaines valeurs soient manquantes en raison de prévisions manquantes. La disponibilité des prévisions de UMOS pour une heure spécifique dépend de l'existence de données historiques suffisantes pour être en mesure de générer des équations statistiques/prédictifs qui sont fiables.
 
-* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
+* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Support
 

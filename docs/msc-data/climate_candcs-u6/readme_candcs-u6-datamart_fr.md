@@ -17,8 +17,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers CanDCS-U6 se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/candcsu6/10km/historical/](https://dd.meteo.gc.ca/climate/candcsu6/10km/historical)
-* [https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp585}](https://dd.meteo.gc.ca/climate/candcsu6/10km/scenarios)
+* [https://dd.meteo.gc.ca/today/climate/candcsu6/10km/historical/](https://dd.meteo.gc.ca/today/climate/candcsu6/10km/historical)
+* [https://dd.meteo.gc.ca/today/climate/candcsu6/10km/scenarios/{ssp126,ssp245,ssp585}](https://dd.meteo.gc.ca/today/climate/candcsu6/10km/scenarios)
 
 où :
 

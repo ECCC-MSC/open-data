@@ -16,7 +16,7 @@ This data is available using the HTTPS protocol and resides in a directory that 
 
 This data can be accessed at the following URL:
 
-* [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
+* [https://dd.weather.gc.ca/today/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.weather.gc.ca/today/ensemble/reps/10km/grib2)
 
 where :
 

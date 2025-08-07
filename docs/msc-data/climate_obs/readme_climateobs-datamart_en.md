@@ -16,10 +16,10 @@ The  climate  data is available using the HTTPS protocol and resides in a direct
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/observations/normals/csv/1981-2010/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/normals/csv/1981-2010)
-* [https://dd.weather.gc.ca/climate/observations/daily/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/daily/csv)
-* [https://dd.weather.gc.ca/climate/observations/hourly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/hourly/csv)
-* [https://dd.weather.gc.ca/climate/observations/monthly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/climate/observations/monthly/csv)
+* [https://dd.weather.gc.ca/today/climate/observations/normals/csv/1981-2010/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/observations/normals/csv/1981-2010)
+* [https://dd.weather.gc.ca/today/climate/observations/daily/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/observations/daily/csv)
+* [https://dd.weather.gc.ca/today/climate/observations/hourly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/observations/hourly/csv)
+* [https://dd.weather.gc.ca/today/climate/observations/monthly/csv/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.weather.gc.ca/today/climate/observations/monthly/csv)
 
 where :
 

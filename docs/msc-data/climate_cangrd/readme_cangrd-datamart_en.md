@@ -16,9 +16,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/annual)
-* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/seasonal)
-* [https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly](https://dd.weather.gc.ca/climate/cangrd/geotiff/historical/monthly_ens/anomaly)
+* [https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/annual/{[anomaly, trend]}](https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/annual)
+* [https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly, trend]}](https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/seasonal)
+* [https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/monthly_ens/anomaly](https://dd.weather.gc.ca/today/climate/cangrd/geotiff/historical/monthly_ens/anomaly)
 
 where :
 
@@ -29,8 +29,6 @@ where :
 * __trend__ : Trend data represents the change in temperature or relative precipitation departure over the period of record (mean temperature trend: 1948-2018; precipitation trend: 1948-2012)
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form :
 

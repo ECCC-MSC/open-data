@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The vertical profiles files are available at the following address :
 
-[https://dd.weather.gc.ca/vertical_profile/observation/csv](https://dd.weather.gc.ca/vertical_profile/observation/csv)
+[https://dd.weather.gc.ca/today/vertical_profile/observation/csv](https://dd.weather.gc.ca/today/vertical_profile/observation/csv)
 
 ## Filename nomenclature 
 

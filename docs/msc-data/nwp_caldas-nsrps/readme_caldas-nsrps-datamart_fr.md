@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_nsrps-caldas/2.5km/{HH}/](https://dd.meteo.gc.ca/model_nsrps-caldas/2.5km)                  
+* [https://dd.meteo.gc.ca/today/model_nsrps-caldas/2.5km/{HH}/](https://dd.meteo.gc.ca/today/model_nsrps-caldas/2.5km)                  
 
 où :
 

@@ -22,7 +22,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont disponibles à l'adresse :
 
-* [https://dd.meteo.gc.ca/radar/visibility](https://dd.meteo.gc.ca/radar/visibility)
+* [https://dd.meteo.gc.ca/today/radar/visibility](https://dd.meteo.gc.ca/today/radar/visibility)
 
 __Note__:
 

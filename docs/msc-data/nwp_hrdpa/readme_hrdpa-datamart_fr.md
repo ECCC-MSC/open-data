@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sur une grille lat-lon tournée sont accessibles à l'adresse suivante:
 
-* [https://dd.meteo.gc.ca/model_hrdpa/2.5km/{HH}/](https://dd.meteo.gc.ca/model_hrdpa/2.5km)
+* [https://dd.meteo.gc.ca/today/model_hrdpa/2.5km/{HH}/](https://dd.meteo.gc.ca/today/model_hrdpa/2.5km)
 
 où :
 

@@ -16,12 +16,12 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers CMIP5 se trouvent à l'adresse suivante :
 
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}                                                                  
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}                                                                             
-* https://dd.meteo.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/historical/monthly_ens/absolute
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}                                                                  
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}                                                                             
+* https://dd.meteo.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute
 
 où :
 
@@ -33,8 +33,6 @@ où :
 * __Absolute__ : Représente les projections d’ensembles multi-modèles (valeurs actuelles)
 
 ## Nomenclature des noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 * CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc

@@ -16,16 +16,15 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont accessibles à l'adresses suivante :
 
-* [https://dd.meteo.gc.ca/model_giops/netcdf](https://dd.meteo.gc.ca/model_giops/netcdf)                  
-
+* [https://dd.meteo.gc.ca/today/model_giops/netcdf](https://dd.meteo.gc.ca/today/model_giops/netcdf)                  
 
 * Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
 
-[https://dd.meteo.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/)
+[https://dd.meteo.gc.ca/today/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_giops/netcdf/lat_lon/)
 
 * Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
 
-[https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_giops/netcdf/polar_stereographic)
+[https://dd.meteo.gc.ca/today/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_giops/netcdf/polar_stereographic)
 
 où :
 
@@ -37,8 +36,6 @@ où :
 À noter que, puisque les fichiers à l'heure de prévision 0, à 00Z, sont basés sur l'analyse et non la prévision, un sous-ensemble de variables est fourni à cette échéance, contrairement aux autres échéances.
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers suivante :
 

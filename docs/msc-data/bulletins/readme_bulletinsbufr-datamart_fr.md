@@ -17,9 +17,9 @@ Les bulletins BUFR sont disponibles via le  protocole HTTP avec un fureteur stan
 
 Les données sont accessibles à l’adresse suivante :
 
-* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.weather.gc.ca/bulletins/alphanumeric)
+* [https://dd.meteo.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.meteo.gc.ca/today/bulletins/alphanumeric)
 
-* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.weather.gc.ca/bulletins/alphanumeric)
+* [https://dd.meteo.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.meteo.gc.ca/today/bulletins/alphanumeric)
 
 où :
 
@@ -66,12 +66,9 @@ où, data.bufr est le fichier BUFR.
 Davantage d’information sont disponibles  quant à l’installation et à l’utilisation de libECBUFR dans la foire aux questions suivante : 
 [https://github.com/ECCC-MSC/libecbufr/wiki/FAQ](https://github.com/ECCC-MSC/libecbufr/wiki/FAQ)
 
-## Utilitaire de recherche de bulletins
+## Recherche de bulletins
 
-Pour faciliter la recherche de bulletins, veuillez utiliser notre utilitaire de recherche de bulletins qui se trouve sur le Datamart :
-[https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
-
-Des informations détaillées, avec des exemples d’utilisation de ce script se trouvent dans le [document PDF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf). 
+Pour faciliter la recherche de bulletins, veuillez utiliser nos services web géospatiaux [GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections/bulletins-realtime?lang=fr).
 
 ## Support
 

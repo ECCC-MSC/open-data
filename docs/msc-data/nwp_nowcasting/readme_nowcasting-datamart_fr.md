@@ -21,12 +21,10 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à adresse suivante :
 
-* [https://dd.meteo.gc.ca/nowcasting/matrices/](https://dd.meteo.gc.ca/nowcasting/matrices/)
+* [https://dd.meteo.gc.ca/today/nowcasting/matrices/](https://dd.meteo.gc.ca/today/nowcasting/matrices/)
 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 
@@ -108,6 +106,7 @@ __5, 6, 7, 8, 9, 10__ : Ces six colonnes représentes les types de précipitatio
 
 
 __L'intensité des précipitations est donnée par :__
+
 * (-) très faible à faible
 * ( ) (pas de signe) modérée
 * (+) Forte

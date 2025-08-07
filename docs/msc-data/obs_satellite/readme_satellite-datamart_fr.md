@@ -20,7 +20,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les produits de la série GOES-R se trouvent à l'adresse :
 
-* [https://dd.meteo.gc.ca/satellite/goes/[west|east]/{HH}/](https://dd.meteo.gc.ca/satellite/goes/)
+* [https://dd.meteo.gc.ca/today/satellite/goes/[west|east]/{HH}/](https://dd.meteo.gc.ca/today/satellite/goes/)
 
 où :
 
