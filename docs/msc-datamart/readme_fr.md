@@ -15,11 +15,13 @@ Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bo
 
 Le Datamart du SMC se trouve à l'adresse:
 
-`[https://dd.meteo.gc.ca/](https://dd.meteo.gc.ca/)`.
+[https://dd.meteo.gc.ca/](https://dd.meteo.gc.ca/)
 
 Alimenté des divers sources de données via [Sarracenia](https://metpx.github.io/sarracenia/fr/index.html), l'arborescence des répertoires est dynamique avec présence de la date à la racine. La période de rétention des données est identique pour tous les jeux de données et fonction de l'espace disque disponible. Actuellement, une rétention de 30 jours est en vigueur:
 
-[http://dd.meteo.gc.ca/YYYYMMDD/WXO-DD/](http://dd.meteo.gc.ca/), avec `YYYYMMDD` la date dynamique.
+[http://dd.meteo.gc.ca/YYYYMMDD/WXO-DD/](http://dd.meteo.gc.ca/)
+
+Avec `YYYYMMDD` , la date dynamique.
 
 Aussi, et pour faciliter la gestion des données, un répertoire `/today` permet de pointer directement vers les données du jour en temps réel. Ceci permet d'avoir accès à un URL statique qui pointe vers tous les jeux de données disponibles pour la date courante:
 

@@ -12,11 +12,13 @@ The Meteorological Service of Canada (MSC) HTTPS raw data server is a source of 
 
 The MSC Datamart is located at this address:
 
-`[https://dd.weather.gc.ca/](https://dd.weather.gc.ca/)`
+[https://dd.weather.gc.ca/](https://dd.weather.gc.ca/)
 
 Supplied by various data sources via [Sarracenia](https://metpx.github.io/sarracenia/), the __directory tree is dynamic with the date displayed at the root__. The data retention period is the same for all datasets and depends on the available disk space. Currently, a 30-day retention period is in effect:
 
-[http://dd.weather.gc.ca/YYYYMMDD/WXO-DD/](http://dd.weather.gc.ca/), with `YYYYMMDD` as the dynamic date.
+[http://dd.weather.gc.ca/YYYYMMDD/WXO-DD/](http://dd.weather.gc.ca/)
+
+With `YYYYMMDD` as the dynamic date.
 
 To facilitate data management, a __`/today` directory allows users to point directly to the data for the current day__. This provides access to a static URL that points to all real-time data sets:
 
