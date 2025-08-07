@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_wcps/ocean-atmosphere/1km)                  
+* [https://dd.meteo.gc.ca/today/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_wcps/ocean-atmosphere/1km)                  
 
 où :
 
@@ -37,8 +37,6 @@ Dans le domaine complet indiqué en blanc, l'ensemble des données valides qui c
 
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 

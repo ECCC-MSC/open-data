@@ -16,8 +16,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/climate/indices/netcdf/historical)
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
+* [https://dd.meteo.gc.ca/today/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/today/climate/indices/netcdf/historical)
+* [https://dd.meteo.gc.ca/today/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]](https://dd.meteo.gc.ca/today/climate/indices/netcdf/scenarios/)
 
 où :
 
@@ -26,8 +26,6 @@ où :
 * __absolute__ : Représente les projections des ensembles multimodélisés (valeur réelle)
 
 ## Nomenclature des noms de fichiers
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 * INDICES_hist_Value_ProjectionResolution_Variable_pctlPP.nc
 * INDICES_rcpx.y_Value_ProjectionResolution_Variable_pctlPP.nc

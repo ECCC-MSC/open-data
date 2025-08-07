@@ -16,7 +16,7 @@ The data is available via the HTTP protocol. It is possible to access it with a 
 
 The data can be accessed at the following address :
 
-* [https://dd.weather.gc.ca/model_gdsps/15km/{HH}/](https://dd.weather.gc.ca/model_gdsps/15km)
+* [https://dd.weather.gc.ca/today/model_gdsps/15km/{HH}/](https://dd.weather.gc.ca/today/model_gdsps/15km)
 
 where :
 
@@ -33,8 +33,6 @@ Global latitude-longitude grid.
 | resolution | 0.144° x 0.200° |
 
 ##    Nomenclature of file directories
-
-NOTE: ALL HOURS ARE IN UTC.
 
 File names have the form:
 

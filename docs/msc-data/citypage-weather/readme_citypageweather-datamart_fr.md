@@ -18,7 +18,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données de prévision météorologique par ville, distribuées dans des fichiers datés (fichiers uniques) sont disponibles à cette adresse:
 
-  [https://dd.meteo.gc.ca/citypage_weather/{PROV}/{HH}](https://dd.meteo.gc.ca/citypage_weather/)
+  [https://dd.meteo.gc.ca/today/citypage_weather/{PROV}/{HH}](https://dd.meteo.gc.ca/today/citypage_weather/)
 
   où:
   
@@ -68,7 +68,7 @@ Une [liste de noms d'emplacements et de codes de sites](https://collaboration.cm
 
 * Les schémas XML des fichiers de données météorologiques par ville sont disponibles à l'adresse suivante :
 
-  [https://dd.meteo.gc.ca/citypage_weather/schema/](https://dd.meteo.gc.ca/citypage_weather/schema/)
+  [https://dd.meteo.gc.ca/today/citypage_weather/schema/](https://dd.meteo.gc.ca/today/citypage_weather/schema/)
 
 ## Icônes du produit XML 
 

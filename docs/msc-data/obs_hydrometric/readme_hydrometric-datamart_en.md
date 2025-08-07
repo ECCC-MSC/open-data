@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data is available at the following address:
 
-* [https://dd.weather.gc.ca/hydrometric/csv/{PROVTERR}/{FREQUENCY}/](https://dd.weather.gc.ca/hydrometric/csv)
+* [https://dd.weather.gc.ca/today/hydrometric/csv/{PROVTERR}/{FREQUENCY}/](https://dd.weather.gc.ca/today/hydrometric/csv)
 
 where:
 

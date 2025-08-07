@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.weather.gc.ca/model_wcps/ocean-atmosphere/1km)                  
+* [https://dd.weather.gc.ca/today/model_wcps/ocean-atmosphere/1km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_wcps/ocean-atmosphere/1km)                  
 
 where:
 
@@ -37,8 +37,6 @@ In the full domain shown in white, the valid dataset that covers lakes and ocean
 | resolution at 45° N | 1km |
 
 ## Filename nomenclature
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature: 
 

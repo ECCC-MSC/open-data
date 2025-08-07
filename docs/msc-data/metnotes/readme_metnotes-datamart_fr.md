@@ -16,12 +16,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données MetNotes se trouvent à l'adresse :
 
-[https://dd.meteo.gc.ca/metnotes](https://dd.meteo.gc.ca/metnotes)
-
+[https://dd.meteo.gc.ca/today/metnotes](https://dd.meteo.gc.ca/today/metnotes)
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des noms des fichiers est la suivante :
 

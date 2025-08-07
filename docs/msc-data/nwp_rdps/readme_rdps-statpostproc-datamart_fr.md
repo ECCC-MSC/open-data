@@ -30,8 +30,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-* Données UMOS: [https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_regional/stat-post-processing)
-* Données PROGNOS: [https://dd.meteo.gc.ca/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_rdps/stat-post-processing)
+* Données UMOS: [https://dd.meteo.gc.ca/today/model_gem_regional/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gem_regional/stat-post-processing)
+* Données PROGNOS: [https://dd.meteo.gc.ca/today/model_rdps/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_rdps/stat-post-processing)
 
 où :
 

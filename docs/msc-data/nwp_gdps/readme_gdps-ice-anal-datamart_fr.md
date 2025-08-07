@@ -19,7 +19,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à adresse suivante :
 
-[https://dd.meteo.gc.ca/model_gem_global/{RES}/{HH}](https://dd.meteo.gc.ca/model_gem_global/10km)
+[https://dd.meteo.gc.ca/today/model_gem_global/{RES}/{HH}](https://dd.meteo.gc.ca/today/model_gem_global/10km)
 
 où :
 
@@ -37,8 +37,6 @@ Valeurs données aux différents paramètres de la grille latitude-longitude sel
 | résolution | 0.09° x 0.09° |
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

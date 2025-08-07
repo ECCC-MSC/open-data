@@ -24,7 +24,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* [https://dd.weather.gc.ca/model_hrdps/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/model_hrdps/stat-post-processing)
+* [https://dd.weather.gc.ca/today/model_hrdps/stat-post-processing/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_hrdps/stat-post-processing)
 
 where :
 

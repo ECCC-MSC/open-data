@@ -20,9 +20,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les fichiers DCCAH  se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/annual/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/annual/)
-* [https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/seasonal/{[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/seasonal)
-* [https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/monthly/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/climate/ahccd/geojson/historical/monthly)
+* [https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/annual/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/annual/)
+* [https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/seasonal/{[DJF,MAM,JJA,SON]/[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/seasonal)
+* [https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/monthly/{[AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT]}](https://dd.meteo.gc.ca/today/climate/ahccd/geojson/historical/monthly)
 
 Où :
 
@@ -32,8 +32,6 @@ Où :
 *  AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT : Les 10 provinces canadiennes et les 3 territoires canadiens
 
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 Les noms des fichiers ont la forme : 
 
@@ -66,8 +64,6 @@ Où :
 Exemple : AHCCD_hist_annual_QC_7040446_SLP_P1Y.json
 
 ## Liste des variables
-
-Attention : les tableaux ci-dessous ne sont pas à jour (à venir), certaines variables sont manquantes. N'hésitez pas à [nous contacter](mailto:info.cccs-ccsc@canada.ca) pour plus d'information.
 
 La liste des variables DCCAH est :
 

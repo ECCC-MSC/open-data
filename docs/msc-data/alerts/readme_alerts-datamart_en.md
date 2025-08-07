@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The __data can be accessed__ at the following URLs:
 
-[https://dd.weather.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.weather.gc.ca/alerts/cap)
+[https://dd.weather.gc.ca/today/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.weather.gc.ca/today/alerts/cap)
 
 where:
 
@@ -26,23 +26,19 @@ where:
 
 * The CAP-XML are grouped in a directory tree that is based on the date and the responsible office (see note1) code for the alert. The exception is for tornado warning and severe thunderstorm warning alerts which are grouped based on a LAND or WATR (see note2) designation rather than responsible office. 
 
-* The LAND directory contains the CAP-XML files for all tornado warning and severe thunderstorm warning alerts that are issued over land zones in Canada. 
+* The LAND directory contains the CAP-XML files for all tornado warning and severe thunderstorm warning, and tsunami alerts that are issued over land zones in Canada. 
 
 * The WATR directory contains the CAP-XML files for all tornado warning alerts that are issued over water zones in Canada. 
 
 * Not all WATR areas in Canada are configured for tornado warning alerts. No WATR areas in Canada are configured for severe thunderstorm warning alerts.
 
-A history of 1 month is maintained in this directory.
-
 A __standardized package of GIS (Geographical Information System) based forecast location shapefiles__, for all the forecast locations used in ECCC CAP Messages, are available at the following address:
 
-[https://dd.weather.gc.ca/meteocode/geodata/](https://dd.weather.gc.ca/meteocode/geodata/)
+[https://dd.weather.gc.ca/today/meteocode/geodata/](https://dd.weather.gc.ca/today/meteocode/geodata/)
 
 Shapefile packages found there are the same Shapefiles that are used in the operational environment where ECCC warnings are initially generated. The Shapefile packages are versioned in order to track the available packages to the package used in the operational environment at any given time. Beginning with version 5.0.3 of the GIS package, usage dates for the package will be included in the documentation.
 
 ## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 __The directories have the following nomenclature :__
 

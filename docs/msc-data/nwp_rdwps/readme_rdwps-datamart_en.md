@@ -18,14 +18,14 @@ The data can be accessed at the following URLs :
 
 Lat-lon grids:
 
-* [https://dd.weather.gc.ca/model_rdwps/erie/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/erie/1km)
-* [https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/huron-michigan/1km)
-* [https://dd.weather.gc.ca/model_rdwps/ontario/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/ontario/1km)
-* [https://dd.weather.gc.ca/model_rdwps/superior/1km/{HH}/](https://dd.weather.gc.ca/model_rdwps/superior/1km)
+* [https://dd.weather.gc.ca/today/model_rdwps/erie/1km/{HH}/](https://dd.weather.gc.ca/today/model_rdwps/erie/1km)
+* [https://dd.weather.gc.ca/today/model_rdwps/huron-michigan/1km/{HH}/](https://dd.weather.gc.ca/today/model_rdwps/huron-michigan/1km)
+* [https://dd.weather.gc.ca/today/model_rdwps/ontario/1km/{HH}/](https://dd.weather.gc.ca/today/model_rdwps/ontario/1km)
+* [https://dd.weather.gc.ca/today/model_rdwps/superior/1km/{HH}/](https://dd.weather.gc.ca/today/model_rdwps/superior/1km)
 
 Rotated lat-lon grid:
 
-* [https://dd.meteo.gc.ca/model_rdwps/national/2.5km/{HH}/](https://dd.meteo.gc.ca/model_rdwps/national/2.5km)
+* [https://dd.weather.gc.ca/today/model_rdwps/national/2.5km/{HH}/](https://dd.weather.gc.ca/today/model_rdwps/national/2.5km)
 
 where :
 

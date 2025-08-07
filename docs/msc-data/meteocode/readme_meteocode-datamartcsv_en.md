@@ -18,17 +18,13 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The files are available at the following address :
 
-* [https://dd.weather.gc.ca/meteocode/mtm/csv/](https://dd.weather.gc.ca/meteocode/mtm/csv/)
-* [https://dd.weather.gc.ca/meteocode/mtm/csv/](https://dd.weather.gc.ca/meteocode/ont/csv/)
-* [https://dd.weather.gc.ca/meteocode/pnr/csv/](https://dd.weather.gc.ca/meteocode/pnr/csv/)
-* [https://dd.weather.gc.ca/meteocode/pyr/csv/](https://dd.weather.gc.ca/meteocode/pyr/csv/)
-* [https://dd.weather.gc.ca/meteocode/que/csv/](https://dd.weather.gc.ca/meteocode/que/csv/)
-
-An history of 24 hours is kept in these directories.
+* [https://dd.weather.gc.ca/today/meteocode/mtm/csv/](https://dd.weather.gc.ca/today/meteocode/mtm/csv/)
+* [https://dd.weather.gc.ca/today/meteocode/mtm/csv/](https://dd.weather.gc.ca/today/meteocode/ont/csv/)
+* [https://dd.weather.gc.ca/today/meteocode/pnr/csv/](https://dd.weather.gc.ca/today/meteocode/pnr/csv/)
+* [https://dd.weather.gc.ca/today/meteocode/pyr/csv/](https://dd.weather.gc.ca/today/meteocode/pyr/csv/)
+* [https://dd.weather.gc.ca/today/meteocode/que/csv/](https://dd.weather.gc.ca/today/meteocode/que/csv/)
 
 ## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The filenames of the meteocode CSV files have the following nomenclature :
 
@@ -37,8 +33,8 @@ YYYY-MM-DDTHH-MM-SSZ_FPAANN_rRRRR_BB.csv
 where :
 
 * **YYYY-MM-DDTHH-MM-SSZ** : Time of emission for the forecast. Date is in ISO 8601 format. 
-* **P** : Constant string meaning "Forecast Public".
-* **ANN** : See the section 'Filename' in the CMML README at [https://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt](https://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt)
+* **FP** : Constant string meaning "Forecast Public".
+* **ANN** : See the section 'File name nomenclature' in the [CMML documentation](readme_meteocode-datamartxml_en.md)
 * **r** : Constant string indicating the beginning of the region code.
 * **RRRR** : Alphanumerical code indicating the region of the public forecast. Can be of an arbitrary length (ex: 3pe, 10zf, 71.14). The complete list of forecast region and their associated code can be found at the end of this file in the section "Region's code and name".
 * **BB** : String indicating the weather elements. Can be one of the following values: TA (Air Temperature), TD (Dew Point), PA (Precipitation accumulation), POP (Probability Of Precipitation), WS (Wind Speed and Direction), WG (Wind Gust), CC (Cloud Cover).

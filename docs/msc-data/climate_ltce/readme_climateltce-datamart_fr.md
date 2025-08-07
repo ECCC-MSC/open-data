@@ -16,8 +16,8 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d'y accéd
 
 Les données sont accessibles aux URL suivantes :
 
-* [https://dd.meteo.gc.ca/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.meteo.gc.ca/climate/ltce/daily)
-* [https://dd.meteo.gc.ca/climate/ltce/stations](https://dd.meteo.gc.ca/climate/ltce/stations)
+* [https://dd.meteo.gc.ca/today/climate/ltce/daily/{Variable}/{PROVINCE}](https://dd.meteo.gc.ca/today/climate/ltce/daily)
+* [https://dd.meteo.gc.ca/today/climate/ltce/stations](https://dd.meteo.gc.ca/today/climate/ltce/stations)
 
 où :
 

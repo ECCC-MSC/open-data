@@ -34,10 +34,10 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.weather.gc.ca/ensemble/cansips/grib2/forecast/raw) (forecast members and products at 2.5 degrees)
-* [https://dd.weather.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.weather.gc.ca/model_cansips/100km/forecast) (forecast members and products at 1 degree)
-* [https://dd.weather.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.weather.gc.ca/model_cansips/100km/hindcast) (hindcast)
-* [https://dd.weather.gc.ca/model_cansips/100km/verification/{YYYY}](https://dd.weather.gc.ca/model_cansips/100km/verification) (vérification products at 1 degree)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw) (forecast members and products at 2.5 degrees)
+* [https://dd.weather.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/model_cansips/100km/forecast) (forecast members and products at 1 degree)
+* [https://dd.weather.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/model_cansips/100km/hindcast) (hindcast)
+* [https://dd.weather.gc.ca/today/model_cansips/100km/verification/{YYYY}](https://dd.weather.gc.ca/today/model_cansips/100km/verification) (vérification products at 1 degree)
 
 where :
 

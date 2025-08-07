@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données de foudre se trouvent à l'adresse :
 
-[https://dd.meteo.gc.ca/lightning](https://dd.meteo.gc.ca/lightning)
+[https://dd.meteo.gc.ca/today/lightning](https://dd.meteo.gc.ca/today/lightning)
 
 
 ## Nomenclature des noms de fichiers 

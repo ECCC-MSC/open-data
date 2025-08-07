@@ -14,9 +14,7 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les fichiers XML de SPENA se trouvent à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/ensemble/naefs/xml](https://dd.meteo.gc.ca/ensemble/naefs/xml)
-
-Un historique de 30 jours de prévisions est conservé dans ce répertoire.
+* [https://dd.meteo.gc.ca/today/ensemble/naefs/xml](https://dd.meteo.gc.ca/today/ensemble/naefs/xml)
 
 ## Nomenclature des répertoires des fichiers 
 
@@ -24,7 +22,7 @@ La structure des répertoires est basée sur la date d'intégration et la
 variable contenu dans les fichiers XML. Ils suivent la nomenclature   
 suivante:
 
-* [https://dd.meteo.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.meteo.gc.ca/ensemble/naefs/xml)
+* [https://dd.meteo.gc.ca/today/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.meteo.gc.ca/today/ensemble/naefs/xml)
 
 où :
 
@@ -35,14 +33,7 @@ des variables' plus bas pour la liste complète des variables.
 * __TYPE__ : Type de données. Pour l'instant, seules les sorties directes de
 modèles sont disponibles ('raw').
 
-Exemple : pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
-pour la vitesse du vent à la surface de seront dans le répertoire:
-
-[https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw](https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw)
-
 ## Nomenclature des noms de fichiers 
-
-NOTE : TOUTES LES HEURES SONT EN UTC.
 
 La nomenclature des fichiers est la suivante :
 
@@ -88,10 +79,6 @@ Ce fichier représente les données des modèles pour la date du 10 mai 2010
 la pression au niveau de la mer (MSLP) pour les 384 premières heures de   
 prévisions (000-384). C'est un fichier XML (xml) compressé à l'aide de    
 l'algorithme bzip2 (bz2).
-
-Exemple d'URL pour un fichier sur internet :
-
-[https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
 
 ## Contenu des fichiers
 
@@ -161,7 +148,7 @@ Vous trouverez une liste en format XML des variables qui contient le nom
 du répertoire associé, les descriptions et les unités, en français et 
 anglais à cette adresse :
 
-[https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml](https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml)
+[https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/elements.xml](https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/elements.xml)
 
 ## Emplacements disponibles
 
@@ -183,7 +170,7 @@ manquante pour quelques emplacements)
 
 Cette liste se trouve dans le fichier suivant :
 
-[https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml](https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml)
+[https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/locations.xml](https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/locations.xml)
 
 La correspondance pour les codes de 2 lettres pour les provinces ou les
 États peut-être trouvée dans ce document PDF :

@@ -18,23 +18,21 @@ Les données sont accessibles à adresse suivante :
 
 * Observations : 
 
-    * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/atl/observation/realtime/xml)
-    * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/ont/observation/realtime/xml)
-    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/observation/realtime/xml)
-    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/observation/realtime/xml)
-    * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/realtime/xml)
+    * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/observation/realtime/xml)
+    * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/observation/realtime/xml)
+    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/observation/realtime/xml)
+    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/observation/realtime/xml)
+    * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/realtime/xml)
     
 * Prévisions publiques : 
   
-    * Région de l'Atlantique : [https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/atl/forecast/realtime/xml)
-    * Région de l'Ontario : [https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/ont/forecast/realtime/xml)
-    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pnr/forecast/realtime/xml)
-    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/pyr/forecast/realtime/xml)
-    * Région du Québec : [https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/realtime/xml](https://dd.meteo.gc.ca/air_quality/aqhi/que/forecast/realtime/xml)
+    * Région de l'Atlantique : [https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/atl/forecast/realtime/xml)
+    * Région de l'Ontario : [https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/ont/forecast/realtime/xml)
+    * Région des Prairies et du Nord : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/pnr/forecast/realtime/xml)
+    * Région du Pacifique et Yukon : [https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/pyr/forecast/realtime/xml)
+    * Région du Québec : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/realtime/xml](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/forecast/realtime/xml)
 
-Les fichiers XML en temps réel sont conservés sur le Datamart du SMC pendant 48 heures.
-
-Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
+Un fichier qui permet aux systèmes automatisés d'accèder plus facilement aux [données mises à jour en temps-réel](https://dd.meteo.gc.ca/today/air_quality/doc/AQHI_XML_File_List.xml) est disponible. 
 
 Une [liste complète des villes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aqhi/aqhi_station.geojson), avec les codes de [CGNDB](http://www4.rncan.gc.ca/recherche-de-noms-de-lieux/unique), données toponymiques du Canada maintenues par Ressources naturelles Canada, est disponible en format GeoJSON.
 
@@ -76,7 +74,7 @@ Une [liste complète des villes](https://collaboration.cmc.ec.gc.ca/cmc/cmos/pub
 
 * Les fichiers XML pour observations sont produits aux heures, environ 40 minutes après l'heure. Les fichiers XML pour les prévisions publiques sont emisent deux fois par jour vers 06:00h et 17:00h heure locale. 
 
-* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur [le portail américain AirNow](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
+* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur [le portail américain AirNow](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
 
 ## Support
 

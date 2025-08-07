@@ -19,7 +19,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following address :
 
-[https://dd.weather.gc.ca/model_gem_global/{RES}/{HH}](https://dd.weather.gc.ca/model_gem_global/10km)
+[https://dd.weather.gc.ca/today/model_gem_global/{RES}/{HH}](https://dd.weather.gc.ca/today/model_gem_global/10km)
 
 where :
 
@@ -37,8 +37,6 @@ Values given to the various parameters of the latitude-longitude grid according 
 | resolution | 0.09° x 0.09° |
 
 ## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 

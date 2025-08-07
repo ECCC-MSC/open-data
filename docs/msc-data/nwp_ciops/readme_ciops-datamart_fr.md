@@ -16,9 +16,9 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_ciops/east/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/east/)
-* [https://dd.meteo.gc.ca/model_ciops/west/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/west/)
-* [https://dd.meteo.gc.ca/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_ciops/salish-sea/) 
+* [https://dd.meteo.gc.ca/today/model_ciops/east/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_ciops/east/)
+* [https://dd.meteo.gc.ca/today/model_ciops/west/2km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_ciops/west/)
+* [https://dd.meteo.gc.ca/today/model_ciops/salish-sea/500m/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_ciops/salish-sea/) 
 
 où :
 

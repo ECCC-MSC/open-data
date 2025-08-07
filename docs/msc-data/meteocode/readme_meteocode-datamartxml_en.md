@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The terrestrial data is available at the following address : 
                                                                           
-[https://dd.weather.gc.ca/meteocode/{REGION}/cmml](https://dd.weather.gc.ca/meteocode)
+[https://dd.weather.gc.ca/today/meteocode/{REGION}/cmml](https://dd.weather.gc.ca/today/meteocode)
 
 where 'REGION' is one of the following value :
 
@@ -26,19 +26,15 @@ where 'REGION' is one of the following value :
 * pyr
 * que
 
-A data history of one month is kept in these directories.
-
 The [CMML format specifications](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf) are available.
 
 Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.
 
 These files can be found here :
 
-[https://dd.weather.gc.ca/meteocode/geodata/](https://dd.weather.gc.ca/meteocode/geodata/)
+[https://dd.weather.gc.ca/today/meteocode/geodata/](https://dd.weather.gc.ca/today/meteocode/geodata/)
 
-## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
+## File name nomenclature
 
 The forecast emitted for each provinces and territories is located in a specific directory :
 * __atl__ : New Brunswick, Nova Scotia, Prince Edward Island, Newfoundland and Labrador
@@ -166,12 +162,11 @@ where :
 
 __Note__ : The year of the forecast is not included in the file name.
 
-
 File name example :
 
-[https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml](https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml)
+* TRANSMIT.FPVR11.10.30.2300Z.xml
 
-This file contains the forecast emitted by the Vancouver office (directory 'pyr' and 'VR' in the file name) in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').
+This file contains the forecast emitted by the Vancouver office ('VR') in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').
 
 ## Support
 

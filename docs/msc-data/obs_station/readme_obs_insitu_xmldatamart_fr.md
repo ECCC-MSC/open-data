@@ -28,7 +28,7 @@ Les fichiers XML du sommaire des observations des provinces ou des territoires s
 
 Les données sont disponibles à cette adresse :
 
-* [https://dd.weather.gc.ca/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/observations/xml)
+* [https://dd.weather.gc.ca/today/observations/xml/{PC}/{TYPE}](https://dd.weather.gc.ca/today/observations/xml)
 
 où :
 
@@ -52,8 +52,6 @@ où :
 Un historique des données (30 jours) est conservé dans ce répertoire.
 
 ## Nomenclature
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers suivant cette nomenclature :
 

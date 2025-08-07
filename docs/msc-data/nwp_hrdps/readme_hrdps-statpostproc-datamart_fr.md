@@ -25,7 +25,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-* [https://dd.meteo.gc.ca/model_hrdps/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/stat-post-processing)
+* [https://dd.meteo.gc.ca/today/model_hrdps/stat-post-processing/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_hrdps/stat-post-processing)
 
 où :
 

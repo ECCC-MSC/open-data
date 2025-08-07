@@ -33,10 +33,10 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés)
-* [https://dd.meteo.gc.ca/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/forecast) (membres et produits de prévision à 1 degré)
-* [https://dd.meteo.gc.ca/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/model_cansips/100km/hindcast) (prévisions rétrospectives)
-* [https://dd.meteo.gc.ca/model_cansips/100km/verification/{YYYY}](https://dd.meteo.gc.ca/model_cansips/100km/verification) (produits de vérification à 1 degré)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés)
+* [https://dd.meteo.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/model_cansips/100km/forecast) (membres et produits de prévision à 1 degré)
+* [https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast) (prévisions rétrospectives)
+* [https://dd.meteo.gc.ca/today/model_cansips/100km/verification/{YYYY}](https://dd.meteo.gc.ca/today/model_cansips/100km/verification) (produits de vérification à 1 degré)
 
 où :
 

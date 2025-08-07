@@ -13,7 +13,17 @@ Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bo
 
 ## Accès
 
-Le Datamart du SMC se trouve à l'adresse [https://dd.meteo.gc.ca/](https://dd.meteo.gc.ca/).
+Le Datamart du SMC se trouve à l'adresse:
+
+`[https://dd.meteo.gc.ca/](https://dd.meteo.gc.ca/)`.
+
+Alimenté des divers sources de données via [Sarracenia](https://metpx.github.io/sarracenia/fr/index.html), l'arborescence des répertoires est dynamique avec présence de la date à la racine. La période de rétention des données est identique pour tous les jeux de données et fonction de l'espace disque disponible. Actuellement, une rétention de 30 jours est en vigueur:
+
+[http://dd.meteo.gc.ca/YYYYMMDD/WXO-DD/](http://dd.meteo.gc.ca/), avec `YYYYMMDD` la date dynamique.
+
+Aussi, et pour faciliter la gestion des données, un répertoire `/today` permet de pointer directement vers les données du jour en temps réel. Ceci permet d'avoir accès à un URL statique qui pointe vers tous les jeux de données disponibles pour la date courante:
+
+[https://dd.meteo.gc.ca/today/](https://dd.meteo.gc.ca/today/)
 
 ### Notifications en temps réel et récupération des données
   
@@ -33,11 +43,7 @@ Depuis le printemps 2019, un __serveur alternatif HPFX__ d'accès aux données d
 
 Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).
 
-L'adresse de ce serveur HTTP est la suivante : [http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/](http://hpfx.collab.science.gc.ca/), avec `YYYYMMDD` la date dynamique.
-
-Alimenté des divers sources de données via Sarracenia, l'arborescence des répertoires est modifiée par rapport à celle disponible sur le Datamart du SMC, avec présence de la date ce qui rend ces répertoires dynamiques et non plus statiques.
-
-Une conséquence directe de cette hiérarchie par date, concerne la période de rétention des données qui devient identique pour tous les jeux de données et fonction de l'espace disque disponible.
+L'adresse de ce serveur HTTP est la suivante : [http://hpfx.collab.science.gc.ca](http://hpfx.collab.science.gc.ca/), avec une structure dynamique par data à la racine et un répertoire [`/today`](https://hpfx.collab.science.gc.ca/today/) qui donne accès aux données du jour. Une période de rétention de 30 jours est aussi en vigueur pour tous les jeux de données.
 
 L'accès aux données via [le protocole AMQP est évidemment fortement conseillé](amqp_fr.md).
 

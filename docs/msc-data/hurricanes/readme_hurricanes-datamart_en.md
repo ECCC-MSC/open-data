@@ -23,7 +23,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 * __Data in shapefile format__ can be found at this address:
 
-    * [https://dd.weather.gc.ca/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/trajectoires/hurricane/shapefile)
+    * [https://dd.weather.gc.ca/today/trajectoires/hurricane/shapefile/{NAME}](https://dd.weather.gc.ca/today/trajectoires/hurricane/shapefile)
 
 With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')
 

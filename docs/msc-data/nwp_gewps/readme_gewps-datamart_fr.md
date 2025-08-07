@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à adresse suivante :
 
-* [https://dd.meteo.gc.ca/model_gewps/25km/{HH}/](https://dd.meteo.gc.ca/model_gewps/25km)
+* [https://dd.meteo.gc.ca/today/model_gewps/25km/{HH}/](https://dd.meteo.gc.ca/today/model_gewps/25km)
 
 où :
 
@@ -34,8 +34,6 @@ Grille latitude-longitude globale
 | coordonnées du premier point de grille | 90° S  0° E |
 
 ## Nomenclature des noms de fichiers
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les fichiers ont la nomenclature suivante :
 

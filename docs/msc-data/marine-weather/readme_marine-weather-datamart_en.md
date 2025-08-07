@@ -26,7 +26,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 Marine weather XML forecasts, disseminated in dated files (single files) are available according to this hierarchy :
 
-  [https://dd.weather.gc.ca/marine_weather/{DOMAIN}/{HH}](https://dd.weather.gc.ca/marine_weather/)
+  [https://dd.weather.gc.ca/today/marine_weather/{DOMAIN}/{HH}](https://dd.weather.gc.ca/today/marine_weather/)
   
   where:
   

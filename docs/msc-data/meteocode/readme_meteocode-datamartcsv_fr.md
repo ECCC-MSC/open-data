@@ -18,17 +18,13 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données pour les différentes régions du pays sont disponibles aux  adresses suivantes :
 
-* [https://dd.meteo.gc.ca/meteocode/mtm/csv/](https://dd.meteo.gc.ca/meteocode/mtm/csv/)
-* [https://dd.meteo.gc.ca/meteocode/ont/csv/](https://dd.meteo.gc.ca/meteocode/ont/csv/)
-* [https://dd.meteo.gc.ca/meteocode/pnr/csv/](https://dd.meteo.gc.ca/meteocode/pnr/csv/)
-* [https://dd.meteo.gc.ca/meteocode/pyr/csv/](https://dd.meteo.gc.ca/meteocode/pyr/csv/)
-* [https://dd.meteo.gc.ca/meteocode/que/csv/](https://dd.meteo.gc.ca/meteocode/que/csv/)
-
-Un historique des données de 24 heures est conservé dans ces répertoires.
+* [https://dd.meteo.gc.ca/today/meteocode/mtm/csv/](https://dd.meteo.gc.ca/today/meteocode/mtm/csv/)
+* [https://dd.meteo.gc.ca/today/meteocode/ont/csv/](https://dd.meteo.gc.ca/today/meteocode/ont/csv/)
+* [https://dd.meteo.gc.ca/today/meteocode/pnr/csv/](https://dd.meteo.gc.ca/today/meteocode/pnr/csv/)
+* [https://dd.meteo.gc.ca/today/meteocode/pyr/csv/](https://dd.meteo.gc.ca/today/meteocode/pyr/csv/)
+* [https://dd.meteo.gc.ca/today/meteocode/que/csv/](https://dd.meteo.gc.ca/today/meteocode/que/csv/)
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 Les noms de fichiers ont la forme suivante :
 
@@ -39,7 +35,7 @@ où :
 * __YYYY-MM-DDTHH-MM-SSZ__ : Date d'émission de la prévision. En format ISO 8601.
 * __FP__ : Chaîne de caractères constante, signifiant prévision publique
 (en anglais: Forecast Public).
-* __AANN__ : Voir la section 'Nom de fichier' dans la [documentation des fichiers CMML](readme_meteocode-datamartcsv_fr.md).
+* __AANN__ : Voir la section 'Nomenclature des noms de fichiers' dans la [documentation des fichiers CMML](readme_meteocode-datamartxml_fr.md).
 * __r__ : Caractère constant indiquant le début du code de région.
 * __RRRR__ : Code alphanumérique indiquant la région de prévision publique. Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). 
 * __BB__ : Chaîne de caractères indiquant l'élément du temps. Peut prendre

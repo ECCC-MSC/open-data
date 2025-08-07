@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following address :
 
-* [https://dd.weather.gc.ca/model_resps/atlantic-nw/9km/{HH}/](https://dd.weather.gc.ca/model_resps/atlantic-nw/9km)
+* [https://dd.weather.gc.ca/today/model_resps/atlantic-nw/9km/{HH}/](https://dd.weather.gc.ca/today/model_resps/atlantic-nw/9km)
 
 where :
 

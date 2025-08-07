@@ -16,12 +16,12 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/annual)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/seasonal)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip5/netcdf/historical/monthly_ens/absolute)
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)                                                                
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)                                                                     
-* [https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute](https://dd.weather.gc.ca/climate/cmip5/netcdf/scenarios)
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/annual/{[anomaly,absolute]}](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/annual)
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute]}](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/seasonal)
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/monthly_ens/absolute](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/historical/monthly_ens/absolute)
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/annual/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios)                                                                
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/seasonal/{[DJF,MAM,JJA,SON]}/{[anomaly,absolute,avg_20years]}](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios)                                                                     
+* [https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios/{[RCP2.6,RCP4.5,RCP8.5]}/monthly_ens/absolute](https://dd.weather.gc.ca/today/climate/cmip5/netcdf/scenarios)
 
 where :
 
@@ -33,8 +33,6 @@ where :
 * __Absolute__ : Represents the multi-modelled ensemble projections (actual value)
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 * CMIP5_hist_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc
 * CMIP5_rcpx.y_TemporalResolution_Value_ProjectionResolution_Variable_pctlPP_TimeStep.nc

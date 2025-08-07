@@ -28,22 +28,20 @@ The files containing atmospheric and oceanic CanSIPS indices can be accessed at 
 
 __Forecast files__ :
 
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/seasonal)
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/forecast/monthly)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly)
 
 __Hindcast files__ :
 
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/seasonal)
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/hindcast/monthly)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly)
 
 __Observations__ :
 
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/seasonal)
-* [https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly](https://dd.weather.gc.ca/ensemble/cansips/csv/indices/observation/monthly)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal)
+* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/monthly](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/monthly)
 
 ## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The forecast and hindcast files have the following nomenclature :
 

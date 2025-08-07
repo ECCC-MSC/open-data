@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-* [https://dd.meteo.gc.ca/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/ensemble/reps/10km/grib2)
+* [https://dd.meteo.gc.ca/today/ensemble/reps/10km/grib2/{HH}/{hhh}](https://dd.meteo.gc.ca/today/ensemble/reps/10km/grib2)
 
 où :
 

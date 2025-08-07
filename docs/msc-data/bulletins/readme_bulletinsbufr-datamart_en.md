@@ -16,9 +16,9 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.weather.gc.ca/bulletins/alphanumeric)
+* [https://dd.weather.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IO](https://dd.weather.gc.ca/today/bulletins/alphanumeric)
 
-* [https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.weather.gc.ca/bulletins/alphanumeric)
+* [https://dd.weather.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IU](https://dd.weather.gc.ca/today/bulletins/alphanumeric)
 
 where :
 
@@ -67,10 +67,7 @@ Much useful information on installing and running libECBUFR is available in the 
 
 ## Bulletin search script
 
-To help you in your search, please refer to our bulletin search script which is available directly on the Datamart at:
-[https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl)
-
-Complete documentation with examples of use of the script can be found in the [PDF document](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf).
+To help you in your search, please use our [MSC GeoMet-OGC-API](https://api.weather.gc.ca/collections/bulletins-realtime) geospatial web services.
 
 ## Support
 

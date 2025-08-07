@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-[https://dd.meteo.gc.ca/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gem_global)
+[https://dd.meteo.gc.ca/today/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gem_global)
 
 où :
 
@@ -72,7 +72,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l'adresse suivante :
 
-[https://dd.meteo.gc.ca/model_gdps/{RES}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_gdps)
+[https://dd.meteo.gc.ca/today/model_gdps/{RES}/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gdps)
 
 où :
 

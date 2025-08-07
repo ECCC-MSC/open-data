@@ -16,16 +16,15 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data can be accessed at the following URLs:
 
-* [https://dd.weather.gc.ca/model_giops/netcdf](https://dd.weather.gc.ca/model_giops/netcdf)
-
+* [https://dd.weather.gc.ca/today/model_giops/netcdf](https://dd.weather.gc.ca/today/model_giops/netcdf)
 
 * Files containing data on the latlon0.2x0.2 grid can be found at the following address:
 
-[https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/lat_lon/)
+[https://dd.weather.gc.ca/today/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_giops/netcdf/lat_lon/)
 
 * Files containing data on the ps5km60N grid can be found at the following address:
 
-[https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/model_giops/netcdf/polar_stereographic)
+[https://dd.weather.gc.ca/today/model_giops/netcdf/polar_stereographic/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_giops/netcdf/polar_stereographic)
 
 where:
 
@@ -34,8 +33,6 @@ where:
 * __hhh__ : Forecast hour: every 3 hours [000, 003, ..., 240] for N=2  and every 24 hours [000, 024, ..., 240] for N=3.
 
 Note that because the forecast hour 0 at 00Z files are based on the analysis rather than the forecast, a reduced set of variables is provided at this forecast hour compared to other forecast hours.
-
-NOTE: ALL HOURS ARE IN UTC.
 
 The files have the following nomenclature:
 

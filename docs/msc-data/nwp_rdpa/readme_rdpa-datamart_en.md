@@ -16,7 +16,7 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 Data on a rotated lat-lon grid can be accessed at the following URL :
 
-* [https://dd.weather.gc.ca/model_rdpa/10km/{HH}](https://dd.weather.gc.ca/model_rdpa/10km)
+* [https://dd.weather.gc.ca/today/model_rdpa/10km/{HH}](https://dd.weather.gc.ca/today/model_rdpa/10km)
 
 where :
 

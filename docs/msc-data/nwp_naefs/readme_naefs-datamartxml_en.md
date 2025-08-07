@@ -14,9 +14,7 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The NAEFS XML files are available at the following address :
 
-* [https://dd.weather.gc.ca/ensemble/naefs/xml/](https://dd.weather.gc.ca/ensemble/naefs/xml/)
-
-A history of 30 days of forecast is kept in this directory.
+* [https://dd.weather.gc.ca/today/ensemble/naefs/xml/](https://dd.weather.gc.ca/today/ensemble/naefs/xml/)
 
 ## Nomenclature of file directories 
 
@@ -24,8 +22,7 @@ The files are grouped in a directory tree that is based on the date
 and the variable contained in the XML files. The directories have the 
 following nomenclature:
 
-* [https://dd.weather.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml)
-
+* [https://dd.weather.gc.ca/today/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}](https://dd.weather.gc.ca/today/ensemble/naefs/xml)
 
 where :
 
@@ -35,14 +32,7 @@ where :
 * __TYPE__ : Data type. Currently, only the direct model output ('raw') are
 available.
 
-Example : for the 12Z forecast on May 7th 2010, the raw data for the
-surface wind speed will be in this directory :
-
-[https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/](https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/)
-
 ## Nomenclature of file names :
-
-NOTE : ALL HOURS ARE IN UTC.
 
 The file name follows this nomenclature :
 
@@ -82,10 +72,6 @@ This file contains models data for the date of May 10th 2010 at
 Ontario (ON), Canada (CA). The mean sea level pressure (MSLP) will be
 contained in this file for the first 384 hours of forecast (000-384). This
 is an XML files (xml) compressed using bzip algorithm (bz2).
-
-The complete URL would be :
-
-[https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2](http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2)
 
 ## File contents
 
@@ -153,7 +139,7 @@ variables. It contains the name of the associated directory and a
 description and the units in both French and English.
 
 The list can be found here:
-[https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml](https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml)
+[https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/elements.xml](https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/elements.xml)
 
 ## Available Locations
 
@@ -175,7 +161,7 @@ for some locations)
 
 This list can be found at this address :
 
-[https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml](https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml)
+[https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/locations.xml](https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/locations.xml)
 
 The correspondence for the 2 letter codes between the Provinces or States
 can be found in this PDF document :

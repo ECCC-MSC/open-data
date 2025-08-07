@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/north/3km/)
+* [https://dd.meteo.gc.ca/today/model_hrdps/north/3km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_hrdps/north/3km/)
 
 où :
 

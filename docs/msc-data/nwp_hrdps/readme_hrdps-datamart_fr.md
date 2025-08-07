@@ -20,7 +20,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.meteo.gc.ca/model_hrdps/continental/2.5km)
+* [https://dd.meteo.gc.ca/today/model_hrdps/continental/{res}/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_hrdps/continental/2.5km)
 
 où :
 

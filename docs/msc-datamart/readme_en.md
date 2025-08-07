@@ -10,7 +10,17 @@ The Meteorological Service of Canada (MSC) HTTPS raw data server is a source of 
 
 ## Access
 
-The MSC Datamart is located at [https://dd.weather.gc.ca/](https://dd.weather.gc.ca/).
+The MSC Datamart is located at this address:
+
+`[https://dd.weather.gc.ca/](https://dd.weather.gc.ca/)`
+
+Supplied by various data sources via [Sarracenia](https://metpx.github.io/sarracenia/), the __directory tree is dynamic with the date displayed at the root__. The data retention period is the same for all datasets and depends on the available disk space. Currently, a 30-day retention period is in effect:
+
+[http://dd.weather.gc.ca/YYYYMMDD/WXO-DD/](http://dd.weather.gc.ca/), with `YYYYMMDD` as the dynamic date.
+
+To facilitate data management, a __`/today` directory allows users to point directly to the data for the current day__. This provides access to a static URL that points to all real-time data sets:
+
+[https://dd.weather.gc.ca/today/](https://dd.weather.gc.ca/today/)
 
 ### Real-time push notifications and data retrieval
   
@@ -28,11 +38,9 @@ Since spring 2019, an __alternative HPFX server__ for accessing MSC Datamart dat
 
 This server guarantees a much more efficient access to the data (bandwidth multiplied by 10) during high demand periods of the day (around 12Z).
 
-The address of this HTTP server is as follows: [http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/](http://hpfx.collab.science.gc.ca/), with `YYYYMMDD` the dynamic date.
+The address of this HTTP server is: [http://hpfx.collab.science.gc.ca](http://hpfx.collab.science.gc.ca/), with a dynamic structure by data at the root and a directory [`/today`](https://hpfx.collab.science.gc.ca/today/) that provides access to the data for the current day.
 
-The various data sources are supplied via Sarracenia, the directory tree structure is then modified from that available on the MSC Datamart.  Access to data by date rather than by product suite makes the directory structure dynamic rather than static.
-
-A direct consequence of this date hierarchy is that the data retention period becomes identical for all data sets and is dependent on the available disk space.
+A retention period of 30 days is also in effect for all datasets.
 
 Access to data via [the AMQP protocol is of course strongly recommended](amqp_en.md).
 

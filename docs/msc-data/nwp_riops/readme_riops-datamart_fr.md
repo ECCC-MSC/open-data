@@ -22,7 +22,7 @@ Les données sont disponibles via le protocole HTTP. Il est possible d’y accé
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/model_riops/netcdf/forecast/polar_stereographic/nd/HH/hhh/](https://dd.meteo.gc.ca/model_riops/netcdf/forecast/polar_stereographic/)
+* [https://dd.meteo.gc.ca/today/model_riops/netcdf/forecast/polar_stereographic/nd/HH/hhh/](https://dd.meteo.gc.ca/today/model_riops/netcdf/forecast/polar_stereographic/)
 
 où :
 

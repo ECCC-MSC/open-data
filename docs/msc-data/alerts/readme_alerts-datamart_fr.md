@@ -16,7 +16,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les __bulletins sont disponibles__ à cette adresse :
 
-[https://dd.meteo.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.meteo.gc.ca/alerts/cap)
+[https://dd.meteo.gc.ca/today/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/](https://dd.meteo.gc.ca/today/alerts/cap)
 
 avec :
 
@@ -28,23 +28,19 @@ avec :
 
 * Les fichiers sont regroupés dans une arborescence basée sur la date et le code du bureau responsable (voir note1) de l'alerte. Font exception les alertes de tornade et d'orage violent qui sont rassemblées, selon la désignation LAND ou WATR (voir note2) plutôt que selon le bureau responsable.
 
-* Le répertoire LAND contient les fichiers CAP-XML pour tous les avertissements de tornade et d'orage violent qui sont émis sur les zone terrestres du Canada.
+* Le répertoire LAND contient les fichiers CAP-XML pour tous les avertissements de tornade, d'orage violent et de tsunami qui sont émis sur les zone terrestres du Canada.
  
 * Le répertoire WATR contient les fichiers CAP-XML pour tous les avertissements de tornade qui sont émis sur les plans d'eau du Canada.
 
 * Ce ne sont pas toutes les zones WATR au Canada qui sont configuées pour les avertissements de tornade. Aucune zone WATR au Canada n'est configurée pour les avertissements d'orage violent. 
 
-Un historique des données de un mois est conservé dans ce répertoire.
-
 Un ensemble de __fichiers en format Shapefile contenant les informations géographiques des emplacement des prévisions__, pour tous les messages en format PAC, peut être trouvé dans ce répertoire :
 
-[https://dd.meteo.gc.ca/meteocode/geodata/](https://dd.meteo.gc.ca/meteocode/geodata/)
+[https://dd.meteo.gc.ca/today/meteocode/geodata/](https://dd.meteo.gc.ca/today/meteocode/geodata/)
 
 Les ensembles de fichiers Shapefile à cet endroit sont les mêmes qui sont utilisés dans l'environnement opérationnel où les avertissements d'ECCC sont créés. Les ensembles Shapefiles ont des numéros de version afin de suivre l'évolution des emplacements utilisés dans cet environnement.
 
 ## Nomenclature des noms de fichiers 
-
-NOTE: TOUTES LES HEURES SONT EN UTC.
 
 __Les fichiers suivent la nomenclature :__
 

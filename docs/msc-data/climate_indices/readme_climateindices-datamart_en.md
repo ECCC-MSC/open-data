@@ -16,8 +16,8 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 The data can be accessed at the following URLs:
 
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/historical](https://dd.meteo.gc.ca/climate/indices/netcdf/historical)
-* [https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]](https://dd.meteo.gc.ca/climate/indices/netcdf/scenarios/)
+* [https://dd.weather.gc.ca/today/climate/indices/netcdf/historical](https://dd.weather.gc.ca/today/climate/indices/netcdf/historical)
+* [https://dd.weather.gc.ca/today/climate/indices/netcdf/scenarios/[RCP2.6,RCP4.5,RCP8.5]](https://dd.weather.gc.ca/today/climate/indices/netcdf/scenarios/)
 
 where:
 
@@ -26,8 +26,6 @@ where:
 * __absolute__: Represents the multi-modelled ensemble projections (actual value)
 
 ## File name nomenclature 
-
-NOTE : ALL HOURS ARE IN UTC.
 
 File names have the form:
 

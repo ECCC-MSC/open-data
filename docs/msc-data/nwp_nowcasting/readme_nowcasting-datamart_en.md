@@ -20,11 +20,9 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weatheroffice.gc.ca/nowcasting/matrices/](https://dd.weatheroffice.gc.ca/nowcasting/matrices/)
+* [https://dd.weather.gc.ca/today/nowcasting/matrices/](https://dd.weather.gc.ca/today/nowcasting/matrices/)
 
-## File name nomenclature 
-
-NOTE: ALL HOURS ARE IN UTC.
+## File name nomenclature
 
 The files have the following nomenclature:
 
@@ -88,6 +86,7 @@ of occurrence of this type, in this example only snow is observed and forecast,
 with a probability of 100%. Total value should not exceed 100%.
 
 The following Scribe Nowcasting precipitation type codes are possible :
+
 |(F): forecasted  |  (O): observed  |
 |-----------------|-----------------|
 | Rain Showers    |   RW  (F & O)   |
