@@ -12,11 +12,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.9
 
-* date: 
+* date: 2025-08-07
 * announcements:
     * Not announced
 * new content:
-    * NA
+    * Add O3 mixing ratio in the GDPS variable tables
 * improvements:
     * Update MSC Datamart pages according to the new dynamic structure
     * Update MSC Datamart alerts pages with the addition of tsunami for "LAND" alerts
