@@ -166,7 +166,13 @@
 <p>Le Service météorologique du Canada (SMC) met à la disposition des usagers spécialisés une multitude de données météorologiques, prévisionnelles et climatiques sur son serveur de données brutes HTTPS.</p>
 <p>Les usagers qui désirent accéder à ces données ouvertes doivent avoir une bonne connaissance de la météorologie et de l'informatique afin d'en faire bon usage.  Le mode d'accès privilégié est via des routines d'accès automatiques (scripts). </p>
 <h2 id="acces">Accès</h2>
-<p>Le Datamart du SMC se trouve à l'adresse <a href="https://dd.meteo.gc.ca/">https://dd.meteo.gc.ca/</a>.</p>
+<p>Le Datamart du SMC se trouve à l'adresse:</p>
+<p><a href="https://dd.meteo.gc.ca/">https://dd.meteo.gc.ca/</a></p>
+<p>Alimenté des divers sources de données via <a href="https://metpx.github.io/sarracenia/fr/index.html">Sarracenia</a>, l'arborescence des répertoires est dynamique avec présence de la date à la racine. La période de rétention des données est identique pour tous les jeux de données et fonction de l'espace disque disponible. Actuellement, une rétention de 30 jours est en vigueur:</p>
+<p><a href="http://dd.meteo.gc.ca/">http://dd.meteo.gc.ca/YYYYMMDD/WXO-DD/</a></p>
+<p>Avec <code>YYYYMMDD</code> , la date dynamique.</p>
+<p>Aussi, et pour faciliter la gestion des données, un répertoire <code>/today</code> permet de pointer directement vers les données du jour en temps réel. Ceci permet d'avoir accès à un URL statique qui pointe vers tous les jeux de données disponibles pour la date courante:</p>
+<p><a href="https://dd.meteo.gc.ca/today/">https://dd.meteo.gc.ca/today/</a></p>
 <h3 id="notifications-en-temps-reel-et-recuperation-des-donnees">Notifications en temps réel et récupération des données</h3>
 <p>Afin de faciliter l'extraction de données à jour sur le Datamart du SMC, le Service météorologique du Canada (SMC) a mis en place un fil de données pour annoncer la disponibilité des fichiers sur le Datamart du SMC. Ce fil de données utilise le protocole <strong>AMQP (Advanced Message Queuing Protocol)</strong>. Cela permet non seulement à l'utilisateur d'être informé des produits disponibles au fur et à mesure qu'ils sont publiés, mais aussi de les recevoir automatiquement.</p>
 <p>Le service peut filtrer des ensembles spécifiques de fichiers (alertes météo, observations, données de modèles, etc.), permettant des notifications uniquement pour les produits d'intérêt pour l'utilisateur.</p>
@@ -176,9 +182,7 @@
 <h3 id="methode-dacces-supplementaire">Méthode d'accès supplémentaire</h3>
 <p>Depuis le printemps 2019, un <strong>serveur alternatif HPFX</strong> d'accès aux données du Datamart du SMC est disponible pour contourner d'éventuels enjeux de bande passante. </p>
 <p>Ce serveur garantie un accès aux données beaucoup plus performant (bande passante multipliée par 10) pendant les périodes de la journée très en demande (autour de 12Z).</p>
-<p>L'adresse de ce serveur HTTP est la suivante : <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/</a>, avec <code>YYYYMMDD</code> la date dynamique.</p>
-<p>Alimenté des divers sources de données via Sarracenia, l'arborescence des répertoires est modifiée par rapport à celle disponible sur le Datamart du SMC, avec présence de la date ce qui rend ces répertoires dynamiques et non plus statiques.</p>
-<p>Une conséquence directe de cette hiérarchie par date, concerne la période de rétention des données qui devient identique pour tous les jeux de données et fonction de l'espace disque disponible.</p>
+<p>L'adresse de ce serveur HTTP est la suivante : <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca</a>, avec une structure dynamique par data à la racine et un répertoire <a href="https://hpfx.collab.science.gc.ca/today/"><code>/today</code></a> qui donne accès aux données du jour. Une période de rétention de 30 jours est aussi en vigueur pour tous les jeux de données.</p>
 <p>L'accès aux données via <a href="../amqp_fr/">le protocole AMQP est évidemment fortement conseillé</a>.</p>
 <p>Finalement, il est important de noter que contrairement au Datamart du SMC, il n'y a pas de redondance 24/7 du lien internet (support "/best effort/"). Dans le cas peu probable où le lien venait à briser, le Datamart du SMC deviendrait alors la source unique d'accès aux données. Ainsi, il est conseillé aux usagers désirant tester ce serveur alternatif de développer la capacité de retourner rapidement sur le serveur <a href="https://dd.meteo.gc.ca">https://dd.meteo.gc.ca</a>, en cas de problèmes.</p>
 <h2 id="utilisation-et-tutoriels">Utilisation et tutoriels</h2>

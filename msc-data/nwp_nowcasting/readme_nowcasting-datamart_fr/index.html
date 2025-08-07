@@ -167,10 +167,9 @@
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
 <p>Les données sont accessibles à adresse suivante :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/nowcasting/matrices/">https://dd.meteo.gc.ca/nowcasting/matrices/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/nowcasting/matrices/">https://dd.meteo.gc.ca/today/nowcasting/matrices/</a></li>
 </ul>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <p>SCRIBE.NWCSTG.10.24.06Z.n.Z</p>
 <p>où :</p>
@@ -725,10 +724,12 @@
 </tr>
 </tbody>
 </table>
-<p><strong>L'intensité des précipitations est donnée par :</strong>
-* (-) très faible à faible
-* ( ) (pas de signe) modérée
-* (+) Forte</p>
+<p><strong>L'intensité des précipitations est donnée par :</strong></p>
+<ul>
+<li>(-) très faible à faible</li>
+<li>( ) (pas de signe) modérée</li>
+<li>(+) Forte</li>
+</ul>
 <p>Dans certaines circonstances, par exemple lorsque la température est proche de zéro, il est possible d'avoir plus d'un type de précipitation à un moment donné, par exemple; neige mélangée avec de la pluie et occasionnellement de la pluie verglaçante. Dans cette situation, la condition dominante (neige) serait rapportée dans le type 1 (PCPN1) tandis que les précipitations associées seraient de type 2 (PCPN2) pour la pluie et de type 3 (PCPN3) pour la pluie verglaçante.</p>
 <p><strong>11</strong> :     La colonne 11, nommée "POP", représente la probabilité de précipitations de tous les types 
         ensemble. Dans la section des observations, à savoir de 02Z à 07Z la POP observées pourraient 

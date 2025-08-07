@@ -164,7 +164,7 @@
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.</p>
 <p>Les <strong>bulletins sont disponibles</strong> à cette adresse :</p>
-<p><a href="https://dd.meteo.gc.ca/alerts/cap">https://dd.meteo.gc.ca/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/alerts/cap">https://dd.meteo.gc.ca/today/alerts/cap/{YYYYMMDD}/{EEEE}/{hh}/</a></p>
 <p>avec :</p>
 <ul>
 <li>
@@ -180,7 +180,7 @@
 <p>Les fichiers sont regroupés dans une arborescence basée sur la date et le code du bureau responsable (voir note1) de l'alerte. Font exception les alertes de tornade et d'orage violent qui sont rassemblées, selon la désignation LAND ou WATR (voir note2) plutôt que selon le bureau responsable.</p>
 </li>
 <li>
-<p>Le répertoire LAND contient les fichiers CAP-XML pour tous les avertissements de tornade et d'orage violent qui sont émis sur les zone terrestres du Canada.</p>
+<p>Le répertoire LAND contient les fichiers CAP-XML pour tous les avertissements de tornade, d'orage violent et de tsunami qui sont émis sur les zone terrestres du Canada.</p>
 </li>
 <li>
 <p>Le répertoire WATR contient les fichiers CAP-XML pour tous les avertissements de tornade qui sont émis sur les plans d'eau du Canada.</p>
@@ -189,12 +189,10 @@
 <p>Ce ne sont pas toutes les zones WATR au Canada qui sont configuées pour les avertissements de tornade. Aucune zone WATR au Canada n'est configurée pour les avertissements d'orage violent. </p>
 </li>
 </ul>
-<p>Un historique des données de un mois est conservé dans ce répertoire.</p>
 <p>Un ensemble de <strong>fichiers en format Shapefile contenant les informations géographiques des emplacement des prévisions</strong>, pour tous les messages en format PAC, peut être trouvé dans ce répertoire :</p>
-<p><a href="https://dd.meteo.gc.ca/meteocode/geodata/">https://dd.meteo.gc.ca/meteocode/geodata/</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/meteocode/geodata/">https://dd.meteo.gc.ca/today/meteocode/geodata/</a></p>
 <p>Les ensembles de fichiers Shapefile à cet endroit sont les mêmes qui sont utilisés dans l'environnement opérationnel où les avertissements d'ECCC sont créés. Les ensembles Shapefiles ont des numéros de version afin de suivre l'évolution des emplacements utilisés dans cet environnement.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p><strong>Les fichiers suivent la nomenclature :</strong></p>
 <p>T_BBBBNN_C_EEEE_YYYYMMDDhh_##########.cap</p>
 <p>avec :</p>

@@ -140,7 +140,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#utilitaire-de-recherche-de-bulletins" class="nav-link">Utilitaire de recherche de bulletins</a>
+            <li class="nav-item" data-level="2"><a href="#recherche-de-bulletins" class="nav-link">Recherche de bulletins</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -171,10 +171,10 @@ Les bulletins BUFR sont disponibles via le  protocole HTTP avec un fureteur stan
 <p>Les données sont accessibles à l’adresse suivante :</p>
 <ul>
 <li>
-<p><a href="https://dd.weather.gc.ca/bulletins/alphanumeric">https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IO</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/bulletins/alphanumeric">https://dd.meteo.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IO</a></p>
 </li>
 <li>
-<p><a href="https://dd.weather.gc.ca/bulletins/alphanumeric">https://dd.weather.gc.ca/bulletins/alphanumeric/{YYYYMMDD}/IU</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/bulletins/alphanumeric">https://dd.meteo.gc.ca/today/bulletins/alphanumeric/{YYYYMMDD}/IU</a></p>
 </li>
 </ul>
 <p>où :</p>
@@ -209,10 +209,8 @@ bufr_decoder -inbufr data.bufr
 où, data.bufr est le fichier BUFR.</p>
 <p>Davantage d’information sont disponibles  quant à l’installation et à l’utilisation de libECBUFR dans la foire aux questions suivante : 
 <a href="https://github.com/ECCC-MSC/libecbufr/wiki/FAQ">https://github.com/ECCC-MSC/libecbufr/wiki/FAQ</a></p>
-<h2 id="utilitaire-de-recherche-de-bulletins">Utilitaire de recherche de bulletins</h2>
-<p>Pour faciliter la recherche de bulletins, veuillez utiliser notre utilitaire de recherche de bulletins qui se trouve sur le Datamart :
-<a href="https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl">https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl</a></p>
-<p>Des informations détaillées, avec des exemples d’utilisation de ce script se trouvent dans le <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_fr.pdf">document PDF</a>. </p>
+<h2 id="recherche-de-bulletins">Recherche de bulletins</h2>
+<p>Pour faciliter la recherche de bulletins, veuillez utiliser nos services web géospatiaux <a href="https://api.meteo.gc.ca/collections/bulletins-realtime?lang=fr">GeoMet-OGC-API du SMC</a>.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

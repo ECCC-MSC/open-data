@@ -176,15 +176,14 @@
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The NAEFS XML files are available at the following address :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/ensemble/naefs/xml/">https://dd.weather.gc.ca/ensemble/naefs/xml/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/ensemble/naefs/xml/">https://dd.weather.gc.ca/today/ensemble/naefs/xml/</a></li>
 </ul>
-<p>A history of 30 days of forecast is kept in this directory.</p>
 <h2 id="nomenclature-of-file-directories">Nomenclature of file directories</h2>
 <p>The files are grouped in a directory tree that is based on the date
 and the variable contained in the XML files. The directories have the 
 following nomenclature:</p>
 <ul>
-<li><a href="https://dd.weatheroffice.gc.ca/ensemble/naefs/xml">https://dd.weather.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}</a></li>
+<li><a href="https://dd.weather.gc.ca/today/ensemble/naefs/xml">https://dd.weather.gc.ca/today/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}</a></li>
 </ul>
 <p>where :</p>
 <ul>
@@ -194,11 +193,7 @@ following nomenclature:</p>
 <li><strong>TYPE</strong> : Data type. Currently, only the direct model output ('raw') are
 available.</li>
 </ul>
-<p>Example : for the 12Z forecast on May 7th 2010, the raw data for the
-surface wind speed will be in this directory :</p>
-<p><a href="https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/">https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw/</a></p>
 <h2 id="nomenclature-of-file-names">Nomenclature of file names :</h2>
-<p>NOTE : ALL HOURS ARE IN UTC.</p>
 <p>The file name follows this nomenclature :</p>
 <ul>
 <li>AAAAMMJJHH_GEPS-NAEFS-TYPE_LOCATION_PROVSTATE_COUNTRY_VAR_START-END.xml.bz2</li>
@@ -234,8 +229,6 @@ which the forecast is emitted.</li>
 Ontario (ON), Canada (CA). The mean sea level pressure (MSLP) will be
 contained in this file for the first 384 hours of forecast (000-384). This
 is an XML files (xml) compressed using bzip algorithm (bz2).</p>
-<p>The complete URL would be :</p>
-<p><a href="http://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2">https://dd.weatheroffice.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2</a></p>
 <h2 id="file-contents">File contents</h2>
 <p>The XML files have been compressed with the bzip2 algorithm. To decompress
 them, you can use the bunzip2 software (GNU/Linux, Mac OS X) or 7-zip
@@ -293,7 +286,7 @@ Note : Some models do not have a forecast at specific hours.</p>
 variables. It contains the name of the associated directory and a 
 description and the units in both French and English.</p>
 <p>The list can be found here:
-<a href="https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml">https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/elements.xml</a></p>
+<a href="https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/elements.xml">https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/elements.xml</a></p>
 <h2 id="available-locations">Available Locations</h2>
 <p>The XML output of the NAEFS ensemble forecasts are interpolated from grid
 points of the forecast at the latitude-longitude coordinates from 540 
@@ -310,7 +303,7 @@ locations :
 * Longitude, latitude and altitude (note that altitude is not available <br />
 for some locations)</p>
 <p>This list can be found at this address :</p>
-<p><a href="https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml">https://dd.weatheroffice.gc.ca/ensemble/doc/naefs/xml/locations.xml</a></p>
+<p><a href="https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/locations.xml">https://dd.weather.gc.ca/today/ensemble/doc/naefs/xml/locations.xml</a></p>
 <p>The correspondence for the 2 letter codes between the Provinces or States
 can be found in this PDF document :</p>
 <p><a href="http://www.state.ia.us/tax/forms/84055.pdf">http://www.state.ia.us/tax/forms/84055.pdf</a></p>

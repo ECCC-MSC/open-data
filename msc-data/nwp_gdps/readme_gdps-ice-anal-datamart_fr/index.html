@@ -170,7 +170,7 @@ Les fichiers de données sont au format NetCDF (modèle classique NetCDF-4) et s
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.</p>
 <p>Les données sont accessibles à adresse suivante :</p>
-<p><a href="https://dd.meteo.gc.ca/model_gem_global/10km">https://dd.meteo.gc.ca/model_gem_global/{RES}/{HH}</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/model_gem_global/10km">https://dd.meteo.gc.ca/today/model_gem_global/{RES}/{HH}</a></p>
 <p>où :</p>
 <ul>
 <li><strong>RES</strong> : Résolution horizontale [10km]</li>
@@ -201,7 +201,6 @@ Les fichiers de données sont au format NetCDF (modèle classique NetCDF-4) et s
 </tbody>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <pre><code>{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.nc
 </code></pre>

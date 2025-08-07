@@ -91,6 +91,7 @@ Maximum temperature,TMAX,2 m Above Ground Level,K
 Minimum temperature,TMIN,2 m Above Ground Level,K
 Net longwave radiation flux (surface),NLWRS,Surface,W/m<sup>2</sup>
 Net shortwave radiation flux (surface),NSWRS,Surface,W/m<sup>2</sup>
+Ozone mixing ratio,O3MR,Surface,kg/kg
 Planetary boundary layer height,HPBL,Surface,m
 Precipitation rate,PRATE,Surface,kg/(m<sup>2</sup>*s)
 Pressure reduced to Mean Sea Level,PRMSL,Mean Sea Level,Pa

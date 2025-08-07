@@ -161,7 +161,7 @@
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a XML file.</p>
 <p>The terrestrial data is available at the following address : </p>
-<p><a href="https://dd.weather.gc.ca/meteocode">https://dd.weather.gc.ca/meteocode/{REGION}/cmml</a></p>
+<p><a href="https://dd.weather.gc.ca/today/meteocode">https://dd.weather.gc.ca/today/meteocode/{REGION}/cmml</a></p>
 <p>where 'REGION' is one of the following value :</p>
 <ul>
 <li>atl</li>
@@ -170,13 +170,11 @@
 <li>pyr</li>
 <li>que</li>
 </ul>
-<p>A data history of one month is kept in these directories.</p>
 <p>The <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_en-v3.04.pdf">CMML format specifications</a> are available.</p>
 <p>Public forecast regions are precisely defined and can be found in a geo-referenced file in Shapefile format.</p>
 <p>These files can be found here :</p>
-<p><a href="https://dd.weather.gc.ca/meteocode/geodata/">https://dd.weather.gc.ca/meteocode/geodata/</a></p>
+<p><a href="https://dd.weather.gc.ca/today/meteocode/geodata/">https://dd.weather.gc.ca/today/meteocode/geodata/</a></p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
 <p>The forecast emitted for each provinces and territories is located in a specific directory :
 * <strong>atl</strong> : New Brunswick, Nova Scotia, Prince Edward Island, Newfoundland and Labrador
 * <strong>ont</strong> : Ontario
@@ -378,8 +376,10 @@
 </ul>
 <p><strong>Note</strong> : The year of the forecast is not included in the file name.</p>
 <p>File name example :</p>
-<p><a href="https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml">https://dd.weather.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml</a></p>
-<p>This file contains the forecast emitted by the Vancouver office (directory 'pyr' and 'VR' in the file name) in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').</p>
+<ul>
+<li>TRANSMIT.FPVR11.10.30.2300Z.xml</li>
+</ul>
+<p>This file contains the forecast emitted by the Vancouver office ('VR') in English language for day 1 and 2 ('11') starting at 2300 UTC on October 30th ('10.30.2300Z') in CMML format ('.xml').</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>

@@ -176,15 +176,14 @@
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les fichiers XML de SPENA se trouvent à l'adresse suivante :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml">https://dd.meteo.gc.ca/ensemble/naefs/xml</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/ensemble/naefs/xml">https://dd.meteo.gc.ca/today/ensemble/naefs/xml</a></li>
 </ul>
-<p>Un historique de 30 jours de prévisions est conservé dans ce répertoire.</p>
 <h2 id="nomenclature-des-repertoires-des-fichiers">Nomenclature des répertoires des fichiers</h2>
 <p>La structure des répertoires est basée sur la date d'intégration et la
 variable contenu dans les fichiers XML. Ils suivent la nomenclature <br />
 suivante:</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml">https://dd.meteo.gc.ca/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/ensemble/naefs/xml">https://dd.meteo.gc.ca/today/ensemble/naefs/xml/{AAAAMMJJ}/{ZZ}/{VARIABLE}/{TYPE}</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -195,11 +194,7 @@ des variables' plus bas pour la liste complète des variables.</li>
 <li><strong>TYPE</strong> : Type de données. Pour l'instant, seules les sorties directes de
 modèles sont disponibles ('raw').</li>
 </ul>
-<p>Exemple : pour la prévision à 12Z du 7 mai 2010, les données bruts (raw)
-pour la vitesse du vent à la surface de seront dans le répertoire:</p>
-<p><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw">https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/12/WIND-SFC/raw</a></p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE : TOUTES LES HEURES SONT EN UTC.</p>
 <p>La nomenclature des fichiers est la suivante :</p>
 <p>AAAAMMJJHH_GEPS-NAEFS-TYPE_EMPLACEMENT_PROVETAT_PAYS_VAR_DEB-FIN.xml.bz2</p>
 <p>où :</p>
@@ -240,8 +235,6 @@ lequel des prévisions sont émises.</li>
 la pression au niveau de la mer (MSLP) pour les 384 premières heures de <br />
 prévisions (000-384). C'est un fichier XML (xml) compressé à l'aide de  <br />
 l'algorithme bzip2 (bz2).</p>
-<p>Exemple d'URL pour un fichier sur internet :</p>
-<p><a href="https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2">https://dd.meteo.gc.ca/ensemble/naefs/xml/20100507/00/MSLP/raw/2010050700_GEPS-NAEFS-RAW_LONDON_ON_CA_MSLP_000-384.xml.bz2</a></p>
 <h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
 <p>Les fichiers XML ont été compressés avec l'algorithme bzip2. Pour 
 décompresser ces fichiers, vous pouvez utiliser le logiciel bunzip2 
@@ -301,7 +294,7 @@ Note: Certains modèles n'ont pas de prévisions pour certaines heures.</p>
 <p>Vous trouverez une liste en format XML des variables qui contient le nom<br />
 du répertoire associé, les descriptions et les unités, en français et 
 anglais à cette adresse :</p>
-<p><a href="https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml">https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/elements.xml</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/elements.xml">https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/elements.xml</a></p>
 <h2 id="emplacements-disponibles">Emplacements disponibles</h2>
 <p>Les sorties XML des prévisions d'ensemble SPENA sont des interpolations
 de points de grille des prévisions aux coordonnées latitude-longitude
@@ -318,7 +311,7 @@ de 540 emplacements :
 * La longitude, la latitude et l'altitude (notez que l'altitude est 
 manquante pour quelques emplacements)</p>
 <p>Cette liste se trouve dans le fichier suivant :</p>
-<p><a href="https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml">https://dd.meteo.gc.ca/ensemble/doc/naefs/xml/locations.xml</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/locations.xml">https://dd.meteo.gc.ca/today/ensemble/doc/naefs/xml/locations.xml</a></p>
 <p>La correspondance pour les codes de 2 lettres pour les provinces ou les
 États peut-être trouvée dans ce document PDF :</p>
 <p><a href="http://www.state.ia.us/tax/forms/84055.pdf">http://www.state.ia.us/tax/forms/84055.pdf</a></p>

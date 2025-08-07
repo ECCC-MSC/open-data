@@ -167,10 +167,9 @@
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The data can be accessed at the following URLs :</p>
 <ul>
-<li><a href="https://dd.weatheroffice.gc.ca/nowcasting/matrices/">https://dd.weatheroffice.gc.ca/nowcasting/matrices/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/nowcasting/matrices/">https://dd.weather.gc.ca/today/nowcasting/matrices/</a></li>
 </ul>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
 <p>The files have the following nomenclature:</p>
 <p>SCRIBE.NWCSTG.10.24.06Z.n.Z</p>
 <p>where :</p>
@@ -665,21 +664,65 @@ probability of occurrence, which should not be confused with the total (global) 
 of precipitation or POP in column 11. The precipitation type probability give the probability 
 of occurrence of this type, in this example only snow is observed and forecast, 
 with a probability of 100%. Total value should not exceed 100%.</p>
-<p>The following Scribe Nowcasting precipitation type codes are possible :
-|(F): forecasted  |  (O): observed  |
-|-----------------|-----------------|
-| Rain Showers    |   RW  (F &amp; O)   |
-| Rain            |  R   (F &amp; O)    | 
-| Snow Showers    |   SW  (F &amp; O)   |
-| Snow            |   S   (F &amp; O)   |
-| Drizzle         |   L   (F &amp; O)   |
-| Freezing Rain   |   ZR  (F &amp; O)   |
-| Freezing Drizzle|   ZL  (F &amp; O)   |
-| Ice Pellet Shower|  IPW (F &amp; O)   |
-| Ice Pellet      |   IP  (F &amp; O)   |
-| Thunder         |   T   (F &amp; O)   |
-| Hail            |   A   (F &amp; O)   |
-| Not Available   |   NA  (F &amp; O)   |     </p>
+<p>The following Scribe Nowcasting precipitation type codes are possible :</p>
+<table>
+<thead>
+<tr>
+<th>(F): forecasted</th>
+<th>(O): observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rain Showers</td>
+<td>RW  (F &amp; O)</td>
+</tr>
+<tr>
+<td>Rain</td>
+<td>R   (F &amp; O)</td>
+</tr>
+<tr>
+<td>Snow Showers</td>
+<td>SW  (F &amp; O)</td>
+</tr>
+<tr>
+<td>Snow</td>
+<td>S   (F &amp; O)</td>
+</tr>
+<tr>
+<td>Drizzle</td>
+<td>L   (F &amp; O)</td>
+</tr>
+<tr>
+<td>Freezing Rain</td>
+<td>ZR  (F &amp; O)</td>
+</tr>
+<tr>
+<td>Freezing Drizzle</td>
+<td>ZL  (F &amp; O)</td>
+</tr>
+<tr>
+<td>Ice Pellet Shower</td>
+<td>IPW (F &amp; O)</td>
+</tr>
+<tr>
+<td>Ice Pellet</td>
+<td>IP  (F &amp; O)</td>
+</tr>
+<tr>
+<td>Thunder</td>
+<td>T   (F &amp; O)</td>
+</tr>
+<tr>
+<td>Hail</td>
+<td>A   (F &amp; O)</td>
+</tr>
+<tr>
+<td>Not Available</td>
+<td>NA  (F &amp; O)</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Intensity of precipitation given by :</strong>
 * (-) very light to light
 * ( ) (no sign) moderate

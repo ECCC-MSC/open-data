@@ -160,7 +160,7 @@
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.</p>
 <p>Les fichiers pour ces données couvrant le domaine terrestre se trouvent à l'adresse suivante :  </p>
-<p><a href="https://dd.meteo.gc.ca/meteocode">https://dd.meteo.gc.ca/meteocode/{REGION}/cmml/</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/meteocode">https://dd.meteo.gc.ca/today/meteocode/{REGION}/cmml/</a></p>
 <p>où 'REGION' peut prendre une des valeurs suivantes :</p>
 <ul>
 <li>atl</li>
@@ -169,13 +169,11 @@
 <li>pyr</li>
 <li>que  </li>
 </ul>
-<p>Un historique des données de un mois est conservé dans ces répertoires.</p>
 <p>Les <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/meteocode/cmml_specification_fr-v3.04.pdf">spécifications du format CMML</a> sont disponibles.</p>
 <p>Les régions de prévisions publiques sont définies précisément et peuvent être trouvées dans un fichier géoréférencé en format Shapefile.</p>
 <p>Ces fichiers se trouvent ici :</p>
-<p><a href="https://dd.meteo.gc.ca/meteocode/geodata/">https://dd.meteo.gc.ca/meteocode/geodata/</a></p>
+<p><a href="https://dd.meteo.gc.ca/today/meteocode/geodata/">https://dd.meteo.gc.ca/today/meteocode/geodata/</a></p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les prévisions émises pour chaque province se trouvent dans un répertoire spécifique :
 * <strong>atl</strong> : Nouveau-Brunswick, Nouvelle-Écosse, Île-du-Prince-Édouard, Terre-Neuve-et-Labrador
 * <strong>ont</strong> : Ontario
@@ -365,8 +363,10 @@
 </ul>
 <p><strong>Note</strong> : L'année de la prévision n'est pas dans le nom de fichier.</p>
 <p>Exemple de nom de fichier :</p>
-<p><a href="https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml">https://dd.meteo.gc.ca/meteocode/pyr/cmml/TRANSMIT.FPVR11.10.30.2300Z.xml</a></p>
-<p>Ce fichier contient les prévisions émise par le bureau de Vancouver (répertoire 'pyr' et 'VR' dans le nom de fichier) en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').</p>
+<ul>
+<li>TRANSMIT.FPVR11.10.30.2300Z.xml</li>
+</ul>
+<p>Ce fichier contient les prévisions émise par le bureau de Vancouver ('VR') en langue anglaise pour les jours de prévisions 1 et 2 ('11') qui débute le 30 octobre à 2300 UTC ('10.30.2300Z') en format CMML ('.xml').</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

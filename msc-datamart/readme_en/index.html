@@ -175,7 +175,13 @@
 <h1 id="msc-datamart">MSC Datamart</h1>
 <p>The Meteorological Service of Canada (MSC) HTTPS raw data server is a source of raw weather, water, climate and environmental data. This service is aimed at specialized users with good meteorological and IT knowledge, and is mainly meant to be accessed in an automatic manner via the Internet.</p>
 <h2 id="access">Access</h2>
-<p>The MSC Datamart is located at <a href="https://dd.weather.gc.ca/">https://dd.weather.gc.ca/</a>.</p>
+<p>The MSC Datamart is located at this address:</p>
+<p><a href="https://dd.weather.gc.ca/">https://dd.weather.gc.ca/</a></p>
+<p>Supplied by various data sources via <a href="https://metpx.github.io/sarracenia/">Sarracenia</a>, the <strong>directory tree is dynamic with the date displayed at the root</strong>. The data retention period is the same for all datasets and depends on the available disk space. Currently, a 30-day retention period is in effect:</p>
+<p><a href="http://dd.weather.gc.ca/">http://dd.weather.gc.ca/YYYYMMDD/WXO-DD/</a></p>
+<p>With <code>YYYYMMDD</code> as the dynamic date.</p>
+<p>To facilitate data management, a <strong><code>/today</code> directory allows users to point directly to the data for the current day</strong>. This provides access to a static URL that points to all real-time data sets:</p>
+<p><a href="https://dd.weather.gc.ca/today/">https://dd.weather.gc.ca/today/</a></p>
 <h3 id="real-time-push-notifications-and-data-retrieval">Real-time push notifications and data retrieval</h3>
 <p>To facilitate the retrieval of timely data on the MSC Datamart, the Meteorological Service of Canada (MSC) has set up a data wire for announcing file availability on the MSC Datamart. This data wire uses the <strong>'Advanced Message Queuing Protocol' (AMQP)</strong> protocol. Not only does this enable the user to be notified of available products as they're published, but also to receive them automatically.</p>
 <p>The service can filter specific sets of files (weather warnings, observations, model data, etc.), enabling notifications only for products of interest to the user.
@@ -185,9 +191,8 @@ The documentation for this service is found on the <a href="../amqp_en/">MSC Dat
 <h3 id="additional-access-method">Additional access method</h3>
 <p>Since spring 2019, an <strong>alternative HPFX server</strong> for accessing MSC Datamart data has been available to avoid potential bandwidth issues.</p>
 <p>This server guarantees a much more efficient access to the data (bandwidth multiplied by 10) during high demand periods of the day (around 12Z).</p>
-<p>The address of this HTTP server is as follows: <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca/YYYYMMDD/WXO-DD/</a>, with <code>YYYYMMDD</code> the dynamic date.</p>
-<p>The various data sources are supplied via Sarracenia, the directory tree structure is then modified from that available on the MSC Datamart.  Access to data by date rather than by product suite makes the directory structure dynamic rather than static.</p>
-<p>A direct consequence of this date hierarchy is that the data retention period becomes identical for all data sets and is dependent on the available disk space.</p>
+<p>The address of this HTTP server is: <a href="http://hpfx.collab.science.gc.ca/">http://hpfx.collab.science.gc.ca</a>, with a dynamic structure by data at the root and a directory <a href="https://hpfx.collab.science.gc.ca/today/"><code>/today</code></a> that provides access to the data for the current day.</p>
+<p>A retention period of 30 days is also in effect for all datasets.</p>
 <p>Access to data via <a href="../amqp_en/">the AMQP protocol is of course strongly recommended</a>.</p>
 <p>Finally, it is important to note that unlike the MSC Datamart, there is no 24/7 redundancy of the Internet link ( "best effort" support). In the unlikely event_ that the link breaks, the MSC Datamart would then become the unique source of access to the data. Thus, it is advisable for users wishing to test this alternative server to develop the ability to quickly return to the <a href="https://dd.meteo.gc.ca">https://dd.meteo.gc.ca</a> server in case of problems.</p>
 <h2 id="usage-and-tutorials">Usage and tutorials</h2>

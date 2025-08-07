@@ -166,22 +166,20 @@
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a CSV file.</p>
 <p>The files are available at the following address :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/meteocode/mtm/csv/">https://dd.weather.gc.ca/meteocode/mtm/csv/</a></li>
-<li><a href="https://dd.weather.gc.ca/meteocode/ont/csv/">https://dd.weather.gc.ca/meteocode/mtm/csv/</a></li>
-<li><a href="https://dd.weather.gc.ca/meteocode/pnr/csv/">https://dd.weather.gc.ca/meteocode/pnr/csv/</a></li>
-<li><a href="https://dd.weather.gc.ca/meteocode/pyr/csv/">https://dd.weather.gc.ca/meteocode/pyr/csv/</a></li>
-<li><a href="https://dd.weather.gc.ca/meteocode/que/csv/">https://dd.weather.gc.ca/meteocode/que/csv/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/meteocode/mtm/csv/">https://dd.weather.gc.ca/today/meteocode/mtm/csv/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/meteocode/ont/csv/">https://dd.weather.gc.ca/today/meteocode/mtm/csv/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/meteocode/pnr/csv/">https://dd.weather.gc.ca/today/meteocode/pnr/csv/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/meteocode/pyr/csv/">https://dd.weather.gc.ca/today/meteocode/pyr/csv/</a></li>
+<li><a href="https://dd.weather.gc.ca/today/meteocode/que/csv/">https://dd.weather.gc.ca/today/meteocode/que/csv/</a></li>
 </ul>
-<p>An history of 24 hours is kept in these directories.</p>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>NOTE: ALL HOURS ARE IN UTC.</p>
 <p>The filenames of the meteocode CSV files have the following nomenclature :</p>
 <p>YYYY-MM-DDTHH-MM-SSZ_FPAANN_rRRRR_BB.csv</p>
 <p>where :</p>
 <ul>
 <li><strong>YYYY-MM-DDTHH-MM-SSZ</strong> : Time of emission for the forecast. Date is in ISO 8601 format. </li>
-<li><strong>P</strong> : Constant string meaning "Forecast Public".</li>
-<li><strong>ANN</strong> : See the section 'Filename' in the CMML README at <a href="https://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt">https://dd.weather.gc.ca/meteocode/doc/cmml/README_CMML.txt</a></li>
+<li><strong>FP</strong> : Constant string meaning "Forecast Public".</li>
+<li><strong>ANN</strong> : See the section 'File name nomenclature' in the <a href="../readme_meteocode-datamartxml_en/">CMML documentation</a></li>
 <li><strong>r</strong> : Constant string indicating the beginning of the region code.</li>
 <li><strong>RRRR</strong> : Alphanumerical code indicating the region of the public forecast. Can be of an arbitrary length (ex: 3pe, 10zf, 71.14). The complete list of forecast region and their associated code can be found at the end of this file in the section "Region's code and name".</li>
 <li><strong>BB</strong> : String indicating the weather elements. Can be one of the following values: TA (Air Temperature), TD (Dew Point), PA (Precipitation accumulation), POP (Probability Of Precipitation), WS (Wind Speed and Direction), WG (Wind Gust), CC (Cloud Cover).</li>

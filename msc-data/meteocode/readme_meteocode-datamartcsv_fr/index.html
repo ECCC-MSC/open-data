@@ -166,15 +166,13 @@
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier CSV.</p>
 <p>Les données pour les différentes régions du pays sont disponibles aux  adresses suivantes :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/meteocode/mtm/csv/">https://dd.meteo.gc.ca/meteocode/mtm/csv/</a></li>
-<li><a href="https://dd.meteo.gc.ca/meteocode/ont/csv/">https://dd.meteo.gc.ca/meteocode/ont/csv/</a></li>
-<li><a href="https://dd.meteo.gc.ca/meteocode/pnr/csv/">https://dd.meteo.gc.ca/meteocode/pnr/csv/</a></li>
-<li><a href="https://dd.meteo.gc.ca/meteocode/pyr/csv/">https://dd.meteo.gc.ca/meteocode/pyr/csv/</a></li>
-<li><a href="https://dd.meteo.gc.ca/meteocode/que/csv/">https://dd.meteo.gc.ca/meteocode/que/csv/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/meteocode/mtm/csv/">https://dd.meteo.gc.ca/today/meteocode/mtm/csv/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/meteocode/ont/csv/">https://dd.meteo.gc.ca/today/meteocode/ont/csv/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/meteocode/pnr/csv/">https://dd.meteo.gc.ca/today/meteocode/pnr/csv/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/meteocode/pyr/csv/">https://dd.meteo.gc.ca/today/meteocode/pyr/csv/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/meteocode/que/csv/">https://dd.meteo.gc.ca/today/meteocode/que/csv/</a></li>
 </ul>
-<p>Un historique des données de 24 heures est conservé dans ces répertoires.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>NOTE: TOUTES LES HEURES SONT EN UTC.</p>
 <p>Les noms de fichiers ont la forme suivante :</p>
 <p>YYYY-MM-DDTHH-MM-SSZ_FPAANN_rRRRR_BB.csv</p>
 <p>où :</p>
@@ -182,7 +180,7 @@
 <li><strong>YYYY-MM-DDTHH-MM-SSZ</strong> : Date d'émission de la prévision. En format ISO 8601.</li>
 <li><strong>FP</strong> : Chaîne de caractères constante, signifiant prévision publique
 (en anglais: Forecast Public).</li>
-<li><strong>AANN</strong> : Voir la section 'Nom de fichier' dans la <a href="./">documentation des fichiers CMML</a>.</li>
+<li><strong>AANN</strong> : Voir la section 'Nomenclature des noms de fichiers' dans la <a href="../readme_meteocode-datamartxml_fr/">documentation des fichiers CMML</a>.</li>
 <li><strong>r</strong> : Caractère constant indiquant le début du code de région.</li>
 <li><strong>RRRR</strong> : Code alphanumérique indiquant la région de prévision publique. Peut être d'une longueur arbitraire (ex: 3pe, 10zf, 71.14). </li>
 <li><strong>BB</strong> : Chaîne de caractères indiquant l'élément du temps. Peut prendre
