@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.10
+
+* date: 2025-08-14
+* announcements:
+    * Not announced
+* new content:
+    * Update RDPS, GDPS, HRDPS technical documentation sections and changelogs with PROGNOS tech spec links
+* improvements:
+    * NA
+* bug fixes:
+    * NA
+
 # 2.9.9
 
 * date: 2025-08-07
