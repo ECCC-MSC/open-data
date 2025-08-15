@@ -18,7 +18,7 @@ PROGNOS is a modernized version of UMOS, the current statistical post-processing
 
 A copy of the official note announcing this implementation [is available via this link](https://dd.meteo.gc.ca/doc/genots/2025/07/22/NOCN03_CWAO_221845___14590).
 
-The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf).
+The technical specifications document for PROGNOS v1.0.0 is available [via this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_PROGNOS_1.0.0_e.pdf).
 
 ## Thursday June 26th, 2025
 
