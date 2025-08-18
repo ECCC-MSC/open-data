@@ -12,15 +12,16 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.10
 
-* date: 2025-08-14
+* date: 2025-08-18
 * announcements:
     * Not announced
 * new content:
     * Update RDPS, GDPS, HRDPS technical documentation sections and changelogs with PROGNOS tech spec links
+    * New polygon package v6.13.0
 * improvements:
-    * NA
+    * Update AMQP documentation (Sarraciena version3)
 * bug fixes:
-    * NA
+    * Fix link to weather statistic maps in the observation page
 
 # 2.9.9
 
