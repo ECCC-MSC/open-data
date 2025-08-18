@@ -54,16 +54,16 @@ Le guide d’installation peut être trouvé à cette adresse : [https://metpx.g
 
 Quant au guide d’utilisation, il est disponible ici : [https://metpx.github.io/sarracenia/How2Guides/subscriber.html](https://metpx.github.io/sarracenia/How2Guides/subscriber.html)
 
-Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe)
+Plusieurs exemples de fichiers de configuration sont également mis à la disposition des usagers : [https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe).
 
 __NOTES__:
 
-__Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration de sr_subscribe:
+__Pour faciliter le support__, il est suggéré aux usagers de s'identifier afin de retracer plus facilement les queues en cas de problèmes. Il est donc très fortement recommandé d'ajouter l'une des lignes suivantes dans la configuration Sarracenia:
 
-* queue_name q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}  (option dynamique)
-* q_anonymous.sr_subscribe./nom_config/./nom_compagnie/ (option statique)
+* `queueName q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}`  (option dynamique)
+* `queueName q_anonymous.subscribe./nom_config/./nom_compagnie/` (option statique)
 
-Exemple : q_anonymous.sr_subscribe.citypage.compagnie
+Exemple : `q_anonymous.sr_subscribe.citypage.compagnie`
 
 Aussi, voici une liste de recommandations pour l'usager "anonymous" qui souhaite récupérer un sous-ensemble significatif de données sans crainte de perte d'information:
 
@@ -84,13 +84,40 @@ Il s’agit d’un fichier EXE qui peut être utilisé sans avoir à [installer]
 Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une ville et certains champs GRIB du SRPD :
 
 * Les commandes disponibles sont :
-    * alerts : sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
-    * citypage_weather : sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
-    * rdps_grib : sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
-    * bulletins : sr_subscribe [amqp_aacn01.conf](./amqp_aacn01.conf) start/stop/status
 
-* Les logs se retrouvent sous : ~/.cache/sarra/log
-* Pour faire du ménage, utiliser : sr_subscribe configname.conf cleanup
+    * [alerts](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/ddc_cap-xml.conf):
+    
+        * `sr3 add subscribe/ddc_cap-xml.conf`
+        * `sr3 start subscribe/ddc_cap-xml.conf`
+        * `sr3 stop subscribe/ddc_cap-xml.conf`
+        * `sr3 cleanup subscribe/ddc_cap-xml.conf`
+	
+    * [citypage_weather](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    
+        * `sr3 add subscribe/dd_citypage.conf`
+        * `sr3 start subscribe/dd_citypage.conf`
+        * `sr3 stop subscribe/dd_citypage.conf`
+        * `sr3 cleanup subscribe/dd_citypage.conf`
+	
+    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    
+        * `sr3 add subscribe/dd_rdps.conf`
+        * `sr3 start subscribe/dd_rdps.conf` 
+        * `sr3 stop subscribe/dd_rdps.conf`
+        * `sr3 cleanup subscribe/dd_rdps.conf`
+	
+    * [bulletins](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_aacn_bulletins.conf):
+
+        * `sr3 add subscribe/dd_aacn_bulletins.conf`
+        * `sr3 start subscribe/dd_aacn_bulletins.conf`
+        * `sr3 stop subscribe/dd_aacn_bulletins.conf`
+        * `sr3 cleanup subscribe/dd_aacn_bulletins.conf`
+
+* Ls fichiers de configuration sont placés ici :  `~/.config/sr3/subscribe`
+* Les logs se retrouvent ici :  `~/.cache/sr3/log`
+* Pour faire du ménage, la commande est : `sr3 cleanup subscribe/config_name.conf` 
+
+Note: La commande `sr3 add` place automatiquement l'exemple de fichier de configuration dans le répertoire `~/.config/sr3/subscribe` de l'usager.
 
 ## Liens externes
 
@@ -99,7 +126,6 @@ Protocol AMQP sur Wikipédia :
 
 Librairie python pour AMQP :
 [https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
-
 
 ## Pour nous joindre
 

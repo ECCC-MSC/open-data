@@ -58,16 +58,16 @@ Regarding the user guide, please consult :
 [https://metpx.github.io/sarracenia/How2Guides/subscriber.html](https://metpx.github.io/sarracenia/How2Guides/subscriber.html)
 
 Several examples of configuration files are also available to users, see:
-[https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe)
+[https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe](https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe)
 
 __NOTE__:
 
-To __facilitate support__, our analysts suggest that users identify themselves, in order to more easily track down queues in case of problems. It is therefore highly recommended to add one of the following lines in the sr_subscribe configuration:
+To __facilitate support__, our analysts suggest that users identify themselves, in order to more easily track down queues in case of problems. It is therefore highly recommended to add one of the following lines in the Sarracenia configuration:
 
-* queue_name q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME} (dynamic option)
-* q_anonymous.sr_subscribe.config_name.company_name (static option)
+* `queueName q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}` (dynamic option)
+* `queueName q_anonymous.subscribe.config_name.company_name` (static option)
 
-Example: q_anonymous.sr_subscribe.citypage.companyX
+Example: `q_anonymous.subscribe.citypage.companyX`
 
 Also, here is a list of recommendations for the "anonymous" user who wishes to retrieve a significant subset of data without fear of losing information:
 
@@ -87,14 +87,43 @@ This is an EXE file that can be used without having to [install](https://github.
 
 Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters:
 
-* The available commands are:
-    * alerts: sr_subscribe [amqp_cap.xml.conf](./amqp_cap-xml.conf) start/stop/status
-    * citypage_weather: sr_subscribe [amqp_citypage.conf](./amqp_citypage.conf) start/stop/status
-    * rdps_grib: sr_subscribe [amqp_rdps-grib.conf](./amqp_rdps-grib.conf) start/stop/status
-    * bulletins : sr_subscribe [amqp_aacn01.conf](./amqp_aacn01.conf) start/stop/status
+Here are some specific examples to receive alerts, citypage_weather data and RDPS GRIB parameters:
 
-* The logs are available under ~/.cache/sarra/log
-* To make a cleanup, use: sr_subscribe configname.conf cleanup
+* The available commands are:
+
+    * [alerts](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/ddc_cap-xml.conf):
+    
+        * `sr3 add subscribe/ddc_cap-xml.conf`
+        * `sr3 start subscribe/ddc_cap-xml.conf`
+        * `sr3 stop subscribe/ddc_cap-xml.conf`
+        * `sr3 cleanup subscribe/ddc_cap-xml.conf`
+	
+    * [citypage_weather](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    
+        * `sr3 add subscribe/dd_citypage.conf`
+        * `sr3 start subscribe/dd_citypage.conf`
+        * `sr3 stop subscribe/dd_citypage.conf`
+        * `sr3 cleanup subscribe/dd_citypage.conf`
+	
+    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    
+        * `sr3 add subscribe/dd_rdps.conf`
+        * `sr3 start subscribe/dd_rdps.conf` 
+        * `sr3 stop subscribe/dd_rdps.conf`
+        * `sr3 cleanup subscribe/dd_rdps.conf`
+	
+    * [bulletins](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_aacn_bulletins.conf):
+
+        * `sr3 add subscribe/dd_aacn_bulletins.conf`
+        * `sr3 start subscribe/dd_aacn_bulletins.conf`
+        * `sr3 stop subscribe/dd_aacn_bulletins.conf`
+        * `sr3 cleanup subscribe/dd_aacn_bulletins.conf`
+
+* The subscriber config files are placed in `~/.config/sr3/subscribe`
+* The logs are available under `~/.cache/sr3/log`
+* To make a cleanup, use: `sr3 cleanup subscribe/config_name.conf`
+
+Note: The `sr3 add` command automatically places the example config file into the user’s `~/.config/sr3/subscribe` directory.
 
 ## External links
 
@@ -103,7 +132,6 @@ Here are some specific examples to receive alerts, citypage_weather data for one
 
 * AMQP python library: 
 [https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
-
 
 ## Contact Us
 

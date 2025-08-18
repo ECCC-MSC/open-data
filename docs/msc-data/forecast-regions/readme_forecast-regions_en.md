@@ -20,7 +20,7 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 * [Data available via the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca)
     * [Public Standard Forecast Zones](https://api.weather.gc.ca/collections/public-standard-forecast-zones?lang=en)
     * [Marine Standard Forecast Zones](https://api.weather.gc.ca/collections/marine-standard-forecast-zones?lang=en)
-* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/today/meteocode/geodata/version_6.12.0/)
+* [Shapefile Data available on the MSC Datamart](https://dd.weather.gc.ca/today/meteocode/geodata/version_6.13.0/)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
@@ -38,5 +38,5 @@ Not available.
 
 ## Technical documentation
 
-* Current version of the [MSC Geography package](https://dd.weather.gc.ca/today/meteocode/geodata/version_6.12.0/Documentation/).
+* Current version of the [MSC Geography package](https://dd.weather.gc.ca/today/meteocode/geodata/version_6.13.0/Documentation/).
 * Last 3 versions are available [here](https://dd.weather.gc.ca/today/meteocode/geodata/).

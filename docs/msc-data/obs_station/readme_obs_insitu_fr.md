@@ -34,7 +34,7 @@ Les [métadonnées des sommaires d'observations pour les provinces et territoire
 
 ## Produits
 
-* [Cartes des statistiques météo en temps réel](https://collaboration.cmc.ec.gc.ca/cmc/wtoftpa/www/)
+* [Cartes des statistiques météo en temps réel](https://hpfx.collab.science.gc.ca/~mab003/)
 
 ## Documentation technique
 
