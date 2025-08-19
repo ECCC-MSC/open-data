@@ -195,14 +195,14 @@
 <p>Regarding the user guide, please consult : 
 <a href="https://metpx.github.io/sarracenia/How2Guides/subscriber.html">https://metpx.github.io/sarracenia/How2Guides/subscriber.html</a></p>
 <p>Several examples of configuration files are also available to users, see:
-<a href="https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/main/sarracenia/examples/subscribe</a></p>
+<a href="https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe">https://github.com/MetPX/sarracenia/tree/stable/sarracenia/examples/subscribe</a></p>
 <p><strong>NOTE</strong>:</p>
-<p>To <strong>facilitate support</strong>, our analysts suggest that users identify themselves, in order to more easily track down queues in case of problems. It is therefore highly recommended to add one of the following lines in the sr_subscribe configuration:</p>
+<p>To <strong>facilitate support</strong>, our analysts suggest that users identify themselves, in order to more easily track down queues in case of problems. It is therefore highly recommended to add one of the following lines in the Sarracenia configuration:</p>
 <ul>
-<li>queue_name q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME} (dynamic option)</li>
-<li>q_anonymous.sr_subscribe.config_name.company_name (static option)</li>
+<li><code>queueName q_${BROKER_USER}.${PROGRAM}.${CONFIG}.${HOSTNAME}</code> (dynamic option)</li>
+<li><code>queueName q_anonymous.subscribe.config_name.company_name</code> (static option)</li>
 </ul>
-<p>Example: q_anonymous.sr_subscribe.citypage.companyX</p>
+<p>Example: <code>q_anonymous.subscribe.citypage.companyX</code></p>
 <p>Also, here is a list of recommendations for the "anonymous" user who wishes to retrieve a significant subset of data without fear of losing information:</p>
 <ul>
 <li>The <code>expire</code> option reflects the user's desired retention period. We suggest a value greater than 5 minutes, which is the default.  </li>
@@ -215,21 +215,56 @@
 <p>This is an EXE file that can be used without having to <a href="https://github.com/MetPX/sarracenia/blob/master/doc/fr/Install.rst">install</a> a Python environment.</p>
 <h2 id="examples">Examples</h2>
 <p>Here are some specific examples to receive alerts, citypage_weather data for one city and RDPS GRIB parameters:</p>
+<p>Here are some specific examples to receive alerts, citypage_weather data and RDPS GRIB parameters:</p>
 <ul>
 <li>
 <p>The available commands are:</p>
 <ul>
-<li>alerts: sr_subscribe <a href="../amqp_cap-xml.conf">amqp_cap.xml.conf</a> start/stop/status</li>
-<li>citypage_weather: sr_subscribe <a href="../amqp_citypage.conf">amqp_citypage.conf</a> start/stop/status</li>
-<li>rdps_grib: sr_subscribe <a href="../amqp_rdps-grib.conf">amqp_rdps-grib.conf</a> start/stop/status</li>
-<li>bulletins : sr_subscribe <a href="../amqp_aacn01.conf">amqp_aacn01.conf</a> start/stop/status</li>
+<li>
+<p><a href="https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/ddc_cap-xml.conf">alerts</a>:</p>
+<ul>
+<li><code>sr3 add subscribe/ddc_cap-xml.conf</code></li>
+<li><code>sr3 start subscribe/ddc_cap-xml.conf</code></li>
+<li><code>sr3 stop subscribe/ddc_cap-xml.conf</code></li>
+<li><code>sr3 cleanup subscribe/ddc_cap-xml.conf</code></li>
 </ul>
 </li>
 <li>
-<p>The logs are available under ~/.cache/sarra/log</p>
-</li>
-<li>To make a cleanup, use: sr_subscribe configname.conf cleanup</li>
+<p><a href="https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf">citypage_weather</a>:</p>
+<ul>
+<li><code>sr3 add subscribe/dd_citypage.conf</code></li>
+<li><code>sr3 start subscribe/dd_citypage.conf</code></li>
+<li><code>sr3 stop subscribe/dd_citypage.conf</code></li>
+<li><code>sr3 cleanup subscribe/dd_citypage.conf</code></li>
 </ul>
+</li>
+<li>
+<p><a href="https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf">RDPS</a>:</p>
+<ul>
+<li><code>sr3 add subscribe/dd_rdps.conf</code></li>
+<li><code>sr3 start subscribe/dd_rdps.conf</code> </li>
+<li><code>sr3 stop subscribe/dd_rdps.conf</code></li>
+<li><code>sr3 cleanup subscribe/dd_rdps.conf</code></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_aacn_bulletins.conf">bulletins</a>:</p>
+<ul>
+<li><code>sr3 add subscribe/dd_aacn_bulletins.conf</code></li>
+<li><code>sr3 start subscribe/dd_aacn_bulletins.conf</code></li>
+<li><code>sr3 stop subscribe/dd_aacn_bulletins.conf</code></li>
+<li><code>sr3 cleanup subscribe/dd_aacn_bulletins.conf</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>The subscriber config files are placed in <code>~/.config/sr3/subscribe</code></p>
+</li>
+<li>The logs are available under <code>~/.cache/sr3/log</code></li>
+<li>To make a cleanup, use: <code>sr3 cleanup subscribe/config_name.conf</code></li>
+</ul>
+<p>Note: The <code>sr3 add</code> command automatically places the example config file into the user’s <code>~/.config/sr3/subscribe</code> directory.</p>
 <h2 id="external-links">External links</h2>
 <ul>
 <li>
