@@ -115,7 +115,7 @@ Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une
 
 * Ls fichiers de configuration sont placés ici :  `~/.config/sr3/subscribe`
 * Les logs se retrouvent ici :  `~/.cache/sr3/log`
-* Pour faire du ménage, la commande est : `sr3 cleanup subscribe/config_name.conf` 
+* Pour faire du ménage, la commande est la suivante : `sr3 cleanup subscribe/config_name.conf` 
 
 Note: La commande `sr3 add` place automatiquement l'exemple de fichier de configuration dans le répertoire `~/.config/sr3/subscribe` de l'usager.
 
