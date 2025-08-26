@@ -48,7 +48,7 @@ The national AQHI program is a joint partnership involving Environment and Clima
 
 To retrieve data by year, please consult Environment and Climate Change Canada’s (ECCC) [**National Air Pollution Surveillance (NAPS)**](https://open.canada.ca/data/en/dataset/1b36a356-defd-4813-acea-47bc3abd859b) Program. The NAPS program is the main source of ambient air quality data in Canada. For hourly PM2.5 data, please consult the [ContinuousData-DonneesContinu](https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/Data-Donnees/?lang=en) data folder for each year. 
 
-For additional questions and data requests, you may contact the [NAPS inquiry center](rnspa-napsinfo@ec.gc.ca).
+For additional questions and data requests, you may contact the [NAPS inquiry center](mailto:rnspa-napsinfo@ec.gc.ca).
  
 Please note that ECCC cannot provide individual pollutant data as this data is owned by the **provinces and territories**, and in some cases can be obtained from them directly. For any recent, missing data for specific provinces and territories, ECCC suggests you reach out to them separately. You may also consult the table below for NAPS partners and their webpages with real-time data:
 
