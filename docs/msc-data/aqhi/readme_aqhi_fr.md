@@ -44,7 +44,7 @@ Les [métadonnées d'observations et prévisions qui sont générés pour le pro
 
 ## Partenaires et données de polluants
 
-Le programme national AQHI est un partenariat entre Environnement et Changement climatique Canada, Santé Canada, ainsi que les agences provinciales, municipales et les ONG.
+Le programme national CAS est un partenariat entre Environnement et Changement climatique Canada, Santé Canada, ainsi que les agences provinciales, municipales et les ONG.
 
 Pour obtenir des données annuelles de polluants, veuillez consulter le [**Programme  de surveillance national de la pollution atmosphérique (SNPA)**](https://ouvert.canada.ca/data/fr/dataset/1b36a356-defd-4813-acea-47bc3abd859b) d'Environnement et Changement climatique Canada (ECCC). Le programme SNPA est la principale source de données sur la qualité de l'air ambiant au Canada. Pour obtenir les données horaires des PM2.5, veuillez consulter le [catalogue de données](https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/Data-Donnees/?lang=fr) pour chaque année.
  
