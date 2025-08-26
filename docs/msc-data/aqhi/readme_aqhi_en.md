@@ -46,7 +46,7 @@ The [metadata of the Air Quality Health Index (AQHI) observation and forecast ar
 
 The national AQHI program is a joint partnership involving Environment and Climate Change Canada, Health Canada, as well as the provincial, municipal and NGO agencies.
 
-To retrieve data by year, please consult Environment and Climate Change Canada’s (ECCC) [**National Air Pollution Surveillance (NAPS)**](https://open.canada.ca/data/en/dataset/1b36a356-defd-4813-acea-47bc3abd859b) Program. The NAPS program is the main source of ambient air quality data in Canada. For hourly PM2.5 data, please consult the [ContinuousData-DonneesContinu](https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/Data-Donnees/?lang=en) data folder for each year. 
+To retrieve data by year, please consult Environment and Climate Change Canada’s (ECCC) [**National Air Pollution Surveillance (NAPS)**](https://open.canada.ca/data/en/dataset/1b36a356-defd-4813-acea-47bc3abd859b) Program. The NAPS program is the main source of ambient air quality data in Canada. For hourly PM2.5 data, please consult the [data catalogue](https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/Data-Donnees/?lang=en) data folder for each year. 
 
 For additional questions and data requests, you may contact the [NAPS inquiry center](mailto:rnspa-napsinfo@ec.gc.ca).
  
