@@ -42,22 +42,38 @@ Les [métadonnées d'observations et prévisions qui sont générés pour le pro
 * [Sommaire des prévisions les plus récentes de la Cote air santé dans un grand nombre de villes au Canada](https://meteo.gc.ca/airquality/pages/index_f.html)
 * [Carte de prévisions de l'ozone, PM2.5, et PM10 près de la surface et à différentes altitudes](https://meteo.gc.ca/aqfm/index_f.html)
 
-## Partenaires
+## Partenaires et données de polluants
 
-Le programme CAS est un partenariat conjoint d'Environnement et Changement climatique Canada, Santé Canada, et les agences provinciaux/municipaux/ONG suivants :
+Le programme national AQHI est un partenariat entre Environnement et Changement climatique Canada, Santé Canada, ainsi que les agences provinciales, municipales et les ONG.
 
-* Les ministères de l'Environnement et Ressources naturelles et de la Services sociaux du Gouvernement des Territoires du Nord-Ouest.
-* Le gouvernement du Nunavut.
-* The B.C. Ministry of Environment, the B.C. Ministry of Healthy Living and Sport, the B.C. Ministry of Health Services, Metro Vancouver, the B.C. Lung Association, the Fraser Valley Regional District, Interior Health Authority, Thompson Nicola Regional District, the City of Kamloops, Regional District of Okanagan-Similkameen, the City of Vernon, the City of Kelowna, the Capital Regional District, Resort Municipality of Whistler, and the Municipality of Williams Lake.
-* Alberta Environment and Water and Alberta Health and Wellness.
-* Saskatchewan Ministry of the Environment et Saskatchewan Ministry of Health.
-* La Vie Saine Manitoba, Manitoba Conservation, the Lung Association, Manitoba.
-* Le ministère de l'Environnement de l'Ontario, le ministère de la Santé et des Soins de longue durée de l'Ontario, Peel Public Health, Halton Region Health Department, Hamilton Public Health Services, York Region's Community and Health Services Department, Durham Region Health Department, Santé publique Ottawa, Toronto Public Health et Clean Air Partnership.
-* Le ministère du Développement durable, de l'Environnement, de la Faune et des Parcs du Québec, le ministère de la Santé et des Services sociaux, l'Institut national de santé publique du Québec et la Direction de santé publique de la Capitale-Nationale, la Direction de la santé publique de l'Outaouais, la Direction de santé publique de l'Agence de la santé et des services sociaux de Montréal et la ville de Montréal.
-* Le ministère de la Santé et le ministère de l'Environnement du Nouveau-Brunswick, et l'Association pulmonaire du Nouveau-Brunswick.
-* Le ministère de l'Environnement, du travail et de la justice de l'Île-du-Prince-Édouard, et le ministère de la Santé et du Mieux-être de l'Île-du-Prince-Édouard en partenariat avec l'Association pulmonaire de l'Île-du-Prince-Édouard.
-* Le ministère de l'Environnement de la Nouvelle-Écosse, le ministére de la Santé et du Mieux-être de la Nouvelle-Écosse, l'Association pulmonaire de la Nouvelle-Écosse et Clean Nova Scotia.
-* Le ministère de l'Environnement et de la Conservation de Terre-Neuve-et-Labrador, et le ministère de la Santé et des Services communautaires de Terre-Neuve-et-Labrador.
+Pour obtenir des données annuelles de polluants, veuillez consulter le [**Programme  de surveillance national de la pollution atmosphérique (SNPA)**](https://ouvert.canada.ca/data/fr/dataset/1b36a356-defd-4813-acea-47bc3abd859b) d'Environnement et Changement climatique Canada (ECCC). Le programme SNPA est la principale source de données sur la qualité de l'air ambiant au Canada. Pour obtenir les données horaires des PM2.5, veuillez consulter le [catalogue de données](https://data-donnees.az.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/Data-Donnees/?lang=fr) pour chaque année.
+ 
+Pour toute question supplémentaire ou demande de données, veuillez contacter le [centre d'information du SNPA](mailto:rnspa-napsinfo@ec.gc.ca).
+
+Veuillez noter que ECCC ne peut fournir de données individuelles sur les polluants, car ces données appartiennent aux **provinces et territoires** et, dans certains cas, peuvent être obtenues directement auprès d'eux. Pour toute donnée récente manquante concernant des provinces et territoires spécifiques, ECCC vous recommande de les contacter séparément. Vous pouvez également consulter le tableau ci-dessous pour connaître les partenaires du programme SNPA et leurs pages web contenant des données en temps réel :
+
+
+| Partenaires du SNPA | Liens |
+| ------ | ------ |
+| Gouvernement de Terre-Neuve-et-Labrador, ministère de l'Environnement et des Changements climatiques | https://www.gov.nl.ca/ecc/env-protection/science/airmon/ |
+| Gouvernement de l'Île-du-Prince-Édouard, ministère de l'Environnement, de l'Énergie et de l'Action climatique | https://www.princeedwardisland.ca/en/topic/air |
+| Gouvernement de la Nouvelle-Écosse, Environnement de la Nouvelle-Écosse | https://www.novascotia.ca/nse/air/\\ https://www.novascotia.ca/nse/airdata/ |
+| Gouvernement du Nouveau-Brunswick, ministère de l'Environnement et des Gouvernements locaux | http://www2.gnb.ca/content/gnb/en/departments/elg/environment/content/air_quality.html\\ http://www.elgegl.gnb.ca/AirNB/ |
+| Gouvernement du Québec, Ministère de l’Environnement et de la Lutte contre les changements climatiques | https://www.environnement.gouv.qc.ca/air/inter_en.htm \\ https://www.environnement.gouv.qc.ca/air/reseau-surveillance/telechargement.asp |
+| Ville de Montréal, Direction de l’environnement | https://montreal.ca/en/topics/air-quality\\ https://donnees.montreal.ca/ville-de-montreal/rsqa-polluants-gazeux#data |
+| Gouvernement de l'Ontario, ministère de l'Environnement, de la Protection de la nature et des Parcs | http://www.airqualityontario.com/ |
+| Gouvernement du Manitoba, ministère de la Protection de la nature et du Climat | https://www.gov.mb.ca/sd/environment_and_biodiversity/air_quality/index.html \\https://web31.gov.mb.ca/EnvistaWeb/Default.ltr.aspx |
+| Gouvernement de la Saskatchewan, ministère de l'Environnement de la Saskatchewan | https://www.saskatchewan.ca/residents/environment-public-health-and-safety/environmental-health/outdoor-air-quality/air-quality-monitoring\\ http://environment.gov.sk.ca/airqualityindex |
+| Gouvernement de l'Alberta, Environnement et Parcs | https://www.alberta.ca/air-quality.aspx\\ http://airdata.alberta.ca/ |
+| Gouvernement de la Colombie-Britannique, ministère de l'Environnement et des Changements climatiques | https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality\\ https://envistaweb.env.gov.bc.ca/ |
+| Métropole de Vancouver, Département des parcs et de l'environnement | https://metrovancouver.org/services/air-quality-climate-action/current-air-quality |
+| Gouvernement du Yukon, Département de l'environnement | https://yukon.ca/en/waste-and-recycling/pollution/air-quality-monitoring |
+| Gouvernement des Territoires du Nord-Ouest, ministère de l'Environnement et des Ressources naturelles | http://www.enr.gov.nt.ca/en/services/air-quality\\ http://aqm.enr.gov.nt.ca/ |
+| Gouvernement du Nunavut, ministère de l'Environnement | https://gov.nu.ca/environment/information/environmental-protection |
+
+Note : le Nunavut ne dispose pas de lien vers une page de données en temps réel.
+
+Vous pouvez également accéder aux données à partir du portail américain [AirNow](https://www.airnow.gov/).
 
 ## Documentation technique
 
