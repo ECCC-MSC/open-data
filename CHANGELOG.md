@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.11
+
+* date: TBD
+* announcements:
+    * Not announced
+* new content:
+    *
+* improvements:
+    * Added MSC AniMet demonstration video link in the AniMet readme pages (en/fr)
+* bug fixes:
+    * Fix link to weather statistic maps in the observation page
+
+
 # 2.9.10
 
 * date: 2025-08-18
