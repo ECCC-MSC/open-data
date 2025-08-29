@@ -113,6 +113,10 @@ The [permalink](https://en.wikipedia.org/wiki/Permalink) allows you to open MSC 
 
 MSC AniMet leverages data from the 24/7 mission critical [MSC GeoMet web services](../msc-geomet/readme_en.md). We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) announcement mailing list to be informed of enhancements and changes to MSC AniMet.
 
+## Demonstration video
+
+A demonstration video showcasing MSC AniMet features is available on Vimeo: [https://vimeo.com/1093850245?share=copy#t=2058.364](https://vimeo.com/1093850245?share=copy#t=2058.364)
+
 ## Source code
 
 The MSC AniMet source code is publicly available on GitHub: [https://github.com/ECCC-MSC/msc-animet](https://github.com/ECCC-MSC/msc-animet)

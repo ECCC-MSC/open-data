@@ -111,6 +111,10 @@ Le [permalien](https://fr.wikipedia.org/wiki/Permalien) vous permet d'ouvrir Ani
 
 AniMet du SMC exploite les données des [services web 24/7 de GeoMet du SMC](../msc-geomet/readme_fr.md). Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion [GeoMet-Info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/) pour être informés des améliorations et des changements apportés à AniMet du SMC.
 
+## Vidéo de démonstration
+
+Une vidéo de démonstration présentant les fonctionnalités d'AniMet du SMC est disponible sur Vimeo : [https://vimeo.com/1093851275?share=copy#t=2217.201](https://vimeo.com/1093851275?share=copy#t=2217.201)
+
 ## Code source
 
 Le code source d'AniMet du SMC est disponible publiquement sur GitHub : [https://github.com/ECCC-MSC/msc-animet](https://github.com/ECCC-MSC/msc-animet)
