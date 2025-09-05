@@ -45,14 +45,14 @@ Values given to the parameters of the polar stereographic grid :
 
 ![Rotated lat-lon grid image of RDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
 
-Valeurs données aux paramètres de la grille lat-lon tournée :
+Values given to the parameters of the rotated lat-lon grid :
 
-| Paramètre | Valeur |
+| Parameter | Value |
 | ------ | ------ |
 | ni | 1102 |
 | nj | 1076 | 
-| résolution à 60° N | 10km |
-| coordonnées du premier point de grille | 48.5° S ; 62.6° W |
+| resolution at 60° N | 10km |
+| coordinates of the first grid point | 48.5° S ; 62.6° W |
 
 ## Filename nomenclature 
 
