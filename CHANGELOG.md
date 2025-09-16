@@ -16,9 +16,10 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    *
+    * Add Canadian weather radar visibility products (radar page)
 * improvements:
     * Added MSC AniMet demonstration video link in the AniMet readme pages (en/fr)
+    * Added information regarding AQHI partners and pollutants data
 * bug fixes:
     * Fix link to weather statistic maps in the observation page
 
