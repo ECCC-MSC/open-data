@@ -23,6 +23,10 @@ Veuillez vous référer aux règles d'utilisation et aux pratiques exemplaires s
 
 ## Règles d'utilisation et pratiques exemplaires
 
+Limites d'utilisation :
+
+* Si votre utilisation de nos services de données, que ce soit directement ou via une application, implique 60 requêtes par minute ou davantage, veuillez [nous contacter](https://www.weather.gc.ca/mainmenu/contact_us_f.html) afin que nous vous aidions à utiliser nos services de données de manière optimale. Toute  utilisation au-delà de cette limite pourrait provoquer une coupure d'accès à ces services
+
 Pratiques exemplaires :
 
 * Examiner et évaluer le flux de votre application et déterminer quel mécanisme d'accès aux données du SMC répond le mieux à vos besoins. Par exemple, la création d'une archive locale de données devrait être effectuée en utilisant les services du Datamart du SMC, et non les services GeoMet du SMC
