@@ -23,6 +23,10 @@ Please refer to the following usage rules and best practices to ensure proper us
 
 ## Usage Rules and Best Practices
 
+Usage limits:
+
+* If your usage, direct or via an application, involves 60 requests per minute or higher, [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) to assist you in the optimal use of our data services. Any consistent usage over this limit may be subject to having access revoked
+
 Best practices:
 
 * Review and assess your application workflow and determine which MSC data access mechanism best suits your needs. For example, building a local archive of data should be performed using MSC Datamart services, not MSC GeoMet services
