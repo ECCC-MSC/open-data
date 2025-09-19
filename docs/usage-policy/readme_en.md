@@ -25,7 +25,8 @@ Please refer to the following usage rules and best practices to ensure proper us
 
 Usage limits:
 
-* If your usage, direct or via an application, involves 60 requests per minute or higher, [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) to assist you in the optimal use of our data services. Any consistent usage over this limit may be subject to having access revoked
+* If you or your application's usage, involves 86,400 requests per day or higher (about 1 request per second), [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html) to assist you in the optimal use of our data services
+* Any consistent usage over this limit may be subject to having access limited or otherwise revoked for you and/or your application
 
 Best practices:
 

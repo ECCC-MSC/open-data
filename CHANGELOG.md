@@ -12,16 +12,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.11
 
-* date: TBD
+* date: 2025-09-19
 * announcements:
     * Not announced
 * new content:
     * Add Canadian weather radar visibility products (radar page)
 * improvements:
-    * Added MSC AniMet demonstration video link in the AniMet readme pages (en/fr)
-    * Added information regarding AQHI partners and pollutants data
+    * Add MSC AniMet demonstration video link in the AniMet readme pages (en/fr)
+    * Add information regarding AQHI partners and pollutants data
+    * Update MSC open data usage policy (add limitations)
 * bug fixes:
     * Fix link to weather statistic maps in the observation page
+    * Fix RDPA meanning filename examples
 
 
 # 2.9.10

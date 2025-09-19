@@ -12,7 +12,7 @@ Afin d'appuyer les [lignes directrices d'ECCC concernant les emplacements des pa
 
 Ces couches de visibilité ont été générées à partir d'une analyse de cônes de visibilité utilisant les 32 radars météorologiques opérationnels en bande S d'ECCC comme observateurs et les trois hauteurs susmentionnées comme décalages de surface.
 
-Au sein de ces couches de visibilité, les turbines de hauteurs de 150, 200 et 250 mAGL sont susceptibles d'être visibles par les radars météorologiques opérationnels d'ECCC et ont donc le potentiel de contaminer les données des radars météorologiques. Une couche de points comprenant les coordonnées des radars et une couche de polygones contenant les zones tampons de 10 et 60 kilomètres de rayon entourant chaque radar et délimitant les zones d'impact des turbines sur ces derniers sont également incluses dans cet ensemble de données.
+Au sein de ces couches de visibilité, les turbines de hauteurs de 150, 200 et 250 mAGL sont susceptibles d'être visibles par les radars météorologiques opérationnels d'ECCC et ont donc le potentiel de contaminer les données des radars météorologiques. Une couche de polygones contenant les zones tampons de 10 et 60 kilomètres de rayon entourant chaque radar et délimitant les zones d'impact des turbines sur ces derniers sont également incluses dans cet ensemble de données.
 
 ## Adresse des données 
 
