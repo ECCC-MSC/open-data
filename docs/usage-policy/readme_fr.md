@@ -25,7 +25,8 @@ Veuillez vous référer aux règles d'utilisation et aux pratiques exemplaires s
 
 Limites d'utilisation :
 
-* Si votre utilisation de nos services de données, que ce soit directement ou via une application, implique 60 requêtes par minute ou davantage, veuillez [nous contacter](https://www.weather.gc.ca/mainmenu/contact_us_f.html) afin que nous vous aidions à utiliser nos services de données de manière optimale. Toute  utilisation au-delà de cette limite pourrait provoquer une coupure d'accès à ces services
+* Si votre utilisation de nos services de données ou celle de votre application entraine 86400 requêtes par jour ou plus (environ 1 requête par seconde), veuillez [nous contacter](https://www.weather.gc.ca/mainmenu/contact_us_f.html) afin que nous puissions vous aider à optimiser l'utilisation de nos services de données
+* Toute  utilisation régulière dépassant cette limite pourrait entraîner une limitation ou une suppression de votre accès et/ou de celui de votre application
 
 Pratiques exemplaires :
 

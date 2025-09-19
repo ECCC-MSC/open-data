@@ -64,11 +64,11 @@ Examples of files names :
 
 * 20220301T00Z_MSC_RDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.09_PT0H.grib2
 
-The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a preliminary analysis of precipitation accumulation represented by the APCP variable over a 6 hour interval. The data are on a lat-lon rotated grid at a 10 km resolution (RLatLon0.09). The analysis was produced on March 01, 2022 at 00Z (20220301T00Z). The 006-hour interval in which the precipitation is analyzed is 2022030100 to 2022030106. 
+The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a preliminary analysis of precipitation accumulation represented by the APCP variable over a 6 hour interval. The data are on a lat-lon rotated grid at a 10 km resolution (RLatLon0.09). The analysis was produced on March 01, 2022 at 00Z (20220301T00Z). The 006-hour interval in which the precipitation is analyzed is 2022022818 to 2022030100. 
 
 * 20220302T12Z_MSC_RDPA_APCP-Accum24h_Sfc_RLatLon0.09_PT0H.grib2
 
-The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a final analysis of precipitation accumulation represented by the APCP variable over a 24-hour interval. The data are on a lat-lon grid rotated to a 10 km resolution (RLatLon0.09). The analysis was produced on 02 March 2022 at 12Z (2022030212). The 24-hour interval in which precipitation is analyzed is 2022030212 to 2022030312.
+The file originates from the Meteorological Service of Canada (MSC) and contains a Regional Deterministic Precipitation Analysis (RDPA). It contains a final analysis of precipitation accumulation represented by the APCP variable over a 24-hour interval. The data are on a lat-lon grid rotated to a 10 km resolution (RLatLon0.09). The analysis was produced on 02 March 2022 at 12Z (2022030212). The 24-hour interval in which precipitation is analyzed is 2022030112 to 2022030212.
 
 __NOTE__: A second variable is also included in this file and it is the confidence index for the analysis.
 

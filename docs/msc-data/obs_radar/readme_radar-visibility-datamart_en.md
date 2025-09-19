@@ -12,7 +12,7 @@ In support of ECCC’s [wind farm and weather radar siting guidelines](https://w
 
 These visibility layers were generated from a viewshed analysis using ECCC’s 32 operational S-Band weather radars as observers and the three abovementioned heights as surface offsets.
 
-Within these visibility layers, turbines that are 150, 200 and 250 mAGL tall are likely to be visible to ECCC’s operational weather radars and therefore have the potential to contaminate weather radar data. A point layer containing radar coordinates and a polygon layer containing 10 and 60 kilometer radius buffers around each radar denoting the turbine-radar impact zones are also included in this dataset.
+Within these visibility layers, turbines that are 150, 200 and 250 mAGL tall are likely to be visible to ECCC’s operational weather radars and therefore have the potential to contaminate weather radar data. A polygon layer containing 10 and 60 kilometer radius buffers around each radar denoting the turbine-radar impact zones are also included in this dataset.
 
 ## Data Address 
 
