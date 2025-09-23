@@ -16,11 +16,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    * 
 * improvements:
     * Update GDPS-SN article (WAF)
 * bug fixes:
-    * 
 
 # 2.9.11
 
