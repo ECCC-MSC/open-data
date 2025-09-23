@@ -20,6 +20,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Update GDPS-SN article (WAF)
     * Added Support section to MSC WIS2 pages
 * bug fixes:
+    * Fix ODIM_H5 radar doc (maximum range 330km instead of 240km)
 
 # 2.9.11
 
