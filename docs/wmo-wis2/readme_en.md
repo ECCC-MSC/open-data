@@ -67,3 +67,7 @@ Numerous tools exist to discover, access, subscribe to and retrieve data on WIS2
 
 * [pywiscat](https://github.com/wmo-im/pywiscat): provides a Pythonic API atop the WIS2 Global Discovery Catalogue (GDC)
 * [pywis-pubsub](https://github.com/wmo-im/pywis-pubsub): provides subscription and download capability of data from WIS2
+
+## Support
+
+The MSC WIS2 services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
