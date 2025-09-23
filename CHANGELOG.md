@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.12
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * 
+* improvements:
+    * Update GDPS-SN article (WAF)
+* bug fixes:
+    * 
+
 # 2.9.11
 
 * date: 2025-09-19
