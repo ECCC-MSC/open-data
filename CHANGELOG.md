@@ -18,6 +18,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
 * improvements:
     * Update GDPS-SN article (WAF)
+    * Added Support section to MSC WIS2 pages
 * bug fixes:
 
 # 2.9.11
