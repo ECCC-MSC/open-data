@@ -68,3 +68,7 @@ Plusieurs outils permettent de découvrir, accéder, s'abonner et télécharger 
 
 * [pywiscat](https://github.com/wmo-im/pywiscat) : fournit un API Python pour exploiter le Global Discovery Catalogue (GDC) de WIS2
 * [pywis-pubsub](https://github.com/wmo-im/pywis-pubsub) : permet de s'abonner et télécharger les données disponibles sur WIS2
+
+## Support
+
+Les services WIS2 du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à [communiquer avec nous](https://weather.gc.ca/mainmenu/contact_us_e.html).
