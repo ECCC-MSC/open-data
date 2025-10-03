@@ -105,7 +105,7 @@ Here are some specific examples to receive alerts, citypage_weather data and RDP
         * `sr3 stop subscribe/dd_citypage.conf`
         * `sr3 cleanup subscribe/dd_citypage.conf`
 	
-    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_rdps.conf):
     
         * `sr3 add subscribe/dd_rdps.conf`
         * `sr3 start subscribe/dd_rdps.conf` 
