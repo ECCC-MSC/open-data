@@ -99,7 +99,7 @@ Voici quelques exemples pour recevoir les alertes, les citypage_weather pour une
         * `sr3 stop subscribe/dd_citypage.conf`
         * `sr3 cleanup subscribe/dd_citypage.conf`
 	
-    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_citypage.conf):
+    * [RDPS](https://github.com/MetPX/sarracenia/blob/development/sarracenia/examples/subscribe/dd_rdps.conf):
     
         * `sr3 add subscribe/dd_rdps.conf`
         * `sr3 start subscribe/dd_rdps.conf` 
