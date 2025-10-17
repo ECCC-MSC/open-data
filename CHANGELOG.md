@@ -12,10 +12,11 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.12
 
-* date: 
+* date: 2025-10-21
 * announcements:
     * Not announced
 * new content:
+    * Move HRDPS-North in the list of retired datasets
 * improvements:
     * Update GDPS-SN article (WAF)
     * Added Support section to MSC WIS2 pages
