@@ -48,7 +48,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
     * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](vertical-profiles/readme_vertical-profiles-nwp_fr.md)
 * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
-* [Système à haute résolution de prévision déterministe Nord (SHRPD-Nord)](nwp_hrdps-north/readme_hrdps-north_fr.md)
 * [Système canadien de prévision de l'Arctique (SCPA)](nwp_caps/readme_caps_fr.md)
 * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)</br>
 
@@ -130,6 +129,8 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 * [Système régional de prévision déterministe d'onde de tempête (SRPDOT)](nwp_rdsps/readme_rdsps_fr.md)
 * [Système régional de prévision déterministe - couplé au Golfe du St-Laurent (SRPD-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_fr.md)
 * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
+* [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
+
 </br></br>
 
 ## Changements aux systèmes de production de données opérationnels
