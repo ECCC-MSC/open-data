@@ -47,7 +47,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
     * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
 * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
-* [High Resolution Deterministic Prediction System North (HRDPS-North)](nwp_hrdps-north/readme_hrdps-north_en.md)
 * [Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
 * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)</br>
 
@@ -130,6 +129,8 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Regional Deterministic Storm Surge Prediction System (RDSPS)](nwp_rdsps/readme_rdsps_en.md)
 * [Regional Deterministic Prediction System - Coupled to Gulf of St. Lawrence (RDPS-CGSL)](nwp_rdps-cgsl/readme_rdps-cgsl_en.md)
 * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
+* [High Resolution Deterministic Prediction System North (HRDPS-North)](nwp_hrdps-north/readme_hrdps-north_en.md)
+
 </br></br>
 
 ## Changes to operational data production systems
