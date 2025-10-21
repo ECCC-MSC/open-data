@@ -17,6 +17,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Move HRDPS-North in the list of retired datasets
+    * Update RDPS and GDPS statistically post-processed pages following the withdrawal of UMOS data
 * improvements:
     * Update GDPS-SN article (WAF)
     * Added Support section to MSC WIS2 pages
