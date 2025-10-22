@@ -12,12 +12,13 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.12
 
-* date: 2025-10-21
+* date: 2025-10-22
 * announcements:
     * Not announced
 * new content:
     * Move HRDPS-North in the list of retired datasets
     * Update RDPS and GDPS statistically post-processed pages following the withdrawal of UMOS data
+    * Add MSC GeoMet-OGC-API real-time City Page Weather experimental collection
 * improvements:
     * Update GDPS-SN article (WAF)
     * Added Support section to MSC WIS2 pages
