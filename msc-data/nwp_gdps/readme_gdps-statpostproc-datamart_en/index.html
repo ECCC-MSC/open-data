@@ -163,11 +163,10 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_gdps_en/">GDPS</a> &gt; GDPS statistical post-processing on MSC Datamart</p>
 <h1 id="global-deterministic-prediction-system-gdps-data-statistically-post-processed-in-geojson-format">Global Deterministic Prediction System (GDPS) data statistically post-processed in GeoJSON format</h1>
-<p>Statistical post-processing of forecasts from numerical weather and environmental models, including the <a href="../readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a>, helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.</p>
-<p>The "Updatable Model Output Statistics" (<strong>UMOS</strong>) system is a software package developed by Environment and Climate Change Canada that enables this. Relationships are built using the "Model Output Statistics" (MOS) method and multiple linear regression (MLR). After 25 years of dedicated service, <strong>UMOS</strong> will soon be replaced by a more modern software package, <strong>PROGNOS</strong>.</p>
-<p>For both systems, at present, only the air temperature at 1.5 meters above the Earth's surface is statistically post-processed.</p>
-<p>The absence of statistically post-processed forecasts can be due to the unavailability of a statistical model caused by insufficient observation quality or quantity.</p>
-<p>The geographical region covered by this data includes the territory covered by Canadian meteorological stations and some American buoys.</p>
+<p>Statistical post-processing of forecasts from numerical weather and environmental models, including the Global Deterministic Prediction System (GDPS), helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.</p>
+<p>The <strong>PROGNOS</strong> system is a software package developed by Environment and Climate Change Canada that enables this. Relationships are built using the 'Model Output Statistics' (MOS) method and multiple linear regression (MLR).</p>
+<p>Currently, only the air temperature at 1.5 meters above the Earth's surface is statistically post-processed. The absence of statistically post-processed forecasts can be due to the unavailability of a statistical model caused by insufficient observation quality or quantity.</p>
+<p>The geographical region covered by this data includes the territory covered by Canadian meteorological stations and some American buoys. </p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GeoJSON file.</p>
@@ -178,12 +177,11 @@
 <p>where :</p>
 <ul>
 <li><strong>HH</strong> : UTC hour of the model run start [00, 12]</li>
-<li><strong>hhh</strong> : Forecast lead time [000, 003, 006, ..., 144] for UMOS data</li>
-<li><strong>hhh</strong> : Forecast lead time [000, 001, 002, ..., 084, 087, 090, ..., 165, 168] for PROGNOS data according to observation stations</li>
+<li><strong>hhh</strong> : Forecast lead time [000, 001, 002, ..., 084, 087, 090, ..., 165, 168] according to observation stations</li>
 </ul>
 <h2 id="technical-specifications">Technical specifications</h2>
 <ul>
-<li>UMOS and PROGNOS forecasts are offered at observation station locations in North America covered within the following geographical boundaries: 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
+<li>PROGNOS forecasts are offered at observation station locations in North America covered within the following geographical boundaries: 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
 <li>The datum and geographical projection are respectively: WGS84, latlon.</li>
 <li>Data is bilingual</li>
 <li>Data is in ISO8601 compliant</li>
@@ -199,17 +197,16 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>GDPS</strong>: Constant string indicating that data is from Global Deterministic Prediction System</li>
-<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [UMOS, PROGNOS]</li>
+<li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [PROGNOS]</li>
 <li><strong>METHOD</strong>: Constant string indicating the statistical method used [MLR for Multiple Linear Regression]</li>
 <li><strong>Var</strong> : Variables included in this file [AirTemp]</li>
-<li><strong>LVLYPE</strong>: Vertical level type [Sfc for surface level, AGL for Above Ground Level]</li>
+<li><strong>LVLYPE</strong>: Vertical level type [AGL for Above Ground Level]</li>
 <li><strong>LVL</strong>: Vertical level value [1.5m]. This parameter is not used for surface level</li>
-<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant characters designating Period, Time and Hour. "hhh" is the forecast lead time [000, 003, 006, ..., 144] for UMOS data and [000, 001, 002, ..., 084, 087, 090, ..., 165, 168] for PROGNOS data according to observation stations</li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant characters designating Period, Time and Hour. "hhh" is the forecast lead time [000, 001, 002, ..., 084, 087, 090, ..., 165, 168] according to observation stations</li>
 <li><strong>json</strong> : constant string indicating the GeoJSON format</li>
 </ul>
 <p>Examples of file names: </p>
 <ul>
-<li>20220128T00Z_MSC_GDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json</li>
 <li>20250703T06Z_MSC_GDPS-PROGNOS-MLR_AirTemp_AGL-1.5m_PT024H.json</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>

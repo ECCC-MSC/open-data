@@ -163,11 +163,10 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_gdps_fr/">SGPD</a> &gt; Post-traitement statistique SGPD sur le Datamart du SMC</p>
 <h1 id="donnees-geojson-du-systeme-global-de-prevision-deterministe-sgpd-statistiquement-post-traitees">Données GeoJSON du Système global de prévision déterministe (SGPD) statistiquement post-traitées</h1>
-<p>Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le <a href="../readme_gdps_fr/">Système global de prévision déterministe (SGPD)</a>, permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies. </p>
-<p>Le système "Updatable Model Output Statistics" (<strong>UMOS</strong>) est un progiciel développé par Environnement et Changement climatique Canada permettant cela. Les relations sont bâties par l'entremise de la méthode "Model Output Statistics" (MOS) et par régression linéaire multiple (RLM). Après 25 années de loyaux services, <strong>UMOS</strong> sera bientôt remplacé par un progiciel plus moderne, <strong>PROGNOS</strong>.</p>
-<p>Pour les deux systèmes, à l'heure actuelle, seule la température de l'air à 1.5 mètres au-dessus de la surface de la Terre est post-traitée statistiquement.</p>
-<p>L'absence de prévisions statistiquement post-traitées peut être dûe à l'indisponibilité d'un modèle statistique causé par une qualité ou quantité insuffisantes d'observations. </p>
-<p>La région géographique couverte par ces données inclut le territoire couvert par les stations météorologiques du Canada et quelques bouées américaines. </p>
+<p>Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le Système global de prévision déterministe (SGPD), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies.</p>
+<p>Le système <strong>PROGNOS</strong> est un progiciel développé par Environnement et Changement climatique Canada permettant cela. Les relations sont bâties par l'entremise de la méthode 'Model Output Statistics' (MOS) et par régression linéaire multiple (RLM).</p>
+<p>À l'heure actuelle, seule la température de l'air à 1.5 mètres au-dessus de la surface de la Terre est post-traitée statistiquement. L'absence de prévisions statistiquement post-traitées peut être dûe à l'indisponibilité d'un modèle statistique causé par une qualité ou quantité insuffisantes d'observations.</p>
+<p>La région géographique couverte par ces données inclut le territoire couvert par les stations météorologiques du Canada et quelques bouées américaines.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.</p>
@@ -178,12 +177,11 @@
 <p>où :</p>
 <ul>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12]</li>
-<li><strong>hhh</strong> : Heure d'échéance de la prévision [000, 003, 006, ..., 144] pour les données UMOS</li>
-<li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 083, 084, 087, 090, ..., 165, 168]  pour les données PROGNOS, selon les stations d'observations</li>
+<li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 083, 084, 087, 090, ..., 165, 168] selon les stations d'observations</li>
 </ul>
 <h2 id="specifications-techniques">Spécifications techniques</h2>
 <ul>
-<li>Les prévisions UMOS et PROGNOS sont offertes aux stations d’observation situées en Amérique du Nord à l’intérieur des limites géographiques suivantes : 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
+<li>Les prévisions PROGNOS sont offertes aux stations d’observation situées en Amérique du Nord à l’intérieur des limites géographiques suivantes : 149⁰W, 40⁰N, 42⁰W, 88⁰N</li>
 <li>Le datum et la projection géographique sont les suivantes: WGS84, latlon</li>
 <li>Les données sont bilingues</li>
 <li>Les données sont conformes aux normes ISO8601.</li>
@@ -199,17 +197,16 @@
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>GDPS</strong> : Chaîne de caractères constante indiquant des données post-traitées à partir du système global de prévision déterministe</li>
-<li><strong>PRODUCT</strong> : Chaîne de caractères constante indiquant le produit de post-traitement statistique [UMOS, PROGNOS]</li>
+<li><strong>PRODUCT</strong> : Chaîne de caractères constante indiquant le produit de post-traitement statistique [PROGNOS]</li>
 <li><strong>METHOD</strong> : Chaîne de caractères constante indiquant la méthode statistique utilisée [MLR pour Multiple Linear Regression]</li>
 <li><strong>Var</strong> : Variables contenues dans le fichier [AirTemp]</li>
-<li><strong>LVLTYPE</strong> : Type de niveau vertical [Sfc pour la surface, AGL pour le niveau au-dessus du sol (Above Ground Level)]</li>
+<li><strong>LVLTYPE</strong> : Type de niveau vertical [AGL pour le niveau au-dessus du sol (Above Ground Level)]</li>
 <li><strong>LVL</strong> : Valeur du niveau vertical [1.5m]. Ce paramètre est absent pour la surface</li>
-<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure d'échéance de la prévision [000, 003, 006, ..., 144] pour les données UMOS et [000, 001, 002, ..., 083, 084, 087, 090, ..., 165, 168]  pour les données PROGNOS, selon les stations d'observations </li>
+<li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure d'échéance de la prévision [000, 001, 002, ..., 083, 084, 087, 090, ..., 165, 168] selon les stations d'observations </li>
 <li><strong>json</strong> : Chaîne de caractères constante indiquant que le format est GeoJSON</li>
 </ul>
 <p>Exemples de noms de fichiers: </p>
 <ul>
-<li>20220128T00Z_MSC_GDPS-UMOS-MLR_AirTemp_AGL-1.5m_PT072H.json</li>
 <li>20250703T06Z_MSC_GDPS-PROGNOS-_AirTemp_AGL-1.5m_PT024H.json</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
