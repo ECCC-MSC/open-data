@@ -17,7 +17,7 @@ This page describes the data and products of weather forecasts per city that are
 This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server service as well as [MSC GeoMet](../../msc-geomet/readme_en.md)
 
 * [XML data available on the MSC Datamart](readme_citypageweather-datamart_en.md) 
-* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md) - *Only current weather data*
+* [Data available via geospatial web services GeoMet-Weather](../../msc-geomet/readme_en.md), notably via the GeoMet-OGC-API [real-time City Page Weather](https://api.weather.gc.ca/collections/citypageweather-realtime?lang=en) experimental collection
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

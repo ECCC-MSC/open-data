@@ -17,7 +17,7 @@ Cette page décrit les données et produits des prévisions météorologiques pa
 Ces données sont respectivement disponibles sur les services du serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) et les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) :
 
 * [Données XML disponibles sur le Datamart du SMC](readme_citypageweather-datamart_fr.md) 
-* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md) - *Conditions courantes seulement*
+* [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md), notamment via GeoMet-OGC-API, avec la collection expérimentale [Prévisions météorologiques par ville en temps réel](https://api.weather.gc.ca/collections/citypageweather-realtime?lang=fr)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
