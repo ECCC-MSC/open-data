@@ -35,8 +35,6 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ### Métadonnées de découverte
 
 * Les [métadonnées du Système régional de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a9f2828c-0d78-5eb6-a4c7-1fc1219f1e3d)
-* Les [métadonnées de la Prévision du système régional de prévision déterministe statistiquement post-traité par UMOS sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/bb0d1eeb-0e11-49e0-a5e3-6d99d4decb31)
-
 
 ## Produits
 
