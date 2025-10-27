@@ -45,7 +45,6 @@ An [overview and examples to access and use the Meteorological Service of Canada
 ### Discovery metadata
 
 * The [metadata of the Global Deterministic Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
-* The [metadata of the UMOS statistically post-processed Forecast of the Global Deterministic Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/7c1070fd-af7d-40fe-9e78-49d2962f0bbc).
 
 ## Products
 
