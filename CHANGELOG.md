@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.13
+
+* date: 2025-11-04
+* announcements:
+    * Not announced
+* new content:
+    * Remove DD-Alpha RDPS astronomy page 
+* improvements:
+    * NA
+* bug fixes:
+    * NA
+
+
 # 2.9.12
 
 * date: 2025-10-22

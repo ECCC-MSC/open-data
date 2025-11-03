@@ -20,7 +20,6 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 * [GRIB2 data available on the MSC Datamart](readme_rdps-datamart_en.md)
 * [GeoJSON statistically post-processed data on the MSC Datamart](readme_rdps-statpostproc-datamart_en.md)
 * [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_rdps-datamart-alpha_en.md)
-* [Experimental GRIB2 astronomy products available on the MSC testing data repository DD-Alpha](readme_astro-rdps-datamart-alpha_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
