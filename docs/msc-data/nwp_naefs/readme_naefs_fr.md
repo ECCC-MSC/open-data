@@ -44,5 +44,5 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ## Documentation technique
 
-[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://learn.meted.ucar.edu/#/online-courses/d336c069-8e91-425a-9d10-5b8a89009609) (En anglais seulement, requiert la création d'un compte ComMet)
+[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://learn.meted.ucar.edu/#/online-courses/d336c069-8e91-425a-9d10-5b8a89009609) (En anglais seulement, requiert la création d'un compte COMET)
 
