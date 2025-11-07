@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+
+# 2.9.14
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    *  
+* improvements:
+    * 
+* bug fixes:
+    * Fix NAEFS COMET link
+
 # 2.9.13
 
 * date: 2025-11-04
