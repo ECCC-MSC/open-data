@@ -44,4 +44,4 @@ List and links to the products available for this dataset :
 
 ## Technical documentation
 
-[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://www.meted.ucar.edu/training_module.php?id=548#.X8ZPdc6SlPY)
+[Introduction to the North American Ensemble Forecast System (NAEFS) - COMET-MetEd](https://learn.meted.ucar.edu/#/online-courses/d336c069-8e91-425a-9d10-5b8a89009609) (COMET account requested)
