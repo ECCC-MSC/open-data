@@ -67,7 +67,7 @@ A [list with location names and SiteNameCodes](https://collaboration.cmc.ec.gc.c
 
 * The XML schemas for citypage weather data are found in this directory :
 
-  [https://dd.weather.gc.ca/citypage_weather/schema/](https://dd.weather.gc.ca/citypage_weather/schema/)
+  [https://dd.weather.gc.ca/today/citypage_weather/schema/](https://dd.weather.gc.ca/today/citypage_weather/schema/)
 
 ## Icons of the XML product
 
