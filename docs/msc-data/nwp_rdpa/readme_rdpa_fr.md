@@ -16,12 +16,12 @@ Ces données sont respectivement disponibles sur les services web [GeoMet du SMC
 
 * [Données courantes et d'archives disponibles sur les services web géospatiaux GeoMet-Météo](readme_rdpa-geomet_fr.md)
 * [Données courantes et d'archives disponibles sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
-    * [ARPD - Accumulation de 24 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24f)
-    * [ARPD - Accumulation de 6 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6f)
-    * [ARPD - Accumulation de 24 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24p)
-    * [ARPD - Accumulation de 6 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6p)
-    * [ARPD - Accumulation de 24 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:24f)
-    * [ARPD - Accumulation de 6 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:6f)
+    * [ARDP - Accumulation de 24 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24f)
+    * [ARDP - Accumulation de 6 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6f)
+    * [ARDP - Accumulation de 24 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24p)
+    * [ARDP - Accumulation de 6 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6p)
+    * [ARDP - Accumulation de 24 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:24f)
+    * [ARDP - Accumulation de 6 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:6f)
 * [Données courantes GRIB2 disponibles sur le Datamart du SMC](readme_rdpa-datamart_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive configurée pour afficher la quantité de précipitations [mm] au cours des dernières 24h en utilisant une couche WMS de l'Analyse régionale déterministe de précipitation (ARDP) provenant de GeoMet du SMC :
