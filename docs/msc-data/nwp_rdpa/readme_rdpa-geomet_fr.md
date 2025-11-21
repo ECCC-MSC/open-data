@@ -2,25 +2,25 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [ARDP](readme_rdpa_fr.md) > Données ARPD sur GeoMet du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [ARDP](readme_rdpa_fr.md) > Données ARDP sur GeoMet du SMC
 
 # Données de l'Analyse régionale déterministe de précipitation disponibles sur GeoMet du SMC
 
-GeoMet du SMC donne accès à plusieurs couches de l'analyse régionale déterministe de précipitation (ARPD). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
+GeoMet du SMC donne accès à plusieurs couches de l'analyse régionale déterministe de précipitation (ARDP). Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.
 
 
 ## Accès aux services web géospatiaux
 
-Les données ARPD sont disponibles
+Les données ARDP sont disponibles
 
 * [sur GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service)](../../msc-geomet/readme_fr.md#standards-disponibles).
 * [sur les services web géospatiaux GeoMet-OGC-API](https://api.meteo.gc.ca/) :
-    * [ARPD - Accumulation de 24 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24f)
-    * [ARPD - Accumulation de 6 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6f)
-    * [ARPD - Accumulation de 24 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24p)
-    * [ARPD - Accumulation de 6 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6p)
-    * [ARPD - Accumulation de 24 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:24f)
-    * [ARPD - Accumulation de 6 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:6f)
+    * [ARDP - Accumulation de 24 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24f)
+    * [ARDP - Accumulation de 6 heures](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6f)
+    * [ARDP - Accumulation de 24 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:24p)
+    * [ARDP - Accumulation de 6 heures (préliminaire)](https://api.meteo.gc.ca/collections/weather:rdpa:10km:6p)
+    * [ARDP - Accumulation de 24 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:24f)
+    * [ARDP - Accumulation de 6 heures à 15 km](https://api.meteo.gc.ca/collections/weather:rdpa:15km:6f)
 
 Exemple de carte interactive configurée pour afficher la quantité de précipitations [mm] au cours des dernières 24h en utilisant une couche WMS de l'Analyse régionale déterministe de précipitation (ARDP) provenant de GeoMet du SMC:
 
