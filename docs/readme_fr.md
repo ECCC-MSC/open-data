@@ -103,5 +103,5 @@ Les questions les plus fréquemment posées au sujet des données ouvertes du SM
 
 ## Contactez-nous
 
-Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
+Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Pour toute question ou commentaire concernant les services de données ou la documentation, merci de [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).
 
