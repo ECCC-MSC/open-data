@@ -41,7 +41,6 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 
 ### Cartes de prévision
 
-* [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/index_f.html)
 * [Produits de prévision du temps violent](https://meteo.gc.ca/model_forecast/severe_weather_f.html)
 
 ### Cartes d'analyse aerologique

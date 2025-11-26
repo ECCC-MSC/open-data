@@ -48,10 +48,6 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
 
 Liste et liens vers les produits disponibles pour ce jeu de données :
 
-### Cartes de prévision
-
-- [Cartes 4 panneaux classiques](https://meteo.gc.ca/model_forecast/global_f.html)
-
 ### Cartes d'analyses
 
 - [Température de la surface de la mer](https://meteo.gc.ca/data/analysis/351_100.gif)
