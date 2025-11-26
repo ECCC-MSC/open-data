@@ -50,10 +50,6 @@ An [overview and examples to access and use the Meteorological Service of Canada
 
 List and links to the products available for this dataset:
 
-### Forecast maps
-
-* [4-panel cards](https://meteo.gc.ca/model_forecast/global_e.html)
-
 ### Analysis maps
 
 * [Sea Surface Temperature](https://weather.gc.ca/data/analysis/351_100.gif)

@@ -41,7 +41,6 @@ List and links to the products available for this dataset :
 
 ### Forecast maps
 
-* [4-panel charts](https://meteo.gc.ca/model_forecast/index_e.html)
 * [Severe weather prediction products](https://meteo.gc.ca/model_forecast/severe_weather_e.html)
 
 ### Aerological analysis maps
