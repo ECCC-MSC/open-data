@@ -218,7 +218,7 @@
 <li><strong>MSC</strong> : Constant string indicating the Meteorological Service of Canada, source of data</li>
 <li><strong>RAQDPS</strong> : Constant string indicating that data is from the Regional Air Quality Deterministic Prediction System </li>
 <li><strong>VAR</strong> : Variable type included in the file [PM2.5, PM2.5-WildfireSmokePlume, PM10, PM10-WildfireSmokePlume, NO2, NO, O3, SO2]</li>
-<li><strong>LVL</strong> : Vertical level [Sfc for the surface, EAtm for the column integral]</li>
+<li><strong>LVL</strong> : Vertical level [Sfc for the surface, AGL-2m for 2 meters above ground level, EAtm for the column integral]</li>
 <li><strong>Grille</strong> : Horizontal grid rotated lat-lon [RLatLon]</li>
 <li><strong>resolution</strong> : Indicating resolution in degreee, here 0.09°x0.09° (about 10km) in latitude and longitude directions [0.09]</li>
 <li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 072]</li>
@@ -239,6 +239,7 @@
   loadTable("csv-table", "../../../assets/csv/RAQDPS_Variables-List_en.csv");
 </script>
 
+<p>NOTE: 24-hour averages and maximums are available for days 1, 2, and 3 for near-surface PM2.5 concentrations associated with vegetation and forest fires' plumes.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
