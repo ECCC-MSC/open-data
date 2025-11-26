@@ -10,6 +10,17 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.15
+
+* date:
+* announcements:
+    * Not announced
+* new content:
+    * Remove links to RDPS and GDPS 4 pannels charts on WxO (no more available)	
+* improvements:
+    * NA
+* bug fixes:
+    * NA
 
 # 2.9.14
 
