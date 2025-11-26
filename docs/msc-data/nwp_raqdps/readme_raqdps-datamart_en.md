@@ -53,7 +53,7 @@ Where:
 * __MSC__ : Constant string indicating the Meteorological Service of Canada, source of data
 * __RAQDPS__ : Constant string indicating that data is from the Regional Air Quality Deterministic Prediction System 
 * __VAR__ : Variable type included in the file [PM2.5, PM2.5-WildfireSmokePlume, PM10, PM10-WildfireSmokePlume, NO2, NO, O3, SO2]
-* __LVL__ : Vertical level [Sfc for the surface, EAtm for the column integral]
+* __LVL__ : Vertical level [Sfc for the surface, AGL-2m for 2 meters above ground level, EAtm for the column integral]
 * __Grille__ : Horizontal grid rotated lat-lon [RLatLon]
 * __resolution__ : Indicating resolution in degreee, here 0.09°x0.09° (about 10km) in latitude and longitude directions [0.09]
 * __PT{hhh}H__: Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 072]
@@ -74,6 +74,8 @@ Example of forecast file name:
 <script>
   loadTable("csv-table", "../../../assets/csv/RAQDPS_Variables-List_en.csv");
 </script>
+
+NOTE: 24-hour averages and maximums are available for days 1, 2, and 3 for near-surface PM2.5 concentrations associated with vegetation and forest fires' plumes.
 
 ## Support
 

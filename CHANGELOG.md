@@ -13,16 +13,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.14
 
-* date: 
+* date:2025-11-26 
 * announcements:
     * Not announced
 * new content:
-    *  
+    * RAQDPS: Add 24-h max and avg PM2.5 associated with vegetation and forest fires' plumes
+    * Add GeoMet access to OHPS page	
 * improvements:
-    * 
+    * NA
 * bug fixes:
     * Fix NAEFS COMET link
+    * Fix typo in RDPA FRench acronym
 
+	
 # 2.9.13
 
 * date: 2025-11-04
