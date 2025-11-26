@@ -102,5 +102,5 @@ The most frequently asked questions about MSC's open data are collected in a [FA
 
 ## Contact us
 
-User support is provided on a best effort basis during normal business hours. For any questions or comments regarding the data services or the documentaiton, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
+User support is provided on a best effort basis during normal business hours. For any questions or comments regarding data services or the documentation, please [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
 
