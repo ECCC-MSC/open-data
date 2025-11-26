@@ -3,6 +3,7 @@ Concentrations des PM2.5,PM2.5,Colonne atmosphérique,kg/m<sup>3</sup>
 Concentrations des PM2.5,PM2.5,Surface,kg/m<sup>3</sup>
 Concentrations des PM2.5 associées aux panaches de feux de forêt et de végétation,PM2.5-WildfireSmokePlume,Colonne atmosphérique,kg/m<sup>3</sup>
 Concentrations des PM2.5 associées aux panaches de feux de forêt et de végétation,PM2.5-WildfireSmokePlume,Surface,kg/m<sup>3</sup>
+Concentrations des PM2.5 associées aux panaches de feux de forêt et de végétation,PM2.5-WildfireSmokePlume,2 m au-dessus du niveau du sol,kg/m<sup>3</sup>
 Concentrations des PM10,PM10,Colonne atmosphérique,kg/m<sup>3</sup>
 Concentrations des PM10,PM10,Surface,kg/m<sup>3</sup>
 Concentrations des PM10 associées aux panaches de feux de forêt et de végétation,PM10-WildfireSmokePlume,Colonne atmosphérique,kg/m<sup>3</sup>

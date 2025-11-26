@@ -3,6 +3,7 @@ PM2.5 concentrations,PM2.5,Atmospheric Column,kg/m<sup>3</sup>
 PM2.5 concentrations,PM2.5,Surface,kg/m<sup>3</sup>
 PM2.5 concentrations associated with vegetation and forest fires' plumes,PM2.5-WildfireSmokePlume,Atmospheric Column,kg/m<sup>3</sup>
 PM2.5 concentrations associated with vegetation and forest fires' plumes,PM2.5-WildfireSmokePlume,Surface,kg/m<sup>3</sup>
+PM2.5 concentrations associated with vegetation and forest fires' plumes,PM2.5-WildfireSmokePlume,2 m Above Ground Level,kg/m<sup>3</sup>
 PM10 concentrations,PM10,Atmospheric Column,kg/m<sup>3</sup>
 PM10 concentrations,PM10,Surface,kg/m<sup>3</sup>
 PM10 concentrations associated with vegetation and forest fires' plumes,PM10-WildfireSmokePlume,Atmospheric Column,kg/m<sup>3</sup>
