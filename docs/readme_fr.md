@@ -101,11 +101,6 @@ La [Politique d'utilisation des services de données ouvertes du SMC](usage-poli
 Les questions les plus fréquemment posées au sujet des données ouvertes du SMC sont rassemblées dans une [FAQ](faq/readme_fr.md). Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à nous contacter.
 </br></br>
 
-## Votre avis nous intéresse
-
-Afin que la documentation des données ouvertes du Service météorologique du Canada réponde à vos besoins, merci de nous faire part de votre avis en répondant à ce court [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=42af4a30-525a-4514-8905-21c027aeea35&lang=FR).
-</br></br>
-
 ## Contactez-nous
 
 Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui demandent de l'aide sont invités à [communiquer avec nous](https://meteo.gc.ca/mainmenu/contact_us_f.html).

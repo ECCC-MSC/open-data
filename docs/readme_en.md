@@ -100,11 +100,6 @@ The [MSC Open Data Service Usage Policy](usage-policy/readme_en.md) determines w
 The most frequently asked questions about MSC's open data are collected in a [FAQ](faq/readme_en.md). If you cannot find the answer to your question, please contact us.
 </br></br>
 
-## Your opinion matters to us
-
-In order for the Meteorological Service of Canada open data user documentation to meet your needs, please let us know what you think by answering this short [questionnaire](https://eccc.sondage-survey.ca/f/s.aspx?s=42af4a30-525a-4514-8905-21c027aeea35&lang=EN&r=6ea11a22-4476-4dd6-b02a-dbbc15e9e3d4).
-</br></br>
-
 ## Contact us
 
 User support is provided on a best effort basis during normal business hours. Users requesting support are invited to [contact us](https://www.weather.gc.ca/mainmenu/contact_us_e.html).
