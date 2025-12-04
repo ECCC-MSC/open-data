@@ -12,13 +12,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.9.15
 
-* date:
+* date: 2015-12-04
 * announcements:
     * Not announced
 * new content:
     * Remove links to RDPS and GDPS 4 pannels charts on WxO (no more available)	
+    * Add information regarding AMQP connections limit in the MSC Open Data usage policy
+    * Add information regarding NodeJS usage in the AMQP documentation
 * improvements:
-    * NA
+    * Improve the "Contact us" section asking for feedback regarding documentation as well
 * bug fixes:
     * NA
 

@@ -129,9 +129,13 @@ Note: The `sr3 add` command automatically places the example config file into th
 
 * AMQP protocol on Wikipedia:
 [https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
-
 * AMQP python library: 
 [https://pypi.python.org/pypi/amqplib](https://pypi.python.org/pypi/amqplib)
+
+## Best Practices
+
+* For users with NodeJS applications, we recommend using the [amqplib](https://github.com/amqp-node/amqplib) library
+* We also discourage the use of the `node-amqp` NodeJS library as is it for the moment, an unmaintained project
 
 ## Contact Us
 
