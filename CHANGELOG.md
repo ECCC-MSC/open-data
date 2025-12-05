@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.9.16
+
+* date: 2015-12-05
+* announcements:
+    * Not announced
+* new content:
+    * NA
+* improvements:
+    * NA
+* bug fixes:
+    * Fix MSC Open Data policy page
+
+
 # 2.9.15
 
 * date: 2015-12-04
