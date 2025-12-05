@@ -41,12 +41,16 @@ Règles d'utilisation des services GeoMet du SMC :
 * Pour les flux spécifiques aux couches de GeoMet du SMC, l'extension du fournisseur pour les requêtes WMS GetCapabilities spécifiques aux couches doit être utilisée pour récupérer des charges utiles XML plus petites
     * Un exemple est fourni dans la section [Conseils d'utilisation de GeoMet du SMC](../msc-geomet/readme_fr.md#Accès)
 
-Règles d'utilisation des services HTTPS de Datamart du SMC :
+Règles d'utilisation des services HTTPS du Datamart du SMC :
 
 * Pour les flux de données en temps réel, utiliser le [service de notifications et de récupération de données en temps réel AMQPS](../msc-datamart/amqp_fr.md)
     * Ne pas demander les listes de répertoires pour évaluer la disponibilité de nouvelles données, le service de notifications AMQPS doit être utilisé pour ce besoin
     * L'utilisation des commandes `wget` ou `curl` est réservée à la récupération de données « ad hoc » seulement. Pour la récupération systématique de données, le service AMQPS doit être utilisé
-    * Les applications utilisant 500 [**connexions AMQP**](https://www.rabbitmq.com/docs/connections) ou plus peuvent voir leur accès limité ou révoqué. Pour obtenir des directives générales sur la configuration des connexions AMQP, veuillez consulter la documentation relative à la bibliothèque AMQP de votre application
+
+Règles d'utilisation des services AMQPS du Datamart du SMC :
+
+* Les applications utilisant 500 [**connexions AMQP**](https://www.rabbitmq.com/docs/connections) ou plus peuvent voir leur accès limité ou révoqué 
+    * Pour obtenir des directives générales sur la configuration des connexions AMQP, veuillez consulter la documentation relative à la bibliothèque AMQP de votre application
 
 ## Mise à jour de la Politique d'utilisation des services
 

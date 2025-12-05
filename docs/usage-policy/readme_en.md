@@ -45,9 +45,12 @@ Usage rules for MSC Datamart HTTPS services:
 
 * For real-time data workflows, use the [AMQPS real-time push notification and data retrieval service](../msc-datamart/amqp_en.md)
     * Do not request directory listings to assess the availability of new data, the AMQPS notification service must be used for this need
-    * Use of `wget` or `curl` commands is reserved for ad hoc data retrieval only. For systematic data retrieval, the AMQPS service must be used 
-    * Applications using 500 or more [**AMQP connections**](https://www.rabbitmq.com/docs/connections) may be subject to having their access limited or otherwise revoked. For general guidelines on configuring AMQP connections, please consult the documentation for your application's AMQP library
+    * Use of `wget` or `curl` commands is reserved for ad hoc data retrieval only. For systematic data retrieval, the AMQPS service must be used
 
+Usage rules for MSC Datamart AMQPS services:
+
+* Applications using 500 or more [**AMQP connections**](https://www.rabbitmq.com/docs/connections) may be subject to having their access limited or otherwise revoked
+    * For general guidelines on configuring AMQP connections, please consult the documentation for your application's AMQP library
 
 ## Service Usage Policy Updates
 
