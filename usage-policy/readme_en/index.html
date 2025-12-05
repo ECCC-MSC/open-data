@@ -187,8 +187,14 @@
 <ul>
 <li>For real-time data workflows, use the <a href="../../msc-datamart/amqp_en/">AMQPS real-time push notification and data retrieval service</a><ul>
 <li>Do not request directory listings to assess the availability of new data, the AMQPS notification service must be used for this need</li>
-<li>Use of <code>wget</code> or <code>curl</code> commands is reserved for ad hoc data retrieval only. For systematic data retrieval, the AMQPS service must be used </li>
-<li>Applications using 500 or more <a href="https://www.rabbitmq.com/docs/connections"><strong>AMQP connections</strong></a> may be subject to having their access limited or otherwise revoked. For general guidelines on configuring AMQP connections, please consult the documentation for your application's AMQP library</li>
+<li>Use of <code>wget</code> or <code>curl</code> commands is reserved for ad hoc data retrieval only. For systematic data retrieval, the AMQPS service must be used</li>
+</ul>
+</li>
+</ul>
+<p>Usage rules for MSC Datamart AMQPS services:</p>
+<ul>
+<li>Applications using 500 or more <a href="https://www.rabbitmq.com/docs/connections"><strong>AMQP connections</strong></a> may be subject to having their access limited or otherwise revoked<ul>
+<li>For general guidelines on configuring AMQP connections, please consult the documentation for your application's AMQP library</li>
 </ul>
 </li>
 </ul>
