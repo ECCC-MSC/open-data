@@ -230,8 +230,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 
 ![RDPA.24F_PR with CAPA24-LINEAR style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=RDPA.24F_PR&STYLES=RDPA-WXO&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=600&HEIGHT=400&FORMAT=image/png)
 
-Users can also choose to apply their own styles either by pointing to
-an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding. Also, for `SLD_BODY`, the value of LAYER in the WMS GetMap request and the value of se:Name (or se%3AName when encoded) in `SLD_BODY` needs to be different for the request to work.
+Users can also choose to apply their own styles either by pointing to an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding.
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
