@@ -406,11 +406,11 @@ CQL2: ?filter=((properties.type=SA OR properties.type=SP) AND (properties.issuer
 
 CQL supports numeric comparisons using operators.
 
-**3.1)** Filter for temperature `TEMP` between 10°C and 12.5°C .
+**3.1)** Filter for temperature `TEMP` values less than 10°C.
 ```python
-CQL2: ?filter=properties.TEMP BETWEEN 10 AND 12.5
+CQL2: ?filter=properties.TEMP < 10
 ```
-[https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP BETWEEN 10 AND 12.5](https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP%20BETWEEN%2010%20AND%2012.5)
+[https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP < 10](https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP%20%3C10)
 </br></br>
 
 **3.2)** Filter for Air Quality Health Index (AQHI) forecasts classified as low risk (1-3).
@@ -420,7 +420,7 @@ CQL2: ?filter=properties.aqhi<=3
 [https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items?filter=properties.aqhi<=3](https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items?filter=properties.aqhi%3C=3)
 </br></br>
 
-**3.3)** Filter for AQHI observations lower than 2 that is in a specified bounding box (Nova Scotia) with `geometry`.
+**3.3)** Filter for AQHI observations lower than 2 that is in a specified bounding box (Nova Scotia).
 ```python
 CQL2: ?bbox=-70,42,-60,45&filter=properties.aqhi<2
 ```
