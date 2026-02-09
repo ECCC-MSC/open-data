@@ -296,7 +296,7 @@ Under the `links` key, the available values for the `?f` parameter can be found.
 
 ## OGC API - Advanced filtering with CQL2
 
-GeoMet-OGC-API now supports data filtering using Common Query Language (CQL2) though the `?filter` query parameter in the HTTP request. `CQL2` is an [OGC standard](https://docs.ogc.org/is/21-065r2/21-065r2.html) designed to support advanced query of geospatial data and perform filtering directly on the server. By using CQL2, clients can reduce the amount of data returned and retrieve only data of interest.
+GeoMet-OGC-API supports data filtering using Common Query Language (CQL2) though the `?filter` query parameter in the HTTP request. `CQL2` is an [OGC standard](https://docs.ogc.org/is/21-065r2/21-065r2.html) designed to support advanced query of geospatial data and perform filtering directly on the server. By using CQL2, clients can reduce the amount of data returned and retrieve only data of interest.
 
 
 CQL2 allows users to construct flexible and precise queries based on feature attributes and geometry.</br>
@@ -311,7 +311,7 @@ The full list of predicates available is accessible from the [OGC CQL2 standard]
 
 String values must be enclosed in single quotes `''` and the property path (`properties.attribute`) must exactly match the attribute name defined in the collection schema (is case-sensitive). For GeoMet-OGC-API collections the synthax is:
 ```html
-https://api.weather.gc.ca/collections/{collectionID}/items?filter=<CQL expression>&<CQL expression>
+https://api.weather.gc.ca/collections/{collectionID}/items?filter=<CQL2 expression>&<CQL2 expression>
 ```
 
 ---------------------
@@ -404,7 +404,7 @@ CQL2: ?filter=((properties.type=SA OR properties.type=SP) AND (properties.issuer
 ---------------------
 ##### <span class="badge badge-info">3. Searching comparison operators</span>
 
-CQL supports numeric comparisons using operators.
+CQL2 supports numeric comparisons using operators.
 
 **3.1)** Filter for temperature `TEMP` values less than 10°C.
 ```python
