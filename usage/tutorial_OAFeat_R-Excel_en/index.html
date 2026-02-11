@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#tutorial-querying-data-with-ogc-api-features-using-r-and-vba-programming-languages" class="nav-link">Tutorial: querying data with OGC API - Features using R and VBA programming languages</a>
+            <li class="nav-item" data-level="1"><a href="#tutorial-querying-data-with-ogc-api-features-using-the-r-and-vba-programming-languages" class="nav-link">Tutorial: querying data with OGC API - Features using the R and VBA programming languages</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#r-example" class="nav-link">R example</a>
               <ul class="nav flex-column">
@@ -146,7 +146,7 @@
 <p><a href="../tutorial_OAFeat_R-Excel_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
 <p><a href="../../readme_en/">TOC</a> &gt; <a href="../readme_en/">Usage overview</a> &gt; Using OGC API - Features with R and VBA</p>
-<h1 id="tutorial-querying-data-with-ogc-api-features-using-r-and-vba-programming-languages">Tutorial: querying data with OGC API - Features using R and VBA programming languages</h1>
+<h1 id="tutorial-querying-data-with-ogc-api-features-using-the-r-and-vba-programming-languages">Tutorial: querying data with OGC API - Features using the R and VBA programming languages</h1>
 <p>The <a href="https://eccc-msc.github.io/open-data/msc-geomet/ogc_api_en/#ogc-api-features">OGC API - Features</a> web services available in GeoMet-OGC-API offer the capability to query vector geospatial data and retrieve it in GeoJSON and CSV formats. The output file can then be used for display or additional data processing. This tutorial will show you how you can:</p>
 <ul>
 <li>Query and retrieve vector geospatial data from GeoMet-OGC-API with <a href="https://www.r-project.org/">R</a> and Excel's <a href="https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">VBA</a></li>
@@ -196,9 +196,17 @@ print(p)
 <p>Next we'll go to <code>File &gt; New File &gt; R Script</code>, which will open an empty untitled file. We will then copy and paste the code shown above inside it and we'll save the file (either by clicking on the <code>Save</code> icon or by pressing <code>Ctrl S</code>). You may name it however you like, just make sure the extension of the file is <code>.R</code> (i.e. <code>myfilename.R</code>). To run the entire code, simply click on the <code>Source</code> button (the <code>Run</code> button only runs lines you've highlighted inside your file). The result should look like this:</p>
 <p><img alt="RStudio complete overview" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/tutorial_OAFeat_R_en.jpg" /></p>
 <p>We will now explain the code we've just run line by line so that you understand what has been done:</p>
+<ul>
+<li>
 <p>The first two lines with <code>library</code> are just to tell the code we'll be using these two libraries. The <a href="https://cran.r-project.org/web/packages/Tplyr/vignettes/options.html#:~:text=The%20value%20of%20scipen%20is,to%20understand%20with%20an%20example.&amp;text=In%20'Tplyr'%2C%20we%20have%20the%20option%20tplyr.">options(scipen=999)</a> isn't used in this particular example, but it removes scientific notation if you ever need it. </p>
+</li>
+<li>
 <p>Inside the <a href="https://swcarpentry.github.io/r-novice-inflammation/11-supp-read-write-csv/">read.csv()</a> function, you put the desired url with whatever parameters you want to have. For example, here we want the <code>aqhi-observations-realtime</code> data, we want the data to be sorted according to the <code>observation_datetime</code> field, we want a <code>limit</code> of 100 lines of data and we only want the data for <code>Ottawa</code>. Finally, we just add <code>&amp;f=csv</code> at the end so that the data is in CSV format. It will thus load all the data from the CSV file inside the variable named <code>X</code> as a <code>dataset</code> inside R Studio. </p>
+</li>
+<li>
 <p>The <code>format_str</code> is used to tell the code how our dates are formatted so it knows how to interpret them. You can find more info on what each letter means <a href="https://www.stat.berkeley.edu/~s133/dates.html">here</a>. The next line is so the code understands that the values in <code>observation_datetime</code> aren't just text, they represent the date and time. We will thus use <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/as.POSIX*">as.POSIXct()</a> to achieve this goal. We will give it <code>aqhi_obs_realtime$observation_datetime</code>, which means "all data inside the <code>aqhi_obs_realtime</code> dataset under the <code>observation_datetime</code> field". We'll also specify that the timezone is <code>GMT</code> and we will tell it how the dates and times are formatted so that it can understand it, using the <code>format_str</code> we've just defined. We then overwrite <code>aqhi_obs_realtime$observation_datetime</code> with the datetimes formatted as datetimes instead of just as text.</p>
+</li>
+</ul>
 <p>Now we come to the <a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a> function and all the formatting options that we've added to it:</p>
 <ul>
 <li>First the function itself. We need to pass it the dataset that we want to use to plot, then we need to pass it our <a href="https://ggplot2.tidyverse.org/reference/aes.html">aesthetic mappings aes</a>, in which all we've done is tell it what columns we wish to be using. This line by itself will only show an empty graph since all we've done here is tell it what we'll be plotting, not how.</li>

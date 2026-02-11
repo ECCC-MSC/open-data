@@ -154,6 +154,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#ogc-api-advanced-filtering-with-cql2" class="nav-link">OGC API - Advanced filtering with CQL2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -315,6 +319,7 @@ In the following query, a single entity is requested, for example, to inspect it
 <p>Examples with the <code>DATE</code> property:</p>
 <p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=DATE">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=DATE</a> <code>ascending</code></p>
 <p><a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=-DATE">https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=01AP004&amp;offset=1000&amp;limit=1000&amp;sortby=-DATE</a> <code>descending</code></p>
+<hr />
 <h2 id="ogc-api-coverages">OGC API - Coverages</h2>
 <p>The <a href="https://ogcapi.ogc.org/coverages/">OGC API - Coverages</a> standard specifies the fundamental API building blocks for interacting with coverages (raster data). The spatial data community uses the term "coverage" to refer to homogeneous sets of values ​​located in space and time, such as data from spatiotemporal sensors, images, simulation and statistics.</p>
 <h5 id="get-collectionscoverageid-coverage-collection-landing-page"><span class="badge badge-info">GET collections/{coverageId}</span> - Coverage collection landing page</h5>
@@ -355,7 +360,248 @@ Returns in json format by default:</p>
 <h3 id="export-to-gtiff-or-netcdf-format"><span class="badge badge-light">Export to GTiff or NetCDF format</span></h3>
 <p>Queries pointing to collections pages can be exported in GTiff format and NetCDF format if available. Consult the root of a given coverage collection to identify the available response data formats. For example:</p>
 <p><a href="https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute?f=json">https://api.weather.gc.ca/collections/climate:cmip5:projected:annual:absolute?f=json</a></p>
-<p>Under the <code>links</code> key, the available values for the <code>?f</code> parameter can be found. In this case the coverage data can be requested in JSON via <code>?f=json</code> or as NetCDF via <code>?f=NetCDF</code>.</p></div>
+<p>Under the <code>links</code> key, the available values for the <code>?f</code> parameter can be found. In this case the coverage data can be requested in JSON via <code>?f=json</code> or as NetCDF via <code>?f=NetCDF</code>.</p>
+<hr />
+<h2 id="ogc-api-advanced-filtering-with-cql2">OGC API - Advanced filtering with CQL2</h2>
+<p>GeoMet-OGC-API supports data filtering using Common Query Language (CQL2) though the <code>?filter</code> query parameter in the HTTP request. <code>CQL2</code> is an <a href="https://docs.ogc.org/is/21-065r2/21-065r2.html">OGC standard</a> designed to support advanced query of geospatial data and perform filtering directly on the server. By using CQL2, clients can reduce the amount of data returned and retrieve only data of interest.</p>
+<p>CQL2 allows users to construct flexible and precise queries based on feature attributes and geometry.</br></p>
+<ul>
+<li>Exact matches: <code>=</code> match features where an attribute has exact value;</br></li>
+<li>Partial string or keywords: <code>LIKE</code> with <code>%</code> wildcard;</br></li>
+<li>Comparison operators: <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code> filter numeric or temporal values;</br></li>
+<li>Logical operators:<code>AND</code>, <code>OR</code>, <code>NOT</code> compare conditions;</br></li>
+<li>Spatial predicates: <code>INTERCEPTS</code>, <code>DISJOINT</code> filter based on geometry.</br></li>
+</ul>
+<p>The full list of predicates available is accessible from the <a href="https://docs.ogc.org/is/21-065r2/21-065r2.html">OGC CQL2 standard</a>.</p>
+<p>String values must be enclosed in single quotes <code>''</code> and the property path (<code>properties.attribute</code>) must exactly match the attribute name defined in the collection schema (is case-sensitive). For GeoMet-OGC-API collections the synthax is:</p>
+<pre><code class="language-html">https://api.weather.gc.ca/collections/{collectionID}/items?filter=&lt;CQL2 expression&gt;&amp;&lt;CQL2 expression&gt;
+</code></pre>
+<hr />
+<h5 id="1-searching-exact-matches"><span class="badge badge-info">1. Searching exact matches</span></h5>
+<p><strong>1.1)</strong> Filter all meteorological bulletin that have the type <code>CA</code>, and are from issuing office <code>AO</code>. </br></p>
+<pre><code class="language-python">CQL2: ?filter=properties.type=CA AND properties.issuing_office=AO
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=CA%20AND%20properties.issuing_office=AO">https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=CA AND properties.issuing_office=AO</a>
+</br> </br></p>
+<p><strong>1.2)</strong> Filter <code>Climate - Daily Observations</code> by attribute <code>LOCAL_DAY</code>. Here, <code>LOCAL_DAY</code> must be in capital letters, as defined in schema.</p>
+<pre><code class="language-python">CQL2: ?filter=properties.LOCAL_DAY=15
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.LOCAL_DAY=15">https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.LOCAL_DAY=15</a></p>
+<hr />
+<h5 id="2-searching-partial-keywords"><span class="badge badge-info">2. Searching partial keywords</span></h5>
+<p>CQL supports partial text matching using the <code>LIKE</code> operator. It allows you to search for substrings within text attributes by using the <code>%</code> character as a wildcard, which can represent zero or more characters. The comparison is case-insensitive, but search string <strong>must</strong> be entered as <u>lowercase</u> and in between <u>single quote</u>. If the attribute value contains multiple words, the <code>LIKE</code> predicate is applied to the entire text value, matching the pattern against any substring within it.</p>
+<p><strong>2.1)</strong> Find all <code>STATION_NAME</code> containing the keyword <code>LAKE</code>. In that case, <code>'%lak%'</code> matches case insensitive keywords such as <code>Lake, lak5, SPOKIN LAKE 4E, 2LAKE9, LaK</code>.</br></p>
+<pre><code>CQL2: ?filter=properties.STATION_NAME LIKE '%lak%'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27%lak%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%lak%'</a>
+</br></br></p>
+<p><strong>2.2)</strong> Filter only specific name of station whose name is (or is <code>NOT</code>) in a given list. The wildcard <code>%</code> can also be used in the list.</br></p>
+<pre><code>CQL2: ?filter=properties.STATION_NAME NOT IN ('lake', 'river')
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20NOT%20IN%20(%27lake%27,%20%27river%27)">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME NOT IN ('lake', 'river')</a>
+</br></br></p>
+<p><strong>2.3)</strong> To filter for <u>more than a word</u>, you need two different <code>LIKE</code> predicates. In this case, specifying 'quinsam' <code>AND</code> 'river' allows to filter for station name containing <strong>both</strong> 'quinsam' and 'river' keywords. Using <code>OR</code> would return station name containing either 'quinsam', 'river' or both.</br></p>
+<pre><code>CQL2: ?filter=properties.STATION_NAME LIKE '%quisam%' AND properties.STATION_NAME LIKE '%river%'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27%quinsam%%27%20AND%20properties.STATION_NAME%20LIKE%20%27%river%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%quinsam%' AND properties.STATION_NAME LIKE '%river%'</a>
+</br></br></p>
+<p><strong>2.4)</strong> Extracts station name starting with the letter <code>K</code>. You can place the wildcard <code>%</code> accordingly. Here, you see that it is not necessarily the first word of the station name that is a match. The <code>LIKE</code> predicate will compare every keywords of the text.</p>
+<pre><code>CQL2: ?filter=properties.STATION_NAME LIKE 'k%'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME%20LIKE%20%27k%%27">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE 'k%'</a></p>
+<p><img alt="CQL LIKE Wildcard Start" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Like_Wildcard_Start_en.png" />
+</br></p>
+<p><strong>2.5)</strong> Extracts station name ending with the letter <code>T</code>. You can place the wildcard <code>%</code> accordingly. Here, you see that it is not necessarily the last word of the station name that is a match. The <code>LIKE</code> predicate will compare every keywords of the text.</p>
+<pre><code>CQL2: ?filter=properties.STATION_NAME LIKE '%t'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME+LIKE+%27%25t%27&amp;limit=10&amp;offset=0">https://api.weather.gc.ca/collections/climate-normals/items?filter=properties.STATION_NAME LIKE '%t'</a></p>
+<p><img alt="CQL LIKE Wildcard End" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Like_Wildcard_End_en.png" />
+</br></p>
+<p><strong>2.6)</strong> Searching meteorological bulletins by the identifier. It's not possible to manually search by <code>id</code> on the interface. Users can use CQL filters and leverage the <a href="https://eccc-msc.github.io/open-data/msc-data/bulletins/readme_bulletins-datamart_en/#directory-and-file-name-nomenclature">bulletin filename nomenclature documentation</a>.</br></p>
+<pre><code>CQL2: ?filter=properties.identifier LIKE '%WWCN70%'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=properties.identifier%20LIKE%20%27%wwcn70%%27">https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=properties.identifier LIKE '%wwcn70%'</a>
+</br></br></p>
+<p><strong>2.7)</strong> Search bulletins with partial keyword <code>CYOY</code> in the url.</p>
+<pre><code>CQL2: ?filter=properties.type=SA AND properties.issuer_code=CWAO AND properties.url LIKE '%cyoy%'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=SA%20AND%20properties.issuer_code=CWAO%20AND%20properties.url%20LIKE%20%27%cyoy%%27">https://api.weather.gc.ca/collections/bulletins-realtime/items?filter=properties.type=SA AND properties.issuer_code=CWAO AND properties.url LIKE '%cyoy%'</a> </br></p>
+<p><code>?q=</code> is the "full text search" capability in the MSC GeoMet OGC API. The equivalent query is:</p>
+<pre><code class="language-html">https://api.weather.gc.ca/collections/bulletins-realtime/items?type=SA&amp;issuer_code=CWAO&amp;q=*CYOY*
+</code></pre>
+<p></br></p>
+<p><strong>2.8)</strong>  Search bulletins by type and issuer code.</p>
+<pre><code class="language-python">CQL2: ?filter=((properties.type=SA OR properties.type=SP) AND (properties.issuer_code=CWAO OR properties.issuer_code=CYOY))
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=((properties.type=SA%20OR%20properties.type=SP)%20AND%20(properties.issuer_code=CWAO%20OR%20properties.issuer_code=CYOY))">https://api.weather.gc.ca/collections/bulletins-realtime/items/?filter=((properties.type=SA OR properties.type=SP) AND (properties.issuer_code=CWAO OR properties.issuer_code=CYOY))</a>
+</br></p>
+<hr />
+<h5 id="3-searching-comparison-operators"><span class="badge badge-info">3. Searching comparison operators</span></h5>
+<p>CQL2 supports numeric comparisons using operators.</p>
+<p><strong>3.1)</strong> Filter for temperature <code>TEMP</code> values less than 10°C.</p>
+<pre><code class="language-python">CQL2: ?filter=properties.TEMP &lt; 10
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP%20%3C10">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP &lt; 10</a>
+</br></br></p>
+<p><strong>3.2)</strong> Filter for Air Quality Health Index (AQHI) forecasts classified as low risk (1-3).</p>
+<pre><code class="language-python">CQL2: ?filter=properties.aqhi&lt;=3
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items?filter=properties.aqhi%3C=3">https://api.weather.gc.ca/collections/aqhi-forecasts-realtime/items?filter=properties.aqhi&lt;=3</a>
+</br></br></p>
+<p><strong>3.3)</strong> Filter for AQHI observations lower than 2 that is in a specified bounding box (Nova Scotia).</p>
+<pre><code class="language-python">CQL2: ?bbox=-70,42,-60,45&amp;filter=properties.aqhi&lt;2
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?bbox=-70,42,-60,45&amp;filter=properties.aqhi%3C2">https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?bbox=-70,42,-60,45&amp;filter=properties.aqhi&lt;2</a></p>
+<p><img alt="CQL Nova Scotia AQHI" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_NovaScotia_AQHI_en.png" />
+</br></p>
+<hr />
+<h5 id="4-searching-with-logical-operator"><span class="badge badge-info">4. Searching with logical operator</span></h5>
+<p>CQL supports range-based filtering using the <code>BETWEEN</code> operator. This operator is inclusive for both boundary values. Using <code>BETWEEN</code> is the equivalent of <code>&gt;=</code> and <code>&lt;=</code>, but improves readability.</p>
+<pre><code>synthax: [`NOT`] &lt;attribute&gt; BETWEEN &lt;lower_bound&gt; AND &lt;upper_bound&gt;
+</code></pre>
+<p><strong>4.1)</strong> Filter items for temperature <code>TEMP</code> between 10°C and 12.5°C. For numeric values (number), no quotes required.</p>
+<pre><code class="language-python">CQL2: ?filter=properties.TEMP BETWEEN 10 AND 12.5
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP%20BETWEEN%2010%20AND%2015">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.TEMP BETWEEN 10 AND 12.5</a>
+</br></br></p>
+<p><strong>4.2)</strong> Filter for wind direction between north-northeast (NNE 23°) and northeast (NE 45°) and speed above 25 km/h.</p>
+<pre><code class="language-python">CQL2: ?filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;= 25
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.WIND_DIRECTION%20BETWEEN%2023%20AND%2045%20AND%20properties.WIND_SPEED%20%3E=%2025">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;= 25</a>
+</br></br></p>
+<p><strong>4.3)</strong> Filter items between two datetime. Datetime values must be enclosed in single quotes, because it is defined as <code>string</code> in the collection queryables.</p>
+<pre><code>CQL2: ?filter=properties.LOCAL_DATE BETWEEN '2023-11-28 14:00:00' AND '2024-11-28 14:00:00'
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-hourly/items?limit=100&amp;filter=properties.LOCAL_DATE+BETWEEN+%272023-11-28+14%3A00%3A00%27+AND+%272024-11-28+14%3A00%3A00%27">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.LOCAL_DATE BETWEEN '2023-11-28 14:00:00' AND '2024-11-28 14:00:00'</a></p>
+<p><img alt="CQL Climate Hourly" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Schema_ClimateHourly_en.png" />
+</br></p>
+<p><strong>4.4)</strong> Search for Air Quality Health Index observations with moderate risk only (<code>BETWEEN 4 AND 6</code>) in a <code>BBOX</code>.</p>
+<pre><code>CQL2: ?filter=BBOX(geometry, -140, 50, -85, 63) AND properties.aqhi BETWEEN 4 AND 6
+CQL2: ?filter=BBOX(geometry, -140, 50, -85, 63) AND properties.aqhi&gt;=7 (high risk)
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?filter=BBOX(geometry,%20-140,%2050,%20-85,%2063)%20AND%20properties.aqhi%20BETWEEN%204%20AND%206">https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?filter=BBOX(geometry, -140, 50, -85, 63) AND properties.aqhi BETWEEN 4 AND 6</a>
+</br></p>
+<hr />
+<h5 id="5-spatial-searches"><span class="badge badge-info">5. Spatial searches</span></h5>
+<p>Spatial searches allow users to personalize their queries based on geographical locations.</p>
+<p><strong>5.1)</strong> Find features that <code>INTERSECTS</code> a polygon. Returns all features that touch, crosses, fall in or overlaps a polygon. A polygon of <code>x</code> sides has to have <code>x+1</code> points because the last point repeats the first one to close the shape of the polygon. Specify the longitude fist, then the latitude. </br></p>
+<pre><code class="language-python">CQL2: ?filter=INTERSECTS(geometry, POLYGON((lon_1 lat_1,lon_2 lat_2,lon_3 lat_3,lon_4 lat_4,lon_1 lat_1)))
+CQL2: ?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/swob-stations/items?filter=INTERSECTS(geometry,%20POLYGON((-56%2047,-55%2047,-55%2048,-56%2048,-56%2047)))">https://api.weather.gc.ca/collections/swob-stations/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))</a>
+→ Returns all SWOB stations intersecting the polygon that has a width of 1 degree (west-east longitudes) and a height of 1 degree (north-south latitude).</br>
+</br></br></p>
+<p><strong>5.2)</strong> Find features with <code>DISJOINT</code>. Returns all features outside of a polygon, that do not intersect the geometry. It is the opposite of <code>INTERSECTS</code>.</p>
+<pre><code class="language-python">CQL2: ?filter=DISJOINT(geometry, POLYGON((lon_1 lat_1,lon_2 lat_2,lon_3 lat_3,lon_4 lat_4,lon_1 lat_1)))
+CQL2: ?filter=DISJOINT(geometry, POLYGON((-80 42,-50 42,-50 60,-80 60,-80 42)))
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/swob-stations/items?filter=DISJOINT(geometry,%20POLYGON((-80%2042,-50%2042,-50%2060,-80%2060,-80%2042)))">https://api.weather.gc.ca/collections/swob-stations/items?filter=DISJOINT(geometry, POLYGON((-80 42,-50 42,-50 60,-80 60,-80 42)))</a>
+→ Returns all SWOB stations that <strong>do not</strong> intersect the polygon that has a width of 30 degrees (longitudes) and 18 degrees (latitudes) in Eastern Canada.</br>
+<img alt="CQL SWOB station" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_SWOB_Station_en.png" /></p>
+<hr />
+<h5 id="6-examples-of-multi-parameter-filtering"><span class="badge badge-info">6. Examples of multi-parameter filtering</span></h5>
+<p><strong>6.1)</strong> Filtering <code>Climate - Daily Observations</code> for a weather station in Lanaudiere for wet and warms summer months for a station where:</br></p>
+<ul>
+<li>The <code>CLIMATE_IDENTIFIER</code> is 7014160 (L'Assomption station);</br></li>
+<li>The <code>MEAN_TEMPERATURE</code> is 18°C and 28°C;</br></li>
+<li>The <code>TOTAL_PRECIPITATION</code> is between 5 and 40 mm;</br></li>
+<li>The <code>LOCAL_YEAR</code> is between 2010 and 2020;</br></li>
+<li>The <code>LOCAL_MONTH</code> is between June and September (JJAS).</br></li>
+</ul>
+<pre><code>CQL2: ?filter=CLIMATE_IDENTIFIER = '7014160' AND properties.MEAN_TEMPERATURE BETWEEN 18 AND 28 AND properties.TOTAL_PRECIPITATION BETWEEN 5 AND 40 AND properties.LOCAL_YEAR BETWEEN 2010 AND 2020 AND properties.LOCAL_MONTH BETWEEN 6 AND 9
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.CLIMATE_IDENTIFIER=%277014160%27%20AND%20properties.MEAN_TEMPERATURE%20BETWEEN%2018%20AND%2028%20AND%20properties.TOTAL_PRECIPITATION%20BETWEEN%205%20AND%2040%20AND%20properties.LOCAL_YEAR%20BETWEEN%202010%20AND%202020%20AND%20properties.LOCAL_MONTH%20BETWEEN%206%20AND%209">https://api.weather.gc.ca/collections/climate-daily/items?filter=CLIMATE_IDENTIFIER = '7014160' AND properties.MEAN_TEMPERATURE BETWEEN 18 AND 28 AND properties.TOTAL_PRECIPITATION BETWEEN 5 AND 40 AND properties.LOCAL_YEAR BETWEEN 2010 AND 2020 AND properties.LOCAL_MONTH BETWEEN 6 AND 9</a></p>
+<p><img alt="CQL Assomption Station" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Items_AssomptionStation_en.png" />
+</br></p>
+<p><strong>6.2)</strong> Find all AQHI observations in a polygon around Calgary for today where the AQHI value is greater than 6 (high risk) within a polygon.</p>
+<pre><code class="language-python">CQL2: ?filter=INTERSECTS(geometry,POLYGON((-114.2 50.9, -113.8 50.9, -113.8 51.2, -114.2 51.2, -114.2 50.9))) AND properties.aqhi&gt;6
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?filter=INTERSECTS(geometry,POLYGON((-114.2%2050.9,%20-113.8%2050.9,%20-113.8%2051.2,%20-114.2%2051.2,%20-114.2%2050.9)))%20AND%20properties.aqhi%3E4&amp;lang=en">https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?filter=INTERSECTS(geometry,POLYGON((-114.2 50.9, -113.8 50.9, -113.8 51.2, -114.2 51.2, -114.2 50.9))) AND properties.aqhi&gt;4</a></p>
+<p><img alt="CQL Intersects Calgary" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Intersects_Calgary_en.png" />
+</br></p>
+<p><strong>6.3)</strong> Retrieve meteorogical stations meeting all of the following conditions: </br></p>
+<ul>
+<li>Located within a specified polygon (Western canada region) with <code>INTERSECTS</code>; </br></li>
+<li>Have a station containing the keyword "LAKE" with <code>LIKE</code>;</br></li>
+<li>Reports minimum temperature <code>BETWEEN</code> -20 and -10°C;</br></li>
+<li>Either have maximum speed gusts above 20 km/h.</br></li>
+</ul>
+<pre><code class="language-python">CQL2: ?filter=INTERSECTS(geometry,POLYGON((-140 48,-95 48,-95 60,-140 60,-140 48))) AND properties.STATION_NAME LIKE '%lake%' AND properties.MIN_TEMPERATURE BETWEEN -20 AND -10 AND properties.SPEED_MAX_GUST &gt;= 20
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=INTERSECTS(geometry,POLYGON((-140%2048,-95%2048,-95%2060,-140%2060,-140%2048)))%20AND%20properties.STATION_NAME%20LIKE%20%27%lake%%27%20AND%20properties.MIN_TEMPERATURE%20BETWEEN%20-20%20AND%20-10%20AND%20properties.SPEED_MAX_GUST%20%3E=%2020">https://api.weather.gc.ca/collections/climate-daily/items?filter=INTERSECTS(geometry,POLYGON((-140 48,-95 48,-95 60,-140 60,-140 48))) AND properties.STATION_NAME LIKE '%lake%' AND properties.MIN_TEMPERATURE BETWEEN -20 AND -10 AND properties.SPEED_MAX_GUST &gt;= 20</a>
+ </br></br></p>
+<p><strong>6.4a)</strong> Identify regions of elevated risk of wildfire (dry, hot and windy conditions) for the 2025 wildfire season.</br></p>
+<ul>
+<li>During the wildfire 2025 season (April to October);</br></li>
+<li>High temperatures (<code>&gt;=</code> 30°C);</br></li>
+<li>Low relative humidity (<code>&lt;=</code> 30%);</br></li>
+<li>Strong winds (speed <code>&gt;=</code> 30 km/h).</br></li>
+</ul>
+<pre><code class="language-python">Climate - Hourly Observations
+CQL2: ?filter=properties.LOCAL_YEAR=2025 AND properties.LOCAL_HOUR=12 AND properties.LOCAL_MONTH BETWEEN 4 AND 10 AND properties.TEMP &gt;=30 AND properties.RELATIVE_HUMIDITY &lt;=30 AND properties.WIND_SPEED &gt;= 30
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.LOCAL_YEAR=2025%20AND%20properties.LOCAL_HOUR=12%20AND%20properties.LOCAL_MONTH%20BETWEEN%205%20AND%208%20AND%20properties.TEMP%20%3E=30%20AND%20properties.RELATIVE_HUMIDITY%20%3C=30%20AND%20properties.WIND_SPEED%20%3E=%2030%20&amp;f=json">https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.LOCAL_YEAR=2025 AND properties.LOCAL_HOUR=12 AND properties.LOCAL_MONTH BETWEEN 5 AND 8 AND properties.TEMP &gt;=30 AND properties.RELATIVE_HUMIDITY &lt;=30 AND properties.WIND_SPEED &gt;= 30</a>
+</br></br></p>
+<p><strong>6.4b)</strong> Using the same conditions as for the hourly observations, now we add the <code>24h</code> total precipitation amount from <code>Climate - Daily observations</code> to account for the dryness. Total rainfall over 24 hours less than an arbitrary value of 3 mm.</p>
+<pre><code class="language-python">Climate - Daily Observations
+CQL2: ?filter=properties.LOCAL_YEAR=2025 AND properties.LOCAL_MONTH BETWEEN 4 AND 10 AND properties.MAX_TEMPERATURE&gt;=30 AND properties.MIN_REL_HUMIDITY&lt;=30 AND properties.SPEED_MAX_GUST&gt;30 AND properties.TOTAL_PRECIPITATION&lt;=3
+</code></pre>
+<p><a href="https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.LOCAL_YEAR=2025%20AND%20properties.LOCAL_MONTH%20BETWEEN%205%20AND%208%20AND%20properties.MAX_TEMPERATURE%3E=30%20AND%20properties.MIN_REL_HUMIDITY%3C=30%20AND%20properties.SPEED_MAX_GUST%3E30%20AND%20properties.TOTAL_PRECIPITATION%3C=3%20&amp;f=json">https://api.weather.gc.ca/collections/climate-daily/items?filter=properties.LOCAL_YEAR=2025 AND properties.LOCAL_MONTH BETWEEN 5 AND 8 AND properties.MAX_TEMPERATURE&gt;=30 AND properties.MIN_REL_HUMIDITY&lt;=30 AND properties.SPEED_MAX_GUST&gt;30 AND properties.TOTAL_PRECIPITATION&lt;=3</a></p>
+<p><img alt="CQL URL Wildfire" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_URL_Wildfire_en.png" />
+<img alt="CQL Wildfire" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-geomet/cql/CQL_Wildfire_en.png" /></p>
+<hr />
+<h5 id="curl-command-and-python"><span class="badge badge-info">Curl command and Python</span></h5>
+<p>It was shown that it's possible to make <code>HTTP</code> request with CQL filters directly in the search bar of the search engine. It's also possible to retrieve the data via the <code>curl</code> command in the terminal. To save the output of what the request returns, use the <code>-o</code> option.</p>
+<ul>
+<li>Using curl with the full encoded url.</li>
+</ul>
+<pre><code>curl [encoded_url] [option]
+curl https://api.weather.gc.ca/collections/climate-hourly/items?filter=properties.WIND_DIRECTION%20BETWEEN%2023%20AND%2045%20AND%20properties.WIND_SPEED%20%3E=%2025%20&amp;lang=en -o /path/to/output_file.json
+</code></pre>
+<ul>
+<li>Encoding the url directly with the <code>--data-urlencode</code> and <code>-G</code> GET request options. Users can add multiple <code>--data-urlencode</code> parameters (equivalent to <code>&amp;</code>).</li>
+</ul>
+<pre><code>curl -G [basepath] --data-urlencode [CQL EXPRESSION]
+curl -G &quot;https://api.weather.gc.ca/collections/climate-hourly/items?&quot; --data-urlencode &quot;filter=properties.WIND_DIRECTION BETWEEN 23 AND 45 AND properties.WIND_SPEED &gt;=25&quot; --data-urlencode &quot;lang=en&quot;
+</code></pre>
+<p><strong>Query with Python</strong> <br>
+To parse CQL filters and make HTTP requests, install the <code>pygeofilter</code> and <code>requests</code> Python modules.</p>
+<pre><code class="language-bash">pip3 install pygeofilter requests
+</code></pre>
+<pre><code class="language-python">import requests
+import json
+from pygeofilter.parsers.ecql import parse
+
+# GeoMet-OGC-API endpoint.
+api_url = &quot;https://api.weather.gc.ca/collections/climate-daily/items&quot;
+
+# CQL filters.
+cql_filter = (
+    &quot;properties.LOCAL_YEAR = 2025 AND &quot;
+    &quot;properties.LOCAL_MONTH BETWEEN 6 AND 9 AND &quot;
+    &quot;properties.MAX_TEMPERATURE &gt;= 30&quot;
+)
+# Validate CQL filters before API request.
+try:
+    parse(cql_filter)
+except Exception as e:
+    raise ValueError(f&quot;Invalid CQL filter: {e}&quot;)
+
+params = {
+    &quot;filter&quot;: cql_filter,
+    &quot;lang&quot;: &quot;en&quot;,
+    &quot;limit&quot;: 100
+}
+# Sends GET request to the API and encode url.
+response = requests.get(api_url, params=params)
+print(f&quot;The encoded url is: {response.url}&quot;)
+
+# Format json in output file.
+data = response.json()
+climate_output_file = &quot;climate_daysAbove30deg_JJAS_2025.json&quot;
+with open(climate_output_file, &quot;w&quot;) as fh:
+    json.dump(data, fh)
+</code></pre></div>
             </div>
         </div>
 
