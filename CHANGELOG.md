@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.0
+
+* date: 2026-02-11
+* announcements:
+    * [new CQL2 documentation announcement](https://comm.collab.science.gc.ca/mailman3/hyperkitty/list/geomet-info@comm.collab.science.gc.ca/2026/2/) to GeoMet-Info mailing list on February 12, 2026 for new CQL2 documentation.
+* new content:
+    * Document GeoMet-OGC-API CQL2 filtering in english and french
+* improvements:
+    * Update SLD_BODY description in WMS Handling Styles section
+* bug fixes:
+    * NA
+
+
 # 2.9.16
 
 * date: 2015-12-05
