@@ -35,7 +35,8 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Discovery metadata
 
-* Upcoming
+* The [metadata of the Daily Extremes of Records for precipitation is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/8fc6ad48-1a98-45fa-9eba-9a27ddae5014)
+* The [metadata of the Daily Extremes of Records for snowfall is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a115568f-3edc-42cb-ad31-e99f3cf5e37e)
 
 ## Technical documentation
 

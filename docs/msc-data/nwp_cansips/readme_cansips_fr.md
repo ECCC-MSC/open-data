@@ -32,7 +32,9 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-Les [métadonnées du Système de Prévision Interannuelle et Saisonnière Canadien sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/922781a9-bfef-56b9-a438-493ada629d47)
+* Les [métadonnées de prévisions saisonnières du Système de Prévision Interannuelle et Saisonnière Canadien sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/922781a9-bfef-56b9-a438-493ada629d47)
+* Les [métadonnées de rétro-prévision du Système de Prévision Interannuelle et Saisonnière Canadien sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/0f4c5558-b51e-46e8-9e0c-b75545f217aa)
+
 
 ## Produits
 

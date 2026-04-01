@@ -50,7 +50,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-À venir.
+Les [métadonnées du Système global de prévision d'ensemble sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/6d9dd2f8-202e-58cb-a110-e2168832aacb)
+
 
 ## Documentation technique
 

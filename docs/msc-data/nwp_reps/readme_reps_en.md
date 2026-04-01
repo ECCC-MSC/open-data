@@ -29,7 +29,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Discovery metadata
 
-The [metadata of the Regional Ensemble Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/5b401fa0-6c29-57f0-b3d5-749f301d829d)
+The [metadata of the Regional Ensemble Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/13e27861-bf00-599b-9b24-9a50dbfed7ed)
 
 ## Technical documentation
 

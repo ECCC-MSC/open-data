@@ -35,7 +35,10 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Discovery metadata
 
-The [metadata of the Air Quality Health Index (AQHI) observation and forecast are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f).
+* The [metadata of the Air Quality Health Index (AQHI) forecasts is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
+* The [metadata of the Air Quality Health Index (AQHI) observations is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/28936e1b-681f-4c73-b04a-e86d4b3917c6)
+* The [metadata of the Air Quality Health Index (AQHI) stations is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/4fe11fe4-242c-4111-80ae-4adb12188533)
+
 
 ## Products
 

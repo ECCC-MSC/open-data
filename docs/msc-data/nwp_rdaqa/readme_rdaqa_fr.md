@@ -30,7 +30,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-Les [métadonnées de l'Analyse régionale déterministe de la qualité de l'air sont accessibles sur le portail du gouvernement ouvert](https://catalogue.ec.gc.ca/geonetwork/srv/fre/catalog.search#/metadata/1f11ed9f-b13d-497b-853a-997b991195a1).
+Les [métadonnées de l'Analyse régionale déterministe de la qualité de l'air sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/1f11ed9f-b13d-497b-853a-997b991195a1)
 
 
 ## Documentation technique

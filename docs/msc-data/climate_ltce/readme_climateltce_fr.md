@@ -35,7 +35,8 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-* À venir
+* Les [métadonnées des records des extrêmes quotidiens de précipitation sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/8fc6ad48-1a98-45fa-9eba-9a27ddae5014)
+* Les [métadonnées des records des extrêmes quotidiens de chute de neige sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a115568f-3edc-42cb-ad31-e99f3cf5e37e)
 
 ## Documentation technique
 
