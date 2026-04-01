@@ -35,7 +35,9 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-Les [métadonnées d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
+* Les [métadonnées de prévisions pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
+* Les [métadonnées d'observations pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/28936e1b-681f-4c73-b04a-e86d4b3917c6)
+* Les [métadonnées des stations pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/4fe11fe4-242c-4111-80ae-4adb12188533)
 
 ## Produits
 

@@ -32,7 +32,8 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Discovery metadata
 
-The [metadata of the Canadian Seasonal to Inter-annual Prediction System are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/922781a9-bfef-56b9-a438-493ada629d47).
+* The [metadata of the Canadian Seasonal to Inter-annual Prediction System forecasts are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/922781a9-bfef-56b9-a438-493ada629d47)
+* The [metadata of the Canadian Seasonal to Inter-annual Prediction System hindcast are available on the Open Government Portal](https://open.canada.ca/data/en/dataset/0f4c5558-b51e-46e8-9e0c-b75545f217aa)
 
 ## Products
 

@@ -48,7 +48,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ### Discovery metadata
 
-Upcoming.
+The [metadata of the Global Ensemble Prediction System is available on the Open Government Portal](https://open.canada.ca/data/en/dataset/6d9dd2f8-202e-58cb-a110-e2168832aacb)
 
 ## Technical documentation
 
