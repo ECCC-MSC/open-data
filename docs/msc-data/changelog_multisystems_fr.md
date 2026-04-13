@@ -7,6 +7,16 @@
 
 # Changements apportés aux services opérationnels du Centre Météorologique Canadien (CMC)
 
+## Le mardi 14 avril 2026
+
+### Nouvelle infrastructure de calcul haute performance
+
+Un projet majeur de migration vers une nouvelle infrastructure de super-informatique utilisée par le Service météorologique du Canada a été effectué avec succès le 14 avril 2026. Cette migration a été le résultat d'un effort conjoint et soutenu pendant plusieurs mois par des experts du Centre météorologique canadien, de la branche des sciences et de la technologie et de Services partagés Canada.
+
+Au cours des prochaines années, cette mise à jour importante permettra d'autres transferts technologiques de la recherche et du développement vers les opérations, comme la mise en oeuvre d'approches innovatives basées sur l’intelligence artificielle. De telles mises à niveau sont essentielles afin de fournir une amélioration continue des services de prévisions numériques du temps et de l’environnement à la population canadienne, aux agences gouvernementales et autres partenaires.
+
+La note officielle annonçant ce changement est disponible via [ce lien](https://dd.meteo.gc.ca/doc/genots/2026/04/13/NOCN03_CWAO_131600___07178).
+
 ## Le mardi 28 juin 2022
 
 ### Nouvelle infrastructure de calcul haute performance

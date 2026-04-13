@@ -19,6 +19,7 @@ This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / 
 * [Data available on the GeoMet-OGC-API geospatial web services](https://api.weather.gc.ca/collections):
     * [AQHI - Observations](https://api.weather.gc.ca/collections/aqhi-observations-realtime)
     * [AQHI - Forecasts](https://api.weather.gc.ca/collections/aqhi-forecasts-realtime)
+    * [AQHI - Stations](https://api.weather.gc.ca/collections/aqhi-stations)
 * [GeoJSON data for AQHI, available on HPFX, the alternative server of the MSC Datamart](readme_aqhi-datamartjson_en.md)
 * [CSV data for AQHI, available on the MSC Datamart](readme_aqhi-datamartcsv_en.md), including chemical species forecast data from numerical air quality models
 * [XML data for AQHI, available on the MSC Datamart](readme_aqhi-datamartxml_en.md) 

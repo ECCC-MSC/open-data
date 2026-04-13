@@ -19,6 +19,7 @@ Ces données sont respectivement disponibles sur les API / services web [GeoMet 
 * [Données disponibles sur les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections) :
     * [CAS - Observations](https://api.meteo.gc.ca/collections/aqhi-observations-realtime)
     * [CAS - Prévisions](https://api.meteo.gc.ca/collections/aqhi-forecasts-realtime)
+    * [CAS - Stations](https://api.meteo.gc.ca/collections/aqhi-stations)
 * [Données pour la CAS, disponibles en format GeoJSON sur HPFX, le serveur alternatif du Datamart du SMC](readme_aqhi-datamartjson_fr.md)
 * [Données pour la CAS, disponibles en format CSV sur le Datamart du SMC](readme_aqhi-datamartcsv_fr.md), dont des données de prévisions d'espèces chimiques provenant de modèles numériques de qualité de l'air
 * [Données pour la CAS, disponibles en format XML sur le Datamart du SMC](readme_aqhi-datamartxml_fr.md)
