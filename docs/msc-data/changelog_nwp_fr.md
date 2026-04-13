@@ -6,6 +6,13 @@
 
 # Changements au système opérationnel du Centre Météorologique Canadien (CMC)
 
+
+## 2026
+
+### 14 avril 2026
+
+* [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-14-avril-2026)
+
 ## 2025
 
 ### 24 juillet 2025
