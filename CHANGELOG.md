@@ -10,6 +10,23 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.1
+
+* date: 2026-04-14
+* announcements:
+    * Not announced
+* new content:
+    * Add input for U3 in the main NWEP changelog 
+    * Add input for most of the systems changelogs following updated version with U3
+    * Add AQHI stations list link through MSC-GeoMet-OGC API in the main AQHI page
+    * Add some missing metadata links 
+    * Update SWOB nomenclature sections to add minutely files
+ * improvements:
+    * NA
+* bug fixes:
+    * Fix some metadata links
+    * Fix MANOBS and AWOS links in bulletins pages
+
 # 2.10.0
 
 * date: 2026-02-11
