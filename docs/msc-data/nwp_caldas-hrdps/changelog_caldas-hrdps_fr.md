@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système canadien d'assimilation de données de surface dans le Système à haute résolution de prévision déterministe (SHRPD)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SCanADS-SHRPD à la version 4.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du Système canadien d'assimilation de données de surface dans le SHRPD 4.0.0 du Centre métérologique canadien

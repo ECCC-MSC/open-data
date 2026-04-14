@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Regional Air Quality Deterministic Prediction System (RAQDPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 25.1.0 of the RAQDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 25 of the Regional Air Quality Deterministic Prediction System (RAQDPS) 

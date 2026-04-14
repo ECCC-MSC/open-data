@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Ensemble Wave Prediction System (GEWPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 1.4.0 of the GEWPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 # Tuesday June 11, 2024
 
 ### Upgrade to Version 1.3.0 of the GEWPS.

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Integrated Nowcasting System (INCS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 2.5.0 of the INCS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 # Tuesday June 11, 2024
 
 ### Upgrade to Version 2.3.0 of the INCS.

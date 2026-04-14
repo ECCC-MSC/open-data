@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble (SRPE)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SRPE à la version 5.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du Système régional de prévision d'ensemble (SRPE) 5.0.0 du Centre météorologique canadien (CMC)

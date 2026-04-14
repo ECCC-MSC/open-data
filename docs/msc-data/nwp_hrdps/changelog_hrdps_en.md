@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Prediction System (HRDPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 7.1.0 of the HRDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Thursday July 24, 2025
 
 ### Implementation of a statistical post-processing system, PROGNOS v1.0.0, for the High Resolution Deterministic Prediction System (HRDPS) 7.0.0 of the Canadian Meteorological Centre (CMC)

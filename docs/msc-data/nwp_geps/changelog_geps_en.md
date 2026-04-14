@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Ensemble Prediction System (GEPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 8.1.0 of the GEPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ### Monday May 26th, 2025
 
 ### Addition of ATMS and CrIS observations from the NOAA-21 satellite in the GEPS

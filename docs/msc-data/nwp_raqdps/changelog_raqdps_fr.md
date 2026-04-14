@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe de la qualité de l'air (SRPDQA)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SRPDQA à la version 25.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du Système régional de prévision déterministe de la qualité de l'air à la version 25

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Deterministic Wave Prediction System (GDWPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 1.10.0 of the GDWPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 1.9.0 of the GDWPS.
