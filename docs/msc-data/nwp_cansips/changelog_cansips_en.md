@@ -6,6 +6,11 @@
 
 # Chronology of changes to the Canadian Seasonal to Inter-annual Prediction System (CanSIPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 3.1.0 of the CanSIPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
 
 ## Tuesday June 11, 2024
 

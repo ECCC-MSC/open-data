@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système canadien de prévision de l'Arctique (SCPA)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SCPA à la version 3.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 18 juin 2025
 
 ### Fin de service du SHRPD-Nord, à nouveau remplacé par le Système canadien de prévision de l'Arctique (SCPA)

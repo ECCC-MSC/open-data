@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 9.1.0 of the GDPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday July 23, 2025
 
 ### Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Global Deterministic Prediction System (GDPS) 9.0.0 of the Canadian Meteorological Centre (CMC)

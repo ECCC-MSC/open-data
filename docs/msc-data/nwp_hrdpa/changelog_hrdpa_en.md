@@ -6,6 +6,12 @@
 
 # Chronology of changes to the High Resolution Deterministic Precipitation Analysis system (CaPA-HRDPA)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 6.1.0 of the HRDPA adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday September 11, 2024
 
 ### Temporary removal of the Fire Weather network observations (OMNRF) from the Regional Deterministic Precipitation Analysis System (HRDPA) assimilation at the Canadian Meteorological Centre (CMC)

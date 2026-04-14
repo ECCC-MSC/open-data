@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés à l'Analyse régionale déterministe de qualité de l’air (ARDQA) 
 
+## Le mardi 14 avril 2026
+
+### Mise à jour de l'ARDQA à la version 2.3.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour de l'Analyse régionale déterministe de qualité de l’air (ARDQA) version 2.2.0 du Centre météorologique canadien (CMC)

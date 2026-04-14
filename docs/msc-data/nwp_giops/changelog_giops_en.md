@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Global Ice and Ocean Prediction System (GIOPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 3.6.0 of the GIOPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 3.5.0 of the Global Ice and Ocean Prediction System (GIOPS) at the Canadian Meteorological Centre

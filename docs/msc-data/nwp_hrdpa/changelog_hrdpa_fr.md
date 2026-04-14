@@ -1,10 +1,16 @@
-[In English](changelog_hrdpa_en.md)
+hangeloIn English](changelog_hrdpa_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [AHRDP](readme_hrdpa_fr.md) > Changements au AHRDP
 
 # Chronologie des changements apportés au Système d'analyse à haute résolution déterministe de précipitation (CaPA-AHRDP)
+
+## Le mardi 14 avril 2026
+
+### Mise à jour de l'AHRPD à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
 
 ## Le mercredi 11 septembre 2024
 

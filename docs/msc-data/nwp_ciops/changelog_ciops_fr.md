@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système de prévision côtier océan-glace (SPCOG)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SPCOG-Ouest et SPCOG-Est aux versions respectives 2.4.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du Système de prévision côtier océan-glace est (SPCOG-Est) et west (SPCOG-Ouest) du Centre météorologique canadien (CMC)

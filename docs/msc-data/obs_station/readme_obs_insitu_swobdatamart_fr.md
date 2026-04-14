@@ -67,7 +67,7 @@ où :
 
 * __AAAA-MM-JJ-hhmm__ : Date d'observation (UTC)
 * __XXXX__ : Identificateur de station (identifiant OMM).
-* __TYPE__ : AUTO ou MANNED (station automatique ou manuelle).
+* __TYPE__ : AUTO, AUTO-minute ou MANNED (station automatique ou manuelle). Certaines stations automatiques peuvent être à la minute.
 * __CCz__ : Optionnel. 'Cor' signifie Correction et z est une indication alphabétique du nombre de corrections ('A' signifiant la première, 'B' la seconde, etc.). Par défaut ce champ est absent pour la première observation.
 * __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
 
@@ -79,7 +79,7 @@ où :
 
 * __latest__ : Chaîne de caractères constante indiquant que c'est la dernière observation.
 * __XXXX__ : Identificateur de station.
-* __TYPE__ :  AUTO ou MANNED (station automatique ou manuelle).
+* __TYPE__ :  AUTO, AUTO-minute ou MANNED (station automatique ou manuelle). Certaines stations automatiques peuvent être à la minute.
 * __swob.xml__ : Chaîne de caractères constante indiquant le produit et le format.
 
 Exemple :

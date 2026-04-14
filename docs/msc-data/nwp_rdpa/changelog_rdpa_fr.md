@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés à l'Analyse régionale déterministe de précipitation (CaPA-ARDP)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour de l'ARPD à la version 6.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 11 septembre 2024
 
 ### Retrait temporaire des observations du réseau Fire Weather (OMNRF) du système d'assimilation de l'Analyse régionale déterministe de précipitation (ARDP) au Centre météorologique canadien (CMC)

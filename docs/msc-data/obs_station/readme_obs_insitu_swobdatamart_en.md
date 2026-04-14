@@ -67,7 +67,7 @@ where :
 
 * **YYYY-MM-DD-hhmm** : Observation date in UTC.
 * __XXXX__ : Station code (WMO ID).
-* __TYPE__ : AUTO or MANNED station.
+* __TYPE__ : AUTO, AUTO-minute or MANNED station (automatic or manned stations). Some automatic stations can be minutely.
 * __CCz__ : Optional. Cor stands for Correction and z is a letter indication the number of corrections ('A' stands for the first, 'B' for the second, etc.). By default, this field would not be there for the first observation.
 * __swob.xml__: Constant string indicating the product and the format.
 
@@ -79,7 +79,7 @@ where :
 
 * __latest__ : Constant string indicating that this is the latest observation received from this station.
 * __XXXX__ : Station code.
-* __TYPE__ : AUTO or MANNED station.
+* __TYPE__ : AUTO, AUTO-minute or MANNED station (automatic or manned stations). Some automatic stations can be minutely.
 * __swob.xml__ : Constant string indicating the product and the format.
 
 Example :

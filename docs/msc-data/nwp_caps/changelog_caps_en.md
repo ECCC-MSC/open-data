@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Canadian Arctic Prediction System (CAPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 3.1.0 of the CAPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Wednesday June 18th, 2025
 
 ### Decommission of HRDPS North, replaced again by the coupled Canadian Arctic Prediction System (CAPS)

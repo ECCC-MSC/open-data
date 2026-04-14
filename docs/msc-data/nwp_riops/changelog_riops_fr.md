@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision océan-glace (SRPOG)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SRPOG à la version 2.5.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 # Le mardi 11 juin 2024
 
 ### Mise à jour du Système régional de prévision océan-glace (SRPOG) 2.4.0 du Centre météorologique canadien (CMC)

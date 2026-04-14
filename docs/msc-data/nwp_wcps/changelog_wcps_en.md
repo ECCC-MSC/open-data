@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Water Cycle Prediction System (WCPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 3.4.0 of the WCPS adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Tuesday June 11, 2024
 
 ### Upgrade to Version 3.3.0 of the Water Cycle Prediction System (WCPS) at the Canadian Meteorological Centre

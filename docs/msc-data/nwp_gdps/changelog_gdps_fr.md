@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SGPD à la version 9.1.0 suite à la nouvelle infrastructure de calcul haute performance. 
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mercredi 23 juillet 2025
 
 ### Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système global de prévision déterministe (SGPD) 9.0.0 du Centre météorologique canadien (CMC)

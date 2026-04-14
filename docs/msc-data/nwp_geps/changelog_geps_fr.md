@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système global de prévision d'ensemble (SGPE)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SGPE à la version 8.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ### Le lundi 26 mai 2025
 
 ### Ajout des observations ATMS et CrIS du satellite NOAA-21 dans le SGPE

@@ -6,6 +6,12 @@
 
 # Chronology of changes to the Coastal Ice and Ocean Prediction System (CIOPS)
 
+## Tuesday April 14, 2026
+
+### Upgrade to Version 2.4.0 of the CIOPS-Eat and CIOPS-West, respectively adapted to the New High Performance Computing Infrastructure.
+
+See details [at this link](../changelog_multisystems_en.md)
+
 ## Tuesday June 11, 2024
 
 ### Upgrade of the Coastal Ice and Ocean Prediction System East (CIOPS-East) and West (CIOPS-West) at the Canadian Meteorological Centre

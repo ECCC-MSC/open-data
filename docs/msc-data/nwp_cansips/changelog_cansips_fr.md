@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système de prévision interannuelle et saisonnière canadien (SPISCan)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SPISCan à la version 3.1.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour vers la version 3.0.0 du Système de prévision interannuelle et saisonnière canadien (SPISCan) du Centre météorologique canadien (CMC)

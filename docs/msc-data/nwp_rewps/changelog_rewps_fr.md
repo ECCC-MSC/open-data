@@ -6,6 +6,12 @@
 
 # Chronologie des changements apportés au Système régional de prévision d'ensemble de vague (SRPEV)
 
+## Le mardi 14 avril 2026
+
+### Mise à jour du SRPEV à la version 1.8.0 suite à la nouvelle infrastructure de calcul haute performance.
+
+Voir les détails via [ce lien](../changelog_multisystems_fr.md).
+
 ## Le mardi 11 juin 2024
 
 ### Mise à jour du  Système régional de prévision d'ensemble de vague (SRPEV) 1.7.0 du Centre météorologique canadien (CMC)
