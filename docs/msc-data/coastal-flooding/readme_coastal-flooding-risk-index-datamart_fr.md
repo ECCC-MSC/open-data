@@ -10,20 +10,19 @@ Cette page décrit les données d'indice de risque de [submersion côtière](rea
 
 ## Adresse des données 
 
-Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
+Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.
 
 Les données d'indice de risque de submersion côtière se trouvent à l'adresse :
 
-[https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.meteo.gc.ca/coastal-flooding/risk-index)
-
+* [https://dd.meteo.gc.ca/today/coastal-flooding/risk-index](https://dd.meteo.gc.ca/today/coastal-flooding/risk-index/) 
 
 ## Nomenclature des noms de fichiers 
 
 Les noms de fichiers suivent la nomenclature ci-dessous :
 
-`{YYYYMMDD}T{HHmm}Z_MSC_CoastalFloodRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json`
+`{YYYYMMDD}T{HHmm}Z_MSC_CoastalFloodingRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json`
 
 où :
 
@@ -32,7 +31,7 @@ où :
 * __HHmm__ : Heure et minute à laquelle les données sont émises
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __CoastalFloodRiskIndex__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit l'indice de risque de submersion côtière
+* __CoastalFloodingRiskIndex__ : Chaîne de caractères constante indiquant le nom du produit contenu dans les fichiers, soit l'indice de risque de submersion côtière
 * __SPC-code__ : Identifiant du centre de prévision des intempéries responsable d'émettre et de distribuer le produit [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. Voir la liste des bureaux émetteurs ci-dessous
 * __coverage-code__ : Région couverte pour l'indice de risque de submersion côtière. Voir la liste des régions couvertes pour chaque bureau émetteur ci-dessous
 * __PTxxxH__ : Heure de validité 
@@ -45,7 +44,7 @@ où :
 
 Exemple :
 
-* 20240627T2200Z_MSC_CoastalFloodRiskIndex_ASPC_ASPC_PT014H00M_v1.json
+* 20240627T2200Z_MSC_CoastalFloodingRiskIndex_ASPC_ASPC_PT014H00M_v1.json
 
 Notes:
 
