@@ -2,11 +2,11 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > Coastal Flooding
+[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > Coastal Flooding 
 
 # Coastal flooding data
 
-The Costal Flooding Risk Index in GeoJSON format is a geo and time referenced polygon product issued by the Meteorological Service of Canada (MSC) to articulate the coastal flooding risk, impact and probability. Products are issued daily by Storm Prediction Centres and intended to provide early notification, out to 5 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
+The costal flooding risk index in GeoJSON format is a geo and time referenced polygon product issued by the Meteorological Service of Canada (MSC) to articulate the coastal flooding risk, impact and probability. Products are issued daily by Storm Prediction Centres and intended to provide early notification, out to 5 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
 
 ## Access
 
@@ -14,8 +14,8 @@ The Costal Flooding Risk Index in GeoJSON format is a geo and time referenced po
 
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
-* [Data available via the GeoMet-Weather geospatial web services](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
-* [GeoJSON data available on the MSC Datamart](readme_coastal-flooding-risk-index-datamart_en.md)
+* [Costal flooding risk index data available via the GeoMet-Weather geospatial web services](https://eccc-msc.github.io/open-data/msc-geomet/readme_en/)
+* [Costal flooding risk index data in GeoJSON format available on the MSC Datamart](readme_coastal-flooding-risk-index-datamart_en.md)
 
 An [Overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available. 
 
