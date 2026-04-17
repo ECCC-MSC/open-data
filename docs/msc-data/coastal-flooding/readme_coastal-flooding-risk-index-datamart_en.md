@@ -10,19 +10,18 @@ This page describes the [coastal flooding](readme_coastal-flooding_en.md) risk i
 
 ## Data address 
 
-MSC testing data repository DD-Alpha data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is also available.
-
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as it becomes available. An [overview and examples to access and use Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoJSON file is displayed.
 
 Coastal flooding risk index data can be found at :
 
-[https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index/](https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index)
+* [https://dd.weather.gc.ca/today/coastal-flooding/risk-index/](https://dd.weather.gc.ca/today/coastal-flooding/risk-index)
 
 ## File name nomenclature 
 
 File names follow the nomenclature below:
 
-`{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json`
+`{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodingRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json`
 
 where :
 
@@ -31,7 +30,7 @@ where :
 * __HHmm__: Hour and minute at which data is transmitted
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant character string for Meteorological Service of Canada, the data source
-* __CoastalFloodRiskIndex__ : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.
+* __CoastalFloodingRiskIndex__ : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.
 * __SPC-code__: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. See list of issuing offices below
 * __coverage-code__: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below
 * __PTxxxH__ : Validity time 
@@ -44,7 +43,7 @@ where :
 
 Example:
 
-* 20240410T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json
+* 20240410T2200Z_MSC_CoastalFloodingRiskIndex_aspc_atlantic_PT014H00M_v1.json
 
 Notes:
 
