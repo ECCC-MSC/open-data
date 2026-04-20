@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.2
+
+* date: 2026-04-20
+* announcements:
+    * Not announced
+* new content:
+    * Add coastal flooding risk index on DD ops. Update the Datamart page and add link to GeoMet
+ * improvements:
+    * NA
+* bug fixes:
+    * NA
+
 # 2.10.1
 
 * date: 2026-04-14
