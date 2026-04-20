@@ -157,13 +157,15 @@
 <h1 id="coastal-flooding-risk-index-data">Coastal flooding risk index data</h1>
 <p>This page describes the <a href="../readme_coastal-flooding_en/">coastal flooding</a> risk index data in GeoJSON format available on the MSC Datamart.</p>
 <h2 id="data-address">Data address</h2>
-<p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples of how to access and use Meteorological Service of Canada open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoJSON file is displayed.</p>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use Meteorological Service of Canada's open data</a> is also available.
+The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoJSON file is displayed.</p>
 <p>Coastal flooding risk index data can be found at :</p>
-<p><a href="https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index">https://dd.alpha.weather.gc.ca/coastal-flooding/risk-index/</a></p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/today/coastal-flooding/risk-index">https://dd.weather.gc.ca/today/coastal-flooding/risk-index/</a></li>
+</ul>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>File names follow the nomenclature below:</p>
-<p><code>{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json</code></p>
+<p><code>{YYYYYMMDD}T{HHmm}Z_MSC_CoastalFloodingRiskIndex_{SPC-Code}_{coverage-code}_{PTxxxH}_{version-id}.json</code></p>
 <p>where :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of data transmission</li>
@@ -171,7 +173,7 @@
 <li><strong>HHmm</strong>: Hour and minute at which data is transmitted</li>
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant character string for Meteorological Service of Canada, the data source</li>
-<li><strong>CoastalFloodRiskIndex</strong> : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.</li>
+<li><strong>CoastalFloodingRiskIndex</strong> : Constant string indicating the name of the product contained in the files, i.e. the coastal flooding risk index.</li>
 <li><strong>SPC-code</strong>: Identifier of the Storm Prediction Center responsible for issuing and distributing the product [ASPC, NLWO, OSPC, PASPC, PSPC, QSPC]. See list of issuing offices below</li>
 <li><strong>coverage-code</strong>: Region covered for the coastal flooding risk index. See list of regions covered for each issuing office below</li>
 <li><strong>PTxxxH</strong> : Validity time <ul>
@@ -188,7 +190,7 @@
 </ul>
 <p>Example:</p>
 <ul>
-<li>20240410T2200Z_MSC_CoastalFloodRiskIndex_aspc_atlantic_PT014H00M_v1.json</li>
+<li>20240410T2200Z_MSC_CoastalFloodingRiskIndex_aspc_atlantic_PT014H00M_v1.json</li>
 </ul>
 <p>Notes:</p>
 <ul>
