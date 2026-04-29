@@ -34,7 +34,6 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs :
 
-* [https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw) (forecast members and products at 2.5 degrees)
 * [https://dd.weather.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/model_cansips/100km/forecast) (forecast members and products at 1 degree)
 * [https://dd.weather.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.weather.gc.ca/today/model_cansips/100km/hindcast) (hindcast)
 * [https://dd.weather.gc.ca/today/model_cansips/100km/verification/{YYYY}](https://dd.weather.gc.ca/today/model_cansips/100km/verification) (vérification products at 1 degree)
@@ -53,17 +52,6 @@ where :
 
 Tables list the values of various parameters of the CanSIPS lat-lon grid, according to the resolution.
 
-### Data at 2.5x2.5 degrees resolution
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 145 |
-| nj | 73 | 
-| resolution | 2.5° |
-| coordinates of the first grid point | 90° S  0° E | 
-
-### Data at 1.0x1.0 degree resolution
-
 | Parameter | Value |
 | ------ | ------ |
 | ni | 360 |
@@ -74,11 +62,6 @@ Tables list the values of various parameters of the CanSIPS lat-lon grid, accord
 ## File name nomenclature 
 
 The files have the following nomenclature:
-
-* Members and products at 2.5 degrees:
-
-     * Individual members: `cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2`
-     * Probability products: `cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2`
 
 * Members and products at 1 degree:
 
@@ -96,20 +79,17 @@ The files have the following nomenclature:
 
 where :
 
-* __cansips|CanSIPS__ : Constant string indicating that the data is from the CanSIPS system
+* __CanSIPS__ : Constant string indicating that the data is from the CanSIPS system
 * __MSC__ : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __forecast__ : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part
 * __CanSIPS-Hindcast__ : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part
 * __raw__ : Constant string indicating that the file contains raw data without bias correction
-* __VAR__ : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
 * __Var__ : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
 * __Var-Anomaly__ : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __ERA5__ : Constant string indicating that verification products are generated based on ECMWF ERA5 reanalysis
 * __ComparSymbol__ : Mathematical comparison symbols [GT, GE, LT, LE]
 * __XX__ : Percentiles value
-* __LVLTYPE__ : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]
-* __LVL__ : Vertical level value
 * __Level__ : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]
 * __MM__ : Month of the forecast start [01, 02, 03, ..., 12]
 * __YYYY__ : Year of the forecast start
@@ -121,8 +101,6 @@ where :
 
 Examples : 
 
-* cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-* cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2
