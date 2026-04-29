@@ -33,7 +33,6 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw) (membres et produits de prévision à 2.5 degrés)
 * [https://dd.meteo.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/model_cansips/100km/forecast) (membres et produits de prévision à 1 degré)
 * [https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/](https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast) (prévisions rétrospectives)
 * [https://dd.meteo.gc.ca/today/model_cansips/100km/verification/{YYYY}](https://dd.meteo.gc.ca/today/model_cansips/100km/verification) (produits de vérification à 1 degré)
@@ -52,16 +51,6 @@ où :
 
 Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, selon la résolution.
 
-### Données à 2.5 degrés de résolution
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 145 |
-| nj | 73 | 
-| résolution | 2.5° |
-| coordonnées du premier point de grille | 90° S  0° E | 
-
-### Données à 1 degré de résolution
 
 | Paramètre | Valeur |
 | ------ | ------ |
@@ -73,11 +62,6 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 ## Nomenclature des noms de fichiers 
 
  La nomenclature des fichiers est la suivante :
-
-* Membres et produits de prévision à 2.5 degrés:
-
-    * Membres individuels : `cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2`
-    * Produits probabilistes: `cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2`
 
 * Membres et produits de prévision à 1 degré:
 
@@ -95,20 +79,17 @@ Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, s
 
 où :
 
-* __cansips|CanSIPS__ : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)
+* __CanSIPS__ : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __forecast__ : Chaîne de caractères constante indiquant que le fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast)
 * __CanSIPS-hindcast__ : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)
 * __raw__ : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé
-* __VAR__ : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]
 * __Var__ : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]
 * __Var-Anomaly__ : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]
 * __StatProcess__ : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]
 * __ERA5__ : Chaîne de caractères constante indiquant que les produits de vérification sont générés à partir des reanalyses ERA5 du CEPMMT (ECMWF)
 * __ComparSymbol__ : Symbole mathématique de comparaison [GT, GE, LT, LE]
 * __XX__ : Valeur de percentiles 
-* __LVLTYPE__ : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]
-* __LVL__ : Valeur du niveau vertical
 * __Level__ : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]
 * __MM__ : Le mois du début de la prévision [01, 02, 03, ..., 12]
 * __YYYY__ : L’année du début de la prévision 
@@ -120,8 +101,6 @@ où :
 
 Exemples de noms de fichier : 
 
-* cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2
-* cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2
 * 202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2
 * 202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2
 * 202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2
