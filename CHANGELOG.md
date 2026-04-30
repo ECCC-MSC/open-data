@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.4
+
+* date: 2026-04-
+* announcements:
+    * Not announced
+* new content:
+    * Remove CanSIPS 2.5deg
+ * improvements:
+    * NA
+* bug fixes:
+    * Typo
+    * Metadata links fixed 
+
 # 2.10.3
 
 * date: 2026-04-20
