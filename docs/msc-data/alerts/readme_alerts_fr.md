@@ -19,11 +19,11 @@ Ces données sont respectivement disponibles sur les services du serveur de donn
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
-Exemple de carte interactive présentant la couche `ALERTS` provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche `Current-Alerts` provenant de GeoMet du SMC :
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES&lang=fr"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours&lang=fr"/>
   </div>
 </div>
 </div>

@@ -19,12 +19,12 @@ This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) da
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
-Example of a web map configured to display the `ALERTS` layer served by MSC GeoMet:
+Example of a web map configured to display the `Current-Alerts` layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=&TRANSPARENT=true"/>
   </div>
 </div>
 </div>
