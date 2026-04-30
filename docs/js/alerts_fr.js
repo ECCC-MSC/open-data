@@ -103,7 +103,7 @@ let layers = [
     source: new ol.source.TileWMS({
       url: "https://geo.weather.gc.ca/geomet",
       params: {
-        LAYERS: "ALERTS",
+        LAYERS: "Current-Alerts",
         TILED: true
       },
       transition: 0

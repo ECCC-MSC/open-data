@@ -13,12 +13,12 @@ GeoMet du SMC donne accès à la couche des alertes météo. Les usagers peuvent
 
 La couche des alertes météo est [disponible sur GeoMet-Météo par le biais du standard WMS (Web Map Service)](../../msc-geomet/readme_fr.md).
 
-Exemple de carte interactive présentant la couche Web Map Service (WMS) des alertes météo provenant de GeoMet du SMC:
+Exemple de carte interactive présentant la couche `Current-Alerts` provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours"/>
   </div>
 </div>
 </div>
@@ -54,15 +54,15 @@ Il y a une seule couche principale d'alertes météo comprenant les quatre types
 
 Styles WMS :
 
-* La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities ([exemple d'une requête WMS GetCapabilites](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&lang=fr&request=GetCapabilities&layer=ALERTS))
+* La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities ([exemple d'une requête WMS GetCapabilites](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&lang=fr&request=GetCapabilities&layer=Current-Alerts))
 * Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard Styled Layer Descriptor (SLD). Veuillez vous référer à la [documentation technique sur le SLD](../../../msc-geomet/wms_fr#specification-des-styles)
 
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic)
-* Exemple d'une requête pour récupérer une légende : `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES`
+* Exemple d'une requête pour récupérer une légende : `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours`
 
-![La légende WMS ALERTES](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES)
+![La légende WMS Alertes-en-cours](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours)
 
 
 ## Support

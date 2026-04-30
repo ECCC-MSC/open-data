@@ -13,12 +13,12 @@ MSC GeoMet provides access to the weather alerts layer. Users can build mobile a
 
 The weather alerts layer is [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
-Example of a web map displaying the weather alerts layer served by MSC GeoMet:
+Example of a web map configured to display the `Current-Alerts` layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts&TRANSPARENT=true"/>
   </div>
 </div>
 </div>>
@@ -54,15 +54,15 @@ There is one main weather alerts layer with all four types of alerts (warning, w
 
 WMS styles:
 
-* The list of available WMS styles is provided in the WMS GetCapabilities response ([example of a WMS GetCapabilities request](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=ALERTS))
+* The list of available WMS styles is provided in the WMS GetCapabilities response ([example of a WMS GetCapabilities request](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=Current-Alerts))
 * Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/wms_en#handling-styles)
 
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/wms_en#wms-getlegendgraphic)
-* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTS`
+* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts`
 
-![The ALERTS WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTS)
+![The Current-Alerts WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts)
 
 
 ## Support
