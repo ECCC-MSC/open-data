@@ -206,7 +206,6 @@
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
 <p>Les données sont accessibles aux adresses suivantes :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw">https://dd.meteo.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (membres et produits de prévision à 2.5 degrés)</li>
 <li><a href="https://dd.meteo.gc.ca/today/model_cansips/100km/forecast">https://dd.meteo.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (membres et produits de prévision à 1 degré)</li>
 <li><a href="https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast">https://dd.meteo.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/</a> (prévisions rétrospectives)</li>
 <li><a href="https://dd.meteo.gc.ca/today/model_cansips/100km/verification">https://dd.meteo.gc.ca/today/model_cansips/100km/verification/{YYYY}</a> (produits de vérification à 1 degré)</li>
@@ -222,34 +221,6 @@
 </ul>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p>Valeurs données aux paramètres de la grille latitude-longitude pour SPISCan, selon la résolution.</p>
-<h3 id="donnees-a-25-degres-de-resolution">Données à 2.5 degrés de résolution</h3>
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Valeur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>145</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>73</td>
-</tr>
-<tr>
-<td>résolution</td>
-<td>2.5°</td>
-</tr>
-<tr>
-<td>coordonnées du premier point de grille</td>
-<td>90° S  0° E</td>
-</tr>
-</tbody>
-</table>
-<h3 id="donnees-a-1-degre-de-resolution">Données à 1 degré de résolution</h3>
 <table>
 <thead>
 <tr>
@@ -280,13 +251,6 @@
 <p>La nomenclature des fichiers est la suivante :</p>
 <ul>
 <li>
-<p>Membres et produits de prévision à 2.5 degrés:</p>
-<ul>
-<li>Membres individuels : <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
-<li>Produits probabilistes: <code>cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2</code></li>
-</ul>
-</li>
-<li>
 <p>Membres et produits de prévision à 1 degré:</p>
 <ul>
 <li>Membres individuels : <code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> </li>
@@ -309,20 +273,17 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>cansips|CanSIPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)</li>
+<li><strong>CanSIPS</strong> : Chaîne de caractères constante indiquant que les données proviennent du système SIPSCan (CanSIPS an anglais)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>forecast</strong> : Chaîne de caractères constante indiquant que le fichier contient des données provenant de la partie prévision du système SIPSCan, en opposition à la partie prévision rétrospective (hindcast)</li>
 <li><strong>CanSIPS-hindcast</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données provenant de la partie prévision rétrospective du système SIPSCan, en opposition à la partie prévision (forecast)</li>
 <li><strong>raw</strong> : Chaîne de caractères constante indiquant que ce fichier contient des données brutes ou que le biais n’est pas corrigé</li>
-<li><strong>VAR</strong> : Variables contenues dans les fichiers à 2 degrés [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
 <li><strong>Var</strong> : Variables contenues dans les fichiers à 1 degré [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
 <li><strong>Var-Anomaly</strong> : Variables d'anomalie contenues dans les fichiers à 1 degré [AirTempAnomaly, PrecipAccumAnomaly]</li>
 <li><strong>StatProcess</strong> : Processus statistique [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
 <li><strong>ERA5</strong> : Chaîne de caractères constante indiquant que les produits de vérification sont générés à partir des reanalyses ERA5 du CEPMMT (ECMWF)</li>
 <li><strong>ComparSymbol</strong> : Symbole mathématique de comparaison [GT, GE, LT, LE]</li>
 <li><strong>XX</strong> : Valeur de percentiles </li>
-<li><strong>LVLTYPE</strong> : Type de niveau vertical [SFC pour la surface, TGL pour la hauteur au-dessus du sol, ISBL pour le niveau de pression, MSL pour le niveau moyen de la mer]</li>
-<li><strong>LVL</strong> : Valeur du niveau vertical</li>
 <li><strong>Level</strong> : Niveau vertical [Sfc pour la surface, AGL-2m pour 2m au-dessus du sol]</li>
 <li><strong>MM</strong> : Le mois du début de la prévision [01, 02, 03, ..., 12]</li>
 <li><strong>YYYY</strong> : L’année du début de la prévision </li>
@@ -334,8 +295,6 @@
 </ul>
 <p>Exemples de noms de fichier : </p>
 <ul>
-<li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
-<li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
 <li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2</li>

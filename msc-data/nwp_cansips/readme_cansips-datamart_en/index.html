@@ -206,7 +206,6 @@
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The data can be accessed at the following URLs :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw">https://dd.weather.gc.ca/today/ensemble/cansips/grib2/forecast/raw/{YYYY}/{MM}/</a> (forecast members and products at 2.5 degrees)</li>
 <li><a href="https://dd.weather.gc.ca/today/model_cansips/100km/forecast">https://dd.weather.gc.ca/today/model_cansips/100km/forecast/{YYYY}/{MM}/</a> (forecast members and products at 1 degree)</li>
 <li><a href="https://dd.weather.gc.ca/today/model_cansips/100km/hindcast">https://dd.weather.gc.ca/today/model_cansips/100km/hindcast/{YYYY}/{MM}/</a> (hindcast)</li>
 <li><a href="https://dd.weather.gc.ca/today/model_cansips/100km/verification">https://dd.weather.gc.ca/today/model_cansips/100km/verification/{YYYY}</a> (vérification products at 1 degree)</li>
@@ -222,34 +221,6 @@
 </ul>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p>Tables list the values of various parameters of the CanSIPS lat-lon grid, according to the resolution.</p>
-<h3 id="data-at-25x25-degrees-resolution">Data at 2.5x2.5 degrees resolution</h3>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>145</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>73</td>
-</tr>
-<tr>
-<td>resolution</td>
-<td>2.5°</td>
-</tr>
-<tr>
-<td>coordinates of the first grid point</td>
-<td>90° S  0° E</td>
-</tr>
-</tbody>
-</table>
-<h3 id="data-at-10x10-degree-resolution">Data at 1.0x1.0 degree resolution</h3>
 <table>
 <thead>
 <tr>
@@ -280,13 +251,6 @@
 <p>The files have the following nomenclature:</p>
 <ul>
 <li>
-<p>Members and products at 2.5 degrees:</p>
-<ul>
-<li>Individual members: <code>cansips_forecast_raw_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_allmembers.grib2</code></li>
-<li>Probability products: <code>cansips_forecast_prob-{StatProcess}_latlon2.5x2.5_{VAR}_{LVLTYPE}_{LVL}_{YYYY}-{MM}_{PPP}.grib2</code></li>
-</ul>
-</li>
-<li>
 <p>Members and products at 1 degree:</p>
 <ul>
 <li>Individual members: <code>{YYYYMM}_MSC_CanSIPS_{Var}_{Level}_LatLon1.0_P{Month}M.grib2</code> </li>
@@ -309,20 +273,17 @@
 </ul>
 <p>where :</p>
 <ul>
-<li><strong>cansips|CanSIPS</strong> : Constant string indicating that the data is from the CanSIPS system</li>
+<li><strong>CanSIPS</strong> : Constant string indicating that the data is from the CanSIPS system</li>
 <li><strong>MSC</strong> : Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>forecast</strong> : Constant string indicating that the file contains the data from the forecast part of CanSIPS, in opposition to the hindcast part</li>
 <li><strong>CanSIPS-Hindcast</strong> : Constant string indicating that the file contains the data from the hindcast part of CanSIPS, in opposition to the forecast part</li>
 <li><strong>raw</strong> : Constant string indicating that the file contains raw data without bias correction</li>
-<li><strong>VAR</strong> : Variables included in the 2 degrees files [TMP, HGT, PRATE, SSHG, PRMSL, UGRD, VGRD]</li>
 <li><strong>Var</strong> : Variables included in the 1 degree files [AirTemp, GeopotentialHeight, PrecipRate, SeaSfcHeight-Geoid, Pressure, WindU, WindV]</li>
 <li><strong>Var-Anomaly</strong> : Anomaly variables included in the 1 degree files [AirTempAnomaly, PrecipAccumAnomaly]</li>
 <li><strong>StatProcess</strong> : Statistic process [prob-near-normal, prob-below-normal, prob-above-normal, ProbNearNormal, ProbBelowNormal, ProbAboveNormal]</li>
 <li><strong>ERA5</strong> : Constant string indicating that verification products are generated based on ECMWF ERA5 reanalysis</li>
 <li><strong>ComparSymbol</strong> : Mathematical comparison symbols [GT, GE, LT, LE]</li>
 <li><strong>XX</strong> : Percentiles value</li>
-<li><strong>LVLTYPE</strong> : Vertical level type [SFC for the surface, TGL for height above the ground, ISBL for pressure level, MSL for mean sea level]</li>
-<li><strong>LVL</strong> : Vertical level value</li>
 <li><strong>Level</strong> : Vertical level [Sfc for the surface, AGL-2m for 2m above ground level]</li>
 <li><strong>MM</strong> : Month of the forecast start [01, 02, 03, ..., 12]</li>
 <li><strong>YYYY</strong> : Year of the forecast start</li>
@@ -334,8 +295,6 @@
 </ul>
 <p>Examples : </p>
 <ul>
-<li>cansips_forecast_raw_latlon2.5x2.5_HGT_ISBL_0500_2012-10_allmembers.grib2</li>
-<li>cansips_forecast_prob-below-normal_latlon2.5x2.5_TMP_TGL_2m_P3M_2018-12.grib2</li>
 <li>202309_MSC_CanSIPS_AirTemp_AGL-2m_LatLon1.0_P00M.grib2</li>
 <li>202305_MSC_CanSIPS_AirTemp-ProbBelowNormal_AGL-2m_LatLon1.0_P06M-P09M.grib2</li>
 <li>202504_MSC_CanSIPS_PrecipAccum-ProbGT70Pct_Sfc_LatLon1.0_P01M.grib2</li>
