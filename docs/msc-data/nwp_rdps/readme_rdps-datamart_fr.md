@@ -5,15 +5,15 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > SRPD sur le Datamart du SMC
 
 
-# Données GRIB2 du Système régional de prévision déterministe (SRPD)
+# Données du Système régional de prévision déterministe (SRPD)
 
-Les champs du jeu de données GRIB2 du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles à la fois sur une grille polaire stéréographique couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km et sur une grille lat-lon tournée sur un domaine plus vaste couvrant également les Caraïbes et le Mexique au complet ainsi qu’une partie de l’Europe du Nord.
+Les champs du jeu de données du [Système régional de prévision déterministe (SRPD)](readme_rdps_fr.md) sont disponibles à la fois sur une grille polaire stéréographique couvrant l’Amérique du Nord et les eaux environnantes avec une résolution de 10 km et sur une grille lat-lon tournée sur un domaine plus vaste couvrant également les Caraïbes et le Mexique au complet ainsi qu’une partie de l’Europe du Nord.
 
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.
 
 Les données sont accessibles aux adresses suivantes : 
 
@@ -84,7 +84,7 @@ Le fichier a été créé par le CMC et contient une prévision du SRPD. Il cont
 
 Les fichiers ont la nomenclature suivante :
 
-`{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}`
 
 où :
 
@@ -99,7 +99,7 @@ où :
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084]
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+* __format__ : Chaîne de caractères constante indiquant le format [grib2, json]
 
 Exemples de noms de fichier :
 
@@ -164,6 +164,7 @@ Notes :
     * Passe de 06Z: 12h, 36h et 60h
     * Passe de 12Z: 6h , 30h et 54h
     * Passe de 18Z: 0h , 24h et 48h
+* Les centres de hautes (High) et basses pression (Low) sont également disponibles en des points (format GeoJSON) sur le domaine, l'unité est hPa.
 
 ## Support
 

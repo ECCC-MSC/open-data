@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [RDPS](readme_rdps_en.md) > RDPS statistical post-processing on MSC Datamart
 
-# Regional Deterministic Prediction System (RDPS) data statistically post-processed in GeoJSON format
+# Regional Deterministic Prediction System (RDPS) data statistically post-processed
 
 Statistical post-processing of forecasts from numerical weather and environmental models, including the Regional Deterministic Prediction System (RDPS), helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.
 
