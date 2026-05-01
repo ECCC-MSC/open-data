@@ -4,15 +4,15 @@
 
 [TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [RDPS](readme_rdps_en.md) > RDPS on MSC Datamart
 
-# Regional Deterministic Prediction System (RDPS) data in GRIB2 format
+# Regional Deterministic Prediction System (RDPS) data 
 
-The fields of the GRIB2 dataset from the [Regional Deterministic Prediction System (RDPS)](readme_rdps_en.md) are available both on a polar stereographic grid covering North America and adjacents waters with a resolution of 10 km, and on a rotated lat-lon grid covering a larger area that also includes the Caribbean and all of Mexico, as well as part of Northern Europe.
+The fields of the dataset from the [Regional Deterministic Prediction System (RDPS)](readme_rdps_en.md) are available both on a polar stereographic grid covering North America and adjacents waters with a resolution of 10 km, and on a rotated lat-lon grid covering a larger area that also includes the Caribbean and all of Mexico, as well as part of Northern Europe.
 
 ## Data location 
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
+The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 or GeoJSON file.
 
 The data can be accessed at the following URLs: 
 
@@ -85,7 +85,7 @@ This file originates from the Canadian Meteorological Center (CMC) and contains 
 
 The files have the following nomenclature:
 
-`{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
+`{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.${format}`
 
 where :
 
@@ -99,8 +99,8 @@ where :
 * __LVLTYPE-LVL__ : Vertical level and height [ex: Sfc for the surface, EAtm for the integral of the column, DBS-10to20cm layer between 10 and 20cm below the surface, AGL-10m for the height of 10m above ground]
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.09. Means a resolution of 0.09° (approx. 10km) in longitudinal and latitudinal directions
-* __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084].
-* __grib2__: Constant character string indicating that the format is GRIB2.
+* __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084]
+* __format__: Constant character string indicating the format [grib2, json]
 
 Examples of file names:
 
@@ -164,6 +164,7 @@ Notes :
     * 06Z run: 12h, 36h and 60h
     * 12Z run: 6h , 30h and 54h
     * 18Z run: 0h , 24h and 48h
+* High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.
     
 ## Support
 

@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > Eléments du temps sur grille basés sur le SRPD sur DD-Alpha
 
-# Données GRIB2 expérimentales d'éléments du temps sur grille basés sur le Système régional de prévision déterministe (SRPD)
+# Données expérimentales d'éléments du temps sur grille basés sur le Système régional de prévision déterministe (SRPD)
 
 Depuis près de trois décennies, le Système SCRIBE est utilisé pour aider les météorologues à préparer les bulletins météorologiques. La philosophie derrière SCRIBE est la suivante : un ensemble de matrices d’éléments du temps est généré pour certaines stations ou points d’échantillonnage, pour ensuite être transmis aux centres météorologiques régionaux. Les matrices sont ensuite décodées par SCRIBE et peuvent être modifiées via l’interface graphique par les usagers. Les données qui en résultent sont ensuite fournies à un générateur de texte, qui produit des prévisions publiques bilingues en langage clair.
 

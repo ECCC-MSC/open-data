@@ -5,7 +5,7 @@
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > Post-traitement statistique SRPD sur le Datamart du SMC
 
 
-# Données GeoJSON du Système régional de prévision déterministe statistiquement post-traitées
+# Données du Système régional de prévision déterministe statistiquement post-traitées
 
 Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le Système régional de prévision déterministe (SRPD), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies.
 

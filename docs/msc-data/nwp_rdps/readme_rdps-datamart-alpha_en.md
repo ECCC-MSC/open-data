@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_en.md) > RDPS Weather Elements on the Grid on DD-Alpha
 
-# Experimental GRIB2 Weather Elements on the Grid data based on the Regional Deterministic Prediction System (RDPS)
+# Experimental Weather Elements on the Grid data based on the Regional Deterministic Prediction System (RDPS)
 
 For nearly three decades, the SCRIBE system has been used to assist meteorologists in preparing weather reports. The philosophy behind SCRIBE is that a set of weather element matrices are generated for selected stations or sample points and then transmitted to regional weather centers. The matrices are then decoded by SCRIBE and can be modified via the graphical interface by the users. The resulting data is then provided to a text generator, which produces bilingual public forecasts in plain language.
 
