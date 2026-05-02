@@ -39,7 +39,7 @@ where :
 * __YYYYMMDD__ : Observation date in UTC.
 * __XXXXXXX__ : Station code (WMO ID), could be 5 or 7 digits.
 
-__Note__: A [list of marine observations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) is available.
+__Note__: A [list of marine observations](https://api.weather.gc.ca/collections/swob-marine-stations/items?&f=json&limit=10000) is available.
 
 * __Partner observations :__
   
@@ -53,7 +53,7 @@ where :
 
 __Notes__:
 
-* A [list of partners stations](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) is available.
+* A [list of partners stations](https://api.weather.gc.ca/collections/swob-partner-stations/items?&f=json&limit=10000) is available.
 * The Department of Fisheries and Ocean moored buoys (aka Viking buoys) are seasonal. They are typically recalled in November and 
 re-deployed in June. From November to June there will be no data transmitted from the buoys
 
