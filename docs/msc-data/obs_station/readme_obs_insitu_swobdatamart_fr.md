@@ -40,7 +40,7 @@ où :
 * __AAAAMMJJ__ : Date des observations, UTC.
 * __XXXXXXX__ : Identificateur de station (identifiant OMM), peut être 5 ou 7 chiffres.
 
-__Note__: Une [liste des stations marines d'observation](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_marine_station_list.geojson) est disponible.
+__Note__: Une [liste des stations marines d'observation](https://api.weather.gc.ca/collections/swob-marine-stations/items?&f=json&limit=10000) est disponible.
 
 * __Observations des partenaires__ :
   
@@ -54,7 +54,7 @@ où :
 
 __Notes__: 
 
-* Une [liste des stations des partenaires](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_station/swob-xml_partner_station_list.geojson) est disponible
+* Une [liste des stations des partenaires](https://api.weather.gc.ca/collections/swob-partner-stations/items?&f=json&limit=10000) est disponible
 * Les bouées amarrées du ministère des Pêches et des Océans (alias bouées Viking) sont saisonnières. Elles sont généralement retirées en novembre et redéployées en juin. De novembre à juin, il n'y aura pas de données transmises par ces bouées.
 
 ## Nomenclature
