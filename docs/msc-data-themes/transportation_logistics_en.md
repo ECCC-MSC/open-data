@@ -9,7 +9,10 @@
 
 This page presents a list of relevant Meteorological Service of Canada datasets under the Land Transport Logistics theme, in order to guide users to the appropriate datasets. This list is not exhaustive, but provides an overview of the layers that can be used under this theme. The main data layers for this theme are the precipitation rate variables. However, a number of other relevant layers can also provide additional information on the subject, such as wind gusts, visibility or the possibility of blowing snow on routes, to name but a few examples.
 
-Example of an interactive map featuring the Web Map Service (WMS) layers `Weather Alert`, `HRDPS.CONTINENTAL` (Maximum wind gusts) and `GDPS-WEonG` (Visibility: liquid fog) (active on the map), plus other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet :
+Example of an interactive map featuring the Web Map Service (WMS) layers `Current Weather Alerts`, `HRDPS - Wind gust maximum` and `HRDPS-WEonG - Visibility through liquid fog` (active on the map), plus other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet.
+
+Layers shown in preview below can also be viewed on MSC AniMet via a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=RADAR_1KM_RSNO;0.75;0;0;0;1,RDPS-WEonG_10km_FreezingPrecip-Prob;0.75;0;0;0;1,HRDPS-WEonG_2.5km_BlowingSnowPresence;0.75;0;0;0;1,HRDPS-WEonG_2.5km_LiquidFogVisibility;0.75;0;1;0;1,HRDPS.CONTINENTAL_WGX;0.75;0;1;0;1,Current-Alerts;0.75;0;1;0;1) for all variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -22,7 +25,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png')">Weather Alerts</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png')">Weather Alerts</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
@@ -54,7 +57,6 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
 ## Datasets
 
 It should be noted that the various layers presented in the list are available at different resolutions and timeframes.
-The layers in the following list can also be viewed on MSC AniMet with a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=ALERTS;0.75;0;1;0,Radar_1km_SfcPrecipType;0.75;0;1;0,Radar_1km_RainPrecipRate-Extrapolation;0.75;0;1;0,Radar_1km_SnowPrecipRate-Extrapolation;0.75;0;1;0,HRDPS-WEonG_2.5km_WindSpeed;0.75;0;1;0,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0,HRDPS-WEonG_2.5km_FreezingPrecip-Prob;0.75;0;1;0,RDPS-WEonG_10km_FreezingPrecip-Prob;0.75;0;1;0,GDPS-WEonG_15km_BlowingSnow-Prob;0.75;0;1;0,HRDPS-WEonG_2.5km_BlowingSnowPresence;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnowPresence;0.75;0;1;0,RADAR_1KM_RSNO;0.75;0;1;0,GDPS-WEonG_15km_FreezingDrizzle-Prob;0.75;0;1;0,GDPS-WEonG_15km_IcePellets-Prob;0.75;0;1;0,GDPS-WEonG_15km_WindGust;0.75;0;1;0,HRDPS.CONTINENTAL_WGX;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,GOES-East_1km_DayVis;0.75;0;0;0,GOES-West_1km_DayVis;0.75;0;0;0,GDPS-WEonG_15km_IceFogVisibility;0.75;0;1;0,GDPS-WEonG_15km_LiquidFogVisibility;0.75;0;1;0,HRDPS-WEonG_2.5km_IceFogVisibility;0.75;0;1;0,HRDPS-WEonG_2.5km_LiquidFogVisibility;0.75;0;1;0,HRDPS.CONTINENTAL_FR;0.75;0;1;0,HRDPS.CONTINENTAL_NO;0.75;0;1;0,HRDPS.CONTINENTAL_WSPD;0.75;0;1;0&extent=-18847435,1845742,1190074,11911533) for all variables.
 
 ##### &emsp;<span class="badge badge-info">HRDPS at surface/near-surface fields</span>
 ###### &emsp;[HRDPS data documentation](../msc-data/nwp_hrdps/readme_hrdps_en.md)

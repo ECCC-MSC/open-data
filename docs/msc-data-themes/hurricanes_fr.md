@@ -9,7 +9,10 @@
 Cette page présente une liste de jeux de données pertinentes du Service Météorologique du Canada sous le thème des ouragans, afin de guider les usagers vers les jeux de données appropriés. Cette liste n'est pas exhaustive mais, donne un aperçu des couches pouvant être utilisées sous cette thématique. Les principales couches de données sont les trajectoires d'ouragans et la zone de réaction aux ouragans qui sont émises par le Centre canadien de prévision des ouragans, dans le cadre des prévisions régulières lors de la saison des ouragans. Cependant, plusieurs autres couches pertinentes peuvent également apporter une complémentarité sur le sujet telles; la vitesse des vents, les quantités de pluie ou les vagues cotiêres, pour ne donner ici, que queques exemples.
 </br> 
 
-Exemple de carte interactive comportant les couches `Zone de réaction aux ouragans`, `Alertes météorologiques` et `HRDPS-WeonG`(Rafale de vents) (actives sur la carte) du Service de cartographie Web (WMS), ainsi qu'un certain nombre de couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches `Zone de réaction aux ouragans`, `Alertes météo en cours` et `SHRPD-ETsurG - Rafale de vents` (actives sur la carte) du Service de cartographie Web (WMS), ainsi qu'un certain nombre de couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=CURRENT_CONDITIONS;0.75;0;0;0;1,HRDPS-WEonG_2.5km_Thunderstorm-Prob;0.75;0;0;0;1,HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex;0.75;0;0;0;1,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0;1,Current-Alerts;0.75;0;1;Alertes-en-cours;1,HURRICANE_RESPONSE_ZONE;0.75;0;1;0;1&lang=fr) unique pour l'ensemble des variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -22,15 +25,15 @@ Exemple de carte interactive comportant les couches `Zone de réaction aux ourag
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer5" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HURRICANE_RESPONSE_ZONE&format=image/png')">Zone d'ouragans</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HURRICANE_RESPONSE_ZONE&format=image/png&lang=fr')">Zone d'ouragans</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png')">Rafale de vents</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&lang=fr')">Rafale de vents</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1">
@@ -38,7 +41,7 @@ Exemple de carte interactive comportant les couches `Zone de réaction aux ourag
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png')">Probabilité d'orages</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png&lang=fr')">Probabilité d'orages</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4">
@@ -49,10 +52,11 @@ Exemple de carte interactive comportant les couches `Zone de réaction aux ourag
 </div>
 </br>
 
+
+
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=Radar-Coverage_SfcPrecipType%3B0.75%3B1%3B1%3B0,RDPS.CONV_SFC-CAPE%3B0.75%3B0%3B1%3B0,HURRICANE_CENTRE%3B0.75%3B0%3B1%3B0,HURRICANE_RAD%3B0.75%3B0%3B1%3B0,HURRICANE_RESPONSE_ZONE%3B0.75%3B0%3B1%3B0,RDPA-Prelim_10km_Precip-Accum24h%3B0.75%3B0%3B1%3B0,RDPS.CONV_TOTALX.PT3H%3B0.75%3B0%3B1%3B0,RDWPS_2.5km_WindWavesSignificantHeight%3B0.75%3B0%3B1%3B0,RADAR_1KM_RRAI%3B0.75%3B0%3B1%3B0,Radar_1km_RainPrecipRate-Extrapolation%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_P0%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_PN%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_RN%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_WGX%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_Thunderstorm-Prob%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_WindGust%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_WindSpeed%3B0.75%3B0%3B1%3B0,ALERTS%3B0.75%3B0%3B1%3B0,CURRENT_CONDITIONS%3B0.75%3B0%3B1%3B0,Lightning_2.5km_Density%3B0.75%3B0%3B1%3B0,METNOTES%3B0.75%3B0%3B1%3B0&extent=-22088883,-731482,1411752,11074002) unique pour l'ensemble des variables.
 
 ##### &emsp;<span class="badge badge-info">Ouragans</span>
 ###### &emsp;[Documentation des données sur les ouragans](../msc-data/hurricanes/readme_hurricanes_fr.md)

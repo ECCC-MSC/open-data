@@ -44,7 +44,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'RDPS.ETA_SN', 'TILED': true },
+      params: { 'LAYERS': 'RDPS_10km_Snow-Accum', 'TILED': true },
     })
   }),
   // *** 2
@@ -68,7 +68,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'ALERTS', 'TILED': true },
+      params: { 'LAYERS': 'Current-Alerts', 'TILED': true },
     })
   }),
   // *** 5

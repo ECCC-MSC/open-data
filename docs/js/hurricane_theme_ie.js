@@ -52,7 +52,7 @@ var map = new ol.Map({
     source: new ol.source.ImageWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: {'LAYERS': 'ALERTS', 'TILED': true},
+      params: {'LAYERS': 'Current-Alerts', 'TILED': true},
       transition: 0,
       crossOrigin: 'Anonymous'
     })

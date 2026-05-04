@@ -9,7 +9,7 @@ var map = new ol.Map({
         source: new ol.source.TileWMS({
             format: 'image/png',
             url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'HRDPA.24F_PR', 'TILED': true},
+            params: {'LAYERS': 'HRDPS-WEonG_2.5km_AirTemp', 'TILED': true},
         })
       }),
       // *** 2
@@ -17,7 +17,7 @@ var map = new ol.Map({
         source: new ol.source.TileWMS({
             format: 'image/png',
             url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'ALERTS', 'TILED': true},
+            params: {'LAYERS': 'Current-Alerts', 'TILED': true},
         })
       }),
       // *** 3
@@ -25,7 +25,7 @@ var map = new ol.Map({
         source: new ol.source.TileWMS({
             format: 'image/png',
             url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true},
+            params: {'LAYERS': 'HRDPS-WEonG_2.5km_Precip-Prob', 'TILED': true},
         })
       }),
     // *** 4
@@ -41,7 +41,7 @@ var map = new ol.Map({
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HRDPS.CONTINENTAL_IH', 'TILED': true},
+        params: {'LAYERS': 'HRDPS.CONTINENTAL_UTCI', 'TILED': true},
         transition: 0,
         crossOrigin: 'Anonymous'
       })
@@ -51,7 +51,7 @@ var map = new ol.Map({
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'HRDPS.CONTINENTAL_PC', 'TILED': true},
+        params: {'LAYERS': 'REPS.DIAG.3_HMXX.ERMEAN', 'TILED': true},
         transition: 0,
         crossOrigin: 'Anonymous'
       })

@@ -8,7 +8,10 @@
 
 This page presents a list of relevant Meteorological Service of Canada datasets under the theme of snowstorms, in order to guide users to the appropriate datasets. This list is not exhaustive, but provides an overview of the layers that can be used under this theme. The main data layers for this theme are the snow quantity variables. However, a number of other relevant layers can also provide additional information on the subject, such as wind factors, winter precipitation types or temperature, to name but a few.
 
-Example of an interactive map featuring the Web Map Service (WMS) layers `Weather Warnings`, `RDPS.ETA` (Accumulated Snow) and `Current Conditions` (active on the map), as well as other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet:
+Example of an interactive map featuring the Web Map Service (WMS) layers `Current Weather Alerts`, `RDPS - Snow accumulation (liquid equivalent)`and `Current Conditions` (active on the map), as well as other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet.
+
+Layers shown in preview below can also be viewed on MSC AniMet via a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=RADAR_1KM_RSNO;0.75;0;0;0;1,RDPS-WEonG_10km_AirTemp;0.75;0;0;0;1,RDPS-WEonG_10km_BlowingSnow-Prob;0.75;0;0;0;1,CURRENT_CONDITIONS;0.75;0;1;0;1,RDPS_10km_Snow-Accum;0.75;0;1;PRECIPSNOW;1,Current-Alerts;0.75;0;1;0;1&lang=en) for all variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,11 +24,11 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png')">Weather Alerts</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png')">Weather Alerts</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS.ETA_SN&format=image/png&STYLE=PRECIPSNOW')">Snow accumulation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS_10km_Snow-Accum&format=image/png&STYLE=PRECIPSNOW')">Snow accumulation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
@@ -48,10 +51,11 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
 </div>
 </br>
 
+
+
 ## Datasets
 
 It should be noted that the various layers presented in the list are available at different resolutions and timeframes.
-The layers in the following list can also be viewed on MSC AniMet with a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=CURRENT_CONDITIONS;0.75;0;1;0,Radar_1km_SnowPrecipRate-Extrapolation;0.75;1;1;0,RDPS.ETA_TT;0.75;0;1;0,RDPS.ETA_SN;0.75;0;1;0,RDPS.ETA_WD;0.75;0;1;0,RDPS.ETA_WGE;0.75;0;1;0,ALERTS;0.75;0;1;0,RDPS.ETA_WSPD;0.75;0;1;WindSpeed_30-210Knots_Dis,RDPS-WEonG_10km_AirTemp;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnowPresence;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnow-Prob;0.75;0;1;0,RDPS-WEonG_10km_Snow-Prob;0.75;0;1;0,RDPS-WEonG_10km_SnowSqualls-Prob;0.75;0;1;0,RDPS-WEonG_10km_SnowHeight;0.75;0;1;0,RADAR_1KM_RSNO;0.75;0;1;0,REPS.DIAG.12_SNMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_SNMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PRMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PRMM.ERGE30;0.75;0;1;0,REPS.DIAG.3_PRMM.ERGE15;0.75;0;1;0,REPS.DIAG.3_PRMM.ERMEAN;0.75;0;1;0,REPS.DIAG.24_SNMM.ERGE20;0.75;0;1;0,REPS.DIAG.24_SNMM.ERGE25;0.75;0;1;0,REPS.DIAG.24_PEMM.ERGE20;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE30;0.75;0;1;0,GEPS.DIAG.24_SNMM.ERGE20;0.75;0;1;0,GEPS.DIAG.24_SNMM.ERGE25;0.75;0;1;0,GEPS.DIAG.24_PEMM.ERGE20;0.75;0;1;0,GEPS.DIAG.24_PEMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE5;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE15;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE5;0.75;0;1;0&extent=-17412813,2741278,-274277,11223514) for all variables.
 
 ##### &emsp;<span class="badge badge-info">HRDPS - Weather Elements on Grid</span>
 ###### &emsp;[HRDPS data documentation](../msc-data/nwp_hrdps/readme_hrdps_en.md)

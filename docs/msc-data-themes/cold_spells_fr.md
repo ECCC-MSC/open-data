@@ -8,7 +8,10 @@
 
 Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des vagues de froid, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont la température et le refroidissement éolien. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les variables du vent ou la couverture nuageuse, pour ne citer que deux exemples.
 
-Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) `HRDPS-WEonG` (Température), `Alertes météo` et `Conditions actuelles` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) `SHRPD-ETsurG - Température`, `Alertes météo en cours` et `Conditions actuelles` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=HRDPS.CONTINENTAL_UTCI;0.75;0;0;UTCI-FR;1,RDPS-WEonG_10km_DominantPrecipType;0.75;0;0;DominantPrecipType_Dis_Fr;1,REPS.DIAG.3_WCF.ERMEAN;0.75;0;0;0;1,HRDPS-WEonG_2.5km_AirTemp;0.75;0;1;0;1,CURRENT_CONDITIONS;0.75;0;1;0;1,Current-Alerts;0.75;0;1;Alertes-en-cours;1&lang=fr) unique pour l'ensemble des variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,11 +24,11 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_AirTemp&format=image/png')">Température</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_AirTemp&format=image/png&lang=fr')">Température</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4" checked>
@@ -33,7 +36,7 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.3_WCF.ERMEAN&format=image/png&STYLE=REPS_TT')">Indice de refroidissement éolien</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.3_WCF.ERMEAN&format=image/png&STYLE=WindChill_Dis&lang=fr')">Indice de refroidissement éolien</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
@@ -48,10 +51,10 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
 </div>
 </br>
 
+
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=ALERTS;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,HRDPS-WEonG_2.5km_AirTemp;0.75;1;1;0,HRDPS-WEonG_2.5km_DewPointTemp;0.75;0;1;0,HRDPS-WEonG_2.5km_SkyState;0.75;0;1;0,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0,HRDPS-WEonG_2.5km_WindSpeed;0.75;0;1;0,HRDPS-WEonG_2.5km_WindDir;0.75;0;1;0,REPS.DIAG.3_WCF.ERMEAN;0.75;0;1;0,HRDPS.CONTINENTAL_UTCI;0.75;0;1;0,RDPS-WEonG_10km_DominantPrecipType;0.75;0;1;0,METNOTES;0.75;0;1;0&extent=-20730359,1408398,844780,12086406) unique pour l'ensemble des variables.
 
 ##### &emsp;<span class="badge badge-info">SHRPD à la surface ou à proximité de la surface</span>
 ###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)

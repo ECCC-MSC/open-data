@@ -8,7 +8,10 @@
 
 This page presents a list of relevant Meteorological Service of Canada datasets under the theme of ice storms, in order to guide users to the appropriate datasets. This list is not exhaustive, but provides an overview of the layers that can be used under this theme. The main data layers for this theme are the freezing precipitation variables. However, a number of other relevant layers can also provide additional information on the subject, such as wind factors, winter precipitation types or temperature, to name but a few.
 
-Example of an interactive map featuring the Web Map Service (WMS) layers `Weather Warnings`, `HRDPS-WEonG` (Dominant Precipitation Type) and `HRDPS-WEonG` (Probability of Freezing Rain) (active on the map), as well as other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet :
+Example of an interactive map featuring the Web Map Service (WMS) layers `Current Weather Alerts`, `GDPS-WEonG - Dominant precipitation type` and `GDPS-WEonG - Probability of freezing rain` (active on the map), as well as other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet.
+
+Layers shown in preview below can also be viewed on MSC AniMet via a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=Radar_1km_SfcPrecipType;0.75;0;0;0;1,GDPS-WEonG_15km_WindGust;0.75;0;0;0;1,REPS.DIAG.6_PRMM.ERMEAN;0.75;0;0;0;1,GDPS-WEonG_15km_FreezingRain-Prob;0.75;0;1;0;1,GDPS-WEonG_15km_DominantPrecipType;0.75;0;1;0;1,Current-Alerts;0.75;0;1;0;1) for all variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,7 +24,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png')">Weather Alerts</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png')">Weather Alerts</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
@@ -48,10 +51,10 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Weathe
 </div>
 </br>
 
+
 ## Datasets
 
 It should be noted that the various layers presented in the list are available at different resolutions and timeframes.
-The layers in the following list can also be viewed on MSC AniMet with a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=GEPS.DIAG.12_FRMM.ERGE5;0.75;1;1;0,GEPS.DIAG.12_FRMM.ERGE15;0.75;0;1;0,GEPS.DIAG.12_FRMM.ERGE30;0.75;0;1;0,GEPS.DIAG.12_FRMM.ERMEAN;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE5;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE15;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE30;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERMEAN;0.75;0;1;0,GEPS.DIAG.12_PRMM.ERGE5;0.75;0;1;0,GEPS.DIAG.12_PRMM.ERGE15;0.75;0;1;0,GEPS.DIAG.12_PRMM.ERGE30;0.75;0;1;0,REPS.DIAG.6_FRMM.ERGE5;0.75;0;1;0,REPS.DIAG.6_FRMM.ERGE15;0.75;0;1;0,REPS.DIAG.6_FRMM.ERGE30;0.75;0;1;0,REPS.DIAG.6_FRMM.ERMEAN;0.75;0;1;0,REPS.DIAG.6_PEMM.ERGE5;0.75;0;1;0,REPS.DIAG.6_PEMM.ERGE15;0.75;0;1;0,REPS.DIAG.6_PEMM.ERGE30;0.75;0;1;0,REPS.DIAG.6_PEMM.ERMEAN;0.75;0;1;0,REPS.DIAG.6_PRMM.ERGE5;0.75;0;1;0,REPS.DIAG.6_PRMM.ERGE15;0.75;0;1;0,REPS.DIAG.6_PRMM.ERGE30;0.75;0;1;0,REPS.DIAG.6_PRMM.ERMEAN;0.75;0;1;0,GDPS-WEonG_15km_WindSpeed;0.75;0;1;0,GDPS-WEonG_15km_WindGust;0.75;0;1;0,GDPS-WEonG_15km_WindDir;0.75;0;1;0,GDPS-WEonG_15km_Precip-Prob;0.75;0;1;0,GDPS-WEonG_15km_InstantPrecipType;0.75;0;1;0,GDPS-WEonG_15km_IcePellets-Prob;0.75;0;1;0,GDPS-WEonG_15km_FreezingRain-Prob;0.75;0;1;0,GDPS-WEonG_15km_FreezingPrecip-Prob;0.75;0;1;0,GDPS-WEonG_15km_DominantPrecipType;0.75;0;1;0,GDPS-WEonG_15km_DewPointTemp;0.75;0;1;0,GDPS-WEonG_15km_AirTemp;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,ALERTS;0.75;0;1;0,Radar_1km_SfcPrecipType;0.75;0;1;0,Radar-Coverage_SfcPrecipType;0.75;0;1;0,Radar_1km_dBZ-Extrapolation;0.75;0;1;0&extent=-17028947,1084196,-370327,9328911) for all variables.
 
 ##### &emsp;<span class="badge badge-info">HRDPS - Weather Elements on Grid</span>
 ###### &emsp;[HRDPS data documentation](../msc-data/nwp_hrdps/readme_hrdps_en.md)
