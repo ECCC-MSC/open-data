@@ -8,7 +8,9 @@
 
 Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des feux de forêt, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables de qualité de l'air et les taux de précipitations. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les points chauds, la vitesse des vents ou la direction des vents, pour ne citer que ces quelques exemples.
 
-Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Points chauds`, de `HRDPS-WEonG` (Rafale de vents) et de `Concentration de NO2` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Points chauds`, de `SHRPD-ETsurG - Rafale de vents` et de `RAQDPS - Concentration de NO2` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=RAQDPS.SFC_O3;0.75;0;0;0;1,RADAR_1KM_RRAI;0.75;0;0;0;1,RAQDPS.SFC_PM2.5;0.75;0;0;0;1,RAQDPS.SFC_NO2;0.75;0;1;0;1,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0;1,WildfireHotspots;0.75;0;1;0;1&lang=fr) unique pour l'ensemble des variables.
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,19 +23,19 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=FIREWORK.HOTSPOTS&format=image/png')">Points chauds</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=WildfireHotspots&format=image/png')">Points chauds</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS')">Rafale de vents</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS&lang=fr')">Rafale de vents</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2')">Concentration: NO2</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_NO2&format=image/png&STYLE=SFC-NO2&lang=fr')">Concentration: NO2</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_PM2.5&format=image/png&STYLE=RAQDPS-SFC-PM_UGM3_BCAQHI')">Concentration : PM2.5</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_PM2.5&format=image/png&STYLE=PM2.5_0to100ugm3_Dis&lang=fr')">Concentration : PM2.5</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
@@ -41,7 +43,7 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_O3&format=image/png&STYLE=SFC-O3')">Concentration: O3</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RAQDPS.SFC_O3&format=image/png&STYLE=SFC-O3&lang=fr')">Concentration: O3</span>
         </label></br>
     </div>
   </div>
@@ -52,7 +54,6 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=ALERTS;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,Lightning_2.5km_Density;0.75;1;1;0,FIREWORK.HOTSPOTS;0.75;0;1;0,RAQDPS.SFC_NO2;0.75;0;1;0,RAQDPS.SFC_O3;0.75;0;1;0,RAQDPS.SFC_PM2.5;0.75;0;1;0,RADAR_1KM_RRAI;0.75;0;1;0,Radar_1km_RainPrecipRate-Extrapolation;0.75;0;1;0,Radar_1km_dBZ-Extrapolation;0.75;0;1;0,HRDPS-WEonG_2.5km_AirTemp;0.75;0;1;0,HRDPS-WEonG_2.5km_Precip-Prob;0.75;0;1;0,HRDPS-WEonG_2.5km_Thunderstorm-Prob;0.75;0;1;0,HRDPS-WEonG_2.5km_WindDir;0.75;0;1;0,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0,HRDPS-WEonG_2.5km_WindSpeed;0.75;0;1;0,HRDPS.CONTINENTAL_PC;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE1;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE10;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE5;0.75;0;1;0&extent=-23473981,634482,2187623,13334971) unique pour l'ensemble des variables.
 
 ##### &emsp;<span class="badge badge-info">SHRPD à la surface ou à proximité de la surface</span>
 ###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)
@@ -91,7 +92,7 @@ Les couches de la liste suivante peuvent être également visualisées sur AniMe
 
 ##### &emsp;<span class="badge badge-info">Qualité de l'air</span>
 ###### &emsp;[Documentation des données SRPDQA](../msc-data/nwp_raqdps/readme_raqdps_fr.md)
-* Points chauds considérés par SRPDQA-FireWork</br>
+* Points chauds considérés par SRPDQA</br>
 * Concentration : surface NO2
 * Concentration : surface O3
 * Concentration : surface PM2.5</br>

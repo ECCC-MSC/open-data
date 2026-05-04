@@ -8,7 +8,10 @@
 
 Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème de la logistique de transport terrestre, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables des taux de précipitations. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les rafales de vent, la visibilité ou possibilité de poudrerie sur les trajets, pour ne citer que ces quelques exemples.
 
-Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Alerte météo`, de `HRDPS.CONTINENTAL` (Maximum des rafales de vent) et de `GDPS-WEonG`(Visibilité: brouillard liquide) (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Alerte météo en cours`, de `HRDPS - Maximum des rafales de vent` et de `SHRPD-ETsurG - Visibilité à travers le brouillard liquide` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=RADAR_1KM_RSNO;0.75;0;0;0;1,RDPS-WEonG_10km_FreezingPrecip-Prob;0.75;0;0;0;1,HRDPS-WEonG_2.5km_BlowingSnowPresence;0.75;0;0;BlowingSnowPresence_Dis_Fr;1,HRDPS-WEonG_2.5km_LiquidFogVisibility;0.75;0;1;0;1,HRDPS.CONTINENTAL_WGX;0.75;0;1;0;1,Current-Alerts;0.75;0;1;Alertes-en-cours;1&lang=fr) unique pour l'ensemble des variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,15 +24,15 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_WGX&format=image/png')">Maximum des rafales de vent</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_WGX&format=image/png&lang=fr')">Maximum des rafales de vent</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_LiquidFogVisibility&format=image/png')">Visibilité: brouillard liquide</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_LiquidFogVisibility&format=image/png&lang=fr')">Visibilité: brouillard liquide</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
@@ -37,7 +40,7 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_FreezingPrecip-Prob&format=image/png')">Possibilité de pluie verglaçante</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_FreezingPrecip-Prob&format=image/png&lang=fr')">Possibilité de pluie verglaçante</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
@@ -48,10 +51,11 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
 </div>
 </br>
 
+
+
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=ALERTS;0.75;0;1;0,Radar_1km_SfcPrecipType;0.75;0;1;0,Radar_1km_RainPrecipRate-Extrapolation;0.75;0;1;0,Radar_1km_SnowPrecipRate-Extrapolation;0.75;0;1;0,HRDPS-WEonG_2.5km_WindSpeed;0.75;0;1;0,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0,HRDPS-WEonG_2.5km_FreezingPrecip-Prob;0.75;0;1;0,RDPS-WEonG_10km_FreezingPrecip-Prob;0.75;0;1;0,GDPS-WEonG_15km_BlowingSnow-Prob;0.75;0;1;0,HRDPS-WEonG_2.5km_BlowingSnowPresence;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnowPresence;0.75;0;1;0,RADAR_1KM_RSNO;0.75;0;1;0,GDPS-WEonG_15km_FreezingDrizzle-Prob;0.75;0;1;0,GDPS-WEonG_15km_IcePellets-Prob;0.75;0;1;0,GDPS-WEonG_15km_WindGust;0.75;0;1;0,HRDPS.CONTINENTAL_WGX;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,GOES-East_1km_DayVis;0.75;0;0;0,GOES-West_1km_DayVis;0.75;0;0;0,GDPS-WEonG_15km_IceFogVisibility;0.75;0;1;0,GDPS-WEonG_15km_LiquidFogVisibility;0.75;0;1;0,HRDPS-WEonG_2.5km_IceFogVisibility;0.75;0;1;0,HRDPS-WEonG_2.5km_LiquidFogVisibility;0.75;0;1;0,HRDPS.CONTINENTAL_FR;0.75;0;1;0,HRDPS.CONTINENTAL_NO;0.75;0;1;0,HRDPS.CONTINENTAL_WSPD;0.75;0;1;0&extent=-18847435,1845742,1190074,11911533) unique pour l'ensemble des variables.
 
 ##### &emsp;<span class="badge badge-info">SHRPD à la surface ou à proximité de la surface</span>
 ###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)

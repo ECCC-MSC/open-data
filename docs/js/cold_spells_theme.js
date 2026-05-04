@@ -53,7 +53,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'ALERTS', 'TILED': true },
+      params: { 'LAYERS': 'Current-Alerts', 'TILED': true },
     })
   }),
   // *** 3
@@ -61,7 +61,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'REPS.DIAG.3_WCF.ERMEAN', 'TILED': true },
+      params: { 'LAYERS': 'REPS.DIAG.3_WCF.ERMEAN', 'TILED': true, 'STYLES': 'WindChill_Dis' },
     })
   }),
   // *** 4

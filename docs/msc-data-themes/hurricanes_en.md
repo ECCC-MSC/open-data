@@ -9,7 +9,11 @@
 This page presents a list of relevant Meteorological Service of Canada datasets under the hurricane theme, in order to guide users to the appropriate datasets. This list is not exhaustive, but provides an overview of the layers that can be used under this theme. The main data layers are the hurricane tracks and hurricane reaction zone issued by the Canadian Hurricane Centre, as part of their regular hurricane season forecasts. However, a number of other relevant layers can also provide complementary information on the subject, such as wind speed, rainfall amounts or coastal waves, to give just a few examples.
 </br>
 
-Example of an interactive map featuring the Web Map Service (WMS) layers `Hurricane Response Zone`, `Weather Alerts` and `HRDPS-WeonG`(Gust) (active on the map), plus a number of optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet :
+Example of an interactive map featuring the Web Map Service (WMS) layers `Hurricane Response Zone`, `Current Weather Alerts` and `HRDPS-WeonG - Gust` (active on the map), plus a number of optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet.
+
+
+Layers shown in preview below can also be viewed on MSC AniMet via a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=CURRENT_CONDITIONS;0.75;0;0;0;1,HRDPS-WEonG_2.5km_Thunderstorm-Prob;0.75;0;0;0;1,HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex;0.75;0;0;0;1,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0;1,Current-Alerts;0.75;0;1;0;1,HURRICANE_RESPONSE_ZONE;0.75;0;1;0;1&lang=en) for all variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -26,7 +30,7 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Hurric
         </label></br>
         <label>
           <input type="checkbox" id="layer6" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png')">Weather Alerts</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png')">Weather Alerts</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
@@ -49,10 +53,11 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `Hurric
 </div>
 </br>
 
+
+
 ## Datasets
 
 It should be noted that the various layers presented in the list are available at different resolutions and timeframes.
-The layers in the following list can also be viewed on MSC AniMet with a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=Radar-Coverage_SfcPrecipType%3B0.75%3B1%3B1%3B0,RDPS.CONV_SFC-CAPE%3B0.75%3B0%3B1%3B0,HURRICANE_CENTRE%3B0.75%3B0%3B1%3B0,HURRICANE_RAD%3B0.75%3B0%3B1%3B0,HURRICANE_RESPONSE_ZONE%3B0.75%3B0%3B1%3B0,RDPA-Prelim_10km_Precip-Accum24h%3B0.75%3B0%3B1%3B0,RDPS.CONV_TOTALX.PT3H%3B0.75%3B0%3B1%3B0,RDWPS_2.5km_WindWavesSignificantHeight%3B0.75%3B0%3B1%3B0,RADAR_1KM_RRAI%3B0.75%3B0%3B1%3B0,Radar_1km_RainPrecipRate-Extrapolation%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_P0%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_PN%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_RN%3B0.75%3B0%3B1%3B0,HRDPS.CONTINENTAL_WGX%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_Thunderstorm-Prob%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_TotalPrecipIntensityIndex%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_WindGust%3B0.75%3B0%3B1%3B0,HRDPS-WEonG_2.5km_WindSpeed%3B0.75%3B0%3B1%3B0,ALERTS%3B0.75%3B0%3B1%3B0,CURRENT_CONDITIONS%3B0.75%3B0%3B1%3B0,Lightning_2.5km_Density%3B0.75%3B0%3B1%3B0,METNOTES%3B0.75%3B0%3B1%3B0&extent=-22088883,-731482,1411752,11074002) for all variables.
 
 ##### &emsp;<span class="badge badge-info">Hurricanes</span>
 ###### &emsp;[Hurricanes data documentation page](../msc-data/hurricanes/readme_hurricanes_en.md)

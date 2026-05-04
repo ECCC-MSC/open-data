@@ -8,7 +8,10 @@
 
 This page presents a list of relevant Meteorological Service of Canada datasets under the theme of flooding, in order to guide users to the appropriate datasets. This list is not exhaustive, but provides an overview of the layers that can be used under this theme. The main data layers for this theme are precipitation quantities. However, a number of other relevant layers can also provide additional information on the subject, such as runoff or precipitable water contained in clouds, to name but two examples.
 
-Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.24F_PR` (Quantity of precipitation), `Weather Alerts` and `Current Conditions` (active on the map), plus other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet :
+Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA - Quantity of precipitation (24h)`, `Current Weather Alerts` and `Current Conditions` (active on the map), plus other optional layers that can be added by checking the boxes in the list in the map. The layers are served by MSC GeoMet.
+
+Layers shown in preview below can also be viewed on MSC AniMet via a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=HRDPS.CONTINENTAL_IH;0.75;0;0;0;1,RADAR_1KM_RRAI;0.75;0;0;0;1,HRDPS.CONTINENTAL_PC;0.75;0;0;0;1,CURRENT_CONDITIONS;0.75;0;1;0;1,Current-Alerts;0.75;0;1;0;1,HRDPA_2.5km_Precip-Accum24h-T12Z;0.75;0;1;0;1) for all variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,11 +24,11 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR')">Quantity of precipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPA_2.5km_Precip-Accum24h-T12Z&format=image/png&STYLE=CAPA24-LINEAR')">Quantity of precipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png')">Weather Alerts</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png')">Weather Alerts</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4" checked>
@@ -48,10 +51,11 @@ Example of an interactive map featuring the Web Map Service (WMS) layers `HRDPA.
 </div>
 </br>
 
+
+
 ## Datasets
 
 It should be noted that the various layers presented in the list are available at different resolutions and timeframes.
-The layers in the following list can also be viewed on MSC AniMet with a single [permalink](https://eccc-msc.github.io/msc-animet/?layers=HRDPA.6F_PR;0.75;0;1;0,HRDPA.24F_PR;0.75;1;1;0,ALERTS;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,RADAR_1KM_RRAI;0.75;0;1;0,Radar_1km_RainPrecipRate-Extrapolation;0.75;0;1;0,HRDPS.CONTINENTAL_IH;0.75;0;1;0,HRDPS.CONTINENTAL_PC;0.75;0;1;0,HRDPS.CONTINENTAL_RN;0.75;0;1;0,GEPS.DIAG.96_PRMM.ERGE100;0.75;0;1;0,GEPS.DIAG.96_PRMM.ERGE150;0.75;0;1;0,GEPS.DIAG.96_PRMM.ERGE200;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE100;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE150;0.75;0;1;0,GEPS.DIAG.120_PRMM.ERGE200;0.75;0;1;0,GDPS.ETA_NO.3h;0.75;0;1;0,HRDPS.CONTINENTAL_NO;0.75;0;1;0,RDPS.ETA_NO;0.75;0;1;0&extent=-14583377,2738020,-2263679,8926788) for all variables.
 
 ##### &emsp;<span class="badge badge-info">HRDPS at surface/near-surface fields</span>
 ###### &emsp;[HRDPS data documentation](../msc-data/nwp_hrdps/readme_hrdps_en.md)

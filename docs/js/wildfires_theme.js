@@ -68,7 +68,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'FIREWORK.HOTSPOTS', 'TILED': true },
+      params: { 'LAYERS': 'WildfireHotspots', 'TILED': true },
     })
   }),
   // *** 5

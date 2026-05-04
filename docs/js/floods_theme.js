@@ -2,7 +2,7 @@ const parser = new DOMParser();
 
 // Async function used to retrieve start, end, and default time from GDPS.ETA_RT layer GetCapabilities document
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=HRDPA.24F_PR&t=' + new Date().getTime())
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RDPA.24F_PR&t=' + new Date().getTime())
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml')
@@ -44,7 +44,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'HRDPA.24F_PR', 'TILED': true },
+      params: { 'LAYERS': 'HRDPA_2.5km_Precip-Accum24h-T12Z', 'TILED': true },
     })
   }),
   // *** 2
@@ -52,7 +52,7 @@ let layers = [
     source: new ol.source.TileWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: { 'LAYERS': 'ALERTS', 'TILED': true },
+      params: { 'LAYERS': 'Current-Alerts', 'TILED': true },
     })
   }),
   // *** 3

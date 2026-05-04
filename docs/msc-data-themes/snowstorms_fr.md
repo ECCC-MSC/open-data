@@ -8,7 +8,10 @@
 
 Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des tempêtes de neige, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables de quantité de neige. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que les facteurs de vent, les types de précipitations hivernales ou la température, pour ne citer que ces quelques exemples.
 
-Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Alertes météo`, de `RDPS.ETA` (Neige accumulée) et de `Conditions actuelles` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) des `Alertes météo en cours`, de `SRPD - Neige accumulée (équivalent liquide)` et de `Conditions actuelles` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=RADAR_1KM_RSNO;0.75;0;0;0;1,RDPS-WEonG_10km_AirTemp;0.75;0;0;0;1,RDPS-WEonG_10km_BlowingSnow-Prob;0.75;0;0;0;1,CURRENT_CONDITIONS;0.75;0;1;0;1,RDPS_10km_Snow-Accum;0.75;0;1;PRECIPSNOW;1,Current-Alerts;0.75;0;1;Alertes-en-cours;1&lang=fr) unique pour l'ensemble des variables.
+
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,11 +24,11 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS.ETA_SN&format=image/png&STYLE=PRECIPSNOW')">Neige accumulée</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS_10km_Snow-Accum&format=image/png&STYLE=PRECIPSNOW&lang=fr')">Neige accumulée</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
@@ -33,25 +36,26 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_BlowingSnow-Prob&format=image/png&STYLE=BlowingSnow-Prob')">Probabilité de poudredrie</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_BlowingSnow-Prob&format=image/png&STYLE=BlowingSnow-Prob&lang=fr')">Probabilité de poudredrie</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_AirTemp&format=image/png&STYLE=TEMPERATURE-LINEAR')">Température</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_AirTemp&format=image/png&STYLE=TEMPERATURE-LINEAR&lang=fr')">Température</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr')">Radar pour la neige</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors&lang=fr')">Radar pour la neige</span>
         </label></br>
     </div>
   </div>
 </div>
 </br>
 
+
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=CURRENT_CONDITIONS;0.75;0;1;0,Radar_1km_SnowPrecipRate-Extrapolation;0.75;1;1;0,RDPS.ETA_TT;0.75;0;1;0,RDPS.ETA_SN;0.75;0;1;0,RDPS.ETA_WD;0.75;0;1;0,RDPS.ETA_WGE;0.75;0;1;0,ALERTS;0.75;0;1;0,RDPS.ETA_WSPD;0.75;0;1;WindSpeed_30-210Knots_Dis,RDPS-WEonG_10km_AirTemp;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnowPresence;0.75;0;1;0,RDPS-WEonG_10km_BlowingSnow-Prob;0.75;0;1;0,RDPS-WEonG_10km_Snow-Prob;0.75;0;1;0,RDPS-WEonG_10km_SnowSqualls-Prob;0.75;0;1;0,RDPS-WEonG_10km_SnowHeight;0.75;0;1;0,RADAR_1KM_RSNO;0.75;0;1;0,REPS.DIAG.12_SNMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_SNMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PRMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PRMM.ERGE30;0.75;0;1;0,REPS.DIAG.3_PRMM.ERGE15;0.75;0;1;0,REPS.DIAG.3_PRMM.ERMEAN;0.75;0;1;0,REPS.DIAG.24_SNMM.ERGE20;0.75;0;1;0,REPS.DIAG.24_SNMM.ERGE25;0.75;0;1;0,REPS.DIAG.24_PEMM.ERGE20;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE30;0.75;0;1;0,GEPS.DIAG.24_SNMM.ERGE20;0.75;0;1;0,GEPS.DIAG.24_SNMM.ERGE25;0.75;0;1;0,GEPS.DIAG.24_PEMM.ERGE20;0.75;0;1;0,GEPS.DIAG.24_PEMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE30;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE15;0.75;0;1;0,REPS.DIAG.12_PEMM.ERGE5;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE15;0.75;0;1;0,GEPS.DIAG.12_PEMM.ERGE5;0.75;0;1;0&extent=-17412813,2741278,-274277,11223514) unique pour l'ensemble des variables.
+
 
 ##### &emsp;<span class="badge badge-info">SHRPD Continental - Éléments du temps sur grille</span>
 ###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)

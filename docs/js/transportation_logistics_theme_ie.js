@@ -9,7 +9,7 @@ var map = new ol.Map({
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'RDPS.ETA_SN', 'TILED': true},
+          params: {'LAYERS': 'RDPS.CONTINENTAL_WGX', 'TILED': true},
       })
     }),
     // *** 2
@@ -17,7 +17,7 @@ var map = new ol.Map({
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'CURRENT_CONDITIONS', 'TILED': true},
+          params: {'LAYERS': 'HRDPS-WEonG_2.5km_LiquidFogVisibility', 'TILED': true},
       })
     }),
     // *** 3
@@ -25,7 +25,7 @@ var map = new ol.Map({
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'RDPS-WEonG_10km_AirTemp', 'TILED': true},
+          params: {'LAYERS': 'RDPS-WEonG_10km_FreezingPrecip-Prob', 'TILED': true},
       })
     }),
   // *** 4
@@ -33,7 +33,7 @@ var map = new ol.Map({
     source: new ol.source.TileWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'ALERTS', 'TILED': true},
+        params: {'LAYERS': 'Current-Alerts', 'TILED': true},
     })
   }),
  // *** 5
@@ -41,7 +41,7 @@ var map = new ol.Map({
     source: new ol.source.ImageWMS({
       format: 'image/png',
       url: 'https://geo.weather.gc.ca/geomet/',
-      params: {'LAYERS': 'RDPS-WEonG_10km_BlowingSnow-Prob', 'TILED': true},
+      params: {'LAYERS': 'HRDPS-WEonG_2.5km_BlowingSnowPresence', 'TILED': true},
       transition: 0,
       crossOrigin: 'Anonymous'
     })

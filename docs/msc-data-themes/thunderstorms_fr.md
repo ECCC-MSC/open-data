@@ -8,7 +8,9 @@
 
 Cette page présente une liste de jeux de données pertinents du Service météorologique du Canada sous le thème des orages, afin de guider les utilisateurs vers les jeux de données appropriés. Cette liste n'est pas exhaustive, mais donne un aperçu des couches qui peuvent être utilisées sous ce thème. Les principales couches de données pour ce thème sont les variables de vents et les quantités de précipitations. Cependant, un certain nombre d'autres couches pertinentes peuvent également fournir des informations supplémentaires sur le sujet, telles que la probabilité d'occurence d'orage, les indice de Showalter ou de soulèvement de parcelle instable, pour ne citer que ces quelques exemples.
 
-Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) `HRDPS.CONTINENTAL` (Taux de précipitation instantané), `Alertes météo` et `HRDPS.CONTINENTAL` (Indice de Showalter) (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC :
+Exemple de carte interactive comportant les couches du Service de cartographie Web (WMS) `HRDPS - Taux de précipitation instantané`, `Alertes météo en cours` et `HRDPS - Indice de Showalter` (actives sur la carte), ainsi que d'autres couches optionnelles qui peuvent être ajoutées en cochant les cases de la liste dans la carte. Les couches sont desservies par GeoMet du SMC.
+
+Les couches de l’aperçu ci-dessous peuvent être également visualisées dans AniMet du SMC à l’aide d’un [permalien](https://eccc-msc.github.io/msc-animet/?layers=HRDPS-WEonG_2.5km_Thunderstorm-Prob;0.75;0;0;0;1,HRDPS-WEonG_2.5km_WindGust;0.75;0;0;0;1,HRDPS-WEonG_2.5km_Precip-Prob;0.75;0;0;0;1,HRDPS.CONTINENTAL.CONV_SHWINX.500;0.75;0;1;0;1,Current-Alerts;0.75;0;1;Alertes-en-cours;1,HRDPS.CONTINENTAL_RT;0.75;0;1;0;1&lang=fr) unique pour l'ensemble des variables.
 
 <div id="map" style="height: 500px; position: relative">
   <div id="legend-popup">
@@ -21,37 +23,38 @@ Exemple de carte interactive comportant les couches du Service de cartographie W
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_RT&format=image/png&STYLE=PRECIPPRTMMH')">Taux de précipitation instantané</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_RT&format=image/png&STYLE=PRECIPPRTMMH&lang=fr')">Taux de précipitation instantané</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ALERTS&format=image/png&STYLE=ALERTES')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL.CONV_SHWINX.500&format=image/png&STYLE=LIFTED_INDEX-LINEAR')">Indice de Showalter</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL.CONV_SHWINX.500&format=image/png&STYLE=LIFTED_INDEX-LINEAR&lang=fr')">Indice de Showalter</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Precip-Prob&format=image/png&STYLE=Precip-Prob')">Probabilité de précipitation</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Precip-Prob&format=image/png&STYLE=Precip-Prob&lang=fr')">Probabilité de précipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS')">Rafale de vents</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS&lang=fr')">Rafale de vents</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png&STYLE=Thunderstorm-Prob')">Probabilité d'orages</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png&STYLE=Thunderstorm-Prob&lang=fr')">Probabilité d'orages</span>
         </label></br>
     </div>
   </div>
 </div>
 </br>
 
+
 ## Jeux de données
 
 Il est à noter que les différentes couches présentées dans la liste qui suit, sont disponibles à différentes résolutions et différentes échéances temporelles.
-Les couches de la liste suivante peuvent être également visualisées sur AniMet du SMC avec un [permalien](https://eccc-msc.github.io/msc-animet/?layers=ALERTS;0.75;0;1;0,CURRENT_CONDITIONS;0.75;0;1;0,Lightning_2.5km_Density;0.75;1;1;0,RADAR_1KM_RRAI;0.75;0;1;0,Radar_1km_dBZ-Extrapolation;0.75;0;1;0,HRDPS-WEonG_2.5km_AirTemp;0.75;0;1;0,HRDPS-WEonG_2.5km_DewPointTemp;0.75;0;1;0,HRDPS-WEonG_2.5km_Precip-Prob;0.75;0;1;0,HRDPS-WEonG_2.5km_WindGust;0.75;0;1;0,HRDPS-WEonG_2.5km_WindDir;0.75;0;1;0,HRDPS-WEonG_2.5km_WindSpeed;0.75;0;1;0,HRDPS.CONTINENTAL.CONV_MU-VT-LI.500;0.75;0;1;0,HRDPS.CONTINENTAL.CONV_SHWINX.500;0.75;0;1;0,HRDPS.CONTINENTAL_IH;0.75;0;1;0,HRDPS.CONTINENTAL_PC;0.75;0;1;0,HRDPS.CONTINENTAL_RT;0.75;0;1;0,HRDPS-WEonG_2.5km_Thunderstorm-Prob;0.75;0;1;0&extent=-19347716,1946579,-535293,11257258) unique pour l'ensemble des variables.
+
 
 ##### &emsp;<span class="badge badge-info">SHRPD à la surface ou à proximité de la surface</span>
 ###### &emsp;[Documentation des données SHRPD](../msc-data/nwp_hrdps/readme_hrdps_fr.md)
