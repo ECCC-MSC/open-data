@@ -4,9 +4,9 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS on MSC Datamart
 
-# High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format
+# High Resolution Deterministic Prediction System (HRDPS) data
 
-The operational [High Resolution Deterministic Prediction System (HRDPS)](readme_hrdps_en.md) is a series of nested grids for Limited Area Forecasts (LAM). The main grid has a horizontal resolution of 2.5 km over a pan-Canadian region. The HRDPS pilot model is a component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) at 10km horizontal resolution. The fields of the HRDPS GRIB2 dataset are available four times a day. 48-hour forecasts are produced for the pan-Canadian domain.
+The operational [High Resolution Deterministic Prediction System (HRDPS)](readme_hrdps_en.md) is a series of nested grids for Limited Area Forecasts (LAM). The main grid has a horizontal resolution of 2.5 km over a pan-Canadian region. The HRDPS pilot model is a component of the [Global Deterministic Prediction System (GDPS)](../nwp_gdps/readme_gdps_en.md) at 10km horizontal resolution. The fields of the HRDPS dataset are available four times a day. 48-hour forecasts are produced for the pan-Canadian domain.
 
 Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.
 
@@ -16,7 +16,7 @@ As part of a modernization plan of the Meteorological Service of Canada (MSC), c
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.
+The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 or GeoJSON file.
 
 The data can be accessed at the following URLs:
 
@@ -49,7 +49,7 @@ __Note__ : The [most recent versions of wgrib2](https://www.cpc.ncep.noaa.gov/pr
 
 The files have the following nomenclature :
 
-* `{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2`
+* `{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.{format}`
 * `{YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grid}{resolution}_PT{hhh}H.grib2`
 
 where :
@@ -66,6 +66,7 @@ where :
 * __Grid__ : Horizontal grid [RLatLon]
 * __resolution__ : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions
 * __PT{hhh}H__ : Forecast hours based on [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]
+* __format__ : Constant character string indicating the format [grib2, json]
 * __grib2__ : Constant string indicating the GRIB2 format is used
 
 Examples of filenames : 
@@ -107,13 +108,14 @@ This list contains both the parameters generated from HRDPS outputs and the weat
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
 </script>
 
-Note:
+Notes:
 
 * UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:
     * 00Z run: 18h and 42h
     * 06Z run: 12h and 36h
     * 12Z run: 6h and 30h
     * 18Z run: 0h and 24h
+* High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.
 
 ## Support
 

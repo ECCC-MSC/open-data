@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC Open Data](../readme_en.md) > [HRDPS](readme_hrdps_en.md) > HRDPS statistical post-processing on MSC Datamart
 
-# High Resolution Deterministic Prediction System (HRDPS) data statistically post-processed in GeoJSON format
+# High Resolution Deterministic Prediction System (HRDPS) data statistically post-processed
 
 Statistical post-processing of forecasts from numerical weather and environmental models, including the [High Resolution Deterministic Prediction System (HRDPS)](readme_hrdps_en.md), helps reduce systematic biases and error variance in raw forecasts. This is achieved by establishing optimized statistical relationships between observations recorded at stations and numerical model outputs at nearby grid points.
 

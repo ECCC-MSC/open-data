@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD sur le Datamart du SMC
 
-# Données NetCDF de l'analyse globale de glace 
+# Données de l'analyse globale de glace 
 
 Environnement et Changement climatique Canada fournit des champs d'analyse des glaces de mer à l'échelle mondiale produits par son [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) et interpolés sur une grille latitude-longitude tournée avec une résolution de 0.09 x 0.09 degré.
 Les fichiers de données sont au format NetCDF (modèle classique NetCDF-4) et sont conformes aux conventions sur le climat et les prévisions.

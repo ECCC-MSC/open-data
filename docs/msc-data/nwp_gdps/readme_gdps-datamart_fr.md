@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD sur le Datamart du SMC
 
-# Données GRIB2 du Système global de prévision déterministe (SGPD)
+# Données du Système global de prévision déterministe (SGPD)
 
 Les champs du jeu de données GRIB2 du [Système global de prévision déterministe (SGPD)](readme_gdps_fr.md) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
 
@@ -60,15 +60,15 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
 Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
 
-# Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental
+# Données du Système global de prévision déterministe (SGPD) expérimental
 
-Les champs du jeu de données GRIB2 du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
+Les champs du jeu de données du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
 
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.
 
 Les données sont accessibles à l'adresse suivante :
 
@@ -95,7 +95,7 @@ Valeurs données aux différents paramètres de la grille latitude-longitude à 
 
 Les fichiers ont la nomenclature suivante :
 
-{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
+{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}
 
 où :
 
@@ -110,7 +110,7 @@ où :
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
+* __format__ : Chaîne de caractères constante indiquant le format [grib2, json]
 
 Exemples de noms de fichiers :
 
@@ -158,6 +158,7 @@ Notes :
 * Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:
     * Passe de 00Z: 18h à 234h, toutes les 3 heures
     * Passe de 12Z: 6h à 222h, toutes les 3 heures
+* Les centres de hautes (High) et basses pression (Low) sont également disponibles en des points (format GeoJSON) sur le domaine, l'unité est hPa.
 
 # Support
 

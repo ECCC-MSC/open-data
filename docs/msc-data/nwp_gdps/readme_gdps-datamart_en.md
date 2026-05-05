@@ -4,9 +4,9 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GDPS](readme_gdps_en.md) > GDPS on MSC Datamart
 
-# Global Deterministic Prediction System (GDPS) data in GRIB2 format
+# Global Deterministic Prediction System (GDPS) data
 
-The fields in the GRIB2 dataset of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
+The fields of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
 
 ## Data location
 
@@ -61,15 +61,15 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
 
 This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).
 
-# Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format
+# Experimental Global Deterministic Prediction System (GDPS) data
 
-The fields in the GRIB2 dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
+The fields in the dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
 
 ## Data location
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
+The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 or GeoSJON file.
 
 The data can be accessed at the following address :
 
@@ -96,7 +96,7 @@ Values given to the parameters of the 15km latitude-longitude grid:
 
 The files have the following nomenclature:
 
-{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2
+{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}
 
 where :
 
@@ -111,7 +111,7 @@ where :
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.15. Means a resolution of 0.15° (approx. 15km) in longitudinal and latitudinal directions
 * __PT{hhh}H__: Timing according to [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084, 087, 090, …, 240]
-* __grib2__: Constant character string indicating that the format is GRIB2.
+* __format__ : Constant character string indicating the format [grib2, json]
 
 Examples of filenames :
 
@@ -159,6 +159,7 @@ Notes :
 * UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:
     * 00Z run: 18h to 234h, every 3 hours
     * 12Z run: 6h to 222h, every 3 hours
+* High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.
     
 # Support
 
