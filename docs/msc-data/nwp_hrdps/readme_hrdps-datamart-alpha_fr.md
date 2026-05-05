@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > SHRPD expérimental sur DD-Alpha
 
-# Données GRIB2 expérimentales à 1 km du Système à Haute Résolution de Prévision Déterministe (SHRPD) sur la fenêtre ouest
+# Données expérimentales à 1 km du Système à Haute Résolution de Prévision Déterministe (SHRPD) sur la fenêtre ouest
 
 Au cours de l'été 2017, la Colombie-Britannique a connu de graves incendies de forêt.  Afin de fournir des informations météorologiques plus détaillées et de piloter les modèles de qualité de l'air, le domaine SHRPD 1 km ouest a été implémenté en **mode expérimental** le 31 juillet 2018. 
 

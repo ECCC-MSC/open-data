@@ -4,9 +4,9 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SHRPD](readme_hrdps_fr.md) > SHRPD sur le Datamart du SMC
 
-# Données GRIB2 du Système à Haute Résolution de Prévision Déterministe (SHRPD)
+# Données du Système à Haute Résolution de Prévision Déterministe (SHRPD)
 
-Le [Système à haute résolution de prévision déterministe (SHRPD)](readme_hrdps_fr.md) opérationnel est une série de grilles emboitées pour les prévisions à aire limitée (LAM). La grille principale a une résolution horizontale de 2.5 km sur une région pancanadienne. Le modèle pilote du SHRPD est une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) à 10km de résolution horizontale. Les champs du jeu de données GRIB2 du SHRPD sont disponibles quatre fois par jour. Des prévisions de 48 heures sont produites pour le domaine pancanadien.
+Le [Système à haute résolution de prévision déterministe (SHRPD)](readme_hrdps_fr.md) opérationnel est une série de grilles emboitées pour les prévisions à aire limitée (LAM). La grille principale a une résolution horizontale de 2.5 km sur une région pancanadienne. Le modèle pilote du SHRPD est une composante du [Système global de prévision déterministe (SGPD)](../nwp_gdps/readme_gdps_fr.md) à 10km de résolution horizontale. Les champs du SHRPD sont disponibles quatre fois par jour. Des prévisions de 48 heures sont produites pour le domaine pancanadien.
 
 Les utilisateurs qui tireront le plus avantage des données sont ceux qui ont besoin de prévisions plus détaillées sur la température et sur les vents à la surface pour la journée même. Les prévisions à 2.5 km sont grandement utiles lors des changements de saisons et en hiver lorsque des changements rapides de température et de vents provoquent des changements de phase des précipitations (neige à pluie verglaçante à pluie, par exemple). Elles sont aussi utiles pour les prévisions à court terme aux endroits avec des reliefs accidentés et le long des rivages, car l’influence des changements d’altitude, de topographie ou de nature du terrain sera mieux décrite pour les phénomènes à cette échelle (brises de lacs ou de mer, circulation locale dans des vallées, changements de phase, etc.). Même en terrain moins accidenté ou loin de l’eau du rivage, la justesse de ces prévisions pourrait s’avérer utile à long terme. Le SHRPD devrait également être pris en compte pour des prévisions hydrologiques sur de plus petits bassins.
 
@@ -16,7 +16,7 @@ Dans le cadre d’un plan de modernisation du Service Météorologique Canadien 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.
 
 Les données sont accessibles aux adresses suivantes :
 
@@ -47,7 +47,7 @@ __Note__ : Les [versions les plus récentes de wgrib2](https://www.cpc.ncep.noaa
 
 Les fichiers ont la nomenclature suivante :
 
-* `{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
+* `{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.{format}`
 * `{YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.grib2`
 
 où :
@@ -64,6 +64,7 @@ où :
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.0225. Signifie une résolution de 0.0225°(environ 2.5km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 048]
+* __format__ : Chaîne de caractères constante indiquant le format [grib2, json]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
 Exemples de noms de fichier :
@@ -105,13 +106,14 @@ Cette liste contient à la fois les paramètres générés à partir des sorties
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_fr.csv");
 </script>
 
-Note:
+Notes:
 
 * Les maximums d'indice UV sont les maximums journaliers basés sur l'heure courante et les 23 heures précédentes (s'applique aussi à l'indice UV par temps clair). Ils sont disponibles aux échéances suivantes selon les passes du système:
     * Passe de 00Z: 18h et 42h
     * Passe de 06Z: 12h et 36h
     * Passe de 12Z: 6h et 30h
     * Passe de 18Z: 0h et 24h
+* Les centres de hautes (High) et basses pression (Low) sont également disponibles en des points (format GeoJSON) sur le domaine, l'unité est hPa.
 
 ## Support
 

@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > Post-traitement statistique SGPD sur le Datamart du SMC
 
-# Données GeoJSON du Système global de prévision déterministe (SGPD) statistiquement post-traitées
+# Données du Système global de prévision déterministe (SGPD) statistiquement post-traitées
 
 Le post-traitement statistique des prévisions des modèles numériques du temps et de l'environnement, incluant le Système global de prévision déterministe (SGPD), permet de réduire les biais systématiques et la variance de l'erreur des prévisions brutes. Pour ce faire, des relations statistiques optimisées entre les observations enregistrées aux stations et les sorties des modèles numériques aux points de grilles à proximité sont établies.
 

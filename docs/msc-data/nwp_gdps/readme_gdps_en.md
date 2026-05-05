@@ -16,10 +16,10 @@ The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM),
 This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
 * [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
-* [GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md)
-* [GeoJSON statistically post-processed data on the MSC Datamart](readme_gdps-statpostproc-datamart_en.md)
-* [Experimental GRIB2 weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
-* [NetCDF global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
+* [Data available on the MSC Datamart](readme_gdps-datamart_en.md)
+* [Statistically post-processed data on the MSC Datamart](readme_gdps-statpostproc-datamart_en.md)
+* [Experimental weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
+* [Global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the `GDPS.DIAG_NW_PT1H` layer served by MSC GeoMet:
 
@@ -124,8 +124,8 @@ The experimental Global Deterministic Prediction System (GDPS) is a coupled atmo
 This experimental data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
 
 * [Experimental data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
-* [Experimental GRIB2 data available on the MSC Datamart](readme_gdps-datamart_en.md#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format)
-* [Experimental Global Environmental eMuLator (GEML) GRIB2 data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
+* [Experimental data available on the MSC Datamart](readme_gdps-datamart_en.md#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format)
+* [Experimental Global Environmental eMuLator (GEML) data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 

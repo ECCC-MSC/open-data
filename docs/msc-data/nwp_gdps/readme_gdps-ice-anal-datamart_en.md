@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GDPS](readme_gdps_en.md) > GDPS on MSC Datamart
 
-# Global ice analysis data in NetCDF format
+# Global ice analysis data
 
 Environment and Climate Change Canada provides global sea-ice analysis fields produced by its operational [Global Deterministic Prediction System (GDPS)](readme_gdps_en.md) and interpolated to a rotated latitude-longitude grid with 0.09 x 0.09 degree resolution.
 The data files are in NetCDF format (NetCDF-4 classic model) and comply with the Climate and Forecast Conventions.
