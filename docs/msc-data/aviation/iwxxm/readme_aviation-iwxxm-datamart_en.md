@@ -1,8 +1,8 @@
 [In French](readme_aviation-iwxxm-datamart_fr.md)
 
-![ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [MSC Data](../readme_fr.md) > [Aviation Weather Data](readme_aviation-iwxxm_en.md) > Aviation Weather Data in IWXXM Format on the MSC Datamart
+[TdM](../../../readme_fr.md) > [MSC Data](../../readme_fr.md) > [Aviation Weather Data](readme_aviation-iwxxm_en.md) > Aviation Weather Data in IWXXM Format on the MSC Datamart
 
 # Aviation Weather Data in IWXXM Format
 
@@ -14,7 +14,7 @@ This page describes both the [aviation meteorological data in IWXXM format](read
 
 ## Data Address 
 
-Data from the MSC Datamart can be [automatically retrieved using the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_fr.md) as soon as it becomes available. An [overview and examples for accessing and using the Meteorological Service of Canada’s open data](../../usage/readme_fr.md) is also available.
+Data from the MSC Datamart can be [automatically retrieved using the Advanced Message Queuing Protocol (AMQP)](../../../msc-datamart/amqp_fr.md) as soon as it becomes available. An [overview and examples for accessing and using the Meteorological Service of Canada’s open data](../../../usage/readme_fr.md) is also available.
 
 The data is available via the HTTPS protocol. It can be accessed using a standard web browser. In this case, a list of links providing access to an XML file is displayed.
 
