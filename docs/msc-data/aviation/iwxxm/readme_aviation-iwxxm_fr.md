@@ -1,8 +1,8 @@
 [In English](readme_aviation-iwxxm_en.md)
 
-![ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > Données météorologiques à l'aviation
+[TdM](../../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > Données météorologiques à l'aviation
 
 # Données météorologique à l'aviation en format IWXXM
 
@@ -16,19 +16,19 @@ Chaque message IWXXM contient tous les composants qui décrivent complètement l
 
 ### Comment accéder aux données
 
-Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
+Ces données sont disponibles sur le serveur de données [Datamart du SMC](../../../msc-datamart/readme_fr.md) :
 
 * [Données météorologiques à l'aviation en format IWXXM disponibles sur le Datamart du SMC](readme_aviation-iwxxm-datamart_fr.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../../usage/readme_fr.md) est disponible. 
 
 ### Licence
 
-La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
 
 ### Politique d'utilisation des services de données ouvertes du SMC
 
-La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+La [Politique d'utilisation des services de données ouvertes du SMC](../../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
 
 ### Métadonnées de découverte
 

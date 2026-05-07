@@ -1,8 +1,8 @@
 [In French](readme_aviation-iwxxm_fr.md)
 
-![ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../../img_eccc-logo.png)
 
-[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > Aviation meteorological data
+[TdM](../../../readme_en.md) > [MSC Data](../../readme_en.md) > Aviation meteorological data
 
 # Aviation meteorological data in IWXXM format
 
@@ -16,19 +16,19 @@ Each IWXXM message contains all of the components that completely describe the p
 
 ### How to access the data
 
-This data is available on the [MSC Datamart](../../msc-datamart/readme_en.md) data server:
+This data is available on the [MSC Datamart](../../../msc-datamart/readme_en.md) data server:
 
 * [Aviation meteorological data in IWXXM format available on the MSC Datamart](readme_aviation-iwxxm-datamart_en.md)
 
-An [Overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available. 
+An [Overview and examples of how to access and use Meteorological Service of Canada open data](../../../usage/readme_en.md) is available. 
 
 ### License
 
-The [end-user license for Environment and Climate Change Canada data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
+The [end-user license for Environment and Climate Change Canada data servers](../../../licence/readme_en.md) specifies the conditions of use of this data.
 
 ### MSC Open Data Services Usage Policy
 
-The [MSC Open Data Services Usage Policy](../../usage-policy/readme_en.md) determines what constitutes appropriate use of MSC Open Data Services and provides users with best practices for optimal use.
+The [MSC Open Data Services Usage Policy](../../../usage-policy/readme_en.md) determines what constitutes appropriate use of MSC Open Data Services and provides users with best practices for optimal use.
 
 ### Discovery metadata
 
