@@ -63,7 +63,7 @@ où :
 
 Exemple de nom de fichier: 
 
-* 20250703T06Z_MSC_HRDPS-PROGNOS-_AirTemp_AGL-1.5m_PT024H.json
+* 20250703T06Z_MSC_HRDPS-PROGNOS-MLR_AirTemp_AGL-1.5m_PT024H.json
 
 ## Liste des variables
 
