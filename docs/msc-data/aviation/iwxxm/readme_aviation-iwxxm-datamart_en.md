@@ -29,7 +29,7 @@ With:
 * __HH__: Time the bulletin was issued
 
 | Aviation product | Bulletin type         | File header           |
-|------------------|-----------------------|--------------------- -|
+|------------------|-----------------------|----------------------|
 | vaa              | Volcanic Ash Advisory | A_LUCN                |
 | qvaci            | Quantitative Volcanic Ash | To be determined         |
 | taf              | Aerodromes forecasts (TAF) | A_LTCN                |
