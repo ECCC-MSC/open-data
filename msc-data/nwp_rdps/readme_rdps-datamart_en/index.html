@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#regional-deterministic-prediction-system-rdps-data-in-grib2-format" class="nav-link">Regional Deterministic Prediction System (RDPS) data in GRIB2 format</a>
+            <li class="nav-item" data-level="1"><a href="#regional-deterministic-prediction-system-rdps-data" class="nav-link">Regional Deterministic Prediction System (RDPS) data</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -166,11 +166,11 @@
 <p><a href="../readme_rdps-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC Open Data</a> &gt; <a href="../readme_rdps_en/">RDPS</a> &gt; RDPS on MSC Datamart</p>
-<h1 id="regional-deterministic-prediction-system-rdps-data-in-grib2-format">Regional Deterministic Prediction System (RDPS) data in GRIB2 format</h1>
-<p>The fields of the GRIB2 dataset from the <a href="../readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a> are available both on a polar stereographic grid covering North America and adjacents waters with a resolution of 10 km, and on a rotated lat-lon grid covering a larger area that also includes the Caribbean and all of Mexico, as well as part of Northern Europe.</p>
+<h1 id="regional-deterministic-prediction-system-rdps-data">Regional Deterministic Prediction System (RDPS) data</h1>
+<p>The fields of the dataset from the <a href="../readme_rdps_en/">Regional Deterministic Prediction System (RDPS)</a> are available both on a polar stereographic grid covering North America and adjacents waters with a resolution of 10 km, and on a rotated lat-lon grid covering a larger area that also includes the Caribbean and all of Mexico, as well as part of Northern Europe.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 or GeoJSON file.</p>
 <p>The data can be accessed at the following URLs: </p>
 <ul>
 <li>Data on polar stereographic grid: <a href="https://dd.weather.gc.ca/today/model_gem_regional">https://dd.weather.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/</a></li>
@@ -270,7 +270,7 @@
 <p>This file originates from the Canadian Meteorological Center (CMC) and contains the data of the RDPS. The data in the file start on September 13th 2010 at 06Z (2010091306). It contains the dew point depression (DEPR) at the isobaric level 1015 mb (ISBL_1015) on a polar-stereographic at 10km resolution (ps10km) for the forecast hour 27 (P027) in GRIB2 format (.grib2).</p>
 <h3 id="rotated-lat-lon-grid_1">Rotated lat-lon grid</h3>
 <p>The files have the following nomenclature:</p>
-<p><code>{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></p>
+<p><code>{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.${format}</code></p>
 <p>where :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
@@ -283,8 +283,8 @@
 <li><strong>LVLTYPE-LVL</strong> : Vertical level and height [ex: Sfc for the surface, EAtm for the integral of the column, DBS-10to20cm layer between 10 and 20cm below the surface, AGL-10m for the height of 10m above ground]</li>
 <li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
 <li><strong>resolution</strong> : 0.09. Means a resolution of 0.09° (approx. 10km) in longitudinal and latitudinal directions</li>
-<li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084].</li>
-<li><strong>grib2</strong>: Constant character string indicating that the format is GRIB2.</li>
+<li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084]</li>
+<li><strong>format</strong>: Constant character string indicating the format [grib2, json]</li>
 </ul>
 <p>Examples of file names:</p>
 <ul>
@@ -352,6 +352,7 @@
 <li>18Z run: 0h , 24h and 48h</li>
 </ul>
 </li>
+<li>High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.</li>
 </ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>

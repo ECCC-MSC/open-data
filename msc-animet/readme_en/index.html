@@ -146,7 +146,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#usage" class="nav-link">Usage</a>
+            <li class="nav-item" data-level="1"><a href="#usage-workflow" class="nav-link">Usage workflow</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#1-add-weather-and-climate-layers" class="nav-link">1 - Add weather and climate layers</a>
               <ul class="nav flex-column">
@@ -169,18 +169,6 @@
             
             <li class="nav-item" data-level="1"><a href="#additional-information" class="nav-link">Additional information</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#announcement-mailing-list" class="nav-link">Announcement mailing list</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#demonstration-video" class="nav-link">Demonstration video</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#source-code" class="nav-link">Source code</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -197,106 +185,154 @@
 <p><a href="../../readme_en/">TOC</a> &gt; MSC AniMet</p>
 <h1 id="msc-animet">MSC AniMet</h1>
 <p>MSC AniMet is a simple tool enabling users to interact with MSC Open Data weather, climate, water and environmental data and create custom weather animations for any area in the world. The resulting animations can be downloaded and shared with a permalink.</p>
-<p>MSC AniMet can be used to showcase a diversity of weather events such as storms, heat waves, hurricane trajectories, air quality events, extreme wind gusts, and much more.</p>
+<p>MSC AniMet can be used to showcase a diversity of weather events such as storms, heat waves, hurricane trajectories, air quality events, extreme wind gusts, and much more. Users can visualize, combine and animate over 17 550 layers.</p>
 <p>MSC AniMet provides access to <a href="../../msc-geomet/readme_en/">GeoMet-Weather and GeoMet-Climate</a> layers.</p>
 <h1 id="access">Access</h1>
 <p><strong>Access to MSC AniMet: <a href="https://eccc-msc.github.io/msc-animet/">https://eccc-msc.github.io/msc-animet/</a></strong></p>
-<p>A simple example of an MSC AniMet animation showing thunderstorms at dusk, with GOES satellite imagery and radar layers:</p>
-<video controls width="66%">
-  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2230Z_Thunderstorms_2024-05-22.mp4" type="video/mp4">
+<p>A simple example of an MSC AniMet animation showing the significant precipitation type, sea level pressure, and thickness between 1000mb and 500mb. This is a <a href="https://eccc-msc.github.io/msc-animet/?layers=RDPS_10km_PrecipType-Significant1h;0.75;1;1;PRECIPNW;1,RDPS_10km_Pressure_MSL-Contour;0.5;0;1;SeaLevelPressure_4mb;0,RDPS_10km_Thickness-Contour_1000to500mb;0.5;0;1;0;0&amp;extent=-23847063,1369205,1166371,12922284&amp;overlays=Boundaries&amp;range=83,4,l,PT1H">winter weather preset</a>.</p>
+<video controls width="85%">
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Precipitation_type_en.mp4" type="video/mp4">
 </video>
 <p><br></p>
-<h1 id="usage">Usage</h1>
+<h1 id="usage-workflow">Usage workflow</h1>
 <p>The main usage workflow:</p>
 <ol>
-<li>Add weather and climate layers to the map</li>
-<li>Customize the content of the map</li>
-<li>Configure the animation</li>
-<li>Create and share the map and animation</li>
+<li>Add weather and climate layers to the map.</li>
+<li>Customize the content of the map.</li>
+<li>Configure the animation.</li>
+<li>Create and share the map and animation.</li>
 </ol>
 <h2 id="1-add-weather-and-climate-layers">1 - Add weather and climate layers</h2>
-<p>Layers:</p>
+<h4 id="11-presets"><span class="badge badge-info">1.1 - Presets</span></h4>
+<p>Presets are groups of commonly used layers that users can add to the map such as currents conditions, classic synoptic, remote sensing, winter/summer weather and air quality. They are used to quickly set up common meteorological analysis views. When presets are selected, layers are automatically added.</p>
+<p><img alt="Presets" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Presets_en.jpg" /></p>
+<h4 id="12-available-layers"><span class="badge badge-info">1.2 - Available layers</span></h4>
+<p>Users can choose a layer by typing a variable, a system, a level or by browsing though all available layers in the layer tree. Refer to the <a href="../../msc-data/readme_en/">list of available datasets</a> for additional information on MSC Open Data offerings.</p>
+<p><img alt="Layer tree" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Layer_Tree_en.jpg" /></p>
 <ul>
-<li>Add layers from the <code>GeoMet-Weather</code> or <code>GeoMet-Climate</code> panel. Additional data sources may be added via the <code>+</code> button.</li>
-<li>Browse the layer tree to find the desired layer</li>
-<li>Use the search box to filter available layers</li>
-<li>Click on the <code>+</code> sign to add a layer to the map</li>
+<li>Additional data sources may be added via the <code>+</code> button. Access additional third-party WMS services, including those from <strong>ECMWF</strong>, <strong>NASA</strong>, <strong>NOAA-nowCOAST</strong>, <strong>NOAA-NCEP</strong>, and Quebec’s Ministry of Energy and Natural Resources CartoService.</li>
 </ul>
-<p>Overlays:</p>
-<ul>
-<li>Select the 'Overlays' panel to add information on top of displayed layers</li>
-<li>Currently available overlays are Canadian geopolitical boundaries, cities and waterbodies from Natural Resource Canada. They are available only at certain zoom levels</li>
-</ul>
+<p><img alt="Data source" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Additionnal_Data_Source_en.jpg" /></p>
+<h4 id="13-users-own-vector-datasets"><span class="badge badge-info">1.3 - User's own vector datasets</span></h4>
+<p>MSC AniMet now supports adding your own <code>GeoJSON</code>, <code>TopoJSON</code>, <code>GPX</code>, <code>IGX</code>, and <code>KML</code> datasets to the map. Simply drag and drop your datasets onto the map to see them alongside your favourite layers. There's a default style assigned to a user's own dataset, it's not possible to change the style.</p>
+<hr />
 <h2 id="2-customize-content-of-the-map">2 - Customize content of the map</h2>
-<p>Configure layers in the <code>Layers configuration</code> panel and customize the map.</p>
-<p>Layers:</p>
+<p>Users can configure and customize existing layers on the map in the <code>CONFIGURE</code> panel.</p>
+<h5 id="21-customizing-a-layer-style-and-legend"><span class="badge badge-info">2.1 - Customizing a layer style and legend</span></h5>
 <ul>
-<li>When available, change layer's corresponding model run</li>
-<li>Reorder layers with the up and down arrows</li>
-<li>Arrows are shown only if multiple layers have been added</li>
-<li>Change layer colors<ul>
-<li>View and select the layer color ramp from available styles</li>
+<li><code>Select model run</code>: When available, change layer's corresponding model run by clicking on the date.</li>
+<li>Reorder layers with the up and down arrows.<ul>
+<li>Arrows are shown only if multiple layers have been added.</li>
 </ul>
 </li>
-<li>Adjust layer opacity</li>
-<li>Toggle layer visibility<ul>
-<li>A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range</li>
+<li><code>Temporal</code>: Hovering over a layer's clock (🕓 icon) provides the temporal dimensions: the current timestep, model run range and interval. The temporal range and interval can be reset to match a specific layer by clicking on the clock.</li>
+<li><code>Opacity</code> : Adjust layer opacity from 0-100%</li>
+<li><code>Toggle visibility</code>: hide or show layer.<ul>
+<li>A layer's visibility eye icon will turn red if the current map time is outside of the layer's temporal range.</li>
 </ul>
 </li>
-</ul>
-<p>Time:</p>
-<ul>
-<li>The current time displayed on the map is displayed above the temporal controller</li>
-<li>The start and end of the animation can be modified via the sliders on the left and right of the temporal controller</li>
-<li>Playback controls allow for playing, stopping, and moving between time steps<ul>
-<li>Playback options are located above the play/pause button and allow the user to loop the animation continuously or play the animation in reverse</li>
-<li>The temporal extent of added layers are updated and the temporal bounds of the map maybe updated as previous timesteps are no longer available</li>
+<li><code>Select layer style</code> : To change layer colors, click on the palette icon.<ul>
+<li>View and select the layer color ramp from available styles.</li>
+<li>Select which legends to display via the <code>Display legend</code> check box. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation.</li>
 </ul>
 </li>
-<li>The orange dot on the playback bar shows the current displayed timestep in relation to the defined temporal extent</li>
-<li>The timestep interval can be selected via the dropdown menu to the right of the temporal controller</li>
-<li>Choose whether to display the time in the user's local time (determined via the browser) or in UTC via the <code>Local time</code> switch</li>
-<li>Via the chevron located next to the UTC/local switch, users can select a specific timezone for the map. Users can revert to their system's time zone via the blue revert arrow in the timezone dropdown menu</li>
-<li>The temporal range and interval can be reset to match a specific layer by clicking on the clock icon next to the layer name in the Layers configuration panel</li>
-<li>Hovering over a layer's clock icon provides the temporal dimensions: the current timestep, model run range and interval</li>
+<li><code>Interpolation</code>: To show interpolation for supported GeoMet-Weather layers, enabling smoother visuals and a less pixelated look via on-the-fly upscaling and resampling of source data. To enable interpolation click on the layer's ✨ icon in the layer configuration panel.</li>
 </ul>
-<p>Map:</p>
+<video width="800" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Customize_Layer_Legend_Style_en.mp4" type="video/mp4">
+</video>
+<p></br>
+</br></p>
+<h4 id="22-using-the-time-controller"><span class="badge badge-info">2.2 - Using the time controller</span></h4>
 <ul>
-<li>Zoom and pan the map to your area of interest</li>
-<li>Resize the map and the animation with the handle at the bottom right corner of the map</li>
-<li>Rotate the map by pressing the <em>alt-shift</em> keys and dragging on the map.</li>
-<li>Select which legends to display via the <code>LEGENDS</code> overlay button. Legends can be resized and moved on the map and these changes will be reflected in the outputted animation</li>
-<li>The globe icon at the top of the map allows users to switch between map projections, show map graticules and alter the colour of the basemap</li>
+<li>The current time displayed on the map is displayed above the temporal controller.</li>
+<li>The start and end of the animation can be modified via the sliders on the left and right of the temporal controller.</li>
+<li>Playback controls allow for playing, stopping, and moving between time steps.<ul>
+<li>Playback options are located above the play/pause button and allow the user to loop the animation continuously or play the animation in reverse.</li>
+<li>The temporal extent of added layers are updated and the temporal bounds of the map maybe updated as previous timesteps are no longer available.</li>
 </ul>
+</li>
+<li>The orange dot on the playback bar shows the current displayed timestep in relation to the defined temporal extent.</li>
+<li>The orange notch is the time indicator. It displays the current time in relation to the current data layers displayed on the map.</li>
+<li>The timestep interval can be selected via the dropdown menu to the right of the temporal controller.</li>
+<li>Click on ⏮️⏭️ to move to the first/last timestep and ⏪⏩ to step to the next or previous timestep.</li>
+<li>Choose whether to display the time in the user's local time (determined via the browser) or in UTC via the <code>Local time</code> switch.</li>
+<li>Via the chevron located next to the <code>UTC/Local</code> switch, users can select a specific timezone for the map. Users can revert to their system's time zone via the blue revert arrow in the timezone dropdown menu.</li>
+<li>The playback speed of the animation can now be modified via the temporal controller to adjust the number of images per second shown when animating via the temporal controller. The default playback is 4 images per second and can be increased to 10 images per second for a smoother animation. To modify animation playback speed, use the ⚙️ icon in the temporal controller.</li>
+</ul>
+<p><img alt="Time controller" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Time_Controller_Button_en.png" /></p>
+<p><strong>This is an example on how to use the time controller settings.</strong> </br></p>
+<video width="800" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Time_Controller_Tuto_en.mp4" type="video/mp4">
+</video>
+
+<p></br></p>
+<h4 id="23-customize-the-basemap-and-overlays"><span class="badge badge-info">2.3 - Customize the basemap and overlays</span></h4>
+<p>On the top corner, click on <code>Customize map</code> (🌎 icon) to modify the basemap and overlays.</br></p>
+<ul>
+<li>Select a projection<ul>
+<li><code>3857</code> Web Mercator</li>
+<li><code>3978</code> Lambert Conic Conformal</li>
+<li><code>3995</code> Arctic Polar Stereographic</li>
+<li><code>4326</code> WGS84 (lat/lon)</li>
+</ul>
+</li>
+<li>Add graticules.</li>
+<li>Select OpenStreetMap basemaps, boundary outlines/background color.</li>
+<li>Add overlays (city names, topographic baseline and other).</li>
+<li>Zoom and pan the map to your area of interest.</li>
+<li>Resize the map and the animation with the <code>+/-</code> handle at the bottom right corner of the map.</li>
+<li>Rotate the map by pressing the <code>Alt-Shift</code> keys and dragging on the map.</li>
+</ul>
+<p><img alt="Basemap" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Basemap_en.jpg" /></p>
+<h4 id="24-using-the-markup-tools"><span class="badge badge-info">2.4 - Using the markup tools</span></h4>
+<p>Users can also highlight or annotate their map with textboxes and shapes. Simply <code>right-click</code> on the map and select a markup option. All added markups are preserved in the resulting animation.</p>
+<ul>
+<li>To delete the annotation, <code>right-click</code> on it and press the <code>Delete/Del</code> key.</li>
+<li>To move the shape, hold <code>right-click</code> while dragging over the map.</li>
+</ul>
+<p><img alt="Markup tools" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Markup_Tools_en.jpg" /></p>
+<video width="700" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Annotations_en.mp4" type="video/mp4">
+</video>
+
+<p></br></p>
+<h4 id="25-display-data-properties"><span class="badge badge-info">2.5 - Display data properties</span></h4>
+<p>User can click anywhere on the interactive map to display the raw values and shows full properties at points. If multiple layers are superposed, all available data will be displayed in the popups. Click on the coordinates on top of the popup box to change how they are displayed.</p>
+<p><img alt="Data properties" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Data_Properties_en.jpg" /></p>
+<hr />
 <h2 id="3-configure-the-animation">3 - Configure the animation</h2>
-<p>Configure the animation in the <code>Animation configuration</code> panel:</p>
+<p>Configure the animation in the <code>EXPORT</code> panel:</p>
 <ul>
-<li>Provide a custom animation title, if desired</li>
-<li>Set animation speed in frames per second</li>
-<li>Toggle basemap between the light and dark basemaps</li>
-<li>The red outline shows what will be included in the animation output and the white elements show the space used by the animation header, footer and wall clock<ul>
-<li>A warning message will be displayed if displayed legends are not entirely contained within the area of the animation output</li>
+<li>Provide a custom animation title, if desired.</li>
+<li>Set animation speed in frames per second.</li>
+<li>Add colored borders to legends (matching the dots next to layer labels in the final animation).</li>
+<li>The red outline shows what will be included in the animation output and the white elements show the space used by the animation header, footer and wall clock.<ul>
+<li>A warning message will be displayed if displayed legends are not entirely contained within the area of the animation output.</li>
 </ul>
 </li>
-<li>Various aspect ratios can be selected for the animation output to match the user's needs and allow for easy sharing on social media platforms</li>
+<li>Various aspect ratios can be selected for the animation output to match the user's needs and allow for easy sharing on social media platforms.</li>
+<li>Preview the created animation before downloading it.</li>
 </ul>
+<p><img alt="Configure animation" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Configure_Animation_en.jpg" /></p>
+<hr />
 <h2 id="4-create-and-share-the-map-and-animation">4 - Create and share the map and animation</h2>
-<p>After clicking on the <code>Create animation</code> button and the generation process is completed, the <code>Download animation</code> button will appear.</p>
-<p>Retrieve and share the permalink with the <code>Share</code> button at the top-right:</p>
+<p>After clicking on the <code>Create animation</code> button and the generation process is completed, the <code>Download</code> button will appear.</p>
+<p>Retrieve and share the permalink with the share <code>➦</code> button at the top-right:</p>
 <ul>
-<li>You can copy and save the permalink for later use</li>
-<li>Directly share the permalink by email or on social media services<ul>
-<li>To share the animation on social media, the file must first be saved locally</li>
+<li>You can copy and save the permalink for later use.</li>
+<li>Directly share the permalink by email or on social media services.<ul>
+<li>To share the animation on social media, the file must first be saved locally.</li>
 </ul>
 </li>
 </ul>
 <p>The <a href="https://en.wikipedia.org/wiki/Permalink">permalink</a> allows you to open MSC AniMet with a determined set of layers and their configuration, as well as a specific map zoom, extent and size. The temporal dimensions are not included in the permalink due to the evolving nature and availability of archived data.</p>
 <h1 id="additional-information">Additional information</h1>
-<h2 id="announcement-mailing-list">Announcement mailing list</h2>
+<h4 id="announcement-mailing-list"><em>Announcement mailing list</em></h4>
 <p>MSC AniMet leverages data from the 24/7 mission critical <a href="../../msc-geomet/readme_en/">MSC GeoMet web services</a>. We encourage users to subscribe to the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> announcement mailing list to be informed of enhancements and changes to MSC AniMet.</p>
-<h2 id="demonstration-video">Demonstration video</h2>
-<p>A demonstration video showcasing MSC AniMet features is available on Vimeo: <a href="https://vimeo.com/1093850245?share=copy#t=2058.364">https://vimeo.com/1093850245?share=copy#t=2058.364</a></p>
-<h2 id="source-code">Source code</h2>
+<h4 id="demonstration-video"><em>Demonstration video</em></h4>
+<p>A <a href="https://vimeo.com/1093850245?share=copy#t=2058.364">demonstration video showcasing MSC AniMet</a> features is available on Vimeo. This is a demonstration of a previous version of AniMet (June 2025).</p>
+<h4 id="source-code"><em>Source code</em></h4>
 <p>The MSC AniMet source code is publicly available on GitHub: <a href="https://github.com/ECCC-MSC/msc-animet">https://github.com/ECCC-MSC/msc-animet</a></p>
 <h2 id="support">Support</h2>
 <p>MSC AniMet is a MSC Open Data demonstration tool. User support is provided on a best effort basis during normal business hours. Users requesting support are invited to <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p></div>

@@ -9,7 +9,7 @@ var map = new ol.Map({
         source: new ol.source.TileWMS({
             format: 'image/png',
             url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'HRDPA.24F_PR', 'TILED': true},
+            params: {'LAYERS': 'HRDPA_2.5km_Precip-Accum24h-T12Z', 'TILED': true},
         })
       }),
       // *** 2
@@ -17,7 +17,7 @@ var map = new ol.Map({
         source: new ol.source.TileWMS({
             format: 'image/png',
             url: 'https://geo.weather.gc.ca/geomet/',
-            params: {'LAYERS': 'ALERTS', 'TILED': true},
+            params: {'LAYERS': 'Current-Alerts', 'TILED': true},
         })
       }),
       // *** 3

@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd" class="nav-link">Données GRIB2 du Système global de prévision déterministe (SGPD)</a>
+            <li class="nav-item" data-level="1"><a href="#donnees-du-systeme-global-de-prevision-deterministe-sgpd" class="nav-link">Données du Système global de prévision déterministe (SGPD)</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
@@ -143,7 +143,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd-experimental" class="nav-link">Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental</a>
+            <li class="nav-item" data-level="1"><a href="#donnees-du-systeme-global-de-prevision-deterministe-sgpd-experimental" class="nav-link">Données du Système global de prévision déterministe (SGPD) expérimental</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#adresse-des-donnees_1" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
@@ -187,7 +187,7 @@
 <p><a href="../readme_gdps-datamart_en/">In English</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_gdps_fr/">SGPD</a> &gt; SGPD sur le Datamart du SMC</p>
-<h1 id="donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd">Données GRIB2 du Système global de prévision déterministe (SGPD)</h1>
+<h1 id="donnees-du-systeme-global-de-prevision-deterministe-sgpd">Données du Système global de prévision déterministe (SGPD)</h1>
 <p>Les champs du jeu de données GRIB2 du <a href="../readme_gdps_fr/">Système global de prévision déterministe (SGPD)</a> sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
@@ -248,11 +248,11 @@
 <p>Exemple de nom de fichier :
 CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <p>Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).</p>
-<h1 id="donnees-grib2-du-systeme-global-de-prevision-deterministe-sgpd-experimental">Données GRIB2 du Système global de prévision déterministe (SGPD) expérimental</h1>
-<p>Les champs du jeu de données GRIB2 du <a href="../readme_gdps_fr/#données-du-système-global-de-prévision-déterministe-expérimental">Système global de prévision déterministe expérimental (SGPD)</a> sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.</p>
+<h1 id="donnees-du-systeme-global-de-prevision-deterministe-sgpd-experimental">Données du Système global de prévision déterministe (SGPD) expérimental</h1>
+<p>Les champs du jeu de données du <a href="../readme_gdps_fr/#données-du-système-global-de-prévision-déterministe-expérimental">Système global de prévision déterministe expérimental (SGPD)</a> sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.</p>
 <h2 id="adresse-des-donnees_1">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
-<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
+<p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.</p>
 <p>Les données sont accessibles à l'adresse suivante :</p>
 <p><a href="https://dd.meteo.gc.ca/today/model_gdps">https://dd.meteo.gc.ca/today/model_gdps/{RES}/{HH}/{hhh}/</a></p>
 <p>où :</p>
@@ -291,7 +291,7 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers_1">Nomenclature des noms de fichiers</h2>
 <p>Les fichiers ont la nomenclature suivante :</p>
-<p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.grib2</p>
+<p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.${format}</p>
 <p>où :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision</li>
@@ -305,7 +305,7 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <li><strong>Grille</strong> : Grille horizontale [LatLon]</li>
 <li><strong>resolution</strong> : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale</li>
 <li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [000, 001, 002, ..., 084, 087, 090, …, 240]</li>
-<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
+<li><strong>format</strong> : Chaîne de caractères constante indiquant le format [grib2, json]</li>
 </ul>
 <p>Exemples de noms de fichiers :</p>
 <ul>
@@ -360,6 +360,7 @@ CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <li>Passe de 12Z: 6h à 222h, toutes les 3 heures</li>
 </ul>
 </li>
+<li>Les centres de hautes (High) et basses pression (Low) sont également disponibles en des points (format GeoJSON) sur le domaine, l'unité est hPa.</li>
 </ul>
 <h1 id="support">Support</h1>
 <p>Pour toute question relative à ces données, merci de <a href="https://meteo.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>. </p>

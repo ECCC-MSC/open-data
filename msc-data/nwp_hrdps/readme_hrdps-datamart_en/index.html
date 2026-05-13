@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#high-resolution-deterministic-prediction-system-hrdps-data-in-grib2-format" class="nav-link">High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format</a>
+            <li class="nav-item" data-level="1"><a href="#high-resolution-deterministic-prediction-system-hrdps-data" class="nav-link">High Resolution Deterministic Prediction System (HRDPS) data</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -166,13 +166,13 @@
 <p><a href="../readme_hrdps-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hrdps_en/">HRDPS</a> &gt; HRDPS on MSC Datamart</p>
-<h1 id="high-resolution-deterministic-prediction-system-hrdps-data-in-grib2-format">High Resolution Deterministic Prediction System (HRDPS) data in GRIB2 format</h1>
-<p>The operational <a href="../readme_hrdps_en/">High Resolution Deterministic Prediction System (HRDPS)</a> is a series of nested grids for Limited Area Forecasts (LAM). The main grid has a horizontal resolution of 2.5 km over a pan-Canadian region. The HRDPS pilot model is a component of the <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> at 10km horizontal resolution. The fields of the HRDPS GRIB2 dataset are available four times a day. 48-hour forecasts are produced for the pan-Canadian domain.</p>
+<h1 id="high-resolution-deterministic-prediction-system-hrdps-data">High Resolution Deterministic Prediction System (HRDPS) data</h1>
+<p>The operational <a href="../readme_hrdps_en/">High Resolution Deterministic Prediction System (HRDPS)</a> is a series of nested grids for Limited Area Forecasts (LAM). The main grid has a horizontal resolution of 2.5 km over a pan-Canadian region. The HRDPS pilot model is a component of the <a href="../../nwp_gdps/readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> at 10km horizontal resolution. The fields of the HRDPS dataset are available four times a day. 48-hour forecasts are produced for the pan-Canadian domain.</p>
 <p>Users who will benefit most from using these data are those for whom a detailed forecast of surface temperatures and winds is important. Especially during the change of seasons and in wintertime when rapid changes in temperature and winds cause phase transitions of precipitation (freezing rain to snow to rain for example), 2.5 km forecasts could add much value. Also in the case of short-term forecasts in the presence of complex terrain or along shores, the influence of changes in altitude, topography and nature of the terrain will be better described for phenomena at this scale (lake or sea breezes, local valley flows, phase changes, etc.). Even over less rugged terrain, or over water away from shore, these more precise forecasts could be useful, repeatedly over a long period. As well, for hydrological forecasts on smaller basins, the HRDPS should be considered.</p>
 <p>As part of a modernization plan of the Meteorological Service of Canada (MSC), coherent <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_weong-hrdps_e.pdf">weather elements on the grid</a> ("WEonG"), merging raw model outputs and post-processed with various diagnostic approaches, are also available to serve the different forecasting programs (public, marine, aviation, air quality, etc.).  Hourly concepts are produced from different algorithms using outputs from the pan-Canadian HRDPS. These data are available on a lat-lon rotated grid. </p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 or GeoJSON file.</p>
 <p>The data can be accessed at the following URLs:</p>
 <ul>
 <li><a href="https://dd.weather.gc.ca/today/model_hrdps/continental">https://dd.weather.gc.ca/today/model_hrdps/continental/{res}/{HH}/{hhh}/</a></li>
@@ -217,7 +217,7 @@
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>The files have the following nomenclature :</p>
 <ul>
-<li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.grib2</code></li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.{format}</code></li>
 <li><code>{YYYYMMDD}T{HH}Z_MSC_HRDPS-WEonG_{VAR}{LVLTYPE-LVL}{Grid}{resolution}_PT{hhh}H.grib2</code></li>
 </ul>
 <p>where :</p>
@@ -234,6 +234,7 @@
 <li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
 <li><strong>resolution</strong> : 0.0225. Indicating resolution in degree [0.0225°(environ 2.5km)] in latitude and longitude directions</li>
 <li><strong>PT{hhh}H</strong> : Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "hhh" is the forecast hour [000, 001, 002, ..., 048]</li>
+<li><strong>format</strong> : Constant character string indicating the format [grib2, json]</li>
 <li><strong>grib2</strong> : Constant string indicating the GRIB2 format is used</li>
 </ul>
 <p>Examples of filenames : </p>
@@ -267,7 +268,7 @@
   loadTable("csv-table", "../../../assets/csv/HRDPS_Variables-List_en.csv");
 </script>
 
-<p>Note:</p>
+<p>Notes:</p>
 <ul>
 <li>UV index maximums are daily maximums based on the current hour and the previous 23 hours (also applies to UV index under clear sky). They are available at the following forecast hours, depending on the system run:<ul>
 <li>00Z run: 18h and 42h</li>
@@ -276,6 +277,7 @@
 <li>18Z run: 0h and 24h</li>
 </ul>
 </li>
+<li>High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.</li>
 </ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://www.weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>

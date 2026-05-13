@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#global-deterministic-prediction-system-gdps-data-in-grib2-format" class="nav-link">Global Deterministic Prediction System (GDPS) data in GRIB2 format</a>
+            <li class="nav-item" data-level="1"><a href="#global-deterministic-prediction-system-gdps-data" class="nav-link">Global Deterministic Prediction System (GDPS) data</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -143,7 +143,7 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format" class="nav-link">Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format</a>
+            <li class="nav-item" data-level="1"><a href="#experimental-global-deterministic-prediction-system-gdps-data" class="nav-link">Experimental Global Deterministic Prediction System (GDPS) data</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location_1" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -187,8 +187,8 @@
 <p><a href="../readme_gdps-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_gdps_en/">GDPS</a> &gt; GDPS on MSC Datamart</p>
-<h1 id="global-deterministic-prediction-system-gdps-data-in-grib2-format">Global Deterministic Prediction System (GDPS) data in GRIB2 format</h1>
-<p>The fields in the GRIB2 dataset of the <a href="../readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
+<h1 id="global-deterministic-prediction-system-gdps-data">Global Deterministic Prediction System (GDPS) data</h1>
+<p>The fields of the <a href="../readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.</p>
@@ -248,11 +248,11 @@
 <p>Example of file name :</p>
 <p>CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
 <p>This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).</p>
-<h1 id="experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format">Experimental Global Deterministic Prediction System (GDPS) data in GRIB2 format</h1>
-<p>The fields in the GRIB2 dataset of the <a href="../readme_gdps_en/#data-of-the-experimental-global-deterministic-prediction-system">experimental Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
+<h1 id="experimental-global-deterministic-prediction-system-gdps-data">Experimental Global Deterministic Prediction System (GDPS) data</h1>
+<p>The fields in the dataset of the <a href="../readme_gdps_en/#data-of-the-experimental-global-deterministic-prediction-system">experimental Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
 <h2 id="data-location_1">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 or GeoSJON file.</p>
 <p>The data can be accessed at the following address :</p>
 <p><a href="https://dd.weather.gc.ca/today/model_gdps">https://dd.weather.gc.ca/today/model_gdps/{RES}/{HH}/{hhh}/</a></p>
 <p>where :</p>
@@ -291,7 +291,7 @@
 </table>
 <h2 id="file-name-nomenclature_1">File name nomenclature</h2>
 <p>The files have the following nomenclature:</p>
-<p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.grib2</p>
+<p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.${format}</p>
 <p>where :</p>
 <ul>
 <li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
@@ -305,7 +305,7 @@
 <li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
 <li><strong>resolution</strong> : 0.15. Means a resolution of 0.15° (approx. 15km) in longitudinal and latitudinal directions</li>
 <li><strong>PT{hhh}H</strong>: Timing according to <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters for Period, Time and Hour. "hhh" represents the forecast time [000, 001, 002, ..., 084, 087, 090, …, 240]</li>
-<li><strong>grib2</strong>: Constant character string indicating that the format is GRIB2.</li>
+<li><strong>format</strong> : Constant character string indicating the format [grib2, json]</li>
 </ul>
 <p>Examples of filenames :</p>
 <ul>
@@ -360,6 +360,7 @@
 <li>12Z run: 6h to 222h, every 3 hours</li>
 </ul>
 </li>
+<li>High-pressure (High) and low-pressure (Low) centers are also available as points (GeoJSON format) across the domain; the unit is hPa.</li>
 </ul>
 <h1 id="support">Support</h1>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>

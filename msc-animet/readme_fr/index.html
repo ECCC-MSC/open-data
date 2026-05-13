@@ -159,18 +159,6 @@
             
             <li class="nav-item" data-level="1"><a href="#informations-supplementaires" class="nav-link">Informations supplémentaires</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#liste-dinformation" class="nav-link">Liste d'information</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#video-de-demonstration" class="nav-link">Vidéo de démonstration</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#code-source" class="nav-link">Code source</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
@@ -184,16 +172,16 @@
 
 <p><a href="../readme_en/">In English</a></p>
 <p><img alt="ECCC logo" src="../../img_eccc-logo.png" /></p>
-<p><a href="../../readme_fr/">TOC</a> &gt; AniMet du SMC</p>
+<p><a href="../../readme_fr/">TdM</a> &gt; AniMet du SMC</p>
 <h1 id="animet-du-smc">AniMet du SMC</h1>
 <p>AniMet du SMC est un outil simple permettant aux utilisateurs d'interagir avec les données ouvertes météorologiques, climatiques, hydrologiques et environnementales du SMC et de créer des animations personnalisées pour n'importe quelle région du monde. Les animations résultantes peuvent être téléchargées et partagées avec un permalien.</p>
-<p>AniMet du SMC peut être utilisé pour présenter une variété d'événements météorologiques tels que les tempêtes, les vagues de chaleur, les trajectoires d'ouragans, les événements liés à la qualité de l'air, les rafales de vent extrêmes, et bien plus encore.</p>
+<p>AniMet du SMC peut être utilisé pour présenter une variété d'événements météorologiques tels que les tempêtes, les vagues de chaleur, les trajectoires d'ouragans, les événements liés à la qualité de l'air, les rafales de vent extrêmes, et bien plus encore. Les utilisateurs peuvent visualiser, combiner et animer plus de 17 000 couches.</p>
 <p>AniMet du SMC donne accès aux couches de <a href="../../msc-geomet/readme_fr/">GeoMet-Météo et GeoMet-Climat</a>.</p>
 <h1 id="acces">Accès</h1>
 <p><strong>Accès à AniMet du SMC : <a href="https://eccc-msc.github.io/msc-animet/">https://eccc-msc.github.io/msc-animet/</a></strong></p>
-<p>Un exemple simple d'animation montrant des orages au crépuscule, avec l'imagerie satellitaire GOES et une couche radar :</p>
-<video controls width="66%">
-  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_20240522T2224Z_Orages_2024-04-22.mp4" type="video/mp4">
+<p>Un exemple simple d'animation MSC AniMet montrant le type significatif de précipitations, la pression au niveau de la mer et l'épaisseur entre 1000mb et 500mb. Il s'agit d'un <a href="https://eccc-msc.github.io/msc-animet/?layers=RDPS_10km_PrecipType-Significant1h;0.75;1;1;PRECIPNW-FR;1,RDPS_10km_Pressure_MSL-Contour;0.5;0;1;SeaLevelPressure_4mb;0,RDPS_10km_Thickness-Contour_1000to500mb;0.5;0;1;0;0&amp;extent=-19274854,2826576,486792,11953986&amp;overlays=Boundaries&amp;range=83,4,l,PT1H">préréglage de la météo d'hiver</a>.</p>
+<video controls width="85%">
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/MSC-AniMet_Type_de_precipitation_fr.mp4" type="video/mp4">
 </video>
 <p><br></p>
 <h1 id="utilisation">Utilisation</h1>
@@ -205,73 +193,120 @@
 <li>Créer et partager la carte et l'animation</li>
 </ol>
 <h2 id="1-ajouter-des-couches-meteorologiques-et-climatiques">1 - Ajouter des couches météorologiques et climatiques</h2>
-<p>Couches :</p>
+<h4 id="11-prereglages"><span class="badge badge-info">1.1 - Préréglages</span></h4>
+<p>Les préréglages sont des groupes de couches fréquemment utilisées que les utilisateurs peuvent ajouter à la carte, comme les conditions météorologiques actuelles, les données synoptiques classiques, la télédétection, les conditions météorologiques hivernales et estivales et la qualité de l'air. Ils permettent de configurer rapidement des vues d'analyse météorologique courantes. Quand un préréglage est sélectionné, les couches s'ajoutent automatiquement.</p>
+<p><img alt="Prereglages" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Prereglages_fr.jpg" /></p>
+<h4 id="12-couches-disponibles"><span class="badge badge-info">1.2 - Couches disponibles</span></h4>
+<p>Les utilisateurs peuvent sélectionner une couche en saisissant une variable, un système, un niveau ou en parcourant toutes les couches disponibles dans l'arborescence. Consultez la <a href="../../msc-data/readme_fr/">liste des jeux de données disponibles</a> pour obtenir des informations supplémentaires sur les offres de données ouvertes du MSC.</p>
+<p><img alt="Arborescence" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Arborescence_Couches_fr.jpg" /></p>
 <ul>
-<li>Ajouter des couches dans le panneau <code>GeoMet-Météo</code> ou <code>GeoMet-Climat</code>. Des sources supplémentaires de données peuvent être ajoutées via le bouton <code>+</code>.</li>
-<li>Parcourir l'arborescence des couches pour trouver la couche désirée</li>
-<li>Utiliser la boîte de recherche pour filtrer parmi les couches disponibles</li>
-<li>Cliquer sur le signe <code>+</code> pour ajouter une couche à la carte</li>
+<li>Des sources de données supplémentaires peuvent être ajoutées via le bouton <code>+</code>. Accédez à des services WMS tiers supplémentaires, notamment ceux du <strong>CEPMMT</strong>, de la <strong>NASA</strong>, de <strong>NOAA-nowCOAST</strong>, de <strong>NOAA-NCEP</strong> et du service CartoService du ministère de l'Énergie et des Ressources naturelles du Québec.</li>
 </ul>
-<p>Superpositions :</p>
-<ul>
-<li>Sélectionner le panneau 'Superpositions' pour ajouter de l'information au-dessus des couches affichées</li>
-<li>Les superpositions présentement disponibles sont les frontières géopolitiques, les villes et les délimitations des plans d'eau candiens en provenance de Ressources naturelles Canada. Ces couches ne sont disponibles qu'à certains niveaux de zoom</li>
-</ul>
+<p><img alt="Source de donnees" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Source_Donnee_Additionnel_fr.jpg" /></p>
+<h4 id="13-ensembles-de-donnees-vectorielles-de-lutilisateur"><span class="badge badge-info">1.3 - Ensembles de données vectorielles de l'utilisateur</span></h4>
+<p>MSC AniMet prend désormais en charge l'ajout de vos propres jeux de données <code>GeoJSON</code>, <code>TopoJSON</code>, <code>GPX</code>, <code>IGX</code> et <code>KML</code> à la carte. Il vous suffit de glisser-déposer vos jeux de données sur la carte pour les visualiser avec vos couches favorites. Un style par défaut est attribué aux jeux de données de l'utilisateur ; il n'est pas possible de le modifier.</p>
+<hr />
 <h2 id="2-personnaliser-le-contenu-de-la-carte">2 - Personnaliser le contenu de la carte</h2>
-<p>Configurer les couches dans le panneau <code>Configuration des couches</code> et personnaliser la carte.</p>
-<p>Couches :</p>
+<p>Configurer les couches dans le panneau <code>CONFIGURER</code> et personnaliser la carte.</p>
+<h5 id="21-personnaliser-du-style-de-la-couche-et-de-la-legende"><span class="badge badge-info">2.1 - Personnaliser du style de la couche et de la légende</span></h5>
 <ul>
-<li>Lorsque possible, changer la passe de modèle associée à la couche</li>
-<li>Réorganiser les couches à l'aide des flèches vers le haut et vers le bas<ul>
-<li>Les flèches ne sont affichées que si plusieurs couches ont été ajoutées</li>
+<li><code>Sélectionner la passe de modèle</code> : Lorsqu’elle est disponible, modifiez l’exécution du modèle associée à la couche en cliquant sur la date.</li>
+<li>Réorganisez les couches à l’aide des flèches haut et bas.<ul>
+<li>Les flèches sont affichées uniquement si plusieurs couches ont été ajoutées.</li>
 </ul>
 </li>
-<li>Modifier les couleurs des couches<ul>
-<li>Visualiser et sélectionner la palette de couleurs de la couche à partir des styles disponibles</li>
+<li><code>Temporel</code> : En survolant l'icône d'horloge (🕓) d'une couche, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle. L’étendue temporelle et l’intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l’icône horloge.</li>
+<li><code>Opacité</code> : Ajustez l’opacité de la couche de 0 à 100 %.</li>
+<li><code>Régler la visibilité</code> : masquer ou afficher la couche.<ul>
+<li>L’icône en forme d’œil de la couche devient rouge si l’heure actuelle de la carte est en dehors de l’intervalle temporel de la couche.</li>
 </ul>
 </li>
-<li>Ajuster l'opacité des couches</li>
-<li>Activer la visibilité des couches<ul>
-<li>L'icone de la visibilité d'une couche deviendra rouge si la date de la carte est à l'extérieur de la plage temporelle pour cette couche</li>
+<li><code>Sélectionner le style de la couche</code> : Pour modifier les couleurs de la couche, cliquez sur l’icône de palette.<ul>
+<li>Visualisez et sélectionnez la rampe de couleurs parmi les styles disponibles.</li>
+<li>Sélectionnez les légendes à afficher via la case à cocher <code>Afficher la légende</code>. Les légendes peuvent être redimensionnées et déplacées sur la carte, et ces modifications seront reflétées dans l’animation exportée.</li>
 </ul>
 </li>
+<li><code>Interpolation</code> : Pour afficher l’interpolation pour les couches GeoMet-Météo prises en charge, permettant des visuels plus fluides et un rendu moins pixelisé grâce à une mise à l’échelle et un rééchantillonnage des données source à la volée. Pour activer l’interpolation, cliquez sur l’icône ✨ de la couche dans le panneau de configuration.</li>
 </ul>
-<p>Temps :</p>
+<video width="800" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Personnaliser_Couche_Legende_Style_fr.mp4" type="video/mp4">
+</video>
+
+<p></br></br></p>
+<h4 id="22-utilisation-du-controleur-de-temps"><span class="badge badge-info">2.2 - Utilisation du contrôleur de temps</span></h4>
 <ul>
-<li>L'heure actuelle affichée sur la carte est affichée au-dessus du contrôleur temporel</li>
-<li>Le début et la fin de l'animation peuvent être modifiés à l'aide des curseurs situés à gauche et à droite de la barre de progression</li>
-<li>Les contrôles de lecture permettent de jouer, d'arrêter et de passer d'un pas de temps à l'autre<ul>
-<li>Les options de lecture sont situées au-dessus du bouton de lecture/pause et permettent à l'utilisateur de jouer l'animation en boucle ou en sens inverse</li>
-<li>L'étendue temporelle des couches ajoutées sont périodiquement mises à jour automatiquement et les limites temporelles de la carte peuvent être mises à jour lorsque les pas de temps précédents ne sont plus disponibles</li>
+<li>L’heure actuelle affichée sur la carte est indiquée au-dessus du contrôleur temporel.</li>
+<li>Le début et la fin de l’animation peuvent être modifiés à l’aide des curseurs situés à gauche et à droite du contrôleur temporel.</li>
+<li>Les commandes de lecture permettent de lancer, arrêter et naviguer entre les pas de temps.<ul>
+<li>Les options de lecture sont situées au-dessus du bouton lecture/pause et permettent à l’utilisateur de boucler l’animation en continu ou de la lire en sens inverse.</li>
+<li>L’étendue temporelle des couches ajoutées est mise à jour et les limites temporelles de la carte peuvent être ajustées lorsque certains pas de temps ne sont plus disponibles.</li>
 </ul>
 </li>
-<li>Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l'étendue temporelle définie</li>
-<li>Choisissez d'afficher l'heure à l'heure locale de l'utilisateur (déterminée par le navigateur) ou à l'heure UTC via le bouton <code>Heure locale</code></li>
-<li>La plage temporelle et l'intervalle peuvent être réinitialisés pour correspondre à une couche spécifique en cliquant sur l'icône de l'horloge à côté du nom de la couche dans le panneau de configuration des couches</li>
-<li>En survolant l'icône de l'horloge d'une couche dans le panneau de configuration des couches, on obtient les dimensions temporelles : le pas de temps actuel, la plage d'exécution du modèle et l'intervalle</li>
+<li>Le point orange sur la barre de lecture indique le pas de temps actuellement affiché par rapport à l’étendue temporelle définie.</li>
+<li>L’encoche orange est l’indicateur temporel. Elle affiche l’heure actuelle en relation avec les couches de données actuellement visibles sur la carte.</li>
+<li>L’intervalle de pas de temps peut être sélectionné via le menu déroulant à droite du contrôleur temporel.</li>
+<li>Cliquez sur ⏮️⏭️ pour aller au premier/dernier pas de temps et sur ⏪⏩ pour passer au pas de temps suivant ou précédent.</li>
+<li>Choisissez d’afficher l’heure selon le fuseau horaire local de l’utilisateur (déterminé via le navigateur) ou en UTC via l’interrupteur <code>Heure locale</code>.</li>
+<li>Via le chevron situé à côté de l’interrupteur <code>UTC/Heure locale</code>, les utilisateurs peuvent sélectionner un fuseau horaire spécifique pour la carte. Il est possible de revenir au fuseau horaire du système via la flèche bleue de réinitialisation dans le menu déroulant des fuseaux horaires.</li>
+<li>La vitesse de lecture de l’animation peut maintenant être modifiée via le contrôleur temporel afin d’ajuster le nombre d’images par seconde affichées lors de l’animation. La vitesse de lecture par défaut est de 4 images par seconde et peut être augmentée jusqu’à 10 images par seconde pour une animation plus fluide. Pour modifier la vitesse de lecture de l’animation, utilisez l’icône ⚙️ dans le contrôleur temporel.</li>
 </ul>
-<p>Carte :</p>
+<p><img alt="Controleur temporel" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Bouton_Controleur_Temporel_fr.png" /></p>
+<p><strong>Cet exemple montre comment utiliser les paramètres du contrôleur temporel.</strong></p>
+<video width="800" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Controleur_Temporel_Tuto_fr.mp4" type="video/mp4">
+</video>
+
+<p></br></p>
+<h4 id="23-personnaliser-la-carte-de-base-et-les-superpositions"><span class="badge badge-info">2.3 - Personnaliser la carte de base et les superpositions</span></h4>
+<p>Dans le coin supérieur, cliquez sur <code>Personnaliser la carte</code> (icône 🌎) pour modifier le fond de carte et les superpositions.</br></p>
 <ul>
-<li>Agrandir et déplacer la carte sur votre zone d'intérêt</li>
-<li>Redimensionner la carte et l'animation à l'aide de l'outil situé dans le coin inférieur droit de la carte</li>
-<li>Pivoter la carte en appuyant sur les touches <em>alt-shift</em> et en faisant glisser la carte.</li>
-<li>Sélectionner les légendes à afficher à l'aide du bouton <code>LÉGENDES</code>. Les légendes peuvent être redimensionnées et déplacées sur la carte et ces changements seront reflétés dans l'animation produite</li>
-<li>L'icône du globe en haut de la carte permet aux utilisateurs de passer d'une projection cartographique à l'autre, d'afficher des graticules et de modifier la couleur de la carte</li>
+<li>Sélectionner une projection<ul>
+<li><code>3857</code> Web Mercator</li>
+<li><code>3978</code> Lambert conique conforme</li>
+<li><code>3995</code> Stéréographique polaire arctique</li>
+<li><code>4326</code> WGS84 (lat/lon)</li>
 </ul>
+</li>
+<li>Ajouter des graticules.</li>
+<li>Sélectionner des fonds de carte OpenStreetMap, les contours des limites / la couleur d’arrière-plan.</li>
+<li>Ajouter des superpositions (noms de villes, cartographie topographique et autre).</li>
+<li>Zoomer et déplacer la carte vers votre zone d’intérêt.</li>
+<li>Redimensionner la carte et l’animation avec la poignée <code>+/-</code> située dans le coin inférieur droit de la carte.</li>
+<li>Faire pivoter la carte en maintenant les touches <code>Alt-Shift</code> enfoncées et en faisant glisser la carte.</li>
+</ul>
+<p><img alt="Fond de carte" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Fond_Carte_fr.jpg" /></p>
+<h4 id="24-utilisation-des-outils-dannotation"><span class="badge badge-info">2.4 – Utilisation des outils d’annotation</span></h4>
+<p>Les utilisateurs peuvent aussi surligner ou annoter la carte avec des zones de texte et des formes. Il suffit de faire un <code>clic droit</code> sur la carte et de sélectionner une option de marquage. Toutes les annotations ajoutées sont conservées dans l’animation générée.</p>
+<ul>
+<li>Pour supprimer une annotation, faites un <code>clic droit</code> dessus et appuyez sur la touche de suppression <code>Del/Suppr</code>.</li>
+<li>Pour déplacer une forme, maintenez le <code>clic droit</code> enfoncé tout en la faisant glisser sur la carte.</li>
+</ul>
+<p><img alt="Outils annotation" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Outils_Annotations_fr.jpg" /></p>
+<video width="700" controls>
+  <source src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Annotations_fr.mp4" type="video/mp4">
+</video>
+
+<p></br></p>
+<h4 id="25-afficher-les-proprietes-des-donnees"><span class="badge badge-info">2.5 - Afficher les propriétés des données</span></h4>
+<p>L'utilisateur peut cliquer n'importe où sur la carte interactive pour afficher les valeurs brutes et les propriétés complètes des points. Si plusieurs couches sont superposées, toutes les données disponibles s'afficheront dans les fenêtres contextuelles. Cliquez sur les coordonnées en haut de la fenêtre contextuelle pour modifier leur mode d'affichage.</p>
+<p><img alt="Proprietes donnees" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Proprietes_Donnees_fr.jpg" /></p>
+<hr />
 <h2 id="3-configurer-lanimation">3 - Configurer l'animation</h2>
-<p>Configurer l'animation dans le panneau <code>Configuration de l'animation</code> :</p>
+<p>Configurez l’animation dans le panneau <code>EXPORTER</code> :</p>
 <ul>
-<li>Fournir un titre d'animation personnalisé, si désiré</li>
-<li>Définir la vitesse de l'animation en images par seconde</li>
-<li>Choisir la carte de fond entre la carte de fond claire et foncée</li>
-<li>Le contour rouge montre ce qui sera inclus dans l'animation et les éléments blancs montrent l'espace utilisé par l'en-tête, le pied de page et l'horloge murale de l'animation<ul>
-<li>Un message d'avertissement s'affiche si les légendes affichées ne sont pas entièrement contenues dans la zone de sortie de l'animation</li>
+<li>Ajoutez un titre personnalisé pour l’animation, si désiré.</li>
+<li>Définissez la vitesse de l’animation en images par seconde.</li>
+<li>Ajoutez des bordures colorées aux légendes (correspondant aux points à côté des libellés de couche dans l’animation finale).</li>
+<li>Le contour rouge indique ce qui sera inclus dans le rendu de l’animation, et les éléments blancs représentent l’espace utilisé par l’en-tête, le pied de page et l’horloge.<ul>
+<li>Un message d’avertissement s’affichera si les légendes visibles ne sont pas entièrement incluses dans la zone de sortie de l’animation.</li>
 </ul>
 </li>
-<li>Différents formats de sortie peuvent être sélectionnés pour l'animation afin de répondre aux besoins de l'utilisateur et de permettre un partage facile sur les plateformes de médias sociaux</li>
+<li>Différents formats d’image (ratio d’aspect) peuvent être sélectionnés pour s’adapter aux besoins de l’utilisateur et faciliter le partage sur les réseaux sociaux.</li>
+<li>Prévisualisez l’animation créée avant de la télécharger.</li>
 </ul>
+<p><img alt="Configure animation" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-animet/Configurer_Animation_fr.jpg" /></p>
 <h2 id="4-creer-et-partager-la-carte-et-lanimation">4 - Créer et partager la carte et l'animation</h2>
-<p>Après avoir cliqué sur le bouton <code>Créer l'animation</code> et que le processus de génération est terminé, le bouton <code>Télécharger l'animation</code> apparaîtra.</p>
+<p>Après avoir cliqué sur le bouton <code>Créer l'animation</code> et que le processus de génération est terminé, le bouton <code>Télécharger</code> apparaîtra.</p>
 <p>Récupérer et partager le permalien avec le bouton <code>Partager</code> en haut à droite :</p>
 <ul>
 <li>Vous pouvez copier et sauvegarder le permalien pour une utilisation ultérieure</li>
@@ -282,11 +317,11 @@
 </ul>
 <p>Le <a href="https://fr.wikipedia.org/wiki/Permalien">permalien</a> vous permet d'ouvrir AniMet du SMC avec un ensemble déterminé de couches et leur configuration, ainsi qu'un zoom, une étendue et une taille de carte spécifiques. Les dimensions temporelles ne sont pas incluses dans le permalien en raison de la nature évolutive et de la disponibilité des données archivées.</p>
 <h1 id="informations-supplementaires">Informations supplémentaires</h1>
-<h2 id="liste-dinformation">Liste d'information</h2>
+<h4 id="liste-dinformation"><em>Liste d'information</em></h4>
 <p>AniMet du SMC exploite les données des <a href="../../msc-geomet/readme_fr/">services web 24/7 de GeoMet du SMC</a>. Nous encourageons les utilisateurs à s'inscrire à la liste de diffusion <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/geomet-info/">GeoMet-Info</a> pour être informés des améliorations et des changements apportés à AniMet du SMC.</p>
-<h2 id="video-de-demonstration">Vidéo de démonstration</h2>
-<p>Une vidéo de démonstration présentant les fonctionnalités d'AniMet du SMC est disponible sur Vimeo : <a href="https://vimeo.com/1093851275?share=copy#t=2217.201">https://vimeo.com/1093851275?share=copy#t=2217.201</a></p>
-<h2 id="code-source">Code source</h2>
+<h4 id="video-de-demonstration"><em>Vidéo de démonstration</em></h4>
+<p>Une <a href="https://vimeo.com/1093851275?share=copy#t=2217.201">vidéo de démonstration</a> présentant les fonctionnalités d'AniMet du SMC est disponible sur Vimeo. Il s'agit d'une démonstration d'une précédente version d'AniMet (juin 2025).</p>
+<h4 id="code-source"><em>Code source</em></h4>
 <p>Le code source d'AniMet du SMC est disponible publiquement sur GitHub : <a href="https://github.com/ECCC-MSC/msc-animet">https://github.com/ECCC-MSC/msc-animet</a></p>
 <h2 id="support">Support</h2>
 <p>AniMet du SMC est un outil de démonstration des données ouvertes du SMC. Le support aux utilisateurs est offert sur la base du meilleur effort durant les heures de travail normales. Les utilisateurs qui souhaitent obtenir du support sont invités à <a href="https://www.meteo.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p></div>
