@@ -12,15 +12,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.10.5
 
-* date: 2026-05-
+* date: 2026-05-13
 * announcements:
     * Not announced
 * new content:
     * First version of IWXXM weather data documentation (work in progress)
  * improvements:
     * Remove format mention in GDPS, RDPS and HRDPS Datamart links in main pages
+    * Updated AniMet documentation with the latest animation versions and tutorials
+    * Replaced the deprecated `ALERTS` layer with the newer `Current-Alerts` layer in the embedded maps within the `README`
 * bug fixes:
     * Typo
+    * Fixed broken permalinks in datasets by theme section
 
 # 2.10.4
 
