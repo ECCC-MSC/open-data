@@ -18,37 +18,39 @@ Data from the MSC Datamart can be [automatically retrieved using the Advanced Me
 
 The data is available via the HTTPS protocol. It can be accessed using a standard web browser. In this case, a list of links providing access to an XML file is displayed.
 
-Meteorological data in IWXXM format, as well as the schema associated with [Canadian data specifics](https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca/), can be found respectively at:
+Meteorological data in IWXXM format can be found at the address:
 
 * [https://dd.weather.gc.ca/today/aviation/iwxxm/{product}/{code_issuer}/{HH}](https://dd.weather.gc.ca/today/aviation/iwxxm)
-* [https://dd.weather.gc.ca/today/aviation/iwxxm/schema](https://dd.weather.gc.ca/today/aviation/iwxxm/schema)
 
 With:
 
-* __product__: Weather product (see list below)
-* __code_issuer__: International code of issuing offices (see list below)
-* __HH__: Time of data issuance
+* __product__ : Aviation product (see list below)
+* __code_issuer__: Code of the airport that reported the observation
+* __HH__: Time the bulletin was issued
 
-#### Product descriptions
+| Aviation product | Bulletin type         | File header           |
+|------------------|-----------------------|----------------------|
+| vaa              | Volcanic Ash Advisory | A_LUCN                |
+| qvaci            | Quantitative Volcanic Ash | To be determined         |
+| taf              | Aerodromes forecasts (TAF) | A_LTCN                |
+| metar            | Aerodrome routine (METAR) | A_LACN               |
+| speci            | Special meteorological report (SPECI) | A_LPCN              |
+| airmet           | AIRman's METeorological Information (AIRMET) | A_LWCN / A_LWNT               |
+| sigmet           | SIGnificant METeorological Information (SIGMET) | A_LSCN-A / A_LYCN / A_LVCN             |
 
-* __vaa__:
-* __qvaci__:
-* __taf__:
-* __metar__:
-* __speci__:
-* __airmet__:
-* __sigmet__:
+Canada uses version 3.0.0 of the WMO IWXXM schemes available at the following address: [https://schemas.wmo.int/iwxxm/](https://schemas.wmo.int/iwxxm/)
 
-#### List of Issuing Offices
+Canada also uses extension to provide additional meteorological elements or to meet national requirements. The Canadian extension schemas are available at the following address:
 
-| Code | Issuing Office Name | City | Time Zone Code |
-|-------------|---------------------------|--------------------- -|-------------------------|
-| cwao | Canadian Meteorological Centre | Montreal | EST5EDT |
-| | | | |
-| | | | |
+* [https://dd.weather.gc.ca/today/aviation/iwxxm/schema/](https://dd.weather.gc.ca/today/aviation/iwxxm/schema)
 
-... _To be completed via https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_en/#notes ??_
+Some weather elements used in Canadian aviation bulletins have unique definitions. The elements and their definitions can be found at:
 
+* [https://dd.weather.gc.ca/today/aviation/iwxxm/code-ca/](https://dd.weather.gc.ca/today/aviation/iwxxm/code-ca)
+
+Detailed documentation is available at this address:
+
+* [https://dd.weather.gc.ca/today/aviation/iwxxm/doc/](https://dd.weather.gc.ca/today/aviation/iwxxm/doc)
 
 ## File naming convention 
 
@@ -71,10 +73,7 @@ Example:
 
 * A_LTCN33CWAO102300RRA_C_CWAO_20260210230000.xml
 
-Notes:
-
-* Data is generated X times per day (??) and is valid for the next 24 hours (??). More specifically, the data is valid from ??
-* _Information on Canadian code text files: https://dd.weather.gc.ca/today/aviation/iwxxm/code-ca ???_
+More information about the [file naming convention](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/TAC_Bulletins_IWXXM_Files_2A_En.pdf) of the bulletins is available.
 
 ## Support
 
