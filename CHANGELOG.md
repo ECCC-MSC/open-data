@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.5
+
+* date: 2026-05-
+* announcements:
+    * Not announced
+* new content:
+    * First version of IWXXM weather data documentation (work in progress)
+ * improvements:
+    * Remove format mention in GDPS, RDPS and HRDPS Datamart links in main pages
+* bug fixes:
+    * Typo
+
 # 2.10.4
 
 * date: 2026-04-30
