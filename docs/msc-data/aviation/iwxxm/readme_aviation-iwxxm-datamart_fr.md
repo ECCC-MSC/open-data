@@ -32,7 +32,7 @@ Avec:
 | Produit à l'aviation | Type de bulletin         | En-tête du fichier           |
 |------------------|-----------------------|----------------------|
 | vaa              | Avis de cendres volcaniques (VAA) | A_LUCN                |
-| qvaci            | Analyse quantitative des cendres volcaniques (QVA) | To be determined         |
+| qvaci            | Analyse quantitative des cendres volcaniques (QVA) | A déterminer         |
 | taf              | Prévision d’aérodrome  (TAF) | A_LTCN                |
 | metar            | Rapport météorologique régulier d'aérodrome (METAR) | A_LACN               |
 | speci            | Rapport météorologique spécial d'aérodrome (SPECI) | A_LPCN              |
