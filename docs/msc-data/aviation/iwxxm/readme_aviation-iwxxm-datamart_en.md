@@ -6,7 +6,7 @@
 
 # Aviation Weather Data in IWXXM Format
 
-This page describes specialized aviation bulletins distributed in the [IWXXM format](https://community. wmo.int/iwxxm), an ICAO meteorological information exchange model introduced in November 2013 by Amendment 76 to ICAO Annex 3, allowing States to exchange their OPMET (Expert Group on Operational Meteorology) not only in TAC (traditional alphanumeric code) format but also in Extensible Markup Language (XML) and, more specifically, in Geographic Markup Language (GML).
+This page describes specialized aviation bulletins distributed in the [IWXXM format](https://community.wmo.int/iwxxm), an ICAO meteorological information exchange model introduced in November 2013 by Amendment 76 to ICAO Annex 3, allowing States to exchange their OPMET (Expert Group on Operational Meteorology) not only in TAC (traditional alphanumeric code) format but also in Extensible Markup Language (XML) and, more specifically, in Geographic Markup Language (GML).
 
 IWXXM information exchange became a recommendation through Amendment 77 to ICAO Annex 3 in November 2016 and a standard in November 2020, as specified in Amendment 78 to ICAO Annex 3.
 
@@ -25,8 +25,8 @@ Meteorological data in IWXXM format can be found at the address:
 With:
 
 * __product__ : Aviation product (see list below)
-* __code_issuer__: Code of the airport that reported the observation
-* __HH__: Time the bulletin was issued
+* __code_issuer__: Code of the airport that reports the observation
+* __HH__: Data transmission hour (UTC)
 
 | Aviation product | Bulletin type         | File header           |
 |------------------|-----------------------|----------------------|
@@ -73,7 +73,7 @@ Example:
 
 * A_LTCN33CWAO102300RRA_C_CWAO_20260210230000.xml
 
-More information about the [file naming convention](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/TAC_Bulletins_IWXXM_Files_2A_En.pdf) of the bulletins is available.
+More information about the [file naming convention](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/TAC_Bulletins_IWXXM_Files_2A_en.pdf) of the bulletins is available.
 
 ## Support
 

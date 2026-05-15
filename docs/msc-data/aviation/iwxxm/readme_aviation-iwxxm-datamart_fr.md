@@ -18,37 +18,40 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.
 
-Les données météorologiques en format IWXXM, ainsi que le schéma associé aux [spécificités des données canadiennes](https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca/) se trouvent respectivement:
+Les données météorologiques en format IWXXM sont disponibles à l'adresse:
 
 * [https://dd.meteo.gc.ca/today/aviation/iwxxm/{product}/{code_issuer}/{HH}](https://dd.meteo.gc.ca/today/aviation/iwxxm)
-* [https://dd.meteo.gc.ca/today/aviation/iwxxm/schema](https://dd.meteo.gc.ca/today/aviation/iwxxm/schema)
 
 Avec:
 
 * __product__ : Produit météorologique (voir la liste ci-dessous)
-* __code_issuer__ : Code international des bureaux émetteurs (voir la liste ci-dessous)
-* __HH__ : Heure d'émission des données
+* __code_issuer__ : Code de l'aérodrome qui rapporte l'observation
+* __HH__ : Heure d'émission des données (UTC)
 
-#### Description des produits
 
-* __vaa__ :
-* __qvaci__ :
-* __taf__ :
-* __metar__ :
-* __speci__ :
-* __airmet__ :
-* __sigmet__ :
+| Produit à l'aviation | Type de bulletin         | En-tête du fichier           |
+|------------------|-----------------------|----------------------|
+| vaa              | Avis de cendres volcaniques (VAA) | A_LUCN                |
+| qvaci            | Analyse quantitative des cendres volcaniques (QVA) | A déterminer         |
+| taf              | Prévision d’aérodrome  (TAF) | A_LTCN                |
+| metar            | Rapport météorologique régulier d'aérodrome (METAR) | A_LACN               |
+| speci            | Rapport météorologique spécial d'aérodrome (SPECI) | A_LPCN              |
+| airmet           | AIRman's METeorological Information (AIRMET) | A_LWCN / A_LWNT               |
+| sigmet           | SIGnificant METeorological Information (SIGMET) | A_LSCN-A / A_LYCN / A_LVCN             |
 
-#### Liste des bureau émetteurs
+Le Canada utilise la version 3.0.0 des schémas IWXXM de l'OMM, disponibles à l'adresse suivante : [https://schemas.wmo.int/iwxxm/](https://schemas.wmo.int/iwxxm/)
 
-| Code        |  Non du bureau émetteur   |  Ville               | Code de fuseau horaire  |
-|-------------|---------------------------|----------------------|-------------------------|
-| cwao | Centre météorologique canadien | Montréal     | EST5EDT         |
-|      |                                |              |                 |
-|      |                                |              |                 |
+Le Canada utilise également des schémas d'extension afin de fournir des éléments météorologiques supplémentaires ou pour répondre aux exigences nationales. Les schémas d'extension canadiens sont disponibles à l'adresse suivante :
 
-... _A compléter via https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_fr/#notes ??_
+* [https://dd.meteo.gc.ca/today/aviation/iwxxm/schema/](https://dd.meteo.gc.ca/today/aviation/iwxxm/schema)
 
+Certains éléments météorologiques utilisés dans les bulletins à l'aviation ont des définitions spécifiques pour le Canada. Ces éléments et leurs définitions sont disponibles à l'adresse suivante :
+
+* [https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca/](https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca)
+
+Une documentation détaillée est disponible à cette adresse :
+
+* [https://dd.meteo.gc.ca/today/aviation/iwxxm/doc/](https://dd.meteo.gc.ca/today/aviation/iwxxm/doc)
 
 ## Nomenclature des noms de fichiers 
 
@@ -71,11 +74,7 @@ Exemple :
 
 * A_LTCN33CWAO102300RRA_C_CWAO_20260210230000.xml
 
-Notes:
-
-* Les données sont générées X fois par jour (??) et sont valides pour les 24 prochaines heures (??). Plus spécifiquement, les données sont valides de ??
-* _Infos sur les fichiers textes du code canadien: https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca ???_
-
+Davantage d'information concernant la [nomenclature des bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/TAC_Bulletins_IWXXM_Files_2A_fr.pdf) est disponible.
 
 ## Support
 

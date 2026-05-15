@@ -36,5 +36,8 @@ Coming soon
 
 ## Technical documentation
 
-* [WMO No. 49 Technical Regulations, Volume II: Meteorological Service for International Air Navigation](https://library.wmo.int/records/item/35795-technical-regulations-volume-ii-meteorological-service-for-international-air-navigation?language_id=13&back=&offset=) 
-
+* [WMO No. 49 Technical Regulations, Volume II: Meteorological Service for International Air Navigation](https://library.wmo.int/records/item/35795-technical-regulations-volume-ii-meteorological-service-for-international-air-navigation?language_id=13&back=&offset=)
+* [Canadian Codes and Phenomena Registry (ECCC-MSC). ICAO Meteorological Information Exchange Model (IWXXM)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/Canadian_Code_Registry_1A_en.pdf)
+* [Encoder IWXXM AIRMET](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_AIRMET_1A_en.pdf)
+* [Encoder IWXXM SIGMET](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_SIGMET_1A_en.pdf) 
+* [Encoder IWXXM TAF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_TAF_v2.8_en.pdf)  

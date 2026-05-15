@@ -37,7 +37,9 @@ A venir
 ## Documentation technique
 
 * [OMM No. 49 Règlement technique, Volume II – Assistance météorologique à la navigation aérienne internationale](https://library.wmo.int/records/item/32117-reglement-technique-volume-ii-assistance-meteorologique-a-la-navigation-aerienne-internationale#.Yii3XOiZO70) 
-
-
+* [Registre des codes et phénomènes canadiens (ECCC-SMC), Modèle d’échange d’informations météorologiques de l’OACI (IWXXM)](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/Canadian_Code_Registry_1A_fr.pdf)
+* [Encodeur IWXXM AIRMET](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_AIRMET_1A_fr.pdf)
+* [Encodeur IWXXM SIGMET](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_SIGMET_1A_fr.pdf)
+* [Encodeur IWXXM TAF](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/IWXXM_TAF_v2.8_fr.pdf)
 
 
