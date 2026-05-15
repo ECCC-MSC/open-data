@@ -6,7 +6,7 @@
 
 # Aviation Weather Data in IWXXM Format
 
-This page describes specialized aviation bulletins distributed in the [IWXXM format](https://community.wmo.int/iwxxm), an ICAO meteorological information exchange model introduced in November 2013 by Amendment 76 to ICAO Annex 3, allowing States to exchange their OPMET (Expert Group on Operational Meteorology) not only in TAC (traditional alphanumeric code) format but also in Extensible Markup Language (XML) and, more specifically, in Geographic Markup Language (GML).
+This page describes specialized aviation bulletins distributed in the [IWXXM format](https://community.wmo.int/iwxxm), an ICAO meteorological information exchange model introduced in November 2013 by Amendment 76 to ICAO Annex 3, allowing States to exchange their OPMET (Operational Meteorology) not only in TAC (traditional alphanumeric code) format but also in Extensible Markup Language (XML) and, more specifically, in Geographic Markup Language (GML).
 
 IWXXM information exchange became a recommendation through Amendment 77 to ICAO Annex 3 in November 2016 and a standard in November 2020, as specified in Amendment 78 to ICAO Annex 3.
 
