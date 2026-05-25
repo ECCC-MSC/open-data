@@ -132,7 +132,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grids" class="nav-link">Technical specification of the grids</a>
+            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid" class="nav-link">Technical specification of the grid</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -173,53 +173,14 @@
 <p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 or GeoJSON file.</p>
 <p>The data can be accessed at the following URLs: </p>
 <ul>
-<li>Data on polar stereographic grid: <a href="https://dd.weather.gc.ca/today/model_gem_regional">https://dd.weather.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/</a></li>
-<li>Data on rotated lat-lon grid: <a href="https://dd.weather.gc.ca/today/model_rdps">https://dd.weather.gc.ca/today/model_rdps/10km/{HH}/{hhh}/</a> </li>
+<li><a href="https://dd.weather.gc.ca/today/model_rdps">https://dd.weather.gc.ca/today/model_rdps/10km/{HH}/{hhh}/</a> </li>
 </ul>
 <p>where :</p>
 <ul>
 <li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
 <li><strong>hhh</strong>: Forecast hour [000, 001, 002,..., 084]</li>
 </ul>
-<h2 id="technical-specification-of-the-grids">Technical specification of the grids</h2>
-<h3 id="polar-stereographic-grid">Polar stereographic grid</h3>
-<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png" /></p>
-<p>Values given to the parameters of the polar stereographic grid :</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>935</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>824</td>
-</tr>
-<tr>
-<td>resolution at 60° N</td>
-<td>10 km</td>
-</tr>
-<tr>
-<td>coordinates of the first grid point</td>
-<td>18.1429° N  142.8968° W</td>
-</tr>
-<tr>
-<td>(i,j) coordinate of North Pole</td>
-<td>(456.2; 732.4)</td>
-</tr>
-<tr>
-<td>grid orientation (with respect to j axis)</td>
-<td>-111.0°</td>
-</tr>
-</tbody>
-</table>
-<h3 id="rotated-lat-lon-grid">Rotated lat-lon grid</h3>
+<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p><img alt="Rotated lat-lon grid image of RDPS" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png" /></p>
 <p>Values given to the parameters of the rotated lat-lon grid :</p>
 <table>
@@ -249,26 +210,6 @@
 </tbody>
 </table>
 <h2 id="filename-nomenclature">Filename nomenclature</h2>
-<h3 id="polar-stereographic-grid_1">Polar stereographic grid</h3>
-<p>The files have the following nomenclature:</p>
-<p><code>CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2</code></p>
-<p>where :</p>
-<ul>
-<li><strong>CMC</strong> : constant string indicating that the data is from the Canadian Meteorological Centre</li>
-<li><strong>reg</strong> : constant string indicating that the data is from the RDPS</li>
-<li><strong>Variable</strong> : Variable type included in this file. To consult a complete list, refer to the variables section.</li>
-<li><strong>LevelType</strong> : Level type. To consult a complete list, refer to the variables section.</li>
-<li><strong>Level</strong> : Level value. To consult a complete list, refer to the variables section.</li>
-<li><strong>ps10km</strong> : constant string indicating that the projection used is polar-stereographic at 10km resolution.</li>
-<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast.</li>
-<li><strong>HH</strong> : UTC run time [00, 06, 12, 18]</li>
-<li><strong>Phhh</strong> : P is a constant character. hhh is the forecast hour [000,001,002,...,084] </li>
-<li><strong>grib2</strong> : constant string indicating the GRIB2 format is used</li>
-</ul>
-<p>Example of file name : </p>
-<p>CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2</p>
-<p>This file originates from the Canadian Meteorological Center (CMC) and contains the data of the RDPS. The data in the file start on September 13th 2010 at 06Z (2010091306). It contains the dew point depression (DEPR) at the isobaric level 1015 mb (ISBL_1015) on a polar-stereographic at 10km resolution (ps10km) for the forecast hour 27 (P027) in GRIB2 format (.grib2).</p>
-<h3 id="rotated-lat-lon-grid_1">Rotated lat-lon grid</h3>
 <p>The files have the following nomenclature:</p>
 <p><code>{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grid}{resolution}_PT{hhh}H.${format}</code></p>
 <p>where :</p>

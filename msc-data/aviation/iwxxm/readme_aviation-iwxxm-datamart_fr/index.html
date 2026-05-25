@@ -155,65 +155,81 @@
 <p><img alt="ECCC logo" src="../../../../img_eccc-logo.png" /></p>
 <p><a href="../../../../readme_fr/">TdM</a> &gt; <a href="../../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_aviation-iwxxm_fr/">Données météorologiques à l'aviation</a> &gt; Données météorologiques à l'aviation en format IWXXM sur le Datamart du SMC</p>
 <h1 id="donnees-meteorologiques-a-laviation-en-format-iwxxm">Données météorologiques à l'aviation en format IWXXM</h1>
-<p>Cette page décrit les bulletins spécialisés à l'aviation distribués dans le <a href="https://community.wmo.int/iwxxm">format IWXXM</a>, un modèle d'échange d'informations météorologiques de l'OACI) introduit en novembre 2013 par l'amendement 76 de l'Annexe 3 de l'OACI, permettant aux États d'échanger leurs données OPMET (<em>Expert Group on Operational Meteorology</em>) non seulement sous forme de TAC (code alphanumérique traditionnel) mais aussi en langage de balisage extensible (XML) et plus précisément en langage de balisage géographique (GML).</p>
+<p>Cette page décrit les bulletins spécialisés à l'aviation distribués dans le <a href="https://community.wmo.int/iwxxm">format IWXXM</a>, un modèle d'échange d'informations météorologiques de l'OACI introduit en novembre 2013 par l'amendement 76 de l'Annexe 3 de l'OACI, permettant aux États d'échanger leurs données OPMET (<em>Operational Meteorology</em>) non seulement sous forme de TAC (code alphanumérique traditionnel) mais aussi en langage de balisage extensible (XML) et plus précisément en langage de balisage géographique (GML).</p>
 <p>L'échange d'information IWXXM est devenu une recommandation par le biais de l'amendement 77 à l'Annexe 3 de l'OACI depuis novembre 2016 et une norme depuis novembre 2020, comme indiqué dans l'amendement 78 à l'Annexe 3 de l'OACI.</p>
 <p>Cette page décrit à la fois les <a href="../readme_aviation-iwxxm_fr/">données météorologiques à l'aviation en format IWXXM</a> disponibles sur le Datamart du SMC mais aussi le schéma utilisé pour encoder les données spécifiques au Canada.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier XML.</p>
-<p>Les données météorologiques en format IWXXM, ainsi que le schéma associé aux <a href="https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca/">spécificités des données canadiennes</a> se trouvent respectivement:</p>
+<p>Les données météorologiques en format IWXXM sont disponibles à l'adresse:</p>
 <ul>
 <li><a href="https://dd.meteo.gc.ca/today/aviation/iwxxm">https://dd.meteo.gc.ca/today/aviation/iwxxm/{product}/{code_issuer}/{HH}</a></li>
-<li><a href="https://dd.meteo.gc.ca/today/aviation/iwxxm/schema">https://dd.meteo.gc.ca/today/aviation/iwxxm/schema</a></li>
 </ul>
 <p>Avec:</p>
 <ul>
 <li><strong>product</strong> : Produit météorologique (voir la liste ci-dessous)</li>
-<li><strong>code_issuer</strong> : Code international des bureaux émetteurs (voir la liste ci-dessous)</li>
-<li><strong>HH</strong> : Heure d'émission des données</li>
+<li><strong>code_issuer</strong> : Code de l'aérodrome qui rapporte l'observation</li>
+<li><strong>HH</strong> : Heure d'émission des données (UTC)</li>
 </ul>
-<h4 id="description-des-produits">Description des produits</h4>
-<ul>
-<li><strong>vaa</strong> :</li>
-<li><strong>qvaci</strong> :</li>
-<li><strong>taf</strong> :</li>
-<li><strong>metar</strong> :</li>
-<li><strong>speci</strong> :</li>
-<li><strong>airmet</strong> :</li>
-<li><strong>sigmet</strong> :</li>
-</ul>
-<h4 id="liste-des-bureau-emetteurs">Liste des bureau émetteurs</h4>
 <table>
 <thead>
 <tr>
-<th>Code</th>
-<th>Non du bureau émetteur</th>
-<th>Ville</th>
-<th>Code de fuseau horaire</th>
+<th>Produit à l'aviation</th>
+<th>Type de bulletin</th>
+<th>En-tête du fichier</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>cwao</td>
-<td>Centre météorologique canadien</td>
-<td>Montréal</td>
-<td>EST5EDT</td>
+<td>vaa</td>
+<td>Avis de cendres volcaniques (VAA)</td>
+<td>A_LUCN</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>qvaci</td>
+<td>Analyse quantitative des cendres volcaniques (QVA)</td>
+<td>A déterminer</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>taf</td>
+<td>Prévision d’aérodrome  (TAF)</td>
+<td>A_LTCN</td>
+</tr>
+<tr>
+<td>metar</td>
+<td>Rapport météorologique régulier d'aérodrome (METAR)</td>
+<td>A_LACN</td>
+</tr>
+<tr>
+<td>speci</td>
+<td>Rapport météorologique spécial d'aérodrome (SPECI)</td>
+<td>A_LPCN</td>
+</tr>
+<tr>
+<td>airmet</td>
+<td>AIRman's METeorological Information (AIRMET)</td>
+<td>A_LWCN / A_LWNT</td>
+</tr>
+<tr>
+<td>sigmet</td>
+<td>SIGnificant METeorological Information (SIGMET)</td>
+<td>A_LSCN-A / A_LYCN / A_LVCN</td>
 </tr>
 </tbody>
 </table>
-<p>... <em>A compléter via https://eccc-msc.github.io/open-data/msc-data/alerts/readme_alerts-datamart_fr/#notes ??</em></p>
+<p>Le Canada utilise la version 3.0.0 des schémas IWXXM de l'OMM, disponibles à l'adresse suivante : <a href="https://schemas.wmo.int/iwxxm/">https://schemas.wmo.int/iwxxm/</a></p>
+<p>Le Canada utilise également des schémas d'extension afin de fournir des éléments météorologiques supplémentaires ou pour répondre aux exigences nationales. Les schémas d'extension canadiens sont disponibles à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/today/aviation/iwxxm/schema">https://dd.meteo.gc.ca/today/aviation/iwxxm/schema/</a></li>
+</ul>
+<p>Certains éléments météorologiques utilisés dans les bulletins à l'aviation ont des définitions spécifiques pour le Canada. Ces éléments et leurs définitions sont disponibles à l'adresse suivante :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca">https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca/</a></li>
+</ul>
+<p>Une documentation détaillée est disponible à cette adresse :</p>
+<ul>
+<li><a href="https://dd.meteo.gc.ca/today/aviation/iwxxm/doc">https://dd.meteo.gc.ca/today/aviation/iwxxm/doc/</a></li>
+</ul>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
 <p>Les noms de fichiers suivent la nomenclature ci-dessous :</p>
 <p><code>A_{TTAAiiCCCCYYGGggBBB}_C_{CCC}_{YYYYMMddhhmmss}.xml</code></p>
@@ -232,11 +248,7 @@
 <ul>
 <li>A_LTCN33CWAO102300RRA_C_CWAO_20260210230000.xml</li>
 </ul>
-<p>Notes:</p>
-<ul>
-<li>Les données sont générées X fois par jour (??) et sont valides pour les 24 prochaines heures (??). Plus spécifiquement, les données sont valides de ??</li>
-<li><em>Infos sur les fichiers textes du code canadien: https://dd.meteo.gc.ca/today/aviation/iwxxm/code-ca ???</em></li>
-</ul>
+<p>Davantage d'information concernant la <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/aviation/iwxxm/TAC_Bulletins_IWXXM_Files_2A_fr.pdf">nomenclature des bulletins</a> est disponible.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>

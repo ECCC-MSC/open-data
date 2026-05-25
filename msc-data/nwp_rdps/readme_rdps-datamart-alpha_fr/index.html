@@ -170,10 +170,9 @@
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.</p>
-<p>Les données sur grille lat-lon tournées sont accessibles aux adresses suivantes : </p>
+<p>Les données sur grille lat-lon tournées sont accessibles à l'adresse suivante : </p>
 <ul>
-<li>Ancienne nomenclature : <a href="https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/">https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/</a></li>
-<li>Nouvelle nomenclature : <a href="https://dd.alpha.meteo.gc.ca/model_rdps/10km/">https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.alpha.meteo.gc.ca/model_rdps/10km/">https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -181,9 +180,8 @@
 <li><strong>hhh</strong> : Heure de prévision [001, 002, 003, ..., 084]</li>
 </ul>
 <p>Un historique de 24 heures est conservé dans ce répertoire.</p>
-<p><strong>Notes importantes</strong> :</p>
+<p><strong>Note importante</strong> :</p>
 <ul>
-<li>Les fichiers contenus dans le répertoire <code>https://dd.alpha.meteo.gc.ca/model_rdps</code> sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style <a href="https://fr.wikipedia.org/wiki/Camel_case"><em>upper camel case</em></a>. Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire <code>https://dd.alpha.meteo.gc.ca/model_gem_regional</code>.</li>
 <li>Certains algorithmes ont besoin des valeurs des variables à <code>t-1</code>, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.</li>
 </ul>
 <h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
@@ -226,16 +224,15 @@
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>RDPS-WEonG</strong> : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe</li>
-<li><strong>VAR</strong> : Type de variable contenu dans le fichier selon l’ancienne nomenclature (acronyme, ex : VISIFG) ou la nouvelle nomenclature (<em>Upper camel case</em>, ex: LiquidFogVisibility) .</li>
+<li><strong>VAR</strong> : Type de variable contenue dans le fichier selon la nouvelle nomenclature (<em>Upper camel case</em>, ex: LiquidFogVisibility)</li>
 <li><strong>LVLTYPE-LVL</strong> : Niveau vertical [Sfc pour la surface]</li>
 <li><strong>Grille</strong> : Grille horizontale [RLatLon]</li>
 <li><strong>resolution</strong> : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale</li>
 <li><strong>PT{hhh}H</strong> : Echéance temporelle selon la norme <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084]</li>
 <li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
 </ul>
-<p>Exemples de noms de fichier :</p>
+<p>Exemple de nom de fichier :</p>
 <ul>
-<li>20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2</li>
 <li>20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>

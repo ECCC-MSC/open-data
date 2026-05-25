@@ -171,7 +171,7 @@
 <p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
 <p>The rotated lat-lon grid data can be accessed at the following address: </p>
-<p><a href="https://dd.alpha.meteo.gc.ca/model_gem_global/15km/">https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}/{hhh}/</a></p>
+<p><a href="https://dd.alpha.meteo.gc.ca/model_gdps/15km/">https://dd.alpha.meteo.gc.ca/model_gdps/15km/{HH}/{hhh}/</a></p>
 <p>where :</p>
 <ul>
 <li><strong>HH</strong> : Model run start, in UTC [00, 12]</li>
@@ -218,16 +218,16 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>GDPS-WEonG</strong> : Constant string indicating that the data are from the Global Deterministic Prediction System weather elements on the grid ("WEonG")</li>
-<li><strong>VAR</strong> : Variables contained in the files (ex: VISIFG).</li>
+<li><strong>VAR</strong> : Variables contained in the files (ex: WindDir)</li>
 <li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
 <li><strong>Grid</strong> : Horizontal grid [LatLon]</li>
 <li><strong>resolution</strong> : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions</li>
 <li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]</li>
-<li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
+<li><strong>grib2</strong>: Constant string indicating that the format is GRIB2</li>
 </ul>
 <p>Example file name:</p>
 <ul>
-<li>20220821T12Z_MSC_GDPS-WEonG_BLSN_Sfc_LatLon0.15_PT024H.grib2</li>
+<li>20220821T12Z_MSC_GDPS-WEonG_BlowingSnow-Presence_Sfc_LatLon0.15_PT024H.grib2</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <p>List of surface weather elements on the grid:</p>

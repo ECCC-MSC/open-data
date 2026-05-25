@@ -143,23 +143,6 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#experimental-global-deterministic-prediction-system-gdps-data" class="nav-link">Experimental Global Deterministic Prediction System (GDPS) data</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#data-location_1" class="nav-link">Data location</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#technical-specification-of-the-grid_1" class="nav-link">Technical specification of the grid</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature_1" class="nav-link">File name nomenclature</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
             <li class="nav-item" data-level="1"><a href="#levels" class="nav-link">Levels</a>
               <ul class="nav flex-column">
               </ul>
@@ -191,67 +174,6 @@
 <p>The fields of the <a href="../readme_gdps_en/">Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.</p>
-<p>The data can be accessed at the following address :</p>
-<p><a href="https://dd.weather.gc.ca/today/model_gem_global">https://dd.weather.gc.ca/today/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/</a></p>
-<p>where :</p>
-<ul>
-<li><strong>RES</strong> : Horizontal resolution [15km]</li>
-<li><strong>HHH</strong> : UTC time of the beginning of the model run[00, 12]</li>
-<li><strong>hhhh</strong> : Forecast time[000, 003, 006, ..., 240]</li>
-</ul>
-<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
-<p>Values given to the parameters of the 15km latitude-longitude grid:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>2400</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>1201</td>
-</tr>
-<tr>
-<td>resolution</td>
-<td>0.15°</td>
-</tr>
-<tr>
-<td>coordinates of the first grid point</td>
-<td>90° S  180° W</td>
-</tr>
-</tbody>
-</table>
-<h2 id="file-name-nomenclature">File name nomenclature</h2>
-<p>The files have the following nomenclature:</p>
-<p>CMC_glb_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.grib2</p>
-<p>where :</p>
-<ul>
-<li><strong>CMC</strong> : constant string indicating that the data is from the Canadian Meteorological Centre</li>
-<li><strong>glb</strong> : constant string indicating that the data is from the GDPS</li>
-<li><strong>Variable</strong> : Variable type included in this file. To consult a complete list, refer to the Data in GRIB2 format section.</li>
-<li><strong>LevelType</strong> : Level type. To consult a complete list, refer to the Data in GRIB2 format section.</li>
-<li><strong>Level</strong> : Level value. To consult a complete list, refer to the Data in GRIB2 format section.</li>
-<li><strong>Projection</strong> : projection used for the data. Can take the values [latlon, ps]</li>
-<li><strong>Resolution</strong> : constant string indicating the data resolution [.15x.15].</li>
-<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast.</li>
-<li><strong>HH</strong> : UTC run time [00, 12]</li>
-<li><strong>Phhh</strong> : P is a constant character. hhh is the forecast hour [000, 003, 006, ..., 240]</li>
-<li><strong>grib2</strong> : constant string indicating the GRIB2 format is used</li>
-</ul>
-<p>Example of file name :</p>
-<p>CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2</p>
-<p>This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).</p>
-<h1 id="experimental-global-deterministic-prediction-system-gdps-data">Experimental Global Deterministic Prediction System (GDPS) data</h1>
-<p>The fields in the dataset of the <a href="../readme_gdps_en/#data-of-the-experimental-global-deterministic-prediction-system">experimental Global Deterministic Prediction System (GDPS)</a> are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.</p>
-<h2 id="data-location_1">Data location</h2>
-<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 or GeoSJON file.</p>
 <p>The data can be accessed at the following address :</p>
 <p><a href="https://dd.weather.gc.ca/today/model_gdps">https://dd.weather.gc.ca/today/model_gdps/{RES}/{HH}/{hhh}/</a></p>
@@ -261,7 +183,7 @@
 <li><strong>HHH</strong> : UTC time of the beginning of the model run[00, 12]</li>
 <li><strong>hhhh</strong> : Forecast time[000, 001, 002, ..., 084, 087, 090, …, 240]</li>
 </ul>
-<h2 id="technical-specification-of-the-grid_1">Technical specification of the grid</h2>
+<h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
 <p>Values given to the parameters of the 15km latitude-longitude grid:</p>
 <table>
 <thead>
@@ -289,7 +211,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="file-name-nomenclature_1">File name nomenclature</h2>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>The files have the following nomenclature:</p>
 <p>{YYYYMMDD}T{HH}Z_MSC_GDPS_{VAR}<em>{LVLTYPE-LVL}</em>{Grille}{resolution}_PT{hhh}H.${format}</p>
 <p>where :</p>

@@ -170,10 +170,9 @@
 <h2 id="data-address">Data Address</h2>
 <p>MSC testing data repository DD-Alpha data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
 <p>The data is available using the HTTP protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GRIB2 file.</p>
-<p>The rotated lat-lon grid data can be accessed at the following addresses: </p>
+<p>The rotated lat-lon grid data can be accessed at the following address: </p>
 <ul>
-<li>Old nomenclature: <a href="https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/">https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/</a></li>
-<li>New nomenclature: <a href="https://dd.alpha.meteo.gc.ca/model_rdps/10km/">https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.alpha.meteo.gc.ca/model_rdps/10km/">https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/</a></li>
 </ul>
 <p>where :</p>
 <ul>
@@ -181,9 +180,8 @@
 <li><strong>hhh</strong> : Forecast hour [001, 002, 003, ..., 084]</li>
 </ul>
 <p>A 24-hour history is kept in this directory.</p>
-<p><strong>Important  notes</strong>:</p>
+<p><strong>Important note</strong>:</p>
 <ul>
-<li>The files contained in the directory <code>https://dd.alpha.weather.gc.ca/model_rdps</code> comply with our new standardization norms. In these standards, the acronyms used to represent variables have been replaced by more explicit names in <a href="https://en.wikipedia.org/wiki/Camel_case">upper camel case</a>  style. These files will replace the files contained in the directory <code>https://dd.alpha.weather.gc.ca/model_gem_regional</code> in the coming months.</li>
 <li>Some algorithms require variable values at <code>t-1</code>, in order to standardize the data supply, the forecast times start at 001h.</li>
 </ul>
 <h2 id="technical-specification-of-the-grid">Technical specification of the grid</h2>
@@ -226,16 +224,15 @@
 <li><strong>Z</strong>: Time zone (UTC hour)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>RDPS-WEonG</strong> : Constant string indicating that the data are from the Regional Deterministic Prediction System weather elements on the grid ("WEonG")</li>
-<li><strong>VAR</strong> : Variables contained in the files according to the old nomenclature (acronym, ex: VISIFG) or the new nomenclature (Upper camel case, ex: LiquidFogVisibility)</li>
+<li><strong>VAR</strong> : Variables contained in the files according to the new nomenclature (Upper camel case, ex: LiquidFogVisibility)</li>
 <li><strong>LVLTYPE-LVL</strong> : Vertical level [Sfc for the surface]</li>
 <li><strong>Grid</strong> : Horizontal grid [RLatLon]</li>
 <li><strong>resolution</strong> : 0.09. Means a resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions</li>
 <li><strong>PT{hhh}H</strong> : Time delay according to the standard <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a>. P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084]</li>
 <li><strong>grib2</strong>: Constant string indicating that the format is GRIB2.</li>
 </ul>
-<p>Examples file names:</p>
+<p>Example file name:</p>
 <ul>
-<li>20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2</li>
 <li>20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>

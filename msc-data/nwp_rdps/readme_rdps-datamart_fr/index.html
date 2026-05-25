@@ -132,7 +132,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#specification-technique-des-grilles" class="nav-link">Spécification technique des grilles</a>
+            <li class="nav-item" data-level="2"><a href="#specification-technique-de-la-grille" class="nav-link">Spécification technique de la grille</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -173,53 +173,14 @@
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.</p>
 <p>Les données sont accessibles aux adresses suivantes : </p>
 <ul>
-<li>Données sur la grille polaire stéréographique : <a href="https://dd.meteo.gc.ca/today/model_gem_regional">https://dd.meteo.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/</a></li>
-<li>Données sur la grille lat-lon tournée : <a href="https://dd.meteo.gc.ca/today/model_rdps">https://dd.meteo.gc.ca/today/model_rdps/10km/{HH}/{hhh}/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/model_rdps">https://dd.meteo.gc.ca/today/model_rdps/10km/{HH}/{hhh}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
 <li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 06, 12, 18]</li>
 <li><strong>hhh</strong> : Heure de prévision [000, 001, 002, ..., 084] </li>
 </ul>
-<h2 id="specification-technique-des-grilles">Spécification technique des grilles</h2>
-<h3 id="grille-polaire-stereographique">Grille polaire stéréographique</h3>
-<p><img alt="Image de la grille du Système régional de prévision déterministe" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png" /></p>
-<p>Valeurs données aux paramètres de la grille polaire stéréographique :</p>
-<table>
-<thead>
-<tr>
-<th>Paramètre</th>
-<th>Valeur</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ni</td>
-<td>935</td>
-</tr>
-<tr>
-<td>nj</td>
-<td>824</td>
-</tr>
-<tr>
-<td>résolution à 60° N</td>
-<td>10km</td>
-</tr>
-<tr>
-<td>coordonnées du premier point de grille</td>
-<td>18.1429° N ; 142.8968° W</td>
-</tr>
-<tr>
-<td>coordonnées (i; j) du Pôle Nord</td>
-<td>(456.2; 732.4)</td>
-</tr>
-<tr>
-<td>orientation de la grille (par rapport à l’axe des j)</td>
-<td>-111,0°</td>
-</tr>
-</tbody>
-</table>
-<h3 id="grille-lat-lon-tournee">Grille lat-lon tournée</h3>
+<h2 id="specification-technique-de-la-grille">Spécification technique de la grille</h2>
 <p><img alt="Image de la grille lat-lon tournée SRPD" src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png" /></p>
 <p>Valeurs données aux paramètres de la grille lat-lon tournée :</p>
 <table>
@@ -249,25 +210,6 @@
 </tbody>
 </table>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<h3 id="grille-polaire-stereographique_1">Grille polaire stéréographique</h3>
-<p>Les fichiers ont la nomenclature suivante :</p>
-<p><code>CMC_reg_Variable_TypedeNiveau_Niveau_ps10km_YYYYMMDDHH_Phhh.grib2</code></p>
-<p>où :</p>
-<ul>
-<li><strong>CMC</strong> : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.</li>
-<li><strong>reg</strong> : Chaîne de caractères constante indiquant que les données proviennent du SRPD.</li>
-<li><strong>Variable</strong> : Type de variable contenue dans le fichier (ex : UGRD). Pour voir la liste complète, consultez la section « Liste des variables ».</li>
-<li><strong>TypedeNiveau</strong> : Type de niveau. Pour voir la liste complète, consultez la section « Liste des variables ».</li>
-<li><strong>Niveau</strong> : Valeur du niveau. Pour consulter la liste complète, consultez la section « Liste des variables ».</li>
-<li><strong>ps10km</strong> : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 10 km.</li>
-<li><strong>YYYYMMDD</strong> : Année, mois et jour du début de la prévision.</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 06, 12, 18].</li>
-<li><strong>Phhh</strong> : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,084]</li>
-<li><strong>grib2</strong> : Chaîne de caractères constante indiquant que le format est GRIB2.</li>
-</ul>
-<p>Exemple de nom de fichier : CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2</p>
-<p>Le fichier a été créé par le CMC et contient une prévision du SRPD. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 1015 mb (ISBL_1015), sur une grille polaire stéréographique à une résolution de 10 km (ps10km). Il débute le 13 septembre 2010 à 06Z (22010091306). Il contient l’heure de prévision 27 (P027) en format GRIB2 (.grib2).</p>
-<h3 id="grille-lat-lon-tournee_1">Grille lat-lon tournée</h3>
 <p>Les fichiers ont la nomenclature suivante :</p>
 <p><code>{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}</code></p>
 <p>où :</p>
