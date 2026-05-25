@@ -86,11 +86,11 @@ La requête WMS GetMap suivante retourne une image de la couche de température 
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 ```
 Retourne :
 
-![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
+![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png)
 
 #### Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)
 
@@ -135,7 +135,7 @@ Les exemples de cas d'utilisation suivants sont disponibles :
 * [Gerald : profil thermique de l'atmosphère pour la chasse aux tempêtes](../use-case_skewt/use-case_skewt_fr/):
     * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Process (OAProc) pour créer des tables et graphiques
 
-Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/wms_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/wms_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS_15km_AirTemp_2m&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
 Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
 

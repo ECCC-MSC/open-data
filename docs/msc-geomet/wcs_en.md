@@ -58,9 +58,9 @@ A WCS DescribeCoverage request allows the user to access more information about 
 | REQUEST      | The request type. In this case, `DescribeCoverage`.|
 | COVERAGEID   | The name of the layer for which to return the metadata. The name of the layer can be retrieved using a [WCS GetCapabilities](#wcs-getcapabilities) request|
 
-A WCS DescribeCoverage request to GeoMet-Weather for the GDPS.ETA_TT layer would then be constructed like this:
+A WCS DescribeCoverage request to GeoMet-Weather for the `GDPS_15km_AirTemp_2m` layer would then be constructed like this:
 
-[https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS.ETA_TT)
+[https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS_15km_AirTemp_2m](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=DescribeCoverage&COVERAGEID=GDPS_15km_AirTemp_2m)
 
 </br></br>
 
@@ -88,12 +88,11 @@ A WCS GetCoverage request is used to retrieve the actual coverage information (r
 |TIME              | The date and time associated to the requested coverage. The format must respect the ISO8601 standard. For more information regarding managing time in WCS requests, see the [WCS Handling Time](#handling-time) section|
 |DIM_REFERENCE_TIME| The time of the weather model run (when available) to use to generate the requested coverage. The format must respect the ISO8601 standard. For more information regarding managing time in WCS requests, see the [WCS Handling Time](#handling-time) section|
 
-A WCS GetCoverage request to MSC GeoMet for the GDPS.ETA_TT layer could then be constructed
-like this:
+A WCS GetCoverage request to MSC GeoMet for the `GDPS_15km_AirTemp_2m` layer could then be constructed like this:
 
-[https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&
+[https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS_15km_AirTemp_2m&
 SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&
-RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS.ETA_TT&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
+RESOLUTION=y(0.24)&FORMAT=image/tiff](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS_15km_AirTemp_2m&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff)
 
 </br></br>
 

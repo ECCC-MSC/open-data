@@ -1,6 +1,6 @@
 const parser = new DOMParser();
 
-// Async function used to retrieve start, end, and default time from GDPS.DIAG_NW_PT1H layer GetCapabilities document
+// Async function used to retrieve start, end, and default time from CanSIPS_100km_AirTemp-ProbAboveNormal-2m_P00M-P02M layer GetCapabilities document
 async function getRadarStartEndTime() {
   let response = await fetch('https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=CanSIPS_100km_AirTemp-ProbAboveNormal-2m_P00M-P02M&t=' + new Date().getTime())
   let data = await response.text().then(

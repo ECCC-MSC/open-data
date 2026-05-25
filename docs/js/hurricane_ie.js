@@ -8,7 +8,7 @@ layers: [
     source: new ol.source.TileWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'GDPS.ETA_RT', 'TILED': true},
+        params: {'LAYERS': 'GDPS_15km_PrecipRate', 'TILED': true},
     })
   }),
   new ol.layer.Tile({
