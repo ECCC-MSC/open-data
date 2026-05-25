@@ -42,6 +42,13 @@ An [overview and examples to access and use the Meteorological Service of Canada
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
+### Licence
+
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
+
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
 ### Discovery metadata
 
@@ -114,12 +121,3 @@ The chronology of changes to the Global Deterministic Prediction System (GDPS) i
     }
     head.appendChild(js);
 </script>
-
-# Licence
-
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
-
-# MSC Open Data Service Usage Policy
-
-The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
-

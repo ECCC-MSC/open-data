@@ -41,6 +41,14 @@ Un [survol et exemples pour accéder et utiliser les données ouvertes du Servic
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
+### Licence
+
+La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
+
+### Politique d'utilisation des services de données ouvertes du SMC
+
+La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
+
 ### Métadonnées de découverte
 
 - Les [métadonnées du Système global de prévision déterministe sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/c041e79a-914a-5a4e-a485-9cbc506195df).
@@ -69,6 +77,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 ## Registre des changements
 
 La chronologie des changements apportés au Système global de prévision déterministe (SGPD) est disponible [ici](changelog_gdps_fr.md).
+
 
 <style>
   #legend-img {
@@ -112,16 +121,3 @@ La chronologie des changements apportés au Système global de prévision déter
     }
     head.appendChild(js);
 </script>
-
-# Licence
-
-La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
-
-# Politique d'utilisation des services de données ouvertes du SMC
-
-La [Politique d'utilisation des services de données ouvertes du SMC](../../usage-policy/readme_fr.md) détermine ce qui constitue une utilisation appropriée des services de données ouvertes du SMC et fournit aux utilisateurs les pratiques exemplaires pour une utilisation optimale.
-
-
-
-
-
