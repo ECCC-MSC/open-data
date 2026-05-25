@@ -6,7 +6,7 @@
 
 # Coastal flooding data
 
-The costal flooding risk index in GeoJSON format is a geo and time referenced polygon product issued by the Meteorological Service of Canada (MSC) to articulate the coastal flooding risk, impact and probability. Products are issued daily by Storm Prediction Centres and intended to provide early notification, out to 5 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
+The coastal flooding risk index in GeoJSON format is a geo and time referenced polygon product issued by the Meteorological Service of Canada (MSC) to articulate the coastal flooding risk, impact and probability. Products are issued daily by Storm Prediction Centres and intended to provide early notification, out to 5 days, of coastal flooding due to astronomical tide, storm surge and wave impacts.
 
 ## Access
 
