@@ -7,7 +7,7 @@
 
 # Data and Products of the Global Deterministic Prediction System
 
-The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global at 15 km horizontal resolution. Data is available on some thirty vertical levels and interpolated on a global latitude-longitude uniform grid with 0.15 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.
+The Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model where the __GEM-predicted large-scale temperature and horizontal wind components are spectrally nudged toward the [Global Environmental eMuLator (GEML)](readme_gdps-geml-datamart_en.md) predictions, ECCC's data-driven artificial intelligence (AI)-based weather model__. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global at 15 km horizontal resolution. Data is available on some thirty vertical levels and interpolated on a global latitude-longitude uniform grid with 0.15 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.
 
 ## Access
 
@@ -17,6 +17,7 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 
 * [Data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
 * [Data available on the MSC Datamart](readme_gdps-datamart_en.md)
+* [Global Environmental eMuLator (GEML) data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
 * [Statistically post-processed data on the MSC Datamart](readme_gdps-statpostproc-datamart_en.md)
 * [Experimental weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
 * [Global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
@@ -41,6 +42,13 @@ An [overview and examples to access and use the Meteorological Service of Canada
   <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
 </div>
 
+### Licence
+
+The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
+
+### MSC Open Data Service Usage Policy
+
+The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
 
 ### Discovery metadata
 
@@ -62,6 +70,7 @@ List and links to the products available for this dataset:
 * [Current version of the Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_e.pdf)
 * [Current version of the statistical post-processing software package of the Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_PROGNOS_e.pdf)
 * [Technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps_e.pdf)
+* ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; August 2025](https://journals.ametsoc.org/view/journals/wefo/40/9/WAF-D-24-0139.1.xml)
 * [Technical note of the statistical post-processing software package of the Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg)
 * [Factsheet associated with the latest innovation cycle](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps_e.pdf)
@@ -112,35 +121,3 @@ The chronology of changes to the Global Deterministic Prediction System (GDPS) i
     }
     head.appendChild(js);
 </script>
-
-# Data of the experimental Global Deterministic Prediction System
-
-The experimental Global Deterministic Prediction System (GDPS) is a coupled atmosphere (GEM), ocean and sea ice (NEMO-CICE) deterministic numerical weather prediction model where the __GEM-predicted large-scale temperature and horizontal wind components are spectrally nudged toward the [Global Environmental eMuLator (GEML)](readme_gdps-geml-datamart_en.md) predictions, ECCC's data-driven artificial intelligence (AI)-based weather model__. Forecasts are carried out twice a day for 10 days lead time. The geographical coverage is global at 15 km horizontal resolution. Data is available on some thirty vertical levels and interpolated on a global latitude-longitude uniform grid with 0.15 degree horizontal resolution. Variables availability in number and time frequency is a function of forecast lead time.
-
-## Access
-
-### How to access the data
-
-This experimental data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API / web services and on the [MSC Datamart](../../msc-datamart/readme_en.md) data server respectively:
-
-* [Experimental data available via the GeoMet-Weather geospatial web services](readme_gdps-geomet_en.md)
-* [Experimental data available on the MSC Datamart](readme_gdps-datamart_en.md#experimental-global-deterministic-prediction-system-gdps-data-in-grib2-format)
-* [Experimental Global Environmental eMuLator (GEML) data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
-
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
-
-## Technical documentation
-
-* [Current version of the experimental Global Deterministic Prediction System](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_e.pdf)
-* [Experimental Global Deterministic Prediction System factsheet](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-exp_e.pdf) 
-* [Diagram of dependencies](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_en.svg)
-* ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; August 2025](https://journals.ametsoc.org/view/journals/wefo/40/9/WAF-D-24-0139.1.xml)
-
-# Licence
-
-The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
-
-# MSC Open Data Service Usage Policy
-
-The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use.
-

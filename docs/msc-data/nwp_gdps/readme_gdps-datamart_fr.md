@@ -12,62 +12,6 @@ Les champs du jeu de données GRIB2 du [Système global de prévision détermini
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
-
-Les données sont accessibles à l'adresse suivante :
-
-[https://dd.meteo.gc.ca/today/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gem_global)
-
-où :
-
-* __RES__ : Résolution horizontale [15km]
-* __HH__ : Heure UTC du début de la passe du modèle [00, 12]
-* __hhh__ : Heure de prévision [000, 003, 006, ..., 240]
-
-## Spécification technique de la grille
-
-Valeurs données aux différents paramètres de la grille latitude-longitude à 15km de résolution
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 2400 |
-| nj | 1201 | 
-| résolution | 0.15° |
-| coordonnées du premier point de grille | 90° S  180° W | 
-
-## Nomenclature des noms de fichiers 
-
-Les fichiers ont la nomenclature suivante :
-
-CMC_glb_Variable_TypedeNiveau_Niveau_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
-
-où :
-
-* __CMC__ : Chaîne de caractères constante indiquant le Centre météorologique canadien (CMC) émet les prévisions.
-* __glb__ : Chaîne de caractères constante indiquant que les données proviennent du SGPD.
-* __Variable__ : Type de variable contenu dans le fichier (ex. : UGRD). Pour voir la liste complète, consultez la section « Description des variables disponibles ».
-* __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
-* __Niveau__ : Valeur du niveau. Pour voir la liste complète, consultez la section « Description des variables disponibles ».
-* __Projection__ : Représente le type de projection utilisée pour les données. Peut prendre les valeurs [latlon, ps].
-* __Resolution__ : Chaîne de caractères constante indiquant la résolution des données [.15x.15].
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __HH__ : Heure UTC de la passe [00, 12].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 003, 006, ..., 240].
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
-
-Exemple de nom de fichier :
-CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
-
-Le fichier débute le 15 octobre 2019 à 12Z (2019101512). Il a été créé par le CMC et contient une prévision du SGPD. Il contient les composantes de la température (TMP), au niveau isobarique 925 mb (ISBL_925), pour l’heure de prévision 42 (P042) en format GRIB2 (.grib2).
-
-# Données du Système global de prévision déterministe (SGPD) expérimental
-
-Les champs du jeu de données du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental) sont disponibles sur une grille latitude-longitude à une résolution effective d’environ 15 km.
-
-## Adresse des données 
-
-Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
-
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2 ou GeoJSON, selon les besoins.
 
 Les données sont accessibles à l'adresse suivante :
