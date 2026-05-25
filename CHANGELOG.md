@@ -10,6 +10,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.6
+
+* date: 2026-05-25
+* announcements:
+    * Not announced
+* new content:
+    * Add aviation IXXM data documentation in main page
+ * improvements:
+    * Update GDPS pages with GDPS-SN implementation (main page, DD page, WEonG on DD-Alpha)
+    * Update GEML page (experimental to operational)
+    * Update RDPS pages (removal of the PS grid and updated WEonG nomenclature)
+* bug fixes:
+    * Typo
+
 # 2.10.5
 
 * date: 2026-05-13

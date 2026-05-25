@@ -122,6 +122,7 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 * [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
 * [MetNotes](metnotes/readme_metnotes_fr.md)
 * [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
+* [Données météorologiques à l'aviation en format IWXXM](aviation/iwxxm/readme_aviation-iwxxm_fr.md)
 </br></br>
 
 ## Données ouvertes retirées
