@@ -16,7 +16,7 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
 
 - [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
 - [Données de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
-* [Données du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
+- [Données du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
 - [Données statistiquement post-traitées sur le Datamart du SMC](readme_gdps-statpostproc-datamart_fr.md)
 - [Données expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gdps-datamart-alpha_fr.md)
 - [Données d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
