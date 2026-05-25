@@ -12,63 +12,6 @@ The fields of the [Global Deterministic Prediction System (GDPS)](readme_gdps_en
 
 MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
-The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 file.
-
-The data can be accessed at the following address :
-
-[https://dd.weather.gc.ca/today/model_gem_global/{RES}/grib2/lat_lon/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_gem_global)
-
-where :
-
-* __RES__ : Horizontal resolution [15km]
-* __HHH__ : UTC time of the beginning of the model run[00, 12]
-* __hhhh__ : Forecast time[000, 003, 006, ..., 240]
-
-## Technical specification of the grid
-
-Values given to the parameters of the 15km latitude-longitude grid:
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 2400 |
-| nj | 1201 | 
-| resolution | 0.15° |
-| coordinates of the first grid point | 90° S  180° W | 
-
-## File name nomenclature 
-
-The files have the following nomenclature:
-
-CMC_glb_Variable_LevelType_Level_ProjectionResolution_YYYYMMDDHH_Phhh.grib2
-
-where :
-
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
-* __glb__ : constant string indicating that the data is from the GDPS
-* __Variable__ : Variable type included in this file. To consult a complete list, refer to the Data in GRIB2 format section.
-* __LevelType__ : Level type. To consult a complete list, refer to the Data in GRIB2 format section.
-* __Level__ : Level value. To consult a complete list, refer to the Data in GRIB2 format section.
-* __Projection__ : projection used for the data. Can take the values [latlon, ps]
-* __Resolution__ : constant string indicating the data resolution [.15x.15].
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
-* __HH__ : UTC run time [00, 12]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000, 003, 006, ..., 240]
-* __grib2__ : constant string indicating the GRIB2 format is used
-
-Example of file name :
-
-CMC_glb_TMP_ISBL_925_latlon.15x.15_2019101512_P042.grib2
-
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the GDPS. The data in the file start on October 15th 2019 at 12Z (2019101512). It contains the temperature component (TMP) at the isobaric level 925 mb (ISBL_0925) for the forecast hour 42 (P042) in GRIB2 format (.grib2).
-
-# Experimental Global Deterministic Prediction System (GDPS) data
-
-The fields in the dataset of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) are available on a latitude-longitude grid corresponding to an effective resolution of about 15 km.
-
-## Data location
-
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
-
 The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to a GRIB2 or GeoSJON file.
 
 The data can be accessed at the following address :

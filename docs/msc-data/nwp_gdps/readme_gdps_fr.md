@@ -6,7 +6,7 @@
 
 # Données et produits du Système global de prévision déterministe
 
-Le Système global de prévision déterministe (SGPD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE). Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
+Le Système global de prévision déterministe (SGPD) est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE) où __la température et les composantes horizontales du vent aux grandes échelles prévues par GEM sont pilotées spectralement par les prévisions du [Global Environnemental éMuLateur (GEML)](readme_gdps-geml-datamart_fr.md), le modèle météorologique d'ECCC entrainé par des données et basé sur l'intelligence artificielle (IA)__. Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
 
 ## Accès
 
@@ -16,6 +16,7 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
 
 - [Données disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
 - [Données de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md)
+* [Données du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
 - [Données statistiquement post-traitées sur le Datamart du SMC](readme_gdps-statpostproc-datamart_fr.md)
 - [Données expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_gdps-datamart-alpha_fr.md)
 - [Données d'analyse de glace globale sur le Datamart du SMC](readme_gdps-ice-anal-datamart_fr.md)
@@ -60,6 +61,7 @@ Liste et liens vers les produits disponibles pour ce jeu de données :
 * [Version actuelle du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_f.pdf)
 * [Version actuelle du prologiciel de post-traitement statistique du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_PROGNOS_f.pdf)
 * [Note technique](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps_f.pdf)
+* ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; Août 2025](https://journals.ametsoc.org/view/journals/wefo/40/9/WAF-D-24-0139.1.xml)
 * [Note technique du prologiciel de post-traitement statistique du Système global de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/not_available.pdf)
 * [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
 * [Fiche d'information associée au dernier cycle d'innovation](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps_f.pdf)
@@ -110,29 +112,6 @@ La chronologie des changements apportés au Système global de prévision déter
     }
     head.appendChild(js);
 </script>
-
-# Données du Système global de prévision déterministe expérimental
-
-Le Système global de prévision déterministe (SGPD) expérimental est un modèle de prévision numérique du temps déterministe couplé atmosphère (GEM), océan et glace de mer (NEMO-CICE) où __la température et les composantes horizontales du vent aux grandes échelles prévues par GEM sont pilotées spectralement par les prévisions du [Global Environnemental éMuLateur (GEML)](readme_gdps-geml-datamart_fr.md), le modèle météorologique d'ECCC entrainé par des données et basé sur l'intelligence artificielle (IA)__. Les prévisions sont effectuées deux fois par jour et vont jusqu'à 10 jours dans le futur. La couverture géographique est globale avec une résolution horizontale de 15 km. Les données sont offertes sur une trentaine de niveaux verticaux et interpolées sur une grille latitude-longitude uniforme globale avec une résolution horizontale de 0.15 degré. La fréquence temporelle et le nombre de variables accessibles sont fonction de l'horizon temporel des prévisions.
-
-## Accès
-
-### Comment accéder aux données
-
-Ces données expérimentales sont respectivement disponibles via l'API / les services web [GeoMet du SMC](../../msc-geomet/readme_fr.md) et le serveur de données [Datamart du SMC](../../msc-datamart/readme_fr.md) :
-
-* [Données expérimentales disponibles via les services web géospatiaux GeoMet-Météo](readme_gdps-geomet_fr.md)
-* [Données expérimentales de prévision disponibles sur le Datamart du SMC](readme_gdps-datamart_fr.md#données-grib2-du-système-global-de-prévision-déterministe-sgpd-expérimental)
-* [Données expérimentales du Global Environnemental éMuLateur (GEML) disponibles sur le Datamart du SMC](readme_gdps-geml-datamart_fr.md)
-
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. 
-
-## Documentation technique
-
-* [Version actuelle du Système global de prévision déterministe expérimental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS-exp_f.pdf)
-* [Fiche technique du Sytème global de prévision déterministe expérimental](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-exp_f.pdf)
-* [Diagramme de dépendances](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_GDPS_fr.svg)
-* ["Leveraging data-driven weather models for improving numerical weather prediction skill through large-scale spectral nudging"; Syed Zahid Husain, Leo Separovic, Jean-François Caron, Rabah Aider, Mark Buehner, Stéphane Chamberland, Ervig Lapalme, Ron McTaggart-Cowan, Christopher Subich, Paul A. Vaillancourt, Jing Yang, Ayrton Zadra; Août 2025](https://journals.ametsoc.org/view/journals/wefo/40/9/WAF-D-24-0139.1.xml)
 
 # Licence
 

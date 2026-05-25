@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [GDPS](readme_gdps_en.md) > GDPS-GEML on MSC Datamart
 
-# Experimental Global Environmental eMuLator (GDPS-GEML) data in GRIB2 format
+# Global Environmental eMuLator (GDPS-GEML) data in GRIB2 format
 
 The Global Environmental eMuLator (GEML) is a component of the [experimental Global Deterministic Prediction System (GDPS)](readme_gdps_en.md#data-of-the-experimental-global-deterministic-prediction-system) and is an artificial intelligence (AI)-based weather emulator trained on past atmospheric states.
 

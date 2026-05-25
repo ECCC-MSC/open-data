@@ -4,7 +4,7 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > SGPD-GEML sur le Datamart du SMC
 
-# Données expérimentales GRIB2 du Global Environnemental éMuLateur (SGPD-GEML)
+# Données GRIB2 du Global Environnemental éMuLateur (SGPD-GEML)
 
 Le Global Environnemental éMuLateur (GEML) est un composant du [Système global de prévision déterministe expérimental (SGPD)](readme_gdps_fr.md#données-du-système-global-de-prévision-déterministe-expérimental). Il s'agit d'un émulateur météorologique basé sur l'intelligence artificielle (IA) et entraîné sur des états atmosphériques passés.
 
