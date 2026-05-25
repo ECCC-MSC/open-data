@@ -17,32 +17,14 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes : 
 
-* Données sur la grille polaire stéréographique : [https://dd.meteo.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_gem_regional)
-* Données sur la grille lat-lon tournée : [https://dd.meteo.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_rdps)
+* [https://dd.meteo.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_rdps)
 
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
 * __hhh__ : Heure de prévision [000, 001, 002, ..., 084] 
 
-## Spécification technique des grilles
-
-### Grille polaire stéréographique
-
-![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)
-
-Valeurs données aux paramètres de la grille polaire stéréographique :
-
-| Paramètre | Valeur |
-| ------ | ------ |
-| ni | 935 |
-| nj | 824 | 
-| résolution à 60° N | 10km |
-| coordonnées du premier point de grille | 18.1429° N ; 142.8968° W | 
-| coordonnées (i; j) du Pôle Nord | (456.2; 732.4) |
-| orientation de la grille (par rapport à l’axe des j) | -111,0° | 
-
-### Grille lat-lon tournée
+## Spécification technique de la grille
 
 ![Image de la grille lat-lon tournée SRPD](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
 
@@ -56,31 +38,6 @@ Valeurs données aux paramètres de la grille lat-lon tournée :
 | coordonnées du premier point de grille | 48.5° S ; 62.6° W |
 
 ## Nomenclature des noms de fichiers 
-
-### Grille polaire stéréographique
-
-Les fichiers ont la nomenclature suivante :
-
-`CMC_reg_Variable_TypedeNiveau_Niveau_ps10km_YYYYMMDDHH_Phhh.grib2`
-
-où :
-
-* __CMC__ : Chaîne de caractères constante indiquant que le Centre météorologique canadien (CMC) émet les prévisions.
-* __reg__ : Chaîne de caractères constante indiquant que les données proviennent du SRPD.
-* __Variable__ : Type de variable contenue dans le fichier (ex : UGRD). Pour voir la liste complète, consultez la section « Liste des variables ».
-* __TypedeNiveau__ : Type de niveau. Pour voir la liste complète, consultez la section « Liste des variables ».
-* __Niveau__ : Valeur du niveau. Pour consulter la liste complète, consultez la section « Liste des variables ».
-* __ps10km__ : Chaîne de caractères constante indiquant que la projection utilisée est polaire stéréographique à une résolution de 10 km.
-* __YYYYMMDD__ : Année, mois et jour du début de la prévision.
-* __HH__ : Heure UTC de la passe [00, 06, 12, 18].
-* __Phhh__ : « P » est un caractère constant. « hhh » représente l’heure de prévision [000, 001, 002,...,084]
-* __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
-
-Exemple de nom de fichier : CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
-
-Le fichier a été créé par le CMC et contient une prévision du SRPD. Il contient les dépressions du point de rosée (DEPR), au niveau isobarique 1015 mb (ISBL_1015), sur une grille polaire stéréographique à une résolution de 10 km (ps10km). Il débute le 13 septembre 2010 à 06Z (22010091306). Il contient l’heure de prévision 27 (P027) en format GRIB2 (.grib2).
-
-### Grille lat-lon tournée
 
 Les fichiers ont la nomenclature suivante :
 

@@ -16,32 +16,14 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following URLs: 
 
-* Data on polar stereographic grid: [https://dd.weather.gc.ca/today/model_gem_regional/10km/grib2/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_gem_regional)
-* Data on rotated lat-lon grid: [https://dd.weather.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_rdps) 
+* [https://dd.weather.gc.ca/today/model_rdps/10km/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_rdps) 
 
 where :
 
 * __HH__: Model run start, in UTC [00, 06, 12, 18]
 * __hhh__: Forecast hour [000, 001, 002,..., 084]
 
-## Technical specification of the grids
-
-### Polar stereographic grid
-
-![Image de la grille du Système régional de prévision déterministe](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_RDPS.png)
-
-Values given to the parameters of the polar stereographic grid :
-
-| Parameter | Value |
-| ------ | ------ |
-| ni | 935 |
-| nj | 824 | 
-| resolution at 60° N | 10 km |
-| coordinates of the first grid point | 18.1429° N  142.8968° W | 
-| (i,j) coordinate of North Pole | (456.2; 732.4) |
-| grid orientation (with respect to j axis) | -111.0° |
-
-### Rotated lat-lon grid
+## Technical specification of the grid
 
 ![Rotated lat-lon grid image of RDPS](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwp_rdps/grille_rdps_Rlatlon.png)
 
@@ -55,33 +37,6 @@ Values given to the parameters of the rotated lat-lon grid :
 | coordinates of the first grid point | 48.5° S ; 62.6° W |
 
 ## Filename nomenclature 
-
-### Polar stereographic grid
-
-The files have the following nomenclature:
-
-`CMC_reg_Variable_LevelType_level_ps10km_YYYYMMDDHH_Phhh.grib2`
-
-where :
-
-* __CMC__ : constant string indicating that the data is from the Canadian Meteorological Centre
-* __reg__ : constant string indicating that the data is from the RDPS
-* __Variable__ : Variable type included in this file. To consult a complete list, refer to the variables section.
-* __LevelType__ : Level type. To consult a complete list, refer to the variables section.
-* __Level__ : Level value. To consult a complete list, refer to the variables section.
-* __ps10km__ : constant string indicating that the projection used is polar-stereographic at 10km resolution.
-* __YYYYMMDD__ : Year, month and day of the beginning of the forecast.
-* __HH__ : UTC run time [00, 06, 12, 18]
-* __Phhh__ : P is a constant character. hhh is the forecast hour [000,001,002,...,084] 
-* __grib2__ : constant string indicating the GRIB2 format is used
-
-Example of file name : 
-
-CMC_reg_DEPR_ISBL_1015_ps10km_2010091306_P027.grib2
-
-This file originates from the Canadian Meteorological Center (CMC) and contains the data of the RDPS. The data in the file start on September 13th 2010 at 06Z (2010091306). It contains the dew point depression (DEPR) at the isobaric level 1015 mb (ISBL_1015) on a polar-stereographic at 10km resolution (ps10km) for the forecast hour 27 (P027) in GRIB2 format (.grib2).
-
-### Rotated lat-lon grid
 
 The files have the following nomenclature:
 

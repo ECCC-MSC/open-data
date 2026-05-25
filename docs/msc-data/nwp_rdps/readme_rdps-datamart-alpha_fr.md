@@ -20,10 +20,9 @@ Les données du site web d'essai de données DD-Alpha du Datamart du SMC peuvent
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GRIB2.
 
-Les données sur grille lat-lon tournées sont accessibles aux adresses suivantes : 
+Les données sur grille lat-lon tournées sont accessibles à l'adresse suivante : 
 
-* Ancienne nomenclature : [https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_regional/10km/)
-* Nouvelle nomenclature : [https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_rdps/10km/)
+* [https://dd.alpha.meteo.gc.ca/model_rdps/10km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_rdps/10km/)
 
 où :
 
@@ -32,9 +31,8 @@ où :
 
 Un historique de 24 heures est conservé dans ce répertoire.
 
-__Notes importantes__ :
+__Note importante__ :
 
-* Les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_rdps` sont conformes à nos nouvelles normes de standardisation. Dans ces normes, les acronymes utilisés pour représenter les variables ont été remplacés par des noms plus explicites selon le style [_upper camel case_](https://fr.wikipedia.org/wiki/Camel_case). Ces fichiers vont remplacer dans les prochains mois les fichiers contenus dans le répertoire `https://dd.alpha.meteo.gc.ca/model_gem_regional`.
 * Certains algorithmes ont besoin des valeurs des variables à `t-1`, afin d'uniformiser l'offre de données, les heures de prévision débutent à 001h.
 
 ## Spécification technique de la grille
@@ -64,16 +62,15 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système régional de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier selon l’ancienne nomenclature (acronyme, ex : VISIFG) ou la nouvelle nomenclature (_Upper camel case_, ex: LiquidFogVisibility) .
+* __VAR__ : Type de variable contenue dans le fichier selon la nouvelle nomenclature (_Upper camel case_, ex: LiquidFogVisibility)
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [RLatLon]
 * __resolution__ : 0.09. Signifie une résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l’heure de prévision [001, 002, 003, ..., 084]
 * __grib2__ : Chaîne de caractères constante indiquant que le format est GRIB2.
 
-Exemples de noms de fichier :
+Exemple de nom de fichier :
 
-* 20250603T12Z_MSC_RDPS-WEonG_CONDALPCPN _Sfc_RLatLon0.09_PT024H.grib2
 * 20250603T12Z_MSC_RDPS-WEonG_LiquidPrecip-CondAmt_Sfc_RLatLon0.09_PT024H.grib2
 
 ## Liste des variables
