@@ -122,6 +122,7 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
 * [MetNotes](metnotes/readme_metnotes_en.md)
 * [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)
+* [Aviation meteorological data in IWXXM format](aviation/iwxxm/readme_aviation-iwxxm_en.md)
 </br></br>
 
 ## Retired open data

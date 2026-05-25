@@ -22,7 +22,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sur grille lat-lon sont accessibles à l’adresse suivante : 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_global/15km/)
+[https://dd.alpha.meteo.gc.ca/model_gdps/15km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gdps/15km/)
 
 où :
 
@@ -58,7 +58,7 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __GDPS-WEonG__ : Chaîne de caractères constante indiquant que les données proviennent des éléments du temps sur grille ("WEonG") du Système global de prévision déterministe
-* __VAR__ : Type de variable contenu dans le fichier (ex: VISIFG).
+* __VAR__ : Type de variable contenu dans le fichier (ex: WindDir)
 * __LVLTYPE-LVL__ : Niveau vertical [Sfc pour la surface]
 * __Grille__ : Grille horizontale [LatLon]
 * __resolution__ : 0.15. Signifie une résolution de 0.15°(environ 15km) dans les directions longitudinale et latitudinale
@@ -67,7 +67,7 @@ où :
 
 Exemple de nom de fichier :
 
-* 20220821T12Z_MSC_GDPS-WEonG_BLSN_Sfc_LatLon0.15_PT024H.grib2
+* 20220821T12Z_MSC_GDPS-WEonG_BlowingSnow-Presence_Sfc_LatLon0.15_PT024H.grib2
 
 ## Liste des variables
 

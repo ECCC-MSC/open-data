@@ -6,6 +6,29 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe (SGPD)
 
+## Le mardi 26 mai 2026
+
+### Mise à jour vers la version 10.0.0 du Système global de prévision déterministe (SGPD)  
+ 
+Le mardi 26 mai 2026, à partir de la passe de 1200 UTC, le Centre météorologique canadien (CMC) mettra à jour le Système global de prévision déterministe (SGPD) vers la version 10.0.0.
+
+Changements importants : 
+
+* Prévisions hybrides avec pilotage spectral à grande échelle du modèle GEM vers le nouveau modèle basé sur l'IA appelé Global Environmental eMuLator (GEML). 
+* Améliorations significatives de la précision des prévisions dans le GDPS 10.0.0 par rapport au GDPS 9.1.0 opérationnel. 
+* Gains importants et statistiquement significatifs dans l'atmosphère libre proche de la surface, en particulier dans la troposphère moyenne et supérieure. 
+* Gains les plus importants obtenus parmis des cycles récents de mise à niveau opérationnelle de la prévision numérique du temps (NWP) de ECCC. 
+* Améliorations plus modestes pour les 2 à 3 premiers jours de prévision en raison d'une longueur d'onde de pilotage grossière; les améliorations les plus importantes sont observées entre le 3ème et le 10ème jour de prévision.  
+* Amélioration des prévisions de trajectoire des cyclones tropicaux grâce à une précision de pilotage accrue. 
+
+Un résumé des innovations incluses dans cette mise à jour ainsi que leurs impacts sur la performance du système est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-1000_f.pdf).
+
+La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2026/05/25/NOCN03_CWAO_251940___18749).
+
+Une note technique à ce sujet est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-1000_f.pdf). 
+
+Le document des spécifications techniques est disponible [via ce lien](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_10.0.0_f.pdf).
+
 ## Le mardi 14 avril 2026
 
 ### Mise à jour du SGPD à la version 9.1.0 suite à la nouvelle infrastructure de calcul haute performance. 

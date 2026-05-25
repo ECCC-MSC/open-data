@@ -6,6 +6,29 @@
 
 # Chronology of changes to the Global Deterministic Prediction System (GDPS)
 
+## Tuesday May 26, 2026
+
+### Upgrade to Version 10.0.0 of the Global Deterministic Prediction System (GDPS)  
+ 
+On Tuesday, May 26, 2026, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Prediction System (GDPS) to version 10.0.0.
+
+Significant changes: 
+
+* Hybrid forecast with large-scale spectral nudging of GEM toward the new AI-based model named Global Environmental eMuLator (GEML). 
+* Significant forecast accuracy improvements in GDPS 10.0 compared to operational GDPS 9.1. 
+* Strong and statistically significant gains in the near-surface, free atmosphere, especially mid- and upper troposphere. 
+* Largest improvement gains achieved in recent ECCC operational NWP upgrade cycles. 
+* More modest improvements during the first 2–3 forecast days due to coarse nudging wavelength, largest improvements from day 3 to day 10 forecasts. 
+* Improved tropical cyclone track forecasts through enhanced steering accuracy.  
+
+A summary of the innovations included in this upgrade and their impact on performance can be consulted [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/fact_sheets/factsheet_gdps-1000_e.pdf) 
+
+A copy of the official note announcing the implementation of these changes is available [at this link](https://dd.weather.gc.ca/doc/genots/2026/05/25/NOCN03_CWAO_251940___18749). 
+
+A technical note with more details on this system is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_notes/technote_gdps-1000_e.pdf). 
+
+The technical specifications document is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDPS_10.0.0_e.pdf).
+
 ## Tuesday April 14, 2026
 
 ### Upgrade to Version 9.1.0 of the GDPS adapted to the New High Performance Computing Infrastructure.

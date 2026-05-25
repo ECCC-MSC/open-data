@@ -9,6 +9,10 @@
 
 ## 2026
 
+### 26 mai 2026
+
+* [Mise à jour vers la version 10.0.0 du Système global de prévision déterministe (SGPD)](nwp_gdps/changelog_gdps_fr.md#le-mardi-26-mai-2026)
+
 ### 14 avril 2026
 
 * [Nouvelle infrastructure de calcul haute performance](../changelog_multisystems_fr#le-mardi-14-avril-2026)

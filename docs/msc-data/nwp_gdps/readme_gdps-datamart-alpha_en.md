@@ -22,7 +22,7 @@ The data is available using the HTTP protocol and resides in a directory that is
 
 The rotated lat-lon grid data can be accessed at the following address: 
 
-[https://dd.alpha.meteo.gc.ca/model_gem_global/15km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gem_global/15km/)
+[https://dd.alpha.meteo.gc.ca/model_gdps/15km/{HH}/{hhh}/](https://dd.alpha.meteo.gc.ca/model_gdps/15km/)
 
 where :
 
@@ -58,16 +58,16 @@ where:
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __GDPS-WEonG__ : Constant string indicating that the data are from the Global Deterministic Prediction System weather elements on the grid ("WEonG")
-* __VAR__ : Variables contained in the files (ex: VISIFG).
+* __VAR__ : Variables contained in the files (ex: WindDir)
 * __LVLTYPE-LVL__ : Vertical level [Sfc for the surface]
 * __Grid__ : Horizontal grid [LatLon]
 * __resolution__ : 0.15. Means a resolution of 0.15° (about 15km) in the longitudinal and latitudinal directions
 * __PT{hhh}H__ : Time delay according to the standard [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T and H are constant characters designating Period, Time and Hour. "hhh" represents the forecast time [001, 002, 003, ..., 084, 087, 090, ..., 141, 144]
-* __grib2__: Constant string indicating that the format is GRIB2.
+* __grib2__: Constant string indicating that the format is GRIB2
 
 Example file name:
 
-* 20220821T12Z_MSC_GDPS-WEonG_BLSN_Sfc_LatLon0.15_PT024H.grib2
+* 20220821T12Z_MSC_GDPS-WEonG_BlowingSnow-Presence_Sfc_LatLon0.15_PT024H.grib2
 
 ## List of variables
 

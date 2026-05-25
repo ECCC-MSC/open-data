@@ -4,7 +4,7 @@
 
 [TdM](../../../readme_fr.md) > [Données du SMC](../../readme_fr.md) > Données météorologiques à l'aviation
 
-# Données météorologique à l'aviation en format IWXXM
+# Données météorologiques à l'aviation en format IWXXM
 
 L'Organisation météorologique mondiale (OMM), sous le parrainage de l'[Organisation de l'Aviation Civile Internationale (OACI)](https://www.icao.int/fr), a créé le modèle d’échange d’informations météorologiques de l’OACI ([IWXXM](https://community.wmo.int/iwxxm)) afin de rapporter les informations météorologiques pour l'aviation en langage de balisage extensible (XML) et plus précisément en langage de balisage géographique (GML).
 

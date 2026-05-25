@@ -8,6 +8,10 @@
 
 ## 2026
 
+### May 26, 2026
+
+* [Upgrade to Version 10.0.0 of the Global Deterministic Prediction System (GDPS)](nwp_gdps/changelog_gdps_en.md#tuesday-may-26-2026) 
+
 ### April 14, 2026
 
 * [New High Performance Computing Infrastructure](../changelog_multisystems_en#tuesday-april-14-2026)
