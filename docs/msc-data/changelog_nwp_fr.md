@@ -12,6 +12,8 @@
 ### 26 mai 2026
 
 * [Mise à jour vers la version 10.0.0 du Système global de prévision déterministe (SGPD)](nwp_gdps/changelog_gdps_fr.md#le-mardi-26-mai-2026)
+* [Mise à jour vers la version 1.11.0 du Système global de prévision déterministe de vague (SGPDV)](nwp_gdwps/changelog_gdwps_fr.md#le-mardi-26-mai-2026)
+* [Mise à jour vers la version 2.3.0 du Système global de prévision déterministe d'onde de tempête (SGPDOT)](nwp_gdsps/changelog_gdsps_fr.md#le-mardi-26-mai-2026)
 
 ### 14 avril 2026
 

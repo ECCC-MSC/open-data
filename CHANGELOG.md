@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.7
+
+* date: 2026-05-29
+* announcements:
+    * Not announced
+* new content:
+    * Update GDWPS and GDSPS changelogs
+ * improvements:
+    * Update GDPS technical documentation section
+* bug fixes:
+    * Typo
+
 # 2.10.6
 
 * date: 2026-05-25

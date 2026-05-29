@@ -6,6 +6,20 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe de vague (SGPDV)
 
+## Le mardi 26 mai 2026
+
+### Mise à jour du Système global de prévision déterministe de vague (SGPDV) 1.11.0 du Centre météorologique canadien (CMC)
+
+Le mardi 26 mai 2026, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 1.11.0 de son Système global de prévision déterministe de vague (SGPDV).
+
+Principal changement :
+
+* Utilisation du SGPD v10.0.0
+
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.weather.gc.ca/doc/genots/2026/05/25/NOCN03_CWAO_251940___18749).
+
+Le document des spécifications techniques du SGPDV 1.11.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDWPS_1.11.0_f.pdf).
+
 ## Le mardi 14 avril 2026
 
 ### Mise à jour du SGPDV à la version 1.10.0 suite à la nouvelle infrastructure de calcul haute performance.

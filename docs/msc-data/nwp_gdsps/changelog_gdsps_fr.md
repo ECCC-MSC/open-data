@@ -6,6 +6,20 @@
 
 # Chronologie des changements apportés au Système global de prévision déterministe d’onde de tempête (SGPDOT)
 
+## Le mardi 26 mai 2026
+
+### Mise à jour du Système global de prévision déterministe d’onde de tempête (SGPDOT) 2.3.0 du Centre météorologique canadien (CMC)
+
+Le mardi 26 mai 2026, à compter de la passe de 1200 UTC, le Centre météorologique canadien (CMC) va procéder à la mise en œuvre opérationnelle de la version 2.3.0 de son Système global de prévision déterministe d’onde de tempête (SGPDOT).
+
+Principal changement :
+
+* Utilisation du SGPD v10.0.0
+
+La note officielle annonçant ce changement [est disponible via ce lien](https://dd.weather.gc.ca/doc/genots/2026/05/25/NOCN03_CWAO_251940___18749).
+
+Le document des spécifications techniques du SGPDOT 2.3.0 [est disponible ici](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDSPS_2.3.0_f.pdf).
+
 ## Le mardi 14 avril 2026
 
 ### Mise à jour du SGPDOT à la version 2.2.0 suite à la nouvelle infrastructure de calcul haute performance.
