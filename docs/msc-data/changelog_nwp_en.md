@@ -11,6 +11,8 @@
 ### May 26, 2026
 
 * [Upgrade to Version 10.0.0 of the Global Deterministic Prediction System (GDPS)](nwp_gdps/changelog_gdps_en.md#tuesday-may-26-2026) 
+* [Upgrade to Version 1.11.0 of the Global Deterministic Wave Prediction System (GDWPS)](nwp_gdwps/changelog_gdwps_en.md#tuesday-may-26-2026)
+* [Upgrade to Version 2.3.0 of the Global Deterministic Storm-surge Prediction System (GDSPS)](nwp_gdsps/changelog_gdsps_en.md#tuesday-may-26-2026)
 
 ### April 14, 2026
 

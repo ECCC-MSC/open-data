@@ -6,6 +6,20 @@
 
 # Chronology of changes to the Global Deterministic Storm-surge Prediction System (GDSPS)
 
+## Tuesday May 26, 2026
+
+### Upgrade to Version 2.3.0 of the GDSPS
+
+On Tuesday May 26, 2026, starting with the 1200 UTC run, the Canadian Meteorological Centre (CMC) will upgrade the Global Deterministic Storm-surge Prediction System (GDSPS) to version 2.3.0.
+
+The change included in this upgrade is as follows:
+
+* Use of GDPS v10.0.0
+
+A copy of the official note announcing the implementation of these changes is available at [this link](https://dd.weather.gc.ca/doc/genots/2026/05/25/NOCN03_CWAO_251940___18749)
+
+The technical specifications document for GDSPS 2.3.0 is available [at this link](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/tech_specifications/tech_specifications_GDSPS_2.3.0_e.pdf) .
+
 ## Tuesday April 14, 2026
 
 ### Upgrade to Version 2.2.0 of the GDSPS adapted to the New High Performance Computing Infrastructure.
