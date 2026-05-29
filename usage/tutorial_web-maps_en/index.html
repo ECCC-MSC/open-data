@@ -162,7 +162,7 @@
 <li><a href="#animating-time-enabled-wms-layers-with-openlayers">Animating time-enabled WMS layers with OpenLayers</a></li>
 </ul>
 <h2 id="displaying-a-wms-layer">Displaying a WMS layer</h2>
-<p>The following steps will show how to create a simple web map with OpenLayers and Leaflet. The map will display the Global Deterministic Prediction System (GDPS) air surface temperature data (<code>GPDS.ETA_TT</code>) over an <a href="https://www.openstreetmap.org/">OpenStreetMap</a> basemap. An example is given for the both OpenLayers and Leaflet.</p>
+<p>The following steps will show how to create a simple web map with OpenLayers and Leaflet. The map will display the Global Deterministic Prediction System (GDPS) air surface temperature data (<code>GDPS_15km_AirTemp_2m</code>) over an <a href="https://www.openstreetmap.org/">OpenStreetMap</a> basemap. An example is given for the both OpenLayers and Leaflet.</p>
 <h3 id="openlayers-example">OpenLayers example</h3>
 <h4 id="html">HTML</h4>
 <pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
@@ -205,7 +205,7 @@ let layers_to_add = [
       opacity: 0.4,
       source: new ol.source.TileWMS({
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+        params: {'LAYERS': 'GDPS_15km_AirTemp_2m', 'TILED': true},
         transition: 0
       })
     })
@@ -278,13 +278,13 @@ let OpenStreetMap_Mapnik = L.tileLayer(
 ).addTo(map);
 
 let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-    layers: 'GDPS.ETA_TT',
+    layers: 'GDPS_15km_AirTemp_2m',
     version: '1.3.0',
     opacity: 0.5,
 }).addTo(map);
 </code></pre>
 <p>The above code instantiates a <a href="https://leafletjs.com/reference-1.6.0.html#map">map object</a> using the Leaflet API and sets the initial map view with the <a href="https://leafletjs.com/reference-1.6.0.html#map-setview"><code>setView</code></a> method.</p>
-<p>Following the instantiation of the map, two layers are defined and added to the map instance. For each layer, a base URL is passed as well as parameters/options object used to define in further detail. For example, when instantiating the <code>wmsLayer</code> variable we define the opacity of the <code>GDPS.ETA_TT</code> layer and the WMS version to use when a request is made within the parameters object.</p>
+<p>Following the instantiation of the map, two layers are defined and added to the map instance. For each layer, a base URL is passed as well as parameters/options object used to define in further detail. For example, when instantiating the <code>wmsLayer</code> variable we define the opacity of the <code>GDPS_15km_AirTemp_2m</code> layer and the WMS version to use when a request is made within the parameters object.</p>
 <p>See the live example below:</p>
 <iframe height="300" style="width: 100%;" scrolling="no" title="GeoMet Simple WMS Leaflet" src="https://codepen.io/eccc-msc/embed/GRpragg?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   See the Pen <a href='https://codepen.io/eccc-msc/pen/GRpragg'>GeoMet Simple WMS Leaflet</a> by ECCC-MSC
@@ -413,7 +413,7 @@ let layers = [
     opacity: 0.4,
     source: new ol.source.TileWMS({
       url: &quot;https://geo.weather.gc.ca/geomet&quot;,
-      params: { LAYERS: &quot;GDPS.ETA_TT&quot;, TILED: true },
+      params: { LAYERS: &quot;GDPS_15km_AirTemp_2m&quot;, TILED: true },
       transition: 0
     })
   })
@@ -469,7 +469,7 @@ that is triggered by the event does the following:</p>
 <ul>
 <li>Fetches the coordinates of the clicked map point, then reprojects the coordinates to EPSG:4326 (WSG 84). The <code>ol.coordinate.toStringXY</code> method transforms the coordinates into a comma delimited string</li>
 <li>Retrieves the resolution of the map view</li>
-<li>Retrieves the source of the <code>GDPS.ETA_TT</code> layer</li>
+<li>Retrieves the source of the <code>GDPS_15km_AirTemp_2m</code> layer</li>
 <li>Uses the <code>ol.source.TileWMS.getFeatureInfoUrl()</code> method to create a WMS GetFeatureInfo request. Passed as arguments are the click event coordinates, view resolution, map projection, and an object containing any GetFeatureInfo parameters (<code>INFO_FORMAT</code> should at least be provided)</li>
 <li>Sets the overlay position to the coordinates of the initial click event</li>
 <li>If the GetFeatureInfo URL is properly constructed, submits the GetFeatureInfo request using the JavaScript API. Upon receiving a response, the JSON is retrieved and the popup content is updated with additional HTML that includes the coordinates and the value property of the first GeoJSON feature retrieved by the GetFeatureInfo request</li>

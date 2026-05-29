@@ -1,8 +1,8 @@
 const parser = new DOMParser();
 
-// Async function used to retrieve start, end, and default time from GDPS.ETA_RT layer GetCapabilities document
+// Async function used to retrieve start, end, and default time from WildfireHotspots layer GetCapabilities document
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&FIREWORK.HOTSPOTS&t=' + new Date().getTime())
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&WildfireHotspots&t=' + new Date().getTime())
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml')

@@ -255,8 +255,8 @@ like this:</p>
 </tr>
 </tbody>
 </table>
-<p>A WCS DescribeCoverage request to GeoMet-Weather for the GDPS.ETA_TT layer would then be constructed like this:</p>
-<p><a href="https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS.ETA_TT">https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS.ETA_TT</a></p>
+<p>A WCS DescribeCoverage request to GeoMet-Weather for the <code>GDPS_15km_AirTemp_2m</code> layer would then be constructed like this:</p>
+<p><a href="https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m">https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=DescribeCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m</a></p>
 <p></br></br></p>
 <h2 id="wcs-getcoverage">WCS GetCoverage</h2>
 <p>A WCS GetCoverage request is used to retrieve the actual coverage information (raw data). The most interesting aspect for a user is to be able to request a subdomain of a layer in the projection he wants and in the format he wants with the possibility to obtain the layer in a different spatial resolution and file format from the original one.</p>
@@ -336,9 +336,8 @@ like this:</p>
 </tr>
 </tbody>
 </table>
-<p>A WCS GetCoverage request to MSC GeoMet for the GDPS.ETA_TT layer could then be constructed
-like this:</p>
-<p><a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS.ETA_TT&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff">https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS.ETA_TT&amp;
+<p>A WCS GetCoverage request to MSC GeoMet for the <code>GDPS_15km_AirTemp_2m</code> layer could then be constructed like this:</p>
+<p><a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff">https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;
 SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;
 RESOLUTION=y(0.24)&amp;FORMAT=image/tiff</a></p>
 <p></br></br></p>

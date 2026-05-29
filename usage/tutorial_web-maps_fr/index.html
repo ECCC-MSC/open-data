@@ -162,7 +162,7 @@
 <li><a href="#animation-de-couches-wms-temporelles-avec-openlayers">Animation de couches WMS temporelles avec OpenLayers</a></li>
 </ul>
 <h2 id="afficher-une-couche-wms">Afficher une couche WMS</h2>
-<p>Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (<code>GPDS.ETA_TT</code>) sur un fond de carte de <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Un exemple est disponible pour les librairies OpenLayers et Leaflet.</p>
+<p>Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (<code>GDPS_15km_AirTemp_2m</code>) sur un fond de carte de <a href="https://www.openstreetmap.org/">OpenStreetMap</a>. Un exemple est disponible pour les librairies OpenLayers et Leaflet.</p>
 <h3 id="exemple-avec-openlayers">Exemple avec OpenLayers</h3>
 <h4 id="html">HTML</h4>
 <pre><code class="language-html">&lt;html lang=&quot;en&quot;&gt;
@@ -204,7 +204,7 @@ let layers_to_add = [
       opacity: 0.4,
       source: new ol.source.TileWMS({
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+        params: {'LAYERS': 'GDPS_15km_AirTemp_2m', 'TILED': true},
         transition: 0
       })
     })
@@ -277,13 +277,13 @@ let OpenStreetMap_Mapnik = L.tileLayer(
 ).addTo(map);
 
 let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-    layers: 'GDPS.ETA_TT',
+    layers: 'GDPS_15km_AirTemp_2m',
     version: '1.3.0',
     opacity: 0.5,
 }).addTo(map);
 </code></pre>
 <p>Le code ci-dessus initialise un <a href="https://leafletjs.com/reference-1.6.0.html#map">objet de carte</a> en utilisant l'API de Leaflet et définit la vue initiale de la carte avec la méthode <a href="https://leafletjs.com/reference-1.6.0.html#map-setview"><code>setView</code></a>.</p>
-<p>Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable <code>wmsLayer</code>, nous définissons l'opacité de la couche <code>GDPS.ETA_TT</code> et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.</p>
+<p>Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable <code>wmsLayer</code>, nous définissons l'opacité de la couche <code>GDPS_15km_AirTemp_2m</code> et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.</p>
 <p>Voir l'exemple ci-dessous :</p>
 <iframe height="300" style="width: 100%;" scrolling="no" title="Exemple simple de couche WMS de GeoMet avec Leaflet" src="https://codepen.io/eccc-msc/embed/GRpragg?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
   Voir le "Pen" <a href='https://codepen.io/eccc-msc/pen/GRpragg'>Exemple simple de couche WMS de GeoMet avec Leaflet</a> par le SMC d'ECCC
@@ -415,7 +415,7 @@ let layers = [
     opacity: 0.4,
     source: new ol.source.TileWMS({
       url: &quot;https://geo.weather.gc.ca/geomet&quot;,
-      params: { LAYERS: &quot;GDPS.ETA_TT&quot;, TILED: true },
+      params: { LAYERS: &quot;GDPS_15km_AirTemp_2m&quot;, TILED: true },
       transition: 0
     })
   })
@@ -470,7 +470,7 @@ Valeur: &lt;/b&gt;&lt;code&gt;${Math.round(json.features[0].properties.value)} �
 <ul>
 <li>Récupère les coordonnées du point de la carte cliqué, puis reprojette les coordonnées en EPSG:4326 (WSG 84). La méthode <code>ol.coordinate.toStringXY</code> transforme les coordonnées en une chaîne de caractères délimités par des virgules</li>
 <li>Récupère la résolution de la vue de la carte</li>
-<li>Récupère la source de la couche <code>GDPS.ETA_TT</code></li>
+<li>Récupère la source de la couche <code>GDPS_15km_AirTemp_2m</code></li>
 <li>Utilise la méthode <code>ol.source.TileWMS.getFeatureInfoUrl()</code> pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (au moins <code>INFO_FORMAT</code> doit être fourni)</li>
 <li>Fixe la position de la superposition aux coordonnées de l'événement de clic initial</li>
 <li>Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API JavaScript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo</li>
