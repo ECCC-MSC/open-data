@@ -1,8 +1,8 @@
 const parser = new DOMParser();
 
-// Async function used to retrieve start, end, and default time from GDPS.ETA_RT layer GetCapabilities document
+// Async function used to retrieve start, end, and default time from GDPS_15km_PrecipRate layer GetCapabilities document
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=GDPS.ETA_RT&t=' + new Date().getTime())
+  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=GDPS_15km_PrecipRate&t=' + new Date().getTime())
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml')
@@ -43,7 +43,7 @@ let layers = [
       source: new ol.source.ImageWMS({
         format: 'image/png',
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'GDPS.ETA_RT', 'TILED': true},
+        params: {'LAYERS': 'GDPS_15km_PrecipRate', 'TILED': true},
         transition: 0,
         crossOrigin: 'Anonymous'
       })

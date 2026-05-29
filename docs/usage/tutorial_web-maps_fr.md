@@ -16,7 +16,7 @@ Les services web géospatiaux de [GeoMet du SMC](../msc-geomet/readme_fr.md) peu
 
 ## Afficher une couche WMS
 
-Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (`GPDS.ETA_TT`) sur un fond de carte de [OpenStreetMap](https://www.openstreetmap.org/). Un exemple est disponible pour les librairies OpenLayers et Leaflet.
+Les étapes suivantes vous montreront comment créer une carte web simple avec OpenLayers et Leaflet. La carte affichera les données de température de surface de l'air du Système global de prévision déterministe (SGPD) (`GDPS_15km_AirTemp_2m`) sur un fond de carte de [OpenStreetMap](https://www.openstreetmap.org/). Un exemple est disponible pour les librairies OpenLayers et Leaflet.
 
 ### Exemple avec OpenLayers
 
@@ -67,7 +67,7 @@ let layers_to_add = [
       opacity: 0.4,
       source: new ol.source.TileWMS({
         url: 'https://geo.weather.gc.ca/geomet/',
-        params: {'LAYERS': 'GDPS.ETA_TT', 'TILED': true},
+        params: {'LAYERS': 'GDPS_15km_AirTemp_2m', 'TILED': true},
         transition: 0
       })
     })
@@ -151,7 +151,7 @@ let OpenStreetMap_Mapnik = L.tileLayer(
 ).addTo(map);
 
 let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
-    layers: 'GDPS.ETA_TT',
+    layers: 'GDPS_15km_AirTemp_2m',
     version: '1.3.0',
     opacity: 0.5,
 }).addTo(map);
@@ -159,7 +159,7 @@ let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
 
 Le code ci-dessus initialise un [objet de carte](https://leafletjs.com/reference-1.6.0.html#map) en utilisant l'API de Leaflet et définit la vue initiale de la carte avec la méthode [<code>setView</code>](https://leafletjs.com/reference-1.6.0.html#map-setview).
 
-Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable `wmsLayer`, nous définissons l'opacité de la couche `GDPS.ETA_TT` et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.
+Après l'instanciation de la carte, deux couches sont définies et ajoutées à la carte. Pour chaque couche, un URL de base est passé ainsi que les paramètres/options utilisés pour définir plus en détail la couche. Par exemple, lors de l'instanciation de la variable `wmsLayer`, nous définissons l'opacité de la couche `GDPS_15km_AirTemp_2m` et la version WMS à utiliser lorsqu'une requête est faite dans les paramètres de l'objet.
 
 Voir l'exemple ci-dessous :
 
@@ -302,7 +302,7 @@ let layers = [
     opacity: 0.4,
     source: new ol.source.TileWMS({
       url: "https://geo.weather.gc.ca/geomet",
-      params: { LAYERS: "GDPS.ETA_TT", TILED: true },
+      params: { LAYERS: "GDPS_15km_AirTemp_2m", TILED: true },
       transition: 0
     })
   })
@@ -362,7 +362,7 @@ Finalement, notre carte profitera de la méthode [<code>ol.Map.on()</code>](http
 
 * Récupère les coordonnées du point de la carte cliqué, puis reprojette les coordonnées en EPSG:4326 (WSG 84). La méthode `ol.coordinate.toStringXY` transforme les coordonnées en une chaîne de caractères délimités par des virgules
 * Récupère la résolution de la vue de la carte
-* Récupère la source de la couche `GDPS.ETA_TT`
+* Récupère la source de la couche `GDPS_15km_AirTemp_2m`
 * Utilise la méthode `ol.source.TileWMS.getFeatureInfoUrl()` pour créer une requête WMS GetFeatureInfo. Sont passés en argument les coordonnées de l'événement de clic, la résolution de la vue, la projection de la carte, et un objet contenant tout paramètre GetFeatureInfo (au moins `INFO_FORMAT` doit être fourni)
 * Fixe la position de la superposition aux coordonnées de l'événement de clic initial
 * Si l'URL GetFeatureInfo est correctement construit, la demande GetFeatureInfo est soumise en utilisant l'API JavaScript. Dès réception d'une réponse, le JSON est récupéré et le contenu de la fenêtre contextuelle est mis à jour avec du HTML supplémentaire qui inclut les coordonnées et la propriété de valeur du première élément GeoJSON récupéré par la requête GetFeatureInfo

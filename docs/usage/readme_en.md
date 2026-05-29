@@ -88,11 +88,11 @@ The following WMS GetMap request returns an image of the Global Deterministic Pr
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 ```
 Returns:
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png) 
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png) 
 
 #### Example 2 - Global Ice Ocean Prediction System (GIOPS) Sea Water Salinity
 
@@ -136,7 +136,7 @@ The following use case examples are provided:
 * [Gerald: upper air observations for storm chasing](../use-case_skewt/use-case_skewt_en/):
     * Access and use the MSC GeoMet data API directly from a Python script, specifically the OGC API - Process (OAProc) standard to create data tables and graphs
 
-Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/wms_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS.ETA_TT&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Raw data at specific geographic locations can be retrieved with a Web Map Service (WMS) GetFeatureInfo request. Details are provided [in the technical documentation](../msc-geomet/wms_en.md#wms-getfeatureinfo). Example of a [WMS GetFeatureInfo request for temperature from the Global Deterministic Prediction System (GDPS) model over Montreal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS_15km_AirTemp_2m&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
 Raw data for vector data can be retrieved with a OGC API - Features (WFS 3) request. Example of a [WFS 3 query for the Winnipeg River hydrometric station daily means](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) which returns the corresponding data as a GeoJSON file.
 

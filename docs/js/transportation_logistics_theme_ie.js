@@ -9,7 +9,7 @@ var map = new ol.Map({
       source: new ol.source.TileWMS({
           format: 'image/png',
           url: 'https://geo.weather.gc.ca/geomet/',
-          params: {'LAYERS': 'RDPS.CONTINENTAL_WGX', 'TILED': true},
+          params: {'LAYERS': 'HRDPS.CONTINENTAL_WGX', 'TILED': true},
       })
     }),
     // *** 2

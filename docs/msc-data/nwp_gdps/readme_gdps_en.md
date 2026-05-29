@@ -22,12 +22,12 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 * [Experimental weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
 * [Global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the `GDPS.DIAG_NW_PT1H` layer served by MSC GeoMet:
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the `GDPS_15km_PrecipType-Significant1h` layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=GDPS.DIAG_NW_PT1H&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=GDPS_15km_PrecipType-Significant1h&STYLE=&TRANSPARENT=true"/>
   </div>
 </div>
 </div>

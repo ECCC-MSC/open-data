@@ -71,16 +71,16 @@ A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.)
 | TIME            | The date and time used to generate the requested image. The format must respect ISO8601. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
 | DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
 
-A GetMap request for the Global Deterministic Prediction System's air temperature layer (GDPS.ETA_TT) would look like this:
+The following WMS `GetMap` request returns an image of the air temperature layer (`GDPS_15km_AirTemp_2m`) from the Global Deterministic Prediction System (GDPS):
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 ```
 
 And returns:
 
-![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
+![Global Deterministic Prediction System (GDPS) surface temperature](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png)
 </br></br></br>
 
 ## WMS GetFeatureInfo
@@ -114,7 +114,7 @@ A GetFeatureInfo request for the same image requested in the GetMap example abov
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS_15km_AirTemp_2m&I=5&J=5
 ```
 </br></br></br>
 
@@ -122,9 +122,9 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInf
 
 A WMS GetLegendGraphic request returns an image of the legend in the style requested by the user. The simplest way to access a layer's legend for a given style is to consult the WMS GetCapabilities document for the layer in question. All available layer styles are listed within the layer definition and the `<OnlineResource>` tag will contain a WMS GetLegendGraphic URL.
 
-For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles defined in the WMS GetCapabilties document. Requesting the `TEMPERATURE-LINEAR` style using the GetLegendGraphic request contained in the `<OnlineResource>` tag returns the legend for this style:
+For example, the GDPS air temperature layer (GDPS_15km_AirTemp_2m) has several styles defined in the WMS GetCapabilties document. Requesting the `TEMPERATURE-LINEAR` style using the GetLegendGraphic request contained in the `<OnlineResource>` tag returns the legend for this style:
 
-![TEMPERATURE-LINEAR GetLegendGraphic Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
+![TEMPERATURE-LINEAR GetLegendGraphic Example](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS_15km_AirTemp_2m&format=image/png&STYLE=TEMPERATURE-LINEAR)
 
 
 | Required parameters                 | Definition |
@@ -143,7 +143,8 @@ For example, the GDPS air temperature layer (GPDS.ETA_TT) has several styles def
 | SLD_BODY        | Allows the user to include an SLD document directly in the request URL.| Note: the value of LAYER in the WMS GetMap request and the value of se:Name (or se%3AName when encoded) in SLD_BODY needs to be different for the request to work.
 | LANG          | A vendor extension that allows a client to display the legend in English(en) or French(fr). Defaults to English if the parameter is not included in the request|
 
-A sample GetLegendGraphic request for the Global Deterministic Wave Prediction System's winds layer (GDWPS.UU.1h) would look like this:
+
+An example of a `GetLegendGraphic` query for the ocean currents layer (`OCEAN.GIOPS.2D_UU2W`) for the Global Ice Ocean Prediction System (GIOPS) would look like this:
 
 ```
 https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0
@@ -163,7 +164,7 @@ If the client desires to make a request for another date and time, the `TIME` or
 
 To make a request for a specific time and/or model run, a client must first determine the available model runs and time intervals. This information is available in the layer's `<Dimension>` tags in the WMS GetCapabilities document.
 
-For example, the Global Deterministic Prediction System's air temperature layer (GDPS.ETA_TT) time dimensions resemble:
+For example, the Global Deterministic Prediction System's air temperature layer (GDPS_15km_AirTemp_2m) time dimensions resemble:
 
 ```xml
 <Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z" 
@@ -181,7 +182,7 @@ Given this information, a client could make a GetMap image request for the GDPS 
 
 ```
 https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 &TIME=2019-06-21T12:00:00Z&DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
 ```
 
@@ -233,7 +234,7 @@ https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS
 Users can also choose to apply their own styles either by pointing to an external style using a [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld) document in the `SLD` parameter or by entering the SLD document directly into the `SLD_BODY` parameter. Note that the `SLD_BODY` definition must be entirely encoded using the URL encoding.
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
+https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS_15km_TotalCloudCover
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
 &SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3C
 StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net
@@ -241,7 +242,7 @@ StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.open
 http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
 2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld
 %20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3C
-NamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
+NamedLayer%3E%20%3Cse%3AName%3EGDPS_15km_TotalCloudCover%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
 %3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3A
 RasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3C
 ColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3C
@@ -252,4 +253,4 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 %20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E
 %20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A
 ```
-![GDPS layer with a custom user-provided SLD style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A)
+![GDPS layer with a custom user-provided SLD style](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS_15km_TotalCloudCover&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS_15km_TotalCloudCover%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A)

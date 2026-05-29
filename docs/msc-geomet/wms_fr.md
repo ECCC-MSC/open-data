@@ -73,17 +73,16 @@ Une requête WMS GetMap est composée des paramètres suivants :
 | TIME            | La date et l'heure associées à l'image désirée. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#specification-du-temps)|
 | DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#specification-du-temps)|
 
-La requête WMS GetMap suivante demande une image de la couche de température de l'air du Système global de prévision déterministe (SGPD) :
-
+La requête WMS `GetMap` suivante retourne une image de la couche de température de l'air (`GDPS_15km_AirTemp_2m`) du Système global de prévision déterministe (SGPD) :
 
 ```
 https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 ```
 
 Et retourne :
 
-![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png)
+![Température de l'air du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png)
 </br></br></br>
 
 ## WMS GetFeatureInfo
@@ -118,7 +117,7 @@ Une requête GetFeatureInfo pour la même image que l'exemple WMS GetMap ci-dess
 
 ```
 https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&BBOX=45,-75,45.5,-74.5
-&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS.ETA_TT&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS.ETA_TT&I=5&J=5
+&CRS=EPSG:4326&WIDTH=10&HEIGHT=10&LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&QUERY_LAYERS=GDPS_15km_AirTemp_2m&I=5&J=5
 ```
 </br></br></br>
 
@@ -128,7 +127,7 @@ Une requête GetLegendGraphic retourne une image de la légende d'une couche pou
 
 Par exemple, la couche de température de l'air du SGPD offre plusieurs styles dans le document WMS GetCapabilities. Demander la légende du style `TEMPERATURE-LINEAR` en utilisant une requête GetLegendGraphic retourne cette légende :
 
-![Exemple GetLegendeGraphic TEMPERATURE-LINEAR](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS.ETA_TT&format=image/png&STYLE=TEMPERATURE-LINEAR)
+![Exemple GetLegendeGraphic TEMPERATURE-LINEAR](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GDPS_15km_AirTemp_2m&format=image/png&STYLE=TEMPERATURE-LINEAR)
 
 Une requête WMS GetLegendeGraphic est composée des paramètres suivants :
 
@@ -149,7 +148,7 @@ Une requête WMS GetLegendeGraphic est composée des paramètres suivants :
 | LANG          | Un paramètre externe (vendor extension) permettant aux usagers de choisir d'afficher en français(fr) ou en anglais(en) la légende. Si le paramètre n'est pas spécifié, la légende est retournée en anglais par défaut|
 </br>
 
-Un exemple de requête GetLegendGraphic pour la couche des courants océaniques (CIOPS-East_2km_SeaIceVelocity) du Système Mondial de Prévision des Glaces et des Océans (GIOPS) va comme suit :
+Un exemple de requête `GetLegendGraphic` pour la couche des courants océaniques (`OCEAN.GIOPS.2D_UU2W`) du Système global de prévision océan-glace (SGPOG) va comme suit :
 
 ```
 https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0
@@ -169,7 +168,7 @@ Un utilisateur désirant effectuer une requête pour un moment spécifique pour 
 
 Afin de générer une requête pour un pas de temps spécifique ou une passe de modèle, l'utilisateur doit premièrement valider quels sont les intervalles de temps valides. Cette information est disponible dans la balise `<Dimension>` disponible dans le document WMS GetCapabilities.
 
-Par exemple, les dimensions temporelles pour la couche de température de l'air (GDPS.ETA_TT) du Système global de prévision déterministe (SGPD) ressemble à :
+Par exemple, les dimensions temporelles pour la couche de température de l'air (GDPS_15km_AirTemp_2m) du Système global de prévision déterministe (SGPD) ressemble à :
 
 ```xml
 <Dimension name="time" units="ISO8601" default="2019-06-12T15:00:00Z"
@@ -187,7 +186,7 @@ Avec cette information, un usager est en mesure d'effectuer une requête WMS Get
 
 ```
 https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
-&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS.ETA_TT&FORMAT=image/png
+&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 &TIME=2019-06-21T12:00:00Z&DIM_REFERENCE_TIME=2019-06-12T00:00:00Z
 ```
 
@@ -240,7 +239,7 @@ https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=R
 Les utilisateurs peuvent également spécifier leurs propres styles en fournissant par le biais du standard [OGC Styled Layer Descriptor (SLD)](https://www.opengeospatial.org/standards/sld), soit en pointant vers un document SLD externe avec le paramètre `SLD` soit en spécifiant le contenu SLD directement dans le paramètre `SLD_BODY`. Notez que le contenu de `SLD_BODY` doit être entièrement encodé tel un URL HTTP.
 
 ```
-https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS_15km_TotalCloudCover
 &STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png
 &SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3C
 StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net
@@ -248,7 +247,7 @@ StyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.open
 http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F
 2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld
 %20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3C
-NamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
+NamedLayer%3E%20%3Cse%3AName%3EGDPS_15km_TotalCloudCover%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle
 %3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3A
 RasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3C
 ColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3C
@@ -260,4 +259,4 @@ ColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FCol
 %20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A
 ```
 
-![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS.ETA_NT&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS.ETA_NT%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A)
+![Couche du SGPD avec un style SLD provenant de l'usager](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=GDPS_15km_TotalCloudCover&STYLES=&CRS=EPSG:4326&BBOX=35,-150,85,-45&WIDTH=1800&HEIGHT=1200&FORMAT=image/png&SLD_BODY=%22%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%20%3CStyledLayerDescriptor%20version%3D%221.0.0%22%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xsi%3AschemaLocation%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%20http%3A%2F%2Fschemas.opengis.net%2Fsld%2F1.0.0%2FStyledLayerDescriptor.xsd%22%3E%20%3CNamedLayer%3E%20%3Cse%3AName%3EGDPS_15km_TotalCloudCover%3C%2Fse%3AName%3E%20%3CUserStyle%3E%20%3CTitle%3ETEST%3C%2FTitle%3E%20%3Cse%3AFeatureTypeStyle%3E%20%3Cse%3ARule%3E%20%3Cse%3ARasterSymbolizer%3E%20%3Cse%3AOpacity%3E1.0%3C%2Fse%3AOpacity%3E%20%3CColorMap%3E%20%3CColorMapEntry%20color%3D%22%238cff66%22%20quantity%3D%220%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23ffff00%22%20quantity%3D%2225%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23b38600%22%20quantity%3D%2250%22%2F%3E%20%3CColorMapEntry%20color%3D%22%23cc0000%22%20quantity%3D%2275%22%2F%3E%20%3CColorMapEntry%20color%3D%22%234d0000%22%20quantity%3D%22100%22%2F%3E%20%3C%2FColorMap%3E%20%3C%2Fse%3ARasterSymbolizer%3E%20%3C%2Fse%3ARule%3E%20%3C%2Fse%3AFeatureTypeStyle%3E%20%3C%2FUserStyle%3E%20%3C%2FNamedLayer%3E%20%3C%2FStyledLayerDescriptor%3E%0A)

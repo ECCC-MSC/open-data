@@ -1,6 +1,6 @@
 const parser = new DOMParser();
 
-// Async function used to retrieve start, end, and default time from GDPS.DIAG_NW_PT1H layer GetCapabilities document
+// Async function used to retrieve start, end, and default time from AQHI-OBS layer GetCapabilities document
 async function getRadarStartEndTime() {
   let response = await fetch('https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=AQHI-OBS&t=' + new Date().getTime())
   let data = await response.text().then(
