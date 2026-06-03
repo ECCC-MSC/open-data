@@ -35,7 +35,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles aux adresses suivantes :
 
-* [https://dd.weather.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile/{HH}](https://dd.weather.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile)
+* [https://dd.meteo.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile/{HH}](https://dd.meteo.gc.ca/today/analysis/precip/hrdpa_watershed/shapefile)
 
 où  :
 

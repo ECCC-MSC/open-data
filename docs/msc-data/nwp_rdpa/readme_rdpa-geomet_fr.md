@@ -27,7 +27,7 @@ Exemple de carte interactive configurée pour afficher la quantité de précipit
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=&TRANSPARENT=true"/>
   </div>
 </div>
 </div>
@@ -71,7 +71,7 @@ Quantité de précipitation qui se sont produites au cours des 6 dernières heur
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la couche RDPA.24F_PR - Quantité de précipitations [mm] : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour. Exemple pour la couche RDPA.24F_PR - Quantité de précipitations [mm] : [https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR](https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=RDPA.24F_PR)
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps)
 
 Styles WMS :
@@ -82,9 +82,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic)
-* Exemple d'une requête pour récupérer une légende : `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR`
+* Exemple d'une requête pour récupérer une légende : `https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR`
 
-![La légende WMS CAPA24-LINEAR](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR)
+![La légende WMS CAPA24-LINEAR](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPA.24F_PR&format=image/png&STYLE=CAPA24-LINEAR)
 
 
 ## Support

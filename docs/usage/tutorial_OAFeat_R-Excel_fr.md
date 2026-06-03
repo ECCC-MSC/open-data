@@ -21,7 +21,7 @@ library(ggplot2)
 library(scales)
 
 options(scipen=999)
-aqhi_obs_realtime <- read.csv("https://api.weather.gc.ca/collections/aqhi-observations-realtime/items?sortby=observation_datetime&limit=100&location_name_fr=Ottawa&f=csv")
+aqhi_obs_realtime <- read.csv("https://api.meteo.gc.ca/collections/aqhi-observations-realtime/items?sortby=observation_datetime&limit=100&location_name_fr=Ottawa&f=csv")
 format_str="%Y-%m-%dT%H:%M:%OSZ"
 obs_datetime <- as.POSIXct(aqhi_obs_realtime$observation_datetime, tz="GMT", format=format_str)
 
@@ -33,7 +33,7 @@ p <- ggplot(aqhi_obs_realtime, aes(x=observation_datetime, y=aqhi)) +
   scale_size_continuous(range=c(1, 4)) +
   geom_line(size=1) +
   labs(title="AQHI en fonction du temps pour Ottawa",
-       subtitle="Provenance weather.gc.ca",
+       subtitle="Provenance meteo.gc.ca",
        y="AQHI",
        x="Date et heure d'observation",
        caption="Exemple de code en R") +
@@ -104,7 +104,7 @@ Sub MakeRequest()
     Dim reqURL As String
     
     ' URL pour la requête avec les paramètres
-    baseURL = "https://api.weather.gc.ca/collections/aqhi-observations-realtime/items"
+    baseURL = "https://api.meteo.gc.ca/collections/aqhi-observations-realtime/items"
     params = "sortby=observation_datetime&limit=100&location_name_fr=Ottawa"
     
     ' On concatène le tout en prenant soin d'ajouter "&f=csv" pour obtenir les valeurs en format csv

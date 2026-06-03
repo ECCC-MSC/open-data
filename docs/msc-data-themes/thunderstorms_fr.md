@@ -23,27 +23,27 @@ Les couches de l’aperçu ci-dessous peuvent être également visualisées dans
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_RT&format=image/png&STYLE=PRECIPPRTMMH&lang=fr')">Taux de précipitation instantané</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_RT&format=image/png&STYLE=PRECIPPRTMMH&lang=fr')">Taux de précipitation instantané</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL.CONV_SHWINX.500&format=image/png&STYLE=LIFTED_INDEX-LINEAR&lang=fr')">Indice de Showalter</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL.CONV_SHWINX.500&format=image/png&STYLE=LIFTED_INDEX-LINEAR&lang=fr')">Indice de Showalter</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Precip-Prob&format=image/png&STYLE=Precip-Prob&lang=fr')">Probabilité de précipitation</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Precip-Prob&format=image/png&STYLE=Precip-Prob&lang=fr')">Probabilité de précipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS&lang=fr')">Rafale de vents</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_WindGust&format=image/png&STYLE=GUST_INTERV_MS2KTS&lang=fr')">Rafale de vents</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png&STYLE=Thunderstorm-Prob&lang=fr')">Probabilité d'orages</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_Thunderstorm-Prob&format=image/png&STYLE=Thunderstorm-Prob&lang=fr')">Probabilité d'orages</span>
         </label></br>
     </div>
   </div>

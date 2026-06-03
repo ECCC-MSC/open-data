@@ -20,11 +20,11 @@ La [page de présentation de l'utilisation](../../usage/readme_fr.md) fournit de
 
 Les collections de données d'observations climatiques historiques suivantes sont disponibles via GeoMet-OGC-API :
 
-* [Sommaires climatologiques mensuels des observations](https://api.weather.gc.ca/collections/climate-monthly?lang=fr)
-* [Observations climatiques quotidiennes](https://api.weather.gc.ca/collections/climate-daily?lang=fr)
-* [Observations climatiques horaires](https://api.weather.gc.ca/collections/climate-hourly?lang=fr)
-* [Normales climatiques 1981-2010](https://api.weather.gc.ca/collections/climate-normals?lang=fr)
-* [Stations climatologiques](https://api.weather.gc.ca/collections/climate-stations?lang=fr)
+* [Sommaires climatologiques mensuels des observations](https://api.meteo.gc.ca/collections/climate-monthly?lang=fr)
+* [Observations climatiques quotidiennes](https://api.meteo.gc.ca/collections/climate-daily?lang=fr)
+* [Observations climatiques horaires](https://api.meteo.gc.ca/collections/climate-hourly?lang=fr)
+* [Normales climatiques 1981-2010](https://api.meteo.gc.ca/collections/climate-normals?lang=fr)
+* [Stations climatologiques](https://api.meteo.gc.ca/collections/climate-stations?lang=fr)
 
 
 ## Support

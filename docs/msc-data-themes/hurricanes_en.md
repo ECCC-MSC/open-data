@@ -46,7 +46,7 @@ Layers shown in preview below can also be viewed on MSC AniMet via a single [per
         </label></br>
         <label>
           <input type="checkbox" id="layer4">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Current Conditions</span>
+          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Current Conditions</span>
         </label></br>
     </div>
   </div>

@@ -20,7 +20,7 @@ Les données sont accessibles à l'adresses suivante :
 
 * Les fichiers contenant les données sur la grille latlon0.2x0.2 se trouvent à l'adresse suivante :
 
-[https://dd.meteo.gc.ca/today/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.weather.gc.ca/today/model_giops/netcdf/lat_lon/)
+[https://dd.meteo.gc.ca/today/model_giops/netcdf/lat_lon/{nd}/{HH}/{hhh}/](https://dd.meteo.gc.ca/today/model_giops/netcdf/lat_lon/)
 
 * Les fichiers contenant les données sur la grille ps5km60N se trouvent à l'adresse suivante :
 

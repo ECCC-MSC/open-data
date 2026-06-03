@@ -24,27 +24,27 @@ Les couches de l’aperçu ci-dessous peuvent être également visualisées dans
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_WGX&format=image/png&lang=fr')">Maximum des rafales de vent</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_WGX&format=image/png&lang=fr')">Maximum des rafales de vent</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_LiquidFogVisibility&format=image/png&lang=fr')">Visibilité: brouillard liquide</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_LiquidFogVisibility&format=image/png&lang=fr')">Visibilité: brouillard liquide</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_BlowingSnowPresence&format=image/png&STYLE=BlowingSnowPresence_Dis_Fr')">Présence de poudrerie</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_BlowingSnowPresence&format=image/png&STYLE=BlowingSnowPresence_Dis_Fr')">Présence de poudrerie</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_FreezingPrecip-Prob&format=image/png&lang=fr')">Possibilité de pluie verglaçante</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_FreezingPrecip-Prob&format=image/png&lang=fr')">Possibilité de pluie verglaçante</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr')">Radar pour la neige</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RSNO&format=image/png&STYLE=Radar-Snow_Dis-14colors_Fr')">Radar pour la neige</span>
         </label></br>
     </div>
   </div>

@@ -53,7 +53,7 @@ Ci-après est un exemple de carte interactive configurée avec OpenLayers et pr�
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
   </div>
 </div>
 </div>
@@ -85,24 +85,24 @@ GeoMet du SMC peut également servir des images sur demande par le biais d'une r
 La requête WMS GetMap suivante retourne une image de la couche de température de l'air du Système global de prévision déterministe (SGPD). Cette image est générée sur demande au moment de la requête.
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
 &CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png
 ```
 Retourne :
 
-![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png)
+![Température de surface du Système global de prévision déterministe (SGPD)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=GDPS_15km_AirTemp_2m&FORMAT=image/png)
 
 #### Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)
 
 La requête WMS GetMap suivante retourne une image de la couche de salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG). Cette image est générée sur demande au moment de la requête.
 
 ```
-https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
+https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180
 &CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png
 ```
 Retourne :
 
-![Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)](https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
+![Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)](https://geo.meteo.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&BBOX=-90,-180,90,180&CRS=EPSG:4326&WIDTH=600&HEIGHT=301&LAYERS=OCEAN.GIOPS.2D_SALW&FORMAT=image/png)
 
 #### Survol des paramètres WMS GetMap utilisés dans ces exemples
 
@@ -135,11 +135,11 @@ Les exemples de cas d'utilisation suivants sont disponibles :
 * [Gerald : profil thermique de l'atmosphère pour la chasse aux tempêtes](../use-case_skewt/use-case_skewt_fr/):
     * Accéder et utiliser l'API GeoMet du SMC directement dans un script Python, spécifiquement le standard OGC API - Process (OAProc) pour créer des tables et graphiques
 
-Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/wms_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.weather.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS_15km_AirTemp_2m&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
+Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans [la documentation technique](../msc-geomet/wms_fr.md#wms-getfeatureinfo). Voici un exemple de [requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada](https://geo.meteo.gc.ca/geomet/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetFeatureInfo&QUERY_LAYERS=GDPS_15km_AirTemp_2m&INFO_FORMAT=application/json&i=5&j=5&EXCEPTIONS=xml&LAYERS=GDPS_15km_AirTemp_2m&CRS=EPSG:4326&BBOX=45.50,-73.56,45.51,-73.55&WIDTH=10&HEIGHT=10).
 
-Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
+Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une [requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River](https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049) qui retourne les données correspondantes en tant que fichier GeoJSON.
 
-Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une [requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié](https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). [Un tutoriel est disponible pour sauvegarder la sortie d'une requête WCS sur le disque](../tutorial_gdal/tutorial_gdal_fr/). Une astuce pour construire des requêtes WCS est d'utiliser [l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD](https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation) et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.
+Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une [requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié](https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=RDPA.6F_PR&SUBSETTINGCRS=EPSG:4326&FORMAT=image/netcdf&TIME=2019-05-14T12:00:00Z). [Un tutoriel est disponible pour sauvegarder la sortie d'une requête WCS sur le disque](../tutorial_gdal/tutorial_gdal_fr/). Une astuce pour construire des requêtes WCS est d'utiliser [l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD](https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation) et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.
 
 ### Téléchargement de données brutes
 

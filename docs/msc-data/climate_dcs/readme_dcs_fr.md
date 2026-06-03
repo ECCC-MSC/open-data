@@ -30,12 +30,12 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
     * [DCS - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:dcs:historical:seasonal:anomaly)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_dcs-datamart_fr.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [DCS.PR.RCP26.YEAR.2021-2040_PCTL50](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50) des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [DCS.PR.RCP26.YEAR.2021-2040_PCTL50](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50) des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&format=image/png&STYLE=PRECIP-ANOMALY"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&format=image/png&STYLE=PRECIP-ANOMALY"/>
   </div>
 </div>
 </div>

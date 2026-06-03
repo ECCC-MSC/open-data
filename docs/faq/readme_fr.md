@@ -142,7 +142,7 @@ Pour consulter les derniers bulletins AACN01 CWAO, vous pouvez faire une requêt
 
 Voici un exemple de requête pour obtenir tous les bulletins AACN01 émis pour une date donnée (à ajuster selon la date recherchée):
 
-https://api.weather.gc.ca/collections/bulletins-realtime/items?q=*AACN01*&f=json&datetime=2023-11-18T09:55
+https://api.meteo.gc.ca/collections/bulletins-realtime/items?q=*AACN01*&f=json&datetime=2023-11-18T09:55
 
 Il existe par ailleurs une liste de diffusion des bulletins AACN01. Si vous êtes intéressés, veuillez nous contacter à l'adresse dps-client@ec.gc.ca et nous vous ajouterons à la liste de diffusion.
 
@@ -257,7 +257,7 @@ En ce qui concerne les données QPF (Quantitative Precipitation Forecast) au for
 
 Chacun de ces bulletins est produit spécifiquement pour des sites de prévision canadiens individuels. Le contenu est donc variable. Par exemple, les valeurs des paramètres de prévision sont disponibles à des intervalles de 6 heures de 0 à 48 heures pour certains bulletins, et à des intervalles de 6 heures de 0 à 24 heures et à des intervalles de 12 heures de 24 à 48 heures pour certains autres. Les éléments de prévision météorologique peuvent également varier d'un message à l'autre.
 
-Ces [bulletins sont disponibles sur le  Datamart du SMC](https://dd.meteo.gc.ca/bulletins/focn03). Une [interface de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) pour le serveur de données HTTPS du Service météorologique du Canada est également [disponible](https://dd.weather.gc.ca/cgi-bin/bulletin_search.pl).
+Ces [bulletins sont disponibles sur le  Datamart du SMC](https://dd.meteo.gc.ca/bulletins/focn03). Une [interface de recherche de bulletins](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/bulletins/CMC_Bulletin_Search_Help_en.pdf) pour le serveur de données HTTPS du Service météorologique du Canada est également [disponible](https://dd.meteo.gc.ca/cgi-bin/bulletin_search.pl).
 
 Aussi, une estimation optimale de la quantité de précipitation qui est survenue au cours de périodes passées récentes de 6h ou 24h est disponible dans les données de l'[Analyse régionale déterministe de précipitation](../msc-data/nwp_rdpa/readme_rdpa_fr.md). Cet estimé intègre des relevés provenant de capteurs de précipitation, de radar météo et de modèles de prévision numérique du temps. La couverture géographique est l'Amérique du Nord (Canada, États-Unis et le Mexique).
 

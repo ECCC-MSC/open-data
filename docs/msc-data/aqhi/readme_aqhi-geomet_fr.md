@@ -15,12 +15,12 @@ GeoMet du SMC donne accès à la couche du programme Cote Air Santé (CAS). Les 
 
 La couche CAS est disponible sur GeoMet-Météo par le biais des standards [WMS (Web Map Service)](../../msc-geomet/wms_fr.md) et [WCS (Web Coverage Service)](../../msc-geomet/wcs_fr.md).
 
-Exemple de carte interactive présentant la couche [AQHI-OBS](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS) du CAS provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [AQHI-OBS](https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS) du CAS provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default"/>
   </div>
 </div>
 </div>
@@ -33,7 +33,7 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 ### Couches disponibles
 
-Pour connaître les détails de la couche CAS servie par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
+Pour connaître les détails de la couche CAS servie par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
@@ -41,7 +41,7 @@ Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dan
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS)
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS](https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=AQHI-OBS)
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps).
 
 Styles WMS :
@@ -52,9 +52,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende :  [https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default](https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default).
+* Exemple d'une requête pour récupérer une légende :  [https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default](https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default).
 
-![La légende par défault pour la couche AQHI-OBS](https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default)
+![La légende par défault pour la couche AQHI-OBS](https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=AQHI-OBS&format=image/png&STYLE=default)
 
 
 ## Support

@@ -20,12 +20,12 @@ Les données du CanGRD sont disponibles
     * [CanGRD - Anomalie saisonnière historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:seasonal:anomaly)
     * [CanGRD - Anomalie mensuelle historique](https://api.meteo.gc.ca/collections/climate:cangrd:historical:monthly:anomaly)
 
-Exemple de carte interactive présentant la couche [CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CANGRD.ANO.TX_ANNUAL) du CanGRD provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [CANGRD.ANO.TX_ANNUAL](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CANGRD.ANO.TX_ANNUAL) du CanGRD provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES"/>
   </div>
 </div>
 </div>
@@ -40,7 +40,7 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 ### Couches disponibles
 
-Pour savoir quelles couches CanGRD sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
+Pour savoir quelles couches CanGRD sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
@@ -48,7 +48,7 @@ Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dan
 
 Récupération de la liste des derniers pas de temps disponibles :
 
-* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL).
+* Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`). Exemple : [https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&layer=CANGRD.ANO.TX_ANNUAL).
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps).
 
 Styles WMS :
@@ -59,9 +59,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende : [https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES).
+* Exemple d'une requête pour récupérer une légende : [https://geo.meteo.gc.ca/geomet-climate?&lang=frversion=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES](https://geo.meteo.gc.ca/geomet-climate?&lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES).
 
-![La légende TEMP-ANOMALIES pour la couche CANGRD.ANO.TX_ANNUAL](https://geo.weather.gc.ca/geomet-climate?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES)
+![La légende TEMP-ANOMALIES pour la couche CANGRD.ANO.TX_ANNUAL](https://geo.meteo.gc.ca/geomet-climate?&lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CANGRD.ANO.TX_ANNUAL&format=image/png&STYLE=TEMP-ANOMALIES)
 
 
 ## Support
