@@ -9,7 +9,7 @@
 
 MSC GeoMet provides access to the weather alerts layer. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software.
 
-## Access to the geospatial web services
+## Web Map Service (WMS)
 
 The weather alerts layer is [available on GeoMet-Weather via the Web Map Service (WMS) standard](../../msc-geomet/readme_en.md).
 
@@ -42,27 +42,58 @@ Example of a web map configured to display the `Current-Alerts` layer served by 
 </div>
 
 
-## Usage
+[MSC AniMet](../../msc-animet/readme_en.md) is a map viewer that connects to GeoMet web map services and OGC APIs to animate and share interactive map views. The [Current-Alerts](https://eccc-msc.github.io/msc-animet/?layers=Current-Alerts;0.75;0;1;0;1&extent=-14803725,2877875,-5233783,11845857&overlays=Boundaries) layer is available for visualization in AniMet.
+
+
+### Usage
 
 The [usage overview page](../../usage/readme_en.md) provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the [tutorials](../../usage/tutorials_en.md) and [technical documentation for MSC GeoMet geospatial web services](../../msc-geomet/readme_en.md#available-ogc-standards) for detailed information. See also the [main weather alerts data page](readme_alerts_en.md) which links to additional information on weather alerts.
 
 ### Available layers
 
-There is one main weather alerts layer with all four types of alerts (warning, watch, statement, advisory). 
+There is one main weather alerts layer with all four types of alerts:
+
+* Warning
+* Watch
+* Statement
+* Advisory
 
 ### Usage tips
 
-WMS styles:
+**WMS styles:**
 
 * The list of available WMS styles is provided in the WMS GetCapabilities response ([example of a WMS GetCapabilities request](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=Current-Alerts))
 * Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the [SLD technical documentation](../../../msc-geomet/wms_en#handling-styles)
 
-Legends:
+**Legends:**
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/wms_en#wms-getlegendgraphic)
-* Legend retrieval request example: `https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts`
+* **Legend retrieval request example:**
+[https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts)
+
+
 
 ![The Current-Alerts WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Current-Alerts)
+
+
+
+## OGC-API - Features
+
+Weather alerts are [available on GeoMet-OGC-API](https://api.weather.gc.ca/collections/weather-alerts?lang=en) via the `OGC-API - Features` standard.
+
+It is possible [filter alerts using CQL2](../../msc-geomet/ogc_api_en.md#ogc-api-advanced-filtering-with-cql2).
+
+* **Filter alerts for Alberta (AB):**
+[https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.province=AB](https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.province=AB)
+
+* **Filter for yellow warning alerts:**
+[https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_en=yellow](https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_en=yellow)
+
+* **Filter alerts intersecting a polygon:**
+[https://api.weather.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))](https://api.weather.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47))))
+
+
+
 
 
 ## Support
