@@ -15,3 +15,6 @@ Période pic de la deuxième houle,PWPSSWEL,Surface,s
 Période pic de la première houle,PWPFSWEL,Surface,s
 Période pic des vagues de vent de la mer,PPERWW,Surface,s
 Période pic des vagues,PWPER,Surface,s
+Direction moyenne des vagues du vent et de la houle combinées,WWSDIR,Surface,Degree true
+Composante u de la dérive de Stokes de surface,USSD,Surface,m/s
+Composante v de la dérive de Stokes de surface,VSSD,Surface,m/s
