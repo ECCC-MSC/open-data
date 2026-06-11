@@ -66,7 +66,7 @@ let layers_to_add = [
     new ol.layer.Tile({
       opacity: 0.4,
       source: new ol.source.TileWMS({
-        url: 'https://geo.weather.gc.ca/geomet/',
+        url: 'https://geo.meteo.gc.ca/geomet/',
         params: {'LAYERS': 'GDPS_15km_AirTemp_2m', 'TILED': true},
         transition: 0
       })
@@ -150,7 +150,7 @@ let OpenStreetMap_Mapnik = L.tileLayer(
   }
 ).addTo(map);
 
-let wmsLayer = L.tileLayer.wms('https://geo.weather.gc.ca/geomet?', {
+let wmsLayer = L.tileLayer.wms('https://geo.meteo.gc.ca/geomet?', {
     layers: 'GDPS_15km_AirTemp_2m',
     version: '1.3.0',
     opacity: 0.5,
@@ -301,7 +301,7 @@ let layers = [
   new ol.layer.Tile({
     opacity: 0.4,
     source: new ol.source.TileWMS({
-      url: "https://geo.weather.gc.ca/geomet",
+      url: "https://geo.meteo.gc.ca/geomet",
       params: { LAYERS: "GDPS_15km_AirTemp_2m", TILED: true },
       transition: 0
     })
@@ -429,7 +429,7 @@ const parser = new DOMParser();
 
 // Fonction asynchrone utilisée pour récupérer l'heure de début et de fin du document GetCapabilities de la couche RADAR_1KM_RRAI
 async function getRadarStartEndTime() {
-  let response = await fetch('https://geo.weather.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RADAR_1KM_RRAI&t=' + new Date().getTime())
+  let response = await fetch('https://geo.meteo.gc.ca/geomet/?lang=en&service=WMS&request=GetCapabilities&version=1.3.0&LAYERS=RADAR_1KM_RRAI&t=' + new Date().getTime())
   let data = await response.text().then(
     data => {
       let xml = parser.parseFromString(data, 'text/xml');
@@ -455,7 +455,7 @@ let layers = [
   new ol.layer.Image({
     source: new ol.source.ImageWMS({
       format: 'image/png',
-      url: 'https://geo.weather.gc.ca/geomet/',
+      url: 'https://geo.meteo.gc.ca/geomet/',
       params: {'LAYERS': 'RADAR_1KM_RRAI', 'TILED': true},
       crossOrigin: 'Anonymous'
     })
@@ -463,7 +463,7 @@ let layers = [
   new ol.layer.Image({
     source: new ol.source.ImageWMS({
       format: 'image/png',
-      url: 'https://geo.weather.gc.ca/geomet/',
+      url: 'https://geo.meteo.gc.ca/geomet/',
       params: {'LAYERS': 'RADAR_COVERAGE_RRAI.INV', 'TILED': true},
       transition: 0,
       crossOrigin: 'Anonymous'

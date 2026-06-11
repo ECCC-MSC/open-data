@@ -24,27 +24,27 @@ Les couches de l’aperçu ci-dessous peuvent être également visualisées dans
     <div id="switch-case">
         <label>
           <input type="checkbox" id="layer1" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_AirTemp&format=image/png&lang=fr')">Température</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS-WEonG_2.5km_AirTemp&format=image/png&lang=fr')">Température</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer2" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours')">Alertes météo</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer4" checked>
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Conditions actuelles</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CURRENT_CONDITIONS&format=image/png&STYLE=default')">Conditions actuelles</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer3">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.3_WCF.ERMEAN&format=image/png&STYLE=WindChill_Dis&lang=fr')">Indice de refroidissement éolien</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=REPS.DIAG.3_WCF.ERMEAN&format=image/png&STYLE=WindChill_Dis&lang=fr')">Indice de refroidissement éolien</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer6">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_DominantPrecipType&format=image/png&STYLE=DominantPrecipType_Dis_Fr')">Type dominant de précipitation</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDPS-WEonG_10km_DominantPrecipType&format=image/png&STYLE=DominantPrecipType_Dis_Fr')">Type dominant de précipitation</span>
         </label></br>
         <label>
           <input type="checkbox" id="layer5">
-          <span onmouseover="updateLegend('https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_UTCI&format=image/png&STYLE=UTCI-FR')">Indice Climatique Thermique Universel</span>
+          <span onmouseover="updateLegend('https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HRDPS.CONTINENTAL_UTCI&format=image/png&STYLE=UTCI-FR')">Indice Climatique Thermique Universel</span>
         </label></br>
     </div>
   </div>

@@ -55,7 +55,7 @@ Exemple :
 
 SOVD02_CWOW_250553___14352
 
-Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC. Cependant, une fois le type de bulletin identifié dans le répertoire de l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à nos services web [GeoMet-OGC-API du SMC](https://api.weather.gc.ca/collections/bulletins-realtime?lang=fr).
+Il n'y a pas de liste complète des bulletins publiés sur le Datamart du SMC. Cependant, une fois le type de bulletin identifié dans le répertoire de l'OMM, vous pouvez aisément vérifier si ce bulletin est disponible grâce à nos services web [GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections/bulletins-realtime?lang=fr).
 
 ### Avertissements météo
 

@@ -79,7 +79,7 @@ Le SMC doit faire preuve de souplesse dans la façon dont il offre des données 
 
 Ainsi, aussi souvent que possible, nous utiliserons le __serveur DD-Alpha, le site Web d'essai de données du Datamart du SMC__, pour déposer des échantillons des nouvelles données modifiées afin d'aider nos utilisateurs à adapter leurs applications. 
 
-Le serveur DD-Alpha se trouve à l'adresse [http://dd.alpha.weather.gc.ca/](http://dd.alpha.weather.gc.ca/).
+Le serveur DD-Alpha se trouve à l'adresse [http://dd.alpha.meteo.gc.ca/](http://dd.alpha.meteo.gc.ca/).
 
 Ce serveur, qui n'est pas opérationnel, donne également accès à des données expérimentales ou non opérationnelles.
 

@@ -25,7 +25,7 @@ Dans l'exemple suivant, la couche de température de l'air du système de prévi
 2. Ajouter un service WMS
     * Dans l'explorateur, clic-droit sur `WMS/WMTS` : <img src="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/usage/images_QGIS/qgis_wms-nouvelle-connection_fr.png" width="20%">
     * Choisir un nom pour le service et l'écrire dans la case `Nom`
-    * Entrer l'URL du service web géospatial : [https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities) dans la case `URL`
+    * Entrer l'URL du service web géospatial : [https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities](https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities) dans la case `URL`
     * Cliquer sur `OK`
 3. Ajouter une couche WMS au projet
     * Retourner dans l'explorateur sous `WMS/WMTS` et naviguer dans l'arborescence pour atteindre la couche désirée

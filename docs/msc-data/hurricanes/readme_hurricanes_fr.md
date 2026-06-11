@@ -24,7 +24,7 @@ Exemple de carte interactive présentant les couches Web Map Service (WMS) de zo
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HURRICANE_RESPONSE_ZONE&format=image/png&STYLE=HURRICANE_LINE_BLACK_DASHED"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HURRICANE_RESPONSE_ZONE&format=image/png&STYLE=HURRICANE_LINE_BLACK_DASHED"/>
   </div>
 </div>
 </div>

@@ -18,8 +18,8 @@ Ces données sont respectivement disponibles sur les services du serveur de donn
 
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_en.md)
 * [Données disponibles sur les services web géospatiaux GeoMet-OGC-API du SMC](https://api.meteo.gc.ca/collections?lang=fr) :
-    * [Zones standards de prévision publique](https://api.weather.gc.ca/collections/public-standard-forecast-zones?lang=fr)
-    * [Zones standards de prévision marine](https://api.weather.gc.ca/collections/marine-standard-forecast-zones?lang=fr)
+    * [Zones standards de prévision publique](https://api.meteo.gc.ca/collections/public-standard-forecast-zones?lang=fr)
+    * [Zones standards de prévision marine](https://api.meteo.gc.ca/collections/marine-standard-forecast-zones?lang=fr)
 * [Données shapefiles disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/today/meteocode/geodata/version_6.13.0)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

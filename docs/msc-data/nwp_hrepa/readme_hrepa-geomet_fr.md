@@ -13,12 +13,12 @@ GeoMet du SMC donne accès à plusieurs couches de Système global de l'Analyse 
 
 Les couches du AHREP sont disponibles sur [GeoMet-Météo par le biais des standards WMS (Web Map Service) et WCS (Web Coverage Service).](../../msc-geomet/readme_fr.md#standards-disponibles)
 
-Exemple de carte interactive présentant la couche Precip-Accum06h-Pct25 du AHREP provenant de GeoMet du SMC :
+Exemple de carte interactive présentant la couche [HREPA.6P_2.5km_PCT25](https://geo.meteo.gc.ca) du AHREP provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=fr"/>
   </div>
 </div>
 </div>
@@ -40,14 +40,14 @@ La page de [l'aperçu de l'utilisation](../../usage/readme_fr.md) présente l'in
 
 ### Couches disponibles
 
-Pour avoir la liste des couches AHREP qui sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
+Pour avoir la liste des couches AHREP qui sont servies par GeoMet du SMC, consultez le [document WMS GetCapabilities](https://geo.meteo.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&lang=f).
 
 Quatre couches sont disponibles pour AHREP:
 
-* pr [mm]: Accumulation de précipitation sur une période de 6 heures pour les 25 membres de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier), le premier membre correspond au membre contrôle (sans perturbations)
-* cfia [sans unité]: Indice de confiance de l'analyse, seulement pour le membre controle de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier)
-* q025 [mm]: 25ème percentile de l'ensemble des analyses de cumuls 6 heures de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct25 dans le nom du fichier)
-* q075[mm]: 75ème percentile de l'ensemble des analyses de cumuls 6 heures de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct75 dans le nom du fichier)
+* **pr [mm]**: Accumulation de précipitation sur une période de 6 heures pour les 25 membres de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier), le premier membre correspond au membre contrôle (sans perturbations)
+* **cfia [sans unité]**: Indice de confiance de l'analyse, seulement pour le membre controle de l'ensemble (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h dans le nom du fichier)
+* **q025 [mm]**: 25ème percentile de l'ensemble des analyses de cumuls 6 heures de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct25 dans le nom du fichier)
+* **q075[mm]**: 75ème percentile de l'ensemble des analyses de cumuls 6 heures de précipitation (disponible dans les fichiers contenant la sous-chaîne Precip-Accum06h-Pct75 dans le nom du fichier)
 
 Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches](../../usage/tutorial_WMS_QGIS_fr.md).
 
@@ -57,7 +57,7 @@ Les logiciels SIG de bureau tels que QGIS permettent également de [naviguer dan
 Récupération de la liste des derniers pas de temps disponibles :
 
 * Les utilisateurs peuvent ajouter le paramètre `layer` à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises `<Dimension>`).
-    - Exemple pour la couche 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc - 25eme percentile de précipitations issue de l'ensemble à 25 membres [mm] : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc
+    - Exemple pour la couche `HREPA.6P_2.5km_PCT25` [mm] : [https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=HREPA.6P_2.5km_PCT25](https://geo.meteo.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=HREPA.6P_2.5km_PCT25)
 * Davantage d'information est disponible dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/wms_fr#specification-du-temps).
 
 Styles WMS :
@@ -68,7 +68,9 @@ Styles WMS :
 Légendes :
 
 * Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la [documentation technique des légendes WMS](../../../msc-geomet/wms_fr#wms-getlegendgraphic).
-* Exemple d'une requête pour récupérer une légende : 
+* Exemple d'une requête pour récupérer une légende :  [https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=fr](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=fr)
+
+![La légende PRECIPMM de la couche HREPA.6P_2.5km_PCT25 PRECIPMM](https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=fr)
 
 
 ## Support
@@ -112,12 +114,12 @@ Nous encourageons les usagers à s'abonner à la liste d'information [GeoMet-Inf
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/geps_ie.js";
+        js.src = "../../../js/hrepa_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/geps.js";
+        js.src = "../../../js/hrepa.js";
     }
     head.appendChild(js);
 </script>

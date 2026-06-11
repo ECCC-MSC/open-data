@@ -23,12 +23,12 @@ Ces données sont respectivement disponibles via l'API / les services web [GeoMe
 * [Données disponibles sur les services web géospatiaux GeoMet-Climat](readme_cmip6-geomet_fr.md)
 * [Données NetCDF disponibles sur le Datamart du SMC](readme_cmip6-datamart_fr.md)
 
-Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.weather.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) du CMIP6 provenant de GeoMet du SMC :
+Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible. Exemple de carte interactive présentant la couche [CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y](https://geo.meteo.gc.ca/geomet-climate?service=WMS&version=1.3.0&request=GetCapabilities&lang=fr&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y) du CMIP6 provenant de GeoMet du SMC :
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CMIP6-SSP585_AirTempAnomaly-Pct50_2081-2100_P0Y&format=image/png&STYLE=TEMP-ANOMALIES"/>
   </div>
 </div>
 </div>

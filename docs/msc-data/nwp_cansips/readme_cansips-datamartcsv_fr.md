@@ -28,18 +28,18 @@ Pour accéder aux indices atmosphériques et océaniques calculés par le SPISCa
 
 __Prévisions__ :
 
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal)
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/forecast/seasonal)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/forecast/monthly)
 
 __Prévisions historiques__ : 
 
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal)
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/hindcast/seasonal)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/hindcast/monthly)
 
 __Observations__ : 
 
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal)
-* [https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal](https://dd.weather.gc.ca/today/ensemble/cansips/csv/indices/observation/monthly)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal)
+* [https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/observation/seasonal](https://dd.meteo.gc.ca/today/ensemble/cansips/csv/indices/observation/monthly)
 
 ## Nomenclature des noms de fichiers 
 

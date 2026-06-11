@@ -12,12 +12,12 @@ MSC GeoMet provides access to data produced by the High Resolution Ensemble Prec
 
 The HREPA data is [available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards](../../msc-geomet/readme_en.md#available-ogc-standards).
 
-Example of a web map configured to display the [Precip-Accum06h-Pct25](https://geo.weather.gc.ca) layer served by MSC GeoMet:
+Example of a web map configured to display the [HREPA.6P_2.5km_PCT25](https://geo.weather.gc.ca) layer served by MSC GeoMet:
 
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=GEPS.DIAG.12_PRMM.ERGE10&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=en"/>
   </div>
 </div>
 </div>
@@ -42,10 +42,10 @@ To see which HREPA layers are served via MSC GeoMet consult the service's [WMS G
 
 Four layers are available for HREPA:
 
-* pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)
-* cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) 
-* q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
-* q075[mm]: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) 
+* **pr [mm]**: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename.
+* **cfia [unitless]**: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) 
+* **q025 [mm]**: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) 
+* **q075[mm]**: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) 
 
 Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Capabilities document as a layer tree](../../usage/tutorial_WMS_QGIS_en.md).
 
@@ -54,7 +54,7 @@ Desktop GIS software such as QGIS also makes it easy to [navigate the WMS Get Ca
 Retrieving the available model runs and forecast hours available for a given HREPA layer:
 
 * Users can use the `layer` query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the `<Dimension>` tags). 
-  - Example for the 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc file that provides the Precip-Accum06h-Pct25 layer [mm] : https://geo.weather.gc.ca/geomet?lang=fr&service=WMS&version=1.3.0&request=GetCapabilities&layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc
+  - Example for the `HREPA.6P_2.5km_PCT25` layer [mm] : [https://geo.weather.gc.ca/geomet?lang=en&service=WMS&version=1.3.0&request=GetCapabilities&layer=HREPA.6P_2.5km_PCT25](https://geo.weather.gc.ca/geomet?lang=en&service=WMS&version=1.3.0&request=GetCapabilities&layer=HREPA.6P_2.5km_PCT25)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/wms_en#handling-time)
 
 WMS styles:
@@ -65,9 +65,9 @@ WMS styles:
 Legends:
 
 * Legends are available for every WMS style. Details are provided in [the WMS legend technical documentation](../../../msc-geomet/wms_en#wms-getlegendgraphic).
-* Example of retrieving a layer's legend via a GetLegendGraphic request: 
+* Example of retrieving a layer's legend via a GetLegendGraphic request: [https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=en](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=en)
 
-![The GEPS.DIAG.12_PRMM.ERGE10 REPS_PROB-LINEAR WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=GEPS.DIAG.12_PRMM.ERGE10&format=image/png&STYLE=REPS_PROB-LINEAR)
+![The HREPA.6P_2.5km_PCT25 PRECIPMM WMS legend](https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=en)
 
 
 ## Support
@@ -111,12 +111,12 @@ We encourage users to subscribe to the [GeoMet-Info](https://comm.collab.science
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/geps_ie.js";
+        js.src = "../../../js/hrepa_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/geps.js";
+        js.src = "../../../js/hrepa.js";
     }
     head.appendChild(js);
 </script>
