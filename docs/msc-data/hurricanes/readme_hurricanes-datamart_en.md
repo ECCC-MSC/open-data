@@ -18,7 +18,7 @@ The data is available via the HTTPS protocol. It is possible to access it with a
 
 Data can be found on the MSC Datamart at this address:
 
-    * [https://dd.weather.gc.ca/today/hurricanes](https://dd.weather.gc.ca/today/hurricanes)
+* [https://dd.weather.gc.ca/today/hurricanes](https://dd.weather.gc.ca/today/hurricanes)
 
 ## File name nomenclature
 
