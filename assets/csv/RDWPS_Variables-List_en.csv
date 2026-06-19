@@ -15,3 +15,6 @@ Significant wave height of first swell partition,SWHFSWEL,Surface,m
 Significant wave height of second swell partition,SWHSSWEL,Surface,m
 u-component of wind,UGRD,10 m Above Ground Level,m/s
 v-component of wind,VGRD,10 m Above Ground Level,m/s
+Mean direction of combined wind waves and swell,WWSDIR,Surface,Degree true
+u-component Surface Stokes Drift,USSD,Surface,m/s
+v-component Surface Stokes Drift,VSSD,Surface,m/s

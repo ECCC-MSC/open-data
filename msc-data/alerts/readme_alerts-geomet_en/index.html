@@ -128,11 +128,11 @@
             
             <li class="nav-item" data-level="1"><a href="#weather-alerts-data-available-on-msc-geomet" class="nav-link">Weather alerts data available on MSC GeoMet</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#access-to-the-geospatial-web-services" class="nav-link">Access to the geospatial web services</a>
+            <li class="nav-item" data-level="2"><a href="#web-map-service-wms" class="nav-link">Web Map Service (WMS)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#usage" class="nav-link">Usage</a>
+            <li class="nav-item" data-level="2"><a href="#ogc-api-features" class="nav-link">OGC-API - Features</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -156,7 +156,7 @@
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_alerts_en/">Alerts</a> &gt; Alerts on MSC GeoMet</p>
 <h1 id="weather-alerts-data-available-on-msc-geomet">Weather alerts data available on MSC GeoMet</h1>
 <p>MSC GeoMet provides access to the weather alerts layer. Users can build mobile apps, create interactive web maps, and display and animate MSC data in desktop software.</p>
-<h2 id="access-to-the-geospatial-web-services">Access to the geospatial web services</h2>
+<h2 id="web-map-service-wms">Web Map Service (WMS)</h2>
 <p>The weather alerts layer is <a href="../../../msc-geomet/readme_en/">available on GeoMet-Weather via the Web Map Service (WMS) standard</a>.</p>
 <p>Example of a web map configured to display the <code>Current-Alerts</code> layer served by MSC GeoMet:</p>
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
@@ -186,22 +186,47 @@
     </div>
 </div>
 
-<h2 id="usage">Usage</h2>
+<p><a href="../../../msc-animet/readme_en/">MSC AniMet</a> is a map viewer that connects to GeoMet web map services and OGC APIs to animate and share interactive map views. The <a href="https://eccc-msc.github.io/msc-animet/?layers=Current-Alerts;0.75;0;1;0;1&amp;extent=-14803725,2877875,-5233783,11845857&amp;overlays=Boundaries">Current-Alerts</a> layer is available for visualization in AniMet.</p>
+<h3 id="usage">Usage</h3>
 <p>The <a href="../../../usage/readme_en/">usage overview page</a> provides generic information on using these services with desktop software, mobile apps, interactive web maps and direct access. Please refer to the <a href="../../../usage/tutorials_en/">tutorials</a> and <a href="../../../msc-geomet/readme_en/#available-ogc-standards">technical documentation for MSC GeoMet geospatial web services</a> for detailed information. See also the <a href="../readme_alerts_en/">main weather alerts data page</a> which links to additional information on weather alerts.</p>
 <h3 id="available-layers">Available layers</h3>
-<p>There is one main weather alerts layer with all four types of alerts (warning, watch, statement, advisory). </p>
+<p>There is one main weather alerts layer with all four types of alerts:</p>
+<ul>
+<li>Warning</li>
+<li>Watch</li>
+<li>Statement</li>
+<li>Advisory</li>
+</ul>
 <h3 id="usage-tips">Usage tips</h3>
-<p>WMS styles:</p>
+<p><strong>WMS styles:</strong></p>
 <ul>
 <li>The list of available WMS styles is provided in the WMS GetCapabilities response (<a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=Current-Alerts">example of a WMS GetCapabilities request</a>)</li>
 <li>Furthermore, users can request layers with their own custom styles with the Styled Layer Descriptor (SLD) standard, please refer to the <a href="../../../msc-geomet/wms_en#handling-styles">SLD technical documentation</a></li>
 </ul>
-<p>Legends:</p>
+<p><strong>Legends:</strong></p>
 <ul>
 <li>Legends are available for every WMS style. Details are provided in <a href="../../../msc-geomet/wms_en#wms-getlegendgraphic">the WMS legend technical documentation</a></li>
-<li>Legend retrieval request example: <code>https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Current-Alerts</code></li>
+<li><strong>Legend retrieval request example:</strong>
+<a href="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Current-Alerts">https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Current-Alerts</a></li>
 </ul>
 <p><img alt="The Current-Alerts WMS legend" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Current-Alerts" /></p>
+<h2 id="ogc-api-features">OGC-API - Features</h2>
+<p>Weather alerts are <a href="https://api.weather.gc.ca/collections/weather-alerts?lang=en">available on GeoMet-OGC-API</a> via the <code>OGC-API - Features</code> standard.</p>
+<p>It is possible <a href="../../../msc-geomet/ogc_api_en/#ogc-api-advanced-filtering-with-cql2">filter alerts using CQL2</a>.</p>
+<ul>
+<li>
+<p><strong>Filter alerts for Alberta (AB):</strong>
+<a href="https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.province=AB">https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.province=AB</a></p>
+</li>
+<li>
+<p><strong>Filter for yellow warning alerts:</strong>
+<a href="https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_en=yellow">https://api.weather.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_en=yellow</a></p>
+</li>
+<li>
+<p><strong>Filter alerts intersecting a polygon:</strong>
+<a href="https://api.weather.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))">https://api.weather.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))</a></p>
+</li>
+</ul>
 <h2 id="support">Support</h2>
 <p>The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcement-mailing-list">Announcement mailing list</h2>

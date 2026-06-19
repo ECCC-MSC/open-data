@@ -155,134 +155,17 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_hurricanes_en/">Hurricane trajectories</a> &gt; Hurricane trajectories on MSC Datamart</p>
 <h1 id="data-of-the-hurricane-trajectories">Data of the hurricane trajectories</h1>
-<p>This page describes the data of the <a href="../readme_hurricanes_en/">hurricane trajectories</a> available on the MSC Datamart in shapefile and GeoJSON format</p>
-<p>There is four shapefiles (*.shp) formats that are produced and include each a 6-hour forecast bulletin when storms of tropical origin threatens or risks to threaten Canadian territory.</p>
-<p>NOTES:</p>
-<ul>
-<li>Hurricane tracks in the Atlantic region, from the <a href="https://www.nhc.noaa.gov/">NOAA National Hurricane Center</a> are republished by the <a href="https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html">Canadian Hurricane Centre</a> and are also available in GeoJSON format (but not in Shapefile format).</li>
-<li>Data in GeoJSON format is currently shared as experimental data because the format used does not comply with the latest <a href="https://datatracker.ietf.org/doc/html/rfc7946">RFC7946</a> specifications. Once the format has been corrected in autumn 2025, this data will be hosted on the MSC Datamart as operational data and will replace the shapefile data. An announcement will be made via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info">dd_info</a> mailing list.</li>
-</ul>
+<p>This page describes the data of the <a href="../readme_hurricanes_en/">hurricane trajectories</a> available on the MSC Datamart in GeoJSON format when storms of tropical origin threatens or risks to threaten Canadian territory.</p>
+<p>Hurricane tracks in the Atlantic region, from the <a href="https://www.nhc.noaa.gov/">NOAA National Hurricane Center</a> are republished by the <a href="https://www.canada.ca/en/environment-climate-change/services/hurricane-forecasts-facts/products.html">Canadian Hurricane Centre</a> and are also available in GeoJSON format.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
-<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to shapefile or GeoJSON files, according to the selected format.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access it with a standard browser. In this case, we obtain a list of links giving access to GeoJSON files.</p>
+<p>Data can be found on the MSC Datamart at this address:</p>
 <ul>
-<li>
-<p><strong>Data in shapefile format</strong> can be found at this address:</p>
-<ul>
-<li><a href="https://dd.weather.gc.ca/today/trajectoires/hurricane/shapefile">https://dd.weather.gc.ca/today/trajectoires/hurricane/shapefile/{NAME}</a></li>
-</ul>
-</li>
-</ul>
-<p>With {NAME} : hurricane name in uppercase (e.g. 'BERTHA')</p>
-<ul>
-<li>
-<p><strong>Data in GeoJSON format</strong> can be found on the MSC testing data repository DD-Alpha, at this address:</p>
-<ul>
-<li><a href="https://dd.alpha.weather.gc.ca/hurricanes">https://dd.alpha.weather.gc.ca/hurricanes</a></li>
-</ul>
-</li>
+<li><a href="https://dd.weather.gc.ca/today/hurricanes">https://dd.weather.gc.ca/today/hurricanes</a></li>
 </ul>
 <h2 id="file-name-nomenclature">File name nomenclature</h2>
 <p>File naming convention is:</p>
-<ul>
-<li><strong>Data in shapefile format</strong></li>
-</ul>
-<p><code>{YYYYMMDD}_{HHMM}Z_{NAME}.{TYPE}.shp</code></p>
-<p>where:</p>
-<ul>
-<li><strong>YYYYMMDD</strong> : Forecast issuance date</li>
-<li><strong>HHMM</strong> : Time in UTC </li>
-<li><strong>Z</strong> : Constant string, indicating Zulu time (UTC code name)</li>
-<li><strong>NAME</strong> : Hurricane name (e.g. BERTHA)</li>
-<li>
-<p><strong>TYPE</strong> : Type of shapefile:</p>
-<ul>
-<li>"pts" - The forecast locations (points) </li>
-<li>"lin" - The line segments connecting forecast track points</li>
-<li>"rad" - Contains forecast wind radii information (wind quadrants)</li>
-<li>"err" - Contains information on track forecast error ("error cone")</li>
-</ul>
-</li>
-</ul>
-<p>When querying the points (pts) shapefile, the contents of each column are given as follows:</p>
-<table>
-<thead>
-<tr>
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ADVDATE</td>
-<td>Forecast issue time YYMMDD/HHMM format (UTC)</td>
-</tr>
-<tr>
-<td>BASIN</td>
-<td>Region - 'al' for Atlantic (always 'al' for Canadian Hurricane Centre)</td>
-</tr>
-<tr>
-<td>DATELBL</td>
-<td>Label to use on a map</td>
-</tr>
-<tr>
-<td>ERRCT</td>
-<td>Track forecast error radius in nautical miles which, when mapped, represents the zone/cone of average uncertainty in the track (storm centre) forecast</td>
-</tr>
-<tr>
-<td>LAT</td>
-<td>Latitude of storm centre position</td>
-</tr>
-<tr>
-<td>LON</td>
-<td>Longitude of storm centre position</td>
-</tr>
-<tr>
-<td>MAXWND</td>
-<td>Intensity - maximum sustained wind in knots (nautical miles per hour).  To get km/h, multiply by 1.84</td>
-</tr>
-<tr>
-<td>MSLP</td>
-<td>Minimum central pressure in millibars</td>
-</tr>
-<tr>
-<td>RXXYY Columns</td>
-<td>Twelve columns represent wind radii (R) in nautical miles for 3 primary forcast categories: 34 (34 kts gale-force winds), 48 (48 kts storm-force winds), and 64 (64 kts hurricane-force wind speed). NE, SE, SW, NW represent the 4 primary geographcal quadrants around the storm.</td>
-</tr>
-<tr>
-<td>STORMNAME</td>
-<td>Same as in the filename - e.g. BERTHA</td>
-</tr>
-<tr>
-<td>STORMTYPE</td>
-<td>Storm type at forecast issue time: TD = tropical depression; TS = tropical storm; HU = hurricane; PT = post-tropical</td>
-</tr>
-<tr>
-<td>TAU</td>
-<td>Forecast hour from issue time. e.g. 48 = 48 hours / 2 days</td>
-</tr>
-<tr>
-<td>TCDVLP</td>
-<td>Storm status at forecast time TAU (TD,TS,HU,PT)</td>
-</tr>
-<tr>
-<td>TIMEZONE</td>
-<td>Local time zone reflecting geographical region of an active storm</td>
-</tr>
-<tr>
-<td>VALIDTIME</td>
-<td>Time that the forecast at TAU hours is valid for. DD/HHMM format (UTC)</td>
-</tr>
-<tr>
-<td>TIMESTAMP</td>
-<td>ISO format for the VALIDTIME. Format:  YYYY-MM-DDTHH:MMZ</td>
-</tr>
-</tbody>
-</table>
-<p>When querying the 'lin' shapefile, the elements have the same definition as in the 'pts' file.</p>
-<ul>
-<li><strong>Data in GeoJSON format</strong></li>
-</ul>
 <p><code>{YYYYMMDD}T{HHmm}Z_MSC_Hurricane_{NAME}.json</code></p>
 <p>Where :</p>
 <ul>

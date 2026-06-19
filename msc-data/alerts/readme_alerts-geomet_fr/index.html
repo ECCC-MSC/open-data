@@ -128,11 +128,11 @@
             
             <li class="nav-item" data-level="1"><a href="#donnees-des-alertes-meteo-disponibles-sur-geomet-du-smc" class="nav-link">Données des alertes météo disponibles sur GeoMet du SMC</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#acces-aux-services-web-geospatiaux" class="nav-link">Accès aux services web géospatiaux</a>
+            <li class="nav-item" data-level="2"><a href="#web-map-service-wms" class="nav-link">Web Map Service (WMS)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#utilisation" class="nav-link">Utilisation</a>
+            <li class="nav-item" data-level="2"><a href="#ogc-api-features" class="nav-link">OGC-API - Features</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -156,13 +156,13 @@
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_alerts_fr/">Alertes</a> &gt; Alertes sur GeoMet du SMC</p>
 <h1 id="donnees-des-alertes-meteo-disponibles-sur-geomet-du-smc">Données des alertes météo disponibles sur GeoMet du SMC</h1>
 <p>GeoMet du SMC donne accès à la couche des alertes météo. Les usagers peuvent développer des applications mobiles, créer des cartes interactives en-ligne, ainsi que visualiser et animer les données du SMC dans des logiciels de bureau.</p>
-<h2 id="acces-aux-services-web-geospatiaux">Accès aux services web géospatiaux</h2>
+<h2 id="web-map-service-wms">Web Map Service (WMS)</h2>
 <p>La couche des alertes météo est <a href="../../../msc-geomet/readme_fr/">disponible sur GeoMet-Météo par le biais du standard WMS (Web Map Service)</a>.</p>
 <p>Exemple de carte interactive présentant la couche <code>Current-Alerts</code> provenant de GeoMet du SMC :</p>
 <div id="map" style="height: 400px; margin-bottom: 1rem; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours"/>
+    <img id="legend-img" style="display: flex; max-width: 150px;" src="https://geo.meteo.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Current-Alerts&format=image/png&STYLE=Alertes-en-cours"/>
   </div>
 </div>
 </div>
@@ -185,22 +185,47 @@
     </div>
 </div>
 
-<h2 id="utilisation">Utilisation</h2>
+<p><a href="../../../msc-animet/readme_fr/">AniMet du SMC</a> est un visualisateur se connectant aux services web de GeoMet et aux API pour animer et partager des vues interactives. La couche <a href="https://eccc-msc.github.io/msc-animet/?layers=Current-Alerts;0.75;0;1;0;1&amp;extent=-14803725,2877875,-5233783,11845857&amp;overlays=Boundaries">Current-Alerts</a> est disponible pour visualisation dans AniMet.</p>
+<h3 id="utilisation">Utilisation</h3>
 <p>La page de <a href="../../../usage/readme_fr/">l'aperçu de l'utilisation</a> présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux <a href="../../../usage/tutorials_fr/">tutoriels</a> et à <a href="../../../msc-geomet/readme_fr/#standards-disponibles">la documentation technique sur les services web géospatiaux GeoMet du SMC</a> pour de l'information détaillée. Voir également la <a href="../readme_alerts_fr/">page d'accueil des données des alertes météo</a> qui pointe vers de l'information additionnelle sur les alertes météo.</p>
 <h3 id="couches-disponibles">Couches disponibles</h3>
-<p>Il y a une seule couche principale d'alertes météo comprenant les quatre types d'alertes (avertissement, veille, bulletin, avis).</p>
-<h3 id="conseils-dutilisation">Conseils d'utilisation</h3>
-<p>Styles WMS :</p>
+<p>Il y a une seule couche principale d'alertes météo comprenant les quatre types d'alertes :</p>
 <ul>
-<li>La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities (<a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;lang=fr&amp;request=GetCapabilities&amp;layer=Current-Alerts">exemple d'une requête WMS GetCapabilites</a>)</li>
+<li>Avertissement</li>
+<li>Veille</li>
+<li>Bulletin</li>
+<li>Avis</li>
+</ul>
+<h3 id="conseils-dutilisation">Conseils d'utilisation</h3>
+<p><strong>Styles WMS :</strong></p>
+<ul>
+<li>La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities (<a href="https://geo.meteo.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;lang=fr&amp;request=GetCapabilities&amp;layer=Current-Alerts">exemple d'une requête WMS GetCapabilites</a>)</li>
 <li>Par ailleurs, les utilisateurs peuvent visualiser les couches avec leurs propres styles en utilisant le standard Styled Layer Descriptor (SLD). Veuillez vous référer à la <a href="../../../msc-geomet/wms_fr#specification-des-styles">documentation technique sur le SLD</a></li>
 </ul>
-<p>Légendes :</p>
+<p><strong>Légendes :</strong></p>
 <ul>
 <li>Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la <a href="../../../msc-geomet/wms_fr#wms-getlegendgraphic">documentation technique des légendes WMS</a></li>
-<li>Exemple d'une requête pour récupérer une légende : <code>https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Alertes-en-cours</code></li>
+<li><strong>Exemple d'une requête pour récupérer une légende :</strong>
+<a href="https://geo.meteo.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Alertes-en-cours">https://geo.meteo.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Alertes-en-cours</a></li>
 </ul>
-<p><img alt="La légende WMS Alertes-en-cours" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Alertes-en-cours" /></p>
+<p><img alt="La légende WMS Alertes-en-cours" src="https://geo.meteo.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=Current-Alerts&amp;format=image/png&amp;STYLE=Alertes-en-cours" /></p>
+<h2 id="ogc-api-features">OGC-API - Features</h2>
+<p>Les alertes météorologiques sont <a href="https://api.meteo.gc.ca/collections/weather-alerts?lang=fr">disponibles sur GeoMet-OGC-API</a> via la norme <code>OGC API - Features</code>.</p>
+<p>Il est possible de <a href="../../../msc-geomet/ogc_api_fr/#ogc-api-filtrage-avance-avec-cql2">filter les alertes à l'aide de CQL2</a>.</p>
+<ul>
+<li>
+<p><strong>Filtrer des alertes pour l'Alberta (AB) :</strong>
+<a href="https://api.meteo.gc.ca/collections/weather-alerts/items?filter=properties.province=AB">https://api.meteo.gc.ca/collections/weather-alerts/items?filter=properties.province=AB</a></p>
+</li>
+<li>
+<p><strong>Filtrer pour les alertes d'avertissements jaunes :</strong>
+<a href="https://api.meteo.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_fr=jaune">https://api.meteo.gc.ca/collections/weather-alerts/items?filter=properties.alert_type=warning AND properties.risk_colour_fr=jaune</a></p>
+</li>
+<li>
+<p><strong>Filter les alertes intersectant un polygone:</strong>
+<a href="https://api.meteo.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))">https://api.meteo.gc.ca/collections/weather-alerts/items?filter=INTERSECTS(geometry, POLYGON((-56 47,-55 47,-55 48,-56 48,-56 47)))</a></p>
+</li>
+</ul>
 <h2 id="support">Support</h2>
 <p>Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">communiquer avec nous</a>.</p>
 <h2 id="liste-dinformation">Liste d'information</h2>

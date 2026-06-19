@@ -158,11 +158,11 @@
 <p>MSC GeoMet provides access to data produced by the High Resolution Ensemble Precipitation Analysis (HREPA). Users can build mobile apps, create interactive web maps, and display and animate weather radar layers in desktop software.</p>
 <h2 id="access-to-the-geospatial-web-services">Access to the geospatial web services</h2>
 <p>The HREPA data is <a href="../../../msc-geomet/readme_en/#available-ogc-standards">available on GeoMet-Weather via the Web Map Service (WMS) and Web Coverage Service (WCS) standards</a>.</p>
-<p>Example of a web map configured to display the <a href="https://geo.weather.gc.ca">Precip-Accum06h-Pct25</a> layer served by MSC GeoMet:</p>
+<p>Example of a web map configured to display the <a href="https://geo.weather.gc.ca">HREPA.6P_2.5km_PCT25</a> layer served by MSC GeoMet:</p>
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&REQUEST=GetLegendGraphic&FORMAT=image/png&LAYER=GEPS.DIAG.12_PRMM.ERGE10&STYLE=&TRANSPARENT=true"/>
+    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=HREPA.6P_2.5km_PCT25&format=image/png&STYLE=PRECIPMM&lang=en"/>
   </div>
 </div>
 </div>
@@ -183,17 +183,17 @@
 <p>To see which HREPA layers are served via MSC GeoMet consult the service's <a href="https://geo.weather.gc.ca/geomet?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities">WMS GetCapabilities document</a>. </p>
 <p>Four layers are available for HREPA:</p>
 <ul>
-<li>pr [mm]: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename)</li>
-<li>cfia [unitless]: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) </li>
-<li>q025 [mm]: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) </li>
-<li>q075[mm]: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) </li>
+<li><strong>pr [mm]</strong>: 25 ensemble members of the 6-hour accumulation precipitation ensemble, the first member corresponds to the control member (without perturbations) available in files containing Precip-Accum06h substring in the filename.</li>
+<li><strong>cfia [unitless]</strong>: Confidence Index of the Analysis, only for the control member (available in files containing Precip-Accum06h substring in the filename) </li>
+<li><strong>q025 [mm]</strong>: 25th percentile estimated on all 25 members of the 6-hour precipitation accumulations  (available in files containing  Precip-Accum06h-Pct25 substring in the filename) </li>
+<li><strong>q075[mm]</strong>: 75th percentile estimated on all 25 members of the 6-hour precipitation accumulations (available in files containing  Precip-Accum06h-Pct75 substring in the filename) </li>
 </ul>
 <p>Desktop GIS software such as QGIS also makes it easy to <a href="../../../usage/tutorial_WMS_QGIS_en/">navigate the WMS Get Capabilities document as a layer tree</a>.</p>
 <h3 id="usage-tips">Usage tips</h3>
 <p>Retrieving the available model runs and forecast hours available for a given HREPA layer:</p>
 <ul>
 <li>Users can use the <code>layer</code> query parameter in WMS GetCapabilities requests to point to a specific layer and retrieve a smaller XML payload with up-to-date temporal dimensions (see the <code>&lt;Dimension&gt;</code> tags). </li>
-<li>Example for the 20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc file that provides the Precip-Accum06h-Pct25 layer [mm] : https://geo.weather.gc.ca/geomet?lang=fr&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=20220214T06Z_MSC_HREPA_Precip-Accum06h-Pct25_Sfc_RLatLon0.0225.nc</li>
+<li>Example for the <code>HREPA.6P_2.5km_PCT25</code> layer [mm] : <a href="https://geo.weather.gc.ca/geomet?lang=en&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=HREPA.6P_2.5km_PCT25">https://geo.weather.gc.ca/geomet?lang=en&amp;service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=HREPA.6P_2.5km_PCT25</a></li>
 <li>Additional information is available in the <a href="../../../msc-geomet/wms_en#handling-time">handling time with WMS section</a></li>
 </ul>
 <p>WMS styles:</p>
@@ -204,9 +204,9 @@
 <p>Legends:</p>
 <ul>
 <li>Legends are available for every WMS style. Details are provided in <a href="../../../msc-geomet/wms_en#wms-getlegendgraphic">the WMS legend technical documentation</a>.</li>
-<li>Example of retrieving a layer's legend via a GetLegendGraphic request: </li>
+<li>Example of retrieving a layer's legend via a GetLegendGraphic request: <a href="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=HREPA.6P_2.5km_PCT25&amp;format=image/png&amp;STYLE=PRECIPMM&amp;lang=en">https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=HREPA.6P_2.5km_PCT25&amp;format=image/png&amp;STYLE=PRECIPMM&amp;lang=en</a></li>
 </ul>
-<p><img alt="The GEPS.DIAG.12_PRMM.ERGE10 REPS_PROB-LINEAR WMS legend" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=GEPS.DIAG.12_PRMM.ERGE10&amp;format=image/png&amp;STYLE=REPS_PROB-LINEAR" /></p>
+<p><img alt="The HREPA.6P_2.5km_PCT25 PRECIPMM WMS legend" src="https://geo.weather.gc.ca/geomet?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=HREPA.6P_2.5km_PCT25&amp;format=image/png&amp;STYLE=PRECIPMM&amp;lang=en" /></p>
 <h2 id="support">Support</h2>
 <p>The MSC GeoMet services are operational 24/7. User support is provided on a best-effort basis during normal business hours. If you have any questions about these services, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
 <h2 id="announcement-mailing-list">Announcement mailing list</h2>
@@ -243,12 +243,12 @@
     js.type = "text/javascript";
     if (isIE())
     {
-        js.src = "../../../js/geps_ie.js";
+        js.src = "../../../js/hrepa_ie.js";
         document.getElementById("controller").setAttribute("hidden", true);
     }
     else
     {
-        js.src = "../../../js/geps.js";
+        js.src = "../../../js/hrepa.js";
     }
     head.appendChild(js);
 </script></div>

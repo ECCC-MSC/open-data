@@ -186,7 +186,7 @@
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RADAR_1KM_RRAI&format=image/png&STYLE=Radar-Rain_Dis-14colors_Fr"/>
   </div>
 </div>
 </div>
@@ -209,18 +209,18 @@
 <p>GeoMet du SMC peut également servir des images sur demande par le biais d'une requête WMS GetMap. Voici des exemples.</p>
 <h4 id="exemple-1-temperature-de-surface-du-systeme-global-de-prevision-deterministe-sgpd">Exemple 1 - Température de surface du Système global de prévision déterministe (SGPD)</h4>
 <p>La requête WMS GetMap suivante retourne une image de la couche de température de l'air du Système global de prévision déterministe (SGPD). Cette image est générée sur demande au moment de la requête.</p>
-<pre><code>https://geo.weather.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
 &amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS_15km_AirTemp_2m&amp;FORMAT=image/png
 </code></pre>
 <p>Retourne :</p>
-<p><img alt="Température de surface du Système global de prévision déterministe (SGPD)" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS_15km_AirTemp_2m&amp;FORMAT=image/png" /></p>
+<p><img alt="Température de surface du Système global de prévision déterministe (SGPD)" src="https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=GDPS_15km_AirTemp_2m&amp;FORMAT=image/png" /></p>
 <h4 id="exemple-2-salinite-de-leau-de-la-mer-du-systeme-global-de-prevision-ocean-glace-sgpog">Exemple 2 - Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)</h4>
 <p>La requête WMS GetMap suivante retourne une image de la couche de salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG). Cette image est générée sur demande au moment de la requête.</p>
-<pre><code>https://geo.weather.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
+<pre><code>https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180
 &amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=OCEAN.GIOPS.2D_SALW&amp;FORMAT=image/png
 </code></pre>
 <p>Retourne :</p>
-<p><img alt="Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)" src="https://geo.weather.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=OCEAN.GIOPS.2D_SALW&amp;FORMAT=image/png" /></p>
+<p><img alt="Salinité de l'eau de la mer du Système Global de Prévision Océan-Glace (SGPOG)" src="https://geo.meteo.gc.ca/geomet?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetMap&amp;BBOX=-90,-180,90,180&amp;CRS=EPSG:4326&amp;WIDTH=600&amp;HEIGHT=301&amp;LAYERS=OCEAN.GIOPS.2D_SALW&amp;FORMAT=image/png" /></p>
 <h4 id="survol-des-parametres-wms-getmap-utilises-dans-ces-exemples">Survol des paramètres WMS GetMap utilisés dans ces exemples</h4>
 <p>Les exemples ci-dessus précisent certains paramètres et envoient une requête WMS GetMap à GeoMet du SMC. Voici une courte explication de chacun de ces paramètres :</p>
 <ul>
@@ -253,9 +253,9 @@
 </ul>
 </li>
 </ul>
-<p>Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans <a href="../../msc-geomet/wms_fr/#wms-getfeatureinfo">la documentation technique</a>. Voici un exemple de <a href="https://geo.weather.gc.ca/geomet/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetFeatureInfo&amp;QUERY_LAYERS=GDPS_15km_AirTemp_2m&amp;INFO_FORMAT=application/json&amp;i=5&amp;j=5&amp;EXCEPTIONS=xml&amp;LAYERS=GDPS_15km_AirTemp_2m&amp;CRS=EPSG:4326&amp;BBOX=45.50,-73.56,45.51,-73.55&amp;WIDTH=10&amp;HEIGHT=10">requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada</a>.</p>
-<p>Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une <a href="https://api.weather.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049">requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River</a> qui retourne les données correspondantes en tant que fichier GeoJSON.</p>
-<p>Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une <a href="https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=RDPA.6F_PR&amp;SUBSETTINGCRS=EPSG:4326&amp;FORMAT=image/netcdf&amp;TIME=2019-05-14T12:00:00Z">requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié</a>. <a href="../tutorial_gdal/tutorial_gdal_fr/">Un tutoriel est disponible pour sauvegarder la sortie d'une requête WCS sur le disque</a>. Une astuce pour construire des requêtes WCS est d'utiliser <a href="https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation">l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD</a> et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.</p>
+<p>Les données brutes à des lieux géographiques spécifiques peuvent être récupérées par une requête Web Map Service (WMS) GetFeatureInfo. Les détails sont disponibles dans <a href="../../msc-geomet/wms_fr/#wms-getfeatureinfo">la documentation technique</a>. Voici un exemple de <a href="https://geo.meteo.gc.ca/geomet/?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetFeatureInfo&amp;QUERY_LAYERS=GDPS_15km_AirTemp_2m&amp;INFO_FORMAT=application/json&amp;i=5&amp;j=5&amp;EXCEPTIONS=xml&amp;LAYERS=GDPS_15km_AirTemp_2m&amp;CRS=EPSG:4326&amp;BBOX=45.50,-73.56,45.51,-73.55&amp;WIDTH=10&amp;HEIGHT=10">requête WMS GetFeatureInfo pour la temperature du Système global de prévision déterministe (SGPD) pour Montréal, Canada</a>.</p>
+<p>Les données brutes pour des données vectorielles peuvent être récupérées par une requête OGC API - Features (WFS 3). Exemple d'une <a href="https://api.meteo.gc.ca/collections/hydrometric-daily-mean/items?STATION_NUMBER=05PF049">requête WFS 3 pour les données des moyennes quotidiennes hydrométriques à la station Winnipeg River</a> qui retourne les données correspondantes en tant que fichier GeoJSON.</p>
+<p>Les données brutes pour des données matricielles peuvent être récupérées par une requête Web Coverage Service (WCS). Exemple d'une <a href="https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=RDPA.6F_PR&amp;SUBSETTINGCRS=EPSG:4326&amp;FORMAT=image/netcdf&amp;TIME=2019-05-14T12:00:00Z">requête WCS 2 pour l'Analyse régionale de déterministe de précipitation (ARPD) au format netCDF à un pas de temps spécifié</a>. <a href="../tutorial_gdal/tutorial_gdal_fr/">Un tutoriel est disponible pour sauvegarder la sortie d'une requête WCS sur le disque</a>. Une astuce pour construire des requêtes WCS est d'utiliser <a href="https://changements-climatiques.canada.ca/donnees-climatiques/#/analyse-regionale-deterministe-precipitation">l'Outil d'extraction de données climatiques du Centre canadien des services climatiques pour la couche ARPD</a> et remplacer la valeur COVERAGEID de RDPA.* pour une autre couche disponible.</p>
 <h3 id="telechargement-de-donnees-brutes">Téléchargement de données brutes</h3>
 <p>Les données brutes du SMC peuvent être <a href="../../msc-datamart/amqp_fr/">automatiquement récupérées du Datamart du SMC dès quelles deviennent disponibles par le biais du protocol Advanced Message Queuing Protocol (AMQP)</a>. Alternativement, les données brutes peuvent également être téléchargées directement sur le web sur le serveur <a href="../../msc-datamart/readme_fr/">Datamart du SMC</a>.</p>
 <h3 id="manipuler-les-donnees-brutes-a-partir-de-la-ligne-de-commandes">Manipuler les données brutes à partir de la ligne de commandes</h3>

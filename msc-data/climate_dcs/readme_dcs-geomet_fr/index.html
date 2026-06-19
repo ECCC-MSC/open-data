@@ -176,11 +176,11 @@
 </ul>
 </li>
 </ul>
-<p>Exemple de carte interactive présentant la couche <a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;lang=fr&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50">DCS.PR.RCP26.YEAR.2021-2040_PCTL50</a> des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :</p>
+<p>Exemple de carte interactive présentant la couche <a href="https://geo.meteo.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;lang=fr&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50">DCS.PR.RCP26.YEAR.2021-2040_PCTL50</a> des résultats statistiquement réduits à l'échelle provenant de GeoMet du SMC :</p>
 <div id="map" style="height: 400px; position: relative">
   <div id="legend-popup">
   <div id="legend-popup-content">
-    <img id="legend-img" src="https://geo.weather.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&format=image/png&STYLE=PRECIP-ANOMALY"/>
+    <img id="legend-img" src="https://geo.meteo.gc.ca/geomet-climate?lang=fr&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&format=image/png&STYLE=PRECIP-ANOMALY"/>
   </div>
 </div>
 </div>
@@ -192,12 +192,12 @@
 <h2 id="utilisation">Utilisation</h2>
 <p>La page de <a href="../../../usage/readme_fr/">l'aperçu de l'utilisation</a> présente l'information de base sur l'utilisation de ces services avec des logiciels de bureau, des applications mobiles, les cartes interactives en ligne ainsi que l'accès direct. Veuillez vous référer aux <a href="../../../usage/tutorials_fr/">tutoriels</a> et à <a href="../../../msc-geomet/readme_fr/#standards-disponibles">la documentation technique sur les services web géospatiaux GeoMet du SMC</a> pour de l'information détaillée.</p>
 <h3 id="couches-disponibles">Couches disponibles</h3>
-<p>Pour savoir quelles couches des résultats statistiquement réduits à l'échelle sont servies par GeoMet du SMC, consultez le <a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;lang=f">document WMS GetCapabilities</a>.</p>
+<p>Pour savoir quelles couches des résultats statistiquement réduits à l'échelle sont servies par GeoMet du SMC, consultez le <a href="https://geo.meteo.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;lang=f">document WMS GetCapabilities</a>.</p>
 <p>Les logiciels SIG de bureau tels que QGIS permettent également de <a href="../../../usage/tutorial_WMS_QGIS_fr/">naviguer dans le document WMS GetCapabilities sous la forme d'une arborescence de couches</a>.</p>
 <h3 id="conseils-dutilisation">Conseils d'utilisation</h3>
 <p>Récupération de la liste des derniers pas de temps disponibles :</p>
 <ul>
-<li>Les utilisateurs peuvent ajouter le paramètre <code>layer</code> à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises <code>&lt;Dimension&gt;</code>). Exemple : <a href="https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50">https://geo.weather.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50</a>.</li>
+<li>Les utilisateurs peuvent ajouter le paramètre <code>layer</code> à une requête WMS GetCapabilities afin de pointer à une couche spécifique et obtenir une réponse XML plus simple avec les dimensions temporelles à jour (voir les balises <code>&lt;Dimension&gt;</code>). Exemple : <a href="https://geo.meteo.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50">https://geo.meteo.gc.ca/geomet-climate?service=WMS&amp;version=1.3.0&amp;request=GetCapabilities&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50</a>.</li>
 <li>Davantage d'information est disponible dans la section sur <a href="../../../msc-geomet/wms_fr#specification-du-temps">la spécification du temps avec les services WMS</a>.</li>
 </ul>
 <p>Styles WMS :</p>
@@ -208,9 +208,9 @@
 <p>Légendes :</p>
 <ul>
 <li>Les légendes sont disponibles pour tous les styles WMS. Les détails sont disponibles dans la <a href="../../../msc-geomet/wms_fr#wms-getlegendgraphic">documentation technique des légendes WMS</a>.</li>
-<li>Exemple d'une requête pour récupérer une légende : <a href="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY">https://geo.weather.gc.ca/geomet-climate?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY</a>.</li>
+<li>Exemple d'une requête pour récupérer une légende : <a href="https://geo.meteo.gc.ca/geomet-climate?lang=fr&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY">https://geo.meteo.gc.ca/geomet-climate?lang=fr&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY</a>.</li>
 </ul>
-<p><img alt="La légende PRECIP-ANOMALY pour la couche DCS.PR.RCP26.YEAR.2021-2040_PCTL50" src="https://geo.weather.gc.ca/geomet-climate?version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY" /></p>
+<p><img alt="La légende PRECIP-ANOMALY pour la couche DCS.PR.RCP26.YEAR.2021-2040_PCTL50" src="https://geo.meteo.gc.ca/geomet-climate?lang=fr&amp;version=1.3.0&amp;service=WMS&amp;request=GetLegendGraphic&amp;sld_version=1.1.0&amp;layer=DCS.PR.RCP26.YEAR.2021-2040_PCTL50&amp;format=image/png&amp;STYLE=PRECIP-ANOMALY" /></p>
 <h2 id="support">Support</h2>
 <p>Les services GeoMet du SMC sont opérationnels 24/7. Le support aux usagers est offert sur la base du meilleur effort durant les heures de travail normales. Les usagers désirant du support sont invités à <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">communiquer avec nous</a>.</p>
 <h2 id="liste-dinformation">Liste d'information</h2>

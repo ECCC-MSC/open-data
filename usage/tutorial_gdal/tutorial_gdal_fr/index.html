@@ -1316,11 +1316,11 @@ gdalinfo --version</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">bash</span>
 
-<span class="n">curl</span> <span class="s2">&quot;https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff&quot;</span> <span class="o">&gt;</span> <span class="n">CMC_glb_TMP</span><span class="o">.</span><span class="n">tif</span>
+<span class="n">curl</span> <span class="s2">&quot;https://geo.meteo.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff&quot;</span> <span class="o">&gt;</span> <span class="n">CMC_glb_TMP</span><span class="o">.</span><span class="n">tif</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">%%bash
 
-curl "https://geo.weather.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS_15km_AirTemp_2m&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff" > CMC_glb_TMP.tif </div>
+curl "https://geo.meteo.gc.ca/geomet?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=GDPS_15km_AirTemp_2m&SUBSETTINGCRS=EPSG:4326&SUBSET=x(-120,-85)&SUBSET=y(48,66)&RESOLUTION=x(0.24)&RESOLUTION=y(0.24)&FORMAT=image/tiff" > CMC_glb_TMP.tif </div>
     
         </div>
     </div>

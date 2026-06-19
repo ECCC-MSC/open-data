@@ -12,3 +12,6 @@ Significant height of combined wind waves and swell,HTSGW,Surface,m
 Significant height of wind waves,WVHGT,Surface,m
 Significant wave height of first swell partition,SWHFSWEL,Surface,m
 Significant wave height of second swell partition,SWHSSWEL,Surface,m
+Mean direction of combined wind waves and swell,WWSDIR,Surface,Degree true
+u-component Surface Stokes Drift,USSD,Surface,m/s
+v-component Surface Stokes Drift,VSSD,Surface,m/s

@@ -1187,7 +1187,7 @@ Licensed under the Apache License, Version 2.0.
 <p><a href="../use-case_oafeat-script_en/">In English</a></p>
 <p><img src="https://eccc-msc.github.io/open-data/img_eccc-logo.png" alt="ECCC logo"></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Aperçu de l'utilisation</a> &gt; Requêtes OGC API - Features avec Python (version script)</p>
-<h1 id="cas-dutilisation-recuperation-et-affichage-de-donnees-hydrometriques">Cas d'utilisation : R&#233;cup&#233;ration et affichage de donn&#233;es hydrom&#233;triques<a class="anchor-link" href="#cas-dutilisation-recuperation-et-affichage-de-donnees-hydrometriques">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Les données hydrométriques du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada (ECCC) peuvent être facilement accédées via <a href="https://api.weather.gc.ca/">GeoMet-OGC-API</a>. Les services web <a href="https://eccc-msc.github.io/open-data/msc-geomet/web-services_fr/#ogc-api-features">OGC API - Features</a> disponibles dans GeoMet-OGC-API permettent d'effectuer des requêtes de données géospatiales vectorielles et de récupérer ces données en format GeoJSON. Les fichiers GeoJSON peuvent ensuite être utilisés directement pour réaliser des analyses et afficher les données sur des cartes ou peuvent être soumis à des étapes supplémentaires de traitement de données. Ce cas d'utilisation démontre comment:</p>
+<h1 id="cas-dutilisation-recuperation-et-affichage-de-donnees-hydrometriques">Cas d'utilisation : R&#233;cup&#233;ration et affichage de donn&#233;es hydrom&#233;triques<a class="anchor-link" href="#cas-dutilisation-recuperation-et-affichage-de-donnees-hydrometriques">&#182;</a></h1><h2 id="introduction">Introduction<a class="anchor-link" href="#introduction">&#182;</a></h2><p>Les données hydrométriques du Service météorologique du Canada (SMC) d'Environnement et Changement climatique Canada (ECCC) peuvent être facilement accédées via <a href="https://api.meteo.gc.ca/">GeoMet-OGC-API</a>. Les services web <a href="https://eccc-msc.github.io/open-data/msc-geomet/web-services_fr/#ogc-api-features">OGC API - Features</a> disponibles dans GeoMet-OGC-API permettent d'effectuer des requêtes de données géospatiales vectorielles et de récupérer ces données en format GeoJSON. Les fichiers GeoJSON peuvent ensuite être utilisés directement pour réaliser des analyses et afficher les données sur des cartes ou peuvent être soumis à des étapes supplémentaires de traitement de données. Ce cas d'utilisation démontre comment:</p>
 <ul>
 <li>Effectuer des requêtes et récupérer des données géospatiales vectorielles disponibles dans GeoMet-OGC-API à l'aide de <a href="https://www.python.org/">Python</a></li>
 <li>Afficher des données de séries temporelles en format graphique et tabulaire</li>
@@ -1418,7 +1418,7 @@ time_ = f"{start_date}/{end_date}"</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1434,7 +1434,7 @@ time_ = f"{start_date}/{end_date}"</div>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Récupération des données de stations hydrométriques</span>
-<span class="n">oafeat</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s2">&quot;https://api.weather.gc.ca/&quot;</span><span class="p">)</span>
+<span class="n">oafeat</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s2">&quot;https://api.meteo.gc.ca/&quot;</span><span class="p">)</span>
 <span class="n">station_data</span> <span class="o">=</span> <span class="n">oafeat</span><span class="o">.</span><span class="n">collection_items</span><span class="p">(</span>
     <span class="s2">&quot;hydrometric-stations&quot;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span> <span class="n">STATUS_EN</span><span class="o">=</span><span class="s2">&quot;Active&quot;</span>
 <span class="p">)</span>
@@ -1449,7 +1449,7 @@ time_ = f"{start_date}/{end_date}"</div>
     <span class="p">)</span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt"># Récupération des données de stations hydrométriques
-oafeat = Features("https://api.weather.gc.ca/")
+oafeat = Features("https://api.meteo.gc.ca/")
 station_data = oafeat.collection_items(
     "hydrometric-stations", bbox=bbox, STATUS_EN="Active"
 )
@@ -2035,9 +2035,9 @@ plt.show()</div>
 
 
 
-<div id="6f54612b-6c14-459c-95f5-0004d31ceaae" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="ca6f98e5-d89d-43d5-8d25-9035c682ff40" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('6f54612b-6c14-459c-95f5-0004d31ceaae');
+var element = document.getElementById('ca6f98e5-d89d-43d5-8d25-9035c682ff40');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -3516,9 +3516,9 @@ plt.show()</div>
 
 
 
-<div id="558dbc16-7159-4bc0-afc2-b430ce9ed331" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="52229abe-0f63-470a-8b1a-f6181a8bfd16" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('558dbc16-7159-4bc0-afc2-b430ce9ed331');
+var element = document.getElementById('52229abe-0f63-470a-8b1a-f6181a8bfd16');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
