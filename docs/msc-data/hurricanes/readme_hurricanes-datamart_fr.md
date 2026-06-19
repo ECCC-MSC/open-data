@@ -18,7 +18,7 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont disponibles sur le Datamart du SMC, à cette adresse :
 
-     * [https://dd.meteo.gc.ca/today/hurricanes/](https://dd.meteo.gc.ca/today/hurricanes)
+* [https://dd.meteo.gc.ca/today/hurricanes/](https://dd.meteo.gc.ca/today/hurricanes)
 
 ## Nomenclature des noms de fichiers
 
