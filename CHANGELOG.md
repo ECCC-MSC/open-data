@@ -10,6 +10,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.8
+
+* date: 2026-06-19
+* announcements:
+    * Not announced
+* new content:
+    * Update hurricanes pages (no more shapefiles)
+    * Add GDWPS, GEWPS and RDWPS parameters (variable arrays)
+    * Add alerts in GeoMet-OGC-API
+ * improvements:
+    * Several updates in GeoMet pages
+* bug fixes:
+    * Typo
+
 # 2.10.7
 
 * date: 2026-05-29
