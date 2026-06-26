@@ -68,6 +68,7 @@ Plusieurs outils permettent de découvrir, accéder, s'abonner et télécharger 
 
 * [pywiscat](https://github.com/wmo-im/pywiscat) : fournit un API Python pour exploiter le Global Discovery Catalogue (GDC) de WIS2
 * [pywis-pubsub](https://github.com/wmo-im/pywis-pubsub) : permet de s'abonner et télécharger les données disponibles sur WIS2
+* [WIS2 Downloader](https://world-meteorological-organization.github.io/wis2downloader/fr/index.html)
 
 ## Support
 
