@@ -67,6 +67,7 @@ Numerous tools exist to discover, access, subscribe to and retrieve data on WIS2
 
 * [pywiscat](https://github.com/wmo-im/pywiscat): provides a Pythonic API atop the WIS2 Global Discovery Catalogue (GDC)
 * [pywis-pubsub](https://github.com/wmo-im/pywis-pubsub): provides subscription and download capability of data from WIS2
+* [WIS2 Downloader](https://world-meteorological-organization.github.io/wis2downloader/en/index.html)
 
 ## Support
 
