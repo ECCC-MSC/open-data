@@ -14,11 +14,33 @@ Each hour, a preliminary product is available approximately one hour after the o
 
 ### How to access the data
 
-This data is available from the [MSC Datamart](../../msc-datamart/readme_en.md) raw data server:
+This data is available from the [MSC Datamart](../../msc-datamart/readme_en.md) raw data server and the [MSC GeoMet web services](../../msc-geomet/readme_en.md):
 
-* [GRIB2 data available on the MSC Datamart](readme_rdaqa-datamart_en.md) 
+* [GRIB2 data available on the MSC Datamart](readme_rdaqa-datamart_en.md)
+* [Data available via the GeoMet-Weather geospatial web services](readme_rdaqa-geomet_en.md)
 
-An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
+
+An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available. Example of a web map configured to display the [RDAQA_10km_PM10](https://geo.weather.gc.ca/geomet?service=WMS&version=1.3.0&request=GetCapabilities&layer=RDAQA_10km_PM10) layer served by MSC GeoMet:
+
+
+<div id="map" style="height: 400px; position: relative">
+  <div id="legend-popup">
+  <div id="legend-popup-content">
+    <img id="legend-img" style="display: flex; max-width: 85px;" src="https://geo.weather.gc.ca/geomet?lang=en&version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=RDAQA_10km_PM10&format=image/png&STYLE="/>
+  </div>
+</div>
+</div>
+<div id="controller" role="group" aria-label="Animation controls" style="background: #ececec; padding: 0.5rem;">
+  <button id="fast-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="step-backward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-backward" style="padding: 0rem 1rem"></i></button>
+  <button id="play-pause" class="btn btn-primary btn-sm" type="button"><i class="fa fa-play" style="padding: 0rem 1rem"></i></button>
+  <button id="step-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-step-forward" style="padding: 0rem 1rem"></i></button>
+  <button id="fast-forward" class="btn btn-primary btn-sm" type="button"><i class="fa fa-fast-forward" style="padding: 0rem 1rem"></i></button>
+  <button id="exportmap" class="btn btn-primary btn-sm" type="button"><i class="fa fa-download" style="padding: 0rem 1rem"></i></button>
+  <a id="image-download" download="msc-geomet_web-map_export.png"></a>
+  <span id="info" style="padding-left: 0.5rem;cursor: pointer;"></span>
+</div>
+
 
 ### Licence
 
@@ -43,3 +65,46 @@ The [metadata of the Regional Deterministic Air Quality Analysis is available on
 
 The chronology of changes to operational systems is available [in the changelog](changelog_rdaqa_en.md).
 
+
+
+<style>
+  #legend-img {
+    margin: 0px;
+  }
+  #legend-popup {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    z-index: 2;
+  }
+  .legend-switch{
+    top: 8px;
+    right: .5em;
+  }
+  .ol-touch .legend-switch {
+    top: 80px;
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" type="text/css"/>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+<script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+<script>
+    function isIE() {
+      return window.navigator.userAgent.match(/(MSIE|Trident)/);
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var js = document.createElement("script");
+    js.type = "text/javascript";
+    if (isIE())
+    {
+        js.src = "../../../js/rdaqa_ie.js";
+        document.getElementById("controller").setAttribute("hidden", true);
+    }
+    else
+    {
+        js.src = "../../../js/rdaqa.js";
+    }
+    head.appendChild(js);
+</script>
