@@ -74,7 +74,13 @@ Exemples:
 
 __Produits agrégés par bassin versant hydrologique en format GeoJSON__
 
+Les fichiers de prévisions suivent la nomenclature ci-dessous:
+
 `{YYY1-YYY2}_MSC_CaSR-{version}_DrainageArea{nb}_{Var}_Sfc_{TimeStep}.json`
+
+Les fichiers d'analyses suivent la nomenclature ci-dessous:
+
+`{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_DrainageArea{nb}_{Var}_Sfc_{TimeStep}.json`
 
 où :
 
@@ -82,6 +88,7 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)
 * __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
+* __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions
 * __DrainageArea__ : Chaîne de caractères constante pour spécifier le bassin versant  
 * __nb__ : Numéro du bassin de drainage [01, 02, .., 11]
 * __Var__ : Nom de la variable
