@@ -25,8 +25,6 @@ Tous les détails concernant l'accès aux données brutes de ces réanalyses son
 Les produits dérivés de la Réanalyse canadienne de surface sont disponibles sur le serveur de données Datamart du SMC :
 
 * [Produits dérivés de la Réanalyse canadienne de surface (RCaS) disponibles sur le Datamart du SMC](readme_casr-datamart_fr.md)
-* [Produits dérivés de la réanalyse RCaS-Terre disponibles sur le Datamart du SMC](readme_casr_land-datamart_fr.md)
-* [Produits dérivés de la réanalyse RCaS-Rivières disponibles sur le Datamart du SMC](readme_casr_rivers-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
