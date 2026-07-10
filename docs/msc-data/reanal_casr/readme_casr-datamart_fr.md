@@ -6,7 +6,7 @@
 
 # Produits dérivés de la Réanalyse canadienne de surface
 
-Cette page décrit des produits statistiques sur grille en format NetCDF ainsi que les produits statistiques agrégés par bassin versant hydrologiqueen format GeoJSON, dérivés de la Réanalyse canadienne de surface (RCaS) disponibles sur le Datamart du SMC.
+Cette page décrit des produits statistiques sur grille en format NetCDF ainsi que les produits statistiques agrégés par bassin versant hydrologique en format GeoJSON, dérivés de la Réanalyse canadienne de surface (RCaS) disponibles sur le Datamart du SMC.
 
 ## Adresse des données 
 
@@ -24,7 +24,7 @@ Les produits statistiques agrégés par bassin versant hydrologique, dérivés d
 
 où :
 
-* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions de la Réanalyse canadienne de surface) (ex: v3.2)
+* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
 * __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour National Hydrographic Network, `nhs` pour National hydrometric basin polygon)
 * __nb__ : Principaux bassins de drainage selon:
     * 01 : Provinces maritimes 
@@ -43,13 +43,13 @@ où :
 
 Les noms de fichiers suivent la nomenclature ci-dessous:
 
-* __Produits sur grille en format NetCDF__
+__Produits sur grille en format NetCDF__
 
-Les noms de fichiers de prévisions suivent la nomenclature ci-dessous:
+Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
 `{YYY1-YYY2}_MSC_CaSR-{version}_{Var}_Sfc_{Grille}{resolution}_{TimeStep}.nc`
 
-Les noms de fichiers d'analyses suivent la nomenclature ci-dessous:
+Les fichiers d'analyses suivent la nomenclature ci-dessous:
 
 `{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grille}{resolution}_{TimeStep}.nc`
 
@@ -64,7 +64,7 @@ où :
 * __Sfc__ : Chaîne de caractères indiquant que le niveau vertical est la surface
 * __Grille__ : Grille horizontale lat-lon tournée [Rlatlon]
 * __resolution__ : Résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale [0.09]
-* __TimeStep__ : Pas de temps, prenant l'une des valeurs [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
+* __TimeStep__ : Pas de temps, prenant l'une des valeurs [P1Y, P1M]; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.
 * __nc__ : Chaîne de caractères constante indiquant que le format est NetCDF
 
 Exemples: 
@@ -72,7 +72,7 @@ Exemples:
 * 1980-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc
 * 1980-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
 
-* __Produits agrégés par bassin versant hydrologique en format GeoJSON__
+__Produits agrégés par bassin versant hydrologique en format GeoJSON__
 
 `{YYY1-YYY2}_MSC_CaSR-{version}_DrainageArea{nb}_{Var}_Sfc_{TimeStep}.json`
 
