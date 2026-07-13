@@ -6,9 +6,11 @@
 
 # Satellite observation data and products
 
-This page describes data and products from weather satellites operated by NOAA (National Oceanic and Atmospheric Administration). The instruments aboard these satellites provide observations of the Earth's surface at a generally high temporal and spatial resolution. These observations of atmospheric humidity, cloud cover, surface temperature, lightning occurrence and many other characteristics enable us to monitor and forecast weather conditions across the globe.
+This page describes data and products from weather satellites. The instruments aboard these satellites provide observations of the Earth's surface at a generally high temporal and spatial resolution. These observations of atmospheric humidity, cloud cover, surface temperature, lightning occurrence and many other characteristics enable us to monitor and forecast weather conditions across the globe.
 
 Among these satellites, the [GOES (Geostationary Operational Environmental Satellite) series, designed by NASA](https://science.nasa.gov/mission/goes/) for NOAA are part of a global network of weather satellites that are placed in geostationary orbit 36,000 km above the equator and aligned at 70º longitude intervals around the Earth to provide almost total coverage of the globe. Two GOES satellites each see a third of the Earth: the first satellite is located at 75ºW longitude and monitors North America, South America and most of the Atlantic Ocean. The second is located near longitude 135ºW and monitors western North America and the Pacific Ocean basin, together covering the region from longitude 20ºW to 165ºE.
+
+The [Himawari-8/9 satellites operated by the Japan Meteorological Agency (JMA)](https://www.jma.go.jp/jma/jma-eng/satellite/index.html), constitute a meteorological constellation in geostationary orbit positioned at 140°E. Designed for high-frequency atmospheric monitoring, they provide essential data for real-time analysis of the atmosphere, oceans and terrestrial environment. These systems are part of a global geostationary observation architecture that complements Western systems such as GOES (Geostationary Operational Environmental Satellites).
 
 ## Access
 
@@ -18,6 +20,7 @@ Satellite data are available on MSC's Datamart data server:
 
 * [GOES satellite layers available via geospatial web services on GeoMet-Weather](readme_satellite_geomet_en.md)
 * [GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
+* [Himawari satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite_Himawari-datamart_en.md)
 
 [An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available.
 
@@ -49,6 +52,7 @@ List of links to satellite imagery and animation on the Government of Canada wea
 * [Geostationary Satellites | NESDIS (noaa.gov)](https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites)
 * [CIMSS GOES-R Series WebApps (wisc.edu) - individual channels, RGB (Red-Green-Blue) and other products](https://cimss.ssec.wisc.edu/goes/GOESR_QuickGuides.html)
 * [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) 
+* [Himawari User's Guide](https://www.data.jma.go.jp/mscweb/en/support/support.html)
 
 ## Changelog 
 

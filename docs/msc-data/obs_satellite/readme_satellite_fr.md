@@ -6,9 +6,11 @@
 
 # Données et produits des observations satellite
 
-Cette page décrit les données et produits de satellites météorologiques exploités par la NOAA (National Oceanic and Atmospheric Administration). Les instruments à bord de ces satellites fournissent des observations de la surface de la Terre à une résolution temporelle et spatiale généralement élevée. Ces observations de l'humidité atmosphérique, de la couverture de nuages, de la température des surfaces, de l’occurrence de la foudre et beaucoup d’autres caractéristiques, permettent de surveiller et prévoir les conditions météorologiques de l'ensemble du globe.
+Cette page décrit les données et produits de satellites météorologiques. Les instruments à bord de ces satellites fournissent des observations de la surface de la Terre à une résolution temporelle et spatiale généralement élevée. Ces observations de l'humidité atmosphérique, de la couverture de nuages, de la température des surfaces, de l’occurrence de la foudre et beaucoup d’autres caractéristiques, permettent de surveiller et prévoir les conditions météorologiques de l'ensemble du globe.
 
 Parmi ces satellites, la série [GOES (Geostationary Operational Environmental Satellite), conçus par la NASA](https://science.nasa.gov/mission/goes/) pour la NOAA font partie d'un réseau mondial de satellites météorologiques qui sont placés en orbite géostationnaire à 36 000 km au-dessus de l'équateur et alignés à des intervalles de 70º de longitude autour de la Terre pour offrir une couverture presque totale du globe. Deux satellites GOES voient chacun un tiers de la Terre: le premier satellite est situé à 75ºO de longitude et surveille l'Amérique du Nord, l'Amérique du Sud, et la plus grande partie de l'océan Atlantique. Le deuxième est situé près de la longitude 135ºO et surveille l'ouest de l'Amérique du Nord et le bassin de l'océan Pacifique, couvrant à eux deux la région s'étendant du 20e°O au 165e°E de longitude.
+
+Les satellites [Himawari-8/9 opérés par la Japan Meteorological Agency (JMA)](https://www.jma.go.jp/jma/jma-eng/satellite/index.html), constituent quant à  eux, une constellation d’observation météorologique en orbite géostationnaire positionnée à 140°E. Conçus pour la surveillance atmosphérique à haute fréquence, ils fournissent des données essentielles pour l’analyse en temps réel de l’atmosphère, des océans et de l’environnement terrestre. Ces systèmes s’inscrivent dans une architecture globale d’observation géostationnaire complémentaire aux systèmes occidentaux tels que GOES.
 
 ## Accès
 
@@ -17,7 +19,8 @@ Parmi ces satellites, la série [GOES (Geostationary Operational Environmental S
 Les données satellite sont disponibles sur le serveur de données Datamart du SMC :
 
 * [Couches satellitaires GOES disponibles via des services web géospatiaux sur GeoMet-Weather](readme_satellite_geomet_fr.md)
-* [Données satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satellite-datamart_fr.md)
+* [Données du satellite GOES en format GeoTIFF disponibles sur le Datamart du SMC](readme_satellite-datamart_fr.md)
+* [Données du satellite Himawari en format GeoTIFF disponibles sur le Datamart du SMC](readme_satellite_Himawari-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
@@ -48,7 +51,9 @@ Liste des liens vers l'imagerie et animation satellitaire sur le site d'informat
 * [A propos des satellites](https://www.canada.ca/fr/environnement-changement-climatique/services/conditions-meteorologiques-ressources-outils-generaux/satellites.html)
 * [Geostationary Satellites | NESDIS (noaa.gov)](https://www.nesdis.noaa.gov/our-satellites/currently-flying/geostationary-satellites) - _En anglais seulement_
 * [CIMSS GOES-R Series WebApps (wisc.edu) – canaux individuels, produits RVB (Rouge-Vert-Bleu) et autres](https://cimss.ssec.wisc.edu/goes/GOESR_QuickGuides.html) -  _En anglais seulement_
-* [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) - _En anglais seulement_ 
+* [Quick guides for RGB (Red-Green-Blue) products - EUMETSAT](https://resources.eumetrain.org/rgb_quick_guides/index.html) - _En anglais seulement_
+* [Himawari Users's Guide (JMA)](https://www.data.jma.go.jp/mscweb/en/support/support.html)
+
 ## Registre des changements 
 
 La chronologie des changements apportés aux observations satellites est disponible [ici](changelog_satellite_fr.md).
