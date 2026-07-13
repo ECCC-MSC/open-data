@@ -40,14 +40,14 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __Himawari-North__ : Chaîne de caractères indiquant que les données sont dérivées à partir du satellite Himawari sur l'hémisphère nord
-* __Product__ : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, C03, C13, C15, Dust, NaturalColor, SO2]. Voir la section sur le contenu des fichiers
+* __Product__ : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, Channel03, Channel13, Channel15, Dust, NaturalColor, SO2]. Voir la section sur le contenu des fichiers
 * __resolution__ : Résolution horizontale des données [2km]
 * __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF 
 
 Examples: 
 
 * 20260713T0020Z_MSC_Himawari-North_Dust_2km.tif
-* 20260713T0110Z_MSC_Himawari-North_C13_2km.tif
+* 20260713T0110Z_MSC_Himawari-North_Channel13_2km.tif
 
 ## Contenu des fichiers
 
