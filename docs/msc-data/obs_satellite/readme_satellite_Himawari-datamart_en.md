@@ -40,14 +40,14 @@ where :
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __Himawari-North__ : String indicating that data are derived from Himawari over the North Hemisphere
-* __Product__: String indicating the type of satellite product generated [Ash, C03, C13, C15, Dust, NaturalColor, SO2]. See the section on file contents
+* __Product__: String indicating the type of satellite product generated [Ash, Channel03, Channel13, Channel15, Dust, NaturalColor, SO2]. See the section on file contents
 * __resolution__ : Horizontal resolution of data [2km]
 * __tif__ : Constant string indicating that the format is GeoTIFF 
 
 Examples: 
 
 * 20260713T0020Z_MSC_Himawari-North_Dust_2km.tif
-* 20260713T0110Z_MSC_Himawari-North_C13_2km.tif
+* 20260713T0110Z_MSC_Himawari-North_Channel13_2km.tif
 
 ## File contents
 
