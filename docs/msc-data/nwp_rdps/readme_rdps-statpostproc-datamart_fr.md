@@ -56,7 +56,7 @@ où :
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS__ : Chaîne de caractères constante indiquant des données post-traitées à partir du Système régional de prévision déterministe
 * __PRODUCT__ : Chaîne de caractères constante indiquant le produit de post-traitement statistique [PROGNOS]
-* __METHOD__ : Chaîne de caractères constante indiquant la [méthode statistique utilisée](https://link.springer.com/book/10.1007/978-0-387-84858-7) [MLR pour Multiple Linear Regression, LASSO pour Least Absolute Shrinkage and Selection Operator, WDLASSO2 pour LASSO appliquée aux composantes zonales et meridionales des vents] 
+* __METHOD__ : Chaîne de caractères constante indiquant la [méthode statistique utilisée](https://link.springer.com/book/10.1007/978-0-387-84858-7) [MLR pour Multiple Linear Regression, LightGBM pour [Light Gradient Boosting Machine](https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf), WDLASSO2 pour Least Absolute Shrinkage and Selection Operator appliquée aux composantes zonales et meridionales des vents] 
 * __Var__ : Variables contenues dans le fichier [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLTYPE__ : Type de niveau vertical [AGL pour le niveau au-dessus du sol (Above Ground Level)]
 * __LVL__ : Valeur du niveau vertical [1.5m, 10m]. Ce paramètre est absent pour la surface
@@ -66,7 +66,7 @@ où :
 Exemples de noms de fichiers: 
 
 * 20250703T06Z_MSC_RDPS-PROGNOS-MLR_DewPoint_AGL-1.5m_PT024H.json
-* 20250714T00Z_MSC_RDPS-PROGNOS-LASSO-WindSpeed_AGL-10m_PT006H.json
+* 20260722T00Z_MSC_RDPS-PROGNOS-LghtGBM-WindSpeed_AGL-10m_PT006H.json
 
 ## Liste des variables
 
