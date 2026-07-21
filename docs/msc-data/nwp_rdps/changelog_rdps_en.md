@@ -6,6 +6,16 @@
 
 # Chronology of changes to the Regional Deterministic Prediction System (RDPS)
 
+## Wednesday July 22, 2026
+
+### PROGNOS Update to the statistical post-processing of wind speed forecasts from the Regional Deterministic Prediction System (RDPS) 10.0.0 of the Canadian Meteorological Center (CMC)
+
+On Wednesday, July 22, 2026, starting with the 1200 UTC run, the CMC will implement the LightGBM machine learning post-processing model in replacement of the LASSO model to post-process RDPS wind speed forecasts via PROGNOS for improved performances of moderate to strong winds.
+
+A copy of the official note announcing this implementation is available [via this link](https://dd.meteo.gc.ca/doc/genots/2026/07/21/NOCN03_CWAO_211544___14836).
+
+The technical specifications document for PROGNOS will be updated in the coming month to reflect these changes [via this link](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/readme_rdps_en/#technical-documentation).
+
 ## Wednesday July 23, 2025
 
 ### Implementation of a new statistical post-processing system, PROGNOS v1.0.0, for the Regional Deterministic Prediction System (RDPS) 9.0.0 of the Canadian Meteorological Centre (CMC)

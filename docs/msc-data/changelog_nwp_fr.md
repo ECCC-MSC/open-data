@@ -9,6 +9,10 @@
 
 ## 2026
 
+### 22 juillet 2026
+
+* [Mise à jour du système PROGNOS pour le post-traitement statistique des prévisions de vitesses du vent issues du Système Régional de Prévision Déterministe (SRPD) 10.0.0 du Centre Météorologique du Canada (CMC)](nwp_rdps/changelog_rdps_fr.md#le-mercredi-22-juillet-2026)
+
 ### 26 mai 2026
 
 * [Mise à jour vers la version 10.0.0 du Système global de prévision déterministe (SGPD)](nwp_gdps/changelog_gdps_fr.md#le-mardi-26-mai-2026)

@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés au Système régional de prévision déterministe (SRPD)
 
+## Le mercredi 22 Juillet, 2026
+
+### Mise à jour du système PROGNOS pour le post-traitement statistique des prévisions de vitesses du vent issues du Système Régional de Prévision Déterministe (SRPD) 10.0.0 du Centre Météorologique du Canada (CMC) 
+
+Le mercredi 22 juillet, 2026, à partir de la passe 1200 UTC, le CMC implémentera via PROGNOS le modèle d'apprentissage machine "LightGBM" en remplacement du modèle LASSO pour le post-traitement statistique des prévisions de vitesses du vent issues du SRPD afin d'améliorer la performance des prévisions de vitesses du vent modérées à fortes.
+
+La note officielle annonçant ce changement est disponible [via ce lien](https://dd.meteo.gc.ca/doc/genots/2026/07/21/NOCN03_CWAO_211544___14836).
+
+Le document des spécifications techniques de PROGNOS sera mis à jour dans les prochains mois pour refléter ces changements [via ce lien](https://eccc-msc.github.io/open-data/msc-data/nwp_rdps/readme_rdps_fr/#documentation-technique).
+
 ## Le mercredi 23 juillet 2025
 
 ### Mise en œuvre d'un nouveau système de post-traitement statistique PROGNOS v1.0.0 du Système régional de prévision déterministe (SRPD) 9.0.0 du Centre météorologique canadien (CMC)

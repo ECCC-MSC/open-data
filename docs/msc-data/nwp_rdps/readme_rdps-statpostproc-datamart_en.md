@@ -55,7 +55,7 @@ where:
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __RDPS__: Constant string indicating that data is from Regional Deterministic Prediction System
 * __PRODUCT__: Constant string indicating the post-processing product [PROGNOS]
-* __METHOD__: Constant string indicating the [statistical method used](https://link.springer.com/book/10.1007/978-0-387-84858-7) [MLR for Multiple Linear Regression, LASSO for Least Absolute Shrinkage and Selection Operator, WDLASSO2 for LASSO applied to zonal and meridional winds components]
+* __METHOD__: Constant string indicating the [statistical method used](https://link.springer.com/book/10.1007/978-0-387-84858-7) [MLR for Multiple Linear Regression, LightGBM for [Light Gradient Boosting Machine](https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf), WDLASSO2 for Least Absolute Shrinkage and Selection Operator applied to zonal and meridional winds components]
 * __Var__ : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]
 * __LVLYPE__: Vertical level type [AGL for Above Ground Level]
 * __LVL__: Vertical level value [1.5m, 10m]. This parameter is not used for surface level
@@ -65,7 +65,7 @@ where:
 Filenames examples: 
 
 * 20250702T12Z_MSC_RDPS-PROGNOS-MLR_DewPoint_AGL-1.5m_PT024H.json
-* 20250714T00Z_MSC_RDPS-PROGNOS-LASSO-WindSpeed_AGL-10m_PT006H.json
+* 20260722T00Z_MSC_RDPS-PROGNOS-LightGBM-WindSpeed_AGL-10m_PT006H.json
 
 ## List of variables
 

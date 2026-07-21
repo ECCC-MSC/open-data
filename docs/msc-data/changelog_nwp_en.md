@@ -8,6 +8,10 @@
 
 ## 2026
 
+### July 22, 2026
+
+* [PROGNOS Update to the statistical post-processing of wind speed forecasts from the Regional Deterministic Prediction System (RDPS) 10.0.0 of the Canadian Meteorological Center (CMC)](nwp_rdps/changelog_rdps_en.md#wednesday-july-22-2026) 
+
 ### May 26, 2026
 
 * [Upgrade to Version 10.0.0 of the Global Deterministic Prediction System (GDPS)](nwp_gdps/changelog_gdps_en.md#tuesday-may-26-2026) 
