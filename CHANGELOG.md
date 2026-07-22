@@ -10,6 +10,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.9
+
+* date: 2026-07-22
+* announcements:
+    * Not announced
+* new content:
+    * Add Himawari satellite documentation
+    * Update RDPS PROGNOS (LASSO to LightGBM)
+    * Update RDPS and NWEP changelogs
+ * improvements:
+    * NA
+* bug fixes:
+    * Typo
+
 # 2.10.8
 
 * date: 2026-06-19
