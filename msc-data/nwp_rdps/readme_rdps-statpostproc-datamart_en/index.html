@@ -200,7 +200,7 @@
 <li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
 <li><strong>RDPS</strong>: Constant string indicating that data is from Regional Deterministic Prediction System</li>
 <li><strong>PRODUCT</strong>: Constant string indicating the post-processing product [PROGNOS]</li>
-<li><strong>METHOD</strong>: Constant string indicating the <a href="https://link.springer.com/book/10.1007/978-0-387-84858-7">statistical method used</a> [MLR for Multiple Linear Regression, LASSO for Least Absolute Shrinkage and Selection Operator, WDLASSO2 for LASSO applied to zonal and meridional winds components]</li>
+<li><strong>METHOD</strong>: Constant string indicating the <a href="https://link.springer.com/book/10.1007/978-0-387-84858-7">statistical method used</a> [MLR for Multiple Linear Regression, LightGBM for <a href="https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf">Light Gradient Boosting Machine</a>, WDLASSO2 for Least Absolute Shrinkage and Selection Operator applied to zonal and meridional winds components]</li>
 <li><strong>Var</strong> : Variables included in this file [AirTemp, DewPoint, WindSpeed, WindDir]</li>
 <li><strong>LVLYPE</strong>: Vertical level type [AGL for Above Ground Level]</li>
 <li><strong>LVL</strong>: Vertical level value [1.5m, 10m]. This parameter is not used for surface level</li>
@@ -210,7 +210,7 @@
 <p>Filenames examples: </p>
 <ul>
 <li>20250702T12Z_MSC_RDPS-PROGNOS-MLR_DewPoint_AGL-1.5m_PT024H.json</li>
-<li>20250714T00Z_MSC_RDPS-PROGNOS-LASSO-WindSpeed_AGL-10m_PT006H.json</li>
+<li>20260722T00Z_MSC_RDPS-PROGNOS-LightGBM-WindSpeed_AGL-10m_PT006H.json</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <ul>
