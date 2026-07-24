@@ -71,6 +71,18 @@ This complementarity ensures better overall continuity of geostationary observat
 | Main Instrument / Meteorological Products  | ABI (Advanced Baseline Imager) – similar capabilities, plus additional instruments (e.g., GLM). Provides sea surface temperature, cloud, precipitation, and wind products |
 | Operational Start Date | 2015 (Himawari-8), 2022 (Himawari-9) | 2017 (GOES-16), 2019 (GOES-17), 2023 (GOES-18), 2025 (GOES-19)  |
 
+Seven types of products are currently generated from the Himawari-8/9 satellites. They are described below according to product type (see links in the tables for a more detailed description):  
+
+| Product | Type | Resolution | Application | Note | 
+| ------ | ------ | ------ | ------ | ------ |
+| [Natural Color](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_NaturalColors_en.pdf) | RGB Composite | 2km | Analysis of smoke, dust, vegetation, snow and clouds | Generated primarily from the visible and near-infrared bands |
+| [Dust](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_Dust_en.pdf) | RGB Composite | 2km | Detection of dust and sand suspended in the atmosphere | Distinguishes dust clouds from weather clouds and soil features |
+| [Ash](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_Ash_en.pdf) | RGB Composite | 2km | Volcanic Ash Cloud Detection | Widely used for aviation risk monitoring | 
+| [Sulfur dioxide (SO2)](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_SO2_en.pdf) | RGB Composite | 2km | Detecting sulfur dioxide plumes from volcanic eruptions | Used in conjunction with ash detection products during eruptions | 
+| Channel 3 (C3) | Single channel (Band 3) | 2km | Observing clouds, fog, smoke, dust and surface details during the day | Visible red band (0.64 μm). No information available at night |
+| Channel 13 (C13) | Single channel (Band 13) | 2km | Measuring cloud top and land surface temperature | "Clean" infrared window (10.4 μm). Available day and night |
+| Channel 15 (C15) | Single channel (Band 15) | 2km | Sensitive to atmospheric moisture, volcanic ash and dust when combined with other infrared channels | IR split Window band (12.4 μm). Frequently used in RGB "Ash" products |
+
 ## Support
 
 If you have any questions about these data, [please contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
