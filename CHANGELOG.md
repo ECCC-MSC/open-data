@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.10
+
+* date: 2026-07-24
+* announcements:
+    * Not announced
+* new content:
+    * NA
+ * improvements:
+    * Improve Himawari satellite documentation (products)
+* bug fixes:
+    * Fix Himawari documentation links (FR-EN)
+
 # 2.10.9
 
 * date: 2026-07-22
