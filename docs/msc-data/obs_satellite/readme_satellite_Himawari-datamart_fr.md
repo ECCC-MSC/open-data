@@ -71,6 +71,18 @@ Cette complémentarité permet d'assurer une meilleure continuité globale des o
 | Instrument principal / Produits météorologiques | AHI (Advanced Himawari Imager) – 16 bandes spectrales (VIS, NIR, SWIR, MWIR, TIR). Fournit des produits de température de surface de la mer, de couverture nuageuse et de précipitations | ABI (Advanced Baseline Imager) – capacités similaires, avec des instruments supplémentaires (p. ex. GLM). Fournit des produits de température de surface de la mer, de couverture nuageuse, de précipitations et de vent |
 | Date de mise en service | 2015 (Himawari-8), 2022 (Himawari-9) | 2017 (GOES-16), 2019 (GOES-17), 2023 (GOES-18), 2025 (GOES-19)  |
 
+Sept types de produits sont actuellement générés à partir des satellites Himawari-8/9. Ils sont décrits ci-dessous selon le type de produits (voir les liens dans les tableaux pour une description plus détaillée):  
+
+| Produit | Type | Résolution | Application | Note | 
+| ------ | ------ | ------ | ------ | ------ |
+| [Couleur naturelle](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_NaturalColors_en.pdf) | Composite RVB | 2km | Analyse de la fumée, de la poussière, de la végétation, de la neige et des nuages | Généré principalement à partir des bandes visibles et proche infrarouge |
+| [Poussière](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_Dust_en.pdf)  | Composite RVB | 2km | Détection des poussières et du sable en suspension dans l’atmosphère | Permet de distinguer les nuages de poussière des nuages météorologiques et des caractéristiques du sol |
+| [Cendres volcaniques](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_Ash_en.pdf) | Composite RVB | 2km | Détection des nuages de cendres volcaniques | Très utilisé pour la surveillance des risques aéronautiques | 
+| [Dioxyde de soufre (SO2)](https://www.jma.go.jp/jma/jma-eng/satellite/VLab/QG/RGB_QG_SO2_en.pdf) | Composite RVB | 2km | Détection des panaches de dioxyde de soufre issus des éruptions volcaniques | Utilisé conjointement avec les produits de détection des cendres lors des éruptions | 
+| Canal 3 (C3) | Canal spectral unique (Bande 3) | 2km  | Observation des nuages, du brouillard, de la fumée, des poussières et des détails de surface en journée | Bande visible rouge (0,64 µm). Aucune information disponible de nuit |
+| Canal 13 (C13) | Canal spectral unique (Bande 13) | 2km  | Mesure de la température du sommet des nuages et de la surface terrestre | Fenêtre infrarouge « propre » (10,4 µm). Disponible de jour comme de nuit |
+| Canal 15 (C15) | Canal spectral unique (Bande 15) | 2km  | Sensible à l’humidité atmosphérique, aux cendres volcaniques et aux poussières lorsque’elle est combiné à d’autres canaux infrarouges | Bande infrarouge « Split Window » (12,4 µm). Fréquemment utilisée dans les produits RVB « Ash » (Cendres) |
+
 ## Support
 
 Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
