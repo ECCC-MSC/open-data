@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.11
+
+* date: 2026-07-28
+* announcements:
+    * Not announced
+* new content:
+    * Add GeoColor GOES product
+ * improvements:
+    * NA
+* bug fixes:
+    * CAP-XML doc: Replace old canada.ca link to "public weather warning criteria" by "weather impact guides" page
+
 # 2.10.10
 
 * date: 2026-07-24
