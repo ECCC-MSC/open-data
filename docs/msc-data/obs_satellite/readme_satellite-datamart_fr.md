@@ -72,7 +72,7 @@ Quinze types de produits sont actuellement générés à partir des satellites G
 | ------ | ------ | ------ | ------ | 
 | [Convection nuageuse de jour](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/day_cloud_convection_fr.pdf) | 1km | Création d’un contraste entre les nuages hauts et bas, détection des nuages convectifs causant les orages | Disponible que le jour si pris isolément ou en combinaison «jour-nuit» avec d’autres produits | 
 | [IR de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_ir_fr.pdf) | 2km | Surveillance nocturne des nuages, aspect similaire au RVB « Convection nuageuse de jour »  | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour | 
-| [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf) | 2km | Analyse contrastée entre les nuages hauts et bas, et le brouillard. Permet d'identifier les points chauds des incendies  | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour | 
+| [Microphysique de nuit](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/night_microphysics_fr.pdf) | 2km | Analyse contrastée entre les nuages hauts et bas, et le brouillard. Permet d'identifier les points chauds des incendies  | Disponible 24h/24 ou en combinaison «jour-nuit» avec d’autres produits, avec des canaux infrarouges donc visible la nuit comme le jour |
 
 ### Produits combinés «jour-nuit» : 
 
@@ -86,6 +86,7 @@ Quinze types de produits sont actuellement générés à partir des satellites G
 | [Fumée Bande 1 ABI](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_fr.pdf) | 1km | Détection de fumée, tempêtes de poussière | Utilise la lumière visible et n’apparait que dans la portion jour d’une combinaison | 
 | [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_fr.pdf) | 2km | Surveillance des points chauds des incendies de forêt | N'apparait que dans la portion nuit d’une combinaison de produits | 
 | [Microphysique de nuit et IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_fr.pdf) | 2km | Surveillance des tempêtes convectives nocturnes  | N'apparait que dans la portion nuit d’une combinaison de produits |
+| [GeoColor](https://www.star.nesdis.noaa.gov/goes/documents/QuickGuide_CIRA_Geocolor_20171019.pdf) | 1km | Interprétation intuitive des caractéristiques météorologiques et de surface. Permet d'identifier la fumée, la poussière en suspension, la brume et tout élément présentant une couleur caractéristique | Produit multispectral composé d'une image en couleurs réelles pendant la journée et d'une image infrarouge utilisant les bandes 7 et 13 pendant la nuit |
 
 Voici la liste des combinaisons «jour-nuit» disponibles:
 

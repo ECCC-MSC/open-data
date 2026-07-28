@@ -86,6 +86,8 @@ Fifteen types of products are currently generated from the GOES-West and GOES-Ea
 | [Smoke ABI Band1](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/smokeabiband1_en.pdf) | 1km | Detection of smoke, dust storms | Uses visible light and only appears in the daytime portion of a combination | 
 | [SWIR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/swir_en.pdf) | 2km | Forest fire hotspot monitoring | Appears only in the night portion of a product combination | 
 | [Night Microphysics IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Monitoring of nocturnal convective storms | Appears only in the night portion of a product combination |
+| [GeoColor](https://www.star.nesdis.noaa.gov/goes/documents/QuickGuide_CIRA_Geocolor_20171019.pdf) | 1km | Intuitive interpretation of meteorological and surface-based features. Identify smoke, blowing dust, haze, and anything that has a unique color property | Multispectral product composed of True Color during daytime, and an Infrared product that uses bands 7 and 13 at night |
+
 
 Here is the list of available "day-night" combinations:
 
