@@ -60,8 +60,9 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
+* [Guides d'impact des conditions météo](https://www.canada.ca/fr/services/environnement/meteo/conditionsdangereuses/alertes-meteo/guides-impact-meteo.html) 
 * [Version actuelle du système national d'alertes au public](https://www.securitepublique.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-fr.aspx)
-* [Critères d'alertes météo publiques](https://www.canada.ca/fr/environnement-changement-climatique/services/types-previsions-meteorologiques-utilisation/publiques/criteres-alertes-meteo.html) 
+
 
 <style>
     .ol-popup {
