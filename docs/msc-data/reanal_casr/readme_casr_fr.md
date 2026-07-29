@@ -8,9 +8,9 @@
 
 Les ensembles de réanalyse sont particulièrement importants au Canada, où de vastes régions éloignées rendent les observations au sol difficiles à obtenir. Ces outils soutiennent la prévision météorologique, la planification des ressources en eau et la recherche climatique.
 
-La Réanalyse canadienne de surface (RCaS) a pour objectif principal de fournir des données horaires de surface (température, vent) et de précipitation continues dans le temps et dans l'espace couvrant l’Amérique du Nord sur une longue période (environ 40 ans) et à haute résolution, répondant ainsi à la mission et mandats de la [Commission mixte internationale (CMI)](https://ijc.org/fr) visant à améliorer la compréhension des eaux transfrontalières Canada États-Unis. Ce jeu de données est régulièrement amélioré pour répondre aux besoins de différents programmes et partenaires.
+La Réanalyse canadienne de surface (RCaS) a pour objectif principal de fournir des données horaires de surface (température, vent) et de précipitation continues dans le temps et dans l'espace couvrant l’Amérique du Nord sur une longue période (environ 60 ans) et à haute résolution, répondant ainsi à la mission et mandats de la [Commission mixte internationale (CMI)](https://ijc.org/fr) visant à améliorer la compréhension des eaux transfrontalières Canada États-Unis. Ce jeu de données est régulièrement amélioré pour répondre aux besoins de différents programmes et partenaires.
 
-Afin d'étudier comment le manteau neigeux, l’humidité du sol et les débits fluviaux ont évolué au Canada au cours des 40 dernières années, les composantes RCaS-Terre et RCaS-Rivières ont été développées en combinant des données météorologiques et hydrologiques historiques à des modèles numériques permettant ainsi de reconstituer les conditions passées afin de mieux comprendre notre environnement et aider les Canadiens à s’adapter aux phénomènes extrêmes intensifiés par le changement climatique, tels que les vagues de chaleur, les feux de forêt, les sécheresses, les précipitations extrêmes et les inondations.
+Afin d'étudier comment le manteau neigeux, l’humidité du sol et les débits fluviaux ont évolué au Canada au cours des 57 dernières années, les composantes RCaS-Terre et RCaS-Rivières ont été développées en combinant des données météorologiques et hydrologiques historiques à des modèles numériques permettant ainsi de reconstituer les conditions passées afin de mieux comprendre notre environnement et aider les Canadiens à s’adapter aux phénomènes extrêmes intensifiés par le changement climatique, tels que les vagues de chaleur, les feux de forêt, les sécheresses, les précipitations extrêmes et les inondations.
 
 La réanalyse RCaS-Terre s'alimente des données de RCaS et constitue une ressource précieuse pour de nombreuses applications, notamment la recherche sur les sécheresses, le couvert nival et l’humidité du sol, ainsi que la prise de décision en gestion des ressources hydriques et en évaluation des risques climatiques.
 
@@ -25,8 +25,11 @@ Tous les détails concernant l'accès aux données brutes de ces réanalyses son
 Les produits dérivés de la Réanalyse canadienne de surface sont disponibles sur le serveur de données Datamart du SMC :
 
 * [Produits dérivés de la Réanalyse canadienne de surface (RCaS) disponibles sur le Datamart du SMC](readme_casr-datamart_fr.md)
+* [Produits dérivés de la Réanalyse canadienne de surface - Terre (RCaS-Terre) disponibles sur le Datamart du SMC](readme_casr-land-datamart_fr.md)
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
+
+Note: Les produits dérivés de la Réanalyse canadienne de surface - Rivières (RCaS-Rivers) seront disponibles bientôt.
 
 ### Licence
 
@@ -44,6 +47,7 @@ A venir
 
 * La documentation technique est [disponible à cette adresse](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html)
 * [The Canadian Surface Reanalysis (CaSR) v3.2 precipitation dataset: A 45-year high-resolution analysis for North America (1980–2024); Dikraa Khedhaouiria, Nicolas Gasset, Vincent Fortin, Milena Dimitrijevic, Maxim Bulat andXihong Wang. Preprint EGUsphere, 2026](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-620/egusphere-2026-620.pdf)
+* [A 10 km North American precipitation and land-surface reanalysis based on the GEM atmospheric model; Gasset, N., Fortin, V., Dimitrijevic, M., Carrera, M., Bilodeau, B., Muncaster, R., Gaborit, E;., Roy, G., Pentcheva, N., Bulat, M., Wang, X., Pavlovic, R., Lespinas, F., et Khedhaouiria, D., et Mai, J. (2021). Earth Syst. Sci., 25, 4917-4945](https://hess.copernicus.org/articles/25/4917/2021/)
 
 ## Registre des changements 
 

@@ -25,7 +25,7 @@ Aggregate statistical products by watershed, derived from the Canadian Surface R
 where:
 
 * __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (e.g., v3.2)
-* __polygon_dataset__: Name of the watershed polygon set (`nhn` for "National Hydrographic Network", `nhs` for "National Hydrological Service")
+* __polygon_dataset__: Name of the watershed polygon set ('nhn' for National Hydrographic Network, 'nhs' for National hydrological Service)
 * __nb__: Main drainage basins according to:
     * 01: Maritime Provinces 
     * 02: St. Lawrence 
@@ -62,15 +62,15 @@ where:
 * __Analysis__: A string indicating that the data are analyses, not forecasts
 * __Var__: Name of variable
 * __Sfc__: A string indicating that the vertical level is the surface
-* __Grid__ : Horizontal rotated lat-lon grid [Rlatlon]
+* __Grille__ : Horizontal rotated lat-lon grid [Rlatlon]
 * __resolution__: Resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions [0.09]
-* __TimeStep__: No time, taking one of the values [P1Y, P1M]; `P1Y` represents a one-year time step and `P1M` represents a one-month time step
+* __TimeStep__: No time, taking one of the values [P1Y, P1M]; P1Y represents a one-year time step and P1M represents a one-month time step.
 * __nc__: Constant string indicating that the format is NetCDF
 
 Examples: 
 
-* 1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
+* 1980-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc
+* 1980-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
 
 __Aggregate products by watershed in GeoJSON format__
 
@@ -93,13 +93,13 @@ where:
 * __nb__: Drainage basin number [01, 02, .., 11]
 * __Var__: Name of variable
 * __Sfc__: A string indicating that the vertical level is the surface
-* __TimeStep__: No time, taking one of the values [P1Y, P1M]; `P1Y` represents a one-year time step and `P1M` represents a one-month time step
+* __TimeStep__: No time, taking one of the values [P1Y, P1M]; P1Y represents a one-year time step and P1M represents a one-month time step
 * __json__: A constant string indicating that the format is GeoJSON
 
 Examples:
 
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json
-* 1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json
+* 1980-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json
+* 1980-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json
 
 ## List of variables
 
