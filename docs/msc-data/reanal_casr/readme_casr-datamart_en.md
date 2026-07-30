@@ -1,6 +1,6 @@
 [En français](readme_casr-datamart_fr.md)
 
-! [ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Canadian Surface Reanalysis](readme_casr_en.md) > CaSR Derived Products on the MSC Datamart
 
@@ -10,15 +10,15 @@ This page describes the gridded statistical products in NetCDF format as well as
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples for accessing and using the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTPS protocol. It is possible to access ir with a standard browser. In this case, you obtain a list of links to a NetCDF or GeoJON file, depending on the product.
 
-Gridded statistical products derived from the Canadian Surface Reanalysis (CaSR) can be found at:
+__Gridded statistical products__ derived from the Canadian Surface Reanalysis (CaSR) can be found at:
 
 * [https://dd.weather.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/grid](https://dd.version.gc.ca/today/reanalysis_casr/casr/)
 
-Aggregate statistical products by watershed, derived from the Canadian Surface Reanalysis (CaSR), can be found at:
+__Aggregate statistical products by watershed__, derived from the Canadian Surface Reanalysis (CaSR), can be found at:
 
 * [https://dd.weather.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}](https://dd.weather.gc.ca/today/reanalysis_casr/casr/)
 
@@ -41,17 +41,15 @@ where:
 
 ## File name nomenclature 
 
-The file names follow the nomenclature below:
-
 __Gridded products in NetCDF format__
 
 The forecast files follow the nomenclature below:
 
-'{YYY1-YYY2}_MSC_CaSR-{version}_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc'
+`{YYY1-YYY2}_MSC_CaSR-{version}_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc`
 
 The analysis files follow the nomenclature below:
 
-'{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc'
+`{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc`
 
 where:
 
@@ -116,32 +114,3 @@ If you have any questions about this data, please [contact us](https://weather.g
 ## Announcements from the dd_info mailing list
 
 Announcements related to this dataset are available via the [dd_info list](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[En français](readme_casr-datamart_fr.md)
-
-![ECCC logo](../../img_eccc-logo.png)
-
-
-## Support
-
-If you have any questions about these data, [please contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).
-## dd_info mailing list announcements 
-
-Announcements related to this dataset are available via the [dd_info](https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/) list.

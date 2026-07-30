@@ -14,11 +14,11 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF ou GeoJON selon le produit.
 
-Les produits statistiques sur grille, dérivés de la Réanalyse canadienne de surface terrestre (RCaS-Terre) se trouvent à l'adresse :
+Les __produits statistiques sur grille__, dérivés de la Réanalyse canadienne de surface terrestre (RCaS-Terre) se trouvent à l'adresse :
 
 * [https://dd.meteo.gc.ca/today/reanalysis_casr/casr-land/{Version}/post-processing/grid](https://dd.meteo.gc.ca/today/reanalysis_casr/casr-land/)
 
-Les produits statistiques agrégés par bassin versant hydrologique, dérivés de la Réanalyse canadienne de surface terrestre (RCaS-Terre) se trouvent à l'adresse :
+Les __produits statistiques agrégés par bassin versant hydrologique__, dérivés de la Réanalyse canadienne de surface terrestre (RCaS-Terre) se trouvent à l'adresse :
 
 * [https://dd.meteo.gc.ca/today/reanalysis_casr/casr-land/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}](https://dd.meteo.gc.ca/today/reanalysis_casr/casr-land/)
 
