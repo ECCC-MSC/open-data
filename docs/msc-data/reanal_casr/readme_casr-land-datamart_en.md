@@ -1,6 +1,6 @@
 [En français](readme_casr-land-datamart_fr.md)
 
-! [ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Canadian Surface Reanalysis](readme_casr_en.md) > CaSR-Land derived products on the MSC Datamart
 
@@ -45,7 +45,7 @@ __Gridded products in NetCDF format__
 
 The forecast files follow the nomenclature below:
 
-'{YYY1-YYY2}_MSC_CaSR-Land-{version}_{Var}_{Level}_{Grid}{resolution}_{TimeStep}.nc'
+`{YYY1-YYY2}_MSC_CaSR-Land-{version}_{Var}_{Level}_{Grid}{resolution}_{TimeStep}.nc`
 
 where:
 
@@ -69,7 +69,7 @@ __Aggregate products by watershed in GeoJSON format__
 
 The forecast files follow the nomenclature below:
 
-'{YYY1-YYY2}_MSC_CaSR-Land-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json'
+`{YYY1-YYY2}_MSC_CaSR-Land-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json`
 
 where:
 
@@ -94,8 +94,8 @@ Examples:
 * Accumulation of quick response flux, runoff (kg/m²)
 * Precipitation quantity (m)
 * Drainage accumulation, i.e., the vertical flow at the base of the deepest soil layer considered for routing (kg/m²)
-* Snow depth, aggregate (cm) 
-* Water equivalent of the snow cover, aggregate (kg/m²)
+* Snow depth at ground level (cm) 
+* Water equivalent of the snow cover at ground level (kg/m²)
 * Soil liquid water content (m³/m³)
 * Air Temperature (°C)
 * Dew point temperature (°C)

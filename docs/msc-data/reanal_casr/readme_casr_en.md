@@ -1,6 +1,6 @@
 [En français](readme_casr_fr.md)
 
-! [ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > Canadian Surface Reanalysis (CaSR) Data and Products
 
@@ -25,7 +25,7 @@ Full details on access to the raw data from these reanalyses are available here(
 Products derived from the Canadian Surface Reanalysis are available on the MSC's Datamart data server:
 
 * [Products derived from the Canadian Surface Reanalysis (CaSR) available on the MSC Datamart](readme_casr-datamart_en.md)
-* [Products derived from the Canadian Surface Reanalysis - Land (CaSR-Land) available on the MSC Datamart] (readme_casr-land-datamart_fr.md)
+* [Products derived from the Canadian Surface Reanalysis - Land (CaSR-Land) available on the MSC Datamart](readme_casr-land-datamart_fr.md)
 
 An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (../../usage/readme_fr.md) is available.
 

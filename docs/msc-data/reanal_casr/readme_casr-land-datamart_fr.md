@@ -25,7 +25,7 @@ Les __produits statistiques agrégés par bassin versant hydrologique__, dériv�
 où :
 
 * __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
-* __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National hydrographic Network" , `nhs` pour "National Hydrological Service")
+* __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydrographic Network" , `nhs` pour "National Hydrological Service")
 * __nb__ : Principaux bassins de drainage selon:
     * 01 : Provinces maritimes 
     * 02 : Saint-Laurent 
@@ -43,7 +43,7 @@ où :
 
 __Produits sur grille en format NetCDF__
 
-Les fichiers de prévision suivent la nomenclature ci-dessous:
+Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
 `{YYY1-YYY2}_MSC_CaSR-Land-{version}_{Var}_{Level}_{Grille}{resolution}_{TimeStep}.nc`
 
@@ -67,7 +67,7 @@ Exemples:
 
 __Produits agrégés par bassin versant hydrologique en format GeoJSON__
 
-Les fichiers de prévision suivent la nomenclature ci-dessous:
+Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
 `{YYY1-YYY2}_MSC_CaSR-Land-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json`
 
@@ -95,8 +95,8 @@ Exemples:
 * Accumulation des flux à réponse rapide, ruissellement (kg/m²)
 * Quantité de précipitations (m)
 * Accumulation du drainage soit l'écoulement vertical à la base de la couche de sol la plus profonde considérée pour le routage (kg/m²)
-* Profondeur de neige, agrégée (cm) 
-* Equivalent en eau de la couverture neigeuse, agrégée (kg/m²)
+* Profondeur de neige au sol (cm) 
+* Equivalent en eau de la couverture neigeuse au sol (kg/m²)
 * Contenu volumique d'eau liquide dans le sol (m³/m³)
 * Température de l'air (°C)
 * Température du point de rosée (°C)

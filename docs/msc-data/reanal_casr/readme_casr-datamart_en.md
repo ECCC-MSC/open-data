@@ -102,8 +102,8 @@ Examples:
 ## List of variables
 
 * Precipitation quantity (m)
-* Snow depth, aggregate (cm) 
-* Water equivalent of the snow cover, aggregate (kg/m²) 
+* Snow depth at ground level (cm) 
+* Water equivalent of the snow cover at ground level (kg/m²) 
 * Air Temperature (°C)
 * Dew point temperature (°C)
 
