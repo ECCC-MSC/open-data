@@ -6,11 +6,11 @@
 
 # Products derived from the Canadian Surface Reanalysis-Land (CaSR-Land)
 
-This page describes the gridded statistical products in NetCDF format as well as the aggregate statistical products by watershed in GeoJSON format, derived from the [Canadian Surface Reanalysis-Land (CaSR-Land)](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/overview_subproducts.html⁾ available on the MSC Datamart.
+This page describes the gridded statistical products in NetCDF format as well as the aggregate statistical products by watershed in GeoJSON format, derived from the [Canadian Surface Reanalysis-Land (CaSR-Land)](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/overview_subproducts.html) available on the MSC Datamart.
 
 ## Data location
 
-MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (../../usage/readme_en.md) is also available.
+MSC Datamart data can be [automatically retrieved with the Advanced Message Queuing Protocol (AMQP)](../../msc-datamart/amqp_en.md) as soon as they become available. An [overview and examples for accessing and using the Meteorological Service of Canada's open data](../../usage/readme_en.md) is also available.
 
 The data is available via the HTTPS protocol. It is possible to access ir with a standard browser. In this case, you obtain a list of links to a NetCDF or GeoJON file, depending on the product.
 
