@@ -27,17 +27,17 @@ Products derived from the Canadian Surface Reanalysis are available on the MSC's
 * [Products derived from the Canadian Surface Reanalysis (CaSR) available on the MSC Datamart](readme_casr-datamart_en.md)
 * [Products derived from the Canadian Surface Reanalysis - Land (CaSR-Land) available on the MSC Datamart] (readme_casr-land-datamart_fr.md)
 
-An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (.. /.. /usage/readme_fr.md) is available.
+An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (../../usage/readme_fr.md) is available.
 
 Note: Products derived from the Canadian Surface Reanalysis - Rivers (CaSR-Rivers) will be available in a near future.
 
 ### License
 
-The [End User Licence for Environment and Climate Change Canada's Data Servers](.. /.. /licence/readme_fr.md) specifies the terms of use of this data.
+The [End User Licence for Environment and Climate Change Canada's Data Servers](../../licence/readme_fr.md) specifies the terms of use of this data.
 
 ### MSC Open Data Services Use Policy
 
-The [MSC Open Data Services Use Policy](.. /.. /usage-policy/readme_fr.md) determines what constitutes an appropriate use of MSC's open data services and provides users with best practices for optimal use.
+The [MSC Open Data Services Use Policy](../../usage-policy/readme_fr.md) determines what constitutes an appropriate use of MSC's open data services and provides users with best practices for optimal use.
 
 ### Discovery metadata
 
