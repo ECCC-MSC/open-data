@@ -1,6 +1,6 @@
 [En français](readme_casr-datamart_fr.md)
 
-! [ECCC logo](.. /.. /img_eccc-logo.png)
+! [ECCC logo](../../img_eccc-logo.png)
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Canadian Surface Reanalysis](readme_casr_en.md) > CaSR Derived Products on the MSC Datamart
 
