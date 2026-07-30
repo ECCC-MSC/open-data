@@ -102,8 +102,8 @@ Exemples:
 ## Liste des variables
 
 * Quantité de précipitations (m)
-* Profondeur de neige, agrégée (cm) 
-* Equivalent en eau de la couverture neigeuse, agrégée (kg/m²)
+* Profondeur de neige au sol (cm) 
+* Equivalent en eau de la couverture neigeuse au sol (kg/m²)
 * Température de l'air (°C)
 * Température du point de rosée (°C)
 
