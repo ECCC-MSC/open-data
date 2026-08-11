@@ -34,7 +34,7 @@ Chaque tempête est représentée par une ligne reliant les positions successive
 * Un symbole dont la taille représente l'intensité 
 * Des marqueurs indiquant les positions à 00 UTC
 
-‘’’Documenter les 2 types de fichiers (StormTracks et TropicalCycloneTracks) et leur contenu‘’’
+_Documenter les 2 types de fichiers (StormTracks et TropicalCycloneTracks) et leur contenu_
 
 ## Nomenclature des noms de fichiers 
 
@@ -62,8 +62,8 @@ où :
 * __Var__ : Variables contenues dans le fichier ["GeopotentialHeight" pour l'altitude géopotentielle (gpm), "Pressure" pour la pression (mb)]
 * __LVLTYPE__ : Type de niveau vertical ["IsbL" pour le niveau idobarique (__Isobaric Level__), "MSL" pour le niveau moyen de la mer (__Mean Sea Level__)]
 * __LVL__ : Valeur du niveau vertical [0500 pour 500mb, 1000 pour 100mb]. Ce paramètre est absent pour le niveau moyen de la mer
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ‘’’à compléter‘’’
-* __PT{000...hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ‘’’à compléter‘’’
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ... _à compléter_
+* __PT{000...hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ... _à compléter_
 * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 Exemples de noms de fichiers: 
