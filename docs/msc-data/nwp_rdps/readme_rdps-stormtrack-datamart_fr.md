@@ -60,7 +60,7 @@ où :
 * __RDPS-TropicalCycloneTracks__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de centres de tempêtes générées à partir du Système régional de prévision déterministe (RDPS en anglais)
 * __RDPS-Analysis-TropicalCycloneTracks__ : Chaîne de caractères constante indiquant des analyses de trajectoires de centres de tempêtes générées à partir du Système régional de prévision déterministe (RDPS en anglais)
 * __Var__ : Variables contenues dans le fichier ["GeopotentialHeight" pour l'altitude géopotentielle (gpm), "Pressure" pour la pression (mb)]
-* __LVLTYPE__ : Type de niveau vertical ["IsbL" pour le niveau idobarique (__Isobaric Level__), "MSL" pour le niveau moyen de la mer (__Mean Sea Level__)]
+* __LVLTYPE__ : Type de niveau vertical ["IsbL" pour le niveau idobarique (_Isobaric Level_), "MSL" pour le niveau moyen de la mer (_Mean Sea Level_)]
 * __LVL__ : Valeur du niveau vertical [0500 pour 500mb, 1000 pour 100mb]. Ce paramètre est absent pour le niveau moyen de la mer
 * __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ... _à compléter_
 * __PT{000...hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente ... _à compléter_
