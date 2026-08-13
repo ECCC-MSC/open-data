@@ -60,11 +60,11 @@ where:
 * __CaSR__: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)
 * __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v3.2]
 * __Analysis__: A string indicating that the data are analyses, not forecasts
-* __Var__: Name of variable
+* __Var__: Variable name and associated statistics (see section below)
 * __Sfc__: A string indicating that the vertical level is the surface
 * __Grille__ : Horizontal rotated lat-lon grid [Rlatlon]
 * __resolution__: Resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions [0.09]
-* __TimeStep__: No time, taking one of the values [P1Y, P1M]; P1Y represents a one-year time step and P1M represents a one-month time step.
+* __TimeStep__: No time, taking one of the values [P1Y, P1M]; 'P1Y' represents a one-year time step and 'P1M' represents a one-month time step.
 * __nc__: Constant string indicating that the format is NetCDF
 
 Examples: 
@@ -91,9 +91,9 @@ where:
 * __Analysis__: A string indicating that the data are analyses, not forecasts
 * __DrainageArea__: Constant string of characters to specify the watershed  
 * __nb__: Drainage basin number [01, 02, .., 11]
-* __Var__: Name of variable
+* __Var__: Variable name and associated statistics (see section below)
 * __Sfc__: A string indicating that the vertical level is the surface
-* __TimeStep__: No time, taking one of the values [P1Y, P1M]; P1Y represents a one-year time step and P1M represents a one-month time step
+* __TimeStep__: No time, taking one of the values [P1Y, P1M]; 'P1Y' represents a one-year time step and 'P1M' represents a one-month time step
 * __json__: A constant string indicating that the format is GeoJSON
 
 Examples:
@@ -108,6 +108,13 @@ Examples:
 * Water equivalent of the snow cover, aggregate (kg/m²) 
 * Air Temperature (°C)
 * Dew point temperature (°C)
+
+Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax')
+
+Examples:
+
+* 'SnowWaterEquiv-YAvg'
+* 'DewPoint-MMin'
 
 ## Support
 
