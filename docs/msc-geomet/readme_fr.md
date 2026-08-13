@@ -88,7 +88,7 @@ Les services web de l'OGC suivant sont supportés par GeoMet du SMC :
   </div>
 </div>
 
-Pour de plus amples informations concernant les [normes](https://www.ogc.org/standards) et les [normes communautaires](https://www.ogc.org/standards/community/) de l'Open Geospatial Consortium, veuillez consulter les références officielle
+Pour de plus amples informations concernant les [normes](https://www.ogc.org/standards) et les [normes communautaires](https://www.ogc.org/standards/community/) de l'Open Geospatial Consortium, veuillez consulter les références officielles :
 
 *   [Web Map Service (WMS)](https://www.opengeospatial.org/standards/wms)
 *   [Web Coverage Service (WCS)](https://www.opengeospatial.org/standards/wcs)
