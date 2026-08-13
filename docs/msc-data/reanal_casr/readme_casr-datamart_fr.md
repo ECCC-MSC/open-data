@@ -58,7 +58,7 @@ où :
 * __CaSR__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)
 * __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
 * __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions
-* __Var__ : Nom de la variable
+* __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
 * __Sfc__ : Chaîne de caractères indiquant que le niveau vertical est la surface
 * __Grille__ : Grille horizontale lat-lon tournée [Rlatlon]
 * __resolution__ : Résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale [0.09]
@@ -89,7 +89,7 @@ où :
 * __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions
 * __DrainageArea__ : Chaîne de caractères constante pour spécifier le bassin versant  
 * __nb__ : Numéro du bassin de drainage [01, 02, .., 11]
-* __Var__ : Nom de la variable
+* __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
 * __Sfc__ : Chaîne de caractères indiquant que le niveau vertical est la surface
 * __TimeStep__ : Pas de temps, prenant l'une des valeurs [P1Y, P1M] ; `P1Y` représente un pas de temps d'un an et `P1M` représente un pas de temps d'un mois
 * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
@@ -106,6 +106,13 @@ Exemples:
 * Equivalent en eau de la couverture neigeuse au sol (kg/m²)
 * Température de l'air (°C)
 * Température du point de rosée (°C)
+
+À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`)
+
+Exemples:
+
+* `SnowWaterEquiv-YAvg`
+* `DewPoint-MMin`
 
 ## Support
 

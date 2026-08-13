@@ -100,12 +100,12 @@ Examples:
 * Air Temperature (°C)
 * Dew point temperature (°C)
 
-Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax')
+Each variable is associated with a statistic, i.e. the annual/monthly average (`YAvg/MAvg)`, the annual/monthly minimum (`YMin/MMin`) or the annual/monthly maximum (`YMax/MMax`)
 
 Examples:
 
-* 'SnowWaterEquiv-YAvg'
-* 'DewPoint-MMin'
+* `SnowWaterEquiv-YAvg`
+* `DewPoint-MMin`
 
 ## Support
 
