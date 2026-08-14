@@ -60,6 +60,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ## Documentation technique
 
+* [Note technique de mise à jour la plus récente des données CAP-XML](https://collaboration.cmc.ec.gc.ca/cmc/cmos/doc/CAP/CAP-Release-Note_FR.pdf) 
 * [Guides d'impact des conditions météo](https://www.canada.ca/fr/services/environnement/meteo/conditionsdangereuses/alertes-meteo/guides-impact-meteo.html) 
 * [Version actuelle du système national d'alertes au public](https://www.securitepublique.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-fr.aspx)
 

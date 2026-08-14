@@ -61,6 +61,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 
 ## Technical documentation
 
+* [Last CAP-XML data update technical note](https://collaboration.cmc.ec.gc.ca/cmc/cmos/doc/CAP/CAP-Release-Note_EN.pdf)
 * [Weather impact guides](https://www.canada.ca/en/services/environment/weather/severeweather/weather-alerts/weather-impact-guides.html)
 * [Actual version of the national public alerting system](https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/mrgnc-prprdnss/npas/clf-lng-20-en.aspx) 
 
