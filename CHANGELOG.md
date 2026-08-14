@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.12
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    * Add CaSR-Land, CaSR derived products doc
+ * improvements:
+    * NA
+* bug fixes:
+    * Typos
+    * Add last release note to CAP-XML technical documentation
+
 # 2.10.11
 
 * date: 2026-07-28
