@@ -4,7 +4,7 @@
 
 [TOC](../../readme_en.md) > [MSC data](../readme_en.md) > [Canadian Surface Reanalysis](readme_casr_en.md) > CaSR-Land derived products on the MSC Datamart
 
-# Products derived from the Canadian Surface Reanalysis-Land (CaSR-Land)
+# Products derived from the Canadian Surface Reanalysis - Land (CaSR-Land)
 
 This page describes the gridded statistical products in NetCDF format as well as the aggregate statistical products by watershed in GeoJSON format, derived from the [Canadian Surface Reanalysis-Land (CaSR-Land)](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/overview_subproducts.html) available on the MSC Datamart.
 
@@ -14,11 +14,11 @@ MSC Datamart data can be [automatically retrieved with the Advanced Message Queu
 
 The data is available via the HTTPS protocol. It is possible to access ir with a standard browser. In this case, you obtain a list of links to a NetCDF or GeoJON file, depending on the product.
 
-Gridded statistical products derived from the Canadian Surface Reanalysis-Land (CaSR-Land) can be found at:
+__Gridded statistical products__ derived from the Canadian Surface Reanalysis - Land (CaSR-Land) can be found at:
 
 * [https://dd.weather.gc.ca/today/reanalysis_casr/casr-land/{Version}/post-processing/grid](https://dd.version.gc.ca/today/reanalysis_casr/casr-land/)
 
-Aggregate statistical products by watershed, derived from the Canadian Surface Reanalysis-Land (CaSR-Land), can be found at:
+__Aggregate statistical products by watershed__, derived from the Canadian Surface Reanalysis - Land (CaSR-Land), can be found at:
 
 * [https://dd.weather.gc.ca/today/reanalysis_casr/casr-land/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}](https://dd.weather.gc.ca/today/reanalysis_casr/casr-land/)
 
