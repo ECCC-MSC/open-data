@@ -16,7 +16,7 @@ The data is available via the HTTPS protocol. It is possible to access ir with a
 
 Gridded statistical products derived from the Canadian Surface Reanalysis - Rivers (CaSR-Rivers) can be found at:
 
-* [https://dd.weather.gc.ca/today/reanalysis_casr/casr-land/{Version}/post-processing/grid](https://dd.version.gc.ca/today/reanalysis_casr/casr-land/)
+* [https://dd.weather.gc.ca/today/reanalysis_casr/casr-rivers/{Version}/post-processing/grid](https://dd.version.gc.ca/today/reanalysis_casr/casr-rivers/)
 
 where:
 
