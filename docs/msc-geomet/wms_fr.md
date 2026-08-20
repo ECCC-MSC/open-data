@@ -72,6 +72,7 @@ Une requête WMS GetMap est composée des paramètres suivants :
 | ------------------------- | ---------- |
 | TIME            | La date et l'heure associées à l'image désirée. Le format doit respecter le standard ISO8601. Pour davantage d'information, vous référer à la section sur [la spécification du temps dans les requêtes WMS](#specification-du-temps)|
 | DIM_REFERENCE_TIME  | Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur [la spécification du temps dans les requêtes WMS](#specification-du-temps)|
+| INTERPOLATION   | Un paramètre externe (vendor extension) offert pour les couches GeoMet-Météo prises en charge, qui permet la mise à l'échelle et le rééchantillonnage de l'image retournée à la volée, offrant un rendu plus fluide et moins pixelisé. La valeur acceptée pour ce paramètre est `TRUE`. Si ce paramètre n'est pas spécifié, aucune interpolation n'est appliquée et l'image est retournée à sa résolution native.|
 
 La requête WMS `GetMap` suivante retourne une image de la couche de température de l'air (`GDPS_15km_AirTemp_2m`) du Système global de prévision déterministe (SGPD) :
 
