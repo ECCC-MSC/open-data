@@ -6,42 +6,23 @@
 
 # Produits dérivés de la Réanalyse canadienne de surface - Rivières (RCaS-Rivières)
 
-Cette page décrit des produits statistiques sur grille en format NetCDF ainsi que les produits statistiques agrégés par bassin versant hydrologique en format GeoJSON, dérivés de la composante rivières de la [Réanalyse canadienne de surface](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/overview_subproducts_fr.html) disponibles sur le Datamart du SMC. 
+Cette page décrit des produits statistiques sur grille en format NetCDF dérivés de la composante rivières de la [Réanalyse canadienne de surface](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/overview_subproducts_fr.html) disponibles sur le Datamart du SMC. 
 
 ## Adresse des données 
 
 Les données du Datamart du SMC peuvent être [automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)](../../msc-datamart/amqp_fr.md) dès qu'elles deviennent disponibles. Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est également disponible.
 
-Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF ou GeoJON selon le produit.
+Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF.
 
-Les __produits statistiques sur grille__, dérivés de la composante rivières de la Réanalyse canadienne de surface (RCaS-Rivières) se trouvent à l'adresse :
+Les produits statistiques sur grille, dérivés de la composante rivières de la Réanalyse canadienne de surface (RCaS-Rivières) se trouvent à l'adresse :
 
 * [https://dd.meteo.gc.ca/today/reanalysis_casr/casr-rivers/{Version}/post-processing/grid](https://dd.meteo.gc.ca/today/reanalysis_casr/casr-rivers/)
-
-Les __produits statistiques agrégés par bassin versant hydrologique__, dérivés de la composante rivières de la Réanalyse canadienne de surface (RCaS-Rivers) se trouvent à l'adresse :
-
-* [https://dd.meteo.gc.ca/today/reanalysis_casr/casr-rivers/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}](https://dd.meteo.gc.ca/today/reanalysis_casr/casr-rivers/)
 
 où :
 
 * __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
-* __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydrographic Network" , `nhs` pour "National Hydrological Service")
-* __nb__ : Principaux bassins de drainage selon:
-    * 01 : Provinces maritimes 
-    * 02 : Saint-Laurent 
-    * 03 : Nord du Québec et du Labrador 
-    * 04 : Sud-ouest de la baie d’Hudson 
-    * 05 : Fleuve Nelson 
-    * 06 : Ouest et nord de la baie d’Hudson 
-    * 07 : Grand lac des Esclaves 
-    * 08 : Pacifique 
-    * 09 : Fleuve Yukon 
-    * 10 : Arctique 
-    * 11 : Fleuve Mississippi
 
 ## Nomenclature des noms de fichiers 
-
-__Produits sur grille en format NetCDF__
 
 Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
@@ -52,9 +33,9 @@ où :
 * __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR-Rivers__ : Chaîne de caractères indiquant que les données sont dérivées de la composante rivières de la Réanalyse canadienne de surface (CaSR-Rivers en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
+* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v2.1, v3.2]
 * __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
-* __Level__ : Chaîne de caractères indiquant le niveau vertical [`Sfc` pour la surface, `AGL` pour "Above Ground Level", `DBS` pour "Depth Below Surface"]
+* __Level__ : Chaîne de caractères indiquant le niveau vertical [`Sfc` pour la surface]
 * __Grille__ : Grille horizontale lat-lon tournée [Rlatlon]
 * __resolution__ : Résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale [0.09]
 * __TimeStep__ : Pas de temps, prenant l'une des valeurs [P1Y, P1M]; `P1Y` représente un pas de temps d'un an et `P1M` représente un pas de temps d'un mois
@@ -62,51 +43,21 @@ où :
 
 Exemples: 
 
-* 1968-2024_MSC_CaSR-Rivers-v3.2_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-Rivers-v3.2_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc
-
-__Produits agrégés par bassin versant hydrologique en format GeoJSON__
-
-Les fichiers de prévisions suivent la nomenclature ci-dessous:
-
-`{YYY1-YYY2}_MSC_CaSR-Rivers-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json`
-
-où :
-
-* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
-* __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __CaSR-Rivers__ : Chaîne de caractères indiquant que les données sont dérivées de la composante rivières de la Réanalyse canadienne de surface terrestre (CaSR-Rivers en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
-* __DrainageArea__ : Chaîne de caractères constante pour spécifier le bassin versant  
-* __nb__ : Numéro du bassin de drainage [01, 02, .., 11]
-* __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
-* __Level__ : Chaîne de caractères indiquant le niveau vertical [`Sfc` pour la surface, `AGL` pour "Above Ground Level", `DBS` pour "Depth Below Surface"]
-* __TimeStep__ : Pas de temps, prenant l'une des valeurs [P1Y, P1M] ; `P1Y` représente un pas de temps d'un an et `P1M` représente un pas de temps d'un mois
-* __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
-
-Exemples:
-
-* 1968-2024_MSC_CaSR-Rivers-v3.2_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json
-* 1968-2024_MSC_CaSR-Rivers-v3.2_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json
-
+* 1968-2024_MSC_CaSR-Rivers-v3.2_RiverDischarge-MMax_Sfc_RLatLon0.09_P1M.nc
+* 1968-2024_MSC_CaSR-Rivers-v3.2_DeepReservoirStorage-YMin_Sfc_RLatLon0.09_P1Y.nc
 
 ## Liste des variables
 
-* Accumulation des flux à réponse rapide, ruissellement (kg/m²)
-* Quantité de précipitations (m)
-* Accumulation du drainage soit l'écoulement vertical à la base de la couche de sol la plus profonde considérée pour le routage (kg/m²)
-* Profondeur de neige au sol (cm) 
-* Equivalent en eau de la couverture neigeuse au sol (kg/m²)
-* Contenu volumique d'eau liquide dans le sol (m³/m³)
-* Température de l'air (°C)
-* Température du point de rosée (°C)
+* Débit de rivière, débit moyen sortant du canal de rivière pendant l'heure terminant à la date indiquée (m³/s)
+* Eau retenue dans le canal de rivière (m³)
+* Réservoir profond, épaisseur de la couche d'eau contenue dans le réservoir profond (kg/m²)
 
 À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`)
 
 Exemples:
 
-* `SnowWaterEquiv-YAvg`
-* `DewPoint-MMin`
+* `RiverDischarge-YAvg`
+* `DeepReservoirStorage-MMin`
 
 ## Support
 
