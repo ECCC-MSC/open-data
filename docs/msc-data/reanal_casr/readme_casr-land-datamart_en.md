@@ -92,7 +92,6 @@ Examples:
 ## List of variables
 
 * Accumulation of quick response flux, runoff (kg/m²)
-* Precipitation quantity (m)
 * Drainage accumulation, i.e., the vertical flow at the base of the deepest soil layer considered for routing (kg/m²)
 * Snow depth at ground level (cm) 
 * Water equivalent of the snow cover at ground level (kg/m²)

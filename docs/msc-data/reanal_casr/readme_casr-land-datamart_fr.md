@@ -93,7 +93,6 @@ Exemples:
 ## Liste des variables
 
 * Accumulation des flux à réponse rapide, ruissellement (kg/m²)
-* Quantité de précipitations (m)
 * Accumulation du drainage soit l'écoulement vertical à la base de la couche de sol la plus profonde considérée pour le routage (kg/m²)
 * Profondeur de neige au sol (cm) 
 * Equivalent en eau de la couverture neigeuse au sol (kg/m²)
