@@ -71,6 +71,10 @@ Récupération de la liste des derniers pas de temps disponibles :
 * Les utilisateurs peuvent également avoir les dimensions temporelles les plus à jour pour toutes les couches radar qui ont un intervalle de temps en minutes, en une seule requête, via l'utilisation du paramètre de requête `LAYERS_REFRESH_RATE=PT1M`. De plus, toutes les couches ayant un intervalle de temps en minutes feront partie de ce WMS GetCapabilities. Exemple pour la requête : [https://geo.meteo.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities&lang=fr](https://geo.meteo.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities&lang=fr)
 * Davantage d'informations sont disponibles dans la section sur [la spécification du temps avec les services WMS](../../../msc-geomet/web-services_fr#specification-du-temps)
 
+Interpolation :
+
+* Les requêtes WMS GetMap pour les couches radar prises en charge peuvent utiliser le paramètre de requête `INTERPOLATION=TRUE` afin d'activer la mise à l'échelle et le rééchantillonnage de l'image retournée à la volée, offrant un rendu plus fluide et moins pixelisé. Davantage d'information est disponible dans la [documentation technique du WMS GetMap](../../../msc-geomet/wms_fr/#wms-getmap)
+
 Styles WMS :
 
 * En plus du style WMS par défaut, plusieurs styles WMS alternatifs avec des échelles de couleurs différentes sont disponibles. La liste des styles WMS est fournie dans la réponse d'une requête WMS GetCapabilities

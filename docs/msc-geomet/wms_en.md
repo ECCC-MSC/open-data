@@ -70,6 +70,7 @@ A WMS GetMap request allows the client to retrieve a map image (JPEG, PNG, etc.)
 | ------------------------- | ---------- |
 | TIME            | The date and time used to generate the requested image. The format must respect ISO8601. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
 | DIM_REFERENCE_TIME  | The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the [WMS Handling Time](#handling-time) section.|
+| INTERPOLATION   | A vendor extension for supported GeoMet-Weather layers that enables on-the-fly upscaling and resampling of the returned image, resulting in smoother, less pixelated visuals. The accepted value for this parameter is `TRUE`. If this parameter is not specified, no interpolation is applied and the image is returned at its native resolution.|
 
 The following WMS `GetMap` request returns an image of the air temperature layer (`GDPS_15km_AirTemp_2m`) from the Global Deterministic Prediction System (GDPS):
 

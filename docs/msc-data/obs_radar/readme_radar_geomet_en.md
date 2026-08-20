@@ -71,6 +71,10 @@ Retrieving the list of latest layer timesteps available:
 * Users can also get the most up-to-date time dimensions for all radar layers with a time interval in minutes, in a single query, via the use of the `LAYERS_REFRESH_RATE=PT1M` query parameter. In addition, all layers with a time interval in minutes will be included in this WMS GetCapabilities. Example for the query: [https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities](https://geo.weather.gc.ca/geomet?LAYERS_REFRESH_RATE=PT1M&SERVICE=WMS&REQUEST=GetCapabilities)
 * Additional information is available in the [handling time with WMS section](../../../msc-geomet/web-services_en#handling-time)
 
+Interpolation:
+
+* WMS GetMap requests for supported radar layers can use the `INTERPOLATION=TRUE` query parameter to enable on-the-fly upscaling and resampling of the returned image, resulting in smoother, less pixelated visuals. Additional information is available in the [WMS GetMap technical documentation](../../../msc-geomet/wms_en/#wms-getmap)
+
 WMS styles:
 
 * In addition to the default WMS style, several alternative WMS styles with different color scales are available. The list of available WMS styles is provided in the WMS GetCapabilities response
