@@ -4,9 +4,9 @@
 
 [TdM](../readme_fr.md) > Licence
 
-# Licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada
+# Licence d’utilisation finale pour les services de données d’Environnement et Changement climatique Canada
 
-Version 2.1 - Septembre 2022
+Version 2.1.1 - Août 2026
 
 Vous êtes encouragés à utiliser l’Information offerte en vertu de la présente licence, sous réserve de quelques conditions.
 

@@ -4,7 +4,7 @@
 
 [TOC](../readme_en.md) > Usage Policy
 
-# MSC Open Data Service Usage Policy
+# MSC Open Data Services Usage Policy
 
 The MSC Open Data Service Usage Policy determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use. This Service Usage Policy complements the [End-use licence](../licence/readme_en.md).
 
