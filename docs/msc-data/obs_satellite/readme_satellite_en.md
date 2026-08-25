@@ -19,7 +19,7 @@ The [Himawari-8/9 satellites operated by the Japan Meteorological Agency (JMA)](
 Satellite data are available on MSC's Datamart data server:
 
 * [GOES satellite layers available via geospatial web services on GeoMet-Weather](readme_satellite_geomet_en.md)
-* [GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite-datamart_en.md)
+* [GOES satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite_Goes-datamart_en.md)
 * [Himawari satellite data in GeoTIFF format available on the MSC Datamart](readme_satellite_Himawari-datamart_en.md)
 
 [An overview and examples of how to access and use Meteorological Service of Canada open data](../../usage/readme_en.md) is available.
