@@ -1,16 +1,18 @@
-[In English](readme_satellite-datamart_en.md)
+[In English](readme_satellite_Goes-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations satellite](readme_satellite_fr.md) > Observations satellite sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [Observations satellite](readme_satellite_fr.md) > Observations du satellite GOES sur le Datamart du SMC
 
-# Données et produits satellitaires
+# Données et produits satellitaires du satellite GOES
 
 Cette page décrit des données et produits dérivés des instruments [satellitaires](readme_satellite_fr.md) GOES-Ouest et GOES-Est en format GeoTIFF disponibles sur le Datamart du SMC. 
 
 Ces produits sont dérivés d'images [RVB](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_fr.pdf) (rouge/vert/bleu), une technique de traitement satellitaire qui utilise une combinaison de bandes de capteurs satellitaires (également appelées canaux) et les applique chacune à un filtre rouge/vert/bleu (RVB). Il en résulte une image en fausses couleurs, c'est-à-dire une image qui ne correspond pas à ce que verrait l'œil humain, mais qui offre un contraste élevé entre les différents types de nuages et les caractéristiques de la surface. Le capteur embarqué à bord d'un satellite météorologique obtient deux types d'informations de base : les données de la lumière visible (lumière réfléchie) se reflétant sur les nuages et les différents types de surface, aussi appelée « réflectance », et les données infrarouges (radiation émise) qui sont des radiations à ondes longues et courtes émises par les nuages et les caractéristiques de surface. Les RVB sont spécialement conçus pour combiner ce type de données satellitaires, ce qui permet d'obtenir un produit final riche en informations.
 
 Les autres produits résultent d’un rehaussement des données d’un canal pour une longueur d’onde unique, visant aussi à mettre en évidence des caractéristiques météorologiques de la surface ou des nuages observés, mais de manière plus simple puisque ne mettant en jeu qu’une seule longueur d’onde. Cette façon de faire plus ancienne est toujours utile parce que sa simplicité facilite dans certains cas l’interprétation de l’image.
+
+Les données sont disponibles sur les domaines Ouest et Est fixes et également sur des fenêtres Meso-1 et Meso-2 à méso-échelle sur chacun de ces domaines, permettant une surveillance ciblée de phénomènes météorologiques d'intérêt.
 
 ## Adresse des données 
 
@@ -39,15 +41,16 @@ où :
 * __HHmm__ : Heure et minute en UTC du temps de validité de l'image [00, 01, 02, ...., 22, 23] 
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
-* __GOES-Sat__ : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West] 
+* __GOES-Sat__ : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West, GOES-East-Meso1, GOES-East-Meso2, GOES-West-Meso1, GOES-West-Meso2] 
 * __Product__ : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, FireTemperature, etc.]. Voir la section sur le contenu des fichiers
 * __resolution__ : Résolution horizontale des données [1km, 2km]
 * __tif__ : Chaîne de caractères constante indiquant que le format est GeoTIFF 
 
-Examples: 
+Exemples: 
 
 * 20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif
 * 20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif
+* 20240314T0000Z_MSC_GOES-East-Meso1_DayVis_1km.tif
 
 ## Contenu des fichiers
 
@@ -99,6 +102,16 @@ Voici la liste des combinaisons «jour-nuit» disponibles:
 * Détection des feux de jour /SWIR
 
 D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.
+
+## Produits méso-échelle
+
+Conçu pour fournir des images à très haute fréquence temporelle sur une zone d'intérêt restreinte, le mode méso-échelle permet le suivi en temps réel des phénomènes à évolution rapide, tels que les orages violents, les cyclones tropicaux, les feux de forêt, les éruptions volcaniques et d'autres événements météorologiques ou environnementaux majeurs.
+
+Ce mode d'observation complète les acquisitions de routine des satellites GOES en offrant une résolution temporelle accrue lorsque des conditions particulières le justifient. Il contribue ainsi aux activités de surveillance opérationnelle et de prévision immédiate.
+
+La couverture spatiale des secteurs de méso-échelle (Meso-1 et Meso-2) correspond à des domaines d’observation rectangulaires d’environ 1000 × 1000 km, positionnés dynamiquement sur des zones d’intérêt situées dans le domaine d’observation des satellites GOES-Est et GOES-Ouest. Les secteurs sont déplacés selon les besoins opérationnels afin d’assurer une surveillance à haute fréquence des phénomènes météorologiques ou environnementaux à évolution rapide.
+
+En l’absence de requête de la part d’ECCC/SMC, c’est la NOAA qui détermine le positionnement des quatre fenêtres (deux pour GOES-Est et deux pour GOES-Ouest). Nous recevons ensuite des imagettes couvrant une zone de 1000 × 1000 km, que nous traitons entièrement afin de générer les produits. Il est important de noter que GOES-Est Meso-1 et Meso-2 sont tous deux positionnés dans la partie Est, ce qui permet de surveiller simultanément deux phénomènes différents dans cette région. Il en va de même pour GOES-Ouest Meso-1 et Meso-2, qui sont tous deux positionnés dans la partie Ouest.
 
 ## Support
 

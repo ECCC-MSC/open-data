@@ -1,16 +1,18 @@
-[En français](readme_satellite-datamart_fr.md)
+[En français](readme_satellite_Goes-datamart_fr.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > Satellite Observations on the MSC Datamart
+[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > GOES Satellite Observations on the MSC Datamart
 
-# Satellite data and products
+# GOES satellite data and products
 
 This page describes data and products derived from GOES-West and GOES-East [satellite](readme_satellite_en.md) instruments in GeoTIFF format available on the MSC Datamart. 
 
 These products are derived from [RGB](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_en.pdf) (red/green/blue) images, a satellite processing technique that uses a combination of satellite sensor bands (also called channels) and applies a red/green/blue (RGB) filter to each of them. The result is a false-color image, i.e. an image that does not correspond to what the human eye would see, but offers high contrast between different cloud types and surface features. The on-board sensor of a weather satellite obtains two basic types of information: visible light data (reflected light) reflecting off clouds and different surface types, also known as "reflectance", and infrared data (emitted radiation) which are short-wave and long-wave radiation emitted by clouds and surface features. RGBs are specially designed to combine this type of satellite data, resulting in an information-rich final product.
 
 Other products are based on the enhancement of channel data for a single wavelength, also aimed at highlighting meteorological features of the observed surface or clouds, but in a simpler way since only a single wavelength is involved. This older approach is still useful today, as its simplicity makes image interpretation easier in some cases.
+
+Data is available for the fixed West and East domains and also on Meso-1 and Meso-2 mesoscale windows for each of these domains, allowing targeted monitoring of meteorological phenomena of interest.
 
 ## Data location 
 
@@ -39,7 +41,7 @@ where :
 * __HHmm__: Hour and minute in UTC of image validity time [00, 01, 02, ...., 22, 23] 
 * __Z__: Time zone (UTC time)
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
-* __GOES-Sat__ : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]
+* __GOES-Sat__ : String indicating that data are derived from GOES satellites [GOES-East, GOES-West, GOES-East-Meso1, GOES-East-Meso2, GOES-West-Meso1, GOES-West-Meso2]
 * __Product__: String indicating the type of satellite product generated [Ash, FireTemperature, etc.]. See the section on file contents
 * __resolution__ : Horizontal resolution of data [1km, 2km]
 * __tif__ : Constant string indicating that the format is GeoTIFF 
@@ -48,6 +50,7 @@ Examples:
 
 * 20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif
 * 20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif
+* 20240314T0000Z_MSC_GOES-East-Meso1_DayVis_1km.tif
 
 ## File contents
 
@@ -88,7 +91,6 @@ Fifteen types of products are currently generated from the GOES-West and GOES-Ea
 | [Night Microphysics IR](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/nightmicrophysicsir_en.pdf) | 2km | Monitoring of nocturnal convective storms | Appears only in the night portion of a product combination |
 | [GeoColor](https://www.star.nesdis.noaa.gov/goes/documents/QuickGuide_CIRA_Geocolor_20171019.pdf) | 1km | Intuitive interpretation of meteorological and surface-based features. Identify smoke, blowing dust, haze, and anything that has a unique color property | Multispectral product composed of True Color during daytime, and an Infrared product that uses bands 7 and 13 at night |
 
-
 Here is the list of available "day-night" combinations:
 
 * Day Cloud Convection (or DayVis) / Night IR
@@ -100,6 +102,16 @@ Here is the list of available "day-night" combinations:
 * Day Land Cloud Fire / SWIR
 
 Other RGB products will gradually be added in the future to serve a wider range of needs.
+
+## Mesoscale products
+
+Designed to provide very high temporal frequency images over a restricted area of interest, the mesoscale mode allows the real-time monitoring of rapidly evolving phenomena, such as severe thunderstorms, tropical cyclones, forest fires, volcanic eruptions and other major weather or environmental events.
+
+This mode of observation complements the routine acquisitions of GOES satellites by offering increased temporal resolution when particular conditions warrant it. It thus contributes to operational monitoring and nowcasting activities.
+
+The spatial coverage of the mesoscale areas (Meso-1 and Meso-2) corresponds to rectangular observation domains of about 1000 × 1000 km, dynamically positioned on areas of interest located in the domain of observation of the GOES-East and GOES-West satellites. Sectors are moved according to operational needs to ensure high-frequency monitoring of rapidly changing meteorological or environmental phenomena.
+
+In the absence of a request from ECCC/MSC, NOAA determines the position of the four windows (two for GOES-East and two for GOES-West). We then receive thumbnails covering an area of 1000 × 1000 km, which we process entirely in order to generate the products. It is important to note that GOES-East Meso-1 and Meso-2 are both positioned in the eastern part, which makes it possible to simultaneously monitor two different phenomena in this region. The same applies to GOES-West Meso-1 and Meso-2, both of which are positioned in the western part.
 
 ## Support
 
