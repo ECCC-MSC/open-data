@@ -90,9 +90,9 @@ Series of events organized around MSC open data:
 The End-use Licence determines the conditions for using the data and information. The main requirement is to clearly acknowledge Environment and Climate Change Canada as the data source, [please refer to the Licence for details](licence/readme_en.md).
 </br></br>
 
-## MSC Open Data Service Usage Policy
+## MSC Open Data Services Usage Policy
 
-The [MSC Open Data Service Usage Policy](usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use. This Service Usage Policy complements the [End-use licence](licence/readme_en.md).
+The [MSC Open Data Services Usage Policy](usage-policy/readme_en.md) determines what constitutes an acceptable use of MSC Open Data services and provides users best practices for optimal use. This Service Usage Policy complements the [End-use licence](licence/readme_en.md).
 </br></br>
 
 ## Frequently Asked Questions

@@ -4,9 +4,9 @@
 
 [TOC](../readme_en.md) > Licence
 
-# Environment and Climate Change Canada Data Servers End-use Licence
+# Environment and Climate Change Canada Data Services End-use Licence
 
-Version 2.1 - September 2022
+Version 2.1.1 - August 2026
 
 You are encouraged to use the Information that is available under this licence with only a few conditions.
 
