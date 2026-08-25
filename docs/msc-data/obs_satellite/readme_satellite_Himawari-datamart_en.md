@@ -2,7 +2,7 @@
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > Satellite Observations on the MSC Datamart
+[TdM](../../readme_en.md) > [MSC Data](../readme_en.md) > [Satellite Observations](readme_satellite_en.md) > Satellite Himawari Observations on the MSC Datamart
 
 # Himawari satellite data and products
 

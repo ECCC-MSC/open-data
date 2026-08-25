@@ -21,7 +21,7 @@ The data can be accessed at the following URLs:
 where:
 
 * __HH__ : Model run start, in UTC [00,06,12,18]
-* __hhh__ : Forecast hour [001, ..., 084] 
+* __hhh__ : Forecast hour [000, 001, ..., 084] 
 
 
 ## Technical specification of the grid

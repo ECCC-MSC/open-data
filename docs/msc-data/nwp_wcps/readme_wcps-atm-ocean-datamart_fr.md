@@ -21,7 +21,7 @@ Les données sont accessibles à l'adresse suivante :
 où :
 
 * __HH__ : Heure en UTC du début de la simulation [00,06,12,18]
-* __hhh__ : Heure de la prévision [001, ..., 084] 
+* __hhh__ : Heure de la prévision [000, 001, ..., 084] 
 
 ## Spécification technique de la grille  
 
