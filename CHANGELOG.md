@@ -17,8 +17,9 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
     * Not announced
 * new content:
     * Add CaSR-Land, CaSR derived products doc
+    * Add RAQDPS-FW Cumulative effects products (GeoMet page only)
  * improvements:
-    * NA
+    * Update FAQ
 * bug fixes:
     * Typos
     * Add last release note to CAP-XML technical documentation

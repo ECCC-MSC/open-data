@@ -53,6 +53,7 @@ Upcoming.
 
 * [Hourly forecast maps over 72-hours, and 24-hour forecast maps for average and maximum over 72-hours, for total PM2.5 concentrations near the surface within wildfire smoke plume](https://weather.gc.ca/firework/index_e.html).
 * [Hourly forecast maps over 72-hours for tropospheric ozone (O₃), nitrogen dioxide (NO₂), and total PM2.5 concentrations near the surface](https://weather.gc.ca/firework/index_e.html).
+* [Cumulative effects products - RAQDPS-FW](../nwp_raqdps-fw/readme_raqdps-fw-ce-geomet_en.md)
 
 ## Technical documentation
 
