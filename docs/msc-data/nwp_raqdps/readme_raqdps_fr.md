@@ -53,6 +53,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 * [Cartes des prévisions horaires sur 72 heures, et cartes des prévisions des moyennes et maximums par 24 heures sur 72 heures, des concentrations totales de PM2.5 près de la surface dans le panache de fumée](https://meteo.gc.ca/firework/index_f.html).
 * [Cartes des prévisions horaires sur 72 heures pour l'ozone troposphérique (O₃), le dioxyde d'azote (NO₂) et les concentrations totales de PM2.5 près de la surface](https://meteo.gc.ca/firework/index_f.html).
+* [Produits sur les effets cumulatifs - SRPDQA-FW](../nwp_raqdps-fw/readme_raqdps-fw-ce-geomet_fr.md)
 
 ## Documentation technique
 
