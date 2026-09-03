@@ -25,7 +25,7 @@ __Aggregate statistical products by watershed__, derived from the Canadian Surfa
 where:
 
 * __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (e.g., v3.2)
-* __polygon_dataset__: Name of the watershed polygon set (`nhn` for "National Hydrographic Network", `nhs` for "National Hydrological Service")
+* __polygon_dataset__: Name of the watershed polygon set (`nhn` for "National Hydro Network", `nhs` for "National Hydrological Service")
 * __nb__: Main drainage basins according to:
     * 01: Maritime Provinces 
     * 02: St. Lawrence 
