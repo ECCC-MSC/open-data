@@ -81,7 +81,7 @@ You can also access the data from the American [AirNow](https://www.airnow.gov/)
 
 ## Technical documentation
 
-* [Guide to Air Quality Health Index forecasts](https://www.canada.ca/en/environment-climate-change/services/weather-health/publications/guide-air-quality-index-forecasts.html)
+* [Guide to Air Quality Health Index forecasts](https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/about.html)
 
 ## Changelog
 
