@@ -25,11 +25,11 @@ Les __produits statistiques agrégés par bassin versant hydrologique__, dériv�
 où :
 
 * __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
-* __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydrographic Network" , `nhs` pour "National Hydrological Service")
+* __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydro Network" le Réseau hydro national, `nhs` pour "National Hydrological Service" le Service hydrologique national)
 * __nb__ : Principaux bassins de drainage selon:
     * 01 : Provinces maritimes 
     * 02 : Saint-Laurent 
-    * 03 : Nord du Québec et du Labrador 
+    * 03 : Nord du Québec et Labrador 
     * 04 : Sud-ouest de la baie d’Hudson 
     * 05 : Fleuve Nelson 
     * 06 : Ouest et nord de la baie d’Hudson 
