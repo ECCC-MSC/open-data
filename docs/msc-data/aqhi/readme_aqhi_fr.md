@@ -4,10 +4,10 @@
 
 [TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > CAS
 
-# Données et produits d'observations et prévisions qui sont générés pour le programme Cote Air Santé (CAS)
+# Données et produits d'observations et prévisions qui sont générés pour le programme cote air santé (CAS)
 
-La **Cote air santé CAS** est une échelle conçue pour quantifier la qualité de l'air dans une région donnée, sur une échelle de 1 à 10. La cote 10+ indique que la pollution de l'air est très élevée. La Cote air santé comprend également une catégorie décrivant le risque pour la santé correspondant au nombre indiqué risque faible, modéré, élevé ou très élevé . La Cote air santé est calculée en fonction des risques relatifs que représente une combinaison de polluants atmosphériques courants connus pour leurs effets néfastes sur la santé humaine, tels que l'ozone troposphérique, les matières particulaires et le dioxyde d'azote. La formulation de la Cote air santé rend uniquement compte du risque pour la santé aigu ou à court terme contact en heures ou en jours au maximum .
-Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouvelle compréhension des effets de la pollution atmosphérique sur la santé. La Cote air santé est calculée à partir de données observées en temps réel, sans vérification contrôle de la qualité.
+La **cote air santé (CAS)** est une échelle conçue pour quantifier la qualité de l'air dans une région donnée, sur une échelle de 1 à 10. La cote 10+ indique que la pollution de l'air est très élevée. La cote air santé comprend également une catégorie décrivant le risque pour la santé correspondant au nombre indiqué risque faible, modéré, élevé ou très élevé . La cote air santé est calculée en fonction des risques relatifs que représente une combinaison de polluants atmosphériques courants connus pour leurs effets néfastes sur la santé humaine, tels que l'ozone troposphérique, les matières particulaires et le dioxyde d'azote. La formulation de la Cote air santé rend uniquement compte du risque pour la santé aigu ou à court terme contact en heures ou en jours au maximum.
+Cette formulation pourrait changer avec le temps, pour rendre compte d'une nouvelle compréhension des effets de la pollution atmosphérique sur la santé. La cote air santé est calculée à partir de données observées en temps réel, sans vérification contrôle de la qualité.
 
 ## Accès
 
@@ -36,13 +36,13 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 
 ### Métadonnées de découverte
 
-* Les [métadonnées de prévisions pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
-* Les [métadonnées d'observations pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/28936e1b-681f-4c73-b04a-e86d4b3917c6)
-* Les [métadonnées des stations pour le programme Cote Air Santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/4fe11fe4-242c-4111-80ae-4adb12188533)
+* Les [métadonnées de prévisions pour le programme cote air santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/a563e47d-6eb9-4f7f-933c-222ae49fe57f)
+* Les [métadonnées d'observations pour le programme cote air santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/28936e1b-681f-4c73-b04a-e86d4b3917c6)
+* Les [métadonnées des stations pour le programme cote air santé (CAS) sont accessibles sur le portail du gouvernement ouvert](https://ouvert.canada.ca/data/fr/dataset/4fe11fe4-242c-4111-80ae-4adb12188533)
 
 ## Produits
 
-* [Sommaire des prévisions les plus récentes de la Cote air santé dans un grand nombre de villes au Canada](https://meteo.gc.ca/airquality/pages/index_f.html)
+* [Sommaire des prévisions les plus récentes de la cote air santé dans un grand nombre de villes au Canada](https://meteo.gc.ca/airquality/pages/index_f.html)
 * [Carte de prévisions de l'ozone, PM2.5, et PM10 près de la surface et à différentes altitudes](https://meteo.gc.ca/aqfm/index_f.html)
 
 ## Partenaires et données de polluants
@@ -80,10 +80,10 @@ Vous pouvez également accéder aux données à partir du portail américain [Ai
 
 ## Documentation technique
 
-* [Guide des prévisions de la côte air santé ](https://www.canada.ca/fr/environnement-changement-climatique/services/meteo-sante/publications/guide-previsions-cote-air-sante.html)
+* [Guide des prévisions de la cote air santé ](https://www.canada.ca/fr/environnement-changement-climatique/services/cote-air-sante/a-propos.html)
 
 ## Registre des changements 
 
-La chronologie des changements apportés au programme Cote Air Santé (CAS) est disponible [ici](changelog_aqhi_fr.md).
+La chronologie des changements apportés au programme cote air santé (CAS) est disponible [ici](changelog_aqhi_fr.md).
 
 
