@@ -1,8 +1,8 @@
-[In English](readme_rdps-stormtrack-datamart_en.md)
+[In English](readme_gdps-stormtrack-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > Trajectoires de tempêtes issues du SRPD sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > Trajectoires de tempêtes issues du SGPD sur le Datamart du SMC
 
 # Données de trajectoires de tempêtes générées à partir du Système régional de prévision déterministe
 
@@ -26,15 +26,13 @@ où :
 
 ## Spécifications techniques
 
-Les informations suivantes sont disponibles pour chaque centre de tempête:
+Chaque tempête est représentée par une ligne reliant les positions successives du centre. Pour chaque position sont affichés :
 
-* Un marqueur indiquant la position du centre
-* Une ligne reliant les positions successives du centre
-* La position du centre
-* La date et l'heure (UTC)
-* La durée de la tempête
-* Les valeurs de pression, de tourbillon, et de circulation
-* Pour les cyclones tropicaux uniquement: les valeurs de baroclinicité de bas niveaux (600-900 mb), de structure du vent thermique de bas niveaux (600-900 mb) et hauts niveaux (300-600 mb), de maximum de tourbillon à 850 mb, de maximum d'épaisseur 250-850 mb, et de maximum de vent de surface
+* La date et l'heure (UTC) 
+* La position du centre 
+* La pression minimale ou la vorticité maximale
+* Un symbole dont la taille représente l'intensité 
+* Des marqueurs indiquant les positions à 00 UTC
 
 #### Cyclones extra-tropicaux
 
@@ -50,10 +48,10 @@ Dans tous les cas, pour être considérés, les cyclones doivent perdurer au moi
 
 Le suivi des cyclones tropicaux utilise le même processus que le suivi des cyclones extra-tropicaux en pression. Afin d'identifier les cyclones de nature tropicale, 4 variables additionnelles sont prises en compte:
 
-* Le tourbillon relatif à 850 mb filtré avec un filtre de Cressman ayant un rayon de filtrage de 300 km
+* Le tourbillon relatif à 850 hPa filtré avec un filtre de Cressman ayant un rayon de filtrage de 300 km
 * Les épaisseurs entre les niveaux 250 et 850 mb
 * Le vent à 10 m
-* La baroclinicité de bas niveaux (noté B) mesurée en terme d'asymétrie du champ des épaisseurs entre 600 et 900 mb. La définition de B adoptée suit celle proposée par [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
+* La baroclinicité de bas niveaux (noté B) mesurée en terme d'asymétrie du champ des épaisseurs entre 600 et 900 mb. La définition de B adoptée suit celle proposée par [Sinclair, M. R., 2004: Extratropical Transition of Southwest Pacific Tropical Cyclones. Part II: Midlatitude Circulation Characterisitcs. Mon. Wea. Rev., 132, p. 2149.](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
 
 Pour être considéré comme un cyclone tropical, un centre de basse pression doit rencontrer les 4 critères suivants:
 
@@ -66,13 +64,21 @@ Une trajectoire est initiée uniquement lorsque tous les critères précédents 
 
 ## Nomenclature des noms de fichiers 
 
-Les fichiers ont la nomenclature suivante :
+Les __fichiers de prévision__ ont la nomenclature suivante :
 
 * Cyclone tropicaux: `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_TropicalCyclone_PT{hhh}H.json`
 * Cyclones extra-tropicaux:
     * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json`
     * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json`
     * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_Pressure-MSL_PT{hhh}H.json`
+
+Les __fichiers d'analyse 48h et 96h__ ont la nomenclature suivante:
+
+* Cyclone tropicaux: `{YYYYMMDD}T{HH}Z_MSC_RDPS-Analysis[48H,96H]-StormTracks_TropicalCyclone_PT{hhh}H.json`
+* Cyclones extra-tropicaux:
+    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-Analysis[48H,96H]-StormTracks_Pressure-MSL_PT{hhh}H.json`
 
 où :
 
@@ -82,17 +88,18 @@ où :
 * __Z__ : Fuseau horaire (heure UTC)
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __RDPS-StormTracks__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de tempêtes générées à partir du Système régional de prévision déterministe (RDPS en anglais)
+* __RDPS-Analysis[48H,96H]-StormTracks__ : Chaîne de caractères constante indiquant des analyses 48h ou 96h de trajectoires de tempêtes générées à partir du Système régional de prévision déterministe (RDPS en anglais)
 * __TropicalCyclone__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de cyclones tropicaux
-* __GradientWindVorticity-IsbL-0500__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de tempêtes détectées par leur tourbillon de vent gradient à 500 mb
-* __GradientWindVorticity-IsbL-1000__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de tempêtes détectées par leur tourbillon de vent gradient à 1000 mb
-* __Pressure-MSL__ : Chaîne de caractères constante indiquant des prévisions de trajectoires de tempêtes détectées par leur pression au niveau moyen de la mer
-* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. "hhh" représente l'heure à laquelle la trajectoire est prévue 
+* __GradientWindVorticity-IsbL-0500__ : Valeur maximale de tourbillon du vent gradient a 500mb, suivie par les cyclones extra-tropicaux
+* __GradientWindVorticity-IsbL-1000__ : Valeur maximale de tourbillon du vent gradient à 100mb, suivie par les cyclones extra-tropicaux
+* __Pressure-MSL__ : Valeur minimale de pression au niveau moyen de la mer, suivie par les cyclones extra-tropicaux
+* __PT{hhh}H__ : Echéance temporelle selon la norme [ISO8601](https://en.wikipedia.org/wiki/ISO_8601). P, T et H sont des caractères constants désignant Période, Temps et Heure. Pour les prévisions, "hhh" représente l'heure à laquelle la trajectoire est prévue. Pour les analyses, "hhh" fait référence à la période temporelle entre le début de la passe du modèle et la durée de l'heure de prévision de la trajectoire.  _A CONFIRMER !!_ .
 * __json__ : Chaîne de caractères constante indiquant que le format est GeoJSON
 
 Exemples de noms de fichiers: 
 
-* 20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json
-* 20251012T12Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json
+* `20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json`
+* `20251012T12Z_MSC_RDPS-Analysis48H-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json` : analyse générée à 20251014T12Z (20251012T12Z + 48H) correspondant à la prévision de 20251013T12Z (20251012T12Z + PT024H).
 
 ## Support
 
