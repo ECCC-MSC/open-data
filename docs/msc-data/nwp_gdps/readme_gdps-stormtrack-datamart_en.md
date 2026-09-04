@@ -1,8 +1,8 @@
-[In French](readme_rdps-stormtrack-datamart_fr.md)
+[In French](readme_gdps-stormtrack-datamart_fr.md)
 
 ! [ECCC logo](../../img_eccc-logo.png)
 
-[ToM](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPS](readme_rdps_en.md) > Storm tracks from the RDPS on the MSC Datamart
+[ToM](../../readme_en.md) > [MSC data](../readme_en.md) > [GDPS](readme_gdps_en.md) > Storm tracks from the GDPS on the MSC Datamart
 
 # Storm track data generated from the Regional Deterministic Prediction System
 

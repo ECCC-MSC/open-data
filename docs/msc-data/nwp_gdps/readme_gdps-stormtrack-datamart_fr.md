@@ -1,8 +1,8 @@
-[In English](readme_rdps-stormtrack-datamart_en.md)
+[In English](readme_gdps-stormtrack-datamart_en.md)
 
 ![ECCC logo](../../img_eccc-logo.png)
 
-[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SRPD](readme_rdps_fr.md) > Trajectoires de tempêtes issues du SRPD sur le Datamart du SMC
+[TdM](../../readme_fr.md) > [Données du SMC](../readme_fr.md) > [SGPD](readme_gdps_fr.md) > Trajectoires de tempêtes issues du SGPD sur le Datamart du SMC
 
 # Données de trajectoires de tempêtes générées à partir du Système régional de prévision déterministe
 
