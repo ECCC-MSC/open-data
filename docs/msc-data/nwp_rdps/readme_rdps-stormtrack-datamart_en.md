@@ -53,16 +53,16 @@ The tropical cyclone tracking algorithm uses the same core than the extra-tropic
 * 850 mb relative vorticity filtered with a Cressman filter using a 300-km radius
 * 250-850 mb thickness
 * Surface (10 m) wind speed
-* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 mb thickness field. The definition of B employed here follows [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
+* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 mb thickness field. The definition of B employed here follows [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml)
 
 To be defined as a tropical cyclone, a low pressure centre must meet the following 4 criteria:
 
-* Possess a maximum of 850 mb relative vorticity greater than +2,5x10-5 s-1 whitin a radius of 150 km.
-* Possess a maximum of 250-850 mb thickness greater than 935 dam whitin a radius of 150 km (indicating a deep warm core structure).
-* Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km.
-* Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m.
+* Possess a maximum of 850 mb relative vorticity greater than +2,5x10-5 s-1 whitin a radius of 150 km
+* Possess a maximum of 250-850 mb thickness greater than 935 dam whitin a radius of 150 km (indicating a deep warm core structure)
+* Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km
+* Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m
 
-A track is started only when all the above criteria are met. When a cyclone not longer meets all the (4) criteria, it is classified as a post-tropical cyclone. The cyclone will be tagged as "Extratropical" if evoling in a baroclinic environment (B > 25m) or as "Remnant" if still in a barotropic environment. Note that a cyclone will still be tagged as being extratropical even if the value of B decreases later below 25 m (e.g. due to an occlusion of the cyclone).
+A track is started only when all the above criteria are met. When a cyclone not longer meets all the (4) criteria, it is classified as a post-tropical cyclone. The cyclone will be tagged as "Extratropical" if evoling in a baroclinic environment (B > 25m) or as "Remnant" if still in a barotropic environment. Note that a cyclone will still be tagged as being extratropical even if the value of B decreases later below 25 m (e.g. due to an occlusion of the cyclone)
 
 ## Filename nomenclature 
 
