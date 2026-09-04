@@ -68,25 +68,25 @@ A track is started only when all the above criteria are met. When a cyclone not 
 
 The __forecast files__ have the following nomenclature:
 
-* Tropical cyclones: '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_TropicalCyclone_PT{hhh}H.json'
+* Tropical cyclones: `{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_TropicalCyclone_PT{hhh}H.json`
 * Extra-tropical cyclones:
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json'
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json'
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_Pressure-MSL_PT{hhh}H.json'
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_Pressure-MSL_PT{hhh}H.json`
 
 The __48-hour and 96-hour analysis files__ have the following nomenclature:
 
-* Tropical cyclones: '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_TropicalCyclone_PT{hhh}H.json'
+* Tropical cyclones: `{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_TropicalCyclone_PT{hhh}H.json`
 * Extra-tropical cyclones:
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json'
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json'
-    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_Pressure-MSL_PT{hhh}H.json'
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json`
+    * `{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_Pressure-MSL_PT{hhh}H.json`
     
 where:
 
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast
 * __T__: Time delimiter according to ISO8601 norms
-* __HH__ : UTC run time [00, 06, 12, 18]
+* __HH__ : UTC run time [00, 12]
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __GDPS-StormTracks__: Constant string indicating that data is from Global Deterministic Prediction System (GDPS) forecasts of storm tracks
@@ -100,8 +100,8 @@ where:
 
 Filenames examples: 
 
-* 20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json
-* '20251012T12Z_MSC_GDPS-Analysis48H-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json': analysis generated at 20251014T12Z (20251012T12Z + 48H) corresponding to the forecast for 20251013Q12Z (20251012T12Z + PT024H).
+* `20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json`
+* `20251012T12Z_MSC_GDPS-Analysis48H-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json`: analysis generated at 20251014T12Z (20251012T12Z + 48H) corresponding to the forecast for 20251013Q12Z (20251012T12Z + PT024H).
 
 ## Support
 
