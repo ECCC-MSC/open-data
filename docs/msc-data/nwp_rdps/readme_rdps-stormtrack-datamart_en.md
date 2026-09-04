@@ -1,6 +1,6 @@
 [In French](readme_rdps-stormtrack-datamart_fr.md)
 
-! [ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [ToM](../../readme_en.md) > [MSC data](../readme_en.md) > [RDPS](readme_rdps_en.md) > Storm tracks from the RDPS on the MSC Datamart
 
@@ -50,10 +50,10 @@ In all cases, cyclones must last at least 24h to be considered.
 
 The tropical cyclone tracking algorithm uses the same core than the extra-tropical pressure-based tracking algorithm. In order to identify cyclones with tropical characteristics, 4 additional parameters are considered here:
 
-* 850-hPa relative vorticity filtered with a Cressman filter using a 300-km radius
-* 250-850 hPa thickness
+* 850 mb relative vorticity filtered with a Cressman filter using a 300-km radius
+* 250-850 mb thickness
 * Surface (10 m) wind speed
-* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 hPa thickness field. The definition of B employed here follows Sinclair, M. R., 2004: Extratropical Transition of Southwest Pacific Tropical Cyclones. Part II: Midlatitude Circulation Characterisitcs, Mon. Wea. Rev., 132, p. 2149.
+* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 mb thickness field. The definition of B employed here follows [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
 
 To be defined as a tropical cyclone, a low pressure centre must meet the following 4 criteria:
 

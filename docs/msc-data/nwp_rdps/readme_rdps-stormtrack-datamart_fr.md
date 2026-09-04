@@ -50,10 +50,10 @@ Dans tous les cas, pour être considérés, les cyclones doivent perdurer au moi
 
 Le suivi des cyclones tropicaux utilise le même processus que le suivi des cyclones extra-tropicaux en pression. Afin d'identifier les cyclones de nature tropicale, 4 variables additionnelles sont prises en compte:
 
-* Le tourbillon relatif à 850 hPa filtré avec un filtre de Cressman ayant un rayon de filtrage de 300 km
+* Le tourbillon relatif à 850 mb filtré avec un filtre de Cressman ayant un rayon de filtrage de 300 km
 * Les épaisseurs entre les niveaux 250 et 850 mb
 * Le vent à 10 m
-* La baroclinicité de bas niveaux (noté B) mesurée en terme d'asymétrie du champ des épaisseurs entre 600 et 900 mb. La définition de B adoptée suit celle proposée par [Sinclair, M. R., 2004: Extratropical Transition of Southwest Pacific Tropical Cyclones. Part II: Midlatitude Circulation Characterisitcs. Mon. Wea. Rev., 132, p. 2149.](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
+* La baroclinicité de bas niveaux (noté B) mesurée en terme d'asymétrie du champ des épaisseurs entre 600 et 900 mb. La définition de B adoptée suit celle proposée par [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml).
 
 Pour être considéré comme un cyclone tropical, un centre de basse pression doit rencontrer les 4 critères suivants:
 
