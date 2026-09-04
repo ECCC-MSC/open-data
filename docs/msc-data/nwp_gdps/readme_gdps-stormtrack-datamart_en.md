@@ -1,10 +1,10 @@
 [In French](readme_gdps-stormtrack-datamart_fr.md)
 
-! [ECCC logo](../../img_eccc-logo.png)
+![ECCC logo](../../img_eccc-logo.png)
 
 [ToM](../../readme_en.md) > [MSC data](../readme_en.md) > [GDPS](readme_gdps_en.md) > Storm tracks from the GDPS on the MSC Datamart
 
-# Storm track data generated from the Regional Deterministic Prediction System
+# Storm track data generated from the Global Deterministic Prediction System
 
 The Storm track product is an automated system that detects, identifies, tracks and characterizes low-pressure systems based on the outputs of numerical weather prediction models (deterministic and ensemble) or reanalyses.  It makes it possible to produce maps and animations describing the evolution of extratropical and tropical cyclones throughout their lifetime.
 
@@ -18,11 +18,11 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following adress : 
 
-* [https://dd.weather.gc.ca/today/model_rdps/storm-tracks/{HH}/](https://dd.weather.gc.ca/today/model_rdps/storm-tracks)
+* [https://dd.weather.gc.ca/today/model_gdps/storm-tracks/{HH}/](https://dd.weather.gc.ca/today/model_gdps/storm-tracks)
 
 where :
 
-* __HH__: Model run start, in UTC [00, 06, 12, 18]
+* __HH__: Model run start, in UTC [00, 12]
 
 ## Technical specifications
 
@@ -50,30 +50,38 @@ In all cases, cyclones must last at least 24h to be considered.
 
 The tropical cyclone tracking algorithm uses the same core than the extra-tropical pressure-based tracking algorithm. In order to identify cyclones with tropical characteristics, 4 additional parameters are considered here:
 
-* 850-hPa relative vorticity filtered with a Cressman filter using a 300-km radius
-* 250-850 hPa thickness
+* 850 mb relative vorticity filtered with a Cressman filter using a 300-km radius
+* 250-850 mb thickness
 * Surface (10 m) wind speed
-* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 hPa thickness field. The definition of B employed here follows Sinclair, M. R., 2004: Extratropical Transition of Southwest Pacific Tropical Cyclones. Part II: Midlatitude Circulation Characterisitcs, Mon. Wea. Rev., 132, p. 2149.
+* Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 mb thickness field. The definition of B employed here follows [Sinclair, M. R., 1997](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml)
 
 To be defined as a tropical cyclone, a low pressure centre must meet the following 4 criteria:
 
-* Possess a maximum of 850 mb relative vorticity greater than +2,5x10-5 s-1 whitin a radius of 150 km.
-* Possess a maximum of 250-850 mb thickness greater than 935 dam whitin a radius of 150 km (indicating a deep warm core structure).
-* Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km.
-* Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m.
+* Possess a maximum of 850 mb relative vorticity greater than +2,5x10-5 s-1 whitin a radius of 150 km
+* Possess a maximum of 250-850 mb thickness greater than 935 dam whitin a radius of 150 km (indicating a deep warm core structure)
+* Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km
+* Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m
 
 A track is started only when all the above criteria are met. When a cyclone not longer meets all the (4) criteria, it is classified as a post-tropical cyclone. The cyclone will be tagged as "Extratropical" if evoling in a baroclinic environment (B > 25m) or as "Remnant" if still in a barotropic environment. Note that a cyclone will still be tagged as being extratropical even if the value of B decreases later below 25 m (e.g. due to an occlusion of the cyclone).
 
 ## Filename nomenclature 
 
-The files have the following nomenclature :
+The __forecast files__ have the following nomenclature:
 
-* Tropical cyclones: `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_TropicalCyclone_PT{hhh}H.json`
+* Tropical cyclones: '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_TropicalCyclone_PT{hhh}H.json'
 * Extra-tropical cyclones:
-    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json`
-    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json`
-    * `{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_Pressure-MSL_PT{hhh}H.json`
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json'
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json'
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-StormTracks_Pressure-MSL_PT{hhh}H.json'
 
+The __48-hour and 96-hour analysis files__ have the following nomenclature:
+
+* Tropical cyclones: '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_TropicalCyclone_PT{hhh}H.json'
+* Extra-tropical cyclones:
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json'
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json'
+    * '{YYYYMMDD}T{HH}Z_MSC_GDPS-Analysis[48H,96H]-StormTracks_Pressure-MSL_PT{hhh}H.json'
+    
 where:
 
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast
@@ -81,7 +89,8 @@ where:
 * __HH__ : UTC run time [00, 06, 12, 18]
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
-* __RDPS-StormTracks__: Constant string indicating that data is from Regional Deterministic Prediction System (RDPS) forecasts of storm tracks
+* __GDPS-StormTracks__: Constant string indicating that data is from Global Deterministic Prediction System (GDPS) forecasts of storm tracks
+* __GDPS-Analysis [48H,96H]-StormTracks__: Constant string of characters indicating 48- or 96-hour analyses of storm tracks generated from the Global Deterministic Prediction System (GDPS)
 * __TropicalCyclone__: A constant string of characters indicating predictions of tropical cyclone tracks
 * __GradientWindVorticity-IsbL-0500__: Constant string indicating predictions of storm tracks detected by their wind vorticity gradient at 500 mb
 * __GradientWindVorticity-IsbL-1000__: A constant string of characters indicating predictions of storm tracks detected by their wind vorticity gradient at 1000 mb
@@ -92,7 +101,7 @@ where:
 Filenames examples: 
 
 * 20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json
-* 20251012T12Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json
+* '20251012T12Z_MSC_GDPS-Analysis48H-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json': analysis generated at 20251014T12Z (20251012T12Z + 48H) corresponding to the forecast for 20251013Q12Z (20251012T12Z + PT024H).
 
 ## Support
 
