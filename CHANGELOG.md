@@ -18,11 +18,16 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * new content:
     * Add CaSR-Land, CaSR derived products doc
     * Add RAQDPS-FW Cumulative effects products (GeoMet page only)
+    * Add GOES-Meso product
  * improvements:
     * Update FAQ
 * bug fixes:
     * Typos
     * Add last release note to CAP-XML technical documentation
+    * Fix WCPS doc (temporal availability)
+    * Fix IWXXM data section access (Fr)
+    * Fix PROGNOS GDPS doc (broken link)
+    * Fix AQHI technical doc section (broken link)
 
 # 2.10.11
 
