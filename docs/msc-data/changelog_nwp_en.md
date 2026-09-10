@@ -8,6 +8,10 @@
 
 ## 2026
 
+### August 27, 2026
+
+* [Reduction of operational RDAQA sfcearly suite cutoff time to 40min](nwp_rdaqa/changelog_rdaqa_en.md#thursday-august-27-2026)
+
 ### July 22, 2026
 
 * [PROGNOS Update to the statistical post-processing of wind speed forecasts from the Regional Deterministic Prediction System (RDPS) 10.0.0 of the Canadian Meteorological Center (CMC)](nwp_rdps/changelog_rdps_en.md#wednesday-july-22-2026) 

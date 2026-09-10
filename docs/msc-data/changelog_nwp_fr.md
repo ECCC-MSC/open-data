@@ -9,6 +9,10 @@
 
 ## 2026
 
+### 27 août 2026
+
+* [Réduction du temps de coupure de la composante opérationnelle "sfcearly" de l'Analyse régionale déterministe de qualité de l’air (ARDQA) à 40min](nwp_rdaqa/changelog_rdaqa_fr.md#le-jeudi-27-aout-2026)
+
 ### 22 juillet 2026
 
 * [Mise à jour du système PROGNOS pour le post-traitement statistique des prévisions de vitesses du vent issues du Système Régional de Prévision Déterministe (SRPD) 10.0.0 du Centre Météorologique du Canada (CMC)](nwp_rdps/changelog_rdps_fr.md#le-mercredi-22-juillet-2026)
