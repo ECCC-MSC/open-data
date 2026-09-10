@@ -6,6 +6,16 @@
 
 # Chronologie des changements apportés à l'Analyse régionale déterministe de qualité de l’air (ARDQA) 
 
+## Le jeudi 27 août 2026
+
+### Réduction du temps de coupure de la composante opérationnelle "sfcearly" à 40min
+
+Le jeudi 27 août 2026, à compter de la passe de 1400UTC, le Centre météorologique canadien (CMC) du Service météorologique du Canada (SMC) a procédé à une mise à jour de la version 2.3.0 de son Analyse régionale déterministe de la qualité de l'air (ARDQA).
+ 
+Le temps de coupure de la composante opérationnelle sfcearly a été réduit à 0h40m.
+ 
+Une modification a été apportée aux horaires de lancement des passes de l'ARDQA (sfcearly), réduisant le temps de coupure de `1h10` à `0h40` après chaque heure synoptique. La modification a été apportée pour mieux refléter la disponibilité actuelle des données d'observations utilisées dans l'analyse objective.
+
 ## Le mardi 14 avril 2026
 
 ### Mise à jour de l'ARDQA à la version 2.3.0 suite à la nouvelle infrastructure de calcul haute performance.
