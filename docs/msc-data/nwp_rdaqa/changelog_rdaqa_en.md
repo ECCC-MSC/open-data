@@ -6,9 +6,17 @@
 
 # Chronology of changes to the Regional Deterministic Air Quality Analysis (RDAQA)
 
+## Thursday August 27, 2026
+
+### Reduction of operational RDAQA sfcearly suite cutoff time to 40min
+
+On Thursday August 27, 2026, starting with the 1400 UTC run, the Canadian Meteorological Centre (CMC) of the Meteorological Service of Canada (MSC) proceeded with an update to version 2.3.0 of the Regional Deterministic Air Quality Analysis (RDAQA).
+
+The change was been made to the RDAQA sfcearly events scheduling times, reducing the cutoff from `1h10m` to `0h40m` after each synoptic hour. The modification was made to better reflect the current availability of the observational data used in the objective analysis. 
+
 ## Tuesday April 14, 2026
 
-### Upgrade to Version 6.1.0 of the RDPA adapted to the New High Performance Computing Infrastructure.
+### Upgrade to Version 6.1.0 of the RDAQA adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
 
