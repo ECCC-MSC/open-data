@@ -20,9 +20,10 @@ Les données du Datamart du SMC peuvent être [automatiquement récupérées ave
 
 Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.
 
-Les produits de la série GOES-R se trouvent à l'adresse :
+Les produits de la série GOES-R se trouvent aux adresses :
 
-* [https://dd.meteo.gc.ca/today/satellite/goes/[west|east]/{HH}/](https://dd.meteo.gc.ca/today/satellite/goes/)
+* Produits sur les domaines Ouest et Est fixes: [https://dd.meteo.gc.ca/today/satellite/goes/[west|east]/{HH}/](https://dd.meteo.gc.ca/today/satellite/goes/)
+* Produits sur les domaines à méso-échelle: [https://dd.meteo.gc.ca/today/satellite/goes/[west|east]-meso/{HH}/](https://dd.meteo.gc.ca/today/satellite/goes/)
 
 où :
 
