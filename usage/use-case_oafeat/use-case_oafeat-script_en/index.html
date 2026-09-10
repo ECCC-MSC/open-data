@@ -1371,7 +1371,7 @@ projection = 3347
 <span class="p">]</span>
 
 <span class="c1"># Formatting of the selected time period</span>
-<span class="n">time_</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="n">time_</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">"</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"># Parameters formatting for the OGC API - Features request
 
@@ -1432,17 +1432,17 @@ time_ = f"{start_date}/{end_date}"</div>
             </clipboard-copy>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Retrieval of hydrometric stations data</span>
-<span class="n">oafeat</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s2">&quot;https://api.weather.gc.ca/&quot;</span><span class="p">)</span>
+<span class="n">oafeat</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s2">"https://api.weather.gc.ca/"</span><span class="p">)</span>
 <span class="n">station_data</span> <span class="o">=</span> <span class="n">oafeat</span><span class="o">.</span><span class="n">collection_items</span><span class="p">(</span>
-    <span class="s2">&quot;hydrometric-stations&quot;</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span> <span class="n">STATUS_EN</span><span class="o">=</span><span class="s2">&quot;Active&quot;</span>
+    <span class="s2">"hydrometric-stations"</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span> <span class="n">STATUS_EN</span><span class="o">=</span><span class="s2">"Active"</span>
 <span class="p">)</span>
 
 <span class="c1"># Verification of the retrieved data</span>
-<span class="k">if</span> <span class="s2">&quot;features&quot;</span> <span class="ow">in</span> <span class="n">station_data</span><span class="p">:</span>
+<span class="k">if</span> <span class="s2">"features"</span> <span class="ow">in</span> <span class="n">station_data</span><span class="p">:</span>
     <span class="n">station_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">station_data</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-        <span class="s2">&quot;No hydrometric stations were found. Please verify the coordinates.&quot;</span>
+        <span class="s2">"No hydrometric stations were found. Please verify the coordinates."</span>
     <span class="p">)</span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt"># Retrieval of hydrometric stations data
@@ -1490,7 +1490,7 @@ else:
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># List of stations located inside the buffer zone</span>
 
 <span class="c1"># Accessing the hydrometric stations layer</span>
-<span class="n">driver</span> <span class="o">=</span> <span class="n">ogr</span><span class="o">.</span><span class="n">GetDriverByName</span><span class="p">(</span><span class="s2">&quot;GeoJSON&quot;</span><span class="p">)</span>
+<span class="n">driver</span> <span class="o">=</span> <span class="n">ogr</span><span class="o">.</span><span class="n">GetDriverByName</span><span class="p">(</span><span class="s2">"GeoJSON"</span><span class="p">)</span>
 <span class="n">data_source</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">Open</span><span class="p">(</span><span class="n">station_data</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">layer</span> <span class="o">=</span> <span class="n">data_source</span><span class="o">.</span><span class="n">GetLayer</span><span class="p">()</span>
 
@@ -1525,8 +1525,8 @@ else:
 <span class="c1"># Raising an error if no station were found</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">stations</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;There are no hydrometric stations within </span><span class="si">{</span><span class="n">buffer</span><span class="si">}</span><span class="s2"> km&quot;</span>
-        <span class="o">+</span> <span class="s2">&quot; of the chosen coordinates. Please verify the coordinates.&quot;</span>
+        <span class="sa">f</span><span class="s2">"There are no hydrometric stations within </span><span class="si">{</span><span class="n">buffer</span><span class="si">}</span><span class="s2"> km"</span>
+        <span class="o">+</span> <span class="s2">" of the chosen coordinates. Please verify the coordinates."</span>
     <span class="p">)</span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt"># List of stations located inside the buffer zone
@@ -1627,48 +1627,48 @@ if not stations:
 
     <span class="c1"># Retrieval of water level data</span>
     <span class="n">hydro_data</span> <span class="o">=</span> <span class="n">oafeat</span><span class="o">.</span><span class="n">collection_items</span><span class="p">(</span>
-        <span class="s2">&quot;hydrometric-daily-mean&quot;</span><span class="p">,</span>
+        <span class="s2">"hydrometric-daily-mean"</span><span class="p">,</span>
         <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span>
-        <span class="n">datetime</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">datetime</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">start_date</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
         <span class="n">STATION_NUMBER</span><span class="o">=</span><span class="n">station</span><span class="p">,</span>
     <span class="p">)</span>
     <span class="c1"># Creation of a data frame if there is data for the chosen time period</span>
-    <span class="k">if</span> <span class="n">hydro_data</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">hydro_data</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]:</span>
         <span class="c1"># Creation of a dictionary in a format compatible with Pandas</span>
         <span class="n">historical_data_format</span> <span class="o">=</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;LATITUDE&quot;</span><span class="p">:</span> <span class="n">el</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">][</span><span class="s2">&quot;coordinates&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
-                <span class="s2">&quot;LONGITUDE&quot;</span><span class="p">:</span> <span class="n">el</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">][</span><span class="s2">&quot;coordinates&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
-                <span class="o">**</span><span class="n">el</span><span class="p">[</span><span class="s2">&quot;properties&quot;</span><span class="p">],</span>
+                <span class="s2">"LATITUDE"</span><span class="p">:</span> <span class="n">el</span><span class="p">[</span><span class="s2">"geometry"</span><span class="p">][</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                <span class="s2">"LONGITUDE"</span><span class="p">:</span> <span class="n">el</span><span class="p">[</span><span class="s2">"geometry"</span><span class="p">][</span><span class="s2">"coordinates"</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                <span class="o">**</span><span class="n">el</span><span class="p">[</span><span class="s2">"properties"</span><span class="p">],</span>
             <span class="p">}</span>
-            <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">hydro_data</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">hydro_data</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]</span>
         <span class="p">]</span>
         <span class="c1"># Creation of the data frame</span>
         <span class="n">historical_data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
             <span class="n">historical_data_format</span><span class="p">,</span>
             <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
-                <span class="s2">&quot;STATION_NUMBER&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;STATION_NAME&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;DATE&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;LEVEL&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;LATITUDE&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;LONGITUDE&quot;</span><span class="p">,</span>
+                <span class="s2">"STATION_NUMBER"</span><span class="p">,</span>
+                <span class="s2">"STATION_NAME"</span><span class="p">,</span>
+                <span class="s2">"DATE"</span><span class="p">,</span>
+                <span class="s2">"LEVEL"</span><span class="p">,</span>
+                <span class="s2">"LATITUDE"</span><span class="p">,</span>
+                <span class="s2">"LONGITUDE"</span><span class="p">,</span>
             <span class="p">],</span>
         <span class="p">)</span>
         <span class="n">historical_data_df</span> <span class="o">=</span> <span class="n">historical_data_df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
         <span class="c1"># Adding the data frame to the hydrometric data dictionary</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">&quot;LEVEL&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">"LEVEL"</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">():</span>
             <span class="c1"># Removing any rows without water level data at the</span>
             <span class="c1"># end of the data frame</span>
-            <span class="k">while</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">historical_data_df</span><span class="p">[</span><span class="s2">&quot;LEVEL&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="k">while</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">historical_data_df</span><span class="p">[</span><span class="s2">"LEVEL"</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
                 <span class="n">historical_data_df</span> <span class="o">=</span> <span class="n">historical_data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span>
                     <span class="n">historical_data_df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
                 <span class="p">)</span>
             <span class="c1"># Creating an index with the date in a datetime format</span>
-            <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">&quot;DATE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
-                <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">&quot;DATE&quot;</span><span class="p">]</span>
+            <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">"DATE"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span>
+                <span class="n">historical_data_df</span><span class="p">[</span><span class="s2">"DATE"</span><span class="p">]</span>
             <span class="p">)</span>
-            <span class="n">historical_data_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s2">&quot;DATE&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">historical_data_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s2">"DATE"</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="n">historical_data_df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">historical_data_df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">date</span>
             <span class="c1"># Adding the data frame to the dictionary</span>
             <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">]</span> <span class="o">=</span> <span class="n">historical_data_df</span>
@@ -1687,8 +1687,8 @@ if not stations:
 <span class="c1"># Raising an error if no station is left in the list</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">stations</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;No water level data is available in the this </span><span class="si">{</span><span class="n">num_months</span><span class="si">}</span><span class="s2">&quot;</span>
-        <span class="o">+</span> <span class="s2">&quot; months period for the selected hydrometric stations.&quot;</span>
+        <span class="sa">f</span><span class="s2">"No water level data is available in the this </span><span class="si">{</span><span class="n">num_months</span><span class="si">}</span><span class="s2">"</span>
+        <span class="o">+</span> <span class="s2">" months period for the selected hydrometric stations."</span>
     <span class="p">)</span>
 </pre></div>
 <div id="cell-6" class="clipboard-copy-txt"># Retrieval of hydrometric data for each station
@@ -1818,12 +1818,12 @@ if not stations:
 <span class="k">def</span><span class="w"> </span><span class="nf">interactive_plot</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Adjusting font and figure size</span>
     <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;legend.fontsize&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;figure.figsize&quot;</span><span class="p">:</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
-        <span class="s2">&quot;axes.labelsize&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;axes.titlesize&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;xtick.labelsize&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;ytick.labelsize&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
+        <span class="s2">"legend.fontsize"</span><span class="p">:</span> <span class="s2">"14"</span><span class="p">,</span>
+        <span class="s2">"figure.figsize"</span><span class="p">:</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+        <span class="s2">"axes.labelsize"</span><span class="p">:</span> <span class="s2">"14"</span><span class="p">,</span>
+        <span class="s2">"axes.titlesize"</span><span class="p">:</span> <span class="s2">"16"</span><span class="p">,</span>
+        <span class="s2">"xtick.labelsize"</span><span class="p">:</span> <span class="s2">"12"</span><span class="p">,</span>
+        <span class="s2">"ytick.labelsize"</span><span class="p">:</span> <span class="s2">"12"</span><span class="p">,</span>
     <span class="p">}</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
     
@@ -1831,21 +1831,21 @@ if not stations:
     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
     <span class="n">line</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
         <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
-        <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s2">&quot;LEVEL&quot;</span><span class="p">],</span>
-        <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
-        <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Daily mean&quot;</span><span class="p">,</span>
+        <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s2">"LEVEL"</span><span class="p">],</span>
+        <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span>
+        <span class="n">label</span><span class="o">=</span><span class="s2">"Daily mean"</span><span class="p">,</span>
     <span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s2">&quot;both&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s2">"both"</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
         <span class="n">fill</span><span class="p">(</span>
-            <span class="s2">&quot;Water levels at station </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-                <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s2">&quot;STATION_NAME&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">station</span>
+            <span class="s2">"Water levels at station </span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2">)"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s2">"STATION_NAME"</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">station</span>
             <span class="p">),</span> <span class="mi">60</span>
         <span class="p">)</span>
     <span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Water level (m)&quot;</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"Water level (m)"</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Date"</span><span class="p">)</span>
 
     <span class="c1"># Modification of the x axis ticks and tick labels</span>
     <span class="n">locator</span> <span class="o">=</span> <span class="n">mdates</span><span class="o">.</span><span class="n">AutoDateLocator</span><span class="p">()</span>
@@ -1855,12 +1855,12 @@ if not stations:
 
     <span class="c1"># Creation of the annotations to display on hover</span>
     <span class="n">annot</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
-        <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">""</span><span class="p">,</span>
         <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
         <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">),</span>
-        <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
-        <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round&quot;</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">),</span>
-        <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">),</span>
+        <span class="n">textcoords</span><span class="o">=</span><span class="s2">"offset points"</span><span class="p">,</span>
+        <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">"round"</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">"w"</span><span class="p">),</span>
+        <span class="n">arrowprops</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">"-&gt;"</span><span class="p">),</span>
     <span class="p">)</span>
     <span class="n">annot</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 
@@ -1875,12 +1875,12 @@ if not stations:
 <span class="k">def</span><span class="w"> </span><span class="nf">update_annot</span><span class="p">(</span><span class="n">ind</span><span class="p">):</span>
     <span class="c1"># Identifying the annotation to display</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">get_data</span><span class="p">()</span>
-    <span class="n">annot</span><span class="o">.</span><span class="n">xy</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]],</span> <span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">annot</span><span class="o">.</span><span class="n">xy</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">"ind"</span><span class="p">][</span><span class="mi">0</span><span class="p">]],</span> <span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">"ind"</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
     
     <span class="c1"># Adding text to the annotation (date and water level)</span>
-    <span class="n">date_x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">]][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">level_y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">&quot;ind&quot;</span><span class="p">]][</span><span class="mi">0</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="se">\n</span><span class="s2">Daily mean: </span><span class="si">{}</span><span class="s2"> m&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date_x</span><span class="p">,</span> <span class="n">level_y</span><span class="p">)</span>
+    <span class="n">date_x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">"ind"</span><span class="p">]][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">level_y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="s2">"ind"</span><span class="p">]][</span><span class="mi">0</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="se">\n</span><span class="s2">Daily mean: </span><span class="si">{}</span><span class="s2"> m"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">date_x</span><span class="p">,</span> <span class="n">level_y</span><span class="p">)</span>
     <span class="n">annot</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
     
     <span class="c1"># Setting annotation transparency</span>
@@ -1903,7 +1903,7 @@ if not stations:
 
 
 <span class="c1"># Adding the feature that displays annotations on hover               </span>
-<span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s2">&quot;motion_notify_event&quot;</span><span class="p">,</span> <span class="n">hover</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s2">"motion_notify_event"</span><span class="p">,</span> <span class="n">hover</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -2027,9 +2027,9 @@ plt.show()</div>
 
 
 
-<div id="63cadf65-07bb-4edf-9916-eac38abddc6f" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="d44f6092-0c5e-42d5-9d39-dfc4c0bf4bc9" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('63cadf65-07bb-4edf-9916-eac38abddc6f');
+var element = document.getElementById('d44f6092-0c5e-42d5-9d39-dfc4c0bf4bc9');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
@@ -3048,22 +3048,22 @@ if (IPython.notebook.kernel !== null) {
 <span class="k">def</span><span class="w"> </span><span class="nf">data_table</span><span class="p">(</span><span class="n">station</span><span class="p">):</span>
     <span class="c1"># Print table title</span>
     <span class="nb">print</span><span class="p">(</span>
-        <span class="s2">&quot;Water levels at station &quot;</span>
-        <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s1">&#39;STATION_NAME&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-        <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot; (</span><span class="si">{</span><span class="n">station</span><span class="si">}</span><span class="s2">)&quot;</span>
+        <span class="s2">"Water levels at station "</span>
+        <span class="o">+</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s1">'STATION_NAME'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+        <span class="o">+</span> <span class="sa">f</span><span class="s2">" (</span><span class="si">{</span><span class="n">station</span><span class="si">}</span><span class="s2">)"</span>
     <span class="p">)</span>
     <span class="c1"># Selecting the desired columns and changing the columns names</span>
-    <span class="n">displayed_df</span> <span class="o">=</span> <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][[</span><span class="s2">&quot;LEVEL&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+    <span class="n">displayed_df</span> <span class="o">=</span> <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][[</span><span class="s2">"LEVEL"</span><span class="p">]]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
         <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
-            <span class="s2">&quot;LEVEL&quot;</span><span class="p">:</span> <span class="s2">&quot;Water level daily mean (m)&quot;</span><span class="p">,</span>
+            <span class="s2">"LEVEL"</span><span class="p">:</span> <span class="s2">"Water level daily mean (m)"</span><span class="p">,</span>
         <span class="p">}</span>
     <span class="p">)</span>
-    <span class="n">displayed_df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">displayed_df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+    <span class="n">displayed_df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">displayed_df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">"Date"</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">displayed_df</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">data_table</span><span class="p">(</span><span class="n">station_displayed_t</span><span class="p">),</span>
-               <span class="n">headers</span><span class="o">=</span><span class="s1">&#39;keys&#39;</span><span class="p">,</span>
-               <span class="n">tablefmt</span><span class="o">=</span><span class="s1">&#39;pretty&#39;</span><span class="p">))</span>
+               <span class="n">headers</span><span class="o">=</span><span class="s1">'keys'</span><span class="p">,</span>
+               <span class="n">tablefmt</span><span class="o">=</span><span class="s1">'pretty'</span><span class="p">))</span>
 </pre></div>
 <div id="cell-8" class="clipboard-copy-txt"># Creation of the table
 
@@ -3263,10 +3263,10 @@ print(tabulate(data_table(station_displayed_t),
 <span class="k">for</span> <span class="n">station</span> <span class="ow">in</span> <span class="n">stations</span><span class="p">:</span>
     <span class="n">latest_data</span> <span class="o">=</span> <span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">labels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s1">&#39;STATION_NAME&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;Station ID: </span><span class="si">{</span><span class="n">latest_data</span><span class="o">.</span><span class="n">STATION_NUMBER</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;Date: </span><span class="si">{</span><span class="n">latest_data</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;Water level: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">latest_data</span><span class="o">.</span><span class="n">LEVEL</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> m&quot;</span>
+        <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">hydrometric_data</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="s1">'STATION_NAME'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
+        <span class="o">+</span> <span class="sa">f</span><span class="s2">"Station ID: </span><span class="si">{</span><span class="n">latest_data</span><span class="o">.</span><span class="n">STATION_NUMBER</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
+        <span class="o">+</span> <span class="sa">f</span><span class="s2">"Date: </span><span class="si">{</span><span class="n">latest_data</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
+        <span class="o">+</span> <span class="sa">f</span><span class="s2">"Water level: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">latest_data</span><span class="o">.</span><span class="n">LEVEL</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> m"</span>
     <span class="p">)</span>
     <span class="n">all_lat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">latest_data</span><span class="o">.</span><span class="n">LATITUDE</span><span class="p">)</span>
     <span class="n">all_lon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">latest_data</span><span class="o">.</span><span class="n">LONGITUDE</span><span class="p">)</span>
@@ -3283,8 +3283,8 @@ print(tabulate(data_table(station_displayed_t),
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="n">tiler</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">fill</span><span class="p">(</span>
-    <span class="s2">&quot;Most recent daily mean water level for the &quot;</span>
-    <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;time period ending the </span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="mi">45</span><span class="p">))</span>
+    <span class="s2">"Most recent daily mean water level for the "</span>
+    <span class="o">+</span> <span class="sa">f</span><span class="s2">"time period ending the </span><span class="si">{</span><span class="n">end_date</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="mi">45</span><span class="p">))</span>
 
 <span class="c1"># Setting the extent to see adequately all data points</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_extent</span><span class="p">(</span>
@@ -3303,10 +3303,10 @@ print(tabulate(data_table(station_displayed_t),
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
     <span class="n">all_lon</span><span class="p">,</span>
     <span class="n">all_lat</span><span class="p">,</span>
-    <span class="s2">&quot;bo&quot;</span><span class="p">,</span>
-    <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
-    <span class="n">mec</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;RoyalBlue&quot;</span><span class="p">,</span>
+    <span class="s2">"bo"</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span>
+    <span class="n">mec</span><span class="o">=</span><span class="s2">"k"</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"RoyalBlue"</span><span class="p">,</span>
     <span class="n">ms</span><span class="o">=</span><span class="n">markersize</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><span class="n">ccrs</span><span class="o">.</span><span class="n">Geodetic</span><span class="p">(),</span>
 <span class="p">)</span>
@@ -3344,15 +3344,15 @@ print(tabulate(data_table(station_displayed_t),
                 <span class="n">annotations</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
                     <span class="n">label</span><span class="p">,</span>
                     <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span>
-                    <span class="n">xycoords</span><span class="o">=</span><span class="s2">&quot;data&quot;</span><span class="p">,</span>
+                    <span class="n">xycoords</span><span class="o">=</span><span class="s2">"data"</span><span class="p">,</span>
                     <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
-                    <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;offset points&quot;</span><span class="p">,</span>
-                    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
-                    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span>
+                    <span class="n">textcoords</span><span class="o">=</span><span class="s2">"offset points"</span><span class="p">,</span>
+                    <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+                    <span class="n">va</span><span class="o">=</span><span class="s2">"bottom"</span><span class="p">,</span>
                     <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
-                        <span class="n">facecolor</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span>
-                        <span class="n">edgecolor</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
-                        <span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round&quot;</span>
+                        <span class="n">facecolor</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span>
+                        <span class="n">edgecolor</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span>
+                        <span class="n">boxstyle</span><span class="o">=</span><span class="s2">"round"</span>
                     <span class="p">),</span>
                     <span class="n">zorder</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
                 <span class="p">)</span>
@@ -3365,7 +3365,7 @@ print(tabulate(data_table(station_displayed_t),
 
 
 <span class="c1"># Connecting the event handler</span>
-<span class="n">cid</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s2">&quot;motion_notify_event&quot;</span><span class="p">,</span> <span class="n">on_move</span><span class="p">)</span>
+<span class="n">cid</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">mpl_connect</span><span class="p">(</span><span class="s2">"motion_notify_event"</span><span class="p">,</span> <span class="n">on_move</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -3506,9 +3506,9 @@ plt.show()</div>
 
 
 
-<div id="491ccbff-b095-4848-b818-1bf67428d351" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="951c6333-36d8-425f-af9f-e854d24215f2" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('491ccbff-b095-4848-b818-1bf67428d351');
+var element = document.getElementById('951c6333-36d8-425f-af9f-e854d24215f2');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};

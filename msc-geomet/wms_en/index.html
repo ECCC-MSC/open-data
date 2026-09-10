@@ -304,6 +304,10 @@
 <td>DIM_REFERENCE_TIME</td>
 <td>The time of the weather model run to used to generate the requested image. For more information regarding managing time in WMS requests, see the <a href="#handling-time">WMS Handling Time</a> section.</td>
 </tr>
+<tr>
+<td>INTERPOLATION</td>
+<td>A vendor extension for supported GeoMet-Weather layers that enables on-the-fly upscaling and resampling of the returned image, resulting in smoother, less pixelated visuals. The accepted value for this parameter is <code>TRUE</code>. If this parameter is not specified, no interpolation is applied and the image is returned at its native resolution.</td>
+</tr>
 </tbody>
 </table>
 <p>The following WMS <code>GetMap</code> request returns an image of the air temperature layer (<code>GDPS_15km_AirTemp_2m</code>) from the Global Deterministic Prediction System (GDPS):</p>

@@ -126,13 +126,28 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-level="1"><a href="#products-derived-from-the-canadian-surface-reanalysis-casr" class="nav-link">Products derived from the Canadian Surface Reanalysis (CaSR)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#file-name-nomenclature" class="nav-link">File name nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-of-variables" class="nav-link">List of variables</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="2"><a href="#dd_info-mailing-list-announcements" class="nav-link">dd_info mailing list announcements</a>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -142,10 +157,106 @@
 
 <p><a href="../readme_casr-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">TOC</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_casr_en/">Canadian Surface Reanalysis</a> &gt; CaSR Derived Products on the MSC Datamart</p>
+<h1 id="products-derived-from-the-canadian-surface-reanalysis-casr">Products derived from the Canadian Surface Reanalysis (CaSR)</h1>
+<p>This page describes the gridded statistical products in NetCDF format as well as the aggregate statistical products by watershed in GeoJSON format, derived from the Canadian Surface Reanalysis (CaSR) available on the MSC Datamart.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples for accessing and using the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available via the HTTPS protocol. It is possible to access ir with a standard browser. In this case, you obtain a list of links to a NetCDF or GeoJON file, depending on the product.</p>
+<p><strong>Gridded statistical products</strong> derived from the Canadian Surface Reanalysis (CaSR) can be found at:</p>
+<ul>
+<li><a href="https://dd.version.gc.ca/today/reanalysis_casr/casr/">https://dd.weather.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/grid</a></li>
+</ul>
+<p><strong>Aggregate statistical products by watershed</strong>, derived from the Canadian Surface Reanalysis (CaSR), can be found at:</p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/today/reanalysis_casr/casr/">https://dd.weather.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}</a></li>
+</ul>
+<p>where:</p>
+<ul>
+<li><strong>Version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">CaSR version</a> of the Canadian Surface Reanalysis (e.g., v3.2)</li>
+<li><strong>polygon_dataset</strong>: Name of the watershed polygon set (<code>nhn</code> for "National Hydro Network", <code>nhs</code> for "National Hydrological Service")</li>
+<li><strong>nb</strong>: Main drainage basins according to:<ul>
+<li>01: Maritime Provinces </li>
+<li>02: St. Lawrence </li>
+<li>03: Northern Quebec and Labrador </li>
+<li>04: Southwest Hudson Bay </li>
+<li>05: Nelson River </li>
+<li>06: Western and Northern Hudson Bay </li>
+<li>07: Great Slave Lake </li>
+<li>08 : Pacific </li>
+<li>09: Yukon River </li>
+<li>10: Arctic </li>
+<li>11: Mississippi River</li>
+</ul>
+</li>
+</ul>
+<h2 id="file-name-nomenclature">File name nomenclature</h2>
+<p><strong>Gridded products in NetCDF format</strong></p>
+<p>The forecast files follow the nomenclature below:</p>
+<p><code>{YYY1-YYY2}_MSC_CaSR-{version}_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc</code></p>
+<p>The analysis files follow the nomenclature below:</p>
+<p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc</code></p>
+<p>where:</p>
+<ul>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
+<li><strong>CaSR</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
+<li><strong>Analysis</strong>: A string indicating that the data are analyses, not forecasts</li>
+<li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
+<li><strong>Sfc</strong>: A string indicating that the vertical level is the surface</li>
+<li><strong>Grid</strong> : Horizontal rotated lat-lon grid [Rlatlon]</li>
+<li><strong>resolution</strong>: Resolution of 0.09° (about 10km) in the longitudinal and latitudinal directions [0.09]</li>
+<li><strong>TimeStep</strong>: No time, taking one of the values [P1Y, P1M]; <code>P1Y</code> represents a one-year time step and <code>P1M</code> represents a one-month time step</li>
+<li><strong>nc</strong>: Constant string indicating that the format is NetCDF</li>
+</ul>
+<p>Examples: </p>
+<ul>
+<li>1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc</li>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+</ul>
+<p><strong>Aggregate products by watershed in GeoJSON format</strong></p>
+<p>The forecast files follow the nomenclature below:</p>
+<p>'{YYY1-YYY2}<em>MSC_CaSR-{version}_DrainageArea{nb}</em>{Var}<em>Sfc</em>{TimeStep}.json'</p>
+<p>The analysis files follow the nomenclature below:</p>
+<p>'{YYY1-YYY2}<em>MSC_CaSR-{version}-Analysis_DrainageArea{nb}</em>{Var}<em>Sfc</em>{TimeStep}.json'</p>
+<p>where:</p>
+<ul>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
+<li><strong>CaSR</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
+<li><strong>Analysis</strong>: A string indicating that the data are analyses, not forecasts</li>
+<li><strong>DrainageArea</strong>: Constant string of characters to specify the watershed  </li>
+<li><strong>nb</strong>: Drainage basin number [01, 02, .., 11]</li>
+<li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
+<li><strong>Sfc</strong>: A string indicating that the vertical level is the surface</li>
+<li><strong>TimeStep</strong>: No time, taking one of the values [P1Y, P1M]; <code>P1Y</code> represents a one-year time step and <code>P1M</code> represents a one-month time step</li>
+<li><strong>json</strong>: A constant string indicating that the format is GeoJSON</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json</li>
+<li>1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json</li>
+</ul>
+<h2 id="list-of-variables">List of variables</h2>
+<ul>
+<li>Precipitation quantity (m)</li>
+<li>Snow depth at ground level (cm) </li>
+<li>Water equivalent of the snow cover at ground level (kg/m²) </li>
+<li>Air Temperature (°C)</li>
+<li>Dew point temperature (°C)</li>
+</ul>
+<p>Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax')</p>
+<p>Examples:</p>
+<ul>
+<li>'SnowWaterEquiv-YAvg'</li>
+<li>'DewPoint-MMin'</li>
+</ul>
 <h2 id="support">Support</h2>
-<p>If you have any questions about these data, <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">please contact us</a>.</p>
-<h2 id="dd_info-mailing-list-announcements">dd_info mailing list announcements</h2>
-<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info</a> list.</p></div>
+<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available via the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
             </div>
         </div>
 

@@ -1316,7 +1316,7 @@ gdalinfo --version</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">bash</span>
 
-<span class="n">curl</span> <span class="s2">&quot;https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff&quot;</span> <span class="o">&gt;</span> <span class="n">CMC_glb_TMP</span><span class="o">.</span><span class="n">tif</span>
+<span class="n">curl</span> <span class="s2">"https://geo.weather.gc.ca/geomet?SERVICE=WCS&amp;VERSION=2.0.1&amp;REQUEST=GetCoverage&amp;COVERAGEID=GDPS_15km_AirTemp_2m&amp;SUBSETTINGCRS=EPSG:4326&amp;SUBSET=x(-120,-85)&amp;SUBSET=y(48,66)&amp;RESOLUTION=x(0.24)&amp;RESOLUTION=y(0.24)&amp;FORMAT=image/tiff"</span> <span class="o">&gt;</span> <span class="n">CMC_glb_TMP</span><span class="o">.</span><span class="n">tif</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">%%bash
 
@@ -1719,7 +1719,7 @@ Processing CMC_glb_TMP.tif [1/1] : 0...10...20...30...40...50...60...70...80...9
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%%</span><span class="n">bash</span>
 
-<span class="n">gdalinfo</span> <span class="o">-</span><span class="n">proj4</span> <span class="n">epsg3857</span><span class="o">.</span><span class="n">tif</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">E</span> <span class="s1">&#39;(PROJ.4|Corner Coordinates:)&#39;</span> <span class="o">-</span><span class="n">A</span> <span class="mi">5</span>
+<span class="n">gdalinfo</span> <span class="o">-</span><span class="n">proj4</span> <span class="n">epsg3857</span><span class="o">.</span><span class="n">tif</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">E</span> <span class="s1">'(PROJ.4|Corner Coordinates:)'</span> <span class="o">-</span><span class="n">A</span> <span class="mi">5</span>
 </pre></div>
 <div id="cell-7" class="clipboard-copy-txt">%%bash
 

@@ -295,6 +295,10 @@
 <td>DIM_REFERENCE_TIME</td>
 <td>Le temps de la passe du modèle (model run) à utiliser pour l'image désirée. Pour davantage d'information, vous référer à section sur <a href="#specification-du-temps">la spécification du temps dans les requêtes WMS</a></td>
 </tr>
+<tr>
+<td>INTERPOLATION</td>
+<td>Un paramètre externe (vendor extension) offert pour les couches GeoMet-Météo prises en charge, qui permet la mise à l'échelle et le rééchantillonnage de l'image retournée à la volée, offrant un rendu plus fluide et moins pixelisé. La valeur acceptée pour ce paramètre est <code>TRUE</code>. Si ce paramètre n'est pas spécifié, aucune interpolation n'est appliquée et l'image est retournée à sa résolution native.</td>
+</tr>
 </tbody>
 </table>
 <p>La requête WMS <code>GetMap</code> suivante retourne une image de la couche de température de l'air (<code>GDPS_15km_AirTemp_2m</code>) du Système global de prévision déterministe (SGPD) :</p>

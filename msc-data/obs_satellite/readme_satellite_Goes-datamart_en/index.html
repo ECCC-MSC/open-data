@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme satellite datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <title>readme satellite Goes datamart en - MSC Open Data / Données ouvertes du SMC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#satellite-data-and-products" class="nav-link">Satellite data and products</a>
+            <li class="nav-item" data-level="1"><a href="#goes-satellite-data-and-products" class="nav-link">GOES satellite data and products</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
               <ul class="nav flex-column">
@@ -137,6 +137,10 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#file-contents" class="nav-link">File contents</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mesoscale-products" class="nav-link">Mesoscale products</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -155,19 +159,21 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_satellite-datamart_fr/">En français</a></p>
+<p><a href="../readme_satellite_Goes-datamart_fr/">En français</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_en/">TdM</a> &gt; <a href="../../readme_en/">MSC Data</a> &gt; <a href="../readme_satellite_en/">Satellite Observations</a> &gt; Satellite Observations on the MSC Datamart</p>
-<h1 id="satellite-data-and-products">Satellite data and products</h1>
+<p><a href="../../../readme_en/">TdM</a> &gt; <a href="../../readme_en/">MSC Data</a> &gt; <a href="../readme_satellite_en/">Satellite Observations</a> &gt; GOES Satellite Observations on the MSC Datamart</p>
+<h1 id="goes-satellite-data-and-products">GOES satellite data and products</h1>
 <p>This page describes data and products derived from GOES-West and GOES-East <a href="../readme_satellite_en/">satellite</a> instruments in GeoTIFF format available on the MSC Datamart. </p>
 <p>These products are derived from <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_en.pdf">RGB</a> (red/green/blue) images, a satellite processing technique that uses a combination of satellite sensor bands (also called channels) and applies a red/green/blue (RGB) filter to each of them. The result is a false-color image, i.e. an image that does not correspond to what the human eye would see, but offers high contrast between different cloud types and surface features. The on-board sensor of a weather satellite obtains two basic types of information: visible light data (reflected light) reflecting off clouds and different surface types, also known as "reflectance", and infrared data (emitted radiation) which are short-wave and long-wave radiation emitted by clouds and surface features. RGBs are specially designed to combine this type of satellite data, resulting in an information-rich final product.</p>
 <p>Other products are based on the enhancement of channel data for a single wavelength, also aimed at highlighting meteorological features of the observed surface or clouds, but in a simpler way since only a single wavelength is involved. This older approach is still useful today, as its simplicity makes image interpretation easier in some cases.</p>
+<p>Data is available for the fixed West and East domains and also on Meso-1 and Meso-2 mesoscale windows for each of these domains, allowing targeted monitoring of meteorological phenomena of interest.</p>
 <h2 id="data-location">Data location</h2>
 <p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as it becomes available. An <a href="../../../usage/readme_en/">overview and examples of how to access and use Meteorological Service of Canada open data</a> is also available.</p>
 <p>The data is available via the HTTPS protocol. It can be accessed using a standard browser. In this case, a list of links to a GeoTIFF file is displayed.</p>
 <p>GOES-R series products can be found at :</p>
 <ul>
-<li><a href="https://dd.weather.gc.ca/today/satellite/goes/">https://dd.weather.gc.ca/today/satellite/goes/[west|east]/{HH}/</a></li>
+<li>Products on the West and East fixed domains: <a href="https://dd.weather.gc.ca/today/satellite/goes/">https://dd.weather.gc.ca/today/satellite/goes/[west|east]/{HH}/</a></li>
+<li>Products on mesoscale domains: <a href="https://dd.weather.gc.ca/today/satellite/goes/">https://dd.weather.gc.ca/today/satellite/goes/[west|east]-meso/{HH}/</a></li>
 </ul>
 <p>where :</p>
 <ul>
@@ -183,7 +189,7 @@
 <li><strong>HHmm</strong>: Hour and minute in UTC of image validity time [00, 01, 02, ...., 22, 23] </li>
 <li><strong>Z</strong>: Time zone (UTC time)</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
-<li><strong>GOES-Sat</strong> : String indicating that data are derived from GOES satellites [GOES-East, GOES-West]</li>
+<li><strong>GOES-Sat</strong> : String indicating that data are derived from GOES satellites [GOES-East, GOES-West, GOES-East-Meso1, GOES-East-Meso2, GOES-West-Meso1, GOES-West-Meso2]</li>
 <li><strong>Product</strong>: String indicating the type of satellite product generated [Ash, FireTemperature, etc.]. See the section on file contents</li>
 <li><strong>resolution</strong> : Horizontal resolution of data [1km, 2km]</li>
 <li><strong>tif</strong> : Constant string indicating that the format is GeoTIFF </li>
@@ -192,6 +198,7 @@
 <ul>
 <li>20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif</li>
 <li>20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif</li>
+<li>20240314T0000Z_MSC_GOES-East-Meso1_DayVis_1km.tif</li>
 </ul>
 <h2 id="file-contents">File contents</h2>
 <p>It is important to note that products using visible light channels cannot be generated during the hours of the night when no portion of the Earth's disk seen by the satellite is directly illuminated by the sun. These products have a nominal resolution of 1km. Their higher resolution makes the latter products more popular, but when produced individually they are not available during most of the night (between 02UTC and 07UTC for GOES-East, and between 06UTC and 11UTC for GOES-West). On the other hand, products using only infrared channels are generated day and night, and are therefore available 24 hours a day at a nominal resolution of 2km.</p>
@@ -343,6 +350,11 @@
 <li>Day Land Cloud Fire / SWIR</li>
 </ul>
 <p>Other RGB products will gradually be added in the future to serve a wider range of needs.</p>
+<h2 id="mesoscale-products">Mesoscale products</h2>
+<p>Designed to provide very high temporal frequency images over a restricted area of interest, the mesoscale mode allows the real-time monitoring of rapidly evolving phenomena, such as severe thunderstorms, tropical cyclones, forest fires, volcanic eruptions and other major weather or environmental events.</p>
+<p>This mode of observation complements the routine acquisitions of GOES satellites by offering increased temporal resolution when particular conditions warrant it. It thus contributes to operational monitoring and nowcasting activities.</p>
+<p>The spatial coverage of the mesoscale areas (Meso-1 and Meso-2) corresponds to rectangular observation domains of about 1000 × 1000 km, dynamically positioned on areas of interest located in the domain of observation of the GOES-East and GOES-West satellites. Sectors are moved according to operational needs to ensure high-frequency monitoring of rapidly changing meteorological or environmental phenomena.</p>
+<p>In the absence of a request from ECCC/MSC, NOAA determines the position of the four windows (two for GOES-East and two for GOES-West). We then receive thumbnails covering an area of 1000 × 1000 km, which we process entirely in order to generate the products. It is important to note that GOES-East Meso-1 and Meso-2 are both positioned in the eastern part, which makes it possible to simultaneously monitor two different phenomena in this region. The same applies to GOES-West Meso-1 and Meso-2, both of which are positioned in the western part.</p>
 <h2 id="support">Support</h2>
 <p>If you have any questions about these data, <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">please contact us</a>.</p>
 <h2 id="dd_info-mailing-list-announcements">dd_info mailing list announcements</h2>

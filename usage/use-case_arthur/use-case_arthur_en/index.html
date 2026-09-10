@@ -1239,11 +1239,11 @@ Licensed under the Apache License, Version 2.0.
 <span class="kn">from</span><span class="w"> </span><span class="nn">tabulate</span><span class="w"> </span><span class="kn">import</span> <span class="n">tabulate</span>
 
 <span class="c1"># Ignore warnings from the OWSLib module</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s1">&#39;owslib&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">UserWarning</span><span class="p">)</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">'ignore'</span><span class="p">,</span> <span class="n">module</span><span class="o">=</span><span class="s1">'owslib'</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">UserWarning</span><span class="p">)</span>
 
 <span class="c1"># Parameters choice</span>
 <span class="c1"># Layer:</span>
-<span class="n">layer</span> <span class="o">=</span> <span class="s1">&#39;REPS.DIAG.3_PRMM.ERGE5&#39;</span>
+<span class="n">layer</span> <span class="o">=</span> <span class="s1">'REPS.DIAG.3_PRMM.ERGE5'</span>
 <span class="c1"># Coordinates:</span>
 <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">49.288</span><span class="p">,</span> <span class="o">-</span><span class="mf">123.116</span>
 <span class="c1"># Local time zone (in this exemple, the local time zone is UTC-07:00):</span>
@@ -1363,8 +1363,8 @@ min_x, min_y, max_x, max_y = x - 0.25, y - 0.25, x + 0.25, y + 0.25</div>
         </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># WMS service connection</span>
 <span class="n">wms</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span>
-    <span class="s1">&#39;https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERGE5&#39;</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span>
+    <span class="s1">'https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERGE5'</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s1">'1.3.0'</span>
 <span class="p">)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"># WMS service connection
@@ -1417,13 +1417,13 @@ wms = WebMapService(
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Extraction of temporal information from metadata</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">time_parameters</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span>
     <span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">,</span> <span class="n">interval</span> <span class="o">=</span> <span class="p">(</span><span class="n">wms</span><span class="p">[</span><span class="n">layer</span><span class="p">]</span>
-                                      <span class="o">.</span><span class="n">dimensions</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">][</span><span class="s1">&#39;values&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-                                      <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+                                      <span class="o">.</span><span class="n">dimensions</span><span class="p">[</span><span class="s1">'time'</span><span class="p">][</span><span class="s1">'values'</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+                                      <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
                                       <span class="p">)</span>
-    <span class="n">iso_format</span> <span class="o">=</span> <span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">T%H:%M:%SZ&#39;</span>
+    <span class="n">iso_format</span> <span class="o">=</span> <span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1">T%H:%M:%SZ'</span>
     <span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">start_time</span><span class="p">,</span> <span class="n">iso_format</span><span class="p">)</span>
     <span class="n">end_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">end_time</span><span class="p">,</span> <span class="n">iso_format</span><span class="p">)</span>
-    <span class="n">interval</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\D&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">interval</span><span class="p">))</span>
+    <span class="n">interval</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\D'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">interval</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">,</span> <span class="n">interval</span>
 
 
@@ -1432,9 +1432,9 @@ wms = WebMapService(
 <span class="c1"># To use specific starting and ending time, remove the #</span>
 <span class="c1"># from the next lines and replace the start_time and</span>
 <span class="c1"># end_time with the desired values:</span>
-<span class="c1"># start_time = &#39;YYYY-MM-DDThh:00&#39;</span>
-<span class="c1"># end_time = &#39;YYYY-MM-DDThh:00&#39;</span>
-<span class="c1"># fmt = &#39;%Y-%m-%dT%H:%M&#39;</span>
+<span class="c1"># start_time = 'YYYY-MM-DDThh:00'</span>
+<span class="c1"># end_time = 'YYYY-MM-DDThh:00'</span>
+<span class="c1"># fmt = '%Y-%m-%dT%H:%M'</span>
 <span class="c1"># start_time = datetime.strptime(start_time, fmt) - timedelta(hours=time_zone)</span>
 <span class="c1"># end_time = datetime.strptime(end_time, fmt) - timedelta(hours=time_zone)</span>
 
@@ -1525,21 +1525,21 @@ while time[-1] < end_time:
     <span class="k">for</span> <span class="n">timestep</span> <span class="ow">in</span> <span class="n">time</span><span class="p">:</span>
         <span class="c1"># WMS GetFeatureInfo query</span>
         <span class="n">info</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">wms</span><span class="o">.</span><span class="n">getfeatureinfo</span><span class="p">(</span><span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span>
-                                       <span class="n">srs</span><span class="o">=</span><span class="s1">&#39;EPSG:4326&#39;</span><span class="p">,</span>
+                                       <span class="n">srs</span><span class="o">=</span><span class="s1">'EPSG:4326'</span><span class="p">,</span>
                                        <span class="n">bbox</span><span class="o">=</span><span class="p">(</span><span class="n">min_x</span><span class="p">,</span> <span class="n">min_y</span><span class="p">,</span> <span class="n">max_x</span><span class="p">,</span> <span class="n">max_y</span><span class="p">),</span>
                                        <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
-                                       <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;image/jpeg&#39;</span><span class="p">,</span>
+                                       <span class="nb">format</span><span class="o">=</span><span class="s1">'image/jpeg'</span><span class="p">,</span>
                                        <span class="n">query_layers</span><span class="o">=</span><span class="p">[</span><span class="n">layer</span><span class="p">],</span>
-                                       <span class="n">info_format</span><span class="o">=</span><span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+                                       <span class="n">info_format</span><span class="o">=</span><span class="s1">'application/json'</span><span class="p">,</span>
                                        <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
                                        <span class="n">feature_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-                                       <span class="n">time</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">timestep</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span> <span class="o">+</span> <span class="s1">&#39;Z&#39;</span>
+                                       <span class="n">time</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">timestep</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span> <span class="o">+</span> <span class="s1">'Z'</span>
                                        <span class="p">))</span>
-        <span class="c1"># Probability extraction from the request&#39;s results</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="c1"># Probability extraction from the request's results</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">info</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span>
         <span class="n">json_text</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
         <span class="n">pixel_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-            <span class="nb">float</span><span class="p">(</span><span class="n">json_text</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">])</span>
+            <span class="nb">float</span><span class="p">(</span><span class="n">json_text</span><span class="p">[</span><span class="s1">'features'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'properties'</span><span class="p">][</span><span class="s1">'value'</span><span class="p">])</span>
             <span class="p">)</span>
     
     <span class="k">return</span> <span class="n">pixel_value</span>
@@ -1637,19 +1637,19 @@ pixel_value = request(layer)
 
     
 <span class="c1"># Function to create the plot</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">fig</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">ylim</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">y2label</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fig</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">xlabel</span><span class="p">,</span> <span class="n">ylabel</span><span class="p">,</span> <span class="n">ylim</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'black'</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="n">y2label</span> <span class="o">=</span> <span class="s1">''</span><span class="p">):</span>
     <span class="c1"># Plot and text size parameters</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;legend.fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;14&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;figure.figsize&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
-              <span class="s1">&#39;axes.labelsize&#39;</span><span class="p">:</span> <span class="s1">&#39;14&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;axes.titlesize&#39;</span><span class="p">:</span> <span class="s1">&#39;16&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;xtick.labelsize&#39;</span><span class="p">:</span> <span class="s1">&#39;12&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;ytick.labelsize&#39;</span><span class="p">:</span> <span class="s1">&#39;12&#39;</span><span class="p">}</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'legend.fontsize'</span><span class="p">:</span> <span class="s1">'14'</span><span class="p">,</span>
+              <span class="s1">'figure.figsize'</span><span class="p">:</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+              <span class="s1">'axes.labelsize'</span><span class="p">:</span> <span class="s1">'14'</span><span class="p">,</span>
+              <span class="s1">'axes.titlesize'</span><span class="p">:</span> <span class="s1">'16'</span><span class="p">,</span>
+              <span class="s1">'xtick.labelsize'</span><span class="p">:</span> <span class="s1">'12'</span><span class="p">,</span>
+              <span class="s1">'ytick.labelsize'</span><span class="p">:</span> <span class="s1">'12'</span><span class="p">}</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
 
     <span class="c1"># Plot creation and plot styling</span>
     <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">)</span>
 
     <span class="c1"># Titles</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
@@ -1658,32 +1658,32 @@ pixel_value = request(layer)
 
     <span class="c1"># Y axis range</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ylim</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
     
     <span class="c1"># Grid</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">'both'</span><span class="p">)</span>
     
     <span class="c1"># Add a second dataset</span>
     <span class="k">if</span> <span class="n">y2</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:red&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">'o'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'tab:red'</span><span class="p">)</span>
         <span class="c1"># Second y axis title</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">y2label</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:red&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">y2label</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'tab:red'</span><span class="p">)</span>
         <span class="c1"># Range and ticks of second y axis</span>
         <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">y2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">))</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">&#39;tab:red&#39;</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="s1">'tab:red'</span><span class="p">)</span>
         <span class="n">align_yaxis</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span>
 
     <span class="c1"># Date format on x axis</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span><span class="o">.</span><span class="n">autofmt_xdate</span><span class="p">()</span>
-    <span class="n">my_format</span> <span class="o">=</span> <span class="n">mdates</span><span class="o">.</span><span class="n">DateFormatter</span><span class="p">(</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1"> %H:%M&#39;</span><span class="p">)</span>
+    <span class="n">my_format</span> <span class="o">=</span> <span class="n">mdates</span><span class="o">.</span><span class="n">DateFormatter</span><span class="p">(</span><span class="s1">'%m/</span><span class="si">%d</span><span class="s1"> %H:%M'</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">my_format</span><span class="p">)</span>
 
     <span class="c1"># Graduation of x axis depending on the number of values plotted</span>
     <span class="c1"># Variable containing the hours for which there will be ticks: </span>
     <span class="n">hour</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">timestep</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
-        <span class="n">hour</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">timestep</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%#H&#39;</span><span class="p">)))</span>
+        <span class="n">hour</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">timestep</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%#H'</span><span class="p">)))</span>
 
     <span class="c1"># Frequency of ticks and labels on the x axis</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hour</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
@@ -1702,18 +1702,18 @@ pixel_value = request(layer)
 <span class="c1"># Add quantity of precipitations to the plot</span>
 <span class="c1"># Verification of temporal parameters compatibility:</span>
 <span class="n">wms</span> <span class="o">=</span> <span class="n">WebMapService</span><span class="p">(</span>
-    <span class="s1">&#39;https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERMEAN&#39;</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.3.0&#39;</span>
+    <span class="s1">'https://geo.weather.gc.ca/geomet?layers=REPS.DIAG.3_PRMM.ERMEAN'</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s1">'1.3.0'</span>
 <span class="p">)</span>
 
-<span class="n">start_time1</span><span class="p">,</span> <span class="n">end_time1</span><span class="p">,</span> <span class="n">interval1</span> <span class="o">=</span> <span class="n">time_parameters</span><span class="p">(</span><span class="s1">&#39;REPS.DIAG.3_PRMM.ERMEAN&#39;</span><span class="p">)</span>
+<span class="n">start_time1</span><span class="p">,</span> <span class="n">end_time1</span><span class="p">,</span> <span class="n">interval1</span> <span class="o">=</span> <span class="n">time_parameters</span><span class="p">(</span><span class="s1">'REPS.DIAG.3_PRMM.ERMEAN'</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="p">(</span><span class="n">start_time1</span> <span class="o">==</span> <span class="n">start_time</span>
         <span class="ow">and</span> <span class="n">end_time1</span> <span class="o">==</span> <span class="n">end_time</span>
         <span class="ow">and</span> <span class="n">interval1</span> <span class="o">==</span> <span class="n">interval</span><span class="p">):</span>
     <span class="c1"># GetFeatureInfo request</span>
-    <span class="n">y2</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="n">layer</span> <span class="o">=</span> <span class="s1">&#39;REPS.DIAG.3_PRMM.ERMEAN&#39;</span><span class="p">)</span>
-    <span class="n">y2label</span> <span class="o">=</span> <span class="s1">&#39;Quantity of precipitations (mm)&#39;</span>
+    <span class="n">y2</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="n">layer</span> <span class="o">=</span> <span class="s1">'REPS.DIAG.3_PRMM.ERMEAN'</span><span class="p">)</span>
+    <span class="n">y2label</span> <span class="o">=</span> <span class="s1">'Quantity of precipitations (mm)'</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">y2</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="n">y2label</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1721,10 +1721,10 @@ pixel_value = request(layer)
 <span class="c1"># Create the plot with the fig function and show the plot</span>
 <span class="n">fig</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">local_time</span><span class="p">,</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">pixel_value</span><span class="p">,</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Probability of getting 5 mm or more of precipitations between&#39;</span> <span class="o">+</span>
-             <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="si">{</span><span class="n">local_time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> and </span><span class="si">{</span><span class="n">local_time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1"> (local time)&#39;</span><span class="p">),</span>
-    <span class="n">xlabel</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Date and time&#39;</span><span class="p">,</span>
-    <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">&#39;Probability of getting 5 mm</span><span class="se">\n</span><span class="s1">or more of precipitations (%)&#39;</span><span class="p">,</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Probability of getting 5 mm or more of precipitations between'</span> <span class="o">+</span>
+             <span class="sa">f</span><span class="s1">'</span><span class="se">\n</span><span class="si">{</span><span class="n">local_time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> and </span><span class="si">{</span><span class="n">local_time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1"> (local time)'</span><span class="p">),</span>
+    <span class="n">xlabel</span> <span class="o">=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">Date and time'</span><span class="p">,</span>
+    <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">'Probability of getting 5 mm</span><span class="se">\n</span><span class="s1">or more of precipitations (%)'</span><span class="p">,</span>
     <span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span>
     <span class="n">y2</span> <span class="o">=</span> <span class="n">y2</span><span class="p">,</span>
     <span class="n">y2label</span> <span class="o">=</span> <span class="n">y2label</span>
@@ -1871,9 +1871,9 @@ plt.show()</div>
 
 
 
-<div id="0d2d18d0-ec11-4037-9ad8-af696a569508" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="5c7a4ebe-8d15-40b6-a6a8-e4390c673b02" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('0d2d18d0-ec11-4037-9ad8-af696a569508');
+var element = document.getElementById('5c7a4ebe-8d15-40b6-a6a8-e4390c673b02');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -2719,10 +2719,10 @@ $$ m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{30 - 10}{100 - 30}$$$$ n_{umbrella} =
 <span class="n">slope</span> <span class="o">=</span> <span class="p">((</span><span class="n">y2</span><span class="o">-</span><span class="n">y1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x2</span><span class="o">-</span><span class="n">x1</span><span class="p">))</span>
 
 <span class="c1"># Open hours</span>
-<span class="n">opening</span> <span class="o">=</span> <span class="s1">&#39;09:00:00&#39;</span>
-<span class="n">opening</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">opening</span><span class="p">,</span> <span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
-<span class="n">closing</span> <span class="o">=</span> <span class="s1">&#39;21:00:00&#39;</span>
-<span class="n">closing</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">closing</span><span class="p">,</span> <span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
+<span class="n">opening</span> <span class="o">=</span> <span class="s1">'09:00:00'</span>
+<span class="n">opening</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">opening</span><span class="p">,</span> <span class="s1">'%H:%M:%S'</span><span class="p">)</span>
+<span class="n">closing</span> <span class="o">=</span> <span class="s1">'21:00:00'</span>
+<span class="n">closing</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">closing</span><span class="p">,</span> <span class="s1">'%H:%M:%S'</span><span class="p">)</span>
 
 <span class="c1"># Prediction times that are within the open hours</span>
 <span class="n">open_hours</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2861,13 +2861,13 @@ for index, probability in enumerate(pixel_value):
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Create and show plot</span>
 <span class="n">fig</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">local_time</span><span class="p">,</span>
     <span class="n">y</span><span class="o">=</span><span class="n">pixel_value</span><span class="p">,</span>
-    <span class="n">title</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Anticipated profits from umbrellas sales &#39;</span> <span class="o">+</span>
-             <span class="s1">&#39;depending</span><span class="se">\n</span><span class="s1">on precipitations probability&#39;</span><span class="p">),</span>
-    <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Date and time&#39;</span><span class="p">,</span>
-    <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Probability of getting 5 mm</span><span class="se">\n</span><span class="s1">or more of precipitations (%)&#39;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="p">(</span><span class="s1">'Anticipated profits from umbrellas sales '</span> <span class="o">+</span>
+             <span class="s1">'depending</span><span class="se">\n</span><span class="s1">on precipitations probability'</span><span class="p">),</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Date and time'</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s1">'Probability of getting 5 mm</span><span class="se">\n</span><span class="s1">or more of precipitations (%)'</span><span class="p">,</span>
     <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span>
     <span class="n">y2</span><span class="o">=</span><span class="n">cumulative_profit</span><span class="p">,</span>
-    <span class="n">y2label</span><span class="o">=</span><span class="s1">&#39;Cumulative anticipated profits ($)&#39;</span>
+    <span class="n">y2label</span><span class="o">=</span><span class="s1">'Cumulative anticipated profits ($)'</span>
     <span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -2908,9 +2908,9 @@ plt.show()</div>
 
 
 
-<div id="76d9f431-7e28-4775-acfe-33eb33d950f5" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
+<div id="74deb10d-baab-4640-a9d0-74a4ab897918" class="jp-RenderedJavaScript jp-OutputArea-output " data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('76d9f431-7e28-4775-acfe-33eb33d950f5');
+var element = document.getElementById('74deb10d-baab-4640-a9d0-74a4ab897918');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -3744,24 +3744,24 @@ if (IPython.notebook.kernel != null) {
         <span class="n">profit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cumulative_profit</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
 
 <span class="c1"># Create table</span>
-<span class="n">profit_df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Local date and time&#39;</span><span class="p">:</span>  <span class="n">open_hours</span><span class="p">,</span>
-                              <span class="s1">&#39;Probability (%)&#39;</span><span class="p">:</span> <span class="n">probability</span><span class="p">,</span>
-                              <span class="s1">&#39;Anticipated cumulative profits ($)&#39;</span><span class="p">:</span> <span class="n">profit</span>
+<span class="n">profit_df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'Local date and time'</span><span class="p">:</span>  <span class="n">open_hours</span><span class="p">,</span>
+                              <span class="s1">'Probability (%)'</span><span class="p">:</span> <span class="n">probability</span><span class="p">,</span>
+                              <span class="s1">'Anticipated cumulative profits ($)'</span><span class="p">:</span> <span class="n">profit</span>
                               <span class="p">})</span>
 
 <span class="c1"># Show table</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Anticipated profits from umbrellas sales &#39;</span> <span class="o">+</span>
-      <span class="s1">&#39;depending on precipitations probability&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Anticipated profits from umbrellas sales '</span> <span class="o">+</span>
+      <span class="s1">'depending on precipitations probability'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">profit_df</span><span class="p">,</span>
-               <span class="n">headers</span><span class="o">=</span><span class="s1">&#39;keys&#39;</span><span class="p">,</span>
-               <span class="n">tablefmt</span><span class="o">=</span><span class="s1">&#39;pretty&#39;</span><span class="p">,</span>
+               <span class="n">headers</span><span class="o">=</span><span class="s1">'keys'</span><span class="p">,</span>
+               <span class="n">tablefmt</span><span class="o">=</span><span class="s1">'pretty'</span><span class="p">,</span>
                <span class="n">showindex</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 
 <span class="c1"># Save in CSV format (remove # from the following lines)</span>
-<span class="c1"># profit_df.to_csv(&#39;profit.csv&#39;,</span>
-<span class="c1">#                 sep=&#39;;&#39;,</span>
+<span class="c1"># profit_df.to_csv('profit.csv',</span>
+<span class="c1">#                 sep=';',</span>
 <span class="c1">#                 index=False,</span>
-<span class="c1">#                 encoding=&#39;utf-8-sig&#39;)</span>
+<span class="c1">#                 encoding='utf-8-sig')</span>
 </pre></div>
 <div id="cell-9" class="clipboard-copy-txt"># Probability of precipitations and cumulative
 # profits only within open hours

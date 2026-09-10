@@ -163,22 +163,22 @@
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier NetCDF ou GeoJON selon le produit.</p>
-<p>Les produits statistiques sur grille, dérivés de la Réanalyse canadienne de surface (RCaS) se trouvent à l'adresse :</p>
+<p>Les <strong>produits statistiques sur grille</strong>, dérivés de la Réanalyse canadienne de surface (RCaS) se trouvent à l'adresse :</p>
 <ul>
 <li><a href="https://dd.meteo.gc.ca/today/reanalysis_casr/casr/">https://dd.meteo.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/grid</a></li>
 </ul>
-<p>Les produits statistiques agrégés par bassin versant hydrologique, dérivés de la Réanalyse canadienne de surface (RCaS) se trouvent à l'adresse :</p>
+<p>Les <strong>produits statistiques agrégés par bassin versant hydrologique</strong>, dérivés de la Réanalyse canadienne de surface (RCaS) se trouvent à l'adresse :</p>
 <ul>
 <li><a href="https://dd.meteo.gc.ca/today/reanalysis_casr/casr/">https://dd.meteo.gc.ca/today/reanalysis_casr/casr/{Version}/post-processing/watersheds/{polygon_dataset}/area{nb}</a></li>
 </ul>
 <p>où :</p>
 <ul>
 <li><strong>Version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version de CaSR</a> de la Réanalyse canadienne de surface (ex: v3.2)</li>
-<li><strong>polygon_dataset</strong> : Nom du jeu de polygones de bassins versants (<code>nhn</code> pour National Hydrographic Network, <code>nhs</code> pour National hydrometric basin polygon)</li>
+<li><strong>polygon_dataset</strong> : Nom du jeu de polygones de bassins versants (<code>nhn</code> pour "National Hydro Network" le Réseau hydro national, <code>nhs</code> pour "National Hydrological Service" le Service hydrologique national)</li>
 <li><strong>nb</strong> : Principaux bassins de drainage selon:<ul>
 <li>01 : Provinces maritimes </li>
 <li>02 : Saint-Laurent </li>
-<li>03 : Nord du Québec et du Labrador </li>
+<li>03 : Nord du Québec et Labrador </li>
 <li>04 : Sud-ouest de la baie d’Hudson </li>
 <li>05 : Fleuve Nelson </li>
 <li>06 : Ouest et nord de la baie d’Hudson </li>
@@ -191,7 +191,6 @@
 </li>
 </ul>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
-<p>Les noms de fichiers suivent la nomenclature ci-dessous:</p>
 <p><strong>Produits sur grille en format NetCDF</strong></p>
 <p>Les fichiers de prévisions suivent la nomenclature ci-dessous:</p>
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}_{Var}_Sfc_{Grille}{resolution}_{TimeStep}.nc</code></p>
@@ -199,22 +198,22 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grille}{resolution}_{TimeStep}.nc</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)</li>
 <li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
 <li><strong>Analysis</strong> : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions</li>
-<li><strong>Var</strong> : Nom de la variable</li>
+<li><strong>Var</strong> : Nom de la variable et statistique associée (voir la section ci-dessous)</li>
 <li><strong>Sfc</strong> : Chaîne de caractères indiquant que le niveau vertical est la surface</li>
 <li><strong>Grille</strong> : Grille horizontale lat-lon tournée [Rlatlon]</li>
 <li><strong>resolution</strong> : Résolution de 0.09°(environ 10km) dans les directions longitudinale et latitudinale [0.09]</li>
-<li><strong>TimeStep</strong> : Pas de temps, prenant l'une des valeurs [P1Y, P1M]; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.</li>
+<li><strong>TimeStep</strong> : Pas de temps, prenant l'une des valeurs [P1Y, P1M]; <code>P1Y</code> représente un pas de temps d'un an et <code>P1M</code> représente un pas de temps d'un mois</li>
 <li><strong>nc</strong> : Chaîne de caractères constante indiquant que le format est NetCDF</li>
 </ul>
 <p>Exemples: </p>
 <ul>
-<li>1980-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc</li>
-<li>1980-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+<li>1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc</li>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
 </ul>
 <p><strong>Produits agrégés par bassin versant hydrologique en format GeoJSON</strong></p>
 <p>Les fichiers de prévisions suivent la nomenclature ci-dessous:</p>
@@ -223,33 +222,36 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_DrainageArea{nb}_{Var}_Sfc_{TimeStep}.json</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)</li>
 <li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
 <li><strong>Analysis</strong> : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions</li>
 <li><strong>DrainageArea</strong> : Chaîne de caractères constante pour spécifier le bassin versant  </li>
 <li><strong>nb</strong> : Numéro du bassin de drainage [01, 02, .., 11]</li>
-<li><strong>Var</strong> : Nom de la variable</li>
+<li><strong>Var</strong> : Nom de la variable et statistique associée (voir la section ci-dessous)</li>
 <li><strong>Sfc</strong> : Chaîne de caractères indiquant que le niveau vertical est la surface</li>
-<li><strong>TimeStep</strong> : Pas de temps, prenant l'une des valeurs [P1Y, P1M] ; P1Y représente un pas de temps d'un an et P1M représente un pas de temps d'un mois.</li>
+<li><strong>TimeStep</strong> : Pas de temps, prenant l'une des valeurs [P1Y, P1M] ; <code>P1Y</code> représente un pas de temps d'un an et <code>P1M</code> représente un pas de temps d'un mois</li>
 <li><strong>json</strong> : Chaîne de caractères constante indiquant que le format est GeoJSON</li>
 </ul>
 <p>Exemples:</p>
 <ul>
-<li>1980-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json</li>
-<li>1980-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json</li>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json</li>
+<li>1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <ul>
-<li>Accumulation des flux à réponse rapide, ruissellement (kg/m²)</li>
 <li>Quantité de précipitations (m)</li>
-<li>Accumulation du drainage soit l'écoulement vertical à la base de la couche de sol la plus profonde considérée pour le routage (kg/m²)</li>
-<li>Profondeur de neige, agrégée (cm) </li>
-<li>Equivalent en eau de la couverture neigeuse, agrégée (kg/m²)</li>
-<li>Contenu volumique d'eau liquide dans le sol (m³/m³) </li>
+<li>Profondeur de neige au sol (cm) </li>
+<li>Equivalent en eau de la couverture neigeuse au sol (kg/m²)</li>
 <li>Température de l'air (°C)</li>
 <li>Température du point de rosée (°C)</li>
+</ul>
+<p>À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (<code>YAvg/MAvg</code>), le minimum annuel/mensuel (<code>YMin/MMin</code>) ou le maximum annuel/mensuel(<code>YMax/MMax</code>)</p>
+<p>Exemples:</p>
+<ul>
+<li><code>SnowWaterEquiv-YAvg</code></li>
+<li><code>DewPoint-MMin</code></li>
 </ul>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Readme rdps stormtrack datamart en - MSC Open Data / Données ouvertes du SMC</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">MSC Open Data / <br>Données ouvertes du SMC</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Available data /<br>Données disponibles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../readme_en/" class="dropdown-item">Data list /<br>Liste des données</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-data-themes/readme_en/" class="dropdown-item">Theme list /<br>Liste de thèmes</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Data access /<br>Accès aux données <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../msc-geomet/readme_en/" class="dropdown-item">MSC GeoMet /<br>GeoMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-datamart/readme_en/" class="dropdown-item">MSC Datamart /<br>Datamart du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../cost-recovered/readme_en/" class="dropdown-item">Cost-recovered services /<br>Services à recouvrement de coûts</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-animet/readme_en/" class="dropdown-item">MSC AniMet /<br>AniMet du SMC</a>
+</li>
+                                    
+<li>
+    <a href="../../../wmo-wis2/readme_en/" class="dropdown-item">WMO WIS2 /<br>WIS2 de l'OMM</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Usage and tutorials / <br>Utilisation et tutoriels <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../usage/readme_en/" class="dropdown-item">Usage overview/<br>Aperçu de l'utilisation</a>
+</li>
+                                    
+<li>
+    <a href="../../../usage/tutorials_en/" class="dropdown-item">Access tutorials /<br>Accéder aux tutoriels</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wms_en/" class="dropdown-item">WMS technical doc /<br>Doc technique du WMS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/wcs_en/" class="dropdown-item">WCS technical doc /<br>Doc technique du WCS</a>
+</li>
+                                    
+<li>
+    <a href="../../../msc-geomet/ogc_api_en/" class="dropdown-item">OGC API technical doc /<br>Doc technique de l'OGC API</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://weather.gc.ca/mainmenu/contact_us_e.html" class="nav-link">Contact us /<br>Contactez-nous</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search /<br> <i class="fa fa-fw"></i>Rechercher
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#storm-track-data-generated-from-the-regional-deterministic-prediction-system" class="nav-link">Storm track data generated from the Regional Deterministic Prediction System</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-location" class="nav-link">Data location</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#technical-specifications" class="nav-link">Technical specifications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filename-nomenclature" class="nav-link">Filename nomenclature</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#support" class="nav-link">Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#announcements-from-the-dd_info-mailing-list" class="nav-link">Announcements from the dd_info mailing list</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="../readme_rdps-stormtrack-datamart_fr/">In French</a></p>
+<p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
+<p><a href="../../../readme_en/">ToM</a> &gt; <a href="../../readme_en/">MSC data</a> &gt; <a href="../readme_rdps_en/">RDPS</a> &gt; Storm tracks from the RDPS on the MSC Datamart</p>
+<h1 id="storm-track-data-generated-from-the-regional-deterministic-prediction-system">Storm track data generated from the Regional Deterministic Prediction System</h1>
+<p>The Storm track product is an automated system that detects, identifies, tracks and characterizes low-pressure systems based on the outputs of numerical weather prediction models (deterministic and ensemble) or reanalyses.  It makes it possible to produce maps and animations describing the evolution of extratropical and tropical cyclones throughout their lifetime.</p>
+<p>Once determined at each forecast of the model, the storm centres are linked together using the method developed by <a href="https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml">Mark R. Sinclair</a>, which seeks the best possible extension of a trajectory, taking into account the previous position, the speed of movement, the direction of movement and temporal continuity. Only systems with a lifespan of at least 24 hours are retained as valid storms.</p>
+<h2 id="data-location">Data location</h2>
+<p>MSC Datamart data can be <a href="../../../msc-datamart/amqp_en/">automatically retrieved with the Advanced Message Queuing Protocol (AMQP)</a> as soon as they become available. An <a href="../../../usage/readme_en/">overview and examples to access and use the Meteorological Service of Canada's open data</a> is also available.</p>
+<p>The data is available using the HTTPS protocol and resides in a directory that is plainly accessible to a web browser. Visiting that directory with an interactive browser will yield a raw listing of links, each link being a downloadable GeoJSON file.</p>
+<p>The data can be accessed at the following adress : </p>
+<ul>
+<li><a href="https://dd.weather.gc.ca/today/model_rdps/storm-tracks">https://dd.weather.gc.ca/today/model_rdps/storm-tracks/{HH}/</a></li>
+</ul>
+<p>where :</p>
+<ul>
+<li><strong>HH</strong>: Model run start, in UTC [00, 06, 12, 18]</li>
+</ul>
+<h2 id="technical-specifications">Technical specifications</h2>
+<p>The following information is available for each storm centre:</p>
+<ul>
+<li>A marker indicating the position of the center</li>
+<li>A line connecting the successive positions of the center</li>
+<li>The position of the centre</li>
+<li>Date and time (UTC)</li>
+<li>The duration of the storm</li>
+<li>Pressure, vorticity, and circulation values</li>
+<li>For tropical cyclones only: the values of low-level baroclinicity (600-900 mb), low-level (600-900 mb) and high-level (300-600 mb) thermal wind structure, maximum vorticity at 850 mb, maximum thickness 250-850 mb, and maximum surface wind</li>
+</ul>
+<h4 id="extra-tropical-cyclones">Extra-tropical cyclones</h4>
+<p>Extra-tropical cyclones are tracked base on either their minimum central mean sea level pressure (MSLP) or on their maximum values of gradient wind vorticity.</p>
+<p>For vorticity based tracking, cyclones (i.e. vorticity maxima) must reach a given threshold value (at 1000 mb: +0.75x10-5 s-1, at 500 mb: +1.5x10-5 s-1). Vorticity fields are smoothed using a Cressman filter with a smoothing radius of 800 km to removed (real and ficticious) small scale details and retain only the synoptic scale features.</p>
+<p>For pressure based traking, cyclone centers are determined from filtered MSLP fields obtained with a Cressman filter and a smoothing radius of 300 km. However, the minimum central pressure values mapped are the raw MSLP values at the center locations found in the filtered MSLP fields.</p>
+<p>In all cases, cyclones must last at least 24h to be considered.</p>
+<h4 id="tropical-cyclones">Tropical cyclones</h4>
+<p>The tropical cyclone tracking algorithm uses the same core than the extra-tropical pressure-based tracking algorithm. In order to identify cyclones with tropical characteristics, 4 additional parameters are considered here:</p>
+<ul>
+<li>850 mb relative vorticity filtered with a Cressman filter using a 300-km radius</li>
+<li>250-850 mb thickness</li>
+<li>Surface (10 m) wind speed</li>
+<li>Low level baroclinicity (noted B) measured in terms of asymetry of the 600-900 mb thickness field. The definition of B employed here follows <a href="https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml">Sinclair, M. R., 1997</a></li>
+</ul>
+<p>To be defined as a tropical cyclone, a low pressure centre must meet the following 4 criteria:</p>
+<ul>
+<li>Possess a maximum of 850 mb relative vorticity greater than +2,5x10-5 s-1 whitin a radius of 150 km</li>
+<li>Possess a maximum of 250-850 mb thickness greater than 935 dam whitin a radius of 150 km (indicating a deep warm core structure)</li>
+<li>Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km</li>
+<li>Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m</li>
+</ul>
+<p>A track is started only when all the above criteria are met. When a cyclone not longer meets all the (4) criteria, it is classified as a post-tropical cyclone. The cyclone will be tagged as "Extratropical" if evoling in a baroclinic environment (B &gt; 25m) or as "Remnant" if still in a barotropic environment. Note that a cyclone will still be tagged as being extratropical even if the value of B decreases later below 25 m (e.g. due to an occlusion of the cyclone)</p>
+<h2 id="filename-nomenclature">Filename nomenclature</h2>
+<p>The files have the following nomenclature :</p>
+<ul>
+<li>Tropical cyclones: <code>{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_TropicalCyclone_PT{hhh}H.json</code></li>
+<li>Extra-tropical cyclones:<ul>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT{hhh}H.json</code></li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-1000_PT{hhh}H.json</code></li>
+<li><code>{YYYYMMDD}T{HH}Z_MSC_RDPS-StormTracks_Pressure-MSL_PT{hhh}H.json</code></li>
+</ul>
+</li>
+</ul>
+<p>where:</p>
+<ul>
+<li><strong>YYYYMMDD</strong> : Year, month and day of the beginning of the forecast</li>
+<li><strong>T</strong>: Time delimiter according to ISO8601 norms</li>
+<li><strong>HH</strong> : UTC run time [00, 06, 12, 18]</li>
+<li><strong>Z</strong>: Time zone (UTC hour)</li>
+<li><strong>MSC</strong>: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)</li>
+<li><strong>RDPS-StormTracks</strong>: Constant string indicating that data is from Regional Deterministic Prediction System (RDPS) forecasts of storm tracks</li>
+<li><strong>TropicalCyclone</strong>: A constant string of characters indicating predictions of tropical cyclone tracks</li>
+<li><strong>GradientWindVorticity-IsbL-0500</strong>: Constant string indicating predictions of storm tracks detected by their wind vorticity gradient at 500 mb</li>
+<li><strong>GradientWindVorticity-IsbL-1000</strong>: A constant string of characters indicating predictions of storm tracks detected by their wind vorticity gradient at 1000 mb</li>
+<li><strong>Pressure-MSL</strong>: Constant string of characters indicating forecasts of storm tracks detected by their mean sea level pressure</li>
+<li><strong>PT{hhh}H</strong>: Forecast hours based on <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601</a> norms. P, T and H are constant character designating Period, Time and Hour. "HHH" represents the hour at which the storm track is forecasted</li>
+<li><strong>json</strong> : constant string indicating the GeoJSON format</li>
+</ul>
+<p>Filenames examples: </p>
+<ul>
+<li>20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json</li>
+<li>20251012T12Z_MSC_RDPS-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json</li>
+</ul>
+<h2 id="support">Support</h2>
+<p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>
+<h2 id="announcements-from-the-dd_info-mailing-list">Announcements from the dd_info mailing list</h2>
+<p>Announcements related to this dataset are available in the <a href="https://comm.collab.science.gc.ca/mailman3/postorius/lists/dd_info/">dd_info list</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                    <br>
+                    Effectuez une recherche dans la documentation en indiquant les termes désirés ci-après.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

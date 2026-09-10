@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Readme satellite datamart fr - MSC Open Data / Données ouvertes du SMC</title>
+        <title>readme satellite Goes datamart fr - MSC Open Data / Données ouvertes du SMC</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -126,7 +126,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#donnees-et-produits-satellitaires" class="nav-link">Données et produits satellitaires</a>
+            <li class="nav-item" data-level="1"><a href="#donnees-et-produits-satellitaires-du-satellite-goes" class="nav-link">Données et produits satellitaires du satellite GOES</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#adresse-des-donnees" class="nav-link">Adresse des données</a>
               <ul class="nav flex-column">
@@ -137,6 +137,10 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#contenu-des-fichiers" class="nav-link">Contenu des fichiers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#produits-meso-echelle" class="nav-link">Produits méso-échelle</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -155,19 +159,21 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><a href="../readme_satellite-datamart_en/">In English</a></p>
+<p><a href="../readme_satellite_Goes-datamart_en/">In English</a></p>
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
-<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_satellite_fr/">Observations satellite</a> &gt; Observations satellite sur le Datamart du SMC</p>
-<h1 id="donnees-et-produits-satellitaires">Données et produits satellitaires</h1>
+<p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_satellite_fr/">Observations satellite</a> &gt; Observations du satellite GOES sur le Datamart du SMC</p>
+<h1 id="donnees-et-produits-satellitaires-du-satellite-goes">Données et produits satellitaires du satellite GOES</h1>
 <p>Cette page décrit des données et produits dérivés des instruments <a href="../readme_satellite_fr/">satellitaires</a> GOES-Ouest et GOES-Est en format GeoTIFF disponibles sur le Datamart du SMC. </p>
 <p>Ces produits sont dérivés d'images <a href="https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_satellite/what_is_an_rgb_fr.pdf">RVB</a> (rouge/vert/bleu), une technique de traitement satellitaire qui utilise une combinaison de bandes de capteurs satellitaires (également appelées canaux) et les applique chacune à un filtre rouge/vert/bleu (RVB). Il en résulte une image en fausses couleurs, c'est-à-dire une image qui ne correspond pas à ce que verrait l'œil humain, mais qui offre un contraste élevé entre les différents types de nuages et les caractéristiques de la surface. Le capteur embarqué à bord d'un satellite météorologique obtient deux types d'informations de base : les données de la lumière visible (lumière réfléchie) se reflétant sur les nuages et les différents types de surface, aussi appelée « réflectance », et les données infrarouges (radiation émise) qui sont des radiations à ondes longues et courtes émises par les nuages et les caractéristiques de surface. Les RVB sont spécialement conçus pour combiner ce type de données satellitaires, ce qui permet d'obtenir un produit final riche en informations.</p>
 <p>Les autres produits résultent d’un rehaussement des données d’un canal pour une longueur d’onde unique, visant aussi à mettre en évidence des caractéristiques météorologiques de la surface ou des nuages observés, mais de manière plus simple puisque ne mettant en jeu qu’une seule longueur d’onde. Cette façon de faire plus ancienne est toujours utile parce que sa simplicité facilite dans certains cas l’interprétation de l’image.</p>
+<p>Les données sont disponibles sur les domaines Ouest et Est fixes et également sur des fenêtres Meso-1 et Meso-2 à méso-échelle sur chacun de ces domaines, permettant une surveillance ciblée de phénomènes météorologiques d'intérêt.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le Protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoTIFF.</p>
-<p>Les produits de la série GOES-R se trouvent à l'adresse :</p>
+<p>Les produits de la série GOES-R se trouvent aux adresses :</p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/today/satellite/goes/">https://dd.meteo.gc.ca/today/satellite/goes/[west|east]/{HH}/</a></li>
+<li>Produits sur les domaines Ouest et Est fixes: <a href="https://dd.meteo.gc.ca/today/satellite/goes/">https://dd.meteo.gc.ca/today/satellite/goes/[west|east]/{HH}/</a></li>
+<li>Produits sur les domaines à méso-échelle: <a href="https://dd.meteo.gc.ca/today/satellite/goes/">https://dd.meteo.gc.ca/today/satellite/goes/[west|east]-meso/{HH}/</a></li>
 </ul>
 <p>où :</p>
 <ul>
@@ -183,15 +189,16 @@
 <li><strong>HHmm</strong> : Heure et minute en UTC du temps de validité de l'image [00, 01, 02, ...., 22, 23] </li>
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
-<li><strong>GOES-Sat</strong> : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West] </li>
+<li><strong>GOES-Sat</strong> : Chaîne de caractères indiquant que les données sont dérivées à partir des satellites GOES [GOES-East, GOES-West, GOES-East-Meso1, GOES-East-Meso2, GOES-West-Meso1, GOES-West-Meso2] </li>
 <li><strong>Product</strong> : Chaîne de caractères indiquant le type de produit satellitaire généré [Ash, FireTemperature, etc.]. Voir la section sur le contenu des fichiers</li>
 <li><strong>resolution</strong> : Résolution horizontale des données [1km, 2km]</li>
 <li><strong>tif</strong> : Chaîne de caractères constante indiquant que le format est GeoTIFF </li>
 </ul>
-<p>Examples: </p>
+<p>Exemples: </p>
 <ul>
 <li>20231109T0800Z_MSC_GOES-East_NaturalColor_1km.tif</li>
 <li>20231109T0510Z_MSC_GOES-West_SnowFog-NightMicrophysics_1km.tif</li>
+<li>20240314T0000Z_MSC_GOES-East-Meso1_DayVis_1km.tif</li>
 </ul>
 <h2 id="contenu-des-fichiers">Contenu des fichiers</h2>
 <p>Il est important de noter que les produits utilisant les canaux de lumière visible ne peuvent être générés durant les heures de la nuit où aucune portion du disque terrestre vu par le satellite n’est éclairée directement par le soleil. Ces produits ont une résolution nominale de 1km. Leur plus haute résolution rendent ces derniers produits plus populaires, mais lorsque générés individuellement ils ne sont pas disponibles durant la majeure partie de la nuit (entre 02UTC et 07UTC pour GOES-Est, et entre 06UTC et 11UTC pour GOES-Ouest). Par contre les produits n’utilisant que des canaux infrarouges sont générés de jour comme de nuit et donc disponibles 24h/24 à une résolution nominale de 2km.</p>
@@ -343,6 +350,11 @@
 <li>Détection des feux de jour /SWIR</li>
 </ul>
 <p>D’autres produits RVB s’ajouteront graduellement dans le futur pour servir une plus grande diversité de besoins.</p>
+<h2 id="produits-meso-echelle">Produits méso-échelle</h2>
+<p>Conçu pour fournir des images à très haute fréquence temporelle sur une zone d'intérêt restreinte, le mode méso-échelle permet le suivi en temps réel des phénomènes à évolution rapide, tels que les orages violents, les cyclones tropicaux, les feux de forêt, les éruptions volcaniques et d'autres événements météorologiques ou environnementaux majeurs.</p>
+<p>Ce mode d'observation complète les acquisitions de routine des satellites GOES en offrant une résolution temporelle accrue lorsque des conditions particulières le justifient. Il contribue ainsi aux activités de surveillance opérationnelle et de prévision immédiate.</p>
+<p>La couverture spatiale des secteurs de méso-échelle (Meso-1 et Meso-2) correspond à des domaines d’observation rectangulaires d’environ 1000 × 1000 km, positionnés dynamiquement sur des zones d’intérêt situées dans le domaine d’observation des satellites GOES-Est et GOES-Ouest. Les secteurs sont déplacés selon les besoins opérationnels afin d’assurer une surveillance à haute fréquence des phénomènes météorologiques ou environnementaux à évolution rapide.</p>
+<p>En l’absence de requête de la part d’ECCC/SMC, c’est la NOAA qui détermine le positionnement des quatre fenêtres (deux pour GOES-Est et deux pour GOES-Ouest). Nous recevons ensuite des imagettes couvrant une zone de 1000 × 1000 km, que nous traitons entièrement afin de générer les produits. Il est important de noter que GOES-Est Meso-1 et Meso-2 sont tous deux positionnés dans la partie Est, ce qui permet de surveiller simultanément deux phénomènes différents dans cette région. Il en va de même pour GOES-Ouest Meso-1 et Meso-2, qui sont tous deux positionnés dans la partie Ouest.</p>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>
 <h2 id="annonces-de-la-liste-de-diffusion-dd_info">Annonces de la liste de diffusion dd_info</h2>
