@@ -12,13 +12,14 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # 2.10.12
 
-* date: 
+* date: 2026-09-10
 * announcements:
     * Not announced
 * new content:
     * Add CaSR-Land, CaSR derived products doc
     * Add RAQDPS-FW Cumulative effects products (GeoMet page only)
     * Add GOES-Meso product
+    * Update RDAQA changelog 
  * improvements:
     * Update FAQ
 * bug fixes:
