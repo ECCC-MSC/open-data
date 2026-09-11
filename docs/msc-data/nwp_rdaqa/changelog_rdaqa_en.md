@@ -16,12 +16,6 @@ The change was been made to the RDAQA sfcearly events scheduling times, reducing
 
 ## Tuesday April 14, 2026
 
-### Upgrade to Version 6.1.0 of the RDAQA adapted to the New High Performance Computing Infrastructure.
-
-See details [at this link](../changelog_multisystems_en.md)
-
-## Tuesday April 14, 2026
-
 ### Upgrade to Version 2.3.0 of the RDAQA adapted to the New High Performance Computing Infrastructure.
 
 See details [at this link](../changelog_multisystems_en.md)
