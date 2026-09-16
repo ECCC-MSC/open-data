@@ -26,6 +26,8 @@ Ces données sont respectivement disponibles sur les API / services web [GeoMet 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.
 
+Un [aperçu de la fumée des feux de forêts et de la qualité de l'air](https://www.canada.ca/fr/services/sante/vie-saine/environnement/qualite-air/fumee-feux-foret.html) est disponible.
+
 ### Licence
 
 La [licence d’utilisation finale pour les serveurs de données d’Environnement et Changement climatique Canada](../../licence/readme_fr.md) précise les conditions d'utilisation de ces données.
@@ -43,7 +45,7 @@ La [Politique d'utilisation des services de données ouvertes du SMC](../../usag
 ## Produits
 
 * [Sommaire des prévisions les plus récentes de la cote air santé dans un grand nombre de villes au Canada](https://meteo.gc.ca/airquality/pages/index_f.html)
-* [Carte de prévisions de l'ozone, PM2.5, et PM10 près de la surface et à différentes altitudes](https://meteo.gc.ca/aqfm/index_f.html)
+* [Carte de prévisions de l'ozone, PM2.5, et PM10 près de la surface](https://meteo.gc.ca/firework/index_f.html)
 
 ## Partenaires et données de polluants
 
@@ -76,7 +78,9 @@ Veuillez noter que ECCC ne peut fournir de données individuelles sur les pollua
 
 Note : le Nunavut ne dispose pas de lien vers une page de données en temps réel.
 
-Vous pouvez également accéder aux données à partir du portail américain [AirNow](https://www.airnow.gov/).
+## Notes
+
+* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/](https://dd.meteo.gc.ca/today/air_quality/aqhi/que/observation/). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur le portail américain [AirNow](https://www.airnowtech.org/index.cfm?page=login).
 
 ## Documentation technique
 
