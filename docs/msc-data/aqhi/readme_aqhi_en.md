@@ -26,6 +26,8 @@ This data is available on the [MSC GeoMet](../../msc-geomet/readme_en.md) API / 
 
 An [overview and examples to access and use the Meteorological Service of Canada's open data](../../usage/readme_en.md) is available.
 
+An [overview of wildfire smoke events and air quality](https://www.canada.ca/en/services/health/healthy-living/environment/air-quality/wildfire-smoke.html) is available.
+
 ### Licence
 
 The [end-user licence for Environment and Climate Change Canada's data servers](../../licence/readme_en.md) specifies the conditions of use of this data.
@@ -44,7 +46,7 @@ The [MSC Open Data Service Usage Policy](../../usage-policy/readme_en.md) determ
 ## Products
 
 * [Summary of the most recent Air Quality Health Index forecasts for a large number of cities in Canada](https://weather.gc.ca/airquality/pages/index_e.html)
-* [Charts of forecasts of ozone, PM2.5 and PM10 near surface and at different altitudes](https://weather.gc.ca/aqfm/index_e.html)
+* [Charts of forecasts of ozone, PM2.5 and PM10 near surface](https://weather.gc.ca/firework/index_e.html)
 
 ## Partners and pollutants data
 
@@ -77,7 +79,10 @@ Please note that ECCC cannot provide individual pollutant data as this data is o
 
 Note: Nunavut does not have a real-time data page link.
 
-You can also access the data from the American [AirNow](https://www.airnow.gov/) portal.
+## Notes
+
+* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.weather.gc.ca/today/air_quality/aqhi/que/observation/](https://dd.weather.gc.ca/today/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal [AirNow](https://www.airnowtech.org/index.cfm?page=login).
+
 
 ## Technical documentation
 

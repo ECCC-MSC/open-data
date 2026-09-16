@@ -246,8 +246,6 @@ Each line of a data block contains the following information:
 
 * In CSV files for UMOSAQ, it is possible that some values are missing since UMOS guidance may not be available for all hours. The availability of UMOS guidance for a specfic hour is dependent upon having sufficient historical data to be able to generate reliable predictive statistical equations.
 
-* Air quality observations are distributed by provinces and municipalities. Provincial jurisdictions control how comments are communicated to the public. Quebec has not authorized the publication of air quality data in the form of an Air Quality Health Index (AQHI). This explains why there are no observations under the directory: [https://dd.weather.gc.ca/today/air_quality/aqhi/que/observation/](https://dd.weather.gc.ca/today/air_quality/aqhi/que/observation/). However, the Ministry of Sustainable Development, Environment and Climate Change and the City of Montreal also distribute some of their data on the American portal AirNow: [https://www.airnowtech.org/index.cfm?page=login](https://www.airnowtech.org/index.cfm?page=login).
-
 ## Support
 
 If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).

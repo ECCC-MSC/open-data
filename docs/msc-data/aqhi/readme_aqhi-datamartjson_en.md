@@ -78,8 +78,6 @@ where:
 
 * When forecast data is amended, a parameter associated with the file status is updated accordingly in the GeoJSON file.
 
-* Air quality observations are provided by provinces and municipalities. Provincial jurisdictions also control how observations are communicated to the public. Quebec did not agree to the publication of current air quality in the form of an air quality health index (AQHI). This explains why no observation are available at the address: [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/que/observation/realtime/json](http://hpfx.collab.science.gc.ca). However, the Ministère du Développement durable, Environnement et Lutte contre les changements climatiques (MDDELCC) and Ville de Montreal also redistribute some of their data on [the American AirNow portal](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
-
 ## Support
 
 If you have any questions about this data, please [contact us](https://weather.gc.ca/mainmenu/contact_us_e.html).

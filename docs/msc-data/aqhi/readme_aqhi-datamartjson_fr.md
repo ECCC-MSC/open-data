@@ -78,8 +78,6 @@ Avec :
 
 * Lorsque les données de prévision sont amendées, un paramètre associé au statut du fichier est mis à jour en conséquence dans le fichier GeoJSON.
 
-* Les observations de qualité de l'air sont distribuées par les provinces et municipalités. Les juridictions provinciales contrôlent la façon dont les observations sont communiquées au public. Le Québec n'a pas autorisé la publication des données de qualité de l'air sous la forme de côte air santé (CAS). Ceci explique pourquoi on ne retrouve pas d'observation sous le répertoire : [http://hpfx.collab.science.gc.ca/YYYMMDD/WXO-DD/air_quality/aqhi/que/observation/realtime/json](http://hpfx.collab.science.gc.ca). Cependant, le Ministère du Développement durable, de l'Environnement et de lutte contre les Changements climatiques ainsi que la ville de Montréal distribuent aussi certaines de leurs données sur [le portail américain AirNow](https://www.epa.gov/outdoor-air-quality-data/download-daily-data).
-
 ## Support
 
 Pour toute question relative à ces données, merci de [nous contacter](https://weather.gc.ca/mainmenu/contact_us_f.html).
