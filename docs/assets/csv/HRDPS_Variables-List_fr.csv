@@ -291,6 +291,8 @@ Température,TMP,925 mb,K
 Température,TMP,950 mb,K
 Température,TMP,970 mb,K
 Température,TMP,985 mb,K
+Température au thermomètre-globe mouillé,WBGT,Surface,K
+Température radiante moyenne,MRT,Surface,K
 Tourbillon absolu,ABSV,1000 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,250 mb,s<sup>-1</sup>
 Tourbillon absolu,ABSV,500 mb,s<sup>-1</sup>
