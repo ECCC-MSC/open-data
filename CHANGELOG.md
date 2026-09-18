@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.13
+
+* date: 2026-09-18
+* announcements:
+    * Not announced
+* new content:
+    * Add new HRDPS biometeorological indices 
+ * improvements:
+    * Update AQHI pages (add link, fix broken link, move information)
+* bug fixes:
+    * Typo
+
 # 2.10.12
 
 * date: 2026-09-10
