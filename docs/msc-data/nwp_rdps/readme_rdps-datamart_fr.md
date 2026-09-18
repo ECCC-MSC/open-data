@@ -41,7 +41,7 @@ Valeurs données aux paramètres de la grille lat-lon tournée :
 
 Les fichiers ont la nomenclature suivante :
 
-`{YYYYMMDD}T{HH}Z_MSC_RDPS-North_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}`
+`{YYYYMMDD}T{HH}Z_MSC_RDPS_{VAR}_{LVLTYPE-LVL}_{Grille}{resolution}_PT{hhh}H.${format}`
 
 où :
 
