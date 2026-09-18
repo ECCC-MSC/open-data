@@ -93,6 +93,7 @@ Humidex index,HMX,Surface,°C
 Ice pellets precipitation rate,IPRATE,Surface,kg/(m<sup>2</sup>*s)
 Instantaneous precipitation type,PCPNTYPE,Surface,1=Rain; 2=Rain/snow; 3=Freezing rain; 4=Ice pellets; 5=Snow; 6=None; 7=Drizzle; 8=Freezing drizzle; 9=Freezing rain/ice pellets
 Latent heat net flux,LHTFL,Surface,W/m<sup>2</sup>
+Mean Radiant Temperature,MRT,Surface,K
 Model orography,ORGPHY,Surface,m
 Net longwave radiation flux (surface),NLWRS,Surface,W/m<sup>2</sup>
 Net shortwave radiation flux (surface),NSWRS,Surface,W/m<sup>2</sup>
@@ -249,6 +250,7 @@ Vertical velocity (pressure),VVEL,850 mb,Pa/s
 Visibility Through Ice Fog,VISIFG,2 m Above Ground Level,m
 Visibility Through Liquid Fog,VISLFG,2 m Above Ground Level,m
 Water/land mask,WTRLANMASK,Surface,Fraction
+Wet-Bulb Globe Temperature,WBGT,Surface,K
 Wind chill index,WCF,Surface,K
 Wind direction (from which blowing),WDIR,10 m Above Ground Level,Degree true
 Wind direction (from which blowing),WDIR,100 mb,Degree true
