@@ -8,7 +8,7 @@
 
 Reanalysis are particularly important in Canada, where large remote areas make ground observations difficult to obtain. These tools support weather forecasting, water resource planning and climate research.
 
-The primary objective of Canadian Surface Reanalysis (CaSR) is to provide high-resolution hourly surface (temperature, wind) and precipitation data covering North America over a long period of time (about 60 years), thus fulfilling the mission and mandates of the International Joint Commission (IJC)](https://ijc.org/en/share-your-great-lakes-perspectives-public-input-2025-progress-report-parties) to improve understanding of Canada-United States transboundary waters. This dataset is regularly improved to meet the needs of various programs and partners.
+The primary objective of Canadian Surface Reanalysis (CaSR) is to provide high-resolution hourly surface (temperature, wind) and precipitation data covering North America over a long period of time (about 60 years), thus fulfilling the mission and mandates of the [International Joint Commission (IJC)](https://ijc.org/en/share-your-great-lakes-perspectives-public-input-2025-progress-report-parties) to improve understanding of Canada-United States transboundary waters. This dataset is regularly improved to meet the needs of various programs and partners.
 
 To study how snow cover, soil moisture and streamflows have changed in Canada over the past 57 years, the RCaS-Land and RCaS-Rivers components were developed by combining historical meteorological and hydrological data with numerical models to reconstruct past conditions to better understand our environment and help Canadians adapt to extreme events intensified by climate change.  such as heat waves, wildfires, droughts, extreme rainfall, and floods.
 
@@ -16,7 +16,7 @@ The CaSR-Land reanalysis is powered by CaSR data and is a valuable resource for 
 
 The CaSR-Rivers reanalysis simulates water flow in lakes and rivers using a model with a resolution of about 1 km, covering ten of the country's largest watersheds. Unlike CaSR-Land, CaSRRivers assimilates real observations and combines historical flow measurements from Canadian and American stations with model estimates. This combination improves the accuracy of streamflow simulations. The result is a dataset that not only captures natural flow regimes, but also reflects the effects of regulation and other hydrological realities. This tool is essential for flood mapping, water resource management, hydrological research and historical flow analysis.
 
-Full details on access to the raw data from these reanalyses are available here(https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/index.html). This current page describes access to derived statistical products (minimum, maximum, monthly and annual averages) from the CaSR reanalysis and its components CaSR-Land and CaSR-Rivers, gridded and aggregated by watershed.
+Full details on access to the raw data from these reanalyses are [available here](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/index.html). This current page describes access to derived statistical products (minimum, maximum, monthly and annual averages) from the CaSR reanalysis and its components CaSR-Land and CaSR-Rivers, gridded and aggregated by watershed.
 
 ## Access
 
