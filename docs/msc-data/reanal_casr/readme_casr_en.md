@@ -27,7 +27,7 @@ Products derived from the Canadian Surface Reanalysis are available on the MSC's
 * [Products derived from the Canadian Surface Reanalysis (CaSR) available on the MSC Datamart](readme_casr-datamart_en.md)
 * [Products derived from the Canadian Surface Reanalysis - Land (CaSR-Land) available on the MSC Datamart](readme_casr-land-datamart_fr.md)
 
-An [overview and examples for accessing and using the Meteorological Service of Canada's open data] (../../usage/readme_fr.md) is available.
+An [overview and examples for accessing and using the Meteorological Service of Canada's open data](../../usage/readme_fr.md) is available.
 
 Note: Products derived from the Canadian Surface Reanalysis - Rivers (CaSR-Rivers) will be available in a near future.
 
