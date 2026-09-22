@@ -102,6 +102,11 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 Note: [Dependencies diagram for the numerical weather and environmental prediction forecasts systems of CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_en.svg)
 </br></br>
 
+## Reanalysis data
+
+* [Canadian Surface Reanalysis (CaSR)](reanal_casr/readme_casr_en.md)
+/
+
 ## Climate data
 
 * [Adjusted and homogenized Canadian Climate Data (AHCCD)](climate_ahccd/readme_ahccd_en.md)
