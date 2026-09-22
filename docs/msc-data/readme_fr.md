@@ -102,6 +102,11 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 Note: [Diagramme de dépendances des systèmes de prévision numériques météorologiques et environnementales du CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_fr.svg)
 </br></br>
 
+## Données de réanalyses
+
+* [Réanalyse canadienne de surface (RCaS)](reanal_casr/readme_casr_fr.md)
+
+
 ## Données climatiques
 
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
