@@ -63,11 +63,11 @@ Exemples de noms de fichiers :
 
 * 20231106T00Z_MSC_HRDPA-Prelim_APCP-Accum6h_Sfc_RLatLon0.0225_PT0H.grib2
 
-Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 6 heures. Les données sont sur une grille tournée lat-lon à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 00Z (20230306T00Z). L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2023110600 à 2023110606.
+Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse préliminaire d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 6 heures. Les données sont sur une grille tournée lat-lon à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 00Z (20230306T00Z). L’intervalle de 006 heures dans lequel les précipitations sont analysées est de 2023110518 à 2023110600.
 
 * 20231106T12Z_MSC_HRDPA_APCP-Accum24h_Sfc_RLatLon0.0225_PT0H.grib2
 
-Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse finale d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 24 heures. Les données sont sur une grille lat-lon tournée à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 12Z (2023110612). L’intervalle de 24 heures dans lequel les précipitations sont analysées est de 2023110612 à 2023110712.
+Le fichier a été créé par le Service météorologique canadien (MSC) et contient une analyse à haute résolution déterministe de précipitation (HRDPA). Il contient une analyse finale d’accumulation de précipitation représentée par la variable APCP et ce sur un intervalle de 24 heures. Les données sont sur une grille lat-lon tournée à une résolution de 2.5 km (RLatLon0.0225). L’analyse a été produite le 06 novembre 2023 à 12Z (2023110612). L’intervalle de 24 heures dans lequel les précipitations sont analysées est de 2023110512 à 2023110612.
 
 __NOTE__ : Même si ce n’est pas indiqué dans le nom du fichier, le fichier contiendra aussi l’indice de confiance de l’analyse (CFIA) associé à l’analyse de précipitation.
 
