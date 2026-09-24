@@ -10,6 +10,20 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.14
+
+* date: 
+* announcements:
+    * Not announced
+* new content:
+    *  
+ * improvements:
+    * 
+* bug fixes:
+    * Typos
+    * Fix Wget page (not up to date)
+
+
 # 2.10.13
 
 * date: 2026-09-18
