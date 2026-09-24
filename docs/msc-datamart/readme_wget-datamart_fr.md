@@ -20,11 +20,10 @@ Les utilisateurs de l’invite de commandes Windows devraient remplacer les guil
 
     wget https://dd.meteo.gc.ca/today/model_gdps/15km/00/HHH/nom_de_fichier
 
-    wget -nd -r -l1 -A '*HGT_ISBY*aaaammjjhh_P036.grib2' https://dd.meteo.gc.ca/today/model_gdps/15km/00/036/
+    wget -nd -r -l1 -A '*GeopotentialHeight_Isbl-0175*.grib2' https://dd.meteo.gc.ca/today/model_gdps/15km/00/036/
 
 Commentaires :
 
-* "aaaammjjhh" réfère à la date de production. hh peut être soit 00 ou 12
 * Les options -r et -A acceptent l’utilisation de caractères de remplacement (*, ?, [ ]). Il est possible de se prévaloir de puissantes fonctions de sélection des fichiers en combinant les caractères de remplacement avec une connaissance de la nomenclature des fichiers. Pour passer un argument à l’option -A, le guillemet double devrait être utilisé sous l’invite de commande Windows et le guillemet simple sous les interpréteurs de commandes de style Unix
 * Afin de procéder à la sélection des fichiers selon les caractères de remplacement qui lui ont été fournis, wget télécharge le fichier index.html. Quelques versions de wget laissent ce fichier traîner dans le répertoire de téléchargement une fois l’opération complétée. Ce petit problème peut être réglé en mettant à jour votre version de wget
 
