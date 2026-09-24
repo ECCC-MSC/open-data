@@ -18,9 +18,9 @@ Les utilisateurs de l’invite de commandes Windows devraient remplacer les guil
 
 ## __Pour aller chercher un fichier particulier__  de la base de données 00Z du SGPD (Système global de prévision déterministe)
 
-    wget https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/00/HHH/nom_de_fichier
+    wget https://dd.meteo.gc.ca/today/model_gdps/15km/00/HHH/nom_de_fichier
 
-    wget -nd -r -l1 -A '*HGT_ISBY*aaaammjjhh_P036.grib2' https://dd.meteo.gc.ca/model_gem_global/25km/grib2/lat_lon/00/036/
+    wget -nd -r -l1 -A '*HGT_ISBY*aaaammjjhh_P036.grib2' https://dd.meteo.gc.ca/today/model_gdps/15km/00/036/
 
 Commentaires :
 
@@ -37,11 +37,11 @@ Commentaires :
 * "liste-fichiers" est un fichier de texte contenant la liste des fichiers désirés
 * Les noms de fichiers contenus dans "liste-fichiers" doivent être complets et conformes à la nomenclature des fichiers, ce qui inclut la date du jour. Ceci vous oblige à regénérer une nouvelle liste chaque jour, une étape qu’il est possible d’automatiser. Cette étape a l’avantage d’économiser la bande passante et le temps de téléchargement
 
-* Voici un exemple de valeur correcte d'URL-de-base: https://dd.meteo.gc.ca/radar/PRECIPET/GIF/CASRA/
+* Voici un exemple de valeur correcte d'URL-de-base: https://dd.meteo.gc.ca/today/radar/DPQPE/GIF/CASRA/
 
 ## Pour aller chercher les prévisions de température du SRPD (Système régional de prévision déterministe) à 00h pour la passe 00Z, à 2m et à tous les niveaux de pression :
 
-    wget -nd -r -l1 -A '*TMP_TGL*aaaammjjhh_P000.grib2,*TMP_ISBL*aaaammjjhh_P000.grib2' -R '*ISBL_[12]00*' https://dd.meteo.gc.ca/model_gem_regional/10km/grib2/00/000/
+    wget -nd -r -l1 -A '*AirTemp_AGL-2m*.grib2,*AirTemp_Isbl*.grib2' -R '*Isbl-0[12]00' https://dd.meteo.gc.ca/today/model_rdps/10km/00/000/
 
 Commentaires :
 
