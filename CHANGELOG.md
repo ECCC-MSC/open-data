@@ -22,6 +22,7 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * bug fixes:
     * Typos
     * Fix Wget page (not up to date)
+    * Fix WCPS abstract (runs 4 times daily)
 
 
 # 2.10.13
