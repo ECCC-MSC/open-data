@@ -6,7 +6,7 @@
 
 # Data and products of the Water Cycle Prediction System (WCPS)
 
-The Water Cycle Prediction System (WCPS) simulates the complete water cycle, following water as it moves from the atmosphere to the surface, through the river network and into lakes, and back to the atmosphere. WCPS was implemented over the Laurentian Great Lakes and St. Lawrence River watershed in support of Canada's obligations under the Boundary Waters Treaty (International Joint Commission 2016). WCPS is a chain of interconnected models. The models represent processes in the atmosphere, at the land surface and in the soil (at 10-km resolution), in large bodies of water and marine ice (at 2-km resolution), and in rivers (at 1-km resolution). WCPS produces two forecasts per day for the next three and a half days (84 hours).
+The Water Cycle Prediction System (WCPS) simulates the complete water cycle, following water as it moves from the atmosphere to the surface, through the river network and into lakes, and back to the atmosphere. WCPS was implemented over the Laurentian Great Lakes and St. Lawrence River watershed in support of Canada's obligations under the Boundary Waters Treaty (International Joint Commission 2016). WCPS is a chain of interconnected models. The models represent processes in the atmosphere, at the land surface and in the soil (at 10-km resolution), in large bodies of water and marine ice (at 2-km resolution), and in rivers (at 1-km resolution). WCPS produces four forecasts per day for the next three and a half days (84 hours).
 
 ## Access
 
