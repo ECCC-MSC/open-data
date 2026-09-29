@@ -24,7 +24,7 @@ __Aggregate statistical products by watershed__, derived from the Canadian Surfa
 
 where:
 
-* __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (e.g., v3.2)
+* __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (v2.1, v3.2)
 * __polygon_dataset__: Name of the watershed polygon set (`nhn` for "National Hydro Network", `nhs` for "National Hydrological Service")
 * __nb__: Main drainage basins according to:
     * 01: Maritime Provinces 
@@ -53,11 +53,11 @@ The analysis files follow the nomenclature below:
 
 where:
 
-* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1968–2024]
+* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1980-2018 for version 2.1, 1968-2024 for version 3.2]
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __CaSR__: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)
-* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v3.2]
-* __Analysis__: A string indicating that the data are analyses, not forecasts
+* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v2.1, v3.2]
+* __Analysis__: A string indicating that data are analyses, not forecasts
 * __Var__: Variable name and associated statistics (see section below)
 * __Sfc__: A string indicating that the vertical level is the surface
 * __Grid__ : Horizontal rotated lat-lon grid [Rlatlon]
@@ -67,8 +67,8 @@ where:
 
 Examples: 
 
-* 1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
+* 1980-2018_MSC_CaSR-v2.1_AirTemp-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
+* 1968-2024_MSC_CaSR-v3.2-Analysis_Precip-Accum2h-MMax_Sfc_RLatLon0.09_P1M.nc
 
 __Aggregate products by watershed in GeoJSON format__
 
@@ -82,11 +82,11 @@ The analysis files follow the nomenclature below:
 
 where:
 
-* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1968–2024]
+* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1980-2018 for version 2.1, 1968-2024 for version 3.2]
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __CaSR__: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)
-* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v3.2]
-* __Analysis__: A string indicating that the data are analyses, not forecasts
+* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v2.1, v3.2]
+* __Analysis__: A string indicating that data are analyses, not forecasts
 * __DrainageArea__: Constant string of characters to specify the watershed  
 * __nb__: Drainage basin number [01, 02, .., 11]
 * __Var__: Variable name and associated statistics (see section below)
@@ -96,23 +96,25 @@ where:
 
 Examples:
 
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json
-* 1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json
+* 1980-2018_MSC_CaSR-v2.1-Analysis_DrainageArea02_Precip-Accum1h-MMax_Sfc_P1M.json
+* 1968-2024_MSC_CaSR-v3.2_DrainageArea02_SnowWaterEquiv-YAvg_Sfc_P1Y.json
 
 ## List of variables
 
-* Precipitation quantity (m)
+* Quantity of accumulated precipitation (m) over a given period (1h, 2h, 6h, 12h, 24h)
 * Snow depth at ground level (cm) 
 * Water equivalent of the snow cover at ground level (kg/m²) 
-* Air Temperature (°C)
+* Air temperature (°C)
 * Dew point temperature (°C)
 
-Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax')
+__Notes__:
 
-Examples:
-
-* 'SnowWaterEquiv-YAvg'
-* 'DewPoint-MMin'
+* Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax'). Examples:
+    * 'SnowWaterEquiv-YAvg'
+    * 'DewPoint-MMin'
+* The following analysis fields are available according to the version:
+     * Version 2.1: quantity of accumulated precipitation
+     * Version 3.2: quantity of accumulated precipitation, Air temperature, dew point temperature
 
 ## Support
 

@@ -24,7 +24,7 @@ Les __produits statistiques agrégés par bassin versant hydrologique__, dériv�
 
 où :
 
-* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
+* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (v2.1, v3.2)
 * __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydro Network" le Réseau hydro national, `nhs` pour "National Hydrological Service" le Service hydrologique national)
 * __nb__ : Principaux bassins de drainage selon:
     * 01 : Provinces maritimes 
@@ -53,11 +53,11 @@ Les fichiers d'analyses suivent la nomenclature ci-dessous:
 
 où :
 
-* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
+* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1980-2018 pour la version 2.1, 1968-2024 pour la version 3.2]
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
-* __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions
+* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v2.1, v3.2]
+* __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions 
 * __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
 * __Sfc__ : Chaîne de caractères indiquant que le niveau vertical est la surface
 * __Grille__ : Grille horizontale lat-lon tournée [Rlatlon]
@@ -67,8 +67,8 @@ où :
 
 Exemples: 
 
-* 1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
+* 1980-2018_MSC_CaSR-v2.1_AirTemp-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc
+* 1968-2024_MSC_CaSR-v3.2-Analysis_Precip-Accum2h-MMax_Sfc_RLatLon0.09_P1M.nc
 
 __Produits agrégés par bassin versant hydrologique en format GeoJSON__
 
@@ -82,10 +82,10 @@ Les fichiers d'analyses suivent la nomenclature ci-dessous:
 
 où :
 
-* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
+* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1980-2018 pour la version 2.1, 1968-2024 pour la version 3.2]
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
+* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v2.1, v3.2]
 * __Analysis__ : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions
 * __DrainageArea__ : Chaîne de caractères constante pour spécifier le bassin versant  
 * __nb__ : Numéro du bassin de drainage [01, 02, .., 11]
@@ -96,23 +96,25 @@ où :
 
 Exemples:
 
-* 1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json
-* 1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json
+* 1980-2018_MSC_CaSR-v2.1-Analysis_DrainageArea02_Precip-Accum1h-MMax_Sfc_P1M.json
+* 1968-2024_MSC_CaSR-v3.2_DrainageArea02_SnowWaterEquiv-YAvg_Sfc_P1Y.json
 
 ## Liste des variables
 
-* Quantité de précipitations (m)
+* Quantité de précipitation accumulée (m) sur une période donnée (1h, 2h, 6h, 12h, 24h)
 * Profondeur de neige au sol (cm) 
 * Equivalent en eau de la couverture neigeuse au sol (kg/m²)
 * Température de l'air (°C)
 * Température du point de rosée (°C)
 
-À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`)
+__Notes__:
 
-Exemples:
-
-* `SnowWaterEquiv-YAvg`
-* `DewPoint-MMin`
+* À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`). Exemples:
+     * `SnowWaterEquiv-YAvg`
+     * `DewPoint-MMin`
+* Les champs d'analyse suivants sont disponibles selon les versions:
+     * Version 2.1: quantité de précipitation accumulée
+     * Version 3.2: quantité de précipitation accumulée, température de l'air, température du point de rosée
 
 ## Support
 
