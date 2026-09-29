@@ -24,7 +24,7 @@ __Aggregate statistical products by watershed__, derived from the Canadian Surfa
 
 where:
 
-* __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (e.g., v3.2)
+* __Version__: [CaSR version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the Canadian Surface Reanalysis (v2.1)
 * __polygon_dataset__: Name of the watershed polygon set (`nhn` for "National Hydro Network", `nhs` for "National Hydrological Service")
 * __nb__: Main drainage basins according to:
     * 01: Maritime Provinces 
@@ -49,10 +49,10 @@ The forecast files follow the nomenclature below:
 
 where:
 
-* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1968–2024]
+* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1980-2017]
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __CaSR-Land__: A string indicating that the data is derived from Canadian Surface Reanalysis-Land
-* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v3.2]
+* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v2.1]
 * __Var__: Variable name and associated statistics (see section below)
 * __Level__: A string indicating the vertical level [`Sfc` for the surface, `AGL` for "Above Ground Level", `DBS` for "Depth Below Surface"]
 * __Grille__ : Horizontal rotated lat-lon grid [Rlatlon]
@@ -62,8 +62,8 @@ where:
 
 Examples:
 
-* 1968-2024_MSC_CaSR-Land-v3.2_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-Land-v3.2_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc
+* 1980-2017_MSC_CaSR-Land-v2.1_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc
+* 1980-2017_MSC_CaSR-Land-v2.1_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc
 
 __Aggregate products by watershed in GeoJSON format__
 
@@ -73,10 +73,10 @@ The forecast files follow the nomenclature below:
 
 where:
 
-* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1968–2024]
+* __YYY1-YYY2__: Period covered by the reanalysis according to the version [1980-2017]
 * __MSC__: Constant string for Meteorological Service of Canada, the data source
 * __CaSR-Land__: A string indicating that the data is derived from Canadian Surface Reanalysis-Land 
-* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v3.2]
+* __version__: [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions) of the retest [v2.1]
 * __DrainageArea__: Constant string of characters to specify the watershed  
 * __nb__: Drainage basin number [01, 02, .., 11]
 * __Var__: Variable name and associated statistics (see section below)
@@ -86,8 +86,8 @@ where:
 
 Examples:
 
-* 1968-2024_MSC_CaSR-Land-v3.2_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json
-* 1968-2024_MSC_CaSR-Land-v3.2_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json
+* 1980-2017_MSC_CaSR-Land-v2.1_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json
+* 1980-2017_MSC_CaSR-Land-v2.1_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json
 
 ## List of variables
 
@@ -99,9 +99,7 @@ Examples:
 * Air Temperature (°C)
 * Dew point temperature (°C)
 
-Each variable is associated with a statistic, i.e. the annual/monthly average (`YAvg/MAvg)`, the annual/monthly minimum (`YMin/MMin`) or the annual/monthly maximum (`YMax/MMax`)
-
-Examples:
+Each variable is associated with a statistic, i.e. the annual/monthly average (`YAvg/MAvg)`, the annual/monthly minimum (`YMin/MMin`) or the annual/monthly maximum (`YMax/MMax`). Examples:
 
 * `SnowWaterEquiv-YAvg`
 * `DewPoint-MMin`

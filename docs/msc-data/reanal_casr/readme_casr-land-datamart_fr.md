@@ -24,7 +24,7 @@ Les __produits statistiques agrégés par bassin versant hydrologique__, dériv�
 
 où :
 
-* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (ex: v3.2)
+* __Version__ : [Version de CaSR](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la Réanalyse canadienne de surface (v2.1)
 * __polygon_dataset__ : Nom du jeu de polygones de bassins versants (`nhn` pour "National Hydro Network" le Réseau hydro national, `nhs` pour "National Hydrological Service" le Service hydrologique national)
 * __nb__ : Principaux bassins de drainage selon:
     * 01 : Provinces maritimes 
@@ -49,10 +49,10 @@ Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
 où :
 
-* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
+* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1980-2017]
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR-Land__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface terrestre (CaSR-Land en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
+* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v2.1]
 * __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
 * __Level__ : Chaîne de caractères indiquant le niveau vertical [`Sfc` pour la surface, `AGL` pour "Above Ground Level", `DBS` pour "Depth Below Surface"]
 * __Grille__ : Grille horizontale lat-lon tournée [Rlatlon]
@@ -62,8 +62,8 @@ où :
 
 Exemples: 
 
-* 1968-2024_MSC_CaSR-Land-v3.2_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc
-* 1968-2024_MSC_CaSR-Land-v3.2_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc
+* 1980-2017_MSC_CaSR-Land-v2.1_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc
+* 1980-2017_MSC_CaSR-Land-v2.1_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc
 
 __Produits agrégés par bassin versant hydrologique en format GeoJSON__
 
@@ -73,10 +73,10 @@ Les fichiers de prévisions suivent la nomenclature ci-dessous:
 
 où :
 
-* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1968-2024]
+* __YYY1-YYY2__ : Période couverte par la réanalyse selon la version [1980-2017]
 * __MSC__ : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données
 * __CaSR-Land__ : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface terrestre (CaSR-Land en anglais)
-* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v3.2]
+* __version__ : [Version](https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions) de la réanalyse [v2.1]
 * __DrainageArea__ : Chaîne de caractères constante pour spécifier le bassin versant  
 * __nb__ : Numéro du bassin de drainage [01, 02, .., 11]
 * __Var__ : Nom de la variable et statistique associée (voir la section ci-dessous)
@@ -86,8 +86,8 @@ où :
 
 Exemples:
 
-* 1968-2024_MSC_CaSR-Land-v3.2_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json
-* 1968-2024_MSC_CaSR-Land-v3.2_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json
+* 1980-2017_MSC_CaSR-Land-v2.1_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json
+* 1980-2017_MSC_CaSR-Land-v2.1_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json
 
 
 ## Liste des variables
@@ -100,9 +100,7 @@ Exemples:
 * Température de l'air (°C)
 * Température du point de rosée (°C)
 
-À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`)
-
-Exemples:
+À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (`YAvg/MAvg`), le minimum annuel/mensuel (`YMin/MMin`) ou le maximum annuel/mensuel(`YMax/MMax`). Exemples:
 
 * `SnowWaterEquiv-YAvg`
 * `DewPoint-MMin`
