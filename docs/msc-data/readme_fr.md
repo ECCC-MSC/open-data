@@ -20,55 +20,50 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 ## Alertes météo et prévisions publiques
 
-* [Alertes météo et maritimes](alerts/readme_alerts_fr.md)
+* [Alertes météo et maritimes actuelles](alerts/readme_alerts_fr.md)
 * [Conditions météorologiques actuelles et prévisions sur 7 jours pour les villes canadiennes](citypage-weather/readme_citypageweather_fr.md)
 * [Conditions marines actuelles et prévisions sur 7 jours pour les régions marines](marine-weather/readme_marine-weather_fr.md)
 * [Observations et prévisions de la Cote air santé (CAS)](aqhi/readme_aqhi_fr.md)
 * [Potentiel orageux](thunderstorm-outlooks/readme_thunderstorm-outlooks_fr.md)
 * [Indice de risque de submersion côtière](coastal-flooding/readme_coastal-flooding_fr.md)
 * [Ouragans](hurricanes/readme_hurricanes_fr.md)
+* [MetNotes](metnotes/readme_metnotes_fr.md)
+* [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
+* [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
 
 ## Observations
 
 * [Radar météorologique](obs_radar/readme_radar_fr.md)
 * [Densité de foudre](lightning/readme_lightning_fr.md)
-* [Observations satellitaires](obs_satellite/readme_satellite_fr.md)
+* [Satellites](obs_satellite/readme_satellite_fr.md)
 * [Observations in situ](obs_station/readme_obs_insitu_fr.md)
 * [Observations hydrométriques](obs_hydrometric/readme_hydrometric_fr.md)
-* [Observations de profils verticaux](vertical-profiles/readme_vertical-profiles-obs_fr.md)
+* [Profils verticaux](vertical-profiles/readme_vertical-profiles-obs_fr.md)
 </br></br>
 
 ## Prévisions numériques météorologiques et environnementales
 
 ### <span class="badge badge-light">Atmosphère</span>
 
-##### &emsp;<span class="badge badge-info">Déterministe</span>
-
 * [Système global de prévision déterministe (SGPD)](nwp_gdps/readme_gdps_fr.md)
+* [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
+* [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
 * [Système régional de prévision déterministe (SRPD)](nwp_rdps/readme_rdps_fr.md)
-    * [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](vertical-profiles/readme_vertical-profiles-nwp_fr.md)
+* [Profils verticaux à partir du Système régional de prévision déterministe (SRPD)](vertical-profiles/readme_vertical-profiles-nwp_fr.md)
+* [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
 * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
 * [Système canadien de prévision de l'Arctique (SCPA)](nwp_caps/readme_caps_fr.md)
 * [Matrices Scribe de prévisions immédiates](nwp_nowcasting/readme_nowcasting_fr.md)</br>
 
-##### &emsp;<span class="badge badge-info">Ensembliste</span>
-* [Système global de prévision d'ensemble (SGPE)](nwp_geps/readme_geps_fr.md)
-    * [Système de prévision d'ensemble nord-américain (SPENA)](nwp_naefs/readme_naefs_fr.md)
-* [Système régional de prévision d'ensemble (SRPE)](nwp_reps/readme_reps_fr.md)
+### <span class="badge badge-light">Qualité de l'air</span>
+
+* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
+
+### <span class="badge badge-light">Prévisions saisonnières</span>
+
 * [Système de prévision interannuelle et saisonnière canadien (SPISCan)](nwp_cansips/readme_cansips_fr.md)</br>
 
-##### &emsp;<span class="badge badge-info">Analyse de la précipitation:</span>
-
-* [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
-* [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
-* [Analyse à haute résolution ensembliste de précipitation (AHREP)](nwp_hrepa/readme_hrepa_fr.md)
-* [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md)</br>
-
-##### &emsp;<span class="badge badge-info">Qualité de l'air</span>
-* [Système régional de prévision déterministe de la qualité de l'air (SRPDQA)](nwp_raqdps/readme_raqdps_fr.md)
-* [Analyse régionale déterministe de la qualité de l'air (ARDQA)](nwp_rdaqa/readme_rdaqa_fr.md)
-
-### <span class="badge badge-light">Surface</span>
+### <span class="badge badge-light">Surface terrestre</span>
 
 * [Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/readme_caldas-nsrps_fr.md)
 * [Système de prévision déterministe à haute résolution de la surface terrestre (SPDHRS)](nwp_hrdlps/readme_hrdlps_fr.md)</br>
@@ -99,13 +94,26 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 * [Système de prévision du cycle de l'eau (SPCE)](nwp_wcps/readme_wcps_fr.md)
 * [Système de simulation hydrodynamique opérationnelle (SHOP)](nwp_ohps/readme_ohps_fr.md)</br>
 
-Note: [Diagramme de dépendances des systèmes de prévision numériques météorologiques et environnementales du CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_fr.svg)
-</br></br>
+## Données d'analyses
+
+### <span class="badge badge-light">Qualité de l'air</span>
+
+* [Analyse régionale déterministe de la qualité de l'air (ARDQA)](nwp_rdaqa/readme_rdaqa_fr.md)
+
+### <span class="badge badge-light">Précipitation:</span>
+
+* [Analyse régionale déterministe de précipitation (ARDP)](nwp_rdpa/readme_rdpa_fr.md)
+* [Analyse à haute résolution déterministe de précipitation (AHRDP)](nwp_hrdpa/readme_hrdpa_fr.md)
+* [Analyse à haute résolution ensembliste de précipitation (AHREP)](nwp_hrepa/readme_hrepa_fr.md)
+* [Précipitations moyennes par bassin-versant de l'Analyse à haute résolution déterministe de précipitation (AHRDP bassin-versant)](nwp_hrdpa-watershed/readme_hrdpa-watershed_fr.md)</br>
+
+### <span class="badge badge-light">Surface terrestre</span>
+
+* [Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/readme_caldas-nsrps_fr.md)
 
 ## Données de réanalyses
 
 * [Réanalyse canadienne de surface (RCaS)](reanal_casr/readme_casr_fr.md)
-
 
 ## Données climatiques
 
@@ -124,9 +132,6 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 ## Autres données
 
 * [Bulletins](bulletins/readme_bulletins_fr.md)
-* [Meteocode pour les régions publiques canadiennes](meteocode/readme_meteocode_fr.md)
-* [MetNotes](metnotes/readme_metnotes_fr.md)
-* [Polygones des régions de prévision](forecast-regions/readme_forecast-regions_fr.md)
 * [Données météorologiques à l'aviation en format IWXXM](aviation/iwxxm/readme_aviation-iwxxm_fr.md)
 </br></br>
 
@@ -137,9 +142,9 @@ Note: [Diagramme de dépendances des systèmes de prévision numériques météo
 * [Système régional de prévision déterministe de la qualité de l'air - FireWork (SRPDQA-FW)](nwp_raqdps-fw/readme_raqdps-fw_fr.md)
 * [Système à haute résolution de prévision déterministe (SHRPD)](nwp_hrdps/readme_hrdps_fr.md)
 
-</br></br>
-
 ## Changements aux systèmes de production de données opérationnels
 
 Les changements aux systèmes de production de données opérationnels sont documentés dans les sous-pages des jeux de données. Le [journal présentant la chronologie des modifications des systèmes de prévision numérique du temps (PNT) et données d'observation est disponible](changelog_nwp_fr.md).
 
+Note: [Diagramme de dépendances des systèmes de prévision numériques météorologiques et environnementales du CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_fr.svg)
+</br></br>

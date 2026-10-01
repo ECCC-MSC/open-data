@@ -94,7 +94,7 @@ Par ailleurs, nous publions quotidiennement des [vérifications contre radiosond
 
 Environnement et Changement climatique Canada n'a pas de service en ligne pour accéder aux données archivées. Le service de désarchivage est à [recouvrement de coût](../cost-recovered/readme_fr.md#service-de-desarchivage), nous chargeons 118$/heure de travail nécessaire pour produire les données avec un coût minimum de 118$. Les données ouvertes correspondantes, s'il y a lieu, sont elles-mêmes gratuites.
 
-Dès que nous recevons les détails des données demandées, nous pouvons produire un échantillon et l'envoyer à l'usager pour validation. Un estimé peut alors être fourni, une fois la requête confirmée. Selon la nature des requêtes, il faut compter quelques centaines de dollars. Pour toute commande, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: <ec.dps-client.ec@canada.ca>
+Dès que nous recevons les détails des données demandées, nous pouvons produire un échantillon et l'envoyer à l'usager pour validation. Un estimé peut alors être fourni, une fois la requête confirmée. Selon la nature des requêtes, il faut compter quelques centaines de dollars. Pour toute commande, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse: <dps-client@ec.gc.ca>
 
 | Information | Valeur |
 |-------------|:-----:|
@@ -117,7 +117,7 @@ Dès que nous recevons les détails des données demandées, nous pouvons produi
 
 ### Comment être informé des changements aux bulletins ainsi qu'aux contenu et format des modèles de prévision numérique du temps ?
 
-Pour les bulletins de stations canadiennes, tout changement dans l'en-tête et le nom des stations est annoncé via ce que nous appelons les GENOT (GEneral NOTification) message. Nous avons une liste de diffusion pour distribuer les GENOTs, si cela vous intéresse, contactez-nous à l'adresse : <ec.dps-client.ec@canada.ca> et nous vous ajouterons à la liste de diffusion. En parallèle, ces [bulletins sont disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/doc/genots/).
+Pour les bulletins de stations canadiennes, tout changement dans l'en-tête et le nom des stations est annoncé via ce que nous appelons les GENOT (GEneral NOTification) message. Nous avons une liste de diffusion pour distribuer les GENOTs, si cela vous intéresse, contactez-nous à l'adresse : <dps-client@ec.gc.ca> et nous vous ajouterons à la liste de diffusion. En parallèle, ces [bulletins sont disponibles sur le Datamart du SMC](https://dd.meteo.gc.ca/doc/genots/).
 
 Pour être averti des changements majeurs, tels qu'un changement de résolution par exemple, vous pouvez consulter les bulletins GENOT 03. Vous pouvez trouver un [exemple d'un tel bulletin](https://dd.meteo.gc.ca/doc/genots/2014/02/18/NOCN03_CWAO_182045___01117).
 
@@ -158,7 +158,7 @@ Pour un modèle de prévision numérique du temps dont les données sont disponi
 
 ### Est-il possible d'avoir accès à d'autres paramètres de modèles de prévision numérique du temps que ceux disponibles actuellement ou la liste est-elle exhaustive ?
 
-La liste n'est pas exhaustive. Nous sommes toujours très ouverts à recevoir de la rétroaction des usagers et de connaître leurs besoins. Il est possible de communiquer avec nous via l'adresse courriel : <ec.dps-client.ec@canada.ca>
+La liste n'est pas exhaustive. Nous sommes toujours très ouverts à recevoir de la rétroaction des usagers et de connaître leurs besoins. Il est possible de communiquer avec nous via l'adresse courriel : <dps-client@ec.gc.ca>
 
 ### Puis-je obtenir les données d'équivalent en eau de la neige ?
 
@@ -237,7 +237,7 @@ Environnement et Changement climatique Canada n'a pas de service en ligne pour a
 Les archives sont disponibles en format brut (ODIM_H5) ou en format ASCII. La documentation concernant les [produits radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) et des
 [formats de données radar](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Formats_used_in_URP_Fr_last_version.pdf) est disponible.
 
-Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse : <ec.dps-client.ec@canada.ca>
+Des requêtes typiques de désarchivage demandent entre 2 et 4 heures de travail. Si intéressé, merci de compléter le formulaire ci-dessous et de le faire parvenir à l'adresse : <dps-client@ec.gc.ca>
 
 | Information | Valeur |
 |-------------|:-----:|
@@ -310,7 +310,7 @@ Certaines stations météorologiques sont automatiques (sans personnel) et ne si
 
 Les conditions météorologiques actuelles observées sont diffusées dans les [données SWOB](../msc-data/obs_station/readme_obs_insitu_swobdatamart_fr.md) (une station par fichier, mises à jour au fil de la réception des observations) ainsi que dans les [fichiers XML de prévisions météorologiques par ville](../msc-data/citypage-weather/readme_citypageweather-datamart_fr.md), mis à jour au moins une fois par heure, ou plus souvent en cas d'avertissements, d'avis ou de modifications de veille météorologique.
 
-Comme pour l'ensemble des jeux de données du [Datamart du SMC](../msc-datamart/readme_fr.md), ces observations sont conservées selon une période de rétention de 30 jours, accessibles via l'arborescence datée des répertoires ou via le répertoire [`/today`](https://dd.meteo.gc.ca/today/) pour les données du jour en temps réel. Pour un accès aux données plus anciennes, veuillez communiquer avec nous à l'adresse : <ec.dps-client.ec@canada.ca>
+Comme pour l'ensemble des jeux de données du [Datamart du SMC](../msc-datamart/readme_fr.md), ces observations sont conservées selon une période de rétention de 30 jours, accessibles via l'arborescence datée des répertoires ou via le répertoire [`/today`](https://dd.meteo.gc.ca/today/) pour les données du jour en temps réel. Pour un accès aux données plus anciennes, veuillez communiquer avec nous à l'adresse : <dps-client@ec.gc.ca>
 
 ### Est-il possible d'avoir accès aux données observées de qualité de l'air et aux données d'émission des polluants utilisées pour calculer la Cote air santé ?
 

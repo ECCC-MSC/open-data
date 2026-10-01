@@ -19,61 +19,53 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 ## Weather alerts and public forecasts
 
-* [Weather and marine alerts](alerts/readme_alerts_en.md)
+* [Current weather and marine alerts](alerts/readme_alerts_en.md)
 * [Current weather conditions and 7-days forecast for Canadian cities](citypage-weather/readme_citypageweather_en.md)
 * [Current marine conditions and 7-days forecast for marine regions](marine-weather/readme_marine-weather_en.md)
 * [Air Quality Health Index (AQHI) observations and forecasts](aqhi/readme_aqhi_en.md)
 * [Thunderstorm outlooks](thunderstorm-outlooks/readme_thunderstorm-outlooks_en.md)
 * [Coastal flooding risk index](coastal-flooding/readme_coastal-flooding_en.md)
 * [Hurricanes](hurricanes/readme_hurricanes_en.md)
+* [MetNotes](metnotes/readme_metnotes_en.md)
+* [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
+* [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)
 
 ## Observations
 
 * [Weather radar](obs_radar/readme_radar_en.md)
 * [Lightning density](lightning/readme_lightning_en.md)
-* [Satellite observations](obs_satellite/readme_satellite_en.md)
+* [Satellite](obs_satellite/readme_satellite_en.md)
 * [In situ observations](obs_station/readme_obs_insitu_en.md)
 * [Hydrometric observations](obs_hydrometric/readme_hydrometric_en.md)
-* [Vertical profiles observations](vertical-profiles/readme_vertical-profiles-obs_en.md)
+* [Vertical profiles](vertical-profiles/readme_vertical-profiles-obs_en.md)
 </br></br>
 
 ## Numerical weather and environmental prediction forecasts
 
 ### <span class="badge badge-light">Atmosphere</span>
 
-##### &emsp;<span class="badge badge-info">Deterministic</span>
-
 * [Global Deterministic Prediction System (GDPS)](nwp_gdps/readme_gdps_en.md)
+* [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
+* [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
 * [Regional Deterministic Prediction System (RDPS)](nwp_rdps/readme_rdps_en.md)
-    * [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
+* [Vertical profiles from the Regional Deterministic Prediction System (RDPS)](vertical-profiles/readme_vertical-profiles-nwp_en.md)
+* [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)    
 * [High Resolution Deterministic Prediction System (HRDPS)](nwp_hrdps/readme_hrdps_en.md)
 * [Canadian Arctic Prediction System (CAPS)](nwp_caps/readme_caps_en.md)
 * [Scribe nowcasting matrices](nwp_nowcasting/readme_nowcasting_en.md)</br>
 
-##### &emsp;<span class="badge badge-info">Ensemble</span>
-
-* [Global Ensemble Prediction System (GEPS)](nwp_geps/readme_geps_en.md)
-    * [North American Ensemble Forecast System (NAEFS)](nwp_naefs/readme_naefs_en.md)
-* [Regional Ensemble Prediction System (REPS)](nwp_reps/readme_reps_en.md)
-* [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](nwp_cansips/readme_cansips_en.md)</br>
-
-##### &emsp;<span class="badge badge-info">Precipitation analysis</span>
-
-* [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
-* [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
-* [High Resolution Ensemble Precipitation Analysis (HREPA)](nwp_hrepa/readme_hrepa_en.md)
-* [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)</br>
-
-##### &emsp;<span class="badge badge-info">Air quality</span>
+### <span class="badge badge-light">Air quality</span>
 
 * [Regional Air Quality Deterministic Prediction System (RAQDPS)](nwp_raqdps/readme_raqdps_en.md)
-* [Regional Deterministic Air Quality Analysis (RDAQA)](nwp_rdaqa/readme_rdaqa_en.md)
 
-### <span class="badge badge-light">Surface</span>
+### <span class="badge badge-light">Seasonal Forecasts</span>
 
-* [Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/readme_caldas-nsrps_en.md)
+* [Canadian Seasonal to Inter-annual Prediction System (CanSIPS)](nwp_cansips/readme_cansips_en.md)</br>
+
+### <span class="badge badge-light">Land Surface</span>
+
 * [High Resolution Deterministic Land Surface Prediction System (HRDLPS)](nwp_hrdlps/readme_hrdlps_en.md)
-
+    
 ### <span class="badge badge-light">Water, ocean and ice</span>
 
 ##### &emsp;<span class="badge badge-info">Ice and Ocean</span>
@@ -99,8 +91,22 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 * [Water Cycle Prediction System (WCPS)](nwp_wcps/readme_wcps_en.md)
 * [Operational Hydrodynamic Prediction System (OHPS)](nwp_ohps/readme_ohps_en.md)
 
-Note: [Dependencies diagram for the numerical weather and environmental prediction forecasts systems of CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_en.svg)
-</br></br>
+## Analysis data
+
+### <span class="badge badge-light">Air Quality</span>
+
+* [Regional Deterministic Air Quality Analysis (RDAQA)](nwp_rdaqa/readme_rdaqa_en.md)
+
+### <span clas="badge badge-light">Precipitation</span>
+
+* [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
+* [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
+* [High Resolution Ensemble Precipitation Analysis (HREPA)](nwp_hrepa/readme_hrepa_en.md)
+* [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)</br>
+
+### <span class="badge badge-light">Land Surface</span>
+
+* [Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/readme_caldas-nsrps_en.md)
 
 ## Reanalysis data
 
@@ -123,9 +129,6 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 ## Other data
 
 * [Bulletins](bulletins/readme_bulletins_en.md)
-* [Meteocode for Canadian forecast public regions](meteocode/readme_meteocode_en.md)
-* [MetNotes](metnotes/readme_metnotes_en.md)
-* [Forecast regions polygons](forecast-regions/readme_forecast-regions_en.md)
 * [Aviation meteorological data in IWXXM format](aviation/iwxxm/readme_aviation-iwxxm_en.md)
 </br></br>
 
@@ -136,9 +139,9 @@ Note: [Dependencies diagram for the numerical weather and environmental predicti
 * [Regional Air Quality Deterministic Prediction System - FireWork (RAQDPS-FW)](nwp_raqdps-fw/readme_raqdps-fw_en.md)
 * [High Resolution Deterministic Prediction System North (HRDPS-North)](nwp_hrdps-north/readme_hrdps-north_en.md)
 
-</br></br>
-
 ## Changes to operational data production systems
 
 Changes to operational data production systems are documented in the dataset subpages. A [chronological summary of changes is provided for Numerical Weather Prediction (NWP) systems and observations](changelog_nwp_en.md).
 
+Note: [Dependencies diagram for the numerical weather and environmental prediction forecasts systems of CCMEP](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/nwep-dependency-diagrams/system_en.svg)
+</br></br>
