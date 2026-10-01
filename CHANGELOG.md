@@ -16,14 +16,15 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 * announcements:
     * Not announced
 * new content:
-    *  
+    * Add CaSR in the list of available data in a new Renalysis section
+    * Add the snow water equivalent data in the CanSIPS products
  * improvements:
-    * 
+    * Update the list of MSC open data (reorganization)
+    * Update the DPS-client email in the FAQ (ec.gc.ca instead of canada.ca)
 * bug fixes:
     * Typos
     * Fix Wget page (not up to date)
     * Fix WCPS abstract (runs 4 times daily)
-
 
 # 2.10.13
 
