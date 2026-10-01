@@ -96,7 +96,7 @@ Environment and Climate Change Canada does not have an online service to retriev
 
 The data retrieval service from our archive is under a [cost recovery policy](../cost-recovered/readme_en.md#archived-data-retrieval). We charge 118$/hour, with a minimum of 118$, to retrieve/recreate the requested data. The corresponding open data, if any, are themselves free.
 
-Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: <ec.dps-client.ec@canada.ca>
+Once users provide specifications for the required data, we can produce a sample and send it to the user for validation. An estimate can then be provided once the request is confirmed. Depending on the nature of the request this is usually in the low hundreds. If interested, please complete the order form below and send it via e-mail using the address: <dps-client@ec.gc.ca>
 
 | Information | Value |
 |-------------|:-----:|
@@ -163,7 +163,7 @@ You can use the variable `LAND_SFC` (Land cover) of prognostic hour 00 to determ
 
 ### Is it possible to access numerical weather prediction parameters other than those currently available on the MSC Datamart or is the list exhaustive ?
 
-The list is not exhaustive. We are always very open to receive feedback from users and to know their needs. It is possible to communicate with us via the email address: <ec.dps-client.ec@canada.ca>.
+The list is not exhaustive. We are always very open to receive feedback from users and to know their needs. It is possible to communicate with us via the email address: <dps-client@ec.gc.ca>.
 
 ### Can I have snow water equivalent data ?
 
@@ -244,7 +244,7 @@ The data retrieval service from our archive is under a [cost recovery policy](..
 
 Archive data are available in either raw format (ODIM_H5) or products in ASCII format. Documentation regarding [radar products](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Radar_Products_Available_CMC_Mai_2015_external.pdf) and [radar data formats](https://collaboration.cmc.ec.gc.ca/cmc/cmos/public_doc/msc-data/obs_radar/Formats_used_in_URP_En_last_version.pdf) is available.
 
-Typical archived data retrieval requests require between 2-4 hours to process. If interested, please complete the order form below and send it via e-mail using the address: <ec.dps-client.ec@canada.ca>
+Typical archived data retrieval requests require between 2-4 hours to process. If interested, please complete the order form below and send it via e-mail using the address: <dps-client@ec.gc.ca>
 
 | Information | Value |
 |-------------|:-----:|
@@ -321,7 +321,7 @@ This is why there is no icon or condition reported in the corresponding Citypage
 
 Current observed weather conditions are distributed in the [SWOB data](../msc-data/obs_station/readme_obs_insitu_swobdatamart_en.md) (one station per file, updated as observations are received) as well as in the [Citypage Weather XML files](../msc-data/citypage-weather/readme_citypageweather-datamart_en.md), which are updated at least once an hour, or more often in the event of warnings, advisories or watch changes.
 
-As with all [MSC Datamart](../msc-datamart/readme_en.md) datasets, these observations are kept according to a 30-day retention period, accessible through the dated directory structure or through the [`/today`](https://dd.weather.gc.ca/today/) directory for real-time data of the current day. For access to older data, please contact us at: <ec.dps-client.ec@canada.ca>
+As with all [MSC Datamart](../msc-datamart/readme_en.md) datasets, these observations are kept according to a 30-day retention period, accessible through the dated directory structure or through the [`/today`](https://dd.weather.gc.ca/today/) directory for real-time data of the current day. For access to older data, please contact us at: <dps-client@ec.gc.ca>
 
 ### Is it possible to access observed air quality data and pollutant emission data used to calculate the Air Quality Health Index ?
 

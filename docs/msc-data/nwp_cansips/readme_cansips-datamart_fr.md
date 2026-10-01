@@ -145,38 +145,27 @@ __Produits d'ensemble:__
 
 __Produits de probabilité terciles__ :
 
-Les fichiers contiennent des probabilité de terciles pour les catégories supérieures, proches ou inférieures à la normale.  Les variables considérées sont les précipitations et la température. Pour chacune des deux variables, il existe trois fichiers pour représenter les trois probabilités de terciles, décrits ci-dessous.
+Les fichiers contiennent des probabilité de terciles pour les catégories supérieures, proches ou inférieures à la normale.  Les variables considérées sont les précipitations, la température et l'équivalent en eau de la neige. Pour chacune de ces variables, il existe trois fichiers pour représenter les trois probabilités de terciles, décrits ci-dessous, par exemple pour la précipitation:
 
-* APCP
-
-    * Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité de précipitations supérieures à la normale
-    * Minimum (0 %), maximum (100 %)
-    * Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée probabilité de précipitations inférieures à la normale
-    * Minimum (0 %), maximum (100 %)
-    * Probabilité comprise entre 33.3 et 66.7e centiles (sans unité) - souvent appelée probabilité de précipitations proches de la normale/climatologie
-    * Minimum (0 %), maximum (100 %)
-
-* TMP
-
-    * Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité que la température soit supérieure à la normale
-    * Minimum (0 %), maximum (100 %)
-    * Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée Probabilité que la température soit inférieure à la normale
-    * Minimum (0 %), maximum (100 %)
-    * Probabilité entre les percentiles 33.3 et 66.7 (sans unité) – souvent appelée Probabilité que la température soit proche de la normale/climatologie
-    * Minimum (0 %), maximum (100 %)
+* Probabilité supérieure au seuil du 66.7e centile (sans unité) - souvent appelée probabilité de précipitations supérieures à la normale
+* Minimum (0 %), maximum (100 %)
+* Probabilité inférieure au seuil du 33.3e centile (sans unité) - souvent appelée probabilité de précipitations inférieures à la normale
+* Minimum (0 %), maximum (100 %)
+* Probabilité comprise entre 33.3 et 66.7e centiles (sans unité) - souvent appelée probabilité de précipitations proches de la normale/climatologie
+* Minimum (0 %), maximum (100 %)
 
 __Produits de probabilité de dépassement :__
 
-Ces fichiers contiennent les probabilités de dépassement et sont disponibles en fonction de neuf seuils, soit:
+Ces fichiers contiennent les probabilités de dépassement et sont disponibles en fonction de neuf seuils, soit, par exemple pour la température:
 
-1. Probabilité que la température/précipitation soit supérieure au 10e percentile
-2. Probabilité que la température/précipitation soit supérieure au 20e percentile
-3. Probabilité que la température/précipitation soit supérieure au 30e percentile
+1. Probabilité que la température soit supérieure au 10e percentile
+2. Probabilité que la température soit supérieure au 20e percentile
+3. Probabilité que la température soit supérieure au 30e percentile
 
 ……
 
-8. Probabilité que la température/précipitation soit supérieure au 80e percentile
-9. Probabilité que la température/précipitation soit supérieure au 90e percentile
+8. Probabilité que la température soit supérieure au 80e percentile
+9. Probabilité que la température soit supérieure au 90e percentile
 
 ## Conseils pour calculer les prévisions d'anomalies 
 
