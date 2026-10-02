@@ -173,7 +173,7 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>Version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version de CaSR</a> de la Réanalyse canadienne de surface (ex: v3.2)</li>
+<li><strong>Version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version de CaSR</a> de la Réanalyse canadienne de surface (v2.1, v3.2)</li>
 <li><strong>polygon_dataset</strong> : Nom du jeu de polygones de bassins versants (<code>nhn</code> pour "National Hydro Network" le Réseau hydro national, <code>nhs</code> pour "National Hydrological Service" le Service hydrologique national)</li>
 <li><strong>nb</strong> : Principaux bassins de drainage selon:<ul>
 <li>01 : Provinces maritimes </li>
@@ -198,11 +198,11 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grille}{resolution}_{TimeStep}.nc</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2018 pour la version 2.1, 1968-2024 pour la version 3.2]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)</li>
-<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
-<li><strong>Analysis</strong> : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions</li>
+<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v2.1, v3.2]</li>
+<li><strong>Analysis</strong> : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions </li>
 <li><strong>Var</strong> : Nom de la variable et statistique associée (voir la section ci-dessous)</li>
 <li><strong>Sfc</strong> : Chaîne de caractères indiquant que le niveau vertical est la surface</li>
 <li><strong>Grille</strong> : Grille horizontale lat-lon tournée [Rlatlon]</li>
@@ -212,8 +212,8 @@
 </ul>
 <p>Exemples: </p>
 <ul>
-<li>1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc</li>
-<li>1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+<li>1980-2018_MSC_CaSR-v2.1_AirTemp-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_Precip-Accum2h-MMax_Sfc_RLatLon0.09_P1M.nc</li>
 </ul>
 <p><strong>Produits agrégés par bassin versant hydrologique en format GeoJSON</strong></p>
 <p>Les fichiers de prévisions suivent la nomenclature ci-dessous:</p>
@@ -222,10 +222,10 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_DrainageArea{nb}_{Var}_Sfc_{TimeStep}.json</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2018 pour la version 2.1, 1968-2024 pour la version 3.2]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface (CaSR en anglais)</li>
-<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
+<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v2.1, v3.2]</li>
 <li><strong>Analysis</strong> : Chaîne de caractères indiquant que les données sont des analyses et non des prévisions</li>
 <li><strong>DrainageArea</strong> : Chaîne de caractères constante pour spécifier le bassin versant  </li>
 <li><strong>nb</strong> : Numéro du bassin de drainage [01, 02, .., 11]</li>
@@ -236,22 +236,29 @@
 </ul>
 <p>Exemples:</p>
 <ul>
-<li>1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json</li>
-<li>1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json</li>
+<li>1980-2018_MSC_CaSR-v2.1-Analysis_DrainageArea02_Precip-Accum1h-MMax_Sfc_P1M.json</li>
+<li>1968-2024_MSC_CaSR-v3.2_DrainageArea02_SnowWaterEquiv-YAvg_Sfc_P1Y.json</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <ul>
-<li>Quantité de précipitations (m)</li>
+<li>Quantité de précipitation accumulée (m) sur une période donnée (1h, 2h, 6h, 12h, 24h)</li>
 <li>Profondeur de neige au sol (cm) </li>
 <li>Equivalent en eau de la couverture neigeuse au sol (kg/m²)</li>
 <li>Température de l'air (°C)</li>
 <li>Température du point de rosée (°C)</li>
 </ul>
-<p>À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (<code>YAvg/MAvg</code>), le minimum annuel/mensuel (<code>YMin/MMin</code>) ou le maximum annuel/mensuel(<code>YMax/MMax</code>)</p>
-<p>Exemples:</p>
+<p><strong>Notes</strong>:</p>
 <ul>
+<li>À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (<code>YAvg/MAvg</code>), le minimum annuel/mensuel (<code>YMin/MMin</code>) ou le maximum annuel/mensuel(<code>YMax/MMax</code>). Exemples:<ul>
 <li><code>SnowWaterEquiv-YAvg</code></li>
 <li><code>DewPoint-MMin</code></li>
+</ul>
+</li>
+<li>Les champs d'analyse suivants sont disponibles selon les versions:<ul>
+<li>Version 2.1: quantité de précipitation accumulée</li>
+<li>Version 3.2: quantité de précipitation accumulée, température de l'air, température du point de rosée</li>
+</ul>
+</li>
 </ul>
 <h2 id="support">Support</h2>
 <p>Pour toute question relative à ces données, merci de <a href="https://weather.gc.ca/mainmenu/contact_us_f.html">nous contacter</a>.</p>

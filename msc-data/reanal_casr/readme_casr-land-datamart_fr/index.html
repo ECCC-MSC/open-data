@@ -173,7 +173,7 @@
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>Version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version de CaSR</a> de la Réanalyse canadienne de surface (ex: v3.2)</li>
+<li><strong>Version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version de CaSR</a> de la Réanalyse canadienne de surface (v2.1)</li>
 <li><strong>polygon_dataset</strong> : Nom du jeu de polygones de bassins versants (<code>nhn</code> pour "National Hydro Network" le Réseau hydro national, <code>nhs</code> pour "National Hydrological Service" le Service hydrologique national)</li>
 <li><strong>nb</strong> : Principaux bassins de drainage selon:<ul>
 <li>01 : Provinces maritimes </li>
@@ -196,10 +196,10 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-Land-{version}_{Var}_{Level}_{Grille}{resolution}_{TimeStep}.nc</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2017]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR-Land</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface terrestre (CaSR-Land en anglais)</li>
-<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
+<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v2.1]</li>
 <li><strong>Var</strong> : Nom de la variable et statistique associée (voir la section ci-dessous)</li>
 <li><strong>Level</strong> : Chaîne de caractères indiquant le niveau vertical [<code>Sfc</code> pour la surface, <code>AGL</code> pour "Above Ground Level", <code>DBS</code> pour "Depth Below Surface"]</li>
 <li><strong>Grille</strong> : Grille horizontale lat-lon tournée [Rlatlon]</li>
@@ -209,18 +209,18 @@
 </ul>
 <p>Exemples: </p>
 <ul>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc</li>
-<li>1968-2024_MSC_CaSR-Land-v3.2_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc</li>
 </ul>
 <p><strong>Produits agrégés par bassin versant hydrologique en format GeoJSON</strong></p>
 <p>Les fichiers de prévisions suivent la nomenclature ci-dessous:</p>
 <p><code>{YYY1-YYY2}_MSC_CaSR-Land-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json</code></p>
 <p>où :</p>
 <ul>
-<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1968-2024]</li>
+<li><strong>YYY1-YYY2</strong> : Période couverte par la réanalyse selon la version [1980-2017]</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>CaSR-Land</strong> : Chaîne de caractères indiquant que les données sont dérivées de la Réanalyse canadienne de surface terrestre (CaSR-Land en anglais)</li>
-<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v3.2]</li>
+<li><strong>version</strong> : <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics_fr.html#diff_casr_versions">Version</a> de la réanalyse [v2.1]</li>
 <li><strong>DrainageArea</strong> : Chaîne de caractères constante pour spécifier le bassin versant  </li>
 <li><strong>nb</strong> : Numéro du bassin de drainage [01, 02, .., 11]</li>
 <li><strong>Var</strong> : Nom de la variable et statistique associée (voir la section ci-dessous)</li>
@@ -230,8 +230,8 @@
 </ul>
 <p>Exemples:</p>
 <ul>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json</li>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json</li>
 </ul>
 <h2 id="liste-des-variables">Liste des variables</h2>
 <ul>
@@ -243,8 +243,7 @@
 <li>Température de l'air (°C)</li>
 <li>Température du point de rosée (°C)</li>
 </ul>
-<p>À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (<code>YAvg/MAvg</code>), le minimum annuel/mensuel (<code>YMin/MMin</code>) ou le maximum annuel/mensuel(<code>YMax/MMax</code>)</p>
-<p>Exemples:</p>
+<p>À chaque variable est associée une statistique, soit la moyenne annuelle/mensuelle (<code>YAvg/MAvg</code>), le minimum annuel/mensuel (<code>YMin/MMin</code>) ou le maximum annuel/mensuel(<code>YMax/MMax</code>). Exemples:</p>
 <ul>
 <li><code>SnowWaterEquiv-YAvg</code></li>
 <li><code>DewPoint-MMin</code></li>

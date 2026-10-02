@@ -173,7 +173,7 @@
 </ul>
 <p>where:</p>
 <ul>
-<li><strong>Version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">CaSR version</a> of the Canadian Surface Reanalysis (e.g., v3.2)</li>
+<li><strong>Version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">CaSR version</a> of the Canadian Surface Reanalysis (v2.1)</li>
 <li><strong>polygon_dataset</strong>: Name of the watershed polygon set (<code>nhn</code> for "National Hydro Network", <code>nhs</code> for "National Hydrological Service")</li>
 <li><strong>nb</strong>: Main drainage basins according to:<ul>
 <li>01: Maritime Provinces </li>
@@ -196,10 +196,10 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-Land-{version}_{Var}_{Level}_{Grid}{resolution}_{TimeStep}.nc</code></p>
 <p>where:</p>
 <ul>
-<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1980-2017]</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>CaSR-Land</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis-Land</li>
-<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v2.1]</li>
 <li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
 <li><strong>Level</strong>: A string indicating the vertical level [<code>Sfc</code> for the surface, <code>AGL</code> for "Above Ground Level", <code>DBS</code> for "Depth Below Surface"]</li>
 <li><strong>Grille</strong> : Horizontal rotated lat-lon grid [Rlatlon]</li>
@@ -209,18 +209,18 @@
 </ul>
 <p>Examples:</p>
 <ul>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc</li>
-<li>1968-2024_MSC_CaSR-Land-v3.2_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DewPoint-MMax_AGL-1.5m_RLatLon0.09_P1M.nc</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_SoilLiquidWaterContent-YMin_DBS-200to300cm_RLatLon0.09_P1Y.nc</li>
 </ul>
 <p><strong>Aggregate products by watershed in GeoJSON format</strong></p>
 <p>The forecast files follow the nomenclature below:</p>
 <p><code>{YYY1-YYY2}_MSC_CaSR-Land-{version}_DrainageArea{nb}_{Var}_{Level}_{TimeStep}.json</code></p>
 <p>where:</p>
 <ul>
-<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1980-2017]</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>CaSR-Land</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis-Land </li>
-<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v2.1]</li>
 <li><strong>DrainageArea</strong>: Constant string of characters to specify the watershed  </li>
 <li><strong>nb</strong>: Drainage basin number [01, 02, .., 11]</li>
 <li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
@@ -230,8 +230,8 @@
 </ul>
 <p>Examples:</p>
 <ul>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json</li>
-<li>1968-2024_MSC_CaSR-Land-v3.2_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DrainageArea03_Drainage-Accum1h-YMax_DBS_P1Y.json</li>
+<li>1980-2017_MSC_CaSR-Land-v2.1_DrainageArea10_SoilLiquidWaterContent-MMin_DBS-040to100cm_P1M.json</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <ul>
@@ -243,8 +243,7 @@
 <li>Air Temperature (°C)</li>
 <li>Dew point temperature (°C)</li>
 </ul>
-<p>Each variable is associated with a statistic, i.e. the annual/monthly average (<code>YAvg/MAvg)</code>, the annual/monthly minimum (<code>YMin/MMin</code>) or the annual/monthly maximum (<code>YMax/MMax</code>)</p>
-<p>Examples:</p>
+<p>Each variable is associated with a statistic, i.e. the annual/monthly average (<code>YAvg/MAvg)</code>, the annual/monthly minimum (<code>YMin/MMin</code>) or the annual/monthly maximum (<code>YMax/MMax</code>). Examples:</p>
 <ul>
 <li><code>SnowWaterEquiv-YAvg</code></li>
 <li><code>DewPoint-MMin</code></li>

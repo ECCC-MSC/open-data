@@ -173,7 +173,7 @@
 </ul>
 <p>where:</p>
 <ul>
-<li><strong>Version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">CaSR version</a> of the Canadian Surface Reanalysis (e.g., v3.2)</li>
+<li><strong>Version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">CaSR version</a> of the Canadian Surface Reanalysis (v2.1, v3.2)</li>
 <li><strong>polygon_dataset</strong>: Name of the watershed polygon set (<code>nhn</code> for "National Hydro Network", <code>nhs</code> for "National Hydrological Service")</li>
 <li><strong>nb</strong>: Main drainage basins according to:<ul>
 <li>01: Maritime Provinces </li>
@@ -198,11 +198,11 @@
 <p><code>{YYY1-YYY2}_MSC_CaSR-{version}-Analysis_{Var}_Sfc_{Grid}{resolution}_{TimeStep}.nc</code></p>
 <p>where:</p>
 <ul>
-<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1980-2018 for version 2.1, 1968-2024 for version 3.2]</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>CaSR</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)</li>
-<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
-<li><strong>Analysis</strong>: A string indicating that the data are analyses, not forecasts</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v2.1, v3.2]</li>
+<li><strong>Analysis</strong>: A string indicating that data are analyses, not forecasts</li>
 <li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
 <li><strong>Sfc</strong>: A string indicating that the vertical level is the surface</li>
 <li><strong>Grid</strong> : Horizontal rotated lat-lon grid [Rlatlon]</li>
@@ -212,8 +212,8 @@
 </ul>
 <p>Examples: </p>
 <ul>
-<li>1968-2024_MSC_CaSR-v3.2_Precip-Accum12h-MMin_Sfc_RLatLon0.09_P1M.nc</li>
-<li>1968-2024_MSC_CaSR-v3.2-Analysis_DewPoint-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+<li>1980-2018_MSC_CaSR-v2.1_AirTemp-YAvg_AGL-1.5m_RLatLon0.09_P1Y.nc</li>
+<li>1968-2024_MSC_CaSR-v3.2-Analysis_Precip-Accum2h-MMax_Sfc_RLatLon0.09_P1M.nc</li>
 </ul>
 <p><strong>Aggregate products by watershed in GeoJSON format</strong></p>
 <p>The forecast files follow the nomenclature below:</p>
@@ -222,11 +222,11 @@
 <p>'{YYY1-YYY2}<em>MSC_CaSR-{version}-Analysis_DrainageArea{nb}</em>{Var}<em>Sfc</em>{TimeStep}.json'</p>
 <p>where:</p>
 <ul>
-<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1968–2024]</li>
+<li><strong>YYY1-YYY2</strong>: Period covered by the reanalysis according to the version [1980-2018 for version 2.1, 1968-2024 for version 3.2]</li>
 <li><strong>MSC</strong>: Constant string for Meteorological Service of Canada, the data source</li>
 <li><strong>CaSR</strong>: A string indicating that the data is derived from Canadian Surface Reanalysis (CaSR)</li>
-<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v3.2]</li>
-<li><strong>Analysis</strong>: A string indicating that the data are analyses, not forecasts</li>
+<li><strong>version</strong>: <a href="https://hpfx.collab.science.gc.ca/~scar700/rcas-casr/dataset_specifics.html#diff_casr_versions">Version</a> of the retest [v2.1, v3.2]</li>
+<li><strong>Analysis</strong>: A string indicating that data are analyses, not forecasts</li>
 <li><strong>DrainageArea</strong>: Constant string of characters to specify the watershed  </li>
 <li><strong>nb</strong>: Drainage basin number [01, 02, .., 11]</li>
 <li><strong>Var</strong>: Variable name and associated statistics (see section below)</li>
@@ -236,22 +236,29 @@
 </ul>
 <p>Examples:</p>
 <ul>
-<li>1968-2024_MSC_CaSR-v3.2-Analysis_DrainageArea02_Precip-Accum1h-MMin_Sfc_P1M.json</li>
-<li>1968-2024_MSC_CaSR-v3.2_DrainageArea11_SnowDepth-YMax_Sfc_P1Y.json</li>
+<li>1980-2018_MSC_CaSR-v2.1-Analysis_DrainageArea02_Precip-Accum1h-MMax_Sfc_P1M.json</li>
+<li>1968-2024_MSC_CaSR-v3.2_DrainageArea02_SnowWaterEquiv-YAvg_Sfc_P1Y.json</li>
 </ul>
 <h2 id="list-of-variables">List of variables</h2>
 <ul>
-<li>Precipitation quantity (m)</li>
+<li>Quantity of accumulated precipitation (m) over a given period (1h, 2h, 6h, 12h, 24h)</li>
 <li>Snow depth at ground level (cm) </li>
 <li>Water equivalent of the snow cover at ground level (kg/m²) </li>
-<li>Air Temperature (°C)</li>
+<li>Air temperature (°C)</li>
 <li>Dew point temperature (°C)</li>
 </ul>
-<p>Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax')</p>
-<p>Examples:</p>
+<p><strong>Notes</strong>:</p>
 <ul>
+<li>Each variable is associated with a statistic, i.e. the annual/monthly average ('YAvg/MAvg'), the annual/monthly minimum ('YMin/MMin') or the annual/monthly maximum ('YMax/MMax'). Examples:<ul>
 <li>'SnowWaterEquiv-YAvg'</li>
 <li>'DewPoint-MMin'</li>
+</ul>
+</li>
+<li>The following analysis fields are available according to the version:<ul>
+<li>Version 2.1: quantity of accumulated precipitation</li>
+<li>Version 3.2: quantity of accumulated precipitation, Air temperature, dew point temperature</li>
+</ul>
+</li>
 </ul>
 <h2 id="support">Support</h2>
 <p>If you have any questions about this data, please <a href="https://weather.gc.ca/mainmenu/contact_us_e.html">contact us</a>.</p>

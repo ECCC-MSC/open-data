@@ -1,3 +1,4 @@
 Variable,Abbreviation,Level,Unit/Value
+Snow water equivalent,SDWE,Surface,kg/m<sup>2</sup>
 Temperature,TMP,2 m Above Ground Level,K
 Total precipitation,APCP,Surface,kg/(m<sup>2</sup>*s)
