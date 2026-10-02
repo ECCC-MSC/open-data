@@ -97,12 +97,12 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * [Regional Deterministic Air Quality Analysis (RDAQA)](nwp_rdaqa/readme_rdaqa_en.md)
 
-### <span clas="badge badge-light">Precipitation</span>
+### <span class="badge badge-light">Precipitation</span>
 
 * [Regional Deterministic Precipitation Analysis (RDPA)](nwp_rdpa/readme_rdpa_en.md)
 * [High Resolution Deterministic Precipitation Analysis (HRDPA)](nwp_hrdpa/readme_hrdpa_en.md)
 * [High Resolution Ensemble Precipitation Analysis (HREPA)](nwp_hrepa/readme_hrepa_en.md)
-* [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)</br>
+* [High Resolution Deterministic Precipitation Analysis average watershed precipitation (HRDPA watershed)](nwp_hrdpa-watershed/readme_hrdpa-watershed_en.md)
 
 ### <span class="badge badge-light">Land Surface</span>
 
