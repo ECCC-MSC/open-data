@@ -108,10 +108,6 @@ The Meteorological Service of Canada (MSC) provides up-to-date information on pa
 
 * [Canadian Land Data Assimilation System in the National Surface and River Prediction System (CaLDAS-NSRPS)](nwp_caldas-nsrps/readme_caldas-nsrps_en.md)
 
-## Reanalysis data
-
-* [Canadian Surface Reanalysis (CaSR)](reanal_casr/readme_casr_en.md)
-
 ## Climate data
 
 * [Adjusted and homogenized Canadian Climate Data (AHCCD)](climate_ahccd/readme_ahccd_en.md)

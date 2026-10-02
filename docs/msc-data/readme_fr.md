@@ -111,10 +111,6 @@ Le Service météorologique du Canada (SMC) fournit des renseignements à jour s
 
 * [Système canadien d'assimilation de données de surface dans le Système national de prévision de surface et de rivières (SCanADS-SNPSR)](nwp_caldas-nsrps/readme_caldas-nsrps_fr.md)
 
-## Données de réanalyses
-
-* [Réanalyse canadienne de surface (RCaS)](reanal_casr/readme_casr_fr.md)
-
 ## Données climatiques
 
 * [Données climatiques canadiennes ajustées et homogénéisées (AHCCD)](climate_ahccd/readme_ahccd_fr.md)
