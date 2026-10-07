@@ -10,6 +10,18 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.17
+
+* date: 2026-10-07 (erreur de manip pour le release 2.10.16....)
+* announcements:
+    * Not announced
+* new content:
+    * Add CaSR page in the list of available data 
+ * improvements:
+    * NA
+* bug fixes:
+    * NA
+
 # 2.10.16
 
 * date: 2026-10-07
