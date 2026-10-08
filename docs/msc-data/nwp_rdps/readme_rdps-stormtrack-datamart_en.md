@@ -33,8 +33,9 @@ The following information is available for each storm centre:
 * The position of the centre
 * Date and time (UTC)
 * The duration of the storm
-* Pressure, vorticity, and circulation values
-* For tropical cyclones only: the values of low-level baroclinicity (600-900 mb), low-level (600-900 mb) and high-level (300-600 mb) thermal wind structure, maximum vorticity at 850 mb, maximum thickness 250-850 mb, and maximum surface wind
+* Pressure and vorticity
+* For vorticity based tracking only: circulation values
+* For tropical cyclones only: the values of low-level baroclinicity (600-900 mb), low-level (600-900 mb) and high-level (300-600 mb) thermal wind structure, maximum vorticity at 850 mb, maximum thickness 250-850 mb, and maximum surface wind, as well as cyclone classifications
 
 #### Extra-tropical cyclones
 
@@ -62,7 +63,11 @@ To be defined as a tropical cyclone, a low pressure centre must meet the followi
 * Generates a surface (10 m) wind speed greater than 22 knots within a radius of 225 km
 * Evolve in a barotropic or weakly baroclinic environment, defined here by a value of B lower than 25 m
 
-A track is started only when all the above criteria are met. When a cyclone not longer meets all the (4) criteria, it is classified as a post-tropical cyclone. The cyclone will be tagged as "Extratropical" if evoling in a baroclinic environment (B > 25m) or as "Remnant" if still in a barotropic environment. Note that a cyclone will still be tagged as being extratropical even if the value of B decreases later below 25 m (e.g. due to an occlusion of the cyclone)
+A track is started only when all the above criteria are met.
+
+If they evolve in a barotropic environment (B < 25 m), tropical cyclones can be classified according to their maximum wind value in categories 1 to 5 of the [Saffir-Simpson scale](https://en.wikipedia.org/wiki/Saffir%E2%80%93Simpson_scale). Below 64 knots, tropical cyclones are considered "tropical storm". Below 34 knots, tropical cyclones are considered "tropical depression". A cyclone operating in a baroclinic environment (B > 25 m) will be considered "hybrid" ( in transition to "extra-tropical").
+
+When a tropical cyclone no longer meets all of the main criteria, it is classified as post-tropical. It is then classified as "extra-tropical" if it evolves in a baroclinic environment (B > 25 m) or classified as "remnant" if it lives in a barotropic environment.
 
 ## Filename nomenclature 
 
