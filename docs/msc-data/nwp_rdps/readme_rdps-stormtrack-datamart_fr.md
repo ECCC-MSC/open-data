@@ -33,8 +33,9 @@ Les informations suivantes sont disponibles pour chaque centre de tempête:
 * La position du centre
 * La date et l'heure (UTC)
 * La durée de la tempête
-* Les valeurs de pression, de tourbillon, et de circulation
-* Pour les cyclones tropicaux uniquement: les valeurs de baroclinicité de bas niveaux (600-900 mb), de structure du vent thermique de bas niveaux (600-900 mb) et hauts niveaux (300-600 mb), de maximum de tourbillon à 850 mb, de maximum d'épaisseur 250-850 mb, et de maximum de vent de surface
+* Les valeurs de pression et de tourbillon
+* Pour le suivi par le tourbillon du vent gradient uniquement: les valeurs de circulation
+* Pour les cyclones tropicaux uniquement: les valeurs de baroclinicité de bas niveaux (600-900 mb), de structure du vent thermique de bas niveaux (600-900 mb) et hauts niveaux (300-600 mb), de maximum de tourbillon à 850 mb, de maximum d'épaisseur 250-850 mb, et de maximum de vent de surface, ainsi que les classifications des cyclones
 
 #### Cyclones extra-tropicaux
 
@@ -62,7 +63,11 @@ Pour être considéré comme un cyclone tropical, un centre de basse pression do
 * Être accompagné d'un vent de surface (10 m) supérieur à 22 noeuds dans un rayon de 225 km
 * Evoluer dans un environnement barotrope ou de faible baroclinicité, défini ici par une valeur de B inférieure à 25 m.
 
-Une trajectoire est initiée uniquement lorsque tous les critères précédents sont rencontrés.  Lorsqu'un cyclone tropical ne satisfait plus l'ensemble de ces quatre critères, il est classifié comme étant post-tropical. Il prend alors soit l'étiquette "Extra-Tropical" s'il évolue dans un environnement barocline (B > 25 m) ou l'étiquette "Remnant" s'il demeure dans un environnement barotrope. 
+Une trajectoire est initiée uniquement lorsque tous les critères précédents sont rencontrés.
+
+S'ils évoluent dans un environnement barotrope (B < 25 m), les cyclones tropicaux peuvent être classés selon leur valeur de vent maximum dans les catégories 1 à 5 d'ouragans de l'[échelle Saffir-Simpson](https://fr.wikipedia.org/wiki/%C3%89chelle_de_Saffir-Simpson). En dessous de 64 noeuds, les cyclones tropicaux sont considérés "tropical storm". En dessous de 34 noeuds, les cyclones tropicaux sont considérés "tropical depression". Un cyclone qui évolue dans un environnement barocline (B > 25 m) sera considéré "hybrid" (en transition vers "extra-tropical").
+
+Lorsqu'un cyclone tropical ne satisfait plus l'ensemble des critères principaux, il est classifié comme étant post-tropical. Il est alors classé "extra-tropical" s'il évolue dans un environnement barocline (B > 25 m) ou classé "remnant" s'il demeure dans un environnement barotrope.
 
 ## Nomenclature des noms de fichiers 
 
