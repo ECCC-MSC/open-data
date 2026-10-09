@@ -105,7 +105,7 @@ where:
 
 Filenames examples: 
 
-* `20251016T12Z_MSC_RDPS-StormTracks_TropicalCyclone_PT048H.json`
+* `20251016T12Z_MSC_GDPS-StormTracks_TropicalCyclone_PT048H.json`
 * `20251012T12Z_MSC_GDPS-Analysis48H-StormTracks_GradientWindVorticity-IsbL-0500_PT024H.json`: analysis generated at 20251014T12Z (20251012T12Z + 48H) corresponding to the forecast for 20251013Q12Z (20251012T12Z + PT024H).
 
 ## Support
