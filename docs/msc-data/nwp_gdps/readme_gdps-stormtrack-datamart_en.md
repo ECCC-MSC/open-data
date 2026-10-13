@@ -22,7 +22,12 @@ The data can be accessed at the following adress :
 
 where :
 
-* __HH__: Model run start, in UTC [00, 12]
+* __HH__: Model run start, in UTC [00, 06, 12, 18]
+
+Note:
+
+* Forecasts are available at 00 and 12Z
+* Analysis are available at 00, 06, 12 and 18Z
 
 ## Technical specifications
 
@@ -91,7 +96,7 @@ where:
 
 * __YYYYMMDD__ : Year, month and day of the beginning of the forecast
 * __T__: Time delimiter according to ISO8601 norms
-* __HH__ : UTC run time [00, 12]
+* __HH__ : UTC run time, namely [00, 12] for the forecasts and [00, 06, 12, 18] for the analysis
 * __Z__: Time zone (UTC hour)
 * __MSC__: Constant string indicating that the data is from the Meteorologcal Service of Canada (MSC)
 * __GDPS-StormTracks__: Constant string indicating that data is from Global Deterministic Prediction System (GDPS) forecasts of storm tracks
