@@ -6,7 +6,7 @@
 
 # Données de trajectoires de tempêtes générées à partir du Système global de prévision d'ensemble
 
-Le produit de trajectoire de tempêtes est un système automatisé qui détecte, identifie, suit et caractérise les systèmes dépressionnaires à partir des sorties des modèles numériques de prévision météorologique (déterministe et ensembliste) ou des réanalyses.  Il permet de produire des cartes, des animations décrivant l'évolution des cyclones extratropicaux et tropicaux pendant toute leur durée de vie.
+Le produit de trajectoire de tempêtes est un système automatisé qui détecte, identifie, suit et caractérise les systèmes dépressionnaires à partir des sorties des modèles numériques de prévision météorologique (déterministe et ensembliste) ou des analyses.  Il permet de produire des cartes, des animations décrivant l'évolution des cyclones extratropicaux et tropicaux pendant toute leur durée de vie.
 
 Une fois déterminés à chaque échéance du modèle, les centres des tempêtes sont reliés entre eux grâce à la méthode développée par [Mark R. Sinclair](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml), qui recherche le meilleur prolongement possible d'une trajectoire en tenant compte notamment de la position précédente, de la vitesse de déplacement, de la direction du mouvement et de la continuité temporelle. Seuls les systèmes ayant une durée de vie d'au moins 24 heures sont conservés comme tempêtes valides.
 

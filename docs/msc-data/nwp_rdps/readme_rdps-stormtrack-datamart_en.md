@@ -6,7 +6,7 @@
 
 # Storm track data generated from the Regional Deterministic Prediction System
 
-The Storm track product is an automated system that detects, identifies, tracks and characterizes low-pressure systems based on the outputs of numerical weather prediction models (deterministic and ensemble) or reanalyses.  It makes it possible to produce maps and animations describing the evolution of extratropical and tropical cyclones throughout their lifetime.
+The Storm track product is an automated system that detects, identifies, tracks and characterizes low-pressure systems based on the outputs of numerical weather prediction models (deterministic and ensemble) or analyses.  It makes it possible to produce maps and animations describing the evolution of extratropical and tropical cyclones throughout their lifetime.
 
 Once determined at each forecast of the model, the storm centres are linked together using the method developed by [Mark R. Sinclair](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml), which seeks the best possible extension of a trajectory, taking into account the previous position, the speed of movement, the direction of movement and temporal continuity. Only systems with a lifespan of at least 24 hours are retained as valid storms.
 
