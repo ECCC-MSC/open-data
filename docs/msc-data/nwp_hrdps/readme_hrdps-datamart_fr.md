@@ -114,6 +114,7 @@ Notes:
     * Passe de 12Z: 6h et 30h
     * Passe de 18Z: 0h et 24h
 * Les centres de hautes (High) et basses pression (Low) sont également disponibles en des points (format GeoJSON) sur le domaine, l'unité est hPa.
+* Les accumulations de précipitation (neige, pluie, etc.) prévues depuis le début de la passe ou bien sur une période donnée (1, 3, 6, 12, or 24h), en post-traitement par les éléments du temps sur grille se distinguent de celles prévues par le modèle, via la présence du segment "WEonG" dans le nom de fichier (ex: `20261227T12Z_MSC_HRDPS-WEonG_WEARN_Sfc_RLatLon0.0225_PT024H.grib2` versus `20261027T12Z_MSC_HRDPS_WEARN_Sfc_RLatLon0.0225_PT024H.grib2`).
 
 ## Support
 

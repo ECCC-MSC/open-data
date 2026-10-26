@@ -18,16 +18,17 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-* [https://dd.meteo.gc.ca/today/model_gdps/storm-tracks/{HH}/](https://dd.meteo.gc.ca/today/model_gdps/storm-tracks)
+* [https://dd.meteo.gc.ca/today/model_gdps/storm-tracks/{HH}/{hhh}](https://dd.meteo.gc.ca/today/model_gdps/storm-tracks)
 
 où :
 
 * __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
+* __hh__ : Heure de prévision [000, 003, 006, ..., 240]  
 
-Note:
+Notes:
 
-* Les prévisions sont disponibles à 00 et 12Z
-* Les analyses sont disponibles à 00, 06, 12 et 18Z
+* Les prévisions sont disponibles à 00 et 12Z, de 00h à 240h, sauf pour les trajectoires des cyclones tropicaux qui sont disponibles de 00h à 168h 
+* Les analyses sont disponibles à 00, 06, 12 et 18Z, de 00h à 48h pour les analyses 48h et de 00h à 96h pour les analyses 96h
 
 ## Spécifications techniques
 
