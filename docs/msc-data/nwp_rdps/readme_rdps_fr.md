@@ -19,6 +19,7 @@ Ces données sont respectivement disponibles sur les services du serveur de donn
 * [Données disponibles via les services web géospatiaux GeoMet-Météo](../../msc-geomet/readme_fr.md)
 * [Données disponibles sur le Datamart du SMC](readme_rdps-datamart_fr.md)
 * [Données statistiquement post-traitées sur le Datamart du SMC](readme_rdps-statpostproc-datamart_fr.md)
+* [Données de trajectoires de tempêtes disponibles sur le Datamart du SMC](readme_rdps-stormtrack-datamart_fr.md)
 * [Données expérimentales d'éléments du temps sur grille disponibles sur DD-Alpha, le site Web d'essai de données du Datamart du SMC](readme_rdps-datamart-alpha_fr.md) 
 
 Un [survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada](../../usage/readme_fr.md) est disponible.

@@ -8,7 +8,7 @@
 
 The Storm track product is an automated system that detects, identifies, tracks and characterizes low-pressure systems based on the outputs of numerical weather prediction models (deterministic and ensemble) or analyses.  It makes it possible to produce maps and animations describing the evolution of extratropical and tropical cyclones throughout their lifetime.
 
-Once determined at each forecast of the model, the storm centres are linked together using the method developed by [Mark R. Sinclair](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml), which seeks the best possible extension of a trajectory, taking into account the previous position, the speed of movement, the direction of movement and temporal continuity. Only systems with a lifespan of at least 24 hours are retained as valid storms.
+Once determined at each forecast timestep of the model, the storm centres are linked together using the method developed by [Mark R. Sinclair](https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml), which seeks the best possible extension of a trajectory, taking into account the previous position, the speed of movement, the direction of movement and temporal continuity. Only systems with a lifespan of at least 24 hours are retained as valid storms.
 
 ## Data location 
 
@@ -18,11 +18,12 @@ The data is available using the HTTPS protocol and resides in a directory that i
 
 The data can be accessed at the following adress : 
 
-* [https://dd.weather.gc.ca/today/model_geps/storm-tracks/{HH}/](https://dd.weather.gc.ca/today/model_geps/storm-tracks)
+* [https://dd.weather.gc.ca/today/model_geps/storm-tracks/{HH}/{hhh}](https://dd.weather.gc.ca/today/model_geps/storm-tracks)
 
 where :
 
 * __HH__: Model run start, in UTC [00, 12]
+* __hhh__ : Forecast time [000, 006, ..., 240]
 
 ## Technical specifications
 

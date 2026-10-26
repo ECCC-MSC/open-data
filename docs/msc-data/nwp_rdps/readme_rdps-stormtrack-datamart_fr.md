@@ -18,11 +18,12 @@ Les données sont disponibles via le protocole HTTPS. Il est possible d’y acc�
 
 Les données sont accessibles à l’adresse suivante : 
 
-* [https://dd.meteo.gc.ca/today/model_rdps/storm-tracks/{HH}/](https://dd.meteo.gc.ca/today/model_rdps/storm-tracks)
+* [https://dd.meteo.gc.ca/today/model_rdps/storm-tracks/{HH}/{hhh}](https://dd.meteo.gc.ca/today/model_rdps/storm-tracks)
 
 où :
 
-* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18] 
+* __HH__ : Heure UTC du début de la passe du modèle [00, 06, 12, 18]
+* __hhh__ : Heure de prévision [000, 003, 006, ..., 084] 
 
 ## Spécifications techniques
 
