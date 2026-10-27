@@ -19,6 +19,7 @@ This data is available from the [MSC GeoMet](../../msc-geomet/readme_en.md) API 
 * [Data available on the MSC Datamart](readme_gdps-datamart_en.md)
 * [Global Environmental eMuLator (GEML) data available on the MSC Datamart](readme_gdps-geml-datamart_en.md)
 * [Statistically post-processed data on the MSC Datamart](readme_gdps-statpostproc-datamart_en.md)
+* [Storm track data on the MSC Datamart](readme_gdps-stormtrack-datamart_en.md)
 * [Experimental weather elements on the grid data available on the MSC testing data repository DD-Alpha](readme_gdps-datamart-alpha_en.md)
 * [Global ice analysis on the MSC Datamart](readme_gdps-ice-anal-datamart_en.md)
 
