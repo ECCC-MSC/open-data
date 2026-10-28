@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.18
+
+* date: 2026-10-28 
+* announcements:
+    * Not announced
+* new content:
+    * Add GEPS, GDPS, RDPS storm tracks documentation
+    * Add note about precip accum under HRDPS variable array
+ * improvements:
+    * NA
+* bug fixes:
+    * Typo
+
 # 2.10.17
 
 * date: 2026-10-07 (erreur de manip pour le release 2.10.16....)
