@@ -159,18 +159,24 @@
 <p><img alt="ECCC logo" src="../../../img_eccc-logo.png" /></p>
 <p><a href="../../../readme_fr/">TdM</a> &gt; <a href="../../readme_fr/">Données du SMC</a> &gt; <a href="../readme_gdps_fr/">SGPD</a> &gt; Trajectoires de tempêtes issues du SGPD sur le Datamart du SMC</p>
 <h1 id="donnees-de-trajectoires-de-tempetes-generees-a-partir-du-systeme-global-de-prevision-deterministe">Données de trajectoires de tempêtes générées à partir du Système global de prévision déterministe</h1>
-<p>Le produit de trajectoire de tempêtes est un système automatisé qui détecte, identifie, suit et caractérise les systèmes dépressionnaires à partir des sorties des modèles numériques de prévision météorologique (déterministe et ensembliste) ou des réanalyses.  Il permet de produire des cartes, des animations décrivant l'évolution des cyclones extratropicaux et tropicaux pendant toute leur durée de vie.</p>
+<p>Le produit de trajectoire de tempêtes est un système automatisé qui détecte, identifie, suit et caractérise les systèmes dépressionnaires à partir des sorties des modèles numériques de prévision météorologique (déterministe et ensembliste) ou des analyses.  Il permet de produire des cartes, des animations décrivant l'évolution des cyclones extratropicaux et tropicaux pendant toute leur durée de vie.</p>
 <p>Une fois déterminés à chaque échéance du modèle, les centres des tempêtes sont reliés entre eux grâce à la méthode développée par <a href="https://journals.ametsoc.org/view/journals/wefo/12/3/1520-0434_1997_012_0595_oiocat_2_0_co_2.xml">Mark R. Sinclair</a>, qui recherche le meilleur prolongement possible d'une trajectoire en tenant compte notamment de la position précédente, de la vitesse de déplacement, de la direction du mouvement et de la continuité temporelle. Seuls les systèmes ayant une durée de vie d'au moins 24 heures sont conservés comme tempêtes valides.</p>
 <h2 id="adresse-des-donnees">Adresse des données</h2>
 <p>Les données du Datamart du SMC peuvent être <a href="../../../msc-datamart/amqp_fr/">automatiquement récupérées avec le protocole avancé de mise en file d'attente des messages (AMQP)</a> dès qu'elles deviennent disponibles. Un <a href="../../../usage/readme_fr/">survol et exemples pour accéder et utiliser les données ouvertes du Service météorologique du Canada</a> est également disponible.</p>
 <p>Les données sont disponibles via le protocole HTTPS. Il est possible d’y accéder avec un fureteur standard. Dans ce cas, on obtient une liste de liens donnant accès à un fichier GeoJSON.</p>
 <p>Les données sont accessibles à l’adresse suivante : </p>
 <ul>
-<li><a href="https://dd.meteo.gc.ca/today/model_gdps/storm-tracks">https://dd.meteo.gc.ca/today/model_gdps/storm-tracks/{HH}/</a></li>
+<li><a href="https://dd.meteo.gc.ca/today/model_gdps/storm-tracks">https://dd.meteo.gc.ca/today/model_gdps/storm-tracks/{HH}/{hhh}</a></li>
 </ul>
 <p>où :</p>
 <ul>
-<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 12] </li>
+<li><strong>HH</strong> : Heure UTC du début de la passe du modèle [00, 06, 12, 18]</li>
+<li><strong>hh</strong> : Heure de prévision [000, 003, 006, ..., 240]  </li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>Les prévisions sont disponibles à 00 et 12Z, de 00h à 240h, sauf pour les trajectoires des cyclones tropicaux qui sont disponibles de 00h à 168h </li>
+<li>Les analyses sont disponibles à 00, 06, 12 et 18Z, de 00h à 48h pour les analyses 48h et de 00h à 96h pour les analyses 96h</li>
 </ul>
 <h2 id="specifications-techniques">Spécifications techniques</h2>
 <p>Les informations suivantes sont disponibles pour chaque centre de tempête:</p>
@@ -180,8 +186,9 @@
 <li>La position du centre</li>
 <li>La date et l'heure (UTC)</li>
 <li>La durée de la tempête</li>
-<li>Les valeurs de pression, de tourbillon, et de circulation</li>
-<li>Pour les cyclones tropicaux uniquement: les valeurs de baroclinicité de bas niveaux (600-900 mb), de structure du vent thermique de bas niveaux (600-900 mb) et hauts niveaux (300-600 mb), de maximum de tourbillon à 850 mb, de maximum d'épaisseur 250-850 mb, et de maximum de vent de surface</li>
+<li>Les valeurs de pression et de tourbillon</li>
+<li>Pour le suivi par le tourbillon du vent gradient uniquement: les valeurs de circulation</li>
+<li>Pour les cyclones tropicaux uniquement: les valeurs de baroclinicité de bas niveaux (600-900 mb), de structure du vent thermique de bas niveaux (600-900 mb) et hauts niveaux (300-600 mb), de maximum de tourbillon à 850 mb, de maximum d'épaisseur 250-850 mb, et de maximum de vent de surface, ainsi que les classifications des cyclones</li>
 </ul>
 <h4 id="cyclones-extra-tropicaux">Cyclones extra-tropicaux</h4>
 <p>Les cyclones extra-tropicaux sont suivis soit par leurs valeurs minimales de pression au niveau moyen de la mer (PNMM) ou par leurs valeurs maximales de tourbillon du vent gradient, à 500 et 1000 mb.</p>
@@ -203,7 +210,9 @@
 <li>Être accompagné d'un vent de surface (10 m) supérieur à 22 noeuds dans un rayon de 225 km</li>
 <li>Evoluer dans un environnement barotrope ou de faible baroclinicité, défini ici par une valeur de B inférieure à 25 m.</li>
 </ul>
-<p>Une trajectoire est initiée uniquement lorsque tous les critères précédents sont rencontrés.  Lorsqu'un cyclone tropical ne satisfait plus l'ensemble de ces quatre critères, il est classifié comme étant post-tropical. Il prend alors soit l'étiquette "Extra-Tropical" s'il évolue dans un environnement barocline (B &gt; 25 m) ou l'étiquette "Remnant" s'il demeure dans un environnement barotrope. </p>
+<p>Une trajectoire est initiée uniquement lorsque tous les critères précédents sont rencontrés.</p>
+<p>S'ils évoluent dans un environnement barotrope (B &lt; 25 m), les cyclones tropicaux peuvent être classés selon leur valeur de vent maximum dans les catégories 1 à 5 d'ouragans de l'<a href="https://fr.wikipedia.org/wiki/%C3%89chelle_de_Saffir-Simpson">échelle Saffir-Simpson</a>. En dessous de 64 noeuds, les cyclones tropicaux sont considérés "tropical storm". En dessous de 34 noeuds, les cyclones tropicaux sont considérés "tropical depression". Un cyclone qui évolue dans un environnement barocline (B &gt; 25 m) sera considéré "hybrid" (en transition vers "extra-tropical").</p>
+<p>Lorsqu'un cyclone tropical ne satisfait plus l'ensemble des critères principaux, il est classifié comme étant post-tropical. Il est alors classé "extra-tropical" s'il évolue dans un environnement barocline (B &gt; 25 m) ou classé "remnant" s'il demeure dans un environnement barotrope.</p>
 <h2 id="nomenclature-des-noms-de-fichiers">Nomenclature des noms de fichiers</h2>
 <p>Les <strong>fichiers de prévision</strong> ont la nomenclature suivante :</p>
 <ul>
@@ -229,7 +238,7 @@
 <ul>
 <li><strong>YYYYMMDD</strong> : Année, mois et jour de la passe du modèle</li>
 <li><strong>T</strong> : Délimiteur temporel selon les normes ISO8601</li>
-<li><strong>HH</strong> : Heure UTC de la passe [00, 12]</li>
+<li><strong>HH</strong> : Heure UTC de la passe, soit [00, 12] pour les prévisions et [00, 06, 12, 18] pour les analyses</li>
 <li><strong>Z</strong> : Fuseau horaire (heure UTC)</li>
 <li><strong>MSC</strong> : Chaîne de caractères constante pour Meteorological Service of Canada, la source des données</li>
 <li><strong>GDPS-StormTracks</strong> : Chaîne de caractères constante indiquant des prévisions de trajectoires de tempêtes générées à partir du Système global de prévision déterministe (GDPS en anglais)</li>
