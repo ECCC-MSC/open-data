@@ -1,4 +1,6 @@
 Variable,Abbreviation,Level,Unit/Value
+Maximum temperature,TMAX,2 m Above Ground Level,K
+Minimum temperature,TMIN,2 m Above Ground Level,K
 Snow water equivalent,SDWE,Surface,kg/m<sup>2</sup>
 Temperature,TMP,2 m Above Ground Level,K
 Total precipitation,APCP,Surface,kg/(m<sup>2</sup>*s)

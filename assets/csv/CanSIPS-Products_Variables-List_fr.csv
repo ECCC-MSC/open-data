@@ -1,4 +1,6 @@
 Variable,Abréviation,Niveau,Unité/Valeur
 Précipitation totale,APCP,Surface,kg/(m<sup>2</sup>*s)
+Température maximale,TMAX,2 m au-dessus du niveau du sol,K
+Température minimale,TMIN,2 m au-dessus du niveau du sol,K
 Température,TMP,2 m au-dessus du niveau du sol,K
 Équivalent en eau de la neige,SDWE,Surface,kg/m<sup>2</sup>
