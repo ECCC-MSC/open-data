@@ -10,6 +10,19 @@ MSC's public documentation uses [Semantic Versioning](https://semver.org/) for i
 
 # Changelog
 
+# 2.10.19
+
+* date: 2026-11-04
+* announcements:
+    * Not announced
+* new content:
+    * Add 3.2 CaSR-Land 
+    * Add Tmax and Tmin in CanSIPS products
+ * improvements:
+    * NA
+* bug fixes:
+    * Typo
+
 # 2.10.18
 
 * date: 2026-10-28 
